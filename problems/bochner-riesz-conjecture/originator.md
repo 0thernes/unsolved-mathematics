@@ -2,4 +2,16 @@
 
 _Biography, background, and the ideas that led here._
 
-<!-- DOSSIER:originator -->
+The conjecture carries two names because it fuses a one-dimensional summation device of **Marcel Riesz** with the multivariate spherical means introduced by **Salomon Bochner**.
+
+## Marcel Riesz (1886–1969)
+
+Marcel Riesz was a Hungarian-born mathematician, younger brother of Frigyes (Frédéric) Riesz, who spent most of his career in Sweden (Stockholm, then Lund). Trained in Budapest under Fejér's influence — the cradle of modern summability theory — Riesz worked across function theory, summation of series, partial differential equations, number theory, and later Clifford algebras and the foundations of relativistic field theory. In the 1910s and 1920s he developed the **Riesz means** (typical means), a refinement of Cesàro summation in which a Fourier or Dirichlet series is summed against the smoothing weight $(1 - \lambda/R)^\delta$. The parameter $\delta$ interpolates continuously between abrupt truncation ($\delta=0$) and very smooth averaging (large $\delta$), trading convergence for regularity. This device — designed originally to recover convergence of Fourier series and to study the Riemann zeta function — is exactly the gadget that, raised to the radial profile $(1-|\xi|^2/R^2)_+^\delta$, defines the modern operator. Riesz's instinct that the *order of smoothing* should be the governing parameter is the conceptual seed of the whole problem.
+
+## Salomon Bochner (1899–1982)
+
+Salomon Bochner was born in Kraków (then Austria-Hungary), studied in Berlin, and emigrated through the disruptions of the interwar period, ultimately to Princeton and later Rice University. He was one of the great analysts of the twentieth century, contributing the Bochner integral, Bochner's theorem on positive-definite functions, Bochner–Martinelli formulas in several complex variables, and foundational work on almost periodic functions and curvature. In his **1936** study of the summability of multiple Fourier series and integrals, Bochner introduced the **spherical Riesz means** in $\mathbb{R}^n$ — the genuinely $n$-dimensional analogue of Riesz's typical means, where the natural truncation is to a Euclidean ball rather than a cube. He proved convergence in $L^p$ for $\delta$ sufficiently large and recognized that the *threshold* in $\delta$ would depend delicately on dimension and integrability exponent. Bochner thereby posed, implicitly, the central question: how small can the smoothing order $\delta$ be?
+
+## From historical root to modern conjecture
+
+Bochner's original concern was almost-everywhere and norm convergence of eigenfunction expansions for the Laplacian; the sharp threshold $\delta(p) = \max\{ n|1/p - 1/2| - 1/2, 0\}$ was crystallized later, after Herz (1954) established the *necessary* condition by testing against extremizers concentrated near the sphere, and after the geometry of the problem was understood through the work of Fefferman, Stein, Carleson and Sjölin in the 1970s. The modern statement is thus a sharpening of Bochner's question into a precise, scale-invariant claim. Its legacy is enormous: the conjecture became the organizing hub of a hierarchy linking summation of Fourier integrals, the Stein restriction conjecture, the Kakeya problem, local smoothing, and oscillatory integral operators — making two analysts of the 1930s the unwitting authors of a central problem of twenty-first-century harmonic analysis.

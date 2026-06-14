@@ -18,7 +18,7 @@
   },
   {
     "slug": "andrews-curtis-conjecture",
-    "rank": 67,
+    "rank": 85,
     "title": "The Andrews–Curtis Conjecture",
     "authored": {
       "history": true,
@@ -34,8 +34,25 @@
     "complete": true
   },
   {
+    "slug": "arnold-diffusion",
+    "rank": 44,
+    "title": "Arnold Diffusion (Genericity)",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
     "slug": "artin-primitive-root-conjecture",
-    "rank": 41,
+    "rank": 49,
     "title": "Artin's Primitive Root Conjecture",
     "authored": {
       "history": true,
@@ -52,7 +69,7 @@
   },
   {
     "slug": "baum-connes-conjecture",
-    "rank": 33,
+    "rank": 36,
     "title": "The Baum–Connes Conjecture",
     "authored": {
       "history": true,
@@ -69,7 +86,7 @@
   },
   {
     "slug": "beal-conjecture",
-    "rank": 71,
+    "rank": 90,
     "title": "The Beal Conjecture",
     "authored": {
       "history": true,
@@ -103,7 +120,7 @@
   },
   {
     "slug": "birkhoff-conjecture",
-    "rank": 40,
+    "rank": 47,
     "title": "The Birkhoff Conjecture (Integrable Billiards)",
     "authored": {
       "history": true,
@@ -119,8 +136,25 @@
     "complete": true
   },
   {
+    "slug": "bochner-riesz-conjecture",
+    "rank": 32,
+    "title": "The Bochner–Riesz Conjecture",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
     "slug": "bombieri-lang-conjecture",
-    "rank": 25,
+    "rank": 26,
     "title": "The Bombieri–Lang Conjecture",
     "authored": {
       "history": true,
@@ -137,7 +171,7 @@
   },
   {
     "slug": "borel-conjecture",
-    "rank": 34,
+    "rank": 38,
     "title": "The Borel Conjecture",
     "authored": {
       "history": true,
@@ -153,8 +187,25 @@
     "complete": true
   },
   {
+    "slug": "brennan-conjecture",
+    "rank": 95,
+    "title": "Brennan's Conjecture",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
     "slug": "brocard-problem",
-    "rank": 63,
+    "rank": 79,
     "title": "Brocard's Problem",
     "authored": {
       "history": true,
@@ -171,7 +222,7 @@
   },
   {
     "slug": "bunyakovsky-conjecture",
-    "rank": 26,
+    "rank": 27,
     "title": "Bunyakovsky's Conjecture",
     "authored": {
       "history": true,
@@ -188,7 +239,7 @@
   },
   {
     "slug": "caccetta-haggkvist-conjecture",
-    "rank": 64,
+    "rank": 80,
     "title": "The Caccetta–Häggkvist Conjecture",
     "authored": {
       "history": true,
@@ -204,8 +255,25 @@
     "complete": true
   },
   {
+    "slug": "carmichael-totient-conjecture",
+    "rank": 77,
+    "title": "Carmichael's Totient Conjecture",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
     "slug": "catalan-dickson-conjecture",
-    "rank": 55,
+    "rank": 70,
     "title": "The Catalan–Dickson Conjecture (Aliquot Sequences)",
     "authored": {
       "history": true,
@@ -221,8 +289,25 @@
     "complete": true
   },
   {
+    "slug": "cherlin-zilber-conjecture",
+    "rank": 64,
+    "title": "The Cherlin–Zilber Algebraicity Conjecture",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
     "slug": "chowla-conjecture",
-    "rank": 38,
+    "rank": 43,
     "title": "The Chowla Conjecture",
     "authored": {
       "history": true,
@@ -256,7 +341,7 @@
   },
   {
     "slug": "connes-embedding-aftermath",
-    "rank": 69,
+    "rank": 87,
     "title": "The Connes Embedding Problem (Resolved 2020)",
     "authored": {
       "history": true,
@@ -290,7 +375,7 @@
   },
   {
     "slug": "crouzeix-conjecture",
-    "rank": 85,
+    "rank": 106,
     "title": "Crouzeix's Conjecture",
     "authored": {
       "history": true,
@@ -307,7 +392,7 @@
   },
   {
     "slug": "cycle-double-cover-conjecture",
-    "rank": 60,
+    "rank": 75,
     "title": "The Cycle Double Cover Conjecture",
     "authored": {
       "history": true,
@@ -323,8 +408,25 @@
     "complete": true
   },
   {
+    "slug": "dixmier-conjecture",
+    "rank": 45,
+    "title": "The Dixmier Conjecture",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
     "slug": "eilenberg-ganea-conjecture",
-    "rank": 66,
+    "rank": 83,
     "title": "The Eilenberg–Ganea Conjecture",
     "authored": {
       "history": true,
@@ -341,7 +443,7 @@
   },
   {
     "slug": "elliott-halberstam-conjecture",
-    "rank": 36,
+    "rank": 41,
     "title": "The Elliott–Halberstam Conjecture",
     "authored": {
       "history": true,
@@ -358,7 +460,7 @@
   },
   {
     "slug": "erdos-hajnal-conjecture",
-    "rank": 62,
+    "rank": 78,
     "title": "The Erdős–Hajnal Conjecture",
     "authored": {
       "history": true,
@@ -375,7 +477,7 @@
   },
   {
     "slug": "erdos-straus-conjecture",
-    "rank": 76,
+    "rank": 97,
     "title": "The Erdős–Straus Conjecture",
     "authored": {
       "history": true,
@@ -392,7 +494,7 @@
   },
   {
     "slug": "falconer-distance-conjecture",
-    "rank": 49,
+    "rank": 60,
     "title": "The Falconer Distance Conjecture",
     "authored": {
       "history": true,
@@ -408,8 +510,25 @@
     "complete": true
   },
   {
+    "slug": "fontaine-mazur-conjecture",
+    "rank": 35,
+    "title": "The Fontaine–Mazur Conjecture",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
     "slug": "four-exponentials-conjecture",
-    "rank": 54,
+    "rank": 69,
     "title": "The Four Exponentials Conjecture",
     "authored": {
       "history": true,
@@ -425,9 +544,43 @@
     "complete": true
   },
   {
+    "slug": "furstenberg-conjecture",
+    "rank": 48,
+    "title": "Furstenberg's ×2 ×3 Conjecture",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
     "slug": "gilbreath-conjecture",
-    "rank": 82,
+    "rank": 103,
     "title": "Gilbreath's Conjecture",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
+    "slug": "giuga-conjecture",
+    "rank": 91,
+    "title": "Giuga's Conjecture",
     "authored": {
       "history": true,
       "originator": true,
@@ -460,7 +613,7 @@
   },
   {
     "slug": "graceful-tree-conjecture",
-    "rank": 77,
+    "rank": 98,
     "title": "The Graceful Tree Conjecture (Ringel–Kotzig)",
     "authored": {
       "history": true,
@@ -493,8 +646,25 @@
     "complete": true
   },
   {
+    "slug": "greenberg-conjecture",
+    "rank": 67,
+    "title": "Greenberg's Conjecture",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
     "slug": "grimm-conjecture",
-    "rank": 78,
+    "rank": 99,
     "title": "Grimm's Conjecture",
     "authored": {
       "history": true,
@@ -511,7 +681,7 @@
   },
   {
     "slug": "hadamard-matrix-conjecture",
-    "rank": 58,
+    "rank": 73,
     "title": "The Hadamard Matrix Conjecture",
     "authored": {
       "history": true,
@@ -528,7 +698,7 @@
   },
   {
     "slug": "hadwiger-conjecture",
-    "rank": 27,
+    "rank": 28,
     "title": "Hadwiger's Conjecture (Graph Coloring)",
     "authored": {
       "history": true,
@@ -544,8 +714,25 @@
     "complete": true
   },
   {
+    "slug": "hadwiger-covering-conjecture",
+    "rank": 62,
+    "title": "The Hadwiger Covering Conjecture",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
     "slug": "hadwiger-nelson-problem",
-    "rank": 57,
+    "rank": 72,
     "title": "The Hadwiger–Nelson Problem",
     "authored": {
       "history": true,
@@ -562,7 +749,7 @@
   },
   {
     "slug": "hall-conjecture",
-    "rank": 74,
+    "rank": 94,
     "title": "Hall's Conjecture",
     "authored": {
       "history": true,
@@ -613,7 +800,7 @@
   },
   {
     "slug": "hilbert-smith-conjecture",
-    "rank": 46,
+    "rank": 56,
     "title": "The Hilbert–Smith Conjecture",
     "authored": {
       "history": true,
@@ -647,7 +834,7 @@
   },
   {
     "slug": "inscribed-square-problem",
-    "rank": 48,
+    "rank": 59,
     "title": "The Inscribed Square Problem (Toeplitz)",
     "authored": {
       "history": true,
@@ -664,7 +851,7 @@
   },
   {
     "slug": "invariant-subspace-problem",
-    "rank": 30,
+    "rank": 31,
     "title": "The Invariant Subspace Problem",
     "authored": {
       "history": true,
@@ -731,9 +918,43 @@
     "complete": true
   },
   {
+    "slug": "kelvin-problem",
+    "rank": 84,
+    "title": "The Kelvin Problem (Optimal Space Partition)",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
     "slug": "kothe-conjecture",
-    "rank": 51,
+    "rank": 65,
     "title": "Köthe's Conjecture",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
+    "slug": "kpz-universality",
+    "rank": 55,
+    "title": "The KPZ Universality Conjecture",
     "authored": {
       "history": true,
       "originator": true,
@@ -766,7 +987,7 @@
   },
   {
     "slug": "lehmer-mahler-measure-conjecture",
-    "rank": 44,
+    "rank": 53,
     "title": "Lehmer's Mahler Measure Conjecture",
     "authored": {
       "history": true,
@@ -783,7 +1004,7 @@
   },
   {
     "slug": "lehmer-tau-conjecture",
-    "rank": 61,
+    "rank": 76,
     "title": "Lehmer's Conjecture on the Ramanujan Tau Function",
     "authored": {
       "history": true,
@@ -800,7 +1021,7 @@
   },
   {
     "slug": "lehmer-totient-problem",
-    "rank": 72,
+    "rank": 92,
     "title": "Lehmer's Totient Problem",
     "authored": {
       "history": true,
@@ -817,7 +1038,7 @@
   },
   {
     "slug": "littlewood-conjecture",
-    "rank": 28,
+    "rank": 29,
     "title": "The Littlewood Conjecture",
     "authored": {
       "history": true,
@@ -834,7 +1055,7 @@
   },
   {
     "slug": "lonely-runner-conjecture",
-    "rank": 70,
+    "rank": 88,
     "title": "The Lonely Runner Conjecture",
     "authored": {
       "history": true,
@@ -851,7 +1072,7 @@
   },
   {
     "slug": "mandelbrot-locally-connected",
-    "rank": 37,
+    "rank": 42,
     "title": "The MLC Conjecture (Mandelbrot Locally Connected)",
     "authored": {
       "history": true,
@@ -885,7 +1106,7 @@
   },
   {
     "slug": "montgomery-pair-correlation",
-    "rank": 39,
+    "rank": 46,
     "title": "Montgomery's Pair Correlation Conjecture",
     "authored": {
       "history": true,
@@ -902,7 +1123,7 @@
   },
   {
     "slug": "moving-sofa-problem",
-    "rank": 84,
+    "rank": 105,
     "title": "The Moving Sofa Problem",
     "authored": {
       "history": true,
@@ -936,7 +1157,7 @@
   },
   {
     "slug": "novikov-conjecture",
-    "rank": 24,
+    "rank": 25,
     "title": "The Novikov Conjecture",
     "authored": {
       "history": true,
@@ -970,7 +1191,7 @@
   },
   {
     "slug": "one-third-two-thirds-conjecture",
-    "rank": 80,
+    "rank": 101,
     "title": "The 1/3–2/3 Conjecture",
     "authored": {
       "history": true,
@@ -1003,6 +1224,40 @@
     "complete": true
   },
   {
+    "slug": "palis-conjecture",
+    "rank": 58,
+    "title": "The Palis Conjecture (Finitude / Density of Attractors)",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
+    "slug": "pillai-conjecture",
+    "rank": 61,
+    "title": "Pillai's Conjecture",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
     "slug": "polignac-conjecture",
     "rank": 17,
     "title": "Polignac's Conjecture",
@@ -1021,8 +1276,25 @@
   },
   {
     "slug": "reconstruction-conjecture",
-    "rank": 65,
+    "rank": 81,
     "title": "The Reconstruction Conjecture (Ulam)",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
+    "slug": "restriction-conjecture",
+    "rank": 24,
+    "title": "The Restriction Conjecture",
     "authored": {
       "history": true,
       "originator": true,
@@ -1054,8 +1326,25 @@
     "complete": true
   },
   {
+    "slug": "ryser-conjecture",
+    "rank": 82,
+    "title": "Ryser's Conjecture (Hypergraph Covering)",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
     "slug": "sarnak-mobius-conjecture",
-    "rank": 52,
+    "rank": 66,
     "title": "Sarnak's Möbius Disjointness Conjecture",
     "authored": {
       "history": true,
@@ -1072,7 +1361,7 @@
   },
   {
     "slug": "schanuel-conjecture",
-    "rank": 31,
+    "rank": 33,
     "title": "Schanuel's Conjecture",
     "authored": {
       "history": true,
@@ -1089,7 +1378,7 @@
   },
   {
     "slug": "schinzel-hypothesis-h",
-    "rank": 29,
+    "rank": 30,
     "title": "Schinzel's Hypothesis H",
     "authored": {
       "history": true,
@@ -1105,8 +1394,42 @@
     "complete": true
   },
   {
+    "slug": "section-conjecture",
+    "rank": 39,
+    "title": "Grothendieck's Section Conjecture",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
+    "slug": "self-avoiding-walk",
+    "rank": 51,
+    "title": "Self-Avoiding Walk (Scaling & Connective Constant)",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
     "slug": "sendov-conjecture",
-    "rank": 83,
+    "rank": 104,
     "title": "Sendov's Conjecture",
     "authored": {
       "history": true,
@@ -1123,7 +1446,7 @@
   },
   {
     "slug": "seymour-second-neighborhood-conjecture",
-    "rank": 79,
+    "rank": 100,
     "title": "Seymour's Second Neighborhood Conjecture",
     "authored": {
       "history": true,
@@ -1140,7 +1463,7 @@
   },
   {
     "slug": "singmaster-conjecture",
-    "rank": 81,
+    "rank": 102,
     "title": "Singmaster's Conjecture",
     "authored": {
       "history": true,
@@ -1157,7 +1480,7 @@
   },
   {
     "slug": "slice-ribbon-conjecture",
-    "rank": 59,
+    "rank": 74,
     "title": "The Slice–Ribbon Conjecture",
     "authored": {
       "history": true,
@@ -1174,7 +1497,7 @@
   },
   {
     "slug": "smooth-4d-poincare-conjecture",
-    "rank": 32,
+    "rank": 34,
     "title": "The Smooth 4-Dimensional Poincaré Conjecture",
     "authored": {
       "history": true,
@@ -1191,7 +1514,7 @@
   },
   {
     "slug": "sunflower-conjecture",
-    "rank": 53,
+    "rank": 68,
     "title": "The Sunflower Conjecture",
     "authored": {
       "history": true,
@@ -1224,8 +1547,25 @@
     "complete": true
   },
   {
+    "slug": "telescope-conjecture",
+    "rank": 89,
+    "title": "The Telescope Conjecture (Disproved 2023)",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
     "slug": "total-coloring-conjecture",
-    "rank": 73,
+    "rank": 93,
     "title": "The Total Coloring Conjecture",
     "authored": {
       "history": true,
@@ -1259,7 +1599,7 @@
   },
   {
     "slug": "union-closed-sets-conjecture",
-    "rank": 75,
+    "rank": 96,
     "title": "The Union-Closed Sets Conjecture (Frankl)",
     "authored": {
       "history": true,
@@ -1276,7 +1616,7 @@
   },
   {
     "slug": "unique-games-conjecture",
-    "rank": 35,
+    "rank": 40,
     "title": "The Unique Games Conjecture",
     "authored": {
       "history": true,
@@ -1293,7 +1633,7 @@
   },
   {
     "slug": "unit-distance-problem",
-    "rank": 42,
+    "rank": 50,
     "title": "The Erdős Unit Distance Problem",
     "authored": {
       "history": true,
@@ -1310,7 +1650,7 @@
   },
   {
     "slug": "vaught-conjecture",
-    "rank": 50,
+    "rank": 63,
     "title": "Vaught's Conjecture",
     "authored": {
       "history": true,
@@ -1344,7 +1684,7 @@
   },
   {
     "slug": "volume-conjecture",
-    "rank": 56,
+    "rank": 71,
     "title": "The Volume Conjecture",
     "authored": {
       "history": true,
@@ -1361,7 +1701,7 @@
   },
   {
     "slug": "weinstein-conjecture",
-    "rank": 45,
+    "rank": 54,
     "title": "The Weinstein Conjecture",
     "authored": {
       "history": true,
@@ -1378,7 +1718,7 @@
   },
   {
     "slug": "whitehead-asphericity-conjecture",
-    "rank": 43,
+    "rank": 52,
     "title": "The Whitehead Asphericity Conjecture",
     "authored": {
       "history": true,
@@ -1412,7 +1752,7 @@
   },
   {
     "slug": "zariski-cancellation-problem",
-    "rank": 47,
+    "rank": 57,
     "title": "The Zariski Cancellation Problem",
     "authored": {
       "history": true,
@@ -1429,8 +1769,25 @@
   },
   {
     "slug": "zeeman-conjecture",
-    "rank": 68,
+    "rank": 86,
     "title": "The Zeeman Conjecture",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
+    "slug": "zilber-pink-conjecture",
+    "rank": 37,
+    "title": "The Zilber–Pink Conjecture",
     "authored": {
       "history": true,
       "originator": true,

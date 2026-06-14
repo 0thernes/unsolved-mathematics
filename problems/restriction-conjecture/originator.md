@@ -2,4 +2,18 @@
 
 _Biography, background, and the ideas that led here._
 
-<!-- DOSSIER:originator -->
+## Elias M. Stein (1931–2018)
+
+The restriction conjecture is due to **Elias Menachem Stein**, one of the most influential analysts of the twentieth century and the architect of much of modern real-variable harmonic analysis. Born in Antwerp, Belgium, in 1931 to a Jewish family, Stein fled the Nazi occupation, emigrating with his family to the United States in 1940. He completed his entire higher education at the University of Chicago, earning his PhD in 1955 under **Antoni Zygmund**, the towering figure of the Chicago school of analysis. After positions at MIT and Chicago, Stein moved to **Princeton University** in 1963, where he remained for the rest of his career and built a school that produced an extraordinary lineage of students.
+
+Stein's mathematical worldview was shaped by Zygmund's program of pushing one-dimensional Fourier analysis (singular integrals, maximal functions, Littlewood–Paley theory) into the multidimensional, geometric setting where *curvature* becomes the central organizing principle. The restriction problem is a pure crystallization of that vision. Stein recognized in the mid-1960s that the Fourier transform of an integrable function, though only defined almost everywhere, interacts with curved surfaces in a way that flat geometry forbids: the oscillation of $e^{2\pi i x\cdot\xi}$ over a curved cap produces cancellation and decay (the stationary-phase / van der Corput phenomenon), and that decay can be cashed in for genuine $L^p$ control of the restricted transform. He posed the problem around 1967 and seeded it through lectures and through his students.
+
+### Motivation and the web of consequences
+
+Stein did not view restriction as an isolated curiosity. He saw it as a hub connecting several deep questions he cared about: the **Bochner–Riesz conjecture** on summability of multiple Fourier series and integrals; the **Kakeya/Besicovitch** problem on sets containing unit line segments in every direction; pointwise convergence problems; and the behavior of dispersive partial differential equations (the extension operator for the paraboloid is exactly the solution operator for the free Schrödinger equation, and for the cone the wave equation). The restriction conjecture thus sits at the intersection of Fourier analysis, geometric measure theory, and PDE — a position that explains both its centrality and its stubbornness.
+
+### Legacy
+
+Stein's influence is hard to overstate. His students include four Fields Medalists associated with this circle of problems — **Charles Fefferman** (1978), **Terence Tao** (2006), and others in the broader Stein school — along with Peter Tomas, Robert Fefferman, Alex Nagel, Stephen Wainger's collaborators, and many more. His textbooks (*Singular Integrals and Differentiability Properties of Functions*, *Harmonic Analysis: Real-Variable Methods, Orthogonality, and Oscillatory Integrals*, and the four-volume Princeton Lectures in Analysis with Rami Shakarchi) trained generations. He received the **Wolf Prize (1999)** and the **National Medal of Science (2001)**.
+
+The **Stein–Tomas theorem** (1975), the first sharp partial result on restriction, bears his name and remains the foundational baseline. Almost every subsequent advance — Bourgain's Kakeya connection, Tao's bilinear theorem, Guth's polynomial method, Bourgain–Demeter decoupling — can be read as an attempt to climb from the $L^2$ Stein–Tomas exponent toward the full conjectural range Stein identified. The modern formulation (extension operator bounded $L^\infty(S^{n-1})\to L^q(\mathbb{R}^n)$ for $q>\tfrac{2n}{n-1}$) is essentially Stein's original, sharpened only in the precise endpoint and in the recognition, due to Fefferman and Bourgain, that Kakeya sets govern the obstruction. Stein died in Somerville, New Jersey, in December 2018, with his central conjecture still open in every dimension $n\ge 3$.

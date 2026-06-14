@@ -2,4 +2,18 @@
 
 _Biography, background, and the ideas that led here._
 
-<!-- DOSSIER:originator -->
+## Herbert John Ryser (1923–1985)
+
+Herbert John Ryser was an American mathematician and one of the founders of modern **combinatorics** as an autonomous discipline. Born in 1923, he received his Ph.D. from the University of Wisconsin in 1948 under the supervision of Cyrus Colton MacDuffee. He held positions at Ohio State University and, from 1967 until his death in 1985, at the **California Institute of Technology**, where he supervised a school of students working on combinatorial matrix theory.
+
+Ryser's central preoccupation was the theory of **$(0,1)$-matrices** and **combinatorial designs**, viewed through the lens of incidence and duality. His 1963 Carus Monograph *Combinatorial Mathematics* was for a generation the canonical introduction to the field and did much to establish combinatorics as a coherent subject rather than a collection of puzzles. He is remembered for the **Bruck–Ryser–Chowla theorem** (with Richard Bruck and Sarvadaman Chowla) on the nonexistence of certain symmetric block designs and projective planes, for **Ryser's formula** for the permanent of a matrix, and for foundational results on Latin squares, term rank, and the interchange theorems governing $(0,1)$-matrices with prescribed row and column sums (the Gale–Ryser theorem).
+
+The conjecture that bears his name grows directly out of this matrix-theoretic worldview. An $r$-partite $r$-uniform hypergraph is encoded by a multidimensional incidence array, and the duality between **matchings** (systems of disjoint transversals) and **covers** (small sets of vertices meeting every edge) is precisely the kind of min–max relationship Ryser spent his career mapping. König's theorem is the two-dimensional, matrix case — the term rank versus line cover duality of a $(0,1)$-matrix. Ryser's question asks how that perfect duality degrades as one passes from two dimensions to $r$ dimensions: equality $\tau = \nu$ is lost, but the conjecture posits that the slack is bounded linearly, by exactly the factor $r-1$ realized by projective planes.
+
+## J. R. Henderson and the modern formulation
+
+The conjecture is preserved for posterity not in Ryser's own writing but in the **1971 Caltech Ph.D. thesis of J. R. Henderson**, *Permanents of $(0,1)$-matrices having at most two zeros per line* (and related covering questions), written under Ryser. Henderson states the inequality $\tau \le (r-1)\nu$ for $r$-partite $r$-uniform hypergraphs and supplies the first genuine evidence beyond the trivial cases by **proving it for $r = 3$**. For this reason the statement is often called the **Ryser–Henderson conjecture**. Relatively little is publicly recorded about Henderson's later career; his role is that of the mathematician who crystallized an idea circulating in Ryser's seminar into a precise, attributable claim.
+
+## Legacy and the two faces of the problem
+
+The conjecture sits at a crossroads. Its **base case is König's theorem**, a pillar of bipartite combinatorics and linear programming duality; its **extremal objects are projective planes**, the central objects of finite geometry and design theory — exactly Ryser's home territory. The intersecting special case ($\nu = 1$, asserting $\tau \le r-1$) ties the problem to **Tuza's conjecture** and to deep questions about whether projective planes are the unique sources of tightness. The full conjecture, meanwhile, became a showcase for **topological combinatorics**: Ron Aharoni's 2001 proof for $r=3$ used the topological connectivity of independence complexes (the Aharoni–Haxell framework), demonstrating that a problem born from $(0,1)$-matrix duality could be cracked by methods from algebraic topology. Ryser, who prized the interplay of algebra, geometry, and counting, would likely have appreciated that his conjecture now unifies all three.

@@ -7,6 +7,18 @@ continuously between structural versions).
 
 ## [Unreleased]
 ### Added
+- **Expanded to 106 problems** (wave 4 — crossed 100): added 21 spanning harmonic
+  analysis (restriction, Bochner–Riesz), ergodic theory (Furstenberg ×2×3),
+  dynamics (Palis, Arnold diffusion), model theory (Cherlin–Zilber),
+  combinatorics (Ryser), discrete geometry (Hadwiger covering, Kelvin),
+  probability/statistical mechanics (self-avoiding walk, KPZ universality),
+  number theory (Carmichael totient, Giuga, Pillai), complex analysis (Brennan),
+  algebra (Dixmier), Diophantine geometry (Zilber–Pink), anabelian geometry
+  (Grothendieck's section conjecture), Galois representations (Fontaine–Mazur),
+  Iwasawa theory (Greenberg), and chromatic homotopy (the telescope conjecture,
+  disproved 2023) — each fully authored. RAG corpus now **3,754 chunks
+  (~765k tokens)**; **~2,650 flagged citations** (968 high-confidence,
+  1,406 needs-verification, 271 ai-suggested, 0 yet human-verified).
 - **Expanded to 85 problems** (wave 3): added 25 spanning analytic number theory
   (Grand RH, Elliott–Halberstam, Chowla, Sarnak–Möbius), Diophantine geometry
   (Vojta, Bombieri–Lang, Hall), complex dynamics (MLC), dynamical systems

@@ -2,4 +2,16 @@
 
 _Biography, background, and the ideas that led here._
 
-<!-- DOSSIER:originator -->
+## Ralph Greenberg
+
+Ralph Greenberg (born 1944) is an American number theorist and Professor Emeritus at the University of Washington, where he spent the bulk of his career and trained a generation of researchers in Iwasawa theory and the arithmetic of $p$-adic $L$-functions. He completed his doctorate at Princeton University in 1971 under the supervision of Kenkichi Iwasawa, the founder of the subject. This lineage matters: Greenberg absorbed Iwasawa's program at its source — the idea that arithmetic invariants of number fields should be understood through their variation in $\mathbb{Z}_p$-towers and controlled by analytic $p$-adic $L$-functions.
+
+### Background and motivation
+
+By the mid-1970s Iwasawa had established the growth formula $e_n = \lambda n + \mu p^n + \nu$ for the $p$-part of class numbers in the cyclotomic tower, and the basic question had become: *which fields have which invariants?* For imaginary fields the invariants are generically positive and connected to genuine $p$-adic $L$-functions (Kubota–Leopoldt). Greenberg's insight was to isolate the totally real case, where the relevant $L$-values are special values of $p$-adic zeta functions and where, heuristically, there is "no analytic reason" for the invariants to be nonzero. In his 1976 paper he conjectured that for totally real $k$ one always has $\lambda_p = \mu_p = 0$ — i.e., the $p$-class numbers stabilize. The motivation was both structural (totally real fields should be "as simple as $\mathbb{Q}$" from the $\mathbb{Z}_p$-extension viewpoint) and analytic (the conjecture is equivalent, in the abelian case, to a non-vanishing/triviality statement for $p$-adic regulators and $L$-functions). Greenberg supplied explicit criteria in terms of units, cyclotomic units, and capitulation of ideal classes that made the conjecture testable.
+
+### Broader work and legacy
+
+Greenberg's influence extends far beyond this single conjecture. He is responsible for the now-standard formulation of **Selmer groups in Iwasawa theory** and the **Iwasawa Main Conjecture for motives and Galois representations**, including the "Greenberg Selmer group" used pervasively in the study of elliptic curves and modular forms over $\mathbb{Z}_p$-extensions. His work on the **Iwasawa theory of elliptic curves** (often cited alongside Mazur) and on **trivial zeros of $p$-adic $L$-functions** shaped the modern field. The "generalized Greenberg conjecture" — predicting vanishing of higher Iwasawa invariants attached to the maximal multiple $\mathbb{Z}_p$-extension of a number field — is a natural extension of the 1976 problem and remains an active research target.
+
+The conjecture's enduring appeal lies in its deceptive simplicity. It can be stated to a student in one line — *the $p$-part of the class number of $k_n$ stays bounded for totally real $k$* — yet it sits at the confluence of class field theory, the theory of $p$-adic $L$-functions, units and regulators, and Galois cohomology. Despite four decades of partial results and overwhelming numerical support, no general proof exists. Greenberg's framing of the problem, and the criteria he introduced, continue to define how researchers attack it. His legacy is not only the conjecture itself but the modern algebraic-Iwasawa-theoretic language — Selmer modules, characteristic ideals, control theorems — within which the conjecture is now studied.

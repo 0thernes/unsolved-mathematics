@@ -2,4 +2,16 @@
 
 _Biography, background, and the ideas that led here._
 
-<!-- DOSSIER:originator -->
+The conjecture carries two names because two mathematicians, working in different mathematical cultures and largely independently, arrived at essentially the same prediction at the end of the 1970s.
+
+## Gregory Cherlin
+
+Gregory L. Cherlin (b. 1948), an American mathematician long based at Rutgers University, came to the question from pure model theory. A student of the stability-theoretic revolution catalyzed by Saharon Shelah, Cherlin worked on the model theory of fields and groups and on the boundary between logic and algebra. His 1979 paper "Groups of small Morley rank" (Annals of Mathematical Logic) is the recognized Western origin of the algebraicity question. There he classified connected groups of finite Morley rank of small rank: rank $1$ groups are abelian (indeed divisible or elementary abelian), and the connected rank $2$ and low rank $3$ cases are shown to be algebraic or to reduce to a short list. Confronting these calculations, Cherlin formulated the general expectation that simplicity, in the rank-theoretic sense, should be no weaker than algebraicity. Cherlin's later career ranged widely — into permutation groups, the model theory of homogeneous structures, Ramsey theory, and the classification of relational structures — but the algebraicity conjecture remained one of his signature problems, and he co-authored (with Tuna Altınel and Alexandre Borovik) the 2008 monograph settling the even-type case.
+
+## Boris Zilber
+
+Boris Iosifovich Zilber (b. 1949), trained in the Soviet model-theory school and long associated with Kemerovo State University before moving to the University of Oxford, approached the matter from the theory of uncountably categorical (and totally categorical) structures. Zilber's deep program was to understand *why* a first-order theory can have a unique model in each uncountable cardinality, and his answer turned on the geometry of strongly minimal sets and the groups and fields that coordinatize them. His "ladder theorem" and his trichotomy philosophy — that the combinatorial geometry of a strongly minimal set is degenerate, affine (group-like), or projective (field-like) — placed groups of finite Morley rank at the heart of categoricity. From this vantage the algebraicity conjecture is the natural assertion that the only "field-like" simple groups arising are the genuinely algebraic ones. Zilber's broader legacy includes Zilber–Pink-type conjectures, the model theory of complex exponentiation and pseudo-exponential fields, and the celebrated (though ultimately refuted in full generality) Trichotomy Conjecture for strongly minimal sets — refuted by Ehud Hrushovski's amalgamation constructions, which, tellingly, did *not* produce a counterexample to algebraicity for *simple groups*.
+
+## The shared idea and its legacy
+
+What unites the two formulations is a conviction that finite Morley rank is a strong enough finiteness condition to force the rich algebraic geometry of algebraic groups. The conjecture has functioned for four decades as an organizing principle, drawing the finite-group-theoretic methods of the CFSG into model theory via Borovik's program. Its legacy is a fully developed structure theory — Sylow theory, genericity, unipotence, and field-recovery theorems — for abstract fMr groups, much of which stands independently of whether the conjecture is finally true.

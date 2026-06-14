@@ -2,4 +2,16 @@
 
 _Notable attempts, near-misses, retracted proofs._
 
-<!-- DOSSIER:attempts -->
+KPZ universality has not been the subject of dramatic retracted "proofs" in the way some single famous conjectures have, because the conjecture is not a single crisp statement but a family of convergence claims, and progress has been steady and (largely) verified. The interesting story is instead one of *near-misses* and *partial conquests* — each landmark resolving the conjecture for a wider class while leaving the universal (non-integrable) heart untouched.
+
+**The first rigorous case (1999).** Baik, Deift and Johansson proved that the longest increasing subsequence of a uniform random permutation, properly scaled, converges to the Tracy–Widom GUE law $F_2$. This was the breakthrough that turned a physics conjecture into a theorem-generating program — but it relied entirely on the RSK correspondence and Riemann–Hilbert asymptotics, i.e. exact solvability.
+
+**The KPZ equation one-point law (2010–11).** Amir, Corwin and Quastel rigorously computed the one-point distribution of the Hopf–Cole solution of the KPZ equation with narrow-wedge initial data, proving the crossover from Gaussian (short time) to GUE Tracy–Widom (long time). Sasamoto and Spohn obtained the same formula slightly earlier in the physics literature via a (non-rigorous) replica / Bethe-ansatz computation on the directed polymer; the replica derivation famously involves summing a *divergent* moment series, and reconciling the moment problem with the rigorous result was itself a subtle near-miss — the polymer's moments grow too fast to determine the distribution, so the replica answer was "right for the wrong reasons" until justified independently.
+
+**Construction of the limit objects.** The KPZ fixed point (Matetski–Quastel–Remenik) and the directed landscape (Dauvergne–Ortmann–Virág) were each, in early preprint form, intricate enough that the community scrutinized the determinantal-formula manipulations and the metric-space convergence arguments closely; both survived review and are now standard. No serious error survived to the published versions.
+
+**Higher-dimensional exponents.** A recurring source of *incorrect* claims in the physics literature has been conjectured exact exponents for the $d\geq 2$ KPZ equation. Numerous proposed exact values (from various RG and operator schemes) have been contradicted by later high-precision simulations; there is, to date, no agreed-upon exact exponent in $2+1$ and no rigorous result, making this the graveyard of optimistic analytic predictions.
+
+**The non-integrable universality gap.** The central honest caveat: despite forty years and a Fields Medal, *no proof* establishes Tracy–Widom limits for a genuinely generic, non-solvable $(1+1)$-dimensional growth model. Every rigorous distributional result traces back to an exactly solvable structure or a thin perturbation of one. Claims occasionally circulate that a particular coupling or comparison argument "essentially" proves universality; on inspection these establish exponents (variance of the right order) rather than the limit law, or apply only within the integrable family. There is no disputed or retracted *full* proof — because no one has produced even a contested candidate for the non-integrable case.
+
+In short: the conjecture's status is one of broad, verified, incremental success on the solvable frontier, with the genuinely universal statement remaining open and largely untouched by any complete argument.

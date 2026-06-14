@@ -2,4 +2,18 @@
 
 _Biography, background, and the ideas that led here._
 
-<!-- DOSSIER:originator -->
+## Jacques Dixmier (1924–2025)
+
+Jacques Dixmier was one of the principal architects of postwar French functional analysis and representation theory. Born in 1924, he studied in the orbit of the Bourbaki generation and became a professor at the University of Paris (later Université Pierre et Marie Curie / Paris VI). His mathematical output spans operator algebras, Lie theory, and the representation theory of enveloping algebras, and several foundational objects bear his name.
+
+Dixmier's early fame rests on the theory of **von Neumann algebras and $C^*$-algebras**: his treatise *Les algèbres d'opérateurs dans l'espace hilbertien* (1957) and *Les $C^*$-algèbres et leurs représentations* (1964) were the standard references for a generation, introducing tools such as the **Dixmier trace** (later central to Connes' noncommutative geometry) and the **Dixmier–Douady class** classifying continuous-trace algebras. In Lie theory he is remembered for the **Dixmier mapping**, which parametrizes primitive ideals of a solvable Lie algebra's enveloping algebra by coadjoint orbits, and for his influential book *Algèbres enveloppantes* (1974). He was a member of the French Academy of Sciences and trained many students, including those who carried his enveloping-algebra program forward.
+
+## Motivation behind the conjecture
+
+The Dixmier conjecture emerged directly from this enveloping-algebra and operator-algebra sensibility. The first Weyl algebra $A_1$ is the simplest nontrivial enveloping-algebra-like object: it is the associative algebra of the Heisenberg commutation relation $[p,q]=1$, equivalently the ring of polynomial differential operators $k\langle x, \partial\rangle$. Dixmier's 1968 paper *Sur les algèbres de Weyl* set out to map its structure completely — proving simplicity, computing its automorphisms in special cases, and analyzing modules and ideals. Having established that $A_1$ is a simple Noetherian domain, the natural structural question is rigidity: a simple algebra has no two-sided ideals to obstruct surjectivity, so could every self-embedding actually be onto? Dixmier himself flagged the surjectivity of injective endomorphisms as the crux. His instinct was that $A_1$ should be **co-Hopfian** in the strongest algebraic sense — that it cannot properly embed into itself as an algebra preserving the relation. He posed it as an open problem precisely because the simplicity argument, which kills the analogous question for ideals, says nothing about images of generators.
+
+## Legacy and two readings of the problem
+
+The conjecture's modern significance differs from its 1968 framing. To Dixmier it was an internal structural puzzle about $A_1$, on a par with the other five problems in his paper. The **modern reading**, forced by the Tsuchimoto and Belov-Kanel–Kontsevich equivalence (2005–2007), reinterprets it as a noncommutative avatar of the **Jacobian conjecture**: the rigidity of polynomial differential operators is, after reduction mod $p$, the same phenomenon as the invertibility of polynomial maps with constant nonzero Jacobian. Thus a question Dixmier framed in the language of operator algebras and enveloping algebras turned out to be a bridge into affine algebraic geometry and symplectic topology — the kind of unexpected unification that makes a "Problème 1" outlive its original paper.
+
+Dixmier remained mathematically active for an extraordinarily long career, publishing into his later decades, and he is remembered both for his concrete theorems and for the clarity of his expository writing. The conjecture stands as a compact monument to his structural taste: a single sentence about endomorphisms of the simplest noncommutative ring that, half a century on, no one can prove or refute.
