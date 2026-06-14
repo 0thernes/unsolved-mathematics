@@ -27,20 +27,26 @@ contain the `<!-- DOSSIER:* -->` placeholder markers.)_
 
 ## 🟧 To Verify (drafted, citations need checking)
 
-> Dossiers with content but `needs-verification` / `ai-suggested` papers/people.
+> All 40 dossiers are authored; **1,000 citations** await a human source check.
+> Current flag split: 357 `high-confidence`, 501 `needs-verification`,
+> 142 `ai-suggested`, 0 `verified`. See [verification dashboard](../indexes/verification.md).
 
-- [ ] All 40 dossiers: promote `ai-suggested` → `verified` per
-      [SOURCING.md](../methodology/SOURCING.md)
+- [ ] Promote `ai-suggested` → `needs-verification` → `verified` per
+      [SOURCING.md](../methodology/SOURCING.md) (EPIC-2)
 - [ ] Cross-check every `year_posed` and originator attribution
-- [ ] Confirm resolving citations for `recently-resolved` entries
+- [x] Confirm resolving citation for the `recently-resolved` entry (Connes/MIP\*=RE)
 
 ## 🟨 In Progress (actively being authored)
 
-- [ ] Tier-S dossiers (ranks 1–6, Millennium problems): deepen `approaches.md`
-- [ ] Wire RAG corpus build into release process
+- [ ] Verification sweep (EPIC-2) — highest-impact remaining work
+- [ ] Optional: dense embedding index + MCP retrieval server (EPIC-3)
 
 ## 🟩 Done
 
+- [x] **All 40 dossiers authored** (history, originator, approaches, attempts,
+      25 papers, 10 mathematicians, status) — EPIC-1 complete
+- [x] Cross-cutting indexes + verification dashboard + glossary
+- [x] RAG corpus built (1,403 chunks) and retrieval verified end-to-end
 - [x] Repository architecture + single-source-of-truth registry (`data/problems.yaml`)
 - [x] Deterministic ranking engine (`scripts/generate.py`)
 - [x] JSON Schemas (problem, paper, person)

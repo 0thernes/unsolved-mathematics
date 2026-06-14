@@ -2,4 +2,16 @@
 
 _Notable attempts, near-misses, retracted proofs._
 
-<!-- DOSSIER:attempts -->
+**Coates–Wiles (1977): the first theoretical foothold.** John Coates and Andrew Wiles proved that for an elliptic curve $E/\mathbb{Q}$ with complex multiplication, $L(E,1)\ne 0$ implies $E(\mathbb{Q})$ is finite (rank $0$). This was the first general theorem connecting non-vanishing of the $L$-function to the rank — a partial converse to BSD in the simplest case — and it established the basic shape of all later progress: control the rank from above via $L$-values.
+
+**Gross–Zagier and Kolyvagin: the rank $\le 1$ summit.** The combination of the Gross–Zagier height formula (1986) with Kolyvagin's Euler system (1988–90) settled weak BSD, and finiteness of $\Sha$, whenever the analytic rank is $0$ or $1$. This remains the strongest unconditional result. It is a near-miss in the sense that it stops exactly at rank $1$: the proof produces at most one independent Heegner point, and there is no analogue delivering two independent points, so analytic rank $\ge 2$ is untouched.
+
+**Bhargava–Skinner–Zhang (2010s): a positive proportion.** By bounding average Selmer ranks (Bhargava–Shankar) and feeding curves of analytic rank $\le 1$ into Gross–Zagier–Kolyvagin, they proved BSD for a positive proportion of all elliptic curves over $\mathbb{Q}$ — widely quoted as exceeding $66\%$. This is a genuine advance but explicitly statistical: it certifies no specific curve of rank $\ge 2$ and reveals nothing about the high-rank regime.
+
+**Skinner–Urban (2014) and the $p$-part of the refined formula.** Their proof of the Iwasawa Main Conjecture for many modular forms allowed verification of the $p$-part of the *strong* BSD formula (the exact leading Taylor coefficient) for individual primes $p$, in ranks $0$ and $1$. The refined conjecture is therefore known prime-by-prime in those ranks for large classes of curves, but never simultaneously for all primes, and never in rank $\ge 2$.
+
+**Numerical and computational verification.** Tables by John Cremona and others verify BSD (including, where computable, the $\Sha$ prediction) for hundreds of thousands of curves of small conductor. These computations have never produced a counterexample and have repeatedly confirmed predicted values of $\#\Sha$ — strong empirical support, but not proof, and contingent on the unproven finiteness of $\Sha$ in higher rank.
+
+**Disputed and erroneous claims.** Because BSD is a Millennium Prize Problem, it attracts purported solutions, almost all from outside the research community, posted to preprint servers or vanity outlets. None has survived expert scrutiny; common defects include conflating analytic and algebraic rank without justification, assuming finiteness of $\Sha$ (itself open), or misusing the modularity dictionary. No such claim has been accepted by referees or by the Clay Mathematics Institute, and as of this writing no announced proof — correct or disputed — has any standing in the literature. The honest status is that the rank $\ge 2$ case is genuinely open, with no credible attempt having breached it.
+
+**The structural near-miss worth naming** is the absence of a higher Euler system. Researchers broadly agree that an Euler system controlling Selmer groups in analytic rank $\ge 2$ — or a height formula expressing higher derivatives $L^{(r)}(E,1)$ in terms of a regulator of $r$ independent points — would resolve the weak conjecture. Both remain conjectural, and constructing them is the recognized frontier rather than a completed attempt.

@@ -2,4 +2,16 @@
 
 _Notable attempts, near-misses, retracted proofs._
 
-<!-- DOSSIER:attempts -->
+**Chen's theorem (1973) — the canonical near-miss.** Chen Jingrun proved that there are infinitely many primes $p$ such that $p+2$ is either prime or a product of two primes ($P_2$), and dually that every sufficiently large even number is $p+P_2$. This is as close to the twin-prime case ($k=2$, $\{0,2\}$) as any sieve has come. It cannot be improved to "$p+2$ prime" by the same method: the **parity barrier** (Selberg) forbids a pure sieve from forcing an exact prime. Chen's result is a genuine theorem, universally accepted, and stands as the boundary of what classical sieve theory alone achieves on this problem.
+
+**GPY and the "$\liminf = 0$" near-miss (2005).** Goldston, Pintz, and Yıldırım proved $\liminf_n (p_{n+1}-p_n)/\log p_n = 0$ and showed that *any* distribution level beyond $\theta = 1/2$ (an Elliott–Halberstam increment) would give bounded gaps. For several years this was tantalizingly "one epsilon away." An earlier 2003 GPY preprint contained an argument later found to have a gap in its claimed bounded-gaps conclusion; the authors corrected and published the rigorous, weaker-but-sound statement. This episode is illustrative rather than disreputable — the corrected work directly seeded the 2013 breakthroughs.
+
+**Zhang's bounded gaps (2013).** Yitang Zhang's proof of infinitely many gaps below $7\times 10^7$ was checked carefully and confirmed within weeks (referees at *Annals*, then the Polymath8 community). It is fully accepted. It does *not* prove any full $k$-tuple is all-prime; it produces a pair of primes within a tuple of width $\sim 7\times10^7$, far from a fixed admissible $\{0,2\}$.
+
+**Maynard–Tao (2013–14).** James Maynard and, independently, Terence Tao gave a cleaner multidimensional sieve, reproving bounded gaps from Bombieri–Vinogradov alone and establishing that admissible $k$-tuples contain $\gg \log k$ primes infinitely often. Accepted and foundational; again, *not* a proof of the full asymptotic for any $k\ge 2$.
+
+**Function-field theorems (Sawin–Shusterman, 2018+).** Will Sawin and Mark Shusterman proved strong Hardy–Littlewood-type asymptotics (including twin primes with the correct constant and power-saving error) for $\mathbb{F}_q[t]$ with $q$ large. These are accepted results in the function-field setting and confirm the conjecture's predicted form, but do not transfer to $\mathbb{Z}$.
+
+**Claimed proofs over $\mathbb{Z}$ — a standing caution.** The twin-prime and $k$-tuple conjectures attract a steady stream of claimed elementary or analytic proofs, posted to arXiv and elsewhere. None has survived expert scrutiny. The recurring fatal flaw is almost always the **same parity obstruction**: an argument that controls almost-primes or that mishandles the minor-arc / Type-II contribution, implicitly assuming exactly the independence the conjecture asserts but does not grant for free. As of this writing **no claimed proof of the integer $k$-tuple conjecture (for any $k\ge 2$) is accepted**, and the dossier records none as established. The honest status is: powerful partial results, no resolution.
+
+**Why the gap persists.** Every accepted advance (Chen, GPY, Zhang, Maynard–Tao) yields either an almost-prime, a *lower count* of primes inside an oversized tuple, or a conditional/averaged statement. The conjecture demands an *exact asymptotic with a specific constant for a specific fixed tuple* — a lower bound of the right order for genuine primes. No known technique crosses parity to deliver that.

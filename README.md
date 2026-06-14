@@ -9,7 +9,7 @@ the 25 papers that matter, the 10 people who matter, and a retrieval-ready knowl
 
 `v0.1.0` · branch `main` · 40 problems and growing · built for humans **and** machines
 
-[Master Ranking](RANKING.md) · [Architecture](ARCHITECTURE.md) · [Philosophy](PHILOSOPHY.md) · [Kanban](docs/kanban/KANBAN.md) · [Methodology](docs/methodology/RANKING.md) · [RAG](rag/README.md) · [Contribute](CONTRIBUTING.md)
+[Master Ranking](RANKING.md) · [Architecture](ARCHITECTURE.md) · [Philosophy](PHILOSOPHY.md) · [Kanban](docs/kanban/KANBAN.md) · [Methodology](docs/methodology/RANKING.md) · [RAG](rag/README.md) · [Glossary](docs/GLOSSARY.md) · [Indexes](docs/indexes/) · [Contribute](CONTRIBUTING.md)
 
 </div>
 
@@ -104,6 +104,16 @@ the top; most tractable at the bottom.
 | 40 | [Crouzeix's Conjecture](problems/crouzeix-conjecture/README.md) | Matrix Analysis | 2004 | 43.9 | 71 | `active-progress` |  |
 
 <!-- END:RANKING -->
+
+## Explore the atlas
+
+Beyond the per-problem dossiers, the atlas ships cross-cutting views (generated
+by `scripts/build_indexes.py`):
+
+- 🗺️ [By field](docs/indexes/by-field.md) · [By status](docs/indexes/by-status.md) · [By era posed](docs/indexes/by-century.md)
+- 👤 [Originators index](docs/indexes/originators.md) — every mathematician → the problems they posed
+- ✅ [Verification dashboard](docs/indexes/verification.md) — provenance of all 1,000 citations
+- 📖 [Glossary](docs/GLOSSARY.md) — the recurring concepts that thread the dossiers
 
 ## Repository map
 

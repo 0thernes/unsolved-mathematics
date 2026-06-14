@@ -1,0 +1,682 @@
+[
+  {
+    "slug": "abc-conjecture",
+    "rank": 12,
+    "title": "The abc Conjecture",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
+    "slug": "andrews-curtis-conjecture",
+    "rank": 29,
+    "title": "The Andrews–Curtis Conjecture",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
+    "slug": "beal-conjecture",
+    "rank": 32,
+    "title": "The Beal Conjecture",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
+    "slug": "birch-swinnerton-dyer",
+    "rank": 6,
+    "title": "The Birch and Swinnerton-Dyer Conjecture",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
+    "slug": "brocard-problem",
+    "rank": 28,
+    "title": "Brocard's Problem",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
+    "slug": "bunyakovsky-conjecture",
+    "rank": 19,
+    "title": "Bunyakovsky's Conjecture",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
+    "slug": "collatz-conjecture",
+    "rank": 16,
+    "title": "The Collatz Conjecture",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
+    "slug": "connes-embedding-aftermath",
+    "rank": 30,
+    "title": "The Connes Embedding Problem (Resolved 2020)",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
+    "slug": "crouzeix-conjecture",
+    "rank": 40,
+    "title": "Crouzeix's Conjecture",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
+    "slug": "erdos-straus-conjecture",
+    "rank": 35,
+    "title": "The Erdős–Straus Conjecture",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
+    "slug": "gilbreath-conjecture",
+    "rank": 38,
+    "title": "Gilbreath's Conjecture",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
+    "slug": "goldbach-conjecture",
+    "rank": 2,
+    "title": "Goldbach's Conjecture",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
+    "slug": "grimm-conjecture",
+    "rank": 36,
+    "title": "Grimm's Conjecture",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
+    "slug": "hadamard-matrix-conjecture",
+    "rank": 27,
+    "title": "The Hadamard Matrix Conjecture",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
+    "slug": "hadwiger-conjecture",
+    "rank": 20,
+    "title": "Hadwiger's Conjecture (Graph Coloring)",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
+    "slug": "hadwiger-nelson-problem",
+    "rank": 26,
+    "title": "The Hadwiger–Nelson Problem",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
+    "slug": "hardy-littlewood-k-tuple",
+    "rank": 15,
+    "title": "The Hardy–Littlewood k-tuple Conjecture",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
+    "slug": "hilbert-sixteenth-problem",
+    "rank": 9,
+    "title": "Hilbert's Sixteenth Problem (Second Part)",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
+    "slug": "hodge-conjecture",
+    "rank": 4,
+    "title": "The Hodge Conjecture",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
+    "slug": "inscribed-square-problem",
+    "rank": 25,
+    "title": "The Inscribed Square Problem (Toeplitz)",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
+    "slug": "invariant-subspace-problem",
+    "rank": 22,
+    "title": "The Invariant Subspace Problem",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
+    "slug": "jacobian-conjecture",
+    "rank": 18,
+    "title": "The Jacobian Conjecture",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
+    "slug": "kakeya-conjecture",
+    "rank": 17,
+    "title": "The Kakeya Conjecture",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
+    "slug": "legendre-conjecture",
+    "rank": 13,
+    "title": "Legendre's Conjecture",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
+    "slug": "lehmer-totient-problem",
+    "rank": 33,
+    "title": "Lehmer's Totient Problem",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
+    "slug": "littlewood-conjecture",
+    "rank": 21,
+    "title": "The Littlewood Conjecture",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
+    "slug": "lonely-runner-conjecture",
+    "rank": 31,
+    "title": "The Lonely Runner Conjecture",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
+    "slug": "mersenne-primes-infinitude",
+    "rank": 8,
+    "title": "Infinitude of Mersenne Primes",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
+    "slug": "montgomery-pair-correlation",
+    "rank": 24,
+    "title": "Montgomery's Pair Correlation Conjecture",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
+    "slug": "navier-stokes-smoothness",
+    "rank": 11,
+    "title": "Navier–Stokes Existence and Smoothness",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
+    "slug": "odd-perfect-numbers",
+    "rank": 7,
+    "title": "Existence of Odd Perfect Numbers",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
+    "slug": "p-versus-np",
+    "rank": 3,
+    "title": "P versus NP",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
+    "slug": "polignac-conjecture",
+    "rank": 14,
+    "title": "Polignac's Conjecture",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
+    "slug": "riemann-hypothesis",
+    "rank": 1,
+    "title": "The Riemann Hypothesis",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
+    "slug": "schanuel-conjecture",
+    "rank": 23,
+    "title": "Schanuel's Conjecture",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
+    "slug": "sendov-conjecture",
+    "rank": 39,
+    "title": "Sendov's Conjecture",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
+    "slug": "singmaster-conjecture",
+    "rank": 37,
+    "title": "Singmaster's Conjecture",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
+    "slug": "twin-prime-conjecture",
+    "rank": 5,
+    "title": "The Twin Prime Conjecture",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
+    "slug": "union-closed-sets-conjecture",
+    "rank": 34,
+    "title": "The Union-Closed Sets Conjecture (Frankl)",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  },
+  {
+    "slug": "yang-mills-mass-gap",
+    "rank": 10,
+    "title": "Yang–Mills Existence and Mass Gap",
+    "authored": {
+      "history": true,
+      "originator": true,
+      "approaches": true,
+      "attempts": true,
+      "papers": true,
+      "mathematicians": true,
+      "status": true
+    },
+    "papers": 25,
+    "mathematicians": 10,
+    "complete": true
+  }
+]

@@ -1,5 +1,17 @@
 # Attempts — Lehmer's Totient Problem
 
-_Notable attempts, near-misses, retracted proofs._
+The history of the problem is one of incremental tightening rather than dramatic claims. There is no widely circulated *disputed proof* of the full conjecture; the literature is unusually clean on this point, consisting of rigorous partial results. The "attempts" worth recording are therefore the landmark partial theorems and the structural near-misses.
 
-<!-- DOSSIER:attempts -->
+**Lehmer's founding constraints (1932).** In the paper that posed the question, Lehmer proved that any composite solution $n$ must be odd, squarefree, and satisfy $\omega(n) \ge 7$. This was both the first attempt and the template: every later advance is a strengthening of "$\omega(n) \ge k$" or a bound on the count of solutions. Lehmer did not claim more, and his constraints have never been contradicted.
+
+**Lieuwens' divisibility-by-3 result (1977).** E. Lieuwens showed that if $3 \mid n$ then $\omega(n) \ge 212$ and $n > 5.5 \times 10^{570}$. This is a celebrated near-miss in the sense that it almost eliminates an entire structural class: it makes solutions divisible by 3 so constrained as to be, in practice, unreachable. It does not, however, exclude them, and solutions with $3 \nmid n$ remain governed only by the weaker general bound.
+
+**Cohen–Hagis and Kishore (1980).** Independently, G. L. Cohen and P. Hagis, and M. Kishore, raised the general floor to $\omega(n) \ge 14$ and the size bound to $n > 10^{20}$. These are rigorous, computer-assisted strengthenings of Lehmer's method; they are universally accepted and form the backbone of the "minimum prime factors" line. Kishore's work also clarified constraints on the smallest prime factors of any solution.
+
+**Pomerance's counting bound (1977/1988).** Carl Pomerance proved that the number of Lehmer numbers up to $x$ is at most $x^{1/2 + o(1)}$. This is a near-miss of a different flavor: it shows solutions are at most as dense as $\sqrt{x}$, i.e. vanishingly rare, but the **square-root/parity barrier** prevents the bound from reaching zero. The result is regarded as essentially the limit of what sieve counting can deliver here.
+
+**Luca–Pomerance (2011).** Florian Luca and Carl Pomerance sharpened the counting function to roughly $x^{1/2}/(\log x)^{1/2 + o(1)}$. Again a strengthening, not a resolution; it improves the constant-and-log structure of the bound while remaining on the wrong side of the parity barrier.
+
+**Structured-family eliminations (2007–2008).** Banks, Luca, Güloğlu, Nevans and collaborators proved there are no Lehmer numbers among Fibonacci numbers, and analogous non-existence or finiteness results for repunits, Lucas-sequence terms, and shifted primes. These are genuine theorems and strong evidence, but each is confined to a thin set and cannot be amalgamated into a general proof.
+
+**On disputed claims.** Unlike some famous open problems, Lehmer's totient problem has not attracted notorious erroneous "proofs" in the refereed literature. Occasional informal or preprint claims of a resolution surface from time to time, but none has been accepted, and the consensus of the number-theory community — reflected in the standard surveys (Guy, *Unsolved Problems in Number Theory*; Sándor–Crstici, *Handbook of Number Theory*) — is that the problem remains entirely open. Any future claim should be checked against the established constraints ($n$ odd, squarefree, $\omega(n) \ge 15$, $n$ enormous) and against the Carmichael-number framing, since a Lehmer number would also have to be a Carmichael number with the additional property $\varphi(n) \mid n-1$, a condition satisfied by *none* of the millions of Carmichael numbers tabulated to date.

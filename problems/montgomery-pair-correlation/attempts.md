@@ -2,4 +2,14 @@
 
 _Notable attempts, near-misses, retracted proofs._
 
-<!-- DOSSIER:attempts -->
+Unlike the Riemann Hypothesis, Montgomery's pair correlation conjecture has not attracted a recurring stream of claimed "proofs," partly because its strong form is widely understood to be entangled with (and arguably harder than) deep prime-correlation problems. The notable history is instead one of genuine partial results, sharp equivalences, and the steady extension of what can be proved conditionally.
+
+**Montgomery's original support range (1973).** Montgomery's own theorem — $F(\alpha)\sim|\alpha|$ for $|\alpha|<1$ under RH — is simultaneously the founding result and the canonical near-miss: it establishes the conjecture exactly on the trivial range and identifies precisely what must be controlled (off-diagonal prime correlations) to push past $\alpha=1$. Every subsequent attempt confronts this same wall.
+
+**Goldston–Montgomery equivalence (1987).** Daniel Goldston and Montgomery proved that the pair-correlation conjecture is *equivalent* (under RH) to a precise asymptotic for the variance of primes in short intervals, $\int_1^X (\psi(x+\delta x)-\psi(x)-\delta x)^2\,dx$. This is a near-miss of a different kind: it shows the conjecture is not an isolated curiosity but a reformulation of a central prime-distribution question — and equally inaccessible.
+
+**Rudnick–Sarnak (1994).** A genuine advance rather than a disputed claim: all $n$-level correlations match GUE for restricted-support test functions, unconditionally for the relevant smoothed sums. The "near-miss" character lies in the support restriction, which mirrors Montgomery's barrier and cannot be removed by present methods.
+
+**Function-field resolution (Katz–Sarnak, 1999).** Over function fields the analogous statement is a *theorem*, proved unconditionally. This is sometimes informally described as "the conjecture solved in the function-field world," which is accurate for that setting but must not be conflated with the open number-field problem. Stating it neutrally: the algebraic-geometric analogue is established; the original analytic conjecture over $\mathbb{Q}$ is not.
+
+**No prominent retracted proofs.** As of this writing there is no widely circulated, then-withdrawn claimed proof of the full Montgomery conjecture in the refereed literature comparable to the famous RH episodes. Claims that occasionally appear typically either (a) reprove the known restricted-support range, or (b) assume unproven prime-tuple uniformity and are therefore conditional. Readers should treat any announcement of an *unconditional* proof of $F(\alpha)\to1$ for $|\alpha|\ge1$ with strong skepticism: such a result would imply major new uniform estimates on prime pairs and would be a landmark far beyond pair correlation itself. The honest status is that the strong conjecture remains open, with the principal documented objection to any purported full proof being the unresolved control of off-diagonal prime-correlation terms beyond the $|\alpha|=1$ threshold.

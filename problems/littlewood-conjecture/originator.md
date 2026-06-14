@@ -2,4 +2,18 @@
 
 _Biography, background, and the ideas that led here._
 
-<!-- DOSSIER:originator -->
+## John Edensor Littlewood (1885–1977)
+
+John Edensor Littlewood was one of the dominant figures of twentieth-century British mathematics, a master of hard classical analysis whose name attaches to results across analytic number theory, complex analysis, Fourier analysis, and the theory of differential equations. He was born on 9 June 1885 in Rochester, England, and spent part of his childhood in South Africa, where his father was a school headmaster, before returning to England for his education. He entered Trinity College, Cambridge, performed brilliantly in the Mathematical Tripos, and remained associated with Trinity for essentially his whole career, eventually holding the Rouse Ball Professorship of Mathematics.
+
+Littlewood is most famous for his extraordinarily productive collaboration with G. H. Hardy, a partnership that lasted some thirty-five years and produced around a hundred joint papers. Their work shaped analytic number theory: the **Hardy–Littlewood circle method**, the **Hardy–Littlewood maximal function**, the **Hardy–Littlewood $k$-tuple conjecture** on prime constellations, and deep results on Waring's problem and the distribution of primes. Outside the collaboration, Littlewood produced foundational work on the Riemann zeta function (including his result that $\pi(x)-\mathrm{li}(x)$ changes sign infinitely often, the context for the celebrated Skewes number), on the theory of subharmonic and integral functions, on Tauberian theorems, and — with Mary Cartwright — on nonlinear differential equations of van der Pol type, work now seen as an early anticipation of chaotic dynamics. His slim book *A Mathematician's Miscellany* remains a beloved window into his mathematical taste and wit.
+
+### Why he posed the conjecture
+
+The Littlewood conjecture emerges naturally from Littlewood's lifelong concern with the *fine structure of Diophantine approximation* and with sharp inequalities. The one-variable theory was, by the 1920s, thoroughly understood through continued fractions: the badly approximable numbers — those with bounded continued-fraction partial quotients — are exactly the obstruction to making $n\lVert n\alpha\rVert$ small. A natural and characteristically Littlewoodian question is whether this obstruction *survives* when one passes to two numbers and allows the two approximation errors to cooperate multiplicatively. The multiplicative coupling $n\,\lVert n\alpha\rVert\,\lVert n\beta\rVert$ is the key device: it asks whether two badly approximable numbers can be *simultaneously* and *independently* resistant, or whether one can always exploit the denominators where one of them happens to approximate well. Littlewood's intuition — and the conjecture — is that no pair is jointly resistant: the liminf is always $0$.
+
+The formulation has remained essentially unchanged since Littlewood proposed it around 1930; unlike some conjectures attributed to him, there is no major historical-versus-modern divergence in statement. What has changed is the *interpretation*: Cassels and Swinnerton-Dyer (1955) translated it into the language of products of linear forms and lattices, and Margulis later recast it as a rigidity statement about diagonal flows. The arithmetic question Littlewood asked and the dynamical question studied today are provably equivalent.
+
+### Legacy
+
+Littlewood died on 6 September 1977 in Cambridge. His broader legacy is immense: the Hardy–Littlewood school set the standard for rigor and ambition in analytic number theory, and his analytic technique influenced generations of researchers. The conjecture bearing his name is among the most enduring open problems in number theory — a single, deceptively simple inequality whose resolution has drawn in some of the deepest machinery of modern ergodic theory, and which still stands unproven nearly a century after he asked it.

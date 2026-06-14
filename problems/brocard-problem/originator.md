@@ -2,4 +2,20 @@
 
 _Biography, background, and the ideas that led here._
 
-<!-- DOSSIER:originator -->
+## Henri Brocard (1845–1922)
+
+**Pierre René Jean Baptiste Henri Brocard** was a French army officer, meteorologist, and amateur-turned-respected mathematician, born on 12 May 1845 in Vignot (Meuse) and died on 16 January 1922 in Bar-le-Duc. He trained at the École Polytechnique and entered the *Corps du Génie* (military engineering), serving in the Franco-Prussian War, during which he was briefly taken prisoner. His professional career was spent largely in meteorology — he ran a meteorological station at Bar-le-Duc and contributed observational work — but his lasting fame is mathematical.
+
+Brocard is best remembered today for **triangle geometry**, the late-nineteenth-century flowering of synthetic results on the triangle. The **Brocard points**, the **Brocard angle**, the **Brocard circle**, and the **Brocard triangle** all bear his name; his 1875 study of the two points $\Omega_1, \Omega_2$ for which the cevians make equal angles with the sides launched an entire sub-discipline. He was a prolific contributor of problems and notes to journals such as *Nouvelle correspondance mathématique*, *Mathesis*, and *L'Intermédiaire des mathématiciens*, the problem-and-solution periodicals that were the social media of the era's working mathematicians.
+
+It was precisely in this problem-posing milieu that the **number-theoretic question now bearing his name** arose. In an **1876** note, and again in **1885**, Brocard asked whether $n! + 1$ is a perfect square for only finitely many $n$, observing the three small solutions $n = 4, 5, 7$. The question fit Brocard's habit perfectly: a crisp, elementary-to-state Diophantine puzzle inviting computation and ingenuity. Unlike his geometry, which he developed systematically, the factorial-square question was an isolated curiosity — but one with extraordinary staying power, because the elementary tools available to Brocard (and, as it turns out, to us) are not enough to resolve it. His broader legacy is thus twofold: a body of named results in classical geometry, and one famous open problem in number theory that has resisted nearly 150 years of attack.
+
+## Srinivasa Ramanujan (1887–1920) — independent originator
+
+**Srinivasa Ramanujan**, born 22 December 1887 in Erode, Madras Presidency, and died 26 April 1920 in Kumbakonam, is one of history's most extraordinary mathematicians — a largely self-taught genius whose work on infinite series, continued fractions, partitions, modular forms, and number theory (much of it recorded in his celebrated *Notebooks* and the *Lost Notebook*) continues to generate research a century later. His collaboration with **G. H. Hardy** at Cambridge from 1914 produced landmark results, including the Hardy–Ramanujan asymptotic for the partition function and the circle method.
+
+Independently of Brocard, Ramanujan posed the factorial-square question in **1913** as **Question 469** of the *Journal of the Indian Mathematical Society*: to find all positive integers $n$ such that $n! + 1$ is a perfect square. He, too, identified $n = 4, 5, 7$. Because Ramanujan's question is identical to Brocard's, the equation $n! + 1 = m^2$ — and its generalizations $n! + A = m^2$ and $n! + 1 = m^k$ — are frequently called the **Brocard–Ramanujan problem/equation** in the literature. The independent rediscovery by Ramanujan is a measure of how naturally the problem arises from the interplay of factorials and squares.
+
+## Why the problem endures
+
+Both originators worked before the modern machinery (Baker's theory of linear forms in logarithms, the abc conjecture, large-scale computation) existed. Their elementary framing exposed a genuine gap: factorials grow too fast and too irregularly for congruence or descent arguments alone to control, yet the "expected" solution count is finite by simple density heuristics. The problem's persistence reflects not a lack of effort but a structural obstruction — the same one that keeps related equations like $x^2 - y! = A$ and the broader Erdős–Obláth family only partially resolved. Brocard's casual journal note and Ramanujan's elegant question thus crystallized a hard, lasting boundary of Diophantine analysis.

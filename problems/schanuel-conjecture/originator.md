@@ -1,5 +1,19 @@
 # Originator(s) — Schanuel's Conjecture
 
-_Biography, background, and the ideas that led here._
+## Stephen Hoel Schanuel (1933–2014)
 
-<!-- DOSSIER:originator -->
+Stephen Schanuel was an American mathematician whose name is attached to two quite different and durable pieces of mathematics: the transcendence conjecture treated here, and **Schanuel's lemma** in homological algebra (concerning the well-definedness of syzygies up to stable equivalence). That a single mathematician should leave landmark conjectures in both number theory and category-theoretic algebra reflects the breadth of his interests.
+
+Schanuel was a student of Serge Lang. He completed his doctorate at Columbia University around 1963, in the period when Lang was a dominant force in algebraic number theory, Diophantine geometry, and transcendence. It was within this milieu — Lang actively cataloguing what a complete theory of the exponential function "ought" to look like — that Schanuel formulated his conjecture, around 1960, while still a young researcher. Lang took up the statement, recognized its unifying power, and published it in his 1966 monograph *Introduction to Transcendental Numbers*, where it is explicitly credited to Schanuel. The conjecture has carried his name ever since.
+
+### Mathematical background and motivation
+
+The intellectual motivation for the conjecture is best understood as an exercise in *finding the right invariant*. By 1960 transcendence theory possessed a collection of powerful but seemingly disparate theorems: Hermite–Lindemann, Lindemann–Weierstrass, Gelfond–Schneider. Each constrains the arithmetic nature of values of $\exp$. Schanuel's question was structural rather than technical: among the $2n$ numbers $z_1,\dots,z_n,e^{z_1},\dots,e^{z_n}$, how much algebraic independence is *forced* by the only visible source of relations, namely $\mathbb{Q}$-linear dependencies among the $z_i$? His answer — that the transcendence degree should be at least $n$ whenever the $z_i$ are $\mathbb{Q}$-linearly independent — is the maximal clean statement compatible with the known obstruction, and it implies every classical theorem above. The genius lies in the economy: a one-line hypothesis subsumes a century of hard analysis.
+
+Schanuel's lemma, by contrast, emerged from his work in algebra and category theory; he spent much of his later career, jointly with F. William Lawvere, developing categorical foundations and pedagogy. Their book *Conceptual Mathematics* (1991/1997) is a widely used introduction to category theory through elementary set-theoretic and dynamical examples, and is part of Schanuel's broader legacy as an expositor who believed deep structure should be teachable from first principles.
+
+### Legacy
+
+Within transcendence theory, Schanuel's Conjecture has become the organizing target of the entire field — the statement against which partial results are measured and the hypothesis under which large bodies of conditional theorems are proved (Macintyre–Wilkie's decidability of the real exponential field theory, for instance, is conditional on a Schanuel-type statement). Its migration into model theory, via Zilber's pseudo-exponentiation, gave it a second life: it is now also a benchmark in the model theory of exponential fields and o-minimal structures.
+
+It is worth noting the precise division of historical roles. Schanuel **posed** the conjecture; **Lang** named, published, and propagated it; **Ax** proved its formal/differential analogue (the Ax–Schanuel theorem) in 1971, supplying its strongest theoretical support; and **Zilber** reframed it model-theoretically in the 2000s. The conjecture itself, however, originates squarely with Schanuel's youthful insight, and remains — sixty-plus years on — open in essentially full generality. Schanuel died in 2014, having never seen his most famous conjecture resolved, but having watched it become the keystone of its subject.

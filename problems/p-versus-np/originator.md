@@ -2,4 +2,18 @@
 
 _Biography, background, and the ideas that led here._
 
-<!-- DOSSIER:originator -->
+The modern problem has two acknowledged co-originators—**Stephen Cook** and **Leonid Levin**—and a deep historical root in a 1956 letter of **Kurt Gödel**.
+
+## Stephen Arthur Cook (b. 1939)
+
+Born in Buffalo, New York, Cook studied at the University of Michigan and earned his Ph.D. at Harvard in 1966 under Hao Wang. After a period at the University of California, Berkeley—where, controversially, he was denied tenure—he moved in 1970 to the University of Toronto, where he spent his career. Cook's intellectual milieu was the emerging theory of computation: recursion theory, automata, and the new complexity-theoretic perspective of Hartmanis, Stearns, Rabin, and Edmonds.
+
+Cook's 1971 paper "The Complexity of Theorem-Proving Procedures" introduced polynomial-time reducibility (the "Cook reduction") and proved that propositional satisfiability is, in a precise sense, the hardest problem in $\mathrm{NP}$: any problem verifiable in polynomial time can be transformed into a $\mathrm{SAT}$ instance with only polynomial overhead. This is the founding act of $\mathrm{NP}$-completeness theory. Cook's motivation was logical and proof-theoretic—he was interested in the difficulty of automated theorem proving—but the framework he built reorganized all of algorithmic problem-solving. For this work he received the **1982 ACM Turing Award**. His later contributions include foundational work on bounded arithmetic and proof complexity (the theory $\mathsf{PV}$ and the $\mathrm{NP}$ vs. $\mathrm{coNP}$ question), and he authored the official Clay Institute problem description in 2000. Cook remains, in conjecture and in temperament, a careful skeptic who believes $\mathrm{P} \neq \mathrm{NP}$.
+
+## Leonid Anatolievich Levin (b. 1948)
+
+Born in Dnipropetrovsk, Soviet Ukraine, Levin was a student of Andrey Kolmogorov in Moscow. Working within the Soviet tradition of algorithmic information theory and *perebor* (the Russian term for brute-force search), Levin independently arrived at the universality phenomenon: he identified six natural search problems and proved them universal, so that a fast algorithm for one would yield fast algorithms for an entire class. His result, presented in 1971 and published in 1973 as "Universal Sequential Search Problems," is the eastern half of the Cook–Levin theorem; notably, Levin framed it in terms of *search* (finding a witness) rather than *decision*, arguably closer to the practical question. Blocked by Soviet academic politics—partly for his association with dissident circles—Levin emigrated to the United States in 1978, completed a second Ph.D. at MIT under Albert Meyer, and joined Boston University, where he has worked since. His broader legacy includes deep contributions to Kolmogorov complexity, the theory of average-case completeness (he founded the study of $\mathrm{DistNP}$ and "distributional $\mathrm{NP}$-completeness"), one-way functions, and the foundations of randomness.
+
+## Kurt Gödel (1906–1978): the historical root
+
+The Austrian-American logician Kurt Gödel, author of the incompleteness theorems, anticipated the problem in a 1956 letter to John von Neumann. Gödel considered the time required to decide whether a formula has a proof of length $n$, and asked whether the number of steps could grow like $n$ or $n^2$ rather than exponentially—precisely the $\mathrm{P}$-vs-exhaustive-search dichotomy, phrased for a canonical $\mathrm{NP}$ problem. He saw with characteristic clarity that a positive answer would mechanize mathematical discovery. The letter went unnoticed until the 1980s; it does not establish priority over Cook and Levin, who supplied the rigorous framework, but it stands as a remarkable prefiguration. Gödel's name on the problem honors that vision while crediting Cook and Levin with its formalization.

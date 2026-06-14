@@ -1,5 +1,21 @@
 # Originator(s) — Grimm's Conjecture
 
-_Biography, background, and the ideas that led here._
+## Carl Albert Grimm
 
-<!-- DOSSIER:originator -->
+Grimm's Conjecture carries the name of **Carl Albert Grimm**, an American mathematics educator who posed the problem in a brief note in the *American Mathematical Monthly* in 1969. Compared with the towering figures (Erdős, Selfridge, Shorey, Tijdeman) who later developed the problem into a serious research topic, Grimm himself is a comparatively obscure figure in the historical record. He is documented as having been affiliated with the Sweet Briar, Virginia area, working as a teacher of mathematics rather than as a research mathematician at a major university. His lasting mark on the subject is essentially this single, well-chosen question.
+
+What makes the case interesting for a historian is that the conjecture is a textbook example of how a sharply posed elementary question — accessible to anyone who has met the notion of a prime factor — can turn out to encode some of the deepest unresolved difficulties in analytic number theory. Grimm noticed that the composite numbers wedged between two consecutive primes form a natural "block," and he asked whether that block could be *labelled injectively by primes*: one distinct prime divisor per number. The phrasing is concrete and almost combinatorial, with no overt mention of prime gaps, sieves, or transcendence theory. Yet, as Erdős and Selfridge showed within two years, those are exactly the tools the problem summons.
+
+### The idea and its motivation
+
+The motivating intuition is straightforward. A single composite number $m$ has at least one prime factor, so labelling *one* number is trivial. The difficulty is forcing the labels to be **distinct** across a whole run. If the run is long, several of its members might share their only small prime factors, and one must guarantee enough "fresh" primes to go around. By Hall's marriage theorem (which Grimm did not invoke explicitly, but which is the natural formalization), the obstruction is precisely a deficiency of distinct prime factors in some sub-block. Grimm's Conjecture is thus, at heart, the assertion that consecutive integers are never *too* multiplicatively impoverished as a group — a statement intimately bound up with how primes are spaced.
+
+Grimm appears to have been driven by the recreational and pedagogical appeal of the question rather than by a program to attack prime gaps. This is part of its charm: the originator supplied a vivid, checkable conjecture, and the research community supplied the machinery that revealed its depth.
+
+### The modern formulation versus the historical root
+
+There is no major divergence between Grimm's original statement and the modern one — unlike, say, conjectures whose "root" was later substantially restated. Grimm's 1969 wording (distinct prime divisors for each member of a maximal run of consecutive composites) is essentially the form studied today. The principal *refinements* introduced by later authors are: (i) the **Hall's-theorem / system-of-distinct-representatives** reformulation, which converts the existence question into a counting condition on distinct prime factors of sub-blocks; and (ii) the closely related **Grimm function** $g(n)$ and the auxiliary quantity studied by Erdős and Selfridge, which measure how many distinct prime factors $\prod (n+i)$ must contain. A common stronger variant asks the same of *any* $k$ consecutive integers exceeding a bound, not only those forming a prime gap. These are clarifications and strengthenings, not departures from Grimm's intent.
+
+### Legacy
+
+Grimm's legacy is the conjecture itself. It has become a fixture of the open-problems literature — appearing as problem **B32** in Richard Guy's *Unsolved Problems in Number Theory* and recurring throughout the Shorey–Tijdeman school's work on prime factors of blocks of consecutive integers. For a single short note by a teacher, the conjecture's reach is remarkable: it links elementary combinatorics (matchings), sieve theory, transcendence methods (via Baker-type estimates used by Ramachandra, Shorey and Tijdeman), and the theory of prime gaps. That a problem so simply stated remains unsolved more than half a century later is the clearest testament to the quality of Grimm's question.
