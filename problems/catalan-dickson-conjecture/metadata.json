@@ -1,0 +1,29 @@
+{
+  "slug": "catalan-dickson-conjecture",
+  "title": "The Catalan–Dickson Conjecture (Aliquot Sequences)",
+  "field": "Number Theory",
+  "subfields": [
+    "Iterated Divisor Functions",
+    "Computational Number Theory"
+  ],
+  "year_posed": 1888,
+  "originators": [
+    "Eugène Catalan",
+    "Leonard Eugene Dickson"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Every aliquot sequence (iterating the sum-of-proper-divisors function) is bounded, hence eventually periodic; Guy and Selfridge conjecture the opposite.\n",
+  "difficulty": 74,
+  "centrality": 38,
+  "tractability": 22,
+  "status": "open",
+  "tags": [
+    "aliquot",
+    "divisors",
+    "Guy-Selfridge",
+    "iteration"
+  ],
+  "rank": 55,
+  "css": 57.933,
+  "folder": "catalan-dickson-conjecture"
+}

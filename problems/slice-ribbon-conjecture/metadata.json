@@ -1,0 +1,28 @@
+{
+  "slug": "slice-ribbon-conjecture",
+  "title": "The Slice–Ribbon Conjecture",
+  "field": "Knot Theory",
+  "subfields": [
+    "Low-Dimensional Topology",
+    "4-Manifolds"
+  ],
+  "year_posed": 1962,
+  "originators": [
+    "Ralph Fox"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Every smoothly slice knot (bounding a smooth disk in the 4-ball) is a ribbon knot (bounds an immersed disk in the 3-sphere with only ribbon singularities).\n",
+  "difficulty": 80,
+  "centrality": 46,
+  "tractability": 30,
+  "status": "open",
+  "tags": [
+    "slice-knots",
+    "ribbon",
+    "4-ball",
+    "concordance"
+  ],
+  "rank": 59,
+  "css": 57.0,
+  "folder": "slice-ribbon-conjecture"
+}

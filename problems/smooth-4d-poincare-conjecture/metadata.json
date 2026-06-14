@@ -1,0 +1,29 @@
+{
+  "slug": "smooth-4d-poincare-conjecture",
+  "title": "The Smooth 4-Dimensional Poincaré Conjecture",
+  "field": "Geometric Topology",
+  "subfields": [
+    "4-Manifolds",
+    "Gauge Theory"
+  ],
+  "year_posed": 1982,
+  "originators": [
+    "Henri Poincaré (original)",
+    "smooth 4D case (post-Freedman)"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Every smooth 4-manifold homeomorphic to the 4-sphere is diffeomorphic to it; the last open case of the generalized Poincaré conjecture.\n",
+  "difficulty": 90,
+  "centrality": 62,
+  "tractability": 20,
+  "status": "open",
+  "tags": [
+    "4-manifolds",
+    "exotic",
+    "Gluck-twist",
+    "gauge-theory"
+  ],
+  "rank": 32,
+  "css": 65.467,
+  "folder": "smooth-4d-poincare-conjecture"
+}

@@ -1,0 +1,28 @@
+{
+  "slug": "zeeman-conjecture",
+  "title": "The Zeeman Conjecture",
+  "field": "Geometric Topology",
+  "subfields": [
+    "Collapsibility",
+    "Combinatorial Topology"
+  ],
+  "year_posed": 1964,
+  "originators": [
+    "Erik Christopher Zeeman"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "For every contractible 2-complex K, the product K × [0,1] is collapsible; it implies both the (now proven) 3-D Poincaré conjecture and the Andrews–Curtis conjecture.\n",
+  "difficulty": 79,
+  "centrality": 42,
+  "tractability": 28,
+  "status": "open",
+  "tags": [
+    "collapsible",
+    "2-complexes",
+    "Andrews-Curtis",
+    "contractible"
+  ],
+  "rank": 68,
+  "css": 55.467,
+  "folder": "zeeman-conjecture"
+}

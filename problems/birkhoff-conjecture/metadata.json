@@ -1,0 +1,28 @@
+{
+  "slug": "birkhoff-conjecture",
+  "title": "The Birkhoff Conjecture (Integrable Billiards)",
+  "field": "Dynamical Systems",
+  "subfields": [
+    "Billiards",
+    "Integrable Systems"
+  ],
+  "year_posed": 1927,
+  "originators": [
+    "George David Birkhoff"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "The only smooth, strictly convex billiard tables whose dynamics are integrable are ellipses.\n",
+  "difficulty": 84,
+  "centrality": 50,
+  "tractability": 32,
+  "status": "active-progress",
+  "tags": [
+    "billiards",
+    "integrability",
+    "Kaloshin",
+    "ellipses"
+  ],
+  "rank": 40,
+  "css": 61.933,
+  "folder": "birkhoff-conjecture"
+}

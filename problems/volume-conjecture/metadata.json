@@ -1,0 +1,29 @@
+{
+  "slug": "volume-conjecture",
+  "title": "The Volume Conjecture",
+  "field": "Knot Theory",
+  "subfields": [
+    "Quantum Topology",
+    "Hyperbolic Geometry"
+  ],
+  "year_posed": 1997,
+  "originators": [
+    "Rinat Kashaev",
+    "Hitoshi Murakami",
+    "Jun Murakami"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "The asymptotic growth of the colored Jones polynomials of a knot determines the hyperbolic volume of its complement.\n",
+  "difficulty": 82,
+  "centrality": 52,
+  "tractability": 28,
+  "status": "active-progress",
+  "tags": [
+    "colored-Jones",
+    "hyperbolic-volume",
+    "quantum-invariants"
+  ],
+  "rank": 56,
+  "css": 57.467,
+  "folder": "volume-conjecture"
+}

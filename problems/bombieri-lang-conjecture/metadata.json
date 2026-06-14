@@ -1,0 +1,29 @@
+{
+  "slug": "bombieri-lang-conjecture",
+  "title": "The Bombieri–Lang Conjecture",
+  "field": "Diophantine Geometry",
+  "subfields": [
+    "Arithmetic Geometry",
+    "Rational Points"
+  ],
+  "year_posed": 1980,
+  "originators": [
+    "Enrico Bombieri",
+    "Serge Lang"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "On a variety of general type over a number field, the rational points are not Zariski dense; a higher-dimensional analogue of the Mordell conjecture.\n",
+  "difficulty": 90,
+  "centrality": 66,
+  "tractability": 13,
+  "status": "open",
+  "tags": [
+    "rational-points",
+    "general-type",
+    "Mordell",
+    "Zariski-density"
+  ],
+  "rank": 25,
+  "css": 67.5,
+  "folder": "bombieri-lang-conjecture"
+}

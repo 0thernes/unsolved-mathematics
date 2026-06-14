@@ -1,0 +1,28 @@
+{
+  "slug": "borel-conjecture",
+  "title": "The Borel Conjecture",
+  "field": "Geometric Topology",
+  "subfields": [
+    "Surgery Theory",
+    "Aspherical Manifolds"
+  ],
+  "year_posed": 1953,
+  "originators": [
+    "Armand Borel"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Closed aspherical manifolds with isomorphic fundamental groups are homeomorphic, and any homotopy equivalence between them is homotopic to a homeomorphism.\n",
+  "difficulty": 86,
+  "centrality": 58,
+  "tractability": 25,
+  "status": "active-progress",
+  "tags": [
+    "aspherical",
+    "rigidity",
+    "Farrell-Jones",
+    "surgery"
+  ],
+  "rank": 34,
+  "css": 64.1,
+  "folder": "borel-conjecture"
+}

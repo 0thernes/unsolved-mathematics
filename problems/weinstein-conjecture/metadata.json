@@ -1,0 +1,28 @@
+{
+  "slug": "weinstein-conjecture",
+  "title": "The Weinstein Conjecture",
+  "field": "Symplectic Geometry",
+  "subfields": [
+    "Contact Geometry",
+    "Hamiltonian Dynamics"
+  ],
+  "year_posed": 1979,
+  "originators": [
+    "Alan Weinstein"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Every Reeb vector field on a closed contact manifold has at least one periodic orbit; proved in dimension three, open in higher dimensions.\n",
+  "difficulty": 85,
+  "centrality": 58,
+  "tractability": 35,
+  "status": "active-progress",
+  "tags": [
+    "Reeb-orbits",
+    "contact",
+    "Taubes",
+    "ECH"
+  ],
+  "rank": 45,
+  "css": 60.967,
+  "folder": "weinstein-conjecture"
+}

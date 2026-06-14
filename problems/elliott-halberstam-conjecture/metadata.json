@@ -1,0 +1,29 @@
+{
+  "slug": "elliott-halberstam-conjecture",
+  "title": "The Elliott–Halberstam Conjecture",
+  "field": "Analytic Number Theory",
+  "subfields": [
+    "Sieve Theory",
+    "Distribution of Primes in Progressions"
+  ],
+  "year_posed": 1968,
+  "originators": [
+    "Peter D. T. A. Elliott",
+    "Heini Halberstam"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Primes are equidistributed in arithmetic progressions up to modulus x^(1−ε); a strengthening of the Bombieri–Vinogradov theorem that would sharpen bounded-gaps-between-primes results.\n",
+  "difficulty": 85,
+  "centrality": 64,
+  "tractability": 30,
+  "status": "active-progress",
+  "tags": [
+    "primes",
+    "progressions",
+    "Bombieri-Vinogradov",
+    "bounded-gaps"
+  ],
+  "rank": 36,
+  "css": 64.0,
+  "folder": "elliott-halberstam-conjecture"
+}

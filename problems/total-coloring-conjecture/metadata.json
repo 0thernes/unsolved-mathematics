@@ -1,0 +1,29 @@
+{
+  "slug": "total-coloring-conjecture",
+  "title": "The Total Coloring Conjecture",
+  "field": "Graph Theory",
+  "subfields": [
+    "Graph Coloring",
+    "Combinatorics"
+  ],
+  "year_posed": 1965,
+  "originators": [
+    "Mehdi Behzad",
+    "Vadim G. Vizing"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "The total chromatic number of any graph (coloring vertices and edges so that adjacent/incident elements differ) is at most the maximum degree plus two.\n",
+  "difficulty": 76,
+  "centrality": 46,
+  "tractability": 42,
+  "status": "active-progress",
+  "tags": [
+    "total-coloring",
+    "chromatic",
+    "Vizing",
+    "Molloy-Reed"
+  ],
+  "rank": 73,
+  "css": 54.0,
+  "folder": "total-coloring-conjecture"
+}

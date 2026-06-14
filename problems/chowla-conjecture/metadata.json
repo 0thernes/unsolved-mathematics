@@ -1,0 +1,29 @@
+{
+  "slug": "chowla-conjecture",
+  "title": "The Chowla Conjecture",
+  "field": "Analytic Number Theory",
+  "subfields": [
+    "Multiplicative Number Theory",
+    "Ergodic Theory"
+  ],
+  "year_posed": 1965,
+  "originators": [
+    "Sarvadaman Chowla"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Correlations of the Liouville function λ at distinct shifts average to zero; a quantitative statement of the pseudorandomness of the Möbius/Liouville function.\n",
+  "difficulty": 86,
+  "centrality": 60,
+  "tractability": 28,
+  "status": "active-progress",
+  "tags": [
+    "Liouville",
+    "Mobius",
+    "correlations",
+    "Tao",
+    "Sarnak"
+  ],
+  "rank": 38,
+  "css": 63.6,
+  "folder": "chowla-conjecture"
+}

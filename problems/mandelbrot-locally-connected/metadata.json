@@ -1,0 +1,29 @@
+{
+  "slug": "mandelbrot-locally-connected",
+  "title": "The MLC Conjecture (Mandelbrot Locally Connected)",
+  "field": "Complex Dynamics",
+  "subfields": [
+    "Holomorphic Dynamics",
+    "Renormalization"
+  ],
+  "year_posed": 1982,
+  "originators": [
+    "Adrien Douady",
+    "John H. Hubbard"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "The Mandelbrot set is locally connected; this would yield a complete topological/combinatorial model of it and imply density of hyperbolicity for quadratic polynomials.\n",
+  "difficulty": 88,
+  "centrality": 60,
+  "tractability": 24,
+  "status": "active-progress",
+  "tags": [
+    "Mandelbrot",
+    "renormalization",
+    "Yoccoz",
+    "hyperbolicity"
+  ],
+  "rank": 37,
+  "css": 63.667,
+  "folder": "mandelbrot-locally-connected"
+}

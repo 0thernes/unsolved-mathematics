@@ -1,0 +1,29 @@
+{
+  "slug": "vojta-conjecture",
+  "title": "Vojta's Conjecture",
+  "field": "Diophantine Geometry",
+  "subfields": [
+    "Arithmetic Geometry",
+    "Nevanlinna Theory",
+    "Heights"
+  ],
+  "year_posed": 1987,
+  "originators": [
+    "Paul Vojta"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "A deep height inequality on algebraic varieties, modeled on Nevanlinna's second main theorem, that implies the abc conjecture, the Mordell conjecture, and much of Diophantine geometry.\n",
+  "difficulty": 93,
+  "centrality": 72,
+  "tractability": 11,
+  "status": "open",
+  "tags": [
+    "heights",
+    "abc",
+    "Mordell",
+    "Nevanlinna"
+  ],
+  "rank": 18,
+  "css": 70.233,
+  "folder": "vojta-conjecture"
+}

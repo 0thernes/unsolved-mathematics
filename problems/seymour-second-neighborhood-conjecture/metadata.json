@@ -1,0 +1,28 @@
+{
+  "slug": "seymour-second-neighborhood-conjecture",
+  "title": "Seymour's Second Neighborhood Conjecture",
+  "field": "Graph Theory",
+  "subfields": [
+    "Directed Graphs",
+    "Combinatorics"
+  ],
+  "year_posed": 1990,
+  "originators": [
+    "Paul Seymour"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Every oriented graph has a vertex whose second out-neighborhood is at least as large as its first out-neighborhood.\n",
+  "difficulty": 74,
+  "centrality": 40,
+  "tractability": 40,
+  "status": "open",
+  "tags": [
+    "digraphs",
+    "out-neighborhood",
+    "tournaments",
+    "Dean"
+  ],
+  "rank": 79,
+  "css": 49.933,
+  "folder": "seymour-second-neighborhood-conjecture"
+}

@@ -64,6 +64,35 @@
       "css": 87.867
     },
     {
+      "slug": "grand-riemann-hypothesis",
+      "title": "The Grand Riemann Hypothesis",
+      "field": "Analytic Number Theory",
+      "subfields": [
+        "L-functions",
+        "Selberg Class",
+        "Automorphic Forms"
+      ],
+      "year_posed": 1884,
+      "originators": [
+        "Adolf Piltz",
+        "Bernhard Riemann (original case)"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "All non-trivial zeros of every automorphic L-function (or every member of the Selberg class) lie on the critical line Re(s) = 1/2; simultaneously generalizes the Riemann and generalized Riemann hypotheses.\n",
+      "difficulty": 98,
+      "centrality": 90,
+      "tractability": 7,
+      "status": "open",
+      "tags": [
+        "L-functions",
+        "Selberg-class",
+        "GRH",
+        "automorphic"
+      ],
+      "rank": 3,
+      "css": 84.9
+    },
+    {
       "slug": "p-versus-np",
       "title": "P versus NP",
       "field": "Computational Complexity Theory",
@@ -90,7 +119,7 @@
         "logic",
         "cryptography"
       ],
-      "rank": 3,
+      "rank": 4,
       "css": 81.9
     },
     {
@@ -117,7 +146,7 @@
         "algebraic-cycles",
         "complex-varieties"
       ],
-      "rank": 4,
+      "rank": 5,
       "css": 79.9
     },
     {
@@ -145,7 +174,7 @@
         "sieve",
         "bounded-gaps"
       ],
-      "rank": 5,
+      "rank": 6,
       "css": 79.533
     },
     {
@@ -174,7 +203,7 @@
         "rational-points",
         "BSD"
       ],
-      "rank": 6,
+      "rank": 7,
       "css": 78.8
     },
     {
@@ -200,7 +229,7 @@
         "divisors",
         "ancient"
       ],
-      "rank": 7,
+      "rank": 8,
       "css": 78.3
     },
     {
@@ -225,7 +254,7 @@
         "mersenne",
         "GIMPS"
       ],
-      "rank": 8,
+      "rank": 9,
       "css": 76.6
     },
     {
@@ -254,7 +283,7 @@
         "Woodin",
         "large-cardinals"
       ],
-      "rank": 9,
+      "rank": 10,
       "css": 76.2
     },
     {
@@ -281,7 +310,7 @@
         "Hilbert",
         "dynamics"
       ],
-      "rank": 10,
+      "rank": 11,
       "css": 76.033
     },
     {
@@ -312,7 +341,7 @@
         "mass-gap",
         "physics"
       ],
-      "rank": 11,
+      "rank": 12,
       "css": 75.267
     },
     {
@@ -342,7 +371,7 @@
         "regularity",
         "turbulence"
       ],
-      "rank": 12,
+      "rank": 13,
       "css": 74.667
     },
     {
@@ -370,7 +399,7 @@
         "Mochizuki",
         "IUT"
       ],
-      "rank": 13,
+      "rank": 14,
       "css": 73.767
     },
     {
@@ -398,7 +427,7 @@
         "Galois",
         "motives"
       ],
-      "rank": 14,
+      "rank": 15,
       "css": 72.533
     },
     {
@@ -423,7 +452,7 @@
         "gaps",
         "Legendre"
       ],
-      "rank": 15,
+      "rank": 16,
       "css": 71.267
     },
     {
@@ -448,7 +477,35 @@
         "gaps",
         "bounded-gaps"
       ],
-      "rank": 16,
+      "rank": 17,
+      "css": 70.233
+    },
+    {
+      "slug": "vojta-conjecture",
+      "title": "Vojta's Conjecture",
+      "field": "Diophantine Geometry",
+      "subfields": [
+        "Arithmetic Geometry",
+        "Nevanlinna Theory",
+        "Heights"
+      ],
+      "year_posed": 1987,
+      "originators": [
+        "Paul Vojta"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "A deep height inequality on algebraic varieties, modeled on Nevanlinna's second main theorem, that implies the abc conjecture, the Mordell conjecture, and much of Diophantine geometry.\n",
+      "difficulty": 93,
+      "centrality": 72,
+      "tractability": 11,
+      "status": "open",
+      "tags": [
+        "heights",
+        "abc",
+        "Mordell",
+        "Nevanlinna"
+      ],
+      "rank": 18,
       "css": 70.233
     },
     {
@@ -476,7 +533,7 @@
         "rigidity",
         "Hilbert-irreducibility"
       ],
-      "rank": 17,
+      "rank": 19,
       "css": 69.867
     },
     {
@@ -504,7 +561,7 @@
         "admissible",
         "density"
       ],
-      "rank": 18,
+      "rank": 20,
       "css": 69.5
     },
     {
@@ -530,7 +587,7 @@
         "3n+1",
         "dynamics"
       ],
-      "rank": 19,
+      "rank": 21,
       "css": 69.267
     },
     {
@@ -559,7 +616,7 @@
         "restriction",
         "Wang-Zahl"
       ],
-      "rank": 20,
+      "rank": 22,
       "css": 69.1
     },
     {
@@ -585,7 +642,7 @@
         "automorphisms",
         "Keller"
       ],
-      "rank": 21,
+      "rank": 23,
       "css": 68.333
     },
     {
@@ -613,7 +670,35 @@
         "assembly-map",
         "groups"
       ],
-      "rank": 22,
+      "rank": 24,
+      "css": 67.5
+    },
+    {
+      "slug": "bombieri-lang-conjecture",
+      "title": "The Bombieri–Lang Conjecture",
+      "field": "Diophantine Geometry",
+      "subfields": [
+        "Arithmetic Geometry",
+        "Rational Points"
+      ],
+      "year_posed": 1980,
+      "originators": [
+        "Enrico Bombieri",
+        "Serge Lang"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "On a variety of general type over a number field, the rational points are not Zariski dense; a higher-dimensional analogue of the Mordell conjecture.\n",
+      "difficulty": 90,
+      "centrality": 66,
+      "tractability": 13,
+      "status": "open",
+      "tags": [
+        "rational-points",
+        "general-type",
+        "Mordell",
+        "Zariski-density"
+      ],
+      "rank": 25,
       "css": 67.5
     },
     {
@@ -638,7 +723,7 @@
         "polynomials",
         "Hardy-Littlewood"
       ],
-      "rank": 23,
+      "rank": 26,
       "css": 67.3
     },
     {
@@ -664,7 +749,7 @@
         "minors",
         "four-color"
       ],
-      "rank": 24,
+      "rank": 27,
       "css": 67.067
     },
     {
@@ -691,7 +776,7 @@
         "EKL",
         "dynamics"
       ],
-      "rank": 25,
+      "rank": 28,
       "css": 66.933
     },
     {
@@ -719,7 +804,7 @@
         "Dickson",
         "Bateman-Horn"
       ],
-      "rank": 26,
+      "rank": 29,
       "css": 66.667
     },
     {
@@ -744,7 +829,7 @@
         "Hilbert-space",
         "invariant-subspaces"
       ],
-      "rank": 27,
+      "rank": 30,
       "css": 66.5
     },
     {
@@ -770,8 +855,36 @@
         "exponential",
         "model-theory"
       ],
-      "rank": 28,
+      "rank": 31,
       "css": 65.833
+    },
+    {
+      "slug": "smooth-4d-poincare-conjecture",
+      "title": "The Smooth 4-Dimensional Poincaré Conjecture",
+      "field": "Geometric Topology",
+      "subfields": [
+        "4-Manifolds",
+        "Gauge Theory"
+      ],
+      "year_posed": 1982,
+      "originators": [
+        "Henri Poincaré (original)",
+        "smooth 4D case (post-Freedman)"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Every smooth 4-manifold homeomorphic to the 4-sphere is diffeomorphic to it; the last open case of the generalized Poincaré conjecture.\n",
+      "difficulty": 90,
+      "centrality": 62,
+      "tractability": 20,
+      "status": "open",
+      "tags": [
+        "4-manifolds",
+        "exotic",
+        "Gluck-twist",
+        "gauge-theory"
+      ],
+      "rank": 32,
+      "css": 65.467
     },
     {
       "slug": "baum-connes-conjecture",
@@ -799,8 +912,35 @@
         "C-star-algebras",
         "Gromov"
       ],
-      "rank": 29,
+      "rank": 33,
       "css": 64.667
+    },
+    {
+      "slug": "borel-conjecture",
+      "title": "The Borel Conjecture",
+      "field": "Geometric Topology",
+      "subfields": [
+        "Surgery Theory",
+        "Aspherical Manifolds"
+      ],
+      "year_posed": 1953,
+      "originators": [
+        "Armand Borel"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Closed aspherical manifolds with isomorphic fundamental groups are homeomorphic, and any homotopy equivalence between them is homotopic to a homeomorphism.\n",
+      "difficulty": 86,
+      "centrality": 58,
+      "tractability": 25,
+      "status": "active-progress",
+      "tags": [
+        "aspherical",
+        "rigidity",
+        "Farrell-Jones",
+        "surgery"
+      ],
+      "rank": 34,
+      "css": 64.1
     },
     {
       "slug": "unique-games-conjecture",
@@ -827,8 +967,92 @@
         "2-to-2",
         "hardness"
       ],
-      "rank": 30,
+      "rank": 35,
       "css": 64.033
+    },
+    {
+      "slug": "elliott-halberstam-conjecture",
+      "title": "The Elliott–Halberstam Conjecture",
+      "field": "Analytic Number Theory",
+      "subfields": [
+        "Sieve Theory",
+        "Distribution of Primes in Progressions"
+      ],
+      "year_posed": 1968,
+      "originators": [
+        "Peter D. T. A. Elliott",
+        "Heini Halberstam"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Primes are equidistributed in arithmetic progressions up to modulus x^(1−ε); a strengthening of the Bombieri–Vinogradov theorem that would sharpen bounded-gaps-between-primes results.\n",
+      "difficulty": 85,
+      "centrality": 64,
+      "tractability": 30,
+      "status": "active-progress",
+      "tags": [
+        "primes",
+        "progressions",
+        "Bombieri-Vinogradov",
+        "bounded-gaps"
+      ],
+      "rank": 36,
+      "css": 64.0
+    },
+    {
+      "slug": "mandelbrot-locally-connected",
+      "title": "The MLC Conjecture (Mandelbrot Locally Connected)",
+      "field": "Complex Dynamics",
+      "subfields": [
+        "Holomorphic Dynamics",
+        "Renormalization"
+      ],
+      "year_posed": 1982,
+      "originators": [
+        "Adrien Douady",
+        "John H. Hubbard"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "The Mandelbrot set is locally connected; this would yield a complete topological/combinatorial model of it and imply density of hyperbolicity for quadratic polynomials.\n",
+      "difficulty": 88,
+      "centrality": 60,
+      "tractability": 24,
+      "status": "active-progress",
+      "tags": [
+        "Mandelbrot",
+        "renormalization",
+        "Yoccoz",
+        "hyperbolicity"
+      ],
+      "rank": 37,
+      "css": 63.667
+    },
+    {
+      "slug": "chowla-conjecture",
+      "title": "The Chowla Conjecture",
+      "field": "Analytic Number Theory",
+      "subfields": [
+        "Multiplicative Number Theory",
+        "Ergodic Theory"
+      ],
+      "year_posed": 1965,
+      "originators": [
+        "Sarvadaman Chowla"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Correlations of the Liouville function λ at distinct shifts average to zero; a quantitative statement of the pseudorandomness of the Möbius/Liouville function.\n",
+      "difficulty": 86,
+      "centrality": 60,
+      "tractability": 28,
+      "status": "active-progress",
+      "tags": [
+        "Liouville",
+        "Mobius",
+        "correlations",
+        "Tao",
+        "Sarnak"
+      ],
+      "rank": 38,
+      "css": 63.6
     },
     {
       "slug": "montgomery-pair-correlation",
@@ -855,8 +1079,35 @@
         "GUE",
         "RH"
       ],
-      "rank": 31,
+      "rank": 39,
       "css": 61.967
+    },
+    {
+      "slug": "birkhoff-conjecture",
+      "title": "The Birkhoff Conjecture (Integrable Billiards)",
+      "field": "Dynamical Systems",
+      "subfields": [
+        "Billiards",
+        "Integrable Systems"
+      ],
+      "year_posed": 1927,
+      "originators": [
+        "George David Birkhoff"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "The only smooth, strictly convex billiard tables whose dynamics are integrable are ellipses.\n",
+      "difficulty": 84,
+      "centrality": 50,
+      "tractability": 32,
+      "status": "active-progress",
+      "tags": [
+        "billiards",
+        "integrability",
+        "Kaloshin",
+        "ellipses"
+      ],
+      "rank": 40,
+      "css": 61.933
     },
     {
       "slug": "artin-primitive-root-conjecture",
@@ -882,7 +1133,7 @@
         "Hooley",
         "GRH"
       ],
-      "rank": 32,
+      "rank": 41,
       "css": 61.833
     },
     {
@@ -909,7 +1160,7 @@
         "Erdos",
         "Szemeredi-Trotter"
       ],
-      "rank": 33,
+      "rank": 42,
       "css": 61.667
     },
     {
@@ -936,7 +1187,7 @@
         "CW",
         "group-theory"
       ],
-      "rank": 34,
+      "rank": 43,
       "css": 61.4
     },
     {
@@ -964,8 +1215,35 @@
         "Lehmer-number",
         "Salem"
       ],
-      "rank": 35,
+      "rank": 44,
       "css": 61.333
+    },
+    {
+      "slug": "weinstein-conjecture",
+      "title": "The Weinstein Conjecture",
+      "field": "Symplectic Geometry",
+      "subfields": [
+        "Contact Geometry",
+        "Hamiltonian Dynamics"
+      ],
+      "year_posed": 1979,
+      "originators": [
+        "Alan Weinstein"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Every Reeb vector field on a closed contact manifold has at least one periodic orbit; proved in dimension three, open in higher dimensions.\n",
+      "difficulty": 85,
+      "centrality": 58,
+      "tractability": 35,
+      "status": "active-progress",
+      "tags": [
+        "Reeb-orbits",
+        "contact",
+        "Taubes",
+        "ECH"
+      ],
+      "rank": 45,
+      "css": 60.967
     },
     {
       "slug": "hilbert-smith-conjecture",
@@ -992,8 +1270,35 @@
         "Lie-groups",
         "manifolds"
       ],
-      "rank": 36,
+      "rank": 46,
       "css": 60.733
+    },
+    {
+      "slug": "zariski-cancellation-problem",
+      "title": "The Zariski Cancellation Problem",
+      "field": "Algebraic Geometry",
+      "subfields": [
+        "Affine Algebraic Geometry",
+        "Commutative Algebra"
+      ],
+      "year_posed": 1949,
+      "originators": [
+        "Oscar Zariski"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "If X × A^1 is isomorphic to affine (n+1)-space, must X be isomorphic to affine n-space? Open in characteristic 0; false in positive characteristic.\n",
+      "difficulty": 84,
+      "centrality": 50,
+      "tractability": 30,
+      "status": "active-progress",
+      "tags": [
+        "affine-space",
+        "cancellation",
+        "Gupta",
+        "automorphisms"
+      ],
+      "rank": 47,
+      "css": 60.667
     },
     {
       "slug": "inscribed-square-problem",
@@ -1018,7 +1323,7 @@
         "square-peg",
         "topology"
       ],
-      "rank": 37,
+      "rank": 48,
       "css": 60.2
     },
     {
@@ -1045,8 +1350,89 @@
         "Kakeya",
         "Guth-Iosevich-Ou-Wang"
       ],
-      "rank": 38,
+      "rank": 49,
       "css": 59.967
+    },
+    {
+      "slug": "vaught-conjecture",
+      "title": "Vaught's Conjecture",
+      "field": "Mathematical Logic",
+      "subfields": [
+        "Model Theory",
+        "Descriptive Set Theory"
+      ],
+      "year_posed": 1961,
+      "originators": [
+        "Robert Lawson Vaught"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "A countable complete first-order theory has either at most countably many or exactly continuum-many countable models — never strictly in between.\n",
+      "difficulty": 82,
+      "centrality": 50,
+      "tractability": 28,
+      "status": "open",
+      "tags": [
+        "countable-models",
+        "Morley",
+        "topological-Vaught",
+        "Borel"
+      ],
+      "rank": 50,
+      "css": 59.267
+    },
+    {
+      "slug": "kothe-conjecture",
+      "title": "Köthe's Conjecture",
+      "field": "Ring Theory",
+      "subfields": [
+        "Noncommutative Algebra",
+        "Radical Theory"
+      ],
+      "year_posed": 1930,
+      "originators": [
+        "Gottfried Köthe"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "If a ring has no nonzero nil two-sided ideals, it has no nonzero nil one-sided ideals; equivalently, the sum of two nil left ideals is nil.\n",
+      "difficulty": 80,
+      "centrality": 44,
+      "tractability": 25,
+      "status": "open",
+      "tags": [
+        "nil-ideals",
+        "radical",
+        "noncommutative",
+        "Amitsur"
+      ],
+      "rank": 51,
+      "css": 59.033
+    },
+    {
+      "slug": "sarnak-mobius-conjecture",
+      "title": "Sarnak's Möbius Disjointness Conjecture",
+      "field": "Dynamical Systems",
+      "subfields": [
+        "Ergodic Theory",
+        "Analytic Number Theory"
+      ],
+      "year_posed": 2010,
+      "originators": [
+        "Peter Sarnak"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "The Möbius function is asymptotically orthogonal to every observable arising from a topological dynamical system of zero entropy.\n",
+      "difficulty": 84,
+      "centrality": 58,
+      "tractability": 35,
+      "status": "active-progress",
+      "tags": [
+        "Mobius",
+        "zero-entropy",
+        "disjointness",
+        "Chowla"
+      ],
+      "rank": 52,
+      "css": 58.5
     },
     {
       "slug": "sunflower-conjecture",
@@ -1072,7 +1458,7 @@
         "Erdos-Rado",
         "Alweiss-Lovett-Wu-Zhang"
       ],
-      "rank": 39,
+      "rank": 53,
       "css": 58.233
     },
     {
@@ -1101,8 +1487,64 @@
         "six-exponentials",
         "logarithms"
       ],
-      "rank": 40,
+      "rank": 54,
       "css": 58.1
+    },
+    {
+      "slug": "catalan-dickson-conjecture",
+      "title": "The Catalan–Dickson Conjecture (Aliquot Sequences)",
+      "field": "Number Theory",
+      "subfields": [
+        "Iterated Divisor Functions",
+        "Computational Number Theory"
+      ],
+      "year_posed": 1888,
+      "originators": [
+        "Eugène Catalan",
+        "Leonard Eugene Dickson"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Every aliquot sequence (iterating the sum-of-proper-divisors function) is bounded, hence eventually periodic; Guy and Selfridge conjecture the opposite.\n",
+      "difficulty": 74,
+      "centrality": 38,
+      "tractability": 22,
+      "status": "open",
+      "tags": [
+        "aliquot",
+        "divisors",
+        "Guy-Selfridge",
+        "iteration"
+      ],
+      "rank": 55,
+      "css": 57.933
+    },
+    {
+      "slug": "volume-conjecture",
+      "title": "The Volume Conjecture",
+      "field": "Knot Theory",
+      "subfields": [
+        "Quantum Topology",
+        "Hyperbolic Geometry"
+      ],
+      "year_posed": 1997,
+      "originators": [
+        "Rinat Kashaev",
+        "Hitoshi Murakami",
+        "Jun Murakami"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "The asymptotic growth of the colored Jones polynomials of a knot determines the hyperbolic volume of its complement.\n",
+      "difficulty": 82,
+      "centrality": 52,
+      "tractability": 28,
+      "status": "active-progress",
+      "tags": [
+        "colored-Jones",
+        "hyperbolic-volume",
+        "quantum-invariants"
+      ],
+      "rank": 56,
+      "css": 57.467
     },
     {
       "slug": "hadwiger-nelson-problem",
@@ -1129,7 +1571,7 @@
         "de-Grey",
         "unit-distance"
       ],
-      "rank": 41,
+      "rank": 57,
       "css": 57.3
     },
     {
@@ -1156,8 +1598,35 @@
         "designs",
         "orthogonal"
       ],
-      "rank": 42,
+      "rank": 58,
       "css": 57.1
+    },
+    {
+      "slug": "slice-ribbon-conjecture",
+      "title": "The Slice–Ribbon Conjecture",
+      "field": "Knot Theory",
+      "subfields": [
+        "Low-Dimensional Topology",
+        "4-Manifolds"
+      ],
+      "year_posed": 1962,
+      "originators": [
+        "Ralph Fox"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Every smoothly slice knot (bounding a smooth disk in the 4-ball) is a ribbon knot (bounds an immersed disk in the 3-sphere with only ribbon singularities).\n",
+      "difficulty": 80,
+      "centrality": 46,
+      "tractability": 30,
+      "status": "open",
+      "tags": [
+        "slice-knots",
+        "ribbon",
+        "4-ball",
+        "concordance"
+      ],
+      "rank": 59,
+      "css": 57.0
     },
     {
       "slug": "cycle-double-cover-conjecture",
@@ -1184,8 +1653,63 @@
         "double-cover",
         "embeddings"
       ],
-      "rank": 43,
+      "rank": 60,
       "css": 56.967
+    },
+    {
+      "slug": "lehmer-tau-conjecture",
+      "title": "Lehmer's Conjecture on the Ramanujan Tau Function",
+      "field": "Number Theory",
+      "subfields": [
+        "Modular Forms",
+        "Hecke Theory"
+      ],
+      "year_posed": 1947,
+      "originators": [
+        "Derrick Henry Lehmer"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "The Ramanujan tau function never vanishes: τ(n) ≠ 0 for all positive integers n.\n",
+      "difficulty": 78,
+      "centrality": 45,
+      "tractability": 30,
+      "status": "open",
+      "tags": [
+        "Ramanujan-tau",
+        "modular-forms",
+        "Hecke",
+        "non-vanishing"
+      ],
+      "rank": 61,
+      "css": 56.9
+    },
+    {
+      "slug": "erdos-hajnal-conjecture",
+      "title": "The Erdős–Hajnal Conjecture",
+      "field": "Graph Theory",
+      "subfields": [
+        "Ramsey Theory",
+        "Extremal Combinatorics"
+      ],
+      "year_posed": 1989,
+      "originators": [
+        "Paul Erdős",
+        "András Hajnal"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Graphs forbidding a fixed induced subgraph contain a clique or independent set of polynomial size n^c, versus the logarithmic size forced in general.\n",
+      "difficulty": 80,
+      "centrality": 54,
+      "tractability": 38,
+      "status": "active-progress",
+      "tags": [
+        "induced-subgraphs",
+        "Ramsey",
+        "cliques",
+        "Erdos"
+      ],
+      "rank": 62,
+      "css": 56.8
     },
     {
       "slug": "brocard-problem",
@@ -1210,7 +1734,7 @@
         "squares",
         "Brown-numbers"
       ],
-      "rank": 44,
+      "rank": 63,
       "css": 56.733
     },
     {
@@ -1238,7 +1762,7 @@
         "out-degree",
         "Seymour"
       ],
-      "rank": 45,
+      "rank": 64,
       "css": 56.733
     },
     {
@@ -1265,8 +1789,35 @@
         "Ulam",
         "isomorphism"
       ],
-      "rank": 46,
+      "rank": 65,
       "css": 56.5
+    },
+    {
+      "slug": "eilenberg-ganea-conjecture",
+      "title": "The Eilenberg–Ganea Conjecture",
+      "field": "Algebraic Topology",
+      "subfields": [
+        "Group Cohomology",
+        "Dimension Theory"
+      ],
+      "year_posed": 1957,
+      "originators": [
+        "Samuel Eilenberg",
+        "Tudor Ganea"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Every group of cohomological dimension 2 has geometric dimension 2 (admits a 2-dimensional aspherical CW model).\n",
+      "difficulty": 79,
+      "centrality": 42,
+      "tractability": 26,
+      "status": "open",
+      "tags": [
+        "cohomological-dimension",
+        "aspherical",
+        "Bestvina-Brady"
+      ],
+      "rank": 66,
+      "css": 56.133
     },
     {
       "slug": "andrews-curtis-conjecture",
@@ -1292,8 +1843,35 @@
         "AC-moves",
         "topology"
       ],
-      "rank": 47,
+      "rank": 67,
       "css": 55.6
+    },
+    {
+      "slug": "zeeman-conjecture",
+      "title": "The Zeeman Conjecture",
+      "field": "Geometric Topology",
+      "subfields": [
+        "Collapsibility",
+        "Combinatorial Topology"
+      ],
+      "year_posed": 1964,
+      "originators": [
+        "Erik Christopher Zeeman"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "For every contractible 2-complex K, the product K × [0,1] is collapsible; it implies both the (now proven) 3-D Poincaré conjecture and the Andrews–Curtis conjecture.\n",
+      "difficulty": 79,
+      "centrality": 42,
+      "tractability": 28,
+      "status": "open",
+      "tags": [
+        "collapsible",
+        "2-complexes",
+        "Andrews-Curtis",
+        "contractible"
+      ],
+      "rank": 68,
+      "css": 55.467
     },
     {
       "slug": "connes-embedding-aftermath",
@@ -1319,7 +1897,7 @@
         "quantum",
         "Tsirelson"
       ],
-      "rank": 48,
+      "rank": 69,
       "css": 55.367
     },
     {
@@ -1346,7 +1924,7 @@
         "view-obstruction",
         "covering"
       ],
-      "rank": 49,
+      "rank": 70,
       "css": 55.267
     },
     {
@@ -1371,7 +1949,7 @@
         "Fermat",
         "prize-problem"
       ],
-      "rank": 50,
+      "rank": 71,
       "css": 54.933
     },
     {
@@ -1396,8 +1974,63 @@
         "Carmichael",
         "Lehmer"
       ],
-      "rank": 51,
+      "rank": 72,
       "css": 54.3
+    },
+    {
+      "slug": "total-coloring-conjecture",
+      "title": "The Total Coloring Conjecture",
+      "field": "Graph Theory",
+      "subfields": [
+        "Graph Coloring",
+        "Combinatorics"
+      ],
+      "year_posed": 1965,
+      "originators": [
+        "Mehdi Behzad",
+        "Vadim G. Vizing"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "The total chromatic number of any graph (coloring vertices and edges so that adjacent/incident elements differ) is at most the maximum degree plus two.\n",
+      "difficulty": 76,
+      "centrality": 46,
+      "tractability": 42,
+      "status": "active-progress",
+      "tags": [
+        "total-coloring",
+        "chromatic",
+        "Vizing",
+        "Molloy-Reed"
+      ],
+      "rank": 73,
+      "css": 54.0
+    },
+    {
+      "slug": "hall-conjecture",
+      "title": "Hall's Conjecture",
+      "field": "Number Theory",
+      "subfields": [
+        "Diophantine Analysis",
+        "Heights"
+      ],
+      "year_posed": 1971,
+      "originators": [
+        "Marshall Hall Jr."
+      ],
+      "millennium_prize": false,
+      "statement_plain": "For non-square integers, the gap |x^3 − y^2| grows at least like a power x^(1/2−ε); a special, sharp consequence of the abc/Vojta circle of ideas.\n",
+      "difficulty": 76,
+      "centrality": 42,
+      "tractability": 28,
+      "status": "open",
+      "tags": [
+        "Mordell-curve",
+        "abc",
+        "heights",
+        "Danilov"
+      ],
+      "rank": 74,
+      "css": 53.8
     },
     {
       "slug": "union-closed-sets-conjecture",
@@ -1423,7 +2056,7 @@
         "Gilmer",
         "entropy"
       ],
-      "rank": 52,
+      "rank": 75,
       "css": 52.967
     },
     {
@@ -1450,7 +2083,7 @@
         "Erdos",
         "unit-fractions"
       ],
-      "rank": 53,
+      "rank": 76,
       "css": 52.933
     },
     {
@@ -1479,7 +2112,7 @@
         "Ringel",
         "decompositions"
       ],
-      "rank": 54,
+      "rank": 77,
       "css": 52.267
     },
     {
@@ -1504,8 +2137,64 @@
         "consecutive",
         "factorization"
       ],
-      "rank": 55,
+      "rank": 78,
       "css": 51.233
+    },
+    {
+      "slug": "seymour-second-neighborhood-conjecture",
+      "title": "Seymour's Second Neighborhood Conjecture",
+      "field": "Graph Theory",
+      "subfields": [
+        "Directed Graphs",
+        "Combinatorics"
+      ],
+      "year_posed": 1990,
+      "originators": [
+        "Paul Seymour"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Every oriented graph has a vertex whose second out-neighborhood is at least as large as its first out-neighborhood.\n",
+      "difficulty": 74,
+      "centrality": 40,
+      "tractability": 40,
+      "status": "open",
+      "tags": [
+        "digraphs",
+        "out-neighborhood",
+        "tournaments",
+        "Dean"
+      ],
+      "rank": 79,
+      "css": 49.933
+    },
+    {
+      "slug": "one-third-two-thirds-conjecture",
+      "title": "The 1/3–2/3 Conjecture",
+      "field": "Order Theory",
+      "subfields": [
+        "Posets",
+        "Combinatorics"
+      ],
+      "year_posed": 1968,
+      "originators": [
+        "Sergei Kislitsyn",
+        "Michael Fredman",
+        "Nati Linial"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Every finite partially ordered set that is not a chain has a pair of elements x, y such that x precedes y in between 1/3 and 2/3 of all linear extensions.\n",
+      "difficulty": 72,
+      "centrality": 40,
+      "tractability": 48,
+      "status": "active-progress",
+      "tags": [
+        "posets",
+        "linear-extensions",
+        "balanced-pairs",
+        "sorting"
+      ],
+      "rank": 80,
+      "css": 49.8
     },
     {
       "slug": "singmaster-conjecture",
@@ -1530,7 +2219,7 @@
         "binomial",
         "multiplicity"
       ],
-      "rank": 56,
+      "rank": 81,
       "css": 48.0
     },
     {
@@ -1557,7 +2246,7 @@
         "difference-table",
         "Gilbreath"
       ],
-      "rank": 57,
+      "rank": 82,
       "css": 47.867
     },
     {
@@ -1582,7 +2271,7 @@
         "critical-points",
         "Tao"
       ],
-      "rank": 58,
+      "rank": 83,
       "css": 46.9
     },
     {
@@ -1609,7 +2298,7 @@
         "Baek",
         "corridor"
       ],
-      "rank": 59,
+      "rank": 84,
       "css": 46.533
     },
     {
@@ -1635,7 +2324,7 @@
         "matrices",
         "spectral"
       ],
-      "rank": 60,
+      "rank": 85,
       "css": 43.9
     }
   ]

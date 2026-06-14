@@ -998,3 +998,416 @@ problems:
     tractability: 28
     status: "open"
     tags: ["transcendence", "exponentials", "six-exponentials", "logarithms"]
+
+  # ---------------------------------------------------------------------------
+  #  Expansion wave 3 — deepen coverage (complex dynamics, symplectic/contact
+  #  topology, 4-manifolds, knot theory, Diophantine geometry, sieve theory,
+  #  model theory, ring theory, order theory)
+  # ---------------------------------------------------------------------------
+
+  - slug: grand-riemann-hypothesis
+    title: "The Grand Riemann Hypothesis"
+    field: "Analytic Number Theory"
+    subfields: ["L-functions", "Selberg Class", "Automorphic Forms"]
+    year_posed: 1884
+    originators: ["Adolf Piltz", "Bernhard Riemann (original case)"]
+    millennium_prize: false
+    statement_plain: >
+      All non-trivial zeros of every automorphic L-function (or every member of
+      the Selberg class) lie on the critical line Re(s) = 1/2; simultaneously
+      generalizes the Riemann and generalized Riemann hypotheses.
+    difficulty: 98
+    centrality: 90
+    tractability: 7
+    status: "open"
+    tags: ["L-functions", "Selberg-class", "GRH", "automorphic"]
+
+  - slug: vojta-conjecture
+    title: "Vojta's Conjecture"
+    field: "Diophantine Geometry"
+    subfields: ["Arithmetic Geometry", "Nevanlinna Theory", "Heights"]
+    year_posed: 1987
+    originators: ["Paul Vojta"]
+    millennium_prize: false
+    statement_plain: >
+      A deep height inequality on algebraic varieties, modeled on Nevanlinna's
+      second main theorem, that implies the abc conjecture, the Mordell
+      conjecture, and much of Diophantine geometry.
+    difficulty: 93
+    centrality: 72
+    tractability: 11
+    status: "open"
+    tags: ["heights", "abc", "Mordell", "Nevanlinna"]
+
+  - slug: bombieri-lang-conjecture
+    title: "The Bombieri–Lang Conjecture"
+    field: "Diophantine Geometry"
+    subfields: ["Arithmetic Geometry", "Rational Points"]
+    year_posed: 1980
+    originators: ["Enrico Bombieri", "Serge Lang"]
+    millennium_prize: false
+    statement_plain: >
+      On a variety of general type over a number field, the rational points are
+      not Zariski dense; a higher-dimensional analogue of the Mordell conjecture.
+    difficulty: 90
+    centrality: 66
+    tractability: 13
+    status: "open"
+    tags: ["rational-points", "general-type", "Mordell", "Zariski-density"]
+
+  - slug: elliott-halberstam-conjecture
+    title: "The Elliott–Halberstam Conjecture"
+    field: "Analytic Number Theory"
+    subfields: ["Sieve Theory", "Distribution of Primes in Progressions"]
+    year_posed: 1968
+    originators: ["Peter D. T. A. Elliott", "Heini Halberstam"]
+    millennium_prize: false
+    statement_plain: >
+      Primes are equidistributed in arithmetic progressions up to modulus
+      x^(1−ε); a strengthening of the Bombieri–Vinogradov theorem that would
+      sharpen bounded-gaps-between-primes results.
+    difficulty: 85
+    centrality: 64
+    tractability: 30
+    status: "active-progress"
+    tags: ["primes", "progressions", "Bombieri-Vinogradov", "bounded-gaps"]
+
+  - slug: chowla-conjecture
+    title: "The Chowla Conjecture"
+    field: "Analytic Number Theory"
+    subfields: ["Multiplicative Number Theory", "Ergodic Theory"]
+    year_posed: 1965
+    originators: ["Sarvadaman Chowla"]
+    millennium_prize: false
+    statement_plain: >
+      Correlations of the Liouville function λ at distinct shifts average to zero;
+      a quantitative statement of the pseudorandomness of the Möbius/Liouville function.
+    difficulty: 86
+    centrality: 60
+    tractability: 28
+    status: "active-progress"
+    tags: ["Liouville", "Mobius", "correlations", "Tao", "Sarnak"]
+
+  - slug: sarnak-mobius-conjecture
+    title: "Sarnak's Möbius Disjointness Conjecture"
+    field: "Dynamical Systems"
+    subfields: ["Ergodic Theory", "Analytic Number Theory"]
+    year_posed: 2010
+    originators: ["Peter Sarnak"]
+    millennium_prize: false
+    statement_plain: >
+      The Möbius function is asymptotically orthogonal to every observable arising
+      from a topological dynamical system of zero entropy.
+    difficulty: 84
+    centrality: 58
+    tractability: 35
+    status: "active-progress"
+    tags: ["Mobius", "zero-entropy", "disjointness", "Chowla"]
+
+  - slug: mandelbrot-locally-connected
+    title: "The MLC Conjecture (Mandelbrot Locally Connected)"
+    field: "Complex Dynamics"
+    subfields: ["Holomorphic Dynamics", "Renormalization"]
+    year_posed: 1982
+    originators: ["Adrien Douady", "John H. Hubbard"]
+    millennium_prize: false
+    statement_plain: >
+      The Mandelbrot set is locally connected; this would yield a complete
+      topological/combinatorial model of it and imply density of hyperbolicity
+      for quadratic polynomials.
+    difficulty: 88
+    centrality: 60
+    tractability: 24
+    status: "active-progress"
+    tags: ["Mandelbrot", "renormalization", "Yoccoz", "hyperbolicity"]
+
+  - slug: birkhoff-conjecture
+    title: "The Birkhoff Conjecture (Integrable Billiards)"
+    field: "Dynamical Systems"
+    subfields: ["Billiards", "Integrable Systems"]
+    year_posed: 1927
+    originators: ["George David Birkhoff"]
+    millennium_prize: false
+    statement_plain: >
+      The only smooth, strictly convex billiard tables whose dynamics are
+      integrable are ellipses.
+    difficulty: 84
+    centrality: 50
+    tractability: 32
+    status: "active-progress"
+    tags: ["billiards", "integrability", "Kaloshin", "ellipses"]
+
+  - slug: weinstein-conjecture
+    title: "The Weinstein Conjecture"
+    field: "Symplectic Geometry"
+    subfields: ["Contact Geometry", "Hamiltonian Dynamics"]
+    year_posed: 1979
+    originators: ["Alan Weinstein"]
+    millennium_prize: false
+    statement_plain: >
+      Every Reeb vector field on a closed contact manifold has at least one
+      periodic orbit; proved in dimension three, open in higher dimensions.
+    difficulty: 85
+    centrality: 58
+    tractability: 35
+    status: "active-progress"
+    tags: ["Reeb-orbits", "contact", "Taubes", "ECH"]
+
+  - slug: smooth-4d-poincare-conjecture
+    title: "The Smooth 4-Dimensional Poincaré Conjecture"
+    field: "Geometric Topology"
+    subfields: ["4-Manifolds", "Gauge Theory"]
+    year_posed: 1982
+    originators: ["Henri Poincaré (original)", "smooth 4D case (post-Freedman)"]
+    millennium_prize: false
+    statement_plain: >
+      Every smooth 4-manifold homeomorphic to the 4-sphere is diffeomorphic to it;
+      the last open case of the generalized Poincaré conjecture.
+    difficulty: 90
+    centrality: 62
+    tractability: 20
+    status: "open"
+    tags: ["4-manifolds", "exotic", "Gluck-twist", "gauge-theory"]
+
+  - slug: borel-conjecture
+    title: "The Borel Conjecture"
+    field: "Geometric Topology"
+    subfields: ["Surgery Theory", "Aspherical Manifolds"]
+    year_posed: 1953
+    originators: ["Armand Borel"]
+    millennium_prize: false
+    statement_plain: >
+      Closed aspherical manifolds with isomorphic fundamental groups are
+      homeomorphic, and any homotopy equivalence between them is homotopic to a
+      homeomorphism.
+    difficulty: 86
+    centrality: 58
+    tractability: 25
+    status: "active-progress"
+    tags: ["aspherical", "rigidity", "Farrell-Jones", "surgery"]
+
+  - slug: volume-conjecture
+    title: "The Volume Conjecture"
+    field: "Knot Theory"
+    subfields: ["Quantum Topology", "Hyperbolic Geometry"]
+    year_posed: 1997
+    originators: ["Rinat Kashaev", "Hitoshi Murakami", "Jun Murakami"]
+    millennium_prize: false
+    statement_plain: >
+      The asymptotic growth of the colored Jones polynomials of a knot determines
+      the hyperbolic volume of its complement.
+    difficulty: 82
+    centrality: 52
+    tractability: 28
+    status: "active-progress"
+    tags: ["colored-Jones", "hyperbolic-volume", "quantum-invariants"]
+
+  - slug: slice-ribbon-conjecture
+    title: "The Slice–Ribbon Conjecture"
+    field: "Knot Theory"
+    subfields: ["Low-Dimensional Topology", "4-Manifolds"]
+    year_posed: 1962
+    originators: ["Ralph Fox"]
+    millennium_prize: false
+    statement_plain: >
+      Every smoothly slice knot (bounding a smooth disk in the 4-ball) is a ribbon
+      knot (bounds an immersed disk in the 3-sphere with only ribbon singularities).
+    difficulty: 80
+    centrality: 46
+    tractability: 30
+    status: "open"
+    tags: ["slice-knots", "ribbon", "4-ball", "concordance"]
+
+  - slug: zeeman-conjecture
+    title: "The Zeeman Conjecture"
+    field: "Geometric Topology"
+    subfields: ["Collapsibility", "Combinatorial Topology"]
+    year_posed: 1964
+    originators: ["Erik Christopher Zeeman"]
+    millennium_prize: false
+    statement_plain: >
+      For every contractible 2-complex K, the product K × [0,1] is collapsible;
+      it implies both the (now proven) 3-D Poincaré conjecture and the
+      Andrews–Curtis conjecture.
+    difficulty: 79
+    centrality: 42
+    tractability: 28
+    status: "open"
+    tags: ["collapsible", "2-complexes", "Andrews-Curtis", "contractible"]
+
+  - slug: eilenberg-ganea-conjecture
+    title: "The Eilenberg–Ganea Conjecture"
+    field: "Algebraic Topology"
+    subfields: ["Group Cohomology", "Dimension Theory"]
+    year_posed: 1957
+    originators: ["Samuel Eilenberg", "Tudor Ganea"]
+    millennium_prize: false
+    statement_plain: >
+      Every group of cohomological dimension 2 has geometric dimension 2 (admits a
+      2-dimensional aspherical CW model).
+    difficulty: 79
+    centrality: 42
+    tractability: 26
+    status: "open"
+    tags: ["cohomological-dimension", "aspherical", "Bestvina-Brady"]
+
+  - slug: erdos-hajnal-conjecture
+    title: "The Erdős–Hajnal Conjecture"
+    field: "Graph Theory"
+    subfields: ["Ramsey Theory", "Extremal Combinatorics"]
+    year_posed: 1989
+    originators: ["Paul Erdős", "András Hajnal"]
+    millennium_prize: false
+    statement_plain: >
+      Graphs forbidding a fixed induced subgraph contain a clique or independent
+      set of polynomial size n^c, versus the logarithmic size forced in general.
+    difficulty: 80
+    centrality: 54
+    tractability: 38
+    status: "active-progress"
+    tags: ["induced-subgraphs", "Ramsey", "cliques", "Erdos"]
+
+  - slug: seymour-second-neighborhood-conjecture
+    title: "Seymour's Second Neighborhood Conjecture"
+    field: "Graph Theory"
+    subfields: ["Directed Graphs", "Combinatorics"]
+    year_posed: 1990
+    originators: ["Paul Seymour"]
+    millennium_prize: false
+    statement_plain: >
+      Every oriented graph has a vertex whose second out-neighborhood is at least
+      as large as its first out-neighborhood.
+    difficulty: 74
+    centrality: 40
+    tractability: 40
+    status: "open"
+    tags: ["digraphs", "out-neighborhood", "tournaments", "Dean"]
+
+  - slug: total-coloring-conjecture
+    title: "The Total Coloring Conjecture"
+    field: "Graph Theory"
+    subfields: ["Graph Coloring", "Combinatorics"]
+    year_posed: 1965
+    originators: ["Mehdi Behzad", "Vadim G. Vizing"]
+    millennium_prize: false
+    statement_plain: >
+      The total chromatic number of any graph (coloring vertices and edges so that
+      adjacent/incident elements differ) is at most the maximum degree plus two.
+    difficulty: 76
+    centrality: 46
+    tractability: 42
+    status: "active-progress"
+    tags: ["total-coloring", "chromatic", "Vizing", "Molloy-Reed"]
+
+  - slug: one-third-two-thirds-conjecture
+    title: "The 1/3–2/3 Conjecture"
+    field: "Order Theory"
+    subfields: ["Posets", "Combinatorics"]
+    year_posed: 1968
+    originators: ["Sergei Kislitsyn", "Michael Fredman", "Nati Linial"]
+    millennium_prize: false
+    statement_plain: >
+      Every finite partially ordered set that is not a chain has a pair of elements
+      x, y such that x precedes y in between 1/3 and 2/3 of all linear extensions.
+    difficulty: 72
+    centrality: 40
+    tractability: 48
+    status: "active-progress"
+    tags: ["posets", "linear-extensions", "balanced-pairs", "sorting"]
+
+  - slug: zariski-cancellation-problem
+    title: "The Zariski Cancellation Problem"
+    field: "Algebraic Geometry"
+    subfields: ["Affine Algebraic Geometry", "Commutative Algebra"]
+    year_posed: 1949
+    originators: ["Oscar Zariski"]
+    millennium_prize: false
+    statement_plain: >
+      If X × A^1 is isomorphic to affine (n+1)-space, must X be isomorphic to
+      affine n-space? Open in characteristic 0; false in positive characteristic.
+    difficulty: 84
+    centrality: 50
+    tractability: 30
+    status: "active-progress"
+    tags: ["affine-space", "cancellation", "Gupta", "automorphisms"]
+
+  - slug: kothe-conjecture
+    title: "Köthe's Conjecture"
+    field: "Ring Theory"
+    subfields: ["Noncommutative Algebra", "Radical Theory"]
+    year_posed: 1930
+    originators: ["Gottfried Köthe"]
+    millennium_prize: false
+    statement_plain: >
+      If a ring has no nonzero nil two-sided ideals, it has no nonzero nil
+      one-sided ideals; equivalently, the sum of two nil left ideals is nil.
+    difficulty: 80
+    centrality: 44
+    tractability: 25
+    status: "open"
+    tags: ["nil-ideals", "radical", "noncommutative", "Amitsur"]
+
+  - slug: vaught-conjecture
+    title: "Vaught's Conjecture"
+    field: "Mathematical Logic"
+    subfields: ["Model Theory", "Descriptive Set Theory"]
+    year_posed: 1961
+    originators: ["Robert Lawson Vaught"]
+    millennium_prize: false
+    statement_plain: >
+      A countable complete first-order theory has either at most countably many or
+      exactly continuum-many countable models — never strictly in between.
+    difficulty: 82
+    centrality: 50
+    tractability: 28
+    status: "open"
+    tags: ["countable-models", "Morley", "topological-Vaught", "Borel"]
+
+  - slug: hall-conjecture
+    title: "Hall's Conjecture"
+    field: "Number Theory"
+    subfields: ["Diophantine Analysis", "Heights"]
+    year_posed: 1971
+    originators: ["Marshall Hall Jr."]
+    millennium_prize: false
+    statement_plain: >
+      For non-square integers, the gap |x^3 − y^2| grows at least like a power
+      x^(1/2−ε); a special, sharp consequence of the abc/Vojta circle of ideas.
+    difficulty: 76
+    centrality: 42
+    tractability: 28
+    status: "open"
+    tags: ["Mordell-curve", "abc", "heights", "Danilov"]
+
+  - slug: catalan-dickson-conjecture
+    title: "The Catalan–Dickson Conjecture (Aliquot Sequences)"
+    field: "Number Theory"
+    subfields: ["Iterated Divisor Functions", "Computational Number Theory"]
+    year_posed: 1888
+    originators: ["Eugène Catalan", "Leonard Eugene Dickson"]
+    millennium_prize: false
+    statement_plain: >
+      Every aliquot sequence (iterating the sum-of-proper-divisors function) is
+      bounded, hence eventually periodic; Guy and Selfridge conjecture the opposite.
+    difficulty: 74
+    centrality: 38
+    tractability: 22
+    status: "open"
+    tags: ["aliquot", "divisors", "Guy-Selfridge", "iteration"]
+
+  - slug: lehmer-tau-conjecture
+    title: "Lehmer's Conjecture on the Ramanujan Tau Function"
+    field: "Number Theory"
+    subfields: ["Modular Forms", "Hecke Theory"]
+    year_posed: 1947
+    originators: ["Derrick Henry Lehmer"]
+    millennium_prize: false
+    statement_plain: >
+      The Ramanujan tau function never vanishes: τ(n) ≠ 0 for all positive
+      integers n.
+    difficulty: 78
+    centrality: 45
+    tractability: 30
+    status: "open"
+    tags: ["Ramanujan-tau", "modular-forms", "Hecke", "non-vanishing"]
+

@@ -1,0 +1,29 @@
+{
+  "slug": "erdos-hajnal-conjecture",
+  "title": "The Erdős–Hajnal Conjecture",
+  "field": "Graph Theory",
+  "subfields": [
+    "Ramsey Theory",
+    "Extremal Combinatorics"
+  ],
+  "year_posed": 1989,
+  "originators": [
+    "Paul Erdős",
+    "András Hajnal"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Graphs forbidding a fixed induced subgraph contain a clique or independent set of polynomial size n^c, versus the logarithmic size forced in general.\n",
+  "difficulty": 80,
+  "centrality": 54,
+  "tractability": 38,
+  "status": "active-progress",
+  "tags": [
+    "induced-subgraphs",
+    "Ramsey",
+    "cliques",
+    "Erdos"
+  ],
+  "rank": 62,
+  "css": 56.8,
+  "folder": "erdos-hajnal-conjecture"
+}

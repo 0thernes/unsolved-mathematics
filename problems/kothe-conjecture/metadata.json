@@ -1,0 +1,28 @@
+{
+  "slug": "kothe-conjecture",
+  "title": "Köthe's Conjecture",
+  "field": "Ring Theory",
+  "subfields": [
+    "Noncommutative Algebra",
+    "Radical Theory"
+  ],
+  "year_posed": 1930,
+  "originators": [
+    "Gottfried Köthe"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "If a ring has no nonzero nil two-sided ideals, it has no nonzero nil one-sided ideals; equivalently, the sum of two nil left ideals is nil.\n",
+  "difficulty": 80,
+  "centrality": 44,
+  "tractability": 25,
+  "status": "open",
+  "tags": [
+    "nil-ideals",
+    "radical",
+    "noncommutative",
+    "Amitsur"
+  ],
+  "rank": 51,
+  "css": 59.033,
+  "folder": "kothe-conjecture"
+}

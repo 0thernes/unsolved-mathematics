@@ -1,0 +1,28 @@
+{
+  "slug": "lehmer-tau-conjecture",
+  "title": "Lehmer's Conjecture on the Ramanujan Tau Function",
+  "field": "Number Theory",
+  "subfields": [
+    "Modular Forms",
+    "Hecke Theory"
+  ],
+  "year_posed": 1947,
+  "originators": [
+    "Derrick Henry Lehmer"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "The Ramanujan tau function never vanishes: τ(n) ≠ 0 for all positive integers n.\n",
+  "difficulty": 78,
+  "centrality": 45,
+  "tractability": 30,
+  "status": "open",
+  "tags": [
+    "Ramanujan-tau",
+    "modular-forms",
+    "Hecke",
+    "non-vanishing"
+  ],
+  "rank": 61,
+  "css": 56.9,
+  "folder": "lehmer-tau-conjecture"
+}

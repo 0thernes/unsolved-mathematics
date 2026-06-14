@@ -1,0 +1,28 @@
+{
+  "slug": "zariski-cancellation-problem",
+  "title": "The Zariski Cancellation Problem",
+  "field": "Algebraic Geometry",
+  "subfields": [
+    "Affine Algebraic Geometry",
+    "Commutative Algebra"
+  ],
+  "year_posed": 1949,
+  "originators": [
+    "Oscar Zariski"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "If X × A^1 is isomorphic to affine (n+1)-space, must X be isomorphic to affine n-space? Open in characteristic 0; false in positive characteristic.\n",
+  "difficulty": 84,
+  "centrality": 50,
+  "tractability": 30,
+  "status": "active-progress",
+  "tags": [
+    "affine-space",
+    "cancellation",
+    "Gupta",
+    "automorphisms"
+  ],
+  "rank": 47,
+  "css": 60.667,
+  "folder": "zariski-cancellation-problem"
+}

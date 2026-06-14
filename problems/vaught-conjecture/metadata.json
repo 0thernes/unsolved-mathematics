@@ -1,0 +1,28 @@
+{
+  "slug": "vaught-conjecture",
+  "title": "Vaught's Conjecture",
+  "field": "Mathematical Logic",
+  "subfields": [
+    "Model Theory",
+    "Descriptive Set Theory"
+  ],
+  "year_posed": 1961,
+  "originators": [
+    "Robert Lawson Vaught"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "A countable complete first-order theory has either at most countably many or exactly continuum-many countable models — never strictly in between.\n",
+  "difficulty": 82,
+  "centrality": 50,
+  "tractability": 28,
+  "status": "open",
+  "tags": [
+    "countable-models",
+    "Morley",
+    "topological-Vaught",
+    "Borel"
+  ],
+  "rank": 50,
+  "css": 59.267,
+  "folder": "vaught-conjecture"
+}

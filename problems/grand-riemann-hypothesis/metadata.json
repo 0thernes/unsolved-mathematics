@@ -1,0 +1,30 @@
+{
+  "slug": "grand-riemann-hypothesis",
+  "title": "The Grand Riemann Hypothesis",
+  "field": "Analytic Number Theory",
+  "subfields": [
+    "L-functions",
+    "Selberg Class",
+    "Automorphic Forms"
+  ],
+  "year_posed": 1884,
+  "originators": [
+    "Adolf Piltz",
+    "Bernhard Riemann (original case)"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "All non-trivial zeros of every automorphic L-function (or every member of the Selberg class) lie on the critical line Re(s) = 1/2; simultaneously generalizes the Riemann and generalized Riemann hypotheses.\n",
+  "difficulty": 98,
+  "centrality": 90,
+  "tractability": 7,
+  "status": "open",
+  "tags": [
+    "L-functions",
+    "Selberg-class",
+    "GRH",
+    "automorphic"
+  ],
+  "rank": 3,
+  "css": 84.9,
+  "folder": "grand-riemann-hypothesis"
+}

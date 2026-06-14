@@ -1,0 +1,28 @@
+{
+  "slug": "eilenberg-ganea-conjecture",
+  "title": "The Eilenberg–Ganea Conjecture",
+  "field": "Algebraic Topology",
+  "subfields": [
+    "Group Cohomology",
+    "Dimension Theory"
+  ],
+  "year_posed": 1957,
+  "originators": [
+    "Samuel Eilenberg",
+    "Tudor Ganea"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Every group of cohomological dimension 2 has geometric dimension 2 (admits a 2-dimensional aspherical CW model).\n",
+  "difficulty": 79,
+  "centrality": 42,
+  "tractability": 26,
+  "status": "open",
+  "tags": [
+    "cohomological-dimension",
+    "aspherical",
+    "Bestvina-Brady"
+  ],
+  "rank": 66,
+  "css": 56.133,
+  "folder": "eilenberg-ganea-conjecture"
+}

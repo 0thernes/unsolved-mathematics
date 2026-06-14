@@ -1,0 +1,28 @@
+{
+  "slug": "sarnak-mobius-conjecture",
+  "title": "Sarnak's Möbius Disjointness Conjecture",
+  "field": "Dynamical Systems",
+  "subfields": [
+    "Ergodic Theory",
+    "Analytic Number Theory"
+  ],
+  "year_posed": 2010,
+  "originators": [
+    "Peter Sarnak"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "The Möbius function is asymptotically orthogonal to every observable arising from a topological dynamical system of zero entropy.\n",
+  "difficulty": 84,
+  "centrality": 58,
+  "tractability": 35,
+  "status": "active-progress",
+  "tags": [
+    "Mobius",
+    "zero-entropy",
+    "disjointness",
+    "Chowla"
+  ],
+  "rank": 52,
+  "css": 58.5,
+  "folder": "sarnak-mobius-conjecture"
+}

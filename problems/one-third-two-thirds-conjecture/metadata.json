@@ -1,0 +1,30 @@
+{
+  "slug": "one-third-two-thirds-conjecture",
+  "title": "The 1/3–2/3 Conjecture",
+  "field": "Order Theory",
+  "subfields": [
+    "Posets",
+    "Combinatorics"
+  ],
+  "year_posed": 1968,
+  "originators": [
+    "Sergei Kislitsyn",
+    "Michael Fredman",
+    "Nati Linial"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Every finite partially ordered set that is not a chain has a pair of elements x, y such that x precedes y in between 1/3 and 2/3 of all linear extensions.\n",
+  "difficulty": 72,
+  "centrality": 40,
+  "tractability": 48,
+  "status": "active-progress",
+  "tags": [
+    "posets",
+    "linear-extensions",
+    "balanced-pairs",
+    "sorting"
+  ],
+  "rank": 80,
+  "css": 49.8,
+  "folder": "one-third-two-thirds-conjecture"
+}

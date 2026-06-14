@@ -1,0 +1,28 @@
+{
+  "slug": "hall-conjecture",
+  "title": "Hall's Conjecture",
+  "field": "Number Theory",
+  "subfields": [
+    "Diophantine Analysis",
+    "Heights"
+  ],
+  "year_posed": 1971,
+  "originators": [
+    "Marshall Hall Jr."
+  ],
+  "millennium_prize": false,
+  "statement_plain": "For non-square integers, the gap |x^3 − y^2| grows at least like a power x^(1/2−ε); a special, sharp consequence of the abc/Vojta circle of ideas.\n",
+  "difficulty": 76,
+  "centrality": 42,
+  "tractability": 28,
+  "status": "open",
+  "tags": [
+    "Mordell-curve",
+    "abc",
+    "heights",
+    "Danilov"
+  ],
+  "rank": 74,
+  "css": 53.8,
+  "folder": "hall-conjecture"
+}
