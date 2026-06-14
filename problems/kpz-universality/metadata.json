@@ -1,0 +1,31 @@
+{
+  "slug": "kpz-universality",
+  "title": "The KPZ Universality Conjecture",
+  "field": "Probability Theory",
+  "subfields": [
+    "Stochastic PDE",
+    "Random Growth",
+    "Integrable Probability"
+  ],
+  "year_posed": 1986,
+  "originators": [
+    "Mehran Kardar",
+    "Giorgio Parisi",
+    "Yi-Cheng Zhang"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "A broad class of (1+1)-dimensional random growth models share universal fluctuation exponents (1/3, 2/3) and Tracy–Widom-type limit laws — the KPZ universality class.\n",
+  "difficulty": 86,
+  "centrality": 58,
+  "tractability": 35,
+  "status": "active-progress",
+  "tags": [
+    "KPZ",
+    "Tracy-Widom",
+    "regularity-structures",
+    "universality"
+  ],
+  "rank": 55,
+  "css": 60.9,
+  "folder": "kpz-universality"
+}

@@ -1,0 +1,28 @@
+{
+  "slug": "section-conjecture",
+  "title": "Grothendieck's Section Conjecture",
+  "field": "Arithmetic Geometry",
+  "subfields": [
+    "Anabelian Geometry",
+    "Étale Fundamental Groups"
+  ],
+  "year_posed": 1983,
+  "originators": [
+    "Alexander Grothendieck"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "For a smooth projective curve of genus ≥ 2 over a number field, rational points correspond bijectively to sections of the fundamental exact sequence of étale fundamental groups.\n",
+  "difficulty": 89,
+  "centrality": 58,
+  "tractability": 17,
+  "status": "open",
+  "tags": [
+    "anabelian",
+    "fundamental-group",
+    "rational-points",
+    "Grothendieck"
+  ],
+  "rank": 39,
+  "css": 64.1,
+  "folder": "section-conjecture"
+}

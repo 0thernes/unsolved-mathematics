@@ -1,0 +1,28 @@
+{
+  "slug": "restriction-conjecture",
+  "title": "The Restriction Conjecture",
+  "field": "Harmonic Analysis",
+  "subfields": [
+    "Fourier Analysis",
+    "Geometric Measure Theory"
+  ],
+  "year_posed": 1967,
+  "originators": [
+    "Elias M. Stein"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "The Fourier transform of an L^p function can be meaningfully restricted to the sphere (or paraboloid) for an optimal range of p; intimately tied to the Kakeya and Bochner–Riesz conjectures.\n",
+  "difficulty": 89,
+  "centrality": 68,
+  "tractability": 22,
+  "status": "active-progress",
+  "tags": [
+    "Fourier",
+    "restriction",
+    "Kakeya",
+    "polynomial-method"
+  ],
+  "rank": 24,
+  "css": 67.667,
+  "folder": "restriction-conjecture"
+}

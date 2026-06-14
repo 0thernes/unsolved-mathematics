@@ -1,0 +1,30 @@
+{
+  "slug": "fontaine-mazur-conjecture",
+  "title": "The Fontaine–Mazur Conjecture",
+  "field": "Number Theory",
+  "subfields": [
+    "Galois Representations",
+    "Modular Forms",
+    "p-adic Hodge Theory"
+  ],
+  "year_posed": 1995,
+  "originators": [
+    "Jean-Marc Fontaine",
+    "Barry Mazur"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "A geometric p-adic Galois representation (unramified almost everywhere and de Rham at p) arises from algebraic geometry — conjecturally from automorphic forms.\n",
+  "difficulty": 90,
+  "centrality": 64,
+  "tractability": 18,
+  "status": "active-progress",
+  "tags": [
+    "Galois",
+    "modularity",
+    "p-adic-Hodge",
+    "Langlands"
+  ],
+  "rank": 35,
+  "css": 65.4,
+  "folder": "fontaine-mazur-conjecture"
+}

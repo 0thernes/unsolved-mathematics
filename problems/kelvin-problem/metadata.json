@@ -1,0 +1,28 @@
+{
+  "slug": "kelvin-problem",
+  "title": "The Kelvin Problem (Optimal Space Partition)",
+  "field": "Geometry",
+  "subfields": [
+    "Minimal Surfaces",
+    "Foams"
+  ],
+  "year_posed": 1887,
+  "originators": [
+    "Lord Kelvin (William Thomson)"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "What partition of space into cells of equal volume minimizes total surface area? Kelvin's truncated octahedron was bettered by the Weaire–Phelan structure (1993), but optimality of neither is proved.\n",
+  "difficulty": 72,
+  "centrality": 38,
+  "tractability": 35,
+  "status": "open",
+  "tags": [
+    "foams",
+    "Weaire-Phelan",
+    "minimal-surfaces",
+    "tilings"
+  ],
+  "rank": 84,
+  "css": 55.9,
+  "folder": "kelvin-problem"
+}

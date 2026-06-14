@@ -1,0 +1,28 @@
+{
+  "slug": "dixmier-conjecture",
+  "title": "The Dixmier Conjecture",
+  "field": "Algebra",
+  "subfields": [
+    "Weyl Algebras",
+    "Noncommutative Algebra"
+  ],
+  "year_posed": 1968,
+  "originators": [
+    "Jacques Dixmier"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Every algebra endomorphism of the first Weyl algebra A_1 (over a field of characteristic zero) is an automorphism; stably equivalent to the Jacobian conjecture.\n",
+  "difficulty": 86,
+  "centrality": 52,
+  "tractability": 18,
+  "status": "open",
+  "tags": [
+    "Weyl-algebra",
+    "endomorphisms",
+    "Jacobian",
+    "Tsuchimoto"
+  ],
+  "rank": 45,
+  "css": 62.0,
+  "folder": "dixmier-conjecture"
+}

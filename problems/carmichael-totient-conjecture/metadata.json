@@ -1,0 +1,27 @@
+{
+  "slug": "carmichael-totient-conjecture",
+  "title": "Carmichael's Totient Conjecture",
+  "field": "Number Theory",
+  "subfields": [
+    "Multiplicative Number Theory"
+  ],
+  "year_posed": 1907,
+  "originators": [
+    "Robert Daniel Carmichael"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "For every n there is some m ≠ n with φ(m) = φ(n); i.e. no value of Euler's totient is taken exactly once.\n",
+  "difficulty": 75,
+  "centrality": 40,
+  "tractability": 30,
+  "status": "open",
+  "tags": [
+    "totient",
+    "multiplicity",
+    "Carmichael",
+    "Ford"
+  ],
+  "rank": 77,
+  "css": 56.867,
+  "folder": "carmichael-totient-conjecture"
+}

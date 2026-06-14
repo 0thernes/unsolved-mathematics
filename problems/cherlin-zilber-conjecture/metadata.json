@@ -1,0 +1,29 @@
+{
+  "slug": "cherlin-zilber-conjecture",
+  "title": "The Cherlin–Zilber Algebraicity Conjecture",
+  "field": "Mathematical Logic",
+  "subfields": [
+    "Model Theory",
+    "Groups of Finite Morley Rank"
+  ],
+  "year_posed": 1979,
+  "originators": [
+    "Gregory Cherlin",
+    "Boris Zilber"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Every simple group of finite Morley rank is an algebraic group over an algebraically closed field.\n",
+  "difficulty": 84,
+  "centrality": 50,
+  "tractability": 26,
+  "status": "active-progress",
+  "tags": [
+    "Morley-rank",
+    "algebraic-groups",
+    "classification",
+    "model-theory"
+  ],
+  "rank": 64,
+  "css": 59.067,
+  "folder": "cherlin-zilber-conjecture"
+}

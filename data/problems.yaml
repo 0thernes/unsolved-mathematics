@@ -1411,3 +1411,356 @@ problems:
     status: "open"
     tags: ["Ramanujan-tau", "modular-forms", "Hecke", "non-vanishing"]
 
+  # ---------------------------------------------------------------------------
+  #  Expansion wave 4 — cross 100 (harmonic analysis, ergodic theory, dynamics,
+  #  probability/stat-mech, anabelian & arithmetic geometry, Iwasawa theory,
+  #  chromatic homotopy, discrete geometry)
+  # ---------------------------------------------------------------------------
+
+  - slug: restriction-conjecture
+    title: "The Restriction Conjecture"
+    field: "Harmonic Analysis"
+    subfields: ["Fourier Analysis", "Geometric Measure Theory"]
+    year_posed: 1967
+    originators: ["Elias M. Stein"]
+    millennium_prize: false
+    statement_plain: >
+      The Fourier transform of an L^p function can be meaningfully restricted to
+      the sphere (or paraboloid) for an optimal range of p; intimately tied to the
+      Kakeya and Bochner–Riesz conjectures.
+    difficulty: 89
+    centrality: 68
+    tractability: 22
+    status: "active-progress"
+    tags: ["Fourier", "restriction", "Kakeya", "polynomial-method"]
+
+  - slug: bochner-riesz-conjecture
+    title: "The Bochner–Riesz Conjecture"
+    field: "Harmonic Analysis"
+    subfields: ["Fourier Summation", "Oscillatory Integrals"]
+    year_posed: 1936
+    originators: ["Salomon Bochner", "Marcel Riesz"]
+    millennium_prize: false
+    statement_plain: >
+      The Bochner–Riesz means of order δ converge in L^p for the full conjectured
+      range of δ and p; sits above restriction and Kakeya in the harmonic-analysis hierarchy.
+    difficulty: 87
+    centrality: 60
+    tractability: 24
+    status: "active-progress"
+    tags: ["summation", "multipliers", "restriction", "Carleson-Sjolin"]
+
+  - slug: furstenberg-conjecture
+    title: "Furstenberg's ×2 ×3 Conjecture"
+    field: "Ergodic Theory"
+    subfields: ["Homogeneous Dynamics", "Measure Rigidity"]
+    year_posed: 1967
+    originators: ["Harry Furstenberg"]
+    millennium_prize: false
+    statement_plain: >
+      The only non-atomic probability measure on the circle simultaneously
+      invariant and ergodic under multiplication by 2 and by 3 is Lebesgue measure.
+    difficulty: 85
+    centrality: 56
+    tractability: 28
+    status: "active-progress"
+    tags: ["measure-rigidity", "x2x3", "Rudolph", "entropy"]
+
+  - slug: palis-conjecture
+    title: "The Palis Conjecture (Finitude / Density of Attractors)"
+    field: "Dynamical Systems"
+    subfields: ["Smooth Dynamics", "Bifurcation Theory"]
+    year_posed: 1995
+    originators: ["Jacob Palis"]
+    millennium_prize: false
+    statement_plain: >
+      A typical (positive-probability) dynamical system has finitely many
+      attractors whose basins cover almost all of phase space and which vary
+      statistically stably under perturbation.
+    difficulty: 86
+    centrality: 55
+    tractability: 25
+    status: "open"
+    tags: ["attractors", "hyperbolicity", "SRB-measures", "Palis-program"]
+
+  - slug: arnold-diffusion
+    title: "Arnold Diffusion (Genericity)"
+    field: "Dynamical Systems"
+    subfields: ["Hamiltonian Mechanics", "KAM Theory"]
+    year_posed: 1964
+    originators: ["Vladimir Arnold"]
+    millennium_prize: false
+    statement_plain: >
+      In nearly integrable Hamiltonian systems of three or more degrees of freedom,
+      slow drift of the action variables (Arnold diffusion) occurs for a generic,
+      topologically large set of perturbations.
+    difficulty: 87
+    centrality: 54
+    tractability: 22
+    status: "active-progress"
+    tags: ["Hamiltonian", "KAM", "instability", "Mather-theory"]
+
+  - slug: cherlin-zilber-conjecture
+    title: "The Cherlin–Zilber Algebraicity Conjecture"
+    field: "Mathematical Logic"
+    subfields: ["Model Theory", "Groups of Finite Morley Rank"]
+    year_posed: 1979
+    originators: ["Gregory Cherlin", "Boris Zilber"]
+    millennium_prize: false
+    statement_plain: >
+      Every simple group of finite Morley rank is an algebraic group over an
+      algebraically closed field.
+    difficulty: 84
+    centrality: 50
+    tractability: 26
+    status: "active-progress"
+    tags: ["Morley-rank", "algebraic-groups", "classification", "model-theory"]
+
+  - slug: ryser-conjecture
+    title: "Ryser's Conjecture (Hypergraph Covering)"
+    field: "Combinatorics"
+    subfields: ["Hypergraphs", "Design Theory"]
+    year_posed: 1971
+    originators: ["Herbert J. Ryser", "J. R. Henderson"]
+    millennium_prize: false
+    statement_plain: >
+      In an r-partite r-uniform hypergraph, the covering number is at most (r−1)
+      times the matching number; the r=2 case is König's theorem.
+    difficulty: 80
+    centrality: 48
+    tractability: 35
+    status: "active-progress"
+    tags: ["hypergraphs", "covering", "matching", "Konig"]
+
+  - slug: hadwiger-covering-conjecture
+    title: "The Hadwiger Covering Conjecture"
+    field: "Discrete Geometry"
+    subfields: ["Convex Geometry", "Combinatorial Geometry"]
+    year_posed: 1957
+    originators: ["Hugo Hadwiger", "Friedrich Levi", "Israel Gohberg", "Alexander Markus"]
+    millennium_prize: false
+    statement_plain: >
+      Every convex body in n-dimensional space can be covered by at most 2^n
+      smaller homothetic copies of itself, with equality only for parallelepipeds.
+    difficulty: 83
+    centrality: 48
+    tractability: 26
+    status: "open"
+    tags: ["covering", "convex-bodies", "homothets", "illumination"]
+
+  - slug: kelvin-problem
+    title: "The Kelvin Problem (Optimal Space Partition)"
+    field: "Geometry"
+    subfields: ["Minimal Surfaces", "Foams"]
+    year_posed: 1887
+    originators: ["Lord Kelvin (William Thomson)"]
+    millennium_prize: false
+    statement_plain: >
+      What partition of space into cells of equal volume minimizes total surface
+      area? Kelvin's truncated octahedron was bettered by the Weaire–Phelan
+      structure (1993), but optimality of neither is proved.
+    difficulty: 72
+    centrality: 38
+    tractability: 35
+    status: "open"
+    tags: ["foams", "Weaire-Phelan", "minimal-surfaces", "tilings"]
+
+  - slug: self-avoiding-walk
+    title: "Self-Avoiding Walk (Scaling & Connective Constant)"
+    field: "Probability Theory"
+    subfields: ["Statistical Mechanics", "Conformal Invariance"]
+    year_posed: 1947
+    originators: ["Paul Flory", "William J. C. Orr"]
+    millennium_prize: false
+    statement_plain: >
+      Determine the connective constant and the conjectured scaling exponents
+      (e.g. mean-square displacement exponent ν = 3/4 in 2D) of self-avoiding
+      walks; rigorous proofs remain largely open.
+    difficulty: 84
+    centrality: 52
+    tractability: 28
+    status: "active-progress"
+    tags: ["SAW", "connective-constant", "SLE", "Duminil-Copin"]
+
+  - slug: kpz-universality
+    title: "The KPZ Universality Conjecture"
+    field: "Probability Theory"
+    subfields: ["Stochastic PDE", "Random Growth", "Integrable Probability"]
+    year_posed: 1986
+    originators: ["Mehran Kardar", "Giorgio Parisi", "Yi-Cheng Zhang"]
+    millennium_prize: false
+    statement_plain: >
+      A broad class of (1+1)-dimensional random growth models share universal
+      fluctuation exponents (1/3, 2/3) and Tracy–Widom-type limit laws — the KPZ
+      universality class.
+    difficulty: 86
+    centrality: 58
+    tractability: 35
+    status: "active-progress"
+    tags: ["KPZ", "Tracy-Widom", "regularity-structures", "universality"]
+
+  - slug: carmichael-totient-conjecture
+    title: "Carmichael's Totient Conjecture"
+    field: "Number Theory"
+    subfields: ["Multiplicative Number Theory"]
+    year_posed: 1907
+    originators: ["Robert Daniel Carmichael"]
+    millennium_prize: false
+    statement_plain: >
+      For every n there is some m ≠ n with φ(m) = φ(n); i.e. no value of Euler's
+      totient is taken exactly once.
+    difficulty: 75
+    centrality: 40
+    tractability: 30
+    status: "open"
+    tags: ["totient", "multiplicity", "Carmichael", "Ford"]
+
+  - slug: giuga-conjecture
+    title: "Giuga's Conjecture"
+    field: "Number Theory"
+    subfields: ["Primality", "Congruences"]
+    year_posed: 1950
+    originators: ["Giuseppe Giuga"]
+    millennium_prize: false
+    statement_plain: >
+      An integer n > 1 is prime if and only if the sum of the (n−1)-th powers of
+      1..n−1 is congruent to −1 modulo n.
+    difficulty: 76
+    centrality: 38
+    tractability: 22
+    status: "open"
+    tags: ["primality", "Bernoulli", "Agoh", "congruences"]
+
+  - slug: pillai-conjecture
+    title: "Pillai's Conjecture"
+    field: "Number Theory"
+    subfields: ["Diophantine Equations", "Perfect Powers"]
+    year_posed: 1931
+    originators: ["Subbayya Sivasankaranarayana Pillai"]
+    millennium_prize: false
+    statement_plain: >
+      For every fixed k ≥ 1, the equation x^p − y^q = k has only finitely many
+      solutions in integers (x,y,p,q) with p,q ≥ 2; gaps between perfect powers
+      tend to infinity.
+    difficulty: 80
+    centrality: 45
+    tractability: 20
+    status: "open"
+    tags: ["perfect-powers", "Catalan", "abc", "Diophantine"]
+
+  - slug: brennan-conjecture
+    title: "Brennan's Conjecture"
+    field: "Complex Analysis"
+    subfields: ["Conformal Mapping", "Integral Means"]
+    year_posed: 1978
+    originators: ["James E. Brennan"]
+    millennium_prize: false
+    statement_plain: >
+      For a conformal map φ of a simply connected domain, the integral of
+      |φ'|^p is finite for all p in (4/3, 4); the endpoints encode the conjecture.
+    difficulty: 78
+    centrality: 40
+    tractability: 30
+    status: "open"
+    tags: ["conformal", "integral-means", "univalent", "spectrum"]
+
+  - slug: dixmier-conjecture
+    title: "The Dixmier Conjecture"
+    field: "Algebra"
+    subfields: ["Weyl Algebras", "Noncommutative Algebra"]
+    year_posed: 1968
+    originators: ["Jacques Dixmier"]
+    millennium_prize: false
+    statement_plain: >
+      Every algebra endomorphism of the first Weyl algebra A_1 (over a field of
+      characteristic zero) is an automorphism; stably equivalent to the Jacobian conjecture.
+    difficulty: 86
+    centrality: 52
+    tractability: 18
+    status: "open"
+    tags: ["Weyl-algebra", "endomorphisms", "Jacobian", "Tsuchimoto"]
+
+  - slug: zilber-pink-conjecture
+    title: "The Zilber–Pink Conjecture"
+    field: "Diophantine Geometry"
+    subfields: ["Unlikely Intersections", "O-minimality", "Shimura Varieties"]
+    year_posed: 2005
+    originators: ["Boris Zilber", "Richard Pink"]
+    millennium_prize: false
+    statement_plain: >
+      Unlikely intersections of a subvariety with special subvarieties are
+      controlled; a sweeping generalization of the Mordell–Lang and André–Oort
+      conjectures.
+    difficulty: 90
+    centrality: 62
+    tractability: 16
+    status: "open"
+    tags: ["unlikely-intersections", "Andre-Oort", "Mordell-Lang", "o-minimal"]
+
+  - slug: section-conjecture
+    title: "Grothendieck's Section Conjecture"
+    field: "Arithmetic Geometry"
+    subfields: ["Anabelian Geometry", "Étale Fundamental Groups"]
+    year_posed: 1983
+    originators: ["Alexander Grothendieck"]
+    millennium_prize: false
+    statement_plain: >
+      For a smooth projective curve of genus ≥ 2 over a number field, rational
+      points correspond bijectively to sections of the fundamental exact sequence
+      of étale fundamental groups.
+    difficulty: 89
+    centrality: 58
+    tractability: 17
+    status: "open"
+    tags: ["anabelian", "fundamental-group", "rational-points", "Grothendieck"]
+
+  - slug: fontaine-mazur-conjecture
+    title: "The Fontaine–Mazur Conjecture"
+    field: "Number Theory"
+    subfields: ["Galois Representations", "Modular Forms", "p-adic Hodge Theory"]
+    year_posed: 1995
+    originators: ["Jean-Marc Fontaine", "Barry Mazur"]
+    millennium_prize: false
+    statement_plain: >
+      A geometric p-adic Galois representation (unramified almost everywhere and
+      de Rham at p) arises from algebraic geometry — conjecturally from automorphic forms.
+    difficulty: 90
+    centrality: 64
+    tractability: 18
+    status: "active-progress"
+    tags: ["Galois", "modularity", "p-adic-Hodge", "Langlands"]
+
+  - slug: greenberg-conjecture
+    title: "Greenberg's Conjecture"
+    field: "Number Theory"
+    subfields: ["Iwasawa Theory", "Class Field Theory"]
+    year_posed: 1976
+    originators: ["Ralph Greenberg"]
+    millennium_prize: false
+    statement_plain: >
+      For a totally real number field, the Iwasawa invariants λ and μ of the
+      cyclotomic Z_p-extension both vanish.
+    difficulty: 83
+    centrality: 48
+    tractability: 24
+    status: "open"
+    tags: ["Iwasawa", "lambda-invariant", "cyclotomic", "class-groups"]
+
+  - slug: telescope-conjecture
+    title: "The Telescope Conjecture (Disproved 2023)"
+    field: "Algebraic Topology"
+    subfields: ["Chromatic Homotopy Theory", "Stable Homotopy"]
+    year_posed: 1984
+    originators: ["Douglas Ravenel"]
+    millennium_prize: false
+    statement_plain: >
+      Ravenel's conjecture that the telescopic and K(n)-local localizations of the
+      stable homotopy category agree for n ≥ 2; DISPROVED in 2023, included as a
+      landmark recently-settled problem with rich successor questions.
+    difficulty: 85
+    centrality: 55
+    tractability: 80
+    status: "recently-resolved"
+    tags: ["chromatic", "telescope", "K-theory", "Ravenel", "disproved"]
+
+

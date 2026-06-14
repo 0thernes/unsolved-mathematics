@@ -1,0 +1,29 @@
+{
+  "slug": "bochner-riesz-conjecture",
+  "title": "The Bochner–Riesz Conjecture",
+  "field": "Harmonic Analysis",
+  "subfields": [
+    "Fourier Summation",
+    "Oscillatory Integrals"
+  ],
+  "year_posed": 1936,
+  "originators": [
+    "Salomon Bochner",
+    "Marcel Riesz"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "The Bochner–Riesz means of order δ converge in L^p for the full conjectured range of δ and p; sits above restriction and Kakeya in the harmonic-analysis hierarchy.\n",
+  "difficulty": 87,
+  "centrality": 60,
+  "tractability": 24,
+  "status": "active-progress",
+  "tags": [
+    "summation",
+    "multipliers",
+    "restriction",
+    "Carleson-Sjolin"
+  ],
+  "rank": 32,
+  "css": 66.333,
+  "folder": "bochner-riesz-conjecture"
+}

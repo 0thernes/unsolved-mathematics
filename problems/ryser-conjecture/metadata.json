@@ -1,0 +1,29 @@
+{
+  "slug": "ryser-conjecture",
+  "title": "Ryser's Conjecture (Hypergraph Covering)",
+  "field": "Combinatorics",
+  "subfields": [
+    "Hypergraphs",
+    "Design Theory"
+  ],
+  "year_posed": 1971,
+  "originators": [
+    "Herbert J. Ryser",
+    "J. R. Henderson"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "In an r-partite r-uniform hypergraph, the covering number is at most (r−1) times the matching number; the r=2 case is König's theorem.\n",
+  "difficulty": 80,
+  "centrality": 48,
+  "tractability": 35,
+  "status": "active-progress",
+  "tags": [
+    "hypergraphs",
+    "covering",
+    "matching",
+    "Konig"
+  ],
+  "rank": 82,
+  "css": 56.5,
+  "folder": "ryser-conjecture"
+}

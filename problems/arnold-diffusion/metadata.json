@@ -1,0 +1,28 @@
+{
+  "slug": "arnold-diffusion",
+  "title": "Arnold Diffusion (Genericity)",
+  "field": "Dynamical Systems",
+  "subfields": [
+    "Hamiltonian Mechanics",
+    "KAM Theory"
+  ],
+  "year_posed": 1964,
+  "originators": [
+    "Vladimir Arnold"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "In nearly integrable Hamiltonian systems of three or more degrees of freedom, slow drift of the action variables (Arnold diffusion) occurs for a generic, topologically large set of perturbations.\n",
+  "difficulty": 87,
+  "centrality": 54,
+  "tractability": 22,
+  "status": "active-progress",
+  "tags": [
+    "Hamiltonian",
+    "KAM",
+    "instability",
+    "Mather-theory"
+  ],
+  "rank": 44,
+  "css": 62.867,
+  "folder": "arnold-diffusion"
+}

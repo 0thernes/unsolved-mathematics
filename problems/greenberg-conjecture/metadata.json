@@ -1,0 +1,28 @@
+{
+  "slug": "greenberg-conjecture",
+  "title": "Greenberg's Conjecture",
+  "field": "Number Theory",
+  "subfields": [
+    "Iwasawa Theory",
+    "Class Field Theory"
+  ],
+  "year_posed": 1976,
+  "originators": [
+    "Ralph Greenberg"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "For a totally real number field, the Iwasawa invariants λ and μ of the cyclotomic Z_p-extension both vanish.\n",
+  "difficulty": 83,
+  "centrality": 48,
+  "tractability": 24,
+  "status": "open",
+  "tags": [
+    "Iwasawa",
+    "lambda-invariant",
+    "cyclotomic",
+    "class-groups"
+  ],
+  "rank": 67,
+  "css": 58.467,
+  "folder": "greenberg-conjecture"
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "telescope-conjecture",
+  "title": "The Telescope Conjecture (Disproved 2023)",
+  "field": "Algebraic Topology",
+  "subfields": [
+    "Chromatic Homotopy Theory",
+    "Stable Homotopy"
+  ],
+  "year_posed": 1984,
+  "originators": [
+    "Douglas Ravenel"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Ravenel's conjecture that the telescopic and K(n)-local localizations of the stable homotopy category agree for n ≥ 2; DISPROVED in 2023, included as a landmark recently-settled problem with rich successor questions.\n",
+  "difficulty": 85,
+  "centrality": 55,
+  "tractability": 80,
+  "status": "recently-resolved",
+  "tags": [
+    "chromatic",
+    "telescope",
+    "K-theory",
+    "Ravenel",
+    "disproved"
+  ],
+  "rank": 89,
+  "css": 55.233,
+  "folder": "telescope-conjecture"
+}

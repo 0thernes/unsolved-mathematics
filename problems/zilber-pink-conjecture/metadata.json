@@ -1,0 +1,30 @@
+{
+  "slug": "zilber-pink-conjecture",
+  "title": "The Zilber–Pink Conjecture",
+  "field": "Diophantine Geometry",
+  "subfields": [
+    "Unlikely Intersections",
+    "O-minimality",
+    "Shimura Varieties"
+  ],
+  "year_posed": 2005,
+  "originators": [
+    "Boris Zilber",
+    "Richard Pink"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Unlikely intersections of a subvariety with special subvarieties are controlled; a sweeping generalization of the Mordell–Lang and André–Oort conjectures.\n",
+  "difficulty": 90,
+  "centrality": 62,
+  "tractability": 16,
+  "status": "open",
+  "tags": [
+    "unlikely-intersections",
+    "Andre-Oort",
+    "Mordell-Lang",
+    "o-minimal"
+  ],
+  "rank": 37,
+  "css": 64.333,
+  "folder": "zilber-pink-conjecture"
+}

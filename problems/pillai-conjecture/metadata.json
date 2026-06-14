@@ -1,0 +1,28 @@
+{
+  "slug": "pillai-conjecture",
+  "title": "Pillai's Conjecture",
+  "field": "Number Theory",
+  "subfields": [
+    "Diophantine Equations",
+    "Perfect Powers"
+  ],
+  "year_posed": 1931,
+  "originators": [
+    "Subbayya Sivasankaranarayana Pillai"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "For every fixed k ≥ 1, the equation x^p − y^q = k has only finitely many solutions in integers (x,y,p,q) with p,q ≥ 2; gaps between perfect powers tend to infinity.\n",
+  "difficulty": 80,
+  "centrality": 45,
+  "tractability": 20,
+  "status": "open",
+  "tags": [
+    "perfect-powers",
+    "Catalan",
+    "abc",
+    "Diophantine"
+  ],
+  "rank": 61,
+  "css": 59.767,
+  "folder": "pillai-conjecture"
+}

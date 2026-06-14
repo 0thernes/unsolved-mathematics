@@ -1,0 +1,28 @@
+{
+  "slug": "brennan-conjecture",
+  "title": "Brennan's Conjecture",
+  "field": "Complex Analysis",
+  "subfields": [
+    "Conformal Mapping",
+    "Integral Means"
+  ],
+  "year_posed": 1978,
+  "originators": [
+    "James E. Brennan"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "For a conformal map φ of a simply connected domain, the integral of |φ'|^p is finite for all p in (4/3, 4); the endpoints encode the conjecture.\n",
+  "difficulty": 78,
+  "centrality": 40,
+  "tractability": 30,
+  "status": "open",
+  "tags": [
+    "conformal",
+    "integral-means",
+    "univalent",
+    "spectrum"
+  ],
+  "rank": 95,
+  "css": 53.333,
+  "folder": "brennan-conjecture"
+}

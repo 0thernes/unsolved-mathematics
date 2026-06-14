@@ -1,0 +1,28 @@
+{
+  "slug": "palis-conjecture",
+  "title": "The Palis Conjecture (Finitude / Density of Attractors)",
+  "field": "Dynamical Systems",
+  "subfields": [
+    "Smooth Dynamics",
+    "Bifurcation Theory"
+  ],
+  "year_posed": 1995,
+  "originators": [
+    "Jacob Palis"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "A typical (positive-probability) dynamical system has finitely many attractors whose basins cover almost all of phase space and which vary statistically stably under perturbation.\n",
+  "difficulty": 86,
+  "centrality": 55,
+  "tractability": 25,
+  "status": "open",
+  "tags": [
+    "attractors",
+    "hyperbolicity",
+    "SRB-measures",
+    "Palis-program"
+  ],
+  "rank": 58,
+  "css": 60.4,
+  "folder": "palis-conjecture"
+}

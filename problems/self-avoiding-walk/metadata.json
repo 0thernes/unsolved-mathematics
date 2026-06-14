@@ -1,0 +1,29 @@
+{
+  "slug": "self-avoiding-walk",
+  "title": "Self-Avoiding Walk (Scaling & Connective Constant)",
+  "field": "Probability Theory",
+  "subfields": [
+    "Statistical Mechanics",
+    "Conformal Invariance"
+  ],
+  "year_posed": 1947,
+  "originators": [
+    "Paul Flory",
+    "William J. C. Orr"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Determine the connective constant and the conjectured scaling exponents (e.g. mean-square displacement exponent ν = 3/4 in 2D) of self-avoiding walks; rigorous proofs remain largely open.\n",
+  "difficulty": 84,
+  "centrality": 52,
+  "tractability": 28,
+  "status": "active-progress",
+  "tags": [
+    "SAW",
+    "connective-constant",
+    "SLE",
+    "Duminil-Copin"
+  ],
+  "rank": 51,
+  "css": 61.6,
+  "folder": "self-avoiding-walk"
+}

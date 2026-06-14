@@ -1,0 +1,28 @@
+{
+  "slug": "furstenberg-conjecture",
+  "title": "Furstenberg's ×2 ×3 Conjecture",
+  "field": "Ergodic Theory",
+  "subfields": [
+    "Homogeneous Dynamics",
+    "Measure Rigidity"
+  ],
+  "year_posed": 1967,
+  "originators": [
+    "Harry Furstenberg"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "The only non-atomic probability measure on the circle simultaneously invariant and ergodic under multiplication by 2 and by 3 is Lebesgue measure.\n",
+  "difficulty": 85,
+  "centrality": 56,
+  "tractability": 28,
+  "status": "active-progress",
+  "tags": [
+    "measure-rigidity",
+    "x2x3",
+    "Rudolph",
+    "entropy"
+  ],
+  "rank": 48,
+  "css": 61.867,
+  "folder": "furstenberg-conjecture"
+}

@@ -646,6 +646,33 @@
       "css": 68.333
     },
     {
+      "slug": "restriction-conjecture",
+      "title": "The Restriction Conjecture",
+      "field": "Harmonic Analysis",
+      "subfields": [
+        "Fourier Analysis",
+        "Geometric Measure Theory"
+      ],
+      "year_posed": 1967,
+      "originators": [
+        "Elias M. Stein"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "The Fourier transform of an L^p function can be meaningfully restricted to the sphere (or paraboloid) for an optimal range of p; intimately tied to the Kakeya and Bochner–Riesz conjectures.\n",
+      "difficulty": 89,
+      "centrality": 68,
+      "tractability": 22,
+      "status": "active-progress",
+      "tags": [
+        "Fourier",
+        "restriction",
+        "Kakeya",
+        "polynomial-method"
+      ],
+      "rank": 24,
+      "css": 67.667
+    },
+    {
       "slug": "novikov-conjecture",
       "title": "The Novikov Conjecture",
       "field": "Geometric Topology",
@@ -670,7 +697,7 @@
         "assembly-map",
         "groups"
       ],
-      "rank": 24,
+      "rank": 25,
       "css": 67.5
     },
     {
@@ -698,7 +725,7 @@
         "Mordell",
         "Zariski-density"
       ],
-      "rank": 25,
+      "rank": 26,
       "css": 67.5
     },
     {
@@ -723,7 +750,7 @@
         "polynomials",
         "Hardy-Littlewood"
       ],
-      "rank": 26,
+      "rank": 27,
       "css": 67.3
     },
     {
@@ -749,7 +776,7 @@
         "minors",
         "four-color"
       ],
-      "rank": 27,
+      "rank": 28,
       "css": 67.067
     },
     {
@@ -776,7 +803,7 @@
         "EKL",
         "dynamics"
       ],
-      "rank": 28,
+      "rank": 29,
       "css": 66.933
     },
     {
@@ -804,7 +831,7 @@
         "Dickson",
         "Bateman-Horn"
       ],
-      "rank": 29,
+      "rank": 30,
       "css": 66.667
     },
     {
@@ -829,8 +856,36 @@
         "Hilbert-space",
         "invariant-subspaces"
       ],
-      "rank": 30,
+      "rank": 31,
       "css": 66.5
+    },
+    {
+      "slug": "bochner-riesz-conjecture",
+      "title": "The Bochner–Riesz Conjecture",
+      "field": "Harmonic Analysis",
+      "subfields": [
+        "Fourier Summation",
+        "Oscillatory Integrals"
+      ],
+      "year_posed": 1936,
+      "originators": [
+        "Salomon Bochner",
+        "Marcel Riesz"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "The Bochner–Riesz means of order δ converge in L^p for the full conjectured range of δ and p; sits above restriction and Kakeya in the harmonic-analysis hierarchy.\n",
+      "difficulty": 87,
+      "centrality": 60,
+      "tractability": 24,
+      "status": "active-progress",
+      "tags": [
+        "summation",
+        "multipliers",
+        "restriction",
+        "Carleson-Sjolin"
+      ],
+      "rank": 32,
+      "css": 66.333
     },
     {
       "slug": "schanuel-conjecture",
@@ -855,7 +910,7 @@
         "exponential",
         "model-theory"
       ],
-      "rank": 31,
+      "rank": 33,
       "css": 65.833
     },
     {
@@ -883,8 +938,37 @@
         "Gluck-twist",
         "gauge-theory"
       ],
-      "rank": 32,
+      "rank": 34,
       "css": 65.467
+    },
+    {
+      "slug": "fontaine-mazur-conjecture",
+      "title": "The Fontaine–Mazur Conjecture",
+      "field": "Number Theory",
+      "subfields": [
+        "Galois Representations",
+        "Modular Forms",
+        "p-adic Hodge Theory"
+      ],
+      "year_posed": 1995,
+      "originators": [
+        "Jean-Marc Fontaine",
+        "Barry Mazur"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "A geometric p-adic Galois representation (unramified almost everywhere and de Rham at p) arises from algebraic geometry — conjecturally from automorphic forms.\n",
+      "difficulty": 90,
+      "centrality": 64,
+      "tractability": 18,
+      "status": "active-progress",
+      "tags": [
+        "Galois",
+        "modularity",
+        "p-adic-Hodge",
+        "Langlands"
+      ],
+      "rank": 35,
+      "css": 65.4
     },
     {
       "slug": "baum-connes-conjecture",
@@ -912,8 +996,37 @@
         "C-star-algebras",
         "Gromov"
       ],
-      "rank": 33,
+      "rank": 36,
       "css": 64.667
+    },
+    {
+      "slug": "zilber-pink-conjecture",
+      "title": "The Zilber–Pink Conjecture",
+      "field": "Diophantine Geometry",
+      "subfields": [
+        "Unlikely Intersections",
+        "O-minimality",
+        "Shimura Varieties"
+      ],
+      "year_posed": 2005,
+      "originators": [
+        "Boris Zilber",
+        "Richard Pink"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Unlikely intersections of a subvariety with special subvarieties are controlled; a sweeping generalization of the Mordell–Lang and André–Oort conjectures.\n",
+      "difficulty": 90,
+      "centrality": 62,
+      "tractability": 16,
+      "status": "open",
+      "tags": [
+        "unlikely-intersections",
+        "Andre-Oort",
+        "Mordell-Lang",
+        "o-minimal"
+      ],
+      "rank": 37,
+      "css": 64.333
     },
     {
       "slug": "borel-conjecture",
@@ -939,7 +1052,34 @@
         "Farrell-Jones",
         "surgery"
       ],
-      "rank": 34,
+      "rank": 38,
+      "css": 64.1
+    },
+    {
+      "slug": "section-conjecture",
+      "title": "Grothendieck's Section Conjecture",
+      "field": "Arithmetic Geometry",
+      "subfields": [
+        "Anabelian Geometry",
+        "Étale Fundamental Groups"
+      ],
+      "year_posed": 1983,
+      "originators": [
+        "Alexander Grothendieck"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "For a smooth projective curve of genus ≥ 2 over a number field, rational points correspond bijectively to sections of the fundamental exact sequence of étale fundamental groups.\n",
+      "difficulty": 89,
+      "centrality": 58,
+      "tractability": 17,
+      "status": "open",
+      "tags": [
+        "anabelian",
+        "fundamental-group",
+        "rational-points",
+        "Grothendieck"
+      ],
+      "rank": 39,
       "css": 64.1
     },
     {
@@ -967,7 +1107,7 @@
         "2-to-2",
         "hardness"
       ],
-      "rank": 35,
+      "rank": 40,
       "css": 64.033
     },
     {
@@ -995,7 +1135,7 @@
         "Bombieri-Vinogradov",
         "bounded-gaps"
       ],
-      "rank": 36,
+      "rank": 41,
       "css": 64.0
     },
     {
@@ -1023,7 +1163,7 @@
         "Yoccoz",
         "hyperbolicity"
       ],
-      "rank": 37,
+      "rank": 42,
       "css": 63.667
     },
     {
@@ -1051,8 +1191,62 @@
         "Tao",
         "Sarnak"
       ],
-      "rank": 38,
+      "rank": 43,
       "css": 63.6
+    },
+    {
+      "slug": "arnold-diffusion",
+      "title": "Arnold Diffusion (Genericity)",
+      "field": "Dynamical Systems",
+      "subfields": [
+        "Hamiltonian Mechanics",
+        "KAM Theory"
+      ],
+      "year_posed": 1964,
+      "originators": [
+        "Vladimir Arnold"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "In nearly integrable Hamiltonian systems of three or more degrees of freedom, slow drift of the action variables (Arnold diffusion) occurs for a generic, topologically large set of perturbations.\n",
+      "difficulty": 87,
+      "centrality": 54,
+      "tractability": 22,
+      "status": "active-progress",
+      "tags": [
+        "Hamiltonian",
+        "KAM",
+        "instability",
+        "Mather-theory"
+      ],
+      "rank": 44,
+      "css": 62.867
+    },
+    {
+      "slug": "dixmier-conjecture",
+      "title": "The Dixmier Conjecture",
+      "field": "Algebra",
+      "subfields": [
+        "Weyl Algebras",
+        "Noncommutative Algebra"
+      ],
+      "year_posed": 1968,
+      "originators": [
+        "Jacques Dixmier"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Every algebra endomorphism of the first Weyl algebra A_1 (over a field of characteristic zero) is an automorphism; stably equivalent to the Jacobian conjecture.\n",
+      "difficulty": 86,
+      "centrality": 52,
+      "tractability": 18,
+      "status": "open",
+      "tags": [
+        "Weyl-algebra",
+        "endomorphisms",
+        "Jacobian",
+        "Tsuchimoto"
+      ],
+      "rank": 45,
+      "css": 62.0
     },
     {
       "slug": "montgomery-pair-correlation",
@@ -1079,7 +1273,7 @@
         "GUE",
         "RH"
       ],
-      "rank": 39,
+      "rank": 46,
       "css": 61.967
     },
     {
@@ -1106,8 +1300,35 @@
         "Kaloshin",
         "ellipses"
       ],
-      "rank": 40,
+      "rank": 47,
       "css": 61.933
+    },
+    {
+      "slug": "furstenberg-conjecture",
+      "title": "Furstenberg's ×2 ×3 Conjecture",
+      "field": "Ergodic Theory",
+      "subfields": [
+        "Homogeneous Dynamics",
+        "Measure Rigidity"
+      ],
+      "year_posed": 1967,
+      "originators": [
+        "Harry Furstenberg"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "The only non-atomic probability measure on the circle simultaneously invariant and ergodic under multiplication by 2 and by 3 is Lebesgue measure.\n",
+      "difficulty": 85,
+      "centrality": 56,
+      "tractability": 28,
+      "status": "active-progress",
+      "tags": [
+        "measure-rigidity",
+        "x2x3",
+        "Rudolph",
+        "entropy"
+      ],
+      "rank": 48,
+      "css": 61.867
     },
     {
       "slug": "artin-primitive-root-conjecture",
@@ -1133,7 +1354,7 @@
         "Hooley",
         "GRH"
       ],
-      "rank": 41,
+      "rank": 49,
       "css": 61.833
     },
     {
@@ -1160,8 +1381,36 @@
         "Erdos",
         "Szemeredi-Trotter"
       ],
-      "rank": 42,
+      "rank": 50,
       "css": 61.667
+    },
+    {
+      "slug": "self-avoiding-walk",
+      "title": "Self-Avoiding Walk (Scaling & Connective Constant)",
+      "field": "Probability Theory",
+      "subfields": [
+        "Statistical Mechanics",
+        "Conformal Invariance"
+      ],
+      "year_posed": 1947,
+      "originators": [
+        "Paul Flory",
+        "William J. C. Orr"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Determine the connective constant and the conjectured scaling exponents (e.g. mean-square displacement exponent ν = 3/4 in 2D) of self-avoiding walks; rigorous proofs remain largely open.\n",
+      "difficulty": 84,
+      "centrality": 52,
+      "tractability": 28,
+      "status": "active-progress",
+      "tags": [
+        "SAW",
+        "connective-constant",
+        "SLE",
+        "Duminil-Copin"
+      ],
+      "rank": 51,
+      "css": 61.6
     },
     {
       "slug": "whitehead-asphericity-conjecture",
@@ -1187,7 +1436,7 @@
         "CW",
         "group-theory"
       ],
-      "rank": 43,
+      "rank": 52,
       "css": 61.4
     },
     {
@@ -1215,7 +1464,7 @@
         "Lehmer-number",
         "Salem"
       ],
-      "rank": 44,
+      "rank": 53,
       "css": 61.333
     },
     {
@@ -1242,8 +1491,38 @@
         "Taubes",
         "ECH"
       ],
-      "rank": 45,
+      "rank": 54,
       "css": 60.967
+    },
+    {
+      "slug": "kpz-universality",
+      "title": "The KPZ Universality Conjecture",
+      "field": "Probability Theory",
+      "subfields": [
+        "Stochastic PDE",
+        "Random Growth",
+        "Integrable Probability"
+      ],
+      "year_posed": 1986,
+      "originators": [
+        "Mehran Kardar",
+        "Giorgio Parisi",
+        "Yi-Cheng Zhang"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "A broad class of (1+1)-dimensional random growth models share universal fluctuation exponents (1/3, 2/3) and Tracy–Widom-type limit laws — the KPZ universality class.\n",
+      "difficulty": 86,
+      "centrality": 58,
+      "tractability": 35,
+      "status": "active-progress",
+      "tags": [
+        "KPZ",
+        "Tracy-Widom",
+        "regularity-structures",
+        "universality"
+      ],
+      "rank": 55,
+      "css": 60.9
     },
     {
       "slug": "hilbert-smith-conjecture",
@@ -1270,7 +1549,7 @@
         "Lie-groups",
         "manifolds"
       ],
-      "rank": 46,
+      "rank": 56,
       "css": 60.733
     },
     {
@@ -1297,8 +1576,35 @@
         "Gupta",
         "automorphisms"
       ],
-      "rank": 47,
+      "rank": 57,
       "css": 60.667
+    },
+    {
+      "slug": "palis-conjecture",
+      "title": "The Palis Conjecture (Finitude / Density of Attractors)",
+      "field": "Dynamical Systems",
+      "subfields": [
+        "Smooth Dynamics",
+        "Bifurcation Theory"
+      ],
+      "year_posed": 1995,
+      "originators": [
+        "Jacob Palis"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "A typical (positive-probability) dynamical system has finitely many attractors whose basins cover almost all of phase space and which vary statistically stably under perturbation.\n",
+      "difficulty": 86,
+      "centrality": 55,
+      "tractability": 25,
+      "status": "open",
+      "tags": [
+        "attractors",
+        "hyperbolicity",
+        "SRB-measures",
+        "Palis-program"
+      ],
+      "rank": 58,
+      "css": 60.4
     },
     {
       "slug": "inscribed-square-problem",
@@ -1323,7 +1629,7 @@
         "square-peg",
         "topology"
       ],
-      "rank": 48,
+      "rank": 59,
       "css": 60.2
     },
     {
@@ -1350,8 +1656,65 @@
         "Kakeya",
         "Guth-Iosevich-Ou-Wang"
       ],
-      "rank": 49,
+      "rank": 60,
       "css": 59.967
+    },
+    {
+      "slug": "pillai-conjecture",
+      "title": "Pillai's Conjecture",
+      "field": "Number Theory",
+      "subfields": [
+        "Diophantine Equations",
+        "Perfect Powers"
+      ],
+      "year_posed": 1931,
+      "originators": [
+        "Subbayya Sivasankaranarayana Pillai"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "For every fixed k ≥ 1, the equation x^p − y^q = k has only finitely many solutions in integers (x,y,p,q) with p,q ≥ 2; gaps between perfect powers tend to infinity.\n",
+      "difficulty": 80,
+      "centrality": 45,
+      "tractability": 20,
+      "status": "open",
+      "tags": [
+        "perfect-powers",
+        "Catalan",
+        "abc",
+        "Diophantine"
+      ],
+      "rank": 61,
+      "css": 59.767
+    },
+    {
+      "slug": "hadwiger-covering-conjecture",
+      "title": "The Hadwiger Covering Conjecture",
+      "field": "Discrete Geometry",
+      "subfields": [
+        "Convex Geometry",
+        "Combinatorial Geometry"
+      ],
+      "year_posed": 1957,
+      "originators": [
+        "Hugo Hadwiger",
+        "Friedrich Levi",
+        "Israel Gohberg",
+        "Alexander Markus"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Every convex body in n-dimensional space can be covered by at most 2^n smaller homothetic copies of itself, with equality only for parallelepipeds.\n",
+      "difficulty": 83,
+      "centrality": 48,
+      "tractability": 26,
+      "status": "open",
+      "tags": [
+        "covering",
+        "convex-bodies",
+        "homothets",
+        "illumination"
+      ],
+      "rank": 62,
+      "css": 59.533
     },
     {
       "slug": "vaught-conjecture",
@@ -1377,8 +1740,36 @@
         "topological-Vaught",
         "Borel"
       ],
-      "rank": 50,
+      "rank": 63,
       "css": 59.267
+    },
+    {
+      "slug": "cherlin-zilber-conjecture",
+      "title": "The Cherlin–Zilber Algebraicity Conjecture",
+      "field": "Mathematical Logic",
+      "subfields": [
+        "Model Theory",
+        "Groups of Finite Morley Rank"
+      ],
+      "year_posed": 1979,
+      "originators": [
+        "Gregory Cherlin",
+        "Boris Zilber"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Every simple group of finite Morley rank is an algebraic group over an algebraically closed field.\n",
+      "difficulty": 84,
+      "centrality": 50,
+      "tractability": 26,
+      "status": "active-progress",
+      "tags": [
+        "Morley-rank",
+        "algebraic-groups",
+        "classification",
+        "model-theory"
+      ],
+      "rank": 64,
+      "css": 59.067
     },
     {
       "slug": "kothe-conjecture",
@@ -1404,7 +1795,7 @@
         "noncommutative",
         "Amitsur"
       ],
-      "rank": 51,
+      "rank": 65,
       "css": 59.033
     },
     {
@@ -1431,8 +1822,35 @@
         "disjointness",
         "Chowla"
       ],
-      "rank": 52,
+      "rank": 66,
       "css": 58.5
+    },
+    {
+      "slug": "greenberg-conjecture",
+      "title": "Greenberg's Conjecture",
+      "field": "Number Theory",
+      "subfields": [
+        "Iwasawa Theory",
+        "Class Field Theory"
+      ],
+      "year_posed": 1976,
+      "originators": [
+        "Ralph Greenberg"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "For a totally real number field, the Iwasawa invariants λ and μ of the cyclotomic Z_p-extension both vanish.\n",
+      "difficulty": 83,
+      "centrality": 48,
+      "tractability": 24,
+      "status": "open",
+      "tags": [
+        "Iwasawa",
+        "lambda-invariant",
+        "cyclotomic",
+        "class-groups"
+      ],
+      "rank": 67,
+      "css": 58.467
     },
     {
       "slug": "sunflower-conjecture",
@@ -1458,7 +1876,7 @@
         "Erdos-Rado",
         "Alweiss-Lovett-Wu-Zhang"
       ],
-      "rank": 53,
+      "rank": 68,
       "css": 58.233
     },
     {
@@ -1487,7 +1905,7 @@
         "six-exponentials",
         "logarithms"
       ],
-      "rank": 54,
+      "rank": 69,
       "css": 58.1
     },
     {
@@ -1515,7 +1933,7 @@
         "Guy-Selfridge",
         "iteration"
       ],
-      "rank": 55,
+      "rank": 70,
       "css": 57.933
     },
     {
@@ -1543,7 +1961,7 @@
         "hyperbolic-volume",
         "quantum-invariants"
       ],
-      "rank": 56,
+      "rank": 71,
       "css": 57.467
     },
     {
@@ -1571,7 +1989,7 @@
         "de-Grey",
         "unit-distance"
       ],
-      "rank": 57,
+      "rank": 72,
       "css": 57.3
     },
     {
@@ -1598,7 +2016,7 @@
         "designs",
         "orthogonal"
       ],
-      "rank": 58,
+      "rank": 73,
       "css": 57.1
     },
     {
@@ -1625,7 +2043,7 @@
         "4-ball",
         "concordance"
       ],
-      "rank": 59,
+      "rank": 74,
       "css": 57.0
     },
     {
@@ -1653,7 +2071,7 @@
         "double-cover",
         "embeddings"
       ],
-      "rank": 60,
+      "rank": 75,
       "css": 56.967
     },
     {
@@ -1680,8 +2098,34 @@
         "Hecke",
         "non-vanishing"
       ],
-      "rank": 61,
+      "rank": 76,
       "css": 56.9
+    },
+    {
+      "slug": "carmichael-totient-conjecture",
+      "title": "Carmichael's Totient Conjecture",
+      "field": "Number Theory",
+      "subfields": [
+        "Multiplicative Number Theory"
+      ],
+      "year_posed": 1907,
+      "originators": [
+        "Robert Daniel Carmichael"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "For every n there is some m ≠ n with φ(m) = φ(n); i.e. no value of Euler's totient is taken exactly once.\n",
+      "difficulty": 75,
+      "centrality": 40,
+      "tractability": 30,
+      "status": "open",
+      "tags": [
+        "totient",
+        "multiplicity",
+        "Carmichael",
+        "Ford"
+      ],
+      "rank": 77,
+      "css": 56.867
     },
     {
       "slug": "erdos-hajnal-conjecture",
@@ -1708,7 +2152,7 @@
         "cliques",
         "Erdos"
       ],
-      "rank": 62,
+      "rank": 78,
       "css": 56.8
     },
     {
@@ -1734,7 +2178,7 @@
         "squares",
         "Brown-numbers"
       ],
-      "rank": 63,
+      "rank": 79,
       "css": 56.733
     },
     {
@@ -1762,7 +2206,7 @@
         "out-degree",
         "Seymour"
       ],
-      "rank": 64,
+      "rank": 80,
       "css": 56.733
     },
     {
@@ -1789,7 +2233,35 @@
         "Ulam",
         "isomorphism"
       ],
-      "rank": 65,
+      "rank": 81,
+      "css": 56.5
+    },
+    {
+      "slug": "ryser-conjecture",
+      "title": "Ryser's Conjecture (Hypergraph Covering)",
+      "field": "Combinatorics",
+      "subfields": [
+        "Hypergraphs",
+        "Design Theory"
+      ],
+      "year_posed": 1971,
+      "originators": [
+        "Herbert J. Ryser",
+        "J. R. Henderson"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "In an r-partite r-uniform hypergraph, the covering number is at most (r−1) times the matching number; the r=2 case is König's theorem.\n",
+      "difficulty": 80,
+      "centrality": 48,
+      "tractability": 35,
+      "status": "active-progress",
+      "tags": [
+        "hypergraphs",
+        "covering",
+        "matching",
+        "Konig"
+      ],
+      "rank": 82,
       "css": 56.5
     },
     {
@@ -1816,8 +2288,35 @@
         "aspherical",
         "Bestvina-Brady"
       ],
-      "rank": 66,
+      "rank": 83,
       "css": 56.133
+    },
+    {
+      "slug": "kelvin-problem",
+      "title": "The Kelvin Problem (Optimal Space Partition)",
+      "field": "Geometry",
+      "subfields": [
+        "Minimal Surfaces",
+        "Foams"
+      ],
+      "year_posed": 1887,
+      "originators": [
+        "Lord Kelvin (William Thomson)"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "What partition of space into cells of equal volume minimizes total surface area? Kelvin's truncated octahedron was bettered by the Weaire–Phelan structure (1993), but optimality of neither is proved.\n",
+      "difficulty": 72,
+      "centrality": 38,
+      "tractability": 35,
+      "status": "open",
+      "tags": [
+        "foams",
+        "Weaire-Phelan",
+        "minimal-surfaces",
+        "tilings"
+      ],
+      "rank": 84,
+      "css": 55.9
     },
     {
       "slug": "andrews-curtis-conjecture",
@@ -1843,7 +2342,7 @@
         "AC-moves",
         "topology"
       ],
-      "rank": 67,
+      "rank": 85,
       "css": 55.6
     },
     {
@@ -1870,7 +2369,7 @@
         "Andrews-Curtis",
         "contractible"
       ],
-      "rank": 68,
+      "rank": 86,
       "css": 55.467
     },
     {
@@ -1897,7 +2396,7 @@
         "quantum",
         "Tsirelson"
       ],
-      "rank": 69,
+      "rank": 87,
       "css": 55.367
     },
     {
@@ -1924,8 +2423,36 @@
         "view-obstruction",
         "covering"
       ],
-      "rank": 70,
+      "rank": 88,
       "css": 55.267
+    },
+    {
+      "slug": "telescope-conjecture",
+      "title": "The Telescope Conjecture (Disproved 2023)",
+      "field": "Algebraic Topology",
+      "subfields": [
+        "Chromatic Homotopy Theory",
+        "Stable Homotopy"
+      ],
+      "year_posed": 1984,
+      "originators": [
+        "Douglas Ravenel"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Ravenel's conjecture that the telescopic and K(n)-local localizations of the stable homotopy category agree for n ≥ 2; DISPROVED in 2023, included as a landmark recently-settled problem with rich successor questions.\n",
+      "difficulty": 85,
+      "centrality": 55,
+      "tractability": 80,
+      "status": "recently-resolved",
+      "tags": [
+        "chromatic",
+        "telescope",
+        "K-theory",
+        "Ravenel",
+        "disproved"
+      ],
+      "rank": 89,
+      "css": 55.233
     },
     {
       "slug": "beal-conjecture",
@@ -1949,8 +2476,35 @@
         "Fermat",
         "prize-problem"
       ],
-      "rank": 71,
+      "rank": 90,
       "css": 54.933
+    },
+    {
+      "slug": "giuga-conjecture",
+      "title": "Giuga's Conjecture",
+      "field": "Number Theory",
+      "subfields": [
+        "Primality",
+        "Congruences"
+      ],
+      "year_posed": 1950,
+      "originators": [
+        "Giuseppe Giuga"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "An integer n > 1 is prime if and only if the sum of the (n−1)-th powers of 1..n−1 is congruent to −1 modulo n.\n",
+      "difficulty": 76,
+      "centrality": 38,
+      "tractability": 22,
+      "status": "open",
+      "tags": [
+        "primality",
+        "Bernoulli",
+        "Agoh",
+        "congruences"
+      ],
+      "rank": 91,
+      "css": 54.6
     },
     {
       "slug": "lehmer-totient-problem",
@@ -1974,7 +2528,7 @@
         "Carmichael",
         "Lehmer"
       ],
-      "rank": 72,
+      "rank": 92,
       "css": 54.3
     },
     {
@@ -2002,7 +2556,7 @@
         "Vizing",
         "Molloy-Reed"
       ],
-      "rank": 73,
+      "rank": 93,
       "css": 54.0
     },
     {
@@ -2029,8 +2583,35 @@
         "heights",
         "Danilov"
       ],
-      "rank": 74,
+      "rank": 94,
       "css": 53.8
+    },
+    {
+      "slug": "brennan-conjecture",
+      "title": "Brennan's Conjecture",
+      "field": "Complex Analysis",
+      "subfields": [
+        "Conformal Mapping",
+        "Integral Means"
+      ],
+      "year_posed": 1978,
+      "originators": [
+        "James E. Brennan"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "For a conformal map φ of a simply connected domain, the integral of |φ'|^p is finite for all p in (4/3, 4); the endpoints encode the conjecture.\n",
+      "difficulty": 78,
+      "centrality": 40,
+      "tractability": 30,
+      "status": "open",
+      "tags": [
+        "conformal",
+        "integral-means",
+        "univalent",
+        "spectrum"
+      ],
+      "rank": 95,
+      "css": 53.333
     },
     {
       "slug": "union-closed-sets-conjecture",
@@ -2056,7 +2637,7 @@
         "Gilmer",
         "entropy"
       ],
-      "rank": 75,
+      "rank": 96,
       "css": 52.967
     },
     {
@@ -2083,7 +2664,7 @@
         "Erdos",
         "unit-fractions"
       ],
-      "rank": 76,
+      "rank": 97,
       "css": 52.933
     },
     {
@@ -2112,7 +2693,7 @@
         "Ringel",
         "decompositions"
       ],
-      "rank": 77,
+      "rank": 98,
       "css": 52.267
     },
     {
@@ -2137,7 +2718,7 @@
         "consecutive",
         "factorization"
       ],
-      "rank": 78,
+      "rank": 99,
       "css": 51.233
     },
     {
@@ -2164,7 +2745,7 @@
         "tournaments",
         "Dean"
       ],
-      "rank": 79,
+      "rank": 100,
       "css": 49.933
     },
     {
@@ -2193,7 +2774,7 @@
         "balanced-pairs",
         "sorting"
       ],
-      "rank": 80,
+      "rank": 101,
       "css": 49.8
     },
     {
@@ -2219,7 +2800,7 @@
         "binomial",
         "multiplicity"
       ],
-      "rank": 81,
+      "rank": 102,
       "css": 48.0
     },
     {
@@ -2246,7 +2827,7 @@
         "difference-table",
         "Gilbreath"
       ],
-      "rank": 82,
+      "rank": 103,
       "css": 47.867
     },
     {
@@ -2271,7 +2852,7 @@
         "critical-points",
         "Tao"
       ],
-      "rank": 83,
+      "rank": 104,
       "css": 46.9
     },
     {
@@ -2298,7 +2879,7 @@
         "Baek",
         "corridor"
       ],
-      "rank": 84,
+      "rank": 105,
       "css": 46.533
     },
     {
@@ -2324,7 +2905,7 @@
         "matrices",
         "spectral"
       ],
-      "rank": 85,
+      "rank": 106,
       "css": 43.9
     }
   ]

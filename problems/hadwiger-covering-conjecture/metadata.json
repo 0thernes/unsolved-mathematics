@@ -1,0 +1,31 @@
+{
+  "slug": "hadwiger-covering-conjecture",
+  "title": "The Hadwiger Covering Conjecture",
+  "field": "Discrete Geometry",
+  "subfields": [
+    "Convex Geometry",
+    "Combinatorial Geometry"
+  ],
+  "year_posed": 1957,
+  "originators": [
+    "Hugo Hadwiger",
+    "Friedrich Levi",
+    "Israel Gohberg",
+    "Alexander Markus"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Every convex body in n-dimensional space can be covered by at most 2^n smaller homothetic copies of itself, with equality only for parallelepipeds.\n",
+  "difficulty": 83,
+  "centrality": 48,
+  "tractability": 26,
+  "status": "open",
+  "tags": [
+    "covering",
+    "convex-bodies",
+    "homothets",
+    "illumination"
+  ],
+  "rank": 62,
+  "css": 59.533,
+  "folder": "hadwiger-covering-conjecture"
+}

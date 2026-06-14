@@ -1,0 +1,28 @@
+{
+  "slug": "giuga-conjecture",
+  "title": "Giuga's Conjecture",
+  "field": "Number Theory",
+  "subfields": [
+    "Primality",
+    "Congruences"
+  ],
+  "year_posed": 1950,
+  "originators": [
+    "Giuseppe Giuga"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "An integer n > 1 is prime if and only if the sum of the (n−1)-th powers of 1..n−1 is congruent to −1 modulo n.\n",
+  "difficulty": 76,
+  "centrality": 38,
+  "tractability": 22,
+  "status": "open",
+  "tags": [
+    "primality",
+    "Bernoulli",
+    "Agoh",
+    "congruences"
+  ],
+  "rank": 91,
+  "css": 54.6,
+  "folder": "giuga-conjecture"
+}
