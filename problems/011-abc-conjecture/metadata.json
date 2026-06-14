@@ -1,0 +1,29 @@
+{
+  "slug": "abc-conjecture",
+  "title": "The abc Conjecture",
+  "field": "Number Theory",
+  "subfields": [
+    "Diophantine Analysis",
+    "Arithmetic Geometry"
+  ],
+  "year_posed": 1985,
+  "originators": [
+    "Joseph Oesterlé",
+    "David Masser"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "For coprime a + b = c, c is bounded in terms of the radical (product of distinct primes) of abc; rad(abc)^(1+ε) dominates c for all but finitely many triples.\n",
+  "difficulty": 93,
+  "centrality": 84,
+  "tractability": 13,
+  "status": "disputed-claim",
+  "tags": [
+    "diophantine",
+    "radical",
+    "Mochizuki",
+    "IUT"
+  ],
+  "rank": 11,
+  "css": 73.767,
+  "folder": "011-abc-conjecture"
+}

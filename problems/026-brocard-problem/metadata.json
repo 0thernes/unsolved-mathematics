@@ -1,0 +1,27 @@
+{
+  "slug": "brocard-problem",
+  "title": "Brocard's Problem",
+  "field": "Number Theory",
+  "subfields": [
+    "Diophantine Equations"
+  ],
+  "year_posed": 1876,
+  "originators": [
+    "Henri Brocard",
+    "Srinivasa Ramanujan (independent)"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Are there only finitely many integers n for which n! + 1 is a perfect square (Brown numbers)?\n",
+  "difficulty": 74,
+  "centrality": 38,
+  "tractability": 42,
+  "status": "open",
+  "tags": [
+    "factorial",
+    "squares",
+    "Brown-numbers"
+  ],
+  "rank": 26,
+  "css": 56.733,
+  "folder": "026-brocard-problem"
+}

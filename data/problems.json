@@ -1,0 +1,1085 @@
+{
+  "meta": {
+    "atlas_name": "The Unsolved Mathematics Atlas",
+    "version": "0.1.0",
+    "maintainer": "0thernes",
+    "updated": "2026-06-14",
+    "default_branch": "main",
+    "disclaimer": "Difficulty, centrality, age, and tractability scores are curated editorial estimates intended to produce a useful, reproducible ordering — NOT objective measurements. Paper and people lists are research scaffolding: each is marked with a verification status and MUST be checked against primary sources before citation. Nothing here asserts a problem is solved unless explicitly stated.\n"
+  },
+  "problems": [
+    {
+      "slug": "riemann-hypothesis",
+      "title": "The Riemann Hypothesis",
+      "field": "Analytic Number Theory",
+      "subfields": [
+        "Complex Analysis",
+        "Spectral Theory",
+        "L-functions"
+      ],
+      "year_posed": 1859,
+      "originators": [
+        "Bernhard Riemann"
+      ],
+      "millennium_prize": true,
+      "statement_plain": "Every non-trivial zero of the Riemann zeta function has real part 1/2.\n",
+      "difficulty": 99,
+      "centrality": 100,
+      "tractability": 8,
+      "status": "open",
+      "tags": [
+        "primes",
+        "zeta",
+        "L-functions",
+        "RH"
+      ],
+      "rank": 1,
+      "css": 89.867
+    },
+    {
+      "slug": "goldbach-conjecture",
+      "title": "Goldbach's Conjecture",
+      "field": "Number Theory",
+      "subfields": [
+        "Additive Number Theory",
+        "Sieve Theory"
+      ],
+      "year_posed": 1742,
+      "originators": [
+        "Christian Goldbach",
+        "Leonhard Euler (strong form)"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Every even integer greater than 2 is the sum of two primes.\n",
+      "difficulty": 92,
+      "centrality": 80,
+      "tractability": 18,
+      "status": "open",
+      "tags": [
+        "primes",
+        "additive",
+        "sieve"
+      ],
+      "rank": 2,
+      "css": 87.867
+    },
+    {
+      "slug": "p-versus-np",
+      "title": "P versus NP",
+      "field": "Computational Complexity Theory",
+      "subfields": [
+        "Logic",
+        "Combinatorics",
+        "Cryptography"
+      ],
+      "year_posed": 1971,
+      "originators": [
+        "Stephen Cook",
+        "Leonid Levin",
+        "Kurt Gödel (1956 letter)"
+      ],
+      "millennium_prize": true,
+      "statement_plain": "Is every problem whose solution can be verified quickly also solvable quickly? Formally, does P = NP?\n",
+      "difficulty": 98,
+      "centrality": 99,
+      "tractability": 6,
+      "status": "open",
+      "tags": [
+        "complexity",
+        "algorithms",
+        "logic",
+        "cryptography"
+      ],
+      "rank": 3,
+      "css": 81.9
+    },
+    {
+      "slug": "hodge-conjecture",
+      "title": "The Hodge Conjecture",
+      "field": "Algebraic Geometry",
+      "subfields": [
+        "Topology",
+        "Complex Geometry",
+        "Hodge Theory"
+      ],
+      "year_posed": 1950,
+      "originators": [
+        "W. V. D. Hodge"
+      ],
+      "millennium_prize": true,
+      "statement_plain": "On a non-singular complex projective variety, every Hodge class is a rational linear combination of cohomology classes of algebraic cycles.\n",
+      "difficulty": 97,
+      "centrality": 90,
+      "tractability": 9,
+      "status": "open",
+      "tags": [
+        "cohomology",
+        "algebraic-cycles",
+        "complex-varieties"
+      ],
+      "rank": 4,
+      "css": 79.9
+    },
+    {
+      "slug": "twin-prime-conjecture",
+      "title": "The Twin Prime Conjecture",
+      "field": "Number Theory",
+      "subfields": [
+        "Sieve Theory",
+        "Analytic Number Theory"
+      ],
+      "year_posed": 1849,
+      "originators": [
+        "Alphonse de Polignac",
+        "Euclid (antiquity, informal)"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "There are infinitely many primes p such that p + 2 is also prime.\n",
+      "difficulty": 90,
+      "centrality": 82,
+      "tractability": 28,
+      "status": "active-progress",
+      "tags": [
+        "primes",
+        "gaps",
+        "sieve",
+        "bounded-gaps"
+      ],
+      "rank": 5,
+      "css": 79.533
+    },
+    {
+      "slug": "birch-swinnerton-dyer",
+      "title": "The Birch and Swinnerton-Dyer Conjecture",
+      "field": "Number Theory",
+      "subfields": [
+        "Arithmetic Geometry",
+        "Elliptic Curves",
+        "L-functions"
+      ],
+      "year_posed": 1965,
+      "originators": [
+        "Bryan Birch",
+        "Peter Swinnerton-Dyer"
+      ],
+      "millennium_prize": true,
+      "statement_plain": "The rank of the group of rational points of an elliptic curve equals the order of vanishing of its L-function at s = 1.\n",
+      "difficulty": 96,
+      "centrality": 92,
+      "tractability": 12,
+      "status": "open",
+      "tags": [
+        "elliptic-curves",
+        "L-functions",
+        "rational-points",
+        "BSD"
+      ],
+      "rank": 6,
+      "css": 78.8
+    },
+    {
+      "slug": "odd-perfect-numbers",
+      "title": "Existence of Odd Perfect Numbers",
+      "field": "Number Theory",
+      "subfields": [
+        "Multiplicative Number Theory"
+      ],
+      "year_posed": -300,
+      "originators": [
+        "Euclid",
+        "Nicomachus of Gerasa"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Does there exist an odd number equal to the sum of its proper divisors?\n",
+      "difficulty": 85,
+      "centrality": 55,
+      "tractability": 22,
+      "status": "open",
+      "tags": [
+        "perfect-numbers",
+        "divisors",
+        "ancient"
+      ],
+      "rank": 7,
+      "css": 78.3
+    },
+    {
+      "slug": "mersenne-primes-infinitude",
+      "title": "Infinitude of Mersenne Primes",
+      "field": "Number Theory",
+      "subfields": [
+        "Computational Number Theory"
+      ],
+      "year_posed": 1644,
+      "originators": [
+        "Marin Mersenne"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Are there infinitely many primes of the form 2^p - 1?\n",
+      "difficulty": 84,
+      "centrality": 50,
+      "tractability": 20,
+      "status": "open",
+      "tags": [
+        "primes",
+        "mersenne",
+        "GIMPS"
+      ],
+      "rank": 8,
+      "css": 76.6
+    },
+    {
+      "slug": "hilbert-sixteenth-problem",
+      "title": "Hilbert's Sixteenth Problem (Second Part)",
+      "field": "Dynamical Systems",
+      "subfields": [
+        "Real Algebraic Geometry",
+        "Ordinary Differential Equations"
+      ],
+      "year_posed": 1900,
+      "originators": [
+        "David Hilbert"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Bound the number and relative position of limit cycles of a planar polynomial vector field of degree n; even for n = 2 no finite bound is known.\n",
+      "difficulty": 94,
+      "centrality": 70,
+      "tractability": 9,
+      "status": "open",
+      "tags": [
+        "limit-cycles",
+        "vector-fields",
+        "Hilbert",
+        "dynamics"
+      ],
+      "rank": 9,
+      "css": 76.033
+    },
+    {
+      "slug": "yang-mills-mass-gap",
+      "title": "Yang–Mills Existence and Mass Gap",
+      "field": "Mathematical Physics",
+      "subfields": [
+        "Quantum Field Theory",
+        "Gauge Theory",
+        "PDE"
+      ],
+      "year_posed": 2000,
+      "originators": [
+        "Arthur Jaffe",
+        "Edward Witten (formulation)",
+        "C. N. Yang",
+        "Robert Mills"
+      ],
+      "millennium_prize": true,
+      "statement_plain": "Prove that a quantum Yang–Mills theory exists on R^4 for any compact simple gauge group and has a positive mass gap.\n",
+      "difficulty": 97,
+      "centrality": 85,
+      "tractability": 7,
+      "status": "open",
+      "tags": [
+        "gauge-theory",
+        "QFT",
+        "mass-gap",
+        "physics"
+      ],
+      "rank": 10,
+      "css": 75.267
+    },
+    {
+      "slug": "navier-stokes-smoothness",
+      "title": "Navier–Stokes Existence and Smoothness",
+      "field": "Partial Differential Equations",
+      "subfields": [
+        "Fluid Dynamics",
+        "Analysis",
+        "Harmonic Analysis"
+      ],
+      "year_posed": 2000,
+      "originators": [
+        "Charles Fefferman (formulation)",
+        "Claude-Louis Navier",
+        "George Gabriel Stokes"
+      ],
+      "millennium_prize": true,
+      "statement_plain": "In three dimensions, do smooth, globally defined solutions to the incompressible Navier–Stokes equations always exist (and stay smooth)?\n",
+      "difficulty": 95,
+      "centrality": 88,
+      "tractability": 14,
+      "status": "open",
+      "tags": [
+        "fluids",
+        "PDE",
+        "regularity",
+        "turbulence"
+      ],
+      "rank": 11,
+      "css": 74.667
+    },
+    {
+      "slug": "abc-conjecture",
+      "title": "The abc Conjecture",
+      "field": "Number Theory",
+      "subfields": [
+        "Diophantine Analysis",
+        "Arithmetic Geometry"
+      ],
+      "year_posed": 1985,
+      "originators": [
+        "Joseph Oesterlé",
+        "David Masser"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "For coprime a + b = c, c is bounded in terms of the radical (product of distinct primes) of abc; rad(abc)^(1+ε) dominates c for all but finitely many triples.\n",
+      "difficulty": 93,
+      "centrality": 84,
+      "tractability": 13,
+      "status": "disputed-claim",
+      "tags": [
+        "diophantine",
+        "radical",
+        "Mochizuki",
+        "IUT"
+      ],
+      "rank": 12,
+      "css": 73.767
+    },
+    {
+      "slug": "legendre-conjecture",
+      "title": "Legendre's Conjecture",
+      "field": "Number Theory",
+      "subfields": [
+        "Distribution of Primes"
+      ],
+      "year_posed": 1808,
+      "originators": [
+        "Adrien-Marie Legendre"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "There is always a prime between n^2 and (n+1)^2 for every positive integer n.\n",
+      "difficulty": 83,
+      "centrality": 54,
+      "tractability": 26,
+      "status": "open",
+      "tags": [
+        "primes",
+        "gaps",
+        "Legendre"
+      ],
+      "rank": 13,
+      "css": 71.267
+    },
+    {
+      "slug": "polignac-conjecture",
+      "title": "Polignac's Conjecture",
+      "field": "Number Theory",
+      "subfields": [
+        "Sieve Theory"
+      ],
+      "year_posed": 1849,
+      "originators": [
+        "Alphonse de Polignac"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "For every even number k, there are infinitely many prime gaps of size k.\n",
+      "difficulty": 86,
+      "centrality": 56,
+      "tractability": 27,
+      "status": "active-progress",
+      "tags": [
+        "primes",
+        "gaps",
+        "bounded-gaps"
+      ],
+      "rank": 14,
+      "css": 70.233
+    },
+    {
+      "slug": "hardy-littlewood-k-tuple",
+      "title": "The Hardy–Littlewood k-tuple Conjecture",
+      "field": "Analytic Number Theory",
+      "subfields": [
+        "Prime Constellations",
+        "Sieve Theory"
+      ],
+      "year_posed": 1923,
+      "originators": [
+        "G. H. Hardy",
+        "J. E. Littlewood"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Admissible prime constellations occur infinitely often, with an explicit asymptotic density (the first Hardy–Littlewood conjecture).\n",
+      "difficulty": 87,
+      "centrality": 66,
+      "tractability": 19,
+      "status": "active-progress",
+      "tags": [
+        "primes",
+        "constellations",
+        "admissible",
+        "density"
+      ],
+      "rank": 15,
+      "css": 69.5
+    },
+    {
+      "slug": "collatz-conjecture",
+      "title": "The Collatz Conjecture",
+      "field": "Number Theory / Dynamical Systems",
+      "subfields": [
+        "Arithmetic Dynamics",
+        "Ergodic Theory"
+      ],
+      "year_posed": 1937,
+      "originators": [
+        "Lothar Collatz"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Iterating n -> n/2 (even) or 3n+1 (odd) eventually reaches 1 for every positive integer.\n",
+      "difficulty": 91,
+      "centrality": 60,
+      "tractability": 10,
+      "status": "open",
+      "tags": [
+        "iteration",
+        "3n+1",
+        "dynamics"
+      ],
+      "rank": 16,
+      "css": 69.267
+    },
+    {
+      "slug": "kakeya-conjecture",
+      "title": "The Kakeya Conjecture",
+      "field": "Harmonic Analysis",
+      "subfields": [
+        "Geometric Measure Theory",
+        "Additive Combinatorics"
+      ],
+      "year_posed": 1971,
+      "originators": [
+        "Sōichi Kakeya (1917 problem)",
+        "Abram Besicovitch",
+        "Roy Davies"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Every Kakeya set (containing a unit segment in every direction) in R^n has Hausdorff and Minkowski dimension n.\n",
+      "difficulty": 90,
+      "centrality": 75,
+      "tractability": 30,
+      "status": "active-progress",
+      "tags": [
+        "Kakeya",
+        "dimension",
+        "restriction",
+        "Wang-Zahl"
+      ],
+      "rank": 17,
+      "css": 69.1
+    },
+    {
+      "slug": "jacobian-conjecture",
+      "title": "The Jacobian Conjecture",
+      "field": "Algebraic Geometry",
+      "subfields": [
+        "Commutative Algebra",
+        "Polynomial Maps"
+      ],
+      "year_posed": 1939,
+      "originators": [
+        "Ott-Heinrich Keller"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "A polynomial map from C^n to C^n with constant nonzero Jacobian determinant has a polynomial inverse.\n",
+      "difficulty": 89,
+      "centrality": 62,
+      "tractability": 16,
+      "status": "open",
+      "tags": [
+        "polynomial-maps",
+        "automorphisms",
+        "Keller"
+      ],
+      "rank": 18,
+      "css": 68.333
+    },
+    {
+      "slug": "bunyakovsky-conjecture",
+      "title": "Bunyakovsky's Conjecture",
+      "field": "Number Theory",
+      "subfields": [
+        "Prime-Producing Polynomials"
+      ],
+      "year_posed": 1857,
+      "originators": [
+        "Viktor Bunyakovsky"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "An irreducible integer polynomial of degree >= 2 satisfying simple necessary conditions produces infinitely many prime values.\n",
+      "difficulty": 85,
+      "centrality": 48,
+      "tractability": 23,
+      "status": "open",
+      "tags": [
+        "primes",
+        "polynomials",
+        "Hardy-Littlewood"
+      ],
+      "rank": 19,
+      "css": 67.3
+    },
+    {
+      "slug": "hadwiger-conjecture",
+      "title": "Hadwiger's Conjecture (Graph Coloring)",
+      "field": "Graph Theory",
+      "subfields": [
+        "Combinatorics",
+        "Topological Graph Theory"
+      ],
+      "year_posed": 1943,
+      "originators": [
+        "Hugo Hadwiger"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Every graph with no K_t minor is (t-1)-colorable; a vast generalization of the Four Color Theorem.\n",
+      "difficulty": 87,
+      "centrality": 64,
+      "tractability": 24,
+      "status": "active-progress",
+      "tags": [
+        "graph-coloring",
+        "minors",
+        "four-color"
+      ],
+      "rank": 20,
+      "css": 67.067
+    },
+    {
+      "slug": "littlewood-conjecture",
+      "title": "The Littlewood Conjecture",
+      "field": "Diophantine Approximation",
+      "subfields": [
+        "Number Theory",
+        "Homogeneous Dynamics"
+      ],
+      "year_posed": 1930,
+      "originators": [
+        "John Edensor Littlewood"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "For all real numbers α and β, liminf over n of n·||nα||·||nβ|| = 0, where ||x|| is the distance from x to the nearest integer.\n",
+      "difficulty": 88,
+      "centrality": 58,
+      "tractability": 20,
+      "status": "active-progress",
+      "tags": [
+        "diophantine",
+        "simultaneous-approximation",
+        "EKL",
+        "dynamics"
+      ],
+      "rank": 21,
+      "css": 66.933
+    },
+    {
+      "slug": "invariant-subspace-problem",
+      "title": "The Invariant Subspace Problem",
+      "field": "Functional Analysis",
+      "subfields": [
+        "Operator Theory"
+      ],
+      "year_posed": 1935,
+      "originators": [
+        "John von Neumann (informal)"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Does every bounded linear operator on a separable infinite-dimensional complex Hilbert space have a non-trivial closed invariant subspace?\n",
+      "difficulty": 88,
+      "centrality": 58,
+      "tractability": 21,
+      "status": "active-progress",
+      "tags": [
+        "operators",
+        "Hilbert-space",
+        "invariant-subspaces"
+      ],
+      "rank": 22,
+      "css": 66.5
+    },
+    {
+      "slug": "schanuel-conjecture",
+      "title": "Schanuel's Conjecture",
+      "field": "Transcendental Number Theory",
+      "subfields": [
+        "Model Theory",
+        "Exponential Algebra"
+      ],
+      "year_posed": 1960,
+      "originators": [
+        "Stephen Schanuel"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Given n complex numbers linearly independent over Q, the transcendence degree of the field they and their exponentials generate is at least n.\n",
+      "difficulty": 88,
+      "centrality": 60,
+      "tractability": 17,
+      "status": "open",
+      "tags": [
+        "transcendence",
+        "exponential",
+        "model-theory"
+      ],
+      "rank": 23,
+      "css": 65.833
+    },
+    {
+      "slug": "montgomery-pair-correlation",
+      "title": "Montgomery's Pair Correlation Conjecture",
+      "field": "Analytic Number Theory",
+      "subfields": [
+        "Random Matrix Theory",
+        "Zeta Zeros"
+      ],
+      "year_posed": 1973,
+      "originators": [
+        "Hugh Montgomery",
+        "Freeman Dyson (RMT link)"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "The pair correlation of the non-trivial zeros of the zeta function matches that of eigenvalues of large random Hermitian (GUE) matrices.\n",
+      "difficulty": 84,
+      "centrality": 58,
+      "tractability": 25,
+      "status": "open",
+      "tags": [
+        "zeta",
+        "random-matrices",
+        "GUE",
+        "RH"
+      ],
+      "rank": 24,
+      "css": 61.967
+    },
+    {
+      "slug": "inscribed-square-problem",
+      "title": "The Inscribed Square Problem (Toeplitz)",
+      "field": "Geometric Topology",
+      "subfields": [
+        "Plane Topology",
+        "Differential Geometry"
+      ],
+      "year_posed": 1911,
+      "originators": [
+        "Otto Toeplitz"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Does every simple closed curve in the plane contain four points forming a square?\n",
+      "difficulty": 80,
+      "centrality": 48,
+      "tractability": 38,
+      "status": "active-progress",
+      "tags": [
+        "Jordan-curve",
+        "square-peg",
+        "topology"
+      ],
+      "rank": 25,
+      "css": 60.2
+    },
+    {
+      "slug": "hadwiger-nelson-problem",
+      "title": "The Hadwiger–Nelson Problem",
+      "field": "Combinatorial Geometry",
+      "subfields": [
+        "Graph Coloring",
+        "Euclidean Ramsey Theory"
+      ],
+      "year_posed": 1950,
+      "originators": [
+        "Edward Nelson",
+        "Hugo Hadwiger"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "How many colors are needed to color the plane so that no two points at distance 1 share a color? Known to be 5, 6, or 7.\n",
+      "difficulty": 78,
+      "centrality": 52,
+      "tractability": 45,
+      "status": "active-progress",
+      "tags": [
+        "chromatic-number",
+        "plane",
+        "de-Grey",
+        "unit-distance"
+      ],
+      "rank": 26,
+      "css": 57.3
+    },
+    {
+      "slug": "hadamard-matrix-conjecture",
+      "title": "The Hadamard Matrix Conjecture",
+      "field": "Combinatorics",
+      "subfields": [
+        "Design Theory",
+        "Coding Theory"
+      ],
+      "year_posed": 1893,
+      "originators": [
+        "Jacques Hadamard",
+        "Raymond Paley"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "A Hadamard matrix of order 4k exists for every positive integer k.\n",
+      "difficulty": 76,
+      "centrality": 40,
+      "tractability": 41,
+      "status": "active-progress",
+      "tags": [
+        "Hadamard",
+        "designs",
+        "orthogonal"
+      ],
+      "rank": 27,
+      "css": 57.1
+    },
+    {
+      "slug": "brocard-problem",
+      "title": "Brocard's Problem",
+      "field": "Number Theory",
+      "subfields": [
+        "Diophantine Equations"
+      ],
+      "year_posed": 1876,
+      "originators": [
+        "Henri Brocard",
+        "Srinivasa Ramanujan (independent)"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Are there only finitely many integers n for which n! + 1 is a perfect square (Brown numbers)?\n",
+      "difficulty": 74,
+      "centrality": 38,
+      "tractability": 42,
+      "status": "open",
+      "tags": [
+        "factorial",
+        "squares",
+        "Brown-numbers"
+      ],
+      "rank": 28,
+      "css": 56.733
+    },
+    {
+      "slug": "andrews-curtis-conjecture",
+      "title": "The Andrews–Curtis Conjecture",
+      "field": "Geometric Group Theory",
+      "subfields": [
+        "Combinatorial Group Theory",
+        "Low-Dimensional Topology"
+      ],
+      "year_posed": 1965,
+      "originators": [
+        "James J. Andrews",
+        "Morton L. Curtis"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Every balanced presentation of the trivial group can be reduced to the trivial presentation by elementary (Andrews–Curtis) moves.\n",
+      "difficulty": 81,
+      "centrality": 41,
+      "tractability": 31,
+      "status": "active-progress",
+      "tags": [
+        "group-presentations",
+        "AC-moves",
+        "topology"
+      ],
+      "rank": 29,
+      "css": 55.6
+    },
+    {
+      "slug": "connes-embedding-aftermath",
+      "title": "The Connes Embedding Problem (Resolved 2020)",
+      "field": "Operator Algebras",
+      "subfields": [
+        "Von Neumann Algebras",
+        "Quantum Information"
+      ],
+      "year_posed": 1976,
+      "originators": [
+        "Alain Connes"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Can every type II_1 factor be embedded in an ultrapower of the hyperfinite II_1 factor? Resolved NEGATIVELY in 2020 via MIP* = RE; included as a model case of a long-open problem recently settled, and for its live successor questions.\n",
+      "difficulty": 80,
+      "centrality": 57,
+      "tractability": 70,
+      "status": "recently-resolved",
+      "tags": [
+        "von-Neumann",
+        "MIP*",
+        "quantum",
+        "Tsirelson"
+      ],
+      "rank": 30,
+      "css": 55.367
+    },
+    {
+      "slug": "lonely-runner-conjecture",
+      "title": "The Lonely Runner Conjecture",
+      "field": "Number Theory / Combinatorics",
+      "subfields": [
+        "Diophantine Approximation",
+        "Geometry of Numbers"
+      ],
+      "year_posed": 1967,
+      "originators": [
+        "Jörg M. Wills",
+        "T. W. Cusick (independent)"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "For k runners on a unit circular track with distinct constant speeds, each runner is at some moment at distance >= 1/(k) from all others.\n",
+      "difficulty": 79,
+      "centrality": 46,
+      "tractability": 40,
+      "status": "active-progress",
+      "tags": [
+        "diophantine",
+        "view-obstruction",
+        "covering"
+      ],
+      "rank": 31,
+      "css": 55.267
+    },
+    {
+      "slug": "beal-conjecture",
+      "title": "The Beal Conjecture",
+      "field": "Number Theory",
+      "subfields": [
+        "Diophantine Equations"
+      ],
+      "year_posed": 1993,
+      "originators": [
+        "Andrew Beal"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "If A^x + B^y = C^z with x,y,z > 2 and A,B,C positive integers, then A, B, and C share a common prime factor.\n",
+      "difficulty": 82,
+      "centrality": 44,
+      "tractability": 32,
+      "status": "open",
+      "tags": [
+        "diophantine",
+        "Fermat",
+        "prize-problem"
+      ],
+      "rank": 32,
+      "css": 54.933
+    },
+    {
+      "slug": "lehmer-totient-problem",
+      "title": "Lehmer's Totient Problem",
+      "field": "Number Theory",
+      "subfields": [
+        "Multiplicative Number Theory"
+      ],
+      "year_posed": 1932,
+      "originators": [
+        "Derrick Henry Lehmer"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Are there any composite numbers n such that Euler's totient φ(n) divides n - 1?\n",
+      "difficulty": 77,
+      "centrality": 36,
+      "tractability": 35,
+      "status": "open",
+      "tags": [
+        "totient",
+        "Carmichael",
+        "Lehmer"
+      ],
+      "rank": 33,
+      "css": 54.3
+    },
+    {
+      "slug": "union-closed-sets-conjecture",
+      "title": "The Union-Closed Sets Conjecture (Frankl)",
+      "field": "Combinatorics",
+      "subfields": [
+        "Extremal Set Theory",
+        "Information Theory"
+      ],
+      "year_posed": 1979,
+      "originators": [
+        "Péter Frankl"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "In any finite union-closed family of sets (not just the empty set), some element belongs to at least half of the sets.\n",
+      "difficulty": 76,
+      "centrality": 50,
+      "tractability": 55,
+      "status": "active-progress",
+      "tags": [
+        "set-systems",
+        "Frankl",
+        "Gilmer",
+        "entropy"
+      ],
+      "rank": 34,
+      "css": 52.967
+    },
+    {
+      "slug": "erdos-straus-conjecture",
+      "title": "The Erdős–Straus Conjecture",
+      "field": "Number Theory",
+      "subfields": [
+        "Egyptian Fractions",
+        "Diophantine Analysis"
+      ],
+      "year_posed": 1948,
+      "originators": [
+        "Paul Erdős",
+        "Ernst G. Straus"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "For every integer n >= 2, the fraction 4/n is the sum of three unit fractions 1/a + 1/b + 1/c.\n",
+      "difficulty": 75,
+      "centrality": 42,
+      "tractability": 48,
+      "status": "active-progress",
+      "tags": [
+        "egyptian-fractions",
+        "Erdos",
+        "unit-fractions"
+      ],
+      "rank": 35,
+      "css": 52.933
+    },
+    {
+      "slug": "grimm-conjecture",
+      "title": "Grimm's Conjecture",
+      "field": "Number Theory",
+      "subfields": [
+        "Distinct Prime Factors"
+      ],
+      "year_posed": 1969,
+      "originators": [
+        "Carl Albert Grimm"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Consecutive composite numbers can be assigned distinct prime divisors, one dividing each.\n",
+      "difficulty": 78,
+      "centrality": 32,
+      "tractability": 33,
+      "status": "open",
+      "tags": [
+        "primes",
+        "consecutive",
+        "factorization"
+      ],
+      "rank": 36,
+      "css": 51.233
+    },
+    {
+      "slug": "singmaster-conjecture",
+      "title": "Singmaster's Conjecture",
+      "field": "Combinatorics",
+      "subfields": [
+        "Binomial Coefficients",
+        "Pascal's Triangle"
+      ],
+      "year_posed": 1971,
+      "originators": [
+        "David Singmaster"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "There is a finite upper bound on the number of times any integer > 1 can appear in Pascal's triangle.\n",
+      "difficulty": 73,
+      "centrality": 34,
+      "tractability": 50,
+      "status": "active-progress",
+      "tags": [
+        "Pascal",
+        "binomial",
+        "multiplicity"
+      ],
+      "rank": 37,
+      "css": 48.0
+    },
+    {
+      "slug": "gilbreath-conjecture",
+      "title": "Gilbreath's Conjecture",
+      "field": "Number Theory",
+      "subfields": [
+        "Prime Gaps",
+        "Difference Tables"
+      ],
+      "year_posed": 1958,
+      "originators": [
+        "Norman L. Gilbreath",
+        "François Proth (1878, earlier)"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Iterating absolute differences of the sequence of primes always yields a leading 1 in every row.\n",
+      "difficulty": 72,
+      "centrality": 30,
+      "tractability": 44,
+      "status": "open",
+      "tags": [
+        "primes",
+        "difference-table",
+        "Gilbreath"
+      ],
+      "rank": 38,
+      "css": 47.867
+    },
+    {
+      "slug": "sendov-conjecture",
+      "title": "Sendov's Conjecture",
+      "field": "Complex Analysis",
+      "subfields": [
+        "Geometry of Polynomials"
+      ],
+      "year_posed": 1959,
+      "originators": [
+        "Blagovest Sendov"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "If all roots of a complex polynomial lie in the unit disk, then within distance 1 of each root lies a critical point.\n",
+      "difficulty": 70,
+      "centrality": 35,
+      "tractability": 60,
+      "status": "active-progress",
+      "tags": [
+        "polynomials",
+        "critical-points",
+        "Tao"
+      ],
+      "rank": 39,
+      "css": 46.9
+    },
+    {
+      "slug": "crouzeix-conjecture",
+      "title": "Crouzeix's Conjecture",
+      "field": "Matrix Analysis",
+      "subfields": [
+        "Numerical Range",
+        "Operator Theory"
+      ],
+      "year_posed": 2004,
+      "originators": [
+        "Michel Crouzeix"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "For any square matrix A and polynomial p, ||p(A)|| <= 2 max over the numerical range W(A) of |p|.\n",
+      "difficulty": 71,
+      "centrality": 33,
+      "tractability": 58,
+      "status": "active-progress",
+      "tags": [
+        "numerical-range",
+        "matrices",
+        "spectral"
+      ],
+      "rank": 40,
+      "css": 43.9
+    }
+  ]
+}

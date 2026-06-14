@@ -1,0 +1,5 @@
+# Originator(s) — The Invariant Subspace Problem
+
+_Biography, background, and the ideas that led here._
+
+<!-- DOSSIER:originator -->

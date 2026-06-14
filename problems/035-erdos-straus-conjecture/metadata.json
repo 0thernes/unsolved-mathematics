@@ -1,0 +1,28 @@
+{
+  "slug": "erdos-straus-conjecture",
+  "title": "The Erdős–Straus Conjecture",
+  "field": "Number Theory",
+  "subfields": [
+    "Egyptian Fractions",
+    "Diophantine Analysis"
+  ],
+  "year_posed": 1948,
+  "originators": [
+    "Paul Erdős",
+    "Ernst G. Straus"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "For every integer n >= 2, the fraction 4/n is the sum of three unit fractions 1/a + 1/b + 1/c.\n",
+  "difficulty": 75,
+  "centrality": 42,
+  "tractability": 48,
+  "status": "active-progress",
+  "tags": [
+    "egyptian-fractions",
+    "Erdos",
+    "unit-fractions"
+  ],
+  "rank": 35,
+  "css": 52.933,
+  "folder": "035-erdos-straus-conjecture"
+}

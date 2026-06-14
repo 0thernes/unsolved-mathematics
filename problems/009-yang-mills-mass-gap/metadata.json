@@ -1,0 +1,32 @@
+{
+  "slug": "yang-mills-mass-gap",
+  "title": "Yang–Mills Existence and Mass Gap",
+  "field": "Mathematical Physics",
+  "subfields": [
+    "Quantum Field Theory",
+    "Gauge Theory",
+    "PDE"
+  ],
+  "year_posed": 2000,
+  "originators": [
+    "Arthur Jaffe",
+    "Edward Witten (formulation)",
+    "C. N. Yang",
+    "Robert Mills"
+  ],
+  "millennium_prize": true,
+  "statement_plain": "Prove that a quantum Yang–Mills theory exists on R^4 for any compact simple gauge group and has a positive mass gap.\n",
+  "difficulty": 97,
+  "centrality": 85,
+  "tractability": 7,
+  "status": "open",
+  "tags": [
+    "gauge-theory",
+    "QFT",
+    "mass-gap",
+    "physics"
+  ],
+  "rank": 9,
+  "css": 75.267,
+  "folder": "009-yang-mills-mass-gap"
+}

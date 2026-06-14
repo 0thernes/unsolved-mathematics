@@ -1,0 +1,28 @@
+{
+  "slug": "hilbert-sixteenth-problem",
+  "title": "Hilbert's Sixteenth Problem (Second Part)",
+  "field": "Dynamical Systems",
+  "subfields": [
+    "Real Algebraic Geometry",
+    "Ordinary Differential Equations"
+  ],
+  "year_posed": 1900,
+  "originators": [
+    "David Hilbert"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Bound the number and relative position of limit cycles of a planar polynomial vector field of degree n; even for n = 2 no finite bound is known.\n",
+  "difficulty": 94,
+  "centrality": 70,
+  "tractability": 9,
+  "status": "open",
+  "tags": [
+    "limit-cycles",
+    "vector-fields",
+    "Hilbert",
+    "dynamics"
+  ],
+  "rank": 9,
+  "css": 76.033,
+  "folder": "009-hilbert-sixteenth-problem"
+}

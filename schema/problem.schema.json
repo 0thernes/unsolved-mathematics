@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/0thernes/unsolved-mathematics/schema/problem.schema.json",
+  "title": "Unsolved Mathematics Atlas — Problem Entry",
+  "description": "Schema for a single problem entry in data/problems.yaml and per-problem metadata.json.",
+  "type": "object",
+  "required": [
+    "slug", "title", "field", "year_posed", "originators",
+    "millennium_prize", "statement_plain", "difficulty", "centrality",
+    "tractability", "status", "tags"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "Kebab-case unique identifier; also the subfolder name suffix."
+    },
+    "title": { "type": "string", "minLength": 3, "maxLength": 120 },
+    "field": { "type": "string", "minLength": 3 },
+    "subfields": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "year_posed": {
+      "type": "integer",
+      "minimum": -3000,
+      "maximum": 2026,
+      "description": "Negative for BCE. Approximate for antiquity problems."
+    },
+    "originators": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "millennium_prize": { "type": "boolean" },
+    "statement_plain": { "type": "string", "minLength": 10 },
+    "difficulty": {
+      "type": "integer", "minimum": 0, "maximum": 100,
+      "description": "Editorial estimate of intrinsic mathematical difficulty."
+    },
+    "centrality": {
+      "type": "integer", "minimum": 0, "maximum": 100,
+      "description": "How load-bearing the problem is across mathematics."
+    },
+    "tractability": {
+      "type": "integer", "minimum": 0, "maximum": 100,
+      "description": "Editorial estimate of how close a resolution feels (higher = closer)."
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "open",
+        "active-progress",
+        "disputed-claim",
+        "recently-resolved",
+        "conditionally-resolved"
+      ]
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    }
+  }
+}

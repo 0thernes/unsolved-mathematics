@@ -1,0 +1,7 @@
+# RAG pipeline dependencies (heavier; optional)
+# The corpus builder (rag/build_corpus.py) works with stdlib only and emits
+# corpus.jsonl. These libraries enable embedding + vector search.
+numpy>=1.26
+tiktoken>=0.6          # token-aware chunking (falls back to char chunking if absent)
+sentence-transformers>=2.6   # local embeddings (all-MiniLM-L6-v2 by default)
+# faiss-cpu>=1.8        # uncomment for FAISS index; otherwise a numpy brute-force index is used

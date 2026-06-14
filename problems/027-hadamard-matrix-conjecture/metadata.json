@@ -1,0 +1,28 @@
+{
+  "slug": "hadamard-matrix-conjecture",
+  "title": "The Hadamard Matrix Conjecture",
+  "field": "Combinatorics",
+  "subfields": [
+    "Design Theory",
+    "Coding Theory"
+  ],
+  "year_posed": 1893,
+  "originators": [
+    "Jacques Hadamard",
+    "Raymond Paley"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "A Hadamard matrix of order 4k exists for every positive integer k.\n",
+  "difficulty": 76,
+  "centrality": 40,
+  "tractability": 41,
+  "status": "active-progress",
+  "tags": [
+    "Hadamard",
+    "designs",
+    "orthogonal"
+  ],
+  "rank": 27,
+  "css": 57.1,
+  "folder": "027-hadamard-matrix-conjecture"
+}

@@ -1,0 +1,30 @@
+{
+  "slug": "kakeya-conjecture",
+  "title": "The Kakeya Conjecture",
+  "field": "Harmonic Analysis",
+  "subfields": [
+    "Geometric Measure Theory",
+    "Additive Combinatorics"
+  ],
+  "year_posed": 1971,
+  "originators": [
+    "Sōichi Kakeya (1917 problem)",
+    "Abram Besicovitch",
+    "Roy Davies"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Every Kakeya set (containing a unit segment in every direction) in R^n has Hausdorff and Minkowski dimension n.\n",
+  "difficulty": 90,
+  "centrality": 75,
+  "tractability": 30,
+  "status": "active-progress",
+  "tags": [
+    "Kakeya",
+    "dimension",
+    "restriction",
+    "Wang-Zahl"
+  ],
+  "rank": 17,
+  "css": 69.1,
+  "folder": "017-kakeya-conjecture"
+}

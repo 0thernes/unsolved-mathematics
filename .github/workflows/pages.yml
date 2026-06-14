@@ -1,0 +1,51 @@
+name: Publish Atlas (optional)
+
+# Publishes the atlas as a static site to GitHub Pages on every push to main.
+# Disabled by default until Pages is enabled in repository settings.
+
+on:
+  workflow_dispatch:
+  # push:
+  #   branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Regenerate views
+        run: |
+          python scripts/generate.py
+          python rag/build_corpus.py
+      - name: Render markdown -> site (placeholder)
+        run: |
+          mkdir -p _site
+          cp -r README.md RANKING.md docs problems data _site/ 2>/dev/null || true
+          echo "Static rendering step is a placeholder; wire up mkdocs/quarto here."
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

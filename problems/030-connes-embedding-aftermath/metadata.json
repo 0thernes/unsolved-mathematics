@@ -1,0 +1,28 @@
+{
+  "slug": "connes-embedding-aftermath",
+  "title": "The Connes Embedding Problem (Resolved 2020)",
+  "field": "Operator Algebras",
+  "subfields": [
+    "Von Neumann Algebras",
+    "Quantum Information"
+  ],
+  "year_posed": 1976,
+  "originators": [
+    "Alain Connes"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Can every type II_1 factor be embedded in an ultrapower of the hyperfinite II_1 factor? Resolved NEGATIVELY in 2020 via MIP* = RE; included as a model case of a long-open problem recently settled, and for its live successor questions.\n",
+  "difficulty": 80,
+  "centrality": 57,
+  "tractability": 70,
+  "status": "recently-resolved",
+  "tags": [
+    "von-Neumann",
+    "MIP*",
+    "quantum",
+    "Tsirelson"
+  ],
+  "rank": 30,
+  "css": 55.367,
+  "folder": "030-connes-embedding-aftermath"
+}

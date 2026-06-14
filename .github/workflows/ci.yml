@@ -1,0 +1,61 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-validate:
+    name: Build · Validate · Corpus
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Validate registry + ranking freshness
+        run: |
+          python scripts/generate.py --check
+          python scripts/validate.py
+
+      - name: Verify generated views are committed (no drift)
+        run: |
+          python scripts/generate.py
+          git diff --exit-code -- RANKING.md data/problems.json \
+            || (echo "::error::Generated views are stale. Run 'python scripts/generate.py' and commit." && exit 1)
+
+      - name: Build RAG corpus
+        run: python rag/build_corpus.py
+
+      - name: Run tests
+        run: |
+          pip install pytest
+          python -m pytest -q
+
+  lint:
+    name: Lint (ruff, non-blocking)
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pipx install ruff && ruff check scripts rag tests || true

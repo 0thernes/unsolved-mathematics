@@ -1,0 +1,29 @@
+{
+  "slug": "hardy-littlewood-k-tuple",
+  "title": "The Hardy–Littlewood k-tuple Conjecture",
+  "field": "Analytic Number Theory",
+  "subfields": [
+    "Prime Constellations",
+    "Sieve Theory"
+  ],
+  "year_posed": 1923,
+  "originators": [
+    "G. H. Hardy",
+    "J. E. Littlewood"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Admissible prime constellations occur infinitely often, with an explicit asymptotic density (the first Hardy–Littlewood conjecture).\n",
+  "difficulty": 87,
+  "centrality": 66,
+  "tractability": 19,
+  "status": "active-progress",
+  "tags": [
+    "primes",
+    "constellations",
+    "admissible",
+    "density"
+  ],
+  "rank": 14,
+  "css": 69.5,
+  "folder": "014-hardy-littlewood-k-tuple"
+}

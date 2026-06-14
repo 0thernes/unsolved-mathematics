@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+title: "The Unsolved Mathematics Atlas"
+message: "If you use this atlas, please cite it."
+type: dataset
+authors:
+  - name: "The Unsolved Mathematics Atlas contributors"
+    alias: "0thernes"
+repository-code: "https://github.com/0thernes/unsolved-mathematics"
+abstract: >
+  An exhaustive, ranked, research-grade dossier collection of humanity's open
+  mathematical problems. Each problem includes its history, originator
+  biography, attack strategies, notable attempts, 25 key papers, 10 key
+  mathematicians, and a retrieval-augmented knowledge corpus. Problems are
+  ranked by a transparent, reproducible Composite Severity Score.
+keywords:
+  - mathematics
+  - open problems
+  - conjectures
+  - number theory
+  - retrieval-augmented generation
+  - knowledge base
+license: CC-BY-4.0
+version: 0.1.0
+date-released: 2026-06-14

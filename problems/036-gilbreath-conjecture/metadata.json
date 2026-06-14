@@ -1,0 +1,28 @@
+{
+  "slug": "gilbreath-conjecture",
+  "title": "Gilbreath's Conjecture",
+  "field": "Number Theory",
+  "subfields": [
+    "Prime Gaps",
+    "Difference Tables"
+  ],
+  "year_posed": 1958,
+  "originators": [
+    "Norman L. Gilbreath",
+    "François Proth (1878, earlier)"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Iterating absolute differences of the sequence of primes always yields a leading 1 in every row.\n",
+  "difficulty": 72,
+  "centrality": 30,
+  "tractability": 44,
+  "status": "open",
+  "tags": [
+    "primes",
+    "difference-table",
+    "Gilbreath"
+  ],
+  "rank": 36,
+  "css": 47.867,
+  "folder": "036-gilbreath-conjecture"
+}

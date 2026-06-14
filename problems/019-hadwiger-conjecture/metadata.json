@@ -1,0 +1,27 @@
+{
+  "slug": "hadwiger-conjecture",
+  "title": "Hadwiger's Conjecture (Graph Coloring)",
+  "field": "Graph Theory",
+  "subfields": [
+    "Combinatorics",
+    "Topological Graph Theory"
+  ],
+  "year_posed": 1943,
+  "originators": [
+    "Hugo Hadwiger"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Every graph with no K_t minor is (t-1)-colorable; a vast generalization of the Four Color Theorem.\n",
+  "difficulty": 87,
+  "centrality": 64,
+  "tractability": 24,
+  "status": "active-progress",
+  "tags": [
+    "graph-coloring",
+    "minors",
+    "four-color"
+  ],
+  "rank": 19,
+  "css": 67.067,
+  "folder": "019-hadwiger-conjecture"
+}

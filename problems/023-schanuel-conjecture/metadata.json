@@ -1,0 +1,27 @@
+{
+  "slug": "schanuel-conjecture",
+  "title": "Schanuel's Conjecture",
+  "field": "Transcendental Number Theory",
+  "subfields": [
+    "Model Theory",
+    "Exponential Algebra"
+  ],
+  "year_posed": 1960,
+  "originators": [
+    "Stephen Schanuel"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Given n complex numbers linearly independent over Q, the transcendence degree of the field they and their exponentials generate is at least n.\n",
+  "difficulty": 88,
+  "centrality": 60,
+  "tractability": 17,
+  "status": "open",
+  "tags": [
+    "transcendence",
+    "exponential",
+    "model-theory"
+  ],
+  "rank": 23,
+  "css": 65.833,
+  "folder": "023-schanuel-conjecture"
+}

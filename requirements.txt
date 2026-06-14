@@ -1,0 +1,6 @@
+# Core build + validation
+PyYAML>=6.0
+jsonschema>=4.21
+
+# RAG pipeline (optional; the corpus builder degrades gracefully without these)
+# Install with:  pip install -r requirements.txt -r requirements-rag.txt

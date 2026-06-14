@@ -1,0 +1,54 @@
+name: ➕ Propose a new problem
+description: Suggest an open problem to add to the atlas registry.
+title: "[problem] <name of the conjecture / open problem>"
+labels: ["new-problem", "triage"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Problem title
+      placeholder: "The Schinzel Hypothesis H"
+    validations:
+      required: true
+  - type: input
+    id: field
+    attributes:
+      label: Field
+      placeholder: "Number Theory"
+    validations:
+      required: true
+  - type: input
+    id: year
+    attributes:
+      label: Year posed (negative for BCE)
+      placeholder: "1958"
+    validations:
+      required: true
+  - type: input
+    id: originators
+    attributes:
+      label: Originator(s)
+      placeholder: "Andrzej Schinzel, Wacław Sierpiński"
+    validations:
+      required: true
+  - type: textarea
+    id: statement
+    attributes:
+      label: Plain-language statement
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it belongs (centrality / difficulty justification + a source)
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Pre-submission
+      options:
+        - label: It is genuinely open (or a notable disputed/recently-resolved case)
+          required: true
+        - label: I can provide at least one reputable source
+          required: true

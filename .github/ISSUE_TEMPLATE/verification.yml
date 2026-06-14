@@ -1,0 +1,29 @@
+name: 🔎 Source verification / correction
+description: Report an unverified, wrong, or fabricated citation, or verify one.
+title: "[verify] <problem slug> — <paper or claim>"
+labels: ["verification"]
+body:
+  - type: input
+    id: slug
+    attributes:
+      label: Problem slug
+      placeholder: "riemann-hypothesis"
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What is this?
+      options:
+        - I verified a source (promote flag to `verified`)
+        - A citation is wrong (year/author/venue)
+        - A citation may be fabricated / cannot be found
+        - A biographical claim is incorrect
+    validations:
+      required: true
+  - type: textarea
+    id: detail
+    attributes:
+      label: Details + primary source (DOI / arXiv / link)
+    validations:
+      required: true

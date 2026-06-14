@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/0thernes/unsolved-mathematics/schema/paper.schema.json",
+  "title": "Atlas — Reference Paper",
+  "type": "object",
+  "required": ["title", "authors", "year", "kind", "verification"],
+  "additionalProperties": false,
+  "properties": {
+    "title": { "type": "string" },
+    "authors": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+    "year": { "type": "integer", "minimum": -3000, "maximum": 2026 },
+    "venue": { "type": "string" },
+    "kind": {
+      "type": "string",
+      "enum": ["foundational", "breakthrough", "survey", "modern", "computational", "negative-result", "expository"]
+    },
+    "doi": { "type": "string" },
+    "arxiv": { "type": "string" },
+    "url": { "type": "string" },
+    "note": { "type": "string" },
+    "verification": {
+      "type": "string",
+      "enum": ["verified", "high-confidence", "needs-verification", "ai-suggested"],
+      "description": "Provenance flag. Only 'verified' means a human checked the primary source."
+    }
+  }
+}
