@@ -2,4 +2,18 @@
 
 _Biography, background, and the ideas that led here._
 
-<!-- DOSSIER:originator -->
+## Sir Erik Christopher Zeeman (1925–2016)
+
+**Christopher Zeeman** was a British mathematician, one of the most influential figures in twentieth-century topology and a celebrated communicator of mathematics. Born in Japan in 1925 to a Danish father and an English mother, he was raised in England. During the Second World War he served as a navigator in the Royal Air Force (1943–1947), an experience he later credited with sharpening his geometric intuition. After the war he read mathematics at Christ's College, Cambridge, completing his PhD under **Shaun Wylie** with a thesis on *dihomology*, an algebraic-topological theory.
+
+Zeeman's defining institutional achievement was the founding, in 1964, of the **Mathematics Institute at the University of Warwick**, which he built into one of the world's leading centres for topology and dynamical systems. He chaired it through its formative years and attracted a remarkable concentration of talent in geometric and differential topology. He was elected a Fellow of the Royal Society in 1975, knighted in 1991, and served as President of the London Mathematical Society. He was also a renowned populariser: he delivered the Royal Institution Christmas Lectures in 1978 (*Mathematics into Pictures*), the first mathematician to do so, and the Institute of Mathematics and its Applications named a medal in his honour.
+
+## Mathematical background to the conjecture
+
+Zeeman worked at the heart of **piecewise-linear (PL) topology**, the combinatorial study of polyhedra, simplicial complexes, regular neighborhoods, and collapsibility. In the early 1960s the great open question of the field was the **Poincaré conjecture** in its various dimensions. Zeeman himself proved the **Poincaré conjecture in dimensions $\ge 5$ in the PL category** (the piecewise-linear analogue of Smale's smooth result), and he developed much of the modern machinery of collapses, expansions, and regular neighborhoods that the conjecture's statement depends on.
+
+It was against this backdrop that, in *On the dunce hat* (1964), he isolated the phenomenon that **contractibility is strictly weaker than collapsibility**: the dunce hat $D$ is contractible (it deformation-retracts to a point as a topological space) yet has no free face, so no elementary collapse can even begin. Zeeman's insight was that this defect is "one-dimensional" — that multiplying by an interval supplies just enough room to collapse. He verified $D \times I$ is collapsible and conjectured the same for *every* contractible $2$-complex. His motivation was explicitly strategic: collapsibility of $K \times I$ feeds directly into regular-neighborhood arguments that, applied to a homotopy $3$-sphere's spine, would yield the $3$-dimensional Poincaré conjecture. He saw ZC as a *combinatorial bridge* to a topological theorem.
+
+## Legacy
+
+Although Perelman's analytic proof of Poincaré (2003) bypassed the combinatorial route Zeeman envisioned, the conjecture remains a touchstone problem in PL topology precisely because of what it would still deliver: a proof of the **Andrews–Curtis conjecture** and a clean combinatorial characterization of when contractible $2$-complexes "thicken to collapse." The dunce hat itself became a standard counterexample taught in every course on combinatorial topology and discrete Morse theory. Zeeman's broader legacy — Warwick, PL Poincaré in high dimensions, his early work applying topology to dynamical systems and, controversially, to the social and biological sciences via **catastrophe theory** — places the conjecture as one thread in an unusually wide-ranging career. He died in 2016. The conjecture that bears his name endures as one of the cleanest unsolved statements in geometric topology: a single line about collapsing a product, still resisting proof after sixty years.

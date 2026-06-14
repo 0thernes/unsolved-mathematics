@@ -7,6 +7,17 @@ continuously between structural versions).
 
 ## [Unreleased]
 ### Added
+- **Expanded to 85 problems** (wave 3): added 25 spanning analytic number theory
+  (Grand RH, Elliott–Halberstam, Chowla, Sarnak–Möbius), Diophantine geometry
+  (Vojta, Bombieri–Lang, Hall), complex dynamics (MLC), dynamical systems
+  (Birkhoff billiards), symplectic/contact (Weinstein), 4-manifolds (smooth
+  Poincaré), geometric topology (Borel, Zeeman, Eilenberg–Ganea), knot theory
+  (volume, slice–ribbon), graph theory (Erdős–Hajnal, Seymour 2nd neighborhood,
+  total coloring), order theory (1/3–2/3), algebraic geometry (Zariski
+  cancellation), ring theory (Köthe), model theory (Vaught), modular forms
+  (Lehmer τ), and aliquot sequences (Catalan–Dickson) — each fully authored.
+  RAG corpus now **3,027 chunks (~617k tokens)**; **~2,120 flagged citations**
+  (776 high-confidence, 1,113 needs-verification, 231 ai-suggested, 0 yet human-verified).
 - **Expanded to 60 problems** (wave 2): added 20 spanning set theory (Continuum
   Hypothesis, with a new `independent` status), arithmetic geometry (Tate),
   topology / K-theory (Novikov, Baum–Connes, Whitehead, Hilbert–Smith),

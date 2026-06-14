@@ -2,4 +2,18 @@
 
 _Biography, background, and the ideas that led here._
 
-<!-- DOSSIER:originator -->
+## Oscar Zariski (1899–1986)
+
+Oscar Zariski was born Ascher Zaritsky on 24 April 1899 in Kobrin, then part of the Russian Empire (today Belarus). He studied at the University of Kiev before moving in 1921 to Rome, drawn by the great Italian school of algebraic geometry — Guido Castelnuovo, Federigo Enriques, and Francesco Severi. He took his doctorate in Rome in 1925 and emigrated to the United States in 1927, holding positions at Johns Hopkins, the University of Illinois, and from 1947 at Harvard, where he remained the dominant figure in American algebraic geometry until his retirement.
+
+Zariski's defining intellectual act was the **rigorization of algebraic geometry**. The Italian masters reasoned with extraordinary geometric intuition but often without rigorous foundations; Zariski, after his 1935 monograph *Algebraic Surfaces*, became convinced that the subject needed to be rebuilt on the firm ground of commutative algebra. Through the late 1930s and 1940s he absorbed and extended the ideal-theoretic methods of Emmy Noether, Krull, and van der Waerden, introducing tools — the Zariski topology, normal varieties, the theory of valuations, the connectedness theorem, resolution of singularities for surfaces and threefolds in characteristic zero — that became permanent fixtures of the field. His students included Heisuke Hironaka (resolution of singularities), Michael Artin, David Mumford, and Shreeram Abhyankar, a lineage that shaped the structural, scheme-theoretic geometry of the second half of the twentieth century.
+
+## The idea behind the problem
+
+The cancellation question sits naturally inside Zariski's lifelong concern with **characterizing affine and projective spaces among all varieties**. Affine space $\mathbb{A}^n$ is the most basic object of the theory, yet recognizing it intrinsically — by ring-theoretic or topological invariants rather than by an a priori choice of coordinates — turned out to be remarkably deep. The cylinder construction $X\mapsto X\times\mathbb{A}^1$ is the simplest non-trivial operation that can "thicken" a variety into one dimension higher; asking whether it can be undone probes exactly how rigid affine space is. If cancellation held universally, $\mathbb{A}^n$ would be detectable purely from the abstract isomorphism type of any of its cylinders — a strong rigidity statement. The problem therefore became a touchstone for the broader program of *affine algebraic geometry*: the study of $\mathbb{A}^n$, its automorphism group (the Jacobian conjecture lives in the same neighbourhood), its embeddings, and its characterizations.
+
+Zariski himself did not publish a paper devoted to the cancellation problem; it entered the literature through the seminars and the students and colleagues who took it up, and it acquired his name because it crystallized concerns central to his viewpoint. This is common in his legacy — many "Zariski" objects and questions propagated through oral tradition and his school before being formalized by others.
+
+## Legacy
+
+Zariski received the National Medal of Science (1965), the Wolf Prize in Mathematics (1981), and the AMS Steele Prize, and served as AMS president (1969–70). The cancellation problem is one strand of a vast inheritance. Its eventual partial resolution — positive for surfaces (Fujita–Miyanishi–Sugie, 1976) and dramatically *negative* in positive characteristic (Neena Gupta, 2014) — vindicated his conviction that the right way to attack geometric rigidity is through fine algebraic invariants (locally nilpotent derivations, the Makar-Limanov invariant), precisely the commutative-algebraic machinery he spent his life building. The characteristic-zero case for dimension $\ge 3$ remains open, a direct descendant of a question he posed seventy-five years ago.

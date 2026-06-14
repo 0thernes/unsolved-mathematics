@@ -1,5 +1,19 @@
 # Originator(s) — Köthe's Conjecture
 
-_Biography, background, and the ideas that led here._
+## Gottfried Köthe (1905–1989)
 
-<!-- DOSSIER:originator -->
+Gottfried Maria Hugo Köthe was a German mathematician born on 25 December 1905 in Graz, Austria. He is best remembered today as a founder of the modern theory of topological vector spaces and locally convex spaces — his two-volume *Topologische lineare Räume* (1960, English ed. *Topological Vector Spaces*) became a standard reference, and Köthe sequence spaces and Köthe–Toeplitz duality bear his name. Yet his earliest research, in the late 1920s and early 1930s, was in abstract algebra, and it is from this period that the conjecture in nil-ideal theory comes.
+
+### Background and training
+
+Köthe studied at the University of Graz, initially drawn to chemistry and philosophy before settling on mathematics, completing his doctorate there in 1927 with work touching on set theory and the foundations of geometry. He then moved into the orbit of the great algebra and analysis centers of the German-speaking world. He spent formative time in Göttingen — the world capital of mathematics in that era — where the structural, axiomatic style of Emmy Noether and her school was transforming ring theory. It was Noether's program of studying rings through their ideals and radicals, and the contemporaneous push (by Artin, Wedderburn, Brauer, and others) to extend the Wedderburn structure theory beyond the Artinian case, that set the stage for Köthe's 1930 paper.
+
+### The idea behind the conjecture
+
+Wedderburn–Artin theory describes semisimple Artinian rings perfectly: they are finite products of matrix rings over division rings, and the "obstruction" to semisimplicity is the (nilpotent) Jacobson/Wedderburn radical. The natural next question is how to capture the radical of a *general* (non-Artinian) ring. Nil ideals — those consisting entirely of nilpotent elements — are the obvious generalization of the nilpotent ideals that vanish in the Artinian case. Köthe's 1930 paper, whose title concerns rings whose residue ring modulo the radical is a complete matrix ring, isolated a subtle gap: the property of being nil is defined element-by-element and makes perfect sense for *one-sided* (left or right) ideals, but a clean radical theory wants a *two-sided* ideal. Köthe conjectured that this asymmetry is illusory — that a nonzero nil one-sided ideal always forces a nonzero nil two-sided ideal, so that the "upper nil radical" (the sum of all nil two-sided ideals) already absorbs all one-sided nilness. In its symmetric form: the sum of two nil left ideals is again nil.
+
+This was a remarkably prescient question. It identified precisely the point at which one-sidedness and the element-wise nature of nilpotence might interact pathologically, decades before the tools (matrix and polynomial reformulations) existed to attack it.
+
+### Legacy
+
+Köthe held chairs at Münster, Mainz, Heidelberg, and Frankfurt, served as rector at Mainz, and was a central figure in rebuilding German mathematics after 1945; he died on 30 April 1989 in Frankfurt. His monumental influence on functional analysis somewhat overshadows this algebraic conjecture, but the conjecture has proved astonishingly durable: nearly a century on it remains open, having resisted attacks while spawning an entire industry of equivalent reformulations (Krempa's matrix and polynomial criteria, Amitsur's polynomial-radical results) and partial theorems (the PI-ring case, the uncountable-field case). The construction of simple nil rings by Smoktunowicz (2000), among the most striking developments in noncommutative algebra of the past quarter century, was driven in part by the climate of questions surrounding Köthe's conjecture. That a question posed almost in passing by a young algebrist — who would go on to make his name in an entirely different field — should still define the frontier of radical theory is itself a measure of how deep the problem is.

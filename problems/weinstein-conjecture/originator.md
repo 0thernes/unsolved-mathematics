@@ -1,5 +1,17 @@
 # Originator(s) — The Weinstein Conjecture
 
-_Biography, background, and the ideas that led here._
+## Alan Weinstein (b. 1943)
 
-<!-- DOSSIER:originator -->
+Alan David Weinstein is an American mathematician, one of the architects of modern symplectic and Poisson geometry. Born in New York in 1943, he completed his undergraduate studies at the Massachusetts Institute of Technology and earned his Ph.D. at the University of California, Berkeley in 1967 under **Shiing-Shen Chern**, with a thesis on the geometry of geodesics. He spent essentially his entire career at Berkeley, where he became one of the most influential differential geometers of his generation and the doctoral advisor of a large and prominent school of students.
+
+Weinstein's mathematical signature is the systematic geometrization of mechanics. Building on the symplectic viewpoint of Lagrange, Poincaré, and his own teachers, he helped recast Hamiltonian dynamics as the study of symplectic manifolds, Lagrangian submanifolds, and their deformations. Several cornerstones of the field bear his name: the **Weinstein Lagrangian neighborhood theorem**, the **Marsden–Weinstein symplectic reduction** (with Jerrold Marsden, 1974), the notion of a **symplectic groupoid**, and **Weinstein manifolds** in symplectic topology. His slogan — "everything is a Lagrangian submanifold" (the *symplectic creed*) — captures a unifying philosophy that shaped how a generation thought about canonical transformations and quantization.
+
+### The ideas behind the conjecture
+
+The conjecture grew directly out of the existence theory for periodic orbits of Hamiltonian systems. In the late 1970s two strong but apparently unrelated theorems sat side by side: Rabinowitz had shown that **star-shaped** energy hypersurfaces in $\mathbb{R}^{2n}$ carry periodic orbits, and Weinstein had shown the same for **convex** hypersurfaces. Both classes are special; neither contains the other. Weinstein's insight, articulated in his 1979 paper *On the hypotheses of Rabinowitz's periodic orbit theorems*, was to identify the genuinely operative hypothesis. What both convex and star-shaped hypersurfaces share is that they are of **contact type**: there is a transverse Liouville vector field, equivalently a contact form $\alpha$ on the hypersurface whose Reeb dynamics reproduce the characteristic foliation. He conjectured that this contact-type condition alone forces a closed characteristic — and, abstracted away from $\mathbb{R}^{2n}$, that every closed contact manifold has a closed Reeb orbit.
+
+This was a characteristically Weinsteinian move: replace a list of ad hoc geometric hypotheses with a single intrinsic, coordinate-free condition, and let the resulting conjecture organize an entire research program. The reformulation made contact geometry — until then a somewhat peripheral subject — into the natural home for the periodic-orbit problem and a driver of symplectic topology.
+
+### Legacy
+
+The conjecture became one of the defining problems of symplectic and contact topology. The attempt to prove it spurred the introduction of **pseudoholomorphic curves** by Hofer (following Gromov), the development of **contact homology** and **symplectic field theory**, and ultimately **embedded contact homology** and its identification with Seiberg–Witten Floer theory by Taubes — the route to the three-dimensional proof. Weinstein's broader influence, recognized with the Berkeley Citation and numerous honors, extends across Poisson geometry, geometric quantization, and groupoid theory. The conjecture that bears his name remains, in dimensions five and above, a central open problem and a living monument to the heuristic of finding the *right* hypothesis.
