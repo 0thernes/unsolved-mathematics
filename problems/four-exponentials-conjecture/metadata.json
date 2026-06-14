@@ -1,0 +1,30 @@
+{
+  "slug": "four-exponentials-conjecture",
+  "title": "The Four Exponentials Conjecture",
+  "field": "Transcendental Number Theory",
+  "subfields": [
+    "Linear Forms in Logarithms",
+    "Diophantine Approximation"
+  ],
+  "year_posed": 1944,
+  "originators": [
+    "Theodor Schneider",
+    "Serge Lang",
+    "Kanakanahalli Ramachandra"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Given two Q-linearly independent complex numbers x1,x2 and two more y1,y2, at least one of the four exp(xi*yj) is transcendental. (The six exponentials theorem is proved; four remains open.)\n",
+  "difficulty": 80,
+  "centrality": 45,
+  "tractability": 28,
+  "status": "open",
+  "tags": [
+    "transcendence",
+    "exponentials",
+    "six-exponentials",
+    "logarithms"
+  ],
+  "rank": 40,
+  "css": 58.1,
+  "folder": "four-exponentials-conjecture"
+}

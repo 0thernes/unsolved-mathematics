@@ -1,0 +1,28 @@
+{
+  "slug": "sunflower-conjecture",
+  "title": "The Sunflower Conjecture",
+  "field": "Extremal Combinatorics",
+  "subfields": [
+    "Set Systems",
+    "Probabilistic Method"
+  ],
+  "year_posed": 1960,
+  "originators": [
+    "Paul Erdős",
+    "Richard Rado"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "For each k there is C(k) such that any family of more than C(k)^w sets of size w contains k sets forming a sunflower (pairwise intersections all equal).\n",
+  "difficulty": 80,
+  "centrality": 58,
+  "tractability": 55,
+  "status": "active-progress",
+  "tags": [
+    "sunflowers",
+    "Erdos-Rado",
+    "Alweiss-Lovett-Wu-Zhang"
+  ],
+  "rank": 39,
+  "css": 58.233,
+  "folder": "sunflower-conjecture"
+}

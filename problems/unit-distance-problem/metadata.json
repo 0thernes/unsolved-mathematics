@@ -1,0 +1,28 @@
+{
+  "slug": "unit-distance-problem",
+  "title": "The Erdős Unit Distance Problem",
+  "field": "Combinatorial Geometry",
+  "subfields": [
+    "Incidence Geometry",
+    "Discrete Geometry"
+  ],
+  "year_posed": 1946,
+  "originators": [
+    "Paul Erdős"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "What is the maximum number of unit distances among n points in the plane? Conjectured n^(1+o(1)); the best bounds remain far apart.\n",
+  "difficulty": 84,
+  "centrality": 52,
+  "tractability": 28,
+  "status": "open",
+  "tags": [
+    "incidences",
+    "unit-distances",
+    "Erdos",
+    "Szemeredi-Trotter"
+  ],
+  "rank": 33,
+  "css": 61.667,
+  "folder": "unit-distance-problem"
+}

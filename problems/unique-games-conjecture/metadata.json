@@ -1,0 +1,29 @@
+{
+  "slug": "unique-games-conjecture",
+  "title": "The Unique Games Conjecture",
+  "field": "Computational Complexity Theory",
+  "subfields": [
+    "Hardness of Approximation",
+    "PCP Theory",
+    "Probabilistically Checkable Proofs"
+  ],
+  "year_posed": 2002,
+  "originators": [
+    "Subhash Khot"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "For every ε, distinguishing unique-label-cover instances that are (1−ε)-satisfiable from ε-satisfiable is NP-hard; if true, it pins down the exact approximability threshold of many optimization problems.\n",
+  "difficulty": 86,
+  "centrality": 72,
+  "tractability": 35,
+  "status": "active-progress",
+  "tags": [
+    "approximation",
+    "PCP",
+    "2-to-2",
+    "hardness"
+  ],
+  "rank": 30,
+  "css": 64.033,
+  "folder": "unique-games-conjecture"
+}

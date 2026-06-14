@@ -1,0 +1,29 @@
+{
+  "slug": "hilbert-smith-conjecture",
+  "title": "The Hilbert–Smith Conjecture",
+  "field": "Geometric Topology",
+  "subfields": [
+    "Transformation Groups",
+    "Topological Manifolds"
+  ],
+  "year_posed": 1933,
+  "originators": [
+    "David Hilbert (5th problem lineage)",
+    "Paul A. Smith"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "A locally compact group acting faithfully and effectively on a connected topological manifold must be a Lie group; equivalently, no p-adic integer group acts effectively on a manifold.\n",
+  "difficulty": 83,
+  "centrality": 48,
+  "tractability": 30,
+  "status": "active-progress",
+  "tags": [
+    "transformation-groups",
+    "p-adic",
+    "Lie-groups",
+    "manifolds"
+  ],
+  "rank": 36,
+  "css": 60.733,
+  "folder": "hilbert-smith-conjecture"
+}

@@ -1,0 +1,28 @@
+{
+  "slug": "whitehead-asphericity-conjecture",
+  "title": "The Whitehead Asphericity Conjecture",
+  "field": "Algebraic Topology",
+  "subfields": [
+    "Low-Dimensional Topology",
+    "Combinatorial Group Theory"
+  ],
+  "year_posed": 1941,
+  "originators": [
+    "J. H. C. Whitehead"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Every subcomplex of an aspherical 2-dimensional CW complex is itself aspherical.\n",
+  "difficulty": 84,
+  "centrality": 50,
+  "tractability": 28,
+  "status": "open",
+  "tags": [
+    "asphericity",
+    "2-complexes",
+    "CW",
+    "group-theory"
+  ],
+  "rank": 34,
+  "css": 61.4,
+  "folder": "whitehead-asphericity-conjecture"
+}

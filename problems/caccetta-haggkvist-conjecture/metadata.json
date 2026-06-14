@@ -1,0 +1,29 @@
+{
+  "slug": "caccetta-haggkvist-conjecture",
+  "title": "The Caccetta–Häggkvist Conjecture",
+  "field": "Graph Theory",
+  "subfields": [
+    "Directed Graphs",
+    "Extremal Combinatorics"
+  ],
+  "year_posed": 1978,
+  "originators": [
+    "Louis Caccetta",
+    "Roland Häggkvist"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Every digraph on n vertices with minimum out-degree at least n/k contains a directed cycle of length at most k.\n",
+  "difficulty": 82,
+  "centrality": 46,
+  "tractability": 30,
+  "status": "open",
+  "tags": [
+    "digraphs",
+    "girth",
+    "out-degree",
+    "Seymour"
+  ],
+  "rank": 45,
+  "css": 56.733,
+  "folder": "caccetta-haggkvist-conjecture"
+}

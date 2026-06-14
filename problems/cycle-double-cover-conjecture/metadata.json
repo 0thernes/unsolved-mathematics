@@ -1,0 +1,29 @@
+{
+  "slug": "cycle-double-cover-conjecture",
+  "title": "The Cycle Double Cover Conjecture",
+  "field": "Graph Theory",
+  "subfields": [
+    "Topological Graph Theory",
+    "Combinatorics"
+  ],
+  "year_posed": 1973,
+  "originators": [
+    "George Szekeres",
+    "Paul Seymour"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Every bridgeless graph has a collection of cycles covering every edge exactly twice.\n",
+  "difficulty": 80,
+  "centrality": 50,
+  "tractability": 35,
+  "status": "open",
+  "tags": [
+    "cycles",
+    "snarks",
+    "double-cover",
+    "embeddings"
+  ],
+  "rank": 43,
+  "css": 56.967,
+  "folder": "cycle-double-cover-conjecture"
+}

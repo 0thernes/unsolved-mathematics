@@ -229,6 +229,35 @@
       "css": 76.6
     },
     {
+      "slug": "continuum-hypothesis",
+      "title": "The Continuum Hypothesis",
+      "field": "Set Theory & Mathematical Logic",
+      "subfields": [
+        "Forcing",
+        "Large Cardinals",
+        "Descriptive Set Theory"
+      ],
+      "year_posed": 1878,
+      "originators": [
+        "Georg Cantor"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "There is no set whose cardinality is strictly between that of the integers and that of the real numbers. Proven independent of ZFC (Gödel 1940, Cohen 1963); the live question is whether new axioms should decide it.\n",
+      "difficulty": 90,
+      "centrality": 78,
+      "tractability": 30,
+      "status": "independent",
+      "tags": [
+        "cardinality",
+        "forcing",
+        "ZFC",
+        "Woodin",
+        "large-cardinals"
+      ],
+      "rank": 9,
+      "css": 76.2
+    },
+    {
       "slug": "hilbert-sixteenth-problem",
       "title": "Hilbert's Sixteenth Problem (Second Part)",
       "field": "Dynamical Systems",
@@ -252,7 +281,7 @@
         "Hilbert",
         "dynamics"
       ],
-      "rank": 9,
+      "rank": 10,
       "css": 76.033
     },
     {
@@ -283,7 +312,7 @@
         "mass-gap",
         "physics"
       ],
-      "rank": 10,
+      "rank": 11,
       "css": 75.267
     },
     {
@@ -313,7 +342,7 @@
         "regularity",
         "turbulence"
       ],
-      "rank": 11,
+      "rank": 12,
       "css": 74.667
     },
     {
@@ -341,8 +370,36 @@
         "Mochizuki",
         "IUT"
       ],
-      "rank": 12,
+      "rank": 13,
       "css": 73.767
+    },
+    {
+      "slug": "tate-conjecture",
+      "title": "The Tate Conjecture",
+      "field": "Arithmetic Geometry",
+      "subfields": [
+        "Étale Cohomology",
+        "Algebraic Cycles",
+        "Galois Representations"
+      ],
+      "year_posed": 1963,
+      "originators": [
+        "John Tate"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "On a smooth projective variety over a finitely generated field, the cycle-class map surjects onto the Galois-invariant étale cohomology classes; an arithmetic analogue of the Hodge conjecture.\n",
+      "difficulty": 92,
+      "centrality": 78,
+      "tractability": 18,
+      "status": "open",
+      "tags": [
+        "algebraic-cycles",
+        "etale-cohomology",
+        "Galois",
+        "motives"
+      ],
+      "rank": 14,
+      "css": 72.533
     },
     {
       "slug": "legendre-conjecture",
@@ -366,7 +423,7 @@
         "gaps",
         "Legendre"
       ],
-      "rank": 13,
+      "rank": 15,
       "css": 71.267
     },
     {
@@ -391,8 +448,36 @@
         "gaps",
         "bounded-gaps"
       ],
-      "rank": 14,
+      "rank": 16,
       "css": 70.233
+    },
+    {
+      "slug": "inverse-galois-problem",
+      "title": "The Inverse Galois Problem",
+      "field": "Algebra",
+      "subfields": [
+        "Galois Theory",
+        "Arithmetic Geometry",
+        "Group Theory"
+      ],
+      "year_posed": 1892,
+      "originators": [
+        "David Hilbert",
+        "Emmy Noether (rationality approach)"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Is every finite group the Galois group of some Galois extension of the rational numbers?\n",
+      "difficulty": 88,
+      "centrality": 60,
+      "tractability": 22,
+      "status": "active-progress",
+      "tags": [
+        "Galois-groups",
+        "rigidity",
+        "Hilbert-irreducibility"
+      ],
+      "rank": 17,
+      "css": 69.867
     },
     {
       "slug": "hardy-littlewood-k-tuple",
@@ -419,7 +504,7 @@
         "admissible",
         "density"
       ],
-      "rank": 15,
+      "rank": 18,
       "css": 69.5
     },
     {
@@ -445,7 +530,7 @@
         "3n+1",
         "dynamics"
       ],
-      "rank": 16,
+      "rank": 19,
       "css": 69.267
     },
     {
@@ -474,7 +559,7 @@
         "restriction",
         "Wang-Zahl"
       ],
-      "rank": 17,
+      "rank": 20,
       "css": 69.1
     },
     {
@@ -500,8 +585,36 @@
         "automorphisms",
         "Keller"
       ],
-      "rank": 18,
+      "rank": 21,
       "css": 68.333
+    },
+    {
+      "slug": "novikov-conjecture",
+      "title": "The Novikov Conjecture",
+      "field": "Geometric Topology",
+      "subfields": [
+        "K-theory",
+        "Surgery Theory",
+        "Coarse Geometry"
+      ],
+      "year_posed": 1965,
+      "originators": [
+        "Sergei Novikov"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "The higher signatures of a closed oriented manifold are homotopy invariants, for every discrete group appearing as its fundamental group.\n",
+      "difficulty": 89,
+      "centrality": 68,
+      "tractability": 25,
+      "status": "active-progress",
+      "tags": [
+        "higher-signatures",
+        "K-theory",
+        "assembly-map",
+        "groups"
+      ],
+      "rank": 22,
+      "css": 67.5
     },
     {
       "slug": "bunyakovsky-conjecture",
@@ -525,7 +638,7 @@
         "polynomials",
         "Hardy-Littlewood"
       ],
-      "rank": 19,
+      "rank": 23,
       "css": 67.3
     },
     {
@@ -551,7 +664,7 @@
         "minors",
         "four-color"
       ],
-      "rank": 20,
+      "rank": 24,
       "css": 67.067
     },
     {
@@ -578,8 +691,36 @@
         "EKL",
         "dynamics"
       ],
-      "rank": 21,
+      "rank": 25,
       "css": 66.933
+    },
+    {
+      "slug": "schinzel-hypothesis-h",
+      "title": "Schinzel's Hypothesis H",
+      "field": "Number Theory",
+      "subfields": [
+        "Prime-Producing Polynomials",
+        "Sieve Theory"
+      ],
+      "year_posed": 1958,
+      "originators": [
+        "Andrzej Schinzel",
+        "Wacław Sierpiński"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "A finite set of irreducible integer polynomials with no fixed prime divisor takes simultaneous prime values infinitely often; a broad generalization of the twin-prime and Bunyakovsky conjectures.\n",
+      "difficulty": 88,
+      "centrality": 62,
+      "tractability": 16,
+      "status": "open",
+      "tags": [
+        "primes",
+        "polynomials",
+        "Dickson",
+        "Bateman-Horn"
+      ],
+      "rank": 26,
+      "css": 66.667
     },
     {
       "slug": "invariant-subspace-problem",
@@ -603,7 +744,7 @@
         "Hilbert-space",
         "invariant-subspaces"
       ],
-      "rank": 22,
+      "rank": 27,
       "css": 66.5
     },
     {
@@ -629,8 +770,65 @@
         "exponential",
         "model-theory"
       ],
-      "rank": 23,
+      "rank": 28,
       "css": 65.833
+    },
+    {
+      "slug": "baum-connes-conjecture",
+      "title": "The Baum–Connes Conjecture",
+      "field": "Operator Algebras",
+      "subfields": [
+        "Noncommutative Geometry",
+        "K-theory",
+        "Index Theory"
+      ],
+      "year_posed": 1982,
+      "originators": [
+        "Paul Baum",
+        "Alain Connes"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "For a locally compact group, the assembly map from the equivariant K-homology of the classifying space to the K-theory of the reduced group C*-algebra is an isomorphism.\n",
+      "difficulty": 88,
+      "centrality": 64,
+      "tractability": 26,
+      "status": "active-progress",
+      "tags": [
+        "assembly-map",
+        "K-theory",
+        "C-star-algebras",
+        "Gromov"
+      ],
+      "rank": 29,
+      "css": 64.667
+    },
+    {
+      "slug": "unique-games-conjecture",
+      "title": "The Unique Games Conjecture",
+      "field": "Computational Complexity Theory",
+      "subfields": [
+        "Hardness of Approximation",
+        "PCP Theory",
+        "Probabilistically Checkable Proofs"
+      ],
+      "year_posed": 2002,
+      "originators": [
+        "Subhash Khot"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "For every ε, distinguishing unique-label-cover instances that are (1−ε)-satisfiable from ε-satisfiable is NP-hard; if true, it pins down the exact approximability threshold of many optimization problems.\n",
+      "difficulty": 86,
+      "centrality": 72,
+      "tractability": 35,
+      "status": "active-progress",
+      "tags": [
+        "approximation",
+        "PCP",
+        "2-to-2",
+        "hardness"
+      ],
+      "rank": 30,
+      "css": 64.033
     },
     {
       "slug": "montgomery-pair-correlation",
@@ -657,8 +855,145 @@
         "GUE",
         "RH"
       ],
-      "rank": 24,
+      "rank": 31,
       "css": 61.967
+    },
+    {
+      "slug": "artin-primitive-root-conjecture",
+      "title": "Artin's Primitive Root Conjecture",
+      "field": "Number Theory",
+      "subfields": [
+        "Analytic Number Theory",
+        "Algebraic Number Theory"
+      ],
+      "year_posed": 1927,
+      "originators": [
+        "Emil Artin"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Every integer a that is not −1 or a perfect square is a primitive root modulo infinitely many primes, with a specific positive density.\n",
+      "difficulty": 82,
+      "centrality": 50,
+      "tractability": 25,
+      "status": "active-progress",
+      "tags": [
+        "primitive-roots",
+        "density",
+        "Hooley",
+        "GRH"
+      ],
+      "rank": 32,
+      "css": 61.833
+    },
+    {
+      "slug": "unit-distance-problem",
+      "title": "The Erdős Unit Distance Problem",
+      "field": "Combinatorial Geometry",
+      "subfields": [
+        "Incidence Geometry",
+        "Discrete Geometry"
+      ],
+      "year_posed": 1946,
+      "originators": [
+        "Paul Erdős"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "What is the maximum number of unit distances among n points in the plane? Conjectured n^(1+o(1)); the best bounds remain far apart.\n",
+      "difficulty": 84,
+      "centrality": 52,
+      "tractability": 28,
+      "status": "open",
+      "tags": [
+        "incidences",
+        "unit-distances",
+        "Erdos",
+        "Szemeredi-Trotter"
+      ],
+      "rank": 33,
+      "css": 61.667
+    },
+    {
+      "slug": "whitehead-asphericity-conjecture",
+      "title": "The Whitehead Asphericity Conjecture",
+      "field": "Algebraic Topology",
+      "subfields": [
+        "Low-Dimensional Topology",
+        "Combinatorial Group Theory"
+      ],
+      "year_posed": 1941,
+      "originators": [
+        "J. H. C. Whitehead"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Every subcomplex of an aspherical 2-dimensional CW complex is itself aspherical.\n",
+      "difficulty": 84,
+      "centrality": 50,
+      "tractability": 28,
+      "status": "open",
+      "tags": [
+        "asphericity",
+        "2-complexes",
+        "CW",
+        "group-theory"
+      ],
+      "rank": 34,
+      "css": 61.4
+    },
+    {
+      "slug": "lehmer-mahler-measure-conjecture",
+      "title": "Lehmer's Mahler Measure Conjecture",
+      "field": "Number Theory",
+      "subfields": [
+        "Heights",
+        "Algebraic Numbers",
+        "Dynamics"
+      ],
+      "year_posed": 1933,
+      "originators": [
+        "Derrick Henry Lehmer"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "There is an absolute constant gap above 1 in the Mahler measures of integer polynomials: no Mahler measure lies strictly between 1 and some fixed bound (conjecturally Lehmer's number, ~1.17628).\n",
+      "difficulty": 83,
+      "centrality": 48,
+      "tractability": 24,
+      "status": "open",
+      "tags": [
+        "Mahler-measure",
+        "heights",
+        "Lehmer-number",
+        "Salem"
+      ],
+      "rank": 35,
+      "css": 61.333
+    },
+    {
+      "slug": "hilbert-smith-conjecture",
+      "title": "The Hilbert–Smith Conjecture",
+      "field": "Geometric Topology",
+      "subfields": [
+        "Transformation Groups",
+        "Topological Manifolds"
+      ],
+      "year_posed": 1933,
+      "originators": [
+        "David Hilbert (5th problem lineage)",
+        "Paul A. Smith"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "A locally compact group acting faithfully and effectively on a connected topological manifold must be a Lie group; equivalently, no p-adic integer group acts effectively on a manifold.\n",
+      "difficulty": 83,
+      "centrality": 48,
+      "tractability": 30,
+      "status": "active-progress",
+      "tags": [
+        "transformation-groups",
+        "p-adic",
+        "Lie-groups",
+        "manifolds"
+      ],
+      "rank": 36,
+      "css": 60.733
     },
     {
       "slug": "inscribed-square-problem",
@@ -683,8 +1018,91 @@
         "square-peg",
         "topology"
       ],
-      "rank": 25,
+      "rank": 37,
       "css": 60.2
+    },
+    {
+      "slug": "falconer-distance-conjecture",
+      "title": "The Falconer Distance Conjecture",
+      "field": "Geometric Measure Theory",
+      "subfields": [
+        "Harmonic Analysis",
+        "Fractal Geometry"
+      ],
+      "year_posed": 1985,
+      "originators": [
+        "Kenneth Falconer"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "A compact set in R^d with Hausdorff dimension greater than d/2 has a distance set of positive Lebesgue measure.\n",
+      "difficulty": 85,
+      "centrality": 55,
+      "tractability": 32,
+      "status": "active-progress",
+      "tags": [
+        "distance-sets",
+        "dimension",
+        "Kakeya",
+        "Guth-Iosevich-Ou-Wang"
+      ],
+      "rank": 38,
+      "css": 59.967
+    },
+    {
+      "slug": "sunflower-conjecture",
+      "title": "The Sunflower Conjecture",
+      "field": "Extremal Combinatorics",
+      "subfields": [
+        "Set Systems",
+        "Probabilistic Method"
+      ],
+      "year_posed": 1960,
+      "originators": [
+        "Paul Erdős",
+        "Richard Rado"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "For each k there is C(k) such that any family of more than C(k)^w sets of size w contains k sets forming a sunflower (pairwise intersections all equal).\n",
+      "difficulty": 80,
+      "centrality": 58,
+      "tractability": 55,
+      "status": "active-progress",
+      "tags": [
+        "sunflowers",
+        "Erdos-Rado",
+        "Alweiss-Lovett-Wu-Zhang"
+      ],
+      "rank": 39,
+      "css": 58.233
+    },
+    {
+      "slug": "four-exponentials-conjecture",
+      "title": "The Four Exponentials Conjecture",
+      "field": "Transcendental Number Theory",
+      "subfields": [
+        "Linear Forms in Logarithms",
+        "Diophantine Approximation"
+      ],
+      "year_posed": 1944,
+      "originators": [
+        "Theodor Schneider",
+        "Serge Lang",
+        "Kanakanahalli Ramachandra"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Given two Q-linearly independent complex numbers x1,x2 and two more y1,y2, at least one of the four exp(xi*yj) is transcendental. (The six exponentials theorem is proved; four remains open.)\n",
+      "difficulty": 80,
+      "centrality": 45,
+      "tractability": 28,
+      "status": "open",
+      "tags": [
+        "transcendence",
+        "exponentials",
+        "six-exponentials",
+        "logarithms"
+      ],
+      "rank": 40,
+      "css": 58.1
     },
     {
       "slug": "hadwiger-nelson-problem",
@@ -711,7 +1129,7 @@
         "de-Grey",
         "unit-distance"
       ],
-      "rank": 26,
+      "rank": 41,
       "css": 57.3
     },
     {
@@ -738,8 +1156,36 @@
         "designs",
         "orthogonal"
       ],
-      "rank": 27,
+      "rank": 42,
       "css": 57.1
+    },
+    {
+      "slug": "cycle-double-cover-conjecture",
+      "title": "The Cycle Double Cover Conjecture",
+      "field": "Graph Theory",
+      "subfields": [
+        "Topological Graph Theory",
+        "Combinatorics"
+      ],
+      "year_posed": 1973,
+      "originators": [
+        "George Szekeres",
+        "Paul Seymour"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Every bridgeless graph has a collection of cycles covering every edge exactly twice.\n",
+      "difficulty": 80,
+      "centrality": 50,
+      "tractability": 35,
+      "status": "open",
+      "tags": [
+        "cycles",
+        "snarks",
+        "double-cover",
+        "embeddings"
+      ],
+      "rank": 43,
+      "css": 56.967
     },
     {
       "slug": "brocard-problem",
@@ -764,8 +1210,63 @@
         "squares",
         "Brown-numbers"
       ],
-      "rank": 28,
+      "rank": 44,
       "css": 56.733
+    },
+    {
+      "slug": "caccetta-haggkvist-conjecture",
+      "title": "The Caccetta–Häggkvist Conjecture",
+      "field": "Graph Theory",
+      "subfields": [
+        "Directed Graphs",
+        "Extremal Combinatorics"
+      ],
+      "year_posed": 1978,
+      "originators": [
+        "Louis Caccetta",
+        "Roland Häggkvist"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Every digraph on n vertices with minimum out-degree at least n/k contains a directed cycle of length at most k.\n",
+      "difficulty": 82,
+      "centrality": 46,
+      "tractability": 30,
+      "status": "open",
+      "tags": [
+        "digraphs",
+        "girth",
+        "out-degree",
+        "Seymour"
+      ],
+      "rank": 45,
+      "css": 56.733
+    },
+    {
+      "slug": "reconstruction-conjecture",
+      "title": "The Reconstruction Conjecture (Ulam)",
+      "field": "Graph Theory",
+      "subfields": [
+        "Combinatorics"
+      ],
+      "year_posed": 1941,
+      "originators": [
+        "Stanisław Ulam",
+        "Paul Kelly"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Every finite simple graph on at least three vertices is determined up to isomorphism by its multiset of vertex-deleted subgraphs.\n",
+      "difficulty": 78,
+      "centrality": 45,
+      "tractability": 38,
+      "status": "open",
+      "tags": [
+        "reconstruction",
+        "deck",
+        "Ulam",
+        "isomorphism"
+      ],
+      "rank": 46,
+      "css": 56.5
     },
     {
       "slug": "andrews-curtis-conjecture",
@@ -791,7 +1292,7 @@
         "AC-moves",
         "topology"
       ],
-      "rank": 29,
+      "rank": 47,
       "css": 55.6
     },
     {
@@ -818,7 +1319,7 @@
         "quantum",
         "Tsirelson"
       ],
-      "rank": 30,
+      "rank": 48,
       "css": 55.367
     },
     {
@@ -845,7 +1346,7 @@
         "view-obstruction",
         "covering"
       ],
-      "rank": 31,
+      "rank": 49,
       "css": 55.267
     },
     {
@@ -870,7 +1371,7 @@
         "Fermat",
         "prize-problem"
       ],
-      "rank": 32,
+      "rank": 50,
       "css": 54.933
     },
     {
@@ -895,7 +1396,7 @@
         "Carmichael",
         "Lehmer"
       ],
-      "rank": 33,
+      "rank": 51,
       "css": 54.3
     },
     {
@@ -922,7 +1423,7 @@
         "Gilmer",
         "entropy"
       ],
-      "rank": 34,
+      "rank": 52,
       "css": 52.967
     },
     {
@@ -949,8 +1450,37 @@
         "Erdos",
         "unit-fractions"
       ],
-      "rank": 35,
+      "rank": 53,
       "css": 52.933
+    },
+    {
+      "slug": "graceful-tree-conjecture",
+      "title": "The Graceful Tree Conjecture (Ringel–Kotzig)",
+      "field": "Combinatorics",
+      "subfields": [
+        "Graph Labeling",
+        "Design Theory"
+      ],
+      "year_posed": 1964,
+      "originators": [
+        "Gerhard Ringel",
+        "Anton Kotzig",
+        "Alexander Rosa"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Every tree admits a graceful labeling: vertices labeled with distinct integers in [0,n] so edge labels (absolute differences) are all distinct.\n",
+      "difficulty": 76,
+      "centrality": 40,
+      "tractability": 42,
+      "status": "active-progress",
+      "tags": [
+        "graceful-labeling",
+        "trees",
+        "Ringel",
+        "decompositions"
+      ],
+      "rank": 54,
+      "css": 52.267
     },
     {
       "slug": "grimm-conjecture",
@@ -974,7 +1504,7 @@
         "consecutive",
         "factorization"
       ],
-      "rank": 36,
+      "rank": 55,
       "css": 51.233
     },
     {
@@ -1000,7 +1530,7 @@
         "binomial",
         "multiplicity"
       ],
-      "rank": 37,
+      "rank": 56,
       "css": 48.0
     },
     {
@@ -1027,7 +1557,7 @@
         "difference-table",
         "Gilbreath"
       ],
-      "rank": 38,
+      "rank": 57,
       "css": 47.867
     },
     {
@@ -1052,8 +1582,35 @@
         "critical-points",
         "Tao"
       ],
-      "rank": 39,
+      "rank": 58,
       "css": 46.9
+    },
+    {
+      "slug": "moving-sofa-problem",
+      "title": "The Moving Sofa Problem",
+      "field": "Geometry",
+      "subfields": [
+        "Optimization",
+        "Plane Geometry"
+      ],
+      "year_posed": 1966,
+      "originators": [
+        "Leo Moser"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "What is the largest area of a rigid shape that can be maneuvered around a right-angled corner in a unit-width corridor? The sofa constant is unknown.\n",
+      "difficulty": 70,
+      "centrality": 32,
+      "tractability": 50,
+      "status": "active-progress",
+      "tags": [
+        "sofa-constant",
+        "Gerver",
+        "Baek",
+        "corridor"
+      ],
+      "rank": 59,
+      "css": 46.533
     },
     {
       "slug": "crouzeix-conjecture",
@@ -1078,7 +1635,7 @@
         "matrices",
         "spectral"
       ],
-      "rank": 40,
+      "rank": 60,
       "css": 43.9
     }
   ]

@@ -55,7 +55,8 @@
         "active-progress",
         "disputed-claim",
         "recently-resolved",
-        "conditionally-resolved"
+        "conditionally-resolved",
+        "independent"
       ]
     },
     "tags": {

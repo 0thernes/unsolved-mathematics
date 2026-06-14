@@ -1,0 +1,28 @@
+{
+  "slug": "falconer-distance-conjecture",
+  "title": "The Falconer Distance Conjecture",
+  "field": "Geometric Measure Theory",
+  "subfields": [
+    "Harmonic Analysis",
+    "Fractal Geometry"
+  ],
+  "year_posed": 1985,
+  "originators": [
+    "Kenneth Falconer"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "A compact set in R^d with Hausdorff dimension greater than d/2 has a distance set of positive Lebesgue measure.\n",
+  "difficulty": 85,
+  "centrality": 55,
+  "tractability": 32,
+  "status": "active-progress",
+  "tags": [
+    "distance-sets",
+    "dimension",
+    "Kakeya",
+    "Guth-Iosevich-Ou-Wang"
+  ],
+  "rank": 38,
+  "css": 59.967,
+  "folder": "falconer-distance-conjecture"
+}

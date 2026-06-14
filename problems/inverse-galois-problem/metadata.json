@@ -1,0 +1,29 @@
+{
+  "slug": "inverse-galois-problem",
+  "title": "The Inverse Galois Problem",
+  "field": "Algebra",
+  "subfields": [
+    "Galois Theory",
+    "Arithmetic Geometry",
+    "Group Theory"
+  ],
+  "year_posed": 1892,
+  "originators": [
+    "David Hilbert",
+    "Emmy Noether (rationality approach)"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Is every finite group the Galois group of some Galois extension of the rational numbers?\n",
+  "difficulty": 88,
+  "centrality": 60,
+  "tractability": 22,
+  "status": "active-progress",
+  "tags": [
+    "Galois-groups",
+    "rigidity",
+    "Hilbert-irreducibility"
+  ],
+  "rank": 17,
+  "css": 69.867,
+  "folder": "inverse-galois-problem"
+}

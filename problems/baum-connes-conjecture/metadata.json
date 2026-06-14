@@ -1,0 +1,30 @@
+{
+  "slug": "baum-connes-conjecture",
+  "title": "The Baum–Connes Conjecture",
+  "field": "Operator Algebras",
+  "subfields": [
+    "Noncommutative Geometry",
+    "K-theory",
+    "Index Theory"
+  ],
+  "year_posed": 1982,
+  "originators": [
+    "Paul Baum",
+    "Alain Connes"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "For a locally compact group, the assembly map from the equivariant K-homology of the classifying space to the K-theory of the reduced group C*-algebra is an isomorphism.\n",
+  "difficulty": 88,
+  "centrality": 64,
+  "tractability": 26,
+  "status": "active-progress",
+  "tags": [
+    "assembly-map",
+    "K-theory",
+    "C-star-algebras",
+    "Gromov"
+  ],
+  "rank": 29,
+  "css": 64.667,
+  "folder": "baum-connes-conjecture"
+}

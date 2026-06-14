@@ -1,0 +1,30 @@
+{
+  "slug": "continuum-hypothesis",
+  "title": "The Continuum Hypothesis",
+  "field": "Set Theory & Mathematical Logic",
+  "subfields": [
+    "Forcing",
+    "Large Cardinals",
+    "Descriptive Set Theory"
+  ],
+  "year_posed": 1878,
+  "originators": [
+    "Georg Cantor"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "There is no set whose cardinality is strictly between that of the integers and that of the real numbers. Proven independent of ZFC (Gödel 1940, Cohen 1963); the live question is whether new axioms should decide it.\n",
+  "difficulty": 90,
+  "centrality": 78,
+  "tractability": 30,
+  "status": "independent",
+  "tags": [
+    "cardinality",
+    "forcing",
+    "ZFC",
+    "Woodin",
+    "large-cardinals"
+  ],
+  "rank": 9,
+  "css": 76.2,
+  "folder": "continuum-hypothesis"
+}

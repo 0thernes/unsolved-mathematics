@@ -1,0 +1,29 @@
+{
+  "slug": "novikov-conjecture",
+  "title": "The Novikov Conjecture",
+  "field": "Geometric Topology",
+  "subfields": [
+    "K-theory",
+    "Surgery Theory",
+    "Coarse Geometry"
+  ],
+  "year_posed": 1965,
+  "originators": [
+    "Sergei Novikov"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "The higher signatures of a closed oriented manifold are homotopy invariants, for every discrete group appearing as its fundamental group.\n",
+  "difficulty": 89,
+  "centrality": 68,
+  "tractability": 25,
+  "status": "active-progress",
+  "tags": [
+    "higher-signatures",
+    "K-theory",
+    "assembly-map",
+    "groups"
+  ],
+  "rank": 22,
+  "css": 67.5,
+  "folder": "novikov-conjecture"
+}

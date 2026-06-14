@@ -1,0 +1,29 @@
+{
+  "slug": "tate-conjecture",
+  "title": "The Tate Conjecture",
+  "field": "Arithmetic Geometry",
+  "subfields": [
+    "Étale Cohomology",
+    "Algebraic Cycles",
+    "Galois Representations"
+  ],
+  "year_posed": 1963,
+  "originators": [
+    "John Tate"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "On a smooth projective variety over a finitely generated field, the cycle-class map surjects onto the Galois-invariant étale cohomology classes; an arithmetic analogue of the Hodge conjecture.\n",
+  "difficulty": 92,
+  "centrality": 78,
+  "tractability": 18,
+  "status": "open",
+  "tags": [
+    "algebraic-cycles",
+    "etale-cohomology",
+    "Galois",
+    "motives"
+  ],
+  "rank": 14,
+  "css": 72.533,
+  "folder": "tate-conjecture"
+}

@@ -73,6 +73,7 @@ Independent of CSS, each problem carries a `status`:
 | `disputed-claim` | A claimed proof exists but is not accepted by consensus |
 | `conditionally-resolved` | Settled *assuming* another open conjecture |
 | `recently-resolved` | Settled recently; included for its frontier and successor questions |
+| `independent` | Proven independent of the standard axioms (e.g. CH of ZFC); the live work is deciding it on new principles |
 
 ## Worked example
 

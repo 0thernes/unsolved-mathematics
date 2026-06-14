@@ -1,0 +1,28 @@
+{
+  "slug": "moving-sofa-problem",
+  "title": "The Moving Sofa Problem",
+  "field": "Geometry",
+  "subfields": [
+    "Optimization",
+    "Plane Geometry"
+  ],
+  "year_posed": 1966,
+  "originators": [
+    "Leo Moser"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "What is the largest area of a rigid shape that can be maneuvered around a right-angled corner in a unit-width corridor? The sofa constant is unknown.\n",
+  "difficulty": 70,
+  "centrality": 32,
+  "tractability": 50,
+  "status": "active-progress",
+  "tags": [
+    "sofa-constant",
+    "Gerver",
+    "Baek",
+    "corridor"
+  ],
+  "rank": 59,
+  "css": 46.533,
+  "folder": "moving-sofa-problem"
+}

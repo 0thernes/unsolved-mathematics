@@ -665,3 +665,336 @@ problems:
     tractability: 20
     status: "active-progress"
     tags: ["diophantine", "simultaneous-approximation", "EKL", "dynamics"]
+
+  # ---------------------------------------------------------------------------
+  #  Expansion wave 2 — broaden area coverage (set theory, topology, K-theory,
+  #  graph theory, geometric measure theory, arithmetic geometry, transcendence)
+  # ---------------------------------------------------------------------------
+
+  - slug: continuum-hypothesis
+    title: "The Continuum Hypothesis"
+    field: "Set Theory & Mathematical Logic"
+    subfields: ["Forcing", "Large Cardinals", "Descriptive Set Theory"]
+    year_posed: 1878
+    originators: ["Georg Cantor"]
+    millennium_prize: false
+    statement_plain: >
+      There is no set whose cardinality is strictly between that of the integers
+      and that of the real numbers. Proven independent of ZFC (Gödel 1940, Cohen
+      1963); the live question is whether new axioms should decide it.
+    difficulty: 90
+    centrality: 78
+    tractability: 30
+    status: "independent"
+    tags: ["cardinality", "forcing", "ZFC", "Woodin", "large-cardinals"]
+
+  - slug: tate-conjecture
+    title: "The Tate Conjecture"
+    field: "Arithmetic Geometry"
+    subfields: ["Étale Cohomology", "Algebraic Cycles", "Galois Representations"]
+    year_posed: 1963
+    originators: ["John Tate"]
+    millennium_prize: false
+    statement_plain: >
+      On a smooth projective variety over a finitely generated field, the
+      cycle-class map surjects onto the Galois-invariant étale cohomology classes;
+      an arithmetic analogue of the Hodge conjecture.
+    difficulty: 92
+    centrality: 78
+    tractability: 18
+    status: "open"
+    tags: ["algebraic-cycles", "etale-cohomology", "Galois", "motives"]
+
+  - slug: schinzel-hypothesis-h
+    title: "Schinzel's Hypothesis H"
+    field: "Number Theory"
+    subfields: ["Prime-Producing Polynomials", "Sieve Theory"]
+    year_posed: 1958
+    originators: ["Andrzej Schinzel", "Wacław Sierpiński"]
+    millennium_prize: false
+    statement_plain: >
+      A finite set of irreducible integer polynomials with no fixed prime divisor
+      takes simultaneous prime values infinitely often; a broad generalization of
+      the twin-prime and Bunyakovsky conjectures.
+    difficulty: 88
+    centrality: 62
+    tractability: 16
+    status: "open"
+    tags: ["primes", "polynomials", "Dickson", "Bateman-Horn"]
+
+  - slug: inverse-galois-problem
+    title: "The Inverse Galois Problem"
+    field: "Algebra"
+    subfields: ["Galois Theory", "Arithmetic Geometry", "Group Theory"]
+    year_posed: 1892
+    originators: ["David Hilbert", "Emmy Noether (rationality approach)"]
+    millennium_prize: false
+    statement_plain: >
+      Is every finite group the Galois group of some Galois extension of the
+      rational numbers?
+    difficulty: 88
+    centrality: 60
+    tractability: 22
+    status: "active-progress"
+    tags: ["Galois-groups", "rigidity", "Hilbert-irreducibility"]
+
+  - slug: novikov-conjecture
+    title: "The Novikov Conjecture"
+    field: "Geometric Topology"
+    subfields: ["K-theory", "Surgery Theory", "Coarse Geometry"]
+    year_posed: 1965
+    originators: ["Sergei Novikov"]
+    millennium_prize: false
+    statement_plain: >
+      The higher signatures of a closed oriented manifold are homotopy invariants,
+      for every discrete group appearing as its fundamental group.
+    difficulty: 89
+    centrality: 68
+    tractability: 25
+    status: "active-progress"
+    tags: ["higher-signatures", "K-theory", "assembly-map", "groups"]
+
+  - slug: baum-connes-conjecture
+    title: "The Baum–Connes Conjecture"
+    field: "Operator Algebras"
+    subfields: ["Noncommutative Geometry", "K-theory", "Index Theory"]
+    year_posed: 1982
+    originators: ["Paul Baum", "Alain Connes"]
+    millennium_prize: false
+    statement_plain: >
+      For a locally compact group, the assembly map from the equivariant K-homology
+      of the classifying space to the K-theory of the reduced group C*-algebra is
+      an isomorphism.
+    difficulty: 88
+    centrality: 64
+    tractability: 26
+    status: "active-progress"
+    tags: ["assembly-map", "K-theory", "C-star-algebras", "Gromov"]
+
+  - slug: unique-games-conjecture
+    title: "The Unique Games Conjecture"
+    field: "Computational Complexity Theory"
+    subfields: ["Hardness of Approximation", "PCP Theory", "Probabilistically Checkable Proofs"]
+    year_posed: 2002
+    originators: ["Subhash Khot"]
+    millennium_prize: false
+    statement_plain: >
+      For every ε, distinguishing unique-label-cover instances that are
+      (1−ε)-satisfiable from ε-satisfiable is NP-hard; if true, it pins down the
+      exact approximability threshold of many optimization problems.
+    difficulty: 86
+    centrality: 72
+    tractability: 35
+    status: "active-progress"
+    tags: ["approximation", "PCP", "2-to-2", "hardness"]
+
+  - slug: whitehead-asphericity-conjecture
+    title: "The Whitehead Asphericity Conjecture"
+    field: "Algebraic Topology"
+    subfields: ["Low-Dimensional Topology", "Combinatorial Group Theory"]
+    year_posed: 1941
+    originators: ["J. H. C. Whitehead"]
+    millennium_prize: false
+    statement_plain: >
+      Every subcomplex of an aspherical 2-dimensional CW complex is itself
+      aspherical.
+    difficulty: 84
+    centrality: 50
+    tractability: 28
+    status: "open"
+    tags: ["asphericity", "2-complexes", "CW", "group-theory"]
+
+  - slug: hilbert-smith-conjecture
+    title: "The Hilbert–Smith Conjecture"
+    field: "Geometric Topology"
+    subfields: ["Transformation Groups", "Topological Manifolds"]
+    year_posed: 1933
+    originators: ["David Hilbert (5th problem lineage)", "Paul A. Smith"]
+    millennium_prize: false
+    statement_plain: >
+      A locally compact group acting faithfully and effectively on a connected
+      topological manifold must be a Lie group; equivalently, no p-adic integer
+      group acts effectively on a manifold.
+    difficulty: 83
+    centrality: 48
+    tractability: 30
+    status: "active-progress"
+    tags: ["transformation-groups", "p-adic", "Lie-groups", "manifolds"]
+
+  - slug: sunflower-conjecture
+    title: "The Sunflower Conjecture"
+    field: "Extremal Combinatorics"
+    subfields: ["Set Systems", "Probabilistic Method"]
+    year_posed: 1960
+    originators: ["Paul Erdős", "Richard Rado"]
+    millennium_prize: false
+    statement_plain: >
+      For each k there is C(k) such that any family of more than C(k)^w sets of
+      size w contains k sets forming a sunflower (pairwise intersections all equal).
+    difficulty: 80
+    centrality: 58
+    tractability: 55
+    status: "active-progress"
+    tags: ["sunflowers", "Erdos-Rado", "Alweiss-Lovett-Wu-Zhang"]
+
+  - slug: reconstruction-conjecture
+    title: "The Reconstruction Conjecture (Ulam)"
+    field: "Graph Theory"
+    subfields: ["Combinatorics"]
+    year_posed: 1941
+    originators: ["Stanisław Ulam", "Paul Kelly"]
+    millennium_prize: false
+    statement_plain: >
+      Every finite simple graph on at least three vertices is determined up to
+      isomorphism by its multiset of vertex-deleted subgraphs.
+    difficulty: 78
+    centrality: 45
+    tractability: 38
+    status: "open"
+    tags: ["reconstruction", "deck", "Ulam", "isomorphism"]
+
+  - slug: cycle-double-cover-conjecture
+    title: "The Cycle Double Cover Conjecture"
+    field: "Graph Theory"
+    subfields: ["Topological Graph Theory", "Combinatorics"]
+    year_posed: 1973
+    originators: ["George Szekeres", "Paul Seymour"]
+    millennium_prize: false
+    statement_plain: >
+      Every bridgeless graph has a collection of cycles covering every edge exactly
+      twice.
+    difficulty: 80
+    centrality: 50
+    tractability: 35
+    status: "open"
+    tags: ["cycles", "snarks", "double-cover", "embeddings"]
+
+  - slug: graceful-tree-conjecture
+    title: "The Graceful Tree Conjecture (Ringel–Kotzig)"
+    field: "Combinatorics"
+    subfields: ["Graph Labeling", "Design Theory"]
+    year_posed: 1964
+    originators: ["Gerhard Ringel", "Anton Kotzig", "Alexander Rosa"]
+    millennium_prize: false
+    statement_plain: >
+      Every tree admits a graceful labeling: vertices labeled with distinct
+      integers in [0,n] so edge labels (absolute differences) are all distinct.
+    difficulty: 76
+    centrality: 40
+    tractability: 42
+    status: "active-progress"
+    tags: ["graceful-labeling", "trees", "Ringel", "decompositions"]
+
+  - slug: caccetta-haggkvist-conjecture
+    title: "The Caccetta–Häggkvist Conjecture"
+    field: "Graph Theory"
+    subfields: ["Directed Graphs", "Extremal Combinatorics"]
+    year_posed: 1978
+    originators: ["Louis Caccetta", "Roland Häggkvist"]
+    millennium_prize: false
+    statement_plain: >
+      Every digraph on n vertices with minimum out-degree at least n/k contains a
+      directed cycle of length at most k.
+    difficulty: 82
+    centrality: 46
+    tractability: 30
+    status: "open"
+    tags: ["digraphs", "girth", "out-degree", "Seymour"]
+
+  - slug: moving-sofa-problem
+    title: "The Moving Sofa Problem"
+    field: "Geometry"
+    subfields: ["Optimization", "Plane Geometry"]
+    year_posed: 1966
+    originators: ["Leo Moser"]
+    millennium_prize: false
+    statement_plain: >
+      What is the largest area of a rigid shape that can be maneuvered around a
+      right-angled corner in a unit-width corridor? The sofa constant is unknown.
+    difficulty: 70
+    centrality: 32
+    tractability: 50
+    status: "active-progress"
+    tags: ["sofa-constant", "Gerver", "Baek", "corridor"]
+
+  - slug: unit-distance-problem
+    title: "The Erdős Unit Distance Problem"
+    field: "Combinatorial Geometry"
+    subfields: ["Incidence Geometry", "Discrete Geometry"]
+    year_posed: 1946
+    originators: ["Paul Erdős"]
+    millennium_prize: false
+    statement_plain: >
+      What is the maximum number of unit distances among n points in the plane?
+      Conjectured n^(1+o(1)); the best bounds remain far apart.
+    difficulty: 84
+    centrality: 52
+    tractability: 28
+    status: "open"
+    tags: ["incidences", "unit-distances", "Erdos", "Szemeredi-Trotter"]
+
+  - slug: falconer-distance-conjecture
+    title: "The Falconer Distance Conjecture"
+    field: "Geometric Measure Theory"
+    subfields: ["Harmonic Analysis", "Fractal Geometry"]
+    year_posed: 1985
+    originators: ["Kenneth Falconer"]
+    millennium_prize: false
+    statement_plain: >
+      A compact set in R^d with Hausdorff dimension greater than d/2 has a distance
+      set of positive Lebesgue measure.
+    difficulty: 85
+    centrality: 55
+    tractability: 32
+    status: "active-progress"
+    tags: ["distance-sets", "dimension", "Kakeya", "Guth-Iosevich-Ou-Wang"]
+
+  - slug: artin-primitive-root-conjecture
+    title: "Artin's Primitive Root Conjecture"
+    field: "Number Theory"
+    subfields: ["Analytic Number Theory", "Algebraic Number Theory"]
+    year_posed: 1927
+    originators: ["Emil Artin"]
+    millennium_prize: false
+    statement_plain: >
+      Every integer a that is not −1 or a perfect square is a primitive root modulo
+      infinitely many primes, with a specific positive density.
+    difficulty: 82
+    centrality: 50
+    tractability: 25
+    status: "active-progress"
+    tags: ["primitive-roots", "density", "Hooley", "GRH"]
+
+  - slug: lehmer-mahler-measure-conjecture
+    title: "Lehmer's Mahler Measure Conjecture"
+    field: "Number Theory"
+    subfields: ["Heights", "Algebraic Numbers", "Dynamics"]
+    year_posed: 1933
+    originators: ["Derrick Henry Lehmer"]
+    millennium_prize: false
+    statement_plain: >
+      There is an absolute constant gap above 1 in the Mahler measures of integer
+      polynomials: no Mahler measure lies strictly between 1 and some fixed bound
+      (conjecturally Lehmer's number, ~1.17628).
+    difficulty: 83
+    centrality: 48
+    tractability: 24
+    status: "open"
+    tags: ["Mahler-measure", "heights", "Lehmer-number", "Salem"]
+
+  - slug: four-exponentials-conjecture
+    title: "The Four Exponentials Conjecture"
+    field: "Transcendental Number Theory"
+    subfields: ["Linear Forms in Logarithms", "Diophantine Approximation"]
+    year_posed: 1944
+    originators: ["Theodor Schneider", "Serge Lang", "Kanakanahalli Ramachandra"]
+    millennium_prize: false
+    statement_plain: >
+      Given two Q-linearly independent complex numbers x1,x2 and two more y1,y2,
+      at least one of the four exp(xi*yj) is transcendental. (The six exponentials
+      theorem is proved; four remains open.)
+    difficulty: 80
+    centrality: 45
+    tractability: 28
+    status: "open"
+    tags: ["transcendence", "exponentials", "six-exponentials", "logarithms"]

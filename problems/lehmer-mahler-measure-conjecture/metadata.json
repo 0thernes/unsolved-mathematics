@@ -1,0 +1,29 @@
+{
+  "slug": "lehmer-mahler-measure-conjecture",
+  "title": "Lehmer's Mahler Measure Conjecture",
+  "field": "Number Theory",
+  "subfields": [
+    "Heights",
+    "Algebraic Numbers",
+    "Dynamics"
+  ],
+  "year_posed": 1933,
+  "originators": [
+    "Derrick Henry Lehmer"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "There is an absolute constant gap above 1 in the Mahler measures of integer polynomials: no Mahler measure lies strictly between 1 and some fixed bound (conjecturally Lehmer's number, ~1.17628).\n",
+  "difficulty": 83,
+  "centrality": 48,
+  "tractability": 24,
+  "status": "open",
+  "tags": [
+    "Mahler-measure",
+    "heights",
+    "Lehmer-number",
+    "Salem"
+  ],
+  "rank": 35,
+  "css": 61.333,
+  "folder": "lehmer-mahler-measure-conjecture"
+}

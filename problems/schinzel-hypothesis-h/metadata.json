@@ -1,0 +1,29 @@
+{
+  "slug": "schinzel-hypothesis-h",
+  "title": "Schinzel's Hypothesis H",
+  "field": "Number Theory",
+  "subfields": [
+    "Prime-Producing Polynomials",
+    "Sieve Theory"
+  ],
+  "year_posed": 1958,
+  "originators": [
+    "Andrzej Schinzel",
+    "Wacław Sierpiński"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "A finite set of irreducible integer polynomials with no fixed prime divisor takes simultaneous prime values infinitely often; a broad generalization of the twin-prime and Bunyakovsky conjectures.\n",
+  "difficulty": 88,
+  "centrality": 62,
+  "tractability": 16,
+  "status": "open",
+  "tags": [
+    "primes",
+    "polynomials",
+    "Dickson",
+    "Bateman-Horn"
+  ],
+  "rank": 26,
+  "css": 66.667,
+  "folder": "schinzel-hypothesis-h"
+}

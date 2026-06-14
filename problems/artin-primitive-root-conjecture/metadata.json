@@ -1,0 +1,28 @@
+{
+  "slug": "artin-primitive-root-conjecture",
+  "title": "Artin's Primitive Root Conjecture",
+  "field": "Number Theory",
+  "subfields": [
+    "Analytic Number Theory",
+    "Algebraic Number Theory"
+  ],
+  "year_posed": 1927,
+  "originators": [
+    "Emil Artin"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Every integer a that is not −1 or a perfect square is a primitive root modulo infinitely many primes, with a specific positive density.\n",
+  "difficulty": 82,
+  "centrality": 50,
+  "tractability": 25,
+  "status": "active-progress",
+  "tags": [
+    "primitive-roots",
+    "density",
+    "Hooley",
+    "GRH"
+  ],
+  "rank": 32,
+  "css": 61.833,
+  "folder": "artin-primitive-root-conjecture"
+}

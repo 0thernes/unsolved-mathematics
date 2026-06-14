@@ -1,0 +1,28 @@
+{
+  "slug": "reconstruction-conjecture",
+  "title": "The Reconstruction Conjecture (Ulam)",
+  "field": "Graph Theory",
+  "subfields": [
+    "Combinatorics"
+  ],
+  "year_posed": 1941,
+  "originators": [
+    "Stanisław Ulam",
+    "Paul Kelly"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Every finite simple graph on at least three vertices is determined up to isomorphism by its multiset of vertex-deleted subgraphs.\n",
+  "difficulty": 78,
+  "centrality": 45,
+  "tractability": 38,
+  "status": "open",
+  "tags": [
+    "reconstruction",
+    "deck",
+    "Ulam",
+    "isomorphism"
+  ],
+  "rank": 46,
+  "css": 56.5,
+  "folder": "reconstruction-conjecture"
+}

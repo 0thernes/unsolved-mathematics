@@ -1,0 +1,5 @@
+# Originator(s) — The Unique Games Conjecture
+
+_Biography, background, and the ideas that led here._
+
+<!-- DOSSIER:originator -->

@@ -1,0 +1,30 @@
+{
+  "slug": "graceful-tree-conjecture",
+  "title": "The Graceful Tree Conjecture (Ringel–Kotzig)",
+  "field": "Combinatorics",
+  "subfields": [
+    "Graph Labeling",
+    "Design Theory"
+  ],
+  "year_posed": 1964,
+  "originators": [
+    "Gerhard Ringel",
+    "Anton Kotzig",
+    "Alexander Rosa"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Every tree admits a graceful labeling: vertices labeled with distinct integers in [0,n] so edge labels (absolute differences) are all distinct.\n",
+  "difficulty": 76,
+  "centrality": 40,
+  "tractability": 42,
+  "status": "active-progress",
+  "tags": [
+    "graceful-labeling",
+    "trees",
+    "Ringel",
+    "decompositions"
+  ],
+  "rank": 54,
+  "css": 52.267,
+  "folder": "graceful-tree-conjecture"
+}
