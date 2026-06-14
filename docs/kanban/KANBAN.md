@@ -27,9 +27,9 @@ contain the `<!-- DOSSIER:* -->` placeholder markers.)_
 
 ## 🟧 To Verify (drafted, citations need checking)
 
-> All 40 dossiers are authored; **1,000 citations** await a human source check.
-> Current flag split: 357 `high-confidence`, 501 `needs-verification`,
-> 142 `ai-suggested`, 0 `verified`. See [verification dashboard](../indexes/verification.md).
+> All 60 dossiers are authored; **~1,500 citations** await a human source check.
+> Current flag split: 525 `high-confidence`, 760 `needs-verification`,
+> 210 `ai-suggested`, 0 `verified`. See [verification dashboard](../indexes/verification.md).
 
 - [ ] Promote `ai-suggested` → `needs-verification` → `verified` per
       [SOURCING.md](../methodology/SOURCING.md) (EPIC-2)
@@ -43,10 +43,10 @@ contain the `<!-- DOSSIER:* -->` placeholder markers.)_
 
 ## 🟩 Done
 
-- [x] **All 40 dossiers authored** (history, originator, approaches, attempts,
-      25 papers, 10 mathematicians, status) — EPIC-1 complete
+- [x] **All 60 dossiers authored** (history, originator, approaches, attempts,
+      25 papers, 10 mathematicians, status) — EPIC-1 complete, EPIC-4 to 60
 - [x] Cross-cutting indexes + verification dashboard + glossary
-- [x] RAG corpus built (1,403 chunks) and retrieval verified end-to-end
+- [x] RAG corpus built (2,106 chunks) and retrieval verified end-to-end
 - [x] Repository architecture + single-source-of-truth registry (`data/problems.yaml`)
 - [x] Deterministic ranking engine (`scripts/generate.py`)
 - [x] JSON Schemas (problem, paper, person)

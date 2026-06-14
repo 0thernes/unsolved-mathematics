@@ -1,5 +1,27 @@
 # Approaches — The Four Exponentials Conjecture
 
-_Major strategies, partial results, and barriers._
+The four exponentials conjecture is attacked almost exclusively through the analytic transcendence machinery of the twentieth century — auxiliary functions, interpolation determinants, and zero estimates — together with structural reductions to broader conjectures. No purely algebraic or model-theoretic proof is known, and each analytic route bumps against the same hard combinatorial wall.
 
-<!-- DOSSIER:approaches -->
+## Auxiliary functions (Schneider–Siegel method)
+
+The core idea, inherited from Schneider's solution of Hilbert's seventh problem, is to build an auxiliary polynomial $P$ in several variables with algebraic coefficients chosen (by Siegel's lemma / pigeonhole over the integers) so that the function $F(z) = P(e^{x_1 z}, e^{x_2 z}, \dots)$ has many zeros. One then derives a contradiction by extrapolation: the function is small on a large set, yet by an arithmetic lower bound (a Liouville-type inequality) a nonzero algebraic quantity cannot be that small. This method *succeeds* for six exponentials because the extra third row $y_3$ supplies enough interpolation data — enough equations relative to unknowns — to make the determinant/zero-counting bookkeeping close. The **best result** the bare method reaches is exactly the six exponentials theorem and its sharpenings. The **barrier**: with only four values (a $2\times2$ configuration) the number of available interpolation conditions falls just short of what the volume/zero-estimate inequality requires; the auxiliary construction has one fewer degree of freedom than needed, and the counting is off by a constant factor that no choice of parameters recovers.
+
+## Interpolation determinants (Laurent's method)
+
+Michel Laurent reformulated the auxiliary-function argument as the estimation of a determinant whose entries are derivatives of monomials in exponentials evaluated at sample points. This "interpolation determinant" approach removes Siegel's lemma in favor of directly bounding a determinant from above (analytically, because the rows are nearly dependent) and from below (arithmetically, because it is a nonzero algebraic number). It gives cleaner, often sharper constants and underlies the modern proofs of the six and five exponentials theorems. **Best result**: the five exponentials theorem (with Waldschmidt) and sharp six-exponentials statements. **Barrier**: the same rank deficiency reappears as the determinant being too small in the $2\times2$ case to force a contradiction — the analytic upper bound and arithmetic lower bound cross only when at least five (often six) exponentials are present.
+
+## The "removing one logarithm" / sharp variants
+
+Waldschmidt and collaborators developed refinements that economize on the data needed, yielding the **five exponentials theorem**: if $x_1,x_2$ and $y_1,y_2$ are independent as before, then at least one of $e^{x_1y_1}, e^{x_1y_2}, e^{x_2y_1}, e^{x_2y_2}, e^{x_2/x_1}$ (the last an extra fifth quantity) is transcendental — proving four-exponentials-type conclusions at the cost of one auxiliary exponential. The **strong six exponentials theorem** (Damien Roy's formulation via the "strong" framework) and the related "$abc$ of exponentials" results push the analytic budget to its limit. **Barrier**: every such sharpening still needs that fifth quantity or an extra independence hypothesis; nobody has removed the last exponential to land cleanly on four.
+
+## Reduction to Schanuel's conjecture
+
+A structural, non-constructive line proves the four exponentials conjecture *conditionally*. Schanuel's conjecture — that for $\mathbb{Q}$-linearly independent $z_1,\dots,z_n$, the transcendence degree of $\mathbb{Q}(z_1,\dots,z_n,e^{z_1},\dots,e^{z_n})$ is at least $n$ — implies both the four exponentials conjecture and its strong form. The **best result** here is therefore a complete conditional proof. The **barrier** is that Schanuel's conjecture is itself wide open and far harder; this route explains *why* the conjecture should be true and locates it within the algebraic-independence hierarchy, but contributes nothing unconditional.
+
+## Roy's "matrices of logarithms" and the strong forms
+
+Damien Roy recast the strong six exponentials theorem and the strong four exponentials conjecture in the language of the rank of matrices whose entries are logarithms of algebraic numbers, isolating a clean algebraic conjecture (sometimes phrased via the structure of the $\mathbb{Q}$-vector space $\mathcal{L}$ of logarithms of algebraic numbers) that is equivalent to or implies the four exponentials statement. **Best result**: an exact equivalence and the strong six exponentials theorem as a proven anchor. **Barrier**: the rank-one case is precisely the unproved increment; Roy's framework clarifies the target but does not break the analytic deadlock.
+
+## Negative / limitation results
+
+There is no published refutation — the conjecture is believed true and is a consequence of widely accepted deeper conjectures. The relevant "negative" knowledge is a *barrier* rather than a counterexample: it is known that the auxiliary-function and interpolation-determinant methods, in their current form, **cannot** reach four exponentials, because the underlying transcendence measures and zero estimates are essentially optimal and still leave the rank-one gap. Baker's theory of linear forms in logarithms, despite its power for nonvanishing and effective lower bounds, does not apply — it proves that certain linear combinations are nonzero, not the rank-collapse statement the conjecture requires. This orthogonality of Baker's method to the four exponentials problem is itself a well-understood structural obstruction.

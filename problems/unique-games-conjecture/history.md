@@ -1,5 +1,21 @@
 # History — The Unique Games Conjecture
 
-_Origin, formulation, and timeline._
+The Unique Games Conjecture (UGC) was born from a precise gap in the theory of *hardness of approximation*. By the late 1990s, the PCP theorem (1992) and the parallel-repetition machinery of Raz had turned the study of NP-hardness into a study of *probabilistically checkable proofs*, and Håstad's 1997 optimal inapproximability results had shown that for problems such as MAX-3LIN and MAX-3SAT one could pin down the exact approximation threshold. Yet for a cluster of fundamental problems — Vertex Cover, Max-Cut, and the broad family of constraint satisfaction problems (CSPs) — the best NP-hardness factors lagged far behind the best known algorithms. The obstruction was structural: the standard PCP constructions produced *label-cover* instances whose constraints were complicated projections, and the analysis bottlenecked on the lack of a clean "unique" constraint structure.
 
-<!-- DOSSIER:history -->
+In his 2002 STOC paper *On the Power of Unique 2-Prover 1-Round Games*, Subhash Khot isolated exactly the missing hypothesis. A **unique game** is a 2-prover-1-round game (equivalently, a label-cover instance) in which every constraint on an edge $(u,v)$ is a *bijection* $\pi_{uv}$ between the label sets: a label for $u$ forces a unique label for $v$ and vice versa. The conjecture asserts that for every $\varepsilon>0$ there is a label-set size $k$ such that it is NP-hard to distinguish unique-games instances that are $(1-\varepsilon)$-satisfiable from those that are at most $\varepsilon$-satisfiable. The decisive feature is the *gap location near 1*: nearly-satisfiable versus nearly-unsatisfiable, which is precisely what feeds Fourier-analytic "long-code" tests.
+
+Khot's motivation was pragmatic and architectural. Several inapproximability proofs would go through *if only* one had a unique-games starting point; UGC packaged that hypothesis once and for all. The payoff arrived quickly and decisively. In 2004–2005, Khot, Kindler, Mossel, and O'Donnell showed UGC implies Max-Cut is NP-hard to approximate beyond the Goemans–Williamson constant $\alpha_{GW}\approx 0.878$, with the missing analytic ingredient — the **Majority Is Stablest** theorem — supplied by Mossel, O'Donnell, and Oleszkiewicz via the *invariance principle*. Khot and Regev proved UGC implies Vertex Cover is hard to approximate within $2-\varepsilon$. The capstone was Raghavendra's 2008 theorem: UGC implies that for *every* CSP a single semidefinite programming relaxation achieves the optimal approximation ratio, making UGC equivalent to a universal "SDP is optimal" principle.
+
+## Timeline
+
+- **1992** — Arora–Lund–Motwani–Sudan–Szegedy and Arora–Safra establish the PCP theorem, the foundation of modern hardness of approximation.
+- **1997** — Håstad proves optimal inapproximability for MAX-3LIN, MAX-3SAT via the long code and Fourier analysis.
+- **2002** — Subhash Khot poses the Unique Games Conjecture (STOC 2002).
+- **2004** — Khot–Kindler–Mossel–O'Donnell connect UGC to Max-Cut; Mossel–O'Donnell–Oleszkiewicz prove Majority Is Stablest via the invariance principle.
+- **2005** — Khot–Regev: UGC implies Vertex Cover is $(2-\varepsilon)$-hard.
+- **2008** — Raghavendra: UGC implies the basic SDP gives optimal approximation for every CSP.
+- **2010** — Arora–Barak–Steurer give a subexponential-time ($2^{n^{\varepsilon}}$) algorithm for Unique Games, showing it is not NP-hard in the strongest sense unless NP has subexponential algorithms — a soft barrier.
+- **2010–2012** — Sum-of-squares / Lasserre hierarchy studied as a candidate refutation; Barak–Brandão–Harrow–Kelner–Steurer–Zhou analyze SoS rounding.
+- **2017** — Khot–Minzer–Safra prove a key combinatorial conjecture on the Grassmann graph (expansion of certain subsets), a central lemma.
+- **2018** — Khot–Minzer–Safra complete the proof of the **2-to-2 Games Theorem** (with imperfect completeness), establishing NP-hardness of 2-to-2 games and, as a corollary, that Vertex Cover is hard to approximate within $\sqrt{2}-\varepsilon$. This is the strongest unconditional progress toward UGC.
+- **2018–present** — The 2-to-2 result yields that unique games are hard to distinguish $(1/2-\varepsilon)$ from $\varepsilon$-satisfiable; closing the remaining gap to perfect (near-1) completeness — full UGC — remains open and is the active frontier.

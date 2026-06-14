@@ -1,5 +1,25 @@
 # Approaches — The Falconer Distance Conjecture
 
-_Major strategies, partial results, and barriers._
+## The Mattila integral and spherical averages
 
-<!-- DOSSIER:approaches -->
+The dominant analytic framework, due to Pertti Mattila (1987), reduces the problem to Fourier decay. Place a Frostman measure $\mu$ on $E$ with $\mu(B(x,r)) \lesssim r^s$. Then $|\Delta(E)| > 0$ follows from finiteness of the **Mattila integral**
+
+$$\int_1^\infty \left( \int_{S^{d-1}} |\widehat{\mu}(R\omega)|^2 \, d\sigma(\omega) \right)^2 R^{d-1} \, dR,$$
+
+which measures the $L^2$ decay of the spherical averages of $\widehat{\mu}$. The core idea is that the distance measure (pushforward of $\mu \times \mu$ under $(x,y)\mapsto|x-y|$) is absolutely continuous when these averages decay fast enough. **Best result reached:** plugging in the trivial $L^2$-spherical-average bound recovers Falconer's $(d+1)/2$; sharpening the spherical-average estimate is exactly what subsequent decoupling and restriction work does. **Barrier:** the spherical averages cannot decay faster than the worst-case Salem examples permit, and the $L^2$ formulation loses information that the sharp threshold seems to demand — purely $L^2$ spherical averages are now believed insufficient to reach $d/2$ on their own.
+
+## Restriction / extension and decoupling estimates
+
+The spherical-average bound is controlled by $L^p \to L^q$ mapping properties of the extension operator for the sphere, so Falconer is tightly coupled to the **restriction conjecture**. Stein–Tomas gives the classical input; modern work uses the Bourgain–Guth method, broad–narrow decomposition, and especially Bourgain–Demeter $\ell^2$ **decoupling**. The Guth–Iosevich–Ou–Wang 2018 planar result ($\dim_H E > 5/4$ in $\mathbb{R}^2$) and the Du–Zhang circle of results in higher dimensions are built on weighted/refined restriction estimates. **Best result reached:** in $\mathbb{R}^d$, roughly $d/2 + 1/4$ for the positive-measure form via Du–Iosevich–Ou–Wang–Zhang-type weighted restriction; $5/4$ in the plane. **Barrier:** the sharp restriction conjecture is itself open beyond the plane, and even granting it, the known reductions appear to fall short of $d/2$ — the loss in passing from restriction estimates to the distance threshold is structural, not merely technical.
+
+## Radial projections and the Orponen–Liu method
+
+A more geometric line, developed by Tuomas Orponen, Bochen Liu, and others, studies **radial projections**: for a point $x$, how does $E$ project to directions $\frac{y-x}{|y-x|}$? Good lower bounds on the dimension of radial projections control how much $E$ "spreads out" as seen from typical points, which feeds directly into pinned-distance results $\Delta_x(E)$. This is the engine behind several pinned and dimension-of-distance-set theorems and was a key ingredient combined with decoupling in the Guth–Iosevich–Ou–Wang argument. **Best result reached:** sharp pinned-distance statements in the plane near the $5/4$ regime, and dimension-of-distance-set results showing $\dim_H \Delta(E) \to 1$ as $\dim_H E \to 1$ in $\mathbb{R}^2$. **Barrier:** radial-projection theorems degrade in high dimensions, and at dimension exactly $d/2$ the projection bounds become critical and resist the needed gains.
+
+## Group-action / Iosevich–Liu and the "good measure" method
+
+A complementary strategy, prominent in the work of Alex Iosevich and collaborators, exploits the action of the orthogonal/Euclidean group and bilinear estimates for the distance-counting operator, sometimes via finite-field analogues (Iosevich–Rudnev) that suggest the right thresholds. The Liu–Iosevich and Du–Iosevich approaches recast pinned distances through estimates on $\int \nu^x \, d\mu(x)$ for pinned measures $\nu^x$. **Best result reached:** strong pinned-distance theorems and the dimension-of-distance-set lower bounds matching the measure thresholds. **Barrier:** finite-field intuition (where $d/2$ is reached) does not transfer cleanly to $\mathbb{R}^d$ because the Euclidean spheres carry curvature/restriction obstructions absent over finite fields.
+
+## Connection to Kakeya and structural obstructions
+
+Underlying all the harmonic-analytic routes is the **Kakeya conjecture**: optimal control of tube overlaps is what would, in principle, deliver optimal restriction and hence push Falconer toward $d/2$. This is a double-edged dependency — it explains both why progress on Falconer mirrors progress on restriction/decoupling and why a clean resolution is hard. **Barrier / negative results:** Falconer's own dimension-$d/2$ examples show the $d/2$ threshold is the *best possible* — one cannot lower it. Furthermore, the $L^2$-based Mattila framework has known limits: the spherical-average integral can be shown to diverge for certain extremal (Salem) measures below the sharp threshold, so any proof reaching $d/2$ must extract more than second-moment information, likely through genuinely multilinear or incidence-geometric input. No approach has yet bridged the final gap, and it is widely believed that the last step will require new ideas at the restriction/Kakeya interface rather than refinement of existing estimates.

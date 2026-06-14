@@ -1,5 +1,19 @@
 # Originator(s) — The Four Exponentials Conjecture
 
-_Biography, background, and the ideas that led here._
+The conjecture has no single author; it crystallized from a historical root in **Theodor Schneider** and was given its modern formulation independently by **Serge Lang** and **Kanakanahalli Ramachandra** in the 1960s. The metadata names all three, and the honest account distinguishes the historical seed (Schneider's transcendence machinery) from the explicit conjecture (Lang and Ramachandra).
 
-<!-- DOSSIER:originator -->
+## Theodor Schneider (1911–1988)
+
+Schneider was a German number theorist, a student of Carl Ludwig Siegel at Frankfurt. In 1934, as a young man, he independently solved Hilbert's seventh problem — proving the transcendence of $\alpha^\beta$ for algebraic $\alpha \neq 0,1$ and algebraic irrational $\beta$ — at almost the same time as Aleksandr Gelfond, the result now bearing both their names (the Gelfond–Schneider theorem). His subsequent work, including the 1957 monograph *Einführung in die transzendenten Zahlen*, developed the method of auxiliary functions in two variables that is the technical ancestor of the six exponentials theorem. Schneider did not state the four exponentials conjecture as such, but the two-variable exponential transcendence framework — a matrix of values $e^{x_i y_j}$ controlled by a determinant/interpolation argument — is his legacy, and it is precisely the setting in which the four/six dichotomy lives. He spent much of his career at Freiburg and is remembered as one of the architects, with Siegel and Gelfond, of classical transcendence theory.
+
+## Serge Lang (1927–2005)
+
+Lang, a French-born American mathematician and a member of the Bourbaki group, was one of the most prolific expositors and researchers of the twentieth century, with deep contributions across algebraic number theory, Diophantine geometry, and transcendence. In the 1960s he isolated and named the four exponentials conjecture, proving the six exponentials theorem and recognizing that the four-element case is the sharp unproved boundary. His 1966 *Introduction to Transcendental Numbers* placed the conjecture before a wide audience and embedded it in a structural program: Lang understood that statements about $e^{x_i y_j}$ are statements about the rank of matrices of logarithms, and he connected the question to broader conjectures on algebraic independence — anticipating the role Schanuel's conjecture would play. Lang's instinct for the "right general statement" is why the conjecture is usually attributed to him in the Western literature, and why its standard form is the rank/matrix formulation he favored.
+
+## Kanakanahalli Ramachandra (1933–2011)
+
+Ramachandra was an Indian analytic and transcendental number theorist at the Tata Institute of Fundamental Research, later a founder of the Hardy–Ramanujan Society and its journal. Independently of Lang, in his 1968 work "Contributions to the theory of transcendental numbers," he established the six exponentials theorem and stated the four exponentials conjecture, with applications to questions on the simultaneous transcendence and the distribution of values of the exponential function. Ramachandra's treatment was more arithmetic and application-driven; he used the six exponentials theorem to derive transcendence results that had eluded earlier authors. His independent arrival at the same conjecture from a different mathematical culture underscores that the four exponentials problem is the natural and forced sharpening of the six exponentials theorem, not an artifact of one person's taste.
+
+## Shared legacy
+
+The modern formulation — the rank-one statement about matrices of logarithms of algebraic numbers, and its strengthening the **strong four exponentials conjecture** — is essentially Lang's and Ramachandra's, built on Schneider's two-variable transcendence technique. All three lines feed the contemporary program, most fully synthesized by Michel Waldschmidt, in which the conjecture is recognized as a special case of Schanuel's conjecture and a touchstone for the limits of the auxiliary-function method.

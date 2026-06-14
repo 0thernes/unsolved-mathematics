@@ -7,7 +7,7 @@
 **Each problem gets its own world — origin, the mind that posed it, every serious attack on it,
 the 25 papers that matter, the 10 people who matter, and a retrieval-ready knowledge base.**
 
-`v0.1.0` · branch `main` · 40 problems and growing · built for humans **and** machines
+`v0.1.0` · branch `main` · **60 problems** and growing · built for humans **and** machines
 
 [Master Ranking](RANKING.md) · [Architecture](ARCHITECTURE.md) · [Philosophy](PHILOSOPHY.md) · [Kanban](docs/kanban/KANBAN.md) · [Methodology](docs/methodology/RANKING.md) · [RAG](rag/README.md) · [Glossary](docs/GLOSSARY.md) · [Indexes](docs/indexes/) · [Contribute](CONTRIBUTING.md)
 
@@ -132,7 +132,7 @@ by `scripts/build_indexes.py`):
 
 - 🗺️ [By field](docs/indexes/by-field.md) · [By status](docs/indexes/by-status.md) · [By era posed](docs/indexes/by-century.md)
 - 👤 [Originators index](docs/indexes/originators.md) — every mathematician → the problems they posed
-- ✅ [Verification dashboard](docs/indexes/verification.md) — provenance of all 1,000 citations
+- ✅ [Verification dashboard](docs/indexes/verification.md) — provenance of all ~1,500 citations
 - 📖 [Glossary](docs/GLOSSARY.md) — the recurring concepts that thread the dossiers
 
 ## Repository map

@@ -1,5 +1,23 @@
 # Approaches — The Unique Games Conjecture
 
-_Major strategies, partial results, and barriers._
+The UGC is studied from two opposing directions: *proving* it (constructing a PCP reduction that produces hard unique-games instances) and *refuting* it (designing algorithms that solve unique games, which would make UGC false unless P = NP fails in unexpected ways). The frontier sits between these, and the most important results are barriers that constrain both.
 
-<!-- DOSSIER:approaches -->
+## PCP / 2-to-2 reduction approach (toward a proof)
+
+The principal route to *proving* UGC mimics Håstad's program: build a probabilistically checkable proof whose verifier reads a constant number of symbols and whose acceptance test corresponds to a unique constraint. The core difficulty is *completeness*: long-code based reductions naturally produce constraints that are "$d$-to-$1$" (each label of one side is consistent with $d$ labels of the other) rather than perfectly bijective, and they achieve completeness bounded away from $1$. The landmark achievement of this line is the **2-to-2 Games Theorem** of Khot, Minzer, and Safra (2016–2018), which proves NP-hardness of 2-to-2 games with imperfect completeness, and as a corollary that unique games are NP-hard to distinguish between $(1/2-\varepsilon)$-satisfiable and $\varepsilon$-satisfiable. The technical heart is the **Grassmann graph** analysis: showing that small non-expanding sets in the Grassmann graph must be "structured" (correlate with a low-dimensional subspace), which controls the soundness of the test. **Best result:** hardness with completeness $\approx 1/2$. **Barrier:** the remaining gap to completeness $\to 1$ (the full UGC) appears to require fundamentally new gadgets; the 2-to-2 framework's imperfect completeness is intrinsic to its current form.
+
+## Subexponential algorithms (soft refutation / barrier)
+
+Arora, Barak, and Steurer (2010) gave an algorithm solving Unique Games in time $2^{n^{\varepsilon}}$ for any constant $\varepsilon>0$, via graph decomposition into pieces of low threshold-rank on which the problem becomes tractable. **Significance:** this is a *barrier to strong forms* of UGC — it shows unique games cannot be NP-hard in the way 3SAT presumably is (no $2^{\Omega(n)}$ lower bound under the Exponential Time Hypothesis), so any proof of UGC must produce instances solvable in subexponential time. **Best result:** $\exp(n^{\varepsilon})$ runtime. **Barrier it imposes:** the conjecture's truth, if it holds, is "fragile" — sitting just above polynomial time — which is why both believers and skeptics find it genuinely hard to settle.
+
+## Semidefinite programming and Sum-of-Squares hierarchies (refutation attempts)
+
+If the constant-round Sum-of-Squares (SoS / Lasserre) SDP hierarchy solved unique games in polynomial time, UGC would be false. Much effort (Barak–Brandão–Harrow–Kelner–Steurer–Zhou 2012; Barak–Raghavendra–Steurer; Guruswami–Sinop) sought either an SoS algorithm or integrality-gap instances defeating it. **Best result on the algorithmic side:** SoS solves several previously-hard instance families and underlies the ABS-style decompositions. **Best result on the lower-bound side:** known SDP integrality gaps (e.g., from Khot–Vishnoi instances) survive a constant number of SoS rounds but are *not* known to survive $n^{\Omega(1)}$ rounds. **Barrier:** the question of whether $\text{poly}(n)$-round SoS refutes unique games remains open and is itself a central, unresolved sub-problem; this ambiguity is precisely why SoS is the leading candidate to refute UGC.
+
+## Small-set expansion and the SSE hypothesis (equivalence / reformulation)
+
+Raghavendra and Steurer (2010) introduced the **Small-Set Expansion (SSE) Hypothesis** — that it is NP-hard to certify whether a graph has a small non-expanding set — and showed SSE implies UGC, with the two being closely intertwined (UGC reduces to a "covering" variant of SSE). **Value:** SSE recasts UGC as a purely graph-theoretic expansion question, decoupling it from the gadget-engineering of PCP reductions and exposing it to spectral and geometric tools. **Best result:** the reduction SSE ⇒ UGC, plus subexponential algorithms for SSE paralleling ABS. **Barrier:** SSE inherits the same subexponential-algorithm soft barrier, and no unconditional proof of SSE is known.
+
+## Invariance principle / analytic core (enabling machinery)
+
+Underlying the *consequences* of UGC is the Gaussian-noise analytic toolkit: the **Majority Is Stablest** theorem (Mossel–O'Donnell–Oleszkiewicz, 2005) and the **invariance principle**, which show that among low-influence functions the majority/dictator functions are extremal for noise stability. **Best result:** these make UGC tight — Raghavendra's 2008 theorem proves UGC implies the basic SDP achieves the *exact* optimal approximation ratio for every CSP, so under UGC the analytic constants are not merely lower bounds but the truth. **Barrier:** this machinery presupposes UGC; it explains *why* UGC is so consequential but offers no independent route to proving the hardness itself.

@@ -7,6 +7,15 @@ continuously between structural versions).
 
 ## [Unreleased]
 ### Added
+- **Expanded to 60 problems** (wave 2): added 20 spanning set theory (Continuum
+  Hypothesis, with a new `independent` status), arithmetic geometry (Tate),
+  topology / K-theory (Novikov, Baum–Connes, Whitehead, Hilbert–Smith),
+  complexity (Unique Games), graph theory (reconstruction, cycle double cover,
+  graceful trees, Caccetta–Häggkvist), geometry (moving sofa, unit distance,
+  Falconer), algebra (inverse Galois), and number theory (Schinzel H, Artin
+  primitive root, Lehmer–Mahler, four exponentials) — each fully authored.
+  RAG corpus now **2,106 chunks (~434k tokens)**; **~1,500 flagged citations**
+  (525 high-confidence, 760 needs-verification, 210 ai-suggested, 0 yet human-verified).
 - **Full dossiers authored for all 40 problems** (EPIC-1): every problem now has
   history, originator biography, attack strategies, notable attempts, **25 key
   papers** and **10 key mathematicians** (each citation verification-flagged),

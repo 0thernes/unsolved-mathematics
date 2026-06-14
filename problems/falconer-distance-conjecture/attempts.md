@@ -1,5 +1,17 @@
 # Attempts — The Falconer Distance Conjecture
 
-_Notable attempts, near-misses, retracted proofs._
+The Falconer problem has a clean record of *progress* rather than of dramatic false claims. Unlike some celebrated conjectures, it has not attracted notorious flawed proofs of the full statement; the difficulty is so transparently tied to the open restriction and Kakeya conjectures that experts have not generally claimed the sharp $d/2$ threshold. What follows are the genuine near-misses and partial results that define the frontier, together with the one notable point of technical dispute.
 
-<!-- DOSSIER:attempts -->
+**Falconer's original gap (1985).** Falconer established $(d+1)/2$ as sufficient and $d/2$ as necessary (via explicit null-distance-set examples at dimension $d/2$). The entire history of the problem is the attempt to close this factor-of-$1/2$ gap, and the gap has never been fully closed in any dimension.
+
+**Wolff's $4/3$ in the plane (1999).** Thomas Wolff's proof that $\dim_H E > 4/3$ suffices in $\mathbb{R}^2$ stood as the benchmark planar result for almost twenty years. It was a genuine high-water mark and is correct; its limitation is intrinsic to the $L^2$ circular-means method, which cannot pass below $4/3$ without fundamentally new input. The long stagnation after 1999 is itself part of the story: the problem was widely regarded as stuck.
+
+**The Guth–Iosevich–Ou–Wang breakthrough (2018).** The improvement to $\dim_H E > 5/4$ in $\mathbb{R}^2$ by Larry Guth, Alex Iosevich, Yumeng Ou, and Hong Wang broke the decade-plus impasse by marrying Bourgain–Demeter decoupling with radial-projection estimates. This is a correct and celebrated result, but it remains short of the conjectured $1$ (i.e., $d/2 = 1$ for $d=2$). It is the closest unconditional approach to the conjecture in the plane and reset expectations for the whole field.
+
+**High-dimensional advances (2019–2020).** The Du–Zhang and Du–Iosevich–Ou–Wang–Zhang results, using weighted restriction estimates and refined Strichartz inequalities, reached thresholds of the form $d/2 + 1/4$ (and pinned-distance analogues) in $\mathbb{R}^d$. These are the best unconditional higher-dimensional results and are accepted as correct; the residual $+1/4$ is the unbridged gap.
+
+**Point of dispute — a 2021 high-dimensional preprint.** Around 2021 a preprint circulated by Xiumin Du, Yumeng Ou, Kevin Ren, and Ruixiang Zhang claiming an improved Falconer threshold in high dimensions (work in the "$d/2 + 1/4$-and-beyond" program). Experts scrutinizing the radial-projection and refined-decoupling steps raised concerns about a constant/exponent passage in one of the lemmas, and a corrected version was subsequently posted. The episode is best described neutrally: it was an ordinary case of a technical gap in a preprint being identified and repaired during peer review and community vetting, not a retracted published theorem. *(This dispute is reported from community recollection; the precise details should be verified against the published versions before being relied upon.)*
+
+**Conditional results.** Several authors have shown that the full Falconer conjecture would follow from the sharp restriction conjecture (or from optimal Kakeya/maximal estimates) in various ranges, but with quantified losses that, even granting restriction, do not always reach $d/2$ outside the plane. These conditional theorems are valuable as a map of the obstruction: they show the problem is "restriction-hard" and possibly strictly harder.
+
+**Summary of the gap.** No claimed proof of the sharp $d/2$ threshold exists. The honest state is that every announced result is a partial threshold, every partial threshold has been (or is being) checked by the harmonic-analysis community, and the remaining distance to $d/2$ is small in dimension but apparently large in difficulty.

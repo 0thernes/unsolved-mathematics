@@ -2,4 +2,18 @@
 
 _Biography, background, and the ideas that led here._
 
-<!-- DOSSIER:originator -->
+## David Hilbert (1862–1943)
+
+David Hilbert, born in Königsberg, was the dominant mathematician of his generation and, from his Göttingen chair (1895 onward), the architect of much of twentieth-century mathematics. His range was extraordinary: invariant theory, algebraic number theory, the foundations of geometry, integral equations, mathematical physics, and metamathematics. The Inverse Galois Problem grew directly out of his number-theoretic period.
+
+In his **1892 paper** *Über die Irreducibilität ganzer rationaler Funktionen mit ganzzahligen Koeffizienten*, Hilbert proved that an irreducible polynomial in two variables over $\mathbb{Q}$ remains irreducible under specialization of one variable to infinitely many rational values—the Hilbert Irreducibility Theorem. His motivation was partly the construction of number fields with prescribed Galois group: he wanted explicit equations realizing the symmetric and alternating groups. By exhibiting "generic" polynomials over $\mathbb{Q}(t)$ for $S_n$ and $A_n$ and then specializing, he produced the first systematic family of realizations. Hilbert thereby converted a question about abstract groups into one about coverings of the line and rational specialization—a viewpoint that still organizes the entire field. Although Hilbert did not state the universal conjecture ("every finite group is a Galois group over $\mathbb{Q}$") as a formal problem on his famous 1900 list, his methods and examples made it the natural and inevitable question, and the problem is universally attributed to this body of work.
+
+Hilbert's broader legacy needs little rehearsal: the 23 problems of 1900 set the century's agenda; *Grundlagen der Geometrie* (1899) reformed the axiomatic method; and his program for the foundations of mathematics, though famously limited by Gödel, shaped logic permanently. The Irreducibility Theorem remains the bridge from the regular inverse problem to the arithmetic one.
+
+## Emmy Noether (1882–1935) — the rationality approach
+
+Emmy Noether, also a Göttingen figure (arriving in 1915 at the invitation of Hilbert and Klein, who fought the faculty's resistance to a woman *Privatdozent*), supplied the second formulation named in this dossier. The founder of modern abstract algebra—her papers on ideal theory in commutative rings (1921) and on noncommutative algebras and representation theory reshaped the subject—Noether approached the inverse problem through invariant theory, the field of her dissertation under Paul Gordan.
+
+Around **1918** she posed what is now the **Noether problem**: given a finite group $G$ acting by permutation of variables on the rational function field $\mathbb{Q}(x_g : g \in G)$, is the fixed field $\mathbb{Q}(x_g)^G$ purely transcendental over $\mathbb{Q}$? If so, the generic extension realizes $G$ regularly, and Hilbert irreducibility then yields $G$ over $\mathbb{Q}$ with strong control. This recast realizability as a problem in birational geometry and rationality of quotient varieties. Noether's reformulation was profoundly influential even though it does not always succeed: Richard Swan (1969) and later Saltman and Bogomolov found groups for which the invariant field is *not* rational (the first being $C_{47}$), revealing the obstruction now measured by the unramified Brauer group. Thus Noether identified both a powerful tool and the precise reason it cannot resolve the problem alone.
+
+Noether's wider legacy spans Noether's theorem linking symmetries to conservation laws in physics, the Lasker–Noether decomposition, and her foundational role in homological and module theory. Forced from Göttingen in 1933, she emigrated to Bryn Mawr College, where she died in 1935. Hilbert's geometric realization and Noether's rationality criterion together frame the two classical attacks on the problem to this day.
