@@ -1,0 +1,29 @@
+{
+  "slug": "riemann-hypothesis",
+  "title": "The Riemann Hypothesis",
+  "field": "Analytic Number Theory",
+  "subfields": [
+    "Complex Analysis",
+    "Spectral Theory",
+    "L-functions"
+  ],
+  "year_posed": 1859,
+  "originators": [
+    "Bernhard Riemann"
+  ],
+  "millennium_prize": true,
+  "statement_plain": "Every non-trivial zero of the Riemann zeta function has real part 1/2.\n",
+  "difficulty": 99,
+  "centrality": 100,
+  "tractability": 8,
+  "status": "open",
+  "tags": [
+    "primes",
+    "zeta",
+    "L-functions",
+    "RH"
+  ],
+  "rank": 1,
+  "css": 89.867,
+  "folder": "riemann-hypothesis"
+}

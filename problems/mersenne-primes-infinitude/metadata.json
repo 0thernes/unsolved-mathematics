@@ -1,0 +1,26 @@
+{
+  "slug": "mersenne-primes-infinitude",
+  "title": "Infinitude of Mersenne Primes",
+  "field": "Number Theory",
+  "subfields": [
+    "Computational Number Theory"
+  ],
+  "year_posed": 1644,
+  "originators": [
+    "Marin Mersenne"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Are there infinitely many primes of the form 2^p - 1?\n",
+  "difficulty": 84,
+  "centrality": 50,
+  "tractability": 20,
+  "status": "open",
+  "tags": [
+    "primes",
+    "mersenne",
+    "GIMPS"
+  ],
+  "rank": 8,
+  "css": 76.6,
+  "folder": "mersenne-primes-infinitude"
+}

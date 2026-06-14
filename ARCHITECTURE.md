@@ -23,7 +23,7 @@
                         │  scripts/generate.py
         ┌───────────────┼─────────────────────────────┐
         ▼               ▼                               ▼
- data/problems.json   RANKING.md / README table   problems/NNN-slug/*.md
+ data/problems.json   RANKING.md / README table   problems/<slug>/*.md
  (computed registry)  (generated views)           (scaffolded dossiers)
         │                                               │
         │                                  rag/build_corpus.py
@@ -49,15 +49,17 @@ editorial estimates; `year_posed` may be negative (BCE).
 - validates the registry,
 - computes CSS and the canonical rank,
 - writes `data/problems.json`, `RANKING.md`, and patches the README ranking block,
-- scaffolds each `problems/NNN-slug/` folder with eight dossier files + `metadata.json` + `rag/`.
+- scaffolds each `problems/<slug>/` folder with eight dossier files + `metadata.json` + `rag/`.
 
 Idempotency rule: prose files are written **only if absent**; `metadata.json` is
 always regenerated (it is fully derived).
 
-### 3.3 Dossier (`problems/NNN-slug/`)
+### 3.3 Dossier (`problems/<slug>/`)
 The unit of knowledge. Eight markdown files (see README) plus a machine record.
-Folder prefix `NNN` is the current rank, so the directory listing *is* the
-ranking. (Ranks can shift as scores are refined; the slug is the stable key.)
+Folders are keyed by the **stable slug**, never by rank — ranks shift as scores
+are refined, so the rank lives in `metadata.json` and `RANKING.md` instead. The
+generator reconciles the tree on every run: orphaned, unauthored folders (whose
+slug left the registry) are removed; authored orphans are flagged, never deleted.
 
 ### 3.4 RAG layer (`rag/`)
 Heading-aware, token-aware chunker → JSONL corpus → BM25 (zero-dep) or dense
@@ -133,7 +135,7 @@ Adding a problem is a one-file change plus one command:
 # 2. rebuild
 python scripts/generate.py
 python rag/build_corpus.py
-# 3. flesh out the new problems/NNN-slug/*.md dossier
+# 3. flesh out the new problems/<slug>/*.md dossier
 ```
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the authoring and sourcing standards.

@@ -115,7 +115,7 @@ def build() -> int:
         if not folder.is_dir():
             continue
         meta = load_metadata(folder)
-        slug = meta.get("slug", folder.name.split("-", 1)[-1])
+        slug = meta.get("slug", folder.name)
         for section in SECTION_FILES:
             doc = folder / f"{section}.md"
             if not doc.exists():

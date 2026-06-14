@@ -12,7 +12,7 @@ Promote an `ai-suggested` or `needs-verification` paper/person to `verified`.
 4. Note the date in the PR. See [SOURCING.md](docs/methodology/SOURCING.md).
 
 ## 2. Author or deepen a dossier
-Fill the eight section files of a `problems/NNN-slug/` folder with real,
+Fill the eight section files of a `problems/<slug>/` folder with real,
 flagged content. Remove the `<!-- DOSSIER:* -->` markers as you complete each
 section. Targets: ≥25 papers, ≥10 mathematicians, with verification flags.
 

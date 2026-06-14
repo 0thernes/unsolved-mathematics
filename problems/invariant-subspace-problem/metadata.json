@@ -1,0 +1,26 @@
+{
+  "slug": "invariant-subspace-problem",
+  "title": "The Invariant Subspace Problem",
+  "field": "Functional Analysis",
+  "subfields": [
+    "Operator Theory"
+  ],
+  "year_posed": 1935,
+  "originators": [
+    "John von Neumann (informal)"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Does every bounded linear operator on a separable infinite-dimensional complex Hilbert space have a non-trivial closed invariant subspace?\n",
+  "difficulty": 88,
+  "centrality": 58,
+  "tractability": 21,
+  "status": "active-progress",
+  "tags": [
+    "operators",
+    "Hilbert-space",
+    "invariant-subspaces"
+  ],
+  "rank": 22,
+  "css": 66.5,
+  "folder": "invariant-subspace-problem"
+}

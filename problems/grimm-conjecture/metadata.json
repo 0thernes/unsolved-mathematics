@@ -1,0 +1,26 @@
+{
+  "slug": "grimm-conjecture",
+  "title": "Grimm's Conjecture",
+  "field": "Number Theory",
+  "subfields": [
+    "Distinct Prime Factors"
+  ],
+  "year_posed": 1969,
+  "originators": [
+    "Carl Albert Grimm"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Consecutive composite numbers can be assigned distinct prime divisors, one dividing each.\n",
+  "difficulty": 78,
+  "centrality": 32,
+  "tractability": 33,
+  "status": "open",
+  "tags": [
+    "primes",
+    "consecutive",
+    "factorization"
+  ],
+  "rank": 36,
+  "css": 51.233,
+  "folder": "grimm-conjecture"
+}

@@ -1,0 +1,28 @@
+{
+  "slug": "lonely-runner-conjecture",
+  "title": "The Lonely Runner Conjecture",
+  "field": "Number Theory / Combinatorics",
+  "subfields": [
+    "Diophantine Approximation",
+    "Geometry of Numbers"
+  ],
+  "year_posed": 1967,
+  "originators": [
+    "Jörg M. Wills",
+    "T. W. Cusick (independent)"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "For k runners on a unit circular track with distinct constant speeds, each runner is at some moment at distance >= 1/(k) from all others.\n",
+  "difficulty": 79,
+  "centrality": 46,
+  "tractability": 40,
+  "status": "active-progress",
+  "tags": [
+    "diophantine",
+    "view-obstruction",
+    "covering"
+  ],
+  "rank": 31,
+  "css": 55.267,
+  "folder": "lonely-runner-conjecture"
+}

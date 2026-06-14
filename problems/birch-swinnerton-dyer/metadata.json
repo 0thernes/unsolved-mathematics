@@ -1,0 +1,30 @@
+{
+  "slug": "birch-swinnerton-dyer",
+  "title": "The Birch and Swinnerton-Dyer Conjecture",
+  "field": "Number Theory",
+  "subfields": [
+    "Arithmetic Geometry",
+    "Elliptic Curves",
+    "L-functions"
+  ],
+  "year_posed": 1965,
+  "originators": [
+    "Bryan Birch",
+    "Peter Swinnerton-Dyer"
+  ],
+  "millennium_prize": true,
+  "statement_plain": "The rank of the group of rational points of an elliptic curve equals the order of vanishing of its L-function at s = 1.\n",
+  "difficulty": 96,
+  "centrality": 92,
+  "tractability": 12,
+  "status": "open",
+  "tags": [
+    "elliptic-curves",
+    "L-functions",
+    "rational-points",
+    "BSD"
+  ],
+  "rank": 6,
+  "css": 78.8,
+  "folder": "birch-swinnerton-dyer"
+}

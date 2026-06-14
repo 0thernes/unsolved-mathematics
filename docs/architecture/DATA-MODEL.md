@@ -76,7 +76,8 @@ retrieval chunk, carrying `slug`, `rank`, `section`, `heading`, `text`,
 
 ## Identity & keys
 
-- **Problem identity** = `slug` (stable). The numeric folder prefix `NNN` is the
-  *current rank* and may change as scores are refined; never key off it.
+- **Problem identity** = `slug` (stable). Folders are named by slug; the
+  *rank* is a derived field in `metadata.json` / `RANKING.md` and may change as
+  scores are refined — never key off rank.
 - **Cross-references** between problems use `slug` (e.g. RH ↔ Montgomery pair
   correlation ↔ Hardy–Littlewood).

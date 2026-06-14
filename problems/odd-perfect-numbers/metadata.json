@@ -1,0 +1,27 @@
+{
+  "slug": "odd-perfect-numbers",
+  "title": "Existence of Odd Perfect Numbers",
+  "field": "Number Theory",
+  "subfields": [
+    "Multiplicative Number Theory"
+  ],
+  "year_posed": -300,
+  "originators": [
+    "Euclid",
+    "Nicomachus of Gerasa"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Does there exist an odd number equal to the sum of its proper divisors?\n",
+  "difficulty": 85,
+  "centrality": 55,
+  "tractability": 22,
+  "status": "open",
+  "tags": [
+    "perfect-numbers",
+    "divisors",
+    "ancient"
+  ],
+  "rank": 7,
+  "css": 78.3,
+  "folder": "odd-perfect-numbers"
+}

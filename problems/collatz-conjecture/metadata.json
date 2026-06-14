@@ -1,0 +1,27 @@
+{
+  "slug": "collatz-conjecture",
+  "title": "The Collatz Conjecture",
+  "field": "Number Theory / Dynamical Systems",
+  "subfields": [
+    "Arithmetic Dynamics",
+    "Ergodic Theory"
+  ],
+  "year_posed": 1937,
+  "originators": [
+    "Lothar Collatz"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Iterating n -> n/2 (even) or 3n+1 (odd) eventually reaches 1 for every positive integer.\n",
+  "difficulty": 91,
+  "centrality": 60,
+  "tractability": 10,
+  "status": "open",
+  "tags": [
+    "iteration",
+    "3n+1",
+    "dynamics"
+  ],
+  "rank": 16,
+  "css": 69.267,
+  "folder": "collatz-conjecture"
+}

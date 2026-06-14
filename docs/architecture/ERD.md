@@ -151,11 +151,11 @@ The logical model is denormalized onto the filesystem:
 
 | Logical entity | Physical storage |
 |----------------|------------------|
-| PROBLEM (attributes) | `data/problems.yaml` entry + `problems/NNN-slug/metadata.json` |
-| PROBLEM ↔ PAPER | `problems/NNN-slug/papers.md` (table) |
-| PROBLEM ↔ MATHEMATICIAN | `problems/NNN-slug/mathematicians.md` + `originator.md` |
-| PROBLEM ↔ APPROACH | `problems/NNN-slug/approaches.md` |
-| PROBLEM ↔ ATTEMPT | `problems/NNN-slug/attempts.md` |
+| PROBLEM (attributes) | `data/problems.yaml` entry + `problems/<slug>/metadata.json` |
+| PROBLEM ↔ PAPER | `problems/<slug>/papers.md` (table) |
+| PROBLEM ↔ MATHEMATICIAN | `problems/<slug>/mathematicians.md` + `originator.md` |
+| PROBLEM ↔ APPROACH | `problems/<slug>/approaches.md` |
+| PROBLEM ↔ ATTEMPT | `problems/<slug>/attempts.md` |
 | derived `css`, `rank` | computed by `generate.py`, persisted to `problems.json` |
 | retrieval projection | `rag/corpus.jsonl` (chunked view of all of the above) |
 

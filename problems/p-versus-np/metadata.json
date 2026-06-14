@@ -1,0 +1,31 @@
+{
+  "slug": "p-versus-np",
+  "title": "P versus NP",
+  "field": "Computational Complexity Theory",
+  "subfields": [
+    "Logic",
+    "Combinatorics",
+    "Cryptography"
+  ],
+  "year_posed": 1971,
+  "originators": [
+    "Stephen Cook",
+    "Leonid Levin",
+    "Kurt Gödel (1956 letter)"
+  ],
+  "millennium_prize": true,
+  "statement_plain": "Is every problem whose solution can be verified quickly also solvable quickly? Formally, does P = NP?\n",
+  "difficulty": 98,
+  "centrality": 99,
+  "tractability": 6,
+  "status": "open",
+  "tags": [
+    "complexity",
+    "algorithms",
+    "logic",
+    "cryptography"
+  ],
+  "rank": 3,
+  "css": 81.9,
+  "folder": "p-versus-np"
+}

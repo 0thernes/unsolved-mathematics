@@ -7,7 +7,7 @@ human-readable dossier doubles as a retrieval corpus. This directory turns the
 ## Pipeline
 
 ```
-data/problems.yaml ──generate.py──▶ problems/NNN-slug/*.md
+data/problems.yaml ──generate.py──▶ problems/<slug>/*.md
                                           │
                                 build_corpus.py   (heading-aware, token-aware chunking)
                                           ▼

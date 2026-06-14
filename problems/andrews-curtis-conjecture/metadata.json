@@ -1,0 +1,28 @@
+{
+  "slug": "andrews-curtis-conjecture",
+  "title": "The Andrews–Curtis Conjecture",
+  "field": "Geometric Group Theory",
+  "subfields": [
+    "Combinatorial Group Theory",
+    "Low-Dimensional Topology"
+  ],
+  "year_posed": 1965,
+  "originators": [
+    "James J. Andrews",
+    "Morton L. Curtis"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Every balanced presentation of the trivial group can be reduced to the trivial presentation by elementary (Andrews–Curtis) moves.\n",
+  "difficulty": 81,
+  "centrality": 41,
+  "tractability": 31,
+  "status": "active-progress",
+  "tags": [
+    "group-presentations",
+    "AC-moves",
+    "topology"
+  ],
+  "rank": 29,
+  "css": 55.6,
+  "folder": "andrews-curtis-conjecture"
+}

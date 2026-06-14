@@ -100,7 +100,7 @@ def validate(problems: list[dict]) -> list[str]:
 # --------------------------------------------------------------------------- #
 def dossier_templates(p: dict, rank: int, css: float) -> dict[str, str]:
     title = p["title"]
-    folder = f"{rank:03d}-{p['slug']}"
+    folder = p["slug"]  # stable, slug-only folder name (rank lives in metadata)
     origin = ", ".join(p["originators"])
     head = (
         f"# {title}\n\n"
@@ -159,8 +159,7 @@ def ranking_table(ranked: list[tuple[int, float, dict]]) -> str:
         "|---|---------|-------|-------|-----|-----------|--------|----|",
     ]
     for rank, css, p in ranked:
-        folder = f"{rank:03d}-{p['slug']}"
-        link = f"[{p['title']}](problems/{folder}/README.md)"
+        link = f"[{p['title']}](problems/{p['slug']}/README.md)"
         mp = "✅" if p["millennium_prize"] else ""
         rows.append(
             f"| {rank} | {link} | {p['field']} | {fmt_year(p['year_posed'])} "
@@ -192,10 +191,49 @@ def patch_readme(ranked):
         README.write_text(pre + block + post, encoding="utf-8")
 
 
+TEMPLATE_MARKER = "<!-- DOSSIER:"
+
+
+def _is_unauthored(folder: Path) -> bool:
+    """A folder is 'unauthored' if every section file still holds its template
+    marker (or no section files exist). Such folders are safe to remove."""
+    section_files = list(folder.glob("*.md"))
+    if not section_files:
+        return True
+    for md in section_files:
+        if md.name == "README.md":
+            continue
+        if TEMPLATE_MARKER not in md.read_text(encoding="utf-8"):
+            return False
+    return True
+
+
+def reconcile(desired_slugs: set[str]) -> tuple[int, list[str]]:
+    """Remove orphan folders (slug no longer in registry) that are unauthored;
+    warn about authored orphans so human work is never silently deleted."""
+    import shutil
+
+    removed, warnings = 0, []
+    if not PROBLEMS_DIR.exists():
+        return 0, warnings
+    for folder in PROBLEMS_DIR.iterdir():
+        if not folder.is_dir() or folder.name in desired_slugs:
+            continue
+        if _is_unauthored(folder):
+            shutil.rmtree(folder)
+            removed += 1
+        else:
+            warnings.append(
+                f"orphan folder '{folder.name}' has authored content but no registry "
+                f"entry — left in place; rename its slug or remove manually."
+            )
+    return removed, warnings
+
+
 def scaffold(ranked):
     created = 0
     for rank, css, p in ranked:
-        folder = PROBLEMS_DIR / f"{rank:03d}-{p['slug']}"
+        folder = PROBLEMS_DIR / p["slug"]
         for rel, content in dossier_templates(p, rank, css).items():
             path = folder / rel
             if path.exists():
@@ -248,9 +286,15 @@ def main() -> int:
         encoding="utf-8",
     )
     write_ranking_md(ranked, meta)
+    desired = {p["slug"] for _, _, p in ranked}
+    removed, warnings = reconcile(desired)
+    for w in warnings:
+        print("  WARN: " + w, file=sys.stderr)
     created = scaffold(ranked)
     patch_readme(ranked)
 
+    if removed:
+        print(f"Reconciled: removed {removed} orphan folder(s).")
     print(f"Built {len(ranked)} problems · scaffolded {created} new files.")
     print(f"  -> {REGISTRY_JSON.relative_to(ROOT)}")
     print(f"  -> {RANKING_MD.relative_to(ROOT)}")
