@@ -44,6 +44,11 @@ jobs:
       - name: Build RAG corpus
         run: python rag/build_corpus.py
 
+      - name: Meta-analysis integrity gate
+        run: |
+          python scripts/check_papers.py
+          python scripts/build_review_register.py
+
       - name: Run tests
         run: |
           pip install pytest

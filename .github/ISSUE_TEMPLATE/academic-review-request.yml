@@ -1,0 +1,53 @@
+name: 🎓 Academic review / referee response
+description: For academics reviewing a meta-analysis, or to request human review of one.
+title: "[review] <problem slug> — <accept / revise / reject / request>"
+labels: ["academic-review"]
+body:
+  - type: input
+    id: slug
+    attributes:
+      label: Problem slug
+      placeholder: "riemann-hypothesis"
+    validations:
+      required: true
+  - type: dropdown
+    id: role
+    attributes:
+      label: Are you reviewing, or requesting a review?
+      options:
+        - I am an academic providing a review/referee verdict
+        - I am requesting that academics review this meta-analysis
+    validations:
+      required: true
+  - type: dropdown
+    id: verdict
+    attributes:
+      label: Verdict (if reviewing)
+      options:
+        - "n/a (requesting review)"
+        - accept
+        - accept-with-revisions
+        - major-revisions
+        - reject
+    validations:
+      required: true
+  - type: textarea
+    id: assessment
+    attributes:
+      label: Assessment / required revisions
+      description: Be specific. Quote any overclaim, error, or unsupported citation.
+    validations:
+      required: true
+  - type: input
+    id: affiliation
+    attributes:
+      label: Affiliation (optional, for credit in AUTHORS.md)
+    validations:
+      required: false
+  - type: checkboxes
+    id: ack
+    attributes:
+      label: Acknowledgement
+      options:
+        - label: I understand this material is AI-generated and not (yet) peer-reviewed.
+          required: true

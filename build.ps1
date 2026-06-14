@@ -11,7 +11,7 @@
 [CmdletBinding()]
 param(
     [Parameter(Position = 0)]
-    [ValidateSet('build', 'check', 'validate', 'corpus', 'index', 'embed', 'query', 'test', 'all', 'clean', 'help')]
+    [ValidateSet('build', 'check', 'validate', 'corpus', 'index', 'papers', 'register', 'embed', 'query', 'test', 'all', 'clean', 'help')]
     [string]$Target = 'help',
 
     [string]$Q = ''
@@ -32,6 +32,8 @@ switch ($Target) {
     'validate' { Invoke-Step 'Validate'                { & $py "$root/scripts/generate.py" --check; & $py "$root/scripts/validate.py" } }
     'corpus'   { Invoke-Step 'Build RAG corpus'        { & $py "$root/rag/build_corpus.py" } }
     'index'    { Invoke-Step 'Build cross-indexes'     { & $py "$root/scripts/build_indexes.py" } }
+    'papers'   { Invoke-Step 'Meta-analysis integrity' { & $py "$root/scripts/check_papers.py" } }
+    'register' { Invoke-Step 'Build review register'   { & $py "$root/scripts/build_review_register.py" } }
     'embed'    { Invoke-Step 'Build dense index'       { & $py "$root/rag/embed_index.py" } }
     'query'    { Invoke-Step "Query: $Q"               { & $py "$root/rag/retriever.py" $Q } }
     'test'     { Invoke-Step 'Run tests'              { & $py "$root/tests/test_atlas.py" } }
@@ -39,6 +41,8 @@ switch ($Target) {
         Invoke-Step 'Regenerate atlas' { & $py "$root/scripts/generate.py" }
         Invoke-Step 'Build RAG corpus' { & $py "$root/rag/build_corpus.py" }
         Invoke-Step 'Build cross-indexes' { & $py "$root/scripts/build_indexes.py" }
+        Invoke-Step 'Build review register' { & $py "$root/scripts/build_review_register.py" }
+        Invoke-Step 'Meta-analysis integrity' { & $py "$root/scripts/check_papers.py" }
         Invoke-Step 'Validate' { & $py "$root/scripts/generate.py" --check; & $py "$root/scripts/validate.py" }
         Invoke-Step 'Run tests' { & $py "$root/tests/test_atlas.py" }
     }

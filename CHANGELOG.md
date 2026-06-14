@@ -5,6 +5,25 @@ Format follows [Keep a Changelog](https://keepachangelog.com/); versions follow
 [SemVer](https://semver.org/) on the *structure/schema* (content grows
 continuously between structural versions).
 
+## [0.2.0] — 2026-06-14
+### Added
+- **Authorship & accreditation to Alexander Donahue** (human-in-the-loop):
+  copyright holder on CC BY 4.0 content + MIT code, `CITATION.cff`, `AUTHORS.md`,
+  and README credit.
+- **AI-Reviewed Meta-Analysis framework**: a four-model AI review panel (Grok,
+  Gemini, GPT, Claude) with an honest process spec
+  ([docs/review/AI-META-REVIEW.md](docs/review/AI-META-REVIEW.md)), review record
+  schema, panel prompt/record template, and an auto-generated review register.
+- **Academic-review option**: how-to and responsible-outreach protocol
+  ([docs/review/ACADEMIC-REVIEW.md](docs/review/ACADEMIC-REVIEW.md)), an
+  academic-review issue template, and an outreach tracker (`SUBMISSIONS.md`).
+- **`meta-analyses/`**: AI-assisted meta-analysis write-ups (one per problem),
+  each accredited to the author, AI-reviewed in-house by Claude with pending
+  slots for GPT/Gemini/Grok, and clearly labeled AI-generated / not peer-reviewed.
+- **Integrity gate** `scripts/check_papers.py` (CI-enforced): rejects any
+  meta-analysis lacking the honesty banner, accreditation, or review block, or
+  containing a "solved" overclaim. Repository made **public**.
+
 ## [Unreleased]
 ### Added
 - **Expanded to 106 problems** (wave 4 — crossed 100): added 21 spanning harmonic

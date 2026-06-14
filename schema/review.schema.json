@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/0thernes/unsolved-mathematics/schema/review.schema.json",
+  "title": "Atlas — Meta-Analysis Review Record (YAML front matter)",
+  "description": "Front matter carried by every meta-analyses/<slug>.md document.",
+  "type": "object",
+  "required": ["title", "slug", "author", "type", "peer_reviewed", "ai_review", "human_review"],
+  "additionalProperties": true,
+  "properties": {
+    "title": { "type": "string" },
+    "slug": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "author": { "type": "string", "const": "Alexander Donahue" },
+    "type": { "type": "string", "const": "ai-assisted-meta-analysis" },
+    "peer_reviewed": { "type": "boolean", "const": false },
+    "problem_status": { "type": "string" },
+    "ai_review": {
+      "type": "object",
+      "required": ["claude", "gpt", "gemini", "grok"],
+      "additionalProperties": false,
+      "properties": {
+        "claude": { "$ref": "#/$defs/modelReview" },
+        "gpt": { "$ref": "#/$defs/modelReview" },
+        "gemini": { "$ref": "#/$defs/modelReview" },
+        "grok": { "$ref": "#/$defs/modelReview" }
+      }
+    },
+    "human_review": {
+      "type": "string",
+      "enum": ["pending", "in-progress", "reviewed", "verified", "revisions-requested"]
+    }
+  },
+  "$defs": {
+    "modelReview": {
+      "type": "object",
+      "required": ["verdict"],
+      "additionalProperties": true,
+      "properties": {
+        "verdict": {
+          "type": "string",
+          "enum": ["pending", "accept", "accept-with-revisions", "major-revisions", "reject"]
+        },
+        "date": { "type": "string" },
+        "version": { "type": "string" },
+        "summary": { "type": "string" }
+      }
+    }
+  }
+}

@@ -4,7 +4,7 @@
 PY ?= python
 
 .DEFAULT_GOAL := help
-.PHONY: help build check validate corpus index embed query test clean all
+.PHONY: help build check validate corpus index embed query test clean all papers register
 
 help:  ## Show this help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | \
@@ -25,6 +25,12 @@ corpus:  ## Build the RAG retrieval corpus (rag/corpus.jsonl)
 index:  ## Build cross-cutting indexes under docs/indexes/
 	$(PY) scripts/build_indexes.py
 
+papers:  ## Integrity-gate the meta-analyses (honesty banner, no overclaims)
+	$(PY) scripts/check_papers.py
+
+register:  ## Rebuild the AI-review register (docs/review/REGISTER.md)
+	$(PY) scripts/build_review_register.py
+
 embed:  ## Build the dense vector index (needs requirements-rag.txt)
 	$(PY) rag/embed_index.py
 
@@ -34,7 +40,7 @@ query:  ## Query the corpus: make query Q="bounded gaps between primes"
 test:  ## Run the test suite
 	$(PY) -m pytest -q || $(PY) tests/test_atlas.py
 
-all: build corpus index check test  ## Full local build + checks
+all: build corpus index register check papers test  ## Full local build + checks
 
 clean:  ## Remove generated, rebuildable artifacts (keeps dossiers)
 	rm -f rag/index.npz

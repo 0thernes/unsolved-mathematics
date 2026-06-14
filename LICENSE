@@ -1,6 +1,9 @@
 Creative Commons Attribution 4.0 International (CC BY 4.0)
 =========================================================
 
+Copyright (c) 2026 Alexander Donahue (GitHub: 0thernes; contact: 0_0@0thernes.art).
+Author, curator, and Human-in-the-Loop of The Unsolved Mathematics Atlas.
+
 The PROSE AND DATA content of The Unsolved Mathematics Atlas (everything under
 problems/, docs/, data/, and the markdown documentation) is licensed under the
 Creative Commons Attribution 4.0 International License.
@@ -11,8 +14,9 @@ You are free to:
     even commercially
 
 Under the following terms:
-  - Attribution — You must give appropriate credit to "The Unsolved Mathematics
-    Atlas", provide a link to the license, and indicate if changes were made.
+  - Attribution — You must give appropriate credit to "Alexander Donahue,
+    The Unsolved Mathematics Atlas", provide a link to the license, and indicate
+    if changes were made. A suggested citation is provided in CITATION.cff.
 
 Full license text: https://creativecommons.org/licenses/by/4.0/legalcode
 

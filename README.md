@@ -7,7 +7,7 @@
 **Each problem gets its own world — origin, the mind that posed it, every serious attack on it,
 the 25 papers that matter, the 10 people who matter, and a retrieval-ready knowledge base.**
 
-`v0.1.0` · branch `main` · **106 problems** and growing · built for humans **and** machines
+`v0.2.0` · branch `main` · **106 problems** · author **Alexander Donahue** · built for humans **and** machines
 
 [Master Ranking](RANKING.md) · [Architecture](ARCHITECTURE.md) · [Philosophy](PHILOSOPHY.md) · [Kanban](docs/kanban/KANBAN.md) · [Methodology](docs/methodology/RANKING.md) · [RAG](rag/README.md) · [Glossary](docs/GLOSSARY.md) · [Indexes](docs/indexes/) · [Contribute](CONTRIBUTING.md)
 
@@ -197,10 +197,13 @@ unsolved-mathematics/
 ├── problems/
 │   └── <slug>/               ← one self-contained dossier per problem (rank in metadata)
 ├── rag/                      ← corpus builder, embedder, retriever
+├── meta-analyses/            ← AI-assisted meta-analysis write-ups, one per problem
 ├── docs/
 │   ├── architecture/         ← ER model, data model, diagrams
 │   ├── methodology/          ← ranking formula, sourcing standards
+│   ├── review/               ← AI-review process, panel template, register, academic review
 │   └── kanban/               ← the research board
+├── AUTHORS.md · SUBMISSIONS.md   ← credit (Alexander Donahue) · outreach tracker
 └── .github/                  ← CI/CD, issue & PR templates
 ```
 
@@ -223,9 +226,33 @@ See [PHILOSOPHY.md](PHILOSOPHY.md) and [docs/methodology/SOURCING.md](docs/metho
 This is an active, living research instrument. Progress is tracked on the
 [Kanban board](docs/kanban/KANBAN.md) and in [CHANGELOG.md](CHANGELOG.md).
 
+## Author & accreditation
+
+**Alexander Donahue** ([@0thernes](https://github.com/0thernes)) — author, curator,
+and **human-in-the-loop**. He defines the scope, methodology, ranking, and
+integrity policy, and accredits every meta-analysis produced here. AI assistance
+is disclosed throughout (see [AUTHORS.md](AUTHORS.md)).
+
+## AI-Reviewed Meta-Analyses & academic review
+
+Each problem can be written up as an **AI-assisted meta-analysis**, curated by the
+author and passed through a **four-model AI review panel** — Grok (xAI), Gemini
+(Google), GPT (OpenAI), and Claude (Anthropic) — before being offered for **human
+academic verification**.
+
+- 🧪 [AI Meta-Review process](docs/review/AI-META-REVIEW.md) — what "AI-Reviewed Meta-Analysis" means (and what it does **not**)
+- 🎓 [Request academic review](docs/review/ACADEMIC-REVIEW.md) — how professors, institutes, and journals can review or verify this work
+- 📄 [Meta-analyses](meta-analyses/) — the curated write-ups, one per problem
+- 🗒️ [Review register](docs/review/REGISTER.md) · [Outreach tracker](SUBMISSIONS.md)
+
+> **Honesty banner.** AI review is **not** a substitute for human peer review. Every
+> meta-analysis is clearly labeled AI-generated and not-yet-peer-reviewed; the path
+> to human verification is explicit. This transparency is the point.
+
 ## License
 
-Content under [CC BY 4.0](LICENSE); code under [MIT](LICENSE-CODE). Cite generously.
+Content under [CC BY 4.0](LICENSE) © **Alexander Donahue**; code under
+[MIT](LICENSE-CODE). Reuse freely **with attribution** — see [CITATION.cff](CITATION.cff).
 
 <div align="center">
 

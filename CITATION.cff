@@ -1,24 +1,32 @@
 cff-version: 1.2.0
 title: "The Unsolved Mathematics Atlas"
-message: "If you use this atlas, please cite it."
+message: "If you use this atlas or its meta-analyses, please cite it as below."
 type: dataset
 authors:
-  - name: "The Unsolved Mathematics Atlas contributors"
+  - family-names: "Donahue"
+    given-names: "Alexander"
     alias: "0thernes"
+    email: "0_0@0thernes.art"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"  # add your ORCID if you have one
 repository-code: "https://github.com/0thernes/unsolved-mathematics"
+url: "https://github.com/0thernes/unsolved-mathematics"
 abstract: >
   An exhaustive, ranked, research-grade dossier collection of humanity's open
-  mathematical problems. Each problem includes its history, originator
-  biography, attack strategies, notable attempts, 25 key papers, 10 key
-  mathematicians, and a retrieval-augmented knowledge corpus. Problems are
-  ranked by a transparent, reproducible Composite Severity Score.
+  mathematical problems (106 problems across 38 fields). Each problem includes
+  its history, originator biography, attack strategies, notable attempts, 25 key
+  papers, 10 key mathematicians, and a retrieval-augmented knowledge corpus.
+  Problems are ranked by a transparent, reproducible Composite Severity Score.
+  Accompanying AI-assisted meta-analyses are curated by the human-in-the-loop
+  author and undergo a multi-model AI review panel (Grok, Gemini, GPT, Claude)
+  prior to human academic verification.
 keywords:
   - mathematics
   - open problems
   - conjectures
-  - number theory
+  - meta-analysis
+  - AI-assisted research
   - retrieval-augmented generation
   - knowledge base
 license: CC-BY-4.0
-version: 0.1.0
+version: 0.2.0
 date-released: 2026-06-14
