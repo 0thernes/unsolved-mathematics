@@ -1,0 +1,72 @@
+{
+  "mode": "table",
+  "scan_floor": 15443807723,
+  "g_upper_hypothesis": 19.982226683919038,
+  "borel_cantelli_ceiling": 19.982226683919038,
+  "lemma_gamma_tau": "If gamma(n) <= G for all n, then tau(n) <= G log2(n); band k empty at ceiling hi if G log2(hi) < tau_min(k).",
+  "lemma_gamma_floor": "Terras violation in band k implies gamma >= gamma_floor(k) (RECORD-BAND, proved).",
+  "measured_max_gamma": 16.3233,
+  "terras_verified_through": 60000000000,
+  "bands_would_close_under_G": 4,
+  "first_open_under_G": null,
+  "rows": [
+    {
+      "band_k": 12,
+      "q_k": 111202,
+      "status_structural": "SCAN_GAP",
+      "log2_n_ceiling": 33.846,
+      "tau_min": 176252,
+      "gamma_floor": 5183.9,
+      "g_upper_assumed": 19.982226683919038,
+      "tau_implied_at_ceiling": 676.3,
+      "pinch_ratio_tau": 260.6,
+      "pinch_ratio_gamma_floor": 259.4,
+      "closes_via_gamma_lemma": true,
+      "closes_via_gamma_floor_only": true
+    },
+    {
+      "band_k": 13,
+      "q_k": 190537,
+      "status_structural": "SCAN_GAP",
+      "log2_n_ceiling": 40.426,
+      "tau_min": 301994,
+      "gamma_floor": 7365.7,
+      "g_upper_assumed": 19.982226683919038,
+      "tau_implied_at_ceiling": 807.8,
+      "pinch_ratio_tau": 373.8,
+      "pinch_ratio_gamma_floor": 368.6,
+      "closes_via_gamma_lemma": true,
+      "closes_via_gamma_floor_only": true
+    },
+    {
+      "band_k": 14,
+      "q_k": 10590737,
+      "status_structural": "SCAN_GAP",
+      "log2_n_ceiling": 46.525,
+      "tau_min": 16785922,
+      "gamma_floor": 357147.3,
+      "g_upper_assumed": 19.982226683919038,
+      "tau_implied_at_ceiling": 929.7,
+      "pinch_ratio_tau": 18055.7,
+      "pinch_ratio_gamma_floor": 17873.2,
+      "closes_via_gamma_lemma": true,
+      "closes_via_gamma_floor_only": true
+    },
+    {
+      "band_k": 15,
+      "q_k": 10781274,
+      "status_structural": "SCAN_GAP",
+      "log2_n_ceiling": 48.65,
+      "tau_min": 17087915,
+      "gamma_floor": 348733.0,
+      "g_upper_assumed": 19.982226683919038,
+      "tau_implied_at_ceiling": 972.1,
+      "pinch_ratio_tau": 17577.7,
+      "pinch_ratio_gamma_floor": 17452.2,
+      "closes_via_gamma_lemma": true,
+      "closes_via_gamma_floor_only": true
+    }
+  ],
+  "honesty": "Hypothetical G only. Collatz OPEN. Proving G globally would close Terras structurally; measured max gamma does not.",
+  "elapsed_seconds": 0.004
+}

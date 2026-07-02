@@ -96,6 +96,8 @@ Pinch ratio ≈ **458×** (`band13_plan.json`). This would close band 13 without
 ## Reproduce
 
 ```powershell
+python experiments/collatz_gamma_pinch.py selftest
+python experiments/collatz_gamma_pinch.py table --out experiments/results/gamma_pinch_table.json
 python experiments/collatz_record_band.py theorem --digits 320 --out experiments/results/record_band_theorem.json
 python experiments/collatz_gap_scanner.py ladder --scan-floor 15443807723 --closed-bands 10,11,12
 python experiments/collatz_gap_scanner.py band-plan --scan-floor 15443807723 --band-k 13

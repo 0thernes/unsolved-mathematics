@@ -1,0 +1,3887 @@
+{
+  "direct_feature_evaluations": {
+    "child_mod1024": {
+      "bucket_count": 60,
+      "features": [
+        "child_mod1024"
+      ],
+      "is_pure": false,
+      "memory_covered_by_pure_keys": 0,
+      "memory_key_count": 4,
+      "memory_keys": [
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 6
+          },
+          "key": "447"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 10
+          },
+          "key": "719"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 10
+          },
+          "key": "751"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 14
+          },
+          "key": "871"
+        }
+      ],
+      "memory_record_count": 6,
+      "mixed_bucket_count": 4,
+      "mixed_examples": [
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 6
+          },
+          "key": "447"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 10
+          },
+          "key": "719"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 10
+          },
+          "key": "751"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 14
+          },
+          "key": "871"
+        }
+      ],
+      "terminal_covered_by_pure_keys": 294,
+      "terminal_key_count": 60,
+      "terminal_record_count": 334
+    },
+    "child_mod1024_event_step": {
+      "bucket_count": 101,
+      "features": [
+        "child_mod1024",
+        "event_step"
+      ],
+      "is_pure": false,
+      "memory_covered_by_pure_keys": 3,
+      "memory_key_count": 4,
+      "memory_keys": [
+        {
+          "counts": {
+            "memory_lag_8": 2
+          },
+          "key": "447|38"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 3
+          },
+          "key": "719|38"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1
+          },
+          "key": "751|38"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 3
+          },
+          "key": "871|38"
+        }
+      ],
+      "memory_record_count": 6,
+      "mixed_bucket_count": 2,
+      "mixed_examples": [
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 3
+          },
+          "key": "719|38"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 3
+          },
+          "key": "871|38"
+        }
+      ],
+      "terminal_covered_by_pure_keys": 328,
+      "terminal_key_count": 99,
+      "terminal_record_count": 334
+    },
+    "child_mod1024_terminal_current_form": {
+      "bucket_count": 101,
+      "features": [
+        "child_mod1024",
+        "terminal_current_form"
+      ],
+      "is_pure": false,
+      "memory_covered_by_pure_keys": 3,
+      "memory_key_count": 4,
+      "memory_keys": [
+        {
+          "counts": {
+            "memory_lag_8": 2
+          },
+          "key": "447|step=35;constant=-22.001000000000"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 3
+          },
+          "key": "719|step=35;constant=-22.001000000000"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1
+          },
+          "key": "751|step=35;constant=-22.001000000000"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 3
+          },
+          "key": "871|step=35;constant=-22.001000000000"
+        }
+      ],
+      "memory_record_count": 6,
+      "mixed_bucket_count": 2,
+      "mixed_examples": [
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 3
+          },
+          "key": "719|step=35;constant=-22.001000000000"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 3
+          },
+          "key": "871|step=35;constant=-22.001000000000"
+        }
+      ],
+      "terminal_covered_by_pure_keys": 328,
+      "terminal_key_count": 99,
+      "terminal_record_count": 334
+    },
+    "child_mod1024_terminal_current_gap": {
+      "bucket_count": 101,
+      "features": [
+        "child_mod1024",
+        "terminal_current_gap"
+      ],
+      "is_pure": false,
+      "memory_covered_by_pure_keys": 3,
+      "memory_key_count": 4,
+      "memory_keys": [
+        {
+          "counts": {
+            "memory_lag_8": 2
+          },
+          "key": "447|0.081541375001010298483449"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 3
+          },
+          "key": "719|0.081541375001010298483449"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1
+          },
+          "key": "751|0.081541375001010298483449"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 3
+          },
+          "key": "871|0.081541375001010298483449"
+        }
+      ],
+      "memory_record_count": 6,
+      "mixed_bucket_count": 2,
+      "mixed_examples": [
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 3
+          },
+          "key": "719|0.081541375001010298483449"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 3
+          },
+          "key": "871|0.081541375001010298483449"
+        }
+      ],
+      "terminal_covered_by_pure_keys": 328,
+      "terminal_key_count": 99,
+      "terminal_record_count": 334
+    },
+    "child_mod1024_terminal_step": {
+      "bucket_count": 101,
+      "features": [
+        "child_mod1024",
+        "terminal_step"
+      ],
+      "is_pure": false,
+      "memory_covered_by_pure_keys": 3,
+      "memory_key_count": 4,
+      "memory_keys": [
+        {
+          "counts": {
+            "memory_lag_8": 2
+          },
+          "key": "447|35"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 3
+          },
+          "key": "719|35"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1
+          },
+          "key": "751|35"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 3
+          },
+          "key": "871|35"
+        }
+      ],
+      "memory_record_count": 6,
+      "mixed_bucket_count": 2,
+      "mixed_examples": [
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 3
+          },
+          "key": "719|35"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 3
+          },
+          "key": "871|35"
+        }
+      ],
+      "terminal_covered_by_pure_keys": 328,
+      "terminal_key_count": 99,
+      "terminal_record_count": 334
+    },
+    "child_mod128_event_step": {
+      "bucket_count": 31,
+      "features": [
+        "child_mod128",
+        "event_step"
+      ],
+      "is_pure": false,
+      "memory_covered_by_pure_keys": 0,
+      "memory_key_count": 4,
+      "memory_keys": [
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 9
+          },
+          "key": "103|38"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 5
+          },
+          "key": "111|38"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 3
+          },
+          "key": "63|38"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 4
+          },
+          "key": "79|38"
+        }
+      ],
+      "memory_record_count": 6,
+      "mixed_bucket_count": 4,
+      "mixed_examples": [
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 9
+          },
+          "key": "103|38"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 5
+          },
+          "key": "111|38"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 3
+          },
+          "key": "63|38"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 4
+          },
+          "key": "79|38"
+        }
+      ],
+      "terminal_covered_by_pure_keys": 313,
+      "terminal_key_count": 31,
+      "terminal_record_count": 334
+    },
+    "child_mod128_terminal_current_form": {
+      "bucket_count": 31,
+      "features": [
+        "child_mod128",
+        "terminal_current_form"
+      ],
+      "is_pure": false,
+      "memory_covered_by_pure_keys": 0,
+      "memory_key_count": 4,
+      "memory_keys": [
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 9
+          },
+          "key": "103|step=35;constant=-22.001000000000"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 5
+          },
+          "key": "111|step=35;constant=-22.001000000000"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 3
+          },
+          "key": "63|step=35;constant=-22.001000000000"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 4
+          },
+          "key": "79|step=35;constant=-22.001000000000"
+        }
+      ],
+      "memory_record_count": 6,
+      "mixed_bucket_count": 4,
+      "mixed_examples": [
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 9
+          },
+          "key": "103|step=35;constant=-22.001000000000"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 5
+          },
+          "key": "111|step=35;constant=-22.001000000000"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 3
+          },
+          "key": "63|step=35;constant=-22.001000000000"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 4
+          },
+          "key": "79|step=35;constant=-22.001000000000"
+        }
+      ],
+      "terminal_covered_by_pure_keys": 313,
+      "terminal_key_count": 31,
+      "terminal_record_count": 334
+    },
+    "child_mod128_terminal_current_gap": {
+      "bucket_count": 31,
+      "features": [
+        "child_mod128",
+        "terminal_current_gap"
+      ],
+      "is_pure": false,
+      "memory_covered_by_pure_keys": 0,
+      "memory_key_count": 4,
+      "memory_keys": [
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 9
+          },
+          "key": "103|0.081541375001010298483449"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 5
+          },
+          "key": "111|0.081541375001010298483449"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 3
+          },
+          "key": "63|0.081541375001010298483449"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 4
+          },
+          "key": "79|0.081541375001010298483449"
+        }
+      ],
+      "memory_record_count": 6,
+      "mixed_bucket_count": 4,
+      "mixed_examples": [
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 9
+          },
+          "key": "103|0.081541375001010298483449"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 5
+          },
+          "key": "111|0.081541375001010298483449"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 3
+          },
+          "key": "63|0.081541375001010298483449"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 4
+          },
+          "key": "79|0.081541375001010298483449"
+        }
+      ],
+      "terminal_covered_by_pure_keys": 313,
+      "terminal_key_count": 31,
+      "terminal_record_count": 334
+    },
+    "child_mod128_terminal_step": {
+      "bucket_count": 31,
+      "features": [
+        "child_mod128",
+        "terminal_step"
+      ],
+      "is_pure": false,
+      "memory_covered_by_pure_keys": 0,
+      "memory_key_count": 4,
+      "memory_keys": [
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 9
+          },
+          "key": "103|35"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 5
+          },
+          "key": "111|35"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 3
+          },
+          "key": "63|35"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 4
+          },
+          "key": "79|35"
+        }
+      ],
+      "memory_record_count": 6,
+      "mixed_bucket_count": 4,
+      "mixed_examples": [
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 9
+          },
+          "key": "103|35"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 5
+          },
+          "key": "111|35"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 3
+          },
+          "key": "63|35"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 4
+          },
+          "key": "79|35"
+        }
+      ],
+      "terminal_covered_by_pure_keys": 313,
+      "terminal_key_count": 31,
+      "terminal_record_count": 334
+    },
+    "child_mod2048": {
+      "bucket_count": 101,
+      "features": [
+        "child_mod2048"
+      ],
+      "is_pure": false,
+      "memory_covered_by_pure_keys": 0,
+      "memory_key_count": 5,
+      "memory_keys": [
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 2
+          },
+          "key": "1471"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 7
+          },
+          "key": "1743"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 7
+          },
+          "key": "1895"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 4
+          },
+          "key": "447"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 7
+          },
+          "key": "751"
+        }
+      ],
+      "memory_record_count": 6,
+      "mixed_bucket_count": 5,
+      "mixed_examples": [
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 2
+          },
+          "key": "1471"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 7
+          },
+          "key": "1743"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 7
+          },
+          "key": "1895"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 4
+          },
+          "key": "447"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 7
+          },
+          "key": "751"
+        }
+      ],
+      "terminal_covered_by_pure_keys": 307,
+      "terminal_key_count": 101,
+      "terminal_record_count": 334
+    },
+    "child_mod2048_event_step": {
+      "bucket_count": 147,
+      "features": [
+        "child_mod2048",
+        "event_step"
+      ],
+      "is_pure": false,
+      "memory_covered_by_pure_keys": 3,
+      "memory_key_count": 5,
+      "memory_keys": [
+        {
+          "counts": {
+            "memory_lag_8": 1
+          },
+          "key": "1471|38"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 2
+          },
+          "key": "1743|38"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 1
+          },
+          "key": "1895|38"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1
+          },
+          "key": "447|38"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1
+          },
+          "key": "751|38"
+        }
+      ],
+      "memory_record_count": 6,
+      "mixed_bucket_count": 2,
+      "mixed_examples": [
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 2
+          },
+          "key": "1743|38"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 1
+          },
+          "key": "1895|38"
+        }
+      ],
+      "terminal_covered_by_pure_keys": 331,
+      "terminal_key_count": 144,
+      "terminal_record_count": 334
+    },
+    "child_mod2048_terminal_current_form": {
+      "bucket_count": 147,
+      "features": [
+        "child_mod2048",
+        "terminal_current_form"
+      ],
+      "is_pure": false,
+      "memory_covered_by_pure_keys": 3,
+      "memory_key_count": 5,
+      "memory_keys": [
+        {
+          "counts": {
+            "memory_lag_8": 1
+          },
+          "key": "1471|step=35;constant=-22.001000000000"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 2
+          },
+          "key": "1743|step=35;constant=-22.001000000000"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 1
+          },
+          "key": "1895|step=35;constant=-22.001000000000"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1
+          },
+          "key": "447|step=35;constant=-22.001000000000"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1
+          },
+          "key": "751|step=35;constant=-22.001000000000"
+        }
+      ],
+      "memory_record_count": 6,
+      "mixed_bucket_count": 2,
+      "mixed_examples": [
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 2
+          },
+          "key": "1743|step=35;constant=-22.001000000000"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 1
+          },
+          "key": "1895|step=35;constant=-22.001000000000"
+        }
+      ],
+      "terminal_covered_by_pure_keys": 331,
+      "terminal_key_count": 144,
+      "terminal_record_count": 334
+    },
+    "child_mod2048_terminal_current_gap": {
+      "bucket_count": 147,
+      "features": [
+        "child_mod2048",
+        "terminal_current_gap"
+      ],
+      "is_pure": false,
+      "memory_covered_by_pure_keys": 3,
+      "memory_key_count": 5,
+      "memory_keys": [
+        {
+          "counts": {
+            "memory_lag_8": 1
+          },
+          "key": "1471|0.081541375001010298483449"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 2
+          },
+          "key": "1743|0.081541375001010298483449"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 1
+          },
+          "key": "1895|0.081541375001010298483449"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1
+          },
+          "key": "447|0.081541375001010298483449"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1
+          },
+          "key": "751|0.081541375001010298483449"
+        }
+      ],
+      "memory_record_count": 6,
+      "mixed_bucket_count": 2,
+      "mixed_examples": [
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 2
+          },
+          "key": "1743|0.081541375001010298483449"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 1
+          },
+          "key": "1895|0.081541375001010298483449"
+        }
+      ],
+      "terminal_covered_by_pure_keys": 331,
+      "terminal_key_count": 144,
+      "terminal_record_count": 334
+    },
+    "child_mod2048_terminal_step": {
+      "bucket_count": 147,
+      "features": [
+        "child_mod2048",
+        "terminal_step"
+      ],
+      "is_pure": false,
+      "memory_covered_by_pure_keys": 3,
+      "memory_key_count": 5,
+      "memory_keys": [
+        {
+          "counts": {
+            "memory_lag_8": 1
+          },
+          "key": "1471|35"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 2
+          },
+          "key": "1743|35"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 1
+          },
+          "key": "1895|35"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1
+          },
+          "key": "447|35"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1
+          },
+          "key": "751|35"
+        }
+      ],
+      "memory_record_count": 6,
+      "mixed_bucket_count": 2,
+      "mixed_examples": [
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 2
+          },
+          "key": "1743|35"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 1
+          },
+          "key": "1895|35"
+        }
+      ],
+      "terminal_covered_by_pure_keys": 331,
+      "terminal_key_count": 144,
+      "terminal_record_count": 334
+    },
+    "child_mod256_event_step": {
+      "bucket_count": 44,
+      "features": [
+        "child_mod256",
+        "event_step"
+      ],
+      "is_pure": false,
+      "memory_covered_by_pure_keys": 2,
+      "memory_key_count": 4,
+      "memory_keys": [
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 6
+          },
+          "key": "103|38"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2
+          },
+          "key": "191|38"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 4
+          },
+          "key": "207|38"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 4
+          },
+          "key": "239|38"
+        }
+      ],
+      "memory_record_count": 6,
+      "mixed_bucket_count": 3,
+      "mixed_examples": [
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 6
+          },
+          "key": "103|38"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 4
+          },
+          "key": "207|38"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 4
+          },
+          "key": "239|38"
+        }
+      ],
+      "terminal_covered_by_pure_keys": 320,
+      "terminal_key_count": 43,
+      "terminal_record_count": 334
+    },
+    "child_mod256_terminal_current_form": {
+      "bucket_count": 44,
+      "features": [
+        "child_mod256",
+        "terminal_current_form"
+      ],
+      "is_pure": false,
+      "memory_covered_by_pure_keys": 2,
+      "memory_key_count": 4,
+      "memory_keys": [
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 6
+          },
+          "key": "103|step=35;constant=-22.001000000000"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2
+          },
+          "key": "191|step=35;constant=-22.001000000000"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 4
+          },
+          "key": "207|step=35;constant=-22.001000000000"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 4
+          },
+          "key": "239|step=35;constant=-22.001000000000"
+        }
+      ],
+      "memory_record_count": 6,
+      "mixed_bucket_count": 3,
+      "mixed_examples": [
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 6
+          },
+          "key": "103|step=35;constant=-22.001000000000"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 4
+          },
+          "key": "207|step=35;constant=-22.001000000000"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 4
+          },
+          "key": "239|step=35;constant=-22.001000000000"
+        }
+      ],
+      "terminal_covered_by_pure_keys": 320,
+      "terminal_key_count": 43,
+      "terminal_record_count": 334
+    },
+    "child_mod256_terminal_current_gap": {
+      "bucket_count": 44,
+      "features": [
+        "child_mod256",
+        "terminal_current_gap"
+      ],
+      "is_pure": false,
+      "memory_covered_by_pure_keys": 2,
+      "memory_key_count": 4,
+      "memory_keys": [
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 6
+          },
+          "key": "103|0.081541375001010298483449"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2
+          },
+          "key": "191|0.081541375001010298483449"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 4
+          },
+          "key": "207|0.081541375001010298483449"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 4
+          },
+          "key": "239|0.081541375001010298483449"
+        }
+      ],
+      "memory_record_count": 6,
+      "mixed_bucket_count": 3,
+      "mixed_examples": [
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 6
+          },
+          "key": "103|0.081541375001010298483449"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 4
+          },
+          "key": "207|0.081541375001010298483449"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 4
+          },
+          "key": "239|0.081541375001010298483449"
+        }
+      ],
+      "terminal_covered_by_pure_keys": 320,
+      "terminal_key_count": 43,
+      "terminal_record_count": 334
+    },
+    "child_mod256_terminal_step": {
+      "bucket_count": 44,
+      "features": [
+        "child_mod256",
+        "terminal_step"
+      ],
+      "is_pure": false,
+      "memory_covered_by_pure_keys": 2,
+      "memory_key_count": 4,
+      "memory_keys": [
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 6
+          },
+          "key": "103|35"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2
+          },
+          "key": "191|35"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 4
+          },
+          "key": "207|35"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 4
+          },
+          "key": "239|35"
+        }
+      ],
+      "memory_record_count": 6,
+      "mixed_bucket_count": 3,
+      "mixed_examples": [
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 6
+          },
+          "key": "103|35"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 4
+          },
+          "key": "207|35"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 4
+          },
+          "key": "239|35"
+        }
+      ],
+      "terminal_covered_by_pure_keys": 320,
+      "terminal_key_count": 43,
+      "terminal_record_count": 334
+    },
+    "child_mod4096": {
+      "bucket_count": 150,
+      "features": [
+        "child_mod4096"
+      ],
+      "is_pure": false,
+      "memory_covered_by_pure_keys": 0,
+      "memory_key_count": 5,
+      "memory_keys": [
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 1
+          },
+          "key": "1471"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 2
+          },
+          "key": "1895"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 3
+          },
+          "key": "2495"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 2
+          },
+          "key": "3791"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 5
+          },
+          "key": "751"
+        }
+      ],
+      "memory_record_count": 6,
+      "mixed_bucket_count": 5,
+      "mixed_examples": [
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 1
+          },
+          "key": "1471"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 2
+          },
+          "key": "1895"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 3
+          },
+          "key": "2495"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 2
+          },
+          "key": "3791"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 5
+          },
+          "key": "751"
+        }
+      ],
+      "terminal_covered_by_pure_keys": 321,
+      "terminal_key_count": 150,
+      "terminal_record_count": 334
+    },
+    "child_mod4096_event_step": {
+      "bucket_count": 192,
+      "features": [
+        "child_mod4096",
+        "event_step"
+      ],
+      "is_pure": true,
+      "memory_covered_by_pure_keys": 6,
+      "memory_key_count": 5,
+      "memory_keys": [
+        {
+          "counts": {
+            "memory_lag_8": 1
+          },
+          "key": "1471|38"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2
+          },
+          "key": "1895|38"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1
+          },
+          "key": "2495|38"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1
+          },
+          "key": "3791|38"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1
+          },
+          "key": "751|38"
+        }
+      ],
+      "memory_record_count": 6,
+      "mixed_bucket_count": 0,
+      "mixed_examples": [],
+      "terminal_covered_by_pure_keys": 334,
+      "terminal_key_count": 187,
+      "terminal_record_count": 334
+    },
+    "child_mod4096_terminal_current_form": {
+      "bucket_count": 192,
+      "features": [
+        "child_mod4096",
+        "terminal_current_form"
+      ],
+      "is_pure": true,
+      "memory_covered_by_pure_keys": 6,
+      "memory_key_count": 5,
+      "memory_keys": [
+        {
+          "counts": {
+            "memory_lag_8": 1
+          },
+          "key": "1471|step=35;constant=-22.001000000000"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2
+          },
+          "key": "1895|step=35;constant=-22.001000000000"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1
+          },
+          "key": "2495|step=35;constant=-22.001000000000"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1
+          },
+          "key": "3791|step=35;constant=-22.001000000000"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1
+          },
+          "key": "751|step=35;constant=-22.001000000000"
+        }
+      ],
+      "memory_record_count": 6,
+      "mixed_bucket_count": 0,
+      "mixed_examples": [],
+      "terminal_covered_by_pure_keys": 334,
+      "terminal_key_count": 187,
+      "terminal_record_count": 334
+    },
+    "child_mod4096_terminal_current_gap": {
+      "bucket_count": 192,
+      "features": [
+        "child_mod4096",
+        "terminal_current_gap"
+      ],
+      "is_pure": true,
+      "memory_covered_by_pure_keys": 6,
+      "memory_key_count": 5,
+      "memory_keys": [
+        {
+          "counts": {
+            "memory_lag_8": 1
+          },
+          "key": "1471|0.081541375001010298483449"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2
+          },
+          "key": "1895|0.081541375001010298483449"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1
+          },
+          "key": "2495|0.081541375001010298483449"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1
+          },
+          "key": "3791|0.081541375001010298483449"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1
+          },
+          "key": "751|0.081541375001010298483449"
+        }
+      ],
+      "memory_record_count": 6,
+      "mixed_bucket_count": 0,
+      "mixed_examples": [],
+      "terminal_covered_by_pure_keys": 334,
+      "terminal_key_count": 187,
+      "terminal_record_count": 334
+    },
+    "child_mod4096_terminal_step": {
+      "bucket_count": 192,
+      "features": [
+        "child_mod4096",
+        "terminal_step"
+      ],
+      "is_pure": true,
+      "memory_covered_by_pure_keys": 6,
+      "memory_key_count": 5,
+      "memory_keys": [
+        {
+          "counts": {
+            "memory_lag_8": 1
+          },
+          "key": "1471|35"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2
+          },
+          "key": "1895|35"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1
+          },
+          "key": "2495|35"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1
+          },
+          "key": "3791|35"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1
+          },
+          "key": "751|35"
+        }
+      ],
+      "memory_record_count": 6,
+      "mixed_bucket_count": 0,
+      "mixed_examples": [],
+      "terminal_covered_by_pure_keys": 334,
+      "terminal_key_count": 187,
+      "terminal_record_count": 334
+    },
+    "child_mod512_event_step": {
+      "bucket_count": 69,
+      "features": [
+        "child_mod512",
+        "event_step"
+      ],
+      "is_pure": false,
+      "memory_covered_by_pure_keys": 2,
+      "memory_key_count": 4,
+      "memory_keys": [
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 4
+          },
+          "key": "207|38"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 2
+          },
+          "key": "239|38"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 4
+          },
+          "key": "359|38"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2
+          },
+          "key": "447|38"
+        }
+      ],
+      "memory_record_count": 6,
+      "mixed_bucket_count": 3,
+      "mixed_examples": [
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 4
+          },
+          "key": "207|38"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 2
+          },
+          "key": "239|38"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 4
+          },
+          "key": "359|38"
+        }
+      ],
+      "terminal_covered_by_pure_keys": 324,
+      "terminal_key_count": 68,
+      "terminal_record_count": 334
+    },
+    "child_mod512_terminal_current_form": {
+      "bucket_count": 69,
+      "features": [
+        "child_mod512",
+        "terminal_current_form"
+      ],
+      "is_pure": false,
+      "memory_covered_by_pure_keys": 2,
+      "memory_key_count": 4,
+      "memory_keys": [
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 4
+          },
+          "key": "207|step=35;constant=-22.001000000000"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 2
+          },
+          "key": "239|step=35;constant=-22.001000000000"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 4
+          },
+          "key": "359|step=35;constant=-22.001000000000"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2
+          },
+          "key": "447|step=35;constant=-22.001000000000"
+        }
+      ],
+      "memory_record_count": 6,
+      "mixed_bucket_count": 3,
+      "mixed_examples": [
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 4
+          },
+          "key": "207|step=35;constant=-22.001000000000"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 2
+          },
+          "key": "239|step=35;constant=-22.001000000000"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 4
+          },
+          "key": "359|step=35;constant=-22.001000000000"
+        }
+      ],
+      "terminal_covered_by_pure_keys": 324,
+      "terminal_key_count": 68,
+      "terminal_record_count": 334
+    },
+    "child_mod512_terminal_current_gap": {
+      "bucket_count": 69,
+      "features": [
+        "child_mod512",
+        "terminal_current_gap"
+      ],
+      "is_pure": false,
+      "memory_covered_by_pure_keys": 2,
+      "memory_key_count": 4,
+      "memory_keys": [
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 4
+          },
+          "key": "207|0.081541375001010298483449"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 2
+          },
+          "key": "239|0.081541375001010298483449"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 4
+          },
+          "key": "359|0.081541375001010298483449"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2
+          },
+          "key": "447|0.081541375001010298483449"
+        }
+      ],
+      "memory_record_count": 6,
+      "mixed_bucket_count": 3,
+      "mixed_examples": [
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 4
+          },
+          "key": "207|0.081541375001010298483449"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 2
+          },
+          "key": "239|0.081541375001010298483449"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 4
+          },
+          "key": "359|0.081541375001010298483449"
+        }
+      ],
+      "terminal_covered_by_pure_keys": 324,
+      "terminal_key_count": 68,
+      "terminal_record_count": 334
+    },
+    "child_mod512_terminal_step": {
+      "bucket_count": 69,
+      "features": [
+        "child_mod512",
+        "terminal_step"
+      ],
+      "is_pure": false,
+      "memory_covered_by_pure_keys": 2,
+      "memory_key_count": 4,
+      "memory_keys": [
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 4
+          },
+          "key": "207|35"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 2
+          },
+          "key": "239|35"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 4
+          },
+          "key": "359|35"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2
+          },
+          "key": "447|35"
+        }
+      ],
+      "memory_record_count": 6,
+      "mixed_bucket_count": 3,
+      "mixed_examples": [
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 4
+          },
+          "key": "207|35"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 2
+          },
+          "key": "239|35"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 4
+          },
+          "key": "359|35"
+        }
+      ],
+      "terminal_covered_by_pure_keys": 324,
+      "terminal_key_count": 68,
+      "terminal_record_count": 334
+    },
+    "child_mod64_event_step": {
+      "bucket_count": 22,
+      "features": [
+        "child_mod64",
+        "event_step"
+      ],
+      "is_pure": false,
+      "memory_covered_by_pure_keys": 0,
+      "memory_key_count": 4,
+      "memory_keys": [
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 4
+          },
+          "key": "15|38"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 9
+          },
+          "key": "39|38"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 9
+          },
+          "key": "47|38"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 13
+          },
+          "key": "63|38"
+        }
+      ],
+      "memory_record_count": 6,
+      "mixed_bucket_count": 4,
+      "mixed_examples": [
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 4
+          },
+          "key": "15|38"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 9
+          },
+          "key": "39|38"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 9
+          },
+          "key": "47|38"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 13
+          },
+          "key": "63|38"
+        }
+      ],
+      "terminal_covered_by_pure_keys": 299,
+      "terminal_key_count": 22,
+      "terminal_record_count": 334
+    },
+    "child_mod64_terminal_current_form": {
+      "bucket_count": 22,
+      "features": [
+        "child_mod64",
+        "terminal_current_form"
+      ],
+      "is_pure": false,
+      "memory_covered_by_pure_keys": 0,
+      "memory_key_count": 4,
+      "memory_keys": [
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 4
+          },
+          "key": "15|step=35;constant=-22.001000000000"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 9
+          },
+          "key": "39|step=35;constant=-22.001000000000"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 9
+          },
+          "key": "47|step=35;constant=-22.001000000000"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 13
+          },
+          "key": "63|step=35;constant=-22.001000000000"
+        }
+      ],
+      "memory_record_count": 6,
+      "mixed_bucket_count": 4,
+      "mixed_examples": [
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 4
+          },
+          "key": "15|step=35;constant=-22.001000000000"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 9
+          },
+          "key": "39|step=35;constant=-22.001000000000"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 9
+          },
+          "key": "47|step=35;constant=-22.001000000000"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 13
+          },
+          "key": "63|step=35;constant=-22.001000000000"
+        }
+      ],
+      "terminal_covered_by_pure_keys": 299,
+      "terminal_key_count": 22,
+      "terminal_record_count": 334
+    },
+    "child_mod64_terminal_current_gap": {
+      "bucket_count": 22,
+      "features": [
+        "child_mod64",
+        "terminal_current_gap"
+      ],
+      "is_pure": false,
+      "memory_covered_by_pure_keys": 0,
+      "memory_key_count": 4,
+      "memory_keys": [
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 4
+          },
+          "key": "15|0.081541375001010298483449"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 9
+          },
+          "key": "39|0.081541375001010298483449"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 9
+          },
+          "key": "47|0.081541375001010298483449"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 13
+          },
+          "key": "63|0.081541375001010298483449"
+        }
+      ],
+      "memory_record_count": 6,
+      "mixed_bucket_count": 4,
+      "mixed_examples": [
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 4
+          },
+          "key": "15|0.081541375001010298483449"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 9
+          },
+          "key": "39|0.081541375001010298483449"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 9
+          },
+          "key": "47|0.081541375001010298483449"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 13
+          },
+          "key": "63|0.081541375001010298483449"
+        }
+      ],
+      "terminal_covered_by_pure_keys": 299,
+      "terminal_key_count": 22,
+      "terminal_record_count": 334
+    },
+    "child_mod64_terminal_step": {
+      "bucket_count": 22,
+      "features": [
+        "child_mod64",
+        "terminal_step"
+      ],
+      "is_pure": false,
+      "memory_covered_by_pure_keys": 0,
+      "memory_key_count": 4,
+      "memory_keys": [
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 4
+          },
+          "key": "15|35"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 9
+          },
+          "key": "39|35"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 9
+          },
+          "key": "47|35"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 13
+          },
+          "key": "63|35"
+        }
+      ],
+      "memory_record_count": 6,
+      "mixed_bucket_count": 4,
+      "mixed_examples": [
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 4
+          },
+          "key": "15|35"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 9
+          },
+          "key": "39|35"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 9
+          },
+          "key": "47|35"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 13
+          },
+          "key": "63|35"
+        }
+      ],
+      "terminal_covered_by_pure_keys": 299,
+      "terminal_key_count": 22,
+      "terminal_record_count": 334
+    },
+    "child_mod8192": {
+      "bucket_count": 202,
+      "features": [
+        "child_mod8192"
+      ],
+      "is_pure": false,
+      "memory_covered_by_pure_keys": 1,
+      "memory_key_count": 6,
+      "memory_keys": [
+        {
+          "counts": {
+            "memory_lag_8": 1
+          },
+          "key": "1471"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 1
+          },
+          "key": "1895"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 1
+          },
+          "key": "5991"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 3
+          },
+          "key": "6591"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 2
+          },
+          "key": "751"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 1
+          },
+          "key": "7887"
+        }
+      ],
+      "memory_record_count": 6,
+      "mixed_bucket_count": 5,
+      "mixed_examples": [
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 1
+          },
+          "key": "1895"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 1
+          },
+          "key": "5991"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 3
+          },
+          "key": "6591"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 2
+          },
+          "key": "751"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 1
+          },
+          "key": "7887"
+        }
+      ],
+      "terminal_covered_by_pure_keys": 326,
+      "terminal_key_count": 201,
+      "terminal_record_count": 334
+    },
+    "terminal_current_form_align_q_terminal": {
+      "bucket_count": 51,
+      "features": [
+        "terminal_current_form",
+        "align",
+        "q_mod64",
+        "terminal_mod64"
+      ],
+      "is_pure": false,
+      "memory_covered_by_pure_keys": 0,
+      "memory_key_count": 3,
+      "memory_keys": [
+        {
+          "counts": {
+            "memory_lag_8": 3,
+            "terminal_local": 8
+          },
+          "key": "step=35;constant=-22.001000000000|3|37|38"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 3
+          },
+          "key": "step=35;constant=-22.001000000000|3|5|6"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 6
+          },
+          "key": "step=35;constant=-22.001000000000|4|55|38"
+        }
+      ],
+      "memory_record_count": 6,
+      "mixed_bucket_count": 3,
+      "mixed_examples": [
+        {
+          "counts": {
+            "memory_lag_8": 3,
+            "terminal_local": 8
+          },
+          "key": "step=35;constant=-22.001000000000|3|37|38"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 3
+          },
+          "key": "step=35;constant=-22.001000000000|3|5|6"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 6
+          },
+          "key": "step=35;constant=-22.001000000000|4|55|38"
+        }
+      ],
+      "terminal_covered_by_pure_keys": 317,
+      "terminal_key_count": 51,
+      "terminal_record_count": 334
+    },
+    "terminal_step_event_step_align_q_terminal_gap": {
+      "bucket_count": 51,
+      "features": [
+        "terminal_step",
+        "event_step",
+        "align",
+        "q_mod64",
+        "terminal_mod64",
+        "terminal_current_gap"
+      ],
+      "is_pure": false,
+      "memory_covered_by_pure_keys": 0,
+      "memory_key_count": 3,
+      "memory_keys": [
+        {
+          "counts": {
+            "memory_lag_8": 3,
+            "terminal_local": 8
+          },
+          "key": "35|38|3|37|38|0.081541375001010298483449"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 3
+          },
+          "key": "35|38|3|5|6|0.081541375001010298483449"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 6
+          },
+          "key": "35|38|4|55|38|0.081541375001010298483449"
+        }
+      ],
+      "memory_record_count": 6,
+      "mixed_bucket_count": 3,
+      "mixed_examples": [
+        {
+          "counts": {
+            "memory_lag_8": 3,
+            "terminal_local": 8
+          },
+          "key": "35|38|3|37|38|0.081541375001010298483449"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 2,
+            "terminal_local": 3
+          },
+          "key": "35|38|3|5|6|0.081541375001010298483449"
+        },
+        {
+          "counts": {
+            "memory_lag_8": 1,
+            "terminal_local": 6
+          },
+          "key": "35|38|4|55|38|0.081541375001010298483449"
+        }
+      ],
+      "terminal_covered_by_pure_keys": 317,
+      "terminal_key_count": 51,
+      "terminal_record_count": 334
+    },
+    "terminal_step_event_step_terminal_current_gap": {
+      "bucket_count": 4,
+      "features": [
+        "terminal_step",
+        "event_step",
+        "terminal_current_gap"
+      ],
+      "is_pure": false,
+      "memory_covered_by_pure_keys": 0,
+      "memory_key_count": 1,
+      "memory_keys": [
+        {
+          "counts": {
+            "memory_lag_8": 6,
+            "terminal_local": 57
+          },
+          "key": "35|38|0.081541375001010298483449"
+        }
+      ],
+      "memory_record_count": 6,
+      "mixed_bucket_count": 1,
+      "mixed_examples": [
+        {
+          "counts": {
+            "memory_lag_8": 6,
+            "terminal_local": 57
+          },
+          "key": "35|38|0.081541375001010298483449"
+        }
+      ],
+      "terminal_covered_by_pure_keys": 277,
+      "terminal_key_count": 4,
+      "terminal_record_count": 334
+    }
+  },
+  "elapsed_seconds": 128.346282,
+  "frontiers": {
+    "child": {
+      "base_depth": 26,
+      "certified_fraction": 0.9845419228076935,
+      "certified_leaf_count": 190069,
+      "certified_units_mod_2^base_depth": 66071490,
+      "depth": 26,
+      "frontier_count": 1037374,
+      "frontier_fraction": 0.015458077192306519,
+      "frontier_odd_count_histogram": {
+        "17": 312455,
+        "18": 351080,
+        "19": 222320,
+        "20": 103078,
+        "21": 36413,
+        "22": 9780,
+        "23": 1950,
+        "24": 273,
+        "25": 24,
+        "26": 1
+      },
+      "positive_live_count": 1037374
+    },
+    "parent": {
+      "base_depth": 25,
+      "certified_fraction": 0.9829184412956238,
+      "certified_leaf_count": 81119,
+      "certified_units_mod_2^base_depth": 32981270,
+      "depth": 25,
+      "frontier_count": 573162,
+      "frontier_fraction": 0.01708155870437622,
+      "frontier_odd_count_histogram": {
+        "16": 108950,
+        "17": 203505,
+        "18": 147575,
+        "19": 74745,
+        "20": 28333,
+        "21": 8080,
+        "22": 1700,
+        "23": 250,
+        "24": 23,
+        "25": 1
+      },
+      "positive_live_count": 573162
+    }
+  },
+  "interpretation": "Finite feature mining for the terminal-local vs lag-8 memory-tail dichotomy. Pure feature sets are theorem targets, not proofs.",
+  "label_counts": {
+    "memory_lag_8": 6,
+    "terminal_local": 334
+  },
+  "memory_examples": [
+    {
+      "align": 3,
+      "child": 35940199,
+      "child_mod1024": 871,
+      "child_mod128": 103,
+      "child_mod16384": 10087,
+      "child_mod2048": 1895,
+      "child_mod256": 103,
+      "child_mod4096": 1895,
+      "child_mod512": 359,
+      "child_mod64": 39,
+      "child_mod65536": 26471,
+      "child_mod8192": 1895,
+      "event_index": 1,
+      "event_required": 6,
+      "event_step": 38,
+      "event_step_mod8": 6,
+      "gap": "0.034103346429350801687232",
+      "label": "memory_lag_8",
+      "last_credit_step": 32,
+      "parent": 2385767,
+      "parent_required": 5,
+      "q_mod16": 5,
+      "q_mod32": 5,
+      "q_mod64": 5,
+      "required_above_parent": 1,
+      "source_lag": 8,
+      "source_mod16384": 14700,
+      "source_mod8192": 6508,
+      "source_word": "EEOOEOOO",
+      "terminal_current_form": "step=35;constant=-22.001000000000",
+      "terminal_current_gap": "0.081541375001010298483449",
+      "terminal_mod16": 6,
+      "terminal_mod32": 6,
+      "terminal_mod64": 6,
+      "terminal_required": 5,
+      "terminal_step": 35,
+      "terminal_step_mod8": 3,
+      "transition_credit_delta": -15
+    },
+    {
+      "align": 3,
+      "child": 39507815,
+      "child_mod1024": 871,
+      "child_mod128": 103,
+      "child_mod16384": 5991,
+      "child_mod2048": 1895,
+      "child_mod256": 103,
+      "child_mod4096": 1895,
+      "child_mod512": 359,
+      "child_mod64": 39,
+      "child_mod65536": 55143,
+      "child_mod8192": 5991,
+      "event_index": 1,
+      "event_required": 6,
+      "event_step": 38,
+      "event_step_mod8": 6,
+      "gap": "0.034103346429350801687232",
+      "label": "memory_lag_8",
+      "last_credit_step": 32,
+      "parent": 5953383,
+      "parent_required": 5,
+      "q_mod16": 5,
+      "q_mod32": 5,
+      "q_mod64": 37,
+      "required_above_parent": 1,
+      "source_lag": 8,
+      "source_mod16384": 6508,
+      "source_mod8192": 6508,
+      "source_word": "EEOOEOOO",
+      "terminal_current_form": "step=35;constant=-22.001000000000",
+      "terminal_current_gap": "0.081541375001010298483449",
+      "terminal_mod16": 6,
+      "terminal_mod32": 6,
+      "terminal_mod64": 38,
+      "terminal_required": 5,
+      "terminal_step": 35,
+      "terminal_step_mod8": 3,
+      "transition_credit_delta": 0
+    },
+    {
+      "align": 3,
+      "child": 40992463,
+      "child_mod1024": 719,
+      "child_mod128": 79,
+      "child_mod16384": 16079,
+      "child_mod2048": 1743,
+      "child_mod256": 207,
+      "child_mod4096": 3791,
+      "child_mod512": 207,
+      "child_mod64": 15,
+      "child_mod65536": 32463,
+      "child_mod8192": 7887,
+      "event_index": 1,
+      "event_required": 3,
+      "event_step": 38,
+      "event_step_mod8": 6,
+      "gap": "0.034103346429350801687232",
+      "label": "memory_lag_8",
+      "last_credit_step": 32,
+      "parent": 7438031,
+      "parent_required": 2,
+      "q_mod16": 5,
+      "q_mod32": 5,
+      "q_mod64": 5,
+      "required_above_parent": 1,
+      "source_lag": 8,
+      "source_mod16384": 14700,
+      "source_mod8192": 6508,
+      "source_word": "EEOOEOOO",
+      "terminal_current_form": "step=35;constant=-22.001000000000",
+      "terminal_current_gap": "0.081541375001010298483449",
+      "terminal_mod16": 6,
+      "terminal_mod32": 6,
+      "terminal_mod64": 6,
+      "terminal_required": 2,
+      "terminal_step": 35,
+      "terminal_step_mod8": 3,
+      "transition_credit_delta": 0
+    },
+    {
+      "align": 4,
+      "child": 44180207,
+      "child_mod1024": 751,
+      "child_mod128": 111,
+      "child_mod16384": 8943,
+      "child_mod2048": 751,
+      "child_mod256": 239,
+      "child_mod4096": 751,
+      "child_mod512": 239,
+      "child_mod64": 47,
+      "child_mod65536": 8943,
+      "child_mod8192": 751,
+      "event_index": 1,
+      "event_required": 5,
+      "event_step": 38,
+      "event_step_mod8": 6,
+      "gap": "0.034103346429350801687232",
+      "label": "memory_lag_8",
+      "last_credit_step": 31,
+      "parent": 10625775,
+      "parent_required": 4,
+      "q_mod16": 7,
+      "q_mod32": 23,
+      "q_mod64": 55,
+      "required_above_parent": 1,
+      "source_lag": 8,
+      "source_mod16384": 10148,
+      "source_mod8192": 1956,
+      "source_word": "EEOEOOOO",
+      "terminal_current_form": "step=35;constant=-22.001000000000",
+      "terminal_current_gap": "0.081541375001010298483449",
+      "terminal_mod16": 6,
+      "terminal_mod32": 6,
+      "terminal_mod64": 38,
+      "terminal_required": 4,
+      "terminal_step": 35,
+      "terminal_step_mod8": 3,
+      "transition_credit_delta": -1
+    },
+    {
+      "align": 3,
+      "child": 50428351,
+      "child_mod1024": 447,
+      "child_mod128": 63,
+      "child_mod16384": 14783,
+      "child_mod2048": 447,
+      "child_mod256": 191,
+      "child_mod4096": 2495,
+      "child_mod512": 447,
+      "child_mod64": 63,
+      "child_mod65536": 31167,
+      "child_mod8192": 6591,
+      "event_index": 1,
+      "event_required": 6,
+      "event_step": 38,
+      "event_step_mod8": 6,
+      "gap": "0.034103346429350801687232",
+      "label": "memory_lag_8",
+      "last_credit_step": 32,
+      "parent": 16873919,
+      "parent_required": 5,
+      "q_mod16": 5,
+      "q_mod32": 5,
+      "q_mod64": 37,
+      "required_above_parent": 1,
+      "source_lag": 8,
+      "source_mod16384": 6508,
+      "source_mod8192": 6508,
+      "source_word": "EEOOEOOO",
+      "terminal_current_form": "step=35;constant=-22.001000000000",
+      "terminal_current_gap": "0.081541375001010298483449",
+      "terminal_mod16": 6,
+      "terminal_mod32": 6,
+      "terminal_mod64": 38,
+      "terminal_required": 5,
+      "terminal_step": 35,
+      "terminal_step_mod8": 3,
+      "transition_credit_delta": -2
+    },
+    {
+      "align": 3,
+      "child": 58000831,
+      "child_mod1024": 447,
+      "child_mod128": 63,
+      "child_mod16384": 1471,
+      "child_mod2048": 1471,
+      "child_mod256": 191,
+      "child_mod4096": 1471,
+      "child_mod512": 447,
+      "child_mod64": 63,
+      "child_mod65536": 1471,
+      "child_mod8192": 1471,
+      "event_index": 1,
+      "event_required": 4,
+      "event_step": 38,
+      "event_step_mod8": 6,
+      "gap": "0.034103346429350801687232",
+      "label": "memory_lag_8",
+      "last_credit_step": 32,
+      "parent": 24446399,
+      "parent_required": 3,
+      "q_mod16": 5,
+      "q_mod32": 5,
+      "q_mod64": 37,
+      "required_above_parent": 1,
+      "source_lag": 8,
+      "source_mod16384": 6508,
+      "source_mod8192": 6508,
+      "source_word": "EEOOEOOO",
+      "terminal_current_form": "step=35;constant=-22.001000000000",
+      "terminal_current_gap": "0.081541375001010298483449",
+      "terminal_mod16": 6,
+      "terminal_mod32": 6,
+      "terminal_mod64": 38,
+      "terminal_required": 3,
+      "terminal_step": 35,
+      "terminal_step_mod8": 3,
+      "transition_credit_delta": -4
+    }
+  ],
+  "memory_source_mod16384_counts": {
+    "EEOEOOOO:10148": 1,
+    "EEOOEOOO:14700": 2,
+    "EEOOEOOO:6508": 3
+  },
+  "memory_source_word_counts": {
+    "EEOEOOOO": 1,
+    "EEOOEOOO": 5
+  },
+  "mined_classifiers": {
+    "memory_pure_feature_set_count": 916,
+    "memory_pure_feature_sets": [
+      {
+        "bucket_count": 192,
+        "features": [
+          "child_mod4096",
+          "event_step"
+        ],
+        "is_pure": true,
+        "memory_covered_by_pure_keys": 6,
+        "memory_key_count": 5,
+        "memory_keys": [
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "1471|38"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 2
+            },
+            "key": "1895|38"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "2495|38"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "3791|38"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "751|38"
+          }
+        ],
+        "memory_record_count": 6,
+        "mixed_bucket_count": 0,
+        "mixed_examples": [],
+        "terminal_covered_by_pure_keys": 334,
+        "terminal_key_count": 187,
+        "terminal_record_count": 334
+      },
+      {
+        "bucket_count": 192,
+        "features": [
+          "child_mod4096",
+          "terminal_current_form"
+        ],
+        "is_pure": true,
+        "memory_covered_by_pure_keys": 6,
+        "memory_key_count": 5,
+        "memory_keys": [
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "1471|step=35;constant=-22.001000000000"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 2
+            },
+            "key": "1895|step=35;constant=-22.001000000000"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "2495|step=35;constant=-22.001000000000"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "3791|step=35;constant=-22.001000000000"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "751|step=35;constant=-22.001000000000"
+          }
+        ],
+        "memory_record_count": 6,
+        "mixed_bucket_count": 0,
+        "mixed_examples": [],
+        "terminal_covered_by_pure_keys": 334,
+        "terminal_key_count": 187,
+        "terminal_record_count": 334
+      },
+      {
+        "bucket_count": 192,
+        "features": [
+          "child_mod4096",
+          "terminal_current_gap"
+        ],
+        "is_pure": true,
+        "memory_covered_by_pure_keys": 6,
+        "memory_key_count": 5,
+        "memory_keys": [
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "1471|0.081541375001010298483449"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 2
+            },
+            "key": "1895|0.081541375001010298483449"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "2495|0.081541375001010298483449"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "3791|0.081541375001010298483449"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "751|0.081541375001010298483449"
+          }
+        ],
+        "memory_record_count": 6,
+        "mixed_bucket_count": 0,
+        "mixed_examples": [],
+        "terminal_covered_by_pure_keys": 334,
+        "terminal_key_count": 187,
+        "terminal_record_count": 334
+      },
+      {
+        "bucket_count": 192,
+        "features": [
+          "child_mod4096",
+          "terminal_step"
+        ],
+        "is_pure": true,
+        "memory_covered_by_pure_keys": 6,
+        "memory_key_count": 5,
+        "memory_keys": [
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "1471|35"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 2
+            },
+            "key": "1895|35"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "2495|35"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "3791|35"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "751|35"
+          }
+        ],
+        "memory_record_count": 6,
+        "mixed_bucket_count": 0,
+        "mixed_examples": [],
+        "terminal_covered_by_pure_keys": 334,
+        "terminal_key_count": 187,
+        "terminal_record_count": 334
+      },
+      {
+        "bucket_count": 239,
+        "features": [
+          "child_mod8192",
+          "event_step"
+        ],
+        "is_pure": true,
+        "memory_covered_by_pure_keys": 6,
+        "memory_key_count": 6,
+        "memory_keys": [
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "1471|38"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "1895|38"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "5991|38"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "6591|38"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "751|38"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "7887|38"
+          }
+        ],
+        "memory_record_count": 6,
+        "mixed_bucket_count": 0,
+        "mixed_examples": [],
+        "terminal_covered_by_pure_keys": 334,
+        "terminal_key_count": 233,
+        "terminal_record_count": 334
+      },
+      {
+        "bucket_count": 239,
+        "features": [
+          "child_mod8192",
+          "terminal_current_form"
+        ],
+        "is_pure": true,
+        "memory_covered_by_pure_keys": 6,
+        "memory_key_count": 6,
+        "memory_keys": [
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "1471|step=35;constant=-22.001000000000"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "1895|step=35;constant=-22.001000000000"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "5991|step=35;constant=-22.001000000000"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "6591|step=35;constant=-22.001000000000"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "751|step=35;constant=-22.001000000000"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "7887|step=35;constant=-22.001000000000"
+          }
+        ],
+        "memory_record_count": 6,
+        "mixed_bucket_count": 0,
+        "mixed_examples": [],
+        "terminal_covered_by_pure_keys": 334,
+        "terminal_key_count": 233,
+        "terminal_record_count": 334
+      },
+      {
+        "bucket_count": 239,
+        "features": [
+          "child_mod8192",
+          "terminal_current_gap"
+        ],
+        "is_pure": true,
+        "memory_covered_by_pure_keys": 6,
+        "memory_key_count": 6,
+        "memory_keys": [
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "1471|0.081541375001010298483449"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "1895|0.081541375001010298483449"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "5991|0.081541375001010298483449"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "6591|0.081541375001010298483449"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "751|0.081541375001010298483449"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "7887|0.081541375001010298483449"
+          }
+        ],
+        "memory_record_count": 6,
+        "mixed_bucket_count": 0,
+        "mixed_examples": [],
+        "terminal_covered_by_pure_keys": 334,
+        "terminal_key_count": 233,
+        "terminal_record_count": 334
+      },
+      {
+        "bucket_count": 239,
+        "features": [
+          "child_mod8192",
+          "terminal_step"
+        ],
+        "is_pure": true,
+        "memory_covered_by_pure_keys": 6,
+        "memory_key_count": 6,
+        "memory_keys": [
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "1471|35"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "1895|35"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "5991|35"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "6591|35"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "751|35"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "7887|35"
+          }
+        ],
+        "memory_record_count": 6,
+        "mixed_bucket_count": 0,
+        "mixed_examples": [],
+        "terminal_covered_by_pure_keys": 334,
+        "terminal_key_count": 233,
+        "terminal_record_count": 334
+      },
+      {
+        "bucket_count": 247,
+        "features": [
+          "child_mod4096",
+          "parent_required"
+        ],
+        "is_pure": true,
+        "memory_covered_by_pure_keys": 6,
+        "memory_key_count": 5,
+        "memory_keys": [
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "1471|3"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 2
+            },
+            "key": "1895|5"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "2495|5"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "3791|2"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "751|4"
+          }
+        ],
+        "memory_record_count": 6,
+        "mixed_bucket_count": 0,
+        "mixed_examples": [],
+        "terminal_covered_by_pure_keys": 334,
+        "terminal_key_count": 242,
+        "terminal_record_count": 334
+      },
+      {
+        "bucket_count": 253,
+        "features": [
+          "child_mod4096",
+          "event_required"
+        ],
+        "is_pure": true,
+        "memory_covered_by_pure_keys": 6,
+        "memory_key_count": 5,
+        "memory_keys": [
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "1471|4"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 2
+            },
+            "key": "1895|6"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "2495|6"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "3791|3"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "751|5"
+          }
+        ],
+        "memory_record_count": 6,
+        "mixed_bucket_count": 0,
+        "mixed_examples": [],
+        "terminal_covered_by_pure_keys": 334,
+        "terminal_key_count": 248,
+        "terminal_record_count": 334
+      },
+      {
+        "bucket_count": 253,
+        "features": [
+          "child_mod4096",
+          "terminal_required"
+        ],
+        "is_pure": true,
+        "memory_covered_by_pure_keys": 6,
+        "memory_key_count": 5,
+        "memory_keys": [
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "1471|3"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 2
+            },
+            "key": "1895|5"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "2495|5"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "3791|2"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "751|4"
+          }
+        ],
+        "memory_record_count": 6,
+        "mixed_bucket_count": 0,
+        "mixed_examples": [],
+        "terminal_covered_by_pure_keys": 334,
+        "terminal_key_count": 248,
+        "terminal_record_count": 334
+      },
+      {
+        "bucket_count": 276,
+        "features": [
+          "child_mod8192",
+          "parent_required"
+        ],
+        "is_pure": true,
+        "memory_covered_by_pure_keys": 6,
+        "memory_key_count": 6,
+        "memory_keys": [
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "1471|3"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "1895|5"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "5991|5"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "6591|5"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "751|4"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "7887|2"
+          }
+        ],
+        "memory_record_count": 6,
+        "mixed_bucket_count": 0,
+        "mixed_examples": [],
+        "terminal_covered_by_pure_keys": 334,
+        "terminal_key_count": 270,
+        "terminal_record_count": 334
+      }
+    ],
+    "pure_feature_set_count": 916,
+    "pure_feature_sets": [
+      {
+        "bucket_count": 192,
+        "features": [
+          "child_mod4096",
+          "event_step"
+        ],
+        "is_pure": true,
+        "memory_covered_by_pure_keys": 6,
+        "memory_key_count": 5,
+        "memory_keys": [
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "1471|38"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 2
+            },
+            "key": "1895|38"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "2495|38"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "3791|38"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "751|38"
+          }
+        ],
+        "memory_record_count": 6,
+        "mixed_bucket_count": 0,
+        "mixed_examples": [],
+        "terminal_covered_by_pure_keys": 334,
+        "terminal_key_count": 187,
+        "terminal_record_count": 334
+      },
+      {
+        "bucket_count": 192,
+        "features": [
+          "child_mod4096",
+          "terminal_current_form"
+        ],
+        "is_pure": true,
+        "memory_covered_by_pure_keys": 6,
+        "memory_key_count": 5,
+        "memory_keys": [
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "1471|step=35;constant=-22.001000000000"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 2
+            },
+            "key": "1895|step=35;constant=-22.001000000000"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "2495|step=35;constant=-22.001000000000"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "3791|step=35;constant=-22.001000000000"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "751|step=35;constant=-22.001000000000"
+          }
+        ],
+        "memory_record_count": 6,
+        "mixed_bucket_count": 0,
+        "mixed_examples": [],
+        "terminal_covered_by_pure_keys": 334,
+        "terminal_key_count": 187,
+        "terminal_record_count": 334
+      },
+      {
+        "bucket_count": 192,
+        "features": [
+          "child_mod4096",
+          "terminal_current_gap"
+        ],
+        "is_pure": true,
+        "memory_covered_by_pure_keys": 6,
+        "memory_key_count": 5,
+        "memory_keys": [
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "1471|0.081541375001010298483449"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 2
+            },
+            "key": "1895|0.081541375001010298483449"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "2495|0.081541375001010298483449"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "3791|0.081541375001010298483449"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "751|0.081541375001010298483449"
+          }
+        ],
+        "memory_record_count": 6,
+        "mixed_bucket_count": 0,
+        "mixed_examples": [],
+        "terminal_covered_by_pure_keys": 334,
+        "terminal_key_count": 187,
+        "terminal_record_count": 334
+      },
+      {
+        "bucket_count": 192,
+        "features": [
+          "child_mod4096",
+          "terminal_step"
+        ],
+        "is_pure": true,
+        "memory_covered_by_pure_keys": 6,
+        "memory_key_count": 5,
+        "memory_keys": [
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "1471|35"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 2
+            },
+            "key": "1895|35"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "2495|35"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "3791|35"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "751|35"
+          }
+        ],
+        "memory_record_count": 6,
+        "mixed_bucket_count": 0,
+        "mixed_examples": [],
+        "terminal_covered_by_pure_keys": 334,
+        "terminal_key_count": 187,
+        "terminal_record_count": 334
+      },
+      {
+        "bucket_count": 239,
+        "features": [
+          "child_mod8192",
+          "event_step"
+        ],
+        "is_pure": true,
+        "memory_covered_by_pure_keys": 6,
+        "memory_key_count": 6,
+        "memory_keys": [
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "1471|38"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "1895|38"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "5991|38"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "6591|38"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "751|38"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "7887|38"
+          }
+        ],
+        "memory_record_count": 6,
+        "mixed_bucket_count": 0,
+        "mixed_examples": [],
+        "terminal_covered_by_pure_keys": 334,
+        "terminal_key_count": 233,
+        "terminal_record_count": 334
+      },
+      {
+        "bucket_count": 239,
+        "features": [
+          "child_mod8192",
+          "terminal_current_form"
+        ],
+        "is_pure": true,
+        "memory_covered_by_pure_keys": 6,
+        "memory_key_count": 6,
+        "memory_keys": [
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "1471|step=35;constant=-22.001000000000"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "1895|step=35;constant=-22.001000000000"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "5991|step=35;constant=-22.001000000000"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "6591|step=35;constant=-22.001000000000"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "751|step=35;constant=-22.001000000000"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "7887|step=35;constant=-22.001000000000"
+          }
+        ],
+        "memory_record_count": 6,
+        "mixed_bucket_count": 0,
+        "mixed_examples": [],
+        "terminal_covered_by_pure_keys": 334,
+        "terminal_key_count": 233,
+        "terminal_record_count": 334
+      },
+      {
+        "bucket_count": 239,
+        "features": [
+          "child_mod8192",
+          "terminal_current_gap"
+        ],
+        "is_pure": true,
+        "memory_covered_by_pure_keys": 6,
+        "memory_key_count": 6,
+        "memory_keys": [
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "1471|0.081541375001010298483449"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "1895|0.081541375001010298483449"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "5991|0.081541375001010298483449"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "6591|0.081541375001010298483449"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "751|0.081541375001010298483449"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "7887|0.081541375001010298483449"
+          }
+        ],
+        "memory_record_count": 6,
+        "mixed_bucket_count": 0,
+        "mixed_examples": [],
+        "terminal_covered_by_pure_keys": 334,
+        "terminal_key_count": 233,
+        "terminal_record_count": 334
+      },
+      {
+        "bucket_count": 239,
+        "features": [
+          "child_mod8192",
+          "terminal_step"
+        ],
+        "is_pure": true,
+        "memory_covered_by_pure_keys": 6,
+        "memory_key_count": 6,
+        "memory_keys": [
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "1471|35"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "1895|35"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "5991|35"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "6591|35"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "751|35"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "7887|35"
+          }
+        ],
+        "memory_record_count": 6,
+        "mixed_bucket_count": 0,
+        "mixed_examples": [],
+        "terminal_covered_by_pure_keys": 334,
+        "terminal_key_count": 233,
+        "terminal_record_count": 334
+      },
+      {
+        "bucket_count": 247,
+        "features": [
+          "child_mod4096",
+          "parent_required"
+        ],
+        "is_pure": true,
+        "memory_covered_by_pure_keys": 6,
+        "memory_key_count": 5,
+        "memory_keys": [
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "1471|3"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 2
+            },
+            "key": "1895|5"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "2495|5"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "3791|2"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "751|4"
+          }
+        ],
+        "memory_record_count": 6,
+        "mixed_bucket_count": 0,
+        "mixed_examples": [],
+        "terminal_covered_by_pure_keys": 334,
+        "terminal_key_count": 242,
+        "terminal_record_count": 334
+      },
+      {
+        "bucket_count": 253,
+        "features": [
+          "child_mod4096",
+          "event_required"
+        ],
+        "is_pure": true,
+        "memory_covered_by_pure_keys": 6,
+        "memory_key_count": 5,
+        "memory_keys": [
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "1471|4"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 2
+            },
+            "key": "1895|6"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "2495|6"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "3791|3"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "751|5"
+          }
+        ],
+        "memory_record_count": 6,
+        "mixed_bucket_count": 0,
+        "mixed_examples": [],
+        "terminal_covered_by_pure_keys": 334,
+        "terminal_key_count": 248,
+        "terminal_record_count": 334
+      },
+      {
+        "bucket_count": 253,
+        "features": [
+          "child_mod4096",
+          "terminal_required"
+        ],
+        "is_pure": true,
+        "memory_covered_by_pure_keys": 6,
+        "memory_key_count": 5,
+        "memory_keys": [
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "1471|3"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 2
+            },
+            "key": "1895|5"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "2495|5"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "3791|2"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "751|4"
+          }
+        ],
+        "memory_record_count": 6,
+        "mixed_bucket_count": 0,
+        "mixed_examples": [],
+        "terminal_covered_by_pure_keys": 334,
+        "terminal_key_count": 248,
+        "terminal_record_count": 334
+      },
+      {
+        "bucket_count": 276,
+        "features": [
+          "child_mod8192",
+          "parent_required"
+        ],
+        "is_pure": true,
+        "memory_covered_by_pure_keys": 6,
+        "memory_key_count": 6,
+        "memory_keys": [
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "1471|3"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "1895|5"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "5991|5"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "6591|5"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "751|4"
+          },
+          {
+            "counts": {
+              "memory_lag_8": 1
+            },
+            "key": "7887|2"
+          }
+        ],
+        "memory_record_count": 6,
+        "mixed_bucket_count": 0,
+        "mixed_examples": [],
+        "terminal_covered_by_pure_keys": 334,
+        "terminal_key_count": 270,
+        "terminal_record_count": 334
+      }
+    ]
+  },
+  "parameters": {
+    "max_depth": 1024,
+    "max_feature_set_size": 3,
+    "max_steps": 50000,
+    "output": "experiments\\results\\branch_prefix_tail_dichotomy_classifier_d25_d26_20260702.json",
+    "parent_depth": 25,
+    "precision": 80,
+    "quiet": true,
+    "top_n": 12
+  },
+  "pure_claims": {
+    "all_sources_found": true,
+    "has_memory_pure_feature_set": true,
+    "has_pure_feature_set": true,
+    "labels_are_terminal_local_or_memory_lag_8": true,
+    "memory_sources_are_two_known_words": true,
+    "no_terminal_event_feature_set_of_searched_size_is_memory_pure": true,
+    "no_terminal_event_feature_set_of_searched_size_is_pure": true,
+    "population_is_340": true,
+    "six_memory_records": true
+  },
+  "record_count": 340,
+  "source_misses": [],
+  "status": "branch-prefix-tail-dichotomy-classifier",
+  "terminal_event_only_mined_classifiers": {
+    "memory_pure_feature_set_count": 0,
+    "memory_pure_feature_sets": [],
+    "pure_feature_set_count": 0,
+    "pure_feature_sets": []
+  }
+}

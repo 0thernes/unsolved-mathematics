@@ -124,6 +124,48 @@ Observations:
    as certificate-deep as anything currently known — a concrete gap for
    `frontier_beam_search.py` to attack.
 
+## Layer 5 — two-sided mass theorem (proved)
+
+The upper bound of Layer 1 now has a matching elementary lower bound
+(Theorem 8 in CERTIFICATE-FRONTIER-THEOREMS.md), via a cycle-lemma argument:
+the drift path `P_j = o(j) ln 3 - j ln 2` has pairwise-distinct partial sums
+(no relation `3^a = 2^b`), so every cyclic class of words with total drift
+`3^o > 2^d` contains at least one rotation that stays strictly positive —
+a survivor. Hence
+
+```text
+C(d, o_min(d)) / d  <=  S(d)  <=  2^(d * H(theta)),
+```
+
+and for `d >= 20` the closed form `2^(d*H(theta)) / (3 d^2) <= S(d)`. The
+survivor mass is `2^(d*H(theta) + O(log d))` **unconditionally**, so the
+first-moment crossing obeys `D_1(b) = c* b + O(log b)` as a theorem, not a
+heuristic. Verified in exact integers at 65 grid depths through 2048; at
+`d = 2048` the exact floor–actual–ceiling stack reads
+`1928.07 <= 1932.40 <= 1945.47` bits.
+
+## Layer 6 — minimal-survivor duality (measured)
+
+Inverting the record function: let `m` be the smallest integer whose
+certificate depth reaches `D`. Equidistribution of survivor representatives
+predicts `m ~ 2^D / S(D)`, i.e. the duality product `m * S(D)/2^D` should be
+order one. At the six exhaustively-known record pairs:
+
+| Record depth `D` | Record integer `m` | `log2 m` | `-log2 frac(D)` | Duality product |
+|---:|---:|---:|---:|---:|
+| 105 | 10,087 | 13.30 | 12.33 | 1.97 |
+| 135 | 35,655 | 15.12 | 14.32 | 1.74 |
+| 183 | 1,027,431 | 19.97 | 17.25 | 6.61 |
+| 224 | 1,126,015 | 20.10 | 19.73 | 1.29 |
+| 287 | 13,421,671 | 23.68 | 23.41 | 1.21 |
+| 395 | 217,740,015 | 27.70 | 29.43 | 0.30 |
+
+The product stays within `[0.30, 6.61]` while the density itself falls
+through seventeen binary orders of magnitude. This is the equidistribution
+statement the envelope conjecture needs, measured exactly where it matters.
+(The 62-bit beam candidate and 71-bit Bařina start are excluded: those
+searches are not exhaustive below, so they bound `m` only from above.)
+
 ## What would falsify the envelope
 
 A single positive integer with certificate depth `> 20.0 * bit_length + O(log)`
@@ -137,16 +179,22 @@ envelope.
 
 ## Honest interpretation
 
-- The **proved** content is Layer 1: uncertified density `<= 2^(-0.05004 d)`,
-  unconditional, self-contained in the theorems file, verified against exact
-  counts. This is a Terras-class statement with an explicit rate, not new to
-  the literature, but now derived and machine-checked inside the repo.
-- The **measured** content (Layers 2–4) says the missing uniform escape
+- The **proved** content is Layers 1 and 5: the uncertified density is
+  `2^(-(1-H(theta))d + O(log d))` — upper bound by entropy (Theorem 7), lower
+  bound by the cycle lemma (Theorem 8) — unconditional, self-contained in the
+  theorems file, verified against exact counts. The Terras-class upper bound
+  is not new to the literature; the point is the two-sided pin with explicit
+  constants, machine-checked inside the repo, which promotes the crossing law
+  `D_1(b) = c* b + O(log b)` from heuristic to theorem.
+- The **measured** content (Layers 2–4, 6) says the missing uniform escape
   theorem has a precise conjectural form: `D(b) = D_1(b) + fluctuations`,
-  slope `c* = 19.982`. Everything computable agrees with it; nothing
-  computable can prove it. The proof obligation is now a single quantified
-  sentence: *no positive integer outlives the first-moment envelope of the
-  survivor frontier by more than a fluctuation term.*
+  slope `c* = 19.982`. After Theorem 8, exactly one ingredient of that
+  sentence remains unproved: *representative equidistribution* — that the
+  integer representatives of survivor classes spread regularly enough for
+  the minimal survivor to track `2^d / S(d)`. Layer 6 measures that very
+  quantity and finds it order-one across the entire exhaustively-known
+  range. Everything computable agrees with it; nothing computable can prove
+  it.
 - The all-odd 2-adic boundary point `-1` still survives every depth. The
   envelope conjecture is exactly the statement that positive integers cannot
   imitate it for more than `~20` steps per bit — positivity and finiteness

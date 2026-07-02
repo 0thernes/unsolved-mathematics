@@ -8,6 +8,8 @@ Iterating n -> n/2 (even) or 3n+1 (odd) eventually reaches 1 for every positive 
 
 ## Dossier contents
 
+> **Status note:** the experiment documents below are internal research artifacts, largely unaudited (10/189 ledger claims verified — see [`experiments/AUDIT-REGISTER.md`](experiments/AUDIT-REGISTER.md)); "proved" entries are in-repo derivations, not peer-reviewed results. **The conjecture remains OPEN.**
+
 | File | Contents |
 |------|----------|
 | [`history.md`](history.md) | Origin, formulation, and timeline |
@@ -42,6 +44,19 @@ Iterating n -> n/2 (even) or 3n+1 (odd) eventually reaches 1 for every positive 
 | [`experiments/BRANCH-PREFIX-FRONTIER-LIFT.md`](experiments/BRANCH-PREFIX-FRONTIER-LIFT.md) | Multi-depth exact frontier lift audit: depths `24,25,26`, `1,897,117` live rows, `0` prefix failures and `0` orphan children |
 | [`experiments/BRANCH-PREFIX-LIFT-TRANSITION.md`](experiments/BRANCH-PREFIX-LIFT-TRANSITION.md) | Parent-child transition audit for `25 -> 26`: pressure/credit deltas, pruned siblings, and the smaller retimed-pressure hard case |
 | [`experiments/BRANCH-PREFIX-RETIMED-PRESSURE.md`](experiments/BRANCH-PREFIX-RETIMED-PRESSURE.md) | Timing audit for the retimed-pressure hard case: all `5,677` cases prepaid by prior high-ladder or low-repeat credit |
+| [`experiments/BRANCH-PREFIX-PRESSURE-UNITS.md`](experiments/BRANCH-PREFIX-PRESSURE-UNITS.md) | Stronger unit-pressure audit: every one of `6,652` above-parent pressure units in the retimed hard class is prepaid with positive surplus |
+| [`experiments/BRANCH-PREFIX-PRESSURE-UNIT-CLASSIFIER.md`](experiments/BRANCH-PREFIX-PRESSURE-UNIT-CLASSIFIER.md) | Symbolic classifier for pressure units: upper-child purity and three regimes, with post-ladder tail isolated at `lag_minus_align = 3` |
+| [`experiments/BRANCH-PREFIX-POST-LADDER-TAIL.md`](experiments/BRANCH-PREFIX-POST-LADDER-TAIL.md) | Post-ladder tail analyzer: all `340` tail units have terminal `3^a q - 1 == 6 mod 16`, forcing the three-step parity word `EOO` |
+| [`experiments/BRANCH-PREFIX-TAIL-CONGRUENCE.md`](experiments/BRANCH-PREFIX-TAIL-CONGRUENCE.md) | Congruence audit: tail units obey the exact `q == 7*(3^a)^(-1) mod 16` rule, but terminal `6 mod 16` is not unique to the tail |
+| [`experiments/BRANCH-PREFIX-TAIL-PHASE.md`](experiments/BRANCH-PREFIX-TAIL-PHASE.md) | Decimal phase audit: among terminal-`6 mod 16` high-ladder units, positive terminal threshold gap exactly separates the `340` post-ladder tails from `656` active-ladder cases |
+| [`experiments/BRANCH-PREFIX-TAIL-PHASE-SPECTRUM.md`](experiments/BRANCH-PREFIX-TAIL-PHASE-SPECTRUM.md) | Phase-spectrum compression: the `340` tail-positive gaps collapse to four `theta = log(2)/log(3)` linear forms, with six tail cases sourcing max excess eight steps before terminal |
+| [`experiments/BRANCH-PREFIX-TAIL-MEMORY-CASES.md`](experiments/BRANCH-PREFIX-TAIL-MEMORY-CASES.md) | Extractor for the six memory-tail cases: two length-8, five-odd source-to-terminal words through `59 mod 64`, all with phase form `27*theta - 17.001` |
+| [`experiments/BRANCH-PREFIX-TAIL-MEMORY-WORD-MAPS.md`](experiments/BRANCH-PREFIX-TAIL-MEMORY-WORD-MAPS.md) | Exact affine maps for the two memory-tail words: raw mod-256 cylinders do not force `59 mod 64`, but lifted source classes mod `16384` recover the recorded bridge |
+| [`experiments/BRANCH-PREFIX-TAIL-MEMORY-LIFT-SOLVER.md`](experiments/BRANCH-PREFIX-TAIL-MEMORY-LIFT-SOLVER.md) | Lift solver refinement: the low-repeat bridge is forced already mod `8192`; mod `16384` only chooses the terminal residue and exposes one ghost full-lift class |
+| [`experiments/BRANCH-PREFIX-TAIL-GHOST-CLASS.md`](experiments/BRANCH-PREFIX-TAIL-GHOST-CLASS.md) | Ghost-class audit: the `EEOEOOOO` terminal-6 ghost signature occurs, but only in terminal-local tail cases; ghost memory-source count is `0` |
+| [`experiments/BRANCH-PREFIX-TAIL-DICHOTOMY-CLASSIFIER.md`](experiments/BRANCH-PREFIX-TAIL-DICHOTOMY-CLASSIFIER.md) | Dichotomy classifier: terminal/event features alone do not separate memory tails, while `child mod 4096` plus timing is the first tested child-modulus separator after mixed checks through `2048` |
+| [`experiments/BRANCH-PREFIX-TAIL-CHILD-LIFT-STRATIFIER.md`](experiments/BRANCH-PREFIX-TAIL-CHILD-LIFT-STRATIFIER.md) | Child-lift stratifier: the exact `2048` failure is two mixed lower buckets, both split purely by the next child bit at modulus `4096` |
+| [`experiments/BRANCH-PREFIX-TAIL-LIFT-BIT-WITNESS.md`](experiments/BRANCH-PREFIX-TAIL-LIFT-BIT-WITNESS.md) | Lift-bit witness: one memory and one terminal-local record share the same `2048` bucket and visible terminal phase; the next child bit is necessary |
 | [`experiments/collatz_residue_lab.py`](experiments/collatz_residue_lab.py) | Executable finite-residue descent certificate miner |
 | [`experiments/collatz_survivor_dp.py`](experiments/collatz_survivor_dp.py) | Exact dynamic program for counting certificate-frontier survivor prefixes |
 | [`experiments/collatz_frontier_geometry.py`](experiments/collatz_frontier_geometry.py) | Frontier geometry instrument: exact decay rates, tau/sigma scans, Mersenne spine, interval-certified cycle floor |
@@ -84,6 +99,17 @@ Iterating n -> n/2 (even) or 3n+1 (odd) eventually reaches 1 for every positive 
 | [`experiments/branch_prefix_frontier_lift.py`](experiments/branch_prefix_frontier_lift.py) | Multi-depth lift auditor for exact survivor-frontier prefix dominance |
 | [`experiments/branch_prefix_lift_transition.py`](experiments/branch_prefix_lift_transition.py) | Parent-child transition classifier for frontier lift pressure and credit deltas |
 | [`experiments/branch_prefix_retimed_pressure.py`](experiments/branch_prefix_retimed_pressure.py) | Timing tracer for retimed-pressure frontier-lift transitions |
+| [`experiments/branch_prefix_pressure_units.py`](experiments/branch_prefix_pressure_units.py) | Unit-pressure tracer for every above-parent required-credit increase in retimed frontier-lift transitions |
+| [`experiments/branch_prefix_pressure_unit_classifier.py`](experiments/branch_prefix_pressure_unit_classifier.py) | Feature classifier for pressure-unit regimes, lag/alignment shape, and local residue support |
+| [`experiments/branch_prefix_post_ladder_tail.py`](experiments/branch_prefix_post_ladder_tail.py) | Reconstructor for the post-ladder tail carry pattern after high-ladder terminal states |
+| [`experiments/branch_prefix_tail_congruence.py`](experiments/branch_prefix_tail_congruence.py) | Congruence miner comparing post-ladder tail units against all high-ladder pressure units |
+| [`experiments/branch_prefix_tail_phase.py`](experiments/branch_prefix_tail_phase.py) | High-precision phase separator audit for terminal-6 active-vs-tail high-ladder pressure units |
+| [`experiments/branch_prefix_tail_phase_spectrum.py`](experiments/branch_prefix_tail_phase_spectrum.py) | Max-source and integer-linear phase-form compressor for terminal-6 tail pressure |
+| [`experiments/branch_prefix_tail_memory_cases.py`](experiments/branch_prefix_tail_memory_cases.py) | Focused extractor for the non-terminal max-source post-ladder tail subcase |
+| [`experiments/branch_prefix_tail_memory_word_maps.py`](experiments/branch_prefix_tail_memory_word_maps.py) | Exact affine and lifted-residue analyzer for the two memory-tail source-to-terminal words |
+| [`experiments/branch_prefix_tail_memory_lift_solver.py`](experiments/branch_prefix_tail_memory_lift_solver.py) | Minimal-lift solver for the memory-tail bridge classes and terminal-bit refinements |
+| [`experiments/branch_prefix_tail_ghost_class.py`](experiments/branch_prefix_tail_ghost_class.py) | Full post-ladder tail audit for the unobserved memory-lift ghost class |
+| [`experiments/branch_prefix_tail_dichotomy_classifier.py`](experiments/branch_prefix_tail_dichotomy_classifier.py) | Feature miner for the terminal-local versus lag-8 memory-tail dichotomy |
 | [`experiments/BEYOND-THE-CANTOR-FRONTIER-AFFINE-COCYCLE-RIGIDITY.md`](experiments/BEYOND-THE-CANTOR-FRONTIER-AFFINE-COCYCLE-RIGIDITY.md) + `repulsion_potential_minimizer.py` + `PROOF-SKETCH...md` | Ultra-novel repulsion + potential + full structural proof sketch closing the positive survivor gap |
 
 *Originators: Lothar Collatz.*

@@ -1,0 +1,815 @@
+{
+  "bridge_lift_modulus": 8192,
+  "elapsed_seconds": 0.034879,
+  "full_lift_modulus": 16384,
+  "interpretation": "Local lifted-residue solver for the two memory-tail words. The low-repeat bridge is forced at modulus 8192; the terminal residue needs modulus 16384. The remaining ghost full lift is a local candidate class, not an observed memory record.",
+  "memory_record_count": 6,
+  "parameters": {
+    "memory_result": "experiments\\results\\branch_prefix_tail_memory_cases_d25_d26_20260702.json",
+    "output": "experiments\\results\\branch_prefix_tail_memory_lift_solver_d25_d26_20260702.json",
+    "quiet": true
+  },
+  "pure_claims": {
+    "all_observed_full_lifts_are_bridge": true,
+    "all_observed_project_to_forced_bridge_mod8192": true,
+    "bridge_is_first_forced_at_extra_bits_5_for_all_words": true,
+    "there_is_exactly_one_unobserved_bridge_full_lift": true
+  },
+  "status": "branch-prefix-tail-memory-lift-solver",
+  "word_reports": [
+    {
+      "affine": {
+        "constant": 1148,
+        "denominator": 256,
+        "length": 8,
+        "multiplier": 243,
+        "odd_count": 5
+      },
+      "affine_formula": "T^8(n) = (243*n + 1148)/256",
+      "bridge_full_lifts": [
+        {
+          "has_bridge_59_to_25_preterminal": true,
+          "m_mod_64": 25,
+          "observed_count": 3,
+          "passes_59_mod64": true,
+          "path_mod_64": [
+            44,
+            54,
+            27,
+            9,
+            14,
+            39,
+            59,
+            25,
+            38
+          ],
+          "q_mod64_by_observed_align": {
+            "3": 37
+          },
+          "source_mod_16384": 6508,
+          "terminal_mod_64": 38
+        },
+        {
+          "has_bridge_59_to_25_preterminal": true,
+          "m_mod_64": 57,
+          "observed_count": 2,
+          "passes_59_mod64": true,
+          "path_mod_64": [
+            44,
+            54,
+            27,
+            9,
+            14,
+            39,
+            59,
+            25,
+            6
+          ],
+          "q_mod64_by_observed_align": {
+            "3": 5
+          },
+          "source_mod_16384": 14700,
+          "terminal_mod_64": 6
+        }
+      ],
+      "bridge_projection_mod_8192": [
+        6508
+      ],
+      "cylinder_residue_mod_256": 108,
+      "forced_classes_by_extra_bits": [
+        {
+          "extra_bits_above_word": 0,
+          "forced_bridge_class_count": 0,
+          "forced_bridge_classes": [],
+          "forced_pass59_class_count": 0,
+          "forced_pass59_classes": [],
+          "group_count": 1,
+          "modulus": 256,
+          "possible_bridge_class_count": 1,
+          "possible_bridge_classes": [
+            108
+          ],
+          "possible_pass59_class_count": 1,
+          "possible_pass59_classes": [
+            108
+          ]
+        },
+        {
+          "extra_bits_above_word": 1,
+          "forced_bridge_class_count": 0,
+          "forced_bridge_classes": [],
+          "forced_pass59_class_count": 0,
+          "forced_pass59_classes": [],
+          "group_count": 2,
+          "modulus": 512,
+          "possible_bridge_class_count": 1,
+          "possible_bridge_classes": [
+            364
+          ],
+          "possible_pass59_class_count": 2,
+          "possible_pass59_classes": [
+            108,
+            364
+          ]
+        },
+        {
+          "extra_bits_above_word": 2,
+          "forced_bridge_class_count": 0,
+          "forced_bridge_classes": [],
+          "forced_pass59_class_count": 0,
+          "forced_pass59_classes": [],
+          "group_count": 4,
+          "modulus": 1024,
+          "possible_bridge_class_count": 1,
+          "possible_bridge_classes": [
+            364
+          ],
+          "possible_pass59_class_count": 3,
+          "possible_pass59_classes": [
+            108,
+            364,
+            620
+          ]
+        },
+        {
+          "extra_bits_above_word": 3,
+          "forced_bridge_class_count": 0,
+          "forced_bridge_classes": [],
+          "forced_pass59_class_count": 0,
+          "forced_pass59_classes": [],
+          "group_count": 8,
+          "modulus": 2048,
+          "possible_bridge_class_count": 1,
+          "possible_bridge_classes": [
+            364
+          ],
+          "possible_pass59_class_count": 3,
+          "possible_pass59_classes": [
+            108,
+            364,
+            620
+          ]
+        },
+        {
+          "extra_bits_above_word": 4,
+          "forced_bridge_class_count": 0,
+          "forced_bridge_classes": [],
+          "forced_pass59_class_count": 1,
+          "forced_pass59_classes": [
+            2412
+          ],
+          "group_count": 16,
+          "modulus": 4096,
+          "possible_bridge_class_count": 1,
+          "possible_bridge_classes": [
+            2412
+          ],
+          "possible_pass59_class_count": 3,
+          "possible_pass59_classes": [
+            108,
+            2412,
+            2668
+          ]
+        },
+        {
+          "extra_bits_above_word": 5,
+          "forced_bridge_class_count": 1,
+          "forced_bridge_classes": [
+            6508
+          ],
+          "forced_pass59_class_count": 3,
+          "forced_pass59_classes": [
+            2412,
+            6508,
+            6764
+          ],
+          "group_count": 32,
+          "modulus": 8192,
+          "possible_bridge_class_count": 1,
+          "possible_bridge_classes": [
+            6508
+          ],
+          "possible_pass59_class_count": 4,
+          "possible_pass59_classes": [
+            2412,
+            4204,
+            6508,
+            6764
+          ]
+        },
+        {
+          "extra_bits_above_word": 6,
+          "forced_bridge_class_count": 2,
+          "forced_bridge_classes": [
+            6508,
+            14700
+          ],
+          "forced_pass59_class_count": 7,
+          "forced_pass59_classes": [
+            2412,
+            6508,
+            6764,
+            10604,
+            12396,
+            14700,
+            14956
+          ],
+          "group_count": 64,
+          "modulus": 16384,
+          "possible_bridge_class_count": 2,
+          "possible_bridge_classes": [
+            6508,
+            14700
+          ],
+          "possible_pass59_class_count": 7,
+          "possible_pass59_classes": [
+            2412,
+            6508,
+            6764,
+            10604,
+            12396,
+            14700,
+            14956
+          ]
+        }
+      ],
+      "ghost_bridge_full_lifts": [],
+      "length": 8,
+      "minimal_extra_bits_with_forced_bridge_classes": 5,
+      "observed_aligns": [
+        3
+      ],
+      "observed_projection_mod_8192_counts": {
+        "6508": 5
+      },
+      "observed_q_mod64_by_align": {
+        "align=3;q_mod64=37": 3,
+        "align=3;q_mod64=5": 2
+      },
+      "observed_record_count": 5,
+      "observed_source_mod_16384_counts": {
+        "14700": 2,
+        "6508": 3
+      },
+      "observed_terminal_mod64_counts": {
+        "38": 3,
+        "6": 2
+      },
+      "pass59_full_lifts": [
+        {
+          "has_bridge_59_to_25_preterminal": false,
+          "m_mod_64": 9,
+          "observed_count": 0,
+          "passes_59_mod64": true,
+          "path_mod_64": [
+            44,
+            54,
+            27,
+            9,
+            14,
+            39,
+            59,
+            57,
+            54
+          ],
+          "source_mod_16384": 2412,
+          "terminal_mod_64": 54
+        },
+        {
+          "has_bridge_59_to_25_preterminal": true,
+          "m_mod_64": 25,
+          "observed_count": 3,
+          "passes_59_mod64": true,
+          "path_mod_64": [
+            44,
+            54,
+            27,
+            9,
+            14,
+            39,
+            59,
+            25,
+            38
+          ],
+          "q_mod64_by_observed_align": {
+            "3": 37
+          },
+          "source_mod_16384": 6508,
+          "terminal_mod_64": 38
+        },
+        {
+          "has_bridge_59_to_25_preterminal": false,
+          "m_mod_64": 26,
+          "observed_count": 0,
+          "passes_59_mod64": true,
+          "path_mod_64": [
+            44,
+            54,
+            27,
+            41,
+            30,
+            47,
+            39,
+            59,
+            25
+          ],
+          "source_mod_16384": 6764,
+          "terminal_mod_64": 25
+        },
+        {
+          "has_bridge_59_to_25_preterminal": false,
+          "m_mod_64": 41,
+          "observed_count": 0,
+          "passes_59_mod64": true,
+          "path_mod_64": [
+            44,
+            54,
+            27,
+            9,
+            14,
+            39,
+            59,
+            57,
+            22
+          ],
+          "source_mod_16384": 10604,
+          "terminal_mod_64": 22
+        },
+        {
+          "has_bridge_59_to_25_preterminal": false,
+          "m_mod_64": 48,
+          "observed_count": 0,
+          "passes_59_mod64": true,
+          "path_mod_64": [
+            44,
+            54,
+            27,
+            41,
+            62,
+            31,
+            47,
+            39,
+            59
+          ],
+          "source_mod_16384": 12396,
+          "terminal_mod_64": 59
+        },
+        {
+          "has_bridge_59_to_25_preterminal": true,
+          "m_mod_64": 57,
+          "observed_count": 2,
+          "passes_59_mod64": true,
+          "path_mod_64": [
+            44,
+            54,
+            27,
+            9,
+            14,
+            39,
+            59,
+            25,
+            6
+          ],
+          "q_mod64_by_observed_align": {
+            "3": 5
+          },
+          "source_mod_16384": 14700,
+          "terminal_mod_64": 6
+        },
+        {
+          "has_bridge_59_to_25_preterminal": false,
+          "m_mod_64": 58,
+          "observed_count": 0,
+          "passes_59_mod64": true,
+          "path_mod_64": [
+            44,
+            54,
+            27,
+            41,
+            30,
+            47,
+            39,
+            59,
+            57
+          ],
+          "source_mod_16384": 14956,
+          "terminal_mod_64": 57
+        }
+      ],
+      "pure_claims": {
+        "all_observed_full_lifts_are_bridge": true,
+        "bridge_forced_first_at_extra_bits_5": true,
+        "has_ghost_bridge_full_lift": false,
+        "observed_project_to_forced_bridge_mod8192": true
+      },
+      "word": "EEOOEOOO"
+    },
+    {
+      "affine": {
+        "constant": 1364,
+        "denominator": 256,
+        "length": 8,
+        "multiplier": 243,
+        "odd_count": 5
+      },
+      "affine_formula": "T^8(n) = (243*n + 1364)/256",
+      "bridge_full_lifts": [
+        {
+          "has_bridge_59_to_25_preterminal": true,
+          "m_mod_64": 7,
+          "observed_count": 0,
+          "passes_59_mod64": true,
+          "path_mod_64": [
+            36,
+            18,
+            41,
+            30,
+            47,
+            39,
+            59,
+            25,
+            6
+          ],
+          "q_mod64_by_observed_align": {
+            "4": 23
+          },
+          "source_mod_16384": 1956,
+          "terminal_mod_64": 6
+        },
+        {
+          "has_bridge_59_to_25_preterminal": true,
+          "m_mod_64": 39,
+          "observed_count": 1,
+          "passes_59_mod64": true,
+          "path_mod_64": [
+            36,
+            18,
+            41,
+            30,
+            47,
+            39,
+            59,
+            25,
+            38
+          ],
+          "q_mod64_by_observed_align": {
+            "4": 55
+          },
+          "source_mod_16384": 10148,
+          "terminal_mod_64": 38
+        }
+      ],
+      "bridge_projection_mod_8192": [
+        1956
+      ],
+      "cylinder_residue_mod_256": 164,
+      "forced_classes_by_extra_bits": [
+        {
+          "extra_bits_above_word": 0,
+          "forced_bridge_class_count": 0,
+          "forced_bridge_classes": [],
+          "forced_pass59_class_count": 0,
+          "forced_pass59_classes": [],
+          "group_count": 1,
+          "modulus": 256,
+          "possible_bridge_class_count": 1,
+          "possible_bridge_classes": [
+            164
+          ],
+          "possible_pass59_class_count": 1,
+          "possible_pass59_classes": [
+            164
+          ]
+        },
+        {
+          "extra_bits_above_word": 1,
+          "forced_bridge_class_count": 0,
+          "forced_bridge_classes": [],
+          "forced_pass59_class_count": 0,
+          "forced_pass59_classes": [],
+          "group_count": 2,
+          "modulus": 512,
+          "possible_bridge_class_count": 1,
+          "possible_bridge_classes": [
+            420
+          ],
+          "possible_pass59_class_count": 2,
+          "possible_pass59_classes": [
+            164,
+            420
+          ]
+        },
+        {
+          "extra_bits_above_word": 2,
+          "forced_bridge_class_count": 0,
+          "forced_bridge_classes": [],
+          "forced_pass59_class_count": 0,
+          "forced_pass59_classes": [],
+          "group_count": 4,
+          "modulus": 1024,
+          "possible_bridge_class_count": 1,
+          "possible_bridge_classes": [
+            932
+          ],
+          "possible_pass59_class_count": 3,
+          "possible_pass59_classes": [
+            164,
+            676,
+            932
+          ]
+        },
+        {
+          "extra_bits_above_word": 3,
+          "forced_bridge_class_count": 0,
+          "forced_bridge_classes": [],
+          "forced_pass59_class_count": 0,
+          "forced_pass59_classes": [],
+          "group_count": 8,
+          "modulus": 2048,
+          "possible_bridge_class_count": 1,
+          "possible_bridge_classes": [
+            1956
+          ],
+          "possible_pass59_class_count": 3,
+          "possible_pass59_classes": [
+            164,
+            1700,
+            1956
+          ]
+        },
+        {
+          "extra_bits_above_word": 4,
+          "forced_bridge_class_count": 0,
+          "forced_bridge_classes": [],
+          "forced_pass59_class_count": 1,
+          "forced_pass59_classes": [
+            1956
+          ],
+          "group_count": 16,
+          "modulus": 4096,
+          "possible_bridge_class_count": 1,
+          "possible_bridge_classes": [
+            1956
+          ],
+          "possible_pass59_class_count": 3,
+          "possible_pass59_classes": [
+            1956,
+            2212,
+            3748
+          ]
+        },
+        {
+          "extra_bits_above_word": 5,
+          "forced_bridge_class_count": 1,
+          "forced_bridge_classes": [
+            1956
+          ],
+          "forced_pass59_class_count": 3,
+          "forced_pass59_classes": [
+            1956,
+            2212,
+            6052
+          ],
+          "group_count": 32,
+          "modulus": 8192,
+          "possible_bridge_class_count": 1,
+          "possible_bridge_classes": [
+            1956
+          ],
+          "possible_pass59_class_count": 4,
+          "possible_pass59_classes": [
+            1956,
+            2212,
+            6052,
+            7844
+          ]
+        },
+        {
+          "extra_bits_above_word": 6,
+          "forced_bridge_class_count": 2,
+          "forced_bridge_classes": [
+            1956,
+            10148
+          ],
+          "forced_pass59_class_count": 7,
+          "forced_pass59_classes": [
+            1956,
+            2212,
+            6052,
+            10148,
+            10404,
+            14244,
+            16036
+          ],
+          "group_count": 64,
+          "modulus": 16384,
+          "possible_bridge_class_count": 2,
+          "possible_bridge_classes": [
+            1956,
+            10148
+          ],
+          "possible_pass59_class_count": 7,
+          "possible_pass59_classes": [
+            1956,
+            2212,
+            6052,
+            10148,
+            10404,
+            14244,
+            16036
+          ]
+        }
+      ],
+      "ghost_bridge_full_lifts": [
+        {
+          "has_bridge_59_to_25_preterminal": true,
+          "m_mod_64": 7,
+          "observed_count": 0,
+          "passes_59_mod64": true,
+          "path_mod_64": [
+            36,
+            18,
+            41,
+            30,
+            47,
+            39,
+            59,
+            25,
+            6
+          ],
+          "q_mod64_by_observed_align": {
+            "4": 23
+          },
+          "source_mod_16384": 1956,
+          "terminal_mod_64": 6
+        }
+      ],
+      "length": 8,
+      "minimal_extra_bits_with_forced_bridge_classes": 5,
+      "observed_aligns": [
+        4
+      ],
+      "observed_projection_mod_8192_counts": {
+        "1956": 1
+      },
+      "observed_q_mod64_by_align": {
+        "align=4;q_mod64=55": 1
+      },
+      "observed_record_count": 1,
+      "observed_source_mod_16384_counts": {
+        "10148": 1
+      },
+      "observed_terminal_mod64_counts": {
+        "38": 1
+      },
+      "pass59_full_lifts": [
+        {
+          "has_bridge_59_to_25_preterminal": true,
+          "m_mod_64": 7,
+          "observed_count": 0,
+          "passes_59_mod64": true,
+          "path_mod_64": [
+            36,
+            18,
+            41,
+            30,
+            47,
+            39,
+            59,
+            25,
+            6
+          ],
+          "q_mod64_by_observed_align": {
+            "4": 23
+          },
+          "source_mod_16384": 1956,
+          "terminal_mod_64": 6
+        },
+        {
+          "has_bridge_59_to_25_preterminal": false,
+          "m_mod_64": 8,
+          "observed_count": 0,
+          "passes_59_mod64": true,
+          "path_mod_64": [
+            36,
+            18,
+            41,
+            62,
+            31,
+            47,
+            39,
+            59,
+            57
+          ],
+          "source_mod_16384": 2212,
+          "terminal_mod_64": 57
+        },
+        {
+          "has_bridge_59_to_25_preterminal": false,
+          "m_mod_64": 23,
+          "observed_count": 0,
+          "passes_59_mod64": true,
+          "path_mod_64": [
+            36,
+            18,
+            41,
+            30,
+            47,
+            39,
+            59,
+            57,
+            54
+          ],
+          "source_mod_16384": 6052,
+          "terminal_mod_64": 54
+        },
+        {
+          "has_bridge_59_to_25_preterminal": true,
+          "m_mod_64": 39,
+          "observed_count": 1,
+          "passes_59_mod64": true,
+          "path_mod_64": [
+            36,
+            18,
+            41,
+            30,
+            47,
+            39,
+            59,
+            25,
+            38
+          ],
+          "q_mod64_by_observed_align": {
+            "4": 55
+          },
+          "source_mod_16384": 10148,
+          "terminal_mod_64": 38
+        },
+        {
+          "has_bridge_59_to_25_preterminal": false,
+          "m_mod_64": 40,
+          "observed_count": 0,
+          "passes_59_mod64": true,
+          "path_mod_64": [
+            36,
+            18,
+            41,
+            62,
+            31,
+            47,
+            39,
+            59,
+            25
+          ],
+          "source_mod_16384": 10404,
+          "terminal_mod_64": 25
+        },
+        {
+          "has_bridge_59_to_25_preterminal": false,
+          "m_mod_64": 55,
+          "observed_count": 0,
+          "passes_59_mod64": true,
+          "path_mod_64": [
+            36,
+            18,
+            41,
+            30,
+            47,
+            39,
+            59,
+            57,
+            22
+          ],
+          "source_mod_16384": 14244,
+          "terminal_mod_64": 22
+        },
+        {
+          "has_bridge_59_to_25_preterminal": false,
+          "m_mod_64": 62,
+          "observed_count": 0,
+          "passes_59_mod64": true,
+          "path_mod_64": [
+            36,
+            18,
+            41,
+            62,
+            63,
+            31,
+            47,
+            39,
+            59
+          ],
+          "source_mod_16384": 16036,
+          "terminal_mod_64": 59
+        }
+      ],
+      "pure_claims": {
+        "all_observed_full_lifts_are_bridge": true,
+        "bridge_forced_first_at_extra_bits_5": true,
+        "has_ghost_bridge_full_lift": true,
+        "observed_project_to_forced_bridge_mod8192": true
+      },
+      "word": "EEOEOOOO"
+    }
+  ]
+}

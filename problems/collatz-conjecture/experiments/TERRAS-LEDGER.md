@@ -5,12 +5,12 @@ _Created: 2026-07-02. Honest accounting of what is **Proved**, **Measured**, and
 ## Current verification ceiling (measured)
 
 ```text
-Terras (τ = σ) verified for all odd n  ≤  60,000,000,000   (log₂ n ≤ 35.81)
+Terras (τ = σ) verified for all odd n  ≤  90,000,000,000   (log₂ n ≤ 36.39)
 ```
 
-Zero mismatches across **29.5×10⁹** odd integers scanned (bands 10–12 full + band 13 chunks 1–2).
+Zero mismatches across **44.5×10⁹** odd integers scanned (bands 10–12 full + band 13 chunks 1–3).
 
-Band 13 remains **open** above `6×10¹⁰`: window `(6×10¹⁰, 1.48×10¹²]`, ~`7.15×10¹¹` odds (~28 h remaining).
+Band 13 remains **open** above `9×10¹⁰`: window `(9×10¹⁰, 1.48×10¹²]`, ~`6.85×10¹¹` odds (~25 h remaining). Chunk 4 (`9×10¹⁰`–`1.2×10¹¹`) in progress.
 
 ## Dual-route exclusion (see `GAMMA-DUAL-ROUTE.md`)
 
@@ -18,7 +18,7 @@ Every scanned window is closed by **two independent routes**:
 
 | Route | Mechanism | Status in verified range |
 |---|---|---|
-| **A** | `max τ < τ_min(k)` | **Measured** — bands 10–12 + band 13 chunk 1 |
+| **A** | `max τ < τ_min(k)` | **Measured** — bands 10–12 + band 13 chunks 1–3 |
 | **B** | `max γ < γ_floor(k)` | **Proved** lower bound vs **measured** upper (`16.32 ≪ 1,578`) |
 
 A Terras violation in band 10+ would need `γ ≥ 1,578`; measured max is `16.32` — a gap of **~97×** even before the τ scan.
@@ -31,7 +31,7 @@ A Terras violation in band 10+ would need `γ ≥ 1,578`; measured max is `16.32
 | 10 | 31,867 – 79,335 | **CLOSED** | scan: `max_τ=433` `<` `50,509` |
 | 11 | 79,335 – 111,202 | **CLOSED** | scan: `max_τ=447` `<` `125,743` |
 | 12 | 111,202 – 190,537 | **CLOSED** | scan: `max_τ=547` `<` `176,252` |
-| 13 | 190,537 – 10,590,737 | **PARTIAL** | chunks 1–2 to `6×10¹⁰`: `max_τ=546` (chunk 1), `max_τ=485` (chunk 2) `<` `301,994`; ~28 h left in window |
+| 13 | 190,537 – 10,590,737 | **PARTIAL** | chunks 1–3 to `9×10¹⁰`: `max_τ=535` (chunk 3) `<` `301,994`; chunk 4 in flight |
 
 At scan floor `1.54×10¹⁰`, bands 1–11 are also **structurally proved empty** by delta-squeeze (no scan needed for violations past that floor in those bands).
 
@@ -39,8 +39,8 @@ At scan floor `1.54×10¹⁰`, bands 1–11 are also **structurally proved empty
 
 | Quantity | Value | `n` |
 |---:|---:|---:|
-| max `τ` | 547 | 14,500,812,391 (band 12); chunk 2 max `485` at `3.40×10¹⁰` |
-| max `γ = τ/log₂ n` | 16.32 | 12,235,060,455 (band 12); chunk 2 max `13.86` at `3.40×10¹⁰` |
+| max `τ` | 547 | 14,500,812,391 (band 12); chunk 3 max `535` at `8.40×10¹⁰` |
+| max `γ = τ/log₂ n` | 16.32 | 12,235,060,455 (band 12); chunk 3 max `14.74` at `8.40×10¹⁰` |
 | mean `τ` | ~5.985 | — |
 
 Borel–Cantelli heuristic ceiling: `γ ≤ 19.982`. Measured records stay well below.
@@ -75,6 +75,6 @@ python experiments/collatz_gap_scanner.py close-band --scan-floor 15443807723 --
 ## Honesty
 
 - **Collatz: OPEN**
-- **Terras through `6×10¹⁰`: measured** (band 13 chunks 1–2 complete)
+- **Terras through `9×10¹⁰`: measured** (band 13 chunks 1–3 complete; chunk 4 in flight)
 - **Bands 10–12 closure: proved empty per band-closure criterion + measurement**
 - **Band 13+: scan wall or needs new theorem**

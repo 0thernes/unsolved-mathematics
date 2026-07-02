@@ -1,0 +1,173 @@
+{
+  "constants": {
+    "binary_entropy_H_theta": "0.9499555271883306348139005795387176931951",
+    "decay_rate_1_minus_H": "0.0500444728116693651860994204612823068048",
+    "decay_rate_float": 0.05004447281166936,
+    "envelope_slope_c_star": "19.982226683919030107035684504837247076566",
+    "envelope_slope_float": 19.98222668391903,
+    "lagarias_weiss_total_stopping_analogue": 41.677647,
+    "theta_log3_2": "0.6309297535714574370995271143427608542995"
+  },
+  "elapsed_seconds": 0.546,
+  "first_moment_envelope": [
+    {
+      "bits": 14,
+      "expected_0.01_bracket_depth": 239,
+      "first_moment_crossing_depth": 129
+    },
+    {
+      "bits": 16,
+      "expected_0.01_bracket_depth": 275,
+      "first_moment_crossing_depth": 161
+    },
+    {
+      "bits": 18,
+      "expected_0.01_bracket_depth": 310,
+      "first_moment_crossing_depth": 194
+    },
+    {
+      "bits": 20,
+      "expected_0.01_bracket_depth": 345,
+      "first_moment_crossing_depth": 229
+    },
+    {
+      "bits": 22,
+      "expected_0.01_bracket_depth": 381,
+      "first_moment_crossing_depth": 263
+    },
+    {
+      "bits": 24,
+      "expected_0.01_bracket_depth": 416,
+      "first_moment_crossing_depth": 297
+    },
+    {
+      "bits": 28,
+      "expected_0.01_bracket_depth": 491,
+      "first_moment_crossing_depth": 369
+    },
+    {
+      "bits": 32,
+      "expected_0.01_bracket_depth": 565,
+      "first_moment_crossing_depth": 442
+    },
+    {
+      "bits": 48,
+      "expected_0.01_bracket_depth": 866,
+      "first_moment_crossing_depth": 741
+    },
+    {
+      "bits": 64,
+      "expected_0.01_bracket_depth": 1172,
+      "first_moment_crossing_depth": 1046
+    },
+    {
+      "bits": 71,
+      "expected_0.01_bracket_depth": 1309,
+      "first_moment_crossing_depth": 1180
+    },
+    {
+      "bits": 128,
+      "expected_0.01_bracket_depth": 2048,
+      "first_moment_crossing_depth": 2048
+    }
+  ],
+  "interpretation": "The proved bound caps the uncertified density at 2^(-(1-H(theta))d) unconditionally. The first-moment crossings and deviation samples quantify the conjectural pointwise escape envelope; deviations of the alive curves from the word model are the measurable content of the missing uniform escape theorem. No proof of Collatz is claimed.",
+  "probes": [
+    {
+      "depth": 105,
+      "log2_fraction": -12.326868,
+      "minus_log2_fraction": 12.326868
+    },
+    {
+      "depth": 135,
+      "log2_fraction": -14.32044,
+      "minus_log2_fraction": 14.32044
+    },
+    {
+      "depth": 183,
+      "log2_fraction": -17.24689,
+      "minus_log2_fraction": 17.24689
+    },
+    {
+      "depth": 224,
+      "log2_fraction": -19.731141,
+      "minus_log2_fraction": 19.731141
+    },
+    {
+      "depth": 287,
+      "log2_fraction": -23.406877,
+      "minus_log2_fraction": 23.406877
+    },
+    {
+      "depth": 395,
+      "log2_fraction": -29.42614,
+      "minus_log2_fraction": 29.42614
+    },
+    {
+      "depth": 509,
+      "log2_fraction": -35.659179,
+      "minus_log2_fraction": 35.659179
+    },
+    {
+      "depth": 738,
+      "log2_fraction": -47.81937,
+      "minus_log2_fraction": 47.81937
+    }
+  ],
+  "proved_bound_check": {
+    "checked_depths": 65,
+    "cycle_lemma_lower_bound_held": true,
+    "entropy_bound_held": true,
+    "exact_endpoint_tail_bound_held": true,
+    "min_slack_vs_cycle_lower_bits": 0.0,
+    "min_slack_vs_endpoint_tail_bits": 0.0,
+    "min_slack_vs_entropy_bound_bits": 0.949956
+  },
+  "survivor_dp_rows": [
+    {
+      "depth": 1,
+      "effective_rate_bits_per_step": 1.0,
+      "log2_fraction": -1.0,
+      "log2_survivors": 0.0,
+      "min_live_odd_count": 1,
+      "proved_rate_bits_per_step": 0.050044473,
+      "survivors": 1
+    },
+    {
+      "depth": 512,
+      "effective_rate_bits_per_step": 0.070018379,
+      "log2_fraction": -35.84941,
+      "log2_survivors": 476.15059,
+      "min_live_odd_count": 324,
+      "proved_rate_bits_per_step": 0.050044473,
+      "survivors": null
+    },
+    {
+      "depth": 1024,
+      "effective_rate_bits_per_step": 0.061435855,
+      "log2_fraction": -62.910316,
+      "log2_survivors": 961.089684,
+      "min_live_odd_count": 647,
+      "proved_rate_bits_per_step": 0.050044473,
+      "survivors": null
+    },
+    {
+      "depth": 1536,
+      "effective_rate_bits_per_step": 0.05819088,
+      "log2_fraction": -89.381192,
+      "log2_survivors": 1446.618808,
+      "min_live_odd_count": 970,
+      "proved_rate_bits_per_step": 0.050044473,
+      "survivors": null
+    },
+    {
+      "depth": 2048,
+      "effective_rate_bits_per_step": 0.056447678,
+      "log2_fraction": -115.604845,
+      "log2_survivors": 1932.395155,
+      "min_live_odd_count": 1293,
+      "proved_rate_bits_per_step": 0.050044473,
+      "survivors": null
+    }
+  ]
+}

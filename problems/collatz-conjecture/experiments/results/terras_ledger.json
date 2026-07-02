@@ -49,6 +49,16 @@
       "odd_integers_scanned": 15000000000,
       "proved_empty_slice": true,
       "tau_min_required": 301994
+    },
+    {
+      "band_k": 13,
+      "file": "gap_scan_band13_chunk3.json",
+      "hi_inclusive": 90000000000,
+      "lo_exclusive": 60000000000,
+      "max_tau": 535,
+      "odd_integers_scanned": 15000000000,
+      "proved_empty_slice": true,
+      "tau_min_required": 301994
     }
   ],
   "collatz_status": "OPEN",
@@ -57,11 +67,11 @@
   "global_max_tau": 547,
   "global_max_tau_n": 14500812391,
   "honesty": "Measured Terras verification only. Collatz open. Band closure requires full window or proved gamma bound.",
-  "log2_verified_through": 35.8,
+  "log2_verified_through": 36.39,
   "mismatch_count": 0,
   "mode": "ledger",
   "results_dir": "Z:\\[Vibe Coded (AI)]\\CLAUDECODE\\Unresolved Math Problems\\problems\\collatz-conjecture\\experiments\\results",
-  "terras_verified_through": 60000000000,
-  "total_elapsed_seconds": 9088.1,
-  "total_odd_integers_scanned": 29500000000
+  "terras_verified_through": 90000000000,
+  "total_elapsed_seconds": 11202.7,
+  "total_odd_integers_scanned": 44500000000
 }

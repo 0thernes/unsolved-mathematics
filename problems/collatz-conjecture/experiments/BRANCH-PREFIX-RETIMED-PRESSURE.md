@@ -175,3 +175,27 @@ The exact checked transition has minimum threshold surplus `2`, so the finite
 evidence even leaves a small buffer. The proof obligation is to derive this
 from the affine lift bit and the low/high alignment grammar, not from
 enumeration.
+
+## Pressure-Unit Follow-Up
+
+The stricter follow-up in
+[`BRANCH-PREFIX-PRESSURE-UNITS.md`](BRANCH-PREFIX-PRESSURE-UNITS.md) checks
+every above-parent required-credit increase in the same retimed class, not only
+the first crossing.
+
+Result:
+
+```text
+above-parent pressure units:               6,652
+pressure-unit failures:                        0
+tight pressure units:                          0
+minimum pressure-unit surplus:                 2
+maximum required above parent:                 5
+maximum threshold lag:                        21
+prior high-ladder credit:                  6,535
+prior low-repeat credit:                     117
+```
+
+So the local lemma should be stated at pressure-unit granularity: every
+above-parent pressure unit in a retimed child is visibly prepaid with positive
+surplus.

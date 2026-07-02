@@ -1296,6 +1296,27 @@ breaks the law and marks exactly where integers refuse measure-typical
 behavior. Details and honest interpretation:
 [ESCAPE-ENVELOPE.md](ESCAPE-ENVELOPE.md).
 
+Follow-up, same session: the mass bound is now **two-sided**. Theorem 8
+(cycle-lemma lower bound, proof in CERTIFICATE-FRONTIER-THEOREMS.md): the
+drift path `o(j) ln 3 - j ln 2` has pairwise-distinct partial sums, so every
+cyclic class of words with `3^o > 2^d` contains a rotation that is a survivor,
+giving `S(d) >= C(d, o_min)/d` and hence
+
+```text
+2^(dH(theta))/(3d^2) <= S(d) <= 2^(dH(theta))     (d >= 20),
+```
+
+verified in exact integers at 65 grid depths through 2048 (at `d = 2048`:
+floor `1928.07` <= actual `1932.40` <= ceiling `1945.47` bits). Consequence:
+`D_1(b) = c* b + O(log b)` is now a theorem; the only unproved ingredient in
+the envelope conjecture is representative equidistribution. That ingredient
+is measured by the minimal-survivor duality products `m * S(D)/2^D` at the
+six exhaustively-known record pairs (`D = 105..395`):
+`1.97, 1.74, 6.61, 1.29, 1.21, 0.30` — order one across seventeen binary
+orders of magnitude of density. Probe fractions came from
+`--probe-depths 105,135,183,224,287,395` on the same analyzer
+(`results/escape_envelope_bounds_2048.json`).
+
 ## Session 3 (2026-07-01, evening): sibling controls and the eps-invariance barrier
 
 New instrument `collatz_sibling_control.py` + writeup `SIBLING-CONTROL.md`. The
@@ -2831,3 +2852,731 @@ if __name__ == "__main__":
 **In flight:** band 13 chunk 2 (`3×10¹⁰` – `6×10¹⁰`, 8 workers). Chunk 1: 7.28×10⁹ odds, 1264 s, zero mismatches.
 
 **Honest open target:** prove global `γ ≤ G` with `G·log₂ X_k < τ_min(k)` (would close bands without scan) OR finish band 13 window (~31 h). Divergence half untouched.
+
+## Session 10 — Branch-prefix pressure units (2026-07-02)
+
+**Status: OPEN.** No proof claim.
+
+**New artifacts:**
+
+- [`BRANCH-PREFIX-PRESSURE-UNITS.md`](BRANCH-PREFIX-PRESSURE-UNITS.md)
+- [`branch_prefix_pressure_units.py`](branch_prefix_pressure_units.py)
+- `experiments/results/branch_prefix_pressure_units_d25_d26_20260702.json`
+
+Command:
+
+```powershell
+python experiments/branch_prefix_pressure_units.py --parent-depth 25 --max-depth 1024 --top-n 12 --output experiments/results/branch_prefix_pressure_units_d25_d26_20260702.json --quiet
+```
+
+The previous retimed-pressure audit checked only the first above-parent
+pressure crossing. This run checks every above-parent pressure unit in the
+same exact `25 -> 26` retimed hard class.
+
+Result:
+
+```text
+retimed transitions:                       5,677
+fully unit-certified retimed transitions:  5,677
+above-parent pressure units:               6,652
+pressure-unit failures:                        0
+tight pressure units:                          0
+minimum pressure-unit surplus:                 2
+maximum required above parent:                 5
+maximum threshold lag:                        21
+prior high-ladder pressure units:          6,535
+prior low-repeat pressure units:             117
+```
+
+Pressure-unit count per retimed transition:
+
+```text
+1 unit:   4,843
+2 units:    718
+3 units:     96
+4 units:     15
+5 units:      5
+```
+
+Interpretation: the finite hard class is not merely first-crossing prepaid.
+Every above-parent pressure unit observed in the exact lift is visibly prepaid
+with positive surplus. The theorem target is now a pressure-unit lift lemma
+derived from the affine lift bit plus the low/high alignment grammar. Collatz
+remains open.
+
+## Session 11 — Pressure-unit symbolic classifier (2026-07-02)
+
+**Status: OPEN.** No proof claim.
+
+**New artifacts:**
+
+- [`BRANCH-PREFIX-PRESSURE-UNIT-CLASSIFIER.md`](BRANCH-PREFIX-PRESSURE-UNIT-CLASSIFIER.md)
+- [`branch_prefix_pressure_unit_classifier.py`](branch_prefix_pressure_unit_classifier.py)
+- `experiments/results/branch_prefix_pressure_unit_classifier_d25_d26_20260702.json`
+
+Command:
+
+```powershell
+python experiments/branch_prefix_pressure_unit_classifier.py --parent-depth 25 --max-depth 1024 --top-n 12 --output experiments/results/branch_prefix_pressure_unit_classifier_d25_d26_20260702.json --quiet
+```
+
+The classifier recomputed the exact `25 -> 26` hard class and mined
+theorem-facing features from all `6,652` pressure units.
+
+Pure finite features:
+
+```text
+retimed transitions are upper-lift child:   true
+pressure units are upper-lift child:        true
+retimed children are high-assisted:         true
+pressure units have prior credit:           true
+pressure units have positive surplus:       true
+```
+
+Regime split:
+
+```text
+high_inside_active_ladder:  6,195
+high_after_ladder_window:     340
+low_repeat_prepaid:           117
+```
+
+Last-credit split:
+
+```text
+high_ladder: 6,535
+low_repeat:    117
+```
+
+Key new theorem signal:
+
+```text
+high-ladder lag_minus_align range: -10 .. 3
+post-ladder high units:           340
+post-ladder high lag_minus_align: all exactly 3
+```
+
+Interpretation: the local proof target is now split into active-ladder
+domination, low-repeat domination, and a precise three-shortcut post-ladder
+carry bound after the terminal high-ladder state `3^a q - 1`. This is better
+than the previous black-box replay, but it is still finite evidence.
+
+## Session 12 — Post-ladder tail carry audit (2026-07-02)
+
+**Status: OPEN.** No proof claim.
+
+**New artifacts:**
+
+- [`BRANCH-PREFIX-POST-LADDER-TAIL.md`](BRANCH-PREFIX-POST-LADDER-TAIL.md)
+- [`branch_prefix_post_ladder_tail.py`](branch_prefix_post_ladder_tail.py)
+- `experiments/results/branch_prefix_post_ladder_tail_d25_d26_20260702.json`
+
+Command:
+
+```powershell
+python experiments/branch_prefix_post_ladder_tail.py --parent-depth 25 --max-depth 1024 --top-n 12 --output experiments/results/branch_prefix_post_ladder_tail_d25_d26_20260702.json --quiet
+```
+
+The post-ladder high tail from the pressure-unit classifier was reconstructed
+from each last credit state `x = 2^a q - 1`.
+
+Result:
+
+```text
+post-ladder tail units:       340
+reconstruction failures:        0
+terminal_v2 = 1:              340
+terminal mod 16 = 6:          340
+post parity word EOO:         340
+all tail units positive:      true
+```
+
+The finite carry law is now explicit. For `y = 3^a q - 1 = 16r + 6`:
+
+```text
+T(y)   = 8r + 3
+T^2(y) = 12r + 5
+T^3(y) = 18r + 8
+```
+
+So the observed `lag_minus_align = 3` has a residue explanation. The remaining
+real theorem target is to prove that the retimed upper-child post-ladder
+hypotheses force `3^a q - 1 == 6 mod 16`.
+
+## Session 13 — Tail congruence non-uniqueness (2026-07-02)
+
+**Status: OPEN.** No proof claim.
+
+**New artifacts:**
+
+- [`BRANCH-PREFIX-TAIL-CONGRUENCE.md`](BRANCH-PREFIX-TAIL-CONGRUENCE.md)
+- [`branch_prefix_tail_congruence.py`](branch_prefix_tail_congruence.py)
+- `experiments/results/branch_prefix_tail_congruence_d25_d26_20260702.json`
+
+Command:
+
+```powershell
+python experiments/branch_prefix_tail_congruence.py --parent-depth 25 --max-depth 1024 --top-n 12 --output experiments/results/branch_prefix_tail_congruence_d25_d26_20260702.json --quiet
+```
+
+The audit checks whether the post-ladder congruence is a classifier.
+
+Result:
+
+```text
+high-ladder pressure units:                 6,535
+post-ladder tail units:                       340
+all tail units terminal 6 mod 16:            true
+all tail units match q mod 16 rule:          true
+terminal 6 mod 16 unique to tail:           false
+active-ladder terminal 6 mod 16 units:        656
+```
+
+The equivalent cofactor rule for the tail is:
+
+```text
+a mod 4 = 0 -> q mod 16 = 7   (92)
+a mod 4 = 1 -> q mod 16 = 13  (64)
+a mod 4 = 2 -> q mod 16 = 15  (48)
+a mod 4 = 3 -> q mod 16 = 5  (136)
+```
+
+Interpretation: terminal `6 mod 16` explains the `EOO` tail but does not by
+itself identify the tail. The proof split has to stay conditional: active
+high-ladder units are prepaid during the ladder; post-ladder units need a
+separate lemma showing pressure can wait past the ladder only in the
+`q == 7*(3^a)^(-1) mod 16` branch.
+
+## Session 14 — Tail phase separator (2026-07-02)
+
+**Status: OPEN.** No proof claim.
+
+**New artifacts:**
+
+- [`BRANCH-PREFIX-TAIL-PHASE.md`](BRANCH-PREFIX-TAIL-PHASE.md)
+- [`branch_prefix_tail_phase.py`](branch_prefix_tail_phase.py)
+- `experiments/results/branch_prefix_tail_phase_d25_d26_20260702.json`
+
+Command:
+
+```powershell
+python experiments/branch_prefix_tail_phase.py --parent-depth 25 --max-depth 1024 --top-n 12 --output experiments/results/branch_prefix_tail_phase_d25_d26_20260702.json --quiet
+```
+
+The prior congruence audit found that terminal `6 mod 16` is necessary for the
+post-ladder tail but not unique to it.  This pass checks the missing phase
+separator using 80-digit Decimal arithmetic for:
+
+```text
+odd_steps - (log 2 / log 3) * total_steps
+```
+
+Result:
+
+```text
+retimed transitions:                         5,677
+above-parent pressure units:                 6,652
+high-ladder pressure units:                  6,535
+terminal-6 high-ladder pressure units:         996
+post-ladder terminal-6 with positive gap:      340
+active terminal-6 with nonpositive gap:        656
+terminal-6 phase sign classifies tail:        true
+all tail required_delta_from_terminal = 1:    true
+```
+
+Numerical phase separation:
+
+```text
+EOO gain:                    0.107210739285627688701419...
+closest active terminal-6:  -0.025669364284617390217970...
+closest tail terminal-6:    +0.021768664287042106578247...
+```
+
+Interpretation: the refined finite classifier for the exact `25 -> 26` lift is
+not merely terminal `6 mod 16`; it is terminal `6 mod 16` plus positive terminal
+threshold gap.  The residue condition forces the `EOO` parity word, while the
+positive phase gap explains why the `EOO` carry crosses exactly one new
+required-credit level after the ladder.  The open proof target is to derive the
+phase sign from the lifted upper-child frontier hypotheses instead of from
+enumeration.
+
+## Session 15 — Tail phase spectrum and memory subcase (2026-07-02)
+
+**Status: OPEN.** No proof claim.
+
+**New artifacts:**
+
+- [`BRANCH-PREFIX-TAIL-PHASE-SPECTRUM.md`](BRANCH-PREFIX-TAIL-PHASE-SPECTRUM.md)
+- [`branch_prefix_tail_phase_spectrum.py`](branch_prefix_tail_phase_spectrum.py)
+- `experiments/results/branch_prefix_tail_phase_spectrum_d25_d26_20260702.json`
+
+Command:
+
+```powershell
+python experiments/branch_prefix_tail_phase_spectrum.py --parent-depth 25 --max-depth 1024 --top-n 12 --hist-top-n 32 --output experiments/results/branch_prefix_tail_phase_spectrum_d25_d26_20260702.json --quiet
+```
+
+The phase separator stayed exact:
+
+```text
+terminal-6 high-ladder pressure units: 996
+phase sign still classifies tail:      true
+source misses:                         0
+```
+
+But the max-source audit found a small memory subcase:
+
+```text
+active terminal-6 max source at terminal: 656 / 656
+tail terminal-6 max source at terminal:   334 / 340
+tail max source eight steps earlier:        6 / 340
+```
+
+The positive tail side compresses to four phase forms in
+`theta = log(2)/log(3)`:
+
+```text
+27*theta - 17.001 = 0.034103346429350801687232...  count 275
+35*theta - 22.001 = 0.081541375001010298483449...  count  57
+46*theta - 29.001 = 0.021768664287042106578247...  count   5
+54*theta - 34.001 = 0.069206692858701603374464...  count   3
+```
+
+Interpretation: the tail phase lemma is almost terminal-local, but not quite.
+A proof must handle the six earlier-source tail cases instead of silently
+identifying terminal max excess with terminal current excess everywhere.  The
+new target is smaller: derive the four positive phase forms from the lift
+hypotheses and prove why the six memory cases source their max eight steps
+before terminal.
+
+## Session 16 — Tail memory-case extraction (2026-07-02)
+
+**Status: OPEN.** No proof claim.
+
+**New artifacts:**
+
+- [`BRANCH-PREFIX-TAIL-MEMORY-CASES.md`](BRANCH-PREFIX-TAIL-MEMORY-CASES.md)
+- [`branch_prefix_tail_memory_cases.py`](branch_prefix_tail_memory_cases.py)
+- `experiments/results/branch_prefix_tail_memory_cases_d25_d26_20260702.json`
+
+Command:
+
+```powershell
+python experiments/branch_prefix_tail_memory_cases.py --parent-depth 25 --max-depth 1024 --top-n 12 --output experiments/results/branch_prefix_tail_memory_cases_d25_d26_20260702.json --quiet
+```
+
+The six non-terminal max-source tail cases are now explicit:
+
+```text
+terminal-6 post-ladder tail units: 340
+memory-tail cases:                   6
+source lag to terminal:              8 in all 6
+terminal-to-event word:              EOO in all 6
+source-to-terminal odd count:         5 in all 6
+```
+
+The source-to-terminal segment has two words:
+
+```text
+EEOOEOOO: 5
+EEOEOOOO: 1
+```
+
+All six share the same phase identities:
+
+```text
+max-source gap:       27*theta - 17.001 = 0.034103346429350801687232...
+terminal-current gap: 35*theta - 22.001 = 0.081541375001010298483449...
+memory drop:           8*theta - 5      = 0.047438028571659496796216...
+```
+
+Both source-to-terminal words pass through `59 mod 64`, the low-repeat gate
+residue. Interpretation: the memory subcase is a concrete two-word bridge
+between the low-repeat grammar and the post-ladder high-tail carry. The open
+lemma target is to derive these two words from the upper-child frontier
+hypotheses, not from exact enumeration.
+
+## Session 17 — Tail memory word-map lift (2026-07-02)
+
+**Status: OPEN.** No proof claim.
+
+**New artifacts:**
+
+- [`BRANCH-PREFIX-TAIL-MEMORY-WORD-MAPS.md`](BRANCH-PREFIX-TAIL-MEMORY-WORD-MAPS.md)
+- [`branch_prefix_tail_memory_word_maps.py`](branch_prefix_tail_memory_word_maps.py)
+- `experiments/results/branch_prefix_tail_memory_word_maps_d25_d26_20260702.json`
+
+Command:
+
+```powershell
+python experiments/branch_prefix_tail_memory_word_maps.py --memory-result experiments/results/branch_prefix_tail_memory_cases_d25_d26_20260702.json --output experiments/results/branch_prefix_tail_memory_word_maps_d25_d26_20260702.json --quiet
+```
+
+The two memory words now have exact affine maps:
+
+```text
+EEOOEOOO: T^8(n) = (243*n + 1148)/256, source n == 108 mod 256
+EEOEOOOO: T^8(n) = (243*n + 1364)/256, source n == 164 mod 256
+```
+
+Honesty correction: the raw modulo-`256` word cylinder does not determine the
+full path modulo `64`. Its representative path does not pass through `59 mod
+64` for either word. The observed low-repeat bridge needs the lifted source
+class modulo `16384`.
+
+Lifted memory classes:
+
+```text
+EEOOEOOO, n == 6508 mod 16384, count 3:
+  44 -> 54 -> 27 -> 9 -> 14 -> 39 -> 59 -> 25 -> 38
+
+EEOOEOOO, n == 14700 mod 16384, count 2:
+  44 -> 54 -> 27 -> 9 -> 14 -> 39 -> 59 -> 25 -> 6
+
+EEOEOOOO, n == 10148 mod 16384, count 1:
+  36 -> 18 -> 41 -> 30 -> 47 -> 39 -> 59 -> 25 -> 38
+```
+
+Pure checks:
+
+```text
+all memory records affine compatible: true
+all memory paths match records:       true
+raw mod-256 paths do not force 59:    true
+lifted memory paths pass 59:          true
+lifted paths have preterminal 25:     true
+```
+
+Interpretation: the memory obstruction is now a lifted-residue lemma target.
+The proof has to derive the source classes `6508`, `14700`, and `10148` modulo
+`16384` from the upper-child frontier hypotheses; after that, the affine maps
+force the `59 -> 25 -> terminal` bridge exactly.
+
+## Session 18 — Tail memory minimal-lift solver (2026-07-02)
+
+**Status: OPEN.** No proof claim.
+
+**New artifacts:**
+
+- [`BRANCH-PREFIX-TAIL-MEMORY-LIFT-SOLVER.md`](BRANCH-PREFIX-TAIL-MEMORY-LIFT-SOLVER.md)
+- [`branch_prefix_tail_memory_lift_solver.py`](branch_prefix_tail_memory_lift_solver.py)
+- `experiments/results/branch_prefix_tail_memory_lift_solver_d25_d26_20260702.json`
+
+Command:
+
+```powershell
+python experiments/branch_prefix_tail_memory_lift_solver.py --memory-result experiments/results/branch_prefix_tail_memory_cases_d25_d26_20260702.json --output experiments/results/branch_prefix_tail_memory_lift_solver_d25_d26_20260702.json --quiet
+```
+
+New refinement: the low-repeat bridge needs fewer bits than the full terminal
+path.  Writing source `n = r + 256m`:
+
+```text
+EEOOEOOO:
+  bridge forced by n == 6508 mod 8192  (m == 25 mod 32)
+
+EEOEOOOO:
+  bridge forced by n == 1956 mod 8192  (m == 7 mod 32)
+```
+
+Terminal-bit refinements:
+
+```text
+EEOOEOOO:
+  6508  mod 16384 -> terminal 38, observed 3
+  14700 mod 16384 -> terminal 6,  observed 2
+
+EEOEOOOO:
+  1956  mod 16384 -> terminal 6,  observed 0  (ghost)
+  10148 mod 16384 -> terminal 38, observed 1
+```
+
+Pure checks:
+
+```text
+observed full lifts are bridge classes:      true
+observed project to forced bridge mod 8192:  true
+bridge first forced at five extra bits:      true
+exactly one unobserved bridge full lift:     true
+```
+
+Interpretation: the previous modulo-`16384` statement was correct for exact
+record matching but too strong for the bridge itself.  The theorem target now
+has two layers: prove the modulo-`8192` bridge class, then address the single
+`EEOEOOOO` ghost terminal-bit class.
+
+## Session 19 — Tail ghost-class audit (2026-07-02)
+
+**Status: OPEN.** No proof claim.
+
+**New artifacts:**
+
+- [`BRANCH-PREFIX-TAIL-GHOST-CLASS.md`](BRANCH-PREFIX-TAIL-GHOST-CLASS.md)
+- [`branch_prefix_tail_ghost_class.py`](branch_prefix_tail_ghost_class.py)
+- `experiments/results/branch_prefix_tail_ghost_class_d25_d26_20260702.json`
+
+Command:
+
+```powershell
+python experiments/branch_prefix_tail_ghost_class.py --parent-depth 25 --max-depth 1024 --top-n 12 --hist-top-n 40 --output experiments/results/branch_prefix_tail_ghost_class_d25_d26_20260702.json --quiet
+```
+
+The ghost terminal signature from Session 18 is real:
+
+```text
+a = 4, q == 23 mod 64, terminal == 6 mod 64
+count = 25
+```
+
+But it is not a ghost memory source:
+
+```text
+post-ladder tail units:       340
+source lag 0:                 334
+source lag 8:                   6
+terminal ghost signature:      25
+ghost memory sources:           0
+```
+
+Pure checks:
+
+```text
+all sources found:                         true
+all post-ladder tail words are EOO:        true
+all nonterminal sources have lag 8:        true
+all nonterminal sources are memory words:  true
+ghost memory source absent:                true
+```
+
+Interpretation: the unobserved full lift `EEOEOOOO, source == 1956 mod 16384`
+does not need a separate memory branch in the exact `25 -> 26` lift. Its
+terminal signature appears only when the phase max is terminal-local. The proof
+target is now a clean dichotomy: terminal-local positive phase, or the six
+lag-8 two-word memory cases.
+
+## Session 20 — Tail dichotomy classifier (2026-07-02)
+
+**Status: OPEN.** No proof claim.
+
+**New artifacts:**
+
+- [`BRANCH-PREFIX-TAIL-DICHOTOMY-CLASSIFIER.md`](BRANCH-PREFIX-TAIL-DICHOTOMY-CLASSIFIER.md)
+- [`branch_prefix_tail_dichotomy_classifier.py`](branch_prefix_tail_dichotomy_classifier.py)
+- `experiments/results/branch_prefix_tail_dichotomy_classifier_d25_d26_20260702.json`
+
+Command:
+
+```powershell
+python experiments/branch_prefix_tail_dichotomy_classifier.py --parent-depth 25 --max-depth 1024 --top-n 12 --max-feature-set-size 3 --output experiments/results/branch_prefix_tail_dichotomy_classifier_d25_d26_20260702.json --quiet
+```
+
+The classifier mined all `340` post-ladder tails:
+
+```text
+terminal-local: 334
+memory lag 8:     6
+```
+
+Terminal/event-side features alone failed to classify the branch:
+
+```text
+pure terminal/event classifiers up to triples:        0
+memory-pure terminal/event classifiers up to triples: 0
+```
+
+Even the six-feature terminal bucket
+`terminal_step, event_step, align, q_mod64, terminal_mod64,
+terminal_current_gap` remains mixed on the three memory bucket types.
+
+Adding child low bits gives pure finite separators.  Among tested power-of-two
+child moduli, `64` through `2048` remain mixed when crossed with the timing
+features below; `4096` is the first tested modulus where those timing buckets
+become pure.  The smallest pure feature sets found are size `2`, for example:
+
+```text
+child mod 4096, event_step
+```
+
+Memory buckets:
+
+```text
+1471|38 : memory 1
+1895|38 : memory 2
+2495|38 : memory 1
+3791|38 : memory 1
+ 751|38 : memory 1
+```
+
+Interpretation: the memory tail is a child-residue-plus-timing event, not a
+terminal phase/cofactor event alone. The next local theorem target is to derive
+those five `child mod 4096` timing buckets from the upper-child frontier
+hypotheses and explain why `2048` still merges three memory records with
+terminal-local cases.
+
+## Session 21 — Tail child-lift stratifier (2026-07-02)
+
+**Status: OPEN.** No proof claim; finite theorem-target extraction only.
+
+New instrument:
+
+```text
+experiments/branch_prefix_tail_child_lift_stratifier.py
+experiments/results/branch_prefix_tail_child_lift_stratifier_d25_d26_20260702.json
+```
+
+Command:
+
+```powershell
+python experiments/branch_prefix_tail_child_lift_stratifier.py --parent-depth 25 --max-depth 1024 --lower-modulus 2048 --upper-modulus 4096 --timing-feature event_step --output experiments/results/branch_prefix_tail_child_lift_stratifier_d25_d26_20260702.json --quiet
+```
+
+The exact reason `2048` fails is now isolated. At `child mod 2048 +
+event_step`, only two memory-bearing lower buckets are mixed:
+
+```text
+1743|38 : memory 1, terminal-local 2
+1895|38 : memory 2, terminal-local 1
+```
+
+Passing to `4096` splits both lower buckets purely by the next child bit:
+
+```text
+lower 1743|38:
+  child mod 4096 = 1743, lift bit 0 : terminal-local 2
+  child mod 4096 = 3791, lift bit 1 : memory 1
+
+lower 1895|38:
+  child mod 4096 = 1895, lift bit 0 : memory 2
+  child mod 4096 = 3943, lift bit 1 : terminal-local 1
+```
+
+The proof target is now a two-bucket lift-bit rule, not a broad classifier
+search. Derive that bit assignment from the upper-child frontier hypotheses and
+the five `child mod 4096` timing buckets follow.
+
+## Session 22 — Tail lift-bit witness (2026-07-02)
+
+**Status: OPEN.** No proof claim; this is a necessity witness for the next child
+bit in the finite tail-memory obstruction.
+
+New instrument:
+
+```text
+experiments/branch_prefix_tail_lift_bit_witness.py
+experiments/results/branch_prefix_tail_lift_bit_witness_d25_d26_20260702.json
+```
+
+Command:
+
+```powershell
+python experiments/branch_prefix_tail_lift_bit_witness.py --input experiments/results/branch_prefix_tail_child_lift_stratifier_d25_d26_20260702.json --output experiments/results/branch_prefix_tail_lift_bit_witness_d25_d26_20260702.json --quiet
+```
+
+The extractor found a same-lower-phase collision with opposite labels:
+
+```text
+shared:
+  child mod 2048        1743
+  terminal_step           35
+  event_step              38
+  align                    3
+  q mod 64                 5
+  terminal mod 64          6
+  terminal_current_gap     0.081541375001010298483449
+
+memory_lag_8:
+  child              40992463
+  child mod 4096         3791
+  lift bit                  1
+  source word        EEOOEOOO
+  source mod 16384      14700
+
+terminal_local:
+  child              53429967
+  child mod 4096         1743
+  lift bit                  0
+```
+
+Interpretation: `child mod 2048` plus all visible terminal-phase data is still
+not enough. The next child bit is necessary for this witness pair. The local
+proof target is now to explain that lift bit from the upper-child frontier
+hypotheses.
+
+## Session 11 — GAMMA-ATTACK + ledger-gap (2026-07-02, fork)
+
+**Status: OPEN.** Cannot solve Collatz; structural prize named exactly.
+
+**New:** [`GAMMA-ATTACK.md`](GAMMA-ATTACK.md) — Terras reduces to **γ ≤ c* = 19.982** globally (proved conditional; open unconditional). `collatz_gamma_pinch.py ledger-gap`: measured max γ `16.32` is **318×–451×** below violation floors bands 12–13.
+
+**Scan:** band 13 chunk 3 (`6×10¹⁰`–`9×10¹⁰`) running — not duplicated.
+
+**Wall:** prove γ ceiling or uniform `D(b) ≤ 19.98·b` for all positive integers (positivity / ε-barrier). Divergence half untouched.
+
+## Session 12 — Fork iteration status (2026-07-02)
+
+**Status: OPEN.** No proof claim.
+
+**Scan:** band 13 chunk 3 (`6×10¹⁰`–`9×10¹⁰`) **in flight** (8 workers; not duplicated). Terras **measured** through `6×10¹⁰` from chunks 1–2; ledger unchanged until chunk 3 completes.
+
+**Proof track:** `collatz_gamma_pinch.py ledger-gap` → measured `max γ = 16.32` is **318×–451×** below violation floors (bands 12–13); **22%** below Borel–Cantelli ceiling `19.98`. Artifact: `results/gamma_ledger_gap.json`.
+
+**Wall (unchanged):** global `γ ≤ 19.98` or uniform escape `D(b) ≤ 19.98·b` for all positive integers — equivalent to representative equidistribution (`GAMMA-ATTACK.md`). Collatz OPEN; divergence half untouched.
+
+
+**Status: OPEN.** No proof claim.
+
+**New artifact:** [`GAMMA-ATTACK.md`](GAMMA-ATTACK.md) — maps the global `γ ≤ 19.98` target to the proved reduction chain:
+
+- **Proved:** `D₁(b) = c*·b + O(log b)` from survivor mass (Corollary 8.1).
+- **Open:** representative equidistribution — integers tracking `2^d/S(d)`.
+- **Proved conditional:** `γ ≤ 19.982` ⇒ Terras closes bands 12–15 without scan (`collatz_gamma_pinch.py`).
+
+**Scan:** band 13 chunk 3 complete (`6×10¹⁰`–`9×10¹⁰`): 15B odds, 35 min, `max_τ=535`, `max_γ=14.74`, zero mismatches. Terras through `9×10¹⁰` (44.5B odds). Chunk 4 (`9×10¹⁰`–`1.2×10¹¹`) started.
+
+**Wall (exact):** uniform escape `D(n) ≤ 19.98·bitlen(n)` for all positive integers — equivalent difficulty to global γ bound; not reachable by ε-invariant or density methods alone.
+
+## Session 11 — Iteration assessment (2026-07-02)
+
+**Status: OPEN.** No proof.
+
+**Verified-through:** `n ≤ 60×10⁹` (`29.5×10⁹` odds, zero mismatches). Ledger unchanged until chunk 3 lands.
+
+**Band 13 scan %:** `22.28×10⁹ / 730.7×10⁹` odds in full window ≈ **3.0%** (chunks 1–2 done; chunk 3 `60B–90B` in flight ~17 min elapsed).
+
+**Proved this iteration:** none new — prior `GAMMA-ATTACK.md` + `collatz_gamma_pinch.py` conditional closure stands.
+
+**Wall:** representative equidistribution / uniform escape for all positive integers; scans cannot finish infinite bands.
+
+## Session 13 — Fork iteration (2026-07-02)
+
+**Collatz: OPEN.** Terras **measured** through `6×10¹⁰` (29.5×10⁹ odds, zero mismatches).
+
+**Scan:** band 13 chunk 3 (`6×10¹⁰`–`9×10¹⁰`) still running (8 workers; not duplicated).
+
+**Math:** ran `ledger-gap` → `gamma_ledger_gap.json`; measured `max γ = 16.32` is **318×–21,880×** below violation floors (bands 12–15). Added bitlen→γ slack obstruction to `GAMMA-ATTACK.md`.
+
+**Wall:** representative equidistribution / global `γ ≤ 19.98` — unchanged.
+
+## Session 14 — Fork loop: chunk 3 + γ bound map (2026-07-02)
+
+**Collatz: OPEN.** No proof claim.
+
+**Measured:** band 13 chunk 3 (`6×10¹⁰`–`9×10¹⁰`): 15B odds, 2115 s, `max_τ=535`, `max_γ=14.74`, zero mismatches. Terras through **`9×10¹⁰`** (44.5×10⁹ odds, `log₂ n ≤ 36.39`). Global record `max_τ=547`, `max_γ=16.32` unchanged (band 12).
+
+**In flight:** chunk 4 (`9×10¹⁰`–`1.2×10¹¹`).
+
+**New artifact:** [`GAMMA-BOUND-ATTEMPT.md`](GAMMA-BOUND-ATTEMPT.md) — honest failure map: global `γ` bound ≡ record-integer escape envelope ≡ representative equidistribution (Corollary 8.1). Three naive routes (drift, ε-stats, finite frontier) named and refuted.
+
+**Wall (exact, unchanged):** prove `d ≤ c*·bitlen(n) + O(√bitlen)` for certificate-record integers (`c*=19.982`), or scan remaining ~685B odds in band 13. Divergence half untouched.
+
+## Session 14 — Fork loop: chunk 3 + γ bound map (2026-07-02)
+
+**Collatz: OPEN.** No proof claim.
+
+**Measured:** band 13 chunk 3 (`6×10¹⁰`–`9×10¹⁰`): 15B odds, 2115 s, `max_τ=535`, `max_γ=14.74`, zero mismatches. Terras through **`9×10¹⁰`** (44.5×10⁹ odds, `log₂ n ≤ 36.39`). Global record `max_τ=547`, `max_γ=16.32` unchanged (band 12).
+
+**In flight:** chunk 4 (`9×10¹⁰`–`1.2×10¹¹`).
+
+**New artifact:** [`GAMMA-BOUND-ATTEMPT.md`](GAMMA-BOUND-ATTEMPT.md) — honest failure map: global `γ` bound ≡ record-integer escape envelope ≡ representative equidistribution (Corollary 8.1). Three naive routes (drift, ε-stats, finite frontier) named and refuted.
+
+**Wall (exact, unchanged):** prove `d ≤ c*·bitlen(n) + O(√bitlen)` for certificate-record integers (`c*=19.982`), or scan remaining ~685B odds in band 13. Divergence half untouched.

@@ -1,0 +1,41 @@
+{
+  "mode": "ledger-gap",
+  "terras_verified_through": 90000000000,
+  "global_max_gamma": 16.3233,
+  "global_max_gamma_n": 12235060455,
+  "borel_cantelli_ceiling": 19.982226683919038,
+  "below_BC_ceiling": true,
+  "bands": [
+    {
+      "band_k": 12,
+      "gamma_floor": 5183.9,
+      "measured_max_gamma": 16.3233,
+      "margin_ratio": 317.6,
+      "violation_possible_at_measured_gamma": false
+    },
+    {
+      "band_k": 13,
+      "gamma_floor": 7365.7,
+      "measured_max_gamma": 16.3233,
+      "margin_ratio": 451.2,
+      "violation_possible_at_measured_gamma": false
+    },
+    {
+      "band_k": 14,
+      "gamma_floor": 357147.3,
+      "measured_max_gamma": 16.3233,
+      "margin_ratio": 21879.6,
+      "violation_possible_at_measured_gamma": false
+    },
+    {
+      "band_k": 15,
+      "gamma_floor": 348733.0,
+      "measured_max_gamma": 16.3233,
+      "margin_ratio": 21364.1,
+      "violation_possible_at_measured_gamma": false
+    }
+  ],
+  "verdict": "Measured max gamma 16.3233 is below every violation floor (min floor 5183.9 in scan-gap bands).",
+  "honesty": "Measured only. Does not prove global gamma bound.",
+  "elapsed_seconds": 0.004
+}

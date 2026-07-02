@@ -64,6 +64,22 @@ Calibration data (49,999 odd starts ≤ 10^5, all orbit states pooled — state-
 python experiments/spine_ladder_lab.py   # ~2 min; writes experiments/results/spine_ladder_lab.json
 ```
 
+## Lemma (Forward seam): divergence forces infinite supercritical regeneration
+
+**Statement.** Let n > 0 have an unbounded shortcut orbit. Then for **every** window length L >= 1 there are infinitely many indices k with
+
+> T^k(n) >= 6^L  and  T^{k+L}(n) >= T^k(n),
+
+and every such window realizes a **supercritical** parity word (3^o > 2^L). Consequently, by (L1)-(L2) and Corollary 1, a divergent positive orbit must enter supercritical cylinders of every depth infinitely often, each entry carrying finite 2-adic alignment to some (negative) spine and ending in expulsion - i.e., divergence requires infinitely many distinct regeneration events. (This proves the *forward* half of the seam; the converse - that controlling the regeneration functional excludes divergence - is the open content.)
+
+**Proof.** Two ingredients.
+
+*(a) Non-descending high windows are supercritical.* Write the window's affine form T^L(x) = (3^o x + c)/2^L with c = sum over odd steps i of 3^{(odds after i)} 2^i, so 0 <= c < 3^o 2^L <= 6^L. If o = 0 the window is pure halving and descends, so a non-descending window has o >= 1. If the word were subcritical (3^o < 2^L, hence 2^L - 3^o >= 1), then T^L(x) >= x gives (2^L - 3^o)x <= c < 6^L, so x < 6^L. Contrapositive: x >= 6^L and T^L(x) >= x force 3^o > 2^L (equality impossible mod 2). QED (a)
+
+*(b) Such windows occur infinitely often.* Suppose not: there is K such that for all k >= K, T^k(n) >= 6^L implies T^{k+L}(n) < T^k(n). Note T(x) <= (3x+1)/2 <= 2x for x >= 1: one step at most doubles. Take any m > K + L with T^m(n) > 2^{L+1} 6^L. The orbit cannot satisfy T^k(n) >= 6^L for all k in [K, m]: otherwise the L subsequences k = r (mod L) would each be strictly decreasing sequences of positive integers on [K, m], forcing values below 6^L in finitely many steps. So let s be the largest index < m with T^s(n) < 6^L. Then T^{s+1}(n) < 2*6^L, and every index in (s, m] has value >= 6^L. Partition (s, m] into consecutive length-L windows starting at s+1: each window start has value >= 6^L, so by assumption the window-start values are strictly decreasing, hence all < 2*6^L; and any index inside a window exceeds its window start by at most a factor 2^L (at most L doublings). Hence T^m(n) < 2^{L+1} 6^L - contradiction. So the orbit is bounded by max(max_{k<=K+L} T^k(n), 2^{L+1} 6^L), contradicting unboundedness. QED (b)
+
+**Honest tier.** Elementary (a specialist would call it routine); its value is upgrading the seam from "suggested reformulation" to a one-directional theorem with an explicit quantitative threshold (6^L), leaving the open problem stated as a clean converse.
+
 ## Non-claims
 
-This document proves no part of the Collatz conjecture. It contributes: (i) one lemma unifying previously separate in-repo identities, with exhaustive verification; (ii) a proved localization of value-positivity (all supercritical spines ≤ −1) replacing the withdrawn sketch's unconsumed gesture at it; (iii) a barrier corollary; (iv) an exact statement of the open regeneration problem that any ladder-based approach must face. The regeneration statement is a *target*, not a result.
+This document proves no part of the Collatz conjecture. It contributes: (i) one lemma unifying previously separate in-repo identities, with exhaustive verification; (ii) a proved localization of value-positivity (all supercritical spines ≤ −1) replacing the withdrawn sketch's unconsumed gesture at it; (iii) a barrier corollary; (iv) an exact statement of the open regeneration problem that any ladder-based approach must face. The *converse* regeneration statement remains a target; the forward direction (divergence forces infinite supercritical regeneration) is proved above.

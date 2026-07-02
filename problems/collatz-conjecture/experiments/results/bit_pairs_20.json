@@ -1,0 +1,1775 @@
+[
+  {
+    "depth": 14,
+    "survivor_count": 734,
+    "time_s": 0.0226,
+    "bit_pair_correlations": {
+      "pairs": [
+        {
+          "bit_pair": [
+            0,
+            1
+          ],
+          "p00": 0.0,
+          "p01": 0.0,
+          "p10": 0.0,
+          "p11": 1.0,
+          "p_bit_j_1": 1.0,
+          "p_bit_j1_1": 1.0,
+          "marginals_equal": true,
+          "correlation": 0.0,
+          "identical_distribution": true
+        },
+        {
+          "bit_pair": [
+            1,
+            2
+          ],
+          "p00": 0.0,
+          "p01": 0.0,
+          "p10": 0.19346049046321526,
+          "p11": 0.8065395095367848,
+          "p_bit_j_1": 1.0,
+          "p_bit_j1_1": 0.8065395095367848,
+          "marginals_equal": false,
+          "correlation": 0.0,
+          "identical_distribution": false
+        },
+        {
+          "bit_pair": [
+            2,
+            3
+          ],
+          "p00": 0.0,
+          "p01": 0.19346049046321526,
+          "p10": 0.19346049046321526,
+          "p11": 0.6130790190735694,
+          "p_bit_j_1": 0.8065395095367847,
+          "p_bit_j1_1": 0.8065395095367847,
+          "marginals_equal": true,
+          "correlation": -0.23986486486486402,
+          "identical_distribution": true
+        },
+        {
+          "bit_pair": [
+            3,
+            4
+          ],
+          "p00": 0.19346049046321526,
+          "p01": 0.0,
+          "p10": 0.19346049046321526,
+          "p11": 0.6130790190735694,
+          "p_bit_j_1": 0.8065395095367847,
+          "p_bit_j1_1": 0.6130790190735694,
+          "marginals_equal": false,
+          "correlation": 0.6164962023950898,
+          "identical_distribution": false
+        },
+        {
+          "bit_pair": [
+            4,
+            5
+          ],
+          "p00": 0.08174386920980926,
+          "p01": 0.30517711171662126,
+          "p10": 0.30517711171662126,
+          "p11": 0.3079019073569482,
+          "p_bit_j_1": 0.6130790190735695,
+          "p_bit_j1_1": 0.6130790190735695,
+          "marginals_equal": true,
+          "correlation": -0.2865101721439754,
+          "identical_distribution": true
+        },
+        {
+          "bit_pair": [
+            5,
+            6
+          ],
+          "p00": 0.22343324250681199,
+          "p01": 0.16348773841961853,
+          "p10": 0.19346049046321526,
+          "p11": 0.4196185286103542,
+          "p_bit_j_1": 0.6130790190735694,
+          "p_bit_j1_1": 0.5831062670299727,
+          "marginals_equal": false,
+          "correlation": 0.2587221658442359,
+          "identical_distribution": false
+        },
+        {
+          "bit_pair": [
+            6,
+            7
+          ],
+          "p00": 0.19346049046321526,
+          "p01": 0.22343324250681199,
+          "p10": 0.26430517711171664,
+          "p11": 0.3188010899182561,
+          "p_bit_j_1": 0.5831062670299727,
+          "p_bit_j1_1": 0.5422343324250681,
+          "marginals_equal": false,
+          "correlation": 0.010669422772143245,
+          "identical_distribution": false
+        },
+        {
+          "bit_pair": [
+            7,
+            8
+          ],
+          "p00": 0.24250681198910082,
+          "p01": 0.21525885558583105,
+          "p10": 0.3133514986376022,
+          "p11": 0.22888283378746593,
+          "p_bit_j_1": 0.5422343324250681,
+          "p_bit_j1_1": 0.444141689373297,
+          "marginals_equal": false,
+          "correlation": -0.04825762887014951,
+          "identical_distribution": false
+        },
+        {
+          "bit_pair": [
+            8,
+            9
+          ],
+          "p00": 0.3024523160762943,
+          "p01": 0.25340599455040874,
+          "p10": 0.23160762942779292,
+          "p11": 0.2125340599455041,
+          "p_bit_j_1": 0.444141689373297,
+          "p_bit_j1_1": 0.4659400544959128,
+          "marginals_equal": false,
+          "correlation": 0.02255589163322931,
+          "identical_distribution": false
+        },
+        {
+          "bit_pair": [
+            9,
+            10
+          ],
+          "p00": 0.26975476839237056,
+          "p01": 0.26430517711171664,
+          "p10": 0.23978201634877383,
+          "p11": 0.22615803814713897,
+          "p_bit_j_1": 0.4659400544959128,
+          "p_bit_j1_1": 0.4904632152588556,
+          "marginals_equal": false,
+          "correlation": -0.009497461382753009,
+          "identical_distribution": false
+        },
+        {
+          "bit_pair": [
+            10,
+            11
+          ],
+          "p00": 0.25340599455040874,
+          "p01": 0.2561307901907357,
+          "p10": 0.23705722070844687,
+          "p11": 0.25340599455040874,
+          "p_bit_j_1": 0.4904632152588556,
+          "p_bit_j1_1": 0.5095367847411445,
+          "marginals_equal": false,
+          "correlation": 0.013992869875222637,
+          "identical_distribution": false
+        },
+        {
+          "bit_pair": [
+            11,
+            12
+          ],
+          "p00": 0.24795640326975477,
+          "p01": 0.24250681198910082,
+          "p10": 0.2561307901907357,
+          "p11": 0.25340599455040874,
+          "p_bit_j_1": 0.5095367847411445,
+          "p_bit_j1_1": 0.49591280653950953,
+          "marginals_equal": false,
+          "correlation": 0.002881330790727708,
+          "identical_distribution": false
+        },
+        {
+          "bit_pair": [
+            12,
+            13
+          ],
+          "p00": 0.25204359673024523,
+          "p01": 0.25204359673024523,
+          "p10": 0.24795640326975477,
+          "p11": 0.24795640326975477,
+          "p_bit_j_1": 0.49591280653950953,
+          "p_bit_j1_1": 0.5,
+          "marginals_equal": false,
+          "correlation": 0.0,
+          "identical_distribution": false
+        }
+      ]
+    },
+    "xor_analysis": {
+      "xor_entropies": [
+        {
+          "bit_pair": [
+            0,
+            1
+          ],
+          "xor_entropy": 0.0,
+          "p_xor1": 0.0
+        },
+        {
+          "bit_pair": [
+            1,
+            2
+          ],
+          "xor_entropy": 0.7086546677996117,
+          "p_xor1": 0.19346049046321526
+        },
+        {
+          "bit_pair": [
+            2,
+            3
+          ],
+          "xor_entropy": 0.9627837760216917,
+          "p_xor1": 0.3869209809264305
+        },
+        {
+          "bit_pair": [
+            3,
+            4
+          ],
+          "xor_entropy": 0.7086546677996117,
+          "p_xor1": 0.19346049046321526
+        },
+        {
+          "bit_pair": [
+            4,
+            5
+          ],
+          "xor_entropy": 0.9645705751859566,
+          "p_xor1": 0.6103542234332425
+        },
+        {
+          "bit_pair": [
+            5,
+            6
+          ],
+          "xor_entropy": 0.9401207954840833,
+          "p_xor1": 0.3569482288828338
+        },
+        {
+          "bit_pair": [
+            6,
+            7
+          ],
+          "xor_entropy": 0.9995661486315024,
+          "p_xor1": 0.4877384196185286
+        },
+        {
+          "bit_pair": [
+            7,
+            8
+          ],
+          "xor_entropy": 0.997636866561316,
+          "p_xor1": 0.5286103542234333
+        },
+        {
+          "bit_pair": [
+            8,
+            9
+          ],
+          "xor_entropy": 0.9993518689472958,
+          "p_xor1": 0.48501362397820164
+        },
+        {
+          "bit_pair": [
+            9,
+            10
+          ],
+          "xor_entropy": 0.9999517985879527,
+          "p_xor1": 0.5040871934604905
+        },
+        {
+          "bit_pair": [
+            10,
+            11
+          ],
+          "xor_entropy": 0.9998661045376162,
+          "p_xor1": 0.49318801089918257
+        },
+        {
+          "bit_pair": [
+            11,
+            12
+          ],
+          "xor_entropy": 0.9999946443405692,
+          "p_xor1": 0.4986376021798365
+        },
+        {
+          "bit_pair": [
+            12,
+            13
+          ],
+          "xor_entropy": 1.0,
+          "p_xor1": 0.5
+        }
+      ]
+    },
+    "symmetry_check": {
+      "bit_flip_symmetries": {
+        "flip_bit_2": {
+          "overlap": 168,
+          "total": 734,
+          "is_symmetry": false
+        },
+        "flip_bit_3": {
+          "overlap": 100,
+          "total": 734,
+          "is_symmetry": false
+        },
+        "flip_bit_4": {
+          "overlap": 192,
+          "total": 734,
+          "is_symmetry": false
+        },
+        "flip_bit_5": {
+          "overlap": 260,
+          "total": 734,
+          "is_symmetry": false
+        },
+        "flip_bit_6": {
+          "overlap": 292,
+          "total": 734,
+          "is_symmetry": false
+        },
+        "flip_bit_7": {
+          "overlap": 324,
+          "total": 734,
+          "is_symmetry": false
+        },
+        "flip_bit_8": {
+          "overlap": 444,
+          "total": 734,
+          "is_symmetry": false
+        },
+        "flip_bit_9": {
+          "overlap": 516,
+          "total": 734,
+          "is_symmetry": false
+        }
+      },
+      "mult_by_3": {
+        "overlap": 0,
+        "is_symmetry": false
+      },
+      "mult_by_3_inv": {
+        "overlap": 0,
+        "is_symmetry": false
+      },
+      "shift_by_4": {
+        "overlap": 84,
+        "is_symmetry": false
+      }
+    },
+    "bijection_check": {
+      "depth": 14,
+      "residue_count": 734,
+      "word_survivor_count": 734,
+      "round_trip_mismatches": 0,
+      "words_mapped_to_survivors": 734,
+      "bijection_verified": true
+    }
+  },
+  {
+    "depth": 16,
+    "survivor_count": 2114,
+    "time_s": 0.1496,
+    "bit_pair_correlations": {
+      "pairs": [
+        {
+          "bit_pair": [
+            0,
+            1
+          ],
+          "p00": 0.0,
+          "p01": 0.0,
+          "p10": 0.0,
+          "p11": 1.0,
+          "p_bit_j_1": 1.0,
+          "p_bit_j1_1": 1.0,
+          "marginals_equal": true,
+          "correlation": 0.0,
+          "identical_distribution": true
+        },
+        {
+          "bit_pair": [
+            1,
+            2
+          ],
+          "p00": 0.0,
+          "p01": 0.0,
+          "p10": 0.1868495742667928,
+          "p11": 0.8131504257332072,
+          "p_bit_j_1": 1.0,
+          "p_bit_j1_1": 0.8131504257332072,
+          "marginals_equal": false,
+          "correlation": 0.0,
+          "identical_distribution": false
+        },
+        {
+          "bit_pair": [
+            2,
+            3
+          ],
+          "p00": 0.0,
+          "p01": 0.1868495742667928,
+          "p10": 0.1868495742667928,
+          "p11": 0.6263008514664143,
+          "p_bit_j_1": 0.8131504257332072,
+          "p_bit_j1_1": 0.8131504257332072,
+          "marginals_equal": true,
+          "correlation": -0.2297847585805704,
+          "identical_distribution": true
+        },
+        {
+          "bit_pair": [
+            3,
+            4
+          ],
+          "p00": 0.1868495742667928,
+          "p01": 0.0,
+          "p10": 0.1868495742667928,
+          "p11": 0.6263008514664143,
+          "p_bit_j_1": 0.8131504257332072,
+          "p_bit_j1_1": 0.6263008514664143,
+          "marginals_equal": false,
+          "correlation": 0.6205703994791527,
+          "identical_distribution": false
+        },
+        {
+          "bit_pair": [
+            4,
+            5
+          ],
+          "p00": 0.07473982970671712,
+          "p01": 0.2989593188268685,
+          "p10": 0.2989593188268685,
+          "p11": 0.3273415326395459,
+          "p_bit_j_1": 0.6263008514664143,
+          "p_bit_j1_1": 0.6263008514664143,
+          "marginals_equal": true,
+          "correlation": -0.2773413897280963,
+          "identical_distribution": true
+        },
+        {
+          "bit_pair": [
+            5,
+            6
+          ],
+          "p00": 0.22421948912015138,
+          "p01": 0.14947965941343425,
+          "p10": 0.1868495742667928,
+          "p11": 0.43945127719962157,
+          "p_bit_j_1": 0.6263008514664143,
+          "p_bit_j1_1": 0.5889309366130558,
+          "marginals_equal": false,
+          "correlation": 0.2966081292233502,
+          "identical_distribution": false
+        },
+        {
+          "bit_pair": [
+            6,
+            7
+          ],
+          "p00": 0.1868495742667928,
+          "p01": 0.22421948912015138,
+          "p10": 0.26158940397350994,
+          "p11": 0.3273415326395459,
+          "p_bit_j_1": 0.5889309366130558,
+          "p_bit_j1_1": 0.5515610217596973,
+          "marginals_equal": false,
+          "correlation": 0.010258111796586056,
+          "identical_distribution": false
+        },
+        {
+          "bit_pair": [
+            7,
+            8
+          ],
+          "p00": 0.2346263008514664,
+          "p01": 0.21381267738883633,
+          "p10": 0.3183538315988647,
+          "p11": 0.23320719016083255,
+          "p_bit_j_1": 0.5515610217596972,
+          "p_bit_j1_1": 0.4470198675496689,
+          "marginals_equal": false,
+          "correlation": -0.0539964088832204,
+          "identical_distribution": false
+        },
+        {
+          "bit_pair": [
+            8,
+            9
+          ],
+          "p00": 0.3003784295175024,
+          "p01": 0.25260170293282874,
+          "p10": 0.2346263008514664,
+          "p11": 0.21239356669820245,
+          "p_bit_j_1": 0.4470198675496688,
+          "p_bit_j1_1": 0.4649952696310312,
+          "marginals_equal": false,
+          "correlation": 0.018273227132546376,
+          "identical_distribution": false
+        },
+        {
+          "bit_pair": [
+            9,
+            10
+          ],
+          "p00": 0.27010406811731313,
+          "p01": 0.26490066225165565,
+          "p10": 0.23793755912961212,
+          "p11": 0.22705771050141912,
+          "p_bit_j_1": 0.4649952696310312,
+          "p_bit_j1_1": 0.49195837275307475,
+          "marginals_equal": false,
+          "correlation": -0.006820036839471367,
+          "identical_distribution": false
+        },
+        {
+          "bit_pair": [
+            10,
+            11
+          ],
+          "p00": 0.2554399243140965,
+          "p01": 0.25260170293282874,
+          "p10": 0.23651844843897823,
+          "p11": 0.2554399243140965,
+          "p_bit_j_1": 0.49195837275307475,
+          "p_bit_j1_1": 0.5080416272469253,
+          "marginals_equal": false,
+          "correlation": 0.022024065320154804,
+          "identical_distribution": false
+        },
+        {
+          "bit_pair": [
+            11,
+            12
+          ],
+          "p00": 0.24834437086092714,
+          "p01": 0.24361400189214757,
+          "p10": 0.25733207190160834,
+          "p11": 0.2507095553453169,
+          "p_bit_j_1": 0.5080416272469253,
+          "p_bit_j1_1": 0.49432355723746446,
+          "marginals_equal": false,
+          "correlation": -0.0017098875852072694,
+          "identical_distribution": false
+        },
+        {
+          "bit_pair": [
+            12,
+            13
+          ],
+          "p00": 0.25260170293282874,
+          "p01": 0.25307473982970674,
+          "p10": 0.24597918637653737,
+          "p11": 0.24834437086092714,
+          "p_bit_j_1": 0.4943235572374645,
+          "p_bit_j1_1": 0.5014191106906338,
+          "marginals_equal": false,
+          "correlation": 0.001924501367447283,
+          "identical_distribution": false
+        },
+        {
+          "bit_pair": [
+            13,
+            14
+          ],
+          "p00": 0.2478713339640492,
+          "p01": 0.2507095553453169,
+          "p10": 0.2511825922421949,
+          "p11": 0.25023651844843897,
+          "p_bit_j_1": 0.5014191106906338,
+          "p_bit_j1_1": 0.5009460737937559,
+          "marginals_equal": false,
+          "correlation": -0.0037896875566500433,
+          "identical_distribution": false
+        },
+        {
+          "bit_pair": [
+            14,
+            15
+          ],
+          "p00": 0.24976348155156103,
+          "p01": 0.24929044465468306,
+          "p10": 0.2507095553453169,
+          "p11": 0.25023651844843897,
+          "p_bit_j_1": 0.5009460737937559,
+          "p_bit_j1_1": 0.49952696310312206,
+          "marginals_equal": false,
+          "correlation": 1.7901152522024462e-06,
+          "identical_distribution": false
+        }
+      ]
+    },
+    "xor_analysis": {
+      "xor_entropies": [
+        {
+          "bit_pair": [
+            0,
+            1
+          ],
+          "xor_entropy": 0.0,
+          "p_xor1": 0.0
+        },
+        {
+          "bit_pair": [
+            1,
+            2
+          ],
+          "xor_entropy": 0.6948342943612777,
+          "p_xor1": 0.1868495742667928
+        },
+        {
+          "bit_pair": [
+            2,
+            3
+          ],
+          "xor_entropy": 0.9534701095219054,
+          "p_xor1": 0.3736991485335856
+        },
+        {
+          "bit_pair": [
+            3,
+            4
+          ],
+          "xor_entropy": 0.6948342943612777,
+          "p_xor1": 0.1868495742667928
+        },
+        {
+          "bit_pair": [
+            4,
+            5
+          ],
+          "xor_entropy": 0.972155100329153,
+          "p_xor1": 0.597918637653737
+        },
+        {
+          "bit_pair": [
+            5,
+            6
+          ],
+          "xor_entropy": 0.9212626429682447,
+          "p_xor1": 0.33632923368022705
+        },
+        {
+          "bit_pair": [
+            6,
+            7
+          ],
+          "xor_entropy": 0.999418840420776,
+          "p_xor1": 0.4858088930936613
+        },
+        {
+          "bit_pair": [
+            7,
+            8
+          ],
+          "xor_entropy": 0.9970124694204268,
+          "p_xor1": 0.532166508987701
+        },
+        {
+          "bit_pair": [
+            8,
+            9
+          ],
+          "xor_entropy": 0.9995292727543506,
+          "p_xor1": 0.48722800378429515
+        },
+        {
+          "bit_pair": [
+            9,
+            10
+          ],
+          "xor_entropy": 0.9999767566136131,
+          "p_xor1": 0.5028382213812678
+        },
+        {
+          "bit_pair": [
+            10,
+            11
+          ],
+          "xor_entropy": 0.9996584262263255,
+          "p_xor1": 0.489120151371807
+        },
+        {
+          "bit_pair": [
+            11,
+            12
+          ],
+          "xor_entropy": 0.999997417413841,
+          "p_xor1": 0.5009460737937559
+        },
+        {
+          "bit_pair": [
+            12,
+            13
+          ],
+          "xor_entropy": 0.999997417413841,
+          "p_xor1": 0.4990539262062441
+        },
+        {
+          "bit_pair": [
+            13,
+            14
+          ],
+          "xor_entropy": 0.9999896696368717,
+          "p_xor1": 0.5018921475875118
+        },
+        {
+          "bit_pair": [
+            14,
+            15
+          ],
+          "xor_entropy": 1.0,
+          "p_xor1": 0.5
+        }
+      ]
+    },
+    "symmetry_check": {
+      "bit_flip_symmetries": {
+        "flip_bit_2": {
+          "overlap": 330,
+          "total": 2114,
+          "is_symmetry": false
+        },
+        "flip_bit_3": {
+          "overlap": 214,
+          "total": 2114,
+          "is_symmetry": false
+        },
+        "flip_bit_4": {
+          "overlap": 442,
+          "total": 2114,
+          "is_symmetry": false
+        },
+        "flip_bit_5": {
+          "overlap": 524,
+          "total": 2114,
+          "is_symmetry": false
+        },
+        "flip_bit_6": {
+          "overlap": 618,
+          "total": 2114,
+          "is_symmetry": false
+        },
+        "flip_bit_7": {
+          "overlap": 724,
+          "total": 2114,
+          "is_symmetry": false
+        },
+        "flip_bit_8": {
+          "overlap": 922,
+          "total": 2114,
+          "is_symmetry": false
+        },
+        "flip_bit_9": {
+          "overlap": 1068,
+          "total": 2114,
+          "is_symmetry": false
+        }
+      },
+      "mult_by_3": {
+        "overlap": 0,
+        "is_symmetry": false
+      },
+      "mult_by_3_inv": {
+        "overlap": 0,
+        "is_symmetry": false
+      },
+      "shift_by_4": {
+        "overlap": 165,
+        "is_symmetry": false
+      }
+    },
+    "bijection_check": {
+      "depth": 16,
+      "residue_count": 2114,
+      "word_survivor_count": 2114,
+      "round_trip_mismatches": 0,
+      "words_mapped_to_survivors": 2114,
+      "bijection_verified": true
+    }
+  },
+  {
+    "depth": 18,
+    "survivor_count": 7495,
+    "time_s": 0.4595,
+    "bit_pair_correlations": {
+      "pairs": [
+        {
+          "bit_pair": [
+            0,
+            1
+          ],
+          "p00": 0.0,
+          "p01": 0.0,
+          "p10": 0.0,
+          "p11": 1.0,
+          "p_bit_j_1": 1.0,
+          "p_bit_j1_1": 1.0,
+          "marginals_equal": true,
+          "correlation": 0.0,
+          "identical_distribution": true
+        },
+        {
+          "bit_pair": [
+            1,
+            2
+          ],
+          "p00": 0.0,
+          "p01": 0.0,
+          "p10": 0.18492328218812543,
+          "p11": 0.8150767178118746,
+          "p_bit_j_1": 1.0,
+          "p_bit_j1_1": 0.8150767178118746,
+          "marginals_equal": false,
+          "correlation": 0.0,
+          "identical_distribution": false
+        },
+        {
+          "bit_pair": [
+            2,
+            3
+          ],
+          "p00": 0.0,
+          "p01": 0.18492328218812543,
+          "p10": 0.18492328218812543,
+          "p11": 0.6301534356237491,
+          "p_bit_j_1": 0.8150767178118745,
+          "p_bit_j1_1": 0.8150767178118745,
+          "marginals_equal": true,
+          "correlation": -0.22687837616631126,
+          "identical_distribution": true
+        },
+        {
+          "bit_pair": [
+            3,
+            4
+          ],
+          "p00": 0.18492328218812543,
+          "p01": 0.0,
+          "p10": 0.18492328218812543,
+          "p11": 0.6301534356237491,
+          "p_bit_j_1": 0.8150767178118745,
+          "p_bit_j1_1": 0.6301534356237491,
+          "marginals_equal": false,
+          "correlation": 0.6217401482266077,
+          "identical_distribution": false
+        },
+        {
+          "bit_pair": [
+            4,
+            5
+          ],
+          "p00": 0.07284856571047364,
+          "p01": 0.2969979986657772,
+          "p10": 0.2969979986657772,
+          "p11": 0.333155436957972,
+          "p_bit_j_1": 0.6301534356237493,
+          "p_bit_j1_1": 0.6301534356237493,
+          "marginals_equal": true,
+          "correlation": -0.2743409106949234,
+          "identical_distribution": true
+        },
+        {
+          "bit_pair": [
+            5,
+            6
+          ],
+          "p00": 0.22414943295530354,
+          "p01": 0.14569713142094728,
+          "p10": 0.18492328218812543,
+          "p11": 0.4452301534356238,
+          "p_bit_j_1": 0.6301534356237493,
+          "p_bit_j1_1": 0.5909272848565711,
+          "marginals_equal": false,
+          "correlation": 0.30694452578459797,
+          "identical_distribution": false
+        },
+        {
+          "bit_pair": [
+            6,
+            7
+          ],
+          "p00": 0.18492328218812543,
+          "p01": 0.22414943295530354,
+          "p10": 0.26057371581054034,
+          "p11": 0.3303535690460307,
+          "p_bit_j_1": 0.590927284856571,
+          "p_bit_j1_1": 0.5545030020013342,
+          "marginals_equal": false,
+          "correlation": 0.010977838323328446,
+          "identical_distribution": false
+        },
+        {
+          "bit_pair": [
+            7,
+            8
+          ],
+          "p00": 0.23215476984656438,
+          "p01": 0.2133422281521014,
+          "p10": 0.3191460973982655,
+          "p11": 0.2353569046030687,
+          "p_bit_j_1": 0.5545030020013342,
+          "p_bit_j1_1": 0.44869913275517015,
+          "marginals_equal": false,
+          "correlation": -0.05440201761290466,
+          "identical_distribution": false
+        },
+        {
+          "bit_pair": [
+            8,
+            9
+          ],
+          "p00": 0.2992661774516344,
+          "p01": 0.2520346897931955,
+          "p10": 0.23495663775850567,
+          "p11": 0.21374249499666445,
+          "p_bit_j_1": 0.44869913275517015,
+          "p_bit_j1_1": 0.46577718478985997,
+          "marginals_equal": false,
+          "correlation": 0.019140367660278487,
+          "identical_distribution": false
+        },
+        {
+          "bit_pair": [
+            9,
+            10
+          ],
+          "p00": 0.26964643095396934,
+          "p01": 0.2645763842561708,
+          "p10": 0.23682454969979988,
+          "p11": 0.22895263509006003,
+          "p_bit_j_1": 0.4657771847898599,
+          "p_bit_j1_1": 0.49352901934623084,
+          "marginals_equal": false,
+          "correlation": -0.0036966667303285614,
+          "identical_distribution": false
+        },
+        {
+          "bit_pair": [
+            10,
+            11
+          ],
+          "p00": 0.25496997998665777,
+          "p01": 0.2515010006671114,
+          "p10": 0.2370913942628419,
+          "p11": 0.2564376250833889,
+          "p_bit_j_1": 0.49352901934623084,
+          "p_bit_j1_1": 0.5079386257505003,
+          "marginals_equal": false,
+          "correlation": 0.02302552347687267,
+          "identical_distribution": false
+        },
+        {
+          "bit_pair": [
+            11,
+            12
+          ],
+          "p00": 0.2486991327551701,
+          "p01": 0.24336224149432956,
+          "p10": 0.257238158772515,
+          "p11": 0.2507004669779853,
+          "p_bit_j_1": 0.5079386257505003,
+          "p_bit_j1_1": 0.49406270847231487,
+          "marginals_equal": false,
+          "correlation": -0.00101246378974355,
+          "identical_distribution": false
+        },
+        {
+          "bit_pair": [
+            12,
+            13
+          ],
+          "p00": 0.2525683789192795,
+          "p01": 0.2533689126084056,
+          "p10": 0.24563042028018678,
+          "p11": 0.2484322881921281,
+          "p_bit_j_1": 0.49406270847231487,
+          "p_bit_j1_1": 0.5018012008005337,
+          "marginals_equal": false,
+          "correlation": 0.002044268635343912,
+          "identical_distribution": false
+        },
+        {
+          "bit_pair": [
+            13,
+            14
+          ],
+          "p00": 0.24709806537691795,
+          "p01": 0.2511007338225484,
+          "p10": 0.2516344229486324,
+          "p11": 0.2501667778519013,
+          "p_bit_j_1": 0.5018012008005337,
+          "p_bit_j1_1": 0.5012675116744496,
+          "marginals_equal": false,
+          "correlation": -0.00547949887567543,
+          "identical_distribution": false
+        },
+        {
+          "bit_pair": [
+            14,
+            15
+          ],
+          "p00": 0.24963308872581721,
+          "p01": 0.24909939959973315,
+          "p10": 0.25096731154102736,
+          "p11": 0.2503002001334223,
+          "p_bit_j_1": 0.5012675116744496,
+          "p_bit_j1_1": 0.49939959973315545,
+          "marginals_equal": false,
+          "correlation": -0.00013037873705829634,
+          "identical_distribution": false
+        },
+        {
+          "bit_pair": [
+            15,
+            16
+          ],
+          "p00": 0.25043362241494327,
+          "p01": 0.2501667778519013,
+          "p10": 0.25043362241494327,
+          "p11": 0.24896597731821213,
+          "p_bit_j_1": 0.4993995997331554,
+          "p_bit_j1_1": 0.4991327551701134,
+          "marginals_equal": false,
+          "correlation": -0.0012028859864462434,
+          "identical_distribution": false
+        },
+        {
+          "bit_pair": [
+            16,
+            17
+          ],
+          "p00": 0.2486991327551701,
+          "p01": 0.25216811207471646,
+          "p10": 0.2485657104736491,
+          "p11": 0.2505670446964643,
+          "p_bit_j_1": 0.49913275517011335,
+          "p_bit_j1_1": 0.5027351567711807,
+          "marginals_equal": false,
+          "correlation": -0.0014581809055669638,
+          "identical_distribution": false
+        }
+      ]
+    },
+    "xor_analysis": {
+      "xor_entropies": [
+        {
+          "bit_pair": [
+            0,
+            1
+          ],
+          "xor_entropy": 0.0,
+          "p_xor1": 0.0
+        },
+        {
+          "bit_pair": [
+            1,
+            2
+          ],
+          "xor_entropy": 0.6907297227928743,
+          "p_xor1": 0.18492328218812543
+        },
+        {
+          "bit_pair": [
+            2,
+            3
+          ],
+          "xor_entropy": 0.9505542078818562,
+          "p_xor1": 0.36984656437625085
+        },
+        {
+          "bit_pair": [
+            3,
+            4
+          ],
+          "xor_entropy": 0.6907297227928743,
+          "p_xor1": 0.18492328218812543
+        },
+        {
+          "bit_pair": [
+            4,
+            5
+          ],
+          "xor_entropy": 0.9743545418790753,
+          "p_xor1": 0.5939959973315544
+        },
+        {
+          "bit_pair": [
+            5,
+            6
+          ],
+          "xor_entropy": 0.9155589909108874,
+          "p_xor1": 0.33062041360907274
+        },
+        {
+          "bit_pair": [
+            6,
+            7
+          ],
+          "xor_entropy": 0.9993264965501162,
+          "p_xor1": 0.4847231487658439
+        },
+        {
+          "bit_pair": [
+            7,
+            8
+          ],
+          "xor_entropy": 0.9969523492506995,
+          "p_xor1": 0.532488325550367
+        },
+        {
+          "bit_pair": [
+            8,
+            9
+          ],
+          "xor_entropy": 0.9995116631494395,
+          "p_xor1": 0.48699132755170116
+        },
+        {
+          "bit_pair": [
+            9,
+            10
+          ],
+          "xor_entropy": 0.999994337079997,
+          "p_xor1": 0.5014009339559706
+        },
+        {
+          "bit_pair": [
+            10,
+            11
+          ],
+          "xor_entropy": 0.9996244816418619,
+          "p_xor1": 0.4885923949299533
+        },
+        {
+          "bit_pair": [
+            11,
+            12
+          ],
+          "xor_entropy": 0.9999989598729473,
+          "p_xor1": 0.5006004002668446
+        },
+        {
+          "bit_pair": [
+            12,
+            13
+          ],
+          "xor_entropy": 0.9999971107569521,
+          "p_xor1": 0.4989993328885924
+        },
+        {
+          "bit_pair": [
+            13,
+            14
+          ],
+          "xor_entropy": 0.9999784140509137,
+          "p_xor1": 0.5027351567711807
+        },
+        {
+          "bit_pair": [
+            14,
+            15
+          ],
+          "xor_entropy": 0.9999999871589282,
+          "p_xor1": 0.5000667111407605
+        },
+        {
+          "bit_pair": [
+            15,
+            16
+          ],
+          "xor_entropy": 0.9999989598729473,
+          "p_xor1": 0.5006004002668446
+        },
+        {
+          "bit_pair": [
+            16,
+            17
+          ],
+          "xor_entropy": 0.9999984462297737,
+          "p_xor1": 0.5007338225483656
+        }
+      ]
+    },
+    "symmetry_check": {
+      "bit_flip_symmetries": {
+        "flip_bit_2": {
+          "overlap": 1026,
+          "total": 7495,
+          "is_symmetry": false
+        },
+        "flip_bit_3": {
+          "overlap": 676,
+          "total": 7495,
+          "is_symmetry": false
+        },
+        "flip_bit_4": {
+          "overlap": 1382,
+          "total": 7495,
+          "is_symmetry": false
+        },
+        "flip_bit_5": {
+          "overlap": 1650,
+          "total": 7495,
+          "is_symmetry": false
+        },
+        "flip_bit_6": {
+          "overlap": 1984,
+          "total": 7495,
+          "is_symmetry": false
+        },
+        "flip_bit_7": {
+          "overlap": 2294,
+          "total": 7495,
+          "is_symmetry": false
+        },
+        "flip_bit_8": {
+          "overlap": 2942,
+          "total": 7495,
+          "is_symmetry": false
+        },
+        "flip_bit_9": {
+          "overlap": 3484,
+          "total": 7495,
+          "is_symmetry": false
+        }
+      },
+      "mult_by_3": {
+        "overlap": 0,
+        "is_symmetry": false
+      },
+      "mult_by_3_inv": {
+        "overlap": 0,
+        "is_symmetry": false
+      },
+      "shift_by_4": {
+        "overlap": 513,
+        "is_symmetry": false
+      }
+    },
+    "bijection_check": {
+      "depth": 18,
+      "residue_count": 7495,
+      "word_survivor_count": 7495,
+      "round_trip_mismatches": 0,
+      "words_mapped_to_survivors": 7495,
+      "bijection_verified": true
+    }
+  },
+  {
+    "depth": 20,
+    "survivor_count": 27328,
+    "time_s": 0.285,
+    "bit_pair_correlations": {
+      "pairs": [
+        {
+          "bit_pair": [
+            0,
+            1
+          ],
+          "p00": 0.0,
+          "p01": 0.0,
+          "p10": 0.0,
+          "p11": 1.0,
+          "p_bit_j_1": 1.0,
+          "p_bit_j1_1": 1.0,
+          "marginals_equal": true,
+          "correlation": 0.0,
+          "identical_distribution": true
+        },
+        {
+          "bit_pair": [
+            1,
+            2
+          ],
+          "p00": 0.0,
+          "p01": 0.0,
+          "p10": 0.1836577868852459,
+          "p11": 0.8163422131147541,
+          "p_bit_j_1": 1.0,
+          "p_bit_j1_1": 0.8163422131147541,
+          "marginals_equal": false,
+          "correlation": 0.0,
+          "identical_distribution": false
+        },
+        {
+          "bit_pair": [
+            2,
+            3
+          ],
+          "p00": 0.0,
+          "p01": 0.1836577868852459,
+          "p10": 0.1836577868852459,
+          "p11": 0.6326844262295082,
+          "p_bit_j_1": 0.8163422131147541,
+          "p_bit_j1_1": 0.8163422131147541,
+          "marginals_equal": true,
+          "correlation": -0.22497646689676815,
+          "identical_distribution": true
+        },
+        {
+          "bit_pair": [
+            3,
+            4
+          ],
+          "p00": 0.1836577868852459,
+          "p01": 0.0,
+          "p10": 0.1836577868852459,
+          "p11": 0.6326844262295082,
+          "p_bit_j_1": 0.8163422131147541,
+          "p_bit_j1_1": 0.6326844262295082,
+          "marginals_equal": false,
+          "correlation": 0.6225044309493836,
+          "identical_distribution": false
+        },
+        {
+          "bit_pair": [
+            4,
+            5
+          ],
+          "p00": 0.07164812646370024,
+          "p01": 0.29566744730679156,
+          "p10": 0.29566744730679156,
+          "p11": 0.33701697892271665,
+          "p_bit_j_1": 0.6326844262295082,
+          "p_bit_j1_1": 0.6326844262295082,
+          "marginals_equal": true,
+          "correlation": -0.2722633748839427,
+          "identical_distribution": true
+        },
+        {
+          "bit_pair": [
+            5,
+            6
+          ],
+          "p00": 0.22401932084309134,
+          "p01": 0.14329625292740047,
+          "p10": 0.1836577868852459,
+          "p11": 0.4490266393442623,
+          "p_bit_j_1": 0.6326844262295082,
+          "p_bit_j1_1": 0.5923228922716628,
+          "marginals_equal": false,
+          "correlation": 0.3135315835643949,
+          "identical_distribution": false
+        },
+        {
+          "bit_pair": [
+            6,
+            7
+          ],
+          "p00": 0.1836577868852459,
+          "p01": 0.22401932084309134,
+          "p10": 0.25984338407494145,
+          "p11": 0.3324795081967213,
+          "p_bit_j_1": 0.5923228922716628,
+          "p_bit_j1_1": 0.5564988290398126,
+          "marginals_equal": false,
+          "correlation": 0.011684512067148364,
+          "identical_distribution": false
+        },
+        {
+          "bit_pair": [
+            7,
+            8
+          ],
+          "p00": 0.2304961943793911,
+          "p01": 0.21300497658079626,
+          "p10": 0.319489168618267,
+          "p11": 0.23700966042154567,
+          "p_bit_j_1": 0.5564988290398126,
+          "p_bit_j1_1": 0.4500146370023419,
+          "marginals_equal": false,
+          "correlation": -0.05431000424506605,
+          "identical_distribution": false
+        },
+        {
+          "bit_pair": [
+            8,
+            9
+          ],
+          "p00": 0.2984118852459016,
+          "p01": 0.2515734777517564,
+          "p10": 0.23503366510538642,
+          "p11": 0.2149809718969555,
+          "p_bit_j_1": 0.4500146370023419,
+          "p_bit_j1_1": 0.46655444964871196,
+          "marginals_equal": false,
+          "correlation": 0.020245098817972675,
+          "identical_distribution": false
+        },
+        {
+          "bit_pair": [
+            9,
+            10
+          ],
+          "p00": 0.2692110655737705,
+          "p01": 0.26423448477751754,
+          "p10": 0.23594847775175645,
+          "p11": 0.2306059718969555,
+          "p_bit_j_1": 0.46655444964871196,
+          "p_bit_j1_1": 0.4948404566744731,
+          "marginals_equal": false,
+          "correlation": -0.0010586073420321273,
+          "identical_distribution": false
+        },
+        {
+          "bit_pair": [
+            10,
+            11
+          ],
+          "p00": 0.2543545081967213,
+          "p01": 0.25080503512880564,
+          "p10": 0.23759514051522249,
+          "p11": 0.25724531615925056,
+          "p_bit_j_1": 0.4948404566744731,
+          "p_bit_j1_1": 0.5080503512880562,
+          "marginals_equal": false,
+          "correlation": 0.023370066730822536,
+          "identical_distribution": false
+        },
+        {
+          "bit_pair": [
+            11,
+            12
+          ],
+          "p00": 0.24893881733021078,
+          "p01": 0.24301083138173302,
+          "p10": 0.257172131147541,
+          "p11": 0.2508782201405152,
+          "p_bit_j_1": 0.5080503512880562,
+          "p_bit_j1_1": 0.4938890515222482,
+          "marginals_equal": false,
+          "correlation": -0.00016917849479838531,
+          "identical_distribution": false
+        },
+        {
+          "bit_pair": [
+            12,
+            13
+          ],
+          "p00": 0.2524516978922717,
+          "p01": 0.2536592505854801,
+          "p10": 0.24531615925058547,
+          "p11": 0.24857289227166277,
+          "p_bit_j_1": 0.49388905152224827,
+          "p_bit_j1_1": 0.5022321428571429,
+          "marginals_equal": false,
+          "correlation": 0.0021039204739755346,
+          "identical_distribution": false
+        },
+        {
+          "bit_pair": [
+            13,
+            14
+          ],
+          "p00": 0.24634074941451992,
+          "p01": 0.25142710772833726,
+          "p10": 0.25186621779859486,
+          "p11": 0.250365925058548,
+          "p_bit_j_1": 0.5022321428571428,
+          "p_bit_j1_1": 0.5017930327868853,
+          "marginals_equal": false,
+          "correlation": -0.006602768526660182,
+          "identical_distribution": false
+        },
+        {
+          "bit_pair": [
+            14,
+            15
+          ],
+          "p00": 0.2495242974238876,
+          "p01": 0.24868266978922718,
+          "p10": 0.25128073770491804,
+          "p11": 0.2505122950819672,
+          "p_bit_j_1": 0.5017930327868853,
+          "p_bit_j1_1": 0.4991949648711944,
+          "marginals_equal": false,
+          "correlation": 7.895943928085974e-05,
+          "identical_distribution": false
+        },
+        {
+          "bit_pair": [
+            15,
+            16
+          ],
+          "p00": 0.25084162763466045,
+          "p01": 0.2499634074941452,
+          "p10": 0.2501097775175644,
+          "p11": 0.24908518735362997,
+          "p_bit_j_1": 0.4991949648711944,
+          "p_bit_j1_1": 0.4990485948477752,
+          "marginals_equal": false,
+          "correlation": -0.00014943414591458512,
+          "identical_distribution": false
+        },
+        {
+          "bit_pair": [
+            16,
+            17
+          ],
+          "p00": 0.24875585480093676,
+          "p01": 0.25219555035128804,
+          "p10": 0.24908518735362997,
+          "p11": 0.2499634074941452,
+          "p_bit_j_1": 0.4990485948477752,
+          "p_bit_j1_1": 0.5021589578454333,
+          "marginals_equal": false,
+          "correlation": -0.002553287660018703,
+          "identical_distribution": false
+        },
+        {
+          "bit_pair": [
+            17,
+            18
+          ],
+          "p00": 0.24747511709601874,
+          "p01": 0.250365925058548,
+          "p10": 0.25142710772833726,
+          "p11": 0.25073185011709603,
+          "p_bit_j_1": 0.5021589578454333,
+          "p_bit_j1_1": 0.501097775175644,
+          "marginals_equal": false,
+          "correlation": -0.003595587960111534,
+          "identical_distribution": false
+        },
+        {
+          "bit_pair": [
+            18,
+            19
+          ],
+          "p00": 0.24868266978922718,
+          "p01": 0.2502195550351288,
+          "p10": 0.25073185011709603,
+          "p11": 0.250365925058548,
+          "p_bit_j_1": 0.501097775175644,
+          "p_bit_j1_1": 0.5005854800936769,
+          "marginals_equal": false,
+          "correlation": -0.0019053871051902666,
+          "identical_distribution": false
+        }
+      ]
+    },
+    "xor_analysis": {
+      "xor_entropies": [
+        {
+          "bit_pair": [
+            0,
+            1
+          ],
+          "xor_entropy": 0.0,
+          "p_xor1": 0.0
+        },
+        {
+          "bit_pair": [
+            1,
+            2
+          ],
+          "xor_entropy": 0.6880138735569222,
+          "p_xor1": 0.1836577868852459
+        },
+        {
+          "bit_pair": [
+            2,
+            3
+          ],
+          "xor_entropy": 0.9485885965115364,
+          "p_xor1": 0.3673155737704918
+        },
+        {
+          "bit_pair": [
+            3,
+            4
+          ],
+          "xor_entropy": 0.6880138735569222,
+          "p_xor1": 0.1836577868852459
+        },
+        {
+          "bit_pair": [
+            4,
+            5
+          ],
+          "xor_entropy": 0.9757942120151708,
+          "p_xor1": 0.5913348946135831
+        },
+        {
+          "bit_pair": [
+            5,
+            6
+          ],
+          "xor_entropy": 0.9117840132550525,
+          "p_xor1": 0.32695403981264637
+        },
+        {
+          "bit_pair": [
+            6,
+            7
+          ],
+          "xor_entropy": 0.9992484784518413,
+          "p_xor1": 0.4838627049180328
+        },
+        {
+          "bit_pair": [
+            7,
+            8
+          ],
+          "xor_entropy": 0.9969512565280453,
+          "p_xor1": 0.5324941451990632
+        },
+        {
+          "bit_pair": [
+            8,
+            9
+          ],
+          "xor_entropy": 0.999482389650068,
+          "p_xor1": 0.48660714285714285
+        },
+        {
+          "bit_pair": [
+            9,
+            10
+          ],
+          "xor_entropy": 0.9999999034107363,
+          "p_xor1": 0.500182962529274
+        },
+        {
+          "bit_pair": [
+            10,
+            11
+          ],
+          "xor_entropy": 0.9996117188335729,
+          "p_xor1": 0.4884001756440281
+        },
+        {
+          "bit_pair": [
+            11,
+            12
+          ],
+          "xor_entropy": 0.9999999034107363,
+          "p_xor1": 0.500182962529274
+        },
+        {
+          "bit_pair": [
+            12,
+            13
+          ],
+          "xor_entropy": 0.9999969709586415,
+          "p_xor1": 0.4989754098360656
+        },
+        {
+          "bit_pair": [
+            13,
+            14
+          ],
+          "xor_entropy": 0.9999687048530077,
+          "p_xor1": 0.5032933255269321
+        },
+        {
+          "bit_pair": [
+            14,
+            15
+          ],
+          "xor_entropy": 0.9999999961364296,
+          "p_xor1": 0.4999634074941452
+        },
+        {
+          "bit_pair": [
+            15,
+            16
+          ],
+          "xor_entropy": 0.9999999845457181,
+          "p_xor1": 0.5000731850117096
+        },
+        {
+          "bit_pair": [
+            16,
+            17
+          ],
+          "xor_entropy": 0.9999952671210142,
+          "p_xor1": 0.501280737704918
+        },
+        {
+          "bit_pair": [
+            17,
+            18
+          ],
+          "xor_entropy": 0.9999907235474493,
+          "p_xor1": 0.5017930327868853
+        },
+        {
+          "bit_pair": [
+            18,
+            19
+          ],
+          "xor_entropy": 0.9999973882247948,
+          "p_xor1": 0.5009514051522248
+        }
+      ]
+    },
+    "symmetry_check": {
+      "bit_flip_symmetries": {
+        "flip_bit_2": {
+          "overlap": 3354,
+          "total": 27328,
+          "is_symmetry": false
+        },
+        "flip_bit_3": {
+          "overlap": 2224,
+          "total": 27328,
+          "is_symmetry": false
+        },
+        "flip_bit_4": {
+          "overlap": 4688,
+          "total": 27328,
+          "is_symmetry": false
+        },
+        "flip_bit_5": {
+          "overlap": 5488,
+          "total": 27328,
+          "is_symmetry": false
+        },
+        "flip_bit_6": {
+          "overlap": 6646,
+          "total": 27328,
+          "is_symmetry": false
+        },
+        "flip_bit_7": {
+          "overlap": 7666,
+          "total": 27328,
+          "is_symmetry": false
+        },
+        "flip_bit_8": {
+          "overlap": 9890,
+          "total": 27328,
+          "is_symmetry": false
+        },
+        "flip_bit_9": {
+          "overlap": 11550,
+          "total": 27328,
+          "is_symmetry": false
+        }
+      },
+      "mult_by_3": {
+        "overlap": 0,
+        "is_symmetry": false
+      },
+      "mult_by_3_inv": {
+        "overlap": 0,
+        "is_symmetry": false
+      },
+      "shift_by_4": {
+        "overlap": 1677,
+        "is_symmetry": false
+      }
+    },
+    "bijection_check": {}
+  }
+]

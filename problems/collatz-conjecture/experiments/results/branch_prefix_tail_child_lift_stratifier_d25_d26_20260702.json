@@ -1,0 +1,583 @@
+{
+  "base_status": "branch-prefix-tail-dichotomy-classifier",
+  "collision_lower_residues": [
+    1743,
+    1895
+  ],
+  "elapsed_seconds": 121.205213,
+  "high_bit_explanations": [
+    {
+      "all_upper_subbuckets_pure": true,
+      "lower_bucket": "1743|38",
+      "upper_split": [
+        {
+          "child_mod4096": 1743,
+          "counts": {
+            "terminal_local": 2
+          },
+          "is_pure": true,
+          "lift_bit": 0
+        },
+        {
+          "child_mod4096": 3791,
+          "counts": {
+            "memory_lag_8": 1
+          },
+          "is_pure": true,
+          "lift_bit": 1
+        }
+      ]
+    },
+    {
+      "all_upper_subbuckets_pure": true,
+      "lower_bucket": "1895|38",
+      "upper_split": [
+        {
+          "child_mod4096": 1895,
+          "counts": {
+            "memory_lag_8": 2
+          },
+          "is_pure": true,
+          "lift_bit": 0
+        },
+        {
+          "child_mod4096": 3943,
+          "counts": {
+            "terminal_local": 1
+          },
+          "is_pure": true,
+          "lift_bit": 1
+        }
+      ]
+    }
+  ],
+  "label_counts": {
+    "memory_lag_8": 6,
+    "terminal_local": 334
+  },
+  "memory_lower_bucket_summaries": [
+    {
+      "counts": {
+        "memory_lag_8": 1
+      },
+      "is_pure": true,
+      "key": "447|38",
+      "record_count": 1,
+      "upper_split": [
+        {
+          "child_mod4096": 2495,
+          "counts": {
+            "memory_lag_8": 1
+          },
+          "is_pure": true,
+          "lift_bit": 1
+        }
+      ]
+    },
+    {
+      "counts": {
+        "memory_lag_8": 1
+      },
+      "is_pure": true,
+      "key": "751|38",
+      "record_count": 1,
+      "upper_split": [
+        {
+          "child_mod4096": 751,
+          "counts": {
+            "memory_lag_8": 1
+          },
+          "is_pure": true,
+          "lift_bit": 0
+        }
+      ]
+    },
+    {
+      "counts": {
+        "memory_lag_8": 1
+      },
+      "is_pure": true,
+      "key": "1471|38",
+      "record_count": 1,
+      "upper_split": [
+        {
+          "child_mod4096": 1471,
+          "counts": {
+            "memory_lag_8": 1
+          },
+          "is_pure": true,
+          "lift_bit": 0
+        }
+      ]
+    },
+    {
+      "counts": {
+        "memory_lag_8": 1,
+        "terminal_local": 2
+      },
+      "is_pure": false,
+      "key": "1743|38",
+      "record_count": 3,
+      "upper_split": [
+        {
+          "child_mod4096": 1743,
+          "counts": {
+            "terminal_local": 2
+          },
+          "is_pure": true,
+          "lift_bit": 0
+        },
+        {
+          "child_mod4096": 3791,
+          "counts": {
+            "memory_lag_8": 1
+          },
+          "is_pure": true,
+          "lift_bit": 1
+        }
+      ]
+    },
+    {
+      "counts": {
+        "memory_lag_8": 2,
+        "terminal_local": 1
+      },
+      "is_pure": false,
+      "key": "1895|38",
+      "record_count": 3,
+      "upper_split": [
+        {
+          "child_mod4096": 1895,
+          "counts": {
+            "memory_lag_8": 2
+          },
+          "is_pure": true,
+          "lift_bit": 0
+        },
+        {
+          "child_mod4096": 3943,
+          "counts": {
+            "terminal_local": 1
+          },
+          "is_pure": true,
+          "lift_bit": 1
+        }
+      ]
+    }
+  ],
+  "memory_lower_residues": [
+    447,
+    751,
+    1471,
+    1743,
+    1895
+  ],
+  "memory_records": [
+    {
+      "align": 3,
+      "child": 35940199,
+      "child_mod2048": 1895,
+      "child_mod4096": 1895,
+      "event_step": 38,
+      "label": "memory_lag_8",
+      "lift_bit": 0,
+      "parent": 2385767,
+      "q_mod64": 5,
+      "source_lag": 8,
+      "source_mod16384": 14700,
+      "source_mod8192": 6508,
+      "source_word": "EEOOEOOO",
+      "terminal_current_gap": "0.081541375001010298483449",
+      "terminal_mod64": 6,
+      "terminal_step": 35
+    },
+    {
+      "align": 3,
+      "child": 39507815,
+      "child_mod2048": 1895,
+      "child_mod4096": 1895,
+      "event_step": 38,
+      "label": "memory_lag_8",
+      "lift_bit": 0,
+      "parent": 5953383,
+      "q_mod64": 37,
+      "source_lag": 8,
+      "source_mod16384": 6508,
+      "source_mod8192": 6508,
+      "source_word": "EEOOEOOO",
+      "terminal_current_gap": "0.081541375001010298483449",
+      "terminal_mod64": 38,
+      "terminal_step": 35
+    },
+    {
+      "align": 3,
+      "child": 40992463,
+      "child_mod2048": 1743,
+      "child_mod4096": 3791,
+      "event_step": 38,
+      "label": "memory_lag_8",
+      "lift_bit": 1,
+      "parent": 7438031,
+      "q_mod64": 5,
+      "source_lag": 8,
+      "source_mod16384": 14700,
+      "source_mod8192": 6508,
+      "source_word": "EEOOEOOO",
+      "terminal_current_gap": "0.081541375001010298483449",
+      "terminal_mod64": 6,
+      "terminal_step": 35
+    },
+    {
+      "align": 4,
+      "child": 44180207,
+      "child_mod2048": 751,
+      "child_mod4096": 751,
+      "event_step": 38,
+      "label": "memory_lag_8",
+      "lift_bit": 0,
+      "parent": 10625775,
+      "q_mod64": 55,
+      "source_lag": 8,
+      "source_mod16384": 10148,
+      "source_mod8192": 1956,
+      "source_word": "EEOEOOOO",
+      "terminal_current_gap": "0.081541375001010298483449",
+      "terminal_mod64": 38,
+      "terminal_step": 35
+    },
+    {
+      "align": 3,
+      "child": 50428351,
+      "child_mod2048": 447,
+      "child_mod4096": 2495,
+      "event_step": 38,
+      "label": "memory_lag_8",
+      "lift_bit": 1,
+      "parent": 16873919,
+      "q_mod64": 37,
+      "source_lag": 8,
+      "source_mod16384": 6508,
+      "source_mod8192": 6508,
+      "source_word": "EEOOEOOO",
+      "terminal_current_gap": "0.081541375001010298483449",
+      "terminal_mod64": 38,
+      "terminal_step": 35
+    },
+    {
+      "align": 3,
+      "child": 58000831,
+      "child_mod2048": 1471,
+      "child_mod4096": 1471,
+      "event_step": 38,
+      "label": "memory_lag_8",
+      "lift_bit": 0,
+      "parent": 24446399,
+      "q_mod64": 37,
+      "source_lag": 8,
+      "source_mod16384": 6508,
+      "source_mod8192": 6508,
+      "source_word": "EEOOEOOO",
+      "terminal_current_gap": "0.081541375001010298483449",
+      "terminal_mod64": 38,
+      "terminal_step": 35
+    }
+  ],
+  "memory_upper_bucket_summaries": [
+    {
+      "counts": {
+        "memory_lag_8": 1
+      },
+      "is_pure": true,
+      "key": "751|38",
+      "record_count": 1,
+      "upper_split": [
+        {
+          "child_mod4096": 751,
+          "counts": {
+            "memory_lag_8": 1
+          },
+          "is_pure": true,
+          "lift_bit": 0
+        }
+      ]
+    },
+    {
+      "counts": {
+        "memory_lag_8": 1
+      },
+      "is_pure": true,
+      "key": "1471|38",
+      "record_count": 1,
+      "upper_split": [
+        {
+          "child_mod4096": 1471,
+          "counts": {
+            "memory_lag_8": 1
+          },
+          "is_pure": true,
+          "lift_bit": 0
+        }
+      ]
+    },
+    {
+      "counts": {
+        "memory_lag_8": 2
+      },
+      "is_pure": true,
+      "key": "1895|38",
+      "record_count": 2,
+      "upper_split": [
+        {
+          "child_mod4096": 1895,
+          "counts": {
+            "memory_lag_8": 2
+          },
+          "is_pure": true,
+          "lift_bit": 0
+        }
+      ]
+    },
+    {
+      "counts": {
+        "memory_lag_8": 1
+      },
+      "is_pure": true,
+      "key": "2495|38",
+      "record_count": 1,
+      "upper_split": [
+        {
+          "child_mod4096": 2495,
+          "counts": {
+            "memory_lag_8": 1
+          },
+          "is_pure": true,
+          "lift_bit": 1
+        }
+      ]
+    },
+    {
+      "counts": {
+        "memory_lag_8": 1
+      },
+      "is_pure": true,
+      "key": "3791|38",
+      "record_count": 1,
+      "upper_split": [
+        {
+          "child_mod4096": 3791,
+          "counts": {
+            "memory_lag_8": 1
+          },
+          "is_pure": true,
+          "lift_bit": 1
+        }
+      ]
+    }
+  ],
+  "memory_upper_residues": [
+    751,
+    1471,
+    1895,
+    2495,
+    3791
+  ],
+  "mixed_memory_lower_buckets": [
+    {
+      "counts": {
+        "memory_lag_8": 1,
+        "terminal_local": 2
+      },
+      "is_pure": false,
+      "key": "1743|38",
+      "record_count": 3,
+      "upper_split": [
+        {
+          "child_mod4096": 1743,
+          "counts": {
+            "terminal_local": 2
+          },
+          "is_pure": true,
+          "lift_bit": 0
+        },
+        {
+          "child_mod4096": 3791,
+          "counts": {
+            "memory_lag_8": 1
+          },
+          "is_pure": true,
+          "lift_bit": 1
+        }
+      ]
+    },
+    {
+      "counts": {
+        "memory_lag_8": 2,
+        "terminal_local": 1
+      },
+      "is_pure": false,
+      "key": "1895|38",
+      "record_count": 3,
+      "upper_split": [
+        {
+          "child_mod4096": 1895,
+          "counts": {
+            "memory_lag_8": 2
+          },
+          "is_pure": true,
+          "lift_bit": 0
+        },
+        {
+          "child_mod4096": 3943,
+          "counts": {
+            "terminal_local": 1
+          },
+          "is_pure": true,
+          "lift_bit": 1
+        }
+      ]
+    }
+  ],
+  "mixed_memory_upper_buckets": [],
+  "parameters": {
+    "lower_modulus": 2048,
+    "max_depth": 1024,
+    "max_feature_set_size": 3,
+    "max_steps": 50000,
+    "output": "experiments\\results\\branch_prefix_tail_child_lift_stratifier_d25_d26_20260702.json",
+    "parent_depth": 25,
+    "precision": 80,
+    "quiet": true,
+    "timing_feature": "event_step",
+    "top_n": 12,
+    "upper_modulus": 4096
+  },
+  "pure_claims": {
+    "lower_mixed_memory_bucket_count_is_2": true,
+    "lower_modulus_timing_not_pure": true,
+    "lower_terminal_collision_count_is_3": true,
+    "memory_record_count_is_6": true,
+    "mixed_lower_buckets_split_purely_by_lift_bit": true,
+    "population_is_340": true,
+    "timing_value_is_38_for_all_memory_records": true,
+    "upper_memory_residues_are_expected_five": true,
+    "upper_modulus_timing_pure_on_memory_buckets": true
+  },
+  "pure_memory_lower_buckets": [
+    {
+      "counts": {
+        "memory_lag_8": 1
+      },
+      "is_pure": true,
+      "key": "447|38",
+      "record_count": 1,
+      "upper_split": [
+        {
+          "child_mod4096": 2495,
+          "counts": {
+            "memory_lag_8": 1
+          },
+          "is_pure": true,
+          "lift_bit": 1
+        }
+      ]
+    },
+    {
+      "counts": {
+        "memory_lag_8": 1
+      },
+      "is_pure": true,
+      "key": "751|38",
+      "record_count": 1,
+      "upper_split": [
+        {
+          "child_mod4096": 751,
+          "counts": {
+            "memory_lag_8": 1
+          },
+          "is_pure": true,
+          "lift_bit": 0
+        }
+      ]
+    },
+    {
+      "counts": {
+        "memory_lag_8": 1
+      },
+      "is_pure": true,
+      "key": "1471|38",
+      "record_count": 1,
+      "upper_split": [
+        {
+          "child_mod4096": 1471,
+          "counts": {
+            "memory_lag_8": 1
+          },
+          "is_pure": true,
+          "lift_bit": 0
+        }
+      ]
+    }
+  ],
+  "record_count": 340,
+  "status": "branch-prefix-tail-child-lift-stratifier",
+  "terminal_collision_records": [
+    {
+      "align": 3,
+      "child": 40228559,
+      "child_mod2048": 1743,
+      "child_mod4096": 1743,
+      "event_step": 38,
+      "label": "terminal_local",
+      "lift_bit": 0,
+      "parent": 6674127,
+      "q_mod64": 53,
+      "source_lag": 0,
+      "source_mod16384": 7894,
+      "source_mod8192": 7894,
+      "source_word": null,
+      "terminal_current_gap": "0.081541375001010298483449",
+      "terminal_mod64": 22,
+      "terminal_step": 35
+    },
+    {
+      "align": 3,
+      "child": 53429967,
+      "child_mod2048": 1743,
+      "child_mod4096": 1743,
+      "event_step": 38,
+      "label": "terminal_local",
+      "lift_bit": 0,
+      "parent": 19875535,
+      "q_mod64": 5,
+      "source_lag": 0,
+      "source_mod16384": 11846,
+      "source_mod8192": 3654,
+      "source_word": null,
+      "terminal_current_gap": "0.081541375001010298483449",
+      "terminal_mod64": 6,
+      "terminal_step": 35
+    },
+    {
+      "align": 5,
+      "child": 51973991,
+      "child_mod2048": 1895,
+      "child_mod4096": 3943,
+      "event_step": 38,
+      "label": "terminal_local",
+      "lift_bit": 1,
+      "parent": 18419559,
+      "q_mod64": 29,
+      "source_lag": 0,
+      "source_mod16384": 6278,
+      "source_mod8192": 6278,
+      "source_word": null,
+      "terminal_current_gap": "0.081541375001010298483449",
+      "terminal_mod64": 6,
+      "terminal_step": 35
+    }
+  ],
+  "theorem_target": "Modulo 2048 plus timing leaves exactly two memory-bearing mixed buckets. Passing to modulo 4096 splits both by the next child bit, and the memory-bearing modulo-4096 timing buckets are pure.",
+  "timing_values_on_memory_records": {
+    "38": 6
+  }
+}

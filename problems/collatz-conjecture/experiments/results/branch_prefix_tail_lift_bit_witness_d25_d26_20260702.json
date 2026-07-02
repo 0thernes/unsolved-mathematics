@@ -1,0 +1,704 @@
+{
+  "candidate_record_count": 9,
+  "lower_lift_fields": [
+    "child_mod2048",
+    "lift_bit"
+  ],
+  "lower_lift_rule": [
+    {
+      "counts": {
+        "memory_lag_8": 1
+      },
+      "is_pure": true,
+      "key": "1471|0",
+      "records": [
+        {
+          "align": 3,
+          "child": 58000831,
+          "child_mod2048": 1471,
+          "child_mod4096": 1471,
+          "event_step": 38,
+          "label": "memory_lag_8",
+          "lift_bit": 0,
+          "parent": 24446399,
+          "q_mod64": 37,
+          "source_lag": 8,
+          "source_mod16384": 6508,
+          "source_mod8192": 6508,
+          "source_word": "EEOOEOOO",
+          "terminal_current_gap": "0.081541375001010298483449",
+          "terminal_mod64": 38,
+          "terminal_step": 35
+        }
+      ]
+    },
+    {
+      "counts": {
+        "terminal_local": 2
+      },
+      "is_pure": true,
+      "key": "1743|0",
+      "records": [
+        {
+          "align": 3,
+          "child": 40228559,
+          "child_mod2048": 1743,
+          "child_mod4096": 1743,
+          "event_step": 38,
+          "label": "terminal_local",
+          "lift_bit": 0,
+          "parent": 6674127,
+          "q_mod64": 53,
+          "source_lag": 0,
+          "source_mod16384": 7894,
+          "source_mod8192": 7894,
+          "source_word": null,
+          "terminal_current_gap": "0.081541375001010298483449",
+          "terminal_mod64": 22,
+          "terminal_step": 35
+        },
+        {
+          "align": 3,
+          "child": 53429967,
+          "child_mod2048": 1743,
+          "child_mod4096": 1743,
+          "event_step": 38,
+          "label": "terminal_local",
+          "lift_bit": 0,
+          "parent": 19875535,
+          "q_mod64": 5,
+          "source_lag": 0,
+          "source_mod16384": 11846,
+          "source_mod8192": 3654,
+          "source_word": null,
+          "terminal_current_gap": "0.081541375001010298483449",
+          "terminal_mod64": 6,
+          "terminal_step": 35
+        }
+      ]
+    },
+    {
+      "counts": {
+        "memory_lag_8": 1
+      },
+      "is_pure": true,
+      "key": "1743|1",
+      "records": [
+        {
+          "align": 3,
+          "child": 40992463,
+          "child_mod2048": 1743,
+          "child_mod4096": 3791,
+          "event_step": 38,
+          "label": "memory_lag_8",
+          "lift_bit": 1,
+          "parent": 7438031,
+          "q_mod64": 5,
+          "source_lag": 8,
+          "source_mod16384": 14700,
+          "source_mod8192": 6508,
+          "source_word": "EEOOEOOO",
+          "terminal_current_gap": "0.081541375001010298483449",
+          "terminal_mod64": 6,
+          "terminal_step": 35
+        }
+      ]
+    },
+    {
+      "counts": {
+        "memory_lag_8": 2
+      },
+      "is_pure": true,
+      "key": "1895|0",
+      "records": [
+        {
+          "align": 3,
+          "child": 35940199,
+          "child_mod2048": 1895,
+          "child_mod4096": 1895,
+          "event_step": 38,
+          "label": "memory_lag_8",
+          "lift_bit": 0,
+          "parent": 2385767,
+          "q_mod64": 5,
+          "source_lag": 8,
+          "source_mod16384": 14700,
+          "source_mod8192": 6508,
+          "source_word": "EEOOEOOO",
+          "terminal_current_gap": "0.081541375001010298483449",
+          "terminal_mod64": 6,
+          "terminal_step": 35
+        },
+        {
+          "align": 3,
+          "child": 39507815,
+          "child_mod2048": 1895,
+          "child_mod4096": 1895,
+          "event_step": 38,
+          "label": "memory_lag_8",
+          "lift_bit": 0,
+          "parent": 5953383,
+          "q_mod64": 37,
+          "source_lag": 8,
+          "source_mod16384": 6508,
+          "source_mod8192": 6508,
+          "source_word": "EEOOEOOO",
+          "terminal_current_gap": "0.081541375001010298483449",
+          "terminal_mod64": 38,
+          "terminal_step": 35
+        }
+      ]
+    },
+    {
+      "counts": {
+        "terminal_local": 1
+      },
+      "is_pure": true,
+      "key": "1895|1",
+      "records": [
+        {
+          "align": 5,
+          "child": 51973991,
+          "child_mod2048": 1895,
+          "child_mod4096": 3943,
+          "event_step": 38,
+          "label": "terminal_local",
+          "lift_bit": 1,
+          "parent": 18419559,
+          "q_mod64": 29,
+          "source_lag": 0,
+          "source_mod16384": 6278,
+          "source_mod8192": 6278,
+          "source_word": null,
+          "terminal_current_gap": "0.081541375001010298483449",
+          "terminal_mod64": 6,
+          "terminal_step": 35
+        }
+      ]
+    },
+    {
+      "counts": {
+        "memory_lag_8": 1
+      },
+      "is_pure": true,
+      "key": "447|1",
+      "records": [
+        {
+          "align": 3,
+          "child": 50428351,
+          "child_mod2048": 447,
+          "child_mod4096": 2495,
+          "event_step": 38,
+          "label": "memory_lag_8",
+          "lift_bit": 1,
+          "parent": 16873919,
+          "q_mod64": 37,
+          "source_lag": 8,
+          "source_mod16384": 6508,
+          "source_mod8192": 6508,
+          "source_word": "EEOOEOOO",
+          "terminal_current_gap": "0.081541375001010298483449",
+          "terminal_mod64": 38,
+          "terminal_step": 35
+        }
+      ]
+    },
+    {
+      "counts": {
+        "memory_lag_8": 1
+      },
+      "is_pure": true,
+      "key": "751|0",
+      "records": [
+        {
+          "align": 4,
+          "child": 44180207,
+          "child_mod2048": 751,
+          "child_mod4096": 751,
+          "event_step": 38,
+          "label": "memory_lag_8",
+          "lift_bit": 0,
+          "parent": 10625775,
+          "q_mod64": 55,
+          "source_lag": 8,
+          "source_mod16384": 10148,
+          "source_mod8192": 1956,
+          "source_word": "EEOEOOOO",
+          "terminal_current_gap": "0.081541375001010298483449",
+          "terminal_mod64": 38,
+          "terminal_step": 35
+        }
+      ]
+    }
+  ],
+  "lower_phase_fields": [
+    "child_mod2048",
+    "terminal_step",
+    "event_step",
+    "align",
+    "q_mod64",
+    "terminal_mod64",
+    "terminal_current_gap"
+  ],
+  "memory_lower_lift_rule": [
+    {
+      "counts": {
+        "memory_lag_8": 1
+      },
+      "key": "1471|0"
+    },
+    {
+      "counts": {
+        "memory_lag_8": 1
+      },
+      "key": "1743|1"
+    },
+    {
+      "counts": {
+        "memory_lag_8": 2
+      },
+      "key": "1895|0"
+    },
+    {
+      "counts": {
+        "memory_lag_8": 1
+      },
+      "key": "447|1"
+    },
+    {
+      "counts": {
+        "memory_lag_8": 1
+      },
+      "key": "751|0"
+    }
+  ],
+  "mixed_lower_phase_signatures": [
+    {
+      "counts": {
+        "memory_lag_8": 1,
+        "terminal_local": 1
+      },
+      "is_pure": false,
+      "key": "1743|35|38|3|5|6|0.081541375001010298483449",
+      "records": [
+        {
+          "align": 3,
+          "child": 40992463,
+          "child_mod2048": 1743,
+          "child_mod4096": 3791,
+          "event_step": 38,
+          "label": "memory_lag_8",
+          "lift_bit": 1,
+          "parent": 7438031,
+          "q_mod64": 5,
+          "source_lag": 8,
+          "source_mod16384": 14700,
+          "source_mod8192": 6508,
+          "source_word": "EEOOEOOO",
+          "terminal_current_gap": "0.081541375001010298483449",
+          "terminal_mod64": 6,
+          "terminal_step": 35
+        },
+        {
+          "align": 3,
+          "child": 53429967,
+          "child_mod2048": 1743,
+          "child_mod4096": 1743,
+          "event_step": 38,
+          "label": "terminal_local",
+          "lift_bit": 0,
+          "parent": 19875535,
+          "q_mod64": 5,
+          "source_lag": 0,
+          "source_mod16384": 11846,
+          "source_mod8192": 3654,
+          "source_word": null,
+          "terminal_current_gap": "0.081541375001010298483449",
+          "terminal_mod64": 6,
+          "terminal_step": 35
+        }
+      ]
+    }
+  ],
+  "mixed_phase_signatures": [
+    {
+      "counts": {
+        "memory_lag_8": 2,
+        "terminal_local": 1
+      },
+      "is_pure": false,
+      "key": "35|38|3|5|6|0.081541375001010298483449",
+      "records": [
+        {
+          "align": 3,
+          "child": 35940199,
+          "child_mod2048": 1895,
+          "child_mod4096": 1895,
+          "event_step": 38,
+          "label": "memory_lag_8",
+          "lift_bit": 0,
+          "parent": 2385767,
+          "q_mod64": 5,
+          "source_lag": 8,
+          "source_mod16384": 14700,
+          "source_mod8192": 6508,
+          "source_word": "EEOOEOOO",
+          "terminal_current_gap": "0.081541375001010298483449",
+          "terminal_mod64": 6,
+          "terminal_step": 35
+        },
+        {
+          "align": 3,
+          "child": 40992463,
+          "child_mod2048": 1743,
+          "child_mod4096": 3791,
+          "event_step": 38,
+          "label": "memory_lag_8",
+          "lift_bit": 1,
+          "parent": 7438031,
+          "q_mod64": 5,
+          "source_lag": 8,
+          "source_mod16384": 14700,
+          "source_mod8192": 6508,
+          "source_word": "EEOOEOOO",
+          "terminal_current_gap": "0.081541375001010298483449",
+          "terminal_mod64": 6,
+          "terminal_step": 35
+        },
+        {
+          "align": 3,
+          "child": 53429967,
+          "child_mod2048": 1743,
+          "child_mod4096": 1743,
+          "event_step": 38,
+          "label": "terminal_local",
+          "lift_bit": 0,
+          "parent": 19875535,
+          "q_mod64": 5,
+          "source_lag": 0,
+          "source_mod16384": 11846,
+          "source_mod8192": 3654,
+          "source_word": null,
+          "terminal_current_gap": "0.081541375001010298483449",
+          "terminal_mod64": 6,
+          "terminal_step": 35
+        }
+      ]
+    }
+  ],
+  "parameters": {
+    "input": "experiments\\results\\branch_prefix_tail_child_lift_stratifier_d25_d26_20260702.json",
+    "output": "experiments\\results\\branch_prefix_tail_lift_bit_witness_d25_d26_20260702.json",
+    "quiet": true
+  },
+  "phase_fields": [
+    "terminal_step",
+    "event_step",
+    "align",
+    "q_mod64",
+    "terminal_mod64",
+    "terminal_current_gap"
+  ],
+  "pure_claims": {
+    "candidate_record_count_is_9": true,
+    "lower_lift_signature_is_pure": true,
+    "lower_phase_signature_has_mixed_bucket": true,
+    "phase_signature_has_mixed_bucket": true,
+    "upper_timing_signature_is_pure": true,
+    "witness_has_same_lower_phase_opposite_labels": true,
+    "witness_uses_both_lift_bits": true
+  },
+  "status": "branch-prefix-tail-lift-bit-witness",
+  "terminal_collision_lower_lift_rule": [
+    {
+      "counts": {
+        "terminal_local": 2
+      },
+      "key": "1743|0"
+    },
+    {
+      "counts": {
+        "terminal_local": 1
+      },
+      "key": "1895|1"
+    }
+  ],
+  "theorem_target": "A memory and terminal-local record share child mod 2048, event timing, alignment, q mod 64, terminal residue, and terminal-current gap. The next child lift bit separates them. Any proof using only the lower bucket and visible terminal phase is therefore insufficient for this finite lift.",
+  "upper_timing_fields": [
+    "child_mod4096",
+    "event_step"
+  ],
+  "upper_timing_rule": [
+    {
+      "counts": {
+        "memory_lag_8": 1
+      },
+      "is_pure": true,
+      "key": "1471|38",
+      "records": [
+        {
+          "align": 3,
+          "child": 58000831,
+          "child_mod2048": 1471,
+          "child_mod4096": 1471,
+          "event_step": 38,
+          "label": "memory_lag_8",
+          "lift_bit": 0,
+          "parent": 24446399,
+          "q_mod64": 37,
+          "source_lag": 8,
+          "source_mod16384": 6508,
+          "source_mod8192": 6508,
+          "source_word": "EEOOEOOO",
+          "terminal_current_gap": "0.081541375001010298483449",
+          "terminal_mod64": 38,
+          "terminal_step": 35
+        }
+      ]
+    },
+    {
+      "counts": {
+        "terminal_local": 2
+      },
+      "is_pure": true,
+      "key": "1743|38",
+      "records": [
+        {
+          "align": 3,
+          "child": 40228559,
+          "child_mod2048": 1743,
+          "child_mod4096": 1743,
+          "event_step": 38,
+          "label": "terminal_local",
+          "lift_bit": 0,
+          "parent": 6674127,
+          "q_mod64": 53,
+          "source_lag": 0,
+          "source_mod16384": 7894,
+          "source_mod8192": 7894,
+          "source_word": null,
+          "terminal_current_gap": "0.081541375001010298483449",
+          "terminal_mod64": 22,
+          "terminal_step": 35
+        },
+        {
+          "align": 3,
+          "child": 53429967,
+          "child_mod2048": 1743,
+          "child_mod4096": 1743,
+          "event_step": 38,
+          "label": "terminal_local",
+          "lift_bit": 0,
+          "parent": 19875535,
+          "q_mod64": 5,
+          "source_lag": 0,
+          "source_mod16384": 11846,
+          "source_mod8192": 3654,
+          "source_word": null,
+          "terminal_current_gap": "0.081541375001010298483449",
+          "terminal_mod64": 6,
+          "terminal_step": 35
+        }
+      ]
+    },
+    {
+      "counts": {
+        "memory_lag_8": 2
+      },
+      "is_pure": true,
+      "key": "1895|38",
+      "records": [
+        {
+          "align": 3,
+          "child": 35940199,
+          "child_mod2048": 1895,
+          "child_mod4096": 1895,
+          "event_step": 38,
+          "label": "memory_lag_8",
+          "lift_bit": 0,
+          "parent": 2385767,
+          "q_mod64": 5,
+          "source_lag": 8,
+          "source_mod16384": 14700,
+          "source_mod8192": 6508,
+          "source_word": "EEOOEOOO",
+          "terminal_current_gap": "0.081541375001010298483449",
+          "terminal_mod64": 6,
+          "terminal_step": 35
+        },
+        {
+          "align": 3,
+          "child": 39507815,
+          "child_mod2048": 1895,
+          "child_mod4096": 1895,
+          "event_step": 38,
+          "label": "memory_lag_8",
+          "lift_bit": 0,
+          "parent": 5953383,
+          "q_mod64": 37,
+          "source_lag": 8,
+          "source_mod16384": 6508,
+          "source_mod8192": 6508,
+          "source_word": "EEOOEOOO",
+          "terminal_current_gap": "0.081541375001010298483449",
+          "terminal_mod64": 38,
+          "terminal_step": 35
+        }
+      ]
+    },
+    {
+      "counts": {
+        "memory_lag_8": 1
+      },
+      "is_pure": true,
+      "key": "2495|38",
+      "records": [
+        {
+          "align": 3,
+          "child": 50428351,
+          "child_mod2048": 447,
+          "child_mod4096": 2495,
+          "event_step": 38,
+          "label": "memory_lag_8",
+          "lift_bit": 1,
+          "parent": 16873919,
+          "q_mod64": 37,
+          "source_lag": 8,
+          "source_mod16384": 6508,
+          "source_mod8192": 6508,
+          "source_word": "EEOOEOOO",
+          "terminal_current_gap": "0.081541375001010298483449",
+          "terminal_mod64": 38,
+          "terminal_step": 35
+        }
+      ]
+    },
+    {
+      "counts": {
+        "memory_lag_8": 1
+      },
+      "is_pure": true,
+      "key": "3791|38",
+      "records": [
+        {
+          "align": 3,
+          "child": 40992463,
+          "child_mod2048": 1743,
+          "child_mod4096": 3791,
+          "event_step": 38,
+          "label": "memory_lag_8",
+          "lift_bit": 1,
+          "parent": 7438031,
+          "q_mod64": 5,
+          "source_lag": 8,
+          "source_mod16384": 14700,
+          "source_mod8192": 6508,
+          "source_word": "EEOOEOOO",
+          "terminal_current_gap": "0.081541375001010298483449",
+          "terminal_mod64": 6,
+          "terminal_step": 35
+        }
+      ]
+    },
+    {
+      "counts": {
+        "terminal_local": 1
+      },
+      "is_pure": true,
+      "key": "3943|38",
+      "records": [
+        {
+          "align": 5,
+          "child": 51973991,
+          "child_mod2048": 1895,
+          "child_mod4096": 3943,
+          "event_step": 38,
+          "label": "terminal_local",
+          "lift_bit": 1,
+          "parent": 18419559,
+          "q_mod64": 29,
+          "source_lag": 0,
+          "source_mod16384": 6278,
+          "source_mod8192": 6278,
+          "source_word": null,
+          "terminal_current_gap": "0.081541375001010298483449",
+          "terminal_mod64": 6,
+          "terminal_step": 35
+        }
+      ]
+    },
+    {
+      "counts": {
+        "memory_lag_8": 1
+      },
+      "is_pure": true,
+      "key": "751|38",
+      "records": [
+        {
+          "align": 4,
+          "child": 44180207,
+          "child_mod2048": 751,
+          "child_mod4096": 751,
+          "event_step": 38,
+          "label": "memory_lag_8",
+          "lift_bit": 0,
+          "parent": 10625775,
+          "q_mod64": 55,
+          "source_lag": 8,
+          "source_mod16384": 10148,
+          "source_mod8192": 1956,
+          "source_word": "EEOEOOOO",
+          "terminal_current_gap": "0.081541375001010298483449",
+          "terminal_mod64": 38,
+          "terminal_step": 35
+        }
+      ]
+    }
+  ],
+  "witness": {
+    "counts": {
+      "memory_lag_8": 1,
+      "terminal_local": 1
+    },
+    "is_pure": false,
+    "key": "1743|35|38|3|5|6|0.081541375001010298483449",
+    "records": [
+      {
+        "align": 3,
+        "child": 40992463,
+        "child_mod2048": 1743,
+        "child_mod4096": 3791,
+        "event_step": 38,
+        "label": "memory_lag_8",
+        "lift_bit": 1,
+        "parent": 7438031,
+        "q_mod64": 5,
+        "source_lag": 8,
+        "source_mod16384": 14700,
+        "source_mod8192": 6508,
+        "source_word": "EEOOEOOO",
+        "terminal_current_gap": "0.081541375001010298483449",
+        "terminal_mod64": 6,
+        "terminal_step": 35
+      },
+      {
+        "align": 3,
+        "child": 53429967,
+        "child_mod2048": 1743,
+        "child_mod4096": 1743,
+        "event_step": 38,
+        "label": "terminal_local",
+        "lift_bit": 0,
+        "parent": 19875535,
+        "q_mod64": 5,
+        "source_lag": 0,
+        "source_mod16384": 11846,
+        "source_mod8192": 3654,
+        "source_word": null,
+        "terminal_current_gap": "0.081541375001010298483449",
+        "terminal_mod64": 6,
+        "terminal_step": 35
+      }
+    ]
+  }
+}

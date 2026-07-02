@@ -1,0 +1,1524 @@
+[
+  {
+    "depth": 14,
+    "survivor_count": 734,
+    "density": 0.0447998046875,
+    "time_s": 0.002,
+    "fixed_bits": {
+      "num_fixed_bits": 2,
+      "fixed_bit_positions": [
+        0,
+        1
+      ],
+      "fixed_bit_values": {
+        "0": 1,
+        "1": 1
+      },
+      "fixed_mask": 3,
+      "fixed_value": 3,
+      "modulus_constraint": 3,
+      "modulus": 4
+    },
+    "raw_discrepancy": 0.007772419693034771,
+    "raw_discrepancy_ratio": 0.21057377041633474,
+    "conditional_discrepancy": {
+      "effective_depth": 12,
+      "effective_modulus": 4096,
+      "num_survivors": 734,
+      "star_discrepancy": 0.007955525161784771,
+      "expected_random": 0.03691067352627811,
+      "discrepancy_ratio": 0.21553454331091876,
+      "mean_gap": 5.580381471389646,
+      "max_gap": 23,
+      "min_gap": 1,
+      "gap_cv": 0.6916599993403562
+    },
+    "bit_entropy": {
+      "bit_entropies": [
+        {
+          "bit": 0,
+          "entropy": 0.0,
+          "p1": 1.0
+        },
+        {
+          "bit": 1,
+          "entropy": 0.0,
+          "p1": 1.0
+        },
+        {
+          "bit": 2,
+          "entropy": 0.7086546677996117,
+          "p1": 0.8065395095367848
+        },
+        {
+          "bit": 3,
+          "entropy": 0.7086546677996117,
+          "p1": 0.8065395095367848
+        },
+        {
+          "bit": 4,
+          "entropy": 0.9627837760216919,
+          "p1": 0.6130790190735694
+        },
+        {
+          "bit": 5,
+          "entropy": 0.9627837760216919,
+          "p1": 0.6130790190735694
+        },
+        {
+          "bit": 6,
+          "entropy": 0.9799788277156347,
+          "p1": 0.5831062670299727
+        },
+        {
+          "bit": 7,
+          "entropy": 0.9948470797777691,
+          "p1": 0.5422343324250681
+        },
+        {
+          "bit": 8,
+          "entropy": 0.9909783266801317,
+          "p1": 0.444141689373297
+        },
+        {
+          "bit": 9,
+          "entropy": 0.9966501234370293,
+          "p1": 0.4659400544959128
+        },
+        {
+          "bit": 10,
+          "entropy": 0.9997375570984457,
+          "p1": 0.4904632152588556
+        },
+        {
+          "bit": 11,
+          "entropy": 0.9997375570984457,
+          "p1": 0.5095367847411444
+        },
+        {
+          "bit": 12,
+          "entropy": 0.9999517985879527,
+          "p1": 0.49591280653950953
+        },
+        {
+          "bit": 13,
+          "entropy": 1.0,
+          "p1": 0.5
+        }
+      ],
+      "min_entropy": 0.0,
+      "mean_entropy": 0.807482725574144,
+      "num_zero_entropy_bits": 2
+    },
+    "block_discrepancy": {
+      "4": {
+        "block_size": 4,
+        "num_blocks": 1024,
+        "expected_per_block": 0.716796875,
+        "chi2": 663.8855585831053,
+        "chi2_per_block": 0.6483257408038138,
+        "cv_block_counts": 0.9510395564074311,
+        "min_block_count": 0,
+        "max_block_count": 2,
+        "empty_blocks": 424
+      },
+      "8": {
+        "block_size": 8,
+        "num_blocks": 64,
+        "expected_per_block": 11.46875,
+        "chi2": 19.52588555858312,
+        "chi2_per_block": 0.30509196185286125,
+        "cv_block_counts": 0.16310126891528268,
+        "min_block_count": 8,
+        "max_block_count": 15,
+        "empty_blocks": 0
+      },
+      "12": {
+        "block_size": 12,
+        "num_blocks": 4,
+        "expected_per_block": 183.5,
+        "chi2": 0.04904632152588556,
+        "chi2_per_block": 0.01226158038147139,
+        "cv_block_counts": 0.008174386920980926,
+        "min_block_count": 182,
+        "max_block_count": 185,
+        "empty_blocks": 0
+      }
+    }
+  },
+  {
+    "depth": 16,
+    "survivor_count": 2114,
+    "density": 0.032257080078125,
+    "time_s": 0.0059,
+    "fixed_bits": {
+      "num_fixed_bits": 2,
+      "fixed_bit_positions": [
+        0,
+        1
+      ],
+      "fixed_bit_values": {
+        "0": 1,
+        "1": 1
+      },
+      "fixed_mask": 3,
+      "fixed_value": 3,
+      "modulus_constraint": 3,
+      "modulus": 4
+    },
+    "raw_discrepancy": 0.004308507480819845,
+    "raw_discrepancy_ratio": 0.19809765876900495,
+    "conditional_discrepancy": {
+      "effective_depth": 14,
+      "effective_modulus": 16384,
+      "num_survivors": 2114,
+      "star_discrepancy": 0.004354283848007345,
+      "expected_random": 0.021749411414517784,
+      "discrepancy_ratio": 0.2002023762859555,
+      "mean_gap": 7.750236518448439,
+      "max_gap": 42,
+      "min_gap": 1,
+      "gap_cv": 0.7416792785897363
+    },
+    "bit_entropy": {
+      "bit_entropies": [
+        {
+          "bit": 0,
+          "entropy": 0.0,
+          "p1": 1.0
+        },
+        {
+          "bit": 1,
+          "entropy": 0.0,
+          "p1": 1.0
+        },
+        {
+          "bit": 2,
+          "entropy": 0.6948342943612777,
+          "p1": 0.8131504257332072
+        },
+        {
+          "bit": 3,
+          "entropy": 0.6948342943612777,
+          "p1": 0.8131504257332072
+        },
+        {
+          "bit": 4,
+          "entropy": 0.9534701095219054,
+          "p1": 0.6263008514664143
+        },
+        {
+          "bit": 5,
+          "entropy": 0.9534701095219054,
+          "p1": 0.6263008514664143
+        },
+        {
+          "bit": 6,
+          "entropy": 0.9770584171436856,
+          "p1": 0.5889309366130558
+        },
+        {
+          "bit": 7,
+          "entropy": 0.99231542424582,
+          "p1": 0.5515610217596972
+        },
+        {
+          "bit": 8,
+          "entropy": 0.9918857908316057,
+          "p1": 0.4470198675496689
+        },
+        {
+          "bit": 9,
+          "entropy": 0.9964615478276794,
+          "p1": 0.4649952696310312
+        },
+        {
+          "bit": 10,
+          "entropy": 0.9998134002162091,
+          "p1": 0.49195837275307475
+        },
+        {
+          "bit": 11,
+          "entropy": 0.9998134002162091,
+          "p1": 0.5080416272469253
+        },
+        {
+          "bit": 12,
+          "entropy": 0.999907024956467,
+          "p1": 0.4943235572374645
+        },
+        {
+          "bit": 13,
+          "entropy": 0.9999941891768082,
+          "p1": 0.5014191106906338
+        },
+        {
+          "bit": 14,
+          "entropy": 0.999997417413841,
+          "p1": 0.5009460737937559
+        },
+        {
+          "bit": 15,
+          "entropy": 0.9999993543537492,
+          "p1": 0.49952696310312206
+        }
+      ],
+      "min_entropy": 0.0,
+      "mean_entropy": 0.8283659233842775,
+      "num_zero_entropy_bits": 2
+    },
+    "block_discrepancy": {
+      "4": {
+        "block_size": 4,
+        "num_blocks": 4096,
+        "expected_per_block": 0.51611328125,
+        "chi2": 3036.032166508897,
+        "chi2_per_block": 0.7412187906515861,
+        "cv_block_counts": 1.198396943782431,
+        "min_block_count": 0,
+        "max_block_count": 2,
+        "empty_blocks": 2254
+      },
+      "8": {
+        "block_size": 8,
+        "num_blocks": 256,
+        "expected_per_block": 8.2578125,
+        "chi2": 99.90350047303716,
+        "chi2_per_block": 0.3902480487228014,
+        "cv_block_counts": 0.2173891484205475,
+        "min_block_count": 4,
+        "max_block_count": 14,
+        "empty_blocks": 0
+      },
+      "12": {
+        "block_size": 12,
+        "num_blocks": 16,
+        "expected_per_block": 132.125,
+        "chi2": 1.2847682119205297,
+        "chi2_per_block": 0.0802980132450331,
+        "cv_block_counts": 0.02465243939601775,
+        "min_block_count": 127,
+        "max_block_count": 139,
+        "empty_blocks": 0
+      }
+    }
+  },
+  {
+    "depth": 18,
+    "survivor_count": 7495,
+    "density": 0.028591156005859375,
+    "time_s": 0.0209,
+    "fixed_bits": {
+      "num_fixed_bits": 2,
+      "fixed_bit_positions": [
+        0,
+        1
+      ],
+      "fixed_bit_values": {
+        "0": 1,
+        "1": 1
+      },
+      "fixed_mask": 3,
+      "fixed_value": 3,
+      "modulus_constraint": 3,
+      "modulus": 4
+    },
+    "raw_discrepancy": 0.004148281980467461,
+    "raw_discrepancy_ratio": 0.3591319871636129,
+    "conditional_discrepancy": {
+      "effective_depth": 16,
+      "effective_modulus": 65536,
+      "num_survivors": 7495,
+      "star_discrepancy": 0.004136837888670586,
+      "expected_random": 0.011550856311157803,
+      "discrepancy_ratio": 0.35814123015923216,
+      "mean_gap": 8.743962641761174,
+      "max_gap": 52,
+      "min_gap": 1,
+      "gap_cv": 0.7622254385915804
+    },
+    "bit_entropy": {
+      "bit_entropies": [
+        {
+          "bit": 0,
+          "entropy": 0.0,
+          "p1": 1.0
+        },
+        {
+          "bit": 1,
+          "entropy": 0.0,
+          "p1": 1.0
+        },
+        {
+          "bit": 2,
+          "entropy": 0.690729722792874,
+          "p1": 0.8150767178118746
+        },
+        {
+          "bit": 3,
+          "entropy": 0.690729722792874,
+          "p1": 0.8150767178118746
+        },
+        {
+          "bit": 4,
+          "entropy": 0.9505542078818562,
+          "p1": 0.6301534356237491
+        },
+        {
+          "bit": 5,
+          "entropy": 0.9505542078818562,
+          "p1": 0.6301534356237491
+        },
+        {
+          "bit": 6,
+          "entropy": 0.9760109950919427,
+          "p1": 0.5909272848565711
+        },
+        {
+          "bit": 7,
+          "entropy": 0.9914116703150555,
+          "p1": 0.5545030020013342
+        },
+        {
+          "bit": 8,
+          "entropy": 0.9923929113034908,
+          "p1": 0.4486991327551701
+        },
+        {
+          "bit": 9,
+          "entropy": 0.9966179844442973,
+          "p1": 0.4657771847898599
+        },
+        {
+          "bit": 10,
+          "entropy": 0.9998791749838825,
+          "p1": 0.49352901934623084
+        },
+        {
+          "bit": 11,
+          "entropy": 0.9998181499437035,
+          "p1": 0.5079386257505003
+        },
+        {
+          "bit": 12,
+          "entropy": 0.99989828348102,
+          "p1": 0.49406270847231487
+        },
+        {
+          "bit": 13,
+          "entropy": 0.9999906388385269,
+          "p1": 0.5018012008005337
+        },
+        {
+          "bit": 14,
+          "entropy": 0.9999953643681727,
+          "p1": 0.5012675116744496
+        },
+        {
+          "bit": 15,
+          "entropy": 0.9999989598729472,
+          "p1": 0.49939959973315545
+        },
+        {
+          "bit": 16,
+          "entropy": 0.9999978298578046,
+          "p1": 0.4991327551701134
+        },
+        {
+          "bit": 17,
+          "entropy": 0.9999784140509137,
+          "p1": 0.5027351567711807
+        }
+      ],
+      "min_entropy": 0.0,
+      "mean_entropy": 0.8465865687722899,
+      "num_zero_entropy_bits": 2
+    },
+    "block_discrepancy": {
+      "4": {
+        "block_size": 4,
+        "num_blocks": 16384,
+        "expected_per_block": 0.45745849609375,
+        "chi2": 12609.556104070143,
+        "chi2_per_block": 0.7696262270550625,
+        "cv_block_counts": 1.2970719888935098,
+        "min_block_count": 0,
+        "max_block_count": 2,
+        "empty_blocks": 9740
+      },
+      "8": {
+        "block_size": 8,
+        "num_blocks": 1024,
+        "expected_per_block": 7.3193359375,
+        "chi2": 493.0197464976637,
+        "chi2_per_block": 0.4814645961891247,
+        "cv_block_counts": 0.25647576769088815,
+        "min_block_count": 2,
+        "max_block_count": 14,
+        "empty_blocks": 0
+      },
+      "12": {
+        "block_size": 12,
+        "num_blocks": 64,
+        "expected_per_block": 117.109375,
+        "chi2": 10.265910607071383,
+        "chi2_per_block": 0.16040485323549036,
+        "cv_block_counts": 0.037009474666445094,
+        "min_block_count": 107,
+        "max_block_count": 127,
+        "empty_blocks": 0
+      },
+      "16": {
+        "block_size": 16,
+        "num_blocks": 4,
+        "expected_per_block": 1873.75,
+        "chi2": 0.2629753168779186,
+        "chi2_per_block": 0.06574382921947965,
+        "cv_block_counts": 0.005923408373695293,
+        "min_block_count": 1863,
+        "max_block_count": 1890,
+        "empty_blocks": 0
+      }
+    }
+  },
+  {
+    "depth": 20,
+    "survivor_count": 27328,
+    "density": 0.02606201171875,
+    "time_s": 0.0917,
+    "fixed_bits": {
+      "num_fixed_bits": 2,
+      "fixed_bit_positions": [
+        0,
+        1
+      ],
+      "fixed_bit_values": {
+        "0": 1,
+        "1": 1
+      },
+      "fixed_mask": 3,
+      "fixed_value": 3,
+      "modulus_constraint": 3,
+      "modulus": 4
+    },
+    "raw_discrepancy": 0.0022194502783603326,
+    "raw_discrepancy_ratio": 0.36690137947079565,
+    "conditional_discrepancy": {
+      "effective_depth": 18,
+      "effective_modulus": 262144,
+      "num_survivors": 27328,
+      "star_discrepancy": 0.002216589255411114,
+      "expected_random": 0.0060491739811978406,
+      "discrepancy_ratio": 0.3664284185412354,
+      "mean_gap": 9.592505854800937,
+      "max_gap": 58,
+      "min_gap": 1,
+      "gap_cv": 0.7730573733938989
+    },
+    "bit_entropy": {
+      "bit_entropies": [
+        {
+          "bit": 0,
+          "entropy": 0.0,
+          "p1": 1.0
+        },
+        {
+          "bit": 1,
+          "entropy": 0.0,
+          "p1": 1.0
+        },
+        {
+          "bit": 2,
+          "entropy": 0.6880138735569223,
+          "p1": 0.8163422131147541
+        },
+        {
+          "bit": 3,
+          "entropy": 0.6880138735569223,
+          "p1": 0.8163422131147541
+        },
+        {
+          "bit": 4,
+          "entropy": 0.9485885965115364,
+          "p1": 0.6326844262295082
+        },
+        {
+          "bit": 5,
+          "entropy": 0.9485885965115364,
+          "p1": 0.6326844262295082
+        },
+        {
+          "bit": 6,
+          "entropy": 0.975264639090452,
+          "p1": 0.5923228922716628
+        },
+        {
+          "bit": 7,
+          "entropy": 0.9907697938228405,
+          "p1": 0.5564988290398126
+        },
+        {
+          "bit": 8,
+          "entropy": 0.9927786908724279,
+          "p1": 0.4500146370023419
+        },
+        {
+          "bit": 9,
+          "entropy": 0.996769977428158,
+          "p1": 0.46655444964871196
+        },
+        {
+          "bit": 10,
+          "entropy": 0.9999231869924816,
+          "p1": 0.4948404566744731
+        },
+        {
+          "bit": 11,
+          "entropy": 0.9998129951097432,
+          "p1": 0.5080503512880562
+        },
+        {
+          "bit": 12,
+          "entropy": 0.9998922462008025,
+          "p1": 0.49388905152224827
+        },
+        {
+          "bit": 13,
+          "entropy": 0.9999856236065745,
+          "p1": 0.5022321428571429
+        },
+        {
+          "bit": 14,
+          "entropy": 0.9999907235474493,
+          "p1": 0.5017930327868853
+        },
+        {
+          "bit": 15,
+          "entropy": 0.9999981300310906,
+          "p1": 0.49919496487119436
+        },
+        {
+          "bit": 16,
+          "entropy": 0.9999973882247948,
+          "p1": 0.4990485948477752
+        },
+        {
+          "bit": 17,
+          "entropy": 0.9999865508694457,
+          "p1": 0.5021589578454333
+        },
+        {
+          "bit": 18,
+          "entropy": 0.9999965227837947,
+          "p1": 0.501097775175644
+        },
+        {
+          "bit": 19,
+          "entropy": 0.9999990109257368,
+          "p1": 0.5005854800936768
+        }
+      ],
+      "min_entropy": 0.0,
+      "mean_entropy": 0.8614185209821356,
+      "num_zero_entropy_bits": 2
+    },
+    "block_discrepancy": {
+      "4": {
+        "block_size": 4,
+        "num_blocks": 65536,
+        "expected_per_block": 0.4169921875,
+        "chi2": 51584.74941449678,
+        "chi2_per_block": 0.7871208101577267,
+        "cv_block_counts": 1.3739051077018598,
+        "min_block_count": 0,
+        "max_block_count": 2,
+        "empty_blocks": 40997
+      },
+      "8": {
+        "block_size": 8,
+        "num_blocks": 4096,
+        "expected_per_block": 6.671875,
+        "chi2": 2100.009367681527,
+        "chi2_per_block": 0.5126975995316227,
+        "cv_block_counts": 0.27720859489204525,
+        "min_block_count": 1,
+        "max_block_count": 14,
+        "empty_blocks": 0
+      },
+      "12": {
+        "block_size": 12,
+        "num_blocks": 256,
+        "expected_per_block": 106.75,
+        "chi2": 47.86885245901635,
+        "chi2_per_block": 0.18698770491803263,
+        "cv_block_counts": 0.04185261358468739,
+        "min_block_count": 93,
+        "max_block_count": 119,
+        "empty_blocks": 0
+      },
+      "16": {
+        "block_size": 16,
+        "num_blocks": 16,
+        "expected_per_block": 1708.0,
+        "chi2": 3.0831381733021077,
+        "chi2_per_block": 0.19269613583138173,
+        "cv_block_counts": 0.010621664260261555,
+        "min_block_count": 1676,
+        "max_block_count": 1740,
+        "empty_blocks": 0
+      }
+    }
+  },
+  {
+    "depth": 22,
+    "survivor_count": 93222,
+    "density": 0.02222585678100586,
+    "time_s": 0.7408,
+    "fixed_bits": {
+      "num_fixed_bits": 2,
+      "fixed_bit_positions": [
+        0,
+        1
+      ],
+      "fixed_bit_values": {
+        "0": 1,
+        "1": 1
+      },
+      "fixed_mask": 3,
+      "fixed_value": 3,
+      "modulus_constraint": 3,
+      "modulus": 4
+    },
+    "raw_discrepancy": 0.0007046556578148566,
+    "raw_discrepancy_ratio": 0.21514742440184473,
+    "conditional_discrepancy": {
+      "effective_depth": 20,
+      "effective_modulus": 1048576,
+      "num_survivors": 93222,
+      "star_discrepancy": 0.0007039404020775519,
+      "expected_random": 0.0032752223726309907,
+      "discrepancy_ratio": 0.2149290405317046,
+      "mean_gap": 11.248160305507284,
+      "max_gap": 85,
+      "min_gap": 1,
+      "gap_cv": 0.7966865507168911
+    },
+    "bit_entropy": {
+      "bit_entropies": [
+        {
+          "bit": 0,
+          "entropy": 0.0,
+          "p1": 1.0
+        },
+        {
+          "bit": 1,
+          "entropy": 0.0,
+          "p1": 1.0
+        },
+        {
+          "bit": 2,
+          "entropy": 0.6837251536591072,
+          "p1": 0.818326146188668
+        },
+        {
+          "bit": 3,
+          "entropy": 0.6837251536591072,
+          "p1": 0.818326146188668
+        },
+        {
+          "bit": 4,
+          "entropy": 0.9454269969811531,
+          "p1": 0.6366522923773358
+        },
+        {
+          "bit": 5,
+          "entropy": 0.9454269969811531,
+          "p1": 0.6366522923773358
+        },
+        {
+          "bit": 6,
+          "entropy": 0.9740206992395393,
+          "p1": 0.5946021325438201
+        },
+        {
+          "bit": 7,
+          "entropy": 0.9896929470062642,
+          "p1": 0.559696209049366
+        },
+        {
+          "bit": 8,
+          "entropy": 0.9934239860631124,
+          "p1": 0.4522966681684581
+        },
+        {
+          "bit": 9,
+          "entropy": 0.9970514754022026,
+          "p1": 0.4680440239428461
+        },
+        {
+          "bit": 10,
+          "entropy": 0.9999770342039438,
+          "p1": 0.49717877754178197
+        },
+        {
+          "bit": 11,
+          "entropy": 0.9997943456955174,
+          "p1": 0.5084422132114736
+        },
+        {
+          "bit": 12,
+          "entropy": 0.9998824524912723,
+          "p1": 0.49361738645384134
+        },
+        {
+          "bit": 13,
+          "entropy": 0.9999718838079178,
+          "p1": 0.5031215807427432
+        },
+        {
+          "bit": 14,
+          "entropy": 0.9999766835842832,
+          "p1": 0.5028426766213984
+        },
+        {
+          "bit": 15,
+          "entropy": 0.9999959091451487,
+          "p1": 0.4988092939434897
+        },
+        {
+          "bit": 16,
+          "entropy": 0.9999959091451487,
+          "p1": 0.4988092939434897
+        },
+        {
+          "bit": 17,
+          "entropy": 0.999994126843498,
+          "p1": 0.5014267018514943
+        },
+        {
+          "bit": 18,
+          "entropy": 0.9999963394472648,
+          "p1": 0.5011263435669692
+        },
+        {
+          "bit": 19,
+          "entropy": 0.9999926287527484,
+          "p1": 0.5015983351569372
+        },
+        {
+          "bit": 20,
+          "entropy": 0.9999998801398226,
+          "p1": 0.49979618544978655
+        },
+        {
+          "bit": 21,
+          "entropy": 1.0,
+          "p1": 0.5
+        }
+      ],
+      "min_entropy": 0.0,
+      "mean_entropy": 0.8732759364658276,
+      "num_zero_entropy_bits": 2
+    },
+    "block_discrepancy": {
+      "4": {
+        "block_size": 4,
+        "num_blocks": 262144,
+        "expected_per_block": 0.35561370849609375,
+        "chi2": 213970.8820238438,
+        "chi2_per_block": 0.8162341385797264,
+        "cv_block_counts": 1.5150191778951256,
+        "min_block_count": 0,
+        "max_block_count": 2,
+        "empty_blocks": 176932
+      },
+      "8": {
+        "block_size": 8,
+        "num_blocks": 16384,
+        "expected_per_block": 5.6898193359375,
+        "chi2": 9095.132693999425,
+        "chi2_per_block": 0.5551228450927383,
+        "cv_block_counts": 0.3123527340717017,
+        "min_block_count": 0,
+        "max_block_count": 13,
+        "empty_blocks": 2
+      },
+      "12": {
+        "block_size": 12,
+        "num_blocks": 1024,
+        "expected_per_block": 91.037109375,
+        "chi2": 265.8760807534691,
+        "chi2_per_block": 0.2596446101108097,
+        "cv_block_counts": 0.0534048163663208,
+        "min_block_count": 73,
+        "max_block_count": 107,
+        "empty_blocks": 0
+      },
+      "16": {
+        "block_size": 16,
+        "num_blocks": 64,
+        "expected_per_block": 1456.59375,
+        "chi2": 16.473665014696103,
+        "chi2_per_block": 0.2574010158546266,
+        "cv_block_counts": 0.013293394927631591,
+        "min_block_count": 1405,
+        "max_block_count": 1487,
+        "empty_blocks": 0
+      }
+    }
+  },
+  {
+    "depth": 24,
+    "survivor_count": 286581,
+    "density": 0.01708155870437622,
+    "time_s": 3.6684,
+    "fixed_bits": {
+      "num_fixed_bits": 2,
+      "fixed_bit_positions": [
+        0,
+        1
+      ],
+      "fixed_bit_values": {
+        "0": 1,
+        "1": 1
+      },
+      "fixed_mask": 3,
+      "fixed_value": 3,
+      "modulus_constraint": 3,
+      "modulus": 4
+    },
+    "raw_discrepancy": 0.0004142462743645936,
+    "raw_discrepancy_ratio": 0.2217595379502061,
+    "conditional_discrepancy": {
+      "effective_depth": 22,
+      "effective_modulus": 4194304,
+      "num_survivors": 286581,
+      "star_discrepancy": 0.0004144250882989198,
+      "expected_random": 0.00186799755353751,
+      "discrepancy_ratio": 0.22185526287981724,
+      "mean_gap": 14.63566670505023,
+      "max_gap": 156,
+      "min_gap": 1,
+      "gap_cv": 0.8258262815337435
+    },
+    "bit_entropy": {
+      "bit_entropies": [
+        {
+          "bit": 0,
+          "entropy": 0.0,
+          "p1": 1.0
+        },
+        {
+          "bit": 1,
+          "entropy": 0.0,
+          "p1": 1.0
+        },
+        {
+          "bit": 2,
+          "entropy": 0.6777464938206474,
+          "p1": 0.8210628059780656
+        },
+        {
+          "bit": 3,
+          "entropy": 0.6777464938206474,
+          "p1": 0.8210628059780656
+        },
+        {
+          "bit": 4,
+          "entropy": 0.940904613789153,
+          "p1": 0.642125611956131
+        },
+        {
+          "bit": 5,
+          "entropy": 0.940904613789153,
+          "p1": 0.642125611956131
+        },
+        {
+          "bit": 6,
+          "entropy": 0.9721453535763791,
+          "p1": 0.5979356621688109
+        },
+        {
+          "bit": 7,
+          "entropy": 0.988056359541976,
+          "p1": 0.5642488511101573
+        },
+        {
+          "bit": 8,
+          "entropy": 0.9943764660908121,
+          "p1": 0.4558815832173103
+        },
+        {
+          "bit": 9,
+          "entropy": 0.9975104575604695,
+          "p1": 0.47063482924548383
+        },
+        {
+          "bit": 10,
+          "entropy": 0.9999973911865667,
+          "p1": 0.5009508655493561
+        },
+        {
+          "bit": 11,
+          "entropy": 0.9997418723824048,
+          "p1": 0.5094580589780899
+        },
+        {
+          "bit": 12,
+          "entropy": 0.9998693341357624,
+          "p1": 0.49327066344244735
+        },
+        {
+          "bit": 13,
+          "entropy": 0.9999333347285815,
+          "p1": 0.5048066689696805
+        },
+        {
+          "bit": 14,
+          "entropy": 0.9999382729666151,
+          "p1": 0.5046252193969594
+        },
+        {
+          "bit": 15,
+          "entropy": 0.999991269463177,
+          "p1": 0.498260526692279
+        },
+        {
+          "bit": 16,
+          "entropy": 0.9999911640650814,
+          "p1": 0.49825005844769893
+        },
+        {
+          "bit": 17,
+          "entropy": 0.9999986017150366,
+          "p1": 0.5006961382645744
+        },
+        {
+          "bit": 18,
+          "entropy": 0.999998443267101,
+          "p1": 0.5007345218280347
+        },
+        {
+          "bit": 19,
+          "entropy": 0.9999906638456488,
+          "p1": 0.5017987933603414
+        },
+        {
+          "bit": 20,
+          "entropy": 0.9999999531946517,
+          "p1": 0.5001273636423909
+        },
+        {
+          "bit": 21,
+          "entropy": 0.9999993064744506,
+          "p1": 0.5004902627878332
+        },
+        {
+          "bit": 22,
+          "entropy": 0.9999999335204199,
+          "p1": 0.5001517895464109
+        },
+        {
+          "bit": 23,
+          "entropy": 0.9999997185794252,
+          "p1": 0.499687697370028
+        }
+      ],
+      "min_entropy": 0.0,
+      "mean_entropy": 0.8828683379797565,
+      "num_zero_entropy_bits": 2
+    },
+    "block_discrepancy": {
+      "4": {
+        "block_size": 4,
+        "num_blocks": 1048576,
+        "expected_per_block": 0.27330493927001953,
+        "chi2": 898275.0105269832,
+        "chi2_per_block": 0.8566618066091377,
+        "cv_block_counts": 1.7704389766859725,
+        "min_block_count": 0,
+        "max_block_count": 2,
+        "empty_blocks": 780618
+      },
+      "8": {
+        "block_size": 8,
+        "num_blocks": 65536,
+        "expected_per_block": 4.3728790283203125,
+        "chi2": 40509.91441513059,
+        "chi2_per_block": 0.6181322390004057,
+        "cv_block_counts": 0.37597326678681575,
+        "min_block_count": 0,
+        "max_block_count": 12,
+        "empty_blocks": 181
+      },
+      "12": {
+        "block_size": 12,
+        "num_blocks": 4096,
+        "expected_per_block": 69.966064453125,
+        "chi2": 1459.6831157683052,
+        "chi2_per_block": 0.3563679481856214,
+        "cv_block_counts": 0.07136834000511262,
+        "min_block_count": 54,
+        "max_block_count": 87,
+        "empty_blocks": 0
+      },
+      "16": {
+        "block_size": 16,
+        "num_blocks": 256,
+        "expected_per_block": 1119.45703125,
+        "chi2": 81.92858214605997,
+        "chi2_per_block": 0.32003352400804674,
+        "cv_block_counts": 0.01690806943447432,
+        "min_block_count": 1054,
+        "max_block_count": 1158,
+        "empty_blocks": 0
+      }
+    }
+  },
+  {
+    "depth": 26,
+    "survivor_count": 1037374,
+    "density": 0.015458077192306519,
+    "time_s": 18.0545,
+    "fixed_bits": {
+      "num_fixed_bits": 2,
+      "fixed_bit_positions": [
+        0,
+        1
+      ],
+      "fixed_bit_values": {
+        "0": 1,
+        "1": 1
+      },
+      "fixed_mask": 3,
+      "fixed_value": 3,
+      "modulus_constraint": 3,
+      "modulus": 4
+    },
+    "raw_discrepancy": 0.0002880073923513804,
+    "raw_discrepancy_ratio": 0.29334001814509875,
+    "conditional_discrepancy": {
+      "effective_depth": 24,
+      "effective_modulus": 16777216,
+      "num_survivors": 1037374,
+      "star_discrepancy": 0.00028805209583496194,
+      "expected_random": 0.0009818210081684777,
+      "discrepancy_ratio": 0.29338554933989863,
+      "mean_gap": 16.172774717700655,
+      "max_gap": 160,
+      "min_gap": 1,
+      "gap_cv": 0.8339616103464311
+    },
+    "bit_entropy": {
+      "bit_entropies": [
+        {
+          "bit": 0,
+          "entropy": 0.0,
+          "p1": 1.0
+        },
+        {
+          "bit": 1,
+          "entropy": 0.0,
+          "p1": 1.0
+        },
+        {
+          "bit": 2,
+          "entropy": 0.6757767083114521,
+          "p1": 0.8219571726301218
+        },
+        {
+          "bit": 3,
+          "entropy": 0.6757767083114521,
+          "p1": 0.8219571726301218
+        },
+        {
+          "bit": 4,
+          "entropy": 0.9393859411646515,
+          "p1": 0.6439143452602436
+        },
+        {
+          "bit": 5,
+          "entropy": 0.9393859411646515,
+          "p1": 0.6439143452602436
+        },
+        {
+          "bit": 6,
+          "entropy": 0.9714923693508417,
+          "p1": 0.599069380956145
+        },
+        {
+          "bit": 7,
+          "entropy": 0.9874824759901174,
+          "p1": 0.5657699151897001
+        },
+        {
+          "bit": 8,
+          "entropy": 0.9946959187920182,
+          "p1": 0.45715142272700104
+        },
+        {
+          "bit": 9,
+          "entropy": 0.9976717316142645,
+          "p1": 0.47160137038329475
+        },
+        {
+          "bit": 10,
+          "entropy": 0.9999846973145351,
+          "p1": 0.5023029302835814
+        },
+        {
+          "bit": 11,
+          "entropy": 0.9997169091152223,
+          "p1": 0.5099048173561319
+        },
+        {
+          "bit": 12,
+          "entropy": 0.9998654815672685,
+          "p1": 0.49317218283859054
+        },
+        {
+          "bit": 13,
+          "entropy": 0.9999137997383077,
+          "p1": 0.505465724030099
+        },
+        {
+          "bit": 14,
+          "entropy": 0.999919978949674,
+          "p1": 0.5052661817242383
+        },
+        {
+          "bit": 15,
+          "entropy": 0.9999895943955448,
+          "p1": 0.4981009741906005
+        },
+        {
+          "bit": 16,
+          "entropy": 0.9999887760376367,
+          "p1": 0.49802771228120235
+        },
+        {
+          "bit": 17,
+          "entropy": 0.9999992694080275,
+          "p1": 0.5005031936408663
+        },
+        {
+          "bit": 18,
+          "entropy": 0.9999988531953944,
+          "p1": 0.500630438009821
+        },
+        {
+          "bit": 19,
+          "entropy": 0.9999906239919701,
+          "p1": 0.5018026285601914
+        },
+        {
+          "bit": 20,
+          "entropy": 0.9999999011591927,
+          "p1": 0.5001850827184795
+        },
+        {
+          "bit": 21,
+          "entropy": 0.9999989017685539,
+          "p1": 0.5006169423949318
+        },
+        {
+          "bit": 22,
+          "entropy": 0.9999996715494917,
+          "p1": 0.5003373903722284
+        },
+        {
+          "bit": 23,
+          "entropy": 0.9999991319226261,
+          "p1": 0.4994514996520059
+        },
+        {
+          "bit": 24,
+          "entropy": 0.9999992468428012,
+          "p1": 0.4994890945791971
+        },
+        {
+          "bit": 25,
+          "entropy": 0.9999999296338398,
+          "p1": 0.5001561635437172
+        }
+      ],
+      "min_entropy": 0.0,
+      "mean_entropy": 0.8915781754342128,
+      "num_zero_entropy_bits": 2
+    },
+    "block_discrepancy": {
+      "4": {
+        "block_size": 4,
+        "num_blocks": 4194304,
+        "expected_per_block": 0.2473292350769043,
+        "chi2": 3648064.8226059806,
+        "chi2_per_block": 0.8697664314761115,
+        "cv_block_counts": 1.8752690843024316,
+        "min_block_count": 0,
+        "max_block_count": 2,
+        "empty_blocks": 3217666
+      },
+      "8": {
+        "block_size": 8,
+        "num_blocks": 262144,
+        "expected_per_block": 3.9572677612304688,
+        "chi2": 168177.47840578834,
+        "chi2_per_block": 0.6415461670142683,
+        "cv_block_counts": 0.40263937086453166,
+        "min_block_count": 0,
+        "max_block_count": 12,
+        "empty_blocks": 1524
+      },
+      "12": {
+        "block_size": 12,
+        "num_blocks": 16384,
+        "expected_per_block": 63.3162841796875,
+        "chi2": 6478.317871856896,
+        "chi2_per_block": 0.39540514354595313,
+        "cv_block_counts": 0.07902480764561755,
+        "min_block_count": 44,
+        "max_block_count": 84,
+        "empty_blocks": 0
+      },
+      "16": {
+        "block_size": 16,
+        "num_blocks": 1024,
+        "expected_per_block": 1013.060546875,
+        "chi2": 355.06095583656406,
+        "chi2_per_block": 0.3467392146841446,
+        "cv_block_counts": 0.01850051335607806,
+        "min_block_count": 936,
+        "max_block_count": 1064,
+        "empty_blocks": 0
+      }
+    }
+  },
+  {
+    "depth": 28,
+    "survivor_count": 3524586,
+    "density": 0.013130106031894684,
+    "time_s": 69.0377,
+    "fixed_bits": {
+      "num_fixed_bits": 2,
+      "fixed_bit_positions": [
+        0,
+        1
+      ],
+      "fixed_bit_values": {
+        "0": 1,
+        "1": 1
+      },
+      "fixed_mask": 3,
+      "fixed_value": 3,
+      "modulus_constraint": 3,
+      "modulus": 4
+    },
+    "raw_discrepancy": 9.985162903347611e-05,
+    "raw_discrepancy_ratio": 0.1874602580382159,
+    "conditional_discrepancy": {
+      "effective_depth": 26,
+      "effective_modulus": 67108864,
+      "num_survivors": 3524586,
+      "star_discrepancy": 9.984045316258072e-05,
+      "expected_random": 0.0005326549215200602,
+      "discrepancy_ratio": 0.18743927659142198,
+      "mean_gap": 19.040211814947913,
+      "max_gap": 210,
+      "min_gap": 1,
+      "gap_cv": 0.8469942544925628
+    },
+    "bit_entropy": {
+      "bit_entropies": [
+        {
+          "bit": 0,
+          "entropy": 0.0,
+          "p1": 1.0
+        },
+        {
+          "bit": 1,
+          "entropy": 0.0,
+          "p1": 1.0
+        },
+        {
+          "bit": 2,
+          "entropy": 0.6727500069565917,
+          "p1": 0.8233244982531281
+        },
+        {
+          "bit": 3,
+          "entropy": 0.6727500069565917,
+          "p1": 0.8233244982531281
+        },
+        {
+          "bit": 4,
+          "entropy": 0.9370252325288457,
+          "p1": 0.6466489965062563
+        },
+        {
+          "bit": 5,
+          "entropy": 0.9370252325288457,
+          "p1": 0.6466489965062563
+        },
+        {
+          "bit": 6,
+          "entropy": 0.9704588208900344,
+          "p1": 0.6008370912214939
+        },
+        {
+          "bit": 7,
+          "entropy": 0.9865686228013941,
+          "p1": 0.5681211921059665
+        },
+        {
+          "bit": 8,
+          "entropy": 0.9951837575737137,
+          "p1": 0.45916711920208503
+        },
+        {
+          "bit": 9,
+          "entropy": 0.997921853533682,
+          "p1": 0.47316933109307024
+        },
+        {
+          "bit": 10,
+          "entropy": 0.999942652790982,
+          "p1": 0.5044581122435372
+        },
+        {
+          "bit": 11,
+          "entropy": 0.9996709580058991,
+          "p1": 0.5106784172665952
+        },
+        {
+          "bit": 12,
+          "entropy": 0.9998601783360442,
+          "p1": 0.49303889875293155
+        },
+        {
+          "bit": 13,
+          "entropy": 0.9998759166812103,
+          "p1": 0.5065576496076418
+        },
+        {
+          "bit": 14,
+          "entropy": 0.9998860516629624,
+          "p1": 0.5062841423077774
+        },
+        {
+          "bit": 15,
+          "entropy": 0.9999870912288422,
+          "p1": 0.49788485796629733
+        },
+        {
+          "bit": 16,
+          "entropy": 0.9999842792636946,
+          "p1": 0.49766582514939345
+        },
+        {
+          "bit": 17,
+          "entropy": 0.9999998434422248,
+          "p1": 0.5002329351589094
+        },
+        {
+          "bit": 18,
+          "entropy": 0.9999992797104814,
+          "p1": 0.5004996331484038
+        },
+        {
+          "bit": 19,
+          "entropy": 0.9999908076065689,
+          "p1": 0.5017848904807544
+        },
+        {
+          "bit": 20,
+          "entropy": 0.9999998055398939,
+          "p1": 0.5002596049578589
+        },
+        {
+          "bit": 21,
+          "entropy": 0.9999980961567083,
+          "p1": 0.5008122939828962
+        },
+        {
+          "bit": 22,
+          "entropy": 0.9999990903381306,
+          "p1": 0.5005614843842653
+        },
+        {
+          "bit": 23,
+          "entropy": 0.9999990381281065,
+          "p1": 0.49942262722487124
+        },
+        {
+          "bit": 24,
+          "entropy": 0.9999991676813571,
+          "p1": 0.4994629156445608
+        },
+        {
+          "bit": 25,
+          "entropy": 0.9999999933662099,
+          "p1": 0.500047948893856
+        },
+        {
+          "bit": 26,
+          "entropy": 0.9999999673373927,
+          "p1": 0.5001063954745323
+        },
+        {
+          "bit": 27,
+          "entropy": 1.0,
+          "p1": 0.5
+        }
+      ],
+      "min_entropy": 0.0,
+      "mean_entropy": 0.8988884196802287,
+      "num_zero_entropy_bits": 2
+    },
+    "block_discrepancy": {
+      "4": {
+        "block_size": 4,
+        "num_blocks": 16777216,
+        "expected_per_block": 0.21008169651031494,
+        "chi2": 14894981.549604591,
+        "chi2_per_block": 0.887810084200179,
+        "cv_block_counts": 2.055729314656051,
+        "min_block_count": 0,
+        "max_block_count": 2,
+        "empty_blocks": 13425144
+      },
+      "8": {
+        "block_size": 8,
+        "num_blocks": 1048576,
+        "expected_per_block": 3.361307144165039,
+        "chi2": 711139.3857992569,
+        "chi2_per_block": 0.6781953676216668,
+        "cv_block_counts": 0.4491829988211031,
+        "min_block_count": 0,
+        "max_block_count": 12,
+        "empty_blocks": 15888
+      },
+      "12": {
+        "block_size": 12,
+        "num_blocks": 65536,
+        "expected_per_block": 53.780914306640625,
+        "chi2": 30116.341242901595,
+        "chi2_per_block": 0.4595388983597045,
+        "cv_block_counts": 0.09243725681372476,
+        "min_block_count": 35,
+        "max_block_count": 73,
+        "empty_blocks": 0
+      },
+      "16": {
+        "block_size": 16,
+        "num_blocks": 4096,
+        "expected_per_block": 860.49462890625,
+        "chi2": 1614.0018021974756,
+        "chi2_per_block": 0.3940434087396181,
+        "cv_block_counts": 0.021399220399558695,
+        "min_block_count": 789,
+        "max_block_count": 910,
+        "empty_blocks": 0
+      }
+    }
+  }
+]
