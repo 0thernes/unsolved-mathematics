@@ -43,6 +43,22 @@ Code available and dependency-free ✔ (instruments run in seconds; figure gener
 
 AI systems that produced refuted artifacts are not identified beyond operator attestation; no human subjects; the operator is the sole author and approver. Reviewer conflict declared above. The quarantined pseudo-proofs are preserved, not destroyed — necessary for the paper's evidentiary claims and for adversarial re-examination.
 
+## 5a. Second-pass QA addendum (v3 → v3.1), adversarial-angle sweep
+
+**M9 — Citation integrity defect, self-caught (CORRECTED; recorded as erratum).** v3's references [17]–[19] carried author attributions ("I. Petrov et al."; "T. J. O.") that were *not present in the sources consulted* — i.e., plausible-looking author lists supplied from pattern rather than evidence: precisely failure-class thinking in miniature, inside the paper's own back matter. v3.1 strips all unconfirmed author lists and cites by title + identifier with explicit confirmation notes. The defect and its correction are disclosed here deliberately: a paper about fabrication control that silently patched its own near-fabrication would forfeit its thesis.
+
+**M10 — Vendor-nomenclature exposure (RESOLVED).** The operator's session labels (e.g., "GPT 5.5 ExtraHigh Codex", "Quad Grok builds") may not match official product names; hostile readers could frame the roster as fabricated or as implying vendor involvement. v3.1 adds a front-matter disclaimer: labels are operator session records; no vendor reviewed, endorsed, or is associated with the work; no claim depends on vendor attribution.
+
+**M11 — AI-authorship policy exposure (RESOLVED).** v3.1 adds an ICMJE/COPE-style statement: AI systems drafted under human direction, do not meet authorship criteria, are credited as tools; the human author is solely accountable; the internal review is pre-submission QA, not peer review.
+
+**M12 — Audit-sample extrapolation risk (RESOLVED).** The 10/10 confirmation rate covers the first ten ledger claims (the best-sourced stratum), not a random sample; v3.1 adds the non-extrapolation caveat.
+
+**M13 — "Theorem" register optics (RESOLVED).** v3.1 adds a numbering-convention note: numbering asserts proof-completeness and auditability, not depth; §4 is labeled rediscovery in situ.
+
+**M14 — External-review vacuum (MITIGATED).** v3.1 adds a standing invitation to adversarial review with concrete channels (falsification routes, PubPeer-style post-publication commentary, ccchallenge machine-checking, direct correspondence) and commits refutations to the audit register.
+
+**Residual accepted risks (disclosed, not resolvable in-document):** operator-attested roster and timing (M3); single-source $2^{71}$ floor (M5); rendering portability of GitHub-flavored math/mermaid in PDF exports (readers directed to the repository as the artifact of record); and the irreducible conflict that all internal QA, including this addendum, is AI-generated under the declared conflict — externally checkable only via the falsification routes the paper itself publishes.
+
 ## 6. Verdict
 
 As a *mathematical* contribution: modest by design — verified frontier synthesis, elementary theorems, one rediscovered-with-margins lemma, honestly labeled. As a *case study in AI epistemics*: the claims are scoped, falsifiable, evidence-linked, and survive this review. **Accept**, with the standing condition that any future edit preserving the audited/unaudited boundary (M4) and the §8 interpretive scope (M2) is required for the acceptance to remain valid.

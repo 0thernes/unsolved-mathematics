@@ -5,6 +5,10 @@
 **Wall time:** ≈ 8 h, 2026-07-01. **Artifact of record:** repository `0thernes/unsolved-mathematics`, `problems/collatz-conjecture/` + `experiments/`.
 **Status of the underlying problem: OPEN. This paper proves and claims no part of the Collatz Conjecture.**
 
+**Nomenclature and endorsement disclaimer.** Model designations in the roster above are the operator's session labels as recorded during the episode; they may not correspond to official vendor product names or released model versions, and **no AI vendor (Anthropic, OpenAI, xAI, or any other) has reviewed, endorsed, or is otherwise associated with this work.** No claim in this paper depends on which vendor's system produced which artifact: every mathematical claim is grounded in committed artifacts and primary sources whose validity is model-agnostic.
+
+**Role of AI in manuscript preparation; accountability.** This manuscript was drafted and revised by AI systems under the direction, review, and approval of the human author, who is the sole accountable party for its content (cf. ICMJE/COPE norms: AI systems do not meet authorship criteria and are credited as tools). The accompanying editorial review was likewise AI-generated with a declared conflict and constitutes internal pre-submission QA, **not** independent peer review.
+
 ---
 
 ## Abstract
@@ -36,6 +40,8 @@ The **Collatz Conjecture** asserts that for every $n\in\mathbb{Z}_{>0}$ there is
 Corrections made and source-verified during the session: Simons–de Weger's bound is $m\le 75$ (not 68) [3]; Eliahou's floor paper is 1993, $\ge 17{,}087{,}915$ elements [6]; Oliveira e Silva's record-holders paper is *Math. Comp.* **68** (1999) [12]; one phantom citation removed; one duplicate collapsed.
 
 ## 3. Structural mathematics I: cylinders and the affine law
+
+*(Numbering convention: results are numbered for internal reference and auditability. "Theorem" here asserts completeness of proof at the stated level of generality, not depth; §3–§4 results are elementary, and §4's are substantially rediscoveries — see the literature paragraph in §4.)*
 
 **Theorem 3.1 (cylinder affine law).** *For $n=2^dq+r$ with $0\le r<2^d$, writing $o$ for the odd steps taken by $r$'s parity word,*
 $$T^d(2^dq+r)=3^oq+T^d(r), \qquad\text{equivalently}\qquad T^d(x)=\frac{3^o x + c(w)}{2^d},\ \ c(w)\in\mathbb{Z}_{\ge0},$$
@@ -153,7 +159,9 @@ We extract from the episode an operational evaluation, **Epistemic Discipline un
 
 **Falsifiability of headline claims.** Each principal claim names its refuter: the frontier facts of §2 are refuted by the cited primary sources reading otherwise; Theorems 3.1–5.2 are refuted by counterexample or gap exhibition (all proofs are elementary and complete as stated); the failure-class diagnoses of §6 are refuted by exhibiting a sound derivation in any quarantined document; the priority claim of §8a is refuted by a single dated prior artifact satisfying P1–P5; the §8 negative AGI assessment is refuted only by evidence outside this episode, since the episode itself contains the disqualifying F1–F4 cluster.
 
-**Threats to validity.** *Internal:* concurrent sessions could read one another's artifacts, so refutations are not blind; mitigated by primary-source grounding and control systems ($3n{-}1$) whose ground truth is independent of any session. *Construct:* "policy A/B clusters" are inferred from artifacts, not from instrumented session logs; model-to-artifact attribution is partly operator-attested. *External:* one problem, one day, one operator — EDAP generalization requires replication on other open problems and operator populations. *Selection:* the surviving lemma was also the most-reviewed artifact; survivorship under review is the intended measurement, but readers should not infer base rates from one episode.
+**Threats to validity.** *Internal:* concurrent sessions could read one another's artifacts, so refutations are not blind; mitigated by primary-source grounding and control systems ($3n{-}1$) whose ground truth is independent of any session. *Construct:* "policy A/B clusters" are inferred from artifacts, not from instrumented session logs; model-to-artifact attribution is partly operator-attested. *External:* one problem, one day, one operator — EDAP generalization requires replication on other open problems and operator populations. *Selection:* the surviving lemma was also the most-reviewed artifact; survivorship under review is the intended measurement, but readers should not infer base rates from one episode. Additionally, the 10/10 audit confirmation rate covers the *first ten claims in ledger order* (core dossier facts, the best-sourced stratum) — it is not a random sample of the 189 and must not be extrapolated to the unaudited remainder.
+
+**Invitation to adversarial review.** The authorial position is that this paper's value is proportional to the hostility of the review it survives. Specialists are invited to attack it via: the falsification routes above; post-publication commentary (e.g., PubPeer) on any claim; the Collatz Conjecture Challenge community (ccchallenge.org) for machine-checked adjudication of §3–§4; and direct correspondence to the author. Refutations will be recorded in the repository's audit register alongside the claims they refute, per the standing protocol of §7.
 
 ## 10. Conclusion
 
@@ -179,9 +187,9 @@ Eight hours of "no limits" pressure produced zero movement on Collatz and a comp
 [14] J. C. Lagarias, A. Weiss, *The 3x+1 problem: two stochastic models*, Ann. Appl. Prob. **2** (1992) 229–261.
 [15] J. H. Conway, *Unpredictable iterations*, Proc. 1972 Number Theory Conf., Boulder, 49–52.
 [16] J. C. Lagarias (ed.), *The Ultimate Challenge: The 3x+1 Problem*, AMS (2010).
-[17] I. Petrov et al., *BrokenMath: A Benchmark for Sycophancy in Theorem Proving with LLMs*, arXiv:2510.04721 (2025).
-[18] T. J. O., *The Adversarial Prover: A Skeptic's Approach to LLM-Assisted Mathematics*, research note (2026-01-02), tjoresearchnotes.wordpress.com.
-[19] *SciIntBench: Measuring LLM Compliance with Research Integrity Norms Under Adversarial Framing*, arXiv:2605.29468 (2026).
+[17] *BrokenMath: A Benchmark for Sycophancy in Theorem Proving with LLMs*, arXiv:2510.04721 (2025). (Cited by title and identifier; author list not independently confirmed at citation time.)
+[18] *The Adversarial Prover: A Skeptic's Approach to LLM-Assisted Mathematics*, research note (2026-01-02), tjoresearchnotes.wordpress.com. (Pseudonymous/blog source, cited as prior art for the designed prover–verifier configuration only.)
+[19] *SciIntBench: Measuring LLM Compliance with Research Integrity Norms Under Adversarial Framing*, arXiv:2605.29468 (2026). (Cited by title and identifier; author list not independently confirmed at citation time.)
 [20] T. Tao, *Mathematical exploration and discovery at scale*, terrytao.wordpress.com (2025-11-05).
 [21] Google DeepMind, AlphaProof / AlphaProof Nexus reporting (2024–2026), e.g. the-decoder.com coverage of Erdős-problem resolutions.
 [22] E. Y. Chang, *Exploring Collatz Dynamics with Human-LLM Collaboration*, arXiv:2603.11066 (2026).
