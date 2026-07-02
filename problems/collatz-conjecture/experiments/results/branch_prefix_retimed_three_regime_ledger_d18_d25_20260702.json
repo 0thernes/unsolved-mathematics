@@ -1,0 +1,281 @@
+{
+  "checks": {
+    "all_component_algebra_claims_true": true,
+    "all_depths_first_layer_equals_retimed_transitions": true,
+    "all_depths_layer_sum_matches_pressure_units": true,
+    "all_depths_regime_sum_matches_pressure_units": true,
+    "all_event_index_required_pairs_are_diagonal": true,
+    "all_sources_agree_on_pressure_unit_count": true,
+    "all_sources_agree_on_retimed_transition_count": true,
+    "diagonal_event_index_required_count": 16085,
+    "first_layer_equals_retimed_transitions": true,
+    "layer_sum_matches_pressure_units": true,
+    "non_diagonal_event_index_required_pairs": {},
+    "pressure_unit_counts_by_source": {
+      "active": 16085,
+      "low": 16085,
+      "post": 16085,
+      "signature": 16085
+    },
+    "regime_sum_matches_pressure_units": true,
+    "retimed_transition_counts_by_source": {
+      "active": 13856,
+      "low": 13856,
+      "post": 13856,
+      "signature": 13856
+    },
+    "signature_dynamic_claims_true": true,
+    "signature_regime_counts_match_component_totals": true
+  },
+  "depths": [
+    {
+      "above_parent_pressure_unit_count": 178,
+      "child_depth": 19,
+      "first_layer_count": 166,
+      "first_layer_equals_retimed_transitions": true,
+      "layer_counts": {
+        "1": 166,
+        "2": 10,
+        "3": 2
+      },
+      "layer_sum": 178,
+      "layer_sum_matches_pressure_units": true,
+      "parent_depth": 18,
+      "regime_counts": {
+        "active_high_ladder": 156,
+        "low_repeat": 2,
+        "post_ladder": 20
+      },
+      "regime_sum": 178,
+      "regime_sum_matches_pressure_units": true,
+      "retimed_transition_count": 166
+    },
+    {
+      "above_parent_pressure_unit_count": 147,
+      "child_depth": 20,
+      "first_layer_count": 135,
+      "first_layer_equals_retimed_transitions": true,
+      "layer_counts": {
+        "1": 135,
+        "2": 10,
+        "3": 2
+      },
+      "layer_sum": 147,
+      "layer_sum_matches_pressure_units": true,
+      "parent_depth": 19,
+      "regime_counts": {
+        "active_high_ladder": 143,
+        "low_repeat": 0,
+        "post_ladder": 4
+      },
+      "regime_sum": 147,
+      "regime_sum_matches_pressure_units": true,
+      "retimed_transition_count": 135
+    },
+    {
+      "above_parent_pressure_unit_count": 288,
+      "child_depth": 21,
+      "first_layer_count": 253,
+      "first_layer_equals_retimed_transitions": true,
+      "layer_counts": {
+        "1": 253,
+        "2": 34,
+        "3": 1
+      },
+      "layer_sum": 288,
+      "layer_sum_matches_pressure_units": true,
+      "parent_depth": 20,
+      "regime_counts": {
+        "active_high_ladder": 277,
+        "low_repeat": 1,
+        "post_ladder": 10
+      },
+      "regime_sum": 288,
+      "regime_sum_matches_pressure_units": true,
+      "retimed_transition_count": 253
+    },
+    {
+      "above_parent_pressure_unit_count": 801,
+      "child_depth": 22,
+      "first_layer_count": 719,
+      "first_layer_equals_retimed_transitions": true,
+      "layer_counts": {
+        "1": 719,
+        "2": 71,
+        "3": 10,
+        "4": 1
+      },
+      "layer_sum": 801,
+      "layer_sum_matches_pressure_units": true,
+      "parent_depth": 21,
+      "regime_counts": {
+        "active_high_ladder": 790,
+        "low_repeat": 2,
+        "post_ladder": 9
+      },
+      "regime_sum": 801,
+      "regime_sum_matches_pressure_units": true,
+      "retimed_transition_count": 719
+    },
+    {
+      "above_parent_pressure_unit_count": 1019,
+      "child_depth": 23,
+      "first_layer_count": 869,
+      "first_layer_equals_retimed_transitions": true,
+      "layer_counts": {
+        "1": 869,
+        "2": 123,
+        "3": 23,
+        "4": 4
+      },
+      "layer_sum": 1019,
+      "layer_sum_matches_pressure_units": true,
+      "parent_depth": 22,
+      "regime_counts": {
+        "active_high_ladder": 967,
+        "low_repeat": 13,
+        "post_ladder": 39
+      },
+      "regime_sum": 1019,
+      "regime_sum_matches_pressure_units": true,
+      "retimed_transition_count": 869
+    },
+    {
+      "above_parent_pressure_unit_count": 2047,
+      "child_depth": 24,
+      "first_layer_count": 1749,
+      "first_layer_equals_retimed_transitions": true,
+      "layer_counts": {
+        "1": 1749,
+        "2": 253,
+        "3": 39,
+        "4": 6
+      },
+      "layer_sum": 2047,
+      "layer_sum_matches_pressure_units": true,
+      "parent_depth": 23,
+      "regime_counts": {
+        "active_high_ladder": 1965,
+        "low_repeat": 18,
+        "post_ladder": 64
+      },
+      "regime_sum": 2047,
+      "regime_sum_matches_pressure_units": true,
+      "retimed_transition_count": 1749
+    },
+    {
+      "above_parent_pressure_unit_count": 4953,
+      "child_depth": 25,
+      "first_layer_count": 4288,
+      "first_layer_equals_retimed_transitions": true,
+      "layer_counts": {
+        "1": 4288,
+        "2": 578,
+        "3": 70,
+        "4": 15,
+        "5": 2
+      },
+      "layer_sum": 4953,
+      "layer_sum_matches_pressure_units": true,
+      "parent_depth": 24,
+      "regime_counts": {
+        "active_high_ladder": 4766,
+        "low_repeat": 27,
+        "post_ladder": 160
+      },
+      "regime_sum": 4953,
+      "regime_sum_matches_pressure_units": true,
+      "retimed_transition_count": 4288
+    },
+    {
+      "above_parent_pressure_unit_count": 6652,
+      "child_depth": 26,
+      "first_layer_count": 5677,
+      "first_layer_equals_retimed_transitions": true,
+      "layer_counts": {
+        "1": 5677,
+        "2": 834,
+        "3": 116,
+        "4": 20,
+        "5": 5
+      },
+      "layer_sum": 6652,
+      "layer_sum_matches_pressure_units": true,
+      "parent_depth": 25,
+      "regime_counts": {
+        "active_high_ladder": 6195,
+        "low_repeat": 117,
+        "post_ladder": 340
+      },
+      "regime_sum": 6652,
+      "regime_sum_matches_pressure_units": true,
+      "retimed_transition_count": 5677
+    }
+  ],
+  "source_files": {
+    "active": "experiments\\results\\branch_prefix_retimed_active_ladder_units_sweep_d18_d25_20260702.json",
+    "low": "experiments\\results\\branch_prefix_retimed_low_repeat_units_sweep_d18_d25_20260702.json",
+    "post": "experiments\\results\\branch_prefix_retimed_post_ladder_all_units_sweep_d18_d25_20260702.json",
+    "signature": "experiments\\results\\branch_prefix_retimed_signature_sweep_d18_d25_20260702.json"
+  },
+  "source_statuses": {
+    "active": "branch-prefix-retimed-active-ladder-units-sweep",
+    "low": "branch-prefix-retimed-low-repeat-units-sweep",
+    "post": "branch-prefix-retimed-post-ladder-all-units-sweep",
+    "signature": "branch-prefix-retimed-signature-depth-sweep"
+  },
+  "status": "branch-prefix-retimed-three-regime-ledger",
+  "theorem_target": {
+    "informal": "Every retimed above-parent pressure unit lies in exactly one dynamic regime; its event index equals its required-credit level above the parent; and layer 1 appears exactly once per retimed transition.",
+    "regime_formulas": {
+      "active_high_ladder": "x=2^a q-1, state=3^k 2^(a-k) q-1, word O^k",
+      "low_repeat": "x==-5 mod 64, state is OO(x) or OOEOO(x)",
+      "post_ladder": "y=3^a q-1, y==6 mod 16, state=EOO(y)=(9y+10)/8"
+    }
+  },
+  "totals": {
+    "above_parent_pressure_unit_count": 16085,
+    "event_index_required_above_parent_counts": {
+      "1:1": 13856,
+      "2:2": 1913,
+      "3:3": 263,
+      "4:4": 46,
+      "5:5": 7
+    },
+    "layer_counts": {
+      "1": 13856,
+      "2": 1913,
+      "3": 263,
+      "4": 46,
+      "5": 7
+    },
+    "layer_sum": 16085,
+    "regime_counts": {
+      "active_high_ladder": 15259,
+      "low_repeat": 180,
+      "post_ladder": 646
+    },
+    "regime_layer_matrix": {
+      "active_high_ladder": {
+        "1": 13120,
+        "2": 1835,
+        "3": 252,
+        "4": 45,
+        "5": 7
+      },
+      "low_repeat": {
+        "1": 164,
+        "2": 15,
+        "3": 1
+      },
+      "post_ladder": {
+        "1": 572,
+        "2": 63,
+        "3": 10,
+        "4": 1
+      }
+    },
+    "regime_sum": 16085,
+    "retimed_transition_count": 13856
+  }
+}

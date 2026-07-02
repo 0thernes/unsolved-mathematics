@@ -212,6 +212,17 @@ def transition_row(
     }
 
 
+def int_stats(values: list[int]) -> dict[str, object]:
+    if not values:
+        return {"count": 0, "min": None, "max": None, "avg": None}
+    return {
+        "count": len(values),
+        "min": min(values),
+        "max": max(values),
+        "avg": round_float(sum(values) / len(values)),
+    }
+
+
 def run(args: argparse.Namespace) -> dict[str, object]:
     started = perf_counter()
     parent_depth = args.parent_depth
@@ -263,12 +274,54 @@ def run(args: argparse.Namespace) -> dict[str, object]:
         if row["trace"]["threshold_lag"] is not None
     ]
     margin_at_threshold = []
+    threshold_event_counts: Counter[str] = Counter()
+    threshold_required_above_parent: list[int] = []
+    last_credit_amount_counts: Counter[str] = Counter()
+    last_credit_align_counts: Counter[str] = Counter()
+    lag_minus_credit_amount_counts: Counter[str] = Counter()
+    lag_minus_high_align_counts: Counter[str] = Counter()
+    stats_by_timing: dict[str, dict[str, list[int]]] = defaultdict(lambda: defaultdict(list))
     for row in retimed_rows:
         event = row["trace"]["first_required_above_parent"]
         if event is not None:
-            margin_at_threshold.append(int(event["surplus"]))
+            timing_class = str(row["trace"]["timing_class"])
+            surplus = int(event["surplus"])
+            threshold_lag = row["trace"]["threshold_lag"]
+            required_above_parent = int(event["required"]) - int(row["parent_required"])
+            margin_at_threshold.append(surplus)
+            threshold_required_above_parent.append(required_above_parent)
+            threshold_event_counts[str(event["event"])] += 1
+            stats_by_timing[timing_class]["surplus"].append(surplus)
+            stats_by_timing[timing_class]["required_above_parent"].append(required_above_parent)
+            if threshold_lag is not None:
+                lag = int(threshold_lag)
+                stats_by_timing[timing_class]["threshold_lag"].append(lag)
+
+            last_credit = event.get("last_credit_event")
+            if last_credit is not None:
+                kind = str(last_credit["kind"])
+                amount = int(last_credit["amount"])
+                last_credit_amount_counts[f"{kind}:{amount}"] += 1
+                stats_by_timing[timing_class]["last_credit_amount"].append(amount)
+                if threshold_lag is not None:
+                    lag = int(threshold_lag)
+                    lag_minus_credit_amount_counts[f"{kind}:{lag - amount}"] += 1
+                    stats_by_timing[timing_class]["lag_minus_credit_amount"].append(lag - amount)
+                if "align" in last_credit:
+                    align = int(last_credit["align"])
+                    last_credit_align_counts[f"{kind}:{align}"] += 1
+                    stats_by_timing[timing_class]["last_credit_align"].append(align)
+                    if threshold_lag is not None and kind == "high_ladder":
+                        lag_minus_high_align_counts[str(int(threshold_lag) - align)] += 1
 
     failures = [row for row in retimed_rows if int(row["trace"]["max_deficit"]) > 0]
+    timing_class_stats = {
+        timing_class: {
+            field: int_stats(values)
+            for field, values in sorted(fields.items())
+        }
+        for timing_class, fields in sorted(stats_by_timing.items())
+    }
 
     return {
         "status": "branch-prefix-retimed-pressure",
@@ -305,6 +358,15 @@ def run(args: argparse.Namespace) -> dict[str, object]:
         ),
         "threshold_lag_histogram": dict(sorted((str(k), v) for k, v in Counter(threshold_lag_values).items())),
         "threshold_margin_histogram": dict(sorted((str(k), v) for k, v in Counter(margin_at_threshold).items())),
+        "threshold_event_counts": dict(sorted(threshold_event_counts.items())),
+        "threshold_required_above_parent_histogram": dict(
+            sorted((str(k), v) for k, v in Counter(threshold_required_above_parent).items())
+        ),
+        "last_credit_amount_histogram": dict(sorted(last_credit_amount_counts.items())),
+        "last_credit_align_histogram": dict(sorted(last_credit_align_counts.items())),
+        "lag_minus_credit_amount_histogram": dict(sorted(lag_minus_credit_amount_counts.items())),
+        "lag_minus_high_align_histogram": dict(sorted(lag_minus_high_align_counts.items())),
+        "timing_class_stats": timing_class_stats,
         "max_threshold_lag": max(threshold_lag_values, default=None),
         "max_threshold_margin": max(margin_at_threshold, default=None),
         "min_threshold_margin": min(margin_at_threshold, default=None),

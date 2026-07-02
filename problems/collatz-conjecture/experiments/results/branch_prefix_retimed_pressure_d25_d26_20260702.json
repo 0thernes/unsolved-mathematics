@@ -3,7 +3,7 @@
     "high_ladder": 28846,
     "low_repeat": 1893
   },
-  "elapsed_seconds": 141.412101,
+  "elapsed_seconds": 118.342426,
   "failures": [],
   "frontiers": {
     "child": {
@@ -52,6 +52,36 @@
     }
   },
   "interpretation": "Finite timing audit for retimed-pressure transitions. Zero trace deficits mean every audited child had enough visible credit by the first prefix that exceeded the parent's required credit.",
+  "lag_minus_credit_amount_histogram": {
+    "high_ladder:-1": 184,
+    "high_ladder:-2": 83,
+    "high_ladder:-3": 16,
+    "high_ladder:-4": 10,
+    "high_ladder:-5": 4,
+    "high_ladder:-6": 1,
+    "high_ladder:-7": 1,
+    "high_ladder:-8": 1,
+    "high_ladder:0": 464,
+    "high_ladder:1": 1139,
+    "high_ladder:2": 3342,
+    "high_ladder:5": 320,
+    "low_repeat:1": 21,
+    "low_repeat:4": 91
+  },
+  "lag_minus_high_align_histogram": {
+    "-1": 1139,
+    "-10": 1,
+    "-2": 464,
+    "-3": 184,
+    "-4": 83,
+    "-5": 16,
+    "-6": 10,
+    "-7": 4,
+    "-8": 1,
+    "-9": 1,
+    "0": 3342,
+    "3": 320
+  },
   "largest_delta_shortfalls": [
     {
       "child": 45686527,
@@ -8272,6 +8302,50 @@
       }
     }
   ],
+  "last_credit_align_histogram": {
+    "high_ladder:10": 120,
+    "high_ladder:11": 73,
+    "high_ladder:12": 40,
+    "high_ladder:13": 17,
+    "high_ladder:14": 16,
+    "high_ladder:15": 8,
+    "high_ladder:16": 4,
+    "high_ladder:17": 4,
+    "high_ladder:18": 5,
+    "high_ladder:19": 3,
+    "high_ladder:22": 1,
+    "high_ladder:3": 1421,
+    "high_ladder:4": 1383,
+    "high_ladder:5": 1000,
+    "high_ladder:6": 580,
+    "high_ladder:7": 415,
+    "high_ladder:8": 284,
+    "high_ladder:9": 191,
+    "low_repeat:6": 90,
+    "low_repeat:7": 20,
+    "low_repeat:8": 2
+  },
+  "last_credit_amount_histogram": {
+    "high_ladder:1": 1421,
+    "high_ladder:10": 40,
+    "high_ladder:11": 17,
+    "high_ladder:12": 16,
+    "high_ladder:13": 8,
+    "high_ladder:14": 4,
+    "high_ladder:15": 4,
+    "high_ladder:16": 5,
+    "high_ladder:17": 3,
+    "high_ladder:2": 1383,
+    "high_ladder:20": 1,
+    "high_ladder:3": 1000,
+    "high_ladder:4": 580,
+    "high_ladder:5": 415,
+    "high_ladder:6": 284,
+    "high_ladder:7": 191,
+    "high_ladder:8": 120,
+    "high_ladder:9": 73,
+    "low_repeat:1": 112
+  },
   "max_threshold_lag": 19,
   "max_threshold_margin": 25,
   "max_trace_deficit": 0,
@@ -8289,6 +8363,10 @@
   "retimed_failure_count": 0,
   "retimed_pressure_count": 5677,
   "status": "branch-prefix-retimed-pressure",
+  "threshold_event_counts": {
+    "high_ladder_step": 5245,
+    "ordinary_step": 432
+  },
   "threshold_lag_histogram": {
     "10": 88,
     "11": 52,
@@ -8335,8 +8413,89 @@
     "8": 1002,
     "9": 788
   },
+  "threshold_required_above_parent_histogram": {
+    "1": 5677
+  },
   "timing_class_counts": {
     "prior_high_ladder": 5565,
     "prior_low_repeat": 112
+  },
+  "timing_class_stats": {
+    "prior_high_ladder": {
+      "lag_minus_credit_amount": {
+        "avg": 1.607187781,
+        "count": 5565,
+        "max": 5,
+        "min": -8
+      },
+      "last_credit_align": {
+        "avg": 5.124887691,
+        "count": 5565,
+        "max": 22,
+        "min": 3
+      },
+      "last_credit_amount": {
+        "avg": 3.124887691,
+        "count": 5565,
+        "max": 20,
+        "min": 1
+      },
+      "required_above_parent": {
+        "avg": 1.0,
+        "count": 5565,
+        "max": 1,
+        "min": 1
+      },
+      "surplus": {
+        "avg": 8.386163522,
+        "count": 5565,
+        "max": 25,
+        "min": 2
+      },
+      "threshold_lag": {
+        "avg": 4.732075472,
+        "count": 5565,
+        "max": 19,
+        "min": 2
+      }
+    },
+    "prior_low_repeat": {
+      "lag_minus_credit_amount": {
+        "avg": 3.4375,
+        "count": 112,
+        "max": 4,
+        "min": 1
+      },
+      "last_credit_align": {
+        "avg": 6.214285714,
+        "count": 112,
+        "max": 8,
+        "min": 6
+      },
+      "last_credit_amount": {
+        "avg": 1.0,
+        "count": 112,
+        "max": 1,
+        "min": 1
+      },
+      "required_above_parent": {
+        "avg": 1.0,
+        "count": 112,
+        "max": 1,
+        "min": 1
+      },
+      "surplus": {
+        "avg": 7.142857143,
+        "count": 112,
+        "max": 22,
+        "min": 4
+      },
+      "threshold_lag": {
+        "avg": 4.4375,
+        "count": 112,
+        "max": 5,
+        "min": 2
+      }
+    }
   }
 }

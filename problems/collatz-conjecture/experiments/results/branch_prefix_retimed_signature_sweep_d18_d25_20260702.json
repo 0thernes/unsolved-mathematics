@@ -1,0 +1,469 @@
+{
+  "checks": {
+    "all_depths_no_pure_retimed_residue_buckets": true,
+    "all_depths_post_tail_equals_high_ladder_plus_three": true,
+    "pure_feature_claims_all_depths": {
+      "all_first_pressure_units_are_one_unit": true,
+      "all_pressure_units_are_upper_lift_child": true,
+      "all_pressure_units_have_positive_surplus": true,
+      "all_pressure_units_have_prior_credit": true,
+      "all_retimed_children_are_high_assisted": true,
+      "all_retimed_transitions_are_upper_lift_child": true,
+      "all_retimed_transitions_have_first_pressure_unit": true
+    },
+    "total_pressure_units": 16085,
+    "total_retimed_transitions": 13856
+  },
+  "depths": [
+    {
+      "cached": true,
+      "child_depth": 19,
+      "child_live_count": 14990,
+      "first_pressure_unit_count": 166,
+      "first_required_above_parent_histogram": {
+        "1": 166
+      },
+      "high_ladder_lag_minus_align_max": 3,
+      "high_ladder_lag_minus_align_min": -5,
+      "last_credit_kind_counts": {
+        "high_ladder": 176,
+        "low_repeat": 2
+      },
+      "max_modulus_residue_purity": {
+        "mixed_buckets": 162,
+        "modulus": 65536,
+        "occupied_buckets": 2114,
+        "pure_retimed_buckets": 0,
+        "retimed_buckets": 162,
+        "retimed_pure_bucket_fraction": 0.0
+      },
+      "no_pure_retimed_residue_buckets": true,
+      "parent_depth": 18,
+      "parent_live_count": 7495,
+      "positive_pressure_transition_count": 1398,
+      "post_tail_equals_high_ladder_plus_three": true,
+      "pressure_event_counts": {
+        "high_ladder_step": 156,
+        "ordinary_step": 22
+      },
+      "pressure_regime_counts": {
+        "high_after_ladder_window": 20,
+        "high_inside_active_ladder": 156,
+        "low_repeat_prepaid": 2
+      },
+      "pressure_unit_count": 178,
+      "pure_feature_claims": {
+        "all_first_pressure_units_are_one_unit": true,
+        "all_pressure_units_are_upper_lift_child": true,
+        "all_pressure_units_have_positive_surplus": true,
+        "all_pressure_units_have_prior_credit": true,
+        "all_retimed_children_are_high_assisted": true,
+        "all_retimed_transitions_are_upper_lift_child": true,
+        "all_retimed_transitions_have_first_pressure_unit": true
+      },
+      "required_above_parent_histogram": {
+        "1": 166,
+        "2": 10,
+        "3": 2
+      },
+      "retimed_transition_count": 166
+    },
+    {
+      "cached": true,
+      "child_depth": 20,
+      "child_live_count": 27328,
+      "first_pressure_unit_count": 135,
+      "first_required_above_parent_histogram": {
+        "1": 135
+      },
+      "high_ladder_lag_minus_align_max": 3,
+      "high_ladder_lag_minus_align_min": -4,
+      "last_credit_kind_counts": {
+        "high_ladder": 147
+      },
+      "max_modulus_residue_purity": {
+        "mixed_buckets": 127,
+        "modulus": 65536,
+        "occupied_buckets": 2114,
+        "pure_retimed_buckets": 0,
+        "retimed_buckets": 127,
+        "retimed_pure_bucket_fraction": 0.0
+      },
+      "no_pure_retimed_residue_buckets": true,
+      "parent_depth": 19,
+      "parent_live_count": 14990,
+      "positive_pressure_transition_count": 1950,
+      "post_tail_equals_high_ladder_plus_three": true,
+      "pressure_event_counts": {
+        "high_ladder_step": 143,
+        "ordinary_step": 4
+      },
+      "pressure_regime_counts": {
+        "high_after_ladder_window": 4,
+        "high_inside_active_ladder": 143
+      },
+      "pressure_unit_count": 147,
+      "pure_feature_claims": {
+        "all_first_pressure_units_are_one_unit": true,
+        "all_pressure_units_are_upper_lift_child": true,
+        "all_pressure_units_have_positive_surplus": true,
+        "all_pressure_units_have_prior_credit": true,
+        "all_retimed_children_are_high_assisted": true,
+        "all_retimed_transitions_are_upper_lift_child": true,
+        "all_retimed_transitions_have_first_pressure_unit": true
+      },
+      "required_above_parent_histogram": {
+        "1": 135,
+        "2": 10,
+        "3": 2
+      },
+      "retimed_transition_count": 135
+    },
+    {
+      "cached": true,
+      "child_depth": 21,
+      "child_live_count": 46611,
+      "first_pressure_unit_count": 253,
+      "first_required_above_parent_histogram": {
+        "1": 253
+      },
+      "high_ladder_lag_minus_align_max": 3,
+      "high_ladder_lag_minus_align_min": -5,
+      "last_credit_kind_counts": {
+        "high_ladder": 287,
+        "low_repeat": 1
+      },
+      "max_modulus_residue_purity": {
+        "mixed_buckets": 230,
+        "modulus": 65536,
+        "occupied_buckets": 2114,
+        "pure_retimed_buckets": 0,
+        "retimed_buckets": 230,
+        "retimed_pure_bucket_fraction": 0.0
+      },
+      "no_pure_retimed_residue_buckets": true,
+      "parent_depth": 20,
+      "parent_live_count": 27328,
+      "positive_pressure_transition_count": 3705,
+      "post_tail_equals_high_ladder_plus_three": true,
+      "pressure_event_counts": {
+        "high_ladder_step": 277,
+        "ordinary_step": 11
+      },
+      "pressure_regime_counts": {
+        "high_after_ladder_window": 10,
+        "high_inside_active_ladder": 277,
+        "low_repeat_prepaid": 1
+      },
+      "pressure_unit_count": 288,
+      "pure_feature_claims": {
+        "all_first_pressure_units_are_one_unit": true,
+        "all_pressure_units_are_upper_lift_child": true,
+        "all_pressure_units_have_positive_surplus": true,
+        "all_pressure_units_have_prior_credit": true,
+        "all_retimed_children_are_high_assisted": true,
+        "all_retimed_transitions_are_upper_lift_child": true,
+        "all_retimed_transitions_have_first_pressure_unit": true
+      },
+      "required_above_parent_histogram": {
+        "1": 253,
+        "2": 34,
+        "3": 1
+      },
+      "retimed_transition_count": 253
+    },
+    {
+      "cached": true,
+      "child_depth": 22,
+      "child_live_count": 93222,
+      "first_pressure_unit_count": 719,
+      "first_required_above_parent_histogram": {
+        "1": 719
+      },
+      "high_ladder_lag_minus_align_max": 3,
+      "high_ladder_lag_minus_align_min": -7,
+      "last_credit_kind_counts": {
+        "high_ladder": 799,
+        "low_repeat": 2
+      },
+      "max_modulus_residue_purity": {
+        "mixed_buckets": 594,
+        "modulus": 65536,
+        "occupied_buckets": 2114,
+        "pure_retimed_buckets": 0,
+        "retimed_buckets": 594,
+        "retimed_pure_bucket_fraction": 0.0
+      },
+      "no_pure_retimed_residue_buckets": true,
+      "parent_depth": 21,
+      "parent_live_count": 46611,
+      "positive_pressure_transition_count": 7217,
+      "post_tail_equals_high_ladder_plus_three": true,
+      "pressure_event_counts": {
+        "high_ladder_step": 790,
+        "ordinary_step": 11
+      },
+      "pressure_regime_counts": {
+        "high_after_ladder_window": 9,
+        "high_inside_active_ladder": 790,
+        "low_repeat_prepaid": 2
+      },
+      "pressure_unit_count": 801,
+      "pure_feature_claims": {
+        "all_first_pressure_units_are_one_unit": true,
+        "all_pressure_units_are_upper_lift_child": true,
+        "all_pressure_units_have_positive_surplus": true,
+        "all_pressure_units_have_prior_credit": true,
+        "all_retimed_children_are_high_assisted": true,
+        "all_retimed_transitions_are_upper_lift_child": true,
+        "all_retimed_transitions_have_first_pressure_unit": true
+      },
+      "required_above_parent_histogram": {
+        "1": 719,
+        "2": 71,
+        "3": 10,
+        "4": 1
+      },
+      "retimed_transition_count": 719
+    },
+    {
+      "cached": true,
+      "child_depth": 23,
+      "child_live_count": 168807,
+      "first_pressure_unit_count": 869,
+      "first_required_above_parent_histogram": {
+        "1": 869
+      },
+      "high_ladder_lag_minus_align_max": 3,
+      "high_ladder_lag_minus_align_min": -9,
+      "last_credit_kind_counts": {
+        "high_ladder": 1006,
+        "low_repeat": 13
+      },
+      "max_modulus_residue_purity": {
+        "mixed_buckets": 664,
+        "modulus": 65536,
+        "occupied_buckets": 2114,
+        "pure_retimed_buckets": 0,
+        "retimed_buckets": 664,
+        "retimed_pure_bucket_fraction": 0.0
+      },
+      "no_pure_retimed_residue_buckets": true,
+      "parent_depth": 22,
+      "parent_live_count": 93222,
+      "positive_pressure_transition_count": 11438,
+      "post_tail_equals_high_ladder_plus_three": true,
+      "pressure_event_counts": {
+        "high_ladder_step": 967,
+        "ordinary_step": 52
+      },
+      "pressure_regime_counts": {
+        "high_after_ladder_window": 39,
+        "high_inside_active_ladder": 967,
+        "low_repeat_prepaid": 13
+      },
+      "pressure_unit_count": 1019,
+      "pure_feature_claims": {
+        "all_first_pressure_units_are_one_unit": true,
+        "all_pressure_units_are_upper_lift_child": true,
+        "all_pressure_units_have_positive_surplus": true,
+        "all_pressure_units_have_prior_credit": true,
+        "all_retimed_children_are_high_assisted": true,
+        "all_retimed_transitions_are_upper_lift_child": true,
+        "all_retimed_transitions_have_first_pressure_unit": true
+      },
+      "required_above_parent_histogram": {
+        "1": 869,
+        "2": 123,
+        "3": 23,
+        "4": 4
+      },
+      "retimed_transition_count": 869
+    },
+    {
+      "cached": true,
+      "child_depth": 24,
+      "child_live_count": 286581,
+      "first_pressure_unit_count": 1749,
+      "first_required_above_parent_histogram": {
+        "1": 1749
+      },
+      "high_ladder_lag_minus_align_max": 3,
+      "high_ladder_lag_minus_align_min": -8,
+      "last_credit_kind_counts": {
+        "high_ladder": 2029,
+        "low_repeat": 18
+      },
+      "max_modulus_residue_purity": {
+        "mixed_buckets": 1062,
+        "modulus": 65536,
+        "occupied_buckets": 2114,
+        "pure_retimed_buckets": 0,
+        "retimed_buckets": 1062,
+        "retimed_pure_bucket_fraction": 0.0
+      },
+      "no_pure_retimed_residue_buckets": true,
+      "parent_depth": 23,
+      "parent_live_count": 168807,
+      "positive_pressure_transition_count": 22122,
+      "post_tail_equals_high_ladder_plus_three": true,
+      "pressure_event_counts": {
+        "high_ladder_step": 1965,
+        "ordinary_step": 82
+      },
+      "pressure_regime_counts": {
+        "high_after_ladder_window": 64,
+        "high_inside_active_ladder": 1965,
+        "low_repeat_prepaid": 18
+      },
+      "pressure_unit_count": 2047,
+      "pure_feature_claims": {
+        "all_first_pressure_units_are_one_unit": true,
+        "all_pressure_units_are_upper_lift_child": true,
+        "all_pressure_units_have_positive_surplus": true,
+        "all_pressure_units_have_prior_credit": true,
+        "all_retimed_children_are_high_assisted": true,
+        "all_retimed_transitions_are_upper_lift_child": true,
+        "all_retimed_transitions_have_first_pressure_unit": true
+      },
+      "required_above_parent_histogram": {
+        "1": 1749,
+        "2": 253,
+        "3": 39,
+        "4": 6
+      },
+      "retimed_transition_count": 1749
+    },
+    {
+      "cached": true,
+      "child_depth": 25,
+      "child_live_count": 573162,
+      "first_pressure_unit_count": 4288,
+      "first_required_above_parent_histogram": {
+        "1": 4288
+      },
+      "high_ladder_lag_minus_align_max": 3,
+      "high_ladder_lag_minus_align_min": -8,
+      "last_credit_kind_counts": {
+        "high_ladder": 4926,
+        "low_repeat": 27
+      },
+      "max_modulus_residue_purity": {
+        "mixed_buckets": 1666,
+        "modulus": 65536,
+        "occupied_buckets": 2114,
+        "pure_retimed_buckets": 0,
+        "retimed_buckets": 1666,
+        "retimed_pure_bucket_fraction": 0.0
+      },
+      "no_pure_retimed_residue_buckets": true,
+      "parent_depth": 24,
+      "parent_live_count": 286581,
+      "positive_pressure_transition_count": 41509,
+      "post_tail_equals_high_ladder_plus_three": true,
+      "pressure_event_counts": {
+        "high_ladder_step": 4766,
+        "ordinary_step": 187
+      },
+      "pressure_regime_counts": {
+        "high_after_ladder_window": 160,
+        "high_inside_active_ladder": 4766,
+        "low_repeat_prepaid": 27
+      },
+      "pressure_unit_count": 4953,
+      "pure_feature_claims": {
+        "all_first_pressure_units_are_one_unit": true,
+        "all_pressure_units_are_upper_lift_child": true,
+        "all_pressure_units_have_positive_surplus": true,
+        "all_pressure_units_have_prior_credit": true,
+        "all_retimed_children_are_high_assisted": true,
+        "all_retimed_transitions_are_upper_lift_child": true,
+        "all_retimed_transitions_have_first_pressure_unit": true
+      },
+      "required_above_parent_histogram": {
+        "1": 4288,
+        "2": 578,
+        "3": 70,
+        "4": 15,
+        "5": 2
+      },
+      "retimed_transition_count": 4288
+    },
+    {
+      "cached": true,
+      "child_depth": 26,
+      "child_live_count": 1037374,
+      "first_pressure_unit_count": 5677,
+      "first_required_above_parent_histogram": {
+        "1": 5677
+      },
+      "high_ladder_lag_minus_align_max": 3,
+      "high_ladder_lag_minus_align_min": -10,
+      "last_credit_kind_counts": {
+        "high_ladder": 6535,
+        "low_repeat": 117
+      },
+      "max_modulus_residue_purity": {
+        "mixed_buckets": 1740,
+        "modulus": 65536,
+        "occupied_buckets": 2114,
+        "pure_retimed_buckets": 0,
+        "retimed_buckets": 1740,
+        "retimed_pure_bucket_fraction": 0.0
+      },
+      "no_pure_retimed_residue_buckets": true,
+      "parent_depth": 25,
+      "parent_live_count": 573162,
+      "positive_pressure_transition_count": 71321,
+      "post_tail_equals_high_ladder_plus_three": true,
+      "pressure_event_counts": {
+        "high_ladder_step": 6195,
+        "ordinary_step": 457
+      },
+      "pressure_regime_counts": {
+        "high_after_ladder_window": 340,
+        "high_inside_active_ladder": 6195,
+        "low_repeat_prepaid": 117
+      },
+      "pressure_unit_count": 6652,
+      "pure_feature_claims": {
+        "all_first_pressure_units_are_one_unit": true,
+        "all_pressure_units_are_upper_lift_child": true,
+        "all_pressure_units_have_positive_surplus": true,
+        "all_pressure_units_have_prior_credit": true,
+        "all_retimed_children_are_high_assisted": true,
+        "all_retimed_transitions_are_upper_lift_child": true,
+        "all_retimed_transitions_have_first_pressure_unit": true
+      },
+      "required_above_parent_histogram": {
+        "1": 5677,
+        "2": 834,
+        "3": 116,
+        "4": 20,
+        "5": 5
+      },
+      "retimed_transition_count": 5677
+    }
+  ],
+  "parameters": {
+    "cache_template": "experiments/results/branch_prefix_retimed_signature_d{parent_depth}_d{child_depth}_20260702.json",
+    "max_depth": 1024,
+    "max_parent_depth": 25,
+    "max_steps": 50000,
+    "min_parent_depth": 18,
+    "refresh": false,
+    "residue_moduli": [
+      "16",
+      "64",
+      "256",
+      "1024",
+      "4096",
+      "65536"
+    ],
+    "residue_top_n": 8,
+    "top_n": 3,
+    "use_cache": true,
+    "write_depth_cache": false
+  },
+  "status": "branch-prefix-retimed-signature-depth-sweep"
+}

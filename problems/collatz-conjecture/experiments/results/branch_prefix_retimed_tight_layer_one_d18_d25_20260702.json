@@ -1,0 +1,810 @@
+{
+  "checks": {
+    "all_active_selected_match_terminal_ladder_formula": true,
+    "all_post_selected_match_EOO_terminal_6_mod_16": true,
+    "all_selected_are_layer_one": true,
+    "all_selected_are_upper_child": true,
+    "all_selected_have_align_3": true,
+    "all_selected_have_credit_3_required_2_credit_above_parent_2": true,
+    "all_selected_have_high_ladder_credit": true,
+    "all_selected_have_parent_required_1": true,
+    "all_selected_have_required_delta_1": true,
+    "all_selected_have_step_offset_1": true,
+    "all_selected_have_zero_transition_credit_delta": true,
+    "selected_count": 5
+  },
+  "counts": {
+    "child_bit_counts": {
+      "1": 5
+    },
+    "child_required_counts": {
+      "2": 5
+    },
+    "credit_above_parent_counts": {
+      "2": 5
+    },
+    "credit_counts": {
+      "3": 5
+    },
+    "credit_delta_counts": {
+      "0": 5
+    },
+    "event_counts": {
+      "high_ladder_step": 3,
+      "ordinary_step": 2
+    },
+    "lag_from_credit_counts": {
+      "3": 3,
+      "6": 2
+    },
+    "lag_minus_align_counts": {
+      "0": 3,
+      "3": 2
+    },
+    "last_credit_align_counts": {
+      "3": 5
+    },
+    "parent_depth_counts": {
+      "18": 3,
+      "21": 2
+    },
+    "parent_required_counts": {
+      "1": 5
+    },
+    "post_word_counts": {
+      "<active>": 3,
+      "EOO": 2
+    },
+    "q_mod_16_counts": {
+      "3": 2,
+      "5": 2,
+      "7": 1
+    },
+    "regime_counts": {
+      "high_after_ladder_window": 2,
+      "high_inside_active_ladder": 3
+    },
+    "required_counts": {
+      "2": 5
+    },
+    "required_delta_counts": {
+      "1": 5
+    },
+    "step_offset_counts": {
+      "1": 5
+    },
+    "terminal_mod_16_counts": {
+      "0": 2,
+      "12": 1,
+      "6": 2
+    }
+  },
+  "depths": [
+    {
+      "above_parent_pressure_unit_count": 178,
+      "child_depth": 19,
+      "parent_depth": 18,
+      "retimed_transition_count": 166,
+      "selected_count": 3
+    },
+    {
+      "above_parent_pressure_unit_count": 147,
+      "child_depth": 20,
+      "parent_depth": 19,
+      "retimed_transition_count": 135,
+      "selected_count": 0
+    },
+    {
+      "above_parent_pressure_unit_count": 288,
+      "child_depth": 21,
+      "parent_depth": 20,
+      "retimed_transition_count": 253,
+      "selected_count": 0
+    },
+    {
+      "above_parent_pressure_unit_count": 801,
+      "child_depth": 22,
+      "parent_depth": 21,
+      "retimed_transition_count": 719,
+      "selected_count": 2
+    },
+    {
+      "above_parent_pressure_unit_count": 1019,
+      "child_depth": 23,
+      "parent_depth": 22,
+      "retimed_transition_count": 869,
+      "selected_count": 0
+    },
+    {
+      "above_parent_pressure_unit_count": 2047,
+      "child_depth": 24,
+      "parent_depth": 23,
+      "retimed_transition_count": 1749,
+      "selected_count": 0
+    },
+    {
+      "above_parent_pressure_unit_count": 4953,
+      "child_depth": 25,
+      "parent_depth": 24,
+      "retimed_transition_count": 4288,
+      "selected_count": 0
+    },
+    {
+      "above_parent_pressure_unit_count": 6652,
+      "child_depth": 26,
+      "parent_depth": 25,
+      "retimed_transition_count": 5677,
+      "selected_count": 0
+    }
+  ],
+  "parameters": {
+    "layer": 1,
+    "max_depth": 1024,
+    "max_parent_depth": 25,
+    "max_steps": 50000,
+    "min_parent_depth": 18,
+    "surplus": 1
+  },
+  "records": [
+    {
+      "active_formula_matches": true,
+      "child": 263259,
+      "child_bit": 1,
+      "child_depth": 19,
+      "child_required": 2,
+      "child_residues": {
+        "1024": 91,
+        "128": 91,
+        "16": 11,
+        "256": 91,
+        "32": 27,
+        "4096": 1115,
+        "512": 91,
+        "64": 27,
+        "65536": 1115
+      },
+      "credit": 3,
+      "credit_above_parent": 2,
+      "credit_delta": 0,
+      "entry_residues": {
+        "1024": 951,
+        "128": 55,
+        "16": 7,
+        "256": 183,
+        "32": 23,
+        "4096": 2999,
+        "512": 439,
+        "64": 55,
+        "65536": 56247
+      },
+      "event": "high_ladder_step",
+      "event_index": 1,
+      "expected_active_state": 2401676,
+      "ladder_word": "OOO",
+      "lag_from_credit": 3,
+      "lag_minus_align": 0,
+      "last_credit_align": 3,
+      "last_credit_kind": "high_ladder",
+      "last_credit_state": 711607,
+      "last_credit_step": 16,
+      "parent": 1115,
+      "parent_depth": 18,
+      "parent_required": 1,
+      "parent_residues": {
+        "1024": 91,
+        "128": 91,
+        "16": 11,
+        "256": 91,
+        "32": 27,
+        "4096": 1115,
+        "512": 91,
+        "64": 27,
+        "65536": 1115
+      },
+      "post_formula_matches": null,
+      "post_formula_value": null,
+      "post_lag": 0,
+      "post_state": 2401676,
+      "post_word": "",
+      "q": 88951,
+      "q_mod_16": 7,
+      "q_mod_8": 7,
+      "regime": "high_inside_active_ladder",
+      "required": 2,
+      "required_above_parent": 1,
+      "required_delta": 1,
+      "state": 2401676,
+      "state_residues": {
+        "1024": 396,
+        "128": 12,
+        "16": 12,
+        "256": 140,
+        "32": 12,
+        "4096": 1420,
+        "512": 396,
+        "64": 12,
+        "65536": 42380
+      },
+      "step": 19,
+      "step_offset_from_parent_depth": 1,
+      "surplus": 1,
+      "terminal": 2401676,
+      "terminal_matches_simulation": true,
+      "terminal_mod_16": 12,
+      "terminal_mod_64": 12
+    },
+    {
+      "active_formula_matches": null,
+      "child": 327751,
+      "child_bit": 1,
+      "child_depth": 19,
+      "child_required": 2,
+      "child_residues": {
+        "1024": 71,
+        "128": 71,
+        "16": 7,
+        "256": 71,
+        "32": 7,
+        "4096": 71,
+        "512": 71,
+        "64": 7,
+        "65536": 71
+      },
+      "credit": 3,
+      "credit_above_parent": 2,
+      "credit_delta": 0,
+      "entry_residues": {
+        "1024": 39,
+        "128": 39,
+        "16": 7,
+        "256": 39,
+        "32": 7,
+        "4096": 1063,
+        "512": 39,
+        "64": 39,
+        "65536": 1063
+      },
+      "event": "ordinary_step",
+      "event_index": 1,
+      "expected_active_state": null,
+      "ladder_word": "OOO",
+      "lag_from_credit": 6,
+      "lag_minus_align": 3,
+      "last_credit_align": 3,
+      "last_credit_kind": "high_ladder",
+      "last_credit_state": 787495,
+      "last_credit_step": 13,
+      "parent": 65607,
+      "parent_depth": 18,
+      "parent_required": 1,
+      "parent_residues": {
+        "1024": 71,
+        "128": 71,
+        "16": 7,
+        "256": 71,
+        "32": 7,
+        "4096": 71,
+        "512": 71,
+        "64": 7,
+        "65536": 71
+      },
+      "post_formula_matches": true,
+      "post_formula_value": 2990024,
+      "post_lag": 3,
+      "post_state": 2990024,
+      "post_word": "EOO",
+      "q": 98437,
+      "q_mod_16": 5,
+      "q_mod_8": 5,
+      "regime": "high_after_ladder_window",
+      "required": 2,
+      "required_above_parent": 1,
+      "required_delta": 1,
+      "state": 2990024,
+      "state_residues": {
+        "1024": 968,
+        "128": 72,
+        "16": 8,
+        "256": 200,
+        "32": 8,
+        "4096": 4040,
+        "512": 456,
+        "64": 8,
+        "65536": 40904
+      },
+      "step": 19,
+      "step_offset_from_parent_depth": 1,
+      "surplus": 1,
+      "terminal": 2657798,
+      "terminal_matches_simulation": true,
+      "terminal_mod_16": 6,
+      "terminal_mod_64": 6
+    },
+    {
+      "active_formula_matches": null,
+      "child": 508507,
+      "child_bit": 1,
+      "child_depth": 19,
+      "child_required": 2,
+      "child_residues": {
+        "1024": 603,
+        "128": 91,
+        "16": 11,
+        "256": 91,
+        "32": 27,
+        "4096": 603,
+        "512": 91,
+        "64": 27,
+        "65536": 49755
+      },
+      "credit": 3,
+      "credit_above_parent": 2,
+      "credit_delta": 0,
+      "entry_residues": {
+        "1024": 167,
+        "128": 39,
+        "16": 7,
+        "256": 167,
+        "32": 7,
+        "4096": 1191,
+        "512": 167,
+        "64": 39,
+        "65536": 42151
+      },
+      "event": "ordinary_step",
+      "event_index": 1,
+      "expected_active_state": null,
+      "ladder_word": "OOO",
+      "lag_from_credit": 6,
+      "lag_minus_align": 3,
+      "last_credit_align": 3,
+      "last_credit_kind": "high_ladder",
+      "last_credit_state": 1221799,
+      "last_credit_step": 13,
+      "parent": 246363,
+      "parent_depth": 18,
+      "parent_required": 1,
+      "parent_residues": {
+        "1024": 603,
+        "128": 91,
+        "16": 11,
+        "256": 91,
+        "32": 27,
+        "4096": 603,
+        "512": 91,
+        "64": 27,
+        "65536": 49755
+      },
+      "post_formula_matches": true,
+      "post_formula_value": 4639022,
+      "post_lag": 3,
+      "post_state": 4639022,
+      "post_word": "EOO",
+      "q": 152725,
+      "q_mod_16": 5,
+      "q_mod_8": 5,
+      "regime": "high_after_ladder_window",
+      "required": 2,
+      "required_above_parent": 1,
+      "required_delta": 1,
+      "state": 4639022,
+      "state_residues": {
+        "1024": 302,
+        "128": 46,
+        "16": 14,
+        "256": 46,
+        "32": 14,
+        "4096": 2350,
+        "512": 302,
+        "64": 46,
+        "65536": 51502
+      },
+      "step": 19,
+      "step_offset_from_parent_depth": 1,
+      "surplus": 1,
+      "terminal": 4123574,
+      "terminal_matches_simulation": true,
+      "terminal_mod_16": 6,
+      "terminal_mod_64": 54
+    },
+    {
+      "active_formula_matches": true,
+      "child": 3524443,
+      "child_bit": 1,
+      "child_depth": 22,
+      "child_required": 2,
+      "child_residues": {
+        "1024": 859,
+        "128": 91,
+        "16": 11,
+        "256": 91,
+        "32": 27,
+        "4096": 1883,
+        "512": 347,
+        "64": 27,
+        "65536": 51035
+      },
+      "credit": 3,
+      "credit_above_parent": 2,
+      "credit_delta": 0,
+      "entry_residues": {
+        "1024": 407,
+        "128": 23,
+        "16": 7,
+        "256": 151,
+        "32": 23,
+        "4096": 2455,
+        "512": 407,
+        "64": 23,
+        "65536": 35223
+      },
+      "event": "high_ladder_step",
+      "event_index": 1,
+      "expected_active_state": 36171872,
+      "ladder_word": "OOO",
+      "lag_from_credit": 3,
+      "lag_minus_align": 0,
+      "last_credit_align": 3,
+      "last_credit_kind": "high_ladder",
+      "last_credit_state": 10717591,
+      "last_credit_step": 19,
+      "parent": 1427291,
+      "parent_depth": 21,
+      "parent_required": 1,
+      "parent_residues": {
+        "1024": 859,
+        "128": 91,
+        "16": 11,
+        "256": 91,
+        "32": 27,
+        "4096": 1883,
+        "512": 347,
+        "64": 27,
+        "65536": 51035
+      },
+      "post_formula_matches": null,
+      "post_formula_value": null,
+      "post_lag": 0,
+      "post_state": 36171872,
+      "post_word": "",
+      "q": 1339699,
+      "q_mod_16": 3,
+      "q_mod_8": 3,
+      "regime": "high_inside_active_ladder",
+      "required": 2,
+      "required_above_parent": 1,
+      "required_delta": 1,
+      "state": 36171872,
+      "state_residues": {
+        "1024": 96,
+        "128": 96,
+        "16": 0,
+        "256": 96,
+        "32": 0,
+        "4096": 96,
+        "512": 96,
+        "64": 32,
+        "65536": 61536
+      },
+      "step": 22,
+      "step_offset_from_parent_depth": 1,
+      "surplus": 1,
+      "terminal": 36171872,
+      "terminal_matches_simulation": true,
+      "terminal_mod_16": 0,
+      "terminal_mod_64": 32
+    },
+    {
+      "active_formula_matches": true,
+      "child": 3734695,
+      "child_bit": 1,
+      "child_depth": 22,
+      "child_required": 2,
+      "child_residues": {
+        "1024": 167,
+        "128": 39,
+        "16": 7,
+        "256": 167,
+        "32": 7,
+        "4096": 3239,
+        "512": 167,
+        "64": 39,
+        "65536": 64679
+      },
+      "credit": 3,
+      "credit_above_parent": 2,
+      "credit_delta": 0,
+      "entry_residues": {
+        "1024": 791,
+        "128": 23,
+        "16": 7,
+        "256": 23,
+        "32": 23,
+        "4096": 2839,
+        "512": 279,
+        "64": 23,
+        "65536": 19223
+      },
+      "event": "high_ladder_step",
+      "event_index": 1,
+      "expected_active_state": 38329712,
+      "ladder_word": "OOO",
+      "lag_from_credit": 3,
+      "lag_minus_align": 0,
+      "last_credit_align": 3,
+      "last_credit_kind": "high_ladder",
+      "last_credit_state": 11356951,
+      "last_credit_step": 19,
+      "parent": 1637543,
+      "parent_depth": 21,
+      "parent_required": 1,
+      "parent_residues": {
+        "1024": 167,
+        "128": 39,
+        "16": 7,
+        "256": 167,
+        "32": 7,
+        "4096": 3239,
+        "512": 167,
+        "64": 39,
+        "65536": 64679
+      },
+      "post_formula_matches": null,
+      "post_formula_value": null,
+      "post_lag": 0,
+      "post_state": 38329712,
+      "post_word": "",
+      "q": 1419619,
+      "q_mod_16": 3,
+      "q_mod_8": 3,
+      "regime": "high_inside_active_ladder",
+      "required": 2,
+      "required_above_parent": 1,
+      "required_delta": 1,
+      "state": 38329712,
+      "state_residues": {
+        "1024": 368,
+        "128": 112,
+        "16": 0,
+        "256": 112,
+        "32": 16,
+        "4096": 3440,
+        "512": 368,
+        "64": 48,
+        "65536": 56688
+      },
+      "step": 22,
+      "step_offset_from_parent_depth": 1,
+      "surplus": 1,
+      "terminal": 38329712,
+      "terminal_matches_simulation": true,
+      "terminal_mod_16": 0,
+      "terminal_mod_64": 48
+    }
+  ],
+  "residue_counts": {
+    "child": {
+      "1024": {
+        "167": 1,
+        "603": 1,
+        "71": 1,
+        "859": 1,
+        "91": 1
+      },
+      "128": {
+        "39": 1,
+        "71": 1,
+        "91": 3
+      },
+      "16": {
+        "11": 3,
+        "7": 2
+      },
+      "256": {
+        "167": 1,
+        "71": 1,
+        "91": 3
+      },
+      "32": {
+        "27": 3,
+        "7": 2
+      },
+      "4096": {
+        "1115": 1,
+        "1883": 1,
+        "3239": 1,
+        "603": 1,
+        "71": 1
+      },
+      "512": {
+        "167": 1,
+        "347": 1,
+        "71": 1,
+        "91": 2
+      },
+      "64": {
+        "27": 3,
+        "39": 1,
+        "7": 1
+      },
+      "65536": {
+        "1115": 1,
+        "49755": 1,
+        "51035": 1,
+        "64679": 1,
+        "71": 1
+      }
+    },
+    "entry": {
+      "1024": {
+        "167": 1,
+        "39": 1,
+        "407": 1,
+        "791": 1,
+        "951": 1
+      },
+      "128": {
+        "23": 2,
+        "39": 2,
+        "55": 1
+      },
+      "16": {
+        "7": 5
+      },
+      "256": {
+        "151": 1,
+        "167": 1,
+        "183": 1,
+        "23": 1,
+        "39": 1
+      },
+      "32": {
+        "23": 3,
+        "7": 2
+      },
+      "4096": {
+        "1063": 1,
+        "1191": 1,
+        "2455": 1,
+        "2839": 1,
+        "2999": 1
+      },
+      "512": {
+        "167": 1,
+        "279": 1,
+        "39": 1,
+        "407": 1,
+        "439": 1
+      },
+      "64": {
+        "23": 2,
+        "39": 2,
+        "55": 1
+      },
+      "65536": {
+        "1063": 1,
+        "19223": 1,
+        "35223": 1,
+        "42151": 1,
+        "56247": 1
+      }
+    },
+    "parent": {
+      "1024": {
+        "167": 1,
+        "603": 1,
+        "71": 1,
+        "859": 1,
+        "91": 1
+      },
+      "128": {
+        "39": 1,
+        "71": 1,
+        "91": 3
+      },
+      "16": {
+        "11": 3,
+        "7": 2
+      },
+      "256": {
+        "167": 1,
+        "71": 1,
+        "91": 3
+      },
+      "32": {
+        "27": 3,
+        "7": 2
+      },
+      "4096": {
+        "1115": 1,
+        "1883": 1,
+        "3239": 1,
+        "603": 1,
+        "71": 1
+      },
+      "512": {
+        "167": 1,
+        "347": 1,
+        "71": 1,
+        "91": 2
+      },
+      "64": {
+        "27": 3,
+        "39": 1,
+        "7": 1
+      },
+      "65536": {
+        "1115": 1,
+        "49755": 1,
+        "51035": 1,
+        "64679": 1,
+        "71": 1
+      }
+    },
+    "state": {
+      "1024": {
+        "302": 1,
+        "368": 1,
+        "396": 1,
+        "96": 1,
+        "968": 1
+      },
+      "128": {
+        "112": 1,
+        "12": 1,
+        "46": 1,
+        "72": 1,
+        "96": 1
+      },
+      "16": {
+        "0": 2,
+        "12": 1,
+        "14": 1,
+        "8": 1
+      },
+      "256": {
+        "112": 1,
+        "140": 1,
+        "200": 1,
+        "46": 1,
+        "96": 1
+      },
+      "32": {
+        "0": 1,
+        "12": 1,
+        "14": 1,
+        "16": 1,
+        "8": 1
+      },
+      "4096": {
+        "1420": 1,
+        "2350": 1,
+        "3440": 1,
+        "4040": 1,
+        "96": 1
+      },
+      "512": {
+        "302": 1,
+        "368": 1,
+        "396": 1,
+        "456": 1,
+        "96": 1
+      },
+      "64": {
+        "12": 1,
+        "32": 1,
+        "46": 1,
+        "48": 1,
+        "8": 1
+      },
+      "65536": {
+        "40904": 1,
+        "42380": 1,
+        "51502": 1,
+        "56688": 1,
+        "61536": 1
+      }
+    }
+  },
+  "status": "branch-prefix-retimed-tight-layer-one"
+}

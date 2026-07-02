@@ -1,0 +1,3636 @@
+{
+  "checks": {
+    "align_counts": {
+      "16": 1,
+      "6": 125,
+      "7": 43,
+      "8": 10,
+      "9": 1
+    },
+    "align_mod_3_counts": {
+      "0": 126,
+      "1": 44,
+      "2": 10
+    },
+    "entry_mod_256_counts": {
+      "123": 43,
+      "187": 65,
+      "251": 12,
+      "59": 60
+    },
+    "event_index_counts": {
+      "1": 164,
+      "2": 15,
+      "3": 1
+    },
+    "event_index_required_above_parent_counts": {
+      "1:1": 164,
+      "2:2": 15,
+      "3:3": 1
+    },
+    "global_step_offset_max": 59,
+    "global_step_offset_min": 1,
+    "lag_counts": {
+      "2": 58,
+      "5": 122
+    },
+    "lag_minus_align_counts": {
+      "-1": 88,
+      "-14": 1,
+      "-2": 29,
+      "-3": 5,
+      "-4": 37,
+      "-5": 14,
+      "-6": 5,
+      "-7": 1
+    },
+    "lag_word_counts": {
+      "OO": 58,
+      "OOEOO": 122
+    },
+    "low_repeat_pressure_state_residue_purity": {
+      "1024": {
+        "low_repeat_buckets": 126,
+        "low_repeat_in_mixed_buckets": 179,
+        "low_repeat_in_pure_buckets": 1,
+        "low_repeat_pure_bucket_fraction": 0.005555556,
+        "low_repeat_total": 180,
+        "mixed_buckets": 125,
+        "occupied_buckets": 1021,
+        "pure_low_repeat_buckets": 1,
+        "pure_non_low_repeat_buckets": 895,
+        "top_mixed_buckets": {
+          "22": {
+            "low_repeat": 3,
+            "low_repeat_fraction": 0.096774194,
+            "total": 31
+          },
+          "230": {
+            "low_repeat": 4,
+            "low_repeat_fraction": 0.222222222,
+            "total": 18
+          },
+          "294": {
+            "low_repeat": 4,
+            "low_repeat_fraction": 0.210526316,
+            "total": 19
+          },
+          "342": {
+            "low_repeat": 3,
+            "low_repeat_fraction": 0.125,
+            "total": 24
+          },
+          "362": {
+            "low_repeat": 3,
+            "low_repeat_fraction": 0.083333333,
+            "total": 36
+          },
+          "534": {
+            "low_repeat": 3,
+            "low_repeat_fraction": 0.111111111,
+            "total": 27
+          },
+          "564": {
+            "low_repeat": 4,
+            "low_repeat_fraction": 0.1,
+            "total": 40
+          },
+          "742": {
+            "low_repeat": 4,
+            "low_repeat_fraction": 0.210526316,
+            "total": 19
+          }
+        },
+        "top_pure_low_repeat_buckets": {
+          "338": 1
+        }
+      },
+      "128": {
+        "low_repeat_buckets": 54,
+        "low_repeat_in_mixed_buckets": 180,
+        "low_repeat_in_pure_buckets": 0,
+        "low_repeat_pure_bucket_fraction": 0.0,
+        "low_repeat_total": 180,
+        "mixed_buckets": 54,
+        "occupied_buckets": 128,
+        "pure_low_repeat_buckets": 0,
+        "pure_non_low_repeat_buckets": 74,
+        "top_mixed_buckets": {
+          "102": {
+            "low_repeat": 12,
+            "low_repeat_fraction": 0.073170732,
+            "total": 164
+          },
+          "20": {
+            "low_repeat": 7,
+            "low_repeat_fraction": 0.034146341,
+            "total": 205
+          },
+          "22": {
+            "low_repeat": 7,
+            "low_repeat_fraction": 0.036082474,
+            "total": 194
+          },
+          "38": {
+            "low_repeat": 10,
+            "low_repeat_fraction": 0.074074074,
+            "total": 135
+          },
+          "48": {
+            "low_repeat": 6,
+            "low_repeat_fraction": 0.02955665,
+            "total": 203
+          },
+          "6": {
+            "low_repeat": 8,
+            "low_repeat_fraction": 0.045454545,
+            "total": 176
+          },
+          "70": {
+            "low_repeat": 7,
+            "low_repeat_fraction": 0.029166667,
+            "total": 240
+          },
+          "86": {
+            "low_repeat": 7,
+            "low_repeat_fraction": 0.043209877,
+            "total": 162
+          }
+        },
+        "top_pure_low_repeat_buckets": {}
+      },
+      "16": {
+        "low_repeat_buckets": 8,
+        "low_repeat_in_mixed_buckets": 180,
+        "low_repeat_in_pure_buckets": 0,
+        "low_repeat_pure_bucket_fraction": 0.0,
+        "low_repeat_total": 180,
+        "mixed_buckets": 8,
+        "occupied_buckets": 16,
+        "pure_low_repeat_buckets": 0,
+        "pure_non_low_repeat_buckets": 8,
+        "top_mixed_buckets": {
+          "0": {
+            "low_repeat": 34,
+            "low_repeat_fraction": 0.016856718,
+            "total": 2017
+          },
+          "10": {
+            "low_repeat": 15,
+            "low_repeat_fraction": 0.00995355,
+            "total": 1507
+          },
+          "12": {
+            "low_repeat": 15,
+            "low_repeat_fraction": 0.013321492,
+            "total": 1126
+          },
+          "14": {
+            "low_repeat": 5,
+            "low_repeat_fraction": 0.008183306,
+            "total": 611
+          },
+          "2": {
+            "low_repeat": 14,
+            "low_repeat_fraction": 0.012184508,
+            "total": 1149
+          },
+          "4": {
+            "low_repeat": 28,
+            "low_repeat_fraction": 0.018134715,
+            "total": 1544
+          },
+          "6": {
+            "low_repeat": 58,
+            "low_repeat_fraction": 0.047116166,
+            "total": 1231
+          },
+          "8": {
+            "low_repeat": 11,
+            "low_repeat_fraction": 0.007189542,
+            "total": 1530
+          }
+        },
+        "top_pure_low_repeat_buckets": {}
+      },
+      "256": {
+        "low_repeat_buckets": 79,
+        "low_repeat_in_mixed_buckets": 180,
+        "low_repeat_in_pure_buckets": 0,
+        "low_repeat_pure_bucket_fraction": 0.0,
+        "low_repeat_total": 180,
+        "mixed_buckets": 79,
+        "occupied_buckets": 256,
+        "pure_low_repeat_buckets": 0,
+        "pure_non_low_repeat_buckets": 177,
+        "top_mixed_buckets": {
+          "182": {
+            "low_repeat": 5,
+            "low_repeat_fraction": 0.113636364,
+            "total": 44
+          },
+          "20": {
+            "low_repeat": 6,
+            "low_repeat_fraction": 0.047619048,
+            "total": 126
+          },
+          "22": {
+            "low_repeat": 7,
+            "low_repeat_fraction": 0.074468085,
+            "total": 94
+          },
+          "230": {
+            "low_repeat": 9,
+            "low_repeat_fraction": 0.140625,
+            "total": 64
+          },
+          "38": {
+            "low_repeat": 9,
+            "low_repeat_fraction": 0.107142857,
+            "total": 84
+          },
+          "52": {
+            "low_repeat": 6,
+            "low_repeat_fraction": 0.045454545,
+            "total": 132
+          },
+          "6": {
+            "low_repeat": 5,
+            "low_repeat_fraction": 0.04587156,
+            "total": 109
+          },
+          "86": {
+            "low_repeat": 6,
+            "low_repeat_fraction": 0.066666667,
+            "total": 90
+          }
+        },
+        "top_pure_low_repeat_buckets": {}
+      },
+      "32": {
+        "low_repeat_buckets": 16,
+        "low_repeat_in_mixed_buckets": 180,
+        "low_repeat_in_pure_buckets": 0,
+        "low_repeat_pure_bucket_fraction": 0.0,
+        "low_repeat_total": 180,
+        "mixed_buckets": 16,
+        "occupied_buckets": 32,
+        "pure_low_repeat_buckets": 0,
+        "pure_non_low_repeat_buckets": 16,
+        "top_mixed_buckets": {
+          "0": {
+            "low_repeat": 15,
+            "low_repeat_fraction": 0.013089005,
+            "total": 1146
+          },
+          "10": {
+            "low_repeat": 12,
+            "low_repeat_fraction": 0.013574661,
+            "total": 884
+          },
+          "16": {
+            "low_repeat": 19,
+            "low_repeat_fraction": 0.021814007,
+            "total": 871
+          },
+          "20": {
+            "low_repeat": 17,
+            "low_repeat_fraction": 0.019101124,
+            "total": 890
+          },
+          "22": {
+            "low_repeat": 21,
+            "low_repeat_fraction": 0.040697674,
+            "total": 516
+          },
+          "28": {
+            "low_repeat": 9,
+            "low_repeat_fraction": 0.026392962,
+            "total": 341
+          },
+          "4": {
+            "low_repeat": 11,
+            "low_repeat_fraction": 0.016819572,
+            "total": 654
+          },
+          "6": {
+            "low_repeat": 37,
+            "low_repeat_fraction": 0.051748252,
+            "total": 715
+          }
+        },
+        "top_pure_low_repeat_buckets": {}
+      },
+      "4096": {
+        "low_repeat_buckets": 158,
+        "low_repeat_in_mixed_buckets": 174,
+        "low_repeat_in_pure_buckets": 6,
+        "low_repeat_pure_bucket_fraction": 0.033333333,
+        "low_repeat_total": 180,
+        "mixed_buckets": 153,
+        "occupied_buckets": 3593,
+        "pure_low_repeat_buckets": 5,
+        "pure_non_low_repeat_buckets": 3435,
+        "top_mixed_buckets": {
+          "1042": {
+            "low_repeat": 2,
+            "low_repeat_fraction": 0.4,
+            "total": 5
+          },
+          "1798": {
+            "low_repeat": 2,
+            "low_repeat_fraction": 0.5,
+            "total": 4
+          },
+          "2278": {
+            "low_repeat": 2,
+            "low_repeat_fraction": 0.4,
+            "total": 5
+          },
+          "2310": {
+            "low_repeat": 2,
+            "low_repeat_fraction": 0.285714286,
+            "total": 7
+          },
+          "2342": {
+            "low_repeat": 3,
+            "low_repeat_fraction": 0.375,
+            "total": 8
+          },
+          "2790": {
+            "low_repeat": 2,
+            "low_repeat_fraction": 0.5,
+            "total": 4
+          },
+          "3926": {
+            "low_repeat": 2,
+            "low_repeat_fraction": 0.333333333,
+            "total": 6
+          },
+          "624": {
+            "low_repeat": 2,
+            "low_repeat_fraction": 0.285714286,
+            "total": 7
+          }
+        },
+        "top_pure_low_repeat_buckets": {
+          "2322": 1,
+          "3410": 1,
+          "3414": 2,
+          "3518": 1,
+          "3630": 1
+        }
+      },
+      "512": {
+        "low_repeat_buckets": 107,
+        "low_repeat_in_mixed_buckets": 180,
+        "low_repeat_in_pure_buckets": 0,
+        "low_repeat_pure_bucket_fraction": 0.0,
+        "low_repeat_total": 180,
+        "mixed_buckets": 107,
+        "occupied_buckets": 512,
+        "pure_low_repeat_buckets": 0,
+        "pure_non_low_repeat_buckets": 405,
+        "top_mixed_buckets": {
+          "22": {
+            "low_repeat": 6,
+            "low_repeat_fraction": 0.103448276,
+            "total": 58
+          },
+          "230": {
+            "low_repeat": 8,
+            "low_repeat_fraction": 0.216216216,
+            "total": 37
+          },
+          "262": {
+            "low_repeat": 4,
+            "low_repeat_fraction": 0.057142857,
+            "total": 70
+          },
+          "272": {
+            "low_repeat": 4,
+            "low_repeat_fraction": 0.050632911,
+            "total": 79
+          },
+          "294": {
+            "low_repeat": 6,
+            "low_repeat_fraction": 0.127659574,
+            "total": 47
+          },
+          "342": {
+            "low_repeat": 5,
+            "low_repeat_fraction": 0.131578947,
+            "total": 38
+          },
+          "362": {
+            "low_repeat": 4,
+            "low_repeat_fraction": 0.056338028,
+            "total": 71
+          },
+          "52": {
+            "low_repeat": 4,
+            "low_repeat_fraction": 0.050632911,
+            "total": 79
+          }
+        },
+        "top_pure_low_repeat_buckets": {}
+      },
+      "64": {
+        "low_repeat_buckets": 31,
+        "low_repeat_in_mixed_buckets": 180,
+        "low_repeat_in_pure_buckets": 0,
+        "low_repeat_pure_bucket_fraction": 0.0,
+        "low_repeat_total": 180,
+        "mixed_buckets": 31,
+        "occupied_buckets": 64,
+        "pure_low_repeat_buckets": 0,
+        "pure_non_low_repeat_buckets": 33,
+        "top_mixed_buckets": {
+          "16": {
+            "low_repeat": 10,
+            "low_repeat_fraction": 0.018382353,
+            "total": 544
+          },
+          "20": {
+            "low_repeat": 10,
+            "low_repeat_fraction": 0.019723866,
+            "total": 507
+          },
+          "22": {
+            "low_repeat": 14,
+            "low_repeat_fraction": 0.039325843,
+            "total": 356
+          },
+          "32": {
+            "low_repeat": 10,
+            "low_repeat_fraction": 0.02,
+            "total": 500
+          },
+          "38": {
+            "low_repeat": 22,
+            "low_repeat_fraction": 0.073578595,
+            "total": 299
+          },
+          "42": {
+            "low_repeat": 10,
+            "low_repeat_fraction": 0.021052632,
+            "total": 475
+          },
+          "48": {
+            "low_repeat": 9,
+            "low_repeat_fraction": 0.027522936,
+            "total": 327
+          },
+          "6": {
+            "low_repeat": 15,
+            "low_repeat_fraction": 0.036057692,
+            "total": 416
+          }
+        },
+        "top_pure_low_repeat_buckets": {}
+      },
+      "65536": {
+        "low_repeat_buckets": 176,
+        "low_repeat_in_mixed_buckets": 62,
+        "low_repeat_in_pure_buckets": 118,
+        "low_repeat_pure_bucket_fraction": 0.655555556,
+        "low_repeat_total": 180,
+        "mixed_buckets": 61,
+        "occupied_buckets": 12770,
+        "pure_low_repeat_buckets": 115,
+        "pure_non_low_repeat_buckets": 12594,
+        "top_mixed_buckets": {
+          "2400": {
+            "low_repeat": 2,
+            "low_repeat_fraction": 0.5,
+            "total": 4
+          },
+          "55880": {
+            "low_repeat": 1,
+            "low_repeat_fraction": 0.5,
+            "total": 2
+          },
+          "57218": {
+            "low_repeat": 1,
+            "low_repeat_fraction": 0.5,
+            "total": 2
+          },
+          "58084": {
+            "low_repeat": 1,
+            "low_repeat_fraction": 0.5,
+            "total": 2
+          },
+          "62362": {
+            "low_repeat": 1,
+            "low_repeat_fraction": 0.5,
+            "total": 2
+          },
+          "64550": {
+            "low_repeat": 1,
+            "low_repeat_fraction": 0.5,
+            "total": 2
+          },
+          "64970": {
+            "low_repeat": 1,
+            "low_repeat_fraction": 0.5,
+            "total": 2
+          },
+          "65366": {
+            "low_repeat": 1,
+            "low_repeat_fraction": 0.5,
+            "total": 2
+          }
+        },
+        "top_pure_low_repeat_buckets": {
+          "17030": 1,
+          "17942": 1,
+          "20288": 2,
+          "23894": 2,
+          "36070": 2,
+          "54330": 1,
+          "56488": 1,
+          "61802": 1
+        }
+      }
+    },
+    "macro_align_after_counts": {
+      "13": 1,
+      "3": 125,
+      "4": 43,
+      "5": 10,
+      "6": 1
+    },
+    "macro_value_mod_64_counts": {
+      "11": 22,
+      "19": 25,
+      "27": 10,
+      "3": 19,
+      "35": 41,
+      "43": 21,
+      "51": 40,
+      "59": 2
+    },
+    "pressure_regime_counts": {
+      "high_after_ladder_window": 646,
+      "high_inside_active_ladder": 15259,
+      "low_repeat_prepaid": 180
+    },
+    "pure_feature_claims_all_depths": {
+      "all_entries_are_minus5_mod64_repeat_gates": true,
+      "all_lag_simulations_match_pressure_state": true,
+      "all_repeat_laws_checked": true
+    },
+    "total_above_parent_pressure_units": 16085,
+    "total_low_repeat_pressure_units": 180,
+    "total_retimed_transitions": 13856
+  },
+  "depths": [
+    {
+      "above_parent_pressure_unit_count": 178,
+      "align_counts": {
+        "6": 1,
+        "7": 1
+      },
+      "align_mod_3_counts": {
+        "0": 1,
+        "1": 1
+      },
+      "cached": false,
+      "child_depth": 19,
+      "entry_mod_256_counts": {
+        "123": 1,
+        "59": 1
+      },
+      "event_index_counts": {
+        "1": 2
+      },
+      "event_index_required_above_parent_counts": {
+        "1:1": 2
+      },
+      "lag_counts": {
+        "5": 2
+      },
+      "lag_minus_align_counts": {
+        "-1": 1,
+        "-2": 1
+      },
+      "lag_word_counts": {
+        "OOEOO": 2
+      },
+      "low_repeat_pressure_state_residue_purity": {
+        "1024": {
+          "low_repeat_buckets": 2,
+          "low_repeat_in_mixed_buckets": 0,
+          "low_repeat_in_pure_buckets": 2,
+          "low_repeat_pure_bucket_fraction": 1.0,
+          "low_repeat_total": 2,
+          "mixed_buckets": 0,
+          "occupied_buckets": 145,
+          "pure_low_repeat_buckets": 2,
+          "pure_non_low_repeat_buckets": 143,
+          "top_mixed_buckets": {},
+          "top_pure_low_repeat_buckets": {
+            "168": 1,
+            "362": 1
+          }
+        },
+        "128": {
+          "low_repeat_buckets": 2,
+          "low_repeat_in_mixed_buckets": 2,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 0.0,
+          "low_repeat_total": 2,
+          "mixed_buckets": 2,
+          "occupied_buckets": 73,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 71,
+          "top_mixed_buckets": {
+            "106": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.25,
+              "total": 4
+            },
+            "40": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.2,
+              "total": 5
+            }
+          },
+          "top_pure_low_repeat_buckets": {}
+        },
+        "16": {
+          "low_repeat_buckets": 2,
+          "low_repeat_in_mixed_buckets": 2,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 0.0,
+          "low_repeat_total": 2,
+          "mixed_buckets": 2,
+          "occupied_buckets": 16,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 14,
+          "top_mixed_buckets": {
+            "10": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.034482759,
+              "total": 29
+            },
+            "8": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.052631579,
+              "total": 19
+            }
+          },
+          "top_pure_low_repeat_buckets": {}
+        },
+        "256": {
+          "low_repeat_buckets": 2,
+          "low_repeat_in_mixed_buckets": 2,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 0.0,
+          "low_repeat_total": 2,
+          "mixed_buckets": 2,
+          "occupied_buckets": 100,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 98,
+          "top_mixed_buckets": {
+            "106": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.25,
+              "total": 4
+            },
+            "168": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.333333333,
+              "total": 3
+            }
+          },
+          "top_pure_low_repeat_buckets": {}
+        },
+        "32": {
+          "low_repeat_buckets": 2,
+          "low_repeat_in_mixed_buckets": 2,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 0.0,
+          "low_repeat_total": 2,
+          "mixed_buckets": 2,
+          "occupied_buckets": 29,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 27,
+          "top_mixed_buckets": {
+            "10": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.055555556,
+              "total": 18
+            },
+            "8": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.066666667,
+              "total": 15
+            }
+          },
+          "top_pure_low_repeat_buckets": {}
+        },
+        "4096": {
+          "low_repeat_buckets": 2,
+          "low_repeat_in_mixed_buckets": 0,
+          "low_repeat_in_pure_buckets": 2,
+          "low_repeat_pure_bucket_fraction": 1.0,
+          "low_repeat_total": 2,
+          "mixed_buckets": 0,
+          "occupied_buckets": 167,
+          "pure_low_repeat_buckets": 2,
+          "pure_non_low_repeat_buckets": 165,
+          "top_mixed_buckets": {},
+          "top_pure_low_repeat_buckets": {
+            "3240": 1,
+            "362": 1
+          }
+        },
+        "512": {
+          "low_repeat_buckets": 2,
+          "low_repeat_in_mixed_buckets": 1,
+          "low_repeat_in_pure_buckets": 1,
+          "low_repeat_pure_bucket_fraction": 0.5,
+          "low_repeat_total": 2,
+          "mixed_buckets": 1,
+          "occupied_buckets": 124,
+          "pure_low_repeat_buckets": 1,
+          "pure_non_low_repeat_buckets": 122,
+          "top_mixed_buckets": {
+            "362": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.5,
+              "total": 2
+            }
+          },
+          "top_pure_low_repeat_buckets": {
+            "168": 1
+          }
+        },
+        "64": {
+          "low_repeat_buckets": 2,
+          "low_repeat_in_mixed_buckets": 2,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 0.0,
+          "low_repeat_total": 2,
+          "mixed_buckets": 2,
+          "occupied_buckets": 48,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 46,
+          "top_mixed_buckets": {
+            "40": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.111111111,
+              "total": 9
+            },
+            "42": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.111111111,
+              "total": 9
+            }
+          },
+          "top_pure_low_repeat_buckets": {}
+        },
+        "65536": {
+          "low_repeat_buckets": 2,
+          "low_repeat_in_mixed_buckets": 0,
+          "low_repeat_in_pure_buckets": 2,
+          "low_repeat_pure_bucket_fraction": 1.0,
+          "low_repeat_total": 2,
+          "mixed_buckets": 0,
+          "occupied_buckets": 176,
+          "pure_low_repeat_buckets": 2,
+          "pure_non_low_repeat_buckets": 174,
+          "top_mixed_buckets": {},
+          "top_pure_low_repeat_buckets": {
+            "56488": 1,
+            "61802": 1
+          }
+        }
+      },
+      "low_repeat_pressure_unit_count": 2,
+      "macro_align_after_counts": {
+        "3": 1,
+        "4": 1
+      },
+      "macro_value_mod_64_counts": {
+        "11": 1,
+        "3": 1
+      },
+      "parent_depth": 18,
+      "pressure_regime_counts": {
+        "high_after_ladder_window": 20,
+        "high_inside_active_ladder": 156,
+        "low_repeat_prepaid": 2
+      },
+      "pure_feature_claims": {
+        "all_entries_are_minus5_mod64_repeat_gates": true,
+        "all_lag_simulations_match_pressure_state": true,
+        "all_repeat_laws_checked": true
+      },
+      "retimed_transition_count": 166,
+      "step_offset_max": 1,
+      "step_offset_min": 1
+    },
+    {
+      "above_parent_pressure_unit_count": 147,
+      "align_counts": {},
+      "align_mod_3_counts": {},
+      "cached": false,
+      "child_depth": 20,
+      "entry_mod_256_counts": {},
+      "event_index_counts": {},
+      "event_index_required_above_parent_counts": {},
+      "lag_counts": {},
+      "lag_minus_align_counts": {},
+      "lag_word_counts": {},
+      "low_repeat_pressure_state_residue_purity": {
+        "1024": {
+          "low_repeat_buckets": 0,
+          "low_repeat_in_mixed_buckets": 0,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 1.0,
+          "low_repeat_total": 0,
+          "mixed_buckets": 0,
+          "occupied_buckets": 127,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 127,
+          "top_mixed_buckets": {},
+          "top_pure_low_repeat_buckets": {}
+        },
+        "128": {
+          "low_repeat_buckets": 0,
+          "low_repeat_in_mixed_buckets": 0,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 1.0,
+          "low_repeat_total": 0,
+          "mixed_buckets": 0,
+          "occupied_buckets": 79,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 79,
+          "top_mixed_buckets": {},
+          "top_pure_low_repeat_buckets": {}
+        },
+        "16": {
+          "low_repeat_buckets": 0,
+          "low_repeat_in_mixed_buckets": 0,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 1.0,
+          "low_repeat_total": 0,
+          "mixed_buckets": 0,
+          "occupied_buckets": 16,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 16,
+          "top_mixed_buckets": {},
+          "top_pure_low_repeat_buckets": {}
+        },
+        "256": {
+          "low_repeat_buckets": 0,
+          "low_repeat_in_mixed_buckets": 0,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 1.0,
+          "low_repeat_total": 0,
+          "mixed_buckets": 0,
+          "occupied_buckets": 97,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 97,
+          "top_mixed_buckets": {},
+          "top_pure_low_repeat_buckets": {}
+        },
+        "32": {
+          "low_repeat_buckets": 0,
+          "low_repeat_in_mixed_buckets": 0,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 1.0,
+          "low_repeat_total": 0,
+          "mixed_buckets": 0,
+          "occupied_buckets": 28,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 28,
+          "top_mixed_buckets": {},
+          "top_pure_low_repeat_buckets": {}
+        },
+        "4096": {
+          "low_repeat_buckets": 0,
+          "low_repeat_in_mixed_buckets": 0,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 1.0,
+          "low_repeat_total": 0,
+          "mixed_buckets": 0,
+          "occupied_buckets": 138,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 138,
+          "top_mixed_buckets": {},
+          "top_pure_low_repeat_buckets": {}
+        },
+        "512": {
+          "low_repeat_buckets": 0,
+          "low_repeat_in_mixed_buckets": 0,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 1.0,
+          "low_repeat_total": 0,
+          "mixed_buckets": 0,
+          "occupied_buckets": 116,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 116,
+          "top_mixed_buckets": {},
+          "top_pure_low_repeat_buckets": {}
+        },
+        "64": {
+          "low_repeat_buckets": 0,
+          "low_repeat_in_mixed_buckets": 0,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 1.0,
+          "low_repeat_total": 0,
+          "mixed_buckets": 0,
+          "occupied_buckets": 51,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 51,
+          "top_mixed_buckets": {},
+          "top_pure_low_repeat_buckets": {}
+        },
+        "65536": {
+          "low_repeat_buckets": 0,
+          "low_repeat_in_mixed_buckets": 0,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 1.0,
+          "low_repeat_total": 0,
+          "mixed_buckets": 0,
+          "occupied_buckets": 143,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 143,
+          "top_mixed_buckets": {},
+          "top_pure_low_repeat_buckets": {}
+        }
+      },
+      "low_repeat_pressure_unit_count": 0,
+      "macro_align_after_counts": {},
+      "macro_value_mod_64_counts": {},
+      "parent_depth": 19,
+      "pressure_regime_counts": {
+        "high_after_ladder_window": 4,
+        "high_inside_active_ladder": 143
+      },
+      "pure_feature_claims": {
+        "all_entries_are_minus5_mod64_repeat_gates": true,
+        "all_lag_simulations_match_pressure_state": true,
+        "all_repeat_laws_checked": true
+      },
+      "retimed_transition_count": 135,
+      "step_offset_max": null,
+      "step_offset_min": null
+    },
+    {
+      "above_parent_pressure_unit_count": 288,
+      "align_counts": {
+        "7": 1
+      },
+      "align_mod_3_counts": {
+        "1": 1
+      },
+      "cached": false,
+      "child_depth": 21,
+      "entry_mod_256_counts": {
+        "123": 1
+      },
+      "event_index_counts": {
+        "2": 1
+      },
+      "event_index_required_above_parent_counts": {
+        "2:2": 1
+      },
+      "lag_counts": {
+        "5": 1
+      },
+      "lag_minus_align_counts": {
+        "-2": 1
+      },
+      "lag_word_counts": {
+        "OOEOO": 1
+      },
+      "low_repeat_pressure_state_residue_purity": {
+        "1024": {
+          "low_repeat_buckets": 1,
+          "low_repeat_in_mixed_buckets": 0,
+          "low_repeat_in_pure_buckets": 1,
+          "low_repeat_pure_bucket_fraction": 1.0,
+          "low_repeat_total": 1,
+          "mixed_buckets": 0,
+          "occupied_buckets": 233,
+          "pure_low_repeat_buckets": 1,
+          "pure_non_low_repeat_buckets": 232,
+          "top_mixed_buckets": {},
+          "top_pure_low_repeat_buckets": {
+            "922": 1
+          }
+        },
+        "128": {
+          "low_repeat_buckets": 1,
+          "low_repeat_in_mixed_buckets": 1,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 0.0,
+          "low_repeat_total": 1,
+          "mixed_buckets": 1,
+          "occupied_buckets": 101,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 100,
+          "top_mixed_buckets": {
+            "26": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.2,
+              "total": 5
+            }
+          },
+          "top_pure_low_repeat_buckets": {}
+        },
+        "16": {
+          "low_repeat_buckets": 1,
+          "low_repeat_in_mixed_buckets": 1,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 0.0,
+          "low_repeat_total": 1,
+          "mixed_buckets": 1,
+          "occupied_buckets": 16,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 15,
+          "top_mixed_buckets": {
+            "10": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.037037037,
+              "total": 27
+            }
+          },
+          "top_pure_low_repeat_buckets": {}
+        },
+        "256": {
+          "low_repeat_buckets": 1,
+          "low_repeat_in_mixed_buckets": 1,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 0.0,
+          "low_repeat_total": 1,
+          "mixed_buckets": 1,
+          "occupied_buckets": 148,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 147,
+          "top_mixed_buckets": {
+            "154": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.5,
+              "total": 2
+            }
+          },
+          "top_pure_low_repeat_buckets": {}
+        },
+        "32": {
+          "low_repeat_buckets": 1,
+          "low_repeat_in_mixed_buckets": 1,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 0.0,
+          "low_repeat_total": 1,
+          "mixed_buckets": 1,
+          "occupied_buckets": 32,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 31,
+          "top_mixed_buckets": {
+            "26": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.066666667,
+              "total": 15
+            }
+          },
+          "top_pure_low_repeat_buckets": {}
+        },
+        "4096": {
+          "low_repeat_buckets": 1,
+          "low_repeat_in_mixed_buckets": 0,
+          "low_repeat_in_pure_buckets": 1,
+          "low_repeat_pure_bucket_fraction": 1.0,
+          "low_repeat_total": 1,
+          "mixed_buckets": 0,
+          "occupied_buckets": 268,
+          "pure_low_repeat_buckets": 1,
+          "pure_non_low_repeat_buckets": 267,
+          "top_mixed_buckets": {},
+          "top_pure_low_repeat_buckets": {
+            "922": 1
+          }
+        },
+        "512": {
+          "low_repeat_buckets": 1,
+          "low_repeat_in_mixed_buckets": 1,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 0.0,
+          "low_repeat_total": 1,
+          "mixed_buckets": 1,
+          "occupied_buckets": 198,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 197,
+          "top_mixed_buckets": {
+            "410": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.5,
+              "total": 2
+            }
+          },
+          "top_pure_low_repeat_buckets": {}
+        },
+        "64": {
+          "low_repeat_buckets": 1,
+          "low_repeat_in_mixed_buckets": 1,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 0.0,
+          "low_repeat_total": 1,
+          "mixed_buckets": 1,
+          "occupied_buckets": 60,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 59,
+          "top_mixed_buckets": {
+            "26": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.090909091,
+              "total": 11
+            }
+          },
+          "top_pure_low_repeat_buckets": {}
+        },
+        "65536": {
+          "low_repeat_buckets": 1,
+          "low_repeat_in_mixed_buckets": 0,
+          "low_repeat_in_pure_buckets": 1,
+          "low_repeat_pure_bucket_fraction": 1.0,
+          "low_repeat_total": 1,
+          "mixed_buckets": 0,
+          "occupied_buckets": 283,
+          "pure_low_repeat_buckets": 1,
+          "pure_non_low_repeat_buckets": 282,
+          "top_mixed_buckets": {},
+          "top_pure_low_repeat_buckets": {
+            "62362": 1
+          }
+        }
+      },
+      "low_repeat_pressure_unit_count": 1,
+      "macro_align_after_counts": {
+        "4": 1
+      },
+      "macro_value_mod_64_counts": {
+        "11": 1
+      },
+      "parent_depth": 20,
+      "pressure_regime_counts": {
+        "high_after_ladder_window": 10,
+        "high_inside_active_ladder": 277,
+        "low_repeat_prepaid": 1
+      },
+      "pure_feature_claims": {
+        "all_entries_are_minus5_mod64_repeat_gates": true,
+        "all_lag_simulations_match_pressure_state": true,
+        "all_repeat_laws_checked": true
+      },
+      "retimed_transition_count": 253,
+      "step_offset_max": 10,
+      "step_offset_min": 10
+    },
+    {
+      "above_parent_pressure_unit_count": 801,
+      "align_counts": {
+        "6": 1,
+        "7": 1
+      },
+      "align_mod_3_counts": {
+        "0": 1,
+        "1": 1
+      },
+      "cached": false,
+      "child_depth": 22,
+      "entry_mod_256_counts": {
+        "123": 1,
+        "59": 1
+      },
+      "event_index_counts": {
+        "1": 2
+      },
+      "event_index_required_above_parent_counts": {
+        "1:1": 2
+      },
+      "lag_counts": {
+        "5": 2
+      },
+      "lag_minus_align_counts": {
+        "-1": 1,
+        "-2": 1
+      },
+      "lag_word_counts": {
+        "OOEOO": 2
+      },
+      "low_repeat_pressure_state_residue_purity": {
+        "1024": {
+          "low_repeat_buckets": 2,
+          "low_repeat_in_mixed_buckets": 2,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 0.0,
+          "low_repeat_total": 2,
+          "mixed_buckets": 2,
+          "occupied_buckets": 444,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 442,
+          "top_mixed_buckets": {
+            "160": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.142857143,
+              "total": 7
+            },
+            "58": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.5,
+              "total": 2
+            }
+          },
+          "top_pure_low_repeat_buckets": {}
+        },
+        "128": {
+          "low_repeat_buckets": 2,
+          "low_repeat_in_mixed_buckets": 2,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 0.0,
+          "low_repeat_total": 2,
+          "mixed_buckets": 2,
+          "occupied_buckets": 121,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 119,
+          "top_mixed_buckets": {
+            "32": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.066666667,
+              "total": 15
+            },
+            "58": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.1,
+              "total": 10
+            }
+          },
+          "top_pure_low_repeat_buckets": {}
+        },
+        "16": {
+          "low_repeat_buckets": 2,
+          "low_repeat_in_mixed_buckets": 2,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 0.0,
+          "low_repeat_total": 2,
+          "mixed_buckets": 2,
+          "occupied_buckets": 16,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 14,
+          "top_mixed_buckets": {
+            "0": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.009009009,
+              "total": 111
+            },
+            "10": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.0125,
+              "total": 80
+            }
+          },
+          "top_pure_low_repeat_buckets": {}
+        },
+        "256": {
+          "low_repeat_buckets": 2,
+          "low_repeat_in_mixed_buckets": 2,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 0.0,
+          "low_repeat_total": 2,
+          "mixed_buckets": 2,
+          "occupied_buckets": 216,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 214,
+          "top_mixed_buckets": {
+            "160": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.125,
+              "total": 8
+            },
+            "58": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.333333333,
+              "total": 3
+            }
+          },
+          "top_pure_low_repeat_buckets": {}
+        },
+        "32": {
+          "low_repeat_buckets": 2,
+          "low_repeat_in_mixed_buckets": 2,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 0.0,
+          "low_repeat_total": 2,
+          "mixed_buckets": 2,
+          "occupied_buckets": 32,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 30,
+          "top_mixed_buckets": {
+            "0": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.018181818,
+              "total": 55
+            },
+            "26": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.038461538,
+              "total": 26
+            }
+          },
+          "top_pure_low_repeat_buckets": {}
+        },
+        "4096": {
+          "low_repeat_buckets": 2,
+          "low_repeat_in_mixed_buckets": 1,
+          "low_repeat_in_pure_buckets": 1,
+          "low_repeat_pure_bucket_fraction": 0.5,
+          "low_repeat_total": 2,
+          "mixed_buckets": 1,
+          "occupied_buckets": 677,
+          "pure_low_repeat_buckets": 1,
+          "pure_non_low_repeat_buckets": 675,
+          "top_mixed_buckets": {
+            "2208": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.333333333,
+              "total": 3
+            }
+          },
+          "top_pure_low_repeat_buckets": {
+            "1082": 1
+          }
+        },
+        "512": {
+          "low_repeat_buckets": 2,
+          "low_repeat_in_mixed_buckets": 2,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 0.0,
+          "low_repeat_total": 2,
+          "mixed_buckets": 2,
+          "occupied_buckets": 327,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 325,
+          "top_mixed_buckets": {
+            "160": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.125,
+              "total": 8
+            },
+            "58": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.5,
+              "total": 2
+            }
+          },
+          "top_pure_low_repeat_buckets": {}
+        },
+        "64": {
+          "low_repeat_buckets": 2,
+          "low_repeat_in_mixed_buckets": 2,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 0.0,
+          "low_repeat_total": 2,
+          "mixed_buckets": 2,
+          "occupied_buckets": 63,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 61,
+          "top_mixed_buckets": {
+            "32": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.05,
+              "total": 20
+            },
+            "58": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.083333333,
+              "total": 12
+            }
+          },
+          "top_pure_low_repeat_buckets": {}
+        },
+        "65536": {
+          "low_repeat_buckets": 2,
+          "low_repeat_in_mixed_buckets": 0,
+          "low_repeat_in_pure_buckets": 2,
+          "low_repeat_pure_bucket_fraction": 1.0,
+          "low_repeat_total": 2,
+          "mixed_buckets": 0,
+          "occupied_buckets": 771,
+          "pure_low_repeat_buckets": 2,
+          "pure_non_low_repeat_buckets": 769,
+          "top_mixed_buckets": {},
+          "top_pure_low_repeat_buckets": {
+            "39072": 1,
+            "54330": 1
+          }
+        }
+      },
+      "low_repeat_pressure_unit_count": 2,
+      "macro_align_after_counts": {
+        "3": 1,
+        "4": 1
+      },
+      "macro_value_mod_64_counts": {
+        "11": 1,
+        "35": 1
+      },
+      "parent_depth": 21,
+      "pressure_regime_counts": {
+        "high_after_ladder_window": 9,
+        "high_inside_active_ladder": 790,
+        "low_repeat_prepaid": 2
+      },
+      "pure_feature_claims": {
+        "all_entries_are_minus5_mod64_repeat_gates": true,
+        "all_lag_simulations_match_pressure_state": true,
+        "all_repeat_laws_checked": true
+      },
+      "retimed_transition_count": 719,
+      "step_offset_max": 28,
+      "step_offset_min": 9
+    },
+    {
+      "above_parent_pressure_unit_count": 1019,
+      "align_counts": {
+        "6": 6,
+        "7": 5,
+        "8": 2
+      },
+      "align_mod_3_counts": {
+        "0": 6,
+        "1": 5,
+        "2": 2
+      },
+      "cached": false,
+      "child_depth": 23,
+      "entry_mod_256_counts": {
+        "123": 5,
+        "187": 2,
+        "251": 2,
+        "59": 4
+      },
+      "event_index_counts": {
+        "1": 12,
+        "2": 1
+      },
+      "event_index_required_above_parent_counts": {
+        "1:1": 12,
+        "2:2": 1
+      },
+      "lag_counts": {
+        "2": 8,
+        "5": 5
+      },
+      "lag_minus_align_counts": {
+        "-1": 2,
+        "-2": 1,
+        "-3": 2,
+        "-4": 4,
+        "-5": 4
+      },
+      "lag_word_counts": {
+        "OO": 8,
+        "OOEOO": 5
+      },
+      "low_repeat_pressure_state_residue_purity": {
+        "1024": {
+          "low_repeat_buckets": 11,
+          "low_repeat_in_mixed_buckets": 10,
+          "low_repeat_in_pure_buckets": 3,
+          "low_repeat_pure_bucket_fraction": 0.230769231,
+          "low_repeat_total": 13,
+          "mixed_buckets": 8,
+          "occupied_buckets": 572,
+          "pure_low_repeat_buckets": 3,
+          "pure_non_low_repeat_buckets": 561,
+          "top_mixed_buckets": {
+            "134": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.333333333,
+              "total": 3
+            },
+            "342": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.333333333,
+              "total": 3
+            },
+            "354": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.333333333,
+              "total": 3
+            },
+            "534": {
+              "low_repeat": 3,
+              "low_repeat_fraction": 0.428571429,
+              "total": 7
+            },
+            "558": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.333333333,
+              "total": 3
+            },
+            "646": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.25,
+              "total": 4
+            },
+            "70": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.25,
+              "total": 4
+            },
+            "700": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.5,
+              "total": 2
+            }
+          },
+          "top_pure_low_repeat_buckets": {
+            "446": 1,
+            "756": 1,
+            "966": 1
+          }
+        },
+        "128": {
+          "low_repeat_buckets": 9,
+          "low_repeat_in_mixed_buckets": 13,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 0.0,
+          "low_repeat_total": 13,
+          "mixed_buckets": 9,
+          "occupied_buckets": 127,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 118,
+          "top_mixed_buckets": {
+            "116": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.125,
+              "total": 8
+            },
+            "22": {
+              "low_repeat": 3,
+              "low_repeat_fraction": 0.15,
+              "total": 20
+            },
+            "46": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.076923077,
+              "total": 13
+            },
+            "6": {
+              "low_repeat": 2,
+              "low_repeat_fraction": 0.153846154,
+              "total": 13
+            },
+            "60": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.2,
+              "total": 5
+            },
+            "62": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.5,
+              "total": 2
+            },
+            "70": {
+              "low_repeat": 2,
+              "low_repeat_fraction": 0.125,
+              "total": 16
+            },
+            "86": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.1,
+              "total": 10
+            }
+          },
+          "top_pure_low_repeat_buckets": {}
+        },
+        "16": {
+          "low_repeat_buckets": 5,
+          "low_repeat_in_mixed_buckets": 13,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 0.0,
+          "low_repeat_total": 13,
+          "mixed_buckets": 5,
+          "occupied_buckets": 16,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 11,
+          "top_mixed_buckets": {
+            "12": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.0125,
+              "total": 80
+            },
+            "14": {
+              "low_repeat": 2,
+              "low_repeat_fraction": 0.037037037,
+              "total": 54
+            },
+            "2": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.01369863,
+              "total": 73
+            },
+            "4": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.012345679,
+              "total": 81
+            },
+            "6": {
+              "low_repeat": 8,
+              "low_repeat_fraction": 0.093023256,
+              "total": 86
+            }
+          },
+          "top_pure_low_repeat_buckets": {}
+        },
+        "256": {
+          "low_repeat_buckets": 10,
+          "low_repeat_in_mixed_buckets": 12,
+          "low_repeat_in_pure_buckets": 1,
+          "low_repeat_pure_bucket_fraction": 0.076923077,
+          "low_repeat_total": 13,
+          "mixed_buckets": 9,
+          "occupied_buckets": 233,
+          "pure_low_repeat_buckets": 1,
+          "pure_non_low_repeat_buckets": 223,
+          "top_mixed_buckets": {
+            "134": {
+              "low_repeat": 2,
+              "low_repeat_fraction": 0.222222222,
+              "total": 9
+            },
+            "188": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.25,
+              "total": 4
+            },
+            "198": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.125,
+              "total": 8
+            },
+            "22": {
+              "low_repeat": 3,
+              "low_repeat_fraction": 0.3,
+              "total": 10
+            },
+            "244": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.5,
+              "total": 2
+            },
+            "46": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.125,
+              "total": 8
+            },
+            "70": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.125,
+              "total": 8
+            },
+            "86": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.142857143,
+              "total": 7
+            }
+          },
+          "top_pure_low_repeat_buckets": {
+            "190": 1
+          }
+        },
+        "32": {
+          "low_repeat_buckets": 7,
+          "low_repeat_in_mixed_buckets": 13,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 0.0,
+          "low_repeat_total": 13,
+          "mixed_buckets": 7,
+          "occupied_buckets": 32,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 25,
+          "top_mixed_buckets": {
+            "14": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.028571429,
+              "total": 35
+            },
+            "2": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.02,
+              "total": 50
+            },
+            "20": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.025,
+              "total": 40
+            },
+            "22": {
+              "low_repeat": 4,
+              "low_repeat_fraction": 0.095238095,
+              "total": 42
+            },
+            "28": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.047619048,
+              "total": 21
+            },
+            "30": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.052631579,
+              "total": 19
+            },
+            "6": {
+              "low_repeat": 4,
+              "low_repeat_fraction": 0.090909091,
+              "total": 44
+            }
+          },
+          "top_pure_low_repeat_buckets": {}
+        },
+        "4096": {
+          "low_repeat_buckets": 13,
+          "low_repeat_in_mixed_buckets": 5,
+          "low_repeat_in_pure_buckets": 8,
+          "low_repeat_pure_bucket_fraction": 0.615384615,
+          "low_repeat_total": 13,
+          "mixed_buckets": 5,
+          "occupied_buckets": 835,
+          "pure_low_repeat_buckets": 8,
+          "pure_non_low_repeat_buckets": 822,
+          "top_mixed_buckets": {
+            "1094": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.333333333,
+              "total": 3
+            },
+            "2182": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.5,
+              "total": 2
+            },
+            "2748": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.5,
+              "total": 2
+            },
+            "354": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.5,
+              "total": 2
+            },
+            "534": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.25,
+              "total": 4
+            }
+          },
+          "top_pure_low_repeat_buckets": {
+            "1558": 1,
+            "3414": 1,
+            "3518": 1,
+            "3606": 1,
+            "3630": 1,
+            "4038": 1,
+            "646": 1,
+            "756": 1
+          }
+        },
+        "512": {
+          "low_repeat_buckets": 10,
+          "low_repeat_in_mixed_buckets": 12,
+          "low_repeat_in_pure_buckets": 1,
+          "low_repeat_pure_bucket_fraction": 0.076923077,
+          "low_repeat_total": 13,
+          "mixed_buckets": 9,
+          "occupied_buckets": 381,
+          "pure_low_repeat_buckets": 1,
+          "pure_non_low_repeat_buckets": 371,
+          "top_mixed_buckets": {
+            "134": {
+              "low_repeat": 2,
+              "low_repeat_fraction": 0.285714286,
+              "total": 7
+            },
+            "188": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.5,
+              "total": 2
+            },
+            "22": {
+              "low_repeat": 3,
+              "low_repeat_fraction": 0.375,
+              "total": 8
+            },
+            "244": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.5,
+              "total": 2
+            },
+            "342": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.2,
+              "total": 5
+            },
+            "354": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.142857143,
+              "total": 7
+            },
+            "454": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.2,
+              "total": 5
+            },
+            "46": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.333333333,
+              "total": 3
+            }
+          },
+          "top_pure_low_repeat_buckets": {
+            "446": 1
+          }
+        },
+        "64": {
+          "low_repeat_buckets": 7,
+          "low_repeat_in_mixed_buckets": 13,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 0.0,
+          "low_repeat_total": 13,
+          "mixed_buckets": 7,
+          "occupied_buckets": 64,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 57,
+          "top_mixed_buckets": {
+            "22": {
+              "low_repeat": 4,
+              "low_repeat_fraction": 0.133333333,
+              "total": 30
+            },
+            "34": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.029411765,
+              "total": 34
+            },
+            "46": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.047619048,
+              "total": 21
+            },
+            "52": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.045454545,
+              "total": 22
+            },
+            "6": {
+              "low_repeat": 4,
+              "low_repeat_fraction": 0.137931034,
+              "total": 29
+            },
+            "60": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.166666667,
+              "total": 6
+            },
+            "62": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.2,
+              "total": 5
+            }
+          },
+          "top_pure_low_repeat_buckets": {}
+        },
+        "65536": {
+          "low_repeat_buckets": 13,
+          "low_repeat_in_mixed_buckets": 1,
+          "low_repeat_in_pure_buckets": 12,
+          "low_repeat_pure_bucket_fraction": 0.923076923,
+          "low_repeat_total": 13,
+          "mixed_buckets": 1,
+          "occupied_buckets": 988,
+          "pure_low_repeat_buckets": 12,
+          "pure_non_low_repeat_buckets": 975,
+          "top_mixed_buckets": {
+            "37398": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.5,
+              "total": 2
+            }
+          },
+          "top_pure_low_repeat_buckets": {
+            "17030": 1,
+            "17942": 1,
+            "19902": 1,
+            "23894": 1,
+            "25332": 1,
+            "25670": 1,
+            "52782": 1,
+            "60092": 1
+          }
+        }
+      },
+      "low_repeat_pressure_unit_count": 13,
+      "macro_align_after_counts": {
+        "3": 6,
+        "4": 5,
+        "5": 2
+      },
+      "macro_value_mod_64_counts": {
+        "11": 3,
+        "19": 1,
+        "27": 2,
+        "3": 2,
+        "35": 2,
+        "43": 2,
+        "51": 1
+      },
+      "parent_depth": 22,
+      "pressure_regime_counts": {
+        "high_after_ladder_window": 39,
+        "high_inside_active_ladder": 967,
+        "low_repeat_prepaid": 13
+      },
+      "pure_feature_claims": {
+        "all_entries_are_minus5_mod64_repeat_gates": true,
+        "all_lag_simulations_match_pressure_state": true,
+        "all_repeat_laws_checked": true
+      },
+      "retimed_transition_count": 869,
+      "step_offset_max": 27,
+      "step_offset_min": 8
+    },
+    {
+      "above_parent_pressure_unit_count": 2047,
+      "align_counts": {
+        "6": 9,
+        "7": 7,
+        "8": 2
+      },
+      "align_mod_3_counts": {
+        "0": 9,
+        "1": 7,
+        "2": 2
+      },
+      "cached": false,
+      "child_depth": 24,
+      "entry_mod_256_counts": {
+        "123": 7,
+        "187": 2,
+        "251": 2,
+        "59": 7
+      },
+      "event_index_counts": {
+        "1": 15,
+        "2": 3
+      },
+      "event_index_required_above_parent_counts": {
+        "1:1": 15,
+        "2:2": 3
+      },
+      "lag_counts": {
+        "2": 6,
+        "5": 12
+      },
+      "lag_minus_align_counts": {
+        "-1": 8,
+        "-2": 3,
+        "-3": 1,
+        "-4": 1,
+        "-5": 4,
+        "-6": 1
+      },
+      "lag_word_counts": {
+        "OO": 6,
+        "OOEOO": 12
+      },
+      "low_repeat_pressure_state_residue_purity": {
+        "1024": {
+          "low_repeat_buckets": 17,
+          "low_repeat_in_mixed_buckets": 13,
+          "low_repeat_in_pure_buckets": 5,
+          "low_repeat_pure_bucket_fraction": 0.277777778,
+          "low_repeat_total": 18,
+          "mixed_buckets": 12,
+          "occupied_buckets": 785,
+          "pure_low_repeat_buckets": 5,
+          "pure_non_low_repeat_buckets": 768,
+          "top_mixed_buckets": {
+            "22": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.5,
+              "total": 2
+            },
+            "24": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.5,
+              "total": 2
+            },
+            "258": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.5,
+              "total": 2
+            },
+            "342": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.333333333,
+              "total": 3
+            },
+            "744": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.5,
+              "total": 2
+            },
+            "832": {
+              "low_repeat": 2,
+              "low_repeat_fraction": 0.285714286,
+              "total": 7
+            },
+            "880": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.333333333,
+              "total": 3
+            },
+            "892": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.5,
+              "total": 2
+            }
+          },
+          "top_pure_low_repeat_buckets": {
+            "338": 1,
+            "352": 1,
+            "470": 1,
+            "854": 1,
+            "950": 1
+          }
+        },
+        "128": {
+          "low_repeat_buckets": 15,
+          "low_repeat_in_mixed_buckets": 18,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 0.0,
+          "low_repeat_total": 18,
+          "mixed_buckets": 15,
+          "occupied_buckets": 128,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 113,
+          "top_mixed_buckets": {
+            "112": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.058823529,
+              "total": 17
+            },
+            "124": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.142857143,
+              "total": 7
+            },
+            "46": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.071428571,
+              "total": 14
+            },
+            "54": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.111111111,
+              "total": 9
+            },
+            "64": {
+              "low_repeat": 2,
+              "low_repeat_fraction": 0.064516129,
+              "total": 31
+            },
+            "82": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.2,
+              "total": 5
+            },
+            "86": {
+              "low_repeat": 3,
+              "low_repeat_fraction": 0.130434783,
+              "total": 23
+            },
+            "96": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.066666667,
+              "total": 15
+            }
+          },
+          "top_pure_low_repeat_buckets": {}
+        },
+        "16": {
+          "low_repeat_buckets": 7,
+          "low_repeat_in_mixed_buckets": 18,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 0.0,
+          "low_repeat_total": 18,
+          "mixed_buckets": 7,
+          "occupied_buckets": 16,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 9,
+          "top_mixed_buckets": {
+            "0": {
+              "low_repeat": 5,
+              "low_repeat_fraction": 0.025252525,
+              "total": 198
+            },
+            "10": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.004366812,
+              "total": 229
+            },
+            "12": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.008547009,
+              "total": 117
+            },
+            "14": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.012345679,
+              "total": 81
+            },
+            "2": {
+              "low_repeat": 2,
+              "low_repeat_fraction": 0.019047619,
+              "total": 105
+            },
+            "6": {
+              "low_repeat": 6,
+              "low_repeat_fraction": 0.02690583,
+              "total": 223
+            },
+            "8": {
+              "low_repeat": 2,
+              "low_repeat_fraction": 0.011173184,
+              "total": 179
+            }
+          },
+          "top_pure_low_repeat_buckets": {}
+        },
+        "256": {
+          "low_repeat_buckets": 16,
+          "low_repeat_in_mixed_buckets": 18,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 0.0,
+          "low_repeat_total": 18,
+          "mixed_buckets": 16,
+          "occupied_buckets": 250,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 234,
+          "top_mixed_buckets": {
+            "124": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.25,
+              "total": 4
+            },
+            "182": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.2,
+              "total": 5
+            },
+            "22": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.125,
+              "total": 8
+            },
+            "232": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.142857143,
+              "total": 7
+            },
+            "46": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.125,
+              "total": 8
+            },
+            "64": {
+              "low_repeat": 2,
+              "low_repeat_fraction": 0.1,
+              "total": 20
+            },
+            "82": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.333333333,
+              "total": 3
+            },
+            "86": {
+              "low_repeat": 2,
+              "low_repeat_fraction": 0.181818182,
+              "total": 11
+            }
+          },
+          "top_pure_low_repeat_buckets": {}
+        },
+        "32": {
+          "low_repeat_buckets": 11,
+          "low_repeat_in_mixed_buckets": 18,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 0.0,
+          "low_repeat_total": 18,
+          "mixed_buckets": 11,
+          "occupied_buckets": 32,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 21,
+          "top_mixed_buckets": {
+            "0": {
+              "low_repeat": 4,
+              "low_repeat_fraction": 0.04,
+              "total": 100
+            },
+            "14": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.02,
+              "total": 50
+            },
+            "16": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.010204082,
+              "total": 98
+            },
+            "18": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.025641026,
+              "total": 39
+            },
+            "2": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.015151515,
+              "total": 66
+            },
+            "22": {
+              "low_repeat": 5,
+              "low_repeat_fraction": 0.064102564,
+              "total": 78
+            },
+            "24": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.012987013,
+              "total": 77
+            },
+            "28": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.026315789,
+              "total": 38
+            }
+          },
+          "top_pure_low_repeat_buckets": {}
+        },
+        "4096": {
+          "low_repeat_buckets": 18,
+          "low_repeat_in_mixed_buckets": 8,
+          "low_repeat_in_pure_buckets": 10,
+          "low_repeat_pure_bucket_fraction": 0.555555556,
+          "low_repeat_total": 18,
+          "mixed_buckets": 8,
+          "occupied_buckets": 1447,
+          "pure_low_repeat_buckets": 10,
+          "pure_non_low_repeat_buckets": 1429,
+          "top_mixed_buckets": {
+            "1514": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.5,
+              "total": 2
+            },
+            "1904": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.5,
+              "total": 2
+            },
+            "2070": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.5,
+              "total": 2
+            },
+            "302": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.5,
+              "total": 2
+            },
+            "3096": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.5,
+              "total": 2
+            },
+            "3104": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.5,
+              "total": 2
+            },
+            "3430": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.5,
+              "total": 2
+            },
+            "832": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.333333333,
+              "total": 3
+            }
+          },
+          "top_pure_low_repeat_buckets": {
+            "1916": 1,
+            "2400": 1,
+            "2792": 1,
+            "2998": 1,
+            "3410": 1,
+            "3414": 1,
+            "3904": 1,
+            "3926": 1
+          }
+        },
+        "512": {
+          "low_repeat_buckets": 16,
+          "low_repeat_in_mixed_buckets": 18,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 0.0,
+          "low_repeat_total": 18,
+          "mixed_buckets": 16,
+          "occupied_buckets": 465,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 449,
+          "top_mixed_buckets": {
+            "258": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.333333333,
+              "total": 3
+            },
+            "320": {
+              "low_repeat": 2,
+              "low_repeat_fraction": 0.153846154,
+              "total": 13
+            },
+            "338": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.5,
+              "total": 2
+            },
+            "342": {
+              "low_repeat": 2,
+              "low_repeat_fraction": 0.5,
+              "total": 4
+            },
+            "352": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.333333333,
+              "total": 3
+            },
+            "380": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.5,
+              "total": 2
+            },
+            "438": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.5,
+              "total": 2
+            },
+            "470": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.5,
+              "total": 2
+            }
+          },
+          "top_pure_low_repeat_buckets": {}
+        },
+        "64": {
+          "low_repeat_buckets": 13,
+          "low_repeat_in_mixed_buckets": 18,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 0.0,
+          "low_repeat_total": 18,
+          "mixed_buckets": 13,
+          "occupied_buckets": 64,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 51,
+          "top_mixed_buckets": {
+            "0": {
+              "low_repeat": 2,
+              "low_repeat_fraction": 0.033898305,
+              "total": 59
+            },
+            "18": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.083333333,
+              "total": 12
+            },
+            "22": {
+              "low_repeat": 4,
+              "low_repeat_fraction": 0.085106383,
+              "total": 47
+            },
+            "32": {
+              "low_repeat": 2,
+              "low_repeat_fraction": 0.048780488,
+              "total": 41
+            },
+            "46": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.04,
+              "total": 25
+            },
+            "48": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.026315789,
+              "total": 38
+            },
+            "54": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.032258065,
+              "total": 31
+            },
+            "60": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.066666667,
+              "total": 15
+            }
+          },
+          "top_pure_low_repeat_buckets": {}
+        },
+        "65536": {
+          "low_repeat_buckets": 18,
+          "low_repeat_in_mixed_buckets": 0,
+          "low_repeat_in_pure_buckets": 18,
+          "low_repeat_pure_bucket_fraction": 1.0,
+          "low_repeat_total": 18,
+          "mixed_buckets": 0,
+          "occupied_buckets": 1960,
+          "pure_low_repeat_buckets": 18,
+          "pure_non_low_repeat_buckets": 1942,
+          "top_mixed_buckets": {},
+          "top_pure_low_repeat_buckets": {
+            "24406": 1,
+            "32082": 1,
+            "44064": 1,
+            "50666": 1,
+            "51944": 1,
+            "56678": 1,
+            "6012": 1,
+            "60342": 1
+          }
+        }
+      },
+      "low_repeat_pressure_unit_count": 18,
+      "macro_align_after_counts": {
+        "3": 9,
+        "4": 7,
+        "5": 2
+      },
+      "macro_value_mod_64_counts": {
+        "11": 2,
+        "19": 1,
+        "27": 2,
+        "3": 2,
+        "35": 5,
+        "43": 5,
+        "51": 1
+      },
+      "parent_depth": 23,
+      "pressure_regime_counts": {
+        "high_after_ladder_window": 64,
+        "high_inside_active_ladder": 1965,
+        "low_repeat_prepaid": 18
+      },
+      "pure_feature_claims": {
+        "all_entries_are_minus5_mod64_repeat_gates": true,
+        "all_lag_simulations_match_pressure_state": true,
+        "all_repeat_laws_checked": true
+      },
+      "retimed_transition_count": 1749,
+      "step_offset_max": 34,
+      "step_offset_min": 7
+    },
+    {
+      "above_parent_pressure_unit_count": 4953,
+      "align_counts": {
+        "16": 1,
+        "6": 14,
+        "7": 7,
+        "8": 4,
+        "9": 1
+      },
+      "align_mod_3_counts": {
+        "0": 15,
+        "1": 8,
+        "2": 4
+      },
+      "cached": false,
+      "child_depth": 25,
+      "entry_mod_256_counts": {
+        "123": 7,
+        "187": 7,
+        "251": 6,
+        "59": 7
+      },
+      "event_index_counts": {
+        "1": 21,
+        "2": 6
+      },
+      "event_index_required_above_parent_counts": {
+        "1:1": 21,
+        "2:2": 6
+      },
+      "lag_counts": {
+        "2": 21,
+        "5": 6
+      },
+      "lag_minus_align_counts": {
+        "-1": 3,
+        "-14": 1,
+        "-2": 1,
+        "-3": 2,
+        "-4": 11,
+        "-5": 6,
+        "-6": 2,
+        "-7": 1
+      },
+      "lag_word_counts": {
+        "OO": 21,
+        "OOEOO": 6
+      },
+      "low_repeat_pressure_state_residue_purity": {
+        "1024": {
+          "low_repeat_buckets": 23,
+          "low_repeat_in_mixed_buckets": 25,
+          "low_repeat_in_pure_buckets": 2,
+          "low_repeat_pure_bucket_fraction": 0.074074074,
+          "low_repeat_total": 27,
+          "mixed_buckets": 21,
+          "occupied_buckets": 939,
+          "pure_low_repeat_buckets": 2,
+          "pure_non_low_repeat_buckets": 916,
+          "top_mixed_buckets": {
+            "1010": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.333333333,
+              "total": 3
+            },
+            "1014": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.333333333,
+              "total": 3
+            },
+            "22": {
+              "low_repeat": 2,
+              "low_repeat_fraction": 0.181818182,
+              "total": 11
+            },
+            "572": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.333333333,
+              "total": 3
+            },
+            "742": {
+              "low_repeat": 4,
+              "low_repeat_fraction": 0.333333333,
+              "total": 12
+            },
+            "854": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.333333333,
+              "total": 3
+            },
+            "974": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.333333333,
+              "total": 3
+            },
+            "992": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.5,
+              "total": 2
+            }
+          },
+          "top_pure_low_repeat_buckets": {
+            "222": 1,
+            "374": 1
+          }
+        },
+        "128": {
+          "low_repeat_buckets": 14,
+          "low_repeat_in_mixed_buckets": 27,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 0.0,
+          "low_repeat_total": 27,
+          "mixed_buckets": 14,
+          "occupied_buckets": 128,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 114,
+          "top_mixed_buckets": {
+            "102": {
+              "low_repeat": 5,
+              "low_repeat_fraction": 0.092592593,
+              "total": 54
+            },
+            "118": {
+              "low_repeat": 2,
+              "low_repeat_fraction": 0.08,
+              "total": 25
+            },
+            "22": {
+              "low_repeat": 3,
+              "low_repeat_fraction": 0.043478261,
+              "total": 69
+            },
+            "54": {
+              "low_repeat": 2,
+              "low_repeat_fraction": 0.105263158,
+              "total": 19
+            },
+            "6": {
+              "low_repeat": 2,
+              "low_repeat_fraction": 0.042553191,
+              "total": 47
+            },
+            "70": {
+              "low_repeat": 3,
+              "low_repeat_fraction": 0.035294118,
+              "total": 85
+            },
+            "86": {
+              "low_repeat": 3,
+              "low_repeat_fraction": 0.051724138,
+              "total": 58
+            },
+            "94": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.05,
+              "total": 20
+            }
+          },
+          "top_pure_low_repeat_buckets": {}
+        },
+        "16": {
+          "low_repeat_buckets": 6,
+          "low_repeat_in_mixed_buckets": 27,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 0.0,
+          "low_repeat_total": 27,
+          "mixed_buckets": 6,
+          "occupied_buckets": 16,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 10,
+          "top_mixed_buckets": {
+            "0": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.001594896,
+              "total": 627
+            },
+            "12": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.002873563,
+              "total": 348
+            },
+            "14": {
+              "low_repeat": 2,
+              "low_repeat_fraction": 0.010582011,
+              "total": 189
+            },
+            "2": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.002109705,
+              "total": 474
+            },
+            "6": {
+              "low_repeat": 21,
+              "low_repeat_fraction": 0.054404145,
+              "total": 386
+            },
+            "8": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.002222222,
+              "total": 450
+            }
+          },
+          "top_pure_low_repeat_buckets": {}
+        },
+        "256": {
+          "low_repeat_buckets": 16,
+          "low_repeat_in_mixed_buckets": 27,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 0.0,
+          "low_repeat_total": 27,
+          "mixed_buckets": 16,
+          "occupied_buckets": 255,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 239,
+          "top_mixed_buckets": {
+            "182": {
+              "low_repeat": 2,
+              "low_repeat_fraction": 0.133333333,
+              "total": 15
+            },
+            "198": {
+              "low_repeat": 2,
+              "low_repeat_fraction": 0.037037037,
+              "total": 54
+            },
+            "206": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.1,
+              "total": 10
+            },
+            "22": {
+              "low_repeat": 3,
+              "low_repeat_fraction": 0.096774194,
+              "total": 31
+            },
+            "222": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.125,
+              "total": 8
+            },
+            "230": {
+              "low_repeat": 5,
+              "low_repeat_fraction": 0.178571429,
+              "total": 28
+            },
+            "6": {
+              "low_repeat": 2,
+              "low_repeat_fraction": 0.068965517,
+              "total": 29
+            },
+            "86": {
+              "low_repeat": 3,
+              "low_repeat_fraction": 0.090909091,
+              "total": 33
+            }
+          },
+          "top_pure_low_repeat_buckets": {}
+        },
+        "32": {
+          "low_repeat_buckets": 8,
+          "low_repeat_in_mixed_buckets": 27,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 0.0,
+          "low_repeat_total": 27,
+          "mixed_buckets": 8,
+          "occupied_buckets": 32,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 24,
+          "top_mixed_buckets": {
+            "0": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.002762431,
+              "total": 362
+            },
+            "14": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.007633588,
+              "total": 131
+            },
+            "18": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.005780347,
+              "total": 173
+            },
+            "22": {
+              "low_repeat": 10,
+              "low_repeat_fraction": 0.058479532,
+              "total": 171
+            },
+            "28": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.010204082,
+              "total": 98
+            },
+            "30": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.017241379,
+              "total": 58
+            },
+            "6": {
+              "low_repeat": 11,
+              "low_repeat_fraction": 0.051162791,
+              "total": 215
+            },
+            "8": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.004587156,
+              "total": 218
+            }
+          },
+          "top_pure_low_repeat_buckets": {}
+        },
+        "4096": {
+          "low_repeat_buckets": 25,
+          "low_repeat_in_mixed_buckets": 19,
+          "low_repeat_in_pure_buckets": 8,
+          "low_repeat_pure_bucket_fraction": 0.296296296,
+          "low_repeat_total": 27,
+          "mixed_buckets": 17,
+          "occupied_buckets": 2382,
+          "pure_low_repeat_buckets": 8,
+          "pure_non_low_repeat_buckets": 2357,
+          "top_mixed_buckets": {
+            "1046": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.5,
+              "total": 2
+            },
+            "1766": {
+              "low_repeat": 2,
+              "low_repeat_fraction": 0.4,
+              "total": 5
+            },
+            "182": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.5,
+              "total": 2
+            },
+            "2342": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.5,
+              "total": 2
+            },
+            "2486": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.5,
+              "total": 2
+            },
+            "2502": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.5,
+              "total": 2
+            },
+            "2620": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.5,
+              "total": 2
+            },
+            "2790": {
+              "low_repeat": 2,
+              "low_repeat_fraction": 0.666666667,
+              "total": 3
+            }
+          },
+          "top_pure_low_repeat_buckets": {
+            "1798": 1,
+            "1998": 1,
+            "2034": 1,
+            "2326": 1,
+            "3040": 1,
+            "3294": 1,
+            "374": 1,
+            "4086": 1
+          }
+        },
+        "512": {
+          "low_repeat_buckets": 21,
+          "low_repeat_in_mixed_buckets": 27,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 0.0,
+          "low_repeat_total": 27,
+          "mixed_buckets": 21,
+          "occupied_buckets": 499,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 478,
+          "top_mixed_buckets": {
+            "22": {
+              "low_repeat": 2,
+              "low_repeat_fraction": 0.1,
+              "total": 20
+            },
+            "222": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.166666667,
+              "total": 6
+            },
+            "230": {
+              "low_repeat": 5,
+              "low_repeat_fraction": 0.238095238,
+              "total": 21
+            },
+            "342": {
+              "low_repeat": 2,
+              "low_repeat_fraction": 0.2,
+              "total": 10
+            },
+            "374": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.333333333,
+              "total": 3
+            },
+            "438": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.166666667,
+              "total": 6
+            },
+            "462": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.166666667,
+              "total": 6
+            },
+            "502": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.2,
+              "total": 5
+            }
+          },
+          "top_pure_low_repeat_buckets": {}
+        },
+        "64": {
+          "low_repeat_buckets": 10,
+          "low_repeat_in_mixed_buckets": 27,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 0.0,
+          "low_repeat_total": 27,
+          "mixed_buckets": 10,
+          "occupied_buckets": 64,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 54,
+          "top_mixed_buckets": {
+            "14": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.015625,
+              "total": 64
+            },
+            "22": {
+              "low_repeat": 6,
+              "low_repeat_fraction": 0.047244094,
+              "total": 127
+            },
+            "30": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.027027027,
+              "total": 37
+            },
+            "38": {
+              "low_repeat": 6,
+              "low_repeat_fraction": 0.072289157,
+              "total": 83
+            },
+            "40": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.008547009,
+              "total": 117
+            },
+            "54": {
+              "low_repeat": 4,
+              "low_repeat_fraction": 0.090909091,
+              "total": 44
+            },
+            "6": {
+              "low_repeat": 5,
+              "low_repeat_fraction": 0.037878788,
+              "total": 132
+            },
+            "60": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.035714286,
+              "total": 28
+            }
+          },
+          "top_pure_low_repeat_buckets": {}
+        },
+        "65536": {
+          "low_repeat_buckets": 27,
+          "low_repeat_in_mixed_buckets": 0,
+          "low_repeat_in_pure_buckets": 27,
+          "low_repeat_pure_bucket_fraction": 1.0,
+          "low_repeat_total": 27,
+          "mixed_buckets": 0,
+          "occupied_buckets": 4529,
+          "pure_low_repeat_buckets": 27,
+          "pure_non_low_repeat_buckets": 4502,
+          "top_mixed_buckets": {},
+          "top_pure_low_repeat_buckets": {
+            "19424": 1,
+            "2034": 1,
+            "23270": 1,
+            "46822": 1,
+            "51638": 1,
+            "58886": 1,
+            "6716": 1,
+            "6952": 1
+          }
+        }
+      },
+      "low_repeat_pressure_unit_count": 27,
+      "macro_align_after_counts": {
+        "13": 1,
+        "3": 14,
+        "4": 7,
+        "5": 4,
+        "6": 1
+      },
+      "macro_value_mod_64_counts": {
+        "11": 3,
+        "19": 2,
+        "27": 4,
+        "3": 3,
+        "35": 4,
+        "43": 4,
+        "51": 5,
+        "59": 2
+      },
+      "parent_depth": 24,
+      "pressure_regime_counts": {
+        "high_after_ladder_window": 160,
+        "high_inside_active_ladder": 4766,
+        "low_repeat_prepaid": 27
+      },
+      "pure_feature_claims": {
+        "all_entries_are_minus5_mod64_repeat_gates": true,
+        "all_lag_simulations_match_pressure_state": true,
+        "all_repeat_laws_checked": true
+      },
+      "retimed_transition_count": 4288,
+      "step_offset_max": 52,
+      "step_offset_min": 6
+    },
+    {
+      "above_parent_pressure_unit_count": 6652,
+      "align_counts": {
+        "6": 94,
+        "7": 21,
+        "8": 2
+      },
+      "align_mod_3_counts": {
+        "0": 94,
+        "1": 21,
+        "2": 2
+      },
+      "cached": false,
+      "child_depth": 26,
+      "entry_mod_256_counts": {
+        "123": 21,
+        "187": 54,
+        "251": 2,
+        "59": 40
+      },
+      "event_index_counts": {
+        "1": 112,
+        "2": 4,
+        "3": 1
+      },
+      "event_index_required_above_parent_counts": {
+        "1:1": 112,
+        "2:2": 4,
+        "3:3": 1
+      },
+      "lag_counts": {
+        "2": 23,
+        "5": 94
+      },
+      "lag_minus_align_counts": {
+        "-1": 73,
+        "-2": 21,
+        "-4": 21,
+        "-6": 2
+      },
+      "lag_word_counts": {
+        "OO": 23,
+        "OOEOO": 94
+      },
+      "low_repeat_pressure_state_residue_purity": {
+        "1024": {
+          "low_repeat_buckets": 89,
+          "low_repeat_in_mixed_buckets": 117,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 0.0,
+          "low_repeat_total": 117,
+          "mixed_buckets": 89,
+          "occupied_buckets": 979,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 890,
+          "top_mixed_buckets": {
+            "18": {
+              "low_repeat": 2,
+              "low_repeat_fraction": 0.333333333,
+              "total": 6
+            },
+            "230": {
+              "low_repeat": 3,
+              "low_repeat_fraction": 0.428571429,
+              "total": 7
+            },
+            "276": {
+              "low_repeat": 3,
+              "low_repeat_fraction": 0.176470588,
+              "total": 17
+            },
+            "294": {
+              "low_repeat": 3,
+              "low_repeat_fraction": 0.375,
+              "total": 8
+            },
+            "564": {
+              "low_repeat": 4,
+              "low_repeat_fraction": 0.235294118,
+              "total": 17
+            },
+            "624": {
+              "low_repeat": 2,
+              "low_repeat_fraction": 0.285714286,
+              "total": 7
+            },
+            "706": {
+              "low_repeat": 2,
+              "low_repeat_fraction": 0.285714286,
+              "total": 7
+            },
+            "82": {
+              "low_repeat": 2,
+              "low_repeat_fraction": 0.333333333,
+              "total": 6
+            }
+          },
+          "top_pure_low_repeat_buckets": {}
+        },
+        "128": {
+          "low_repeat_buckets": 40,
+          "low_repeat_in_mixed_buckets": 117,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 0.0,
+          "low_repeat_total": 117,
+          "mixed_buckets": 40,
+          "occupied_buckets": 128,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 88,
+          "top_mixed_buckets": {
+            "102": {
+              "low_repeat": 6,
+              "low_repeat_fraction": 0.103448276,
+              "total": 58
+            },
+            "16": {
+              "low_repeat": 5,
+              "low_repeat_fraction": 0.051546392,
+              "total": 97
+            },
+            "20": {
+              "low_repeat": 7,
+              "low_repeat_fraction": 0.069306931,
+              "total": 101
+            },
+            "38": {
+              "low_repeat": 9,
+              "low_repeat_fraction": 0.173076923,
+              "total": 52
+            },
+            "48": {
+              "low_repeat": 6,
+              "low_repeat_fraction": 0.060606061,
+              "total": 99
+            },
+            "52": {
+              "low_repeat": 6,
+              "low_repeat_fraction": 0.051724138,
+              "total": 116
+            },
+            "6": {
+              "low_repeat": 4,
+              "low_repeat_fraction": 0.064516129,
+              "total": 62
+            },
+            "80": {
+              "low_repeat": 5,
+              "low_repeat_fraction": 0.040650407,
+              "total": 123
+            }
+          },
+          "top_pure_low_repeat_buckets": {}
+        },
+        "16": {
+          "low_repeat_buckets": 7,
+          "low_repeat_in_mixed_buckets": 117,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 0.0,
+          "low_repeat_total": 117,
+          "mixed_buckets": 7,
+          "occupied_buckets": 16,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 9,
+          "top_mixed_buckets": {
+            "0": {
+              "low_repeat": 27,
+              "low_repeat_fraction": 0.03125,
+              "total": 864
+            },
+            "10": {
+              "low_repeat": 11,
+              "low_repeat_fraction": 0.018835616,
+              "total": 584
+            },
+            "12": {
+              "low_repeat": 12,
+              "low_repeat_fraction": 0.024640657,
+              "total": 487
+            },
+            "2": {
+              "low_repeat": 10,
+              "low_repeat_fraction": 0.024390244,
+              "total": 410
+            },
+            "4": {
+              "low_repeat": 27,
+              "low_repeat_fraction": 0.036144578,
+              "total": 747
+            },
+            "6": {
+              "low_repeat": 23,
+              "low_repeat_fraction": 0.053738318,
+              "total": 428
+            },
+            "8": {
+              "low_repeat": 7,
+              "low_repeat_fraction": 0.0109375,
+              "total": 640
+            }
+          },
+          "top_pure_low_repeat_buckets": {}
+        },
+        "256": {
+          "low_repeat_buckets": 58,
+          "low_repeat_in_mixed_buckets": 117,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 0.0,
+          "low_repeat_total": 117,
+          "mixed_buckets": 58,
+          "occupied_buckets": 256,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 198,
+          "top_mixed_buckets": {
+            "16": {
+              "low_repeat": 4,
+              "low_repeat_fraction": 0.068965517,
+              "total": 58
+            },
+            "18": {
+              "low_repeat": 3,
+              "low_repeat_fraction": 0.115384615,
+              "total": 26
+            },
+            "20": {
+              "low_repeat": 6,
+              "low_repeat_fraction": 0.095238095,
+              "total": 63
+            },
+            "220": {
+              "low_repeat": 3,
+              "low_repeat_fraction": 0.085714286,
+              "total": 35
+            },
+            "230": {
+              "low_repeat": 4,
+              "low_repeat_fraction": 0.166666667,
+              "total": 24
+            },
+            "38": {
+              "low_repeat": 8,
+              "low_repeat_fraction": 0.228571429,
+              "total": 35
+            },
+            "52": {
+              "low_repeat": 6,
+              "low_repeat_fraction": 0.078947368,
+              "total": 76
+            },
+            "80": {
+              "low_repeat": 5,
+              "low_repeat_fraction": 0.071428571,
+              "total": 70
+            }
+          },
+          "top_pure_low_repeat_buckets": {}
+        },
+        "32": {
+          "low_repeat_buckets": 14,
+          "low_repeat_in_mixed_buckets": 117,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 0.0,
+          "low_repeat_total": 117,
+          "mixed_buckets": 14,
+          "occupied_buckets": 32,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 18,
+          "top_mixed_buckets": {
+            "0": {
+              "low_repeat": 9,
+              "low_repeat_fraction": 0.018108652,
+              "total": 497
+            },
+            "10": {
+              "low_repeat": 10,
+              "low_repeat_fraction": 0.029069767,
+              "total": 344
+            },
+            "12": {
+              "low_repeat": 6,
+              "low_repeat_fraction": 0.018348624,
+              "total": 327
+            },
+            "16": {
+              "low_repeat": 18,
+              "low_repeat_fraction": 0.049046322,
+              "total": 367
+            },
+            "20": {
+              "low_repeat": 16,
+              "low_repeat_fraction": 0.036363636,
+              "total": 440
+            },
+            "28": {
+              "low_repeat": 6,
+              "low_repeat_fraction": 0.0375,
+              "total": 160
+            },
+            "4": {
+              "low_repeat": 11,
+              "low_repeat_fraction": 0.035830619,
+              "total": 307
+            },
+            "6": {
+              "low_repeat": 21,
+              "low_repeat_fraction": 0.084337349,
+              "total": 249
+            }
+          },
+          "top_pure_low_repeat_buckets": {}
+        },
+        "4096": {
+          "low_repeat_buckets": 108,
+          "low_repeat_in_mixed_buckets": 107,
+          "low_repeat_in_pure_buckets": 10,
+          "low_repeat_pure_bucket_fraction": 0.085470085,
+          "low_repeat_total": 117,
+          "mixed_buckets": 98,
+          "occupied_buckets": 2790,
+          "pure_low_repeat_buckets": 10,
+          "pure_non_low_repeat_buckets": 2682,
+          "top_mixed_buckets": {
+            "1042": {
+              "low_repeat": 2,
+              "low_repeat_fraction": 0.5,
+              "total": 4
+            },
+            "1300": {
+              "low_repeat": 2,
+              "low_repeat_fraction": 0.5,
+              "total": 4
+            },
+            "170": {
+              "low_repeat": 2,
+              "low_repeat_fraction": 0.666666667,
+              "total": 3
+            },
+            "2278": {
+              "low_repeat": 2,
+              "low_repeat_fraction": 0.666666667,
+              "total": 3
+            },
+            "2310": {
+              "low_repeat": 2,
+              "low_repeat_fraction": 0.666666667,
+              "total": 3
+            },
+            "3110": {
+              "low_repeat": 2,
+              "low_repeat_fraction": 0.4,
+              "total": 5
+            },
+            "3636": {
+              "low_repeat": 2,
+              "low_repeat_fraction": 0.4,
+              "total": 5
+            },
+            "624": {
+              "low_repeat": 2,
+              "low_repeat_fraction": 0.666666667,
+              "total": 3
+            }
+          },
+          "top_pure_low_repeat_buckets": {
+            "1206": 1,
+            "1500": 1,
+            "1868": 1,
+            "2322": 1,
+            "2632": 1,
+            "3652": 1,
+            "472": 1,
+            "82": 1
+          }
+        },
+        "512": {
+          "low_repeat_buckets": 76,
+          "low_repeat_in_mixed_buckets": 117,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 0.0,
+          "low_repeat_total": 117,
+          "mixed_buckets": 76,
+          "occupied_buckets": 510,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 434,
+          "top_mixed_buckets": {
+            "20": {
+              "low_repeat": 3,
+              "low_repeat_fraction": 0.125,
+              "total": 24
+            },
+            "228": {
+              "low_repeat": 3,
+              "low_repeat_fraction": 0.103448276,
+              "total": 29
+            },
+            "230": {
+              "low_repeat": 3,
+              "low_repeat_fraction": 0.3,
+              "total": 10
+            },
+            "262": {
+              "low_repeat": 3,
+              "low_repeat_fraction": 0.111111111,
+              "total": 27
+            },
+            "272": {
+              "low_repeat": 4,
+              "low_repeat_fraction": 0.133333333,
+              "total": 30
+            },
+            "294": {
+              "low_repeat": 5,
+              "low_repeat_fraction": 0.3125,
+              "total": 16
+            },
+            "38": {
+              "low_repeat": 3,
+              "low_repeat_fraction": 0.157894737,
+              "total": 19
+            },
+            "52": {
+              "low_repeat": 4,
+              "low_repeat_fraction": 0.097560976,
+              "total": 41
+            }
+          },
+          "top_pure_low_repeat_buckets": {}
+        },
+        "64": {
+          "low_repeat_buckets": 23,
+          "low_repeat_in_mixed_buckets": 117,
+          "low_repeat_in_pure_buckets": 0,
+          "low_repeat_pure_bucket_fraction": 0.0,
+          "low_repeat_total": 117,
+          "mixed_buckets": 23,
+          "occupied_buckets": 64,
+          "pure_low_repeat_buckets": 0,
+          "pure_non_low_repeat_buckets": 41,
+          "top_mixed_buckets": {
+            "16": {
+              "low_repeat": 10,
+              "low_repeat_fraction": 0.045454545,
+              "total": 220
+            },
+            "20": {
+              "low_repeat": 10,
+              "low_repeat_fraction": 0.042016807,
+              "total": 238
+            },
+            "28": {
+              "low_repeat": 6,
+              "low_repeat_fraction": 0.048387097,
+              "total": 124
+            },
+            "36": {
+              "low_repeat": 6,
+              "low_repeat_fraction": 0.048387097,
+              "total": 124
+            },
+            "38": {
+              "low_repeat": 15,
+              "low_repeat_fraction": 0.136363636,
+              "total": 110
+            },
+            "42": {
+              "low_repeat": 8,
+              "low_repeat_fraction": 0.041884817,
+              "total": 191
+            },
+            "48": {
+              "low_repeat": 8,
+              "low_repeat_fraction": 0.054421769,
+              "total": 147
+            },
+            "6": {
+              "low_repeat": 6,
+              "low_repeat_fraction": 0.043165468,
+              "total": 139
+            }
+          },
+          "top_pure_low_repeat_buckets": {}
+        },
+        "65536": {
+          "low_repeat_buckets": 117,
+          "low_repeat_in_mixed_buckets": 15,
+          "low_repeat_in_pure_buckets": 102,
+          "low_repeat_pure_bucket_fraction": 0.871794872,
+          "low_repeat_total": 117,
+          "mixed_buckets": 15,
+          "occupied_buckets": 5970,
+          "pure_low_repeat_buckets": 102,
+          "pure_non_low_repeat_buckets": 5853,
+          "top_mixed_buckets": {
+            "38344": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.5,
+              "total": 2
+            },
+            "40660": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.5,
+              "total": 2
+            },
+            "44710": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.5,
+              "total": 2
+            },
+            "50194": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.5,
+              "total": 2
+            },
+            "53584": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.5,
+              "total": 2
+            },
+            "55552": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.5,
+              "total": 2
+            },
+            "63238": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.5,
+              "total": 2
+            },
+            "64970": {
+              "low_repeat": 1,
+              "low_repeat_fraction": 0.5,
+              "total": 2
+            }
+          },
+          "top_pure_low_repeat_buckets": {
+            "15924": 1,
+            "21104": 1,
+            "28754": 1,
+            "39718": 1,
+            "50708": 1,
+            "55344": 1,
+            "55880": 1,
+            "56900": 1
+          }
+        }
+      },
+      "low_repeat_pressure_unit_count": 117,
+      "macro_align_after_counts": {
+        "3": 94,
+        "4": 21,
+        "5": 2
+      },
+      "macro_value_mod_64_counts": {
+        "11": 11,
+        "19": 21,
+        "27": 2,
+        "3": 11,
+        "35": 29,
+        "43": 10,
+        "51": 33
+      },
+      "parent_depth": 25,
+      "pressure_regime_counts": {
+        "high_after_ladder_window": 340,
+        "high_inside_active_ladder": 6195,
+        "low_repeat_prepaid": 117
+      },
+      "pure_feature_claims": {
+        "all_entries_are_minus5_mod64_repeat_gates": true,
+        "all_lag_simulations_match_pressure_state": true,
+        "all_repeat_laws_checked": true
+      },
+      "retimed_transition_count": 5677,
+      "step_offset_max": 59,
+      "step_offset_min": 5
+    }
+  ],
+  "parameters": {
+    "cache_template": "experiments/results/branch_prefix_retimed_low_repeat_units_d{parent_depth}_d{child_depth}_20260702.json",
+    "max_depth": 1024,
+    "max_parent_depth": 25,
+    "max_steps": 50000,
+    "min_parent_depth": 18,
+    "refresh": false,
+    "top_n": 8,
+    "use_cache": false,
+    "write_depth_cache": true
+  },
+  "status": "branch-prefix-retimed-low-repeat-units-sweep"
+}

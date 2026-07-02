@@ -98,6 +98,7 @@
 | `sibling_scan_3plus_1e7.json` | 1,795 | — | `—` |
 | `sibling_scan_5plus_2e4.json` | 2,198 | — | `—` |
 | `spectral_sharp_defect.json` | 1,197 | — | `—` |
+| `spine_phase_collision_lab_d12_20260702.json` | 10,982 | 20260702 | `spine_phase_collision_lab.py` |
 | `spine_ladder_lab.json` | 3,441 | — | `spine_ladder_lab.py` |
 | `tau_scan_1e8.json` | 5,838 | — | `—` |
 | `tau_scan_1e9.json` | 6,274 | — | `—` |
