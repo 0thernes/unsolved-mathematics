@@ -1,0 +1,975 @@
+{
+  "child_required_histogram": {
+    "2": 2,
+    "3": 37,
+    "4": 51,
+    "5": 22,
+    "6": 17,
+    "7": 4,
+    "8": 2
+  },
+  "credit_delta_histogram": {
+    "-1": 28,
+    "-10": 1,
+    "-11": 1,
+    "-2": 17,
+    "-3": 16,
+    "-4": 8,
+    "-5": 4,
+    "-6": 5,
+    "-7": 6,
+    "-8": 2,
+    "-9": 2,
+    "0": 43,
+    "1": 2
+  },
+  "elapsed_seconds": 4.193674,
+  "event_index_by_regime": {
+    "high_after_ladder_window:1": 4,
+    "high_inside_active_ladder:1": 131,
+    "high_inside_active_ladder:2": 10,
+    "high_inside_active_ladder:3": 2
+  },
+  "first_pressure_unit_count": 135,
+  "first_required_above_parent_histogram": {
+    "1": 135
+  },
+  "first_surplus_histogram": {
+    "10": 6,
+    "11": 5,
+    "12": 2,
+    "15": 1,
+    "3": 4,
+    "4": 18,
+    "5": 21,
+    "6": 22,
+    "7": 24,
+    "8": 20,
+    "9": 12
+  },
+  "frontiers": {
+    "child": {
+      "base_depth": 20,
+      "certified_fraction": 0.97393798828125,
+      "certified_leaf_count": 4404,
+      "certified_units_mod_2^base_depth": 1021248,
+      "depth": 20,
+      "frontier_count": 27328,
+      "frontier_fraction": 0.02606201171875,
+      "frontier_odd_count_histogram": {
+        "13": 8045,
+        "14": 9592,
+        "15": 6167,
+        "16": 2595,
+        "17": 760,
+        "18": 150,
+        "19": 18,
+        "20": 1
+      },
+      "positive_live_count": 27328
+    },
+    "parent": {
+      "base_depth": 19,
+      "certified_fraction": 0.9714088439941406,
+      "certified_leaf_count": 1752,
+      "certified_units_mod_2^base_depth": 509298,
+      "depth": 19,
+      "frontier_count": 14990,
+      "frontier_fraction": 0.028591156005859375,
+      "frontier_odd_count_histogram": {
+        "12": 2652,
+        "13": 5393,
+        "14": 4199,
+        "15": 1968,
+        "16": 627,
+        "17": 133,
+        "18": 17,
+        "19": 1
+      },
+      "positive_live_count": 14990
+    }
+  },
+  "high_after_ladder_examples": [
+    {
+      "child": 591087,
+      "child_bit": 1,
+      "child_credit": 12,
+      "child_required": 4,
+      "credit": 10,
+      "credit_delta": -2,
+      "event": "ordinary_step",
+      "event_index": 1,
+      "lag": 7,
+      "lag_minus_align": 3,
+      "last_credit_align": 4,
+      "last_credit_kind": "high_ladder",
+      "last_credit_state": 9099631,
+      "last_credit_step": 23,
+      "parent": 66799,
+      "parent_required": 3,
+      "regime": "high_after_ladder_window",
+      "required": 4,
+      "required_above_parent": 1,
+      "required_delta": 1,
+      "state": 51825248,
+      "step": 30,
+      "surplus": 6
+    },
+    {
+      "child": 818279,
+      "child_bit": 1,
+      "child_credit": 8,
+      "child_required": 4,
+      "credit": 8,
+      "credit_delta": -2,
+      "event": "ordinary_step",
+      "event_index": 1,
+      "lag": 6,
+      "lag_minus_align": 3,
+      "last_credit_align": 3,
+      "last_credit_kind": "high_ladder",
+      "last_credit_state": 18895783,
+      "last_credit_step": 24,
+      "parent": 293991,
+      "parent_required": 3,
+      "regime": "high_after_ladder_window",
+      "required": 4,
+      "required_above_parent": 1,
+      "required_delta": 1,
+      "state": 71744930,
+      "step": 30,
+      "surplus": 4
+    },
+    {
+      "child": 932063,
+      "child_bit": 1,
+      "child_credit": 10,
+      "child_required": 3,
+      "credit": 10,
+      "credit_delta": -1,
+      "event": "ordinary_step",
+      "event_index": 1,
+      "lag": 9,
+      "lag_minus_align": 3,
+      "last_credit_align": 6,
+      "last_credit_kind": "high_ladder",
+      "last_credit_state": 2125759,
+      "last_credit_step": 21,
+      "parent": 407775,
+      "parent_required": 2,
+      "regime": "high_after_ladder_window",
+      "required": 3,
+      "required_above_parent": 1,
+      "required_delta": 1,
+      "state": 27240452,
+      "step": 30,
+      "surplus": 7
+    }
+  ],
+  "interpretation": "Finite symbolic signature miner for retimed-pressure transitions. Pure-feature claims are theorem signals; residue-purity summaries test whether fixed low bits alone decide the hard class.",
+  "lag_by_regime": {
+    "high_after_ladder_window:6": 1,
+    "high_after_ladder_window:7": 2,
+    "high_after_ladder_window:9": 1,
+    "high_inside_active_ladder:11": 2,
+    "high_inside_active_ladder:12": 1,
+    "high_inside_active_ladder:13": 1,
+    "high_inside_active_ladder:15": 2,
+    "high_inside_active_ladder:18": 1,
+    "high_inside_active_ladder:3": 53,
+    "high_inside_active_ladder:4": 24,
+    "high_inside_active_ladder:5": 27,
+    "high_inside_active_ladder:6": 13,
+    "high_inside_active_ladder:7": 10,
+    "high_inside_active_ladder:8": 7,
+    "high_inside_active_ladder:9": 2
+  },
+  "lag_minus_align_by_kind": {
+    "high_ladder:-1": 30,
+    "high_ladder:-2": 10,
+    "high_ladder:-3": 1,
+    "high_ladder:-4": 2,
+    "high_ladder:0": 100,
+    "high_ladder:3": 4
+  },
+  "largest_lag_minus_align_units": [
+    {
+      "child": 1048271,
+      "child_bit": 1,
+      "child_credit": 14,
+      "child_required": 5,
+      "credit": 12,
+      "credit_delta": 0,
+      "event": "ordinary_step",
+      "event_index": 1,
+      "lag": 7,
+      "lag_minus_align": 3,
+      "last_credit_align": 4,
+      "last_credit_kind": "high_ladder",
+      "last_credit_state": 48413551,
+      "last_credit_step": 23,
+      "parent": 523983,
+      "parent_required": 4,
+      "regime": "high_after_ladder_window",
+      "required": 5,
+      "required_above_parent": 1,
+      "required_delta": 1,
+      "state": 275730308,
+      "step": 30,
+      "surplus": 7
+    },
+    {
+      "child": 932063,
+      "child_bit": 1,
+      "child_credit": 10,
+      "child_required": 3,
+      "credit": 10,
+      "credit_delta": -1,
+      "event": "ordinary_step",
+      "event_index": 1,
+      "lag": 9,
+      "lag_minus_align": 3,
+      "last_credit_align": 6,
+      "last_credit_kind": "high_ladder",
+      "last_credit_state": 2125759,
+      "last_credit_step": 21,
+      "parent": 407775,
+      "parent_required": 2,
+      "regime": "high_after_ladder_window",
+      "required": 3,
+      "required_above_parent": 1,
+      "required_delta": 1,
+      "state": 27240452,
+      "step": 30,
+      "surplus": 7
+    },
+    {
+      "child": 818279,
+      "child_bit": 1,
+      "child_credit": 8,
+      "child_required": 4,
+      "credit": 8,
+      "credit_delta": -2,
+      "event": "ordinary_step",
+      "event_index": 1,
+      "lag": 6,
+      "lag_minus_align": 3,
+      "last_credit_align": 3,
+      "last_credit_kind": "high_ladder",
+      "last_credit_state": 18895783,
+      "last_credit_step": 24,
+      "parent": 293991,
+      "parent_required": 3,
+      "regime": "high_after_ladder_window",
+      "required": 4,
+      "required_above_parent": 1,
+      "required_delta": 1,
+      "state": 71744930,
+      "step": 30,
+      "surplus": 4
+    }
+  ],
+  "last_credit_align_counts": {
+    "high_ladder:11": 2,
+    "high_ladder:13": 1,
+    "high_ladder:14": 1,
+    "high_ladder:17": 1,
+    "high_ladder:19": 2,
+    "high_ladder:3": 40,
+    "high_ladder:4": 34,
+    "high_ladder:5": 23,
+    "high_ladder:6": 12,
+    "high_ladder:7": 15,
+    "high_ladder:8": 11,
+    "high_ladder:9": 5
+  },
+  "last_credit_kind_counts": {
+    "high_ladder": 147
+  },
+  "low_repeat_examples": [],
+  "missing_credit_units": [],
+  "nonpositive_surplus_units": [],
+  "parameters": {
+    "max_depth": 1024,
+    "max_steps": 50000,
+    "output": null,
+    "parent_depth": 19,
+    "quiet": true,
+    "residue_moduli": [
+      "16",
+      "64",
+      "256",
+      "1024",
+      "4096",
+      "65536"
+    ],
+    "residue_top_n": 8,
+    "top_n": 3
+  },
+  "parent_required_histogram": {
+    "1": 2,
+    "2": 38,
+    "3": 50,
+    "4": 27,
+    "5": 16,
+    "6": 2
+  },
+  "positive_pressure_transition_count": 1950,
+  "pressure_event_counts": {
+    "high_ladder_step": 143,
+    "ordinary_step": 4
+  },
+  "pressure_regime_counts": {
+    "high_after_ladder_window": 4,
+    "high_inside_active_ladder": 143
+  },
+  "pressure_unit_child_bit_counts": {
+    "1": 147
+  },
+  "pressure_unit_count": 147,
+  "pure_feature_claims": {
+    "all_first_pressure_units_are_one_unit": true,
+    "all_pressure_units_are_upper_lift_child": true,
+    "all_pressure_units_have_positive_surplus": true,
+    "all_pressure_units_have_prior_credit": true,
+    "all_retimed_children_are_high_assisted": true,
+    "all_retimed_transitions_are_upper_lift_child": true,
+    "all_retimed_transitions_have_first_pressure_unit": true
+  },
+  "required_above_parent_histogram": {
+    "1": 135,
+    "2": 10,
+    "3": 2
+  },
+  "required_delta_histogram": {
+    "1": 125,
+    "2": 8,
+    "3": 2
+  },
+  "residue_summary": {
+    "last_credit_state_mod_1024": {
+      "occupied": 77,
+      "top": {
+        "1023": 7,
+        "127": 4,
+        "191": 4,
+        "255": 9,
+        "303": 4,
+        "383": 6,
+        "511": 5,
+        "895": 5
+      }
+    },
+    "last_credit_state_mod_16": {
+      "occupied": 2,
+      "top": {
+        "15": 107,
+        "7": 40
+      }
+    },
+    "last_credit_state_mod_256": {
+      "occupied": 28,
+      "top": {
+        "111": 6,
+        "127": 15,
+        "15": 8,
+        "191": 7,
+        "255": 23,
+        "47": 7,
+        "63": 5,
+        "95": 10
+      }
+    },
+    "last_credit_state_mod_4096": {
+      "occupied": 114,
+      "top": {
+        "127": 3,
+        "1535": 3,
+        "2303": 5,
+        "2351": 3,
+        "3327": 3,
+        "383": 3,
+        "3967": 3,
+        "4095": 5
+      }
+    },
+    "last_credit_state_mod_64": {
+      "occupied": 8,
+      "top": {
+        "15": 18,
+        "23": 10,
+        "31": 23,
+        "39": 9,
+        "47": 16,
+        "55": 7,
+        "63": 50,
+        "7": 14
+      }
+    },
+    "last_credit_state_mod_65536": {
+      "occupied": 134,
+      "top": {
+        "28799": 2,
+        "34183": 2,
+        "383": 2,
+        "47359": 4,
+        "49343": 2,
+        "60671": 2,
+        "65407": 2,
+        "65535": 3
+      }
+    },
+    "pressure_state_mod_1024": {
+      "occupied": 127,
+      "top": {
+        "369": 3,
+        "418": 2,
+        "592": 2,
+        "682": 2,
+        "716": 2,
+        "88": 3,
+        "900": 2,
+        "906": 3
+      }
+    },
+    "pressure_state_mod_16": {
+      "occupied": 16,
+      "top": {
+        "0": 22,
+        "10": 15,
+        "13": 8,
+        "2": 17,
+        "4": 13,
+        "5": 11,
+        "6": 11,
+        "8": 14
+      }
+    },
+    "pressure_state_mod_256": {
+      "occupied": 97,
+      "top": {
+        "0": 4,
+        "104": 3,
+        "113": 3,
+        "130": 4,
+        "132": 3,
+        "162": 3,
+        "80": 4,
+        "88": 4
+      }
+    },
+    "pressure_state_mod_4096": {
+      "occupied": 138,
+      "top": {
+        "1128": 2,
+        "1930": 2,
+        "3468": 2,
+        "3788": 2,
+        "3972": 2,
+        "579": 2,
+        "682": 2,
+        "88": 3
+      }
+    },
+    "pressure_state_mod_64": {
+      "occupied": 51,
+      "top": {
+        "0": 8,
+        "16": 6,
+        "2": 6,
+        "24": 6,
+        "34": 7,
+        "4": 5,
+        "40": 5,
+        "42": 7
+      }
+    },
+    "pressure_state_mod_65536": {
+      "occupied": 143,
+      "top": {
+        "10088": 1,
+        "15990": 1,
+        "24664": 3,
+        "25969": 1,
+        "42580": 1,
+        "55178": 2,
+        "63157": 1,
+        "682": 2
+      }
+    },
+    "retimed_child_mod_1024": {
+      "occupied": 47,
+      "top": {
+        "1023": 7,
+        "127": 6,
+        "239": 6,
+        "479": 6,
+        "767": 7,
+        "795": 7,
+        "871": 5,
+        "959": 7
+      }
+    },
+    "retimed_child_mod_16": {
+      "occupied": 3,
+      "top": {
+        "11": 18,
+        "15": 96,
+        "7": 21
+      }
+    },
+    "retimed_child_mod_256": {
+      "occupied": 19,
+      "top": {
+        "103": 11,
+        "127": 15,
+        "159": 10,
+        "191": 13,
+        "223": 10,
+        "239": 10,
+        "255": 17,
+        "27": 11
+      }
+    },
+    "retimed_child_mod_4096": {
+      "occupied": 80,
+      "top": {
+        "111": 3,
+        "1263": 5,
+        "2207": 3,
+        "2943": 4,
+        "3175": 5,
+        "3839": 4,
+        "4095": 4,
+        "959": 4
+      }
+    },
+    "retimed_child_mod_64": {
+      "occupied": 8,
+      "top": {
+        "15": 3,
+        "27": 16,
+        "31": 24,
+        "39": 19,
+        "47": 19,
+        "59": 2,
+        "63": 50,
+        "7": 2
+      }
+    },
+    "retimed_child_mod_65536": {
+      "occupied": 127,
+      "top": {
+        "15231": 2,
+        "15551": 2,
+        "18203": 2,
+        "21631": 2,
+        "21743": 2,
+        "31847": 2,
+        "35943": 2,
+        "58303": 2
+      }
+    }
+  },
+  "retimed_child_bit_counts": {
+    "1": 135
+  },
+  "retimed_child_class_counts": {
+    "high-assisted-descent": 135
+  },
+  "retimed_child_residue_purity": {
+    "1024": {
+      "mixed_buckets": 47,
+      "occupied_buckets": 64,
+      "pure_nonretimed_buckets": 17,
+      "pure_retimed_buckets": 0,
+      "retimed_buckets": 47,
+      "retimed_in_mixed_buckets": 135,
+      "retimed_in_pure_buckets": 0,
+      "retimed_pure_bucket_fraction": 0.0,
+      "retimed_total": 135,
+      "top_mixed_buckets": {
+        "1023": {
+          "retimed": 7,
+          "retimed_fraction": 0.007314525,
+          "total": 957
+        },
+        "127": {
+          "retimed": 6,
+          "retimed_fraction": 0.011385199,
+          "total": 527
+        },
+        "239": {
+          "retimed": 6,
+          "retimed_fraction": 0.007481297,
+          "total": 802
+        },
+        "479": {
+          "retimed": 6,
+          "retimed_fraction": 0.011385199,
+          "total": 527
+        },
+        "767": {
+          "retimed": 7,
+          "retimed_fraction": 0.00872818,
+          "total": 802
+        },
+        "795": {
+          "retimed": 7,
+          "retimed_fraction": 0.00872818,
+          "total": 802
+        },
+        "895": {
+          "retimed": 5,
+          "retimed_fraction": 0.009487666,
+          "total": 527
+        },
+        "959": {
+          "retimed": 7,
+          "retimed_fraction": 0.013282732,
+          "total": 527
+        }
+      },
+      "top_pure_retimed_buckets": {}
+    },
+    "16": {
+      "mixed_buckets": 3,
+      "occupied_buckets": 3,
+      "pure_nonretimed_buckets": 0,
+      "pure_retimed_buckets": 0,
+      "retimed_buckets": 3,
+      "retimed_in_mixed_buckets": 135,
+      "retimed_in_pure_buckets": 0,
+      "retimed_pure_bucket_fraction": 0.0,
+      "retimed_total": 135,
+      "top_mixed_buckets": {
+        "11": {
+          "retimed": 18,
+          "retimed_fraction": 0.003586372,
+          "total": 5019
+        },
+        "15": {
+          "retimed": 96,
+          "retimed_fraction": 0.005552342,
+          "total": 17290
+        },
+        "7": {
+          "retimed": 21,
+          "retimed_fraction": 0.0041841,
+          "total": 5019
+        }
+      },
+      "top_pure_retimed_buckets": {}
+    },
+    "256": {
+      "mixed_buckets": 19,
+      "occupied_buckets": 19,
+      "pure_nonretimed_buckets": 0,
+      "pure_retimed_buckets": 0,
+      "retimed_buckets": 19,
+      "retimed_in_mixed_buckets": 135,
+      "retimed_in_pure_buckets": 0,
+      "retimed_pure_bucket_fraction": 0.0,
+      "retimed_total": 135,
+      "top_mixed_buckets": {
+        "103": {
+          "retimed": 11,
+          "retimed_fraction": 0.005283381,
+          "total": 2082
+        },
+        "127": {
+          "retimed": 15,
+          "retimed_fraction": 0.007204611,
+          "total": 2082
+        },
+        "159": {
+          "retimed": 10,
+          "retimed_fraction": 0.004803074,
+          "total": 2082
+        },
+        "191": {
+          "retimed": 13,
+          "retimed_fraction": 0.006243996,
+          "total": 2082
+        },
+        "223": {
+          "retimed": 10,
+          "retimed_fraction": 0.010214505,
+          "total": 979
+        },
+        "239": {
+          "retimed": 10,
+          "retimed_fraction": 0.004803074,
+          "total": 2082
+        },
+        "255": {
+          "retimed": 17,
+          "retimed_fraction": 0.005505181,
+          "total": 3088
+        },
+        "27": {
+          "retimed": 11,
+          "retimed_fraction": 0.005283381,
+          "total": 2082
+        }
+      },
+      "top_pure_retimed_buckets": {}
+    },
+    "4096": {
+      "mixed_buckets": 80,
+      "occupied_buckets": 226,
+      "pure_nonretimed_buckets": 146,
+      "pure_retimed_buckets": 0,
+      "retimed_buckets": 80,
+      "retimed_in_mixed_buckets": 135,
+      "retimed_in_pure_buckets": 0,
+      "retimed_pure_bucket_fraction": 0.0,
+      "retimed_total": 135,
+      "top_mixed_buckets": {
+        "1263": {
+          "retimed": 5,
+          "retimed_fraction": 0.020325203,
+          "total": 246
+        },
+        "2943": {
+          "retimed": 4,
+          "retimed_fraction": 0.019047619,
+          "total": 210
+        },
+        "3175": {
+          "retimed": 5,
+          "retimed_fraction": 0.023809524,
+          "total": 210
+        },
+        "3199": {
+          "retimed": 3,
+          "retimed_fraction": 0.014285714,
+          "total": 210
+        },
+        "3839": {
+          "retimed": 4,
+          "retimed_fraction": 0.016260163,
+          "total": 246
+        },
+        "4095": {
+          "retimed": 4,
+          "retimed_fraction": 0.015686275,
+          "total": 255
+        },
+        "559": {
+          "retimed": 3,
+          "retimed_fraction": 0.022058824,
+          "total": 136
+        },
+        "959": {
+          "retimed": 4,
+          "retimed_fraction": 0.019047619,
+          "total": 210
+        }
+      },
+      "top_pure_retimed_buckets": {}
+    },
+    "64": {
+      "mixed_buckets": 8,
+      "occupied_buckets": 8,
+      "pure_nonretimed_buckets": 0,
+      "pure_retimed_buckets": 0,
+      "retimed_buckets": 8,
+      "retimed_in_mixed_buckets": 135,
+      "retimed_in_pure_buckets": 0,
+      "retimed_pure_bucket_fraction": 0.0,
+      "retimed_total": 135,
+      "top_mixed_buckets": {
+        "15": {
+          "retimed": 3,
+          "retimed_fraction": 0.003064351,
+          "total": 979
+        },
+        "27": {
+          "retimed": 16,
+          "retimed_fraction": 0.003960396,
+          "total": 4040
+        },
+        "31": {
+          "retimed": 24,
+          "retimed_fraction": 0.005940594,
+          "total": 4040
+        },
+        "39": {
+          "retimed": 19,
+          "retimed_fraction": 0.00470297,
+          "total": 4040
+        },
+        "47": {
+          "retimed": 19,
+          "retimed_fraction": 0.00470297,
+          "total": 4040
+        },
+        "59": {
+          "retimed": 2,
+          "retimed_fraction": 0.002042901,
+          "total": 979
+        },
+        "63": {
+          "retimed": 50,
+          "retimed_fraction": 0.006074596,
+          "total": 8231
+        },
+        "7": {
+          "retimed": 2,
+          "retimed_fraction": 0.002042901,
+          "total": 979
+        }
+      },
+      "top_pure_retimed_buckets": {}
+    },
+    "65536": {
+      "mixed_buckets": 127,
+      "occupied_buckets": 2114,
+      "pure_nonretimed_buckets": 1987,
+      "pure_retimed_buckets": 0,
+      "retimed_buckets": 127,
+      "retimed_in_mixed_buckets": 135,
+      "retimed_in_pure_buckets": 0,
+      "retimed_pure_bucket_fraction": 0.0,
+      "retimed_total": 135,
+      "top_mixed_buckets": {
+        "15231": {
+          "retimed": 2,
+          "retimed_fraction": 0.133333333,
+          "total": 15
+        },
+        "15551": {
+          "retimed": 2,
+          "retimed_fraction": 0.125,
+          "total": 16
+        },
+        "18203": {
+          "retimed": 2,
+          "retimed_fraction": 0.125,
+          "total": 16
+        },
+        "21631": {
+          "retimed": 2,
+          "retimed_fraction": 0.125,
+          "total": 16
+        },
+        "21743": {
+          "retimed": 2,
+          "retimed_fraction": 0.125,
+          "total": 16
+        },
+        "31847": {
+          "retimed": 2,
+          "retimed_fraction": 0.125,
+          "total": 16
+        },
+        "35943": {
+          "retimed": 2,
+          "retimed_fraction": 0.125,
+          "total": 16
+        },
+        "58303": {
+          "retimed": 2,
+          "retimed_fraction": 0.125,
+          "total": 16
+        }
+      },
+      "top_pure_retimed_buckets": {}
+    }
+  },
+  "retimed_transition_count": 135,
+  "status": "branch-prefix-retimed-signature",
+  "surplus_histogram": {
+    "10": 7,
+    "11": 5,
+    "12": 3,
+    "13": 2,
+    "14": 3,
+    "15": 2,
+    "3": 4,
+    "4": 18,
+    "5": 21,
+    "6": 22,
+    "7": 24,
+    "8": 21,
+    "9": 15
+  },
+  "tightest_units": [
+    {
+      "child": 594759,
+      "child_bit": 1,
+      "child_credit": 6,
+      "child_required": 3,
+      "credit": 6,
+      "credit_delta": -3,
+      "event": "high_ladder_step",
+      "event_index": 1,
+      "lag": 3,
+      "lag_minus_align": 0,
+      "last_credit_align": 3,
+      "last_credit_kind": "high_ladder",
+      "last_credit_state": 5425879,
+      "last_credit_step": 19,
+      "parent": 70471,
+      "parent_required": 2,
+      "regime": "high_inside_active_ladder",
+      "required": 3,
+      "required_above_parent": 1,
+      "required_delta": 1,
+      "state": 18312344,
+      "step": 22,
+      "surplus": 3
+    },
+    {
+      "child": 664859,
+      "child_bit": 1,
+      "child_credit": 7,
+      "child_required": 3,
+      "credit": 6,
+      "credit_delta": 0,
+      "event": "high_ladder_step",
+      "event_index": 1,
+      "lag": 3,
+      "lag_minus_align": 0,
+      "last_credit_align": 3,
+      "last_credit_kind": "high_ladder",
+      "last_credit_state": 6065383,
+      "last_credit_step": 19,
+      "parent": 140571,
+      "parent_required": 2,
+      "regime": "high_inside_active_ladder",
+      "required": 3,
+      "required_above_parent": 1,
+      "required_delta": 1,
+      "state": 20470670,
+      "step": 22,
+      "surplus": 3
+    },
+    {
+      "child": 765423,
+      "child_bit": 1,
+      "child_credit": 6,
+      "child_required": 3,
+      "credit": 6,
+      "credit_delta": -2,
+      "event": "high_ladder_step",
+      "event_index": 1,
+      "lag": 3,
+      "lag_minus_align": 0,
+      "last_credit_align": 3,
+      "last_credit_kind": "high_ladder",
+      "last_credit_state": 6982807,
+      "last_credit_step": 19,
+      "parent": 241135,
+      "parent_required": 2,
+      "regime": "high_inside_active_ladder",
+      "required": 3,
+      "required_above_parent": 1,
+      "required_delta": 1,
+      "state": 23566976,
+      "step": 22,
+      "surplus": 3
+    }
+  ]
+}

@@ -1,0 +1,2282 @@
+{
+  "credit_kind_counts": {
+    "high_ladder": 19494,
+    "low_repeat": 1333
+  },
+  "elapsed_seconds": 80.827888,
+  "failures": [],
+  "frontiers": {
+    "child": {
+      "base_depth": 25,
+      "certified_fraction": 0.9829184412956238,
+      "certified_leaf_count": 81119,
+      "certified_units_mod_2^base_depth": 32981270,
+      "depth": 25,
+      "frontier_count": 573162,
+      "frontier_fraction": 0.01708155870437622,
+      "frontier_odd_count_histogram": {
+        "16": 108950,
+        "17": 203505,
+        "18": 147575,
+        "19": 74745,
+        "20": 28333,
+        "21": 8080,
+        "22": 1700,
+        "23": 250,
+        "24": 23,
+        "25": 1
+      },
+      "positive_live_count": 573162
+    },
+    "parent": {
+      "base_depth": 24,
+      "certified_fraction": 0.9829184412956238,
+      "certified_leaf_count": 81119,
+      "certified_units_mod_2^base_depth": 16490635,
+      "depth": 24,
+      "frontier_count": 286581,
+      "frontier_fraction": 0.01708155870437622,
+      "frontier_odd_count_histogram": {
+        "16": 108950,
+        "17": 94555,
+        "18": 53020,
+        "19": 21725,
+        "20": 6608,
+        "21": 1472,
+        "22": 228,
+        "23": 22,
+        "24": 1
+      },
+      "positive_live_count": 286581
+    }
+  },
+  "interpretation": "Finite timing audit for retimed-pressure transitions. Zero trace deficits mean every audited child had enough visible credit by the first prefix that exceeded the parent's required credit.",
+  "lag_minus_credit_amount_histogram": {
+    "high_ladder:-1": 131,
+    "high_ladder:-2": 42,
+    "high_ladder:-3": 14,
+    "high_ladder:-4": 9,
+    "high_ladder:-5": 1,
+    "high_ladder:-6": 2,
+    "high_ladder:0": 319,
+    "high_ladder:1": 899,
+    "high_ladder:2": 2718,
+    "high_ladder:5": 132,
+    "low_repeat:1": 18,
+    "low_repeat:4": 3
+  },
+  "lag_minus_high_align_histogram": {
+    "-1": 899,
+    "-2": 319,
+    "-3": 131,
+    "-4": 42,
+    "-5": 14,
+    "-6": 9,
+    "-7": 1,
+    "-8": 2,
+    "0": 2718,
+    "3": 132
+  },
+  "largest_delta_shortfalls": [
+    {
+      "child": 31155995,
+      "child_bit": 1,
+      "child_class": "high-assisted-descent",
+      "child_credit": 29,
+      "child_escape_d": 91,
+      "child_max_excess": 7.548388379,
+      "child_min_prefix_surplus": 0,
+      "child_required": 7,
+      "credit_delta": -30,
+      "delta_shortfall_after_new_credit": 32,
+      "frontier_image": 9712658159,
+      "frontier_odd_count": 21,
+      "parent": 14378779,
+      "parent_class": "high-assisted-descent",
+      "parent_credit": 59,
+      "parent_required": 5,
+      "pressure_events": [
+        {
+          "credit": 8,
+          "credit_event_count": 1,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 10,
+            "amount": 8,
+            "credit_after": 8,
+            "kind": "high_ladder",
+            "state": 35050495,
+            "step": 3
+          },
+          "max_excess": 1.214421479,
+          "odd_steps": 5,
+          "required": 1,
+          "state": 118295423,
+          "step": 6,
+          "surplus": 7
+        },
+        {
+          "credit": 8,
+          "credit_event_count": 1,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 10,
+            "amount": 8,
+            "credit_after": 8,
+            "kind": "high_ladder",
+            "state": 35050495,
+            "step": 3
+          },
+          "max_excess": 2.321632218,
+          "odd_steps": 8,
+          "required": 2,
+          "state": 399247055,
+          "step": 9,
+          "surplus": 6
+        },
+        {
+          "credit": 8,
+          "credit_event_count": 1,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 10,
+            "amount": 8,
+            "credit_after": 8,
+            "kind": "high_ladder",
+            "state": 35050495,
+            "step": 3
+          },
+          "max_excess": 3.059772711,
+          "odd_steps": 10,
+          "required": 3,
+          "state": 898305875,
+          "step": 11,
+          "surplus": 5
+        },
+        {
+          "credit": 11,
+          "credit_event_count": 2,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 5,
+            "amount": 3,
+            "credit_after": 11,
+            "kind": "high_ladder",
+            "state": 505297055,
+            "step": 15
+          },
+          "max_excess": 4.012334682,
+          "odd_steps": 16,
+          "required": 4,
+          "state": 2558066345,
+          "step": 19,
+          "surplus": 7
+        },
+        {
+          "credit": 17,
+          "credit_event_count": 3,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 8,
+            "amount": 6,
+            "credit_after": 17,
+            "kind": "high_ladder",
+            "state": 1918549759,
+            "step": 21
+          },
+          "max_excess": 5.226756161,
+          "odd_steps": 21,
+          "required": 5,
+          "state": 9712658159,
+          "step": 25,
+          "surplus": 12
+        },
+        {
+          "credit": 17,
+          "credit_event_count": 3,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 8,
+            "amount": 6,
+            "credit_after": 17,
+            "kind": "high_ladder",
+            "state": 1918549759,
+            "step": 21
+          },
+          "max_excess": 6.3339669,
+          "odd_steps": 24,
+          "required": 6,
+          "state": 32780221289,
+          "step": 28,
+          "surplus": 11
+        },
+        {
+          "credit": 19,
+          "credit_event_count": 4,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 4,
+            "amount": 2,
+            "credit_after": 19,
+            "kind": "high_ladder",
+            "state": 24585165967,
+            "step": 30
+          },
+          "max_excess": 7.179318132,
+          "odd_steps": 28,
+          "required": 7,
+          "state": 82974935141,
+          "step": 33,
+          "surplus": 12
+        }
+      ],
+      "required_delta": 2,
+      "trace": {
+        "certified": true,
+        "credit_event_count": 6,
+        "credit_events_before_parent_threshold": 3,
+        "credit_kind_counts": {
+          "high_ladder": 6
+        },
+        "escape_d": 91,
+        "final_credit": 29,
+        "final_excess": -0.414607575,
+        "first_positive_required": {
+          "credit": 8,
+          "credit_event_count": 1,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 10,
+            "amount": 8,
+            "credit_after": 8,
+            "kind": "high_ladder",
+            "state": 35050495,
+            "step": 3
+          },
+          "max_excess": 1.214421479,
+          "odd_steps": 5,
+          "required": 1,
+          "state": 118295423,
+          "step": 6,
+          "surplus": 7
+        },
+        "first_required_above_parent": {
+          "credit": 17,
+          "credit_event_count": 3,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 8,
+            "amount": 6,
+            "credit_after": 17,
+            "kind": "high_ladder",
+            "state": 1918549759,
+            "step": 21
+          },
+          "max_excess": 6.3339669,
+          "odd_steps": 24,
+          "required": 6,
+          "state": 32780221289,
+          "step": 28,
+          "surplus": 11
+        },
+        "max_deficit": 0,
+        "max_excess": 7.548388379,
+        "max_required": 7,
+        "min_surplus": 0,
+        "odd_steps": 57,
+        "pressure_event_count": 7,
+        "start": 31155995,
+        "threshold_lag": 7,
+        "timing_class": "prior_high_ladder"
+      }
+    },
+    {
+      "child": 24865279,
+      "child_bit": 1,
+      "child_class": "high-assisted-descent",
+      "child_credit": 32,
+      "child_escape_d": 80,
+      "child_max_excess": 7.917458625,
+      "child_min_prefix_surplus": 0,
+      "child_required": 7,
+      "credit_delta": -27,
+      "delta_shortfall_after_new_credit": 28,
+      "frontier_image": 23254717436,
+      "frontier_odd_count": 22,
+      "parent": 8088063,
+      "parent_class": "high-assisted-descent",
+      "parent_credit": 59,
+      "parent_required": 6,
+      "pressure_events": [
+        {
+          "credit": 7,
+          "credit_event_count": 1,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 9,
+            "amount": 7,
+            "credit_after": 7,
+            "kind": "high_ladder",
+            "state": 24865279,
+            "step": 0
+          },
+          "max_excess": 1.107210739,
+          "odd_steps": 3,
+          "required": 1,
+          "state": 83920319,
+          "step": 3,
+          "surplus": 6
+        },
+        {
+          "credit": 7,
+          "credit_event_count": 1,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 9,
+            "amount": 7,
+            "credit_after": 7,
+            "kind": "high_ladder",
+            "state": 24865279,
+            "step": 0
+          },
+          "max_excess": 2.214421479,
+          "odd_steps": 6,
+          "required": 2,
+          "state": 283231079,
+          "step": 6,
+          "surplus": 5
+        },
+        {
+          "credit": 7,
+          "credit_event_count": 1,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 9,
+            "amount": 7,
+            "credit_after": 7,
+            "kind": "high_ladder",
+            "state": 24865279,
+            "step": 0
+          },
+          "max_excess": 3.321632218,
+          "odd_steps": 9,
+          "required": 3,
+          "state": 955904894,
+          "step": 9,
+          "surplus": 4
+        },
+        {
+          "credit": 11,
+          "credit_event_count": 2,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 6,
+            "amount": 4,
+            "credit_after": 11,
+            "kind": "high_ladder",
+            "state": 477952447,
+            "step": 10
+          },
+          "max_excess": 4.16698345,
+          "odd_steps": 13,
+          "required": 4,
+          "state": 2419634267,
+          "step": 14,
+          "surplus": 7
+        },
+        {
+          "credit": 12,
+          "credit_event_count": 3,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 3,
+            "amount": 1,
+            "credit_after": 12,
+            "kind": "high_ladder",
+            "state": 2722088551,
+            "step": 17
+          },
+          "max_excess": 5.012334682,
+          "odd_steps": 17,
+          "required": 5,
+          "state": 6124699241,
+          "step": 19,
+          "surplus": 7
+        },
+        {
+          "credit": 14,
+          "credit_event_count": 4,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 4,
+            "amount": 2,
+            "credit_after": 14,
+            "kind": "high_ladder",
+            "state": 4593524431,
+            "step": 21
+          },
+          "max_excess": 6.226756161,
+          "odd_steps": 22,
+          "required": 6,
+          "state": 23254717436,
+          "step": 25,
+          "surplus": 8
+        },
+        {
+          "credit": 20,
+          "credit_event_count": 5,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 8,
+            "amount": 6,
+            "credit_after": 20,
+            "kind": "high_ladder",
+            "state": 5813679359,
+            "step": 27
+          },
+          "max_excess": 7.179318132,
+          "odd_steps": 28,
+          "required": 7,
+          "state": 66221441459,
+          "step": 33,
+          "surplus": 13
+        }
+      ],
+      "required_delta": 1,
+      "trace": {
+        "certified": true,
+        "credit_event_count": 7,
+        "credit_events_before_parent_threshold": 5,
+        "credit_kind_counts": {
+          "high_ladder": 7
+        },
+        "escape_d": 80,
+        "final_credit": 32,
+        "final_excess": -0.474380286,
+        "first_positive_required": {
+          "credit": 7,
+          "credit_event_count": 1,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 9,
+            "amount": 7,
+            "credit_after": 7,
+            "kind": "high_ladder",
+            "state": 24865279,
+            "step": 0
+          },
+          "max_excess": 1.107210739,
+          "odd_steps": 3,
+          "required": 1,
+          "state": 83920319,
+          "step": 3,
+          "surplus": 6
+        },
+        "first_required_above_parent": {
+          "credit": 20,
+          "credit_event_count": 5,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 8,
+            "amount": 6,
+            "credit_after": 20,
+            "kind": "high_ladder",
+            "state": 5813679359,
+            "step": 27
+          },
+          "max_excess": 7.179318132,
+          "odd_steps": 28,
+          "required": 7,
+          "state": 66221441459,
+          "step": 33,
+          "surplus": 13
+        },
+        "max_deficit": 0,
+        "max_excess": 7.917458625,
+        "max_required": 7,
+        "min_surplus": 0,
+        "odd_steps": 50,
+        "pressure_event_count": 7,
+        "start": 24865279,
+        "threshold_lag": 6,
+        "timing_class": "prior_high_ladder"
+      }
+    },
+    {
+      "child": 28909311,
+      "child_bit": 1,
+      "child_class": "high-assisted-descent",
+      "child_credit": 37,
+      "child_escape_d": 137,
+      "child_max_excess": 10.929793307,
+      "child_min_prefix_surplus": 0,
+      "child_required": 10,
+      "credit_delta": -21,
+      "delta_shortfall_after_new_credit": 26,
+      "frontier_image": 3004090139,
+      "frontier_odd_count": 20,
+      "parent": 12132095,
+      "parent_class": "high-assisted-descent",
+      "parent_credit": 58,
+      "parent_required": 5,
+      "pressure_events": [
+        {
+          "credit": 6,
+          "credit_event_count": 1,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 8,
+            "amount": 6,
+            "credit_after": 6,
+            "kind": "high_ladder",
+            "state": 28909311,
+            "step": 0
+          },
+          "max_excess": 1.107210739,
+          "odd_steps": 3,
+          "required": 1,
+          "state": 97568927,
+          "step": 3,
+          "surplus": 5
+        },
+        {
+          "credit": 6,
+          "credit_event_count": 1,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 8,
+            "amount": 6,
+            "credit_after": 6,
+            "kind": "high_ladder",
+            "state": 28909311,
+            "step": 0
+          },
+          "max_excess": 2.214421479,
+          "odd_steps": 6,
+          "required": 2,
+          "state": 329295131,
+          "step": 6,
+          "surplus": 4
+        },
+        {
+          "credit": 10,
+          "credit_event_count": 2,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 6,
+            "amount": 4,
+            "credit_after": 10,
+            "kind": "high_ladder",
+            "state": 370457023,
+            "step": 9
+          },
+          "max_excess": 3.059772711,
+          "odd_steps": 10,
+          "required": 3,
+          "state": 833528303,
+          "step": 11,
+          "surplus": 7
+        },
+        {
+          "credit": 10,
+          "credit_event_count": 2,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 6,
+            "amount": 4,
+            "credit_after": 10,
+            "kind": "high_ladder",
+            "state": 370457023,
+            "step": 9
+          },
+          "max_excess": 4.16698345,
+          "odd_steps": 13,
+          "required": 4,
+          "state": 2813158025,
+          "step": 14,
+          "surplus": 6
+        },
+        {
+          "credit": 11,
+          "credit_event_count": 3,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 3,
+            "amount": 1,
+            "credit_after": 11,
+            "kind": "high_ladder",
+            "state": 2109868519,
+            "step": 16
+          },
+          "max_excess": 5.012334682,
+          "odd_steps": 17,
+          "required": 5,
+          "state": 7120806254,
+          "step": 19,
+          "surplus": 6
+        },
+        {
+          "credit": 23,
+          "credit_event_count": 5,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 13,
+            "amount": 11,
+            "credit_after": 23,
+            "kind": "high_ladder",
+            "state": 3379601407,
+            "step": 28
+          },
+          "max_excess": 6.179318132,
+          "odd_steps": 27,
+          "required": 6,
+          "state": 25663848191,
+          "step": 33,
+          "surplus": 17
+        },
+        {
+          "credit": 23,
+          "credit_event_count": 5,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 13,
+            "amount": 11,
+            "credit_after": 23,
+            "kind": "high_ladder",
+            "state": 3379601407,
+            "step": 28
+          },
+          "max_excess": 7.286528871,
+          "odd_steps": 30,
+          "required": 7,
+          "state": 86615487647,
+          "step": 36,
+          "surplus": 16
+        },
+        {
+          "credit": 23,
+          "credit_event_count": 5,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 13,
+            "amount": 11,
+            "credit_after": 23,
+            "kind": "high_ladder",
+            "state": 3379601407,
+            "step": 28
+          },
+          "max_excess": 8.024669364,
+          "odd_steps": 32,
+          "required": 8,
+          "state": 194884847207,
+          "step": 38,
+          "surplus": 15
+        }
+      ],
+      "required_delta": 5,
+      "trace": {
+        "certified": true,
+        "credit_event_count": 12,
+        "credit_events_before_parent_threshold": 5,
+        "credit_kind_counts": {
+          "high_ladder": 12
+        },
+        "escape_d": 137,
+        "final_credit": 37,
+        "final_excess": -0.437376239,
+        "first_positive_required": {
+          "credit": 6,
+          "credit_event_count": 1,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 8,
+            "amount": 6,
+            "credit_after": 6,
+            "kind": "high_ladder",
+            "state": 28909311,
+            "step": 0
+          },
+          "max_excess": 1.107210739,
+          "odd_steps": 3,
+          "required": 1,
+          "state": 97568927,
+          "step": 3,
+          "surplus": 5
+        },
+        "first_required_above_parent": {
+          "credit": 23,
+          "credit_event_count": 5,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 13,
+            "amount": 11,
+            "credit_after": 23,
+            "kind": "high_ladder",
+            "state": 3379601407,
+            "step": 28
+          },
+          "max_excess": 6.179318132,
+          "odd_steps": 27,
+          "required": 6,
+          "state": 25663848191,
+          "step": 33,
+          "surplus": 17
+        },
+        "max_deficit": 0,
+        "max_excess": 10.929793307,
+        "max_required": 10,
+        "min_surplus": 0,
+        "odd_steps": 86,
+        "pressure_event_count": 10,
+        "start": 28909311,
+        "threshold_lag": 5,
+        "timing_class": "prior_high_ladder"
+      }
+    }
+  ],
+  "largest_required_deltas": [
+    {
+      "child": 28909311,
+      "child_bit": 1,
+      "child_class": "high-assisted-descent",
+      "child_credit": 37,
+      "child_escape_d": 137,
+      "child_max_excess": 10.929793307,
+      "child_min_prefix_surplus": 0,
+      "child_required": 10,
+      "credit_delta": -21,
+      "delta_shortfall_after_new_credit": 26,
+      "frontier_image": 3004090139,
+      "frontier_odd_count": 20,
+      "parent": 12132095,
+      "parent_class": "high-assisted-descent",
+      "parent_credit": 58,
+      "parent_required": 5,
+      "pressure_events": [
+        {
+          "credit": 6,
+          "credit_event_count": 1,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 8,
+            "amount": 6,
+            "credit_after": 6,
+            "kind": "high_ladder",
+            "state": 28909311,
+            "step": 0
+          },
+          "max_excess": 1.107210739,
+          "odd_steps": 3,
+          "required": 1,
+          "state": 97568927,
+          "step": 3,
+          "surplus": 5
+        },
+        {
+          "credit": 6,
+          "credit_event_count": 1,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 8,
+            "amount": 6,
+            "credit_after": 6,
+            "kind": "high_ladder",
+            "state": 28909311,
+            "step": 0
+          },
+          "max_excess": 2.214421479,
+          "odd_steps": 6,
+          "required": 2,
+          "state": 329295131,
+          "step": 6,
+          "surplus": 4
+        },
+        {
+          "credit": 10,
+          "credit_event_count": 2,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 6,
+            "amount": 4,
+            "credit_after": 10,
+            "kind": "high_ladder",
+            "state": 370457023,
+            "step": 9
+          },
+          "max_excess": 3.059772711,
+          "odd_steps": 10,
+          "required": 3,
+          "state": 833528303,
+          "step": 11,
+          "surplus": 7
+        },
+        {
+          "credit": 10,
+          "credit_event_count": 2,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 6,
+            "amount": 4,
+            "credit_after": 10,
+            "kind": "high_ladder",
+            "state": 370457023,
+            "step": 9
+          },
+          "max_excess": 4.16698345,
+          "odd_steps": 13,
+          "required": 4,
+          "state": 2813158025,
+          "step": 14,
+          "surplus": 6
+        },
+        {
+          "credit": 11,
+          "credit_event_count": 3,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 3,
+            "amount": 1,
+            "credit_after": 11,
+            "kind": "high_ladder",
+            "state": 2109868519,
+            "step": 16
+          },
+          "max_excess": 5.012334682,
+          "odd_steps": 17,
+          "required": 5,
+          "state": 7120806254,
+          "step": 19,
+          "surplus": 6
+        },
+        {
+          "credit": 23,
+          "credit_event_count": 5,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 13,
+            "amount": 11,
+            "credit_after": 23,
+            "kind": "high_ladder",
+            "state": 3379601407,
+            "step": 28
+          },
+          "max_excess": 6.179318132,
+          "odd_steps": 27,
+          "required": 6,
+          "state": 25663848191,
+          "step": 33,
+          "surplus": 17
+        },
+        {
+          "credit": 23,
+          "credit_event_count": 5,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 13,
+            "amount": 11,
+            "credit_after": 23,
+            "kind": "high_ladder",
+            "state": 3379601407,
+            "step": 28
+          },
+          "max_excess": 7.286528871,
+          "odd_steps": 30,
+          "required": 7,
+          "state": 86615487647,
+          "step": 36,
+          "surplus": 16
+        },
+        {
+          "credit": 23,
+          "credit_event_count": 5,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 13,
+            "amount": 11,
+            "credit_after": 23,
+            "kind": "high_ladder",
+            "state": 3379601407,
+            "step": 28
+          },
+          "max_excess": 8.024669364,
+          "odd_steps": 32,
+          "required": 8,
+          "state": 194884847207,
+          "step": 38,
+          "surplus": 15
+        }
+      ],
+      "required_delta": 5,
+      "trace": {
+        "certified": true,
+        "credit_event_count": 12,
+        "credit_events_before_parent_threshold": 5,
+        "credit_kind_counts": {
+          "high_ladder": 12
+        },
+        "escape_d": 137,
+        "final_credit": 37,
+        "final_excess": -0.437376239,
+        "first_positive_required": {
+          "credit": 6,
+          "credit_event_count": 1,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 8,
+            "amount": 6,
+            "credit_after": 6,
+            "kind": "high_ladder",
+            "state": 28909311,
+            "step": 0
+          },
+          "max_excess": 1.107210739,
+          "odd_steps": 3,
+          "required": 1,
+          "state": 97568927,
+          "step": 3,
+          "surplus": 5
+        },
+        "first_required_above_parent": {
+          "credit": 23,
+          "credit_event_count": 5,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 13,
+            "amount": 11,
+            "credit_after": 23,
+            "kind": "high_ladder",
+            "state": 3379601407,
+            "step": 28
+          },
+          "max_excess": 6.179318132,
+          "odd_steps": 27,
+          "required": 6,
+          "state": 25663848191,
+          "step": 33,
+          "surplus": 17
+        },
+        "max_deficit": 0,
+        "max_excess": 10.929793307,
+        "max_required": 10,
+        "min_surplus": 0,
+        "odd_steps": 86,
+        "pressure_event_count": 10,
+        "start": 28909311,
+        "threshold_lag": 5,
+        "timing_class": "prior_high_ladder"
+      }
+    },
+    {
+      "child": 32484159,
+      "child_bit": 1,
+      "child_class": "high-assisted-descent",
+      "child_credit": 33,
+      "child_escape_d": 116,
+      "child_max_excess": 10.203987496,
+      "child_min_prefix_surplus": 0,
+      "child_required": 10,
+      "credit_delta": 2,
+      "delta_shortfall_after_new_credit": 3,
+      "frontier_image": 10126703753,
+      "frontier_odd_count": 21,
+      "parent": 15706943,
+      "parent_class": "high-assisted-descent",
+      "parent_credit": 31,
+      "parent_required": 5,
+      "pressure_events": [
+        {
+          "credit": 4,
+          "credit_event_count": 1,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 6,
+            "amount": 4,
+            "credit_after": 4,
+            "kind": "high_ladder",
+            "state": 32484159,
+            "step": 0
+          },
+          "max_excess": 1.107210739,
+          "odd_steps": 3,
+          "required": 1,
+          "state": 109634039,
+          "step": 3,
+          "surplus": 3
+        },
+        {
+          "credit": 4,
+          "credit_event_count": 1,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 6,
+            "amount": 4,
+            "credit_after": 4,
+            "kind": "high_ladder",
+            "state": 32484159,
+            "step": 0
+          },
+          "max_excess": 2.214421479,
+          "odd_steps": 6,
+          "required": 2,
+          "state": 370014884,
+          "step": 6,
+          "surplus": 2
+        },
+        {
+          "credit": 10,
+          "credit_event_count": 2,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 8,
+            "amount": 6,
+            "credit_after": 10,
+            "kind": "high_ladder",
+            "state": 69377791,
+            "step": 10
+          },
+          "max_excess": 3.274194189,
+          "odd_steps": 14,
+          "required": 3,
+          "state": 1185384617,
+          "step": 17,
+          "surplus": 7
+        },
+        {
+          "credit": 15,
+          "credit_event_count": 3,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 7,
+            "amount": 5,
+            "credit_after": 15,
+            "kind": "high_ladder",
+            "state": 889038463,
+            "step": 19
+          },
+          "max_excess": 4.119545421,
+          "odd_steps": 18,
+          "required": 4,
+          "state": 3000504815,
+          "step": 22,
+          "surplus": 11
+        },
+        {
+          "credit": 15,
+          "credit_event_count": 3,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 7,
+            "amount": 5,
+            "credit_after": 15,
+            "kind": "high_ladder",
+            "state": 889038463,
+            "step": 19
+          },
+          "max_excess": 5.226756161,
+          "odd_steps": 21,
+          "required": 5,
+          "state": 10126703753,
+          "step": 25,
+          "surplus": 10
+        },
+        {
+          "credit": 16,
+          "credit_event_count": 4,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 3,
+            "amount": 1,
+            "credit_after": 16,
+            "kind": "high_ladder",
+            "state": 7595027815,
+            "step": 27
+          },
+          "max_excess": 6.072107393,
+          "odd_steps": 25,
+          "required": 6,
+          "state": 25633218878,
+          "step": 30,
+          "surplus": 10
+        },
+        {
+          "credit": 19,
+          "credit_event_count": 5,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 5,
+            "amount": 3,
+            "credit_after": 19,
+            "kind": "high_ladder",
+            "state": 12816609439,
+            "step": 31
+          },
+          "max_excess": 7.286528871,
+          "odd_steps": 30,
+          "required": 7,
+          "state": 97326127934,
+          "step": 36,
+          "surplus": 12
+        },
+        {
+          "credit": 22,
+          "credit_event_count": 6,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 5,
+            "amount": 3,
+            "credit_after": 22,
+            "kind": "high_ladder",
+            "state": 48663063967,
+            "step": 37
+          },
+          "max_excess": 8.131880104,
+          "odd_steps": 34,
+          "required": 8,
+          "state": 246356761337,
+          "step": 41,
+          "surplus": 14
+        }
+      ],
+      "required_delta": 5,
+      "trace": {
+        "certified": true,
+        "credit_event_count": 11,
+        "credit_events_before_parent_threshold": 4,
+        "credit_kind_counts": {
+          "high_ladder": 8,
+          "low_repeat": 3
+        },
+        "escape_d": 116,
+        "final_credit": 33,
+        "final_excess": -0.187851414,
+        "first_positive_required": {
+          "credit": 4,
+          "credit_event_count": 1,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 6,
+            "amount": 4,
+            "credit_after": 4,
+            "kind": "high_ladder",
+            "state": 32484159,
+            "step": 0
+          },
+          "max_excess": 1.107210739,
+          "odd_steps": 3,
+          "required": 1,
+          "state": 109634039,
+          "step": 3,
+          "surplus": 3
+        },
+        "first_required_above_parent": {
+          "credit": 16,
+          "credit_event_count": 4,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 3,
+            "amount": 1,
+            "credit_after": 16,
+            "kind": "high_ladder",
+            "state": 7595027815,
+            "step": 27
+          },
+          "max_excess": 6.072107393,
+          "odd_steps": 25,
+          "required": 6,
+          "state": 25633218878,
+          "step": 30,
+          "surplus": 10
+        },
+        "max_deficit": 0,
+        "max_excess": 10.203987496,
+        "max_required": 10,
+        "min_surplus": 0,
+        "odd_steps": 73,
+        "pressure_event_count": 10,
+        "start": 32484159,
+        "threshold_lag": 3,
+        "timing_class": "prior_high_ladder"
+      }
+    },
+    {
+      "child": 27340647,
+      "child_bit": 1,
+      "child_class": "high-assisted-descent",
+      "child_credit": 32,
+      "child_escape_d": 105,
+      "child_max_excess": 11.239090843,
+      "child_min_prefix_surplus": 0,
+      "child_required": 11,
+      "credit_delta": -9,
+      "delta_shortfall_after_new_credit": 13,
+      "frontier_image": 230127770465,
+      "frontier_odd_count": 24,
+      "parent": 10563431,
+      "parent_class": "high-assisted-descent",
+      "parent_credit": 41,
+      "parent_required": 7,
+      "pressure_events": [
+        {
+          "credit": 1,
+          "credit_event_count": 1,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 3,
+            "amount": 1,
+            "credit_after": 1,
+            "kind": "high_ladder",
+            "state": 27340647,
+            "step": 0
+          },
+          "max_excess": 1.107210739,
+          "odd_steps": 3,
+          "required": 1,
+          "state": 92274686,
+          "step": 3,
+          "surplus": 0
+        },
+        {
+          "credit": 21,
+          "credit_event_count": 2,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 22,
+            "amount": 20,
+            "credit_after": 21,
+            "kind": "high_ladder",
+            "state": 46137343,
+            "step": 4
+          },
+          "max_excess": 2.321632218,
+          "odd_steps": 8,
+          "required": 2,
+          "state": 350355455,
+          "step": 9,
+          "surplus": 19
+        },
+        {
+          "credit": 21,
+          "credit_event_count": 2,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 22,
+            "amount": 20,
+            "credit_after": 21,
+            "kind": "high_ladder",
+            "state": 46137343,
+            "step": 4
+          },
+          "max_excess": 3.059772711,
+          "odd_steps": 10,
+          "required": 3,
+          "state": 788299775,
+          "step": 11,
+          "surplus": 18
+        },
+        {
+          "credit": 21,
+          "credit_event_count": 2,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 22,
+            "amount": 20,
+            "credit_after": 21,
+            "kind": "high_ladder",
+            "state": 46137343,
+            "step": 4
+          },
+          "max_excess": 4.16698345,
+          "odd_steps": 13,
+          "required": 4,
+          "state": 2660511743,
+          "step": 14,
+          "surplus": 17
+        },
+        {
+          "credit": 21,
+          "credit_event_count": 2,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 22,
+            "amount": 20,
+            "credit_after": 21,
+            "kind": "high_ladder",
+            "state": 46137343,
+            "step": 4
+          },
+          "max_excess": 5.274194189,
+          "odd_steps": 16,
+          "required": 5,
+          "state": 8979227135,
+          "step": 17,
+          "surplus": 16
+        },
+        {
+          "credit": 21,
+          "credit_event_count": 2,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 22,
+            "amount": 20,
+            "credit_after": 21,
+            "kind": "high_ladder",
+            "state": 46137343,
+            "step": 4
+          },
+          "max_excess": 6.012334682,
+          "odd_steps": 18,
+          "required": 6,
+          "state": 20203261055,
+          "step": 19,
+          "surplus": 15
+        },
+        {
+          "credit": 21,
+          "credit_event_count": 2,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 22,
+            "amount": 20,
+            "credit_after": 21,
+            "kind": "high_ladder",
+            "state": 46137343,
+            "step": 4
+          },
+          "max_excess": 7.119545421,
+          "odd_steps": 21,
+          "required": 7,
+          "state": 68186006063,
+          "step": 22,
+          "surplus": 14
+        },
+        {
+          "credit": 21,
+          "credit_event_count": 2,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 22,
+            "amount": 20,
+            "credit_after": 21,
+            "kind": "high_ladder",
+            "state": 46137343,
+            "step": 4
+          },
+          "max_excess": 8.226756161,
+          "odd_steps": 24,
+          "required": 8,
+          "state": 230127770465,
+          "step": 25,
+          "surplus": 13
+        }
+      ],
+      "required_delta": 4,
+      "trace": {
+        "certified": true,
+        "credit_event_count": 6,
+        "credit_events_before_parent_threshold": 2,
+        "credit_kind_counts": {
+          "high_ladder": 6
+        },
+        "escape_d": 105,
+        "final_credit": 32,
+        "final_excess": -0.247624125,
+        "first_positive_required": {
+          "credit": 1,
+          "credit_event_count": 1,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 3,
+            "amount": 1,
+            "credit_after": 1,
+            "kind": "high_ladder",
+            "state": 27340647,
+            "step": 0
+          },
+          "max_excess": 1.107210739,
+          "odd_steps": 3,
+          "required": 1,
+          "state": 92274686,
+          "step": 3,
+          "surplus": 0
+        },
+        "first_required_above_parent": {
+          "credit": 21,
+          "credit_event_count": 2,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 22,
+            "amount": 20,
+            "credit_after": 21,
+            "kind": "high_ladder",
+            "state": 46137343,
+            "step": 4
+          },
+          "max_excess": 8.226756161,
+          "odd_steps": 24,
+          "required": 8,
+          "state": 230127770465,
+          "step": 25,
+          "surplus": 13
+        },
+        "max_deficit": 0,
+        "max_excess": 11.239090843,
+        "max_required": 11,
+        "min_surplus": 0,
+        "odd_steps": 66,
+        "pressure_event_count": 11,
+        "start": 27340647,
+        "threshold_lag": 21,
+        "timing_class": "prior_high_ladder"
+      }
+    }
+  ],
+  "largest_threshold_lags": [
+    {
+      "child": 27340647,
+      "child_bit": 1,
+      "child_class": "high-assisted-descent",
+      "child_credit": 32,
+      "child_escape_d": 105,
+      "child_max_excess": 11.239090843,
+      "child_min_prefix_surplus": 0,
+      "child_required": 11,
+      "credit_delta": -9,
+      "delta_shortfall_after_new_credit": 13,
+      "frontier_image": 230127770465,
+      "frontier_odd_count": 24,
+      "parent": 10563431,
+      "parent_class": "high-assisted-descent",
+      "parent_credit": 41,
+      "parent_required": 7,
+      "pressure_events": [
+        {
+          "credit": 1,
+          "credit_event_count": 1,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 3,
+            "amount": 1,
+            "credit_after": 1,
+            "kind": "high_ladder",
+            "state": 27340647,
+            "step": 0
+          },
+          "max_excess": 1.107210739,
+          "odd_steps": 3,
+          "required": 1,
+          "state": 92274686,
+          "step": 3,
+          "surplus": 0
+        },
+        {
+          "credit": 21,
+          "credit_event_count": 2,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 22,
+            "amount": 20,
+            "credit_after": 21,
+            "kind": "high_ladder",
+            "state": 46137343,
+            "step": 4
+          },
+          "max_excess": 2.321632218,
+          "odd_steps": 8,
+          "required": 2,
+          "state": 350355455,
+          "step": 9,
+          "surplus": 19
+        },
+        {
+          "credit": 21,
+          "credit_event_count": 2,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 22,
+            "amount": 20,
+            "credit_after": 21,
+            "kind": "high_ladder",
+            "state": 46137343,
+            "step": 4
+          },
+          "max_excess": 3.059772711,
+          "odd_steps": 10,
+          "required": 3,
+          "state": 788299775,
+          "step": 11,
+          "surplus": 18
+        },
+        {
+          "credit": 21,
+          "credit_event_count": 2,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 22,
+            "amount": 20,
+            "credit_after": 21,
+            "kind": "high_ladder",
+            "state": 46137343,
+            "step": 4
+          },
+          "max_excess": 4.16698345,
+          "odd_steps": 13,
+          "required": 4,
+          "state": 2660511743,
+          "step": 14,
+          "surplus": 17
+        },
+        {
+          "credit": 21,
+          "credit_event_count": 2,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 22,
+            "amount": 20,
+            "credit_after": 21,
+            "kind": "high_ladder",
+            "state": 46137343,
+            "step": 4
+          },
+          "max_excess": 5.274194189,
+          "odd_steps": 16,
+          "required": 5,
+          "state": 8979227135,
+          "step": 17,
+          "surplus": 16
+        },
+        {
+          "credit": 21,
+          "credit_event_count": 2,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 22,
+            "amount": 20,
+            "credit_after": 21,
+            "kind": "high_ladder",
+            "state": 46137343,
+            "step": 4
+          },
+          "max_excess": 6.012334682,
+          "odd_steps": 18,
+          "required": 6,
+          "state": 20203261055,
+          "step": 19,
+          "surplus": 15
+        },
+        {
+          "credit": 21,
+          "credit_event_count": 2,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 22,
+            "amount": 20,
+            "credit_after": 21,
+            "kind": "high_ladder",
+            "state": 46137343,
+            "step": 4
+          },
+          "max_excess": 7.119545421,
+          "odd_steps": 21,
+          "required": 7,
+          "state": 68186006063,
+          "step": 22,
+          "surplus": 14
+        },
+        {
+          "credit": 21,
+          "credit_event_count": 2,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 22,
+            "amount": 20,
+            "credit_after": 21,
+            "kind": "high_ladder",
+            "state": 46137343,
+            "step": 4
+          },
+          "max_excess": 8.226756161,
+          "odd_steps": 24,
+          "required": 8,
+          "state": 230127770465,
+          "step": 25,
+          "surplus": 13
+        }
+      ],
+      "required_delta": 4,
+      "trace": {
+        "certified": true,
+        "credit_event_count": 6,
+        "credit_events_before_parent_threshold": 2,
+        "credit_kind_counts": {
+          "high_ladder": 6
+        },
+        "escape_d": 105,
+        "final_credit": 32,
+        "final_excess": -0.247624125,
+        "first_positive_required": {
+          "credit": 1,
+          "credit_event_count": 1,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 3,
+            "amount": 1,
+            "credit_after": 1,
+            "kind": "high_ladder",
+            "state": 27340647,
+            "step": 0
+          },
+          "max_excess": 1.107210739,
+          "odd_steps": 3,
+          "required": 1,
+          "state": 92274686,
+          "step": 3,
+          "surplus": 0
+        },
+        "first_required_above_parent": {
+          "credit": 21,
+          "credit_event_count": 2,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 22,
+            "amount": 20,
+            "credit_after": 21,
+            "kind": "high_ladder",
+            "state": 46137343,
+            "step": 4
+          },
+          "max_excess": 8.226756161,
+          "odd_steps": 24,
+          "required": 8,
+          "state": 230127770465,
+          "step": 25,
+          "surplus": 13
+        },
+        "max_deficit": 0,
+        "max_excess": 11.239090843,
+        "max_required": 11,
+        "min_surplus": 0,
+        "odd_steps": 66,
+        "pressure_event_count": 11,
+        "start": 27340647,
+        "threshold_lag": 21,
+        "timing_class": "prior_high_ladder"
+      }
+    },
+    {
+      "child": 27616815,
+      "child_bit": 1,
+      "child_class": "high-assisted-descent",
+      "child_credit": 25,
+      "child_escape_d": 86,
+      "child_max_excess": 8.3339669,
+      "child_min_prefix_surplus": 0,
+      "child_required": 8,
+      "credit_delta": -4,
+      "delta_shortfall_after_new_credit": 6,
+      "frontier_image": 77484097799,
+      "frontier_odd_count": 23,
+      "parent": 10839599,
+      "parent_class": "high-assisted-descent",
+      "parent_credit": 29,
+      "parent_required": 6,
+      "pressure_events": [
+        {
+          "credit": 2,
+          "credit_event_count": 1,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 4,
+            "amount": 2,
+            "credit_after": 2,
+            "kind": "high_ladder",
+            "state": 27616815,
+            "step": 0
+          },
+          "max_excess": 1.107210739,
+          "odd_steps": 3,
+          "required": 1,
+          "state": 93206753,
+          "step": 3,
+          "surplus": 1
+        },
+        {
+          "credit": 21,
+          "credit_event_count": 2,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 21,
+            "amount": 19,
+            "credit_after": 21,
+            "kind": "high_ladder",
+            "state": 52428799,
+            "step": 7
+          },
+          "max_excess": 2.059772711,
+          "odd_steps": 9,
+          "required": 2,
+          "state": 265420799,
+          "step": 11,
+          "surplus": 19
+        },
+        {
+          "credit": 21,
+          "credit_event_count": 2,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 21,
+            "amount": 19,
+            "credit_after": 21,
+            "kind": "high_ladder",
+            "state": 52428799,
+            "step": 7
+          },
+          "max_excess": 3.16698345,
+          "odd_steps": 12,
+          "required": 3,
+          "state": 895795199,
+          "step": 14,
+          "surplus": 18
+        },
+        {
+          "credit": 21,
+          "credit_event_count": 2,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 21,
+            "amount": 19,
+            "credit_after": 21,
+            "kind": "high_ladder",
+            "state": 52428799,
+            "step": 7
+          },
+          "max_excess": 4.274194189,
+          "odd_steps": 15,
+          "required": 4,
+          "state": 3023308799,
+          "step": 17,
+          "surplus": 17
+        },
+        {
+          "credit": 21,
+          "credit_event_count": 2,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 21,
+            "amount": 19,
+            "credit_after": 21,
+            "kind": "high_ladder",
+            "state": 52428799,
+            "step": 7
+          },
+          "max_excess": 5.012334682,
+          "odd_steps": 17,
+          "required": 5,
+          "state": 6802444799,
+          "step": 19,
+          "surplus": 16
+        },
+        {
+          "credit": 21,
+          "credit_event_count": 2,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 21,
+            "amount": 19,
+            "credit_after": 21,
+            "kind": "high_ladder",
+            "state": 52428799,
+            "step": 7
+          },
+          "max_excess": 6.119545421,
+          "odd_steps": 20,
+          "required": 6,
+          "state": 22958251199,
+          "step": 22,
+          "surplus": 15
+        },
+        {
+          "credit": 21,
+          "credit_event_count": 2,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 21,
+            "amount": 19,
+            "credit_after": 21,
+            "kind": "high_ladder",
+            "state": 52428799,
+            "step": 7
+          },
+          "max_excess": 7.226756161,
+          "odd_steps": 23,
+          "required": 7,
+          "state": 77484097799,
+          "step": 25,
+          "surplus": 14
+        },
+        {
+          "credit": 21,
+          "credit_event_count": 2,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 21,
+            "amount": 19,
+            "credit_after": 21,
+            "kind": "high_ladder",
+            "state": 52428799,
+            "step": 7
+          },
+          "max_excess": 8.3339669,
+          "odd_steps": 26,
+          "required": 8,
+          "state": 261508830074,
+          "step": 28,
+          "surplus": 13
+        }
+      ],
+      "required_delta": 2,
+      "trace": {
+        "certified": true,
+        "credit_event_count": 5,
+        "credit_events_before_parent_threshold": 2,
+        "credit_kind_counts": {
+          "high_ladder": 5
+        },
+        "escape_d": 86,
+        "final_credit": 25,
+        "final_excess": -0.259958807,
+        "first_positive_required": {
+          "credit": 2,
+          "credit_event_count": 1,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 4,
+            "amount": 2,
+            "credit_after": 2,
+            "kind": "high_ladder",
+            "state": 27616815,
+            "step": 0
+          },
+          "max_excess": 1.107210739,
+          "odd_steps": 3,
+          "required": 1,
+          "state": 93206753,
+          "step": 3,
+          "surplus": 1
+        },
+        "first_required_above_parent": {
+          "credit": 21,
+          "credit_event_count": 2,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 21,
+            "amount": 19,
+            "credit_after": 21,
+            "kind": "high_ladder",
+            "state": 52428799,
+            "step": 7
+          },
+          "max_excess": 7.226756161,
+          "odd_steps": 23,
+          "required": 7,
+          "state": 77484097799,
+          "step": 25,
+          "surplus": 14
+        },
+        "max_deficit": 0,
+        "max_excess": 8.3339669,
+        "max_required": 8,
+        "min_surplus": 0,
+        "odd_steps": 54,
+        "pressure_event_count": 8,
+        "start": 27616815,
+        "threshold_lag": 18,
+        "timing_class": "prior_high_ladder"
+      }
+    },
+    {
+      "child": 21089727,
+      "child_bit": 1,
+      "child_class": "high-assisted-descent",
+      "child_credit": 19,
+      "child_escape_d": 65,
+      "child_max_excess": 6.084442075,
+      "child_min_prefix_surplus": 0,
+      "child_required": 6,
+      "credit_delta": 0,
+      "delta_shortfall_after_new_credit": 1,
+      "frontier_image": 243502642,
+      "frontier_odd_count": 18,
+      "parent": 4312511,
+      "parent_class": "high-assisted-descent",
+      "parent_credit": 19,
+      "parent_required": 5,
+      "pressure_events": [
+        {
+          "credit": 4,
+          "credit_event_count": 1,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 6,
+            "amount": 4,
+            "credit_after": 4,
+            "kind": "high_ladder",
+            "state": 21089727,
+            "step": 0
+          },
+          "max_excess": 1.107210739,
+          "odd_steps": 3,
+          "required": 1,
+          "state": 71177831,
+          "step": 3,
+          "surplus": 3
+        },
+        {
+          "credit": 4,
+          "credit_event_count": 1,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 6,
+            "amount": 4,
+            "credit_after": 4,
+            "kind": "high_ladder",
+            "state": 21089727,
+            "step": 0
+          },
+          "max_excess": 2.214421479,
+          "odd_steps": 6,
+          "required": 2,
+          "state": 240225182,
+          "step": 6,
+          "surplus": 2
+        },
+        {
+          "credit": 6,
+          "credit_event_count": 2,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 4,
+            "amount": 2,
+            "credit_after": 6,
+            "kind": "high_ladder",
+            "state": 120112591,
+            "step": 7
+          },
+          "max_excess": 3.059772711,
+          "odd_steps": 10,
+          "required": 3,
+          "state": 608069996,
+          "step": 11,
+          "surplus": 3
+        },
+        {
+          "credit": 19,
+          "credit_event_count": 4,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 14,
+            "amount": 12,
+            "credit_after": 19,
+            "kind": "high_ladder",
+            "state": 51363839,
+            "step": 32
+          },
+          "max_excess": 4.131880104,
+          "odd_steps": 30,
+          "required": 4,
+          "state": 1974598559,
+          "step": 41,
+          "surplus": 15
+        },
+        {
+          "credit": 19,
+          "credit_event_count": 4,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 14,
+            "amount": 12,
+            "credit_after": 19,
+            "kind": "high_ladder",
+            "state": 51363839,
+            "step": 32
+          },
+          "max_excess": 5.239090843,
+          "odd_steps": 33,
+          "required": 5,
+          "state": 6664270139,
+          "step": 44,
+          "surplus": 14
+        },
+        {
+          "credit": 19,
+          "credit_event_count": 4,
+          "event": "ordinary_step",
+          "last_credit_event": {
+            "align": 14,
+            "amount": 12,
+            "credit_after": 19,
+            "kind": "high_ladder",
+            "state": 51363839,
+            "step": 32
+          },
+          "max_excess": 6.084442075,
+          "odd_steps": 37,
+          "required": 6,
+          "state": 16868933792,
+          "step": 49,
+          "surplus": 13
+        }
+      ],
+      "required_delta": 1,
+      "trace": {
+        "certified": true,
+        "credit_event_count": 4,
+        "credit_events_before_parent_threshold": 4,
+        "credit_kind_counts": {
+          "high_ladder": 4
+        },
+        "escape_d": 65,
+        "final_credit": 19,
+        "final_excess": -0.010433982,
+        "first_positive_required": {
+          "credit": 4,
+          "credit_event_count": 1,
+          "event": "high_ladder_step",
+          "last_credit_event": {
+            "align": 6,
+            "amount": 4,
+            "credit_after": 4,
+            "kind": "high_ladder",
+            "state": 21089727,
+            "step": 0
+          },
+          "max_excess": 1.107210739,
+          "odd_steps": 3,
+          "required": 1,
+          "state": 71177831,
+          "step": 3,
+          "surplus": 3
+        },
+        "first_required_above_parent": {
+          "credit": 19,
+          "credit_event_count": 4,
+          "event": "ordinary_step",
+          "last_credit_event": {
+            "align": 14,
+            "amount": 12,
+            "credit_after": 19,
+            "kind": "high_ladder",
+            "state": 51363839,
+            "step": 32
+          },
+          "max_excess": 6.084442075,
+          "odd_steps": 37,
+          "required": 6,
+          "state": 16868933792,
+          "step": 49,
+          "surplus": 13
+        },
+        "max_deficit": 0,
+        "max_excess": 6.084442075,
+        "max_required": 6,
+        "min_surplus": 0,
+        "odd_steps": 41,
+        "pressure_event_count": 6,
+        "start": 21089727,
+        "threshold_lag": 17,
+        "timing_class": "prior_high_ladder"
+      }
+    }
+  ],
+  "last_credit_align_histogram": {
+    "high_ladder:10": 92,
+    "high_ladder:11": 79,
+    "high_ladder:12": 44,
+    "high_ladder:13": 24,
+    "high_ladder:14": 10,
+    "high_ladder:15": 4,
+    "high_ladder:16": 9,
+    "high_ladder:17": 1,
+    "high_ladder:21": 1,
+    "high_ladder:22": 1,
+    "high_ladder:3": 694,
+    "high_ladder:4": 844,
+    "high_ladder:5": 789,
+    "high_ladder:6": 725,
+    "high_ladder:7": 452,
+    "high_ladder:8": 337,
+    "high_ladder:9": 161,
+    "low_repeat:16": 1,
+    "low_repeat:6": 10,
+    "low_repeat:7": 7,
+    "low_repeat:8": 2,
+    "low_repeat:9": 1
+  },
+  "last_credit_amount_histogram": {
+    "high_ladder:1": 694,
+    "high_ladder:10": 44,
+    "high_ladder:11": 24,
+    "high_ladder:12": 10,
+    "high_ladder:13": 4,
+    "high_ladder:14": 9,
+    "high_ladder:15": 1,
+    "high_ladder:19": 1,
+    "high_ladder:2": 844,
+    "high_ladder:20": 1,
+    "high_ladder:3": 789,
+    "high_ladder:4": 725,
+    "high_ladder:5": 452,
+    "high_ladder:6": 337,
+    "high_ladder:7": 161,
+    "high_ladder:8": 92,
+    "high_ladder:9": 79,
+    "low_repeat:1": 21
+  },
+  "max_threshold_lag": 21,
+  "max_threshold_margin": 21,
+  "max_trace_deficit": 0,
+  "min_threshold_margin": 2,
+  "parameters": {
+    "max_depth": 1024,
+    "max_pressure_events": 8,
+    "max_steps": 50000,
+    "output": null,
+    "parent_depth": 24,
+    "quiet": true,
+    "top_n": 3
+  },
+  "positive_pressure_transition_count": 41509,
+  "retimed_failure_count": 0,
+  "retimed_pressure_count": 4288,
+  "status": "branch-prefix-retimed-pressure",
+  "threshold_event_counts": {
+    "high_ladder_step": 4135,
+    "ordinary_step": 153
+  },
+  "threshold_lag_histogram": {
+    "10": 74,
+    "11": 52,
+    "12": 23,
+    "13": 12,
+    "14": 9,
+    "15": 4,
+    "16": 2,
+    "17": 1,
+    "18": 1,
+    "2": 130,
+    "21": 1,
+    "3": 827,
+    "4": 886,
+    "5": 832,
+    "6": 671,
+    "7": 399,
+    "8": 261,
+    "9": 103
+  },
+  "threshold_margin_histogram": {
+    "10": 328,
+    "11": 209,
+    "12": 91,
+    "13": 74,
+    "14": 33,
+    "15": 26,
+    "16": 17,
+    "17": 7,
+    "18": 3,
+    "19": 3,
+    "2": 7,
+    "20": 2,
+    "21": 1,
+    "3": 73,
+    "4": 238,
+    "5": 416,
+    "6": 741,
+    "7": 758,
+    "8": 733,
+    "9": 528
+  },
+  "threshold_required_above_parent_histogram": {
+    "1": 4288
+  },
+  "timing_class_counts": {
+    "prior_high_ladder": 4267,
+    "prior_low_repeat": 21
+  },
+  "timing_class_stats": {
+    "prior_high_ladder": {
+      "lag_minus_credit_amount": {
+        "avg": 1.566674479,
+        "count": 4267,
+        "max": 5,
+        "min": -6
+      },
+      "last_credit_align": {
+        "avg": 5.646824467,
+        "count": 4267,
+        "max": 22,
+        "min": 3
+      },
+      "last_credit_amount": {
+        "avg": 3.646824467,
+        "count": 4267,
+        "max": 20,
+        "min": 1
+      },
+      "required_above_parent": {
+        "avg": 1.0,
+        "count": 4267,
+        "max": 1,
+        "min": 1
+      },
+      "surplus": {
+        "avg": 7.617998594,
+        "count": 4267,
+        "max": 21,
+        "min": 2
+      },
+      "threshold_lag": {
+        "avg": 5.213498945,
+        "count": 4267,
+        "max": 21,
+        "min": 2
+      }
+    },
+    "prior_low_repeat": {
+      "lag_minus_credit_amount": {
+        "avg": 1.428571429,
+        "count": 21,
+        "max": 4,
+        "min": 1
+      },
+      "last_credit_align": {
+        "avg": 7.142857143,
+        "count": 21,
+        "max": 16,
+        "min": 6
+      },
+      "last_credit_amount": {
+        "avg": 1.0,
+        "count": 21,
+        "max": 1,
+        "min": 1
+      },
+      "required_above_parent": {
+        "avg": 1.0,
+        "count": 21,
+        "max": 1,
+        "min": 1
+      },
+      "surplus": {
+        "avg": 8.333333333,
+        "count": 21,
+        "max": 15,
+        "min": 5
+      },
+      "threshold_lag": {
+        "avg": 2.428571429,
+        "count": 21,
+        "max": 5,
+        "min": 2
+      }
+    }
+  }
+}

@@ -1,0 +1,229 @@
+{
+  "checks": {
+    "all_depths_one_unit_thresholds": true,
+    "all_depths_prepaid_thresholds": true,
+    "all_depths_trace_safe": true,
+    "minimum_positive_threshold_margin": 1
+  },
+  "depths": [
+    {
+      "all_thresholds_one_unit": true,
+      "all_thresholds_prepaid": true,
+      "cached": true,
+      "child_depth": 19,
+      "child_live_count": 14990,
+      "max_threshold_lag": 11,
+      "max_trace_deficit": 0,
+      "min_threshold_margin": 1,
+      "parent_depth": 18,
+      "parent_live_count": 7495,
+      "positive_pressure_transition_count": 1398,
+      "retimed_failure_count": 0,
+      "retimed_pressure_count": 166,
+      "threshold_event_counts": {
+        "high_ladder_step": 144,
+        "ordinary_step": 22
+      },
+      "threshold_required_above_parent_histogram": {
+        "1": 166
+      },
+      "timing_class_counts": {
+        "prior_high_ladder": 164,
+        "prior_low_repeat": 2
+      }
+    },
+    {
+      "all_thresholds_one_unit": true,
+      "all_thresholds_prepaid": true,
+      "cached": true,
+      "child_depth": 20,
+      "child_live_count": 27328,
+      "max_threshold_lag": 15,
+      "max_trace_deficit": 0,
+      "min_threshold_margin": 3,
+      "parent_depth": 19,
+      "parent_live_count": 14990,
+      "positive_pressure_transition_count": 1950,
+      "retimed_failure_count": 0,
+      "retimed_pressure_count": 135,
+      "threshold_event_counts": {
+        "high_ladder_step": 131,
+        "ordinary_step": 4
+      },
+      "threshold_required_above_parent_histogram": {
+        "1": 135
+      },
+      "timing_class_counts": {
+        "prior_high_ladder": 135
+      }
+    },
+    {
+      "all_thresholds_one_unit": true,
+      "all_thresholds_prepaid": true,
+      "cached": true,
+      "child_depth": 21,
+      "child_live_count": 46611,
+      "max_threshold_lag": 19,
+      "max_trace_deficit": 0,
+      "min_threshold_margin": 2,
+      "parent_depth": 20,
+      "parent_live_count": 27328,
+      "positive_pressure_transition_count": 3705,
+      "retimed_failure_count": 0,
+      "retimed_pressure_count": 253,
+      "threshold_event_counts": {
+        "high_ladder_step": 247,
+        "ordinary_step": 6
+      },
+      "threshold_required_above_parent_histogram": {
+        "1": 253
+      },
+      "timing_class_counts": {
+        "prior_high_ladder": 253
+      }
+    },
+    {
+      "all_thresholds_one_unit": true,
+      "all_thresholds_prepaid": true,
+      "cached": true,
+      "child_depth": 22,
+      "child_live_count": 93222,
+      "max_threshold_lag": 22,
+      "max_trace_deficit": 0,
+      "min_threshold_margin": 1,
+      "parent_depth": 21,
+      "parent_live_count": 46611,
+      "positive_pressure_transition_count": 7217,
+      "retimed_failure_count": 0,
+      "retimed_pressure_count": 719,
+      "threshold_event_counts": {
+        "high_ladder_step": 710,
+        "ordinary_step": 9
+      },
+      "threshold_required_above_parent_histogram": {
+        "1": 719
+      },
+      "timing_class_counts": {
+        "prior_high_ladder": 717,
+        "prior_low_repeat": 2
+      }
+    },
+    {
+      "all_thresholds_one_unit": true,
+      "all_thresholds_prepaid": true,
+      "cached": true,
+      "child_depth": 23,
+      "child_live_count": 168807,
+      "max_threshold_lag": 17,
+      "max_trace_deficit": 0,
+      "min_threshold_margin": 3,
+      "parent_depth": 22,
+      "parent_live_count": 93222,
+      "positive_pressure_transition_count": 11438,
+      "retimed_failure_count": 0,
+      "retimed_pressure_count": 869,
+      "threshold_event_counts": {
+        "high_ladder_step": 824,
+        "ordinary_step": 45
+      },
+      "threshold_required_above_parent_histogram": {
+        "1": 869
+      },
+      "timing_class_counts": {
+        "prior_high_ladder": 857,
+        "prior_low_repeat": 12
+      }
+    },
+    {
+      "all_thresholds_one_unit": true,
+      "all_thresholds_prepaid": true,
+      "cached": true,
+      "child_depth": 24,
+      "child_live_count": 286581,
+      "max_threshold_lag": 16,
+      "max_trace_deficit": 0,
+      "min_threshold_margin": 2,
+      "parent_depth": 23,
+      "parent_live_count": 168807,
+      "positive_pressure_transition_count": 22122,
+      "retimed_failure_count": 0,
+      "retimed_pressure_count": 1749,
+      "threshold_event_counts": {
+        "high_ladder_step": 1684,
+        "ordinary_step": 65
+      },
+      "threshold_required_above_parent_histogram": {
+        "1": 1749
+      },
+      "timing_class_counts": {
+        "prior_high_ladder": 1734,
+        "prior_low_repeat": 15
+      }
+    },
+    {
+      "all_thresholds_one_unit": true,
+      "all_thresholds_prepaid": true,
+      "cached": true,
+      "child_depth": 25,
+      "child_live_count": 573162,
+      "max_threshold_lag": 21,
+      "max_trace_deficit": 0,
+      "min_threshold_margin": 2,
+      "parent_depth": 24,
+      "parent_live_count": 286581,
+      "positive_pressure_transition_count": 41509,
+      "retimed_failure_count": 0,
+      "retimed_pressure_count": 4288,
+      "threshold_event_counts": {
+        "high_ladder_step": 4135,
+        "ordinary_step": 153
+      },
+      "threshold_required_above_parent_histogram": {
+        "1": 4288
+      },
+      "timing_class_counts": {
+        "prior_high_ladder": 4267,
+        "prior_low_repeat": 21
+      }
+    },
+    {
+      "all_thresholds_one_unit": true,
+      "all_thresholds_prepaid": true,
+      "cached": true,
+      "child_depth": 26,
+      "child_live_count": 1037374,
+      "max_threshold_lag": 19,
+      "max_trace_deficit": 0,
+      "min_threshold_margin": 2,
+      "parent_depth": 25,
+      "parent_live_count": 573162,
+      "positive_pressure_transition_count": 71321,
+      "retimed_failure_count": 0,
+      "retimed_pressure_count": 5677,
+      "threshold_event_counts": {
+        "high_ladder_step": 5245,
+        "ordinary_step": 432
+      },
+      "threshold_required_above_parent_histogram": {
+        "1": 5677
+      },
+      "timing_class_counts": {
+        "prior_high_ladder": 5565,
+        "prior_low_repeat": 112
+      }
+    }
+  ],
+  "parameters": {
+    "cache_template": "experiments/results/branch_prefix_retimed_pressure_d{parent_depth}_d{child_depth}_20260702.json",
+    "max_depth": 1024,
+    "max_parent_depth": 25,
+    "max_pressure_events": 8,
+    "max_steps": 50000,
+    "min_parent_depth": 18,
+    "refresh": false,
+    "top_n": 3,
+    "use_cache": true,
+    "write_depth_cache": false
+  },
+  "status": "branch-prefix-retimed-pressure-depth-sweep"
+}

@@ -7,6 +7,22 @@
 > primitives: [`lib_collatz.py`](lib_collatz.py) — new scripts must import it. Results data
 > is indexed in [`results/INDEX.md`](results/INDEX.md). Nothing here proves the conjecture.
 
+## Current addendum (2026-07-02)
+
+The current GitHub-ready Collatz pursuit map is
+[`COLLATZ-PURSUIT-CURRENT-STATE-2026-07-02.md`](COLLATZ-PURSUIT-CURRENT-STATE-2026-07-02.md).
+It integrates the four public ChatGPT share threads, quarantines unavailable
+sandbox files as replication targets, and connects the new
+[`SPINE-PHASE-COLLISION.md`](SPINE-PHASE-COLLISION.md) lab to the retimed
+reserve-source program. The producing script is
+[`spine_phase_collision_lab.py`](spine_phase_collision_lab.py), with current
+output indexed as
+[`results/spine_phase_collision_lab_d12_20260702.json`](results/spine_phase_collision_lab_d12_20260702.json).
+
+For publication scope, use
+[`GITHUB-PUBLISH-PLAN-2026-07-02.md`](GITHUB-PUBLISH-PLAN-2026-07-02.md);
+do not publish this dirty worktree with `git add -A`.
+
 ## Documents (50)
 
 | File | Category | First heading |

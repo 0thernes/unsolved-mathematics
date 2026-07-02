@@ -1,0 +1,7097 @@
+{
+  "checks": {
+    "active_ladders_per_transition": {
+      "1": 12329,
+      "2": 744,
+      "3": 55,
+      "4": 8
+    },
+    "active_pressure_state_residue_purity": {
+      "1024": {
+        "active_buckets": 1020,
+        "active_in_mixed_buckets": 7832,
+        "active_in_pure_buckets": 7427,
+        "active_pure_bucket_fraction": 0.486729143,
+        "active_total": 15259,
+        "mixed_buckets": 346,
+        "occupied_buckets": 1021,
+        "pure_active_buckets": 674,
+        "pure_non_active_buckets": 1,
+        "top_mixed_buckets": {
+          "208": {
+            "active": 48,
+            "active_fraction": 0.905660377,
+            "total": 53
+          },
+          "384": {
+            "active": 48,
+            "active_fraction": 0.941176471,
+            "total": 51
+          },
+          "512": {
+            "active": 51,
+            "active_fraction": 0.962264151,
+            "total": 53
+          },
+          "64": {
+            "active": 54,
+            "active_fraction": 0.947368421,
+            "total": 57
+          },
+          "640": {
+            "active": 50,
+            "active_fraction": 0.961538462,
+            "total": 52
+          },
+          "792": {
+            "active": 50,
+            "active_fraction": 0.961538462,
+            "total": 52
+          },
+          "80": {
+            "active": 48,
+            "active_fraction": 0.857142857,
+            "total": 56
+          },
+          "96": {
+            "active": 53,
+            "active_fraction": 0.963636364,
+            "total": 55
+          }
+        },
+        "top_pure_active_buckets": {
+          "264": 33,
+          "341": 38,
+          "394": 32,
+          "410": 33,
+          "469": 33,
+          "582": 34,
+          "86": 33,
+          "88": 31
+        }
+      },
+      "128": {
+        "active_buckets": 128,
+        "active_in_mixed_buckets": 9859,
+        "active_in_pure_buckets": 5400,
+        "active_pure_bucket_fraction": 0.353889508,
+        "active_total": 15259,
+        "mixed_buckets": 63,
+        "occupied_buckets": 128,
+        "pure_active_buckets": 65,
+        "pure_non_active_buckets": 0,
+        "top_mixed_buckets": {
+          "0": {
+            "active": 342,
+            "active_fraction": 0.94214876,
+            "total": 363
+          },
+          "24": {
+            "active": 254,
+            "active_fraction": 0.903914591,
+            "total": 281
+          },
+          "32": {
+            "active": 268,
+            "active_fraction": 0.899328859,
+            "total": 298
+          },
+          "40": {
+            "active": 250,
+            "active_fraction": 0.922509225,
+            "total": 271
+          },
+          "64": {
+            "active": 264,
+            "active_fraction": 0.932862191,
+            "total": 283
+          },
+          "70": {
+            "active": 233,
+            "active_fraction": 0.970833333,
+            "total": 240
+          },
+          "80": {
+            "active": 288,
+            "active_fraction": 0.886153846,
+            "total": 325
+          },
+          "84": {
+            "active": 267,
+            "active_fraction": 0.88410596,
+            "total": 302
+          }
+        },
+        "top_pure_active_buckets": {
+          "113": 155,
+          "13": 147,
+          "21": 130,
+          "45": 136,
+          "53": 135,
+          "69": 148,
+          "85": 185,
+          "93": 141
+        }
+      },
+      "16": {
+        "active_buckets": 16,
+        "active_in_mixed_buckets": 9889,
+        "active_in_pure_buckets": 5370,
+        "active_pure_bucket_fraction": 0.351923455,
+        "active_total": 15259,
+        "mixed_buckets": 8,
+        "occupied_buckets": 16,
+        "pure_active_buckets": 8,
+        "pure_non_active_buckets": 0,
+        "top_mixed_buckets": {
+          "0": {
+            "active": 1844,
+            "active_fraction": 0.914229053,
+            "total": 2017
+          },
+          "10": {
+            "active": 1409,
+            "active_fraction": 0.934970139,
+            "total": 1507
+          },
+          "12": {
+            "active": 1039,
+            "active_fraction": 0.922735346,
+            "total": 1126
+          },
+          "14": {
+            "active": 574,
+            "active_fraction": 0.939443535,
+            "total": 611
+          },
+          "2": {
+            "active": 1056,
+            "active_fraction": 0.919060052,
+            "total": 1149
+          },
+          "4": {
+            "active": 1365,
+            "active_fraction": 0.884067358,
+            "total": 1544
+          },
+          "6": {
+            "active": 1173,
+            "active_fraction": 0.952883834,
+            "total": 1231
+          },
+          "8": {
+            "active": 1429,
+            "active_fraction": 0.933986928,
+            "total": 1530
+          }
+        },
+        "top_pure_active_buckets": {
+          "1": 860,
+          "11": 581,
+          "13": 792,
+          "15": 290,
+          "3": 662,
+          "5": 981,
+          "7": 505,
+          "9": 699
+        }
+      },
+      "256": {
+        "active_buckets": 256,
+        "active_in_mixed_buckets": 9592,
+        "active_in_pure_buckets": 5667,
+        "active_pure_bucket_fraction": 0.371387378,
+        "active_total": 15259,
+        "mixed_buckets": 119,
+        "occupied_buckets": 256,
+        "pure_active_buckets": 137,
+        "pure_non_active_buckets": 0,
+        "top_mixed_buckets": {
+          "0": {
+            "active": 170,
+            "active_fraction": 0.934065934,
+            "total": 182
+          },
+          "128": {
+            "active": 172,
+            "active_fraction": 0.950276243,
+            "total": 181
+          },
+          "160": {
+            "active": 143,
+            "active_fraction": 0.899371069,
+            "total": 159
+          },
+          "198": {
+            "active": 143,
+            "active_fraction": 0.966216216,
+            "total": 148
+          },
+          "204": {
+            "active": 151,
+            "active_fraction": 0.961783439,
+            "total": 157
+          },
+          "24": {
+            "active": 140,
+            "active_fraction": 0.927152318,
+            "total": 151
+          },
+          "64": {
+            "active": 168,
+            "active_fraction": 0.928176796,
+            "total": 181
+          },
+          "80": {
+            "active": 160,
+            "active_fraction": 0.860215054,
+            "total": 186
+          }
+        },
+        "top_pure_active_buckets": {
+          "101": 78,
+          "113": 83,
+          "141": 94,
+          "150": 100,
+          "21": 82,
+          "213": 92,
+          "69": 83,
+          "85": 93
+        }
+      },
+      "32": {
+        "active_buckets": 32,
+        "active_in_mixed_buckets": 9889,
+        "active_in_pure_buckets": 5370,
+        "active_pure_bucket_fraction": 0.351923455,
+        "active_total": 15259,
+        "mixed_buckets": 16,
+        "occupied_buckets": 32,
+        "pure_active_buckets": 16,
+        "pure_non_active_buckets": 0,
+        "top_mixed_buckets": {
+          "0": {
+            "active": 1062,
+            "active_fraction": 0.926701571,
+            "total": 1146
+          },
+          "10": {
+            "active": 816,
+            "active_fraction": 0.923076923,
+            "total": 884
+          },
+          "12": {
+            "active": 731,
+            "active_fraction": 0.931210191,
+            "total": 785
+          },
+          "16": {
+            "active": 782,
+            "active_fraction": 0.897818599,
+            "total": 871
+          },
+          "2": {
+            "active": 658,
+            "active_fraction": 0.924157303,
+            "total": 712
+          },
+          "20": {
+            "active": 772,
+            "active_fraction": 0.86741573,
+            "total": 890
+          },
+          "6": {
+            "active": 678,
+            "active_fraction": 0.948251748,
+            "total": 715
+          },
+          "8": {
+            "active": 826,
+            "active_fraction": 0.93227991,
+            "total": 886
+          }
+        },
+        "top_pure_active_buckets": {
+          "1": 389,
+          "13": 448,
+          "17": 471,
+          "21": 550,
+          "25": 409,
+          "29": 344,
+          "3": 376,
+          "5": 431
+        }
+      },
+      "4096": {
+        "active_buckets": 3572,
+        "active_in_mixed_buckets": 3895,
+        "active_in_pure_buckets": 11364,
+        "active_pure_bucket_fraction": 0.744740809,
+        "active_total": 15259,
+        "mixed_buckets": 603,
+        "occupied_buckets": 3593,
+        "pure_active_buckets": 2969,
+        "pure_non_active_buckets": 21,
+        "top_mixed_buckets": {
+          "1578": {
+            "active": 17,
+            "active_fraction": 0.894736842,
+            "total": 19
+          },
+          "1970": {
+            "active": 18,
+            "active_fraction": 0.947368421,
+            "total": 19
+          },
+          "2080": {
+            "active": 16,
+            "active_fraction": 0.941176471,
+            "total": 17
+          },
+          "2144": {
+            "active": 16,
+            "active_fraction": 0.941176471,
+            "total": 17
+          },
+          "2856": {
+            "active": 17,
+            "active_fraction": 0.944444444,
+            "total": 18
+          },
+          "3276": {
+            "active": 16,
+            "active_fraction": 0.941176471,
+            "total": 17
+          },
+          "64": {
+            "active": 18,
+            "active_fraction": 0.9,
+            "total": 20
+          },
+          "908": {
+            "active": 17,
+            "active_fraction": 0.944444444,
+            "total": 18
+          }
+        },
+        "top_pure_active_buckets": {
+          "1376": 17,
+          "138": 17,
+          "1606": 17,
+          "1816": 18,
+          "384": 19,
+          "552": 18,
+          "792": 18,
+          "96": 18
+        }
+      },
+      "512": {
+        "active_buckets": 512,
+        "active_in_mixed_buckets": 9022,
+        "active_in_pure_buckets": 6237,
+        "active_pure_bucket_fraction": 0.408742382,
+        "active_total": 15259,
+        "mixed_buckets": 214,
+        "occupied_buckets": 512,
+        "pure_active_buckets": 298,
+        "pure_non_active_buckets": 0,
+        "top_mixed_buckets": {
+          "0": {
+            "active": 92,
+            "active_fraction": 0.968421053,
+            "total": 95
+          },
+          "128": {
+            "active": 96,
+            "active_fraction": 0.95049505,
+            "total": 101
+          },
+          "204": {
+            "active": 91,
+            "active_fraction": 0.957894737,
+            "total": 95
+          },
+          "280": {
+            "active": 87,
+            "active_fraction": 0.956043956,
+            "total": 91
+          },
+          "320": {
+            "active": 86,
+            "active_fraction": 0.924731183,
+            "total": 93
+          },
+          "336": {
+            "active": 81,
+            "active_fraction": 0.880434783,
+            "total": 92
+          },
+          "64": {
+            "active": 82,
+            "active_fraction": 0.931818182,
+            "total": 88
+          },
+          "96": {
+            "active": 82,
+            "active_fraction": 0.953488372,
+            "total": 86
+          }
+        },
+        "top_pure_active_buckets": {
+          "150": 52,
+          "2": 51,
+          "213": 48,
+          "264": 51,
+          "277": 53,
+          "341": 54,
+          "397": 53,
+          "69": 52
+        }
+      },
+      "64": {
+        "active_buckets": 64,
+        "active_in_mixed_buckets": 9889,
+        "active_in_pure_buckets": 5370,
+        "active_pure_bucket_fraction": 0.351923455,
+        "active_total": 15259,
+        "mixed_buckets": 32,
+        "occupied_buckets": 64,
+        "pure_active_buckets": 32,
+        "pure_non_active_buckets": 0,
+        "top_mixed_buckets": {
+          "0": {
+            "active": 606,
+            "active_fraction": 0.938080495,
+            "total": 646
+          },
+          "12": {
+            "active": 424,
+            "active_fraction": 0.946428571,
+            "total": 448
+          },
+          "16": {
+            "active": 488,
+            "active_fraction": 0.897058824,
+            "total": 544
+          },
+          "20": {
+            "active": 441,
+            "active_fraction": 0.869822485,
+            "total": 507
+          },
+          "32": {
+            "active": 456,
+            "active_fraction": 0.912,
+            "total": 500
+          },
+          "40": {
+            "active": 462,
+            "active_fraction": 0.922155689,
+            "total": 501
+          },
+          "42": {
+            "active": 429,
+            "active_fraction": 0.903157895,
+            "total": 475
+          },
+          "6": {
+            "active": 401,
+            "active_fraction": 0.963942308,
+            "total": 416
+          }
+        },
+        "top_pure_active_buckets": {
+          "13": 249,
+          "21": 315,
+          "25": 237,
+          "29": 235,
+          "35": 208,
+          "49": 285,
+          "5": 241,
+          "53": 235
+        }
+      },
+      "65536": {
+        "active_buckets": 12219,
+        "active_in_mixed_buckets": 345,
+        "active_in_pure_buckets": 14914,
+        "active_pure_bucket_fraction": 0.977390393,
+        "active_total": 15259,
+        "mixed_buckets": 241,
+        "occupied_buckets": 12770,
+        "pure_active_buckets": 11978,
+        "pure_non_active_buckets": 551,
+        "top_mixed_buckets": {
+          "13464": {
+            "active": 5,
+            "active_fraction": 0.833333333,
+            "total": 6
+          },
+          "15564": {
+            "active": 4,
+            "active_fraction": 0.8,
+            "total": 5
+          },
+          "2476": {
+            "active": 5,
+            "active_fraction": 0.714285714,
+            "total": 7
+          },
+          "36068": {
+            "active": 4,
+            "active_fraction": 0.8,
+            "total": 5
+          },
+          "40218": {
+            "active": 4,
+            "active_fraction": 0.8,
+            "total": 5
+          },
+          "53332": {
+            "active": 4,
+            "active_fraction": 0.8,
+            "total": 5
+          },
+          "62272": {
+            "active": 3,
+            "active_fraction": 0.75,
+            "total": 4
+          },
+          "62804": {
+            "active": 3,
+            "active_fraction": 0.75,
+            "total": 4
+          }
+        },
+        "top_pure_active_buckets": {
+          "12148": 6,
+          "19204": 5,
+          "36524": 5,
+          "40644": 5,
+          "41008": 6,
+          "41752": 5,
+          "44160": 5,
+          "7564": 5
+        }
+      }
+    },
+    "active_units_per_ladder": {
+      "1": 12858,
+      "2": 1074,
+      "3": 75,
+      "4": 7
+    },
+    "active_units_per_transition": {
+      "1": 11309,
+      "2": 1581,
+      "3": 203,
+      "4": 36,
+      "5": 7
+    },
+    "align_counts": {
+      "10": 387,
+      "11": 305,
+      "12": 188,
+      "13": 78,
+      "14": 41,
+      "15": 34,
+      "16": 29,
+      "17": 12,
+      "18": 10,
+      "19": 8,
+      "21": 2,
+      "22": 4,
+      "3": 2972,
+      "4": 3204,
+      "5": 2779,
+      "6": 2030,
+      "7": 1449,
+      "8": 1069,
+      "9": 658
+    },
+    "align_mod_4_counts": {
+      "0": 4490,
+      "1": 3529,
+      "2": 2472,
+      "3": 4768
+    },
+    "event_index_counts": {
+      "1": 13120,
+      "2": 1835,
+      "3": 252,
+      "4": 45,
+      "5": 7
+    },
+    "event_index_lag_counts": {
+      "1:10": 184,
+      "1:11": 113,
+      "1:12": 66,
+      "1:13": 34,
+      "1:14": 30,
+      "1:15": 14,
+      "1:16": 8,
+      "1:17": 4,
+      "1:18": 4,
+      "1:19": 2,
+      "1:2": 425,
+      "1:21": 1,
+      "1:22": 1,
+      "1:3": 3564,
+      "1:4": 3058,
+      "1:5": 2250,
+      "1:6": 1496,
+      "1:7": 898,
+      "1:8": 630,
+      "1:9": 338,
+      "2:10": 67,
+      "2:11": 52,
+      "2:12": 20,
+      "2:13": 11,
+      "2:14": 5,
+      "2:15": 7,
+      "2:16": 4,
+      "2:17": 2,
+      "2:18": 2,
+      "2:2": 50,
+      "2:21": 2,
+      "2:3": 312,
+      "2:4": 252,
+      "2:5": 295,
+      "2:6": 272,
+      "2:7": 217,
+      "2:8": 168,
+      "2:9": 97,
+      "3:10": 12,
+      "3:11": 12,
+      "3:12": 9,
+      "3:13": 2,
+      "3:14": 1,
+      "3:15": 2,
+      "3:16": 1,
+      "3:18": 1,
+      "3:2": 5,
+      "3:3": 40,
+      "3:4": 37,
+      "3:5": 49,
+      "3:6": 17,
+      "3:7": 26,
+      "3:8": 21,
+      "3:9": 17,
+      "4:10": 5,
+      "4:11": 4,
+      "4:13": 2,
+      "4:16": 1,
+      "4:3": 6,
+      "4:4": 9,
+      "4:5": 5,
+      "4:6": 4,
+      "4:7": 4,
+      "4:8": 4,
+      "4:9": 1,
+      "5:3": 2,
+      "5:4": 2,
+      "5:5": 1,
+      "5:6": 1,
+      "5:9": 1
+    },
+    "event_index_required_above_parent_counts": {
+      "1:1": 13120,
+      "2:2": 1835,
+      "3:3": 252,
+      "4:4": 45,
+      "5:5": 7
+    },
+    "global_step_offset_max": 99,
+    "global_step_offset_min": 1,
+    "ladder_credit_counts": {
+      "1": 2972,
+      "10": 188,
+      "11": 78,
+      "12": 41,
+      "13": 34,
+      "14": 29,
+      "15": 12,
+      "16": 10,
+      "17": 8,
+      "19": 2,
+      "2": 3204,
+      "20": 4,
+      "3": 2779,
+      "4": 2030,
+      "5": 1449,
+      "6": 1069,
+      "7": 658,
+      "8": 387,
+      "9": 305
+    },
+    "lag_counts": {
+      "10": 268,
+      "11": 181,
+      "12": 95,
+      "13": 49,
+      "14": 36,
+      "15": 23,
+      "16": 14,
+      "17": 6,
+      "18": 7,
+      "19": 2,
+      "2": 480,
+      "21": 3,
+      "22": 1,
+      "3": 3924,
+      "4": 3358,
+      "5": 2600,
+      "6": 1790,
+      "7": 1145,
+      "8": 823,
+      "9": 454
+    },
+    "lag_minus_align_counts": {
+      "-1": 3332,
+      "-10": 1,
+      "-2": 1243,
+      "-3": 505,
+      "-4": 184,
+      "-5": 62,
+      "-6": 26,
+      "-7": 11,
+      "-8": 4,
+      "-9": 2,
+      "0": 9889
+    },
+    "pressure_event_counts": {
+      "high_ladder_step": 15259
+    },
+    "pressure_regime_counts": {
+      "high_after_ladder_window": 646,
+      "high_inside_active_ladder": 15259,
+      "low_repeat_prepaid": 180
+    },
+    "pure_feature_claims_all_depths": {
+      "all_active_events_are_high_ladder_steps": true,
+      "all_active_ladder_formulas_checked": true,
+      "all_active_parities_are_odd": true,
+      "all_alignment_burns_checked": true,
+      "all_event_indexes_equal_required_above_parent": true,
+      "all_lag_simulations_match_pressure_state": true
+    },
+    "q_mod_16_counts": {
+      "1": 2238,
+      "11": 2278,
+      "13": 1585,
+      "15": 1656,
+      "3": 2195,
+      "5": 1661,
+      "7": 1625,
+      "9": 2021
+    },
+    "q_mod_8_counts": {
+      "1": 4259,
+      "3": 4473,
+      "5": 3246,
+      "7": 3281
+    },
+    "remaining_align_counts": {
+      "0": 9889,
+      "1": 3332,
+      "10": 1,
+      "2": 1243,
+      "3": 505,
+      "4": 184,
+      "5": 62,
+      "6": 26,
+      "7": 11,
+      "8": 4,
+      "9": 2
+    },
+    "required_above_parent_lag_counts": {
+      "1:10": 184,
+      "1:11": 113,
+      "1:12": 66,
+      "1:13": 34,
+      "1:14": 30,
+      "1:15": 14,
+      "1:16": 8,
+      "1:17": 4,
+      "1:18": 4,
+      "1:19": 2,
+      "1:2": 425,
+      "1:21": 1,
+      "1:22": 1,
+      "1:3": 3564,
+      "1:4": 3058,
+      "1:5": 2250,
+      "1:6": 1496,
+      "1:7": 898,
+      "1:8": 630,
+      "1:9": 338,
+      "2:10": 67,
+      "2:11": 52,
+      "2:12": 20,
+      "2:13": 11,
+      "2:14": 5,
+      "2:15": 7,
+      "2:16": 4,
+      "2:17": 2,
+      "2:18": 2,
+      "2:2": 50,
+      "2:21": 2,
+      "2:3": 312,
+      "2:4": 252,
+      "2:5": 295,
+      "2:6": 272,
+      "2:7": 217,
+      "2:8": 168,
+      "2:9": 97,
+      "3:10": 12,
+      "3:11": 12,
+      "3:12": 9,
+      "3:13": 2,
+      "3:14": 1,
+      "3:15": 2,
+      "3:16": 1,
+      "3:18": 1,
+      "3:2": 5,
+      "3:3": 40,
+      "3:4": 37,
+      "3:5": 49,
+      "3:6": 17,
+      "3:7": 26,
+      "3:8": 21,
+      "3:9": 17,
+      "4:10": 5,
+      "4:11": 4,
+      "4:13": 2,
+      "4:16": 1,
+      "4:3": 6,
+      "4:4": 9,
+      "4:5": 5,
+      "4:6": 4,
+      "4:7": 4,
+      "4:8": 4,
+      "4:9": 1,
+      "5:3": 2,
+      "5:4": 2,
+      "5:5": 1,
+      "5:6": 1,
+      "5:9": 1
+    },
+    "state_plus_one_v2_counts": {
+      "0": 9889,
+      "1": 3332,
+      "10": 1,
+      "2": 1243,
+      "3": 505,
+      "4": 184,
+      "5": 62,
+      "6": 26,
+      "7": 11,
+      "8": 4,
+      "9": 2
+    },
+    "terminal_mod_16_counts": {
+      "0": 2730,
+      "10": 2174,
+      "12": 1594,
+      "14": 1018,
+      "2": 1682,
+      "4": 2086,
+      "6": 1829,
+      "8": 2146
+    },
+    "terminal_mod_64_counts": {
+      "0": 896,
+      "10": 604,
+      "12": 631,
+      "14": 311,
+      "16": 716,
+      "18": 230,
+      "2": 443,
+      "20": 692,
+      "22": 521,
+      "24": 594,
+      "26": 562,
+      "28": 327,
+      "30": 249,
+      "32": 678,
+      "34": 562,
+      "36": 326,
+      "38": 457,
+      "4": 573,
+      "40": 722,
+      "42": 668,
+      "44": 484,
+      "46": 329,
+      "48": 440,
+      "50": 447,
+      "52": 495,
+      "54": 257,
+      "56": 314,
+      "58": 340,
+      "6": 594,
+      "60": 152,
+      "62": 129,
+      "8": 516
+    },
+    "total_above_parent_pressure_units": 16085,
+    "total_active_ladder_pressure_units": 15259,
+    "total_retimed_transitions": 13856
+  },
+  "depths": [
+    {
+      "above_parent_pressure_unit_count": 178,
+      "active_ladder_pressure_unit_count": 156,
+      "active_ladders_per_transition": {
+        "1": 142,
+        "2": 2
+      },
+      "active_pressure_state_residue_purity": {
+        "1024": {
+          "active_buckets": 133,
+          "active_in_mixed_buckets": 12,
+          "active_in_pure_buckets": 144,
+          "active_pure_bucket_fraction": 0.923076923,
+          "active_total": 156,
+          "mixed_buckets": 9,
+          "occupied_buckets": 145,
+          "pure_active_buckets": 124,
+          "pure_non_active_buckets": 12,
+          "top_mixed_buckets": {
+            "202": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            },
+            "302": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            },
+            "34": {
+              "active": 2,
+              "active_fraction": 0.5,
+              "total": 4
+            },
+            "340": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            },
+            "384": {
+              "active": 3,
+              "active_fraction": 0.75,
+              "total": 4
+            },
+            "564": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            },
+            "906": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            },
+            "968": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            }
+          },
+          "top_pure_active_buckets": {
+            "106": 2,
+            "434": 2,
+            "524": 3,
+            "528": 2,
+            "650": 2,
+            "726": 3,
+            "729": 2,
+            "816": 3
+          }
+        },
+        "128": {
+          "active_buckets": 71,
+          "active_in_mixed_buckets": 42,
+          "active_in_pure_buckets": 114,
+          "active_pure_bucket_fraction": 0.730769231,
+          "active_total": 156,
+          "mixed_buckets": 16,
+          "occupied_buckets": 73,
+          "pure_active_buckets": 55,
+          "pure_non_active_buckets": 2,
+          "top_mixed_buckets": {
+            "0": {
+              "active": 5,
+              "active_fraction": 0.833333333,
+              "total": 6
+            },
+            "10": {
+              "active": 4,
+              "active_fraction": 0.666666667,
+              "total": 6
+            },
+            "104": {
+              "active": 3,
+              "active_fraction": 0.75,
+              "total": 4
+            },
+            "106": {
+              "active": 3,
+              "active_fraction": 0.75,
+              "total": 4
+            },
+            "116": {
+              "active": 2,
+              "active_fraction": 0.666666667,
+              "total": 3
+            },
+            "40": {
+              "active": 4,
+              "active_fraction": 0.8,
+              "total": 5
+            },
+            "64": {
+              "active": 4,
+              "active_fraction": 0.8,
+              "total": 5
+            },
+            "84": {
+              "active": 3,
+              "active_fraction": 0.75,
+              "total": 4
+            }
+          },
+          "top_pure_active_buckets": {
+            "12": 4,
+            "16": 6,
+            "26": 4,
+            "32": 4,
+            "42": 5,
+            "68": 4,
+            "86": 4,
+            "96": 6
+          }
+        },
+        "16": {
+          "active_buckets": 16,
+          "active_in_mixed_buckets": 105,
+          "active_in_pure_buckets": 51,
+          "active_pure_bucket_fraction": 0.326923077,
+          "active_total": 156,
+          "mixed_buckets": 7,
+          "occupied_buckets": 16,
+          "pure_active_buckets": 9,
+          "pure_non_active_buckets": 0,
+          "top_mixed_buckets": {
+            "0": {
+              "active": 31,
+              "active_fraction": 0.939393939,
+              "total": 33
+            },
+            "10": {
+              "active": 25,
+              "active_fraction": 0.862068966,
+              "total": 29
+            },
+            "12": {
+              "active": 11,
+              "active_fraction": 0.785714286,
+              "total": 14
+            },
+            "14": {
+              "active": 4,
+              "active_fraction": 0.8,
+              "total": 5
+            },
+            "2": {
+              "active": 6,
+              "active_fraction": 0.666666667,
+              "total": 9
+            },
+            "4": {
+              "active": 14,
+              "active_fraction": 0.777777778,
+              "total": 18
+            },
+            "8": {
+              "active": 14,
+              "active_fraction": 0.736842105,
+              "total": 19
+            }
+          },
+          "top_pure_active_buckets": {
+            "1": 10,
+            "13": 5,
+            "15": 2,
+            "3": 4,
+            "5": 7,
+            "6": 7,
+            "7": 6,
+            "9": 8
+          }
+        },
+        "256": {
+          "active_buckets": 96,
+          "active_in_mixed_buckets": 30,
+          "active_in_pure_buckets": 126,
+          "active_pure_bucket_fraction": 0.807692308,
+          "active_total": 156,
+          "mixed_buckets": 16,
+          "occupied_buckets": 100,
+          "pure_active_buckets": 80,
+          "pure_non_active_buckets": 4,
+          "top_mixed_buckets": {
+            "106": {
+              "active": 3,
+              "active_fraction": 0.75,
+              "total": 4
+            },
+            "128": {
+              "active": 4,
+              "active_fraction": 0.8,
+              "total": 5
+            },
+            "138": {
+              "active": 4,
+              "active_fraction": 0.666666667,
+              "total": 6
+            },
+            "168": {
+              "active": 2,
+              "active_fraction": 0.666666667,
+              "total": 3
+            },
+            "172": {
+              "active": 2,
+              "active_fraction": 0.666666667,
+              "total": 3
+            },
+            "200": {
+              "active": 2,
+              "active_fraction": 0.666666667,
+              "total": 3
+            },
+            "202": {
+              "active": 2,
+              "active_fraction": 0.666666667,
+              "total": 3
+            },
+            "84": {
+              "active": 2,
+              "active_fraction": 0.666666667,
+              "total": 3
+            }
+          },
+          "top_pure_active_buckets": {
+            "144": 3,
+            "214": 3,
+            "217": 3,
+            "224": 4,
+            "26": 4,
+            "28": 3,
+            "42": 3,
+            "48": 3
+          }
+        },
+        "32": {
+          "active_buckets": 29,
+          "active_in_mixed_buckets": 69,
+          "active_in_pure_buckets": 87,
+          "active_pure_bucket_fraction": 0.557692308,
+          "active_total": 156,
+          "mixed_buckets": 9,
+          "occupied_buckets": 29,
+          "pure_active_buckets": 20,
+          "pure_non_active_buckets": 0,
+          "top_mixed_buckets": {
+            "0": {
+              "active": 19,
+              "active_fraction": 0.904761905,
+              "total": 21
+            },
+            "10": {
+              "active": 14,
+              "active_fraction": 0.777777778,
+              "total": 18
+            },
+            "12": {
+              "active": 6,
+              "active_fraction": 0.75,
+              "total": 8
+            },
+            "14": {
+              "active": 2,
+              "active_fraction": 0.666666667,
+              "total": 3
+            },
+            "20": {
+              "active": 7,
+              "active_fraction": 0.636363636,
+              "total": 11
+            },
+            "24": {
+              "active": 3,
+              "active_fraction": 0.75,
+              "total": 4
+            },
+            "28": {
+              "active": 5,
+              "active_fraction": 0.833333333,
+              "total": 6
+            },
+            "8": {
+              "active": 11,
+              "active_fraction": 0.733333333,
+              "total": 15
+            }
+          },
+          "top_pure_active_buckets": {
+            "1": 5,
+            "13": 5,
+            "16": 12,
+            "17": 5,
+            "22": 4,
+            "26": 11,
+            "4": 7,
+            "9": 5
+          }
+        },
+        "4096": {
+          "active_buckets": 148,
+          "active_in_mixed_buckets": 2,
+          "active_in_pure_buckets": 154,
+          "active_pure_bucket_fraction": 0.987179487,
+          "active_total": 156,
+          "mixed_buckets": 2,
+          "occupied_buckets": 167,
+          "pure_active_buckets": 146,
+          "pure_non_active_buckets": 19,
+          "top_mixed_buckets": {
+            "3106": {
+              "active": 1,
+              "active_fraction": 0.333333333,
+              "total": 3
+            },
+            "3274": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            }
+          },
+          "top_pure_active_buckets": {
+            "1548": 2,
+            "2071": 2,
+            "2154": 2,
+            "2864": 2,
+            "3801": 2,
+            "384": 2,
+            "474": 2,
+            "726": 2
+          }
+        },
+        "512": {
+          "active_buckets": 117,
+          "active_in_mixed_buckets": 21,
+          "active_in_pure_buckets": 135,
+          "active_pure_bucket_fraction": 0.865384615,
+          "active_total": 156,
+          "mixed_buckets": 14,
+          "occupied_buckets": 124,
+          "pure_active_buckets": 103,
+          "pure_non_active_buckets": 7,
+          "top_mixed_buckets": {
+            "138": {
+              "active": 2,
+              "active_fraction": 0.666666667,
+              "total": 3
+            },
+            "302": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            },
+            "34": {
+              "active": 2,
+              "active_fraction": 0.5,
+              "total": 4
+            },
+            "340": {
+              "active": 2,
+              "active_fraction": 0.666666667,
+              "total": 3
+            },
+            "362": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            },
+            "384": {
+              "active": 4,
+              "active_fraction": 0.8,
+              "total": 5
+            },
+            "394": {
+              "active": 2,
+              "active_fraction": 0.666666667,
+              "total": 3
+            },
+            "456": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            }
+          },
+          "top_pure_active_buckets": {
+            "12": 3,
+            "144": 2,
+            "16": 3,
+            "214": 3,
+            "284": 2,
+            "304": 3,
+            "42": 2,
+            "452": 3
+          }
+        },
+        "64": {
+          "active_buckets": 47,
+          "active_in_mixed_buckets": 50,
+          "active_in_pure_buckets": 106,
+          "active_pure_bucket_fraction": 0.679487179,
+          "active_total": 156,
+          "mixed_buckets": 11,
+          "occupied_buckets": 48,
+          "pure_active_buckets": 36,
+          "pure_non_active_buckets": 1,
+          "top_mixed_buckets": {
+            "0": {
+              "active": 9,
+              "active_fraction": 0.818181818,
+              "total": 11
+            },
+            "10": {
+              "active": 6,
+              "active_fraction": 0.666666667,
+              "total": 9
+            },
+            "20": {
+              "active": 4,
+              "active_fraction": 0.8,
+              "total": 5
+            },
+            "24": {
+              "active": 3,
+              "active_fraction": 0.75,
+              "total": 4
+            },
+            "40": {
+              "active": 7,
+              "active_fraction": 0.777777778,
+              "total": 9
+            },
+            "42": {
+              "active": 8,
+              "active_fraction": 0.888888889,
+              "total": 9
+            },
+            "52": {
+              "active": 3,
+              "active_fraction": 0.5,
+              "total": 6
+            },
+            "8": {
+              "active": 4,
+              "active_fraction": 0.666666667,
+              "total": 6
+            }
+          },
+          "top_pure_active_buckets": {
+            "1": 4,
+            "12": 4,
+            "16": 9,
+            "22": 4,
+            "26": 7,
+            "28": 5,
+            "32": 10,
+            "4": 4
+          }
+        },
+        "65536": {
+          "active_buckets": 154,
+          "active_in_mixed_buckets": 0,
+          "active_in_pure_buckets": 156,
+          "active_pure_bucket_fraction": 1.0,
+          "active_total": 156,
+          "mixed_buckets": 0,
+          "occupied_buckets": 176,
+          "pure_active_buckets": 154,
+          "pure_non_active_buckets": 22,
+          "top_mixed_buckets": {},
+          "top_pure_active_buckets": {
+            "11113": 1,
+            "12672": 2,
+            "18823": 1,
+            "32229": 1,
+            "39728": 1,
+            "42380": 1,
+            "51223": 2,
+            "6186": 1
+          }
+        }
+      },
+      "active_units_per_ladder": {
+        "1": 137,
+        "2": 8,
+        "3": 1
+      },
+      "active_units_per_transition": {
+        "1": 134,
+        "2": 8,
+        "3": 2
+      },
+      "align_counts": {
+        "11": 1,
+        "3": 30,
+        "4": 32,
+        "5": 33,
+        "6": 23,
+        "7": 21,
+        "8": 10,
+        "9": 6
+      },
+      "align_mod_4_counts": {
+        "0": 42,
+        "1": 39,
+        "2": 23,
+        "3": 52
+      },
+      "cached": false,
+      "child_depth": 19,
+      "event_index_counts": {
+        "1": 144,
+        "2": 10,
+        "3": 2
+      },
+      "event_index_lag_counts": {
+        "1:11": 1,
+        "1:2": 3,
+        "1:3": 36,
+        "1:4": 35,
+        "1:5": 35,
+        "1:6": 16,
+        "1:7": 11,
+        "1:8": 5,
+        "1:9": 2,
+        "2:3": 1,
+        "2:4": 1,
+        "2:5": 2,
+        "2:6": 2,
+        "2:7": 3,
+        "2:8": 1,
+        "3:6": 1,
+        "3:8": 1
+      },
+      "event_index_required_above_parent_counts": {
+        "1:1": 144,
+        "2:2": 10,
+        "3:3": 2
+      },
+      "ladder_credit_counts": {
+        "1": 30,
+        "2": 32,
+        "3": 33,
+        "4": 23,
+        "5": 21,
+        "6": 10,
+        "7": 6,
+        "9": 1
+      },
+      "lag_counts": {
+        "11": 1,
+        "2": 3,
+        "3": 37,
+        "4": 36,
+        "5": 37,
+        "6": 19,
+        "7": 14,
+        "8": 7,
+        "9": 2
+      },
+      "lag_minus_align_counts": {
+        "-1": 30,
+        "-2": 6,
+        "-3": 6,
+        "-5": 2,
+        "0": 112
+      },
+      "parent_depth": 18,
+      "pressure_event_counts": {
+        "high_ladder_step": 156
+      },
+      "pressure_regime_counts": {
+        "high_after_ladder_window": 20,
+        "high_inside_active_ladder": 156,
+        "low_repeat_prepaid": 2
+      },
+      "pure_feature_claims": {
+        "all_active_events_are_high_ladder_steps": true,
+        "all_active_ladder_formulas_checked": true,
+        "all_active_parities_are_odd": true,
+        "all_alignment_burns_checked": true,
+        "all_event_indexes_equal_required_above_parent": true,
+        "all_lag_simulations_match_pressure_state": true
+      },
+      "q_mod_16_counts": {
+        "1": 23,
+        "11": 20,
+        "13": 18,
+        "15": 14,
+        "3": 31,
+        "5": 12,
+        "7": 11,
+        "9": 27
+      },
+      "q_mod_8_counts": {
+        "1": 50,
+        "3": 51,
+        "5": 30,
+        "7": 25
+      },
+      "remaining_align_counts": {
+        "0": 112,
+        "1": 30,
+        "2": 6,
+        "3": 6,
+        "5": 2
+      },
+      "required_above_parent_lag_counts": {
+        "1:11": 1,
+        "1:2": 3,
+        "1:3": 36,
+        "1:4": 35,
+        "1:5": 35,
+        "1:6": 16,
+        "1:7": 11,
+        "1:8": 5,
+        "1:9": 2,
+        "2:3": 1,
+        "2:4": 1,
+        "2:5": 2,
+        "2:6": 2,
+        "2:7": 3,
+        "2:8": 1,
+        "3:6": 1,
+        "3:8": 1
+      },
+      "retimed_transition_count": 166,
+      "state_plus_one_v2_counts": {
+        "0": 112,
+        "1": 30,
+        "2": 6,
+        "3": 6,
+        "5": 2
+      },
+      "step_offset_max": 37,
+      "step_offset_min": 1,
+      "terminal_mod_16_counts": {
+        "0": 39,
+        "10": 34,
+        "12": 14,
+        "14": 9,
+        "2": 11,
+        "4": 21,
+        "6": 11,
+        "8": 17
+      },
+      "terminal_mod_64_counts": {
+        "0": 11,
+        "10": 8,
+        "12": 6,
+        "14": 1,
+        "16": 14,
+        "18": 2,
+        "2": 1,
+        "20": 6,
+        "22": 5,
+        "24": 5,
+        "26": 8,
+        "28": 5,
+        "30": 3,
+        "32": 11,
+        "34": 5,
+        "36": 5,
+        "38": 1,
+        "4": 5,
+        "40": 7,
+        "42": 13,
+        "44": 3,
+        "46": 4,
+        "48": 3,
+        "50": 3,
+        "52": 5,
+        "56": 1,
+        "58": 5,
+        "6": 5,
+        "62": 1,
+        "8": 4
+      }
+    },
+    {
+      "above_parent_pressure_unit_count": 147,
+      "active_ladder_pressure_unit_count": 143,
+      "active_ladders_per_transition": {
+        "1": 123,
+        "2": 8
+      },
+      "active_pressure_state_residue_purity": {
+        "1024": {
+          "active_buckets": 125,
+          "active_in_mixed_buckets": 2,
+          "active_in_pure_buckets": 141,
+          "active_pure_bucket_fraction": 0.986013986,
+          "active_total": 143,
+          "mixed_buckets": 2,
+          "occupied_buckets": 127,
+          "pure_active_buckets": 123,
+          "pure_non_active_buckets": 2,
+          "top_mixed_buckets": {
+            "418": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            },
+            "900": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            }
+          },
+          "top_pure_active_buckets": {
+            "369": 3,
+            "512": 2,
+            "592": 2,
+            "682": 2,
+            "716": 2,
+            "848": 2,
+            "88": 3,
+            "906": 3
+          }
+        },
+        "128": {
+          "active_buckets": 78,
+          "active_in_mixed_buckets": 6,
+          "active_in_pure_buckets": 137,
+          "active_pure_bucket_fraction": 0.958041958,
+          "active_total": 143,
+          "mixed_buckets": 2,
+          "occupied_buckets": 79,
+          "pure_active_buckets": 76,
+          "pure_non_active_buckets": 1,
+          "top_mixed_buckets": {
+            "34": {
+              "active": 3,
+              "active_fraction": 0.75,
+              "total": 4
+            },
+            "4": {
+              "active": 3,
+              "active_fraction": 0.6,
+              "total": 5
+            }
+          },
+          "top_pure_active_buckets": {
+            "0": 6,
+            "104": 4,
+            "113": 3,
+            "2": 6,
+            "42": 6,
+            "80": 4,
+            "84": 3,
+            "88": 4
+          }
+        },
+        "16": {
+          "active_buckets": 16,
+          "active_in_mixed_buckets": 48,
+          "active_in_pure_buckets": 95,
+          "active_pure_bucket_fraction": 0.664335664,
+          "active_total": 143,
+          "mixed_buckets": 3,
+          "occupied_buckets": 16,
+          "pure_active_buckets": 13,
+          "pure_non_active_buckets": 0,
+          "top_mixed_buckets": {
+            "0": {
+              "active": 21,
+              "active_fraction": 0.954545455,
+              "total": 22
+            },
+            "2": {
+              "active": 16,
+              "active_fraction": 0.941176471,
+              "total": 17
+            },
+            "4": {
+              "active": 11,
+              "active_fraction": 0.846153846,
+              "total": 13
+            }
+          },
+          "top_pure_active_buckets": {
+            "1": 7,
+            "10": 15,
+            "12": 8,
+            "13": 8,
+            "3": 7,
+            "5": 11,
+            "6": 11,
+            "8": 14
+          }
+        },
+        "256": {
+          "active_buckets": 96,
+          "active_in_mixed_buckets": 5,
+          "active_in_pure_buckets": 138,
+          "active_pure_bucket_fraction": 0.965034965,
+          "active_total": 143,
+          "mixed_buckets": 3,
+          "occupied_buckets": 97,
+          "pure_active_buckets": 93,
+          "pure_non_active_buckets": 1,
+          "top_mixed_buckets": {
+            "132": {
+              "active": 2,
+              "active_fraction": 0.666666667,
+              "total": 3
+            },
+            "162": {
+              "active": 2,
+              "active_fraction": 0.666666667,
+              "total": 3
+            },
+            "4": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            }
+          },
+          "top_pure_active_buckets": {
+            "0": 4,
+            "104": 3,
+            "113": 3,
+            "130": 4,
+            "138": 3,
+            "170": 3,
+            "80": 4,
+            "88": 4
+          }
+        },
+        "32": {
+          "active_buckets": 28,
+          "active_in_mixed_buckets": 26,
+          "active_in_pure_buckets": 117,
+          "active_pure_bucket_fraction": 0.818181818,
+          "active_total": 143,
+          "mixed_buckets": 3,
+          "occupied_buckets": 28,
+          "pure_active_buckets": 25,
+          "pure_non_active_buckets": 0,
+          "top_mixed_buckets": {
+            "0": {
+              "active": 10,
+              "active_fraction": 0.909090909,
+              "total": 11
+            },
+            "2": {
+              "active": 12,
+              "active_fraction": 0.923076923,
+              "total": 13
+            },
+            "4": {
+              "active": 4,
+              "active_fraction": 0.666666667,
+              "total": 6
+            }
+          },
+          "top_pure_active_buckets": {
+            "10": 11,
+            "12": 7,
+            "16": 11,
+            "20": 7,
+            "21": 7,
+            "22": 6,
+            "24": 8,
+            "8": 6
+          }
+        },
+        "4096": {
+          "active_buckets": 135,
+          "active_in_mixed_buckets": 1,
+          "active_in_pure_buckets": 142,
+          "active_pure_bucket_fraction": 0.993006993,
+          "active_total": 143,
+          "mixed_buckets": 1,
+          "occupied_buckets": 138,
+          "pure_active_buckets": 134,
+          "pure_non_active_buckets": 3,
+          "top_mixed_buckets": {
+            "3972": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            }
+          },
+          "top_pure_active_buckets": {
+            "1128": 2,
+            "1393": 1,
+            "1930": 2,
+            "3468": 2,
+            "3788": 2,
+            "579": 2,
+            "682": 2,
+            "88": 3
+          }
+        },
+        "512": {
+          "active_buckets": 115,
+          "active_in_mixed_buckets": 3,
+          "active_in_pure_buckets": 140,
+          "active_pure_bucket_fraction": 0.979020979,
+          "active_total": 143,
+          "mixed_buckets": 3,
+          "occupied_buckets": 116,
+          "pure_active_buckets": 112,
+          "pure_non_active_buckets": 1,
+          "top_mixed_buckets": {
+            "388": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            },
+            "4": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            },
+            "418": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            }
+          },
+          "top_pure_active_buckets": {
+            "130": 2,
+            "304": 2,
+            "358": 2,
+            "369": 3,
+            "394": 3,
+            "461": 2,
+            "80": 2,
+            "88": 4
+          }
+        },
+        "64": {
+          "active_buckets": 51,
+          "active_in_mixed_buckets": 11,
+          "active_in_pure_buckets": 132,
+          "active_pure_bucket_fraction": 0.923076923,
+          "active_total": 143,
+          "mixed_buckets": 3,
+          "occupied_buckets": 51,
+          "pure_active_buckets": 48,
+          "pure_non_active_buckets": 0,
+          "top_mixed_buckets": {
+            "32": {
+              "active": 2,
+              "active_fraction": 0.666666667,
+              "total": 3
+            },
+            "34": {
+              "active": 6,
+              "active_fraction": 0.857142857,
+              "total": 7
+            },
+            "4": {
+              "active": 3,
+              "active_fraction": 0.6,
+              "total": 5
+            }
+          },
+          "top_pure_active_buckets": {
+            "0": 8,
+            "12": 5,
+            "16": 6,
+            "2": 6,
+            "24": 6,
+            "40": 5,
+            "42": 7,
+            "48": 5
+          }
+        },
+        "65536": {
+          "active_buckets": 139,
+          "active_in_mixed_buckets": 0,
+          "active_in_pure_buckets": 143,
+          "active_pure_bucket_fraction": 1.0,
+          "active_total": 143,
+          "mixed_buckets": 0,
+          "occupied_buckets": 143,
+          "pure_active_buckets": 139,
+          "pure_non_active_buckets": 4,
+          "top_mixed_buckets": {},
+          "top_pure_active_buckets": {
+            "10088": 1,
+            "15990": 1,
+            "24664": 3,
+            "25969": 1,
+            "42580": 1,
+            "55178": 2,
+            "63157": 1,
+            "682": 2
+          }
+        }
+      },
+      "active_units_per_ladder": {
+        "1": 135,
+        "2": 4
+      },
+      "active_units_per_transition": {
+        "1": 121,
+        "2": 8,
+        "3": 2
+      },
+      "align_counts": {
+        "11": 2,
+        "13": 1,
+        "14": 1,
+        "17": 1,
+        "19": 2,
+        "3": 39,
+        "4": 32,
+        "5": 23,
+        "6": 11,
+        "7": 15,
+        "8": 11,
+        "9": 5
+      },
+      "align_mod_4_counts": {
+        "0": 43,
+        "1": 30,
+        "2": 12,
+        "3": 58
+      },
+      "cached": false,
+      "child_depth": 20,
+      "event_index_counts": {
+        "1": 131,
+        "2": 10,
+        "3": 2
+      },
+      "event_index_lag_counts": {
+        "1:11": 2,
+        "1:12": 1,
+        "1:13": 1,
+        "1:15": 2,
+        "1:3": 52,
+        "1:4": 19,
+        "1:5": 25,
+        "1:6": 13,
+        "1:7": 8,
+        "1:8": 6,
+        "1:9": 2,
+        "2:18": 1,
+        "2:3": 1,
+        "2:4": 5,
+        "2:5": 2,
+        "2:8": 1,
+        "3:7": 2
+      },
+      "event_index_required_above_parent_counts": {
+        "1:1": 131,
+        "2:2": 10,
+        "3:3": 2
+      },
+      "ladder_credit_counts": {
+        "1": 39,
+        "11": 1,
+        "12": 1,
+        "15": 1,
+        "17": 2,
+        "2": 32,
+        "3": 23,
+        "4": 11,
+        "5": 15,
+        "6": 11,
+        "7": 5,
+        "9": 2
+      },
+      "lag_counts": {
+        "11": 2,
+        "12": 1,
+        "13": 1,
+        "15": 2,
+        "18": 1,
+        "3": 53,
+        "4": 24,
+        "5": 27,
+        "6": 13,
+        "7": 10,
+        "8": 7,
+        "9": 2
+      },
+      "lag_minus_align_counts": {
+        "-1": 30,
+        "-2": 10,
+        "-3": 1,
+        "-4": 2,
+        "0": 100
+      },
+      "parent_depth": 19,
+      "pressure_event_counts": {
+        "high_ladder_step": 143
+      },
+      "pressure_regime_counts": {
+        "high_after_ladder_window": 4,
+        "high_inside_active_ladder": 143
+      },
+      "pure_feature_claims": {
+        "all_active_events_are_high_ladder_steps": true,
+        "all_active_ladder_formulas_checked": true,
+        "all_active_parities_are_odd": true,
+        "all_alignment_burns_checked": true,
+        "all_event_indexes_equal_required_above_parent": true,
+        "all_lag_simulations_match_pressure_state": true
+      },
+      "q_mod_16_counts": {
+        "1": 23,
+        "11": 17,
+        "13": 12,
+        "15": 15,
+        "3": 31,
+        "5": 13,
+        "7": 9,
+        "9": 23
+      },
+      "q_mod_8_counts": {
+        "1": 46,
+        "3": 48,
+        "5": 25,
+        "7": 24
+      },
+      "remaining_align_counts": {
+        "0": 100,
+        "1": 30,
+        "2": 10,
+        "3": 1,
+        "4": 2
+      },
+      "required_above_parent_lag_counts": {
+        "1:11": 2,
+        "1:12": 1,
+        "1:13": 1,
+        "1:15": 2,
+        "1:3": 52,
+        "1:4": 19,
+        "1:5": 25,
+        "1:6": 13,
+        "1:7": 8,
+        "1:8": 6,
+        "1:9": 2,
+        "2:18": 1,
+        "2:3": 1,
+        "2:4": 5,
+        "2:5": 2,
+        "2:8": 1,
+        "3:7": 2
+      },
+      "retimed_transition_count": 135,
+      "state_plus_one_v2_counts": {
+        "0": 100,
+        "1": 30,
+        "2": 10,
+        "3": 1,
+        "4": 2
+      },
+      "step_offset_max": 30,
+      "step_offset_min": 3,
+      "terminal_mod_16_counts": {
+        "0": 31,
+        "10": 22,
+        "12": 14,
+        "14": 4,
+        "2": 19,
+        "4": 16,
+        "6": 15,
+        "8": 22
+      },
+      "terminal_mod_64_counts": {
+        "0": 9,
+        "10": 4,
+        "12": 9,
+        "14": 1,
+        "16": 10,
+        "18": 5,
+        "2": 6,
+        "20": 5,
+        "22": 3,
+        "24": 10,
+        "26": 4,
+        "32": 6,
+        "34": 7,
+        "36": 1,
+        "38": 5,
+        "4": 4,
+        "40": 7,
+        "42": 12,
+        "44": 4,
+        "46": 2,
+        "48": 6,
+        "50": 1,
+        "52": 6,
+        "54": 5,
+        "56": 2,
+        "58": 2,
+        "6": 2,
+        "60": 1,
+        "62": 1,
+        "8": 3
+      }
+    },
+    {
+      "above_parent_pressure_unit_count": 288,
+      "active_ladder_pressure_unit_count": 277,
+      "active_ladders_per_transition": {
+        "1": 232,
+        "2": 14,
+        "3": 1
+      },
+      "active_pressure_state_residue_purity": {
+        "1024": {
+          "active_buckets": 226,
+          "active_in_mixed_buckets": 4,
+          "active_in_pure_buckets": 273,
+          "active_pure_bucket_fraction": 0.985559567,
+          "active_total": 277,
+          "mixed_buckets": 3,
+          "occupied_buckets": 233,
+          "pure_active_buckets": 223,
+          "pure_non_active_buckets": 7,
+          "top_mixed_buckets": {
+            "360": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            },
+            "600": {
+              "active": 2,
+              "active_fraction": 0.5,
+              "total": 4
+            },
+            "616": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            }
+          },
+          "top_pure_active_buckets": {
+            "176": 3,
+            "280": 4,
+            "469": 2,
+            "512": 3,
+            "520": 3,
+            "596": 3,
+            "64": 3,
+            "678": 3
+          }
+        },
+        "128": {
+          "active_buckets": 100,
+          "active_in_mixed_buckets": 22,
+          "active_in_pure_buckets": 255,
+          "active_pure_bucket_fraction": 0.920577617,
+          "active_total": 277,
+          "mixed_buckets": 7,
+          "occupied_buckets": 101,
+          "pure_active_buckets": 93,
+          "pure_non_active_buckets": 1,
+          "top_mixed_buckets": {
+            "104": {
+              "active": 5,
+              "active_fraction": 0.714285714,
+              "total": 7
+            },
+            "108": {
+              "active": 1,
+              "active_fraction": 0.333333333,
+              "total": 3
+            },
+            "116": {
+              "active": 3,
+              "active_fraction": 0.75,
+              "total": 4
+            },
+            "20": {
+              "active": 3,
+              "active_fraction": 0.75,
+              "total": 4
+            },
+            "26": {
+              "active": 4,
+              "active_fraction": 0.8,
+              "total": 5
+            },
+            "52": {
+              "active": 3,
+              "active_fraction": 0.75,
+              "total": 4
+            },
+            "88": {
+              "active": 3,
+              "active_fraction": 0.6,
+              "total": 5
+            }
+          },
+          "top_pure_active_buckets": {
+            "0": 9,
+            "24": 7,
+            "64": 13,
+            "69": 6,
+            "8": 7,
+            "84": 9,
+            "85": 6,
+            "90": 6
+          }
+        },
+        "16": {
+          "active_buckets": 16,
+          "active_in_mixed_buckets": 102,
+          "active_in_pure_buckets": 175,
+          "active_pure_bucket_fraction": 0.631768953,
+          "active_total": 277,
+          "mixed_buckets": 5,
+          "occupied_buckets": 16,
+          "pure_active_buckets": 11,
+          "pure_non_active_buckets": 0,
+          "top_mixed_buckets": {
+            "10": {
+              "active": 26,
+              "active_fraction": 0.962962963,
+              "total": 27
+            },
+            "12": {
+              "active": 7,
+              "active_fraction": 0.777777778,
+              "total": 9
+            },
+            "2": {
+              "active": 14,
+              "active_fraction": 0.933333333,
+              "total": 15
+            },
+            "4": {
+              "active": 28,
+              "active_fraction": 0.903225806,
+              "total": 31
+            },
+            "8": {
+              "active": 27,
+              "active_fraction": 0.870967742,
+              "total": 31
+            }
+          },
+          "top_pure_active_buckets": {
+            "0": 45,
+            "1": 23,
+            "11": 10,
+            "13": 10,
+            "3": 11,
+            "5": 20,
+            "6": 24,
+            "9": 11
+          }
+        },
+        "256": {
+          "active_buckets": 146,
+          "active_in_mixed_buckets": 14,
+          "active_in_pure_buckets": 263,
+          "active_pure_bucket_fraction": 0.949458484,
+          "active_total": 277,
+          "mixed_buckets": 6,
+          "occupied_buckets": 148,
+          "pure_active_buckets": 140,
+          "pure_non_active_buckets": 2,
+          "top_mixed_buckets": {
+            "104": {
+              "active": 4,
+              "active_fraction": 0.666666667,
+              "total": 6
+            },
+            "116": {
+              "active": 3,
+              "active_fraction": 0.75,
+              "total": 4
+            },
+            "154": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            },
+            "180": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            },
+            "20": {
+              "active": 2,
+              "active_fraction": 0.666666667,
+              "total": 3
+            },
+            "88": {
+              "active": 3,
+              "active_fraction": 0.6,
+              "total": 5
+            }
+          },
+          "top_pure_active_buckets": {
+            "0": 5,
+            "192": 7,
+            "2": 5,
+            "213": 4,
+            "24": 7,
+            "64": 6,
+            "8": 5,
+            "84": 6
+          }
+        },
+        "32": {
+          "active_buckets": 32,
+          "active_in_mixed_buckets": 64,
+          "active_in_pure_buckets": 213,
+          "active_pure_bucket_fraction": 0.768953069,
+          "active_total": 277,
+          "mixed_buckets": 6,
+          "occupied_buckets": 32,
+          "pure_active_buckets": 26,
+          "pure_non_active_buckets": 0,
+          "top_mixed_buckets": {
+            "12": {
+              "active": 4,
+              "active_fraction": 0.666666667,
+              "total": 6
+            },
+            "18": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            },
+            "20": {
+              "active": 18,
+              "active_fraction": 0.857142857,
+              "total": 21
+            },
+            "24": {
+              "active": 10,
+              "active_fraction": 0.833333333,
+              "total": 12
+            },
+            "26": {
+              "active": 14,
+              "active_fraction": 0.933333333,
+              "total": 15
+            },
+            "8": {
+              "active": 17,
+              "active_fraction": 0.894736842,
+              "total": 19
+            }
+          },
+          "top_pure_active_buckets": {
+            "0": 30,
+            "1": 11,
+            "10": 12,
+            "16": 15,
+            "17": 12,
+            "2": 13,
+            "21": 12,
+            "6": 18
+          }
+        },
+        "4096": {
+          "active_buckets": 257,
+          "active_in_mixed_buckets": 0,
+          "active_in_pure_buckets": 277,
+          "active_pure_bucket_fraction": 1.0,
+          "active_total": 277,
+          "mixed_buckets": 0,
+          "occupied_buckets": 268,
+          "pure_active_buckets": 257,
+          "pure_non_active_buckets": 11,
+          "top_mixed_buckets": {},
+          "top_pure_active_buckets": {
+            "2004": 2,
+            "2328": 3,
+            "2361": 2,
+            "3447": 2,
+            "3541": 2,
+            "3555": 2,
+            "3592": 3,
+            "3956": 2
+          }
+        },
+        "512": {
+          "active_buckets": 195,
+          "active_in_mixed_buckets": 10,
+          "active_in_pure_buckets": 267,
+          "active_pure_bucket_fraction": 0.963898917,
+          "active_total": 277,
+          "mixed_buckets": 6,
+          "occupied_buckets": 198,
+          "pure_active_buckets": 189,
+          "pure_non_active_buckets": 3,
+          "top_mixed_buckets": {
+            "104": {
+              "active": 2,
+              "active_fraction": 0.666666667,
+              "total": 3
+            },
+            "20": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            },
+            "360": {
+              "active": 2,
+              "active_fraction": 0.666666667,
+              "total": 3
+            },
+            "372": {
+              "active": 2,
+              "active_fraction": 0.666666667,
+              "total": 3
+            },
+            "410": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            },
+            "88": {
+              "active": 2,
+              "active_fraction": 0.5,
+              "total": 4
+            }
+          },
+          "top_pure_active_buckets": {
+            "2": 4,
+            "280": 6,
+            "320": 3,
+            "448": 4,
+            "69": 4,
+            "8": 4,
+            "84": 4,
+            "90": 3
+          }
+        },
+        "64": {
+          "active_buckets": 60,
+          "active_in_mixed_buckets": 48,
+          "active_in_pure_buckets": 229,
+          "active_pure_bucket_fraction": 0.826714801,
+          "active_total": 277,
+          "mixed_buckets": 7,
+          "occupied_buckets": 60,
+          "pure_active_buckets": 53,
+          "pure_non_active_buckets": 0,
+          "top_mixed_buckets": {
+            "20": {
+              "active": 12,
+              "active_fraction": 0.923076923,
+              "total": 13
+            },
+            "24": {
+              "active": 10,
+              "active_fraction": 0.833333333,
+              "total": 12
+            },
+            "26": {
+              "active": 10,
+              "active_fraction": 0.909090909,
+              "total": 11
+            },
+            "40": {
+              "active": 7,
+              "active_fraction": 0.777777778,
+              "total": 9
+            },
+            "44": {
+              "active": 2,
+              "active_fraction": 0.5,
+              "total": 4
+            },
+            "50": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            },
+            "52": {
+              "active": 6,
+              "active_fraction": 0.75,
+              "total": 8
+            }
+          },
+          "top_pure_active_buckets": {
+            "0": 22,
+            "1": 8,
+            "16": 8,
+            "21": 9,
+            "32": 8,
+            "42": 10,
+            "6": 11,
+            "8": 10
+          }
+        },
+        "65536": {
+          "active_buckets": 272,
+          "active_in_mixed_buckets": 0,
+          "active_in_pure_buckets": 277,
+          "active_pure_bucket_fraction": 1.0,
+          "active_total": 277,
+          "mixed_buckets": 0,
+          "occupied_buckets": 283,
+          "pure_active_buckets": 272,
+          "pure_non_active_buckets": 11,
+          "top_mixed_buckets": {},
+          "top_pure_active_buckets": {
+            "10553": 2,
+            "12906": 2,
+            "15735": 2,
+            "18627": 1,
+            "36518": 2,
+            "56789": 1,
+            "6624": 1,
+            "9828": 2
+          }
+        }
+      },
+      "active_units_per_ladder": {
+        "1": 249,
+        "2": 14
+      },
+      "active_units_per_transition": {
+        "1": 218,
+        "2": 28,
+        "3": 1
+      },
+      "align_counts": {
+        "10": 4,
+        "11": 2,
+        "12": 2,
+        "13": 2,
+        "15": 3,
+        "19": 1,
+        "3": 53,
+        "4": 63,
+        "5": 36,
+        "6": 36,
+        "7": 28,
+        "8": 27,
+        "9": 20
+      },
+      "align_mod_4_counts": {
+        "0": 92,
+        "1": 58,
+        "2": 40,
+        "3": 87
+      },
+      "cached": false,
+      "child_depth": 21,
+      "event_index_counts": {
+        "1": 247,
+        "2": 29,
+        "3": 1
+      },
+      "event_index_lag_counts": {
+        "1:10": 4,
+        "1:12": 3,
+        "1:13": 2,
+        "1:15": 1,
+        "1:19": 1,
+        "1:2": 4,
+        "1:3": 64,
+        "1:4": 64,
+        "1:5": 29,
+        "1:6": 35,
+        "1:7": 20,
+        "1:8": 12,
+        "1:9": 8,
+        "2:15": 1,
+        "2:3": 6,
+        "2:4": 7,
+        "2:5": 1,
+        "2:6": 5,
+        "2:7": 3,
+        "2:8": 2,
+        "2:9": 4,
+        "3:4": 1
+      },
+      "event_index_required_above_parent_counts": {
+        "1:1": 247,
+        "2:2": 29,
+        "3:3": 1
+      },
+      "ladder_credit_counts": {
+        "1": 53,
+        "10": 2,
+        "11": 2,
+        "13": 3,
+        "17": 1,
+        "2": 63,
+        "3": 36,
+        "4": 36,
+        "5": 28,
+        "6": 27,
+        "7": 20,
+        "8": 4,
+        "9": 2
+      },
+      "lag_counts": {
+        "10": 4,
+        "12": 3,
+        "13": 2,
+        "15": 2,
+        "19": 1,
+        "2": 4,
+        "3": 70,
+        "4": 72,
+        "5": 30,
+        "6": 40,
+        "7": 23,
+        "8": 14,
+        "9": 12
+      },
+      "lag_minus_align_counts": {
+        "-1": 64,
+        "-2": 21,
+        "-3": 8,
+        "-4": 3,
+        "-5": 1,
+        "0": 180
+      },
+      "parent_depth": 20,
+      "pressure_event_counts": {
+        "high_ladder_step": 277
+      },
+      "pressure_regime_counts": {
+        "high_after_ladder_window": 10,
+        "high_inside_active_ladder": 277,
+        "low_repeat_prepaid": 1
+      },
+      "pure_feature_claims": {
+        "all_active_events_are_high_ladder_steps": true,
+        "all_active_ladder_formulas_checked": true,
+        "all_active_parities_are_odd": true,
+        "all_alignment_burns_checked": true,
+        "all_event_indexes_equal_required_above_parent": true,
+        "all_lag_simulations_match_pressure_state": true
+      },
+      "q_mod_16_counts": {
+        "1": 45,
+        "11": 44,
+        "13": 23,
+        "15": 24,
+        "3": 53,
+        "5": 34,
+        "7": 22,
+        "9": 32
+      },
+      "q_mod_8_counts": {
+        "1": 77,
+        "3": 97,
+        "5": 57,
+        "7": 46
+      },
+      "remaining_align_counts": {
+        "0": 180,
+        "1": 64,
+        "2": 21,
+        "3": 8,
+        "4": 3,
+        "5": 1
+      },
+      "required_above_parent_lag_counts": {
+        "1:10": 4,
+        "1:12": 3,
+        "1:13": 2,
+        "1:15": 1,
+        "1:19": 1,
+        "1:2": 4,
+        "1:3": 64,
+        "1:4": 64,
+        "1:5": 29,
+        "1:6": 35,
+        "1:7": 20,
+        "1:8": 12,
+        "1:9": 8,
+        "2:15": 1,
+        "2:3": 6,
+        "2:4": 7,
+        "2:5": 1,
+        "2:6": 5,
+        "2:7": 3,
+        "2:8": 2,
+        "2:9": 4,
+        "3:4": 1
+      },
+      "retimed_transition_count": 253,
+      "state_plus_one_v2_counts": {
+        "0": 180,
+        "1": 64,
+        "2": 21,
+        "3": 8,
+        "4": 3,
+        "5": 1
+      },
+      "step_offset_max": 32,
+      "step_offset_min": 2,
+      "terminal_mod_16_counts": {
+        "0": 65,
+        "10": 41,
+        "12": 14,
+        "14": 14,
+        "2": 29,
+        "4": 39,
+        "6": 36,
+        "8": 39
+      },
+      "terminal_mod_64_counts": {
+        "0": 33,
+        "10": 4,
+        "12": 6,
+        "14": 4,
+        "16": 11,
+        "18": 4,
+        "2": 12,
+        "20": 14,
+        "22": 7,
+        "24": 13,
+        "26": 15,
+        "28": 3,
+        "30": 4,
+        "32": 13,
+        "34": 11,
+        "36": 4,
+        "38": 12,
+        "4": 11,
+        "40": 14,
+        "42": 15,
+        "44": 3,
+        "46": 4,
+        "48": 8,
+        "50": 2,
+        "52": 10,
+        "54": 5,
+        "56": 1,
+        "58": 7,
+        "6": 12,
+        "60": 2,
+        "62": 2,
+        "8": 11
+      }
+    },
+    {
+      "above_parent_pressure_unit_count": 801,
+      "active_ladder_pressure_unit_count": 790,
+      "active_ladders_per_transition": {
+        "1": 673,
+        "2": 35,
+        "3": 2
+      },
+      "active_pressure_state_residue_purity": {
+        "1024": {
+          "active_buckets": 443,
+          "active_in_mixed_buckets": 23,
+          "active_in_pure_buckets": 767,
+          "active_pure_bucket_fraction": 0.970886076,
+          "active_total": 790,
+          "mixed_buckets": 10,
+          "occupied_buckets": 444,
+          "pure_active_buckets": 433,
+          "pure_non_active_buckets": 1,
+          "top_mixed_buckets": {
+            "160": {
+              "active": 6,
+              "active_fraction": 0.857142857,
+              "total": 7
+            },
+            "362": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            },
+            "544": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            },
+            "58": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            },
+            "784": {
+              "active": 4,
+              "active_fraction": 0.8,
+              "total": 5
+            },
+            "792": {
+              "active": 4,
+              "active_fraction": 0.8,
+              "total": 5
+            },
+            "832": {
+              "active": 2,
+              "active_fraction": 0.666666667,
+              "total": 3
+            },
+            "842": {
+              "active": 2,
+              "active_fraction": 0.666666667,
+              "total": 3
+            }
+          },
+          "top_pure_active_buckets": {
+            "140": 6,
+            "202": 6,
+            "276": 5,
+            "400": 6,
+            "512": 6,
+            "680": 6,
+            "802": 5,
+            "916": 6
+          }
+        },
+        "128": {
+          "active_buckets": 121,
+          "active_in_mixed_buckets": 122,
+          "active_in_pure_buckets": 668,
+          "active_pure_bucket_fraction": 0.84556962,
+          "active_total": 790,
+          "mixed_buckets": 10,
+          "occupied_buckets": 121,
+          "pure_active_buckets": 111,
+          "pure_non_active_buckets": 0,
+          "top_mixed_buckets": {
+            "100": {
+              "active": 9,
+              "active_fraction": 0.9,
+              "total": 10
+            },
+            "12": {
+              "active": 12,
+              "active_fraction": 0.923076923,
+              "total": 13
+            },
+            "16": {
+              "active": 14,
+              "active_fraction": 0.933333333,
+              "total": 15
+            },
+            "24": {
+              "active": 22,
+              "active_fraction": 0.956521739,
+              "total": 23
+            },
+            "32": {
+              "active": 13,
+              "active_fraction": 0.866666667,
+              "total": 15
+            },
+            "58": {
+              "active": 9,
+              "active_fraction": 0.9,
+              "total": 10
+            },
+            "64": {
+              "active": 12,
+              "active_fraction": 0.923076923,
+              "total": 13
+            },
+            "74": {
+              "active": 15,
+              "active_fraction": 0.9375,
+              "total": 16
+            }
+          },
+          "top_pure_active_buckets": {
+            "0": 22,
+            "10": 18,
+            "20": 16,
+            "4": 18,
+            "40": 22,
+            "44": 19,
+            "80": 19,
+            "84": 16
+          }
+        },
+        "16": {
+          "active_buckets": 16,
+          "active_in_mixed_buckets": 429,
+          "active_in_pure_buckets": 361,
+          "active_pure_bucket_fraction": 0.456962025,
+          "active_total": 790,
+          "mixed_buckets": 5,
+          "occupied_buckets": 16,
+          "pure_active_buckets": 11,
+          "pure_non_active_buckets": 0,
+          "top_mixed_buckets": {
+            "0": {
+              "active": 107,
+              "active_fraction": 0.963963964,
+              "total": 111
+            },
+            "10": {
+              "active": 76,
+              "active_fraction": 0.95,
+              "total": 80
+            },
+            "12": {
+              "active": 62,
+              "active_fraction": 0.984126984,
+              "total": 63
+            },
+            "4": {
+              "active": 90,
+              "active_fraction": 0.989010989,
+              "total": 91
+            },
+            "8": {
+              "active": 94,
+              "active_fraction": 0.989473684,
+              "total": 95
+            }
+          },
+          "top_pure_active_buckets": {
+            "1": 30,
+            "13": 33,
+            "14": 27,
+            "2": 46,
+            "3": 29,
+            "5": 44,
+            "6": 66,
+            "9": 31
+          }
+        },
+        "256": {
+          "active_buckets": 216,
+          "active_in_mixed_buckets": 72,
+          "active_in_pure_buckets": 718,
+          "active_pure_bucket_fraction": 0.908860759,
+          "active_total": 790,
+          "mixed_buckets": 11,
+          "occupied_buckets": 216,
+          "pure_active_buckets": 205,
+          "pure_non_active_buckets": 0,
+          "top_mixed_buckets": {
+            "106": {
+              "active": 7,
+              "active_fraction": 0.875,
+              "total": 8
+            },
+            "16": {
+              "active": 6,
+              "active_fraction": 0.857142857,
+              "total": 7
+            },
+            "160": {
+              "active": 7,
+              "active_fraction": 0.875,
+              "total": 8
+            },
+            "24": {
+              "active": 16,
+              "active_fraction": 0.941176471,
+              "total": 17
+            },
+            "26": {
+              "active": 6,
+              "active_fraction": 0.857142857,
+              "total": 7
+            },
+            "32": {
+              "active": 6,
+              "active_fraction": 0.857142857,
+              "total": 7
+            },
+            "64": {
+              "active": 8,
+              "active_fraction": 0.888888889,
+              "total": 9
+            },
+            "74": {
+              "active": 7,
+              "active_fraction": 0.875,
+              "total": 8
+            }
+          },
+          "top_pure_active_buckets": {
+            "0": 12,
+            "128": 10,
+            "138": 11,
+            "168": 13,
+            "172": 11,
+            "198": 10,
+            "4": 12,
+            "88": 10
+          }
+        },
+        "32": {
+          "active_buckets": 32,
+          "active_in_mixed_buckets": 319,
+          "active_in_pure_buckets": 471,
+          "active_pure_bucket_fraction": 0.596202532,
+          "active_total": 790,
+          "mixed_buckets": 7,
+          "occupied_buckets": 32,
+          "pure_active_buckets": 25,
+          "pure_non_active_buckets": 0,
+          "top_mixed_buckets": {
+            "0": {
+              "active": 52,
+              "active_fraction": 0.945454545,
+              "total": 55
+            },
+            "10": {
+              "active": 52,
+              "active_fraction": 0.962962963,
+              "total": 54
+            },
+            "12": {
+              "active": 48,
+              "active_fraction": 0.979591837,
+              "total": 49
+            },
+            "16": {
+              "active": 55,
+              "active_fraction": 0.982142857,
+              "total": 56
+            },
+            "24": {
+              "active": 43,
+              "active_fraction": 0.977272727,
+              "total": 44
+            },
+            "26": {
+              "active": 24,
+              "active_fraction": 0.923076923,
+              "total": 26
+            },
+            "4": {
+              "active": 45,
+              "active_fraction": 0.97826087,
+              "total": 46
+            }
+          },
+          "top_pure_active_buckets": {
+            "13": 22,
+            "2": 31,
+            "20": 45,
+            "21": 31,
+            "22": 30,
+            "25": 22,
+            "6": 36,
+            "8": 51
+          }
+        },
+        "4096": {
+          "active_buckets": 672,
+          "active_in_mixed_buckets": 8,
+          "active_in_pure_buckets": 782,
+          "active_pure_bucket_fraction": 0.989873418,
+          "active_total": 790,
+          "mixed_buckets": 6,
+          "occupied_buckets": 677,
+          "pure_active_buckets": 666,
+          "pure_non_active_buckets": 5,
+          "top_mixed_buckets": {
+            "1808": {
+              "active": 2,
+              "active_fraction": 0.666666667,
+              "total": 3
+            },
+            "2208": {
+              "active": 2,
+              "active_fraction": 0.666666667,
+              "total": 3
+            },
+            "2592": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            },
+            "2840": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            },
+            "2890": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            },
+            "832": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            }
+          },
+          "top_pure_active_buckets": {
+            "1226": 3,
+            "140": 3,
+            "1826": 3,
+            "260": 3,
+            "2710": 3,
+            "3276": 3,
+            "3285": 3,
+            "400": 4
+          }
+        },
+        "512": {
+          "active_buckets": 327,
+          "active_in_mixed_buckets": 43,
+          "active_in_pure_buckets": 747,
+          "active_pure_bucket_fraction": 0.94556962,
+          "active_total": 790,
+          "mixed_buckets": 11,
+          "occupied_buckets": 327,
+          "pure_active_buckets": 316,
+          "pure_non_active_buckets": 0,
+          "top_mixed_buckets": {
+            "160": {
+              "active": 7,
+              "active_fraction": 0.875,
+              "total": 8
+            },
+            "228": {
+              "active": 4,
+              "active_fraction": 0.8,
+              "total": 5
+            },
+            "26": {
+              "active": 3,
+              "active_fraction": 0.75,
+              "total": 4
+            },
+            "272": {
+              "active": 5,
+              "active_fraction": 0.833333333,
+              "total": 6
+            },
+            "280": {
+              "active": 9,
+              "active_fraction": 0.9,
+              "total": 10
+            },
+            "32": {
+              "active": 3,
+              "active_fraction": 0.75,
+              "total": 4
+            },
+            "320": {
+              "active": 5,
+              "active_fraction": 0.833333333,
+              "total": 6
+            },
+            "362": {
+              "active": 2,
+              "active_fraction": 0.666666667,
+              "total": 3
+            }
+          },
+          "top_pure_active_buckets": {
+            "0": 8,
+            "140": 8,
+            "168": 8,
+            "172": 8,
+            "202": 7,
+            "260": 7,
+            "290": 7,
+            "400": 8
+          }
+        },
+        "64": {
+          "active_buckets": 63,
+          "active_in_mixed_buckets": 228,
+          "active_in_pure_buckets": 562,
+          "active_pure_bucket_fraction": 0.711392405,
+          "active_total": 790,
+          "mixed_buckets": 10,
+          "occupied_buckets": 63,
+          "pure_active_buckets": 53,
+          "pure_non_active_buckets": 0,
+          "top_mixed_buckets": {
+            "0": {
+              "active": 34,
+              "active_fraction": 0.971428571,
+              "total": 35
+            },
+            "10": {
+              "active": 33,
+              "active_fraction": 0.970588235,
+              "total": 34
+            },
+            "12": {
+              "active": 21,
+              "active_fraction": 0.954545455,
+              "total": 22
+            },
+            "16": {
+              "active": 33,
+              "active_fraction": 0.970588235,
+              "total": 34
+            },
+            "24": {
+              "active": 34,
+              "active_fraction": 0.971428571,
+              "total": 35
+            },
+            "26": {
+              "active": 13,
+              "active_fraction": 0.928571429,
+              "total": 14
+            },
+            "32": {
+              "active": 18,
+              "active_fraction": 0.9,
+              "total": 20
+            },
+            "42": {
+              "active": 19,
+              "active_fraction": 0.95,
+              "total": 20
+            }
+          },
+          "top_pure_active_buckets": {
+            "20": 32,
+            "22": 25,
+            "4": 33,
+            "40": 35,
+            "44": 27,
+            "48": 22,
+            "6": 21,
+            "8": 16
+          }
+        },
+        "65536": {
+          "active_buckets": 760,
+          "active_in_mixed_buckets": 0,
+          "active_in_pure_buckets": 790,
+          "active_pure_bucket_fraction": 1.0,
+          "active_total": 790,
+          "mixed_buckets": 0,
+          "occupied_buckets": 771,
+          "pure_active_buckets": 760,
+          "pure_non_active_buckets": 11,
+          "top_mixed_buckets": {},
+          "top_pure_active_buckets": {
+            "10752": 2,
+            "28950": 3,
+            "35732": 3,
+            "38742": 2,
+            "47766": 2,
+            "49625": 2,
+            "50722": 2,
+            "7459": 2
+          }
+        }
+      },
+      "active_units_per_ladder": {
+        "1": 711,
+        "2": 35,
+        "3": 3
+      },
+      "active_units_per_transition": {
+        "1": 640,
+        "2": 61,
+        "3": 8,
+        "4": 1
+      },
+      "align_counts": {
+        "10": 19,
+        "11": 13,
+        "12": 5,
+        "13": 3,
+        "15": 1,
+        "16": 3,
+        "17": 1,
+        "22": 1,
+        "3": 163,
+        "4": 162,
+        "5": 157,
+        "6": 99,
+        "7": 58,
+        "8": 74,
+        "9": 31
+      },
+      "align_mod_4_counts": {
+        "0": 244,
+        "1": 192,
+        "2": 119,
+        "3": 235
+      },
+      "cached": false,
+      "child_depth": 22,
+      "event_index_counts": {
+        "1": 710,
+        "2": 70,
+        "3": 9,
+        "4": 1
+      },
+      "event_index_lag_counts": {
+        "1:10": 9,
+        "1:11": 6,
+        "1:12": 1,
+        "1:13": 1,
+        "1:14": 1,
+        "1:15": 1,
+        "1:17": 1,
+        "1:2": 4,
+        "1:22": 1,
+        "1:3": 207,
+        "1:4": 139,
+        "1:5": 151,
+        "1:6": 72,
+        "1:7": 48,
+        "1:8": 44,
+        "1:9": 24,
+        "2:10": 4,
+        "2:11": 1,
+        "2:12": 1,
+        "2:15": 1,
+        "2:2": 3,
+        "2:3": 16,
+        "2:4": 11,
+        "2:5": 10,
+        "2:6": 7,
+        "2:7": 6,
+        "2:8": 10,
+        "3:3": 1,
+        "3:4": 1,
+        "3:5": 3,
+        "3:6": 1,
+        "3:8": 2,
+        "3:9": 1,
+        "4:6": 1
+      },
+      "event_index_required_above_parent_counts": {
+        "1:1": 710,
+        "2:2": 70,
+        "3:3": 9,
+        "4:4": 1
+      },
+      "ladder_credit_counts": {
+        "1": 163,
+        "10": 5,
+        "11": 3,
+        "13": 1,
+        "14": 3,
+        "15": 1,
+        "2": 162,
+        "20": 1,
+        "3": 157,
+        "4": 99,
+        "5": 58,
+        "6": 74,
+        "7": 31,
+        "8": 19,
+        "9": 13
+      },
+      "lag_counts": {
+        "10": 13,
+        "11": 7,
+        "12": 2,
+        "13": 1,
+        "14": 1,
+        "15": 2,
+        "17": 1,
+        "2": 7,
+        "22": 1,
+        "3": 224,
+        "4": 151,
+        "5": 164,
+        "6": 81,
+        "7": 54,
+        "8": 56,
+        "9": 25
+      },
+      "lag_minus_align_counts": {
+        "-1": 138,
+        "-2": 54,
+        "-3": 21,
+        "-4": 4,
+        "-5": 3,
+        "-6": 1,
+        "-7": 1,
+        "0": 568
+      },
+      "parent_depth": 21,
+      "pressure_event_counts": {
+        "high_ladder_step": 790
+      },
+      "pressure_regime_counts": {
+        "high_after_ladder_window": 9,
+        "high_inside_active_ladder": 790,
+        "low_repeat_prepaid": 2
+      },
+      "pure_feature_claims": {
+        "all_active_events_are_high_ladder_steps": true,
+        "all_active_ladder_formulas_checked": true,
+        "all_active_parities_are_odd": true,
+        "all_alignment_burns_checked": true,
+        "all_event_indexes_equal_required_above_parent": true,
+        "all_lag_simulations_match_pressure_state": true
+      },
+      "q_mod_16_counts": {
+        "1": 110,
+        "11": 126,
+        "13": 91,
+        "15": 81,
+        "3": 109,
+        "5": 82,
+        "7": 90,
+        "9": 101
+      },
+      "q_mod_8_counts": {
+        "1": 211,
+        "3": 235,
+        "5": 173,
+        "7": 171
+      },
+      "remaining_align_counts": {
+        "0": 568,
+        "1": 138,
+        "2": 54,
+        "3": 21,
+        "4": 4,
+        "5": 3,
+        "6": 1,
+        "7": 1
+      },
+      "required_above_parent_lag_counts": {
+        "1:10": 9,
+        "1:11": 6,
+        "1:12": 1,
+        "1:13": 1,
+        "1:14": 1,
+        "1:15": 1,
+        "1:17": 1,
+        "1:2": 4,
+        "1:22": 1,
+        "1:3": 207,
+        "1:4": 139,
+        "1:5": 151,
+        "1:6": 72,
+        "1:7": 48,
+        "1:8": 44,
+        "1:9": 24,
+        "2:10": 4,
+        "2:11": 1,
+        "2:12": 1,
+        "2:15": 1,
+        "2:2": 3,
+        "2:3": 16,
+        "2:4": 11,
+        "2:5": 10,
+        "2:6": 7,
+        "2:7": 6,
+        "2:8": 10,
+        "3:3": 1,
+        "3:4": 1,
+        "3:5": 3,
+        "3:6": 1,
+        "3:8": 2,
+        "3:9": 1,
+        "4:6": 1
+      },
+      "retimed_transition_count": 719,
+      "state_plus_one_v2_counts": {
+        "0": 568,
+        "1": 138,
+        "2": 54,
+        "3": 21,
+        "4": 4,
+        "5": 3,
+        "6": 1,
+        "7": 1
+      },
+      "step_offset_max": 45,
+      "step_offset_min": 1,
+      "terminal_mod_16_counts": {
+        "0": 155,
+        "10": 105,
+        "12": 84,
+        "14": 41,
+        "2": 64,
+        "4": 120,
+        "6": 99,
+        "8": 122
+      },
+      "terminal_mod_64_counts": {
+        "0": 51,
+        "10": 38,
+        "12": 30,
+        "14": 16,
+        "16": 43,
+        "18": 7,
+        "2": 18,
+        "20": 42,
+        "22": 36,
+        "24": 38,
+        "26": 23,
+        "28": 9,
+        "30": 7,
+        "32": 28,
+        "34": 26,
+        "36": 17,
+        "38": 18,
+        "4": 43,
+        "40": 49,
+        "42": 28,
+        "44": 36,
+        "46": 10,
+        "48": 33,
+        "50": 13,
+        "52": 18,
+        "54": 12,
+        "56": 15,
+        "58": 16,
+        "6": 33,
+        "60": 9,
+        "62": 8,
+        "8": 20
+      }
+    },
+    {
+      "above_parent_pressure_unit_count": 1019,
+      "active_ladder_pressure_unit_count": 967,
+      "active_ladders_per_transition": {
+        "1": 765,
+        "2": 55,
+        "3": 4,
+        "4": 1
+      },
+      "active_pressure_state_residue_purity": {
+        "1024": {
+          "active_buckets": 562,
+          "active_in_mixed_buckets": 79,
+          "active_in_pure_buckets": 888,
+          "active_pure_bucket_fraction": 0.918304033,
+          "active_total": 967,
+          "mixed_buckets": 37,
+          "occupied_buckets": 572,
+          "pure_active_buckets": 525,
+          "pure_non_active_buckets": 10,
+          "top_mixed_buckets": {
+            "208": {
+              "active": 5,
+              "active_fraction": 0.833333333,
+              "total": 6
+            },
+            "226": {
+              "active": 4,
+              "active_fraction": 0.8,
+              "total": 5
+            },
+            "260": {
+              "active": 3,
+              "active_fraction": 0.75,
+              "total": 4
+            },
+            "320": {
+              "active": 7,
+              "active_fraction": 0.875,
+              "total": 8
+            },
+            "534": {
+              "active": 4,
+              "active_fraction": 0.571428571,
+              "total": 7
+            },
+            "646": {
+              "active": 3,
+              "active_fraction": 0.75,
+              "total": 4
+            },
+            "820": {
+              "active": 3,
+              "active_fraction": 0.75,
+              "total": 4
+            },
+            "908": {
+              "active": 3,
+              "active_fraction": 0.75,
+              "total": 4
+            }
+          },
+          "top_pure_active_buckets": {
+            "150": 6,
+            "213": 5,
+            "268": 5,
+            "352": 5,
+            "400": 5,
+            "456": 5,
+            "716": 5,
+            "744": 6
+          }
+        },
+        "128": {
+          "active_buckets": 127,
+          "active_in_mixed_buckets": 360,
+          "active_in_pure_buckets": 607,
+          "active_pure_bucket_fraction": 0.627714581,
+          "active_total": 967,
+          "mixed_buckets": 32,
+          "occupied_buckets": 127,
+          "pure_active_buckets": 95,
+          "pure_non_active_buckets": 0,
+          "top_mixed_buckets": {
+            "0": {
+              "active": 15,
+              "active_fraction": 0.833333333,
+              "total": 18
+            },
+            "104": {
+              "active": 18,
+              "active_fraction": 0.857142857,
+              "total": 21
+            },
+            "12": {
+              "active": 20,
+              "active_fraction": 0.952380952,
+              "total": 21
+            },
+            "16": {
+              "active": 15,
+              "active_fraction": 0.9375,
+              "total": 16
+            },
+            "22": {
+              "active": 17,
+              "active_fraction": 0.85,
+              "total": 20
+            },
+            "32": {
+              "active": 15,
+              "active_fraction": 0.9375,
+              "total": 16
+            },
+            "64": {
+              "active": 20,
+              "active_fraction": 0.952380952,
+              "total": 21
+            },
+            "98": {
+              "active": 19,
+              "active_fraction": 0.863636364,
+              "total": 22
+            }
+          },
+          "top_pure_active_buckets": {
+            "13": 13,
+            "26": 19,
+            "34": 12,
+            "40": 23,
+            "68": 14,
+            "76": 13,
+            "85": 17,
+            "92": 14
+          }
+        },
+        "16": {
+          "active_buckets": 16,
+          "active_in_mixed_buckets": 622,
+          "active_in_pure_buckets": 345,
+          "active_pure_bucket_fraction": 0.356773526,
+          "active_total": 967,
+          "mixed_buckets": 8,
+          "occupied_buckets": 16,
+          "pure_active_buckets": 8,
+          "pure_non_active_buckets": 0,
+          "top_mixed_buckets": {
+            "0": {
+              "active": 106,
+              "active_fraction": 0.905982906,
+              "total": 117
+            },
+            "10": {
+              "active": 75,
+              "active_fraction": 0.925925926,
+              "total": 81
+            },
+            "12": {
+              "active": 77,
+              "active_fraction": 0.9625,
+              "total": 80
+            },
+            "14": {
+              "active": 51,
+              "active_fraction": 0.944444444,
+              "total": 54
+            },
+            "2": {
+              "active": 68,
+              "active_fraction": 0.931506849,
+              "total": 73
+            },
+            "4": {
+              "active": 73,
+              "active_fraction": 0.901234568,
+              "total": 81
+            },
+            "6": {
+              "active": 78,
+              "active_fraction": 0.906976744,
+              "total": 86
+            },
+            "8": {
+              "active": 94,
+              "active_fraction": 0.921568627,
+              "total": 102
+            }
+          },
+          "top_pure_active_buckets": {
+            "1": 59,
+            "11": 35,
+            "13": 47,
+            "15": 14,
+            "3": 48,
+            "5": 55,
+            "7": 38,
+            "9": 49
+          }
+        },
+        "256": {
+          "active_buckets": 231,
+          "active_in_mixed_buckets": 232,
+          "active_in_pure_buckets": 735,
+          "active_pure_bucket_fraction": 0.76008273,
+          "active_total": 967,
+          "mixed_buckets": 38,
+          "occupied_buckets": 233,
+          "pure_active_buckets": 193,
+          "pure_non_active_buckets": 2,
+          "top_mixed_buckets": {
+            "128": {
+              "active": 8,
+              "active_fraction": 0.888888889,
+              "total": 9
+            },
+            "140": {
+              "active": 8,
+              "active_fraction": 0.888888889,
+              "total": 9
+            },
+            "16": {
+              "active": 9,
+              "active_fraction": 0.9,
+              "total": 10
+            },
+            "208": {
+              "active": 11,
+              "active_fraction": 0.916666667,
+              "total": 12
+            },
+            "226": {
+              "active": 9,
+              "active_fraction": 0.818181818,
+              "total": 11
+            },
+            "232": {
+              "active": 10,
+              "active_fraction": 0.833333333,
+              "total": 12
+            },
+            "64": {
+              "active": 16,
+              "active_fraction": 0.941176471,
+              "total": 17
+            },
+            "98": {
+              "active": 10,
+              "active_fraction": 0.909090909,
+              "total": 11
+            }
+          },
+          "top_pure_active_buckets": {
+            "12": 12,
+            "150": 10,
+            "168": 11,
+            "204": 12,
+            "213": 10,
+            "26": 12,
+            "40": 12,
+            "96": 13
+          }
+        },
+        "32": {
+          "active_buckets": 32,
+          "active_in_mixed_buckets": 622,
+          "active_in_pure_buckets": 345,
+          "active_pure_bucket_fraction": 0.356773526,
+          "active_total": 967,
+          "mixed_buckets": 16,
+          "occupied_buckets": 32,
+          "pure_active_buckets": 16,
+          "pure_non_active_buckets": 0,
+          "top_mixed_buckets": {
+            "0": {
+              "active": 64,
+              "active_fraction": 0.914285714,
+              "total": 70
+            },
+            "12": {
+              "active": 57,
+              "active_fraction": 0.966101695,
+              "total": 59
+            },
+            "16": {
+              "active": 42,
+              "active_fraction": 0.893617021,
+              "total": 47
+            },
+            "2": {
+              "active": 46,
+              "active_fraction": 0.92,
+              "total": 50
+            },
+            "26": {
+              "active": 40,
+              "active_fraction": 0.930232558,
+              "total": 43
+            },
+            "4": {
+              "active": 39,
+              "active_fraction": 0.951219512,
+              "total": 41
+            },
+            "6": {
+              "active": 40,
+              "active_fraction": 0.909090909,
+              "total": 44
+            },
+            "8": {
+              "active": 62,
+              "active_fraction": 0.953846154,
+              "total": 65
+            }
+          },
+          "top_pure_active_buckets": {
+            "1": 26,
+            "13": 28,
+            "17": 33,
+            "19": 22,
+            "21": 41,
+            "23": 28,
+            "25": 32,
+            "3": 26
+          }
+        },
+        "4096": {
+          "active_buckets": 799,
+          "active_in_mixed_buckets": 18,
+          "active_in_pure_buckets": 949,
+          "active_pure_bucket_fraction": 0.981385729,
+          "active_total": 967,
+          "mixed_buckets": 15,
+          "occupied_buckets": 835,
+          "pure_active_buckets": 784,
+          "pure_non_active_buckets": 36,
+          "top_mixed_buckets": {
+            "1094": {
+              "active": 2,
+              "active_fraction": 0.666666667,
+              "total": 3
+            },
+            "2182": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            },
+            "2368": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            },
+            "2384": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            },
+            "2612": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            },
+            "2748": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            },
+            "2868": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            },
+            "534": {
+              "active": 3,
+              "active_fraction": 0.75,
+              "total": 4
+            }
+          },
+          "top_pure_active_buckets": {
+            "1816": 3,
+            "2408": 3,
+            "2572": 3,
+            "272": 3,
+            "3607": 4,
+            "3676": 3,
+            "84": 3,
+            "936": 4
+          }
+        },
+        "512": {
+          "active_buckets": 378,
+          "active_in_mixed_buckets": 131,
+          "active_in_pure_buckets": 836,
+          "active_pure_bucket_fraction": 0.864529473,
+          "active_total": 967,
+          "mixed_buckets": 40,
+          "occupied_buckets": 381,
+          "pure_active_buckets": 338,
+          "pure_non_active_buckets": 3,
+          "top_mixed_buckets": {
+            "134": {
+              "active": 5,
+              "active_fraction": 0.714285714,
+              "total": 7
+            },
+            "208": {
+              "active": 6,
+              "active_fraction": 0.857142857,
+              "total": 7
+            },
+            "226": {
+              "active": 6,
+              "active_fraction": 0.75,
+              "total": 8
+            },
+            "232": {
+              "active": 7,
+              "active_fraction": 0.777777778,
+              "total": 9
+            },
+            "256": {
+              "active": 5,
+              "active_fraction": 0.833333333,
+              "total": 6
+            },
+            "320": {
+              "active": 10,
+              "active_fraction": 0.909090909,
+              "total": 11
+            },
+            "354": {
+              "active": 6,
+              "active_fraction": 0.857142857,
+              "total": 7
+            },
+            "70": {
+              "active": 6,
+              "active_fraction": 0.857142857,
+              "total": 7
+            }
+          },
+          "top_pure_active_buckets": {
+            "150": 8,
+            "168": 6,
+            "204": 8,
+            "26": 6,
+            "268": 7,
+            "352": 7,
+            "358": 6,
+            "40": 8
+          }
+        },
+        "64": {
+          "active_buckets": 64,
+          "active_in_mixed_buckets": 486,
+          "active_in_pure_buckets": 481,
+          "active_pure_bucket_fraction": 0.497414685,
+          "active_total": 967,
+          "mixed_buckets": 23,
+          "occupied_buckets": 64,
+          "pure_active_buckets": 41,
+          "pure_non_active_buckets": 0,
+          "top_mixed_buckets": {
+            "0": {
+              "active": 35,
+              "active_fraction": 0.897435897,
+              "total": 39
+            },
+            "12": {
+              "active": 33,
+              "active_fraction": 0.970588235,
+              "total": 34
+            },
+            "16": {
+              "active": 30,
+              "active_fraction": 0.857142857,
+              "total": 35
+            },
+            "22": {
+              "active": 26,
+              "active_fraction": 0.866666667,
+              "total": 30
+            },
+            "26": {
+              "active": 26,
+              "active_fraction": 0.962962963,
+              "total": 27
+            },
+            "32": {
+              "active": 29,
+              "active_fraction": 0.935483871,
+              "total": 31
+            },
+            "34": {
+              "active": 31,
+              "active_fraction": 0.911764706,
+              "total": 34
+            },
+            "40": {
+              "active": 41,
+              "active_fraction": 0.931818182,
+              "total": 44
+            }
+          },
+          "top_pure_active_buckets": {
+            "13": 17,
+            "21": 24,
+            "23": 18,
+            "25": 20,
+            "42": 19,
+            "49": 21,
+            "53": 17,
+            "8": 21
+          }
+        },
+        "65536": {
+          "active_buckets": 938,
+          "active_in_mixed_buckets": 1,
+          "active_in_pure_buckets": 966,
+          "active_pure_bucket_fraction": 0.998965874,
+          "active_total": 967,
+          "mixed_buckets": 1,
+          "occupied_buckets": 988,
+          "pure_active_buckets": 937,
+          "pure_non_active_buckets": 50,
+          "top_mixed_buckets": {
+            "37398": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            }
+          },
+          "top_pure_active_buckets": {
+            "11969": 2,
+            "16963": 2,
+            "22150": 3,
+            "2389": 2,
+            "36744": 2,
+            "43034": 2,
+            "53332": 2,
+            "54328": 2
+          }
+        }
+      },
+      "active_units_per_ladder": {
+        "1": 824,
+        "2": 59,
+        "3": 7,
+        "4": 1
+      },
+      "active_units_per_transition": {
+        "1": 710,
+        "2": 92,
+        "3": 19,
+        "4": 4
+      },
+      "align_counts": {
+        "10": 27,
+        "11": 13,
+        "12": 22,
+        "13": 6,
+        "14": 2,
+        "15": 4,
+        "17": 1,
+        "3": 169,
+        "4": 212,
+        "5": 203,
+        "6": 118,
+        "7": 86,
+        "8": 60,
+        "9": 44
+      },
+      "align_mod_4_counts": {
+        "0": 294,
+        "1": 254,
+        "2": 147,
+        "3": 272
+      },
+      "cached": false,
+      "child_depth": 23,
+      "event_index_counts": {
+        "1": 824,
+        "2": 116,
+        "3": 23,
+        "4": 4
+      },
+      "event_index_lag_counts": {
+        "1:10": 17,
+        "1:11": 5,
+        "1:12": 2,
+        "1:14": 4,
+        "1:15": 1,
+        "1:17": 1,
+        "1:2": 24,
+        "1:3": 210,
+        "1:4": 208,
+        "1:5": 157,
+        "1:6": 75,
+        "1:7": 58,
+        "1:8": 37,
+        "1:9": 25,
+        "2:10": 3,
+        "2:11": 3,
+        "2:12": 2,
+        "2:13": 3,
+        "2:2": 5,
+        "2:3": 20,
+        "2:4": 20,
+        "2:5": 19,
+        "2:6": 12,
+        "2:7": 15,
+        "2:8": 5,
+        "2:9": 9,
+        "3:10": 1,
+        "3:11": 1,
+        "3:12": 1,
+        "3:2": 1,
+        "3:3": 3,
+        "3:4": 4,
+        "3:5": 3,
+        "3:6": 1,
+        "3:7": 3,
+        "3:8": 3,
+        "3:9": 2,
+        "4:10": 1,
+        "4:11": 1,
+        "4:4": 1,
+        "4:7": 1
+      },
+      "event_index_required_above_parent_counts": {
+        "1:1": 824,
+        "2:2": 116,
+        "3:3": 23,
+        "4:4": 4
+      },
+      "ladder_credit_counts": {
+        "1": 169,
+        "10": 22,
+        "11": 6,
+        "12": 2,
+        "13": 4,
+        "15": 1,
+        "2": 212,
+        "3": 203,
+        "4": 118,
+        "5": 86,
+        "6": 60,
+        "7": 44,
+        "8": 27,
+        "9": 13
+      },
+      "lag_counts": {
+        "10": 22,
+        "11": 10,
+        "12": 5,
+        "13": 3,
+        "14": 4,
+        "15": 1,
+        "17": 1,
+        "2": 30,
+        "3": 233,
+        "4": 233,
+        "5": 179,
+        "6": 88,
+        "7": 77,
+        "8": 45,
+        "9": 36
+      },
+      "lag_minus_align_counts": {
+        "-1": 210,
+        "-2": 83,
+        "-3": 38,
+        "-4": 5,
+        "-5": 5,
+        "-6": 3,
+        "-9": 1,
+        "0": 622
+      },
+      "parent_depth": 22,
+      "pressure_event_counts": {
+        "high_ladder_step": 967
+      },
+      "pressure_regime_counts": {
+        "high_after_ladder_window": 39,
+        "high_inside_active_ladder": 967,
+        "low_repeat_prepaid": 13
+      },
+      "pure_feature_claims": {
+        "all_active_events_are_high_ladder_steps": true,
+        "all_active_ladder_formulas_checked": true,
+        "all_active_parities_are_odd": true,
+        "all_alignment_burns_checked": true,
+        "all_event_indexes_equal_required_above_parent": true,
+        "all_lag_simulations_match_pressure_state": true
+      },
+      "q_mod_16_counts": {
+        "1": 118,
+        "11": 154,
+        "13": 101,
+        "15": 128,
+        "3": 143,
+        "5": 98,
+        "7": 108,
+        "9": 117
+      },
+      "q_mod_8_counts": {
+        "1": 235,
+        "3": 297,
+        "5": 199,
+        "7": 236
+      },
+      "remaining_align_counts": {
+        "0": 622,
+        "1": 210,
+        "2": 83,
+        "3": 38,
+        "4": 5,
+        "5": 5,
+        "6": 3,
+        "9": 1
+      },
+      "required_above_parent_lag_counts": {
+        "1:10": 17,
+        "1:11": 5,
+        "1:12": 2,
+        "1:14": 4,
+        "1:15": 1,
+        "1:17": 1,
+        "1:2": 24,
+        "1:3": 210,
+        "1:4": 208,
+        "1:5": 157,
+        "1:6": 75,
+        "1:7": 58,
+        "1:8": 37,
+        "1:9": 25,
+        "2:10": 3,
+        "2:11": 3,
+        "2:12": 2,
+        "2:13": 3,
+        "2:2": 5,
+        "2:3": 20,
+        "2:4": 20,
+        "2:5": 19,
+        "2:6": 12,
+        "2:7": 15,
+        "2:8": 5,
+        "2:9": 9,
+        "3:10": 1,
+        "3:11": 1,
+        "3:12": 1,
+        "3:2": 1,
+        "3:3": 3,
+        "3:4": 4,
+        "3:5": 3,
+        "3:6": 1,
+        "3:7": 3,
+        "3:8": 3,
+        "3:9": 2,
+        "4:10": 1,
+        "4:11": 1,
+        "4:4": 1,
+        "4:7": 1
+      },
+      "retimed_transition_count": 869,
+      "state_plus_one_v2_counts": {
+        "0": 622,
+        "1": 210,
+        "2": 83,
+        "3": 38,
+        "4": 5,
+        "5": 5,
+        "6": 3,
+        "9": 1
+      },
+      "step_offset_max": 57,
+      "step_offset_min": 3,
+      "terminal_mod_16_counts": {
+        "0": 170,
+        "10": 125,
+        "12": 114,
+        "14": 77,
+        "2": 102,
+        "4": 117,
+        "6": 127,
+        "8": 135
+      },
+      "terminal_mod_64_counts": {
+        "0": 62,
+        "10": 28,
+        "12": 47,
+        "14": 16,
+        "16": 47,
+        "18": 13,
+        "2": 24,
+        "20": 39,
+        "22": 41,
+        "24": 28,
+        "26": 38,
+        "28": 22,
+        "30": 21,
+        "32": 36,
+        "34": 42,
+        "36": 25,
+        "38": 25,
+        "4": 29,
+        "40": 60,
+        "42": 38,
+        "44": 37,
+        "46": 35,
+        "48": 25,
+        "50": 23,
+        "52": 24,
+        "54": 22,
+        "56": 16,
+        "58": 21,
+        "6": 39,
+        "60": 8,
+        "62": 5,
+        "8": 31
+      }
+    },
+    {
+      "above_parent_pressure_unit_count": 2047,
+      "active_ladder_pressure_unit_count": 1965,
+      "active_ladders_per_transition": {
+        "1": 1581,
+        "2": 96,
+        "3": 10
+      },
+      "active_pressure_state_residue_purity": {
+        "1024": {
+          "active_buckets": 773,
+          "active_in_mixed_buckets": 209,
+          "active_in_pure_buckets": 1756,
+          "active_pure_bucket_fraction": 0.893638677,
+          "active_total": 1965,
+          "mixed_buckets": 67,
+          "occupied_buckets": 785,
+          "pure_active_buckets": 706,
+          "pure_non_active_buckets": 12,
+          "top_mixed_buckets": {
+            "208": {
+              "active": 10,
+              "active_fraction": 0.909090909,
+              "total": 11
+            },
+            "358": {
+              "active": 8,
+              "active_fraction": 0.888888889,
+              "total": 9
+            },
+            "452": {
+              "active": 8,
+              "active_fraction": 0.888888889,
+              "total": 9
+            },
+            "64": {
+              "active": 6,
+              "active_fraction": 0.857142857,
+              "total": 7
+            },
+            "80": {
+              "active": 7,
+              "active_fraction": 0.875,
+              "total": 8
+            },
+            "810": {
+              "active": 7,
+              "active_fraction": 0.875,
+              "total": 8
+            },
+            "84": {
+              "active": 12,
+              "active_fraction": 0.923076923,
+              "total": 13
+            },
+            "936": {
+              "active": 5,
+              "active_fraction": 0.833333333,
+              "total": 6
+            }
+          },
+          "top_pure_active_buckets": {
+            "202": 9,
+            "262": 10,
+            "38": 8,
+            "564": 8,
+            "6": 9,
+            "692": 9,
+            "710": 10,
+            "922": 12
+          }
+        },
+        "128": {
+          "active_buckets": 128,
+          "active_in_mixed_buckets": 822,
+          "active_in_pure_buckets": 1143,
+          "active_pure_bucket_fraction": 0.581679389,
+          "active_total": 1965,
+          "mixed_buckets": 40,
+          "occupied_buckets": 128,
+          "pure_active_buckets": 88,
+          "pure_non_active_buckets": 0,
+          "top_mixed_buckets": {
+            "102": {
+              "active": 28,
+              "active_fraction": 0.965517241,
+              "total": 29
+            },
+            "24": {
+              "active": 28,
+              "active_fraction": 0.903225806,
+              "total": 31
+            },
+            "26": {
+              "active": 38,
+              "active_fraction": 0.974358974,
+              "total": 39
+            },
+            "42": {
+              "active": 35,
+              "active_fraction": 0.972222222,
+              "total": 36
+            },
+            "68": {
+              "active": 38,
+              "active_fraction": 0.926829268,
+              "total": 41
+            },
+            "80": {
+              "active": 41,
+              "active_fraction": 0.953488372,
+              "total": 43
+            },
+            "84": {
+              "active": 37,
+              "active_fraction": 0.925,
+              "total": 40
+            },
+            "90": {
+              "active": 33,
+              "active_fraction": 0.970588235,
+              "total": 34
+            }
+          },
+          "top_pure_active_buckets": {
+            "0": 28,
+            "13": 27,
+            "38": 35,
+            "52": 28,
+            "58": 24,
+            "6": 37,
+            "70": 44,
+            "74": 36
+          }
+        },
+        "16": {
+          "active_buckets": 16,
+          "active_in_mixed_buckets": 1254,
+          "active_in_pure_buckets": 711,
+          "active_pure_bucket_fraction": 0.361832061,
+          "active_total": 1965,
+          "mixed_buckets": 8,
+          "occupied_buckets": 16,
+          "pure_active_buckets": 8,
+          "pure_non_active_buckets": 0,
+          "top_mixed_buckets": {
+            "0": {
+              "active": 179,
+              "active_fraction": 0.904040404,
+              "total": 198
+            },
+            "10": {
+              "active": 224,
+              "active_fraction": 0.978165939,
+              "total": 229
+            },
+            "12": {
+              "active": 105,
+              "active_fraction": 0.897435897,
+              "total": 117
+            },
+            "14": {
+              "active": 76,
+              "active_fraction": 0.938271605,
+              "total": 81
+            },
+            "2": {
+              "active": 100,
+              "active_fraction": 0.952380952,
+              "total": 105
+            },
+            "4": {
+              "active": 190,
+              "active_fraction": 0.931372549,
+              "total": 204
+            },
+            "6": {
+              "active": 217,
+              "active_fraction": 0.97309417,
+              "total": 223
+            },
+            "8": {
+              "active": 163,
+              "active_fraction": 0.910614525,
+              "total": 179
+            }
+          },
+          "top_pure_active_buckets": {
+            "1": 96,
+            "11": 74,
+            "13": 117,
+            "15": 39,
+            "3": 85,
+            "5": 128,
+            "7": 65,
+            "9": 107
+          }
+        },
+        "256": {
+          "active_buckets": 250,
+          "active_in_mixed_buckets": 618,
+          "active_in_pure_buckets": 1347,
+          "active_pure_bucket_fraction": 0.685496183,
+          "active_total": 1965,
+          "mixed_buckets": 60,
+          "occupied_buckets": 250,
+          "pure_active_buckets": 190,
+          "pure_non_active_buckets": 0,
+          "top_mixed_buckets": {
+            "102": {
+              "active": 20,
+              "active_fraction": 0.952380952,
+              "total": 21
+            },
+            "152": {
+              "active": 16,
+              "active_fraction": 0.941176471,
+              "total": 17
+            },
+            "168": {
+              "active": 16,
+              "active_fraction": 0.888888889,
+              "total": 18
+            },
+            "196": {
+              "active": 24,
+              "active_fraction": 0.96,
+              "total": 25
+            },
+            "208": {
+              "active": 18,
+              "active_fraction": 0.947368421,
+              "total": 19
+            },
+            "26": {
+              "active": 17,
+              "active_fraction": 0.944444444,
+              "total": 18
+            },
+            "80": {
+              "active": 23,
+              "active_fraction": 0.958333333,
+              "total": 24
+            },
+            "84": {
+              "active": 26,
+              "active_fraction": 0.928571429,
+              "total": 28
+            }
+          },
+          "top_pure_active_buckets": {
+            "141": 19,
+            "154": 21,
+            "170": 21,
+            "198": 26,
+            "202": 22,
+            "38": 19,
+            "6": 27,
+            "90": 22
+          }
+        },
+        "32": {
+          "active_buckets": 32,
+          "active_in_mixed_buckets": 1254,
+          "active_in_pure_buckets": 711,
+          "active_pure_bucket_fraction": 0.361832061,
+          "active_total": 1965,
+          "mixed_buckets": 16,
+          "occupied_buckets": 32,
+          "pure_active_buckets": 16,
+          "pure_non_active_buckets": 0,
+          "top_mixed_buckets": {
+            "0": {
+              "active": 91,
+              "active_fraction": 0.91,
+              "total": 100
+            },
+            "10": {
+              "active": 119,
+              "active_fraction": 0.975409836,
+              "total": 122
+            },
+            "16": {
+              "active": 88,
+              "active_fraction": 0.897959184,
+              "total": 98
+            },
+            "20": {
+              "active": 107,
+              "active_fraction": 0.930434783,
+              "total": 115
+            },
+            "26": {
+              "active": 105,
+              "active_fraction": 0.981308411,
+              "total": 107
+            },
+            "4": {
+              "active": 83,
+              "active_fraction": 0.93258427,
+              "total": 89
+            },
+            "6": {
+              "active": 144,
+              "active_fraction": 0.993103448,
+              "total": 145
+            },
+            "8": {
+              "active": 90,
+              "active_fraction": 0.882352941,
+              "total": 102
+            }
+          },
+          "top_pure_active_buckets": {
+            "11": 41,
+            "13": 68,
+            "17": 58,
+            "21": 66,
+            "25": 70,
+            "29": 49,
+            "3": 49,
+            "5": 62
+          }
+        },
+        "4096": {
+          "active_buckets": 1405,
+          "active_in_mixed_buckets": 61,
+          "active_in_pure_buckets": 1904,
+          "active_pure_bucket_fraction": 0.968956743,
+          "active_total": 1965,
+          "mixed_buckets": 39,
+          "occupied_buckets": 1447,
+          "pure_active_buckets": 1366,
+          "pure_non_active_buckets": 42,
+          "top_mixed_buckets": {
+            "3092": {
+              "active": 2,
+              "active_fraction": 0.666666667,
+              "total": 3
+            },
+            "3152": {
+              "active": 3,
+              "active_fraction": 0.75,
+              "total": 4
+            },
+            "3280": {
+              "active": 2,
+              "active_fraction": 0.666666667,
+              "total": 3
+            },
+            "372": {
+              "active": 3,
+              "active_fraction": 0.75,
+              "total": 4
+            },
+            "452": {
+              "active": 4,
+              "active_fraction": 0.8,
+              "total": 5
+            },
+            "64": {
+              "active": 3,
+              "active_fraction": 0.75,
+              "total": 4
+            },
+            "730": {
+              "active": 3,
+              "active_fraction": 0.75,
+              "total": 4
+            },
+            "84": {
+              "active": 4,
+              "active_fraction": 0.8,
+              "total": 5
+            }
+          },
+          "top_pure_active_buckets": {
+            "1210": 5,
+            "202": 5,
+            "2408": 5,
+            "2758": 5,
+            "2970": 5,
+            "3994": 5,
+            "857": 5,
+            "936": 5
+          }
+        },
+        "512": {
+          "active_buckets": 463,
+          "active_in_mixed_buckets": 363,
+          "active_in_pure_buckets": 1602,
+          "active_pure_bucket_fraction": 0.815267176,
+          "active_total": 1965,
+          "mixed_buckets": 69,
+          "occupied_buckets": 465,
+          "pure_active_buckets": 394,
+          "pure_non_active_buckets": 2,
+          "top_mixed_buckets": {
+            "208": {
+              "active": 14,
+              "active_fraction": 0.933333333,
+              "total": 15
+            },
+            "282": {
+              "active": 11,
+              "active_fraction": 0.916666667,
+              "total": 12
+            },
+            "320": {
+              "active": 10,
+              "active_fraction": 0.769230769,
+              "total": 13
+            },
+            "358": {
+              "active": 13,
+              "active_fraction": 0.928571429,
+              "total": 14
+            },
+            "408": {
+              "active": 11,
+              "active_fraction": 0.916666667,
+              "total": 12
+            },
+            "452": {
+              "active": 13,
+              "active_fraction": 0.928571429,
+              "total": 14
+            },
+            "80": {
+              "active": 11,
+              "active_fraction": 0.916666667,
+              "total": 12
+            },
+            "84": {
+              "active": 17,
+              "active_fraction": 0.944444444,
+              "total": 18
+            }
+          },
+          "top_pure_active_buckets": {
+            "180": 13,
+            "198": 14,
+            "202": 15,
+            "262": 16,
+            "336": 12,
+            "410": 14,
+            "422": 12,
+            "454": 12
+          }
+        },
+        "64": {
+          "active_buckets": 64,
+          "active_in_mixed_buckets": 1075,
+          "active_in_pure_buckets": 890,
+          "active_pure_bucket_fraction": 0.452926209,
+          "active_total": 1965,
+          "mixed_buckets": 27,
+          "occupied_buckets": 64,
+          "pure_active_buckets": 37,
+          "pure_non_active_buckets": 0,
+          "top_mixed_buckets": {
+            "0": {
+              "active": 55,
+              "active_fraction": 0.93220339,
+              "total": 59
+            },
+            "10": {
+              "active": 57,
+              "active_fraction": 0.982758621,
+              "total": 58
+            },
+            "16": {
+              "active": 55,
+              "active_fraction": 0.916666667,
+              "total": 60
+            },
+            "20": {
+              "active": 64,
+              "active_fraction": 0.914285714,
+              "total": 70
+            },
+            "26": {
+              "active": 71,
+              "active_fraction": 0.97260274,
+              "total": 73
+            },
+            "38": {
+              "active": 63,
+              "active_fraction": 0.984375,
+              "total": 64
+            },
+            "4": {
+              "active": 57,
+              "active_fraction": 0.919354839,
+              "total": 62
+            },
+            "42": {
+              "active": 62,
+              "active_fraction": 0.96875,
+              "total": 64
+            }
+          },
+          "top_pure_active_buckets": {
+            "13": 44,
+            "21": 40,
+            "25": 38,
+            "49": 34,
+            "5": 33,
+            "56": 32,
+            "58": 34,
+            "6": 81
+          }
+        },
+        "65536": {
+          "active_buckets": 1885,
+          "active_in_mixed_buckets": 7,
+          "active_in_pure_buckets": 1958,
+          "active_pure_bucket_fraction": 0.996437659,
+          "active_total": 1965,
+          "mixed_buckets": 7,
+          "occupied_buckets": 1960,
+          "pure_active_buckets": 1878,
+          "pure_non_active_buckets": 75,
+          "top_mixed_buckets": {
+            "30858": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            },
+            "3152": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            },
+            "37594": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            },
+            "43560": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            },
+            "45140": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            },
+            "5800": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            },
+            "63258": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            }
+          },
+          "top_pure_active_buckets": {
+            "13709": 3,
+            "20325": 2,
+            "23317": 2,
+            "2408": 3,
+            "32662": 2,
+            "43930": 2,
+            "5493": 2,
+            "9829": 3
+          }
+        }
+      },
+      "active_units_per_ladder": {
+        "1": 1654,
+        "2": 137,
+        "3": 11,
+        "4": 1
+      },
+      "active_units_per_transition": {
+        "1": 1449,
+        "2": 204,
+        "3": 28,
+        "4": 6
+      },
+      "align_counts": {
+        "10": 55,
+        "11": 54,
+        "12": 28,
+        "13": 9,
+        "14": 5,
+        "15": 9,
+        "16": 3,
+        "17": 1,
+        "18": 3,
+        "3": 369,
+        "4": 376,
+        "5": 330,
+        "6": 262,
+        "7": 215,
+        "8": 137,
+        "9": 109
+      },
+      "align_mod_4_counts": {
+        "0": 544,
+        "1": 449,
+        "2": 325,
+        "3": 647
+      },
+      "cached": false,
+      "child_depth": 24,
+      "event_index_counts": {
+        "1": 1684,
+        "2": 240,
+        "3": 35,
+        "4": 6
+      },
+      "event_index_lag_counts": {
+        "1:10": 20,
+        "1:11": 21,
+        "1:12": 12,
+        "1:13": 6,
+        "1:14": 5,
+        "1:15": 2,
+        "1:16": 2,
+        "1:2": 35,
+        "1:3": 494,
+        "1:4": 298,
+        "1:5": 300,
+        "1:6": 217,
+        "1:7": 121,
+        "1:8": 91,
+        "1:9": 60,
+        "2:10": 9,
+        "2:11": 11,
+        "2:13": 1,
+        "2:14": 1,
+        "2:15": 3,
+        "2:16": 1,
+        "2:2": 5,
+        "2:3": 40,
+        "2:4": 34,
+        "2:5": 28,
+        "2:6": 31,
+        "2:7": 39,
+        "2:8": 22,
+        "2:9": 15,
+        "3:10": 5,
+        "3:11": 1,
+        "3:18": 1,
+        "3:2": 1,
+        "3:3": 6,
+        "3:4": 5,
+        "3:5": 3,
+        "3:6": 3,
+        "3:7": 4,
+        "3:8": 3,
+        "3:9": 3,
+        "4:10": 1,
+        "4:11": 1,
+        "4:4": 1,
+        "4:5": 1,
+        "4:6": 1,
+        "4:8": 1
+      },
+      "event_index_required_above_parent_counts": {
+        "1:1": 1684,
+        "2:2": 240,
+        "3:3": 35,
+        "4:4": 6
+      },
+      "ladder_credit_counts": {
+        "1": 369,
+        "10": 28,
+        "11": 9,
+        "12": 5,
+        "13": 9,
+        "14": 3,
+        "15": 1,
+        "16": 3,
+        "2": 376,
+        "3": 330,
+        "4": 262,
+        "5": 215,
+        "6": 137,
+        "7": 109,
+        "8": 55,
+        "9": 54
+      },
+      "lag_counts": {
+        "10": 35,
+        "11": 34,
+        "12": 12,
+        "13": 7,
+        "14": 6,
+        "15": 5,
+        "16": 3,
+        "18": 1,
+        "2": 41,
+        "3": 540,
+        "4": 338,
+        "5": 332,
+        "6": 252,
+        "7": 164,
+        "8": 117,
+        "9": 78
+      },
+      "lag_minus_align_counts": {
+        "-1": 448,
+        "-2": 159,
+        "-3": 65,
+        "-4": 23,
+        "-5": 12,
+        "-6": 2,
+        "-7": 1,
+        "-8": 1,
+        "0": 1254
+      },
+      "parent_depth": 23,
+      "pressure_event_counts": {
+        "high_ladder_step": 1965
+      },
+      "pressure_regime_counts": {
+        "high_after_ladder_window": 64,
+        "high_inside_active_ladder": 1965,
+        "low_repeat_prepaid": 18
+      },
+      "pure_feature_claims": {
+        "all_active_events_are_high_ladder_steps": true,
+        "all_active_ladder_formulas_checked": true,
+        "all_active_parities_are_odd": true,
+        "all_alignment_burns_checked": true,
+        "all_event_indexes_equal_required_above_parent": true,
+        "all_lag_simulations_match_pressure_state": true
+      },
+      "q_mod_16_counts": {
+        "1": 270,
+        "11": 305,
+        "13": 215,
+        "15": 239,
+        "3": 226,
+        "5": 231,
+        "7": 244,
+        "9": 235
+      },
+      "q_mod_8_counts": {
+        "1": 505,
+        "3": 531,
+        "5": 446,
+        "7": 483
+      },
+      "remaining_align_counts": {
+        "0": 1254,
+        "1": 448,
+        "2": 159,
+        "3": 65,
+        "4": 23,
+        "5": 12,
+        "6": 2,
+        "7": 1,
+        "8": 1
+      },
+      "required_above_parent_lag_counts": {
+        "1:10": 20,
+        "1:11": 21,
+        "1:12": 12,
+        "1:13": 6,
+        "1:14": 5,
+        "1:15": 2,
+        "1:16": 2,
+        "1:2": 35,
+        "1:3": 494,
+        "1:4": 298,
+        "1:5": 300,
+        "1:6": 217,
+        "1:7": 121,
+        "1:8": 91,
+        "1:9": 60,
+        "2:10": 9,
+        "2:11": 11,
+        "2:13": 1,
+        "2:14": 1,
+        "2:15": 3,
+        "2:16": 1,
+        "2:2": 5,
+        "2:3": 40,
+        "2:4": 34,
+        "2:5": 28,
+        "2:6": 31,
+        "2:7": 39,
+        "2:8": 22,
+        "2:9": 15,
+        "3:10": 5,
+        "3:11": 1,
+        "3:18": 1,
+        "3:2": 1,
+        "3:3": 6,
+        "3:4": 5,
+        "3:5": 3,
+        "3:6": 3,
+        "3:7": 4,
+        "3:8": 3,
+        "3:9": 3,
+        "4:10": 1,
+        "4:11": 1,
+        "4:4": 1,
+        "4:5": 1,
+        "4:6": 1,
+        "4:8": 1
+      },
+      "retimed_transition_count": 1749,
+      "state_plus_one_v2_counts": {
+        "0": 1254,
+        "1": 448,
+        "2": 159,
+        "3": 65,
+        "4": 23,
+        "5": 12,
+        "6": 2,
+        "7": 1,
+        "8": 1
+      },
+      "step_offset_max": 99,
+      "step_offset_min": 2,
+      "terminal_mod_16_counts": {
+        "0": 288,
+        "10": 319,
+        "12": 176,
+        "14": 127,
+        "2": 168,
+        "4": 300,
+        "6": 326,
+        "8": 261
+      },
+      "terminal_mod_64_counts": {
+        "0": 83,
+        "10": 90,
+        "12": 55,
+        "14": 41,
+        "16": 86,
+        "18": 22,
+        "2": 56,
+        "20": 106,
+        "22": 68,
+        "24": 73,
+        "26": 88,
+        "28": 34,
+        "30": 36,
+        "32": 65,
+        "34": 43,
+        "36": 43,
+        "38": 87,
+        "4": 83,
+        "40": 88,
+        "42": 88,
+        "44": 63,
+        "46": 40,
+        "48": 54,
+        "50": 47,
+        "52": 68,
+        "54": 52,
+        "56": 43,
+        "58": 53,
+        "6": 119,
+        "60": 24,
+        "62": 10,
+        "8": 57
+      }
+    },
+    {
+      "above_parent_pressure_unit_count": 4953,
+      "active_ladder_pressure_unit_count": 4766,
+      "active_ladders_per_transition": {
+        "1": 3897,
+        "2": 228,
+        "3": 12,
+        "4": 3
+      },
+      "active_pressure_state_residue_purity": {
+        "1024": {
+          "active_buckets": 935,
+          "active_in_mixed_buckets": 1075,
+          "active_in_pure_buckets": 3691,
+          "active_pure_bucket_fraction": 0.774443978,
+          "active_total": 4766,
+          "mixed_buckets": 137,
+          "occupied_buckets": 939,
+          "pure_active_buckets": 798,
+          "pure_non_active_buckets": 4,
+          "top_mixed_buckets": {
+            "160": {
+              "active": 20,
+              "active_fraction": 0.909090909,
+              "total": 22
+            },
+            "204": {
+              "active": 18,
+              "active_fraction": 0.947368421,
+              "total": 19
+            },
+            "336": {
+              "active": 19,
+              "active_fraction": 0.95,
+              "total": 20
+            },
+            "640": {
+              "active": 20,
+              "active_fraction": 0.952380952,
+              "total": 21
+            },
+            "642": {
+              "active": 18,
+              "active_fraction": 0.857142857,
+              "total": 21
+            },
+            "768": {
+              "active": 17,
+              "active_fraction": 0.894736842,
+              "total": 19
+            },
+            "946": {
+              "active": 17,
+              "active_fraction": 0.944444444,
+              "total": 18
+            },
+            "96": {
+              "active": 20,
+              "active_fraction": 0.952380952,
+              "total": 21
+            }
+          },
+          "top_pure_active_buckets": {
+            "24": 19,
+            "341": 22,
+            "408": 23,
+            "512": 16,
+            "690": 16,
+            "792": 20,
+            "86": 17,
+            "966": 18
+          }
+        },
+        "128": {
+          "active_buckets": 128,
+          "active_in_mixed_buckets": 2847,
+          "active_in_pure_buckets": 1919,
+          "active_pure_bucket_fraction": 0.402643726,
+          "active_total": 4766,
+          "mixed_buckets": 56,
+          "occupied_buckets": 128,
+          "pure_active_buckets": 72,
+          "pure_non_active_buckets": 0,
+          "top_mixed_buckets": {
+            "0": {
+              "active": 109,
+              "active_fraction": 0.939655172,
+              "total": 116
+            },
+            "24": {
+              "active": 101,
+              "active_fraction": 0.990196078,
+              "total": 102
+            },
+            "32": {
+              "active": 89,
+              "active_fraction": 0.898989899,
+              "total": 99
+            },
+            "42": {
+              "active": 81,
+              "active_fraction": 0.880434783,
+              "total": 92
+            },
+            "64": {
+              "active": 78,
+              "active_fraction": 0.975,
+              "total": 80
+            },
+            "70": {
+              "active": 82,
+              "active_fraction": 0.964705882,
+              "total": 85
+            },
+            "80": {
+              "active": 102,
+              "active_fraction": 0.927272727,
+              "total": 110
+            },
+            "98": {
+              "active": 82,
+              "active_fraction": 0.953488372,
+              "total": 86
+            }
+          },
+          "top_pure_active_buckets": {
+            "101": 48,
+            "113": 45,
+            "48": 53,
+            "49": 46,
+            "53": 45,
+            "85": 73,
+            "88": 45,
+            "93": 46
+          }
+        },
+        "16": {
+          "active_buckets": 16,
+          "active_in_mixed_buckets": 3108,
+          "active_in_pure_buckets": 1658,
+          "active_pure_bucket_fraction": 0.347880822,
+          "active_total": 4766,
+          "mixed_buckets": 8,
+          "occupied_buckets": 16,
+          "pure_active_buckets": 8,
+          "pure_non_active_buckets": 0,
+          "top_mixed_buckets": {
+            "0": {
+              "active": 593,
+              "active_fraction": 0.945773525,
+              "total": 627
+            },
+            "10": {
+              "active": 428,
+              "active_fraction": 0.926406926,
+              "total": 462
+            },
+            "12": {
+              "active": 332,
+              "active_fraction": 0.954022989,
+              "total": 348
+            },
+            "14": {
+              "active": 171,
+              "active_fraction": 0.904761905,
+              "total": 189
+            },
+            "2": {
+              "active": 443,
+              "active_fraction": 0.934599156,
+              "total": 474
+            },
+            "4": {
+              "active": 346,
+              "active_fraction": 0.963788301,
+              "total": 359
+            },
+            "6": {
+              "active": 365,
+              "active_fraction": 0.945595855,
+              "total": 386
+            },
+            "8": {
+              "active": 430,
+              "active_fraction": 0.955555556,
+              "total": 450
+            }
+          },
+          "top_pure_active_buckets": {
+            "1": 266,
+            "11": 177,
+            "13": 246,
+            "15": 84,
+            "3": 192,
+            "5": 337,
+            "7": 151,
+            "9": 205
+          }
+        },
+        "256": {
+          "active_buckets": 255,
+          "active_in_mixed_buckets": 2333,
+          "active_in_pure_buckets": 2433,
+          "active_pure_bucket_fraction": 0.510490978,
+          "active_total": 4766,
+          "mixed_buckets": 86,
+          "occupied_buckets": 255,
+          "pure_active_buckets": 169,
+          "pure_non_active_buckets": 0,
+          "top_mixed_buckets": {
+            "128": {
+              "active": 60,
+              "active_fraction": 0.9375,
+              "total": 64
+            },
+            "130": {
+              "active": 53,
+              "active_fraction": 0.929824561,
+              "total": 57
+            },
+            "160": {
+              "active": 57,
+              "active_fraction": 0.904761905,
+              "total": 63
+            },
+            "198": {
+              "active": 52,
+              "active_fraction": 0.962962963,
+              "total": 54
+            },
+            "202": {
+              "active": 54,
+              "active_fraction": 0.981818182,
+              "total": 55
+            },
+            "204": {
+              "active": 52,
+              "active_fraction": 0.962962963,
+              "total": 54
+            },
+            "80": {
+              "active": 61,
+              "active_fraction": 0.910447761,
+              "total": 67
+            },
+            "98": {
+              "active": 52,
+              "active_fraction": 0.945454545,
+              "total": 55
+            }
+          },
+          "top_pure_active_buckets": {
+            "100": 32,
+            "140": 39,
+            "150": 38,
+            "213": 36,
+            "24": 57,
+            "44": 33,
+            "64": 44,
+            "85": 37
+          }
+        },
+        "32": {
+          "active_buckets": 32,
+          "active_in_mixed_buckets": 3108,
+          "active_in_pure_buckets": 1658,
+          "active_pure_bucket_fraction": 0.347880822,
+          "active_total": 4766,
+          "mixed_buckets": 16,
+          "occupied_buckets": 32,
+          "pure_active_buckets": 16,
+          "pure_non_active_buckets": 0,
+          "top_mixed_buckets": {
+            "0": {
+              "active": 340,
+              "active_fraction": 0.939226519,
+              "total": 362
+            },
+            "10": {
+              "active": 265,
+              "active_fraction": 0.929824561,
+              "total": 285
+            },
+            "12": {
+              "active": 237,
+              "active_fraction": 0.948,
+              "total": 250
+            },
+            "16": {
+              "active": 253,
+              "active_fraction": 0.954716981,
+              "total": 265
+            },
+            "2": {
+              "active": 282,
+              "active_fraction": 0.936877076,
+              "total": 301
+            },
+            "24": {
+              "active": 227,
+              "active_fraction": 0.978448276,
+              "total": 232
+            },
+            "6": {
+              "active": 204,
+              "active_fraction": 0.948837209,
+              "total": 215
+            },
+            "8": {
+              "active": 203,
+              "active_fraction": 0.931192661,
+              "total": 218
+            }
+          },
+          "top_pure_active_buckets": {
+            "1": 117,
+            "13": 126,
+            "17": 149,
+            "21": 188,
+            "25": 114,
+            "29": 120,
+            "3": 99,
+            "5": 149
+          }
+        },
+        "4096": {
+          "active_buckets": 2344,
+          "active_in_mixed_buckets": 356,
+          "active_in_pure_buckets": 4410,
+          "active_pure_bucket_fraction": 0.925304238,
+          "active_total": 4766,
+          "mixed_buckets": 132,
+          "occupied_buckets": 2382,
+          "pure_active_buckets": 2212,
+          "pure_non_active_buckets": 38,
+          "top_mixed_buckets": {
+            "1058": {
+              "active": 6,
+              "active_fraction": 0.857142857,
+              "total": 7
+            },
+            "1364": {
+              "active": 8,
+              "active_fraction": 0.888888889,
+              "total": 9
+            },
+            "1666": {
+              "active": 6,
+              "active_fraction": 0.857142857,
+              "total": 7
+            },
+            "2690": {
+              "active": 6,
+              "active_fraction": 0.857142857,
+              "total": 7
+            },
+            "2856": {
+              "active": 7,
+              "active_fraction": 0.875,
+              "total": 8
+            },
+            "3664": {
+              "active": 6,
+              "active_fraction": 0.857142857,
+              "total": 7
+            },
+            "3682": {
+              "active": 7,
+              "active_fraction": 0.875,
+              "total": 8
+            },
+            "3840": {
+              "active": 7,
+              "active_fraction": 0.777777778,
+              "total": 9
+            }
+          },
+          "top_pure_active_buckets": {
+            "1090": 8,
+            "1432": 8,
+            "1970": 10,
+            "204": 8,
+            "3413": 8,
+            "3530": 11,
+            "792": 9,
+            "96": 10
+          }
+        },
+        "512": {
+          "active_buckets": 499,
+          "active_in_mixed_buckets": 1634,
+          "active_in_pure_buckets": 3132,
+          "active_pure_bucket_fraction": 0.657154847,
+          "active_total": 4766,
+          "mixed_buckets": 114,
+          "occupied_buckets": 499,
+          "pure_active_buckets": 385,
+          "pure_non_active_buckets": 0,
+          "top_mixed_buckets": {
+            "128": {
+              "active": 35,
+              "active_fraction": 0.972222222,
+              "total": 36
+            },
+            "130": {
+              "active": 32,
+              "active_fraction": 0.914285714,
+              "total": 35
+            },
+            "202": {
+              "active": 28,
+              "active_fraction": 0.965517241,
+              "total": 29
+            },
+            "204": {
+              "active": 34,
+              "active_fraction": 0.944444444,
+              "total": 36
+            },
+            "336": {
+              "active": 30,
+              "active_fraction": 0.909090909,
+              "total": 33
+            },
+            "416": {
+              "active": 31,
+              "active_fraction": 0.911764706,
+              "total": 34
+            },
+            "454": {
+              "active": 33,
+              "active_fraction": 0.970588235,
+              "total": 34
+            },
+            "80": {
+              "active": 31,
+              "active_fraction": 0.911764706,
+              "total": 34
+            }
+          },
+          "top_pure_active_buckets": {
+            "0": 27,
+            "184": 23,
+            "280": 35,
+            "341": 26,
+            "396": 25,
+            "406": 23,
+            "408": 31,
+            "458": 26
+          }
+        },
+        "64": {
+          "active_buckets": 64,
+          "active_in_mixed_buckets": 3015,
+          "active_in_pure_buckets": 1751,
+          "active_pure_bucket_fraction": 0.367394041,
+          "active_total": 4766,
+          "mixed_buckets": 31,
+          "occupied_buckets": 64,
+          "pure_active_buckets": 33,
+          "pure_non_active_buckets": 0,
+          "top_mixed_buckets": {
+            "0": {
+              "active": 187,
+              "active_fraction": 0.954081633,
+              "total": 196
+            },
+            "12": {
+              "active": 142,
+              "active_fraction": 0.959459459,
+              "total": 148
+            },
+            "16": {
+              "active": 160,
+              "active_fraction": 0.930232558,
+              "total": 172
+            },
+            "2": {
+              "active": 129,
+              "active_fraction": 0.941605839,
+              "total": 137
+            },
+            "24": {
+              "active": 146,
+              "active_fraction": 0.993197279,
+              "total": 147
+            },
+            "32": {
+              "active": 153,
+              "active_fraction": 0.921686747,
+              "total": 166
+            },
+            "34": {
+              "active": 153,
+              "active_fraction": 0.932926829,
+              "total": 164
+            },
+            "42": {
+              "active": 138,
+              "active_fraction": 0.890322581,
+              "total": 155
+            }
+          },
+          "top_pure_active_buckets": {
+            "13": 73,
+            "21": 112,
+            "25": 72,
+            "29": 84,
+            "48": 93,
+            "49": 91,
+            "5": 80,
+            "53": 76
+          }
+        },
+        "65536": {
+          "active_buckets": 4369,
+          "active_in_mixed_buckets": 28,
+          "active_in_pure_buckets": 4738,
+          "active_pure_bucket_fraction": 0.994125052,
+          "active_total": 4766,
+          "mixed_buckets": 24,
+          "occupied_buckets": 4529,
+          "pure_active_buckets": 4345,
+          "pure_non_active_buckets": 160,
+          "top_mixed_buckets": {
+            "40218": {
+              "active": 3,
+              "active_fraction": 0.75,
+              "total": 4
+            },
+            "41882": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            },
+            "45088": {
+              "active": 2,
+              "active_fraction": 0.666666667,
+              "total": 3
+            },
+            "51616": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            },
+            "53584": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            },
+            "57966": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            },
+            "60274": {
+              "active": 1,
+              "active_fraction": 0.5,
+              "total": 2
+            },
+            "6860": {
+              "active": 2,
+              "active_fraction": 0.666666667,
+              "total": 3
+            }
+          },
+          "top_pure_active_buckets": {
+            "24672": 4,
+            "24704": 3,
+            "25122": 3,
+            "38960": 3,
+            "41114": 3,
+            "47707": 3,
+            "56678": 3,
+            "7564": 4
+          }
+        }
+      },
+      "active_units_per_ladder": {
+        "1": 4064,
+        "2": 311,
+        "3": 24,
+        "4": 2
+      },
+      "active_units_per_transition": {
+        "1": 3593,
+        "2": 483,
+        "3": 51,
+        "4": 11,
+        "5": 2
+      },
+      "align_counts": {
+        "10": 128,
+        "11": 111,
+        "12": 68,
+        "13": 31,
+        "14": 10,
+        "15": 5,
+        "16": 16,
+        "17": 2,
+        "21": 2,
+        "22": 1,
+        "3": 719,
+        "4": 894,
+        "5": 860,
+        "6": 810,
+        "7": 518,
+        "8": 382,
+        "9": 209
+      },
+      "align_mod_4_counts": {
+        "0": 1360,
+        "1": 1104,
+        "2": 949,
+        "3": 1353
+      },
+      "cached": false,
+      "child_depth": 25,
+      "event_index_counts": {
+        "1": 4135,
+        "2": 548,
+        "3": 67,
+        "4": 14,
+        "5": 2
+      },
+      "event_index_lag_counts": {
+        "1:10": 69,
+        "1:11": 39,
+        "1:12": 23,
+        "1:13": 12,
+        "1:14": 9,
+        "1:15": 4,
+        "1:16": 2,
+        "1:18": 1,
+        "1:2": 112,
+        "1:21": 1,
+        "1:3": 827,
+        "1:4": 886,
+        "1:5": 829,
+        "1:6": 616,
+        "1:7": 364,
+        "1:8": 252,
+        "1:9": 89,
+        "2:10": 28,
+        "2:11": 19,
+        "2:12": 11,
+        "2:13": 1,
+        "2:14": 1,
+        "2:15": 1,
+        "2:16": 2,
+        "2:2": 18,
+        "2:21": 1,
+        "2:3": 99,
+        "2:4": 69,
+        "2:5": 60,
+        "2:6": 108,
+        "2:7": 57,
+        "2:8": 46,
+        "2:9": 27,
+        "3:10": 5,
+        "3:11": 2,
+        "3:12": 5,
+        "3:13": 1,
+        "3:14": 1,
+        "3:3": 7,
+        "3:4": 11,
+        "3:5": 15,
+        "3:6": 4,
+        "3:7": 6,
+        "3:8": 4,
+        "3:9": 6,
+        "4:10": 2,
+        "4:13": 1,
+        "4:16": 1,
+        "4:3": 4,
+        "4:4": 1,
+        "4:6": 1,
+        "4:7": 2,
+        "4:8": 1,
+        "4:9": 1,
+        "5:4": 1,
+        "5:9": 1
+      },
+      "event_index_required_above_parent_counts": {
+        "1:1": 4135,
+        "2:2": 548,
+        "3:3": 67,
+        "4:4": 14,
+        "5:5": 2
+      },
+      "ladder_credit_counts": {
+        "1": 719,
+        "10": 68,
+        "11": 31,
+        "12": 10,
+        "13": 5,
+        "14": 16,
+        "15": 2,
+        "19": 2,
+        "2": 894,
+        "20": 1,
+        "3": 860,
+        "4": 810,
+        "5": 518,
+        "6": 382,
+        "7": 209,
+        "8": 128,
+        "9": 111
+      },
+      "lag_counts": {
+        "10": 104,
+        "11": 60,
+        "12": 39,
+        "13": 15,
+        "14": 11,
+        "15": 5,
+        "16": 5,
+        "18": 1,
+        "2": 130,
+        "21": 2,
+        "3": 937,
+        "4": 968,
+        "5": 904,
+        "6": 729,
+        "7": 429,
+        "8": 303,
+        "9": 124
+      },
+      "lag_minus_align_counts": {
+        "-1": 1054,
+        "-2": 369,
+        "-3": 151,
+        "-4": 51,
+        "-5": 20,
+        "-6": 9,
+        "-7": 2,
+        "-8": 2,
+        "0": 3108
+      },
+      "parent_depth": 24,
+      "pressure_event_counts": {
+        "high_ladder_step": 4766
+      },
+      "pressure_regime_counts": {
+        "high_after_ladder_window": 160,
+        "high_inside_active_ladder": 4766,
+        "low_repeat_prepaid": 27
+      },
+      "pure_feature_claims": {
+        "all_active_events_are_high_ladder_steps": true,
+        "all_active_ladder_formulas_checked": true,
+        "all_active_parities_are_odd": true,
+        "all_alignment_burns_checked": true,
+        "all_event_indexes_equal_required_above_parent": true,
+        "all_lag_simulations_match_pressure_state": true
+      },
+      "q_mod_16_counts": {
+        "1": 735,
+        "11": 664,
+        "13": 484,
+        "15": 478,
+        "3": 736,
+        "5": 506,
+        "7": 479,
+        "9": 684
+      },
+      "q_mod_8_counts": {
+        "1": 1419,
+        "3": 1400,
+        "5": 990,
+        "7": 957
+      },
+      "remaining_align_counts": {
+        "0": 3108,
+        "1": 1054,
+        "2": 369,
+        "3": 151,
+        "4": 51,
+        "5": 20,
+        "6": 9,
+        "7": 2,
+        "8": 2
+      },
+      "required_above_parent_lag_counts": {
+        "1:10": 69,
+        "1:11": 39,
+        "1:12": 23,
+        "1:13": 12,
+        "1:14": 9,
+        "1:15": 4,
+        "1:16": 2,
+        "1:18": 1,
+        "1:2": 112,
+        "1:21": 1,
+        "1:3": 827,
+        "1:4": 886,
+        "1:5": 829,
+        "1:6": 616,
+        "1:7": 364,
+        "1:8": 252,
+        "1:9": 89,
+        "2:10": 28,
+        "2:11": 19,
+        "2:12": 11,
+        "2:13": 1,
+        "2:14": 1,
+        "2:15": 1,
+        "2:16": 2,
+        "2:2": 18,
+        "2:21": 1,
+        "2:3": 99,
+        "2:4": 69,
+        "2:5": 60,
+        "2:6": 108,
+        "2:7": 57,
+        "2:8": 46,
+        "2:9": 27,
+        "3:10": 5,
+        "3:11": 2,
+        "3:12": 5,
+        "3:13": 1,
+        "3:14": 1,
+        "3:3": 7,
+        "3:4": 11,
+        "3:5": 15,
+        "3:6": 4,
+        "3:7": 6,
+        "3:8": 4,
+        "3:9": 6,
+        "4:10": 2,
+        "4:13": 1,
+        "4:16": 1,
+        "4:3": 4,
+        "4:4": 1,
+        "4:6": 1,
+        "4:7": 2,
+        "4:8": 1,
+        "4:9": 1,
+        "5:4": 1,
+        "5:9": 1
+      },
+      "retimed_transition_count": 4288,
+      "state_plus_one_v2_counts": {
+        "0": 3108,
+        "1": 1054,
+        "2": 369,
+        "3": 151,
+        "4": 51,
+        "5": 20,
+        "6": 9,
+        "7": 2,
+        "8": 2
+      },
+      "step_offset_max": 63,
+      "step_offset_min": 1,
+      "terminal_mod_16_counts": {
+        "0": 879,
+        "10": 658,
+        "12": 523,
+        "14": 310,
+        "2": 631,
+        "4": 555,
+        "6": 559,
+        "8": 651
+      },
+      "terminal_mod_64_counts": {
+        "0": 286,
+        "10": 193,
+        "12": 209,
+        "14": 98,
+        "16": 229,
+        "18": 75,
+        "2": 183,
+        "20": 193,
+        "22": 169,
+        "24": 217,
+        "26": 168,
+        "28": 102,
+        "30": 73,
+        "32": 230,
+        "34": 199,
+        "36": 85,
+        "38": 146,
+        "4": 145,
+        "40": 182,
+        "42": 215,
+        "44": 160,
+        "46": 102,
+        "48": 134,
+        "50": 174,
+        "52": 132,
+        "54": 65,
+        "56": 110,
+        "58": 82,
+        "6": 179,
+        "60": 52,
+        "62": 37,
+        "8": 142
+      }
+    },
+    {
+      "above_parent_pressure_unit_count": 6652,
+      "active_ladder_pressure_unit_count": 6195,
+      "active_ladders_per_transition": {
+        "1": 4916,
+        "2": 306,
+        "3": 26,
+        "4": 4
+      },
+      "active_pressure_state_residue_purity": {
+        "1024": {
+          "active_buckets": 979,
+          "active_in_mixed_buckets": 2232,
+          "active_in_pure_buckets": 3963,
+          "active_pure_bucket_fraction": 0.639709443,
+          "active_total": 6195,
+          "mixed_buckets": 235,
+          "occupied_buckets": 979,
+          "pure_active_buckets": 744,
+          "pure_non_active_buckets": 0,
+          "top_mixed_buckets": {
+            "128": {
+              "active": 23,
+              "active_fraction": 0.92,
+              "total": 25
+            },
+            "352": {
+              "active": 22,
+              "active_fraction": 0.956521739,
+              "total": 23
+            },
+            "452": {
+              "active": 23,
+              "active_fraction": 0.958333333,
+              "total": 24
+            },
+            "468": {
+              "active": 22,
+              "active_fraction": 0.846153846,
+              "total": 26
+            },
+            "544": {
+              "active": 23,
+              "active_fraction": 0.958333333,
+              "total": 24
+            },
+            "64": {
+              "active": 28,
+              "active_fraction": 0.965517241,
+              "total": 29
+            },
+            "640": {
+              "active": 21,
+              "active_fraction": 0.954545455,
+              "total": 22
+            },
+            "96": {
+              "active": 21,
+              "active_fraction": 0.954545455,
+              "total": 22
+            }
+          },
+          "top_pure_active_buckets": {
+            "0": 22,
+            "104": 20,
+            "227": 18,
+            "384": 19,
+            "416": 19,
+            "552": 21,
+            "554": 20,
+            "716": 22
+          }
+        },
+        "128": {
+          "active_buckets": 128,
+          "active_in_mixed_buckets": 3687,
+          "active_in_pure_buckets": 2508,
+          "active_pure_bucket_fraction": 0.404842615,
+          "active_total": 6195,
+          "mixed_buckets": 56,
+          "occupied_buckets": 128,
+          "pure_active_buckets": 72,
+          "pure_non_active_buckets": 0,
+          "top_mixed_buckets": {
+            "0": {
+              "active": 148,
+              "active_fraction": 0.936708861,
+              "total": 158
+            },
+            "104": {
+              "active": 105,
+              "active_fraction": 0.954545455,
+              "total": 110
+            },
+            "32": {
+              "active": 117,
+              "active_fraction": 0.893129771,
+              "total": 131
+            },
+            "40": {
+              "active": 107,
+              "active_fraction": 0.930434783,
+              "total": 115
+            },
+            "64": {
+              "active": 108,
+              "active_fraction": 0.915254237,
+              "total": 118
+            },
+            "68": {
+              "active": 101,
+              "active_fraction": 0.870689655,
+              "total": 116
+            },
+            "8": {
+              "active": 101,
+              "active_fraction": 0.935185185,
+              "total": 108
+            },
+            "84": {
+              "active": 113,
+              "active_fraction": 0.824817518,
+              "total": 137
+            }
+          },
+          "top_pure_active_buckets": {
+            "113": 67,
+            "13": 59,
+            "22": 64,
+            "33": 60,
+            "45": 65,
+            "69": 61,
+            "93": 63,
+            "99": 60
+          }
+        },
+        "16": {
+          "active_buckets": 16,
+          "active_in_mixed_buckets": 3945,
+          "active_in_pure_buckets": 2250,
+          "active_pure_bucket_fraction": 0.363196126,
+          "active_total": 6195,
+          "mixed_buckets": 8,
+          "occupied_buckets": 16,
+          "pure_active_buckets": 8,
+          "pure_non_active_buckets": 0,
+          "top_mixed_buckets": {
+            "0": {
+              "active": 762,
+              "active_fraction": 0.881944444,
+              "total": 864
+            },
+            "10": {
+              "active": 540,
+              "active_fraction": 0.924657534,
+              "total": 584
+            },
+            "12": {
+              "active": 437,
+              "active_fraction": 0.897330595,
+              "total": 487
+            },
+            "14": {
+              "active": 232,
+              "active_fraction": 0.958677686,
+              "total": 242
+            },
+            "2": {
+              "active": 363,
+              "active_fraction": 0.885365854,
+              "total": 410
+            },
+            "4": {
+              "active": 613,
+              "active_fraction": 0.820615797,
+              "total": 747
+            },
+            "6": {
+              "active": 405,
+              "active_fraction": 0.946261682,
+              "total": 428
+            },
+            "8": {
+              "active": 593,
+              "active_fraction": 0.9265625,
+              "total": 640
+            }
+          },
+          "top_pure_active_buckets": {
+            "1": 369,
+            "11": 255,
+            "13": 326,
+            "15": 136,
+            "3": 286,
+            "5": 379,
+            "7": 215,
+            "9": 284
+          }
+        },
+        "256": {
+          "active_buckets": 256,
+          "active_in_mixed_buckets": 3451,
+          "active_in_pure_buckets": 2744,
+          "active_pure_bucket_fraction": 0.442937853,
+          "active_total": 6195,
+          "mixed_buckets": 101,
+          "occupied_buckets": 256,
+          "pure_active_buckets": 155,
+          "pure_non_active_buckets": 0,
+          "top_mixed_buckets": {
+            "0": {
+              "active": 74,
+              "active_fraction": 0.913580247,
+              "total": 81
+            },
+            "106": {
+              "active": 60,
+              "active_fraction": 0.952380952,
+              "total": 63
+            },
+            "128": {
+              "active": 74,
+              "active_fraction": 0.961038961,
+              "total": 77
+            },
+            "204": {
+              "active": 65,
+              "active_fraction": 0.970149254,
+              "total": 67
+            },
+            "212": {
+              "active": 62,
+              "active_fraction": 0.849315068,
+              "total": 73
+            },
+            "32": {
+              "active": 61,
+              "active_fraction": 0.910447761,
+              "total": 67
+            },
+            "64": {
+              "active": 76,
+              "active_fraction": 0.926829268,
+              "total": 82
+            },
+            "96": {
+              "active": 63,
+              "active_fraction": 0.940298507,
+              "total": 67
+            }
+          },
+          "top_pure_active_buckets": {
+            "141": 36,
+            "154": 35,
+            "173": 39,
+            "22": 38,
+            "227": 39,
+            "33": 36,
+            "65": 36,
+            "88": 36
+          }
+        },
+        "32": {
+          "active_buckets": 32,
+          "active_in_mixed_buckets": 3945,
+          "active_in_pure_buckets": 2250,
+          "active_pure_bucket_fraction": 0.363196126,
+          "active_total": 6195,
+          "mixed_buckets": 16,
+          "occupied_buckets": 32,
+          "pure_active_buckets": 16,
+          "pure_non_active_buckets": 0,
+          "top_mixed_buckets": {
+            "0": {
+              "active": 456,
+              "active_fraction": 0.91750503,
+              "total": 497
+            },
+            "10": {
+              "active": 308,
+              "active_fraction": 0.895348837,
+              "total": 344
+            },
+            "12": {
+              "active": 301,
+              "active_fraction": 0.920489297,
+              "total": 327
+            },
+            "16": {
+              "active": 306,
+              "active_fraction": 0.833787466,
+              "total": 367
+            },
+            "20": {
+              "active": 353,
+              "active_fraction": 0.802272727,
+              "total": 440
+            },
+            "26": {
+              "active": 232,
+              "active_fraction": 0.966666667,
+              "total": 240
+            },
+            "4": {
+              "active": 260,
+              "active_fraction": 0.846905537,
+              "total": 307
+            },
+            "8": {
+              "active": 386,
+              "active_fraction": 0.941463415,
+              "total": 410
+            }
+          },
+          "top_pure_active_buckets": {
+            "1": 180,
+            "11": 149,
+            "13": 189,
+            "17": 189,
+            "21": 201,
+            "25": 157,
+            "3": 171,
+            "5": 178
+          }
+        },
+        "4096": {
+          "active_buckets": 2736,
+          "active_in_mixed_buckets": 967,
+          "active_in_pure_buckets": 5228,
+          "active_pure_bucket_fraction": 0.843906376,
+          "active_total": 6195,
+          "mixed_buckets": 321,
+          "occupied_buckets": 2790,
+          "pure_active_buckets": 2415,
+          "pure_non_active_buckets": 54,
+          "top_mixed_buckets": {
+            "1076": {
+              "active": 8,
+              "active_fraction": 0.888888889,
+              "total": 9
+            },
+            "1492": {
+              "active": 9,
+              "active_fraction": 0.818181818,
+              "total": 11
+            },
+            "1844": {
+              "active": 8,
+              "active_fraction": 0.888888889,
+              "total": 9
+            },
+            "2080": {
+              "active": 8,
+              "active_fraction": 0.888888889,
+              "total": 9
+            },
+            "234": {
+              "active": 8,
+              "active_fraction": 0.888888889,
+              "total": 9
+            },
+            "3476": {
+              "active": 8,
+              "active_fraction": 0.888888889,
+              "total": 9
+            },
+            "544": {
+              "active": 8,
+              "active_fraction": 0.888888889,
+              "total": 9
+            },
+            "64": {
+              "active": 10,
+              "active_fraction": 0.909090909,
+              "total": 11
+            }
+          },
+          "top_pure_active_buckets": {
+            "136": 10,
+            "1578": 10,
+            "2144": 10,
+            "227": 11,
+            "2420": 9,
+            "3786": 9,
+            "384": 9,
+            "908": 9
+          }
+        },
+        "512": {
+          "active_buckets": 510,
+          "active_in_mixed_buckets": 2843,
+          "active_in_pure_buckets": 3352,
+          "active_pure_bucket_fraction": 0.541081517,
+          "active_total": 6195,
+          "mixed_buckets": 158,
+          "occupied_buckets": 510,
+          "pure_active_buckets": 352,
+          "pure_non_active_buckets": 0,
+          "top_mixed_buckets": {
+            "0": {
+              "active": 43,
+              "active_fraction": 0.955555556,
+              "total": 45
+            },
+            "128": {
+              "active": 44,
+              "active_fraction": 0.936170213,
+              "total": 47
+            },
+            "204": {
+              "active": 40,
+              "active_fraction": 0.975609756,
+              "total": 41
+            },
+            "32": {
+              "active": 43,
+              "active_fraction": 0.914893617,
+              "total": 47
+            },
+            "320": {
+              "active": 36,
+              "active_fraction": 0.947368421,
+              "total": 38
+            },
+            "452": {
+              "active": 37,
+              "active_fraction": 0.902439024,
+              "total": 41
+            },
+            "64": {
+              "active": 40,
+              "active_fraction": 0.909090909,
+              "total": 44
+            },
+            "96": {
+              "active": 36,
+              "active_fraction": 0.947368421,
+              "total": 38
+            }
+          },
+          "top_pure_active_buckets": {
+            "106": 30,
+            "173": 26,
+            "282": 28,
+            "360": 25,
+            "384": 30,
+            "394": 28,
+            "40": 29,
+            "434": 28
+          }
+        },
+        "64": {
+          "active_buckets": 64,
+          "active_in_mixed_buckets": 3791,
+          "active_in_pure_buckets": 2404,
+          "active_pure_bucket_fraction": 0.388054883,
+          "active_total": 6195,
+          "mixed_buckets": 30,
+          "occupied_buckets": 64,
+          "pure_active_buckets": 34,
+          "pure_non_active_buckets": 0,
+          "top_mixed_buckets": {
+            "0": {
+              "active": 256,
+              "active_fraction": 0.927536232,
+              "total": 276
+            },
+            "12": {
+              "active": 184,
+              "active_fraction": 0.943589744,
+              "total": 195
+            },
+            "16": {
+              "active": 187,
+              "active_fraction": 0.85,
+              "total": 220
+            },
+            "20": {
+              "active": 188,
+              "active_fraction": 0.789915966,
+              "total": 238
+            },
+            "32": {
+              "active": 200,
+              "active_fraction": 0.904977376,
+              "total": 221
+            },
+            "40": {
+              "active": 212,
+              "active_fraction": 0.942222222,
+              "total": 225
+            },
+            "42": {
+              "active": 166,
+              "active_fraction": 0.869109948,
+              "total": 191
+            },
+            "8": {
+              "active": 174,
+              "active_fraction": 0.940540541,
+              "total": 185
+            }
+          },
+          "top_pure_active_buckets": {
+            "1": 96,
+            "13": 97,
+            "21": 108,
+            "22": 118,
+            "35": 93,
+            "49": 117,
+            "5": 102,
+            "9": 96
+          }
+        },
+        "65536": {
+          "active_buckets": 5583,
+          "active_in_mixed_buckets": 79,
+          "active_in_pure_buckets": 6116,
+          "active_pure_bucket_fraction": 0.98724778,
+          "active_total": 6195,
+          "mixed_buckets": 61,
+          "occupied_buckets": 5970,
+          "pure_active_buckets": 5522,
+          "pure_non_active_buckets": 387,
+          "top_mixed_buckets": {
+            "2476": {
+              "active": 4,
+              "active_fraction": 0.8,
+              "total": 5
+            },
+            "27344": {
+              "active": 2,
+              "active_fraction": 0.666666667,
+              "total": 3
+            },
+            "29748": {
+              "active": 2,
+              "active_fraction": 0.666666667,
+              "total": 3
+            },
+            "36068": {
+              "active": 2,
+              "active_fraction": 0.666666667,
+              "total": 3
+            },
+            "50756": {
+              "active": 3,
+              "active_fraction": 0.75,
+              "total": 4
+            },
+            "57556": {
+              "active": 2,
+              "active_fraction": 0.666666667,
+              "total": 3
+            },
+            "62804": {
+              "active": 2,
+              "active_fraction": 0.666666667,
+              "total": 3
+            },
+            "8468": {
+              "active": 3,
+              "active_fraction": 0.75,
+              "total": 4
+            }
+          },
+          "top_pure_active_buckets": {
+            "12235": 4,
+            "13346": 3,
+            "18733": 4,
+            "1908": 5,
+            "41008": 3,
+            "45290": 4,
+            "46484": 3,
+            "61068": 3
+          }
+        }
+      },
+      "active_units_per_ladder": {
+        "1": 5084,
+        "2": 506,
+        "3": 29,
+        "4": 3
+      },
+      "active_units_per_transition": {
+        "1": 4444,
+        "2": 697,
+        "3": 92,
+        "4": 14,
+        "5": 5
+      },
+      "align_counts": {
+        "10": 154,
+        "11": 109,
+        "12": 63,
+        "13": 26,
+        "14": 23,
+        "15": 12,
+        "16": 7,
+        "17": 6,
+        "18": 7,
+        "19": 5,
+        "22": 2,
+        "3": 1430,
+        "4": 1433,
+        "5": 1137,
+        "6": 671,
+        "7": 508,
+        "8": 368,
+        "9": 234
+      },
+      "align_mod_4_counts": {
+        "0": 1871,
+        "1": 1403,
+        "2": 857,
+        "3": 2064
+      },
+      "cached": false,
+      "child_depth": 26,
+      "event_index_counts": {
+        "1": 5245,
+        "2": 812,
+        "3": 113,
+        "4": 20,
+        "5": 5
+      },
+      "event_index_lag_counts": {
+        "1:10": 65,
+        "1:11": 39,
+        "1:12": 24,
+        "1:13": 12,
+        "1:14": 11,
+        "1:15": 3,
+        "1:16": 4,
+        "1:17": 2,
+        "1:18": 3,
+        "1:19": 1,
+        "1:2": 243,
+        "1:3": 1674,
+        "1:4": 1409,
+        "1:5": 724,
+        "1:6": 452,
+        "1:7": 268,
+        "1:8": 183,
+        "1:9": 128,
+        "2:10": 23,
+        "2:11": 18,
+        "2:12": 6,
+        "2:13": 6,
+        "2:14": 3,
+        "2:15": 1,
+        "2:16": 1,
+        "2:17": 2,
+        "2:18": 1,
+        "2:2": 19,
+        "2:21": 1,
+        "2:3": 129,
+        "2:4": 105,
+        "2:5": 173,
+        "2:6": 107,
+        "2:7": 94,
+        "2:8": 81,
+        "2:9": 42,
+        "3:10": 1,
+        "3:11": 8,
+        "3:12": 3,
+        "3:13": 1,
+        "3:15": 2,
+        "3:16": 1,
+        "3:2": 3,
+        "3:3": 23,
+        "3:4": 15,
+        "3:5": 25,
+        "3:6": 7,
+        "3:7": 11,
+        "3:8": 8,
+        "3:9": 5,
+        "4:10": 1,
+        "4:11": 2,
+        "4:13": 1,
+        "4:3": 2,
+        "4:4": 6,
+        "4:5": 4,
+        "4:6": 1,
+        "4:7": 1,
+        "4:8": 2,
+        "5:3": 2,
+        "5:4": 1,
+        "5:5": 1,
+        "5:6": 1
+      },
+      "event_index_required_above_parent_counts": {
+        "1:1": 5245,
+        "2:2": 812,
+        "3:3": 113,
+        "4:4": 20,
+        "5:5": 5
+      },
+      "ladder_credit_counts": {
+        "1": 1430,
+        "10": 63,
+        "11": 26,
+        "12": 23,
+        "13": 12,
+        "14": 7,
+        "15": 6,
+        "16": 7,
+        "17": 5,
+        "2": 1433,
+        "20": 2,
+        "3": 1137,
+        "4": 671,
+        "5": 508,
+        "6": 368,
+        "7": 234,
+        "8": 154,
+        "9": 109
+      },
+      "lag_counts": {
+        "10": 90,
+        "11": 67,
+        "12": 33,
+        "13": 20,
+        "14": 14,
+        "15": 6,
+        "16": 6,
+        "17": 4,
+        "18": 4,
+        "19": 1,
+        "2": 265,
+        "21": 1,
+        "3": 1830,
+        "4": 1536,
+        "5": 927,
+        "6": 568,
+        "7": 374,
+        "8": 274,
+        "9": 175
+      },
+      "lag_minus_align_counts": {
+        "-1": 1358,
+        "-10": 1,
+        "-2": 541,
+        "-3": 215,
+        "-4": 96,
+        "-5": 19,
+        "-6": 11,
+        "-7": 7,
+        "-8": 1,
+        "-9": 1,
+        "0": 3945
+      },
+      "parent_depth": 25,
+      "pressure_event_counts": {
+        "high_ladder_step": 6195
+      },
+      "pressure_regime_counts": {
+        "high_after_ladder_window": 340,
+        "high_inside_active_ladder": 6195,
+        "low_repeat_prepaid": 117
+      },
+      "pure_feature_claims": {
+        "all_active_events_are_high_ladder_steps": true,
+        "all_active_ladder_formulas_checked": true,
+        "all_active_parities_are_odd": true,
+        "all_alignment_burns_checked": true,
+        "all_event_indexes_equal_required_above_parent": true,
+        "all_lag_simulations_match_pressure_state": true
+      },
+      "q_mod_16_counts": {
+        "1": 914,
+        "11": 948,
+        "13": 641,
+        "15": 677,
+        "3": 866,
+        "5": 685,
+        "7": 662,
+        "9": 802
+      },
+      "q_mod_8_counts": {
+        "1": 1716,
+        "3": 1814,
+        "5": 1326,
+        "7": 1339
+      },
+      "remaining_align_counts": {
+        "0": 3945,
+        "1": 1358,
+        "10": 1,
+        "2": 541,
+        "3": 215,
+        "4": 96,
+        "5": 19,
+        "6": 11,
+        "7": 7,
+        "8": 1,
+        "9": 1
+      },
+      "required_above_parent_lag_counts": {
+        "1:10": 65,
+        "1:11": 39,
+        "1:12": 24,
+        "1:13": 12,
+        "1:14": 11,
+        "1:15": 3,
+        "1:16": 4,
+        "1:17": 2,
+        "1:18": 3,
+        "1:19": 1,
+        "1:2": 243,
+        "1:3": 1674,
+        "1:4": 1409,
+        "1:5": 724,
+        "1:6": 452,
+        "1:7": 268,
+        "1:8": 183,
+        "1:9": 128,
+        "2:10": 23,
+        "2:11": 18,
+        "2:12": 6,
+        "2:13": 6,
+        "2:14": 3,
+        "2:15": 1,
+        "2:16": 1,
+        "2:17": 2,
+        "2:18": 1,
+        "2:2": 19,
+        "2:21": 1,
+        "2:3": 129,
+        "2:4": 105,
+        "2:5": 173,
+        "2:6": 107,
+        "2:7": 94,
+        "2:8": 81,
+        "2:9": 42,
+        "3:10": 1,
+        "3:11": 8,
+        "3:12": 3,
+        "3:13": 1,
+        "3:15": 2,
+        "3:16": 1,
+        "3:2": 3,
+        "3:3": 23,
+        "3:4": 15,
+        "3:5": 25,
+        "3:6": 7,
+        "3:7": 11,
+        "3:8": 8,
+        "3:9": 5,
+        "4:10": 1,
+        "4:11": 2,
+        "4:13": 1,
+        "4:3": 2,
+        "4:4": 6,
+        "4:5": 4,
+        "4:6": 1,
+        "4:7": 1,
+        "4:8": 2,
+        "5:3": 2,
+        "5:4": 1,
+        "5:5": 1,
+        "5:6": 1
+      },
+      "retimed_transition_count": 5677,
+      "state_plus_one_v2_counts": {
+        "0": 3945,
+        "1": 1358,
+        "10": 1,
+        "2": 541,
+        "3": 215,
+        "4": 96,
+        "5": 19,
+        "6": 11,
+        "7": 7,
+        "8": 1,
+        "9": 1
+      },
+      "step_offset_max": 87,
+      "step_offset_min": 3,
+      "terminal_mod_16_counts": {
+        "0": 1103,
+        "10": 870,
+        "12": 655,
+        "14": 436,
+        "2": 658,
+        "4": 918,
+        "6": 656,
+        "8": 899
+      },
+      "terminal_mod_64_counts": {
+        "0": 361,
+        "10": 239,
+        "12": 269,
+        "14": 134,
+        "16": 276,
+        "18": 102,
+        "2": 143,
+        "20": 287,
+        "22": 192,
+        "24": 210,
+        "26": 218,
+        "28": 152,
+        "30": 105,
+        "32": 289,
+        "34": 229,
+        "36": 146,
+        "38": 163,
+        "4": 253,
+        "40": 315,
+        "42": 259,
+        "44": 178,
+        "46": 132,
+        "48": 177,
+        "50": 184,
+        "52": 232,
+        "54": 96,
+        "56": 126,
+        "58": 154,
+        "6": 205,
+        "60": 56,
+        "62": 65,
+        "8": 248
+      }
+    }
+  ],
+  "parameters": {
+    "cache_template": "experiments/results/branch_prefix_retimed_active_ladder_units_d{parent_depth}_d{child_depth}_20260702.json",
+    "max_depth": 1024,
+    "max_parent_depth": 25,
+    "max_steps": 50000,
+    "min_parent_depth": 18,
+    "refresh": false,
+    "top_n": 8,
+    "use_cache": false,
+    "write_depth_cache": true
+  },
+  "status": "branch-prefix-retimed-active-ladder-units-sweep"
+}
