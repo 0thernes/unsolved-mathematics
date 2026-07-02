@@ -1,0 +1,15 @@
+{
+  "order_3_mod_2^k_equals_2^(k-2)": true,
+  "LTE_formula_violations_j_le_4000": 0,
+  "v2(3^j-1)_over_even_j_distribution": {
+    "3": 1000,
+    "4": 500,
+    "5": 250,
+    "6": 125,
+    "7": 63,
+    "8": 31,
+    "9": 16,
+    "10": 8
+  },
+  "localization": "Pure spine (odd multiplier q=1: the -1 and -5 fixed points) is FULLY solved: v2(3^j-1)=2+v2(j) (even j) / 1 (odd j); v2(3^j+1)=2 (odd) / 1 (even) -- a clean geometric law. The residual wall is the coupled case: a positive orbit regenerates v2(3^j*q +/- c) with (j,q,c) DYNAMICALLY coupled, i.e. a measure-zero subsequence of the index-2 subgroup <3> mod 2^k. Controlling it pointwise is an effective equidistribution/discrepancy statement for that dynamically-selected subsequence -- the same measure-1 vs measure-0 wall named in EPSILON-BARRIER.md and DIVERGENCE-DRIFT.md, now in its sharpest concrete form, and tied again to the Diophantine object log2(3)."
+}

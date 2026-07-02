@@ -1,0 +1,8 @@
+{
+  "subgroup3_is_1_3_mod_8_index_2": true,
+  "minus1_boundary_residue_mod_8": 7,
+  "minus1_is_power_of_3_residue": false,
+  "v2_3j_minus_m_capped_at_2_for_complementary_coset": true,
+  "max_seen": 2,
+  "reading": "Supercritical survival needs sustained high alignment v2>=3, which (by (2)) is possible ONLY toward power-of-3 residues m==1,3 mod 8. So a divergent/cycling positive orbit would have to keep hitting <3> mod 2^k with growing 2-adic precision -- an EFFECTIVE EQUIDISTRIBUTION statement for {3^j} in Z_2. That is exactly the subject of recognized-open problems: Furstenberg's x2-x3 rigidity, and Erdos's questions on the base-2 digits / 2-adic distribution of 3^n. No pointwise/effective control is known. The Collatz spine kernel is a concrete instance of that class -- which is why elementary or purely-computational attacks (human or AI) do not close it: the obstruction is a genuine open problem, not a missing trick. No proof claim."
+}

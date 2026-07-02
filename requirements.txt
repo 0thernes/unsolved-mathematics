@@ -1,6 +1,5 @@
-# Core build + validation
-PyYAML>=6.0
-jsonschema>=4.21
-
-# RAG pipeline (optional; the corpus builder degrades gracefully without these)
-# Install with:  pip install -r requirements.txt -r requirements-rag.txt
+# Unsolved-Mathematics monorepo — optional runtime deps.
+# The vast majority of experiment instruments are pure Python standard library.
+# These are used by a small number of Collatz analysis scripts only:
+numpy>=1.24
+scipy>=1.10

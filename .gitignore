@@ -39,3 +39,9 @@ htmlcov/
 # Local scratch
 scratch/
 *.local.md
+
+# Run logs and editor backups (were previously committed by mistake)
+*.log
+*.bak
+*.prev
+*.bak.*
