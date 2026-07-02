@@ -45,9 +45,11 @@ import json
 import math
 import random
 from fractions import Fraction
+from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
 THETA = math.log(2) / math.log(3)
+SCRIPT_DIR = Path(__file__).resolve().parent
 
 
 def shortcut_step_frac(x: Fraction) -> Tuple[Fraction, int]:
@@ -299,7 +301,8 @@ def main() -> None:
     out = {"lemma": {k: (v if k != "failures" else [str(f) for f in v])
                      for k, v in lemma.items()},
            "expulsion": demo, "regeneration": regen}
-    path = "experiments/results/spine_ladder_lab.json"
+    path = SCRIPT_DIR / "results" / "spine_ladder_lab.json"
+    path.parent.mkdir(parents=True, exist_ok=True)
     with open(path, "w") as f:
         json.dump(out, f, indent=2, default=str)
     print(f"\nWrote {path}")
