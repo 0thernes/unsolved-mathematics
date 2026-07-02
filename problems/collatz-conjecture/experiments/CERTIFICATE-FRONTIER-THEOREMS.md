@@ -495,108 +495,6 @@ whole conjecture); the random model says the sharp such bound has slope
 between `-59` and `+26` — see [`ESCAPE-ENVELOPE.md`](ESCAPE-ENVELOPE.md) for
 the full measurement.
 
-## Lemma 8.0: distinct partial sums
-
-For a parity word `w in {0,1}^d` define the drift path
-
-```text
-P_j = o(j) * ln 3 - j * ln 2        (j = 0, 1, ..., d),
-```
-
-where `o(j)` counts ones among the first `j` letters. Then the survivor
-condition `3^(o(j)) >= 2^j` for all `j <= d` is equivalent to `P_j > 0` for
-all `1 <= j <= d`, and all values `P_0, ..., P_d` are pairwise distinct.
-
-### Proof
-
-Equivalence: `3^(o(j)) >= 2^j` iff `P_j >= 0`, and `P_j = 0` would force
-`3^(o(j)) = 2^j`, impossible for `j >= 1` (parity). Distinctness: `P_j = P_k`
-with `j < k` would force `3^(o(k) - o(j)) = 2^(k - j)` with `k - j >= 1` —
-again impossible. ∎
-
-## Lemma 8.1: cycle lemma for the drift path
-
-Let `w in {0,1}^d` have `o` ones with `3^o > 2^d` (total drift
-`s = o ln 3 - d ln 2 > 0`). Then at least one of the `d` cyclic shifts of `w`
-is a survivor word.
-
-### Proof
-
-Extend `w` periodically and let `P` be its prefix-sum path, so
-`P_(j+d) = P_j + s`. By Lemma 8.0 the values `P_0, ..., P_(d-1)` are
-distinct; let `m in [0, d)` be the unique index minimizing `P` over one
-period. Consider the shift starting at position `m + 1`; its `k`-th partial
-sum is `P_(m+k) - P_m` for `k = 1, ..., d`. If `m + k < d`, then
-`P_(m+k) > P_m` by strict minimality. If `m + k >= d`, then
-`P_(m+k) = P_(m+k-d) + s >= P_m + s > P_m` since `0 <= m + k - d <= m`. So
-every partial sum of the shifted word is strictly positive, which by Lemma
-8.0 is exactly the survivor condition. ∎
-
-## Theorem 8: cycle-lemma lower bound (two-sided survivor mass)
-
-For every `o` with `3^o > 2^d`,
-
-```text
-S(d) >= C(d, o) / d,
-```
-
-and in particular, taking `o = o_min(d)` and combining with Theorem 7,
-
-```text
-C(d, o_min(d)) / d  <=  S(d)  <=  2^(d * H(theta)).
-```
-
-With the standard type bound `C(d, k) >= 2^(d*H(k/d)) / (d + 1)` and
-`0 <= o_min(d) - d*theta < 1`, this yields, for all `d >= 20`,
-
-```text
-2^(d * H(theta)) / (3 d^2)  <=  S(d)  <=  2^(d * H(theta)),
-```
-
-i.e. `S(d) = 2^(d*H(theta) + O(log d))` — the survivor mass is pinned to
-within polynomial factors, unconditionally.
-
-### Proof
-
-Rotations preserve the number of ones, so the `C(d, o)` words with `o` ones
-partition into cyclic classes of size at most `d`. Each class satisfies
-`s > 0`, hence contains at least one survivor by Lemma 8.1. Therefore
-`S(d) >= #classes >= C(d, o) / d`. For the explicit form: with
-`a = o_min(d)/d in [theta, theta + 1/d)`, the mean value theorem gives
-`H(a) >= H(theta) - |H'(xi)| / d` for some `xi in (theta, a)`; on
-`[theta, theta + 1/20]` one has `|H'| <= 1.1` bits, so
-`2^(d*H(a)) >= 2^(d*H(theta)) * 2^(-1.1)`, and
-`2^(-1.1) / (d(d+1)) >= 1 / (3 d^2)` for `d >= 20`. ∎
-
-### Numerical verification
-
-`escape_envelope_analyzer.py` checks `C(d, o_min)/d <= S(d)` in exact integer
-arithmetic on 65 grid depths through `d = 2048` (held everywhere; equality at
-`d = 1` where both sides are `1`). At `d = 2048`: exact cycle floor
-`log2(C(2048,1293)/2048) = 1928.07` bits, actual `log2 S = 1932.40` (slack
-`4.32` bits), entropy ceiling `1945.47` (slack `13.08` bits); the weaker
-closed-form floor `2^(dH)/(3d^2)` sits at `1921.92` bits.
-
-## Corollary 8.1: what remains unproved in the envelope
-
-Theorem 8 makes the survivor-mass side of Conjecture 7.2 unconditional:
-
-```text
--log2( S(d) / 2^d ) = (1 - H(theta)) * d + O(log d),
-```
-
-so the first-moment crossing satisfies `D_1(b) = c* b + O(log b)` as a
-**theorem**, and the box dimension `H(theta)` of the frontier follows by pure
-counting. The only unproved ingredient left in the escape-envelope
-conjecture is *representative equidistribution*: that the integer
-representatives of survivor classes are spread in `[0, 2^d)` regularly enough
-that the minimal survivor tracks `2^d / S(d)`. The measured minimal-survivor
-duality products `m * S(d)/2^d` at the exhaustively-known records
-(`d = 105, 135, 183, 224, 287, 395`) are `1.96, 1.74, 6.6, 1.29, 1.21, 0.30`
-— order one across seventeen binary orders of magnitude of density, which is
-precisely the equidistribution the conjecture needs, measured where it
-matters and proved nowhere.
-
 ## Endpoint terminal mechanism
 
 The outlier transition can be inspected one layer lower. Let
@@ -1645,104 +1543,144 @@ prior high-ladder credit:            5,565
 prior low-repeat credit:               112
 ```
 
+The regenerated timing fingerprint is sharper:
+
+```text
+required above parent:
+1:                                  5,677
+
+threshold event:
+high_ladder_step:                   5,245
+ordinary_step:                        432
+
+prior_high_ladder:
+  threshold lag:                    2..19
+  threshold surplus:                2..25
+
+prior_low_repeat:
+  threshold lag:                    2..5
+  threshold surplus:                4..22
+```
+
 Thus every retimed-pressure case in the exact `25 -> 26` lift was prepaid by
-visible structural credit before above-parent pressure appeared. The next local
-lemma is:
+visible structural credit before a one-unit above-parent pressure event
+appeared. The next local lemma is:
 
 ```text
 Retimed-pressure lemma:
 If a live child has required_delta > 0 but credit_delta < required_delta, then
-before the first prefix with child R_t > parent R_max, the child has already
-entered a high ladder or low-repeat gate whose accumulated credit leaves
-positive surplus.
+the first prefix with child R_t > parent R_max raises the requirement by
+exactly one unit, and before that prefix the child has already entered a high
+ladder or low-repeat gate whose accumulated credit leaves positive surplus.
 ```
 
 The finite audit gives minimum surplus `2`; the proof must derive this timing
 from the lifted residue bit and the low/high alignment grammar.
 
-## Retimed pressure-unit audit
+## Affine lift lemma
 
-The first retimed-pressure audit only checked the first child prefix where
-required credit exceeded the parent maximum. The pressure-unit follow-up checks
-every later above-parent required-credit increase in the same hard class.
-
-Instrument:
+The parent/upper-child part of the lift argument is now a proved local lemma,
+recorded in
+[`BRANCH-PREFIX-AFFINE-LIFT-LEMMA.md`](BRANCH-PREFIX-AFFINE-LIFT-LEMMA.md).
+For the shortcut map `T`, if
 
 ```text
-experiments/branch_prefix_pressure_units.py
+child = parent + 2^d,
 ```
 
-Result:
+then for every `0 <= j <= d`,
 
 ```text
-experiments/results/branch_prefix_pressure_units_d25_d26_20260702.json
+T^j(child) - T^j(parent) = 3^o_j 2^(d-j),
+```
+
+where `o_j` is the shared odd-step count through the first `j` shortcut steps.
+The first `d` parities match, and at depth `d` the parity flips because the
+difference is the odd number `3^o_d`.
+
+This has two consequences for the retimed hard case:
+
+```text
+E->O boundary at depth d gives a +1 excess jump at d+1.
+O->E boundary at depth d gives a -1 excess jump at d+1.
+```
+
+Thus the affine law itself is no longer an empirical obligation. The remaining
+retimed-specific obligation is to prove, from live frontier algebra, when the
+boundary type is `E->O` and why the resulting pressure falls inside the
+align-3 local words observed below.
+
+## Retimed-pressure depth sweep
+
+The depth-specific surplus margin was stress-tested by
+[`branch_prefix_retimed_pressure_sweep.py`](branch_prefix_retimed_pressure_sweep.py),
+result file:
+
+```text
+experiments/results/branch_prefix_retimed_pressure_sweep_d18_d25_20260702.json
 ```
 
 Command:
 
 ```powershell
-python experiments/branch_prefix_pressure_units.py --parent-depth 25 --max-depth 1024 --top-n 12 --output experiments/results/branch_prefix_pressure_units_d25_d26_20260702.json --quiet
+python experiments/branch_prefix_retimed_pressure_sweep.py --min-parent-depth 18 --max-parent-depth 25 --use-cache --write-depth-cache --output experiments/results/branch_prefix_retimed_pressure_sweep_d18_d25_20260702.json
 ```
 
-Exact `25 -> 26` result:
+The sweep covers exact frontier lifts `18 -> 19` through `25 -> 26`.
 
 ```text
-retimed-pressure transitions:              5,677
-fully unit-certified retimed transitions:  5,677
-transition failures:                           0
-above-parent pressure units:               6,652
-pressure-unit failures:                        0
-tight pressure units:                          0
-minimum pressure-unit surplus:                 2
-maximum required above parent:                 5
-maximum threshold lag:                        21
+retimed-pressure transitions checked: 13,856
+retimed trace failures:                   0
+all thresholds one-unit:               true
+all thresholds prepaid:                true
+minimum positive threshold margin:        1
 ```
 
-Timing classes over pressure units:
+Depths `18` and `21` have minimum threshold surplus `1`, so the `25 -> 26`
+margin `2` is not a universal finite pattern. The corrected local lemma target
+is therefore:
 
 ```text
-prior high-ladder credit:                 6,535
-prior low-repeat credit:                    117
+Retimed-pressure sweep lemma:
+Every live retimed-pressure child first exceeds the parent required-credit
+level by exactly one unit, and the child has already received visible
+high-ladder or low-repeat credit sufficient to keep the prefix ledger
+nonnegative at that threshold.
 ```
 
-Pressure-unit theorem target:
+This remains finite evidence. A proof still has to derive the one-unit
+threshold and prepayment timing from residue-lift algebra rather than from
+enumeration.
+
+## Retimed-pressure symbolic signature
+
+The exact `25 -> 26` hard class was then mined by
+[`branch_prefix_retimed_signature.py`](branch_prefix_retimed_signature.py),
+result file:
 
 ```text
-For every live retimed child with required_delta > 0 and
-credit_delta < required_delta, every prefix where child R_t exceeds the parent
-maximum R has already received visible high-ladder or low-repeat credit, and
-the accumulated credit remains strictly above the required pressure.
-```
-
-This is still finite evidence. Its value is that the local lift obligation is
-now unit-local rather than stated only at the first threshold crossing.
-
-## Retimed pressure-unit classifier
-
-The classifier
-[`branch_prefix_pressure_unit_classifier.py`](branch_prefix_pressure_unit_classifier.py)
-mines symbolic structure from the same pressure units.
-
-Result:
-
-```text
-experiments/results/branch_prefix_pressure_unit_classifier_d25_d26_20260702.json
+experiments/results/branch_prefix_retimed_signature_d25_d26_20260702.json
 ```
 
 Command:
 
 ```powershell
-python experiments/branch_prefix_pressure_unit_classifier.py --parent-depth 25 --max-depth 1024 --top-n 12 --output experiments/results/branch_prefix_pressure_unit_classifier_d25_d26_20260702.json --quiet
+python experiments/branch_prefix_retimed_signature.py --parent-depth 25 --max-depth 1024 --top-n 12 --residue-top-n 12 --output experiments/results/branch_prefix_retimed_signature_d25_d26_20260702.json --quiet
 ```
 
-Pure finite feature claims:
+Pure dynamic features:
 
 ```text
-all retimed transitions are upper-lift child:  true
-all pressure units are upper-lift child:       true
-all retimed children are high-assisted:        true
-all pressure units have prior credit:          true
-all pressure units have positive surplus:      true
+positive-pressure transitions:       71,321
+retimed-pressure transitions:         5,677
+first pressure units:                 5,677
+all above-parent pressure units:      6,652
+
+all retimed transitions are upper-lift child:      true
+all retimed children are high-assisted descents:   true
+all first pressure units are one-unit:             true
+all pressure units have prior credit:              true
+all pressure units have positive surplus:          true
 ```
 
 Pressure-unit regimes:
@@ -1753,569 +1691,921 @@ high_after_ladder_window:     340
 low_repeat_prepaid:           117
 ```
 
-For high-ladder pressure units, `lag_minus_align` ranges from `-10` to `3`.
-The `340` post-ladder units are exactly the `+3` class. Thus the current local
-proof target splits into active-ladder domination, low-repeat domination, and
-a three-shortcut post-ladder carry bound.
+For high-ladder credit of alignment `a`, the post-ladder tail is exactly the
+`lag_minus_align = 3` class in this finite lift. No high-ladder pressure unit
+appeared with `lag_minus_align = 1`, `2`, or greater than `3`.
 
-## Post-ladder tail carry audit
+The residue-purity test is a negative result: modulo every tested power of two
+through `65536`, every retimed child-residue bucket is mixed with non-retimed
+live transitions. Thus a proof should not try to identify the hard class by a
+fixed low-bit child-residue table alone; it has to use dynamic prefix timing.
 
-The post-ladder tail analyzer
-[`branch_prefix_post_ladder_tail.py`](branch_prefix_post_ladder_tail.py)
-reconstructs the `340` post-ladder high units from the last high-ladder credit
-state through the ladder terminal and the next three shortcut steps.
+## Retimed-pressure signature depth sweep
 
-Result:
+The signature claims were then swept by
+[`branch_prefix_retimed_signature_sweep.py`](branch_prefix_retimed_signature_sweep.py),
+result file:
 
 ```text
-experiments/results/branch_prefix_post_ladder_tail_d25_d26_20260702.json
+experiments/results/branch_prefix_retimed_signature_sweep_d18_d25_20260702.json
 ```
 
 Command:
 
 ```powershell
-python experiments/branch_prefix_post_ladder_tail.py --parent-depth 25 --max-depth 1024 --top-n 12 --output experiments/results/branch_prefix_post_ladder_tail_d25_d26_20260702.json --quiet
+python experiments/branch_prefix_retimed_signature_sweep.py --min-parent-depth 18 --max-parent-depth 25 --use-cache --write-depth-cache --output experiments/results/branch_prefix_retimed_signature_sweep_d18_d25_20260702.json
 ```
 
-Exact `25 -> 26` result:
+Combined result across exact lifts `18 -> 19` through `25 -> 26`:
 
 ```text
-post-ladder tail units:          340
-reconstruction failures:           0
-terminal_v2 = 1:                 340
-terminal mod 16 = 6:             340
-post parity word EOO:            340
+retimed-pressure transitions:     13,856
+above-parent pressure units:      16,085
+
+high_inside_active_ladder:        15,259
+high_after_ladder_window:            646
+low_repeat_prepaid:                  180
 ```
 
-Elementary carry identity:
+All pure dynamic checks remained true at every checked depth, including
+upper-lift child only, high-assisted child only, first pressure unit one-unit,
+prior credit, and positive surplus. The post-ladder class remained exactly
+`lag_minus_align = 3` at every checked depth, and the residue-purity negative
+result remained true through modulus `65536`.
+
+This makes the retimed-pressure proof target more specific: prove the
+three-regime dynamic split, not a low-residue table.
+
+## Retimed first-threshold timing
+
+The first above-parent pressure threshold was isolated by
+[`branch_prefix_retimed_first_threshold.py`](branch_prefix_retimed_first_threshold.py),
+result file:
 
 ```text
-y = 16r + 6
-T(y)   = 8r + 3
-T^2(y) = 12r + 5
-T^3(y) = 18r + 8
-```
-
-So the tail pressure sublemma reduces to deriving the congruence
-`3^a q - 1 == 6 mod 16` from the retimed upper-child hypotheses.
-
-## Tail congruence audit
-
-The congruence audit
-[`branch_prefix_tail_congruence.py`](branch_prefix_tail_congruence.py) compares
-the post-ladder tail congruence against every high-ladder pressure unit in the
-same retimed class.
-
-Result:
-
-```text
-experiments/results/branch_prefix_tail_congruence_d25_d26_20260702.json
+experiments/results/branch_prefix_retimed_first_threshold_sweep_d18_d25_20260702.json
 ```
 
 Command:
 
 ```powershell
-python experiments/branch_prefix_tail_congruence.py --parent-depth 25 --max-depth 1024 --top-n 12 --output experiments/results/branch_prefix_tail_congruence_d25_d26_20260702.json --quiet
+python experiments/branch_prefix_retimed_first_threshold.py --min-parent-depth 18 --max-parent-depth 25 --use-cache --write-depth-cache --output experiments/results/branch_prefix_retimed_first_threshold_sweep_d18_d25_20260702.json
 ```
 
-Exact findings:
+Combined result across exact lifts `18 -> 19` through `25 -> 26`:
 
 ```text
-high-ladder pressure units:                 6,535
-post-ladder tail units:                       340
-tail units with terminal 6 mod 16:            340
-active-ladder units with terminal 6 mod 16:   656
+retimed-pressure transitions:     13,856
+first thresholds found:           13,856
+
+high_inside_active_ladder:        13,120
+high_after_ladder_window:            572
+low_repeat_prepaid:                  164
+
+first threshold offset from parent depth: 1..99
+first lag_minus_align:                 -14..3
 ```
 
-Equivalent cofactor rule:
+All first thresholds were present, upper-child, one-unit, prior-credit, and
+positive-surplus. The offset range `1..99` is a useful correction: the proof
+target cannot be "the first threshold appears within a tiny constant number of
+steps after the frontier depth." The theorem target is instead visible
+prepayment before the first threshold, regardless of how far after the frontier
+depth that threshold appears.
+
+## Retimed post-ladder first-threshold algebra
+
+The post-ladder first-threshold class was reconstructed by
+[`branch_prefix_retimed_post_ladder_tail.py`](branch_prefix_retimed_post_ladder_tail.py),
+result file:
 
 ```text
-a mod 4 = 0: q mod 16 = 7    count  92
-a mod 4 = 1: q mod 16 = 13   count  64
-a mod 4 = 2: q mod 16 = 15   count  48
-a mod 4 = 3: q mod 16 = 5    count 136
-```
-
-Thus terminal `6 mod 16` is necessary for the post-ladder tail but not
-sufficient to classify it. The local proof must split active-ladder units from
-post-ladder units first, then apply the congruence lemma only in the latter
-case.
-
-## Tail phase audit
-
-The phase audit
-[`branch_prefix_tail_phase.py`](branch_prefix_tail_phase.py) checks the missing
-separator among terminal-`6 mod 16` high-ladder pressure units.
-
-Result:
-
-```text
-experiments/results/branch_prefix_tail_phase_d25_d26_20260702.json
+experiments/results/branch_prefix_retimed_post_ladder_tail_sweep_d18_d25_20260702.json
 ```
 
 Command:
 
 ```powershell
-python experiments/branch_prefix_tail_phase.py --parent-depth 25 --max-depth 1024 --top-n 12 --output experiments/results/branch_prefix_tail_phase_d25_d26_20260702.json --quiet
+python experiments/branch_prefix_retimed_post_ladder_tail.py --min-parent-depth 18 --max-parent-depth 25 --use-cache --write-depth-cache --output experiments/results/branch_prefix_retimed_post_ladder_tail_sweep_d18_d25_20260702.json
 ```
 
-The script replays the exact `25 -> 26` retimed class with 80-digit Decimal
-arithmetic for
+Combined result across exact lifts `18 -> 19` through `25 -> 26`:
 
 ```text
-odd_steps - (log 2 / log 3) * total_steps
+retimed-pressure transitions:          13,856
+first thresholds found:                13,856
+post-ladder first thresholds:             572
+
+post-ladder word counts:
+  EOO:                                    572
+
+terminal mod 16 counts:
+  6:                                      572
+
+terminal v2 counts:
+  1:                                      572
+
+q-align phase counts:
+  a0:q7                                   168
+  a1:q13                                   96
+  a2:q15                                   73
+  a3:q5                                   235
 ```
 
-and measures the terminal gap to the required-credit threshold that the pressure
-event crosses.
-
-Exact findings:
+Thus the first-threshold post-ladder `+3` class has a concrete algebraic
+description in the checked window. If the preceding high ladder starts at
+`2^a q - 1`, it terminates at:
 
 ```text
-terminal-6 high-ladder pressure units:       996
-post-ladder tail with positive gap:          340
-active ladder with nonpositive gap:          656
-terminal-6 phase sign classifies tail:       true
-all tail required_delta_from_terminal = 1:   true
+y = 3^a q - 1,
 ```
 
-Numerical separation:
+and every checked post-ladder first threshold satisfies:
 
 ```text
-EOO gain:                    0.107210739285627688701419...
-tail gap range:             +0.021768664287042106578247...
-                             to +0.081541375001010298483449...
-active terminal-6 gap range: -2.025669364284617390217970...
-                             to -0.025669364284617390217970...
+y == 6 mod 16
+EOO(y) = (9y + 10) / 8.
 ```
 
-This sharpens the proof obligation.  Terminal `6 mod 16` supplies the residue
-and parity-word part; positive terminal phase supplies the timing part.  The
-remaining theorem target is to derive this phase sign from the lifted upper
-child and frontier hypotheses, not from enumeration.
-
-## Tail phase spectrum audit
-
-The phase-spectrum audit
-[`branch_prefix_tail_phase_spectrum.py`](branch_prefix_tail_phase_spectrum.py)
-checks where the max excess used in the terminal phase gap comes from.
-
-Result:
+Equivalently:
 
 ```text
-experiments/results/branch_prefix_tail_phase_spectrum_d25_d26_20260702.json
+3^a q == 7 mod 16.
 ```
 
-Command:
+The refreshed data also gives a small negative warning: the terminal residues
+remain mixed modulo `64` (`6`, `22`, `38`, and `54` all occur), so the observed
+finite invariant is the `mod 16` phase law, not a fixed higher residue.
 
-```powershell
-python experiments/branch_prefix_tail_phase_spectrum.py --parent-depth 25 --max-depth 1024 --top-n 12 --hist-top-n 32 --output experiments/results/branch_prefix_tail_phase_spectrum_d25_d26_20260702.json --quiet
-```
-
-Exact findings:
+The same analyzer tests low parent/child residue purity among all retimed
+first-threshold transitions. Since the checked lifts have parent depth at
+least `18`, parent and upper-child residues agree modulo every tested modulus
+through `65536`. The low-residue classifier result is negative:
 
 ```text
-terminal-6 high-ladder pressure units: 996
-phase sign still classifies tail:      true
-source misses:                         0
-active max source at terminal:       656 / 656
-tail max source at terminal:         334 / 340
-tail max source eight steps earlier:   6 / 340
+pure post-ladder low-residue coverage:
+  mod 16..4096: 0 / 572
+  mod 65536:    7 / 572
 ```
 
-The tail-positive phase side collapses to four integer-linear forms in
-`theta = log(2)/log(3)`:
+Thus a fixed low-bit table is not the theorem object. The post-ladder phase
+law must be derived dynamically from the exposed high-ladder state and the live
+upper-lift transition.
+
+The theorem target is now sharper: derive the terminal residue `6 mod 16` from
+the live upper-lift frontier algebra and the high-ladder identity, instead of
+treating the post-ladder tail as an unnamed timing bin.
+
+The all-pressure-unit companion
+[`branch_prefix_retimed_post_ladder_all_units.py`](branch_prefix_retimed_post_ladder_all_units.py)
+then widens the check beyond first thresholds:
 
 ```text
-27*theta - 17.001 = 0.034103346429350801687232...  count 275
-35*theta - 22.001 = 0.081541375001010298483449...  count  57
-46*theta - 29.001 = 0.021768664287042106578247...  count   5
-54*theta - 34.001 = 0.069206692858701603374464...  count   3
+experiments/results/branch_prefix_retimed_post_ladder_all_units_sweep_d18_d25_20260702.json
 ```
 
-Thus the local phase problem is mostly terminal-local but has a six-case memory
-subcase.  A proof must account for that earlier max-source rather than silently
-replace `max_excess_at_terminal` with the terminal current excess in all cases.
-
-## Tail memory-case extraction
-
-The memory-case extractor
-[`branch_prefix_tail_memory_cases.py`](branch_prefix_tail_memory_cases.py)
-isolates the six non-terminal max-source cases.
-
-Result:
+Across the same lifts:
 
 ```text
-experiments/results/branch_prefix_tail_memory_cases_d25_d26_20260702.json
+above-parent pressure units:           16,085
+post-ladder pressure units:               646
+
+post-ladder pressure unit event index:
+  1:                                      572
+  2:                                       63
+  3:                                       10
+  4:                                        1
 ```
 
-Command:
-
-```powershell
-python experiments/branch_prefix_tail_memory_cases.py --parent-depth 25 --max-depth 1024 --top-n 12 --output experiments/results/branch_prefix_tail_memory_cases_d25_d26_20260702.json --quiet
-```
-
-Exact findings:
+For every checked post-ladder pressure unit, the event index equals the
+required-credit level above the parent:
 
 ```text
-terminal-6 post-ladder tail units: 340
-memory-tail cases:                   6
-source lag to terminal:              8 in all cases
-terminal-to-event word:              EOO in all cases
-source-to-terminal odd count:         5 in all cases
+1 -> 1: 572
+2 -> 2:  63
+3 -> 3:  10
+4 -> 4:   1
 ```
 
-The two source-to-terminal words are:
+This is not mainly a repeated post-ladder cascade: `644` retimed transitions
+have exactly one post-ladder pressure unit, and only `1` transition has two.
+Later-index post-ladder units usually follow earlier active-ladder pressure
+units.
+
+All `646` post-ladder pressure units satisfy the same law:
 
 ```text
-EEOOEOOO: 5
-EEOEOOOO: 1
+EOO:                                    646
+terminal mod 16 = 6:                    646
+
+q-align phase counts:
+  a0:q7                                  189
+  a1:q13                                 115
+  a2:q15                                  86
+  a3:q5                                  256
 ```
 
-Both pass through the low-repeat residue `59 mod 64`.  All six share:
+Pressure-state residues are more informative than parent/child residues but
+still not a full low-bit classifier:
 
 ```text
-max-source gap:       27*theta - 17.001
-terminal-current gap: 35*theta - 22.001
-memory drop:           8*theta - 5
+pure post-ladder pressure-state coverage:
+  mod 16..1024: 0 / 646
+  mod 4096:    15 / 646
+  mod 65536:  442 / 646
 ```
 
-This changes the proof target in a good way: the memory subcase is not an
-unstructured exception. It is a two-word local grammar, coupled to the
-low-repeat residue class, that still crosses the post-terminal `EOO` tail with
-positive margin.
+So the broadened theorem target is: every post-ladder pressure unit, not only
+the first threshold, is an `EOO` event after a high-ladder terminal satisfying
+`3^a q == 7 mod 16`.
 
-## Tail memory word-map lift
+## Retimed active high-ladder pressure-unit algebra
 
-The word-map analyzer
-[`branch_prefix_tail_memory_word_maps.py`](branch_prefix_tail_memory_word_maps.py)
-turns the two memory words into exact affine cylinders and checks the lifted
-residue paths of the six records.
-
-Result:
+The dominant retimed pressure regime was isolated by
+[`branch_prefix_retimed_active_ladder_units.py`](branch_prefix_retimed_active_ladder_units.py),
+with combined output:
 
 ```text
-experiments/results/branch_prefix_tail_memory_word_maps_d25_d26_20260702.json
+experiments/results/branch_prefix_retimed_active_ladder_units_sweep_d18_d25_20260702.json
 ```
 
-Command:
-
-```powershell
-python experiments/branch_prefix_tail_memory_word_maps.py --memory-result experiments/results/branch_prefix_tail_memory_cases_d25_d26_20260702.json --output experiments/results/branch_prefix_tail_memory_word_maps_d25_d26_20260702.json --quiet
-```
-
-Exact affine maps:
+Across the same exact lifts:
 
 ```text
-EEOOEOOO: T^8(n) = (243*n + 1148)/256, source n == 108 mod 256
-EEOEOOOO: T^8(n) = (243*n + 1364)/256, source n == 164 mod 256
+retimed-pressure transitions:          13,856
+above-parent pressure units:           16,085
+active high-ladder pressure units:      15,259
 ```
 
-The honest obstruction is subtler than the previous wording suggested.  The
-raw modulo-`256` parity cylinders have representative paths:
+Every checked active pressure unit has its last credit event at a high ladder:
 
 ```text
-EEOOEOOO: 44 -> 54 -> 27 -> 41 -> 62 -> 31 -> 47 -> 7 -> 43
-EEOEOOOO: 36 -> 18 -> 41 -> 62 -> 31 -> 47 -> 7 -> 43 -> 33
+x = 2^a q - 1,  a >= 3.
 ```
 
-These paths do not pass through `59 mod 64`.  The `59 mod 64` bridge appears
-only after lifting the source class to modulo `2^(8+6) = 16384`:
+If the pressure lag from that entry is `k`, every checked active unit satisfies:
 
 ```text
-EEOOEOOO, source n == 6508 mod 16384:
-  44 -> 54 -> 27 -> 9 -> 14 -> 39 -> 59 -> 25 -> 38
-
-EEOOEOOO, source n == 14700 mod 16384:
-  44 -> 54 -> 27 -> 9 -> 14 -> 39 -> 59 -> 25 -> 6
-
-EEOEOOOO, source n == 10148 mod 16384:
-  36 -> 18 -> 41 -> 30 -> 47 -> 39 -> 59 -> 25 -> 38
+1 <= k <= a
+pressure event = high_ladder_step
+pressure state = 3^k 2^(a-k) q - 1
+shortcut word = O^k
+v2(pressure_state + 1) = a - k
 ```
 
-Pure finite checks:
+The event-index law holds here too:
 
 ```text
-all words length 8 and odd count 5:           true
-raw mod-256 word paths do not force 59 mod64: true
-memory lifted paths pass 59 mod64:            true
-memory lifted paths have preterminal 25:      true
-all memory records affine compatible:         true
-all memory paths match records:               true
+event_index 1 -> required_above_parent 1: 13,120
+event_index 2 -> required_above_parent 2:  1,835
+event_index 3 -> required_above_parent 3:    252
+event_index 4 -> required_above_parent 4:     45
+event_index 5 -> required_above_parent 5:      7
 ```
 
-Thus the local memory lemma cannot be just "one of two parity words occurs."
-It must prove the lifted source residue classes. Once those classes are known,
-the exact affine maps force the recorded low-repeat bridge into the
-post-ladder tail.
-
-## Tail memory minimal-lift solver
-
-The lift solver
-[`branch_prefix_tail_memory_lift_solver.py`](branch_prefix_tail_memory_lift_solver.py)
-checks which low bits are actually needed to force the memory bridge.
-
-Result:
+Most active units occur at the terminal high-ladder step, but not all:
 
 ```text
-experiments/results/branch_prefix_tail_memory_lift_solver_d25_d26_20260702.json
+remaining alignment a-k = 0: 9,889
+remaining alignment a-k > 0: 5,370
 ```
 
-Command:
-
-```powershell
-python experiments/branch_prefix_tail_memory_lift_solver.py --memory-result experiments/results/branch_prefix_tail_memory_cases_d25_d26_20260702.json --output experiments/results/branch_prefix_tail_memory_lift_solver_d25_d26_20260702.json --quiet
-```
-
-Write a source as `n = r + 256m`, where `r` is the length-8 parity-cylinder
-residue.  The bridge `59 mod 64 -> 25 mod 64` is first forced at five extra
-bits beyond the word:
+The pressure-state residue classifier is much stronger for the active class
+than for the smaller post-ladder and low-repeat classes, but it is still not a
+complete theorem object:
 
 ```text
-EEOOEOOO:
-  r = 108
-  n == 6508 mod 8192
-  m == 25 mod 32
-
-EEOEOOOO:
-  r = 164
-  n == 1956 mod 8192
-  m == 7 mod 32
+pure active pressure-state coverage:
+  mod 16:     5,370 / 15,259
+  mod 4096:  11,364 / 15,259
+  mod 65536: 14,914 / 15,259
 ```
 
-Pure checks:
+Thus the active high-ladder sublemma is exactly the finite ladder identity
+plus an event-index law. The remaining proof obligation is to derive, from the
+live upper-lift transition algebra, why every active pressure increase is
+caught inside this ladder before any prefix deficit appears.
+
+## Retimed low-repeat pressure-unit algebra
+
+The remaining retimed pressure regime was isolated by
+[`branch_prefix_retimed_low_repeat_units.py`](branch_prefix_retimed_low_repeat_units.py),
+with combined output:
 
 ```text
-all observed full lifts are bridge classes:         true
-all observed project to forced bridge mod 8192:     true
-bridge first forced at five extra bits for both:    true
-there is exactly one unobserved bridge full lift:   true
+experiments/results/branch_prefix_retimed_low_repeat_units_sweep_d18_d25_20260702.json
 ```
 
-The full modulo-`16384` lift chooses the terminal residue:
+Across the same exact lifts:
 
 ```text
-EEOOEOOO:
-  6508  mod 16384 -> terminal 38, observed 3 times
-  14700 mod 16384 -> terminal 6,  observed 2 times
-
-EEOEOOOO:
-  1956  mod 16384 -> terminal 6,  observed 0 times
-  10148 mod 16384 -> terminal 38, observed 1 time
+retimed-pressure transitions:          13,856
+above-parent pressure units:           16,085
+low-repeat pressure units:                180
 ```
 
-Thus the memory proof target splits into a modulo-`8192` bridge lemma and a
-terminal-bit refinement.  The unobserved `EEOEOOOO` class `1956 mod 16384` is
-a local ghost: a proof must either rule it out from the upper-child frontier
-hypotheses or show it is harmless under the same pressure accounting.
-
-## Tail ghost-class audit
-
-The ghost-class audit
-[`branch_prefix_tail_ghost_class.py`](branch_prefix_tail_ghost_class.py)
-checks the full post-ladder tail population, not just the six memory records.
-
-Result:
+Every checked low-repeat pressure unit has its last credit event at the exact
+low repeat gate:
 
 ```text
-experiments/results/branch_prefix_tail_ghost_class_d25_d26_20260702.json
+x == -5 mod 64
+M(x) = OOE(x) = (9x + 5) / 8
+v2(M(x) + 5) = v2(x + 5) - 3
 ```
 
-Command:
-
-```powershell
-python experiments/branch_prefix_tail_ghost_class.py --parent-depth 25 --max-depth 1024 --top-n 12 --hist-top-n 40 --output experiments/results/branch_prefix_tail_ghost_class_d25_d26_20260702.json --quiet
-```
-
-Exact counts:
+The pressure state is reached by only two shortcut words:
 
 ```text
-post-ladder tail units:       340
-terminal ghost signature:      25
-ghost memory sources:           0
-source lag 0:                 334
-source lag 8:                   6
+OO:                                      58
+OOEOO:                                  122
 ```
 
-Here the terminal ghost signature is:
+Equivalently, with `M(x) = (9x + 5)/8`:
 
 ```text
-align a = 4
-q == 23 mod 64
-terminal == 6 mod 64
+OO(x)     = (9x + 5) / 4     = 2M(x)
+OOEOO(x) = (81x + 85) / 32   = OO(M(x))
 ```
 
-Pure checks:
+The event-index law persists in this class too:
 
 ```text
-all sources found:                         true
-terminal signature occurs:                 true
-ghost memory source absent:                true
-all nonterminal sources have lag 8:        true
-all nonterminal sources are memory words:  true
-all post-ladder tail words are EOO:        true
+event_index 1 -> required_above_parent 1: 164
+event_index 2 -> required_above_parent 2:  15
+event_index 3 -> required_above_parent 3:   1
 ```
 
-Thus the ghost terminal bit is real but terminal-local. Every one of the `25`
-ghost-signature cases has the terminal itself as the max source, so it is
-covered by the terminal-local phase separator. The nonterminal branch remains
-exactly the six lag-8 memory cases:
+The repeat-gate alignment counts are:
 
 ```text
-EEOOEOOO: 5
-EEOEOOOO: 1
+v2(x + 5):
+   6: 125
+   7:  43
+   8:  10
+   9:   1
+  16:   1
 ```
 
-The local theorem target should therefore be a dichotomy, not a ghost
-exclusion: terminal-local tails are handled by positive terminal phase; if the
-tail max is nonterminal, it must be one of the two memory words and the ghost
-full lift `1956 mod 16384` does not occur.
-
-## Tail dichotomy classifier
-
-The dichotomy classifier
-[`branch_prefix_tail_dichotomy_classifier.py`](branch_prefix_tail_dichotomy_classifier.py)
-mines features separating the `334` terminal-local post-ladder tails from the
-six lag-8 memory tails.
-
-Result:
+The pressure-state low-residue classifier remains incomplete:
 
 ```text
-experiments/results/branch_prefix_tail_dichotomy_classifier_d25_d26_20260702.json
+pure low-repeat pressure-state coverage:
+  mod 16..512: 0 / 180
+  mod 1024:    1 / 180
+  mod 4096:    6 / 180
+  mod 65536: 118 / 180
 ```
 
-Command:
+Thus the retimed-pressure proof target now has three dynamic sublemmas:
+active high-ladder pressure, post-ladder `EOO` phase pressure, and low-repeat
+`OO`/`OOEOO` repeat-gate pressure. The low-repeat part cannot be replaced by
+a fixed low-residue table in the checked window; it must be derived from the
+`-5 mod 64` macro law and the live upper-lift transition algebra.
 
-```powershell
-python experiments/branch_prefix_tail_dichotomy_classifier.py --parent-depth 25 --max-depth 1024 --top-n 12 --max-feature-set-size 3 --output experiments/results/branch_prefix_tail_dichotomy_classifier_d25_d26_20260702.json --quiet
-```
+## Retimed three-regime pressure ledger
 
-Population:
+The three component certificates were then combined by
+[`branch_prefix_retimed_three_regime_ledger.py`](branch_prefix_retimed_three_regime_ledger.py),
+with output:
 
 ```text
-terminal-local tails: 334
-memory-lag-8 tails:     6
+experiments/results/branch_prefix_retimed_three_regime_ledger_d18_d25_20260702.json
 ```
 
-Pure checks:
+The ledger does not re-enumerate the frontier; it checks consistency between
+the active high-ladder, post-ladder, low-repeat, and signature sweeps.
+
+The coverage identity is exact in the checked window:
 
 ```text
-all sources found:                                      true
-population is 340:                                      true
-six memory records:                                     true
-memory sources are two known words:                     true
-has pure feature set:                                   true
-has memory-pure feature set:                            true
-no terminal/event feature set of searched size is pure: true
-no terminal/event feature set is memory-pure:           true
+above-parent pressure units:           16,085
+active high-ladder:                    15,259
+post-ladder EOO:                          646
+low-repeat OO/OOEOO:                      180
+regime sum:                            16,085
 ```
 
-Negative result: terminal/event-side features up to triples do not separate the
-dichotomy, and even the hand-picked six-feature bucket
+The common layer law is:
 
 ```text
-terminal_step, event_step, align, q_mod64, terminal_mod64, terminal_current_gap
+event_index 1 -> required_above_parent 1: 13,856
+event_index 2 -> required_above_parent 2:  1,913
+event_index 3 -> required_above_parent 3:    263
+event_index 4 -> required_above_parent 4:     46
+event_index 5 -> required_above_parent 5:      7
 ```
 
-has three mixed memory buckets:
+There are no non-diagonal event-index/required-level pairs. Layer `1` has
+exactly `13,856` units, equal to the number of retimed transitions, and this
+holds at every checked depth.
+
+The regime-by-layer matrix is:
 
 ```text
-35|38|3|37|38|0.081541375001010298483449 : memory 3, terminal-local 8
-35|38|3|5 |6 |0.081541375001010298483449 : memory 2, terminal-local 3
-35|38|4|55|38|0.081541375001010298483449 : memory 1, terminal-local 6
+                    L1      L2     L3    L4   L5
+active ladder    13120    1835    252    45    7
+post-ladder        572      63     10     1    0
+low-repeat         164      15      1     0    0
+total            13856    1913    263    46    7
 ```
 
-Positive finite separator: child low bits plus timing do separate. For example,
+Thus the finite retimed-pressure theorem target can be stated as a layered
+local induction:
 
 ```text
-child mod 4096, event_step
+Every retimed above-parent pressure unit lies in exactly one dynamic regime.
+Its event index equals its required-credit level above the parent. Layer 1
+appears exactly once per retimed transition.
 ```
 
-is pure, with memory buckets:
+The remaining proof obligation is to derive the layer law and the three
+formula families from the live upper-lift frontier algebra. This is sharper
+than the earlier timing statement because it names the induction variable:
+the pressure layer above the parent.
+
+## Retimed layer-margin ledger
+
+The layer law was then re-enumerated directly by
+[`branch_prefix_retimed_layer_margin.py`](branch_prefix_retimed_layer_margin.py),
+with output:
 
 ```text
-1471|38 : memory 1
-1895|38 : memory 2
-2495|38 : memory 1
-3791|38 : memory 1
- 751|38 : memory 1
+experiments/results/branch_prefix_retimed_layer_margin_sweep_d18_d25_20260702.json
 ```
 
-Equivalent pure separators use `child mod 4096` with `terminal_step`,
-`terminal_current_gap`, or `terminal_current_form`.  But `child mod 4096` alone
-is not enough; the same residues have terminal-local cases too. Direct checks
-crossing the smaller child moduli `64, 128, 256, 512, 1024, 2048` with those
-same four timing features all remain mixed; `2048` still covers only three of
-the six memory records in pure buckets and leaves two mixed buckets. In this
-finite search, `4096` is the first tested child modulus where timing gives a
-pure separator.
-
-Thus the lag-8 memory tail is not a terminal-phase-only phenomenon. It is a
-child-residue-plus-timing phenomenon, matching the lift-lemma interpretation.
-
-## Tail child-lift stratifier
-
-The follow-on stratifier
-`experiments/branch_prefix_tail_child_lift_stratifier.py` explains exactly why
-`2048` is insufficient and why the next child bit works in the finite
-`25 -> 26` lift. It recomputes the same `340` post-ladder tail cases and
-compares `child mod 2048 + event_step` to `child mod 4096 + event_step`.
-
-At `child mod 2048 + event_step`, the memory-bearing lower buckets are:
+The script records `surplus = credit - required` for every above-parent
+pressure unit. Across the same exact lifts:
 
 ```text
-1471|38 : memory 1
- 447|38 : memory 1
- 751|38 : memory 1
-1743|38 : memory 1, terminal-local 2
-1895|38 : memory 2, terminal-local 1
+retimed-pressure transitions:          13,856
+above-parent pressure units:           16,085
+first-layer units:                     13,856
 ```
 
-The only mixed lower buckets are therefore `1743|38` and `1895|38`. Passing to
-modulo `4096` splits them purely:
+All direct margin checks pass:
 
 ```text
-lower 1743|38:
-  child mod 4096 = 1743, lift bit 0 : terminal-local 2
-  child mod 4096 = 3791, lift bit 1 : memory 1
-
-lower 1895|38:
-  child mod 4096 = 1895, lift bit 0 : memory 2
-  child mod 4096 = 3943, lift bit 1 : terminal-local 1
+all pressure units have positive surplus: true
+all pressure units have prior credit:     true
+all event indexes equal required level:   true
+all retimed transitions have layer one:   true
 ```
 
-Thus the `4096` separator is not a black-box mined classifier. In this finite
-lift it is equivalent to a two-bucket lift-bit rule, plus the three already-pure
-lower buckets. The next proof obligation is to derive that lift-bit assignment
-from the upper-child frontier hypotheses.
-
-## Tail lift-bit witness
-
-The witness extractor `experiments/branch_prefix_tail_lift_bit_witness.py`
-distills the child-lift stratifier to a single mixed lower-phase bucket. The
-following two records have identical lower residue and visible terminal phase:
+The minimum surplus by layer is:
 
 ```text
-child mod 2048:          1743
-terminal_step:             35
-event_step:                38
-align:                      3
-q mod 64:                   5
-terminal mod 64:            6
-terminal_current_gap:       0.081541375001010298483449
+layer 1:  1
+layer 2:  4
+layer 3:  6
+layer 4:  7
+layer 5: 11
 ```
 
-but opposite labels:
+By regime:
 
 ```text
-memory_lag_8:
-  child mod 4096 = 3791, lift bit 1, source word EEOOEOOO
-
-terminal_local:
-  child mod 4096 = 1743, lift bit 0
+active high-ladder: 1
+post-ladder EOO:   1
+low-repeat:        3
 ```
 
-So the lower residue plus terminal phase cannot prove the branch. The next
-child lift bit is necessary in the finite obstruction, and any global proof
-route through this local tail must account for that bit rather than hiding it in
-enumeration.
+The low end of the surplus histogram is:
+
+```text
+surplus 1:     5
+surplus 2:    38
+surplus 3:   209
+surplus 4:   647
+surplus 5: 1,313
+surplus 6: 2,272
+surplus 7: 2,537
+surplus 8: 2,586
+```
+
+Thus the first layer is the tight induction layer. Higher pressure layers
+carry observed positive reserve, with layer `2` already bounded below by
+surplus `4` in the checked data.
+
+The proof target can now be stated as:
+
+```text
+For every live upper-lift retimed transition, the m-th above-parent pressure
+unit is preceded by a visible dynamic event in one of the three regimes, and
+the credit surplus after that event remains positive.
+```
+
+This is still finite evidence. Its value is that it identifies where a proof
+has to be sharp: the five observed surplus-`1` events in layer `1`.
+
+## Retimed tight layer-one base cases
+
+The five surplus-`1` events were then re-extracted by
+[`branch_prefix_retimed_tight_layer_one.py`](branch_prefix_retimed_tight_layer_one.py),
+with output:
+
+```text
+experiments/results/branch_prefix_retimed_tight_layer_one_d18_d25_20260702.json
+```
+
+The extractor re-enumerates exact lifts `18 -> 19` through `25 -> 26` and
+filters above-parent pressure units by `surplus = credit - required = 1` and
+`required_above_parent = 1`. It found exactly the same five cases:
+
+```text
+selected_count:                                      5
+all selected are upper child:                        true
+all selected have parent_required = 1:               true
+all selected have required_delta = 1:                true
+all selected have credit_delta = 0:                  true
+all selected have required = 2 and credit = 3:       true
+all selected have last high-ladder credit:           true
+all selected have last_credit_align = 3:             true
+all selected have step offset from parent depth = 1: true
+```
+
+The five cases are:
+
+```text
+d   parent   child    regime                   q        pressure
+18  1115     263259   high_inside_active       88951    2401676
+18  65607    327751   high_after_ladder_EOO    98437    2990024
+18  246363   508507   high_after_ladder_EOO    152725   4639022
+21  1427291  3524443  high_inside_active       1339699  36171872
+21  1637543  3734695  high_inside_active       1419619  38329712
+```
+
+Let the last high-ladder credit entry be `x = 2^3 q - 1`, and let
+`y = 3^3 q - 1 = 27q - 1`. The three active cases have pressure state exactly
+`y`. The two post-ladder cases have `q == 5 mod 16`, hence `y == 6 mod 16`,
+and pressure state
+
+```text
+EOO(y) = (9y + 10) / 8.
+```
+
+Thus the tight layer-one finite base case is entirely an align-3 high-ladder
+phenomenon in the checked window. The theorem target is:
+
+```text
+If a live upper-lift retimed transition reaches its first above-parent
+pressure unit with only surplus 1, derive an align-3 high-ladder entry
+x = 8q - 1 from the lift algebra, then show the pressure state is either
+27q - 1 or the EOO post-terminal state (9(27q - 1) + 10) / 8.
+```
+
+This remains finite evidence, but it converts the tight induction base case
+from five scattered examples into a small algebraic object.
+
+## Retimed tight lift algebra
+
+The tight records were then checked against the parent/upper-child lift law by
+[`branch_prefix_retimed_tight_lift_algebra.py`](branch_prefix_retimed_tight_lift_algebra.py),
+with output:
+
+```text
+experiments/results/branch_prefix_retimed_tight_lift_algebra_d18_d25_20260702.json
+```
+
+For an upper lift `child = parent + 2^d`, the shared-prefix identity is:
+
+```text
+T^j(child) - T^j(parent) = 3^o_j 2^(d-j),     0 <= j <= d.
+```
+
+Here `o_j` is the odd-step count in the shared prefix. The checker verifies:
+
+```text
+record_count:                               5
+all affine lift laws hold to depth:         true
+all parities are shared before depth d:     true
+all boundary pairs are parent even -> child odd: true
+all pressure events occur at step d + 1:    true
+all pressure last steps are odd:            true
+all child excess gaps at pressure are 1:    true
+```
+
+The boundary deltas are:
+
+```text
+d = 18: T^18(child) - T^18(parent) = 3^13
+d = 21: T^21(child) - T^21(parent) = 3^15
+```
+
+At pressure step `d+1`, the child has exactly one more odd step than the
+parent:
+
+```text
+d = 18: parent excess 1.012334682, child excess 2.012334682
+d = 21: parent excess 1.119545421, child excess 2.119545421
+```
+
+The local words are only:
+
+```text
+OOO:    3
+OOOEOO: 2
+```
+
+The active `OOO` cases enter the align-3 ladder at `d-2` and take pressure at
+the terminal `27q - 1` at `d+1`. The post `OOOEOO` cases enter at `d-5`,
+terminate at `d-2`, then take pressure through the `EOO` tail at `d+1`.
+
+Thus the tight base-case proof target has sharpened again:
+
+```text
+Prove from live upper-lift algebra that surplus-1 first pressure requires
+the affine shared prefix, the depth-d E->O boundary flip, and an align-3
+local word in {OOO, OOOEOO}.
+```
+
+This is still finite evidence; the value is that the base case has become an
+explicit lift-boundary lemma candidate.
+
+## Retimed boundary classifier
+
+The boundary type was then widened from the five tight cases to every first
+above-parent retimed threshold by
+[`branch_prefix_retimed_boundary_classifier.py`](branch_prefix_retimed_boundary_classifier.py),
+with output:
+
+```text
+experiments/results/branch_prefix_retimed_boundary_classifier_d18_d25_20260702.json
+```
+
+Across exact lifts `18 -> 19` through `25 -> 26`:
+
+```text
+retimed transitions:      13,856
+first thresholds present: 13,856
+```
+
+All structural guardrails passed:
+
+```text
+all affine lift laws hold to depth:        true
+all parities are shared before depth d:    true
+all boundary pairs are opposite:           true
+all surplus-1 cases are E->O:              true
+all surplus-1 cases have offset 1:         true
+all surplus-1 cases have align 3:          true
+all surplus-1 cases have known local word: true
+```
+
+Both boundary types occur:
+
+```text
+E->O: 11,447
+O->E:  2,409
+```
+
+The sharp lower edge is one-sided:
+
+```text
+E->O minimum offset:   1
+E->O minimum surplus:  1
+O->E minimum offset:   5
+O->E minimum surplus:  2
+```
+
+Thus a proof cannot claim that the entire retimed hard class is `E->O`. The
+finite theorem target is more precise:
+
+```text
+surplus 1 first threshold
+  => E->O boundary
+  => offset 1
+  => align-3 high-ladder credit
+  => local word OOO or OOOEOO.
+```
+
+This is an observed implication, not yet a theorem. The value is that it rules
+out two broad false targets: all retimed transitions are not `E->O`, and all
+`E->O` transitions are not tight.
+
+## Retimed tight grammar selector
+
+The tight local grammar was then tested directly by
+[`branch_prefix_retimed_tight_grammar.py`](branch_prefix_retimed_tight_grammar.py),
+with output:
+
+```text
+experiments/results/branch_prefix_retimed_tight_grammar_d18_d25_20260702.json
+```
+
+Across the same exact lifts:
+
+```text
+retimed transitions:      13,856
+first thresholds present: 13,856
+surplus-1 thresholds:          5
+```
+
+All surplus-`1` thresholds satisfy the local grammar:
+
+```text
+upper child
+E->O boundary
+pressure at d+1
+last credit is high_ladder
+align = 3
+word in {OOO, OOOEOO}
+entry offset in {-2, -5}
+child entry == 7 mod 16
+terminal formula matches the align-3 ladder entry
+```
+
+But the local grammar is not a characterization:
+
+```text
+local grammar selected: 511
+surplus histogram: 1:5, 2:25, 3:89, 4:119, 5:98, 6:112, 7:32, 8:27, 9:3, 10:1
+```
+
+Even adding `parent_required = 1` remains too weak:
+
+```text
+base-required local grammar selected: 126
+surplus histogram: 1:5, 2:21, 3:58, 4:34, 5:7, 6:1
+```
+
+The exact finite selector in the checked window is local grammar plus minimal
+credit:
+
+```text
+credit-3 local grammar selected: 5
+surplus histogram: 1:5
+```
+
+The checker records:
+
+```text
+tight local grammar selects all surplus-1:    true
+tight local grammar has no non-surplus-1:     false
+credit-3 local grammar selects all surplus-1: true
+credit-3 local grammar has no non-surplus-1:  true
+```
+
+So the refined base-case target is not merely a local-word lemma. It is a
+minimal-credit lemma:
+
+```text
+Prove why all align-3 OOO/OOOEOO near-misses have credit at least 4, and why
+credit 3 can occur only in the five observed upper-lift boundary cases.
+```
+
+This is still finite evidence, not a Collatz proof, but it removes a false
+shortcut and gives a sharper local obstruction.
+
+## Retimed tight credit floor
+
+The minimal-credit edge was then separated from the local word shape by
+[`branch_prefix_retimed_tight_credit_floor.py`](branch_prefix_retimed_tight_credit_floor.py),
+with output:
+
+```text
+experiments/results/branch_prefix_retimed_tight_credit_floor_d18_d25_20260702.json
+```
+
+For any first above-parent threshold:
+
+```text
+pressure_surplus
+  = (credit_before_last - parent_required)
+    + (last_credit_amount - required_above_parent).
+```
+
+In all `511` checked align-3 local-grammar records:
+
+```text
+last_credit_amount = 1
+required_above_parent = 1
+```
+
+So the final local credit exactly cancels the new required layer:
+
+```text
+pressure_surplus = inherited reserve before the align-3 entry.
+```
+
+The full exact run found:
+
+```text
+local grammar records:       511
+minimal inherited reserve:     5
+credit-3 records:              5
+```
+
+All checks passed:
+
+```text
+all local surplus identities hold:              true
+all local credit amounts match new layer:        true
+minimal inherited reserve is surplus one:        true
+credit three implies minimal inherited reserve:  true
+minimal reserve count equals credit-three count: true
+```
+
+Thus the near-misses are explained cleanly:
+
+```text
+same align-3 local grammar
+  + inherited reserve >= 2
+  => non-tight near-miss.
+```
+
+The refined base-case proof target is pre-entry:
+
+```text
+Prove inherited reserve >= 1 for every live upper-lift align-3 local-grammar
+record, then classify the equality case inherited reserve = 1.
+```
+
+This is narrower than proving from the `OOO`/`OOOEOO` word alone, since the
+word alone admits `506` checked near-misses.
+
+## Retimed tight reserve source
+
+The inherited-reserve statement was then traced one event farther back by
+[`branch_prefix_retimed_tight_reserve_source.py`](branch_prefix_retimed_tight_reserve_source.py),
+with output:
+
+```text
+experiments/results/branch_prefix_retimed_tight_reserve_source_d18_d25_20260702.json
+```
+
+Across the same exact lifts:
+
+```text
+retimed transitions:      13,856
+first thresholds present: 13,856
+local grammar records:       511
+```
+
+All direct trace checks passed:
+
+```text
+all first thresholds present:                true
+all trace first events match records:         true
+all inherited-reserve identities hold:        true
+all local records have prior credit:          true
+all reserve-vs-current-required nonnegative:  true
+```
+
+The new invariant in the checked window is:
+
+```text
+parent_required - entry_required_before_final_credit = 0
+for all 511 align-3 local-grammar records.
+```
+
+Therefore the inherited reserve is also the live reserve against the current
+required layer:
+
+```text
+credit_before_last - parent_required
+  = credit_before_last - entry_required_before_final_credit.
+```
+
+Every checked local-grammar record has prior structural credit before the
+final align-3 entry.  The immediately previous credit event already leaves the
+same reserve that appears at entry:
+
+```text
+previous reserve after prior credit:
+  1:   5
+  2:  25
+  3:  89
+  4: 119
+  5:  98
+  6: 112
+  7:  32
+  8:  27
+  9:   3
+  10:  1
+```
+
+The prior source split is:
+
+```text
+previous high-ladder credit: 461
+previous low-repeat credit:   50
+```
+
+The five equality cases are exactly reserve-`1` records.  All five have two
+prior credit events, entry requirement `1`, previous credit amount `1`, and
+previous reserve after prior credit `1`.  Four are preceded by align-3
+high-ladder credit; one is preceded by low-repeat align-8 credit.
+
+This moves the base-case target one step earlier:
+
+```text
+For every live upper-lift retimed first threshold satisfying the align-3
+OOO/OOOEOO local grammar, prove that prior structural credit leaves reserve
+at least 1 before the final align-3 entry; then classify equality reserve=1
+by the immediately previous reserve source.
+```
+
+This is still finite evidence, not a proof of the conjecture.  Its value is
+that it removes the final local word as the source of tightness: the local word
+spends one credit on one new demand, while the equality question is inherited
+from earlier reserve.
