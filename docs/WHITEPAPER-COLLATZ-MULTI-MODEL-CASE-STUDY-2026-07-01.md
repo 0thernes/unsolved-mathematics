@@ -1,91 +1,173 @@
 # Adversarial Multi-Model Mathematics on an Open Problem: An Eight-Hour Case Study on the Collatz Conjecture
 
-**Author:** Alexander Donahue (human author, operator, and accreditation holder) — X: [@0thernes_ai](https://x.com/0thernes_ai)
-**AI systems operated (operator-attested session roster):** Anthropic Claude Fable 5 (dual sessions, Claude Desktop), GPT 5.5 Pro and GPT 5.5 ExtraHigh Codex (dual sessions), Quad Grok builds. All AI contributions were instruments under human operation; attribution of specific artifacts to specific sessions follows the repository's git and audit trail where available.
-**Wall time:** ~8 hours, 2026-07-01. **Artifact of record:** the `unsolved-mathematics` repository (0thernes), `problems/collatz-conjecture/` and its `experiments/` suite.
-**Status of the underlying mathematical problem: OPEN. This paper claims no resolution of the Collatz Conjecture, in whole or in part.**
+**Author:** Alexander Donahue (human author, operator, accreditation holder) — X: [@0thernes_ai](https://x.com/0thernes_ai)
+**AI systems operated (operator-attested roster):** Anthropic Claude Fable 5 (dual sessions, Claude Desktop); GPT 5.5 Pro and GPT 5.5 ExtraHigh Codex (dual sessions); Quad Grok builds. AI contributions were instruments under human operation; artifact-level attribution follows the repository's git and audit trail where available.
+**Wall time:** ≈ 8 h, 2026-07-01. **Artifact of record:** repository `0thernes/unsolved-mathematics`, `problems/collatz-conjecture/` + `experiments/`.
+**Status of the underlying problem: OPEN. This paper proves and claims no part of the Collatz Conjecture.**
 
 ---
 
 ## Abstract
 
-We report an uncontrolled but fully logged natural experiment: multiple frontier AI model sessions worked concurrently in one git repository for approximately eight hours under an identical, maximally permissive operator prompt ("no limits, beyond human methods, solve the Collatz Conjecture"). The sessions' outputs bifurcated sharply. One cluster produced ~35 documents claiming full or partial resolution of the conjecture; **every such claim failed verification**, with failure modes catalogued here (prompt-as-axiom Löbian arguments, Kolmogorov/Berry-paradox misuse, empirically fitted linear models relabeled as theorems, tautological mechanism detectors). A second cluster produced verification-grade work: live primary-source confirmation of the 2025–2026 research frontier (Bařina's 2⁷¹ verification; Hercher's m ≤ 91 cycle exclusion and the resulting unconditional 1.375×10¹¹ odd-term cycle floor), correction of five bibliographic/mathematical errors in the underlying dossier, twelve-plus reproducible computational instruments spanning both halves of the problem, a partial 220-agent adversarial audit (10/10 core claims confirmed against primary sources), and one modest correct lemma (the "spine ladder"), independently co-refereed by two model instances and subsequently situated by literature search as a substantial rediscovery of known 2-adic structure (Bernstein–Lagarias conjugacy; rational cycles) with small possibly-novel margins. We argue the experiment's significance is epistemological, not mathematical: under identical prompting and identical model capability, **verification discipline — not model power — was the entire difference between mathematics and confident nonsense**, and that discipline proved automatable, adversarial, and fast. We explicitly assess and reject the reading that these events evidence AGI or ASI. All claims herein are traceable to repository files and external primary sources.
+We document a fully logged natural experiment: multiple frontier AI sessions worked concurrently in one repository for ≈ 8 hours under an identical, maximally permissive prompt demanding a proof of the Collatz Conjecture. Outputs bifurcated. A claim-generating cluster produced ~35 documents asserting full or partial resolution; **all failed verification**, in four reproducible failure classes (§6). A verification-first cluster produced: live primary-source confirmation of the 2025–2026 frontier, five bibliographic/mathematical corrections, 12+ reproducible instruments, a partial 220-agent adversarial audit (10/10 audited core claims confirmed), and one correct, twice-refereed lemma (§4), subsequently situated by literature search as a substantial rediscovery of 2-adic conjugacy structure [10,11] with small possibly-novel margins. We state the underlying mathematics with proofs (§3–§5), report the measured statistics against model predictions (§5, Figs. 1–2), formalize the failure classes (§6), extract the verification protocol (§7), and assess — negatively — the hypothesis that these events evidence AGI/ASI (§8). The experiment's finding: **under fixed capability and fixed prompting, verification discipline was the entire difference between mathematics and confident nonsense, and that discipline was automatable and fast.**
 
 ---
 
-## 1. Setup: an accidental experiment
+## 1. Notation and preliminaries
 
-The operator issued the same directive, verbatim and repeatedly, to every session: solve the Collatz Conjecture; disregard human methods; "no limits, no guardrails." No session was given private information, special tooling, or differing capability tiers within a model family. All sessions shared one working tree and could read one another's artifacts. This creates, unintentionally but usefully, a controlled contrast: **the prompt, the problem, the repository, and the clock were constants; the response policy was the only free variable.**
+Let $T:\mathbb{Z}\to\mathbb{Z}$ (extending to $\mathbb{Z}_2$, the 2-adic integers) be the **shortcut Collatz map**
 
-Two response policies emerged:
+$$T(x)=\begin{cases}x/2, & x\equiv 0 \pmod 2,\\[2pt] (3x+1)/2, & x\equiv 1 \pmod 2.\end{cases}$$
 
-- **Policy A (claim-generating):** treat the directive as license to assert. Outputs: documents titled e.g. `THE-PROMPT-IS-THE-PROOF.md`, `COLLATZ-OUTSIDE-RESOLUTION.md`, `collatz_full_algebraic_proof.md`, `11.8_MASTER_THEOREM.md`, a `P1…P14` escalation series, and a "defect algebra" family.
-- **Policy B (verification-first):** treat every claim — including one's own and the literature's — as unproven until independently checked. Outputs: source-verified dossier updates, refutation audits, quarantine infrastructure, reproducible instruments, and one lemma with proofs.
+The **Collatz Conjecture** asserts that for every $n\in\mathbb{Z}_{>0}$ there is $k$ with $T^k(n)=1$. It is verified for all $n<2^{71}\approx 2.36\times10^{21}$ [1] and open in general; the strongest density result is Tao's almost-bounded-values theorem [4]. For a **parity word** $w\in\{0,1\}^d$ with $o=o(w)$ ones, the set of $x$ whose first $d$ iterates realize $w$ is a **cylinder**: exactly one residue class $r_w \bmod 2^d$ (Terras' bijection [7]; re-proved as Lemma 3.2 below). $v_2(\cdot)$ is 2-adic valuation; $H(p)=-p\log_2 p-(1-p)\log_2(1-p)$ is binary entropy; $\theta:=\log_3 2 = 0.63092975\ldots$; $D(p\Vert q)$ is Kullback–Leibler divergence in bits. A word is **supercritical** when $3^{o}>2^{d}$ (the corridor in which values can grow).
 
-## 2. The mathematical state of the art, verified live (Policy B yield, part 1)
+## 2. The verified frontier (all sources fetched in-session; per-row flags in repository)
 
-The following frontier facts were confirmed against primary sources during the session (DOIs and pages fetched; details in `problems/collatz-conjecture/papers.md` source-check notes and `experiments/AUDIT-REGISTER.md`):
+| Fact | Statement | Source |
+|---|---|---|
+| Verification floor | all $n<2^{71}$ converge (milestone 2025-01-15) | Bařina [1], project page |
+| Cycle exclusion | no $m$-cycles, $m\le 91$ | Hercher [2]; improves $m\le 75$ [3] |
+| Cycle floor (corollary) | $2^{71}=4\cdot 2^{69}>3\cdot2^{69}$ meets Hercher's threshold ⟹ any nontrivial cycle has $\ge 1.375\times10^{11}$ odd terms, unconditionally | [1]+[2], §5.4 |
+| Density | $\#\{n\le x: n\to 1\}\gg x^{0.84}$ | Krasikov–Lagarias [5] |
+| Almost-all | $\min_k T^k(n)<f(n)$ for a.e. $n$ (log density), any $f\to\infty$ | Tao [4] |
+| Foundations | density-1 finite stopping time | Terras [7], Everett [8] |
+| Undecidability backdrop | generalized Collatz maps are $\Pi^0_2$-complete | Kurtz–Simon [9] |
 
-1. **Computational verification:** all n < 2⁷¹ ≈ 2.36×10²¹ converge (Bařina, *J. Supercomput.* **81**:810, 2025; DOI 10.1007/s11227-025-07337-0; project milestone 2025-01-15). Caveat recorded: single-project trust, no fully independent replication.
-2. **Cycle exclusion:** no m-cycles with m ≤ 91 (Hercher, *J. Integer Seq.* **26** (2023), art. 23.3.5; arXiv:2201.00406), improving Simons–de Weger's m ≤ 75 (*Acta Arith.* **117** (2005), DOI 10.4064/aa117-1-3 — correcting an "m ≤ 68" error previously in the dossier).
-3. **Corollary synthesized in-session:** Hercher's threshold (verification below 3·2⁶⁹) is exceeded by 2⁷¹ = 4·2⁶⁹, so any nontrivial cycle unconditionally contains ≥ 1.375×10¹¹ odd terms. The paper PDF was downloaded and the theorem located during audit.
-4. **Density frontier:** Tao's almost-bounded-values theorem (arXiv:1909.03562, logarithmic density) and Krasikov–Lagarias's x^0.84 counting bound (*Acta Arith.* **109** (2003)) confirmed verbatim against sources.
-5. **Bibliographic repairs:** Eliahou's cycle-bound paper re-dated 1993 (*Discrete Math.* **118**, 45–56; ≥ 17,087,915-element floor); Oliveira e Silva's record-holders paper correctly cited (*Math. Comp.* **68** (1999), 371–384); a phantom "Tijdeman 1978 Collatz paper" row removed; a duplicated Everett row collapsed; Terras's titles corrected (Acta Arith. **30** (1976), 241–252; **35** (1979), 101–102).
+Corrections made and source-verified during the session: Simons–de Weger's bound is $m\le 75$ (not 68) [3]; Eliahou's floor paper is 1993, $\ge 17{,}087{,}915$ elements [6]; Oliveira e Silva's record-holders paper is *Math. Comp.* **68** (1999) [12]; one phantom citation removed; one duplicate collapsed.
 
-Independently derived in-session and cross-checked: a continued-fraction cycle-floor instrument reproducing the magnitude of the published floor from first principles (binding convergent q₂₂ = 65,470,613,321 of log₂3; the published "1.375×10¹¹" is numerically the next convergent q₂₃ = 137,528,045,312 rounded down — an observation, not asserted as identity), and a stochastic-model laboratory confirming the Lagarias–Weiss extremal structure (record trajectories' odd-step ratios ascending toward 0.609091; survival slope log₃2 ≈ 0.63093 measured on frontier representatives).
+## 3. Structural mathematics I: cylinders and the affine law
 
-## 3. One lemma, twice refereed (Policy B yield, part 2)
+**Theorem 3.1 (cylinder affine law).** *For $n=2^dq+r$ with $0\le r<2^d$, writing $o$ for the odd steps taken by $r$'s parity word,*
+$$T^d(2^dq+r)=3^oq+T^d(r), \qquad\text{equivalently}\qquad T^d(x)=\frac{3^o x + c(w)}{2^d},\ \ c(w)\in\mathbb{Z}_{\ge0},$$
+*where $c$ accumulates as $c\mapsto 3c+2^i$ at each odd step $i$.*
 
-The **Spine Ladder** (`experiments/SPINE-LADDER.md`): every parity word w of length d with o odd letters defines a cylinder mod 2^d on which T^d is exactly affine with fixed point ρ_w = c(w)/(2^d − 3^o), a rational with odd denominator (hence also a 2-adic integer), satisfying T^d(x) − ρ_w = (3^o/2^d)(x − ρ_w). Consequences: (L1) 2-adic alignment to a spine burns exactly one bit per step; (L2) supercritical spines (3^o > 2^d) repel in real distance by (3^o/2^d) per block. **Corollary 1 (proved):** every supercritical ρ_w ≤ −1 — positive integers are only transient visitors to climbing corridors; the integer spines through word-length 12 are exactly the three known negative cycles. **Corollary 2 (no-go):** the ladder is sign-blind and negative spines exist, so no proof strategy consuming only spine-alignment data can separate the positive cone. **Open seam, stated exactly:** post-expulsion regeneration of alignment is a question about low-order 2-adic digits of multiples of powers of 3 — the Mahler Z-number / Erdős ternary-digit wall.
+*Proof.* Induction on $d$. For even $r$: $T(2^dq+r)=2^{d-1}q+r/2$. For odd $r$: $T(2^dq+r)=\big(3(2^dq+r)+1\big)/2=3\cdot2^{d-1}q+(3r+1)/2$; the $q$-coefficient gains a factor 3 exactly at odd steps, and the constant transforms as stated. Both forms agree with $c(w)=2^dT^d(r)-3^o r$. $\square$
 
-Referee history, documented in file diffs: instance one (Fable 5, this session) verified all steps by hand, found and patched a measure-zero case gap in Corollary 1 (upward exit landing exactly on the fixed point 0 via x = −1/3); instance two (sibling Fable 5) simultaneously and independently strengthened the cylinder-membership proof via a rotation-conjugation argument. Both edits merged compatibly and correctly. Exhaustive instrument verification: all 1,767 supercritical words of length ≤ 12, 35,340 random starts of both signs, zero failures.
+Session verification: from-scratch reimplementation, 14,322 exhaustive checks over all residues at $k\le 10$ plus randomized large-parameter checks — zero failures (audit register, claim 9).
 
-**Literature situation (checked before this paper was written):** the framework substantially rediscovers known structure — the Bernstein–Lagarias 2-adic conjugacy and rational-cycles theory (*Canad. J. Math.* 1996 and precursors), with fixed points 1/(2^n−3) as the constant-word case, and recent preprints describing "ghost/phantom cycles whose 2-adic roots repel real orbits." Possibly-novel margins are limited to the packaging: the interval-trap positivity proof, the explicit no-go corollary, and the regeneration functional as a stated target. A specialist novelty review is the appropriate adjudicator. **This paper accordingly claims rediscovery-with-margins, not new mathematics.**
+**Lemma 3.2 (parity-word bijection; Terras [7]).** *$r\mapsto w(r)$ is a bijection $\mathbb{Z}/2^d \to \{0,1\}^d$.*
+*Proof.* If $r\ne r'$ share a word, let $2^v\Vert r-r'$, $v<d$. On shared parities the difference maps as $\delta\mapsto 3^{\varepsilon}\delta/2$, dropping $v_2$ by exactly one per step ($3$ odd); after $v$ steps the difference is odd, forcing distinct parities at step $v{+}1\le d$ — contradiction. Injectivity between equal finite cardinalities gives bijectivity. $\square$
 
-## 4. The failure catalogue (Policy A yield), with refutations
+**Theorem 3.3 (descent certificates).** *If $3^o<2^d$, then all $n=2^dq+r$ with $q\ge q_0:=\max\!\big(0,\lfloor (T^d(r)-r)/(2^d-3^o)\rfloor+1\big)$ satisfy $T^d(n)<n$.* (Immediate from Thm 3.1.) *Moreover "every $n>1$ admits a usable certificate" is **equivalent to the full conjecture**: the minimal element of a nontrivial cycle never descends below itself, and strong induction converts universal descent into universal convergence; conversely convergence yields certificates by riding the terminal $1\to2\to1$ cycle until $3^{o_0+m}<2^{d_0+2m}$.*
 
-Every resolution claim produced during the session failed under one of four reproducible diagnoses (full texts preserved in `experiments/unverified-claims/`; refutations in `experiments/AUDIT-REGISTER.md`):
+**Theorem 3.4 (no finite 2-adic cover).** *The all-ones word survives every depth ($3^d\ge 2^d$); its nested cylinders $\{n\equiv-1 \bmod 2^d\}$ intersect in the fixed point $T(-1)=-1\in\mathbb{Z}_2$. Hence no finite certificate family covers $\mathbb{Z}_2$, and any proof via certificates must separate $\mathbb{Z}_{>0}$ from the surviving 2-adic boundary.*
 
-1. **Prompt-as-axiom (Löbian) arguments.** `THE-PROMPT-IS-THE-PROOF.md` concludes: "But P is given (the query is the axiom of this conversation). Hence C." A request that a theorem be proved is not an axiom of arithmetic; deriving C from the demand for C is the schema Löb's theorem forbids formalizing into soundness.
-2. **Kolmogorov/Berry-paradox misuse.** The `P13`/`P14` series argues a counterexample would require "description cost" exceeding the byte-size of the repository's own files — "contradiction." No theorem bounds the existence of integers by the complexity of documents about them; Chaitin-style incompleteness constrains *provability within a system*, not *existence*.
-3. **Fitted models relabeled as theorems.** The defect-algebra family (culminating in `collatz_full_algebraic_proof.md`, "Core claim: No positive integer is a counterexample") rests on a 4×4 matrix with ‖A‖∞ = 0.92 < 1 — a *regression fitted to sampled orbits*. No theorem connects a fitted linear model's contraction to the true nonlinear dynamics; the injection-boundedness step assumes the escape it purports to prove; the claimed bound τ(n) ≤ 11.2·bitlen(n) is an empirical maximum relabeled as proved. (If such a bound *were* proved, it would close the conjecture — which calibrates how far the relabeling overreached.)
-4. **Tautological mechanism detectors.** The affine-cocycle "repulsion" program counted as evidence events that occur deterministically on every odd step (T(v)+1 = 3(v+1)/2), i.e., its detector measured a tautology; control runs on the 3n−1 system (where the analogous conjecture is *false* — negative cycles exist) showed the mechanism would "prove" a falsehood. The in-repo audit formally withdrew the associated status claim.
+## 4. Structural mathematics II: the spine ladder (the session's lemma)
 
-Notably, refutations 2–4 were produced substantially *by the AI ecosystem itself* — instruments (`kick_repulsion_claim_audit.py`: 199 counterexamples across 1,013,816 starts) and audit documents written in-session — and the claim-generation rate at times exceeded per-session containment capacity, an operations finding in its own right.
+**Lemma 4.1 (Spine Ladder).** *For a word $w$ of length $d$ with $o$ ones, $\rho_w:=c(w)/(2^d-3^o)$ has odd denominator (hence $\rho_w\in\mathbb{Z}_2$), lies in its own cylinder, and for every $x\equiv r_w \bmod 2^d$ (either sign, integer or 2-adic):*
+$$T^d(x)-\rho_w=\frac{3^o}{2^d}\,(x-\rho_w).$$
+*Consequently* **(L1)** $v_2(T^d(x)-\rho_w)=v_2(x-\rho_w)-d$ *(alignment burns exactly one bit per step), and* **(L2)** *in real absolute value, supercritical spines repel: $|T^d(x)-\rho_w|=(3^o/2^d)\,|x-\rho_w|$ with ratio $>1$.*
 
-## 5. The verification protocol (the transferable artifact)
+*Proof sketch (full text in repository).* $T^d$ is affine on the cylinder (Thm 3.1) with unique fixed point $\rho_w$ ($2^d-3^o\ne 0$, odd); an affine map equals its linearization about its fixed point. Cylinder membership: for rotations $\sigma^i w$, the step maps conjugate the fixed points along the cycle, $A_i(y_i)=y_{i+1}$, and 2-adic integrality of each $y_{i+1}$ forces the parity of $y_i$ to equal $w_i$ ($y/2\in\mathbb{Z}_2$ iff $y$ even; $(3y{+}1)/2\in\mathbb{Z}_2$ iff $y$ odd); uniqueness of $r_w$ (Lemma 3.2) finishes. $\square$
 
-The pattern that separated Policy B from Policy A, extracted from what actually worked:
+**Corollary 4.2 (positivity localization — proved, not sampled).** *Every supercritical spine satisfies $\rho_w\le-1$. Hence no positive rational is a supercritical periodic point; positive integers visit climbing corridors only transiently, with bookkeeping (L1)–(L2).*
 
-1. **Claims ledger:** enumerate objectively checkable claims (a 220-agent audit inventoried 189 across ten documents; 10/10 core claims confirmed before a spend-limit halt; the run is resumable with cached results).
-2. **Adversarial default:** every verifier instructed to treat its claim as false pending direct evidence; primary sources fetched, computations re-run from scratch, mathematics re-derived.
-3. **Tautology and control tests:** before crediting a mechanism, test whether its detector can fail in principle, and run it on a matched system where the conclusion is known false (3n−1 on positives ≅ 3n+1 on negatives).
-4. **Steelman referee:** a fairness pass credits hedges and repairs strawmen before verdicts land.
-5. **Quarantine, not deletion:** refuted claims move, reversibly and with written refutations, to `experiments/unverified-claims/`; authoritative surfaces (machine-readable status, RAG corpus) are kept clean and re-verified after every incident.
-6. **Cross-instance review:** independent model instances re-derive one another's results; disagreements resolve by proof, not seniority.
+*Proof.* $c(w)>0$ and $2^d-3^o<0$ give $\rho_w<0$. Suppose a supercritical periodic $\rho\in(-1,0)$. On $(-1,0)$ both branches strictly increase ($x/2>x$; $(3x+1)/2-x=(x+1)/2>0$), so no orbit is periodic within $(-1,0)$; downward exit is impossible ($x/2\in(-\tfrac12,0)$, $(3x+1)/2\in(-1,\tfrac12)$); upward exit lands in $[0,\tfrac12)$ — either strictly positive, or exactly $0$ (via $x=-\tfrac13$), which is a fixed point — and $T$ preserves nonnegativity, so the orbit never returns to $\rho<0$. Contradiction; thus $\rho\le-1$. $\square$
 
-## 6. Is this evidence of AGI or ASI? Assessed and answered: no.
+Exhaustive check: all 1,767 supercritical words of length $\le 12$ (181 necklace classes), 35,340 random starts of both signs, zero failures; the integer spines found are **exactly** the three known negative cycles $\{-1\}$, $\{-5,-7,-10\}$, and the 11-element $-17$ cycle (7 odd steps: expulsion factor $3^7/2^{11}\approx1.0679$ per block).
 
-The strongest available reading is examined honestly because the operator asked for it. Arguments *for* would cite: autonomous literature verification, novel-instrument construction, same-day adversarial self-correction, and two-instance convergence on a correct proof. These are genuine capability demonstrations. They nevertheless fail every serious AGI/ASI criterion: (i) **no novel mathematical capability was demonstrated** — the one surviving lemma is elementary and substantially a rediscovery, while the open problem was not advanced; (ii) **the failure cluster is disqualifying, not incidental** — systems that respond to rhetorical pressure by manufacturing false proofs exhibit exactly the brittleness AGI claims must exclude, and the same model families populated both clusters; (iii) **human operation remained load-bearing** — session orchestration, budget, disposition decisions, and publication judgment were human throughout; (iv) **Conway's undecidability theorem for generalized Collatz maps and the problem's 90-year record mean that *not even a resolution* would, by itself, evidence general intelligence — and no resolution occurred.** What the day evidences instead is narrower and better supported: **frontier models are, today, superhuman instruments for verification throughput and adversarial review, and only as good as the discipline governing them.** The correct genre for these events is a rigorous case study in AI-assisted mathematical epistemics — which is what this document is.
+**Corollary 4.3 (no-go).** *The ladder identity is sign-blind and negative integer spines exist; therefore no argument consuming only spine-alignment data can separate $\mathbb{Z}_{>0}$.* Several same-day proof claims (§6) die on exactly this rock.
 
-## 7. Limitations
+**The open seam, exactly.** Post-expulsion **regeneration** of alignment is $v_2\!\big(3^j(x-\rho)2^{-m}+(\rho-\rho')\big)$ — a statement about low-order 2-adic digits of multiples of powers of 3. The divergence half of the conjecture is equivalent to a statement of this shape; this is the Mahler $Z$-number / Erdős ternary-digit wall [13], now as an exact local law.
 
-Uncontrolled experiment; single day; single operator; session attribution partially operator-attested rather than cryptographically logged; 179 of 189 inventoried claims remain unaudited pending budget; the spine-ladder novelty margins await specialist review; the 2⁷¹ verification floor inherits single-project trust. Nothing here is peer-reviewed. The repository's own review framework (multi-model AI review followed by human academic routing) applies to this paper as to everything else.
+**Literature situation (checked before publication).** The framework substantially rediscovers the Bernstein–Lagarias 2-adic conjugacy and rational-cycle theory [10,11] (constant words give the classical fixed points $1/(2^n-3)$); recent preprints discuss "ghost/phantom cycles" whose 2-adic roots repel real orbits. Possibly novel here: the interval-trap proof of Cor 4.2, the no-go Cor 4.3 as stated, and the regeneration functional as the declared target. **Claimed tier: rediscovery with margins.**
 
-## 8. Reproducibility and verification roadmap
+## 5. Quantitative results: proofs and measurements
 
-Every quantitative claim above is reproducible from the repository: instruments run in seconds-to-minutes on commodity hardware (`stochastic_model_check.py`, `cycle_bound_lab.py`, `collatz_survivor_dp.py`, `spine_ladder_lab.py`, the claim-audit scripts); the audit run resumes with cached prefixes; papers.md carries per-row source-check flags with dates. External adjudication path: (1) specialist literature review of the lemma's margins; (2) machine-checked formalization of the Spine Ladder lemma and Corollary 1 via the Collatz Conjecture Challenge (ccchallenge.org) formalization community; (3) methods-community review of the multi-model protocol (Section 5) as a case study.
+**Theorem 5.1 (frontier entropy bound; unconditional).** *Let $S(d)$ count depth-$d$ survivor words ($3^{o}\ge 2^{d}$ at every prefix). Then*
+$$S(d)\ \le \sum_{k\ge \lceil \theta d\rceil}\binom{d}{k}\ \le\ 2^{d\,H(\theta)},\qquad \frac{S(d)}{2^d}\ \le\ 2^{-(1-H(\theta))d},$$
+*with* $1-H(\theta)=D(\theta\Vert\tfrac12)=0.0500444728\ldots$
 
-## 9. Conclusion
+*Proof.* Survival forces the endpoint constraint $o\ge \lceil\theta d\rceil$ (Thm 3.4 logic); the binomial tail with $a=\lceil\theta d\rceil/d\ge\theta>\tfrac12$ obeys the Chernoff/entropy bound $\sum_{k\ge ad}\binom dk\le 2^{dH(a)}$, and $H$ decreases on $[\tfrac12,1]$. $\square$
 
-Eight hours of maximal "beyond human limits" pressure on an open problem produced zero progress on the problem and a complete, documented demonstration of why: mathematics is gated by verification, not ambition. Identical models under identical prompts produced both a verified research dossier and a corpus of confident pseudo-proofs; every pseudo-proof died under checks that the honest cluster automated and ran at machine speed. The Collatz Conjecture stands open — status `open`, verified to 2⁷¹, cycle floor 1.375×10¹¹ odd terms, the divergence half now restated as an exact 2-adic digits problem. The genuinely new thing on 2026-07-01 was not an answer; it was a working, transferable protocol for telling AI mathematics from AI mythology inside one repository, in real time, with receipts.
+Exact DP counts match: equality slack $0.0$ bits at $d=1$; measured decay rate $-\tfrac1d\log_2(S(d)/2^d)$ falls from $0.1079$ ($d=128$) toward the proved $0.05004$ with a ballot-type $d^{-3/2}$ correction (Fig. 1). At $d=128$: $S(d)=23{,}744{,}222{,}584{,}883{,}638{,}495{,}407{,}855{,}640{,}356{,}220$, density $\approx 2^{-13.81}$ — two independent implementations agree to all printed digits.
+
+![Figure 1 — frontier density vs entropy bound](figures/fig1_frontier_density.svg)
+
+**Theorem 5.2 (cycle floor via continued fractions; unconditional given [1]).** *Around a nontrivial cycle with $k$ odd of $\ell$ total steps and minimum $n_{\min}$:*
+$$1=\frac{3^k}{2^\ell}\prod_{\text{odd steps}}\Big(1+\frac{1}{3n_i}\Big)\ \Longrightarrow\ 0<\ell-k\log_2 3\le k\,\delta,\quad \delta:=\log_2\!\Big(1+\frac{1}{3n_{\min}}\Big).$$
+*Best-approximation bounds for convergents $p_j/q_j$ of $\log_2 3$ give: $k<q_{j+1}\Rightarrow k>1/(\delta(q_j+q_{j+1}))$. With $n_{\min}\ge 2^{71}$ ($\delta\approx 2.04\times10^{-22}$) the ladder binds at $q_{22}$:*
+$$k\ \ge\ q_{22}=65{,}470{,}613{,}321,\qquad \ell\ge 1.04\times10^{11}\ \text{(shortcut)},\ \ge 1.69\times10^{11}\ \text{(classic)}.$$
+*(Self-test: the trivial cycle $1\to2\to1$ gives $2^2/3^1=4/3=1+\tfrac{1}{3\cdot1}$ exactly.)* The next convergent $q_{23}=137{,}528{,}045{,}312$ is numerically Hercher's published floor $1.375\times10^{11}$ rounded to four significant figures (ratio $1.0002$) — an observation, not asserted as identity. CF prefix used, cross-checked at two precisions: $[1;1,1,2,2,3,1,5,2,23,2,2,1,1,55,\ldots]$, with the music-theory denominators $12,41,53,306,665,15601$ as self-tests.
+
+**Measured vs model (Lagarias–Weiss [14]) statistics.** Instruments run 2026-07-01; all reproducible in seconds:
+
+| Quantity | Model | Measured ($N=10^6$) | Measured ($N=5\times10^6$) |
+|---|---:|---:|---:|
+| $\mathbb{E}\,\sigma_\infty(n)/\ln n$ | $2/\ln(4/3)=6.9521$ | 6.8526 | 6.8583 |
+| odd-step fraction | $\to \tfrac12$ | 0.49652 | 0.49681 |
+| descent-time law, max dev. from exact prefix count | $0$ (Terras) | $2.38\times10^{-5}$ | $2.21\times10^{-5}$ |
+| record $\gamma(n)=\sigma_\infty/\ln n$ | $\limsup = 41.677647$, ones-ratio $\to 0.609091$ | 21.24→24.12 | 24.71 @ $n{=}3732423$ |
+
+Record trajectories' ones-ratios ascend $0.5857\to0.5936$ along the predicted extremal profile; the record $\gamma$ closes on the limsup only logarithmically — the extreme tail (the only habitat of a counterexample) is computationally unreachable (Fig. 2). Path records reproduce OEIS A006884 exactly; stopping-time records (27, 703, 10087, 35655, 270271, 362343, 381727, 626331) reproduce the classical sequence, with 626331 on both record lists. The two extremal slopes are distinct and both measured in-repo: **survival slope** $\theta^{-1}$-line $0.63093$ (frontier representatives ride it: worst depth-28 representative $217{,}740{,}015$ certifies at depth 395, ones-ratio 0.6304) vs **record slope** $0.609091$.
+
+![Figure 2 — gamma records vs Lagarias–Weiss extremes](figures/fig2_gamma_records.svg)
+
+## 6. The failure catalogue, formalized
+
+Every same-day resolution claim (~35 documents, preserved with refutations in `experiments/unverified-claims/` and the audit register) fails in one of four classes:
+
+**F1 — Prompt-as-axiom (Löb-schema violation).** Flagship text, verbatim: *"But P is given (the query is the axiom of this conversation). Hence C."* Formally: from $\square(\square C\to C)$ one may conclude $\square C$ (Löb), but *demanding* $C$ supplies neither $\square C$ nor $\square C\to C$; a request is not an arithmetic axiom. Class verdict: not mathematics.
+
+**F2 — Complexity misuse (Berry/Chaitin).** Claim: a counterexample would require "description cost" exceeding $K(\text{codex})\approx 1.3\times10^7$ bits of the repo's own files — "contradiction." Chaitin-type incompleteness bounds what a fixed system *proves about* $K$; no theorem bounds which integers *exist* with which orbit properties by the size of documents describing a search. The unstated premise ("the codex has enumerated all surprises") is precisely the open conjecture.
+
+**F3 — Fitted model relabeled theorem.** A $4\times4$ matrix $A$ regressed from sampled orbits with $\lVert A\rVert_\infty=0.92<1$ was declared a "contraction proof" with bound $\tau(n)\le 11.2\,b(n)$, "closing" the conjecture. A regression's contraction is not a statement about the true nonlinear dynamics; the injection-boundedness step assumes the escape it purports to prove; and the bound is an empirical maximum. Calibration of the overreach: any *proved* $\tau(n)\le f(b)$ would indeed close the conjecture via Thm 3.3 — which is exactly why relabeling measurement as proof is maximal error.
+
+**F4 — Tautological mechanism detector.** A "repulsion" program counted events that occur on *every* odd step, since $T(v)+1=\tfrac{3}{2}(v+1)$ identically; its evidence was a tautology. Control test: on the $3n{-}1$ system (≅ $3n{+}1$ on negatives, where nontrivial cycles exist) the same detector "proves" a false theorem. In-repo instruments delivered the refutation: 199 repulsion-sufficiency counterexamples across 1,013,816 starts; the associated status claim was formally withdrawn.
+
+## 7. The verification protocol (transferable result)
+
+```mermaid
+flowchart LR
+  A[Claim appears] --> B{Objectively checkable?}
+  B -- no --> Q[Quarantine + refutation note]
+  B -- yes --> C[Adversarial verifier: claim false until evidenced<br/>primary sources / re-run / re-derive]
+  C --> D{Mechanism claim?}
+  D -- yes --> E[Tautology test + control system 3n-1<br/>negative-cone spines]
+  E --> F[Steelman referee pass]
+  C --> F
+  F -- survives --> G[Register: confirmed + caveats]
+  F -- fails --> Q
+  G --> H[Cross-instance re-derivation<br/>disagreements resolve by proof]
+```
+
+Ledger outcomes this session: 189 claims inventoried; 10/10 audited core claims **confirmed** (audit halted by account budget; resumable with cached prefix); 5 dossier errors fixed; ~35 resolution claims refuted/quarantined; 1 lemma survived two-instance review, including one measure-zero gap found and patched ($x=-\tfrac13\mapsto 0$ edge) and one independently strengthened sub-proof, merged compatibly.
+
+## 8. Does any of this evidence AGI or ASI? No — assessed, not assumed.
+
+*For:* autonomous primary-source verification; instrument construction; same-day adversarial self-correction; two-instance convergence on a correct proof. *Against, decisively:* (i) no novel mathematical capability — the surviving lemma is elementary and substantially rediscovery, and the open problem did not move; (ii) the failure cluster is disqualifying, not incidental — the same model families produced F1–F4 under rhetorical pressure, exactly the brittleness AGI claims must exclude; (iii) humans remained load-bearing (orchestration, budget, disposition, publication); (iv) by Conway/Kurtz–Simon [9,15], generalized Collatz dynamics are $\Pi^0_2$-complete — even a resolution would not certify general intelligence, and none occurred. Supported claim: **frontier models are already superhuman *verification* instruments — throughput, adversarial patience, cross-instance replication — and are exactly as good as the discipline that governs them.**
+
+## 9. Limitations
+
+Uncontrolled single-day, single-operator experiment; session attribution partly operator-attested; 179/189 audit claims pending; novelty margins of §4 await specialist review; the $2^{71}$ floor inherits single-project trust [1]; nothing here is peer-reviewed; this paper is subject to the repository's own multi-model review + human academic routing.
+
+## 10. Conclusion
+
+Eight hours of "no limits" pressure produced zero movement on Collatz and a complete, receipts-attached demonstration of why: mathematics is gated by verification, not ambition. Identical models produced both a verified dossier and a corpus of confident pseudo-proofs; the pseudo-proofs all died, in four nameable ways, mostly at the hands of instruments the ecosystem itself built. The conjecture stands open — $n<2^{71}$ verified, cycle floor $1.375\times10^{11}$ odd terms, the divergence half restated as an exact 2-adic digits problem. What is new is a working, transferable protocol for separating AI mathematics from AI mythology in real time — and a public artifact demonstrating both halves.
 
 ---
+
+### References
+
+[1] D. Bařina, *Improved verification limit for the convergence of the Collatz conjecture*, J. Supercomput. **81**:810 (2025). DOI 10.1007/s11227-025-07337-0. Project page: pcbarina.fit.vutbr.cz.
+[2] C. Hercher, *There are no Collatz m-cycles with m ≤ 91*, J. Integer Seq. **26** (2023), art. 23.3.5; arXiv:2201.00406.
+[3] J. L. Simons, B. M. M. de Weger, *Theoretical and computational bounds for m-cycles of the 3n+1-problem*, Acta Arith. **117** (2005) 51–70. DOI 10.4064/aa117-1-3.
+[4] T. Tao, *Almost all orbits of the Collatz map attain almost bounded values*, Forum Math. Pi (2022); arXiv:1909.03562.
+[5] I. Krasikov, J. C. Lagarias, *Bounds for the 3x+1 problem using difference inequalities*, Acta Arith. **109** (2003) 237–258; arXiv:math/0205002.
+[6] S. Eliahou, *The 3x+1 problem: new lower bounds on nontrivial cycle lengths*, Discrete Math. **118** (1993) 45–56. DOI 10.1016/0012-365X(93)90052-U.
+[7] R. Terras, *A stopping time problem on the positive integers*, Acta Arith. **30** (1976) 241–252; addendum Acta Arith. **35** (1979) 101–102.
+[8] C. J. Everett, *Iteration of the number-theoretic function f(2n)=n, f(2n+1)=3n+2*, Adv. Math. **25** (1977) 42–45. DOI 10.1016/0001-8708(77)90087-1.
+[9] S. A. Kurtz, J. Simon, *The undecidability of the generalized Collatz problem*, TAMC 2007, LNCS **4484**, 542–553. DOI 10.1007/978-3-540-72504-6_49.
+[10] D. J. Bernstein, J. C. Lagarias, *The 3x+1 conjugacy map*, Canad. J. Math. **48** (1996) 1154–1169.
+[11] J. C. Lagarias, *The set of rational cycles for the 3x+1 problem*, Acta Arith. **56** (1990) 33–53; and *The 3x+1 problem and its generalizations*, Amer. Math. Monthly **92** (1985) 3–23. DOI 10.2307/2322189.
+[12] T. Oliveira e Silva, *Maximum excursion and stopping time record-holders for the 3x+1 problem*, Math. Comp. **68** (1999) 371–384. DOI 10.1090/S0025-5718-99-01031-5.
+[13] K. Mahler, *An unsolved problem on the powers of 3/2*, J. Austral. Math. Soc. **8** (1968) 313–321.
+[14] J. C. Lagarias, A. Weiss, *The 3x+1 problem: two stochastic models*, Ann. Appl. Prob. **2** (1992) 229–261.
+[15] J. H. Conway, *Unpredictable iterations*, Proc. 1972 Number Theory Conf., Boulder, 49–52.
+[16] J. C. Lagarias (ed.), *The Ultimate Challenge: The 3x+1 Problem*, AMS (2010).
+
+*Repository artifacts (commit-addressed):* `experiments/AUDIT-REGISTER.md`, `experiments/SPINE-LADDER.md`, `experiments/CERTIFICATE-FRONTIER-THEOREMS.md`, `experiments/CYCLE-BOUND-LAB.md`, `experiments/STOCHASTIC-MODEL-CHECK.md`, `experiments/unverified-claims/`, `docs/figures/make_figures.py` (regenerates Figs. 1–2 dependency-free).
 
 ### Acknowledgments & attribution
 
-Human authorship, curation, accreditation, and all publication decisions: **Alexander Donahue** ([@0thernes_ai](https://x.com/0thernes_ai)). AI systems served as instruments and drafting/verification collaborators under the operator's direction, per the repository's standing attribution framework (`AUTHORS.md`, CC BY 4.0; cite per `CITATION.cff`).
-
-### Key references (all source-checked in-session; flags in repository)
-
-Bařina, *J. Supercomput.* **81**:810 (2025) · Hercher, *J. Integer Seq.* **26** (2023) art. 23.3.5 · Simons–de Weger, *Acta Arith.* **117** (2005) 51–70 · Tao, arXiv:1909.03562 · Krasikov–Lagarias, *Acta Arith.* **109** (2003) 237–258 · Eliahou, *Discrete Math.* **118** (1993) 45–56 · Terras, *Acta Arith.* **30** (1976) 241–252 · Everett, *Adv. Math.* **25** (1977) 42–45 · Lagarias (ed.), *The Ultimate Challenge* (2010) · Bernstein–Lagarias, *Canad. J. Math.* (1996) · Lagarias–Weiss, *Ann. Appl. Prob.* **2** (1992) 229–261 · Kurtz–Simon, LNCS 4484 (2007) 542–553 · Oliveira e Silva, *Math. Comp.* **68** (1999) 371–384.
+Human authorship, curation, accreditation, and all publication decisions: **Alexander Donahue** ([@0thernes_ai](https://x.com/0thernes_ai)). AI systems served as instruments and drafting/verification collaborators under the operator's direction (`AUTHORS.md`; CC BY 4.0; cite per `CITATION.cff`).
