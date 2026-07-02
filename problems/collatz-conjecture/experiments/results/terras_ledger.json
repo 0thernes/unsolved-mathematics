@@ -1,0 +1,67 @@
+{
+  "chunks": [
+    {
+      "band_k": null,
+      "file": "gap_scan_first_band.json",
+      "hi_inclusive": 2193206481,
+      "lo_exclusive": 1000000000,
+      "max_tau": 433,
+      "odd_integers_scanned": 596603241,
+      "proved_empty_slice": true,
+      "tau_min_required": 50509
+    },
+    {
+      "band_k": 11,
+      "file": "gap_scan_band11.json",
+      "hi_inclusive": 10824153739,
+      "lo_exclusive": 2193206481,
+      "max_tau": 447,
+      "odd_integers_scanned": 4315473629,
+      "proved_empty_slice": true,
+      "tau_min_required": 125743
+    },
+    {
+      "band_k": 12,
+      "file": "gap_scan_band12.json",
+      "hi_inclusive": 15443807723,
+      "lo_exclusive": 10824153739,
+      "max_tau": 547,
+      "odd_integers_scanned": 2309826992,
+      "proved_empty_slice": true,
+      "tau_min_required": 176252
+    },
+    {
+      "band_k": 13,
+      "file": "gap_scan_band13_chunk1.json",
+      "hi_inclusive": 30000000000,
+      "lo_exclusive": 15443807723,
+      "max_tau": 546,
+      "odd_integers_scanned": 7278096138,
+      "proved_empty_slice": true,
+      "tau_min_required": 301994
+    },
+    {
+      "band_k": 13,
+      "file": "gap_scan_band13_chunk2.json",
+      "hi_inclusive": 60000000000,
+      "lo_exclusive": 30000000000,
+      "max_tau": 485,
+      "odd_integers_scanned": 15000000000,
+      "proved_empty_slice": true,
+      "tau_min_required": 301994
+    }
+  ],
+  "collatz_status": "OPEN",
+  "global_max_gamma": 16.3233,
+  "global_max_gamma_n": 12235060455,
+  "global_max_tau": 547,
+  "global_max_tau_n": 14500812391,
+  "honesty": "Measured Terras verification only. Collatz open. Band closure requires full window or proved gamma bound.",
+  "log2_verified_through": 35.8,
+  "mismatch_count": 0,
+  "mode": "ledger",
+  "results_dir": "Z:\\[Vibe Coded (AI)]\\CLAUDECODE\\Unresolved Math Problems\\problems\\collatz-conjecture\\experiments\\results",
+  "terras_verified_through": 60000000000,
+  "total_elapsed_seconds": 9088.1,
+  "total_odd_integers_scanned": 29500000000
+}

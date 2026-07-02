@@ -1,0 +1,121 @@
+{
+  "cap": 2048,
+  "elapsed_seconds": 0.7,
+  "eps": 1,
+  "flagged_frontier_residents": {
+    "count": 3511,
+    "density": 0.17555,
+    "meaning": "integers whose coefficient never dropped (tau = infinity proven via supercritical terminal cycle for eps=-1; tau > cap for q=5)",
+    "samples": [
+      7,
+      9,
+      21,
+      23,
+      25,
+      29,
+      31,
+      37,
+      39,
+      41,
+      45,
+      49,
+      53,
+      55,
+      61,
+      69,
+      71,
+      73,
+      77,
+      81,
+      85,
+      87,
+      89,
+      93,
+      95,
+      101,
+      109,
+      113,
+      117,
+      119,
+      121,
+      125,
+      133,
+      149,
+      151,
+      153,
+      157,
+      165,
+      167,
+      173
+    ]
+  },
+  "frontier_tails_vs_word_model": [
+    {
+      "count_tau_gt_depth": 5197,
+      "depth": 10,
+      "ratio": 1.000325,
+      "word_model_expected": 5195.312
+    },
+    {
+      "count_tau_gt_depth": 4678,
+      "depth": 16,
+      "ratio": 1.000579,
+      "word_model_expected": 4675.293
+    },
+    {
+      "count_tau_gt_depth": 4445,
+      "depth": 20,
+      "ratio": 1.000575,
+      "word_model_expected": 4442.444
+    },
+    {
+      "count_tau_gt_depth": 4262,
+      "depth": 24,
+      "ratio": 1.000541,
+      "word_model_expected": 4259.694
+    },
+    {
+      "count_tau_gt_depth": 4113,
+      "depth": 30,
+      "ratio": 0.999628,
+      "word_model_expected": 4114.53
+    },
+    {
+      "count_tau_gt_depth": 3930,
+      "depth": 40,
+      "ratio": 1.001234,
+      "word_model_expected": 3925.157
+    },
+    {
+      "count_tau_gt_depth": 3761,
+      "depth": 60,
+      "ratio": 0.999657,
+      "word_model_expected": 3762.29
+    },
+    {
+      "count_tau_gt_depth": 3671,
+      "depth": 80,
+      "ratio": 1.002032,
+      "word_model_expected": 3663.555
+    },
+    {
+      "count_tau_gt_depth": 3613,
+      "depth": 100,
+      "ratio": 1.000265,
+      "word_model_expected": 3612.043
+    }
+  ],
+  "limit": 20000,
+  "max_finite_tau": {
+    "n": 17887,
+    "tau": 309
+  },
+  "mean_tau_over_finite": 5.700467,
+  "mode": "scan",
+  "q": 5,
+  "terras_mismatches_sigma_ne_tau": {
+    "count": null,
+    "note": "sigma not tracked by the masked q=5 scanner",
+    "samples": []
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "theta_critical_odd_density": 0.6309297535714574,
+  "conjugacy_violations_in_[-2e5,2e5]": 0,
+  "3n-1_cycle_from_5": {
+    "members": [
+      5,
+      7,
+      10
+    ],
+    "period_t": 3,
+    "odd_steps_o": 2,
+    "odd_density": 0.6666666666666666,
+    "supercritical": true,
+    "log2_multiplier_debt": 0.1699250014423126
+  },
+  "3n+1_cycle_negation_of_5": {
+    "members": [
+      -10,
+      -7,
+      -5
+    ],
+    "closes_under_T_+1": true
+  },
+  "3n-1_cycle_from_17": {
+    "members": [
+      17,
+      25,
+      34,
+      37,
+      41,
+      55,
+      61,
+      68,
+      82,
+      91,
+      136
+    ],
+    "period_t": 11,
+    "odd_steps_o": 7,
+    "odd_density": 0.6363636363636364,
+    "supercritical": true,
+    "log2_multiplier_debt": 0.0947375050480943
+  },
+  "3n+1_cycle_negation_of_17": {
+    "members": [
+      -136,
+      -91,
+      -82,
+      -68,
+      -61,
+      -55,
+      -41,
+      -37,
+      -34,
+      -25,
+      -17
+    ],
+    "closes_under_T_+1": true
+  },
+  "parity_word_barrier_d12": {
+    "depth": 12,
+    "words_are_bijection_eps_plus1": true,
+    "words_are_bijection_eps_minus1": true,
+    "word_distributions_identical": true,
+    "pointwise_word_differs_count": 4094,
+    "pointwise_word_differs_fraction": 0.99951171875,
+    "odd_count_distribution_identical": true
+  }
+}

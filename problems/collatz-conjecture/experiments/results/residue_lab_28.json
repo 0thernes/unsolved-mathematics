@@ -1,0 +1,97 @@
+{
+  "certified_fraction": 0.9868698939681053,
+  "certified_leaves": 502524,
+  "certified_samples": [
+    {
+      "bits": "0",
+      "depth": 1,
+      "image": 0,
+      "odd_count": 0,
+      "q_threshold": 1,
+      "residue": 0
+    },
+    {
+      "bits": "01",
+      "depth": 2,
+      "image": 1,
+      "odd_count": 1,
+      "q_threshold": 1,
+      "residue": 1
+    },
+    {
+      "bits": "0011",
+      "depth": 4,
+      "image": 2,
+      "odd_count": 2,
+      "q_threshold": 0,
+      "residue": 3
+    },
+    {
+      "bits": "01011",
+      "depth": 5,
+      "image": 10,
+      "odd_count": 3,
+      "q_threshold": 0,
+      "residue": 11
+    }
+  ],
+  "certified_units_mod_2^max_depth": 264910870,
+  "deepest_certificate": 27,
+  "elapsed_seconds": 21.464386,
+  "finite_q_exceptions_upper_bound": 2,
+  "frontier_fraction": 0.013130106031894684,
+  "frontier_leaves": 3524586,
+  "frontier_odd_count_histogram": {
+    "18": 663535,
+    "19": 1236935,
+    "20": 898798,
+    "21": 464889,
+    "22": 185684,
+    "23": 57923,
+    "24": 13953,
+    "25": 2520,
+    "26": 322,
+    "27": 26,
+    "28": 1
+  },
+  "frontier_samples": [
+    {
+      "bits": "0000000000000000000000011011",
+      "depth": 28,
+      "image": 377,
+      "odd_count": 20,
+      "q_threshold": null,
+      "residue": 27
+    },
+    {
+      "bits": "1000000000000000000000011011",
+      "depth": 28,
+      "image": 581130859,
+      "odd_count": 19,
+      "q_threshold": null,
+      "residue": 134217755
+    },
+    {
+      "bits": "0100000000000000000000011011",
+      "depth": 28,
+      "image": 96855164,
+      "odd_count": 18,
+      "q_threshold": null,
+      "residue": 67108891
+    },
+    {
+      "bits": "1100000000000000000000011011",
+      "depth": 28,
+      "image": 871696226,
+      "odd_count": 19,
+      "q_threshold": null,
+      "residue": 201326619
+    }
+  ],
+  "frontier_units_mod_2^max_depth": 3524586,
+  "interpretation": "A finite-cover status would reduce divergent-orbit exclusion to a finite direct check. An open-frontier status identifies the residue classes where this finite-depth method has not yet forced descent.",
+  "max_depth": 28,
+  "max_direct_check_n": 1,
+  "max_q_threshold": 1,
+  "status": "open-frontier"
+}

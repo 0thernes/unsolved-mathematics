@@ -1,0 +1,72 @@
+Traceback (most recent call last):
+=== YOLO SPECTRAL_SHARP + DEFECT_FIELD + ERGODIC ESCALATION ===
+E built. row_inf ~ 0.688106
+rho* (exact Perron) = 0.621439723657686960
+Perron vec (pos cone) ~ [0.404846, 0.587878, -0.681244, 0.162497]
+  b=3 c_homo=1.1072568944 c_spectral=0.7334502855
+  b=4 c_homo=0.8361631324 c_spectral=0.5500877141
+  b=5 c_homo=0.6734605891 c_spectral=0.4400701713
+  b=6 c_homo=0.5649543722 c_spectral=0.3667251428
+  b=7 c_homo=0.4874180841 c_spectral=0.3143358367
+  b=8 c_homo=0.4292385129 c_spectral=0.2750438571
+  b=9 c_homo=0.3839638630 c_spectral=0.2444834285
+  b=10 c_homo=0.3477230471 c_spectral=0.2200350857
+  b=11 c_homo=0.3180526374 c_spectral=0.2000318961
+  b=12 c_homo=0.2933103407 c_spectral=0.1833625714
+  b=13 c_homo=0.2723591782 c_spectral=0.1692577582
+  b=14 c_homo=0.2543870156 c_spectral=0.1571679183
+  b=15 c_homo=0.2387982822 c_spectral=0.1466900571
+  b=16 c_homo=0.2251462948 c_spectral=0.1375219285
+  b=17 c_homo=0.2130894671 c_spectral=0.1294324033
+  b=18 c_homo=0.2023621170 c_spectral=0.1222417143
+  b=19 c_homo=0.1927544911 c_spectral=0.1158079398
+  b=20 c_homo=0.1840987831 c_spectral=0.1100175428
+  b=21 c_homo=0.1762591464 c_spectral=0.1047786122
+  b=22 c_homo=0.1691244305 c_spectral=0.1000159480
+  File "Z:\[Vibe Coded (AI)]\CLAUDECODE\Unresolved Math Problems\problems\collatz-conjecture\defect_spectral_sharp.py", line 316, in <module>
+    main()
+  b=23 c_homo=0.1626028126 c_spectral=0.0956674285
+  File "Z:\[Vibe Coded (AI)]\CLAUDECODE\Unresolved Math Problems\problems\collatz-conjecture\defect_spectral_sharp.py", line 257, in main
+    append_theorems(rho, infc, inf_spectral, uc, ei, fdata, mud)
+  File "Z:\[Vibe Coded (AI)]\CLAUDECODE\Unresolved Math Problems\problems\collatz-conjecture\defect_spectral_sharp.py", line 287, in append_theorems
+    The Galois norm N_{K/Q} (via quadratic tower) N(alpha) = (U^2 - 2 V^2) is a multiplicative group homomorphism K^* -> Q^* : N(xy) = N(x) N(y) for all x,y in K.
+                       ^
+NameError: name 'K' is not defined
+  b=24 c_homo=0.1566177710 c_spectral=0.0916812857
+  b=25 c_homo=0.1511050247 c_spectral=0.0880140343
+  b=26 c_homo=0.1460101799 c_spectral=0.0846288791
+  b=27 c_homo=0.1412868987 c_spectral=0.0814944762
+  b=28 c_homo=0.1368954611 c_spectral=0.0785839592
+  b=29 c_homo=0.1328016233 c_spectral=0.0758741675
+  b=30 c_homo=0.1289757060 c_spectral=0.0733450286
+  b=31 c_homo=0.1253918573 c_spectral=0.0709790599
+  b=32 c_homo=0.1220274555 c_spectral=0.0687609643
+  b=33 c_homo=0.1188626191 c_spectral=0.0666772987
+  b=34 c_homo=0.1158798043 c_spectral=0.0647162017
+  b=35 c_homo=0.1130634709 c_spectral=0.0628671673
+  b=36 c_homo=0.1103998040 c_spectral=0.0611208571
+  b=37 c_homo=0.1078764811 c_spectral=0.0594689421
+  b=38 c_homo=0.1054824755 c_spectral=0.0579039699
+  b=39 c_homo=0.1032078905 c_spectral=0.0564192527
+  b=64 c_homo=0.0688596797 c_spectral=0.0403099834
+  b=128 c_homo=0.0402760089 c_spectral=0.0263364432
+  b=256 c_homo=0.0240052837 c_spectral=0.0171667041
+  b=512 c_homo=0.0143067349 c_spectral=0.0109299201
+  b=1024 c_homo=0.0084269023 c_spectral=0.0067506666
+  b=2048 c_homo=0.0048855455 c_spectral=0.0040506877
+  b=4096 c_homo=0.0027883878 c_spectral=0.0023718024
+
+inf_c* homo=0.00278838783250  spectral_proj=0.00237180238591
+SHARP uniform c* <= 1.584962501 b  (replaces crude 11.2 b)
+
+=== DEFECT MODULE over K=Q(sqrt(2),sqrt(3)) ===
+gens exact N mul: True
+samples exact submult: 10/10
+ratios: [1.0, 1.0, 1.0, 1.0]
+N(xy)=N(x)N(y) exact => submult. Defect field K classifies orbits.
+
+=== ERGODIC survivor DP mu on +cone ===
+mu_od (DP) = 0.646885974411  theory limit = 1.5849625007211563
+converged to boundary: False
+E[index] = log(3)/log(2) = 1.5849625007211563 (closed form)
+Wrote fresh results/defect_spectral_sharp.json (and experiments/)

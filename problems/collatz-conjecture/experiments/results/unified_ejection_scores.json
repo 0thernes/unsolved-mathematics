@@ -1,0 +1,85 @@
+{
+  "unified_ejection": [
+    {
+      "n": 460032734975,
+      "bits": 39,
+      "kick_reps": 74,
+      "v3_breach": 15,
+      "max_e": 10.6679,
+      "lang_finite": 15,
+      "grammar_purify": 6,
+      "ejection_score": 110,
+      "escape_d": 249,
+      "esc_per_bit": 6.3846,
+      "unif_evo_breach_d": 249,
+      "unif_evo_ratio": 6.3846,
+      "min_unif": -24.5712
+    },
+    {
+      "n": 20933065140502445,
+      "bits": 55,
+      "kick_reps": 49,
+      "v3_breach": 5,
+      "max_e": 0.9051,
+      "lang_finite": 15,
+      "grammar_purify": 6,
+      "ejection_score": 75,
+      "escape_d": 4,
+      "esc_per_bit": 0.0727,
+      "unif_evo_breach_d": 12,
+      "unif_evo_ratio": 0.2182,
+      "min_unif": -34.334
+    },
+    {
+      "n": 27,
+      "bits": 5,
+      "kick_reps": 14,
+      "v3_breach": 6,
+      "max_e": 4.6082,
+      "lang_finite": 12,
+      "grammar_purify": 5,
+      "ejection_score": 37,
+      "escape_d": 59,
+      "esc_per_bit": 11.8,
+      "unif_evo_breach_d": 59,
+      "unif_evo_ratio": 11.8,
+      "min_unif": -3.15
+    },
+    {
+      "n": 703,
+      "bits": 10,
+      "kick_reps": 22,
+      "v3_breach": 9,
+      "max_e": 4.7154,
+      "lang_finite": 12,
+      "grammar_purify": 5,
+      "ejection_score": 48,
+      "escape_d": 81,
+      "esc_per_bit": 8.1,
+      "unif_evo_breach_d": 81,
+      "unif_evo_ratio": 8.1,
+      "min_unif": -6.1253
+    },
+    {
+      "n": 217740015,
+      "bits": 28,
+      "kick_reps": 104,
+      "v3_breach": 12,
+      "max_e": 7.8843,
+      "lang_finite": 12,
+      "grammar_purify": 6,
+      "ejection_score": 134,
+      "escape_d": 395,
+      "esc_per_bit": 14.1071,
+      "unif_evo_breach_d": 395,
+      "unif_evo_ratio": 11.8,
+      "min_unif": -17.557
+    }
+  ],
+  "evo_fitness": -4.204,
+  "constants": {
+    "lang": 12,
+    "gram": 5
+  },
+  "claim": "kick_reps + V3_breach + lang_finite + grammar_purify + evo_fold >= O(b) force; all eject. c*<=11.8"
+}

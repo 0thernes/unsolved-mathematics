@@ -1,0 +1,10 @@
+{
+  "heights": {
+    "5": 4,
+    "10": 9,
+    "28": 26,
+    "62": 58,
+    "71": 67
+  },
+  "conclusion": "finite etale height = O(b) ejection"
+}

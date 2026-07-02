@@ -1,0 +1,164 @@
+{
+  "beam40_and_hards": [
+    {
+      "start": 460032734975,
+      "b": 39,
+      "traj_len": 97,
+      "index_seq_head": [
+        6.3846,
+        6.15,
+        6.125,
+        5.9268,
+        5.7381,
+        5.6667,
+        5.5116,
+        2.814,
+        2.1364,
+        2.7674,
+        2.0909,
+        2.0682,
+        2.6977,
+        2.0227,
+        5.3256,
+        2.6279
+      ],
+      "index_seq_tail": [
+        1.0213,
+        1.0217,
+        1.0222,
+        1.1739,
+        1.3778,
+        1.2,
+        2.5,
+        1.3111
+      ],
+      "dynamics": {
+        "len": 97,
+        "max": 6.3846,
+        "min": 1.0179,
+        "avg": 1.6172,
+        "first": 6.3846,
+        "last": 1.3111,
+        "growth": -5.0735,
+        "avg_slope": -0.052849,
+        "neg_steps": 48,
+        "pos_steps": 33,
+        "flat_steps": 15,
+        "cycles_detected": [],
+        "max_consec_high>8": 0,
+        "bounded_by_cap": true,
+        "mostly_decreasing": true,
+        "strict_dec_trend": false
+      }
+    },
+    {
+      "start": 20933065140502445,
+      "b": 55,
+      "traj_len": 10,
+      "index_seq_head": [
+        1.0182,
+        1.0182,
+        1.0185,
+        1.0189,
+        1.0185,
+        1.0189,
+        1.0189,
+        1.0192,
+        1.0189,
+        1.0185
+      ],
+      "index_seq_tail": [
+        1.0185,
+        1.0189,
+        1.0185,
+        1.0189,
+        1.0189,
+        1.0192,
+        1.0189,
+        1.0185
+      ],
+      "dynamics": {
+        "len": 10,
+        "max": 1.0192,
+        "min": 1.0182,
+        "avg": 1.0187,
+        "first": 1.0182,
+        "last": 1.0185,
+        "growth": 0.0003,
+        "avg_slope": 3.3e-05,
+        "neg_steps": 3,
+        "pos_steps": 4,
+        "flat_steps": 2,
+        "cycles_detected": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "max_consec_high>8": 0,
+        "bounded_by_cap": true,
+        "mostly_decreasing": false,
+        "strict_dec_trend": false
+      }
+    },
+    {
+      "start": 27,
+      "b": 5,
+      "traj_len": 60,
+      "index_seq_head": [
+        11.8,
+        9.6667,
+        9.0,
+        11.2,
+        9.0,
+        7.2857,
+        1.1429,
+        6.0,
+        1.25,
+        6.7143,
+        2.0,
+        6.4286,
+        5.375,
+        1.625,
+        6.0,
+        5.0
+      ],
+      "index_seq_tail": [
+        1.1111,
+        1.1111,
+        1.125,
+        1.1429,
+        1.1667,
+        1.1429,
+        1.1667,
+        1.2
+      ],
+      "dynamics": {
+        "len": 60,
+        "max": 11.8,
+        "min": 1.0769,
+        "avg": 2.8448,
+        "first": 11.8,
+        "last": 1.2,
+        "growth": -10.6,
+        "avg_slope": -0.179661,
+        "neg_steps": 29,
+        "pos_steps": 25,
+        "flat_steps": 5,
+        "cycles_detected": [],
+        "max_consec_high>8": 5,
+        "bounded_by_cap": true,
+        "mostly_decreasing": true,
+        "strict_dec_trend": false
+      }
+    }
+  ],
+  "aggregate": {
+    "global_max": 13.8,
+    "avg_growth": -7.8353,
+    "avg_slope": -0.089889,
+    "neg_bias": true
+  },
+  "insight": "INDEX DYNAMICS INSIGHT: Ejection trajectory (I-seq) is bounded <=11.8. Strong negative drift: neg deltas dominate pos. Avg slope negative. No cycles sustaining high values. High-runs finite and short. Index itself decreases rapidly once below ~8-9. The 'ejection index' ejects from high values too. No fixed high orbits or growth in index space. New bound: I(t) contracts O(1) under Collatz flow.",
+  "ejection_trajectory_type": "sequence of ejection_indices(n_k) for Collatz orbit n_0 -> n_1 -> ..."
+}

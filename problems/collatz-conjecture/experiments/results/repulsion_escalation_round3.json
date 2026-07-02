@@ -1,0 +1,2365 @@
+{
+  "results": [
+    {
+      "start": 27,
+      "total_steps": 70,
+      "repulsion_events": [
+        {
+          "step": 3,
+          "pre_n": 31,
+          "pre_alignment_bits": 5,
+          "post_alignment_bits": 4,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 0.16992500144231215
+        },
+        {
+          "step": 4,
+          "pre_n": 47,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 0.7548875021634682
+        },
+        {
+          "step": 5,
+          "pre_n": 71,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 1.3398500028846243
+        },
+        {
+          "step": 14,
+          "pre_n": 103,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 1.8496250072115608
+        },
+        {
+          "step": 18,
+          "pre_n": 175,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 2.604512509375027
+        },
+        {
+          "step": 19,
+          "pre_n": 263,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 3.189475010096185
+        },
+        {
+          "step": 26,
+          "pre_n": 167,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 2.5293250129808094
+        },
+        {
+          "step": 33,
+          "pre_n": 319,
+          "pre_alignment_bits": 6,
+          "post_alignment_bits": 5,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 3.4541375165865915
+        },
+        {
+          "step": 34,
+          "pre_n": 479,
+          "pre_alignment_bits": 5,
+          "post_alignment_bits": 4,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 4.039100017307746
+        },
+        {
+          "step": 35,
+          "pre_n": 719,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 4.6240625180289
+        },
+        {
+          "step": 36,
+          "pre_n": 1079,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 5.209025018750054
+        },
+        {
+          "step": 41,
+          "pre_n": 911,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 4.963912520913524
+        },
+        {
+          "step": 42,
+          "pre_n": 1367,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 5.548875021634686
+        },
+        {
+          "step": 59,
+          "pre_n": 23,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": -0.356387473317227
+        }
+      ],
+      "num_repulsions": 14,
+      "first_repulsion_step": 3
+    },
+    {
+      "start": 703,
+      "total_steps": 108,
+      "repulsion_events": [
+        {
+          "step": 0,
+          "pre_n": 703,
+          "pre_alignment_bits": 6,
+          "post_alignment_bits": 5,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 0.0
+        },
+        {
+          "step": 1,
+          "pre_n": 1055,
+          "pre_alignment_bits": 5,
+          "post_alignment_bits": 4,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 0.5849625007211561
+        },
+        {
+          "step": 2,
+          "pre_n": 1583,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 1.1699250014423122
+        },
+        {
+          "step": 3,
+          "pre_n": 2375,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 1.7548875021634682
+        },
+        {
+          "step": 9,
+          "pre_n": 3007,
+          "pre_alignment_bits": 6,
+          "post_alignment_bits": 5,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 2.0947375050480925
+        },
+        {
+          "step": 10,
+          "pre_n": 4511,
+          "pre_alignment_bits": 5,
+          "post_alignment_bits": 4,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 2.6797000057692486
+        },
+        {
+          "step": 11,
+          "pre_n": 6767,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 3.2646625064904047
+        },
+        {
+          "step": 12,
+          "pre_n": 10151,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 3.8496250072115608
+        },
+        {
+          "step": 21,
+          "pre_n": 14455,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 4.359400011538497
+        },
+        {
+          "step": 30,
+          "pre_n": 2287,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 1.6992500144231215
+        },
+        {
+          "step": 31,
+          "pre_n": 3431,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 2.284212515144276
+        },
+        {
+          "step": 35,
+          "pre_n": 5791,
+          "pre_alignment_bits": 5,
+          "post_alignment_bits": 4,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 3.039100017307746
+        },
+        {
+          "step": 36,
+          "pre_n": 8687,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 3.6240625180289
+        },
+        {
+          "step": 37,
+          "pre_n": 13031,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 4.209025018750054
+        },
+        {
+          "step": 41,
+          "pre_n": 21991,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 4.963912520913524
+        },
+        {
+          "step": 45,
+          "pre_n": 37111,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 5.718800023076994
+        },
+        {
+          "step": 55,
+          "pre_n": 8807,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 3.643612526682773
+        },
+        {
+          "step": 59,
+          "pre_n": 14863,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 4.398500028846243
+        },
+        {
+          "step": 60,
+          "pre_n": 22295,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 4.983462529567404
+        },
+        {
+          "step": 67,
+          "pre_n": 4703,
+          "pre_alignment_bits": 5,
+          "post_alignment_bits": 4,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 2.7383500317308744
+        },
+        {
+          "step": 68,
+          "pre_n": 7055,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 3.3233125324520216
+        },
+        {
+          "step": 69,
+          "pre_n": 10583,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 3.908275033173183
+        }
+      ],
+      "num_repulsions": 22,
+      "first_repulsion_step": 0
+    },
+    {
+      "start": 217740015,
+      "total_steps": 497,
+      "repulsion_events": [
+        {
+          "step": 0,
+          "pre_n": 217740015,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 0.0
+        },
+        {
+          "step": 1,
+          "pre_n": 326610023,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 0.5849625007211561
+        },
+        {
+          "step": 5,
+          "pre_n": 551154415,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 1.3398500028846243
+        },
+        {
+          "step": 6,
+          "pre_n": 826731623,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 1.9248125036057804
+        },
+        {
+          "step": 10,
+          "pre_n": 1395109615,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 2.6797000057692486
+        },
+        {
+          "step": 11,
+          "pre_n": 2092664423,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 3.2646625064904047
+        },
+        {
+          "step": 15,
+          "pre_n": 3531371215,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 4.019550008653873
+        },
+        {
+          "step": 16,
+          "pre_n": 5297056823,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 4.604512509375027
+        },
+        {
+          "step": 21,
+          "pre_n": 4469391695,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 4.359400011538497
+        },
+        {
+          "step": 22,
+          "pre_n": 6704087543,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 4.9443625122596515
+        },
+        {
+          "step": 29,
+          "pre_n": 4242430399,
+          "pre_alignment_bits": 6,
+          "post_alignment_bits": 5,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 4.284212515144276
+        },
+        {
+          "step": 30,
+          "pre_n": 6363645599,
+          "pre_alignment_bits": 5,
+          "post_alignment_bits": 4,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 4.869175015865437
+        },
+        {
+          "step": 31,
+          "pre_n": 9545468399,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 5.4541375165865915
+        },
+        {
+          "step": 32,
+          "pre_n": 14318202599,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 6.039100017307746
+        },
+        {
+          "step": 36,
+          "pre_n": 24161966887,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 6.793987519471216
+        },
+        {
+          "step": 44,
+          "pre_n": 22934992007,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 6.718800023076994
+        },
+        {
+          "step": 52,
+          "pre_n": 7256774815,
+          "pre_alignment_bits": 5,
+          "post_alignment_bits": 4,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 5.058650025961619
+        },
+        {
+          "step": 53,
+          "pre_n": 10885162223,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 5.643612526682773
+        },
+        {
+          "step": 54,
+          "pre_n": 16327743335,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 6.228575027403934
+        },
+        {
+          "step": 58,
+          "pre_n": 27553066879,
+          "pre_alignment_bits": 7,
+          "post_alignment_bits": 6,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 6.983462529567404
+        },
+        {
+          "step": 59,
+          "pre_n": 41329600319,
+          "pre_alignment_bits": 6,
+          "post_alignment_bits": 5,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 7.568425030288552
+        },
+        {
+          "step": 60,
+          "pre_n": 61994400479,
+          "pre_alignment_bits": 5,
+          "post_alignment_bits": 4,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 8.153387531009713
+        },
+        {
+          "step": 61,
+          "pre_n": 92991600719,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 8.738350031730874
+        },
+        {
+          "step": 62,
+          "pre_n": 139487401079,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 9.323312532452022
+        },
+        {
+          "step": 77,
+          "pre_n": 9309660223,
+          "pre_alignment_bits": 6,
+          "post_alignment_bits": 5,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 5.418050037500109
+        },
+        {
+          "step": 78,
+          "pre_n": 13964490335,
+          "pre_alignment_bits": 5,
+          "post_alignment_bits": 4,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 6.00301253822127
+        },
+        {
+          "step": 79,
+          "pre_n": 20946735503,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 6.587975038942432
+        },
+        {
+          "step": 80,
+          "pre_n": 31420103255,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 7.172937539663579
+        },
+        {
+          "step": 99,
+          "pre_n": 3538752895,
+          "pre_alignment_bits": 7,
+          "post_alignment_bits": 6,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 4.02256254687515
+        },
+        {
+          "step": 100,
+          "pre_n": 5308129343,
+          "pre_alignment_bits": 6,
+          "post_alignment_bits": 5,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 4.607525047596297
+        },
+        {
+          "step": 101,
+          "pre_n": 7962194015,
+          "pre_alignment_bits": 5,
+          "post_alignment_bits": 4,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 5.192487548317459
+        },
+        {
+          "step": 102,
+          "pre_n": 11943291023,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 5.777450049038606
+        },
+        {
+          "step": 103,
+          "pre_n": 17914936535,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 6.362412549759767
+        },
+        {
+          "step": 116,
+          "pre_n": 4782710719,
+          "pre_alignment_bits": 6,
+          "post_alignment_bits": 5,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 4.457150054807869
+        },
+        {
+          "step": 117,
+          "pre_n": 7174066079,
+          "pre_alignment_bits": 5,
+          "post_alignment_bits": 4,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 5.042112555529016
+        },
+        {
+          "step": 118,
+          "pre_n": 10761099119,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 5.6270750562501775
+        },
+        {
+          "step": 119,
+          "pre_n": 16141648679,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 6.212037556971325
+        },
+        {
+          "step": 127,
+          "pre_n": 15321955583,
+          "pre_alignment_bits": 8,
+          "post_alignment_bits": 7,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 6.136850060577103
+        },
+        {
+          "step": 128,
+          "pre_n": 22982933375,
+          "pre_alignment_bits": 7,
+          "post_alignment_bits": 6,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 6.721812561298265
+        },
+        {
+          "step": 129,
+          "pre_n": 34474400063,
+          "pre_alignment_bits": 6,
+          "post_alignment_bits": 5,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 7.306775062019426
+        },
+        {
+          "step": 130,
+          "pre_n": 51711600095,
+          "pre_alignment_bits": 5,
+          "post_alignment_bits": 4,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 7.8917375627405875
+        },
+        {
+          "step": 131,
+          "pre_n": 77567400143,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 8.476700063461749
+        },
+        {
+          "step": 132,
+          "pre_n": 116351100215,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 9.061662564182882
+        },
+        {
+          "step": 137,
+          "pre_n": 98171240807,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 8.816550066346366
+        },
+        {
+          "step": 141,
+          "pre_n": 165663968863,
+          "pre_alignment_bits": 5,
+          "post_alignment_bits": 4,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 9.571437568509822
+        },
+        {
+          "step": 142,
+          "pre_n": 248495953295,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 10.156400069230983
+        },
+        {
+          "step": 143,
+          "pre_n": 372743929943,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 10.741362569952145
+        },
+        {
+          "step": 153,
+          "pre_n": 29484627271,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 7.081212572836762
+        },
+        {
+          "step": 159,
+          "pre_n": 37316481391,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 7.421062575721379
+        },
+        {
+          "step": 160,
+          "pre_n": 55974722087,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 8.00602507644254
+        },
+        {
+          "step": 173,
+          "pre_n": 4981148975,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 4.5158000807694805
+        },
+        {
+          "step": 174,
+          "pre_n": 7471723463,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 5.100762581490642
+        },
+        {
+          "step": 182,
+          "pre_n": 7092300007,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 5.0255750850964205
+        },
+        {
+          "step": 186,
+          "pre_n": 11968256263,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 5.780462587259876
+        },
+        {
+          "step": 193,
+          "pre_n": 7573662167,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 5.120312590144522
+        },
+        {
+          "step": 199,
+          "pre_n": 3195138727,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 3.8752000923079777
+        },
+        {
+          "step": 218,
+          "pre_n": 1079576951,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 2.3097876002406963
+        },
+        {
+          "step": 226,
+          "pre_n": 341584895,
+          "pre_alignment_bits": 10,
+          "post_alignment_bits": 9,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 0.6496376031253135
+        },
+        {
+          "step": 227,
+          "pre_n": 512377343,
+          "pre_alignment_bits": 9,
+          "post_alignment_bits": 8,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 1.234600103846475
+        },
+        {
+          "step": 228,
+          "pre_n": 768566015,
+          "pre_alignment_bits": 8,
+          "post_alignment_bits": 7,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 1.8195626045676363
+        },
+        {
+          "step": 229,
+          "pre_n": 1152849023,
+          "pre_alignment_bits": 7,
+          "post_alignment_bits": 6,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 2.4045251052887977
+        },
+        {
+          "step": 230,
+          "pre_n": 1729273535,
+          "pre_alignment_bits": 6,
+          "post_alignment_bits": 5,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 2.9894876060099307
+        },
+        {
+          "step": 231,
+          "pre_n": 2593910303,
+          "pre_alignment_bits": 5,
+          "post_alignment_bits": 4,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 3.574450106731092
+        },
+        {
+          "step": 232,
+          "pre_n": 3890865455,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 4.1594126074522535
+        },
+        {
+          "step": 233,
+          "pre_n": 5836298183,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 4.744375108173415
+        },
+        {
+          "step": 245,
+          "pre_n": 3116207063,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 3.8391126132215163
+        },
+        {
+          "step": 251,
+          "pre_n": 1314649855,
+          "pre_alignment_bits": 8,
+          "post_alignment_bits": 7,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 2.594000115384972
+        },
+        {
+          "step": 252,
+          "pre_n": 1971974783,
+          "pre_alignment_bits": 7,
+          "post_alignment_bits": 6,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 3.1789626161061335
+        },
+        {
+          "step": 253,
+          "pre_n": 2957962175,
+          "pre_alignment_bits": 6,
+          "post_alignment_bits": 5,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 3.763925116827295
+        },
+        {
+          "step": 254,
+          "pre_n": 4436943263,
+          "pre_alignment_bits": 5,
+          "post_alignment_bits": 4,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 4.348887617548428
+        },
+        {
+          "step": 255,
+          "pre_n": 6655414895,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 4.933850118269618
+        },
+        {
+          "step": 256,
+          "pre_n": 9983122343,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 5.518812618990751
+        },
+        {
+          "step": 278,
+          "pre_n": 1264915591,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 2.5383626276446307
+        },
+        {
+          "step": 286,
+          "pre_n": 400227199,
+          "pre_alignment_bits": 7,
+          "post_alignment_bits": 6,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 0.8782126305292763
+        },
+        {
+          "step": 287,
+          "pre_n": 600340799,
+          "pre_alignment_bits": 6,
+          "post_alignment_bits": 5,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 1.4631751312504093
+        },
+        {
+          "step": 288,
+          "pre_n": 900511199,
+          "pre_alignment_bits": 5,
+          "post_alignment_bits": 4,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 2.0481376319715423
+        },
+        {
+          "step": 289,
+          "pre_n": 1350766799,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 2.633100132692732
+        },
+        {
+          "step": 290,
+          "pre_n": 2026150199,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 3.218062633413865
+        },
+        {
+          "step": 295,
+          "pre_n": 1709564231,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 2.972950135577321
+        },
+        {
+          "step": 301,
+          "pre_n": 2163667231,
+          "pre_alignment_bits": 5,
+          "post_alignment_bits": 4,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 3.3128001384619665
+        },
+        {
+          "step": 302,
+          "pre_n": 3245500847,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 3.8977626391830995
+        },
+        {
+          "step": 303,
+          "pre_n": 4868251271,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 4.482725139904289
+        },
+        {
+          "step": 313,
+          "pre_n": 1155258847,
+          "pre_alignment_bits": 5,
+          "post_alignment_bits": 4,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 2.407537643510068
+        },
+        {
+          "step": 314,
+          "pre_n": 1732888271,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 2.992500144231201
+        },
+        {
+          "step": 315,
+          "pre_n": 2599332407,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 3.5774626449523907
+        },
+        {
+          "step": 320,
+          "pre_n": 2193186719,
+          "pre_alignment_bits": 5,
+          "post_alignment_bits": 4,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 3.3323501471158465
+        },
+        {
+          "step": 321,
+          "pre_n": 3289780079,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 3.9173126478369795
+        },
+        {
+          "step": 322,
+          "pre_n": 4934670119,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 4.502275148558169
+        },
+        {
+          "step": 336,
+          "pre_n": 5928290527,
+          "pre_alignment_bits": 5,
+          "post_alignment_bits": 4,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 4.766937655048537
+        },
+        {
+          "step": 337,
+          "pre_n": 8892435791,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 5.3519001557697266
+        },
+        {
+          "step": 338,
+          "pre_n": 13338653687,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 5.9368626564908595
+        },
+        {
+          "step": 353,
+          "pre_n": 296749223,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 0.44663766081782796
+        },
+        {
+          "step": 360,
+          "pre_n": 563359855,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 1.3714501644236066
+        },
+        {
+          "step": 361,
+          "pre_n": 845039783,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 1.9564126651447395
+        },
+        {
+          "step": 368,
+          "pre_n": 1604255215,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 2.881225168750518
+        },
+        {
+          "step": 369,
+          "pre_n": 2406382823,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 3.466187669471651
+        },
+        {
+          "step": 373,
+          "pre_n": 4060771015,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 4.221075171635164
+        },
+        {
+          "step": 386,
+          "pre_n": 361364999,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 0.7308501759620754
+        },
+        {
+          "step": 426,
+          "pre_n": 381991,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": -9.154862310335943
+        },
+        {
+          "step": 441,
+          "pre_n": 25495,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": -13.060124805287842
+        },
+        {
+          "step": 455,
+          "pre_n": 1135,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": -17.55034980096093
+        },
+        {
+          "step": 456,
+          "pre_n": 1703,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": -16.96538730023974
+        },
+        {
+          "step": 469,
+          "pre_n": 455,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": -18.870649795191696
+        },
+        {
+          "step": 486,
+          "pre_n": 23,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": -23.190949789422405
+        }
+      ],
+      "num_repulsions": 104,
+      "first_repulsion_step": 0
+    },
+    {
+      "start": 2416326538309822975,
+      "total_steps": 599,
+      "repulsion_events": [
+        {
+          "step": 0,
+          "pre_n": 2416326538309822975,
+          "pre_alignment_bits": 9,
+          "post_alignment_bits": 8,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 0.0
+        },
+        {
+          "step": 1,
+          "pre_n": 3624489807464734463,
+          "pre_alignment_bits": 8,
+          "post_alignment_bits": 7,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 0.5849625007211561
+        },
+        {
+          "step": 2,
+          "pre_n": 5436734711197101695,
+          "pre_alignment_bits": 7,
+          "post_alignment_bits": 6,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 1.1699250014423122
+        },
+        {
+          "step": 3,
+          "pre_n": 8155102066795652543,
+          "pre_alignment_bits": 6,
+          "post_alignment_bits": 5,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 1.7548875021634682
+        },
+        {
+          "step": 4,
+          "pre_n": 12232653100193478815,
+          "pre_alignment_bits": 5,
+          "post_alignment_bits": 4,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 2.3398500028846243
+        },
+        {
+          "step": 5,
+          "pre_n": 18348979650290218223,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 2.9248125036057804
+        },
+        {
+          "step": 6,
+          "pre_n": 27523469475435327335,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 3.5097750043269365
+        },
+        {
+          "step": 10,
+          "pre_n": 46445854739797114879,
+          "pre_alignment_bits": 24,
+          "post_alignment_bits": 23,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 4.264662506490405
+        },
+        {
+          "step": 11,
+          "pre_n": 69668782109695672319,
+          "pre_alignment_bits": 23,
+          "post_alignment_bits": 22,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 4.849625007211561
+        },
+        {
+          "step": 12,
+          "pre_n": 104503173164543508479,
+          "pre_alignment_bits": 22,
+          "post_alignment_bits": 21,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 5.434587507932719
+        },
+        {
+          "step": 13,
+          "pre_n": 156754759746815262719,
+          "pre_alignment_bits": 21,
+          "post_alignment_bits": 20,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 6.019550008653873
+        },
+        {
+          "step": 14,
+          "pre_n": 235132139620222894079,
+          "pre_alignment_bits": 20,
+          "post_alignment_bits": 19,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 6.604512509375027
+        },
+        {
+          "step": 15,
+          "pre_n": 352698209430334341119,
+          "pre_alignment_bits": 19,
+          "post_alignment_bits": 18,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 7.189475010096185
+        },
+        {
+          "step": 16,
+          "pre_n": 529047314145501511679,
+          "pre_alignment_bits": 18,
+          "post_alignment_bits": 17,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 7.774437510817343
+        },
+        {
+          "step": 17,
+          "pre_n": 793570971218252267519,
+          "pre_alignment_bits": 17,
+          "post_alignment_bits": 16,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 8.359400011538497
+        },
+        {
+          "step": 18,
+          "pre_n": 1190356456827378401279,
+          "pre_alignment_bits": 16,
+          "post_alignment_bits": 15,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 8.944362512259652
+        },
+        {
+          "step": 19,
+          "pre_n": 1785534685241067601919,
+          "pre_alignment_bits": 15,
+          "post_alignment_bits": 14,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 9.52932501298081
+        },
+        {
+          "step": 20,
+          "pre_n": 2678302027861601402879,
+          "pre_alignment_bits": 14,
+          "post_alignment_bits": 13,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 10.114287513701967
+        },
+        {
+          "step": 21,
+          "pre_n": 4017453041792402104319,
+          "pre_alignment_bits": 13,
+          "post_alignment_bits": 12,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 10.699250014423122
+        },
+        {
+          "step": 22,
+          "pre_n": 6026179562688603156479,
+          "pre_alignment_bits": 12,
+          "post_alignment_bits": 11,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 11.284212515144276
+        },
+        {
+          "step": 23,
+          "pre_n": 9039269344032904734719,
+          "pre_alignment_bits": 11,
+          "post_alignment_bits": 10,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 11.869175015865437
+        },
+        {
+          "step": 24,
+          "pre_n": 13558904016049357102079,
+          "pre_alignment_bits": 10,
+          "post_alignment_bits": 9,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 12.454137516586592
+        },
+        {
+          "step": 25,
+          "pre_n": 20338356024074035653119,
+          "pre_alignment_bits": 9,
+          "post_alignment_bits": 8,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 13.039100017307746
+        },
+        {
+          "step": 26,
+          "pre_n": 30507534036111053479679,
+          "pre_alignment_bits": 8,
+          "post_alignment_bits": 7,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 13.6240625180289
+        },
+        {
+          "step": 27,
+          "pre_n": 45761301054166580219519,
+          "pre_alignment_bits": 7,
+          "post_alignment_bits": 6,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 14.209025018750054
+        },
+        {
+          "step": 28,
+          "pre_n": 68641951581249870329279,
+          "pre_alignment_bits": 6,
+          "post_alignment_bits": 5,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 14.793987519471216
+        },
+        {
+          "step": 29,
+          "pre_n": 102962927371874805493919,
+          "pre_alignment_bits": 5,
+          "post_alignment_bits": 4,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 15.37895002019237
+        },
+        {
+          "step": 30,
+          "pre_n": 154444391057812208240879,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 15.963912520913524
+        },
+        {
+          "step": 31,
+          "pre_n": 231666586586718312361319,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 16.548875021634686
+        },
+        {
+          "step": 35,
+          "pre_n": 390937364865087152109727,
+          "pre_alignment_bits": 5,
+          "post_alignment_bits": 4,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 17.30376252379815
+        },
+        {
+          "step": 36,
+          "pre_n": 586406047297630728164591,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 17.888725024519303
+        },
+        {
+          "step": 37,
+          "pre_n": 879609070946446092246887,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 18.473687525240464
+        },
+        {
+          "step": 41,
+          "pre_n": 1484340307222127780666623,
+          "pre_alignment_bits": 8,
+          "post_alignment_bits": 7,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 19.228575027403934
+        },
+        {
+          "step": 42,
+          "pre_n": 2226510460833191670999935,
+          "pre_alignment_bits": 7,
+          "post_alignment_bits": 6,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 19.81353752812509
+        },
+        {
+          "step": 43,
+          "pre_n": 3339765691249787506499903,
+          "pre_alignment_bits": 6,
+          "post_alignment_bits": 5,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 20.398500028846243
+        },
+        {
+          "step": 44,
+          "pre_n": 5009648536874681259749855,
+          "pre_alignment_bits": 5,
+          "post_alignment_bits": 4,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 20.983462529567404
+        },
+        {
+          "step": 45,
+          "pre_n": 7514472805312021889624783,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 21.56842503028855
+        },
+        {
+          "step": 46,
+          "pre_n": 11271709207968032834437175,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 22.153387531009713
+        },
+        {
+          "step": 51,
+          "pre_n": 9510504644223027704056367,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 21.908275033173183
+        },
+        {
+          "step": 52,
+          "pre_n": 14265756966334541556084551,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 22.49323753389433
+        },
+        {
+          "step": 58,
+          "pre_n": 18055098660517154156919511,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 22.83308753677896
+        },
+        {
+          "step": 68,
+          "pre_n": 4284559545415691855597111,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 20.75790004038474
+        },
+        {
+          "step": 73,
+          "pre_n": 3615097116444490003160063,
+          "pre_alignment_bits": 10,
+          "post_alignment_bits": 9,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 20.51278754254821
+        },
+        {
+          "step": 74,
+          "pre_n": 5422645674666735004740095,
+          "pre_alignment_bits": 9,
+          "post_alignment_bits": 8,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 21.09775004326937
+        },
+        {
+          "step": 75,
+          "pre_n": 8133968512000102507110143,
+          "pre_alignment_bits": 8,
+          "post_alignment_bits": 7,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 21.68271254399052
+        },
+        {
+          "step": 76,
+          "pre_n": 12200952768000153760665215,
+          "pre_alignment_bits": 7,
+          "post_alignment_bits": 6,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 22.26767504471168
+        },
+        {
+          "step": 77,
+          "pre_n": 18301429152000230640997823,
+          "pre_alignment_bits": 6,
+          "post_alignment_bits": 5,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 22.852637545432827
+        },
+        {
+          "step": 78,
+          "pre_n": 27452143728000345961496735,
+          "pre_alignment_bits": 5,
+          "post_alignment_bits": 4,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 23.43760004615399
+        },
+        {
+          "step": 79,
+          "pre_n": 41178215592000518942245103,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 24.02256254687515
+        },
+        {
+          "step": 80,
+          "pre_n": 61767323388000778413367655,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 24.607525047596297
+        },
+        {
+          "step": 84,
+          "pre_n": 104232358217251313572557919,
+          "pre_alignment_bits": 5,
+          "post_alignment_bits": 4,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 25.362412549759767
+        },
+        {
+          "step": 85,
+          "pre_n": 156348537325876970358836879,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 25.94737505048093
+        },
+        {
+          "step": 86,
+          "pre_n": 234522805988815455538255319,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 26.532337551202076
+        },
+        {
+          "step": 92,
+          "pre_n": 98939308776531520305201463,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 25.287225053365546
+        },
+        {
+          "step": 97,
+          "pre_n": 83480041780198470257513735,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 25.042112555529016
+        },
+        {
+          "step": 104,
+          "pre_n": 52827213939031844459832911,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 24.381962558413647
+        },
+        {
+          "step": 105,
+          "pre_n": 79240820908547766689749367,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 24.96692505913481
+        },
+        {
+          "step": 113,
+          "pre_n": 25072290990595191804178511,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 23.306775062019426
+        },
+        {
+          "step": 114,
+          "pre_n": 37608436485892787706267767,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 23.891737562740587
+        },
+        {
+          "step": 123,
+          "pre_n": 5949772178432257430093143,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 21.231587565625205
+        },
+        {
+          "step": 133,
+          "pre_n": 1411908827499061089367807,
+          "pre_alignment_bits": 8,
+          "post_alignment_bits": 7,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 19.156400069230983
+        },
+        {
+          "step": 134,
+          "pre_n": 2117863241248591634051711,
+          "pre_alignment_bits": 7,
+          "post_alignment_bits": 6,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 19.741362569952145
+        },
+        {
+          "step": 135,
+          "pre_n": 3176794861872887451077567,
+          "pre_alignment_bits": 6,
+          "post_alignment_bits": 5,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 20.326325070673306
+        },
+        {
+          "step": 136,
+          "pre_n": 4765192292809331176616351,
+          "pre_alignment_bits": 5,
+          "post_alignment_bits": 4,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 20.91128757139444
+        },
+        {
+          "step": 137,
+          "pre_n": 7147788439213996764924527,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 21.4962500721156
+        },
+        {
+          "step": 138,
+          "pre_n": 10721682658820995147386791,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 22.081212572836762
+        },
+        {
+          "step": 177,
+          "pre_n": 68001456106229399540471,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 14.780462587259876
+        },
+        {
+          "step": 198,
+          "pre_n": 5744101498055562706183,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 11.215050095192595
+        },
+        {
+          "step": 205,
+          "pre_n": 3634939229238285775007,
+          "pre_alignment_bits": 5,
+          "post_alignment_bits": 4,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 10.554900098077212
+        },
+        {
+          "step": 206,
+          "pre_n": 5452408843857428662511,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 11.139862598798373
+        },
+        {
+          "step": 207,
+          "pre_n": 8178613265786142993767,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 11.724825099519535
+        },
+        {
+          "step": 211,
+          "pre_n": 13801409886014116301983,
+          "pre_alignment_bits": 5,
+          "post_alignment_bits": 4,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 12.479712601683019
+        },
+        {
+          "step": 212,
+          "pre_n": 20702114829021174452975,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 13.064675102404152
+        },
+        {
+          "step": 213,
+          "pre_n": 31053172243531761679463,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 13.649637603125313
+        },
+        {
+          "step": 217,
+          "pre_n": 52402228160959847834095,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 14.404525105288798
+        },
+        {
+          "step": 218,
+          "pre_n": 78603342241439771751143,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 14.98948760600993
+        },
+        {
+          "step": 222,
+          "pre_n": 132643140032429614830055,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 15.744375108173415
+        },
+        {
+          "step": 226,
+          "pre_n": 223835298804724975025719,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 16.49926261033687
+        },
+        {
+          "step": 231,
+          "pre_n": 188861033366486697677951,
+          "pre_alignment_bits": 7,
+          "post_alignment_bits": 6,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 16.254150112500355
+        },
+        {
+          "step": 232,
+          "pre_n": 283291550049730046516927,
+          "pre_alignment_bits": 6,
+          "post_alignment_bits": 5,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 16.839112613221516
+        },
+        {
+          "step": 233,
+          "pre_n": 424937325074595069775391,
+          "pre_alignment_bits": 5,
+          "post_alignment_bits": 4,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 17.42407511394265
+        },
+        {
+          "step": 234,
+          "pre_n": 637405987611892604663087,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 18.00903761466381
+        },
+        {
+          "step": 235,
+          "pre_n": 956108981417838906994631,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 18.594000115384972
+        },
+        {
+          "step": 246,
+          "pre_n": 1021001143730866059373663,
+          "pre_alignment_bits": 5,
+          "post_alignment_bits": 4,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 18.688737620433074
+        },
+        {
+          "step": 247,
+          "pre_n": 1531501715596299089060495,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 19.273700121154206
+        },
+        {
+          "step": 248,
+          "pre_n": 2297252573394448633590743,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 19.858662621875396
+        },
+        {
+          "step": 254,
+          "pre_n": 969153429400783017296095,
+          "pre_alignment_bits": 5,
+          "post_alignment_bits": 4,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 18.613550124038852
+        },
+        {
+          "step": 255,
+          "pre_n": 1453730144101174525944143,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 19.198512624759985
+        },
+        {
+          "step": 256,
+          "pre_n": 2180595216151761788916215,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 19.783475125481175
+        },
+        {
+          "step": 263,
+          "pre_n": 1379907910221036757048543,
+          "pre_alignment_bits": 5,
+          "post_alignment_bits": 4,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 19.123325128365764
+        },
+        {
+          "step": 264,
+          "pre_n": 2069861865331555135572815,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 19.708287629086954
+        },
+        {
+          "step": 265,
+          "pre_n": 3104792797997332703359223,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 20.293250129808087
+        },
+        {
+          "step": 275,
+          "pre_n": 736781884681007663004191,
+          "pre_alignment_bits": 5,
+          "post_alignment_bits": 4,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 18.218062633413865
+        },
+        {
+          "step": 276,
+          "pre_n": 1105172827021511494506287,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 18.803025134135055
+        },
+        {
+          "step": 277,
+          "pre_n": 1657759240532267241759431,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 19.387987634856188
+        },
+        {
+          "step": 292,
+          "pre_n": 110642073335085096976559,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 15.48272513990429
+        },
+        {
+          "step": 293,
+          "pre_n": 165963110002627645464839,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 16.067687640625422
+        },
+        {
+          "step": 300,
+          "pre_n": 105023530548537806895719,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 15.407537643510068
+        },
+        {
+          "step": 304,
+          "pre_n": 177227207800657549136527,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 16.162425145673524
+        },
+        {
+          "step": 305,
+          "pre_n": 265840811700986323704791,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 16.747387646394657
+        },
+        {
+          "step": 311,
+          "pre_n": 112151592436353605312959,
+          "pre_alignment_bits": 6,
+          "post_alignment_bits": 5,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 15.50227514855817
+        },
+        {
+          "step": 312,
+          "pre_n": 168227388654530407969439,
+          "pre_alignment_bits": 5,
+          "post_alignment_bits": 4,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 16.087237649279302
+        },
+        {
+          "step": 313,
+          "pre_n": 252341082981795611954159,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 16.672200150000435
+        },
+        {
+          "step": 314,
+          "pre_n": 378511624472693417931239,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 17.257162650721625
+        },
+        {
+          "step": 318,
+          "pre_n": 638738366297670142758967,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 18.01205015288508
+        },
+        {
+          "step": 323,
+          "pre_n": 538935496563659182952879,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 17.766937655048537
+        },
+        {
+          "step": 324,
+          "pre_n": 808403244845488774429319,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 18.351900155769727
+        },
+        {
+          "step": 342,
+          "pre_n": 20232901342129714389919,
+          "pre_alignment_bits": 5,
+          "post_alignment_bits": 4,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 13.031600161538961
+        },
+        {
+          "step": 343,
+          "pre_n": 30349352013194571584879,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 13.616562662260094
+        },
+        {
+          "step": 344,
+          "pre_n": 45524028019791857377319,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 14.201525162981284
+        },
+        {
+          "step": 393,
+          "pre_n": 205552856853687222767,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 6.41055018173131
+        },
+        {
+          "step": 394,
+          "pre_n": 308329285280530834151,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 6.9955126824525
+        },
+        {
+          "step": 398,
+          "pre_n": 520305668910895782631,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 7.750400184615955
+        },
+        {
+          "step": 402,
+          "pre_n": 878015816287136633191,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 8.505287686779411
+        },
+        {
+          "step": 406,
+          "pre_n": 1481651689984543068511,
+          "pre_alignment_bits": 5,
+          "post_alignment_bits": 4,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 9.260175188942867
+        },
+        {
+          "step": 407,
+          "pre_n": 2222477534976814602767,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 9.845137689664057
+        },
+        {
+          "step": 408,
+          "pre_n": 3333716302465221904151,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 10.43010019038519
+        },
+        {
+          "step": 415,
+          "pre_n": 703205782551257745407,
+          "pre_alignment_bits": 11,
+          "post_alignment_bits": 10,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 8.184987692548646
+        },
+        {
+          "step": 416,
+          "pre_n": 1054808673826886618111,
+          "pre_alignment_bits": 10,
+          "post_alignment_bits": 9,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 8.769950193269835
+        },
+        {
+          "step": 417,
+          "pre_n": 1582213010740329927167,
+          "pre_alignment_bits": 9,
+          "post_alignment_bits": 8,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 9.354912693990968
+        },
+        {
+          "step": 418,
+          "pre_n": 2373319516110494890751,
+          "pre_alignment_bits": 8,
+          "post_alignment_bits": 7,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 9.939875194712158
+        },
+        {
+          "step": 419,
+          "pre_n": 3559979274165742336127,
+          "pre_alignment_bits": 7,
+          "post_alignment_bits": 6,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 10.524837695433291
+        },
+        {
+          "step": 420,
+          "pre_n": 5339968911248613504191,
+          "pre_alignment_bits": 6,
+          "post_alignment_bits": 5,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 11.109800196154424
+        },
+        {
+          "step": 421,
+          "pre_n": 8009953366872920256287,
+          "pre_alignment_bits": 5,
+          "post_alignment_bits": 4,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 11.694762696875614
+        },
+        {
+          "step": 422,
+          "pre_n": 12014930050309380384431,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 12.279725197596747
+        },
+        {
+          "step": 423,
+          "pre_n": 18022395075464070576647,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 12.864687698317937
+        },
+        {
+          "step": 441,
+          "pre_n": 4059617640728294004367,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 10.714312705529494
+        },
+        {
+          "step": 442,
+          "pre_n": 6089426461092441006551,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 11.299275206250627
+        },
+        {
+          "step": 448,
+          "pre_n": 2568976788273373549639,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 10.054162708414083
+        },
+        {
+          "step": 465,
+          "pre_n": 1157344897237811544287,
+          "pre_alignment_bits": 5,
+          "post_alignment_bits": 4,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 8.90378771562564
+        },
+        {
+          "step": 466,
+          "pre_n": 1736017345856717316431,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 9.48875021634683
+        },
+        {
+          "step": 467,
+          "pre_n": 2604026018785075974647,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 10.073712717067963
+        },
+        {
+          "step": 474,
+          "pre_n": 1647860215012430890207,
+          "pre_alignment_bits": 5,
+          "post_alignment_bits": 4,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 9.413562719952608
+        },
+        {
+          "step": 475,
+          "pre_n": 2471790322518646335311,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 9.998525220673741
+        },
+        {
+          "step": 476,
+          "pre_n": 3707685483777969502967,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 10.583487721394931
+        },
+        {
+          "step": 488,
+          "pre_n": 659888358807163029215,
+          "pre_alignment_bits": 5,
+          "post_alignment_bits": 4,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 8.093262725721843
+        },
+        {
+          "step": 489,
+          "pre_n": 989832538210744543823,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 8.678225226443033
+        },
+        {
+          "step": 490,
+          "pre_n": 1484748807316116815735,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": 9.263187727164166
+        },
+        {
+          "step": 526,
+          "pre_n": 1275809078989687,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": -10.88718726562422
+        },
+        {
+          "step": 536,
+          "pre_n": 302755474799311,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": -12.962374762018499
+        },
+        {
+          "step": 537,
+          "pre_n": 454133212198967,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": -12.377412261297309
+        },
+        {
+          "step": 542,
+          "pre_n": 383174897792879,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": -12.622524759133853
+        },
+        {
+          "step": 543,
+          "pre_n": 574762346689319,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": -12.037562258412663
+        },
+        {
+          "step": 551,
+          "pre_n": 545575196271503,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": -12.112749754806941
+        },
+        {
+          "step": 552,
+          "pre_n": 818362794407255,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": -11.527787254085752
+        },
+        {
+          "step": 582,
+          "pre_n": 135014312287,
+          "pre_alignment_bits": 5,
+          "post_alignment_bits": 4,
+          "delta_alignment": -1,
+          "current_multiplier_debt": -24.093199746153005
+        },
+        {
+          "step": 583,
+          "pre_n": 202521468431,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": -23.50823724543193
+        },
+        {
+          "step": 584,
+          "pre_n": 303782202647,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": -22.92327474471074
+        },
+        {
+          "step": 596,
+          "pre_n": 18022235167,
+          "pre_alignment_bits": 5,
+          "post_alignment_bits": 4,
+          "delta_alignment": -1,
+          "current_multiplier_debt": -26.998462241105017
+        },
+        {
+          "step": 597,
+          "pre_n": 27033352751,
+          "pre_alignment_bits": 4,
+          "post_alignment_bits": 3,
+          "delta_alignment": -1,
+          "current_multiplier_debt": -26.413499740383827
+        },
+        {
+          "step": 598,
+          "pre_n": 40550029127,
+          "pre_alignment_bits": 3,
+          "post_alignment_bits": 2,
+          "delta_alignment": -1,
+          "current_multiplier_debt": -25.828537239662637
+        }
+      ],
+      "num_repulsions": 151,
+      "first_repulsion_step": 0
+    }
+  ],
+  "note": "Cocycle repulsion events on positive frontier shadows. eps-sensitive."
+}

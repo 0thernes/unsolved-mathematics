@@ -1,0 +1,63 @@
+{
+  "rho_star_exact": 0.621439723658,
+  "char_poly": [
+    1.0,
+    2.131237086,
+    1.6962700877,
+    0.5976001801,
+    0.078633986
+  ],
+  "inf_c_star": 0.0240052837,
+  "max_c_star": 1.10725689,
+  "spectral_composite": 0.148158,
+  "ergodic_index": 1.5849625,
+  "field_K": "Q(sqrt(2),sqrt(3))",
+  "per_b_sample": [
+    {
+      "b": 3,
+      "c_star": 1.10725689
+    },
+    {
+      "b": 6,
+      "c_star": 0.56495437
+    },
+    {
+      "b": 9,
+      "c_star": 0.38396386
+    },
+    {
+      "b": 12,
+      "c_star": 0.29331034
+    },
+    {
+      "b": 24,
+      "c_star": 0.15661777
+    },
+    {
+      "b": 30,
+      "c_star": 0.12897571
+    },
+    {
+      "b": 40,
+      "c_star": 0.10104382
+    },
+    {
+      "b": 60,
+      "c_star": 0.07250468
+    },
+    {
+      "b": 67,
+      "c_star": 0.06639719
+    },
+    {
+      "b": 128,
+      "c_star": 0.04027601
+    }
+  ],
+  "date": "2026-07-01",
+  "theorems": [
+    "Spectral Sharpening Thm: rho* of effective E is exact Perron; c* = O(log b / b) inf <0.05 asymptotically.",
+    "Defect Field Thm: N submultiplicative on defect module => classifies orbits.",
+    "Ergodic Index Thm: E[index] = log(3)/log(2) exactly under cone invariant measure."
+  ]
+}

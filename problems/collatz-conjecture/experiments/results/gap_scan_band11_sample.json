@@ -1,0 +1,109 @@
+{
+  "band": {
+    "band_k": 11,
+    "log2_n_ceiling": 33.334,
+    "o_min": 79335,
+    "q_k": 79335,
+    "q_k+1": 111202,
+    "tau_min": 125743
+  },
+  "band_closure": {
+    "proved_empty": true,
+    "reason": "max_tau=447 < tau_min=125743: no Terras violation can live in this band past lo"
+  },
+  "elapsed_seconds": 649.6,
+  "gamma_record_pinch": {
+    "gamma_ceiling_heuristic": 19.982226683919038,
+    "measured_max_gamma": 14.2463,
+    "pinch_ratio": 278.4,
+    "tau_implied_at_hi": 451.7,
+    "tau_min_required": 125743
+  },
+  "hi_inclusive": 3500000000,
+  "lo_exclusive": 2193206481,
+  "max_gamma": 14.2463,
+  "max_gamma_n": 2788008987,
+  "max_tau": 447,
+  "max_tau_n": 2788008987,
+  "mean_tau": 5.98529,
+  "mode": "band-scan",
+  "odd_integers_scanned": 653396759,
+  "records": [
+    {
+      "gamma": 6.6708,
+      "n": 2193845607,
+      "sigma": 207,
+      "tau": 207
+    },
+    {
+      "gamma": 6.703,
+      "n": 2194166247,
+      "sigma": 208,
+      "tau": 208
+    },
+    {
+      "gamma": 7.0574,
+      "n": 2194249151,
+      "sigma": 219,
+      "tau": 219
+    },
+    {
+      "gamma": 7.5086,
+      "n": 2194262175,
+      "sigma": 233,
+      "tau": 233
+    },
+    {
+      "gamma": 9.4742,
+      "n": 2195279207,
+      "sigma": 294,
+      "tau": 294
+    },
+    {
+      "gamma": 9.763,
+      "n": 2201005927,
+      "sigma": 303,
+      "tau": 303
+    },
+    {
+      "gamma": 10.9857,
+      "n": 2208360927,
+      "sigma": 341,
+      "tau": 341
+    },
+    {
+      "gamma": 11.1454,
+      "n": 2214186623,
+      "sigma": 346,
+      "tau": 346
+    },
+    {
+      "gamma": 11.5837,
+      "n": 2266952895,
+      "sigma": 360,
+      "tau": 360
+    },
+    {
+      "gamma": 11.584,
+      "n": 2553881087,
+      "sigma": 362,
+      "tau": 362
+    },
+    {
+      "gamma": 13.6514,
+      "n": 2741096351,
+      "sigma": 428,
+      "tau": 428
+    },
+    {
+      "gamma": 14.2463,
+      "n": 2788008987,
+      "sigma": 447,
+      "tau": 447
+    }
+  ],
+  "scan_floor": 2193206481,
+  "tau_min_required": 125743,
+  "terras_mismatches": [],
+  "terras_verified": true
+}

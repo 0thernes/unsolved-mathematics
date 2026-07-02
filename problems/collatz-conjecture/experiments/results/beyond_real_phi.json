@@ -1,0 +1,89 @@
+{
+  "mode": "collatz_beyond_frontier",
+  "date": "2026-07-01",
+  "thesis": "Human methods saturated the frontier-geometry reduction. AI must invent new objects (meta-frontiers, debt-quanta, decursive grammars, simulation invariants) and prove separation with them.",
+  "core_constants": {
+    "H": 0.9499555271883307,
+    "decay": 0.05004447281166935,
+    "gamma_ceil": 19.982226683919038
+  },
+  "exotic_potential": {
+    "base_depth": 20,
+    "samples": 3502,
+    "checked_alive_words": 2054,
+    "mean_exotic_drift": -0.02153992665073645,
+    "worst_exotic_drift": 0.11813454080868224,
+    "sample_records": [
+      {
+        "d": 4,
+        "o": 4,
+        "c": 65,
+        "phi": 1.0597616276834259,
+        "drift": -0.7444502519886731,
+        "bit": 0
+      },
+      {
+        "d": 4,
+        "o": 4,
+        "c": 65,
+        "phi": 1.0597616276834259,
+        "drift": 0.026024333518454457,
+        "bit": 1
+      },
+      {
+        "d": 4,
+        "o": 3,
+        "c": 19,
+        "phi": 0.19882860164368243,
+        "drift": 0.11813454080868224,
+        "bit": 1
+      },
+      {
+        "d": 4,
+        "o": 3,
+        "c": 23,
+        "phi": 0.2015705739519728,
+        "drift": 0.11756222487066154,
+        "bit": 1
+      },
+      {
+        "d": 5,
+        "o": 5,
+        "c": 211,
+        "phi": 1.0857859612018803,
+        "drift": -0.6729988479909546,
+        "bit": 0
+      },
+      {
+        "d": 5,
+        "o": 5,
+        "c": 211,
+        "phi": 1.0857859612018803,
+        "drift": 0.024613089088625584,
+        "bit": 1
+      },
+      {
+        "d": 5,
+        "o": 4,
+        "c": 65,
+        "phi": 0.3153113756947527,
+        "drift": -0.21869575146845663,
+        "bit": 0
+      },
+      {
+        "d": 5,
+        "o": 4,
+        "c": 65,
+        "phi": 0.3153113756947527,
+        "drift": 0.09848575063859066,
+        "bit": 1
+      }
+    ],
+    "eps_minus_mean_drift": -0.022619219219399,
+    "eps_minus_worst_drift": 0.11084367590950356,
+    "phi_closed_form": "phi(d,o,c) = (H - h(o/d)) + 0.25*log2(1+c)/(d+GAMMA) + 0.02*(o*log2(3)-d)",
+    "conjecture": "Uniform (or shadow-constrained) negative drift of this explicit phi on alive extensions of positive-integer shadows, combined with decursive termination, forces finite escape from S."
+  },
+  "elapsed_s": 0.01663899999402929,
+  "status": "Novel probes executed. Fuse results with repo certificate framework for next reduction step."
+}

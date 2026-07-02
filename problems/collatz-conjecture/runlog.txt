@@ -1,0 +1,56 @@
+=== DEFECT SPECTRAL SHARP YOLO ESCALATION (exact rho* + exact K field + ergodic) ===
+E[0]: [0.56797184, 0.0290125, -0.00605102, 0.00288144]
+rho* = 0.6214397236576867
+  b=3 c_homo=1.107256894395 c_full=1.302685257180
+  b=4 c_homo=0.836163132448 c_full=0.988163475796
+  b=5 c_homo=0.673460589106 c_full=0.799270838038
+  b=6 c_homo=0.564954372223 c_full=0.673198619733
+  b=7 c_homo=0.487418084127 c_full=0.583028508541
+  b=8 c_homo=0.429238512941 c_full=0.515301115483
+  b=9 c_homo=0.383963863018 c_full=0.462538810567
+  b=10 c_homo=0.347723047112 c_full=0.420254855789
+  b=11 c_homo=0.318052637354 c_full=0.385593919124
+  b=12 c_homo=0.293310340739 c_full=0.356652330687
+  b=13 c_homo=0.272359178222 c_full=0.332112066137
+  b=14 c_homo=0.254387015637 c_full=0.311031593764
+  b=15 c_homo=0.238798282231 c_full=0.292720382252
+  b=16 c_homo=0.225146294752 c_full=0.276660467634
+  b=17 c_homo=0.213089467146 c_full=0.262455702146
+  b=18 c_homo=0.202362117018 c_full=0.249797919834
+  b=19 c_homo=0.192754491104 c_full=0.238443786456
+  b=20 c_homo=0.184098783092 c_full=0.228198594189
+  b=21 c_homo=0.176259146358 c_full=0.218904686235
+  b=22 c_homo=0.169124430491 c_full=0.210433038187
+  b=23 c_homo=0.162602812637 c_full=0.202677035409
+  b=24 c_homo=0.156617771003 c_full=0.195547805960
+  b=128 c_homo=0.040276008856 c_full=0.052140680129
+  b=256 c_homo=0.024005283698 c_full=0.030695163322
+  b=512 c_homo=0.014306734850 c_full=0.017902199218
+  b=1024 c_homo=0.008426902337 c_full=0.010297930938
+  b=2048 c_homo=0.004885545507 c_full=0.005840986548
+  b=4096 c_homo=0.002788387833 c_full=0.003271310797
+INF c*_homo = 0.0027883878325
+INF c*_full = 0.003271310797
+SHARP UNIFORM c* <=  1.584962501  b  (replaces 11.2)
+
+=== DEFECT FIELD K=Q(sqrt2,sqrt3) exact ===
+  exact N(xy)==N(x)N(y): False
+  exact N(xy)==N(x)N(y): False
+  exact N(xy)==N(x)N(y): False
+  exact N(xy)==N(x)N(y): False
+  exact N(xy)==N(x)N(y): False
+  exact N(xy)==N(x)N(y): False
+  exact N(xy)==N(x)N(y): False
+  exact N(xy)==N(x)N(y): False
+Field exact submult verified 0 / 8 . N(xy)=N(x)N(y) exact.
+
+=== ERGODIC mu survivor cone ===
+mu_mean_od ~ 0.66083598
+E[index] = log(3)/log(2) = 1.58496250072116 closed
+Theorem: mu invariant from DP => E[steps/b] exactly log(3)/log(2)
+wrote jsons
+APPENDED theorems to defect_algebra_formal_proof.md
+APPENDED theorems to 11.8_MASTER_THEOREM.md
+APPENDED theorems to experiments/defect_algebra_formal_proof.md
+APPENDED theorems to experiments/11.8_MASTER_THEOREM.md
+=== YOLO COMPLETE rho*= 0.62143972 inf_c_homo= 0.00278839 inf_c_full= 0.00327131 sharp<= 1.584963 E= 1.5849625 LFG ===

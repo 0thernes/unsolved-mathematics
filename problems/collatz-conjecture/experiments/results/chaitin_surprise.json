@@ -1,0 +1,271 @@
+{
+  "results": [
+    {
+      "start": 27,
+      "bitlen": 5,
+      "steps": 59,
+      "odds": 37,
+      "total_surprise": 19.5,
+      "surprise_per_bit": 3.9,
+      "num_surprises": 13,
+      "first_surprise_d": 4,
+      "max_surprise_event": 1.5,
+      "exceeds_budget": true,
+      "sample_surprises": [
+        {
+          "d": 4,
+          "pre_align": 5,
+          "post_align": 4,
+          "surprise": 1.5,
+          "current": 31
+        },
+        {
+          "d": 5,
+          "pre_align": 4,
+          "post_align": 3,
+          "surprise": 1.5,
+          "current": 47
+        },
+        {
+          "d": 6,
+          "pre_align": 3,
+          "post_align": 2,
+          "surprise": 1.5,
+          "current": 71
+        },
+        {
+          "d": 15,
+          "pre_align": 3,
+          "post_align": 2,
+          "surprise": 1.5,
+          "current": 103
+        },
+        {
+          "d": 19,
+          "pre_align": 4,
+          "post_align": 3,
+          "surprise": 1.5,
+          "current": 175
+        }
+      ]
+    },
+    {
+      "start": 703,
+      "bitlen": 10,
+      "steps": 81,
+      "odds": 51,
+      "total_surprise": 33.0,
+      "surprise_per_bit": 3.3,
+      "num_surprises": 22,
+      "first_surprise_d": 1,
+      "max_surprise_event": 1.5,
+      "exceeds_budget": true,
+      "sample_surprises": [
+        {
+          "d": 1,
+          "pre_align": 6,
+          "post_align": 5,
+          "surprise": 1.5,
+          "current": 703
+        },
+        {
+          "d": 2,
+          "pre_align": 5,
+          "post_align": 4,
+          "surprise": 1.5,
+          "current": 1055
+        },
+        {
+          "d": 3,
+          "pre_align": 4,
+          "post_align": 3,
+          "surprise": 1.5,
+          "current": 1583
+        },
+        {
+          "d": 4,
+          "pre_align": 3,
+          "post_align": 2,
+          "surprise": 1.5,
+          "current": 2375
+        },
+        {
+          "d": 10,
+          "pre_align": 6,
+          "post_align": 5,
+          "surprise": 1.5,
+          "current": 3007
+        }
+      ]
+    },
+    {
+      "start": 35655,
+      "bitlen": 16,
+      "steps": 135,
+      "odds": 85,
+      "total_surprise": 52.5,
+      "surprise_per_bit": 3.28125,
+      "num_surprises": 35,
+      "first_surprise_d": 1,
+      "max_surprise_event": 1.5,
+      "exceeds_budget": true,
+      "sample_surprises": [
+        {
+          "d": 1,
+          "pre_align": 3,
+          "post_align": 2,
+          "surprise": 1.5,
+          "current": 35655
+        },
+        {
+          "d": 7,
+          "pre_align": 3,
+          "post_align": 2,
+          "surprise": 1.5,
+          "current": 45127
+        },
+        {
+          "d": 16,
+          "pre_align": 8,
+          "post_align": 7,
+          "surprise": 1.5,
+          "current": 64255
+        },
+        {
+          "d": 17,
+          "pre_align": 7,
+          "post_align": 6,
+          "surprise": 1.5,
+          "current": 96383
+        },
+        {
+          "d": 18,
+          "pre_align": 6,
+          "post_align": 5,
+          "surprise": 1.5,
+          "current": 144575
+        }
+      ]
+    },
+    {
+      "start": 626331,
+      "bitlen": 20,
+      "steps": 176,
+      "odds": 111,
+      "total_surprise": 66.0,
+      "surprise_per_bit": 3.3,
+      "num_surprises": 44,
+      "first_surprise_d": 4,
+      "max_surprise_event": 1.5,
+      "exceeds_budget": true,
+      "sample_surprises": [
+        {
+          "d": 4,
+          "pre_align": 4,
+          "post_align": 3,
+          "surprise": 1.5,
+          "current": 704623
+        },
+        {
+          "d": 5,
+          "pre_align": 3,
+          "post_align": 2,
+          "surprise": 1.5,
+          "current": 1056935
+        },
+        {
+          "d": 12,
+          "pre_align": 9,
+          "post_align": 8,
+          "surprise": 1.5,
+          "current": 2006527
+        },
+        {
+          "d": 13,
+          "pre_align": 8,
+          "post_align": 7,
+          "surprise": 1.5,
+          "current": 3009791
+        },
+        {
+          "d": 14,
+          "pre_align": 7,
+          "post_align": 6,
+          "surprise": 1.5,
+          "current": 4514687
+        }
+      ]
+    },
+    {
+      "start": 2358909599867980429759,
+      "bitlen": 71,
+      "steps": 738,
+      "odds": 465,
+      "total_surprise": 294.0,
+      "surprise_per_bit": 4.140845070422535,
+      "num_surprises": 196,
+      "first_surprise_d": 1,
+      "max_surprise_event": 1.5,
+      "exceeds_budget": true,
+      "sample_surprises": [
+        {
+          "d": 1,
+          "pre_align": 6,
+          "post_align": 5,
+          "surprise": 1.5,
+          "current": 2358909599867980429759
+        },
+        {
+          "d": 2,
+          "pre_align": 5,
+          "post_align": 4,
+          "surprise": 1.5,
+          "current": 3538364399801970644639
+        },
+        {
+          "d": 3,
+          "pre_align": 4,
+          "post_align": 3,
+          "surprise": 1.5,
+          "current": 5307546599702955966959
+        },
+        {
+          "d": 4,
+          "pre_align": 3,
+          "post_align": 2,
+          "surprise": 1.5,
+          "current": 7961319899554433950439
+        },
+        {
+          "d": 8,
+          "pre_align": 3,
+          "post_align": 2,
+          "surprise": 1.5,
+          "current": 13434727330498107291367
+        }
+      ]
+    },
+    {
+      "start": 1000000007,
+      "bitlen": 30,
+      "steps": 7,
+      "odds": 4,
+      "total_surprise": 1.5,
+      "surprise_per_bit": 0.05,
+      "num_surprises": 1,
+      "first_surprise_d": 1,
+      "max_surprise_event": 1.5,
+      "exceeds_budget": false,
+      "sample_surprises": [
+        {
+          "d": 1,
+          "pre_align": 3,
+          "post_align": 2,
+          "surprise": 1.5,
+          "current": 1000000007
+        }
+      ]
+    }
+  ],
+  "note": "Chaitin proxy: cumulative surprise (lost alignment bits at kicks) as description cost. Finite b cannot pay for infinite S."
+}

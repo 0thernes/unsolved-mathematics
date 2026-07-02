@@ -1,0 +1,44 @@
+{
+  "elapsed_seconds": 0.199,
+  "honesty": "The q = 0 case (n = r with T^d(r) >= r, i.e. certificate-record integers with gamma > 1) is NOT excluded by this theorem; it is measured empty to 10^9 by the tau-scan and remains the entire content of Terras' conjecture.",
+  "mode": "theorem",
+  "proof_chain": {
+    "envelope_confirmation": {
+      "all_time_peak_xstar_over_2^d": {
+        "depth": 2,
+        "o": 1,
+        "ratio": 0.25
+      },
+      "any_trap_possible": false,
+      "max_depth_computed": 2048
+    },
+    "hit_closures_by_exact_DP": [
+      {
+        "closed": true,
+        "d": 2,
+        "max_intercept_c": 1,
+        "max_xstar": "1",
+        "o": 1,
+        "required_for_trap": 4
+      }
+    ],
+    "intercept_bound_lemma": "c(w) <= 2^(d-o)(3^o - 2^o), exact induction (selftest-verified)",
+    "large_o_CF_exclusion": {
+      "all_excluded": true,
+      "convergents_checked": 156,
+      "coverage_log10_denominator": 157.4
+    },
+    "small_o_exact": {
+      "hits": [
+        {
+          "d": 2,
+          "o": 1
+        }
+      ],
+      "o_max": 256
+    },
+    "window_reduction": "trap with q>=1 => 1 < 2^d/3^o < 1 + 2^-o"
+  },
+  "theorem": "No certified Collatz residue class at any depth traps a member n >= 2^d: for every n >= 2 with n >= 2^tau(n), sigma(n) = tau(n). Every Terras violation is a certificate-record integer (n < 2^tau(n)).",
+  "verdict": "PROVED (within certified CF coverage, denominators to ~1e157)"
+}

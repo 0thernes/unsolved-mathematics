@@ -1,0 +1,160 @@
+{
+  "lemma": {
+    "max_d": 12,
+    "supercritical_words": 1767,
+    "necklace_classes": 181,
+    "ladder_checks": 35340,
+    "failures": [],
+    "num_failures": 0,
+    "integer_spines_found": [
+      -136,
+      -91,
+      -82,
+      -68,
+      -61,
+      -55,
+      -41,
+      -37,
+      -34,
+      -25,
+      -17,
+      -10,
+      -7,
+      -5,
+      -1
+    ],
+    "all_rho_le_minus1": true
+  },
+  "expulsion": [
+    {
+      "spine": -1,
+      "word": "1",
+      "m": 24,
+      "blocks_ridden": 24,
+      "predicted": 24,
+      "match": true,
+      "distance_growth_exact": true,
+      "growth_factor": 16834.112196028233
+    },
+    {
+      "spine": -1,
+      "word": "1",
+      "m": 48,
+      "blocks_ridden": 48,
+      "predicted": 48,
+      "match": true,
+      "distance_growth_exact": true,
+      "growth_factor": 283387333.4284665
+    },
+    {
+      "spine": -1,
+      "word": "1",
+      "m": 96,
+      "blocks_ridden": 96,
+      "predicted": 96,
+      "match": true,
+      "distance_growth_exact": true,
+      "growth_factor": 8.030838074769683e+16
+    },
+    {
+      "spine": -5,
+      "word": "110",
+      "m": 24,
+      "blocks_ridden": 8,
+      "predicted": 8,
+      "match": true,
+      "distance_growth_exact": true,
+      "growth_factor": 2.565784513950348
+    },
+    {
+      "spine": -5,
+      "word": "110",
+      "m": 48,
+      "blocks_ridden": 16,
+      "predicted": 16,
+      "match": true,
+      "distance_growth_exact": true,
+      "growth_factor": 6.583250172027423
+    },
+    {
+      "spine": -5,
+      "word": "110",
+      "m": 96,
+      "blocks_ridden": 32,
+      "predicted": 32,
+      "match": true,
+      "distance_growth_exact": true,
+      "growth_factor": 43.339182827499094
+    },
+    {
+      "spine": -17,
+      "word": "11110111000",
+      "m": 24,
+      "blocks_ridden": 2,
+      "predicted": 2,
+      "match": true,
+      "distance_growth_exact": true,
+      "growth_factor": 1.1403486728668213
+    },
+    {
+      "spine": -17,
+      "word": "11110111000",
+      "m": 48,
+      "blocks_ridden": 4,
+      "predicted": 4,
+      "match": true,
+      "distance_growth_exact": true,
+      "growth_factor": 1.3003950957091206
+    },
+    {
+      "spine": -17,
+      "word": "11110111000",
+      "m": 96,
+      "blocks_ridden": 8,
+      "predicted": 8,
+      "match": true,
+      "distance_growth_exact": true,
+      "growth_factor": 1.691027404944333
+    }
+  ],
+  "regeneration": {
+    "odd_starts": 49999,
+    "max_regenerated_alignment": {
+      "1": 17,
+      "5": 16,
+      "17": 16
+    },
+    "achieved_by_start": {
+      "1": 77671,
+      "5": 43687,
+      "17": 11503
+    },
+    "tail_P_ge_m": {
+      "1": {
+        "8": 0.0018139039153779637,
+        "12": 9.625890696536422e-05,
+        "16": 5.362613201413048e-07,
+        "20": 0.0
+      },
+      "5": {
+        "8": 0.006007199308222897,
+        "12": 4.424155891165765e-05,
+        "16": 2.1450452805652193e-06,
+        "20": 0.0
+      },
+      "17": {
+        "8": 0.0023016335860464804,
+        "12": 8.312050462190225e-05,
+        "16": 1.1797749043108706e-05,
+        "20": 0.0
+      }
+    },
+    "geometric_prediction_2^-m": {
+      "8": 0.00390625,
+      "12": 0.000244140625,
+      "16": 1.52587890625e-05,
+      "20": 9.5367431640625e-07
+    },
+    "note": "bit-length of scan bound is ~17, so seed-independent regeneration beyond ~17+log2(orbit length) would be anomalous; the lemma provides no bound here - this is the open seam"
+  }
+}

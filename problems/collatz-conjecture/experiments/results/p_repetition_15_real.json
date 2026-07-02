@@ -1,0 +1,47 @@
+{
+  "p15_k_codex_upper": 14154656,
+  "cf_log23": [
+    1,
+    1,
+    1,
+    2,
+    2,
+    3,
+    1,
+    5,
+    2,
+    23
+  ],
+  "convergents_q_p": [
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      8,
+      5
+    ],
+    [
+      19,
+      12
+    ],
+    [
+      65,
+      41
+    ]
+  ],
+  "sample_K_orbits": {
+    "27": 544,
+    "6171": 728,
+    "77031": 840
+  },
+  "facts": "Verified n<2**71 (Ba\u0159ina 2025); no m-cycles m<=91 (Hercher 2023) + floor ~1.375e11 odds; Tao log-density almost-bounded"
+}

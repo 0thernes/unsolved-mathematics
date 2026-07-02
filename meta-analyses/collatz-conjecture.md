@@ -26,7 +26,7 @@ human_review: pending
 
 ## Abstract
 
-The Collatz conjecture asserts that iterating the map $T(n)=n/2$ for even $n$ and $T(n)=3n+1$ for odd $n$ eventually reaches $1$ for every positive integer. Recorded by Lothar Collatz around 1937 and spread orally under many names (Syracuse, Ulam, Kakutani, Hasse, Thwaites), it remains **open**: verified computationally to $n \le 2^{68} \approx 2.95\times10^{20}$ but proven for no infinite family. The conjecture splits into two logically independent claims — no nontrivial cycle and no divergent orbit — and most progress is probabilistic. The unconditional high-water mark is Tao's 2019 theorem that almost all orbits (in logarithmic density) attain almost bounded values; cycle-exclusion combines transcendence theory with computation but only bounds cycle complexity. This meta-analysis synthesizes the problem's history, the state of the art, the principal approaches and their structural barriers, and what a resolution would require. It is a survey, not a proof, and its references carry verification flags requiring human confirmation against primary sources. (~155 words)
+The Collatz conjecture asserts that iterating the map $T(n)=n/2$ for even $n$ and $T(n)=3n+1$ for odd $n$ eventually reaches $1$ for every positive integer. Recorded by Lothar Collatz around 1937 and spread orally under many names (Syracuse, Ulam, Kakutani, Hasse, Thwaites), it remains **open**: verified computationally to $n < 2^{71} \approx 2.36\times10^{21}$ but proven for no infinite family. The conjecture splits into two logically independent claims — no nontrivial cycle and no divergent orbit — and most progress is probabilistic. The unconditional high-water mark is Tao's 2019 theorem that almost all orbits (in logarithmic density) attain almost bounded values; cycle-exclusion combines transcendence theory with computation but only bounds cycle complexity. This meta-analysis synthesizes the problem's history, the state of the art, the principal approaches and their structural barriers, and what a resolution would require. It is a survey, not a proof, and its references carry verification flags requiring human confirmation against primary sources. (~155 words)
 
 ## 1. Statement and significance
 
@@ -34,13 +34,13 @@ Define $T:\mathbb{Z}^{+}\to\mathbb{Z}^{+}$ by $T(n)=n/2$ for even $n$ and $T(n)=
 
 ## 2. State of the art
 
-**Status: open.** No proof or disproof exists; no counterexample (divergent orbit or nontrivial cycle) has ever been found. Computational verification reaches $n\le 2^{68}$ (Bařina, 2020, continuing Oliveira e Silva's distributed project).
+**Status: open.** No proof or disproof exists; no counterexample (divergent orbit or nontrivial cycle) has ever been found. Computational verification reaches $n < 2^{71}$ (Bařina, *J. Supercomput.* **81**, 810 (2025), extending his 2020 verification to $2^{68}$ and Oliveira e Silva's earlier distributed project).
 
 The conjecture decomposes into two independent statements: **(a)** no orbit diverges to infinity, and **(b)** no nontrivial cycle exists. The unconditional results address these unevenly.
 
 On the divergence side, the foundational results are **density** theorems: Terras (1976) and Everett (1977) independently showed that natural density $1$ of integers have a finite stopping time (the first time the orbit drops below its start). Krasikov–Lagarias (2003) gave the unconditional counting bound $\#\{n\le x : n\to 1\}\gg x^{0.84}$. The landmark is **Tao (2019)**: for any $f(n)\to\infty$, almost all $n$ in logarithmic density satisfy $\min_k T^k(n)<f(n)$ — "almost all orbits attain almost bounded values." This remains the strongest unconditional result.
 
-On the cycle side, results are **conditional on bounded complexity**: Steiner (1977) excluded $1$-cycles, and Simons–de Weger (2005) excluded $m$-cycles for small $m$, both via Baker-type bounds on linear forms in logarithms controlling $|2^\ell-3^k|$. Combined with verification to $2^{68}$, any nontrivial cycle must run to hundreds of millions of terms (Eliahou and successors).
+On the cycle side, results are **conditional on bounded complexity**: Steiner (1977) excluded $1$-cycles, Simons–de Weger (2005) excluded $m$-cycles for small $m$, and Hercher (2023) extended the exclusion to all $m \le 91$, each via Baker-type bounds on linear forms in logarithms controlling $|2^\ell-3^k|$. Combined with verification to $2^{71}$ — which exceeds Hercher's stated threshold of $3\cdot 2^{69}$ — any nontrivial cycle must contain at least $1.375\times 10^{11}$ odd terms, superseding the older Eliahou-style hundreds-of-millions floor.
 
 The **heuristic** (conditional) picture is uniform and compelling: each odd step multiplies by roughly $3/4$ on average, giving negative multiplicative drift and hence almost-sure descent. This predicts the conjecture is true — but it is a model of typical, not specific, integers, and it is not a proof.
 
@@ -58,7 +58,7 @@ The **heuristic** (conditional) picture is uniform and compelling: each odd step
 
 ## 4. Critical assessment
 
-What is **solid**: the four pillars are genuine theorems — Terras/Everett density-$1$ descent, Krasikov–Lagarias's $x^{0.84}$ bound, Tao's 2019 almost-bounded-values theorem, and Bařina's verification to $2^{68}$. These are correctly characterized in the dossier as *unconditional but partial*: each controls typical or bounded-complexity behavior, none reaches every integer or every cycle length.
+What is **solid**: the pillars are genuine theorems — Terras/Everett density-$1$ descent, Krasikov–Lagarias's $x^{0.84}$ bound, Tao's 2019 almost-bounded-values theorem, Hercher's 2023 exclusion of $m$-cycles with $m \le 91$, and Bařina's verification to $2^{71}$ (2025). These are correctly characterized in the dossier as *unconditional but partial*: each controls typical or bounded-complexity behavior, none reaches every integer or every cycle length.
 
 What is **speculative or merely heuristic**: the probabilistic $3/4$-drift model. It is intellectually persuasive and predicts both halves of the conjecture, but it is a statement about measure-typical orbits, and the dossier is appropriately careful to label it a model rather than evidence of imminent resolution.
 
@@ -71,7 +71,7 @@ A complete proof must close **both** independent gaps at once:
 1. **No divergent orbit** — upgrade Tao's logarithmic-density, almost-bounded statement to an every-integer, genuinely-bounded one, controlling the thin exceptional set that density methods discard.
 2. **No nontrivial cycle** — exclude cycles of *all* lengths, not merely bounded complexity, plausibly via a new Diophantine input controlling $2^\ell-3^k$ uniformly.
 
-A disproof would require exhibiting a cycle or a provably divergent orbit; both are ruled out below $2^{68}$, so any counterexample is astronomically large or structurally subtle.
+A disproof would require exhibiting a cycle or a provably divergent orbit; both are ruled out below $2^{71}$, so any counterexample is astronomically large or structurally subtle.
 
 Plausible routes flagged in the dossier: strengthening the entropy/additive-combinatorics machinery behind Tao's theorem to full density and true boundedness; finding a conserved or monotone invariant distinguishing integer orbits from measure-typical ones (the missing structural object); sharper transcendence theory on $\log_2 3$; or ergodic/$2$-adic rigidity transferring measure-theoretic typicality to the measure-zero integers. All four are open; none is near.
 
@@ -92,6 +92,10 @@ Plausible routes flagged in the dossier: strengthening the entropy/additive-comb
 13. Gerhard Opfer, *An analytic approach to the Collatz $3n+1$ problem* (disputed; circular argument), 2011. [needs-verification]
 14. Terence Tao, *Almost all orbits of the Collatz map attain almost bounded values*, arXiv:1909.03562, 2019. [high-confidence]
 15. David Bařina, *Convergence verification of the Collatz problem* (to $2^{68}$), 2020, DOI:10.1007/s11227-020-03368-x. [high-confidence]
+16. Christian Hercher, *There are no Collatz $m$-cycles with $m \le 91$*, J. Integer Seq. 26 (2023), art. 23.3.5, arXiv:2201.00406. [verified]
+17. David Bařina, *Improved verification limit for the convergence of the Collatz conjecture* (to $2^{71}$), J. Supercomput. 81, 810 (2025), DOI:10.1007/s11227-025-07337-0. [verified]
+
+**Source-verification update (2026-07-01).** Addressing review concern (ii): references 14–17 and the headline bounds were checked against live sources on this date — Tao's paper at arXiv:1909.03562; Bařina's 2025 paper at Springer (DOI above) with the project page (pcbarina.fit.vutbr.cz) reporting all $n < 2^{71}$ verified as of 2025-01-15; Hercher's paper at the *Journal of Integer Sequences* and arXiv:2201.00406, including its statement that verification below $3\cdot 2^{69}$ raises the minimum odd-term count of any nontrivial cycle to $\ge 1.375\times 10^{11}$ (a threshold Bařina's bound now meets). The body text above has been updated from the superseded $2^{68}$ / hundreds-of-millions figures accordingly. Entries flagged [needs-verification] remain unchecked.
 
 ## AI Review Panel
 

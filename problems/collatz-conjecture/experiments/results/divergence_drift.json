@@ -1,0 +1,27 @@
+{
+  "3n+1": {
+    "predicted_drift_c/4": 0.75,
+    "measured_geo_mean_multiplier_eps+1": 0.75004,
+    "measured_geo_mean_multiplier_eps-1": 0.74997,
+    "mean_v2_eps+1": 2.0,
+    "drift_is_epsilon_blind": true,
+    "escape_behavior": {
+      "escaped_past_1e40": 0,
+      "trapped_in_cycle": 400,
+      "trials": 400
+    }
+  },
+  "5n+1": {
+    "predicted_drift_c/4": 1.25,
+    "measured_geo_mean_multiplier_eps+1": 1.25001,
+    "measured_geo_mean_multiplier_eps-1": 1.24997,
+    "mean_v2_eps+1": 2.0,
+    "drift_is_epsilon_blind": true,
+    "escape_behavior": {
+      "escaped_past_1e40": 396,
+      "trapped_in_cycle": 4,
+      "trials": 400
+    }
+  },
+  "reading": "Drift = c/4 controls divergence and is epsilon-blind (3n+1 ~ 3n-1); the cycle side is the epsilon phenomenon, the divergence side is the coefficient phenomenon. Both only describe TYPICAL orbits; the integers are the measure-zero exceptional set density methods (Tao 2019) cannot reach."
+}

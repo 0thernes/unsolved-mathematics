@@ -1,0 +1,133 @@
+{
+  "linear_form_records_lambda(k)": [
+    {
+      "k": 1,
+      "L": 2,
+      "lambda": "2.877e-01",
+      "ceil_cycle_min_bits": 4,
+      "ceil_exceeds_2^71": false
+    },
+    {
+      "k": 3,
+      "L": 5,
+      "lambda": "1.699e-01",
+      "ceil_cycle_min_bits": 8,
+      "ceil_exceeds_2^71": false
+    },
+    {
+      "k": 5,
+      "L": 8,
+      "lambda": "5.212e-02",
+      "ceil_cycle_min_bits": 13,
+      "ceil_exceeds_2^71": false
+    },
+    {
+      "k": 17,
+      "L": 27,
+      "lambda": "3.856e-02",
+      "ceil_cycle_min_bits": 32,
+      "ceil_exceeds_2^71": false
+    },
+    {
+      "k": 29,
+      "L": 46,
+      "lambda": "2.501e-02",
+      "ceil_cycle_min_bits": 52,
+      "ceil_exceeds_2^71": false
+    },
+    {
+      "k": 41,
+      "L": 65,
+      "lambda": "1.146e-02",
+      "ceil_cycle_min_bits": 72,
+      "ceil_exceeds_2^71": true
+    },
+    {
+      "k": 94,
+      "L": 149,
+      "lambda": "9.375e-03",
+      "ceil_cycle_min_bits": 156,
+      "ceil_exceeds_2^71": true
+    },
+    {
+      "k": 147,
+      "L": 233,
+      "lambda": "7.287e-03",
+      "ceil_cycle_min_bits": 241,
+      "ceil_exceeds_2^71": true
+    },
+    {
+      "k": 200,
+      "L": 317,
+      "lambda": "5.199e-03",
+      "ceil_cycle_min_bits": 325,
+      "ceil_exceeds_2^71": true
+    },
+    {
+      "k": 253,
+      "L": 401,
+      "lambda": "3.110e-03",
+      "ceil_cycle_min_bits": 410,
+      "ceil_exceeds_2^71": true
+    },
+    {
+      "k": 306,
+      "L": 485,
+      "lambda": "1.022e-03",
+      "ceil_cycle_min_bits": 495,
+      "ceil_exceeds_2^71": true
+    },
+    {
+      "k": 971,
+      "L": 1539,
+      "lambda": "9.786e-04",
+      "ceil_cycle_min_bits": 1549,
+      "ceil_exceeds_2^71": true
+    },
+    {
+      "k": 1636,
+      "L": 2593,
+      "lambda": "9.349e-04",
+      "ceil_cycle_min_bits": 2604,
+      "ceil_exceeds_2^71": true
+    },
+    {
+      "k": 2301,
+      "L": 3647,
+      "lambda": "8.913e-04",
+      "ceil_cycle_min_bits": 3658,
+      "ceil_exceeds_2^71": true
+    },
+    {
+      "k": 2966,
+      "L": 4701,
+      "lambda": "8.476e-04",
+      "ceil_cycle_min_bits": 4712,
+      "ceil_exceeds_2^71": true
+    },
+    {
+      "k": 3631,
+      "L": 5755,
+      "lambda": "8.040e-04",
+      "ceil_cycle_min_bits": 5766,
+      "ceil_exceeds_2^71": true
+    },
+    {
+      "k": 4296,
+      "L": 6809,
+      "lambda": "7.603e-04",
+      "ceil_cycle_min_bits": 6820,
+      "ceil_exceeds_2^71": true
+    },
+    {
+      "k": 4961,
+      "L": 7863,
+      "lambda": "7.167e-04",
+      "ceil_cycle_min_bits": 7874,
+      "ceil_exceeds_2^71": true
+    }
+  ],
+  "reading_records": "Record-small lambda(k) lands on CF convergents of log2(3) (k = 1,2,5,12,41,53,306,665,15601,...). Between them lambda(k) is comparatively large. A cycle can only live where lambda is tiny.",
+  "first_k_not_excluded_by_elementary_ceiling": 41,
+  "handoff": "Elementary arithmetic bounds lambda(k) only at the convergents it can enumerate; it gives NO uniform lower bound valid for all k (that would require log2(3) to have bounded partial quotients, which is unproven). The uniform bound lambda(k) > c*k^-kappa (effective linear forms in logs: Baker; Rhin's effective irrationality measure of log2(3); Nesterenko) is what Steiner->Simons-de Weger->Hercher(2023) use to force >= 1.375e11 odd terms. THAT is the exact elementary/transcendence boundary."
+}

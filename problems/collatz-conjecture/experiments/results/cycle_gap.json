@@ -1,0 +1,206 @@
+{
+  "verification_bound_2^71": "2361183241434822606848",
+  "check_2^71 > 3*2^69": true,
+  "elementary_ceiling_excludes_odd_counts_k_up_to": 43,
+  "note": "Elementary bound alone excludes only very small k. Hercher (2023) raises the floor to >= 1.375e11 odd terms via linear forms in logs, made unconditional by 2^71 > 3*2^69.",
+  "sample_rows": [
+    {
+      "k": 1,
+      "L": 2,
+      "gap_2^L-3^k": "1",
+      "rel_gap": "3.333e-01",
+      "ceil_lt_2^71": true,
+      "is_CF_convergent_k": true
+    },
+    {
+      "k": 2,
+      "L": 4,
+      "gap_2^L-3^k": "7",
+      "rel_gap": "7.778e-01",
+      "ceil_lt_2^71": true,
+      "is_CF_convergent_k": true
+    },
+    {
+      "k": 3,
+      "L": 5,
+      "gap_2^L-3^k": "5",
+      "rel_gap": "1.852e-01",
+      "ceil_lt_2^71": true,
+      "is_CF_convergent_k": false
+    },
+    {
+      "k": 4,
+      "L": 7,
+      "gap_2^L-3^k": "47",
+      "rel_gap": "5.802e-01",
+      "ceil_lt_2^71": true,
+      "is_CF_convergent_k": false
+    },
+    {
+      "k": 5,
+      "L": 8,
+      "gap_2^L-3^k": "13",
+      "rel_gap": "5.350e-02",
+      "ceil_lt_2^71": true,
+      "is_CF_convergent_k": true
+    },
+    {
+      "k": 6,
+      "L": 10,
+      "gap_2^L-3^k": "295",
+      "rel_gap": "4.047e-01",
+      "ceil_lt_2^71": true,
+      "is_CF_convergent_k": false
+    },
+    {
+      "k": 7,
+      "L": 12,
+      "gap_2^L-3^k": "1909",
+      "rel_gap": "8.729e-01",
+      "ceil_lt_2^71": true,
+      "is_CF_convergent_k": false
+    },
+    {
+      "k": 8,
+      "L": 13,
+      "gap_2^L-3^k": "1631",
+      "rel_gap": "2.486e-01",
+      "ceil_lt_2^71": true,
+      "is_CF_convergent_k": false
+    },
+    {
+      "k": 9,
+      "L": 15,
+      "gap_2^L-3^k": "13085",
+      "rel_gap": "6.648e-01",
+      "ceil_lt_2^71": true,
+      "is_CF_convergent_k": false
+    },
+    {
+      "k": 10,
+      "L": 16,
+      "gap_2^L-3^k": "6487",
+      "rel_gap": "1.099e-01",
+      "ceil_lt_2^71": true,
+      "is_CF_convergent_k": false
+    },
+    {
+      "k": 11,
+      "L": 18,
+      "gap_2^L-3^k": "84997",
+      "rel_gap": "4.798e-01",
+      "ceil_lt_2^71": true,
+      "is_CF_convergent_k": false
+    },
+    {
+      "k": 12,
+      "L": 20,
+      "gap_2^L-3^k": "517135",
+      "rel_gap": "9.731e-01",
+      "ceil_lt_2^71": true,
+      "is_CF_convergent_k": true
+    },
+    {
+      "k": 13,
+      "L": 21,
+      "gap_2^L-3^k": "502829",
+      "rel_gap": "3.154e-01",
+      "ceil_lt_2^71": true,
+      "is_CF_convergent_k": false
+    },
+    {
+      "k": 14,
+      "L": 23,
+      "gap_2^L-3^k": "3605639",
+      "rel_gap": "7.538e-01",
+      "ceil_lt_2^71": true,
+      "is_CF_convergent_k": false
+    },
+    {
+      "k": 15,
+      "L": 24,
+      "gap_2^L-3^k": "2428309",
+      "rel_gap": "1.692e-01",
+      "ceil_lt_2^71": true,
+      "is_CF_convergent_k": false
+    },
+    {
+      "k": 41,
+      "L": 65,
+      "gap_2^L-3^k": "420491770248316829",
+      "rel_gap": "1.153e-02",
+      "ceil_lt_2^71": false,
+      "is_CF_convergent_k": true
+    },
+    {
+      "k": 53,
+      "L": 85,
+      "gap_2^L-3^k": "19302380559988113693800909",
+      "rel_gap": "9.958e-01",
+      "ceil_lt_2^71": false,
+      "is_CF_convergent_k": true
+    }
+  ],
+  "convergent_gaps": [
+    {
+      "L/k": "2/1",
+      "smallest_gap_bits": 1,
+      "3^k_bits": 2,
+      "rel_gap": "3.333e-01"
+    },
+    {
+      "L/k": "3/2",
+      "smallest_gap_bits": 3,
+      "3^k_bits": 4,
+      "rel_gap": "7.778e-01"
+    },
+    {
+      "L/k": "8/5",
+      "smallest_gap_bits": 4,
+      "3^k_bits": 8,
+      "rel_gap": "5.350e-02"
+    },
+    {
+      "L/k": "19/12",
+      "smallest_gap_bits": 19,
+      "3^k_bits": 20,
+      "rel_gap": "9.731e-01"
+    },
+    {
+      "L/k": "65/41",
+      "smallest_gap_bits": 59,
+      "3^k_bits": 65,
+      "rel_gap": "1.153e-02"
+    },
+    {
+      "L/k": "84/53",
+      "smallest_gap_bits": 84,
+      "3^k_bits": 85,
+      "rel_gap": "9.958e-01"
+    },
+    {
+      "L/k": "485/306",
+      "smallest_gap_bits": 476,
+      "3^k_bits": 485,
+      "rel_gap": "1.023e-03"
+    },
+    {
+      "L/k": "1054/665",
+      "smallest_gap_bits": 1054,
+      "3^k_bits": 1055,
+      "rel_gap": "9.999e-01"
+    },
+    {
+      "L/k": "24727/15601",
+      "smallest_gap_bits": 24712,
+      "3^k_bits": 24727,
+      "rel_gap": "1.819e-05"
+    },
+    {
+      "L/k": "50508/31867",
+      "smallest_gap_bits": 50508,
+      "3^k_bits": 50509,
+      "rel_gap": "1.000e+00"
+    }
+  ]
+}

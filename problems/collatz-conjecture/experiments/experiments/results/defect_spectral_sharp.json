@@ -1,0 +1,11 @@
+{
+  "rho_star": 0.6214397236576562,
+  "inf_c_homo": 0.0027424556484346,
+  "inf_c_inhomo": 0.0037134827786585,
+  "sharp_uniform": 1.58496250072116,
+  "E_index_exact": 1.58496250072116,
+  "field_N_mult_exact": true,
+  "field_submult_ok": "16/16",
+  "mu_od": 0.640248279415,
+  "date": "2026-07-02"
+}

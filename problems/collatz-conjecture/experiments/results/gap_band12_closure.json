@@ -1,0 +1,22 @@
+{
+  "band": {
+    "band_k": 12,
+    "log2_n_ceiling": 33.846,
+    "o_min": 111202,
+    "q_k": 111202,
+    "q_k+1": 190537,
+    "tau_min": 176252
+  },
+  "honesty": "Band closure if max_tau < tau_min and tau=sigma throughout. Does not prove Terras globally or Collatz.",
+  "mode": "theorem",
+  "proved_empty": true,
+  "scan_summary": {
+    "elapsed_seconds": 354.5,
+    "max_tau": 547,
+    "odd_integers_scanned": 2309826992,
+    "tau_min_required": 176252,
+    "terras_verified": true
+  },
+  "statement": "Every odd integer n with 10824153739 < n <= 15443807723 has tau(n) < 176252; hence no Terras violation in convergent band [111202, 190537) past 10824153739.",
+  "theorem": "Band closure"
+}

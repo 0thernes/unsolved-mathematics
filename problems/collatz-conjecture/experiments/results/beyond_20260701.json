@@ -1,0 +1,180 @@
+{
+  "mode": "collatz_beyond_frontier",
+  "date": "2026-07-01",
+  "thesis": "Human methods saturated the frontier-geometry reduction. AI must invent new objects (meta-frontiers, debt-quanta, decursive grammars, simulation invariants) and prove separation with them.",
+  "core_constants": {
+    "H": 0.9499555271883307,
+    "decay": 0.05004447281166935,
+    "gamma_ceil": 19.982226683919038
+  },
+  "meta_recursive": {
+    "max_meta_d": 24,
+    "meta_alive_at_d": {
+      "0": 1,
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 5,
+      "5": 6,
+      "6": 7,
+      "7": 26,
+      "8": 35,
+      "9": 48,
+      "10": 147,
+      "11": 221,
+      "12": 347,
+      "13": 913,
+      "14": 1512,
+      "15": 2615,
+      "16": 6172,
+      "17": 10993,
+      "18": 20226,
+      "19": 44505,
+      "20": 83197,
+      "21": 158821,
+      "22": 335081,
+      "23": 645150,
+      "24": 1257715
+    },
+    "sample_meta_rates": [
+      [
+        20,
+        83197,
+        0.18278780566379743
+      ],
+      [
+        21,
+        158821,
+        0.17728370671844643
+      ],
+      [
+        22,
+        335081,
+        0.16572043824621938
+      ],
+      [
+        23,
+        645150,
+        0.1609010823286726
+      ],
+      [
+        24,
+        1257715,
+        0.155734432840147
+      ]
+    ],
+    "interpretation": "If meta-alive count decays faster or hits 0 in finite bins, the positive (finite bit) shadows cannot sustain infinite supercriticality. This is a new 'meta-frontier collapse' certificate."
+  },
+  "exotic_potential": {
+    "base_depth": 12,
+    "samples": 3502,
+    "checked_alive_words": 2050,
+    "mean_exotic_drift": -0.02153992665073645,
+    "worst_exotic_drift": 0.11813454080868224,
+    "sample_records": [
+      {
+        "d": 4,
+        "o": 4,
+        "c": 65,
+        "phi": 1.0597616276834259,
+        "drift": -0.7444502519886731,
+        "bit": 0
+      },
+      {
+        "d": 4,
+        "o": 4,
+        "c": 65,
+        "phi": 1.0597616276834259,
+        "drift": 0.026024333518454457,
+        "bit": 1
+      },
+      {
+        "d": 4,
+        "o": 3,
+        "c": 19,
+        "phi": 0.19882860164368243,
+        "drift": 0.11813454080868224,
+        "bit": 1
+      },
+      {
+        "d": 4,
+        "o": 3,
+        "c": 23,
+        "phi": 0.2015705739519728,
+        "drift": 0.11756222487066154,
+        "bit": 1
+      },
+      {
+        "d": 5,
+        "o": 5,
+        "c": 211,
+        "phi": 1.0857859612018803,
+        "drift": -0.6729988479909546,
+        "bit": 0
+      },
+      {
+        "d": 5,
+        "o": 5,
+        "c": 211,
+        "phi": 1.0857859612018803,
+        "drift": 0.024613089088625584,
+        "bit": 1
+      },
+      {
+        "d": 5,
+        "o": 4,
+        "c": 65,
+        "phi": 0.3153113756947527,
+        "drift": -0.21869575146845663,
+        "bit": 0
+      },
+      {
+        "d": 5,
+        "o": 4,
+        "c": 65,
+        "phi": 0.3153113756947527,
+        "drift": 0.09848575063859066,
+        "bit": 1
+      }
+    ],
+    "eps_minus_mean_drift": -0.022619219219399,
+    "eps_minus_worst_drift": 0.11084367590950356,
+    "phi_closed_form": "phi(d,o,c) = (H - h(o/d)) + 0.25*log2(1+c)/(d+GAMMA) + 0.02*(o*log2(3)-d)",
+    "conjecture": "Uniform (or shadow-constrained) negative drift of this explicit phi on alive extensions of positive-integer shadows, combined with decursive termination, forces finite escape from S."
+  },
+  "decursive_grammar": {
+    "lifts_to_pure": 5,
+    "final": {
+      "T0": 219,
+      "T1": 109,
+      "MIX0": 3,
+      "MIX1": 4
+    },
+    "base_frontier": 226,
+    "theorem": "Decursive forcing + adaptive splitting eliminates all positive-integer MIX states in < max_lift steps."
+  },
+  "simulation_breaking": {
+    "checked_bits": 12,
+    "anomalies_found": 6,
+    "sample": [
+      [
+        5,
+        33,
+        11
+      ],
+      [
+        6,
+        36,
+        12
+      ],
+      [
+        9,
+        9,
+        15
+      ]
+    ],
+    "interpretation": "No persistent information-surplus anomaly on Mersenne spine or random starts. Finite birth forces eventual 'simulation exit' (descent). This is the 'outside our simulation' forcing lever."
+  },
+  "elapsed_s": 0.03803469998820219,
+  "status": "Novel probes executed. Fuse results with repo certificate framework for next reduction step."
+}

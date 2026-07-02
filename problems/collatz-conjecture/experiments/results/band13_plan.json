@@ -1,0 +1,37 @@
+{
+  "band": {
+    "band_k": 13,
+    "delta_lower": 9.306465434894284e-08,
+    "gamma_floor_at_ceiling": 7365.7,
+    "log2_n_ceiling": 40.426,
+    "n_ceiling": 1476859216471,
+    "o_min": 190537,
+    "o_need": 1993,
+    "q_k": 190537,
+    "q_k+1": 10590737,
+    "reason": "violations past 15443807723 need n in (15443807723, 1476859216471] with tau >= 301994; not covered by scan",
+    "status": "SCAN_GAP",
+    "tau_min": 301994
+  },
+  "band_k": 13,
+  "estimate": {
+    "elapsed_hours": 31.23,
+    "elapsed_minutes": 1873.6,
+    "rate_odd_per_sec_assumed": 6500000.0
+  },
+  "gamma_pinch_heuristic": {
+    "measured_max_gamma_through_band12": 16.3233,
+    "note": "HEURISTIC only \u2014 not a theorem unless gamma is bounded globally",
+    "pinch_ratio_vs_tau_min": 457.6,
+    "tau_implied_at_ceiling": 659.9
+  },
+  "mode": "band-plan",
+  "scan_floor": 15443807723,
+  "structural_status": "SCAN_REQUIRED",
+  "tau_min_required": 301994,
+  "window": {
+    "hi_inclusive": 1476859216471,
+    "lo_exclusive": 15443807723,
+    "odd_integers": 730707704374
+  }
+}

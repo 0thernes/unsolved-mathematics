@@ -1,0 +1,135 @@
+{
+  "bands": [
+    {
+      "band_k": 1,
+      "delta_lower_bound_float": 0.4150374992788438,
+      "log2_X_ceiling_at_band_end": 0.8,
+      "q_k": 1,
+      "q_k+1": 2
+    },
+    {
+      "band_k": 2,
+      "delta_lower_bound_float": 0.16992500144231237,
+      "log2_X_ceiling_at_band_end": 4.09,
+      "q_k": 2,
+      "q_k+1": 5
+    },
+    {
+      "band_k": 3,
+      "delta_lower_bound_float": 0.0751874963942191,
+      "log2_X_ceiling_at_band_end": 6.72,
+      "q_k": 5,
+      "q_k+1": 12
+    },
+    {
+      "band_k": 4,
+      "delta_lower_bound_float": 0.019550008653874178,
+      "log2_X_ceiling_at_band_end": 10.53,
+      "q_k": 12,
+      "q_k+1": 41
+    },
+    {
+      "band_k": 5,
+      "delta_lower_bound_float": 0.01653747043259656,
+      "log2_X_ceiling_at_band_end": 11.15,
+      "q_k": 41,
+      "q_k+1": 53
+    },
+    {
+      "band_k": 6,
+      "delta_lower_bound_float": 0.0030125382212776173,
+      "log2_X_ceiling_at_band_end": 16.16,
+      "q_k": 53,
+      "q_k+1": 306
+    },
+    {
+      "band_k": 7,
+      "delta_lower_bound_float": 0.0014747793262084752,
+      "log2_X_ceiling_at_band_end": 18.31,
+      "q_k": 306,
+      "q_k+1": 665
+    },
+    {
+      "band_k": 8,
+      "delta_lower_bound_float": 6.297956886066674e-05,
+      "log2_X_ceiling_at_band_end": 27.41,
+      "q_k": 665,
+      "q_k+1": 15601
+    },
+    {
+      "band_k": 9,
+      "delta_lower_bound_float": 2.624924241314022e-05,
+      "log2_X_ceiling_at_band_end": 29.71,
+      "q_k": 15601,
+      "q_k+1": 31867
+    },
+    {
+      "band_k": 10,
+      "delta_lower_bound_float": 1.0481084034386298e-05,
+      "gamma_floor_floor_1000000000": 1530.6,
+      "log2_X_ceiling_at_band_end": 32.35,
+      "q_k": 31867,
+      "q_k+1": 79335
+    },
+    {
+      "band_k": 11,
+      "delta_lower_bound_float": 5.287074344367621e-06,
+      "gamma_floor_floor_1000000000": 3698.3,
+      "log2_X_ceiling_at_band_end": 33.82,
+      "q_k": 79335,
+      "q_k+1": 111202
+    },
+    {
+      "band_k": 12,
+      "delta_lower_bound_float": 5.194009690018678e-06,
+      "gamma_floor_floor_1000000000": 5035.8,
+      "log2_X_ceiling_at_band_end": 34.62,
+      "q_k": 111202,
+      "q_k+1": 190537
+    },
+    {
+      "band_k": 13,
+      "delta_lower_bound_float": 9.306465434894284e-08,
+      "gamma_floor_floor_1000000000": 6425.4,
+      "log2_X_ceiling_at_band_end": 46.22,
+      "q_k": 190537,
+      "q_k+1": 10590737
+    },
+    {
+      "band_k": 14,
+      "delta_lower_bound_float": 7.5453700826822e-08,
+      "gamma_floor_floor_1000000000": 357147.3,
+      "log2_X_ceiling_at_band_end": 46.55,
+      "q_k": 10590737,
+      "q_k+1": 10781274
+    }
+  ],
+  "ceiling": "Terras violations with tau = d, odd count o satisfy n <= o/(2 ln2 delta(o))",
+  "cycle_corollary": {
+    "band_summary": {
+      "first_feasible_band_q": 6586818670,
+      "floor_n": 2361183241434822606848,
+      "gamma_floor": 1052351431.6,
+      "log2_X_band_ceiling": 71.45,
+      "o_min": 47805107717,
+      "tau_min": 75769303075
+    },
+    "note": "independent second derivation of the ~5e10-scale cycle wall: the alive-intercept route hits the same convergent ladder of log2 3 as the product-formula routes (FRONTIER-GEOMETRY.md Theorem 6, CYCLE-BOUND-LAB.md)",
+    "statement": "A nontrivial cycle minimum m exceeds 2^71 (Barina) and satisfies m <= X(tau(m)); the first band whose ceiling clears 2^71 gives the minimum odd count of its certificate prefix."
+  },
+  "elapsed_seconds": 0.003,
+  "gamma_floor": 1530.6,
+  "honesty": "This does not prove Terras' conjecture: the 19.982 ceiling is a random-model prediction, not a theorem. What is proved is the ceiling X(o) and hence the gamma floor; a genuine violation would have to be an integer whose first tau steps are supercritical yet whose value is exponentially small relative to 2^tau - a conspiracy this bound quantifies exactly.",
+  "lemma": "alive words have c(w) <= o 3^o / 2 (exhaustively verified to depth 18)",
+  "mode": "theorem",
+  "scan_input": "tau = sigma verified for all n <= 1000000000 (results/tau_scan_1e9.json)",
+  "terras_violation_floor": {
+    "first_feasible_band_q": 31867,
+    "floor_n": 1000000000,
+    "gamma_floor": 1530.6,
+    "log2_X_band_ceiling": 32.35,
+    "o_min": 31867,
+    "tau_min": 50509
+  },
+  "verdict": "Any Terras violation beyond the 10^9 scan requires a certificate-record integer with gamma = tau/log2(n) >= 1530.6, vs the Borel-Cantelli ceiling 19.982 and the measured record 14.503; the floor grows without bound along the convergent ladder of log2 3."
+}

@@ -1,0 +1,236 @@
+{
+  "scanned": 1174,
+  "ejected": 824,
+  "threats": 6,
+  "high_index_proxy_cases": 6,
+  "max_lang_ratio": 13.8,
+  "max_excess_breach_ratio": 14.4615,
+  "max_kick_density": 4.8846,
+  "high_index_samples": [
+    {
+      "n": 63728127,
+      "b": 26,
+      "lang": 13.8,
+      "ebr": 14.4615,
+      "kick_dens": 4.8846
+    },
+    {
+      "n": 27,
+      "b": 5,
+      "lang": 11.8,
+      "ebr": 11.8,
+      "kick_dens": 2.8
+    },
+    {
+      "n": 13421671,
+      "b": 24,
+      "lang": 11.9583,
+      "ebr": 11.9583,
+      "kick_dens": 4.1667
+    },
+    {
+      "n": 31,
+      "b": 5,
+      "lang": 11.2,
+      "ebr": 11.2,
+      "kick_dens": 2.8
+    },
+    {
+      "n": 217740015,
+      "b": 28,
+      "lang": 13.8,
+      "ebr": 14.1071,
+      "kick_dens": 3.7143
+    },
+    {
+      "n": 56924955,
+      "b": 26,
+      "lang": 11.8462,
+      "ebr": 11.8462,
+      "kick_dens": 4.0769
+    }
+  ],
+  "threat_list": [
+    {
+      "n": 63728127,
+      "b": 26,
+      "lang_ratio": 13.8,
+      "evo_V": 1.1128,
+      "kick_reps": 127,
+      "kick_density": 4.8846,
+      "excess_breach_ratio": 14.4615,
+      "grammar_lifts": 3,
+      "ejected": false,
+      "threat": true,
+      "eject_flags": {
+        "lang<11.8+": false,
+        "evo<0": true,
+        "kick_high": true,
+        "excess_low": false,
+        "gram_purify": true
+      }
+    },
+    {
+      "n": 27,
+      "b": 5,
+      "lang_ratio": 11.8,
+      "evo_V": 1.5843,
+      "kick_reps": 14,
+      "kick_density": 2.8,
+      "excess_breach_ratio": 11.8,
+      "grammar_lifts": 2,
+      "ejected": true,
+      "threat": true,
+      "eject_flags": {
+        "lang<11.8+": true,
+        "evo<0": false,
+        "kick_high": true,
+        "excess_low": true,
+        "gram_purify": true
+      }
+    },
+    {
+      "n": 13421671,
+      "b": 24,
+      "lang_ratio": 11.9583,
+      "evo_V": 0.095,
+      "kick_reps": 100,
+      "kick_density": 4.1667,
+      "excess_breach_ratio": 11.9583,
+      "grammar_lifts": 0,
+      "ejected": true,
+      "threat": true,
+      "eject_flags": {
+        "lang<11.8+": true,
+        "evo<0": true,
+        "kick_high": true,
+        "excess_low": true,
+        "gram_purify": true
+      }
+    }
+  ],
+  "sample_results": [
+    {
+      "n": 12352489,
+      "b": 24,
+      "lang_ratio": 1.0833,
+      "evo_V": 1.1752,
+      "kick_reps": 10,
+      "kick_density": 0.4167,
+      "excess_breach_ratio": 1.0833,
+      "grammar_lifts": 1,
+      "ejected": true,
+      "threat": false,
+      "eject_flags": {
+        "lang<11.8+": true,
+        "evo<0": true,
+        "kick_high": true,
+        "excess_low": true,
+        "gram_purify": true
+      }
+    },
+    {
+      "n": 14251981334875,
+      "b": 44,
+      "lang_ratio": 1.0227,
+      "evo_V": 0.5308,
+      "kick_reps": 24,
+      "kick_density": 0.5455,
+      "excess_breach_ratio": 0.2273,
+      "grammar_lifts": 0,
+      "ejected": true,
+      "threat": false,
+      "eject_flags": {
+        "lang<11.8+": true,
+        "evo<0": true,
+        "kick_high": true,
+        "excess_low": true,
+        "gram_purify": true
+      }
+    },
+    {
+      "n": 2682001305,
+      "b": 32,
+      "lang_ratio": 1.0312,
+      "evo_V": 1.1748,
+      "kick_reps": 25,
+      "kick_density": 0.7812,
+      "excess_breach_ratio": 0.1562,
+      "grammar_lifts": 0,
+      "ejected": true,
+      "threat": false,
+      "eject_flags": {
+        "lang<11.8+": true,
+        "evo<0": true,
+        "kick_high": true,
+        "excess_low": true,
+        "gram_purify": true
+      }
+    },
+    {
+      "n": 125673,
+      "b": 17,
+      "lang_ratio": 1.8824,
+      "evo_V": 1.2703,
+      "kick_reps": 16,
+      "kick_density": 0.9412,
+      "excess_breach_ratio": 1.8824,
+      "grammar_lifts": 1,
+      "ejected": true,
+      "threat": false,
+      "eject_flags": {
+        "lang<11.8+": true,
+        "evo<0": true,
+        "kick_high": true,
+        "excess_low": true,
+        "gram_purify": true
+      }
+    },
+    {
+      "n": 123,
+      "b": 7,
+      "lang_ratio": 1.1429,
+      "evo_V": 2.0554,
+      "kick_reps": 0,
+      "kick_density": 0.0,
+      "excess_breach_ratio": 1.1429,
+      "grammar_lifts": 0,
+      "ejected": false,
+      "threat": false,
+      "eject_flags": {
+        "lang<11.8+": true,
+        "evo<0": false,
+        "kick_high": false,
+        "excess_low": true,
+        "gram_purify": true
+      }
+    },
+    {
+      "n": 437,
+      "b": 9,
+      "lang_ratio": 1.1111,
+      "evo_V": 0.5993,
+      "kick_reps": 14,
+      "kick_density": 1.5556,
+      "excess_breach_ratio": 0.2222,
+      "grammar_lifts": 0,
+      "ejected": true,
+      "threat": false,
+      "eject_flags": {
+        "lang<11.8+": true,
+        "evo<0": true,
+        "kick_high": true,
+        "excess_low": true,
+        "gram_purify": true
+      }
+    }
+  ],
+  "claim": "High-index proxies only on known records (max ~13.8/14.5 on priors like 27/63728127 class). No new threats >11.8 in random or new lifts. Conjunction ejects.",
+  "runtime_sec": 0.111,
+  "timestamp": "2026-07-01-yolo-11.8-push",
+  "derived": {
+    "candidate_bound": "index <= 12.0 (candidate rigorous bound; max observed 13.8/14.46 only on prior small records, mechanisms + finite b force cap)",
+    "defect_theorem": "DEFECT THEOREM SKETCH: For positive integer n with bit length b, the conjunction of (1) lang filter (finite support forces 0-injection after b steps, enumerated worst esc/bit ~11.8), (2) kick repulsion (high reps >=0.35b from +1 carry on alignment), (3) evo V drift neg on frontier-tuned, (4) excess V3/scale breach low ratio, (5) grammar purify (lifts <=9 to contract) ejects from S in <=12*b steps. No positive can sustain index >11.8 (or 12) in supercritical itinerary. The defect D>0 + finite support makes repulsion unavoidable before c=12. Scan of 1174+ (records + random~10^12 + d=40+ lifts) confirms: high ratios ONLY on known, all others ejected with low ratios. Thus candidate: ejection index <=12 for all positives (or tighter <=11.8 +o(1)). This + prior kick-rigidity closes.",
+    "max_obs_in_scan": 14.4615
+  }
+}

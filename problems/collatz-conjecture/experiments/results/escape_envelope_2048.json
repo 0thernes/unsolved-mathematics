@@ -1,0 +1,747 @@
+{
+  "constants": {
+    "binary_entropy_H_theta": "0.9499555271883306348139005795387176931951",
+    "decay_rate_1_minus_H": "0.0500444728116693651860994204612823068048",
+    "decay_rate_float": 0.05004447281166936,
+    "envelope_slope_c_star": "19.982226683919030107035684504837247076566",
+    "envelope_slope_float": 19.98222668391903,
+    "lagarias_weiss_total_stopping_analogue": 41.677647,
+    "theta_log3_2": "0.6309297535714574370995271143427608542995"
+  },
+  "elapsed_seconds": 3.116,
+  "escape_layers": [
+    {
+      "base_depth": 14,
+      "certified_count": 734,
+      "deviation_samples": [
+        {
+          "alive": 279,
+          "depth": 24,
+          "deviation_bits": -0.004462,
+          "log2_alive": 8.124121,
+          "word_model_log2_expected": 8.128583
+        },
+        {
+          "alive": 53,
+          "depth": 48,
+          "deviation_bits": -0.128938,
+          "log2_alive": 5.72792,
+          "word_model_log2_expected": 5.856858
+        },
+        {
+          "alive": 14,
+          "depth": 72,
+          "deviation_bits": -0.204786,
+          "log2_alive": 3.807355,
+          "word_model_log2_expected": 4.012141
+        },
+        {
+          "alive": 1,
+          "depth": 104,
+          "deviation_bits": -1.802618,
+          "log2_alive": 0.0,
+          "word_model_log2_expected": 1.802618
+        }
+      ],
+      "elapsed_seconds": 0.003348,
+      "expected_0.01_bracket_depth": 239,
+      "first_moment_crossing_depth": 129,
+      "frontier_count": 734,
+      "observed_max_certificate_depth": 105,
+      "observed_minus_crossing": -24,
+      "observed_ratio_depth_per_bit": 7.5,
+      "uncertified_count": 0,
+      "worst_start": 10087
+    },
+    {
+      "base_depth": 16,
+      "certified_count": 2114,
+      "deviation_samples": [
+        {
+          "alive": 1098,
+          "depth": 24,
+          "deviation_bits": -0.027921,
+          "log2_alive": 10.100662,
+          "word_model_log2_expected": 10.128583
+        },
+        {
+          "alive": 227,
+          "depth": 48,
+          "deviation_bits": -0.03031,
+          "log2_alive": 7.826548,
+          "word_model_log2_expected": 7.856858
+        },
+        {
+          "alive": 39,
+          "depth": 72,
+          "deviation_bits": -0.726738,
+          "log2_alive": 5.285402,
+          "word_model_log2_expected": 6.012141
+        },
+        {
+          "alive": 1,
+          "depth": 134,
+          "deviation_bits": -1.804841,
+          "log2_alive": 0.0,
+          "word_model_log2_expected": 1.804841
+        }
+      ],
+      "elapsed_seconds": 0.009739,
+      "expected_0.01_bracket_depth": 275,
+      "first_moment_crossing_depth": 161,
+      "frontier_count": 2114,
+      "observed_max_certificate_depth": 135,
+      "observed_minus_crossing": -26,
+      "observed_ratio_depth_per_bit": 8.4375,
+      "uncertified_count": 0,
+      "worst_start": 35655
+    },
+    {
+      "base_depth": 18,
+      "certified_count": 7495,
+      "deviation_samples": [
+        {
+          "alive": 4466,
+          "depth": 24,
+          "deviation_bits": -0.003816,
+          "log2_alive": 12.124768,
+          "word_model_log2_expected": 12.128583
+        },
+        {
+          "alive": 896,
+          "depth": 48,
+          "deviation_bits": -0.049504,
+          "log2_alive": 9.807355,
+          "word_model_log2_expected": 9.856858
+        },
+        {
+          "alive": 221,
+          "depth": 72,
+          "deviation_bits": -0.224238,
+          "log2_alive": 7.787903,
+          "word_model_log2_expected": 8.012141
+        },
+        {
+          "alive": 57,
+          "depth": 96,
+          "deviation_bits": -0.500534,
+          "log2_alive": 5.83289,
+          "word_model_log2_expected": 6.333424
+        },
+        {
+          "alive": 9,
+          "depth": 120,
+          "deviation_bits": -1.524871,
+          "log2_alive": 3.169925,
+          "word_model_log2_expected": 4.694796
+        },
+        {
+          "alive": 1,
+          "depth": 134,
+          "deviation_bits": -3.804841,
+          "log2_alive": 0.0,
+          "word_model_log2_expected": 3.804841
+        }
+      ],
+      "elapsed_seconds": 0.034719,
+      "expected_0.01_bracket_depth": 310,
+      "first_moment_crossing_depth": 194,
+      "frontier_count": 7495,
+      "observed_max_certificate_depth": 135,
+      "observed_minus_crossing": -59,
+      "observed_ratio_depth_per_bit": 7.5,
+      "uncertified_count": 0,
+      "worst_start": 35655
+    },
+    {
+      "base_depth": 20,
+      "certified_count": 27328,
+      "deviation_samples": [
+        {
+          "alive": 17919,
+          "depth": 24,
+          "deviation_bits": 0.000619,
+          "log2_alive": 14.129203,
+          "word_model_log2_expected": 14.128583
+        },
+        {
+          "alive": 3542,
+          "depth": 48,
+          "deviation_bits": -0.06651,
+          "log2_alive": 11.790348,
+          "word_model_log2_expected": 11.856858
+        },
+        {
+          "alive": 960,
+          "depth": 72,
+          "deviation_bits": -0.10525,
+          "log2_alive": 9.906891,
+          "word_model_log2_expected": 10.012141
+        },
+        {
+          "alive": 277,
+          "depth": 96,
+          "deviation_bits": -0.219682,
+          "log2_alive": 8.113742,
+          "word_model_log2_expected": 8.333424
+        },
+        {
+          "alive": 76,
+          "depth": 120,
+          "deviation_bits": -0.446868,
+          "log2_alive": 6.247928,
+          "word_model_log2_expected": 6.694796
+        },
+        {
+          "alive": 30,
+          "depth": 144,
+          "deviation_bits": -0.279186,
+          "log2_alive": 4.906891,
+          "word_model_log2_expected": 5.186077
+        },
+        {
+          "alive": 1,
+          "depth": 182,
+          "deviation_bits": -2.829887,
+          "log2_alive": 0.0,
+          "word_model_log2_expected": 2.829887
+        }
+      ],
+      "elapsed_seconds": 0.126218,
+      "expected_0.01_bracket_depth": 345,
+      "first_moment_crossing_depth": 229,
+      "frontier_count": 27328,
+      "observed_max_certificate_depth": 183,
+      "observed_minus_crossing": -46,
+      "observed_ratio_depth_per_bit": 9.15,
+      "uncertified_count": 0,
+      "worst_start": 1027431
+    },
+    {
+      "base_depth": 22,
+      "certified_count": 93222,
+      "deviation_samples": [
+        {
+          "alive": 71654,
+          "depth": 24,
+          "deviation_bits": 0.000176,
+          "log2_alive": 16.12876,
+          "word_model_log2_expected": 16.128583
+        },
+        {
+          "alive": 14487,
+          "depth": 48,
+          "deviation_bits": -0.034387,
+          "log2_alive": 13.822471,
+          "word_model_log2_expected": 13.856858
+        },
+        {
+          "alive": 3950,
+          "depth": 72,
+          "deviation_bits": -0.064504,
+          "log2_alive": 11.947637,
+          "word_model_log2_expected": 12.012141
+        },
+        {
+          "alive": 1152,
+          "depth": 96,
+          "deviation_bits": -0.163499,
+          "log2_alive": 10.169925,
+          "word_model_log2_expected": 10.333424
+        },
+        {
+          "alive": 354,
+          "depth": 120,
+          "deviation_bits": -0.22719,
+          "log2_alive": 8.467606,
+          "word_model_log2_expected": 8.694796
+        },
+        {
+          "alive": 144,
+          "depth": 144,
+          "deviation_bits": -0.016152,
+          "log2_alive": 7.169925,
+          "word_model_log2_expected": 7.186077
+        },
+        {
+          "alive": 50,
+          "depth": 168,
+          "deviation_bits": -0.057704,
+          "log2_alive": 5.643856,
+          "word_model_log2_expected": 5.701561
+        },
+        {
+          "alive": 2,
+          "depth": 223,
+          "deviation_bits": -1.348012,
+          "log2_alive": 1.0,
+          "word_model_log2_expected": 2.348012
+        }
+      ],
+      "elapsed_seconds": 0.448622,
+      "expected_0.01_bracket_depth": 381,
+      "first_moment_crossing_depth": 263,
+      "frontier_count": 93222,
+      "observed_max_certificate_depth": 224,
+      "observed_minus_crossing": -39,
+      "observed_ratio_depth_per_bit": 10.181818,
+      "uncertified_count": 0,
+      "worst_start": 1126015
+    },
+    {
+      "base_depth": 24,
+      "certified_count": 286581,
+      "deviation_samples": [
+        {
+          "alive": 58954,
+          "depth": 48,
+          "deviation_bits": -0.009556,
+          "log2_alive": 15.847302,
+          "word_model_log2_expected": 15.856858
+        },
+        {
+          "alive": 16318,
+          "depth": 72,
+          "deviation_bits": -0.017964,
+          "log2_alive": 13.994177,
+          "word_model_log2_expected": 14.012141
+        },
+        {
+          "alive": 5016,
+          "depth": 96,
+          "deviation_bits": -0.041103,
+          "log2_alive": 12.292322,
+          "word_model_log2_expected": 12.333424
+        },
+        {
+          "alive": 1685,
+          "depth": 120,
+          "deviation_bits": 0.023737,
+          "log2_alive": 10.718533,
+          "word_model_log2_expected": 10.694796
+        },
+        {
+          "alive": 587,
+          "depth": 144,
+          "deviation_bits": 0.01114,
+          "log2_alive": 9.197217,
+          "word_model_log2_expected": 9.186077
+        },
+        {
+          "alive": 194,
+          "depth": 168,
+          "deviation_bits": -0.101648,
+          "log2_alive": 7.599913,
+          "word_model_log2_expected": 7.701561
+        },
+        {
+          "alive": 53,
+          "depth": 192,
+          "deviation_bits": -0.432279,
+          "log2_alive": 5.72792,
+          "word_model_log2_expected": 6.160199
+        },
+        {
+          "alive": 1,
+          "depth": 286,
+          "deviation_bits": -0.714622,
+          "log2_alive": 0.0,
+          "word_model_log2_expected": 0.714622
+        }
+      ],
+      "elapsed_seconds": 1.986257,
+      "expected_0.01_bracket_depth": 416,
+      "first_moment_crossing_depth": 297,
+      "frontier_count": 286581,
+      "observed_max_certificate_depth": 287,
+      "observed_minus_crossing": -10,
+      "observed_ratio_depth_per_bit": 11.958333,
+      "uncertified_count": 0,
+      "worst_start": 13421671
+    }
+  ],
+  "first_moment_envelope": [
+    {
+      "bits": 14,
+      "expected_0.01_bracket_depth": 239,
+      "first_moment_crossing_depth": 129
+    },
+    {
+      "bits": 16,
+      "expected_0.01_bracket_depth": 275,
+      "first_moment_crossing_depth": 161
+    },
+    {
+      "bits": 18,
+      "expected_0.01_bracket_depth": 310,
+      "first_moment_crossing_depth": 194
+    },
+    {
+      "bits": 20,
+      "expected_0.01_bracket_depth": 345,
+      "first_moment_crossing_depth": 229
+    },
+    {
+      "bits": 22,
+      "expected_0.01_bracket_depth": 381,
+      "first_moment_crossing_depth": 263
+    },
+    {
+      "bits": 24,
+      "expected_0.01_bracket_depth": 416,
+      "first_moment_crossing_depth": 297
+    },
+    {
+      "bits": 28,
+      "expected_0.01_bracket_depth": 491,
+      "first_moment_crossing_depth": 369
+    },
+    {
+      "bits": 32,
+      "expected_0.01_bracket_depth": 565,
+      "first_moment_crossing_depth": 442
+    },
+    {
+      "bits": 48,
+      "expected_0.01_bracket_depth": 866,
+      "first_moment_crossing_depth": 741
+    },
+    {
+      "bits": 64,
+      "expected_0.01_bracket_depth": 1172,
+      "first_moment_crossing_depth": 1046
+    },
+    {
+      "bits": 71,
+      "expected_0.01_bracket_depth": 1309,
+      "first_moment_crossing_depth": 1180
+    },
+    {
+      "bits": 128,
+      "expected_0.01_bracket_depth": 2048,
+      "first_moment_crossing_depth": 2048
+    }
+  ],
+  "interpretation": "The proved bound caps the uncertified density at 2^(-(1-H(theta))d) unconditionally. The first-moment crossings and deviation samples quantify the conjectural pointwise escape envelope; deviations of the alive curves from the word model are the measurable content of the missing uniform escape theorem. No proof of Collatz is claimed.",
+  "logged_records_for_context": {
+    "20": 183,
+    "24": 287,
+    "28": 395
+  },
+  "proved_bound_check": {
+    "checked_depths": 65,
+    "entropy_bound_held": true,
+    "exact_endpoint_tail_bound_held": true,
+    "min_slack_vs_endpoint_tail_bits": 0.0,
+    "min_slack_vs_entropy_bound_bits": 0.949956
+  },
+  "self_test": {
+    "anchors_verified": {
+      "20": 27328,
+      "24": 286581,
+      "28": 3524586
+    },
+    "brute_force_depths_checked": 14,
+    "dp_matches_integer_enumeration": true,
+    "parity_word_bijection_verified": true
+  },
+  "survivor_dp_rows": [
+    {
+      "depth": 1,
+      "effective_rate_bits_per_step": 1.0,
+      "log2_fraction": -1.0,
+      "log2_survivors": 0.0,
+      "min_live_odd_count": 1,
+      "proved_rate_bits_per_step": 0.050044473,
+      "survivors": 1
+    },
+    {
+      "depth": 64,
+      "effective_rate_bits_per_step": 0.146679796,
+      "log2_fraction": -9.387507,
+      "log2_survivors": 54.612493,
+      "min_live_odd_count": 41,
+      "proved_rate_bits_per_step": 0.050044473,
+      "survivors": 27542195013871668
+    },
+    {
+      "depth": 128,
+      "effective_rate_bits_per_step": 0.107866158,
+      "log2_fraction": -13.806868,
+      "log2_survivors": 114.193132,
+      "min_live_odd_count": 81,
+      "proved_rate_bits_per_step": 0.050044473,
+      "survivors": 23744222584883638495407855640356220
+    },
+    {
+      "depth": 192,
+      "effective_rate_bits_per_step": 0.092915629,
+      "log2_fraction": -17.839801,
+      "log2_survivors": 174.160199,
+      "min_live_odd_count": 122,
+      "proved_rate_bits_per_step": 0.050044473,
+      "survivors": null
+    },
+    {
+      "depth": 256,
+      "effective_rate_bits_per_step": 0.084146686,
+      "log2_fraction": -21.541552,
+      "log2_survivors": 234.458448,
+      "min_live_odd_count": 162,
+      "proved_rate_bits_per_step": 0.050044473,
+      "survivors": null
+    },
+    {
+      "depth": 320,
+      "effective_rate_bits_per_step": 0.078766199,
+      "log2_fraction": -25.205184,
+      "log2_survivors": 294.794816,
+      "min_live_odd_count": 202,
+      "proved_rate_bits_per_step": 0.050044473,
+      "survivors": null
+    },
+    {
+      "depth": 384,
+      "effective_rate_bits_per_step": 0.075071121,
+      "log2_fraction": -28.82731,
+      "log2_survivors": 355.17269,
+      "min_live_odd_count": 243,
+      "proved_rate_bits_per_step": 0.050044473,
+      "survivors": null
+    },
+    {
+      "depth": 448,
+      "effective_rate_bits_per_step": 0.072142414,
+      "log2_fraction": -32.319802,
+      "log2_survivors": 415.680198,
+      "min_live_odd_count": 283,
+      "proved_rate_bits_per_step": 0.050044473,
+      "survivors": null
+    },
+    {
+      "depth": 512,
+      "effective_rate_bits_per_step": 0.070018379,
+      "log2_fraction": -35.84941,
+      "log2_survivors": 476.15059,
+      "min_live_odd_count": 324,
+      "proved_rate_bits_per_step": 0.050044473,
+      "survivors": null
+    },
+    {
+      "depth": 576,
+      "effective_rate_bits_per_step": 0.068099817,
+      "log2_fraction": -39.225495,
+      "log2_survivors": 536.774505,
+      "min_live_odd_count": 364,
+      "proved_rate_bits_per_step": 0.050044473,
+      "survivors": null
+    },
+    {
+      "depth": 640,
+      "effective_rate_bits_per_step": 0.066627055,
+      "log2_fraction": -42.641315,
+      "log2_survivors": 597.358685,
+      "min_live_odd_count": 404,
+      "proved_rate_bits_per_step": 0.050044473,
+      "survivors": null
+    },
+    {
+      "depth": 704,
+      "effective_rate_bits_per_step": 0.065469277,
+      "log2_fraction": -46.090371,
+      "log2_survivors": 657.909629,
+      "min_live_odd_count": 445,
+      "proved_rate_bits_per_step": 0.050044473,
+      "survivors": null
+    },
+    {
+      "depth": 768,
+      "effective_rate_bits_per_step": 0.06434921,
+      "log2_fraction": -49.420194,
+      "log2_survivors": 718.579806,
+      "min_live_odd_count": 485,
+      "proved_rate_bits_per_step": 0.050044473,
+      "survivors": null
+    },
+    {
+      "depth": 832,
+      "effective_rate_bits_per_step": 0.063440933,
+      "log2_fraction": -52.782856,
+      "log2_survivors": 779.217144,
+      "min_live_odd_count": 525,
+      "proved_rate_bits_per_step": 0.050044473,
+      "survivors": null
+    },
+    {
+      "depth": 896,
+      "effective_rate_bits_per_step": 0.062721732,
+      "log2_fraction": -56.198672,
+      "log2_survivors": 839.801328,
+      "min_live_odd_count": 566,
+      "proved_rate_bits_per_step": 0.050044473,
+      "survivors": null
+    },
+    {
+      "depth": 960,
+      "effective_rate_bits_per_step": 0.062003666,
+      "log2_fraction": -59.523519,
+      "log2_survivors": 900.476481,
+      "min_live_odd_count": 606,
+      "proved_rate_bits_per_step": 0.050044473,
+      "survivors": null
+    },
+    {
+      "depth": 1024,
+      "effective_rate_bits_per_step": 0.061435855,
+      "log2_fraction": -62.910316,
+      "log2_survivors": 961.089684,
+      "min_live_odd_count": 647,
+      "proved_rate_bits_per_step": 0.050044473,
+      "survivors": null
+    },
+    {
+      "depth": 1088,
+      "effective_rate_bits_per_step": 0.060823899,
+      "log2_fraction": -66.176402,
+      "log2_survivors": 1021.823598,
+      "min_live_odd_count": 687,
+      "proved_rate_bits_per_step": 0.050044473,
+      "survivors": null
+    },
+    {
+      "depth": 1152,
+      "effective_rate_bits_per_step": 0.060315189,
+      "log2_fraction": -69.483098,
+      "log2_survivors": 1082.516902,
+      "min_live_odd_count": 727,
+      "proved_rate_bits_per_step": 0.050044473,
+      "survivors": null
+    },
+    {
+      "depth": 1216,
+      "effective_rate_bits_per_step": 0.05991333,
+      "log2_fraction": -72.854609,
+      "log2_survivors": 1143.145391,
+      "min_live_odd_count": 768,
+      "proved_rate_bits_per_step": 0.050044473,
+      "survivors": null
+    },
+    {
+      "depth": 1280,
+      "effective_rate_bits_per_step": 0.059463333,
+      "log2_fraction": -76.113066,
+      "log2_survivors": 1203.886934,
+      "min_live_odd_count": 808,
+      "proved_rate_bits_per_step": 0.050044473,
+      "survivors": null
+    },
+    {
+      "depth": 1344,
+      "effective_rate_bits_per_step": 0.059085107,
+      "log2_fraction": -79.410384,
+      "log2_survivors": 1264.589616,
+      "min_live_odd_count": 848,
+      "proved_rate_bits_per_step": 0.050044473,
+      "survivors": null
+    },
+    {
+      "depth": 1408,
+      "effective_rate_bits_per_step": 0.058778889,
+      "log2_fraction": -82.760676,
+      "log2_survivors": 1325.239324,
+      "min_live_odd_count": 889,
+      "proved_rate_bits_per_step": 0.050044473,
+      "survivors": null
+    },
+    {
+      "depth": 1472,
+      "effective_rate_bits_per_step": 0.058452101,
+      "log2_fraction": -86.041493,
+      "log2_survivors": 1385.958507,
+      "min_live_odd_count": 929,
+      "proved_rate_bits_per_step": 0.050044473,
+      "survivors": null
+    },
+    {
+      "depth": 1536,
+      "effective_rate_bits_per_step": 0.05819088,
+      "log2_fraction": -89.381192,
+      "log2_survivors": 1446.618808,
+      "min_live_odd_count": 970,
+      "proved_rate_bits_per_step": 0.050044473,
+      "survivors": null
+    },
+    {
+      "depth": 1600,
+      "effective_rate_bits_per_step": 0.057881069,
+      "log2_fraction": -92.609711,
+      "log2_survivors": 1507.390289,
+      "min_live_odd_count": 1010,
+      "proved_rate_bits_per_step": 0.050044473,
+      "survivors": null
+    },
+    {
+      "depth": 1664,
+      "effective_rate_bits_per_step": 0.057618571,
+      "log2_fraction": -95.877303,
+      "log2_survivors": 1568.122697,
+      "min_live_odd_count": 1050,
+      "proved_rate_bits_per_step": 0.050044473,
+      "survivors": null
+    },
+    {
+      "depth": 1728,
+      "effective_rate_bits_per_step": 0.057412152,
+      "log2_fraction": -99.208198,
+      "log2_survivors": 1628.791802,
+      "min_live_odd_count": 1091,
+      "proved_rate_bits_per_step": 0.050044473,
+      "survivors": null
+    },
+    {
+      "depth": 1792,
+      "effective_rate_bits_per_step": 0.05716599,
+      "log2_fraction": -102.441454,
+      "log2_survivors": 1689.558546,
+      "min_live_odd_count": 1131,
+      "proved_rate_bits_per_step": 0.050044473,
+      "survivors": null
+    },
+    {
+      "depth": 1856,
+      "effective_rate_bits_per_step": 0.057016532,
+      "log2_fraction": -105.822683,
+      "log2_survivors": 1750.177317,
+      "min_live_odd_count": 1172,
+      "proved_rate_bits_per_step": 0.050044473,
+      "survivors": null
+    },
+    {
+      "depth": 1920,
+      "effective_rate_bits_per_step": 0.056787258,
+      "log2_fraction": -109.031535,
+      "log2_survivors": 1810.968465,
+      "min_live_odd_count": 1212,
+      "proved_rate_bits_per_step": 0.050044473,
+      "survivors": null
+    },
+    {
+      "depth": 1984,
+      "effective_rate_bits_per_step": 0.056594816,
+      "log2_fraction": -112.284115,
+      "log2_survivors": 1871.715885,
+      "min_live_odd_count": 1252,
+      "proved_rate_bits_per_step": 0.050044473,
+      "survivors": null
+    },
+    {
+      "depth": 2048,
+      "effective_rate_bits_per_step": 0.056447678,
+      "log2_fraction": -115.604845,
+      "log2_survivors": 1932.395155,
+      "min_live_odd_count": 1293,
+      "proved_rate_bits_per_step": 0.050044473,
+      "survivors": null
+    }
+  ]
+}

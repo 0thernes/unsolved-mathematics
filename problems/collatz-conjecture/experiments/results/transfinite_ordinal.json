@@ -1,0 +1,101 @@
+{
+  "results": [
+    {
+      "n": 27,
+      "bitlen": 5,
+      "steps": 70,
+      "repulsion_events": 14,
+      "max_align": 6,
+      "defect_mass": 53,
+      "proxy_ordinal": [
+        6,
+        14,
+        53,
+        70
+      ],
+      "normalized_rank": 6145,
+      "ejects": true
+    },
+    {
+      "n": 703,
+      "bitlen": 10,
+      "steps": 108,
+      "repulsion_events": 22,
+      "max_align": 6,
+      "defect_mass": 86,
+      "proxy_ordinal": [
+        6,
+        22,
+        86,
+        108
+      ],
+      "normalized_rank": 6228,
+      "ejects": true
+    },
+    {
+      "n": 35655,
+      "bitlen": 16,
+      "steps": 204,
+      "repulsion_events": 37,
+      "max_align": 8,
+      "defect_mass": 168,
+      "proxy_ordinal": [
+        8,
+        37,
+        168,
+        204
+      ],
+      "normalized_rank": 8386,
+      "ejects": true
+    },
+    {
+      "n": 626331,
+      "bitlen": 20,
+      "steps": 319,
+      "repulsion_events": 69,
+      "max_align": 14,
+      "defect_mass": 357,
+      "proxy_ordinal": [
+        14,
+        69,
+        357,
+        319
+      ],
+      "normalized_rank": 14725,
+      "ejects": true
+    },
+    {
+      "n": 217740015,
+      "bitlen": 28,
+      "steps": 497,
+      "repulsion_events": 104,
+      "max_align": 10,
+      "defect_mass": 446,
+      "proxy_ordinal": [
+        10,
+        104,
+        446,
+        497
+      ],
+      "normalized_rank": 11084,
+      "ejects": true
+    },
+    {
+      "n": 2416326538309822975,
+      "bitlen": 62,
+      "steps": 738,
+      "repulsion_events": 163,
+      "max_align": 24,
+      "defect_mass": 914,
+      "proxy_ordinal": [
+        24,
+        163,
+        914,
+        738
+      ],
+      "normalized_rank": 25721,
+      "ejects": true
+    }
+  ],
+  "note": "Transfinite proxy ordinal from repulsion height. Bounded by function of b."
+}

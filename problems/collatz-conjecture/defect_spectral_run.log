@@ -1,0 +1,75 @@
+=== YOLO SPECTRAL_SHARP + DEFECT_FIELD + ERGODIC ESCALATION ===
+E built. row_inf ~ 0.68810588
+rho* (Perron exact diag+power) = 0.621439723657686738
+Perron vec ~ [0.59706422, 0.79706459, 0.0904907, 0.00371324]
+  b=3 c_homo=1.107256894395 c_spectral=1.330354018070
+  b=4 c_homo=0.836163132448 c_spectral=1.002022317116
+  b=5 c_homo=0.673460589106 c_spectral=0.804995933529
+  b=6 c_homo=0.564954372223 c_spectral=0.673622572146
+  b=7 c_homo=0.487418084127 c_spectral=0.579765527648
+  b=8 c_homo=0.429238512941 c_spectral=0.509356441112
+  b=9 c_homo=0.383963863018 c_spectral=0.454579552182
+  b=10 c_homo=0.347723047112 c_spectral=0.410745399942
+  b=11 c_homo=0.318052637354 c_spectral=0.374869777840
+  b=12 c_homo=0.293310340739 c_spectral=0.344963211160
+  b=13 c_homo=0.272359178222 c_spectral=0.319648367949
+  b=14 c_homo=0.254387015637 c_spectral=0.297941436699
+  b=15 c_homo=0.238798282231 c_spectral=0.279120952946
+  b=16 c_homo=0.225146294752 c_spectral=0.262645815893
+  b=17 c_homo=0.213089467146 c_spectral=0.248102240341
+  b=18 c_homo=0.202362117018 c_spectral=0.235168391306
+  b=19 c_homo=0.192754491104 c_spectral=0.223590186650
+  b=20 c_homo=0.184098783092 c_spectral=0.213164358922
+  b=21 c_homo=0.176259146358 c_spectral=0.203726356669
+  b=22 c_homo=0.169124430491 c_spectral=0.195141545389
+  b=23 c_homo=0.162602812637 c_spectral=0.187298703887
+  b=24 c_homo=0.156617771003 c_spectral=0.180105146541
+  b=25 c_homo=0.151105024721 c_spectral=0.173483016218
+  b=26 c_homo=0.146010179896 c_spectral=0.167366432676
+  b=27 c_homo=0.141286898745 c_spectral=0.161699274653
+  b=28 c_homo=0.136895461068 c_spectral=0.156433437214
+  b=29 c_homo=0.132801623343 c_spectral=0.151527449658
+  b=31 c_homo=0.125391857344 c_spectral=0.142655892451
+  b=63 c_homo=0.069729754815 c_spectral=0.076610736385
+  b=64 c_homo=0.068859679684 c_spectral=0.075592730349
+  b=128 c_homo=0.040276008856 c_spectral=0.042699420046
+  b=256 c_homo=0.024005283698 c_spectral=0.024767428999
+  b=512 c_homo=0.014306734850 c_spectral=0.014515976254
+  b=1024 c_homo=0.008426902337 c_spectral=0.008476192544
+  b=2048 c_homo=0.004885545507 c_spectral=0.004894274166
+  b=4096 c_homo=0.002788387833 c_spectral=0.002788466315
+
+inf_c*_homo = 0.0027883878325026   inf_c*_spectral=0.0027884663152378
+SHARP uniform c* <= 1.584962500721 b   (replaces crude 11.2 b)
+
+=== DEFECT MODULE over K=Q(ΓêÜ2,ΓêÜ3) ===
+gens exact N(xy)=N(x)N(y): True
+samples exact submult: 11/11
+sample ratios: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+N multiplicative homo => submult. Defect field classifies orbits.
+
+=== ERGODIC survivor DP invariant mu on +cone ===
+mu_od (DP frontier) = 0.64130187378281  target~0.63092975357146
+implied_index = 1.55932804952113  theory=1.58496250072116
+E[index] = log(3)/log(2) = 1.5849625007211563 exact closed form
+converged: False
+Wrote fresh results/defect_spectral_sharp.json (root + experiments)
+Traceback (most recent call last):
+  File "Z:\[Vibe Coded (AI)]\CLAUDECODE\Unresolved Math Problems\problems\collatz-conjecture\defect_spectral_sharp.py", line 350, in <module>
+    main()
+  File "Z:\[Vibe Coded (AI)]\CLAUDECODE\Unresolved Math Problems\problems\collatz-conjecture\defect_spectral_sharp.py", line 288, in main
+    append_theorems(rho, infc, inf_spectral, uc, ei, fdata, mud, E)
+  File "Z:\[Vibe Coded (AI)]\CLAUDECODE\Unresolved Math Problems\problems\collatz-conjecture\defect_spectral_sharp.py", line 319, in append_theorems
+    The Galois norm N_{K/Q} is a multiplicative group homomorphism K^* -> Q^* : N(xy) = N(x)N(y) exactly for all x,y.
+                       ^
+NameError: name 'K' is not defined
+=== EXPERIMENTS VARIANT: SPECTRAL_SHARP + FIELD + ERGODIC ===
+rho* (numpy+gelfand) = 0.688105881000000030
+inf_c_homo=0.00199734875865 inf_spectral=0.00212501544195 sharp_uc<=1.584962501 b
+field gens_ok=True oks=6/6
+mu_od=0.646885974411 limit=0.630929753571 converged=False
+E[index]=log(3)/log(2)=1.5849625007211563 closed dual
+Wrote experiments/results + results jsons (numpy variant).
+Appended variant to defect_algebra_formal_proof.md
+Appended variant to 11.8_MASTER_THEOREM.md
+Appended variant to experiments/11.8_MASTER_THEOREM.md

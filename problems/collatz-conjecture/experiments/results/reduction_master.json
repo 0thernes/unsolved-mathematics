@@ -1,0 +1,81 @@
+{
+  "elapsed_seconds": 0.004,
+  "honesty": "This instrument chains proved and measured lemmas. It does NOT prove Collatz. The reduction identifies the exact residue: Terras record-band integers, frontier residents, and the finite scan gaps between proved band ceilings.",
+  "mode": "reduction",
+  "open_exactly": [
+    "SCAN_GAP: Terras violations in the first open band need n in a finite window above 1000000000 not yet scanned (width ~2^1.0 bits if first_open else 'n/a').",
+    "Frontier residents (tau=infinity): positive integers in survivor set S \u2014 divergence.",
+    "Pointwise extreme-value gap: no theorem yet that gamma(n) <= 19.982 for all n.",
+    "Cycles beyond 2^71: excluded computationally; structural gamma >= 10^9 floor proved."
+  ],
+  "proof_chain": [
+    {
+      "id": "A",
+      "label": "Localization (FRONTIER-GEOMETRY Thm 3)",
+      "statement": "Any counterexample orbit minimum m has sigma(m)=infinity; either tau(m)=infinity (frontier resident) or m is below its class certificate threshold at depth tau(m).",
+      "status": "PROVED"
+    },
+    {
+      "id": "B",
+      "label": "Threshold vacuity (THRESHOLD-ENVELOPE)",
+      "statement": "No certified class traps n >= 2^d at any depth; Terras violations must satisfy n < 2^tau(n) (certificate-record integers, gamma > 1).",
+      "status": "PROVED"
+    },
+    {
+      "id": "C",
+      "label": "Record ceiling (RECORD-BAND)",
+      "statement": "Alive Terras violations obey n <= o/(2 ln2 delta(o)); per convergent band this gives explicit gamma floors (first open: gamma >= 1530.6).",
+      "status": "PROVED"
+    },
+    {
+      "id": "D",
+      "label": "Delta-squeeze band exclusion (this lab)",
+      "statement": "9 convergent bands below the first open band are proved empty of Terras violations past 1000000000.",
+      "status": "PROVED"
+    },
+    {
+      "id": "E",
+      "label": "Terras scan",
+      "statement": "tau(n) = sigma(n) for all 1 < n <= 1000000000 (zero exceptions).",
+      "status": "MEASURED"
+    },
+    {
+      "id": "F",
+      "label": "eps-invariance barrier (SIBLING-CONTROL)",
+      "statement": "Parity-word statistics cannot separate Collatz from 3n-1; proofs must consume intercept sign (eps=+1).",
+      "status": "PROVED"
+    }
+  ],
+  "record_band_summary": {
+    "first_feasible_band_q": 31867,
+    "floor_n": 1000000000,
+    "gamma_floor": 1530.6,
+    "log2_X_band_ceiling": 32.35,
+    "o_min": 31867,
+    "tau_min": 50509
+  },
+  "reductions": {
+    "collatz_full": "Every positive integer reaches 1 (no divergent orbit, no nontrivial cycle).",
+    "cycle_conditional": "A nontrivial cycle minimum m exceeds 2^71 (Barina) and satisfies m <= X(tau(m)); the first band whose ceiling clears 2^71 gives the minimum odd count of its certificate prefix.",
+    "first_open_band": "First band not proved empty: o in [31867, 79335), tau >= 50509, n <= 2193206481 (2^31.03), gamma >= 1578.4.",
+    "unconditional_terras_half": "Terras conjecture <=> no certificate-record integer r with T^tau(r) >= r (self-trap / gamma > 1 band).",
+    "under_terras": "Collatz <=> S intersect Z_{>0} = empty (frontier has no positive integers). Terras (tau=sigma) already implies no nontrivial cycle."
+  },
+  "squeeze_summary": {
+    "first_open_band": {
+      "band_k": 10,
+      "delta_lower": 1.0481084034386298e-05,
+      "gamma_floor_at_ceiling": 1578.4,
+      "log2_n_ceiling": 31.03,
+      "n_ceiling": 2193206481,
+      "o_min": 31867,
+      "o_need": 14530,
+      "q_k": 31867,
+      "q_k+1": 79335,
+      "reason": "violations past 1000000000 need n in (1000000000, 2193206481] with tau >= 50509; not covered by scan",
+      "status": "SCAN_GAP",
+      "tau_min": 50509
+    },
+    "proved_empty_bands": 9
+  }
+}

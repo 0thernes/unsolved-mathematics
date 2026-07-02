@@ -1,0 +1,14 @@
+{
+  "honesty": "This closes the first structural scan gap if max_tau < tau_min and tau=sigma throughout. It does not prove Terras globally or Collatz.",
+  "mode": "theorem",
+  "proved_empty": true,
+  "scan_summary": {
+    "elapsed_seconds": 630.5,
+    "max_tau": 433,
+    "odd_integers_scanned": 596603241,
+    "tau_min_required": 50509,
+    "terras_verified": true
+  },
+  "statement": "Every odd integer n with 10^9 < n <= n_ceiling has tau(n) < tau_min; hence no Terras violation can occur in convergent band [31867, 79335) beyond the 10^9 scan \u2014 the band is proved empty.",
+  "theorem": "First-open-band closure"
+}

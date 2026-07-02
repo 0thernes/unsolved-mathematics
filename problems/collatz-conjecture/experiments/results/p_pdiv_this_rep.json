@@ -1,0 +1,11 @@
+{
+  "metrics_source": "beyond_xai_attacks + prior ejections",
+  "heights": {
+    "5": 2,
+    "10": 4,
+    "28": 10,
+    "62": 22,
+    "71": 26
+  },
+  "conclusion": "G_P finite height for positives (torsion to C); infinite only -1"
+}

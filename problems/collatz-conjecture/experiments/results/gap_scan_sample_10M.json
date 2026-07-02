@@ -1,0 +1,107 @@
+{
+  "band_closure": {
+    "proved_empty": true,
+    "reason": "max_tau=306 < tau_min=50509: no Terras violation can live in this band past lo"
+  },
+  "elapsed_seconds": 4.6,
+  "first_open_band": {
+    "log2_n_ceiling": 31.03,
+    "o_min": 31867,
+    "q_k": 31867,
+    "q_k+1": 79335
+  },
+  "gamma_record_pinch": {
+    "gamma_ceiling_heuristic": 19.982226683919038,
+    "measured_max_gamma": 10.2342,
+    "pinch_ratio": 165.0,
+    "tau_implied_at_hi": 306.1,
+    "tau_min_required": 50509
+  },
+  "hi_inclusive": 1010000000,
+  "lo_exclusive": 1000000000,
+  "max_gamma": 10.2342,
+  "max_gamma_n": 1001633007,
+  "max_tau": 306,
+  "max_tau_n": 1001633007,
+  "mean_tau": 5.982928,
+  "mode": "gap-scan",
+  "odd_integers_scanned": 5000000,
+  "records": [
+    {
+      "gamma": 2.9769,
+      "n": 1000001307,
+      "sigma": 89,
+      "tau": 89
+    },
+    {
+      "gamma": 3.9803,
+      "n": 1000005659,
+      "sigma": 119,
+      "tau": 119
+    },
+    {
+      "gamma": 4.2479,
+      "n": 1000006335,
+      "sigma": 127,
+      "tau": 127
+    },
+    {
+      "gamma": 4.3482,
+      "n": 1000032255,
+      "sigma": 130,
+      "tau": 130
+    },
+    {
+      "gamma": 4.6158,
+      "n": 1000053999,
+      "sigma": 138,
+      "tau": 138
+    },
+    {
+      "gamma": 4.7496,
+      "n": 1000061823,
+      "sigma": 142,
+      "tau": 142
+    },
+    {
+      "gamma": 5.4185,
+      "n": 1000070591,
+      "sigma": 162,
+      "tau": 162
+    },
+    {
+      "gamma": 5.8533,
+      "n": 1000080487,
+      "sigma": 175,
+      "tau": 175
+    },
+    {
+      "gamma": 5.8867,
+      "n": 1000321115,
+      "sigma": 176,
+      "tau": 176
+    },
+    {
+      "gamma": 6.5891,
+      "n": 1000436735,
+      "sigma": 197,
+      "tau": 197
+    },
+    {
+      "gamma": 8.2948,
+      "n": 1000603695,
+      "sigma": 248,
+      "tau": 248
+    },
+    {
+      "gamma": 10.2342,
+      "n": 1001633007,
+      "sigma": 306,
+      "tau": 306
+    }
+  ],
+  "squeeze_input": "Z:\\[Vibe Coded (AI)]\\CLAUDECODE\\Unresolved Math Problems\\problems\\collatz-conjecture\\experiments\\results\\reduction_squeeze.json",
+  "tau_min_required": 50509,
+  "terras_mismatches": [],
+  "terras_verified": true
+}

@@ -1,0 +1,239 @@
+{
+  "elapsed_seconds": 392.1,
+  "frontier_tails": [
+    {
+      "count_tau_gt_depth": 62500001,
+      "depth": 10,
+      "exact_density_F": 0.0625,
+      "expected_count_N_times_F": 62499999.938,
+      "ratio_observed_over_expected": 1.0,
+      "regime": "exact (2^d <= N: ratio forced to 1 up to O(2^d/N))"
+    },
+    {
+      "count_tau_gt_depth": 26061974,
+      "depth": 20,
+      "exact_density_F": 0.02606201171875,
+      "expected_count_N_times_F": 26062011.693,
+      "ratio_observed_over_expected": 0.999999,
+      "regime": "exact (2^d <= N: ratio forced to 1 up to O(2^d/N))"
+    },
+    {
+      "count_tau_gt_depth": 15458240,
+      "depth": 26,
+      "exact_density_F": 0.015458077192306519,
+      "expected_count_N_times_F": 15458077.177,
+      "ratio_observed_over_expected": 1.000011,
+      "regime": "exact (2^d <= N: ratio forced to 1 up to O(2^d/N))"
+    },
+    {
+      "count_tau_gt_depth": 11894128,
+      "depth": 30,
+      "exact_density_F": 0.01189417578279972,
+      "expected_count_N_times_F": 11894175.771,
+      "ratio_observed_over_expected": 0.999996,
+      "regime": "equidistribution (2^d > N, expected count large: measures integer-vs-shadow structure)"
+    },
+    {
+      "count_tau_gt_depth": 8842297,
+      "depth": 34,
+      "exact_density_F": 0.008842770243063569,
+      "expected_count_N_times_F": 8842770.234,
+      "ratio_observed_over_expected": 0.999946,
+      "regime": "equidistribution (2^d > N, expected count large: measures integer-vs-shadow structure)"
+    },
+    {
+      "count_tau_gt_depth": 5823631,
+      "depth": 40,
+      "exact_density_F": 0.005823344508826267,
+      "expected_count_N_times_F": 5823344.503,
+      "ratio_observed_over_expected": 1.000049,
+      "regime": "equidistribution (2^d > N, expected count large: measures integer-vs-shadow structure)"
+    },
+    {
+      "count_tau_gt_depth": 1922785,
+      "depth": 60,
+      "exact_density_F": 0.001922190657317014,
+      "expected_count_N_times_F": 1922190.655,
+      "ratio_observed_over_expected": 1.000309,
+      "regime": "equidistribution (2^d > N, expected count large: measures integer-vs-shadow structure)"
+    },
+    {
+      "count_tau_gt_depth": 664945,
+      "depth": 80,
+      "exact_density_F": 0.0006643996685743306,
+      "expected_count_N_times_F": 664399.668,
+      "ratio_observed_over_expected": 1.000821,
+      "regime": "equidistribution (2^d > N, expected count large: measures integer-vs-shadow structure)"
+    },
+    {
+      "count_tau_gt_depth": 239273,
+      "depth": 100,
+      "exact_density_F": 0.00023867828362647393,
+      "expected_count_N_times_F": 238678.283,
+      "ratio_observed_over_expected": 1.002492,
+      "regime": "equidistribution (2^d > N, expected count large: measures integer-vs-shadow structure)"
+    },
+    {
+      "count_tau_gt_depth": 99023,
+      "depth": 120,
+      "exact_density_F": 9.879488730064897e-05,
+      "expected_count_N_times_F": 98794.887,
+      "ratio_observed_over_expected": 1.002309,
+      "regime": "equidistribution (2^d > N, expected count large: measures integer-vs-shadow structure)"
+    },
+    {
+      "count_tau_gt_depth": 39396,
+      "depth": 140,
+      "exact_density_F": 3.962954064617462e-05,
+      "expected_count_N_times_F": 39629.541,
+      "ratio_observed_over_expected": 0.994107,
+      "regime": "equidistribution (2^d > N, expected count large: measures integer-vs-shadow structure)"
+    },
+    {
+      "count_tau_gt_depth": 16998,
+      "depth": 160,
+      "exact_density_F": 1.7257743582611233e-05,
+      "expected_count_N_times_F": 17257.744,
+      "ratio_observed_over_expected": 0.984949,
+      "regime": "equidistribution (2^d > N, expected count large: measures integer-vs-shadow structure)"
+    }
+  ],
+  "gamma_ceiling_heuristic": 19.982226683919038,
+  "interpretation": "records approaching gamma = 19.982 from below, and record-regime tail ratios near 1, are the random-model behavior; any systematic departure would be the first quantitative sign of positive-integer structure against the 2-adic frontier.",
+  "limit": 1000000000,
+  "max_gamma_tau_over_log2n": {
+    "gamma": 14.5031,
+    "n": 63728127
+  },
+  "max_tau": 395,
+  "mean_tau": 3.492689,
+  "mode": "tau-scan",
+  "records": [
+    {
+      "gamma": 1.0,
+      "n": 2,
+      "sigma": 1,
+      "tau": 1
+    },
+    {
+      "gamma": 2.5237,
+      "n": 3,
+      "sigma": 4,
+      "tau": 4
+    },
+    {
+      "gamma": 2.4935,
+      "n": 7,
+      "sigma": 7,
+      "tau": 7
+    },
+    {
+      "gamma": 12.4083,
+      "n": 27,
+      "sigma": 59,
+      "tau": 59
+    },
+    {
+      "gamma": 8.5647,
+      "n": 703,
+      "sigma": 81,
+      "tau": 81
+    },
+    {
+      "gamma": 7.8946,
+      "n": 10087,
+      "sigma": 105,
+      "tau": 105
+    },
+    {
+      "gamma": 8.9275,
+      "n": 35655,
+      "sigma": 135,
+      "tau": 135
+    },
+    {
+      "gamma": 9.0889,
+      "n": 270271,
+      "sigma": 164,
+      "tau": 164
+    },
+    {
+      "gamma": 8.9349,
+      "n": 362343,
+      "sigma": 165,
+      "tau": 165
+    },
+    {
+      "gamma": 9.3301,
+      "n": 381727,
+      "sigma": 173,
+      "tau": 173
+    },
+    {
+      "gamma": 9.1397,
+      "n": 626331,
+      "sigma": 176,
+      "tau": 176
+    },
+    {
+      "gamma": 9.1635,
+      "n": 1027431,
+      "sigma": 183,
+      "tau": 183
+    },
+    {
+      "gamma": 11.1427,
+      "n": 1126015,
+      "sigma": 224,
+      "tau": 224
+    },
+    {
+      "gamma": 10.7202,
+      "n": 8088063,
+      "sigma": 246,
+      "tau": 246
+    },
+    {
+      "gamma": 12.1209,
+      "n": 13421671,
+      "sigma": 287,
+      "tau": 287
+    },
+    {
+      "gamma": 12.017,
+      "n": 20638335,
+      "sigma": 292,
+      "tau": 292
+    },
+    {
+      "gamma": 12.0788,
+      "n": 26716671,
+      "sigma": 298,
+      "tau": 298
+    },
+    {
+      "gamma": 11.9553,
+      "n": 56924955,
+      "sigma": 308,
+      "tau": 308
+    },
+    {
+      "gamma": 14.5031,
+      "n": 63728127,
+      "sigma": 376,
+      "tau": 376
+    },
+    {
+      "gamma": 14.2609,
+      "n": 217740015,
+      "sigma": 395,
+      "tau": 395
+    }
+  ],
+  "sigma_ge_tau_theorem": "held for every scanned n (descent implies coefficient drop)",
+  "terras_coefficient_conjecture": {
+    "counterexamples": [],
+    "statement": "tau(n) == sigma(n) for all 1 < n <= limit",
+    "verified": true
+  }
+}

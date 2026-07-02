@@ -1,0 +1,181 @@
+{
+  "hits": [
+    {
+      "d": 2,
+      "o": 1
+    }
+  ],
+  "mode": "window",
+  "o_max": 256,
+  "sample_margins": [
+    {
+      "d": 2,
+      "in_window": true,
+      "log2_gap": 0.0,
+      "log2_intercept_cap_(3/2)^o": 0.585,
+      "o": 1
+    },
+    {
+      "d": 4,
+      "in_window": false,
+      "log2_gap": 2.807,
+      "log2_intercept_cap_(3/2)^o": 1.17,
+      "o": 2
+    },
+    {
+      "d": 5,
+      "in_window": false,
+      "log2_gap": 2.322,
+      "log2_intercept_cap_(3/2)^o": 1.755,
+      "o": 3
+    },
+    {
+      "d": 7,
+      "in_window": false,
+      "log2_gap": 5.555,
+      "log2_intercept_cap_(3/2)^o": 2.34,
+      "o": 4
+    },
+    {
+      "d": 8,
+      "in_window": false,
+      "log2_gap": 3.7,
+      "log2_intercept_cap_(3/2)^o": 2.925,
+      "o": 5
+    },
+    {
+      "d": 10,
+      "in_window": false,
+      "log2_gap": 8.205,
+      "log2_intercept_cap_(3/2)^o": 3.51,
+      "o": 6
+    },
+    {
+      "d": 12,
+      "in_window": false,
+      "log2_gap": 10.899,
+      "log2_intercept_cap_(3/2)^o": 4.095,
+      "o": 7
+    },
+    {
+      "d": 13,
+      "in_window": false,
+      "log2_gap": 10.672,
+      "log2_intercept_cap_(3/2)^o": 4.68,
+      "o": 8
+    },
+    {
+      "d": 15,
+      "in_window": false,
+      "log2_gap": 13.676,
+      "log2_intercept_cap_(3/2)^o": 5.265,
+      "o": 9
+    },
+    {
+      "d": 16,
+      "in_window": false,
+      "log2_gap": 12.663,
+      "log2_intercept_cap_(3/2)^o": 5.85,
+      "o": 10
+    },
+    {
+      "d": 18,
+      "in_window": false,
+      "log2_gap": 16.375,
+      "log2_intercept_cap_(3/2)^o": 6.435,
+      "o": 11
+    },
+    {
+      "d": 20,
+      "in_window": false,
+      "log2_gap": 18.98,
+      "log2_intercept_cap_(3/2)^o": 7.02,
+      "o": 12
+    },
+    {
+      "d": 21,
+      "in_window": false,
+      "log2_gap": 18.94,
+      "log2_intercept_cap_(3/2)^o": 7.605,
+      "o": 13
+    },
+    {
+      "d": 23,
+      "in_window": false,
+      "log2_gap": 21.782,
+      "log2_intercept_cap_(3/2)^o": 8.189,
+      "o": 14
+    },
+    {
+      "d": 24,
+      "in_window": false,
+      "log2_gap": 21.212,
+      "log2_intercept_cap_(3/2)^o": 8.774,
+      "o": 15
+    },
+    {
+      "d": 26,
+      "in_window": false,
+      "log2_gap": 24.52,
+      "log2_intercept_cap_(3/2)^o": 9.359,
+      "o": 16
+    },
+    {
+      "d": 27,
+      "in_window": false,
+      "log2_gap": 22.276,
+      "log2_intercept_cap_(3/2)^o": 9.944,
+      "o": 17
+    },
+    {
+      "d": 29,
+      "in_window": false,
+      "log2_gap": 27.155,
+      "log2_intercept_cap_(3/2)^o": 10.529,
+      "o": 18
+    },
+    {
+      "d": 31,
+      "in_window": false,
+      "log2_gap": 29.876,
+      "log2_intercept_cap_(3/2)^o": 11.114,
+      "o": 19
+    },
+    {
+      "d": 32,
+      "in_window": false,
+      "log2_gap": 29.59,
+      "log2_intercept_cap_(3/2)^o": 11.699,
+      "o": 20
+    },
+    {
+      "d": 34,
+      "in_window": false,
+      "log2_gap": 32.646,
+      "log2_intercept_cap_(3/2)^o": 12.284,
+      "o": 21
+    },
+    {
+      "d": 35,
+      "in_window": false,
+      "log2_gap": 31.472,
+      "log2_intercept_cap_(3/2)^o": 12.869,
+      "o": 22
+    },
+    {
+      "d": 37,
+      "in_window": false,
+      "log2_gap": 35.334,
+      "log2_intercept_cap_(3/2)^o": 13.454,
+      "o": 23
+    },
+    {
+      "d": 39,
+      "in_window": false,
+      "log2_gap": 37.96,
+      "log2_intercept_cap_(3/2)^o": 14.039,
+      "o": 24
+    }
+  ],
+  "statement": "a q>=1 threshold trap at (d, o) requires 2^d - 3^o < (3/2)^o with 3^o < 2^d"
+}

@@ -1,0 +1,80 @@
+{
+  "cap": 4096,
+  "elapsed_seconds": 3.7,
+  "eps": 1,
+  "flagged_frontier_residents": {
+    "count": 0,
+    "density": 0.0,
+    "meaning": "integers whose coefficient never dropped (tau = infinity proven via supercritical terminal cycle for eps=-1; tau > cap for q=5)",
+    "samples": []
+  },
+  "frontier_tails_vs_word_model": [
+    {
+      "count_tau_gt_depth": 625000,
+      "depth": 10,
+      "ratio": 1.0,
+      "word_model_expected": 625000.0
+    },
+    {
+      "count_tau_gt_depth": 260609,
+      "depth": 20,
+      "ratio": 0.999957,
+      "word_model_expected": 260620.117
+    },
+    {
+      "count_tau_gt_depth": 170854,
+      "depth": 24,
+      "ratio": 1.000225,
+      "word_model_expected": 170815.587
+    },
+    {
+      "count_tau_gt_depth": 119047,
+      "depth": 30,
+      "ratio": 1.000885,
+      "word_model_expected": 118941.758
+    },
+    {
+      "count_tau_gt_depth": 57883,
+      "depth": 40,
+      "ratio": 0.993982,
+      "word_model_expected": 58233.445
+    },
+    {
+      "count_tau_gt_depth": 18991,
+      "depth": 60,
+      "ratio": 0.987987,
+      "word_model_expected": 19221.907
+    },
+    {
+      "count_tau_gt_depth": 6426,
+      "depth": 80,
+      "ratio": 0.967189,
+      "word_model_expected": 6643.997
+    },
+    {
+      "count_tau_gt_depth": 2194,
+      "depth": 100,
+      "ratio": 0.919229,
+      "word_model_expected": 2386.783
+    }
+  ],
+  "limit": 10000000,
+  "max_finite_tau": {
+    "n": 8088063,
+    "tau": 246
+  },
+  "mean_tau_over_finite": 3.490781,
+  "mode": "scan",
+  "q": 3,
+  "terras_mismatches_sigma_ne_tau": {
+    "count": 1,
+    "note": "sigma < tau allowed for eps=-1 (theorem sigma<=tau); tau < sigma would be a threshold trap for eps=+1",
+    "samples": [
+      {
+        "n": 1,
+        "sigma": -1,
+        "tau": 2
+      }
+    ]
+  }
+}

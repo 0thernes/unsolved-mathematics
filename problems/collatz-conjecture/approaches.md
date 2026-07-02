@@ -16,7 +16,7 @@ The conjecture decomposes into two independent statements: **no nontrivial cycle
 
 **Core idea.** A nontrivial cycle of $k$ odd steps and $\ell$ even steps exists only if a tight Diophantine relation holds, essentially $2^{\ell} - 3^{k}$ being small relative to the cycle's elements. Continued-fraction approximations to $\log_2 3$ and transcendence theory (Baker's bounds on linear forms in logarithms) constrain how close $2^\ell$ can be to $3^k$.
 
-**Best result.** Steiner (1977) excluded "$1$-cycles"; Simons and de Weger (2005) excluded $m$-cycles for small $m$. Combined with computational verification to $2^{68}$, any nontrivial cycle must have enormous length — on the order of hundreds of millions of terms (Eliahou and successors give explicit lower bounds in the $10^{8}$–$10^{9}$ range, scaling with the verified bound).
+**Best result.** Steiner (1977) excluded "$1$-cycles"; Simons and de Weger (2005) excluded $m$-cycles for small $m$; Hercher (2023, arXiv:2201.00406) pushed this to $m \le 91$. Combined with computational verification to $2^{71}$ (Bařina 2025), any nontrivial cycle must contain at least $1.375 \times 10^{11}$ odd terms (Hercher's threshold of $3 \cdot 2^{69}$ verified convergence is met by Bařina's bound), superseding the older Eliahou-style $10^{8}$–$10^{9}$ estimates; the floor continues to scale with the verified range.
 
 **Barrier.** These bounds grow only with the verified range and with transcendence constants; they cannot reach "no cycle of any length." A finite computation plus a finite transcendence bound never closes an infinite family.
 

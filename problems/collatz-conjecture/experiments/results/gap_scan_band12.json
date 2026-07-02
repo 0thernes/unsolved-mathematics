@@ -1,0 +1,110 @@
+{
+  "band": {
+    "band_k": 12,
+    "log2_n_ceiling": 33.846,
+    "o_min": 111202,
+    "q_k": 111202,
+    "q_k+1": 190537,
+    "tau_min": 176252
+  },
+  "band_closure": {
+    "proved_empty": true,
+    "reason": "max_tau=547 < tau_min=176252: no Terras violation can live in this band past lo"
+  },
+  "elapsed_seconds": 354.5,
+  "gamma_record_pinch": {
+    "gamma_ceiling_heuristic": 19.982226683919038,
+    "measured_max_gamma": 16.3233,
+    "pinch_ratio": 319.0,
+    "tau_implied_at_hi": 552.5,
+    "tau_min_required": 176252
+  },
+  "hi_inclusive": 15443807723,
+  "lo_exclusive": 10824153739,
+  "max_gamma": 16.3233,
+  "max_gamma_n": 12235060455,
+  "max_tau": 547,
+  "max_tau_n": 14500812391,
+  "mean_tau": 5.985373,
+  "mode": "band-scan",
+  "odd_integers_scanned": 2309826992,
+  "parallel_workers": 8,
+  "records": [
+    {
+      "gamma": 10.9286,
+      "n": 12853711615,
+      "sigma": 367,
+      "tau": 367
+    },
+    {
+      "gamma": 10.9913,
+      "n": 11989097639,
+      "sigma": 368,
+      "tau": 368
+    },
+    {
+      "gamma": 11.074,
+      "n": 11425521435,
+      "sigma": 370,
+      "tau": 370
+    },
+    {
+      "gamma": 11.3207,
+      "n": 13527360539,
+      "sigma": 381,
+      "tau": 381
+    },
+    {
+      "gamma": 11.3246,
+      "n": 14265793567,
+      "sigma": 382,
+      "tau": 382
+    },
+    {
+      "gamma": 11.4677,
+      "n": 12024320479,
+      "sigma": 384,
+      "tau": 384
+    },
+    {
+      "gamma": 11.4952,
+      "n": 13630636079,
+      "sigma": 387,
+      "tau": 387
+    },
+    {
+      "gamma": 11.6431,
+      "n": 12116120959,
+      "sigma": 390,
+      "tau": 390
+    },
+    {
+      "gamma": 12.0162,
+      "n": 11113975423,
+      "sigma": 401,
+      "tau": 401
+    },
+    {
+      "gamma": 11.9847,
+      "n": 14884335615,
+      "sigma": 405,
+      "tau": 405
+    },
+    {
+      "gamma": 16.2048,
+      "n": 14500812391,
+      "sigma": 547,
+      "tau": 547
+    },
+    {
+      "gamma": 16.3233,
+      "n": 12235060455,
+      "sigma": 547,
+      "tau": 547
+    }
+  ],
+  "scan_floor": 10824153739,
+  "tau_min_required": 176252,
+  "terras_mismatches": [],
+  "terras_verified": true
+}

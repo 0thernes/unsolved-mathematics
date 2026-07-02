@@ -1,0 +1,116 @@
+{
+  "critical_density_log_q_2": 0.43067655807339306,
+  "elapsed_seconds": 0.625,
+  "mode": "rates",
+  "partial_E_tau_first_256_terms": 48.79332440088414,
+  "q": 5,
+  "random_walk_density": 0.5,
+  "regime": "drift ABOVE critical line: survivor fraction -> positive constant (divergence-typical)",
+  "rows": [
+    {
+      "depth": 1,
+      "fraction": 0.5,
+      "fraction_log2": -1.0
+    },
+    {
+      "depth": 8,
+      "fraction": 0.2734375,
+      "fraction_log2": -1.870717
+    },
+    {
+      "depth": 16,
+      "fraction": 0.2337646484375,
+      "fraction_log2": -2.096871
+    },
+    {
+      "depth": 24,
+      "fraction": 0.21298468112945557,
+      "fraction_log2": -2.231178
+    },
+    {
+      "depth": 32,
+      "fraction": 0.20386759424582124,
+      "fraction_log2": -2.294296
+    },
+    {
+      "depth": 48,
+      "fraction": 0.1924495611134205,
+      "fraction_log2": -2.377448
+    },
+    {
+      "depth": 64,
+      "fraction": 0.18667782618349457,
+      "fraction_log2": -2.421378
+    },
+    {
+      "depth": 96,
+      "fraction": 0.1811173127596087,
+      "fraction_log2": -2.465004
+    },
+    {
+      "depth": 128,
+      "fraction": 0.1787645426038044,
+      "fraction_log2": -2.483867
+    },
+    {
+      "depth": 256,
+      "fraction": 0.1763863539934251,
+      "fraction_log2": -2.503189
+    },
+    {
+      "depth": 512,
+      "fraction": 0.17603844626763226,
+      "fraction_log2": -2.506038
+    },
+    {
+      "depth": 768,
+      "fraction": 0.17602641992772072,
+      "fraction_log2": -2.506136
+    },
+    {
+      "depth": 1024,
+      "fraction": 0.17602582009924073,
+      "fraction_log2": -2.506141
+    },
+    {
+      "depth": 1280,
+      "fraction": null,
+      "fraction_log2": -2.506141
+    },
+    {
+      "depth": 1792,
+      "fraction": null,
+      "fraction_log2": -2.506141
+    },
+    {
+      "depth": 2048,
+      "fraction": null,
+      "fraction_log2": -2.506141
+    },
+    {
+      "depth": 2304,
+      "fraction": null,
+      "fraction_log2": -2.506141
+    },
+    {
+      "depth": 2816,
+      "fraction": null,
+      "fraction_log2": -2.506141
+    },
+    {
+      "depth": 3328,
+      "fraction": null,
+      "fraction_log2": -2.506141
+    },
+    {
+      "depth": 3840,
+      "fraction": null,
+      "fraction_log2": -2.506141
+    },
+    {
+      "depth": 4096,
+      "fraction": null,
+      "fraction_log2": -2.506141
+    }
+  ]
+}

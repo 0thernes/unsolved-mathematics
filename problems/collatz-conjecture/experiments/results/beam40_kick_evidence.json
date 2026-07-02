@@ -1,0 +1,13 @@
+{
+  "beam_d40": {
+    "residue1": 460032734975,
+    "bits1": 39,
+    "repulsions1": 74,
+    "contract1": 249,
+    "residue2": 20933065140502445,
+    "bits2": 54,
+    "repulsions2": 49,
+    "note": "Even heuristic beam worst-cases at target depth 40 still produce dozens of kick-induced repulsion events early. Strengthens uniform ejection."
+  },
+  "timestamp": "2026-07-02"
+}

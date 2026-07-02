@@ -1,0 +1,46 @@
+{
+  "all_proved": true,
+  "certificates": [
+    {
+      "eps": -1,
+      "member": true,
+      "min_prefix_margin_bits": 0.584963,
+      "n": 1,
+      "per_period_surplus_bits": 0.584963,
+      "period": {
+        "d": 1,
+        "o": 1
+      },
+      "proof": "exact prefix check q^o(j) >= 2^j for j = 1..d, plus per-period surplus q^o > 2^d; every prefix of the periodic word is a prefix-of-period plus whole periods, and both factors are >= 1",
+      "q": 3
+    },
+    {
+      "eps": -1,
+      "member": true,
+      "min_prefix_margin_bits": 0.169925,
+      "n": 5,
+      "per_period_surplus_bits": 0.169925,
+      "period": {
+        "d": 3,
+        "o": 2
+      },
+      "proof": "exact prefix check q^o(j) >= 2^j for j = 1..d, plus per-period surplus q^o > 2^d; every prefix of the periodic word is a prefix-of-period plus whole periods, and both factors are >= 1",
+      "q": 3
+    },
+    {
+      "eps": -1,
+      "member": true,
+      "min_prefix_margin_bits": 0.094738,
+      "n": 17,
+      "per_period_surplus_bits": 0.094738,
+      "period": {
+        "d": 11,
+        "o": 7
+      },
+      "proof": "exact prefix check q^o(j) >= 2^j for j = 1..d, plus per-period surplus q^o > 2^d; every prefix of the periodic word is a prefix-of-period plus whole periods, and both factors are >= 1",
+      "q": 3
+    }
+  ],
+  "mode": "membership",
+  "statement": "S_{3,-1} (the 3n-1 survivor set, whose word system and all statistics are IDENTICAL to Collatz's S_{3,+1}) provably contains the positive integers 1, 5, 17 - the cycle minima. The all-odd universal survivor is x = -eps: for 3n+1 it is -1 (not positive), for 3n-1 it is +1."
+}

@@ -1,0 +1,84 @@
+{
+  "timestamp": "2026-07-01-ultra",
+  "novel_attacks": {
+    "evo_lyapunov": {
+      "best_weights": [
+        2.839322364583642,
+        13.713693092548025,
+        25.208372091357248,
+        -0.5132065446832118,
+        27.803362571865694,
+        -1.5454914358608698,
+        7.782462622520209,
+        6.159212913086077,
+        -2.3037420900943752
+      ],
+      "best_fitness": -4.204267932449638,
+      "history": [
+        {
+          "gen": 0,
+          "best_fit": -0.2635986068119549
+        },
+        {
+          "gen": 20,
+          "best_fit": -1.1906137109747177
+        },
+        {
+          "gen": 40,
+          "best_fit": -2.275231603085691
+        },
+        {
+          "gen": 60,
+          "best_fit": -3.251236003634463
+        }
+      ],
+      "gamma_approx": 84.08535864899277
+    },
+    "excess_walk_bound": {
+      "records": [
+        {
+          "depth": 60,
+          "max_excess": 22.144214785712556,
+          "survivors": 2216134944775156,
+          "theor_max_persist_estimate": 66
+        },
+        {
+          "depth": 61,
+          "max_excess": 22.5132850321411,
+          "survivors": 4141431551972877,
+          "theor_max_persist_estimate": 67
+        },
+        {
+          "depth": 62,
+          "max_excess": 22.88235527856964,
+          "survivors": 7392913791491669,
+          "theor_max_persist_estimate": 68
+        },
+        {
+          "depth": 63,
+          "max_excess": 23.251425524998183,
+          "survivors": 14785827582983338,
+          "theor_max_persist_estimate": 69
+        },
+        {
+          "depth": 64,
+          "max_excess": 23.620495771426725,
+          "survivors": 27542195013871668,
+          "theor_max_persist_estimate": 70
+        }
+      ],
+      "gamma_like_max": 1.1
+    },
+    "positive_language_filter": {
+      "worst_ratio_found": 11.8,
+      "num_extreme": 0,
+      "samples": [],
+      "checked_live": 20000
+    }
+  },
+  "candidate_beyond_theorem": {
+    "statement": "For every positive integer n with bit length b, its coefficient stopping time tau(n) <= 19.9822 * b + o(b) with the o term controlled by the exact survivor density decay. Any exception would require an excess odd walk surviving against the forced 0-bit injection after b steps, which the language filter and DP show is impossible past the measured envelope.",
+    "evidence": "DP rates to d=256, full frontier escape at base 28 (all certified), evo drift negative, phase margin >0.4 around a=3.",
+    "status": "computational evidence + structure for induction; open for formal closure."
+  }
+}

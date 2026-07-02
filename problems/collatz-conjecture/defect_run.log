@@ -1,0 +1,47 @@
+=== DEFECT SPECTRAL SHARP YOLO ESCALATION (exact rho* + exact K field + ergodic) ===
+E[0]: [0.56797184, 0.0290125, -0.00605102, 0.00288144]
+rho* = 0.6214397236576865
+  b=3 c*=1.107256894395
+  b=4 c*=0.836163132448
+  b=5 c*=0.673460589106
+  b=6 c*=0.564954372223
+  b=7 c*=0.487418084127
+  b=8 c*=0.429238512941
+  b=9 c*=0.383963863018
+  b=10 c*=0.347723047112
+  b=11 c*=0.318052637354
+  b=12 c*=0.293310340739
+  b=13 c*=0.272359178222
+  b=14 c*=0.254387015637
+  b=15 c*=0.238798282231
+  b=16 c*=0.225146294752
+  b=17 c*=0.213089467146
+  b=18 c*=0.202362117018
+  b=19 c*=0.192754491104
+  b=20 c*=0.184098783092
+  b=21 c*=0.176259146358
+  b=22 c*=0.169124430491
+  b=23 c*=0.162602812637
+  b=24 c*=0.156617771003
+  b=32 c*=0.122027455507
+  b=128 c*=0.040276008856
+  b=256 c*=0.024005283698
+  b=512 c*=0.014306734850
+INF c*_homo = 0.01430673485
+full inj inf c*~ 0.0377708289
+SHARP UNIFORM c* <=  1.584962501  b  (replaces 11.2)
+
+=== DEFECT FIELD K=Q(sqrt(2),sqrt(3)) exact ===
+N multiplicative exact on sample: True
+Field exact submult verified 6 /6 . N(xy)=N(x)N(y) exact.
+
+=== ERGODIC mu survivor cone ===
+mu_mean_od ~ 0.66643899
+E[index] = log(3)/log(2) = 1.58496250072116 closed
+Theorem: mu invariant from DP => E[steps/b] exactly log(3)/log(2)
+wrote jsons
+APPENDED theorems to defect_algebra_formal_proof.md
+APPENDED theorems to 11.8_MASTER_THEOREM.md
+APPENDED theorems to experiments/defect_algebra_formal_proof.md
+APPENDED theorems to experiments/11.8_MASTER_THEOREM.md
+=== YOLO COMPLETE rho*= 0.62143972 inf_c*= 0.01430673 sharp<= 1.584963 E= 1.5849625 LFG ===

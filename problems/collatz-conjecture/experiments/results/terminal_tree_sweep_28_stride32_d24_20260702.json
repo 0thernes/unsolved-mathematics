@@ -1,0 +1,5353 @@
+{
+  "elapsed_seconds": 456.132543,
+  "final_next_class_histogram": {
+    "mixed": 63,
+    "short-high-deficit": 2239,
+    "trivial-halving": 2200
+  },
+  "final_source_histogram": {
+    "base24:exact": 227,
+    "base28:stride32:offset0": 134,
+    "base28:stride32:offset1": 122,
+    "base28:stride32:offset10": 141,
+    "base28:stride32:offset11": 134,
+    "base28:stride32:offset12": 150,
+    "base28:stride32:offset13": 131,
+    "base28:stride32:offset14": 115,
+    "base28:stride32:offset15": 123,
+    "base28:stride32:offset16": 134,
+    "base28:stride32:offset17": 146,
+    "base28:stride32:offset18": 137,
+    "base28:stride32:offset19": 113,
+    "base28:stride32:offset2": 145,
+    "base28:stride32:offset20": 133,
+    "base28:stride32:offset21": 142,
+    "base28:stride32:offset22": 150,
+    "base28:stride32:offset23": 141,
+    "base28:stride32:offset24": 138,
+    "base28:stride32:offset25": 151,
+    "base28:stride32:offset26": 127,
+    "base28:stride32:offset27": 121,
+    "base28:stride32:offset28": 129,
+    "base28:stride32:offset29": 143,
+    "base28:stride32:offset3": 114,
+    "base28:stride32:offset30": 149,
+    "base28:stride32:offset31": 141,
+    "base28:stride32:offset4": 138,
+    "base28:stride32:offset5": 116,
+    "base28:stride32:offset6": 156,
+    "base28:stride32:offset7": 116,
+    "base28:stride32:offset8": 126,
+    "base28:stride32:offset9": 119
+  },
+  "final_tree_summary": {
+    "deepest_leaves": [
+      {
+        "class_histogram": {
+          "mixed": 1
+        },
+        "count": 1,
+        "depth": 21,
+        "pure": true,
+        "residue": "1970223/2097152 (111100001000000101111)",
+        "sample_endpoints": [
+          182325295
+        ],
+        "sample_starts": [
+          184427291
+        ],
+        "source_histogram": {
+          "base28:stride32:offset3": 1
+        }
+      },
+      {
+        "class_histogram": {
+          "short-high-deficit": 1
+        },
+        "count": 1,
+        "depth": 21,
+        "pure": true,
+        "residue": "921647/2097152 (011100001000000101111)",
+        "sample_endpoints": [
+          65933359
+        ],
+        "sample_starts": [
+          70261455
+        ],
+        "source_histogram": {
+          "base28:stride32:offset5": 1
+        }
+      },
+      {
+        "class_histogram": {
+          "mixed": 4
+        },
+        "count": 4,
+        "depth": 19,
+        "pure": true,
+        "residue": "164091/524288 (0101000000011111011)",
+        "sample_endpoints": [
+          85623035,
+          85623035,
+          85623035,
+          85623035
+        ],
+        "sample_starts": [
+          168588751,
+          126441563,
+          142246759,
+          149856667
+        ],
+        "source_histogram": {
+          "base28:stride32:offset11": 1,
+          "base28:stride32:offset31": 2,
+          "base28:stride32:offset6": 1
+        }
+      },
+      {
+        "class_histogram": {
+          "short-high-deficit": 3
+        },
+        "count": 3,
+        "depth": 19,
+        "pure": true,
+        "residue": "426235/524288 (1101000000011111011)",
+        "sample_endpoints": [
+          105808123,
+          105808123,
+          105808123
+        ],
+        "sample_starts": [
+          123456283,
+          166854175,
+          138888319
+        ],
+        "source_histogram": {
+          "base28:stride32:offset10": 1,
+          "base28:stride32:offset16": 1,
+          "base28:stride32:offset8": 1
+        }
+      },
+      {
+        "class_histogram": {
+          "short-high-deficit": 1
+        },
+        "count": 1,
+        "depth": 18,
+        "pure": true,
+        "residue": "155391/262144 (100101111011111111)",
+        "sample_endpoints": [
+          219832063
+        ],
+        "sample_starts": [
+          240196351
+        ],
+        "source_histogram": {
+          "base28:stride32:offset23": 1
+        }
+      },
+      {
+        "class_histogram": {
+          "mixed": 1
+        },
+        "count": 1,
+        "depth": 18,
+        "pure": true,
+        "residue": "24319/262144 (000101111011111111)",
+        "sample_endpoints": [
+          137649919
+        ],
+        "sample_starts": [
+          175854063
+        ],
+        "source_histogram": {
+          "base28:stride32:offset12": 1
+        }
+      },
+      {
+        "class_histogram": {
+          "short-high-deficit": 3
+        },
+        "count": 3,
+        "depth": 16,
+        "pure": true,
+        "residue": "52463/65536 (1100110011101111)",
+        "sample_endpoints": [
+          30657775,
+          30657775,
+          30657775
+        ],
+        "sample_starts": [
+          40075007,
+          60112511,
+          53433343
+        ],
+        "source_histogram": {
+          "base28:stride32:offset10": 1,
+          "base28:stride32:offset6": 1,
+          "base28:stride32:offset8": 1
+        }
+      },
+      {
+        "class_histogram": {
+          "mixed": 1
+        },
+        "count": 1,
+        "depth": 16,
+        "pure": true,
+        "residue": "19695/65536 (0100110011101111)",
+        "sample_endpoints": [
+          91770095
+        ],
+        "sample_starts": [
+          105635583
+        ],
+        "source_histogram": {
+          "base28:stride32:offset19": 1
+        }
+      }
+    ],
+    "internal_node_count": 168,
+    "largest_internal_nodes": [
+      {
+        "class_histogram": {
+          "mixed": 63,
+          "short-high-deficit": 2239,
+          "trivial-halving": 2200
+        },
+        "count": 4502,
+        "depth": 0,
+        "pure": false,
+        "residue": "root",
+        "sample_endpoints": [
+          47314,
+          47314,
+          239150,
+          245732,
+          324614
+        ],
+        "sample_starts": [
+          47855,
+          63807,
+          241903,
+          294591,
+          328351
+        ],
+        "source_histogram": {
+          "base24:exact": 227,
+          "base28:stride32:offset0": 134,
+          "base28:stride32:offset1": 122,
+          "base28:stride32:offset10": 141,
+          "base28:stride32:offset11": 134,
+          "base28:stride32:offset12": 150,
+          "base28:stride32:offset13": 131,
+          "base28:stride32:offset14": 115,
+          "base28:stride32:offset15": 123,
+          "base28:stride32:offset16": 134,
+          "base28:stride32:offset17": 146,
+          "base28:stride32:offset18": 137,
+          "base28:stride32:offset19": 113,
+          "base28:stride32:offset2": 145,
+          "base28:stride32:offset20": 133,
+          "base28:stride32:offset21": 142,
+          "base28:stride32:offset22": 150,
+          "base28:stride32:offset23": 141,
+          "base28:stride32:offset24": 138,
+          "base28:stride32:offset25": 151,
+          "base28:stride32:offset26": 127,
+          "base28:stride32:offset27": 121,
+          "base28:stride32:offset28": 129,
+          "base28:stride32:offset29": 143,
+          "base28:stride32:offset3": 114,
+          "base28:stride32:offset30": 149,
+          "base28:stride32:offset31": 141,
+          "base28:stride32:offset4": 138,
+          "base28:stride32:offset5": 116,
+          "base28:stride32:offset6": 156,
+          "base28:stride32:offset7": 116,
+          "base28:stride32:offset8": 126,
+          "base28:stride32:offset9": 119
+        }
+      },
+      {
+        "class_histogram": {
+          "mixed": 63,
+          "short-high-deficit": 2239
+        },
+        "count": 2302,
+        "depth": 1,
+        "pure": false,
+        "residue": "1/2 (1)",
+        "sample_endpoints": [
+          330481,
+          499469,
+          499469,
+          794629,
+          794629
+        ],
+        "sample_starts": [
+          366015,
+          532251,
+          598783,
+          813055,
+          856551
+        ],
+        "source_histogram": {
+          "base24:exact": 102,
+          "base28:stride32:offset0": 66,
+          "base28:stride32:offset1": 62,
+          "base28:stride32:offset10": 80,
+          "base28:stride32:offset11": 70,
+          "base28:stride32:offset12": 70,
+          "base28:stride32:offset13": 58,
+          "base28:stride32:offset14": 54,
+          "base28:stride32:offset15": 60,
+          "base28:stride32:offset16": 72,
+          "base28:stride32:offset17": 77,
+          "base28:stride32:offset18": 64,
+          "base28:stride32:offset19": 69,
+          "base28:stride32:offset2": 74,
+          "base28:stride32:offset20": 66,
+          "base28:stride32:offset21": 75,
+          "base28:stride32:offset22": 82,
+          "base28:stride32:offset23": 71,
+          "base28:stride32:offset24": 64,
+          "base28:stride32:offset25": 73,
+          "base28:stride32:offset26": 62,
+          "base28:stride32:offset27": 63,
+          "base28:stride32:offset28": 69,
+          "base28:stride32:offset29": 72,
+          "base28:stride32:offset3": 53,
+          "base28:stride32:offset30": 80,
+          "base28:stride32:offset31": 75,
+          "base28:stride32:offset4": 69,
+          "base28:stride32:offset5": 57,
+          "base28:stride32:offset6": 94,
+          "base28:stride32:offset7": 64,
+          "base28:stride32:offset8": 66,
+          "base28:stride32:offset9": 69
+        }
+      },
+      {
+        "class_histogram": {
+          "mixed": 63,
+          "short-high-deficit": 1075
+        },
+        "count": 1138,
+        "depth": 2,
+        "pure": false,
+        "residue": "3/4 (11)",
+        "sample_endpoints": [
+          1184419,
+          1289023,
+          1184419,
+          3348559,
+          3348559
+        ],
+        "sample_starts": [
+          1228415,
+          1303879,
+          1455899,
+          3658751,
+          4116095
+        ],
+        "source_histogram": {
+          "base24:exact": 43,
+          "base28:stride32:offset0": 30,
+          "base28:stride32:offset1": 32,
+          "base28:stride32:offset10": 47,
+          "base28:stride32:offset11": 40,
+          "base28:stride32:offset12": 34,
+          "base28:stride32:offset13": 31,
+          "base28:stride32:offset14": 34,
+          "base28:stride32:offset15": 27,
+          "base28:stride32:offset16": 35,
+          "base28:stride32:offset17": 38,
+          "base28:stride32:offset18": 39,
+          "base28:stride32:offset19": 33,
+          "base28:stride32:offset2": 31,
+          "base28:stride32:offset20": 30,
+          "base28:stride32:offset21": 40,
+          "base28:stride32:offset22": 38,
+          "base28:stride32:offset23": 39,
+          "base28:stride32:offset24": 25,
+          "base28:stride32:offset25": 38,
+          "base28:stride32:offset26": 33,
+          "base28:stride32:offset27": 32,
+          "base28:stride32:offset28": 28,
+          "base28:stride32:offset29": 39,
+          "base28:stride32:offset3": 26,
+          "base28:stride32:offset30": 38,
+          "base28:stride32:offset31": 35,
+          "base28:stride32:offset4": 35,
+          "base28:stride32:offset5": 32,
+          "base28:stride32:offset6": 38,
+          "base28:stride32:offset7": 29,
+          "base28:stride32:offset8": 32,
+          "base28:stride32:offset9": 37
+        }
+      },
+      {
+        "class_histogram": {
+          "mixed": 53,
+          "short-high-deficit": 544
+        },
+        "count": 597,
+        "depth": 3,
+        "pure": false,
+        "residue": "7/8 (111)",
+        "sample_endpoints": [
+          1289023,
+          3348559,
+          3348559,
+          4955231,
+          3485095
+        ],
+        "sample_starts": [
+          1303879,
+          3658751,
+          4116095,
+          5488127,
+          5570799
+        ],
+        "source_histogram": {
+          "base24:exact": 25,
+          "base28:stride32:offset0": 17,
+          "base28:stride32:offset1": 13,
+          "base28:stride32:offset10": 28,
+          "base28:stride32:offset11": 21,
+          "base28:stride32:offset12": 18,
+          "base28:stride32:offset13": 19,
+          "base28:stride32:offset14": 21,
+          "base28:stride32:offset15": 14,
+          "base28:stride32:offset16": 22,
+          "base28:stride32:offset17": 20,
+          "base28:stride32:offset18": 20,
+          "base28:stride32:offset19": 16,
+          "base28:stride32:offset2": 17,
+          "base28:stride32:offset20": 19,
+          "base28:stride32:offset21": 20,
+          "base28:stride32:offset22": 23,
+          "base28:stride32:offset23": 16,
+          "base28:stride32:offset24": 9,
+          "base28:stride32:offset25": 22,
+          "base28:stride32:offset26": 14,
+          "base28:stride32:offset27": 17,
+          "base28:stride32:offset28": 14,
+          "base28:stride32:offset29": 18,
+          "base28:stride32:offset3": 11,
+          "base28:stride32:offset30": 15,
+          "base28:stride32:offset31": 18,
+          "base28:stride32:offset4": 19,
+          "base28:stride32:offset5": 16,
+          "base28:stride32:offset6": 21,
+          "base28:stride32:offset7": 15,
+          "base28:stride32:offset8": 18,
+          "base28:stride32:offset9": 21
+        }
+      },
+      {
+        "class_histogram": {
+          "mixed": 10,
+          "short-high-deficit": 531
+        },
+        "count": 541,
+        "depth": 3,
+        "pure": false,
+        "residue": "3/8 (011)",
+        "sample_endpoints": [
+          1184419,
+          1184419,
+          3205843,
+          5626579,
+          7463755
+        ],
+        "sample_starts": [
+          1228415,
+          1455899,
+          6227227,
+          7203231,
+          7549799
+        ],
+        "source_histogram": {
+          "base24:exact": 18,
+          "base28:stride32:offset0": 13,
+          "base28:stride32:offset1": 19,
+          "base28:stride32:offset10": 19,
+          "base28:stride32:offset11": 19,
+          "base28:stride32:offset12": 16,
+          "base28:stride32:offset13": 12,
+          "base28:stride32:offset14": 13,
+          "base28:stride32:offset15": 13,
+          "base28:stride32:offset16": 13,
+          "base28:stride32:offset17": 18,
+          "base28:stride32:offset18": 19,
+          "base28:stride32:offset19": 17,
+          "base28:stride32:offset2": 14,
+          "base28:stride32:offset20": 11,
+          "base28:stride32:offset21": 20,
+          "base28:stride32:offset22": 15,
+          "base28:stride32:offset23": 23,
+          "base28:stride32:offset24": 16,
+          "base28:stride32:offset25": 16,
+          "base28:stride32:offset26": 19,
+          "base28:stride32:offset27": 15,
+          "base28:stride32:offset28": 14,
+          "base28:stride32:offset29": 21,
+          "base28:stride32:offset3": 15,
+          "base28:stride32:offset30": 23,
+          "base28:stride32:offset31": 17,
+          "base28:stride32:offset4": 16,
+          "base28:stride32:offset5": 16,
+          "base28:stride32:offset6": 17,
+          "base28:stride32:offset7": 14,
+          "base28:stride32:offset8": 14,
+          "base28:stride32:offset9": 16
+        }
+      },
+      {
+        "class_histogram": {
+          "mixed": 46,
+          "short-high-deficit": 260
+        },
+        "count": 306,
+        "depth": 4,
+        "pure": false,
+        "residue": "15/16 (1111)",
+        "sample_endpoints": [
+          1289023,
+          3348559,
+          3348559,
+          4955231,
+          4955231
+        ],
+        "sample_starts": [
+          1303879,
+          3658751,
+          4116095,
+          5488127,
+          6174143
+        ],
+        "source_histogram": {
+          "base24:exact": 15,
+          "base28:stride32:offset0": 8,
+          "base28:stride32:offset1": 7,
+          "base28:stride32:offset10": 14,
+          "base28:stride32:offset11": 9,
+          "base28:stride32:offset12": 11,
+          "base28:stride32:offset13": 8,
+          "base28:stride32:offset14": 9,
+          "base28:stride32:offset15": 6,
+          "base28:stride32:offset16": 14,
+          "base28:stride32:offset17": 13,
+          "base28:stride32:offset18": 9,
+          "base28:stride32:offset19": 5,
+          "base28:stride32:offset2": 12,
+          "base28:stride32:offset20": 8,
+          "base28:stride32:offset21": 7,
+          "base28:stride32:offset22": 10,
+          "base28:stride32:offset23": 11,
+          "base28:stride32:offset24": 3,
+          "base28:stride32:offset25": 16,
+          "base28:stride32:offset26": 4,
+          "base28:stride32:offset27": 10,
+          "base28:stride32:offset28": 5,
+          "base28:stride32:offset29": 11,
+          "base28:stride32:offset3": 7,
+          "base28:stride32:offset30": 6,
+          "base28:stride32:offset31": 7,
+          "base28:stride32:offset4": 12,
+          "base28:stride32:offset5": 9,
+          "base28:stride32:offset6": 12,
+          "base28:stride32:offset7": 9,
+          "base28:stride32:offset8": 11,
+          "base28:stride32:offset9": 8
+        }
+      },
+      {
+        "class_histogram": {
+          "mixed": 7,
+          "short-high-deficit": 284
+        },
+        "count": 291,
+        "depth": 4,
+        "pure": false,
+        "residue": "7/16 (0111)",
+        "sample_endpoints": [
+          3485095,
+          3920743,
+          3920743,
+          8928887,
+          9602983
+        ],
+        "sample_starts": [
+          5570799,
+          5948911,
+          6352671,
+          10024039,
+          10095615
+        ],
+        "source_histogram": {
+          "base24:exact": 10,
+          "base28:stride32:offset0": 9,
+          "base28:stride32:offset1": 6,
+          "base28:stride32:offset10": 14,
+          "base28:stride32:offset11": 12,
+          "base28:stride32:offset12": 7,
+          "base28:stride32:offset13": 11,
+          "base28:stride32:offset14": 12,
+          "base28:stride32:offset15": 8,
+          "base28:stride32:offset16": 8,
+          "base28:stride32:offset17": 7,
+          "base28:stride32:offset18": 11,
+          "base28:stride32:offset19": 11,
+          "base28:stride32:offset2": 5,
+          "base28:stride32:offset20": 11,
+          "base28:stride32:offset21": 13,
+          "base28:stride32:offset22": 13,
+          "base28:stride32:offset23": 5,
+          "base28:stride32:offset24": 6,
+          "base28:stride32:offset25": 6,
+          "base28:stride32:offset26": 10,
+          "base28:stride32:offset27": 7,
+          "base28:stride32:offset28": 9,
+          "base28:stride32:offset29": 7,
+          "base28:stride32:offset3": 4,
+          "base28:stride32:offset30": 9,
+          "base28:stride32:offset31": 11,
+          "base28:stride32:offset4": 7,
+          "base28:stride32:offset5": 7,
+          "base28:stride32:offset6": 9,
+          "base28:stride32:offset7": 6,
+          "base28:stride32:offset8": 7,
+          "base28:stride32:offset9": 13
+        }
+      },
+      {
+        "class_histogram": {
+          "mixed": 10,
+          "short-high-deficit": 255
+        },
+        "count": 265,
+        "depth": 4,
+        "pure": false,
+        "residue": "11/16 (1011)",
+        "sample_endpoints": [
+          7463755,
+          7084171,
+          7706075,
+          9565499,
+          7706075
+        ],
+        "sample_starts": [
+          7549799,
+          7740415,
+          10115323,
+          10332479,
+          11379739
+        ],
+        "source_histogram": {
+          "base24:exact": 8,
+          "base28:stride32:offset0": 6,
+          "base28:stride32:offset1": 10,
+          "base28:stride32:offset10": 9,
+          "base28:stride32:offset11": 6,
+          "base28:stride32:offset12": 8,
+          "base28:stride32:offset13": 3,
+          "base28:stride32:offset14": 7,
+          "base28:stride32:offset15": 6,
+          "base28:stride32:offset16": 6,
+          "base28:stride32:offset17": 14,
+          "base28:stride32:offset18": 11,
+          "base28:stride32:offset19": 9,
+          "base28:stride32:offset2": 7,
+          "base28:stride32:offset20": 6,
+          "base28:stride32:offset21": 5,
+          "base28:stride32:offset22": 6,
+          "base28:stride32:offset23": 12,
+          "base28:stride32:offset24": 11,
+          "base28:stride32:offset25": 8,
+          "base28:stride32:offset26": 7,
+          "base28:stride32:offset27": 3,
+          "base28:stride32:offset28": 8,
+          "base28:stride32:offset29": 10,
+          "base28:stride32:offset3": 8,
+          "base28:stride32:offset30": 7,
+          "base28:stride32:offset31": 11,
+          "base28:stride32:offset4": 9,
+          "base28:stride32:offset5": 9,
+          "base28:stride32:offset6": 10,
+          "base28:stride32:offset7": 6,
+          "base28:stride32:offset8": 9,
+          "base28:stride32:offset9": 10
+        }
+      }
+    ],
+    "largest_leaves": [
+      {
+        "class_histogram": {
+          "trivial-halving": 2200
+        },
+        "count": 2200,
+        "depth": 1,
+        "pure": true,
+        "residue": "0/2 (0)",
+        "sample_endpoints": [
+          47314,
+          47314,
+          239150,
+          245732,
+          324614
+        ],
+        "sample_starts": [
+          47855,
+          63807,
+          241903,
+          294591,
+          328351
+        ],
+        "source_histogram": {
+          "base24:exact": 125,
+          "base28:stride32:offset0": 68,
+          "base28:stride32:offset1": 60,
+          "base28:stride32:offset10": 61,
+          "base28:stride32:offset11": 64,
+          "base28:stride32:offset12": 80,
+          "base28:stride32:offset13": 73,
+          "base28:stride32:offset14": 61,
+          "base28:stride32:offset15": 63,
+          "base28:stride32:offset16": 62,
+          "base28:stride32:offset17": 69,
+          "base28:stride32:offset18": 73,
+          "base28:stride32:offset19": 44,
+          "base28:stride32:offset2": 71,
+          "base28:stride32:offset20": 67,
+          "base28:stride32:offset21": 67,
+          "base28:stride32:offset22": 68,
+          "base28:stride32:offset23": 70,
+          "base28:stride32:offset24": 74,
+          "base28:stride32:offset25": 78,
+          "base28:stride32:offset26": 65,
+          "base28:stride32:offset27": 58,
+          "base28:stride32:offset28": 60,
+          "base28:stride32:offset29": 71,
+          "base28:stride32:offset3": 61,
+          "base28:stride32:offset30": 69,
+          "base28:stride32:offset31": 66,
+          "base28:stride32:offset4": 69,
+          "base28:stride32:offset5": 59,
+          "base28:stride32:offset6": 62,
+          "base28:stride32:offset7": 52,
+          "base28:stride32:offset8": 60,
+          "base28:stride32:offset9": 50
+        }
+      },
+      {
+        "class_histogram": {
+          "short-high-deficit": 1164
+        },
+        "count": 1164,
+        "depth": 2,
+        "pure": true,
+        "residue": "1/4 (01)",
+        "sample_endpoints": [
+          330481,
+          499469,
+          499469,
+          794629,
+          794629
+        ],
+        "sample_starts": [
+          366015,
+          532251,
+          598783,
+          813055,
+          856551
+        ],
+        "source_histogram": {
+          "base24:exact": 59,
+          "base28:stride32:offset0": 36,
+          "base28:stride32:offset1": 30,
+          "base28:stride32:offset10": 33,
+          "base28:stride32:offset11": 30,
+          "base28:stride32:offset12": 36,
+          "base28:stride32:offset13": 27,
+          "base28:stride32:offset14": 20,
+          "base28:stride32:offset15": 33,
+          "base28:stride32:offset16": 37,
+          "base28:stride32:offset17": 39,
+          "base28:stride32:offset18": 25,
+          "base28:stride32:offset19": 36,
+          "base28:stride32:offset2": 43,
+          "base28:stride32:offset20": 36,
+          "base28:stride32:offset21": 35,
+          "base28:stride32:offset22": 44,
+          "base28:stride32:offset23": 32,
+          "base28:stride32:offset24": 39,
+          "base28:stride32:offset25": 35,
+          "base28:stride32:offset26": 29,
+          "base28:stride32:offset27": 31,
+          "base28:stride32:offset28": 41,
+          "base28:stride32:offset29": 33,
+          "base28:stride32:offset3": 27,
+          "base28:stride32:offset30": 42,
+          "base28:stride32:offset31": 40,
+          "base28:stride32:offset4": 34,
+          "base28:stride32:offset5": 25,
+          "base28:stride32:offset6": 56,
+          "base28:stride32:offset7": 35,
+          "base28:stride32:offset8": 34,
+          "base28:stride32:offset9": 32
+        }
+      },
+      {
+        "class_histogram": {
+          "short-high-deficit": 276
+        },
+        "count": 276,
+        "depth": 4,
+        "pure": true,
+        "residue": "3/16 (0011)",
+        "sample_endpoints": [
+          1184419,
+          1184419,
+          3205843,
+          5626579,
+          7957795
+        ],
+        "sample_starts": [
+          1228415,
+          1455899,
+          6227227,
+          7203231,
+          8049535
+        ],
+        "source_histogram": {
+          "base24:exact": 10,
+          "base28:stride32:offset0": 7,
+          "base28:stride32:offset1": 9,
+          "base28:stride32:offset10": 10,
+          "base28:stride32:offset11": 13,
+          "base28:stride32:offset12": 8,
+          "base28:stride32:offset13": 9,
+          "base28:stride32:offset14": 6,
+          "base28:stride32:offset15": 7,
+          "base28:stride32:offset16": 7,
+          "base28:stride32:offset17": 4,
+          "base28:stride32:offset18": 8,
+          "base28:stride32:offset19": 8,
+          "base28:stride32:offset2": 7,
+          "base28:stride32:offset20": 5,
+          "base28:stride32:offset21": 15,
+          "base28:stride32:offset22": 9,
+          "base28:stride32:offset23": 11,
+          "base28:stride32:offset24": 5,
+          "base28:stride32:offset25": 8,
+          "base28:stride32:offset26": 12,
+          "base28:stride32:offset27": 12,
+          "base28:stride32:offset28": 6,
+          "base28:stride32:offset29": 11,
+          "base28:stride32:offset3": 7,
+          "base28:stride32:offset30": 16,
+          "base28:stride32:offset31": 6,
+          "base28:stride32:offset4": 7,
+          "base28:stride32:offset5": 7,
+          "base28:stride32:offset6": 7,
+          "base28:stride32:offset7": 8,
+          "base28:stride32:offset8": 5,
+          "base28:stride32:offset9": 6
+        }
+      },
+      {
+        "class_histogram": {
+          "short-high-deficit": 159
+        },
+        "count": 159,
+        "depth": 5,
+        "pure": true,
+        "residue": "23/32 (10111)",
+        "sample_endpoints": [
+          8928887,
+          8433847,
+          10136183,
+          16979479,
+          27368087
+        ],
+        "sample_starts": [
+          10024039,
+          10508447,
+          15984255,
+          19504127,
+          34493375
+        ],
+        "source_histogram": {
+          "base24:exact": 3,
+          "base28:stride32:offset0": 6,
+          "base28:stride32:offset1": 4,
+          "base28:stride32:offset10": 10,
+          "base28:stride32:offset11": 8,
+          "base28:stride32:offset12": 5,
+          "base28:stride32:offset13": 8,
+          "base28:stride32:offset14": 7,
+          "base28:stride32:offset15": 3,
+          "base28:stride32:offset16": 3,
+          "base28:stride32:offset17": 2,
+          "base28:stride32:offset18": 3,
+          "base28:stride32:offset19": 8,
+          "base28:stride32:offset2": 5,
+          "base28:stride32:offset20": 5,
+          "base28:stride32:offset21": 9,
+          "base28:stride32:offset22": 6,
+          "base28:stride32:offset23": 2,
+          "base28:stride32:offset24": 3,
+          "base28:stride32:offset25": 4,
+          "base28:stride32:offset26": 7,
+          "base28:stride32:offset27": 3,
+          "base28:stride32:offset28": 4,
+          "base28:stride32:offset29": 5,
+          "base28:stride32:offset3": 2,
+          "base28:stride32:offset30": 4,
+          "base28:stride32:offset31": 7,
+          "base28:stride32:offset4": 2,
+          "base28:stride32:offset5": 5,
+          "base28:stride32:offset6": 6,
+          "base28:stride32:offset7": 1,
+          "base28:stride32:offset8": 3,
+          "base28:stride32:offset9": 6
+        }
+      },
+      {
+        "class_histogram": {
+          "short-high-deficit": 116
+        },
+        "count": 116,
+        "depth": 5,
+        "pure": true,
+        "residue": "11/32 (01011)",
+        "sample_endpoints": [
+          7463755,
+          7084171,
+          7084171,
+          15141259,
+          41217643
+        ],
+        "sample_starts": [
+          7549799,
+          7740415,
+          11610623,
+          15315815,
+          58564415
+        ],
+        "source_histogram": {
+          "base24:exact": 4,
+          "base28:stride32:offset0": 5,
+          "base28:stride32:offset1": 5,
+          "base28:stride32:offset10": 3,
+          "base28:stride32:offset11": 2,
+          "base28:stride32:offset12": 4,
+          "base28:stride32:offset13": 1,
+          "base28:stride32:offset14": 5,
+          "base28:stride32:offset15": 3,
+          "base28:stride32:offset16": 2,
+          "base28:stride32:offset17": 8,
+          "base28:stride32:offset18": 7,
+          "base28:stride32:offset19": 3,
+          "base28:stride32:offset2": 3,
+          "base28:stride32:offset20": 2,
+          "base28:stride32:offset21": 2,
+          "base28:stride32:offset22": 1,
+          "base28:stride32:offset23": 6,
+          "base28:stride32:offset24": 7,
+          "base28:stride32:offset25": 3,
+          "base28:stride32:offset26": 1,
+          "base28:stride32:offset27": 3,
+          "base28:stride32:offset29": 2,
+          "base28:stride32:offset3": 4,
+          "base28:stride32:offset30": 6,
+          "base28:stride32:offset31": 5,
+          "base28:stride32:offset4": 5,
+          "base28:stride32:offset5": 3,
+          "base28:stride32:offset6": 2,
+          "base28:stride32:offset7": 1,
+          "base28:stride32:offset8": 3,
+          "base28:stride32:offset9": 5
+        }
+      },
+      {
+        "class_histogram": {
+          "short-high-deficit": 45
+        },
+        "count": 45,
+        "depth": 7,
+        "pure": true,
+        "residue": "59/128 (0111011)",
+        "sample_endpoints": [
+          9565499,
+          24908347,
+          172313659,
+          18011579,
+          78255547
+        ],
+        "sample_starts": [
+          10332479,
+          31458863,
+          226186367,
+          26598119,
+          95592191
+        ],
+        "source_histogram": {
+          "base24:exact": 1,
+          "base28:stride32:offset1": 1,
+          "base28:stride32:offset10": 1,
+          "base28:stride32:offset11": 2,
+          "base28:stride32:offset12": 2,
+          "base28:stride32:offset13": 2,
+          "base28:stride32:offset14": 1,
+          "base28:stride32:offset17": 4,
+          "base28:stride32:offset18": 1,
+          "base28:stride32:offset2": 2,
+          "base28:stride32:offset22": 2,
+          "base28:stride32:offset23": 4,
+          "base28:stride32:offset24": 2,
+          "base28:stride32:offset25": 2,
+          "base28:stride32:offset26": 1,
+          "base28:stride32:offset28": 3,
+          "base28:stride32:offset29": 3,
+          "base28:stride32:offset31": 3,
+          "base28:stride32:offset4": 3,
+          "base28:stride32:offset5": 2,
+          "base28:stride32:offset6": 1,
+          "base28:stride32:offset7": 1,
+          "base28:stride32:offset8": 1
+        }
+      },
+      {
+        "class_histogram": {
+          "short-high-deficit": 36
+        },
+        "count": 36,
+        "depth": 7,
+        "pure": true,
+        "residue": "15/128 (0001111)",
+        "sample_endpoints": [
+          12598799,
+          197785103,
+          146354191,
+          103183247,
+          90210191
+        ],
+        "sample_starts": [
+          13425823,
+          224604007,
+          168466759,
+          112977359,
+          121666943
+        ],
+        "source_histogram": {
+          "base24:exact": 1,
+          "base28:stride32:offset1": 1,
+          "base28:stride32:offset10": 3,
+          "base28:stride32:offset11": 2,
+          "base28:stride32:offset12": 3,
+          "base28:stride32:offset13": 2,
+          "base28:stride32:offset14": 1,
+          "base28:stride32:offset15": 1,
+          "base28:stride32:offset16": 1,
+          "base28:stride32:offset17": 2,
+          "base28:stride32:offset18": 2,
+          "base28:stride32:offset2": 2,
+          "base28:stride32:offset20": 1,
+          "base28:stride32:offset22": 2,
+          "base28:stride32:offset23": 1,
+          "base28:stride32:offset25": 2,
+          "base28:stride32:offset27": 1,
+          "base28:stride32:offset28": 2,
+          "base28:stride32:offset30": 1,
+          "base28:stride32:offset4": 3,
+          "base28:stride32:offset7": 1,
+          "base28:stride32:offset9": 1
+        }
+      },
+      {
+        "class_histogram": {
+          "short-high-deficit": 36
+        },
+        "count": 36,
+        "depth": 7,
+        "pure": true,
+        "residue": "7/128 (0000111)",
+        "sample_endpoints": [
+          99834119,
+          139272967,
+          202846087,
+          79620103,
+          97200775
+        ],
+        "sample_starts": [
+          179154559,
+          185309927,
+          262680735,
+          113128863,
+          106205031
+        ],
+        "source_histogram": {
+          "base28:stride32:offset0": 2,
+          "base28:stride32:offset1": 1,
+          "base28:stride32:offset10": 1,
+          "base28:stride32:offset11": 3,
+          "base28:stride32:offset14": 2,
+          "base28:stride32:offset15": 2,
+          "base28:stride32:offset16": 1,
+          "base28:stride32:offset18": 4,
+          "base28:stride32:offset19": 1,
+          "base28:stride32:offset20": 2,
+          "base28:stride32:offset21": 2,
+          "base28:stride32:offset22": 5,
+          "base28:stride32:offset23": 1,
+          "base28:stride32:offset29": 1,
+          "base28:stride32:offset30": 1,
+          "base28:stride32:offset31": 1,
+          "base28:stride32:offset7": 2,
+          "base28:stride32:offset8": 1,
+          "base28:stride32:offset9": 3
+        }
+      }
+    ],
+    "leaf_count": 126,
+    "leaf_count_by_class": {
+      "mixed": 36,
+      "short-high-deficit": 89,
+      "trivial-halving": 1
+    },
+    "max_leaf_depth": 21,
+    "min_leaf_depth": 1,
+    "node_count": 294,
+    "pure_leaf_count": 126,
+    "record_count": 4502,
+    "record_count_by_leaf_class": {
+      "mixed": 63,
+      "short-high-deficit": 2239,
+      "trivial-halving": 2200
+    },
+    "unresolved_leaf_count": 0,
+    "unresolved_leaves": [],
+    "weighted_leaf_depth_quantiles": {
+      "p50": 2,
+      "p90": 7,
+      "p95": 10,
+      "p99": 13
+    },
+    "weighted_mean_leaf_depth": 2.789649045
+  },
+  "growth_curve": [
+    {
+      "leaf_count": 24,
+      "max_leaf_depth": 13,
+      "node_count": 56,
+      "offset_added": "seed",
+      "p90_leaf_depth": 4,
+      "p99_leaf_depth": 10,
+      "pure_leaf_count": 24,
+      "record_count": 621,
+      "unresolved_leaf_count": 0,
+      "weighted_mean_leaf_depth": 2.185185185
+    },
+    {
+      "leaf_count": 32,
+      "max_leaf_depth": 13,
+      "node_count": 73,
+      "offset_added": 1,
+      "p90_leaf_depth": 5,
+      "p99_leaf_depth": 11,
+      "pure_leaf_count": 32,
+      "record_count": 743,
+      "unresolved_leaf_count": 0,
+      "weighted_mean_leaf_depth": 2.387617766
+    },
+    {
+      "leaf_count": 36,
+      "max_leaf_depth": 13,
+      "node_count": 82,
+      "offset_added": 2,
+      "p90_leaf_depth": 6,
+      "p99_leaf_depth": 11,
+      "pure_leaf_count": 36,
+      "record_count": 888,
+      "unresolved_leaf_count": 0,
+      "weighted_mean_leaf_depth": 2.398648649
+    },
+    {
+      "leaf_count": 48,
+      "max_leaf_depth": 13,
+      "node_count": 105,
+      "offset_added": 3,
+      "p90_leaf_depth": 6,
+      "p99_leaf_depth": 11,
+      "pure_leaf_count": 48,
+      "record_count": 1002,
+      "unresolved_leaf_count": 0,
+      "weighted_mean_leaf_depth": 2.523952096
+    },
+    {
+      "leaf_count": 55,
+      "max_leaf_depth": 13,
+      "node_count": 119,
+      "offset_added": 4,
+      "p90_leaf_depth": 7,
+      "p99_leaf_depth": 11,
+      "pure_leaf_count": 55,
+      "record_count": 1140,
+      "unresolved_leaf_count": 0,
+      "weighted_mean_leaf_depth": 2.564035088
+    },
+    {
+      "leaf_count": 59,
+      "max_leaf_depth": 21,
+      "node_count": 136,
+      "offset_added": 5,
+      "p90_leaf_depth": 7,
+      "p99_leaf_depth": 11,
+      "pure_leaf_count": 59,
+      "record_count": 1256,
+      "unresolved_leaf_count": 0,
+      "weighted_mean_leaf_depth": 2.60111465
+    },
+    {
+      "leaf_count": 66,
+      "max_leaf_depth": 21,
+      "node_count": 158,
+      "offset_added": 6,
+      "p90_leaf_depth": 7,
+      "p99_leaf_depth": 12,
+      "pure_leaf_count": 66,
+      "record_count": 1412,
+      "unresolved_leaf_count": 0,
+      "weighted_mean_leaf_depth": 2.685552408
+    },
+    {
+      "leaf_count": 70,
+      "max_leaf_depth": 21,
+      "node_count": 164,
+      "offset_added": 7,
+      "p90_leaf_depth": 7,
+      "p99_leaf_depth": 12,
+      "pure_leaf_count": 70,
+      "record_count": 1528,
+      "unresolved_leaf_count": 0,
+      "weighted_mean_leaf_depth": 2.698298429
+    },
+    {
+      "leaf_count": 73,
+      "max_leaf_depth": 21,
+      "node_count": 168,
+      "offset_added": 9,
+      "p90_leaf_depth": 7,
+      "p99_leaf_depth": 12,
+      "pure_leaf_count": 73,
+      "record_count": 1647,
+      "unresolved_leaf_count": 0,
+      "weighted_mean_leaf_depth": 2.726775956
+    },
+    {
+      "leaf_count": 77,
+      "max_leaf_depth": 21,
+      "node_count": 177,
+      "offset_added": 10,
+      "p90_leaf_depth": 8,
+      "p99_leaf_depth": 12,
+      "pure_leaf_count": 77,
+      "record_count": 1788,
+      "unresolved_leaf_count": 0,
+      "weighted_mean_leaf_depth": 2.772930649
+    },
+    {
+      "leaf_count": 83,
+      "max_leaf_depth": 21,
+      "node_count": 190,
+      "offset_added": 11,
+      "p90_leaf_depth": 7,
+      "p99_leaf_depth": 13,
+      "pure_leaf_count": 83,
+      "record_count": 1922,
+      "unresolved_leaf_count": 0,
+      "weighted_mean_leaf_depth": 2.793444329
+    },
+    {
+      "leaf_count": 84,
+      "max_leaf_depth": 21,
+      "node_count": 192,
+      "offset_added": 12,
+      "p90_leaf_depth": 7,
+      "p99_leaf_depth": 13,
+      "pure_leaf_count": 84,
+      "record_count": 2072,
+      "unresolved_leaf_count": 0,
+      "weighted_mean_leaf_depth": 2.772683398
+    },
+    {
+      "leaf_count": 87,
+      "max_leaf_depth": 21,
+      "node_count": 198,
+      "offset_added": 13,
+      "p90_leaf_depth": 7,
+      "p99_leaf_depth": 13,
+      "pure_leaf_count": 87,
+      "record_count": 2203,
+      "unresolved_leaf_count": 0,
+      "weighted_mean_leaf_depth": 2.754879709
+    },
+    {
+      "leaf_count": 87,
+      "max_leaf_depth": 21,
+      "node_count": 198,
+      "offset_added": 14,
+      "p90_leaf_depth": 7,
+      "p99_leaf_depth": 13,
+      "pure_leaf_count": 87,
+      "record_count": 2318,
+      "unresolved_leaf_count": 0,
+      "weighted_mean_leaf_depth": 2.757549612
+    },
+    {
+      "leaf_count": 89,
+      "max_leaf_depth": 21,
+      "node_count": 201,
+      "offset_added": 15,
+      "p90_leaf_depth": 7,
+      "p99_leaf_depth": 12,
+      "pure_leaf_count": 89,
+      "record_count": 2441,
+      "unresolved_leaf_count": 0,
+      "weighted_mean_leaf_depth": 2.743547726
+    },
+    {
+      "leaf_count": 90,
+      "max_leaf_depth": 21,
+      "node_count": 203,
+      "offset_added": 17,
+      "p90_leaf_depth": 7,
+      "p99_leaf_depth": 13,
+      "pure_leaf_count": 90,
+      "record_count": 2587,
+      "unresolved_leaf_count": 0,
+      "weighted_mean_leaf_depth": 2.751063007
+    },
+    {
+      "leaf_count": 95,
+      "max_leaf_depth": 21,
+      "node_count": 213,
+      "offset_added": 18,
+      "p90_leaf_depth": 7,
+      "p99_leaf_depth": 12,
+      "pure_leaf_count": 95,
+      "record_count": 2724,
+      "unresolved_leaf_count": 0,
+      "weighted_mean_leaf_depth": 2.775330396
+    },
+    {
+      "leaf_count": 99,
+      "max_leaf_depth": 21,
+      "node_count": 225,
+      "offset_added": 19,
+      "p90_leaf_depth": 7,
+      "p99_leaf_depth": 13,
+      "pure_leaf_count": 99,
+      "record_count": 2837,
+      "unresolved_leaf_count": 0,
+      "weighted_mean_leaf_depth": 2.791328869
+    },
+    {
+      "leaf_count": 102,
+      "max_leaf_depth": 21,
+      "node_count": 232,
+      "offset_added": 20,
+      "p90_leaf_depth": 7,
+      "p99_leaf_depth": 13,
+      "pure_leaf_count": 102,
+      "record_count": 2970,
+      "unresolved_leaf_count": 0,
+      "weighted_mean_leaf_depth": 2.795622896
+    },
+    {
+      "leaf_count": 103,
+      "max_leaf_depth": 21,
+      "node_count": 234,
+      "offset_added": 21,
+      "p90_leaf_depth": 7,
+      "p99_leaf_depth": 13,
+      "pure_leaf_count": 103,
+      "record_count": 3112,
+      "unresolved_leaf_count": 0,
+      "weighted_mean_leaf_depth": 2.790488432
+    },
+    {
+      "leaf_count": 105,
+      "max_leaf_depth": 21,
+      "node_count": 238,
+      "offset_added": 22,
+      "p90_leaf_depth": 7,
+      "p99_leaf_depth": 13,
+      "pure_leaf_count": 105,
+      "record_count": 3262,
+      "unresolved_leaf_count": 0,
+      "weighted_mean_leaf_depth": 2.78908645
+    },
+    {
+      "leaf_count": 106,
+      "max_leaf_depth": 21,
+      "node_count": 246,
+      "offset_added": 23,
+      "p90_leaf_depth": 7,
+      "p99_leaf_depth": 13,
+      "pure_leaf_count": 106,
+      "record_count": 3403,
+      "unresolved_leaf_count": 0,
+      "weighted_mean_leaf_depth": 2.794593006
+    },
+    {
+      "leaf_count": 106,
+      "max_leaf_depth": 21,
+      "node_count": 246,
+      "offset_added": 24,
+      "p90_leaf_depth": 7,
+      "p99_leaf_depth": 13,
+      "pure_leaf_count": 106,
+      "record_count": 3541,
+      "unresolved_leaf_count": 0,
+      "weighted_mean_leaf_depth": 2.773510308
+    },
+    {
+      "leaf_count": 109,
+      "max_leaf_depth": 21,
+      "node_count": 254,
+      "offset_added": 25,
+      "p90_leaf_depth": 7,
+      "p99_leaf_depth": 13,
+      "pure_leaf_count": 109,
+      "record_count": 3692,
+      "unresolved_leaf_count": 0,
+      "weighted_mean_leaf_depth": 2.777898158
+    },
+    {
+      "leaf_count": 111,
+      "max_leaf_depth": 21,
+      "node_count": 259,
+      "offset_added": 26,
+      "p90_leaf_depth": 7,
+      "p99_leaf_depth": 13,
+      "pure_leaf_count": 111,
+      "record_count": 3819,
+      "unresolved_leaf_count": 0,
+      "weighted_mean_leaf_depth": 2.772453522
+    },
+    {
+      "leaf_count": 115,
+      "max_leaf_depth": 21,
+      "node_count": 271,
+      "offset_added": 27,
+      "p90_leaf_depth": 7,
+      "p99_leaf_depth": 13,
+      "pure_leaf_count": 115,
+      "record_count": 3940,
+      "unresolved_leaf_count": 0,
+      "weighted_mean_leaf_depth": 2.779187817
+    },
+    {
+      "leaf_count": 119,
+      "max_leaf_depth": 21,
+      "node_count": 278,
+      "offset_added": 28,
+      "p90_leaf_depth": 7,
+      "p99_leaf_depth": 13,
+      "pure_leaf_count": 119,
+      "record_count": 4069,
+      "unresolved_leaf_count": 0,
+      "weighted_mean_leaf_depth": 2.779061194
+    },
+    {
+      "leaf_count": 120,
+      "max_leaf_depth": 21,
+      "node_count": 279,
+      "offset_added": 29,
+      "p90_leaf_depth": 7,
+      "p99_leaf_depth": 13,
+      "pure_leaf_count": 120,
+      "record_count": 4212,
+      "unresolved_leaf_count": 0,
+      "weighted_mean_leaf_depth": 2.779677113
+    },
+    {
+      "leaf_count": 125,
+      "max_leaf_depth": 21,
+      "node_count": 293,
+      "offset_added": 30,
+      "p90_leaf_depth": 7,
+      "p99_leaf_depth": 13,
+      "pure_leaf_count": 125,
+      "record_count": 4361,
+      "unresolved_leaf_count": 0,
+      "weighted_mean_leaf_depth": 2.78766338
+    },
+    {
+      "leaf_count": 126,
+      "max_leaf_depth": 21,
+      "node_count": 294,
+      "offset_added": 31,
+      "p90_leaf_depth": 7,
+      "p99_leaf_depth": 13,
+      "pure_leaf_count": 126,
+      "record_count": 4502,
+      "unresolved_leaf_count": 0,
+      "weighted_mean_leaf_depth": 2.789649045
+    }
+  ],
+  "initial_tree_summary": {
+    "deepest_leaves": [
+      {
+        "class_histogram": {
+          "short-high-deficit": 1
+        },
+        "count": 1,
+        "depth": 13,
+        "pure": true,
+        "residue": "6271/8192 (1100001111111)",
+        "sample_endpoints": [
+          104790143
+        ],
+        "sample_starts": [
+          162684623
+        ],
+        "source_histogram": {
+          "base28:stride32:offset0": 1
+        }
+      },
+      {
+        "class_histogram": {
+          "mixed": 1
+        },
+        "count": 1,
+        "depth": 13,
+        "pure": true,
+        "residue": "2175/8192 (0100001111111)",
+        "sample_endpoints": [
+          95864959
+        ],
+        "sample_starts": [
+          121075995
+        ],
+        "source_histogram": {
+          "base28:stride32:offset8": 1
+        }
+      },
+      {
+        "class_histogram": {
+          "mixed": 1
+        },
+        "count": 1,
+        "depth": 12,
+        "pure": true,
+        "residue": "3551/4096 (110111011111)",
+        "sample_endpoints": [
+          10608095
+        ],
+        "sample_starts": [
+          13765935
+        ],
+        "source_histogram": {
+          "base24:exact": 1
+        }
+      },
+      {
+        "class_histogram": {
+          "short-high-deficit": 1
+        },
+        "count": 1,
+        "depth": 12,
+        "pure": true,
+        "residue": "1503/4096 (010111011111)",
+        "sample_endpoints": [
+          215959007
+        ],
+        "sample_starts": [
+          242447087
+        ],
+        "source_histogram": {
+          "base28:stride32:offset8": 1
+        }
+      },
+      {
+        "class_histogram": {
+          "mixed": 2
+        },
+        "count": 2,
+        "depth": 10,
+        "pure": true,
+        "residue": "463/1024 (0111001111)",
+        "sample_endpoints": [
+          6858191,
+          6858191
+        ],
+        "sample_starts": [
+          7210015,
+          10815023
+        ],
+        "source_histogram": {
+          "base24:exact": 2
+        }
+      },
+      {
+        "class_histogram": {
+          "mixed": 2
+        },
+        "count": 2,
+        "depth": 10,
+        "pure": true,
+        "residue": "447/1024 (0110111111)",
+        "sample_endpoints": [
+          9000383,
+          9000383
+        ],
+        "sample_starts": [
+          12589823,
+          16786431
+        ],
+        "source_histogram": {
+          "base24:exact": 1,
+          "base28:stride32:offset8": 1
+        }
+      },
+      {
+        "class_histogram": {
+          "short-high-deficit": 2
+        },
+        "count": 2,
+        "depth": 10,
+        "pure": true,
+        "residue": "31/1024 (0000011111)",
+        "sample_endpoints": [
+          11304991,
+          228010015
+        ],
+        "sample_starts": [
+          12352231,
+          255976191
+        ],
+        "source_histogram": {
+          "base24:exact": 1,
+          "base28:stride32:offset16": 1
+        }
+      },
+      {
+        "class_histogram": {
+          "short-high-deficit": 1
+        },
+        "count": 1,
+        "depth": 10,
+        "pure": true,
+        "residue": "975/1024 (1111001111)",
+        "sample_endpoints": [
+          228134863
+        ],
+        "sample_starts": [
+          230764991
+        ],
+        "source_histogram": {
+          "base28:stride32:offset16": 1
+        }
+      }
+    ],
+    "internal_node_count": 32,
+    "largest_internal_nodes": [
+      {
+        "class_histogram": {
+          "mixed": 8,
+          "short-high-deficit": 298,
+          "trivial-halving": 315
+        },
+        "count": 621,
+        "depth": 0,
+        "pure": false,
+        "residue": "root",
+        "sample_endpoints": [
+          47314,
+          47314,
+          239150,
+          245732,
+          324614
+        ],
+        "sample_starts": [
+          47855,
+          63807,
+          241903,
+          294591,
+          328351
+        ],
+        "source_histogram": {
+          "base24:exact": 227,
+          "base28:stride32:offset0": 134,
+          "base28:stride32:offset16": 134,
+          "base28:stride32:offset8": 126
+        }
+      },
+      {
+        "class_histogram": {
+          "mixed": 8,
+          "short-high-deficit": 298
+        },
+        "count": 306,
+        "depth": 1,
+        "pure": false,
+        "residue": "1/2 (1)",
+        "sample_endpoints": [
+          330481,
+          499469,
+          499469,
+          794629,
+          794629
+        ],
+        "sample_starts": [
+          366015,
+          532251,
+          598783,
+          813055,
+          856551
+        ],
+        "source_histogram": {
+          "base24:exact": 102,
+          "base28:stride32:offset0": 66,
+          "base28:stride32:offset16": 72,
+          "base28:stride32:offset8": 66
+        }
+      },
+      {
+        "class_histogram": {
+          "mixed": 8,
+          "short-high-deficit": 132
+        },
+        "count": 140,
+        "depth": 2,
+        "pure": false,
+        "residue": "3/4 (11)",
+        "sample_endpoints": [
+          1184419,
+          1289023,
+          1184419,
+          3348559,
+          3348559
+        ],
+        "sample_starts": [
+          1228415,
+          1303879,
+          1455899,
+          3658751,
+          4116095
+        ],
+        "source_histogram": {
+          "base24:exact": 43,
+          "base28:stride32:offset0": 30,
+          "base28:stride32:offset16": 35,
+          "base28:stride32:offset8": 32
+        }
+      },
+      {
+        "class_histogram": {
+          "mixed": 8,
+          "short-high-deficit": 74
+        },
+        "count": 82,
+        "depth": 3,
+        "pure": false,
+        "residue": "7/8 (111)",
+        "sample_endpoints": [
+          1289023,
+          3348559,
+          3348559,
+          4955231,
+          3485095
+        ],
+        "sample_starts": [
+          1303879,
+          3658751,
+          4116095,
+          5488127,
+          5570799
+        ],
+        "source_histogram": {
+          "base24:exact": 25,
+          "base28:stride32:offset0": 17,
+          "base28:stride32:offset16": 22,
+          "base28:stride32:offset8": 18
+        }
+      },
+      {
+        "class_histogram": {
+          "mixed": 8,
+          "short-high-deficit": 40
+        },
+        "count": 48,
+        "depth": 4,
+        "pure": false,
+        "residue": "15/16 (1111)",
+        "sample_endpoints": [
+          1289023,
+          3348559,
+          3348559,
+          4955231,
+          4955231
+        ],
+        "sample_starts": [
+          1303879,
+          3658751,
+          4116095,
+          5488127,
+          6174143
+        ],
+        "source_histogram": {
+          "base24:exact": 15,
+          "base28:stride32:offset0": 8,
+          "base28:stride32:offset16": 14,
+          "base28:stride32:offset8": 11
+        }
+      },
+      {
+        "class_histogram": {
+          "mixed": 6,
+          "short-high-deficit": 20
+        },
+        "count": 26,
+        "depth": 5,
+        "pure": false,
+        "residue": "31/32 (11111)",
+        "sample_endpoints": [
+          1289023,
+          4955231,
+          4955231,
+          4955231,
+          4955231
+        ],
+        "sample_starts": [
+          1303879,
+          5488127,
+          6174143,
+          8232191,
+          9261215
+        ],
+        "source_histogram": {
+          "base24:exact": 9,
+          "base28:stride32:offset0": 5,
+          "base28:stride32:offset16": 7,
+          "base28:stride32:offset8": 5
+        }
+      },
+      {
+        "class_histogram": {
+          "mixed": 2,
+          "short-high-deficit": 20
+        },
+        "count": 22,
+        "depth": 5,
+        "pure": false,
+        "residue": "15/32 (01111)",
+        "sample_endpoints": [
+          3348559,
+          3348559,
+          6858191,
+          5433935,
+          6858191
+        ],
+        "sample_starts": [
+          3658751,
+          4116095,
+          7210015,
+          8007679,
+          10815023
+        ],
+        "source_histogram": {
+          "base24:exact": 6,
+          "base28:stride32:offset0": 3,
+          "base28:stride32:offset16": 7,
+          "base28:stride32:offset8": 6
+        }
+      },
+      {
+        "class_histogram": {
+          "mixed": 3,
+          "short-high-deficit": 12
+        },
+        "count": 15,
+        "depth": 6,
+        "pure": false,
+        "residue": "31/64 (011111)",
+        "sample_endpoints": [
+          4955231,
+          4955231,
+          4955231,
+          4955231,
+          11304991
+        ],
+        "sample_starts": [
+          5488127,
+          6174143,
+          8232191,
+          9261215,
+          12352231
+        ],
+        "source_histogram": {
+          "base24:exact": 6,
+          "base28:stride32:offset0": 3,
+          "base28:stride32:offset16": 5,
+          "base28:stride32:offset8": 1
+        }
+      }
+    ],
+    "largest_leaves": [
+      {
+        "class_histogram": {
+          "trivial-halving": 315
+        },
+        "count": 315,
+        "depth": 1,
+        "pure": true,
+        "residue": "0/2 (0)",
+        "sample_endpoints": [
+          47314,
+          47314,
+          239150,
+          245732,
+          324614
+        ],
+        "sample_starts": [
+          47855,
+          63807,
+          241903,
+          294591,
+          328351
+        ],
+        "source_histogram": {
+          "base24:exact": 125,
+          "base28:stride32:offset0": 68,
+          "base28:stride32:offset16": 62,
+          "base28:stride32:offset8": 60
+        }
+      },
+      {
+        "class_histogram": {
+          "short-high-deficit": 166
+        },
+        "count": 166,
+        "depth": 2,
+        "pure": true,
+        "residue": "1/4 (01)",
+        "sample_endpoints": [
+          330481,
+          499469,
+          499469,
+          794629,
+          794629
+        ],
+        "sample_starts": [
+          366015,
+          532251,
+          598783,
+          813055,
+          856551
+        ],
+        "source_histogram": {
+          "base24:exact": 59,
+          "base28:stride32:offset0": 36,
+          "base28:stride32:offset16": 37,
+          "base28:stride32:offset8": 34
+        }
+      },
+      {
+        "class_histogram": {
+          "short-high-deficit": 58
+        },
+        "count": 58,
+        "depth": 3,
+        "pure": true,
+        "residue": "3/8 (011)",
+        "sample_endpoints": [
+          1184419,
+          1184419,
+          3205843,
+          5626579,
+          7463755
+        ],
+        "sample_starts": [
+          1228415,
+          1455899,
+          6227227,
+          7203231,
+          7549799
+        ],
+        "source_histogram": {
+          "base24:exact": 18,
+          "base28:stride32:offset0": 13,
+          "base28:stride32:offset16": 13,
+          "base28:stride32:offset8": 14
+        }
+      },
+      {
+        "class_histogram": {
+          "short-high-deficit": 34
+        },
+        "count": 34,
+        "depth": 4,
+        "pure": true,
+        "residue": "7/16 (0111)",
+        "sample_endpoints": [
+          3485095,
+          3920743,
+          3920743,
+          8928887,
+          9602983
+        ],
+        "sample_starts": [
+          5570799,
+          5948911,
+          6352671,
+          10024039,
+          10095615
+        ],
+        "source_histogram": {
+          "base24:exact": 10,
+          "base28:stride32:offset0": 9,
+          "base28:stride32:offset16": 8,
+          "base28:stride32:offset8": 7
+        }
+      },
+      {
+        "class_histogram": {
+          "short-high-deficit": 12
+        },
+        "count": 12,
+        "depth": 6,
+        "pure": true,
+        "residue": "47/64 (101111)",
+        "sample_endpoints": [
+          16171823,
+          78001327,
+          181241519,
+          30657775,
+          41446895
+        ],
+        "sample_starts": [
+          19652079,
+          93511807,
+          234703343,
+          40075007,
+          58097511
+        ],
+        "source_histogram": {
+          "base28:stride32:offset0": 3,
+          "base28:stride32:offset16": 3,
+          "base28:stride32:offset8": 6
+        }
+      },
+      {
+        "class_histogram": {
+          "short-high-deficit": 6
+        },
+        "count": 6,
+        "depth": 8,
+        "pure": true,
+        "residue": "95/256 (01011111)",
+        "sample_endpoints": [
+          4955231,
+          4955231,
+          4955231,
+          4955231,
+          4955231
+        ],
+        "sample_starts": [
+          5488127,
+          6174143,
+          8232191,
+          9261215,
+          9261215
+        ],
+        "source_histogram": {
+          "base24:exact": 4,
+          "base28:stride32:offset0": 2
+        }
+      },
+      {
+        "class_histogram": {
+          "short-high-deficit": 5
+        },
+        "count": 5,
+        "depth": 8,
+        "pure": true,
+        "residue": "79/256 (01001111)",
+        "sample_endpoints": [
+          3348559,
+          3348559,
+          5433935,
+          95206735,
+          171713615
+        ],
+        "sample_starts": [
+          3658751,
+          4116095,
+          8007679,
+          158168295,
+          267139231
+        ],
+        "source_histogram": {
+          "base24:exact": 3,
+          "base28:stride32:offset16": 2
+        }
+      },
+      {
+        "class_histogram": {
+          "short-high-deficit": 3
+        },
+        "count": 3,
+        "depth": 8,
+        "pure": true,
+        "residue": "255/256 (11111111)",
+        "sample_endpoints": [
+          15629311,
+          87141119,
+          87141119
+        ],
+        "sample_starts": [
+          16176127,
+          130439015,
+          110057919
+        ],
+        "source_histogram": {
+          "base24:exact": 1,
+          "base28:stride32:offset0": 1,
+          "base28:stride32:offset16": 1
+        }
+      }
+    ],
+    "leaf_count": 24,
+    "leaf_count_by_class": {
+      "mixed": 6,
+      "short-high-deficit": 17,
+      "trivial-halving": 1
+    },
+    "max_leaf_depth": 13,
+    "min_leaf_depth": 1,
+    "node_count": 56,
+    "pure_leaf_count": 24,
+    "record_count": 621,
+    "record_count_by_leaf_class": {
+      "mixed": 8,
+      "short-high-deficit": 298,
+      "trivial-halving": 315
+    },
+    "unresolved_leaf_count": 0,
+    "unresolved_leaves": [],
+    "weighted_leaf_depth_quantiles": {
+      "p50": 1,
+      "p90": 4,
+      "p95": 8,
+      "p99": 10
+    },
+    "weighted_mean_leaf_depth": 2.185185185
+  },
+  "interpretation": "A slowly growing pure tree supports a controlled adaptive grammar target. Contradictions and novel branches are not failures here; they are the exact new residue children that any endpoint-lifting theorem must explain.",
+  "parameters": {
+    "include_terminal_initial": false,
+    "max_tree_depth": 24,
+    "reference_frontier_base_depth": 24,
+    "reference_max_depth": 768,
+    "reference_max_frontier": null,
+    "seed_target_sample_offsets": [
+      0,
+      8,
+      16
+    ],
+    "sweep_target_sample_offsets": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "target_frontier_base_depth": 28,
+    "target_max_depth": 1024,
+    "target_max_frontier": null,
+    "target_sample_stride": 32,
+    "terminal_classes": [
+      "short-high-deficit",
+      "mixed",
+      "trivial-halving"
+    ]
+  },
+  "pre_update_status_histogram": {
+    "agreement": 3827,
+    "contradiction": 42,
+    "novel-branch": 12
+  },
+  "reference_selection": {
+    "candidate_starts": 286581,
+    "frontier": {
+      "base_depth": 24,
+      "certified_fraction": 0.9829184412956238,
+      "certified_leaf_count": 81119,
+      "certified_units_mod_2^base_depth": 16490635,
+      "elapsed_seconds": 0.866737,
+      "frontier_count": 286581,
+      "frontier_fraction": 0.01708155870437622,
+      "frontier_odd_count_histogram": {
+        "16": 108950,
+        "17": 94555,
+        "18": 53020,
+        "19": 21725,
+        "20": 6608,
+        "21": 1472,
+        "22": 228,
+        "23": 22,
+        "24": 1
+      },
+      "max_frontier": null,
+      "sample_offset": 0,
+      "sample_stride": 1,
+      "selected_count": 286581
+    },
+    "nonterminal_next": 0,
+    "records_analyzed": 227,
+    "skipped_terminal_initial": 286354,
+    "source": "base24:exact",
+    "uncertified_initial": 0
+  },
+  "seed_runs": [
+    {
+      "sample_offset": 0,
+      "selection": {
+        "candidate_starts": 110144,
+        "nonterminal_next": 0,
+        "records_analyzed": 134,
+        "skipped_terminal_initial": 110010,
+        "source": "base28:stride32:offset0",
+        "uncertified_initial": 0
+      }
+    },
+    {
+      "sample_offset": 8,
+      "selection": {
+        "candidate_starts": 110144,
+        "nonterminal_next": 0,
+        "records_analyzed": 126,
+        "skipped_terminal_initial": 110018,
+        "source": "base28:stride32:offset8",
+        "uncertified_initial": 0
+      }
+    },
+    {
+      "sample_offset": 16,
+      "selection": {
+        "candidate_starts": 110143,
+        "nonterminal_next": 0,
+        "records_analyzed": 134,
+        "skipped_terminal_initial": 110009,
+        "source": "base28:stride32:offset16",
+        "uncertified_initial": 0
+      }
+    }
+  ],
+  "status": "terminal-residue-tree-sweep-analysis",
+  "sweep_runs": [
+    {
+      "post_update_tree_curve": {
+        "leaf_count": 32,
+        "max_leaf_depth": 13,
+        "node_count": 73,
+        "offset_added": 1,
+        "p90_leaf_depth": 5,
+        "p99_leaf_depth": 11,
+        "pure_leaf_count": 32,
+        "record_count": 743,
+        "unresolved_leaf_count": 0,
+        "weighted_mean_leaf_depth": 2.387617766
+      },
+      "pre_update_evaluation": {
+        "accuracy_on_predicted": 0.983606557,
+        "agreement_records": 120,
+        "contradiction_buckets": [
+          {
+            "actual_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "count": 1,
+            "depth": 10,
+            "predicted_class_histogram": {
+              "mixed": 1
+            },
+            "residue": "447/1024 (0110111111)",
+            "sample_endpoints": [
+              155048383
+            ],
+            "sample_starts": [
+              195415291
+            ],
+            "source_histogram": {
+              "base28:stride32:offset1": 1
+            },
+            "status": "contradiction",
+            "train_class_histogram": {
+              "mixed": 2
+            }
+          },
+          {
+            "actual_class_histogram": {
+              "mixed": 1
+            },
+            "count": 1,
+            "depth": 3,
+            "predicted_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "residue": "3/8 (011)",
+            "sample_endpoints": [
+              64635931
+            ],
+            "sample_starts": [
+              71587055
+            ],
+            "source_histogram": {
+              "base28:stride32:offset1": 1
+            },
+            "status": "contradiction",
+            "train_class_histogram": {
+              "short-high-deficit": 58
+            }
+          }
+        ],
+        "contradiction_records": 2,
+        "mean_prediction_depth": 2.114754098,
+        "novel_branch_buckets": [],
+        "novel_branch_records": 0,
+        "predicted_records": 122,
+        "prediction_coverage_fraction": 1.0,
+        "record_count": 122,
+        "status_histogram": {
+          "agreement": 120,
+          "contradiction": 2
+        },
+        "unresolved_train_leaf_buckets": [],
+        "unresolved_train_leaf_records": 0
+      },
+      "sample_offset": 1,
+      "selection": {
+        "candidate_starts": 110144,
+        "nonterminal_next": 0,
+        "records_analyzed": 122,
+        "skipped_terminal_initial": 110022,
+        "source": "base28:stride32:offset1",
+        "uncertified_initial": 0
+      }
+    },
+    {
+      "post_update_tree_curve": {
+        "leaf_count": 36,
+        "max_leaf_depth": 13,
+        "node_count": 82,
+        "offset_added": 2,
+        "p90_leaf_depth": 6,
+        "p99_leaf_depth": 11,
+        "pure_leaf_count": 36,
+        "record_count": 888,
+        "unresolved_leaf_count": 0,
+        "weighted_mean_leaf_depth": 2.398648649
+      },
+      "pre_update_evaluation": {
+        "accuracy_on_predicted": 0.986111111,
+        "agreement_records": 142,
+        "contradiction_buckets": [
+          {
+            "actual_class_histogram": {
+              "mixed": 1
+            },
+            "count": 1,
+            "depth": 11,
+            "predicted_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "residue": "447/2048 (00110111111)",
+            "sample_endpoints": [
+              233906623
+            ],
+            "sample_starts": [
+              255574719
+            ],
+            "source_histogram": {
+              "base28:stride32:offset2": 1
+            },
+            "status": "contradiction",
+            "train_class_histogram": {
+              "short-high-deficit": 1
+            }
+          },
+          {
+            "actual_class_histogram": {
+              "mixed": 1
+            },
+            "count": 1,
+            "depth": 8,
+            "predicted_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "residue": "255/256 (11111111)",
+            "sample_endpoints": [
+              94553087
+            ],
+            "sample_starts": [
+              161061183
+            ],
+            "source_histogram": {
+              "base28:stride32:offset2": 1
+            },
+            "status": "contradiction",
+            "train_class_histogram": {
+              "short-high-deficit": 3
+            }
+          }
+        ],
+        "contradiction_records": 2,
+        "mean_prediction_depth": 2.3125,
+        "novel_branch_buckets": [
+          {
+            "actual_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "count": 1,
+            "depth": 10,
+            "predicted_class_histogram": {
+              "none": 1
+            },
+            "residue": "639/1024 (1001111111)",
+            "sample_endpoints": [
+              74510975
+            ],
+            "sample_starts": [
+              80150015
+            ],
+            "source_histogram": {
+              "base28:stride32:offset2": 1
+            },
+            "status": "novel-branch",
+            "train_class_histogram": {
+              "mixed": 1,
+              "short-high-deficit": 1
+            }
+          }
+        ],
+        "novel_branch_records": 1,
+        "predicted_records": 144,
+        "prediction_coverage_fraction": 0.993103448,
+        "record_count": 145,
+        "status_histogram": {
+          "agreement": 142,
+          "contradiction": 2,
+          "novel-branch": 1
+        },
+        "unresolved_train_leaf_buckets": [],
+        "unresolved_train_leaf_records": 0
+      },
+      "sample_offset": 2,
+      "selection": {
+        "candidate_starts": 110144,
+        "nonterminal_next": 0,
+        "records_analyzed": 145,
+        "skipped_terminal_initial": 109999,
+        "source": "base28:stride32:offset2",
+        "uncertified_initial": 0
+      }
+    },
+    {
+      "post_update_tree_curve": {
+        "leaf_count": 48,
+        "max_leaf_depth": 13,
+        "node_count": 105,
+        "offset_added": 3,
+        "p90_leaf_depth": 6,
+        "p99_leaf_depth": 11,
+        "pure_leaf_count": 48,
+        "record_count": 1002,
+        "unresolved_leaf_count": 0,
+        "weighted_mean_leaf_depth": 2.523952096
+      },
+      "pre_update_evaluation": {
+        "accuracy_on_predicted": 0.973451327,
+        "agreement_records": 110,
+        "contradiction_buckets": [
+          {
+            "actual_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "count": 1,
+            "depth": 10,
+            "predicted_class_histogram": {
+              "mixed": 1
+            },
+            "residue": "463/1024 (0111001111)",
+            "sample_endpoints": [
+              42516943
+            ],
+            "sample_starts": [
+              50971391
+            ],
+            "source_histogram": {
+              "base28:stride32:offset3": 1
+            },
+            "status": "contradiction",
+            "train_class_histogram": {
+              "mixed": 2
+            }
+          },
+          {
+            "actual_class_histogram": {
+              "mixed": 1
+            },
+            "count": 1,
+            "depth": 6,
+            "predicted_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "residue": "47/64 (101111)",
+            "sample_endpoints": [
+              182325295
+            ],
+            "sample_starts": [
+              184427291
+            ],
+            "source_histogram": {
+              "base28:stride32:offset3": 1
+            },
+            "status": "contradiction",
+            "train_class_histogram": {
+              "short-high-deficit": 16
+            }
+          },
+          {
+            "actual_class_histogram": {
+              "mixed": 1
+            },
+            "count": 1,
+            "depth": 4,
+            "predicted_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "residue": "7/16 (0111)",
+            "sample_endpoints": [
+              174610535
+            ],
+            "sample_starts": [
+              188217791
+            ],
+            "source_histogram": {
+              "base28:stride32:offset3": 1
+            },
+            "status": "contradiction",
+            "train_class_histogram": {
+              "short-high-deficit": 45
+            }
+          }
+        ],
+        "contradiction_records": 3,
+        "mean_prediction_depth": 2.265486726,
+        "novel_branch_buckets": [
+          {
+            "actual_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "count": 1,
+            "depth": 9,
+            "predicted_class_histogram": {
+              "none": 1
+            },
+            "residue": "207/512 (011001111)",
+            "sample_endpoints": [
+              69455567
+            ],
+            "sample_starts": [
+              79949567
+            ],
+            "source_histogram": {
+              "base28:stride32:offset3": 1
+            },
+            "status": "novel-branch",
+            "train_class_histogram": {
+              "mixed": 2,
+              "short-high-deficit": 1
+            }
+          }
+        ],
+        "novel_branch_records": 1,
+        "predicted_records": 113,
+        "prediction_coverage_fraction": 0.99122807,
+        "record_count": 114,
+        "status_histogram": {
+          "agreement": 110,
+          "contradiction": 3,
+          "novel-branch": 1
+        },
+        "unresolved_train_leaf_buckets": [],
+        "unresolved_train_leaf_records": 0
+      },
+      "sample_offset": 3,
+      "selection": {
+        "candidate_starts": 110144,
+        "nonterminal_next": 0,
+        "records_analyzed": 114,
+        "skipped_terminal_initial": 110030,
+        "source": "base28:stride32:offset3",
+        "uncertified_initial": 0
+      }
+    },
+    {
+      "post_update_tree_curve": {
+        "leaf_count": 55,
+        "max_leaf_depth": 13,
+        "node_count": 119,
+        "offset_added": 4,
+        "p90_leaf_depth": 7,
+        "p99_leaf_depth": 11,
+        "pure_leaf_count": 55,
+        "record_count": 1140,
+        "unresolved_leaf_count": 0,
+        "weighted_mean_leaf_depth": 2.564035088
+      },
+      "pre_update_evaluation": {
+        "accuracy_on_predicted": 0.98540146,
+        "agreement_records": 135,
+        "contradiction_buckets": [
+          {
+            "actual_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "count": 1,
+            "depth": 10,
+            "predicted_class_histogram": {
+              "mixed": 1
+            },
+            "residue": "103/1024 (0001100111)",
+            "sample_endpoints": [
+              151321703
+            ],
+            "sample_starts": [
+              163455039
+            ],
+            "source_histogram": {
+              "base28:stride32:offset4": 1
+            },
+            "status": "contradiction",
+            "train_class_histogram": {
+              "mixed": 1
+            }
+          },
+          {
+            "actual_class_histogram": {
+              "mixed": 1
+            },
+            "count": 1,
+            "depth": 7,
+            "predicted_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "residue": "111/128 (1101111)",
+            "sample_endpoints": [
+              132251759
+            ],
+            "sample_starts": [
+              228350399
+            ],
+            "source_histogram": {
+              "base28:stride32:offset4": 1
+            },
+            "status": "contradiction",
+            "train_class_histogram": {
+              "short-high-deficit": 11
+            }
+          }
+        ],
+        "contradiction_records": 2,
+        "mean_prediction_depth": 2.554744526,
+        "novel_branch_buckets": [
+          {
+            "actual_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "count": 1,
+            "depth": 9,
+            "predicted_class_histogram": {
+              "none": 1
+            },
+            "residue": "223/512 (011011111)",
+            "sample_endpoints": [
+              53621471
+            ],
+            "sample_starts": [
+              74151359
+            ],
+            "source_histogram": {
+              "base28:stride32:offset4": 1
+            },
+            "status": "novel-branch",
+            "train_class_histogram": {
+              "mixed": 1,
+              "short-high-deficit": 1
+            }
+          }
+        ],
+        "novel_branch_records": 1,
+        "predicted_records": 137,
+        "prediction_coverage_fraction": 0.992753623,
+        "record_count": 138,
+        "status_histogram": {
+          "agreement": 135,
+          "contradiction": 2,
+          "novel-branch": 1
+        },
+        "unresolved_train_leaf_buckets": [],
+        "unresolved_train_leaf_records": 0
+      },
+      "sample_offset": 4,
+      "selection": {
+        "candidate_starts": 110144,
+        "nonterminal_next": 0,
+        "records_analyzed": 138,
+        "skipped_terminal_initial": 110006,
+        "source": "base28:stride32:offset4",
+        "uncertified_initial": 0
+      }
+    },
+    {
+      "post_update_tree_curve": {
+        "leaf_count": 59,
+        "max_leaf_depth": 21,
+        "node_count": 136,
+        "offset_added": 5,
+        "p90_leaf_depth": 7,
+        "p99_leaf_depth": 11,
+        "pure_leaf_count": 59,
+        "record_count": 1256,
+        "unresolved_leaf_count": 0,
+        "weighted_mean_leaf_depth": 2.60111465
+      },
+      "pre_update_evaluation": {
+        "accuracy_on_predicted": 0.974137931,
+        "agreement_records": 113,
+        "contradiction_buckets": [
+          {
+            "actual_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "count": 1,
+            "depth": 10,
+            "predicted_class_histogram": {
+              "mixed": 1
+            },
+            "residue": "47/1024 (0000101111)",
+            "sample_endpoints": [
+              65933359
+            ],
+            "sample_starts": [
+              70261455
+            ],
+            "source_histogram": {
+              "base28:stride32:offset5": 1
+            },
+            "status": "contradiction",
+            "train_class_histogram": {
+              "mixed": 2
+            }
+          },
+          {
+            "actual_class_histogram": {
+              "mixed": 1
+            },
+            "count": 1,
+            "depth": 9,
+            "predicted_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "residue": "303/512 (100101111)",
+            "sample_endpoints": [
+              205245743
+            ],
+            "sample_starts": [
+              224258815
+            ],
+            "source_histogram": {
+              "base28:stride32:offset5": 1
+            },
+            "status": "contradiction",
+            "train_class_histogram": {
+              "short-high-deficit": 1
+            }
+          },
+          {
+            "actual_class_histogram": {
+              "mixed": 1
+            },
+            "count": 1,
+            "depth": 9,
+            "predicted_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "residue": "159/512 (010011111)",
+            "sample_endpoints": [
+              131780767
+            ],
+            "sample_starts": [
+              143388287
+            ],
+            "source_histogram": {
+              "base28:stride32:offset5": 1
+            },
+            "status": "contradiction",
+            "train_class_histogram": {
+              "short-high-deficit": 3
+            }
+          }
+        ],
+        "contradiction_records": 3,
+        "mean_prediction_depth": 2.706896552,
+        "novel_branch_buckets": [],
+        "novel_branch_records": 0,
+        "predicted_records": 116,
+        "prediction_coverage_fraction": 1.0,
+        "record_count": 116,
+        "status_histogram": {
+          "agreement": 113,
+          "contradiction": 3
+        },
+        "unresolved_train_leaf_buckets": [],
+        "unresolved_train_leaf_records": 0
+      },
+      "sample_offset": 5,
+      "selection": {
+        "candidate_starts": 110144,
+        "nonterminal_next": 0,
+        "records_analyzed": 116,
+        "skipped_terminal_initial": 110028,
+        "source": "base28:stride32:offset5",
+        "uncertified_initial": 0
+      }
+    },
+    {
+      "post_update_tree_curve": {
+        "leaf_count": 66,
+        "max_leaf_depth": 21,
+        "node_count": 158,
+        "offset_added": 6,
+        "p90_leaf_depth": 7,
+        "p99_leaf_depth": 12,
+        "pure_leaf_count": 66,
+        "record_count": 1412,
+        "unresolved_leaf_count": 0,
+        "weighted_mean_leaf_depth": 2.685552408
+      },
+      "pre_update_evaluation": {
+        "accuracy_on_predicted": 0.987179487,
+        "agreement_records": 154,
+        "contradiction_buckets": [
+          {
+            "actual_class_histogram": {
+              "mixed": 1
+            },
+            "count": 1,
+            "depth": 8,
+            "predicted_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "residue": "155/256 (10011011)",
+            "sample_endpoints": [
+              183419035
+            ],
+            "sample_starts": [
+              257104667
+            ],
+            "source_histogram": {
+              "base28:stride32:offset6": 1
+            },
+            "status": "contradiction",
+            "train_class_histogram": {
+              "short-high-deficit": 4
+            }
+          },
+          {
+            "actual_class_histogram": {
+              "mixed": 1
+            },
+            "count": 1,
+            "depth": 6,
+            "predicted_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "residue": "59/64 (111011)",
+            "sample_endpoints": [
+              85623035
+            ],
+            "sample_starts": [
+              168588751
+            ],
+            "source_histogram": {
+              "base28:stride32:offset6": 1
+            },
+            "status": "contradiction",
+            "train_class_histogram": {
+              "short-high-deficit": 24
+            }
+          }
+        ],
+        "contradiction_records": 2,
+        "mean_prediction_depth": 2.756410256,
+        "novel_branch_buckets": [],
+        "novel_branch_records": 0,
+        "predicted_records": 156,
+        "prediction_coverage_fraction": 1.0,
+        "record_count": 156,
+        "status_histogram": {
+          "agreement": 154,
+          "contradiction": 2
+        },
+        "unresolved_train_leaf_buckets": [],
+        "unresolved_train_leaf_records": 0
+      },
+      "sample_offset": 6,
+      "selection": {
+        "candidate_starts": 110144,
+        "nonterminal_next": 0,
+        "records_analyzed": 156,
+        "skipped_terminal_initial": 109988,
+        "source": "base28:stride32:offset6",
+        "uncertified_initial": 0
+      }
+    },
+    {
+      "post_update_tree_curve": {
+        "leaf_count": 70,
+        "max_leaf_depth": 21,
+        "node_count": 164,
+        "offset_added": 7,
+        "p90_leaf_depth": 7,
+        "p99_leaf_depth": 12,
+        "pure_leaf_count": 70,
+        "record_count": 1528,
+        "unresolved_leaf_count": 0,
+        "weighted_mean_leaf_depth": 2.698298429
+      },
+      "pre_update_evaluation": {
+        "accuracy_on_predicted": 0.99122807,
+        "agreement_records": 113,
+        "contradiction_buckets": [
+          {
+            "actual_class_histogram": {
+              "mixed": 1
+            },
+            "count": 1,
+            "depth": 8,
+            "predicted_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "residue": "231/256 (11100111)",
+            "sample_endpoints": [
+              48524519
+            ],
+            "sample_starts": [
+              58173567
+            ],
+            "source_histogram": {
+              "base28:stride32:offset7": 1
+            },
+            "status": "contradiction",
+            "train_class_histogram": {
+              "short-high-deficit": 4
+            }
+          }
+        ],
+        "contradiction_records": 1,
+        "mean_prediction_depth": 2.684210526,
+        "novel_branch_buckets": [
+          {
+            "actual_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "count": 1,
+            "depth": 9,
+            "predicted_class_histogram": {
+              "none": 1
+            },
+            "residue": "383/512 (101111111)",
+            "sample_endpoints": [
+              37698431
+            ],
+            "sample_starts": [
+              70457551
+            ],
+            "source_histogram": {
+              "base28:stride32:offset7": 1
+            },
+            "status": "novel-branch",
+            "train_class_histogram": {
+              "mixed": 1,
+              "short-high-deficit": 2
+            }
+          },
+          {
+            "actual_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "count": 1,
+            "depth": 9,
+            "predicted_class_histogram": {
+              "none": 1
+            },
+            "residue": "191/512 (010111111)",
+            "sample_endpoints": [
+              146588351
+            ],
+            "sample_starts": [
+              246851839
+            ],
+            "source_histogram": {
+              "base28:stride32:offset7": 1
+            },
+            "status": "novel-branch",
+            "train_class_histogram": {
+              "mixed": 4,
+              "short-high-deficit": 4
+            }
+          }
+        ],
+        "novel_branch_records": 2,
+        "predicted_records": 114,
+        "prediction_coverage_fraction": 0.982758621,
+        "record_count": 116,
+        "status_histogram": {
+          "agreement": 113,
+          "contradiction": 1,
+          "novel-branch": 2
+        },
+        "unresolved_train_leaf_buckets": [],
+        "unresolved_train_leaf_records": 0
+      },
+      "sample_offset": 7,
+      "selection": {
+        "candidate_starts": 110144,
+        "nonterminal_next": 0,
+        "records_analyzed": 116,
+        "skipped_terminal_initial": 110028,
+        "source": "base28:stride32:offset7",
+        "uncertified_initial": 0
+      }
+    },
+    {
+      "post_update_tree_curve": {
+        "leaf_count": 73,
+        "max_leaf_depth": 21,
+        "node_count": 168,
+        "offset_added": 9,
+        "p90_leaf_depth": 7,
+        "p99_leaf_depth": 12,
+        "pure_leaf_count": 73,
+        "record_count": 1647,
+        "unresolved_leaf_count": 0,
+        "weighted_mean_leaf_depth": 2.726775956
+      },
+      "pre_update_evaluation": {
+        "accuracy_on_predicted": 0.991452991,
+        "agreement_records": 116,
+        "contradiction_buckets": [
+          {
+            "actual_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "count": 1,
+            "depth": 11,
+            "predicted_class_histogram": {
+              "mixed": 1
+            },
+            "residue": "1487/2048 (10111001111)",
+            "sample_endpoints": [
+              83660239
+            ],
+            "sample_starts": [
+              98739647
+            ],
+            "source_histogram": {
+              "base28:stride32:offset9": 1
+            },
+            "status": "contradiction",
+            "train_class_histogram": {
+              "mixed": 2
+            }
+          }
+        ],
+        "contradiction_records": 1,
+        "mean_prediction_depth": 2.923076923,
+        "novel_branch_buckets": [
+          {
+            "actual_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "count": 1,
+            "depth": 13,
+            "predicted_class_histogram": {
+              "none": 1
+            },
+            "residue": "47/8192 (0000000101111)",
+            "sample_endpoints": [
+              80117807
+            ],
+            "sample_starts": [
+              157749151
+            ],
+            "source_histogram": {
+              "base28:stride32:offset9": 1
+            },
+            "status": "novel-branch",
+            "train_class_histogram": {
+              "mixed": 1,
+              "short-high-deficit": 1
+            }
+          },
+          {
+            "actual_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "count": 1,
+            "depth": 10,
+            "predicted_class_histogram": {
+              "none": 1
+            },
+            "residue": "539/1024 (1000011011)",
+            "sample_endpoints": [
+              33491483
+            ],
+            "sample_starts": [
+              43962367
+            ],
+            "source_histogram": {
+              "base28:stride32:offset9": 1
+            },
+            "status": "novel-branch",
+            "train_class_histogram": {
+              "mixed": 1,
+              "short-high-deficit": 1
+            }
+          }
+        ],
+        "novel_branch_records": 2,
+        "predicted_records": 117,
+        "prediction_coverage_fraction": 0.983193277,
+        "record_count": 119,
+        "status_histogram": {
+          "agreement": 116,
+          "contradiction": 1,
+          "novel-branch": 2
+        },
+        "unresolved_train_leaf_buckets": [],
+        "unresolved_train_leaf_records": 0
+      },
+      "sample_offset": 9,
+      "selection": {
+        "candidate_starts": 110144,
+        "nonterminal_next": 0,
+        "records_analyzed": 119,
+        "skipped_terminal_initial": 110025,
+        "source": "base28:stride32:offset9",
+        "uncertified_initial": 0
+      }
+    },
+    {
+      "post_update_tree_curve": {
+        "leaf_count": 77,
+        "max_leaf_depth": 21,
+        "node_count": 177,
+        "offset_added": 10,
+        "p90_leaf_depth": 8,
+        "p99_leaf_depth": 12,
+        "pure_leaf_count": 77,
+        "record_count": 1788,
+        "unresolved_leaf_count": 0,
+        "weighted_mean_leaf_depth": 2.772930649
+      },
+      "pre_update_evaluation": {
+        "accuracy_on_predicted": 0.992907801,
+        "agreement_records": 140,
+        "contradiction_buckets": [
+          {
+            "actual_class_histogram": {
+              "mixed": 1
+            },
+            "count": 1,
+            "depth": 9,
+            "predicted_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "residue": "367/512 (101101111)",
+            "sample_endpoints": [
+              156641135
+            ],
+            "sample_starts": [
+              197422719
+            ],
+            "source_histogram": {
+              "base28:stride32:offset10": 1
+            },
+            "status": "contradiction",
+            "train_class_histogram": {
+              "short-high-deficit": 8
+            }
+          }
+        ],
+        "contradiction_records": 1,
+        "mean_prediction_depth": 3.092198582,
+        "novel_branch_buckets": [],
+        "novel_branch_records": 0,
+        "predicted_records": 141,
+        "prediction_coverage_fraction": 1.0,
+        "record_count": 141,
+        "status_histogram": {
+          "agreement": 140,
+          "contradiction": 1
+        },
+        "unresolved_train_leaf_buckets": [],
+        "unresolved_train_leaf_records": 0
+      },
+      "sample_offset": 10,
+      "selection": {
+        "candidate_starts": 110143,
+        "nonterminal_next": 0,
+        "records_analyzed": 141,
+        "skipped_terminal_initial": 110002,
+        "source": "base28:stride32:offset10",
+        "uncertified_initial": 0
+      }
+    },
+    {
+      "post_update_tree_curve": {
+        "leaf_count": 83,
+        "max_leaf_depth": 21,
+        "node_count": 190,
+        "offset_added": 11,
+        "p90_leaf_depth": 7,
+        "p99_leaf_depth": 13,
+        "pure_leaf_count": 83,
+        "record_count": 1922,
+        "unresolved_leaf_count": 0,
+        "weighted_mean_leaf_depth": 2.793444329
+      },
+      "pre_update_evaluation": {
+        "accuracy_on_predicted": 0.984962406,
+        "agreement_records": 131,
+        "contradiction_buckets": [
+          {
+            "actual_class_histogram": {
+              "mixed": 1
+            },
+            "count": 1,
+            "depth": 10,
+            "predicted_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "residue": "671/1024 (1010011111)",
+            "sample_endpoints": [
+              218346143
+            ],
+            "sample_starts": [
+              226457759
+            ],
+            "source_histogram": {
+              "base28:stride32:offset11": 1
+            },
+            "status": "contradiction",
+            "train_class_histogram": {
+              "short-high-deficit": 3
+            }
+          },
+          {
+            "actual_class_histogram": {
+              "mixed": 1
+            },
+            "count": 1,
+            "depth": 9,
+            "predicted_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "residue": "255/512 (011111111)",
+            "sample_endpoints": [
+              145485055
+            ],
+            "sample_starts": [
+              241696383
+            ],
+            "source_histogram": {
+              "base28:stride32:offset11": 1
+            },
+            "status": "contradiction",
+            "train_class_histogram": {
+              "short-high-deficit": 11
+            }
+          }
+        ],
+        "contradiction_records": 2,
+        "mean_prediction_depth": 2.751879699,
+        "novel_branch_buckets": [
+          {
+            "actual_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "count": 1,
+            "depth": 11,
+            "predicted_class_histogram": {
+              "none": 1
+            },
+            "residue": "1151/2048 (10001111111)",
+            "sample_endpoints": [
+              169084031
+            ],
+            "sample_starts": [
+              171033371
+            ],
+            "source_histogram": {
+              "base28:stride32:offset11": 1
+            },
+            "status": "novel-branch",
+            "train_class_histogram": {
+              "mixed": 1,
+              "short-high-deficit": 1
+            }
+          }
+        ],
+        "novel_branch_records": 1,
+        "predicted_records": 133,
+        "prediction_coverage_fraction": 0.992537313,
+        "record_count": 134,
+        "status_histogram": {
+          "agreement": 131,
+          "contradiction": 2,
+          "novel-branch": 1
+        },
+        "unresolved_train_leaf_buckets": [],
+        "unresolved_train_leaf_records": 0
+      },
+      "sample_offset": 11,
+      "selection": {
+        "candidate_starts": 110143,
+        "nonterminal_next": 0,
+        "records_analyzed": 134,
+        "skipped_terminal_initial": 110009,
+        "source": "base28:stride32:offset11",
+        "uncertified_initial": 0
+      }
+    },
+    {
+      "post_update_tree_curve": {
+        "leaf_count": 84,
+        "max_leaf_depth": 21,
+        "node_count": 192,
+        "offset_added": 12,
+        "p90_leaf_depth": 7,
+        "p99_leaf_depth": 13,
+        "pure_leaf_count": 84,
+        "record_count": 2072,
+        "unresolved_leaf_count": 0,
+        "weighted_mean_leaf_depth": 2.772683398
+      },
+      "pre_update_evaluation": {
+        "accuracy_on_predicted": 0.993333333,
+        "agreement_records": 149,
+        "contradiction_buckets": [
+          {
+            "actual_class_histogram": {
+              "mixed": 1
+            },
+            "count": 1,
+            "depth": 10,
+            "predicted_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "residue": "767/1024 (1011111111)",
+            "sample_endpoints": [
+              137649919
+            ],
+            "sample_starts": [
+              175854063
+            ],
+            "source_histogram": {
+              "base28:stride32:offset12": 1
+            },
+            "status": "contradiction",
+            "train_class_histogram": {
+              "short-high-deficit": 6
+            }
+          }
+        ],
+        "contradiction_records": 1,
+        "mean_prediction_depth": 2.46,
+        "novel_branch_buckets": [],
+        "novel_branch_records": 0,
+        "predicted_records": 150,
+        "prediction_coverage_fraction": 1.0,
+        "record_count": 150,
+        "status_histogram": {
+          "agreement": 149,
+          "contradiction": 1
+        },
+        "unresolved_train_leaf_buckets": [],
+        "unresolved_train_leaf_records": 0
+      },
+      "sample_offset": 12,
+      "selection": {
+        "candidate_starts": 110143,
+        "nonterminal_next": 0,
+        "records_analyzed": 150,
+        "skipped_terminal_initial": 109993,
+        "source": "base28:stride32:offset12",
+        "uncertified_initial": 0
+      }
+    },
+    {
+      "post_update_tree_curve": {
+        "leaf_count": 87,
+        "max_leaf_depth": 21,
+        "node_count": 198,
+        "offset_added": 13,
+        "p90_leaf_depth": 7,
+        "p99_leaf_depth": 13,
+        "pure_leaf_count": 87,
+        "record_count": 2203,
+        "unresolved_leaf_count": 0,
+        "weighted_mean_leaf_depth": 2.754879709
+      },
+      "pre_update_evaluation": {
+        "accuracy_on_predicted": 0.969465649,
+        "agreement_records": 127,
+        "contradiction_buckets": [
+          {
+            "actual_class_histogram": {
+              "short-high-deficit": 2
+            },
+            "count": 2,
+            "depth": 10,
+            "predicted_class_histogram": {
+              "mixed": 2
+            },
+            "residue": "159/1024 (0010011111)",
+            "sample_endpoints": [
+              140831903,
+              140831903
+            ],
+            "sample_starts": [
+              177868571,
+              200102143
+            ],
+            "source_histogram": {
+              "base28:stride32:offset13": 2
+            },
+            "status": "contradiction",
+            "train_class_histogram": {
+              "mixed": 4
+            }
+          },
+          {
+            "actual_class_histogram": {
+              "mixed": 1
+            },
+            "count": 1,
+            "depth": 9,
+            "predicted_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "residue": "383/512 (101111111)",
+            "sample_endpoints": [
+              80250239
+            ],
+            "sample_starts": [
+              112489471
+            ],
+            "source_histogram": {
+              "base28:stride32:offset13": 1
+            },
+            "status": "contradiction",
+            "train_class_histogram": {
+              "short-high-deficit": 2
+            }
+          },
+          {
+            "actual_class_histogram": {
+              "mixed": 1
+            },
+            "count": 1,
+            "depth": 9,
+            "predicted_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "residue": "207/512 (011001111)",
+            "sample_endpoints": [
+              41479375
+            ],
+            "sample_starts": [
+              44202223
+            ],
+            "source_histogram": {
+              "base28:stride32:offset13": 1
+            },
+            "status": "contradiction",
+            "train_class_histogram": {
+              "short-high-deficit": 1
+            }
+          }
+        ],
+        "contradiction_records": 4,
+        "mean_prediction_depth": 2.404580153,
+        "novel_branch_buckets": [],
+        "novel_branch_records": 0,
+        "predicted_records": 131,
+        "prediction_coverage_fraction": 1.0,
+        "record_count": 131,
+        "status_histogram": {
+          "agreement": 127,
+          "contradiction": 4
+        },
+        "unresolved_train_leaf_buckets": [],
+        "unresolved_train_leaf_records": 0
+      },
+      "sample_offset": 13,
+      "selection": {
+        "candidate_starts": 110143,
+        "nonterminal_next": 0,
+        "records_analyzed": 131,
+        "skipped_terminal_initial": 110012,
+        "source": "base28:stride32:offset13",
+        "uncertified_initial": 0
+      }
+    },
+    {
+      "post_update_tree_curve": {
+        "leaf_count": 87,
+        "max_leaf_depth": 21,
+        "node_count": 198,
+        "offset_added": 14,
+        "p90_leaf_depth": 7,
+        "p99_leaf_depth": 13,
+        "pure_leaf_count": 87,
+        "record_count": 2318,
+        "unresolved_leaf_count": 0,
+        "weighted_mean_leaf_depth": 2.757549612
+      },
+      "pre_update_evaluation": {
+        "accuracy_on_predicted": 1.0,
+        "agreement_records": 115,
+        "contradiction_buckets": [],
+        "contradiction_records": 0,
+        "mean_prediction_depth": 2.808695652,
+        "novel_branch_buckets": [],
+        "novel_branch_records": 0,
+        "predicted_records": 115,
+        "prediction_coverage_fraction": 1.0,
+        "record_count": 115,
+        "status_histogram": {
+          "agreement": 115
+        },
+        "unresolved_train_leaf_buckets": [],
+        "unresolved_train_leaf_records": 0
+      },
+      "sample_offset": 14,
+      "selection": {
+        "candidate_starts": 110143,
+        "nonterminal_next": 0,
+        "records_analyzed": 115,
+        "skipped_terminal_initial": 110028,
+        "source": "base28:stride32:offset14",
+        "uncertified_initial": 0
+      }
+    },
+    {
+      "post_update_tree_curve": {
+        "leaf_count": 89,
+        "max_leaf_depth": 21,
+        "node_count": 201,
+        "offset_added": 15,
+        "p90_leaf_depth": 7,
+        "p99_leaf_depth": 12,
+        "pure_leaf_count": 89,
+        "record_count": 2441,
+        "unresolved_leaf_count": 0,
+        "weighted_mean_leaf_depth": 2.743547726
+      },
+      "pre_update_evaluation": {
+        "accuracy_on_predicted": 0.991803279,
+        "agreement_records": 121,
+        "contradiction_buckets": [
+          {
+            "actual_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "count": 1,
+            "depth": 11,
+            "predicted_class_histogram": {
+              "mixed": 1
+            },
+            "residue": "103/2048 (00001100111)",
+            "sample_endpoints": [
+              35590247
+            ],
+            "sample_starts": [
+              38887167
+            ],
+            "source_histogram": {
+              "base28:stride32:offset15": 1
+            },
+            "status": "contradiction",
+            "train_class_histogram": {
+              "mixed": 1
+            }
+          }
+        ],
+        "contradiction_records": 1,
+        "mean_prediction_depth": 2.401639344,
+        "novel_branch_buckets": [
+          {
+            "actual_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "count": 1,
+            "depth": 10,
+            "predicted_class_histogram": {
+              "none": 1
+            },
+            "residue": "511/1024 (0111111111)",
+            "sample_endpoints": [
+              190788095
+            ],
+            "sample_starts": [
+              195620639
+            ],
+            "source_histogram": {
+              "base28:stride32:offset15": 1
+            },
+            "status": "novel-branch",
+            "train_class_histogram": {
+              "mixed": 3,
+              "short-high-deficit": 3
+            }
+          }
+        ],
+        "novel_branch_records": 1,
+        "predicted_records": 122,
+        "prediction_coverage_fraction": 0.991869919,
+        "record_count": 123,
+        "status_histogram": {
+          "agreement": 121,
+          "contradiction": 1,
+          "novel-branch": 1
+        },
+        "unresolved_train_leaf_buckets": [],
+        "unresolved_train_leaf_records": 0
+      },
+      "sample_offset": 15,
+      "selection": {
+        "candidate_starts": 110143,
+        "nonterminal_next": 0,
+        "records_analyzed": 123,
+        "skipped_terminal_initial": 110020,
+        "source": "base28:stride32:offset15",
+        "uncertified_initial": 0
+      }
+    },
+    {
+      "post_update_tree_curve": {
+        "leaf_count": 90,
+        "max_leaf_depth": 21,
+        "node_count": 203,
+        "offset_added": 17,
+        "p90_leaf_depth": 7,
+        "p99_leaf_depth": 13,
+        "pure_leaf_count": 90,
+        "record_count": 2587,
+        "unresolved_leaf_count": 0,
+        "weighted_mean_leaf_depth": 2.751063007
+      },
+      "pre_update_evaluation": {
+        "accuracy_on_predicted": 0.993150685,
+        "agreement_records": 145,
+        "contradiction_buckets": [
+          {
+            "actual_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "count": 1,
+            "depth": 13,
+            "predicted_class_histogram": {
+              "mixed": 1
+            },
+            "residue": "2175/8192 (0100001111111)",
+            "sample_endpoints": [
+              20162687
+            ],
+            "sample_starts": [
+              20395135
+            ],
+            "source_histogram": {
+              "base28:stride32:offset17": 1
+            },
+            "status": "contradiction",
+            "train_class_histogram": {
+              "mixed": 2
+            }
+          }
+        ],
+        "contradiction_records": 1,
+        "mean_prediction_depth": 2.856164384,
+        "novel_branch_buckets": [],
+        "novel_branch_records": 0,
+        "predicted_records": 146,
+        "prediction_coverage_fraction": 1.0,
+        "record_count": 146,
+        "status_histogram": {
+          "agreement": 145,
+          "contradiction": 1
+        },
+        "unresolved_train_leaf_buckets": [],
+        "unresolved_train_leaf_records": 0
+      },
+      "sample_offset": 17,
+      "selection": {
+        "candidate_starts": 110143,
+        "nonterminal_next": 0,
+        "records_analyzed": 146,
+        "skipped_terminal_initial": 109997,
+        "source": "base28:stride32:offset17",
+        "uncertified_initial": 0
+      }
+    },
+    {
+      "post_update_tree_curve": {
+        "leaf_count": 95,
+        "max_leaf_depth": 21,
+        "node_count": 213,
+        "offset_added": 18,
+        "p90_leaf_depth": 7,
+        "p99_leaf_depth": 12,
+        "pure_leaf_count": 95,
+        "record_count": 2724,
+        "unresolved_leaf_count": 0,
+        "weighted_mean_leaf_depth": 2.775330396
+      },
+      "pre_update_evaluation": {
+        "accuracy_on_predicted": 0.99270073,
+        "agreement_records": 136,
+        "contradiction_buckets": [
+          {
+            "actual_class_histogram": {
+              "mixed": 1
+            },
+            "count": 1,
+            "depth": 6,
+            "predicted_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "residue": "7/64 (000111)",
+            "sample_endpoints": [
+              94317895
+            ],
+            "sample_starts": [
+              117273599
+            ],
+            "source_histogram": {
+              "base28:stride32:offset18": 1
+            },
+            "status": "contradiction",
+            "train_class_histogram": {
+              "short-high-deficit": 33
+            }
+          }
+        ],
+        "contradiction_records": 1,
+        "mean_prediction_depth": 2.678832117,
+        "novel_branch_buckets": [],
+        "novel_branch_records": 0,
+        "predicted_records": 137,
+        "prediction_coverage_fraction": 1.0,
+        "record_count": 137,
+        "status_histogram": {
+          "agreement": 136,
+          "contradiction": 1
+        },
+        "unresolved_train_leaf_buckets": [],
+        "unresolved_train_leaf_records": 0
+      },
+      "sample_offset": 18,
+      "selection": {
+        "candidate_starts": 110143,
+        "nonterminal_next": 0,
+        "records_analyzed": 137,
+        "skipped_terminal_initial": 110006,
+        "source": "base28:stride32:offset18",
+        "uncertified_initial": 0
+      }
+    },
+    {
+      "post_update_tree_curve": {
+        "leaf_count": 99,
+        "max_leaf_depth": 21,
+        "node_count": 225,
+        "offset_added": 19,
+        "p90_leaf_depth": 7,
+        "p99_leaf_depth": 13,
+        "pure_leaf_count": 99,
+        "record_count": 2837,
+        "unresolved_leaf_count": 0,
+        "weighted_mean_leaf_depth": 2.791328869
+      },
+      "pre_update_evaluation": {
+        "accuracy_on_predicted": 0.991150442,
+        "agreement_records": 112,
+        "contradiction_buckets": [
+          {
+            "actual_class_histogram": {
+              "mixed": 1
+            },
+            "count": 1,
+            "depth": 8,
+            "predicted_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "residue": "239/256 (11101111)",
+            "sample_endpoints": [
+              91770095
+            ],
+            "sample_starts": [
+              105635583
+            ],
+            "source_histogram": {
+              "base28:stride32:offset19": 1
+            },
+            "status": "contradiction",
+            "train_class_histogram": {
+              "short-high-deficit": 8
+            }
+          }
+        ],
+        "contradiction_records": 1,
+        "mean_prediction_depth": 2.82300885,
+        "novel_branch_buckets": [],
+        "novel_branch_records": 0,
+        "predicted_records": 113,
+        "prediction_coverage_fraction": 1.0,
+        "record_count": 113,
+        "status_histogram": {
+          "agreement": 112,
+          "contradiction": 1
+        },
+        "unresolved_train_leaf_buckets": [],
+        "unresolved_train_leaf_records": 0
+      },
+      "sample_offset": 19,
+      "selection": {
+        "candidate_starts": 110143,
+        "nonterminal_next": 0,
+        "records_analyzed": 113,
+        "skipped_terminal_initial": 110030,
+        "source": "base28:stride32:offset19",
+        "uncertified_initial": 0
+      }
+    },
+    {
+      "post_update_tree_curve": {
+        "leaf_count": 102,
+        "max_leaf_depth": 21,
+        "node_count": 232,
+        "offset_added": 20,
+        "p90_leaf_depth": 7,
+        "p99_leaf_depth": 13,
+        "pure_leaf_count": 102,
+        "record_count": 2970,
+        "unresolved_leaf_count": 0,
+        "weighted_mean_leaf_depth": 2.795622896
+      },
+      "pre_update_evaluation": {
+        "accuracy_on_predicted": 0.992481203,
+        "agreement_records": 132,
+        "contradiction_buckets": [
+          {
+            "actual_class_histogram": {
+              "mixed": 1
+            },
+            "count": 1,
+            "depth": 11,
+            "predicted_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "residue": "767/2048 (01011111111)",
+            "sample_endpoints": [
+              39021311
+            ],
+            "sample_starts": [
+              43217767
+            ],
+            "source_histogram": {
+              "base28:stride32:offset20": 1
+            },
+            "status": "contradiction",
+            "train_class_histogram": {
+              "short-high-deficit": 7
+            }
+          }
+        ],
+        "contradiction_records": 1,
+        "mean_prediction_depth": 2.676691729,
+        "novel_branch_buckets": [],
+        "novel_branch_records": 0,
+        "predicted_records": 133,
+        "prediction_coverage_fraction": 1.0,
+        "record_count": 133,
+        "status_histogram": {
+          "agreement": 132,
+          "contradiction": 1
+        },
+        "unresolved_train_leaf_buckets": [],
+        "unresolved_train_leaf_records": 0
+      },
+      "sample_offset": 20,
+      "selection": {
+        "candidate_starts": 110143,
+        "nonterminal_next": 0,
+        "records_analyzed": 133,
+        "skipped_terminal_initial": 110010,
+        "source": "base28:stride32:offset20",
+        "uncertified_initial": 0
+      }
+    },
+    {
+      "post_update_tree_curve": {
+        "leaf_count": 103,
+        "max_leaf_depth": 21,
+        "node_count": 234,
+        "offset_added": 21,
+        "p90_leaf_depth": 7,
+        "p99_leaf_depth": 13,
+        "pure_leaf_count": 103,
+        "record_count": 3112,
+        "unresolved_leaf_count": 0,
+        "weighted_mean_leaf_depth": 2.790488432
+      },
+      "pre_update_evaluation": {
+        "accuracy_on_predicted": 0.992957746,
+        "agreement_records": 141,
+        "contradiction_buckets": [
+          {
+            "actual_class_histogram": {
+              "mixed": 1
+            },
+            "count": 1,
+            "depth": 12,
+            "predicted_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "residue": "1503/4096 (010111011111)",
+            "sample_endpoints": [
+              68769247
+            ],
+            "sample_starts": [
+              74283327
+            ],
+            "source_histogram": {
+              "base28:stride32:offset21": 1
+            },
+            "status": "contradiction",
+            "train_class_histogram": {
+              "short-high-deficit": 1
+            }
+          }
+        ],
+        "contradiction_records": 1,
+        "mean_prediction_depth": 2.669014085,
+        "novel_branch_buckets": [],
+        "novel_branch_records": 0,
+        "predicted_records": 142,
+        "prediction_coverage_fraction": 1.0,
+        "record_count": 142,
+        "status_histogram": {
+          "agreement": 141,
+          "contradiction": 1
+        },
+        "unresolved_train_leaf_buckets": [],
+        "unresolved_train_leaf_records": 0
+      },
+      "sample_offset": 21,
+      "selection": {
+        "candidate_starts": 110143,
+        "nonterminal_next": 0,
+        "records_analyzed": 142,
+        "skipped_terminal_initial": 110001,
+        "source": "base28:stride32:offset21",
+        "uncertified_initial": 0
+      }
+    },
+    {
+      "post_update_tree_curve": {
+        "leaf_count": 105,
+        "max_leaf_depth": 21,
+        "node_count": 238,
+        "offset_added": 22,
+        "p90_leaf_depth": 7,
+        "p99_leaf_depth": 13,
+        "pure_leaf_count": 105,
+        "record_count": 3262,
+        "unresolved_leaf_count": 0,
+        "weighted_mean_leaf_depth": 2.78908645
+      },
+      "pre_update_evaluation": {
+        "accuracy_on_predicted": 0.993333333,
+        "agreement_records": 149,
+        "contradiction_buckets": [
+          {
+            "actual_class_histogram": {
+              "mixed": 1
+            },
+            "count": 1,
+            "depth": 9,
+            "predicted_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "residue": "71/512 (001000111)",
+            "sample_endpoints": [
+              237765703
+            ],
+            "sample_starts": [
+              246598759
+            ],
+            "source_histogram": {
+              "base28:stride32:offset22": 1
+            },
+            "status": "contradiction",
+            "train_class_histogram": {
+              "short-high-deficit": 4
+            }
+          }
+        ],
+        "contradiction_records": 1,
+        "mean_prediction_depth": 2.713333333,
+        "novel_branch_buckets": [],
+        "novel_branch_records": 0,
+        "predicted_records": 150,
+        "prediction_coverage_fraction": 1.0,
+        "record_count": 150,
+        "status_histogram": {
+          "agreement": 149,
+          "contradiction": 1
+        },
+        "unresolved_train_leaf_buckets": [],
+        "unresolved_train_leaf_records": 0
+      },
+      "sample_offset": 22,
+      "selection": {
+        "candidate_starts": 110143,
+        "nonterminal_next": 0,
+        "records_analyzed": 150,
+        "skipped_terminal_initial": 109993,
+        "source": "base28:stride32:offset22",
+        "uncertified_initial": 0
+      }
+    },
+    {
+      "post_update_tree_curve": {
+        "leaf_count": 106,
+        "max_leaf_depth": 21,
+        "node_count": 246,
+        "offset_added": 23,
+        "p90_leaf_depth": 7,
+        "p99_leaf_depth": 13,
+        "pure_leaf_count": 106,
+        "record_count": 3403,
+        "unresolved_leaf_count": 0,
+        "weighted_mean_leaf_depth": 2.794593006
+      },
+      "pre_update_evaluation": {
+        "accuracy_on_predicted": 0.992907801,
+        "agreement_records": 140,
+        "contradiction_buckets": [
+          {
+            "actual_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "count": 1,
+            "depth": 11,
+            "predicted_class_histogram": {
+              "mixed": 1
+            },
+            "residue": "1791/2048 (11011111111)",
+            "sample_endpoints": [
+              219832063
+            ],
+            "sample_starts": [
+              240196351
+            ],
+            "source_histogram": {
+              "base28:stride32:offset23": 1
+            },
+            "status": "contradiction",
+            "train_class_histogram": {
+              "mixed": 1
+            }
+          }
+        ],
+        "contradiction_records": 1,
+        "mean_prediction_depth": 2.822695035,
+        "novel_branch_buckets": [],
+        "novel_branch_records": 0,
+        "predicted_records": 141,
+        "prediction_coverage_fraction": 1.0,
+        "record_count": 141,
+        "status_histogram": {
+          "agreement": 140,
+          "contradiction": 1
+        },
+        "unresolved_train_leaf_buckets": [],
+        "unresolved_train_leaf_records": 0
+      },
+      "sample_offset": 23,
+      "selection": {
+        "candidate_starts": 110143,
+        "nonterminal_next": 0,
+        "records_analyzed": 141,
+        "skipped_terminal_initial": 110002,
+        "source": "base28:stride32:offset23",
+        "uncertified_initial": 0
+      }
+    },
+    {
+      "post_update_tree_curve": {
+        "leaf_count": 106,
+        "max_leaf_depth": 21,
+        "node_count": 246,
+        "offset_added": 24,
+        "p90_leaf_depth": 7,
+        "p99_leaf_depth": 13,
+        "pure_leaf_count": 106,
+        "record_count": 3541,
+        "unresolved_leaf_count": 0,
+        "weighted_mean_leaf_depth": 2.773510308
+      },
+      "pre_update_evaluation": {
+        "accuracy_on_predicted": 1.0,
+        "agreement_records": 138,
+        "contradiction_buckets": [],
+        "contradiction_records": 0,
+        "mean_prediction_depth": 2.253623188,
+        "novel_branch_buckets": [],
+        "novel_branch_records": 0,
+        "predicted_records": 138,
+        "prediction_coverage_fraction": 1.0,
+        "record_count": 138,
+        "status_histogram": {
+          "agreement": 138
+        },
+        "unresolved_train_leaf_buckets": [],
+        "unresolved_train_leaf_records": 0
+      },
+      "sample_offset": 24,
+      "selection": {
+        "candidate_starts": 110143,
+        "nonterminal_next": 0,
+        "records_analyzed": 138,
+        "skipped_terminal_initial": 110005,
+        "source": "base28:stride32:offset24",
+        "uncertified_initial": 0
+      }
+    },
+    {
+      "post_update_tree_curve": {
+        "leaf_count": 109,
+        "max_leaf_depth": 21,
+        "node_count": 254,
+        "offset_added": 25,
+        "p90_leaf_depth": 7,
+        "p99_leaf_depth": 13,
+        "pure_leaf_count": 109,
+        "record_count": 3692,
+        "unresolved_leaf_count": 0,
+        "weighted_mean_leaf_depth": 2.777898158
+      },
+      "pre_update_evaluation": {
+        "accuracy_on_predicted": 0.986754967,
+        "agreement_records": 149,
+        "contradiction_buckets": [
+          {
+            "actual_class_histogram": {
+              "mixed": 1
+            },
+            "count": 1,
+            "depth": 12,
+            "predicted_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "residue": "3951/4096 (111101101111)",
+            "sample_endpoints": [
+              235630447
+            ],
+            "sample_starts": [
+              238346991
+            ],
+            "source_histogram": {
+              "base28:stride32:offset25": 1
+            },
+            "status": "contradiction",
+            "train_class_histogram": {
+              "short-high-deficit": 2
+            }
+          },
+          {
+            "actual_class_histogram": {
+              "mixed": 1
+            },
+            "count": 1,
+            "depth": 9,
+            "predicted_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "residue": "191/512 (010111111)",
+            "sample_endpoints": [
+              227013823
+            ],
+            "sample_starts": [
+              251427519
+            ],
+            "source_histogram": {
+              "base28:stride32:offset25": 1
+            },
+            "status": "contradiction",
+            "train_class_histogram": {
+              "short-high-deficit": 1
+            }
+          }
+        ],
+        "contradiction_records": 2,
+        "mean_prediction_depth": 2.801324503,
+        "novel_branch_buckets": [],
+        "novel_branch_records": 0,
+        "predicted_records": 151,
+        "prediction_coverage_fraction": 1.0,
+        "record_count": 151,
+        "status_histogram": {
+          "agreement": 149,
+          "contradiction": 2
+        },
+        "unresolved_train_leaf_buckets": [],
+        "unresolved_train_leaf_records": 0
+      },
+      "sample_offset": 25,
+      "selection": {
+        "candidate_starts": 110143,
+        "nonterminal_next": 0,
+        "records_analyzed": 151,
+        "skipped_terminal_initial": 109992,
+        "source": "base28:stride32:offset25",
+        "uncertified_initial": 0
+      }
+    },
+    {
+      "post_update_tree_curve": {
+        "leaf_count": 111,
+        "max_leaf_depth": 21,
+        "node_count": 259,
+        "offset_added": 26,
+        "p90_leaf_depth": 7,
+        "p99_leaf_depth": 13,
+        "pure_leaf_count": 111,
+        "record_count": 3819,
+        "unresolved_leaf_count": 0,
+        "weighted_mean_leaf_depth": 2.772453522
+      },
+      "pre_update_evaluation": {
+        "accuracy_on_predicted": 0.984251969,
+        "agreement_records": 125,
+        "contradiction_buckets": [
+          {
+            "actual_class_histogram": {
+              "mixed": 1
+            },
+            "count": 1,
+            "depth": 11,
+            "predicted_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "residue": "239/2048 (00011101111)",
+            "sample_endpoints": [
+              68507887
+            ],
+            "sample_starts": [
+              121284223
+            ],
+            "source_histogram": {
+              "base28:stride32:offset26": 1
+            },
+            "status": "contradiction",
+            "train_class_histogram": {
+              "short-high-deficit": 1
+            }
+          },
+          {
+            "actual_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "count": 1,
+            "depth": 11,
+            "predicted_class_histogram": {
+              "mixed": 1
+            },
+            "residue": "1351/2048 (10101000111)",
+            "sample_endpoints": [
+              147400007
+            ],
+            "sample_starts": [
+              203834607
+            ],
+            "source_histogram": {
+              "base28:stride32:offset26": 1
+            },
+            "status": "contradiction",
+            "train_class_histogram": {
+              "mixed": 1
+            }
+          }
+        ],
+        "contradiction_records": 2,
+        "mean_prediction_depth": 2.566929134,
+        "novel_branch_buckets": [],
+        "novel_branch_records": 0,
+        "predicted_records": 127,
+        "prediction_coverage_fraction": 1.0,
+        "record_count": 127,
+        "status_histogram": {
+          "agreement": 125,
+          "contradiction": 2
+        },
+        "unresolved_train_leaf_buckets": [],
+        "unresolved_train_leaf_records": 0
+      },
+      "sample_offset": 26,
+      "selection": {
+        "candidate_starts": 110143,
+        "nonterminal_next": 0,
+        "records_analyzed": 127,
+        "skipped_terminal_initial": 110016,
+        "source": "base28:stride32:offset26",
+        "uncertified_initial": 0
+      }
+    },
+    {
+      "post_update_tree_curve": {
+        "leaf_count": 115,
+        "max_leaf_depth": 21,
+        "node_count": 271,
+        "offset_added": 27,
+        "p90_leaf_depth": 7,
+        "p99_leaf_depth": 13,
+        "pure_leaf_count": 115,
+        "record_count": 3940,
+        "unresolved_leaf_count": 0,
+        "weighted_mean_leaf_depth": 2.779187817
+      },
+      "pre_update_evaluation": {
+        "accuracy_on_predicted": 0.983471074,
+        "agreement_records": 119,
+        "contradiction_buckets": [
+          {
+            "actual_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "count": 1,
+            "depth": 10,
+            "predicted_class_histogram": {
+              "mixed": 1
+            },
+            "residue": "231/1024 (0011100111)",
+            "sample_endpoints": [
+              196582631
+            ],
+            "sample_starts": [
+              243918335
+            ],
+            "source_histogram": {
+              "base28:stride32:offset27": 1
+            },
+            "status": "contradiction",
+            "train_class_histogram": {
+              "mixed": 1
+            }
+          },
+          {
+            "actual_class_histogram": {
+              "mixed": 1
+            },
+            "count": 1,
+            "depth": 8,
+            "predicted_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "residue": "63/256 (00111111)",
+            "sample_endpoints": [
+              208347967
+            ],
+            "sample_starts": [
+              233902527
+            ],
+            "source_histogram": {
+              "base28:stride32:offset27": 1
+            },
+            "status": "contradiction",
+            "train_class_histogram": {
+              "short-high-deficit": 10
+            }
+          }
+        ],
+        "contradiction_records": 2,
+        "mean_prediction_depth": 2.727272727,
+        "novel_branch_buckets": [],
+        "novel_branch_records": 0,
+        "predicted_records": 121,
+        "prediction_coverage_fraction": 1.0,
+        "record_count": 121,
+        "status_histogram": {
+          "agreement": 119,
+          "contradiction": 2
+        },
+        "unresolved_train_leaf_buckets": [],
+        "unresolved_train_leaf_records": 0
+      },
+      "sample_offset": 27,
+      "selection": {
+        "candidate_starts": 110143,
+        "nonterminal_next": 0,
+        "records_analyzed": 121,
+        "skipped_terminal_initial": 110022,
+        "source": "base28:stride32:offset27",
+        "uncertified_initial": 0
+      }
+    },
+    {
+      "post_update_tree_curve": {
+        "leaf_count": 119,
+        "max_leaf_depth": 21,
+        "node_count": 278,
+        "offset_added": 28,
+        "p90_leaf_depth": 7,
+        "p99_leaf_depth": 13,
+        "pure_leaf_count": 119,
+        "record_count": 4069,
+        "unresolved_leaf_count": 0,
+        "weighted_mean_leaf_depth": 2.779061194
+      },
+      "pre_update_evaluation": {
+        "accuracy_on_predicted": 0.9921875,
+        "agreement_records": 127,
+        "contradiction_buckets": [
+          {
+            "actual_class_histogram": {
+              "mixed": 1
+            },
+            "count": 1,
+            "depth": 9,
+            "predicted_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "residue": "283/512 (100011011)",
+            "sample_endpoints": [
+              183747355
+            ],
+            "sample_starts": [
+              193173663
+            ],
+            "source_histogram": {
+              "base28:stride32:offset28": 1
+            },
+            "status": "contradiction",
+            "train_class_histogram": {
+              "short-high-deficit": 8
+            }
+          }
+        ],
+        "contradiction_records": 1,
+        "mean_prediction_depth": 2.59375,
+        "novel_branch_buckets": [
+          {
+            "actual_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "count": 1,
+            "depth": 11,
+            "predicted_class_histogram": {
+              "none": 1
+            },
+            "residue": "231/2048 (00011100111)",
+            "sample_endpoints": [
+              31559911
+            ],
+            "sample_starts": [
+              44238591
+            ],
+            "source_histogram": {
+              "base28:stride32:offset28": 1
+            },
+            "status": "novel-branch",
+            "train_class_histogram": {
+              "mixed": 1,
+              "short-high-deficit": 1
+            }
+          }
+        ],
+        "novel_branch_records": 1,
+        "predicted_records": 128,
+        "prediction_coverage_fraction": 0.992248062,
+        "record_count": 129,
+        "status_histogram": {
+          "agreement": 127,
+          "contradiction": 1,
+          "novel-branch": 1
+        },
+        "unresolved_train_leaf_buckets": [],
+        "unresolved_train_leaf_records": 0
+      },
+      "sample_offset": 28,
+      "selection": {
+        "candidate_starts": 110143,
+        "nonterminal_next": 0,
+        "records_analyzed": 129,
+        "skipped_terminal_initial": 110014,
+        "source": "base28:stride32:offset28",
+        "uncertified_initial": 0
+      }
+    },
+    {
+      "post_update_tree_curve": {
+        "leaf_count": 120,
+        "max_leaf_depth": 21,
+        "node_count": 279,
+        "offset_added": 29,
+        "p90_leaf_depth": 7,
+        "p99_leaf_depth": 13,
+        "pure_leaf_count": 120,
+        "record_count": 4212,
+        "unresolved_leaf_count": 0,
+        "weighted_mean_leaf_depth": 2.779677113
+      },
+      "pre_update_evaluation": {
+        "accuracy_on_predicted": 1.0,
+        "agreement_records": 142,
+        "contradiction_buckets": [],
+        "contradiction_records": 0,
+        "mean_prediction_depth": 2.73943662,
+        "novel_branch_buckets": [
+          {
+            "actual_class_histogram": {
+              "mixed": 1
+            },
+            "count": 1,
+            "depth": 11,
+            "predicted_class_histogram": {
+              "none": 1
+            },
+            "residue": "479/2048 (00111011111)",
+            "sample_endpoints": [
+              96436703
+            ],
+            "sample_starts": [
+              115371879
+            ],
+            "source_histogram": {
+              "base28:stride32:offset29": 1
+            },
+            "status": "novel-branch",
+            "train_class_histogram": {
+              "mixed": 2,
+              "short-high-deficit": 1
+            }
+          }
+        ],
+        "novel_branch_records": 1,
+        "predicted_records": 142,
+        "prediction_coverage_fraction": 0.993006993,
+        "record_count": 143,
+        "status_histogram": {
+          "agreement": 142,
+          "novel-branch": 1
+        },
+        "unresolved_train_leaf_buckets": [],
+        "unresolved_train_leaf_records": 0
+      },
+      "sample_offset": 29,
+      "selection": {
+        "candidate_starts": 110143,
+        "nonterminal_next": 0,
+        "records_analyzed": 143,
+        "skipped_terminal_initial": 110000,
+        "source": "base28:stride32:offset29",
+        "uncertified_initial": 0
+      }
+    },
+    {
+      "post_update_tree_curve": {
+        "leaf_count": 125,
+        "max_leaf_depth": 21,
+        "node_count": 293,
+        "offset_added": 30,
+        "p90_leaf_depth": 7,
+        "p99_leaf_depth": 13,
+        "pure_leaf_count": 125,
+        "record_count": 4361,
+        "unresolved_leaf_count": 0,
+        "weighted_mean_leaf_depth": 2.78766338
+      },
+      "pre_update_evaluation": {
+        "accuracy_on_predicted": 0.979865772,
+        "agreement_records": 146,
+        "contradiction_buckets": [
+          {
+            "actual_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "count": 1,
+            "depth": 10,
+            "predicted_class_histogram": {
+              "mixed": 1
+            },
+            "residue": "543/1024 (1000011111)",
+            "sample_endpoints": [
+              39439903
+            ],
+            "sample_starts": [
+              43093439
+            ],
+            "source_histogram": {
+              "base28:stride32:offset30": 1
+            },
+            "status": "contradiction",
+            "train_class_histogram": {
+              "mixed": 4
+            }
+          },
+          {
+            "actual_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "count": 1,
+            "depth": 10,
+            "predicted_class_histogram": {
+              "mixed": 1
+            },
+            "residue": "383/1024 (0101111111)",
+            "sample_endpoints": [
+              157310335
+            ],
+            "sample_starts": [
+              183165887
+            ],
+            "source_histogram": {
+              "base28:stride32:offset30": 1
+            },
+            "status": "contradiction",
+            "train_class_histogram": {
+              "mixed": 2
+            }
+          },
+          {
+            "actual_class_histogram": {
+              "mixed": 1
+            },
+            "count": 1,
+            "depth": 7,
+            "predicted_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "residue": "39/128 (0100111)",
+            "sample_endpoints": [
+              82728103
+            ],
+            "sample_starts": [
+              85801471
+            ],
+            "source_histogram": {
+              "base28:stride32:offset30": 1
+            },
+            "status": "contradiction",
+            "train_class_histogram": {
+              "short-high-deficit": 29
+            }
+          }
+        ],
+        "contradiction_records": 3,
+        "mean_prediction_depth": 2.510067114,
+        "novel_branch_buckets": [],
+        "novel_branch_records": 0,
+        "predicted_records": 149,
+        "prediction_coverage_fraction": 1.0,
+        "record_count": 149,
+        "status_histogram": {
+          "agreement": 146,
+          "contradiction": 3
+        },
+        "unresolved_train_leaf_buckets": [],
+        "unresolved_train_leaf_records": 0
+      },
+      "sample_offset": 30,
+      "selection": {
+        "candidate_starts": 110143,
+        "nonterminal_next": 0,
+        "records_analyzed": 149,
+        "skipped_terminal_initial": 109994,
+        "source": "base28:stride32:offset30",
+        "uncertified_initial": 0
+      }
+    },
+    {
+      "post_update_tree_curve": {
+        "leaf_count": 126,
+        "max_leaf_depth": 21,
+        "node_count": 294,
+        "offset_added": 31,
+        "p90_leaf_depth": 7,
+        "p99_leaf_depth": 13,
+        "pure_leaf_count": 126,
+        "record_count": 4502,
+        "unresolved_leaf_count": 0,
+        "weighted_mean_leaf_depth": 2.789649045
+      },
+      "pre_update_evaluation": {
+        "accuracy_on_predicted": 1.0,
+        "agreement_records": 140,
+        "contradiction_buckets": [],
+        "contradiction_records": 0,
+        "mean_prediction_depth": 2.785714286,
+        "novel_branch_buckets": [
+          {
+            "actual_class_histogram": {
+              "short-high-deficit": 1
+            },
+            "count": 1,
+            "depth": 12,
+            "predicted_class_histogram": {
+              "none": 1
+            },
+            "residue": "239/4096 (000011101111)",
+            "sample_endpoints": [
+              184340719
+            ],
+            "sample_starts": [
+              186465951
+            ],
+            "source_histogram": {
+              "base28:stride32:offset31": 1
+            },
+            "status": "novel-branch",
+            "train_class_histogram": {
+              "mixed": 1,
+              "short-high-deficit": 1
+            }
+          }
+        ],
+        "novel_branch_records": 1,
+        "predicted_records": 140,
+        "prediction_coverage_fraction": 0.992907801,
+        "record_count": 141,
+        "status_histogram": {
+          "agreement": 140,
+          "novel-branch": 1
+        },
+        "unresolved_train_leaf_buckets": [],
+        "unresolved_train_leaf_records": 0
+      },
+      "sample_offset": 31,
+      "selection": {
+        "candidate_starts": 110143,
+        "nonterminal_next": 0,
+        "records_analyzed": 141,
+        "skipped_terminal_initial": 110002,
+        "source": "base28:stride32:offset31",
+        "uncertified_initial": 0
+      }
+    }
+  ],
+  "sweep_total_evaluation_against_seed_tree": {
+    "accuracy_on_predicted": 0.987262802,
+    "agreement_records": 3798,
+    "contradiction_buckets": [
+      {
+        "actual_class_histogram": {
+          "mixed": 10
+        },
+        "count": 10,
+        "depth": 6,
+        "predicted_class_histogram": {
+          "short-high-deficit": 10
+        },
+        "residue": "47/64 (101111)",
+        "sample_endpoints": [
+          182325295,
+          132251759,
+          246757423,
+          205245743,
+          156641135
+        ],
+        "sample_starts": [
+          184427291,
+          228350399,
+          262955455,
+          224258815,
+          197422719
+        ],
+        "source_histogram": {
+          "base28:stride32:offset10": 1,
+          "base28:stride32:offset14": 1,
+          "base28:stride32:offset17": 1,
+          "base28:stride32:offset19": 1,
+          "base28:stride32:offset25": 1,
+          "base28:stride32:offset26": 1,
+          "base28:stride32:offset3": 1,
+          "base28:stride32:offset4": 2,
+          "base28:stride32:offset5": 1
+        },
+        "status": "contradiction",
+        "train_class_histogram": {
+          "short-high-deficit": 120
+        }
+      },
+      {
+        "actual_class_histogram": {
+          "mixed": 10
+        },
+        "count": 10,
+        "depth": 3,
+        "predicted_class_histogram": {
+          "short-high-deficit": 10
+        },
+        "residue": "3/8 (011)",
+        "sample_endpoints": [
+          64635931,
+          85623035,
+          183419035,
+          85623035,
+          142820507
+        ],
+        "sample_starts": [
+          71587055,
+          168588751,
+          257104667,
+          126441563,
+          194843463
+        ],
+        "source_histogram": {
+          "base28:stride32:offset1": 1,
+          "base28:stride32:offset11": 1,
+          "base28:stride32:offset20": 1,
+          "base28:stride32:offset26": 1,
+          "base28:stride32:offset28": 2,
+          "base28:stride32:offset31": 2,
+          "base28:stride32:offset6": 2
+        },
+        "status": "contradiction",
+        "train_class_histogram": {
+          "short-high-deficit": 580
+        }
+      },
+      {
+        "actual_class_histogram": {
+          "mixed": 7
+        },
+        "count": 7,
+        "depth": 8,
+        "predicted_class_histogram": {
+          "short-high-deficit": 7
+        },
+        "residue": "255/256 (11111111)",
+        "sample_endpoints": [
+          94553087,
+          94553087,
+          94553087,
+          145485055,
+          137649919
+        ],
+        "sample_starts": [
+          161061183,
+          113118415,
+          120795887,
+          241696383,
+          175854063
+        ],
+        "source_histogram": {
+          "base28:stride32:offset10": 1,
+          "base28:stride32:offset11": 1,
+          "base28:stride32:offset12": 1,
+          "base28:stride32:offset2": 1,
+          "base28:stride32:offset20": 1,
+          "base28:stride32:offset28": 1,
+          "base28:stride32:offset7": 1
+        },
+        "status": "contradiction",
+        "train_class_histogram": {
+          "short-high-deficit": 21
+        }
+      },
+      {
+        "actual_class_histogram": {
+          "mixed": 7
+        },
+        "count": 7,
+        "depth": 4,
+        "predicted_class_histogram": {
+          "short-high-deficit": 7
+        },
+        "residue": "7/16 (0111)",
+        "sample_endpoints": [
+          174610535,
+          48524519,
+          94317895,
+          174610535,
+          237765703
+        ],
+        "sample_starts": [
+          188217791,
+          58173567,
+          117273599,
+          198287055,
+          246598759
+        ],
+        "source_histogram": {
+          "base28:stride32:offset18": 1,
+          "base28:stride32:offset21": 1,
+          "base28:stride32:offset22": 1,
+          "base28:stride32:offset28": 1,
+          "base28:stride32:offset3": 1,
+          "base28:stride32:offset30": 1,
+          "base28:stride32:offset7": 1
+        },
+        "status": "contradiction",
+        "train_class_histogram": {
+          "short-high-deficit": 238
+        }
+      },
+      {
+        "actual_class_histogram": {
+          "short-high-deficit": 4
+        },
+        "count": 4,
+        "depth": 10,
+        "predicted_class_histogram": {
+          "mixed": 4
+        },
+        "residue": "463/1024 (0111001111)",
+        "sample_endpoints": [
+          42516943,
+          83660239,
+          83660239,
+          150335951
+        ],
+        "sample_starts": [
+          50971391,
+          98739647,
+          87768575,
+          213606047
+        ],
+        "source_histogram": {
+          "base28:stride32:offset21": 1,
+          "base28:stride32:offset29": 1,
+          "base28:stride32:offset3": 1,
+          "base28:stride32:offset9": 1
+        },
+        "status": "contradiction",
+        "train_class_histogram": {
+          "mixed": 8
+        }
+      },
+      {
+        "actual_class_histogram": {
+          "mixed": 4
+        },
+        "count": 4,
+        "depth": 9,
+        "predicted_class_histogram": {
+          "short-high-deficit": 4
+        },
+        "residue": "159/512 (010011111)",
+        "sample_endpoints": [
+          131780767,
+          137132191,
+          218346143,
+          18778271
+        ],
+        "sample_starts": [
+          143388287,
+          153951903,
+          226457759,
+          33313951
+        ],
+        "source_histogram": {
+          "base28:stride32:offset11": 1,
+          "base28:stride32:offset14": 1,
+          "base28:stride32:offset5": 1,
+          "base28:stride32:offset7": 1
+        },
+        "status": "contradiction",
+        "train_class_histogram": {
+          "short-high-deficit": 4
+        }
+      },
+      {
+        "actual_class_histogram": {
+          "short-high-deficit": 2
+        },
+        "count": 2,
+        "depth": 13,
+        "predicted_class_histogram": {
+          "mixed": 2
+        },
+        "residue": "2175/8192 (0100001111111)",
+        "sample_endpoints": [
+          20162687,
+          201762943
+        ],
+        "sample_starts": [
+          20395135,
+          251393727
+        ],
+        "source_histogram": {
+          "base28:stride32:offset17": 1,
+          "base28:stride32:offset25": 1
+        },
+        "status": "contradiction",
+        "train_class_histogram": {
+          "mixed": 2
+        }
+      },
+      {
+        "actual_class_histogram": {
+          "short-high-deficit": 2
+        },
+        "count": 2,
+        "depth": 10,
+        "predicted_class_histogram": {
+          "mixed": 2
+        },
+        "residue": "447/1024 (0110111111)",
+        "sample_endpoints": [
+          155048383,
+          155048383
+        ],
+        "sample_starts": [
+          195415291,
+          176072351
+        ],
+        "source_histogram": {
+          "base28:stride32:offset1": 1,
+          "base28:stride32:offset19": 1
+        },
+        "status": "contradiction",
+        "train_class_histogram": {
+          "mixed": 4
+        }
+      }
+    ],
+    "contradiction_records": 49,
+    "mean_prediction_depth": 2.111775409,
+    "novel_branch_buckets": [
+      {
+        "actual_class_histogram": {
+          "mixed": 2,
+          "short-high-deficit": 8
+        },
+        "count": 10,
+        "depth": 9,
+        "predicted_class_histogram": {
+          "none": 10
+        },
+        "residue": "383/512 (101111111)",
+        "sample_endpoints": [
+          37698431,
+          156784511,
+          80250239,
+          37698431,
+          156784511
+        ],
+        "sample_starts": [
+          70457551,
+          180472991,
+          112489471,
+          52843163,
+          175647483
+        ],
+        "source_histogram": {
+          "base28:stride32:offset11": 1,
+          "base28:stride32:offset13": 1,
+          "base28:stride32:offset18": 1,
+          "base28:stride32:offset20": 1,
+          "base28:stride32:offset22": 2,
+          "base28:stride32:offset24": 1,
+          "base28:stride32:offset27": 1,
+          "base28:stride32:offset30": 1,
+          "base28:stride32:offset7": 1
+        },
+        "status": "novel-branch",
+        "train_class_histogram": {
+          "mixed": 10,
+          "short-high-deficit": 10
+        }
+      },
+      {
+        "actual_class_histogram": {
+          "short-high-deficit": 8
+        },
+        "count": 8,
+        "depth": 9,
+        "predicted_class_histogram": {
+          "none": 8
+        },
+        "residue": "223/512 (011011111)",
+        "sample_endpoints": [
+          53621471,
+          98422495,
+          53621471,
+          88891615,
+          95550175
+        ],
+        "sample_starts": [
+          74151359,
+          110494335,
+          65912319,
+          107796223,
+          123735143
+        ],
+        "source_histogram": {
+          "base28:stride32:offset18": 1,
+          "base28:stride32:offset20": 1,
+          "base28:stride32:offset27": 1,
+          "base28:stride32:offset29": 2,
+          "base28:stride32:offset30": 1,
+          "base28:stride32:offset31": 1,
+          "base28:stride32:offset4": 1
+        },
+        "status": "novel-branch",
+        "train_class_histogram": {
+          "mixed": 8,
+          "short-high-deficit": 8
+        }
+      },
+      {
+        "actual_class_histogram": {
+          "mixed": 1,
+          "short-high-deficit": 6
+        },
+        "count": 7,
+        "depth": 9,
+        "predicted_class_histogram": {
+          "none": 7
+        },
+        "residue": "207/512 (011001111)",
+        "sample_endpoints": [
+          69455567,
+          41479375,
+          54636239,
+          215829199,
+          69455567
+        ],
+        "sample_starts": [
+          79949567,
+          44202223,
+          59822287,
+          255263983,
+          106599423
+        ],
+        "source_histogram": {
+          "base28:stride32:offset13": 1,
+          "base28:stride32:offset23": 1,
+          "base28:stride32:offset24": 1,
+          "base28:stride32:offset25": 2,
+          "base28:stride32:offset29": 1,
+          "base28:stride32:offset3": 1
+        },
+        "status": "novel-branch",
+        "train_class_histogram": {
+          "mixed": 14,
+          "short-high-deficit": 7
+        }
+      },
+      {
+        "actual_class_histogram": {
+          "short-high-deficit": 3
+        },
+        "count": 3,
+        "depth": 10,
+        "predicted_class_histogram": {
+          "none": 3
+        },
+        "residue": "639/1024 (1001111111)",
+        "sample_endpoints": [
+          74510975,
+          238402175,
+          58054271
+        ],
+        "sample_starts": [
+          80150015,
+          247258879,
+          72334783
+        ],
+        "source_histogram": {
+          "base28:stride32:offset11": 1,
+          "base28:stride32:offset18": 1,
+          "base28:stride32:offset2": 1
+        },
+        "status": "novel-branch",
+        "train_class_histogram": {
+          "mixed": 3,
+          "short-high-deficit": 3
+        }
+      },
+      {
+        "actual_class_histogram": {
+          "mixed": 1,
+          "short-high-deficit": 2
+        },
+        "count": 3,
+        "depth": 9,
+        "predicted_class_histogram": {
+          "none": 3
+        },
+        "residue": "191/512 (010111111)",
+        "sample_endpoints": [
+          146588351,
+          133121215,
+          227013823
+        ],
+        "sample_starts": [
+          246851839,
+          236166271,
+          251427519
+        ],
+        "source_histogram": {
+          "base28:stride32:offset25": 2,
+          "base28:stride32:offset7": 1
+        },
+        "status": "novel-branch",
+        "train_class_histogram": {
+          "mixed": 6,
+          "short-high-deficit": 3
+        }
+      },
+      {
+        "actual_class_histogram": {
+          "short-high-deficit": 2
+        },
+        "count": 2,
+        "depth": 11,
+        "predicted_class_histogram": {
+          "none": 2
+        },
+        "residue": "1151/2048 (10001111111)",
+        "sample_endpoints": [
+          169084031,
+          169084031
+        ],
+        "sample_starts": [
+          171033371,
+          192412543
+        ],
+        "source_histogram": {
+          "base28:stride32:offset11": 1,
+          "base28:stride32:offset25": 1
+        },
+        "status": "novel-branch",
+        "train_class_histogram": {
+          "mixed": 2,
+          "short-high-deficit": 2
+        }
+      },
+      {
+        "actual_class_histogram": {
+          "mixed": 1
+        },
+        "count": 1,
+        "depth": 11,
+        "predicted_class_histogram": {
+          "none": 1
+        },
+        "residue": "479/2048 (00111011111)",
+        "sample_endpoints": [
+          96436703
+        ],
+        "sample_starts": [
+          115371879
+        ],
+        "source_histogram": {
+          "base28:stride32:offset29": 1
+        },
+        "status": "novel-branch",
+        "train_class_histogram": {
+          "mixed": 1,
+          "short-high-deficit": 1
+        }
+      }
+    ],
+    "novel_branch_records": 34,
+    "predicted_records": 3847,
+    "prediction_coverage_fraction": 0.991239371,
+    "record_count": 3881,
+    "status_histogram": {
+      "agreement": 3798,
+      "contradiction": 49,
+      "novel-branch": 34
+    },
+    "unresolved_train_leaf_buckets": [],
+    "unresolved_train_leaf_records": 0
+  },
+  "target_frontier": {
+    "base_depth": 28,
+    "certified_fraction": 0.9868698939681053,
+    "certified_leaf_count": 502524,
+    "certified_units_mod_2^base_depth": 264910870,
+    "elapsed_seconds": 9.747358,
+    "frontier_count": 3524586,
+    "frontier_fraction": 0.013130106031894684,
+    "frontier_odd_count_histogram": {
+      "18": 663535,
+      "19": 1236935,
+      "20": 898798,
+      "21": 464889,
+      "22": 185684,
+      "23": 57923,
+      "24": 13953,
+      "25": 2520,
+      "26": 322,
+      "27": 26,
+      "28": 1
+    },
+    "max_frontier": null,
+    "sample_offset": "partitioned",
+    "sample_stride": 32,
+    "selected_count": 3524586
+  }
+}

@@ -1,0 +1,6 @@
+na= 4
+nb= 25
+nab= 3364
+na*nb= 100
+equal? False
+diff= 3264

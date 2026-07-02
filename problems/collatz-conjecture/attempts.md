@@ -6,12 +6,12 @@ _Notable attempts, near-misses, retracted proofs._
 
 - **Terras (1976) / Everett (1977).** The first real theorems: almost all $n$ have finite stopping time. These remain the template for every "density" attack and fall short only in that "almost all" cannot be promoted to "all."
 - **Krasikov inequalities (1989) and Krasikov–Lagarias (2003).** Nonlinear programming on the difference inequalities of the iteration yields $\#\{n \le x : n \to 1\} \gg x^{0.84}$. A genuine unconditional lower bound on the convergent set, but $0.84 < 1$ leaves a positive-exponent gap to full density.
-- **Steiner (1977); Simons (2005); Simons–de Weger (2005).** Exclusion of $1$-cycles and, more generally, $m$-cycles for $m \le 68$, combining transcendence theory with computation. A near-miss on the cycle half of the problem — but only for bounded cycle complexity.
+- **Steiner (1977); Simons (2005); Simons–de Weger (2005); Hercher (2023).** Exclusion of $1$-cycles and, more generally, $m$-cycles — $m \le 75$ by Simons–de Weger (*Acta Arith.* **117** (2005), DOI 10.4064/aa117-1-3), extended to $m \le 91$ by Hercher (arXiv:2201.00406, *J. Integer Seq.* **26**) — combining transcendence theory with computation. A near-miss on the cycle half of the problem — but only for bounded cycle complexity.
 - **Tao (2019).** "Almost all Collatz orbits attain almost bounded values." Widely regarded as the closest anyone has come. It proves $\min_k T^k(n) < f(n)$ for almost all $n$ and any $f \to \infty$. Tao himself emphasized that the result, while strong, "falls well short" of the conjecture because logarithmic density misses a thin exceptional set and "almost bounded" is not "bounded."
 
 ## Computational verification
 
-Tomás Oliveira e Silva's long-running distributed search, continued by **David Bařina (2020)**, has verified convergence for all $n \le 2^{68}$. This is not a proof but provides the empirical floor under cycle-exclusion bounds and rules out any small counterexample. No counterexample has ever been found.
+Tomás Oliveira e Silva's long-running distributed search, continued and substantially extended by **David Bařina**, has verified convergence for all $n < 2^{71}$ as of the 2025 Journal of Supercomputing result. This is not a proof but provides the empirical floor under cycle-exclusion bounds and rules out any small counterexample. No counterexample has ever been found.
 
 ## Disputed and retracted claimed proofs
 

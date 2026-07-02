@@ -32,4 +32,6 @@ Several equivalent or closely related framings sharpened the problem over time. 
 - **2011** — Cycle-exclusion bounds (Shalom Eliahou's $3 \cdot 10^{8}$-style estimates and successors) push the minimal length of any nontrivial cycle into the hundreds of millions.
 - **2019** — Terence Tao proves that **almost all** Collatz orbits (in a strong logarithmic-density sense) attain **almost bounded** values, the strongest unconditional progress to date.
 - **2020** — Distributed verification (David Bařina, continuing the Oliveira e Silva project) confirms convergence for all $n \le 2^{68} \approx 2.95 \times 10^{20}$.
+- **2023** — Christian Hercher proves there are no Collatz $m$-cycles with $m \le 91$ (*J. Integer Seq.* **26**, art. 23.3.5; arXiv:2201.00406), sharply extending the Simons–de Weger bounds.
+- **2025** — Bařina's continued GPU verification reaches all $n < 2^{71} \approx 2.36 \times 10^{21}$ (*J. Supercomput.* **81**, 810); combined with Hercher's threshold this forces any nontrivial cycle to contain at least $1.375 \times 10^{11}$ odd terms.
 - **2020s** — Active work on the cycle problem, $2$-adic and ergodic models, and undecidability connections; the conjecture remains open.

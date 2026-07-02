@@ -1,0 +1,146 @@
+{
+  "all_sign_rules_hold": true,
+  "cycles": [
+    {
+      "elements": [
+        1,
+        2
+      ],
+      "eps": 1,
+      "length_shortcut": 2,
+      "min_element": 1,
+      "odd_steps": 1,
+      "per_period_margin_bits": -0.415037,
+      "q": 3,
+      "q^o_vs_2^d": "below",
+      "sign_rule_expected_side": "below",
+      "sign_rule_holds": true,
+      "word": "10"
+    },
+    {
+      "elements": [
+        1
+      ],
+      "eps": -1,
+      "length_shortcut": 1,
+      "min_element": 1,
+      "odd_steps": 1,
+      "per_period_margin_bits": 0.584963,
+      "q": 3,
+      "q^o_vs_2^d": "above",
+      "sign_rule_expected_side": "above",
+      "sign_rule_holds": true,
+      "word": "1"
+    },
+    {
+      "elements": [
+        5,
+        7,
+        10
+      ],
+      "eps": -1,
+      "length_shortcut": 3,
+      "min_element": 5,
+      "odd_steps": 2,
+      "per_period_margin_bits": 0.169925,
+      "q": 3,
+      "q^o_vs_2^d": "above",
+      "sign_rule_expected_side": "above",
+      "sign_rule_holds": true,
+      "word": "110"
+    },
+    {
+      "elements": [
+        17,
+        25,
+        37,
+        55,
+        82,
+        41,
+        61,
+        91,
+        136,
+        68,
+        34
+      ],
+      "eps": -1,
+      "length_shortcut": 11,
+      "min_element": 17,
+      "odd_steps": 7,
+      "per_period_margin_bits": 0.094738,
+      "q": 3,
+      "q^o_vs_2^d": "above",
+      "sign_rule_expected_side": "above",
+      "sign_rule_holds": true,
+      "word": "11110111000"
+    },
+    {
+      "elements": [
+        1,
+        3,
+        8,
+        4,
+        2
+      ],
+      "eps": 1,
+      "length_shortcut": 5,
+      "min_element": 1,
+      "odd_steps": 2,
+      "per_period_margin_bits": -0.356144,
+      "q": 5,
+      "q^o_vs_2^d": "below",
+      "sign_rule_expected_side": "below",
+      "sign_rule_holds": true,
+      "word": "11000"
+    },
+    {
+      "elements": [
+        13,
+        33,
+        83,
+        208,
+        104,
+        52,
+        26
+      ],
+      "eps": 1,
+      "length_shortcut": 7,
+      "min_element": 13,
+      "odd_steps": 3,
+      "per_period_margin_bits": -0.034216,
+      "q": 5,
+      "q^o_vs_2^d": "below",
+      "sign_rule_expected_side": "below",
+      "sign_rule_holds": true,
+      "word": "1110000"
+    },
+    {
+      "elements": [
+        17,
+        43,
+        108,
+        54,
+        27,
+        68,
+        34
+      ],
+      "eps": 1,
+      "length_shortcut": 7,
+      "min_element": 17,
+      "odd_steps": 3,
+      "per_period_margin_bits": -0.034216,
+      "q": 5,
+      "q^o_vs_2^d": "below",
+      "sign_rule_expected_side": "below",
+      "sign_rule_holds": true,
+      "word": "1100100"
+    }
+  ],
+  "mode": "dichotomy",
+  "notable_margins": {
+    "3n-1_cycle_17": "d=11,o=7: 2187 vs 2048, +0.094 bits ABOVE the line (razor thin)",
+    "5n+1_cycle_13": "d=7,o=3: 125 vs 128, -0.035 bits below the line (razor thin)",
+    "collatz_trivial_1": "d=2,o=1: 4 vs 3, +0.415 bits below the line"
+  },
+  "theorem": "For a positive-integer cycle of T_{q,eps} with o odd steps in d total steps: x (2^d - q^o) = c_d and sign(c_d) = eps, hence eps=+1 forces q^o < 2^d (cycle below the critical line) and eps=-1 forces q^o > 2^d (cycle above the line, inside the survivor set)."
+}

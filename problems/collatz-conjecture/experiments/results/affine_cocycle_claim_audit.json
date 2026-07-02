@@ -1,0 +1,229 @@
+{
+  "T1": {
+    "checked_high_align_odd_steps": 633444,
+    "detector_fired": 633444,
+    "fire_fraction": 1.0,
+    "post_always_equals_pre_minus_1": true,
+    "counterexample": null,
+    "verdict": "TAUTOLOGY: detector fires on 100% of high-alignment odd steps by the identity v+1 = 2^A*k (k odd) => T(v)+1 = 3*2^(A-1)*k, for every integer of either sign"
+  },
+  "T1b": {
+    "count_of_A_ge_3_odd_steps": {
+      "27": 14,
+      "703": 22
+    },
+    "sketch_reported": {
+      "27": 14,
+      "703": 22
+    }
+  },
+  "T2": {
+    "minus17": {
+      "start": -17,
+      "cycle_found": true,
+      "period_d": 11,
+      "period_o": 7,
+      "odd_density": 0.6363636363636364,
+      "supercritical": true,
+      "max_alignment": 4,
+      "detector_events_per_period": 3,
+      "cycle_members": [
+        -17,
+        -25,
+        -37,
+        -55,
+        -82,
+        -41,
+        -61,
+        -91,
+        -136,
+        -68,
+        -34
+      ]
+    },
+    "minus5": {
+      "start": -5,
+      "cycle_found": true,
+      "period_d": 3,
+      "period_o": 2,
+      "odd_density": 0.6666666666666666,
+      "supercritical": true,
+      "max_alignment": 2,
+      "detector_events_per_period": 0,
+      "cycle_members": [
+        -5,
+        -7,
+        -10
+      ]
+    },
+    "positive_spine": [
+      {
+        "k": 20,
+        "start": "2^20-5",
+        "detector_silent_supercritical_prefix_steps": 18
+      },
+      {
+        "k": 40,
+        "start": "2^40-5",
+        "detector_silent_supercritical_prefix_steps": 52
+      },
+      {
+        "k": 60,
+        "start": "2^60-5",
+        "detector_silent_supercritical_prefix_steps": 62
+      },
+      {
+        "k": 100,
+        "start": "2^100-5",
+        "detector_silent_supercritical_prefix_steps": 109
+      },
+      {
+        "k": 200,
+        "start": "2^200-5",
+        "detector_silent_supercritical_prefix_steps": 198
+      }
+    ]
+  },
+  "T3": {
+    "collatz": [
+      {
+        "start": 27,
+        "map": "(3n+1)/2",
+        "steps": 70,
+        "orbit_grew_to_over_start": 170.96296296296296,
+        "strict_decrease_rate": 0.6231884057971014,
+        "rate_d_le_60": 0.559322033898305,
+        "rate_d_gt_60": 1.0
+      },
+      {
+        "start": 703,
+        "map": "(3n+1)/2",
+        "steps": 108,
+        "orbit_grew_to_over_start": 178.1678520625889,
+        "strict_decrease_rate": 0.7850467289719626,
+        "rate_d_le_60": 0.6101694915254238,
+        "rate_d_gt_60": 1.0
+      },
+      {
+        "start": 63728127,
+        "map": "(3n+1)/2",
+        "steps": 592,
+        "orbit_grew_to_over_start": 7583.904321085727,
+        "strict_decrease_rate": 0.9661590524534687,
+        "rate_d_le_60": 0.6610169491525424,
+        "rate_d_gt_60": 1.0
+      },
+      {
+        "start": 2358909599867980429759,
+        "map": "(3n+1)/2",
+        "steps": 1027,
+        "orbit_grew_to_over_start": 2.0946740846757587e+20,
+        "strict_decrease_rate": 0.9834307992202729,
+        "rate_d_le_60": 0.711864406779661,
+        "rate_d_gt_60": 1.0
+      }
+    ],
+    "five_n_plus_1": [
+      {
+        "start": 7,
+        "map": "(5n+1)/2",
+        "steps": 1500,
+        "orbit_grew_to_over_start": 2.440897449928519e+73,
+        "strict_decrease_rate": 0.9819879919946631,
+        "rate_d_le_60": 0.5423728813559322,
+        "rate_d_gt_60": 1.0
+      },
+      {
+        "start": 13,
+        "map": "(5n+1)/2",
+        "steps": 1500,
+        "orbit_grew_to_over_start": 16.0,
+        "strict_decrease_rate": 0.9819879919946631,
+        "rate_d_le_60": 0.5423728813559322,
+        "rate_d_gt_60": 1.0
+      },
+      {
+        "start": 33,
+        "map": "(5n+1)/2",
+        "steps": 1500,
+        "orbit_grew_to_over_start": 6.303030303030303,
+        "strict_decrease_rate": 0.9833222148098733,
+        "rate_d_le_60": 0.576271186440678,
+        "rate_d_gt_60": 1.0
+      }
+    ],
+    "three_n_minus_1_cycle": [
+      {
+        "start": 5,
+        "map": "(3n-1)/2",
+        "steps": 3000,
+        "orbit_grew_to_over_start": 2.0,
+        "strict_decrease_rate": 0.9923307769256419,
+        "rate_d_le_60": 0.6101694915254238,
+        "rate_d_gt_60": 1.0
+      }
+    ]
+  },
+  "T4": [
+    {
+      "start": 27,
+      "affine_invariant_holds_for_c_exact": true,
+      "comparison": [
+        {
+          "d": 10,
+          "c_exact": 9221,
+          "c_analyzer": 3280,
+          "ratio": 2.8112804878048783,
+          "exact_D": 9.0048828125,
+          "analyzer_D": 3.203125
+        },
+        {
+          "d": 20,
+          "c_exact": 26767031,
+          "c_analyzer": 7174453,
+          "ratio": 3.730881085986625,
+          "exact_D": 25.527029991149902,
+          "analyzer_D": 6.8420915603637695
+        },
+        {
+          "d": 40,
+          "c_exact": 150289996956031,
+          "c_analyzer": 34315188682441,
+          "ratio": 4.379693154155205,
+          "exact_D": 136.6879559609797,
+          "analyzer_D": 31.20948229701844
+        }
+      ]
+    },
+    {
+      "start": 703,
+      "affine_invariant_holds_for_c_exact": true,
+      "comparison": [
+        {
+          "d": 10,
+          "c_exact": 6881,
+          "c_analyzer": 3280,
+          "ratio": 2.0978658536585364,
+          "exact_D": 6.7197265625,
+          "analyzer_D": 3.203125
+        },
+        {
+          "d": 20,
+          "c_exact": 52487297,
+          "c_analyzer": 21523360,
+          "ratio": 2.438620038878688,
+          "exact_D": 50.055787086486816,
+          "analyzer_D": 20.526275634765625
+        },
+        {
+          "d": 40,
+          "c_exact": 111565125331283,
+          "c_analyzer": 34315188682441,
+          "ratio": 3.2511878737933504,
+          "exact_D": 101.4678903914346,
+          "analyzer_D": 31.20948229701844
+        }
+      ]
+    }
+  ]
+}
