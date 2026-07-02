@@ -54,6 +54,9 @@ jobs:
           pip install pytest
           python -m pytest -q
 
+      - name: Pseudo-proof gate (no unhedged proof-claim files)
+        run: python scripts/proof_claim_sweep.py
+
   lint:
     name: Lint (ruff, non-blocking)
     runs-on: ubuntu-latest
