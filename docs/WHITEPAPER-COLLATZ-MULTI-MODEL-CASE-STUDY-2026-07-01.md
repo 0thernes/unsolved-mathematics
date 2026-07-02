@@ -47,22 +47,22 @@ Corrections made and source-verified during the session: Simons–de Weger's bou
 
 **Theorem 3.1 (cylinder affine law).** *For $n=2^dq+r$ with $0\le r<2^d$, writing $o$ for the odd steps taken by $r$'s parity word,*
 $$T^d(2^dq+r)=3^oq+T^d(r), \qquad\text{equivalently}\qquad T^d(x)=\frac{3^o x + c(w)}{2^d},\ \ c(w)\in\mathbb{Z}_{\ge0},$$
-*where $c$ accumulates as $c\mapsto 3c+2^i$ at each odd step $i$.*
+*where $c$ accumulates as $c\mapsto 3c+2^i$ at each odd step $i$ (steps indexed from $i=0$).*
 
 *Proof.* Induction on $d$. For even $r$: $T(2^dq+r)=2^{d-1}q+r/2$. For odd $r$: $T(2^dq+r)=\big(3(2^dq+r)+1\big)/2=3\cdot2^{d-1}q+(3r+1)/2$; the $q$-coefficient gains a factor 3 exactly at odd steps, and the constant transforms as stated. Both forms agree with $c(w)=2^dT^d(r)-3^o r$. $\square$
 
 Session verification: from-scratch reimplementation, 14,322 exhaustive checks over all residues at $k\le 10$ plus randomized large-parameter checks — zero failures (audit register, claim 9).
 
 **Lemma 3.2 (parity-word bijection; Terras [7]).** *$r\mapsto w(r)$ is a bijection $\mathbb{Z}/2^d \to \{0,1\}^d$.*
-*Proof.* If $r\ne r'$ share a word, let $2^v\Vert r-r'$, $v<d$. On shared parities the difference maps as $\delta\mapsto 3^{\varepsilon}\delta/2$, dropping $v_2$ by exactly one per step ($3$ odd); after $v$ steps the difference is odd, forcing distinct parities at step $v{+}1\le d$ — contradiction. Injectivity between equal finite cardinalities gives bijectivity. $\square$
+*Proof.* If $r\ne r'$ share a word, let $2^v\Vert r-r'$, $v<d$. On shared parities the difference maps as $\delta\mapsto 3^{\varepsilon}\delta/2$, dropping $v_2$ by exactly one per step ($3$ odd); after $v$ common transitions the two current values differ by an odd integer, so their next observed parities differ; since $v<d$, this contradicts agreement of the length-$d$ word. Injectivity between equal finite cardinalities gives bijectivity. $\square$
 
-**Theorem 3.3 (descent certificates).** *If $3^o<2^d$, then all $n=2^dq+r$ with $q\ge q_0:=\max\!\big(0,\lfloor (T^d(r)-r)/(2^d-3^o)\rfloor+1\big)$ satisfy $T^d(n)<n$.* (Immediate from Thm 3.1.) *Moreover "every $n>1$ admits a usable certificate" is **equivalent to the full conjecture**: the minimal element of a nontrivial cycle never descends below itself, and strong induction converts universal descent into universal convergence; conversely convergence yields certificates by riding the terminal $1\to2\to1$ cycle until $3^{o_0+m}<2^{d_0+2m}$.*
+**Theorem 3.3 (descent certificates).** *If $3^o<2^d$, then all $n=2^dq+r$ with $q\ge q_0:=\max\!\big(0,\lfloor (T^d(r)-r)/(2^d-3^o)\rfloor+1\big)$ satisfy $T^d(n)<n$.* (Immediate from Thm 3.1.) *Call a depth-$d$ certificate **usable** for a specific $n=2^dq+r$ when $3^o<2^d$ and $q\ge q_0$ — equivalently, when $T^d(n)<n$ holds through the certificate's own inequality. Moreover "every $n>1$ admits a usable certificate" is **equivalent to the full conjecture**: the minimal element of a nontrivial cycle never descends below itself, and strong induction converts universal descent into universal convergence; conversely convergence yields certificates by riding the terminal $1\to2\to1$ cycle until $3^{o_0+m}<2^{d_0+2m}$.*
 
-**Theorem 3.4 (no finite 2-adic cover).** *The all-ones word survives every depth ($3^d\ge 2^d$); its nested cylinders $\{n\equiv-1 \bmod 2^d\}$ intersect in the fixed point $T(-1)=-1\in\mathbb{Z}_2$. Hence no finite certificate family covers $\mathbb{Z}_2$, and any proof via certificates must separate $\mathbb{Z}_{>0}$ from the surviving 2-adic boundary.*
+**Theorem 3.4 (no finite 2-adic cover).** *The all-ones word survives every depth ($3^d\ge 2^d$); its nested cylinders $\{n\equiv-1 \bmod 2^d\}$ intersect in the fixed point $T(-1)=-1\in\mathbb{Z}_2$. Hence no finite family of subcritical (descent-certificate) cylinders covers $\mathbb{Z}_2$ — arbitrary cylinders trivially can — and any proof via such certificates must separate $\mathbb{Z}_{>0}$ from the surviving 2-adic boundary.*
 
 ## 4. Structural mathematics II: the spine ladder (the session's lemma)
 
-**Lemma 4.1 (Spine Ladder).** *For a word $w$ of length $d$ with $o$ ones, $\rho_w:=c(w)/(2^d-3^o)$ has odd denominator (hence $\rho_w\in\mathbb{Z}_2$), lies in its own cylinder, and for every $x\equiv r_w \bmod 2^d$ (either sign, integer or 2-adic):*
+**Lemma 4.1 (Spine Ladder).** *For a word $w$ of length $d\ge 1$ with $o$ ones, $\rho_w:=c(w)/(2^d-3^o)$ has odd denominator (hence $\rho_w\in\mathbb{Z}_2$), lies in its own cylinder, and for every $x\equiv r_w \bmod 2^d$ (either sign, integer or 2-adic):*
 $$T^d(x)-\rho_w=\frac{3^o}{2^d}\,(x-\rho_w).$$
 *Consequently* **(L1)** $v_2(T^d(x)-\rho_w)=v_2(x-\rho_w)-d$ *(alignment burns exactly one bit per step), and* **(L2)** *in real absolute value, supercritical spines repel: $|T^d(x)-\rho_w|=(3^o/2^d)\,|x-\rho_w|$ with ratio $>1$.*
 
@@ -70,7 +70,7 @@ $$T^d(x)-\rho_w=\frac{3^o}{2^d}\,(x-\rho_w).$$
 
 **Corollary 4.2 (positivity localization — proved, not sampled).** *Every supercritical spine satisfies $\rho_w\le-1$. Hence no positive rational is a supercritical periodic point, and each individual visit by a positive integer to a supercritical cylinder is finite with the exact bookkeeping (L1)–(L2).* **Precision:** this rules out positive *periodic* residents only; it does not by itself bound how often a hypothetical divergent orbit could re-enter supercritical corridors — that recurrence question is exactly the open regeneration problem below.
 
-*Proof.* $c(w)>0$ and $2^d-3^o<0$ give $\rho_w<0$. Suppose a supercritical periodic $\rho\in(-1,0)$. On $(-1,0)$ both branches strictly increase ($x/2>x$; $(3x+1)/2-x=(x+1)/2>0$), so no orbit is periodic within $(-1,0)$; downward exit is impossible ($x/2\in(-\tfrac12,0)$, $(3x+1)/2\in(-1,\tfrac12)$); upward exit lands in $[0,\tfrac12)$ — either strictly positive, or exactly $0$ (via $x=-\tfrac13$), which is a fixed point — and $T$ preserves nonnegativity, so the orbit never returns to $\rho<0$. Contradiction; thus $\rho\le-1$. $\square$
+*Proof.* (Domain convention: rationals with odd denominator are viewed inside $\mathbb{Z}_2$, with parity given by the numerator mod 2; the interval argument below concerns the induced real order on those rationals.) $c(w)>0$ and $2^d-3^o<0$ give $\rho_w<0$. Suppose a supercritical periodic $\rho\in(-1,0)$. On $(-1,0)$ both branches strictly increase ($x/2>x$; $(3x+1)/2-x=(x+1)/2>0$), so no orbit is periodic within $(-1,0)$; downward exit is impossible ($x/2\in(-\tfrac12,0)$, $(3x+1)/2\in(-1,\tfrac12)$); upward exit lands in $[0,\tfrac12)$ — either strictly positive, or exactly $0$ (via $x=-\tfrac13$), which is a fixed point — and $T$ preserves nonnegativity, so the orbit never returns to $\rho<0$. Contradiction; thus $\rho\le-1$. $\square$
 
 Exhaustive check: all 1,767 supercritical words of length $\le 12$ (181 necklace classes), 35,340 random starts of both signs, zero failures; the integer spines found are **exactly** the three known negative cycles $\{-1\}$, $\{-5,-7,-10\}$, and the 11-element $-17$ cycle (7 odd steps: expulsion factor $3^7/2^{11}\approx1.0679$ per block).
 
@@ -88,7 +88,7 @@ $$S(d)\ \le \sum_{k\ge \lceil \theta d\rceil}\binom{d}{k}\ \le\ 2^{d\,H(\theta)}
 
 *Proof.* Survival forces the endpoint constraint $o\ge \lceil\theta d\rceil$ (Thm 3.4 logic); the binomial tail with $a=\lceil\theta d\rceil/d\ge\theta>\tfrac12$ obeys the Chernoff/entropy bound $\sum_{k\ge ad}\binom dk\le 2^{dH(a)}$, and $H$ decreases on $[\tfrac12,1]$. $\square$
 
-Exact DP counts match: equality slack $0.0$ bits at $d=1$; measured decay rate $-\tfrac1d\log_2(S(d)/2^d)$ falls from $0.1079$ ($d=128$) toward the proved $0.05004$ with a ballot-type $d^{-3/2}$ correction (Fig. 1). At $d=128$: $S(d)=23{,}744{,}222{,}584{,}883{,}638{,}495{,}407{,}855{,}640{,}356{,}220$, density $\approx 2^{-13.81}$ — two independent implementations agree to all printed digits.
+Exact DP counts match: equality slack $0.0$ bits at $d=1$; measured decay rate $-\tfrac1d\log_2(S(d)/2^d)$ falls from $0.1079$ ($d=128$) toward the proved $0.05004$, consistent with a ballot-type $d^{-3/2}$ polynomial correction (an empirical observation; the correction term is not proved here) (Fig. 1). At $d=128$: $S(d)=23{,}744{,}222{,}584{,}883{,}638{,}495{,}407{,}855{,}640{,}356{,}220$, density $\approx 2^{-13.81}$ — two independent implementations agree to all printed digits.
 
 ![Figure 1 — frontier density vs entropy bound](figures/fig1_frontier_density.svg)
 
@@ -107,7 +107,7 @@ $$k\ \ge\ q_{22}=65{,}470{,}613{,}321,\qquad \ell\ge 1.04\times10^{11}\ \text{(s
 | descent-time law, max dev. from exact prefix count | $0$ (Terras) | $2.38\times10^{-5}$ | $2.21\times10^{-5}$ |
 | record $\gamma(n)=\sigma_\infty/\ln n$ | $\limsup = 41.677647$, ones-ratio $\to 0.609091$ | 21.24→24.12 | 24.71 @ $n{=}3732423$ |
 
-Record trajectories' ones-ratios ascend $0.5857\to0.5936$ along the predicted extremal profile; the record $\gamma$ closes on the limsup only logarithmically — the extreme tail (the only habitat of a counterexample) is computationally unreachable (Fig. 2). Path records reproduce OEIS A006884 exactly; stopping-time records (27, 703, 10087, 35655, 270271, 362343, 381727, 626331) reproduce the classical sequence, with 626331 on both record lists. The two extremal slopes are distinct and both measured in-repo: **survival slope** $\theta^{-1}$-line $0.63093$ (frontier representatives ride it: worst depth-28 representative $217{,}740{,}015$ certifies at depth 395, ones-ratio 0.6304) vs **record slope** $0.609091$.
+Record trajectories' ones-ratios ascend $0.5857\to0.5936$ along the predicted extremal profile; the record $\gamma$ closes on the limsup only logarithmically, so the extreme-$\gamma$ regime — where any counterexample would necessarily lie, all $n<2^{71}$ being verified [1] — remains computationally unreachable (Fig. 2). Path records reproduce OEIS A006884 exactly; stopping-time records (27, 703, 10087, 35655, 270271, 362343, 381727, 626331) reproduce the classical sequence, with 626331 on both record lists. The two extremal slopes are distinct and both measured in-repo: **survival threshold** — the $\theta$-line, ones-ratio $\log_3 2 \approx 0.63093$ (frontier representatives ride it: worst depth-28 representative $217{,}740{,}015$ certifies at depth 395, ones-ratio 0.6304) vs **record slope** $0.609091$.
 
 ![Figure 2 — gamma records vs Lagarias–Weiss extremes](figures/fig2_gamma_records.svg)
 
@@ -192,13 +192,27 @@ Eight hours of maximal-permission pressure produced no movement on the Collatz C
 [15] J. H. Conway, *Unpredictable iterations*, Proc. 1972 Number Theory Conf., Boulder, 49–52.
 [16] J. C. Lagarias (ed.), *The Ultimate Challenge: The 3x+1 Problem*, AMS (2010).
 [17] *BrokenMath: A Benchmark for Sycophancy in Theorem Proving with LLMs*, arXiv:2510.04721 (2025). (Cited by title and identifier; author list not independently confirmed at citation time.)
-[18] *The Adversarial Prover: A Skeptic's Approach to LLM-Assisted Mathematics*, research note (2026-01-02), tjoresearchnotes.wordpress.com. (Pseudonymous/blog source, cited as prior art for the designed prover–verifier configuration only.)
+[18] *The Adversarial Prover: A Skeptic's Approach to LLM-Assisted Mathematics*, research note (2026-01-02), tjoresearchnotes.wordpress.com. (Pseudonymous, non-archival blog source; cited as background evidence that designed prover–verifier configurations predate this work, and for no other claim. If it becomes unreachable, the priority claim of §8a is unaffected — the P1–P6 conjunction does not rely on it.)
 [19] *SciIntBench: Measuring LLM Compliance with Research Integrity Norms Under Adversarial Framing*, arXiv:2605.29468 (2026). (Cited by title and identifier; author list not independently confirmed at citation time.)
 [20] T. Tao, *Mathematical exploration and discovery at scale*, terrytao.wordpress.com (2025-11-05).
 [21] Google DeepMind, *AI achieves silver-medal standard solving International Mathematical Olympiad problems* (AlphaProof/AlphaGeometry announcement, 2024), deepmind.google (primary); secondary news coverage of AlphaProof Nexus (2026) cited as context only.
 [22] E. Y. Chang, *Exploring Collatz Dynamics with Human-LLM Collaboration*, arXiv:2603.11066 (2026).
 
-*Repository artifacts (commit-addressed):* `experiments/AUDIT-REGISTER.md`, `experiments/SPINE-LADDER.md`, `experiments/CERTIFICATE-FRONTIER-THEOREMS.md`, `experiments/CYCLE-BOUND-LAB.md`, `experiments/STOCHASTIC-MODEL-CHECK.md`, `experiments/unverified-claims/`, `docs/figures/make_figures.py` (regenerates Figs. 1–2 dependency-free).
+### Data availability and reproducibility manifest
+
+All paths are relative to the repository root; instrument paths are under `problems/collatz-conjecture/experiments/`. Each empirical claim maps to a committed script:
+
+| Claim | Script / artifact | Command |
+|---|---|---|
+| Frontier density $S(d)/2^d$, Fig. 1, Thm 5.1 numerics | `collatz_survivor_dp.py`; `docs/figures/make_figures.py` (recomputes DP at build) | `python collatz_survivor_dp.py --max-depth 128` |
+| Stopping-time / odd-fraction / descent-law / $\gamma$-record table, Fig. 2 data | `stochastic_model_check.py` | `python stochastic_model_check.py --limit 5000000 --depth 28` |
+| Cycle floor (Thm 5.2) incl. CF convergents | `cycle_bound_lab.py` | `python cycle_bound_lab.py` (and `--log2-nmin 68` for the comparison row) |
+| Frontier-escape record (217,740,015 → depth 395) | `frontier_escape_analyzer.py` | `--base-depth 28 --max-escape-depth 1024` |
+| Spine-ladder exhaustive checks | `spine_ladder_lab.py` | default run; results JSON committed |
+| Failure catalogue corpus + refutations | `unverified-claims/` (12 documents + README), `AUDIT-REGISTER.md` | read; kick-audit rerun via `kick_repulsion_claim_audit.py` |
+| Audit ledger (189 claims; 10 verdicts) | `AUDIT-REGISTER.md`; workflow resumable per its header | — |
+
+*Additional artifacts:* `SPINE-LADDER.md` (full Lemma 4.1 proof), `CERTIFICATE-FRONTIER-THEOREMS.md`, `CYCLE-BOUND-LAB.md`, `STOCHASTIC-MODEL-CHECK.md`. All instruments are dependency-free Python (stdlib only) and deterministic.
 
 ### Acknowledgments & attribution
 

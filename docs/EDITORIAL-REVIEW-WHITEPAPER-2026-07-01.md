@@ -93,6 +93,37 @@ tightened to match the external consensus: **acceptable as a public
 repository case study after v4; major restructuring (the split) required
 before any journal-style submission.**
 
+## 5c. Round-2 external reviews (2026-07-02) and response (v4 → v4.1)
+
+Two further external GPT 5.5 reviews were received, both auditing the **pre-v4
+public state** (their observations of a missing `experiments/` directory and a
+$2^{68}$ status.md were correct at crawl time and were fixed by commits
+`bb8a6fc`/`523fe64`, which raced their audit; both are resolved at current
+`main`). New findings unique to round 2, with dispositions:
+
+| # | Finding | Verdict | Disposition (v4.1) |
+|---|---|---|---|
+| E16 | **Notation error:** "survival slope $\theta^{-1}$-line 0.63093" — but $\theta^{-1} = \log_2 3 \approx 1.585$ | **Correct; real error** | Fixed: "$\theta$-line, ones-ratio $\log_3 2 \approx 0.63093$" |
+| E17 | Thm 3.4 "no finite certificate family covers $\mathbb{Z}_2$" too broad (arbitrary cylinders do cover) | **Correct** | Scoped to *subcritical (descent-certificate) cylinders*, with the trivial-cover contrast stated |
+| E18 | Lemma 3.2 off-by-one ambiguity at $v=0$ | **Correct** | Reviewer's replacement sentence adopted |
+| E19 | Thm 3.1 step-indexing unspecified ($2^i$ requires it) | **Correct** | "steps indexed from $i=0$" added |
+| E20 | Lemma 4.1 needs $d\ge1$ (else denominator 0 at $d=0,o=0$) | **Correct** | Added |
+| E21 | Cor 4.2 domain convention for rational parity unstated | **Correct** | Convention sentence added (odd-denominator rationals in $\mathbb{Z}_2$, parity = numerator mod 2) |
+| E22 | "Usable certificate" undefined | **Correct** | Formal definition inserted in Thm 3.3 |
+| E23 | Ballot $d^{-3/2}$ correction unproved | **Correct** | Relabeled empirical observation, not proved |
+| E24 | "extreme tail (the only habitat of a counterexample)" rhetorical | **Accepted** | Rephrased with the $n<2^{71}$ justification made explicit |
+| E25 | Reproducibility manifest (claim → script → command) requested | **Accepted** | Manifest table added to the paper's data-availability section |
+| E26 | [18] blog source stability | **Accepted** | Demoted further: background-only, priority claim independent of it |
+| E27 | Internal AI review must not serve as validation | **Already stated; reiterated** | Front-matter and §5 of this review both carry the disclaimer |
+| E28 | Split into math note + methods paper; Lean formalization; blinded replication | **Accepted as follow-up program** | Unchanged from E14; not attempted in v4.1 |
+
+Round-2 scorecards again match this review's calibration (0/10 as a Collatz
+proof *by design*; mostly-sound elementary lemmas; case-study value contingent
+on the artifact trail — now public). Notably, both rounds of external review
+independently re-verified $S(128)$, the entropy constant, and the convergents
+$q_{22}, q_{23}$, making those values now checked by at least four independent
+computations across three model families.
+
 ## 6. Verdict
 
 As a *mathematical* contribution: modest by design — verified frontier synthesis, elementary theorems, one rediscovered-with-margins lemma, honestly labeled. As a *case study in AI epistemics*: the claims are scoped, falsifiable, evidence-linked, and survive this review. **Accept**, with the standing condition that any future edit preserving the audited/unaudited boundary (M4) and the §8 interpretive scope (M2) is required for the acceptance to remain valid.
