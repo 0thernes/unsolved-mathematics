@@ -59,6 +59,40 @@ AI systems that produced refuted artifacts are not identified beyond operator at
 
 **Residual accepted risks (disclosed, not resolvable in-document):** operator-attested roster and timing (M3); single-source $2^{71}$ floor (M5); rendering portability of GitHub-flavored math/mermaid in PDF exports (readers directed to the repository as the artifact of record); and the irreducible conflict that all internal QA, including this addendum, is AI-generated under the declared conflict — externally checkable only via the falsification routes the paper itself publishes.
 
+## 5b. External reviews received and response (v3.1 → v4)
+
+Two independent external reviews (GPT 5.5, 2026-07-02; one filed in-repo as the
+"deep-research" QA audit) were received — the first *non-conflicted* reviews of
+this artifact. Both converged on verdicts consistent with this internal review
+("not a Collatz proof — correctly disclaimed"; "major revision"; case-study
+value > mathematical novelty), and both found defects the internal passes
+missed. Point-by-point disposition:
+
+| # | External finding | Verdict | Disposition (v4) |
+|---|---|---|---|
+| E1 | **Artifact trail not publicly reachable** — paper cites `experiments/` files absent from the public repo; dossier `status.md` on GitHub still said $2^{68}$ | **Correct; the fatal finding.** All artifacts existed locally but were never pushed | Entire artifact trail committed and merged to `main` (dossier updates, instruments, audit register, quarantine incl. 12 refuted claim files); repo and paper now agree |
+| E2 | Simons–de Weger bound: published 2005 value is $m\le 68$; $m\le 75$ ("$m\ge76$") reflects the method with later verification data | **Correct nuance** | Fixed in paper §2, papers.md row 14, attempts.md |
+| E3 | Cor 4.2 "visit only transiently" overstates: rules out positive *periodic* spines, not recurrent supercritical visits | **Correct** | Precision sentence added; recurrence explicitly identified with the open regeneration problem |
+| E4 | Cor 4.3 "no-go" is methodological, not a theorem | **Correct** | Retitled **Remark 4.3 (sign-blindness barrier)** with the reviewer's scoping |
+| E5 | "Divergence half **is equivalent** to" the digit statement — unproved as stated | **Correct** | Downgraded to suggested reformulation / research target |
+| E6 | "Superhuman verification instruments" lacks a human baseline | **Correct** | Replaced with calibrated high-throughput-aid phrasing; baseline requirement stated |
+| E7 | "Fully logged natural experiment" overstates logging | **Correct** | Abstract rewritten per reviewer language ("repository-mediated case study, partial public artifacts, operator-attested attribution") |
+| E8 | Figure 2 hardcodes its record list | **Correct** | Provenance note added (instrument, exact rerun command); full regeneration accepted as follow-up work |
+| E9 | Stats table lacks methodology | **Correct** | Methodology paragraph added (exhaustive $[2,N]$, exact integer arithmetic, deterministic, runtime) |
+| E10 | Tone ("confident nonsense", "AI mythology", "die on exactly this rock") | **Accepted** | Removed/neutralized in abstract, §4, §8, conclusion |
+| E11 | Limitations arrive too late | **Accepted** | "Scope at a glance" box added directly under the abstract |
+| E12 | EDAP is a sketch, not a benchmark | **Correct** | Validation-requirements sentence added; "protocol sketch, not a validated benchmark" now in the abstract |
+| E13 | AI-methods citations below the paper's own sourcing standard (blog, news) | **Accepted** | [21] repointed to the DeepMind primary announcement, news demoted to context; [18] already flagged pseudonymous |
+| E14 | Title/scope: three papers in one; split recommended | **Accepted in principle** | Title replaced with the reviewer's proposal; the split (math note + methods paper), Lean formalization of §3–4, pre-registered replication, and seeded-false-claim benchmarking are recorded as the follow-up program, not attempted in v4 |
+| E15 | "Proofs elementary and complete as stated" vs Lemma 4.1 sketch | **Correct as read** | Sketch now pointer-resolves to the committed full proof (SPINE-LADDER.md), which E1's fix made public |
+
+Residual disagreements: none of substance. Both external scorecards rate
+reproducibility as the dominant defect; E1's fix is the largest single change
+in v4. The internal review's prior verdict ("accept as scoped") is hereby
+tightened to match the external consensus: **acceptable as a public
+repository case study after v4; major restructuring (the split) required
+before any journal-style submission.**
+
 ## 6. Verdict
 
 As a *mathematical* contribution: modest by design — verified frontier synthesis, elementary theorems, one rediscovered-with-margins lemma, honestly labeled. As a *case study in AI epistemics*: the claims are scoped, falsifiable, evidence-linked, and survive this review. **Accept**, with the standing condition that any future edit preserving the audited/unaudited boundary (M4) and the §8 interpretive scope (M2) is required for the acceptance to remain valid.
