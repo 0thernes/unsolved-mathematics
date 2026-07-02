@@ -62,3 +62,11 @@ python -m pytest -q                   # run tests (if present)
 ## Code of conduct
 
 Be rigorous and be kind. See [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
+
+## Commit conventions
+
+- **Scoped commits:** one concern per commit (a dossier update, an instrument, a doc). No mixed multi-hundred-file drops.
+- **Prefixes:** `docs:`, `collatz:`, `audit:`, `meta:`, `chore:`, `fix:`.
+- **Branches:** work on `main` or short-lived `chore/*` / `codex/*` branches merged fast-forward; delete after merge.
+- **Before pushing:** run `make sync` (kanban + corpus + validation gate) so public artifacts never lag the dossiers.
+- **Claim files:** anything asserting progress on an open problem goes through the audit register, never straight to a dossier root.

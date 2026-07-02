@@ -18,6 +18,7 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
+$PSNativeCommandUseErrorActionPreference = $true
 $py = if ($env:PY) { $env:PY } else { 'python' }
 $root = $PSScriptRoot
 

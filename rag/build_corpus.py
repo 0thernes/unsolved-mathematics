@@ -125,7 +125,7 @@ def build() -> int:
                 for i, chunk in enumerate(window(body)):
                     records.append(
                         {
-                            "id": f"{slug}::{section}::{len(records)}",
+                            "id": f"{slug}::{section}::{i}",
                             "rank": meta.get("rank"),
                             "slug": slug,
                             "title": meta.get("title", folder.name),

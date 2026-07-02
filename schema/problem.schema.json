@@ -1,13 +1,22 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/0thernes/unsolved-mathematics/schema/problem.schema.json",
-  "title": "Unsolved Mathematics Atlas — Problem Entry",
+  "title": "Unsolved Mathematics Atlas \u2014 Problem Entry",
   "description": "Schema for a single problem entry in data/problems.yaml and per-problem metadata.json.",
   "type": "object",
   "required": [
-    "slug", "title", "field", "year_posed", "originators",
-    "millennium_prize", "statement_plain", "difficulty", "centrality",
-    "tractability", "status", "tags"
+    "slug",
+    "title",
+    "field",
+    "year_posed",
+    "originators",
+    "millennium_prize",
+    "statement_plain",
+    "difficulty",
+    "centrality",
+    "tractability",
+    "status",
+    "tags"
   ],
   "additionalProperties": false,
   "properties": {
@@ -16,11 +25,20 @@
       "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
       "description": "Kebab-case unique identifier; also the subfolder name suffix."
     },
-    "title": { "type": "string", "minLength": 3, "maxLength": 120 },
-    "field": { "type": "string", "minLength": 3 },
+    "title": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 120
+    },
+    "field": {
+      "type": "string",
+      "minLength": 3
+    },
     "subfields": {
       "type": "array",
-      "items": { "type": "string" },
+      "items": {
+        "type": "string"
+      },
       "default": []
     },
     "year_posed": {
@@ -31,21 +49,34 @@
     },
     "originators": {
       "type": "array",
-      "items": { "type": "string" },
+      "items": {
+        "type": "string"
+      },
       "minItems": 1
     },
-    "millennium_prize": { "type": "boolean" },
-    "statement_plain": { "type": "string", "minLength": 10 },
+    "millennium_prize": {
+      "type": "boolean"
+    },
+    "statement_plain": {
+      "type": "string",
+      "minLength": 10
+    },
     "difficulty": {
-      "type": "integer", "minimum": 0, "maximum": 100,
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100,
       "description": "Editorial estimate of intrinsic mathematical difficulty."
     },
     "centrality": {
-      "type": "integer", "minimum": 0, "maximum": 100,
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100,
       "description": "How load-bearing the problem is across mathematics."
     },
     "tractability": {
-      "type": "integer", "minimum": 0, "maximum": 100,
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100,
       "description": "Editorial estimate of how close a resolution feels (higher = closer)."
     },
     "status": {
@@ -61,8 +92,22 @@
     },
     "tags": {
       "type": "array",
-      "items": { "type": "string" },
+      "items": {
+        "type": "string"
+      },
       "minItems": 1
+    },
+    "rank": {
+      "type": "integer",
+      "description": "derived by scripts/generate.py"
+    },
+    "css": {
+      "type": "number",
+      "description": "derived by scripts/generate.py"
+    },
+    "folder": {
+      "type": "string",
+      "description": "derived by scripts/generate.py"
     }
   }
 }

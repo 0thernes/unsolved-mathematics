@@ -37,8 +37,8 @@ embed:  ## Build the dense vector index (needs requirements-rag.txt)
 query:  ## Query the corpus: make query Q="bounded gaps between primes"
 	$(PY) rag/retriever.py "$(Q)"
 
-test:  ## Run the test suite
-	$(PY) -m pytest -q || $(PY) tests/test_atlas.py
+test:  ## Run test suite (pytest if available, else standalone)
+	@$(PY) -c "import pytest" 2>NUL && $(PY) -m pytest -q tests/ || $(PY) tests/test_atlas.py
 
 all: build corpus index register check papers test  ## Full local build + checks
 
@@ -46,3 +46,8 @@ clean:  ## Remove generated, rebuildable artifacts (keeps dossiers)
 	rm -f rag/index.npz
 	find . -type d -name __pycache__ -prune -exec rm -rf {} +
 	find . -type d -name .pytest_cache -prune -exec rm -rf {} +
+
+dossiers:  ## Refresh dossier completeness report (data/dossier-status.json)
+	$(PY) scripts/check_dossiers.py
+
+sync: dossiers corpus validate  ## Refresh kanban + corpus, then validate (anti-staleness)
