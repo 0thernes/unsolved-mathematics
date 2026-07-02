@@ -17,7 +17,7 @@ Identifiers are given only where confidently known; "—" means no identifier is
 | 11 | 1999 | Maximum excursion and stopping time record-holders for the $3x+1$ problem: computational results | Tomás Oliveira e Silva | computational | 10.1090/S0025-5718-99-01031-5 | verified |
 | 12 | 2003 | Bounds for the $3x+1$ problem using difference inequalities | Ilia Krasikov & Jeffrey C. Lagarias | breakthrough | — | high-confidence |
 | 13 | 2003 | The $3x+1$ problem: an annotated bibliography (1963–1999) | Jeffrey C. Lagarias | survey | arXiv:math/0309224 | high-confidence |
-| 14 | 2005 | Theoretical and computational bounds for m-cycles of the $3n+1$-problem (no $m$-cycles for $m \le 75$) | John L. Simons & Benne M. M. de Weger | breakthrough | 10.4064/aa117-1-3 | verified |
+| 14 | 2005 | Theoretical and computational bounds for m-cycles of the $3n+1$-problem (published bound $m \le 68$; the method with later verification data yields $m \le 75$, i.e. $m \ge 76$ as cited by Hercher) | John L. Simons & Benne M. M. de Weger | breakthrough | 10.4064/aa117-1-3 | verified |
 | 15 | 2006 | The $3x+1$ problem: an annotated bibliography, II (2000–2009) | Jeffrey C. Lagarias | survey | arXiv:math/0608208 | verified |
 | 16 | 2007 | The undecidability of the generalized Collatz problem ($\Pi^0_2$-complete) | Stuart A. Kurtz & Janos Simon | negative-result | 10.1007/978-3-540-72504-6_49 | verified |
 | 17 | 2010 | The Ultimate Challenge: The $3x+1$ Problem (edited volume) | Jeffrey C. Lagarias (ed.) | survey | — | high-confidence |
