@@ -1,5 +1,46 @@
 {
-  "elapsed_seconds": 13.713622,
+  "all_checks_passed": true,
+  "checks": [
+    {
+      "detail": {
+        "starts_reaching_one_within_cap": 24999,
+        "starts_scanned": 24999
+      },
+      "name": "all_scanned_positive_starts_reach_one_within_cap",
+      "passed": true
+    },
+    {
+      "detail": {
+        "raw": 12,
+        "unique": 1
+      },
+      "name": "unique_edges_not_more_than_raw_transitions",
+      "passed": true
+    },
+    {
+      "detail": {
+        "shared_target_edge_count": 0,
+        "unique_edge_count": 1
+      },
+      "name": "unique_edges_have_no_shared_sampled_targets",
+      "passed": true
+    },
+    {
+      "detail": {
+        "bridge_word_histogram": {
+          "0111": 12
+        },
+        "raw": 12,
+        "source_pair_histogram": {
+          "0111->001111": 12
+        },
+        "unique": 1
+      },
+      "name": "r16_n50000_collapses_to_one_state_edge",
+      "passed": true
+    }
+  ],
+  "elapsed_seconds": 13.198146,
   "interpretation": "Raw hit-after-hit counts can be misleading because positive Collatz orbits merge. Unique edge counts reveal whether the rare chained locks are many mechanisms or one shared orbit bridge.",
   "library": {
     "canonical_primitive_sources": 244,

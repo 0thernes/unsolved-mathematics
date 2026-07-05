@@ -249,6 +249,70 @@ def scan_hit_after_hit(
     }
 
 
+def check_row(name: str, passed: bool, detail: object) -> dict[str, object]:
+    return {"name": name, "passed": bool(passed), "detail": detail}
+
+
+def build_checks(args: argparse.Namespace, scan: dict[str, object]) -> list[dict[str, object]]:
+    checks = [
+        check_row(
+            "all_scanned_positive_starts_reach_one_within_cap",
+            scan["starts_scanned"] == scan["starts_reaching_one_within_cap"],
+            {
+                "starts_scanned": scan["starts_scanned"],
+                "starts_reaching_one_within_cap": scan["starts_reaching_one_within_cap"],
+            },
+        ),
+        check_row(
+            "unique_edges_not_more_than_raw_transitions",
+            scan["hit_after_hit_unique_edge_count"] <= scan["hit_after_hit_raw_transition_count"],
+            {
+                "raw": scan["hit_after_hit_raw_transition_count"],
+                "unique": scan["hit_after_hit_unique_edge_count"],
+            },
+        ),
+        check_row(
+            "unique_edges_have_no_shared_sampled_targets",
+            all(not edge["shared_witness_targets_in_samples"] for edge in scan["unique_edges"]),
+            {
+                "unique_edge_count": scan["hit_after_hit_unique_edge_count"],
+                "shared_target_edge_count": sum(
+                    1 for edge in scan["unique_edges"] if edge["shared_witness_targets_in_samples"]
+                ),
+            },
+        ),
+    ]
+    if args.bits == 16 and args.start_limit == 50000:
+        checks.append(
+            check_row(
+                "r16_n50000_collapses_to_one_state_edge",
+                scan["hit_after_hit_raw_transition_count"] == 12
+                and scan["hit_after_hit_unique_edge_count"] == 1,
+                {
+                    "raw": scan["hit_after_hit_raw_transition_count"],
+                    "unique": scan["hit_after_hit_unique_edge_count"],
+                    "source_pair_histogram": scan["source_pair_histogram"],
+                    "bridge_word_histogram": scan["bridge_word_histogram"],
+                },
+            )
+        )
+    if args.bits >= 20:
+        checks.append(
+            check_row(
+                "r_ge_20_has_no_hit_after_hit_transitions_in_current_window",
+                scan["hit_after_hit_raw_transition_count"] == 0
+                and scan["hit_after_hit_unique_edge_count"] == 0,
+                {
+                    "bits": args.bits,
+                    "raw": scan["hit_after_hit_raw_transition_count"],
+                    "unique": scan["hit_after_hit_unique_edge_count"],
+                    "R_bit_hit_visits": scan["R_bit_hit_visits"],
+                },
+            )
+        )
+    return checks
+
+
 def run(args: argparse.Namespace) -> dict[str, object]:
     started = perf_counter()
     sources = make_sources(args.max_depth, args.min_source_depth)
@@ -274,10 +338,13 @@ def run(args: argparse.Namespace) -> dict[str, object]:
         witness_counts=witness_counts,
         witness_samples=witness_samples,
     )
+    checks = build_checks(args, scan)
     return {
         "status": "odd-unit-lock-transition-witness-microscope",
         "result": "finite measurement only; not a proof of Collatz",
         "elapsed_seconds": round_float(perf_counter() - started, 6),
+        "all_checks_passed": all(row["passed"] for row in checks),
+        "checks": checks,
         "parameters": {
             "max_depth": args.max_depth,
             "min_source_depth": args.min_source_depth,
@@ -356,6 +423,9 @@ def main() -> int:
                     bridge=edge["bridge"]["parity_word_EO"],
                 )
             )
+        print(f"checks_passed={result['all_checks_passed']}")
+    if not result["all_checks_passed"]:
+        return 1
     return 0
 
 

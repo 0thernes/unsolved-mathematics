@@ -4,6 +4,7 @@
 **Instrument:** [`odd_unit_lock_bridge_classifier.py`](odd_unit_lock_bridge_classifier.py)
 **Input:** [`results/odd_unit_lock_transition_microscope_d13_R16_N250000_20260705.json`](results/odd_unit_lock_transition_microscope_d13_R16_N250000_20260705.json)
 **Result:** [`results/odd_unit_lock_bridge_classifier_d13_R16_N250000_20260705.json`](results/odd_unit_lock_bridge_classifier_d13_R16_N250000_20260705.json)
+**Follow-up:** [`ODD-UNIT-LOCK-BRIDGE-REFINEMENT.md`](ODD-UNIT-LOCK-BRIDGE-REFINEMENT.md)
 
 Status: finite symbolic classification of measured bridges. This proves no
 part of the Collatz conjecture.
@@ -66,6 +67,10 @@ that the previous lock already determines the next unit residue modulo `2^16`.
 Those are the dangerous-looking cases for a proof strategy, but in this finite
 window they collapse to one or two merged state edges rather than an expanding
 repeat-lock mechanism.
+
+The refinement follow-up tests the danger directly: all four measured bridge
+geometries have one higher previous-lock lift at `R = 20` and `R = 24`, and
+none remains a repeated lock at either precision.
 
 ## Theorem Target
 

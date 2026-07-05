@@ -12,6 +12,7 @@ and stress helper [`odd_unit_lock_transition_microscope.py`](odd_unit_lock_trans
 
 Follow-up classifier:
 [`ODD-UNIT-LOCK-BRIDGE-CLASSIFIER.md`](ODD-UNIT-LOCK-BRIDGE-CLASSIFIER.md)
+and [`ODD-UNIT-LOCK-BRIDGE-REFINEMENT.md`](ODD-UNIT-LOCK-BRIDGE-REFINEMENT.md)
 
 Status: finite theorem-discovery data. This proves no part of the Collatz
 conjecture.
