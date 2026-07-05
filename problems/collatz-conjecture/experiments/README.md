@@ -54,6 +54,19 @@ The stricter evidence/QA companion is
 [`COLLATZ-DEEP-REPO-AUDIT-WTF-STRATEGY-2026-07-05.md`](COLLATZ-DEEP-REPO-AUDIT-WTF-STRATEGY-2026-07-05.md):
 it records the current evidence snapshot, math-soundness split, remaining
 provenance risks, and next attack queue.
+The executive command-map companion is
+[`COLLATZ-OMNIDIRECTIONAL-REPO-AUDIT-2026-07-05.md`](COLLATZ-OMNIDIRECTIONAL-REPO-AUDIT-2026-07-05.md):
+it condenses repo soundness, novelty split, public baseline, weird-core attack
+angles, red-team filters, and publish-scope risk into one routing document.
+The first executable bizarro guardrail is
+[`COLLATZ-EPSILON-LINT.md`](COLLATZ-EPSILON-LINT.md):
+it turns sibling-map calibration into a reusable lint harness for rejecting
+parity-word-only proof sketches before they become theorem prose.
+The current odd-unit/codimension probe is
+[`ODD-UNIT-LOCK-COVERAGE.md`](ODD-UNIT-LOCK-COVERAGE.md) and
+[`ODD-UNIT-LOCK-REFINEMENT.md`](ODD-UNIT-LOCK-REFINEMENT.md):
+it measures the phase-collision lock union and finite non-refill under higher
+2-adic precision. This is a route-selection result, not a proof.
 Only the formal-methods slice is currently proof-relevant: SAT/SMT, BDD/ZDD,
 CEGAR, omega-automata/model checking, rewrite/e-graph methods, LLL, proof
 certificates, and adversarial counterexample search.
@@ -62,7 +75,7 @@ For publication scope, use
 [`GITHUB-PUBLISH-PLAN-2026-07-02.md`](GITHUB-PUBLISH-PLAN-2026-07-02.md);
 do not publish this dirty worktree with `git add -A`.
 
-## Documents (51)
+## Documents (54)
 
 | File | Category | First heading |
 |---|---|---|
@@ -81,6 +94,7 @@ do not publish this dirty worktree with `git add -A`.
 | [`BRANCH-PREFIX-RETIMED-PRESSURE.md`](BRANCH-PREFIX-RETIMED-PRESSURE.md) | Instrument report | Branch-Prefix Retimed Pressure |
 | [`CERTIFICATE-FRONTIER-THEOREMS.md`](CERTIFICATE-FRONTIER-THEOREMS.md) | Theorem/analysis doc | Certificate Frontier Theorems |
 | [`COLLATZ-BIZARRO-OMNILENS-AUDIT-2026-07-05.md`](COLLATZ-BIZARRO-OMNILENS-AUDIT-2026-07-05.md) | Synthesis / audit compass | Collatz Bizarro Omnilens Audit / Weirdness Research Compass - 2026-07-05 |
+| [`COLLATZ-EPSILON-LINT.md`](COLLATZ-EPSILON-LINT.md) | Instrument report | Collatz Epsilon/Sibling Lint Harness - 2026-07-05 |
 | [`CYCLE-BAKER-HANDOFF.md`](CYCLE-BAKER-HANDOFF.md) | Instrument report | Cycle exclusion: the linear-form records and the exact Baker handoff |
 | [`CYCLE-BOUND-LAB.md`](CYCLE-BOUND-LAB.md) | Instrument report | Cycle Bound Lab — the cycle half, derived in-repo |
 | [`CYCLE-EQUATION-VALIDATION.md`](CYCLE-EQUATION-VALIDATION.md) | Instrument report | Cycle equation — exact form, validated on every known cycle |
@@ -97,6 +111,8 @@ do not publish this dirty worktree with `git add -A`.
 | [`KICK-REPULSION-CLAIM-AUDIT.md`](KICK-REPULSION-CLAIM-AUDIT.md) | Claim audit | Kick Repulsion Claim Audit |
 | [`KICK-REPULSION-INSIGHT.md`](KICK-REPULSION-INSIGHT.md) | Instrument report | KICK-REPULSION INSIGHT — The +1 as the separating force (AI-native angle) |
 | [`LOW-ALIGNMENT-STRUCTURE.md`](LOW-ALIGNMENT-STRUCTURE.md) | Instrument report | Low-Alignment Structure |
+| [`ODD-UNIT-LOCK-COVERAGE.md`](ODD-UNIT-LOCK-COVERAGE.md) | Instrument report | Odd-Unit Lock Coverage Lab |
+| [`ODD-UNIT-LOCK-REFINEMENT.md`](ODD-UNIT-LOCK-REFINEMENT.md) | Instrument report | Odd-Unit Lock Refinement Lab |
 | [`P-ETALE-FUNDAMENTAL-GROUPOID-RESOLUTION.md`](../_quarantine/experiments/P-ETALE-FUNDAMENTAL-GROUPOID-RESOLUTION.md) | Quarantined legacy report | P AS ETALE FUNDAMENTAL GROUPOID — Galois Action Forces Splitting for Finite Support (Beyond prior) |
 | [`P-ETALE-TOPOS-INTERNAL-C.md`](../_quarantine/P-ETALE-TOPOS-INTERNAL-C.md) | Quarantined legacy report | P AS THE ETALE TOPOS — C is Internally True (Beyond the Site, the Logic Layer) |
 | [`P-ETALE-TOPOS-INTERNAL-RESOLUTION.md`](../_quarantine/experiments/P-ETALE-TOPOS-INTERNAL-RESOLUTION.md) | Quarantined legacy report | P AS THE ETALE TOPOS — C is Internally True (Beyond Pro-Etale Site, the Logic Layer) |
@@ -118,7 +134,7 @@ do not publish this dirty worktree with `git add -A`.
 | [`defect_algebra_rigorous_bound.md`](../_quarantine/defect_algebra_rigorous_bound.md) | Quarantined legacy proof file | Defect Algebra Rigorous Bound: ||A||_∞ = 0.92 and 11.2 b Ejection |
 | [`defect_algebra_rigorous_proof.md`](../_quarantine/defect_algebra_rigorous_proof.md) | Quarantined legacy proof file | Defect Algebra Rigorous Proof: Contraction and 12b Ejection Bound |
 
-## Instruments (71)
+## Instruments (74)
 
 | Script | Docstring |
 |---|---|
@@ -141,6 +157,7 @@ do not publish this dirty worktree with `git add -A`.
 | [`collatz_beyond_frontier.py`](collatz_beyond_frontier.py) |  |
 | [`collatz_frontier_geometry.py`](collatz_frontier_geometry.py) | Frontier geometry of the Collatz certificate program. |
 | [`collatz_gap_scanner.py`](collatz_gap_scanner.py) | First-open-band gap scanner — close the Session 6 scan window. |
+| [`collatz_epsilon_lint.py`](collatz_epsilon_lint.py) | Reusable epsilon/sibling lint harness for Collatz proof sketches. |
 | [`collatz_record_band.py`](collatz_record_band.py) | The record band: an explicit ceiling on every possible Terras violation. |
 | [`collatz_reduction.py`](collatz_reduction.py) | Master reduction: Collatz <=> Terras + frontier separation (+ cycle bounds). |
 | [`collatz_residue_lab.py`](collatz_residue_lab.py) | Finite residue descent certificates for the shortcut Collatz map. |
@@ -175,6 +192,8 @@ do not publish this dirty worktree with `git add -A`.
 | [`master_kick_rejection_lemma.py`](master_kick_rejection_lemma.py) | RESTORED FOR AUDIT REPRODUCIBILITY (2026-07-02). |
 | [`motif_cover_analyzer.py`](motif_cover_analyzer.py) | Compress repayment motifs into coarse cover families. |
 | [`motif_forcing_analyzer.py`](motif_forcing_analyzer.py) | Test subcritical motif forcing in finite Collatz shadows. |
+| [`odd_unit_lock_coverage_lab.py`](odd_unit_lock_coverage_lab.py) | Finite odd-unit lock coverage lab. |
+| [`odd_unit_lock_refinement_lab.py`](odd_unit_lock_refinement_lab.py) | Odd-unit lock refinement lab. |
 | [`outlier_transition_analyzer.py`](outlier_transition_analyzer.py) | Analyze recursive descent transitions of rare repayment-motif outliers. |
 | [`parity_surplus_analyzer.py`](parity_surplus_analyzer.py) | Analyze parity-surplus structure behind hard Collatz certificate examples. |
 | [`positive_kick_rejection.py`](positive_kick_rejection.py) |  |

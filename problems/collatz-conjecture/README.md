@@ -17,6 +17,7 @@ Iterating n -> n/2 (even) or 3n+1 (odd) eventually reaches 1 for every positive 
 | [`FAILED-ATTEMPTS-WEIRDNESS-ATLAS-2026-07-05.md`](FAILED-ATTEMPTS-WEIRDNESS-ATLAS-2026-07-05.md) | No-repeat atlas of prior approaches, failure modes, and weird residues |
 | [`experiments/COLLATZ-BIZARRO-OMNILENS-AUDIT-2026-07-05.md`](experiments/COLLATZ-BIZARRO-OMNILENS-AUDIT-2026-07-05.md) | Master audit compass: repo reality, weirdness map, novelty split, ratings, and next attack program |
 | [`experiments/COLLATZ-DEEP-REPO-AUDIT-WTF-STRATEGY-2026-07-05.md`](experiments/COLLATZ-DEEP-REPO-AUDIT-WTF-STRATEGY-2026-07-05.md) | Evidence/QA companion: current scan state, manifest status, math-soundness split, risks, and next attack queue |
+| [`experiments/COLLATZ-EPSILON-LINT.md`](experiments/COLLATZ-EPSILON-LINT.md) | Executable epsilon/sibling lint gate: rejects parity-word-only proof sketches and names required false-world controls |
 | [`papers.md`](papers.md) | The 25 most important papers (old + new) |
 | [`mathematicians.md`](mathematicians.md) | Top 10 contributors, past and present |
 | [`status.md`](status.md) | Current frontier and what a proof would require |
@@ -99,6 +100,7 @@ Iterating n -> n/2 (even) or 3n+1 (odd) eventually reaches 1 for every positive 
 | [`experiments/cycle_bound_lab.py`](experiments/cycle_bound_lab.py) | Continued-fraction ladder derivation of the unconditional cycle-length floor |
 | [`experiments/escape_envelope_analyzer.py`](experiments/escape_envelope_analyzer.py) | Escape-envelope analyzer: proved thinness bound + first-moment envelope records |
 | [`experiments/collatz_sibling_control.py`](experiments/collatz_sibling_control.py) | Sibling-control instrument: sign dichotomy, S-membership certificates, counterexample detectors on (3,±1) and (5,+1) |
+| [`experiments/collatz_epsilon_lint.py`](experiments/collatz_epsilon_lint.py) | Reusable proof-sketch lint harness: parity-word barrier, affine-intercept sign checks, sibling cycles, and adversarial stress families |
 | [`experiments/collatz_threshold_envelope.py`](experiments/collatz_threshold_envelope.py) | Threshold-envelope prover: intercept bound, trap window, CF exclusion, exact max-`x*` DP |
 | [`experiments/collatz_record_band.py`](experiments/collatz_record_band.py) | Record-band prover: alive-intercept lemma, per-band violation ceilings, gamma floors |
 | [`experiments/collatz_reduction.py`](experiments/collatz_reduction.py) | Master reduction synthesizer: proof chain, delta-squeeze band classification, scan-gap table |
@@ -131,6 +133,7 @@ Iterating n -> n/2 (even) or 3n+1 (odd) eventually reaches 1 for every positive 
 | [`experiments/branch_prefix_retimed_tight_credit_floor.py`](experiments/branch_prefix_retimed_tight_credit_floor.py) | Inherited-credit analyzer proving the local accounting identity behind the tight grammar near-misses |
 | [`experiments/branch_prefix_retimed_tight_reserve_source.py`](experiments/branch_prefix_retimed_tight_reserve_source.py) | Reserve-source tracer for the tight grammar: records the prior credit-event history before the final align-3 entry |
 | [`experiments/NOVELTY-POSITIONING-2026-07-02.md`](experiments/NOVELTY-POSITIONING-2026-07-02.md) | Honest novelty stance: rare AI-verification artifact; no Collatz breakthrough; accepted math is mostly rediscovery with possible presentation margins |
+| [`experiments/COLLATZ-OMNIDIRECTIONAL-REPO-AUDIT-2026-07-05.md`](experiments/COLLATZ-OMNIDIRECTIONAL-REPO-AUDIT-2026-07-05.md) | Full-context repo audit: soundness, novelty split, weird boundary stack, red-team filters, and next research queue |
 | [`experiments/BEYOND-THE-CANTOR-FRONTIER-AFFINE-COCYCLE-RIGIDITY.md`](experiments/BEYOND-THE-CANTOR-FRONTIER-AFFINE-COCYCLE-RIGIDITY.md) + `repulsion_potential_minimizer.py` + `PROOF-SKETCH...md` | Speculative proof-sketch material only; not an accepted closure of the positive survivor gap unless separately audited and upgraded |
 
 *Originators: Lothar Collatz.*
