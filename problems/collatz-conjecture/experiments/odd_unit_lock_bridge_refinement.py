@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """Refine measured odd-unit lock bridges to higher odd-unit precision.
 
-`odd_unit_lock_bridge_classifier.py` explains repeated R=16 bridges by exact
+`odd_unit_lock_bridge_classifier.py` explains repeated R-bit bridges by exact
 affine bridge geometry. This script asks whether those measured bridge
 geometries survive at higher precision:
 
-1. lift the previous R=16 unit lock to R=20/R=24 previous-unit locks;
+1. lift the previous R-bit unit lock to higher-precision previous-unit locks;
 2. push each lifted previous unit through the same shortcut bridge;
 3. test whether the resulting current unit is also a lock at the higher R.
 
@@ -206,9 +206,9 @@ def run(args: argparse.Namespace) -> dict[str, object]:
             "all_measured_base_bridges_die_as_refined_repeats": all_die,
             "low_projection_mismatches": projection_mismatches,
             "interpretation": (
-                "For the measured R=16 repeat bridges, every higher-precision "
-                "previous-lock lift tested here fails to be a higher-precision "
-                "next-lock hit."
+                f"For the measured R={base_bits} repeat bridges, every "
+                "higher-precision previous-lock lift tested here fails to be "
+                "a higher-precision next-lock hit."
             ),
         },
         "families": families,

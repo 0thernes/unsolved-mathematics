@@ -1,0 +1,84 @@
+{
+  "checks": [
+    {
+      "detail": {
+        "starts_reaching_one_within_cap": 124999,
+        "starts_scanned": 124999
+      },
+      "name": "all_scanned_positive_starts_reach_one_within_cap",
+      "passed": true
+    },
+    {
+      "detail": {
+        "excess_bits": 17,
+        "observed_over_expected_hit_after_hit": 0.0
+      },
+      "name": "hit_after_hit_not_above_twice_local_coverage_baseline",
+      "passed": true
+    }
+  ],
+  "classification": {
+    "all_repeat_hits_cross_source": true,
+    "dominant_gap": null,
+    "dominant_source_pair": null,
+    "interpretation": "If repeat hits all cross source labels and do not collapse to one signature, the next theorem target is a transition-family classifier, not a same-spine persistence lemma.",
+    "repeated_signature_count": 0,
+    "repeated_signatures": {}
+  },
+  "elapsed_seconds": 33.736077,
+  "library": {
+    "canonical_primitive_sources": 244,
+    "lock_witness_keys": 681549,
+    "source_depths": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ]
+  },
+  "parameters": {
+    "excess_bits": 17,
+    "max_depth": 13,
+    "max_steps": 512,
+    "min_source_depth": 3,
+    "odd_starts_only": true,
+    "start_limit": 250000
+  },
+  "result": "finite measurement only; not a proof of Collatz",
+  "scan": {
+    "alignment_class_pair_histogram": {},
+    "depth_pair_histogram": {},
+    "different_source_repeat_count": 0,
+    "expected_hit_after_hit_from_local_coverage": 28.565139770508,
+    "expected_hits_from_local_coverage": 7957.437713623047,
+    "gap_histogram": {},
+    "hit_after_hit_fraction": 0.0,
+    "hit_after_hit_transitions": 0,
+    "hit_fraction": 0.003402619127,
+    "observed_over_expected_hit_after_hit": 0.0,
+    "observed_over_expected_hits": 0.69683234724,
+    "previous_hit_transitions": 5540,
+    "same_source_repeat_count": 0,
+    "shared_target_count_histogram": {},
+    "shortcut_segment_parity_histogram": {},
+    "signature_histogram": {},
+    "source_pair_histogram": {},
+    "starts_reaching_one_within_cap": 124999,
+    "starts_scanned": 124999,
+    "starts_with_repeat": [],
+    "starts_with_repeat_count": 0,
+    "top_matching_targets_across_pairs": {},
+    "total_canonical_source_visits": 1629627,
+    "total_lock_hits": 5545,
+    "total_shortcut_states_examined": 10378764,
+    "transitions": []
+  },
+  "status": "odd-unit-lock-transition-microscope"
+}

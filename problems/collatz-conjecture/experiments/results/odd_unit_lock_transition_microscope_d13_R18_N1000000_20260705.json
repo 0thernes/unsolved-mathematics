@@ -1,0 +1,315 @@
+{
+  "checks": [
+    {
+      "detail": {
+        "starts_reaching_one_within_cap": 499999,
+        "starts_scanned": 499999
+      },
+      "name": "all_scanned_positive_starts_reach_one_within_cap",
+      "passed": true
+    },
+    {
+      "detail": {
+        "excess_bits": 18,
+        "observed_over_expected_hit_after_hit": 0.063120301886
+      },
+      "name": "hit_after_hit_not_above_twice_local_coverage_baseline",
+      "passed": true
+    }
+  ],
+  "classification": {
+    "all_repeat_hits_cross_source": true,
+    "dominant_gap": "1",
+    "dominant_source_pair": "0011111->011111",
+    "interpretation": "If repeat hits all cross source labels and do not collapse to one signature, the next theorem target is a transition-family classifier, not a same-spine persistence lemma.",
+    "repeated_signature_count": 1,
+    "repeated_signatures": {
+      "0011111|3|196429|011111|1|89433": 3
+    }
+  },
+  "elapsed_seconds": 104.088886,
+  "library": {
+    "canonical_primitive_sources": 244,
+    "lock_witness_keys": 682252,
+    "source_depths": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ]
+  },
+  "parameters": {
+    "excess_bits": 18,
+    "max_depth": 13,
+    "max_steps": 512,
+    "min_source_depth": 3,
+    "odd_starts_only": true,
+    "start_limit": 1000000
+  },
+  "result": "finite measurement only; not a proof of Collatz",
+  "scan": {
+    "alignment_class_pair_histogram": {
+      "3->1": 3
+    },
+    "depth_pair_histogram": {
+      "7->6": 3
+    },
+    "different_source_repeat_count": 3,
+    "expected_hit_after_hit_from_local_coverage": 47.528289794922,
+    "expected_hits_from_local_coverage": 18074.339332580566,
+    "gap_histogram": {
+      "1": 3
+    },
+    "hit_after_hit_fraction": 0.000159481155,
+    "hit_after_hit_transitions": 3,
+    "hit_fraction": 0.002551462148,
+    "observed_over_expected_hit_after_hit": 0.063120301886,
+    "observed_over_expected_hits": 1.041033901919,
+    "previous_hit_transitions": 18811,
+    "same_source_repeat_count": 0,
+    "shared_target_count_histogram": {
+      "0": 3
+    },
+    "shortcut_segment_parity_histogram": {
+      "0": 3
+    },
+    "signature_histogram": {
+      "0011111|3|196429|011111|1|89433": 3
+    },
+    "source_pair_histogram": {
+      "0011111->011111": 3
+    },
+    "starts_reaching_one_within_cap": 499999,
+    "starts_scanned": 499999,
+    "starts_with_repeat": [
+      355779,
+      533669,
+      986047
+    ],
+    "starts_with_repeat_count": 3,
+    "top_matching_targets_across_pairs": {
+      "0001111110111": 3,
+      "010110111011": 3
+    },
+    "total_canonical_source_visits": 7374595,
+    "total_lock_hits": 18816,
+    "total_shortcut_states_examined": 46303238,
+    "transitions": [
+      {
+        "alignment_class_pair": "3->1",
+        "current": {
+          "alignment_class_m_mod_d": 1,
+          "alignment_m": 7,
+          "local_coverage_fraction": 0.002975463867,
+          "lock_residue_count_for_bin": 390,
+          "n": 200126,
+          "source": "011111",
+          "source_depth": 6,
+          "source_residue": 62,
+          "source_rho": "-422/179",
+          "step": 4,
+          "unit_residue": 89433,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 0,
+              "phase_t": 1,
+              "source_phase_rho": "-211/179",
+              "target": "0001111110111",
+              "target_eta": "-163096/11491",
+              "valuation_e": 0
+            }
+          ]
+        },
+        "depth_pair": "7->6",
+        "gap_shortcut_steps": 1,
+        "previous": {
+          "alignment_class_m_mod_d": 3,
+          "alignment_m": 10,
+          "local_coverage_fraction": 0.002510070801,
+          "lock_residue_count_for_bin": 329,
+          "n": 400252,
+          "source": "0011111",
+          "source_depth": 7,
+          "source_residue": 124,
+          "source_rho": "-844/115",
+          "step": 3,
+          "unit_residue": 196429,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 0,
+              "phase_t": 1,
+              "source_phase_rho": "-422/115",
+              "target": "010110111011",
+              "target_eta": "-1774/145",
+              "valuation_e": 2
+            }
+          ]
+        },
+        "same_source": false,
+        "shared_target_count": 0,
+        "shared_targets": [],
+        "shortcut_segment": {
+          "final_state": 200126,
+          "gap_steps": 1,
+          "parity_word": "0",
+          "states": [
+            400252,
+            200126
+          ],
+          "states_truncated": false
+        },
+        "signature": "0011111|3|196429|011111|1|89433",
+        "source_pair": "0011111->011111",
+        "start": 355779
+      },
+      {
+        "alignment_class_pair": "3->1",
+        "current": {
+          "alignment_class_m_mod_d": 1,
+          "alignment_m": 7,
+          "local_coverage_fraction": 0.002975463867,
+          "lock_residue_count_for_bin": 390,
+          "n": 200126,
+          "source": "011111",
+          "source_depth": 6,
+          "source_residue": 62,
+          "source_rho": "-422/179",
+          "step": 3,
+          "unit_residue": 89433,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 0,
+              "phase_t": 1,
+              "source_phase_rho": "-211/179",
+              "target": "0001111110111",
+              "target_eta": "-163096/11491",
+              "valuation_e": 0
+            }
+          ]
+        },
+        "depth_pair": "7->6",
+        "gap_shortcut_steps": 1,
+        "previous": {
+          "alignment_class_m_mod_d": 3,
+          "alignment_m": 10,
+          "local_coverage_fraction": 0.002510070801,
+          "lock_residue_count_for_bin": 329,
+          "n": 400252,
+          "source": "0011111",
+          "source_depth": 7,
+          "source_residue": 124,
+          "source_rho": "-844/115",
+          "step": 2,
+          "unit_residue": 196429,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 0,
+              "phase_t": 1,
+              "source_phase_rho": "-422/115",
+              "target": "010110111011",
+              "target_eta": "-1774/145",
+              "valuation_e": 2
+            }
+          ]
+        },
+        "same_source": false,
+        "shared_target_count": 0,
+        "shared_targets": [],
+        "shortcut_segment": {
+          "final_state": 200126,
+          "gap_steps": 1,
+          "parity_word": "0",
+          "states": [
+            400252,
+            200126
+          ],
+          "states_truncated": false
+        },
+        "signature": "0011111|3|196429|011111|1|89433",
+        "source_pair": "0011111->011111",
+        "start": 533669
+      },
+      {
+        "alignment_class_pair": "3->1",
+        "current": {
+          "alignment_class_m_mod_d": 1,
+          "alignment_m": 7,
+          "local_coverage_fraction": 0.002975463867,
+          "lock_residue_count_for_bin": 390,
+          "n": 200126,
+          "source": "011111",
+          "source_depth": 6,
+          "source_residue": 62,
+          "source_rho": "-422/179",
+          "step": 34,
+          "unit_residue": 89433,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 0,
+              "phase_t": 1,
+              "source_phase_rho": "-211/179",
+              "target": "0001111110111",
+              "target_eta": "-163096/11491",
+              "valuation_e": 0
+            }
+          ]
+        },
+        "depth_pair": "7->6",
+        "gap_shortcut_steps": 1,
+        "previous": {
+          "alignment_class_m_mod_d": 3,
+          "alignment_m": 10,
+          "local_coverage_fraction": 0.002510070801,
+          "lock_residue_count_for_bin": 329,
+          "n": 400252,
+          "source": "0011111",
+          "source_depth": 7,
+          "source_residue": 124,
+          "source_rho": "-844/115",
+          "step": 33,
+          "unit_residue": 196429,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 0,
+              "phase_t": 1,
+              "source_phase_rho": "-422/115",
+              "target": "010110111011",
+              "target_eta": "-1774/145",
+              "valuation_e": 2
+            }
+          ]
+        },
+        "same_source": false,
+        "shared_target_count": 0,
+        "shared_targets": [],
+        "shortcut_segment": {
+          "final_state": 200126,
+          "gap_steps": 1,
+          "parity_word": "0",
+          "states": [
+            400252,
+            200126
+          ],
+          "states_truncated": false
+        },
+        "signature": "0011111|3|196429|011111|1|89433",
+        "source_pair": "0011111->011111",
+        "start": 986047
+      }
+    ]
+  },
+  "status": "odd-unit-lock-transition-microscope"
+}

@@ -7,7 +7,8 @@
 **Related:**
 [`ODD-UNIT-LOCK-BRIDGE-CLASSIFIER.md`](ODD-UNIT-LOCK-BRIDGE-CLASSIFIER.md),
 [`ODD-UNIT-LOCK-TRANSITION-WITNESS-MICROSCOPE.md`](ODD-UNIT-LOCK-TRANSITION-WITNESS-MICROSCOPE.md),
-[`ODD-UNIT-LOCK-REFINEMENT.md`](ODD-UNIT-LOCK-REFINEMENT.md)
+[`ODD-UNIT-LOCK-REFINEMENT.md`](ODD-UNIT-LOCK-REFINEMENT.md),
+[`ODD-UNIT-LOCK-PERSISTENCE-LADDER.md`](ODD-UNIT-LOCK-PERSISTENCE-LADDER.md)
 
 Status: finite bridge-refinement measurement. This proves no part of the
 Collatz conjecture.
@@ -57,6 +58,47 @@ picture suggests: both higher-precision lifts project to a different current
 alignment-drop bridges preserve the low current projection, but still fail to
 be higher-precision next-lock hits.
 
+## R = 17 Stress Follow-Up
+
+The `R = 17`, odd-start scan through `1,000,000` finds only `4`
+hit-after-hit transitions against local-coverage expectation
+`136.842514038086`. Those four repeats collapse to two exact zero-fresh bridge
+geometries:
+
+| Source pair | Base repeat count | Fresh quotient bits at R=17 bridge | R=20 previous lifts | R=20 repeats | R=24 previous lifts | R=24 repeats |
+|---|---:|---:|---:|---:|---:|---:|
+| `0011111 -> 011111` | 3 | 0 | 1 | 0 | 1 | 0 |
+| `0110111111 -> 0111111` | 1 | 0 | 1 | 0 | 1 | 0 |
+
+Result files:
+[`results/odd_unit_lock_bridge_classifier_d13_R17_N1000000_20260705.json`](results/odd_unit_lock_bridge_classifier_d13_R17_N1000000_20260705.json)
+and
+[`results/odd_unit_lock_bridge_refinement_d13_R17_to_R20_R24_N1000000_20260705.json`](results/odd_unit_lock_bridge_refinement_d13_R17_to_R20_R24_N1000000_20260705.json).
+
+Interpretation: the alignment-drop loophole is not gone, but the measured
+larger-window instances still lose refined lock depth at `R = 20` and `R = 24`.
+
+## R = 18 Stress Follow-Up
+
+The `R = 18`, odd-start scan through `1,000,000` finds only `3`
+hit-after-hit transitions against local-coverage expectation
+`47.528289794922`, keeping only the dominant `R = 17` stress bridge alive:
+
+| Source pair | Base repeat count | Fresh quotient bits at R=18 bridge | R=20 previous lifts | R=20 repeats | R=24 previous lifts | R=24 repeats |
+|---|---:|---:|---:|---:|---:|---:|
+| `0011111 -> 011111` | 3 | 0 | 1 | 0 | 1 | 0 |
+
+Result files:
+[`results/odd_unit_lock_bridge_classifier_d13_R18_N1000000_20260705.json`](results/odd_unit_lock_bridge_classifier_d13_R18_N1000000_20260705.json)
+and
+[`results/odd_unit_lock_bridge_refinement_d13_R18_to_R20_R24_N1000000_20260705.json`](results/odd_unit_lock_bridge_refinement_d13_R18_to_R20_R24_N1000000_20260705.json).
+
+Interpretation: in this finite depth-13 configuration, the one-million stress
+ladder has two `R = 17` bridge families, one `R = 18` bridge family, and no
+`R = 19` repeated locks despite local-coverage expectation `17.202903747559`.
+The surviving `R = 18` measured bridge still loses refined lock depth at
+`R = 20` and `R = 24`.
+
 ## Interpretation
 
 This is the strongest local evidence so far against a persistent repeated-lock
@@ -100,6 +142,8 @@ transition-memory lab.
 - This is not a proof of Collatz.
 - It refines only the four measured `R = 16` bridge geometries from the
   depth-13, odd-start scan through `250,000`.
+- The R17/R18 stress follow-up refines only the measured bridge geometries from
+  the depth-13, odd-start scan through `1,000,000`.
 - It does not classify bridge geometries that appear at larger depth, larger
   start bounds, or different source/target libraries.
 - It does not prove that every alignment-drop bridge is harmless.
@@ -110,4 +154,8 @@ transition-memory lab.
 ```powershell
 python -m py_compile experiments\odd_unit_lock_bridge_refinement.py
 python experiments\odd_unit_lock_bridge_refinement.py --classifier experiments\results\odd_unit_lock_bridge_classifier_d13_R16_N250000_20260705.json --output experiments\results\odd_unit_lock_bridge_refinement_d13_R16_to_R20_R24_N250000_20260705.json
+python experiments\odd_unit_lock_bridge_classifier.py --input experiments\results\odd_unit_lock_transition_microscope_d13_R17_N1000000_20260705.json --output experiments\results\odd_unit_lock_bridge_classifier_d13_R17_N1000000_20260705.json --quiet
+python experiments\odd_unit_lock_bridge_refinement.py --classifier experiments\results\odd_unit_lock_bridge_classifier_d13_R17_N1000000_20260705.json --output experiments\results\odd_unit_lock_bridge_refinement_d13_R17_to_R20_R24_N1000000_20260705.json --quiet
+python experiments\odd_unit_lock_bridge_classifier.py --input experiments\results\odd_unit_lock_transition_microscope_d13_R18_N1000000_20260705.json --output experiments\results\odd_unit_lock_bridge_classifier_d13_R18_N1000000_20260705.json --quiet
+python experiments\odd_unit_lock_bridge_refinement.py --classifier experiments\results\odd_unit_lock_bridge_classifier_d13_R18_N1000000_20260705.json --output experiments\results\odd_unit_lock_bridge_refinement_d13_R18_to_R20_R24_N1000000_20260705.json --quiet
 ```

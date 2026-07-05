@@ -1,0 +1,89 @@
+{
+  "elapsed_seconds": 0.000312,
+  "families": [
+    {
+      "bridge_algebra": {
+        "F_gap_rho0_minus_rho1": "-27008/20585",
+        "base_current_diff_v2_for_k0": 7,
+        "base_current_unit_residue_mod_2^R": 89433,
+        "fresh_bits_formula_max_0_gap_plus_next_m_minus_previous_m": 0,
+        "lifted_previous_state_modulus_bits": 28,
+        "lifted_previous_state_residue": 400252,
+        "rhs_needed_for_current_unit": 0,
+        "solution": {
+          "detail": "previous lock already determines next unit modulo 2^R",
+          "fresh_quotient_bits": 0,
+          "k_modulus": 1,
+          "k_residue": 0,
+          "solvable": true
+        },
+        "unit_step_mod_2^R": 0,
+        "unit_step_v2": 20
+      },
+      "checks": {
+        "base_alignment_reaches_current_alignment": true,
+        "formula_matches_solver_fresh_bits": true,
+        "observed_current_states_match_current_residue": true,
+        "observed_previous_states_match_base_residue": true,
+        "observed_previous_states_match_lifted_residue": true
+      },
+      "current_lock": {
+        "alignment_m": 7,
+        "rho": "-422/179",
+        "source": "011111",
+        "state_modulus_bits": 25,
+        "state_residue_mod_2^(m+R)": 200126,
+        "unit_residue_mod_2^R": 89433
+      },
+      "current_state_histogram": {
+        "200126": 3
+      },
+      "gap_affine": {
+        "c": 0,
+        "formula": "(1*n + 0) / 2^1",
+        "three_power": 1
+      },
+      "gap_steps": 1,
+      "gap_word": "0",
+      "geometry_key": "0011111|m10|a3|u196429|011111|m7|a1|u89433|gap0",
+      "lock_signature": "0011111|3|196429|011111|1|89433",
+      "previous_lock": {
+        "alignment_m": 10,
+        "rho": "-844/115",
+        "source": "0011111",
+        "state_modulus_bits": 28,
+        "state_residue_mod_2^(m+R)": 400252,
+        "unit_residue_mod_2^R": 196429
+      },
+      "previous_state_histogram": {
+        "400252": 3
+      },
+      "source_pair": "0011111->011111",
+      "starts_sample": [
+        355779,
+        533669,
+        986047
+      ],
+      "transition_count": 3,
+      "unique_current_states": 1,
+      "unique_previous_states": 1
+    }
+  ],
+  "input": "experiments\\results\\odd_unit_lock_transition_microscope_d13_R18_N1000000_20260705.json",
+  "parameters": {
+    "bridge_geometries": 1,
+    "coarse_lock_signatures": 1,
+    "excess_bits": 18,
+    "transition_records": 3
+  },
+  "result": "finite symbolic classification of measured bridges; not a proof of Collatz",
+  "status": "odd-unit-lock-bridge-classifier",
+  "summary": {
+    "all_checks_passed": true,
+    "fresh_quotient_bits_histogram_by_signature": {
+      "0": 1
+    },
+    "interpretation": "Repeated locks are not one phenomenon. Some bridge families are free once the previous lock is known; others require additional quotient bits before the next lock can occur.",
+    "max_fresh_quotient_bits": 0
+  }
+}

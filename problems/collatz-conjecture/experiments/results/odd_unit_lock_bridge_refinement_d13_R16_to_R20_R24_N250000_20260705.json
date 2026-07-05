@@ -1,5 +1,5 @@
 {
-  "elapsed_seconds": 9.850207,
+  "elapsed_seconds": 11.685922,
   "families": [
     {
       "base_fresh_quotient_bits": 7,
@@ -195,7 +195,7 @@
     }
   ],
   "inputs": {
-    "classifier": "Z:\\[Vibe Coded (AI)]\\CLAUDECODE\\Unresolved Math Problems\\problems\\collatz-conjecture\\experiments\\results\\odd_unit_lock_bridge_classifier_d13_R16_N250000_20260705.json"
+    "classifier": "experiments\\results\\odd_unit_lock_bridge_classifier_d13_R16_N250000_20260705.json"
   },
   "parameters": {
     "base_bits": 16,

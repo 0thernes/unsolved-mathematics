@@ -1,0 +1,19 @@
+{
+  "elapsed_seconds": 0.000251,
+  "families": [],
+  "input": "experiments\\results\\odd_unit_lock_transition_microscope_d13_R20_N250000_20260705.json",
+  "parameters": {
+    "bridge_geometries": 0,
+    "coarse_lock_signatures": 0,
+    "excess_bits": 20,
+    "transition_records": 0
+  },
+  "result": "finite symbolic classification of measured bridges; not a proof of Collatz",
+  "status": "odd-unit-lock-bridge-classifier",
+  "summary": {
+    "all_checks_passed": true,
+    "fresh_quotient_bits_histogram_by_signature": {},
+    "interpretation": "Repeated locks are not one phenomenon. Some bridge families are free once the previous lock is known; others require additional quotient bits before the next lock can occur.",
+    "max_fresh_quotient_bits": 0
+  }
+}
