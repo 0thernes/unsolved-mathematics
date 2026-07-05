@@ -8,7 +8,8 @@
 [`ODD-UNIT-LOCK-BRIDGE-CLASSIFIER.md`](ODD-UNIT-LOCK-BRIDGE-CLASSIFIER.md),
 [`ODD-UNIT-LOCK-TRANSITION-WITNESS-MICROSCOPE.md`](ODD-UNIT-LOCK-TRANSITION-WITNESS-MICROSCOPE.md),
 [`ODD-UNIT-LOCK-REFINEMENT.md`](ODD-UNIT-LOCK-REFINEMENT.md),
-[`ODD-UNIT-LOCK-PERSISTENCE-LADDER.md`](ODD-UNIT-LOCK-PERSISTENCE-LADDER.md)
+[`ODD-UNIT-LOCK-PERSISTENCE-LADDER.md`](ODD-UNIT-LOCK-PERSISTENCE-LADDER.md),
+[`ODD-UNIT-LOCK-ALIGNMENT-DROP.md`](ODD-UNIT-LOCK-ALIGNMENT-DROP.md)
 
 Status: finite bridge-refinement measurement. This proves no part of the
 Collatz conjecture.
@@ -99,6 +100,28 @@ ladder has two `R = 17` bridge families, one `R = 18` bridge family, and no
 The surviving `R = 18` measured bridge still loses refined lock depth at
 `R = 20` and `R = 24`.
 
+## Depth-14 Stress Follow-Up
+
+The depth-14 scan through odd starts `<= 250,000` creates more coarse bridge
+families, but the measured `R = 17` survivors still fail as repeated locks when
+lifted to `R = 20` and `R = 24`.
+
+| Source pair | Base repeat count | Fresh quotient bits at R=17 bridge | R=20 previous lifts | R=20 repeats | R=24 previous lifts | R=24 repeats |
+|---|---:|---:|---:|---:|---:|---:|
+| `00110111011101 -> 01101110111` | 12 | 0 | 1 | 0 | 1 | 0 |
+| `001111101 -> 011111` | 2 | 0 | 1 | 0 | 1 | 0 |
+| `011 -> 0111` | 1 | 6 | 1 | 0 | 1 | 0 |
+
+Result files:
+[`results/odd_unit_lock_bridge_classifier_d14_R17_N250000_20260705.json`](results/odd_unit_lock_bridge_classifier_d14_R17_N250000_20260705.json)
+and
+[`results/odd_unit_lock_bridge_refinement_d14_R17_to_R20_R24_N250000_20260705.json`](results/odd_unit_lock_bridge_refinement_d14_R17_to_R20_R24_N250000_20260705.json).
+
+Interpretation: raising the finite source/target library to depth `14` exposes
+new bridge families, including two zero-fresh alignment-drop bridges. The
+current finite evidence still supports bounded refinement death, but the proof
+target must classify bridge families uniformly as the library grows.
+
 ## Interpretation
 
 This is the strongest local evidence so far against a persistent repeated-lock
@@ -144,6 +167,8 @@ transition-memory lab.
   depth-13, odd-start scan through `250,000`.
 - The R17/R18 stress follow-up refines only the measured bridge geometries from
   the depth-13, odd-start scan through `1,000,000`.
+- The depth-14 stress follow-up refines only the measured `R = 17` bridge
+  geometries from the depth-14, odd-start scan through `250,000`.
 - It does not classify bridge geometries that appear at larger depth, larger
   start bounds, or different source/target libraries.
 - It does not prove that every alignment-drop bridge is harmless.
@@ -158,4 +183,6 @@ python experiments\odd_unit_lock_bridge_classifier.py --input experiments\result
 python experiments\odd_unit_lock_bridge_refinement.py --classifier experiments\results\odd_unit_lock_bridge_classifier_d13_R17_N1000000_20260705.json --output experiments\results\odd_unit_lock_bridge_refinement_d13_R17_to_R20_R24_N1000000_20260705.json --quiet
 python experiments\odd_unit_lock_bridge_classifier.py --input experiments\results\odd_unit_lock_transition_microscope_d13_R18_N1000000_20260705.json --output experiments\results\odd_unit_lock_bridge_classifier_d13_R18_N1000000_20260705.json --quiet
 python experiments\odd_unit_lock_bridge_refinement.py --classifier experiments\results\odd_unit_lock_bridge_classifier_d13_R18_N1000000_20260705.json --output experiments\results\odd_unit_lock_bridge_refinement_d13_R18_to_R20_R24_N1000000_20260705.json --quiet
+python experiments\odd_unit_lock_bridge_classifier.py --input experiments\results\odd_unit_lock_transition_microscope_d14_R17_N250000_20260705.json --output experiments\results\odd_unit_lock_bridge_classifier_d14_R17_N250000_20260705.json --quiet
+python experiments\odd_unit_lock_bridge_refinement.py --max-depth 14 --classifier experiments\results\odd_unit_lock_bridge_classifier_d14_R17_N250000_20260705.json --output experiments\results\odd_unit_lock_bridge_refinement_d14_R17_to_R20_R24_N250000_20260705.json --quiet
 ```
