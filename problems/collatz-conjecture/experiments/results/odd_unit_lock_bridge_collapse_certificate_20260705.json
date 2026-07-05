@@ -1,0 +1,470 @@
+{
+  "checks": [
+    {
+      "detail": {
+        "16": 73,
+        "17": 0,
+        "18": 0,
+        "19": 0,
+        "20": 0,
+        "24": 0
+      },
+      "name": "fixed_250k_window_has_only_R16_repeat_bridges",
+      "passed": true
+    },
+    {
+      "detail": {
+        "17": 4,
+        "18": 3,
+        "19": 0
+      },
+      "name": "million_stress_repeats_die_by_R19",
+      "passed": true
+    },
+    {
+      "detail": {
+        "R17_state_bridges": [
+          "400252->200126",
+          "733750->825470"
+        ],
+        "R18_state_bridges": [
+          "400252->200126"
+        ]
+      },
+      "name": "million_stress_R18_state_bridges_are_subset_of_R17",
+      "passed": true
+    },
+    {
+      "detail": {
+        "16": true,
+        "17": true,
+        "18": true
+      },
+      "name": "all_bridge_classifier_checks_pass",
+      "passed": true
+    },
+    {
+      "detail": {
+        "16": {
+          "high_bits": [
+            20,
+            24
+          ],
+          "total_previous_high_lock_lifts": 8,
+          "total_refined_repeat_lifts": 0,
+          "total_same_geometry_refined_repeat_lifts": 0
+        },
+        "17": {
+          "high_bits": [
+            20,
+            24
+          ],
+          "total_previous_high_lock_lifts": 4,
+          "total_refined_repeat_lifts": 0,
+          "total_same_geometry_refined_repeat_lifts": 0
+        },
+        "18": {
+          "high_bits": [
+            20,
+            24
+          ],
+          "total_previous_high_lock_lifts": 2,
+          "total_refined_repeat_lifts": 0,
+          "total_same_geometry_refined_repeat_lifts": 0
+        }
+      },
+      "name": "all_refined_bridge_families_die",
+      "passed": true
+    },
+    {
+      "detail": {
+        "R16_N250000": 0.828363917682,
+        "R17_N1000000": 0.029230681913,
+        "R17_N250000": 0.0,
+        "R18_N1000000": 0.063120301886,
+        "R18_N250000": 0.0,
+        "R19_N1000000": 0.0,
+        "R19_N250000": 0.0,
+        "R20_N250000": 0.0,
+        "R24_N250000": 0.0
+      },
+      "name": "repeat_counts_stay_below_local_coverage_expectation",
+      "passed": true
+    }
+  ],
+  "classifier_rows": [
+    {
+      "all_checks_passed": true,
+      "base_bits": 16,
+      "bridge_geometries": 4,
+      "families": [
+        {
+          "fresh_quotient_bits": 7,
+          "gap_word": "0111",
+          "source_pair": "0111->001111",
+          "state_bridges": {
+            "current": {
+              "31292": 62
+            },
+            "previous": {
+              "18542": 62
+            }
+          },
+          "transition_count": 62
+        },
+        {
+          "fresh_quotient_bits": 0,
+          "gap_word": "011",
+          "source_pair": "011->011",
+          "state_bridges": {
+            "current": {
+              "5505398": 7
+            },
+            "previous": {
+              "4893686": 7
+            }
+          },
+          "transition_count": 7
+        },
+        {
+          "fresh_quotient_bits": 0,
+          "gap_word": "0",
+          "source_pair": "0011101111->011101111",
+          "state_bridges": {
+            "current": {
+              "1090766": 3
+            },
+            "previous": {
+              "2181532": 3
+            }
+          },
+          "transition_count": 3
+        },
+        {
+          "fresh_quotient_bits": 0,
+          "gap_word": "011",
+          "source_pair": "011->011",
+          "state_bridges": {
+            "current": {
+              "688166": 1
+            },
+            "previous": {
+              "611702": 1
+            }
+          },
+          "transition_count": 1
+        }
+      ],
+      "file": "experiments/results/odd_unit_lock_bridge_classifier_d13_R16_N250000_20260705.json",
+      "fresh_quotient_bits_histogram": {
+        "0": 3,
+        "7": 1
+      },
+      "max_fresh_quotient_bits": 7,
+      "transition_records": 73
+    },
+    {
+      "all_checks_passed": true,
+      "base_bits": 17,
+      "bridge_geometries": 2,
+      "families": [
+        {
+          "fresh_quotient_bits": 0,
+          "gap_word": "0",
+          "source_pair": "0011111->011111",
+          "state_bridges": {
+            "current": {
+              "200126": 3
+            },
+            "previous": {
+              "400252": 3
+            }
+          },
+          "transition_count": 3
+        },
+        {
+          "fresh_quotient_bits": 0,
+          "gap_word": "011",
+          "source_pair": "0110111111->0111111",
+          "state_bridges": {
+            "current": {
+              "825470": 1
+            },
+            "previous": {
+              "733750": 1
+            }
+          },
+          "transition_count": 1
+        }
+      ],
+      "file": "experiments/results/odd_unit_lock_bridge_classifier_d13_R17_N1000000_20260705.json",
+      "fresh_quotient_bits_histogram": {
+        "0": 2
+      },
+      "max_fresh_quotient_bits": 0,
+      "transition_records": 4
+    },
+    {
+      "all_checks_passed": true,
+      "base_bits": 18,
+      "bridge_geometries": 1,
+      "families": [
+        {
+          "fresh_quotient_bits": 0,
+          "gap_word": "0",
+          "source_pair": "0011111->011111",
+          "state_bridges": {
+            "current": {
+              "200126": 3
+            },
+            "previous": {
+              "400252": 3
+            }
+          },
+          "transition_count": 3
+        }
+      ],
+      "file": "experiments/results/odd_unit_lock_bridge_classifier_d13_R18_N1000000_20260705.json",
+      "fresh_quotient_bits_histogram": {
+        "0": 1
+      },
+      "max_fresh_quotient_bits": 0,
+      "transition_records": 3
+    }
+  ],
+  "elapsed_seconds": 0.004873,
+  "parameters": {
+    "classifier_artifacts": 3,
+    "refinement_artifacts": 3,
+    "results_dir": "experiments/results",
+    "transition_artifacts": 9
+  },
+  "refinement_rows": [
+    {
+      "all_measured_base_bridges_die_as_refined_repeats": true,
+      "base_bits": 16,
+      "families_checked": 4,
+      "file": "experiments/results/odd_unit_lock_bridge_refinement_d13_R16_to_R20_R24_N250000_20260705.json",
+      "high_bits": [
+        20,
+        24
+      ],
+      "low_projection_mismatches": 2,
+      "total_previous_high_lock_lifts": 8,
+      "total_refined_repeat_lifts": 0,
+      "total_same_geometry_refined_repeat_lifts": 0
+    },
+    {
+      "all_measured_base_bridges_die_as_refined_repeats": true,
+      "base_bits": 17,
+      "families_checked": 2,
+      "file": "experiments/results/odd_unit_lock_bridge_refinement_d13_R17_to_R20_R24_N1000000_20260705.json",
+      "high_bits": [
+        20,
+        24
+      ],
+      "low_projection_mismatches": 0,
+      "total_previous_high_lock_lifts": 4,
+      "total_refined_repeat_lifts": 0,
+      "total_same_geometry_refined_repeat_lifts": 0
+    },
+    {
+      "all_measured_base_bridges_die_as_refined_repeats": true,
+      "base_bits": 18,
+      "families_checked": 1,
+      "file": "experiments/results/odd_unit_lock_bridge_refinement_d13_R18_to_R20_R24_N1000000_20260705.json",
+      "high_bits": [
+        20,
+        24
+      ],
+      "low_projection_mismatches": 0,
+      "total_previous_high_lock_lifts": 2,
+      "total_refined_repeat_lifts": 0,
+      "total_same_geometry_refined_repeat_lifts": 0
+    }
+  ],
+  "result": "finite bridge collapse certificate; not a proof of Collatz",
+  "status": "odd-unit-lock-bridge-collapse-certificate",
+  "summary": {
+    "all_checks_passed": true,
+    "fixed_250k_R16_repeat_transitions": 73,
+    "fixed_250k_R17_to_R24_repeat_transitions": {
+      "17": 0,
+      "18": 0,
+      "19": 0,
+      "20": 0,
+      "24": 0
+    },
+    "interpretation": "In the checked depth-13 windows, repeated odd-unit locks are a coarse-precision bridge phenomenon: R16 repeats exist, R17/R18 stress repeats compress to tiny state bridges, and all measured bridge families fail the R20/R24 refinement test.",
+    "million_stress_R18_state_bridges": [
+      "400252->200126"
+    ],
+    "million_stress_repeat_transitions": {
+      "17": 4,
+      "18": 3,
+      "19": 0
+    },
+    "refinement_base_bits_checked": [
+      16,
+      17,
+      18
+    ],
+    "total_refined_repeat_lifts": 0
+  },
+  "transition_rows": [
+    {
+      "different_source_repeat_count": 65,
+      "excess_bits": 16,
+      "expected_hit_after_hit_from_local_coverage": 88.125518798828,
+      "file": "experiments/results/odd_unit_lock_transition_microscope_d13_R16_N250000_20260705.json",
+      "hit_after_hit_transitions": 73,
+      "lock_hits": 8554,
+      "observed_over_expected_hit_after_hit": 0.828363917682,
+      "odd_starts_scanned": 124999,
+      "previous_hit_transitions": 8549,
+      "same_source_repeat_count": 8,
+      "source_visits": 1629627,
+      "start_limit": 250000,
+      "starts_with_repeat_count": 73,
+      "state_bridge_histogram": {
+        "18542->31292": 62,
+        "2181532->1090766": 3,
+        "4893686->5505398": 7,
+        "611702->688166": 1
+      }
+    },
+    {
+      "different_source_repeat_count": 0,
+      "excess_bits": 17,
+      "expected_hit_after_hit_from_local_coverage": 28.565139770508,
+      "file": "experiments/results/odd_unit_lock_transition_microscope_d13_R17_N250000_20260705.json",
+      "hit_after_hit_transitions": 0,
+      "lock_hits": 5545,
+      "observed_over_expected_hit_after_hit": 0.0,
+      "odd_starts_scanned": 124999,
+      "previous_hit_transitions": 5540,
+      "same_source_repeat_count": 0,
+      "source_visits": 1629627,
+      "start_limit": 250000,
+      "starts_with_repeat_count": 0,
+      "state_bridge_histogram": {}
+    },
+    {
+      "different_source_repeat_count": 0,
+      "excess_bits": 18,
+      "expected_hit_after_hit_from_local_coverage": 10.353897094727,
+      "file": "experiments/results/odd_unit_lock_transition_microscope_d13_R18_N250000_20260705.json",
+      "hit_after_hit_transitions": 0,
+      "lock_hits": 4096,
+      "observed_over_expected_hit_after_hit": 0.0,
+      "odd_starts_scanned": 124999,
+      "previous_hit_transitions": 4096,
+      "same_source_repeat_count": 0,
+      "source_visits": 1629627,
+      "start_limit": 250000,
+      "starts_with_repeat_count": 0,
+      "state_bridge_histogram": {}
+    },
+    {
+      "different_source_repeat_count": 0,
+      "excess_bits": 19,
+      "expected_hit_after_hit_from_local_coverage": 3.892978668213,
+      "file": "experiments/results/odd_unit_lock_transition_microscope_d13_R19_N250000_20260705.json",
+      "hit_after_hit_transitions": 0,
+      "lock_hits": 3083,
+      "observed_over_expected_hit_after_hit": 0.0,
+      "odd_starts_scanned": 124999,
+      "previous_hit_transitions": 3083,
+      "same_source_repeat_count": 0,
+      "source_visits": 1629627,
+      "start_limit": 250000,
+      "starts_with_repeat_count": 0,
+      "state_bridge_histogram": {}
+    },
+    {
+      "different_source_repeat_count": 0,
+      "excess_bits": 20,
+      "expected_hit_after_hit_from_local_coverage": 1.829259872437,
+      "file": "experiments/results/odd_unit_lock_transition_microscope_d13_R20_N250000_20260705.json",
+      "hit_after_hit_transitions": 0,
+      "lock_hits": 2889,
+      "observed_over_expected_hit_after_hit": 0.0,
+      "odd_starts_scanned": 124999,
+      "previous_hit_transitions": 2889,
+      "same_source_repeat_count": 0,
+      "source_visits": 1629627,
+      "start_limit": 250000,
+      "starts_with_repeat_count": 0,
+      "state_bridge_histogram": {}
+    },
+    {
+      "different_source_repeat_count": 0,
+      "excess_bits": 24,
+      "expected_hit_after_hit_from_local_coverage": 0.097301363945,
+      "file": "experiments/results/odd_unit_lock_transition_microscope_d13_R24_N250000_20260705.json",
+      "hit_after_hit_transitions": 0,
+      "lock_hits": 2094,
+      "observed_over_expected_hit_after_hit": 0.0,
+      "odd_starts_scanned": 124999,
+      "previous_hit_transitions": 2094,
+      "same_source_repeat_count": 0,
+      "source_visits": 1629627,
+      "start_limit": 250000,
+      "starts_with_repeat_count": 0,
+      "state_bridge_histogram": {}
+    },
+    {
+      "different_source_repeat_count": 4,
+      "excess_bits": 17,
+      "expected_hit_after_hit_from_local_coverage": 136.842514038086,
+      "file": "experiments/results/odd_unit_lock_transition_microscope_d13_R17_N1000000_20260705.json",
+      "hit_after_hit_transitions": 4,
+      "lock_hits": 26664,
+      "observed_over_expected_hit_after_hit": 0.029230681913,
+      "odd_starts_scanned": 499999,
+      "previous_hit_transitions": 26641,
+      "same_source_repeat_count": 0,
+      "source_visits": 7374595,
+      "start_limit": 1000000,
+      "starts_with_repeat_count": 4,
+      "state_bridge_histogram": {
+        "400252->200126": 3,
+        "733750->825470": 1
+      }
+    },
+    {
+      "different_source_repeat_count": 3,
+      "excess_bits": 18,
+      "expected_hit_after_hit_from_local_coverage": 47.528289794922,
+      "file": "experiments/results/odd_unit_lock_transition_microscope_d13_R18_N1000000_20260705.json",
+      "hit_after_hit_transitions": 3,
+      "lock_hits": 18816,
+      "observed_over_expected_hit_after_hit": 0.063120301886,
+      "odd_starts_scanned": 499999,
+      "previous_hit_transitions": 18811,
+      "same_source_repeat_count": 0,
+      "source_visits": 7374595,
+      "start_limit": 1000000,
+      "starts_with_repeat_count": 3,
+      "state_bridge_histogram": {
+        "400252->200126": 3
+      }
+    },
+    {
+      "different_source_repeat_count": 0,
+      "excess_bits": 19,
+      "expected_hit_after_hit_from_local_coverage": 17.202903747559,
+      "file": "experiments/results/odd_unit_lock_transition_microscope_d13_R19_N1000000_20260705.json",
+      "hit_after_hit_transitions": 0,
+      "lock_hits": 13586,
+      "observed_over_expected_hit_after_hit": 0.0,
+      "odd_starts_scanned": 499999,
+      "previous_hit_transitions": 13581,
+      "same_source_repeat_count": 0,
+      "source_visits": 7374595,
+      "start_limit": 1000000,
+      "starts_with_repeat_count": 0,
+      "state_bridge_histogram": {}
+    }
+  ]
+}
