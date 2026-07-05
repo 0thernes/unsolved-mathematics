@@ -1,0 +1,48 @@
+{
+  "elapsed_seconds": 16.559376,
+  "interpretation": "Raw hit-after-hit counts can be misleading because positive Collatz orbits merge. Unique edge counts reveal whether the rare chained locks are many mechanisms or one shared orbit bridge.",
+  "library": {
+    "canonical_primitive_sources": 244,
+    "source_depths": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "unique_target_spines": 244
+  },
+  "parameters": {
+    "bits": 24,
+    "max_depth": 13,
+    "max_steps": 512,
+    "min_source_depth": 3,
+    "odd_starts_only": true,
+    "start_limit": 50000,
+    "witness_sample_limit": 24
+  },
+  "result": "finite measurement only; not a proof of Collatz",
+  "scan": {
+    "R_bit_hit_visits": 430,
+    "bridge_word_histogram": {},
+    "canonical_source_visits": 274989,
+    "dedupe_ratio_raw_per_unique": 0.0,
+    "hit_after_hit_raw_transition_count": 0,
+    "hit_after_hit_unique_edge_count": 0,
+    "next_state_histogram": {},
+    "previous_hit_transitions": 430,
+    "previous_state_histogram": {},
+    "raw_transitions": [],
+    "source_pair_histogram": {},
+    "starts_reaching_one_within_cap": 24999,
+    "starts_scanned": 24999,
+    "unique_edges": []
+  },
+  "status": "odd-unit-lock-transition-witness-microscope"
+}

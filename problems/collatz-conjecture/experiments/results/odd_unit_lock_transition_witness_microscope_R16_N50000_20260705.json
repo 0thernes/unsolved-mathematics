@@ -1,0 +1,878 @@
+{
+  "elapsed_seconds": 13.713622,
+  "interpretation": "Raw hit-after-hit counts can be misleading because positive Collatz orbits merge. Unique edge counts reveal whether the rare chained locks are many mechanisms or one shared orbit bridge.",
+  "library": {
+    "canonical_primitive_sources": 244,
+    "source_depths": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "unique_target_spines": 244
+  },
+  "parameters": {
+    "bits": 16,
+    "max_depth": 13,
+    "max_steps": 512,
+    "min_source_depth": 3,
+    "odd_starts_only": true,
+    "start_limit": 50000,
+    "witness_sample_limit": 24
+  },
+  "result": "finite measurement only; not a proof of Collatz",
+  "scan": {
+    "R_bit_hit_visits": 1258,
+    "bridge_word_histogram": {
+      "0111": 12
+    },
+    "canonical_source_visits": 274989,
+    "dedupe_ratio_raw_per_unique": 12.0,
+    "hit_after_hit_raw_transition_count": 12,
+    "hit_after_hit_unique_edge_count": 1,
+    "next_state_histogram": {
+      "31292": 12
+    },
+    "previous_hit_transitions": 1258,
+    "previous_state_histogram": {
+      "18542": 12
+    },
+    "raw_transitions": [
+      {
+        "bridge": {
+          "gap_shortcut_steps": 4,
+          "parity_word_01": "0111",
+          "parity_word_EO": "EOOO",
+          "states": [
+            18542,
+            9271,
+            13907,
+            20861,
+            31292
+          ]
+        },
+        "next": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 8,
+          "local_coverage_fraction": 0.012786865234,
+          "lock_residue_count_in_union": 419,
+          "n": 31292,
+          "source": "001111",
+          "source_depth": 6,
+          "step": 8,
+          "unit_residue_mod_2^R": 46383,
+          "witness_lock_count_for_this_residue": 1,
+          "witness_samples": [
+            {
+              "odd_prefix_a": 0,
+              "source_phase_t": 0,
+              "target": "0001111111111",
+              "valuation_e": 2
+            }
+          ],
+          "witness_targets_sample": [
+            "0001111111111"
+          ]
+        },
+        "previous": {
+          "alignment_class_m_mod_d": 1,
+          "alignment_m": 5,
+          "local_coverage_fraction": 0.011901855469,
+          "lock_residue_count_in_union": 390,
+          "n": 18542,
+          "source": "0111",
+          "source_depth": 4,
+          "step": 4,
+          "unit_residue_mod_2^R": 18453,
+          "witness_lock_count_for_this_residue": 1,
+          "witness_samples": [
+            {
+              "odd_prefix_a": 0,
+              "source_phase_t": 1,
+              "target": "0011111101011",
+              "valuation_e": 0
+            }
+          ],
+          "witness_targets_sample": [
+            "0011111101011"
+          ]
+        },
+        "shared_witness_targets_in_samples": [],
+        "start": 10987
+      },
+      {
+        "bridge": {
+          "gap_shortcut_steps": 4,
+          "parity_word_01": "0111",
+          "parity_word_EO": "EOOO",
+          "states": [
+            18542,
+            9271,
+            13907,
+            20861,
+            31292
+          ]
+        },
+        "next": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 8,
+          "local_coverage_fraction": 0.012786865234,
+          "lock_residue_count_in_union": 419,
+          "n": 31292,
+          "source": "001111",
+          "source_depth": 6,
+          "step": 5,
+          "unit_residue_mod_2^R": 46383,
+          "witness_lock_count_for_this_residue": 1,
+          "witness_samples": [
+            {
+              "odd_prefix_a": 0,
+              "source_phase_t": 0,
+              "target": "0001111111111",
+              "valuation_e": 2
+            }
+          ],
+          "witness_targets_sample": [
+            "0001111111111"
+          ]
+        },
+        "previous": {
+          "alignment_class_m_mod_d": 1,
+          "alignment_m": 5,
+          "local_coverage_fraction": 0.011901855469,
+          "lock_residue_count_in_union": 390,
+          "n": 18542,
+          "source": "0111",
+          "source_depth": 4,
+          "step": 1,
+          "unit_residue_mod_2^R": 18453,
+          "witness_lock_count_for_this_residue": 1,
+          "witness_samples": [
+            {
+              "odd_prefix_a": 0,
+              "source_phase_t": 1,
+              "target": "0011111101011",
+              "valuation_e": 0
+            }
+          ],
+          "witness_targets_sample": [
+            "0011111101011"
+          ]
+        },
+        "shared_witness_targets_in_samples": [],
+        "start": 12361
+      },
+      {
+        "bridge": {
+          "gap_shortcut_steps": 4,
+          "parity_word_01": "0111",
+          "parity_word_EO": "EOOO",
+          "states": [
+            18542,
+            9271,
+            13907,
+            20861,
+            31292
+          ]
+        },
+        "next": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 8,
+          "local_coverage_fraction": 0.012786865234,
+          "lock_residue_count_in_union": 419,
+          "n": 31292,
+          "source": "001111",
+          "source_depth": 6,
+          "step": 10,
+          "unit_residue_mod_2^R": 46383,
+          "witness_lock_count_for_this_residue": 1,
+          "witness_samples": [
+            {
+              "odd_prefix_a": 0,
+              "source_phase_t": 0,
+              "target": "0001111111111",
+              "valuation_e": 2
+            }
+          ],
+          "witness_targets_sample": [
+            "0001111111111"
+          ]
+        },
+        "previous": {
+          "alignment_class_m_mod_d": 1,
+          "alignment_m": 5,
+          "local_coverage_fraction": 0.011901855469,
+          "lock_residue_count_in_union": 390,
+          "n": 18542,
+          "source": "0111",
+          "source_depth": 4,
+          "step": 6,
+          "unit_residue_mod_2^R": 18453,
+          "witness_lock_count_for_this_residue": 1,
+          "witness_samples": [
+            {
+              "odd_prefix_a": 0,
+              "source_phase_t": 1,
+              "target": "0011111101011",
+              "valuation_e": 0
+            }
+          ],
+          "witness_targets_sample": [
+            "0011111101011"
+          ]
+        },
+        "shared_witness_targets_in_samples": [],
+        "start": 14649
+      },
+      {
+        "bridge": {
+          "gap_shortcut_steps": 4,
+          "parity_word_01": "0111",
+          "parity_word_EO": "EOOO",
+          "states": [
+            18542,
+            9271,
+            13907,
+            20861,
+            31292
+          ]
+        },
+        "next": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 8,
+          "local_coverage_fraction": 0.012786865234,
+          "lock_residue_count_in_union": 419,
+          "n": 31292,
+          "source": "001111",
+          "source_depth": 6,
+          "step": 7,
+          "unit_residue_mod_2^R": 46383,
+          "witness_lock_count_for_this_residue": 1,
+          "witness_samples": [
+            {
+              "odd_prefix_a": 0,
+              "source_phase_t": 0,
+              "target": "0001111111111",
+              "valuation_e": 2
+            }
+          ],
+          "witness_targets_sample": [
+            "0001111111111"
+          ]
+        },
+        "previous": {
+          "alignment_class_m_mod_d": 1,
+          "alignment_m": 5,
+          "local_coverage_fraction": 0.011901855469,
+          "lock_residue_count_in_union": 390,
+          "n": 18542,
+          "source": "0111",
+          "source_depth": 4,
+          "step": 3,
+          "unit_residue_mod_2^R": 18453,
+          "witness_lock_count_for_this_residue": 1,
+          "witness_samples": [
+            {
+              "odd_prefix_a": 0,
+              "source_phase_t": 1,
+              "target": "0011111101011",
+              "valuation_e": 0
+            }
+          ],
+          "witness_targets_sample": [
+            "0011111101011"
+          ]
+        },
+        "shared_witness_targets_in_samples": [],
+        "start": 16481
+      },
+      {
+        "bridge": {
+          "gap_shortcut_steps": 4,
+          "parity_word_01": "0111",
+          "parity_word_EO": "EOOO",
+          "states": [
+            18542,
+            9271,
+            13907,
+            20861,
+            31292
+          ]
+        },
+        "next": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 8,
+          "local_coverage_fraction": 0.012786865234,
+          "lock_residue_count_in_union": 419,
+          "n": 31292,
+          "source": "001111",
+          "source_depth": 6,
+          "step": 9,
+          "unit_residue_mod_2^R": 46383,
+          "witness_lock_count_for_this_residue": 1,
+          "witness_samples": [
+            {
+              "odd_prefix_a": 0,
+              "source_phase_t": 0,
+              "target": "0001111111111",
+              "valuation_e": 2
+            }
+          ],
+          "witness_targets_sample": [
+            "0001111111111"
+          ]
+        },
+        "previous": {
+          "alignment_class_m_mod_d": 1,
+          "alignment_m": 5,
+          "local_coverage_fraction": 0.011901855469,
+          "lock_residue_count_in_union": 390,
+          "n": 18542,
+          "source": "0111",
+          "source_depth": 4,
+          "step": 5,
+          "unit_residue_mod_2^R": 18453,
+          "witness_lock_count_for_this_residue": 1,
+          "witness_samples": [
+            {
+              "odd_prefix_a": 0,
+              "source_phase_t": 1,
+              "target": "0011111101011",
+              "valuation_e": 0
+            }
+          ],
+          "witness_targets_sample": [
+            "0011111101011"
+          ]
+        },
+        "shared_witness_targets_in_samples": [],
+        "start": 21975
+      },
+      {
+        "bridge": {
+          "gap_shortcut_steps": 4,
+          "parity_word_01": "0111",
+          "parity_word_EO": "EOOO",
+          "states": [
+            18542,
+            9271,
+            13907,
+            20861,
+            31292
+          ]
+        },
+        "next": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 8,
+          "local_coverage_fraction": 0.012786865234,
+          "lock_residue_count_in_union": 419,
+          "n": 31292,
+          "source": "001111",
+          "source_depth": 6,
+          "step": 14,
+          "unit_residue_mod_2^R": 46383,
+          "witness_lock_count_for_this_residue": 1,
+          "witness_samples": [
+            {
+              "odd_prefix_a": 0,
+              "source_phase_t": 0,
+              "target": "0001111111111",
+              "valuation_e": 2
+            }
+          ],
+          "witness_targets_sample": [
+            "0001111111111"
+          ]
+        },
+        "previous": {
+          "alignment_class_m_mod_d": 1,
+          "alignment_m": 5,
+          "local_coverage_fraction": 0.011901855469,
+          "lock_residue_count_in_union": 390,
+          "n": 18542,
+          "source": "0111",
+          "source_depth": 4,
+          "step": 10,
+          "unit_residue_mod_2^R": 18453,
+          "witness_lock_count_for_this_residue": 1,
+          "witness_samples": [
+            {
+              "odd_prefix_a": 0,
+              "source_phase_t": 1,
+              "target": "0011111101011",
+              "valuation_e": 0
+            }
+          ],
+          "witness_targets_sample": [
+            "0011111101011"
+          ]
+        },
+        "shared_witness_targets_in_samples": [],
+        "start": 26043
+      },
+      {
+        "bridge": {
+          "gap_shortcut_steps": 4,
+          "parity_word_01": "0111",
+          "parity_word_EO": "EOOO",
+          "states": [
+            18542,
+            9271,
+            13907,
+            20861,
+            31292
+          ]
+        },
+        "next": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 8,
+          "local_coverage_fraction": 0.012786865234,
+          "lock_residue_count_in_union": 419,
+          "n": 31292,
+          "source": "001111",
+          "source_depth": 6,
+          "step": 11,
+          "unit_residue_mod_2^R": 46383,
+          "witness_lock_count_for_this_residue": 1,
+          "witness_samples": [
+            {
+              "odd_prefix_a": 0,
+              "source_phase_t": 0,
+              "target": "0001111111111",
+              "valuation_e": 2
+            }
+          ],
+          "witness_targets_sample": [
+            "0001111111111"
+          ]
+        },
+        "previous": {
+          "alignment_class_m_mod_d": 1,
+          "alignment_m": 5,
+          "local_coverage_fraction": 0.011901855469,
+          "lock_residue_count_in_union": 390,
+          "n": 18542,
+          "source": "0111",
+          "source_depth": 4,
+          "step": 7,
+          "unit_residue_mod_2^R": 18453,
+          "witness_lock_count_for_this_residue": 1,
+          "witness_samples": [
+            {
+              "odd_prefix_a": 0,
+              "source_phase_t": 1,
+              "target": "0011111101011",
+              "valuation_e": 0
+            }
+          ],
+          "witness_targets_sample": [
+            "0011111101011"
+          ]
+        },
+        "shared_witness_targets_in_samples": [],
+        "start": 29299
+      },
+      {
+        "bridge": {
+          "gap_shortcut_steps": 4,
+          "parity_word_01": "0111",
+          "parity_word_EO": "EOOO",
+          "states": [
+            18542,
+            9271,
+            13907,
+            20861,
+            31292
+          ]
+        },
+        "next": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 8,
+          "local_coverage_fraction": 0.012786865234,
+          "lock_residue_count_in_union": 419,
+          "n": 31292,
+          "source": "001111",
+          "source_depth": 6,
+          "step": 8,
+          "unit_residue_mod_2^R": 46383,
+          "witness_lock_count_for_this_residue": 1,
+          "witness_samples": [
+            {
+              "odd_prefix_a": 0,
+              "source_phase_t": 0,
+              "target": "0001111111111",
+              "valuation_e": 2
+            }
+          ],
+          "witness_targets_sample": [
+            "0001111111111"
+          ]
+        },
+        "previous": {
+          "alignment_class_m_mod_d": 1,
+          "alignment_m": 5,
+          "local_coverage_fraction": 0.011901855469,
+          "lock_residue_count_in_union": 390,
+          "n": 18542,
+          "source": "0111",
+          "source_depth": 4,
+          "step": 4,
+          "unit_residue_mod_2^R": 18453,
+          "witness_lock_count_for_this_residue": 1,
+          "witness_samples": [
+            {
+              "odd_prefix_a": 0,
+              "source_phase_t": 1,
+              "target": "0011111101011",
+              "valuation_e": 0
+            }
+          ],
+          "witness_targets_sample": [
+            "0011111101011"
+          ]
+        },
+        "shared_witness_targets_in_samples": [],
+        "start": 32963
+      },
+      {
+        "bridge": {
+          "gap_shortcut_steps": 4,
+          "parity_word_01": "0111",
+          "parity_word_EO": "EOOO",
+          "states": [
+            18542,
+            9271,
+            13907,
+            20861,
+            31292
+          ]
+        },
+        "next": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 8,
+          "local_coverage_fraction": 0.012786865234,
+          "lock_residue_count_in_union": 419,
+          "n": 31292,
+          "source": "001111",
+          "source_depth": 6,
+          "step": 13,
+          "unit_residue_mod_2^R": 46383,
+          "witness_lock_count_for_this_residue": 1,
+          "witness_samples": [
+            {
+              "odd_prefix_a": 0,
+              "source_phase_t": 0,
+              "target": "0001111111111",
+              "valuation_e": 2
+            }
+          ],
+          "witness_targets_sample": [
+            "0001111111111"
+          ]
+        },
+        "previous": {
+          "alignment_class_m_mod_d": 1,
+          "alignment_m": 5,
+          "local_coverage_fraction": 0.011901855469,
+          "lock_residue_count_in_union": 390,
+          "n": 18542,
+          "source": "0111",
+          "source_depth": 4,
+          "step": 9,
+          "unit_residue_mod_2^R": 18453,
+          "witness_lock_count_for_this_residue": 1,
+          "witness_samples": [
+            {
+              "odd_prefix_a": 0,
+              "source_phase_t": 1,
+              "target": "0011111101011",
+              "valuation_e": 0
+            }
+          ],
+          "witness_targets_sample": [
+            "0011111101011"
+          ]
+        },
+        "shared_witness_targets_in_samples": [],
+        "start": 39065
+      },
+      {
+        "bridge": {
+          "gap_shortcut_steps": 4,
+          "parity_word_01": "0111",
+          "parity_word_EO": "EOOO",
+          "states": [
+            18542,
+            9271,
+            13907,
+            20861,
+            31292
+          ]
+        },
+        "next": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 8,
+          "local_coverage_fraction": 0.012786865234,
+          "lock_residue_count_in_union": 419,
+          "n": 31292,
+          "source": "001111",
+          "source_depth": 6,
+          "step": 10,
+          "unit_residue_mod_2^R": 46383,
+          "witness_lock_count_for_this_residue": 1,
+          "witness_samples": [
+            {
+              "odd_prefix_a": 0,
+              "source_phase_t": 0,
+              "target": "0001111111111",
+              "valuation_e": 2
+            }
+          ],
+          "witness_targets_sample": [
+            "0001111111111"
+          ]
+        },
+        "previous": {
+          "alignment_class_m_mod_d": 1,
+          "alignment_m": 5,
+          "local_coverage_fraction": 0.011901855469,
+          "lock_residue_count_in_union": 390,
+          "n": 18542,
+          "source": "0111",
+          "source_depth": 4,
+          "step": 6,
+          "unit_residue_mod_2^R": 18453,
+          "witness_lock_count_for_this_residue": 1,
+          "witness_samples": [
+            {
+              "odd_prefix_a": 0,
+              "source_phase_t": 1,
+              "target": "0011111101011",
+              "valuation_e": 0
+            }
+          ],
+          "witness_targets_sample": [
+            "0011111101011"
+          ]
+        },
+        "shared_witness_targets_in_samples": [],
+        "start": 43949
+      },
+      {
+        "bridge": {
+          "gap_shortcut_steps": 4,
+          "parity_word_01": "0111",
+          "parity_word_EO": "EOOO",
+          "states": [
+            18542,
+            9271,
+            13907,
+            20861,
+            31292
+          ]
+        },
+        "next": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 8,
+          "local_coverage_fraction": 0.012786865234,
+          "lock_residue_count_in_union": 419,
+          "n": 31292,
+          "source": "001111",
+          "source_depth": 6,
+          "step": 18,
+          "unit_residue_mod_2^R": 46383,
+          "witness_lock_count_for_this_residue": 1,
+          "witness_samples": [
+            {
+              "odd_prefix_a": 0,
+              "source_phase_t": 0,
+              "target": "0001111111111",
+              "valuation_e": 2
+            }
+          ],
+          "witness_targets_sample": [
+            "0001111111111"
+          ]
+        },
+        "previous": {
+          "alignment_class_m_mod_d": 1,
+          "alignment_m": 5,
+          "local_coverage_fraction": 0.011901855469,
+          "lock_residue_count_in_union": 390,
+          "n": 18542,
+          "source": "0111",
+          "source_depth": 4,
+          "step": 14,
+          "unit_residue_mod_2^R": 18453,
+          "witness_lock_count_for_this_residue": 1,
+          "witness_samples": [
+            {
+              "odd_prefix_a": 0,
+              "source_phase_t": 1,
+              "target": "0011111101011",
+              "valuation_e": 0
+            }
+          ],
+          "witness_targets_sample": [
+            "0011111101011"
+          ]
+        },
+        "shared_witness_targets_in_samples": [],
+        "start": 46299
+      },
+      {
+        "bridge": {
+          "gap_shortcut_steps": 4,
+          "parity_word_01": "0111",
+          "parity_word_EO": "EOOO",
+          "states": [
+            18542,
+            9271,
+            13907,
+            20861,
+            31292
+          ]
+        },
+        "next": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 8,
+          "local_coverage_fraction": 0.012786865234,
+          "lock_residue_count_in_union": 419,
+          "n": 31292,
+          "source": "001111",
+          "source_depth": 6,
+          "step": 7,
+          "unit_residue_mod_2^R": 46383,
+          "witness_lock_count_for_this_residue": 1,
+          "witness_samples": [
+            {
+              "odd_prefix_a": 0,
+              "source_phase_t": 0,
+              "target": "0001111111111",
+              "valuation_e": 2
+            }
+          ],
+          "witness_targets_sample": [
+            "0001111111111"
+          ]
+        },
+        "previous": {
+          "alignment_class_m_mod_d": 1,
+          "alignment_m": 5,
+          "local_coverage_fraction": 0.011901855469,
+          "lock_residue_count_in_union": 390,
+          "n": 18542,
+          "source": "0111",
+          "source_depth": 4,
+          "step": 3,
+          "unit_residue_mod_2^R": 18453,
+          "witness_lock_count_for_this_residue": 1,
+          "witness_samples": [
+            {
+              "odd_prefix_a": 0,
+              "source_phase_t": 1,
+              "target": "0011111101011",
+              "valuation_e": 0
+            }
+          ],
+          "witness_targets_sample": [
+            "0011111101011"
+          ]
+        },
+        "shared_witness_targets_in_samples": [],
+        "start": 49445
+      }
+    ],
+    "source_pair_histogram": {
+      "0111->001111": 12
+    },
+    "starts_reaching_one_within_cap": 24999,
+    "starts_scanned": 24999,
+    "unique_edges": [
+      {
+        "bridge": {
+          "gap_shortcut_steps": 4,
+          "parity_word_01": "0111",
+          "parity_word_EO": "EOOO",
+          "states": [
+            18542,
+            9271,
+            13907,
+            20861,
+            31292
+          ]
+        },
+        "next": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 8,
+          "local_coverage_fraction": 0.012786865234,
+          "lock_residue_count_in_union": 419,
+          "n": 31292,
+          "source": "001111",
+          "source_depth": 6,
+          "step": 8,
+          "unit_residue_mod_2^R": 46383,
+          "witness_lock_count_for_this_residue": 1,
+          "witness_samples": [
+            {
+              "odd_prefix_a": 0,
+              "source_phase_t": 0,
+              "target": "0001111111111",
+              "valuation_e": 2
+            }
+          ],
+          "witness_targets_sample": [
+            "0001111111111"
+          ]
+        },
+        "previous": {
+          "alignment_class_m_mod_d": 1,
+          "alignment_m": 5,
+          "local_coverage_fraction": 0.011901855469,
+          "lock_residue_count_in_union": 390,
+          "n": 18542,
+          "source": "0111",
+          "source_depth": 4,
+          "step": 4,
+          "unit_residue_mod_2^R": 18453,
+          "witness_lock_count_for_this_residue": 1,
+          "witness_samples": [
+            {
+              "odd_prefix_a": 0,
+              "source_phase_t": 1,
+              "target": "0011111101011",
+              "valuation_e": 0
+            }
+          ],
+          "witness_targets_sample": [
+            "0011111101011"
+          ]
+        },
+        "shared_witness_targets_in_samples": [],
+        "start_count": 12,
+        "starts": [
+          10987,
+          12361,
+          14649,
+          16481,
+          21975,
+          26043,
+          29299,
+          32963,
+          39065,
+          43949,
+          46299,
+          49445
+        ]
+      }
+    ]
+  },
+  "status": "odd-unit-lock-transition-witness-microscope"
+}

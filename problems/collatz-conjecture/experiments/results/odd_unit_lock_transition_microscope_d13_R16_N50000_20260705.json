@@ -1,0 +1,996 @@
+{
+  "checks": [
+    {
+      "detail": {
+        "starts_reaching_one_within_cap": 24999,
+        "starts_scanned": 24999
+      },
+      "name": "all_scanned_positive_starts_reach_one_within_cap",
+      "passed": true
+    },
+    {
+      "detail": {
+        "excess_bits": 16,
+        "observed_over_expected_hit_after_hit": 0.923779542358
+      },
+      "name": "hit_after_hit_not_above_twice_local_coverage_baseline",
+      "passed": true
+    },
+    {
+      "detail": {
+        "baseline": 12,
+        "hit_after_hit_transitions": 12
+      },
+      "name": "default_r16_repeat_hit_count_matches_transition_lab",
+      "passed": true
+    },
+    {
+      "detail": {
+        "same_source_repeat_count": 0
+      },
+      "name": "default_r16_same_source_repeat_hits_absent",
+      "passed": true
+    }
+  ],
+  "classification": {
+    "all_repeat_hits_cross_source": true,
+    "dominant_gap": "4",
+    "dominant_source_pair": "0111->001111",
+    "interpretation": "If repeat hits all cross source labels and do not collapse to one signature, the next theorem target is a transition-family classifier, not a same-spine persistence lemma.",
+    "repeated_signature_count": 1,
+    "repeated_signatures": {
+      "0111|1|18453|001111|2|46383": 12
+    }
+  },
+  "elapsed_seconds": 8.002891,
+  "library": {
+    "canonical_primitive_sources": 244,
+    "lock_witness_keys": 680686,
+    "source_depths": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ]
+  },
+  "parameters": {
+    "excess_bits": 16,
+    "max_depth": 13,
+    "max_steps": 512,
+    "min_source_depth": 3,
+    "odd_starts_only": true,
+    "start_limit": 50000
+  },
+  "result": "finite measurement only; not a proof of Collatz",
+  "scan": {
+    "alignment_class_pair_histogram": {
+      "1->2": 12
+    },
+    "depth_pair_histogram": {
+      "4->6": 12
+    },
+    "different_source_repeat_count": 12,
+    "expected_hit_after_hit_from_local_coverage": 12.990112304688,
+    "expected_hits_from_local_coverage": 2672.0048828125,
+    "gap_histogram": {
+      "4": 12
+    },
+    "hit_after_hit_fraction": 0.009538950715,
+    "hit_after_hit_transitions": 12,
+    "hit_fraction": 0.004574728444,
+    "observed_over_expected_hit_after_hit": 0.923779542358,
+    "observed_over_expected_hits": 0.47080752288,
+    "previous_hit_transitions": 1258,
+    "same_source_repeat_count": 0,
+    "shared_target_count_histogram": {
+      "0": 12
+    },
+    "shortcut_segment_parity_histogram": {
+      "0111": 12
+    },
+    "signature_histogram": {
+      "0111|1|18453|001111|2|46383": 12
+    },
+    "source_pair_histogram": {
+      "0111->001111": 12
+    },
+    "starts_reaching_one_within_cap": 24999,
+    "starts_scanned": 24999,
+    "starts_with_repeat": [
+      10987,
+      12361,
+      14649,
+      16481,
+      21975,
+      26043,
+      29299,
+      32963,
+      39065,
+      43949,
+      46299,
+      49445
+    ],
+    "starts_with_repeat_count": 12,
+    "top_matching_targets_across_pairs": {
+      "0001111111111": 12,
+      "0011111101011": 12
+    },
+    "total_canonical_source_visits": 274989,
+    "total_lock_hits": 1258,
+    "total_shortcut_states_examined": 1792633,
+    "transitions": [
+      {
+        "alignment_class_pair": "1->2",
+        "current": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 8,
+          "local_coverage_fraction": 0.012786865234,
+          "lock_residue_count_for_bin": 419,
+          "n": 31292,
+          "source": "001111",
+          "source_depth": 6,
+          "source_residue": 60,
+          "source_rho": "-260/17",
+          "step": 8,
+          "unit_residue": 46383,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 0,
+              "phase_t": 0,
+              "source_phase_rho": "-260/17",
+              "target": "0001111111111",
+              "target_eta": "-464200/50857",
+              "valuation_e": 2
+            }
+          ]
+        },
+        "depth_pair": "4->6",
+        "gap_shortcut_steps": 4,
+        "previous": {
+          "alignment_class_m_mod_d": 1,
+          "alignment_m": 5,
+          "local_coverage_fraction": 0.011901855469,
+          "lock_residue_count_for_bin": 390,
+          "n": 18542,
+          "source": "0111",
+          "source_depth": 4,
+          "source_residue": 14,
+          "source_rho": "-38/11",
+          "step": 4,
+          "unit_residue": 18453,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 0,
+              "phase_t": 1,
+              "source_phase_rho": "-19/11",
+              "target": "0011111101011",
+              "target_eta": "-86668/11491",
+              "valuation_e": 0
+            }
+          ]
+        },
+        "same_source": false,
+        "shared_target_count": 0,
+        "shared_targets": [],
+        "shortcut_segment": {
+          "final_state": 31292,
+          "gap_steps": 4,
+          "parity_word": "0111",
+          "states": [
+            18542,
+            9271,
+            13907,
+            20861,
+            31292
+          ],
+          "states_truncated": false
+        },
+        "signature": "0111|1|18453|001111|2|46383",
+        "source_pair": "0111->001111",
+        "start": 10987
+      },
+      {
+        "alignment_class_pair": "1->2",
+        "current": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 8,
+          "local_coverage_fraction": 0.012786865234,
+          "lock_residue_count_for_bin": 419,
+          "n": 31292,
+          "source": "001111",
+          "source_depth": 6,
+          "source_residue": 60,
+          "source_rho": "-260/17",
+          "step": 5,
+          "unit_residue": 46383,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 0,
+              "phase_t": 0,
+              "source_phase_rho": "-260/17",
+              "target": "0001111111111",
+              "target_eta": "-464200/50857",
+              "valuation_e": 2
+            }
+          ]
+        },
+        "depth_pair": "4->6",
+        "gap_shortcut_steps": 4,
+        "previous": {
+          "alignment_class_m_mod_d": 1,
+          "alignment_m": 5,
+          "local_coverage_fraction": 0.011901855469,
+          "lock_residue_count_for_bin": 390,
+          "n": 18542,
+          "source": "0111",
+          "source_depth": 4,
+          "source_residue": 14,
+          "source_rho": "-38/11",
+          "step": 1,
+          "unit_residue": 18453,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 0,
+              "phase_t": 1,
+              "source_phase_rho": "-19/11",
+              "target": "0011111101011",
+              "target_eta": "-86668/11491",
+              "valuation_e": 0
+            }
+          ]
+        },
+        "same_source": false,
+        "shared_target_count": 0,
+        "shared_targets": [],
+        "shortcut_segment": {
+          "final_state": 31292,
+          "gap_steps": 4,
+          "parity_word": "0111",
+          "states": [
+            18542,
+            9271,
+            13907,
+            20861,
+            31292
+          ],
+          "states_truncated": false
+        },
+        "signature": "0111|1|18453|001111|2|46383",
+        "source_pair": "0111->001111",
+        "start": 12361
+      },
+      {
+        "alignment_class_pair": "1->2",
+        "current": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 8,
+          "local_coverage_fraction": 0.012786865234,
+          "lock_residue_count_for_bin": 419,
+          "n": 31292,
+          "source": "001111",
+          "source_depth": 6,
+          "source_residue": 60,
+          "source_rho": "-260/17",
+          "step": 10,
+          "unit_residue": 46383,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 0,
+              "phase_t": 0,
+              "source_phase_rho": "-260/17",
+              "target": "0001111111111",
+              "target_eta": "-464200/50857",
+              "valuation_e": 2
+            }
+          ]
+        },
+        "depth_pair": "4->6",
+        "gap_shortcut_steps": 4,
+        "previous": {
+          "alignment_class_m_mod_d": 1,
+          "alignment_m": 5,
+          "local_coverage_fraction": 0.011901855469,
+          "lock_residue_count_for_bin": 390,
+          "n": 18542,
+          "source": "0111",
+          "source_depth": 4,
+          "source_residue": 14,
+          "source_rho": "-38/11",
+          "step": 6,
+          "unit_residue": 18453,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 0,
+              "phase_t": 1,
+              "source_phase_rho": "-19/11",
+              "target": "0011111101011",
+              "target_eta": "-86668/11491",
+              "valuation_e": 0
+            }
+          ]
+        },
+        "same_source": false,
+        "shared_target_count": 0,
+        "shared_targets": [],
+        "shortcut_segment": {
+          "final_state": 31292,
+          "gap_steps": 4,
+          "parity_word": "0111",
+          "states": [
+            18542,
+            9271,
+            13907,
+            20861,
+            31292
+          ],
+          "states_truncated": false
+        },
+        "signature": "0111|1|18453|001111|2|46383",
+        "source_pair": "0111->001111",
+        "start": 14649
+      },
+      {
+        "alignment_class_pair": "1->2",
+        "current": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 8,
+          "local_coverage_fraction": 0.012786865234,
+          "lock_residue_count_for_bin": 419,
+          "n": 31292,
+          "source": "001111",
+          "source_depth": 6,
+          "source_residue": 60,
+          "source_rho": "-260/17",
+          "step": 7,
+          "unit_residue": 46383,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 0,
+              "phase_t": 0,
+              "source_phase_rho": "-260/17",
+              "target": "0001111111111",
+              "target_eta": "-464200/50857",
+              "valuation_e": 2
+            }
+          ]
+        },
+        "depth_pair": "4->6",
+        "gap_shortcut_steps": 4,
+        "previous": {
+          "alignment_class_m_mod_d": 1,
+          "alignment_m": 5,
+          "local_coverage_fraction": 0.011901855469,
+          "lock_residue_count_for_bin": 390,
+          "n": 18542,
+          "source": "0111",
+          "source_depth": 4,
+          "source_residue": 14,
+          "source_rho": "-38/11",
+          "step": 3,
+          "unit_residue": 18453,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 0,
+              "phase_t": 1,
+              "source_phase_rho": "-19/11",
+              "target": "0011111101011",
+              "target_eta": "-86668/11491",
+              "valuation_e": 0
+            }
+          ]
+        },
+        "same_source": false,
+        "shared_target_count": 0,
+        "shared_targets": [],
+        "shortcut_segment": {
+          "final_state": 31292,
+          "gap_steps": 4,
+          "parity_word": "0111",
+          "states": [
+            18542,
+            9271,
+            13907,
+            20861,
+            31292
+          ],
+          "states_truncated": false
+        },
+        "signature": "0111|1|18453|001111|2|46383",
+        "source_pair": "0111->001111",
+        "start": 16481
+      },
+      {
+        "alignment_class_pair": "1->2",
+        "current": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 8,
+          "local_coverage_fraction": 0.012786865234,
+          "lock_residue_count_for_bin": 419,
+          "n": 31292,
+          "source": "001111",
+          "source_depth": 6,
+          "source_residue": 60,
+          "source_rho": "-260/17",
+          "step": 9,
+          "unit_residue": 46383,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 0,
+              "phase_t": 0,
+              "source_phase_rho": "-260/17",
+              "target": "0001111111111",
+              "target_eta": "-464200/50857",
+              "valuation_e": 2
+            }
+          ]
+        },
+        "depth_pair": "4->6",
+        "gap_shortcut_steps": 4,
+        "previous": {
+          "alignment_class_m_mod_d": 1,
+          "alignment_m": 5,
+          "local_coverage_fraction": 0.011901855469,
+          "lock_residue_count_for_bin": 390,
+          "n": 18542,
+          "source": "0111",
+          "source_depth": 4,
+          "source_residue": 14,
+          "source_rho": "-38/11",
+          "step": 5,
+          "unit_residue": 18453,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 0,
+              "phase_t": 1,
+              "source_phase_rho": "-19/11",
+              "target": "0011111101011",
+              "target_eta": "-86668/11491",
+              "valuation_e": 0
+            }
+          ]
+        },
+        "same_source": false,
+        "shared_target_count": 0,
+        "shared_targets": [],
+        "shortcut_segment": {
+          "final_state": 31292,
+          "gap_steps": 4,
+          "parity_word": "0111",
+          "states": [
+            18542,
+            9271,
+            13907,
+            20861,
+            31292
+          ],
+          "states_truncated": false
+        },
+        "signature": "0111|1|18453|001111|2|46383",
+        "source_pair": "0111->001111",
+        "start": 21975
+      },
+      {
+        "alignment_class_pair": "1->2",
+        "current": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 8,
+          "local_coverage_fraction": 0.012786865234,
+          "lock_residue_count_for_bin": 419,
+          "n": 31292,
+          "source": "001111",
+          "source_depth": 6,
+          "source_residue": 60,
+          "source_rho": "-260/17",
+          "step": 14,
+          "unit_residue": 46383,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 0,
+              "phase_t": 0,
+              "source_phase_rho": "-260/17",
+              "target": "0001111111111",
+              "target_eta": "-464200/50857",
+              "valuation_e": 2
+            }
+          ]
+        },
+        "depth_pair": "4->6",
+        "gap_shortcut_steps": 4,
+        "previous": {
+          "alignment_class_m_mod_d": 1,
+          "alignment_m": 5,
+          "local_coverage_fraction": 0.011901855469,
+          "lock_residue_count_for_bin": 390,
+          "n": 18542,
+          "source": "0111",
+          "source_depth": 4,
+          "source_residue": 14,
+          "source_rho": "-38/11",
+          "step": 10,
+          "unit_residue": 18453,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 0,
+              "phase_t": 1,
+              "source_phase_rho": "-19/11",
+              "target": "0011111101011",
+              "target_eta": "-86668/11491",
+              "valuation_e": 0
+            }
+          ]
+        },
+        "same_source": false,
+        "shared_target_count": 0,
+        "shared_targets": [],
+        "shortcut_segment": {
+          "final_state": 31292,
+          "gap_steps": 4,
+          "parity_word": "0111",
+          "states": [
+            18542,
+            9271,
+            13907,
+            20861,
+            31292
+          ],
+          "states_truncated": false
+        },
+        "signature": "0111|1|18453|001111|2|46383",
+        "source_pair": "0111->001111",
+        "start": 26043
+      },
+      {
+        "alignment_class_pair": "1->2",
+        "current": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 8,
+          "local_coverage_fraction": 0.012786865234,
+          "lock_residue_count_for_bin": 419,
+          "n": 31292,
+          "source": "001111",
+          "source_depth": 6,
+          "source_residue": 60,
+          "source_rho": "-260/17",
+          "step": 11,
+          "unit_residue": 46383,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 0,
+              "phase_t": 0,
+              "source_phase_rho": "-260/17",
+              "target": "0001111111111",
+              "target_eta": "-464200/50857",
+              "valuation_e": 2
+            }
+          ]
+        },
+        "depth_pair": "4->6",
+        "gap_shortcut_steps": 4,
+        "previous": {
+          "alignment_class_m_mod_d": 1,
+          "alignment_m": 5,
+          "local_coverage_fraction": 0.011901855469,
+          "lock_residue_count_for_bin": 390,
+          "n": 18542,
+          "source": "0111",
+          "source_depth": 4,
+          "source_residue": 14,
+          "source_rho": "-38/11",
+          "step": 7,
+          "unit_residue": 18453,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 0,
+              "phase_t": 1,
+              "source_phase_rho": "-19/11",
+              "target": "0011111101011",
+              "target_eta": "-86668/11491",
+              "valuation_e": 0
+            }
+          ]
+        },
+        "same_source": false,
+        "shared_target_count": 0,
+        "shared_targets": [],
+        "shortcut_segment": {
+          "final_state": 31292,
+          "gap_steps": 4,
+          "parity_word": "0111",
+          "states": [
+            18542,
+            9271,
+            13907,
+            20861,
+            31292
+          ],
+          "states_truncated": false
+        },
+        "signature": "0111|1|18453|001111|2|46383",
+        "source_pair": "0111->001111",
+        "start": 29299
+      },
+      {
+        "alignment_class_pair": "1->2",
+        "current": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 8,
+          "local_coverage_fraction": 0.012786865234,
+          "lock_residue_count_for_bin": 419,
+          "n": 31292,
+          "source": "001111",
+          "source_depth": 6,
+          "source_residue": 60,
+          "source_rho": "-260/17",
+          "step": 8,
+          "unit_residue": 46383,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 0,
+              "phase_t": 0,
+              "source_phase_rho": "-260/17",
+              "target": "0001111111111",
+              "target_eta": "-464200/50857",
+              "valuation_e": 2
+            }
+          ]
+        },
+        "depth_pair": "4->6",
+        "gap_shortcut_steps": 4,
+        "previous": {
+          "alignment_class_m_mod_d": 1,
+          "alignment_m": 5,
+          "local_coverage_fraction": 0.011901855469,
+          "lock_residue_count_for_bin": 390,
+          "n": 18542,
+          "source": "0111",
+          "source_depth": 4,
+          "source_residue": 14,
+          "source_rho": "-38/11",
+          "step": 4,
+          "unit_residue": 18453,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 0,
+              "phase_t": 1,
+              "source_phase_rho": "-19/11",
+              "target": "0011111101011",
+              "target_eta": "-86668/11491",
+              "valuation_e": 0
+            }
+          ]
+        },
+        "same_source": false,
+        "shared_target_count": 0,
+        "shared_targets": [],
+        "shortcut_segment": {
+          "final_state": 31292,
+          "gap_steps": 4,
+          "parity_word": "0111",
+          "states": [
+            18542,
+            9271,
+            13907,
+            20861,
+            31292
+          ],
+          "states_truncated": false
+        },
+        "signature": "0111|1|18453|001111|2|46383",
+        "source_pair": "0111->001111",
+        "start": 32963
+      },
+      {
+        "alignment_class_pair": "1->2",
+        "current": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 8,
+          "local_coverage_fraction": 0.012786865234,
+          "lock_residue_count_for_bin": 419,
+          "n": 31292,
+          "source": "001111",
+          "source_depth": 6,
+          "source_residue": 60,
+          "source_rho": "-260/17",
+          "step": 13,
+          "unit_residue": 46383,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 0,
+              "phase_t": 0,
+              "source_phase_rho": "-260/17",
+              "target": "0001111111111",
+              "target_eta": "-464200/50857",
+              "valuation_e": 2
+            }
+          ]
+        },
+        "depth_pair": "4->6",
+        "gap_shortcut_steps": 4,
+        "previous": {
+          "alignment_class_m_mod_d": 1,
+          "alignment_m": 5,
+          "local_coverage_fraction": 0.011901855469,
+          "lock_residue_count_for_bin": 390,
+          "n": 18542,
+          "source": "0111",
+          "source_depth": 4,
+          "source_residue": 14,
+          "source_rho": "-38/11",
+          "step": 9,
+          "unit_residue": 18453,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 0,
+              "phase_t": 1,
+              "source_phase_rho": "-19/11",
+              "target": "0011111101011",
+              "target_eta": "-86668/11491",
+              "valuation_e": 0
+            }
+          ]
+        },
+        "same_source": false,
+        "shared_target_count": 0,
+        "shared_targets": [],
+        "shortcut_segment": {
+          "final_state": 31292,
+          "gap_steps": 4,
+          "parity_word": "0111",
+          "states": [
+            18542,
+            9271,
+            13907,
+            20861,
+            31292
+          ],
+          "states_truncated": false
+        },
+        "signature": "0111|1|18453|001111|2|46383",
+        "source_pair": "0111->001111",
+        "start": 39065
+      },
+      {
+        "alignment_class_pair": "1->2",
+        "current": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 8,
+          "local_coverage_fraction": 0.012786865234,
+          "lock_residue_count_for_bin": 419,
+          "n": 31292,
+          "source": "001111",
+          "source_depth": 6,
+          "source_residue": 60,
+          "source_rho": "-260/17",
+          "step": 10,
+          "unit_residue": 46383,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 0,
+              "phase_t": 0,
+              "source_phase_rho": "-260/17",
+              "target": "0001111111111",
+              "target_eta": "-464200/50857",
+              "valuation_e": 2
+            }
+          ]
+        },
+        "depth_pair": "4->6",
+        "gap_shortcut_steps": 4,
+        "previous": {
+          "alignment_class_m_mod_d": 1,
+          "alignment_m": 5,
+          "local_coverage_fraction": 0.011901855469,
+          "lock_residue_count_for_bin": 390,
+          "n": 18542,
+          "source": "0111",
+          "source_depth": 4,
+          "source_residue": 14,
+          "source_rho": "-38/11",
+          "step": 6,
+          "unit_residue": 18453,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 0,
+              "phase_t": 1,
+              "source_phase_rho": "-19/11",
+              "target": "0011111101011",
+              "target_eta": "-86668/11491",
+              "valuation_e": 0
+            }
+          ]
+        },
+        "same_source": false,
+        "shared_target_count": 0,
+        "shared_targets": [],
+        "shortcut_segment": {
+          "final_state": 31292,
+          "gap_steps": 4,
+          "parity_word": "0111",
+          "states": [
+            18542,
+            9271,
+            13907,
+            20861,
+            31292
+          ],
+          "states_truncated": false
+        },
+        "signature": "0111|1|18453|001111|2|46383",
+        "source_pair": "0111->001111",
+        "start": 43949
+      },
+      {
+        "alignment_class_pair": "1->2",
+        "current": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 8,
+          "local_coverage_fraction": 0.012786865234,
+          "lock_residue_count_for_bin": 419,
+          "n": 31292,
+          "source": "001111",
+          "source_depth": 6,
+          "source_residue": 60,
+          "source_rho": "-260/17",
+          "step": 18,
+          "unit_residue": 46383,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 0,
+              "phase_t": 0,
+              "source_phase_rho": "-260/17",
+              "target": "0001111111111",
+              "target_eta": "-464200/50857",
+              "valuation_e": 2
+            }
+          ]
+        },
+        "depth_pair": "4->6",
+        "gap_shortcut_steps": 4,
+        "previous": {
+          "alignment_class_m_mod_d": 1,
+          "alignment_m": 5,
+          "local_coverage_fraction": 0.011901855469,
+          "lock_residue_count_for_bin": 390,
+          "n": 18542,
+          "source": "0111",
+          "source_depth": 4,
+          "source_residue": 14,
+          "source_rho": "-38/11",
+          "step": 14,
+          "unit_residue": 18453,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 0,
+              "phase_t": 1,
+              "source_phase_rho": "-19/11",
+              "target": "0011111101011",
+              "target_eta": "-86668/11491",
+              "valuation_e": 0
+            }
+          ]
+        },
+        "same_source": false,
+        "shared_target_count": 0,
+        "shared_targets": [],
+        "shortcut_segment": {
+          "final_state": 31292,
+          "gap_steps": 4,
+          "parity_word": "0111",
+          "states": [
+            18542,
+            9271,
+            13907,
+            20861,
+            31292
+          ],
+          "states_truncated": false
+        },
+        "signature": "0111|1|18453|001111|2|46383",
+        "source_pair": "0111->001111",
+        "start": 46299
+      },
+      {
+        "alignment_class_pair": "1->2",
+        "current": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 8,
+          "local_coverage_fraction": 0.012786865234,
+          "lock_residue_count_for_bin": 419,
+          "n": 31292,
+          "source": "001111",
+          "source_depth": 6,
+          "source_residue": 60,
+          "source_rho": "-260/17",
+          "step": 7,
+          "unit_residue": 46383,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 0,
+              "phase_t": 0,
+              "source_phase_rho": "-260/17",
+              "target": "0001111111111",
+              "target_eta": "-464200/50857",
+              "valuation_e": 2
+            }
+          ]
+        },
+        "depth_pair": "4->6",
+        "gap_shortcut_steps": 4,
+        "previous": {
+          "alignment_class_m_mod_d": 1,
+          "alignment_m": 5,
+          "local_coverage_fraction": 0.011901855469,
+          "lock_residue_count_for_bin": 390,
+          "n": 18542,
+          "source": "0111",
+          "source_depth": 4,
+          "source_residue": 14,
+          "source_rho": "-38/11",
+          "step": 3,
+          "unit_residue": 18453,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 0,
+              "phase_t": 1,
+              "source_phase_rho": "-19/11",
+              "target": "0011111101011",
+              "target_eta": "-86668/11491",
+              "valuation_e": 0
+            }
+          ]
+        },
+        "same_source": false,
+        "shared_target_count": 0,
+        "shared_targets": [],
+        "shortcut_segment": {
+          "final_state": 31292,
+          "gap_steps": 4,
+          "parity_word": "0111",
+          "states": [
+            18542,
+            9271,
+            13907,
+            20861,
+            31292
+          ],
+          "states_truncated": false
+        },
+        "signature": "0111|1|18453|001111|2|46383",
+        "source_pair": "0111->001111",
+        "start": 49445
+      }
+    ]
+  },
+  "status": "odd-unit-lock-transition-microscope"
+}

@@ -1,0 +1,314 @@
+{
+  "elapsed_seconds": 0.001715,
+  "families": [
+    {
+      "bridge_algebra": {
+        "F_gap_rho0_minus_rho1": "2214/187",
+        "base_current_diff_v2_for_k0": 8,
+        "base_current_unit_residue_mod_2^R": 46383,
+        "fresh_bits_formula_max_0_gap_plus_next_m_minus_previous_m": 7,
+        "lifted_previous_state_modulus_bits": 28,
+        "lifted_previous_state_residue": 18542,
+        "rhs_needed_for_current_unit": 0,
+        "solution": {
+          "detail": "next lock imposes a fresh quotient congruence",
+          "fresh_quotient_bits": 7,
+          "k_modulus": 128,
+          "k_residue": 0,
+          "solvable": true
+        },
+        "unit_step_mod_2^R": 13824,
+        "unit_step_v2": 9
+      },
+      "checks": {
+        "base_alignment_reaches_current_alignment": true,
+        "formula_matches_solver_fresh_bits": true,
+        "observed_current_states_match_current_residue": true,
+        "observed_previous_states_match_base_residue": true,
+        "observed_previous_states_match_lifted_residue": true
+      },
+      "current_lock": {
+        "alignment_m": 8,
+        "rho": "-260/17",
+        "source": "001111",
+        "state_modulus_bits": 24,
+        "state_residue_mod_2^(m+R)": 31292,
+        "unit_residue_mod_2^R": 46383
+      },
+      "current_state_histogram": {
+        "31292": 62
+      },
+      "gap_affine": {
+        "c": 38,
+        "formula": "(27*n + 38) / 2^4",
+        "three_power": 27
+      },
+      "gap_steps": 4,
+      "gap_word": "0111",
+      "geometry_key": "0111|m5|a1|u18453|001111|m8|a2|u46383|gap0111",
+      "lock_signature": "0111|1|18453|001111|2|46383",
+      "previous_lock": {
+        "alignment_m": 5,
+        "rho": "-38/11",
+        "source": "0111",
+        "state_modulus_bits": 21,
+        "state_residue_mod_2^(m+R)": 18542,
+        "unit_residue_mod_2^R": 18453
+      },
+      "previous_state_histogram": {
+        "18542": 62
+      },
+      "source_pair": "0111->001111",
+      "starts_sample": [
+        10987,
+        12361,
+        14649,
+        16481,
+        21975,
+        26043,
+        29299,
+        32963,
+        39065,
+        43949,
+        46299,
+        49445,
+        52087,
+        58597,
+        65925,
+        69449,
+        78129,
+        78131,
+        81199,
+        87901,
+        92599,
+        96235,
+        104173,
+        108265
+      ],
+      "transition_count": 62,
+      "unique_current_states": 1,
+      "unique_previous_states": 1
+    },
+    {
+      "bridge_algebra": {
+        "F_gap_rho0_minus_rho1": "0",
+        "base_current_diff_v2_for_k0": 7,
+        "base_current_unit_residue_mod_2^R": 43011,
+        "fresh_bits_formula_max_0_gap_plus_next_m_minus_previous_m": 0,
+        "lifted_previous_state_modulus_bits": 26,
+        "lifted_previous_state_residue": 4893686,
+        "rhs_needed_for_current_unit": 0,
+        "solution": {
+          "detail": "previous lock already determines next unit modulo 2^R",
+          "fresh_quotient_bits": 0,
+          "k_modulus": 1,
+          "k_residue": 0,
+          "solvable": true
+        },
+        "unit_step_mod_2^R": 0,
+        "unit_step_v2": 16
+      },
+      "checks": {
+        "base_alignment_reaches_current_alignment": true,
+        "formula_matches_solver_fresh_bits": true,
+        "observed_current_states_match_current_residue": true,
+        "observed_previous_states_match_base_residue": true,
+        "observed_previous_states_match_lifted_residue": true
+      },
+      "current_lock": {
+        "alignment_m": 7,
+        "rho": "-10",
+        "source": "011",
+        "state_modulus_bits": 23,
+        "state_residue_mod_2^(m+R)": 5505398,
+        "unit_residue_mod_2^R": 43011
+      },
+      "current_state_histogram": {
+        "5505398": 7
+      },
+      "gap_affine": {
+        "c": 10,
+        "formula": "(9*n + 10) / 2^3",
+        "three_power": 9
+      },
+      "gap_steps": 3,
+      "gap_word": "011",
+      "geometry_key": "011|m10|a1|u4779|011|m7|a1|u43011|gap011",
+      "lock_signature": "011|1|4779|011|1|43011",
+      "previous_lock": {
+        "alignment_m": 10,
+        "rho": "-10",
+        "source": "011",
+        "state_modulus_bits": 26,
+        "state_residue_mod_2^(m+R)": 4893686,
+        "unit_residue_mod_2^R": 4779
+      },
+      "previous_state_histogram": {
+        "4893686": 7
+      },
+      "source_pair": "011->011",
+      "starts_sample": [
+        113151,
+        156799,
+        169727,
+        185835,
+        209065,
+        226303,
+        235199
+      ],
+      "transition_count": 7,
+      "unique_current_states": 1,
+      "unique_previous_states": 1
+    },
+    {
+      "bridge_algebra": {
+        "F_gap_rho0_minus_rho1": "-2640896/1948025",
+        "base_current_diff_v2_for_k0": 10,
+        "base_current_unit_residue_mod_2^R": 43243,
+        "fresh_bits_formula_max_0_gap_plus_next_m_minus_previous_m": 0,
+        "lifted_previous_state_modulus_bits": 28,
+        "lifted_previous_state_residue": 2181532,
+        "rhs_needed_for_current_unit": 0,
+        "solution": {
+          "detail": "previous lock already determines next unit modulo 2^R",
+          "fresh_quotient_bits": 0,
+          "k_modulus": 1,
+          "k_residue": 0,
+          "solvable": true
+        },
+        "unit_step_mod_2^R": 0,
+        "unit_step_v2": 17
+      },
+      "checks": {
+        "base_alignment_reaches_current_alignment": true,
+        "formula_matches_solver_fresh_bits": true,
+        "observed_current_states_match_current_residue": true,
+        "observed_previous_states_match_base_residue": true,
+        "observed_previous_states_match_lifted_residue": true
+      },
+      "current_lock": {
+        "alignment_m": 10,
+        "rho": "-5158/1675",
+        "source": "011101111",
+        "state_modulus_bits": 26,
+        "state_residue_mod_2^(m+R)": 1090766,
+        "unit_residue_mod_2^R": 43243
+      },
+      "current_state_histogram": {
+        "1090766": 3
+      },
+      "gap_affine": {
+        "c": 0,
+        "formula": "(1*n + 0) / 2^1",
+        "three_power": 1
+      },
+      "gap_steps": 1,
+      "gap_word": "0",
+      "geometry_key": "0011101111|m12|a2|u55531|011101111|m10|a1|u43243|gap0",
+      "lock_signature": "0011101111|2|55531|011101111|1|43243",
+      "previous_lock": {
+        "alignment_m": 12,
+        "rho": "-10316/1163",
+        "source": "0011101111",
+        "state_modulus_bits": 28,
+        "state_residue_mod_2^(m+R)": 2181532,
+        "unit_residue_mod_2^R": 55531
+      },
+      "previous_state_histogram": {
+        "2181532": 3
+      },
+      "source_pair": "0011101111->011101111",
+      "starts_sample": [
+        151323,
+        170239,
+        226985
+      ],
+      "transition_count": 3,
+      "unique_current_states": 1,
+      "unique_previous_states": 1
+    },
+    {
+      "bridge_algebra": {
+        "F_gap_rho0_minus_rho1": "0",
+        "base_current_diff_v2_for_k0": 4,
+        "base_current_unit_residue_mod_2^R": 43011,
+        "fresh_bits_formula_max_0_gap_plus_next_m_minus_previous_m": 0,
+        "lifted_previous_state_modulus_bits": 23,
+        "lifted_previous_state_residue": 611702,
+        "rhs_needed_for_current_unit": 0,
+        "solution": {
+          "detail": "previous lock already determines next unit modulo 2^R",
+          "fresh_quotient_bits": 0,
+          "k_modulus": 1,
+          "k_residue": 0,
+          "solvable": true
+        },
+        "unit_step_mod_2^R": 0,
+        "unit_step_v2": 16
+      },
+      "checks": {
+        "base_alignment_reaches_current_alignment": true,
+        "formula_matches_solver_fresh_bits": true,
+        "observed_current_states_match_current_residue": true,
+        "observed_previous_states_match_base_residue": true,
+        "observed_previous_states_match_lifted_residue": true
+      },
+      "current_lock": {
+        "alignment_m": 4,
+        "rho": "-10",
+        "source": "011",
+        "state_modulus_bits": 20,
+        "state_residue_mod_2^(m+R)": 688166,
+        "unit_residue_mod_2^R": 43011
+      },
+      "current_state_histogram": {
+        "688166": 1
+      },
+      "gap_affine": {
+        "c": 10,
+        "formula": "(9*n + 10) / 2^3",
+        "three_power": 9
+      },
+      "gap_steps": 3,
+      "gap_word": "011",
+      "geometry_key": "011|m7|a1|u4779|011|m4|a1|u43011|gap011",
+      "lock_signature": "011|1|4779|011|1|43011",
+      "previous_lock": {
+        "alignment_m": 7,
+        "rho": "-10",
+        "source": "011",
+        "state_modulus_bits": 23,
+        "state_residue_mod_2^(m+R)": 611702,
+        "unit_residue_mod_2^R": 4779
+      },
+      "previous_state_histogram": {
+        "611702": 1
+      },
+      "source_pair": "011->011",
+      "starts_sample": [
+        241659
+      ],
+      "transition_count": 1,
+      "unique_current_states": 1,
+      "unique_previous_states": 1
+    }
+  ],
+  "input": "Z:\\[Vibe Coded (AI)]\\CLAUDECODE\\Unresolved Math Problems\\problems\\collatz-conjecture\\experiments\\results\\odd_unit_lock_transition_microscope_d13_R16_N250000_20260705.json",
+  "parameters": {
+    "bridge_geometries": 4,
+    "coarse_lock_signatures": 3,
+    "excess_bits": 16,
+    "transition_records": 73
+  },
+  "result": "finite symbolic classification of measured bridges; not a proof of Collatz",
+  "status": "odd-unit-lock-bridge-classifier",
+  "summary": {
+    "all_checks_passed": true,
+    "fresh_quotient_bits_histogram_by_signature": {
+      "0": 3,
+      "7": 1
+    },
+    "interpretation": "Repeated locks are not one phenomenon. Some bridge families are free once the previous lock is known; others require additional quotient bits before the next lock can occur.",
+    "max_fresh_quotient_bits": 7
+  }
+}
