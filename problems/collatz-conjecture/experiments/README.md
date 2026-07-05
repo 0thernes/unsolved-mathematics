@@ -30,6 +30,12 @@ The no-repeat literature and attempt atlas is
 150 approach families, weirdness ranks, failure modes, and future-use guidance
 grounded in Lagarias's bibliographies, the 2021 overview, ccchallenge, and the
 repo's own audits.
+For quick routing, start at the root
+[`../FAILED-ATTEMPTS-WEIRDNESS-ATLAS-2026-07-05.md`](../FAILED-ATTEMPTS-WEIRDNESS-ATLAS-2026-07-05.md);
+for scored experiment triage, use
+[`COLLATZ-FAILED-ATTEMPTS-ATLAS-2026-07-05.md`](COLLATZ-FAILED-ATTEMPTS-ATLAS-2026-07-05.md).
+The raw literature-discovery base is
+[`COLLATZ-LITERATURE-CCCHALLENGE-370-SNAPSHOT-2026-07-04.md`](COLLATZ-LITERATURE-CCCHALLENGE-370-SNAPSHOT-2026-07-04.md).
 Only the formal-methods slice is currently proof-relevant: SAT/SMT, BDD/ZDD,
 CEGAR, omega-automata/model checking, rewrite/e-graph methods, LLL, proof
 certificates, and adversarial counterexample search.

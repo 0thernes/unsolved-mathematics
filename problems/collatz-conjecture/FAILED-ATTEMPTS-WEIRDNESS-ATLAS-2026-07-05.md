@@ -15,6 +15,28 @@ Companion artifacts:
 - Paper-level CCChallenge scrape:
   [`experiments/COLLATZ-LITERATURE-CCCHALLENGE-370-SNAPSHOT-2026-07-04.md`](experiments/COLLATZ-LITERATURE-CCCHALLENGE-370-SNAPSHOT-2026-07-04.md).
 
+## Coverage Snapshot - 2026-07-05
+
+This pass refreshed the atlas against the main live/public spines: Lagarias's
+annotated bibliographies and overview, CCChallenge, Tao's almost-bounded-values
+paper, Barina's 2025 verification record, Knight's high-cycle result,
+Angeltveit's 2026 verification algorithm, Kurtz-Simon generalized undecidability
+work, and proof-claim/retraction examples such as Opfer 2011.
+
+Local coverage now has four layers:
+
+| Layer | File | Coverage role |
+|---|---|---|
+| User-facing no-repeat map | This file | 65 attempt families plus weirdness ranking and practical novelty filter |
+| Detailed scored atlas | [`experiments/COLLATZ-FAILED-ATTEMPTS-ATLAS-2026-07-05.md`](experiments/COLLATZ-FAILED-ATTEMPTS-ATLAS-2026-07-05.md) | 70 scored attempt rows, including repo-specific routes and pseudo-proof archetypes |
+| Deep idea-family atlas | [`experiments/COLLATZ-FAILED-IDEAS-ATLAS-2026-07-04.md`](experiments/COLLATZ-FAILED-IDEAS-ATLAS-2026-07-04.md) | 150 idea-family rows, 160 numbered table rows, failure modes, and future-use guardrails |
+| Literature snapshot | [`experiments/COLLATZ-LITERATURE-CCCHALLENGE-370-SNAPSHOT-2026-07-04.md`](experiments/COLLATZ-LITERATURE-CCCHALLENGE-370-SNAPSHOT-2026-07-04.md) | 370 CCChallenge bibliography rows captured for later structured tagging |
+
+Honesty boundary: this is exhaustive as an anti-repeat research map, not a
+formal certification that every Collatz paper ever written has been individually
+read. Future novelty claims should cite the nearest row here and state the
+specific old failure mode they defeat.
+
 ## Source Backbone
 
 Use these as the canonical literature spines before claiming novelty.
@@ -26,6 +48,7 @@ Use these as the canonical literature spines before claiming novelty.
 | Lagarias, ["The 3x+1 Problem: An Overview"](https://arxiv.org/abs/2111.02635), arXiv:2111.02635 | Survey overview, published in the AMS volume | The shortest professional map of what was known by the 2010 survey era. |
 | Lagarias (ed.), [The Ultimate Challenge: The 3x+1 Problem](https://bookstore.ams.org/mbk-78), AMS, 2010 | Surveys, early papers, stochastic/computational chapters, bibliography | The standard book-length reference. |
 | [Lagarias's University of Michigan 3x+1 page](https://websites.umich.edu/~lagarias//3x%2B1.html) | Curated papers by Lagarias and collaborators | Reliable source for rational cycles, trees, conjugacy, stochastic models, semigroup papers. |
+| [CCChallenge](https://ccchallenge.org/) | Live formalization-oriented bibliography; local snapshot has 370 rows | Best current source for broad paper discovery and proof-assistant/formalization status. |
 | Tao, ["Almost all orbits of the Collatz map attain almost bounded values"](https://arxiv.org/abs/1909.03562), arXiv:1909.03562 / Forum Math. Pi | Strongest modern density theorem | Essential ceiling on what "almost all" currently means. |
 | Hercher, ["There are no Collatz m-Cycles with m <= 91"](https://arxiv.org/abs/2201.00406), arXiv:2201.00406 / JIS 2023 | Current m-cycle exclusion frontier | Important for cycle-side claims and computational thresholds. |
 | Barina, [verification project](https://pcbarina.fit.vutbr.cz/) and [2025 J. Supercomputing record](https://www.fit.vut.cz/research/result/c197809/.en) | Verification to n < 2^71 as of 2025-01-15 | Current empirical floor and input to cycle lower bounds. |
