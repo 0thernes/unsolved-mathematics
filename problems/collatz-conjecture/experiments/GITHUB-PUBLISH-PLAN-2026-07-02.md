@@ -16,8 +16,9 @@ population. A safe GitHub update should be scoped.
 
 ## Recommended Publish Unit
 
-Publish the current four-share / phase-collision integration as one scoped
-branch or commit:
+Publish the current four-share / phase-collision integration plus the
+algorithm-catalog triage and 104-builder QA artifacts as one scoped branch or
+commit:
 
 ```text
 codex/collatz-phase-lock-integration
@@ -34,6 +35,10 @@ problems/collatz-conjecture/experiments/results/INDEX.md
 problems/collatz-conjecture/experiments/CHATGPT-SHARE-INGEST-2026-07-02.md
 problems/collatz-conjecture/experiments/CHATGPT-SHARE-DEEP-ANALYSIS-2026-07-02.md
 problems/collatz-conjecture/experiments/COLLATZ-PURSUIT-CURRENT-STATE-2026-07-02.md
+problems/collatz-conjecture/experiments/COLLATZ-ALGORITHM-CATALOG-TRIAGE-2026-07-04.md
+problems/collatz-conjecture/experiments/COLLATZ-ALGORITHM-ATTACK-MATRIX-2026-07-04.md
+problems/collatz-conjecture/experiments/COLLATZ-BUILDER-104-QA-RUBRIC-2026-07-04.md
+problems/collatz-conjecture/experiments/ALGORITHM-CATALOG-COLLATZ-TOOLING-ROADMAP-2026-07-04.md
 problems/collatz-conjecture/experiments/SPINE-PHASE-COLLISION.md
 problems/collatz-conjecture/experiments/GITHUB-PUBLISH-PLAN-2026-07-02.md
 problems/collatz-conjecture/experiments/spine_phase_collision_lab.py
@@ -97,6 +102,10 @@ git add -- `
   problems/collatz-conjecture/experiments/CHATGPT-SHARE-INGEST-2026-07-02.md `
   problems/collatz-conjecture/experiments/CHATGPT-SHARE-DEEP-ANALYSIS-2026-07-02.md `
   problems/collatz-conjecture/experiments/COLLATZ-PURSUIT-CURRENT-STATE-2026-07-02.md `
+  problems/collatz-conjecture/experiments/COLLATZ-ALGORITHM-CATALOG-TRIAGE-2026-07-04.md `
+  problems/collatz-conjecture/experiments/COLLATZ-ALGORITHM-ATTACK-MATRIX-2026-07-04.md `
+  problems/collatz-conjecture/experiments/COLLATZ-BUILDER-104-QA-RUBRIC-2026-07-04.md `
+  problems/collatz-conjecture/experiments/ALGORITHM-CATALOG-COLLATZ-TOOLING-ROADMAP-2026-07-04.md `
   problems/collatz-conjecture/experiments/SPINE-PHASE-COLLISION.md `
   problems/collatz-conjecture/experiments/GITHUB-PUBLISH-PLAN-2026-07-02.md `
   problems/collatz-conjecture/experiments/spine_phase_collision_lab.py `

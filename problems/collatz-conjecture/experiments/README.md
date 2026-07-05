@@ -19,6 +19,16 @@ reserve-source program. The producing script is
 output indexed as
 [`results/spine_phase_collision_lab_d12_20260702.json`](results/spine_phase_collision_lab_d12_20260702.json).
 
+The 1000-algorithm catalog attachment has been filtered for this problem in
+[`COLLATZ-ALGORITHM-CATALOG-TRIAGE-2026-07-04.md`](COLLATZ-ALGORITHM-CATALOG-TRIAGE-2026-07-04.md),
+with a concrete build queue in
+[`COLLATZ-ALGORITHM-ATTACK-MATRIX-2026-07-04.md`](COLLATZ-ALGORITHM-ATTACK-MATRIX-2026-07-04.md).
+The user-supplied 104-builder framework is converted into internal QA gates in
+[`COLLATZ-BUILDER-104-QA-RUBRIC-2026-07-04.md`](COLLATZ-BUILDER-104-QA-RUBRIC-2026-07-04.md).
+Only the formal-methods slice is currently proof-relevant: SAT/SMT, BDD/ZDD,
+CEGAR, omega-automata/model checking, rewrite/e-graph methods, LLL, proof
+certificates, and adversarial counterexample search.
+
 For publication scope, use
 [`GITHUB-PUBLISH-PLAN-2026-07-02.md`](GITHUB-PUBLISH-PLAN-2026-07-02.md);
 do not publish this dirty worktree with `git add -A`.
