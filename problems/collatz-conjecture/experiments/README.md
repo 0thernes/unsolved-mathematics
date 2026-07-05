@@ -34,6 +34,8 @@ For quick routing, start at the root
 [`../FAILED-ATTEMPTS-WEIRDNESS-ATLAS-2026-07-05.md`](../FAILED-ATTEMPTS-WEIRDNESS-ATLAS-2026-07-05.md);
 for scored experiment triage, use
 [`COLLATZ-FAILED-ATTEMPTS-ATLAS-2026-07-05.md`](COLLATZ-FAILED-ATTEMPTS-ATLAS-2026-07-05.md).
+For a ranked synthesis of the strangest public and repo-native findings, use
+[`COLLATZ-WTF-ODDNESS-FIELD-GUIDE-2026-07-05.md`](COLLATZ-WTF-ODDNESS-FIELD-GUIDE-2026-07-05.md).
 The raw literature-discovery base is
 [`COLLATZ-LITERATURE-CCCHALLENGE-370-SNAPSHOT-2026-07-04.md`](COLLATZ-LITERATURE-CCCHALLENGE-370-SNAPSHOT-2026-07-04.md).
 Only the formal-methods slice is currently proof-relevant: SAT/SMT, BDD/ZDD,

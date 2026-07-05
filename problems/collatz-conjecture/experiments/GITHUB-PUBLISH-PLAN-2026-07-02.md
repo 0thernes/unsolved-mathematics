@@ -38,6 +38,7 @@ problems/collatz-conjecture/experiments/CHATGPT-SHARE-DEEP-ANALYSIS-2026-07-02.m
 problems/collatz-conjecture/experiments/COLLATZ-PURSUIT-CURRENT-STATE-2026-07-02.md
 problems/collatz-conjecture/experiments/COLLATZ-FAILED-IDEAS-ATLAS-2026-07-04.md
 problems/collatz-conjecture/experiments/COLLATZ-FAILED-ATTEMPTS-ATLAS-2026-07-05.md
+problems/collatz-conjecture/experiments/COLLATZ-WTF-ODDNESS-FIELD-GUIDE-2026-07-05.md
 problems/collatz-conjecture/experiments/COLLATZ-ALGORITHM-CATALOG-TRIAGE-2026-07-04.md
 problems/collatz-conjecture/experiments/COLLATZ-ALGORITHM-ATTACK-MATRIX-2026-07-04.md
 problems/collatz-conjecture/experiments/COLLATZ-BUILDER-104-QA-RUBRIC-2026-07-04.md
@@ -108,6 +109,7 @@ git add -- `
   problems/collatz-conjecture/experiments/COLLATZ-PURSUIT-CURRENT-STATE-2026-07-02.md `
   problems/collatz-conjecture/experiments/COLLATZ-FAILED-IDEAS-ATLAS-2026-07-04.md `
   problems/collatz-conjecture/experiments/COLLATZ-FAILED-ATTEMPTS-ATLAS-2026-07-05.md `
+  problems/collatz-conjecture/experiments/COLLATZ-WTF-ODDNESS-FIELD-GUIDE-2026-07-05.md `
   problems/collatz-conjecture/experiments/COLLATZ-ALGORITHM-CATALOG-TRIAGE-2026-07-04.md `
   problems/collatz-conjecture/experiments/COLLATZ-ALGORITHM-ATTACK-MATRIX-2026-07-04.md `
   problems/collatz-conjecture/experiments/COLLATZ-BUILDER-104-QA-RUBRIC-2026-07-04.md `
