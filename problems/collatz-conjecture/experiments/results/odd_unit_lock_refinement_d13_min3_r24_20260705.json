@@ -1,0 +1,1813 @@
+{
+  "cycle_counts": {
+    "primitive_source_cycles": 244,
+    "source_alignment_bins": 2807,
+    "supercritical_necklace_cycles": 266,
+    "unique_target_spines": 244
+  },
+  "lock_construction": {
+    "examples": [
+      {
+        "alignment_class_m_mod_d": 0,
+        "excess_bits": 24,
+        "phase_t": 0,
+        "required_odd_unit_residue": 10676411,
+        "source": "011",
+        "source_length": 3,
+        "target": "0111",
+        "valuation_e": 3
+      },
+      {
+        "alignment_class_m_mod_d": 0,
+        "excess_bits": 24,
+        "phase_t": 0,
+        "required_odd_unit_residue": 8559805,
+        "source": "011",
+        "source_length": 3,
+        "target": "01111",
+        "valuation_e": 3
+      },
+      {
+        "alignment_class_m_mod_d": 1,
+        "excess_bits": 24,
+        "phase_t": 0,
+        "required_odd_unit_residue": 10855843,
+        "source": "011",
+        "source_length": 3,
+        "target": "001111",
+        "valuation_e": 1
+      },
+      {
+        "alignment_class_m_mod_d": 2,
+        "excess_bits": 24,
+        "phase_t": 0,
+        "required_odd_unit_residue": 8882055,
+        "source": "011",
+        "source_length": 3,
+        "target": "010111",
+        "valuation_e": 2
+      },
+      {
+        "alignment_class_m_mod_d": 0,
+        "excess_bits": 24,
+        "phase_t": 0,
+        "required_odd_unit_residue": 15371305,
+        "source": "011",
+        "source_length": 3,
+        "target": "011111",
+        "valuation_e": 3
+      },
+      {
+        "alignment_class_m_mod_d": 1,
+        "excess_bits": 24,
+        "phase_t": 0,
+        "required_odd_unit_residue": 291779,
+        "source": "011",
+        "source_length": 3,
+        "target": "0011111",
+        "valuation_e": 1
+      },
+      {
+        "alignment_class_m_mod_d": 2,
+        "excess_bits": 24,
+        "phase_t": 0,
+        "required_odd_unit_residue": 15026551,
+        "source": "011",
+        "source_length": 3,
+        "target": "0101111",
+        "valuation_e": 2
+      },
+      {
+        "alignment_class_m_mod_d": 0,
+        "excess_bits": 24,
+        "phase_t": 0,
+        "required_odd_unit_residue": 8899219,
+        "source": "011",
+        "source_length": 3,
+        "target": "0110111",
+        "valuation_e": 6
+      },
+      {
+        "alignment_class_m_mod_d": 0,
+        "excess_bits": 24,
+        "phase_t": 0,
+        "required_odd_unit_residue": 893297,
+        "source": "011",
+        "source_length": 3,
+        "target": "0111111",
+        "valuation_e": 3
+      },
+      {
+        "alignment_class_m_mod_d": 1,
+        "excess_bits": 24,
+        "phase_t": 0,
+        "required_odd_unit_residue": 5923459,
+        "source": "011",
+        "source_length": 3,
+        "target": "00111111",
+        "valuation_e": 1
+      }
+    ],
+    "lock_set_size_histogram_all_bits": {
+      "1": 10,
+      "10": 69,
+      "100": 57,
+      "101": 40,
+      "102": 48,
+      "103": 36,
+      "104": 34,
+      "105": 33,
+      "106": 46,
+      "107": 19,
+      "108": 31,
+      "109": 13,
+      "11": 81,
+      "110": 7,
+      "111": 13,
+      "112": 1,
+      "113": 2,
+      "114": 2,
+      "115": 16,
+      "116": 11,
+      "117": 31,
+      "118": 17,
+      "119": 15,
+      "12": 77,
+      "120": 6,
+      "121": 7,
+      "122": 8,
+      "128": 5,
+      "13": 71,
+      "130": 94,
+      "131": 20,
+      "135": 3,
+      "136": 6,
+      "14": 69,
+      "149": 2,
+      "15": 123,
+      "152": 3,
+      "153": 18,
+      "154": 7,
+      "155": 2,
+      "156": 7,
+      "157": 48,
+      "158": 10,
+      "159": 7,
+      "16": 60,
+      "160": 57,
+      "161": 47,
+      "162": 18,
+      "163": 65,
+      "164": 35,
+      "165": 6,
+      "166": 68,
+      "167": 15,
+      "168": 67,
+      "169": 37,
+      "17": 70,
+      "170": 53,
+      "171": 77,
+      "173": 33,
+      "174": 52,
+      "175": 41,
+      "178": 17,
+      "179": 3,
+      "18": 98,
+      "180": 47,
+      "181": 58,
+      "183": 37,
+      "184": 20,
+      "189": 78,
+      "19": 64,
+      "190": 130,
+      "191": 17,
+      "192": 29,
+      "193": 78,
+      "195": 58,
+      "196": 20,
+      "197": 3,
+      "198": 49,
+      "2": 10,
+      "20": 60,
+      "21": 100,
+      "214": 101,
+      "215": 3,
+      "216": 87,
+      "217": 26,
+      "22": 98,
+      "23": 48,
+      "239": 390,
+      "24": 30,
+      "241": 69,
+      "242": 9,
+      "244": 117,
+      "245": 75,
+      "246": 78,
+      "247": 78,
+      "248": 223,
+      "249": 115,
+      "25": 89,
+      "250": 94,
+      "251": 111,
+      "252": 118,
+      "253": 42,
+      "254": 90,
+      "255": 76,
+      "256": 106,
+      "258": 27,
+      "259": 96,
+      "26": 62,
+      "260": 47,
+      "261": 40,
+      "262": 295,
+      "263": 42,
+      "264": 49,
+      "265": 109,
+      "267": 65,
+      "268": 20,
+      "269": 58,
+      "27": 131,
+      "270": 178,
+      "272": 20,
+      "273": 40,
+      "274": 41,
+      "276": 82,
+      "277": 37,
+      "279": 74,
+      "28": 56,
+      "283": 78,
+      "285": 156,
+      "286": 23,
+      "288": 46,
+      "29": 27,
+      "3": 20,
+      "30": 55,
+      "301": 130,
+      "302": 17,
+      "303": 266,
+      "304": 112,
+      "305": 12,
+      "306": 156,
+      "31": 63,
+      "318": 58,
+      "32": 40,
+      "320": 116,
+      "321": 43,
+      "323": 86,
+      "327": 101,
+      "329": 202,
+      "33": 44,
+      "330": 26,
+      "332": 52,
+      "34": 65,
+      "35": 28,
+      "36": 27,
+      "37": 13,
+      "38": 138,
+      "39": 175,
+      "390": 1119,
+      "391": 51,
+      "393": 207,
+      "4": 20,
+      "40": 80,
+      "41": 236,
+      "419": 381,
+      "42": 523,
+      "422": 87,
+      "43": 247,
+      "44": 76,
+      "45": 109,
+      "46": 81,
+      "47": 676,
+      "48": 105,
+      "49": 82,
+      "5": 30,
+      "50": 19,
+      "51": 21,
+      "52": 23,
+      "53": 17,
+      "54": 11,
+      "55": 14,
+      "56": 2,
+      "57": 6,
+      "58": 30,
+      "59": 30,
+      "6": 40,
+      "60": 8,
+      "61": 69,
+      "62": 9,
+      "63": 11,
+      "64": 6,
+      "65": 12,
+      "67": 3,
+      "68": 6,
+      "7": 31,
+      "70": 3,
+      "73": 3,
+      "74": 6,
+      "78": 12,
+      "8": 64,
+      "81": 5,
+      "82": 71,
+      "83": 4,
+      "88": 81,
+      "89": 11,
+      "9": 46,
+      "96": 12,
+      "99": 15
+    },
+    "source_phase_target_pairs": 684664,
+    "valuation_histogram": {
+      "0": 488976,
+      "1": 108214,
+      "10": 735,
+      "11": 518,
+      "12": 263,
+      "13": 53,
+      "14": 15,
+      "15": 8,
+      "16": 2,
+      "17": 2,
+      "19": 1,
+      "2": 41433,
+      "3": 16664,
+      "4": 10619,
+      "5": 6758,
+      "6": 4511,
+      "7": 2818,
+      "8": 1815,
+      "9": 1259
+    },
+    "zero_separation_skips": 244
+  },
+  "parameters": {
+    "bits": [
+      8,
+      12,
+      16,
+      20,
+      24
+    ],
+    "max_depth": 13,
+    "min_source_depth": 3
+  },
+  "refinement": {
+    "codimension_slope_quantiles": {
+      "max": 1.0,
+      "median": 0.849783,
+      "min": 0.822647,
+      "p10": 0.829701,
+      "p90": 0.981538
+    },
+    "projection_leak_count": 0,
+    "projection_leaks": [],
+    "strongest_codimension_slope_bins": [
+      {
+        "alignment_class_m_mod_d": 6,
+        "codimension_slope_bits_per_precision_bit": 1.0,
+        "lock_counts_by_bits": {
+          "12": 8,
+          "16": 8,
+          "20": 8,
+          "24": 8,
+          "8": 8
+        },
+        "source": "0111110111111",
+        "source_length": 13
+      },
+      {
+        "alignment_class_m_mod_d": 0,
+        "codimension_slope_bits_per_precision_bit": 1.0,
+        "lock_counts_by_bits": {
+          "12": 6,
+          "16": 6,
+          "20": 6,
+          "24": 6,
+          "8": 6
+        },
+        "source": "0111110111111",
+        "source_length": 13
+      },
+      {
+        "alignment_class_m_mod_d": 5,
+        "codimension_slope_bits_per_precision_bit": 1.0,
+        "lock_counts_by_bits": {
+          "12": 10,
+          "16": 10,
+          "20": 10,
+          "24": 10,
+          "8": 10
+        },
+        "source": "0111101111111",
+        "source_length": 13
+      },
+      {
+        "alignment_class_m_mod_d": 0,
+        "codimension_slope_bits_per_precision_bit": 1.0,
+        "lock_counts_by_bits": {
+          "12": 5,
+          "16": 5,
+          "20": 5,
+          "24": 5,
+          "8": 5
+        },
+        "source": "0111101111111",
+        "source_length": 13
+      },
+      {
+        "alignment_class_m_mod_d": 0,
+        "codimension_slope_bits_per_precision_bit": 1.0,
+        "lock_counts_by_bits": {
+          "12": 4,
+          "16": 4,
+          "20": 4,
+          "24": 4,
+          "8": 4
+        },
+        "source": "0111011111111",
+        "source_length": 13
+      },
+      {
+        "alignment_class_m_mod_d": 0,
+        "codimension_slope_bits_per_precision_bit": 1.0,
+        "lock_counts_by_bits": {
+          "12": 3,
+          "16": 3,
+          "20": 3,
+          "24": 3,
+          "8": 3
+        },
+        "source": "0110111111111",
+        "source_length": 13
+      },
+      {
+        "alignment_class_m_mod_d": 9,
+        "codimension_slope_bits_per_precision_bit": 1.0,
+        "lock_counts_by_bits": {
+          "12": 11,
+          "16": 11,
+          "20": 11,
+          "24": 11,
+          "8": 11
+        },
+        "source": "0110111110111",
+        "source_length": 13
+      },
+      {
+        "alignment_class_m_mod_d": 0,
+        "codimension_slope_bits_per_precision_bit": 1.0,
+        "lock_counts_by_bits": {
+          "12": 10,
+          "16": 10,
+          "20": 10,
+          "24": 10,
+          "8": 10
+        },
+        "source": "0110111011111",
+        "source_length": 13
+      },
+      {
+        "alignment_class_m_mod_d": 0,
+        "codimension_slope_bits_per_precision_bit": 1.0,
+        "lock_counts_by_bits": {
+          "12": 9,
+          "16": 9,
+          "20": 9,
+          "24": 9,
+          "8": 9
+        },
+        "source": "0110110111111",
+        "source_length": 13
+      },
+      {
+        "alignment_class_m_mod_d": 0,
+        "codimension_slope_bits_per_precision_bit": 1.0,
+        "lock_counts_by_bits": {
+          "12": 2,
+          "16": 2,
+          "20": 2,
+          "24": 2,
+          "8": 2
+        },
+        "source": "0101111111111",
+        "source_length": 13
+      },
+      {
+        "alignment_class_m_mod_d": 10,
+        "codimension_slope_bits_per_precision_bit": 1.0,
+        "lock_counts_by_bits": {
+          "12": 8,
+          "16": 8,
+          "20": 8,
+          "24": 8,
+          "8": 8
+        },
+        "source": "0101111111011",
+        "source_length": 13
+      },
+      {
+        "alignment_class_m_mod_d": 9,
+        "codimension_slope_bits_per_precision_bit": 1.0,
+        "lock_counts_by_bits": {
+          "12": 11,
+          "16": 11,
+          "20": 11,
+          "24": 11,
+          "8": 11
+        },
+        "source": "0101111110111",
+        "source_length": 13
+      }
+    ],
+    "transitions": {
+      "12->16": {
+        "avg_incremental_codimension_bits": 3.533186,
+        "avg_lift_density_fraction": 0.088062021402,
+        "avg_observed_branching_factor": 1.408992,
+        "bins": 2806,
+        "full_lift_factor": 16,
+        "incremental_codimension_quantiles": {
+          "max": 4.0,
+          "median": 3.393821,
+          "min": 3.238903,
+          "p10": 3.293536,
+          "p90": 4.0
+        },
+        "strongest_incremental_loss_bins": [
+          {
+            "alignment_class_m_mod_d": 6,
+            "full_lift_factor": 16,
+            "high_lock_count": 8,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 8,
+            "observed_branching_factor": 1.0,
+            "source": "0111110111111",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 0,
+            "full_lift_factor": 16,
+            "high_lock_count": 6,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 6,
+            "observed_branching_factor": 1.0,
+            "source": "0111110111111",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 5,
+            "full_lift_factor": 16,
+            "high_lock_count": 10,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 10,
+            "observed_branching_factor": 1.0,
+            "source": "0111101111111",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 0,
+            "full_lift_factor": 16,
+            "high_lock_count": 5,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 5,
+            "observed_branching_factor": 1.0,
+            "source": "0111101111111",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 4,
+            "full_lift_factor": 16,
+            "high_lock_count": 14,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 14,
+            "observed_branching_factor": 1.0,
+            "source": "0111011111111",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 0,
+            "full_lift_factor": 16,
+            "high_lock_count": 4,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 4,
+            "observed_branching_factor": 1.0,
+            "source": "0111011111111",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 8,
+            "full_lift_factor": 16,
+            "high_lock_count": 19,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 19,
+            "observed_branching_factor": 1.0,
+            "source": "0111011101111",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 4,
+            "full_lift_factor": 16,
+            "high_lock_count": 17,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 17,
+            "observed_branching_factor": 1.0,
+            "source": "0111011101111",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 0,
+            "full_lift_factor": 16,
+            "high_lock_count": 13,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 13,
+            "observed_branching_factor": 1.0,
+            "source": "0111011101111",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 3,
+            "full_lift_factor": 16,
+            "high_lock_count": 21,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 21,
+            "observed_branching_factor": 1.0,
+            "source": "0110111111111",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 0,
+            "full_lift_factor": 16,
+            "high_lock_count": 3,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 3,
+            "observed_branching_factor": 1.0,
+            "source": "0110111111111",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 9,
+            "full_lift_factor": 16,
+            "high_lock_count": 11,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 11,
+            "observed_branching_factor": 1.0,
+            "source": "0110111110111",
+            "source_length": 13
+          }
+        ],
+        "weakest_incremental_loss_bins": [
+          {
+            "alignment_class_m_mod_d": 3,
+            "full_lift_factor": 16,
+            "high_lock_count": 422,
+            "incremental_codimension_bits": 3.238903,
+            "lift_density_fraction": 0.105923694779,
+            "low_lock_count": 249,
+            "observed_branching_factor": 1.694779,
+            "source": "000111111",
+            "source_length": 9
+          },
+          {
+            "alignment_class_m_mod_d": 3,
+            "full_lift_factor": 16,
+            "high_lock_count": 422,
+            "incremental_codimension_bits": 3.238903,
+            "lift_density_fraction": 0.105923694779,
+            "low_lock_count": 249,
+            "observed_branching_factor": 1.694779,
+            "source": "0001111111",
+            "source_length": 10
+          },
+          {
+            "alignment_class_m_mod_d": 4,
+            "full_lift_factor": 16,
+            "high_lock_count": 422,
+            "incremental_codimension_bits": 3.238903,
+            "lift_density_fraction": 0.105923694779,
+            "low_lock_count": 249,
+            "observed_branching_factor": 1.694779,
+            "source": "00001111111",
+            "source_length": 11
+          },
+          {
+            "alignment_class_m_mod_d": 3,
+            "full_lift_factor": 16,
+            "high_lock_count": 422,
+            "incremental_codimension_bits": 3.238903,
+            "lift_density_fraction": 0.105923694779,
+            "low_lock_count": 249,
+            "observed_branching_factor": 1.694779,
+            "source": "00010111111",
+            "source_length": 11
+          },
+          {
+            "alignment_class_m_mod_d": 3,
+            "full_lift_factor": 16,
+            "high_lock_count": 422,
+            "incremental_codimension_bits": 3.238903,
+            "lift_density_fraction": 0.105923694779,
+            "low_lock_count": 249,
+            "observed_branching_factor": 1.694779,
+            "source": "00011011111",
+            "source_length": 11
+          },
+          {
+            "alignment_class_m_mod_d": 3,
+            "full_lift_factor": 16,
+            "high_lock_count": 422,
+            "incremental_codimension_bits": 3.238903,
+            "lift_density_fraction": 0.105923694779,
+            "low_lock_count": 249,
+            "observed_branching_factor": 1.694779,
+            "source": "00011101111",
+            "source_length": 11
+          },
+          {
+            "alignment_class_m_mod_d": 3,
+            "full_lift_factor": 16,
+            "high_lock_count": 422,
+            "incremental_codimension_bits": 3.238903,
+            "lift_density_fraction": 0.105923694779,
+            "low_lock_count": 249,
+            "observed_branching_factor": 1.694779,
+            "source": "00011110111",
+            "source_length": 11
+          },
+          {
+            "alignment_class_m_mod_d": 3,
+            "full_lift_factor": 16,
+            "high_lock_count": 422,
+            "incremental_codimension_bits": 3.238903,
+            "lift_density_fraction": 0.105923694779,
+            "low_lock_count": 249,
+            "observed_branching_factor": 1.694779,
+            "source": "00011111011",
+            "source_length": 11
+          },
+          {
+            "alignment_class_m_mod_d": 3,
+            "full_lift_factor": 16,
+            "high_lock_count": 422,
+            "incremental_codimension_bits": 3.238903,
+            "lift_density_fraction": 0.105923694779,
+            "low_lock_count": 249,
+            "observed_branching_factor": 1.694779,
+            "source": "00011111101",
+            "source_length": 11
+          },
+          {
+            "alignment_class_m_mod_d": 3,
+            "full_lift_factor": 16,
+            "high_lock_count": 422,
+            "incremental_codimension_bits": 3.238903,
+            "lift_density_fraction": 0.105923694779,
+            "low_lock_count": 249,
+            "observed_branching_factor": 1.694779,
+            "source": "00011111111",
+            "source_length": 11
+          },
+          {
+            "alignment_class_m_mod_d": 4,
+            "full_lift_factor": 16,
+            "high_lock_count": 422,
+            "incremental_codimension_bits": 3.238903,
+            "lift_density_fraction": 0.105923694779,
+            "low_lock_count": 249,
+            "observed_branching_factor": 1.694779,
+            "source": "000011111111",
+            "source_length": 12
+          },
+          {
+            "alignment_class_m_mod_d": 3,
+            "full_lift_factor": 16,
+            "high_lock_count": 422,
+            "incremental_codimension_bits": 3.238903,
+            "lift_density_fraction": 0.105923694779,
+            "low_lock_count": 249,
+            "observed_branching_factor": 1.694779,
+            "source": "000101111111",
+            "source_length": 12
+          }
+        ]
+      },
+      "16->20": {
+        "avg_incremental_codimension_bits": 3.996511,
+        "avg_lift_density_fraction": 0.062651661357,
+        "avg_observed_branching_factor": 1.002427,
+        "bins": 2806,
+        "full_lift_factor": 16,
+        "incremental_codimension_quantiles": {
+          "max": 4.0,
+          "median": 4.0,
+          "min": 3.974465,
+          "p10": 3.98984,
+          "p90": 4.0
+        },
+        "strongest_incremental_loss_bins": [
+          {
+            "alignment_class_m_mod_d": 12,
+            "full_lift_factor": 16,
+            "high_lock_count": 244,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 244,
+            "observed_branching_factor": 1.0,
+            "source": "0111111111111",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 11,
+            "full_lift_factor": 16,
+            "high_lock_count": 244,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 244,
+            "observed_branching_factor": 1.0,
+            "source": "0111111111111",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 10,
+            "full_lift_factor": 16,
+            "high_lock_count": 244,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 244,
+            "observed_branching_factor": 1.0,
+            "source": "0111111111111",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 9,
+            "full_lift_factor": 16,
+            "high_lock_count": 244,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 244,
+            "observed_branching_factor": 1.0,
+            "source": "0111111111111",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 8,
+            "full_lift_factor": 16,
+            "high_lock_count": 244,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 244,
+            "observed_branching_factor": 1.0,
+            "source": "0111111111111",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 7,
+            "full_lift_factor": 16,
+            "high_lock_count": 244,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 244,
+            "observed_branching_factor": 1.0,
+            "source": "0111111111111",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 6,
+            "full_lift_factor": 16,
+            "high_lock_count": 245,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 245,
+            "observed_branching_factor": 1.0,
+            "source": "0111111111111",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 5,
+            "full_lift_factor": 16,
+            "high_lock_count": 247,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 247,
+            "observed_branching_factor": 1.0,
+            "source": "0111111111111",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "full_lift_factor": 16,
+            "high_lock_count": 390,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 390,
+            "observed_branching_factor": 1.0,
+            "source": "0111111111111",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 12,
+            "full_lift_factor": 16,
+            "high_lock_count": 245,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 245,
+            "observed_branching_factor": 1.0,
+            "source": "0111110111111",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 11,
+            "full_lift_factor": 16,
+            "high_lock_count": 247,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 247,
+            "observed_branching_factor": 1.0,
+            "source": "0111110111111",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 7,
+            "full_lift_factor": 16,
+            "high_lock_count": 390,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 390,
+            "observed_branching_factor": 1.0,
+            "source": "0111110111111",
+            "source_length": 13
+          }
+        ],
+        "weakest_incremental_loss_bins": [
+          {
+            "alignment_class_m_mod_d": 0,
+            "full_lift_factor": 16,
+            "high_lock_count": 57,
+            "incremental_codimension_bits": 3.974465,
+            "lift_density_fraction": 0.063616071429,
+            "low_lock_count": 56,
+            "observed_branching_factor": 1.017857,
+            "source": "0011111101101",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 0,
+            "full_lift_factor": 16,
+            "high_lock_count": 58,
+            "incremental_codimension_bits": 3.974909,
+            "lift_density_fraction": 0.063596491228,
+            "low_lock_count": 57,
+            "observed_branching_factor": 1.017544,
+            "source": "001111101101",
+            "source_length": 12
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "full_lift_factor": 16,
+            "high_lock_count": 58,
+            "incremental_codimension_bits": 3.974909,
+            "lift_density_fraction": 0.063596491228,
+            "low_lock_count": 57,
+            "observed_branching_factor": 1.017544,
+            "source": "0101110111011",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 0,
+            "full_lift_factor": 16,
+            "high_lock_count": 59,
+            "incremental_codimension_bits": 3.975338,
+            "lift_density_fraction": 0.063577586207,
+            "low_lock_count": 58,
+            "observed_branching_factor": 1.017241,
+            "source": "00111101101",
+            "source_length": 11
+          },
+          {
+            "alignment_class_m_mod_d": 7,
+            "full_lift_factor": 16,
+            "high_lock_count": 68,
+            "incremental_codimension_bits": 3.978626,
+            "lift_density_fraction": 0.063432835821,
+            "low_lock_count": 67,
+            "observed_branching_factor": 1.014925,
+            "source": "01011010111",
+            "source_length": 11
+          },
+          {
+            "alignment_class_m_mod_d": 7,
+            "full_lift_factor": 16,
+            "high_lock_count": 68,
+            "incremental_codimension_bits": 3.978626,
+            "lift_density_fraction": 0.063432835821,
+            "low_lock_count": 67,
+            "observed_branching_factor": 1.014925,
+            "source": "010110101111",
+            "source_length": 12
+          },
+          {
+            "alignment_class_m_mod_d": 7,
+            "full_lift_factor": 16,
+            "high_lock_count": 68,
+            "incremental_codimension_bits": 3.978626,
+            "lift_density_fraction": 0.063432835821,
+            "low_lock_count": 67,
+            "observed_branching_factor": 1.014925,
+            "source": "0101101011111",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 6,
+            "full_lift_factor": 16,
+            "high_lock_count": 74,
+            "incremental_codimension_bits": 3.980371,
+            "lift_density_fraction": 0.063356164384,
+            "low_lock_count": 73,
+            "observed_branching_factor": 1.013699,
+            "source": "00110101111",
+            "source_length": 11
+          },
+          {
+            "alignment_class_m_mod_d": 6,
+            "full_lift_factor": 16,
+            "high_lock_count": 74,
+            "incremental_codimension_bits": 3.980371,
+            "lift_density_fraction": 0.063356164384,
+            "low_lock_count": 73,
+            "observed_branching_factor": 1.013699,
+            "source": "001101011111",
+            "source_length": 12
+          },
+          {
+            "alignment_class_m_mod_d": 6,
+            "full_lift_factor": 16,
+            "high_lock_count": 74,
+            "incremental_codimension_bits": 3.980371,
+            "lift_density_fraction": 0.063356164384,
+            "low_lock_count": 73,
+            "observed_branching_factor": 1.013699,
+            "source": "0011010111111",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 6,
+            "full_lift_factor": 16,
+            "high_lock_count": 267,
+            "incremental_codimension_bits": 3.983698,
+            "lift_density_fraction": 0.063210227273,
+            "low_lock_count": 264,
+            "observed_branching_factor": 1.011364,
+            "source": "0110111",
+            "source_length": 7
+          },
+          {
+            "alignment_class_m_mod_d": 6,
+            "full_lift_factor": 16,
+            "high_lock_count": 267,
+            "incremental_codimension_bits": 3.983698,
+            "lift_density_fraction": 0.063210227273,
+            "low_lock_count": 264,
+            "observed_branching_factor": 1.011364,
+            "source": "01101111",
+            "source_length": 8
+          }
+        ]
+      },
+      "20->24": {
+        "avg_incremental_codimension_bits": 4.0,
+        "avg_lift_density_fraction": 0.0625,
+        "avg_observed_branching_factor": 1.0,
+        "bins": 2806,
+        "full_lift_factor": 16,
+        "incremental_codimension_quantiles": {
+          "max": 4.0,
+          "median": 4.0,
+          "min": 4.0,
+          "p10": 4.0,
+          "p90": 4.0
+        },
+        "strongest_incremental_loss_bins": [
+          {
+            "alignment_class_m_mod_d": 12,
+            "full_lift_factor": 16,
+            "high_lock_count": 244,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 244,
+            "observed_branching_factor": 1.0,
+            "source": "0111111111111",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 11,
+            "full_lift_factor": 16,
+            "high_lock_count": 244,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 244,
+            "observed_branching_factor": 1.0,
+            "source": "0111111111111",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 10,
+            "full_lift_factor": 16,
+            "high_lock_count": 244,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 244,
+            "observed_branching_factor": 1.0,
+            "source": "0111111111111",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 9,
+            "full_lift_factor": 16,
+            "high_lock_count": 244,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 244,
+            "observed_branching_factor": 1.0,
+            "source": "0111111111111",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 8,
+            "full_lift_factor": 16,
+            "high_lock_count": 244,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 244,
+            "observed_branching_factor": 1.0,
+            "source": "0111111111111",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 7,
+            "full_lift_factor": 16,
+            "high_lock_count": 244,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 244,
+            "observed_branching_factor": 1.0,
+            "source": "0111111111111",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 6,
+            "full_lift_factor": 16,
+            "high_lock_count": 245,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 245,
+            "observed_branching_factor": 1.0,
+            "source": "0111111111111",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 5,
+            "full_lift_factor": 16,
+            "high_lock_count": 247,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 247,
+            "observed_branching_factor": 1.0,
+            "source": "0111111111111",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 4,
+            "full_lift_factor": 16,
+            "high_lock_count": 250,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 250,
+            "observed_branching_factor": 1.0,
+            "source": "0111111111111",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 3,
+            "full_lift_factor": 16,
+            "high_lock_count": 262,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 262,
+            "observed_branching_factor": 1.0,
+            "source": "0111111111111",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "full_lift_factor": 16,
+            "high_lock_count": 303,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 303,
+            "observed_branching_factor": 1.0,
+            "source": "0111111111111",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "full_lift_factor": 16,
+            "high_lock_count": 390,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 390,
+            "observed_branching_factor": 1.0,
+            "source": "0111111111111",
+            "source_length": 13
+          }
+        ],
+        "weakest_incremental_loss_bins": [
+          {
+            "alignment_class_m_mod_d": 0,
+            "full_lift_factor": 16,
+            "high_lock_count": 38,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 38,
+            "observed_branching_factor": 1.0,
+            "source": "011",
+            "source_length": 3
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "full_lift_factor": 16,
+            "high_lock_count": 390,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 390,
+            "observed_branching_factor": 1.0,
+            "source": "011",
+            "source_length": 3
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "full_lift_factor": 16,
+            "high_lock_count": 303,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 303,
+            "observed_branching_factor": 1.0,
+            "source": "011",
+            "source_length": 3
+          },
+          {
+            "alignment_class_m_mod_d": 0,
+            "full_lift_factor": 16,
+            "high_lock_count": 19,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 19,
+            "observed_branching_factor": 1.0,
+            "source": "0111",
+            "source_length": 4
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "full_lift_factor": 16,
+            "high_lock_count": 390,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 390,
+            "observed_branching_factor": 1.0,
+            "source": "0111",
+            "source_length": 4
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "full_lift_factor": 16,
+            "high_lock_count": 303,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 303,
+            "observed_branching_factor": 1.0,
+            "source": "0111",
+            "source_length": 4
+          },
+          {
+            "alignment_class_m_mod_d": 3,
+            "full_lift_factor": 16,
+            "high_lock_count": 262,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 262,
+            "observed_branching_factor": 1.0,
+            "source": "0111",
+            "source_length": 4
+          },
+          {
+            "alignment_class_m_mod_d": 0,
+            "full_lift_factor": 16,
+            "high_lock_count": 12,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 12,
+            "observed_branching_factor": 1.0,
+            "source": "01111",
+            "source_length": 5
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "full_lift_factor": 16,
+            "high_lock_count": 390,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 390,
+            "observed_branching_factor": 1.0,
+            "source": "01111",
+            "source_length": 5
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "full_lift_factor": 16,
+            "high_lock_count": 303,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 303,
+            "observed_branching_factor": 1.0,
+            "source": "01111",
+            "source_length": 5
+          },
+          {
+            "alignment_class_m_mod_d": 3,
+            "full_lift_factor": 16,
+            "high_lock_count": 262,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 262,
+            "observed_branching_factor": 1.0,
+            "source": "01111",
+            "source_length": 5
+          },
+          {
+            "alignment_class_m_mod_d": 4,
+            "full_lift_factor": 16,
+            "high_lock_count": 250,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 250,
+            "observed_branching_factor": 1.0,
+            "source": "01111",
+            "source_length": 5
+          }
+        ]
+      },
+      "8->12": {
+        "avg_incremental_codimension_bits": 2.185041,
+        "avg_lift_density_fraction": 0.242113083657,
+        "avg_observed_branching_factor": 3.873809,
+        "bins": 2806,
+        "full_lift_factor": 16,
+        "incremental_codimension_quantiles": {
+          "max": 4.0,
+          "median": 1.910565,
+          "min": 1.38109,
+          "p10": 1.653722,
+          "p90": 3.630766
+        },
+        "strongest_incremental_loss_bins": [
+          {
+            "alignment_class_m_mod_d": 6,
+            "full_lift_factor": 16,
+            "high_lock_count": 8,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 8,
+            "observed_branching_factor": 1.0,
+            "source": "0111110111111",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 0,
+            "full_lift_factor": 16,
+            "high_lock_count": 6,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 6,
+            "observed_branching_factor": 1.0,
+            "source": "0111110111111",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 5,
+            "full_lift_factor": 16,
+            "high_lock_count": 10,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 10,
+            "observed_branching_factor": 1.0,
+            "source": "0111101111111",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 0,
+            "full_lift_factor": 16,
+            "high_lock_count": 5,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 5,
+            "observed_branching_factor": 1.0,
+            "source": "0111101111111",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 0,
+            "full_lift_factor": 16,
+            "high_lock_count": 4,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 4,
+            "observed_branching_factor": 1.0,
+            "source": "0111011111111",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 0,
+            "full_lift_factor": 16,
+            "high_lock_count": 3,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 3,
+            "observed_branching_factor": 1.0,
+            "source": "0110111111111",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 9,
+            "full_lift_factor": 16,
+            "high_lock_count": 11,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 11,
+            "observed_branching_factor": 1.0,
+            "source": "0110111110111",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 0,
+            "full_lift_factor": 16,
+            "high_lock_count": 10,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 10,
+            "observed_branching_factor": 1.0,
+            "source": "0110111011111",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 0,
+            "full_lift_factor": 16,
+            "high_lock_count": 9,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 9,
+            "observed_branching_factor": 1.0,
+            "source": "0110110111111",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 0,
+            "full_lift_factor": 16,
+            "high_lock_count": 2,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 2,
+            "observed_branching_factor": 1.0,
+            "source": "0101111111111",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 10,
+            "full_lift_factor": 16,
+            "high_lock_count": 8,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 8,
+            "observed_branching_factor": 1.0,
+            "source": "0101111111011",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 9,
+            "full_lift_factor": 16,
+            "high_lock_count": 11,
+            "incremental_codimension_bits": 4.0,
+            "lift_density_fraction": 0.0625,
+            "low_lock_count": 11,
+            "observed_branching_factor": 1.0,
+            "source": "0101111110111",
+            "source_length": 13
+          }
+        ],
+        "weakest_incremental_loss_bins": [
+          {
+            "alignment_class_m_mod_d": 3,
+            "full_lift_factor": 16,
+            "high_lock_count": 215,
+            "incremental_codimension_bits": 1.38109,
+            "lift_density_fraction": 0.383928571429,
+            "low_lock_count": 35,
+            "observed_branching_factor": 6.142857,
+            "source": "00001111111",
+            "source_length": 11
+          },
+          {
+            "alignment_class_m_mod_d": 3,
+            "full_lift_factor": 16,
+            "high_lock_count": 215,
+            "incremental_codimension_bits": 1.421732,
+            "lift_density_fraction": 0.373263888889,
+            "low_lock_count": 36,
+            "observed_branching_factor": 5.972222,
+            "source": "000011111111",
+            "source_length": 12
+          },
+          {
+            "alignment_class_m_mod_d": 3,
+            "full_lift_factor": 16,
+            "high_lock_count": 215,
+            "incremental_codimension_bits": 1.421732,
+            "lift_density_fraction": 0.373263888889,
+            "low_lock_count": 36,
+            "observed_branching_factor": 5.972222,
+            "source": "0000111111111",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "full_lift_factor": 16,
+            "high_lock_count": 198,
+            "incremental_codimension_bits": 1.499926,
+            "lift_density_fraction": 0.353571428571,
+            "low_lock_count": 35,
+            "observed_branching_factor": 5.657143,
+            "source": "000111111",
+            "source_length": 9
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "full_lift_factor": 16,
+            "high_lock_count": 198,
+            "incremental_codimension_bits": 1.499926,
+            "lift_density_fraction": 0.353571428571,
+            "low_lock_count": 35,
+            "observed_branching_factor": 5.657143,
+            "source": "0001111111",
+            "source_length": 10
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "full_lift_factor": 16,
+            "high_lock_count": 198,
+            "incremental_codimension_bits": 1.499926,
+            "lift_density_fraction": 0.353571428571,
+            "low_lock_count": 35,
+            "observed_branching_factor": 5.657143,
+            "source": "00010111111",
+            "source_length": 11
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "full_lift_factor": 16,
+            "high_lock_count": 198,
+            "incremental_codimension_bits": 1.499926,
+            "lift_density_fraction": 0.353571428571,
+            "low_lock_count": 35,
+            "observed_branching_factor": 5.657143,
+            "source": "00011111011",
+            "source_length": 11
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "full_lift_factor": 16,
+            "high_lock_count": 198,
+            "incremental_codimension_bits": 1.499926,
+            "lift_density_fraction": 0.353571428571,
+            "low_lock_count": 35,
+            "observed_branching_factor": 5.657143,
+            "source": "00011111101",
+            "source_length": 11
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "full_lift_factor": 16,
+            "high_lock_count": 198,
+            "incremental_codimension_bits": 1.499926,
+            "lift_density_fraction": 0.353571428571,
+            "low_lock_count": 35,
+            "observed_branching_factor": 5.657143,
+            "source": "000111110111",
+            "source_length": 12
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "full_lift_factor": 16,
+            "high_lock_count": 198,
+            "incremental_codimension_bits": 1.499926,
+            "lift_density_fraction": 0.353571428571,
+            "low_lock_count": 35,
+            "observed_branching_factor": 5.657143,
+            "source": "000111111101",
+            "source_length": 12
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "full_lift_factor": 16,
+            "high_lock_count": 198,
+            "incremental_codimension_bits": 1.499926,
+            "lift_density_fraction": 0.353571428571,
+            "low_lock_count": 35,
+            "observed_branching_factor": 5.657143,
+            "source": "0001111101111",
+            "source_length": 13
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "full_lift_factor": 16,
+            "high_lock_count": 198,
+            "incremental_codimension_bits": 1.499926,
+            "lift_density_fraction": 0.353571428571,
+            "low_lock_count": 35,
+            "observed_branching_factor": 5.657143,
+            "source": "0001111110111",
+            "source_length": 13
+          }
+        ]
+      }
+    },
+    "weakest_codimension_slope_bins": [
+      {
+        "alignment_class_m_mod_d": 3,
+        "codimension_slope_bits_per_precision_bit": 0.822647,
+        "lock_counts_by_bits": {
+          "12": 249,
+          "16": 422,
+          "20": 422,
+          "24": 422,
+          "8": 47
+        },
+        "source": "000111111",
+        "source_length": 9
+      },
+      {
+        "alignment_class_m_mod_d": 3,
+        "codimension_slope_bits_per_precision_bit": 0.822647,
+        "lock_counts_by_bits": {
+          "12": 249,
+          "16": 422,
+          "20": 422,
+          "24": 422,
+          "8": 47
+        },
+        "source": "0001111111",
+        "source_length": 10
+      },
+      {
+        "alignment_class_m_mod_d": 4,
+        "codimension_slope_bits_per_precision_bit": 0.822647,
+        "lock_counts_by_bits": {
+          "12": 249,
+          "16": 422,
+          "20": 422,
+          "24": 422,
+          "8": 47
+        },
+        "source": "00001111111",
+        "source_length": 11
+      },
+      {
+        "alignment_class_m_mod_d": 3,
+        "codimension_slope_bits_per_precision_bit": 0.822647,
+        "lock_counts_by_bits": {
+          "12": 249,
+          "16": 422,
+          "20": 422,
+          "24": 422,
+          "8": 47
+        },
+        "source": "00010111111",
+        "source_length": 11
+      },
+      {
+        "alignment_class_m_mod_d": 3,
+        "codimension_slope_bits_per_precision_bit": 0.822647,
+        "lock_counts_by_bits": {
+          "12": 249,
+          "16": 422,
+          "20": 422,
+          "24": 422,
+          "8": 47
+        },
+        "source": "00011011111",
+        "source_length": 11
+      },
+      {
+        "alignment_class_m_mod_d": 3,
+        "codimension_slope_bits_per_precision_bit": 0.822647,
+        "lock_counts_by_bits": {
+          "12": 249,
+          "16": 422,
+          "20": 422,
+          "24": 422,
+          "8": 47
+        },
+        "source": "00011101111",
+        "source_length": 11
+      },
+      {
+        "alignment_class_m_mod_d": 3,
+        "codimension_slope_bits_per_precision_bit": 0.822647,
+        "lock_counts_by_bits": {
+          "12": 249,
+          "16": 422,
+          "20": 422,
+          "24": 422,
+          "8": 47
+        },
+        "source": "00011110111",
+        "source_length": 11
+      },
+      {
+        "alignment_class_m_mod_d": 3,
+        "codimension_slope_bits_per_precision_bit": 0.822647,
+        "lock_counts_by_bits": {
+          "12": 249,
+          "16": 422,
+          "20": 422,
+          "24": 422,
+          "8": 47
+        },
+        "source": "00011111011",
+        "source_length": 11
+      },
+      {
+        "alignment_class_m_mod_d": 3,
+        "codimension_slope_bits_per_precision_bit": 0.822647,
+        "lock_counts_by_bits": {
+          "12": 249,
+          "16": 422,
+          "20": 422,
+          "24": 422,
+          "8": 47
+        },
+        "source": "00011111101",
+        "source_length": 11
+      },
+      {
+        "alignment_class_m_mod_d": 3,
+        "codimension_slope_bits_per_precision_bit": 0.822647,
+        "lock_counts_by_bits": {
+          "12": 249,
+          "16": 422,
+          "20": 422,
+          "24": 422,
+          "8": 47
+        },
+        "source": "00011111111",
+        "source_length": 11
+      },
+      {
+        "alignment_class_m_mod_d": 4,
+        "codimension_slope_bits_per_precision_bit": 0.822647,
+        "lock_counts_by_bits": {
+          "12": 249,
+          "16": 422,
+          "20": 422,
+          "24": 422,
+          "8": 47
+        },
+        "source": "000011111111",
+        "source_length": 12
+      },
+      {
+        "alignment_class_m_mod_d": 3,
+        "codimension_slope_bits_per_precision_bit": 0.822647,
+        "lock_counts_by_bits": {
+          "12": 249,
+          "16": 422,
+          "20": 422,
+          "24": 422,
+          "8": 47
+        },
+        "source": "000101111111",
+        "source_length": 12
+      }
+    ]
+  },
+  "runtime_seconds": 15.275928,
+  "status": "finite measurement only; not a proof of Collatz"
+}

@@ -39,7 +39,7 @@ the codimension and compatibility profile of repeated locks.
 Command:
 
 ```powershell
-python experiments\collatz_odd_unit_lock_census.py --max-depth 12 --lock-bits 4,8 --formula-trials 5000 --positive-source-limit 64 --positive-q-limit 32 --quiet --output experiments\results\odd_unit_lock_census_d12_R8_20260705.json
+python experiments\collatz_odd_unit_lock_census.py --max-depth 12 --lock-bits '4,8' --formula-trials 5000 --positive-source-limit 64 --positive-q-limit 32 --quiet --output experiments\results\odd_unit_lock_census_d12_R8_20260705.json
 ```
 
 Summary:
@@ -123,5 +123,5 @@ measurable object with replayable data and exact falsifiers.
 
 ```powershell
 python -m py_compile experiments\collatz_odd_unit_lock_census.py
-python experiments\collatz_odd_unit_lock_census.py --max-depth 12 --lock-bits 4,8 --formula-trials 5000 --positive-source-limit 64 --positive-q-limit 32 --quiet --output experiments\results\odd_unit_lock_census_d12_R8_20260705.json
+python experiments\collatz_odd_unit_lock_census.py --max-depth 12 --lock-bits '4,8' --formula-trials 5000 --positive-source-limit 64 --positive-q-limit 32 --quiet --output experiments\results\odd_unit_lock_census_d12_R8_20260705.json
 ```
