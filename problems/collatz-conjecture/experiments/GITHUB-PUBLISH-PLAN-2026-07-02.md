@@ -28,6 +28,7 @@ Files to include from repo root:
 
 ```text
 problems/collatz-conjecture/README.md
+problems/collatz-conjecture/FAILED-ATTEMPTS-WEIRDNESS-ATLAS-2026-07-05.md
 problems/collatz-conjecture/status.md
 problems/collatz-conjecture/experiments/AUDIT-REGISTER.md
 problems/collatz-conjecture/experiments/README.md
@@ -35,6 +36,7 @@ problems/collatz-conjecture/experiments/results/INDEX.md
 problems/collatz-conjecture/experiments/CHATGPT-SHARE-INGEST-2026-07-02.md
 problems/collatz-conjecture/experiments/CHATGPT-SHARE-DEEP-ANALYSIS-2026-07-02.md
 problems/collatz-conjecture/experiments/COLLATZ-PURSUIT-CURRENT-STATE-2026-07-02.md
+problems/collatz-conjecture/experiments/COLLATZ-FAILED-IDEAS-ATLAS-2026-07-04.md
 problems/collatz-conjecture/experiments/COLLATZ-ALGORITHM-CATALOG-TRIAGE-2026-07-04.md
 problems/collatz-conjecture/experiments/COLLATZ-ALGORITHM-ATTACK-MATRIX-2026-07-04.md
 problems/collatz-conjecture/experiments/COLLATZ-BUILDER-104-QA-RUBRIC-2026-07-04.md
@@ -95,6 +97,7 @@ git switch -c codex/collatz-phase-lock-integration
 
 git add -- `
   problems/collatz-conjecture/README.md `
+  problems/collatz-conjecture/FAILED-ATTEMPTS-WEIRDNESS-ATLAS-2026-07-05.md `
   problems/collatz-conjecture/status.md `
   problems/collatz-conjecture/experiments/AUDIT-REGISTER.md `
   problems/collatz-conjecture/experiments/README.md `
@@ -102,6 +105,7 @@ git add -- `
   problems/collatz-conjecture/experiments/CHATGPT-SHARE-INGEST-2026-07-02.md `
   problems/collatz-conjecture/experiments/CHATGPT-SHARE-DEEP-ANALYSIS-2026-07-02.md `
   problems/collatz-conjecture/experiments/COLLATZ-PURSUIT-CURRENT-STATE-2026-07-02.md `
+  problems/collatz-conjecture/experiments/COLLATZ-FAILED-IDEAS-ATLAS-2026-07-04.md `
   problems/collatz-conjecture/experiments/COLLATZ-ALGORITHM-CATALOG-TRIAGE-2026-07-04.md `
   problems/collatz-conjecture/experiments/COLLATZ-ALGORITHM-ATTACK-MATRIX-2026-07-04.md `
   problems/collatz-conjecture/experiments/COLLATZ-BUILDER-104-QA-RUBRIC-2026-07-04.md `

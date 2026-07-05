@@ -25,6 +25,11 @@ with a concrete build queue in
 [`COLLATZ-ALGORITHM-ATTACK-MATRIX-2026-07-04.md`](COLLATZ-ALGORITHM-ATTACK-MATRIX-2026-07-04.md).
 The user-supplied 104-builder framework is converted into internal QA gates in
 [`COLLATZ-BUILDER-104-QA-RUBRIC-2026-07-04.md`](COLLATZ-BUILDER-104-QA-RUBRIC-2026-07-04.md).
+The no-repeat literature and attempt atlas is
+[`COLLATZ-FAILED-IDEAS-ATLAS-2026-07-04.md`](COLLATZ-FAILED-IDEAS-ATLAS-2026-07-04.md):
+150 approach families, weirdness ranks, failure modes, and future-use guidance
+grounded in Lagarias's bibliographies, the 2021 overview, ccchallenge, and the
+repo's own audits.
 Only the formal-methods slice is currently proof-relevant: SAT/SMT, BDD/ZDD,
 CEGAR, omega-automata/model checking, rewrite/e-graph methods, LLL, proof
 certificates, and adversarial counterexample search.

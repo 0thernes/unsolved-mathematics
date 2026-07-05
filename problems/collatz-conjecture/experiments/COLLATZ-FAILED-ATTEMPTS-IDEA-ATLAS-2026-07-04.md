@@ -7,11 +7,11 @@ Purpose: map the known Collatz literature and failed/partial routes so future wo
 Primary sources used:
 
 - CCChallenge live literature database, 370 entries, scraped into [`COLLATZ-LITERATURE-CCCHALLENGE-370-SNAPSHOT-2026-07-04.md`](COLLATZ-LITERATURE-CCCHALLENGE-370-SNAPSHOT-2026-07-04.md).
-- Companion no-repeat map: [`COLLATZ-FAILED-IDEAS-ATLAS-2026-07-04.md`](COLLATZ-FAILED-IDEAS-ATLAS-2026-07-04.md), which expands the route list into 95 approach families and area rankings.
+- Companion no-repeat map: [`COLLATZ-FAILED-IDEAS-ATLAS-2026-07-04.md`](COLLATZ-FAILED-IDEAS-ATLAS-2026-07-04.md), which expands the route list into 150 approach families and area rankings.
 - Lagarias annotated bibliographies: 1963-1999 and 2000-2009.
 - Lagarias overview and AMS volume *The Ultimate Challenge: The 3x+1 Problem*.
 - Local repo files: `papers.md`, `attempts.md`, `approaches.md`, `history.md`, `status.md`.
-- Live source checks for Tao, Bařina, Hercher, CCChallenge, Knight, and the Opfer proof-claim episode.
+- Live source checks for Tao, Barina, Hercher, CCChallenge, Knight, and the Opfer proof-claim episode.
 
 ## Executive Verdict
 
@@ -49,13 +49,13 @@ The highest future value is in routes that explicitly consume structure old meth
 
 | Rank | Route / Attempt Family | Representative Papers / Names | What It Achieved | Why It Has Failed So Far | Weirdness | Repetition Risk | Future Value |
 |---:|---|---|---|---|---:|---:|---:|
-| 1 | Density / almost-all stopping time | Terras 1976; Everett 1977; Tao 2022 | Density-one finite stopping; almost all orbits attain almost bounded values. | Exceptional set remains uncontrolled; "almost all" cannot become "all." | 6 | 9 | 10 |
+| 1 | Density / almost-all stopping time | Terras 1976; Everett 1977; Tao 2019/2022 | Density-one finite stopping; almost all orbits attain almost bounded values. | Exceptional set remains uncontrolled; "almost all" cannot become "all." | 6 | 9 | 10 |
 | 2 | Stochastic / random-walk models | Lagarias-Weiss 1992; Crandall; Kontorovich-Miller; Lagarias-Soundararajan | Explains negative drift, stopping-time distributions, Benford behavior. | Heuristics are blind to worst-case deterministic exceptions. | 7 | 10 | 9 |
 | 3 | Cycle exclusion by Diophantine approximation | Steiner; Eliahou; Simons; Simons-de Weger; Hercher 2023 | Excludes low-complexity cycles; any cycle must be enormous. | Finite lower bounds never rule out all cycle lengths. | 5 | 8 | 9 |
 | 4 | 2-adic parity-vector conjugacy | Hedlund lineage; Lagarias 1985; Lagarias 1990; Bernstein-Lagarias 1996; Monks/Yazinski/Kraft | Exact conjugacy to shift; rational/2-adic cycles organized. | 2-adic typicality does not pin down positive integers. | 9 | 8 | 10 |
 | 5 | Inverse tree / preimage tree density | Applegate-Lagarias; tree-search methods; inverse-iteration papers | Counts large subtrees leading to 1; gives density lower bounds. | Tree mass can be large while still missing a thin counterexample path. | 6 | 8 | 8 |
 | 6 | Krasikov inequalities / difference inequalities | Krasikov; Applegate-Lagarias; Krasikov-Lagarias 2003 | Strongest explicit lower bound family for convergent set, e.g. `x^0.84`. | Positive-exponent gap remains below full density. | 5 | 7 | 8 |
-| 7 | Computational verification | Oliveira e Silva; Roosendaal; Bařina 2020/2025; Angeltveit 2026 | Verified all starts below huge bounds, now `2^71`; improves cycle floors. | Finite verification cannot close infinite domain. | 3 | 10 | 8 |
+| 7 | Computational verification | Oliveira e Silva; Roosendaal; Barina 2020/2025; Angeltveit 2026 | Verified all starts below huge bounds, now `2^71`; improves cycle floors. | Finite verification cannot close infinite domain. | 3 | 10 | 8 |
 | 8 | Generalized Collatz / undecidability | Conway 1972/1987; Kurtz-Simon 2007; FRACTRAN/TC work | Shows broad Collatz-like families simulate computation / can be undecidable. | Negative backdrop only; does not settle classic `3n+1`. | 10 | 7 | 9 |
 | 9 | Rational / negative / nonpositive cycles | Böhm-Sontacchi; Lagarias rational cycles; Halbeisen-Hungerbühler | Reveals negative cycles, rational periodicity, cycle families. | Explains why sign-blind arguments overclaim; does not separate positives. | 9 | 8 | 9 |
 | 10 | Sufficient sets / arithmetic progressions | Andaloro; Monks 2006 | Shows many subsets/progressions are sufficient reductions. | Reduction can be equivalent-strength; does not prove base set converges. | 5 | 8 | 7 |
@@ -165,7 +165,7 @@ Current lesson: this is closest to the repo's spine-ladder work; future work mus
 
 ### Computation / Records / Verification
 
-Representative entries: Oliveira e Silva, Roosendaal, Bařina, Angeltveit, Applegate-Lagarias lower-bound record work.
+Representative entries: Oliveira e Silva, Roosendaal, Barina, Angeltveit, Applegate-Lagarias lower-bound record work.
 
 Local route tag: `finite-verification`.
 

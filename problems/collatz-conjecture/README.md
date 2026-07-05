@@ -14,6 +14,7 @@ Iterating n -> n/2 (even) or 3n+1 (odd) eventually reaches 1 for every positive 
 | [`originator.md`](originator.md) | Biography of the originator(s) |
 | [`approaches.md`](approaches.md) | Major attack strategies and partial results |
 | [`attempts.md`](attempts.md) | Notable attempts, near-misses, and false proofs |
+| [`FAILED-ATTEMPTS-WEIRDNESS-ATLAS-2026-07-05.md`](FAILED-ATTEMPTS-WEIRDNESS-ATLAS-2026-07-05.md) | No-repeat atlas of prior approaches, failure modes, and weird residues |
 | [`papers.md`](papers.md) | The 25 most important papers (old + new) |
 | [`mathematicians.md`](mathematicians.md) | Top 10 contributors, past and present |
 | [`status.md`](status.md) | Current frontier and what a proof would require |
@@ -59,6 +60,7 @@ Iterating n -> n/2 (even) or 3n+1 (odd) eventually reaches 1 for every positive 
 | [`experiments/BRANCH-PREFIX-RETIMED-TIGHT-CREDIT-FLOOR.md`](experiments/BRANCH-PREFIX-RETIMED-TIGHT-CREDIT-FLOOR.md) | Tight credit-floor identity: in all `511` align-3 local-grammar records, final local credit and new required layer cancel, so pressure surplus equals inherited pre-entry reserve; the five tight cases are exactly inherited reserve `1` |
 | [`experiments/BRANCH-PREFIX-RETIMED-TIGHT-RESERVE-SOURCE.md`](experiments/BRANCH-PREFIX-RETIMED-TIGHT-RESERVE-SOURCE.md) | Tight reserve-source audit: all `511` local-grammar records enter the final align-3 credit with `entry_required = parent_required`; prior structural credit supplies the reserve, and the five tight cases are exactly prior reserve `1` |
 | [`experiments/COLLATZ-PURSUIT-CURRENT-STATE-2026-07-02.md`](experiments/COLLATZ-PURSUIT-CURRENT-STATE-2026-07-02.md) | Current integrated pursuit map after the four ChatGPT share-thread ingest: open problem; accepted phase-collision algebra; unavailable sandbox files quarantined as replication targets; bridge target between odd-unit locks and retimed reserve-source induction |
+| [`experiments/COLLATZ-FAILED-IDEAS-ATLAS-2026-07-04.md`](experiments/COLLATZ-FAILED-IDEAS-ATLAS-2026-07-04.md) | Anti-repeat atlas of Collatz approaches tried so far: 150 idea families, representative papers, failure modes, weirdness scores, and guardrails for avoiding old traps |
 | [`experiments/COLLATZ-ALGORITHM-CATALOG-TRIAGE-2026-07-04.md`](experiments/COLLATZ-ALGORITHM-CATALOG-TRIAGE-2026-07-04.md) | Triage of the 1000-algorithm catalog against the current Collatz bottleneck: keeps SAT/SMT, BDD/ZDD, CEGAR, automata, rewriting, LLL, and proof certificates; rejects broad catalog sprawl as non-proof-relevant |
 | [`experiments/COLLATZ-ALGORITHM-ATTACK-MATRIX-2026-07-04.md`](experiments/COLLATZ-ALGORITHM-ATTACK-MATRIX-2026-07-04.md) | Concrete attack matrix routing useful catalog methods to Collatz bottlenecks: retimed pressure, phase collision, survivor frontiers, certificates, pseudo-proof containment, and reproducibility |
 | [`experiments/COLLATZ-BUILDER-104-QA-RUBRIC-2026-07-04.md`](experiments/COLLATZ-BUILDER-104-QA-RUBRIC-2026-07-04.md) | QA rubric converting the user-supplied 104-builder framework into proof-status gates, falsification requirements, reproducibility checks, and overclaim controls |
