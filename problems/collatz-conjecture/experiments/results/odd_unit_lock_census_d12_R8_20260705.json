@@ -1,0 +1,536 @@
+{
+  "elapsed_seconds": 5.721894,
+  "formula_verification": {
+    "checks_run": 9994,
+    "failure_count": 0,
+    "failures": [],
+    "lock_bits": 8,
+    "trials_requested": 5000
+  },
+  "interpretation": "The phase gate is only the entry ticket. Once valuations match, each extra R-bit regeneration event chooses one odd-unit residue out of 2^(R-1). Repeated locks therefore become a compatibility and codimension problem, not a solved Collatz theorem.",
+  "library": {
+    "primitive_source_cycles": 161,
+    "primitive_source_phase_states": 1716,
+    "supercritical_necklace_cycles": 181,
+    "unique_target_spines": 161
+  },
+  "lock_census": {
+    "by_lock_bits": {
+      "4": {
+        "avg_distinct_required_residues_in_phase_group": 6.894522144522,
+        "codimension_bits_beyond_oddness_per_lock": 3,
+        "global_distinct_required_residues": 8,
+        "global_residue_coverage_fraction": 1.0,
+        "max_distinct_required_residues_in_phase_group": 8,
+        "max_same_residue_bucket_inside_phase_group": 75,
+        "odd_unit_residue_space_size": 8,
+        "phase_groups": 1716,
+        "phase_groups_with_pair_data": 1716,
+        "singleton_residue_phase_groups": 0,
+        "top_global_required_residues": {
+          "1": 32823,
+          "11": 32175,
+          "13": 37522,
+          "15": 34407,
+          "3": 36783,
+          "5": 34754,
+          "7": 35383,
+          "9": 32268
+        },
+        "weighted_incompatible_pair_fraction_inside_phase_groups": 0.797663097082
+      },
+      "8": {
+        "avg_distinct_required_residues_in_phase_group": 37.511655011655,
+        "codimension_bits_beyond_oddness_per_lock": 7,
+        "global_distinct_required_residues": 128,
+        "global_residue_coverage_fraction": 1.0,
+        "max_distinct_required_residues_in_phase_group": 49,
+        "max_same_residue_bucket_inside_phase_group": 21,
+        "odd_unit_residue_space_size": 128,
+        "phase_groups": 1716,
+        "phase_groups_with_pair_data": 1716,
+        "singleton_residue_phase_groups": 0,
+        "top_global_required_residues": {
+          "125": 2599,
+          "127": 2599,
+          "151": 2791,
+          "157": 2538,
+          "189": 2773,
+          "195": 2499,
+          "221": 2982,
+          "253": 2713,
+          "255": 2600,
+          "29": 2581,
+          "61": 2517,
+          "85": 2711
+        },
+        "weighted_incompatible_pair_fraction_inside_phase_groups": 0.967723249031
+      }
+    },
+    "examples": [
+      {
+        "odd_prefix": 0,
+        "phase_match_m_mod_source_length": 0,
+        "phase_t": 0,
+        "required_unit_residue_mod_2^R": {
+          "4": 9,
+          "8": 121
+        },
+        "source": "1",
+        "source_length": 1,
+        "target": "00011110111",
+        "valuation_e": 0
+      },
+      {
+        "odd_prefix": 0,
+        "phase_match_m_mod_source_length": 0,
+        "phase_t": 0,
+        "required_unit_residue_mod_2^R": {
+          "4": 7,
+          "8": 247
+        },
+        "source": "1",
+        "source_length": 1,
+        "target": "011",
+        "valuation_e": 0
+      },
+      {
+        "odd_prefix": 0,
+        "phase_match_m_mod_source_length": 0,
+        "phase_t": 0,
+        "required_unit_residue_mod_2^R": {
+          "4": 15,
+          "8": 207
+        },
+        "source": "1",
+        "source_length": 1,
+        "target": "0111",
+        "valuation_e": 0
+      },
+      {
+        "odd_prefix": 0,
+        "phase_match_m_mod_source_length": 0,
+        "phase_t": 0,
+        "required_unit_residue_mod_2^R": {
+          "4": 13,
+          "8": 61
+        },
+        "source": "1",
+        "source_length": 1,
+        "target": "001111",
+        "valuation_e": 0
+      },
+      {
+        "odd_prefix": 0,
+        "phase_match_m_mod_source_length": 0,
+        "phase_t": 0,
+        "required_unit_residue_mod_2^R": {
+          "4": 3,
+          "8": 19
+        },
+        "source": "1",
+        "source_length": 1,
+        "target": "010111",
+        "valuation_e": 0
+      },
+      {
+        "odd_prefix": 0,
+        "phase_match_m_mod_source_length": 0,
+        "phase_t": 0,
+        "required_unit_residue_mod_2^R": {
+          "4": 13,
+          "8": 109
+        },
+        "source": "1",
+        "source_length": 1,
+        "target": "001101111011",
+        "valuation_e": 0
+      },
+      {
+        "odd_prefix": 0,
+        "phase_match_m_mod_source_length": 0,
+        "phase_t": 0,
+        "required_unit_residue_mod_2^R": {
+          "4": 9,
+          "8": 249
+        },
+        "source": "1",
+        "source_length": 1,
+        "target": "000111111",
+        "valuation_e": 0
+      },
+      {
+        "odd_prefix": 0,
+        "phase_match_m_mod_source_length": 0,
+        "phase_t": 0,
+        "required_unit_residue_mod_2^R": {
+          "4": 15,
+          "8": 223
+        },
+        "source": "1",
+        "source_length": 1,
+        "target": "01111",
+        "valuation_e": 0
+      },
+      {
+        "odd_prefix": 0,
+        "phase_match_m_mod_source_length": 0,
+        "phase_t": 0,
+        "required_unit_residue_mod_2^R": {
+          "4": 3,
+          "8": 195
+        },
+        "source": "1",
+        "source_length": 1,
+        "target": "010101111011",
+        "valuation_e": 0
+      },
+      {
+        "odd_prefix": 0,
+        "phase_match_m_mod_source_length": 0,
+        "phase_t": 0,
+        "required_unit_residue_mod_2^R": {
+          "4": 13,
+          "8": 125
+        },
+        "source": "1",
+        "source_length": 1,
+        "target": "0011111",
+        "valuation_e": 0
+      },
+      {
+        "odd_prefix": 0,
+        "phase_match_m_mod_source_length": 0,
+        "phase_t": 0,
+        "required_unit_residue_mod_2^R": {
+          "4": 3,
+          "8": 211
+        },
+        "source": "1",
+        "source_length": 1,
+        "target": "0101111",
+        "valuation_e": 0
+      },
+      {
+        "odd_prefix": 0,
+        "phase_match_m_mod_source_length": 0,
+        "phase_t": 0,
+        "required_unit_residue_mod_2^R": {
+          "4": 7,
+          "8": 183
+        },
+        "source": "1",
+        "source_length": 1,
+        "target": "0110111",
+        "valuation_e": 0
+      }
+    ],
+    "note": "Every listed lock has exactly one odd-unit residue modulo 2^R. The census measures how those residues distribute and how often two target locks in the same source phase demand incompatible units.",
+    "phase_residue_histogram": {
+      "0": 3467,
+      "1": 24267,
+      "10": 20424,
+      "11": 11823,
+      "2": 30141,
+      "3": 31468,
+      "4": 28133,
+      "5": 27376,
+      "6": 26488,
+      "7": 25527,
+      "8": 24731,
+      "9": 22270
+    },
+    "skipped_zero_delta": 161,
+    "source_length_histogram": {
+      "1": 1,
+      "10": 17,
+      "11": 51,
+      "12": 64,
+      "3": 1,
+      "4": 1,
+      "5": 1,
+      "6": 3,
+      "7": 4,
+      "8": 4,
+      "9": 14
+    },
+    "total_locks": 276115,
+    "valuation_histogram": {
+      "0": 194424,
+      "1": 44371,
+      "10": 296,
+      "11": 206,
+      "12": 38,
+      "13": 13,
+      "14": 6,
+      "15": 2,
+      "16": 1,
+      "2": 17312,
+      "3": 7315,
+      "4": 4673,
+      "5": 2965,
+      "6": 1928,
+      "7": 1246,
+      "8": 777,
+      "9": 542
+    }
+  },
+  "parameters": {
+    "example_limit": 12,
+    "formula_trials": 5000,
+    "lock_bits": [
+      4,
+      8
+    ],
+    "max_depth": 12,
+    "positive_q_limit": 32,
+    "positive_source_limit": 64,
+    "seed": 20260705
+  },
+  "positive_shadow_sample": {
+    "R_bit_lock_hit_fraction_among_phase_matches": 0.007326830584,
+    "R_bit_lock_hits": 163,
+    "examples": [
+      {
+        "actual_unit_mod_2^R": 3,
+        "extra_alignment_bits": 3,
+        "hits_R_bit_lock": false,
+        "phase_t": 0,
+        "q": 1,
+        "required_unit_mod_2^R": 187,
+        "source": "011",
+        "source_alignment_m": 3,
+        "source_length": 3,
+        "target": "0111",
+        "valuation_e": 3,
+        "x": 14
+      },
+      {
+        "actual_unit_mod_2^R": 3,
+        "extra_alignment_bits": 1,
+        "hits_R_bit_lock": false,
+        "phase_t": 0,
+        "q": 1,
+        "required_unit_mod_2^R": 189,
+        "source": "011",
+        "source_alignment_m": 3,
+        "source_length": 3,
+        "target": "01111",
+        "valuation_e": 3,
+        "x": 14
+      },
+      {
+        "actual_unit_mod_2^R": 3,
+        "extra_alignment_bits": 1,
+        "hits_R_bit_lock": false,
+        "phase_t": 0,
+        "q": 1,
+        "required_unit_mod_2^R": 41,
+        "source": "011",
+        "source_alignment_m": 3,
+        "source_length": 3,
+        "target": "011111",
+        "valuation_e": 3,
+        "x": 14
+      },
+      {
+        "actual_unit_mod_2^R": 3,
+        "extra_alignment_bits": 1,
+        "hits_R_bit_lock": false,
+        "phase_t": 0,
+        "q": 1,
+        "required_unit_mod_2^R": 113,
+        "source": "011",
+        "source_alignment_m": 3,
+        "source_length": 3,
+        "target": "0111111",
+        "valuation_e": 3,
+        "x": 14
+      },
+      {
+        "actual_unit_mod_2^R": 3,
+        "extra_alignment_bits": 3,
+        "hits_R_bit_lock": false,
+        "phase_t": 0,
+        "q": 1,
+        "required_unit_mod_2^R": 27,
+        "source": "011",
+        "source_alignment_m": 3,
+        "source_length": 3,
+        "target": "011101111",
+        "valuation_e": 3,
+        "x": 14
+      },
+      {
+        "actual_unit_mod_2^R": 3,
+        "extra_alignment_bits": 1,
+        "hits_R_bit_lock": false,
+        "phase_t": 0,
+        "q": 1,
+        "required_unit_mod_2^R": 161,
+        "source": "011",
+        "source_alignment_m": 3,
+        "source_length": 3,
+        "target": "01111111",
+        "valuation_e": 3,
+        "x": 14
+      },
+      {
+        "actual_unit_mod_2^R": 3,
+        "extra_alignment_bits": 3,
+        "hits_R_bit_lock": false,
+        "phase_t": 0,
+        "q": 1,
+        "required_unit_mod_2^R": 91,
+        "source": "011",
+        "source_alignment_m": 3,
+        "source_length": 3,
+        "target": "0111011111",
+        "valuation_e": 3,
+        "x": 14
+      },
+      {
+        "actual_unit_mod_2^R": 3,
+        "extra_alignment_bits": 1,
+        "hits_R_bit_lock": false,
+        "phase_t": 0,
+        "q": 1,
+        "required_unit_mod_2^R": 193,
+        "source": "011",
+        "source_alignment_m": 3,
+        "source_length": 3,
+        "target": "011111111",
+        "valuation_e": 3,
+        "x": 14
+      },
+      {
+        "actual_unit_mod_2^R": 3,
+        "extra_alignment_bits": 3,
+        "hits_R_bit_lock": false,
+        "phase_t": 0,
+        "q": 1,
+        "required_unit_mod_2^R": 219,
+        "source": "011",
+        "source_alignment_m": 3,
+        "source_length": 3,
+        "target": "01110111111",
+        "valuation_e": 3,
+        "x": 14
+      },
+      {
+        "actual_unit_mod_2^R": 3,
+        "extra_alignment_bits": 1,
+        "hits_R_bit_lock": false,
+        "phase_t": 0,
+        "q": 1,
+        "required_unit_mod_2^R": 61,
+        "source": "011",
+        "source_alignment_m": 3,
+        "source_length": 3,
+        "target": "01111011111",
+        "valuation_e": 3,
+        "x": 14
+      },
+      {
+        "actual_unit_mod_2^R": 3,
+        "extra_alignment_bits": 1,
+        "hits_R_bit_lock": false,
+        "phase_t": 0,
+        "q": 1,
+        "required_unit_mod_2^R": 129,
+        "source": "011",
+        "source_alignment_m": 3,
+        "source_length": 3,
+        "target": "0111111111",
+        "valuation_e": 3,
+        "x": 14
+      },
+      {
+        "actual_unit_mod_2^R": 3,
+        "extra_alignment_bits": 3,
+        "hits_R_bit_lock": false,
+        "phase_t": 0,
+        "q": 1,
+        "required_unit_mod_2^R": 219,
+        "source": "011",
+        "source_alignment_m": 3,
+        "source_length": 3,
+        "target": "011101111111",
+        "valuation_e": 3,
+        "x": 14
+      }
+    ],
+    "extra_alignment_histogram": {
+      "1": 11124,
+      "10": 23,
+      "11": 11,
+      "12": 9,
+      "13": 3,
+      "14": 1,
+      "15": 3,
+      "2": 5561,
+      "3": 2785,
+      "4": 1354,
+      "5": 785,
+      "6": 327,
+      "7": 148,
+      "8": 72,
+      "9": 41
+    },
+    "formula_failure_count": 0,
+    "formula_failures": [],
+    "phase_matches": 22247,
+    "q_limit_per_source": 32,
+    "sampled_source_cycles": 64,
+    "starts_checked": 2048
+  },
+  "status": "odd-unit-lock-census",
+  "toy_locks": {
+    "equation": "u == -1 mod 2^R",
+    "interpretation": "The pure Mersenne unit u=1 gets the first forced odd bit but fails all deeper R>=2 locks for this toy transition.",
+    "name": "-1 spine to -5 spine at t=0",
+    "rows": [
+      {
+        "bits": 1,
+        "mersenne_u_equals_1_hits": true,
+        "required_u_mod_2^bits": 1
+      },
+      {
+        "bits": 2,
+        "mersenne_u_equals_1_hits": false,
+        "required_u_mod_2^bits": 3
+      },
+      {
+        "bits": 3,
+        "mersenne_u_equals_1_hits": false,
+        "required_u_mod_2^bits": 7
+      },
+      {
+        "bits": 4,
+        "mersenne_u_equals_1_hits": false,
+        "required_u_mod_2^bits": 15
+      },
+      {
+        "bits": 5,
+        "mersenne_u_equals_1_hits": false,
+        "required_u_mod_2^bits": 31
+      },
+      {
+        "bits": 6,
+        "mersenne_u_equals_1_hits": false,
+        "required_u_mod_2^bits": 63
+      },
+      {
+        "bits": 7,
+        "mersenne_u_equals_1_hits": false,
+        "required_u_mod_2^bits": 127
+      },
+      {
+        "bits": 8,
+        "mersenne_u_equals_1_hits": false,
+        "required_u_mod_2^bits": 255
+      }
+    ],
+    "valuation_e": 2
+  }
+}
