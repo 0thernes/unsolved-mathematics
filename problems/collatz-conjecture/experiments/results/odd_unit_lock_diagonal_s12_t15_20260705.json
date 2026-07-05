@@ -1,0 +1,206 @@
+{
+  "parameters": {
+    "bits": [
+      16,
+      20
+    ],
+    "source_max_depth": 12,
+    "source_min_depth": 3,
+    "target_depths": [
+      12,
+      14,
+      15
+    ],
+    "target_min_depth": 1
+  },
+  "rows": [
+    {
+      "coverage_by_bits": {
+        "16": {
+          "avg_codimension_bits_nonempty": 8.111851,
+          "avg_coverage_fraction_all_bins": 0.004866512732,
+          "avg_coverage_fraction_nonempty_bins": 0.004866512732,
+          "bits": 16,
+          "densest_alignment_class_m_mod_d": 3,
+          "densest_distinct_lock_residues": 275,
+          "densest_source": "000111111",
+          "densest_source_length": 9,
+          "max_coverage_fraction": 0.008392333984,
+          "min_codimension_bits_nonempty": 6.896712,
+          "saturated_alignment_bins": 0,
+          "source_phase_target_pairs": 275955,
+          "target_depth": 12,
+          "target_spines": 161
+        },
+        "20": {
+          "avg_codimension_bits_nonempty": 12.110663,
+          "avg_coverage_fraction_all_bins": 0.000304475123,
+          "avg_coverage_fraction_nonempty_bins": 0.000304475123,
+          "bits": 20,
+          "densest_alignment_class_m_mod_d": 3,
+          "densest_distinct_lock_residues": 275,
+          "densest_source": "000111111",
+          "densest_source_length": 9,
+          "max_coverage_fraction": 0.000524520874,
+          "min_codimension_bits_nonempty": 10.896712,
+          "saturated_alignment_bins": 0,
+          "source_phase_target_pairs": 275955,
+          "target_depth": 12,
+          "target_spines": 161
+        }
+      },
+      "source_phase_target_pairs": 275955,
+      "target_depth": 12,
+      "target_spines": 161,
+      "valuation_histogram": {
+        "0": 194264,
+        "1": 44371,
+        "10": 296,
+        "11": 206,
+        "12": 38,
+        "13": 13,
+        "14": 6,
+        "15": 2,
+        "16": 1,
+        "2": 17312,
+        "3": 7315,
+        "4": 4673,
+        "5": 2965,
+        "6": 1928,
+        "7": 1246,
+        "8": 777,
+        "9": 542
+      }
+    },
+    {
+      "coverage_by_bits": {
+        "16": {
+          "avg_codimension_bits_nonempty": 6.65299,
+          "avg_coverage_fraction_all_bins": 0.014749634857,
+          "avg_coverage_fraction_nonempty_bins": 0.014749634857,
+          "avg_coverage_multiplier_from_previous_depth": 3.030843,
+          "bits": 16,
+          "densest_alignment_class_m_mod_d": 4,
+          "densest_distinct_lock_residues": 915,
+          "densest_source": "00001111111",
+          "densest_source_length": 11,
+          "max_coverage_fraction": 0.027923583984,
+          "max_coverage_multiplier_from_previous_depth": 3.327273,
+          "min_codimension_bits_nonempty": 5.162372,
+          "saturated_alignment_bins": 0,
+          "source_phase_target_pairs": 841905,
+          "target_depth": 14,
+          "target_spines": 491
+        },
+        "20": {
+          "avg_codimension_bits_nonempty": 10.639775,
+          "avg_coverage_fraction_all_bins": 0.000933359663,
+          "avg_coverage_fraction_nonempty_bins": 0.000933359663,
+          "avg_coverage_multiplier_from_previous_depth": 3.065471,
+          "bits": 20,
+          "densest_alignment_class_m_mod_d": 4,
+          "densest_distinct_lock_residues": 926,
+          "densest_source": "00001111111",
+          "densest_source_length": 11,
+          "max_coverage_fraction": 0.001766204834,
+          "max_coverage_multiplier_from_previous_depth": 3.367273,
+          "min_codimension_bits_nonempty": 9.145132,
+          "saturated_alignment_bins": 0,
+          "source_phase_target_pairs": 841905,
+          "target_depth": 14,
+          "target_spines": 491
+        }
+      },
+      "source_phase_target_pairs": 841905,
+      "target_depth": 14,
+      "target_spines": 491,
+      "valuation_histogram": {
+        "0": 593894,
+        "1": 147967,
+        "10": 777,
+        "11": 563,
+        "12": 274,
+        "13": 76,
+        "14": 6,
+        "15": 2,
+        "16": 1,
+        "2": 47675,
+        "3": 19183,
+        "4": 12662,
+        "5": 7623,
+        "6": 4898,
+        "7": 3036,
+        "8": 1949,
+        "9": 1319
+      }
+    },
+    {
+      "coverage_by_bits": {
+        "16": {
+          "avg_codimension_bits_nonempty": 5.982745,
+          "avg_coverage_fraction_all_bins": 0.024202325671,
+          "avg_coverage_fraction_nonempty_bins": 0.024202325671,
+          "avg_coverage_multiplier_from_previous_depth": 1.640876,
+          "bits": 16,
+          "densest_alignment_class_m_mod_d": 4,
+          "densest_distinct_lock_residues": 1497,
+          "densest_source": "00001111111",
+          "densest_source_length": 11,
+          "max_coverage_fraction": 0.045684814453,
+          "max_coverage_multiplier_from_previous_depth": 1.636066,
+          "min_codimension_bits_nonempty": 4.452141,
+          "saturated_alignment_bins": 0,
+          "source_phase_target_pairs": 1406140,
+          "target_depth": 15,
+          "target_spines": 820
+        },
+        "20": {
+          "avg_codimension_bits_nonempty": 9.953167,
+          "avg_coverage_fraction_all_bins": 0.001560331295,
+          "avg_coverage_fraction_nonempty_bins": 0.001560331295,
+          "avg_coverage_multiplier_from_previous_depth": 1.671736,
+          "bits": 20,
+          "densest_alignment_class_m_mod_d": 4,
+          "densest_distinct_lock_residues": 1583,
+          "densest_source": "00001111111",
+          "densest_source_length": 11,
+          "max_coverage_fraction": 0.003019332886,
+          "max_coverage_multiplier_from_previous_depth": 1.709503,
+          "min_codimension_bits_nonempty": 8.371554,
+          "saturated_alignment_bins": 0,
+          "source_phase_target_pairs": 1406140,
+          "target_depth": 15,
+          "target_spines": 820
+        }
+      },
+      "source_phase_target_pairs": 1406140,
+      "target_depth": 15,
+      "target_spines": 820,
+      "valuation_histogram": {
+        "0": 992313,
+        "1": 253014,
+        "10": 1242,
+        "11": 909,
+        "12": 481,
+        "13": 142,
+        "14": 37,
+        "15": 2,
+        "16": 1,
+        "2": 77177,
+        "3": 30526,
+        "4": 20436,
+        "5": 12151,
+        "6": 7747,
+        "7": 4813,
+        "8": 3072,
+        "9": 2077
+      }
+    }
+  ],
+  "runtime_seconds": 24.600095,
+  "source_counts": {
+    "primitive_source_cycles": 160,
+    "source_alignment_bins": 1715
+  },
+  "status": "finite measurement only; not a proof of Collatz"
+}

@@ -66,7 +66,18 @@ The current odd-unit/codimension probe is
 [`ODD-UNIT-LOCK-COVERAGE.md`](ODD-UNIT-LOCK-COVERAGE.md) and
 [`ODD-UNIT-LOCK-REFINEMENT.md`](ODD-UNIT-LOCK-REFINEMENT.md):
 it measures the phase-collision lock union and finite non-refill under higher
-2-adic precision. This is a route-selection result, not a proof.
+2-adic precision. The diagonal target-growth follow-up is
+[`ODD-UNIT-LOCK-DIAGONAL.md`](ODD-UNIT-LOCK-DIAGONAL.md), which tests whether
+deeper target spines refill the odd-unit space. The positive-orbit transition
+companion is [`ODD-UNIT-LOCK-TRANSITION.md`](ODD-UNIT-LOCK-TRANSITION.md): it
+tests whether actual integer orbits shed or cluster those locks between source
+visits. The transition microscope, bridge classifier, and bridge-refinement
+notes then isolate the measured `R = 16` repeated-lock bridges and test whether
+they survive at `R = 20` and `R = 24`:
+[`ODD-UNIT-LOCK-TRANSITION-WITNESS-MICROSCOPE.md`](ODD-UNIT-LOCK-TRANSITION-WITNESS-MICROSCOPE.md),
+[`ODD-UNIT-LOCK-BRIDGE-CLASSIFIER.md`](ODD-UNIT-LOCK-BRIDGE-CLASSIFIER.md),
+and [`ODD-UNIT-LOCK-BRIDGE-REFINEMENT.md`](ODD-UNIT-LOCK-BRIDGE-REFINEMENT.md).
+These are route-selection results, not proofs.
 Only the formal-methods slice is currently proof-relevant: SAT/SMT, BDD/ZDD,
 CEGAR, omega-automata/model checking, rewrite/e-graph methods, LLL, proof
 certificates, and adversarial counterexample search.
@@ -75,7 +86,7 @@ For publication scope, use
 [`GITHUB-PUBLISH-PLAN-2026-07-02.md`](GITHUB-PUBLISH-PLAN-2026-07-02.md);
 do not publish this dirty worktree with `git add -A`.
 
-## Documents (54)
+## Documents (56)
 
 | File | Category | First heading |
 |---|---|---|
@@ -112,7 +123,9 @@ do not publish this dirty worktree with `git add -A`.
 | [`KICK-REPULSION-INSIGHT.md`](KICK-REPULSION-INSIGHT.md) | Instrument report | KICK-REPULSION INSIGHT — The +1 as the separating force (AI-native angle) |
 | [`LOW-ALIGNMENT-STRUCTURE.md`](LOW-ALIGNMENT-STRUCTURE.md) | Instrument report | Low-Alignment Structure |
 | [`ODD-UNIT-LOCK-COVERAGE.md`](ODD-UNIT-LOCK-COVERAGE.md) | Instrument report | Odd-Unit Lock Coverage Lab |
+| [`ODD-UNIT-LOCK-DIAGONAL.md`](ODD-UNIT-LOCK-DIAGONAL.md) | Instrument report | Odd-Unit Lock Diagonal Target-Growth Lab |
 | [`ODD-UNIT-LOCK-REFINEMENT.md`](ODD-UNIT-LOCK-REFINEMENT.md) | Instrument report | Odd-Unit Lock Refinement Lab |
+| [`ODD-UNIT-LOCK-TRANSITION.md`](ODD-UNIT-LOCK-TRANSITION.md) | Instrument report | Odd-Unit Lock Transition-Memory Lab |
 | [`P-ETALE-FUNDAMENTAL-GROUPOID-RESOLUTION.md`](../_quarantine/experiments/P-ETALE-FUNDAMENTAL-GROUPOID-RESOLUTION.md) | Quarantined legacy report | P AS ETALE FUNDAMENTAL GROUPOID — Galois Action Forces Splitting for Finite Support (Beyond prior) |
 | [`P-ETALE-TOPOS-INTERNAL-C.md`](../_quarantine/P-ETALE-TOPOS-INTERNAL-C.md) | Quarantined legacy report | P AS THE ETALE TOPOS — C is Internally True (Beyond the Site, the Logic Layer) |
 | [`P-ETALE-TOPOS-INTERNAL-RESOLUTION.md`](../_quarantine/experiments/P-ETALE-TOPOS-INTERNAL-RESOLUTION.md) | Quarantined legacy report | P AS THE ETALE TOPOS — C is Internally True (Beyond Pro-Etale Site, the Logic Layer) |
@@ -134,7 +147,7 @@ do not publish this dirty worktree with `git add -A`.
 | [`defect_algebra_rigorous_bound.md`](../_quarantine/defect_algebra_rigorous_bound.md) | Quarantined legacy proof file | Defect Algebra Rigorous Bound: ||A||_∞ = 0.92 and 11.2 b Ejection |
 | [`defect_algebra_rigorous_proof.md`](../_quarantine/defect_algebra_rigorous_proof.md) | Quarantined legacy proof file | Defect Algebra Rigorous Proof: Contraction and 12b Ejection Bound |
 
-## Instruments (74)
+## Instruments (76)
 
 | Script | Docstring |
 |---|---|
@@ -193,7 +206,9 @@ do not publish this dirty worktree with `git add -A`.
 | [`motif_cover_analyzer.py`](motif_cover_analyzer.py) | Compress repayment motifs into coarse cover families. |
 | [`motif_forcing_analyzer.py`](motif_forcing_analyzer.py) | Test subcritical motif forcing in finite Collatz shadows. |
 | [`odd_unit_lock_coverage_lab.py`](odd_unit_lock_coverage_lab.py) | Finite odd-unit lock coverage lab. |
+| [`odd_unit_lock_diagonal_lab.py`](odd_unit_lock_diagonal_lab.py) | Diagonal target-growth test for odd-unit locks. |
 | [`odd_unit_lock_refinement_lab.py`](odd_unit_lock_refinement_lab.py) | Odd-unit lock refinement lab. |
+| [`odd_unit_lock_transition_lab.py`](odd_unit_lock_transition_lab.py) | Positive-orbit transition lab for odd-unit lock hits. |
 | [`outlier_transition_analyzer.py`](outlier_transition_analyzer.py) | Analyze recursive descent transitions of rare repayment-motif outliers. |
 | [`parity_surplus_analyzer.py`](parity_surplus_analyzer.py) | Analyze parity-surplus structure behind hard Collatz certificate examples. |
 | [`positive_kick_rejection.py`](positive_kick_rejection.py) |  |
