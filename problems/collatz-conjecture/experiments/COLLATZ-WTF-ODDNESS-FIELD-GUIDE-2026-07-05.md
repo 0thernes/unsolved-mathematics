@@ -7,6 +7,10 @@ the public Collatz literature and this repo. These are the "pay attention"
 signals: the places where the problem stops behaving like a toy iteration and
 starts revealing hidden structure.
 
+Companion: [`COLLATZ-WTF-FINDINGS-BOUNDARY-ATLAS-2026-07-05.md`](COLLATZ-WTF-FINDINGS-BOUNDARY-ATLAS-2026-07-05.md)
+turns the same weirdness into ranked novelty posture, proof risk, and next-action
+research drivers.
+
 The rule for future work:
 
 ```text
