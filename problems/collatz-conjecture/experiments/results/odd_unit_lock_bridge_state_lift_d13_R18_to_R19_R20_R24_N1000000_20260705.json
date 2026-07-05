@@ -1,0 +1,140 @@
+{
+  "elapsed_seconds": 13.024193,
+  "families": [
+    {
+      "base_fresh_quotient_bits": 0,
+      "geometry_key": "0011111|m10|a3|u196429|011111|m7|a1|u89433|gap0",
+      "refinements": [
+        {
+          "algebraic_refined_repeat_lifts": 1,
+          "high_bits": 19,
+          "lift_rows": [
+            {
+              "current_alignment_class_required": 1,
+              "current_alignment_m_required": 7,
+              "current_high_lock_hit": true,
+              "current_observed_state_matches_required_lift": true,
+              "current_observed_state_residue": 200126,
+              "current_required_state_residue": 200126,
+              "current_state_lift_delta": 0,
+              "current_state_modulus_bits": 26,
+              "current_unit_observed_state": 89433,
+              "current_unit_required": 89433,
+              "previous_observed_state_matches_required_lift": false,
+              "previous_observed_state_residue": 400252,
+              "previous_required_state_residue": 268835708,
+              "previous_state_lift_delta": 268435456,
+              "previous_state_modulus_bits": 29,
+              "previous_unit_observed_state": 196429,
+              "previous_unit_required": 458573,
+              "same_base_geometry_projection": true
+            }
+          ],
+          "observed_current_state": 200126,
+          "observed_previous_state": 400252,
+          "observed_state_repeat_lifts": 0,
+          "previous_high_lock_lifts": 1,
+          "state_escape_lifts": 1
+        },
+        {
+          "algebraic_refined_repeat_lifts": 0,
+          "high_bits": 20,
+          "lift_rows": [
+            {
+              "current_alignment_class_required": 1,
+              "current_alignment_m_required": 7,
+              "current_high_lock_hit": false,
+              "current_observed_state_matches_required_lift": true,
+              "current_observed_state_residue": 200126,
+              "current_required_state_residue": 200126,
+              "current_state_lift_delta": 0,
+              "current_state_modulus_bits": 27,
+              "current_unit_observed_state": 89433,
+              "current_unit_required": 89433,
+              "previous_observed_state_matches_required_lift": false,
+              "previous_observed_state_residue": 400252,
+              "previous_required_state_residue": 268835708,
+              "previous_state_lift_delta": 268435456,
+              "previous_state_modulus_bits": 30,
+              "previous_unit_observed_state": 720717,
+              "previous_unit_required": 982861,
+              "same_base_geometry_projection": true
+            }
+          ],
+          "observed_current_state": 200126,
+          "observed_previous_state": 400252,
+          "observed_state_repeat_lifts": 0,
+          "previous_high_lock_lifts": 1,
+          "state_escape_lifts": 0
+        },
+        {
+          "algebraic_refined_repeat_lifts": 0,
+          "high_bits": 24,
+          "lift_rows": [
+            {
+              "current_alignment_class_required": 1,
+              "current_alignment_m_required": 7,
+              "current_high_lock_hit": false,
+              "current_observed_state_matches_required_lift": false,
+              "current_observed_state_residue": 200126,
+              "current_required_state_residue": 1745030590,
+              "current_state_lift_delta": 1744830464,
+              "current_state_modulus_bits": 31,
+              "current_unit_observed_state": 11623769,
+              "current_unit_required": 8478041,
+              "previous_observed_state_matches_required_lift": false,
+              "previous_observed_state_residue": 400252,
+              "previous_required_state_residue": 12079995772,
+              "previous_state_lift_delta": 12079595520,
+              "previous_state_modulus_bits": 34,
+              "previous_unit_observed_state": 12255053,
+              "previous_unit_required": 7274317,
+              "same_base_geometry_projection": true
+            }
+          ],
+          "observed_current_state": 200126,
+          "observed_previous_state": 400252,
+          "observed_state_repeat_lifts": 0,
+          "previous_high_lock_lifts": 1,
+          "state_escape_lifts": 0
+        }
+      ],
+      "source_pair": "0011111->011111",
+      "transition_count_at_base_bits": 3
+    }
+  ],
+  "inputs": {
+    "classifier": "experiments\\results\\odd_unit_lock_bridge_classifier_d13_R18_N1000000_20260705.json"
+  },
+  "parameters": {
+    "base_bits": 18,
+    "high_bits": [
+      19,
+      20,
+      24
+    ],
+    "max_depth": 13,
+    "min_source_depth": 3
+  },
+  "result": "finite bridge state-lift measurement; not a proof of Collatz",
+  "status": "odd-unit-lock-bridge-state-lift",
+  "summary": {
+    "algebraic_refined_repeats_by_bits": {
+      "19": 1,
+      "20": 0,
+      "24": 0
+    },
+    "families_checked": 1,
+    "interpretation": "A bridge can persist as a higher-precision residue class while the observed low representative state falls outside that class.",
+    "observed_state_repeats_by_bits": {
+      "19": 0,
+      "20": 0,
+      "24": 0
+    },
+    "state_escape_lifts_by_bits": {
+      "19": 1,
+      "20": 0,
+      "24": 0
+    }
+  }
+}

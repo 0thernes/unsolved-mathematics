@@ -19,7 +19,17 @@
 [`results/odd_unit_lock_bridge_classifier_d13_R17_N1000000_20260705.json`](results/odd_unit_lock_bridge_classifier_d13_R17_N1000000_20260705.json),
 [`results/odd_unit_lock_bridge_refinement_d13_R17_to_R20_R24_N1000000_20260705.json`](results/odd_unit_lock_bridge_refinement_d13_R17_to_R20_R24_N1000000_20260705.json),
 [`results/odd_unit_lock_bridge_classifier_d13_R18_N1000000_20260705.json`](results/odd_unit_lock_bridge_classifier_d13_R18_N1000000_20260705.json),
-[`results/odd_unit_lock_bridge_refinement_d13_R18_to_R20_R24_N1000000_20260705.json`](results/odd_unit_lock_bridge_refinement_d13_R18_to_R20_R24_N1000000_20260705.json)
+[`results/odd_unit_lock_bridge_refinement_d13_R18_to_R20_R24_N1000000_20260705.json`](results/odd_unit_lock_bridge_refinement_d13_R18_to_R20_R24_N1000000_20260705.json),
+[`results/odd_unit_lock_bridge_state_lift_d13_R17_to_R18_R19_R20_R24_N1000000_20260705.json`](results/odd_unit_lock_bridge_state_lift_d13_R17_to_R18_R19_R20_R24_N1000000_20260705.json),
+[`results/odd_unit_lock_bridge_state_lift_d13_R18_to_R19_R20_R24_N1000000_20260705.json`](results/odd_unit_lock_bridge_state_lift_d13_R18_to_R19_R20_R24_N1000000_20260705.json)
+
+**Depth-14 stress:**
+[`results/odd_unit_lock_transition_microscope_d14_R16_N250000_20260705.json`](results/odd_unit_lock_transition_microscope_d14_R16_N250000_20260705.json),
+[`results/odd_unit_lock_transition_microscope_d14_R17_N250000_20260705.json`](results/odd_unit_lock_transition_microscope_d14_R17_N250000_20260705.json),
+[`results/odd_unit_lock_transition_microscope_d14_R18_N250000_20260705.json`](results/odd_unit_lock_transition_microscope_d14_R18_N250000_20260705.json),
+[`results/odd_unit_lock_transition_microscope_d14_R19_N250000_20260705.json`](results/odd_unit_lock_transition_microscope_d14_R19_N250000_20260705.json),
+[`results/odd_unit_lock_bridge_classifier_d14_R17_N250000_20260705.json`](results/odd_unit_lock_bridge_classifier_d14_R17_N250000_20260705.json),
+[`results/odd_unit_lock_bridge_refinement_d14_R17_to_R20_R24_N250000_20260705.json`](results/odd_unit_lock_bridge_refinement_d14_R17_to_R20_R24_N250000_20260705.json)
 
 Status: finite theorem-discovery data. This proves no part of the Collatz
 conjecture.
@@ -119,6 +129,46 @@ Its `R = 20` and `R = 24` previous-lock lifts also fail to be repeated next-lock
 hits. Thus the current one-million stress picture is bounded refinement death:
 `R = 17` has two tiny bridge families, `R = 18` has one, and `R = 19` has none.
 
+The state-lift microscope corrects the `R = 19` interpretation. The surviving
+`400252 -> 200126` bridge still exists algebraically at `R = 19`, but the
+required previous state class lifts from `400252` to:
+
+```text
+400252 + 2^28 = 268835708  (mod 2^29)
+```
+
+So the one-million scan sees no observed `R = 19` repeated lock because the
+positive orbits merge into the low representative `400252`, not the lifted
+residue class. In this tested target library, the bridge then stops being a
+next-lock hit by `R = 20`.
+
+## Depth-14 Stress
+
+Increasing the source/target library from depth `13` to depth `14` is the first
+real robustness test. It nearly doubles the primitive source count (`244` to
+`490`) and does create new repeated-lock bridge families, but the same
+precision-death pattern remains in the `250,000` odd-start window.
+
+| Max depth | Extra bits R | Odd starts | Source visits | Lock hits | Previous-hit transitions | Hit-after-hit transitions | Local expectation | Observed / expected |
+|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 14 | 16 | 124,999 | 1,660,608 | 14,384 | 14,379 | 255 | 287.260803222656 | 0.887695074090 |
+| 14 | 17 | 124,999 | 1,660,608 | 8,006 | 8,001 | 15 | 78.147247314453 | 0.191945340565 |
+| 14 | 18 | 124,999 | 1,660,608 | 4,207 | 4,207 | 0 | 20.665351867676 | 0.000000000000 |
+| 14 | 19 | 124,999 | 1,660,608 | 2,286 | 2,286 | 0 | 5.125400543213 | 0.000000000000 |
+
+The depth-14 `R = 17` survivors classify into three bridge geometries:
+
+| Source pair | Count | Fresh quotient bits | Refinement result |
+|---|---:|---:|---|
+| `00110111011101 -> 01101110111` | 12 | 0 | dies at `R = 20` and `R = 24` |
+| `001111101 -> 011111` | 2 | 0 | dies at `R = 20` and `R = 24` |
+| `011 -> 0111` | 1 | 6 | dies at `R = 20` and `R = 24` |
+
+Interpretation: depth growth does create new coarse bridge families, including
+zero-fresh alignment-drop bridges. The current finite evidence says those
+families still lose repeated-lock status under refinement. A proof attempt now
+has to control a moving bridge catalogue, not just one fixed list.
+
 ## Current Theorem Target
 
 The refined proof target is no longer "lock hits are independent." They are not
@@ -134,8 +184,14 @@ This is the codimension route in a theorem-shaped form. A proof would need to
 replace the finite `depth <= 13`, `starts <= 250000` scan with a symbolic bridge
 classification and a uniform refinement bound. The `R = 17` million-start
 stress results sharpen the scary subcase: alignment-drop bridges can reappear
-at larger start windows, but the measured ones still lose refined lock depth by
-`R = 19` in this configuration.
+at larger start windows and larger source libraries, can persist algebraically
+for one more precision while escaping the observed low state, and then lose
+refined next-lock status quickly in these configurations.
+
+The companion [`ODD-UNIT-LOCK-ALIGNMENT-DROP.md`](ODD-UNIT-LOCK-ALIGNMENT-DROP.md)
+turns that scary subcase into a finite ledger: every measured zero-fresh bridge
+is alignment-descending, with drop `2` or `3`, and every checked zero-fresh
+family dies under the available `R = 20` / `R = 24` refinements.
 
 ## Non-Claims
 
@@ -166,4 +222,12 @@ python experiments\odd_unit_lock_bridge_classifier.py --input experiments\result
 python experiments\odd_unit_lock_bridge_refinement.py --classifier experiments\results\odd_unit_lock_bridge_classifier_d13_R17_N1000000_20260705.json --output experiments\results\odd_unit_lock_bridge_refinement_d13_R17_to_R20_R24_N1000000_20260705.json --quiet
 python experiments\odd_unit_lock_bridge_classifier.py --input experiments\results\odd_unit_lock_transition_microscope_d13_R18_N1000000_20260705.json --output experiments\results\odd_unit_lock_bridge_classifier_d13_R18_N1000000_20260705.json --quiet
 python experiments\odd_unit_lock_bridge_refinement.py --classifier experiments\results\odd_unit_lock_bridge_classifier_d13_R18_N1000000_20260705.json --output experiments\results\odd_unit_lock_bridge_refinement_d13_R18_to_R20_R24_N1000000_20260705.json --quiet
+python experiments\odd_unit_lock_bridge_state_lift.py --classifier experiments\results\odd_unit_lock_bridge_classifier_d13_R17_N1000000_20260705.json --high-bits 18,19,20,24 --output experiments\results\odd_unit_lock_bridge_state_lift_d13_R17_to_R18_R19_R20_R24_N1000000_20260705.json
+python experiments\odd_unit_lock_bridge_state_lift.py --classifier experiments\results\odd_unit_lock_bridge_classifier_d13_R18_N1000000_20260705.json --high-bits 19,20,24 --output experiments\results\odd_unit_lock_bridge_state_lift_d13_R18_to_R19_R20_R24_N1000000_20260705.json
+python experiments\odd_unit_lock_transition_microscope.py --max-depth 14 --min-source-depth 3 --excess-bits 16 --start-limit 250000 --quiet --output experiments\results\odd_unit_lock_transition_microscope_d14_R16_N250000_20260705.json
+python experiments\odd_unit_lock_transition_microscope.py --max-depth 14 --min-source-depth 3 --excess-bits 17 --start-limit 250000 --quiet --output experiments\results\odd_unit_lock_transition_microscope_d14_R17_N250000_20260705.json
+python experiments\odd_unit_lock_transition_microscope.py --max-depth 14 --min-source-depth 3 --excess-bits 18 --start-limit 250000 --quiet --output experiments\results\odd_unit_lock_transition_microscope_d14_R18_N250000_20260705.json
+python experiments\odd_unit_lock_transition_microscope.py --max-depth 14 --min-source-depth 3 --excess-bits 19 --start-limit 250000 --quiet --output experiments\results\odd_unit_lock_transition_microscope_d14_R19_N250000_20260705.json
+python experiments\odd_unit_lock_bridge_classifier.py --input experiments\results\odd_unit_lock_transition_microscope_d14_R17_N250000_20260705.json --output experiments\results\odd_unit_lock_bridge_classifier_d14_R17_N250000_20260705.json --quiet
+python experiments\odd_unit_lock_bridge_refinement.py --max-depth 14 --classifier experiments\results\odd_unit_lock_bridge_classifier_d14_R17_N250000_20260705.json --output experiments\results\odd_unit_lock_bridge_refinement_d14_R17_to_R20_R24_N250000_20260705.json --quiet
 ```

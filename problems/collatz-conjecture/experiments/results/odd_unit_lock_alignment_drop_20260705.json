@@ -1,0 +1,315 @@
+{
+  "checks": {
+    "all_checked_zero_fresh_refinements_die": true,
+    "all_fresh_formulas_match": true,
+    "all_zero_fresh_alignment_descends": true,
+    "positive_fresh_families_exist": true,
+    "zero_fresh_families_exist": true
+  },
+  "elapsed_seconds": 0.000882,
+  "families": [
+    {
+      "alignment_drop_previous_minus_current": -3,
+      "base_bits": 16,
+      "checks": {
+        "fresh_formula_matches": true,
+        "zero_fresh_has_no_refined_repeat_when_checked": true,
+        "zero_fresh_is_alignment_descending": true
+      },
+      "current_alignment_m": 8,
+      "fresh_quotient_bits": 7,
+      "gap_steps": 4,
+      "gap_word": "0111",
+      "geometry_key": "0111|m5|a1|u18453|001111|m8|a2|u46383|gap0111",
+      "mechanism": "positive-fresh-cost",
+      "offset_F_gap_rho0_minus_rho1": "2214/187",
+      "offset_v2_at_observed_base": 8,
+      "previous_alignment_m": 5,
+      "refinement": {
+        "all_die": true,
+        "base_bits": 16,
+        "high_bits": [
+          20,
+          24
+        ],
+        "path": "Z:\\[Vibe Coded (AI)]\\CLAUDECODE\\Unresolved Math Problems\\problems\\collatz-conjecture\\experiments\\results\\odd_unit_lock_bridge_refinement_d13_R16_to_R20_R24_N250000_20260705.json",
+        "previous_lifts": {
+          "20": 1,
+          "24": 1
+        },
+        "refined_repeats": {
+          "20": 0,
+          "24": 0
+        }
+      },
+      "source_pair": "0111->001111",
+      "transition_count": 62,
+      "transport_reserve_previous_minus_gap_minus_current": -7
+    },
+    {
+      "alignment_drop_previous_minus_current": 3,
+      "base_bits": 16,
+      "checks": {
+        "fresh_formula_matches": true,
+        "zero_fresh_has_no_refined_repeat_when_checked": true,
+        "zero_fresh_is_alignment_descending": true
+      },
+      "current_alignment_m": 7,
+      "fresh_quotient_bits": 0,
+      "gap_steps": 3,
+      "gap_word": "011",
+      "geometry_key": "011|m10|a1|u4779|011|m7|a1|u43011|gap011",
+      "mechanism": "zero-fresh-self-spine-burn",
+      "offset_F_gap_rho0_minus_rho1": "0",
+      "offset_v2_at_observed_base": 7,
+      "previous_alignment_m": 10,
+      "refinement": {
+        "all_die": true,
+        "base_bits": 16,
+        "high_bits": [
+          20,
+          24
+        ],
+        "path": "Z:\\[Vibe Coded (AI)]\\CLAUDECODE\\Unresolved Math Problems\\problems\\collatz-conjecture\\experiments\\results\\odd_unit_lock_bridge_refinement_d13_R16_to_R20_R24_N250000_20260705.json",
+        "previous_lifts": {
+          "20": 1,
+          "24": 1
+        },
+        "refined_repeats": {
+          "20": 0,
+          "24": 0
+        }
+      },
+      "source_pair": "011->011",
+      "transition_count": 7,
+      "transport_reserve_previous_minus_gap_minus_current": 0
+    },
+    {
+      "alignment_drop_previous_minus_current": 2,
+      "base_bits": 16,
+      "checks": {
+        "fresh_formula_matches": true,
+        "zero_fresh_has_no_refined_repeat_when_checked": true,
+        "zero_fresh_is_alignment_descending": true
+      },
+      "current_alignment_m": 10,
+      "fresh_quotient_bits": 0,
+      "gap_steps": 1,
+      "gap_word": "0",
+      "geometry_key": "0011101111|m12|a2|u55531|011101111|m10|a1|u43243|gap0",
+      "mechanism": "zero-fresh-reserve-burn",
+      "offset_F_gap_rho0_minus_rho1": "-2640896/1948025",
+      "offset_v2_at_observed_base": 10,
+      "previous_alignment_m": 12,
+      "refinement": {
+        "all_die": true,
+        "base_bits": 16,
+        "high_bits": [
+          20,
+          24
+        ],
+        "path": "Z:\\[Vibe Coded (AI)]\\CLAUDECODE\\Unresolved Math Problems\\problems\\collatz-conjecture\\experiments\\results\\odd_unit_lock_bridge_refinement_d13_R16_to_R20_R24_N250000_20260705.json",
+        "previous_lifts": {
+          "20": 1,
+          "24": 1
+        },
+        "refined_repeats": {
+          "20": 0,
+          "24": 0
+        }
+      },
+      "source_pair": "0011101111->011101111",
+      "transition_count": 3,
+      "transport_reserve_previous_minus_gap_minus_current": 1
+    },
+    {
+      "alignment_drop_previous_minus_current": 3,
+      "base_bits": 16,
+      "checks": {
+        "fresh_formula_matches": true,
+        "zero_fresh_has_no_refined_repeat_when_checked": true,
+        "zero_fresh_is_alignment_descending": true
+      },
+      "current_alignment_m": 4,
+      "fresh_quotient_bits": 0,
+      "gap_steps": 3,
+      "gap_word": "011",
+      "geometry_key": "011|m7|a1|u4779|011|m4|a1|u43011|gap011",
+      "mechanism": "zero-fresh-self-spine-burn",
+      "offset_F_gap_rho0_minus_rho1": "0",
+      "offset_v2_at_observed_base": 4,
+      "previous_alignment_m": 7,
+      "refinement": {
+        "all_die": true,
+        "base_bits": 16,
+        "high_bits": [
+          20,
+          24
+        ],
+        "path": "Z:\\[Vibe Coded (AI)]\\CLAUDECODE\\Unresolved Math Problems\\problems\\collatz-conjecture\\experiments\\results\\odd_unit_lock_bridge_refinement_d13_R16_to_R20_R24_N250000_20260705.json",
+        "previous_lifts": {
+          "20": 1,
+          "24": 1
+        },
+        "refined_repeats": {
+          "20": 0,
+          "24": 0
+        }
+      },
+      "source_pair": "011->011",
+      "transition_count": 1,
+      "transport_reserve_previous_minus_gap_minus_current": 0
+    },
+    {
+      "alignment_drop_previous_minus_current": 3,
+      "base_bits": 17,
+      "checks": {
+        "fresh_formula_matches": true,
+        "zero_fresh_has_no_refined_repeat_when_checked": true,
+        "zero_fresh_is_alignment_descending": true
+      },
+      "current_alignment_m": 7,
+      "fresh_quotient_bits": 0,
+      "gap_steps": 1,
+      "gap_word": "0",
+      "geometry_key": "0011111|m10|a3|u65357|011111|m7|a1|u89433|gap0",
+      "mechanism": "zero-fresh-reserve-burn",
+      "offset_F_gap_rho0_minus_rho1": "-27008/20585",
+      "offset_v2_at_observed_base": 7,
+      "previous_alignment_m": 10,
+      "refinement": {
+        "all_die": true,
+        "base_bits": 17,
+        "high_bits": [
+          20,
+          24
+        ],
+        "path": "Z:\\[Vibe Coded (AI)]\\CLAUDECODE\\Unresolved Math Problems\\problems\\collatz-conjecture\\experiments\\results\\odd_unit_lock_bridge_refinement_d13_R17_to_R20_R24_N1000000_20260705.json",
+        "previous_lifts": {
+          "20": 1,
+          "24": 1
+        },
+        "refined_repeats": {
+          "20": 0,
+          "24": 0
+        }
+      },
+      "source_pair": "0011111->011111",
+      "transition_count": 3,
+      "transport_reserve_previous_minus_gap_minus_current": 2
+    },
+    {
+      "alignment_drop_previous_minus_current": 3,
+      "base_bits": 17,
+      "checks": {
+        "fresh_formula_matches": true,
+        "zero_fresh_has_no_refined_repeat_when_checked": true,
+        "zero_fresh_is_alignment_descending": true
+      },
+      "current_alignment_m": 8,
+      "fresh_quotient_bits": 0,
+      "gap_steps": 3,
+      "gap_word": "011",
+      "geometry_key": "0110111111|m11|a1|u94857|0111111|m8|a1|u106381|gap011",
+      "mechanism": "zero-fresh-balanced-burn",
+      "offset_F_gap_rho0_minus_rho1": "-599040/3327737",
+      "offset_v2_at_observed_base": 8,
+      "previous_alignment_m": 11,
+      "refinement": {
+        "all_die": true,
+        "base_bits": 17,
+        "high_bits": [
+          20,
+          24
+        ],
+        "path": "Z:\\[Vibe Coded (AI)]\\CLAUDECODE\\Unresolved Math Problems\\problems\\collatz-conjecture\\experiments\\results\\odd_unit_lock_bridge_refinement_d13_R17_to_R20_R24_N1000000_20260705.json",
+        "previous_lifts": {
+          "20": 1,
+          "24": 1
+        },
+        "refined_repeats": {
+          "20": 0,
+          "24": 0
+        }
+      },
+      "source_pair": "0110111111->0111111",
+      "transition_count": 1,
+      "transport_reserve_previous_minus_gap_minus_current": 0
+    },
+    {
+      "alignment_drop_previous_minus_current": 3,
+      "base_bits": 18,
+      "checks": {
+        "fresh_formula_matches": true,
+        "zero_fresh_has_no_refined_repeat_when_checked": true,
+        "zero_fresh_is_alignment_descending": true
+      },
+      "current_alignment_m": 7,
+      "fresh_quotient_bits": 0,
+      "gap_steps": 1,
+      "gap_word": "0",
+      "geometry_key": "0011111|m10|a3|u196429|011111|m7|a1|u89433|gap0",
+      "mechanism": "zero-fresh-reserve-burn",
+      "offset_F_gap_rho0_minus_rho1": "-27008/20585",
+      "offset_v2_at_observed_base": 7,
+      "previous_alignment_m": 10,
+      "refinement": {
+        "all_die": true,
+        "base_bits": 18,
+        "high_bits": [
+          20,
+          24
+        ],
+        "path": "Z:\\[Vibe Coded (AI)]\\CLAUDECODE\\Unresolved Math Problems\\problems\\collatz-conjecture\\experiments\\results\\odd_unit_lock_bridge_refinement_d13_R18_to_R20_R24_N1000000_20260705.json",
+        "previous_lifts": {
+          "20": 1,
+          "24": 1
+        },
+        "refined_repeats": {
+          "20": 0,
+          "24": 0
+        }
+      },
+      "source_pair": "0011111->011111",
+      "transition_count": 3,
+      "transport_reserve_previous_minus_gap_minus_current": 2
+    }
+  ],
+  "inputs": {
+    "classifiers": [
+      "Z:\\[Vibe Coded (AI)]\\CLAUDECODE\\Unresolved Math Problems\\problems\\collatz-conjecture\\experiments\\results\\odd_unit_lock_bridge_classifier_d13_R16_N250000_20260705.json",
+      "Z:\\[Vibe Coded (AI)]\\CLAUDECODE\\Unresolved Math Problems\\problems\\collatz-conjecture\\experiments\\results\\odd_unit_lock_bridge_classifier_d13_R17_N1000000_20260705.json",
+      "Z:\\[Vibe Coded (AI)]\\CLAUDECODE\\Unresolved Math Problems\\problems\\collatz-conjecture\\experiments\\results\\odd_unit_lock_bridge_classifier_d13_R18_N1000000_20260705.json"
+    ],
+    "refinements": [
+      "Z:\\[Vibe Coded (AI)]\\CLAUDECODE\\Unresolved Math Problems\\problems\\collatz-conjecture\\experiments\\results\\odd_unit_lock_bridge_refinement_d13_R16_to_R20_R24_N250000_20260705.json",
+      "Z:\\[Vibe Coded (AI)]\\CLAUDECODE\\Unresolved Math Problems\\problems\\collatz-conjecture\\experiments\\results\\odd_unit_lock_bridge_refinement_d13_R17_to_R20_R24_N1000000_20260705.json",
+      "Z:\\[Vibe Coded (AI)]\\CLAUDECODE\\Unresolved Math Problems\\problems\\collatz-conjecture\\experiments\\results\\odd_unit_lock_bridge_refinement_d13_R18_to_R20_R24_N1000000_20260705.json"
+    ]
+  },
+  "result": "finite bridge mechanism classification; not a proof of Collatz",
+  "status": "odd-unit-lock-alignment-drop-analyzer",
+  "summary": {
+    "families": 7,
+    "interpretation": "In the measured bridge families, every zero-fresh bridge is alignment-descending, and every checked zero-fresh bridge dies as a repeated lock under the available R=20/R=24 refinements.",
+    "max_zero_fresh_alignment_drop": 3,
+    "mechanism_counts": {
+      "positive-fresh-cost": 1,
+      "zero-fresh-balanced-burn": 1,
+      "zero-fresh-reserve-burn": 3,
+      "zero-fresh-self-spine-burn": 2
+    },
+    "mechanism_transition_counts": {
+      "positive-fresh-cost": 62,
+      "zero-fresh-balanced-burn": 1,
+      "zero-fresh-reserve-burn": 9,
+      "zero-fresh-self-spine-burn": 8
+    },
+    "min_zero_fresh_alignment_drop": 2,
+    "positive_fresh_families": 1,
+    "positive_fresh_transition_records": 62,
+    "transition_records": 80,
+    "zero_fresh_families": 6,
+    "zero_fresh_transition_records": 18
+  }
+}

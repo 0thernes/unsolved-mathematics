@@ -1,0 +1,169 @@
+{
+  "elapsed_seconds": 43.966349,
+  "families": [
+    {
+      "base_fresh_quotient_bits": 0,
+      "geometry_key": "00110111011101|m16|a2|u110493|01101110111|m13|a2|u24693|gap0",
+      "refinements": [
+        {
+          "all_previous_lifts_die_as_repeats": true,
+          "high_bits": 20,
+          "lift_rows": [
+            {
+              "current_alignment_class_m_mod_d": 2,
+              "current_alignment_m": 13,
+              "current_high_lock_count_for_bin": 589,
+              "current_high_lock_hit": false,
+              "current_unit_projection_mod_2^R_base": 24693,
+              "current_unit_residue_mod_2^R_high": 286837,
+              "previous_unit_residue_mod_2^R_high": 896925,
+              "same_low_geometry_projection": true
+            }
+          ],
+          "low_projection_mismatches": 0,
+          "previous_high_lock_lifts": 1,
+          "refined_repeat_lifts": 0,
+          "same_geometry_refined_repeat_lifts": 0
+        },
+        {
+          "all_previous_lifts_die_as_repeats": true,
+          "high_bits": 24,
+          "lift_rows": [
+            {
+              "current_alignment_class_m_mod_d": 2,
+              "current_alignment_m": 13,
+              "current_high_lock_count_for_bin": 590,
+              "current_high_lock_hit": false,
+              "current_unit_projection_mod_2^R_base": 24693,
+              "current_unit_residue_mod_2^R_high": 8675445,
+              "previous_unit_residue_mod_2^R_high": 15576989,
+              "same_low_geometry_projection": true
+            }
+          ],
+          "low_projection_mismatches": 0,
+          "previous_high_lock_lifts": 1,
+          "refined_repeat_lifts": 0,
+          "same_geometry_refined_repeat_lifts": 0
+        }
+      ],
+      "source_pair": "00110111011101->01101110111",
+      "transition_count_at_base_bits": 12
+    },
+    {
+      "base_fresh_quotient_bits": 0,
+      "geometry_key": "001111101|m11|a2|u79827|011111|m8|a2|u44321|gap0",
+      "refinements": [
+        {
+          "all_previous_lifts_die_as_repeats": true,
+          "high_bits": 20,
+          "lift_rows": [
+            {
+              "current_alignment_class_m_mod_d": 2,
+              "current_alignment_m": 8,
+              "current_high_lock_count_for_bin": 589,
+              "current_high_lock_hit": false,
+              "current_unit_projection_mod_2^R_base": 44321,
+              "current_unit_residue_mod_2^R_high": 44321,
+              "previous_unit_residue_mod_2^R_high": 210899,
+              "same_low_geometry_projection": true
+            }
+          ],
+          "low_projection_mismatches": 0,
+          "previous_high_lock_lifts": 1,
+          "refined_repeat_lifts": 0,
+          "same_geometry_refined_repeat_lifts": 0
+        },
+        {
+          "all_previous_lifts_die_as_repeats": true,
+          "high_bits": 24,
+          "lift_rows": [
+            {
+              "current_alignment_class_m_mod_d": 2,
+              "current_alignment_m": 8,
+              "current_high_lock_count_for_bin": 590,
+              "current_high_lock_hit": false,
+              "current_unit_projection_mod_2^R_base": 44321,
+              "current_unit_residue_mod_2^R_high": 44321,
+              "previous_unit_residue_mod_2^R_high": 2308051,
+              "same_low_geometry_projection": true
+            }
+          ],
+          "low_projection_mismatches": 0,
+          "previous_high_lock_lifts": 1,
+          "refined_repeat_lifts": 0,
+          "same_geometry_refined_repeat_lifts": 0
+        }
+      ],
+      "source_pair": "001111101->011111",
+      "transition_count_at_base_bits": 2
+    },
+    {
+      "base_fresh_quotient_bits": 6,
+      "geometry_key": "011|m4|a1|u34875|0111|m6|a2|u112145|gap0110",
+      "refinements": [
+        {
+          "all_previous_lifts_die_as_repeats": true,
+          "high_bits": 20,
+          "lift_rows": [
+            {
+              "current_alignment_class_m_mod_d": 2,
+              "current_alignment_m": 6,
+              "current_high_lock_count_for_bin": 589,
+              "current_high_lock_hit": false,
+              "current_unit_projection_mod_2^R_base": 130577,
+              "current_unit_residue_mod_2^R_high": 785937,
+              "previous_unit_residue_mod_2^R_high": 165947,
+              "same_low_geometry_projection": false
+            }
+          ],
+          "low_projection_mismatches": 1,
+          "previous_high_lock_lifts": 1,
+          "refined_repeat_lifts": 0,
+          "same_geometry_refined_repeat_lifts": 0
+        },
+        {
+          "all_previous_lifts_die_as_repeats": true,
+          "high_bits": 24,
+          "lift_rows": [
+            {
+              "current_alignment_class_m_mod_d": 2,
+              "current_alignment_m": 6,
+              "current_high_lock_count_for_bin": 590,
+              "current_high_lock_hit": false,
+              "current_unit_projection_mod_2^R_base": 32273,
+              "current_unit_residue_mod_2^R_high": 10649105,
+              "previous_unit_residue_mod_2^R_high": 10651707,
+              "same_low_geometry_projection": false
+            }
+          ],
+          "low_projection_mismatches": 1,
+          "previous_high_lock_lifts": 1,
+          "refined_repeat_lifts": 0,
+          "same_geometry_refined_repeat_lifts": 0
+        }
+      ],
+      "source_pair": "011->0111",
+      "transition_count_at_base_bits": 1
+    }
+  ],
+  "inputs": {
+    "classifier": "experiments\\results\\odd_unit_lock_bridge_classifier_d14_R17_N250000_20260705.json"
+  },
+  "parameters": {
+    "base_bits": 17,
+    "high_bits": [
+      20,
+      24
+    ],
+    "max_depth": 14,
+    "min_source_depth": 3
+  },
+  "result": "finite bridge refinement measurement; not a proof of Collatz",
+  "status": "odd-unit-lock-bridge-refinement",
+  "summary": {
+    "all_measured_base_bridges_die_as_refined_repeats": true,
+    "families_checked": 3,
+    "interpretation": "For the measured R=17 repeat bridges, every higher-precision previous-lock lift tested here fails to be a higher-precision next-lock hit.",
+    "low_projection_mismatches": 2
+  }
+}

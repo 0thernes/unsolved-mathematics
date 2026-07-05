@@ -1,0 +1,1173 @@
+{
+  "checks": [
+    {
+      "detail": {
+        "starts_reaching_one_within_cap": 124999,
+        "starts_scanned": 124999
+      },
+      "name": "all_scanned_positive_starts_reach_one_within_cap",
+      "passed": true
+    },
+    {
+      "detail": {
+        "excess_bits": 17,
+        "observed_over_expected_hit_after_hit": 0.191945340565
+      },
+      "name": "hit_after_hit_not_above_twice_local_coverage_baseline",
+      "passed": true
+    }
+  ],
+  "classification": {
+    "all_repeat_hits_cross_source": true,
+    "dominant_gap": "1",
+    "dominant_source_pair": "00110111011101->01101110111",
+    "interpretation": "If repeat hits all cross source labels and do not collapse to one signature, the next theorem target is a transition-family classifier, not a same-spine persistence lemma.",
+    "repeated_signature_count": 2,
+    "repeated_signatures": {
+      "00110111011101|2|110493|01101110111|2|24693": 12,
+      "001111101|2|79827|011111|2|44321": 2
+    }
+  },
+  "elapsed_seconds": 71.347692,
+  "library": {
+    "canonical_primitive_sources": 490,
+    "lock_witness_keys": 3045832,
+    "source_depths": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ]
+  },
+  "parameters": {
+    "excess_bits": 17,
+    "max_depth": 14,
+    "max_steps": 512,
+    "min_source_depth": 3,
+    "odd_starts_only": true,
+    "start_limit": 250000
+  },
+  "result": "finite measurement only; not a proof of Collatz",
+  "scan": {
+    "alignment_class_pair_histogram": {
+      "1->2": 1,
+      "2->2": 14
+    },
+    "depth_pair_histogram": {
+      "14->11": 12,
+      "3->4": 1,
+      "9->6": 2
+    },
+    "different_source_repeat_count": 15,
+    "expected_hit_after_hit_from_local_coverage": 78.147247314453,
+    "expected_hits_from_local_coverage": 16833.493087768555,
+    "gap_histogram": {
+      "1": 14,
+      "4": 1
+    },
+    "hit_after_hit_fraction": 0.001874765654,
+    "hit_after_hit_transitions": 15,
+    "hit_fraction": 0.004821125756,
+    "observed_over_expected_hit_after_hit": 0.191945340565,
+    "observed_over_expected_hits": 0.475599446785,
+    "previous_hit_transitions": 8001,
+    "same_source_repeat_count": 0,
+    "shared_target_count_histogram": {
+      "0": 15
+    },
+    "shortcut_segment_parity_histogram": {
+      "0": 14,
+      "0110": 1
+    },
+    "signature_histogram": {
+      "00110111011101|2|110493|01101110111|2|24693": 12,
+      "001111101|2|79827|011111|2|44321": 2,
+      "011|1|34875|0111|2|112145": 1
+    },
+    "source_pair_histogram": {
+      "00110111011101->01101110111": 12,
+      "001111101->011111": 2,
+      "011->0111": 1
+    },
+    "starts_reaching_one_within_cap": 124999,
+    "starts_scanned": 124999,
+    "starts_with_repeat": [
+      68509,
+      81195,
+      87891,
+      91345,
+      96231,
+      121793,
+      131837,
+      144347,
+      162391,
+      182691,
+      192463,
+      216521,
+      228103,
+      243587,
+      247995
+    ],
+    "starts_with_repeat_count": 15,
+    "top_matching_targets_across_pairs": {
+      "00001111111011": 12,
+      "00010011111111": 12,
+      "0101011111": 2,
+      "01011011111111": 2,
+      "010111": 1,
+      "01101111101111": 1
+    },
+    "total_canonical_source_visits": 1660608,
+    "total_lock_hits": 8006,
+    "total_shortcut_states_examined": 10378764,
+    "transitions": [
+      {
+        "alignment_class_pair": "2->2",
+        "current": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 13,
+          "local_coverage_fraction": 0.008911132812,
+          "lock_residue_count_for_bin": 584,
+          "n": 51382,
+          "source": "01101110111",
+          "source_depth": 11,
+          "source_residue": 182,
+          "source_rho": "-20362/4513",
+          "step": 2,
+          "unit_residue": 24693,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 1,
+              "phase_t": 2,
+              "source_phase_rho": "-13015/4513",
+              "target": "00010011111111",
+              "target_eta": "-456008/3299",
+              "valuation_e": 0
+            }
+          ]
+        },
+        "depth_pair": "14->11",
+        "gap_shortcut_steps": 1,
+        "previous": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 16,
+          "local_coverage_fraction": 0.013900756836,
+          "lock_residue_count_for_bin": 911,
+          "n": 102764,
+          "source": "00110111011101",
+          "source_depth": 14,
+          "source_residue": 4460,
+          "source_rho": "-130364/3299",
+          "step": 1,
+          "unit_residue": 110493,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 0,
+              "phase_t": 1,
+              "source_phase_rho": "-65182/3299",
+              "target": "00001111111011",
+              "target_eta": "-316976/3299",
+              "valuation_e": 1
+            }
+          ]
+        },
+        "same_source": false,
+        "shared_target_count": 0,
+        "shared_targets": [],
+        "shortcut_segment": {
+          "final_state": 51382,
+          "gap_steps": 1,
+          "parity_word": "0",
+          "states": [
+            102764,
+            51382
+          ],
+          "states_truncated": false
+        },
+        "signature": "00110111011101|2|110493|01101110111|2|24693",
+        "source_pair": "00110111011101->01101110111",
+        "start": 68509
+      },
+      {
+        "alignment_class_pair": "2->2",
+        "current": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 13,
+          "local_coverage_fraction": 0.008911132812,
+          "lock_residue_count_for_bin": 584,
+          "n": 51382,
+          "source": "01101110111",
+          "source_depth": 11,
+          "source_residue": 182,
+          "source_rho": "-20362/4513",
+          "step": 7,
+          "unit_residue": 24693,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 1,
+              "phase_t": 2,
+              "source_phase_rho": "-13015/4513",
+              "target": "00010011111111",
+              "target_eta": "-456008/3299",
+              "valuation_e": 0
+            }
+          ]
+        },
+        "depth_pair": "14->11",
+        "gap_shortcut_steps": 1,
+        "previous": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 16,
+          "local_coverage_fraction": 0.013900756836,
+          "lock_residue_count_for_bin": 911,
+          "n": 102764,
+          "source": "00110111011101",
+          "source_depth": 14,
+          "source_residue": 4460,
+          "source_rho": "-130364/3299",
+          "step": 6,
+          "unit_residue": 110493,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 0,
+              "phase_t": 1,
+              "source_phase_rho": "-65182/3299",
+              "target": "00001111111011",
+              "target_eta": "-316976/3299",
+              "valuation_e": 1
+            }
+          ]
+        },
+        "same_source": false,
+        "shared_target_count": 0,
+        "shared_targets": [],
+        "shortcut_segment": {
+          "final_state": 51382,
+          "gap_steps": 1,
+          "parity_word": "0",
+          "states": [
+            102764,
+            51382
+          ],
+          "states_truncated": false
+        },
+        "signature": "00110111011101|2|110493|01101110111|2|24693",
+        "source_pair": "00110111011101->01101110111",
+        "start": 81195
+      },
+      {
+        "alignment_class_pair": "2->2",
+        "current": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 8,
+          "local_coverage_fraction": 0.008911132812,
+          "lock_residue_count_for_bin": 584,
+          "n": 98878,
+          "source": "011111",
+          "source_depth": 6,
+          "source_residue": 62,
+          "source_rho": "-422/179",
+          "step": 3,
+          "unit_residue": 44321,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 0,
+              "phase_t": 0,
+              "source_phase_rho": "-422/179",
+              "target": "0101011111",
+              "target_eta": "-10154/1163",
+              "valuation_e": 2
+            }
+          ]
+        },
+        "depth_pair": "9->6",
+        "gap_shortcut_steps": 1,
+        "previous": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 11,
+          "local_coverage_fraction": 0.013900756836,
+          "lock_residue_count_for_bin": 911,
+          "n": 197756,
+          "source": "001111101",
+          "source_depth": 9,
+          "source_residue": 124,
+          "source_rho": "-2788/217",
+          "step": 2,
+          "unit_residue": 79827,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 0,
+              "phase_t": 2,
+              "source_phase_rho": "-697/217",
+              "target": "01011011111111",
+              "target_eta": "-784058/160763",
+              "valuation_e": 0
+            }
+          ]
+        },
+        "same_source": false,
+        "shared_target_count": 0,
+        "shared_targets": [],
+        "shortcut_segment": {
+          "final_state": 98878,
+          "gap_steps": 1,
+          "parity_word": "0",
+          "states": [
+            197756,
+            98878
+          ],
+          "states_truncated": false
+        },
+        "signature": "001111101|2|79827|011111|2|44321",
+        "source_pair": "001111101->011111",
+        "start": 87891
+      },
+      {
+        "alignment_class_pair": "2->2",
+        "current": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 13,
+          "local_coverage_fraction": 0.008911132812,
+          "lock_residue_count_for_bin": 584,
+          "n": 51382,
+          "source": "01101110111",
+          "source_depth": 11,
+          "source_residue": 182,
+          "source_rho": "-20362/4513",
+          "step": 4,
+          "unit_residue": 24693,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 1,
+              "phase_t": 2,
+              "source_phase_rho": "-13015/4513",
+              "target": "00010011111111",
+              "target_eta": "-456008/3299",
+              "valuation_e": 0
+            }
+          ]
+        },
+        "depth_pair": "14->11",
+        "gap_shortcut_steps": 1,
+        "previous": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 16,
+          "local_coverage_fraction": 0.013900756836,
+          "lock_residue_count_for_bin": 911,
+          "n": 102764,
+          "source": "00110111011101",
+          "source_depth": 14,
+          "source_residue": 4460,
+          "source_rho": "-130364/3299",
+          "step": 3,
+          "unit_residue": 110493,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 0,
+              "phase_t": 1,
+              "source_phase_rho": "-65182/3299",
+              "target": "00001111111011",
+              "target_eta": "-316976/3299",
+              "valuation_e": 1
+            }
+          ]
+        },
+        "same_source": false,
+        "shared_target_count": 0,
+        "shared_targets": [],
+        "shortcut_segment": {
+          "final_state": 51382,
+          "gap_steps": 1,
+          "parity_word": "0",
+          "states": [
+            102764,
+            51382
+          ],
+          "states_truncated": false
+        },
+        "signature": "00110111011101|2|110493|01101110111|2|24693",
+        "source_pair": "00110111011101->01101110111",
+        "start": 91345
+      },
+      {
+        "alignment_class_pair": "2->2",
+        "current": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 13,
+          "local_coverage_fraction": 0.008911132812,
+          "lock_residue_count_for_bin": 584,
+          "n": 51382,
+          "source": "01101110111",
+          "source_depth": 11,
+          "source_residue": 182,
+          "source_rho": "-20362/4513",
+          "step": 12,
+          "unit_residue": 24693,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 1,
+              "phase_t": 2,
+              "source_phase_rho": "-13015/4513",
+              "target": "00010011111111",
+              "target_eta": "-456008/3299",
+              "valuation_e": 0
+            }
+          ]
+        },
+        "depth_pair": "14->11",
+        "gap_shortcut_steps": 1,
+        "previous": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 16,
+          "local_coverage_fraction": 0.013900756836,
+          "lock_residue_count_for_bin": 911,
+          "n": 102764,
+          "source": "00110111011101",
+          "source_depth": 14,
+          "source_residue": 4460,
+          "source_rho": "-130364/3299",
+          "step": 11,
+          "unit_residue": 110493,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 0,
+              "phase_t": 1,
+              "source_phase_rho": "-65182/3299",
+              "target": "00001111111011",
+              "target_eta": "-316976/3299",
+              "valuation_e": 1
+            }
+          ]
+        },
+        "same_source": false,
+        "shared_target_count": 0,
+        "shared_targets": [],
+        "shortcut_segment": {
+          "final_state": 51382,
+          "gap_steps": 1,
+          "parity_word": "0",
+          "states": [
+            102764,
+            51382
+          ],
+          "states_truncated": false
+        },
+        "signature": "00110111011101|2|110493|01101110111|2|24693",
+        "source_pair": "00110111011101->01101110111",
+        "start": 96231
+      },
+      {
+        "alignment_class_pair": "2->2",
+        "current": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 13,
+          "local_coverage_fraction": 0.008911132812,
+          "lock_residue_count_for_bin": 584,
+          "n": 51382,
+          "source": "01101110111",
+          "source_depth": 11,
+          "source_residue": 182,
+          "source_rho": "-20362/4513",
+          "step": 6,
+          "unit_residue": 24693,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 1,
+              "phase_t": 2,
+              "source_phase_rho": "-13015/4513",
+              "target": "00010011111111",
+              "target_eta": "-456008/3299",
+              "valuation_e": 0
+            }
+          ]
+        },
+        "depth_pair": "14->11",
+        "gap_shortcut_steps": 1,
+        "previous": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 16,
+          "local_coverage_fraction": 0.013900756836,
+          "lock_residue_count_for_bin": 911,
+          "n": 102764,
+          "source": "00110111011101",
+          "source_depth": 14,
+          "source_residue": 4460,
+          "source_rho": "-130364/3299",
+          "step": 5,
+          "unit_residue": 110493,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 0,
+              "phase_t": 1,
+              "source_phase_rho": "-65182/3299",
+              "target": "00001111111011",
+              "target_eta": "-316976/3299",
+              "valuation_e": 1
+            }
+          ]
+        },
+        "same_source": false,
+        "shared_target_count": 0,
+        "shared_targets": [],
+        "shortcut_segment": {
+          "final_state": 51382,
+          "gap_steps": 1,
+          "parity_word": "0",
+          "states": [
+            102764,
+            51382
+          ],
+          "states_truncated": false
+        },
+        "signature": "00110111011101|2|110493|01101110111|2|24693",
+        "source_pair": "00110111011101->01101110111",
+        "start": 121793
+      },
+      {
+        "alignment_class_pair": "2->2",
+        "current": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 8,
+          "local_coverage_fraction": 0.008911132812,
+          "lock_residue_count_for_bin": 584,
+          "n": 98878,
+          "source": "011111",
+          "source_depth": 6,
+          "source_residue": 62,
+          "source_rho": "-422/179",
+          "step": 2,
+          "unit_residue": 44321,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 0,
+              "phase_t": 0,
+              "source_phase_rho": "-422/179",
+              "target": "0101011111",
+              "target_eta": "-10154/1163",
+              "valuation_e": 2
+            }
+          ]
+        },
+        "depth_pair": "9->6",
+        "gap_shortcut_steps": 1,
+        "previous": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 11,
+          "local_coverage_fraction": 0.013900756836,
+          "lock_residue_count_for_bin": 911,
+          "n": 197756,
+          "source": "001111101",
+          "source_depth": 9,
+          "source_residue": 124,
+          "source_rho": "-2788/217",
+          "step": 1,
+          "unit_residue": 79827,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 0,
+              "phase_t": 2,
+              "source_phase_rho": "-697/217",
+              "target": "01011011111111",
+              "target_eta": "-784058/160763",
+              "valuation_e": 0
+            }
+          ]
+        },
+        "same_source": false,
+        "shared_target_count": 0,
+        "shared_targets": [],
+        "shortcut_segment": {
+          "final_state": 98878,
+          "gap_steps": 1,
+          "parity_word": "0",
+          "states": [
+            197756,
+            98878
+          ],
+          "states_truncated": false
+        },
+        "signature": "001111101|2|79827|011111|2|44321",
+        "source_pair": "001111101->011111",
+        "start": 131837
+      },
+      {
+        "alignment_class_pair": "2->2",
+        "current": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 13,
+          "local_coverage_fraction": 0.008911132812,
+          "lock_residue_count_for_bin": 584,
+          "n": 51382,
+          "source": "01101110111",
+          "source_depth": 11,
+          "source_residue": 182,
+          "source_rho": "-20362/4513",
+          "step": 11,
+          "unit_residue": 24693,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 1,
+              "phase_t": 2,
+              "source_phase_rho": "-13015/4513",
+              "target": "00010011111111",
+              "target_eta": "-456008/3299",
+              "valuation_e": 0
+            }
+          ]
+        },
+        "depth_pair": "14->11",
+        "gap_shortcut_steps": 1,
+        "previous": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 16,
+          "local_coverage_fraction": 0.013900756836,
+          "lock_residue_count_for_bin": 911,
+          "n": 102764,
+          "source": "00110111011101",
+          "source_depth": 14,
+          "source_residue": 4460,
+          "source_rho": "-130364/3299",
+          "step": 10,
+          "unit_residue": 110493,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 0,
+              "phase_t": 1,
+              "source_phase_rho": "-65182/3299",
+              "target": "00001111111011",
+              "target_eta": "-316976/3299",
+              "valuation_e": 1
+            }
+          ]
+        },
+        "same_source": false,
+        "shared_target_count": 0,
+        "shared_targets": [],
+        "shortcut_segment": {
+          "final_state": 51382,
+          "gap_steps": 1,
+          "parity_word": "0",
+          "states": [
+            102764,
+            51382
+          ],
+          "states_truncated": false
+        },
+        "signature": "00110111011101|2|110493|01101110111|2|24693",
+        "source_pair": "00110111011101->01101110111",
+        "start": 144347
+      },
+      {
+        "alignment_class_pair": "2->2",
+        "current": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 13,
+          "local_coverage_fraction": 0.008911132812,
+          "lock_residue_count_for_bin": 584,
+          "n": 51382,
+          "source": "01101110111",
+          "source_depth": 11,
+          "source_residue": 182,
+          "source_rho": "-20362/4513",
+          "step": 8,
+          "unit_residue": 24693,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 1,
+              "phase_t": 2,
+              "source_phase_rho": "-13015/4513",
+              "target": "00010011111111",
+              "target_eta": "-456008/3299",
+              "valuation_e": 0
+            }
+          ]
+        },
+        "depth_pair": "14->11",
+        "gap_shortcut_steps": 1,
+        "previous": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 16,
+          "local_coverage_fraction": 0.013900756836,
+          "lock_residue_count_for_bin": 911,
+          "n": 102764,
+          "source": "00110111011101",
+          "source_depth": 14,
+          "source_residue": 4460,
+          "source_rho": "-130364/3299",
+          "step": 7,
+          "unit_residue": 110493,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 0,
+              "phase_t": 1,
+              "source_phase_rho": "-65182/3299",
+              "target": "00001111111011",
+              "target_eta": "-316976/3299",
+              "valuation_e": 1
+            }
+          ]
+        },
+        "same_source": false,
+        "shared_target_count": 0,
+        "shared_targets": [],
+        "shortcut_segment": {
+          "final_state": 51382,
+          "gap_steps": 1,
+          "parity_word": "0",
+          "states": [
+            102764,
+            51382
+          ],
+          "states_truncated": false
+        },
+        "signature": "00110111011101|2|110493|01101110111|2|24693",
+        "source_pair": "00110111011101->01101110111",
+        "start": 162391
+      },
+      {
+        "alignment_class_pair": "2->2",
+        "current": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 13,
+          "local_coverage_fraction": 0.008911132812,
+          "lock_residue_count_for_bin": 584,
+          "n": 51382,
+          "source": "01101110111",
+          "source_depth": 11,
+          "source_residue": 182,
+          "source_rho": "-20362/4513",
+          "step": 5,
+          "unit_residue": 24693,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 1,
+              "phase_t": 2,
+              "source_phase_rho": "-13015/4513",
+              "target": "00010011111111",
+              "target_eta": "-456008/3299",
+              "valuation_e": 0
+            }
+          ]
+        },
+        "depth_pair": "14->11",
+        "gap_shortcut_steps": 1,
+        "previous": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 16,
+          "local_coverage_fraction": 0.013900756836,
+          "lock_residue_count_for_bin": 911,
+          "n": 102764,
+          "source": "00110111011101",
+          "source_depth": 14,
+          "source_residue": 4460,
+          "source_rho": "-130364/3299",
+          "step": 4,
+          "unit_residue": 110493,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 0,
+              "phase_t": 1,
+              "source_phase_rho": "-65182/3299",
+              "target": "00001111111011",
+              "target_eta": "-316976/3299",
+              "valuation_e": 1
+            }
+          ]
+        },
+        "same_source": false,
+        "shared_target_count": 0,
+        "shared_targets": [],
+        "shortcut_segment": {
+          "final_state": 51382,
+          "gap_steps": 1,
+          "parity_word": "0",
+          "states": [
+            102764,
+            51382
+          ],
+          "states_truncated": false
+        },
+        "signature": "00110111011101|2|110493|01101110111|2|24693",
+        "source_pair": "00110111011101->01101110111",
+        "start": 182691
+      },
+      {
+        "alignment_class_pair": "2->2",
+        "current": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 13,
+          "local_coverage_fraction": 0.008911132812,
+          "lock_residue_count_for_bin": 584,
+          "n": 51382,
+          "source": "01101110111",
+          "source_depth": 11,
+          "source_residue": 182,
+          "source_rho": "-20362/4513",
+          "step": 13,
+          "unit_residue": 24693,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 1,
+              "phase_t": 2,
+              "source_phase_rho": "-13015/4513",
+              "target": "00010011111111",
+              "target_eta": "-456008/3299",
+              "valuation_e": 0
+            }
+          ]
+        },
+        "depth_pair": "14->11",
+        "gap_shortcut_steps": 1,
+        "previous": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 16,
+          "local_coverage_fraction": 0.013900756836,
+          "lock_residue_count_for_bin": 911,
+          "n": 102764,
+          "source": "00110111011101",
+          "source_depth": 14,
+          "source_residue": 4460,
+          "source_rho": "-130364/3299",
+          "step": 12,
+          "unit_residue": 110493,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 0,
+              "phase_t": 1,
+              "source_phase_rho": "-65182/3299",
+              "target": "00001111111011",
+              "target_eta": "-316976/3299",
+              "valuation_e": 1
+            }
+          ]
+        },
+        "same_source": false,
+        "shared_target_count": 0,
+        "shared_targets": [],
+        "shortcut_segment": {
+          "final_state": 51382,
+          "gap_steps": 1,
+          "parity_word": "0",
+          "states": [
+            102764,
+            51382
+          ],
+          "states_truncated": false
+        },
+        "signature": "00110111011101|2|110493|01101110111|2|24693",
+        "source_pair": "00110111011101->01101110111",
+        "start": 192463
+      },
+      {
+        "alignment_class_pair": "2->2",
+        "current": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 13,
+          "local_coverage_fraction": 0.008911132812,
+          "lock_residue_count_for_bin": 584,
+          "n": 51382,
+          "source": "01101110111",
+          "source_depth": 11,
+          "source_residue": 182,
+          "source_rho": "-20362/4513",
+          "step": 10,
+          "unit_residue": 24693,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 1,
+              "phase_t": 2,
+              "source_phase_rho": "-13015/4513",
+              "target": "00010011111111",
+              "target_eta": "-456008/3299",
+              "valuation_e": 0
+            }
+          ]
+        },
+        "depth_pair": "14->11",
+        "gap_shortcut_steps": 1,
+        "previous": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 16,
+          "local_coverage_fraction": 0.013900756836,
+          "lock_residue_count_for_bin": 911,
+          "n": 102764,
+          "source": "00110111011101",
+          "source_depth": 14,
+          "source_residue": 4460,
+          "source_rho": "-130364/3299",
+          "step": 9,
+          "unit_residue": 110493,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 0,
+              "phase_t": 1,
+              "source_phase_rho": "-65182/3299",
+              "target": "00001111111011",
+              "target_eta": "-316976/3299",
+              "valuation_e": 1
+            }
+          ]
+        },
+        "same_source": false,
+        "shared_target_count": 0,
+        "shared_targets": [],
+        "shortcut_segment": {
+          "final_state": 51382,
+          "gap_steps": 1,
+          "parity_word": "0",
+          "states": [
+            102764,
+            51382
+          ],
+          "states_truncated": false
+        },
+        "signature": "00110111011101|2|110493|01101110111|2|24693",
+        "source_pair": "00110111011101->01101110111",
+        "start": 216521
+      },
+      {
+        "alignment_class_pair": "2->2",
+        "current": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 13,
+          "local_coverage_fraction": 0.008911132812,
+          "lock_residue_count_for_bin": 584,
+          "n": 51382,
+          "source": "01101110111",
+          "source_depth": 11,
+          "source_residue": 182,
+          "source_rho": "-20362/4513",
+          "step": 18,
+          "unit_residue": 24693,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 1,
+              "phase_t": 2,
+              "source_phase_rho": "-13015/4513",
+              "target": "00010011111111",
+              "target_eta": "-456008/3299",
+              "valuation_e": 0
+            }
+          ]
+        },
+        "depth_pair": "14->11",
+        "gap_shortcut_steps": 1,
+        "previous": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 16,
+          "local_coverage_fraction": 0.013900756836,
+          "lock_residue_count_for_bin": 911,
+          "n": 102764,
+          "source": "00110111011101",
+          "source_depth": 14,
+          "source_residue": 4460,
+          "source_rho": "-130364/3299",
+          "step": 17,
+          "unit_residue": 110493,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 0,
+              "phase_t": 1,
+              "source_phase_rho": "-65182/3299",
+              "target": "00001111111011",
+              "target_eta": "-316976/3299",
+              "valuation_e": 1
+            }
+          ]
+        },
+        "same_source": false,
+        "shared_target_count": 0,
+        "shared_targets": [],
+        "shortcut_segment": {
+          "final_state": 51382,
+          "gap_steps": 1,
+          "parity_word": "0",
+          "states": [
+            102764,
+            51382
+          ],
+          "states_truncated": false
+        },
+        "signature": "00110111011101|2|110493|01101110111|2|24693",
+        "source_pair": "00110111011101->01101110111",
+        "start": 228103
+      },
+      {
+        "alignment_class_pair": "2->2",
+        "current": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 13,
+          "local_coverage_fraction": 0.008911132812,
+          "lock_residue_count_for_bin": 584,
+          "n": 51382,
+          "source": "01101110111",
+          "source_depth": 11,
+          "source_residue": 182,
+          "source_rho": "-20362/4513",
+          "step": 7,
+          "unit_residue": 24693,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 1,
+              "phase_t": 2,
+              "source_phase_rho": "-13015/4513",
+              "target": "00010011111111",
+              "target_eta": "-456008/3299",
+              "valuation_e": 0
+            }
+          ]
+        },
+        "depth_pair": "14->11",
+        "gap_shortcut_steps": 1,
+        "previous": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 16,
+          "local_coverage_fraction": 0.013900756836,
+          "lock_residue_count_for_bin": 911,
+          "n": 102764,
+          "source": "00110111011101",
+          "source_depth": 14,
+          "source_residue": 4460,
+          "source_rho": "-130364/3299",
+          "step": 6,
+          "unit_residue": 110493,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 0,
+              "phase_t": 1,
+              "source_phase_rho": "-65182/3299",
+              "target": "00001111111011",
+              "target_eta": "-316976/3299",
+              "valuation_e": 1
+            }
+          ]
+        },
+        "same_source": false,
+        "shared_target_count": 0,
+        "shared_targets": [],
+        "shortcut_segment": {
+          "final_state": 51382,
+          "gap_steps": 1,
+          "parity_word": "0",
+          "states": [
+            102764,
+            51382
+          ],
+          "states_truncated": false
+        },
+        "signature": "00110111011101|2|110493|01101110111|2|24693",
+        "source_pair": "00110111011101->01101110111",
+        "start": 243587
+      },
+      {
+        "alignment_class_pair": "1->2",
+        "current": {
+          "alignment_class_m_mod_d": 2,
+          "alignment_m": 6,
+          "local_coverage_fraction": 0.008911132812,
+          "lock_residue_count_for_bin": 584,
+          "n": 313870,
+          "source": "0111",
+          "source_depth": 4,
+          "source_residue": 14,
+          "source_rho": "-38/11",
+          "step": 6,
+          "unit_residue": 112145,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 0,
+              "phase_t": 0,
+              "source_phase_rho": "-38/11",
+              "target": "010111",
+              "target_eta": "-206/17",
+              "valuation_e": 2
+            }
+          ]
+        },
+        "depth_pair": "3->4",
+        "gap_shortcut_steps": 4,
+        "previous": {
+          "alignment_class_m_mod_d": 1,
+          "alignment_m": 4,
+          "local_coverage_fraction": 0.012603759766,
+          "lock_residue_count_for_bin": 826,
+          "n": 557990,
+          "source": "011",
+          "source_depth": 3,
+          "source_residue": 6,
+          "source_rho": "-10",
+          "step": 2,
+          "unit_residue": 34875,
+          "witness_count_for_unit_residue": 1,
+          "witnesses": [
+            {
+              "odd_prefix": 0,
+              "phase_t": 1,
+              "source_phase_rho": "-5",
+              "target": "01101111101111",
+              "target_eta": "-536846/160763",
+              "valuation_e": 0
+            }
+          ]
+        },
+        "same_source": false,
+        "shared_target_count": 0,
+        "shared_targets": [],
+        "shortcut_segment": {
+          "final_state": 313870,
+          "gap_steps": 4,
+          "parity_word": "0110",
+          "states": [
+            557990,
+            278995,
+            418493,
+            627740,
+            313870
+          ],
+          "states_truncated": false
+        },
+        "signature": "011|1|34875|0111|2|112145",
+        "source_pair": "011->0111",
+        "start": 247995
+      }
+    ]
+  },
+  "status": "odd-unit-lock-transition-microscope"
+}

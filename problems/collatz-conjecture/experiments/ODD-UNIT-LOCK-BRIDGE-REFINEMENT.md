@@ -9,7 +9,8 @@
 [`ODD-UNIT-LOCK-TRANSITION-WITNESS-MICROSCOPE.md`](ODD-UNIT-LOCK-TRANSITION-WITNESS-MICROSCOPE.md),
 [`ODD-UNIT-LOCK-REFINEMENT.md`](ODD-UNIT-LOCK-REFINEMENT.md),
 [`ODD-UNIT-LOCK-PERSISTENCE-LADDER.md`](ODD-UNIT-LOCK-PERSISTENCE-LADDER.md),
-[`ODD-UNIT-LOCK-ALIGNMENT-DROP.md`](ODD-UNIT-LOCK-ALIGNMENT-DROP.md)
+[`ODD-UNIT-LOCK-ALIGNMENT-DROP.md`](ODD-UNIT-LOCK-ALIGNMENT-DROP.md),
+[`ODD-UNIT-LOCK-BRIDGE-STATE-LIFT.md`](ODD-UNIT-LOCK-BRIDGE-STATE-LIFT.md)
 
 Status: finite bridge-refinement measurement. This proves no part of the
 Collatz conjecture.
@@ -100,6 +101,11 @@ ladder has two `R = 17` bridge families, one `R = 18` bridge family, and no
 The surviving `R = 18` measured bridge still loses refined lock depth at
 `R = 20` and `R = 24`.
 
+The state-lift follow-up adds the missing intermediate precision. The
+`400252 -> 200126` bridge survives algebraically at `R = 19`, but the required
+previous state class lifts to `400252 + 2^28 (mod 2^29)`, so the observed low
+representative state is no longer a repeated-lock state at that precision.
+
 ## Depth-14 Stress Follow-Up
 
 The depth-14 scan through odd starts `<= 250,000` creates more coarse bridge
@@ -183,6 +189,8 @@ python experiments\odd_unit_lock_bridge_classifier.py --input experiments\result
 python experiments\odd_unit_lock_bridge_refinement.py --classifier experiments\results\odd_unit_lock_bridge_classifier_d13_R17_N1000000_20260705.json --output experiments\results\odd_unit_lock_bridge_refinement_d13_R17_to_R20_R24_N1000000_20260705.json --quiet
 python experiments\odd_unit_lock_bridge_classifier.py --input experiments\results\odd_unit_lock_transition_microscope_d13_R18_N1000000_20260705.json --output experiments\results\odd_unit_lock_bridge_classifier_d13_R18_N1000000_20260705.json --quiet
 python experiments\odd_unit_lock_bridge_refinement.py --classifier experiments\results\odd_unit_lock_bridge_classifier_d13_R18_N1000000_20260705.json --output experiments\results\odd_unit_lock_bridge_refinement_d13_R18_to_R20_R24_N1000000_20260705.json --quiet
+python experiments\odd_unit_lock_bridge_state_lift.py --classifier experiments\results\odd_unit_lock_bridge_classifier_d13_R17_N1000000_20260705.json --high-bits 18,19,20,24 --output experiments\results\odd_unit_lock_bridge_state_lift_d13_R17_to_R18_R19_R20_R24_N1000000_20260705.json
+python experiments\odd_unit_lock_bridge_state_lift.py --classifier experiments\results\odd_unit_lock_bridge_classifier_d13_R18_N1000000_20260705.json --high-bits 19,20,24 --output experiments\results\odd_unit_lock_bridge_state_lift_d13_R18_to_R19_R20_R24_N1000000_20260705.json
 python experiments\odd_unit_lock_bridge_classifier.py --input experiments\results\odd_unit_lock_transition_microscope_d14_R17_N250000_20260705.json --output experiments\results\odd_unit_lock_bridge_classifier_d14_R17_N250000_20260705.json --quiet
 python experiments\odd_unit_lock_bridge_refinement.py --max-depth 14 --classifier experiments\results\odd_unit_lock_bridge_classifier_d14_R17_N250000_20260705.json --output experiments\results\odd_unit_lock_bridge_refinement_d14_R17_to_R20_R24_N250000_20260705.json --quiet
 ```
