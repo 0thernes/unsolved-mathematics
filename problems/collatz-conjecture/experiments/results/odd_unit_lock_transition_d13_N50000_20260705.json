@@ -43,7 +43,7 @@
       "passed": true
     }
   ],
-  "elapsed_seconds": 15.214147,
+  "elapsed_seconds": 15.045085,
   "interpretation": "This probes whether lock hits persist along actual positive orbits. Ratios near the local-coverage expectation support the codimension route; large hit-after-hit excess would expose a counter-pattern to explain before claiming cumulative lock loss.",
   "library": {
     "canonical_primitive_sources": 244,
@@ -79,6 +79,9 @@
   "scan": {
     "by_excess_bits": {
       "12": {
+        "different_source_hit_after_hit": 11081,
+        "different_source_hit_after_hit_fraction": 0.354807723096,
+        "different_source_previous_hit_transitions": 31231,
         "expected_hit_after_hit_from_local_coverage": 4235.0048828125,
         "expected_hits_from_local_coverage": 26880.9853515625,
         "hit_after_hit": 15629,
@@ -241,6 +244,7 @@
           }
         ],
         "hit_after_hit_fraction": 0.3920383284,
+        "hit_after_hit_vs_hit_after_miss_ratio": 2.950551861613,
         "hit_after_miss": 27958,
         "hit_after_miss_fraction": 0.132869492484,
         "hit_examples": [
@@ -479,11 +483,17 @@
         "previous_hit_transitions": 39866,
         "previous_miss_transitions": 210417,
         "same_source_hit_after_hit": 4548,
+        "same_source_hit_after_hit_fraction": 0.526693688477,
+        "same_source_previous_hit_transitions": 8635,
+        "same_source_share_of_hit_after_hit": 0.290997504639,
         "same_source_transitions": 34497,
         "source_visit_transitions": 250283,
         "source_visits": 274989
       },
       "16": {
+        "different_source_hit_after_hit": 12,
+        "different_source_hit_after_hit_fraction": 0.010221465077,
+        "different_source_previous_hit_transitions": 1174,
         "expected_hit_after_hit_from_local_coverage": 12.990112304688,
         "expected_hits_from_local_coverage": 2672.0048828125,
         "hit_after_hit": 12,
@@ -646,6 +656,7 @@
           }
         ],
         "hit_after_hit_fraction": 0.009538950715,
+        "hit_after_hit_vs_hit_after_miss_ratio": 2.326579042025,
         "hit_after_miss": 1021,
         "hit_after_miss_fraction": 0.004099989961,
         "hit_examples": [
@@ -882,11 +893,17 @@
         "previous_hit_transitions": 1258,
         "previous_miss_transitions": 249025,
         "same_source_hit_after_hit": 0,
+        "same_source_hit_after_hit_fraction": 0.0,
+        "same_source_previous_hit_transitions": 84,
+        "same_source_share_of_hit_after_hit": 0.0,
         "same_source_transitions": 34497,
         "source_visit_transitions": 250283,
         "source_visits": 274989
       },
       "8": {
+        "different_source_hit_after_hit": 24626,
+        "different_source_hit_after_hit_fraction": 0.403645363799,
+        "different_source_previous_hit_transitions": 61009,
         "expected_hit_after_hit_from_local_coverage": 26426.2734375,
         "expected_hits_from_local_coverage": 90688.0390625,
         "hit_after_hit": 32312,
@@ -1049,6 +1066,7 @@
           }
         ],
         "hit_after_hit_fraction": 0.41785640389,
+        "hit_after_hit_vs_hit_after_miss_ratio": 1.657272847523,
         "hit_after_miss": 43608,
         "hit_after_miss_fraction": 0.252134948397,
         "hit_examples": [
@@ -1290,6 +1308,9 @@
         "previous_hit_transitions": 77328,
         "previous_miss_transitions": 172955,
         "same_source_hit_after_hit": 7686,
+        "same_source_hit_after_hit_fraction": 0.470984741712,
+        "same_source_previous_hit_transitions": 16319,
+        "same_source_share_of_hit_after_hit": 0.237868284229,
         "same_source_transitions": 34497,
         "source_visit_transitions": 250283,
         "source_visits": 274989

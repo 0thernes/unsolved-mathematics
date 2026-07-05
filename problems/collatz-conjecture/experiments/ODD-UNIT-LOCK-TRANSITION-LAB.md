@@ -74,6 +74,18 @@ are rare, hit-after-hit transitions are rarer, and the observed hit-after-hit
 rate is close to the local-coverage baseline. The deepest observed `R = 16`
 streak is only `2`.
 
+The source-transition split is sharper:
+
+| Extra lock bits R | Same-source previous-hit transitions | Same-source hit after hit | Different-source previous-hit transitions | Different-source hit after hit | Same-source share of hit after hit |
+|---:|---:|---:|---:|---:|---:|
+| 16 | 84 | 0 | 1,174 | 12 | 0.000000000000 |
+
+So in this finite scan, every `R = 16` repeat hit crosses to a different
+source label. That does not prove same-source lock chains are impossible, but
+it gives the next theorem-discovery target a much cleaner shape: explain why
+same-source repeat locks vanish here, then classify the twelve different-source
+exceptions.
+
 The `R = 12` signal is the warning: medium-depth locks chain far more often
 than a naive local-coverage baseline predicts. That does not refute the
 codimension program, because `R = 16` already collapses sharply, but it rules

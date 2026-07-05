@@ -218,7 +218,10 @@ def scan_positive_orbits(
             "previous_miss_transitions": 0,
             "hit_after_miss": 0,
             "same_source_transitions": 0,
+            "same_source_previous_hit_transitions": 0,
             "same_source_hit_after_hit": 0,
+            "different_source_previous_hit_transitions": 0,
+            "different_source_hit_after_hit": 0,
             "max_hit_streak": 0,
             "orbits_with_any_hit": 0,
         }
@@ -274,8 +277,9 @@ def scan_positive_orbits(
 
                     if previous_visit is not None:
                         previous_hit = previous_visit.hit_by_bits[bits]
+                        same_source = previous_visit.source.label == visit.source.label
                         row["source_visit_transitions"] = int(row["source_visit_transitions"]) + 1
-                        if previous_visit.source.label == visit.source.label:
+                        if same_source:
                             row["same_source_transitions"] = int(row["same_source_transitions"]) + 1
                         if previous_hit:
                             row["previous_hit_transitions"] = (
@@ -288,9 +292,21 @@ def scan_positive_orbits(
                             if hit:
                                 row["hit_after_hit"] = int(row["hit_after_hit"]) + 1
                                 add_example(hit_after_hit_examples[bits], visit, bits, start)
-                                if previous_visit.source.label == visit.source.label:
+                            if same_source:
+                                row["same_source_previous_hit_transitions"] = (
+                                    int(row["same_source_previous_hit_transitions"]) + 1
+                                )
+                                if hit:
                                     row["same_source_hit_after_hit"] = (
                                         int(row["same_source_hit_after_hit"]) + 1
+                                    )
+                            else:
+                                row["different_source_previous_hit_transitions"] = (
+                                    int(row["different_source_previous_hit_transitions"]) + 1
+                                )
+                                if hit:
+                                    row["different_source_hit_after_hit"] = (
+                                        int(row["different_source_hit_after_hit"]) + 1
                                     )
                         else:
                             row["previous_miss_transitions"] = (
@@ -332,6 +348,12 @@ def scan_positive_orbits(
         previous_miss = int(row["previous_miss_transitions"])
         hit_after_miss = int(row["hit_after_miss"])
         source_transitions = int(row["source_visit_transitions"])
+        same_prev_hit = int(row["same_source_previous_hit_transitions"])
+        same_hit_after_hit = int(row["same_source_hit_after_hit"])
+        different_prev_hit = int(row["different_source_previous_hit_transitions"])
+        different_hit_after_hit = int(row["different_source_hit_after_hit"])
+        hit_after_hit_fraction = hit_after_hit / previous_hit if previous_hit else 0.0
+        hit_after_miss_fraction = hit_after_miss / previous_miss if previous_miss else 0.0
         by_bits[str(bits)] = {
             "source_visits": visits,
             "lock_hits": hits,
@@ -343,20 +365,33 @@ def scan_positive_orbits(
             "source_visit_transitions": source_transitions,
             "previous_hit_transitions": previous_hit,
             "hit_after_hit": hit_after_hit,
-            "hit_after_hit_fraction": round_float(
-                hit_after_hit / previous_hit if previous_hit else 0.0
-            ),
+            "hit_after_hit_fraction": round_float(hit_after_hit_fraction),
             "expected_hit_after_hit_from_local_coverage": round_float(expected_after_hit),
             "observed_over_expected_hit_after_hit": round_float(
                 hit_after_hit / expected_after_hit if expected_after_hit else 0.0
             ),
             "previous_miss_transitions": previous_miss,
             "hit_after_miss": hit_after_miss,
-            "hit_after_miss_fraction": round_float(
-                hit_after_miss / previous_miss if previous_miss else 0.0
+            "hit_after_miss_fraction": round_float(hit_after_miss_fraction),
+            "hit_after_hit_vs_hit_after_miss_ratio": round_float(
+                hit_after_hit_fraction / hit_after_miss_fraction
+                if hit_after_miss_fraction
+                else 0.0
             ),
             "same_source_transitions": int(row["same_source_transitions"]),
-            "same_source_hit_after_hit": int(row["same_source_hit_after_hit"]),
+            "same_source_previous_hit_transitions": same_prev_hit,
+            "same_source_hit_after_hit": same_hit_after_hit,
+            "same_source_hit_after_hit_fraction": round_float(
+                same_hit_after_hit / same_prev_hit if same_prev_hit else 0.0
+            ),
+            "different_source_previous_hit_transitions": different_prev_hit,
+            "different_source_hit_after_hit": different_hit_after_hit,
+            "different_source_hit_after_hit_fraction": round_float(
+                different_hit_after_hit / different_prev_hit if different_prev_hit else 0.0
+            ),
+            "same_source_share_of_hit_after_hit": round_float(
+                same_hit_after_hit / hit_after_hit if hit_after_hit else 0.0
+            ),
             "max_hit_streak": int(row["max_hit_streak"]),
             "orbits_with_any_hit": int(row["orbits_with_any_hit"]),
             "orbit_max_hit_streak_histogram": as_counter_dict(orbit_hit_streak_hist[bits]),
