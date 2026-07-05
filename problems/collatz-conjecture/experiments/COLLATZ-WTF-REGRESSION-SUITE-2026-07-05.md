@@ -34,6 +34,7 @@ proof routes should not be trusted until they survive the same control ecology:
 6. Phase-collision identities.
 7. The negative result that phase matching alone is too permissive.
 8. Mersenne shadows of the `-1` 2-adic ghost.
+9. The epsilon-lint gate for sign-aware false-world controls.
 
 Passing this suite means only that a proposed mechanism has survived the first
 round of obvious traps. It is not evidence that the conjecture is solved.
@@ -53,6 +54,7 @@ The 2026-07-05 run passed all assertions:
 | `phase_collision_identity_clean` | passed |
 | `phase_gate_too_permissive_to_be_proof` | passed |
 | `mersenne_shadow_detaches_inside_wide_model_band` | passed |
+| `epsilon_lint_gate_passes` | passed |
 
 Key measured control values from the run:
 
@@ -63,6 +65,8 @@ Key measured control values from the run:
 | Phase all-cycle allowed fraction | `0.661103219697` |
 | `-1` to `-5` pure Mersenne lock has no solutions through tested excess | `true` |
 | `q=3` frontier anchor match at depths `20,24,28` | `true` |
+| Epsilon-lint word distribution identical for `3n+1` and `3n-1` | `true` |
+| Epsilon-lint `3n-1` flagged positive cycle minima count | `3` |
 
 The phase-gate result is deliberately a negative proof-control. It says:
 
@@ -87,6 +91,7 @@ Before this file, the repo had many strong individual instruments:
 - `collatz_sibling_control.py`
 - `spine_phase_collision_lab.py`
 - `collatz_frontier_geometry.py`
+- `collatz_epsilon_lint.py`
 - `high_alignment_ladder_analyzer.py`
 
 The new suite stitches their smallest sharp controls into one fast regression

@@ -127,6 +127,52 @@
       },
       "name": "mersenne_shadow_detaches_inside_wide_model_band",
       "passed": true
+    },
+    {
+      "detail": {
+        "five_plus_flagged_count": 94,
+        "hard_failures": [],
+        "high_ladder_formula_controls_pass": true,
+        "lint_rules": [
+          {
+            "probe": "parity_word_distribution",
+            "proof_safety_rating_0_to_10": 1,
+            "status": "reject_as_standalone"
+          },
+          {
+            "probe": "odd_density_or_multiplier_excess",
+            "proof_safety_rating_0_to_10": 2,
+            "status": "reject_as_standalone"
+          },
+          {
+            "probe": "survivor_frontier_count",
+            "proof_safety_rating_0_to_10": 2,
+            "status": "reject_as_standalone"
+          },
+          {
+            "probe": "affine_intercept_sign",
+            "proof_safety_rating_0_to_10": 7,
+            "status": "allowed_input"
+          },
+          {
+            "probe": "positive_cycle_side_of_critical_line",
+            "proof_safety_rating_0_to_10": 7,
+            "status": "allowed_input"
+          },
+          {
+            "probe": "low_repeat_and_high_ladder_value_gates",
+            "proof_safety_rating_0_to_10": 4,
+            "status": "stress_required"
+          }
+        ],
+        "low_repeat_formula_controls_pass": true,
+        "odd_count_distribution_identical": true,
+        "pass": true,
+        "three_minus_flagged_count": 3,
+        "word_distribution_identical": true
+      },
+      "name": "epsilon_lint_gate_passes",
+      "passed": true
     }
   ],
   "collatz_tau_checks": {
@@ -198,7 +244,49 @@
       }
     ]
   },
-  "elapsed_seconds": 0.083873,
+  "elapsed_seconds": 0.10148,
+  "epsilon_lint_probe": {
+    "five_plus_flagged_count": 94,
+    "hard_failures": [],
+    "high_ladder_formula_controls_pass": true,
+    "lint_rules": [
+      {
+        "probe": "parity_word_distribution",
+        "proof_safety_rating_0_to_10": 1,
+        "status": "reject_as_standalone"
+      },
+      {
+        "probe": "odd_density_or_multiplier_excess",
+        "proof_safety_rating_0_to_10": 2,
+        "status": "reject_as_standalone"
+      },
+      {
+        "probe": "survivor_frontier_count",
+        "proof_safety_rating_0_to_10": 2,
+        "status": "reject_as_standalone"
+      },
+      {
+        "probe": "affine_intercept_sign",
+        "proof_safety_rating_0_to_10": 7,
+        "status": "allowed_input"
+      },
+      {
+        "probe": "positive_cycle_side_of_critical_line",
+        "proof_safety_rating_0_to_10": 7,
+        "status": "allowed_input"
+      },
+      {
+        "probe": "low_repeat_and_high_ladder_value_gates",
+        "proof_safety_rating_0_to_10": 4,
+        "status": "stress_required"
+      }
+    ],
+    "low_repeat_formula_controls_pass": true,
+    "odd_count_distribution_identical": true,
+    "pass": true,
+    "three_minus_flagged_count": 3,
+    "word_distribution_identical": true
+  },
   "high_ladder_identity": {
     "checked_rows": 56,
     "failures": [],

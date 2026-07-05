@@ -32,6 +32,7 @@ from time import perf_counter
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import collatz_frontier_geometry as frontier
+import collatz_epsilon_lint as epsilon_lint
 import collatz_sibling_control as sibling
 import spine_phase_collision_lab as phase
 from lib_collatz import shortcut_step
@@ -161,6 +162,45 @@ def mersenne_shadow_probe(max_j: int) -> dict[str, object]:
     }
 
 
+def epsilon_lint_probe() -> dict[str, object]:
+    """Run the newer sign-aware lint gate as a sub-control.
+
+    The WTF suite is a broad regression harness; epsilon-lint is the sharper
+    proof-safety gate for eps-blind claims.  Keeping both wired together makes
+    a future "passed the gauntlet" statement harder to overstate.
+    """
+
+    payload = epsilon_lint.build_payload(
+        depth=8,
+        trace_depth=16,
+        max_start=501,
+        cap=2048,
+        max_align=12,
+    )
+    scan_rows = {
+        row["world"]["id"]: row
+        for row in payload["bounded_scan_controls"]["summaries"]
+    }
+    return {
+        "pass": payload["pass"],
+        "hard_failures": payload["hard_failures"],
+        "word_distribution_identical": payload["word_barrier"]["word_distribution_identical"],
+        "odd_count_distribution_identical": payload["word_barrier"]["odd_count_distribution_identical"],
+        "three_minus_flagged_count": scan_rows["sibling_3n_minus_1"]["flagged_count"],
+        "five_plus_flagged_count": scan_rows["sibling_5n_plus_1"]["flagged_count"],
+        "high_ladder_formula_controls_pass": payload["high_ladder_formula_controls"]["all_formula_checks_pass"],
+        "low_repeat_formula_controls_pass": payload["low_repeat_formula_controls"]["all_formula_checks_pass"],
+        "lint_rules": [
+            {
+                "probe": row["probe"],
+                "status": row["status"],
+                "proof_safety_rating_0_to_10": row["proof_safety_rating_0_to_10"],
+            }
+            for row in payload["lint_rules"]
+        ],
+    }
+
+
 def v2(n: int) -> int:
     if n == 0:
         return 0
@@ -178,6 +218,7 @@ def run(args: argparse.Namespace) -> dict[str, object]:
     ladder = high_ladder_identity(args.max_ladder_align)
     phase_probe = phase_collision_probe(args.phase_max_depth, args.phase_identity_trials)
     mersenne = mersenne_shadow_probe(args.mersenne_max_j)
+    eps_lint = epsilon_lint_probe()
 
     assertions = [
         ok(
@@ -231,6 +272,17 @@ def run(args: argparse.Namespace) -> dict[str, object]:
                 "upper_tail_mean_tau_over_j": mersenne["upper_tail_mean_tau_over_j"],
             },
         ),
+        ok(
+            "epsilon_lint_gate_passes",
+            eps_lint["pass"]
+            and eps_lint["word_distribution_identical"]
+            and eps_lint["odd_count_distribution_identical"]
+            and eps_lint["three_minus_flagged_count"] == 3
+            and eps_lint["five_plus_flagged_count"] > 0
+            and eps_lint["high_ladder_formula_controls_pass"]
+            and eps_lint["low_repeat_formula_controls_pass"],
+            eps_lint,
+        ),
     ]
 
     return {
@@ -251,6 +303,7 @@ def run(args: argparse.Namespace) -> dict[str, object]:
         "high_ladder_identity": ladder,
         "phase_collision_probe": phase_probe,
         "mersenne_shadow_probe": mersenne,
+        "epsilon_lint_probe": eps_lint,
         "interpretation": (
             "This suite is a falsification harness for future proof routes. "
             "Passing means a route has survived basic weirdness controls; it "
