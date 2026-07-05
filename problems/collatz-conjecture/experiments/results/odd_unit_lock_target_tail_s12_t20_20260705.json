@@ -1,0 +1,4167 @@
+{
+  "by_target_cutoff": {
+    "16": {
+      "avg_valuation_e": 0.562582237,
+      "max_valuation_e": 16,
+      "source_phase_target_pairs": 2140160,
+      "tail_comparison": [
+        {
+          "count": 12152,
+          "digest": {
+            "by_phase_t": {
+              "0": 7159,
+              "1": 2586,
+              "2": 1106,
+              "3": 560,
+              "4": 479,
+              "5": 212,
+              "6": 42,
+              "7": 8
+            },
+            "by_source_depth": {
+              "10": 1183,
+              "11": 4164,
+              "12": 5488,
+              "3": 18,
+              "4": 18,
+              "5": 7,
+              "6": 49,
+              "7": 84,
+              "8": 173,
+              "9": 968
+            },
+            "by_target_depth": {
+              "1": 26,
+              "10": 254,
+              "11": 482,
+              "12": 665,
+              "13": 1031,
+              "14": 2055,
+              "15": 2996,
+              "16": 4189,
+              "3": 9,
+              "4": 22,
+              "5": 23,
+              "6": 34,
+              "7": 57,
+              "8": 98,
+              "9": 211
+            },
+            "periodic_prefix_ge_75pct": 2955,
+            "periodic_prefix_ge_90pct": 1029,
+            "samples": [
+              {
+                "periodic_prefix_fraction": 0.9,
+                "periodic_prefix_len": 9,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110111",
+                "target_depth": 10,
+                "valuation_e": 9
+              },
+              {
+                "periodic_prefix_fraction": 0.818182,
+                "periodic_prefix_len": 9,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "01101101111",
+                "target_depth": 11,
+                "valuation_e": 9
+              },
+              {
+                "periodic_prefix_fraction": 0.75,
+                "periodic_prefix_len": 9,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "011011011111",
+                "target_depth": 12,
+                "valuation_e": 9
+              },
+              {
+                "periodic_prefix_fraction": 0.923077,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110110111",
+                "target_depth": 13,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.692308,
+                "periodic_prefix_len": 9,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110111111",
+                "target_depth": 13,
+                "valuation_e": 9
+              },
+              {
+                "periodic_prefix_fraction": 0.857143,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "01101101101111",
+                "target_depth": 14,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.642857,
+                "periodic_prefix_len": 9,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "01101101110111",
+                "target_depth": 14,
+                "valuation_e": 9
+              },
+              {
+                "periodic_prefix_fraction": 0.642857,
+                "periodic_prefix_len": 9,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "01101101111111",
+                "target_depth": 14,
+                "valuation_e": 9
+              },
+              {
+                "periodic_prefix_fraction": 0.8,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "011011011011111",
+                "target_depth": 15,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.6,
+                "periodic_prefix_len": 9,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "011011011101111",
+                "target_depth": 15,
+                "valuation_e": 9
+              },
+              {
+                "periodic_prefix_fraction": 0.6,
+                "periodic_prefix_len": 9,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "011011011110111",
+                "target_depth": 15,
+                "valuation_e": 9
+              },
+              {
+                "periodic_prefix_fraction": 0.6,
+                "periodic_prefix_len": 9,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "011011011111111",
+                "target_depth": 15,
+                "valuation_e": 9
+              },
+              {
+                "periodic_prefix_fraction": 0.9375,
+                "periodic_prefix_len": 15,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110110110111",
+                "target_depth": 16,
+                "valuation_e": 15
+              },
+              {
+                "periodic_prefix_fraction": 0.75,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110110111111",
+                "target_depth": 16,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.5625,
+                "periodic_prefix_len": 9,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110111011111",
+                "target_depth": 16,
+                "valuation_e": 9
+              },
+              {
+                "periodic_prefix_fraction": 0.5625,
+                "periodic_prefix_len": 9,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110111101111",
+                "target_depth": 16,
+                "valuation_e": 9
+              }
+            ]
+          },
+          "fraction": 0.005678080143541,
+          "geometric_expected_count": 8360.0,
+          "observed_over_geometric": 1.453589,
+          "threshold_e_ge": 8
+        },
+        {
+          "count": 4396,
+          "digest": {
+            "by_phase_t": {
+              "0": 2830,
+              "1": 1017,
+              "2": 392,
+              "3": 80,
+              "4": 43,
+              "5": 34
+            },
+            "by_source_depth": {
+              "10": 482,
+              "11": 1555,
+              "12": 2115,
+              "3": 5,
+              "4": 4,
+              "5": 7,
+              "6": 21,
+              "7": 18,
+              "8": 18,
+              "9": 171
+            },
+            "by_target_depth": {
+              "1": 4,
+              "10": 90,
+              "11": 150,
+              "12": 209,
+              "13": 386,
+              "14": 751,
+              "15": 1115,
+              "16": 1582,
+              "3": 1,
+              "4": 5,
+              "5": 6,
+              "6": 8,
+              "7": 18,
+              "8": 22,
+              "9": 49
+            },
+            "periodic_prefix_ge_75pct": 2109,
+            "periodic_prefix_ge_90pct": 662,
+            "samples": [
+              {
+                "periodic_prefix_fraction": 0.923077,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110110111",
+                "target_depth": 13,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.857143,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "01101101101111",
+                "target_depth": 14,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.8,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "011011011011111",
+                "target_depth": 15,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.9375,
+                "periodic_prefix_len": 15,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110110110111",
+                "target_depth": 16,
+                "valuation_e": 15
+              },
+              {
+                "periodic_prefix_fraction": 0.75,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110110111111",
+                "target_depth": 16,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.923077,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "0111",
+                "source": "0111",
+                "source_depth": 4,
+                "target": "0111011101111",
+                "target_depth": 13,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.857143,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "0111",
+                "source": "0111",
+                "source_depth": 4,
+                "target": "01110111011111",
+                "target_depth": 14,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.8,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "0111",
+                "source": "0111",
+                "source_depth": 4,
+                "target": "011101110111111",
+                "target_depth": 15,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.75,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "0111",
+                "source": "0111",
+                "source_depth": 4,
+                "target": "0111011101111111",
+                "target_depth": 16,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.909091,
+                "periodic_prefix_len": 10,
+                "phase_t": 0,
+                "phase_word": "01111",
+                "source": "01111",
+                "source_depth": 5,
+                "target": "01111011111",
+                "target_depth": 11,
+                "valuation_e": 10
+              },
+              {
+                "periodic_prefix_fraction": 0.833333,
+                "periodic_prefix_len": 10,
+                "phase_t": 0,
+                "phase_word": "01111",
+                "source": "01111",
+                "source_depth": 5,
+                "target": "011110111111",
+                "target_depth": 12,
+                "valuation_e": 10
+              },
+              {
+                "periodic_prefix_fraction": 0.769231,
+                "periodic_prefix_len": 10,
+                "phase_t": 0,
+                "phase_word": "01111",
+                "source": "01111",
+                "source_depth": 5,
+                "target": "0111101111111",
+                "target_depth": 13,
+                "valuation_e": 10
+              },
+              {
+                "periodic_prefix_fraction": 0.714286,
+                "periodic_prefix_len": 10,
+                "phase_t": 0,
+                "phase_word": "01111",
+                "source": "01111",
+                "source_depth": 5,
+                "target": "01111011111111",
+                "target_depth": 14,
+                "valuation_e": 10
+              },
+              {
+                "periodic_prefix_fraction": 0.666667,
+                "periodic_prefix_len": 10,
+                "phase_t": 0,
+                "phase_word": "01111",
+                "source": "01111",
+                "source_depth": 5,
+                "target": "011110111111111",
+                "target_depth": 15,
+                "valuation_e": 10
+              },
+              {
+                "periodic_prefix_fraction": 0.9375,
+                "periodic_prefix_len": 15,
+                "phase_t": 0,
+                "phase_word": "01111",
+                "source": "01111",
+                "source_depth": 5,
+                "target": "0111101111011111",
+                "target_depth": 16,
+                "valuation_e": 15
+              },
+              {
+                "periodic_prefix_fraction": 0.625,
+                "periodic_prefix_len": 10,
+                "phase_t": 0,
+                "phase_word": "01111",
+                "source": "01111",
+                "source_depth": 5,
+                "target": "0111101111111111",
+                "target_depth": 16,
+                "valuation_e": 10
+              }
+            ]
+          },
+          "fraction": 0.002054052033493,
+          "geometric_expected_count": 2090.0,
+          "observed_over_geometric": 2.103349,
+          "threshold_e_ge": 10
+        },
+        {
+          "count": 1088,
+          "digest": {
+            "by_phase_t": {
+              "0": 863,
+              "1": 135,
+              "2": 62,
+              "3": 15,
+              "4": 3,
+              "5": 10
+            },
+            "by_source_depth": {
+              "10": 49,
+              "11": 213,
+              "12": 764,
+              "3": 5,
+              "4": 4,
+              "5": 1,
+              "6": 21,
+              "7": 9,
+              "9": 22
+            },
+            "by_target_depth": {
+              "10": 18,
+              "11": 21,
+              "13": 99,
+              "14": 200,
+              "15": 304,
+              "16": 425,
+              "5": 1,
+              "7": 5,
+              "8": 6,
+              "9": 9
+            },
+            "periodic_prefix_ge_75pct": 1088,
+            "periodic_prefix_ge_90pct": 268,
+            "samples": [
+              {
+                "periodic_prefix_fraction": 0.923077,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110110111",
+                "target_depth": 13,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.857143,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "01101101101111",
+                "target_depth": 14,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.8,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "011011011011111",
+                "target_depth": 15,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.9375,
+                "periodic_prefix_len": 15,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110110110111",
+                "target_depth": 16,
+                "valuation_e": 15
+              },
+              {
+                "periodic_prefix_fraction": 0.75,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110110111111",
+                "target_depth": 16,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.923077,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "0111",
+                "source": "0111",
+                "source_depth": 4,
+                "target": "0111011101111",
+                "target_depth": 13,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.857143,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "0111",
+                "source": "0111",
+                "source_depth": 4,
+                "target": "01110111011111",
+                "target_depth": 14,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.8,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "0111",
+                "source": "0111",
+                "source_depth": 4,
+                "target": "011101110111111",
+                "target_depth": 15,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.75,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "0111",
+                "source": "0111",
+                "source_depth": 4,
+                "target": "0111011101111111",
+                "target_depth": 16,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.9375,
+                "periodic_prefix_len": 15,
+                "phase_t": 0,
+                "phase_word": "01111",
+                "source": "01111",
+                "source_depth": 5,
+                "target": "0111101111011111",
+                "target_depth": 16,
+                "valuation_e": 15
+              },
+              {
+                "periodic_prefix_fraction": 0.923077,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "001111",
+                "source": "001111",
+                "source_depth": 6,
+                "target": "0011110011111",
+                "target_depth": 13,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.928571,
+                "periodic_prefix_len": 13,
+                "phase_t": 0,
+                "phase_word": "001111",
+                "source": "001111",
+                "source_depth": 6,
+                "target": "00111100111101",
+                "target_depth": 14,
+                "valuation_e": 13
+              },
+              {
+                "periodic_prefix_fraction": 0.857143,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "001111",
+                "source": "001111",
+                "source_depth": 6,
+                "target": "00111100111111",
+                "target_depth": 14,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.866667,
+                "periodic_prefix_len": 13,
+                "phase_t": 0,
+                "phase_word": "001111",
+                "source": "001111",
+                "source_depth": 6,
+                "target": "001111001111011",
+                "target_depth": 15,
+                "valuation_e": 13
+              },
+              {
+                "periodic_prefix_fraction": 0.8,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "001111",
+                "source": "001111",
+                "source_depth": 6,
+                "target": "001111001111101",
+                "target_depth": 15,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.8,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "001111",
+                "source": "001111",
+                "source_depth": 6,
+                "target": "001111001111111",
+                "target_depth": 15,
+                "valuation_e": 12
+              }
+            ]
+          },
+          "fraction": 0.000508373205742,
+          "geometric_expected_count": 522.5,
+          "observed_over_geometric": 2.082297,
+          "threshold_e_ge": 12
+        },
+        {
+          "count": 87,
+          "digest": {
+            "by_phase_t": {
+              "0": 75,
+              "1": 1,
+              "2": 9,
+              "3": 2
+            },
+            "by_source_depth": {
+              "10": 8,
+              "11": 13,
+              "12": 47,
+              "3": 1,
+              "5": 1,
+              "6": 2,
+              "7": 9,
+              "9": 6
+            },
+            "by_target_depth": {
+              "10": 5,
+              "11": 1,
+              "15": 31,
+              "16": 47,
+              "8": 1,
+              "9": 2
+            },
+            "periodic_prefix_ge_75pct": 87,
+            "periodic_prefix_ge_90pct": 55,
+            "samples": [
+              {
+                "periodic_prefix_fraction": 0.9375,
+                "periodic_prefix_len": 15,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110110110111",
+                "target_depth": 16,
+                "valuation_e": 15
+              },
+              {
+                "periodic_prefix_fraction": 0.9375,
+                "periodic_prefix_len": 15,
+                "phase_t": 0,
+                "phase_word": "01111",
+                "source": "01111",
+                "source_depth": 5,
+                "target": "0111101111011111",
+                "target_depth": 16,
+                "valuation_e": 15
+              },
+              {
+                "periodic_prefix_fraction": 0.933333,
+                "periodic_prefix_len": 14,
+                "phase_t": 0,
+                "phase_word": "010111",
+                "source": "010111",
+                "source_depth": 6,
+                "target": "010111010111011",
+                "target_depth": 15,
+                "valuation_e": 14
+              },
+              {
+                "periodic_prefix_fraction": 0.875,
+                "periodic_prefix_len": 14,
+                "phase_t": 0,
+                "phase_word": "010111",
+                "source": "010111",
+                "source_depth": 6,
+                "target": "0101110101110111",
+                "target_depth": 16,
+                "valuation_e": 14
+              },
+              {
+                "periodic_prefix_fraction": 0.933333,
+                "periodic_prefix_len": 14,
+                "phase_t": 0,
+                "phase_word": "0011111",
+                "source": "0011111",
+                "source_depth": 7,
+                "target": "001111100111111",
+                "target_depth": 15,
+                "valuation_e": 14
+              },
+              {
+                "periodic_prefix_fraction": 0.9375,
+                "periodic_prefix_len": 15,
+                "phase_t": 0,
+                "phase_word": "0011111",
+                "source": "0011111",
+                "source_depth": 7,
+                "target": "0011111001111101",
+                "target_depth": 16,
+                "valuation_e": 15
+              },
+              {
+                "periodic_prefix_fraction": 0.875,
+                "periodic_prefix_len": 14,
+                "phase_t": 0,
+                "phase_word": "0011111",
+                "source": "0011111",
+                "source_depth": 7,
+                "target": "0011111001111111",
+                "target_depth": 16,
+                "valuation_e": 14
+              },
+              {
+                "periodic_prefix_fraction": 0.933333,
+                "periodic_prefix_len": 14,
+                "phase_t": 0,
+                "phase_word": "0101111",
+                "source": "0101111",
+                "source_depth": 7,
+                "target": "010111101011111",
+                "target_depth": 15,
+                "valuation_e": 14
+              },
+              {
+                "periodic_prefix_fraction": 0.875,
+                "periodic_prefix_len": 14,
+                "phase_t": 0,
+                "phase_word": "0101111",
+                "source": "0101111",
+                "source_depth": 7,
+                "target": "0101111010111111",
+                "target_depth": 16,
+                "valuation_e": 14
+              },
+              {
+                "periodic_prefix_fraction": 0.933333,
+                "periodic_prefix_len": 14,
+                "phase_t": 0,
+                "phase_word": "0110111",
+                "source": "0110111",
+                "source_depth": 7,
+                "target": "011011101101111",
+                "target_depth": 15,
+                "valuation_e": 14
+              },
+              {
+                "periodic_prefix_fraction": 0.875,
+                "periodic_prefix_len": 14,
+                "phase_t": 0,
+                "phase_word": "0110111",
+                "source": "0110111",
+                "source_depth": 7,
+                "target": "0110111011011111",
+                "target_depth": 16,
+                "valuation_e": 14
+              },
+              {
+                "periodic_prefix_fraction": 0.933333,
+                "periodic_prefix_len": 14,
+                "phase_t": 0,
+                "phase_word": "0111111",
+                "source": "0111111",
+                "source_depth": 7,
+                "target": "011111101111111",
+                "target_depth": 15,
+                "valuation_e": 14
+              },
+              {
+                "periodic_prefix_fraction": 0.875,
+                "periodic_prefix_len": 14,
+                "phase_t": 0,
+                "phase_word": "0111111",
+                "source": "0111111",
+                "source_depth": 7,
+                "target": "0111111011111111",
+                "target_depth": 16,
+                "valuation_e": 14
+              },
+              {
+                "periodic_prefix_fraction": 0.933333,
+                "periodic_prefix_len": 14,
+                "phase_t": 0,
+                "phase_word": "001110111",
+                "source": "001110111",
+                "source_depth": 9,
+                "target": "001110111001111",
+                "target_depth": 15,
+                "valuation_e": 14
+              },
+              {
+                "periodic_prefix_fraction": 0.875,
+                "periodic_prefix_len": 14,
+                "phase_t": 0,
+                "phase_word": "001110111",
+                "source": "001110111",
+                "source_depth": 9,
+                "target": "0011101110011111",
+                "target_depth": 16,
+                "valuation_e": 14
+              },
+              {
+                "periodic_prefix_fraction": 0.9375,
+                "periodic_prefix_len": 15,
+                "phase_t": 0,
+                "phase_word": "001111011",
+                "source": "001111011",
+                "source_depth": 9,
+                "target": "0011110110011111",
+                "target_depth": 16,
+                "valuation_e": 15
+              }
+            ]
+          },
+          "fraction": 4.0651166268e-05,
+          "geometric_expected_count": 130.625,
+          "observed_over_geometric": 0.666029,
+          "threshold_e_ge": 14
+        },
+        {
+          "count": 1,
+          "digest": {
+            "by_phase_t": {
+              "2": 1
+            },
+            "by_source_depth": {
+              "12": 1
+            },
+            "by_target_depth": {
+              "10": 1
+            },
+            "periodic_prefix_ge_75pct": 1,
+            "periodic_prefix_ge_90pct": 1,
+            "samples": [
+              {
+                "periodic_prefix_fraction": 1.0,
+                "periodic_prefix_len": 10,
+                "phase_t": 2,
+                "phase_word": "010101111101",
+                "source": "010101011111",
+                "source_depth": 12,
+                "target": "0101011111",
+                "target_depth": 10,
+                "valuation_e": 16
+              }
+            ]
+          },
+          "fraction": 4.67254785e-07,
+          "geometric_expected_count": 32.65625,
+          "observed_over_geometric": 0.030622,
+          "threshold_e_ge": 16
+        },
+        {
+          "count": 0,
+          "digest": {
+            "by_phase_t": {},
+            "by_source_depth": {},
+            "by_target_depth": {},
+            "periodic_prefix_ge_75pct": 0,
+            "periodic_prefix_ge_90pct": 0,
+            "samples": []
+          },
+          "fraction": 0.0,
+          "geometric_expected_count": 8.164062,
+          "observed_over_geometric": 0.0,
+          "threshold_e_ge": 18
+        },
+        {
+          "count": 0,
+          "digest": {
+            "by_phase_t": {},
+            "by_source_depth": {},
+            "by_target_depth": {},
+            "periodic_prefix_ge_75pct": 0,
+            "periodic_prefix_ge_90pct": 0,
+            "samples": []
+          },
+          "fraction": 0.0,
+          "geometric_expected_count": 2.041016,
+          "observed_over_geometric": 0.0,
+          "threshold_e_ge": 20
+        },
+        {
+          "count": 0,
+          "digest": {
+            "by_phase_t": {},
+            "by_source_depth": {},
+            "by_target_depth": {},
+            "periodic_prefix_ge_75pct": 0,
+            "periodic_prefix_ge_90pct": 0,
+            "samples": []
+          },
+          "fraction": 0.0,
+          "geometric_expected_count": 0.510254,
+          "observed_over_geometric": 0.0,
+          "threshold_e_ge": 22
+        },
+        {
+          "count": 0,
+          "digest": {
+            "by_phase_t": {},
+            "by_source_depth": {},
+            "by_target_depth": {},
+            "periodic_prefix_ge_75pct": 0,
+            "periodic_prefix_ge_90pct": 0,
+            "samples": []
+          },
+          "fraction": 0.0,
+          "geometric_expected_count": 0.127563,
+          "observed_over_geometric": 0.0,
+          "threshold_e_ge": 24
+        }
+      ],
+      "target_spines": 1248,
+      "top_witnesses": [
+        {
+          "periodic_prefix_fraction": 1.0,
+          "periodic_prefix_len": 10,
+          "phase_t": 2,
+          "phase_word": "010101111101",
+          "source": "010101011111",
+          "source_depth": 12,
+          "target": "0101011111",
+          "target_depth": 10,
+          "valuation_e": 16
+        },
+        {
+          "periodic_prefix_fraction": 0.9375,
+          "periodic_prefix_len": 15,
+          "phase_t": 0,
+          "phase_word": "011",
+          "source": "011",
+          "source_depth": 3,
+          "target": "0110110110110111",
+          "target_depth": 16,
+          "valuation_e": 15
+        },
+        {
+          "periodic_prefix_fraction": 0.9375,
+          "periodic_prefix_len": 15,
+          "phase_t": 0,
+          "phase_word": "01111",
+          "source": "01111",
+          "source_depth": 5,
+          "target": "0111101111011111",
+          "target_depth": 16,
+          "valuation_e": 15
+        },
+        {
+          "periodic_prefix_fraction": 0.9375,
+          "periodic_prefix_len": 15,
+          "phase_t": 0,
+          "phase_word": "0011111",
+          "source": "0011111",
+          "source_depth": 7,
+          "target": "0011111001111101",
+          "target_depth": 16,
+          "valuation_e": 15
+        },
+        {
+          "periodic_prefix_fraction": 0.9375,
+          "periodic_prefix_len": 15,
+          "phase_t": 0,
+          "phase_word": "001111011",
+          "source": "001111011",
+          "source_depth": 9,
+          "target": "0011110110011111",
+          "target_depth": 16,
+          "valuation_e": 15
+        },
+        {
+          "periodic_prefix_fraction": 0.9375,
+          "periodic_prefix_len": 15,
+          "phase_t": 0,
+          "phase_word": "010111011",
+          "source": "010111011",
+          "source_depth": 9,
+          "target": "0101110110101111",
+          "target_depth": 16,
+          "valuation_e": 15
+        },
+        {
+          "periodic_prefix_fraction": 0.9375,
+          "periodic_prefix_len": 15,
+          "phase_t": 0,
+          "phase_word": "0011101111",
+          "source": "0011101111",
+          "source_depth": 10,
+          "target": "0011101111001111",
+          "target_depth": 16,
+          "valuation_e": 15
+        },
+        {
+          "periodic_prefix_fraction": 0.9375,
+          "periodic_prefix_len": 15,
+          "phase_t": 0,
+          "phase_word": "0101101111",
+          "source": "0101101111",
+          "source_depth": 10,
+          "target": "0101101111010111",
+          "target_depth": 16,
+          "valuation_e": 15
+        },
+        {
+          "periodic_prefix_fraction": 0.9375,
+          "periodic_prefix_len": 15,
+          "phase_t": 0,
+          "phase_word": "00110111111",
+          "source": "00110111111",
+          "source_depth": 11,
+          "target": "0011011111100111",
+          "target_depth": 16,
+          "valuation_e": 15
+        },
+        {
+          "periodic_prefix_fraction": 1.0,
+          "periodic_prefix_len": 9,
+          "phase_t": 2,
+          "phase_word": "01010111101",
+          "source": "01010101111",
+          "source_depth": 11,
+          "target": "010101111",
+          "target_depth": 9,
+          "valuation_e": 15
+        },
+        {
+          "periodic_prefix_fraction": 0.9375,
+          "periodic_prefix_len": 15,
+          "phase_t": 0,
+          "phase_word": "01010111111",
+          "source": "01010111111",
+          "source_depth": 11,
+          "target": "0101011111101011",
+          "target_depth": 16,
+          "valuation_e": 15
+        },
+        {
+          "periodic_prefix_fraction": 0.9375,
+          "periodic_prefix_len": 15,
+          "phase_t": 0,
+          "phase_word": "01110111111",
+          "source": "01110111111",
+          "source_depth": 11,
+          "target": "0111011111101111",
+          "target_depth": 16,
+          "valuation_e": 15
+        },
+        {
+          "periodic_prefix_fraction": 0.9375,
+          "periodic_prefix_len": 15,
+          "phase_t": 0,
+          "phase_word": "001011111111",
+          "source": "001011111111",
+          "source_depth": 12,
+          "target": "0010111111110011",
+          "target_depth": 16,
+          "valuation_e": 15
+        },
+        {
+          "periodic_prefix_fraction": 0.9375,
+          "periodic_prefix_len": 15,
+          "phase_t": 0,
+          "phase_word": "011011011111",
+          "source": "011011011111",
+          "source_depth": 12,
+          "target": "0110110111110111",
+          "target_depth": 16,
+          "valuation_e": 15
+        },
+        {
+          "periodic_prefix_fraction": 1.0,
+          "periodic_prefix_len": 9,
+          "phase_t": 3,
+          "phase_word": "011011111011",
+          "source": "011011011111",
+          "source_depth": 12,
+          "target": "011011111",
+          "target_depth": 9,
+          "valuation_e": 15
+        },
+        {
+          "periodic_prefix_fraction": 0.9375,
+          "periodic_prefix_len": 15,
+          "phase_t": 0,
+          "phase_word": "011011101111",
+          "source": "011011101111",
+          "source_depth": 12,
+          "target": "0110111011110111",
+          "target_depth": 16,
+          "valuation_e": 15
+        }
+      ],
+      "valuation_histogram": {
+        "0": 1510621,
+        "1": 387856,
+        "10": 1906,
+        "11": 1402,
+        "12": 781,
+        "13": 220,
+        "14": 69,
+        "15": 17,
+        "16": 1,
+        "2": 116547,
+        "3": 45287,
+        "4": 30544,
+        "5": 18263,
+        "6": 11663,
+        "7": 7227,
+        "8": 4608,
+        "9": 3148
+      },
+      "zero_separation_skips": 160
+    },
+    "18": {
+      "avg_valuation_e": 0.527555635,
+      "max_valuation_e": 17,
+      "source_phase_target_pairs": 7293735,
+      "tail_comparison": [
+        {
+          "count": 34051,
+          "digest": {
+            "by_phase_t": {
+              "0": 22034,
+              "1": 6760,
+              "2": 2442,
+              "3": 1194,
+              "4": 1038,
+              "5": 491,
+              "6": 77,
+              "7": 15
+            },
+            "by_source_depth": {
+              "10": 3143,
+              "11": 11986,
+              "12": 15430,
+              "3": 40,
+              "4": 34,
+              "5": 14,
+              "6": 118,
+              "7": 220,
+              "8": 409,
+              "9": 2657
+            },
+            "by_target_depth": {
+              "1": 26,
+              "10": 254,
+              "11": 482,
+              "12": 665,
+              "13": 1031,
+              "14": 2055,
+              "15": 2996,
+              "16": 4189,
+              "17": 8922,
+              "18": 12977,
+              "3": 9,
+              "4": 22,
+              "5": 23,
+              "6": 34,
+              "7": 57,
+              "8": 98,
+              "9": 211
+            },
+            "periodic_prefix_ge_75pct": 3421,
+            "periodic_prefix_ge_90pct": 1081,
+            "samples": [
+              {
+                "periodic_prefix_fraction": 0.9,
+                "periodic_prefix_len": 9,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110111",
+                "target_depth": 10,
+                "valuation_e": 9
+              },
+              {
+                "periodic_prefix_fraction": 0.818182,
+                "periodic_prefix_len": 9,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "01101101111",
+                "target_depth": 11,
+                "valuation_e": 9
+              },
+              {
+                "periodic_prefix_fraction": 0.75,
+                "periodic_prefix_len": 9,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "011011011111",
+                "target_depth": 12,
+                "valuation_e": 9
+              },
+              {
+                "periodic_prefix_fraction": 0.923077,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110110111",
+                "target_depth": 13,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.692308,
+                "periodic_prefix_len": 9,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110111111",
+                "target_depth": 13,
+                "valuation_e": 9
+              },
+              {
+                "periodic_prefix_fraction": 0.857143,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "01101101101111",
+                "target_depth": 14,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.642857,
+                "periodic_prefix_len": 9,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "01101101110111",
+                "target_depth": 14,
+                "valuation_e": 9
+              },
+              {
+                "periodic_prefix_fraction": 0.642857,
+                "periodic_prefix_len": 9,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "01101101111111",
+                "target_depth": 14,
+                "valuation_e": 9
+              },
+              {
+                "periodic_prefix_fraction": 0.8,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "011011011011111",
+                "target_depth": 15,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.6,
+                "periodic_prefix_len": 9,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "011011011101111",
+                "target_depth": 15,
+                "valuation_e": 9
+              },
+              {
+                "periodic_prefix_fraction": 0.6,
+                "periodic_prefix_len": 9,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "011011011110111",
+                "target_depth": 15,
+                "valuation_e": 9
+              },
+              {
+                "periodic_prefix_fraction": 0.6,
+                "periodic_prefix_len": 9,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "011011011111111",
+                "target_depth": 15,
+                "valuation_e": 9
+              },
+              {
+                "periodic_prefix_fraction": 0.9375,
+                "periodic_prefix_len": 15,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110110110111",
+                "target_depth": 16,
+                "valuation_e": 15
+              },
+              {
+                "periodic_prefix_fraction": 0.75,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110110111111",
+                "target_depth": 16,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.5625,
+                "periodic_prefix_len": 9,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110111011111",
+                "target_depth": 16,
+                "valuation_e": 9
+              },
+              {
+                "periodic_prefix_fraction": 0.5625,
+                "periodic_prefix_len": 9,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110111101111",
+                "target_depth": 16,
+                "valuation_e": 9
+              }
+            ]
+          },
+          "fraction": 0.004668527167494,
+          "geometric_expected_count": 28491.152344,
+          "observed_over_geometric": 1.195143,
+          "threshold_e_ge": 8
+        },
+        {
+          "count": 12496,
+          "digest": {
+            "by_phase_t": {
+              "0": 8671,
+              "1": 2624,
+              "2": 851,
+              "3": 171,
+              "4": 98,
+              "5": 81
+            },
+            "by_source_depth": {
+              "10": 1277,
+              "11": 4548,
+              "12": 5979,
+              "3": 12,
+              "4": 9,
+              "5": 14,
+              "6": 53,
+              "7": 45,
+              "8": 49,
+              "9": 510
+            },
+            "by_target_depth": {
+              "1": 4,
+              "10": 90,
+              "11": 150,
+              "12": 209,
+              "13": 386,
+              "14": 751,
+              "15": 1115,
+              "16": 1582,
+              "17": 3262,
+              "18": 4838,
+              "3": 1,
+              "4": 5,
+              "5": 6,
+              "6": 8,
+              "7": 18,
+              "8": 22,
+              "9": 49
+            },
+            "periodic_prefix_ge_75pct": 2575,
+            "periodic_prefix_ge_90pct": 714,
+            "samples": [
+              {
+                "periodic_prefix_fraction": 0.923077,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110110111",
+                "target_depth": 13,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.857143,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "01101101101111",
+                "target_depth": 14,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.8,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "011011011011111",
+                "target_depth": 15,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.9375,
+                "periodic_prefix_len": 15,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110110110111",
+                "target_depth": 16,
+                "valuation_e": 15
+              },
+              {
+                "periodic_prefix_fraction": 0.75,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110110111111",
+                "target_depth": 16,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.882353,
+                "periodic_prefix_len": 15,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "01101101101101111",
+                "target_depth": 17,
+                "valuation_e": 15
+              },
+              {
+                "periodic_prefix_fraction": 0.705882,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "01101101101110111",
+                "target_depth": 17,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.705882,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "01101101101111111",
+                "target_depth": 17,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.833333,
+                "periodic_prefix_len": 15,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "011011011011011111",
+                "target_depth": 18,
+                "valuation_e": 15
+              },
+              {
+                "periodic_prefix_fraction": 0.666667,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "011011011011101111",
+                "target_depth": 18,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.666667,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "011011011011110111",
+                "target_depth": 18,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.666667,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "011011011011111111",
+                "target_depth": 18,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.923077,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "0111",
+                "source": "0111",
+                "source_depth": 4,
+                "target": "0111011101111",
+                "target_depth": 13,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.857143,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "0111",
+                "source": "0111",
+                "source_depth": 4,
+                "target": "01110111011111",
+                "target_depth": 14,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.8,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "0111",
+                "source": "0111",
+                "source_depth": 4,
+                "target": "011101110111111",
+                "target_depth": 15,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.75,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "0111",
+                "source": "0111",
+                "source_depth": 4,
+                "target": "0111011101111111",
+                "target_depth": 16,
+                "valuation_e": 12
+              }
+            ]
+          },
+          "fraction": 0.001713251166926,
+          "geometric_expected_count": 7122.788086,
+          "observed_over_geometric": 1.754369,
+          "threshold_e_ge": 10
+        },
+        {
+          "count": 3302,
+          "digest": {
+            "by_phase_t": {
+              "0": 2753,
+              "1": 354,
+              "2": 133,
+              "3": 27,
+              "4": 10,
+              "5": 25
+            },
+            "by_source_depth": {
+              "10": 135,
+              "11": 748,
+              "12": 2241,
+              "3": 12,
+              "4": 9,
+              "5": 3,
+              "6": 53,
+              "7": 27,
+              "8": 9,
+              "9": 65
+            },
+            "by_target_depth": {
+              "10": 18,
+              "11": 21,
+              "13": 99,
+              "14": 200,
+              "15": 304,
+              "16": 425,
+              "17": 890,
+              "18": 1324,
+              "5": 1,
+              "7": 5,
+              "8": 6,
+              "9": 9
+            },
+            "periodic_prefix_ge_75pct": 1554,
+            "periodic_prefix_ge_90pct": 320,
+            "samples": [
+              {
+                "periodic_prefix_fraction": 0.923077,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110110111",
+                "target_depth": 13,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.857143,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "01101101101111",
+                "target_depth": 14,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.8,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "011011011011111",
+                "target_depth": 15,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.9375,
+                "periodic_prefix_len": 15,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110110110111",
+                "target_depth": 16,
+                "valuation_e": 15
+              },
+              {
+                "periodic_prefix_fraction": 0.75,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110110111111",
+                "target_depth": 16,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.882353,
+                "periodic_prefix_len": 15,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "01101101101101111",
+                "target_depth": 17,
+                "valuation_e": 15
+              },
+              {
+                "periodic_prefix_fraction": 0.705882,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "01101101101110111",
+                "target_depth": 17,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.705882,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "01101101101111111",
+                "target_depth": 17,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.833333,
+                "periodic_prefix_len": 15,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "011011011011011111",
+                "target_depth": 18,
+                "valuation_e": 15
+              },
+              {
+                "periodic_prefix_fraction": 0.666667,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "011011011011101111",
+                "target_depth": 18,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.666667,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "011011011011110111",
+                "target_depth": 18,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.666667,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "011011011011111111",
+                "target_depth": 18,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.923077,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "0111",
+                "source": "0111",
+                "source_depth": 4,
+                "target": "0111011101111",
+                "target_depth": 13,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.857143,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "0111",
+                "source": "0111",
+                "source_depth": 4,
+                "target": "01110111011111",
+                "target_depth": 14,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.8,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "0111",
+                "source": "0111",
+                "source_depth": 4,
+                "target": "011101110111111",
+                "target_depth": 15,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.75,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "0111",
+                "source": "0111",
+                "source_depth": 4,
+                "target": "0111011101111111",
+                "target_depth": 16,
+                "valuation_e": 12
+              }
+            ]
+          },
+          "fraction": 0.000452717297791,
+          "geometric_expected_count": 1780.697021,
+          "observed_over_geometric": 1.85433,
+          "threshold_e_ge": 12
+        },
+        {
+          "count": 368,
+          "digest": {
+            "by_phase_t": {
+              "0": 346,
+              "1": 1,
+              "2": 17,
+              "3": 4
+            },
+            "by_source_depth": {
+              "10": 31,
+              "11": 84,
+              "12": 183,
+              "3": 3,
+              "4": 2,
+              "5": 3,
+              "6": 5,
+              "7": 27,
+              "8": 9,
+              "9": 21
+            },
+            "by_target_depth": {
+              "10": 5,
+              "11": 1,
+              "15": 31,
+              "16": 47,
+              "17": 115,
+              "18": 166,
+              "8": 1,
+              "9": 2
+            },
+            "periodic_prefix_ge_75pct": 368,
+            "periodic_prefix_ge_90pct": 107,
+            "samples": [
+              {
+                "periodic_prefix_fraction": 0.9375,
+                "periodic_prefix_len": 15,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110110110111",
+                "target_depth": 16,
+                "valuation_e": 15
+              },
+              {
+                "periodic_prefix_fraction": 0.882353,
+                "periodic_prefix_len": 15,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "01101101101101111",
+                "target_depth": 17,
+                "valuation_e": 15
+              },
+              {
+                "periodic_prefix_fraction": 0.833333,
+                "periodic_prefix_len": 15,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "011011011011011111",
+                "target_depth": 18,
+                "valuation_e": 15
+              },
+              {
+                "periodic_prefix_fraction": 0.941176,
+                "periodic_prefix_len": 16,
+                "phase_t": 0,
+                "phase_word": "0111",
+                "source": "0111",
+                "source_depth": 4,
+                "target": "01110111011101111",
+                "target_depth": 17,
+                "valuation_e": 16
+              },
+              {
+                "periodic_prefix_fraction": 0.888889,
+                "periodic_prefix_len": 16,
+                "phase_t": 0,
+                "phase_word": "0111",
+                "source": "0111",
+                "source_depth": 4,
+                "target": "011101110111011111",
+                "target_depth": 18,
+                "valuation_e": 16
+              },
+              {
+                "periodic_prefix_fraction": 0.9375,
+                "periodic_prefix_len": 15,
+                "phase_t": 0,
+                "phase_word": "01111",
+                "source": "01111",
+                "source_depth": 5,
+                "target": "0111101111011111",
+                "target_depth": 16,
+                "valuation_e": 15
+              },
+              {
+                "periodic_prefix_fraction": 0.882353,
+                "periodic_prefix_len": 15,
+                "phase_t": 0,
+                "phase_word": "01111",
+                "source": "01111",
+                "source_depth": 5,
+                "target": "01111011110111111",
+                "target_depth": 17,
+                "valuation_e": 15
+              },
+              {
+                "periodic_prefix_fraction": 0.833333,
+                "periodic_prefix_len": 15,
+                "phase_t": 0,
+                "phase_word": "01111",
+                "source": "01111",
+                "source_depth": 5,
+                "target": "011110111101111111",
+                "target_depth": 18,
+                "valuation_e": 15
+              },
+              {
+                "periodic_prefix_fraction": 0.933333,
+                "periodic_prefix_len": 14,
+                "phase_t": 0,
+                "phase_word": "010111",
+                "source": "010111",
+                "source_depth": 6,
+                "target": "010111010111011",
+                "target_depth": 15,
+                "valuation_e": 14
+              },
+              {
+                "periodic_prefix_fraction": 0.875,
+                "periodic_prefix_len": 14,
+                "phase_t": 0,
+                "phase_word": "010111",
+                "source": "010111",
+                "source_depth": 6,
+                "target": "0101110101110111",
+                "target_depth": 16,
+                "valuation_e": 14
+              },
+              {
+                "periodic_prefix_fraction": 0.823529,
+                "periodic_prefix_len": 14,
+                "phase_t": 0,
+                "phase_word": "010111",
+                "source": "010111",
+                "source_depth": 6,
+                "target": "01011101011101111",
+                "target_depth": 17,
+                "valuation_e": 14
+              },
+              {
+                "periodic_prefix_fraction": 0.777778,
+                "periodic_prefix_len": 14,
+                "phase_t": 0,
+                "phase_word": "010111",
+                "source": "010111",
+                "source_depth": 6,
+                "target": "010111010111011011",
+                "target_depth": 18,
+                "valuation_e": 14
+              },
+              {
+                "periodic_prefix_fraction": 0.777778,
+                "periodic_prefix_len": 14,
+                "phase_t": 0,
+                "phase_word": "010111",
+                "source": "010111",
+                "source_depth": 6,
+                "target": "010111010111011111",
+                "target_depth": 18,
+                "valuation_e": 14
+              },
+              {
+                "periodic_prefix_fraction": 0.933333,
+                "periodic_prefix_len": 14,
+                "phase_t": 0,
+                "phase_word": "0011111",
+                "source": "0011111",
+                "source_depth": 7,
+                "target": "001111100111111",
+                "target_depth": 15,
+                "valuation_e": 14
+              },
+              {
+                "periodic_prefix_fraction": 0.9375,
+                "periodic_prefix_len": 15,
+                "phase_t": 0,
+                "phase_word": "0011111",
+                "source": "0011111",
+                "source_depth": 7,
+                "target": "0011111001111101",
+                "target_depth": 16,
+                "valuation_e": 15
+              },
+              {
+                "periodic_prefix_fraction": 0.875,
+                "periodic_prefix_len": 14,
+                "phase_t": 0,
+                "phase_word": "0011111",
+                "source": "0011111",
+                "source_depth": 7,
+                "target": "0011111001111111",
+                "target_depth": 16,
+                "valuation_e": 14
+              }
+            ]
+          },
+          "fraction": 5.0454259717e-05,
+          "geometric_expected_count": 445.174255,
+          "observed_over_geometric": 0.826643,
+          "threshold_e_ge": 14
+        },
+        {
+          "count": 85,
+          "digest": {
+            "by_phase_t": {
+              "0": 84,
+              "2": 1
+            },
+            "by_source_depth": {
+              "10": 8,
+              "11": 23,
+              "12": 38,
+              "4": 2,
+              "7": 3,
+              "8": 9,
+              "9": 2
+            },
+            "by_target_depth": {
+              "10": 1,
+              "17": 32,
+              "18": 52
+            },
+            "periodic_prefix_ge_75pct": 85,
+            "periodic_prefix_ge_90pct": 53,
+            "samples": [
+              {
+                "periodic_prefix_fraction": 0.941176,
+                "periodic_prefix_len": 16,
+                "phase_t": 0,
+                "phase_word": "0111",
+                "source": "0111",
+                "source_depth": 4,
+                "target": "01110111011101111",
+                "target_depth": 17,
+                "valuation_e": 16
+              },
+              {
+                "periodic_prefix_fraction": 0.888889,
+                "periodic_prefix_len": 16,
+                "phase_t": 0,
+                "phase_word": "0111",
+                "source": "0111",
+                "source_depth": 4,
+                "target": "011101110111011111",
+                "target_depth": 18,
+                "valuation_e": 16
+              },
+              {
+                "periodic_prefix_fraction": 0.941176,
+                "periodic_prefix_len": 16,
+                "phase_t": 0,
+                "phase_word": "0101111",
+                "source": "0101111",
+                "source_depth": 7,
+                "target": "01011110101111011",
+                "target_depth": 17,
+                "valuation_e": 16
+              },
+              {
+                "periodic_prefix_fraction": 0.888889,
+                "periodic_prefix_len": 16,
+                "phase_t": 0,
+                "phase_word": "0101111",
+                "source": "0101111",
+                "source_depth": 7,
+                "target": "010111101011110111",
+                "target_depth": 18,
+                "valuation_e": 16
+              },
+              {
+                "periodic_prefix_fraction": 0.944444,
+                "periodic_prefix_len": 17,
+                "phase_t": 0,
+                "phase_word": "0110111",
+                "source": "0110111",
+                "source_depth": 7,
+                "target": "011011101101110111",
+                "target_depth": 18,
+                "valuation_e": 17
+              },
+              {
+                "periodic_prefix_fraction": 0.941176,
+                "periodic_prefix_len": 16,
+                "phase_t": 0,
+                "phase_word": "00111111",
+                "source": "00111111",
+                "source_depth": 8,
+                "target": "00111111001111111",
+                "target_depth": 17,
+                "valuation_e": 16
+              },
+              {
+                "periodic_prefix_fraction": 0.944444,
+                "periodic_prefix_len": 17,
+                "phase_t": 0,
+                "phase_word": "00111111",
+                "source": "00111111",
+                "source_depth": 8,
+                "target": "001111110011111101",
+                "target_depth": 18,
+                "valuation_e": 17
+              },
+              {
+                "periodic_prefix_fraction": 0.888889,
+                "periodic_prefix_len": 16,
+                "phase_t": 0,
+                "phase_word": "00111111",
+                "source": "00111111",
+                "source_depth": 8,
+                "target": "001111110011111111",
+                "target_depth": 18,
+                "valuation_e": 16
+              },
+              {
+                "periodic_prefix_fraction": 0.941176,
+                "periodic_prefix_len": 16,
+                "phase_t": 0,
+                "phase_word": "01011111",
+                "source": "01011111",
+                "source_depth": 8,
+                "target": "01011111010111111",
+                "target_depth": 17,
+                "valuation_e": 16
+              },
+              {
+                "periodic_prefix_fraction": 0.888889,
+                "periodic_prefix_len": 16,
+                "phase_t": 0,
+                "phase_word": "01011111",
+                "source": "01011111",
+                "source_depth": 8,
+                "target": "010111110101111111",
+                "target_depth": 18,
+                "valuation_e": 16
+              },
+              {
+                "periodic_prefix_fraction": 0.941176,
+                "periodic_prefix_len": 16,
+                "phase_t": 0,
+                "phase_word": "01101111",
+                "source": "01101111",
+                "source_depth": 8,
+                "target": "01101111011011111",
+                "target_depth": 17,
+                "valuation_e": 16
+              },
+              {
+                "periodic_prefix_fraction": 0.888889,
+                "periodic_prefix_len": 16,
+                "phase_t": 0,
+                "phase_word": "01101111",
+                "source": "01101111",
+                "source_depth": 8,
+                "target": "011011110110111111",
+                "target_depth": 18,
+                "valuation_e": 16
+              },
+              {
+                "periodic_prefix_fraction": 0.941176,
+                "periodic_prefix_len": 16,
+                "phase_t": 0,
+                "phase_word": "01111111",
+                "source": "01111111",
+                "source_depth": 8,
+                "target": "01111111011111111",
+                "target_depth": 17,
+                "valuation_e": 16
+              },
+              {
+                "periodic_prefix_fraction": 0.888889,
+                "periodic_prefix_len": 16,
+                "phase_t": 0,
+                "phase_word": "01111111",
+                "source": "01111111",
+                "source_depth": 8,
+                "target": "011111110111111111",
+                "target_depth": 18,
+                "valuation_e": 16
+              },
+              {
+                "periodic_prefix_fraction": 0.941176,
+                "periodic_prefix_len": 16,
+                "phase_t": 0,
+                "phase_word": "001111101",
+                "source": "001111101",
+                "source_depth": 9,
+                "target": "00111110100111111",
+                "target_depth": 17,
+                "valuation_e": 16
+              },
+              {
+                "periodic_prefix_fraction": 0.888889,
+                "periodic_prefix_len": 16,
+                "phase_t": 0,
+                "phase_word": "001111101",
+                "source": "001111101",
+                "source_depth": 9,
+                "target": "001111101001111111",
+                "target_depth": 18,
+                "valuation_e": 16
+              }
+            ]
+          },
+          "fraction": 1.1653837163e-05,
+          "geometric_expected_count": 111.293564,
+          "observed_over_geometric": 0.763746,
+          "threshold_e_ge": 16
+        },
+        {
+          "count": 0,
+          "digest": {
+            "by_phase_t": {},
+            "by_source_depth": {},
+            "by_target_depth": {},
+            "periodic_prefix_ge_75pct": 0,
+            "periodic_prefix_ge_90pct": 0,
+            "samples": []
+          },
+          "fraction": 0.0,
+          "geometric_expected_count": 27.823391,
+          "observed_over_geometric": 0.0,
+          "threshold_e_ge": 18
+        },
+        {
+          "count": 0,
+          "digest": {
+            "by_phase_t": {},
+            "by_source_depth": {},
+            "by_target_depth": {},
+            "periodic_prefix_ge_75pct": 0,
+            "periodic_prefix_ge_90pct": 0,
+            "samples": []
+          },
+          "fraction": 0.0,
+          "geometric_expected_count": 6.955848,
+          "observed_over_geometric": 0.0,
+          "threshold_e_ge": 20
+        },
+        {
+          "count": 0,
+          "digest": {
+            "by_phase_t": {},
+            "by_source_depth": {},
+            "by_target_depth": {},
+            "periodic_prefix_ge_75pct": 0,
+            "periodic_prefix_ge_90pct": 0,
+            "samples": []
+          },
+          "fraction": 0.0,
+          "geometric_expected_count": 1.738962,
+          "observed_over_geometric": 0.0,
+          "threshold_e_ge": 22
+        },
+        {
+          "count": 0,
+          "digest": {
+            "by_phase_t": {},
+            "by_source_depth": {},
+            "by_target_depth": {},
+            "periodic_prefix_ge_75pct": 0,
+            "periodic_prefix_ge_90pct": 0,
+            "samples": []
+          },
+          "fraction": 0.0,
+          "geometric_expected_count": 0.43474,
+          "observed_over_geometric": 0.0,
+          "threshold_e_ge": 24
+        }
+      ],
+      "target_spines": 4253,
+      "top_witnesses": [
+        {
+          "periodic_prefix_fraction": 0.944444,
+          "periodic_prefix_len": 17,
+          "phase_t": 0,
+          "phase_word": "0110111",
+          "source": "0110111",
+          "source_depth": 7,
+          "target": "011011101101110111",
+          "target_depth": 18,
+          "valuation_e": 17
+        },
+        {
+          "periodic_prefix_fraction": 0.944444,
+          "periodic_prefix_len": 17,
+          "phase_t": 0,
+          "phase_word": "00111111",
+          "source": "00111111",
+          "source_depth": 8,
+          "target": "001111110011111101",
+          "target_depth": 18,
+          "valuation_e": 17
+        },
+        {
+          "periodic_prefix_fraction": 0.944444,
+          "periodic_prefix_len": 17,
+          "phase_t": 0,
+          "phase_word": "0011111011",
+          "source": "0011111011",
+          "source_depth": 10,
+          "target": "001111101100111111",
+          "target_depth": 18,
+          "valuation_e": 17
+        },
+        {
+          "periodic_prefix_fraction": 0.944444,
+          "periodic_prefix_len": 17,
+          "phase_t": 0,
+          "phase_word": "0101111011",
+          "source": "0101111011",
+          "source_depth": 10,
+          "target": "010111101101011111",
+          "target_depth": 18,
+          "valuation_e": 17
+        },
+        {
+          "periodic_prefix_fraction": 0.944444,
+          "periodic_prefix_len": 17,
+          "phase_t": 0,
+          "phase_word": "00111101011",
+          "source": "00111101011",
+          "source_depth": 11,
+          "target": "001111010110011111",
+          "target_depth": 18,
+          "valuation_e": 17
+        },
+        {
+          "periodic_prefix_fraction": 0.944444,
+          "periodic_prefix_len": 17,
+          "phase_t": 0,
+          "phase_word": "00111101101",
+          "source": "00111101101",
+          "source_depth": 11,
+          "target": "001111011010011111",
+          "target_depth": 18,
+          "valuation_e": 17
+        },
+        {
+          "periodic_prefix_fraction": 0.944444,
+          "periodic_prefix_len": 17,
+          "phase_t": 0,
+          "phase_word": "00111101111",
+          "source": "00111101111",
+          "source_depth": 11,
+          "target": "001111011110011111",
+          "target_depth": 18,
+          "valuation_e": 17
+        },
+        {
+          "periodic_prefix_fraction": 0.944444,
+          "periodic_prefix_len": 17,
+          "phase_t": 0,
+          "phase_word": "01011101111",
+          "source": "01011101111",
+          "source_depth": 11,
+          "target": "010111011110101111",
+          "target_depth": 18,
+          "valuation_e": 17
+        },
+        {
+          "periodic_prefix_fraction": 0.944444,
+          "periodic_prefix_len": 17,
+          "phase_t": 0,
+          "phase_word": "01101101111",
+          "source": "01101101111",
+          "source_depth": 11,
+          "target": "011011011110110111",
+          "target_depth": 18,
+          "valuation_e": 17
+        },
+        {
+          "periodic_prefix_fraction": 0.944444,
+          "periodic_prefix_len": 17,
+          "phase_t": 0,
+          "phase_word": "001110011111",
+          "source": "001110011111",
+          "source_depth": 12,
+          "target": "001110011111001111",
+          "target_depth": 18,
+          "valuation_e": 17
+        },
+        {
+          "periodic_prefix_fraction": 0.944444,
+          "periodic_prefix_len": 17,
+          "phase_t": 0,
+          "phase_word": "001110101111",
+          "source": "001110101111",
+          "source_depth": 12,
+          "target": "001110101111001111",
+          "target_depth": 18,
+          "valuation_e": 17
+        },
+        {
+          "periodic_prefix_fraction": 0.944444,
+          "periodic_prefix_len": 17,
+          "phase_t": 0,
+          "phase_word": "001110110111",
+          "source": "001110110111",
+          "source_depth": 12,
+          "target": "001110110111001111",
+          "target_depth": 18,
+          "valuation_e": 17
+        },
+        {
+          "periodic_prefix_fraction": 0.944444,
+          "periodic_prefix_len": 17,
+          "phase_t": 0,
+          "phase_word": "001110111011",
+          "source": "001110111011",
+          "source_depth": 12,
+          "target": "001110111011001111",
+          "target_depth": 18,
+          "valuation_e": 17
+        },
+        {
+          "periodic_prefix_fraction": 0.944444,
+          "periodic_prefix_len": 17,
+          "phase_t": 0,
+          "phase_word": "001110111101",
+          "source": "001110111101",
+          "source_depth": 12,
+          "target": "001110111101001111",
+          "target_depth": 18,
+          "valuation_e": 17
+        },
+        {
+          "periodic_prefix_fraction": 0.944444,
+          "periodic_prefix_len": 17,
+          "phase_t": 0,
+          "phase_word": "001110111111",
+          "source": "001110111111",
+          "source_depth": 12,
+          "target": "001110111111001111",
+          "target_depth": 18,
+          "valuation_e": 17
+        },
+        {
+          "periodic_prefix_fraction": 0.944444,
+          "periodic_prefix_len": 17,
+          "phase_t": 0,
+          "phase_word": "010110101111",
+          "source": "010110101111",
+          "source_depth": 12,
+          "target": "010110101111010111",
+          "target_depth": 18,
+          "valuation_e": 17
+        }
+      ],
+      "valuation_histogram": {
+        "0": 5149676,
+        "1": 1413273,
+        "10": 5304,
+        "11": 3890,
+        "12": 2265,
+        "13": 669,
+        "14": 201,
+        "15": 82,
+        "16": 65,
+        "17": 20,
+        "2": 354620,
+        "3": 141501,
+        "4": 93959,
+        "5": 53428,
+        "6": 32889,
+        "7": 20338,
+        "8": 12967,
+        "9": 8588
+      },
+      "zero_separation_skips": 160
+    },
+    "20": {
+      "avg_valuation_e": 0.495759967,
+      "max_valuation_e": 19,
+      "source_phase_target_pairs": 27611340,
+      "tail_comparison": [
+        {
+          "count": 101294,
+          "digest": {
+            "by_phase_t": {
+              "0": 70879,
+              "1": 18583,
+              "2": 5507,
+              "3": 2640,
+              "4": 2337,
+              "5": 1173,
+              "6": 149,
+              "7": 26
+            },
+            "by_source_depth": {
+              "10": 8750,
+              "11": 36736,
+              "12": 46161,
+              "3": 86,
+              "4": 64,
+              "5": 25,
+              "6": 294,
+              "7": 576,
+              "8": 982,
+              "9": 7620
+            },
+            "by_target_depth": {
+              "1": 26,
+              "10": 254,
+              "11": 482,
+              "12": 665,
+              "13": 1031,
+              "14": 2055,
+              "15": 2996,
+              "16": 4189,
+              "17": 8922,
+              "18": 12977,
+              "19": 26784,
+              "20": 40459,
+              "3": 9,
+              "4": 22,
+              "5": 23,
+              "6": 34,
+              "7": 57,
+              "8": 98,
+              "9": 211
+            },
+            "periodic_prefix_ge_75pct": 3915,
+            "periodic_prefix_ge_90pct": 1194,
+            "samples": [
+              {
+                "periodic_prefix_fraction": 0.9,
+                "periodic_prefix_len": 9,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110111",
+                "target_depth": 10,
+                "valuation_e": 9
+              },
+              {
+                "periodic_prefix_fraction": 0.818182,
+                "periodic_prefix_len": 9,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "01101101111",
+                "target_depth": 11,
+                "valuation_e": 9
+              },
+              {
+                "periodic_prefix_fraction": 0.75,
+                "periodic_prefix_len": 9,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "011011011111",
+                "target_depth": 12,
+                "valuation_e": 9
+              },
+              {
+                "periodic_prefix_fraction": 0.923077,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110110111",
+                "target_depth": 13,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.692308,
+                "periodic_prefix_len": 9,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110111111",
+                "target_depth": 13,
+                "valuation_e": 9
+              },
+              {
+                "periodic_prefix_fraction": 0.857143,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "01101101101111",
+                "target_depth": 14,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.642857,
+                "periodic_prefix_len": 9,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "01101101110111",
+                "target_depth": 14,
+                "valuation_e": 9
+              },
+              {
+                "periodic_prefix_fraction": 0.642857,
+                "periodic_prefix_len": 9,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "01101101111111",
+                "target_depth": 14,
+                "valuation_e": 9
+              },
+              {
+                "periodic_prefix_fraction": 0.8,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "011011011011111",
+                "target_depth": 15,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.6,
+                "periodic_prefix_len": 9,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "011011011101111",
+                "target_depth": 15,
+                "valuation_e": 9
+              },
+              {
+                "periodic_prefix_fraction": 0.6,
+                "periodic_prefix_len": 9,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "011011011110111",
+                "target_depth": 15,
+                "valuation_e": 9
+              },
+              {
+                "periodic_prefix_fraction": 0.6,
+                "periodic_prefix_len": 9,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "011011011111111",
+                "target_depth": 15,
+                "valuation_e": 9
+              },
+              {
+                "periodic_prefix_fraction": 0.9375,
+                "periodic_prefix_len": 15,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110110110111",
+                "target_depth": 16,
+                "valuation_e": 15
+              },
+              {
+                "periodic_prefix_fraction": 0.75,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110110111111",
+                "target_depth": 16,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.5625,
+                "periodic_prefix_len": 9,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110111011111",
+                "target_depth": 16,
+                "valuation_e": 9
+              },
+              {
+                "periodic_prefix_fraction": 0.5625,
+                "periodic_prefix_len": 9,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110111101111",
+                "target_depth": 16,
+                "valuation_e": 9
+              }
+            ]
+          },
+          "fraction": 0.003668565161995,
+          "geometric_expected_count": 107856.796875,
+          "observed_over_geometric": 0.939153,
+          "threshold_e_ge": 8
+        },
+        {
+          "count": 37060,
+          "digest": {
+            "by_phase_t": {
+              "0": 27353,
+              "1": 7006,
+              "2": 1897,
+              "3": 392,
+              "4": 210,
+              "5": 202
+            },
+            "by_source_depth": {
+              "10": 3453,
+              "11": 13916,
+              "12": 17675,
+              "3": 27,
+              "4": 18,
+              "5": 25,
+              "6": 141,
+              "7": 105,
+              "8": 112,
+              "9": 1588
+            },
+            "by_target_depth": {
+              "1": 4,
+              "10": 90,
+              "11": 150,
+              "12": 209,
+              "13": 386,
+              "14": 751,
+              "15": 1115,
+              "16": 1582,
+              "17": 3262,
+              "18": 4838,
+              "19": 9672,
+              "20": 14892,
+              "3": 1,
+              "4": 5,
+              "5": 6,
+              "6": 8,
+              "7": 18,
+              "8": 22,
+              "9": 49
+            },
+            "periodic_prefix_ge_75pct": 3069,
+            "periodic_prefix_ge_90pct": 827,
+            "samples": [
+              {
+                "periodic_prefix_fraction": 0.923077,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110110111",
+                "target_depth": 13,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.857143,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "01101101101111",
+                "target_depth": 14,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.8,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "011011011011111",
+                "target_depth": 15,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.9375,
+                "periodic_prefix_len": 15,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110110110111",
+                "target_depth": 16,
+                "valuation_e": 15
+              },
+              {
+                "periodic_prefix_fraction": 0.75,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110110111111",
+                "target_depth": 16,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.882353,
+                "periodic_prefix_len": 15,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "01101101101101111",
+                "target_depth": 17,
+                "valuation_e": 15
+              },
+              {
+                "periodic_prefix_fraction": 0.705882,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "01101101101110111",
+                "target_depth": 17,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.705882,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "01101101101111111",
+                "target_depth": 17,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.833333,
+                "periodic_prefix_len": 15,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "011011011011011111",
+                "target_depth": 18,
+                "valuation_e": 15
+              },
+              {
+                "periodic_prefix_fraction": 0.666667,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "011011011011101111",
+                "target_depth": 18,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.666667,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "011011011011110111",
+                "target_depth": 18,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.666667,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "011011011011111111",
+                "target_depth": 18,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.947368,
+                "periodic_prefix_len": 18,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110110110110111",
+                "target_depth": 19,
+                "valuation_e": 18
+              },
+              {
+                "periodic_prefix_fraction": 0.789474,
+                "periodic_prefix_len": 15,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110110110111111",
+                "target_depth": 19,
+                "valuation_e": 15
+              },
+              {
+                "periodic_prefix_fraction": 0.631579,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110110111011111",
+                "target_depth": 19,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.631579,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110110111101111",
+                "target_depth": 19,
+                "valuation_e": 12
+              }
+            ]
+          },
+          "fraction": 0.001342202153173,
+          "geometric_expected_count": 26964.199219,
+          "observed_over_geometric": 1.374415,
+          "threshold_e_ge": 10
+        },
+        {
+          "count": 10028,
+          "digest": {
+            "by_phase_t": {
+              "0": 8609,
+              "1": 975,
+              "2": 301,
+              "3": 60,
+              "4": 25,
+              "5": 58
+            },
+            "by_source_depth": {
+              "10": 363,
+              "11": 2586,
+              "12": 6570,
+              "3": 27,
+              "4": 18,
+              "5": 5,
+              "6": 141,
+              "7": 67,
+              "8": 27,
+              "9": 224
+            },
+            "by_target_depth": {
+              "10": 18,
+              "11": 21,
+              "13": 99,
+              "14": 200,
+              "15": 304,
+              "16": 425,
+              "17": 890,
+              "18": 1324,
+              "19": 2632,
+              "20": 4094,
+              "5": 1,
+              "7": 5,
+              "8": 6,
+              "9": 9
+            },
+            "periodic_prefix_ge_75pct": 2048,
+            "periodic_prefix_ge_90pct": 433,
+            "samples": [
+              {
+                "periodic_prefix_fraction": 0.923077,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110110111",
+                "target_depth": 13,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.857143,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "01101101101111",
+                "target_depth": 14,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.8,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "011011011011111",
+                "target_depth": 15,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.9375,
+                "periodic_prefix_len": 15,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110110110111",
+                "target_depth": 16,
+                "valuation_e": 15
+              },
+              {
+                "periodic_prefix_fraction": 0.75,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110110111111",
+                "target_depth": 16,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.882353,
+                "periodic_prefix_len": 15,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "01101101101101111",
+                "target_depth": 17,
+                "valuation_e": 15
+              },
+              {
+                "periodic_prefix_fraction": 0.705882,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "01101101101110111",
+                "target_depth": 17,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.705882,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "01101101101111111",
+                "target_depth": 17,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.833333,
+                "periodic_prefix_len": 15,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "011011011011011111",
+                "target_depth": 18,
+                "valuation_e": 15
+              },
+              {
+                "periodic_prefix_fraction": 0.666667,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "011011011011101111",
+                "target_depth": 18,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.666667,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "011011011011110111",
+                "target_depth": 18,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.666667,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "011011011011111111",
+                "target_depth": 18,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.947368,
+                "periodic_prefix_len": 18,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110110110110111",
+                "target_depth": 19,
+                "valuation_e": 18
+              },
+              {
+                "periodic_prefix_fraction": 0.789474,
+                "periodic_prefix_len": 15,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110110110111111",
+                "target_depth": 19,
+                "valuation_e": 15
+              },
+              {
+                "periodic_prefix_fraction": 0.631579,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110110111011111",
+                "target_depth": 19,
+                "valuation_e": 12
+              },
+              {
+                "periodic_prefix_fraction": 0.631579,
+                "periodic_prefix_len": 12,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110110111101111",
+                "target_depth": 19,
+                "valuation_e": 12
+              }
+            ]
+          },
+          "fraction": 0.000363184112035,
+          "geometric_expected_count": 6741.049805,
+          "observed_over_geometric": 1.487602,
+          "threshold_e_ge": 12
+        },
+        {
+          "count": 1249,
+          "digest": {
+            "by_phase_t": {
+              "0": 1202,
+              "1": 1,
+              "2": 37,
+              "3": 9
+            },
+            "by_source_depth": {
+              "10": 86,
+              "11": 339,
+              "12": 600,
+              "3": 8,
+              "4": 4,
+              "5": 5,
+              "6": 19,
+              "7": 67,
+              "8": 27,
+              "9": 94
+            },
+            "by_target_depth": {
+              "10": 5,
+              "11": 1,
+              "15": 31,
+              "16": 47,
+              "17": 115,
+              "18": 166,
+              "19": 357,
+              "20": 524,
+              "8": 1,
+              "9": 2
+            },
+            "periodic_prefix_ge_75pct": 862,
+            "periodic_prefix_ge_90pct": 220,
+            "samples": [
+              {
+                "periodic_prefix_fraction": 0.9375,
+                "periodic_prefix_len": 15,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110110110111",
+                "target_depth": 16,
+                "valuation_e": 15
+              },
+              {
+                "periodic_prefix_fraction": 0.882353,
+                "periodic_prefix_len": 15,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "01101101101101111",
+                "target_depth": 17,
+                "valuation_e": 15
+              },
+              {
+                "periodic_prefix_fraction": 0.833333,
+                "periodic_prefix_len": 15,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "011011011011011111",
+                "target_depth": 18,
+                "valuation_e": 15
+              },
+              {
+                "periodic_prefix_fraction": 0.947368,
+                "periodic_prefix_len": 18,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110110110110111",
+                "target_depth": 19,
+                "valuation_e": 18
+              },
+              {
+                "periodic_prefix_fraction": 0.789474,
+                "periodic_prefix_len": 15,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110110110111111",
+                "target_depth": 19,
+                "valuation_e": 15
+              },
+              {
+                "periodic_prefix_fraction": 0.9,
+                "periodic_prefix_len": 18,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "01101101101101101111",
+                "target_depth": 20,
+                "valuation_e": 18
+              },
+              {
+                "periodic_prefix_fraction": 0.75,
+                "periodic_prefix_len": 15,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "01101101101101110111",
+                "target_depth": 20,
+                "valuation_e": 15
+              },
+              {
+                "periodic_prefix_fraction": 0.75,
+                "periodic_prefix_len": 15,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "01101101101101111111",
+                "target_depth": 20,
+                "valuation_e": 15
+              },
+              {
+                "periodic_prefix_fraction": 0.941176,
+                "periodic_prefix_len": 16,
+                "phase_t": 0,
+                "phase_word": "0111",
+                "source": "0111",
+                "source_depth": 4,
+                "target": "01110111011101111",
+                "target_depth": 17,
+                "valuation_e": 16
+              },
+              {
+                "periodic_prefix_fraction": 0.888889,
+                "periodic_prefix_len": 16,
+                "phase_t": 0,
+                "phase_word": "0111",
+                "source": "0111",
+                "source_depth": 4,
+                "target": "011101110111011111",
+                "target_depth": 18,
+                "valuation_e": 16
+              },
+              {
+                "periodic_prefix_fraction": 0.842105,
+                "periodic_prefix_len": 16,
+                "phase_t": 0,
+                "phase_word": "0111",
+                "source": "0111",
+                "source_depth": 4,
+                "target": "0111011101110111111",
+                "target_depth": 19,
+                "valuation_e": 16
+              },
+              {
+                "periodic_prefix_fraction": 0.8,
+                "periodic_prefix_len": 16,
+                "phase_t": 0,
+                "phase_word": "0111",
+                "source": "0111",
+                "source_depth": 4,
+                "target": "01110111011101111111",
+                "target_depth": 20,
+                "valuation_e": 16
+              },
+              {
+                "periodic_prefix_fraction": 0.9375,
+                "periodic_prefix_len": 15,
+                "phase_t": 0,
+                "phase_word": "01111",
+                "source": "01111",
+                "source_depth": 5,
+                "target": "0111101111011111",
+                "target_depth": 16,
+                "valuation_e": 15
+              },
+              {
+                "periodic_prefix_fraction": 0.882353,
+                "periodic_prefix_len": 15,
+                "phase_t": 0,
+                "phase_word": "01111",
+                "source": "01111",
+                "source_depth": 5,
+                "target": "01111011110111111",
+                "target_depth": 17,
+                "valuation_e": 15
+              },
+              {
+                "periodic_prefix_fraction": 0.833333,
+                "periodic_prefix_len": 15,
+                "phase_t": 0,
+                "phase_word": "01111",
+                "source": "01111",
+                "source_depth": 5,
+                "target": "011110111101111111",
+                "target_depth": 18,
+                "valuation_e": 15
+              },
+              {
+                "periodic_prefix_fraction": 0.789474,
+                "periodic_prefix_len": 15,
+                "phase_t": 0,
+                "phase_word": "01111",
+                "source": "01111",
+                "source_depth": 5,
+                "target": "0111101111011111111",
+                "target_depth": 19,
+                "valuation_e": 15
+              }
+            ]
+          },
+          "fraction": 4.5235037488e-05,
+          "geometric_expected_count": 1685.262451,
+          "observed_over_geometric": 0.741131,
+          "threshold_e_ge": 14
+        },
+        {
+          "count": 395,
+          "digest": {
+            "by_phase_t": {
+              "0": 394,
+              "2": 1
+            },
+            "by_source_depth": {
+              "10": 25,
+              "11": 117,
+              "12": 163,
+              "3": 2,
+              "4": 4,
+              "6": 7,
+              "7": 8,
+              "8": 27,
+              "9": 42
+            },
+            "by_target_depth": {
+              "10": 1,
+              "17": 32,
+              "18": 52,
+              "19": 122,
+              "20": 188
+            },
+            "periodic_prefix_ge_75pct": 395,
+            "periodic_prefix_ge_90pct": 166,
+            "samples": [
+              {
+                "periodic_prefix_fraction": 0.947368,
+                "periodic_prefix_len": 18,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110110110110111",
+                "target_depth": 19,
+                "valuation_e": 18
+              },
+              {
+                "periodic_prefix_fraction": 0.9,
+                "periodic_prefix_len": 18,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "01101101101101101111",
+                "target_depth": 20,
+                "valuation_e": 18
+              },
+              {
+                "periodic_prefix_fraction": 0.941176,
+                "periodic_prefix_len": 16,
+                "phase_t": 0,
+                "phase_word": "0111",
+                "source": "0111",
+                "source_depth": 4,
+                "target": "01110111011101111",
+                "target_depth": 17,
+                "valuation_e": 16
+              },
+              {
+                "periodic_prefix_fraction": 0.888889,
+                "periodic_prefix_len": 16,
+                "phase_t": 0,
+                "phase_word": "0111",
+                "source": "0111",
+                "source_depth": 4,
+                "target": "011101110111011111",
+                "target_depth": 18,
+                "valuation_e": 16
+              },
+              {
+                "periodic_prefix_fraction": 0.842105,
+                "periodic_prefix_len": 16,
+                "phase_t": 0,
+                "phase_word": "0111",
+                "source": "0111",
+                "source_depth": 4,
+                "target": "0111011101110111111",
+                "target_depth": 19,
+                "valuation_e": 16
+              },
+              {
+                "periodic_prefix_fraction": 0.8,
+                "periodic_prefix_len": 16,
+                "phase_t": 0,
+                "phase_word": "0111",
+                "source": "0111",
+                "source_depth": 4,
+                "target": "01110111011101111111",
+                "target_depth": 20,
+                "valuation_e": 16
+              },
+              {
+                "periodic_prefix_fraction": 0.947368,
+                "periodic_prefix_len": 18,
+                "phase_t": 0,
+                "phase_word": "001111",
+                "source": "001111",
+                "source_depth": 6,
+                "target": "0011110011110011111",
+                "target_depth": 19,
+                "valuation_e": 18
+              },
+              {
+                "periodic_prefix_fraction": 0.95,
+                "periodic_prefix_len": 19,
+                "phase_t": 0,
+                "phase_word": "001111",
+                "source": "001111",
+                "source_depth": 6,
+                "target": "00111100111100111101",
+                "target_depth": 20,
+                "valuation_e": 19
+              },
+              {
+                "periodic_prefix_fraction": 0.9,
+                "periodic_prefix_len": 18,
+                "phase_t": 0,
+                "phase_word": "001111",
+                "source": "001111",
+                "source_depth": 6,
+                "target": "00111100111100111111",
+                "target_depth": 20,
+                "valuation_e": 18
+              },
+              {
+                "periodic_prefix_fraction": 0.947368,
+                "periodic_prefix_len": 18,
+                "phase_t": 0,
+                "phase_word": "010111",
+                "source": "010111",
+                "source_depth": 6,
+                "target": "0101110101110101111",
+                "target_depth": 19,
+                "valuation_e": 18
+              },
+              {
+                "periodic_prefix_fraction": 0.9,
+                "periodic_prefix_len": 18,
+                "phase_t": 0,
+                "phase_word": "010111",
+                "source": "010111",
+                "source_depth": 6,
+                "target": "01011101011101011111",
+                "target_depth": 20,
+                "valuation_e": 18
+              },
+              {
+                "periodic_prefix_fraction": 0.947368,
+                "periodic_prefix_len": 18,
+                "phase_t": 0,
+                "phase_word": "011111",
+                "source": "011111",
+                "source_depth": 6,
+                "target": "0111110111110111111",
+                "target_depth": 19,
+                "valuation_e": 18
+              },
+              {
+                "periodic_prefix_fraction": 0.9,
+                "periodic_prefix_len": 18,
+                "phase_t": 0,
+                "phase_word": "011111",
+                "source": "011111",
+                "source_depth": 6,
+                "target": "01111101111101111111",
+                "target_depth": 20,
+                "valuation_e": 18
+              },
+              {
+                "periodic_prefix_fraction": 0.941176,
+                "periodic_prefix_len": 16,
+                "phase_t": 0,
+                "phase_word": "0101111",
+                "source": "0101111",
+                "source_depth": 7,
+                "target": "01011110101111011",
+                "target_depth": 17,
+                "valuation_e": 16
+              },
+              {
+                "periodic_prefix_fraction": 0.888889,
+                "periodic_prefix_len": 16,
+                "phase_t": 0,
+                "phase_word": "0101111",
+                "source": "0101111",
+                "source_depth": 7,
+                "target": "010111101011110111",
+                "target_depth": 18,
+                "valuation_e": 16
+              },
+              {
+                "periodic_prefix_fraction": 0.842105,
+                "periodic_prefix_len": 16,
+                "phase_t": 0,
+                "phase_word": "0101111",
+                "source": "0101111",
+                "source_depth": 7,
+                "target": "0101111010111101111",
+                "target_depth": 19,
+                "valuation_e": 16
+              }
+            ]
+          },
+          "fraction": 1.4305716419e-05,
+          "geometric_expected_count": 421.315613,
+          "observed_over_geometric": 0.937539,
+          "threshold_e_ge": 16
+        },
+        {
+          "count": 113,
+          "digest": {
+            "by_phase_t": {
+              "0": 113
+            },
+            "by_source_depth": {
+              "10": 2,
+              "11": 29,
+              "12": 35,
+              "3": 2,
+              "6": 7,
+              "8": 3,
+              "9": 35
+            },
+            "by_target_depth": {
+              "19": 42,
+              "20": 71
+            },
+            "periodic_prefix_ge_75pct": 113,
+            "periodic_prefix_ge_90pct": 113,
+            "samples": [
+              {
+                "periodic_prefix_fraction": 0.947368,
+                "periodic_prefix_len": 18,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "0110110110110110111",
+                "target_depth": 19,
+                "valuation_e": 18
+              },
+              {
+                "periodic_prefix_fraction": 0.9,
+                "periodic_prefix_len": 18,
+                "phase_t": 0,
+                "phase_word": "011",
+                "source": "011",
+                "source_depth": 3,
+                "target": "01101101101101101111",
+                "target_depth": 20,
+                "valuation_e": 18
+              },
+              {
+                "periodic_prefix_fraction": 0.947368,
+                "periodic_prefix_len": 18,
+                "phase_t": 0,
+                "phase_word": "001111",
+                "source": "001111",
+                "source_depth": 6,
+                "target": "0011110011110011111",
+                "target_depth": 19,
+                "valuation_e": 18
+              },
+              {
+                "periodic_prefix_fraction": 0.95,
+                "periodic_prefix_len": 19,
+                "phase_t": 0,
+                "phase_word": "001111",
+                "source": "001111",
+                "source_depth": 6,
+                "target": "00111100111100111101",
+                "target_depth": 20,
+                "valuation_e": 19
+              },
+              {
+                "periodic_prefix_fraction": 0.9,
+                "periodic_prefix_len": 18,
+                "phase_t": 0,
+                "phase_word": "001111",
+                "source": "001111",
+                "source_depth": 6,
+                "target": "00111100111100111111",
+                "target_depth": 20,
+                "valuation_e": 18
+              },
+              {
+                "periodic_prefix_fraction": 0.947368,
+                "periodic_prefix_len": 18,
+                "phase_t": 0,
+                "phase_word": "010111",
+                "source": "010111",
+                "source_depth": 6,
+                "target": "0101110101110101111",
+                "target_depth": 19,
+                "valuation_e": 18
+              },
+              {
+                "periodic_prefix_fraction": 0.9,
+                "periodic_prefix_len": 18,
+                "phase_t": 0,
+                "phase_word": "010111",
+                "source": "010111",
+                "source_depth": 6,
+                "target": "01011101011101011111",
+                "target_depth": 20,
+                "valuation_e": 18
+              },
+              {
+                "periodic_prefix_fraction": 0.947368,
+                "periodic_prefix_len": 18,
+                "phase_t": 0,
+                "phase_word": "011111",
+                "source": "011111",
+                "source_depth": 6,
+                "target": "0111110111110111111",
+                "target_depth": 19,
+                "valuation_e": 18
+              },
+              {
+                "periodic_prefix_fraction": 0.9,
+                "periodic_prefix_len": 18,
+                "phase_t": 0,
+                "phase_word": "011111",
+                "source": "011111",
+                "source_depth": 6,
+                "target": "01111101111101111111",
+                "target_depth": 20,
+                "valuation_e": 18
+              },
+              {
+                "periodic_prefix_fraction": 0.947368,
+                "periodic_prefix_len": 18,
+                "phase_t": 0,
+                "phase_word": "01011111",
+                "source": "01011111",
+                "source_depth": 8,
+                "target": "0101111101011111011",
+                "target_depth": 19,
+                "valuation_e": 18
+              },
+              {
+                "periodic_prefix_fraction": 0.9,
+                "periodic_prefix_len": 18,
+                "phase_t": 0,
+                "phase_word": "01011111",
+                "source": "01011111",
+                "source_depth": 8,
+                "target": "01011111010111110111",
+                "target_depth": 20,
+                "valuation_e": 18
+              },
+              {
+                "periodic_prefix_fraction": 0.95,
+                "periodic_prefix_len": 19,
+                "phase_t": 0,
+                "phase_word": "01101111",
+                "source": "01101111",
+                "source_depth": 8,
+                "target": "01101111011011110111",
+                "target_depth": 20,
+                "valuation_e": 19
+              },
+              {
+                "periodic_prefix_fraction": 0.947368,
+                "periodic_prefix_len": 18,
+                "phase_t": 0,
+                "phase_word": "000111111",
+                "source": "000111111",
+                "source_depth": 9,
+                "target": "0001111110001111111",
+                "target_depth": 19,
+                "valuation_e": 18
+              },
+              {
+                "periodic_prefix_fraction": 0.95,
+                "periodic_prefix_len": 19,
+                "phase_t": 0,
+                "phase_word": "000111111",
+                "source": "000111111",
+                "source_depth": 9,
+                "target": "00011111100011111101",
+                "target_depth": 20,
+                "valuation_e": 19
+              },
+              {
+                "periodic_prefix_fraction": 0.9,
+                "periodic_prefix_len": 18,
+                "phase_t": 0,
+                "phase_word": "000111111",
+                "source": "000111111",
+                "source_depth": 9,
+                "target": "00011111100011111111",
+                "target_depth": 20,
+                "valuation_e": 18
+              },
+              {
+                "periodic_prefix_fraction": 0.947368,
+                "periodic_prefix_len": 18,
+                "phase_t": 0,
+                "phase_word": "001011111",
+                "source": "001011111",
+                "source_depth": 9,
+                "target": "0010111110010111111",
+                "target_depth": 19,
+                "valuation_e": 18
+              }
+            ]
+          },
+          "fraction": 4.092521406e-06,
+          "geometric_expected_count": 105.328903,
+          "observed_over_geometric": 1.07283,
+          "threshold_e_ge": 18
+        },
+        {
+          "count": 0,
+          "digest": {
+            "by_phase_t": {},
+            "by_source_depth": {},
+            "by_target_depth": {},
+            "periodic_prefix_ge_75pct": 0,
+            "periodic_prefix_ge_90pct": 0,
+            "samples": []
+          },
+          "fraction": 0.0,
+          "geometric_expected_count": 26.332226,
+          "observed_over_geometric": 0.0,
+          "threshold_e_ge": 20
+        },
+        {
+          "count": 0,
+          "digest": {
+            "by_phase_t": {},
+            "by_source_depth": {},
+            "by_target_depth": {},
+            "periodic_prefix_ge_75pct": 0,
+            "periodic_prefix_ge_90pct": 0,
+            "samples": []
+          },
+          "fraction": 0.0,
+          "geometric_expected_count": 6.583056,
+          "observed_over_geometric": 0.0,
+          "threshold_e_ge": 22
+        },
+        {
+          "count": 0,
+          "digest": {
+            "by_phase_t": {},
+            "by_source_depth": {},
+            "by_target_depth": {},
+            "periodic_prefix_ge_75pct": 0,
+            "periodic_prefix_ge_90pct": 0,
+            "samples": []
+          },
+          "fraction": 0.0,
+          "geometric_expected_count": 1.645764,
+          "observed_over_geometric": 0.0,
+          "threshold_e_ge": 24
+        }
+      ],
+      "target_spines": 16100,
+      "top_witnesses": [
+        {
+          "periodic_prefix_fraction": 0.95,
+          "periodic_prefix_len": 19,
+          "phase_t": 0,
+          "phase_word": "001111",
+          "source": "001111",
+          "source_depth": 6,
+          "target": "00111100111100111101",
+          "target_depth": 20,
+          "valuation_e": 19
+        },
+        {
+          "periodic_prefix_fraction": 0.95,
+          "periodic_prefix_len": 19,
+          "phase_t": 0,
+          "phase_word": "01101111",
+          "source": "01101111",
+          "source_depth": 8,
+          "target": "01101111011011110111",
+          "target_depth": 20,
+          "valuation_e": 19
+        },
+        {
+          "periodic_prefix_fraction": 0.95,
+          "periodic_prefix_len": 19,
+          "phase_t": 0,
+          "phase_word": "000111111",
+          "source": "000111111",
+          "source_depth": 9,
+          "target": "00011111100011111101",
+          "target_depth": 20,
+          "valuation_e": 19
+        },
+        {
+          "periodic_prefix_fraction": 0.95,
+          "periodic_prefix_len": 19,
+          "phase_t": 0,
+          "phase_word": "001011111",
+          "source": "001011111",
+          "source_depth": 9,
+          "target": "00101111100101111101",
+          "target_depth": 20,
+          "valuation_e": 19
+        },
+        {
+          "periodic_prefix_fraction": 0.95,
+          "periodic_prefix_len": 19,
+          "phase_t": 0,
+          "phase_word": "001101111",
+          "source": "001101111",
+          "source_depth": 9,
+          "target": "00110111100110111101",
+          "target_depth": 20,
+          "valuation_e": 19
+        },
+        {
+          "periodic_prefix_fraction": 0.95,
+          "periodic_prefix_len": 19,
+          "phase_t": 0,
+          "phase_word": "001110111",
+          "source": "001110111",
+          "source_depth": 9,
+          "target": "00111011100111011101",
+          "target_depth": 20,
+          "valuation_e": 19
+        },
+        {
+          "periodic_prefix_fraction": 0.95,
+          "periodic_prefix_len": 19,
+          "phase_t": 0,
+          "phase_word": "001111011",
+          "source": "001111011",
+          "source_depth": 9,
+          "target": "00111101100111101101",
+          "target_depth": 20,
+          "valuation_e": 19
+        },
+        {
+          "periodic_prefix_fraction": 0.95,
+          "periodic_prefix_len": 19,
+          "phase_t": 0,
+          "phase_word": "001111101",
+          "source": "001111101",
+          "source_depth": 9,
+          "target": "00111110100111110101",
+          "target_depth": 20,
+          "valuation_e": 19
+        },
+        {
+          "periodic_prefix_fraction": 0.95,
+          "periodic_prefix_len": 19,
+          "phase_t": 0,
+          "phase_word": "001111111",
+          "source": "001111111",
+          "source_depth": 9,
+          "target": "00111111100111111101",
+          "target_depth": 20,
+          "valuation_e": 19
+        },
+        {
+          "periodic_prefix_fraction": 0.95,
+          "periodic_prefix_len": 19,
+          "phase_t": 0,
+          "phase_word": "00011111011",
+          "source": "00011111011",
+          "source_depth": 11,
+          "target": "00011111011000111111",
+          "target_depth": 20,
+          "valuation_e": 19
+        },
+        {
+          "periodic_prefix_fraction": 0.95,
+          "periodic_prefix_len": 19,
+          "phase_t": 0,
+          "phase_word": "00101111011",
+          "source": "00101111011",
+          "source_depth": 11,
+          "target": "00101111011001011111",
+          "target_depth": 20,
+          "valuation_e": 19
+        },
+        {
+          "periodic_prefix_fraction": 0.95,
+          "periodic_prefix_len": 19,
+          "phase_t": 0,
+          "phase_word": "00110111011",
+          "source": "00110111011",
+          "source_depth": 11,
+          "target": "00110111011001101111",
+          "target_depth": 20,
+          "valuation_e": 19
+        },
+        {
+          "periodic_prefix_fraction": 0.95,
+          "periodic_prefix_len": 19,
+          "phase_t": 0,
+          "phase_word": "00111011011",
+          "source": "00111011011",
+          "source_depth": 11,
+          "target": "00111011011001110111",
+          "target_depth": 20,
+          "valuation_e": 19
+        },
+        {
+          "periodic_prefix_fraction": 0.95,
+          "periodic_prefix_len": 19,
+          "phase_t": 0,
+          "phase_word": "00111101011",
+          "source": "00111101011",
+          "source_depth": 11,
+          "target": "00111101011001111011",
+          "target_depth": 20,
+          "valuation_e": 19
+        },
+        {
+          "periodic_prefix_fraction": 0.95,
+          "periodic_prefix_len": 19,
+          "phase_t": 0,
+          "phase_word": "00111111011",
+          "source": "00111111011",
+          "source_depth": 11,
+          "target": "00111111011001111111",
+          "target_depth": 20,
+          "valuation_e": 19
+        },
+        {
+          "periodic_prefix_fraction": 0.95,
+          "periodic_prefix_len": 19,
+          "phase_t": 0,
+          "phase_word": "01010111011",
+          "source": "01010111011",
+          "source_depth": 11,
+          "target": "01010111011010101111",
+          "target_depth": 20,
+          "valuation_e": 19
+        }
+      ],
+      "valuation_histogram": {
+        "0": 19496393,
+        "1": 5641252,
+        "10": 15698,
+        "11": 11334,
+        "12": 6691,
+        "13": 2088,
+        "14": 588,
+        "15": 266,
+        "16": 195,
+        "17": 87,
+        "18": 84,
+        "19": 29,
+        "2": 1220217,
+        "3": 506011,
+        "4": 314357,
+        "5": 168538,
+        "6": 101286,
+        "7": 61992,
+        "8": 38980,
+        "9": 25254
+      },
+      "zero_separation_skips": 160
+    }
+  },
+  "cycle_counts": {
+    "primitive_source_cycles": 160,
+    "source_phases": 1715,
+    "unique_target_spines_total": 16100
+  },
+  "parameters": {
+    "source_max_depth": 12,
+    "source_min_depth": 3,
+    "target_cutoffs": [
+      16,
+      18,
+      20
+    ],
+    "target_max_depth": 20,
+    "target_min_depth": 1,
+    "thresholds": [
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22,
+      24
+    ]
+  },
+  "runtime_seconds": 123.133913,
+  "status": "finite measurement only; not a proof of Collatz"
+}

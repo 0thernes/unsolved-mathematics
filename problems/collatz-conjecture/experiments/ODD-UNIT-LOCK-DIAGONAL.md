@@ -4,7 +4,9 @@
 **Instrument:** [`odd_unit_lock_diagonal_lab.py`](odd_unit_lock_diagonal_lab.py)
 **Related:**
 [`ODD-UNIT-LOCK-COVERAGE.md`](ODD-UNIT-LOCK-COVERAGE.md),
-[`ODD-UNIT-LOCK-REFINEMENT.md`](ODD-UNIT-LOCK-REFINEMENT.md)
+[`ODD-UNIT-LOCK-REFINEMENT.md`](ODD-UNIT-LOCK-REFINEMENT.md),
+[`ODD-UNIT-LOCK-HEIGHT.md`](ODD-UNIT-LOCK-HEIGHT.md),
+[`ODD-UNIT-LOCK-TARGET-TAIL.md`](ODD-UNIT-LOCK-TARGET-TAIL.md)
 **Results:**
 [`results/odd_unit_lock_diagonal_s10_t15_20260705.json`](results/odd_unit_lock_diagonal_s10_t15_20260705.json),
 [`results/odd_unit_lock_diagonal_s10_t16_r24_20260705.json`](results/odd_unit_lock_diagonal_s10_t16_r24_20260705.json),
@@ -150,6 +152,16 @@ then repeated regeneration becomes a vanishing channel.
 
 This does not prove Collatz, but it turns the odd-unit route into a precise
 entropy-vs-precision problem.
+
+The exact-height companion checks the orbit-aligned version of this envelope:
+actual alignment height `m`, period burn `q`, and the resulting `3^(q o)`
+factor in the odd-unit residue. In the tested window, the exact-height slices
+reach the same diagonal envelope quickly because observed target valuations are
+small.
+
+The target-tail companion isolates where the first high-valuation refill comes
+from: finite depth-22 periodic echoes near source phase `t = 0`, not a diffuse
+target-library entropy flood.
 
 ## Non-claims
 

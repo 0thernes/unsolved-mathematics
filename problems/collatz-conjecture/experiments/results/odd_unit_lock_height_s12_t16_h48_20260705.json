@@ -1,0 +1,1594 @@
+{
+  "construction": {
+    "emitted_height_locks": 9636572,
+    "examples": [
+      {
+        "height_m": 0,
+        "period_burn_q": 0,
+        "phase_t": 0,
+        "source": "011",
+        "source_odd_count": 2,
+        "target": "1",
+        "valuation_e": 0
+      },
+      {
+        "height_m": 3,
+        "period_burn_q": 1,
+        "phase_t": 0,
+        "source": "011",
+        "source_odd_count": 2,
+        "target": "1",
+        "valuation_e": 0
+      },
+      {
+        "height_m": 6,
+        "period_burn_q": 2,
+        "phase_t": 0,
+        "source": "011",
+        "source_odd_count": 2,
+        "target": "1",
+        "valuation_e": 0
+      },
+      {
+        "height_m": 9,
+        "period_burn_q": 3,
+        "phase_t": 0,
+        "source": "011",
+        "source_odd_count": 2,
+        "target": "1",
+        "valuation_e": 0
+      },
+      {
+        "height_m": 12,
+        "period_burn_q": 4,
+        "phase_t": 0,
+        "source": "011",
+        "source_odd_count": 2,
+        "target": "1",
+        "valuation_e": 0
+      },
+      {
+        "height_m": 15,
+        "period_burn_q": 5,
+        "phase_t": 0,
+        "source": "011",
+        "source_odd_count": 2,
+        "target": "1",
+        "valuation_e": 0
+      },
+      {
+        "height_m": 18,
+        "period_burn_q": 6,
+        "phase_t": 0,
+        "source": "011",
+        "source_odd_count": 2,
+        "target": "1",
+        "valuation_e": 0
+      },
+      {
+        "height_m": 21,
+        "period_burn_q": 7,
+        "phase_t": 0,
+        "source": "011",
+        "source_odd_count": 2,
+        "target": "1",
+        "valuation_e": 0
+      },
+      {
+        "height_m": 24,
+        "period_burn_q": 8,
+        "phase_t": 0,
+        "source": "011",
+        "source_odd_count": 2,
+        "target": "1",
+        "valuation_e": 0
+      },
+      {
+        "height_m": 27,
+        "period_burn_q": 9,
+        "phase_t": 0,
+        "source": "011",
+        "source_odd_count": 2,
+        "target": "1",
+        "valuation_e": 0
+      },
+      {
+        "height_m": 30,
+        "period_burn_q": 10,
+        "phase_t": 0,
+        "source": "011",
+        "source_odd_count": 2,
+        "target": "1",
+        "valuation_e": 0
+      },
+      {
+        "height_m": 33,
+        "period_burn_q": 11,
+        "phase_t": 0,
+        "source": "011",
+        "source_odd_count": 2,
+        "target": "1",
+        "valuation_e": 0
+      }
+    ],
+    "max_seen_valuation_e": 16,
+    "phase_target_pairs": 2140160
+  },
+  "cycle_counts": {
+    "primitive_source_cycles": 160,
+    "source_alignment_bins": 1715,
+    "unique_target_spines": 1248
+  },
+  "height_summary": {
+    "by_bits": {
+      "20": {
+        "avg_coverage_fraction_all_source_heights": 0.002337592962,
+        "height_rows": [
+          {
+            "avg_coverage_fraction_all_sources": 1.907349e-06,
+            "avg_distinct_lock_residues_all_sources": 1,
+            "avg_distinct_lock_residues_nonzero_sources": 1,
+            "height_m": 0,
+            "max_coverage_fraction": 1.907349e-06,
+            "max_distinct_lock_residues": 1,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.002078175545,
+            "avg_distinct_lock_residues_all_sources": 1089.5625,
+            "avg_distinct_lock_residues_nonzero_sources": 1089.5625,
+            "height_m": 1,
+            "max_coverage_fraction": 0.004100799561,
+            "max_distinct_lock_residues": 2150,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.002899551392,
+            "avg_distinct_lock_residues_all_sources": 1520.2,
+            "avg_distinct_lock_residues_nonzero_sources": 1520.2,
+            "height_m": 2,
+            "max_coverage_fraction": 0.004541397095,
+            "max_distinct_lock_residues": 2381,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.003005433083,
+            "avg_distinct_lock_residues_all_sources": 1575.7125,
+            "avg_distinct_lock_residues_nonzero_sources": 1575.7125,
+            "height_m": 3,
+            "max_coverage_fraction": 0.004610061646,
+            "max_distinct_lock_residues": 2417,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.002621555328,
+            "avg_distinct_lock_residues_all_sources": 1374.45,
+            "avg_distinct_lock_residues_nonzero_sources": 1374.45,
+            "height_m": 4,
+            "max_coverage_fraction": 0.004615783691,
+            "max_distinct_lock_residues": 2420,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.002579331398,
+            "avg_distinct_lock_residues_all_sources": 1352.3125,
+            "avg_distinct_lock_residues_nonzero_sources": 1352.3125,
+            "height_m": 5,
+            "max_coverage_fraction": 0.004541397095,
+            "max_distinct_lock_residues": 2381,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.002489614487,
+            "avg_distinct_lock_residues_all_sources": 1305.275,
+            "avg_distinct_lock_residues_nonzero_sources": 1305.275,
+            "height_m": 6,
+            "max_coverage_fraction": 0.004541397095,
+            "max_distinct_lock_residues": 2381,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.002473723888,
+            "avg_distinct_lock_residues_all_sources": 1296.94375,
+            "avg_distinct_lock_residues_nonzero_sources": 1296.94375,
+            "height_m": 7,
+            "max_coverage_fraction": 0.004541397095,
+            "max_distinct_lock_residues": 2381,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.002443957329,
+            "avg_distinct_lock_residues_all_sources": 1281.3375,
+            "avg_distinct_lock_residues_nonzero_sources": 1281.3375,
+            "height_m": 8,
+            "max_coverage_fraction": 0.004541397095,
+            "max_distinct_lock_residues": 2381,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.00230973959,
+            "avg_distinct_lock_residues_all_sources": 1210.96875,
+            "avg_distinct_lock_residues_nonzero_sources": 1210.96875,
+            "height_m": 9,
+            "max_coverage_fraction": 0.004541397095,
+            "max_distinct_lock_residues": 2381,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.002330899239,
+            "avg_distinct_lock_residues_all_sources": 1222.0625,
+            "avg_distinct_lock_residues_nonzero_sources": 1222.0625,
+            "height_m": 10,
+            "max_coverage_fraction": 0.004541397095,
+            "max_distinct_lock_residues": 2381,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.001888692379,
+            "avg_distinct_lock_residues_all_sources": 990.21875,
+            "avg_distinct_lock_residues_nonzero_sources": 990.21875,
+            "height_m": 11,
+            "max_coverage_fraction": 0.004541397095,
+            "max_distinct_lock_residues": 2381,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.001377773285,
+            "avg_distinct_lock_residues_all_sources": 722.35,
+            "avg_distinct_lock_residues_nonzero_sources": 722.35,
+            "height_m": 12,
+            "max_coverage_fraction": 0.004610061646,
+            "max_distinct_lock_residues": 2417,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.002518606186,
+            "avg_distinct_lock_residues_all_sources": 1320.475,
+            "avg_distinct_lock_residues_nonzero_sources": 1320.475,
+            "height_m": 13,
+            "max_coverage_fraction": 0.004610061646,
+            "max_distinct_lock_residues": 2417,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.002843928337,
+            "avg_distinct_lock_residues_all_sources": 1491.0375,
+            "avg_distinct_lock_residues_nonzero_sources": 1491.0375,
+            "height_m": 14,
+            "max_coverage_fraction": 0.004610061646,
+            "max_distinct_lock_residues": 2417,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.002782225609,
+            "avg_distinct_lock_residues_all_sources": 1458.6875,
+            "avg_distinct_lock_residues_nonzero_sources": 1458.6875,
+            "height_m": 15,
+            "max_coverage_fraction": 0.004615783691,
+            "max_distinct_lock_residues": 2420,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.00251647234,
+            "avg_distinct_lock_residues_all_sources": 1319.35625,
+            "avg_distinct_lock_residues_nonzero_sources": 1319.35625,
+            "height_m": 16,
+            "max_coverage_fraction": 0.004615783691,
+            "max_distinct_lock_residues": 2420,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.002599787712,
+            "avg_distinct_lock_residues_all_sources": 1363.0375,
+            "avg_distinct_lock_residues_nonzero_sources": 1363.0375,
+            "height_m": 17,
+            "max_coverage_fraction": 0.004541397095,
+            "max_distinct_lock_residues": 2381,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.002280163765,
+            "avg_distinct_lock_residues_all_sources": 1195.4625,
+            "avg_distinct_lock_residues_nonzero_sources": 1195.4625,
+            "height_m": 18,
+            "max_coverage_fraction": 0.004541397095,
+            "max_distinct_lock_residues": 2381,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.00252686739,
+            "avg_distinct_lock_residues_all_sources": 1324.80625,
+            "avg_distinct_lock_residues_nonzero_sources": 1324.80625,
+            "height_m": 19,
+            "max_coverage_fraction": 0.004541397095,
+            "max_distinct_lock_residues": 2381,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.002242267132,
+            "avg_distinct_lock_residues_all_sources": 1175.59375,
+            "avg_distinct_lock_residues_nonzero_sources": 1175.59375,
+            "height_m": 20,
+            "max_coverage_fraction": 0.004541397095,
+            "max_distinct_lock_residues": 2381,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.002568864822,
+            "avg_distinct_lock_residues_all_sources": 1346.825,
+            "avg_distinct_lock_residues_nonzero_sources": 1346.825,
+            "height_m": 21,
+            "max_coverage_fraction": 0.004610061646,
+            "max_distinct_lock_residues": 2417,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.001815402508,
+            "avg_distinct_lock_residues_all_sources": 951.79375,
+            "avg_distinct_lock_residues_nonzero_sources": 951.79375,
+            "height_m": 22,
+            "max_coverage_fraction": 0.004541397095,
+            "max_distinct_lock_residues": 2381,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.002468657494,
+            "avg_distinct_lock_residues_all_sources": 1294.2875,
+            "avg_distinct_lock_residues_nonzero_sources": 1294.2875,
+            "height_m": 23,
+            "max_coverage_fraction": 0.004610061646,
+            "max_distinct_lock_residues": 2417,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.001589620113,
+            "avg_distinct_lock_residues_all_sources": 833.41875,
+            "avg_distinct_lock_residues_nonzero_sources": 833.41875,
+            "height_m": 24,
+            "max_coverage_fraction": 0.004541397095,
+            "max_distinct_lock_residues": 2381,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.002525019646,
+            "avg_distinct_lock_residues_all_sources": 1323.8375,
+            "avg_distinct_lock_residues_nonzero_sources": 1323.8375,
+            "height_m": 25,
+            "max_coverage_fraction": 0.004610061646,
+            "max_distinct_lock_residues": 2417,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.002741372585,
+            "avg_distinct_lock_residues_all_sources": 1437.26875,
+            "avg_distinct_lock_residues_nonzero_sources": 1437.26875,
+            "height_m": 26,
+            "max_coverage_fraction": 0.004615783691,
+            "max_distinct_lock_residues": 2420,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.002549803257,
+            "avg_distinct_lock_residues_all_sources": 1336.83125,
+            "avg_distinct_lock_residues_nonzero_sources": 1336.83125,
+            "height_m": 27,
+            "max_coverage_fraction": 0.004610061646,
+            "max_distinct_lock_residues": 2417,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.002530157566,
+            "avg_distinct_lock_residues_all_sources": 1326.53125,
+            "avg_distinct_lock_residues_nonzero_sources": 1326.53125,
+            "height_m": 28,
+            "max_coverage_fraction": 0.004615783691,
+            "max_distinct_lock_residues": 2420,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.002585864067,
+            "avg_distinct_lock_residues_all_sources": 1355.7375,
+            "avg_distinct_lock_residues_nonzero_sources": 1355.7375,
+            "height_m": 29,
+            "max_coverage_fraction": 0.004541397095,
+            "max_distinct_lock_residues": 2381,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.002247273922,
+            "avg_distinct_lock_residues_all_sources": 1178.21875,
+            "avg_distinct_lock_residues_nonzero_sources": 1178.21875,
+            "height_m": 30,
+            "max_coverage_fraction": 0.004610061646,
+            "max_distinct_lock_residues": 2417,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.002544784546,
+            "avg_distinct_lock_residues_all_sources": 1334.2,
+            "avg_distinct_lock_residues_nonzero_sources": 1334.2,
+            "height_m": 31,
+            "max_coverage_fraction": 0.004541397095,
+            "max_distinct_lock_residues": 2381,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.002544021606,
+            "avg_distinct_lock_residues_all_sources": 1333.8,
+            "avg_distinct_lock_residues_nonzero_sources": 1333.8,
+            "height_m": 32,
+            "max_coverage_fraction": 0.004541397095,
+            "max_distinct_lock_residues": 2381,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.00180015564,
+            "avg_distinct_lock_residues_all_sources": 943.8,
+            "avg_distinct_lock_residues_nonzero_sources": 943.8,
+            "height_m": 33,
+            "max_coverage_fraction": 0.004610061646,
+            "max_distinct_lock_residues": 2417,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.002362298965,
+            "avg_distinct_lock_residues_all_sources": 1238.525,
+            "avg_distinct_lock_residues_nonzero_sources": 1238.525,
+            "height_m": 34,
+            "max_coverage_fraction": 0.004541397095,
+            "max_distinct_lock_residues": 2381,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.002706182003,
+            "avg_distinct_lock_residues_all_sources": 1418.81875,
+            "avg_distinct_lock_residues_nonzero_sources": 1418.81875,
+            "height_m": 35,
+            "max_coverage_fraction": 0.004541397095,
+            "max_distinct_lock_residues": 2381,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.001471173763,
+            "avg_distinct_lock_residues_all_sources": 771.31875,
+            "avg_distinct_lock_residues_nonzero_sources": 771.31875,
+            "height_m": 36,
+            "max_coverage_fraction": 0.004610061646,
+            "max_distinct_lock_residues": 2417,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.002340328693,
+            "avg_distinct_lock_residues_all_sources": 1227.00625,
+            "avg_distinct_lock_residues_nonzero_sources": 1227.00625,
+            "height_m": 37,
+            "max_coverage_fraction": 0.004615783691,
+            "max_distinct_lock_residues": 2420,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.002748763561,
+            "avg_distinct_lock_residues_all_sources": 1441.14375,
+            "avg_distinct_lock_residues_nonzero_sources": 1441.14375,
+            "height_m": 38,
+            "max_coverage_fraction": 0.004541397095,
+            "max_distinct_lock_residues": 2381,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.002828061581,
+            "avg_distinct_lock_residues_all_sources": 1482.71875,
+            "avg_distinct_lock_residues_nonzero_sources": 1482.71875,
+            "height_m": 39,
+            "max_coverage_fraction": 0.004610061646,
+            "max_distinct_lock_residues": 2417,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.002213644981,
+            "avg_distinct_lock_residues_all_sources": 1160.5875,
+            "avg_distinct_lock_residues_nonzero_sources": 1160.5875,
+            "height_m": 40,
+            "max_coverage_fraction": 0.004615783691,
+            "max_distinct_lock_residues": 2420,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.002580595016,
+            "avg_distinct_lock_residues_all_sources": 1352.975,
+            "avg_distinct_lock_residues_nonzero_sources": 1352.975,
+            "height_m": 41,
+            "max_coverage_fraction": 0.004541397095,
+            "max_distinct_lock_residues": 2381,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.002446496487,
+            "avg_distinct_lock_residues_all_sources": 1282.66875,
+            "avg_distinct_lock_residues_nonzero_sources": 1282.66875,
+            "height_m": 42,
+            "max_coverage_fraction": 0.004541397095,
+            "max_distinct_lock_residues": 2381,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.00268560648,
+            "avg_distinct_lock_residues_all_sources": 1408.03125,
+            "avg_distinct_lock_residues_nonzero_sources": 1408.03125,
+            "height_m": 43,
+            "max_coverage_fraction": 0.004610061646,
+            "max_distinct_lock_residues": 2417,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.001760423183,
+            "avg_distinct_lock_residues_all_sources": 922.96875,
+            "avg_distinct_lock_residues_nonzero_sources": 922.96875,
+            "height_m": 44,
+            "max_coverage_fraction": 0.004541397095,
+            "max_distinct_lock_residues": 2381,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.002087986469,
+            "avg_distinct_lock_residues_all_sources": 1094.70625,
+            "avg_distinct_lock_residues_nonzero_sources": 1094.70625,
+            "height_m": 45,
+            "max_coverage_fraction": 0.004146575928,
+            "max_distinct_lock_residues": 2174,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.002689623833,
+            "avg_distinct_lock_residues_all_sources": 1410.1375,
+            "avg_distinct_lock_residues_nonzero_sources": 1410.1375,
+            "height_m": 46,
+            "max_coverage_fraction": 0.004541397095,
+            "max_distinct_lock_residues": 2381,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.002799201012,
+            "avg_distinct_lock_residues_all_sources": 1467.5875,
+            "avg_distinct_lock_residues_nonzero_sources": 1467.5875,
+            "height_m": 47,
+            "max_coverage_fraction": 0.004610061646,
+            "max_distinct_lock_residues": 2417,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.001499998569,
+            "avg_distinct_lock_residues_all_sources": 786.43125,
+            "avg_distinct_lock_residues_nonzero_sources": 786.43125,
+            "height_m": 48,
+            "max_coverage_fraction": 0.004615783691,
+            "max_distinct_lock_residues": 2420,
+            "nonzero_sources": 160,
+            "sources": 160
+          }
+        ],
+        "max_coverage_fraction": 0.004615783691
+      },
+      "24": {
+        "avg_coverage_fraction_all_source_heights": 0.000146346098,
+        "height_rows": [
+          {
+            "avg_coverage_fraction_all_sources": 1.19209e-07,
+            "avg_distinct_lock_residues_all_sources": 1,
+            "avg_distinct_lock_residues_nonzero_sources": 1,
+            "height_m": 0,
+            "max_coverage_fraction": 1.19209e-07,
+            "max_distinct_lock_residues": 1,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.000129885972,
+            "avg_distinct_lock_residues_all_sources": 1089.5625,
+            "avg_distinct_lock_residues_nonzero_sources": 1089.5625,
+            "height_m": 1,
+            "max_coverage_fraction": 0.000256299973,
+            "max_distinct_lock_residues": 2150,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.000181409717,
+            "avg_distinct_lock_residues_all_sources": 1521.775,
+            "avg_distinct_lock_residues_nonzero_sources": 1521.775,
+            "height_m": 2,
+            "max_coverage_fraction": 0.000283837318,
+            "max_distinct_lock_residues": 2381,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.000188262016,
+            "avg_distinct_lock_residues_all_sources": 1579.25625,
+            "avg_distinct_lock_residues_nonzero_sources": 1579.25625,
+            "height_m": 3,
+            "max_coverage_fraction": 0.000288128853,
+            "max_distinct_lock_residues": 2417,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.0001642555,
+            "avg_distinct_lock_residues_all_sources": 1377.875,
+            "avg_distinct_lock_residues_nonzero_sources": 1377.875,
+            "height_m": 4,
+            "max_coverage_fraction": 0.000288486481,
+            "max_distinct_lock_residues": 2420,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.000161505491,
+            "avg_distinct_lock_residues_all_sources": 1354.80625,
+            "avg_distinct_lock_residues_nonzero_sources": 1354.80625,
+            "height_m": 5,
+            "max_coverage_fraction": 0.000283837318,
+            "max_distinct_lock_residues": 2381,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.000155894458,
+            "avg_distinct_lock_residues_all_sources": 1307.7375,
+            "avg_distinct_lock_residues_nonzero_sources": 1307.7375,
+            "height_m": 6,
+            "max_coverage_fraction": 0.000283837318,
+            "max_distinct_lock_residues": 2381,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.000154868513,
+            "avg_distinct_lock_residues_all_sources": 1299.13125,
+            "avg_distinct_lock_residues_nonzero_sources": 1299.13125,
+            "height_m": 7,
+            "max_coverage_fraction": 0.000283837318,
+            "max_distinct_lock_residues": 2381,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.000153008103,
+            "avg_distinct_lock_residues_all_sources": 1283.525,
+            "avg_distinct_lock_residues_nonzero_sources": 1283.525,
+            "height_m": 8,
+            "max_coverage_fraction": 0.000283837318,
+            "max_distinct_lock_residues": 2381,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.000144595653,
+            "avg_distinct_lock_residues_all_sources": 1212.95625,
+            "avg_distinct_lock_residues_nonzero_sources": 1212.95625,
+            "height_m": 9,
+            "max_coverage_fraction": 0.000283837318,
+            "max_distinct_lock_residues": 2381,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.000145917386,
+            "avg_distinct_lock_residues_all_sources": 1224.04375,
+            "avg_distinct_lock_residues_nonzero_sources": 1224.04375,
+            "height_m": 10,
+            "max_coverage_fraction": 0.000283837318,
+            "max_distinct_lock_residues": 2381,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.000118213147,
+            "avg_distinct_lock_residues_all_sources": 991.64375,
+            "avg_distinct_lock_residues_nonzero_sources": 991.64375,
+            "height_m": 11,
+            "max_coverage_fraction": 0.000283837318,
+            "max_distinct_lock_residues": 2381,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 8.623004e-05,
+            "avg_distinct_lock_residues_all_sources": 723.35,
+            "avg_distinct_lock_residues_nonzero_sources": 723.35,
+            "height_m": 12,
+            "max_coverage_fraction": 0.000288128853,
+            "max_distinct_lock_residues": 2417,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.000157586485,
+            "avg_distinct_lock_residues_all_sources": 1321.93125,
+            "avg_distinct_lock_residues_nonzero_sources": 1321.93125,
+            "height_m": 13,
+            "max_coverage_fraction": 0.000288128853,
+            "max_distinct_lock_residues": 2417,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.000178030878,
+            "avg_distinct_lock_residues_all_sources": 1493.43125,
+            "avg_distinct_lock_residues_nonzero_sources": 1493.43125,
+            "height_m": 14,
+            "max_coverage_fraction": 0.000288128853,
+            "max_distinct_lock_residues": 2417,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.00017426312,
+            "avg_distinct_lock_residues_all_sources": 1461.825,
+            "avg_distinct_lock_residues_nonzero_sources": 1461.825,
+            "height_m": 15,
+            "max_coverage_fraction": 0.000288486481,
+            "max_distinct_lock_residues": 2420,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.000157614797,
+            "avg_distinct_lock_residues_all_sources": 1322.16875,
+            "avg_distinct_lock_residues_nonzero_sources": 1322.16875,
+            "height_m": 16,
+            "max_coverage_fraction": 0.000288486481,
+            "max_distinct_lock_residues": 2420,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.000162772834,
+            "avg_distinct_lock_residues_all_sources": 1365.4375,
+            "avg_distinct_lock_residues_nonzero_sources": 1365.4375,
+            "height_m": 17,
+            "max_coverage_fraction": 0.000283837318,
+            "max_distinct_lock_residues": 2381,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.000142782927,
+            "avg_distinct_lock_residues_all_sources": 1197.75,
+            "avg_distinct_lock_residues_nonzero_sources": 1197.75,
+            "height_m": 18,
+            "max_coverage_fraction": 0.000283837318,
+            "max_distinct_lock_residues": 2381,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.000158178806,
+            "avg_distinct_lock_residues_all_sources": 1326.9,
+            "avg_distinct_lock_residues_nonzero_sources": 1326.9,
+            "height_m": 19,
+            "max_coverage_fraction": 0.000283837318,
+            "max_distinct_lock_residues": 2381,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.00014038831,
+            "avg_distinct_lock_residues_all_sources": 1177.6625,
+            "avg_distinct_lock_residues_nonzero_sources": 1177.6625,
+            "height_m": 20,
+            "max_coverage_fraction": 0.000283837318,
+            "max_distinct_lock_residues": 2381,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.000160808116,
+            "avg_distinct_lock_residues_all_sources": 1348.95625,
+            "avg_distinct_lock_residues_nonzero_sources": 1348.95625,
+            "height_m": 21,
+            "max_coverage_fraction": 0.000288128853,
+            "max_distinct_lock_residues": 2417,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.000113659352,
+            "avg_distinct_lock_residues_all_sources": 953.44375,
+            "avg_distinct_lock_residues_nonzero_sources": 953.44375,
+            "height_m": 22,
+            "max_coverage_fraction": 0.000283837318,
+            "max_distinct_lock_residues": 2381,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.000154524297,
+            "avg_distinct_lock_residues_all_sources": 1296.24375,
+            "avg_distinct_lock_residues_nonzero_sources": 1296.24375,
+            "height_m": 23,
+            "max_coverage_fraction": 0.000288128853,
+            "max_distinct_lock_residues": 2417,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 9.9485368e-05,
+            "avg_distinct_lock_residues_all_sources": 834.54375,
+            "avg_distinct_lock_residues_nonzero_sources": 834.54375,
+            "height_m": 24,
+            "max_coverage_fraction": 0.000283837318,
+            "max_distinct_lock_residues": 2381,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.000158043206,
+            "avg_distinct_lock_residues_all_sources": 1325.7625,
+            "avg_distinct_lock_residues_nonzero_sources": 1325.7625,
+            "height_m": 25,
+            "max_coverage_fraction": 0.000288128853,
+            "max_distinct_lock_residues": 2417,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.000171610713,
+            "avg_distinct_lock_residues_all_sources": 1439.575,
+            "avg_distinct_lock_residues_nonzero_sources": 1439.575,
+            "height_m": 26,
+            "max_coverage_fraction": 0.000288486481,
+            "max_distinct_lock_residues": 2420,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.000159684569,
+            "avg_distinct_lock_residues_all_sources": 1339.53125,
+            "avg_distinct_lock_residues_nonzero_sources": 1339.53125,
+            "height_m": 27,
+            "max_coverage_fraction": 0.000288128853,
+            "max_distinct_lock_residues": 2417,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.000158452988,
+            "avg_distinct_lock_residues_all_sources": 1329.2,
+            "avg_distinct_lock_residues_nonzero_sources": 1329.2,
+            "height_m": 28,
+            "max_coverage_fraction": 0.000288486481,
+            "max_distinct_lock_residues": 2420,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.000161890686,
+            "avg_distinct_lock_residues_all_sources": 1358.0375,
+            "avg_distinct_lock_residues_nonzero_sources": 1358.0375,
+            "height_m": 29,
+            "max_coverage_fraction": 0.000283837318,
+            "max_distinct_lock_residues": 2381,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.000140724331,
+            "avg_distinct_lock_residues_all_sources": 1180.48125,
+            "avg_distinct_lock_residues_nonzero_sources": 1180.48125,
+            "height_m": 30,
+            "max_coverage_fraction": 0.000288128853,
+            "max_distinct_lock_residues": 2417,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.000159306079,
+            "avg_distinct_lock_residues_all_sources": 1336.35625,
+            "avg_distinct_lock_residues_nonzero_sources": 1336.35625,
+            "height_m": 31,
+            "max_coverage_fraction": 0.000283837318,
+            "max_distinct_lock_residues": 2381,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.000159284472,
+            "avg_distinct_lock_residues_all_sources": 1336.175,
+            "avg_distinct_lock_residues_nonzero_sources": 1336.175,
+            "height_m": 32,
+            "max_coverage_fraction": 0.000283837318,
+            "max_distinct_lock_residues": 2381,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.000112706423,
+            "avg_distinct_lock_residues_all_sources": 945.45,
+            "avg_distinct_lock_residues_nonzero_sources": 945.45,
+            "height_m": 33,
+            "max_coverage_fraction": 0.000288128853,
+            "max_distinct_lock_residues": 2417,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.000147875398,
+            "avg_distinct_lock_residues_all_sources": 1240.46875,
+            "avg_distinct_lock_residues_nonzero_sources": 1240.46875,
+            "height_m": 34,
+            "max_coverage_fraction": 0.000283837318,
+            "max_distinct_lock_residues": 2381,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.000169370323,
+            "avg_distinct_lock_residues_all_sources": 1420.78125,
+            "avg_distinct_lock_residues_nonzero_sources": 1420.78125,
+            "height_m": 35,
+            "max_coverage_fraction": 0.000283837318,
+            "max_distinct_lock_residues": 2381,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 9.2124939e-05,
+            "avg_distinct_lock_residues_all_sources": 772.8,
+            "avg_distinct_lock_residues_nonzero_sources": 772.8,
+            "height_m": 36,
+            "max_coverage_fraction": 0.000288128853,
+            "max_distinct_lock_residues": 2417,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.00014648065,
+            "avg_distinct_lock_residues_all_sources": 1228.76875,
+            "avg_distinct_lock_residues_nonzero_sources": 1228.76875,
+            "height_m": 37,
+            "max_coverage_fraction": 0.000288486481,
+            "max_distinct_lock_residues": 2420,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.000172030181,
+            "avg_distinct_lock_residues_all_sources": 1443.09375,
+            "avg_distinct_lock_residues_nonzero_sources": 1443.09375,
+            "height_m": 38,
+            "max_coverage_fraction": 0.000283837318,
+            "max_distinct_lock_residues": 2381,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.000177112222,
+            "avg_distinct_lock_residues_all_sources": 1485.725,
+            "avg_distinct_lock_residues_nonzero_sources": 1485.725,
+            "height_m": 39,
+            "max_coverage_fraction": 0.000288128853,
+            "max_distinct_lock_residues": 2417,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.000138667226,
+            "avg_distinct_lock_residues_all_sources": 1163.225,
+            "avg_distinct_lock_residues_nonzero_sources": 1163.225,
+            "height_m": 40,
+            "max_coverage_fraction": 0.000288486481,
+            "max_distinct_lock_residues": 2420,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.000161532313,
+            "avg_distinct_lock_residues_all_sources": 1355.03125,
+            "avg_distinct_lock_residues_nonzero_sources": 1355.03125,
+            "height_m": 41,
+            "max_coverage_fraction": 0.000283837318,
+            "max_distinct_lock_residues": 2381,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.000153200328,
+            "avg_distinct_lock_residues_all_sources": 1285.1375,
+            "avg_distinct_lock_residues_nonzero_sources": 1285.1375,
+            "height_m": 42,
+            "max_coverage_fraction": 0.000283837318,
+            "max_distinct_lock_residues": 2381,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.000168137997,
+            "avg_distinct_lock_residues_all_sources": 1410.44375,
+            "avg_distinct_lock_residues_nonzero_sources": 1410.44375,
+            "height_m": 43,
+            "max_coverage_fraction": 0.000288128853,
+            "max_distinct_lock_residues": 2417,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.000110244006,
+            "avg_distinct_lock_residues_all_sources": 924.79375,
+            "avg_distinct_lock_residues_nonzero_sources": 924.79375,
+            "height_m": 44,
+            "max_coverage_fraction": 0.000283837318,
+            "max_distinct_lock_residues": 2381,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.000130684674,
+            "avg_distinct_lock_residues_all_sources": 1096.2625,
+            "avg_distinct_lock_residues_nonzero_sources": 1096.2625,
+            "height_m": 45,
+            "max_coverage_fraction": 0.000259160995,
+            "max_distinct_lock_residues": 2174,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.000168313086,
+            "avg_distinct_lock_residues_all_sources": 1411.9125,
+            "avg_distinct_lock_residues_nonzero_sources": 1411.9125,
+            "height_m": 46,
+            "max_coverage_fraction": 0.000283837318,
+            "max_distinct_lock_residues": 2381,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 0.000175271928,
+            "avg_distinct_lock_residues_all_sources": 1470.2875,
+            "avg_distinct_lock_residues_nonzero_sources": 1470.2875,
+            "height_m": 47,
+            "max_coverage_fraction": 0.000288128853,
+            "max_distinct_lock_residues": 2417,
+            "nonzero_sources": 160,
+            "sources": 160
+          },
+          {
+            "avg_coverage_fraction_all_sources": 9.3949586e-05,
+            "avg_distinct_lock_residues_all_sources": 788.10625,
+            "avg_distinct_lock_residues_nonzero_sources": 788.10625,
+            "height_m": 48,
+            "max_coverage_fraction": 0.000288486481,
+            "max_distinct_lock_residues": 2420,
+            "nonzero_sources": 160,
+            "sources": 160
+          }
+        ],
+        "max_coverage_fraction": 0.000288486481
+      }
+    },
+    "densest_source_height_bins": [
+      {
+        "bits": 20,
+        "codimension_bits": 7.759209,
+        "coverage_fraction": 0.004615783691,
+        "distinct_lock_residues": 2420,
+        "height_m": 4,
+        "sample_residues": [
+          381,
+          1317,
+          1335,
+          1949,
+          1983,
+          2301,
+          3465,
+          4217,
+          4733,
+          5055,
+          5267,
+          5293
+        ],
+        "source": "00001111111",
+        "source_length": 11
+      },
+      {
+        "bits": 20,
+        "codimension_bits": 7.759209,
+        "coverage_fraction": 0.004615783691,
+        "distinct_lock_residues": 2420,
+        "height_m": 4,
+        "sample_residues": [
+          413,
+          499,
+          701,
+          703,
+          767,
+          1093,
+          1405,
+          2387,
+          2429,
+          2853,
+          3261,
+          3779
+        ],
+        "source": "000011111111",
+        "source_length": 12
+      },
+      {
+        "bits": 20,
+        "codimension_bits": 7.759209,
+        "coverage_fraction": 0.004615783691,
+        "distinct_lock_residues": 2420,
+        "height_m": 15,
+        "sample_residues": [
+          359,
+          407,
+          2839,
+          3077,
+          3397,
+          4491,
+          4605,
+          4903,
+          5655,
+          5991,
+          6073,
+          7005
+        ],
+        "source": "00001111111",
+        "source_length": 11
+      },
+      {
+        "bits": 20,
+        "codimension_bits": 7.759209,
+        "coverage_fraction": 0.004615783691,
+        "distinct_lock_residues": 2420,
+        "height_m": 16,
+        "sample_residues": [
+          371,
+          919,
+          1395,
+          1503,
+          2463,
+          3345,
+          4127,
+          4467,
+          4945,
+          7549,
+          7743,
+          8061
+        ],
+        "source": "000011111111",
+        "source_length": 12
+      },
+      {
+        "bits": 20,
+        "codimension_bits": 7.759209,
+        "coverage_fraction": 0.004615783691,
+        "distinct_lock_residues": 2420,
+        "height_m": 26,
+        "sample_residues": [
+          41,
+          533,
+          769,
+          1037,
+          1131,
+          1199,
+          1221,
+          1455,
+          1527,
+          1877,
+          2195,
+          2487
+        ],
+        "source": "00001111111",
+        "source_length": 11
+      },
+      {
+        "bits": 20,
+        "codimension_bits": 7.759209,
+        "coverage_fraction": 0.004615783691,
+        "distinct_lock_residues": 2420,
+        "height_m": 28,
+        "sample_residues": [
+          247,
+          413,
+          1213,
+          1591,
+          1853,
+          1893,
+          2157,
+          2441,
+          3319,
+          3677,
+          4285,
+          4317
+        ],
+        "source": "000011111111",
+        "source_length": 12
+      },
+      {
+        "bits": 20,
+        "codimension_bits": 7.759209,
+        "coverage_fraction": 0.004615783691,
+        "distinct_lock_residues": 2420,
+        "height_m": 37,
+        "sample_residues": [
+          773,
+          1099,
+          1591,
+          2063,
+          2447,
+          3967,
+          4165,
+          4807,
+          5795,
+          5809,
+          6031,
+          6193
+        ],
+        "source": "00001111111",
+        "source_length": 11
+      },
+      {
+        "bits": 20,
+        "codimension_bits": 7.759209,
+        "coverage_fraction": 0.004615783691,
+        "distinct_lock_residues": 2420,
+        "height_m": 40,
+        "sample_residues": [
+          89,
+          1293,
+          2071,
+          2419,
+          2911,
+          4287,
+          4447,
+          4527,
+          4953,
+          5503,
+          5645,
+          6301
+        ],
+        "source": "000011111111",
+        "source_length": 12
+      },
+      {
+        "bits": 20,
+        "codimension_bits": 7.759209,
+        "coverage_fraction": 0.004615783691,
+        "distinct_lock_residues": 2420,
+        "height_m": 48,
+        "sample_residues": [
+          173,
+          269,
+          559,
+          639,
+          645,
+          781,
+          1229,
+          1519,
+          1663,
+          1917,
+          2055,
+          2613
+        ],
+        "source": "00001111111",
+        "source_length": 11
+      },
+      {
+        "bits": 20,
+        "codimension_bits": 7.760998,
+        "coverage_fraction": 0.004610061646,
+        "distinct_lock_residues": 2417,
+        "height_m": 3,
+        "sample_residues": [
+          905,
+          1215,
+          1923,
+          1939,
+          1975,
+          2733,
+          3117,
+          3225,
+          4199,
+          4287,
+          4559,
+          4653
+        ],
+        "source": "000111111",
+        "source_length": 9
+      },
+      {
+        "bits": 20,
+        "codimension_bits": 7.760998,
+        "coverage_fraction": 0.004610061646,
+        "distinct_lock_residues": 2417,
+        "height_m": 3,
+        "sample_residues": [
+          2077,
+          2673,
+          3583,
+          3705,
+          3971,
+          5047,
+          5373,
+          6173,
+          6175,
+          7539,
+          7789,
+          8275
+        ],
+        "source": "0001111111",
+        "source_length": 10
+      },
+      {
+        "bits": 20,
+        "codimension_bits": 7.760998,
+        "coverage_fraction": 0.004610061646,
+        "distinct_lock_residues": 2417,
+        "height_m": 3,
+        "sample_residues": [
+          25,
+          819,
+          2127,
+          2131,
+          2619,
+          3097,
+          3195,
+          3981,
+          4173,
+          5651,
+          5721,
+          6229
+        ],
+        "source": "00010111111",
+        "source_length": 11
+      },
+      {
+        "bits": 20,
+        "codimension_bits": 7.760998,
+        "coverage_fraction": 0.004610061646,
+        "distinct_lock_residues": 2417,
+        "height_m": 3,
+        "sample_residues": [
+          215,
+          593,
+          823,
+          1425,
+          1507,
+          1563,
+          2337,
+          2531,
+          2945,
+          3799,
+          4001,
+          4007
+        ],
+        "source": "00011011111",
+        "source_length": 11
+      },
+      {
+        "bits": 20,
+        "codimension_bits": 7.760998,
+        "coverage_fraction": 0.004610061646,
+        "distinct_lock_residues": 2417,
+        "height_m": 3,
+        "sample_residues": [
+          1085,
+          2423,
+          2449,
+          3093,
+          3931,
+          5261,
+          7179,
+          7317,
+          7531,
+          7563,
+          7765,
+          7783
+        ],
+        "source": "00011101111",
+        "source_length": 11
+      },
+      {
+        "bits": 20,
+        "codimension_bits": 7.760998,
+        "coverage_fraction": 0.004610061646,
+        "distinct_lock_residues": 2417,
+        "height_m": 3,
+        "sample_residues": [
+          7,
+          239,
+          429,
+          461,
+          685,
+          1891,
+          2403,
+          4111,
+          4789,
+          5135,
+          6159,
+          6815
+        ],
+        "source": "00011110111",
+        "source_length": 11
+      },
+      {
+        "bits": 20,
+        "codimension_bits": 7.760998,
+        "coverage_fraction": 0.004610061646,
+        "distinct_lock_residues": 2417,
+        "height_m": 3,
+        "sample_residues": [
+          95,
+          345,
+          985,
+          989,
+          1117,
+          1309,
+          1341,
+          1875,
+          1887,
+          2629,
+          2711,
+          3391
+        ],
+        "source": "00011111011",
+        "source_length": 11
+      },
+      {
+        "bits": 20,
+        "codimension_bits": 7.760998,
+        "coverage_fraction": 0.004610061646,
+        "distinct_lock_residues": 2417,
+        "height_m": 3,
+        "sample_residues": [
+          1399,
+          1539,
+          2365,
+          3775,
+          3881,
+          3897,
+          3903,
+          4471,
+          4573,
+          4887,
+          5177,
+          5891
+        ],
+        "source": "00011111101",
+        "source_length": 11
+      },
+      {
+        "bits": 20,
+        "codimension_bits": 7.760998,
+        "coverage_fraction": 0.004610061646,
+        "distinct_lock_residues": 2417,
+        "height_m": 3,
+        "sample_residues": [
+          271,
+          463,
+          1181,
+          1447,
+          1901,
+          2767,
+          2783,
+          3155,
+          3267,
+          3833,
+          4029,
+          4083
+        ],
+        "source": "00011111111",
+        "source_length": 11
+      },
+      {
+        "bits": 20,
+        "codimension_bits": 7.760998,
+        "coverage_fraction": 0.004610061646,
+        "distinct_lock_residues": 2417,
+        "height_m": 3,
+        "sample_residues": [
+          163,
+          169,
+          509,
+          719,
+          787,
+          821,
+          845,
+          1077,
+          1267,
+          1299,
+          1523,
+          2729
+        ],
+        "source": "000101111111",
+        "source_length": 12
+      },
+      {
+        "bits": 20,
+        "codimension_bits": 7.760998,
+        "coverage_fraction": 0.004610061646,
+        "distinct_lock_residues": 2417,
+        "height_m": 3,
+        "sample_residues": [
+          35,
+          343,
+          545,
+          3117,
+          3773,
+          4291,
+          4577,
+          5589,
+          6179,
+          6339,
+          8227,
+          8425
+        ],
+        "source": "000110111111",
+        "source_length": 12
+      }
+    ]
+  },
+  "parameters": {
+    "bits": [
+      20,
+      24
+    ],
+    "max_height": 48,
+    "min_height": 0,
+    "source_max_depth": 12,
+    "source_min_depth": 3,
+    "target_max_depth": 16,
+    "target_min_depth": 1
+  },
+  "runtime_seconds": 114.513013,
+  "status": "finite measurement only; not a proof of Collatz"
+}
