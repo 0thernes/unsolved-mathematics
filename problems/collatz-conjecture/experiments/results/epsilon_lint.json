@@ -1,0 +1,1164 @@
+{
+  "artifact": "collatz_epsilon_lint",
+  "generated_at_utc": "2026-07-05T04:50:31.751865+00:00",
+  "status": "lint_harness_not_proof",
+  "pass": true,
+  "hard_failures": [],
+  "parameters": {
+    "distribution_depth": 12,
+    "trace_depth": 32,
+    "max_start": 2000,
+    "scan_cap": 4096,
+    "max_align": 18
+  },
+  "scope": "Executable guardrail for proof sketches. It rejects epsilon-blind evidence and names the sibling/negative-cycle controls a future invariant must pass.",
+  "worlds": [
+    {
+      "id": "collatz_3n_plus_1",
+      "q": 3,
+      "eps": 1,
+      "role": "target world",
+      "status": "open positive-orbit conjecture"
+    },
+    {
+      "id": "sibling_3n_minus_1",
+      "q": 3,
+      "eps": -1,
+      "role": "epsilon control",
+      "status": "false analogue with positive cycles"
+    },
+    {
+      "id": "sibling_5n_plus_1",
+      "q": 5,
+      "eps": 1,
+      "role": "multiplier control",
+      "status": "hostile analogue with known nontrivial cycles and long frontier residents"
+    }
+  ],
+  "word_barrier": {
+    "depth": 12,
+    "eps_plus_hits_each_word_once": true,
+    "eps_minus_hits_each_word_once": true,
+    "word_distribution_identical": true,
+    "odd_count_distribution_identical": true,
+    "pointwise_same_integer_word_differs": 4094,
+    "pointwise_same_integer_word_differs_fraction": 0.99951171875,
+    "survivor_frontier_word_count": 226,
+    "survivor_frontier_fraction": 0.05517578125,
+    "lint": "Any argument using only this distribution is rejected as standalone Collatz-specific evidence."
+  },
+  "affine_trace_witnesses": [
+    {
+      "q": 3,
+      "eps": 1,
+      "start": 27,
+      "depth": 24,
+      "end": 668,
+      "word": "110111110101101110111101",
+      "odd_steps": 18,
+      "coefficient": 387420489,
+      "intercept": 746827085,
+      "intercept_sign": 1,
+      "intercept_sign_matches_eps": true,
+      "multiplier_excess_bits": 4.529325013,
+      "min_prefix_margin_bits": 0.169925001,
+      "low_repeat_gate_hits_x_mod_64_eq_59": 0,
+      "low_repeat_sign_paired_hits_x_plus_5eps_eq_0_mod_64": 0,
+      "high_ladder_hits_v2_x_plus_1_ge_3": 6,
+      "high_ladder_sign_paired_hits_v2_x_plus_eps_ge_3": 6
+    },
+    {
+      "q": 3,
+      "eps": -1,
+      "start": 5,
+      "depth": 24,
+      "end": 5,
+      "word": "110110110110110110110110",
+      "odd_steps": 16,
+      "coefficient": 43046721,
+      "intercept": -131347525,
+      "intercept_sign": -1,
+      "intercept_sign_matches_eps": true,
+      "multiplier_excess_bits": 1.359400012,
+      "min_prefix_margin_bits": 0.169925001,
+      "low_repeat_gate_hits_x_mod_64_eq_59": 0,
+      "low_repeat_sign_paired_hits_x_plus_5eps_eq_0_mod_64": 8,
+      "high_ladder_hits_v2_x_plus_1_ge_3": 8,
+      "high_ladder_sign_paired_hits_v2_x_plus_eps_ge_3": 0
+    },
+    {
+      "q": 5,
+      "eps": 1,
+      "start": 13,
+      "depth": 24,
+      "end": 208,
+      "word": "111000011100001110000111",
+      "odd_steps": 12,
+      "coefficient": 244140625,
+      "intercept": 315832803,
+      "intercept_sign": 1,
+      "intercept_sign_matches_eps": true,
+      "multiplier_excess_bits": 3.863137139,
+      "min_prefix_margin_bits": -0.102647146,
+      "low_repeat_gate_hits_x_mod_64_eq_59": 0,
+      "low_repeat_sign_paired_hits_x_plus_5eps_eq_0_mod_64": 0,
+      "high_ladder_hits_v2_x_plus_1_ge_3": 0,
+      "high_ladder_sign_paired_hits_v2_x_plus_eps_ge_3": 0
+    },
+    {
+      "q": 3,
+      "eps": 1,
+      "start": -5,
+      "depth": 24,
+      "end": -5,
+      "word": "110110110110110110110110",
+      "odd_steps": 16,
+      "coefficient": 43046721,
+      "intercept": 131347525,
+      "intercept_sign": 1,
+      "intercept_sign_matches_eps": true,
+      "multiplier_excess_bits": 1.359400012,
+      "min_prefix_margin_bits": 0.169925001,
+      "low_repeat_gate_hits_x_mod_64_eq_59": 8,
+      "low_repeat_sign_paired_hits_x_plus_5eps_eq_0_mod_64": 8,
+      "high_ladder_hits_v2_x_plus_1_ge_3": 0,
+      "high_ladder_sign_paired_hits_v2_x_plus_eps_ge_3": 0
+    }
+  ],
+  "cycle_controls": {
+    "positive_cycle_controls": [
+      {
+        "q": 3,
+        "eps": 1,
+        "start": 1,
+        "length": 2,
+        "odd_steps": 1,
+        "word": "10",
+        "elements": [
+          1,
+          2
+        ],
+        "q^o_minus_2^d": -1,
+        "side_of_critical_line": "below",
+        "positive_cycle_sign_rule_holds": true,
+        "margin_bits": -0.415037499
+      },
+      {
+        "q": 3,
+        "eps": -1,
+        "start": 1,
+        "length": 1,
+        "odd_steps": 1,
+        "word": "1",
+        "elements": [
+          1
+        ],
+        "q^o_minus_2^d": 1,
+        "side_of_critical_line": "above",
+        "positive_cycle_sign_rule_holds": true,
+        "margin_bits": 0.584962501
+      },
+      {
+        "q": 3,
+        "eps": -1,
+        "start": 5,
+        "length": 3,
+        "odd_steps": 2,
+        "word": "110",
+        "elements": [
+          5,
+          7,
+          10
+        ],
+        "q^o_minus_2^d": 1,
+        "side_of_critical_line": "above",
+        "positive_cycle_sign_rule_holds": true,
+        "margin_bits": 0.169925001
+      },
+      {
+        "q": 3,
+        "eps": -1,
+        "start": 17,
+        "length": 11,
+        "odd_steps": 7,
+        "word": "11110111000",
+        "elements": [
+          17,
+          25,
+          37,
+          55,
+          82,
+          41,
+          61,
+          91,
+          136,
+          68,
+          34
+        ],
+        "q^o_minus_2^d": 139,
+        "side_of_critical_line": "above",
+        "positive_cycle_sign_rule_holds": true,
+        "margin_bits": 0.094737505
+      },
+      {
+        "q": 5,
+        "eps": 1,
+        "start": 1,
+        "length": 5,
+        "odd_steps": 2,
+        "word": "11000",
+        "elements": [
+          1,
+          3,
+          8,
+          4,
+          2
+        ],
+        "q^o_minus_2^d": -7,
+        "side_of_critical_line": "below",
+        "positive_cycle_sign_rule_holds": true,
+        "margin_bits": -0.35614381
+      },
+      {
+        "q": 5,
+        "eps": 1,
+        "start": 13,
+        "length": 7,
+        "odd_steps": 3,
+        "word": "1110000",
+        "elements": [
+          13,
+          33,
+          83,
+          208,
+          104,
+          52,
+          26
+        ],
+        "q^o_minus_2^d": -3,
+        "side_of_critical_line": "below",
+        "positive_cycle_sign_rule_holds": true,
+        "margin_bits": -0.034215715
+      },
+      {
+        "q": 5,
+        "eps": 1,
+        "start": 17,
+        "length": 7,
+        "odd_steps": 3,
+        "word": "1100100",
+        "elements": [
+          17,
+          43,
+          108,
+          54,
+          27,
+          68,
+          34
+        ],
+        "q^o_minus_2^d": -3,
+        "side_of_critical_line": "below",
+        "positive_cycle_sign_rule_holds": true,
+        "margin_bits": -0.034215715
+      }
+    ],
+    "negative_collatz_controls": [
+      {
+        "q": 3,
+        "eps": 1,
+        "start": -5,
+        "length": 3,
+        "odd_steps": 2,
+        "word": "110",
+        "elements": [
+          -5,
+          -7,
+          -10
+        ],
+        "q^o_minus_2^d": 1,
+        "side_of_critical_line": "above",
+        "positive_cycle_sign_rule_holds": null,
+        "margin_bits": 0.169925001
+      },
+      {
+        "q": 3,
+        "eps": 1,
+        "start": -17,
+        "length": 11,
+        "odd_steps": 7,
+        "word": "11110111000",
+        "elements": [
+          -17,
+          -25,
+          -37,
+          -55,
+          -82,
+          -41,
+          -61,
+          -91,
+          -136,
+          -68,
+          -34
+        ],
+        "q^o_minus_2^d": 139,
+        "side_of_critical_line": "above",
+        "positive_cycle_sign_rule_holds": null,
+        "margin_bits": 0.094737505
+      }
+    ],
+    "all_positive_cycle_sign_rules_hold": true,
+    "lint": "A proposed invariant must explain why it fails on 3n-1 positive cycles, 5n+1 nontrivial cycles, and Collatz negative cycles."
+  },
+  "high_ladder_formula_controls": {
+    "max_align": 18,
+    "sample_count": 160,
+    "all_formula_checks_pass": true,
+    "failure_samples": [],
+    "sample_records": [
+      {
+        "eps": 1,
+        "align": 3,
+        "multiplier": 1,
+        "start": 7,
+        "terminal_after_alignment": 26,
+        "formula_ok": true
+      },
+      {
+        "eps": 1,
+        "align": 3,
+        "multiplier": 3,
+        "start": 23,
+        "terminal_after_alignment": 80,
+        "formula_ok": true
+      },
+      {
+        "eps": 1,
+        "align": 3,
+        "multiplier": 5,
+        "start": 39,
+        "terminal_after_alignment": 134,
+        "formula_ok": true
+      },
+      {
+        "eps": 1,
+        "align": 3,
+        "multiplier": 7,
+        "start": 55,
+        "terminal_after_alignment": 188,
+        "formula_ok": true
+      },
+      {
+        "eps": 1,
+        "align": 3,
+        "multiplier": 11,
+        "start": 87,
+        "terminal_after_alignment": 296,
+        "formula_ok": true
+      },
+      {
+        "eps": 1,
+        "align": 4,
+        "multiplier": 1,
+        "start": 15,
+        "terminal_after_alignment": 80,
+        "formula_ok": true
+      },
+      {
+        "eps": 1,
+        "align": 4,
+        "multiplier": 3,
+        "start": 47,
+        "terminal_after_alignment": 242,
+        "formula_ok": true
+      },
+      {
+        "eps": 1,
+        "align": 4,
+        "multiplier": 5,
+        "start": 79,
+        "terminal_after_alignment": 404,
+        "formula_ok": true
+      },
+      {
+        "eps": 1,
+        "align": 4,
+        "multiplier": 7,
+        "start": 111,
+        "terminal_after_alignment": 566,
+        "formula_ok": true
+      },
+      {
+        "eps": 1,
+        "align": 4,
+        "multiplier": 11,
+        "start": 175,
+        "terminal_after_alignment": 890,
+        "formula_ok": true
+      },
+      {
+        "eps": 1,
+        "align": 5,
+        "multiplier": 1,
+        "start": 31,
+        "terminal_after_alignment": 242,
+        "formula_ok": true
+      },
+      {
+        "eps": 1,
+        "align": 5,
+        "multiplier": 3,
+        "start": 95,
+        "terminal_after_alignment": 728,
+        "formula_ok": true
+      },
+      {
+        "eps": 1,
+        "align": 5,
+        "multiplier": 5,
+        "start": 159,
+        "terminal_after_alignment": 1214,
+        "formula_ok": true
+      },
+      {
+        "eps": 1,
+        "align": 5,
+        "multiplier": 7,
+        "start": 223,
+        "terminal_after_alignment": 1700,
+        "formula_ok": true
+      },
+      {
+        "eps": 1,
+        "align": 5,
+        "multiplier": 11,
+        "start": 351,
+        "terminal_after_alignment": 2672,
+        "formula_ok": true
+      },
+      {
+        "eps": 1,
+        "align": 6,
+        "multiplier": 1,
+        "start": 63,
+        "terminal_after_alignment": 728,
+        "formula_ok": true
+      }
+    ],
+    "lint": "High ladders are exact local structure, but the real family is x = 2^a*m - eps."
+  },
+  "low_repeat_formula_controls": {
+    "max_align": 18,
+    "sample_count": 130,
+    "all_formula_checks_pass": true,
+    "failure_samples": [],
+    "sample_records": [
+      {
+        "eps": 1,
+        "align": 6,
+        "multiplier": 1,
+        "start": 59,
+        "after_three_steps": 67,
+        "v2_before": 6,
+        "v2_after": 3,
+        "formula_ok": true
+      },
+      {
+        "eps": 1,
+        "align": 6,
+        "multiplier": 3,
+        "start": 187,
+        "after_three_steps": 211,
+        "v2_before": 6,
+        "v2_after": 3,
+        "formula_ok": true
+      },
+      {
+        "eps": 1,
+        "align": 6,
+        "multiplier": 5,
+        "start": 315,
+        "after_three_steps": 355,
+        "v2_before": 6,
+        "v2_after": 3,
+        "formula_ok": true
+      },
+      {
+        "eps": 1,
+        "align": 6,
+        "multiplier": 7,
+        "start": 443,
+        "after_three_steps": 499,
+        "v2_before": 6,
+        "v2_after": 3,
+        "formula_ok": true
+      },
+      {
+        "eps": 1,
+        "align": 6,
+        "multiplier": 11,
+        "start": 699,
+        "after_three_steps": 787,
+        "v2_before": 6,
+        "v2_after": 3,
+        "formula_ok": true
+      },
+      {
+        "eps": 1,
+        "align": 7,
+        "multiplier": 1,
+        "start": 123,
+        "after_three_steps": 139,
+        "v2_before": 7,
+        "v2_after": 4,
+        "formula_ok": true
+      },
+      {
+        "eps": 1,
+        "align": 7,
+        "multiplier": 3,
+        "start": 379,
+        "after_three_steps": 427,
+        "v2_before": 7,
+        "v2_after": 4,
+        "formula_ok": true
+      },
+      {
+        "eps": 1,
+        "align": 7,
+        "multiplier": 5,
+        "start": 635,
+        "after_three_steps": 715,
+        "v2_before": 7,
+        "v2_after": 4,
+        "formula_ok": true
+      },
+      {
+        "eps": 1,
+        "align": 7,
+        "multiplier": 7,
+        "start": 891,
+        "after_three_steps": 1003,
+        "v2_before": 7,
+        "v2_after": 4,
+        "formula_ok": true
+      },
+      {
+        "eps": 1,
+        "align": 7,
+        "multiplier": 11,
+        "start": 1403,
+        "after_three_steps": 1579,
+        "v2_before": 7,
+        "v2_after": 4,
+        "formula_ok": true
+      },
+      {
+        "eps": 1,
+        "align": 8,
+        "multiplier": 1,
+        "start": 251,
+        "after_three_steps": 283,
+        "v2_before": 8,
+        "v2_after": 5,
+        "formula_ok": true
+      },
+      {
+        "eps": 1,
+        "align": 8,
+        "multiplier": 3,
+        "start": 763,
+        "after_three_steps": 859,
+        "v2_before": 8,
+        "v2_after": 5,
+        "formula_ok": true
+      },
+      {
+        "eps": 1,
+        "align": 8,
+        "multiplier": 5,
+        "start": 1275,
+        "after_three_steps": 1435,
+        "v2_before": 8,
+        "v2_after": 5,
+        "formula_ok": true
+      },
+      {
+        "eps": 1,
+        "align": 8,
+        "multiplier": 7,
+        "start": 1787,
+        "after_three_steps": 2011,
+        "v2_before": 8,
+        "v2_after": 5,
+        "formula_ok": true
+      },
+      {
+        "eps": 1,
+        "align": 8,
+        "multiplier": 11,
+        "start": 2811,
+        "after_three_steps": 3163,
+        "v2_before": 8,
+        "v2_after": 5,
+        "formula_ok": true
+      },
+      {
+        "eps": 1,
+        "align": 9,
+        "multiplier": 1,
+        "start": 507,
+        "after_three_steps": 571,
+        "v2_before": 9,
+        "v2_after": 6,
+        "formula_ok": true
+      }
+    ],
+    "lint": "The low-repeat gate spends local 2-adic credit; it is not global descent by itself."
+  },
+  "bounded_scan_controls": {
+    "max_start": 2000,
+    "cap": 4096,
+    "summaries": [
+      {
+        "world": {
+          "id": "collatz_3n_plus_1",
+          "q": 3,
+          "eps": 1,
+          "role": "target world",
+          "status": "open positive-orbit conjecture"
+        },
+        "odd_starts_scanned": 1000,
+        "cap": 4096,
+        "tau_finite_count": 1000,
+        "sigma_finite_count": 999,
+        "flagged_count": 0,
+        "flagged_samples": [],
+        "max_tau": {
+          "n": 703,
+          "steps": 81
+        },
+        "max_sigma": {
+          "n": 703,
+          "steps": 81
+        }
+      },
+      {
+        "world": {
+          "id": "sibling_3n_minus_1",
+          "q": 3,
+          "eps": -1,
+          "role": "epsilon control",
+          "status": "false analogue with positive cycles"
+        },
+        "odd_starts_scanned": 1000,
+        "cap": 4096,
+        "tau_finite_count": 997,
+        "sigma_finite_count": 997,
+        "flagged_count": 3,
+        "flagged_samples": [
+          {
+            "n": 1,
+            "tau": null,
+            "sigma": null,
+            "flagged": true,
+            "reason": "cycle_seen_before_tau",
+            "cycle_entry_step": 1,
+            "cycle_return_step": 2
+          },
+          {
+            "n": 5,
+            "tau": null,
+            "sigma": null,
+            "flagged": true,
+            "reason": "cycle_seen_before_tau",
+            "cycle_entry_step": 1,
+            "cycle_return_step": 4
+          },
+          {
+            "n": 17,
+            "tau": null,
+            "sigma": null,
+            "flagged": true,
+            "reason": "cycle_seen_before_tau",
+            "cycle_entry_step": 1,
+            "cycle_return_step": 12
+          }
+        ],
+        "max_tau": {
+          "n": 1425,
+          "steps": 62
+        },
+        "max_sigma": {
+          "n": 1425,
+          "steps": 62
+        }
+      },
+      {
+        "world": {
+          "id": "sibling_5n_plus_1",
+          "q": 5,
+          "eps": 1,
+          "role": "multiplier control",
+          "status": "hostile analogue with known nontrivial cycles and long frontier residents"
+        },
+        "odd_starts_scanned": 1000,
+        "cap": 4096,
+        "tau_finite_count": 656,
+        "sigma_finite_count": 653,
+        "flagged_count": 344,
+        "flagged_samples": [
+          {
+            "n": 5,
+            "tau": null,
+            "sigma": null,
+            "flagged": true,
+            "reason": "cycle_seen_before_tau",
+            "cycle_entry_step": 1,
+            "cycle_return_step": 8
+          },
+          {
+            "n": 7,
+            "tau": null,
+            "sigma": null,
+            "flagged": true,
+            "reason": "cap"
+          },
+          {
+            "n": 9,
+            "tau": null,
+            "sigma": null,
+            "flagged": true,
+            "reason": "cap"
+          },
+          {
+            "n": 21,
+            "tau": null,
+            "sigma": null,
+            "flagged": true,
+            "reason": "cap"
+          },
+          {
+            "n": 23,
+            "tau": null,
+            "sigma": null,
+            "flagged": true,
+            "reason": "cap"
+          },
+          {
+            "n": 25,
+            "tau": null,
+            "sigma": null,
+            "flagged": true,
+            "reason": "cap"
+          },
+          {
+            "n": 29,
+            "tau": null,
+            "sigma": null,
+            "flagged": true,
+            "reason": "cap"
+          },
+          {
+            "n": 31,
+            "tau": null,
+            "sigma": null,
+            "flagged": true,
+            "reason": "cap"
+          },
+          {
+            "n": 37,
+            "tau": null,
+            "sigma": null,
+            "flagged": true,
+            "reason": "cap"
+          },
+          {
+            "n": 39,
+            "tau": null,
+            "sigma": null,
+            "flagged": true,
+            "reason": "cap"
+          },
+          {
+            "n": 41,
+            "tau": null,
+            "sigma": null,
+            "flagged": true,
+            "reason": "cap"
+          },
+          {
+            "n": 45,
+            "tau": null,
+            "sigma": null,
+            "flagged": true,
+            "reason": "cap"
+          },
+          {
+            "n": 49,
+            "tau": null,
+            "sigma": null,
+            "flagged": true,
+            "reason": "cap"
+          },
+          {
+            "n": 53,
+            "tau": null,
+            "sigma": null,
+            "flagged": true,
+            "reason": "cap"
+          },
+          {
+            "n": 55,
+            "tau": null,
+            "sigma": null,
+            "flagged": true,
+            "reason": "cap"
+          },
+          {
+            "n": 61,
+            "tau": null,
+            "sigma": null,
+            "flagged": true,
+            "reason": "cap"
+          }
+        ],
+        "max_tau": {
+          "n": 1951,
+          "steps": 228
+        },
+        "max_sigma": {
+          "n": 1951,
+          "steps": 228
+        }
+      }
+    ],
+    "lint": "Bounded scans are not evidence of truth; they catch probes that certify false sibling worlds."
+  },
+  "retimed_tight_fixture": {
+    "available": true,
+    "source": "Z:\\[Vibe Coded (AI)]\\CLAUDECODE\\Unresolved Math Problems\\problems\\collatz-conjecture\\experiments\\results\\branch_prefix_retimed_tight_layer_one_d18_d25_20260702.json",
+    "checks_subset": {
+      "selected_count": 5,
+      "all_selected_have_align_3": true,
+      "all_selected_have_required_delta_1": true,
+      "all_selected_have_high_ladder_credit": true
+    },
+    "counts_subset": {
+      "regime_counts": {
+        "high_after_ladder_window": 2,
+        "high_inside_active_ladder": 3
+      },
+      "event_counts": {
+        "high_ladder_step": 3,
+        "ordinary_step": 2
+      },
+      "terminal_mod_16_counts": {
+        "0": 2,
+        "12": 1,
+        "6": 2
+      },
+      "q_mod_16_counts": {
+        "3": 2,
+        "5": 2,
+        "7": 1
+      }
+    },
+    "lint": "Retimed reserve cases are stress fixtures, not proof claims."
+  },
+  "stress_families": [
+    {
+      "family": "collatz_hard_record_smoke",
+      "map": [
+        3,
+        1
+      ],
+      "starts": [
+        1,
+        3,
+        5,
+        7,
+        27,
+        703,
+        10087,
+        35655,
+        77031,
+        837799
+      ]
+    },
+    {
+      "family": "mersenne_shadows_2^k_minus_1",
+      "map": [
+        3,
+        1
+      ],
+      "starts": [
+        255,
+        4095,
+        65535,
+        1048575,
+        16777215
+      ]
+    },
+    {
+      "family": "high_ladder_states_2^a_q_minus_1",
+      "map": [
+        3,
+        1
+      ],
+      "starts": [
+        7,
+        23,
+        39,
+        15,
+        47,
+        79,
+        31,
+        95,
+        159,
+        255,
+        767,
+        1279,
+        4095,
+        12287,
+        20479
+      ]
+    },
+    {
+      "family": "low_repeat_gate_x_eq_minus_5_mod_64",
+      "map": [
+        3,
+        1
+      ],
+      "starts": [
+        59,
+        187,
+        315,
+        1083,
+        4155,
+        16443
+      ]
+    },
+    {
+      "family": "false_world_cycle_minima",
+      "map": [
+        "mixed"
+      ],
+      "starts": [
+        5,
+        17,
+        13
+      ]
+    }
+  ],
+  "collatz_stress_profile": [
+    {
+      "start": 1,
+      "end_after_depth": 1,
+      "odd_steps": 16,
+      "multiplier_excess_bits": -6.640599988,
+      "low_repeat_hits": 0,
+      "high_ladder_hits": 0
+    },
+    {
+      "start": 3,
+      "end_after_depth": 2,
+      "odd_steps": 16,
+      "multiplier_excess_bits": -6.640599988,
+      "low_repeat_hits": 0,
+      "high_ladder_hits": 0
+    },
+    {
+      "start": 5,
+      "end_after_depth": 1,
+      "odd_steps": 15,
+      "multiplier_excess_bits": -8.225562489,
+      "low_repeat_hits": 0,
+      "high_ladder_hits": 0
+    },
+    {
+      "start": 7,
+      "end_after_depth": 2,
+      "odd_steps": 16,
+      "multiplier_excess_bits": -6.640599988,
+      "low_repeat_hits": 0,
+      "high_ladder_hits": 1
+    },
+    {
+      "start": 27,
+      "end_after_depth": 638,
+      "odd_steps": 23,
+      "multiplier_excess_bits": 4.454137517,
+      "low_repeat_hits": 1,
+      "high_ladder_hits": 7
+    },
+    {
+      "start": 703,
+      "end_after_depth": 5147,
+      "odd_steps": 22,
+      "multiplier_excess_bits": 2.869175016,
+      "low_repeat_hits": 1,
+      "high_ladder_hits": 11
+    },
+    {
+      "start": 10087,
+      "end_after_depth": 73711,
+      "odd_steps": 22,
+      "multiplier_excess_bits": 2.869175016,
+      "low_repeat_hits": 1,
+      "high_ladder_hits": 9
+    },
+    {
+      "start": 35655,
+      "end_after_depth": 781595,
+      "odd_steps": 23,
+      "multiplier_excess_bits": 4.454137517,
+      "low_repeat_hits": 0,
+      "high_ladder_hits": 11
+    },
+    {
+      "start": 77031,
+      "end_after_depth": 562841,
+      "odd_steps": 22,
+      "multiplier_excess_bits": 2.869175016,
+      "low_repeat_hits": 1,
+      "high_ladder_hits": 10
+    },
+    {
+      "start": 837799,
+      "end_after_depth": 1487492288,
+      "odd_steps": 27,
+      "multiplier_excess_bits": 10.793987519,
+      "low_repeat_hits": 1,
+      "high_ladder_hits": 15
+    },
+    {
+      "start": 255,
+      "end_after_depth": 1,
+      "odd_steps": 15,
+      "multiplier_excess_bits": -8.225562489,
+      "low_repeat_hits": 0,
+      "high_ladder_hits": 6
+    },
+    {
+      "start": 65535,
+      "end_after_depth": 159614,
+      "odd_steps": 21,
+      "multiplier_excess_bits": 1.284212515,
+      "low_repeat_hits": 0,
+      "high_ladder_hits": 14
+    },
+    {
+      "start": 16777215,
+      "end_after_depth": 29787490178,
+      "odd_steps": 27,
+      "multiplier_excess_bits": 10.793987519,
+      "low_repeat_hits": 0,
+      "high_ladder_hits": 23
+    },
+    {
+      "start": 59,
+      "end_after_depth": 1,
+      "odd_steps": 15,
+      "multiplier_excess_bits": -8.225562489,
+      "low_repeat_hits": 1,
+      "high_ladder_hits": 0
+    },
+    {
+      "start": 187,
+      "end_after_depth": 1,
+      "odd_steps": 15,
+      "multiplier_excess_bits": -8.225562489,
+      "low_repeat_hits": 1,
+      "high_ladder_hits": 1
+    },
+    {
+      "start": 1019,
+      "end_after_depth": 11,
+      "odd_steps": 16,
+      "multiplier_excess_bits": -6.640599988,
+      "low_repeat_hits": 2,
+      "high_ladder_hits": 1
+    }
+  ],
+  "lint_rules": [
+    {
+      "probe": "parity_word_distribution",
+      "status": "reject_as_standalone",
+      "epsilon_sensitive": false,
+      "proof_safety_rating_0_to_10": 1,
+      "falsification_value_0_to_10": 9,
+      "why": "The residue-to-word map is a bijection for eps=+1 and eps=-1; word histograms match."
+    },
+    {
+      "probe": "odd_density_or_multiplier_excess",
+      "status": "reject_as_standalone",
+      "epsilon_sensitive": false,
+      "proof_safety_rating_0_to_10": 2,
+      "falsification_value_0_to_10": 10,
+      "why": "It is a function of the word only, so the 3n-1 false sibling inherits it unchanged."
+    },
+    {
+      "probe": "survivor_frontier_count",
+      "status": "reject_as_standalone",
+      "epsilon_sensitive": false,
+      "depth": 12,
+      "survivor_word_count": 226,
+      "proof_safety_rating_0_to_10": 2,
+      "falsification_value_0_to_10": 10,
+      "why": "The frontier count is word-only; it cannot separate Collatz from 3n-1."
+    },
+    {
+      "probe": "affine_intercept_sign",
+      "status": "allowed_input",
+      "epsilon_sensitive": true,
+      "proof_safety_rating_0_to_10": 7,
+      "falsification_value_0_to_10": 8,
+      "why": "The inhomogeneous term c_d flips sign with eps and is where +1 actually enters."
+    },
+    {
+      "probe": "positive_cycle_side_of_critical_line",
+      "status": "allowed_input",
+      "epsilon_sensitive": true,
+      "proof_safety_rating_0_to_10": 7,
+      "falsification_value_0_to_10": 9,
+      "why": "Positive cycles sit below the critical line for eps=+1 and above it for eps=-1."
+    },
+    {
+      "probe": "low_repeat_and_high_ladder_value_gates",
+      "status": "stress_required",
+      "epsilon_sensitive": "value_level_not_automatically_proof_relevant",
+      "proof_safety_rating_0_to_10": 4,
+      "falsification_value_0_to_10": 7,
+      "why": "These local structures are useful only if tied to positivity, intercept, and infinite lift control."
+    }
+  ],
+  "graduation_gate": [
+    "Name where the +1 intercept is used.",
+    "Show the claim fails on 3n-1 positive cycles for the right reason.",
+    "Show the claim fails on 5n+1 nontrivial cycles or explain why the domain excludes them.",
+    "Separate positive-integer evidence from negative-cycle and 2-adic ghost evidence.",
+    "Provide a finite falsifier command and result path before theorem wording."
+  ],
+  "does_not_claim": [
+    "Collatz is solved.",
+    "No divergent orbit exists.",
+    "No nontrivial positive Collatz cycle exists.",
+    "The listed stress probes are sufficient for a proof."
+  ],
+  "argv": [
+    ".\\experiments\\collatz_epsilon_lint.py",
+    "run",
+    "--max-start",
+    "2000",
+    "--orbit-depth",
+    "32",
+    "--distribution-depth",
+    "12",
+    "--max-align",
+    "18",
+    "--cap",
+    "4096",
+    "--out",
+    ".\\experiments\\results\\epsilon_lint.json"
+  ]
+}
