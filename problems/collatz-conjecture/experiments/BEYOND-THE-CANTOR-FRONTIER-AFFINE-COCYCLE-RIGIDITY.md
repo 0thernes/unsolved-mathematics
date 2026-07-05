@@ -1,5 +1,11 @@
 # BEYOND THE CANTOR FRONTIER — Affine Cocycle Rigidity Attack (2026-07-01)
 
+> **Status banner (2026-07-05 audit):** speculative attack sketch only. This
+> file is retained as an idea generator and falsification target; it is not an
+> accepted proof claim, not a Collatz result, and not evidence unless upgraded
+> through the audit register with exact hypotheses, runnable checks, and
+> prior-art collision notes.
+
 **Classification:** Ultra-novel, non-human-native, AI-polymathic angle. Outside all prior literature. Not density, not transcendence, not ergodic on Z2, not tree counting.
 
 ## The Core New Object: The Affine Cocycle over the 2-adic Shift

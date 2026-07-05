@@ -2,10 +2,12 @@
 
 > **Status:** internal research artifacts on an **OPEN** problem. Verification state per
 > [`AUDIT-REGISTER.md`](AUDIT-REGISTER.md) (10/189 ledger claims adversarially verified);
-> refuted/unverified proof claims live in [`unverified-claims/`](unverified-claims/README.md)
+> refuted/unverified proof claims are quarantined in
+> [`../_quarantine/unverified-claims/README.md`](../_quarantine/unverified-claims/README.md)
 > (12 files). Canonical map/cylinder
 > primitives: [`lib_collatz.py`](lib_collatz.py) — new scripts must import it. Results data
-> is indexed in [`results/INDEX.md`](results/INDEX.md). Nothing here proves the conjecture.
+> is tracked by the authoritative machine manifest [`results/MANIFEST.json`](results/MANIFEST.json);
+> [`results/INDEX.md`](results/INDEX.md) is a human snapshot and may lag. Nothing here proves the conjecture.
 
 ## Current addendum (2026-07-02)
 
@@ -43,6 +45,15 @@ The weirdness/boundary-push synthesis is
 it ranks the strangest public and local findings, separates special workflow
 from theorem breakthrough, and turns the odd residues into buildable research
 bets.
+The full-context bizarro audit is
+[`COLLATZ-BIZARRO-OMNILENS-AUDIT-2026-07-05.md`](COLLATZ-BIZARRO-OMNILENS-AUDIT-2026-07-05.md):
+it integrates the repo, public literature, four-share ingest, 104-builder QA
+lens, sibling controls, phase-collision locks, and retimed reserve-source stack
+into a mutant-world research compass.
+The stricter evidence/QA companion is
+[`COLLATZ-DEEP-REPO-AUDIT-WTF-STRATEGY-2026-07-05.md`](COLLATZ-DEEP-REPO-AUDIT-WTF-STRATEGY-2026-07-05.md):
+it records the current evidence snapshot, math-soundness split, remaining
+provenance risks, and next attack queue.
 Only the formal-methods slice is currently proof-relevant: SAT/SMT, BDD/ZDD,
 CEGAR, omega-automata/model checking, rewrite/e-graph methods, LLL, proof
 certificates, and adversarial counterexample search.
@@ -51,11 +62,11 @@ For publication scope, use
 [`GITHUB-PUBLISH-PLAN-2026-07-02.md`](GITHUB-PUBLISH-PLAN-2026-07-02.md);
 do not publish this dirty worktree with `git add -A`.
 
-## Documents (50)
+## Documents (51)
 
 | File | Category | First heading |
 |---|---|---|
-| [`11.8_MASTER_THEOREM.md`](11.8_MASTER_THEOREM.md) | Theorem/analysis doc | 11.2 IS THE BOUND — Master Defect Algebra Theorem (Updated with c* + Ultrametric) |
+| [`11.8_MASTER_THEOREM.md`](../_quarantine/experiments/11.8_MASTER_THEOREM.md) | Quarantined legacy sketch | 11.2 IS THE BOUND — Master Defect Algebra Theorem (refuted context) |
 | [`AFFINE-COCYCLE-CLAIM-AUDIT.md`](AFFINE-COCYCLE-CLAIM-AUDIT.md) | Claim audit | Affine Cocycle Repulsion — Claim Audit |
 | [`ALIGNMENT-DICHOTOMY.md`](ALIGNMENT-DICHOTOMY.md) | Instrument report | Alignment Dichotomy Repair |
 | [`AUDIT-REGISTER.md`](AUDIT-REGISTER.md) | Claim audit | Audit Register — Collatz Dossier & Experiments Suite |
@@ -69,11 +80,12 @@ do not publish this dirty worktree with `git add -A`.
 | [`BRANCH-PREFIX-LIFT-TRANSITION.md`](BRANCH-PREFIX-LIFT-TRANSITION.md) | Instrument report | Branch-Prefix Lift Transition |
 | [`BRANCH-PREFIX-RETIMED-PRESSURE.md`](BRANCH-PREFIX-RETIMED-PRESSURE.md) | Instrument report | Branch-Prefix Retimed Pressure |
 | [`CERTIFICATE-FRONTIER-THEOREMS.md`](CERTIFICATE-FRONTIER-THEOREMS.md) | Theorem/analysis doc | Certificate Frontier Theorems |
+| [`COLLATZ-BIZARRO-OMNILENS-AUDIT-2026-07-05.md`](COLLATZ-BIZARRO-OMNILENS-AUDIT-2026-07-05.md) | Synthesis / audit compass | Collatz Bizarro Omnilens Audit / Weirdness Research Compass - 2026-07-05 |
 | [`CYCLE-BAKER-HANDOFF.md`](CYCLE-BAKER-HANDOFF.md) | Instrument report | Cycle exclusion: the linear-form records and the exact Baker handoff |
 | [`CYCLE-BOUND-LAB.md`](CYCLE-BOUND-LAB.md) | Instrument report | Cycle Bound Lab — the cycle half, derived in-repo |
 | [`CYCLE-EQUATION-VALIDATION.md`](CYCLE-EQUATION-VALIDATION.md) | Instrument report | Cycle equation — exact form, validated on every known cycle |
 | [`CYCLE-GAP.md`](CYCLE-GAP.md) | Instrument report | Cycle-Gap arithmetic — how far elementary exclusion reaches, and where Baker takes over |
-| [`DEFECT_ALGEBRA.md`](DEFECT_ALGEBRA.md) | Instrument report | DEFECT_ALGEBRA — Vector Contraction for Positive Ejection (kick, excess, evo, lang, gram) |
+| [`DEFECT_ALGEBRA.md`](../_quarantine/DEFECT_ALGEBRA.md) | Quarantined legacy report | DEFECT_ALGEBRA — Vector Contraction for Positive Ejection (kick, excess, evo, lang, gram) |
 | [`DESCENT-ENTROPY-CONSOLIDATION.md`](DESCENT-ENTROPY-CONSOLIDATION.md) | Instrument report | Descent & Entropy — a rigorous, verified consolidation of the frontier structure |
 | [`DIVERGENCE-DRIFT.md`](DIVERGENCE-DRIFT.md) | Instrument report | Divergence-Drift — the divergence side is a coefficient phenomenon |
 | [`EPSILON-BARRIER.md`](EPSILON-BARRIER.md) | Instrument report | The ε-Barrier — why no parity-word argument can settle Collatz |
@@ -85,11 +97,11 @@ do not publish this dirty worktree with `git add -A`.
 | [`KICK-REPULSION-CLAIM-AUDIT.md`](KICK-REPULSION-CLAIM-AUDIT.md) | Claim audit | Kick Repulsion Claim Audit |
 | [`KICK-REPULSION-INSIGHT.md`](KICK-REPULSION-INSIGHT.md) | Instrument report | KICK-REPULSION INSIGHT — The +1 as the separating force (AI-native angle) |
 | [`LOW-ALIGNMENT-STRUCTURE.md`](LOW-ALIGNMENT-STRUCTURE.md) | Instrument report | Low-Alignment Structure |
-| [`P-ETALE-FUNDAMENTAL-GROUPOID-RESOLUTION.md`](P-ETALE-FUNDAMENTAL-GROUPOID-RESOLUTION.md) | Instrument report | P AS ETALE FUNDAMENTAL GROUPOID — Galois Action Forces Splitting for Finite Support (Beyon |
-| [`P-ETALE-TOPOS-INTERNAL-C.md`](P-ETALE-TOPOS-INTERNAL-C.md) | Instrument report | P AS THE ETALE TOPOS — C is Internally True (Beyond the Site, the Logic Layer) |
-| [`P-ETALE-TOPOS-INTERNAL-RESOLUTION.md`](P-ETALE-TOPOS-INTERNAL-RESOLUTION.md) | Instrument report | P AS THE ETALE TOPOS — C is Internally True (Beyond Pro-Etale Site, the Logic Layer) |
-| [`P-PDIV-GROUP-RESOLUTION.md`](P-PDIV-GROUP-RESOLUTION.md) | Instrument report | P AS P-DIVISIBLE GROUP — Finite Torsion for Positives, Identity C (Beyond All Prior Layers |
-| [`P-PROETALE-SITE-RESOLUTION.md`](P-PROETALE-SITE-RESOLUTION.md) | Instrument report | P AS PRO-ETALE SITE — The Fundamental Groupoid Forces Descent for Positives (Next 1/1) |
+| [`P-ETALE-FUNDAMENTAL-GROUPOID-RESOLUTION.md`](../_quarantine/experiments/P-ETALE-FUNDAMENTAL-GROUPOID-RESOLUTION.md) | Quarantined legacy report | P AS ETALE FUNDAMENTAL GROUPOID — Galois Action Forces Splitting for Finite Support (Beyond prior) |
+| [`P-ETALE-TOPOS-INTERNAL-C.md`](../_quarantine/P-ETALE-TOPOS-INTERNAL-C.md) | Quarantined legacy report | P AS THE ETALE TOPOS — C is Internally True (Beyond the Site, the Logic Layer) |
+| [`P-ETALE-TOPOS-INTERNAL-RESOLUTION.md`](../_quarantine/experiments/P-ETALE-TOPOS-INTERNAL-RESOLUTION.md) | Quarantined legacy report | P AS THE ETALE TOPOS — C is Internally True (Beyond Pro-Etale Site, the Logic Layer) |
+| [`P-PDIV-GROUP-RESOLUTION.md`](../_quarantine/experiments/P-PDIV-GROUP-RESOLUTION.md) | Quarantined legacy report | P AS P-DIVISIBLE GROUP — Finite Torsion for Positives, Identity C (Beyond all prior layers) |
+| [`P-PROETALE-SITE-RESOLUTION.md`](../_quarantine/experiments/P-PROETALE-SITE-RESOLUTION.md) | Quarantined legacy report | P AS PRO-ETALE SITE — The Fundamental Groupoid Forces Descent for Positives (Next 1/1) |
 | [`PROOF-SKETCH-AFFINE-COCYCLE-RIGIDITY-2026.md`](PROOF-SKETCH-AFFINE-COCYCLE-RIGIDITY-2026.md) | Unreviewed attack sketch | PROOF SKETCH: Collatz Conjecture via Affine Cocycle Repulsion Rigidity |
 | [`RECORD-BAND.md`](RECORD-BAND.md) | Instrument report | Record Band — an explicit ceiling on every possible Terras violation |
 | [`REDUCTION.md`](REDUCTION.md) | Theorem/analysis doc | Master Reduction — where Collatz actually lives after Sessions 1–6 |
@@ -102,9 +114,9 @@ do not publish this dirty worktree with `git add -A`.
 | [`TERRAS-LEDGER.md`](TERRAS-LEDGER.md) | Research log | Terras Verification Ledger |
 | [`THRESHOLD-ENVELOPE.md`](THRESHOLD-ENVELOPE.md) | Instrument report | Threshold Envelope — thresholds are vacuous at every depth (proved) |
 | [`beyond_xai_reinforcement.md`](beyond_xai_reinforcement.md) | Unreviewed attack sketch | beyond_xai --all Reinforcement (2026-07-02) |
-| [`defect_algebra_formal_proof.md`](defect_algebra_formal_proof.md) | Instrument report | Defect Algebra Formal Proof (Contraction and Index Bound) |
-| [`defect_algebra_rigorous_bound.md`](defect_algebra_rigorous_bound.md) | Instrument report | Defect Algebra Rigorous Bound: ||A||_∞ = 0.92 and 11.2 b Ejection |
-| [`defect_algebra_rigorous_proof.md`](defect_algebra_rigorous_proof.md) | Instrument report | Defect Algebra Rigorous Proof: Contraction and 12b Ejection Bound |
+| [`defect_algebra_formal_proof.md`](../_quarantine/experiments/defect_algebra_formal_proof.md) | Quarantined legacy proof file | Defect Algebra Formal Proof (Contraction and Index Bound) |
+| [`defect_algebra_rigorous_bound.md`](../_quarantine/defect_algebra_rigorous_bound.md) | Quarantined legacy proof file | Defect Algebra Rigorous Bound: ||A||_∞ = 0.92 and 11.2 b Ejection |
+| [`defect_algebra_rigorous_proof.md`](../_quarantine/defect_algebra_rigorous_proof.md) | Quarantined legacy proof file | Defect Algebra Rigorous Proof: Contraction and 12b Ejection Bound |
 
 ## Instruments (71)
 
@@ -113,8 +125,8 @@ do not publish this dirty worktree with `git add -A`.
 | [`affine_cocycle_claim_audit.py`](affine_cocycle_claim_audit.py) |  |
 | [`affine_cocycle_repulsion_analyzer.py`](affine_cocycle_repulsion_analyzer.py) |  |
 | [`alignment_dichotomy_analyzer.py`](alignment_dichotomy_analyzer.py) | Test the low-alignment / high-alignment descent dichotomy. |
-| [`beyond_evo_potential.py`](beyond_evo_potential.py) | Evolutionary discovery of Lyapunov/descent certificate V(n) for Collatz frontier shadows. |
-| [`beyond_xai_novel_attacks.py`](beyond_xai_novel_attacks.py) |  |
+| [`beyond_evo_potential.py`](../_quarantine/beyond_evo_potential.py) | Quarantined/disabled |
+| [`beyond_xai_novel_attacks.py`](../_quarantine/beyond_xai_novel_attacks.py) | Quarantined/disabled |
 | [`boundary_family_analyzer.py`](boundary_family_analyzer.py) | Analyze finite positive shadows of the all-odd 2-adic boundary path. |
 | [`branch_potential_analyzer.py`](branch_potential_analyzer.py) | Test a combined low-rank / high-ladder structural potential. |
 | [`branch_potential_stress.py`](branch_potential_stress.py) | Adversarial stress tests for the branch-potential ledger. |
@@ -124,7 +136,7 @@ do not publish this dirty worktree with `git add -A`.
 | [`branch_prefix_lift_transition.py`](branch_prefix_lift_transition.py) | Parent-child transition audit for prefix branch-potential lifts. |
 | [`branch_prefix_retimed_pressure.py`](branch_prefix_retimed_pressure.py) | Trace retimed-pressure lift transitions. |
 | [`certificate_depth_scan.py`](certificate_depth_scan.py) | Scan positive integers for their first usable descent-certificate depth. |
-| [`chaitin_surprise_counter.py`](chaitin_surprise_counter.py) |  |
+| [`chaitin_surprise_counter.py`](../_quarantine/chaitin_surprise_counter.py) | Quarantined/disabled |
 | [`codex_k_surprise_threshold.py`](codex_k_surprise_threshold.py) | P^21 Kolmogorov Surprise Pump. |
 | [`collatz_beyond_frontier.py`](collatz_beyond_frontier.py) |  |
 | [`collatz_frontier_geometry.py`](collatz_frontier_geometry.py) | Frontier geometry of the Collatz certificate program. |
@@ -141,9 +153,9 @@ do not publish this dirty worktree with `git add -A`.
 | [`cycle_gap_check.py`](cycle_gap_check.py) |  |
 | [`debt_phase_analyzer.py`](debt_phase_analyzer.py) | Dual-debt phase analysis for hard Collatz certificate examples. |
 | [`decursive_repulsion_grammar.py`](decursive_repulsion_grammar.py) |  |
-| [`defect_algebra.py`](defect_algebra.py) | DEFECT ALGEBRA (1/1 structure) |
-| [`defect_algebra_exp.py`](defect_algebra_exp.py) |  |
-| [`defect_spectral_sharp.py`](defect_spectral_sharp.py) | DEFECT_SPECTRAL_SHARP.py (experiments variant) - YOLO 1/1 PURE MATH ESCALATION |
+| [`defect_algebra.py`](../_quarantine/defect_algebra.py) | Quarantined/disabled |
+| [`defect_algebra_exp.py`](../_quarantine/defect_algebra_exp.py) | Quarantined/disabled |
+| [`defect_spectral_sharp.py`](../_quarantine/defect_spectral_sharp.py) | Quarantined/disabled — legacy archive |
 | [`descent_entropy.py`](descent_entropy.py) |  |
 | [`divergence_drift_check.py`](divergence_drift_check.py) |  |
 | [`endpoint_terminal_analyzer.py`](endpoint_terminal_analyzer.py) | Inspect why rare motif-cover outliers terminate after descent. |

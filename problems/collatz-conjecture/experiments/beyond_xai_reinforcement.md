@@ -1,5 +1,10 @@
 # beyond_xai --all Reinforcement (2026-07-02)
 
+> **Status banner (2026-07-05 audit):** finite experimental reinforcement
+> only. The observed ratios and negative-drift signals are useful stress data
+> and theorem-target hints; they do not prove a universal bound and do not
+> close Collatz.
+
 Task completed. New data layer on top of kick/cocycle + subagent attacks.
 
 ## Key Outputs

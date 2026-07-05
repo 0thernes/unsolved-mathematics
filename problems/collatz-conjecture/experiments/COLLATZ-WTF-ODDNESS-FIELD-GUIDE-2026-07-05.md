@@ -28,8 +28,10 @@ The conjecture is still open. The public high-water marks remain:
   combined with modern verification.
 - Generalized Collatz work: broad Collatz-like systems can be undecidable, so a
   successful proof must exploit the specific `3` and `2` arithmetic.
-- CCChallenge: the literature is large enough to need formalization; the field
-  is moving toward proof-assistant hygiene, not accepting informal proof prose.
+- CCChallenge: the literature is large enough to need formalization; live check
+  on 2026-07-05 shows `1/362` goal papers formalised, while this repo keeps a
+  separate 370-row local bibliography snapshot for triage. The field is moving
+  toward proof-assistant hygiene, not accepting informal proof prose.
 
 The repo's rare asset is not that it proves Collatz. It does not. The rare asset
 is a dense, reproducible weirdness lab: exact local identities, sibling controls,
@@ -82,7 +84,7 @@ pressure artifacts all living together with their failure walls named.
 | 30 | The near-miss cycle denominators are themselves stress objects | Cycle labs | Continued-fraction denominators become concrete obstruction landmarks | Use them to test any cycle-side claim | Treating "astronomically unlikely" as impossible |
 | 31 | Claimed proofs fail in repeatable archetypes | `attempts.md`; no-repeat atlases; Opfer-style history | False proofs are patterned, not random | Turn archetypes into automated QA checks | Being impressed by polished prose |
 | 32 | LLMs can generate both useful theorem targets and fluent false bridges | Share ingest; failed-attempts atlases | The workflow is new; the validation problem is old | Use models for search, never as proof authority | Prompt-as-proof |
-| 33 | CCChallenge shows the literature is not just big; it is underformalized | ccchallenge.org | 370 entries, tiny formalized fraction | Formalize accepted lemmas and proof obligations | Treating informal consensus as machine-checkable |
+| 33 | CCChallenge shows the literature is not just big; it is underformalized | ccchallenge.org | Live goal `1/362` formalised; local repo snapshot has 370 bibliography rows | Formalize accepted lemmas and proof obligations | Treating informal consensus as machine-checkable |
 | 34 | Rewrite-system termination can be equivalent to Collatz | Yolcu-Aaronson-Heule line; CCChallenge entry | Automated theorem proving can touch meaningful weakenings | Generate certified weakenings and counterexamples | Thinking equivalence makes it easier |
 | 35 | Operator algebra, `p,q`-adic, polynomial, and geometric analogues keep appearing | 2024-2026 literature sweep | Collatz casts shadows in many mathematical languages | Mine analogues for falsifiers and invariants | Mistaking a new language for progress |
 

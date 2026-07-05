@@ -11,7 +11,7 @@
     "proved_empty": true,
     "reason": "max_tau=535 < tau_min=301994: no Terras violation can live in this band past lo"
   },
-  "elapsed_seconds": 2114.6,
+  "elapsed_seconds": 2057.2,
   "gamma_record_pinch": {
     "gamma_ceiling_heuristic": 19.982226683919038,
     "measured_max_gamma": 14.7426,

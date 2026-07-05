@@ -1,5 +1,10 @@
 # RIGIDITY LEMMA CANDIDATE — Finite Repulsions + Finite Support Force Termination (AI 1/1)
 
+> **Status banner (2026-07-05 audit):** candidate lemma and research program
+> only. The language below is preserved as the original exploratory note, but
+> the claims are not accepted until each implication is formalized, tested
+> against sibling controls, and entered into `AUDIT-REGISTER.md`.
+
 **Generated:** 2026-07-01 continuation
 **From data:** repulsion_escalation.json (this session), positive_kick_probe, beyond meta-recursive counts, exact frontier escape runs.
 
