@@ -1,0 +1,1391 @@
+{
+  "all_checks_passed": true,
+  "checks": [
+    {
+      "detail": {
+        "starts_reaching_one_within_cap": 24999,
+        "starts_scanned": 24999
+      },
+      "name": "all_scanned_positive_starts_reach_one_within_cap",
+      "passed": true
+    },
+    {
+      "detail": {
+        "r16_hit_fraction": 0.004574728444,
+        "r16_lock_hits": 1258,
+        "r16_source_visits": 274989
+      },
+      "name": "r16_lock_hits_are_sparse",
+      "passed": true
+    },
+    {
+      "detail": {
+        "r16_hit_after_hit": 12,
+        "r16_observed_over_expected_hit_after_hit": 0.923779542358,
+        "r16_previous_hit_transitions": 1258
+      },
+      "name": "r16_hit_after_hit_not_excessive_against_local_coverage_baseline",
+      "passed": true
+    },
+    {
+      "detail": {
+        "r16_max_hit_streak": 2
+      },
+      "name": "r16_max_hit_streak_at_most_two_for_current_scan",
+      "passed": true
+    },
+    {
+      "detail": {
+        "r12_max_hit_streak": 4,
+        "r12_observed_over_expected_hit_after_hit": 3.690432580947
+      },
+      "name": "r12_medium_precision_correlation_warning_present",
+      "passed": true
+    }
+  ],
+  "elapsed_seconds": 15.214147,
+  "interpretation": "This probes whether lock hits persist along actual positive orbits. Ratios near the local-coverage expectation support the codimension route; large hit-after-hit excess would expose a counter-pattern to explain before claiming cumulative lock loss.",
+  "library": {
+    "canonical_primitive_sources": 244,
+    "max_source_depth": 13,
+    "source_depths": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "unique_target_spines": 244
+  },
+  "parameters": {
+    "excess_bits": [
+      8,
+      12,
+      16
+    ],
+    "max_depth": 13,
+    "max_steps": 512,
+    "min_source_depth": 3,
+    "odd_starts_only": true,
+    "start_limit": 50000
+  },
+  "result": "finite measurement only; not a proof of Collatz",
+  "scan": {
+    "by_excess_bits": {
+      "12": {
+        "expected_hit_after_hit_from_local_coverage": 4235.0048828125,
+        "expected_hits_from_local_coverage": 26880.9853515625,
+        "hit_after_hit": 15629,
+        "hit_after_hit_examples": [
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 5,
+            "excess_bits": 12,
+            "local_coverage_fraction": 0.0927734375,
+            "lock_residue_count": 190,
+            "n": 22,
+            "source": "011",
+            "source_depth": 3,
+            "start": 25,
+            "step": 5,
+            "unit_residue": 1
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 8,
+            "excess_bits": 12,
+            "local_coverage_fraction": 0.11669921875,
+            "lock_residue_count": 239,
+            "n": 638,
+            "source": "0111111",
+            "source_depth": 7,
+            "start": 27,
+            "step": 32,
+            "unit_residue": 759
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 8,
+            "excess_bits": 12,
+            "local_coverage_fraction": 0.11669921875,
+            "lock_residue_count": 239,
+            "n": 638,
+            "source": "0111111",
+            "source_depth": 7,
+            "start": 31,
+            "step": 29,
+            "unit_residue": 759
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 5,
+            "excess_bits": 12,
+            "local_coverage_fraction": 0.0927734375,
+            "lock_residue_count": 190,
+            "n": 22,
+            "source": "011",
+            "source_depth": 3,
+            "start": 33,
+            "step": 7,
+            "unit_residue": 1
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 5,
+            "excess_bits": 12,
+            "local_coverage_fraction": 0.0927734375,
+            "lock_residue_count": 190,
+            "n": 22,
+            "source": "011",
+            "source_depth": 3,
+            "start": 39,
+            "step": 12,
+            "unit_residue": 1
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 8,
+            "excess_bits": 12,
+            "local_coverage_fraction": 0.11669921875,
+            "lock_residue_count": 239,
+            "n": 638,
+            "source": "0111111",
+            "source_depth": 7,
+            "start": 41,
+            "step": 31,
+            "unit_residue": 759
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 8,
+            "excess_bits": 12,
+            "local_coverage_fraction": 0.11669921875,
+            "lock_residue_count": 239,
+            "n": 638,
+            "source": "0111111",
+            "source_depth": 7,
+            "start": 47,
+            "step": 28,
+            "unit_residue": 759
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 8,
+            "excess_bits": 12,
+            "local_coverage_fraction": 0.11669921875,
+            "lock_residue_count": 239,
+            "n": 638,
+            "source": "0111111",
+            "source_depth": 7,
+            "start": 55,
+            "step": 33,
+            "unit_residue": 759
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 5,
+            "excess_bits": 12,
+            "local_coverage_fraction": 0.0927734375,
+            "lock_residue_count": 190,
+            "n": 22,
+            "source": "011",
+            "source_depth": 3,
+            "start": 59,
+            "step": 11,
+            "unit_residue": 1
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 8,
+            "excess_bits": 12,
+            "local_coverage_fraction": 0.11669921875,
+            "lock_residue_count": 239,
+            "n": 638,
+            "source": "0111111",
+            "source_depth": 7,
+            "start": 63,
+            "step": 30,
+            "unit_residue": 759
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 5,
+            "excess_bits": 12,
+            "local_coverage_fraction": 0.0927734375,
+            "lock_residue_count": 190,
+            "n": 22,
+            "source": "011",
+            "source_depth": 3,
+            "start": 67,
+            "step": 8,
+            "unit_residue": 1
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 8,
+            "excess_bits": 12,
+            "local_coverage_fraction": 0.11669921875,
+            "lock_residue_count": 239,
+            "n": 638,
+            "source": "0111111",
+            "source_depth": 7,
+            "start": 71,
+            "step": 27,
+            "unit_residue": 759
+          }
+        ],
+        "hit_after_hit_fraction": 0.3920383284,
+        "hit_after_miss": 27958,
+        "hit_after_miss_fraction": 0.132869492484,
+        "hit_examples": [
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 5,
+            "excess_bits": 12,
+            "local_coverage_fraction": 0.0927734375,
+            "lock_residue_count": 190,
+            "n": 22,
+            "source": "011",
+            "source_depth": 3,
+            "start": 19,
+            "step": 3,
+            "unit_residue": 1
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 4,
+            "excess_bits": 12,
+            "local_coverage_fraction": 0.11669921875,
+            "lock_residue_count": 239,
+            "n": 38,
+            "source": "011",
+            "source_depth": 3,
+            "start": 25,
+            "step": 1,
+            "unit_residue": 3
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 5,
+            "excess_bits": 12,
+            "local_coverage_fraction": 0.0927734375,
+            "lock_residue_count": 190,
+            "n": 22,
+            "source": "011",
+            "source_depth": 3,
+            "start": 25,
+            "step": 5,
+            "unit_residue": 1
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 11,
+            "excess_bits": 12,
+            "local_coverage_fraction": 0.11669921875,
+            "lock_residue_count": 239,
+            "n": 566,
+            "source": "0110111111",
+            "source_depth": 10,
+            "start": 27,
+            "step": 29,
+            "unit_residue": 291
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 8,
+            "excess_bits": 12,
+            "local_coverage_fraction": 0.11669921875,
+            "lock_residue_count": 239,
+            "n": 638,
+            "source": "0111111",
+            "source_depth": 7,
+            "start": 27,
+            "step": 32,
+            "unit_residue": 759
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 5,
+            "excess_bits": 12,
+            "local_coverage_fraction": 0.0927734375,
+            "lock_residue_count": 190,
+            "n": 22,
+            "source": "011",
+            "source_depth": 3,
+            "start": 29,
+            "step": 2,
+            "unit_residue": 1
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 11,
+            "excess_bits": 12,
+            "local_coverage_fraction": 0.11669921875,
+            "lock_residue_count": 239,
+            "n": 566,
+            "source": "0110111111",
+            "source_depth": 10,
+            "start": 31,
+            "step": 26,
+            "unit_residue": 291
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 8,
+            "excess_bits": 12,
+            "local_coverage_fraction": 0.11669921875,
+            "lock_residue_count": 239,
+            "n": 638,
+            "source": "0111111",
+            "source_depth": 7,
+            "start": 31,
+            "step": 29,
+            "unit_residue": 759
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 4,
+            "excess_bits": 12,
+            "local_coverage_fraction": 0.11669921875,
+            "lock_residue_count": 239,
+            "n": 38,
+            "source": "011",
+            "source_depth": 3,
+            "start": 33,
+            "step": 3,
+            "unit_residue": 3
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 5,
+            "excess_bits": 12,
+            "local_coverage_fraction": 0.0927734375,
+            "lock_residue_count": 190,
+            "n": 22,
+            "source": "011",
+            "source_depth": 3,
+            "start": 33,
+            "step": 7,
+            "unit_residue": 1
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 4,
+            "excess_bits": 12,
+            "local_coverage_fraction": 0.11669921875,
+            "lock_residue_count": 239,
+            "n": 38,
+            "source": "011",
+            "source_depth": 3,
+            "start": 39,
+            "step": 8,
+            "unit_residue": 3
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 5,
+            "excess_bits": 12,
+            "local_coverage_fraction": 0.0927734375,
+            "lock_residue_count": 190,
+            "n": 22,
+            "source": "011",
+            "source_depth": 3,
+            "start": 39,
+            "step": 12,
+            "unit_residue": 1
+          }
+        ],
+        "hit_fraction": 0.168348552124,
+        "lock_hits": 46294,
+        "longest_streak_examples": [
+          {
+            "max_hit_streak": 4,
+            "source_visits_in_orbit": 4,
+            "start": 16185
+          },
+          {
+            "max_hit_streak": 4,
+            "source_visits_in_orbit": 17,
+            "start": 48951
+          },
+          {
+            "max_hit_streak": 3,
+            "source_visits_in_orbit": 19,
+            "start": 763
+          },
+          {
+            "max_hit_streak": 3,
+            "source_visits_in_orbit": 18,
+            "start": 859
+          },
+          {
+            "max_hit_streak": 3,
+            "source_visits_in_orbit": 16,
+            "start": 921
+          },
+          {
+            "max_hit_streak": 3,
+            "source_visits_in_orbit": 17,
+            "start": 967
+          },
+          {
+            "max_hit_streak": 3,
+            "source_visits_in_orbit": 20,
+            "start": 1017
+          },
+          {
+            "max_hit_streak": 3,
+            "source_visits_in_orbit": 21,
+            "start": 1071
+          },
+          {
+            "max_hit_streak": 3,
+            "source_visits_in_orbit": 19,
+            "start": 1145
+          },
+          {
+            "max_hit_streak": 3,
+            "source_visits_in_orbit": 16,
+            "start": 1225
+          },
+          {
+            "max_hit_streak": 3,
+            "source_visits_in_orbit": 18,
+            "start": 1289
+          },
+          {
+            "max_hit_streak": 3,
+            "source_visits_in_orbit": 17,
+            "start": 1451
+          }
+        ],
+        "max_hit_streak": 4,
+        "observed_over_expected_hit_after_hit": 3.690432580947,
+        "observed_over_expected_hits": 1.722183892984,
+        "orbit_max_hit_streak_histogram": {
+          "0": 6487,
+          "1": 5007,
+          "2": 12927,
+          "3": 576,
+          "4": 2
+        },
+        "orbits_with_any_hit": 18512,
+        "previous_hit_transitions": 39866,
+        "previous_miss_transitions": 210417,
+        "same_source_hit_after_hit": 4548,
+        "same_source_transitions": 34497,
+        "source_visit_transitions": 250283,
+        "source_visits": 274989
+      },
+      "16": {
+        "expected_hit_after_hit_from_local_coverage": 12.990112304688,
+        "expected_hits_from_local_coverage": 2672.0048828125,
+        "hit_after_hit": 12,
+        "hit_after_hit_examples": [
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 8,
+            "excess_bits": 16,
+            "local_coverage_fraction": 0.012786865234,
+            "lock_residue_count": 419,
+            "n": 31292,
+            "source": "001111",
+            "source_depth": 6,
+            "start": 10987,
+            "step": 8,
+            "unit_residue": 46383
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 8,
+            "excess_bits": 16,
+            "local_coverage_fraction": 0.012786865234,
+            "lock_residue_count": 419,
+            "n": 31292,
+            "source": "001111",
+            "source_depth": 6,
+            "start": 12361,
+            "step": 5,
+            "unit_residue": 46383
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 8,
+            "excess_bits": 16,
+            "local_coverage_fraction": 0.012786865234,
+            "lock_residue_count": 419,
+            "n": 31292,
+            "source": "001111",
+            "source_depth": 6,
+            "start": 14649,
+            "step": 10,
+            "unit_residue": 46383
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 8,
+            "excess_bits": 16,
+            "local_coverage_fraction": 0.012786865234,
+            "lock_residue_count": 419,
+            "n": 31292,
+            "source": "001111",
+            "source_depth": 6,
+            "start": 16481,
+            "step": 7,
+            "unit_residue": 46383
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 8,
+            "excess_bits": 16,
+            "local_coverage_fraction": 0.012786865234,
+            "lock_residue_count": 419,
+            "n": 31292,
+            "source": "001111",
+            "source_depth": 6,
+            "start": 21975,
+            "step": 9,
+            "unit_residue": 46383
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 8,
+            "excess_bits": 16,
+            "local_coverage_fraction": 0.012786865234,
+            "lock_residue_count": 419,
+            "n": 31292,
+            "source": "001111",
+            "source_depth": 6,
+            "start": 26043,
+            "step": 14,
+            "unit_residue": 46383
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 8,
+            "excess_bits": 16,
+            "local_coverage_fraction": 0.012786865234,
+            "lock_residue_count": 419,
+            "n": 31292,
+            "source": "001111",
+            "source_depth": 6,
+            "start": 29299,
+            "step": 11,
+            "unit_residue": 46383
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 8,
+            "excess_bits": 16,
+            "local_coverage_fraction": 0.012786865234,
+            "lock_residue_count": 419,
+            "n": 31292,
+            "source": "001111",
+            "source_depth": 6,
+            "start": 32963,
+            "step": 8,
+            "unit_residue": 46383
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 8,
+            "excess_bits": 16,
+            "local_coverage_fraction": 0.012786865234,
+            "lock_residue_count": 419,
+            "n": 31292,
+            "source": "001111",
+            "source_depth": 6,
+            "start": 39065,
+            "step": 13,
+            "unit_residue": 46383
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 8,
+            "excess_bits": 16,
+            "local_coverage_fraction": 0.012786865234,
+            "lock_residue_count": 419,
+            "n": 31292,
+            "source": "001111",
+            "source_depth": 6,
+            "start": 43949,
+            "step": 10,
+            "unit_residue": 46383
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 8,
+            "excess_bits": 16,
+            "local_coverage_fraction": 0.012786865234,
+            "lock_residue_count": 419,
+            "n": 31292,
+            "source": "001111",
+            "source_depth": 6,
+            "start": 46299,
+            "step": 18,
+            "unit_residue": 46383
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 8,
+            "excess_bits": 16,
+            "local_coverage_fraction": 0.012786865234,
+            "lock_residue_count": 419,
+            "n": 31292,
+            "source": "001111",
+            "source_depth": 6,
+            "start": 49445,
+            "step": 7,
+            "unit_residue": 46383
+          }
+        ],
+        "hit_after_hit_fraction": 0.009538950715,
+        "hit_after_miss": 1021,
+        "hit_after_miss_fraction": 0.004099989961,
+        "hit_examples": [
+          {
+            "alignment_class_m_mod_d": 3,
+            "alignment_m": 13,
+            "excess_bits": 16,
+            "local_coverage_fraction": 0.003967285156,
+            "lock_residue_count": 130,
+            "n": 1700,
+            "source": "0010111111",
+            "source_depth": 10,
+            "start": 223,
+            "step": 5,
+            "unit_residue": 47673
+          },
+          {
+            "alignment_class_m_mod_d": 3,
+            "alignment_m": 13,
+            "excess_bits": 16,
+            "local_coverage_fraction": 0.003967285156,
+            "lock_residue_count": 130,
+            "n": 1700,
+            "source": "0010111111",
+            "source_depth": 10,
+            "start": 297,
+            "step": 7,
+            "unit_residue": 47673
+          },
+          {
+            "alignment_class_m_mod_d": 3,
+            "alignment_m": 13,
+            "excess_bits": 16,
+            "local_coverage_fraction": 0.003967285156,
+            "lock_residue_count": 130,
+            "n": 1700,
+            "source": "0010111111",
+            "source_depth": 10,
+            "start": 335,
+            "step": 4,
+            "unit_residue": 47673
+          },
+          {
+            "alignment_class_m_mod_d": 3,
+            "alignment_m": 13,
+            "excess_bits": 16,
+            "local_coverage_fraction": 0.003967285156,
+            "lock_residue_count": 130,
+            "n": 1700,
+            "source": "0010111111",
+            "source_depth": 10,
+            "start": 503,
+            "step": 3,
+            "unit_residue": 47673
+          },
+          {
+            "alignment_class_m_mod_d": 3,
+            "alignment_m": 13,
+            "excess_bits": 16,
+            "local_coverage_fraction": 0.003967285156,
+            "lock_residue_count": 130,
+            "n": 1700,
+            "source": "0010111111",
+            "source_depth": 10,
+            "start": 595,
+            "step": 8,
+            "unit_residue": 47673
+          },
+          {
+            "alignment_class_m_mod_d": 3,
+            "alignment_m": 13,
+            "excess_bits": 16,
+            "local_coverage_fraction": 0.003967285156,
+            "lock_residue_count": 130,
+            "n": 1700,
+            "source": "0010111111",
+            "source_depth": 10,
+            "start": 755,
+            "step": 2,
+            "unit_residue": 47673
+          },
+          {
+            "alignment_class_m_mod_d": 3,
+            "alignment_m": 13,
+            "excess_bits": 16,
+            "local_coverage_fraction": 0.003967285156,
+            "lock_residue_count": 130,
+            "n": 1700,
+            "source": "0010111111",
+            "source_depth": 10,
+            "start": 793,
+            "step": 10,
+            "unit_residue": 47673
+          },
+          {
+            "alignment_class_m_mod_d": 3,
+            "alignment_m": 13,
+            "excess_bits": 16,
+            "local_coverage_fraction": 0.003967285156,
+            "lock_residue_count": 130,
+            "n": 1700,
+            "source": "0010111111",
+            "source_depth": 10,
+            "start": 893,
+            "step": 7,
+            "unit_residue": 47673
+          },
+          {
+            "alignment_class_m_mod_d": 3,
+            "alignment_m": 13,
+            "excess_bits": 16,
+            "local_coverage_fraction": 0.003967285156,
+            "lock_residue_count": 130,
+            "n": 1700,
+            "source": "0010111111",
+            "source_depth": 10,
+            "start": 939,
+            "step": 15,
+            "unit_residue": 47673
+          },
+          {
+            "alignment_class_m_mod_d": 3,
+            "alignment_m": 13,
+            "excess_bits": 16,
+            "local_coverage_fraction": 0.003967285156,
+            "lock_residue_count": 130,
+            "n": 1700,
+            "source": "0010111111",
+            "source_depth": 10,
+            "start": 1057,
+            "step": 12,
+            "unit_residue": 47673
+          },
+          {
+            "alignment_class_m_mod_d": 3,
+            "alignment_m": 13,
+            "excess_bits": 16,
+            "local_coverage_fraction": 0.003967285156,
+            "lock_residue_count": 130,
+            "n": 1700,
+            "source": "0010111111",
+            "source_depth": 10,
+            "start": 1133,
+            "step": 1,
+            "unit_residue": 47673
+          },
+          {
+            "alignment_class_m_mod_d": 3,
+            "alignment_m": 13,
+            "excess_bits": 16,
+            "local_coverage_fraction": 0.003967285156,
+            "lock_residue_count": 130,
+            "n": 1700,
+            "source": "0010111111",
+            "source_depth": 10,
+            "start": 1189,
+            "step": 9,
+            "unit_residue": 47673
+          }
+        ],
+        "hit_fraction": 0.004574728444,
+        "lock_hits": 1258,
+        "longest_streak_examples": [
+          {
+            "max_hit_streak": 2,
+            "source_visits_in_orbit": 12,
+            "start": 10987
+          },
+          {
+            "max_hit_streak": 2,
+            "source_visits_in_orbit": 11,
+            "start": 12361
+          },
+          {
+            "max_hit_streak": 2,
+            "source_visits_in_orbit": 13,
+            "start": 14649
+          },
+          {
+            "max_hit_streak": 2,
+            "source_visits_in_orbit": 12,
+            "start": 16481
+          },
+          {
+            "max_hit_streak": 2,
+            "source_visits_in_orbit": 12,
+            "start": 21975
+          },
+          {
+            "max_hit_streak": 2,
+            "source_visits_in_orbit": 13,
+            "start": 26043
+          },
+          {
+            "max_hit_streak": 2,
+            "source_visits_in_orbit": 12,
+            "start": 29299
+          },
+          {
+            "max_hit_streak": 2,
+            "source_visits_in_orbit": 12,
+            "start": 32963
+          },
+          {
+            "max_hit_streak": 2,
+            "source_visits_in_orbit": 13,
+            "start": 39065
+          },
+          {
+            "max_hit_streak": 2,
+            "source_visits_in_orbit": 12,
+            "start": 43949
+          },
+          {
+            "max_hit_streak": 2,
+            "source_visits_in_orbit": 13,
+            "start": 46299
+          },
+          {
+            "max_hit_streak": 2,
+            "source_visits_in_orbit": 12,
+            "start": 49445
+          }
+        ],
+        "max_hit_streak": 2,
+        "observed_over_expected_hit_after_hit": 0.923779542358,
+        "observed_over_expected_hits": 0.47080752288,
+        "orbit_max_hit_streak_histogram": {
+          "0": 23772,
+          "1": 1215,
+          "2": 12
+        },
+        "orbits_with_any_hit": 1227,
+        "previous_hit_transitions": 1258,
+        "previous_miss_transitions": 249025,
+        "same_source_hit_after_hit": 0,
+        "same_source_transitions": 34497,
+        "source_visit_transitions": 250283,
+        "source_visits": 274989
+      },
+      "8": {
+        "expected_hit_after_hit_from_local_coverage": 26426.2734375,
+        "expected_hits_from_local_coverage": 90688.0390625,
+        "hit_after_hit": 32312,
+        "hit_after_hit_examples": [
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 5,
+            "excess_bits": 8,
+            "local_coverage_fraction": 0.328125,
+            "lock_residue_count": 42,
+            "n": 22,
+            "source": "011",
+            "source_depth": 3,
+            "start": 25,
+            "step": 5,
+            "unit_residue": 1
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 8,
+            "excess_bits": 8,
+            "local_coverage_fraction": 0.3671875,
+            "lock_residue_count": 47,
+            "n": 638,
+            "source": "0111111",
+            "source_depth": 7,
+            "start": 27,
+            "step": 32,
+            "unit_residue": 247
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 8,
+            "excess_bits": 8,
+            "local_coverage_fraction": 0.3671875,
+            "lock_residue_count": 47,
+            "n": 638,
+            "source": "0111111",
+            "source_depth": 7,
+            "start": 31,
+            "step": 29,
+            "unit_residue": 247
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 5,
+            "excess_bits": 8,
+            "local_coverage_fraction": 0.328125,
+            "lock_residue_count": 42,
+            "n": 22,
+            "source": "011",
+            "source_depth": 3,
+            "start": 33,
+            "step": 7,
+            "unit_residue": 1
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 5,
+            "excess_bits": 8,
+            "local_coverage_fraction": 0.328125,
+            "lock_residue_count": 42,
+            "n": 22,
+            "source": "011",
+            "source_depth": 3,
+            "start": 39,
+            "step": 12,
+            "unit_residue": 1
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 8,
+            "excess_bits": 8,
+            "local_coverage_fraction": 0.3671875,
+            "lock_residue_count": 47,
+            "n": 638,
+            "source": "0111111",
+            "source_depth": 7,
+            "start": 41,
+            "step": 31,
+            "unit_residue": 247
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 8,
+            "excess_bits": 8,
+            "local_coverage_fraction": 0.3671875,
+            "lock_residue_count": 47,
+            "n": 638,
+            "source": "0111111",
+            "source_depth": 7,
+            "start": 47,
+            "step": 28,
+            "unit_residue": 247
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 8,
+            "excess_bits": 8,
+            "local_coverage_fraction": 0.3671875,
+            "lock_residue_count": 47,
+            "n": 638,
+            "source": "0111111",
+            "source_depth": 7,
+            "start": 55,
+            "step": 33,
+            "unit_residue": 247
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 5,
+            "excess_bits": 8,
+            "local_coverage_fraction": 0.328125,
+            "lock_residue_count": 42,
+            "n": 22,
+            "source": "011",
+            "source_depth": 3,
+            "start": 59,
+            "step": 11,
+            "unit_residue": 1
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 8,
+            "excess_bits": 8,
+            "local_coverage_fraction": 0.3671875,
+            "lock_residue_count": 47,
+            "n": 638,
+            "source": "0111111",
+            "source_depth": 7,
+            "start": 63,
+            "step": 30,
+            "unit_residue": 247
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 5,
+            "excess_bits": 8,
+            "local_coverage_fraction": 0.328125,
+            "lock_residue_count": 42,
+            "n": 22,
+            "source": "011",
+            "source_depth": 3,
+            "start": 67,
+            "step": 8,
+            "unit_residue": 1
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 8,
+            "excess_bits": 8,
+            "local_coverage_fraction": 0.3671875,
+            "lock_residue_count": 47,
+            "n": 638,
+            "source": "0111111",
+            "source_depth": 7,
+            "start": 71,
+            "step": 27,
+            "unit_residue": 247
+          }
+        ],
+        "hit_after_hit_fraction": 0.41785640389,
+        "hit_after_miss": 43608,
+        "hit_after_miss_fraction": 0.252134948397,
+        "hit_examples": [
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 5,
+            "excess_bits": 8,
+            "local_coverage_fraction": 0.328125,
+            "lock_residue_count": 42,
+            "n": 22,
+            "source": "011",
+            "source_depth": 3,
+            "start": 19,
+            "step": 3,
+            "unit_residue": 1
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 4,
+            "excess_bits": 8,
+            "local_coverage_fraction": 0.3671875,
+            "lock_residue_count": 47,
+            "n": 38,
+            "source": "011",
+            "source_depth": 3,
+            "start": 25,
+            "step": 1,
+            "unit_residue": 3
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 5,
+            "excess_bits": 8,
+            "local_coverage_fraction": 0.328125,
+            "lock_residue_count": 42,
+            "n": 22,
+            "source": "011",
+            "source_depth": 3,
+            "start": 25,
+            "step": 5,
+            "unit_residue": 1
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 11,
+            "excess_bits": 8,
+            "local_coverage_fraction": 0.3671875,
+            "lock_residue_count": 47,
+            "n": 566,
+            "source": "0110111111",
+            "source_depth": 10,
+            "start": 27,
+            "step": 29,
+            "unit_residue": 35
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 8,
+            "excess_bits": 8,
+            "local_coverage_fraction": 0.3671875,
+            "lock_residue_count": 47,
+            "n": 638,
+            "source": "0111111",
+            "source_depth": 7,
+            "start": 27,
+            "step": 32,
+            "unit_residue": 247
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 5,
+            "excess_bits": 8,
+            "local_coverage_fraction": 0.328125,
+            "lock_residue_count": 42,
+            "n": 22,
+            "source": "011",
+            "source_depth": 3,
+            "start": 29,
+            "step": 2,
+            "unit_residue": 1
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 11,
+            "excess_bits": 8,
+            "local_coverage_fraction": 0.3671875,
+            "lock_residue_count": 47,
+            "n": 566,
+            "source": "0110111111",
+            "source_depth": 10,
+            "start": 31,
+            "step": 26,
+            "unit_residue": 35
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 8,
+            "excess_bits": 8,
+            "local_coverage_fraction": 0.3671875,
+            "lock_residue_count": 47,
+            "n": 638,
+            "source": "0111111",
+            "source_depth": 7,
+            "start": 31,
+            "step": 29,
+            "unit_residue": 247
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 4,
+            "excess_bits": 8,
+            "local_coverage_fraction": 0.3671875,
+            "lock_residue_count": 47,
+            "n": 38,
+            "source": "011",
+            "source_depth": 3,
+            "start": 33,
+            "step": 3,
+            "unit_residue": 3
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 5,
+            "excess_bits": 8,
+            "local_coverage_fraction": 0.328125,
+            "lock_residue_count": 42,
+            "n": 22,
+            "source": "011",
+            "source_depth": 3,
+            "start": 33,
+            "step": 7,
+            "unit_residue": 1
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 4,
+            "excess_bits": 8,
+            "local_coverage_fraction": 0.3671875,
+            "lock_residue_count": 47,
+            "n": 38,
+            "source": "011",
+            "source_depth": 3,
+            "start": 39,
+            "step": 8,
+            "unit_residue": 3
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 5,
+            "excess_bits": 8,
+            "local_coverage_fraction": 0.328125,
+            "lock_residue_count": 42,
+            "n": 22,
+            "source": "011",
+            "source_depth": 3,
+            "start": 39,
+            "step": 12,
+            "unit_residue": 1
+          }
+        ],
+        "hit_fraction": 0.307328656783,
+        "lock_hits": 84512,
+        "longest_streak_examples": [
+          {
+            "max_hit_streak": 7,
+            "source_visits_in_orbit": 18,
+            "start": 22393
+          },
+          {
+            "max_hit_streak": 7,
+            "source_visits_in_orbit": 20,
+            "start": 26539
+          },
+          {
+            "max_hit_streak": 7,
+            "source_visits_in_orbit": 19,
+            "start": 29857
+          },
+          {
+            "max_hit_streak": 7,
+            "source_visits_in_orbit": 21,
+            "start": 35385
+          },
+          {
+            "max_hit_streak": 7,
+            "source_visits_in_orbit": 20,
+            "start": 37279
+          },
+          {
+            "max_hit_streak": 7,
+            "source_visits_in_orbit": 15,
+            "start": 38373
+          },
+          {
+            "max_hit_streak": 7,
+            "source_visits_in_orbit": 20,
+            "start": 39809
+          },
+          {
+            "max_hit_streak": 7,
+            "source_visits_in_orbit": 20,
+            "start": 45811
+          },
+          {
+            "max_hit_streak": 7,
+            "source_visits_in_orbit": 21,
+            "start": 49705
+          },
+          {
+            "max_hit_streak": 6,
+            "source_visits_in_orbit": 35,
+            "start": 6171
+          },
+          {
+            "max_hit_streak": 6,
+            "source_visits_in_orbit": 32,
+            "start": 6591
+          },
+          {
+            "max_hit_streak": 6,
+            "source_visits_in_orbit": 34,
+            "start": 6943
+          }
+        ],
+        "max_hit_streak": 7,
+        "observed_over_expected_hit_after_hit": 1.22272253318,
+        "observed_over_expected_hits": 0.931897975451,
+        "orbit_max_hit_streak_histogram": {
+          "0": 2713,
+          "1": 5475,
+          "2": 12884,
+          "3": 1945,
+          "4": 1504,
+          "5": 396,
+          "6": 73,
+          "7": 9
+        },
+        "orbits_with_any_hit": 22286,
+        "previous_hit_transitions": 77328,
+        "previous_miss_transitions": 172955,
+        "same_source_hit_after_hit": 7686,
+        "same_source_transitions": 34497,
+        "source_visit_transitions": 250283,
+        "source_visits": 274989
+      }
+    },
+    "canonical_source_visits": 274989,
+    "source_visit_depth_histogram": {
+      "10": 12813,
+      "11": 11812,
+      "12": 15343,
+      "13": 22086,
+      "3": 62306,
+      "4": 49644,
+      "5": 31229,
+      "6": 28572,
+      "7": 20100,
+      "8": 6062,
+      "9": 15022
+    },
+    "source_visits_per_orbit_histogram": {
+      "1": 849,
+      "10": 980,
+      "11": 971,
+      "12": 912,
+      "13": 870,
+      "14": 998,
+      "15": 1040,
+      "16": 1086,
+      "17": 950,
+      "18": 890,
+      "19": 792,
+      "2": 1360,
+      "20": 720,
+      "3": 1489,
+      "4": 1469,
+      "5": 1521,
+      "6": 1407,
+      "7": 1332,
+      "8": 1300,
+      "9": 1148
+    },
+    "starts_reaching_one_within_cap": 24999,
+    "starts_scanned": 24999,
+    "top_source_visit_labels": {
+      "00101111101": 1536,
+      "0011011101111": 2028,
+      "0011101101111": 8314,
+      "001111": 13048,
+      "00111101011": 2345,
+      "0011111": 2874,
+      "0101101110111": 5048,
+      "010111": 6035,
+      "0101111": 2764,
+      "01011111": 2172,
+      "011": 62306,
+      "0110111": 2539,
+      "011011101111": 7017,
+      "0110111111": 8684,
+      "0111": 49644,
+      "011101111": 8409,
+      "01111": 31229,
+      "011111": 9489,
+      "0111111": 11923,
+      "01111111": 1994
+    },
+    "total_shortcut_states_examined": 1792633,
+    "transition_gap_histogram": {
+      "1": 49568,
+      "10": 4525,
+      "11": 3041,
+      "12": 2793,
+      "13": 2092,
+      "14": 1518,
+      "15": 1829,
+      "16": 1294,
+      "17": 1066,
+      "18": 9692,
+      "19": 1630,
+      "2": 25564,
+      "21": 1026,
+      "3": 35324,
+      "4": 34802,
+      "5": 17108,
+      "6": 12623,
+      "7": 27178,
+      "8": 6887,
+      "9": 9135
+    }
+  },
+  "status": "odd-unit-lock-transition-lab",
+  "theorem_pressure_summary": {
+    "encouraging_signal": "At R=16, lock hits are sparse and hit-after-hit transitions stay close to the local-coverage baseline in this finite scan.",
+    "next_microscope_target": "Reconstruct the exact two-step R=16 hit-after-hit transitions and classify whether they share one dynamic mechanism or split into several finite families.",
+    "r12_observed_over_expected_hit_after_hit": 3.690432580947,
+    "r16_max_hit_streak": 2,
+    "r16_observed_over_expected_hit_after_hit": 0.923779542358,
+    "warning_signal": "At R=12, hit-after-hit transitions substantially exceed the local coverage baseline, so a proof cannot use a lazy independence argument."
+  }
+}
