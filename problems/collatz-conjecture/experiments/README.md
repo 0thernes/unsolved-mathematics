@@ -38,6 +38,11 @@ For a ranked synthesis of the strangest public and repo-native findings, use
 [`COLLATZ-WTF-ODDNESS-FIELD-GUIDE-2026-07-05.md`](COLLATZ-WTF-ODDNESS-FIELD-GUIDE-2026-07-05.md).
 The raw literature-discovery base is
 [`COLLATZ-LITERATURE-CCCHALLENGE-370-SNAPSHOT-2026-07-04.md`](COLLATZ-LITERATURE-CCCHALLENGE-370-SNAPSHOT-2026-07-04.md).
+The weirdness/boundary-push synthesis is
+[`COLLATZ-WTF-FINDINGS-BOUNDARY-ATLAS-2026-07-05.md`](COLLATZ-WTF-FINDINGS-BOUNDARY-ATLAS-2026-07-05.md):
+it ranks the strangest public and local findings, separates special workflow
+from theorem breakthrough, and turns the odd residues into buildable research
+bets.
 Only the formal-methods slice is currently proof-relevant: SAT/SMT, BDD/ZDD,
 CEGAR, omega-automata/model checking, rewrite/e-graph methods, LLL, proof
 certificates, and adversarial counterexample search.
