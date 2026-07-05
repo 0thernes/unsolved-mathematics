@@ -67,12 +67,39 @@ Use these as the primary bibliography roots before launching any "new" idea:
   77 (2021), 2681-2688; and "Improved verification limit for the convergence
   of the Collatz conjecture", J. Supercomput. 81 (2025), 810:
   https://pcbarina.fit.vutbr.cz/
+- CCChallenge live bibliography and formalization hub:
+  https://ccchallenge.org/
+- Local CCChallenge bibliography snapshot:
+  COLLATZ-LITERATURE-CCCHALLENGE-370-SNAPSHOT-2026-07-04.md
 - Angeltveit, "An improved algorithm for checking the Collatz conjecture for
   all n < 2^N", arXiv:2602.10466:
   https://arxiv.org/abs/2602.10466
 - Chang, "Exploring Collatz Dynamics with Human-LLM Collaboration",
   arXiv:2603.11066:
   https://arxiv.org/abs/2603.11066
+
+## Live Source Refresh - 2026-07-05
+
+This pass checked the atlas against the main bibliography/progress anchors:
+Lagarias bibliography I and II, Lagarias 2021 overview, CCChallenge,
+Terras/Everett density results, Krasikov-Lagarias inequalities, Tao's
+almost-bounded-values theorem, Barina's 2025 `2^71` verification record,
+Hercher's `m <= 91` cycle exclusion, Knight's 2026 high-cycle result,
+Angeltveit's 2026 verification algorithm, Kurtz-Simon generalized
+undecidability, and proof-claim/retraction examples such as Opfer 2011.
+
+Local coverage state:
+
+| Artifact | Count / role |
+|---|---|
+| This atlas | 150 idea-family rows; 160 numbered rows including rankings/tables |
+| Root weirdness atlas | 65 user-facing route families and novelty filter |
+| `COLLATZ-FAILED-ATTEMPTS-ATLAS-2026-07-05.md` | 70 compact scored attempt rows |
+| `COLLATZ-LITERATURE-CCCHALLENGE-370-SNAPSHOT-2026-07-04.md` | 370 CCChallenge bibliography entries captured for future structured tagging |
+
+Boundary: the list is intentionally massive and research-useful, but it is not
+a claim that every paper ever written has been fully read and adjudicated.
+Future "new" ideas should be mapped to the closest row before any novelty claim.
 
 ## Weirdness Scale
 
