@@ -1,0 +1,498 @@
+{
+  "all_assertions_passed": true,
+  "assertions": [
+    {
+      "detail": {
+        "max_tau": 105
+      },
+      "name": "collatz_hard_starts_tau_equals_sigma",
+      "passed": true
+    },
+    {
+      "detail": {
+        "20": 27328,
+        "24": 286581,
+        "28": 3524586
+      },
+      "name": "q3_word_system_matches_frontier_anchors",
+      "passed": true
+    },
+    {
+      "detail": {
+        "count": 3,
+        "density": 0.003,
+        "meaning": "integers whose coefficient never dropped (tau = infinity proven via supercritical terminal cycle for eps=-1; tau > cap for q=5)",
+        "samples": [
+          1,
+          5,
+          17
+        ]
+      },
+      "name": "3n_minus_false_sibling_flags_exact_cycle_minima",
+      "passed": true
+    },
+    {
+      "detail": {
+        "count": 0,
+        "density": 0.0,
+        "meaning": "integers whose coefficient never dropped (tau = infinity proven via supercritical terminal cycle for eps=-1; tau > cap for q=5)",
+        "samples": []
+      },
+      "name": "3n_plus_collatz_has_no_quick_frontier_resident",
+      "passed": true
+    },
+    {
+      "detail": {
+        "count": 175,
+        "density": 0.175,
+        "meaning": "integers whose coefficient never dropped (tau = infinity proven via supercritical terminal cycle for eps=-1; tau > cap for q=5)",
+        "samples": [
+          7,
+          9,
+          21,
+          23,
+          25,
+          29,
+          31,
+          37,
+          39,
+          41,
+          45,
+          49,
+          53,
+          55,
+          61,
+          69,
+          71,
+          73,
+          77,
+          81,
+          85,
+          87,
+          89,
+          93,
+          95,
+          101,
+          109,
+          113,
+          117,
+          119,
+          121,
+          125,
+          133,
+          149,
+          151,
+          153,
+          157,
+          165,
+          167,
+          173
+        ]
+      },
+      "name": "5n_plus_control_flags_frontier_residents",
+      "passed": true
+    },
+    {
+      "detail": {
+        "checked_rows": 56,
+        "failures": []
+      },
+      "name": "high_alignment_ladder_identity_clean",
+      "passed": true
+    },
+    {
+      "detail": {
+        "failure_count": 0,
+        "failures": [],
+        "identity_checks": 1500,
+        "matched_phase_cases": 140,
+        "trials": 1500,
+        "valuation_formula_checks_nonmatched": 1360
+      },
+      "name": "phase_collision_identity_clean",
+      "passed": true
+    },
+    {
+      "detail": {
+        "all_cycle_gate_avg_allowed_fraction": 0.661103219697,
+        "unique_gate_avg_allowed_fraction": 0.816565688776
+      },
+      "name": "phase_gate_too_permissive_to_be_proof",
+      "passed": true
+    },
+    {
+      "detail": {
+        "predicted_slope": 3.8188416793064186,
+        "upper_tail_mean_tau_over_j": 3.329861
+      },
+      "name": "mersenne_shadow_detaches_inside_wide_model_band",
+      "passed": true
+    }
+  ],
+  "collatz_tau_checks": {
+    "all_tau_equals_sigma": true,
+    "max_tau": 105,
+    "starts": [
+      {
+        "n": 2,
+        "sigma": 1,
+        "tau": 1,
+        "tau_equals_sigma": true,
+        "tau_over_log2_n": 1.0
+      },
+      {
+        "n": 3,
+        "sigma": 4,
+        "tau": 4,
+        "tau_equals_sigma": true,
+        "tau_over_log2_n": 2.523719
+      },
+      {
+        "n": 7,
+        "sigma": 7,
+        "tau": 7,
+        "tau_equals_sigma": true,
+        "tau_over_log2_n": 2.49345
+      },
+      {
+        "n": 27,
+        "sigma": 59,
+        "tau": 59,
+        "tau_equals_sigma": true,
+        "tau_over_log2_n": 12.408285
+      },
+      {
+        "n": 97,
+        "sigma": 2,
+        "tau": 2,
+        "tau_equals_sigma": true,
+        "tau_over_log2_n": 0.303034
+      },
+      {
+        "n": 871,
+        "sigma": 35,
+        "tau": 35,
+        "tau_equals_sigma": true,
+        "tau_over_log2_n": 3.583668
+      },
+      {
+        "n": 6171,
+        "sigma": 58,
+        "tau": 58,
+        "tau_equals_sigma": true,
+        "tau_over_log2_n": 4.606359
+      },
+      {
+        "n": 77031,
+        "sigma": 89,
+        "tau": 89,
+        "tau_equals_sigma": true,
+        "tau_over_log2_n": 5.482608
+      },
+      {
+        "n": 837799,
+        "sigma": 105,
+        "tau": 105,
+        "tau_equals_sigma": true,
+        "tau_over_log2_n": 5.336384
+      }
+    ]
+  },
+  "elapsed_seconds": 0.083873,
+  "high_ladder_identity": {
+    "checked_rows": 56,
+    "failures": [],
+    "max_align": 16,
+    "sample_rows": [
+      {
+        "align": 3,
+        "q": 1,
+        "start": 7,
+        "terminal": 26,
+        "terminal_even_chain": 1
+      },
+      {
+        "align": 3,
+        "q": 3,
+        "start": 23,
+        "terminal": 80,
+        "terminal_even_chain": 4
+      },
+      {
+        "align": 3,
+        "q": 5,
+        "start": 39,
+        "terminal": 134,
+        "terminal_even_chain": 1
+      },
+      {
+        "align": 3,
+        "q": 17,
+        "start": 135,
+        "terminal": 458,
+        "terminal_even_chain": 1
+      },
+      {
+        "align": 4,
+        "q": 1,
+        "start": 15,
+        "terminal": 80,
+        "terminal_even_chain": 4
+      },
+      {
+        "align": 4,
+        "q": 3,
+        "start": 47,
+        "terminal": 242,
+        "terminal_even_chain": 1
+      },
+      {
+        "align": 4,
+        "q": 5,
+        "start": 79,
+        "terminal": 404,
+        "terminal_even_chain": 2
+      },
+      {
+        "align": 4,
+        "q": 17,
+        "start": 271,
+        "terminal": 1376,
+        "terminal_even_chain": 5
+      },
+      {
+        "align": 5,
+        "q": 1,
+        "start": 31,
+        "terminal": 242,
+        "terminal_even_chain": 1
+      },
+      {
+        "align": 5,
+        "q": 3,
+        "start": 95,
+        "terminal": 728,
+        "terminal_even_chain": 3
+      },
+      {
+        "align": 5,
+        "q": 5,
+        "start": 159,
+        "terminal": 1214,
+        "terminal_even_chain": 1
+      },
+      {
+        "align": 5,
+        "q": 17,
+        "start": 543,
+        "terminal": 4130,
+        "terminal_even_chain": 1
+      }
+    ]
+  },
+  "interpretation": "This suite is a falsification harness for future proof routes. Passing means a route has survived basic weirdness controls; it does not prove Collatz. Failing identifies a concrete old trap.",
+  "mersenne_shadow_probe": {
+    "predicted_slope": 3.8188416793064186,
+    "rows": [
+      {
+        "j": 8,
+        "tau": 13,
+        "tau_over_j": 1.625
+      },
+      {
+        "j": 16,
+        "tau": 48,
+        "tau_over_j": 3.0
+      },
+      {
+        "j": 24,
+        "tau": 113,
+        "tau_over_j": 4.708333
+      },
+      {
+        "j": 32,
+        "tau": 110,
+        "tau_over_j": 3.4375
+      },
+      {
+        "j": 48,
+        "tau": 143,
+        "tau_over_j": 2.979167
+      },
+      {
+        "j": 64,
+        "tau": 202,
+        "tau_over_j": 3.15625
+      },
+      {
+        "j": 96,
+        "tau": 370,
+        "tau_over_j": 3.854167
+      }
+    ],
+    "upper_tail_mean_tau_over_j": 3.329861,
+    "upper_tail_within_wide_model_band": true
+  },
+  "parameters": {
+    "max_ladder_align": 16,
+    "mersenne_max_j": 96,
+    "phase_identity_trials": 1500,
+    "phase_max_depth": 8,
+    "sibling_cap": 2048,
+    "sibling_limit": 1000
+  },
+  "phase_collision_probe": {
+    "all_cycle_gate_avg_allowed_fraction": 0.661103219697,
+    "density_firewall_counts": [
+      {
+        "a_depth": 11,
+        "depth": 16,
+        "log2_barrier_word_count": 11.045759661383,
+        "log2_density": -4.954240338617
+      },
+      {
+        "a_depth": 41,
+        "depth": 64,
+        "log2_barrier_word_count": 54.612493059858,
+        "log2_density": -9.387506940142
+      },
+      {
+        "a_depth": 81,
+        "depth": 128,
+        "log2_barrier_word_count": 114.193131747526,
+        "log2_density": -13.806868252474
+      },
+      {
+        "a_depth": 162,
+        "depth": 256,
+        "log2_barrier_word_count": 234.458448435936,
+        "log2_density": -21.541551564064
+      },
+      {
+        "a_depth": 324,
+        "depth": 512,
+        "log2_barrier_word_count": 476.150590133835,
+        "log2_density": -35.849409866165
+      }
+    ],
+    "identity": {
+      "failure_count": 0,
+      "failures": [],
+      "identity_checks": 1500,
+      "matched_phase_cases": 140,
+      "trials": 1500,
+      "valuation_formula_checks_nonmatched": 1360
+    },
+    "interpretation": "The normal form is exact and the nonmatched valuation rule is verified. The finite phase gate is too permissive by itself; a proof would need the odd-unit lock, entropy/codimension domination, positivity, or a new invariant. No part of Collatz is proved.",
+    "library": {
+      "all_cycle_phase_slots": 140,
+      "note": "Nonprimitive necklaces duplicate primitive spines. The unique-spine gate is the math-clean denominator; the all-cycle gate is retained for comparison with shared-chat aggregate conventions.",
+      "primitive_source_cycles": 15,
+      "primitive_source_phase_states": 91,
+      "supercritical_necklace_cycles": 24,
+      "target_cycles_including_nonprimitive_duplicates": 24,
+      "unique_target_spines": 15
+    },
+    "minus_one_to_minus_five_all_empty": true,
+    "unique_gate_avg_allowed_fraction": 0.816565688776
+  },
+  "sibling_controls": {
+    "q3_word_system_anchor_match": true,
+    "q3_word_system_anchors": {
+      "20": 27328,
+      "24": 286581,
+      "28": 3524586
+    },
+    "scan_3minus": {
+      "flagged": {
+        "count": 3,
+        "density": 0.003,
+        "meaning": "integers whose coefficient never dropped (tau = infinity proven via supercritical terminal cycle for eps=-1; tau > cap for q=5)",
+        "samples": [
+          1,
+          5,
+          17
+        ]
+      },
+      "terras_mismatches": {
+        "count": 0,
+        "note": "sigma < tau allowed for eps=-1 (theorem sigma<=tau); tau < sigma would be a threshold trap for eps=+1",
+        "samples": []
+      }
+    },
+    "scan_3plus": {
+      "flagged": {
+        "count": 0,
+        "density": 0.0,
+        "meaning": "integers whose coefficient never dropped (tau = infinity proven via supercritical terminal cycle for eps=-1; tau > cap for q=5)",
+        "samples": []
+      },
+      "terras_mismatches": {
+        "count": 1,
+        "note": "sigma < tau allowed for eps=-1 (theorem sigma<=tau); tau < sigma would be a threshold trap for eps=+1",
+        "samples": [
+          {
+            "n": 1,
+            "sigma": -1,
+            "tau": 2
+          }
+        ]
+      }
+    },
+    "scan_5plus": {
+      "flagged": {
+        "count": 175,
+        "density": 0.175,
+        "meaning": "integers whose coefficient never dropped (tau = infinity proven via supercritical terminal cycle for eps=-1; tau > cap for q=5)",
+        "samples": [
+          7,
+          9,
+          21,
+          23,
+          25,
+          29,
+          31,
+          37,
+          39,
+          41,
+          45,
+          49,
+          53,
+          55,
+          61,
+          69,
+          71,
+          73,
+          77,
+          81,
+          85,
+          87,
+          89,
+          93,
+          95,
+          101,
+          109,
+          113,
+          117,
+          119,
+          121,
+          125,
+          133,
+          149,
+          151,
+          153,
+          157,
+          165,
+          167,
+          173
+        ]
+      },
+      "terras_mismatches": {
+        "count": null,
+        "note": "sigma not tracked by the masked q=5 scanner",
+        "samples": []
+      }
+    }
+  },
+  "status": "collatz-wtf-regression-suite"
+}
