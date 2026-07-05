@@ -146,7 +146,9 @@ refined lock depth is bounded.
 The bridge classifier sharpens this target: the dominant `0111 -> 001111`
 repeat family costs `7` fresh quotient bits after the first lock, while the
 remaining measured repeats are alignment-drop bridges that collapse to merged
-state edges in this finite window.
+state edges in this finite window. The bridge-refinement follow-up then lifts
+all four measured bridge geometries to `R = 20` and `R = 24`; every lifted
+previous lock fails to remain a repeated next lock.
 
 ## Non-Claims
 
@@ -168,4 +170,6 @@ python experiments\odd_unit_lock_transition_witness_microscope.py --bits 24 --qu
 python -m py_compile experiments\odd_unit_lock_transition_microscope.py
 python experiments\odd_unit_lock_transition_microscope.py --start-limit 250000 --quiet --output experiments\results\odd_unit_lock_transition_microscope_d13_R16_N250000_20260705.json
 python experiments\odd_unit_lock_transition_microscope.py --excess-bits 20 --start-limit 250000 --quiet --output experiments\results\odd_unit_lock_transition_microscope_d13_R20_N250000_20260705.json
+python -m py_compile experiments\odd_unit_lock_bridge_refinement.py
+python experiments\odd_unit_lock_bridge_refinement.py --classifier experiments\results\odd_unit_lock_bridge_classifier_d13_R16_N250000_20260705.json --output experiments\results\odd_unit_lock_bridge_refinement_d13_R16_to_R20_R24_N250000_20260705.json
 ```
