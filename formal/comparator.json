@@ -1,0 +1,26 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "FormalAtlas.Challenge.thm_collatz_cylinder_affine_law",
+    "FormalAtlas.Challenge.thm_collatz_exact_intercept_law",
+    "FormalAtlas.Challenge.thm_terras_parity_word_bijection",
+    "FormalAtlas.Challenge.thm_collatz_descent_certificate_sound",
+    "FormalAtlas.Challenge.thm_collatz_no_finite_subcritical_cover",
+    "FormalAtlas.Challenge.thm_collatz_spine_ladder_identity",
+    "FormalAtlas.Challenge.thm_collatz_positivity_localization",
+    "FormalAtlas.Challenge.thm_collatz_epsilon_invariance_barrier",
+    "FormalAtlas.Challenge.thm_erdos_straus_mordell_840",
+    "FormalAtlas.Challenge.thm_lonely_runner_sharpness_all_n",
+    "FormalAtlas.Challenge.thm_lonely_runner_n1",
+    "FormalAtlas.Challenge.thm_lonely_runner_n2",
+    "FormalAtlas.Challenge.thm_brocard_brown_solutions",
+    "FormalAtlas.Challenge.thm_brocard_exhaustive_le_12"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}
