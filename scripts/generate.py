@@ -29,7 +29,7 @@ import sys
 from pathlib import Path
 
 try:
-    sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
+    sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[union-attr]
 except Exception:
     pass
 
@@ -94,7 +94,7 @@ def validate(problems: list[dict]) -> list[str]:
     errors: list[str] = []
     slugs: set[str] = set()
     try:
-        import jsonschema  # type: ignore
+        import jsonschema
 
         schema = json.loads(SCHEMA.read_text(encoding="utf-8"))
         validator = jsonschema.Draft202012Validator(schema)
@@ -287,7 +287,8 @@ def reconcile(desired_slugs: set[str]) -> tuple[int, list[str]]:
     warn about authored orphans so human work is never silently deleted."""
     import shutil
 
-    removed, warnings = 0, []
+    removed = 0
+    warnings: list[str] = []
     if not PROBLEMS_DIR.exists():
         return 0, warnings
     for folder in PROBLEMS_DIR.iterdir():

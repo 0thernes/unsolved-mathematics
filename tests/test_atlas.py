@@ -2,7 +2,6 @@
 Smoke + invariant tests for the Atlas build.
 Run: python -m pytest -q   (or simply: python tests/test_atlas.py)
 """
-import json
 import sys
 from pathlib import Path
 
@@ -34,8 +33,8 @@ def test_css_monotonic_ranking():
 
 
 def test_age_score_bounds():
-    assert generate.age_score(-300) == 100.0          # ancient saturates
-    assert generate.age_score(2025) == 0.0            # current year
+    assert generate.age_score(-300) == 100.0                 # ancient saturates
+    assert generate.age_score(generate.CURRENT_YEAR) == 0.0  # current year
     assert 0 <= generate.age_score(1859) <= 100
 
 

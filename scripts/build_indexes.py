@@ -17,7 +17,6 @@ authored. Safe to run any time; degrades gracefully before dossiers exist.
 from __future__ import annotations
 
 import json
-import re
 import sys
 from collections import Counter, defaultdict
 from pathlib import Path

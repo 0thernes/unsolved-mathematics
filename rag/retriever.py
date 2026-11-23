@@ -23,7 +23,7 @@ import re
 import sys
 
 try:
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")  # type: ignore[attr-defined]
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")  # type: ignore[union-attr]
 except Exception:
     pass
 from collections import Counter
@@ -91,8 +91,8 @@ def dense_search(query: str, k: int, section: str | None):
     try:
         import numpy as np
         from sentence_transformers import SentenceTransformer
-    except Exception:
-        raise SystemExit("Dense search needs: pip install -r requirements-rag.txt")
+    except Exception as exc:
+        raise SystemExit("Dense search needs: pip install -r requirements-rag.txt") from exc
     if not INDEX.exists():
         raise SystemExit("No dense index — run: python rag/embed_index.py")
     data = np.load(INDEX, allow_pickle=True)

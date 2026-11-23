@@ -31,13 +31,13 @@ def main() -> int:
     try:
         import numpy as np
         from sentence_transformers import SentenceTransformer
-    except Exception:
-        raise SystemExit("Install deps first:  pip install -r requirements-rag.txt")
+    except Exception as exc:
+        raise SystemExit("Install deps first:  pip install -r requirements-rag.txt") from exc
 
     if not CORPUS.exists():
         raise SystemExit("corpus.jsonl missing — run: python rag/build_corpus.py")
 
-    docs = [json.loads(l) for l in CORPUS.read_text(encoding="utf-8").splitlines() if l.strip()]
+    docs = [json.loads(ln) for ln in CORPUS.read_text(encoding="utf-8").splitlines() if ln.strip()]
     if not docs:
         raise SystemExit("Corpus is empty.")
 
