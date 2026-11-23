@@ -18,7 +18,7 @@ def guess_producer(stem: str) -> str | None:
              stem + "_probe", stem.replace("_scan", ""), stem.replace("_check", "")}
     # also strip trailing _<digits> or _<date>
     base = stem
-    for sep in ("_20", "_d", "_"):
+    for sep in ("_20", "_R", "_d", "_"):
         if sep in base:
             base = base.rsplit(sep, 1)[0]
             cands.add(base)

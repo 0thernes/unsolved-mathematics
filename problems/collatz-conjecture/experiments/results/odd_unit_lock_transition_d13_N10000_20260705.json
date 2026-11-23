@@ -1,0 +1,1179 @@
+{
+  "elapsed_seconds": 9.171636,
+  "interpretation": "This probes whether lock hits persist along actual positive orbits. Ratios near the local-coverage expectation support the codimension route; large hit-after-hit excess would expose a counter-pattern to explain before claiming cumulative lock loss.",
+  "library": {
+    "canonical_primitive_sources": 244,
+    "max_source_depth": 13,
+    "source_depths": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "unique_target_spines": 244
+  },
+  "parameters": {
+    "excess_bits": [
+      8,
+      12,
+      16
+    ],
+    "max_depth": 13,
+    "max_steps": 512,
+    "min_source_depth": 3,
+    "odd_starts_only": true,
+    "start_limit": 10000
+  },
+  "result": "finite measurement only; not a proof of Collatz",
+  "scan": {
+    "by_excess_bits": {
+      "12": {
+        "expected_hit_after_hit_from_local_coverage": 757.8759765625,
+        "expected_hits_from_local_coverage": 4476.80517578125,
+        "hit_after_hit": 3051,
+        "hit_after_hit_examples": [
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 5,
+            "excess_bits": 12,
+            "local_coverage_fraction": 0.0927734375,
+            "lock_residue_count": 190,
+            "n": 22,
+            "source": "011",
+            "source_depth": 3,
+            "start": 25,
+            "step": 5,
+            "unit_residue": 1
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 8,
+            "excess_bits": 12,
+            "local_coverage_fraction": 0.11669921875,
+            "lock_residue_count": 239,
+            "n": 638,
+            "source": "0111111",
+            "source_depth": 7,
+            "start": 27,
+            "step": 32,
+            "unit_residue": 759
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 8,
+            "excess_bits": 12,
+            "local_coverage_fraction": 0.11669921875,
+            "lock_residue_count": 239,
+            "n": 638,
+            "source": "0111111",
+            "source_depth": 7,
+            "start": 31,
+            "step": 29,
+            "unit_residue": 759
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 5,
+            "excess_bits": 12,
+            "local_coverage_fraction": 0.0927734375,
+            "lock_residue_count": 190,
+            "n": 22,
+            "source": "011",
+            "source_depth": 3,
+            "start": 33,
+            "step": 7,
+            "unit_residue": 1
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 5,
+            "excess_bits": 12,
+            "local_coverage_fraction": 0.0927734375,
+            "lock_residue_count": 190,
+            "n": 22,
+            "source": "011",
+            "source_depth": 3,
+            "start": 39,
+            "step": 12,
+            "unit_residue": 1
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 8,
+            "excess_bits": 12,
+            "local_coverage_fraction": 0.11669921875,
+            "lock_residue_count": 239,
+            "n": 638,
+            "source": "0111111",
+            "source_depth": 7,
+            "start": 41,
+            "step": 31,
+            "unit_residue": 759
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 8,
+            "excess_bits": 12,
+            "local_coverage_fraction": 0.11669921875,
+            "lock_residue_count": 239,
+            "n": 638,
+            "source": "0111111",
+            "source_depth": 7,
+            "start": 47,
+            "step": 28,
+            "unit_residue": 759
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 8,
+            "excess_bits": 12,
+            "local_coverage_fraction": 0.11669921875,
+            "lock_residue_count": 239,
+            "n": 638,
+            "source": "0111111",
+            "source_depth": 7,
+            "start": 55,
+            "step": 33,
+            "unit_residue": 759
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 5,
+            "excess_bits": 12,
+            "local_coverage_fraction": 0.0927734375,
+            "lock_residue_count": 190,
+            "n": 22,
+            "source": "011",
+            "source_depth": 3,
+            "start": 59,
+            "step": 11,
+            "unit_residue": 1
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 8,
+            "excess_bits": 12,
+            "local_coverage_fraction": 0.11669921875,
+            "lock_residue_count": 239,
+            "n": 638,
+            "source": "0111111",
+            "source_depth": 7,
+            "start": 63,
+            "step": 30,
+            "unit_residue": 759
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 5,
+            "excess_bits": 12,
+            "local_coverage_fraction": 0.0927734375,
+            "lock_residue_count": 190,
+            "n": 22,
+            "source": "011",
+            "source_depth": 3,
+            "start": 67,
+            "step": 8,
+            "unit_residue": 1
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 8,
+            "excess_bits": 12,
+            "local_coverage_fraction": 0.11669921875,
+            "lock_residue_count": 239,
+            "n": 638,
+            "source": "0111111",
+            "source_depth": 7,
+            "start": 71,
+            "step": 27,
+            "unit_residue": 759
+          }
+        ],
+        "hit_after_hit_fraction": 0.42977884209,
+        "hit_after_miss": 4688,
+        "hit_after_miss_fraction": 0.136911889256,
+        "hit_examples": [
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 5,
+            "excess_bits": 12,
+            "local_coverage_fraction": 0.0927734375,
+            "lock_residue_count": 190,
+            "n": 22,
+            "source": "011",
+            "source_depth": 3,
+            "start": 19,
+            "step": 3,
+            "unit_residue": 1
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 4,
+            "excess_bits": 12,
+            "local_coverage_fraction": 0.11669921875,
+            "lock_residue_count": 239,
+            "n": 38,
+            "source": "011",
+            "source_depth": 3,
+            "start": 25,
+            "step": 1,
+            "unit_residue": 3
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 5,
+            "excess_bits": 12,
+            "local_coverage_fraction": 0.0927734375,
+            "lock_residue_count": 190,
+            "n": 22,
+            "source": "011",
+            "source_depth": 3,
+            "start": 25,
+            "step": 5,
+            "unit_residue": 1
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 11,
+            "excess_bits": 12,
+            "local_coverage_fraction": 0.11669921875,
+            "lock_residue_count": 239,
+            "n": 566,
+            "source": "0110111111",
+            "source_depth": 10,
+            "start": 27,
+            "step": 29,
+            "unit_residue": 291
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 8,
+            "excess_bits": 12,
+            "local_coverage_fraction": 0.11669921875,
+            "lock_residue_count": 239,
+            "n": 638,
+            "source": "0111111",
+            "source_depth": 7,
+            "start": 27,
+            "step": 32,
+            "unit_residue": 759
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 5,
+            "excess_bits": 12,
+            "local_coverage_fraction": 0.0927734375,
+            "lock_residue_count": 190,
+            "n": 22,
+            "source": "011",
+            "source_depth": 3,
+            "start": 29,
+            "step": 2,
+            "unit_residue": 1
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 11,
+            "excess_bits": 12,
+            "local_coverage_fraction": 0.11669921875,
+            "lock_residue_count": 239,
+            "n": 566,
+            "source": "0110111111",
+            "source_depth": 10,
+            "start": 31,
+            "step": 26,
+            "unit_residue": 291
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 8,
+            "excess_bits": 12,
+            "local_coverage_fraction": 0.11669921875,
+            "lock_residue_count": 239,
+            "n": 638,
+            "source": "0111111",
+            "source_depth": 7,
+            "start": 31,
+            "step": 29,
+            "unit_residue": 759
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 4,
+            "excess_bits": 12,
+            "local_coverage_fraction": 0.11669921875,
+            "lock_residue_count": 239,
+            "n": 38,
+            "source": "011",
+            "source_depth": 3,
+            "start": 33,
+            "step": 3,
+            "unit_residue": 3
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 5,
+            "excess_bits": 12,
+            "local_coverage_fraction": 0.0927734375,
+            "lock_residue_count": 190,
+            "n": 22,
+            "source": "011",
+            "source_depth": 3,
+            "start": 33,
+            "step": 7,
+            "unit_residue": 1
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 4,
+            "excess_bits": 12,
+            "local_coverage_fraction": 0.11669921875,
+            "lock_residue_count": 239,
+            "n": 38,
+            "source": "011",
+            "source_depth": 3,
+            "start": 39,
+            "step": 8,
+            "unit_residue": 3
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 5,
+            "excess_bits": 12,
+            "local_coverage_fraction": 0.0927734375,
+            "lock_residue_count": 190,
+            "n": 22,
+            "source": "011",
+            "source_depth": 3,
+            "start": 39,
+            "step": 12,
+            "unit_residue": 1
+          }
+        ],
+        "hit_fraction": 0.180702817328,
+        "lock_hits": 8351,
+        "longest_streak_examples": [
+          {
+            "max_hit_streak": 2,
+            "source_visits_in_orbit": 2,
+            "start": 25
+          },
+          {
+            "max_hit_streak": 2,
+            "source_visits_in_orbit": 12,
+            "start": 27
+          },
+          {
+            "max_hit_streak": 2,
+            "source_visits_in_orbit": 11,
+            "start": 31
+          },
+          {
+            "max_hit_streak": 2,
+            "source_visits_in_orbit": 2,
+            "start": 33
+          },
+          {
+            "max_hit_streak": 2,
+            "source_visits_in_orbit": 3,
+            "start": 39
+          },
+          {
+            "max_hit_streak": 2,
+            "source_visits_in_orbit": 12,
+            "start": 41
+          },
+          {
+            "max_hit_streak": 2,
+            "source_visits_in_orbit": 11,
+            "start": 47
+          },
+          {
+            "max_hit_streak": 2,
+            "source_visits_in_orbit": 13,
+            "start": 55
+          },
+          {
+            "max_hit_streak": 2,
+            "source_visits_in_orbit": 3,
+            "start": 59
+          },
+          {
+            "max_hit_streak": 1,
+            "source_visits_in_orbit": 1,
+            "start": 19
+          },
+          {
+            "max_hit_streak": 1,
+            "source_visits_in_orbit": 1,
+            "start": 29
+          },
+          {
+            "max_hit_streak": 1,
+            "source_visits_in_orbit": 1,
+            "start": 51
+          }
+        ],
+        "max_hit_streak": 3,
+        "observed_over_expected_hit_after_hit": 4.025724649353,
+        "observed_over_expected_hits": 1.865392768302,
+        "orbit_max_hit_streak_histogram": {
+          "0": 1526,
+          "1": 787,
+          "2": 2578,
+          "3": 108
+        },
+        "orbits_with_any_hit": 3473,
+        "previous_hit_transitions": 7099,
+        "previous_miss_transitions": 34241,
+        "same_source_hit_after_hit": 883,
+        "same_source_transitions": 5030,
+        "source_visit_transitions": 41340,
+        "source_visits": 46214
+      },
+      "16": {
+        "expected_hit_after_hit_from_local_coverage": 1.489471435547,
+        "expected_hits_from_local_coverage": 444.967010498047,
+        "hit_after_hit": 0,
+        "hit_after_hit_examples": [],
+        "hit_after_hit_fraction": 0.0,
+        "hit_after_miss": 109,
+        "hit_after_miss_fraction": 0.002646080645,
+        "hit_examples": [
+          {
+            "alignment_class_m_mod_d": 3,
+            "alignment_m": 13,
+            "excess_bits": 16,
+            "local_coverage_fraction": 0.003967285156,
+            "lock_residue_count": 130,
+            "n": 1700,
+            "source": "0010111111",
+            "source_depth": 10,
+            "start": 223,
+            "step": 5,
+            "unit_residue": 47673
+          },
+          {
+            "alignment_class_m_mod_d": 3,
+            "alignment_m": 13,
+            "excess_bits": 16,
+            "local_coverage_fraction": 0.003967285156,
+            "lock_residue_count": 130,
+            "n": 1700,
+            "source": "0010111111",
+            "source_depth": 10,
+            "start": 297,
+            "step": 7,
+            "unit_residue": 47673
+          },
+          {
+            "alignment_class_m_mod_d": 3,
+            "alignment_m": 13,
+            "excess_bits": 16,
+            "local_coverage_fraction": 0.003967285156,
+            "lock_residue_count": 130,
+            "n": 1700,
+            "source": "0010111111",
+            "source_depth": 10,
+            "start": 335,
+            "step": 4,
+            "unit_residue": 47673
+          },
+          {
+            "alignment_class_m_mod_d": 3,
+            "alignment_m": 13,
+            "excess_bits": 16,
+            "local_coverage_fraction": 0.003967285156,
+            "lock_residue_count": 130,
+            "n": 1700,
+            "source": "0010111111",
+            "source_depth": 10,
+            "start": 503,
+            "step": 3,
+            "unit_residue": 47673
+          },
+          {
+            "alignment_class_m_mod_d": 3,
+            "alignment_m": 13,
+            "excess_bits": 16,
+            "local_coverage_fraction": 0.003967285156,
+            "lock_residue_count": 130,
+            "n": 1700,
+            "source": "0010111111",
+            "source_depth": 10,
+            "start": 595,
+            "step": 8,
+            "unit_residue": 47673
+          },
+          {
+            "alignment_class_m_mod_d": 3,
+            "alignment_m": 13,
+            "excess_bits": 16,
+            "local_coverage_fraction": 0.003967285156,
+            "lock_residue_count": 130,
+            "n": 1700,
+            "source": "0010111111",
+            "source_depth": 10,
+            "start": 755,
+            "step": 2,
+            "unit_residue": 47673
+          },
+          {
+            "alignment_class_m_mod_d": 3,
+            "alignment_m": 13,
+            "excess_bits": 16,
+            "local_coverage_fraction": 0.003967285156,
+            "lock_residue_count": 130,
+            "n": 1700,
+            "source": "0010111111",
+            "source_depth": 10,
+            "start": 793,
+            "step": 10,
+            "unit_residue": 47673
+          },
+          {
+            "alignment_class_m_mod_d": 3,
+            "alignment_m": 13,
+            "excess_bits": 16,
+            "local_coverage_fraction": 0.003967285156,
+            "lock_residue_count": 130,
+            "n": 1700,
+            "source": "0010111111",
+            "source_depth": 10,
+            "start": 893,
+            "step": 7,
+            "unit_residue": 47673
+          },
+          {
+            "alignment_class_m_mod_d": 3,
+            "alignment_m": 13,
+            "excess_bits": 16,
+            "local_coverage_fraction": 0.003967285156,
+            "lock_residue_count": 130,
+            "n": 1700,
+            "source": "0010111111",
+            "source_depth": 10,
+            "start": 939,
+            "step": 15,
+            "unit_residue": 47673
+          },
+          {
+            "alignment_class_m_mod_d": 3,
+            "alignment_m": 13,
+            "excess_bits": 16,
+            "local_coverage_fraction": 0.003967285156,
+            "lock_residue_count": 130,
+            "n": 1700,
+            "source": "0010111111",
+            "source_depth": 10,
+            "start": 1057,
+            "step": 12,
+            "unit_residue": 47673
+          },
+          {
+            "alignment_class_m_mod_d": 3,
+            "alignment_m": 13,
+            "excess_bits": 16,
+            "local_coverage_fraction": 0.003967285156,
+            "lock_residue_count": 130,
+            "n": 1700,
+            "source": "0010111111",
+            "source_depth": 10,
+            "start": 1133,
+            "step": 1,
+            "unit_residue": 47673
+          },
+          {
+            "alignment_class_m_mod_d": 3,
+            "alignment_m": 13,
+            "excess_bits": 16,
+            "local_coverage_fraction": 0.003967285156,
+            "lock_residue_count": 130,
+            "n": 1700,
+            "source": "0010111111",
+            "source_depth": 10,
+            "start": 1189,
+            "step": 9,
+            "unit_residue": 47673
+          }
+        ],
+        "hit_fraction": 0.003180854287,
+        "lock_hits": 147,
+        "longest_streak_examples": [
+          {
+            "max_hit_streak": 1,
+            "source_visits_in_orbit": 6,
+            "start": 223
+          },
+          {
+            "max_hit_streak": 1,
+            "source_visits_in_orbit": 7,
+            "start": 297
+          },
+          {
+            "max_hit_streak": 1,
+            "source_visits_in_orbit": 6,
+            "start": 335
+          },
+          {
+            "max_hit_streak": 1,
+            "source_visits_in_orbit": 6,
+            "start": 503
+          },
+          {
+            "max_hit_streak": 1,
+            "source_visits_in_orbit": 8,
+            "start": 595
+          },
+          {
+            "max_hit_streak": 1,
+            "source_visits_in_orbit": 6,
+            "start": 755
+          },
+          {
+            "max_hit_streak": 1,
+            "source_visits_in_orbit": 9,
+            "start": 793
+          },
+          {
+            "max_hit_streak": 1,
+            "source_visits_in_orbit": 8,
+            "start": 893
+          },
+          {
+            "max_hit_streak": 1,
+            "source_visits_in_orbit": 9,
+            "start": 939
+          },
+          {
+            "max_hit_streak": 1,
+            "source_visits_in_orbit": 9,
+            "start": 1057
+          },
+          {
+            "max_hit_streak": 1,
+            "source_visits_in_orbit": 6,
+            "start": 1133
+          },
+          {
+            "max_hit_streak": 1,
+            "source_visits_in_orbit": 8,
+            "start": 1189
+          }
+        ],
+        "max_hit_streak": 1,
+        "observed_over_expected_hit_after_hit": 0.0,
+        "observed_over_expected_hits": 0.330361569581,
+        "orbit_max_hit_streak_histogram": {
+          "0": 4853,
+          "1": 146
+        },
+        "orbits_with_any_hit": 146,
+        "previous_hit_transitions": 147,
+        "previous_miss_transitions": 41193,
+        "same_source_hit_after_hit": 0,
+        "same_source_transitions": 5030,
+        "source_visit_transitions": 41340,
+        "source_visits": 46214
+      },
+      "8": {
+        "expected_hit_after_hit_from_local_coverage": 4234.25,
+        "expected_hits_from_local_coverage": 15150.8828125,
+        "hit_after_hit": 5369,
+        "hit_after_hit_examples": [
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 5,
+            "excess_bits": 8,
+            "local_coverage_fraction": 0.328125,
+            "lock_residue_count": 42,
+            "n": 22,
+            "source": "011",
+            "source_depth": 3,
+            "start": 25,
+            "step": 5,
+            "unit_residue": 1
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 8,
+            "excess_bits": 8,
+            "local_coverage_fraction": 0.3671875,
+            "lock_residue_count": 47,
+            "n": 638,
+            "source": "0111111",
+            "source_depth": 7,
+            "start": 27,
+            "step": 32,
+            "unit_residue": 247
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 8,
+            "excess_bits": 8,
+            "local_coverage_fraction": 0.3671875,
+            "lock_residue_count": 47,
+            "n": 638,
+            "source": "0111111",
+            "source_depth": 7,
+            "start": 31,
+            "step": 29,
+            "unit_residue": 247
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 5,
+            "excess_bits": 8,
+            "local_coverage_fraction": 0.328125,
+            "lock_residue_count": 42,
+            "n": 22,
+            "source": "011",
+            "source_depth": 3,
+            "start": 33,
+            "step": 7,
+            "unit_residue": 1
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 5,
+            "excess_bits": 8,
+            "local_coverage_fraction": 0.328125,
+            "lock_residue_count": 42,
+            "n": 22,
+            "source": "011",
+            "source_depth": 3,
+            "start": 39,
+            "step": 12,
+            "unit_residue": 1
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 8,
+            "excess_bits": 8,
+            "local_coverage_fraction": 0.3671875,
+            "lock_residue_count": 47,
+            "n": 638,
+            "source": "0111111",
+            "source_depth": 7,
+            "start": 41,
+            "step": 31,
+            "unit_residue": 247
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 8,
+            "excess_bits": 8,
+            "local_coverage_fraction": 0.3671875,
+            "lock_residue_count": 47,
+            "n": 638,
+            "source": "0111111",
+            "source_depth": 7,
+            "start": 47,
+            "step": 28,
+            "unit_residue": 247
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 8,
+            "excess_bits": 8,
+            "local_coverage_fraction": 0.3671875,
+            "lock_residue_count": 47,
+            "n": 638,
+            "source": "0111111",
+            "source_depth": 7,
+            "start": 55,
+            "step": 33,
+            "unit_residue": 247
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 5,
+            "excess_bits": 8,
+            "local_coverage_fraction": 0.328125,
+            "lock_residue_count": 42,
+            "n": 22,
+            "source": "011",
+            "source_depth": 3,
+            "start": 59,
+            "step": 11,
+            "unit_residue": 1
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 8,
+            "excess_bits": 8,
+            "local_coverage_fraction": 0.3671875,
+            "lock_residue_count": 47,
+            "n": 638,
+            "source": "0111111",
+            "source_depth": 7,
+            "start": 63,
+            "step": 30,
+            "unit_residue": 247
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 5,
+            "excess_bits": 8,
+            "local_coverage_fraction": 0.328125,
+            "lock_residue_count": 42,
+            "n": 22,
+            "source": "011",
+            "source_depth": 3,
+            "start": 67,
+            "step": 8,
+            "unit_residue": 1
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 8,
+            "excess_bits": 8,
+            "local_coverage_fraction": 0.3671875,
+            "lock_residue_count": 47,
+            "n": 638,
+            "source": "0111111",
+            "source_depth": 7,
+            "start": 71,
+            "step": 27,
+            "unit_residue": 247
+          }
+        ],
+        "hit_after_hit_fraction": 0.434279705573,
+        "hit_after_miss": 6610,
+        "hit_after_miss_fraction": 0.228111950858,
+        "hit_examples": [
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 5,
+            "excess_bits": 8,
+            "local_coverage_fraction": 0.328125,
+            "lock_residue_count": 42,
+            "n": 22,
+            "source": "011",
+            "source_depth": 3,
+            "start": 19,
+            "step": 3,
+            "unit_residue": 1
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 4,
+            "excess_bits": 8,
+            "local_coverage_fraction": 0.3671875,
+            "lock_residue_count": 47,
+            "n": 38,
+            "source": "011",
+            "source_depth": 3,
+            "start": 25,
+            "step": 1,
+            "unit_residue": 3
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 5,
+            "excess_bits": 8,
+            "local_coverage_fraction": 0.328125,
+            "lock_residue_count": 42,
+            "n": 22,
+            "source": "011",
+            "source_depth": 3,
+            "start": 25,
+            "step": 5,
+            "unit_residue": 1
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 11,
+            "excess_bits": 8,
+            "local_coverage_fraction": 0.3671875,
+            "lock_residue_count": 47,
+            "n": 566,
+            "source": "0110111111",
+            "source_depth": 10,
+            "start": 27,
+            "step": 29,
+            "unit_residue": 35
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 8,
+            "excess_bits": 8,
+            "local_coverage_fraction": 0.3671875,
+            "lock_residue_count": 47,
+            "n": 638,
+            "source": "0111111",
+            "source_depth": 7,
+            "start": 27,
+            "step": 32,
+            "unit_residue": 247
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 5,
+            "excess_bits": 8,
+            "local_coverage_fraction": 0.328125,
+            "lock_residue_count": 42,
+            "n": 22,
+            "source": "011",
+            "source_depth": 3,
+            "start": 29,
+            "step": 2,
+            "unit_residue": 1
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 11,
+            "excess_bits": 8,
+            "local_coverage_fraction": 0.3671875,
+            "lock_residue_count": 47,
+            "n": 566,
+            "source": "0110111111",
+            "source_depth": 10,
+            "start": 31,
+            "step": 26,
+            "unit_residue": 35
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 8,
+            "excess_bits": 8,
+            "local_coverage_fraction": 0.3671875,
+            "lock_residue_count": 47,
+            "n": 638,
+            "source": "0111111",
+            "source_depth": 7,
+            "start": 31,
+            "step": 29,
+            "unit_residue": 247
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 4,
+            "excess_bits": 8,
+            "local_coverage_fraction": 0.3671875,
+            "lock_residue_count": 47,
+            "n": 38,
+            "source": "011",
+            "source_depth": 3,
+            "start": 33,
+            "step": 3,
+            "unit_residue": 3
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 5,
+            "excess_bits": 8,
+            "local_coverage_fraction": 0.328125,
+            "lock_residue_count": 42,
+            "n": 22,
+            "source": "011",
+            "source_depth": 3,
+            "start": 33,
+            "step": 7,
+            "unit_residue": 1
+          },
+          {
+            "alignment_class_m_mod_d": 1,
+            "alignment_m": 4,
+            "excess_bits": 8,
+            "local_coverage_fraction": 0.3671875,
+            "lock_residue_count": 47,
+            "n": 38,
+            "source": "011",
+            "source_depth": 3,
+            "start": 39,
+            "step": 8,
+            "unit_residue": 3
+          },
+          {
+            "alignment_class_m_mod_d": 2,
+            "alignment_m": 5,
+            "excess_bits": 8,
+            "local_coverage_fraction": 0.328125,
+            "lock_residue_count": 42,
+            "n": 22,
+            "source": "011",
+            "source_depth": 3,
+            "start": 39,
+            "step": 12,
+            "unit_residue": 1
+          }
+        ],
+        "hit_fraction": 0.297507248886,
+        "lock_hits": 13749,
+        "longest_streak_examples": [
+          {
+            "max_hit_streak": 2,
+            "source_visits_in_orbit": 2,
+            "start": 25
+          },
+          {
+            "max_hit_streak": 2,
+            "source_visits_in_orbit": 12,
+            "start": 27
+          },
+          {
+            "max_hit_streak": 2,
+            "source_visits_in_orbit": 11,
+            "start": 31
+          },
+          {
+            "max_hit_streak": 2,
+            "source_visits_in_orbit": 2,
+            "start": 33
+          },
+          {
+            "max_hit_streak": 2,
+            "source_visits_in_orbit": 3,
+            "start": 39
+          },
+          {
+            "max_hit_streak": 2,
+            "source_visits_in_orbit": 12,
+            "start": 41
+          },
+          {
+            "max_hit_streak": 2,
+            "source_visits_in_orbit": 11,
+            "start": 47
+          },
+          {
+            "max_hit_streak": 2,
+            "source_visits_in_orbit": 13,
+            "start": 55
+          },
+          {
+            "max_hit_streak": 1,
+            "source_visits_in_orbit": 1,
+            "start": 19
+          },
+          {
+            "max_hit_streak": 1,
+            "source_visits_in_orbit": 1,
+            "start": 29
+          },
+          {
+            "max_hit_streak": 1,
+            "source_visits_in_orbit": 1,
+            "start": 51
+          },
+          {
+            "max_hit_streak": 1,
+            "source_visits_in_orbit": 2,
+            "start": 57
+          }
+        ],
+        "max_hit_streak": 6,
+        "observed_over_expected_hit_after_hit": 1.267993151089,
+        "observed_over_expected_hits": 0.907471872771,
+        "orbit_max_hit_streak_histogram": {
+          "0": 828,
+          "1": 1027,
+          "2": 2595,
+          "3": 267,
+          "4": 220,
+          "5": 57,
+          "6": 5
+        },
+        "orbits_with_any_hit": 4171,
+        "previous_hit_transitions": 12363,
+        "previous_miss_transitions": 28977,
+        "same_source_hit_after_hit": 1311,
+        "same_source_transitions": 5030,
+        "source_visit_transitions": 41340,
+        "source_visits": 46214
+      }
+    },
+    "canonical_source_visits": 46214,
+    "source_visit_depth_histogram": {
+      "10": 2325,
+      "11": 1812,
+      "12": 2712,
+      "13": 4070,
+      "3": 9387,
+      "4": 8540,
+      "5": 5579,
+      "6": 4839,
+      "7": 3439,
+      "8": 909,
+      "9": 2602
+    },
+    "source_visits_per_orbit_histogram": {
+      "0": 125,
+      "1": 343,
+      "10": 135,
+      "11": 161,
+      "12": 152,
+      "13": 188,
+      "14": 247,
+      "15": 237,
+      "16": 232,
+      "17": 187,
+      "18": 144,
+      "19": 142,
+      "2": 429,
+      "3": 346,
+      "4": 325,
+      "5": 312,
+      "6": 293,
+      "7": 276,
+      "8": 180,
+      "9": 204
+    },
+    "starts_reaching_one_within_cap": 4999,
+    "starts_scanned": 4999,
+    "top_source_visit_labels": {
+      "00101111101": 309,
+      "0011011101111": 392,
+      "0011101101111": 1726,
+      "001111": 2397,
+      "00111101011": 477,
+      "0011111": 482,
+      "0101101110111": 1039,
+      "010111": 908,
+      "0101111": 392,
+      "01011111": 363,
+      "011": 9387,
+      "0110111": 328,
+      "011011101111": 1430,
+      "0110111111": 1771,
+      "0111": 8540,
+      "011101111": 1702,
+      "01111": 5579,
+      "011111": 1534,
+      "0111111": 2237,
+      "01111111": 309
+    },
+    "total_shortcut_states_examined": 308361,
+    "transition_gap_histogram": {
+      "1": 8489,
+      "10": 601,
+      "11": 381,
+      "12": 322,
+      "13": 254,
+      "14": 171,
+      "15": 276,
+      "16": 189,
+      "17": 137,
+      "18": 1957,
+      "19": 278,
+      "2": 3999,
+      "21": 178,
+      "3": 5925,
+      "4": 6139,
+      "5": 2570,
+      "6": 1889,
+      "7": 4975,
+      "8": 938,
+      "9": 1466
+    }
+  },
+  "status": "odd-unit-lock-transition-lab"
+}

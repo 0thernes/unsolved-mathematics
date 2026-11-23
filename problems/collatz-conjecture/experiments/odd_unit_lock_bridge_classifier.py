@@ -170,18 +170,49 @@ def classify_bridge(
     )
     base_v2 = v2_fraction(base_current_diff)
     base_current_unit = base_current_diff / (1 << current_m)
-    base_current_unit_residue = fraction_mod_2k(base_current_unit, bits)
 
     unit_step_exponent = previous_m + bits - gap_steps - current_m
-    if unit_step_exponent < 0:
-        raise ValueError(
-            "current alignment asks for more precision than the previous lock supplies: "
-            f"{geometry_key}"
-        )
-    unit_step = three_power * (1 << unit_step_exponent)
-    rhs = (current_unit - base_current_unit_residue) % (1 << bits)
-    solution = solve_power_two_linear(unit_step, rhs, bits)
     formula_fresh_bits = max(0, gap_steps + current_m - previous_m)
+
+    base_current_unit_v2 = v2_fraction(base_current_unit)
+    base_unit_denominator_bits = max(0, -base_current_unit_v2)
+    alignment_supply_deficit_bits = max(0, -unit_step_exponent)
+    normalization_shift_bits = max(base_unit_denominator_bits, alignment_supply_deficit_bits)
+    solution_modulus_bits = bits + normalization_shift_bits
+
+    base_current_unit_residue = None
+    rhs = None
+    if normalization_shift_bits == 0:
+        base_current_unit_residue = fraction_mod_2k(base_current_unit, bits)
+        rhs = (current_unit - base_current_unit_residue) % (1 << bits)
+
+    scaled_rhs_fraction = (Fraction(current_unit) - base_current_unit) * (
+        1 << normalization_shift_bits
+    )
+    scaled_rhs_for_solution = fraction_mod_2k(scaled_rhs_fraction, solution_modulus_bits)
+
+    normalized_unit_step_exponent = unit_step_exponent + normalization_shift_bits
+    unit_step = three_power * (1 << normalized_unit_step_exponent)
+    solution = solve_power_two_linear(unit_step, scaled_rhs_for_solution, solution_modulus_bits)
+
+    unit_step_mod_2r = None
+    if normalization_shift_bits == 0:
+        unit_step_mod_2r = unit_step % (1 << bits)
+    if unit_step_exponent >= 0:
+        unit_step_fraction = str(three_power * (1 << unit_step_exponent))
+    else:
+        unit_step_fraction = f"{three_power}/2^{-unit_step_exponent}"
+    if solution["solvable"] and normalization_shift_bits:
+        detail_bits = []
+        if alignment_supply_deficit_bits:
+            detail_bits.append(
+                f"previous lock undersupplies {alignment_supply_deficit_bits} alignment bit(s)"
+            )
+        if base_unit_denominator_bits:
+            detail_bits.append(
+                f"base unit needs {base_unit_denominator_bits} normalization bit(s)"
+            )
+        solution["detail"] = "; ".join(detail_bits + [str(solution["detail"])])
 
     lifted_previous_modulus_bits = previous_modulus_bits + int(
         solution["fresh_quotient_bits"] or 0
@@ -237,9 +268,16 @@ def classify_bridge(
             "F_gap_rho0_minus_rho1": fraction_string(bridge_rho_offset),
             "base_current_diff_v2_for_k0": base_v2,
             "base_current_unit_residue_mod_2^R": base_current_unit_residue,
-            "unit_step_mod_2^R": unit_step % (1 << bits),
+            "base_alignment_reaches_current_alignment": base_v2 >= current_m,
+            "unit_step": unit_step_fraction,
+            "unit_step_mod_2^R": unit_step_mod_2r,
             "unit_step_v2": unit_step_exponent,
+            "alignment_supply_deficit_bits": alignment_supply_deficit_bits,
+            "base_unit_denominator_bits": base_unit_denominator_bits,
+            "normalization_shift_bits": normalization_shift_bits,
             "rhs_needed_for_current_unit": rhs,
+            "scaled_rhs_needed_after_normalization": scaled_rhs_for_solution,
+            "solution_modulus_bits": solution_modulus_bits,
             "fresh_bits_formula_max_0_gap_plus_next_m_minus_previous_m": formula_fresh_bits,
             "solution": solution,
             "lifted_previous_state_residue": lifted_previous_residue,
@@ -260,7 +298,9 @@ def classify_bridge(
                 int(state) % (1 << current_modulus_bits) == current_residue
                 for state in current_states
             ),
-            "base_alignment_reaches_current_alignment": base_v2 >= current_m,
+            "bridge_alignment_accounted_for": (
+                base_v2 >= current_m or normalization_shift_bits > 0
+            ),
         },
     }
 

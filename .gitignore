@@ -39,9 +39,20 @@ htmlcov/
 # Local scratch
 scratch/
 *.local.md
-
-# Run logs and editor backups (were previously committed by mistake)
 *.log
+
+# Quarantined pseudo-proof / numerology artifacts (never committed)
+**/_quarantine/
+
+# Editor / backup cruft
 *.bak
 *.prev
+*.orig
 *.bak.*
+
+# Toolchains, caches & virtualenvs
+.venv/
+.mypy_cache/
+.ruff_cache/
+formal/.lake/
+formal/build/

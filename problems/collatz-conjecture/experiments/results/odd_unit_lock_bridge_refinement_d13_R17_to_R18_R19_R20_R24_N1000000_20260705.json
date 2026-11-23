@@ -1,0 +1,203 @@
+{
+  "elapsed_seconds": 15.459509,
+  "families": [
+    {
+      "base_fresh_quotient_bits": 0,
+      "geometry_key": "0011111|m10|a3|u65357|011111|m7|a1|u89433|gap0",
+      "refinements": [
+        {
+          "all_previous_lifts_die_as_repeats": false,
+          "high_bits": 18,
+          "lift_rows": [
+            {
+              "current_alignment_class_m_mod_d": 1,
+              "current_alignment_m": 7,
+              "current_high_lock_count_for_bin": 390,
+              "current_high_lock_hit": true,
+              "current_unit_projection_mod_2^R_base": 89433,
+              "current_unit_residue_mod_2^R_high": 89433,
+              "previous_unit_residue_mod_2^R_high": 196429,
+              "same_low_geometry_projection": true
+            }
+          ],
+          "low_projection_mismatches": 0,
+          "previous_high_lock_lifts": 1,
+          "refined_repeat_lifts": 1,
+          "same_geometry_refined_repeat_lifts": 1
+        },
+        {
+          "all_previous_lifts_die_as_repeats": false,
+          "high_bits": 19,
+          "lift_rows": [
+            {
+              "current_alignment_class_m_mod_d": 1,
+              "current_alignment_m": 7,
+              "current_high_lock_count_for_bin": 390,
+              "current_high_lock_hit": true,
+              "current_unit_projection_mod_2^R_base": 89433,
+              "current_unit_residue_mod_2^R_high": 89433,
+              "previous_unit_residue_mod_2^R_high": 458573,
+              "same_low_geometry_projection": true
+            }
+          ],
+          "low_projection_mismatches": 0,
+          "previous_high_lock_lifts": 1,
+          "refined_repeat_lifts": 1,
+          "same_geometry_refined_repeat_lifts": 1
+        },
+        {
+          "all_previous_lifts_die_as_repeats": true,
+          "high_bits": 20,
+          "lift_rows": [
+            {
+              "current_alignment_class_m_mod_d": 1,
+              "current_alignment_m": 7,
+              "current_high_lock_count_for_bin": 390,
+              "current_high_lock_hit": false,
+              "current_unit_projection_mod_2^R_base": 89433,
+              "current_unit_residue_mod_2^R_high": 89433,
+              "previous_unit_residue_mod_2^R_high": 982861,
+              "same_low_geometry_projection": true
+            }
+          ],
+          "low_projection_mismatches": 0,
+          "previous_high_lock_lifts": 1,
+          "refined_repeat_lifts": 0,
+          "same_geometry_refined_repeat_lifts": 0
+        },
+        {
+          "all_previous_lifts_die_as_repeats": true,
+          "high_bits": 24,
+          "lift_rows": [
+            {
+              "current_alignment_class_m_mod_d": 1,
+              "current_alignment_m": 7,
+              "current_high_lock_count_for_bin": 390,
+              "current_high_lock_hit": false,
+              "current_unit_projection_mod_2^R_base": 89433,
+              "current_unit_residue_mod_2^R_high": 8478041,
+              "previous_unit_residue_mod_2^R_high": 7274317,
+              "same_low_geometry_projection": true
+            }
+          ],
+          "low_projection_mismatches": 0,
+          "previous_high_lock_lifts": 1,
+          "refined_repeat_lifts": 0,
+          "same_geometry_refined_repeat_lifts": 0
+        }
+      ],
+      "source_pair": "0011111->011111",
+      "transition_count_at_base_bits": 3
+    },
+    {
+      "base_fresh_quotient_bits": 0,
+      "geometry_key": "0110111111|m11|a1|u94857|0111111|m8|a1|u106381|gap011",
+      "refinements": [
+        {
+          "all_previous_lifts_die_as_repeats": false,
+          "high_bits": 18,
+          "lift_rows": [
+            {
+              "current_alignment_class_m_mod_d": 1,
+              "current_alignment_m": 8,
+              "current_high_lock_count_for_bin": 390,
+              "current_high_lock_hit": true,
+              "current_unit_projection_mod_2^R_base": 106381,
+              "current_unit_residue_mod_2^R_high": 106381,
+              "previous_unit_residue_mod_2^R_high": 225929,
+              "same_low_geometry_projection": true
+            }
+          ],
+          "low_projection_mismatches": 0,
+          "previous_high_lock_lifts": 1,
+          "refined_repeat_lifts": 1,
+          "same_geometry_refined_repeat_lifts": 1
+        },
+        {
+          "all_previous_lifts_die_as_repeats": false,
+          "high_bits": 19,
+          "lift_rows": [
+            {
+              "current_alignment_class_m_mod_d": 1,
+              "current_alignment_m": 8,
+              "current_high_lock_count_for_bin": 390,
+              "current_high_lock_hit": true,
+              "current_unit_projection_mod_2^R_base": 106381,
+              "current_unit_residue_mod_2^R_high": 106381,
+              "previous_unit_residue_mod_2^R_high": 225929,
+              "same_low_geometry_projection": true
+            }
+          ],
+          "low_projection_mismatches": 0,
+          "previous_high_lock_lifts": 1,
+          "refined_repeat_lifts": 1,
+          "same_geometry_refined_repeat_lifts": 1
+        },
+        {
+          "all_previous_lifts_die_as_repeats": true,
+          "high_bits": 20,
+          "lift_rows": [
+            {
+              "current_alignment_class_m_mod_d": 1,
+              "current_alignment_m": 8,
+              "current_high_lock_count_for_bin": 390,
+              "current_high_lock_hit": false,
+              "current_unit_projection_mod_2^R_base": 106381,
+              "current_unit_residue_mod_2^R_high": 630669,
+              "previous_unit_residue_mod_2^R_high": 750217,
+              "same_low_geometry_projection": true
+            }
+          ],
+          "low_projection_mismatches": 0,
+          "previous_high_lock_lifts": 1,
+          "refined_repeat_lifts": 0,
+          "same_geometry_refined_repeat_lifts": 0
+        },
+        {
+          "all_previous_lifts_die_as_repeats": true,
+          "high_bits": 24,
+          "lift_rows": [
+            {
+              "current_alignment_class_m_mod_d": 1,
+              "current_alignment_m": 8,
+              "current_high_lock_count_for_bin": 390,
+              "current_high_lock_hit": false,
+              "current_unit_projection_mod_2^R_base": 106381,
+              "current_unit_residue_mod_2^R_high": 9019277,
+              "previous_unit_residue_mod_2^R_high": 9138825,
+              "same_low_geometry_projection": true
+            }
+          ],
+          "low_projection_mismatches": 0,
+          "previous_high_lock_lifts": 1,
+          "refined_repeat_lifts": 0,
+          "same_geometry_refined_repeat_lifts": 0
+        }
+      ],
+      "source_pair": "0110111111->0111111",
+      "transition_count_at_base_bits": 1
+    }
+  ],
+  "inputs": {
+    "classifier": "experiments\\results\\odd_unit_lock_bridge_classifier_d13_R17_N1000000_20260705.json"
+  },
+  "parameters": {
+    "base_bits": 17,
+    "high_bits": [
+      18,
+      19,
+      20,
+      24
+    ],
+    "max_depth": 13,
+    "min_source_depth": 3
+  },
+  "result": "finite bridge refinement measurement; not a proof of Collatz",
+  "status": "odd-unit-lock-bridge-refinement",
+  "summary": {
+    "all_measured_base_bridges_die_as_refined_repeats": false,
+    "families_checked": 2,
+    "interpretation": "For the measured R=17 repeat bridges, every higher-precision previous-lock lift tested here fails to be a higher-precision next-lock hit.",
+    "low_projection_mismatches": 0
+  }
+}

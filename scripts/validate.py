@@ -27,6 +27,17 @@ ROOT = Path(__file__).resolve().parent.parent
 PROBLEMS_DIR = ROOT / "problems"
 VALID_FLAGS = {"verified", "high-confidence", "needs-verification", "ai-suggested"}
 
+# Pseudo-proof / numerology artifact name patterns. Matched on FILENAME only, so
+# files that merely *discuss* the quarantine (status.md, audit notes) never trip it.
+# See docs/review/REPO-AUDIT-2026-07.md.
+PSEUDOPROOF_RE = re.compile(
+    r"(THE-PROMPT-IS-THE-PROOF|P-.*-RESOLUTION|THIS-.*-(RESOLUTION|COLIMIT|FIXEDPOINT)"
+    r"|11\.8_MASTER|defect_algebra|DEFECT_ALGEBRA|-CLOSURE\.md$|SIMULATION-BREAKING"
+    r"|ONTOLOGICAL|TRANSFINITE|^p_map\.py$|P-COLLATZ-MAP|ensemble_fixedpoint"
+    r"|ontological_breaker|transfinite_repulsion|prompt_collatz)",
+    re.IGNORECASE,
+)
+
 
 def check_registry() -> list[str]:
     sys.path.insert(0, str(ROOT / "scripts"))
@@ -87,11 +98,50 @@ def check_resolved_have_citation() -> list[str]:
     return issues
 
 
+def check_problems_root_clean() -> list[str]:
+    """problems/ must contain only slug directories — never stray files.
+    (Two crank .md files were found loose here on 2026-07-02.)"""
+    if not PROBLEMS_DIR.exists():
+        return []
+    return [
+        f"problems/ contains a stray file (only slug directories allowed): {p.name}"
+        for p in sorted(PROBLEMS_DIR.iterdir())
+        if p.is_file()
+    ]
+
+
+def check_pseudoproof_leak() -> None:
+    """Warn (never fail) when numerology artifacts live outside a _quarantine/ dir.
+    Non-fatal by design: a live multi-session tree can re-drop these at any moment,
+    so CI should surface — not block on — the churn."""
+    if not PROBLEMS_DIR.exists():
+        return
+    leaks = [
+        str(f.relative_to(ROOT))
+        for f in PROBLEMS_DIR.rglob("*")
+        if f.is_file()
+        and "_quarantine" not in f.parts
+        and PSEUDOPROOF_RE.search(f.name)
+    ]
+    if leaks:
+        print(
+            f"\n⚠ {len(leaks)} pseudo-proof/numerology file(s) live outside _quarantine/ "
+            f"(sweep them in; see docs/review/REPO-AUDIT-2026-07.md):"
+        )
+        for leak in sorted(leaks)[:25]:
+            print(f"    - {leak}")
+        if len(leaks) > 25:
+            print(f"    … and {len(leaks) - 25} more")
+
+
 def main() -> int:
     all_issues: list[str] = []
     all_issues += check_registry()
     all_issues += check_papers_flags()
     all_issues += check_resolved_have_citation()
+    all_issues += check_problems_root_clean()
+
+    check_pseudoproof_leak()  # warnings only — never fails the build
 
     if all_issues:
         print("VALIDATION FAILED:\n")

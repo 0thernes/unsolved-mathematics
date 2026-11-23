@@ -14,17 +14,18 @@ Usage:
 The BM25 implementation is intentionally small and self-contained so the atlas
 is queryable out of the box, in CI, and offline.
 """
-import sys
-try:
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-except Exception:
-    pass
 from __future__ import annotations
 
 import argparse
 import json
 import math
 import re
+import sys
+
+try:
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")  # type: ignore[attr-defined]
+except Exception:
+    pass
 from collections import Counter
 from pathlib import Path
 

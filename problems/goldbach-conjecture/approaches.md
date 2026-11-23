@@ -27,7 +27,7 @@ Schnirelmann (1930) showed the set of primes (plus 0,1) has positive Schnirelman
 
 Rather than every even number, bound the count $E(X)=\#\{n\le X:\ n\ \text{even},\ n\neq p+q\}$.
 
-- **Best result:** Montgomery–Vaughan (1975) proved $E(X)=O(X^{1-\delta})$ for some explicit $\delta>0$; subsequent work (Pintz and others) has improved the savings, with $\delta$ now around $0.7$ in the literature. Thus the conjecture holds for **almost all** even integers, with a power-saving exceptional set.
+- **Best result:** Montgomery–Vaughan (1975) proved $E(X)=O(X^{1-\delta})$ for some explicit $\delta>0$; subsequent work (Pintz) has improved the saving to $E(X)\ll X^{0.72}$, i.e. $\delta\approx0.28$. Thus the conjecture holds for **almost all** even integers, with a power-saving exceptional set.
 - **Barrier:** improving $E(X)$ to $0$ (i.e. to finitely many exceptions, then none) appears to require the same minor-arc control the binary circle method lacks; an unconditional $E(X)=O(1)$ would essentially be the conjecture.
 
 ## Conditional Approaches (GRH and beyond)

@@ -1,15 +1,20 @@
 {
-  "elapsed_seconds": 0.002077,
+  "elapsed_seconds": 0.002267,
   "families": [
     {
       "bridge_algebra": {
         "F_gap_rho0_minus_rho1": "2214/187",
+        "alignment_supply_deficit_bits": 0,
+        "base_alignment_reaches_current_alignment": true,
         "base_current_diff_v2_for_k0": 8,
         "base_current_unit_residue_mod_2^R": 46383,
+        "base_unit_denominator_bits": 0,
         "fresh_bits_formula_max_0_gap_plus_next_m_minus_previous_m": 7,
         "lifted_previous_state_modulus_bits": 28,
         "lifted_previous_state_residue": 18542,
+        "normalization_shift_bits": 0,
         "rhs_needed_for_current_unit": 0,
+        "scaled_rhs_needed_after_normalization": 0,
         "solution": {
           "detail": "next lock imposes a fresh quotient congruence",
           "fresh_quotient_bits": 7,
@@ -17,11 +22,13 @@
           "k_residue": 0,
           "solvable": true
         },
+        "solution_modulus_bits": 16,
+        "unit_step": "13824",
         "unit_step_mod_2^R": 13824,
         "unit_step_v2": 9
       },
       "checks": {
-        "base_alignment_reaches_current_alignment": true,
+        "bridge_alignment_accounted_for": true,
         "formula_matches_solver_fresh_bits": true,
         "observed_current_states_match_current_residue": true,
         "observed_previous_states_match_base_residue": true,
@@ -92,12 +99,17 @@
     {
       "bridge_algebra": {
         "F_gap_rho0_minus_rho1": "0",
+        "alignment_supply_deficit_bits": 0,
+        "base_alignment_reaches_current_alignment": true,
         "base_current_diff_v2_for_k0": 7,
         "base_current_unit_residue_mod_2^R": 43011,
+        "base_unit_denominator_bits": 0,
         "fresh_bits_formula_max_0_gap_plus_next_m_minus_previous_m": 0,
         "lifted_previous_state_modulus_bits": 26,
         "lifted_previous_state_residue": 4893686,
+        "normalization_shift_bits": 0,
         "rhs_needed_for_current_unit": 0,
+        "scaled_rhs_needed_after_normalization": 0,
         "solution": {
           "detail": "previous lock already determines next unit modulo 2^R",
           "fresh_quotient_bits": 0,
@@ -105,11 +117,13 @@
           "k_residue": 0,
           "solvable": true
         },
+        "solution_modulus_bits": 16,
+        "unit_step": "589824",
         "unit_step_mod_2^R": 0,
         "unit_step_v2": 16
       },
       "checks": {
-        "base_alignment_reaches_current_alignment": true,
+        "bridge_alignment_accounted_for": true,
         "formula_matches_solver_fresh_bits": true,
         "observed_current_states_match_current_residue": true,
         "observed_previous_states_match_base_residue": true,
@@ -163,12 +177,17 @@
     {
       "bridge_algebra": {
         "F_gap_rho0_minus_rho1": "-2640896/1948025",
+        "alignment_supply_deficit_bits": 0,
+        "base_alignment_reaches_current_alignment": true,
         "base_current_diff_v2_for_k0": 10,
         "base_current_unit_residue_mod_2^R": 43243,
+        "base_unit_denominator_bits": 0,
         "fresh_bits_formula_max_0_gap_plus_next_m_minus_previous_m": 0,
         "lifted_previous_state_modulus_bits": 28,
         "lifted_previous_state_residue": 2181532,
+        "normalization_shift_bits": 0,
         "rhs_needed_for_current_unit": 0,
+        "scaled_rhs_needed_after_normalization": 0,
         "solution": {
           "detail": "previous lock already determines next unit modulo 2^R",
           "fresh_quotient_bits": 0,
@@ -176,11 +195,13 @@
           "k_residue": 0,
           "solvable": true
         },
+        "solution_modulus_bits": 16,
+        "unit_step": "131072",
         "unit_step_mod_2^R": 0,
         "unit_step_v2": 17
       },
       "checks": {
-        "base_alignment_reaches_current_alignment": true,
+        "bridge_alignment_accounted_for": true,
         "formula_matches_solver_fresh_bits": true,
         "observed_current_states_match_current_residue": true,
         "observed_previous_states_match_base_residue": true,
@@ -230,12 +251,17 @@
     {
       "bridge_algebra": {
         "F_gap_rho0_minus_rho1": "0",
+        "alignment_supply_deficit_bits": 0,
+        "base_alignment_reaches_current_alignment": true,
         "base_current_diff_v2_for_k0": 4,
         "base_current_unit_residue_mod_2^R": 43011,
+        "base_unit_denominator_bits": 0,
         "fresh_bits_formula_max_0_gap_plus_next_m_minus_previous_m": 0,
         "lifted_previous_state_modulus_bits": 23,
         "lifted_previous_state_residue": 611702,
+        "normalization_shift_bits": 0,
         "rhs_needed_for_current_unit": 0,
+        "scaled_rhs_needed_after_normalization": 0,
         "solution": {
           "detail": "previous lock already determines next unit modulo 2^R",
           "fresh_quotient_bits": 0,
@@ -243,11 +269,13 @@
           "k_residue": 0,
           "solvable": true
         },
+        "solution_modulus_bits": 16,
+        "unit_step": "589824",
         "unit_step_mod_2^R": 0,
         "unit_step_v2": 16
       },
       "checks": {
-        "base_alignment_reaches_current_alignment": true,
+        "bridge_alignment_accounted_for": true,
         "formula_matches_solver_fresh_bits": true,
         "observed_current_states_match_current_residue": true,
         "observed_previous_states_match_base_residue": true,

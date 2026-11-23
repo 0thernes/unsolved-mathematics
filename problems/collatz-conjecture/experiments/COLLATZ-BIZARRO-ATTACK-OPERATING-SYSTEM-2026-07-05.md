@@ -232,6 +232,12 @@ On future opportunity: the best shot is ghost separation + regeneration control.
 
 ### Priority 1: WTF Regression Suite
 
+Status: first executable slice started in
+`collatz_epsilon_lint.py` / `COLLATZ-EPSILON-LINT.md`. It covers the
+epsilon/sibling portion of this suite and records hard starts, Mersenne shadows,
+high-ladder states, low-repeat gates, false-world cycle minima, and negative
+cycle controls. It is a lint gate, not a theorem prover.
+
 Build one harness that runs any new invariant against:
 
 ```text
@@ -252,6 +258,11 @@ until it survives this harness.
 
 ### Priority 2: Sibling Lint
 
+Status: initial harness implemented in `collatz_epsilon_lint.py`; result
+`results/collatz_epsilon_lint_20260705.json` marks parity-word distribution,
+odd density, multiplier excess, and survivor-frontier counts as standalone
+rejects unless a proof consumes the affine intercept/sign.
+
 Write a lint layer for proof sketches:
 
 ```text
@@ -265,6 +276,28 @@ Where exactly does +1 enter?
 If the proof cannot answer the last question, it is not Collatz-specific.
 
 ### Priority 3: Odd-Unit Lock Miner
+
+Status: static coverage/refinement/diagonal labs now keep this route alive at
+high precision, but the positive-orbit transition lab
+`ODD-UNIT-LOCK-TRANSITION.md` found coarse orbit memory. At `R = 12`,
+hit-after-hit is about `2.95x` hit-after-miss over `274,989` canonical source
+visits. The route is therefore not "multiply independent codimensions"; it must
+prove conditional loss along the source-transition chain.
+
+Update: the bridge microscope/refinement ladder sharpens that loss condition.
+At `R = 16`, the widened `250,000` odd-start scan has `73` repeat hits, but
+they collapse to `4` exact bridge geometries; the dominant `62`-record bridge
+pays `7` fresh quotient bits, and all measured `R = 16` bridges die as repeated
+locks at `R = 20` and `R = 24`. In `1,000,000` odd-start stress scans,
+`R = 17` finds only `4` repeats against expectation `136.842514038086`,
+`R = 18` finds only `3` against expectation `47.528289794922`, and `R = 19`
+finds `0` against expectation `17.202903747559`. The measured `R = 17` and
+`R = 18` repeats collapse to tiny zero-fresh alignment-drop geometries and
+also die at `R = 20` and `R = 24`. The current hard subcase is therefore
+bounded persistence of alignment-drop bridges, not naive independence.
+`ODD-UNIT-LOCK-ALIGNMENT-DROP.md` now records the finite mechanism split:
+all `6` measured zero-fresh bridge families are alignment-descending, with
+drops between `2` and `3`, and every checked one loses refined lock depth.
 
 Mine repeated phase-collision locks by source spine, target spine, valuation,
 and positive-shadow status.

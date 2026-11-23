@@ -134,8 +134,12 @@ chains are impossible.
 
 ## Next Target
 
-The best next executable target is a microscope for the twelve `R = 16`
-hit-after-hit transitions: reconstruct the exact source labels, alignment
-classes, unit residues, and target residue sets on both sides of the transition,
-then test whether all twelve share a dynamic mechanism or split into multiple
-families.
+The first microscope pass is now recorded in
+[`ODD-UNIT-LOCK-TRANSITION-WITNESS-MICROSCOPE.md`](ODD-UNIT-LOCK-TRANSITION-WITNESS-MICROSCOPE.md).
+The `50,000`-start `R = 16` anomaly collapses to one state bridge; by `250,000`
+odd starts it splits into three small `R = 16` transition families, and those
+families vanish as repeat locks at `R = 20` in the same widened window.
+
+The next executable target is therefore not merely to list exceptions. It is to
+classify which transition families survive at `R = 16`, then prove or falsify
+that each family loses repeat-lock status after bounded refinement.

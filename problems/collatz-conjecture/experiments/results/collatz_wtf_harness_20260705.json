@@ -1,0 +1,327 @@
+{
+  "claim": "No part of the Collatz conjecture is proved by this harness.",
+  "created_utc": "2026-07-05",
+  "elapsed_seconds": 0.021659,
+  "graduation_rule": "A future invariant can graduate only if it is eps-sensitive, names its false-world falsifier, has an exact checker, and does not convert finite silence into universal theorem language.",
+  "probes": [
+    {
+      "candidate": "Use survivor counts, densities, entropy, or tau tails to exclude all positive counterexamples.",
+      "evidence": {
+        "mean_tau_gap": 0.003249,
+        "q3_minus_mean_tau": 3.49403,
+        "q3_minus_membership_certificates_all_proved": true,
+        "q3_minus_positive_frontier_residents": [
+          1,
+          5,
+          17
+        ],
+        "q3_plus_mean_tau": 3.490781
+      },
+      "falsifier": "(3,-1) sibling map",
+      "name": "parity_word_statistics",
+      "next_action": "Every future proof sketch must state which non-word, eps-sensitive quantity it uses.",
+      "proof_use": "Do not use as a universal proof route.",
+      "reason": "The q=3 word system is identical for eps=+1 and eps=-1, but the 3n-1 sibling has positive frontier residents 1, 5, and 17.",
+      "verdict": "killed_as_proof"
+    },
+    {
+      "candidate": "Treat tau-infinity / long-frontier residency as a calibrated counterexample detector.",
+      "evidence": {
+        "q3_minus_flagged_count": 3,
+        "q3_minus_flagged_samples": [
+          1,
+          5,
+          17
+        ],
+        "q3_plus_flagged_count": 0,
+        "q5_plus_first_samples": [
+          7,
+          9,
+          21,
+          23,
+          25,
+          29,
+          31,
+          37,
+          39,
+          41
+        ],
+        "q5_plus_flagged_density": 0.17555
+      },
+      "falsifier": null,
+      "name": "frontier_resident_detector",
+      "next_action": "Keep this as a required control in every new invariant run.",
+      "proof_use": "Useful falsifier and regression test; not a proof by silence.",
+      "reason": "The detector fires exactly on the known 3n-1 cycle minima in the available scan and fires at the expected high density in 5n+1.",
+      "verdict": "promote_as_diagnostic"
+    },
+    {
+      "candidate": "Use the sign of the affine intercept to separate where cycles can live.",
+      "evidence": {
+        "all_sign_rules_hold": true,
+        "cycle_count_checked": 7,
+        "cycle_margins": [
+          {
+            "eps": 1,
+            "length_shortcut": 2,
+            "margin_bits": -0.415037,
+            "min_element": 1,
+            "odd_steps": 1,
+            "q": 3,
+            "side": "below"
+          },
+          {
+            "eps": -1,
+            "length_shortcut": 1,
+            "margin_bits": 0.584963,
+            "min_element": 1,
+            "odd_steps": 1,
+            "q": 3,
+            "side": "above"
+          },
+          {
+            "eps": -1,
+            "length_shortcut": 3,
+            "margin_bits": 0.169925,
+            "min_element": 5,
+            "odd_steps": 2,
+            "q": 3,
+            "side": "above"
+          },
+          {
+            "eps": -1,
+            "length_shortcut": 11,
+            "margin_bits": 0.094738,
+            "min_element": 17,
+            "odd_steps": 7,
+            "q": 3,
+            "side": "above"
+          },
+          {
+            "eps": 1,
+            "length_shortcut": 5,
+            "margin_bits": -0.356144,
+            "min_element": 1,
+            "odd_steps": 2,
+            "q": 5,
+            "side": "below"
+          },
+          {
+            "eps": 1,
+            "length_shortcut": 7,
+            "margin_bits": -0.034216,
+            "min_element": 13,
+            "odd_steps": 3,
+            "q": 5,
+            "side": "below"
+          },
+          {
+            "eps": 1,
+            "length_shortcut": 7,
+            "margin_bits": -0.034216,
+            "min_element": 17,
+            "odd_steps": 3,
+            "q": 5,
+            "side": "below"
+          }
+        ]
+      },
+      "falsifier": null,
+      "name": "cycle_side_sign_rule",
+      "next_action": "Use this as the baseline theorem in a formal sibling-control note.",
+      "proof_use": "Good theorem component; insufficient alone for Collatz.",
+      "reason": "All known sibling cycles obey the exact rule: eps=+1 cycles sit below the critical line; eps=-1 cycles sit above it.",
+      "verdict": "promote_as_local_theorem"
+    },
+    {
+      "candidate": "Use tau/sigma inequality direction as the first eps-sensitive lint test.",
+      "evidence": {
+        "q3_minus_mismatch_count": 0,
+        "q3_plus_threshold_trap_samples": [
+          {
+            "n": 1,
+            "sigma": -1,
+            "tau": 2
+          }
+        ],
+        "selftest_all_pass": true
+      },
+      "falsifier": "Any proof that implies the same tau/sigma theorem for both signs.",
+      "name": "tau_sigma_direction",
+      "next_action": "Add this question to every future claim manifest: where does eps=+1 enter?",
+      "proof_use": "Good proof-sketch lint; it catches sign-blind arguments early.",
+      "reason": "The sign theorem gives opposite inequality directions: eps=+1 allows threshold traps, eps=-1 gives unconditional descent once tau fires.",
+      "verdict": "promote_as_lint_rule"
+    },
+    {
+      "candidate": "Use finite phase matching alone to block regeneration.",
+      "evidence": {
+        "all_cycle_avg_allowed_fraction": 0.751980433903,
+        "identity_failure_count": 0,
+        "unique_target_avg_allowed_fraction": 0.777558620542,
+        "unique_target_pair_count": 25920
+      },
+      "falsifier": "Phase-collision lab itself: gate density remains high.",
+      "name": "phase_gate_only",
+      "next_action": "Mine odd-unit locks, codimension, positivity, or retimed reserve source instead.",
+      "proof_use": "Useful negative result; not a proof route by itself.",
+      "reason": "The exact phase identity checks out, but the finite phase gate is too permissive: it allows roughly three quarters of source-target residues.",
+      "verdict": "killed_as_proof"
+    },
+    {
+      "candidate": "Use no detected Collatz residents in a finite scan as proof of emptiness.",
+      "evidence": {
+        "q3_minus_flagged_samples": [
+          1,
+          5,
+          17
+        ],
+        "q3_plus_cap": 4096,
+        "q3_plus_flagged_count": 0,
+        "q3_plus_limit": 10000000,
+        "q5_plus_flagged_density": 0.17555
+      },
+      "falsifier": "Any larger finite bound is still finite.",
+      "name": "finite_scan_silence",
+      "next_action": "Convert silence into certified bounded statements only.",
+      "proof_use": "Evidence and regression signal only; never theorem language.",
+      "reason": "The Collatz scan is silent in the loaded finite artifact, but the same harness shows exactly how false worlds announce themselves.",
+      "verdict": "diagnostic_only"
+    },
+    {
+      "candidate": "Promote retimed reserve-source records into bounded theorem obligations.",
+      "evidence": {
+        "checks_all_true": true,
+        "reserve_counter": {
+          "1": 5,
+          "10": 1,
+          "2": 25,
+          "3": 89,
+          "4": 119,
+          "5": 98,
+          "6": 112,
+          "7": 32,
+          "8": 27,
+          "9": 3
+        },
+        "total_first_thresholds": 13856,
+        "total_local_grammar_records": 511,
+        "total_retimed_transitions": 13856
+      },
+      "falsifier": "A deeper lift or solver counterexample violating the reserve-source checks.",
+      "name": "retimed_reserve_source",
+      "next_action": "Encode this finite grammar in SAT/SMT or a proof assistant before adding stronger prose.",
+      "proof_use": "Strong finite structure; needs induction or solver certificate.",
+      "reason": "The loaded reserve-source artifact has all depth checks true, 13,856 retimed transitions, and 511 local grammar records.",
+      "verdict": "promote_as_theorem_target"
+    }
+  ],
+  "sibling_selftest": {
+    "all_pass": true,
+    "checks": [
+      {
+        "check": "terras_bijection_all_maps_depth_le_10",
+        "pass": true
+      },
+      {
+        "check": "affine_law_with_eps",
+        "pass": true
+      },
+      {
+        "check": "cycles_and_sign_dichotomy",
+        "pass": true
+      },
+      {
+        "check": "sign_theorems_sigma_vs_tau_n_le_2000",
+        "pass": true
+      },
+      {
+        "check": "3n-1_frontier_residents_le_1000_are_exactly_1_5_17",
+        "pass": true,
+        "value": [
+          1,
+          5,
+          17
+        ]
+      },
+      {
+        "check": "membership_1_5_17_in_S_3minus",
+        "pass": true
+      },
+      {
+        "check": "dp_vs_brute_depth_12",
+        "pass": true,
+        "values": {
+          "q3": [
+            226,
+            226
+          ],
+          "q5": [
+            1008,
+            1008
+          ]
+        }
+      },
+      {
+        "check": "q3_word_system_matches_collatz_anchors",
+        "pass": true
+      }
+    ],
+    "mode": "selftest"
+  },
+  "source_manifest": {
+    "phase_collision": {
+      "bytes": 10542,
+      "path": "results\\spine_phase_collision_lab_d12_20260702.json",
+      "sha256": "fbbd1d33444180e89a8a43adf6883e308f254e3481c2ec49cfba485c67bd59f4"
+    },
+    "retimed_reserve_source": {
+      "bytes": 80891,
+      "path": "results\\branch_prefix_retimed_tight_reserve_source_d18_d25_20260702.json",
+      "sha256": "38db585f3ab7d58e513562ef3be8bc9c15af728407fdfd46876bdc9091f232a4"
+    },
+    "sibling_dichotomy": {
+      "bytes": 3235,
+      "path": "results\\sibling_dichotomy.json",
+      "sha256": "e64a9354de94c93ac0835caab86d375269d7ad4cd74ed489572f2f20c76a97af"
+    },
+    "sibling_membership": {
+      "bytes": 1638,
+      "path": "results\\sibling_membership.json",
+      "sha256": "bc0323cd65c89af78c8564b87384940d8195cfd24e8ee8dc90c79441cee21503"
+    },
+    "sibling_rates5": {
+      "bytes": 2358,
+      "path": "results\\sibling_rates5_4096.json",
+      "sha256": "10cc558565da3941b437bb231aa194f7add6aa0472e041e56c659d19a034cf0b"
+    },
+    "sibling_scan_3minus": {
+      "bytes": 1759,
+      "path": "results\\sibling_scan_3minus_1e7.json",
+      "sha256": "25975c494f98fdaa27914525cdff2fabe26b9d8416f426736744b0748ec19965"
+    },
+    "sibling_scan_3plus": {
+      "bytes": 1795,
+      "path": "results\\sibling_scan_3plus_1e7.json",
+      "sha256": "e035937df0a49caa549d072ed0bdd0d32e78ff5f48ece75be949f8424a0572c4"
+    },
+    "sibling_scan_5plus": {
+      "bytes": 2198,
+      "path": "results\\sibling_scan_5plus_2e4.json",
+      "sha256": "30b7a21447b634bc1de012f406ea973cee799a0ae4f55fc82e562a5381de9579"
+    }
+  },
+  "status": "collatz-wtf-regression-harness",
+  "summary": {
+    "best_next_move": "Formalize the sibling sign theorem and encode retimed reserve-source records as bounded certificates; mine phase odd-unit locks next.",
+    "probe_count": 7,
+    "verdict_counts": {
+      "diagnostic_only": 1,
+      "killed_as_proof": 2,
+      "promote_as_diagnostic": 1,
+      "promote_as_lint_rule": 1,
+      "promote_as_local_theorem": 1,
+      "promote_as_theorem_target": 1
+    }
+  }
+}

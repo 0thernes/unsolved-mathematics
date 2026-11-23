@@ -1,0 +1,566 @@
+{
+  "checks": [
+    {
+      "details": {
+        "computed": [
+          111,
+          9232
+        ],
+        "expected": [
+          111,
+          9232
+        ]
+      },
+      "name": "classic orbit of 27 remains a fixed sanity anchor",
+      "ok": true
+    },
+    {
+      "details": {
+        "computed": [
+          70,
+          41
+        ],
+        "expected": [
+          70,
+          41
+        ]
+      },
+      "name": "shortcut orbit of 27 remains a fixed sanity anchor",
+      "ok": true
+    },
+    {
+      "details": {
+        "depth": 64,
+        "odd_prefix_count": 64
+      },
+      "name": "all-odd 2-adic boundary survives every checked prefix",
+      "ok": true
+    },
+    {
+      "details": {
+        "minus_five": "-5",
+        "minus_one": "-1",
+        "minus_seventeen": "-17"
+      },
+      "name": "known negative spines remain exact fixed points",
+      "ok": true
+    },
+    {
+      "details": {
+        "failures": 0,
+        "radius": 2048
+      },
+      "name": "epsilon conjugacy has no failures on checked interval",
+      "ok": true
+    },
+    {
+      "details": {
+        "depth": 10,
+        "minus_words": 1024,
+        "plus_words": 1024
+      },
+      "name": "both epsilon maps realize every parity word exactly once",
+      "ok": true
+    },
+    {
+      "details": {
+        "depth": 10
+      },
+      "name": "odd-count distribution is epsilon-invariant",
+      "ok": true
+    },
+    {
+      "details": {
+        "depth": 10,
+        "pointwise_diff_fraction": 0.998046875
+      },
+      "name": "pointwise parity words mostly differ despite identical statistics",
+      "ok": true
+    },
+    {
+      "details": {
+        "cycle_17": [
+          17,
+          25,
+          37,
+          55,
+          82,
+          41,
+          61,
+          91,
+          136,
+          68,
+          34
+        ],
+        "cycle_5": [
+          5,
+          7,
+          10
+        ]
+      },
+      "name": "3n-1 sibling map still has positive cycles at 5 and 17",
+      "ok": true
+    },
+    {
+      "details": {
+        "identity_checks": 512,
+        "nonmatched_checks": 457
+      },
+      "name": "phase-collision identity has zero failures",
+      "ok": true
+    },
+    {
+      "details": {
+        "avg_allowed_fraction": 0.816565688776,
+        "minimum_required": 0.5
+      },
+      "name": "finite phase gate remains too permissive to be a proof",
+      "ok": true
+    },
+    {
+      "details": {
+        "selected_count": 3
+      },
+      "name": "retimed tight layer-one slice has selected surplus-one records",
+      "ok": true
+    },
+    {
+      "details": {
+        "all_active_selected_match_terminal_ladder_formula": true,
+        "all_post_selected_match_EOO_terminal_6_mod_16": true,
+        "all_selected_are_layer_one": true,
+        "all_selected_are_upper_child": true,
+        "all_selected_have_align_3": true,
+        "all_selected_have_credit_3_required_2_credit_above_parent_2": true,
+        "all_selected_have_high_ladder_credit": true,
+        "all_selected_have_parent_required_1": true,
+        "all_selected_have_required_delta_1": true,
+        "all_selected_have_step_offset_1": true,
+        "all_selected_have_zero_transition_credit_delta": true
+      },
+      "name": "all retimed tight layer-one structural checks pass",
+      "ok": true
+    },
+    {
+      "details": {
+        "total_local_grammar_records": 30
+      },
+      "name": "reserve-source local grammar slice is nonempty",
+      "ok": true
+    },
+    {
+      "details": {
+        "all_first_thresholds_present": true,
+        "all_inherited_reserve_identities_hold": true,
+        "all_local_records_have_prior_credit": true,
+        "all_reserve_vs_current_required_nonnegative": true,
+        "all_trace_first_events_match_records": true
+      },
+      "name": "reserve-source identities and prior-credit checks pass",
+      "ok": true
+    }
+  ],
+  "elapsed_seconds": 2.048513,
+  "interpretation": "Passing this harness means the current weirdness stack is stable under a fast smoke run. It does not prove Collatz. It protects future Collatz ideas from ignoring the known obstructions.",
+  "modules": {
+    "core_identities": {
+      "boundary_depth": 64,
+      "minus_five_word": "110",
+      "minus_seventeen_word": "11110111000"
+    },
+    "epsilon_barrier": {
+      "conjugacy_radius": 2048,
+      "cycle_17": [
+        17,
+        25,
+        37,
+        55,
+        82,
+        41,
+        61,
+        91,
+        136,
+        68,
+        34
+      ],
+      "cycle_5": [
+        5,
+        7,
+        10
+      ],
+      "depth": 10,
+      "pointwise_diff_fraction": 0.998046875
+    },
+    "phase_collision": {
+      "density_firewall_counts": [
+        {
+          "a_depth": 11,
+          "depth": 16,
+          "log2_barrier_word_count": 11.045759661383,
+          "log2_density": -4.954240338617
+        },
+        {
+          "a_depth": 41,
+          "depth": 64,
+          "log2_barrier_word_count": 54.612493059858,
+          "log2_density": -9.387506940142
+        },
+        {
+          "a_depth": 81,
+          "depth": 128,
+          "log2_barrier_word_count": 114.193131747526,
+          "log2_density": -13.806868252474
+        },
+        {
+          "a_depth": 162,
+          "depth": 256,
+          "log2_barrier_word_count": 234.458448435936,
+          "log2_density": -21.541551564064
+        }
+      ],
+      "library": {
+        "all_cycle_phase_slots": 140,
+        "note": "Nonprimitive necklaces duplicate primitive spines. The unique-spine gate is the math-clean denominator; the all-cycle gate is retained for comparison with shared-chat aggregate conventions.",
+        "primitive_source_cycles": 15,
+        "primitive_source_phase_states": 91,
+        "supercritical_necklace_cycles": 24,
+        "target_cycles_including_nonprimitive_duplicates": 24,
+        "unique_target_spines": 15
+      },
+      "phase_gate_unique_target_spines": {
+        "avg_allowed_fraction": 0.816565688776,
+        "max_allowed_fraction": 1.0,
+        "min_allowed_fraction": 0.125,
+        "valuation_count": 1350
+      },
+      "phase_identity": {
+        "failure_count": 0,
+        "identity_checks": 512,
+        "matched_phase_cases": 55,
+        "valuation_formula_checks_nonmatched": 457
+      }
+    },
+    "retimed_reserve_source": {
+      "checks": {
+        "all_depth_checks": {
+          "all_first_thresholds_present": true,
+          "all_inherited_reserve_identities_hold": true,
+          "all_local_records_have_prior_credit": true,
+          "all_reserve_vs_current_required_nonnegative": true,
+          "all_trace_first_events_match_records": true
+        },
+        "total_first_thresholds": 166,
+        "total_local_grammar_records": 30,
+        "total_retimed_transitions": 166
+      },
+      "counters": {
+        "inherited_reserve": {
+          "1": 3,
+          "2": 8,
+          "3": 7,
+          "4": 8,
+          "5": 2,
+          "6": 1,
+          "8": 1
+        },
+        "previous_credit_kind": {
+          "high_ladder": 26,
+          "low_repeat": 4
+        },
+        "word_by_reserve": {
+          "1:OOO": 1,
+          "1:OOOEOO": 2,
+          "2:OOO": 7,
+          "2:OOOEOO": 1,
+          "3:OOO": 7,
+          "4:OOO": 4,
+          "4:OOOEOO": 4,
+          "5:OOO": 2,
+          "6:OOO": 1,
+          "8:OOO": 1
+        }
+      },
+      "minimal_examples": [
+        {
+          "affine_failure_count": 0,
+          "affine_lift_law_holds_to_depth": true,
+          "boundary_child_state": 1601117,
+          "boundary_delta": 1594323,
+          "boundary_delta_power3": 1594323,
+          "boundary_index_from_entry": 2,
+          "boundary_pair": "E->O",
+          "boundary_parent_state": 6794,
+          "child": 263259,
+          "child_bit": 1,
+          "child_depth": 19,
+          "child_entry_align": 3,
+          "child_entry_mod_16": 7,
+          "child_entry_state": 711607,
+          "child_required": 2,
+          "credit": 3,
+          "credit_delta": 0,
+          "entry_offset_from_parent_depth": -2,
+          "entry_required_before_final_credit": 1,
+          "entry_step": 16,
+          "expected_terminal_from_entry": 2401676,
+          "final_credit_event_index": 3,
+          "first_event": "high_ladder_step",
+          "inherited_reserve_before_entry": 1,
+          "inherited_reserve_identity_holds": true,
+          "lag_from_credit": 3,
+          "lag_minus_align": 0,
+          "last_credit_align": 3,
+          "last_credit_kind": "high_ladder",
+          "last_credit_state": 711607,
+          "last_credit_step": 16,
+          "local_word_from_credit_to_pressure": "OOO",
+          "parent": 1115,
+          "parent_depth": 18,
+          "parent_entry_mod_16": 11,
+          "parent_entry_state": 3019,
+          "parent_required": 1,
+          "parent_required_minus_entry_required": 0,
+          "parities_shared_before_depth": true,
+          "pressure_state": 2401676,
+          "pressure_step": 19,
+          "previous_credit_align": 3,
+          "previous_credit_amount": 1,
+          "previous_credit_kind": "high_ladder",
+          "previous_credit_state": 499783,
+          "previous_credit_step": 7,
+          "previous_gap_to_entry": 9,
+          "previous_reserve_vs_current_after": 1,
+          "previous_reserve_vs_parent_after": 1,
+          "prior_credit_event_count": 2,
+          "prior_high_ladder_count": 2,
+          "prior_low_repeat_count": 0,
+          "q": 88951,
+          "q_mod_16": 7,
+          "regime": "high_inside_active_ladder",
+          "required": 2,
+          "required_above_parent": 1,
+          "required_delta": 1,
+          "reserve_vs_current_required_before_entry": 1,
+          "step_offset_from_parent_depth": 1,
+          "surplus": 1,
+          "tail_after_ladder": "<active>",
+          "terminal_formula_matches": true,
+          "terminal_mod_16": 12,
+          "terminal_offset_from_parent_depth": 1,
+          "terminal_state": 2401676,
+          "terminal_step": 19
+        },
+        {
+          "affine_failure_count": 0,
+          "affine_lift_law_holds_to_depth": true,
+          "boundary_child_state": 1993349,
+          "boundary_delta": 1594323,
+          "boundary_delta_power3": 1594323,
+          "boundary_index_from_entry": 5,
+          "boundary_pair": "E->O",
+          "boundary_parent_state": 399026,
+          "child": 327751,
+          "child_bit": 1,
+          "child_depth": 19,
+          "child_entry_align": 3,
+          "child_entry_mod_16": 7,
+          "child_entry_state": 787495,
+          "child_required": 2,
+          "credit": 3,
+          "credit_delta": 0,
+          "entry_offset_from_parent_depth": -5,
+          "entry_required_before_final_credit": 1,
+          "entry_step": 13,
+          "expected_terminal_from_entry": 2657798,
+          "final_credit_event_index": 3,
+          "first_event": "ordinary_step",
+          "inherited_reserve_before_entry": 1,
+          "inherited_reserve_identity_holds": true,
+          "lag_from_credit": 6,
+          "lag_minus_align": 3,
+          "last_credit_align": 3,
+          "last_credit_kind": "high_ladder",
+          "last_credit_state": 787495,
+          "last_credit_step": 13,
+          "local_word_from_credit_to_pressure": "OOOEOO",
+          "parent": 65607,
+          "parent_depth": 18,
+          "parent_entry_mod_16": 7,
+          "parent_entry_state": 157639,
+          "parent_required": 1,
+          "parent_required_minus_entry_required": 0,
+          "parities_shared_before_depth": true,
+          "pressure_state": 2990024,
+          "pressure_step": 19,
+          "previous_credit_align": 3,
+          "previous_credit_amount": 1,
+          "previous_credit_kind": "high_ladder",
+          "previous_credit_state": 466663,
+          "previous_credit_step": 9,
+          "previous_gap_to_entry": 4,
+          "previous_reserve_vs_current_after": 1,
+          "previous_reserve_vs_parent_after": 1,
+          "prior_credit_event_count": 2,
+          "prior_high_ladder_count": 2,
+          "prior_low_repeat_count": 0,
+          "q": 98437,
+          "q_mod_16": 5,
+          "regime": "high_after_ladder_window",
+          "required": 2,
+          "required_above_parent": 1,
+          "required_delta": 1,
+          "reserve_vs_current_required_before_entry": 1,
+          "step_offset_from_parent_depth": 1,
+          "surplus": 1,
+          "tail_after_ladder": "EOO",
+          "terminal_formula_matches": true,
+          "terminal_mod_16": 6,
+          "terminal_offset_from_parent_depth": -2,
+          "terminal_state": 2657798,
+          "terminal_step": 16
+        },
+        {
+          "affine_failure_count": 0,
+          "affine_lift_law_holds_to_depth": true,
+          "boundary_child_state": 3092681,
+          "boundary_delta": 1594323,
+          "boundary_delta_power3": 1594323,
+          "boundary_index_from_entry": 5,
+          "boundary_pair": "E->O",
+          "boundary_parent_state": 1498358,
+          "child": 508507,
+          "child_bit": 1,
+          "child_depth": 19,
+          "child_entry_align": 3,
+          "child_entry_mod_16": 7,
+          "child_entry_state": 1221799,
+          "child_required": 2,
+          "credit": 3,
+          "credit_delta": 0,
+          "entry_offset_from_parent_depth": -5,
+          "entry_required_before_final_credit": 1,
+          "entry_step": 13,
+          "expected_terminal_from_entry": 4123574,
+          "final_credit_event_index": 3,
+          "first_event": "ordinary_step",
+          "inherited_reserve_before_entry": 1,
+          "inherited_reserve_identity_holds": true,
+          "lag_from_credit": 6,
+          "lag_minus_align": 3,
+          "last_credit_align": 3,
+          "last_credit_kind": "high_ladder",
+          "last_credit_state": 1221799,
+          "last_credit_step": 13,
+          "local_word_from_credit_to_pressure": "OOOEOO",
+          "parent": 246363,
+          "parent_depth": 18,
+          "parent_entry_mod_16": 7,
+          "parent_entry_state": 591943,
+          "parent_required": 1,
+          "parent_required_minus_entry_required": 0,
+          "parities_shared_before_depth": true,
+          "pressure_state": 4639022,
+          "pressure_step": 19,
+          "previous_credit_align": 8,
+          "previous_credit_amount": 1,
+          "previous_credit_kind": "low_repeat",
+          "previous_credit_state": 965371,
+          "previous_credit_step": 7,
+          "previous_gap_to_entry": 6,
+          "previous_reserve_vs_current_after": 1,
+          "previous_reserve_vs_parent_after": 1,
+          "prior_credit_event_count": 2,
+          "prior_high_ladder_count": 1,
+          "prior_low_repeat_count": 1,
+          "q": 152725,
+          "q_mod_16": 5,
+          "regime": "high_after_ladder_window",
+          "required": 2,
+          "required_above_parent": 1,
+          "required_delta": 1,
+          "reserve_vs_current_required_before_entry": 1,
+          "step_offset_from_parent_depth": 1,
+          "surplus": 1,
+          "tail_after_ladder": "EOO",
+          "terminal_formula_matches": true,
+          "terminal_mod_16": 6,
+          "terminal_offset_from_parent_depth": -2,
+          "terminal_state": 4123574,
+          "terminal_step": 16
+        }
+      ],
+      "parameters": {
+        "max_depth": 256,
+        "max_parent_depth": 18,
+        "max_steps": 10000,
+        "min_parent_depth": 18,
+        "top_n": 6
+      }
+    },
+    "retimed_tight_layer_one": {
+      "checks": {
+        "all_active_selected_match_terminal_ladder_formula": true,
+        "all_post_selected_match_EOO_terminal_6_mod_16": true,
+        "all_selected_are_layer_one": true,
+        "all_selected_are_upper_child": true,
+        "all_selected_have_align_3": true,
+        "all_selected_have_credit_3_required_2_credit_above_parent_2": true,
+        "all_selected_have_high_ladder_credit": true,
+        "all_selected_have_parent_required_1": true,
+        "all_selected_have_required_delta_1": true,
+        "all_selected_have_step_offset_1": true,
+        "all_selected_have_zero_transition_credit_delta": true,
+        "selected_count": 3
+      },
+      "counts": {
+        "last_credit_align_counts": {
+          "3": 3
+        },
+        "post_word_counts": {
+          "<active>": 1,
+          "EOO": 2
+        },
+        "regime_counts": {
+          "high_after_ladder_window": 2,
+          "high_inside_active_ladder": 1
+        }
+      },
+      "depths": [
+        {
+          "above_parent_pressure_unit_count": 178,
+          "child_depth": 19,
+          "parent_depth": 18,
+          "retimed_transition_count": 166,
+          "selected_count": 3
+        }
+      ],
+      "parameters": {
+        "layer": 1,
+        "max_depth": 256,
+        "max_parent_depth": 18,
+        "max_steps": 10000,
+        "min_parent_depth": 18,
+        "surplus": 1
+      }
+    }
+  },
+  "parameters": {
+    "boundary_depth": 64,
+    "epsilon_conjugacy_radius": 2048,
+    "epsilon_depth": 10,
+    "phase_density_max_depth": 256,
+    "phase_identity_trials": 512,
+    "phase_max_depth": 8,
+    "retimed_max_depth": 256,
+    "retimed_max_parent_depth": 18,
+    "retimed_max_steps": 10000,
+    "retimed_min_parent_depth": 18,
+    "seed": 20260705
+  },
+  "result": {
+    "failed_count": 0,
+    "passed": true,
+    "passed_count": 15
+  },
+  "status": "wtf-regression-harness"
+}

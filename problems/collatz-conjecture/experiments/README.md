@@ -84,6 +84,7 @@ they survive at `R = 20` and `R = 24`:
 [`ODD-UNIT-LOCK-BRIDGE-CLASSIFIER.md`](ODD-UNIT-LOCK-BRIDGE-CLASSIFIER.md),
 [`ODD-UNIT-LOCK-BRIDGE-REFINEMENT.md`](ODD-UNIT-LOCK-BRIDGE-REFINEMENT.md),
 [`ODD-UNIT-LOCK-PERSISTENCE-LADDER.md`](ODD-UNIT-LOCK-PERSISTENCE-LADDER.md),
+[`ODD-UNIT-LOCK-R12-COARSE-MEMORY.md`](ODD-UNIT-LOCK-R12-COARSE-MEMORY.md),
 and [`ODD-UNIT-LOCK-ALIGNMENT-DROP.md`](ODD-UNIT-LOCK-ALIGNMENT-DROP.md).
 These are route-selection results, not proofs.
 Only the formal-methods slice is currently proof-relevant: SAT/SMT, BDD/ZDD,
@@ -94,7 +95,7 @@ For publication scope, use
 [`GITHUB-PUBLISH-PLAN-2026-07-02.md`](GITHUB-PUBLISH-PLAN-2026-07-02.md);
 do not publish this dirty worktree with `git add -A`.
 
-## Documents (66)
+## Documents (67)
 
 | File | Category | First heading |
 |---|---|---|
@@ -139,6 +140,7 @@ do not publish this dirty worktree with `git add -A`.
 | [`ODD-UNIT-LOCK-HEIGHT.md`](ODD-UNIT-LOCK-HEIGHT.md) | Instrument report | Odd-Unit Lock Exact-Height Lab |
 | [`ODD-UNIT-LOCK-PERSISTENCE-LADDER.md`](ODD-UNIT-LOCK-PERSISTENCE-LADDER.md) | Instrument report | Odd-Unit Lock Persistence Ladder |
 | [`ODD-UNIT-LOCK-PERIODIC-ECHO.md`](ODD-UNIT-LOCK-PERIODIC-ECHO.md) | Instrument report | Odd-Unit Lock Periodic-Echo Classifier |
+| [`ODD-UNIT-LOCK-R12-COARSE-MEMORY.md`](ODD-UNIT-LOCK-R12-COARSE-MEMORY.md) | Instrument report | Odd-Unit Lock R12 Coarse Memory |
 | [`ODD-UNIT-LOCK-REFINEMENT.md`](ODD-UNIT-LOCK-REFINEMENT.md) | Instrument report | Odd-Unit Lock Refinement Lab |
 | [`ODD-UNIT-LOCK-TARGET-TAIL.md`](ODD-UNIT-LOCK-TARGET-TAIL.md) | Instrument report | Odd-Unit Lock Target-Tail Lab |
 | [`ODD-UNIT-LOCK-TRANSITION-LAB.md`](ODD-UNIT-LOCK-TRANSITION-LAB.md) | Instrument report | Odd-Unit Lock Positive-Orbit Transition Lab |

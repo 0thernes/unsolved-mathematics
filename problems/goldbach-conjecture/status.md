@@ -8,7 +8,7 @@ The **strong (binary) Goldbach conjecture** — every even integer $n>2$ is a su
 
 ## What is known (unconditional)
 
-- **Almost all even numbers** satisfy Goldbach: the exceptional set $E(X)=\#\{n\le X \text{ even}: n\neq p+q\}$ satisfies $E(X)=O(X^{1-\delta})$ with an explicit power saving (Montgomery–Vaughan 1975; later $\delta\approx0.7$ via Pintz and others).
+- **Almost all even numbers** satisfy Goldbach: the exceptional set $E(X)=\#\{n\le X \text{ even}: n\neq p+q\}$ satisfies $E(X)=O(X^{1-\delta})$ with an explicit power saving (Montgomery–Vaughan 1975; later $E(X)\ll X^{0.72}$, i.e. $\delta\approx0.28$, via Pintz).
 - **Chen's theorem (1973):** every sufficiently large even $n$ is $p+P_2$, where $P_2$ has at most two prime factors. This is the best structural approximation to $p+p$.
 - **Bounded number of primes:** every even integer is a sum of at most **4 primes** (a corollary of Helfgott's ternary theorem; Ramaré's earlier bound was $\le 6$).
 - **Computational verification:** the conjecture holds for all even $n\le 4\times10^{18}$ (Oliveira e Silva–Herzog–Pardi).
