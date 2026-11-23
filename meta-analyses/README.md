@@ -7,10 +7,12 @@ art, approaches and barriers, a critical assessment, open directions, and select
 references.
 
 > **What these are.** AI-assisted *surveys/assessments*, curated and accredited by
-> **Alexander Donahue** (human-in-the-loop). They are **AI-generated and not
-> peer-reviewed**. They make **no** claim of new theorems or solutions. Each
-> carries a four-model AI review panel (Grok · Gemini · GPT · Claude) and an
-> explicit path to human academic verification.
+> **Alexander S. Donahue** (ORCID `0009-0006-8168-9648`, human-in-the-loop). They
+> are **AI-generated and not peer-reviewed**. They make **no** claim of new
+> theorems or solutions. **Current review status (`2026-11-23`):** only **1 of 4**
+> planned AI panel passes (Claude in-house self-review) has been executed across
+> the 106 files (GPT, Gemini, and Grok slots remain `pending`), and **0 of 106**
+> have received independent human mathematician peer review.
 
 ## How to read the review status
 - Process & definitions: [docs/review/AI-META-REVIEW.md](../docs/review/AI-META-REVIEW.md)

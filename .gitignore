@@ -56,3 +56,4 @@ scratch/
 .ruff_cache/
 formal/.lake/
 formal/build/
+_site/

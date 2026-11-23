@@ -23,7 +23,7 @@
     <line x1="1024" y1="0" x2="1024" y2="640"/>
   </g>
   <rect x="80" y="76" width="1120" height="6" rx="3" fill="url(#accent)"/>
-  <text x="80" y="150" fill="#93c5fd" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" letter-spacing="2">0THERNES / UNSOLVED-MATHEMATICS · v0.3.0</text>
+  <text x="80" y="150" fill="#93c5fd" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" letter-spacing="2">0THERNES / UNSOLVED-MATHEMATICS · v0.3.1</text>
   <text x="80" y="232" fill="#f8fafc" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="60" font-weight="700">The Atlas of Unsolved</text>
   <text x="80" y="302" fill="#f8fafc" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="60" font-weight="700">Mathematics</text>
   <text x="80" y="362" fill="#cbd5e1" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="26">106 open-problem dossiers · Lean 4.35.0 multi-kernel formal core · primary-source verified citations</text>
@@ -35,7 +35,7 @@
     <text x="378" y="456" fill="#c4b5fd" font-weight="700">LEAN 4.35.0 CORE</text>
     <text x="378" y="486" fill="#cbd5e1" font-size="16">14 theorems · 0 sorry</text>
     <rect x="648" y="420" width="270" height="84" rx="10" fill="#16213e" stroke="#34d399" stroke-width="1.5"/>
-    <text x="672" y="456" fill="#6ee7b7" font-weight="700">443 API-VERIFIED</text>
+    <text x="672" y="456" fill="#6ee7b7" font-weight="700">445 API-VERIFIED</text>
     <text x="672" y="486" fill="#cbd5e1" font-size="16">arXiv + Crossref audit</text>
     <rect x="942" y="420" width="258" height="84" rx="10" fill="#16213e" stroke="#f59e0b" stroke-width="1.5"/>
     <text x="966" y="456" fill="#fcd34d" font-weight="700">ZERO OVERCLAIMS</text>

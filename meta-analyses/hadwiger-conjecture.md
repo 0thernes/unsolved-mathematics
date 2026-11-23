@@ -36,6 +36,8 @@ equivalently, every $K_t$-minor-free graph is $(t-1)$-colorable, equivalently $h
 
 ## 2. State of the art
 
+
+> **Frontier Addendum (`2026-11-23`):** Live arXiv-verified October 2026 work (Norin–Steiner, `arXiv:2610.05291`) advances the **Linear Hadwiger** frontier; the full Hadwiger conjecture remains `active-progress` (open). See [`problems/hadwiger-conjecture/status.md`](../problems/hadwiger-conjecture/status.md).
 **Exact cases (unconditional).** The cases $t \le 3$ are elementary. The case $t=4$ was proved by Hadwiger (1943) and independently by Dirac (1952). The case $t=5$ is equivalent to the Four Color Theorem (Wagner 1937 + Appel–Haken 1976, later formally verified in Coq by Gonthier 2005). The case $t=6$ was proved by Robertson, Seymour, and Thomas (1993), who showed any minimal counterexample is **apex** (planar plus one vertex), hence 5-colorable, again reducing to the Four Color Theorem. The first genuinely open exact case is $t=7$.
 
 **Quantitative bounds (unconditional).** Kostochka (1980) and independently Thomason (1984) proved that average degree $\Omega(t\sqrt{\log t})$ forces a $K_t$ minor, and that this is tight; combined with the degeneracy bound $\chi(G) \le d(G)+1$ this yields $\chi(G) = O(h(G)\sqrt{\log h(G)})$. Thomason (2001) pinned the extremal constant at $c = 0.6382\ldots$. This bound stood as the best general result for almost four decades. Norin, Postle, and Song (2019) broke the square-root barrier, reaching exponent $1/4 + o(1)$ on the $\log h$ factor; Postle and Norin–Postle drove the exponent toward $0$; Delcourt and Postle (2021) reached $\chi(G) = O(h(G)\log\log h(G))$, the current record — within a $\log\log$ factor of the linear target.

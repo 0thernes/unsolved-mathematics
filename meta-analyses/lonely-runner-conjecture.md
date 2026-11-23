@@ -40,6 +40,8 @@ The problem's significance lies in its density of equivalent guises. It is simul
 
 ## 2. State of the art
 
+
+> **Frontier Addendum (`2026-11-23`):** Live arXiv-verified 2025–2026 breakthroughs have extended verified cases through **8, 9, 10, and 13 runners** (`arXiv:2509.14111`, `arXiv:2511.22427`, `arXiv:2604.23906`); the uniform conjecture for arbitrary $n$ remains `active-progress` (open). See [`problems/lonely-runner-conjecture/status.md`](../problems/lonely-runner-conjecture/status.md).
 **Status: open, with active progress.** The verified frontier advances roughly one runner per decade, each case demanding markedly more work than the last:
 
 - $n \le 3$: Wills (1967–1968), by direct Diophantine estimates.

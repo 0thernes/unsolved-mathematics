@@ -38,6 +38,8 @@ The significance is twofold. Conceptually, the conjecture is the natural success
 
 ## 2. State of the art
 
+
+> **Frontier Addendum (`2026-11-23`):** Lorist–Schwenninger (`arXiv:2608.03841`, Aug 2026) advanced functional-calculus / numerical-range bounds; the sharp constant $C = 2$ conjecture remains `active-progress` (open). See [`problems/crouzeix-conjecture/status.md`](../problems/crouzeix-conjecture/status.md).
 **Status: open, with active progress.** The general conjecture is unproven. The strongest unconditional theorem is the Crouzeix–Palencia bound (2017),
 $$\|p(A)\|\le(1+\sqrt2)\,\|p\|_{W(A)}\approx 2.4142,$$
 valid for all matrices, all dimensions, and all polynomials. This improved Crouzeix's own explicit 2007 constant of $11.08$ and reduced the gap to the conjectured value to roughly $21\%$.

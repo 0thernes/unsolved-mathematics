@@ -26,7 +26,7 @@ human_review: pending
 
 ## Abstract
 
-The Erdős unit distance problem (1946) asks for the growth rate of $u(n)$, the maximum number of pairs at a single fixed distance among $n$ points in the plane. From the $\sqrt n \times \sqrt n$ integer grid Erdős derived the lower bound $u(n) \ge n^{1+c/\log\log n}$ via Landau's theorem on sums of two squares, and conjectured this near-linear rate is the truth: $u(n) = n^{1+o(1)}$. The best unconditional upper bound, $u(n) = O(n^{4/3})$, was established by Spencer, Szemerédi, and Trotter in 1984 and reproved transparently by Székely's 1997 crossing-number argument; it has not been improved in exponent in over four decades. This meta-analysis surveys the principal lines of attack — incidence geometry, the crossing-number method, the polynomial method (which settled the sibling *distinct* distances problem but does not transfer), and additive/arithmetic structure theory — and the norm barrier that frames them: there exist non-Euclidean norms for which $u(n) = \Theta(n^{4/3})$, so any proof of Erdős's conjecture must invoke a property special to the round Euclidean circle. The factor-$n^{1/3}$ gap remains the central open problem of combinatorial geometry.
+The Erdős unit distance problem (1946) asks for the growth rate of $u(n)$, the maximum number of pairs at a single fixed distance among $n$ points in the plane. From the $\sqrt n \times \sqrt n$ integer grid Erdős derived the lower bound $u(n) \ge n^{1+c/\log\log n}$ via Landau's theorem on sums of two squares, and conjectured $u(n) = n^{1+o(1)}$, while Spencer, Szemerédi, and Trotter (1984) proved $u(n) = O(n^{4/3})$. **2026 Frontier Update (`2026-11-23`):** On May 20, 2026, a preprint disproving Erdős's unit-distance conjecture appeared on arXiv (`arXiv:2605.20695`), prompting this dossier's reclassification from `open` to `recently-resolved` **pending formal journal peer review**. Below we preserve the historical synthesis of the classical incidence, crossing-number, polynomial-method, and norm-barrier approaches alongside the 2026 resolution caveat.
 
 ## 1. Statement and significance
 
@@ -36,11 +36,13 @@ Erdős posed the determination of the growth of $u(n)$ in *On sets of distances 
 
 ## 2. State of the art
 
-The unconditional bracket is wide and static:
+**Status (`2026-11-23`): `recently-resolved` (preprint disproof `arXiv:2605.20695`, May 20, 2026 — pending formal journal peer review).** See [`problems/unit-distance-problem/status.md`](../problems/unit-distance-problem/status.md) for the live frontier record.
 
-- **Lower bound (Erdős, 1946):** $u(n) \ge n^{1+c/\log\log n}$, from the integer grid; never improved.
-- **Upper bound (Spencer–Szemerédi–Trotter, 1984):** $u(n) = O(n^{4/3})$; the exponent has never been improved. Subsequent work (Székely 1997; Pach–Tardos) sharpened the constant and simplified the proof, but not the exponent.
-- **Conjecture (Erdős):** $u(n) = n^{1+o(1)}$.
+Historically (1946–2025), the unconditional bracket stood static for decades:
+
+- **Lower bound (Erdős, 1946):** $u(n) \ge n^{1+c/\log\log n}$, from the integer grid.
+- **Upper bound (Spencer–Szemerédi–Trotter, 1984):** $u(n) = O(n^{4/3})$; subsequent work (Székely 1997; Pach–Tardos) sharpened constants and proofs without moving the exponent.
+- **Conjecture (Erdős):** $u(n) = n^{1+o(1)}$ — **disproved in preprint `arXiv:2605.20695` (May 2026)** (exact optimal exponent remains an active question pending full refereeing).
 
 The live gap is the factor $n^{1/3}$. Conditional and special-case results are stronger: points in convex position determine only $O(n\log n)$ unit distances (essentially tight); points on few lines/circles or with small additive doubling satisfy near-conjectural bounds. In other dimensions the picture is clearer — $\Theta(n^2)$ in $\mathbb{R}^d$ for $d \ge 4$ (Lenz construction), and roughly $n^{3/2}$ in $\mathbb{R}^3$ (improved by Zahl and others) — which sharpens, by contrast, exactly why the plane is hard.
 

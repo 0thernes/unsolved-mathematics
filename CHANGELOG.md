@@ -5,6 +5,17 @@ Format follows [Keep a Changelog](https://keepachangelog.com/); versions follow
 [SemVer](https://semver.org/) on the *structure/schema* (content grows
 continuously between structural versions).
 
+## [0.3.1] — 2026-11-23
+
+### Fixed (Hostile Adversarial Second-Pass Audit — Pass 11)
+- **Mathematical prose accuracy (`CLAIMS.md` C-03):** Corrected a prose sign inversion in C-03 so it faithfully matches `formal/FormalAtlas/Collatz.lean` (`thm_collatz_positivity_localization`: every **supercritical** word $3^{o(w)} > 2^{|w|}$ satisfies $c(w) \ge 3^{o(w)} - 2^{|w|}$, forcing its rational periodic fixed point $\rho_w \le -1$, while the sibling $3n-1$ barrier admits positive supercritical cycles at $5$ and $17$).
+- **Meta-analyses consistency & residual errata (`meta-analyses/`):** Fixed residual inverted Goldbach exponent ($\delta \approx 0.7 \to E(X) \ll X^{0.72}$, $\delta \approx 0.28$) in `meta-analyses/goldbach-conjecture.md`; corrected Escauriaza–Seregin–Šverák year (`2001 → 2003`) in `meta-analyses/navier-stokes-smoothness.md`; resolved body-vs-frontmatter contradiction in `meta-analyses/unit-distance-problem.md` with the May 20, 2026 disproof (`arXiv:2605.20695`); added dated `2026-11-23` Frontier Addenda to 9 additional updated meta-analyses (`lonely-runner`, `hadwiger`, `riemann`, `grand-riemann`, `moving-sofa`, `sunflower`, `union-closed`, `crouzeix`, `sendov`).
+- **Linux case-sensitivity parity (`A44`):** Renamed `docs/GLOSSARY.md` → `docs/glossary.md` via `git mv` and updated references in `README.md` and `SUPPORT.md` so Ubuntu CI (`audit-repo.sh`) matches Windows (`Audit-Repo.ps1`) at **98.5% (67/68) overall / 100.0% (28/28) core**.
+- **Formal docs & verbatim axiom transparency (`formal/`):** Updated stale `formal/ROADMAP.md` (marking Phase 1 items 1–13 done and 6-kernel verified), cleaned scratch-pad comments in `formal/NonVacuity.lean`, and appended verbatim `#print axioms` output and 6/6 kernel verdicts to `formal/STATEMENT_FIDELITY.md`.
+- **Honest outward disclosure (`SUBMISSIONS.md`, `meta-analyses/README.md`, `AUTHORS.md`):** Removed misleading `"put it through a four-model AI review panel"` line in the academic outreach cover-letter template and added ORCID `0009-0006-8168-9648`.
+- **Static HTML Atlas builder (`scripts/build_site.py`, `.github/workflows/pages.yml`):** Replaced the placeholder Pages script with a zero-dependency searchable static HTML Atlas generator (`_site/index.html`) + regression test.
+- **Additional verified DOIs & live GitHub labels:** Verified Gerver (1992, `10.1007/bf02414066`) and Kallus–Romik (2018, `10.1016/j.aim.2018.10.022`) against Crossref (`443 → 445` API-verified citations); synced all 6 Build Standard finding-class labels (`bug`, `error`, `issue`, `problem`, `dilemma`, `conflict`) + domain labels live on GitHub; added 5 Pass #2 regression tests (**45/45 pytest**, **6/6 mutation kill**).
+
 ## [0.3.0] — 2026-11-23
 
 ### Added

@@ -1,20 +1,24 @@
 # Authors & Credit
 
 ## Author, Curator & Human-in-the-Loop
-**Alexander Donahue** — GitHub [@0thernes](https://github.com/0thernes) · 0_0@0thernes.art
+**Alexander S. Donahue** — Independent Researcher · ORCID [`0009-0006-8168-9648`](https://orcid.org/0009-0006-8168-9648) · GitHub [@0thernes](https://github.com/0thernes) · `0_0@0thernes.art`
 
-Alexander Donahue is the author, curator, and **human-in-the-loop** of The
+Alexander S. Donahue is the author, curator, and **human-in-the-loop** of The
 Unsolved Mathematics Atlas. He conceived the project, defined its scope,
 methodology, and editorial standards, directs the research program, and is
-responsible for the curation, ranking, integrity policy, and academic-review
-process. All meta-analyses are authored under his direction and accreditation.
+responsible for the curation, ranking, statement-fidelity auditing, integrity
+policy, and academic-review process. All meta-analyses are authored under his
+direction and accreditation.
 
 ## AI assistance (disclosed)
 The atlas was assembled with AI assistance under continuous human direction.
-Drafting, structuring, and the in-house AI review were performed by frontier
-language models; the **multi-model AI review panel** (see
-[docs/review/AI-META-REVIEW.md](docs/review/AI-META-REVIEW.md)) is intended to
-include **Grok (xAI), Gemini (Google), GPT (OpenAI), and Claude (Anthropic)**.
+Drafting, structuring, verification tooling, and Lean 4 formalization assistance
+used frontier language models (Claude, Codex/GPT, Gemini). While the review
+architecture ([docs/review/AI-META-REVIEW.md](docs/review/AI-META-REVIEW.md))
+defines a planned multi-model panel (Grok, Gemini, GPT, Claude), as of `v0.3.0`
+(`2026-11-23`) **only 1 of 4 AI review passes (Claude self-review) has been
+executed across the 106 meta-analyses, and 0 of 106 have independent human peer
+review**.
 
 Per the atlas integrity policy, AI assistance is disclosed transparently and
 AI-generated content is never presented as human-peer-reviewed. See

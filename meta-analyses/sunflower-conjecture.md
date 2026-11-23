@@ -36,6 +36,8 @@ The problem's significance reaches well beyond extremal set theory. The Sunflowe
 
 ## 2. State of the art
 
+
+> **Frontier Addendum (`2026-11-23`):** Bucić–He–Lee (`arXiv:2610.26686`, Oct 2026) advanced the related Erdős–Szemerédi sunflower/structure frontier; the full Erdős–Rado sunflower conjecture ($C^k$) remains `active-progress` (open). See [`problems/sunflower-conjecture/status.md`](../problems/sunflower-conjecture/status.md).
 The status is **active progress**: open, but dramatically narrowed. The truth lies between $(k-1)^w$ (lower bound, essentially unimproved at the super-exponential scale) and the current upper-bound record
 $$ f(w,k) \le (Ck\log w)^w $$
 for an absolute constant $C$. The milestones are: Erdős–Rado (1960), $w!\,(k-1)^w$; Kostochka (1997), the best classical bound $f(w,3)\le c\,w!\,(\log\log\log w/\log\log w)^w$, still super-exponential; Alweiss–Lovett–Wu–Zhang (2019, arXiv:1908.08483), $f(w,k)\le (Ck^3\log w\log\log w)^w$, the breakthrough to polylogarithmic base; and the cleaned form via Rao (2020, arXiv:1909.04774), Tao's exposition (2020), and Bell–Chueluecha–Warnke (2021, arXiv:2105.06561). The full conjecture $f(w,k)\le C(k)^w$ is unproved, with only a $\log w$ factor remaining — the closest the problem has come in over sixty years.

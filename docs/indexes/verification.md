@@ -6,8 +6,8 @@ Provenance of the citation scaffolding across all dossiers. Per [SOURCING.md](..
 
 | Flag | Count |
 |------|------:|
-| `verified` | 449 |
-| `high-confidence` | 711 |
+| `verified` | 451 |
+| `high-confidence` | 709 |
 | `needs-verification` | 1232 |
 | `ai-suggested` | 267 |
 
@@ -119,5 +119,5 @@ Provenance of the citation scaffolding across all dossiers. Per [SOURCING.md](..
 | 102 | [Singmaster's Conjecture](../../problems/singmaster-conjecture/README.md) | 1 | 3 | 8 | 13 |
 | 103 | [Gilbreath's Conjecture](../../problems/gilbreath-conjecture/README.md) | 0 | 7 | 11 | 7 |
 | 104 | [Sendov's Conjecture](../../problems/sendov-conjecture/README.md) | 3 | 4 | 14 | 6 |
-| 105 | [The Moving Sofa Problem](../../problems/moving-sofa-problem/README.md) | 4 | 5 | 8 | 3 |
+| 105 | [The Moving Sofa Problem](../../problems/moving-sofa-problem/README.md) | 6 | 3 | 8 | 3 |
 | 106 | [Crouzeix's Conjecture](../../problems/crouzeix-conjecture/README.md) | 2 | 4 | 11 | 9 |

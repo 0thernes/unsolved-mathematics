@@ -36,6 +36,8 @@ By scaling, this is equivalent to the assertion that if all roots lie in a disk 
 
 ## 2. State of the art
 
+
+> **Frontier Addendum (`2026-11-23`):** Recent 2026 preprints (Zhang `arXiv:2609.20256`, An `arXiv:2609.04246`) tightened low-degree and extremal-configuration analyses; the full Sendov conjecture for all intermediate degrees remains `active-progress` (open). See [`problems/sendov-conjecture/status.md`](../problems/sendov-conjecture/status.md).
 The problem's status is **active progress; open**, and its frontier is genuinely peculiar. At the small end, the degree-by-degree program — Rubinstein's $n=3$ (1968), and later work culminating in Brown–Xiang — established the conjecture rigorously up to roughly $n\le 8$. At the large end, **Terence Tao (2020)**, *"Sendov's conjecture for sufficiently high degree polynomials"* (arXiv:2012.04125), proved the conjecture for **all $n$ above some threshold $n_0$**, encoding the roots as a probability measure and analyzing the limiting equilibrium measure via compactness. Earlier, **Jérôme Dégot (2014)** had proved the large-degree case under the restriction that the distinguished root is bounded away from the unit circle, isolating the boundary as the hard regime. The combined effect is striking: the conjecture is known true at both ends of the degree spectrum, with only a finite — though astronomically large — intermediate band unproven. No complete proof exists, and the dossier correctly records that no claimed complete proof has survived expert scrutiny.
 
 ## 3. Principal approaches and barriers

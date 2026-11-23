@@ -22,11 +22,12 @@ never spam.
 >
 > Dear Professor <Name>,
 >
-> I'm Alexander Donahue. I curate *The Unsolved Mathematics Atlas*, an open,
-> CC-BY collection of structured surveys of open problems. I've prepared an
-> **AI-assisted meta-analysis** of *<problem>* — a survey of the state of the
-> art and approaches, **not** a claimed result — and put it through a four-model
-> AI review panel.
+> I'm Alexander S. Donahue (ORCID 0009-0006-8168-9648). I curate *The Unsolved
+> Mathematics Atlas*, an open, CC-BY-4.0 collection of structured surveys of open
+> problems. I've prepared an **AI-assisted meta-analysis** of *<problem>* — a
+> survey of the state of the art and approaches, **not** a claimed result —
+> currently with 1 in-house AI review pass completed (Claude; GPT/Gemini/Grok
+> panel slots still pending) and 0 human peer reviews.
 >
 > Because AI review is not a substitute for expert review, I'd be grateful for
 > any corrections you have time to offer, however brief. The document is here:
@@ -35,7 +36,7 @@ never spam.
 >
 > No obligation, and thank you for considering it.
 >
-> — Alexander Donahue · 0_0@0thernes.art · github.com/0thernes/unsolved-mathematics
+> — Alexander S. Donahue · ORCID 0009-0006-8168-9648 · 0_0@0thernes.art · github.com/0thernes/unsolved-mathematics
 
 ## Principles (do not violate)
 - One specific recipient at a time; relevant to their actual area.

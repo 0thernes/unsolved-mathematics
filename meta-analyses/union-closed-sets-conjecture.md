@@ -36,6 +36,8 @@ Its significance is partly intrinsic and partly methodological. Union-closed fam
 
 ## 2. State of the art
 
+
+> **Frontier Addendum (`2026-11-23`):** Following Gilmer's breakthrough, Costa–Sadhu (`arXiv:2610.02295`, Oct 2026) reported further threshold refinements; Frankl's full $1/2$ conjecture remains `active-progress` (open). See [`problems/union-closed-sets-conjecture/status.md`](../problems/union-closed-sets-conjecture/status.md).
 **Status: open, with active progress.** The decisive recent development is the *entropy bound*. Gilmer's November 2022 preprint (arXiv:2211.09055 [high-confidence]) proved unconditionally that some element appears in at least $c\,m$ sets with $c \approx 0.01$ — the first constant-fraction bound after four decades, replacing the previous best general guarantees of order $m/\log_2 m$. Within roughly two weeks the constant was sharpened independently — by Will Sawin, by Zachary Chase and Shachar Lovett, by Alweiss–Liu–Sawhney–Wu, and by Luke Pebody — to
 $$\max_x d(x)\ \ge\ \frac{3-\sqrt5}{2}\,m\ \approx\ 0.3820\,m,$$
 the natural optimum of Gilmer's single-step two-set entropy inequality. Sawin subsequently obtained a small improvement strictly beyond $0.38$, demonstrating the barrier is not absolute.

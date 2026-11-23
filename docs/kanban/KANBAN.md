@@ -16,7 +16,7 @@
 ## 🟧 To Verify (Remaining Open Epistemic Gaps)
 
 > Primary-source API verification status as of `2026-11-23` (`data/citation-verification-log.json`):
-> **443 live API-verified identifiers** (arXiv + Crossref), **109 invalid/hallucinated identifiers purged** (downgraded to `—` / `needs-verification`), **~2,100 pre-DOI historical rows** still awaiting manual bibliographic verification. See [`docs/indexes/verification.md`](../indexes/verification.md).
+> **445 live API-verified identifiers** (arXiv + Crossref), **109 invalid/hallucinated identifiers purged** (downgraded to `—` / `needs-verification`), **~2,100 pre-DOI historical rows** still awaiting manual bibliographic verification. See [`docs/indexes/verification.md`](../indexes/verification.md).
 
 - [ ] Manually research & add verified DOIs/arXiv IDs for the 109 stripped rows and ~2,100 pre-DOI historical citations (EPIC-2).
 - [ ] Run remaining 3 of 4 independent AI model reviews (Gemini, GPT, Grok) across the 106 meta-analyses and log verifiable review records.

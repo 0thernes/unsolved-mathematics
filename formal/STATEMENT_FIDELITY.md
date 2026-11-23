@@ -39,3 +39,39 @@
 - **Erdős–Straus Conjecture (`OPEN` / `active-progress`):** The six quadratic-residue classes $\{1, 121, 169, 289, 361, 529\} \pmod{840}$ remain uncovered by polynomial identities; the general conjecture is NOT proved.
 - **Lonely Runner Conjecture (`active-progress`):** Only global sharpness (all $n$) and base cases $n \in \{1, 2\}$ are formalized here; general uniform proof for all $n$ remains OPEN.
 - **Brocard's Problem (`OPEN`):** Only $n \le 12$ is classified here; finiteness for all $n$ remains OPEN.
+
+## 4. Exact `#print axioms` Audit Output (`VerifyAxioms.lean`, Lean 4.35.0)
+
+Reproduced identically on local Windows (`lean 4.35.0`) and ephemeral Ubuntu CI ([Run `45263348677`](https://github.com/0thernes/unsolved-mathematics/actions/runs/45263348677)). Every exported theorem and non-vacuity witness depends strictly on subsets of `{propext, Classical.choice, Quot.sound}` (five require **zero axioms**):
+
+```text
+'FormalAtlas.Challenge.thm_collatz_cylinder_affine_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Challenge.thm_collatz_exact_intercept_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Challenge.thm_terras_parity_word_bijection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Challenge.thm_collatz_descent_certificate_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Challenge.thm_collatz_no_finite_subcritical_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Challenge.thm_collatz_spine_ladder_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Challenge.thm_collatz_positivity_localization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Challenge.thm_collatz_epsilon_invariance_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Challenge.thm_erdos_straus_mordell_840' depends on axioms: [propext, Quot.sound]
+'FormalAtlas.Challenge.thm_lonely_runner_sharpness_all_n' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Challenge.thm_lonely_runner_n1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Challenge.thm_lonely_runner_n2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Challenge.thm_brocard_brown_solutions' does not depend on any axioms
+'FormalAtlas.Challenge.thm_brocard_exhaustive_le_12' depends on axioms: [propext, Quot.sound]
+'FormalAtlas.NonVacuity.witness_descent_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.NonVacuity.witness_positivity_localization' does not depend on any axioms
+'FormalAtlas.NonVacuity.witness_erdos_straus_hypotheses' does not depend on any axioms
+'FormalAtlas.NonVacuity.witness_lonely_runner_concrete' does not depend on any axioms
+'FormalAtlas.NonVacuity.witness_brocard_non_solution' does not depend on any axioms
+```
+
+## 5. Multi-Kernel Replay Verdict (6/6 Independent Kernels)
+
+All 14 challenge/solution theorem signatures passed `lake check --paranoid` and `lake comparator --config comparator.json --paranoid` inside a Linux `bubblewrap` sandbox on GitHub Actions (`ubuntu-latest`) as well as direct local replay across all six bundled Lean 4.35.0 kernels:
+1. `lean` (C++ reference kernel) — **ACCEPT**
+2. `leanchecker-paranoid --fresh` — **ACCEPT**
+3. `lean4lean` (Lean-in-Lean verified kernel, 58,275 decls) — **ACCEPT**
+4. `nanoda_bin` (Rust independent kernel, strict `{propext, Classical.choice, Quot.sound}` whitelist) — **ACCEPT**
+5. `con-leche --verified` (58,278 decls) — **ACCEPT**
+6. `con-ron --verified` (Rust arena checker, 58,278 decls) — **ACCEPT**

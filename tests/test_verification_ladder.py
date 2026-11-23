@@ -438,3 +438,74 @@ def test_metamorphic_bm25_permutation_invariance():
         assert [(d["id"], round(s, 9)) for s, d in perm_res] == [
             (d["id"], round(s, 9)) for s, d in base_res
         ]
+
+
+# --------------------------------------------------------------------------- #
+#  Adversarial Second-Pass Regression Tests (B07)
+# --------------------------------------------------------------------------- #
+def test_regression_pass2_claims_c03_supercritical_accuracy():
+    """Verify CLAIMS.md C-03 matches Lean thm_collatz_positivity_localization (supercritical, not subcritical)."""
+    txt = (ROOT / "CLAIMS.md").read_text(encoding="utf-8")
+    assert "supercritical" in txt.lower()
+    assert "2^S > 3^k" not in txt
+    assert "word defect" not in txt.lower()
+
+
+def test_regression_pass2_meta_analyses_synced_and_error_free():
+    """Verify Pass #2 fixes in meta-analyses: Goldbach 0.72, Navier-Stokes 2003, Unit Distance 2605.20695."""
+    gb = (ROOT / "meta-analyses" / "goldbach-conjecture.md").read_text(encoding="utf-8")
+    gb_body = gb.split("## AI Review Panel", 1)[0]
+    assert "0.72" in gb_body and r"\delta\approx0.7" not in gb_body
+
+    ns = (ROOT / "meta-analyses" / "navier-stokes-smoothness.md").read_text(encoding="utf-8")
+    assert "Escauriaza–Seregin–Šverák (2003" in ns
+    assert "Escauriaza–Seregin–Šverák (2001)" not in ns
+
+    ud = (ROOT / "meta-analyses" / "unit-distance-problem.md").read_text(encoding="utf-8")
+    assert "arXiv:2605.20695" in ud
+
+    for slug in (
+        "lonely-runner-conjecture",
+        "hadwiger-conjecture",
+        "riemann-hypothesis",
+        "grand-riemann-hypothesis",
+        "moving-sofa-problem",
+        "sunflower-conjecture",
+        "union-closed-sets-conjecture",
+        "crouzeix-conjecture",
+        "sendov-conjecture",
+    ):
+        txt = (ROOT / "meta-analyses" / f"{slug}.md").read_text(encoding="utf-8")
+        assert "Frontier Addendum (`2026-11-23`)" in txt, f"Missing 2026 addendum in meta-analyses/{slug}.md"
+
+
+def test_regression_pass2_lowercase_glossary_for_linux():
+    """Verify docs/glossary.md is tracked with exact lowercase filename so Linux A44 passes."""
+    proc = subprocess.run(
+        ["git", "ls-files", "docs/glossary.md"],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+        check=True,
+    )
+    assert proc.stdout.strip() == "docs/glossary.md"
+
+
+def test_regression_pass2_static_site_builder(tmp_path: Path):
+    """Verify scripts/build_site.py builds a valid static HTML Atlas without placeholders."""
+    import build_site
+
+    out = build_site.build_site(tmp_path / "_site")
+    assert out.exists()
+    html_txt = out.read_text(encoding="utf-8")
+    assert "<!doctype html>" in html_txt.lower()
+    assert "The Riemann Hypothesis" in html_txt
+    assert "The Unsolved Mathematics Atlas" in html_txt
+    assert (tmp_path / "_site" / "problems.json").exists()
+
+
+def test_regression_pass2_submissions_honest_panel_disclosure():
+    """Verify SUBMISSIONS.md cover-letter template does not falsely claim 4 AI models ran."""
+    txt = (ROOT / "SUBMISSIONS.md").read_text(encoding="utf-8")
+    assert "put it through a four-model" not in txt.lower()
+    assert "0009-0006-8168-9648" in txt

@@ -34,6 +34,8 @@ Fix an L-shaped hallway whose two arms each have width 1, meeting at a single $9
 
 ## 2. State of the art
 
+
+> **Frontier Addendum (`2026-11-23`):** Alongside Jineon Baek's November 2024 optimality proof preprint for Gerver's sofa (`arXiv:2411.19826`, awaiting formal journal refereeing), Dawid Trela (`arXiv:2610.13955`, Oct 2026) published certified computational verification of Gerver's geometry and admissible motion. See [`problems/moving-sofa-problem/status.md`](../problems/moving-sofa-problem/status.md).
 Unconditionally, the present bracket is $2.2195 \le \mu \le 2.37$.
 
 - **Lower bound (unbeaten since 1992):** $\mu \ge \mu_G \approx 2.219531669$, realized by Gerver's sofa, whose boundary is assembled from 18 analytic pieces — straight segments, circular arcs, and arcs of involutes of circles. No larger admissible shape has ever been exhibited.

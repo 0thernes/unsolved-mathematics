@@ -36,6 +36,8 @@ The stakes are exceptional. Under GRH one obtains square-root error terms for pr
 
 ## 2. State of the art
 
+
+> **Frontier Addendum (`2026-11-23`):** Guth–Maynard (`arXiv:2405.20552`) improved classical zero-density estimates for $\zeta(s)$; late-November 2026 unrefereed Lean-only GRH claims remain unverified by peer review, and GRH remains **OPEN**. See [`problems/grand-riemann-hypothesis/status.md`](../problems/grand-riemann-hypothesis/status.md).
 The problem is **open** for every degree-$\ge 1$ element, and is unknown even for a single $\mathrm{GL}_2$ cusp form's $L$-function. What is established is substantial but never closes the line:
 
 - **Zero localization and proportions.** Zeros of every standard Selberg-class element lie in the critical strip, with a classical zero-free region near $\mathrm{Re}(s)=1$. For $\zeta$, roughly $41.7\%$ of non-trivial zeros lie exactly on the line (Bui–Conrey–Young 2011 and successors), tracing the lineage Hardy (1914) $\to$ Selberg (1942) $\to$ Levinson (1974, $>34\%$) $\to$ Conrey (1989, $>40\%$). Analogous positive proportions hold for Dirichlet and some $\mathrm{GL}_2$ $L$-functions.

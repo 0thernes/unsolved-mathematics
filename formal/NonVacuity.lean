@@ -39,12 +39,10 @@ public theorem witness_subcritical_positive_cycle :
     iter T 2 1 = 1 := by
   exact ⟨by decide, by decide, by decide⟩
 
-/-- Witness for `erdos_straus_mordell_840`: concrete non-exceptional inputs across
-    different residue families (e.g. `n = 73`, `n = 97`, `n = 145`, `n = 193`) satisfy
-    all six hypotheses and obtain verified decompositions; meanwhile `n = 121` IS in
-    Mordell's 6-class exceptional set yet still admits `4/121 = 1/31 + 1/1251...`?
-    Actually `4/121 = 1/33 + 1/363 + ...` wait: `4/121 = 1/44 + 1/132 + ...` check:
-    `4/121 = 1/31 + 3/3751`: `1/44 + 1/121 + 1/484`? Check `(11+4+1)/484 = 16/484 = 4/121`!! -/
+/-- Witness for `erdos_straus_mordell_840`: concrete non-exceptional input `n = 97`
+    satisfies all six mod-840 hypotheses, while the exceptional square `n = 121`
+    still admits the concrete decomposition `4 / 121 = 1 / 44 + 1 / 121 + 1 / 484`
+    (`(11 + 4 + 1) / 484 = 16 / 484 = 4 / 121`). -/
 public theorem witness_erdos_straus_hypotheses :
     (2 ≤ 97 ∧ 97 % 840 ≠ 1 ∧ 97 % 840 ≠ 121 ∧ 97 % 840 ≠ 169 ∧
       97 % 840 ≠ 289 ∧ 97 % 840 ≠ 361 ∧ 97 % 840 ≠ 529) ∧
@@ -52,9 +50,9 @@ public theorem witness_erdos_straus_hypotheses :
   exact ⟨by decide, by unfold IsErdosStrausSol; decide⟩
 
 /-- Witness for `lonely_runner_sharpness_all_n` & `lonely_runner_n2`:
-    at `n = 2`, speeds `(1, 2)` hit exact equality `1/3` at `t = 1/3`,
-    and non-trivial speeds `(3, 10)` satisfy `FarEnough 3` at `t = 1/9`? Check `t = 1/9`:
-    `3/9 = 1/3`, `10/9 ≡ 1/9` (too close!). At `t = 1/6`: `3/6 = 1/2`, `10/6 ≡ 2/3` (BOTH `≥ 1/3`!). -/
+    at `n = 2`, speeds `(1, 2)` meet the sharpness bound `1/3` at `t = 1/3`,
+    and non-trivial speeds `(3, 10)` satisfy `FarEnough 3` at `t = 1/6`
+    (`‖3/6‖ = 1/2 ≥ 1/3` and `‖10/6‖ = 1/3 ≥ 1/3`). -/
 public theorem witness_lonely_runner_concrete :
     FarEnough 3 1 6 3 ∧ FarEnough 3 1 6 10 ∧ WithinDist 3 1 3 1 := by
   unfold FarEnough WithinDist

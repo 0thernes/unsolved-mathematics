@@ -176,7 +176,7 @@ jobs:
         run: ruff check scripts rag tests examples
 
       - name: Strict type check (mypy)
-        run: mypy scripts/generate.py scripts/validate.py scripts/build_data_manifest.py rag/build_corpus.py rag/retriever.py
+        run: mypy scripts/generate.py scripts/validate.py scripts/build_data_manifest.py scripts/build_site.py rag/build_corpus.py rag/retriever.py
 
       - name: Dependency vulnerability scan (pip-audit, report-only)
         run: pip-audit -r requirements-lock.txt || true

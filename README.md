@@ -5,16 +5,16 @@
 ### *An audited, ranked, research-grade dossier & Lean 4.35.0 formal core of humanity's open mathematical problems.*
 
 [![CI](https://github.com/0thernes/unsolved-mathematics/actions/workflows/ci.yml/badge.svg)](https://github.com/0thernes/unsolved-mathematics/actions/workflows/ci.yml)
-[![Version](https://img.shields.io/badge/version-0.3.0-blue.svg)](VERSION)
+[![Version](https://img.shields.io/badge/version-0.3.1-blue.svg)](VERSION)
 [![Lean](https://img.shields.io/badge/Lean-4.35.0%20(6--kernel)-7c3aed.svg)](formal/STATEMENT_FIDELITY.md)
-[![Citations](https://img.shields.io/badge/API--verified%20citations-443-10b981.svg)](data/citation-verification-log.json)
+[![Citations](https://img.shields.io/badge/API--verified%20citations-445-10b981.svg)](data/citation-verification-log.json)
 [![License: CC BY 4.0 / MIT](https://img.shields.io/badge/license-CC%20BY%204.0%20%2F%20MIT-slate.svg)](LICENSE)
 
 **Each problem gets its own world — origin, the mind that posed it, every serious attack on it,
 key papers with primary-source verification flags, key mathematicians, a deterministic RAG corpus,
 and an expanding zero-Mathlib Lean 4.35.0 multi-kernel formal verification core.**
 
-`v0.3.0` · branch `main` · **106 problems** · **14 Lean 4 theorems (0 `sorry`)** · author **Alexander S. Donahue** ([ORCID 0009-0006-8168-9648](https://orcid.org/0009-0006-8168-9648)) · Status: `active`
+`v0.3.1` · branch `main` · **106 problems** · **14 Lean 4 theorems (0 `sorry`)** · author **Alexander S. Donahue** ([ORCID 0009-0006-8168-9648](https://orcid.org/0009-0006-8168-9648)) · Status: `active`
 
 [Master Ranking](RANKING.md) · [Formal Core](formal/STATEMENT_FIDELITY.md) · [Claims Ledger](CLAIMS.md) · [Limitations](LIMITATIONS.md) · [Forensic Audit](docs/reviews/2026-11-23-forensic-philosophical-audit.md) · [Replication](REPLICATION.md) · [Architecture](ARCHITECTURE.md) · [Philosophy](PHILOSOPHY.md) · [Indexes](docs/indexes/)
 
@@ -219,7 +219,7 @@ by `scripts/build_indexes.py`):
 - 🗺️ [By field](docs/indexes/by-field.md) · [By status](docs/indexes/by-status.md) · [By era posed](docs/indexes/by-century.md)
 - 👤 [Originators index](docs/indexes/originators.md) — every mathematician → the problems they posed
 - ✅ [Verification dashboard](docs/indexes/verification.md) — provenance of all ~2,650 citations
-- 📖 [Glossary](docs/GLOSSARY.md) — the recurring concepts that thread the dossiers
+- 📖 [Glossary](docs/glossary.md) — the recurring concepts that thread the dossiers
 
 ## Repository map
 
@@ -264,7 +264,7 @@ Mathematics has no tolerance for bluffing, and neither does this atlas.
 
 - **Claims & Falsifiability:** Every substantive claim carries an explicit *"What would prove us wrong"* trigger in [`CLAIMS.md`](CLAIMS.md).
 - **Known Limitations:** Read [`LIMITATIONS.md`](LIMITATIONS.md) and our complete 6-class forensic & philosophical audit ([`docs/reviews/2026-11-23-forensic-philosophical-audit.md`](docs/reviews/2026-11-23-forensic-philosophical-audit.md)) before citing any section.
-- **Primary-Source Citation Audit:** Of 552 identifier-bearing paper rows checked live against `export.arxiv.org` and `api.crossref.org` on 2026-11-23 (`data/citation-verification-log.json`), **443 are API-verified** and **109 invalid/hallucinated identifiers were stripped** (downgraded honestly to `—` / `needs-verification`). Roughly 2,100 pre-DOI historical rows remain unverified.
+- **Primary-Source Citation Audit:** Of 554 identifier-bearing paper rows checked live against `export.arxiv.org` and `api.crossref.org` on 2026-11-23 (`data/citation-verification-log.json`), **445 are API-verified** and **109 invalid/hallucinated identifiers were stripped** (downgraded honestly to `—` / `needs-verification`). Roughly 2,100 pre-DOI historical rows remain unverified.
 - **No problem is ever called "solved" without verified primary-source evidence:** `scripts/proof_claim_sweep.py` enforces zero unhedged proof claims across all active prose in CI.
 - **Scores are editorial estimates**, documented and deterministic (`docs/methodology/RANKING.md`, `CURRENT_YEAR = 2026`) — never objective truth.
 
@@ -272,7 +272,7 @@ See [`PHILOSOPHY.md`](PHILOSOPHY.md), [`docs/methodology/SOURCING.md`](docs/meth
 
 ## Maintenance Status
 
-**Status: active** (`v0.3.0`, updated `2026-11-23`). Planned milestones live in [`ROADMAP.md`](ROADMAP.md), operational tasks in [`docs/kanban/KANBAN.md`](docs/kanban/KANBAN.md), and verification history in [`docs/run-log.md`](docs/run-log.md) and [`CHANGELOG.md`](CHANGELOG.md).
+**Status: active** (`v0.3.1`, updated `2026-11-23`). Planned milestones live in [`ROADMAP.md`](ROADMAP.md), operational tasks in [`docs/kanban/KANBAN.md`](docs/kanban/KANBAN.md), and verification history in [`docs/run-log.md`](docs/run-log.md) and [`CHANGELOG.md`](CHANGELOG.md).
 
 ## Author & Accreditation
 
