@@ -1,6 +1,6 @@
 # The Total Coloring Conjecture
 
-> **Atlas Rank #73** · CSS **54.0** · Field: *Graph Theory* · Posed: **1965** · Status: `active-progress`
+> **Atlas Rank #93** · CSS **54.067** · Field: *Graph Theory* · Posed: **1965** · Status: `active-progress`
 
 ## Plain statement
 

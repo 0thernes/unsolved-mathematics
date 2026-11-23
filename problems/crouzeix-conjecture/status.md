@@ -6,7 +6,9 @@ _Where the problem stands and what a resolution would require._
 $$ \|p(A)\| \le 2\,\max_{z\in W(A)}|p(z)|, $$
 with the constant $2$ optimal — remains **unproven in general** as of the latest reliable literature. It is widely believed true.
 
-**Strongest unconditional result.** The best general theorem is the Crouzeix–Palencia bound (2017):
+**August 2026 frontier watch (claimed resolution under peer scrutiny):** In August 2026, **Emiel Lorist and Felix Schwenninger** posted *"A solution to Crouzeix's conjecture"* (`arXiv:2608.03841`, verified), claiming a full analytical proof of the constant $2$ bound, alongside companion 3D complete-Crouzeix results (`arXiv:2608.27346`, `arXiv:2611.01416`, verified). Per this atlas's honesty policy, the problem stays `active-progress` pending peer review and community verification of `arXiv:2608.03841`.
+
+**Strongest unconditional result.** The best published general theorem is the Crouzeix–Palencia bound (2017):
 $$ \|p(A)\| \le (1+\sqrt 2)\,\|p\|_{W(A)} \approx 2.4142, $$
 which holds for all matrices, all dimensions, and all polynomials (indeed all functions analytic on a neighborhood of $W(A)$). This superseded Crouzeix's own 2007 constant of $11.08$. Subsequent work by Ransford and Schwenninger re-derived the bound, exhibited small refinements, and showed that the unmodified Crouzeix–Palencia mechanism cannot itself break much below $\approx 2.4$ — closing the remaining interval down to $2$ requires a genuinely new ingredient.
 

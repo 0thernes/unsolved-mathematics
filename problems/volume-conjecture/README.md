@@ -1,6 +1,6 @@
 # The Volume Conjecture
 
-> **Atlas Rank #56** · CSS **57.467** · Field: *Knot Theory* · Posed: **1997** · Status: `active-progress`
+> **Atlas Rank #71** · CSS **57.533** · Field: *Knot Theory* · Posed: **1997** · Status: `active-progress`
 
 ## Plain statement
 

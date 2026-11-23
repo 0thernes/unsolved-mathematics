@@ -1,6 +1,6 @@
 # The Baum–Connes Conjecture
 
-> **Atlas Rank #29** · CSS **64.667** · Field: *Operator Algebras* · Posed: **1982** · Status: `active-progress`
+> **Atlas Rank #36** · CSS **64.733** · Field: *Operator Algebras* · Posed: **1982** · Status: `active-progress`
 
 ## Plain statement
 

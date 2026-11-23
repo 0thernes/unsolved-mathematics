@@ -1,6 +1,6 @@
 # The Zariski Cancellation Problem
 
-> **Atlas Rank #47** · CSS **60.667** · Field: *Algebraic Geometry* · Posed: **1949** · Status: `active-progress`
+> **Atlas Rank #56** · CSS **60.733** · Field: *Algebraic Geometry* · Posed: **1949** · Status: `active-progress`
 
 ## Plain statement
 

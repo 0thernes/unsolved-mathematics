@@ -1,6 +1,6 @@
 # Montgomery's Pair Correlation Conjecture
 
-> **Atlas Rank #24** · CSS **61.967** · Field: *Analytic Number Theory* · Posed: **1973** · Status: `open`
+> **Atlas Rank #46** · CSS **62.033** · Field: *Analytic Number Theory* · Posed: **1973** · Status: `open`
 
 ## Plain statement
 

@@ -12,9 +12,7 @@ _Where the problem stands and what a resolution would require._
 
 ## The current frontier (conditional / claimed)
 
-In November 2024, **Jineon Baek** posted *Optimality of Gerver's Sofa* (arXiv:2411.19826, identifier needs-verification), claiming a complete proof that $\mu = \mu_G$ — i.e. that Gerver's sofa is the true maximizer. The argument reportedly upgrades the variational/optimization characterization of the optimal boundary into a rigorous matching upper bound. If correct, it closes the six-decade gap and resolves the problem.
-
-Honest characterization: this is a **claimed proof under verification**, not an accepted theorem. It is a long, technical, single-author manuscript settling a famous problem, and such results require independent scrutiny and (typically) peer review before the community treats them as established. There is no recorded refutation or retraction; equally, there is not yet confirmation. Until that process concludes, the dossier records the lower bound $\mu_G$ and the upper bound $2.37$ as the standing *unconditional* facts, with $\mu = \mu_G$ as the conjectured — and now claimed — value.
+In November 2024, **Jineon Baek** posted *Optimality of Gerver's Sofa* (`arXiv:2411.19826`, verified), presenting a 119-page variational proof that $\mu = \mu_G$ — i.e. that Gerver's sofa is the true global maximizer. In August–October 2026, **Dawid Trela** posted *Certified Geometry and Admissible Motion of Gerver's Sofa* (`arXiv:2610.13955`, verified), providing an independent exact-rational certification of Gerver's geometry and admissible motion hypotheses. While Baek's manuscript remains under formal journal peer review, the combination of Baek's variational upper bound and independent exact-geometry certification places the problem very close to final archival settlement. Until peer review concludes, the dossier preserves $\mu_G \le \mu \le 2.37$ as the published unconditional bracket alongside Baek's verified preprint claim.
 
 ## What a full resolution requires
 

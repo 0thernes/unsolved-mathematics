@@ -8,12 +8,16 @@ _Where the problem stands and what a resolution would require._
 
 After the standard reduction — fix one runner at speed $0$, take the others' speeds to be distinct positive integers $v_1,\dots,v_n$ — the conjecture states there is a time $t$ with $\|t v_i\| \ge \tfrac{1}{n+1}$ for all $i$. The sharp constant $\tfrac{1}{n+1}$ is realized by $v_i = i$, so no improvement is possible.
 
-Confirmed cases (by number of moving runners $n$):
-- $n \le 3$: Wills (1967–1968).
-- $n = 4$: Cusick–Pomerance (1984); reproved by Bienia–Goddyn–Gvozdjak–Sebő–Tarsi (1998).
-- $n = 5$: Barajas–Serra (2008); elementary reproof by Renault (2011).
+Confirmed cases (by total number of runners $k = n + 1$, including the stationary reference runner):
+- $k \le 4$ ($n \le 3$): Wills (1967–1968).
+- $k = 5$ ($n = 4$): Cusick–Pomerance (1984); reproved by Bienia–Goddyn–Gvozdjak–Sebő–Tarsi (1998).
+- $k = 6$ ($n = 5$): Bohman–Holzman–Kleitman (2001); elementary reproof by Renault (2004).
+- $k = 7$ ($n = 6$): Barajas–Serra (2008).
+- **$k = 8$ ($n = 7$, Sept 2025):** **Matthieu Rosenfeld**, *"The lonely runner conjecture holds for eight runners"* (`arXiv:2509.14111`, verified) — first advance past 7 runners in 17 years, combining minimal-counterexample bounds with a structural computer-assisted elimination.
+- **$k = 9, 10$ ($n = 8, 9$, Nov 2025):** **Tanupat Trakulthongchai**, *"Nine and ten lonely runners"* (`arXiv:2511.22427`, verified; *Electron. J. Combin.*).
+- **$k = 11, 12, 13$ ($n = 10, 11, 12$, Apr 2026):** **Touch Sungkawichai and Tanupat Trakulthongchai**, *"Eleven, twelve, and thirteen lonely runners"* (`arXiv:2604.23906`, verified).
 
-In total-runner language (the moving count plus the stationary reference runner), these settle the conjecture up through six or seven runners depending on convention. Each new case has demanded markedly more work than the last, and the $n=5$ proof is the technical ceiling of the purely elementary methods.
+The general uniform conjecture for all $k$ remains **open**.
 
 ## Strongest current results
 

@@ -1,6 +1,6 @@
 # Sarnak's Möbius Disjointness Conjecture
 
-> **Atlas Rank #52** · CSS **58.5** · Field: *Dynamical Systems* · Posed: **2010** · Status: `active-progress`
+> **Atlas Rank #65** · CSS **58.567** · Field: *Dynamical Systems* · Posed: **2010** · Status: `active-progress`
 
 ## Plain statement
 

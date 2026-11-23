@@ -1,6 +1,6 @@
 # The Kakeya Conjecture
 
-> **Atlas Rank #17** · CSS **69.1** · Field: *Harmonic Analysis* · Posed: **1971** · Status: `active-progress`
+> **Atlas Rank #22** · CSS **69.167** · Field: *Harmonic Analysis* · Posed: **1971** · Status: `active-progress`
 
 ## Plain statement
 

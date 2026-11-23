@@ -1,6 +1,6 @@
 # The Fontaine–Mazur Conjecture
 
-> **Atlas Rank #35** · CSS **65.4** · Field: *Number Theory* · Posed: **1995** · Status: `active-progress`
+> **Atlas Rank #35** · CSS **65.467** · Field: *Number Theory* · Posed: **1995** · Status: `active-progress`
 
 ## Plain statement
 

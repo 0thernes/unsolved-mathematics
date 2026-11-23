@@ -1,6 +1,6 @@
 # The Novikov Conjecture
 
-> **Atlas Rank #22** · CSS **67.5** · Field: *Geometric Topology* · Posed: **1965** · Status: `active-progress`
+> **Atlas Rank #26** · CSS **67.567** · Field: *Geometric Topology* · Posed: **1965** · Status: `active-progress`
 
 ## Plain statement
 

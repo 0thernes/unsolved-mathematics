@@ -1,6 +1,6 @@
 # The Reconstruction Conjecture (Ulam)
 
-> **Atlas Rank #46** · CSS **56.5** · Field: *Graph Theory* · Posed: **1941** · Status: `open`
+> **Atlas Rank #81** · CSS **56.567** · Field: *Graph Theory* · Posed: **1941** · Status: `open`
 
 ## Plain statement
 

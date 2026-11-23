@@ -1,6 +1,6 @@
 # The Jacobian Conjecture
 
-> **Atlas Rank #18** · CSS **68.333** · Field: *Algebraic Geometry* · Posed: **1939** · Status: `open`
+> **Atlas Rank #23** · CSS **68.4** · Field: *Algebraic Geometry* · Posed: **1939** · Status: `open`
 
 ## Plain statement
 

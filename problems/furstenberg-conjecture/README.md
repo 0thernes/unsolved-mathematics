@@ -1,6 +1,6 @@
 # Furstenberg's ×2 ×3 Conjecture
 
-> **Atlas Rank #48** · CSS **61.867** · Field: *Ergodic Theory* · Posed: **1967** · Status: `active-progress`
+> **Atlas Rank #48** · CSS **61.933** · Field: *Ergodic Theory* · Posed: **1967** · Status: `active-progress`
 
 ## Plain statement
 

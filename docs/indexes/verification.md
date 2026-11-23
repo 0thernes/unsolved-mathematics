@@ -6,16 +6,16 @@ Provenance of the citation scaffolding across all dossiers. Per [SOURCING.md](..
 
 | Flag | Count |
 |------|------:|
-| `verified` | 0 |
-| `high-confidence` | 968 |
-| `needs-verification` | 1406 |
-| `ai-suggested` | 271 |
+| `verified` | 30 |
+| `high-confidence` | 970 |
+| `needs-verification` | 1391 |
+| `ai-suggested` | 268 |
 
 ## Per-problem
 
 | # | Problem | verified | high-conf | needs-verif | ai-suggested |
 |---|---------|---------:|----------:|------------:|-------------:|
-| 1 | [The Riemann Hypothesis](../../problems/riemann-hypothesis/README.md) | 0 | 12 | 13 | 0 |
+| 1 | [The Riemann Hypothesis](../../problems/riemann-hypothesis/README.md) | 1 | 12 | 13 | 0 |
 | 2 | [Goldbach's Conjecture](../../problems/goldbach-conjecture/README.md) | 0 | 13 | 12 | 0 |
 | 3 | [The Grand Riemann Hypothesis](../../problems/grand-riemann-hypothesis/README.md) | 0 | 19 | 6 | 0 |
 | 4 | [P versus NP](../../problems/p-versus-np/README.md) | 0 | 21 | 4 | 0 |
@@ -27,7 +27,7 @@ Provenance of the citation scaffolding across all dossiers. Per [SOURCING.md](..
 | 10 | [The Continuum Hypothesis](../../problems/continuum-hypothesis/README.md) | 0 | 18 | 7 | 0 |
 | 11 | [Hilbert's Sixteenth Problem (Second Part)](../../problems/hilbert-sixteenth-problem/README.md) | 0 | 9 | 14 | 2 |
 | 12 | [Yang–Mills Existence and Mass Gap](../../problems/yang-mills-mass-gap/README.md) | 0 | 11 | 12 | 2 |
-| 13 | [Navier–Stokes Existence and Smoothness](../../problems/navier-stokes-smoothness/README.md) | 0 | 13 | 11 | 1 |
+| 13 | [Navier–Stokes Existence and Smoothness](../../problems/navier-stokes-smoothness/README.md) | 1 | 12 | 11 | 1 |
 | 14 | [The abc Conjecture](../../problems/abc-conjecture/README.md) | 0 | 14 | 9 | 2 |
 | 15 | [The Tate Conjecture](../../problems/tate-conjecture/README.md) | 0 | 8 | 16 | 1 |
 | 16 | [Legendre's Conjecture](../../problems/legendre-conjecture/README.md) | 0 | 11 | 14 | 0 |
@@ -35,14 +35,14 @@ Provenance of the citation scaffolding across all dossiers. Per [SOURCING.md](..
 | 18 | [Vojta's Conjecture](../../problems/vojta-conjecture/README.md) | 0 | 10 | 15 | 0 |
 | 19 | [The Inverse Galois Problem](../../problems/inverse-galois-problem/README.md) | 0 | 10 | 14 | 1 |
 | 20 | [The Hardy–Littlewood k-tuple Conjecture](../../problems/hardy-littlewood-k-tuple/README.md) | 0 | 11 | 14 | 0 |
-| 21 | [The Collatz Conjecture](../../problems/collatz-conjecture/README.md) | 0 | 8 | 13 | 4 |
-| 22 | [The Kakeya Conjecture](../../problems/kakeya-conjecture/README.md) | 0 | 8 | 17 | 0 |
+| 21 | [The Collatz Conjecture](../../problems/collatz-conjecture/README.md) | 14 | 11 | 0 | 2 |
+| 22 | [The Kakeya Conjecture](../../problems/kakeya-conjecture/README.md) | 2 | 8 | 16 | 0 |
 | 23 | [The Jacobian Conjecture](../../problems/jacobian-conjecture/README.md) | 0 | 7 | 15 | 3 |
 | 24 | [The Restriction Conjecture](../../problems/restriction-conjecture/README.md) | 0 | 17 | 8 | 0 |
-| 25 | [The Novikov Conjecture](../../problems/novikov-conjecture/README.md) | 0 | 11 | 14 | 0 |
-| 26 | [The Bombieri–Lang Conjecture](../../problems/bombieri-lang-conjecture/README.md) | 0 | 13 | 12 | 0 |
+| 25 | [The Bombieri–Lang Conjecture](../../problems/bombieri-lang-conjecture/README.md) | 0 | 13 | 12 | 0 |
+| 26 | [The Novikov Conjecture](../../problems/novikov-conjecture/README.md) | 0 | 11 | 14 | 0 |
 | 27 | [Bunyakovsky's Conjecture](../../problems/bunyakovsky-conjecture/README.md) | 0 | 15 | 9 | 1 |
-| 28 | [Hadwiger's Conjecture (Graph Coloring)](../../problems/hadwiger-conjecture/README.md) | 0 | 10 | 12 | 3 |
+| 28 | [Hadwiger's Conjecture (Graph Coloring)](../../problems/hadwiger-conjecture/README.md) | 1 | 10 | 12 | 3 |
 | 29 | [The Littlewood Conjecture](../../problems/littlewood-conjecture/README.md) | 0 | 3 | 20 | 2 |
 | 30 | [Schinzel's Hypothesis H](../../problems/schinzel-hypothesis-h/README.md) | 0 | 7 | 18 | 0 |
 | 31 | [The Invariant Subspace Problem](../../problems/invariant-subspace-problem/README.md) | 0 | 12 | 12 | 1 |
@@ -64,27 +64,27 @@ Provenance of the citation scaffolding across all dossiers. Per [SOURCING.md](..
 | 47 | [The Birkhoff Conjecture (Integrable Billiards)](../../problems/birkhoff-conjecture/README.md) | 0 | 9 | 16 | 0 |
 | 48 | [Furstenberg's ×2 ×3 Conjecture](../../problems/furstenberg-conjecture/README.md) | 0 | 6 | 17 | 2 |
 | 49 | [Artin's Primitive Root Conjecture](../../problems/artin-primitive-root-conjecture/README.md) | 0 | 5 | 11 | 9 |
-| 50 | [The Erdős Unit Distance Problem](../../problems/unit-distance-problem/README.md) | 0 | 10 | 15 | 0 |
-| 51 | [Self-Avoiding Walk (Scaling & Connective Constant)](../../problems/self-avoiding-walk/README.md) | 0 | 6 | 19 | 0 |
-| 52 | [The Whitehead Asphericity Conjecture](../../problems/whitehead-asphericity-conjecture/README.md) | 0 | 4 | 12 | 9 |
-| 53 | [Lehmer's Mahler Measure Conjecture](../../problems/lehmer-mahler-measure-conjecture/README.md) | 0 | 9 | 13 | 3 |
-| 54 | [The Weinstein Conjecture](../../problems/weinstein-conjecture/README.md) | 0 | 10 | 15 | 0 |
-| 55 | [The KPZ Universality Conjecture](../../problems/kpz-universality/README.md) | 0 | 18 | 7 | 0 |
-| 56 | [The Hilbert–Smith Conjecture](../../problems/hilbert-smith-conjecture/README.md) | 0 | 4 | 17 | 4 |
-| 57 | [The Zariski Cancellation Problem](../../problems/zariski-cancellation-problem/README.md) | 0 | 4 | 21 | 0 |
-| 58 | [The Palis Conjecture (Finitude / Density of Attractors)](../../problems/palis-conjecture/README.md) | 0 | 19 | 6 | 0 |
-| 59 | [The Inscribed Square Problem (Toeplitz)](../../problems/inscribed-square-problem/README.md) | 0 | 8 | 12 | 5 |
-| 60 | [The Falconer Distance Conjecture](../../problems/falconer-distance-conjecture/README.md) | 0 | 9 | 14 | 2 |
-| 61 | [Pillai's Conjecture](../../problems/pillai-conjecture/README.md) | 0 | 7 | 18 | 0 |
-| 62 | [The Hadwiger Covering Conjecture](../../problems/hadwiger-covering-conjecture/README.md) | 0 | 7 | 18 | 0 |
-| 63 | [Vaught's Conjecture](../../problems/vaught-conjecture/README.md) | 0 | 11 | 14 | 0 |
-| 64 | [The Cherlin–Zilber Algebraicity Conjecture](../../problems/cherlin-zilber-conjecture/README.md) | 0 | 8 | 17 | 0 |
-| 65 | [Köthe's Conjecture](../../problems/kothe-conjecture/README.md) | 0 | 10 | 15 | 0 |
-| 66 | [Sarnak's Möbius Disjointness Conjecture](../../problems/sarnak-mobius-conjecture/README.md) | 0 | 9 | 16 | 0 |
-| 67 | [Greenberg's Conjecture](../../problems/greenberg-conjecture/README.md) | 0 | 6 | 10 | 9 |
-| 68 | [The Sunflower Conjecture](../../problems/sunflower-conjecture/README.md) | 0 | 7 | 10 | 8 |
-| 69 | [The Four Exponentials Conjecture](../../problems/four-exponentials-conjecture/README.md) | 0 | 9 | 13 | 3 |
-| 70 | [The Catalan–Dickson Conjecture (Aliquot Sequences)](../../problems/catalan-dickson-conjecture/README.md) | 0 | 6 | 19 | 0 |
+| 50 | [Self-Avoiding Walk (Scaling & Connective Constant)](../../problems/self-avoiding-walk/README.md) | 0 | 6 | 19 | 0 |
+| 51 | [The Whitehead Asphericity Conjecture](../../problems/whitehead-asphericity-conjecture/README.md) | 0 | 4 | 12 | 9 |
+| 52 | [Lehmer's Mahler Measure Conjecture](../../problems/lehmer-mahler-measure-conjecture/README.md) | 0 | 9 | 13 | 3 |
+| 53 | [The Weinstein Conjecture](../../problems/weinstein-conjecture/README.md) | 0 | 10 | 15 | 0 |
+| 54 | [The KPZ Universality Conjecture](../../problems/kpz-universality/README.md) | 0 | 18 | 7 | 0 |
+| 55 | [The Hilbert–Smith Conjecture](../../problems/hilbert-smith-conjecture/README.md) | 0 | 4 | 17 | 4 |
+| 56 | [The Zariski Cancellation Problem](../../problems/zariski-cancellation-problem/README.md) | 0 | 4 | 21 | 0 |
+| 57 | [The Palis Conjecture (Finitude / Density of Attractors)](../../problems/palis-conjecture/README.md) | 0 | 19 | 6 | 0 |
+| 58 | [The Inscribed Square Problem (Toeplitz)](../../problems/inscribed-square-problem/README.md) | 0 | 8 | 12 | 5 |
+| 59 | [The Falconer Distance Conjecture](../../problems/falconer-distance-conjecture/README.md) | 0 | 9 | 14 | 2 |
+| 60 | [Pillai's Conjecture](../../problems/pillai-conjecture/README.md) | 0 | 7 | 18 | 0 |
+| 61 | [The Hadwiger Covering Conjecture](../../problems/hadwiger-covering-conjecture/README.md) | 0 | 7 | 18 | 0 |
+| 62 | [Vaught's Conjecture](../../problems/vaught-conjecture/README.md) | 0 | 11 | 14 | 0 |
+| 63 | [The Cherlin–Zilber Algebraicity Conjecture](../../problems/cherlin-zilber-conjecture/README.md) | 0 | 8 | 17 | 0 |
+| 64 | [Köthe's Conjecture](../../problems/kothe-conjecture/README.md) | 0 | 10 | 15 | 0 |
+| 65 | [Sarnak's Möbius Disjointness Conjecture](../../problems/sarnak-mobius-conjecture/README.md) | 0 | 9 | 16 | 0 |
+| 66 | [Greenberg's Conjecture](../../problems/greenberg-conjecture/README.md) | 0 | 6 | 10 | 9 |
+| 67 | [The Sunflower Conjecture](../../problems/sunflower-conjecture/README.md) | 1 | 7 | 10 | 8 |
+| 68 | [The Four Exponentials Conjecture](../../problems/four-exponentials-conjecture/README.md) | 0 | 9 | 13 | 3 |
+| 69 | [The Catalan–Dickson Conjecture (Aliquot Sequences)](../../problems/catalan-dickson-conjecture/README.md) | 0 | 6 | 19 | 0 |
+| 70 | [The Erdős Unit Distance Problem (Disproved 2026)](../../problems/unit-distance-problem/README.md) | 1 | 10 | 15 | 0 |
 | 71 | [The Volume Conjecture](../../problems/volume-conjecture/README.md) | 0 | 8 | 15 | 2 |
 | 72 | [The Hadwiger–Nelson Problem](../../problems/hadwiger-nelson-problem/README.md) | 0 | 6 | 12 | 7 |
 | 73 | [The Hadamard Matrix Conjecture](../../problems/hadamard-matrix-conjecture/README.md) | 0 | 6 | 16 | 3 |
@@ -102,7 +102,7 @@ Provenance of the citation scaffolding across all dossiers. Per [SOURCING.md](..
 | 85 | [The Andrews–Curtis Conjecture](../../problems/andrews-curtis-conjecture/README.md) | 0 | 4 | 16 | 5 |
 | 86 | [The Zeeman Conjecture](../../problems/zeeman-conjecture/README.md) | 0 | 7 | 17 | 1 |
 | 87 | [The Connes Embedding Problem (Resolved 2020)](../../problems/connes-embedding-aftermath/README.md) | 0 | 6 | 14 | 5 |
-| 88 | [The Lonely Runner Conjecture](../../problems/lonely-runner-conjecture/README.md) | 0 | 6 | 13 | 6 |
+| 88 | [The Lonely Runner Conjecture](../../problems/lonely-runner-conjecture/README.md) | 3 | 6 | 13 | 6 |
 | 89 | [The Telescope Conjecture (Disproved 2023)](../../problems/telescope-conjecture/README.md) | 0 | 8 | 12 | 5 |
 | 90 | [The Beal Conjecture](../../problems/beal-conjecture/README.md) | 0 | 8 | 16 | 1 |
 | 91 | [Giuga's Conjecture](../../problems/giuga-conjecture/README.md) | 0 | 5 | 10 | 10 |
@@ -110,7 +110,7 @@ Provenance of the citation scaffolding across all dossiers. Per [SOURCING.md](..
 | 93 | [The Total Coloring Conjecture](../../problems/total-coloring-conjecture/README.md) | 0 | 9 | 16 | 0 |
 | 94 | [Hall's Conjecture](../../problems/hall-conjecture/README.md) | 0 | 12 | 13 | 0 |
 | 95 | [Brennan's Conjecture](../../problems/brennan-conjecture/README.md) | 0 | 3 | 22 | 0 |
-| 96 | [The Union-Closed Sets Conjecture (Frankl)](../../problems/union-closed-sets-conjecture/README.md) | 0 | 1 | 18 | 6 |
+| 96 | [The Union-Closed Sets Conjecture (Frankl)](../../problems/union-closed-sets-conjecture/README.md) | 1 | 1 | 18 | 6 |
 | 97 | [The Erdős–Straus Conjecture](../../problems/erdos-straus-conjecture/README.md) | 0 | 4 | 13 | 8 |
 | 98 | [The Graceful Tree Conjecture (Ringel–Kotzig)](../../problems/graceful-tree-conjecture/README.md) | 0 | 6 | 13 | 6 |
 | 99 | [Grimm's Conjecture](../../problems/grimm-conjecture/README.md) | 0 | 7 | 7 | 11 |
@@ -118,6 +118,6 @@ Provenance of the citation scaffolding across all dossiers. Per [SOURCING.md](..
 | 101 | [The 1/3–2/3 Conjecture](../../problems/one-third-two-thirds-conjecture/README.md) | 0 | 8 | 15 | 2 |
 | 102 | [Singmaster's Conjecture](../../problems/singmaster-conjecture/README.md) | 0 | 4 | 8 | 13 |
 | 103 | [Gilbreath's Conjecture](../../problems/gilbreath-conjecture/README.md) | 0 | 7 | 11 | 7 |
-| 104 | [Sendov's Conjecture](../../problems/sendov-conjecture/README.md) | 0 | 5 | 14 | 6 |
-| 105 | [The Moving Sofa Problem](../../problems/moving-sofa-problem/README.md) | 0 | 5 | 11 | 4 |
-| 106 | [Crouzeix's Conjecture](../../problems/crouzeix-conjecture/README.md) | 0 | 6 | 10 | 9 |
+| 104 | [Sendov's Conjecture](../../problems/sendov-conjecture/README.md) | 2 | 5 | 14 | 6 |
+| 105 | [The Moving Sofa Problem](../../problems/moving-sofa-problem/README.md) | 2 | 5 | 10 | 3 |
+| 106 | [Crouzeix's Conjecture](../../problems/crouzeix-conjecture/README.md) | 1 | 6 | 10 | 9 |

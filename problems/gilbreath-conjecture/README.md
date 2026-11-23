@@ -1,6 +1,6 @@
 # Gilbreath's Conjecture
 
-> **Atlas Rank #38** · CSS **47.867** · Field: *Number Theory* · Posed: **1958** · Status: `open`
+> **Atlas Rank #103** · CSS **47.933** · Field: *Number Theory* · Posed: **1958** · Status: `open`
 
 ## Plain statement
 

@@ -1,6 +1,6 @@
 # The Falconer Distance Conjecture
 
-> **Atlas Rank #38** · CSS **59.967** · Field: *Geometric Measure Theory* · Posed: **1985** · Status: `active-progress`
+> **Atlas Rank #59** · CSS **60.033** · Field: *Geometric Measure Theory* · Posed: **1985** · Status: `active-progress`
 
 ## Plain statement
 

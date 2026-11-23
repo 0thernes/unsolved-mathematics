@@ -4,11 +4,10 @@ check_dossiers.py — Completeness report for authored dossiers.
 
 For every problem folder, reports which of the 7 section files are authored
 (template marker removed), the paper-row and mathematician-row counts, and an
-overall authored/total tally. Prints a table and a machine-readable JSON to
-data/dossier-status.json so the Kanban / CI can consume it.
+overall authored/total tally. Prints a table and writes data/dossier-status.json.
 
-This is a *report*, not a gate (validate.py is the gate). Exit code is always 0
-unless --strict is passed, in which case any un-authored section fails the run.
+Exit code is 0 unless --strict is passed, in which case any un-authored section
+fails the run.
 """
 from __future__ import annotations
 
@@ -31,17 +30,19 @@ MARKER = "<!-- DOSSIER:"
 
 
 def count_table_rows(text: str) -> int:
-    """Count markdown table data rows (excludes header + separator)."""
+    """Count markdown table data rows across one or more tables (excludes every
+    table's header and separator rows)."""
     rows = 0
-    seen_sep = False
+    in_table_body = False
     for line in text.splitlines():
         s = line.strip()
         if not s.startswith("|"):
+            in_table_body = False
             continue
         if re.match(r"^\|[\s:|-]+\|?$", s):
-            seen_sep = True
+            in_table_body = True
             continue
-        if seen_sep:
+        if in_table_body:
             rows += 1
     return rows
 
@@ -61,8 +62,14 @@ def main() -> int:
             continue
         meta_p = folder / "metadata.json"
         meta = json.loads(meta_p.read_text(encoding="utf-8")) if meta_p.exists() else {}
-        entry = {"slug": folder.name, "rank": meta.get("rank"), "title": meta.get("title", folder.name),
-                 "authored": {}, "papers": 0, "mathematicians": 0}
+        entry: dict = {
+            "slug": folder.name,
+            "rank": meta.get("rank"),
+            "title": meta.get("title", folder.name),
+            "authored": {},
+            "papers": 0,
+            "mathematicians": 0,
+        }
         for sec in SECTIONS:
             f = folder / f"{sec}.md"
             authored = f.exists() and MARKER not in f.read_text(encoding="utf-8")
@@ -74,7 +81,7 @@ def main() -> int:
         entry["complete"] = all(entry["authored"].values())
         report.append(entry)
 
-    OUT.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    OUT.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
 
     complete = sum(1 for e in report if e["complete"])
     print(f"{'#':>3}  {'slug':32} {'sections':9} {'papers':>6} {'people':>6}")

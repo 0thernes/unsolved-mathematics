@@ -1,6 +1,6 @@
 # Schinzel's Hypothesis H
 
-> **Atlas Rank #26** · CSS **66.667** · Field: *Number Theory* · Posed: **1958** · Status: `open`
+> **Atlas Rank #30** · CSS **66.733** · Field: *Number Theory* · Posed: **1958** · Status: `open`
 
 ## Plain statement
 

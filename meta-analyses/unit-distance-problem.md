@@ -4,7 +4,7 @@ slug: unit-distance-problem
 author: Alexander Donahue
 type: ai-assisted-meta-analysis
 peer_reviewed: false
-problem_status: open
+problem_status: recently-resolved
 ai_review:
   claude:
     verdict: accept-with-revisions

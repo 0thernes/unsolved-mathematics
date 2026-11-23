@@ -1,6 +1,6 @@
 # Grimm's Conjecture
 
-> **Atlas Rank #36** · CSS **51.233** · Field: *Number Theory* · Posed: **1969** · Status: `open`
+> **Atlas Rank #99** · CSS **51.3** · Field: *Number Theory* · Posed: **1969** · Status: `open`
 
 ## Plain statement
 

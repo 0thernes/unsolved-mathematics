@@ -1,6 +1,6 @@
 # The Cherlin–Zilber Algebraicity Conjecture
 
-> **Atlas Rank #64** · CSS **59.067** · Field: *Mathematical Logic* · Posed: **1979** · Status: `active-progress`
+> **Atlas Rank #63** · CSS **59.133** · Field: *Mathematical Logic* · Posed: **1979** · Status: `active-progress`
 
 ## Plain statement
 

@@ -1,6 +1,6 @@
 # The Riemann Hypothesis
 
-> **Atlas Rank #1** · CSS **89.867** · Field: *Analytic Number Theory* · Posed: **1859** · Status: `open`  · 🏛️ **Millennium Prize Problem**
+> **Atlas Rank #1** · CSS **89.933** · Field: *Analytic Number Theory* · Posed: **1859** · Status: `open`  · 🏛️ **Millennium Prize Problem**
 
 ## Plain statement
 

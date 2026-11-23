@@ -1,6 +1,6 @@
 # The Grand Riemann Hypothesis
 
-> **Atlas Rank #3** · CSS **84.9** · Field: *Analytic Number Theory* · Posed: **1884** · Status: `open`
+> **Atlas Rank #3** · CSS **84.967** · Field: *Analytic Number Theory* · Posed: **1884** · Status: `open`
 
 ## Plain statement
 

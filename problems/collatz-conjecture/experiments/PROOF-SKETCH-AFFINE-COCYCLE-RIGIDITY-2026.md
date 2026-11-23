@@ -1,4 +1,8 @@
-# PROOF SKETCH: Collatz Conjecture via Affine Cocycle Repulsion Rigidity
+> **⚠️ WITHDRAWN / REFUTED ARTIFACT (audited 2026-07-01, banner enforced 2026-11-23).**
+> **Status: OPEN — this document is NOT a proof and proves no part of the Collatz Conjecture.**
+> Preserved strictly as historical audit evidence. Its core repulsion detector (`A -> A-1`), potential-decrease rate (`2^60` denominator-freeze artifact), and `3c+1` intercept recursion were refuted in [`AFFINE-COCYCLE-CLAIM-AUDIT.md`](AFFINE-COCYCLE-CLAIM-AUDIT.md) and logged as withdrawn in [`AUDIT-REGISTER.md`](AUDIT-REGISTER.md).
+
+# PROOF SKETCH: Collatz Conjecture via Affine Cocycle Repulsion Rigidity (WITHDRAWN)
 
 **Date:** 2026-07-01 (AI-native escalation)
 **Status:** Structural outline + computational verification of key mechanisms + reduction to finite checks. Combines in-repo proved lemmas with the new repulsion mechanism. Not a complete formal proof (requires formalization of carry lemma), but the first path that directly addresses the ε-barrier and positive section.

@@ -1,6 +1,6 @@
 # Yang–Mills Existence and Mass Gap
 
-> **Atlas Rank #10** · CSS **75.267** · Field: *Mathematical Physics* · Posed: **2000** · Status: `open`  · 🏛️ **Millennium Prize Problem**
+> **Atlas Rank #12** · CSS **75.333** · Field: *Mathematical Physics* · Posed: **2000** · Status: `open`  · 🏛️ **Millennium Prize Problem**
 
 ## Plain statement
 

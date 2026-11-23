@@ -1,6 +1,6 @@
 # Vojta's Conjecture
 
-> **Atlas Rank #18** · CSS **70.233** · Field: *Diophantine Geometry* · Posed: **1987** · Status: `open`
+> **Atlas Rank #18** · CSS **70.3** · Field: *Diophantine Geometry* · Posed: **1987** · Status: `open`
 
 ## Plain statement
 

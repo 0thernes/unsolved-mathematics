@@ -1,6 +1,6 @@
 # The Smooth 4-Dimensional Poincaré Conjecture
 
-> **Atlas Rank #32** · CSS **65.467** · Field: *Geometric Topology* · Posed: **1982** · Status: `open`
+> **Atlas Rank #34** · CSS **65.533** · Field: *Geometric Topology* · Posed: **1982** · Status: `open`
 
 ## Plain statement
 

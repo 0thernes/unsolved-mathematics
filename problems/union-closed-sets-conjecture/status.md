@@ -10,7 +10,7 @@ The state of the art is the **entropy bound**. Justin Gilmer's November 2022 pre
 
 $$\max_x d(x) \ \ge\ \frac{3-\sqrt5}{2}\,m \ \approx\ 0.3820\,m,$$
 
-the natural optimum of Gilmer's single-step two-set entropy inequality. Will Sawin then obtained a small improvement strictly beyond $0.38$, showing the $0.38$ barrier is not absolute. (These arXiv identifiers are from the late-2022 burst and are flagged for verification in `papers.md`; the Gilmer paper itself is certain.)
+the natural optimum of Gilmer's single-step two-set entropy inequality. Will Sawin and subsequent authors pushed strictly beyond $0.3820$, and in October 2026 **Simone Costa and Ankan Sadhu** (*"Beyond Liu's 0.382709 threshold for the union-closed sets conjecture"*, `arXiv:2610.02295`, verified) pushed the unconditional universal lower bound further past Liu's threshold. The gap to Frankl's conjectured $1/2$ remains **open**.
 
 Alongside the entropy bound stand robust **special-case** results, all accepted: the conjecture holds when $\mathcal{F}$ contains a set of size $1$ or $2$; for all ground sets with $|X| \le 12$ and all families with $m \le 50$ (computational, Bošnjak–Marković and predecessors); for "dense" families with $m \ge \tfrac{2}{3}2^{|X|}$ (Balla–Bollobás–Eccles); for the graph / size-$\le 2$ case (Bruhn–Charbit–Schaudt–Telle); and for modular, lower-semimodular, and relatively complemented lattices (Abe, Reinhold, Czédli–Schmidt).
 

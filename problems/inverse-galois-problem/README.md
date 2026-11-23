@@ -1,6 +1,6 @@
 # The Inverse Galois Problem
 
-> **Atlas Rank #17** · CSS **69.867** · Field: *Algebra* · Posed: **1892** · Status: `active-progress`
+> **Atlas Rank #19** · CSS **69.933** · Field: *Algebra* · Posed: **1892** · Status: `active-progress`
 
 ## Plain statement
 

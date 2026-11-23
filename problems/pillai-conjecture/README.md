@@ -1,6 +1,6 @@
 # Pillai's Conjecture
 
-> **Atlas Rank #61** · CSS **59.767** · Field: *Number Theory* · Posed: **1931** · Status: `open`
+> **Atlas Rank #60** · CSS **59.833** · Field: *Number Theory* · Posed: **1931** · Status: `open`
 
 ## Plain statement
 

@@ -1,6 +1,6 @@
 # The Beal Conjecture
 
-> **Atlas Rank #32** · CSS **54.933** · Field: *Number Theory* · Posed: **1993** · Status: `open`
+> **Atlas Rank #90** · CSS **55.0** · Field: *Number Theory* · Posed: **1993** · Status: `open`
 
 ## Plain statement
 

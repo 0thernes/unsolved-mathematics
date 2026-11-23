@@ -1,6 +1,6 @@
 # The Graceful Tree Conjecture (Ringel–Kotzig)
 
-> **Atlas Rank #54** · CSS **52.267** · Field: *Combinatorics* · Posed: **1964** · Status: `active-progress`
+> **Atlas Rank #98** · CSS **52.333** · Field: *Combinatorics* · Posed: **1964** · Status: `active-progress`
 
 ## Plain statement
 

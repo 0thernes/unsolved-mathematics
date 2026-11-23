@@ -1,6 +1,6 @@
 # The Restriction Conjecture
 
-> **Atlas Rank #24** · CSS **67.667** · Field: *Harmonic Analysis* · Posed: **1967** · Status: `active-progress`
+> **Atlas Rank #24** · CSS **67.733** · Field: *Harmonic Analysis* · Posed: **1967** · Status: `active-progress`
 
 ## Plain statement
 

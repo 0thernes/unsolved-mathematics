@@ -1,6 +1,6 @@
 # The Borel Conjecture
 
-> **Atlas Rank #34** · CSS **64.1** · Field: *Geometric Topology* · Posed: **1953** · Status: `active-progress`
+> **Atlas Rank #38** · CSS **64.167** · Field: *Geometric Topology* · Posed: **1953** · Status: `active-progress`
 
 ## Plain statement
 

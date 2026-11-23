@@ -1,6 +1,6 @@
 # The Dixmier Conjecture
 
-> **Atlas Rank #45** · CSS **62.0** · Field: *Algebra* · Posed: **1968** · Status: `open`
+> **Atlas Rank #45** · CSS **62.067** · Field: *Algebra* · Posed: **1968** · Status: `open`
 
 ## Plain statement
 

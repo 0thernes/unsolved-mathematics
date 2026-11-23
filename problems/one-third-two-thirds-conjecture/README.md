@@ -1,6 +1,6 @@
 # The 1/3–2/3 Conjecture
 
-> **Atlas Rank #80** · CSS **49.8** · Field: *Order Theory* · Posed: **1968** · Status: `active-progress`
+> **Atlas Rank #101** · CSS **49.867** · Field: *Order Theory* · Posed: **1968** · Status: `active-progress`
 
 ## Plain statement
 

@@ -1,6 +1,6 @@
 # Brennan's Conjecture
 
-> **Atlas Rank #95** · CSS **53.333** · Field: *Complex Analysis* · Posed: **1978** · Status: `open`
+> **Atlas Rank #95** · CSS **53.4** · Field: *Complex Analysis* · Posed: **1978** · Status: `open`
 
 ## Plain statement
 

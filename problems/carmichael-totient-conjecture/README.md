@@ -1,6 +1,6 @@
 # Carmichael's Totient Conjecture
 
-> **Atlas Rank #77** · CSS **56.867** · Field: *Number Theory* · Posed: **1907** · Status: `open`
+> **Atlas Rank #77** · CSS **56.933** · Field: *Number Theory* · Posed: **1907** · Status: `open`
 
 ## Plain statement
 

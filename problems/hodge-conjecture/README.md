@@ -1,6 +1,6 @@
 # The Hodge Conjecture
 
-> **Atlas Rank #4** · CSS **79.9** · Field: *Algebraic Geometry* · Posed: **1950** · Status: `open`  · 🏛️ **Millennium Prize Problem**
+> **Atlas Rank #5** · CSS **79.967** · Field: *Algebraic Geometry* · Posed: **1950** · Status: `open`  · 🏛️ **Millennium Prize Problem**
 
 ## Plain statement
 

@@ -1,6 +1,6 @@
 # The Hadwiger Covering Conjecture
 
-> **Atlas Rank #62** · CSS **59.533** · Field: *Discrete Geometry* · Posed: **1957** · Status: `open`
+> **Atlas Rank #61** · CSS **59.6** · Field: *Discrete Geometry* · Posed: **1957** · Status: `open`
 
 ## Plain statement
 

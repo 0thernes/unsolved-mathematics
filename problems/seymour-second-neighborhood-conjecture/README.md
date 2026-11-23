@@ -1,6 +1,6 @@
 # Seymour's Second Neighborhood Conjecture
 
-> **Atlas Rank #79** · CSS **49.933** · Field: *Graph Theory* · Posed: **1990** · Status: `open`
+> **Atlas Rank #100** · CSS **50.0** · Field: *Graph Theory* · Posed: **1990** · Status: `open`
 
 ## Plain statement
 

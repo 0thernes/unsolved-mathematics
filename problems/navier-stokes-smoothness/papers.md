@@ -19,7 +19,7 @@ _The 25 most important papers. Each carries a verification flag._
 | 13 | 1984 | Strong $L^p$ solutions of the Navier–Stokes equation in $\mathbb{R}^m$ | Tosio Kato | foundational | 10.1007/BF01174182 | needs-verification |
 | 14 | 1996 | Geometric constraints on potentially singular solutions for the 3-D Euler equations | Constantin, Fefferman, Majda | modern | 10.1080/03605309608821224 | needs-verification |
 | 15 | 2000 | Existence and Smoothness of the Navier–Stokes Equation (Clay official statement) | Charles L. Fefferman | survey | — | high-confidence |
-| 16 | 2001 | $L_{3,\infty}$-solutions of the Navier–Stokes equations and backward uniqueness | Escauriaza, Seregin, Šverák | breakthrough | 10.1070/RM2003v058n02ABEH000609 | high-confidence |
+| 16 | 2003 | $L_{3,\infty}$-solutions of the Navier–Stokes equations and backward uniqueness | Escauriaza, Seregin, Šverák | breakthrough | 10.1070/RM2003v058n02ABEH000609 | verified |
 | 17 | 2001 | Well-posedness for the Navier–Stokes equations (in $BMO^{-1}$) | Herbert Koch, Daniel Tataru | breakthrough | 10.1006/aima.2000.1937 | high-confidence |
 | 18 | 1998 | A new proof of the Caffarelli–Kohn–Nirenberg theorem | Fang-Hua Lin | modern | 10.1002/(SICI)1097-0312(199803)51:3<241::AID-CPA2>3.0.CO;2-A | needs-verification |
 | 19 | 2002 | The Navier–Stokes Equations: A Classification of Flows and Exact Solutions | P. G. Drazin, N. Riley | expository | — | needs-verification |

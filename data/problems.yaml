@@ -10,7 +10,7 @@
 #
 #      CSS = 0.40 * difficulty
 #          + 0.30 * centrality
-#          + 0.20 * age_score          (age_score = clamp((2025 - year_posed)/3, 0, 100))
+#          + 0.20 * age_score          (age_score = clamp((2026 - year_posed)/3, 0, 100))
 #          + 0.10 * (100 - tractability)   (less tractable -> higher CSS)
 #
 #  Fields are validated against schema/problem.schema.json by scripts/validate.py
@@ -20,9 +20,9 @@
 
 meta:
   atlas_name: "The Unsolved Mathematics Atlas"
-  version: "0.1.0"
+  version: "0.3.0"
   maintainer: "0thernes"
-  updated: "2026-06-14"
+  updated: "2026-11-23"
   default_branch: "main"
   disclaimer: >
     Difficulty, centrality, age, and tractability scores are curated editorial
@@ -918,7 +918,7 @@ problems:
     tags: ["sofa-constant", "Gerver", "Baek", "corridor"]
 
   - slug: unit-distance-problem
-    title: "The Erdős Unit Distance Problem"
+    title: "The Erdős Unit Distance Problem (Disproved 2026)"
     field: "Combinatorial Geometry"
     subfields: ["Incidence Geometry", "Discrete Geometry"]
     year_posed: 1946
@@ -926,12 +926,14 @@ problems:
     millennium_prize: false
     statement_plain: >
       What is the maximum number of unit distances among n points in the plane?
-      Conjectured n^(1+o(1)); the best bounds remain far apart.
+      Erdős's n^(1+o(1)) conjecture was disproved in May 2026 via infinite class
+      field towers (arXiv:2605.20695), yielding >= n^(1+delta) unit distances;
+      determining the sharp extremal exponent in (1+delta, 4/3] remains open.
     difficulty: 84
     centrality: 52
-    tractability: 28
-    status: "open"
-    tags: ["incidences", "unit-distances", "Erdos", "Szemeredi-Trotter"]
+    tractability: 70
+    status: "recently-resolved"
+    tags: ["incidences", "unit-distances", "Erdos", "Szemeredi-Trotter", "disproved-2026"]
 
   - slug: falconer-distance-conjecture
     title: "The Falconer Distance Conjecture"

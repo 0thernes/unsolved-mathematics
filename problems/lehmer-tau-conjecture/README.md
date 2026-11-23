@@ -1,6 +1,6 @@
 # Lehmer's Conjecture on the Ramanujan Tau Function
 
-> **Atlas Rank #61** · CSS **56.9** · Field: *Number Theory* · Posed: **1947** · Status: `open`
+> **Atlas Rank #76** · CSS **56.967** · Field: *Number Theory* · Posed: **1947** · Status: `open`
 
 ## Plain statement
 

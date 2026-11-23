@@ -1,6 +1,6 @@
 # The Invariant Subspace Problem
 
-> **Atlas Rank #22** · CSS **66.5** · Field: *Functional Analysis* · Posed: **1935** · Status: `active-progress`
+> **Atlas Rank #31** · CSS **66.567** · Field: *Functional Analysis* · Posed: **1935** · Status: `active-progress`
 
 ## Plain statement
 

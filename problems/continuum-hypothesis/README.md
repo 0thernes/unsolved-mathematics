@@ -1,6 +1,6 @@
 # The Continuum Hypothesis
 
-> **Atlas Rank #9** · CSS **76.2** · Field: *Set Theory & Mathematical Logic* · Posed: **1878** · Status: `independent`
+> **Atlas Rank #10** · CSS **76.267** · Field: *Set Theory & Mathematical Logic* · Posed: **1878** · Status: `independent`
 
 ## Plain statement
 

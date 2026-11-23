@@ -1,6 +1,6 @@
 # The Littlewood Conjecture
 
-> **Atlas Rank #21** · CSS **66.933** · Field: *Diophantine Approximation* · Posed: **1930** · Status: `active-progress`
+> **Atlas Rank #29** · CSS **67.0** · Field: *Diophantine Approximation* · Posed: **1930** · Status: `active-progress`
 
 ## Plain statement
 

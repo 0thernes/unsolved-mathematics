@@ -1,6 +1,6 @@
 # The Lonely Runner Conjecture
 
-> **Atlas Rank #31** · CSS **55.267** · Field: *Number Theory / Combinatorics* · Posed: **1967** · Status: `active-progress`
+> **Atlas Rank #88** · CSS **55.333** · Field: *Number Theory / Combinatorics* · Posed: **1967** · Status: `active-progress`
 
 ## Plain statement
 

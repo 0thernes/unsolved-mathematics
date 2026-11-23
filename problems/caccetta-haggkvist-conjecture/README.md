@@ -1,6 +1,6 @@
 # The Caccetta–Häggkvist Conjecture
 
-> **Atlas Rank #45** · CSS **56.733** · Field: *Graph Theory* · Posed: **1978** · Status: `open`
+> **Atlas Rank #80** · CSS **56.8** · Field: *Graph Theory* · Posed: **1978** · Status: `open`
 
 ## Plain statement
 

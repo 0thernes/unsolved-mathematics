@@ -31,5 +31,6 @@ Identifiers are given only where confidence is high; otherwise "—". The Verify
 | 23 | 2022 | Approximate union-closed conjecture / sharpening Gilmer to $(3-\sqrt5)/2$ | Zachary Chase, Shachar Lovett | breakthrough | arXiv:2211.11689 | needs-verification |
 | 24 | 2022 | An optimization of the Gilmer bound for the union-closed sets conjecture | R. Alweiss, Y. Liu, M. Sawhney, K. Wu | breakthrough | arXiv:2211.11731 | needs-verification |
 | 25 | 2022 | A note on the union-closed sets conjecture (sharp constant) | Luke Pebody | modern | arXiv:2212.00658 | ai-suggested |
+| 26 | 2026 | Beyond Liu's 0.382709 threshold for the union-closed sets conjecture | Simone Costa, Ankan Sadhu | breakthrough | arXiv:2610.02295 | verified |
 
 Note on identifiers: the November 2022 entropy papers (rows 21–25) are recent, famous, and clustered; the Gilmer paper (row 21) is certain. The arXiv numbers attached to rows 22–25 are the plausible identifiers from that burst but are flagged for verification because several near-simultaneous notes shared similar titles and the exact id/author pairing should be confirmed. Older rows (1–20) are real works in the documented literature, but precise titles, years, and venues for several should be checked against a bibliographic source before citing — hence "—" identifiers and conservative flags rather than invented DOIs.

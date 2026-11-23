@@ -1,6 +1,6 @@
 # The Erdős–Straus Conjecture
 
-> **Atlas Rank #35** · CSS **52.933** · Field: *Number Theory* · Posed: **1948** · Status: `active-progress`
+> **Atlas Rank #97** · CSS **53.0** · Field: *Number Theory* · Posed: **1948** · Status: `active-progress`
 
 ## Plain statement
 

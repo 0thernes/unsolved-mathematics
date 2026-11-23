@@ -4,7 +4,7 @@ check_papers.py — Integrity gate for AI-assisted meta-analyses (run in CI).
 
 For every meta-analyses/<slug>.md, enforces the honesty invariants from
 docs/review/AI-META-REVIEW.md. A meta-analysis FAILS if it:
-  1. lacks parseable front matter, or it fails schema/review.schema.json
+  1. lacks parseable front matter, or fails schema/review.schema.json
   2. is not authored "Alexander Donahue" / typed ai-assisted-meta-analysis /
      peer_reviewed: false
   3. omits the required AI-generated / not-peer-reviewed banner
@@ -15,6 +15,7 @@ Exit 0 clean, 1 on any violation. Honesty is enforced mechanically, not trusted.
 """
 from __future__ import annotations
 
+import json
 import re
 import sys
 from pathlib import Path
@@ -37,7 +38,6 @@ BANNER_MARKERS = [
     "AI-generated",
     "not peer-reviewed",
 ]
-# Explicit overclaim phrases — asserting THIS problem is solved by this document.
 OVERCLAIM = [
     r"\bwe (?:have )?(?:hereby )?prove[ds]?\b.*\bconjecture\b",
     r"\bthis (?:paper|meta-analysis|document) (?:proves|resolves|solves)\b",
@@ -60,14 +60,33 @@ def front_matter(text: str):
 
 
 def load_validator():
-    try:
-        import json
-        import jsonschema  # type: ignore
+    import jsonschema  # type: ignore
 
-        schema = json.loads(SCHEMA.read_text(encoding="utf-8"))
-        return jsonschema.Draft202012Validator(schema)
-    except Exception:
-        return None
+    schema = json.loads(SCHEMA.read_text(encoding="utf-8"))
+    return jsonschema.Draft202012Validator(schema)
+
+
+def check_meta_analysis_text(rel: str, text: str, validator=None) -> list[str]:
+    issues: list[str] = []
+    fm, body = front_matter(text)
+    if fm is None:
+        return [f"{rel}: missing/invalid YAML front matter"]
+    if validator is not None:
+        for err in validator.iter_errors(fm):
+            issues.append(f"{rel}: front matter: {err.message}")
+    lower_body = body.lower()
+    for marker in BANNER_MARKERS:
+        if marker.lower() not in lower_body:
+            issues.append(f"{rel}: missing required banner phrase '{marker}'")
+    if "alexander donahue" not in lower_body and fm.get("author") != "Alexander Donahue":
+        issues.append(f"{rel}: missing author/accreditation (Alexander Donahue)")
+    if "ai review panel" not in lower_body:
+        issues.append(f"{rel}: missing '## AI Review Panel' section")
+    for pat in OVERCLAIM:
+        m = re.search(pat, body, re.IGNORECASE)
+        if m:
+            issues.append(f"{rel}: overclaim phrase detected: '{m.group(0)[:60]}'")
+    return issues
 
 
 def main() -> int:
@@ -75,7 +94,12 @@ def main() -> int:
         print("No meta-analyses/ directory yet — nothing to check.")
         return 0
 
-    validator = load_validator()
+    try:
+        validator = load_validator()
+    except Exception as exc:
+        print(f"ERROR: failed to load review schema validator: {exc}", file=sys.stderr)
+        return 1
+
     issues: list[str] = []
     checked = 0
 
@@ -83,29 +107,9 @@ def main() -> int:
         if md.name.lower() == "readme.md":
             continue
         checked += 1
-        rel = md.relative_to(ROOT)
+        rel = str(md.relative_to(ROOT))
         text = md.read_text(encoding="utf-8")
-        fm, body = front_matter(text)
-
-        if fm is None:
-            issues.append(f"{rel}: missing/invalid YAML front matter")
-            continue
-        if validator is not None:
-            for err in validator.iter_errors(fm):
-                issues.append(f"{rel}: front matter: {err.message}")
-
-        lower_body = body.lower()
-        for marker in BANNER_MARKERS:
-            if marker.lower() not in lower_body:
-                issues.append(f"{rel}: missing required banner phrase '{marker}'")
-        if "alexander donahue" not in lower_body and fm.get("author") != "Alexander Donahue":
-            issues.append(f"{rel}: missing author/accreditation (Alexander Donahue)")
-        if "ai review panel" not in lower_body:
-            issues.append(f"{rel}: missing '## AI Review Panel' section")
-        for pat in OVERCLAIM:
-            m = re.search(pat, body, re.IGNORECASE)
-            if m:
-                issues.append(f"{rel}: overclaim phrase detected: '{m.group(0)[:60]}'")
+        issues.extend(check_meta_analysis_text(rel, text, validator))
 
     if issues:
         print("META-ANALYSIS INTEGRITY CHECK FAILED:\n")

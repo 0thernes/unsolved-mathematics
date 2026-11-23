@@ -14,7 +14,12 @@ _Where the problem stands and what a resolution would require._
 
 ## Strongest conditional results
 
-- **Prodi–Serrin–Ladyzhenskaya criteria:** $u\in L^p_t L^q_x$ with $\tfrac2p+\tfrac3q\le 1$ implies smoothness; the critical endpoint $L^\infty_t L^3_x$ is included (Escauriaza–Seregin–Šverák 2001).
+- **Prodi–Serrin–Ladyzhenskaya criteria:** $u\in L^p_t L^q_x$ with $\tfrac2p+\tfrac3q\le 1$ implies smoothness; the critical endpoint $L^\infty_t L^3_x$ is included (Escauriaza–Seregin–Šverák 2003, DOI `10.1070/RM2003v058n02ABEH000609`).
+
+## November 2026 frontier watch (claimed Lean-formalized blow-up — pending full community audit)
+
+- In November 2026, Levent Alpöge, Tristan Buckmaster, and Matei Coiculescu released an AI-assisted, Lean-formalized proof of finite-time blow-up for the **unforced 3D incompressible Euler equations**, alongside a companion Lean-formalized claim by Alpöge and Buckmaster targeting finite-time blow-up for the **unforced 3D Navier–Stokes equations**.
+- As Terence Tao noted in his November 20, 2026 blog commentary (*"Unforced Euler singularity, unforced Navier-Stokes singularity, and the Generalized Riemann Hypothesis"*), while the Euler construction is comparatively digested, independent auditing of the large Lean formalizations—especially checking for representational or translation gaps between the informal PDE formulation and the formal Lean statements—is ongoing. Until independent peer verification and mathematical consensus conclude, the Clay Millennium Prize Problem remains recorded as **`open`**.
 - **Geometric criteria** (Constantin–Fefferman): local coherence of the vorticity direction depletes the nonlinearity and prevents blow-up.
 
 Each conditional theorem assumes control at the *critical* scaling — precisely the quantity the supercritical energy cannot supply unconditionally. This gap is the heart of the problem.

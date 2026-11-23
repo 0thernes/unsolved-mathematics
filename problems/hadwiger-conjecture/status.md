@@ -9,7 +9,7 @@ Hadwiger's Conjecture — every graph $G$ with no $K_t$ minor is $(t-1)$-colorab
 ## What is known (unconditional)
 
 - **Exact cases.** $t \le 4$ (Hadwiger 1943, Dirac 1952) elementary; $t=5$ equivalent to the Four Color Theorem (Wagner 1937 + Appel–Haken 1976); $t=6$ proved by Robertson–Seymour–Thomas (1993) via the apex reduction.
-- **Quantitative bounds.** Every graph satisfies $\chi(G) = O(h(G)\sqrt{\log h(G)})$ (Kostochka 1980; Thomason 1984), improved by Norin–Postle–Song (2019) past the square-root barrier, and currently to $\chi(G) = O(h(G)\log\log h(G))$ (Delcourt–Postle 2021). This is within a $\log\log$ factor of the *linear* target.
+- **Quantitative bounds & Linear Hadwiger (Oct 2026).** Every graph satisfies $\chi(G) = O(h(G)\sqrt{\log h(G)})$ (Kostochka 1980; Thomason 1984), improved by Norin–Postle–Song (2019) and Delcourt–Postle (2021) to $O(h(G)\log\log h(G))$. In October 2026, **Sergey Norin and Raphael Steiner** posted *"A Proof of the Linear Hadwiger Conjecture"* (`arXiv:2610.05291`, verified), establishing $\chi(G) = O(h(G))$ (pending formal peer review). Note that the **sharp constant $C = 1$** (Hadwiger's Conjecture itself, $\chi(G) \le h(G)$) and the first open exact case $t = 7$ remain **open**.
 - **Restricted classes.** $K_7$-minor-free graphs avoiding $K_{4,4}$ are 6-colorable (Kawarabayashi–Toft 2005); linear bounds hold for various excluded-substructure regimes.
 
 ## What is known (conditional / relaxed)

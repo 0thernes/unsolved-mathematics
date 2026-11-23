@@ -154,7 +154,7 @@
   },
   {
     "slug": "bombieri-lang-conjecture",
-    "rank": 26,
+    "rank": 25,
     "title": "The Bombieri–Lang Conjecture",
     "authored": {
       "history": true,
@@ -273,7 +273,7 @@
   },
   {
     "slug": "catalan-dickson-conjecture",
-    "rank": 70,
+    "rank": 69,
     "title": "The Catalan–Dickson Conjecture (Aliquot Sequences)",
     "authored": {
       "history": true,
@@ -290,7 +290,7 @@
   },
   {
     "slug": "cherlin-zilber-conjecture",
-    "rank": 64,
+    "rank": 63,
     "title": "The Cherlin–Zilber Algebraicity Conjecture",
     "authored": {
       "history": true,
@@ -386,7 +386,7 @@
       "mathematicians": true,
       "status": true
     },
-    "papers": 25,
+    "papers": 26,
     "mathematicians": 10,
     "complete": true
   },
@@ -494,7 +494,7 @@
   },
   {
     "slug": "falconer-distance-conjecture",
-    "rank": 60,
+    "rank": 59,
     "title": "The Falconer Distance Conjecture",
     "authored": {
       "history": true,
@@ -528,7 +528,7 @@
   },
   {
     "slug": "four-exponentials-conjecture",
-    "rank": 69,
+    "rank": 68,
     "title": "The Four Exponentials Conjecture",
     "authored": {
       "history": true,
@@ -647,7 +647,7 @@
   },
   {
     "slug": "greenberg-conjecture",
-    "rank": 67,
+    "rank": 66,
     "title": "Greenberg's Conjecture",
     "authored": {
       "history": true,
@@ -709,13 +709,13 @@
       "mathematicians": true,
       "status": true
     },
-    "papers": 25,
+    "papers": 26,
     "mathematicians": 10,
     "complete": true
   },
   {
     "slug": "hadwiger-covering-conjecture",
-    "rank": 62,
+    "rank": 61,
     "title": "The Hadwiger Covering Conjecture",
     "authored": {
       "history": true,
@@ -800,7 +800,7 @@
   },
   {
     "slug": "hilbert-smith-conjecture",
-    "rank": 56,
+    "rank": 55,
     "title": "The Hilbert–Smith Conjecture",
     "authored": {
       "history": true,
@@ -834,7 +834,7 @@
   },
   {
     "slug": "inscribed-square-problem",
-    "rank": 59,
+    "rank": 58,
     "title": "The Inscribed Square Problem (Toeplitz)",
     "authored": {
       "history": true,
@@ -913,7 +913,7 @@
       "mathematicians": true,
       "status": true
     },
-    "papers": 25,
+    "papers": 26,
     "mathematicians": 10,
     "complete": true
   },
@@ -936,7 +936,7 @@
   },
   {
     "slug": "kothe-conjecture",
-    "rank": 65,
+    "rank": 64,
     "title": "Köthe's Conjecture",
     "authored": {
       "history": true,
@@ -953,7 +953,7 @@
   },
   {
     "slug": "kpz-universality",
-    "rank": 55,
+    "rank": 54,
     "title": "The KPZ Universality Conjecture",
     "authored": {
       "history": true,
@@ -987,7 +987,7 @@
   },
   {
     "slug": "lehmer-mahler-measure-conjecture",
-    "rank": 53,
+    "rank": 52,
     "title": "Lehmer's Mahler Measure Conjecture",
     "authored": {
       "history": true,
@@ -1066,7 +1066,7 @@
       "mathematicians": true,
       "status": true
     },
-    "papers": 25,
+    "papers": 28,
     "mathematicians": 10,
     "complete": true
   },
@@ -1157,7 +1157,7 @@
   },
   {
     "slug": "novikov-conjecture",
-    "rank": 25,
+    "rank": 26,
     "title": "The Novikov Conjecture",
     "authored": {
       "history": true,
@@ -1225,7 +1225,7 @@
   },
   {
     "slug": "palis-conjecture",
-    "rank": 58,
+    "rank": 57,
     "title": "The Palis Conjecture (Finitude / Density of Attractors)",
     "authored": {
       "history": true,
@@ -1242,7 +1242,7 @@
   },
   {
     "slug": "pillai-conjecture",
-    "rank": 61,
+    "rank": 60,
     "title": "Pillai's Conjecture",
     "authored": {
       "history": true,
@@ -1321,7 +1321,7 @@
       "mathematicians": true,
       "status": true
     },
-    "papers": 25,
+    "papers": 26,
     "mathematicians": 10,
     "complete": true
   },
@@ -1344,7 +1344,7 @@
   },
   {
     "slug": "sarnak-mobius-conjecture",
-    "rank": 66,
+    "rank": 65,
     "title": "Sarnak's Möbius Disjointness Conjecture",
     "authored": {
       "history": true,
@@ -1412,7 +1412,7 @@
   },
   {
     "slug": "self-avoiding-walk",
-    "rank": 51,
+    "rank": 50,
     "title": "Self-Avoiding Walk (Scaling & Connective Constant)",
     "authored": {
       "history": true,
@@ -1440,7 +1440,7 @@
       "mathematicians": true,
       "status": true
     },
-    "papers": 25,
+    "papers": 27,
     "mathematicians": 10,
     "complete": true
   },
@@ -1514,7 +1514,7 @@
   },
   {
     "slug": "sunflower-conjecture",
-    "rank": 68,
+    "rank": 67,
     "title": "The Sunflower Conjecture",
     "authored": {
       "history": true,
@@ -1525,7 +1525,7 @@
       "mathematicians": true,
       "status": true
     },
-    "papers": 25,
+    "papers": 26,
     "mathematicians": 10,
     "complete": true
   },
@@ -1610,7 +1610,7 @@
       "mathematicians": true,
       "status": true
     },
-    "papers": 25,
+    "papers": 26,
     "mathematicians": 10,
     "complete": true
   },
@@ -1633,8 +1633,8 @@
   },
   {
     "slug": "unit-distance-problem",
-    "rank": 50,
-    "title": "The Erdős Unit Distance Problem",
+    "rank": 70,
+    "title": "The Erdős Unit Distance Problem (Disproved 2026)",
     "authored": {
       "history": true,
       "originator": true,
@@ -1644,13 +1644,13 @@
       "mathematicians": true,
       "status": true
     },
-    "papers": 25,
+    "papers": 26,
     "mathematicians": 10,
     "complete": true
   },
   {
     "slug": "vaught-conjecture",
-    "rank": 63,
+    "rank": 62,
     "title": "Vaught's Conjecture",
     "authored": {
       "history": true,
@@ -1701,7 +1701,7 @@
   },
   {
     "slug": "weinstein-conjecture",
-    "rank": 54,
+    "rank": 53,
     "title": "The Weinstein Conjecture",
     "authored": {
       "history": true,
@@ -1718,7 +1718,7 @@
   },
   {
     "slug": "whitehead-asphericity-conjecture",
-    "rank": 52,
+    "rank": 51,
     "title": "The Whitehead Asphericity Conjecture",
     "authored": {
       "history": true,
@@ -1752,7 +1752,7 @@
   },
   {
     "slug": "zariski-cancellation-problem",
-    "rank": 57,
+    "rank": 56,
     "title": "The Zariski Cancellation Problem",
     "authored": {
       "history": true,

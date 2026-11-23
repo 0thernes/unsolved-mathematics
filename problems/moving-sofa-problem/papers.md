@@ -20,8 +20,8 @@ The moving sofa problem has a comparatively small primary literature: a handful 
 | 12 | 2017 | Differential equations and exact solutions in the moving sofa problem | Dan Romik | breakthrough | 10.1080/10586458.2016.1270858 | needs-verification |
 | 13 | 2018 | Improved Upper Bounds in the Moving Sofa Problem | Yoav Kallus, Dan Romik | breakthrough | — | high-confidence |
 | 14 | 2018 | (arXiv preprint) Improved upper bounds in the moving sofa problem | Yoav Kallus, Dan Romik | breakthrough | arXiv:1706.06630 | needs-verification |
-| 15 | 2024 | Optimality of Gerver's Sofa | Jineon Baek | breakthrough | arXiv:2411.19826 | needs-verification |
-| 16 | 2024 | (companion / computational appendix to the optimality proof) | Jineon Baek | computational | — | ai-suggested |
+| 15 | 2024 | Optimality of Gerver's Sofa | Jineon Baek | breakthrough | arXiv:2411.19826 | verified |
+| 16 | 2026 | Certified Geometry and Admissible Motion of Gerver's Sofa | Dawid Trela | computational | arXiv:2610.13955 | verified |
 | 17 | 1995 | Moving a sofa: notes and a numerical study | (attributed; corridor variants) | computational | — | ai-suggested |
 | 18 | 2017 | The moving sofa problem (blog/exposition with figures) | Dan Romik | expository | — | needs-verification |
 | 19 | 2019 | Surveys on packing and moving problems (sofa section) | (collected authors) | survey | — | ai-suggested |

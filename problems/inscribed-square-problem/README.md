@@ -1,6 +1,6 @@
 # The Inscribed Square Problem (Toeplitz)
 
-> **Atlas Rank #25** · CSS **60.2** · Field: *Geometric Topology* · Posed: **1911** · Status: `active-progress`
+> **Atlas Rank #58** · CSS **60.267** · Field: *Geometric Topology* · Posed: **1911** · Status: `active-progress`
 
 ## Plain statement
 

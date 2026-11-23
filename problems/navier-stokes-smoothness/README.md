@@ -1,6 +1,6 @@
 # Navier–Stokes Existence and Smoothness
 
-> **Atlas Rank #11** · CSS **74.667** · Field: *Partial Differential Equations* · Posed: **2000** · Status: `open`  · 🏛️ **Millennium Prize Problem**
+> **Atlas Rank #13** · CSS **74.733** · Field: *Partial Differential Equations* · Posed: **2000** · Status: `open`  · 🏛️ **Millennium Prize Problem**
 
 ## Plain statement
 

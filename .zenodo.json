@@ -1,0 +1,24 @@
+{
+  "title": "The Unsolved Mathematics Atlas",
+  "description": "A reproducible, ranked, research-grade dossier of 106 open mathematical problems across 38 fields, paired with a standalone multi-kernel Lean 4.35.0 formal verification core, automated primary-source citation auditing, and a deterministic RAG corpus. Independent research; not peer-reviewed.",
+  "upload_type": "dataset",
+  "creators": [
+    {
+      "name": "Donahue, Alexander S.",
+      "orcid": "0009-0006-8168-9648"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "keywords": [
+    "mathematics",
+    "open problems",
+    "conjectures",
+    "Lean 4",
+    "formal verification",
+    "Collatz conjecture",
+    "Erdős-Straus conjecture",
+    "Lonely Runner conjecture",
+    "retrieval-augmented generation"
+  ],
+  "notes": "Dual-licensed: prose/data under CC BY 4.0 (LICENSE), code and Lean 4 formal proofs under MIT (LICENSE-CODE). Human author directed conceptualization, scoping, formal statement-fidelity auditing, and curation; AI tools were used as disclosed drafting/engineering instruments (see CLAIMS.md and formal/formalization.yaml)."
+}

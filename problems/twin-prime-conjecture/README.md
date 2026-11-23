@@ -1,6 +1,6 @@
 # The Twin Prime Conjecture
 
-> **Atlas Rank #5** · CSS **79.533** · Field: *Number Theory* · Posed: **1849** · Status: `active-progress`
+> **Atlas Rank #6** · CSS **79.6** · Field: *Number Theory* · Posed: **1849** · Status: `active-progress`
 
 ## Plain statement
 

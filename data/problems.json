@@ -1,9 +1,9 @@
 {
   "meta": {
     "atlas_name": "The Unsolved Mathematics Atlas",
-    "version": "0.1.0",
+    "version": "0.3.0",
     "maintainer": "0thernes",
-    "updated": "2026-06-14",
+    "updated": "2026-11-23",
     "default_branch": "main",
     "disclaimer": "Difficulty, centrality, age, and tractability scores are curated editorial estimates intended to produce a useful, reproducible ordering — NOT objective measurements. Paper and people lists are research scaffolding: each is marked with a verification status and MUST be checked against primary sources before citation. Nothing here asserts a problem is solved unless explicitly stated.\n"
   },
@@ -34,7 +34,7 @@
         "RH"
       ],
       "rank": 1,
-      "css": 89.867
+      "css": 89.933
     },
     {
       "slug": "goldbach-conjecture",
@@ -61,7 +61,7 @@
         "sieve"
       ],
       "rank": 2,
-      "css": 87.867
+      "css": 87.933
     },
     {
       "slug": "grand-riemann-hypothesis",
@@ -90,7 +90,7 @@
         "automorphic"
       ],
       "rank": 3,
-      "css": 84.9
+      "css": 84.967
     },
     {
       "slug": "p-versus-np",
@@ -120,7 +120,7 @@
         "cryptography"
       ],
       "rank": 4,
-      "css": 81.9
+      "css": 81.967
     },
     {
       "slug": "hodge-conjecture",
@@ -147,7 +147,7 @@
         "complex-varieties"
       ],
       "rank": 5,
-      "css": 79.9
+      "css": 79.967
     },
     {
       "slug": "twin-prime-conjecture",
@@ -175,7 +175,7 @@
         "bounded-gaps"
       ],
       "rank": 6,
-      "css": 79.533
+      "css": 79.6
     },
     {
       "slug": "birch-swinnerton-dyer",
@@ -204,7 +204,7 @@
         "BSD"
       ],
       "rank": 7,
-      "css": 78.8
+      "css": 78.867
     },
     {
       "slug": "odd-perfect-numbers",
@@ -284,7 +284,7 @@
         "large-cardinals"
       ],
       "rank": 10,
-      "css": 76.2
+      "css": 76.267
     },
     {
       "slug": "hilbert-sixteenth-problem",
@@ -311,7 +311,7 @@
         "dynamics"
       ],
       "rank": 11,
-      "css": 76.033
+      "css": 76.1
     },
     {
       "slug": "yang-mills-mass-gap",
@@ -342,7 +342,7 @@
         "physics"
       ],
       "rank": 12,
-      "css": 75.267
+      "css": 75.333
     },
     {
       "slug": "navier-stokes-smoothness",
@@ -372,7 +372,7 @@
         "turbulence"
       ],
       "rank": 13,
-      "css": 74.667
+      "css": 74.733
     },
     {
       "slug": "abc-conjecture",
@@ -400,7 +400,7 @@
         "IUT"
       ],
       "rank": 14,
-      "css": 73.767
+      "css": 73.833
     },
     {
       "slug": "tate-conjecture",
@@ -428,7 +428,7 @@
         "motives"
       ],
       "rank": 15,
-      "css": 72.533
+      "css": 72.6
     },
     {
       "slug": "legendre-conjecture",
@@ -453,7 +453,7 @@
         "Legendre"
       ],
       "rank": 16,
-      "css": 71.267
+      "css": 71.333
     },
     {
       "slug": "polignac-conjecture",
@@ -478,7 +478,7 @@
         "bounded-gaps"
       ],
       "rank": 17,
-      "css": 70.233
+      "css": 70.3
     },
     {
       "slug": "vojta-conjecture",
@@ -506,7 +506,7 @@
         "Nevanlinna"
       ],
       "rank": 18,
-      "css": 70.233
+      "css": 70.3
     },
     {
       "slug": "inverse-galois-problem",
@@ -534,7 +534,7 @@
         "Hilbert-irreducibility"
       ],
       "rank": 19,
-      "css": 69.867
+      "css": 69.933
     },
     {
       "slug": "hardy-littlewood-k-tuple",
@@ -562,7 +562,7 @@
         "density"
       ],
       "rank": 20,
-      "css": 69.5
+      "css": 69.567
     },
     {
       "slug": "collatz-conjecture",
@@ -588,7 +588,7 @@
         "dynamics"
       ],
       "rank": 21,
-      "css": 69.267
+      "css": 69.333
     },
     {
       "slug": "kakeya-conjecture",
@@ -617,7 +617,7 @@
         "Wang-Zahl"
       ],
       "rank": 22,
-      "css": 69.1
+      "css": 69.167
     },
     {
       "slug": "jacobian-conjecture",
@@ -643,7 +643,7 @@
         "Keller"
       ],
       "rank": 23,
-      "css": 68.333
+      "css": 68.4
     },
     {
       "slug": "restriction-conjecture",
@@ -670,35 +670,7 @@
         "polynomial-method"
       ],
       "rank": 24,
-      "css": 67.667
-    },
-    {
-      "slug": "novikov-conjecture",
-      "title": "The Novikov Conjecture",
-      "field": "Geometric Topology",
-      "subfields": [
-        "K-theory",
-        "Surgery Theory",
-        "Coarse Geometry"
-      ],
-      "year_posed": 1965,
-      "originators": [
-        "Sergei Novikov"
-      ],
-      "millennium_prize": false,
-      "statement_plain": "The higher signatures of a closed oriented manifold are homotopy invariants, for every discrete group appearing as its fundamental group.\n",
-      "difficulty": 89,
-      "centrality": 68,
-      "tractability": 25,
-      "status": "active-progress",
-      "tags": [
-        "higher-signatures",
-        "K-theory",
-        "assembly-map",
-        "groups"
-      ],
-      "rank": 25,
-      "css": 67.5
+      "css": 67.733
     },
     {
       "slug": "bombieri-lang-conjecture",
@@ -725,8 +697,36 @@
         "Mordell",
         "Zariski-density"
       ],
+      "rank": 25,
+      "css": 67.567
+    },
+    {
+      "slug": "novikov-conjecture",
+      "title": "The Novikov Conjecture",
+      "field": "Geometric Topology",
+      "subfields": [
+        "K-theory",
+        "Surgery Theory",
+        "Coarse Geometry"
+      ],
+      "year_posed": 1965,
+      "originators": [
+        "Sergei Novikov"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "The higher signatures of a closed oriented manifold are homotopy invariants, for every discrete group appearing as its fundamental group.\n",
+      "difficulty": 89,
+      "centrality": 68,
+      "tractability": 25,
+      "status": "active-progress",
+      "tags": [
+        "higher-signatures",
+        "K-theory",
+        "assembly-map",
+        "groups"
+      ],
       "rank": 26,
-      "css": 67.5
+      "css": 67.567
     },
     {
       "slug": "bunyakovsky-conjecture",
@@ -751,7 +751,7 @@
         "Hardy-Littlewood"
       ],
       "rank": 27,
-      "css": 67.3
+      "css": 67.367
     },
     {
       "slug": "hadwiger-conjecture",
@@ -777,7 +777,7 @@
         "four-color"
       ],
       "rank": 28,
-      "css": 67.067
+      "css": 67.133
     },
     {
       "slug": "littlewood-conjecture",
@@ -804,7 +804,7 @@
         "dynamics"
       ],
       "rank": 29,
-      "css": 66.933
+      "css": 67.0
     },
     {
       "slug": "schinzel-hypothesis-h",
@@ -832,7 +832,7 @@
         "Bateman-Horn"
       ],
       "rank": 30,
-      "css": 66.667
+      "css": 66.733
     },
     {
       "slug": "invariant-subspace-problem",
@@ -857,7 +857,7 @@
         "invariant-subspaces"
       ],
       "rank": 31,
-      "css": 66.5
+      "css": 66.567
     },
     {
       "slug": "bochner-riesz-conjecture",
@@ -885,7 +885,7 @@
         "Carleson-Sjolin"
       ],
       "rank": 32,
-      "css": 66.333
+      "css": 66.4
     },
     {
       "slug": "schanuel-conjecture",
@@ -911,7 +911,7 @@
         "model-theory"
       ],
       "rank": 33,
-      "css": 65.833
+      "css": 65.9
     },
     {
       "slug": "smooth-4d-poincare-conjecture",
@@ -939,7 +939,7 @@
         "gauge-theory"
       ],
       "rank": 34,
-      "css": 65.467
+      "css": 65.533
     },
     {
       "slug": "fontaine-mazur-conjecture",
@@ -968,7 +968,7 @@
         "Langlands"
       ],
       "rank": 35,
-      "css": 65.4
+      "css": 65.467
     },
     {
       "slug": "baum-connes-conjecture",
@@ -997,7 +997,7 @@
         "Gromov"
       ],
       "rank": 36,
-      "css": 64.667
+      "css": 64.733
     },
     {
       "slug": "zilber-pink-conjecture",
@@ -1026,7 +1026,7 @@
         "o-minimal"
       ],
       "rank": 37,
-      "css": 64.333
+      "css": 64.4
     },
     {
       "slug": "borel-conjecture",
@@ -1053,7 +1053,7 @@
         "surgery"
       ],
       "rank": 38,
-      "css": 64.1
+      "css": 64.167
     },
     {
       "slug": "section-conjecture",
@@ -1080,7 +1080,7 @@
         "Grothendieck"
       ],
       "rank": 39,
-      "css": 64.1
+      "css": 64.167
     },
     {
       "slug": "unique-games-conjecture",
@@ -1108,7 +1108,7 @@
         "hardness"
       ],
       "rank": 40,
-      "css": 64.033
+      "css": 64.1
     },
     {
       "slug": "elliott-halberstam-conjecture",
@@ -1136,7 +1136,7 @@
         "bounded-gaps"
       ],
       "rank": 41,
-      "css": 64.0
+      "css": 64.067
     },
     {
       "slug": "mandelbrot-locally-connected",
@@ -1164,7 +1164,7 @@
         "hyperbolicity"
       ],
       "rank": 42,
-      "css": 63.667
+      "css": 63.733
     },
     {
       "slug": "chowla-conjecture",
@@ -1192,7 +1192,7 @@
         "Sarnak"
       ],
       "rank": 43,
-      "css": 63.6
+      "css": 63.667
     },
     {
       "slug": "arnold-diffusion",
@@ -1219,7 +1219,7 @@
         "Mather-theory"
       ],
       "rank": 44,
-      "css": 62.867
+      "css": 62.933
     },
     {
       "slug": "dixmier-conjecture",
@@ -1246,7 +1246,7 @@
         "Tsuchimoto"
       ],
       "rank": 45,
-      "css": 62.0
+      "css": 62.067
     },
     {
       "slug": "montgomery-pair-correlation",
@@ -1274,7 +1274,7 @@
         "RH"
       ],
       "rank": 46,
-      "css": 61.967
+      "css": 62.033
     },
     {
       "slug": "birkhoff-conjecture",
@@ -1301,7 +1301,7 @@
         "ellipses"
       ],
       "rank": 47,
-      "css": 61.933
+      "css": 62.0
     },
     {
       "slug": "furstenberg-conjecture",
@@ -1328,7 +1328,7 @@
         "entropy"
       ],
       "rank": 48,
-      "css": 61.867
+      "css": 61.933
     },
     {
       "slug": "artin-primitive-root-conjecture",
@@ -1355,34 +1355,7 @@
         "GRH"
       ],
       "rank": 49,
-      "css": 61.833
-    },
-    {
-      "slug": "unit-distance-problem",
-      "title": "The Erdős Unit Distance Problem",
-      "field": "Combinatorial Geometry",
-      "subfields": [
-        "Incidence Geometry",
-        "Discrete Geometry"
-      ],
-      "year_posed": 1946,
-      "originators": [
-        "Paul Erdős"
-      ],
-      "millennium_prize": false,
-      "statement_plain": "What is the maximum number of unit distances among n points in the plane? Conjectured n^(1+o(1)); the best bounds remain far apart.\n",
-      "difficulty": 84,
-      "centrality": 52,
-      "tractability": 28,
-      "status": "open",
-      "tags": [
-        "incidences",
-        "unit-distances",
-        "Erdos",
-        "Szemeredi-Trotter"
-      ],
-      "rank": 50,
-      "css": 61.667
+      "css": 61.9
     },
     {
       "slug": "self-avoiding-walk",
@@ -1409,8 +1382,8 @@
         "SLE",
         "Duminil-Copin"
       ],
-      "rank": 51,
-      "css": 61.6
+      "rank": 50,
+      "css": 61.667
     },
     {
       "slug": "whitehead-asphericity-conjecture",
@@ -1436,8 +1409,8 @@
         "CW",
         "group-theory"
       ],
-      "rank": 52,
-      "css": 61.4
+      "rank": 51,
+      "css": 61.467
     },
     {
       "slug": "lehmer-mahler-measure-conjecture",
@@ -1464,8 +1437,8 @@
         "Lehmer-number",
         "Salem"
       ],
-      "rank": 53,
-      "css": 61.333
+      "rank": 52,
+      "css": 61.4
     },
     {
       "slug": "weinstein-conjecture",
@@ -1491,8 +1464,8 @@
         "Taubes",
         "ECH"
       ],
-      "rank": 54,
-      "css": 60.967
+      "rank": 53,
+      "css": 61.033
     },
     {
       "slug": "kpz-universality",
@@ -1521,8 +1494,8 @@
         "regularity-structures",
         "universality"
       ],
-      "rank": 55,
-      "css": 60.9
+      "rank": 54,
+      "css": 60.967
     },
     {
       "slug": "hilbert-smith-conjecture",
@@ -1549,8 +1522,8 @@
         "Lie-groups",
         "manifolds"
       ],
-      "rank": 56,
-      "css": 60.733
+      "rank": 55,
+      "css": 60.8
     },
     {
       "slug": "zariski-cancellation-problem",
@@ -1576,8 +1549,8 @@
         "Gupta",
         "automorphisms"
       ],
-      "rank": 57,
-      "css": 60.667
+      "rank": 56,
+      "css": 60.733
     },
     {
       "slug": "palis-conjecture",
@@ -1603,8 +1576,8 @@
         "SRB-measures",
         "Palis-program"
       ],
-      "rank": 58,
-      "css": 60.4
+      "rank": 57,
+      "css": 60.467
     },
     {
       "slug": "inscribed-square-problem",
@@ -1629,8 +1602,8 @@
         "square-peg",
         "topology"
       ],
-      "rank": 59,
-      "css": 60.2
+      "rank": 58,
+      "css": 60.267
     },
     {
       "slug": "falconer-distance-conjecture",
@@ -1656,8 +1629,8 @@
         "Kakeya",
         "Guth-Iosevich-Ou-Wang"
       ],
-      "rank": 60,
-      "css": 59.967
+      "rank": 59,
+      "css": 60.033
     },
     {
       "slug": "pillai-conjecture",
@@ -1683,8 +1656,8 @@
         "abc",
         "Diophantine"
       ],
-      "rank": 61,
-      "css": 59.767
+      "rank": 60,
+      "css": 59.833
     },
     {
       "slug": "hadwiger-covering-conjecture",
@@ -1713,8 +1686,8 @@
         "homothets",
         "illumination"
       ],
-      "rank": 62,
-      "css": 59.533
+      "rank": 61,
+      "css": 59.6
     },
     {
       "slug": "vaught-conjecture",
@@ -1740,8 +1713,8 @@
         "topological-Vaught",
         "Borel"
       ],
-      "rank": 63,
-      "css": 59.267
+      "rank": 62,
+      "css": 59.333
     },
     {
       "slug": "cherlin-zilber-conjecture",
@@ -1768,8 +1741,8 @@
         "classification",
         "model-theory"
       ],
-      "rank": 64,
-      "css": 59.067
+      "rank": 63,
+      "css": 59.133
     },
     {
       "slug": "kothe-conjecture",
@@ -1795,8 +1768,8 @@
         "noncommutative",
         "Amitsur"
       ],
-      "rank": 65,
-      "css": 59.033
+      "rank": 64,
+      "css": 59.1
     },
     {
       "slug": "sarnak-mobius-conjecture",
@@ -1822,8 +1795,8 @@
         "disjointness",
         "Chowla"
       ],
-      "rank": 66,
-      "css": 58.5
+      "rank": 65,
+      "css": 58.567
     },
     {
       "slug": "greenberg-conjecture",
@@ -1849,8 +1822,8 @@
         "cyclotomic",
         "class-groups"
       ],
-      "rank": 67,
-      "css": 58.467
+      "rank": 66,
+      "css": 58.533
     },
     {
       "slug": "sunflower-conjecture",
@@ -1876,8 +1849,8 @@
         "Erdos-Rado",
         "Alweiss-Lovett-Wu-Zhang"
       ],
-      "rank": 68,
-      "css": 58.233
+      "rank": 67,
+      "css": 58.3
     },
     {
       "slug": "four-exponentials-conjecture",
@@ -1905,8 +1878,8 @@
         "six-exponentials",
         "logarithms"
       ],
-      "rank": 69,
-      "css": 58.1
+      "rank": 68,
+      "css": 58.167
     },
     {
       "slug": "catalan-dickson-conjecture",
@@ -1933,8 +1906,36 @@
         "Guy-Selfridge",
         "iteration"
       ],
+      "rank": 69,
+      "css": 58.0
+    },
+    {
+      "slug": "unit-distance-problem",
+      "title": "The Erdős Unit Distance Problem (Disproved 2026)",
+      "field": "Combinatorial Geometry",
+      "subfields": [
+        "Incidence Geometry",
+        "Discrete Geometry"
+      ],
+      "year_posed": 1946,
+      "originators": [
+        "Paul Erdős"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "What is the maximum number of unit distances among n points in the plane? Erdős's n^(1+o(1)) conjecture was disproved in May 2026 via infinite class field towers (arXiv:2605.20695), yielding >= n^(1+delta) unit distances; determining the sharp extremal exponent in (1+delta, 4/3] remains open.\n",
+      "difficulty": 84,
+      "centrality": 52,
+      "tractability": 70,
+      "status": "recently-resolved",
+      "tags": [
+        "incidences",
+        "unit-distances",
+        "Erdos",
+        "Szemeredi-Trotter",
+        "disproved-2026"
+      ],
       "rank": 70,
-      "css": 57.933
+      "css": 57.533
     },
     {
       "slug": "volume-conjecture",
@@ -1962,7 +1963,7 @@
         "quantum-invariants"
       ],
       "rank": 71,
-      "css": 57.467
+      "css": 57.533
     },
     {
       "slug": "hadwiger-nelson-problem",
@@ -1990,7 +1991,7 @@
         "unit-distance"
       ],
       "rank": 72,
-      "css": 57.3
+      "css": 57.367
     },
     {
       "slug": "hadamard-matrix-conjecture",
@@ -2017,7 +2018,7 @@
         "orthogonal"
       ],
       "rank": 73,
-      "css": 57.1
+      "css": 57.167
     },
     {
       "slug": "slice-ribbon-conjecture",
@@ -2044,7 +2045,7 @@
         "concordance"
       ],
       "rank": 74,
-      "css": 57.0
+      "css": 57.067
     },
     {
       "slug": "cycle-double-cover-conjecture",
@@ -2072,7 +2073,7 @@
         "embeddings"
       ],
       "rank": 75,
-      "css": 56.967
+      "css": 57.033
     },
     {
       "slug": "lehmer-tau-conjecture",
@@ -2099,7 +2100,7 @@
         "non-vanishing"
       ],
       "rank": 76,
-      "css": 56.9
+      "css": 56.967
     },
     {
       "slug": "carmichael-totient-conjecture",
@@ -2125,7 +2126,7 @@
         "Ford"
       ],
       "rank": 77,
-      "css": 56.867
+      "css": 56.933
     },
     {
       "slug": "erdos-hajnal-conjecture",
@@ -2153,7 +2154,7 @@
         "Erdos"
       ],
       "rank": 78,
-      "css": 56.8
+      "css": 56.867
     },
     {
       "slug": "brocard-problem",
@@ -2179,7 +2180,7 @@
         "Brown-numbers"
       ],
       "rank": 79,
-      "css": 56.733
+      "css": 56.8
     },
     {
       "slug": "caccetta-haggkvist-conjecture",
@@ -2207,7 +2208,7 @@
         "Seymour"
       ],
       "rank": 80,
-      "css": 56.733
+      "css": 56.8
     },
     {
       "slug": "reconstruction-conjecture",
@@ -2234,7 +2235,7 @@
         "isomorphism"
       ],
       "rank": 81,
-      "css": 56.5
+      "css": 56.567
     },
     {
       "slug": "ryser-conjecture",
@@ -2262,7 +2263,7 @@
         "Konig"
       ],
       "rank": 82,
-      "css": 56.5
+      "css": 56.567
     },
     {
       "slug": "eilenberg-ganea-conjecture",
@@ -2289,7 +2290,7 @@
         "Bestvina-Brady"
       ],
       "rank": 83,
-      "css": 56.133
+      "css": 56.2
     },
     {
       "slug": "kelvin-problem",
@@ -2316,7 +2317,7 @@
         "tilings"
       ],
       "rank": 84,
-      "css": 55.9
+      "css": 55.967
     },
     {
       "slug": "andrews-curtis-conjecture",
@@ -2343,7 +2344,7 @@
         "topology"
       ],
       "rank": 85,
-      "css": 55.6
+      "css": 55.667
     },
     {
       "slug": "zeeman-conjecture",
@@ -2370,7 +2371,7 @@
         "contractible"
       ],
       "rank": 86,
-      "css": 55.467
+      "css": 55.533
     },
     {
       "slug": "connes-embedding-aftermath",
@@ -2397,7 +2398,7 @@
         "Tsirelson"
       ],
       "rank": 87,
-      "css": 55.367
+      "css": 55.433
     },
     {
       "slug": "lonely-runner-conjecture",
@@ -2424,7 +2425,7 @@
         "covering"
       ],
       "rank": 88,
-      "css": 55.267
+      "css": 55.333
     },
     {
       "slug": "telescope-conjecture",
@@ -2452,7 +2453,7 @@
         "disproved"
       ],
       "rank": 89,
-      "css": 55.233
+      "css": 55.3
     },
     {
       "slug": "beal-conjecture",
@@ -2477,7 +2478,7 @@
         "prize-problem"
       ],
       "rank": 90,
-      "css": 54.933
+      "css": 55.0
     },
     {
       "slug": "giuga-conjecture",
@@ -2504,7 +2505,7 @@
         "congruences"
       ],
       "rank": 91,
-      "css": 54.6
+      "css": 54.667
     },
     {
       "slug": "lehmer-totient-problem",
@@ -2529,7 +2530,7 @@
         "Lehmer"
       ],
       "rank": 92,
-      "css": 54.3
+      "css": 54.367
     },
     {
       "slug": "total-coloring-conjecture",
@@ -2557,7 +2558,7 @@
         "Molloy-Reed"
       ],
       "rank": 93,
-      "css": 54.0
+      "css": 54.067
     },
     {
       "slug": "hall-conjecture",
@@ -2584,7 +2585,7 @@
         "Danilov"
       ],
       "rank": 94,
-      "css": 53.8
+      "css": 53.867
     },
     {
       "slug": "brennan-conjecture",
@@ -2611,7 +2612,7 @@
         "spectrum"
       ],
       "rank": 95,
-      "css": 53.333
+      "css": 53.4
     },
     {
       "slug": "union-closed-sets-conjecture",
@@ -2638,7 +2639,7 @@
         "entropy"
       ],
       "rank": 96,
-      "css": 52.967
+      "css": 53.033
     },
     {
       "slug": "erdos-straus-conjecture",
@@ -2665,7 +2666,7 @@
         "unit-fractions"
       ],
       "rank": 97,
-      "css": 52.933
+      "css": 53.0
     },
     {
       "slug": "graceful-tree-conjecture",
@@ -2694,7 +2695,7 @@
         "decompositions"
       ],
       "rank": 98,
-      "css": 52.267
+      "css": 52.333
     },
     {
       "slug": "grimm-conjecture",
@@ -2719,7 +2720,7 @@
         "factorization"
       ],
       "rank": 99,
-      "css": 51.233
+      "css": 51.3
     },
     {
       "slug": "seymour-second-neighborhood-conjecture",
@@ -2746,7 +2747,7 @@
         "Dean"
       ],
       "rank": 100,
-      "css": 49.933
+      "css": 50.0
     },
     {
       "slug": "one-third-two-thirds-conjecture",
@@ -2775,7 +2776,7 @@
         "sorting"
       ],
       "rank": 101,
-      "css": 49.8
+      "css": 49.867
     },
     {
       "slug": "singmaster-conjecture",
@@ -2801,7 +2802,7 @@
         "multiplicity"
       ],
       "rank": 102,
-      "css": 48.0
+      "css": 48.067
     },
     {
       "slug": "gilbreath-conjecture",
@@ -2828,7 +2829,7 @@
         "Gilbreath"
       ],
       "rank": 103,
-      "css": 47.867
+      "css": 47.933
     },
     {
       "slug": "sendov-conjecture",
@@ -2853,7 +2854,7 @@
         "Tao"
       ],
       "rank": 104,
-      "css": 46.9
+      "css": 46.967
     },
     {
       "slug": "moving-sofa-problem",
@@ -2880,7 +2881,7 @@
         "corridor"
       ],
       "rank": 105,
-      "css": 46.533
+      "css": 46.6
     },
     {
       "slug": "crouzeix-conjecture",
@@ -2906,7 +2907,7 @@
         "spectral"
       ],
       "rank": 106,
-      "css": 43.9
+      "css": 43.967
     }
   ]
 }

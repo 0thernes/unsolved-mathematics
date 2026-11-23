@@ -20,7 +20,7 @@ Grouped by the century the problem was posed.
 - **#17** [Polignac's Conjecture](../../problems/polignac-conjecture/README.md) — *1849*, `active-progress`
 - **#19** [The Inverse Galois Problem](../../problems/inverse-galois-problem/README.md) — *1892*, `active-progress`
 - **#27** [Bunyakovsky's Conjecture](../../problems/bunyakovsky-conjecture/README.md) — *1857*, `open`
-- **#70** [The Catalan–Dickson Conjecture (Aliquot Sequences)](../../problems/catalan-dickson-conjecture/README.md) — *1888*, `open`
+- **#69** [The Catalan–Dickson Conjecture (Aliquot Sequences)](../../problems/catalan-dickson-conjecture/README.md) — *1888*, `open`
 - **#73** [The Hadamard Matrix Conjecture](../../problems/hadamard-matrix-conjecture/README.md) — *1893*, `active-progress`
 - **#79** [Brocard's Problem](../../problems/brocard-problem/README.md) — *1876*, `open`
 - **#84** [The Kelvin Problem (Optimal Space Partition)](../../problems/kelvin-problem/README.md) — *1887*, `open`
@@ -39,8 +39,8 @@ Grouped by the century the problem was posed.
 - **#22** [The Kakeya Conjecture](../../problems/kakeya-conjecture/README.md) — *1971*, `active-progress`
 - **#23** [The Jacobian Conjecture](../../problems/jacobian-conjecture/README.md) — *1939*, `open`
 - **#24** [The Restriction Conjecture](../../problems/restriction-conjecture/README.md) — *1967*, `active-progress`
-- **#25** [The Novikov Conjecture](../../problems/novikov-conjecture/README.md) — *1965*, `active-progress`
-- **#26** [The Bombieri–Lang Conjecture](../../problems/bombieri-lang-conjecture/README.md) — *1980*, `open`
+- **#25** [The Bombieri–Lang Conjecture](../../problems/bombieri-lang-conjecture/README.md) — *1980*, `open`
+- **#26** [The Novikov Conjecture](../../problems/novikov-conjecture/README.md) — *1965*, `active-progress`
 - **#28** [Hadwiger's Conjecture (Graph Coloring)](../../problems/hadwiger-conjecture/README.md) — *1943*, `active-progress`
 - **#29** [The Littlewood Conjecture](../../problems/littlewood-conjecture/README.md) — *1930*, `active-progress`
 - **#30** [Schinzel's Hypothesis H](../../problems/schinzel-hypothesis-h/README.md) — *1958*, `open`
@@ -61,25 +61,25 @@ Grouped by the century the problem was posed.
 - **#47** [The Birkhoff Conjecture (Integrable Billiards)](../../problems/birkhoff-conjecture/README.md) — *1927*, `active-progress`
 - **#48** [Furstenberg's ×2 ×3 Conjecture](../../problems/furstenberg-conjecture/README.md) — *1967*, `active-progress`
 - **#49** [Artin's Primitive Root Conjecture](../../problems/artin-primitive-root-conjecture/README.md) — *1927*, `active-progress`
-- **#50** [The Erdős Unit Distance Problem](../../problems/unit-distance-problem/README.md) — *1946*, `open`
-- **#51** [Self-Avoiding Walk (Scaling & Connective Constant)](../../problems/self-avoiding-walk/README.md) — *1947*, `active-progress`
-- **#52** [The Whitehead Asphericity Conjecture](../../problems/whitehead-asphericity-conjecture/README.md) — *1941*, `open`
-- **#53** [Lehmer's Mahler Measure Conjecture](../../problems/lehmer-mahler-measure-conjecture/README.md) — *1933*, `open`
-- **#54** [The Weinstein Conjecture](../../problems/weinstein-conjecture/README.md) — *1979*, `active-progress`
-- **#55** [The KPZ Universality Conjecture](../../problems/kpz-universality/README.md) — *1986*, `active-progress`
-- **#56** [The Hilbert–Smith Conjecture](../../problems/hilbert-smith-conjecture/README.md) — *1933*, `active-progress`
-- **#57** [The Zariski Cancellation Problem](../../problems/zariski-cancellation-problem/README.md) — *1949*, `active-progress`
-- **#58** [The Palis Conjecture (Finitude / Density of Attractors)](../../problems/palis-conjecture/README.md) — *1995*, `open`
-- **#59** [The Inscribed Square Problem (Toeplitz)](../../problems/inscribed-square-problem/README.md) — *1911*, `active-progress`
-- **#60** [The Falconer Distance Conjecture](../../problems/falconer-distance-conjecture/README.md) — *1985*, `active-progress`
-- **#61** [Pillai's Conjecture](../../problems/pillai-conjecture/README.md) — *1931*, `open`
-- **#62** [The Hadwiger Covering Conjecture](../../problems/hadwiger-covering-conjecture/README.md) — *1957*, `open`
-- **#63** [Vaught's Conjecture](../../problems/vaught-conjecture/README.md) — *1961*, `open`
-- **#64** [The Cherlin–Zilber Algebraicity Conjecture](../../problems/cherlin-zilber-conjecture/README.md) — *1979*, `active-progress`
-- **#65** [Köthe's Conjecture](../../problems/kothe-conjecture/README.md) — *1930*, `open`
-- **#67** [Greenberg's Conjecture](../../problems/greenberg-conjecture/README.md) — *1976*, `open`
-- **#68** [The Sunflower Conjecture](../../problems/sunflower-conjecture/README.md) — *1960*, `active-progress`
-- **#69** [The Four Exponentials Conjecture](../../problems/four-exponentials-conjecture/README.md) — *1944*, `open`
+- **#50** [Self-Avoiding Walk (Scaling & Connective Constant)](../../problems/self-avoiding-walk/README.md) — *1947*, `active-progress`
+- **#51** [The Whitehead Asphericity Conjecture](../../problems/whitehead-asphericity-conjecture/README.md) — *1941*, `open`
+- **#52** [Lehmer's Mahler Measure Conjecture](../../problems/lehmer-mahler-measure-conjecture/README.md) — *1933*, `open`
+- **#53** [The Weinstein Conjecture](../../problems/weinstein-conjecture/README.md) — *1979*, `active-progress`
+- **#54** [The KPZ Universality Conjecture](../../problems/kpz-universality/README.md) — *1986*, `active-progress`
+- **#55** [The Hilbert–Smith Conjecture](../../problems/hilbert-smith-conjecture/README.md) — *1933*, `active-progress`
+- **#56** [The Zariski Cancellation Problem](../../problems/zariski-cancellation-problem/README.md) — *1949*, `active-progress`
+- **#57** [The Palis Conjecture (Finitude / Density of Attractors)](../../problems/palis-conjecture/README.md) — *1995*, `open`
+- **#58** [The Inscribed Square Problem (Toeplitz)](../../problems/inscribed-square-problem/README.md) — *1911*, `active-progress`
+- **#59** [The Falconer Distance Conjecture](../../problems/falconer-distance-conjecture/README.md) — *1985*, `active-progress`
+- **#60** [Pillai's Conjecture](../../problems/pillai-conjecture/README.md) — *1931*, `open`
+- **#61** [The Hadwiger Covering Conjecture](../../problems/hadwiger-covering-conjecture/README.md) — *1957*, `open`
+- **#62** [Vaught's Conjecture](../../problems/vaught-conjecture/README.md) — *1961*, `open`
+- **#63** [The Cherlin–Zilber Algebraicity Conjecture](../../problems/cherlin-zilber-conjecture/README.md) — *1979*, `active-progress`
+- **#64** [Köthe's Conjecture](../../problems/kothe-conjecture/README.md) — *1930*, `open`
+- **#66** [Greenberg's Conjecture](../../problems/greenberg-conjecture/README.md) — *1976*, `open`
+- **#67** [The Sunflower Conjecture](../../problems/sunflower-conjecture/README.md) — *1960*, `active-progress`
+- **#68** [The Four Exponentials Conjecture](../../problems/four-exponentials-conjecture/README.md) — *1944*, `open`
+- **#70** [The Erdős Unit Distance Problem (Disproved 2026)](../../problems/unit-distance-problem/README.md) — *1946*, `recently-resolved`
 - **#71** [The Volume Conjecture](../../problems/volume-conjecture/README.md) — *1997*, `active-progress`
 - **#72** [The Hadwiger–Nelson Problem](../../problems/hadwiger-nelson-problem/README.md) — *1950*, `active-progress`
 - **#74** [The Slice–Ribbon Conjecture](../../problems/slice-ribbon-conjecture/README.md) — *1962*, `open`
@@ -119,7 +119,7 @@ Grouped by the century the problem was posed.
 - **#13** [Navier–Stokes Existence and Smoothness](../../problems/navier-stokes-smoothness/README.md) — *2000*, `open`
 - **#37** [The Zilber–Pink Conjecture](../../problems/zilber-pink-conjecture/README.md) — *2005*, `open`
 - **#40** [The Unique Games Conjecture](../../problems/unique-games-conjecture/README.md) — *2002*, `active-progress`
-- **#66** [Sarnak's Möbius Disjointness Conjecture](../../problems/sarnak-mobius-conjecture/README.md) — *2010*, `active-progress`
+- **#65** [Sarnak's Möbius Disjointness Conjecture](../../problems/sarnak-mobius-conjecture/README.md) — *2010*, `active-progress`
 - **#106** [Crouzeix's Conjecture](../../problems/crouzeix-conjecture/README.md) — *2004*, `active-progress`
 
 ## Antiquity (BCE)  (1)

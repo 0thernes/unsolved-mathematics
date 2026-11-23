@@ -1,32 +1,36 @@
 cff-version: 1.2.0
 title: "The Unsolved Mathematics Atlas"
-message: "If you use this atlas or its meta-analyses, please cite it as below."
+message: "If you use this atlas, its formal Lean 4 core, or its meta-analyses, please cite it as below."
 type: dataset
 authors:
   - family-names: "Donahue"
-    given-names: "Alexander"
+    given-names: "Alexander S."
     alias: "0thernes"
     email: "0_0@0thernes.art"
-    # orcid: "https://orcid.org/0000-0000-0000-0000"  # add your ORCID if you have one
+    orcid: "https://orcid.org/0009-0006-8168-9648"
 repository-code: "https://github.com/0thernes/unsolved-mathematics"
 url: "https://github.com/0thernes/unsolved-mathematics"
 abstract: >
-  An exhaustive, ranked, research-grade dossier collection of humanity's open
-  mathematical problems (106 problems across 38 fields). Each problem includes
-  its history, originator biography, attack strategies, notable attempts, 25 key
-  papers, 10 key mathematicians, and a retrieval-augmented knowledge corpus.
-  Problems are ranked by a transparent, reproducible Composite Severity Score.
-  Accompanying AI-assisted meta-analyses are curated by the human-in-the-loop
-  author and undergo a multi-model AI review panel (Grok, Gemini, GPT, Claude)
-  prior to human academic verification.
+  A reproducible, ranked, research-grade dossier collection of 106 open
+  mathematical problems across 38 fields, paired with a standalone multi-kernel
+  Lean 4.35.0 formal verification core (Collatz structural obstructions and
+  epsilon-invariance barrier, Erdős–Straus Mordell mod-840 reduction, Lonely
+  Runner sharpness, and Brocard finite verification), automated primary-source
+  citation auditing, a deterministic BM25/dense RAG corpus, and documented
+  epistemic integrity gates. Human contributions (CRediT): Conceptualization,
+  Methodology, Supervision, Formal analysis (statement-fidelity audit),
+  Validation, Writing – review & editing. AI tools were used as disclosed
+  drafting and formalization instruments; all formal theorems are independently
+  checked by Lean 4.35.0 kernels. Not peer-reviewed.
 keywords:
   - mathematics
   - open problems
   - conjectures
+  - lean4
+  - formal verification
   - meta-analysis
-  - AI-assisted research
   - retrieval-augmented generation
   - knowledge base
 license: CC-BY-4.0
-version: 0.2.0
-date-released: 2026-06-14
+version: 0.3.0
+date-released: 2026-11-23

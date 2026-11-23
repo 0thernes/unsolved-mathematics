@@ -14,17 +14,19 @@ CSS = 0.40 · difficulty
     + 0.20 · age_score
     + 0.10 · (100 − tractability)
 
-age_score = clamp( (2025 − year_posed) / 3 , 0 , 100 )
+age_score = clamp( (2026 − year_posed) / 3 , 0 , 100 )
 ```
 
 All inputs are on a 0–100 scale. `age_score` saturates at 100 for problems older
 than ~300 years, so antiquity problems (odd perfect numbers, Euclid's primes)
 do not infinitely dominate purely by age — difficulty and centrality still
-decide the top.
+decide the top. Ties in CSS are broken **deterministically** by ascending
+alphabetical `slug` (`sorted(problems, key=lambda p: (-composite_severity(p), p["slug"]))`).
 
-The reference year (2025) is **frozen** in code so the ranking is reproducible
-and does not silently drift year to year. Bump it deliberately in
-`scripts/generate.py` (`CURRENT_YEAR`) when you want age to re-weight.
+The reference year (2026, updated deliberately in `v0.3.0` from `2025`) is
+**frozen** in code (`scripts/generate.py`, `CURRENT_YEAR`) so the ranking is
+reproducible and does not silently drift day to day. Bump it deliberately when
+you want age to re-weight.
 
 ## The four axes
 

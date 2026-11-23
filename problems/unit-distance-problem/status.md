@@ -2,19 +2,17 @@
 
 _Where the problem stands and what a resolution would require._
 
-**Status: open.** The problem has stood unresolved since 1946, and the decisive gap has barely narrowed since 1984. Let $u(n)$ denote the maximum number of unit distances among $n$ points in $\mathbb{R}^2$.
+**Status: recently resolved (disproved May 20, 2026); sharp extremal exponent remains open.** Let $u(n)$ denote the maximum number of unit distances among $n$ points in $\mathbb{R}^2$. Erdős's 1946 conjecture that $u(n) = n^{1+o(1)}$ was **disproved in May 2026**: an OpenAI reasoning model produced an infinite-family counterexample achieving $u(n) \ge n^{1+\delta}$ for an absolute constant $\delta > 0$, constructed via infinite class field towers and Golod–Shafarevich theory rather than integer lattices. Within days, Noga Alon, Thomas F. Bloom, W. T. Gowers, Daniel Litt, Will Sawin, Arul Shankar, Jacob Tsimerman, Victor Wang, and Melanie Matchett Wood independently verified, digested, and published the complete human-readable proof in *"Remarks on the disproof of the unit distance conjecture"* (`arXiv:2605.20695`, verified).
 
-## What is known (unconditional)
+## What is known (unconditional, as of November 2026)
 
-- **Lower bound (1946, Erdős).** The $\sqrt n \times \sqrt n$ integer grid realizes
-$$u(n) \ge n^{1 + c/\log\log n}$$
-for some constant $c>0$, via Landau's count of sum-of-two-squares representations. This is the best lower bound known; it has *never* been improved.
-- **Upper bound (1984, Spencer–Szemerédi–Trotter).**
+- **Disproof / polynomial lower bound (May 2026, `arXiv:2605.20695`):** There exists an absolute constant $\delta > 0$ such that
+$$u(n) \ge n^{1 + \delta}$$
+for infinitely many $n$, refuting Erdős's $u(n) = n^{1+o(1)}$ conjecture (which had stood since 1946 with only the grid lower bound $u(n) \ge n^{1 + c/\log\log n}$).
+- **Upper bound (1984, Spencer–Szemerédi–Trotter):**
 $$u(n) = O(n^{4/3}).$$
-This remains the record. Székely's 1997 crossing-number proof reestablished it transparently, and subsequent work (Pach–Tardos and others) has improved only the constant, not the exponent. The current best constant places the bound near $u(n) \lesssim c\, n^{4/3}$ with a small explicit $c$.
-- **Conjecture (Erdős).** $u(n) = n^{1+o(1)}$; equivalently $u(n) = O(n^{1+\varepsilon})$ for every $\varepsilon>0$. The believed truth is essentially the lattice rate.
-
-So the live gap is the factor $n^{1/3}$ between $n^{1+o(1)}$ (conjectured/lower) and $n^{4/3}$ (proved upper).
+This remains the record upper bound. Székely's 1997 crossing-number proof reestablished it transparently, and subsequent work has improved only the constant, not the exponent.
+- **Successor open problem:** Pin down the true extremal exponent $\alpha := \limsup_{n\to\infty} \frac{\log u(n)}{\log n} \in [1+\delta,\, 4/3]$ — in particular, whether $\alpha = 4/3$ or strictly less.
 
 ## Conditional and special-case results
 

@@ -25,7 +25,7 @@ In May 2000 the Clay Mathematics Institute named the global existence and smooth
 - **1960s** — Olga Ladyzhenskaya proves global regularity and uniqueness in two dimensions.
 - **1982** — Caffarelli–Kohn–Nirenberg prove the partial-regularity theorem (singular set has dimension $\le 1$).
 - **2000** — Clay Mathematics Institute designates 3D smoothness a Millennium Prize Problem; Fefferman writes the official statement.
-- **2001** — Escauriaza–Seregin–Šverák prove the endpoint $L^3_x$ regularity criterion.
+- **2003** — Escauriaza–Seregin–Šverák prove the endpoint $L^3_x$ regularity criterion (*Russian Math. Surveys* 58:2, 2003).
 - **2014** — Terence Tao constructs blow-up for an averaged Navier–Stokes system, formalizing the "supercriticality barrier".
 - **2019** — Buckmaster–Vicol prove non-uniqueness of weak solutions below the Leray class via convex integration.
 - **2021–2022** — Convex-integration methods sharpen near-Onsager non-uniqueness; the regularity problem for genuine Leray–Hopf solutions remains open.

@@ -1,6 +1,6 @@
 # The Four Exponentials Conjecture
 
-> **Atlas Rank #40** · CSS **58.1** · Field: *Transcendental Number Theory* · Posed: **1944** · Status: `open`
+> **Atlas Rank #68** · CSS **58.167** · Field: *Transcendental Number Theory* · Posed: **1944** · Status: `open`
 
 ## Plain statement
 

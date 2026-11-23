@@ -1,6 +1,6 @@
 # Crouzeix's Conjecture
 
-> **Atlas Rank #40** · CSS **43.9** · Field: *Matrix Analysis* · Posed: **2004** · Status: `active-progress`
+> **Atlas Rank #106** · CSS **43.967** · Field: *Matrix Analysis* · Posed: **2004** · Status: `active-progress`
 
 ## Plain statement
 

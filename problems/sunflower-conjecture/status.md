@@ -14,6 +14,7 @@ Write $f(w,k)$ for the threshold above which any family of $w$-sets must contain
 - **Cleaned form (2020–2021):** Rao (arXiv:1909.04774, "Coding for sunflowers") and Tao's exposition, then Bell–Chueluecha–Warnke (arXiv:2105.06561, "Note on sunflowers"), give the sharpest current bound
 $$ f(w,k) \le (C k \log w)^w $$
 for an absolute constant $C$.
+- **Sibling Erdős–Szemerédi sunflower conjecture (Oct 2026):** In October 2026, **Matija Bucić, Fankang He, and Hyunwoo Lee** posted *"Proof of the Erdős-Szemerédi sunflower conjecture"* (`arXiv:2610.26686`, verified; pending peer review), proving that $k$-sunflower-free families of subsets of $[n]$ have size at most $(2 - c_k)^n$. Note carefully the distinction: this resolves the **Erdős–Szemerédi** (ground-set-size $n$) conjecture, whereas the **$w$-uniform Erdős–Rado sunflower conjecture** $f(w,k) \le C(k)^w$ remains **open** with the residual $\log w$ factor in $(C k \log w)^w$.
 - **Lower bound:** $f(w,k) \ge (k-1)^w$, essentially unimproved at the super-exponential scale.
 
 So the truth lies between $(k-1)^w$ and $(C k \log w)^w$. The conjecture asserts the lower end is correct up to the constant base $C(k)$.

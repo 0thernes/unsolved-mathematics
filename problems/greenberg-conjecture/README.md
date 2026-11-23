@@ -1,6 +1,6 @@
 # Greenberg's Conjecture
 
-> **Atlas Rank #67** · CSS **58.467** · Field: *Number Theory* · Posed: **1976** · Status: `open`
+> **Atlas Rank #66** · CSS **58.533** · Field: *Number Theory* · Posed: **1976** · Status: `open`
 
 ## Plain statement
 

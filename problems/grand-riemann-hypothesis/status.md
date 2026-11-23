@@ -11,6 +11,11 @@
 - The **function-field analogue is a theorem** (Weil 1948; Deligne 1974): over $\mathbb{F}_q$, the corresponding RH holds.
 - **Rodgers–Tao (2020)** proved the de Bruijn–Newman constant satisfies $\Lambda\ge 0$; since RH $\iff \Lambda\le 0$, RH is "barely" true if true (arXiv:1801.05914; *Forum of Mathematics, Pi*, doi:10.1017/fmp.2020.6).
 - **Structure of $\mathcal{S}$:** Kaczorowski–Perelli proved there are no elements of degree $0<d<1$ and none with $1<d<2$, and classified degrees $0$ and $1$ — confirming the automorphic picture without locating zeros.
+- **Zero-density breakthrough (2024):** Guth and Maynard (`arXiv:2405.20552`, verified) improved Ingham's 1940 zero-density estimate for $\zeta(s)$ to $N(\sigma, T) \le T^{30(1-\sigma)/13 + o(1)}$.
+
+## November 2026 frontier watch (claimed Lean-only GRH proof — pending community audit)
+
+On November 20, 2026, Levent Alpöge (with Claude) announced a ~17-million-line Lean 4 formalization claiming a proof of the Generalized Riemann Hypothesis, leveraging arithmetic geometry and the Langlands program. While kernel checkers reported clean formal compilation, Terence Tao and the mathematical community emphasize that human conceptual digestion and statement-fidelity auditing of the formal definitions are still underway. Until independent verification and consensus conclude, GRH remains **`open`**.
 
 **Conditional.** Assuming GRH, one obtains: square-root error in primes in arithmetic progressions; effective Chebotarev with strong bounds; deterministic polynomial-time primality and small least-quadratic-residue/primitive-root results; sharp subconvexity-flavored estimates; and precise low-lying-zero statistics matching Katz–Sarnak symmetry types. Vast tracts of analytic number theory are written "under GRH."
 

@@ -1,6 +1,6 @@
 # Singmaster's Conjecture
 
-> **Atlas Rank #37** · CSS **48.0** · Field: *Combinatorics* · Posed: **1971** · Status: `active-progress`
+> **Atlas Rank #102** · CSS **48.067** · Field: *Combinatorics* · Posed: **1971** · Status: `active-progress`
 
 ## Plain statement
 

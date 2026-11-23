@@ -1,6 +1,6 @@
 # The Whitehead Asphericity Conjecture
 
-> **Atlas Rank #34** · CSS **61.4** · Field: *Algebraic Topology* · Posed: **1941** · Status: `open`
+> **Atlas Rank #51** · CSS **61.467** · Field: *Algebraic Topology* · Posed: **1941** · Status: `open`
 
 ## Plain statement
 

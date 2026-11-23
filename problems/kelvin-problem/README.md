@@ -1,6 +1,6 @@
 # The Kelvin Problem (Optimal Space Partition)
 
-> **Atlas Rank #84** · CSS **55.9** · Field: *Geometry* · Posed: **1887** · Status: `open`
+> **Atlas Rank #84** · CSS **55.967** · Field: *Geometry* · Posed: **1887** · Status: `open`
 
 ## Plain statement
 

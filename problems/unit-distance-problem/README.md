@@ -1,6 +1,6 @@
 # The Erdős Unit Distance Problem
 
-> **Atlas Rank #33** · CSS **61.667** · Field: *Combinatorial Geometry* · Posed: **1946** · Status: `open`
+> **Atlas Rank #70** · CSS **57.533** · Field: *Combinatorial Geometry* · Posed: **1946** · Status: `recently-resolved`
 
 ## Plain statement
 

@@ -1,6 +1,6 @@
 {
   "slug": "unit-distance-problem",
-  "title": "The Erdős Unit Distance Problem",
+  "title": "The Erdős Unit Distance Problem (Disproved 2026)",
   "field": "Combinatorial Geometry",
   "subfields": [
     "Incidence Geometry",
@@ -11,18 +11,19 @@
     "Paul Erdős"
   ],
   "millennium_prize": false,
-  "statement_plain": "What is the maximum number of unit distances among n points in the plane? Conjectured n^(1+o(1)); the best bounds remain far apart.\n",
+  "statement_plain": "What is the maximum number of unit distances among n points in the plane? Erdős's n^(1+o(1)) conjecture was disproved in May 2026 via infinite class field towers (arXiv:2605.20695), yielding >= n^(1+delta) unit distances; determining the sharp extremal exponent in (1+delta, 4/3] remains open.\n",
   "difficulty": 84,
   "centrality": 52,
-  "tractability": 28,
-  "status": "open",
+  "tractability": 70,
+  "status": "recently-resolved",
   "tags": [
     "incidences",
     "unit-distances",
     "Erdos",
-    "Szemeredi-Trotter"
+    "Szemeredi-Trotter",
+    "disproved-2026"
   ],
-  "rank": 50,
-  "css": 61.667,
+  "rank": 70,
+  "css": 57.533,
   "folder": "unit-distance-problem"
 }

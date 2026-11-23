@@ -1,6 +1,6 @@
 # Goldbach's Conjecture
 
-> **Atlas Rank #2** · CSS **87.867** · Field: *Number Theory* · Posed: **1742** · Status: `open`
+> **Atlas Rank #2** · CSS **87.933** · Field: *Number Theory* · Posed: **1742** · Status: `open`
 
 ## Plain statement
 

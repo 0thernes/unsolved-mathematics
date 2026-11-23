@@ -1,6 +1,6 @@
 # The Chowla Conjecture
 
-> **Atlas Rank #38** · CSS **63.6** · Field: *Analytic Number Theory* · Posed: **1965** · Status: `active-progress`
+> **Atlas Rank #43** · CSS **63.667** · Field: *Analytic Number Theory* · Posed: **1965** · Status: `active-progress`
 
 ## Plain statement
 
