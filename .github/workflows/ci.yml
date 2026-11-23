@@ -74,14 +74,51 @@ jobs:
           echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
           "$HOME/.elan/bin/elan" toolchain install "$(cat formal/lean-toolchain)"
 
-      - name: Audit forbidden tokens (zero sorry/admit/native_decide/custom axiom)
+      - name: Audit forbidden tokens (zero sorry/admit/native_decide/custom axiom in code)
         working-directory: formal
         run: |
-          if grep -rnE '\b(sorry|admit|native_decide)\b|^[[:space:]]*axiom[[:space:]]' FormalAtlas/ Solution.lean NonVacuity.lean; then
-            echo "::error::Forbidden proof token detected in formal solution files!"
-            exit 1
-          fi
-          echo "OK: zero sorry/admit/native_decide/custom axiom in FormalAtlas/, Solution.lean, NonVacuity.lean."
+          python3 - <<'PY'
+          import pathlib, re, sys
+
+          def strip_lean_comments(src: str) -> str:
+              out, i, n, depth = [], 0, len(src), 0
+              while i < n:
+                  if depth == 0 and src[i:i+2] == "--":
+                      while i < n and src[i] != "\n":
+                          i += 1
+                  elif src[i:i+2] == "/-":
+                      depth += 1
+                      i += 2
+                  elif depth > 0 and src[i:i+2] == "-/":
+                      depth -= 1
+                      i += 2
+                  elif depth == 0:
+                      out.append(src[i])
+                      i += 1
+                  else:
+                      if src[i] == "\n":
+                          out.append("\n")
+                      i += 1
+              return "".join(out)
+
+          pat = re.compile(r"\b(sorry|admit|native_decide|sorryAx|Lean\.trustCompiler)\b|^\s*axiom\b", re.M)
+          files = sorted(pathlib.Path("FormalAtlas").glob("*.lean")) + [
+              pathlib.Path("Solution.lean"),
+              pathlib.Path("NonVacuity.lean"),
+          ]
+          bad = []
+          for f in files:
+              code = strip_lean_comments(f.read_text(encoding="utf-8"))
+              for m in pat.finditer(code):
+                  lineno = code[:m.start()].count("\n") + 1
+                  bad.append(f"{f}:{lineno}: {m.group(0)}")
+          if bad:
+              print("::error::Forbidden proof token(s) detected in formal Lean code:")
+              for b in bad:
+                  print("  ", b)
+              sys.exit(1)
+          print(f"OK: audited {len(files)} Lean source files (comments stripped) — zero sorry/admit/native_decide/custom axiom.")
+          PY
 
       - name: Build Lean 4.35.0 package & verify axioms strictly within standard set
         working-directory: formal
