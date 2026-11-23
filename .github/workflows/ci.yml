@@ -3,8 +3,6 @@ name: CI
 on:
   push:
     branches: [main]
-  pull_request:
-    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -15,55 +13,132 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build-validate:
-    name: Build · Validate · Corpus
-    runs-on: ubuntu-latest
+  atlas-matrix:
+    name: Atlas & Verification Ladder (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: Set up Python 3.12
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: "3.12"
           cache: pip
+          cache-dependency-path: requirements-lock.txt
 
-      - name: Install dependencies
-        run: pip install -r requirements.txt
+      - name: Install pinned dependencies
+        run: python -m pip install -r requirements-lock.txt
 
-      - name: Validate registry + ranking freshness
+      - name: Registry schema, freshness, dossiers, papers, proof-claim & manifest gates
         run: |
           python scripts/generate.py --check
           python scripts/validate.py
+          python scripts/check_dossiers.py --strict
+          python scripts/check_papers.py
+          python scripts/proof_claim_sweep.py
+          python scripts/build_data_manifest.py --check
 
-      - name: Verify generated views are committed (no drift)
+      - name: Verify deterministic rebuild (zero drift)
+        shell: bash
         run: |
           python scripts/generate.py
-          git diff --exit-code -- RANKING.md data/problems.json \
-            || (echo "::error::Generated views are stale. Run 'python scripts/generate.py' and commit." && exit 1)
+          python rag/build_corpus.py
+          git diff --exit-code -- RANKING.md data/problems.json rag/corpus.jsonl \
+            || (echo "::error::Generated views drifted after rebuild." && exit 1)
 
-      - name: Build RAG corpus
-        run: python rag/build_corpus.py
+      - name: Run full test ladder (unit, negative, regression, Hypothesis, differential, metamorphic)
+        run: python -m pytest -v tests/
 
-      - name: Meta-analysis integrity gate
-        run: |
-          python scripts/check_papers.py
-          python scripts/build_review_register.py
+      - name: Run targeted mutation testing suite (100% kill required)
+        run: python tests/mutation_check.py
 
-      - name: Run tests
-        run: |
-          pip install pytest
-          python -m pytest -q
-
-      - name: Pseudo-proof gate (no unhedged proof-claim files)
-        run: python scripts/proof_claim_sweep.py
-
-  lint:
-    name: Lint (ruff, non-blocking)
+  lean-formal:
+    name: Lean 4.35.0 Multi-Kernel Formal Core (6-kernel paranoid + comparator)
     runs-on: ubuntu-latest
-    continue-on-error: true
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+
+      - name: Install bubblewrap sandbox for lake check / lake comparator
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq bubblewrap
+          sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0 || true
+
+      - name: Install elan & Lean 4.35.0 toolchain
+        run: |
+          curl https://elan.lean-lang.org/elan-init.sh -sSf | sh -s -- -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+          "$HOME/.elan/bin/elan" toolchain install "$(cat formal/lean-toolchain)"
+
+      - name: Audit forbidden tokens (zero sorry/admit/native_decide/custom axiom)
+        working-directory: formal
+        run: |
+          if grep -rnE '\b(sorry|admit|native_decide)\b|^[[:space:]]*axiom[[:space:]]' FormalAtlas/ Solution.lean NonVacuity.lean; then
+            echo "::error::Forbidden proof token detected in formal solution files!"
+            exit 1
+          fi
+          echo "OK: zero sorry/admit/native_decide/custom axiom in FormalAtlas/, Solution.lean, NonVacuity.lean."
+
+      - name: Build Lean 4.35.0 package & verify axioms strictly within standard set
+        working-directory: formal
+        run: |
+          lake build Challenge Solution NonVacuity
+          lake env lean VerifyAxioms.lean | tee axioms.log
+          python3 - <<'PY'
+          import re, sys
+          allowed = {"propext", "Classical.choice", "Quot.sound"}
+          txt = open("axioms.log", encoding="utf-8").read()
+          lines = [ln for ln in txt.splitlines() if "depends on axioms:" in ln]
+          assert len(lines) >= 14, f"Expected >=14 axiom lines, got {len(lines)}"
+          for ln in lines:
+              m = re.search(r"\[(.*)\]", ln)
+              assert m, f"Could not parse axiom list: {ln}"
+              used = {a.strip() for a in m.group(1).split(",") if a.strip()}
+              bad = used - allowed
+              assert not bad, f"Disallowed axiom(s) {bad} in: {ln}"
+          print(f"OK: audited {len(lines)} theorems — strictly within {sorted(allowed)}.")
+          PY
+
+      - name: Replay through leanchecker-paranoid --fresh
+        working-directory: formal
+        run: |
+          lake env leanchecker-paranoid --fresh Solution
+          lake env leanchecker-paranoid --fresh NonVacuity
+
+      - name: Run sandboxed 6-kernel lake check --paranoid & lake comparator --paranoid
+        working-directory: formal
+        run: |
+          lake check --paranoid
+          lake comparator --config comparator.json --paranoid
+
+  static-security-audit:
+    name: Static Analysis · Typecheck · Security · Build Standard Audit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
-      - run: pipx install ruff && ruff check scripts rag tests || true
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-lock.txt
+
+      - name: Install tools
+        run: python -m pip install -r requirements-lock.txt pip-audit
+
+      - name: Lint (ruff)
+        run: ruff check scripts rag tests examples
+
+      - name: Strict type check (mypy)
+        run: mypy scripts/generate.py scripts/validate.py scripts/build_data_manifest.py rag/build_corpus.py rag/retriever.py
+
+      - name: Dependency vulnerability scan (pip-audit, report-only)
+        run: pip-audit -r requirements-lock.txt || true
+
+      - name: Build Standard v1.1.0 repository audit (report-only)
+        run: bash scripts/audit-repo.sh . || true

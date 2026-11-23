@@ -1,0 +1,117 @@
+# Project manifest for the Build Standard for LLMs v1.1.0. Read by scripts/audit-repo.sh and Audit-Repo.ps1.
+# Keep each item on one line. status: done | todo | partial | n/a (n/a needs a note).
+standard: "1.1.0"
+name: "unsolved-mathematics"
+description: "An audited, ranked, research-grade atlas of 106 unsolved mathematical problems with a zero-Mathlib Lean 4.35.0 multi-kernel formal core, primary-source verified citations, and deterministic RAG corpus."
+owner: "Alexander S. Donahue"
+year: "2026"
+project_type: research
+stack: [python, lean4]
+flags:
+  public: true
+  package: true
+  visual: false
+  ui: false
+  native: false
+  ai: false
+  personal_data: false
+  service: false
+  deployed: false
+  api: true
+  perf: false
+  concurrent: false
+  numeric: true
+  experimental: true
+  ml: false
+  formal: true
+items:
+  A01: {status: done}
+  A02: {status: done}
+  A03: {status: done}
+  A04: {status: done}
+  A05: {status: n/a, note: "CLI/research corpus with no GUI; social preview provided under docs/media/"}
+  A06: {status: done}
+  A07: {status: done}
+  A08: {status: done}
+  A09: {status: done}
+  A10: {status: done}
+  A11: {status: done}
+  A12: {status: done}
+  A13: {status: done}
+  A14: {status: done}
+  A15: {status: done}
+  A16: {status: done}
+  A17: {status: done}
+  A18: {status: done}
+  A19: {status: done, note: "GitHub About description and research topics configured via gh repo edit"}
+  A20: {status: done}
+  A21: {status: done}
+  A22: {status: done}
+  A23: {status: done}
+  A24: {status: done}
+  A25: {status: done}
+  A26: {status: done}
+  A27: {status: done}
+  A28: {status: done}
+  A29: {status: done}
+  A30: {status: done}
+  A31: {status: done}
+  A32: {status: done}
+  A33: {status: done}
+  A34: {status: n/a, note: "Not a long-running service"}
+  A35: {status: done}
+  A36: {status: n/a, note: "Not a deployed service (static GitHub Pages docs only)"}
+  A37: {status: n/a, note: "No speed or latency claims made"}
+  A38: {status: n/a, note: "No interactive application UI"}
+  A39: {status: done}
+  A40: {status: n/a, note: "No runtime AI SDK calls; offline scripts use stdlib/PyYAML/jsonschema"}
+  A41: {status: done}
+  A42: {status: done}
+  A43: {status: done}
+  A44: {status: done}
+  A45: {status: n/a, note: "No personal data collected, stored, or processed"}
+  B01: {status: done}
+  B02: {status: done}
+  B03: {status: done, note: "Verified in tests/test_verification_ladder.py (clean rebuild & tie-break determinism)"}
+  B04: {status: done}
+  B05: {status: done, note: "Every claim C-01..C-13 in CLAIMS.md maps to executable CI checks or formal proofs"}
+  B06: {status: done, note: "Negative tests in tests/test_verification_ladder.py"}
+  B07: {status: done, note: "Dedicated regression tests for BUG-01..BUG-07 and ERR-02..ERR-03 in tests/test_verification_ladder.py"}
+  B08: {status: done, note: "Golden determinism & rebuild tests in tests/test_verification_ladder.py"}
+  B09: {status: done, note: "JSON schema & corpus JSONL contract tests in tests/test_verification_ladder.py"}
+  B10: {status: done}
+  B11: {status: done, note: "Independent Python exact-arithmetic differential tests against Lean theorems in tests/test_verification_ladder.py"}
+  B12: {status: done, note: "Independent rational/combinatorial reference oracles in tests/test_verification_ladder.py"}
+  B13: {status: done}
+  B14: {status: done, note: "CSS monotonicity & BM25 permutation invariance metamorphic tests in tests/test_verification_ladder.py"}
+  B15: {status: n/a, note: "No native C/C++/asm code"}
+  B16: {status: n/a, note: "No native C/C++/asm code"}
+  B17: {status: done}
+  B18: {status: done}
+  B19: {status: n/a, note: "Build and validation pipeline is single-threaded deterministic"}
+  B20: {status: done, note: "Exact integer/Fraction arithmetic in formal proofs & oracles; bounded IEEE-754 CSS rounding tested in tests/test_properties.py"}
+  B21: {status: n/a, note: "Not a networked runtime service"}
+  B22: {status: done, note: "Lean 4.35.0 formal core in formal/ (14 theorems, 6 non-vacuity witnesses, 6-kernel replay)"}
+  B23: {status: n/a, note: "Pure mathematical theorem proving in Lean 4; no TLA+/Alloy concurrent state-machine protocol"}
+  B24: {status: done, note: "Lean 4.35.0 dependently typed pure functional core (formal/) replayed across 6 independent kernels"}
+  B25: {status: n/a, note: "No C/Rust systems implementation requiring Kani/CBMC bounded model checking"}
+  B26: {status: n/a, note: "No speed/performance benchmark claims"}
+  B27: {status: n/a, note: "No performance tracking claims"}
+  B28: {status: n/a, note: "Pure mathematics atlas and deterministic Lean proofs; no stochastic randomized experiments"}
+  B29: {status: n/a, note: "No statistical hypothesis testing or p-values claimed"}
+  B30: {status: n/a, note: "No statistical effect-size or confidence-interval claims"}
+  B31: {status: n/a, note: "No multiple-comparison statistical trials"}
+  B32: {status: n/a, note: "Curated mathematical literature and deductive Lean proofs; no empirical preregistered study"}
+  B33: {status: n/a, note: "No ML models trained or evaluated"}
+  B34: {status: n/a, note: "No runtime LLM calls in repository code"}
+  B35: {status: done}
+  B36: {status: done}
+  B37: {status: done}
+  B38: {status: done}
+  B39: {status: done}
+  B40: {status: done}
+  B41: {status: done}
+  B42: {status: done}
+  B43: {status: done}
+  B44: {status: partial, note: "Operator + clean ephemeral GitHub Actions Ubuntu/Windows CI replication verified; independent third-party mathematician replication open"}
+  B45: {status: done}

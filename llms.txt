@@ -1,0 +1,15 @@
+# The Unsolved Mathematics Atlas
+
+> Reproducible, ranked, research-grade dossier of 106 open mathematical problems across 38 fields, paired with a standalone multi-kernel Lean 4.35.0 formal verification core, automated primary-source citation verification, and a deterministic RAG corpus.
+
+## Entry Points
+
+- [AGENTS.md](AGENTS.md): Canonical instructions, commands, hard rules, and known traps
+- [README.md](README.md): Overview, quickstart, master ranking, and verification status
+- [CLAIMS.md](CLAIMS.md): Complete epistemic claims ledger with falsification criteria
+- [LIMITATIONS.md](LIMITATIONS.md): Explicit scope boundaries and real-vs-metaphor audit
+- [REPLICATION.md](REPLICATION.md): Clean-clone reproduction protocol (Python + Lean 4.35.0)
+- [PHILOSOPHY.md](PHILOSOPHY.md): Epistemic principles and research methodology
+- [ARCHITECTURE.md](ARCHITECTURE.md): Data model, build pipeline, and RAG architecture
+- [formal/STATEMENT_FIDELITY.md](formal/STATEMENT_FIDELITY.md): Line-by-line Lean 4 statement fidelity audit
+- [docs/reviews/2026-11-23-forensic-philosophical-audit.md](docs/reviews/2026-11-23-forensic-philosophical-audit.md): Full 6-class taxonomy & philosophical audit

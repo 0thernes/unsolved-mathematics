@@ -1,0 +1,14 @@
+# Verification & Maintenance Run Log (`docs/run-log.md`)
+
+> **Build Standard v1.1.0 item B40.** Chronological, factual log of major verification passes, automated audits, Lean kernel replays, and data rebuilds executed on this repository.
+
+| Date (UTC-8) | Commit / Version | Operation | Command / Tool | Observed Result |
+|---|---|---|---|---|
+| 2026-07-01 | `v0.1.0` | Initial 106-problem atlas publication | `scripts/generate.py`, `scripts/validate.py` | 106 problem dossiers + 106 Claude self-review meta-analyses committed. |
+| 2026-07-02 | `v0.2.0` | Collatz multi-model QA & quarantine sweep | `scripts/proof_claim_sweep.py`, `docs/review/REPO-AUDIT-2026-07-02.md` | Quarantined superseded Collatz sketches; documented 127 findings on `codex/collatz-catalog-qa-routing`. |
+| 2026-11-23 | Baseline pre-upgrade | Build Standard v1.1.0 baseline audit | `Audit-Repo.ps1 -Path <repo>` | **26.0% (13/50)** overall, **36.4% (8/22)** core items. Identified 7 bugs, 6 errors, 5 conflicts, 4 dilemmas. |
+| 2026-11-23 | `bb76737`, `8a1ed58` | Branch consolidation & working-tree rescue | `git merge --ff-only`, cleanup of stray `fix.py`/`fix_p18.py` & banned PR template | Fast-forwarded `main` over all 30 commits from `codex/collatz-catalog-qa-routing`; removed `.github/PULL_REQUEST_TEMPLATE.md` (R4). |
+| 2026-11-23 | `8f31fc4` | Core engine, RAG & 2024–2026 frontier repair | `generate.py`, `build_corpus.py`, `validate.py`, `proof_claim_sweep.py`, live arXiv API | Fixed all 81 stale dossier README ranks, fixed duplicate RAG chunk IDs (3,763 unique chunks), caught & retracted `PROOF-SKETCH-AFFINE-COCYCLE-RIGIDITY-2026.md`, fixed Goldbach exponent & Navier–Stokes 2003 year, updated 11 problem dossiers with 14 live-verified 2024–2026 preprints. |
+| 2026-11-23 | `v0.3.0` (staged) | Lean 4.35.0 formal core build & axiom audit | `lake build Challenge Solution NonVacuity`, `lake env lean VerifyAxioms.lean`, `leanchecker-paranoid --fresh` | 14 headline theorems + 6 non-vacuity witnesses built with **0 errors, 0 warnings, 0 `sorry`**; `#print axioms` strictly $\subseteq \{\text{propext}, \text{Classical.choice}, \text{Quot.sound}\}$; `leanchecker-paranoid` EXIT=0. |
+| 2026-11-23 | `v0.3.0` (staged) | Automated primary-source citation audit | `scripts/verify_citations.py --apply --strip-invalid --workers 4` | Checked 552 identifier-bearing rows across 106 `papers.md` files (`network_error: 0`): **443 verified**, **109 invalid/hallucinated identifiers** (86 wrong-paper mismatches + 23 HTTP 404s) stripped & downgraded honestly to `needs-verification` (`data/citation-verification-log.json`). |
+| 2026-11-23 | `v0.3.0` (pending) | Full test ladder, Hypothesis, mutation, lint, manifest & CI | `pytest`, `tests/mutation_check.py`, `ruff`, `mypy`, `build_data_manifest.py`, `Audit-Repo.ps1`, GitHub Actions Ubuntu+Windows | Recorded upon completion of `v0.3.0` release checks. |

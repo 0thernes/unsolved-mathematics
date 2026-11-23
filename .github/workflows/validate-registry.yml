@@ -2,12 +2,9 @@ name: Validate Registry
 
 on:
   push:
+    branches: [main]
     paths:
-      - "data/**"
-      - "schema/**"
-      - "scripts/**"
-  pull_request:
-    paths:
+      - "VERSION"
       - "data/**"
       - "schema/**"
       - "scripts/**"
@@ -17,16 +14,19 @@ permissions:
 
 jobs:
   schema:
-    name: Schema + Integrity
+    name: Schema · Integrity · Manifest
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: "3.12"
           cache: pip
-      - run: pip install -r requirements.txt
+          cache-dependency-path: requirements-lock.txt
+      - run: python -m pip install -r requirements-lock.txt
       - name: Schema-validate registry
         run: python scripts/generate.py --check
-      - name: Integrity gate
-        run: python scripts/validate.py
+      - name: Integrity & manifest gate
+        run: |
+          python scripts/validate.py
+          python scripts/build_data_manifest.py --check

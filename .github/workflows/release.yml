@@ -1,0 +1,68 @@
+name: Release & SLSA Provenance
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+  id-token: write
+  attestations: write
+
+jobs:
+  release:
+    name: Package · SHA256SUMS · SLSA Attestation · GitHub Release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Verify VERSION matches git tag
+        run: |
+          TAG_VER="${GITHUB_REF_NAME#v}"
+          FILE_VER="$(tr -d '[:space:]' < VERSION)"
+          if [ "$TAG_VER" != "$FILE_VER" ]; then
+            echo "::error::Tag $GITHUB_REF_NAME does not match VERSION ($FILE_VER)"
+            exit 1
+          fi
+
+      - name: Set up Python 3.12 & verify integrity before packaging
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: |
+          python -m pip install -r requirements-lock.txt
+          python scripts/generate.py --check
+          python scripts/validate.py
+          python scripts/build_data_manifest.py --check
+
+      - name: Build reproducible source tarball and SHA256SUMS
+        run: |
+          mkdir -p dist
+          TARBALL="dist/unsolved-mathematics-${GITHUB_REF_NAME}.tar.gz"
+          git archive --format=tar --prefix="unsolved-mathematics-${GITHUB_REF_NAME}/" HEAD | gzip -n -9 > "$TARBALL"
+          cp data/MANIFEST.sha256 "dist/MANIFEST-${GITHUB_REF_NAME}.sha256"
+          cp data/problems.json "dist/problems-${GITHUB_REF_NAME}.json"
+          (cd dist && sha256sum "unsolved-mathematics-${GITHUB_REF_NAME}.tar.gz" "MANIFEST-${GITHUB_REF_NAME}.sha256" "problems-${GITHUB_REF_NAME}.json" > SHA256SUMS)
+          cat dist/SHA256SUMS
+
+      - name: Generate SLSA build provenance attestation
+        uses: actions/attest-build-provenance@v2
+        with:
+          subject-path: |
+            dist/unsolved-mathematics-*.tar.gz
+            dist/SHA256SUMS
+            dist/MANIFEST-*.sha256
+            dist/problems-*.json
+
+      - name: Publish GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          generate_release_notes: true
+          files: |
+            dist/unsolved-mathematics-*.tar.gz
+            dist/SHA256SUMS
+            dist/MANIFEST-*.sha256
+            dist/problems-*.json

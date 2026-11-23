@@ -2,14 +2,21 @@
 
 # 🏔️ The Unsolved Mathematics Atlas
 
-### *An exhaustive, ranked, research-grade dossier of humanity's open mathematical problems.*
+### *An audited, ranked, research-grade dossier & Lean 4.35.0 formal core of humanity's open mathematical problems.*
+
+[![CI](https://github.com/0thernes/unsolved-mathematics/actions/workflows/ci.yml/badge.svg)](https://github.com/0thernes/unsolved-mathematics/actions/workflows/ci.yml)
+[![Version](https://img.shields.io/badge/version-0.3.0-blue.svg)](VERSION)
+[![Lean](https://img.shields.io/badge/Lean-4.35.0%20(6--kernel)-7c3aed.svg)](formal/STATEMENT_FIDELITY.md)
+[![Citations](https://img.shields.io/badge/API--verified%20citations-443-10b981.svg)](data/citation-verification-log.json)
+[![License: CC BY 4.0 / MIT](https://img.shields.io/badge/license-CC%20BY%204.0%20%2F%20MIT-slate.svg)](LICENSE)
 
 **Each problem gets its own world — origin, the mind that posed it, every serious attack on it,
-the 25 papers that matter, the 10 people who matter, and a retrieval-ready knowledge base.**
+key papers with primary-source verification flags, key mathematicians, a deterministic RAG corpus,
+and an expanding zero-Mathlib Lean 4.35.0 multi-kernel formal verification core.**
 
-`v0.2.0` · branch `main` · **106 problems** · author **Alexander Donahue** · built for humans **and** machines
+`v0.3.0` · branch `main` · **106 problems** · **14 Lean 4 theorems (0 `sorry`)** · author **Alexander S. Donahue** ([ORCID 0009-0006-8168-9648](https://orcid.org/0009-0006-8168-9648)) · Status: `active`
 
-[Master Ranking](RANKING.md) · [Architecture](ARCHITECTURE.md) · [Philosophy](PHILOSOPHY.md) · [Kanban](docs/kanban/KANBAN.md) · [Methodology](docs/methodology/RANKING.md) · [RAG](rag/README.md) · [Glossary](docs/GLOSSARY.md) · [Indexes](docs/indexes/) · [Contribute](CONTRIBUTING.md)
+[Master Ranking](RANKING.md) · [Formal Core](formal/STATEMENT_FIDELITY.md) · [Claims Ledger](CLAIMS.md) · [Limitations](LIMITATIONS.md) · [Forensic Audit](docs/reviews/2026-11-23-forensic-philosophical-audit.md) · [Replication](REPLICATION.md) · [Architecture](ARCHITECTURE.md) · [Philosophy](PHILOSOPHY.md) · [Indexes](docs/indexes/)
 
 </div>
 
@@ -18,36 +25,69 @@ the 25 papers that matter, the 10 people who matter, and a retrieval-ready knowl
 ## What this is
 
 The great open problems of mathematics are scattered across textbooks, survey
-papers, MathOverflow threads, Wikipedia, and the private notes of the people who
-work on them. **This atlas gathers them into one rigorously organized, version-
-controlled, machine-readable corpus** — and ranks them from the hardest and
-oldest down to those closest to a resolution.
+papers, MathOverflow threads, Wikipedia, and private notes. **This atlas gathers
+106 of them into one rigorously organized, version-controlled, machine-readable
+corpus** — ranked from the hardest and oldest down to those closest to a
+resolution — anchored by a standalone Lean 4.35.0 formal core and automated
+epistemic integrity gates.
 
-For **every** problem you get a self-contained dossier:
+For **every** problem you get a self-contained 7-section dossier:
 
-- 📜 **`history.md`** — how it was born, how it was formulated, the timeline of progress
-- 👤 **`originator.md`** — the mathematician(s) who posed it: biography, background, ideas
-- 🧗 **`approaches.md`** — every major line of attack and partial result
+- 📜 **`history.md`** — origin, formulation, and timeline of progress
+- 👤 **`originator.md`** — the mathematician(s) who posed it
+- 🧗 **`approaches.md`** — major lines of attack and partial results
 - ⚰️ **`attempts.md`** — famous attempts, near-misses, and retracted "proofs"
-- 📚 **`papers.md`** — the **25 most important papers**, old and new, each with a verification flag
-- 🧠 **`mathematicians.md`** — the **top 10 minds** who shaped it, past and present
-- 🎯 **`status.md`** — the live frontier and what a real proof would actually require
-- 🤖 **`rag/`** — chunked, embeddable corpus so an AI can reason over it
+- 📚 **`papers.md`** — key papers with primary-source verification flags (`verified`, `high-confidence`, `needs-verification`, `ai-suggested`)
+- 🧠 **`mathematicians.md`** — the top minds who shaped the problem
+- 🎯 **`status.md`** — the live mathematical frontier (updated through November 2026)
+- 🤖 **`rag/`** — deterministic chunked corpus (`3,763` unique chunks) with zero-dependency BM25 retrieval
+- 🔬 **`formal/`** — standalone Lean 4.35.0 formal core proving 14 structural lemmas, finite cases, and barrier meta-theorems across Collatz, Erdős–Straus, Lonely Runner, and Brocard (0 `sorry`, 0 `admit`, 0 `native_decide`, standard axioms only)
 
-## Why it is built like software
+## Quickstart
 
-This is not a static list. It is a **reproducible build** with a single source
-of truth (`data/problems.yaml`), a schema, a deterministic ranking engine, a
-RAG pipeline, CI, and a Kanban research board. Add a problem to the registry,
-run one command, and a fully scaffolded dossier folder appears, the ranking
-re-computes, the README updates itself, and the RAG corpus rebuilds. See
-[ARCHITECTURE.md](ARCHITECTURE.md).
+Clone and verify everything from a clean checkout (Python 3.11+ and optional Lean 4.35.0 via `elan`):
 
 ```bash
-pip install -r requirements.txt
-python scripts/generate.py        # build folders, ranking, registry, README table
-python rag/build_corpus.py        # build the retrieval corpus
+git clone https://github.com/0thernes/unsolved-mathematics.git
+cd unsolved-mathematics
+python -m pip install -r requirements-lock.txt
+
+# Validate schema, deterministic views, citations, meta-analyses, proof-claim sweep & SHA-256 manifest
+python scripts/generate.py --check
+python scripts/validate.py
+python scripts/check_papers.py
+python scripts/proof_claim_sweep.py
+python scripts/build_data_manifest.py --check
+
+# Run full verification test ladder (unit, negative, regression, Hypothesis, differential, metamorphic, mutation)
+python -m pytest -v tests/
+python tests/mutation_check.py
+```
+
+See [`REPLICATION.md`](REPLICATION.md) for full clean-clone replication commands including the 6-kernel Lean 4.35.0 verification pass.
+
+## Usage & Examples
+
+```bash
+# Query top problems, filter by field/status, or run BM25 retrieval
+python examples/query_atlas.py --top 10
+python examples/query_atlas.py --field number-theory --status open
+python examples/query_atlas.py --search "positivity localization collatz"
 python rag/retriever.py "why is P vs NP so hard"
+
+# Rebuild generated views and RAG corpus after editing data/problems.yaml
+python scripts/generate.py
+python scripts/build_indexes.py
+python rag/build_corpus.py
+python scripts/build_data_manifest.py
+
+# Build and verify the Lean 4.35.0 formal core (zero Mathlib)
+cd formal
+lake build Challenge Solution NonVacuity
+lake env lean VerifyAxioms.lean
+# On Linux with bubblewrap (all 6 independent Lean 4.35.0 kernels):
+lake check --paranoid
+lake comparator --config comparator.json --paranoid
 ```
 
 ## The Master Ranking
@@ -207,52 +247,49 @@ unsolved-mathematics/
 └── .github/                  ← CI/CD, issue & PR templates
 ```
 
-## Integrity & honesty
+## Formal Verification Core (`formal/`)
+
+`v0.3.0` introduces a **zero-Mathlib, pure Lean 4.35.0** formal package verifying **14 structural lemmas, finite cases, and methodological barriers** across four open problems:
+
+- **Collatz Conjecture (8 theorems):** affine cylinder law, exact intercept law, Terras parity-word bijection, descent certificate soundness, no finite subcritical cover, spine ladder identity, unconditional **Positivity Localization** ($\rho_w \le -1$), and the **$\varepsilon$-Invariance Barrier** ($3n - 1$ cycle $5 \to 7 \to 5$).
+- **Erdős–Straus Conjecture (1 theorem):** Mordell mod-840 covering (834 of 840 residue classes = 99.286%).
+- **Lonely Runner Conjecture (3 theorems):** sharpness upper bound $\delta \le 1/(n+1)$ for all $n \ge 1$, plus exact cases $n = 1$ and $n = 2$.
+- **Brocard's Problem (2 theorems):** Brown solutions $n \in \{4, 5, 7\}$ and exhaustive classification for $n \le 12$.
+
+Every theorem is audited against [`formal/Challenge.lean`](formal/Challenge.lean) (`formal/comparator.json`), paired with concrete witnesses in [`formal/NonVacuity.lean`](formal/NonVacuity.lean), axiom-checked by [`formal/VerifyAxioms.lean`](formal/VerifyAxioms.lean) (strictly within `{propext, Classical.choice, Quot.sound}`), documented in [`formal/STATEMENT_FIDELITY.md`](formal/STATEMENT_FIDELITY.md), and replayed across all 6 independent Lean 4.35.0 kernels in Ubuntu CI (`lake check --paranoid` + `lake comparator --paranoid`). **None of these theorems claims to resolve the underlying open conjectures.**
+
+## Integrity, Limitations & Honest Provenance
 
 Mathematics has no tolerance for bluffing, and neither does this atlas.
 
-- **Scores are editorial estimates**, documented and falsifiable — not objective truth.
-- **Every paper and person carries a verification flag** (`verified`,
-  `high-confidence`, `needs-verification`, `ai-suggested`). Research scaffolding
-  is labeled as such and must be checked against primary sources before citing.
-- **No problem is ever called "solved" unless it is**, with a citation.
-- Where a famous "proof" is disputed (e.g. the abc conjecture / IUT), we say so
-  plainly and represent the disagreement, not a verdict.
+- **Claims & Falsifiability:** Every substantive claim carries an explicit *"What would prove us wrong"* trigger in [`CLAIMS.md`](CLAIMS.md).
+- **Known Limitations:** Read [`LIMITATIONS.md`](LIMITATIONS.md) and our complete 6-class forensic & philosophical audit ([`docs/reviews/2026-11-23-forensic-philosophical-audit.md`](docs/reviews/2026-11-23-forensic-philosophical-audit.md)) before citing any section.
+- **Primary-Source Citation Audit:** Of 552 identifier-bearing paper rows checked live against `export.arxiv.org` and `api.crossref.org` on 2026-11-23 (`data/citation-verification-log.json`), **443 are API-verified** and **109 invalid/hallucinated identifiers were stripped** (downgraded honestly to `—` / `needs-verification`). Roughly 2,100 pre-DOI historical rows remain unverified.
+- **No problem is ever called "solved" without verified primary-source evidence:** `scripts/proof_claim_sweep.py` enforces zero unhedged proof claims across all active prose in CI.
+- **Scores are editorial estimates**, documented and deterministic (`docs/methodology/RANKING.md`, `CURRENT_YEAR = 2026`) — never objective truth.
 
-See [PHILOSOPHY.md](PHILOSOPHY.md) and [docs/methodology/SOURCING.md](docs/methodology/SOURCING.md).
+See [`PHILOSOPHY.md`](PHILOSOPHY.md), [`docs/methodology/SOURCING.md`](docs/methodology/SOURCING.md), and [`SECURITY.md`](SECURITY.md).
 
-## Status
+## Maintenance Status
 
-This is an active, living research instrument. Progress is tracked on the
-[Kanban board](docs/kanban/KANBAN.md) and in [CHANGELOG.md](CHANGELOG.md).
+**Status: active** (`v0.3.0`, updated `2026-11-23`). Planned milestones live in [`ROADMAP.md`](ROADMAP.md), operational tasks in [`docs/kanban/KANBAN.md`](docs/kanban/KANBAN.md), and verification history in [`docs/run-log.md`](docs/run-log.md) and [`CHANGELOG.md`](CHANGELOG.md).
 
-## Author & accreditation
+## Author & Accreditation
 
-**Alexander Donahue** ([@0thernes](https://github.com/0thernes)) — author, curator,
-and **human-in-the-loop**. He defines the scope, methodology, ranking, and
-integrity policy, and accredits every meta-analysis produced here. AI assistance
-is disclosed throughout (see [AUTHORS.md](AUTHORS.md)).
+**Alexander S. Donahue** ([@0thernes](https://github.com/0thernes), ORCID [`0009-0006-8168-9648`](https://orcid.org/0009-0006-8168-9648), independent researcher) — author, curator, and **human-in-the-loop**. AI assistance (Claude, Codex/GPT, Gemini) is transparently disclosed in [`AUTHORS.md`](AUTHORS.md) and [`CITATION.cff`](CITATION.cff) using CRediT roles.
 
-## AI-Reviewed Meta-Analyses & academic review
+## AI-Reviewed Meta-Analyses & Academic Review
 
-Each problem can be written up as an **AI-assisted meta-analysis**, curated by the
-author and passed through a **four-model AI review panel** — Grok (xAI), Gemini
-(Google), GPT (OpenAI), and Claude (Anthropic) — before being offered for **human
-academic verification**.
+> **Honest Review Disclosure (`2026-11-23`):** While the review architecture ([`docs/review/AI-META-REVIEW.md`](docs/review/AI-META-REVIEW.md)) defines a four-model panel plus human peer review, **only 1 of 4 AI model passes (Claude self-review) has been executed across the 106 meta-analyses, and 0 of 106 have received independent human mathematician peer review**. Treat `meta-analyses/` as AI-assisted working syntheses, never as peer-reviewed literature.
 
-- 🧪 [AI Meta-Review process](docs/review/AI-META-REVIEW.md) — what "AI-Reviewed Meta-Analysis" means (and what it does **not**)
-- 🎓 [Request academic review](docs/review/ACADEMIC-REVIEW.md) — how professors, institutes, and journals can review or verify this work
-- 📄 [Meta-analyses](meta-analyses/) — the curated write-ups, one per problem
-- 🗒️ [Review register](docs/review/REGISTER.md) · [Outreach tracker](SUBMISSIONS.md)
-
-> **Honesty banner.** AI review is **not** a substitute for human peer review. Every
-> meta-analysis is clearly labeled AI-generated and not-yet-peer-reviewed; the path
-> to human verification is explicit. This transparency is the point.
+- 🧪 [AI Meta-Review process](docs/review/AI-META-REVIEW.md) — what AI review means (and what it does **not**)
+- 🎓 [Request academic review](docs/review/ACADEMIC-REVIEW.md) — how mathematicians can audit or review entries
+- 📄 [Meta-analyses](meta-analyses/) · [Review register](docs/review/REGISTER.md) · [Outreach tracker](SUBMISSIONS.md)
 
 ## License
 
-Content under [CC BY 4.0](LICENSE) © **Alexander Donahue**; code under
-[MIT](LICENSE-CODE). Reuse freely **with attribution** — see [CITATION.cff](CITATION.cff).
+Content under [CC BY 4.0](LICENSE) © **Alexander S. Donahue**; code under
+[MIT](LICENSE-CODE); third-party notices in [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md). Reuse freely **with attribution** — see [`CITATION.cff`](CITATION.cff).
 
 <div align="center">
 

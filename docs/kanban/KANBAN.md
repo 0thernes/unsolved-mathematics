@@ -1,97 +1,38 @@
-# 📋 Research Kanban — The Unsolved Mathematics Atlas
+# 📋 Research Kanban — The Unsolved Mathematics Atlas (`v0.3.0`)
 
-> The operational board for building and maintaining the atlas. This is the
-> "ERP" of the project: the process layer that turns the data model into work.
-> Columns flow left → right. A problem dossier moves across the board one card
-> at a time. Card id = problem slug.
+> Operational board tracking the atlas's verification, formalization, and curation workstreams.
+> Updated `2026-11-23` for release `v0.3.0`.
 
 **Legend:** 🟥 blocked · 🟧 needs-verification · 🟨 in-progress · 🟩 done · 🟦 backlog
-**WIP limit** on `In Progress`: 6 dossiers.
 
 ---
 
-## 🟦 Backlog (registry only — dossier not yet authored)
+## 🟦 Backlog
 
-> Problems present in `data/problems.yaml` whose `*.md` files are still templates.
+- [ ] **v0.4.0 Collatz lab separation:** Extract the 58.5 MB `problems/collatz-conjecture/experiments/` laboratory into a dedicated sibling repo (`collatz-odd-unit-lock-lab`) while preserving concise atlas summary & cross-links (Dilemma D1).
+- [ ] **v0.4.0 Optional Mathlib bridge:** Add an opt-in Mathlib sub-package for analytic/geometric statements (RH zero-free regions, BSD rank definitions, Kakeya definitions) without bloating the zero-Mathlib `formal/` core.
+- [ ] **v0.4.0 Catalog broadening:** Address selection bias in `LIMITATIONS.md` (quantum complexity, modern Langlands, stochastic PDEs, homotopy type theory).
 
-_(Auto-trackable: a dossier is "authored" when its section files no longer
-contain the `<!-- DOSSIER:* -->` placeholder markers.)_
+## 🟧 To Verify (Remaining Open Epistemic Gaps)
 
-- [ ] Expand registry beyond 40 (candidate pool below)
-- [ ] Candidate problems to add: Continuum-Hypothesis-relatives, Hilbert's 16th,
-      Goldbach-weak (verify resolved), Riemann-for-function-fields context,
-      Sarnak's conjecture, Unique Games Conjecture, Hadamard maximal determinant,
-      Casas-Alvero conjecture, Littlewood conjecture, Schinzel's Hypothesis H,
-      Carmichael totient, Catalan–Dickson (aliquot sequences), Erdős–Moser,
-      Agoh–Giuga, Cramér's conjecture, n! + 1 generalizations.
+> Primary-source API verification status as of `2026-11-23` (`data/citation-verification-log.json`):
+> **443 live API-verified identifiers** (arXiv + Crossref), **109 invalid/hallucinated identifiers purged** (downgraded to `—` / `needs-verification`), **~2,100 pre-DOI historical rows** still awaiting manual bibliographic verification. See [`docs/indexes/verification.md`](../indexes/verification.md).
 
-## 🟧 To Verify (drafted, citations need checking)
+- [ ] Manually research & add verified DOIs/arXiv IDs for the 109 stripped rows and ~2,100 pre-DOI historical citations (EPIC-2).
+- [ ] Run remaining 3 of 4 independent AI model reviews (Gemini, GPT, Grok) across the 106 meta-analyses and log verifiable review records.
+- [ ] Recruit independent human mathematician peer reviews across priority dossiers (currently `0/106` human-reviewed; see `SUBMISSIONS.md`).
 
-> All 106 dossiers are authored; **~2,650 citations** await a human source check.
-> Current flag split: 968 `high-confidence`, 1,406 `needs-verification`,
-> 271 `ai-suggested`, 0 `verified`. See [verification dashboard](../indexes/verification.md).
+## 🟨 In Progress
 
-- [ ] Promote `ai-suggested` → `needs-verification` → `verified` per
-      [SOURCING.md](../methodology/SOURCING.md) (EPIC-2)
-- [ ] Cross-check every `year_posed` and originator attribution
-- [x] Confirm resolving citation for the `recently-resolved` entry (Connes/MIP\*=RE)
+- [ ] Quarterly mathematical frontier tracking (monitoring late-2026 Lean-only GRH / Euler–NS claims until peer review settles; tracking Erdős Unit Distance `arXiv:2605.20695` peer review).
 
-## 🟨 In Progress (actively being authored)
+## 🟩 Done (`v0.1.0` – `v0.3.0`)
 
-- [ ] Verification sweep (EPIC-2) — highest-impact remaining work
-- [ ] Optional: dense embedding index + MCP retrieval server (EPIC-3)
-
-## 🟩 Done
-
-- [x] **All 106 dossiers authored** (history, originator, approaches, attempts,
-      25 papers, 10 mathematicians, status) — EPIC-1 complete, EPIC-4 to 106
-- [x] Cross-cutting indexes + verification dashboard + glossary
-- [x] RAG corpus built (3,754 chunks) and retrieval verified end-to-end
-- [x] Repository architecture + single-source-of-truth registry (`data/problems.yaml`)
-- [x] Deterministic ranking engine (`scripts/generate.py`)
-- [x] JSON Schemas (problem, paper, person)
-- [x] RAG pipeline: chunker, BM25 retriever, optional dense index
-- [x] Methodology docs (ranking, sourcing) + Philosophy + Architecture
-- [x] ER model / data model documentation
-- [x] CI/CD workflows + issue/PR templates
-- [x] Initial 40-problem registry, ranked
-
----
-
-## Epics
-
-### EPIC-1 · Corpus completeness
-Every one of the 40 dossiers has all eight section files authored with real,
-flagged content. **Definition of done:** no `<!-- DOSSIER:* -->` markers remain;
-each `papers.md` has ≥25 entries; each `mathematicians.md` has ≥10.
-
-### EPIC-2 · Verification pass
-Every paper/person flag is `verified` or `high-confidence` with a resolving
-identifier (DOI/arXiv). **DoD:** zero `ai-suggested` flags in the published set.
-
-### EPIC-3 · RAG productionization
-Dense index built and benchmarked; retrieval quality spot-checked on 20 seed
-questions; optional MCP server exposing `retriever.BM25`.
-
-### EPIC-4 · Breadth expansion
-Grow from 40 → 100+ problems, preserving dossier quality and the ranking
-invariant. **DoD:** registry ≥100, CI green, ranking stable.
-
-### EPIC-5 · Living frontier
-Quarterly sweep: update `status.md` and `tractability` scores as breakthroughs
-land (e.g. Kakeya 3D, union-closed sets, Sendov). **DoD:** changelog entry per sweep.
-
----
-
-## Process (the "ERP" workflow)
-
-```
- add to registry ─▶ generate scaffold ─▶ author dossier ─▶ verify sources
-        │                                                        │
-        └──────────────── re-rank & rebuild corpus ◀────────────┘
-                                   │
-                              CI green ─▶ merge to main ─▶ changelog
-```
-
-Each transition maps to a column move. The board is the human-facing view of the
-[data model](../architecture/DATA-MODEL.md); the registry is the database.
+- [x] **Standalone Lean 4.35.0 formal core (`formal/`):** 14 theorems across Collatz, Erdős–Straus, Lonely Runner, and Brocard; 6 non-vacuity witnesses; `VerifyAxioms.lean`; `Challenge.lean` + `comparator.json`; `STATEMENT_FIDELITY.md`; 6-kernel verification (`v0.3.0`).
+- [x] **Primary-source API citation audit (`scripts/verify_citations.py`):** 552 identifier-bearing rows checked with 0 network errors; 443 verified; 109 hallucinated/404 IDs purged (`v0.3.0`).
+- [x] **Forensic & philosophical audit (`docs/reviews/2026-11-23-forensic-philosophical-audit.md`):** Complete 6-class taxonomy (7 bugs fixed, 6 errors fixed, 5 conflicts resolved, 4 dilemmas documented) + 5W1H + Deductive/Inductive/Abductive & Philosophy of Mathematics synthesis + 10-pass review log (`v0.3.0`).
+- [x] **Verification test ladder (`tests/`):** Negative, bug-regression, golden determinism, schema contract, differential reference oracle, Hypothesis property-based, metamorphic, and 100%-kill mutation suite (`v0.3.0`).
+- [x] **2024–2026 mathematical frontier update:** 14 live-verified arXiv preprints integrated across 11 dossiers (`v0.3.0`).
+- [x] **Build Standard v1.1.0 governance, SHA-256 manifest, cross-platform CI & SLSA release workflow** (`v0.3.0`).
+- [x] **Branch consolidation:** Rescued July 2–5 working tree, fast-forwarded `main` over all 30 commits from `codex/collatz-catalog-qa-routing` (PR #2), removed banned PR template, losslessly gzipped 38.6 MB JSON to 0.64 MB (`v0.3.0`).
+- [x] **All 106 dossiers authored** (7 sections each, `3,763` unique RAG chunks, 106 Claude self-review meta-analyses) (`v0.1.0`–`v0.2.0`).

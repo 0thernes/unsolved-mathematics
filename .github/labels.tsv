@@ -1,0 +1,10 @@
+name	color	description
+bug	d73a4a	Defect in program logic: code runs differently from its specification or intent
+error	e11d48	Wrong artifact or failed execution outside program logic (bad number, citation, doc, build)
+issue	0e8a16	Gap: something required by the standard or task is missing or incomplete
+problem	b60205	External obstacle blocking progress not caused by the project's own artifacts
+dilemma	fbca04	Trade-off between valid options requiring owner priority decision
+conflict	5319e7	Two requirements, sources, or rules contradict each other
+formal-verification	1d76db	Lean 4 proofs, multi-kernel checking, statement fidelity
+citation-audit	0075ca	Primary-source DOI/arXiv resolution and hallucination removal
+frontier-update	006b75	Updating problem status for new mathematical breakthroughs

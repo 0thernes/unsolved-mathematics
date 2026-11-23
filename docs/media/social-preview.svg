@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-label="Unsolved Mathematics Atlas v0.3.0">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1020"/>
+      <stop offset="55%" stop-color="#131c36"/>
+      <stop offset="100%" stop-color="#1b2648"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="50%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="640" fill="url(#bg)"/>
+  <g stroke="#2a3966" stroke-width="1" opacity="0.35">
+    <line x1="0" y1="120" x2="1280" y2="120"/>
+    <line x1="0" y1="240" x2="1280" y2="240"/>
+    <line x1="0" y1="360" x2="1280" y2="360"/>
+    <line x1="0" y1="480" x2="1280" y2="480"/>
+    <line x1="256" y1="0" x2="256" y2="640"/>
+    <line x1="512" y1="0" x2="512" y2="640"/>
+    <line x1="768" y1="0" x2="768" y2="640"/>
+    <line x1="1024" y1="0" x2="1024" y2="640"/>
+  </g>
+  <rect x="80" y="76" width="1120" height="6" rx="3" fill="url(#accent)"/>
+  <text x="80" y="150" fill="#93c5fd" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" letter-spacing="2">0THERNES / UNSOLVED-MATHEMATICS · v0.3.0</text>
+  <text x="80" y="232" fill="#f8fafc" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="60" font-weight="700">The Atlas of Unsolved</text>
+  <text x="80" y="302" fill="#f8fafc" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="60" font-weight="700">Mathematics</text>
+  <text x="80" y="362" fill="#cbd5e1" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="26">106 open-problem dossiers · Lean 4.35.0 multi-kernel formal core · primary-source verified citations</text>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="20">
+    <rect x="80" y="420" width="250" height="84" rx="10" fill="#16213e" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="104" y="456" fill="#60a5fa" font-weight="700">106 PROBLEMS</text>
+    <text x="104" y="486" fill="#cbd5e1" font-size="16">7-section dossiers</text>
+    <rect x="354" y="420" width="270" height="84" rx="10" fill="#16213e" stroke="#a78bfa" stroke-width="1.5"/>
+    <text x="378" y="456" fill="#c4b5fd" font-weight="700">LEAN 4.35.0 CORE</text>
+    <text x="378" y="486" fill="#cbd5e1" font-size="16">14 theorems · 0 sorry</text>
+    <rect x="648" y="420" width="270" height="84" rx="10" fill="#16213e" stroke="#34d399" stroke-width="1.5"/>
+    <text x="672" y="456" fill="#6ee7b7" font-weight="700">443 API-VERIFIED</text>
+    <text x="672" y="486" fill="#cbd5e1" font-size="16">arXiv + Crossref audit</text>
+    <rect x="942" y="420" width="258" height="84" rx="10" fill="#16213e" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="966" y="456" fill="#fcd34d" font-weight="700">ZERO OVERCLAIMS</text>
+    <text x="966" y="486" fill="#cbd5e1" font-size="16">Proof-claim CI gates</text>
+  </g>
+  <text x="80" y="576" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18">Alexander S. Donahue · ORCID 0009-0006-8168-9648 · CC BY 4.0 / MIT</text>
+</svg>
