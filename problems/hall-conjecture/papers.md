@@ -15,7 +15,7 @@ _The 25 most important papers. Each carries a verification flag._
 | 9 | 1983 | The number of solutions of $y^2 = x^3 + k$ / integral points context | various | modern | — | needs-verification |
 | 10 | 1985 | Nouvelles approches du «théorème» de Fermat ($abc$ conjecture) | J. Oesterlé | foundational | — | high-confidence |
 | 11 | 1986 | Open problems (the Masser–Oesterlé $abc$ conjecture, statement) | D. W. Masser | foundational | — | needs-verification |
-| 12 | 1987 | Diophantine Approximations and Value Distribution Theory (Vojta's conjecture), LNM 1239 | P. Vojta | foundational | 10.1007/BFb0072989 | high-confidence |
+| 12 | 1987 | Diophantine Approximations and Value Distribution Theory (Vojta's conjecture), LNM 1239 | P. Vojta | foundational | 10.1007/BFb0072989 | verified |
 | 13 | 1990 | Old and new conjectured Diophantine inequalities | S. Lang | survey | — | high-confidence |
 | 14 | 1994 | On Mordell's equation $y^2 = x^3 + k$: a problem of Stolarsky | various | modern | — | needs-verification |
 | 15 | 1994 | Computing integral points on elliptic curves | R. J. Stroeker, N. Tzanakis | computational | — | high-confidence |

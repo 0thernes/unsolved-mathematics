@@ -25,7 +25,7 @@ The 25 most important works, ordered chronologically. The **Verify** column flag
 | 19 | 2011 | Geometry of polynomials and the Sendov conjecture | (expository) | expository | — | ai-suggested |
 | 20 | 2014 | Sendov conjecture for high-degree polynomials | J. Dégot | breakthrough | — | high-confidence |
 | 21 | 2017 | On the location of critical points of polynomials | (Sendov-adjacent study) | modern | — | ai-suggested |
-| 22 | 2020 | Sendov's conjecture for sufficiently high degree polynomials | T. Tao | breakthrough | arXiv:2012.04125 | high-confidence |
+| 22 | 2020 | Sendov's conjecture for sufficiently high degree polynomials | T. Tao | breakthrough | arXiv:2012.04125 | verified |
 | 23 | 2021 | Refinements / exposition of Tao's approach to Sendov | (follow-up after Tao 2020) | modern | — | ai-suggested |
 | 24 | 2022 | On Sendov's conjecture about critical points near the unit circle | T. P. Chalebgwa (and/or collaborators) | modern | — | needs-verification |
 | 25 | 2023 | Quantitative / effective aspects of Sendov's conjecture | (recent frontier work) | modern | — | ai-suggested |

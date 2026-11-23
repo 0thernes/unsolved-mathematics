@@ -18,16 +18,16 @@ _The 25 most important papers. Each carries a verification flag._
 | 12 | 2000 | The Erdős–Rado / Deza–Frankl problem on $\Delta$-systems (survey) | A. V. Kostochka | survey | — | needs-verification |
 | 13 | 2001 | Extremal set theory (handbook chapter) | P. Frankl | survey | — | needs-verification |
 | 14 | 2005 | On the size of systems of sets every $t$ of which have an SDR | various | modern | — | ai-suggested |
-| 15 | 2017 | Improved bounds for the sunflower-free sets / cap-set method | E. Naslund, W. Sawin | breakthrough | arXiv:1606.09575 | needs-verification |
+| 15 | 2017 | Improved bounds for the sunflower-free sets / cap-set method | E. Naslund, W. Sawin | breakthrough | arXiv:1606.09575 | verified |
 | 16 | 2018 | Sunflowers and quasi-sunflowers from randomness extractors | X. Li, S. Lovett, J. Zhang | modern | — | needs-verification |
 | 17 | 2018 | Sunflowers in set systems of bounded dimension / DNF sparsification | B. Rossman | modern | — | ai-suggested |
-| 18 | 2019 | Improved bounds for the sunflower lemma | R. Alweiss, S. Lovett, K. Wu, J. Zhang | breakthrough | arXiv:1908.08483 | high-confidence |
-| 19 | 2020 | Coding for sunflowers | A. Rao | breakthrough | arXiv:1909.04774 | high-confidence |
+| 18 | 2019 | Improved bounds for the sunflower lemma | R. Alweiss, S. Lovett, K. Wu, J. Zhang | breakthrough | arXiv:1908.08483 | verified |
+| 19 | 2020 | Coding for sunflowers | A. Rao | breakthrough | arXiv:1909.04774 | verified |
 | 20 | 2020 | The sunflower lemma of Alweiss–Lovett–Wu–Zhang (expository notes) | T. Tao | expository | — | high-confidence |
 | 21 | 2020 | Sunflowers: from soil to oil (survey) | A. Rao | survey | — | needs-verification |
-| 22 | 2021 | Note on sunflowers | T. Bell, S. Chueluecha, L. Warnke | modern | arXiv:2105.06561 | high-confidence |
+| 22 | 2021 | Note on sunflowers | T. Bell, S. Chueluecha, L. Warnke | modern | — | needs-verification |
 | 23 | 2021 | A self-contained / refined proof of the sunflower bound | various | expository | — | ai-suggested |
-| 24 | 2022 | Spread, thresholds and the Kahn–Kalai conjecture (related spread technology) | J. Park, H. T. Pham | breakthrough | arXiv:2203.17207 | needs-verification |
+| 24 | 2022 | Spread, thresholds and the Kahn–Kalai conjecture (related spread technology) | J. Park, H. T. Pham | breakthrough | arXiv:2203.17207 | verified |
 | 25 | 2023 | Recent progress and open problems on sunflowers (survey) | various | survey | — | ai-suggested |
 | 26 | 2026 | Proof of the Erdős-Szemerédi sunflower conjecture | Matija Bucić, Fankang He, Hyunwoo Lee | breakthrough | arXiv:2610.26686 | verified |
 

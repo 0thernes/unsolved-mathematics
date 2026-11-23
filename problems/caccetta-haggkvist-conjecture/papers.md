@@ -16,13 +16,13 @@ _The 25 most important papers. Each carries a verification flag._
 | 10 | 2003 | Directed triangles in digraphs | J. Shen | breakthrough | — | high-confidence |
 | 11 | 2003 | On the girth of digraphs | J. Shen | modern | — | needs-verification |
 | 12 | 2006 | Counting subgraphs: a new approach to the Caccetta–Häggkvist conjecture | J. A. Bondy (and collaborators) | survey | — | needs-verification |
-| 13 | 2006 | Flag algebras | A. A. Razborov | foundational | 10.2178/jsl/1154698580 | high-confidence |
+| 13 | 2006 | Flag algebras | A. A. Razborov | foundational | — | needs-verification |
 | 14 | 2007 | The Caccetta–Häggkvist conjecture and additive number theory | M. B. Nathanson | survey | — | needs-verification |
 | 15 | 2008 | Cycles in dense digraphs | M. Chudnovsky, P. Seymour, B. Sullivan | breakthrough | — | high-confidence |
 | 16 | 2008 | A note on the Caccetta–Häggkvist conjecture (fractional version) | D. C. Fisher | modern | — | needs-verification |
 | 17 | 2009 | On a conjecture of Caccetta and Häggkvist (local versions) | B. Sullivan | modern | — | ai-suggested |
-| 18 | 2009 | A survey of the Caccetta–Häggkvist conjecture | B. D. Sullivan | survey | arXiv:math/0605646 | needs-verification |
-| 19 | 2010 | Counting flags in triangle-free digraphs (flag-algebra bound ≈0.3465) | J. Hladký, D. Král', S. Norin | breakthrough | arXiv:0908.2791 | needs-verification |
+| 18 | 2009 | A survey of the Caccetta–Häggkvist conjecture | B. D. Sullivan | survey | arXiv:math/0605646 | verified |
+| 19 | 2010 | Counting flags in triangle-free digraphs (flag-algebra bound ≈0.3465) | J. Hladký, D. Král', S. Norin | breakthrough | arXiv:0908.2791 | verified |
 | 20 | 2011 | Minimum out-degree and short cycles in digraphs | various | modern | — | ai-suggested |
 | 21 | 2013 | Vertex-disjoint directed cycles and the Caccetta–Häggkvist conjecture | N. Lichiardopol | modern | — | needs-verification |
 | 22 | 2015 | Spectral approaches to the girth of digraphs | various | modern | — | ai-suggested |

@@ -13,7 +13,7 @@ _The most important papers, old and new. Each carries a verification flag. Ident
 | 7 | 1980 | On the number of prime factors of $n$ for which $\varphi(n) \mid n-1$ | M. Kishore | modern | — | needs-verification |
 | 8 | 1981 | Euler's totient and its inverse, with applications to Lehmer's problem | P. Hagis | modern | — | needs-verification |
 | 9 | 1988 | On composite $n$ for which $\varphi(n)$ divides $n-1$, II | C. Pomerance | breakthrough | — | needs-verification |
-| 10 | 1994 | There are infinitely many Carmichael numbers | W. R. Alford, A. Granville, C. Pomerance | foundational | 10.2307/2118576 | high-confidence |
+| 10 | 1994 | There are infinitely many Carmichael numbers | W. R. Alford, A. Granville, C. Pomerance | foundational | 10.2307/2118576 | verified |
 | 11 | 1995 | Carmichael numbers and the Lehmer condition (context) | A. Granville | survey | — | needs-verification |
 | 12 | 2004 | Unsolved Problems in Number Theory (3rd ed.), problem B37 | R. K. Guy | survey | — | high-confidence |
 | 13 | 2004 | Handbook of Number Theory I (totient sections) | J. Sándor, B. Crstici | survey | — | high-confidence |

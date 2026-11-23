@@ -24,10 +24,10 @@ _The 25 most important papers. Each carries a verification flag._
 | 18 | 1998 | Checking the Goldbach conjecture up to $4\cdot10^{11}$ | J.-M. Deshouillers, H. te Riele, Y. Saouter | computational | — | needs-verification |
 | 19 | 2002 | The ternary Goldbach problem (explicit / conditional bounds) | M.-Ch. Liu & T. Wang | modern | — | needs-verification |
 | 20 | 2004 | Goldbach conjecture verification (empirical results up to large bounds) | T. Oliveira e Silva et al. | computational | — | needs-verification |
-| 21 | 2012 | Minor arcs for Goldbach's problem | H. A. Helfgott | breakthrough | arXiv:1205.5252 | high-confidence |
-| 22 | 2013 | Major arcs for Goldbach's problem | H. A. Helfgott | breakthrough | arXiv:1305.2897 | high-confidence |
-| 23 | 2013 | The ternary Goldbach conjecture is true (overview / book manuscript) | H. A. Helfgott | breakthrough | arXiv:1312.7748 | needs-verification |
+| 21 | 2012 | Minor arcs for Goldbach's problem | H. A. Helfgott | breakthrough | arXiv:1205.5252 | verified |
+| 22 | 2013 | Major arcs for Goldbach's problem | H. A. Helfgott | breakthrough | arXiv:1305.2897 | verified |
+| 23 | 2013 | The ternary Goldbach conjecture is true (overview / book manuscript) | H. A. Helfgott | breakthrough | arXiv:1312.7748 | verified |
 | 24 | 2014 | Empirical verification of the even Goldbach conjecture and computation of prime gaps up to $4\cdot10^{18}$ | T. Oliveira e Silva, S. Herzog, S. Pardi | computational | — | needs-verification |
-| 25 | 2015 | The ternary Goldbach problem (survey of the resolution) | H. A. Helfgott | survey | arXiv:1501.05438 | needs-verification |
+| 25 | 2015 | The ternary Goldbach problem (survey of the resolution) | H. A. Helfgott | survey | arXiv:1501.05438 | verified |
 
 Note: arXiv identifiers for Helfgott's papers are given to the best of confident recall and are flagged accordingly; the three pre-1940 "almost-all" papers (Estermann, Chudakov, van der Corput) are genuine, near-simultaneous results whose exact titles/years are reconstructed from memory and should be checked. No identifiers were invented; entries without a confidently known DOI/arXiv id carry "—".

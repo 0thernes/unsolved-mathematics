@@ -20,14 +20,14 @@ _The 25 most important papers. Each carries a verification flag. Identifiers are
 | 14 | 2011 | The André–Oort conjecture for $\mathcal{A}_g$ (Galois orbits) | E. Ullmo, A. Yafaev | breakthrough | — | needs-verification |
 | 15 | 2014 | O-minimality and certain atypical intersections | P. Habegger, J. Pila | breakthrough | — | high-confidence |
 | 16 | 2016 | Ax–Lindemann for $\mathcal{A}_g$ | J. Pila, J. Tsimerman | breakthrough | — | high-confidence |
-| 17 | 2016 | Ax–Schanuel for the $j$-function | J. Pila, J. Tsimerman | breakthrough | arXiv:1603.00451 | high-confidence |
+| 17 | 2016 | Ax–Schanuel for the $j$-function | J. Pila, J. Tsimerman | breakthrough | — | needs-verification |
 | 18 | 2016 | Some Problems of Unlikely Intersections in Arithmetic and Geometry (monograph) | U. Zannier | survey | — | high-confidence |
 | 19 | 2016 | Beyond the André–Oort and Zilber–Pink for curves in $Y(1)^n$ | P. Habegger, J. Pila | modern | — | needs-verification |
 | 20 | 2018 | A proof of the André–Oort conjecture for $\mathcal{A}_g$ | J. Tsimerman | breakthrough | — | high-confidence |
 | 21 | 2019 | Ax–Schanuel for Shimura varieties | N. Mok, J. Pila, J. Tsimerman | breakthrough | — | high-confidence |
 | 22 | 2019 | The Ax–Schanuel conjecture for variations of Hodge structure | B. Bakker, J. Tsimerman | breakthrough | — | high-confidence |
 | 23 | 2021 | Canonical heights on the moduli space and unlikely intersections (Betti map / height bounds) | V. Dimitrov, Z. Gao, P. Habegger | modern | — | needs-verification |
-| 24 | 2022 | Canonical heights, unlikely intersections, and the André–Oort conjecture for all Shimura varieties of abelian type | J. Pila, A. Shankar, J. Tsimerman | breakthrough | arXiv:2109.08788 | needs-verification |
+| 24 | 2022 | Canonical heights, unlikely intersections, and the André–Oort conjecture for all Shimura varieties of abelian type | J. Pila, A. Shankar, J. Tsimerman | breakthrough | arXiv:2109.08788 | verified |
 | 25 | 2023 | Equidistribution, $L^2$-spaces, and the André–Oort / Zilber–Pink landscape (survey) | Z. Gao (and collaborators) | survey | — | needs-verification |
 
 **Note.** Years and identifiers reflect best recollection and should be checked against MathSciNet/zbMATH/arXiv. Several entries (Pila–Shankar–Tsimerman; the Dimitrov–Gao–Habegger height work; survey entries) were circulated as preprints before final publication, so publication year and the exact title may differ from the version cited. No DOI is asserted where confidence is insufficient; a genuine work with "—" is preferred to a fabricated identifier.

@@ -20,7 +20,7 @@ Identifiers are given only where confidently known; "—" means no reliable DOI/
 | 12 | 1994 | Unsolved Problems in Number Theory (2nd ed.), §B6 | R. K. Guy | expository | — | high-confidence |
 | 13 | 1995 | Amicable numbers and their distribution | P. Erdős, C. Pomerance, et al. | modern | — | needs-verification |
 | 14 | 2000 | Aliquot sequences and computational frontiers | W. Creyaufmüller | computational | — | needs-verification |
-| 15 | 2004 | Unsolved Problems in Number Theory (3rd ed.), §B6 | R. K. Guy | expository | 10.1007/978-0-387-26677-0 | high-confidence |
+| 15 | 2004 | Unsolved Problems in Number Theory (3rd ed.), §B6 | R. K. Guy | expository | 10.1007/978-0-387-26677-0 | verified |
 | 16 | 2004 | The aliquot constant (average of $\log(s(n)/n)$) | W. Bosma, B. Kane | modern | — | high-confidence |
 | 17 | 2008 | Aliquot sequences with small starting values: computations | W. Bosma | computational | — | needs-verification |
 | 18 | 2011 | On the distribution of sociable numbers | M. Kobayashi, P. Pollack, C. Pomerance | modern | — | needs-verification |

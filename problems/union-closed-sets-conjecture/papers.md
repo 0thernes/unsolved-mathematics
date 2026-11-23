@@ -23,14 +23,14 @@ Identifiers are given only where confidence is high; otherwise "—". The Verify
 | 15 | 2011 | The union-closed sets conjecture almost holds for almost all random... | (various; random families) | modern | — | ai-suggested |
 | 16 | 2012 | On the union-closed sets conjecture and the maximum frequency bound | Igor Balla, Béla Bollobás, Tom Eccles | modern | — | needs-verification |
 | 17 | 2013 | Large families verifying the union-closed sets conjecture ($m \ge \tfrac{2}{3}2^n$) | Igor Balla, Béla Bollobás, Tom Eccles | breakthrough | — | needs-verification |
-| 18 | 2013 | The graph formulation of the union-closed sets conjecture | H. Bruhn, P. Charbit, O. Schaudt, J. A. Telle | breakthrough | arXiv:1212.4175 | needs-verification |
-| 19 | 2015 | The journey of the union-closed sets conjecture | Henning Bruhn, Oliver Schaudt | survey | arXiv:1309.3297 | needs-verification |
+| 18 | 2013 | The graph formulation of the union-closed sets conjecture | H. Bruhn, P. Charbit, O. Schaudt, J. A. Telle | breakthrough | arXiv:1212.4175 | verified |
+| 19 | 2015 | The journey of the union-closed sets conjecture | Henning Bruhn, Oliver Schaudt | survey | arXiv:1309.3297 | verified |
 | 20 | 2018 | Maximal frequency bounds / averaging refinements for union-closed families | Tom Eccles and others | modern | — | ai-suggested |
-| 21 | 2022 | A constant lower bound for the union-closed sets conjecture | Justin Gilmer | breakthrough | arXiv:2211.09055 | high-confidence |
-| 22 | 2022 | Improved bound for the union-closed sets conjecture | Will Sawin | breakthrough | arXiv:2211.11504 | needs-verification |
-| 23 | 2022 | Approximate union-closed conjecture / sharpening Gilmer to $(3-\sqrt5)/2$ | Zachary Chase, Shachar Lovett | breakthrough | arXiv:2211.11689 | needs-verification |
-| 24 | 2022 | An optimization of the Gilmer bound for the union-closed sets conjecture | R. Alweiss, Y. Liu, M. Sawhney, K. Wu | breakthrough | arXiv:2211.11731 | needs-verification |
-| 25 | 2022 | A note on the union-closed sets conjecture (sharp constant) | Luke Pebody | modern | arXiv:2212.00658 | ai-suggested |
+| 21 | 2022 | A constant lower bound for the union-closed sets conjecture | Justin Gilmer | breakthrough | arXiv:2211.09055 | verified |
+| 22 | 2022 | Improved bound for the union-closed sets conjecture | Will Sawin | breakthrough | arXiv:2211.11504 | verified |
+| 23 | 2022 | Approximate union-closed conjecture / sharpening Gilmer to $(3-\sqrt5)/2$ | Zachary Chase, Shachar Lovett | breakthrough | arXiv:2211.11689 | verified |
+| 24 | 2022 | An optimization of the Gilmer bound for the union-closed sets conjecture | R. Alweiss, Y. Liu, M. Sawhney, K. Wu | breakthrough | arXiv:2211.11731 | verified |
+| 25 | 2022 | A note on the union-closed sets conjecture (sharp constant) | Luke Pebody | modern | arXiv:2212.00658 | verified |
 | 26 | 2026 | Beyond Liu's 0.382709 threshold for the union-closed sets conjecture | Simone Costa, Ankan Sadhu | breakthrough | arXiv:2610.02295 | verified |
 
 Note on identifiers: the November 2022 entropy papers (rows 21–25) are recent, famous, and clustered; the Gilmer paper (row 21) is certain. The arXiv numbers attached to rows 22–25 are the plausible identifiers from that burst but are flagged for verification because several near-simultaneous notes shared similar titles and the exact id/author pairing should be confirmed. Older rows (1–20) are real works in the documented literature, but precise titles, years, and venues for several should be checked against a bibliographic source before citing — hence "—" identifiers and conservative flags rather than invented DOIs.

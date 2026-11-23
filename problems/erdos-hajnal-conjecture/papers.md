@@ -12,7 +12,7 @@ _The 25 most important papers. Each carries a verification flag._
 | 6 | 2001 | Ramsey-type theorems with forbidden subgraphs | N. Alon, J. Pach, J. Solymosi | breakthrough | — | high-confidence |
 | 7 | 2000 | A fixed graph property and induced subgraphs | A. Hajnal | modern | — | ai-suggested |
 | 8 | 2008 | Properties, proof and consequences of the EH-type bound | J. Fox, B. Sudakov | modern | — | needs-verification |
-| 9 | 2009 | Density theorems for bipartite graphs and related Ramsey-type results | J. Fox, B. Sudakov | breakthrough | arXiv:0707.4159 | needs-verification |
+| 9 | 2009 | Density theorems for bipartite graphs and related Ramsey-type results | J. Fox, B. Sudakov | breakthrough | arXiv:0707.4159 | verified |
 | 10 | 2010 | Erdős–Hajnal-type theorems in hypergraphs | M. Conlon, J. Fox, B. Sudakov | modern | — | ai-suggested |
 | 11 | 2012 | Excluding induced subgraphs and the EH property (tournament cases) | E. Berger, K. Choromanski, M. Chudnovsky, et al. | modern | — | ai-suggested |
 | 12 | 2014 | The Erdős–Hajnal conjecture — a survey | M. Chudnovsky | survey | — | high-confidence |
@@ -28,6 +28,6 @@ _The 25 most important papers. Each carries a verification flag._
 | 22 | 2023 | The Erdős–Hajnal conjecture for the five-cycle ($C_5$) | M. Bucić, T. Nguyen, A. Scott, P. Seymour | breakthrough | — | needs-verification |
 | 23 | 2024 | Subdivisions, prime graphs and new EH families | T. Nguyen, A. Scott, P. Seymour | modern | — | ai-suggested |
 | 24 | 2008 | Ramsey-type results for unions and substitutions | N. Alon, J. Pach, R. Pinchasi, et al. | modern | — | ai-suggested |
-| 25 | 2021 | Twin-width and tame graph classes (EH connections) | É. Bonnet, E. Kim, S. Thomassé, R. Watrigant | modern | arXiv:2004.14789 | needs-verification |
+| 25 | 2021 | Twin-width and tame graph classes (EH connections) | É. Bonnet, E. Kim, S. Thomassé, R. Watrigant | modern | arXiv:2004.14789 | verified |
 
 **Note on reliability.** The foundational rows (Erdős–Szekeres 1935, Erdős 1947, Erdős–Hajnal 1989, Alon–Pach–Solymosi 2001, the Chudnovsky 2014 survey) are canonical and marked high-confidence; their identifiers are deliberately left as "—" rather than risk an incorrect DOI/arXiv number. Several mid-table rows reflect a known body of work (Fox–Sudakov density theorems; the Berger–Choromanski–Chudnovsky tournament line; Chudnovsky–Safra bull-free; Nguyen–Scott–Seymour loglog improvement and the Bucić–Nguyen–Scott–Seymour $C_5$ result) whose *existence and authorship* are well established, but exact titles/years and identifiers should be confirmed against the original sources before citation — hence "needs-verification" or "ai-suggested." The two arXiv identifiers provided (0707.4159 for Fox–Sudakov density, 2004.14789 for twin-width) are offered as plausible matches but are flagged needs-verification. No identifier here should be treated as authoritative without checking.

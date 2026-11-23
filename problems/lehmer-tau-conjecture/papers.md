@@ -27,7 +27,7 @@ _The 25 most important papers. Each carries a verification flag._
 | 21 | 2011 | A family of Calabi–Yau varieties and potential automorphy II (Sato–Tate) | T. Barnet-Lamb, D. Geraghty, M. Harris, R. Taylor | breakthrough | — | high-confidence |
 | 22 | 2014 | Computing the image of Galois representations attached to elliptic/modular forms | various (Bosman; Mascot) | computational | — | ai-suggested |
 | 23 | 2017 | Lehmer's conjecture and the value distribution of $\tau$ (survey/notes) | various | survey | — | ai-suggested |
-| 24 | 2021 | The equation $\tau(n)=\pm\ell^m$ and Lehmer-type non-vanishing | M. A. Bennett, A. Gajović, et al. | modern | arXiv:2101.05984 | needs-verification |
+| 24 | 2021 | The equation $\tau(n)=\pm\ell^m$ and Lehmer-type non-vanishing | M. A. Bennett, A. Gajović, et al. | modern | — | needs-verification |
 | 25 | 2022 | On the local densities and prescribed values of $\tau(n)$ | V. Patel, et al. / Bennett et al. | modern | — | needs-verification |
 
 ## Note on identifiers and verification

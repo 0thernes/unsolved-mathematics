@@ -24,7 +24,7 @@ _The 25 most important papers. Each carries a verification flag._
 | 18 | 1999 | Old and New Problems and Results in Combinatorial Number Theory (context) | P. Erdős, R. L. Graham | survey | — | needs-verification |
 | 19 | 2002 | Computational verification of the Erdős–Straus conjecture (web tables) | Allan Swett | computational | — | needs-verification |
 | 20 | 2007 | On the Erdős–Straus conjecture / sums of three unit fractions | various | modern | — | ai-suggested |
-| 21 | 2011 | Counting the number of solutions to the Erdős–Straus equation on unit fractions | Christian Elsholtz, Terence Tao | breakthrough | arXiv:1107.1010 | high-confidence |
+| 21 | 2011 | Counting the number of solutions to the Erdős–Straus equation on unit fractions | Christian Elsholtz, Terence Tao | breakthrough | arXiv:1107.1010 | verified |
 | 22 | 2012 | Egyptian fractions (survey chapter) | Christian Elsholtz | survey | — | needs-verification |
 | 23 | 2015 | On the number of representations of $4/n$ as a sum of unit fractions | various | modern | — | ai-suggested |
 | 24 | 2019 | Verification and heuristics for the Erdős–Straus conjecture (extended ranges) | various | computational | — | ai-suggested |

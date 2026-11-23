@@ -12,7 +12,7 @@ _The 25 most important papers. Each carries a verification flag._
 | 6 | 1984 | View-obstruction problems and the lonely runner ($n=4$) | T. W. Cusick & Carl Pomerance | breakthrough | — | high-confidence |
 | 7 | 1990 | Diophantine approximation and the geometry of numbers (context survey) | Jörg M. Wills | survey | — | needs-verification |
 | 8 | 1994 | View-obstruction problems III | T. W. Cusick | modern | — | needs-verification |
-| 9 | 1998 | Flows, view obstructions, and the lonely runner | W. Bienia, L. Goddyn, P. Gvozdjak, A. Sebő, M. Tarsi | breakthrough | 10.1006/jctb.1997.1770 | high-confidence |
+| 9 | 1998 | Flows, view obstructions, and the lonely runner | W. Bienia, L. Goddyn, P. Gvozdjak, A. Sebő, M. Tarsi | breakthrough | 10.1006/jctb.1997.1770 | verified |
 | 10 | 2001 | The view-obstruction problem for n-dimensional cubes | Y. G. Chen & T. W. Cusick | modern | — | needs-verification |
 | 11 | 2001 | Circular chromatic number and the lonely runner / distance graphs | Xuding Zhu | modern | — | needs-verification |
 | 12 | 2004 | Six lonely runners | Wojciech Bienia et al. / exposition | expository | — | ai-suggested |
@@ -22,7 +22,7 @@ _The 25 most important papers. Each carries a verification flag._
 | 16 | 2011 | On a generalization of the lonely runner conjecture | various | modern | — | ai-suggested |
 | 17 | 2012 | Correlation among runners and some results on the lonely runner conjecture | G. Perarnau & O. Serra | modern | — | needs-verification |
 | 18 | 2016 | A note on the lonely runner conjecture / gaps of divisors | various | modern | — | ai-suggested |
-| 19 | 2017 | Some remarks on the lonely runner conjecture | Terence Tao | breakthrough | arXiv:1701.02048 | high-confidence |
+| 19 | 2017 | Some remarks on the lonely runner conjecture | Terence Tao | breakthrough | arXiv:1701.02048 | verified |
 | 20 | 2018 | Sums of distances and the lonely runner (probabilistic bounds) | various | modern | — | ai-suggested |
 | 21 | 2019 | The lonely runner conjecture for many runners (asymptotic constants) | various | modern | — | ai-suggested |
 | 22 | 2020 | Dynamic / shifted variants of the lonely runner conjecture | various | modern | — | ai-suggested |

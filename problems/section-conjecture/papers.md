@@ -19,7 +19,7 @@ _The 25 most important papers. Each carries a verification flag._
 | 13 | 2009 | A descent obstruction / sections and the Brauer–Manin obstruction | D. Harari, J. Stix | modern | — | needs-verification |
 | 14 | 2010 | Sections of the fundamental group / finiteness of $\Sha$ | H. Esnault, O. Wittenberg | modern | — | needs-verification |
 | 15 | 2010 | On the section conjecture in anabelian geometry (Habilitation lectures) | J. Stix | survey | — | needs-verification |
-| 16 | 2010 | $2$-nilpotent real section conjecture | K. Wickelgren | modern | arXiv:1006.0265 | needs-verification |
+| 16 | 2010 | $2$-nilpotent real section conjecture | K. Wickelgren | modern | arXiv:1006.0265 | verified |
 | 17 | 2011 | Anabelian intersection theory / real section results | A. Pál | modern | — | ai-suggested |
 | 18 | 2012 | On the birational $p$-adic section conjecture | F. Pop, M. Saïdi | breakthrough | — | needs-verification |
 | 19 | 2013 | Rational Points and Arithmetic of Fundamental Groups (LNM 2054) | J. Stix | survey | — | high-confidence |

@@ -22,14 +22,14 @@ Identifiers are given only where confidently known; "—" means no reliable DOI/
 | 14 | 1993 | The problem of illumination of the boundary of a convex body by affine subspaces | K. Bezdek | modern | — | needs-verification |
 | 15 | 2001 | Combinatorial geometry of belt bodies (illumination of belt polytopes) | V. Boltyanski, H. Martini | modern | — | needs-verification |
 | 16 | 2001 | Excursions into Combinatorial Geometry (monograph) | V. Boltyanski, H. Martini, P. S. Soltan | survey | — | high-confidence |
-| 17 | 2010 | The geometry of homothetic covering and illumination (survey) | K. Bezdek, M. A. Khan | survey | arXiv:1602.06040 | needs-verification |
+| 17 | 2010 | The geometry of homothetic covering and illumination (survey) | K. Bezdek, M. A. Khan | survey | arXiv:1602.06040 | verified |
 | 18 | 2011 | Classical Topics in Discrete Geometry (illumination chapters) | K. Bezdek | survey | — | high-confidence |
 | 19 | 2013 | Illuminating spindle convex bodies and minimal volume covers | K. Bezdek, A. E. Litvak | modern | — | needs-verification |
 | 20 | 2015 | Covering convex bodies by cylinders and illumination | M. Naszódi | modern | — | needs-verification |
 | 21 | 2016 | Fractional illumination of convex bodies | S. Artstein-Avidan, M. Naszódi | breakthrough | — | needs-verification |
 | 22 | 2016 | Improved bounds for the illumination of symmetric convex bodies (concentration methods) | M. Naszódi | modern | — | needs-verification |
 | 23 | 2018 | On the illumination of 1-symmetric convex bodies / discrete covering | B.-H. Vritsiou et al. | modern | — | needs-verification |
-| 24 | 2021 | Improved bounds for Hadwiger's covering problem via thin-shell estimates | H. Huang, B. A. Slomka, T. Tkocz, B.-H. Vritsiou | breakthrough | arXiv:1911.00559 | needs-verification |
+| 24 | 2021 | Improved bounds for Hadwiger's covering problem via thin-shell estimates | H. Huang, B. A. Slomka, T. Tkocz, B.-H. Vritsiou | breakthrough | — | needs-verification |
 | 25 | 2022 | Covering and illumination: recent progress and open problems (survey) | M. Naszódi | survey | — | needs-verification |
 
 **Note.** Several entries above are real, well-known contributions whose exact titles/years may differ slightly from the canonical citation, and whose DOIs are deliberately omitted rather than guessed; these carry "needs-verification". The two arXiv identifiers (the Bezdek–Khan survey and the Huang–Slomka–Tkocz–Vritsiou improvement) are given with moderate confidence and should be confirmed against arXiv before use. Items marked "high-confidence" are works whose existence and authorship are essentially certain (Levi 1955; the 1960 Boltyanski and Gohberg–Markus papers; the Boltyanski–Martini–Soltan and Bezdek monographs); even these should not be treated as content-verified here.

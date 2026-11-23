@@ -8,7 +8,7 @@ _The 25 most important papers. Each carries a verification flag._
 | 2 | 1976 | How good is the information theory bound in sorting? | Michael L. Fredman | foundational | — | high-confidence |
 | 3 | 1980 | The XYZ conjecture and the FKG inequality | Lawrence A. Shepp | foundational | — | high-confidence |
 | 4 | 1982 | The XYZ inequality / correlation for linear extensions | L. A. Shepp; R. Ahlswede & D. Daykin (context) | foundational | — | needs-verification |
-| 5 | 1984 | The information-theoretic bound is good for merging | Nathan Linial | breakthrough | 10.1137/0213049 | high-confidence |
+| 5 | 1984 | The information-theoretic bound is good for merging | Nathan Linial | breakthrough | 10.1137/0213049 | verified |
 | 6 | 1984 | Combinatorics and Partially Ordered Sets: Dimension Theory (book) | William T. Trotter | foundational | — | high-confidence |
 | 7 | 1991 | Balancing poset extensions | Jeff Kahn, Michael Saks | breakthrough | — | high-confidence |
 | 8 | 1989 | Some order-theoretic properties of balanced pairs | Graham R. Brightwell | modern | — | needs-verification |

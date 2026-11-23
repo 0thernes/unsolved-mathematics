@@ -19,14 +19,14 @@ _The most important works, old and new, ordered chronologically. Identifiers are
 | 13 | 1996 | Modular functions and transcendence questions (algebraic independence of $\pi, e^\pi, \Gamma(1/4)$) | Yuri V. Nesterenko | breakthrough | — | high-confidence |
 | 14 | 1996 | Model completeness results for expansions of the real field by restricted Pfaffian functions and the exponential function | A. J. Wilkie | breakthrough | — | high-confidence |
 | 15 | 1996 | On the decidability of the real exponential field | A. Macintyre & A. J. Wilkie | modern | — | high-confidence |
-| 16 | 2000 | Introduction to Algebraic Independence Theory | Yu. Nesterenko & P. Philippon (eds.) | survey | 10.1007/BFb0093997 | needs-verification |
+| 16 | 2000 | Introduction to Algebraic Independence Theory | Yu. Nesterenko & P. Philippon (eds.) | survey | — | needs-verification |
 | 17 | 2000 | Diophantine Approximation on Linear Algebraic Groups | Michel Waldschmidt | survey | — | high-confidence |
 | 18 | 2002 | Exponentiation is hard to avoid / Pseudo-exponentiation (early form) | Boris Zilber | modern | — | needs-verification |
-| 19 | 2005 | Pseudo-exponentiation on algebraically closed fields of characteristic zero | Boris Zilber | breakthrough | 10.1016/j.apal.2004.07.001 | high-confidence |
+| 19 | 2005 | Pseudo-exponentiation on algebraically closed fields of characteristic zero | Boris Zilber | breakthrough | 10.1016/j.apal.2004.07.001 | verified |
 | 20 | 2006 | A note on the axioms for Zilber's pseudo-exponential fields | Jonathan Kirby | modern | — | needs-verification |
 | 21 | 2010 | Exponential algebraicity in exponential fields | Jonathan Kirby | modern | — | needs-verification |
 | 22 | 2013 | The geometry of the exponential function / Schanuel conditions (survey) | various (Kirby, Macintyre) | survey | — | ai-suggested |
-| 23 | 2016 | Ax–Schanuel for the $j$-function | Jonathan Pila & Jacob Tsimerman | breakthrough | 10.1215/00127094-3620005 | high-confidence |
+| 23 | 2016 | Ax–Schanuel for the $j$-function | Jonathan Pila & Jacob Tsimerman | breakthrough | 10.1215/00127094-3620005 | verified |
 | 24 | 2018 | Pursuing polynomial bounds / Exponential-algebraic closedness and quasiminimality | Vahagn Aslanyan, Jonathan Kirby, et al. | modern | — | needs-verification |
 | 25 | 2022 | Exponential-algebraic closedness of $(\mathbb{C},\exp)$ (raising to powers / blurred exponential) | Martin Bays & Jonathan Kirby (and Aslanyan–Mantova) | modern | — | needs-verification |
 

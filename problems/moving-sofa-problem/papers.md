@@ -17,9 +17,9 @@ The moving sofa problem has a comparatively small primary literature: a handful 
 | 9 | 2008 | A Note on Moving a Sofa (bounds / refinements) | Philip Gibbs | modern | — | needs-verification |
 | 10 | 2011 | An Ambidextrous Sofa (early exploration of the two-way variant) | Philip Gibbs | modern | — | ai-suggested |
 | 11 | 2016 | The Moving Sofa Problem (expository survey) | Dan Romik | survey | — | high-confidence |
-| 12 | 2017 | Differential equations and exact solutions in the moving sofa problem | Dan Romik | breakthrough | 10.1080/10586458.2016.1270858 | needs-verification |
+| 12 | 2017 | Differential equations and exact solutions in the moving sofa problem | Dan Romik | breakthrough | 10.1080/10586458.2016.1270858 | verified |
 | 13 | 2018 | Improved Upper Bounds in the Moving Sofa Problem | Yoav Kallus, Dan Romik | breakthrough | — | high-confidence |
-| 14 | 2018 | (arXiv preprint) Improved upper bounds in the moving sofa problem | Yoav Kallus, Dan Romik | breakthrough | arXiv:1706.06630 | needs-verification |
+| 14 | 2018 | (arXiv preprint) Improved upper bounds in the moving sofa problem | Yoav Kallus, Dan Romik | breakthrough | arXiv:1706.06630 | verified |
 | 15 | 2024 | Optimality of Gerver's Sofa | Jineon Baek | breakthrough | arXiv:2411.19826 | verified |
 | 16 | 2026 | Certified Geometry and Admissible Motion of Gerver's Sofa | Dawid Trela | computational | arXiv:2610.13955 | verified |
 | 17 | 1995 | Moving a sofa: notes and a numerical study | (attributed; corridor variants) | computational | — | ai-suggested |

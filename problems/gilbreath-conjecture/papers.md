@@ -14,7 +14,7 @@ Gilbreath's conjecture has a relatively small dedicated literature: a founding n
 | 6 | 1981 | Unsolved Problems in Number Theory (1st ed., entry A10/related) | Richard K. Guy | survey | — | high-confidence |
 | 7 | 1983 | Gilbreath's conjecture discussion in recreational/number-theory columns | Martin Gardner | expository | — | needs-verification |
 | 8 | 1990s | A constant arising in Gilbreath-type difference tables | Steven R. Finch (collected later in *Mathematical Constants*) | expository | — | needs-verification |
-| 9 | 1993 | Iterated absolute values of differences of consecutive primes | Andrew M. Odlyzko | breakthrough | 10.1090/S0025-5718-1993-1185244-2 | needs-verification |
+| 9 | 1993 | Iterated absolute values of differences of consecutive primes | Andrew M. Odlyzko | breakthrough | — | needs-verification |
 | 10 | 1994 | Unsolved Problems in Number Theory (2nd ed.) — Gilbreath entry | Richard K. Guy | survey | — | high-confidence |
 | 11 | 1996 | The New Book of Prime Number Records — Gilbreath discussion | Paulo Ribenboim | expository | — | high-confidence |
 | 12 | 1998 | An Introduction to the Theory of Numbers (coverage of prime-gap conjectures) | G. H. Hardy, E. M. Wright (rev. eds.) | expository | — | needs-verification |

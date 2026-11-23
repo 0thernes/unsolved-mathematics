@@ -26,7 +26,7 @@ Identifiers are given only where confidently known; "—" means no identifier is
 | 18 | 2006 | Trivial-group presentations and AC-moves: a computational survey | Myasnikov et al. | survey | — | needs-verification |
 | 19 | 2006 | Heegaard splittings, the virtually Haken conjecture and AC-type moves | J. Hempel / related | modern | — | ai-suggested |
 | 20 | 2011 | Lengths of trivializations and the difficulty of AC | (computational group theory literature) | computational | — | ai-suggested |
-| 21 | 2015 | The complexity of balanced presentations and the Andrews–Curtis conjecture | M. R. Bridson | breakthrough | arXiv:1504.04187 | needs-verification |
+| 21 | 2015 | The complexity of balanced presentations and the Andrews–Curtis conjecture | M. R. Bridson | breakthrough | arXiv:1504.04187 | verified |
 | 22 | 2016 | Andrews–Curtis groups and the difficulty of trivializing | M. R. Bridson | breakthrough | — | needs-verification |
 | 23 | 2019 | Conjectures of Andrews–Curtis and the search for AC-trivializations | D. Panteleev, A. Ushakov | computational | — | needs-verification |
 | 24 | 2021 | The Andrews–Curtis conjecture, term rewriting and first-order proofs | A. Lisitsa | computational | — | needs-verification |

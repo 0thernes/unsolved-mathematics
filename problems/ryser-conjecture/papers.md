@@ -18,7 +18,7 @@ Identifiers are given only where confidently known; "—" means no identifier is
 | 10 | 2006 | Independent systems of representatives in weighted graphs | Ron Aharoni, Eli Berger, Ran Ziv | modern | — | needs-verification |
 | 11 | 2009 | Extremal hypergraphs for Ryser's conjecture | Penny Haxell, Lothar Narins, Tibor Szabó | modern | — | needs-verification |
 | 12 | 2012 | Covers in $r$-partite $r$-uniform hypergraphs (intersecting case) | Zsolt Tuza | modern | — | needs-verification |
-| 13 | 2016 | A counterexample to the uniqueness of Ryser-extremal intersecting hypergraphs | A. Abu-Khazneh | modern | arXiv:1601.06710 | needs-verification |
+| 13 | 2016 | A counterexample to the uniqueness of Ryser-extremal intersecting hypergraphs | A. Abu-Khazneh | modern | — | needs-verification |
 | 14 | 2017 | On Ryser's conjecture for $r=4$ and $r=5$ | Penny Haxell, Alex Scott | breakthrough | — | needs-verification |
 | 15 | 2018 | A non-projective-plane family of Ryser-extremal hypergraphs | A. Abu-Khazneh, J. Barát, A. Pokrovskiy, T. Szabó | modern | — | needs-verification |
 | 16 | 2017 | Ryser's conjecture for $t$-intersecting hypergraphs | Anurag Bishnoi, Valentina Pepe (or coauthors) | modern | — | ai-suggested |

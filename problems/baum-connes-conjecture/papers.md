@@ -23,7 +23,7 @@ _The 25 most important papers. Each carries a verification flag._
 | 17 | 2003 | The Baum–Connes conjecture for almost-connected groups and for linear p-adic groups | J. Chabert, S. Echterhoff, R. Nest | breakthrough | — | high-confidence |
 | 18 | 2004 | Expanders, exact crossed products, and the Baum–Connes conjecture | G. Skandalis, J.-L. Tu, G. Yu | negative-result | — | needs-verification |
 | 19 | 2008 | Equivariant E-theory and the Baum–Connes conjecture (Going-Down) | J. Chabert, S. Echterhoff | modern | — | needs-verification |
-| 20 | 2008 | The Baum–Connes conjecture via localisation of categories | R. Meyer, R. Nest | survey | 10.1016/j.top.2006.05.001 | needs-verification |
+| 20 | 2008 | The Baum–Connes conjecture via localisation of categories | R. Meyer, R. Nest | survey | — | needs-verification |
 | 21 | 2008 | Expanders and the Baum–Connes conjecture / index theory (survey) | A. Valette | survey | — | needs-verification |
 | 22 | 2012 | La conjecture de Baum–Connes à coefficients pour les groupes hyperboliques | V. Lafforgue | breakthrough | — | high-confidence |
 | 23 | 2015 | Higher index theory and the Baum–Connes conjecture (book/lecture notes) | R. Willett, G. Yu | expository | — | needs-verification |

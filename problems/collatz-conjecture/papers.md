@@ -10,13 +10,13 @@ Identifiers are given only where confidently known; "—" means no identifier is
 | 2 | 1979 | On the existence of a density (addendum to the 1976 paper) | Riho Terras | foundational | Acta Arith. 35, 101–102 | verified |
 | 3 | 1977 | Iteration of the number-theoretic function $f(2n)=n$, $f(2n+1)=3n+2$ (almost-all descent) | C. J. Everett | foundational | 10.1016/0001-8708(77)90087-1 | verified |
 | 4 | 1977 | A theorem on the Syracuse problem (exclusion of 1-cycles) | Ray P. Steiner | breakthrough | Proc. 7th Manitoba Conf. Numer. Math., Utilitas Math., 553–559 | high-confidence |
-| 6 | 1985 | The $3x+1$ problem and its generalizations | Jeffrey C. Lagarias | survey | 10.2307/2322189 | high-confidence |
+| 6 | 1985 | The $3x+1$ problem and its generalizations | Jeffrey C. Lagarias | survey | 10.2307/2322189 | verified |
 | 8 | 1989 | How many numbers satisfy the $3x+1$ conjecture? ($\theta(x) > cx^{3/7}$) | Ilia Krasikov | modern | 10.1155/S0161171289000979 | verified |
 | 9 | 1992 | The $3x+1$ problem: two stochastic models | Jeffrey C. Lagarias & Alan Weiss | modern | Ann. Appl. Prob. 2, 229–261 | verified |
 | 10 | 1984–85 | A generalization of Hasse's generalization of the Syracuse algorithm; A Markov approach to the generalized Syracuse algorithm | Keith R. Matthews & A. M. Watts | modern | Acta Arith. 43, 167–175; Acta Arith. 45, 29–42 | verified |
 | 11 | 1999 | Maximum excursion and stopping time record-holders for the $3x+1$ problem: computational results | Tomás Oliveira e Silva | computational | 10.1090/S0025-5718-99-01031-5 | verified |
 | 12 | 2003 | Bounds for the $3x+1$ problem using difference inequalities | Ilia Krasikov & Jeffrey C. Lagarias | breakthrough | — | high-confidence |
-| 13 | 2003 | The $3x+1$ problem: an annotated bibliography (1963–1999) | Jeffrey C. Lagarias | survey | arXiv:math/0309224 | high-confidence |
+| 13 | 2003 | The $3x+1$ problem: an annotated bibliography (1963–1999) | Jeffrey C. Lagarias | survey | arXiv:math/0309224 | verified |
 | 14 | 2005 | Theoretical and computational bounds for m-cycles of the $3n+1$-problem (published bound $m \le 68$; the method with later verification data yields $m \le 75$, i.e. $m \ge 76$ as cited by Hercher) | John L. Simons & Benne M. M. de Weger | breakthrough | 10.4064/aa117-1-3 | verified |
 | 15 | 2006 | The $3x+1$ problem: an annotated bibliography, II (2000–2009) | Jeffrey C. Lagarias | survey | arXiv:math/0608208 | verified |
 | 16 | 2007 | The undecidability of the generalized Collatz problem ($\Pi^0_2$-complete) | Stuart A. Kurtz & Janos Simon | negative-result | 10.1007/978-3-540-72504-6_49 | verified |
@@ -26,13 +26,13 @@ Identifiers are given only where confidently known; "—" means no identifier is
 | 20 | 2005 | Benford's law, values of $L$-functions and the $3x+1$ problem | Alex V. Kontorovich & Steven J. Miller | expository | Acta Arith. 120, 269–297 | verified |
 | 20b | 2006 | Benford's law for the $3x+1$ function | Jeffrey C. Lagarias & K. Soundararajan | expository | arXiv:math/0509175; J. London Math. Soc. 74(2), 289–303 | verified |
 | 21 | 2017 | A note on the probabilistic heuristics for Collatz | various | expository | — | ai-suggested |
-| 22 | 2019 | Almost all orbits of the Collatz map attain almost bounded values | Terence Tao | breakthrough | arXiv:1909.03562 | high-confidence |
-| 23 | 2020 | Convergence verification of the Collatz problem (to $2^{68}$) | David Bařina | computational | 10.1007/s11227-020-03368-x | high-confidence |
+| 22 | 2019 | Almost all orbits of the Collatz map attain almost bounded values | Terence Tao | breakthrough | arXiv:1909.03562 | verified |
+| 23 | 2020 | Convergence verification of the Collatz problem (to $2^{68}$) | David Bařina | computational | 10.1007/s11227-020-03368-x | verified |
 | 24 | 2021 | Stochastic and entropy methods following Tao's theorem | various | modern | — | ai-suggested |
 | 25 | 2023 | There are no Collatz $m$-Cycles with $m \le 91$ | Christian Hercher | breakthrough | JIS 26, Article 23.3.5 | high-confidence |
-| 26 | 2025 | Improved verification limit for the convergence of the Collatz conjecture (to $2^{71}$) | David Bařina | computational | 10.1007/s11227-025-07337-0 | high-confidence |
-| 27 | 2026 | An improved algorithm for checking the Collatz conjecture for all $n < 2^N$ | Vigleik Angeltveit | computational (preprint) | arXiv:2602.10466 | high-confidence |
-| 28 | 2026 | Exploring Collatz Dynamics with Human-LLM Collaboration | Edward Y. Chang | survey (preprint) | arXiv:2603.11066 | high-confidence |
+| 26 | 2025 | Improved verification limit for the convergence of the Collatz conjecture (to $2^{71}$) | David Bařina | computational | 10.1007/s11227-025-07337-0 | verified |
+| 27 | 2026 | An improved algorithm for checking the Collatz conjecture for all $n < 2^N$ | Vigleik Angeltveit | computational (preprint) | arXiv:2602.10466 | verified |
+| 28 | 2026 | Exploring Collatz Dynamics with Human-LLM Collaboration | Edward Y. Chang | survey (preprint) | arXiv:2603.11066 | verified |
 
 **Source check (2026-07-01, second pass).** Rows 4, 9, 11, 14, 16, 19, 20, 20b were source-checked in a second sweep: Steiner's 1-cycle paper (Proc. 7th Manitoba Conf., 553–559; confirmed via consistent secondary citations, primary proceedings not inspected — hence high-confidence, not verified); Lagarias–Weiss (*Ann. Appl. Prob.* **2** (1992), 229–261); Oliveira e Silva's record-holders paper — previously listed as "1998, verification" but actually *Math. Comp.* **68**(225) (1999), 371–384, DOI 10.1090/S0025-5718-99-01031-5; Simons–de Weger (*Acta Arith.* **117**.1 (2005), 51–70, DOI 10.4064/aa117-1-3) — whose exclusion reaches $m \le 75$, correcting the "$m \le 68$" previously stated in this dossier; Kurtz–Simon (TAMC 2007, LNCS 4484, 542–553, DOI 10.1007/978-3-540-72504-6_49, $\Pi^0_2$-completeness); Eliahou — previously misdated 2011, actually *Discrete Math.* **118** (1993), 45–56, DOI 10.1016/0012-365X(93)90052-U, cycle length $\ge 17{,}087{,}915$; and the former ai-suggested Benford placeholder (row 20) replaced by the two real papers, Kontorovich–Miller (*Acta Arith.* **120** (2005), 269–297) and Lagarias–Soundararajan (*J. London Math. Soc.* **74** (2006), 289–303, arXiv:math/0509175).
 

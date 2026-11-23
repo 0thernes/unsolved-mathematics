@@ -14,7 +14,7 @@ _The 25 most important papers. Each carries a verification flag._
 | 8 | 1976 | The Application of Sieve Methods to the Theory of Numbers (context for sieve attacks) | C. Hooley | survey | — | needs-verification |
 | 9 | 1984 | A remark on Artin's conjecture | Rajiv Gupta & M. Ram Murty | breakthrough | — | high-confidence |
 | 10 | 1985 | Primitive roots: a survey | M. Ram Murty | survey | — | needs-verification |
-| 11 | 1986 | Artin's conjecture for primitive roots | D. R. Heath-Brown | breakthrough | 10.1093/qmath/37.1.27 | needs-verification |
+| 11 | 1986 | Artin's conjecture for primitive roots | D. R. Heath-Brown | breakthrough | 10.1093/qmath/37.1.27 | verified |
 | 12 | 1988 | The rank of the group of points / Gupta–Murty elliptic analogue | R. Gupta & M. R. Murty | modern | — | needs-verification |
 | 13 | 1997 | A note on Artin's conjecture in algebraic number fields | H. Roskam | modern | — | ai-suggested |
 | 14 | 2000 | Artin's primitive root conjecture — a survey (early version) | Pieter Moree | survey | — | needs-verification |
@@ -24,7 +24,7 @@ _The 25 most important papers. Each carries a verification flag._
 | 18 | 2006 | Artin's conjecture, Turán's method, and the practical primitive root problem | P. Moree | modern | — | ai-suggested |
 | 19 | 2007 | On the distribution of primes with a fixed primitive root | various / Moree circle | modern | — | ai-suggested |
 | 20 | 2009 | Near-primitive roots | P. Moree | modern | — | ai-suggested |
-| 21 | 2012 | Artin's primitive root conjecture — a survey | Pieter Moree | survey | arXiv:1209.2376 | high-confidence |
+| 21 | 2012 | Artin's primitive root conjecture — a survey | Pieter Moree | survey | — | needs-verification |
 | 22 | 2014 | Kummer theory for number fields and the reductions of algebraic numbers | A. Perucca (and collaborators) | modern | — | needs-verification |
 | 23 | 2016 | Reductions of algebraic integers and entanglement of Kummer extensions | A. Perucca, P. Moree et al. | modern | — | ai-suggested |
 | 24 | 2018 | Entanglement of Kummer extensions and Artin's constant corrections | P. Stevenhagen / Lenstra circle | modern | — | ai-suggested |

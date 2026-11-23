@@ -18,15 +18,15 @@ _The 25 most important papers. Each carries a verification flag._
 | 12 | 1989 | Primes in arithmetic progressions to large moduli. III | E. Bombieri, J. Friedlander & H. Iwaniec | breakthrough | — | needs-verification |
 | 13 | 1989 | Bombieri's sieve | J. Friedlander & H. Iwaniec | survey | — | needs-verification |
 | 14 | 1996 | The divisor function on arithmetic progressions | É. Fouvry, e.a. (BFI circle) | modern | — | needs-verification |
-| 15 | 2005 | Small gaps between primes exist | D. Goldston, J. Pintz & C. Yıldırım | breakthrough | arXiv:math/0505300 | needs-verification |
-| 16 | 2009 | Primes in tuples I | D. A. Goldston, J. Pintz & C. Y. Yıldırım | breakthrough | arXiv:math/0508185 | high-confidence |
+| 15 | 2005 | Small gaps between primes exist | D. Goldston, J. Pintz & C. Yıldırım | breakthrough | arXiv:math/0505300 | verified |
+| 16 | 2009 | Primes in tuples I | D. A. Goldston, J. Pintz & C. Y. Yıldırım | breakthrough | arXiv:math/0508185 | verified |
 | 17 | 2010 | Opera de Cribro | J. Friedlander & H. Iwaniec | survey | — | high-confidence |
 | 18 | 2014 | Bounded gaps between primes | Yitang Zhang | breakthrough | — | high-confidence |
-| 19 | 2014 | New equidistribution estimates of Zhang type, and bounded gaps between primes (Polymath8a) | D.H.J. Polymath | breakthrough | arXiv:1402.0811 | high-confidence |
-| 20 | 2015 | Small gaps between primes | James Maynard | breakthrough | arXiv:1311.4600 | high-confidence |
+| 19 | 2014 | New equidistribution estimates of Zhang type, and bounded gaps between primes (Polymath8a) | D.H.J. Polymath | breakthrough | arXiv:1402.0811 | verified |
+| 20 | 2015 | Small gaps between primes | James Maynard | breakthrough | arXiv:1311.4600 | verified |
 | 21 | 2014 | Bounded gaps between primes (blog/announcement of multidimensional sieve) | Terence Tao | modern | — | needs-verification |
-| 22 | 2014 | Variants of the Selberg sieve, and bounded intervals containing many primes (Polymath8b) | D.H.J. Polymath | breakthrough | arXiv:1407.4897 | high-confidence |
-| 23 | 2015 | Dense clusters of primes in subsets | James Maynard | modern | arXiv:1405.2593 | needs-verification |
+| 22 | 2014 | Variants of the Selberg sieve, and bounded intervals containing many primes (Polymath8b) | D.H.J. Polymath | breakthrough | arXiv:1407.4897 | verified |
+| 23 | 2015 | Dense clusters of primes in subsets | James Maynard | modern | arXiv:1405.2593 | verified |
 | 24 | 2016 | The bounded gaps between primes (survey/expository accounts) | Andrew Granville | survey | — | needs-verification |
 | 25 | 2015 | A tour of the prime gaps story (expository) | K. Soundararajan / D. Goldston (lecture notes) | expository | — | needs-verification |
 

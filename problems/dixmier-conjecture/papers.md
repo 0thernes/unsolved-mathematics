@@ -17,8 +17,8 @@ The original source is Dixmier's 1968 Weyl-algebra paper (Problème 1). The inte
 | 9 | 2000 | Endomorphisms of the Weyl algebra and $p$-curvature | Y. Tsuchimoto (early work) | modern | — | needs-verification |
 | 10 | 2003 | Kernels of higher order differential operators / image conjecture context | Wenhua Zhao | modern | — | needs-verification |
 | 11 | 2005 | Endomorphisms of the Weyl algebra and $p$-curvatures | Yoshifumi Tsuchimoto | breakthrough | — | high-confidence |
-| 12 | 2005 | Automorphisms of the Weyl algebra | Alexei Belov-Kanel, Maxim Kontsevich | breakthrough | arXiv:math/0512169 | needs-verification |
-| 13 | 2007 | The Jacobian conjecture is stably equivalent to the Dixmier conjecture | Alexei Belov-Kanel, Maxim Kontsevich | breakthrough | arXiv:math/0512171 | needs-verification |
+| 12 | 2005 | Automorphisms of the Weyl algebra | Alexei Belov-Kanel, Maxim Kontsevich | breakthrough | arXiv:math/0512169 | verified |
+| 13 | 2007 | The Jacobian conjecture is stably equivalent to the Dixmier conjecture | Alexei Belov-Kanel, Maxim Kontsevich | breakthrough | arXiv:math/0512171 | verified |
 | 14 | 2008 | Endomorphisms of the Weyl algebra and $p$-curvature (full version) | Yoshifumi Tsuchimoto | breakthrough | — | needs-verification |
 | 15 | 2007 | Hilbert schemes, separated variables, and D-branes (related symplectic context) | A. Belov-Kanel, M. Kontsevich | modern | — | needs-verification |
 | 16 | 2009 | A vanishing conjecture and the Jacobian conjecture | Wenhua Zhao | modern | — | needs-verification |

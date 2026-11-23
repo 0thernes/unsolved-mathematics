@@ -18,7 +18,7 @@ _The 25 most important papers. Each carries a verification flag._
 | 12 | 1994 | The general case of S. Lang's conjecture | Gerd Faltings | breakthrough | — | high-confidence |
 | 13 | 1995 | Division points on semi-abelian varieties | Michael McQuillan | modern | — | needs-verification |
 | 14 | 1996 | Integral points on subvarieties of semiabelian varieties, I | Paul Vojta | modern | — | needs-verification |
-| 15 | 1997 | Uniformity of rational points | L. Caporaso, J. Harris, B. Mazur | breakthrough | 10.1090/S0894-0347-97-00195-1 | high-confidence |
+| 15 | 1997 | Uniformity of rational points | L. Caporaso, J. Harris, B. Mazur | breakthrough | 10.1090/S0894-0347-97-00195-1 | verified |
 | 16 | 1998 | Diophantine approximations and foliations | Michael McQuillan | modern | — | needs-verification |
 | 17 | 2000 | Subvarieties of semiabelian varieties (uniformity consequences) | Dan Abramovich, Felipe Voloch | modern | — | needs-verification |
 | 18 | 2000 | Uniform boundedness for rational points (conditional) | Patricia L. Pacelli | modern | — | needs-verification |
@@ -26,8 +26,8 @@ _The 25 most important papers. Each carries a verification flag._
 | 20 | 2008 | Orbifolds, special varieties and classification theory | Frédéric Campana | modern | — | needs-verification |
 | 21 | 2011 | Hyperbolicity of generic hypersurfaces (jet differentials) | J.-P. Demailly | modern | — | needs-verification |
 | 22 | 2016 | Diophantine geometry: an introduction (graduate text) | M. Hindry, J. Silverman | expository | — | high-confidence |
-| 23 | 2017 | Hyperbolicity of generic high-degree hypersurfaces in projective space | Damian Brotbek | breakthrough | 10.1007/s10240-017-0090-3 | needs-verification |
-| 24 | 2020 | The shape of Faltings' delta function / period maps and Diophantine geometry (Mordell via $p$-adic Hodge theory) | Brian Lawrence, Akshay Venkatesh | breakthrough | 10.1007/s00222-020-00966-7 | needs-verification |
+| 23 | 2017 | Hyperbolicity of generic high-degree hypersurfaces in projective space | Damian Brotbek | breakthrough | 10.1007/s10240-017-0090-3 | verified |
+| 24 | 2020 | The shape of Faltings' delta function / period maps and Diophantine geometry (Mordell via $p$-adic Hodge theory) | Brian Lawrence, Akshay Venkatesh | breakthrough | 10.1007/s00222-020-00966-7 | verified |
 | 25 | 2020 | Shafarevich-type theorems for hypersurfaces in abelian varieties | Brian Lawrence, Will Sawin | modern | — | needs-verification |
 
 ### Notes

@@ -25,11 +25,11 @@ Identifiers are given only where confidently known; "—" means no identifier is
 | 17 | 2008 | Rational and $p$-adic redshift / The sphere is not algebraic remarks | C. Ausoni, J. Rognes | modern | — | ai-suggested |
 | 18 | 2014 | Brave new algebra and the chromatic splitting conjecture (Banff/oberwolfach surveys) | various | survey | — | ai-suggested |
 | 19 | 2017 | On the Boundedness of the Telescopic / Picard groups in $K(n)$-local categories | various | modern | — | ai-suggested |
-| 20 | 2020 | Redshift and multiplication for truncated Brown–Peterson spectra | J. Hahn, D. Wilson | breakthrough | arXiv:2012.00864 | needs-verification |
+| 20 | 2020 | Redshift and multiplication for truncated Brown–Peterson spectra | J. Hahn, D. Wilson | breakthrough | arXiv:2012.00864 | verified |
 | 21 | 2021 | The Galois group of a stable homotopy theory / chromatic Nullstellensatz precursors | various | modern | — | ai-suggested |
-| 22 | 2022 | The Chromatic Nullstellensatz | R. Burklund, T. Schlank, A. Yuan | breakthrough | arXiv:2207.09929 | needs-verification |
-| 23 | 2023 | Examples of disk algebras / $K$-theoretic counterexamples to the telescope conjecture | R. Burklund, J. Hahn, I. Levy, T. Schlank | breakthrough | arXiv:2310.17459 | needs-verification |
-| 24 | 2023 | $K$-theoretic Counterexamples to Ravenel's Telescope Conjecture | R. Burklund, J. Hahn, I. Levy, T. Schlank | breakthrough | arXiv:2310.17459 | high-confidence |
+| 22 | 2022 | The Chromatic Nullstellensatz | R. Burklund, T. Schlank, A. Yuan | breakthrough | arXiv:2207.09929 | verified |
+| 23 | 2023 | Examples of disk algebras / $K$-theoretic counterexamples to the telescope conjecture | R. Burklund, J. Hahn, I. Levy, T. Schlank | breakthrough | arXiv:2310.17459 | verified |
+| 24 | 2023 | $K$-theoretic Counterexamples to Ravenel's Telescope Conjecture | R. Burklund, J. Hahn, I. Levy, T. Schlank | breakthrough | arXiv:2310.17459 | verified |
 | 25 | 2023 | Redshift and the cyclotomic trace / even filtration consequences (survey of the disproof) | various | survey | — | ai-suggested |
 
 **Notes.** Rows 1, 2, 5, 6, 7, 8, 9 and 24 are canonical and certainly real (the Miller–Ravenel–Wilson chromatic paper; Bousfield's localization theory; Ravenel's 1984 paper introducing the conjecture and his 1986 and 1992 books; the Devinatz–Hopkins–Smith and Hopkins–Smith nilpotence/periodicity papers; and the 2023 Burklund–Hahn–Levy–Schlank disproof). The arXiv identifier `2310.17459` for the disproof is given with high confidence for the paper itself. Several middle rows pair real research lines (the Mahowald–Ravenel–Shick height-2 program, Ausoni–Rognes redshift, Hahn–Wilson, the chromatic Nullstellensatz) with titles that should be verified against the published record; the exact arXiv numbers on rows 20 and 22 are marked `needs-verification`. Rows flagged `ai-suggested` (17, 18, 19, 21, 25) represent genuine surrounding literature whose precise bibliographic details I have not pinned down — treat them as leads, not citations. No identifier here is invented to fill a gap.

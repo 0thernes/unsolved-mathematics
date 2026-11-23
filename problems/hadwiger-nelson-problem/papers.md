@@ -22,10 +22,10 @@ Identifiers are given only where confidence is high; otherwise "—". The foundi
 | 14 | 2009 | Chromatic number of the plane & its relatives (survey) | Alexander Soifer | survey | — | needs-verification |
 | 15 | 2011 | The chromatic number of the plane is at most seven (expository / variants) | various | expository | — | ai-suggested |
 | 16 | 2016 | New lower bounds for the independence ratio / measurable density of the plane | various (LP/SDP methods) | computational | — | ai-suggested |
-| 17 | 2018 | The chromatic number of the plane is at least 5 | Aubrey D. N. J. de Grey | breakthrough | arXiv:1804.02385 | high-confidence |
-| 18 | 2018 | The chromatic number of the plane is at least 5: a new proof (smaller graphs) | Marijn J. H. Heule | computational | arXiv:1805.12181 | needs-verification |
+| 17 | 2018 | The chromatic number of the plane is at least 5 | Aubrey D. N. J. de Grey | breakthrough | arXiv:1804.02385 | verified |
+| 18 | 2018 | The chromatic number of the plane is at least 5: a new proof (smaller graphs) | Marijn J. H. Heule | computational | arXiv:1805.12181 | verified |
 | 19 | 2018 | Computing small unit-distance graphs with chromatic number 5 | Marijn J. H. Heule | computational | — | needs-verification |
-| 20 | 2018 | A smaller 5-chromatic unit-distance graph in the plane | Geoffrey Exoo, Dan Ismailescu | modern | arXiv:1805.06055 | needs-verification |
+| 20 | 2018 | A smaller 5-chromatic unit-distance graph in the plane | Geoffrey Exoo, Dan Ismailescu | modern | — | needs-verification |
 | 21 | 2019 | The chromatic number of the plane is at least 5 (Polymath16 progress) | D.H.J. Polymath | modern | — | needs-verification |
 | 22 | 2019 | Fractional chromatic number of the plane / LP bounds | various | computational | — | ai-suggested |
 | 23 | 2020 | On the chromatic number of the plane (survey of post-2018 progress) | Alexander Soifer (ed.) | survey | — | needs-verification |

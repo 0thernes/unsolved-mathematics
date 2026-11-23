@@ -17,7 +17,7 @@ _The 25 most important papers. Each carries a verification flag._
 | 11 | 1996 | Spanning trees, graceful labelings, and the Ringel–Kotzig conjecture (overview) | various | survey | — | ai-suggested |
 | 12 | 1998 | A Dynamic Survey of Graph Labeling (Electronic J. Combinatorics, DS6; updated annually) | Joseph A. Gallian | survey | — | high-confidence |
 | 13 | 1999 | Graceful and harmonious labellings of trees (computer verification to 27 vertices) | Robert E. L. Aldred, Brendan D. McKay | computational | — | high-confidence |
-| 14 | 2001 | All trees of diameter five are graceful | Pavel Hrnčiar, Alfonz Haviar | breakthrough | 10.1016/S0012-365X(00)00390-2 | needs-verification |
+| 14 | 2001 | All trees of diameter five are graceful | Pavel Hrnčiar, Alfonz Haviar | breakthrough | — | needs-verification |
 | 15 | 2002 | Graceful labellings of trees: computational results and bounds | Ljiljana Brankovic, Alan Murch, Joe Pond, Alexander Rosa | computational | — | needs-verification |
 | 16 | 2004 | Relaxed graceful labellings of trees (range-relaxed labelings) | Frank Van Bussel | modern | — | needs-verification |
 | 17 | 2004 | On the gracefulness of lobster trees | several authors | modern | — | ai-suggested |
@@ -26,7 +26,7 @@ _The 25 most important papers. Each carries a verification flag._
 | 20 | 2011 | On graceful labelings of trees (probabilistic / heuristic search) | various | computational | — | ai-suggested |
 | 21 | 2013 | Graceful labelling: state of the art, applications and future directions | I. Sudarsana et al. (survey) | survey | — | ai-suggested |
 | 22 | 2016 | Graph decompositions and tree thresholds (high-girth / absorption methods) | Glock, Kühn, Osthus and collaborators | modern | — | needs-verification |
-| 23 | 2020 | A proof of Ringel's conjecture | Richard Montgomery, Alexey Pokrovskiy, Benny Sudakov | breakthrough | arXiv:2001.02665 | high-confidence |
+| 23 | 2020 | A proof of Ringel's conjecture | Richard Montgomery, Alexey Pokrovskiy, Benny Sudakov | breakthrough | arXiv:2001.02665 | verified |
 | 24 | 2021 | Decompositions into spanning trees / near-graceful asymptotics | Keevash, Staden, Su (and related) | breakthrough | — | needs-verification |
 | 25 | 2023 | Graph labeling: survey update (Gallian Dynamic Survey, recent editions) | Joseph A. Gallian | survey | — | high-confidence |
 

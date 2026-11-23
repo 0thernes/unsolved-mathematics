@@ -16,13 +16,13 @@ Identifiers are given only where there is high confidence they are correct; othe
 | 8 | 1990 | Invariant measures and orbit closures for unipotent flows | M. Ratner | foundational | — | needs-verification |
 | 9 | 1991 | On Raghunathan's measure conjecture | M. Ratner | foundational | — | needs-verification |
 | 10 | 1998 | Oppenheim conjecture and related Diophantine problems (survey) | G. A. Margulis | survey | — | needs-verification |
-| 11 | 2000 | Logarithm laws for flows on homogeneous spaces | D. Y. Kleinbock, G. A. Margulis | breakthrough | 10.1007/s002220050350 | needs-verification |
+| 11 | 2000 | Logarithm laws for flows on homogeneous spaces | D. Y. Kleinbock, G. A. Margulis | breakthrough | 10.1007/s002220050350 | verified |
 | 12 | 2000 | Flows on homogeneous spaces and Diophantine approximation on manifolds | D. Y. Kleinbock, G. A. Margulis | breakthrough | — | needs-verification |
 | 13 | 2001 | Bounded orbits of diagonalizable flows on $\mathrm{SL}_3/\mathrm{SL}_3(\mathbb{Z})$ | B. Weiss (and collaborators) | modern | — | needs-verification |
 | 14 | 2003 | On a problem in simultaneous Diophantine approximation: Littlewood's conjecture (metric results) | A. D. Pollington, S. L. Velani | breakthrough | — | needs-verification |
 | 15 | 2004 | The set of badly approximable pairs and Littlewood-type problems | Y. Bugeaud, M. Drmota, B. de Mathan | modern | — | needs-verification |
 | 16 | 2005 | On a mixed Littlewood conjecture in Diophantine approximation | B. de Mathan, O. Teulié | modern | — | needs-verification |
-| 17 | 2006 | Invariant measures and the set of exceptions to Littlewood's conjecture | M. Einsiedler, A. Katok, E. Lindenstrauss | breakthrough | 10.4007/annals.2006.164.513 | high-confidence |
+| 17 | 2006 | Invariant measures and the set of exceptions to Littlewood's conjecture | M. Einsiedler, A. Katok, E. Lindenstrauss | breakthrough | 10.4007/annals.2006.164.513 | verified |
 | 18 | 2007 | Diagonal actions on locally homogeneous spaces (lecture notes) | M. Einsiedler, E. Lindenstrauss | survey | — | needs-verification |
 | 19 | 2008 | Distribution of periodic torus orbits and Duke's theorem for cubic fields | M. Einsiedler, E. Lindenstrauss, P. Michel, A. Venkatesh | modern | — | needs-verification |
 | 20 | 2009 | What is… the Littlewood conjecture? (expository note) | A. Venkatesh | expository | — | needs-verification |

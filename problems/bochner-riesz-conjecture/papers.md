@@ -21,7 +21,7 @@ Identifiers are given only where confidently known; "—" means no identifier is
 | 13 | 1995 | Estimates for the Bochner–Riesz operator with negative index | Sanghyuk Lee / S. W. Drury (context) | modern | — | needs-verification |
 | 14 | 1998 | A bilinear approach to the restriction and Kakeya conjectures | Terence Tao, Ana Vargas, Luis Vega | breakthrough | — | high-confidence |
 | 15 | 2001 | A sharp bilinear cone restriction estimate | Thomas Wolff | breakthrough | — | high-confidence |
-| 16 | 2003 | A sharp bilinear restriction estimate for paraboloids | Terence Tao | breakthrough | 10.1007/s00039-003-0449-0 | needs-verification |
+| 16 | 2003 | A sharp bilinear restriction estimate for paraboloids | Terence Tao | breakthrough | 10.1007/s00039-003-0449-0 | verified |
 | 17 | 2004 | Improved bounds for Bochner–Riesz and maximal Bochner–Riesz operators | Sanghyuk Lee | modern | — | needs-verification |
 | 18 | 2006 | On the multilinear restriction and Kakeya conjectures | Jonathan Bennett, Anthony Carbery, Terence Tao | breakthrough | — | high-confidence |
 | 19 | 2006 | Some recent progress on the restriction conjecture | Terence Tao | survey | — | needs-verification |

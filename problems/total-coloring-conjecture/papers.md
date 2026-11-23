@@ -15,9 +15,9 @@ _The 25 most important papers. Each carries a verification flag._
 | 9 | 1989 | On the total chromatic number of planar graphs | O. V. Borodin | modern | — | needs-verification |
 | 10 | 1990 | An upper bound for the total chromatic number | H. R. Hind | breakthrough | — | needs-verification |
 | 11 | 1992 | On the total chromatic number of graphs of high degree | H. P. Yap (and collaborators) | modern | — | needs-verification |
-| 12 | 1996 | The total chromatic number of any multigraph with maximum degree five is at most seven | A. V. Kostochka | breakthrough | 10.1016/0012-365X(95)00321-N | needs-verification |
-| 13 | 1997 | List edge and list total colourings of multigraphs | O. V. Borodin, A. V. Kostochka, D. R. Woodall | breakthrough | 10.1006/jctb.1997.1780 | high-confidence |
-| 14 | 1998 | A bound on the total chromatic number | M. Molloy, B. Reed | breakthrough | 10.1007/PL00009810 | high-confidence |
+| 12 | 1996 | The total chromatic number of any multigraph with maximum degree five is at most seven | A. V. Kostochka | breakthrough | — | needs-verification |
+| 13 | 1997 | List edge and list total colourings of multigraphs | O. V. Borodin, A. V. Kostochka, D. R. Woodall | breakthrough | 10.1006/jctb.1997.1780 | verified |
+| 14 | 1998 | A bound on the total chromatic number | M. Molloy, B. Reed | breakthrough | — | needs-verification |
 | 15 | 1996 | Total colourings of graphs (Lecture Notes in Mathematics 1623, monograph) | H. P. Yap | survey | — | high-confidence |
 | 16 | 1998 | Graph Colouring and the Probabilistic Method (book; total coloring chapter) | M. Molloy, B. Reed | survey | — | high-confidence |
 | 17 | 1993 | The total chromatic number of graphs having large maximum degree | H. P. Yap, K. H. Chew | modern | — | needs-verification |

@@ -21,12 +21,12 @@ _The 25 most important papers. Each carries a verification flag._
 | 15 | 1994 | Counting real zeros of analytic functions satisfying linear ODEs | D. Novikov, S. Yakovenko | modern | — | needs-verification |
 | 16 | 1995 | Concerning the Hilbert 16th problem | Yu. Ilyashenko, S. Yakovenko (eds., AMS Transl. 165) | survey | — | needs-verification |
 | 17 | 1998 | The infinitesimal 16th Hilbert problem in the quadratic case | L. Gavrilov | modern | — | needs-verification |
-| 18 | 2002 | Centennial History of Hilbert's 16th Problem | Yu. Ilyashenko | survey | 10.1090/S0273-0979-02-00946-1 | high-confidence |
+| 18 | 2002 | Centennial History of Hilbert's 16th Problem | Yu. Ilyashenko | survey | 10.1090/S0273-0979-02-00946-1 | verified |
 | 19 | 2003 | Lectures on Analytic Differential Equations | Yu. Ilyashenko, S. Yakovenko | expository | — | needs-verification |
 | 20 | 2005 | Limit cycles of differential equations (CRM Advanced Courses) | C. Christopher, C. Li | expository | — | needs-verification |
-| 21 | 2007 | More limit cycles than expected in Liénard equations | F. Dumortier, D. Panazzolo, R. Roussarie | breakthrough | 10.1090/S0002-9939-06-08688-1 | needs-verification |
+| 21 | 2007 | More limit cycles than expected in Liénard equations | F. Dumortier, D. Panazzolo, R. Roussarie | breakthrough | — | needs-verification |
 | 22 | 2009 | Thirteen limit cycles for a class of cubic systems | Jibin Li, et al. (cubic record) | computational | — | ai-suggested |
-| 23 | 2010 | On the number of zeros of Abelian integrals: an explicit uniform bound | G. Binyamini, D. Novikov, S. Yakovenko | breakthrough | 10.1007/s00222-009-0205-7 | needs-verification |
+| 23 | 2010 | On the number of zeros of Abelian integrals: an explicit uniform bound | G. Binyamini, D. Novikov, S. Yakovenko | breakthrough | — | needs-verification |
 | 24 | 2011 | Hilbert's 16th problem and bifurcations of planar polynomial vector fields | Jibin Li | survey | — | needs-verification |
 | 25 | 2012 | Canard cycles and the Hilbert 16th problem (slow–fast methods) | F. Dumortier, R. Roussarie | modern | — | ai-suggested |
 

@@ -9,11 +9,11 @@ _The 25 most important papers. Each carries a verification flag._
 | 3 | 1951 | Eine Spektraltheorie für allgemeine Operatoren eines unitären Raumes | John von Neumann | foundational | — | high-confidence |
 | 4 | 1971 | The numerical range is a $(1+\sqrt2)$-spectral set / Constrained von Neumann inequalities (Okubo–Ando dilation) | Kazuyoshi Okubo, Tsuyoshi Ando | foundational | — | needs-verification |
 | 5 | 2004 | Bounds for the numerical range and functional calculus | Michel Crouzeix | foundational | — | high-confidence |
-| 6 | 2007 | Numerical range and functional calculus in Hilbert space | Michel Crouzeix | breakthrough | 10.1016/j.jfa.2006.04.005 | high-confidence |
+| 6 | 2007 | Numerical range and functional calculus in Hilbert space | Michel Crouzeix | breakthrough | — | needs-verification |
 | 7 | 2008 | A functional calculus proof of a sharpened resolvent estimate | Michel Crouzeix | modern | — | needs-verification |
 | 8 | 2012 | The annulus as a $K$-spectral set | C. Badea, B. Beckermann, M. Crouzeix | modern | — | needs-verification |
 | 9 | 2016 | Spectral sets and operator radii / numerical range surveys | Catalin Badea, Bernhard Beckermann | survey | — | needs-verification |
-| 10 | 2017 | Numerical range and functional calculus: the constant $1+\sqrt2$ | Michel Crouzeix, César Palencia | breakthrough | 10.1137/17M1116672 | high-confidence |
+| 10 | 2017 | Numerical range and functional calculus: the constant $1+\sqrt2$ | Michel Crouzeix, César Palencia | breakthrough | 10.1137/17M1116672 | verified |
 | 11 | 2017 | Some remarks on the Crouzeix–Palencia bound | Thomas Ransford, Felix L. Schwenninger | modern | — | needs-verification |
 | 12 | 2017 | Crouzeix's conjecture and related problems (numerical study) | Anne Greenbaum, Michael L. Overton | computational | — | needs-verification |
 | 13 | 2017 | Crouzeix's conjecture for new classes of matrices | Daeshik Choi | modern | — | needs-verification |

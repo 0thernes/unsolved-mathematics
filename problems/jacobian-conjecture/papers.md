@@ -11,17 +11,17 @@ Identifiers are given only where confidently known; "—" means no identifier is
 | 3 | 1972 | A note on the Jacobian condition / two-dimensional partial results | S. Abhyankar (and collaborators) | foundational | — | needs-verification |
 | 4 | 1975 | Embeddings of the line in the plane (Abhyankar–Moh theorem) | S. S. Abhyankar, T. T. Moh | foundational | — | high-confidence |
 | 5 | 1980 | Keller's problem and the reduction to cubic maps | A. V. Yagzhev | breakthrough | — | needs-verification |
-| 6 | 1982 | The Jacobian conjecture: reduction of degree and formulation of equations | H. Bass, E. H. Connell, D. Wright | breakthrough | 10.1090/S0273-0979-1982-15032-7 | high-confidence |
+| 6 | 1982 | The Jacobian conjecture: reduction of degree and formulation of equations | H. Bass, E. H. Connell, D. Wright | breakthrough | 10.1090/S0273-0979-1982-15032-7 | verified |
 | 7 | 1983 | On the global injectivity of polynomial maps / degree ≤ 100 in dimension 2 | T. T. Moh | breakthrough | — | needs-verification |
 | 8 | 1983 | The Jacobian conjecture in case of "cubic-linear" maps | L. M. Drużkowski | modern | — | needs-verification |
 | 9 | 1980 | Injectivity of polynomial maps and quadratic case | Stuart Sui-Sheng Wang | modern | — | needs-verification |
 | 10 | 1993 | The real Jacobian conjecture / Markus–Yamabe connections | various (survey context) | survey | — | ai-suggested |
 | 11 | 1994 | A polynomial counterexample to the Markus–Yamabe conjecture | A. Cima, A. van den Essen, A. Gasull, E. Hubbers, F. Mañosas | negative-result | — | needs-verification |
-| 12 | 1998 | Mathematical problems for the next century | Steve Smale | survey | 10.1007/BF03025291 | high-confidence |
+| 12 | 1998 | Mathematical problems for the next century | Steve Smale | survey | 10.1007/BF03025291 | verified |
 | 13 | 2000 | Polynomial automorphisms and the Jacobian conjecture (survey) | A. van den Essen | survey | — | needs-verification |
 | 14 | 2000 | Polynomial Automorphisms and the Jacobian Conjecture (monograph, Progress in Math. 190) | A. van den Essen | survey | — | high-confidence |
 | 15 | 2003 | Nilpotent Jacobians and the Jacobian conjecture in low dimension | M. de Bondt, A. van den Essen | modern | — | needs-verification |
-| 16 | 2004 | The Nagata automorphism is wild | I. Shestakov, U. Umirbaev | breakthrough | 10.1090/S0894-0347-03-00440-5 | high-confidence |
+| 16 | 2004 | The Nagata automorphism is wild | I. Shestakov, U. Umirbaev | breakthrough | 10.1090/S0894-0347-03-00440-5 | verified |
 | 17 | 2005 | A reduction of the Jacobian conjecture to the symmetric case | M. de Bondt, A. van den Essen | modern | — | needs-verification |
 | 18 | 2005 | Hessian nilpotent polynomials and the Jacobian conjecture | Wenhua Zhao | modern | — | needs-verification |
 | 19 | 2007 | Inversion formulae and the vanishing conjecture | Wenhua Zhao | modern | — | needs-verification |

@@ -15,15 +15,15 @@ The 25 most important papers, ordered chronologically. Identifiers are given onl
 | 9 | 1999 | On the Falconer distance set problem in the plane | Bourgain (and related, Wolff) | modern | — | needs-verification |
 | 10 | 2004 | Distance sets, $k$-simplices, and the Falconer conjecture (high dimensions) | Mattila / Sjölin-type | modern | — | needs-verification |
 | 11 | 2005 | Averages over surfaces and Falconer's distance set problem | Erdoğan, M. Burak | breakthrough | — | needs-verification |
-| 12 | 2006 | A bilinear Fourier extension theorem and applications to the distance set problem | M. Burak Erdoğan | breakthrough | arXiv:math/0401348 | needs-verification |
+| 12 | 2006 | A bilinear Fourier extension theorem and applications to the distance set problem | M. Burak Erdoğan | breakthrough | — | needs-verification |
 | 13 | 2010 | Group actions and geometric combinatorics in $\mathbb{F}_q^d$ | Hart, Iosevich, Koh, Rudnev | modern | — | needs-verification |
-| 14 | 2015 | On the Erdős distinct distances problem in the plane | Larry Guth, Nets Hawk Katz | foundational | arXiv:1011.4105 | high-confidence |
+| 14 | 2015 | On the Erdős distinct distances problem in the plane | Larry Guth, Nets Hawk Katz | foundational | arXiv:1011.4105 | verified |
 | 15 | 2017 | On the dimension and smoothness of radial projections | Tuomas Orponen | modern | — | needs-verification |
-| 16 | 2018 | On Falconer's distance set problem in the plane | L. Guth, A. Iosevich, Y. Ou, H. Wang | breakthrough | arXiv:1808.09346 | high-confidence |
+| 16 | 2018 | On Falconer's distance set problem in the plane | L. Guth, A. Iosevich, Y. Ou, H. Wang | breakthrough | arXiv:1808.09346 | verified |
 | 17 | 2018 | An improved result for Falconer's distance set problem in even dimensions | Xiumin Du, Ruixiang Zhang (and coauthors) | breakthrough | — | needs-verification |
-| 18 | 2019 | Weighted restriction estimates and application to Falconer distance set problem | X. Du, A. Iosevich, Y. Ou, H. Wang, R. Zhang | breakthrough | arXiv:1802.10186 | needs-verification |
-| 19 | 2019 | A sharp $L^2$ estimate of the Schrödinger maximal function in higher dimensions | X. Du, R. Zhang | modern | arXiv:1805.02775 | needs-verification |
-| 20 | 2019 | Improved bounds for the dimension of distance sets | Keleti, Shmerkin | modern | arXiv:1801.08745 | needs-verification |
+| 18 | 2019 | Weighted restriction estimates and application to Falconer distance set problem | X. Du, A. Iosevich, Y. Ou, H. Wang, R. Zhang | breakthrough | arXiv:1802.10186 | verified |
+| 19 | 2019 | A sharp $L^2$ estimate of the Schrödinger maximal function in higher dimensions | X. Du, R. Zhang | modern | arXiv:1805.02775 | verified |
+| 20 | 2019 | Improved bounds for the dimension of distance sets | Keleti, Shmerkin | modern | arXiv:1801.08745 | verified |
 | 21 | 2020 | Pinned distance problem, slicing measures, and local smoothing estimates | Bochen Liu (with coauthors) | modern | — | needs-verification |
 | 22 | 2020 | New bounds for the Falconer distance problem via radial projections | Iosevich / Liu / collaborators | modern | — | ai-suggested |
 | 23 | 2021 | Radial projections and falconer-type estimates in higher dimensions | X. Du, Y. Ou, K. Ren, R. Zhang | modern | — | needs-verification |

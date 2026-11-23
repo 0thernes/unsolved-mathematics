@@ -24,11 +24,11 @@ Identifiers are given only where confidently known; "—" means no identifier is
 | 16 | 2014 | A survey on the square peg problem | Benjamin Matschke | survey | — | high-confidence |
 | 17 | 2014 | Equivariant topology of configuration spaces and the square peg problem | Benjamin Matschke | modern | — | needs-verification |
 | 18 | 2016 | Square peg problem for some classes of generalized curves | (various; conditional results) | modern | — | ai-suggested |
-| 19 | 2017 | An integration approach to the Toeplitz square peg problem | Terence Tao | breakthrough | arXiv:1611.07441 | high-confidence |
-| 20 | 2018 | Inscribed rectangles in a smooth Jordan curve attain at least one third of all aspect ratios | Cole Hugelmeyer | modern | arXiv:1803.07417 | needs-verification |
-| 21 | 2020 | The rectangular peg problem | Joshua Evan Greene, Andrew Lobb | breakthrough | arXiv:2005.09193 | high-confidence |
-| 22 | 2021 | Cyclic quadrilaterals and smooth Jordan curves | Joshua Evan Greene, Andrew Lobb | modern | arXiv:2011.07546 | needs-verification |
-| 23 | 2021 | A trichotomy for rectangles inscribed in Jordan loops | Richard Evan Schwartz | modern | arXiv:2009.11539 | needs-verification |
+| 19 | 2017 | An integration approach to the Toeplitz square peg problem | Terence Tao | breakthrough | arXiv:1611.07441 | verified |
+| 20 | 2018 | Inscribed rectangles in a smooth Jordan curve attain at least one third of all aspect ratios | Cole Hugelmeyer | modern | arXiv:1803.07417 | verified |
+| 21 | 2020 | The rectangular peg problem | Joshua Evan Greene, Andrew Lobb | breakthrough | arXiv:2005.09193 | verified |
+| 22 | 2021 | Cyclic quadrilaterals and smooth Jordan curves | Joshua Evan Greene, Andrew Lobb | modern | — | needs-verification |
+| 23 | 2021 | A trichotomy for rectangles inscribed in Jordan loops | Richard Evan Schwartz | modern | — | needs-verification |
 | 24 | 2022 | Rectangles, curves, and Klein bottles (expository account of the peg problems) | Joshua Evan Greene, Andrew Lobb (or survey author) | survey | — | ai-suggested |
 | 25 | 2023 | Inscribed squares: a survey of progress toward Toeplitz's conjecture | (recent survey author) | survey | — | ai-suggested |
 

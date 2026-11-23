@@ -4,13 +4,13 @@ _The 25 most important papers. Each carries a verification flag._
 
 | # | Year | Title | Author(s) | Kind | Identifier | Verify |
 |---|------|-------|-----------|------|-----------|--------|
-| 1 | 1945 | General Theory of Natural Equivalences | S. Eilenberg, S. Mac Lane | foundational | 10.2307/1990284 | high-confidence |
-| 2 | 1947 | Cohomology Theory in Abstract Groups, I | S. Eilenberg, S. Mac Lane | foundational | 10.2307/1969145 | high-confidence |
+| 1 | 1945 | General Theory of Natural Equivalences | S. Eilenberg, S. Mac Lane | foundational | 10.2307/1990284 | verified |
+| 2 | 1947 | Cohomology Theory in Abstract Groups, I | S. Eilenberg, S. Mac Lane | foundational | 10.2307/1969145 | verified |
 | 3 | 1952 | Foundations of Algebraic Topology | S. Eilenberg, N. Steenrod | foundational | — | high-confidence |
 | 4 | 1956 | Homological Algebra | H. Cartan, S. Eilenberg | foundational | — | high-confidence |
-| 5 | 1957 | On the Lusternik–Schnirelmann Category of Abstract Groups | S. Eilenberg, T. Ganea | foundational | 10.2307/1969854 | high-confidence |
-| 6 | 1968 | On Torsion-Free Groups with Infinitely Many Ends | J. Stallings | breakthrough | 10.2307/1970577 | high-confidence |
-| 7 | 1969 | Groups of Cohomological Dimension One | R. G. Swan | breakthrough | 10.1016/0021-8693(69)90074-3 | high-confidence |
+| 5 | 1957 | On the Lusternik–Schnirelmann Category of Abstract Groups | S. Eilenberg, T. Ganea | foundational | — | needs-verification |
+| 6 | 1968 | On Torsion-Free Groups with Infinitely Many Ends | J. Stallings | breakthrough | 10.2307/1970577 | verified |
+| 7 | 1969 | Groups of Cohomological Dimension One | R. G. Swan | breakthrough | — | needs-verification |
 | 8 | 1971 | Group Extensions and Cohomology for Locally Compact Groups | (context: cd theory) C. T. C. Wall (ed.) | foundational | — | needs-verification |
 | 9 | 1979 | Topological Methods in Group Theory | R. Bieri | survey | — | needs-verification |
 | 10 | 1981 | Finiteness Conditions for CW-Complexes (Wall finiteness, reprints) | C. T. C. Wall | foundational | — | needs-verification |
@@ -19,7 +19,7 @@ _The 25 most important papers. Each carries a verification flag._
 | 13 | 1985 | Aspherical 2-complexes and the Whitehead conjecture | (collected studies) | survey | — | needs-verification |
 | 14 | 1987 | Two-Dimensional Homotopy and Combinatorial Group Theory (vol.) | C. Hog-Angeloni, W. Metzler, A. Sieradski (eds.) | survey | — | needs-verification |
 | 15 | 1993 | Algebraic Topology | A. Hatcher | expository | — | high-confidence |
-| 16 | 1997 | Morse Theory and Finiteness Properties of Groups | M. Bestvina, N. Brady | breakthrough | 10.1007/s002220050168 | high-confidence |
+| 16 | 1997 | Morse Theory and Finiteness Properties of Groups | M. Bestvina, N. Brady | breakthrough | 10.1007/s002220050168 | verified |
 | 17 | 1998 | Questions in Geometric Group Theory (problem list) | M. Bestvina | survey | — | needs-verification |
 | 18 | 2003 | Stable Modules and the D(2)-Problem | F. E. A. Johnson | modern | — | needs-verification |
 | 19 | 2003 | The D(2)-Problem and the Eilenberg–Ganea Problem (LMS lecture notes) | F. E. A. Johnson | modern | — | needs-verification |

@@ -24,7 +24,7 @@ _The 25 most important papers. Each carries a verification flag._
 | 18 | 2013 | On repeated values of binomial coefficients (survey of progress) | (survey) | survey | — | ai-suggested |
 | 19 | 2017 | Heuristics for the maximal multiplicity in Pascal's triangle | (problem-list discussion) | expository | — | ai-suggested |
 | 20 | 2019 | Smooth numbers, abc, and equal binomial coefficients | (conditional study) | modern | — | ai-suggested |
-| 21 | 2021 | Singmaster's conjecture in the interior of Pascal's triangle | K. Matomäki, M. Radziwiłł, X. Shao, T. Tao, J. Teräväinen | breakthrough | arXiv:2106.03335 | high-confidence |
+| 21 | 2021 | Singmaster's conjecture in the interior of Pascal's triangle | K. Matomäki, M. Radziwiłł, X. Shao, T. Tao, J. Teräväinen | breakthrough | arXiv:2106.03335 | verified |
 | 22 | 2021 | Equal binomial coefficients: blog exposition and reductions | Terence Tao (blog / expository) | expository | — | needs-verification |
 | 23 | 2022 | Multiplicities in Pascal's triangle: a survey | (survey) | survey | — | ai-suggested |
 | 24 | 2023 | David Singmaster (1938–2023): obituary and mathematical legacy | (memorial notice) | expository | — | needs-verification |

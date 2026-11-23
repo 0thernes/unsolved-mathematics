@@ -4,10 +4,10 @@ _The 25 most important papers. Each carries a verification flag._
 
 | # | Year | Title | Author(s) | Kind | Identifier | Verify |
 |---|------|-------|-----------|------|------------|--------|
-| 1 | 1973 | Polyhedral decompositions of cubic graphs | George Szekeres | foundational | 10.1017/S0004972700042660 | needs-verification |
+| 1 | 1973 | Polyhedral decompositions of cubic graphs | George Szekeres | foundational | 10.1017/S0004972700042660 | verified |
 | 2 | 1979 | Sums of circuits | Paul D. Seymour | foundational | — | high-confidence |
-| 3 | 1979 | Flows and generalized coloring theorems in graphs | François Jaeger | foundational | 10.1016/0095-8956(79)90057-1 | needs-verification |
-| 4 | 1981 | Nowhere-zero 6-flows | Paul D. Seymour | breakthrough | 10.1016/0095-8956(81)90058-7 | needs-verification |
+| 3 | 1979 | Flows and generalized coloring theorems in graphs | François Jaeger | foundational | 10.1016/0095-8956(79)90057-1 | verified |
+| 4 | 1981 | Nowhere-zero 6-flows | Paul D. Seymour | breakthrough | 10.1016/0095-8956(81)90058-7 | verified |
 | 5 | 1983 | Eulerian graphs and related topics (cycle cover material) | Herbert Fleischner | foundational | — | needs-verification |
 | 6 | 1985 | A survey of the cycle double cover conjecture | François Jaeger | survey | — | high-confidence |
 | 7 | 1986 | Proof of a conjecture of B. Grünbaum (Petersen / 2-factor context) | various | modern | — | ai-suggested |
@@ -16,7 +16,7 @@ _The 25 most important papers. Each carries a verification flag._
 | 10 | 1990 | Graphs without circular embeddings / strong embedding studies | various | modern | — | ai-suggested |
 | 11 | 1993 | On the circumference of a counterexample to the CDC | Luis A. Goddyn | modern | — | needs-verification |
 | 12 | 1994 | Compatible circuit decompositions and faithful covers | Herbert Fleischner | modern | — | needs-verification |
-| 13 | 1995 | Cycle double covers of graphs with small oddness (oddness 2) | Andreas Huck, Martin Kochol | breakthrough | 10.1006/jctb.1995.1024 | needs-verification |
+| 13 | 1995 | Cycle double covers of graphs with small oddness (oddness 2) | Andreas Huck, Martin Kochol | breakthrough | — | needs-verification |
 | 14 | 1997 | Integer Flows and Cycle Covers of Graphs | Cun-Quan Zhang | survey | — | high-confidence |
 | 15 | 2000 | On the strong cycle double cover conjecture / reductions | Andreas Huck | modern | — | needs-verification |
 | 16 | 2003 | A note on cycle double covers of graphs of small genus | various | modern | — | ai-suggested |
@@ -24,8 +24,8 @@ _The 25 most important papers. Each carries a verification flag._
 | 18 | 2005 | Cycle double covers and the semi-Kotzig frame | Roland Häggkvist, Klas Markström | modern | — | needs-verification |
 | 19 | 2009 | Snarks and the cycle double cover conjecture | Eckhard Steffen | survey | — | needs-verification |
 | 20 | 2010 | Short cycle covers of graphs and nowhere-zero flows | Tomáš Kaiser, Daniel Král', Bernard Lidický, Pavel Nejedlý, Robert Šámal | modern | — | needs-verification |
-| 21 | 2012 | Circuit Double Cover of Graphs | Cun-Quan Zhang | survey | 10.1017/CBO9781139208741 | needs-verification |
-| 22 | 2013 | Generation and properties of snarks | Gunnar Brinkmann, Jan Goedgebeur, Jonas Hägglund, Klas Markström | computational | 10.1016/j.jctb.2013.05.001 | needs-verification |
+| 21 | 2012 | Circuit Double Cover of Graphs | Cun-Quan Zhang | survey | — | needs-verification |
+| 22 | 2013 | Generation and properties of snarks | Gunnar Brinkmann, Jan Goedgebeur, Jonas Hägglund, Klas Markström | computational | 10.1016/j.jctb.2013.05.001 | verified |
 | 23 | 2014 | On cycle double covers of graphs of high oddness | Eckhard Steffen | modern | — | needs-verification |
 | 24 | 2016 | Berge–Fulkerson conjecture and cycle double covers | various | modern | — | ai-suggested |
 | 25 | 2020 | Strong cycle double covers for special snark families | various | modern | — | ai-suggested |

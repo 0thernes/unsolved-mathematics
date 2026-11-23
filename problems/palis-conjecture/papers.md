@@ -28,7 +28,7 @@ Identifiers are given only where confidently known; many foundational works pred
 | 20 | 2007 | Density of hyperbolicity in spaces of $C^k$ maps of the interval and circle | O. Kozlovski, W. Shen, S. van Strien | breakthrough | — | high-confidence |
 | 21 | 2009 | Open problems in dynamics and related fields | C. Bonatti | survey | — | needs-verification |
 | 22 | 2010 | Birth of homoclinic intersections: a model for the central dynamics of partially hyperbolic systems | S. Crovisier | modern | — | needs-verification |
-| 23 | 2012 | Essential hyperbolicity and homoclinic bifurcations: a dichotomy phenomenon / mechanism for diffeomorphisms | S. Crovisier, E. Pujals | breakthrough | arXiv:1011.3836 | needs-verification |
+| 23 | 2012 | Essential hyperbolicity and homoclinic bifurcations: a dichotomy phenomenon / mechanism for diffeomorphisms | S. Crovisier, E. Pujals | breakthrough | arXiv:1011.3836 | verified |
 | 24 | 2016 | Generic family with robustly infinitely many sinks | P. Berger | negative-result | — | needs-verification |
 | 25 | 2019 | Mostly contracting dynamics / SRB and statistical stability (survey of physical measures) | M. Viana, J. Yang | survey | — | needs-verification |
 

@@ -16,7 +16,7 @@ The "Verify" column is conservative: "high-confidence" marks canonical works who
 | 8 | 1998 | Invariant measures and stiffness for non-abelian groups (related rigidity) | A. Katok, R. Spatzier | modern | — | needs-verification |
 | 9 | 1998 | Rigidity of measurable structure for $\mathbb{Z}^d$-actions by automorphisms of a torus | M. Einsiedler, K. Schmidt | modern | — | needs-verification |
 | 10 | 2003 | Invariant measures for higher-rank hyperbolic abelian actions | A. Katok, R. Spatzier | modern | — | needs-verification |
-| 11 | 2003 | Invariant measures and the set of exceptions to Littlewood's conjecture | M. Einsiedler, A. Katok, E. Lindenstrauss | breakthrough | arXiv:math/0612607 | needs-verification |
+| 11 | 2003 | Invariant measures and the set of exceptions to Littlewood's conjecture | M. Einsiedler, A. Katok, E. Lindenstrauss | breakthrough | — | needs-verification |
 | 12 | 2004 | Rigidity properties of $\mathbb{Z}^d$-actions on tori and solenoids | M. Einsiedler, E. Lindenstrauss | modern | — | needs-verification |
 | 13 | 2005 | Diophantine properties of measures and homogeneous dynamics | E. Lindenstrauss | survey | — | needs-verification |
 | 14 | 2006 | Invariant measures and arithmetic quantum unique ergodicity | E. Lindenstrauss | breakthrough | — | high-confidence |
@@ -27,7 +27,7 @@ The "Verify" column is conservative: "high-confidence" marks canonical works who
 | 19 | 2012 | Joinings of higher-rank diagonalizable actions on locally homogeneous spaces | M. Einsiedler, E. Lindenstrauss | modern | — | needs-verification |
 | 20 | 2012 | Ergodic theory: with a view towards number theory | M. Einsiedler, T. Ward | expository | — | high-confidence |
 | 21 | 2015 | Self-similar measures and the Furstenberg dimension conjectures | M. Hochman, P. Shmerkin | modern | — | needs-verification |
-| 22 | 2019 | On Furstenberg's intersection conjecture, self-similar measures, and the $L^q$ norms of convolutions | P. Shmerkin | breakthrough | arXiv:1609.07802 | needs-verification |
+| 22 | 2019 | On Furstenberg's intersection conjecture, self-similar measures, and the $L^q$ norms of convolutions | P. Shmerkin | breakthrough | arXiv:1609.07802 | verified |
 | 23 | 2019 | A proof of the Furstenberg intersection conjecture | M. Wu | breakthrough | — | needs-verification |
 | 24 | 2011 | Rudolph's theorem and rigidity of $\times 2, \times 3$ (survey) | E. Lindenstrauss | survey | — | ai-suggested |
 | 25 | 2020 | Measure rigidity for the action of $\langle \times 2, \times 3 \rangle$: a survey | (various) | survey | — | ai-suggested |

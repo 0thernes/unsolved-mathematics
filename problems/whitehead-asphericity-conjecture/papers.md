@@ -5,18 +5,18 @@ _The 25 most important papers. Each carries a verification flag._
 | # | Year | Title | Author(s) | Kind | Identifier | Verify |
 |---|------|-------|-----------|------|------------|--------|
 | 1 | 1939 | Simplicial spaces, nuclei and $m$-groups | J. H. C. Whitehead | foundational | — | needs-verification |
-| 2 | 1941 | On adding relations to homotopy groups | J. H. C. Whitehead | foundational | 10.2307/1968928 | high-confidence |
-| 3 | 1949 | Combinatorial homotopy. I | J. H. C. Whitehead | foundational | 10.1090/S0002-9904-1949-09175-9 | high-confidence |
-| 4 | 1949 | Combinatorial homotopy. II | J. H. C. Whitehead | foundational | 10.1090/S0002-9904-1949-09213-3 | high-confidence |
-| 5 | 1950 | Cohomology theory of groups | R. C. Lyndon | foundational | 10.2307/1969440 | needs-verification |
+| 2 | 1941 | On adding relations to homotopy groups | J. H. C. Whitehead | foundational | — | needs-verification |
+| 3 | 1949 | Combinatorial homotopy. I | J. H. C. Whitehead | foundational | 10.1090/S0002-9904-1949-09175-9 | verified |
+| 4 | 1949 | Combinatorial homotopy. II | J. H. C. Whitehead | foundational | 10.1090/S0002-9904-1949-09213-3 | verified |
+| 5 | 1950 | Cohomology theory of groups | R. C. Lyndon | foundational | 10.2307/1969440 | verified |
 | 6 | 1954 | The word problem and asphericity of certain 2-complexes | W. H. Cockcroft | foundational | — | needs-verification |
 | 7 | 1962 | On the asphericity of regions in a 3-sphere | C. D. Papakyriakopoulos | foundational | — | needs-verification |
 | 8 | 1973 | Cohomological dimension of one-relator groups | various / Lyndon school | foundational | — | ai-suggested |
 | 9 | 1979 | Conservative groups, indicability, and a conjecture of Howie | J. Howie | breakthrough | — | needs-verification |
-| 10 | 1980 | On pairs of 2-complexes and systems of equations over groups | J. Howie | breakthrough | 10.1515/crll.1981.324.165 | needs-verification |
+| 10 | 1980 | On pairs of 2-complexes and systems of equations over groups | J. Howie | breakthrough | 10.1515/crll.1981.324.165 | verified |
 | 11 | 1981 | On locally indicable groups | J. Howie | breakthrough | — | needs-verification |
 | 12 | 1982 | Reducible diagrams and equations over groups | S. M. Gersten | breakthrough | — | needs-verification |
-| 13 | 1983 | Some remarks on a problem of J. H. C. Whitehead | J. Howie | breakthrough | 10.1016/0040-9383(83)90030-0 | needs-verification |
+| 13 | 1983 | Some remarks on a problem of J. H. C. Whitehead | J. Howie | breakthrough | — | needs-verification |
 | 14 | 1987 | On the asphericity of one-relator relative presentations / DR complexes | S. M. Gersten | modern | — | ai-suggested |
 | 15 | 1987 | A combinatorial approach to the asphericity of 2-complexes (weight test) | A. J. Sieradski | modern | — | needs-verification |
 | 16 | 1987 | Identities among relations / star complexes and asphericity | S. J. Pride | modern | — | needs-verification |

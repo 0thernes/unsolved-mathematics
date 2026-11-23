@@ -25,8 +25,8 @@ Identifiers are given only where confidently known; "—" means a real work whos
 | 17 | 2005 | On the AK invariant in positive characteristic and the Russell cubic | Anthony J. Crachiola | modern | — | needs-verification |
 | 18 | 2006 | Algebraic Theory of Locally Nilpotent Derivations (Encyclopaedia of Math. Sci.) | Gene Freudenburg | survey | — | high-confidence |
 | 19 | 2011 | Affine Algebraic Geometry (survey of cancellation and characterizations of $\mathbb{A}^n$) | M. Miyanishi | survey | — | needs-verification |
-| 20 | 2014 | On the cancellation problem for the affine space $\mathbb{A}^3$ in characteristic $p$ | Neena Gupta | breakthrough | 10.1007/s00222-013-0455-2 | needs-verification |
-| 21 | 2014 | On Zariski's cancellation problem in positive characteristic | Neena Gupta | breakthrough | arXiv:1306.3043 | needs-verification |
+| 20 | 2014 | On the cancellation problem for the affine space $\mathbb{A}^3$ in characteristic $p$ | Neena Gupta | breakthrough | 10.1007/s00222-013-0455-2 | verified |
+| 21 | 2014 | On Zariski's cancellation problem in positive characteristic | Neena Gupta | breakthrough | — | needs-verification |
 | 22 | 2015 | A survey on Zariski cancellation problem | Neena Gupta | survey | — | needs-verification |
 | 23 | 2017 | On the family of affine threefolds $x^m y = F(x,z,t)$ and cancellation | Neena Gupta (with Dutta, Bhatwadekar) | modern | — | needs-verification |
 | 24 | 2019 | $\mathbb{A}^1$-contractibility of the Koras–Russell threefold | A. Dubouloz, J. Fasel (and related motivic work) | modern | — | needs-verification |
