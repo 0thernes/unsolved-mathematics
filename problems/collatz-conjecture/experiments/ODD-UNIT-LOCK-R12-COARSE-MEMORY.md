@@ -4,7 +4,7 @@
 **Microscope:** [`odd_unit_lock_transition_microscope.py`](odd_unit_lock_transition_microscope.py)
 **Classifier:** [`odd_unit_lock_bridge_classifier.py`](odd_unit_lock_bridge_classifier.py)
 **Inputs:**
-[`results/odd_unit_lock_transition_microscope_d13_R12_N50000_20260705.json`](results/odd_unit_lock_transition_microscope_d13_R12_N50000_20260705.json),
+[`results/odd_unit_lock_transition_microscope_d13_R12_N50000_20260705.json.gz`](results/odd_unit_lock_transition_microscope_d13_R12_N50000_20260705.json.gz) (losslessly gzip-compressed from 38.6 MB to 0.64 MB),
 [`results/odd_unit_lock_bridge_classifier_d13_R12_N50000_20260705.json`](results/odd_unit_lock_bridge_classifier_d13_R12_N50000_20260705.json)
 
 Status: finite theorem-discovery data. This proves no part of the Collatz

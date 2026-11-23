@@ -2495,8 +2495,10 @@
       "producer": "odd_unit_lock_transition_lab.py"
     },
     {
-      "file": "odd_unit_lock_transition_microscope_d13_R12_N50000_20260705.json",
-      "size_bytes": 39944999,
+      "file": "odd_unit_lock_transition_microscope_d13_R12_N50000_20260705.json.gz",
+      "size_bytes": 642598,
+      "uncompressed_size_bytes": 38605281,
+      "compression": "gzip (lossless, mtime=0)",
       "top_keys": [
         "checks",
         "classification",
