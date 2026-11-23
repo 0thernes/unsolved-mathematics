@@ -126,18 +126,22 @@ jobs:
           lake build Challenge Solution NonVacuity
           lake env lean VerifyAxioms.lean | tee axioms.log
           python3 - <<'PY'
-          import re, sys
+          import re
           allowed = {"propext", "Classical.choice", "Quot.sound"}
           txt = open("axioms.log", encoding="utf-8").read()
-          lines = [ln for ln in txt.splitlines() if "depends on axioms:" in ln]
-          assert len(lines) >= 14, f"Expected >=14 axiom lines, got {len(lines)}"
-          for ln in lines:
-              m = re.search(r"\[(.*)\]", ln)
-              assert m, f"Could not parse axiom list: {ln}"
-              used = {a.strip() for a in m.group(1).split(",") if a.strip()}
+          matches = list(re.finditer(
+              r"'([^']+)' (?:depends on axioms: \[([^\]]*)\]|does not depend on any axioms)",
+              txt,
+              re.S,
+          ))
+          assert len(matches) >= 18, f"Expected >=18 audited declarations, got {len(matches)}"
+          for m in matches:
+              name = m.group(1)
+              raw = m.group(2) or ""
+              used = {a.strip() for a in raw.split(",") if a.strip()}
               bad = used - allowed
-              assert not bad, f"Disallowed axiom(s) {bad} in: {ln}"
-          print(f"OK: audited {len(lines)} theorems — strictly within {sorted(allowed)}.")
+              assert not bad, f"Disallowed axiom(s) {bad} in {name}"
+          print(f"OK: audited {len(matches)} theorems/witnesses — strictly within {sorted(allowed)}.")
           PY
 
       - name: Replay through leanchecker-paranoid --fresh
