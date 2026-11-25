@@ -1,4 +1,4 @@
-# The Unsolved Mathematics Atlas (`v0.3.0`) — Full LLM Context (`llms-full.txt`)
+# The Unsolved Mathematics Atlas (`v0.4.0`) — Full LLM Context (`llms-full.txt`)
 
 > Canonical agent rules: `AGENTS.md`. Concise index: `llms.txt`.
 > Author: Alexander S. Donahue (ORCID `0009-0006-8168-9648`, independent researcher).
@@ -11,32 +11,37 @@
 1. A **single-source YAML registry** (`data/problems.yaml`, validated strictly against `schema/problem.schema.json`).
 2. **106 structured 7-section dossiers** (`problems/<slug>/{README,history,originator,approaches,attempts,papers,mathematicians,status}.md`) plus 106 AI-assisted working syntheses (`meta-analyses/<slug>.md`).
 3. A **deterministic BM25 retrieval corpus** (`rag/corpus.jsonl`, 3,763 unique chunks, zero optional tokenizer drift).
-4. A **primary-source citation verification audit** (`scripts/verify_citations.py` + `data/citation-verification-log.json`): 554 identifier-bearing rows checked live against `export.arxiv.org` and `api.crossref.org` (`network_error: 0`), yielding **445 API-verified identifiers** and **109 invalid/hallucinated identifiers stripped** honestly to `—` / `needs-verification`.
-5. A **standalone, zero-Mathlib Lean 4.35.0 formal core** (`formal/`) proving **14 headline structural lemmas, finite cases, and barrier meta-theorems** across 4 open problems (Collatz 8, Erdős–Straus 1, Lonely Runner 3, Brocard 2) with **0 `sorry`, 0 `admit`, 0 `native_decide`, 0 custom `axiom`**, concrete non-vacuity witnesses (`formal/NonVacuity.lean`), axiom audit (`formal/VerifyAxioms.lean` strictly within `{propext, Classical.choice, Quot.sound}`), challenge/solution comparator (`formal/Challenge.lean`, `formal/comparator.json`), and human-auditable statement fidelity (`formal/STATEMENT_FIDELITY.md`).
+4. A **primary-source citation & retraction audit** (`scripts/verify_citations.py`, `data/citation-verification-log.json`, `scripts/check_retractions.py`, `data/retraction-audit.json`): 554 identifier-bearing rows checked live against `export.arxiv.org` and `api.crossref.org` (`network_error: 0`), yielding **445 API-verified identifiers** and **109 invalid/hallucinated identifiers stripped** honestly to `—` / `needs-verification`; all **220 verified DOIs** checked against Crossref + DataCite retraction notices (**0 retracted**, **3 publisher errata/corrections** logged, `network_errors: 0`).
+5. A **standalone, zero-Mathlib Lean 4.35.0 formal core** (`lean/`) proving **22 headline structural theorems** across 4 open-problem programs (Collatz 11, Erdős–Straus 3, Lonely Runner 4, Brocard 4), paired with **6 concrete non-vacuity witnesses** (`lean/NonVacuity.lean`) and **8 explicit adversarial false-variant refutations** (`lean/Adversarial.lean`) = **36 audited declarations**, with **0 `sorry`, 0 `admit`, 0 `native_decide`, 0 custom `axiom`**, axioms strictly within `{propext, Classical.choice, Quot.sound}` (`lean/VerifyAxioms.lean`, mirrored verbatim in `README.md`), challenge/solution comparator (`lean/Challenge.lean`, `lean/comparator.json`), human-auditable statement fidelity (`lean/STATEMENT_FIDELITY.md`), and full 6-kernel replay (`lean/six_kernel_audit.txt`).
+6. A **publication-grade AMS-LaTeX white paper** (`paper/Donahue_2026_unsolved_mathematics_atlas.tex` → `paper/Donahue_2026_unsolved_mathematics_atlas.pdf` + clean-room-verified `paper/arxiv_submission.tar.gz`) and **interactive Lean Proof Blueprint** (`_site/blueprint.html`).
 
 **Hard Epistemic Invariants:**
 - Never claim any open conjecture is solved without primary-source mathematical consensus.
 - Never fabricate a DOI, arXiv ID, metric, test result, or review record.
 - Never cite `0thernes LLC` (no legal entity exists as of November 2026); use `Alexander S. Donahue` (independent researcher, ORCID `0009-0006-8168-9648`).
-- Disclose transparently that only 1/4 planned AI model passes (Claude self-review) and 0/106 independent human mathematician peer reviews have been completed.
-- Commit and push cleanly straight to `main` (Build Standard R2; no PR templates per R4).
+- Disclose transparently that only 1/4 planned AI model passes (Claude self-review on 2026-06-14, recorded under the historical non-canonical session label `claude-opus-4-8`) and 0/106 independent human mathematician peer reviews have been completed.
+- Commit and push cleanly straight to `main` (Build Standard v1.2.0 R2; no PR templates per R4; classify every finding across all 10 classes per R7).
 
 ## 2. Canonical Directory Map
 
-- `VERSION` — single version source (`0.3.0`)
+- `VERSION` — single version source (`0.4.0`)
 - `data/problems.yaml` — sole source of truth for the 106 problems
-- `data/schema.json` — mandatory JSON Schema enforced by `scripts/validate.py`
+- `schema/problem.schema.json` — mandatory JSON Schema enforced by `scripts/validate.py`
 - `data/problems.json` — deterministically generated machine registry (`CURRENT_YEAR = 2026`, tie-break `(-css, slug)`)
-- `data/citation-verification-log.json` — full API verification log for all 552 checked identifiers
+- `data/citation-verification-log.json` — full API verification log for all 554 checked identifiers
+- `data/retraction-audit.json` — Crossref + DataCite retraction audit across all 220 verified DOIs
 - `data/MANIFEST.sha256` — SHA-256 tamper-evidence manifest (`scripts/build_data_manifest.py --check`)
-- `formal/` — standalone Lean 4.35.0 formal core (`FormalAtlas/{Defs,Collatz,ErdosStraus,LonelyRunner,Brocard}.lean`, `Challenge.lean`, `Solution.lean`, `NonVacuity.lean`, `VerifyAxioms.lean`, `comparator.json`, `STATEMENT_FIDELITY.md`)
-- `scripts/` — `generate.py`, `validate.py`, `check_dossiers.py`, `check_papers.py`, `proof_claim_sweep.py`, `verify_citations.py`, `build_indexes.py`, `build_review_register.py`, `build_data_manifest.py`
+- `lean/` — standalone Lean 4.35.0 formal core (`FormalAtlas/{Defs,Collatz,ErdosStraus,LonelyRunner,Brocard}.lean`, `Challenge.lean`, `Solution.lean`, `NonVacuity.lean`, `Adversarial.lean`, `VerifyAxioms.lean`, `comparator.json`, `STATEMENT_FIDELITY.md`, `six_kernel_audit.txt`)
+- `paper/` — AMS-LaTeX white paper (`Donahue_2026_unsolved_mathematics_atlas.tex`, `references.bib`, compiled PDF, `arxiv_submission.tar.gz`)
+- `scripts/` — `generate.py`, `validate.py`, `check_dossiers.py`, `check_papers.py`, `proof_claim_sweep.py`, `verify_citations.py`, `check_retractions.py`, `check_readme_axioms.py`, `build_site.py`, `build_indexes.py`, `build_review_register.py`, `build_data_manifest.py`, `Audit-Repo.ps1`, `audit-repo.sh`
 - `rag/` — `build_corpus.py`, `retriever.py`, `corpus.jsonl`
 - `tests/` — `test_atlas.py`, `test_collatz_instruments.py`, `test_verification_ladder.py`, `test_properties.py`, `mutation_check.py`
 - `CLAIMS.md` — falsifiable claims ledger ("What would prove us wrong")
 - `LIMITATIONS.md` — explicit scope, review, formalization, and selection-bias boundaries
+- `ERRATA.md` — append-only post-release correction & withdrawal ledger
 - `REPLICATION.md` — clean-clone reproduction commands and replication log
-- `docs/reviews/2026-11-23-forensic-philosophical-audit.md` — exhaustive 6-class taxonomy + 5W1H + Deductive/Inductive/Abductive & Philosophy of Mathematics audit + 10-pass review log
+- `docs/CROSS_ATLAS_AUDIT_2026-11-25.md` — honest cross-check of 1,900 Mega-Atlas problems, 106 Atlas problems, and 11 `0thernes` research repositories
+- `docs/reviews/2026-11-25-three-cycle-hardening-audit.md` — full 3-cycle, 10-class hardening audit
 - `docs/adr/0001–0003` — Architecture Decision Records
 
 ## 3. Verification Commands
@@ -44,13 +49,15 @@
 ```bash
 python scripts/generate.py --check
 python scripts/validate.py
-python scripts/check_dossiers.py
+python scripts/check_dossiers.py --strict
 python scripts/check_papers.py
 python scripts/proof_claim_sweep.py
+python scripts/check_retractions.py --check
+python scripts/check_readme_axioms.py
 python scripts/build_data_manifest.py --check
 python -m pytest -v tests/
 python tests/mutation_check.py
-cd formal && lake build Challenge Solution NonVacuity && lake env lean VerifyAxioms.lean
+cd lean && lake build Challenge Solution NonVacuity Adversarial && lake env lean VerifyAxioms.lean
 # Linux CI with bubblewrap:
-cd formal && lake check --paranoid && lake comparator --config comparator.json --paranoid
+cd lean && lake check --paranoid && lake comparator --config comparator.json --paranoid
 ```

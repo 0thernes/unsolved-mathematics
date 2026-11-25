@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT
 """
 Smoke + invariant tests for the Atlas build.
 Run: python -m pytest -q   (or simply: python tests/test_atlas.py)

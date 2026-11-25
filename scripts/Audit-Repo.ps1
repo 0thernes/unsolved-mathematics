@@ -21,6 +21,7 @@ if ($Json -and -not [System.IO.Path]::IsPathRooted($Json)) { $Json = Join-Path (
 if ($Markdown -and -not [System.IO.Path]::IsPathRooted($Markdown)) { $Markdown = Join-Path (Get-Location).Path $Markdown }
 Set-Location -LiteralPath $Path
 $Root = (Get-Location).Path
+[System.IO.Directory]::SetCurrentDirectory($Root)
 
 function Test-Git { try { $null = git rev-parse --is-inside-work-tree 2>$null; return ($LASTEXITCODE -eq 0) } catch { return $false } }
 $IsGit = Test-Git
@@ -115,7 +116,7 @@ function Invoke-Builtin([string]$name) {
       if ($br -ne "main") { $D = "current branch is '$br', not main"; break }
       $null = git rev-parse HEAD 2>$null; if ($LASTEXITCODE -ne 0) { $D = "no commits yet"; break }
       $ids = @(git log --format='%ae %ce')
-      if ($ids | Where-Object { $_ -match '(example\.(com|org)|placeholder|localhost|invalid|@users\.noreply\.github\.com.*bot|^ *$)' }) { $D = "placeholder or example email in history"; break }
+      if ($ids | Where-Object { $_ -match '(example\.(com|org)|placeholder|localhost|invalid|@users\.noreply\.github\.com.*bot|^ *$)' }) { $D = "placeholder, example or bot email in history"; break }
       $R = "pass"; $D = "on main; author identities look real"
     }
     "hygiene" {
@@ -243,7 +244,7 @@ if ($Json) {
 }
 if ($Markdown) {
   $md = @("## Build Standard v$StdVersion audit", "", ("Structure **{0}%** · Completion **{1}%** · Core complete **{2}%** · pass $P, partial $PA, fail $F, n/a $NA, unknown $U" -f (Fmt $STRUCT), (Fmt $COMPLETE), (Fmt $CORE)), "", "| Result | ID | Tier | Item | Detail |", "|---|---|---|---|---|")
-  $md += $Results | Where-Object { $_.result -ne "na" } | ForEach-Object { "| $($_.result) | $($_.id) | $($_.tier) | $($_.name) | $($_.detail) |" }
+  $md += $Results | Where-Object { $_.result -ne "na" } | ForEach-Object { "| $($_.result) | $($_.id) | $($_.tier) | $($_.name.Replace('|', '\|')) | $($_.detail.Replace('|', '\|')) |" }
   Add-Content -LiteralPath $Markdown -Value $md -Encoding UTF8
 }
 exit 0

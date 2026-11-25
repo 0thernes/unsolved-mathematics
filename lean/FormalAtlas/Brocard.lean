@@ -67,4 +67,38 @@ public theorem brocard_exhaustive_le_12 (n m : Nat) (hn : n ≤ 12) (h : IsBroca
   | 12 => exfalso; exact no_square_between 21886 (fact 12 + 1) m (by decide) (by decide) h
   | n + 13 => omega
 
+theorem fact_mod4_zero (n : Nat) (hn : 4 ≤ n) : fact n % 4 = 0 := by
+  induction n with
+  | zero => omega
+  | succ k ih =>
+    by_cases hk : k = 3
+    · subst hk; decide
+    · have hk4 : 4 ≤ k := by omega
+      have h0 := ih hk4
+      simp only [fact]
+      rw [Nat.mul_mod, h0, Nat.mul_zero]
+
+/-- **Theorem 21 (Brocard Mod-4 Structural Constraint).**
+    For every `n ≥ 4`, `n! + 1 ≡ 1 (mod 4)`. Consequently, every Brown-number
+    solution `(n, m)` with `n ≥ 4` must have odd `m`. -/
+public theorem brocard_mod4_ge_4 (n : Nat) (hn : 4 ≤ n) :
+    (fact n + 1) % 4 = 1 := by
+  have h0 := fact_mod4_zero n hn
+  omega
+
+/-- **Theorem 22 (Exhaustive Classification of Brocard Solutions for `n ≤ 15`).**
+    Extends `brocard_exhaustive_le_12` through `15! + 1 = 1,307,674,368,001` via
+    kernel-checked square bracketing (`no_square_between`), confirming that
+    `(4, 5)`, `(5, 11)`, and `(7, 71)` are the sole solutions for `n ≤ 15`. -/
+public theorem brocard_exhaustive_le_15 (n m : Nat) (hn : n ≤ 15) (h : IsBrocardSol n m) :
+    (n = 4 ∧ m = 5) ∨ (n = 5 ∧ m = 11) ∨ (n = 7 ∧ m = 71) := by
+  by_cases h12 : n ≤ 12
+  · exact brocard_exhaustive_le_12 n m h12 h
+  · unfold IsBrocardSol at h
+    match n with
+    | 13 => exfalso; exact no_square_between 78911 (fact 13 + 1) m (by decide) (by decide) h
+    | 14 => exfalso; exact no_square_between 295259 (fact 14 + 1) m (by decide) (by decide) h
+    | 15 => exfalso; exact no_square_between 1143535 (fact 15 + 1) m (by decide) (by decide) h
+    | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | _ + 16 => omega
+
 end FormalAtlas

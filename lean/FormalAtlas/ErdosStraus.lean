@@ -266,4 +266,34 @@ public theorem erdos_straus_mordell_840 (n : Nat) (hn : 2 ≤ n)
   · exact h4 (by clear h1 h2 h3 h5 h6; omega)
   · exact h6 (by clear h1 h2 h3 h4 h5; omega)
 
+/-- **Theorem 18 (Multiplicative Closure / Prime Reduction).**
+    If `m` admits an Erdős–Straus decomposition, then `m * k` does for every `k > 0`.
+    Consequently, any minimal counterexample to Erdős–Straus must be prime. -/
+public theorem erdos_straus_multiplicative_closure (m k : Nat) (hk : 0 < k)
+    (hm : HasErdosStraus m) : HasErdosStraus (m * k) :=
+  es_scale m k hk hm
+
+/-- **Theorem 19 (Resolution of the Six Smallest Mordell Exceptional Squares).**
+    All six smallest squares occupying Mordell's unaddressed residue classes
+    `{121, 169, 289, 361, 529, 841}` (`11², 13², 17², 19², 23², 29²`) admit
+    Erdős–Straus decompositions via Theorem 9 + multiplicative closure. -/
+public theorem erdos_straus_mordell_exceptions_small :
+    HasErdosStraus 121 ∧ HasErdosStraus 169 ∧ HasErdosStraus 289 ∧
+    HasErdosStraus 361 ∧ HasErdosStraus 529 ∧ HasErdosStraus 841 := by
+  have h11 : HasErdosStraus 11 :=
+    erdos_straus_mordell_840 11 (by decide) (by decide) (by decide) (by decide) (by decide) (by decide) (by decide)
+  have h13 : HasErdosStraus 13 :=
+    erdos_straus_mordell_840 13 (by decide) (by decide) (by decide) (by decide) (by decide) (by decide) (by decide)
+  have h17 : HasErdosStraus 17 :=
+    erdos_straus_mordell_840 17 (by decide) (by decide) (by decide) (by decide) (by decide) (by decide) (by decide)
+  have h19 : HasErdosStraus 19 :=
+    erdos_straus_mordell_840 19 (by decide) (by decide) (by decide) (by decide) (by decide) (by decide) (by decide)
+  have h23 : HasErdosStraus 23 :=
+    erdos_straus_mordell_840 23 (by decide) (by decide) (by decide) (by decide) (by decide) (by decide) (by decide)
+  have h29 : HasErdosStraus 29 :=
+    erdos_straus_mordell_840 29 (by decide) (by decide) (by decide) (by decide) (by decide) (by decide) (by decide)
+  exact ⟨es_scale 11 11 (by decide) h11, es_scale 13 13 (by decide) h13,
+         es_scale 17 17 (by decide) h17, es_scale 19 19 (by decide) h19,
+         es_scale 23 23 (by decide) h23, es_scale 29 29 (by decide) h29⟩
+
 end FormalAtlas

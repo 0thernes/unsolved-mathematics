@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MIT
 """
 validate.py — Integrity gate for the Atlas (run in CI).
 
@@ -84,6 +85,19 @@ def check_version_parity() -> list[str]:
         m = re.search(r'^version\s*=\s*"([^"]+)"', pyproj.read_text(encoding="utf-8"), re.M)
         if m and m.group(1) != ver:
             issues.append(f"pyproject.toml version ({m.group(1)}) != VERSION ({ver})")
+
+    lakefile = ROOT / "lean" / "lakefile.toml"
+    if lakefile.exists():
+        m = re.search(r'^version\s*=\s*"([^"]+)"', lakefile.read_text(encoding="utf-8"), re.M)
+        if m and m.group(1) != ver:
+            issues.append(f"lean/lakefile.toml version ({m.group(1)}) != VERSION ({ver})")
+
+    fyaml = ROOT / "lean" / "formalization.yaml"
+    if fyaml.exists():
+        fdata = generate.yaml.safe_load(fyaml.read_text(encoding="utf-8"))
+        fver = str(fdata.get("version", ""))
+        if fver != ver:
+            issues.append(f"lean/formalization.yaml version ({fver}) != VERSION ({ver})")
     return issues
 
 

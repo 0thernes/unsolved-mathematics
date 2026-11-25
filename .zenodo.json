@@ -20,5 +20,5 @@
     "Lonely Runner conjecture",
     "retrieval-augmented generation"
   ],
-  "notes": "Dual-licensed: prose/data under CC BY 4.0 (LICENSE), code and Lean 4 formal proofs under MIT (LICENSE-CODE). Human author directed conceptualization, scoping, formal statement-fidelity auditing, and curation; AI tools were used as disclosed drafting/engineering instruments (see CLAIMS.md and formal/formalization.yaml)."
+  "notes": "Dual-licensed: prose/data under CC BY 4.0 (LICENSE), code and Lean 4 formal proofs under MIT (LICENSE-CODE). Human author directed conceptualization, scoping, formal statement-fidelity auditing, and curation; AI tools were used as disclosed drafting/engineering instruments (see CLAIMS.md, ERRATA.md, and lean/formalization.yaml)."
 }

@@ -1,15 +1,18 @@
 # The Unsolved Mathematics Atlas
 
-> Reproducible, ranked, research-grade dossier of 106 open mathematical problems across 38 fields, paired with a standalone multi-kernel Lean 4.35.0 formal verification core, automated primary-source citation verification, and a deterministic RAG corpus.
+> Reproducible, ranked, research-grade dossier of 106 open mathematical problems across 38 fields, paired with a standalone zero-Mathlib multi-kernel Lean 4.35.0 formal core (`lean/`), automated primary-source citation & Crossref/DataCite retraction auditing, an interactive Proof Blueprint, a compiled AMS-LaTeX white paper (`paper/`), and a deterministic RAG corpus.
 
 ## Entry Points
 
-- [AGENTS.md](AGENTS.md): Canonical instructions, commands, hard rules, and known traps
-- [README.md](README.md): Overview, quickstart, master ranking, and verification status
+- [AGENTS.md](AGENTS.md): Canonical instructions, commands, Build Standard v1.2.0 hard rules (10 finding classes), and known traps
+- [README.md](README.md): Overview, quickstart, master ranking, and verbatim `#print axioms` verification block
 - [CLAIMS.md](CLAIMS.md): Complete epistemic claims ledger with falsification criteria
 - [LIMITATIONS.md](LIMITATIONS.md): Explicit scope boundaries and real-vs-metaphor audit
-- [REPLICATION.md](REPLICATION.md): Clean-clone reproduction protocol (Python + Lean 4.35.0)
+- [ERRATA.md](ERRATA.md): Append-only post-release correction and withdrawal ledger
+- [REPLICATION.md](REPLICATION.md): Clean-clone reproduction protocol (Python + Lean 4.35.0 + Tectonic)
 - [PHILOSOPHY.md](PHILOSOPHY.md): Epistemic principles and research methodology
 - [ARCHITECTURE.md](ARCHITECTURE.md): Data model, build pipeline, and RAG architecture
-- [formal/STATEMENT_FIDELITY.md](formal/STATEMENT_FIDELITY.md): Line-by-line Lean 4 statement fidelity audit
-- [docs/reviews/2026-11-23-forensic-philosophical-audit.md](docs/reviews/2026-11-23-forensic-philosophical-audit.md): Full 6-class taxonomy & philosophical audit
+- [lean/STATEMENT_FIDELITY.md](lean/STATEMENT_FIDELITY.md): Line-by-line Lean 4.35.0 statement fidelity audit (22 theorems + 6 witnesses + 8 adversarial refutations)
+- [paper/Donahue_2026_unsolved_mathematics_atlas.pdf](paper/Donahue_2026_unsolved_mathematics_atlas.pdf): Compiled publication-grade AMS-LaTeX white paper
+- [docs/CROSS_ATLAS_AUDIT_2026-11-25.md](docs/CROSS_ATLAS_AUDIT_2026-11-25.md): Cross-check of 1,900 Mega-Atlas problems, 106 Atlas problems, and 11 `0thernes` research repositories
+- [docs/reviews/2026-11-25-three-cycle-hardening-audit.md](docs/reviews/2026-11-25-three-cycle-hardening-audit.md): Full 3-cycle, 10-class forensic & red-team hardening audit

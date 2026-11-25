@@ -1,12 +1,13 @@
 module
 
+-- SPDX-License-Identifier: MIT
 public import FormalAtlas.Defs
 import FormalAtlas
 
 /-!
 # Solution — Zero-Sorry Proofs Matching `Challenge.lean`
 
-Exports all 14 headline theorems in `FormalAtlas.Challenge` namespace with
+Exports all 22 headline theorems in `FormalAtlas.Challenge` namespace with
 exact signature match for `lake comparator --config comparator.json --paranoid`.
 -/
 
@@ -63,11 +64,33 @@ public theorem thm_collatz_epsilon_invariance_barrier :
     (iter TMinus 11 17 = 17 ∧ (2 : Int) ^ 11 < (3 : Int) ^ (oddCount TMinus 11 17)) :=
   collatz_epsilon_invariance_barrier
 
+public theorem thm_collatz_cycle_equation (d : Nat) (x : Int) (hcyc : iter T d x = x) :
+    ((2 : Int) ^ d - (3 : Int) ^ (oddCount T d x)) * x = wordIntercept (parityWord T d x) :=
+  collatz_cycle_equation d x hcyc
+
+public theorem thm_collatz_parity_word_append (f : Int → Int) (d1 d2 : Nat) (x : Int) :
+    parityWord f (d1 + d2) x = parityWord f d1 x ++ parityWord f d2 (iter f d1 x) :=
+  collatz_parity_word_append f d1 d2 x
+
+public theorem thm_collatz_negative_cycles :
+    (iter T 3 (-5) = -5 ∧ (2 : Int) ^ 3 < (3 : Int) ^ (oddCount T 3 (-5))) ∧
+    (iter T 11 (-17) = -17 ∧ (2 : Int) ^ 11 < (3 : Int) ^ (oddCount T 11 (-17))) :=
+  collatz_negative_cycles
+
 public theorem thm_erdos_straus_mordell_840 (n : Nat) (hn : 2 ≤ n)
     (h1 : n % 840 ≠ 1) (h2 : n % 840 ≠ 121) (h3 : n % 840 ≠ 169)
     (h4 : n % 840 ≠ 289) (h5 : n % 840 ≠ 361) (h6 : n % 840 ≠ 529) :
     HasErdosStraus n :=
   erdos_straus_mordell_840 n hn h1 h2 h3 h4 h5 h6
+
+public theorem thm_erdos_straus_multiplicative_closure (m k : Nat) (hk : 0 < k)
+    (hm : HasErdosStraus m) : HasErdosStraus (m * k) :=
+  erdos_straus_multiplicative_closure m k hk hm
+
+public theorem thm_erdos_straus_mordell_exceptions_small :
+    HasErdosStraus 121 ∧ HasErdosStraus 169 ∧ HasErdosStraus 289 ∧
+    HasErdosStraus 361 ∧ HasErdosStraus 529 ∧ HasErdosStraus 841 :=
+  erdos_straus_mordell_exceptions_small
 
 public theorem thm_lonely_runner_sharpness_all_n (n : Nat) (hn : 1 ≤ n) (p q : Int) (hq : 0 < q) :
     ∃ i : Nat, 1 ≤ i ∧ i ≤ n ∧ WithinDist ((n : Int) + 1) p q (i : Int) :=
@@ -81,6 +104,11 @@ public theorem thm_lonely_runner_n2 (v1 v2 : Int) (hv1 : 0 < v1) (hv2 : 0 < v2) 
     ∃ p q : Int, 0 < q ∧ FarEnough 3 p q v1 ∧ FarEnough 3 p q v2 :=
   lonely_runner_n2 v1 v2 hv1 hv2
 
+public theorem thm_lonely_runner_speed_scaling (m p q v k : Int)
+    (hq : 0 < q) (hk : 0 < k) (h : FarEnough m p q v) :
+    FarEnough m p (q * k) (v * k) :=
+  lonely_runner_speed_scaling m p q v k hq hk h
+
 public theorem thm_brocard_brown_solutions :
     IsBrocardSol 4 5 ∧ IsBrocardSol 5 11 ∧ IsBrocardSol 7 71 :=
   brocard_brown_solutions
@@ -88,5 +116,13 @@ public theorem thm_brocard_brown_solutions :
 public theorem thm_brocard_exhaustive_le_12 (n m : Nat) (hn : n ≤ 12) (h : IsBrocardSol n m) :
     (n = 4 ∧ m = 5) ∨ (n = 5 ∧ m = 11) ∨ (n = 7 ∧ m = 71) :=
   brocard_exhaustive_le_12 n m hn h
+
+public theorem thm_brocard_mod4_ge_4 (n : Nat) (hn : 4 ≤ n) :
+    (fact n + 1) % 4 = 1 :=
+  brocard_mod4_ge_4 n hn
+
+public theorem thm_brocard_exhaustive_le_15 (n m : Nat) (hn : n ≤ 15) (h : IsBrocardSol n m) :
+    (n = 4 ∧ m = 5) ∨ (n = 5 ∧ m = 11) ∨ (n = 7 ∧ m = 71) :=
+  brocard_exhaustive_le_15 n m hn h
 
 end FormalAtlas.Challenge

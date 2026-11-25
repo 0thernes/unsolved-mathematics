@@ -1,6 +1,6 @@
 # Collatz Algorithm Attack Matrix - 2026-07-04
 
-Source catalog: attachment `C:\Users\Alexa\.codex\attachments\6e6a37ba-5a26-44c4-9ae8-df4377988028\pasted-text.txt`, "The 1000 Algorithms, Categories, and Domains", catalog version `0.9.13-local`.
+Source catalog: attachment `[redacted-local-session-attachment]/pasted-text.txt`, "The 1000 Algorithms, Categories, and Domains", catalog version `0.9.13-local`.
 
 Purpose: convert the broad 1000-entry algorithm catalog into a Collatz-specific routing matrix. This is not a proof program and not a claim of mathematical novelty. It is a triage layer: which algorithmic families can produce proof obligations, refutations, certificates, faster experiments, or better artifact hygiene for the current Collatz repository.
 

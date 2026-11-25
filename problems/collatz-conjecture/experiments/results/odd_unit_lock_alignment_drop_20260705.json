@@ -32,7 +32,7 @@
           20,
           24
         ],
-        "path": "Z:\\[Vibe Coded (AI)]\\CLAUDECODE\\Unresolved Math Problems\\problems\\collatz-conjecture\\experiments\\results\\odd_unit_lock_bridge_refinement_d13_R16_to_R20_R24_N250000_20260705.json",
+        "path": "problems/collatz-conjecture/experiments/results/odd_unit_lock_bridge_refinement_d13_R16_to_R20_R24_N250000_20260705.json",
         "previous_lifts": {
           "20": 1,
           "24": 1
@@ -70,7 +70,7 @@
           20,
           24
         ],
-        "path": "Z:\\[Vibe Coded (AI)]\\CLAUDECODE\\Unresolved Math Problems\\problems\\collatz-conjecture\\experiments\\results\\odd_unit_lock_bridge_refinement_d13_R16_to_R20_R24_N250000_20260705.json",
+        "path": "problems/collatz-conjecture/experiments/results/odd_unit_lock_bridge_refinement_d13_R16_to_R20_R24_N250000_20260705.json",
         "previous_lifts": {
           "20": 1,
           "24": 1
@@ -108,7 +108,7 @@
           20,
           24
         ],
-        "path": "Z:\\[Vibe Coded (AI)]\\CLAUDECODE\\Unresolved Math Problems\\problems\\collatz-conjecture\\experiments\\results\\odd_unit_lock_bridge_refinement_d13_R16_to_R20_R24_N250000_20260705.json",
+        "path": "problems/collatz-conjecture/experiments/results/odd_unit_lock_bridge_refinement_d13_R16_to_R20_R24_N250000_20260705.json",
         "previous_lifts": {
           "20": 1,
           "24": 1
@@ -146,7 +146,7 @@
           20,
           24
         ],
-        "path": "Z:\\[Vibe Coded (AI)]\\CLAUDECODE\\Unresolved Math Problems\\problems\\collatz-conjecture\\experiments\\results\\odd_unit_lock_bridge_refinement_d13_R16_to_R20_R24_N250000_20260705.json",
+        "path": "problems/collatz-conjecture/experiments/results/odd_unit_lock_bridge_refinement_d13_R16_to_R20_R24_N250000_20260705.json",
         "previous_lifts": {
           "20": 1,
           "24": 1
@@ -184,7 +184,7 @@
           20,
           24
         ],
-        "path": "Z:\\[Vibe Coded (AI)]\\CLAUDECODE\\Unresolved Math Problems\\problems\\collatz-conjecture\\experiments\\results\\odd_unit_lock_bridge_refinement_d13_R17_to_R20_R24_N1000000_20260705.json",
+        "path": "problems/collatz-conjecture/experiments/results/odd_unit_lock_bridge_refinement_d13_R17_to_R20_R24_N1000000_20260705.json",
         "previous_lifts": {
           "20": 1,
           "24": 1
@@ -222,7 +222,7 @@
           20,
           24
         ],
-        "path": "Z:\\[Vibe Coded (AI)]\\CLAUDECODE\\Unresolved Math Problems\\problems\\collatz-conjecture\\experiments\\results\\odd_unit_lock_bridge_refinement_d13_R17_to_R20_R24_N1000000_20260705.json",
+        "path": "problems/collatz-conjecture/experiments/results/odd_unit_lock_bridge_refinement_d13_R17_to_R20_R24_N1000000_20260705.json",
         "previous_lifts": {
           "20": 1,
           "24": 1
@@ -260,7 +260,7 @@
           20,
           24
         ],
-        "path": "Z:\\[Vibe Coded (AI)]\\CLAUDECODE\\Unresolved Math Problems\\problems\\collatz-conjecture\\experiments\\results\\odd_unit_lock_bridge_refinement_d13_R18_to_R20_R24_N1000000_20260705.json",
+        "path": "problems/collatz-conjecture/experiments/results/odd_unit_lock_bridge_refinement_d13_R18_to_R20_R24_N1000000_20260705.json",
         "previous_lifts": {
           "20": 1,
           "24": 1
@@ -277,14 +277,14 @@
   ],
   "inputs": {
     "classifiers": [
-      "Z:\\[Vibe Coded (AI)]\\CLAUDECODE\\Unresolved Math Problems\\problems\\collatz-conjecture\\experiments\\results\\odd_unit_lock_bridge_classifier_d13_R16_N250000_20260705.json",
-      "Z:\\[Vibe Coded (AI)]\\CLAUDECODE\\Unresolved Math Problems\\problems\\collatz-conjecture\\experiments\\results\\odd_unit_lock_bridge_classifier_d13_R17_N1000000_20260705.json",
-      "Z:\\[Vibe Coded (AI)]\\CLAUDECODE\\Unresolved Math Problems\\problems\\collatz-conjecture\\experiments\\results\\odd_unit_lock_bridge_classifier_d13_R18_N1000000_20260705.json"
+      "problems/collatz-conjecture/experiments/results/odd_unit_lock_bridge_classifier_d13_R16_N250000_20260705.json",
+      "problems/collatz-conjecture/experiments/results/odd_unit_lock_bridge_classifier_d13_R17_N1000000_20260705.json",
+      "problems/collatz-conjecture/experiments/results/odd_unit_lock_bridge_classifier_d13_R18_N1000000_20260705.json"
     ],
     "refinements": [
-      "Z:\\[Vibe Coded (AI)]\\CLAUDECODE\\Unresolved Math Problems\\problems\\collatz-conjecture\\experiments\\results\\odd_unit_lock_bridge_refinement_d13_R16_to_R20_R24_N250000_20260705.json",
-      "Z:\\[Vibe Coded (AI)]\\CLAUDECODE\\Unresolved Math Problems\\problems\\collatz-conjecture\\experiments\\results\\odd_unit_lock_bridge_refinement_d13_R17_to_R20_R24_N1000000_20260705.json",
-      "Z:\\[Vibe Coded (AI)]\\CLAUDECODE\\Unresolved Math Problems\\problems\\collatz-conjecture\\experiments\\results\\odd_unit_lock_bridge_refinement_d13_R18_to_R20_R24_N1000000_20260705.json"
+      "problems/collatz-conjecture/experiments/results/odd_unit_lock_bridge_refinement_d13_R16_to_R20_R24_N250000_20260705.json",
+      "problems/collatz-conjecture/experiments/results/odd_unit_lock_bridge_refinement_d13_R17_to_R20_R24_N1000000_20260705.json",
+      "problems/collatz-conjecture/experiments/results/odd_unit_lock_bridge_refinement_d13_R18_to_R20_R24_N1000000_20260705.json"
     ]
   },
   "result": "finite bridge mechanism classification; not a proof of Collatz",

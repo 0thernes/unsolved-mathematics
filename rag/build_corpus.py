@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MIT
 """
 build_corpus.py — Turn the Atlas into a retrieval-ready corpus.
 

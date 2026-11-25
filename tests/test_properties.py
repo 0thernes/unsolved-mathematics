@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT
 """Hypothesis property-based & numeric-stability tests (Build Standard B10 & B20)."""
 
 from __future__ import annotations

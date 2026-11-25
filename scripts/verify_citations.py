@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MIT
 """
 verify_citations.py — Primary-source citation verification against arXiv & Crossref.
 
@@ -36,7 +37,9 @@ except Exception:
 ROOT = Path(__file__).resolve().parent.parent
 PROBLEMS_DIR = ROOT / "problems"
 LOG_PATH = ROOT / "data" / "citation-verification-log.json"
-USER_AGENT = "UnsolvedMathematicsAtlas/0.3.0 (https://github.com/0thernes/unsolved-mathematics; mailto:0_0@0thernes.art)"
+_VER_FILE = ROOT / "VERSION"
+_VER = _VER_FILE.read_text(encoding="utf-8").strip() if _VER_FILE.exists() else "0.4.0"
+USER_AGENT = f"UnsolvedMathematicsAtlas/{_VER} (https://github.com/0thernes/unsolved-mathematics; mailto:0_0@0thernes.art)"
 
 ARXIV_RE = re.compile(r"(?:arXiv[:.]\s*|arxiv\.org/abs/)(\d{4}\.\d{4,5}(?:v\d+)?|[a-z\-]+(?:\.[A-Z]{2})?/\d{7})", re.I)
 DOI_RE = re.compile(r"(10\.\d{4,9}/[^\s,;\|`<>]+)")

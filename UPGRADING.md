@@ -1,6 +1,31 @@
 # Upgrading Guide (`UPGRADING.md`)
 
-> **Build Standard v1.1.0 item A41.** Breaking changes, data migrations, and upgrade steps between structural versions of `unsolved-mathematics`.
+> **Build Standard v1.2.0 item A41.** Breaking changes, data migrations, and upgrade steps between structural versions of `unsolved-mathematics`.
+
+---
+
+## Upgrading from `v0.3.x` to `v0.4.0`
+
+### 1. Breaking / Structural Changes
+
+- **Formal core moved `formal/` → `lean/`:** The Lean 4.35.0 package now lives under `lean/` (matching Build Standard `v1.2.0` `B22` and sibling `0thernes` repos). A redirect stub remains at `formal/ROADMAP.md` so legacy links do not 404.
+- **Expanded Lean comparator targets (14 → 22 theorems) + `Adversarial.lean`:** All 14 `v0.3.x` theorem names are preserved verbatim; 8 new headline theorems and 8 adversarial false-variant refutations (`lean/Adversarial.lean`) were added (36 total audited declarations in `lean/VerifyAxioms.lean`).
+- **New CI & verification gates:** `scripts/check_retractions.py --check` (`data/retraction-audit.json`), `scripts/check_readme_axioms.py` (verbatim `#print axioms` parity + Palomar limits), and `VERSION` parity extended to `lean/lakefile.toml` & `lean/formalization.yaml`.
+- **Companion AMS-LaTeX white paper (`paper/`):** Compiled PDF and clean-room-verified `arxiv_submission.tar.gz` are now tracked in `data/MANIFEST.sha256` and attached to SLSA-attested GitHub Releases.
+
+### 2. Upgrade Steps
+
+```bash
+git pull origin main
+python -m pip install -r requirements-lock.txt
+python scripts/generate.py --check
+python scripts/validate.py
+python scripts/check_retractions.py --check
+python scripts/check_readme_axioms.py
+python scripts/build_data_manifest.py --check
+python -m pytest -v tests/
+cd lean && lake build Challenge Solution NonVacuity Adversarial && lake env lean VerifyAxioms.lean
+```
 
 ---
 

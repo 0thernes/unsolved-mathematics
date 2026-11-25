@@ -717,4 +717,48 @@ public theorem collatz_epsilon_invariance_barrier :
     subst hlen
     exact terras_surj_general TMinus TMinus_shift_one parity_exists w
 
+-- ----------------------------------------------------------------------------
+-- Theorem 15: Exact Böhm–Sontacchi Cycle Numerator Equation
+-- ----------------------------------------------------------------------------
+
+/-- **Theorem 15 (Exact Cycle Equation).**
+    Every integer cycle `T^d(x) = x` satisfies `(2^d - 3^o) · x = c(w)`. -/
+public theorem collatz_cycle_equation (d : Nat) (x : Int) (hcyc : iter T d x = x) :
+    ((2 : Int) ^ d - (3 : Int) ^ (oddCount T d x)) * x = wordIntercept (parityWord T d x) := by
+  have h := collatz_exact_intercept_law d x
+  rw [hcyc] at h
+  rw [Int.sub_mul]
+  omega
+
+-- ----------------------------------------------------------------------------
+-- Theorem 16: Parity-Word Composition / Cocycle Identity
+-- ----------------------------------------------------------------------------
+
+/-- **Theorem 16 (Parity-Word Composition Law).**
+    For any map `f : Int → Int`, the length-`(d₁ + d₂)` parity word equals the
+    concatenation of the length-`d₁` word from `x` and the length-`d₂` word from `f^{d₁}(x)`. -/
+public theorem collatz_parity_word_append (f : Int → Int) (d1 d2 : Nat) (x : Int) :
+    parityWord f (d1 + d2) x = parityWord f d1 x ++ parityWord f d2 (iter f d1 x) := by
+  induction d1 generalizing x with
+  | zero =>
+    simp [parityWord, iter]
+  | succ d1 ih =>
+    have hadd : d1 + 1 + d2 = (d1 + d2) + 1 := by omega
+    rw [hadd]
+    simp only [parityWord, iter, List.cons_append]
+    rw [ih (f x)]
+
+-- ----------------------------------------------------------------------------
+-- Theorem 17: Non-Trivial Negative Integer Cycles of True Collatz Map T
+-- ----------------------------------------------------------------------------
+
+/-- **Theorem 17 (Non-Trivial Negative Cycles of `3n + 1`).**
+    Under the true Collatz shortcut map `T` on `Int`, both `x = -5` (period 3, 2 odd steps)
+    and `x = -17` (period 11, 7 odd steps) form genuine supercritical cycles, certifying
+    that the Collatz no-nontrivial-cycle conjecture fails on `Int` without `x > 0`. -/
+public theorem collatz_negative_cycles :
+    (iter T 3 (-5) = -5 ∧ (2 : Int) ^ 3 < (3 : Int) ^ (oddCount T 3 (-5))) ∧
+    (iter T 11 (-17) = -17 ∧ (2 : Int) ^ 11 < (3 : Int) ^ (oddCount T 11 (-17))) := by
+  exact ⟨⟨by decide, by decide⟩, ⟨by decide, by decide⟩⟩
+
 end FormalAtlas

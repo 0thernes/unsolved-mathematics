@@ -1,0 +1,39 @@
+# Six-Kernel Independent Verification Audit (Lean 4.35.0, v0.4.0)
+# Targets: Solution (22 headline theorems), NonVacuity (6 witnesses), Adversarial (8 refutations)
+# Strict permitted axiom whitelist: [propext, Classical.choice, Quot.sound] (NO sorryAx even declared in cones)
+
+[PASS] 1/6 lean (lake build Challenge Solution NonVacuity Adversarial)
+  ⚠ [3/15] Replayed Challenge | warning: Challenge.lean:16:15: declaration uses `sorry` | warning: Challenge.lean:20:15: declaration uses `sorry`
+[PASS] 2/6 leanchecker-paranoid --fresh Solution
+[PASS] 2/6 leanchecker-paranoid --fresh NonVacuity
+[PASS] 2/6 leanchecker-paranoid --fresh Adversarial
+[PASS] export Solution minimal transitive cone (22 decls)
+  wrote Solution_cone.ndjson (13028214 bytes)
+[PASS] export NonVacuity minimal transitive cone (6 decls)
+  wrote NonVacuity_cone.ndjson (5267962 bytes)
+[PASS] export Adversarial minimal transitive cone (8 decls)
+  wrote Adversarial_cone.ndjson (6769867 bytes)
+[PASS] 3/6 lean4lean --import Solution_cone.ndjson
+  checked 2488 declarations
+[PASS] 3/6 lean4lean --import NonVacuity_cone.ndjson
+  checked 1702 declarations
+[PASS] 3/6 lean4lean --import Adversarial_cone.ndjson
+  checked 1907 declarations
+[PASS] 4/6 nanoda_bin (strict 3-axiom whitelist) Solution_cone.ndjson
+  Checked 2772 declarations with no typechecker errors, 1 pretty printer errors: [ |     "Unable to print axioms", | ]
+[PASS] 4/6 nanoda_bin (strict 3-axiom whitelist) NonVacuity_cone.ndjson
+  Checked 1945 declarations with no typechecker errors, 1 pretty printer errors: [ |     "Unable to print axioms", | ]
+[PASS] 4/6 nanoda_bin (strict 3-axiom whitelist) Adversarial_cone.ndjson
+  Checked 2150 declarations with no typechecker errors, 1 pretty printer errors: [ |     "Unable to print axioms", | ]
+[PASS] 5/6 con-leche --verified Solution_cone.ndjson
+  con-leche: accepted 2491 declarations (--verified) | con-leche: 2 declarations hoisted ahead of the pinned Nat operations they ground: Nat.mul._f, Nat.mul
+[PASS] 5/6 con-leche --verified NonVacuity_cone.ndjson
+  con-leche: accepted 1705 declarations (--verified)
+[PASS] 5/6 con-leche --verified Adversarial_cone.ndjson
+  con-leche: accepted 1910 declarations (--verified)
+[PASS] 6/6 con-ron --verified Solution_cone.ndjson
+  con-ron: accepted 2491 declarations (--verified) | con-ron: 2 declarations hoisted ahead of the pinned Nat operations they ground: Nat.mul._f, Nat.mul
+[PASS] 6/6 con-ron --verified NonVacuity_cone.ndjson
+  con-ron: accepted 1705 declarations (--verified)
+[PASS] 6/6 con-ron --verified Adversarial_cone.ndjson
+  con-ron: accepted 1910 declarations (--verified)

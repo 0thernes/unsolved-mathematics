@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MIT
 """
 build_indexes.py — Cross-cutting indexes over the Atlas.
 
@@ -58,7 +59,7 @@ def link(p: dict) -> str:
 
 def write(name: str, body: str):
     OUT.mkdir(parents=True, exist_ok=True)
-    (OUT / name).write_text(body, encoding="utf-8")
+    (OUT / name).write_text(body, encoding="utf-8", newline="\n")
     print(f"  -> docs/indexes/{name}")
 
 

@@ -28,6 +28,7 @@ desktop.ini
 
 # Test / coverage
 .pytest_cache/
+.hypothesis/
 .coverage
 htmlcov/
 .mypy_cache/
@@ -56,4 +57,7 @@ scratch/
 .ruff_cache/
 formal/.lake/
 formal/build/
+lean/.lake/
+lean/build/
+paper/build/
 _site/

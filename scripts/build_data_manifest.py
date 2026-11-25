@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""Generate or verify SHA-256 tamper-evidence manifest for canonical data & formal artifacts.
+# SPDX-License-Identifier: MIT
+"""Generate or verify SHA-256 tamper-evidence manifest for canonical data, formal & paper artifacts.
 
-Build Standard v1.1.0 item B39.
+Build Standard v1.2.0 item B39.
 
 Usage:
     python scripts/build_data_manifest.py          # regenerate data/MANIFEST.sha256
@@ -22,6 +23,7 @@ TRACKED_FILES = [
     "VERSION",
     "CITATION.cff",
     ".zenodo.json",
+    "ERRATA.md",
     "schema/problem.schema.json",
     "schema/paper.schema.json",
     "schema/review.schema.json",
@@ -29,21 +31,29 @@ TRACKED_FILES = [
     "data/problems.json",
     "data/dossier-status.json",
     "data/citation-verification-log.json",
+    "data/retraction-audit.json",
     "rag/corpus.jsonl",
-    "formal/lean-toolchain",
-    "formal/lakefile.toml",
-    "formal/comparator.json",
-    "formal/formalization.yaml",
-    "formal/Challenge.lean",
-    "formal/Solution.lean",
-    "formal/NonVacuity.lean",
-    "formal/VerifyAxioms.lean",
-    "formal/FormalAtlas.lean",
-    "formal/FormalAtlas/Defs.lean",
-    "formal/FormalAtlas/Collatz.lean",
-    "formal/FormalAtlas/ErdosStraus.lean",
-    "formal/FormalAtlas/LonelyRunner.lean",
-    "formal/FormalAtlas/Brocard.lean",
+    "lean/lean-toolchain",
+    "lean/lakefile.toml",
+    "lean/comparator.json",
+    "lean/formalization.yaml",
+    "lean/Challenge.lean",
+    "lean/Solution.lean",
+    "lean/NonVacuity.lean",
+    "lean/Adversarial.lean",
+    "lean/VerifyAxioms.lean",
+    "lean/FormalAtlas.lean",
+    "lean/FormalAtlas/Defs.lean",
+    "lean/FormalAtlas/Collatz.lean",
+    "lean/FormalAtlas/ErdosStraus.lean",
+    "lean/FormalAtlas/LonelyRunner.lean",
+    "lean/FormalAtlas/Brocard.lean",
+    "lean/STATEMENT_FIDELITY.md",
+    "lean/six_kernel_audit.txt",
+    "paper/Donahue_2026_unsolved_mathematics_atlas.tex",
+    "paper/references.bib",
+    "paper/Donahue_2026_unsolved_mathematics_atlas.pdf",
+    "paper/arxiv_submission.tar.gz",
 ]
 
 

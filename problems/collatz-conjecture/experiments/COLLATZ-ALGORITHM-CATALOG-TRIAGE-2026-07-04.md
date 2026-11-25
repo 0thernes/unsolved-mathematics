@@ -5,7 +5,7 @@
 User-supplied attachment:
 
 ```text
-C:\Users\Alexa\.codex\attachments\6e6a37ba-5a26-44c4-9ae8-df4377988028\pasted-text.txt
+[redacted-local-session-attachment]/pasted-text.txt
 ```
 
 The attachment is titled **The 1000 Algorithms, Categories, and Domains** and

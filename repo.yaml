@@ -1,6 +1,6 @@
-# Project manifest for the Build Standard for LLMs v1.1.0. Read by scripts/audit-repo.sh and Audit-Repo.ps1.
+# Project manifest for the Build Standard for LLMs v1.2.0. Read by scripts/audit-repo.sh and Audit-Repo.ps1.
 # Keep each item on one line. status: done | todo | partial | n/a (n/a needs a note).
-standard: "1.1.0"
+standard: "1.2.0"
 name: "unsolved-mathematics"
 description: "An audited, ranked, research-grade atlas of 106 unsolved mathematical problems with a zero-Mathlib Lean 4.35.0 multi-kernel formal core, primary-source verified citations, and deterministic RAG corpus."
 owner: "Alexander S. Donahue"
@@ -91,9 +91,9 @@ items:
   B19: {status: n/a, note: "Build and validation pipeline is single-threaded deterministic"}
   B20: {status: done, note: "Exact integer/Fraction arithmetic in formal proofs & oracles; bounded IEEE-754 CSS rounding tested in tests/test_properties.py"}
   B21: {status: n/a, note: "Not a networked runtime service"}
-  B22: {status: done, note: "Lean 4.35.0 formal core in formal/ (14 theorems, 6 non-vacuity witnesses, 6-kernel replay)"}
+  B22: {status: done, note: "Lean 4.35.0 formal core in lean/ (22 theorems, 6 non-vacuity witnesses, 8 adversarial refutations, 6-kernel replay)"}
   B23: {status: n/a, note: "Pure mathematical theorem proving in Lean 4; no TLA+/Alloy concurrent state-machine protocol"}
-  B24: {status: done, note: "Lean 4.35.0 dependently typed pure functional core (formal/) replayed across 6 independent kernels"}
+  B24: {status: done, note: "Lean 4.35.0 dependently typed pure functional core (lean/) replayed across 6 independent kernels"}
   B25: {status: n/a, note: "No C/Rust systems implementation requiring Kani/CBMC bounded model checking"}
   B26: {status: n/a, note: "No speed/performance benchmark claims"}
   B27: {status: n/a, note: "No performance tracking claims"}

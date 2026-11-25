@@ -32,7 +32,7 @@ of those is currently a theorem proving Collatz.
 
 Local checks run in:
 
-`Z:\[Vibe Coded (AI)]\CLAUDECODE\Unresolved Math Problems\problems\collatz-conjecture`
+`.\problems\collatz-conjecture`
 
 Observed branch:
 

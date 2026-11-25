@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MIT
 """
 check_papers.py — Integrity gate for AI-assisted meta-analyses (run in CI).
 

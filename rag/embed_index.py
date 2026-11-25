@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MIT
 """
 embed_index.py — Build a dense vector index over the corpus (optional).
 

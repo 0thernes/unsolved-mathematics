@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MIT
 """Smoke tests for the Collatz experiments suite (audit roadmap #4).
 
 Runnable standalone (python tests/test_collatz_instruments.py) or via pytest.

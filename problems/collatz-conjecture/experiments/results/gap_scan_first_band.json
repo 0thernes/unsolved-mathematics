@@ -100,7 +100,7 @@
       "tau": 433
     }
   ],
-  "squeeze_input": "Z:\\[Vibe Coded (AI)]\\CLAUDECODE\\Unresolved Math Problems\\problems\\collatz-conjecture\\experiments\\results\\reduction_squeeze.json",
+  "squeeze_input": "problems/collatz-conjecture/experiments/results/reduction_squeeze.json",
   "tau_min_required": 50509,
   "terras_mismatches": [],
   "terras_verified": true

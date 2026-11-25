@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MIT
 """
 build_review_register.py — Aggregate meta-analysis review status.
 
@@ -101,7 +102,7 @@ def main() -> int:
     ]
     body += rows or ["| _(no meta-analyses yet)_ | | | |"]
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text("\n".join(body) + "\n", encoding="utf-8")
+    OUT.write_text("\n".join(body) + "\n", encoding="utf-8", newline="\n")
     print(f"Register: {counts['total']} meta-analyses, {counts['badged']} badged -> {OUT.relative_to(ROOT)}")
     return 0
 

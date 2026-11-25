@@ -38,7 +38,7 @@ query:  ## Query the corpus: make query Q="bounded gaps between primes"
 	$(PY) rag/retriever.py "$(Q)"
 
 formal:  ## Build and multi-kernel verify the Lean 4 formal core
-	cd formal && lake build && lake env leanchecker --fresh FormalAtlas && lake check --paranoid
+	cd lean && lake build Challenge Solution NonVacuity Adversarial && lake env lean VerifyAxioms.lean && lake check --paranoid && lake comparator --config comparator.json --paranoid
 
 lint:  ## Run report-only linter and strict type check
 	ruff check scripts rag tests || true

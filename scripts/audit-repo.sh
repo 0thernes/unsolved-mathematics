@@ -84,7 +84,7 @@ builtin_check() {
       local br; br="$(git symbolic-ref --short HEAD 2>/dev/null)"
       if [ "$br" != main ]; then D="current branch is '$br', not main"; return; fi
       if ! git rev-parse HEAD >/dev/null 2>&1; then D="no commits yet"; return; fi
-      if git log --format='%ae %ce' | grep -Eqi '(example\.(com|org)|placeholder|localhost|invalid|@users\.noreply\.github\.com.*bot|^ *$)'; then D="placeholder or example email in history"; return; fi
+      if git log --format='%ae %ce' | grep -Eqi '(example\.(com|org)|placeholder|localhost|invalid|@users\.noreply\.github\.com.*bot|^ *$)'; then D="placeholder, example or bot email in history"; return; fi
       R=pass; D="on main; author identities look real" ;;
     hygiene)
       local big=""; local f
@@ -198,7 +198,7 @@ if [ -n "$MD" ]; then
     echo
     echo "| Result | ID | Tier | Item | Detail |"
     echo "|---|---|---|---|---|"
-    awk -F'\t' '$3!="na" { printf "| %s | %s | %s | %s | %s |\n", $3, $1, $2, $6, $7 }' "$OUT"
+    awk -F'\t' 'function esc(s,  o, i, c) { o = ""; for (i = 1; i <= length(s); i++) { c = substr(s, i, 1); o = o (c == "|" ? "\\|" : c) } return o } $3!="na" { printf "| %s | %s | %s | %s | %s |\n", $3, $1, $2, esc($6), esc($7) }' "$OUT"
   } >> "$MD"
 fi
 exit 0

@@ -36,16 +36,25 @@ jobs:
           python -m pip install -r requirements-lock.txt
           python scripts/generate.py --check
           python scripts/validate.py
+          python scripts/check_retractions.py --check
+          python scripts/check_readme_axioms.py
           python scripts/build_data_manifest.py --check
 
-      - name: Build reproducible source tarball and SHA256SUMS
+      - name: Build reproducible source tarball, white paper assets & SHA256SUMS
         run: |
           mkdir -p dist
           TARBALL="dist/unsolved-mathematics-${GITHUB_REF_NAME}.tar.gz"
           git archive --format=tar --prefix="unsolved-mathematics-${GITHUB_REF_NAME}/" HEAD | gzip -n -9 > "$TARBALL"
           cp data/MANIFEST.sha256 "dist/MANIFEST-${GITHUB_REF_NAME}.sha256"
           cp data/problems.json "dist/problems-${GITHUB_REF_NAME}.json"
-          (cd dist && sha256sum "unsolved-mathematics-${GITHUB_REF_NAME}.tar.gz" "MANIFEST-${GITHUB_REF_NAME}.sha256" "problems-${GITHUB_REF_NAME}.json" > SHA256SUMS)
+          cp paper/Donahue_2026_unsolved_mathematics_atlas.pdf "dist/Donahue_2026_unsolved_mathematics_atlas-${GITHUB_REF_NAME}.pdf"
+          cp paper/arxiv_submission.tar.gz "dist/arxiv_submission-${GITHUB_REF_NAME}.tar.gz"
+          (cd dist && sha256sum \
+            "unsolved-mathematics-${GITHUB_REF_NAME}.tar.gz" \
+            "MANIFEST-${GITHUB_REF_NAME}.sha256" \
+            "problems-${GITHUB_REF_NAME}.json" \
+            "Donahue_2026_unsolved_mathematics_atlas-${GITHUB_REF_NAME}.pdf" \
+            "arxiv_submission-${GITHUB_REF_NAME}.tar.gz" > SHA256SUMS)
           cat dist/SHA256SUMS
 
       - name: Generate SLSA build provenance attestation
@@ -56,6 +65,8 @@ jobs:
             dist/SHA256SUMS
             dist/MANIFEST-*.sha256
             dist/problems-*.json
+            dist/Donahue_2026_unsolved_mathematics_atlas-*.pdf
+            dist/arxiv_submission-*.tar.gz
 
       - name: Publish GitHub Release
         uses: softprops/action-gh-release@v2
@@ -66,3 +77,5 @@ jobs:
             dist/SHA256SUMS
             dist/MANIFEST-*.sha256
             dist/problems-*.json
+            dist/Donahue_2026_unsolved_mathematics_atlas-*.pdf
+            dist/arxiv_submission-*.tar.gz

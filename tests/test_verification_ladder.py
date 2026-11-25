@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT
 """Verification Test Ladder for The Unsolved Mathematics Atlas (Build Standard B03–B14).
 
 Covers:
@@ -509,3 +510,135 @@ def test_regression_pass2_submissions_honest_panel_disclosure():
     txt = (ROOT / "SUBMISSIONS.md").read_text(encoding="utf-8")
     assert "put it through a four-model" not in txt.lower()
     assert "0009-0006-8168-9648" in txt
+
+
+# --------------------------------------------------------------------------- #
+#  Cycle 1–3 (v0.4.0) Formal Oracle, Hygiene & Playbook v1.3 Regression Tests
+# --------------------------------------------------------------------------- #
+def test_oracle_collatz_cycle_equation_and_negative_cycles():
+    """Differential check matching thm_collatz_cycle_equation & thm_collatz_negative_cycles."""
+    for start, period in ((-5, 3), (-17, 11), (1, 2), (-1, 1)):
+        cur = start
+        for _ in range(period):
+            cur = _collatz_T(cur)
+        assert cur == start, f"Expected cycle of length {period} at {start}, got {cur}"
+        w = _parity_word(_collatz_T, period, start)
+        o = sum(w)
+        assert ((2**period) - (3**o)) * start == _word_intercept(w)
+        if start < 0:
+            assert 2**period < 3**o or start == -1
+
+
+def test_oracle_erdos_straus_small_exceptional_squares():
+    """Differential check matching thm_erdos_straus_mordell_exceptions_small & closure."""
+    for base in (11, 13, 17, 19, 23, 29):
+        wit = _erdos_straus_mordell_witness(base)
+        assert wit is not None
+        x, y, z = wit
+        n_sq = base * base
+        xs, ys, zs = x * base, y * base, z * base
+        assert Fraction(4, n_sq) == Fraction(1, xs) + Fraction(1, ys) + Fraction(1, zs)
+
+
+def test_oracle_lonely_runner_speed_scaling_invariance():
+    """Differential check matching thm_lonely_runner_speed_scaling."""
+    for m, p, q, v, k in ((3, 1, 6, 3, 7), (3, 1, 6, 10, 5), (2, 1, 2, 1, 11)):
+        r1 = (p * v) % q
+        assert q <= m * r1 and q <= m * (q - r1)
+        r2 = (p * (v * k)) % (q * k)
+        assert r2 == r1 * k
+        assert q * k <= m * r2 and q * k <= m * (q * k - r2)
+
+
+def test_oracle_brocard_exhaustive_le_15_and_mod4():
+    """Differential check matching thm_brocard_exhaustive_le_15 & thm_brocard_mod4_ge_4."""
+    sols = []
+    for n in range(0, 16):
+        val = math.factorial(n) + 1
+        m = math.isqrt(val)
+        if m * m == val:
+            sols.append((n, m))
+        if n >= 4:
+            assert val % 4 == 1
+    assert sols == [(4, 5), (5, 11), (7, 71)]
+
+
+def test_contract_retraction_audit_zero_retractions():
+    """Verify data/retraction-audit.json covers >=220 verified DOIs with 0 retractions & 0 errors."""
+    data = json.loads((ROOT / "data" / "retraction-audit.json").read_text(encoding="utf-8"))
+    summary = data["summary"]
+    assert summary["dois_checked"] >= 220
+    assert summary["retracted"] == 0
+    assert summary["network_errors"] == 0
+
+
+def test_regression_v040_no_local_machine_paths_in_tracked_files():
+    """Guard against C1-CONC-01: zero tracked files outside docs/reviews/ may leak local machine paths."""
+    proc = subprocess.run(["git", "ls-files"], cwd=ROOT, capture_output=True, text=True, check=True)
+    bad = []
+    for rel in proc.stdout.splitlines():
+        if not rel or rel.startswith("docs/reviews/") or rel in {"ERRATA.md", "CHANGELOG.md", "AGENTS.md"} or rel.startswith("tests/"):
+            continue
+        p = ROOT / rel
+        if not p.exists():
+            continue
+        raw = p.read_bytes()
+        if b"\x00" in raw[:4096]:
+            continue
+        txt = raw.decode("utf-8", errors="ignore")
+        if "C:\\Users\\Alexa" in txt or "Z:\\[Vibe Coded (AI)]" in txt or "Z:\\\\[Vibe Coded (AI)]" in txt:
+            bad.append(rel)
+    assert bad == [], f"Local machine path leaked in tracked file(s): {bad}"
+
+
+def test_regression_v040_readme_axioms_and_palomar_limits():
+    """Verify verbatim README #print axioms parity and lean/ Palomar limits."""
+    proc = subprocess.run(
+        [sys.executable, str(ROOT / "scripts" / "check_readme_axioms.py")],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+    )
+    assert proc.returncode == 0, f"check_readme_axioms failed:\n{proc.stdout}\n{proc.stderr}"
+
+
+def test_regression_v040_blueprint_and_white_paper_artifacts(tmp_path: Path):
+    """Verify _site/blueprint.html builds cleanly and paper/ ships valid PDF + arXiv tarball."""
+    import tarfile
+
+    import build_site
+
+    out = build_site.build_site(tmp_path / "_site")
+    bp = tmp_path / "_site" / "blueprint.html"
+    assert out.exists() and bp.exists()
+    bp_txt = bp.read_text(encoding="utf-8")
+    assert "FormalAtlas Lean 4.35.0 Proof Blueprint" in bp_txt
+    assert "thm_brocard_exhaustive_le_15" in bp_txt
+
+    pdf = ROOT / "paper" / "Donahue_2026_unsolved_mathematics_atlas.pdf"
+    assert pdf.exists() and pdf.stat().st_size < 5 * 1024 * 1024
+    assert pdf.read_bytes().startswith(b"%PDF-")
+
+    tar_path = ROOT / "paper" / "arxiv_submission.tar.gz"
+    assert tar_path.exists()
+    with tarfile.open(tar_path, "r:gz") as tf:
+        names = set(tf.getnames())
+    assert "Donahue_2026_unsolved_mathematics_atlas.tex" in names
+    assert "references.bib" in names
+    assert "Donahue_2026_unsolved_mathematics_atlas.bbl" in names
+
+
+def test_regression_v040_build_standard_v120_ten_finding_labels():
+    """Verify .github/labels.tsv declares all 10 Build Standard v1.2.0 finding classes."""
+    lines = (ROOT / ".github" / "labels.tsv").read_text(encoding="utf-8").splitlines()
+    names = {ln.split("\t")[0].strip() for ln in lines if ln.strip() and not ln.startswith("#")}
+    expected_10 = {"bug", "error", "issue", "problem", "concern", "dilemma", "conflict", "gap", "hole", "blindspot"}
+    assert expected_10.issubset(names), f"Missing finding labels: {expected_10 - names}"
+
+
+def test_regression_v040_faq_and_claims_session_label_consistency():
+    """Guard against C1-CONF-01: consistent historical 2026-06-14 session label disclosure."""
+    for rel in ("docs/faq.md", "CLAIMS.md", "LIMITATIONS.md", "AUTHORS.md"):
+        txt = (ROOT / rel).read_text(encoding="utf-8")
+        assert "claude-opus-4-6" not in txt, f"Conflicting session label in {rel}"
+        assert "claude-opus-4-8" in txt, f"Missing historical session label disclosure in {rel}"

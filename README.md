@@ -5,18 +5,19 @@
 ### *An audited, ranked, research-grade dossier & Lean 4.35.0 formal core of humanity's open mathematical problems.*
 
 [![CI](https://github.com/0thernes/unsolved-mathematics/actions/workflows/ci.yml/badge.svg)](https://github.com/0thernes/unsolved-mathematics/actions/workflows/ci.yml)
-[![Version](https://img.shields.io/badge/version-0.3.1-blue.svg)](VERSION)
-[![Lean](https://img.shields.io/badge/Lean-4.35.0%20(6--kernel)-7c3aed.svg)](formal/STATEMENT_FIDELITY.md)
-[![Citations](https://img.shields.io/badge/API--verified%20citations-445-10b981.svg)](data/citation-verification-log.json)
+[![Version](https://img.shields.io/badge/version-0.4.0-blue.svg)](VERSION)
+[![Lean](https://img.shields.io/badge/Lean-4.35.0%20(6--kernel%20·%2022%20thms)-7c3aed.svg)](lean/STATEMENT_FIDELITY.md)
+[![Citations](https://img.shields.io/badge/API--verified%20citations-445%20(0%20retracted)-10b981.svg)](data/citation-verification-log.json)
+[![Paper](https://img.shields.io/badge/White%20Paper-AMS--LaTeX%20PDF-b45309.svg)](paper/Donahue_2026_unsolved_mathematics_atlas.pdf)
 [![License: CC BY 4.0 / MIT](https://img.shields.io/badge/license-CC%20BY%204.0%20%2F%20MIT-slate.svg)](LICENSE)
 
 **Each problem gets its own world — origin, the mind that posed it, every serious attack on it,
-key papers with primary-source verification flags, key mathematicians, a deterministic RAG corpus,
-and an expanding zero-Mathlib Lean 4.35.0 multi-kernel formal verification core.**
+key papers with primary-source verification & retraction flags, key mathematicians, a deterministic RAG corpus,
+a compiled AMS-LaTeX white paper, and a zero-Mathlib Lean 4.35.0 multi-kernel formal verification core.**
 
-`v0.3.1` · branch `main` · **106 problems** · **14 Lean 4 theorems (0 `sorry`)** · author **Alexander S. Donahue** ([ORCID 0009-0006-8168-9648](https://orcid.org/0009-0006-8168-9648)) · Status: `active`
+`v0.4.0` · branch `main` · **106 problems** · **22 Lean 4 theorems + 14 witnesses/refutations (0 `sorry`, 6 kernels)** · author **Alexander S. Donahue** ([ORCID 0009-0006-8168-9648](https://orcid.org/0009-0006-8168-9648)) · Status: `active`
 
-[Master Ranking](RANKING.md) · [Formal Core](formal/STATEMENT_FIDELITY.md) · [Claims Ledger](CLAIMS.md) · [Limitations](LIMITATIONS.md) · [Forensic Audit](docs/reviews/2026-11-23-forensic-philosophical-audit.md) · [Replication](REPLICATION.md) · [Architecture](ARCHITECTURE.md) · [Philosophy](PHILOSOPHY.md) · [Indexes](docs/indexes/)
+[Master Ranking](RANKING.md) · [White Paper PDF](paper/Donahue_2026_unsolved_mathematics_atlas.pdf) · [Formal Core (`lean/`)](lean/STATEMENT_FIDELITY.md) · [Cross-Atlas Audit (1,900)](docs/CROSS_ATLAS_AUDIT_2026-11-25.md) · [Claims Ledger](CLAIMS.md) · [Limitations](LIMITATIONS.md) · [Errata](ERRATA.md) · [3-Cycle Audit](docs/reviews/2026-11-25-three-cycle-hardening-audit.md) · [Replication](REPLICATION.md) · [Indexes](docs/indexes/)
 
 </div>
 
@@ -41,7 +42,8 @@ For **every** problem you get a self-contained 7-section dossier:
 - 🧠 **`mathematicians.md`** — the top minds who shaped the problem
 - 🎯 **`status.md`** — the live mathematical frontier (updated through November 2026)
 - 🤖 **`rag/`** — deterministic chunked corpus (`3,763` unique chunks) with zero-dependency BM25 retrieval
-- 🔬 **`formal/`** — standalone Lean 4.35.0 formal core proving 14 structural lemmas, finite cases, and barrier meta-theorems across Collatz, Erdős–Straus, Lonely Runner, and Brocard (0 `sorry`, 0 `admit`, 0 `native_decide`, standard axioms only)
+- 🔬 **`lean/`** — standalone Lean 4.35.0 formal core proving **22 structural theorems** + **6 non-vacuity witnesses** + **8 adversarial false-variant refutations** (36 audited declarations) across Collatz, Erdős–Straus, Lonely Runner, and Brocard (0 `sorry`, 0 `admit`, 0 `native_decide`, standard axioms only, 6 independent kernels)
+- 📄 **`paper/`** — publication-grade AMS-LaTeX white paper ([PDF](paper/Donahue_2026_unsolved_mathematics_atlas.pdf) + clean-room-verified `arxiv_submission.tar.gz`)
 
 ## Quickstart
 
@@ -243,28 +245,73 @@ unsolved-mathematics/
 │   ├── methodology/          ← ranking formula, sourcing standards
 │   ├── review/               ← AI-review process, panel template, register, academic review
 │   └── kanban/               ← the research board
-├── AUTHORS.md · SUBMISSIONS.md   ← credit (Alexander Donahue) · outreach tracker
-└── .github/                  ← CI/CD, issue & PR templates
+├── AUTHORS.md · SUBMISSIONS.md · ERRATA.md  ← credit · outreach · post-release errata
+├── lean/                     ← standalone 6-kernel Lean 4.35.0 formal core (22 theorems + 14 checks)
+├── paper/                    ← compiled AMS-LaTeX white paper PDF & arXiv source bundle
+└── .github/                  ← CI/CD, Pages blueprint, SLSA releases, 10-class issue forms
 ```
 
-## Formal Verification Core (`formal/`)
+## Formal Verification Core (`lean/`)
 
-`v0.3.0` introduces a **zero-Mathlib, pure Lean 4.35.0** formal package verifying **14 structural lemmas, finite cases, and methodological barriers** across four open problems:
+`v0.4.0` provides a **zero-Mathlib, pure Lean 4.35.0** formal package verifying **22 headline theorems, 6 concrete non-vacuity witnesses, and 8 explicit adversarial false-variant refutations** (36 audited declarations) across four open problems:
 
-- **Collatz Conjecture (8 theorems):** affine cylinder law, exact intercept law, Terras parity-word bijection, descent certificate soundness, no finite subcritical cover, spine ladder identity, unconditional **Positivity Localization** ($\rho_w \le -1$), and the **$\varepsilon$-Invariance Barrier** ($3n - 1$ cycle $5 \to 7 \to 5$).
-- **Erdős–Straus Conjecture (1 theorem):** Mordell mod-840 covering (834 of 840 residue classes = 99.286%).
-- **Lonely Runner Conjecture (3 theorems):** sharpness upper bound $\delta \le 1/(n+1)$ for all $n \ge 1$, plus exact cases $n = 1$ and $n = 2$.
-- **Brocard's Problem (2 theorems):** Brown solutions $n \in \{4, 5, 7\}$ and exhaustive classification for $n \le 12$.
+- **Collatz Conjecture (11 theorems):** affine cylinder law, exact intercept law, Terras parity-word bijection, descent certificate soundness, no finite subcritical cover, spine ladder identity, unconditional **Positivity Localization** ($\rho_w \le -1$), **$\varepsilon$-Invariance Barrier** ($3n - 1$ positive cycles at `5` and `17`), Böhm–Sontacchi exact cycle equation, parity-word cocycle law, and non-trivial negative cycles of true $3n+1$ (`-5` and `-17`).
+- **Erdős–Straus Conjecture (3 theorems):** Mordell mod-840 covering (834 of 840 residue classes = `99.286%`), multiplicative closure (prime reduction), and resolution of all 6 smallest exceptional squares $\{121, 169, 289, 361, 529, 841\}$.
+- **Lonely Runner Conjecture (4 theorems):** sharpness upper bound $\delta \le 1/(n+1)$ for all $n \ge 1$, exact rational speed-scaling invariance, and constructive base cases $n = 1$ and $n = 2$.
+- **Brocard's Problem (4 theorems):** Brown solutions $n \in \{4, 5, 7\}$, mod-4 parity constraint ($n \ge 4 \Rightarrow n!+1 \equiv 1 \pmod 4$), and exhaustive classification through $n \le 15$ ($15!+1 = 1{,}307{,}674{,}368{,}001$).
 
-Every theorem is audited against [`formal/Challenge.lean`](formal/Challenge.lean) (`formal/comparator.json`), paired with concrete witnesses in [`formal/NonVacuity.lean`](formal/NonVacuity.lean), axiom-checked by [`formal/VerifyAxioms.lean`](formal/VerifyAxioms.lean) (strictly within `{propext, Classical.choice, Quot.sound}`), documented in [`formal/STATEMENT_FIDELITY.md`](formal/STATEMENT_FIDELITY.md), and replayed across all 6 independent Lean 4.35.0 kernels in Ubuntu CI (`lake check --paranoid` + `lake comparator --paranoid`). **None of these theorems claims to resolve the underlying open conjectures.**
+Every theorem is audited against [`lean/Challenge.lean`](lean/Challenge.lean) (`lean/comparator.json`), paired with concrete witnesses in [`lean/NonVacuity.lean`](lean/NonVacuity.lean) and false-variant refutations in [`lean/Adversarial.lean`](lean/Adversarial.lean), axiom-checked by [`lean/VerifyAxioms.lean`](lean/VerifyAxioms.lean), documented in [`lean/STATEMENT_FIDELITY.md`](lean/STATEMENT_FIDELITY.md), and replayed across all 6 independent Lean 4.35.0 kernels ([`lean/six_kernel_audit.txt`](lean/six_kernel_audit.txt) + `bwrap`-sandboxed Ubuntu CI). **None of these theorems claims to resolve the underlying open conjectures.**
+
+### 5-Second Proof Audit (Verbatim `#print axioms`, CI-Checked by `scripts/check_readme_axioms.py`)
+
+<!-- AXIOMS:START -->
+```text
+'FormalAtlas.Challenge.thm_collatz_cylinder_affine_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Challenge.thm_collatz_exact_intercept_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Challenge.thm_terras_parity_word_bijection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Challenge.thm_collatz_descent_certificate_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Challenge.thm_collatz_no_finite_subcritical_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Challenge.thm_collatz_spine_ladder_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Challenge.thm_collatz_positivity_localization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Challenge.thm_collatz_epsilon_invariance_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Challenge.thm_collatz_cycle_equation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Challenge.thm_collatz_parity_word_append' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Challenge.thm_collatz_negative_cycles' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Challenge.thm_erdos_straus_mordell_840' depends on axioms: [propext, Quot.sound]
+'FormalAtlas.Challenge.thm_erdos_straus_multiplicative_closure' depends on axioms: [propext]
+'FormalAtlas.Challenge.thm_erdos_straus_mordell_exceptions_small' depends on axioms: [propext, Quot.sound]
+'FormalAtlas.Challenge.thm_lonely_runner_sharpness_all_n' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Challenge.thm_lonely_runner_n1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Challenge.thm_lonely_runner_n2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Challenge.thm_lonely_runner_speed_scaling' depends on axioms: [propext, Quot.sound]
+'FormalAtlas.Challenge.thm_brocard_brown_solutions' does not depend on any axioms
+'FormalAtlas.Challenge.thm_brocard_exhaustive_le_12' depends on axioms: [propext, Quot.sound]
+'FormalAtlas.Challenge.thm_brocard_mod4_ge_4' depends on axioms: [propext, Quot.sound]
+'FormalAtlas.Challenge.thm_brocard_exhaustive_le_15' depends on axioms: [propext, Quot.sound]
+'FormalAtlas.NonVacuity.witness_descent_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.NonVacuity.witness_positivity_localization' does not depend on any axioms
+'FormalAtlas.NonVacuity.witness_subcritical_positive_cycle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.NonVacuity.witness_erdos_straus_hypotheses' does not depend on any axioms
+'FormalAtlas.NonVacuity.witness_lonely_runner_concrete' does not depend on any axioms
+'FormalAtlas.NonVacuity.witness_brocard_non_solution' does not depend on any axioms
+'FormalAtlas.Adversarial.adv_erdos_straus_zero_denom_blocked' depends on axioms: [propext, Quot.sound]
+'FormalAtlas.Adversarial.adv_erdos_straus_wrong_witness_refuted' does not depend on any axioms
+'FormalAtlas.Adversarial.adv_collatz_no_universal_descent_d1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Adversarial.adv_collatz_positivity_required_for_no_nontrivial_cycles' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Adversarial.adv_collatz_positivity_converse_false' does not depend on any axioms
+'FormalAtlas.Adversarial.adv_lonely_runner_strict_threshold_fails' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Adversarial.adv_lonely_runner_bad_time_refuted' does not depend on any axioms
+'FormalAtlas.Adversarial.adv_brocard_false_candidates_refuted' does not depend on any axioms
+```
+<!-- AXIOMS:END -->
 
 ## Integrity, Limitations & Honest Provenance
 
 Mathematics has no tolerance for bluffing, and neither does this atlas.
 
 - **Claims & Falsifiability:** Every substantive claim carries an explicit *"What would prove us wrong"* trigger in [`CLAIMS.md`](CLAIMS.md).
-- **Known Limitations:** Read [`LIMITATIONS.md`](LIMITATIONS.md) and our complete 6-class forensic & philosophical audit ([`docs/reviews/2026-11-23-forensic-philosophical-audit.md`](docs/reviews/2026-11-23-forensic-philosophical-audit.md)) before citing any section.
-- **Primary-Source Citation Audit:** Of 554 identifier-bearing paper rows checked live against `export.arxiv.org` and `api.crossref.org` on 2026-11-23 (`data/citation-verification-log.json`), **445 are API-verified** and **109 invalid/hallucinated identifiers were stripped** (downgraded honestly to `—` / `needs-verification`). Roughly 2,100 pre-DOI historical rows remain unverified.
+- **Known Limitations & Errata:** Read [`LIMITATIONS.md`](LIMITATIONS.md), [`ERRATA.md`](ERRATA.md), our Cross-Atlas audit ([`docs/CROSS_ATLAS_AUDIT_2026-11-25.md`](docs/CROSS_ATLAS_AUDIT_2026-11-25.md)), and our three-cycle 10-class hardening audit ([`docs/reviews/2026-11-25-three-cycle-hardening-audit.md`](docs/reviews/2026-11-25-three-cycle-hardening-audit.md)) before citing any section.
+- **Primary-Source Citation & Retraction Audit:** Of 554 identifier-bearing paper rows checked live against `export.arxiv.org` and `api.crossref.org` (`data/citation-verification-log.json`), **445 are API-verified** and **109 invalid/hallucinated identifiers were stripped** (downgraded honestly to `—` / `needs-verification`). All **220 verified DOIs** were additionally audited against Crossref + DataCite retraction metadata (`data/retraction-audit.json`): **0 retractions**, **3 publisher errata/corrections** logged, `0` network errors. Roughly 2,100 pre-DOI historical rows remain unverified.
 - **No problem is ever called "solved" without verified primary-source evidence:** `scripts/proof_claim_sweep.py` enforces zero unhedged proof claims across all active prose in CI.
 - **Scores are editorial estimates**, documented and deterministic (`docs/methodology/RANKING.md`, `CURRENT_YEAR = 2026`) — never objective truth.
 
@@ -272,7 +319,7 @@ See [`PHILOSOPHY.md`](PHILOSOPHY.md), [`docs/methodology/SOURCING.md`](docs/meth
 
 ## Maintenance Status
 
-**Status: active** (`v0.3.1`, updated `2026-11-23`). Planned milestones live in [`ROADMAP.md`](ROADMAP.md), operational tasks in [`docs/kanban/KANBAN.md`](docs/kanban/KANBAN.md), and verification history in [`docs/run-log.md`](docs/run-log.md) and [`CHANGELOG.md`](CHANGELOG.md).
+**Status: active** (`v0.4.0`, updated `2026-11-25`). Planned milestones live in [`ROADMAP.md`](ROADMAP.md), operational tasks in [`docs/kanban/KANBAN.md`](docs/kanban/KANBAN.md), errata in [`ERRATA.md`](ERRATA.md), and verification history in [`docs/run-log.md`](docs/run-log.md) and [`CHANGELOG.md`](CHANGELOG.md).
 
 ## Author & Accreditation
 

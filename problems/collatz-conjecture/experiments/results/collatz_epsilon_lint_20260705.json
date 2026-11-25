@@ -836,7 +836,7 @@
   },
   "retimed_tight_fixture": {
     "available": true,
-    "source": "Z:\\[Vibe Coded (AI)]\\CLAUDECODE\\Unresolved Math Problems\\problems\\collatz-conjecture\\experiments\\results\\branch_prefix_retimed_tight_layer_one_d18_d25_20260702.json",
+    "source": "problems/collatz-conjecture/experiments/results/branch_prefix_retimed_tight_layer_one_d18_d25_20260702.json",
     "checks_subset": {
       "selected_count": 5,
       "all_selected_have_align_3": true,

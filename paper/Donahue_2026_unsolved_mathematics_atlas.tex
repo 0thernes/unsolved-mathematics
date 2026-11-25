@@ -1,0 +1,427 @@
+% SPDX-License-Identifier: CC-BY-4.0
+\documentclass[11pt,reqno]{amsart}
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs,array}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{xurl}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning}
+\usepackage[colorlinks=true,linkcolor=blue!60!black,citecolor=teal!60!black,urlcolor=blue!60!black]{hyperref}
+
+\emergencystretch=2.5em
+\tolerance=1200
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\code}[1]{\nolinkurl{#1}}
+
+\title[The Unsolved Mathematics Atlas: Multi-Kernel Formal Core \& Audit]{%
+  The Unsolved Mathematics Atlas (\texttt{v0.4.0}):\\
+  A Standalone Six-Kernel Lean 4.35.0 Structural Core,\\
+  Primary-Source Citation \& Retraction Audit,\\
+  and Cross-Atlas Epistemic Verification Framework}
+
+\author{Alexander S. Donahue}
+\address{Independent Researcher, Spokane, WA, USA}
+\email{0\_0@0thernes.art}
+\urladdr{https://github.com/0thernes/unsolved-mathematics}
+\thanks{ORCID: \href{https://orcid.org/0009-0006-8168-9648}{\texttt{0009-0006-8168-9648}}.
+Repository release \texttt{v0.4.0} (November 25, 2026). All Lean 4.35.0 proofs are MIT-licensed;
+prose and datasets are CC BY 4.0. Transparent AI-assistance disclosure appears in Section~\ref{sec:governance}.}
+
+\subjclass[2020]{Primary 03B35, 11B83, 11D68, 11D61; Secondary 11J71, 68V15, 68V20}
+\keywords{Lean 4, multi-kernel verification, Collatz conjecture, Erd\H{o}s--Straus conjecture,
+Lonely Runner conjecture, Brocard's problem, citation verification, epistemic hygiene}
+
+\begin{document}
+
+\begin{abstract}
+Large language models can rapidly synthesize mathematical surveys, yet unverified AI-assisted
+corpora routinely suffer from fabricated identifiers, unhedged proof claims, definitional drift,
+and opaque provenance. We present \textbf{The Unsolved Mathematics Atlas} (\texttt{v0.4.0}), an
+open, reproducible catalog of 106 unsolved mathematical problems across 38 fields paired with an
+end-to-end epistemic verification stack. Our contributions are fourfold.
+First, we report an empirical primary-source citation and retraction audit: querying all 554
+identifier-bearing bibliography rows live against the arXiv and Crossref REST APIs confirmed
+445 genuine identifiers and exposed \textbf{109 invalid or mismatched identifiers (19.7\%)} that
+were stripped and downgraded; a subsequent Crossref and DataCite retraction audit of all 220
+verified DOIs recorded \textbf{0 retractions} and logged \textbf{3 publisher errata/corrections}.
+Second, we construct a standalone, zero-Mathlib \textbf{Lean 4.35.0} formal core (\code{lean/})
+certifying \textbf{22 headline theorems}, \textbf{6 concrete non-vacuity witnesses}, and
+\textbf{8 explicit adversarial false-variant refutations} (36 audited declarations) across four
+canonical open-problem programs: Collatz (11 theorems, including Terras's bijection, the exact
+B\"ohm--Sontacchi cycle equation, unconditional positivity localization $\rho_w \le -1$, negative
+integer cycles $-5$ and $-17$, and the $3n-1$ $\varepsilon$-invariance no-go barrier),
+Erd\H{o}s--Straus (3 theorems: Mordell's 834/840 modular reduction, multiplicative closure, and
+resolution of all six smallest exceptional squares), Lonely Runner (4 theorems: all-$n$ rational
+sharpness $\delta \le 1/(n+1)$, speed-scaling invariance, and $n \in \{1,2\}$), and Brocard's
+problem (4 theorems: Brown solutions, $n!+1 \equiv 1 \pmod 4$, and exhaustive classification
+through $n \le 15$). Every declaration uses zero \code{sorry}, zero \code{native_decide}, and
+axioms strictly within \code{{propext, Classical.choice, Quot.sound}}, and passes independent
+replay across all \textbf{six} Lean 4.35.0 kernels (\code{lean}, \code{leanchecker-paranoid},
+\code{lean4lean}, \code{nanoda_bin}, \code{con-leche}, \code{con-ron}) plus \code{lake comparator}.
+Third, we present an honest Cross-Atlas resolution audit across 1,900 macro-level unsolved problems
+and 11 companion repositories, confirming strictly \textbf{0/1,900} macro closures alongside
+three isolated 2026 sub-conjecture preprints and 11 partial-progress frontiers.
+Fourth, we document a three-cycle, 10-class hardening protocol achieving 100\% targeted mutation
+kill rate, SHA-256 dataset manifests, and SLSA build provenance. \textbf{No open conjecture in
+the catalog is claimed to be solved by this work.}
+\end{abstract}
+
+\maketitle
+
+\section{Introduction and Epistemic Scope}\label{sec:intro}
+
+The proliferation of AI-assisted mathematical writing creates a sharp verification asymmetry:
+generating a plausible survey or proof sketch costs seconds, whereas detecting a fabricated DOI,
+a vacuous Lean hypothesis, or a sign-blind Collatz heuristic requires disciplined infrastructure.
+\emph{The Unsolved Mathematics Atlas} (\url{https://github.com/0thernes/unsolved-mathematics},
+release \texttt{v0.4.0}) treats epistemic honesty as its primary engineering invariant.
+
+To prevent misreading by human referees or automated indexing systems, we open with an explicit
+boundary statement:
+\begin{quote}
+\textbf{Non-Claim.} This paper and its companion repository solve \emph{zero} open mathematical
+conjectures. Every formally verified theorem in \code{lean/} establishes an exact structural
+identity, modular reduction, sharpness bound, finite exhaustion, or methodological no-go barrier.
+Collatz, Erd\H{o}s--Straus (general primes in the six Mordell square classes mod 840), uniform
+Lonely Runner, and Brocard finiteness all remain \textbf{open}.
+\end{quote}
+
+Every substantive assertion in the repository is registered in \code{CLAIMS.md} under one of six
+epistemic tags: \code{kernel-checked}, \code{machine-checked-ci}, \code{primary-source-verified},
+\code{computational-certificate}, \code{editorial-synthesis}, and \code{open-conjecture}, each
+paired with an explicit falsification trigger (``What would prove us wrong'').
+
+\section{Atlas Registry, Deterministic Scoring, and RAG Integrity}\label{sec:atlas}
+
+The single source of truth is \code{data/problems.yaml}, storing 106 mathematical problems across
+38 fields, validated against \code{schema/problem.schema.json}. Derived artifacts
+(\code{data/problems.json}, \code{RANKING.md}, \code{README.md}, all 106 dossier headers,
+five cross-cutting indexes under \code{docs/indexes/}, and the retrieval corpus
+\code{rag/corpus.jsonl}) are generated deterministically by \code{scripts/generate.py} and
+\code{rag/build_corpus.py} with zero-drift verification in CI.
+
+\subsection{Composite Severity Score (Editorial Heuristic)}
+For organizational ranking only---explicitly \emph{not} an objective measure of mathematical
+difficulty---each problem $p$ receives a deterministic Composite Severity Score (rounded to three
+decimal places):
+\[
+  \mathrm{CSS}(p) = 0.40\,D(p) + 0.30\,C(p) + 0.20\,\min\!\Bigl(100,\;\max\!\Bigl(0,\,\frac{2026 - y_p}{3}\Bigr)\Bigr) + 0.10\,(100 - T(p)),
+\]
+where $D, C, T \in [0,100]$ are curated difficulty, centrality, and tractability ratings,
+$y_p$ is the year posed, and the reference year is frozen at $2026$ for bit-for-bit
+reproducibility. Ties break deterministically by lexicographic slug order \code{(-css, slug)}.
+
+\subsection{Elimination of Silent Retrieval Key Collisions}
+Forensic auditing of earlier releases revealed a critical corpus bug: resetting chunk counters
+per Markdown heading inside \code{rag/build_corpus.py} produced colliding chunk IDs whenever
+two sections shared a normalized heading, causing silent dictionary overwrite during dense vector
+indexing. Release \texttt{v0.3.0}+ replaced this with a monotonic per-\code{(slug, section)}
+counter enforced by \code{scripts/validate.py} and regression-tested in \code{tests/}.
+
+\section{Empirical Primary-Source Citation and Retraction Audit}\label{sec:citations}
+
+Because LLM-assisted literature tables frequently emit plausible-looking yet nonexistent or
+misattributed DOIs and arXiv identifiers, \code{scripts/verify_citations.py} resolves every
+identifier-bearing row in \code{problems/*/papers.md} live against \code{export.arxiv.org} and
+\code{api.crossref.org}, checking author/title overlap and publication year. To close a secondary
+\emph{retraction blindspot}---where a valid DOI has later been retracted---\code{scripts/check_retractions.py}
+additionally audits every verified DOI against Crossref (\code{updated-by}, \code{update-to},
+\code{relation}, and title notices) and DataCite (\code{10.48550/*} arXiv DOIs).
+
+\begin{table}[htbp]
+\centering
+\caption{Live Primary-Source Citation Audit (\code{data/citation-verification-log.json}) and
+Crossref/DataCite Retraction Audit (\code{data/retraction-audit.json}).}
+\label{tab:citations}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+Audit Metric & Count & Share / Note \\
+\midrule
+Identifier-bearing paper rows queried live & 554 & 100.0\% (0 network errors) \\
+\quad API-verified (matching author/title/year) & 445 & 80.3\% (tagged \code{verified}) \\
+\quad Author/title mismatch (purged \& downgraded) & 86 & 15.5\% (stripped to ``---'') \\
+\quad Identifier not found / HTTP 404 (purged) & 23 & 4.2\% (stripped to ``---'') \\
+Total hallucinated/invalid IDs eliminated & \textbf{109} & \textbf{19.7\% corruption rate} \\
+\midrule
+Verified DOIs checked for retraction notices & 220 & 100.0\% (0 network errors) \\
+\quad Confirmed retractions / withdrawals & \textbf{0} & 0.0\% \\
+\quad Publisher errata / corrections logged & 3 & Transparently recorded \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The three verified DOIs carrying official publisher errata or corrections (zero retractions) are:
+\code{10.1007/s00222-017-0749-x} (correction \code{10.1007/s00222-021-01095-5}),
+\code{10.1007/s002220050350} (erratum \code{10.1007/s00222-017-0751-3}), and
+\code{10.1186/s40687-014-0012-7} (erratum \code{10.1186/s40687-015-0033-x}).
+Roughly 2,100 historical pre-DOI bibliography rows remain explicitly flagged
+\code{high-confidence}, \code{needs-verification}, or \code{ai-suggested} and are never
+presented as API-verified.
+
+\section{Standalone Zero-Mathlib Lean 4.35.0 Formal Core}\label{sec:lean}
+
+To achieve zero external dependency drift and fast multi-kernel replay, \code{lean/} builds
+exclusively on Lean 4.35.0 Core \cite{demoura2021lean4} without Mathlib. Every \code{.lean} file
+opens with \code{module} (Palomar isolation rule), and \code{lean/Challenge.lean} holds only the
+22 isolated theorem signatures (107 lines, $< 5$\,KiB) audited by \code{lake comparator} against
+\code{lean/Solution.lean}.
+
+\begin{figure}[htbp]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tikzpicture}[
+  box/.style={draw, rounded corners=4pt, align=center, font=\footnotesize, inner sep=5pt, minimum width=2.75cm},
+  arr/.style={-{Stealth[length=2.2mm]}, thick, draw=blue!55!black}
+]
+  \node[box, fill=blue!8] (defs) {\textbf{FormalAtlas.Defs}\\111 LOC $\cdot$ 0 Mathlib};
+  \node[box, fill=blue!14, right=0.8cm of defs, yshift=1.35cm] (col) {\textbf{Collatz}\\11 theorems};
+  \node[box, fill=teal!12, right=0.8cm of defs, yshift=0.45cm] (es) {\textbf{Erd\H{o}s--Straus}\\3 theorems};
+  \node[box, fill=violet!12, right=0.8cm of defs, yshift=-0.45cm] (lr) {\textbf{Lonely Runner}\\4 theorems};
+  \node[box, fill=orange!14, right=0.8cm of defs, yshift=-1.35cm] (bro) {\textbf{Brocard}\\4 theorems};
+
+  \node[box, fill=green!10, right=0.8cm of es, yshift=0.45cm] (sol) {\textbf{Solution.lean}\\22 zero-sorry proofs};
+  \node[box, fill=gray!12, right=0.8cm of lr, yshift=0.45cm] (nv) {\textbf{NonVacuity + Adv.}\\6 + 8 checks};
+  \node[box, fill=green!18, right=0.8cm of sol, yshift=-0.45cm, minimum width=3.1cm] (kern)
+    {\textbf{6-Kernel \texttt{bwrap} Audit}\\\texttt{lean}, \texttt{leanchecker}, \texttt{lean4lean}\\\texttt{nanoda}, \texttt{con-leche}, \texttt{con-ron}};
+
+  \draw[arr] (defs.east) -- (col.west);
+  \draw[arr] (defs.east) -- (es.west);
+  \draw[arr] (defs.east) -- (lr.west);
+  \draw[arr] (defs.east) -- (bro.west);
+  \draw[arr] (col.east) -- (sol.west);
+  \draw[arr] (es.east) -- (sol.west);
+  \draw[arr] (lr.east) -- (sol.west);
+  \draw[arr] (bro.east) -- (sol.west);
+  \draw[arr] (lr.east) -- (nv.west);
+  \draw[arr] (bro.east) -- (nv.west);
+  \draw[arr] (sol.east) -- (kern.west);
+  \draw[arr] (nv.east) -- (kern.west);
+\end{tikzpicture}%
+}
+\caption{Architecture of the standalone \code{FormalAtlas} Lean 4.35.0 package (\code{lean/}).}
+\label{fig:lean-arch}
+\end{figure}
+
+\subsection{Collatz Structural Core and No-Go Barriers (11 Theorems)}
+Define the shortcut Collatz map $T : \Z \to \Z$ by $T(x) = x/2$ if $2 \mid x$ and
+$T(x) = (3x+1)/2$ otherwise, and its $\varepsilon=-1$ sibling $T_-(x) = x/2$ if $2 \mid x$ and
+$(3x-1)/2$ otherwise \cite{terras1976,lagarias1985}. Let $w_d(f, x) \in \{0,1\}^d$ denote the
+length-$d$ parity vector, $o(f,d,x)$ its count of odd steps, and $c(w) \in \Z_{\ge 0}$ its exact
+affine intercept \cite{bernsteinlagarias1996}.
+
+\begin{theorem}[Collatz Structural Core, \code{FormalAtlas/Collatz.lean}]\label{thm:collatz}
+All eleven statements below are machine-checked in Lean 4.35.0:
+\begin{enumerate}
+  \item \emph{Cylinder affine law (\code{thm_collatz_cylinder_affine_law}):}
+    $\forall d \in \N,\, q,r \in \Z,\ T^d(2^d q + r) = 3^{o(T,d,r)} q + T^d(r)$.
+  \item \emph{Exact intercept law (\code{thm_collatz_exact_intercept_law}):}
+    $\forall d \in \N,\, x \in \Z,\ 2^d T^d(x) = 3^{o(T,d,x)} x + c(w_d(T,x))$.
+  \item \emph{Terras bijection (\code{thm_terras_parity_word_bijection}):}
+    $r \mapsto w_d(T, r)$ bijects $\{0,\dots,2^d-1\}$ onto $\{0,1\}^d$ \cite{terras1976}.
+  \item \emph{Descent certificate soundness (\code{thm_collatz_descent_certificate_sound}):}
+    If $3^o < 2^d$ and $(2^d - 3^o)q > T^d(r) - r$, then $T^d(2^d q + r) < 2^d q + r$.
+  \item \emph{No finite subcritical cover (\code{thm_collatz_no_finite_subcritical_cover}):}
+    $T^d(-1) = -1$ and $o(T,d,-1) = d$, so $2^d \le 3^d$ blocks any finite 2-adic cover.
+  \item \emph{Spine ladder identity (\code{thm_collatz_spine_ladder_identity}):}
+    $2^d\bigl((2^d - 3^o)T^d(x) - c\bigr) = 3^o\bigl((2^d - 3^o)x - c\bigr)$.
+  \item \emph{Unconditional positivity localization (\code{thm_collatz_positivity_localization}):}
+    Every supercritical parity word $w$ ($3^{o(w)} > 2^{|w|}$) satisfies $c(w) \ge 3^{o(w)} - 2^{|w|}$,
+    forcing its rational periodic fixed point $\rho_w = -c(w)/(3^{o(w)} - 2^{|w|}) \le -1$.
+  \item \emph{$\varepsilon$-Invariance barrier (\code{thm_collatz_epsilon_invariance_barrier}):}
+    $T_-$ satisfies the identical Terras parity-word bijection for every $d \in \N$, yet admits
+    positive supercritical cycles at $5$ (period $3$, $3^2 > 2^3$) and $17$ (period $11$, $3^7 > 2^{11}$).
+    Hence no argument relying solely on sign-blind 2-adic parity-word combinatorics can prove Collatz.
+  \item \emph{B\"ohm--Sontacchi cycle equation (\code{thm_collatz_cycle_equation}) \cite{bohm1978}:}
+    $T^d(x) = x \implies (2^d - 3^{o(T,d,x)})x = c(w_d(T,x))$.
+  \item \emph{Parity-word cocycle (\code{thm_collatz_parity_word_append}):}
+    $w_{d_1+d_2}(f,x) = w_{d_1}(f,x) \mathbin{\Vert} w_{d_2}(f, f^{d_1}(x))$ for arbitrary $f:\Z\to\Z$.
+  \item \emph{Negative integer cycles (\code{thm_collatz_negative_cycles}):}
+    Under true $T$, $T^3(-5)=-5$ ($o=2$) and $T^{11}(-17)=-17$ ($o=7$), certifying that
+    no-nontrivial-cycle claims fail on $\Z$ without $x > 0$.
+\end{enumerate}
+\end{theorem}
+
+\subsection{Erd\H{o}s--Straus, Lonely Runner, and Brocard Modules (11 Theorems)}
+
+\begin{theorem}[Erd\H{o}s--Straus Core, \code{FormalAtlas/ErdosStraus.lean}]
+Write $\mathrm{HasES}(n)$ for $\exists x,y,z \in \N_{>0},\ 4xyz = n(yz + xz + xy)$.
+\begin{enumerate}
+  \item \emph{Mordell mod-840 reduction (\code{thm_erdos_straus_mordell_840}) \cite{mordell1969,elsholtztao2013}:}
+    For every $n \ge 2$ with $n \bmod 840 \notin \{1,121,169,289,361,529\}$ (834/840 classes $= 99.286\%$),
+    $\mathrm{HasES}(n)$ holds via explicit polynomial witnesses.
+  \item \emph{Multiplicative closure (\code{thm_erdos_straus_multiplicative_closure}):}
+    $\mathrm{HasES}(m) \land k > 0 \implies \mathrm{HasES}(mk)$ (reducing the conjecture to primes).
+  \item \emph{Small exceptional squares (\code{thm_erdos_straus_mordell_exceptions_small}):}
+    $\mathrm{HasES}(n)$ holds for all six smallest squares occupying Mordell's unaddressed classes:
+    $n \in \{121, 169, 289, 361, 529, 841\}$.
+\end{enumerate}
+\end{theorem}
+
+\begin{theorem}[Lonely Runner Core, \code{FormalAtlas/LonelyRunner.lean}]
+Using exact integer circular distance $\mathrm{FarEnough}(m,p,q,v) \iff q \le mr \land q \le m(q-r)$
+for $r = (pv) \bmod q$ ($q > 0$) \cite{wills1967,tao2018lonely}:
+\begin{enumerate}
+  \item \emph{Global sharpness (\code{thm_lonely_runner_sharpness_all_n}):}
+    For every $n \ge 1$ and rational time $t = p/q$, the speed tuple $(1,2,\dots,n)$ admits
+    $i \in \{1,\dots,n\}$ with $\|t \cdot i\| \le \frac{1}{n+1}$ (proved via a self-contained finite
+    pigeonhole lemma in pure Lean Core).
+  \item \emph{Constructive base cases (\code{thm_lonely_runner_n1}, \code{thm_lonely_runner_n2}):}
+    The Lonely Runner Conjecture holds for $n = 1$ (gap $\ge 1/2$) and $n = 2$ (gap $\ge 1/3$).
+  \item \emph{Speed-scaling invariance (\code{thm_lonely_runner_speed_scaling}):}
+    For all $q, k > 0$, $\mathrm{FarEnough}(m,p,q,v)$ implies $\mathrm{FarEnough}(m,p,qk,vk)$.
+\end{enumerate}
+\end{theorem}
+
+\begin{theorem}[Brocard Structural \& Exhaustive Core, \code{FormalAtlas/Brocard.lean}]
+For $\mathrm{IsBrocardSol}(n,m) \iff n! + 1 = m^2$ \cite{overholt1993,berndtgalway2000}:
+\begin{enumerate}
+  \item \emph{Brown pairs (\code{thm_brocard_brown_solutions}):} $(4,5)$, $(5,11)$, and $(7,71)$ solve $n!+1=m^2$.
+  \item \emph{Mod-4 constraint (\code{thm_brocard_mod4_ge_4}):} $\forall n \ge 4,\ (n!+1) \bmod 4 = 1$, forcing $m$ odd.
+  \item \emph{Exhaustive classification (\code{thm_brocard_exhaustive_le_12}, \code{thm_brocard_exhaustive_le_15}):}
+    For every $n \le 15$ (up to $15!+1 = 1{,}307{,}674{,}368{,}001$) and every $m \in \N$,
+    $n! + 1 = m^2 \implies (n,m) \in \{(4,5),(5,11),(7,71)\}$, proved via kernel-checked square
+    bracketing $k^2 < n!+1 < (k+1)^2$ without \code{native_decide}.
+\end{enumerate}
+\end{theorem}
+
+\section{Statement Fidelity, Adversarial Tests, and Six-Kernel Replay}\label{sec:kernels}
+
+Kernel soundness never prevents a formalizer from proving a vacuous or mis-stated definition.
+We therefore pair \code{Solution.lean} with three independent defenses:
+\begin{enumerate}
+  \item \textbf{Concrete Non-Vacuity Witnesses (\code{lean/NonVacuity.lean}, 6 theorems):}
+    Constructive instances demonstrating that every conditional hypothesis bundle in
+    \code{Challenge.lean} is non-empty.
+  \item \textbf{Adversarial False-Variant Refutations (\code{lean/Adversarial.lean}, 8 theorems):}
+    Explicit proofs of $\neg P$ for deliberately weakened or false statements---including zero
+    Erd\H{o}s--Straus denominators (\code{adv_erdos_straus_zero_denom_blocked}), false Egyptian
+    triples, universal 1-step Collatz descent, sign-free cycle exclusion, the false converse of
+    positivity localization, strict improvement over $1/(n+1)$ in Lonely Runner, invalid gap times,
+    and near-square non-Brown factorials ($6!+1, 8!+1, 13!+1$).
+  \item \textbf{Six-Kernel Replay \& Verbatim Axiom Parity:}
+    All 36 audited declarations pass \code{lean}, \code{leanchecker-paranoid --fresh},
+    \code{lean4lean}, \code{nanoda_bin} (Rust), \code{con-leche --verified}, and
+    \code{con-ron --verified} (Rust arena checker), plus Linux \code{bubblewrap}-sandboxed
+    \code{lake check --paranoid} and \code{lake comparator --paranoid} in Ubuntu CI.
+    Every declaration depends strictly on a subset of \code{{propext, Classical.choice, Quot.sound}}
+    (10 declarations use zero axioms), and \code{scripts/check_readme_axioms.py} enforces exact
+    parity between \code{VerifyAxioms.lean}, \code{lean/STATEMENT_FIDELITY.md}, and \code{README.md}.
+\end{enumerate}
+
+\section{Cross-Atlas Resolution Audit (1,900 Macro Problems)}\label{sec:crossatlas}
+
+To prevent inflated portfolio claims across sibling repositories, we conducted a primary-evidence
+cross-check (\code{docs/CROSS_ATLAS_AUDIT_2026-11-25.md}) comparing \code{unsolved-mathematics}
+(106 problems) and all 11 \code{0thernes} research repositories against the 1,900 macro-level
+entries of \code{0thernes/unsolved-problems-mega-atlas} (\code{MegaAtlas_Unsolved_Problems_V2.json}):
+
+\begin{itemize}
+  \item \textbf{Macro-level Mega-Atlas problems closed by \code{0thernes}: 0 / 1,900.}
+    Every matched macro problem (\code{CS-001}, \code{CS-026}, \code{CS-051}, \code{CS-053},
+    \code{QM-011}, \code{SUB-032}, \code{NEURO-027}, \code{NT-005}, \code{NT-066}, \code{NT-078},
+    \code{COMB-046}) remains open at the general level.
+  \item \textbf{Specific 2026 sub-conjectures proved in companion Lean 4.35.0 preprints (3):}
+    (i) Conjecture 7.7 of Bani\'c--Elezovi\'c \cite{banic2026multinomial} ($a_\triangle = \frac{1}{32} - \frac{4\sqrt{3}}{243}$);
+    (ii) Jonah's Conjecture E ($N \ge 4$) inside the \code{QM-011} Pauli-contextuality sub-frontier
+    (citing single-orbit transitivity as an external preprint input); and
+    (iii) Vinciguerra's \cite{vinciguerra2026catalytic} 2-register positive-characteristic dichotomy
+    and optimal 3-register powering exponent $\log_{13}(8) \approx 0.810714$. All three await
+    external peer review; none closes a macro Mega-Atlas entry.
+  \item \textbf{External frontier reconciliation:} 99 of 106 Atlas problems map directly to
+    Mega-Atlas V2 (plus two in its resolved benchmarks: Moving Sofa and Connes Embedding
+    \cite{ji2020mip}, alongside Telescope \cite{burklund2023telescope}, 3D Kakeya
+    \cite{wangzahl2025}, and Tao's almost-all Collatz bound \cite{tao2022collatz}).
+    While \code{unsolved-mathematics} incorporates the live-verified May 2026 Erd\H{o}s Unit
+    Distance disproof preprint \cite{unitdistance2026} with explicit peer-review caveats, none of
+    the 12 unrefereed Fall/Nov 2026 AI proof claims tracked in Mega-Atlas (RH, GRH, 3D
+    Navier--Stokes, Yang--Mills, etc.) is promoted from \code{open}.
+\end{itemize}
+
+\section{Three-Cycle Hardening Audit and Verification Ladder}\label{sec:hardening}
+
+Release \texttt{v0.4.0} underwent three structured hardening cycles classified strictly under the
+10 finding classes of Build Standard \texttt{v1.2.0} (\code{bug}, \code{error}, \code{issue},
+\code{problem}, \code{concern}, \code{dilemma}, \code{conflict}, \code{gap}, \code{hole},
+\code{blindspot}; full ledger in \code{docs/reviews/2026-11-25-three-cycle-hardening-audit.md}).
+Key defects caught and remediated include:
+(1) a PowerShell \code{Set-Location} vs.\ \code{.NET} CWD discrepancy in \code{Audit-Repo.ps1};
+(2) a documentation conflict between \code{docs/faq.md} (\code{claude-opus-4-6}) and
+\code{LIMITATIONS.md}/\code{meta-analyses/*.md} (historical non-canonical 2026-06-14 session label
+\code{claude-opus-4-8});
+(3) nine historical July 2026 Collatz experiment files leaking local Windows paths
+(\texttt{C:\textbackslash Users\textbackslash\ldots} and \texttt{Z:\textbackslash\ldots}), now sanitized and guarded by a negative pytest
+regression test;
+(4) 89 CRLF-encoded tracked text files normalized to LF, with \texttt{newline="\textbackslash n"} enforced in
+index and register generators; and
+(5) migration of \code{formal/} $\to$ \code{lean/} (leaving a redirect stub in
+\code{formal/ROADMAP.md}) to reach 100.0\% applicable compliance on Build Standard \texttt{v1.2.0}.
+
+All core invariants are exercised by unit, negative, bug-regression, Hypothesis property-based,
+golden-determinism, differential Python-oracle, and metamorphic tests, plus a targeted mutation
+testing harness (\code{tests/mutation_check.py}) achieving 100\% mutant kill rate, SHA-256 dataset
+manifests (\code{data/MANIFEST.sha256}), and GitHub SLSA Build Provenance attestations.
+
+\section{Limitations, Governance, and Replication}\label{sec:governance}
+
+\subsection{Limitations and Threats to Validity}
+\begin{enumerate}
+  \item \textbf{Peer-review status:} \emph{Zero} of the 106 dossiers or meta-analyses---and neither
+    this white paper nor the Lean formal core---have undergone independent human mathematician peer
+    review. Only 1 of 4 planned AI meta-review passes (Claude self-review on 2026-06-14) has run.
+  \item \textbf{Pre-DOI bibliography backlog:} Approximately 2,100 historical entries without DOIs
+    in the tables remain unverified research leads; only the 445 \code{verified} rows are
+    API-confirmed.
+  \item \textbf{Platform sandbox asymmetry:} Full \code{bubblewrap} (\code{bwrap}) kernel
+    sandboxing runs on Linux/Ubuntu CI; local Windows builds verify all six kernels via direct
+    binary replay on exported artifacts.
+  \item \textbf{Post-release errata policy:} All post-tag defects are logged append-only in
+    \code{ERRATA.md}; fatal flaws trigger an explicit withdrawal notice rather than silent deletion.
+\end{enumerate}
+
+\subsection{CRediT Author Contributions, AI Disclosure, and Conflict of Interest}
+\textbf{Alexander S. Donahue} (ORCID \code{0009-0006-8168-9648}, independent researcher):
+Conceptualization, Methodology, Software, Validation, Investigation, Data Curation, Writing,
+Supervision, and final acceptance of all repository artifacts. AI coding and drafting assistants
+(Claude, GPT/Codex, and Gemini/Antigravity) assisted with literature drafting, Lean tactic
+synthesis, static-analysis tooling, and audit automation; every mathematical statement, formal
+definition, and verification gate was audited by the human author and checked mechanically by
+independent Lean 4.35.0 kernels and deterministic Python test suites. The author declares no
+competing financial interests and claims no institutional or corporate LLC affiliation.
+
+\subsection{Replication}
+From a clean clone of tag \texttt{v0.4.0}:
+\begin{verbatim}
+python -m pip install -r requirements-lock.txt
+python scripts/generate.py --check && python scripts/validate.py
+python scripts/check_retractions.py --check
+python scripts/check_readme_axioms.py
+python scripts/build_data_manifest.py --check
+python -m pytest -v tests/ && python tests/mutation_check.py
+cd lean && lake build Challenge Solution NonVacuity Adversarial
+lake env lean VerifyAxioms.lean
+lake check --paranoid
+lake comparator --config comparator.json --paranoid
+\end{verbatim}
+
+\bibliographystyle{amsplain}
+\bibliography{references}
+
+\end{document}

@@ -5,6 +5,30 @@ Format follows [Keep a Changelog](https://keepachangelog.com/); versions follow
 [SemVer](https://semver.org/) on the *structure/schema* (content grows
 continuously between structural versions).
 
+## [0.4.0] — 2026-11-25
+
+### Added (Three-Cycle Hardening Audit · Build Standard v1.2.0 · Playbook v1.3)
+- **Expanded Lean 4.35.0 Multi-Kernel Formal Core (`formal/` → `lean/`):** Migrated package cleanly to `lean/` (retaining redirect stub `formal/ROADMAP.md`) and expanded from 14 → **22 headline theorems** (+ **6 non-vacuity witnesses** + **8 explicit adversarial false-variant refutations** in `lean/Adversarial.lean` = **36 audited declarations**, zero `sorry`/`admit`/`native_decide`/custom `axiom`, axioms strictly within `{propext, Classical.choice, Quot.sound}`, 10 requiring zero axioms):
+  - Collatz (+3): Böhm–Sontacchi exact cycle equation (`thm_collatz_cycle_equation`), parity-word cocycle (`thm_collatz_parity_word_append`), and negative integer cycles `-5` & `-17` of true $3n+1$ (`thm_collatz_negative_cycles`).
+  - Erdős–Straus (+2): multiplicative closure / prime reduction (`thm_erdos_straus_multiplicative_closure`) and resolution of all 6 smallest Mordell exceptional squares `{121, 169, 289, 361, 529, 841}` (`thm_erdos_straus_mordell_exceptions_small`).
+  - Lonely Runner (+1): exact rational speed-scaling invariance (`thm_lonely_runner_speed_scaling`).
+  - Brocard (+2): mod-4 parity constraint $n \ge 4 \Rightarrow n!+1 \equiv 1 \pmod 4$ (`thm_brocard_mod4_ge_4`) and exhaustive classification extended to $n \le 15$ (`thm_brocard_exhaustive_le_15`, through $15!+1 = 1{,}307{,}674{,}368{,}001$).
+- **Publication-Grade AMS-LaTeX White Paper & arXiv Bundle (`paper/`):** Authored and compiled `paper/Donahue_2026_unsolved_mathematics_atlas.tex` + 100% live-verified `paper/references.bib` via Tectonic 0.17.0 with **0 warnings / 0 overfull hboxes** (`paper/Donahue_2026_unsolved_mathematics_atlas.pdf`, 135.5 KiB) plus clean-room-compiled `paper/arxiv_submission.tar.gz`, bundled into GitHub Release & SLSA provenance attestations.
+- **Interactive Lean Proof Blueprint (`_site/blueprint.html`):** Upgraded `scripts/build_site.py` to emit a standalone interactive Proof Blueprint with SVG dependency DAG and filterable 22-theorem explorer alongside `_site/index.html`.
+- **Live Crossref + DataCite Retraction Audit (`scripts/check_retractions.py` → `data/retraction-audit.json`):** Audited all **220 primary-source-verified DOIs** (`0` retractions, `3` publisher errata/corrections transparently recorded, `0` network errors).
+- **Verbatim `#print axioms` Parity & Palomar Gate (`scripts/check_readme_axioms.py`):** Pasted exact 36-declaration `#print axioms` output into `README.md` (`<!-- AXIOMS:START/END -->`) and wired CI drift & Palomar limit enforcement.
+- **Cross-Atlas Resolution Audit (`docs/CROSS_ATLAS_AUDIT_2026-11-25.md`):** Primary-evidence reconciliation of `0thernes/unsolved-problems-mega-atlas` (1,900 problems) ↔ `unsolved-mathematics` (106 problems) ↔ all 11 sibling `0thernes` research repositories (honest verdict: `0/1,900` macro closures, 3 specific 2026 sub-conjecture preprints, 11 partial-progress frontiers).
+- **Post-Release Governance & Licensing (`ERRATA.md`, SPDX headers):** Added `ERRATA.md` with append-only correction & withdrawal policy and `SPDX-License-Identifier: MIT` / `CC-BY-4.0` headers across core Python, Lean, and TeX sources.
+- **Three-Cycle 10-Class Hardening Report (`docs/reviews/2026-11-25-three-cycle-hardening-audit.md`):** Upgraded to **Build Standard `v1.2.0`** (all 10 finding classes synced live on GitHub labels; `scripts/audit-checks.tsv`, `audit-repo.sh`, `Audit-Repo.ps1` upgraded; **100.0% core and 98.5%+ / 100.0% applicable structure score**).
+
+### Fixed
+- **C1-BUG-01 (`scripts/Audit-Repo.ps1`):** Added `[System.IO.Directory]::SetCurrentDirectory($Root)` after `Set-Location` so `.NET` `OpenRead` resolves paths accurately when invoked from another working directory.
+- **C1-BUG-02 (`scripts/build_indexes.py`, `scripts/build_review_register.py`) & `C1-ISS-01`:** Enforced `newline="\n"` and normalized 89 tracked CRLF files to LF.
+- **C1-CONC-01 (Machine-path privacy leak):** Sanitized local Windows paths (`C:\Users\...`, `Z:\[Vibe...`) across 9 historical July 2026 Collatz experiment files and added a permanent pytest negative guard.
+- **C1-CONF-01 (`docs/faq.md`, `CLAIMS.md`, `AUTHORS.md`):** Reconciled historical June 14, 2026 self-review session label (`claude-opus-4-8`) consistently across all documentation.
+- **C1-GAP-01 (`.gitignore`):** Added `.hypothesis/`, `lean/.lake/`, `lean/build/`, and `paper/build/`.
+- **C1-ERR-01 (`README.md`, `llms-full.txt`, `CLAIMS.md`, `scripts/validate.py`):** Removed stale PR-template mention in `README.md`, corrected `HasErdosStraus` & `schema/problem.schema.json` references, and extended `VERSION` parity checking to `lean/lakefile.toml` and `lean/formalization.yaml`.
+
 ## [0.3.1] — 2026-11-23
 
 ### Fixed (Hostile Adversarial Second-Pass Audit — Pass 11)

@@ -10,12 +10,20 @@
     "FormalAtlas.Challenge.thm_collatz_spine_ladder_identity",
     "FormalAtlas.Challenge.thm_collatz_positivity_localization",
     "FormalAtlas.Challenge.thm_collatz_epsilon_invariance_barrier",
+    "FormalAtlas.Challenge.thm_collatz_cycle_equation",
+    "FormalAtlas.Challenge.thm_collatz_parity_word_append",
+    "FormalAtlas.Challenge.thm_collatz_negative_cycles",
     "FormalAtlas.Challenge.thm_erdos_straus_mordell_840",
+    "FormalAtlas.Challenge.thm_erdos_straus_multiplicative_closure",
+    "FormalAtlas.Challenge.thm_erdos_straus_mordell_exceptions_small",
     "FormalAtlas.Challenge.thm_lonely_runner_sharpness_all_n",
     "FormalAtlas.Challenge.thm_lonely_runner_n1",
     "FormalAtlas.Challenge.thm_lonely_runner_n2",
+    "FormalAtlas.Challenge.thm_lonely_runner_speed_scaling",
     "FormalAtlas.Challenge.thm_brocard_brown_solutions",
-    "FormalAtlas.Challenge.thm_brocard_exhaustive_le_12"
+    "FormalAtlas.Challenge.thm_brocard_exhaustive_le_12",
+    "FormalAtlas.Challenge.thm_brocard_mod4_ge_4",
+    "FormalAtlas.Challenge.thm_brocard_exhaustive_le_15"
   ],
   "definition_names": [],
   "permitted_axioms": [

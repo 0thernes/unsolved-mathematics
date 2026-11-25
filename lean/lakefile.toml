@@ -1,6 +1,6 @@
 name = "FormalAtlas"
-version = "0.3.1"
-defaultTargets = ["FormalAtlas", "Solution", "NonVacuity"]
+version = "0.4.0"
+defaultTargets = ["FormalAtlas", "Solution", "NonVacuity", "Adversarial"]
 
 [[lean_lib]]
 name = "FormalAtlas"
@@ -13,6 +13,9 @@ name = "Solution"
 
 [[lean_lib]]
 name = "NonVacuity"
+
+[[lean_lib]]
+name = "Adversarial"
 
 [[lean_lib]]
 name = "VerifyAxioms"

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-label="Unsolved Mathematics Atlas v0.3.0">
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-label="Unsolved Mathematics Atlas v0.4.0">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0b1020"/>
@@ -23,7 +23,7 @@
     <line x1="1024" y1="0" x2="1024" y2="640"/>
   </g>
   <rect x="80" y="76" width="1120" height="6" rx="3" fill="url(#accent)"/>
-  <text x="80" y="150" fill="#93c5fd" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" letter-spacing="2">0THERNES / UNSOLVED-MATHEMATICS · v0.3.1</text>
+  <text x="80" y="150" fill="#93c5fd" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" letter-spacing="2">0THERNES / UNSOLVED-MATHEMATICS · v0.4.0</text>
   <text x="80" y="232" fill="#f8fafc" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="60" font-weight="700">The Atlas of Unsolved</text>
   <text x="80" y="302" fill="#f8fafc" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="60" font-weight="700">Mathematics</text>
   <text x="80" y="362" fill="#cbd5e1" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="26">106 open-problem dossiers · Lean 4.35.0 multi-kernel formal core · primary-source verified citations</text>
@@ -33,7 +33,7 @@
     <text x="104" y="486" fill="#cbd5e1" font-size="16">7-section dossiers</text>
     <rect x="354" y="420" width="270" height="84" rx="10" fill="#16213e" stroke="#a78bfa" stroke-width="1.5"/>
     <text x="378" y="456" fill="#c4b5fd" font-weight="700">LEAN 4.35.0 CORE</text>
-    <text x="378" y="486" fill="#cbd5e1" font-size="16">14 theorems · 0 sorry</text>
+    <text x="378" y="486" fill="#cbd5e1" font-size="16">22 theorems · 6 kernels</text>
     <rect x="648" y="420" width="270" height="84" rx="10" fill="#16213e" stroke="#34d399" stroke-width="1.5"/>
     <text x="672" y="456" fill="#6ee7b7" font-weight="700">445 API-VERIFIED</text>
     <text x="672" y="486" fill="#cbd5e1" font-size="16">arXiv + Crossref audit</text>

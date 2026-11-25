@@ -80,7 +80,7 @@
   "log2_verified_through": 36.8,
   "mismatch_count": 0,
   "mode": "ledger",
-  "results_dir": "Z:\\[Vibe Coded (AI)]\\CLAUDECODE\\Unresolved Math Problems\\problems\\collatz-conjecture\\experiments\\results",
+  "results_dir": "problems/collatz-conjecture/experiments/results",
   "terras_verified_through": 120000000000,
   "total_elapsed_seconds": 13718.2,
   "total_odd_integers_scanned": 59500000000

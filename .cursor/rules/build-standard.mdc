@@ -1,7 +1,7 @@
 ---
-description: Canonical Build Standard v1.1.0 and epistemic verification rules for The Unsolved Mathematics Atlas
+description: Canonical Build Standard v1.2.0 and Defensible AI Research Playbook v1.3 rules for The Unsolved Mathematics Atlas
 alwaysApply: true
 ---
 
 Read and follow `AGENTS.md` at the repository root before making any changes.
-Never open PRs or feature branches (commit straight to `main`). Never fabricate citations, metrics, or proof claims.
+Never open PRs or feature branches (commit straight to `main`). Classify every finding across all 10 classes (`bug`, `error`, `issue`, `problem`, `concern`, `dilemma`, `conflict`, `gap`, `hole`, `blindspot`). Never fabricate citations, metrics, or proof claims.

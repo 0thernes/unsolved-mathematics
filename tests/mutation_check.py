@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MIT
 """Targeted Mutation Testing Suite (Build Standard B13).
 
 Injects 6 concrete logic mutants in-memory (never modifying tracked files on disk),

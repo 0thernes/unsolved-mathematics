@@ -1,20 +1,20 @@
 # Configuration Reference
 
-All configurable parameters for The Unsolved Mathematics Atlas. The repository
+All configurable parameters for The Unsolved Mathematics Atlas (`v0.4.0`). The repository
 runs fully offline out of the box with zero required secrets or environment
 variables.
 
 | Variable / File | Default | Purpose |
 |---|---|---|
-| `VERSION` | `0.3.0` | Single source of truth for semantic version (checked against `data/problems.yaml`, `CITATION.cff`, `pyproject.toml`) |
+| `VERSION` | `0.4.0` | Single source of truth for semantic version (checked against `data/problems.yaml`, `CITATION.cff`, `pyproject.toml`, `lean/lakefile.toml`, `lean/formalization.yaml`) |
 | `data/problems.yaml` | — | Single source of truth for all 106 problem entries, scores, and statuses |
 | `scripts/generate.py` (`CURRENT_YEAR`) | `2026` | Frozen reference year for reproducible `age_score` calculation |
 | `rag/build_corpus.py` (`TARGET_TOKENS`, `OVERLAP_TOKENS`) | `380`, `60` | Chunking window sizes for deterministic `rag/corpus.jsonl` generation |
 | `PY` (env var) | `python` | Python executable override for `Makefile` and `justfile` |
-| `ATLAS_CONTACT_EMAIL` (env var) | `0_0@0thernes.art` | Polite contact header for Crossref / arXiv API verification (`scripts/verify_citations.py`) |
+| `ATLAS_CONTACT_EMAIL` (env var) | `0_0@0thernes.art` | Polite contact header for Crossref / DataCite / arXiv API verification (`scripts/verify_citations.py`, `scripts/check_retractions.py`) |
 | `COMPARATOR_BWRAP` (env var) | `bwrap` | Path to Linux `bubblewrap` binary for sandboxed `lake check` / `lake comparator` |
 | `ATLAS_EMBED_MODEL` (env var) | `all-MiniLM-L6-v2` | Optional SentenceTransformer model for `rag/embed_index.py` |
-| `formal/lean-toolchain` | `leanprover/lean4:v4.35.0` | Pinned Lean 4 compiler and bundled external kernels |
-| `formal/comparator.json` | — | Target theorem list and permitted axiom allowlist for `lake comparator` |
+| `lean/lean-toolchain` | `leanprover/lean4:v4.35.0` | Pinned Lean 4 compiler and bundled external kernels |
+| `lean/comparator.json` | — | Target 22-theorem list and permitted axiom allowlist for `lake comparator` |
 
 See `.env.example` for a copy-ready template.

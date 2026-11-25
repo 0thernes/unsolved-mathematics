@@ -1,10 +1,20 @@
-name	color	description
-bug	d73a4a	Defect in program logic: code runs differently from its specification or intent
-error	e11d48	Wrong artifact or failed execution outside program logic (bad number, citation, doc, build)
-issue	0e8a16	Gap: something required by the standard or task is missing or incomplete
-problem	b60205	External obstacle blocking progress not caused by the project's own artifacts
-dilemma	fbca04	Trade-off between valid options requiring owner priority decision
-conflict	5319e7	Two requirements, sources, or rules contradict each other
-formal-verification	1d76db	Lean 4 proofs, multi-kernel checking, statement fidelity
-citation-audit	0075ca	Primary-source DOI/arXiv resolution and hallucination removal
-frontier-update	006b75	Updating problem status for new mathematical breakthroughs
+# name	color	description  (Build Standard v1.2.0; synced via gh label create --force)
+bug	d73a4a	Code does something different from its spec or intent (a defect in program logic)
+error	e99695	Wrong number, claim, doc, config, version, build or command
+issue	fbca04	Works and is not wrong, but is unclear, inconsistent, fragile or hard to maintain
+problem	c5def5	External obstacle (network, account, toolchain) blocks progress
+concern	f9d0c4	Risk that has not caused harm yet (security, cost, legal, reliability)
+dilemma	d4c5f9	Trade-off between valid options; the owner decides
+conflict	b60205	Two requirements or rules contradict each other
+gap	fef2c0	Something required or expected is missing; nothing present is wrong
+hole	e4e669	Missing check or safeguard, so a defect could pass unnoticed
+blindspot	bfd4f2	A user, platform, failure mode or assumption nobody has examined yet
+triage	ededed	Needs classification
+question	0075ca	Question about usage or design
+replication	0e8a16	Replication report (successful or not)
+security	5319e7	Security-related
+docs	1d76db	Documentation
+ai	bfdadc	AI model, prompt, eval or budget
+formal-proof	006b75	Lean 4 formalization, multi-kernel audit, or statement fidelity
+citation-audit	5319e7	Primary-source DOI/arXiv resolution, retraction audit, or bibliography verification
+frontier-update	1d76db	2024-2026 mathematical breakthrough or status transition

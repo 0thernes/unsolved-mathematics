@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MIT
 """
 proof_claim_sweep.py — automate the pseudo-proof discriminator.
 

@@ -20,9 +20,9 @@
 
 meta:
   atlas_name: "The Unsolved Mathematics Atlas"
-  version: "0.3.1"
+  version: "0.4.0"
   maintainer: "0thernes"
-  updated: "2026-11-23"
+  updated: "2026-11-25"
   default_branch: "main"
   disclaimer: >
     Difficulty, centrality, age, and tractability scores are curated editorial

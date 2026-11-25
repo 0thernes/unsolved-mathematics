@@ -33,13 +33,16 @@ jobs:
       - name: Install pinned dependencies
         run: python -m pip install -r requirements-lock.txt
 
-      - name: Registry schema, freshness, dossiers, papers, proof-claim & manifest gates
+      - name: Registry schema, freshness, dossiers, papers, proof-claim, retraction, axiom-parity & manifest gates
         run: |
           python scripts/generate.py --check
           python scripts/validate.py
           python scripts/check_dossiers.py --strict
           python scripts/check_papers.py
           python scripts/proof_claim_sweep.py
+          python scripts/check_retractions.py --check
+          python scripts/check_readme_axioms.py
+          python scripts/build_site.py
           python scripts/build_data_manifest.py --check
 
       - name: Verify deterministic rebuild (zero drift)
@@ -72,58 +75,15 @@ jobs:
         run: |
           curl https://elan.lean-lang.org/elan-init.sh -sSf | sh -s -- -y --default-toolchain none
           echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
-          "$HOME/.elan/bin/elan" toolchain install "$(cat formal/lean-toolchain)"
+          "$HOME/.elan/bin/elan" toolchain install "$(cat lean/lean-toolchain)"
 
-      - name: Audit forbidden tokens (zero sorry/admit/native_decide/custom axiom in code)
-        working-directory: formal
+      - name: Audit forbidden tokens & Palomar limits (zero sorry/admit/native_decide/custom axiom)
+        run: python3 scripts/check_readme_axioms.py
+
+      - name: Build Lean 4.35.0 package & verify axioms strictly within standard set (36 declarations)
+        working-directory: lean
         run: |
-          python3 - <<'PY'
-          import pathlib, re, sys
-
-          def strip_lean_comments(src: str) -> str:
-              out, i, n, depth = [], 0, len(src), 0
-              while i < n:
-                  if depth == 0 and src[i:i+2] == "--":
-                      while i < n and src[i] != "\n":
-                          i += 1
-                  elif src[i:i+2] == "/-":
-                      depth += 1
-                      i += 2
-                  elif depth > 0 and src[i:i+2] == "-/":
-                      depth -= 1
-                      i += 2
-                  elif depth == 0:
-                      out.append(src[i])
-                      i += 1
-                  else:
-                      if src[i] == "\n":
-                          out.append("\n")
-                      i += 1
-              return "".join(out)
-
-          pat = re.compile(r"\b(sorry|admit|native_decide|sorryAx|Lean\.trustCompiler)\b|^\s*axiom\b", re.M)
-          files = sorted(pathlib.Path("FormalAtlas").glob("*.lean")) + [
-              pathlib.Path("Solution.lean"),
-              pathlib.Path("NonVacuity.lean"),
-          ]
-          bad = []
-          for f in files:
-              code = strip_lean_comments(f.read_text(encoding="utf-8"))
-              for m in pat.finditer(code):
-                  lineno = code[:m.start()].count("\n") + 1
-                  bad.append(f"{f}:{lineno}: {m.group(0)}")
-          if bad:
-              print("::error::Forbidden proof token(s) detected in formal Lean code:")
-              for b in bad:
-                  print("  ", b)
-              sys.exit(1)
-          print(f"OK: audited {len(files)} Lean source files (comments stripped) — zero sorry/admit/native_decide/custom axiom.")
-          PY
-
-      - name: Build Lean 4.35.0 package & verify axioms strictly within standard set
-        working-directory: formal
-        run: |
-          lake build Challenge Solution NonVacuity
+          lake build Challenge Solution NonVacuity Adversarial
           lake env lean VerifyAxioms.lean | tee axioms.log
           python3 - <<'PY'
           import re
@@ -134,30 +94,31 @@ jobs:
               txt,
               re.S,
           ))
-          assert len(matches) >= 18, f"Expected >=18 audited declarations, got {len(matches)}"
+          assert len(matches) >= 36, f"Expected >=36 audited declarations, got {len(matches)}"
           for m in matches:
               name = m.group(1)
               raw = m.group(2) or ""
               used = {a.strip() for a in raw.split(",") if a.strip()}
               bad = used - allowed
               assert not bad, f"Disallowed axiom(s) {bad} in {name}"
-          print(f"OK: audited {len(matches)} theorems/witnesses — strictly within {sorted(allowed)}.")
+          print(f"OK: audited {len(matches)} theorems/witnesses/refutations — strictly within {sorted(allowed)}.")
           PY
 
       - name: Replay through leanchecker-paranoid --fresh
-        working-directory: formal
+        working-directory: lean
         run: |
           lake env leanchecker-paranoid --fresh Solution
           lake env leanchecker-paranoid --fresh NonVacuity
+          lake env leanchecker-paranoid --fresh Adversarial
 
       - name: Run sandboxed 6-kernel lake check --paranoid & lake comparator --paranoid
-        working-directory: formal
+        working-directory: lean
         run: |
           lake check --paranoid
           lake comparator --config comparator.json --paranoid
 
   static-security-audit:
-    name: Static Analysis · Typecheck · Security · Build Standard Audit
+    name: Static Analysis · Typecheck · Security · Build Standard v1.2.0 Audit
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -176,10 +137,10 @@ jobs:
         run: ruff check scripts rag tests examples
 
       - name: Strict type check (mypy)
-        run: mypy scripts/generate.py scripts/validate.py scripts/build_data_manifest.py scripts/build_site.py rag/build_corpus.py rag/retriever.py
+        run: mypy scripts/generate.py scripts/validate.py scripts/build_data_manifest.py scripts/build_site.py scripts/check_retractions.py scripts/check_readme_axioms.py rag/build_corpus.py rag/retriever.py
 
       - name: Dependency vulnerability scan (pip-audit, report-only)
         run: pip-audit -r requirements-lock.txt || true
 
-      - name: Build Standard v1.1.0 repository audit (report-only)
+      - name: Build Standard v1.2.0 repository audit (report-only)
         run: bash scripts/audit-repo.sh . || true

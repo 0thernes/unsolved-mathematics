@@ -1,7 +1,7 @@
-# 📋 Research Kanban — The Unsolved Mathematics Atlas (`v0.3.0`)
+# 📋 Research Kanban — The Unsolved Mathematics Atlas (`v0.4.0`)
 
 > Operational board tracking the atlas's verification, formalization, and curation workstreams.
-> Updated `2026-11-23` for release `v0.3.0`.
+> Updated `2026-11-25` for release `v0.4.0`.
 
 **Legend:** 🟥 blocked · 🟧 needs-verification · 🟨 in-progress · 🟩 done · 🟦 backlog
 
@@ -9,9 +9,9 @@
 
 ## 🟦 Backlog
 
-- [ ] **v0.4.0 Collatz lab separation:** Extract the 58.5 MB `problems/collatz-conjecture/experiments/` laboratory into a dedicated sibling repo (`collatz-odd-unit-lock-lab`) while preserving concise atlas summary & cross-links (Dilemma D1).
-- [ ] **v0.4.0 Optional Mathlib bridge:** Add an opt-in Mathlib sub-package for analytic/geometric statements (RH zero-free regions, BSD rank definitions, Kakeya definitions) without bloating the zero-Mathlib `formal/` core.
-- [ ] **v0.4.0 Catalog broadening:** Address selection bias in `LIMITATIONS.md` (quantum complexity, modern Langlands, stochastic PDEs, homotopy type theory).
+- [ ] **v0.5.0+ Collatz lab separation:** Extract the 58.5 MB `problems/collatz-conjecture/experiments/` laboratory into a dedicated sibling repo (`collatz-odd-unit-lock-lab`) while preserving concise atlas summary & cross-links (Dilemma D1).
+- [ ] **v0.5.0+ Optional Mathlib bridge:** Add an opt-in Mathlib sub-package (`lean-mathlib/`) for analytic/geometric statements (RH zero-free regions, BSD rank definitions, Kakeya definitions) without bloating the zero-Mathlib `lean/` core.
+- [ ] **v0.5.0+ Catalog broadening:** Address selection bias in `LIMITATIONS.md` (quantum complexity, modern Langlands, stochastic PDEs, homotopy type theory).
 
 ## 🟧 To Verify (Remaining Open Epistemic Gaps)
 
@@ -26,9 +26,10 @@
 
 - [ ] Quarterly mathematical frontier tracking (monitoring late-2026 Lean-only GRH / Euler–NS claims until peer review settles; tracking Erdős Unit Distance `arXiv:2605.20695` peer review).
 
-## 🟩 Done (`v0.1.0` – `v0.3.0`)
+## 🟩 Done (`v0.1.0` – `v0.4.0`)
 
-- [x] **Standalone Lean 4.35.0 formal core (`formal/`):** 14 theorems across Collatz, Erdős–Straus, Lonely Runner, and Brocard; 6 non-vacuity witnesses; `VerifyAxioms.lean`; `Challenge.lean` + `comparator.json`; `STATEMENT_FIDELITY.md`; 6-kernel verification (`v0.3.0`).
+- [x] **Three-Cycle 10-Class Hardening, Build Standard `v1.2.0` & Playbook `v1.3` (`v0.4.0`):** Migrated `formal/` → `lean/` (`22` theorems + `6` non-vacuity witnesses + `8` adversarial false-variant refutations = `36` audited declarations, 6 independent kernels, verbatim `#print axioms` CI parity), live Crossref/DataCite retraction audit (`220/220` DOIs, `0` retracted, `3` publisher errata), 0-warning Tectonic AMS-LaTeX white paper PDF + clean-room arXiv tarball (`paper/`), interactive Proof Blueprint (`_site/blueprint.html`), `ERRATA.md`, `docs/CROSS_ATLAS_AUDIT_2026-11-25.md`, local machine-path privacy guard, LF normalization, and 55-test verification ladder (`v0.4.0`).
+- [x] **Standalone Lean 4.35.0 formal core (`formal/` → `lean/`):** Initial 14 theorems across Collatz, Erdős–Straus, Lonely Runner, and Brocard; 6 non-vacuity witnesses; `VerifyAxioms.lean`; `Challenge.lean` + `comparator.json`; `STATEMENT_FIDELITY.md`; 6-kernel verification (`v0.3.0`–`v0.3.1`).
 - [x] **Primary-source API citation audit (`scripts/verify_citations.py`):** 552 identifier-bearing rows checked with 0 network errors; 443 verified; 109 hallucinated/404 IDs purged (`v0.3.0`).
 - [x] **Forensic & philosophical audit (`docs/reviews/2026-11-23-forensic-philosophical-audit.md`):** Complete 6-class taxonomy (7 bugs fixed, 6 errors fixed, 5 conflicts resolved, 4 dilemmas documented) + 5W1H + Deductive/Inductive/Abductive & Philosophy of Mathematics synthesis + 10-pass review log (`v0.3.0`).
 - [x] **Verification test ladder (`tests/`):** Negative, bug-regression, golden determinism, schema contract, differential reference oracle, Hypothesis property-based, metamorphic, and 100%-kill mutation suite (`v0.3.0`).

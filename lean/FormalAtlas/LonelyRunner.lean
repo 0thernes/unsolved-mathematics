@@ -272,4 +272,37 @@ public theorem lonely_runner_n2 (v1 v2 : Int) (hv1 : 0 < v1) (hv2 : 0 < v2) :
   · have ⟨p, q, hq, h2, h1⟩ := hordered v2 v1 hv2 (by omega)
     exact ⟨p, q, hq, h1, h2⟩
 
+/-- **Theorem 20 (Exact Rational Speed-Scaling Invariance).**
+    Scaling both a runner's speed `v` and the time denominator `q` by any positive
+    integer factor `k > 0` preserves `FarEnough m`. Hence any common divisor of
+    runner speeds can be factored out without altering the Lonely Runner property. -/
+public theorem lonely_runner_speed_scaling (m p q v k : Int)
+    (hq : 0 < q) (hk : 0 < k) (h : FarEnough m p q v) :
+    FarEnough m p (q * k) (v * k) := by
+  unfold FarEnough at h ⊢
+  have hde := Int.mul_ediv_add_emod (p * v) q
+  have hr0 : 0 ≤ (p * v) % q := Int.emod_nonneg _ (by omega)
+  have hrq : (p * v) % q < q := Int.emod_lt_of_pos _ hq
+  have hmod_scale : (p * (v * k)) % (q * k) = ((p * v) % q) * k := by
+    have hmul : p * (v * k) = (q * k) * ((p * v) / q) + ((p * v) % q) * k := by
+      calc p * (v * k)
+          = (p * v) * k := by rw [Int.mul_assoc]
+      _   = (q * ((p * v) / q) + (p * v) % q) * k := by rw [hde]
+      _   = (q * ((p * v) / q)) * k + ((p * v) % q) * k := Int.add_mul _ _ _
+      _   = (q * k) * ((p * v) / q) + ((p * v) % q) * k := by
+            rw [Int.mul_right_comm q ((p * v) / q) k]
+    rw [hmul, Int.mul_add_emod_self_left]
+    have hlo : 0 ≤ ((p * v) % q) * k := Int.mul_nonneg hr0 (by omega)
+    have hhi : ((p * v) % q) * k < q * k := Int.mul_lt_mul_of_pos_right hrq hk
+    exact Int.emod_eq_of_lt hlo hhi
+  rw [hmod_scale]
+  have ⟨h1, h2⟩ := h
+  constructor
+  · have h1k := Int.mul_le_mul_of_nonneg_right h1 (by omega : (0 : Int) ≤ k)
+    rw [Int.mul_assoc] at h1k
+    exact h1k
+  · have h2k := Int.mul_le_mul_of_nonneg_right h2 (by omega : (0 : Int) ≤ k)
+    rw [Int.mul_assoc, Int.sub_mul] at h2k
+    exact h2k
+
 end FormalAtlas
