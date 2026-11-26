@@ -1,31 +1,30 @@
 module
 
+-- SPDX-License-Identifier: MIT
 public import FormalAtlas
 
 /-!
-# Adversarial — Explicit Refutation of Weakened / False Variants (Playbook v1.3 #12)
+# Adversarial — Explicit Refutation of Weakened / False Variants (`v0.5.0`, Playbook #12)
 
-Tests the formal definitions in `FormalAtlas.Defs` adversarially by proving that
-deliberately false, overclaimed, or degenerately weakened statements are PROVABLY
-FALSE under our definitions (guarding against vacuous hypotheses, degenerate
-denominators, and accidental trivialization).
+Tests all 8 formal domains adversarially by proving 14 deliberately false, overclaimed,
+or degenerately weakened statements are PROVABLY FALSE under our definitions.
 -/
 
 namespace FormalAtlas.Adversarial
 
-/-- Zero denominators are strictly excluded from `IsErdosStrausSol`. -/
+/-- 1. Zero denominators are strictly excluded from `IsErdosStrausSol`. -/
 public theorem adv_erdos_straus_zero_denom_blocked (n y z : Nat) :
     ¬ IsErdosStrausSol n 0 y z := by
   unfold IsErdosStrausSol
   omega
 
-/-- A false Erdős–Straus triple (`4/5 ≠ 1/2 + 1/3 + 1/6 = 1`) is refuted. -/
+/-- 2. A false Erdős–Straus triple (`4/5 ≠ 1/2 + 1/3 + 1/6 = 1`) is refuted. -/
 public theorem adv_erdos_straus_wrong_witness_refuted :
     ¬ IsErdosStrausSol 5 2 3 6 := by
   unfold IsErdosStrausSol
   decide
 
-/-- Single-step Collatz descent fails universally on positive integers (`T(3) = 5 ≥ 3`). -/
+/-- 3. Single-step Collatz descent fails universally on positive integers (`T(3) = 5 ≥ 3`). -/
 public theorem adv_collatz_no_universal_descent_d1 :
     ¬ (∀ x : Int, 0 < x → iter T 1 x < x) := by
   intro hall
@@ -33,14 +32,14 @@ public theorem adv_collatz_no_universal_descent_d1 :
   have hval : iter T 1 3 = 5 := by decide
   omega
 
-/-- Without `x > 0`, the Collatz no-nontrivial-cycle statement is FALSE (`x = -5`). -/
+/-- 4. Without `x > 0`, the Collatz no-nontrivial-cycle statement is FALSE (`x = -5`). -/
 public theorem adv_collatz_positivity_required_for_no_nontrivial_cycles :
     ¬ (∀ x : Int, x ≠ 0 → x ≠ 1 → x ≠ 2 → iter T 3 x ≠ x) := by
   intro hall
   have h5 := hall (-5) (by decide) (by decide) (by decide)
   exact h5 (by decide)
 
-/-- Converse of positivity localization fails: `c(w) ≥ 3^o - 2^d` does NOT imply supercriticality. -/
+/-- 5. Converse of positivity localization fails: `c(w) ≥ 3^o - 2^d` does NOT imply supercriticality. -/
 public theorem adv_collatz_positivity_converse_false :
     ¬ (∀ w : List Bool,
       (3 : Int) ^ wordOddCount w - (2 : Int) ^ w.length ≤ wordIntercept w →
@@ -51,7 +50,7 @@ public theorem adv_collatz_positivity_converse_false :
       (3 : Int) ^ wordOddCount [true, false]) := by decide
   exact hf h
 
-/-- Strict improvement over `1 / (n + 1)` in Lonely Runner is impossible for canonical speeds. -/
+/-- 6. Strict improvement over `1 / (n + 1)` in Lonely Runner is impossible for canonical speeds. -/
 public theorem adv_lonely_runner_strict_threshold_fails :
     ¬ (∀ n : Nat, 1 ≤ n → ∃ p q : Int, 0 < q ∧
       ∀ i : Nat, 1 ≤ i → i ≤ n → ¬ WithinDist ((n : Int) + 1) p q (i : Int)) := by
@@ -60,16 +59,57 @@ public theorem adv_lonely_runner_strict_threshold_fails :
   have ⟨i, hi1, hi2, hwi⟩ := lonely_runner_sharpness_all_n 2 (by decide) p q hq
   exact hstrict i hi1 hi2 hwi
 
-/-- Time `t = 1/9` does NOT satisfy `FarEnough 3` for speed `v = 1` (`1/9 < 1/3`). -/
+/-- 7. Time `t = 1/9` does NOT satisfy `FarEnough 3` for speed `v = 1` (`1/9 < 1/3`). -/
 public theorem adv_lonely_runner_bad_time_refuted :
     ¬ FarEnough 3 1 9 1 := by
   unfold FarEnough
   decide
 
-/-- Non-Brown factorials near squares (`6!+1`, `8!+1`, `13!+1`) are refuted as Brocard solutions. -/
+/-- 8. Non-Brown factorials near squares (`6!+1`, `8!+1`, `13!+1`, `16!+1`) are refuted. -/
 public theorem adv_brocard_false_candidates_refuted :
-    ¬ IsBrocardSol 6 26 ∧ ¬ IsBrocardSol 8 200 ∧ ¬ IsBrocardSol 13 78911 := by
+    ¬ IsBrocardSol 6 26 ∧ ¬ IsBrocardSol 8 200 ∧ ¬ IsBrocardSol 13 78911 ∧ ¬ IsBrocardSol 16 4574143 := by
   unfold IsBrocardSol
-  exact ⟨by decide, by decide, by decide⟩
+  exact ⟨by decide, by decide, by decide, by decide⟩
+
+/-- 9. `0` and `1` and composite `9 = 3 × 3` are strictly NOT prime under `IsPrime`. -/
+public theorem adv_non_primes_refuted :
+    ¬ IsPrime 0 ∧ ¬ IsPrime 1 ∧ ¬ IsPrime 9 := by
+  refine ⟨fun h => by have := h.1; omega, fun h => by have := h.1; omega, ?_⟩
+  intro h9
+  have h3 : 3 ∣ 9 := ⟨3, rfl⟩
+  have hc := h9.2 3 h3
+  omega
+
+/-- 10. Converse of Mersenne exponent necessity fails (`n = 11` is prime, yet `2^11 - 1 = 2047 = 23 × 89` is composite). -/
+public theorem adv_mersenne_converse_false :
+    IsPrime 11 ∧ ¬ IsPrime (2 ^ 11 - 1) := by
+  refine ⟨isPrimeBool_sound 11 (by decide), ?_⟩
+  intro hm
+  have h23 : 23 ∣ 2 ^ 11 - 1 := ⟨89, by decide⟩
+  have hc := hm.2 23 h23
+  omega
+
+/-- 11. Abundant number `12` (`σ(12) = 28 ≠ 24`) and deficient `15` are NOT perfect. -/
+public theorem adv_non_perfect_refuted :
+    ¬ IsPerfect 12 ∧ ¬ IsPerfect 15 := by
+  unfold IsPerfect
+  exact ⟨by decide, by decide⟩
+
+/-- 12. Twin-prime mod-6 theorem strictly requires `p ≥ 4` (`p = 3` has `3 % 6 = 3 ≠ 5`). -/
+public theorem adv_twin_prime_mod6_needs_ge_4 :
+    IsPrime 3 ∧ IsPrime 5 ∧ 3 % 6 ≠ 5 := by
+  exact ⟨isPrimeBool_sound 3 (by decide), isPrimeBool_sound 5 (by decide), by decide⟩
+
+/-- 13. Ramsey bound `R(3, 3) ≤ 5` is FALSE (refuted directly by `ramsey_R33_lower`). -/
+public theorem adv_ramsey_R33_not_le_5 :
+    ¬ (∀ c : Fin 5 → Fin 5 → Bool, (∀ i j, c i j = c j i) → HasMonoTriangle c) := by
+  intro hall
+  exact ramsey_R33_lower.2 (hall c5Color ramsey_R33_lower.1)
+
+/-- 14. Binary Goldbach fails on odd integer `11` (requires even hypothesis). -/
+public theorem adv_goldbach_requires_even :
+    ¬ (∀ n : Nat, 4 ≤ n → ∃ p q : Nat, IsPrime p ∧ IsPrime q ∧ p + q = n) := by
+  intro hall
+  exact goldbach_binary_fails_at_11 (hall 11 (by decide))
 
 end FormalAtlas.Adversarial

@@ -1,4 +1,4 @@
-# The Unsolved Mathematics Atlas (`v0.4.0`) — Full LLM Context (`llms-full.txt`)
+# The Unsolved Mathematics Atlas (`v0.5.0`) — Full LLM Context (`llms-full.txt`)
 
 > Canonical agent rules: `AGENTS.md`. Concise index: `llms.txt`.
 > Author: Alexander S. Donahue (ORCID `0009-0006-8168-9648`, independent researcher).
@@ -12,8 +12,8 @@
 2. **106 structured 7-section dossiers** (`problems/<slug>/{README,history,originator,approaches,attempts,papers,mathematicians,status}.md`) plus 106 AI-assisted working syntheses (`meta-analyses/<slug>.md`).
 3. A **deterministic BM25 retrieval corpus** (`rag/corpus.jsonl`, 3,763 unique chunks, zero optional tokenizer drift).
 4. A **primary-source citation & retraction audit** (`scripts/verify_citations.py`, `data/citation-verification-log.json`, `scripts/check_retractions.py`, `data/retraction-audit.json`): 554 identifier-bearing rows checked live against `export.arxiv.org` and `api.crossref.org` (`network_error: 0`), yielding **445 API-verified identifiers** and **109 invalid/hallucinated identifiers stripped** honestly to `—` / `needs-verification`; all **220 verified DOIs** checked against Crossref + DataCite retraction notices (**0 retracted**, **3 publisher errata/corrections** logged, `network_errors: 0`).
-5. A **standalone, zero-Mathlib Lean 4.35.0 formal core** (`lean/`) proving **22 headline structural theorems** across 4 open-problem programs (Collatz 11, Erdős–Straus 3, Lonely Runner 4, Brocard 4), paired with **6 concrete non-vacuity witnesses** (`lean/NonVacuity.lean`) and **8 explicit adversarial false-variant refutations** (`lean/Adversarial.lean`) = **36 audited declarations**, with **0 `sorry`, 0 `admit`, 0 `native_decide`, 0 custom `axiom`**, axioms strictly within `{propext, Classical.choice, Quot.sound}` (`lean/VerifyAxioms.lean`, mirrored verbatim in `README.md`), challenge/solution comparator (`lean/Challenge.lean`, `lean/comparator.json`), human-auditable statement fidelity (`lean/STATEMENT_FIDELITY.md`), and full 6-kernel replay (`lean/six_kernel_audit.txt`).
-6. A **publication-grade AMS-LaTeX white paper** (`paper/Donahue_2026_unsolved_mathematics_atlas.tex` → `paper/Donahue_2026_unsolved_mathematics_atlas.pdf` + clean-room-verified `paper/arxiv_submission.tar.gz`) and **interactive Lean Proof Blueprint** (`_site/blueprint.html`).
+5. A **standalone, zero-Mathlib Lean 4.35.0 formal core** (`lean/`) proving **45 headline structural theorems** across **8 open-problem domains** (Collatz 14, Erdős–Straus 5, Lonely Runner 7, Brocard 7, Primes/Twins 4, Goldbach 3, Odd Perfect/Mersenne 3, Ramsey $R(3,3)=6$ 2), paired with **10 concrete non-vacuity witnesses** (`lean/NonVacuity.lean`) and **14 explicit adversarial false-variant refutations** (`lean/Adversarial.lean`) = **69 audited declarations**, with **0 `sorry`, 0 `admit`, 0 `native_decide`, 0 custom `axiom`**, axioms strictly within `{propext, Classical.choice, Quot.sound}` (`lean/VerifyAxioms.lean`, mirrored verbatim in `README.md`), challenge/solution comparator (`lean/Challenge.lean`, `lean/comparator.json`), human-auditable statement fidelity (`lean/STATEMENT_FIDELITY.md`), and full 6-kernel replay (`lean/six_kernel_audit.txt`).
+6. A **publication-grade 10-page AMS-LaTeX white paper** (`paper/Donahue_2026_unsolved_mathematics_atlas.tex` → `paper/Donahue_2026_unsolved_mathematics_atlas.pdf` + clean-room-verified `paper/arxiv_submission.tar.gz`), **FAIR metadata** (`ro-crate-metadata.json`, `croissant.json`), and live GitHub Pages **Atlas Explorer & 8-Domain Proof Blueprint** (`https://0thernes.github.io/unsolved-mathematics/`).
 
 **Hard Epistemic Invariants:**
 - Never claim any open conjecture is solved without primary-source mathematical consensus.
@@ -24,14 +24,15 @@
 
 ## 2. Canonical Directory Map
 
-- `VERSION` — single version source (`0.4.0`)
+- `VERSION` — single version source (`0.5.0`)
+- `ro-crate-metadata.json`, `croissant.json` — FAIR RO-Crate 1.1 & MLCommons Croissant 1.0 descriptors
 - `data/problems.yaml` — sole source of truth for the 106 problems
 - `schema/problem.schema.json` — mandatory JSON Schema enforced by `scripts/validate.py`
 - `data/problems.json` — deterministically generated machine registry (`CURRENT_YEAR = 2026`, tie-break `(-css, slug)`)
 - `data/citation-verification-log.json` — full API verification log for all 554 checked identifiers
 - `data/retraction-audit.json` — Crossref + DataCite retraction audit across all 220 verified DOIs
 - `data/MANIFEST.sha256` — SHA-256 tamper-evidence manifest (`scripts/build_data_manifest.py --check`)
-- `lean/` — standalone Lean 4.35.0 formal core (`FormalAtlas/{Defs,Collatz,ErdosStraus,LonelyRunner,Brocard}.lean`, `Challenge.lean`, `Solution.lean`, `NonVacuity.lean`, `Adversarial.lean`, `VerifyAxioms.lean`, `comparator.json`, `STATEMENT_FIDELITY.md`, `six_kernel_audit.txt`)
+- `lean/` — standalone 8-domain Lean 4.35.0 formal core (`FormalAtlas/{Defs,Collatz,ErdosStraus,LonelyRunner,Brocard,Primes,Goldbach,PerfectNumbers,Ramsey}.lean`, `Challenge.lean`, `Solution.lean`, `NonVacuity.lean`, `Adversarial.lean`, `VerifyAxioms.lean`, `comparator.json`, `STATEMENT_FIDELITY.md`, `six_kernel_audit.txt`)
 - `paper/` — AMS-LaTeX white paper (`Donahue_2026_unsolved_mathematics_atlas.tex`, `references.bib`, compiled PDF, `arxiv_submission.tar.gz`)
 - `scripts/` — `generate.py`, `validate.py`, `check_dossiers.py`, `check_papers.py`, `proof_claim_sweep.py`, `verify_citations.py`, `check_retractions.py`, `check_readme_axioms.py`, `build_site.py`, `build_indexes.py`, `build_review_register.py`, `build_data_manifest.py`, `Audit-Repo.ps1`, `audit-repo.sh`
 - `rag/` — `build_corpus.py`, `retriever.py`, `corpus.jsonl`

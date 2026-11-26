@@ -305,4 +305,46 @@ public theorem lonely_runner_speed_scaling (m p q v k : Int)
     rw [Int.mul_assoc, Int.sub_mul] at h2k
     exact h2k
 
+/-- **Time-periodicity mod 1:** shifting `p/q` by `+1` preserves `FarEnough`. -/
+public theorem lonely_runner_period_shift (m p q v : Int) (h : FarEnough m p q v) :
+    FarEnough m (p + q) q v := by
+  unfold FarEnough at h ⊢
+  have hmod : ((p + q) * v) % q = (p * v) % q := by
+    rw [Int.add_mul, Int.add_comm, Int.mul_add_emod_self_left]
+  rw [hmod]
+  exact h
+
+/-- **Time-reversal symmetry (`t ↦ -t`):** `FarEnough m p q v` implies `FarEnough m (-p) q v`. -/
+public theorem lonely_runner_neg_time (m p q v : Int) (hq : 0 < q) (h : FarEnough m p q v) :
+    FarEnough m (-p) q v := by
+  unfold FarEnough at h ⊢
+  have ⟨h1, h2⟩ := h
+  have hr0 : 0 ≤ (p * v) % q := Int.emod_nonneg _ (by omega)
+  have hrq : (p * v) % q < q := Int.emod_lt_of_pos _ hq
+  by_cases hz : (p * v) % q = 0
+  · rw [hz] at h1; omega
+  · have hneg : ((-p) * v) % q = q - (p * v) % q := by
+      have hde := Int.mul_ediv_add_emod (p * v) q
+      have hrew : (-p) * v = q * (-( (p * v) / q ) - 1) + (q - (p * v) % q) := by
+        rw [Int.neg_mul, Int.mul_sub, Int.mul_neg, Int.mul_one]
+        omega
+      rw [hrew, Int.mul_add_emod_self_left]
+      exact Int.emod_eq_of_lt (by omega) (by omega)
+    rw [hneg]
+    dsimp only
+    have hsub : q - (q - (p * v) % q) = (p * v) % q := by omega
+    rw [hsub]
+    exact ⟨h2, h1⟩
+
+/-- **Lonely Runner `n = 3` (4 runners) across all non-divisible-by-4 speed triples:**
+    Whenever `v₁, v₂, v₃ > 0` have none divisible by `4` (covering 7 of 8 mod-4 parity classes),
+    time `t = 1/4` achieves exact circular separation `≥ 1/4` for all three moving runners. -/
+public theorem lonely_runner_n3_nondiv4 (v1 v2 v3 : Int)
+    (h1 : v1 % 4 ≠ 0) (h2 : v2 % 4 ≠ 0) (h3 : v3 % 4 ≠ 0) :
+    ∃ p q : Int, 0 < q ∧ FarEnough 4 p q v1 ∧ FarEnough 4 p q v2 ∧ FarEnough 4 p q v3 := by
+  refine ⟨1, 4, by omega, ?_, ?_, ?_⟩
+  · unfold FarEnough; rw [Int.one_mul]; have := Int.emod_nonneg v1 (by omega : (4 : Int) ≠ 0); have := Int.emod_lt_of_pos v1 (by omega : (0 : Int) < 4); omega
+  · unfold FarEnough; rw [Int.one_mul]; have := Int.emod_nonneg v2 (by omega : (4 : Int) ≠ 0); have := Int.emod_lt_of_pos v2 (by omega : (0 : Int) < 4); omega
+  · unfold FarEnough; rw [Int.one_mul]; have := Int.emod_nonneg v3 (by omega : (4 : Int) ≠ 0); have := Int.emod_lt_of_pos v3 (by omega : (0 : Int) < 4); omega
+
 end FormalAtlas

@@ -102,13 +102,14 @@ reader; each points at the problems where the idea is load-bearing.
 
 ---
 
-## Epistemic, Formal Verification & Build Standard Terms (`v0.3.0`)
+## Epistemic, Formal Verification & Build Standard Terms (`v0.5.0`)
 
 - **Composite Severity Score (CSS):** Deterministic 0–100 editorial ranking heuristic (`docs/methodology/RANKING.md`, pinned `CURRENT_YEAR = 2026`, tie-break `(-css, slug)`).
-- **Six-Class Finding Taxonomy:** Build Standard v1.1.0 classification partitioning findings into `bug`, `error`, `issue`, `problem`, `dilemma`, and `conflict`.
-- **Multi-Kernel Verification:** Re-checking exported Lean 4.35.0 proof terms across independent type checkers (`lean`, `leanchecker-paranoid`, `lean4lean`, `nanoda_bin`, `con-leche`, `con-ron`) to minimize single-kernel trust risk.
-- **Statement Fidelity:** Explicit human-auditable correspondence between textbook mathematics and formal Lean definitions/types (`formal/STATEMENT_FIDELITY.md`), preventing hidden vacuity or goalpost-moving.
-- **Non-Vacuity Witness:** Concrete computable Lean construction (`formal/NonVacuity.lean`) proving every universally quantified theorem's hypothesis set is inhabited.
-- **Barrier Meta-Theorem:** Formal proof that an entire class of proof methods cannot resolve a conjecture (e.g., $\varepsilon$-invariance in `formal/FormalAtlas/Collatz.lean` showing any argument invariant under $3n+1 \leftrightarrow 3n-1$ fails).
-- **Primary-Source Citation Verification:** Live API validation of arXiv IDs (`export.arxiv.org`) and DOIs (`api.crossref.org`) logged in `data/citation-verification-log.json` (`scripts/verify_citations.py`).
+- **Ten-Class Finding Taxonomy:** Build Standard `v1.2.0` classification partitioning findings into `bug`, `error`, `issue`, `problem`, `concern`, `dilemma`, `conflict`, `gap`, `hole`, and `blindspot`.
+- **Multi-Kernel Verification:** Re-checking exported Lean 4.35.0 proof terms across six independent type checkers (`lean`, `leanchecker-paranoid`, `lean4lean`, `nanoda_bin`, `con-leche`, `con-ron`) to minimize single-kernel trust risk.
+- **Statement Fidelity:** Explicit human-auditable correspondence between textbook mathematics and formal Lean definitions/types (`lean/STATEMENT_FIDELITY.md`), preventing hidden vacuity or goalpost-moving.
+- **Non-Vacuity Witness:** Concrete computable Lean construction (`lean/NonVacuity.lean`) proving every universally quantified theorem's hypothesis set is inhabited.
+- **Adversarial False-Variant Refutation:** Explicit Lean proof of `¬ P` (`lean/Adversarial.lean`) demonstrating that deliberately weakened or overclaimed variants are provably refuted under our definitions.
+- **Barrier Meta-Theorem:** Formal proof that an entire class of proof methods cannot resolve a conjecture (e.g., $\varepsilon$-invariance in `lean/FormalAtlas/Collatz.lean` showing any argument invariant under $3n+1 \leftrightarrow 3n-1$ fails).
+- **Primary-Source Citation & Retraction Verification:** Live API validation of arXiv IDs (`export.arxiv.org`) and DOIs (`api.crossref.org`, `api.datacite.org`) logged in `data/citation-verification-log.json` (`scripts/verify_citations.py`) and `data/retraction-audit.json` (`scripts/check_retractions.py`).
 - **SLSA Provenance Attestation:** Cryptographically signed release provenance generated via `actions/attest-build-provenance@v2` linking tagged releases and `SHA256SUMS` to immutable GitHub Actions runs.

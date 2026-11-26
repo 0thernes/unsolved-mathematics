@@ -1,6 +1,6 @@
 {
   "title": "The Unsolved Mathematics Atlas",
-  "description": "A reproducible, ranked, research-grade dossier of 106 open mathematical problems across 38 fields, paired with a standalone multi-kernel Lean 4.35.0 formal verification core, automated primary-source citation auditing, and a deterministic RAG corpus. Independent research; not peer-reviewed.",
+  "description": "A reproducible, ranked, FAIR-indexed research dossier of 106 open mathematical problems across 38 fields, paired with a standalone eight-domain, six-kernel Lean 4.35.0 formal verification core (45 headline theorems, 10 witnesses, 14 adversarial refutations), automated primary-source citation and Crossref/DataCite retraction auditing, RO-Crate 1.1 and Croissant 1.0 metadata, a compiled AMS-LaTeX white paper, and a deterministic RAG corpus. Independent research; not peer-reviewed.",
   "upload_type": "dataset",
   "creators": [
     {

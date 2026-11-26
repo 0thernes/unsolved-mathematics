@@ -1,0 +1,102 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "data": { "@id": "cr:data", "@type": "@json" },
+    "dataType": { "@id": "cr:dataType", "@type": "@vocab" },
+    "dct": "http://purl.org/dc/terms/",
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "jsonPath": "cr:jsonPath",
+    "recordSet": "cr:recordSet",
+    "sc": "https://schema.org/",
+    "source": "cr:source"
+  },
+  "@type": "sc:Dataset",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "name": "The Unsolved Mathematics Atlas",
+  "version": "0.5.0",
+  "datePublished": "2026-11-25",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://github.com/0thernes/unsolved-mathematics",
+  "citeAs": "Donahue, Alexander S. (2026). The Unsolved Mathematics Atlas (v0.5.0). https://github.com/0thernes/unsolved-mathematics",
+  "creator": [
+    {
+      "@type": "Person",
+      "name": "Alexander S. Donahue",
+      "sameAs": "https://orcid.org/0009-0006-8168-9648"
+    }
+  ],
+  "description": "Audited, ranked dataset of 106 unsolved mathematical problems across 38 fields paired with 3,763 deterministic RAG text chunks, live arXiv/Crossref/DataCite citation and retraction audit logs, a 6-kernel Lean 4.35.0 formal core (45 headline theorems across 8 domains), and a compiled AMS-LaTeX white paper.",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "problems-json",
+      "name": "data/problems.json",
+      "contentUrl": "data/problems.json",
+      "encodingFormat": "application/json",
+      "description": "Ranked canonical registry of 106 mathematical problems with deterministic Composite Severity Scores."
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "rag-corpus-jsonl",
+      "name": "rag/corpus.jsonl",
+      "contentUrl": "rag/corpus.jsonl",
+      "encodingFormat": "application/x-ndjson",
+      "description": "3,763 globally uniquely indexed text chunks across all 106 seven-section mathematical dossiers."
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "citation-log-json",
+      "name": "data/citation-verification-log.json",
+      "contentUrl": "data/citation-verification-log.json",
+      "encodingFormat": "application/json",
+      "description": "Primary-source API verification log across 554 identifier-bearing bibliography rows."
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "retraction-audit-json",
+      "name": "data/retraction-audit.json",
+      "contentUrl": "data/retraction-audit.json",
+      "encodingFormat": "application/json",
+      "description": "Crossref and DataCite retraction/erratum audit log across all 220 verified DOIs."
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "problems",
+      "name": "problems",
+      "description": "106 ranked mathematical problems with metadata, status, and Composite Severity Score.",
+      "field": [
+        { "@type": "cr:Field", "@id": "problems/rank", "name": "rank", "dataType": "sc:Integer", "source": { "fileObject": { "@id": "problems-json" }, "extract": { "jsonPath": "$.problems[*].rank" } } },
+        { "@type": "cr:Field", "@id": "problems/slug", "name": "slug", "dataType": "sc:Text", "source": { "fileObject": { "@id": "problems-json" }, "extract": { "jsonPath": "$.problems[*].slug" } } },
+        { "@type": "cr:Field", "@id": "problems/title", "name": "title", "dataType": "sc:Text", "source": { "fileObject": { "@id": "problems-json" }, "extract": { "jsonPath": "$.problems[*].title" } } },
+        { "@type": "cr:Field", "@id": "problems/field", "name": "field", "dataType": "sc:Text", "source": { "fileObject": { "@id": "problems-json" }, "extract": { "jsonPath": "$.problems[*].field" } } },
+        { "@type": "cr:Field", "@id": "problems/year_posed", "name": "year_posed", "dataType": "sc:Integer", "source": { "fileObject": { "@id": "problems-json" }, "extract": { "jsonPath": "$.problems[*].year_posed" } } },
+        { "@type": "cr:Field", "@id": "problems/status", "name": "status", "dataType": "sc:Text", "source": { "fileObject": { "@id": "problems-json" }, "extract": { "jsonPath": "$.problems[*].status" } } },
+        { "@type": "cr:Field", "@id": "problems/css", "name": "css", "dataType": "sc:Float", "source": { "fileObject": { "@id": "problems-json" }, "extract": { "jsonPath": "$.problems[*].css" } } }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "rag_chunks",
+      "name": "rag_chunks",
+      "description": "3,763 deterministic RAG text chunks with unique IDs and token counts.",
+      "field": [
+        { "@type": "cr:Field", "@id": "rag_chunks/id", "name": "id", "dataType": "sc:Text", "source": { "fileObject": { "@id": "rag-corpus-jsonl" }, "extract": { "column": "id" } } },
+        { "@type": "cr:Field", "@id": "rag_chunks/slug", "name": "slug", "dataType": "sc:Text", "source": { "fileObject": { "@id": "rag-corpus-jsonl" }, "extract": { "column": "slug" } } },
+        { "@type": "cr:Field", "@id": "rag_chunks/section", "name": "section", "dataType": "sc:Text", "source": { "fileObject": { "@id": "rag-corpus-jsonl" }, "extract": { "column": "section" } } },
+        { "@type": "cr:Field", "@id": "rag_chunks/text", "name": "text", "dataType": "sc:Text", "source": { "fileObject": { "@id": "rag-corpus-jsonl" }, "extract": { "column": "text" } } },
+        { "@type": "cr:Field", "@id": "rag_chunks/tokens", "name": "tokens", "dataType": "sc:Integer", "source": { "fileObject": { "@id": "rag-corpus-jsonl" }, "extract": { "column": "tokens" } } }
+      ]
+    }
+  ]
+}

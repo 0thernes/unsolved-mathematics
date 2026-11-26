@@ -1,0 +1,76 @@
+{
+  "@context": "https://w3id.org/ro/crate/1.1/context",
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": { "@id": "https://w3id.org/ro/crate/1.1" },
+      "about": { "@id": "./" }
+    },
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "name": "The Unsolved Mathematics Atlas",
+      "version": "0.5.0",
+      "datePublished": "2026-11-25",
+      "description": "An audited, ranked, research-grade atlas of 106 open mathematical problems across 38 fields, paired with a standalone zero-Mathlib Lean 4.35.0 6-kernel formal core (45 headline theorems + 24 non-vacuity/adversarial checks across 8 open-problem domains), live primary-source citation and Crossref/DataCite retraction audits, an offline deterministic BM25 RAG corpus, an interactive Proof Blueprint, and a publication-grade AMS-LaTeX white paper.",
+      "license": { "@id": "https://creativecommons.org/licenses/by/4.0/" },
+      "author": { "@id": "https://orcid.org/0009-0006-8168-9648" },
+      "url": "https://github.com/0thernes/unsolved-mathematics",
+      "keywords": [
+        "unsolved mathematical problems",
+        "Lean 4",
+        "multi-kernel verification",
+        "Collatz conjecture",
+        "Erdos-Straus conjecture",
+        "Lonely Runner conjecture",
+        "Brocard problem",
+        "Goldbach conjecture",
+        "Ramsey theory",
+        "citation verification"
+      ],
+      "hasPart": [
+        { "@id": "data/problems.yaml" },
+        { "@id": "data/problems.json" },
+        { "@id": "data/citation-verification-log.json" },
+        { "@id": "data/retraction-audit.json" },
+        { "@id": "data/MANIFEST.sha256" },
+        { "@id": "rag/corpus.jsonl" },
+        { "@id": "lean/Challenge.lean" },
+        { "@id": "lean/Solution.lean" },
+        { "@id": "lean/NonVacuity.lean" },
+        { "@id": "lean/Adversarial.lean" },
+        { "@id": "lean/VerifyAxioms.lean" },
+        { "@id": "lean/six_kernel_audit.txt" },
+        { "@id": "paper/Donahue_2026_unsolved_mathematics_atlas.pdf" },
+        { "@id": "paper/arxiv_submission.tar.gz" }
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0009-0006-8168-9648",
+      "@type": "Person",
+      "name": "Alexander S. Donahue",
+      "email": "0_0@0thernes.art",
+      "url": "https://github.com/0thernes"
+    },
+    {
+      "@id": "https://creativecommons.org/licenses/by/4.0/",
+      "@type": "CreativeWork",
+      "name": "Creative Commons Attribution 4.0 International"
+    },
+    { "@id": "data/problems.yaml", "@type": "File", "encodingFormat": "application/yaml", "name": "Canonical 106-Problem YAML Registry" },
+    { "@id": "data/problems.json", "@type": "File", "encodingFormat": "application/json", "name": "Generated Machine-Readable Ranked Registry" },
+    { "@id": "data/citation-verification-log.json", "@type": "File", "encodingFormat": "application/json", "name": "Live arXiv + Crossref Citation Verification Log (554 records)" },
+    { "@id": "data/retraction-audit.json", "@type": "File", "encodingFormat": "application/json", "name": "Live Crossref + DataCite Retraction Audit Log (220 DOIs)" },
+    { "@id": "data/MANIFEST.sha256", "@type": "File", "encodingFormat": "text/plain", "name": "SHA-256 Tamper-Evidence Manifest" },
+    { "@id": "rag/corpus.jsonl", "@type": "File", "encodingFormat": "application/x-ndjson", "name": "Deterministic BM25 RAG Corpus (3,763 unique chunks)" },
+    { "@id": "lean/Challenge.lean", "@type": "File", "encodingFormat": "text/plain", "name": "Isolated 45-Theorem Lean 4.35.0 Palomar Specification" },
+    { "@id": "lean/Solution.lean", "@type": "File", "encodingFormat": "text/plain", "name": "Zero-Sorry Lean 4.35.0 Proofs (45 Headline Theorems)" },
+    { "@id": "lean/NonVacuity.lean", "@type": "File", "encodingFormat": "text/plain", "name": "10 Concrete Non-Vacuity Witnesses" },
+    { "@id": "lean/Adversarial.lean", "@type": "File", "encodingFormat": "text/plain", "name": "14 Explicit Adversarial False-Variant Refutations" },
+    { "@id": "lean/VerifyAxioms.lean", "@type": "File", "encodingFormat": "text/plain", "name": "69-Declaration #print axioms Audit" },
+    { "@id": "lean/six_kernel_audit.txt", "@type": "File", "encodingFormat": "text/plain", "name": "6-Kernel Independent Lean 4.35.0 Replay Log" },
+    { "@id": "paper/Donahue_2026_unsolved_mathematics_atlas.pdf", "@type": "File", "encodingFormat": "application/pdf", "name": "Compiled AMS-LaTeX Technical White Paper" },
+    { "@id": "paper/arxiv_submission.tar.gz", "@type": "File", "encodingFormat": "application/gzip", "name": "Clean-Room Verified arXiv LaTeX Source Bundle" }
+  ]
+}

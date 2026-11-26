@@ -1,9 +1,15 @@
-name: Publish Atlas (GitHub Pages)
-
-# Publishes the searchable static HTML Atlas to GitHub Pages.
-# Trigger manually via workflow_dispatch (or enable push trigger once Pages is activated in Settings).
+name: Publish Atlas & Lean Proof Blueprint (GitHub Pages)
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - "VERSION"
+      - "data/**"
+      - "lean/**"
+      - "paper/**"
+      - "scripts/build_site.py"
+      - ".github/workflows/pages.yml"
   workflow_dispatch:
 
 permissions:
@@ -26,7 +32,7 @@ jobs:
           cache: pip
           cache-dependency-path: requirements-lock.txt
       - run: python -m pip install -r requirements-lock.txt
-      - name: Verify views and build static HTML Atlas site
+      - name: Verify views and build static HTML Atlas + Lean Proof Blueprint
         run: |
           python scripts/generate.py --check
           python scripts/build_site.py

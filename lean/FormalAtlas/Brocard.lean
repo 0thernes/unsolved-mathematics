@@ -101,4 +101,46 @@ public theorem brocard_exhaustive_le_15 (n m : Nat) (hn : n ≤ 15) (h : IsBroca
     | 15 => exfalso; exact no_square_between 1143535 (fact 15 + 1) m (by decide) (by decide) h
     | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | _ + 16 => omega
 
+theorem fact_mod_zero_of_ge (b : Nat) (k : Nat) (hkb : fact k % b = 0) :
+    ∀ n : Nat, k ≤ n → fact n % b = 0 := by
+  intro n hn
+  induction n with
+  | zero =>
+    have : k = 0 := by omega
+    subst this; exact hkb
+  | succ m ih =>
+    by_cases hkm : k = m + 1
+    · subst hkm; exact hkb
+    · have h0 := ih (by omega)
+      simp only [fact]
+      rw [Nat.mul_mod, h0, Nat.mul_zero, Nat.zero_mod]
+
+/-- **Brocard Mod-3 Non-Divisibility:** for every `n ≥ 3`, `(n! + 1) % 3 = 1`. -/
+public theorem brocard_not_div3_ge_3 (n : Nat) (hn : 3 ≤ n) :
+    (fact n + 1) % 3 = 1 := by
+  have h0 := fact_mod_zero_of_ge 3 3 (by decide) n hn
+  omega
+
+/-- **Brocard Last-Digit Invariant:** for every `n ≥ 5`, `(n! + 1) % 10 = 1`. -/
+public theorem brocard_mod10_ge_5 (n : Nat) (hn : 5 ≤ n) :
+    (fact n + 1) % 10 = 1 := by
+  have h0 := fact_mod_zero_of_ge 10 5 (by decide) n hn
+  omega
+
+/-- **Exhaustive Classification of Brocard Solutions through `n ≤ 20`:**
+    Extends `brocard_exhaustive_le_15` through `20! + 1 = 2,432,902,008,176,640,001`
+    via kernel-checked square bracketing (zero `native_decide`). -/
+public theorem brocard_exhaustive_le_20 (n m : Nat) (hn : n ≤ 20) (h : IsBrocardSol n m) :
+    (n = 4 ∧ m = 5) ∨ (n = 5 ∧ m = 11) ∨ (n = 7 ∧ m = 71) := by
+  by_cases h15 : n ≤ 15
+  · exact brocard_exhaustive_le_15 n m h15 h
+  · unfold IsBrocardSol at h
+    match n with
+    | 16 => exfalso; exact no_square_between 4574143 (fact 16 + 1) m (by decide) (by decide) h
+    | 17 => exfalso; exact no_square_between 18859677 (fact 17 + 1) m (by decide) (by decide) h
+    | 18 => exfalso; exact no_square_between 80014834 (fact 18 + 1) m (by decide) (by decide) h
+    | 19 => exfalso; exact no_square_between 348776576 (fact 19 + 1) m (by decide) (by decide) h
+    | 20 => exfalso; exact no_square_between 1559776268 (fact 20 + 1) m (by decide) (by decide) h
+    | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | _ + 21 => omega
+
 end FormalAtlas

@@ -91,7 +91,7 @@ items:
   B19: {status: n/a, note: "Build and validation pipeline is single-threaded deterministic"}
   B20: {status: done, note: "Exact integer/Fraction arithmetic in formal proofs & oracles; bounded IEEE-754 CSS rounding tested in tests/test_properties.py"}
   B21: {status: n/a, note: "Not a networked runtime service"}
-  B22: {status: done, note: "Lean 4.35.0 formal core in lean/ (22 theorems, 6 non-vacuity witnesses, 8 adversarial refutations, 6-kernel replay)"}
+  B22: {status: done, note: "Lean 4.35.0 formal core in lean/ (45 theorems, 10 non-vacuity witnesses, 14 adversarial refutations across 8 domains, 6-kernel replay)"}
   B23: {status: n/a, note: "Pure mathematical theorem proving in Lean 4; no TLA+/Alloy concurrent state-machine protocol"}
   B24: {status: done, note: "Lean 4.35.0 dependently typed pure functional core (lean/) replayed across 6 independent kernels"}
   B25: {status: n/a, note: "No C/Rust systems implementation requiring Kani/CBMC bounded model checking"}

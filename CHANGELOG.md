@@ -5,6 +5,27 @@ Format follows [Keep a Changelog](https://keepachangelog.com/); versions follow
 [SemVer](https://semver.org/) on the *structure/schema* (content grows
 continuously between structural versions).
 
+## [0.5.0] — 2026-11-25
+
+### Added (Cycle 4 Deep Refinement · 8-Domain Lean Core · FAIR Metadata · 10-Page Monograph)
+- **Eight-Domain, 69-Declaration Zero-Mathlib Lean 4.35.0 Formal Core (`lean/`):** Doubled headline theorems from `22 → 45` (+ `10` non-vacuity witnesses + `14` adversarial false-variant refutations = **69 audited declarations**, zero `sorry`/`admit`/`native_decide`/custom `axiom`, axioms strictly within `{propext, Classical.choice, Quot.sound}`, 12 requiring zero axioms; all 69 pass 6 independent Lean 4.35.0 kernels + `lake comparator`):
+  - **Collatz (+3 → 14 thms):** `thm_collatz_zero_fixed_point`, `thm_collatz_intercept_nonneg`, `thm_collatz_parity_word_length`.
+  - **Erdős–Straus (+2 → 5 thms):** `thm_erdos_straus_symmetry` and `thm_erdos_straus_all_le_30`.
+  - **Lonely Runner (+3 → 7 thms):** `thm_lonely_runner_period_shift`, `thm_lonely_runner_neg_time`, and `thm_lonely_runner_n3_nondiv4` (4 runners across all `7/8` mod-4 residue combinations with $4 \nmid v_i$).
+  - **Brocard (+3 → 7 thms):** `thm_brocard_not_div3_ge_3`, `thm_brocard_mod10_ge_5`, and `thm_brocard_exhaustive_le_20` (through $20!+1 = 2{,}432{,}902{,}008{,}176{,}640{,}001$).
+  - **NEW `FormalAtlas/Primes.lean` (4 thms):** Euclid's infinitude of primes, arbitrary prime gaps via $(k+1)!+2$, oddness of primes $\ge 3$, and twin-prime mod-6 rigidity ($p \equiv 5 \pmod 6$ for $p \ge 4$).
+  - **NEW `FormalAtlas/Goldbach.lean` (3 thms):** Certified prime-pair decomposition for all even $4 \le n \le 100$, odd binary prime-sum obstruction ($p=2 \lor q=2$), and binary Goldbach failure at $11$.
+  - **NEW `FormalAtlas/PerfectNumbers.lean` (3 thms):** Pure algebraic factorization proof of Mersenne prime exponent necessity ($2^a - 1 \mid 2^{ab} - 1$), first four even perfect numbers $\{6, 28, 496, 8128\}$, and exhaustive odd-perfect exclusion $n \le 100$.
+  - **NEW `FormalAtlas/Ramsey.lean` (2 thms):** Exact first-principles determination of $R(3,3) = 6$ ($K_6$ pigeonhole upper bound + explicit symmetric $C_5$ coloring on $K_5$).
+- **Expanded 10-Page Publication-Grade AMS-LaTeX White Paper (`paper/`):** Upgraded `Donahue_2026_unsolved_mathematics_atlas.tex` (+4 verified references in `references.bib`) with the Top-15 ranked CSS table, 15-field empirical citation-corruption table + TikZ horizontal bar chart, 8-domain 6-kernel TikZ architecture DAG, all 45 formal theorems, Definition & Kernel tables, synchronized `unsolved-problems-mega-atlas v2.4.0` Table 6, and 10-class hardening Table 7 — compiled with **0 warnings / 0 overfull hboxes**, byte-identical clean-room arXiv tarball compile, and full page-by-page visual PDF inspection.
+- **FAIR Dataset Descriptors (`ro-crate-metadata.json`, `croissant.json`):** Added RO-Crate 1.1 and MLCommons Croissant 1.0 JSON-LD descriptors, tracked in `data/MANIFEST.sha256` (40 tracked files) and validated in pytest.
+- **Live GitHub Pages Auto-Deploy (`.github/workflows/pages.yml`):** Enabled automatic deployment of `_site/index.html` and the upgraded 8-domain, 45-theorem `_site/blueprint.html` on every push to `main`.
+- **Cross-Atlas Synchronization (`docs/CROSS_ATLAS_AUDIT_2026-11-25.md`):** Synchronized verbatim with `unsolved-problems-mega-atlas v2.4.0` (1,900 macro problems, 92 Lean invariants, `0/1,900` macro retirements across all 7 companion `0TH-2026-004..012` preprints).
+
+### Fixed (Cycle 4 Hostile Sweep)
+- **C4-BUG-01 (`problems/collatz-conjecture/experiments/odd_unit_lock_bridge_refinement.py`):** Fixed real Python `NameError` (`all_die` undefined in `classify_refinement()`, `interpretation` undefined in `run()`); added permanent `ruff --select E9,F63,F7,F82` guard in CI and pytest.
+- **C4-ERR-01 (`README.md`, `SECURITY.md`, `docs/{operations,threat-model,glossary}.md`, `docs/adr/0002-multi-kernel-lean-core.md`):** Eliminated all 18 stale pre-migration `formal/` and `Build Standard v1.1.0` references; added permanent stale-reference regression test in pytest.
+
 ## [0.4.0] — 2026-11-25
 
 ### Added (Three-Cycle Hardening Audit · Build Standard v1.2.0 · Playbook v1.3)

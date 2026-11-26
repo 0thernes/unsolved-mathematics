@@ -1,28 +1,26 @@
 module
 
+-- SPDX-License-Identifier: MIT
 public import FormalAtlas
 
 /-!
-# NonVacuity — Concrete Witnesses Defeating Vacuous-Hypothesis Objections
+# NonVacuity — Concrete Witnesses Defeating Vacuous-Hypothesis Objections (`v0.5.0`)
 
-Per the Defensible Independent AI Research Playbook (§1 & Gold Checklist #6, #9),
-every hypothesis bundle in `Challenge.lean` is paired with an explicit concrete
-non-vacuity witness plus negative sanity checks.
+Per the Defensible Independent AI Research Playbook v1.3, every conditional hypothesis
+bundle in `Challenge.lean` across all 8 domains is paired with an explicit concrete
+non-vacuity witness (10 witnesses total).
 -/
 
 namespace FormalAtlas.NonVacuity
 
-/-- Witness for `collatz_descent_certificate_sound`: `d = 2, r = 1, q = 1`
-    satisfies `3^1 < 2^2` and `T^2(1) - 1 = 0 < (4 - 3) * 1`, certifying `T^2(5) = 4 < 5`. -/
+/-- Witness 1: Collatz descent certificate (`d=2, r=1, q=1 => T²(5) = 4 < 5`). -/
 public theorem witness_descent_certificate :
     (3 : Int) ^ (oddCount T 2 1) < (2 : Int) ^ 2 ∧
     iter T 2 1 - 1 < ((2 : Int) ^ 2 - (3 : Int) ^ (oddCount T 2 1)) * 1 ∧
     iter T 2 ((2 : Int) ^ 2 * 1 + 1) = 4 := by
   exact ⟨by decide, by decide, by decide⟩
 
-/-- Witness for `collatz_positivity_localization`: the length-3 word `[true, true, false]`
-    is supercritical (`2^3 = 8 < 9 = 3^2`) with exact intercept `c = 5 ≥ 1 = 9 - 8`,
-    matching the negative integer cycle `ρ = -5`. -/
+/-- Witness 2: Supercritical parity word `[T, T, F]` (`c = 5 ≥ 1`, `ρ = -5`). -/
 public theorem witness_positivity_localization :
     let w := [true, true, false]
     (2 : Int) ^ w.length < (3 : Int) ^ wordOddCount w ∧
@@ -30,8 +28,7 @@ public theorem witness_positivity_localization :
     (3 : Int) ^ wordOddCount w - (2 : Int) ^ w.length = 1 := by
   exact ⟨by decide, by decide, by decide⟩
 
-/-- Negative sanity check for `collatz_positivity_localization`: a subcritical word
-    (`1 → 2 → 1`, word `[true, false]`) has `3^1 = 3 < 4 = 2^2` and positive fixed point `+1`. -/
+/-- Witness 3: Subcritical positive fixed point `1 → 2 → 1` (`[T, F]`). -/
 public theorem witness_subcritical_positive_cycle :
     let w := [true, false]
     (3 : Int) ^ wordOddCount w < (2 : Int) ^ w.length ∧
@@ -39,28 +36,45 @@ public theorem witness_subcritical_positive_cycle :
     iter T 2 1 = 1 := by
   exact ⟨by decide, by decide, by decide⟩
 
-/-- Witness for `erdos_straus_mordell_840`: concrete non-exceptional input `n = 97`
-    satisfies all six mod-840 hypotheses, while the exceptional square `n = 121`
-    still admits the concrete decomposition `4 / 121 = 1 / 44 + 1 / 121 + 1 / 484`
-    (`(11 + 4 + 1) / 484 = 16 / 484 = 4 / 121`). -/
+/-- Witness 4: Erdős–Straus non-exceptional `97` and exceptional square `121`. -/
 public theorem witness_erdos_straus_hypotheses :
     (2 ≤ 97 ∧ 97 % 840 ≠ 1 ∧ 97 % 840 ≠ 121 ∧ 97 % 840 ≠ 169 ∧
       97 % 840 ≠ 289 ∧ 97 % 840 ≠ 361 ∧ 97 % 840 ≠ 529) ∧
     IsErdosStrausSol 121 44 121 484 := by
   exact ⟨by decide, by unfold IsErdosStrausSol; decide⟩
 
-/-- Witness for `lonely_runner_sharpness_all_n` & `lonely_runner_n2`:
-    at `n = 2`, speeds `(1, 2)` meet the sharpness bound `1/3` at `t = 1/3`,
-    and non-trivial speeds `(3, 10)` satisfy `FarEnough 3` at `t = 1/6`
-    (`‖3/6‖ = 1/2 ≥ 1/3` and `‖10/6‖ = 1/3 ≥ 1/3`). -/
+/-- Witness 5: Lonely Runner `n=2` speeds `(3, 10)` at `t = 1/6` and sharpness at `1/3`. -/
 public theorem witness_lonely_runner_concrete :
     FarEnough 3 1 6 3 ∧ FarEnough 3 1 6 10 ∧ WithinDist 3 1 3 1 := by
   unfold FarEnough WithinDist
   exact ⟨by decide, by decide, by decide⟩
 
-/-- Negative sanity check for `IsBrocardSol`: `6! + 1 = 721` is NOT a square (`26² < 721 < 27²`). -/
+/-- Witness 6: Brocard non-solution `6! + 1 = 721` (`26² < 721 < 27²`). -/
 public theorem witness_brocard_non_solution : ¬ IsBrocardSol 6 26 ∧ ¬ IsBrocardSol 6 27 := by
   unfold IsBrocardSol
   exact ⟨by decide, by decide⟩
+
+/-- Witness 7: Twin primes `(5, 7)` and `(11, 13)` satisfy `IsPrime` and `p % 6 = 5`. -/
+public theorem witness_twin_primes_concrete :
+    IsPrime 5 ∧ IsPrime 7 ∧ IsPrime 11 ∧ IsPrime 13 ∧ 5 % 6 = 5 ∧ 11 % 6 = 5 := by
+  exact ⟨isPrimeBool_sound 5 (by decide), isPrimeBool_sound 7 (by decide),
+         isPrimeBool_sound 11 (by decide), isPrimeBool_sound 13 (by decide),
+         by decide, by decide⟩
+
+/-- Witness 8: Goldbach witness `100 = 3 + 97` with both summands certified prime. -/
+public theorem witness_goldbach_100 :
+    IsPrime 3 ∧ IsPrime 97 ∧ 3 + 97 = 100 := by
+  exact ⟨isPrimeBool_sound 3 (by decide), isPrimeBool_sound 97 (by decide), by decide⟩
+
+/-- Witness 9: Mersenne prime `2^5 - 1 = 31` has prime exponent `5`. -/
+public theorem witness_mersenne_31 :
+    IsPrime (2 ^ 5 - 1) ∧ IsPrime 5 := by
+  exact ⟨isPrimeBool_sound 31 (by decide), isPrimeBool_sound 5 (by decide)⟩
+
+/-- Witness 10: Lonely Runner `n=3` non-div-4 triple `(1, 2, 3)` achieves `≥ 1/4` at `t = 1/4`. -/
+public theorem witness_lonely_runner_n3_concrete :
+    FarEnough 4 1 4 1 ∧ FarEnough 4 1 4 2 ∧ FarEnough 4 1 4 3 := by
+  unfold FarEnough
+  exact ⟨by decide, by decide, by decide⟩
 
 end FormalAtlas.NonVacuity

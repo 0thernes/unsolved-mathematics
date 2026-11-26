@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: MIT
-"""Build a self-contained static HTML Atlas site + Lean Proof Blueprint under _site/.
+"""Build a self-contained static HTML Atlas site + 8-domain Lean Proof Blueprint under _site/.
 
 Zero third-party dependencies beyond Python stdlib: reads canonical generated
 JSON/data files (data/problems.json, data/citation-verification-log.json,
 data/retraction-audit.json, lean/comparator.json, lean/VerifyAxioms.lean, VERSION)
 and emits:
   - _site/index.html      (searchable 106-problem Atlas explorer)
-  - _site/blueprint.html  (interactive Lean 4.35.0 6-kernel Proof Blueprint & DAG)
+  - _site/blueprint.html  (interactive 8-domain, 45-theorem Lean 4.35.0 Proof Blueprint & DAG)
   - _site/problems.json
   - _site/social-preview.svg
 """
@@ -35,17 +35,40 @@ THEOREM_CATALOG: list[tuple[str, str, str, str, str]] = [
     ("thm_collatz_cycle_equation", "Collatz", "FormalAtlas/Collatz.lean", "T^d(x) = x => (2^d - 3^o) x = c(w)", "Bohm-Sontacchi (1978) exact cycle equation"),
     ("thm_collatz_parity_word_append", "Collatz", "FormalAtlas/Collatz.lean", "w_{d1+d2}(x) = w_{d1}(x) ++ w_{d2}(f^{d1}(x))", "Symbolic dynamics parity-word cocycle"),
     ("thm_collatz_negative_cycles", "Collatz", "FormalAtlas/Collatz.lean", "T^3(-5)=-5, T^11(-17)=-17", "Supercritical negative integer cycles of 3n+1"),
+    ("thm_collatz_zero_fixed_point", "Collatz", "FormalAtlas/Collatz.lean", "T^d(0) = 0 & o(T,d,0) = 0", "Zero trivial fixed-point invariant"),
+    ("thm_collatz_intercept_nonneg", "Collatz", "FormalAtlas/Collatz.lean", "0 <= wordIntercept w", "Non-negativity of affine intercept for all words"),
+    ("thm_collatz_parity_word_length", "Collatz", "FormalAtlas/Collatz.lean", "(parityWord f d x).length = d", "Length preservation for arbitrary maps"),
     ("thm_erdos_straus_mordell_840", "Erdos-Straus", "FormalAtlas/ErdosStraus.lean", "n mod 840 not in {1,121,169,289,361,529}", "Mordell (1967) 834/840 modular reduction (99.29%)"),
     ("thm_erdos_straus_multiplicative_closure", "Erdos-Straus", "FormalAtlas/ErdosStraus.lean", "HasErdosStraus m => HasErdosStraus (m*k)", "Multiplicative closure / reduction to primes"),
     ("thm_erdos_straus_mordell_exceptions_small", "Erdos-Straus", "FormalAtlas/ErdosStraus.lean", "n in {121,169,289,361,529,841}", "Resolution of all 6 smallest exceptional squares"),
+    ("thm_erdos_straus_symmetry", "Erdos-Straus", "FormalAtlas/ErdosStraus.lean", "IsErdosStrausSol n x y z => (n y z x)", "Cyclic denominator symmetry"),
+    ("thm_erdos_straus_all_le_30", "Erdos-Straus", "FormalAtlas/ErdosStraus.lean", "2 <= n <= 30 => HasErdosStraus n", "Unconditional small-range verification"),
     ("thm_lonely_runner_sharpness_all_n", "Lonely Runner", "FormalAtlas/LonelyRunner.lean", "forall n>=1, t=p/q, exists i, ||t*i|| <= 1/(n+1)", "All-n rational optimality of 1/(n+1)"),
     ("thm_lonely_runner_n1", "Lonely Runner", "FormalAtlas/LonelyRunner.lean", "n = 1 (2 runners): gap >= 1/2", "Constructive base case n = 1"),
     ("thm_lonely_runner_n2", "Lonely Runner", "FormalAtlas/LonelyRunner.lean", "n = 2 (3 runners): gap >= 1/3", "Constructive base case n = 2"),
     ("thm_lonely_runner_speed_scaling", "Lonely Runner", "FormalAtlas/LonelyRunner.lean", "FarEnough m p q v => FarEnough m p (q*k) (v*k)", "Exact rational GCD speed-scaling invariance"),
+    ("thm_lonely_runner_period_shift", "Lonely Runner", "FormalAtlas/LonelyRunner.lean", "FarEnough m p q v => FarEnough m (p+q) q v", "Unit circle time-periodicity mod 1"),
+    ("thm_lonely_runner_neg_time", "Lonely Runner", "FormalAtlas/LonelyRunner.lean", "FarEnough m p q v => FarEnough m (-p) q v", "Time-reversal symmetry t -> -t"),
+    ("thm_lonely_runner_n3_nondiv4", "Lonely Runner", "FormalAtlas/LonelyRunner.lean", "n = 3, 4 nmid v_i => gap >= 1/4 at t=1/4", "4-runner constructive coverage (7/8 parity classes)"),
     ("thm_brocard_brown_solutions", "Brocard", "FormalAtlas/Brocard.lean", "(4,5), (5,11), (7,71)", "Exact verification of all 3 known Brown pairs"),
     ("thm_brocard_exhaustive_le_12", "Brocard", "FormalAtlas/Brocard.lean", "n <= 12 => n in {4,5,7}", "Exhaustive classification through 12! + 1"),
     ("thm_brocard_mod4_ge_4", "Brocard", "FormalAtlas/Brocard.lean", "n >= 4 => (n! + 1) mod 4 = 1", "Odd-square modular constraint for all n >= 4"),
     ("thm_brocard_exhaustive_le_15", "Brocard", "FormalAtlas/Brocard.lean", "n <= 15 => n in {4,5,7}", "Exhaustive classification through 15! + 1"),
+    ("thm_brocard_not_div3_ge_3", "Brocard", "FormalAtlas/Brocard.lean", "n >= 3 => (n! + 1) mod 3 = 1", "Non-divisibility by 3 for all n >= 3"),
+    ("thm_brocard_mod10_ge_5", "Brocard", "FormalAtlas/Brocard.lean", "n >= 5 => (n! + 1) mod 10 = 1", "Terminal decimal digit = 1 for all n >= 5"),
+    ("thm_brocard_exhaustive_le_20", "Brocard", "FormalAtlas/Brocard.lean", "n <= 20 => n in {4,5,7}", "Exhaustive classification through 20! + 1 (2.43e18)"),
+    ("thm_euclid_infinitely_many_primes", "Primes", "FormalAtlas/Primes.lean", "forall N, exists p > N, IsPrime p", "Euclid's theorem on infinitude of primes"),
+    ("thm_arbitrary_prime_gaps", "Primes", "FormalAtlas/Primes.lean", "forall k>=1, exists m, k consecutive composites", "Arbitrarily long composite runs via (k+1)! + 2"),
+    ("thm_prime_odd_ge_3", "Primes", "FormalAtlas/Primes.lean", "IsPrime p & p >= 3 => p mod 2 = 1", "Oddness of all primes >= 3"),
+    ("thm_twin_prime_mod6", "Primes", "FormalAtlas/Primes.lean", "IsPrime p & IsPrime(p+2) & p>=4 => p mod 6 = 5", "Twin-prime mod-6 rigidity (6 | p + 1)"),
+    ("thm_goldbach_even_le_100", "Goldbach", "FormalAtlas/Goldbach.lean", "even 4 <= n <= 100 => p + q = n", "Finite strong Goldbach verified through 100"),
+    ("thm_goldbach_odd_binary_obstruction", "Goldbach", "FormalAtlas/Goldbach.lean", "odd p + q => p = 2 or q = 2", "Structural binary parity obstruction on odd integers"),
+    ("thm_goldbach_binary_fails_at_11", "Goldbach", "FormalAtlas/Goldbach.lean", "not exists primes p, q: p + q = 11", "Concrete binary Goldbach failure at 11"),
+    ("thm_mersenne_exponent_prime", "Perfect-Mersenne", "FormalAtlas/PerfectNumbers.lean", "IsPrime (2^n - 1) => IsPrime n", "Algebraic factorization 2^a - 1 | 2^(ab) - 1"),
+    ("thm_perfect_numbers_first_four", "Perfect-Mersenne", "FormalAtlas/PerfectNumbers.lean", "IsPerfect 6, 28, 496, 8128", "Exact sigma(n) = 2n for first four perfect numbers"),
+    ("thm_no_odd_perfect_le_100", "Perfect-Mersenne", "FormalAtlas/PerfectNumbers.lean", "odd n <= 100 => not IsPerfect n", "Finite odd-perfect exclusion through 100"),
+    ("thm_ramsey_R33_upper", "Ramsey", "FormalAtlas/Ramsey.lean", "forall c on K_6, HasMonoTriangle c", "Exact Ramsey upper bound R(3,3) <= 6"),
+    ("thm_ramsey_R33_lower", "Ramsey", "FormalAtlas/Ramsey.lean", "exists symm c on K_5, not HasMonoTriangle c", "Explicit C_5 lower bound R(3,3) > 5 (proving R(3,3)=6)"),
 ]
 
 
@@ -82,8 +105,8 @@ def _build_blueprint_html(version: str, n_theorems: int, n_decls: int) -> str:
     a {{ color:#93c5fd; text-decoration:none; }}
     a:hover {{ text-decoration:underline; }}
     .dag-box {{ background:var(--card); border:1px solid var(--line); border-radius:12px; padding:1rem; overflow-x:auto; }}
-    .filters {{ display:flex; gap:.5rem; flex-wrap:wrap; margin:1rem 0 1.25rem; }}
-    button.fbtn {{ background:var(--card); color:var(--fg); border:1px solid var(--line); border-radius:999px; padding:.4rem .9rem; cursor:pointer; font-size:.88rem; }}
+    .filters {{ display:flex; gap:.45rem; flex-wrap:wrap; margin:1rem 0 1.25rem; }}
+    button.fbtn {{ background:var(--card); color:var(--fg); border:1px solid var(--line); border-radius:999px; padding:.38rem .82rem; cursor:pointer; font-size:.85rem; }}
     button.fbtn.active {{ background:#1d4ed8; border-color:#60a5fa; }}
     .grid {{ display:grid; grid-template-columns:repeat(auto-fill,minmax(310px,1fr)); gap:1rem; }}
     .thm-card {{ background:var(--card); border:1px solid var(--line); border-radius:10px; padding:1rem; }}
@@ -94,8 +117,12 @@ def _build_blueprint_html(version: str, n_theorems: int, n_decls: int) -> str:
     .tag-erdos-straus {{ background:#065f46; color:#d1fae5; }}
     .tag-lonely-runner {{ background:#5b21b6; color:#ede9fe; }}
     .tag-brocard {{ background:#92400e; color:#fef3c7; }}
+    .tag-primes {{ background:#0e7490; color:#cffafe; }}
+    .tag-goldbach {{ background:#854d0e; color:#fef9c3; }}
+    .tag-perfect-mersenne {{ background:#9d174d; color:#fce7f3; }}
+    .tag-ramsey {{ background:#3f6212; color:#ecfccb; }}
     .kbadge {{ margin-left:auto; color:var(--ok); font-weight:600; }}
-    .thm-name {{ font-size:.94rem; margin-bottom:.35rem; word-break:break-word; }}
+    .thm-name {{ font-size:.92rem; margin-bottom:.35rem; word-break:break-word; }}
     .thm-formula {{ font-size:.82rem; color:#cbd5e1; background:#0f172a; padding:.35rem .55rem; border-radius:6px; margin-bottom:.4rem; overflow-x:auto; }}
     .thm-desc {{ font-size:.87rem; color:var(--muted); }}
     footer {{ margin-top:2.5rem; color:var(--muted); font-size:.88rem; }}
@@ -110,92 +137,100 @@ def _build_blueprint_html(version: str, n_theorems: int, n_decls: int) -> str:
       <a href="https://github.com/0thernes/unsolved-mathematics/blob/main/paper/Donahue_2026_unsolved_mathematics_atlas.pdf">White Paper PDF</a>
     </nav>
     <h1>FormalAtlas Lean 4.35.0 Proof Blueprint <small style="color:var(--muted)">v{html.escape(version)}</small></h1>
-    <p class="sub">Standalone zero-Mathlib Lean 4.35.0 formal core: <strong>{n_theorems} headline theorems</strong> + <strong>6 non-vacuity witnesses</strong> + <strong>8 adversarial false-variant refutations</strong> = <strong>{n_decls} audited declarations</strong> · axioms strictly within <code>&#123;propext, Classical.choice, Quot.sound&#125;</code> · verified across all <strong>6 independent kernels</strong>. <em>None of these theorems claims to solve an open conjecture.</em></p>
+    <p class="sub">Standalone zero-Mathlib Lean 4.35.0 formal core across <strong>8 open-problem domains</strong>: <strong>{n_theorems} headline theorems</strong> + <strong>10 non-vacuity witnesses</strong> + <strong>14 adversarial false-variant refutations</strong> = <strong>{n_decls} audited declarations</strong> · axioms strictly within <code>&#123;propext, Classical.choice, Quot.sound&#125;</code> · verified across all <strong>6 independent kernels</strong>. <em>None of these theorems claims to solve an open conjecture.</em></p>
 
-    <h2>Module Dependency &amp; Multi-Kernel Verification DAG</h2>
+    <h2>Eight-Domain Dependency &amp; Multi-Kernel Verification DAG</h2>
     <div class="dag-box">
-      <svg viewBox="0 0 1080 260" width="100%" height="260" role="img" aria-label="Lean 4.35.0 FormalAtlas Dependency Graph">
+      <svg viewBox="0 0 1100 340" width="100%" height="340" role="img" aria-label="Lean 4.35.0 8-Domain FormalAtlas Dependency Graph">
         <defs>
           <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
             <path d="M 0 1 L 10 5 L 0 9 z" fill="#60a5fa"/>
           </marker>
         </defs>
-        <!-- Layer 1: Defs -->
-        <rect x="20" y="95" width="170" height="62" rx="10" fill="#0f172a" stroke="#60a5fa" stroke-width="2"/>
-        <text x="105" y="122" fill="#f1f5f9" text-anchor="middle" font-size="13" font-weight="700">FormalAtlas.Defs</text>
-        <text x="105" y="142" fill="#94a3b8" text-anchor="middle" font-size="11">111 LOC · Zero Mathlib</text>
+        <rect x="16" y="136" width="170" height="66" rx="10" fill="#0f172a" stroke="#60a5fa" stroke-width="2"/>
+        <text x="101" y="164" fill="#f1f5f9" text-anchor="middle" font-size="13" font-weight="700">FormalAtlas.Defs</text>
+        <text x="101" y="184" fill="#94a3b8" text-anchor="middle" font-size="11">153 LOC · Zero Mathlib</text>
 
-        <!-- Layer 2: Problem Modules -->
-        <rect x="255" y="12" width="195" height="48" rx="8" fill="#1e3a8a" stroke="#93c5fd"/>
-        <text x="352" y="34" fill="#f1f5f9" text-anchor="middle" font-size="12" font-weight="700">FormalAtlas.Collatz</text>
-        <text x="352" y="50" fill="#bfdbfe" text-anchor="middle" font-size="10.5">11 headline theorems</text>
+        <rect x="248" y="8" width="206" height="34" rx="7" fill="#1e3a8a" stroke="#93c5fd"/>
+        <text x="351" y="30" fill="#f1f5f9" text-anchor="middle" font-size="11.5" font-weight="700">Collatz (14 theorems)</text>
+        <rect x="248" y="49" width="206" height="34" rx="7" fill="#065f46" stroke="#6ee7b7"/>
+        <text x="351" y="71" fill="#f1f5f9" text-anchor="middle" font-size="11.5" font-weight="700">Erdős–Straus (5 theorems)</text>
+        <rect x="248" y="90" width="206" height="34" rx="7" fill="#5b21b6" stroke="#c4b5fd"/>
+        <text x="351" y="112" fill="#f1f5f9" text-anchor="middle" font-size="11.5" font-weight="700">Lonely Runner (7 theorems)</text>
+        <rect x="248" y="131" width="206" height="34" rx="7" fill="#92400e" stroke="#fcd34d"/>
+        <text x="351" y="153" fill="#f1f5f9" text-anchor="middle" font-size="11.5" font-weight="700">Brocard ≤ 20 (7 theorems)</text>
+        <rect x="248" y="172" width="206" height="34" rx="7" fill="#0e7490" stroke="#67e8f9"/>
+        <text x="351" y="194" fill="#f1f5f9" text-anchor="middle" font-size="11.5" font-weight="700">Primes / Twins (4 theorems)</text>
+        <rect x="248" y="213" width="206" height="34" rx="7" fill="#854d0e" stroke="#fde047"/>
+        <text x="351" y="235" fill="#f1f5f9" text-anchor="middle" font-size="11.5" font-weight="700">Goldbach ≤ 100 (3 theorems)</text>
+        <rect x="248" y="254" width="206" height="34" rx="7" fill="#9d174d" stroke="#f9a8d4"/>
+        <text x="351" y="276" fill="#f1f5f9" text-anchor="middle" font-size="11.5" font-weight="700">Perfect / Mersenne (3 thms)</text>
+        <rect x="248" y="295" width="206" height="34" rx="7" fill="#3f6212" stroke="#bef264"/>
+        <text x="351" y="317" fill="#f1f5f9" text-anchor="middle" font-size="11.5" font-weight="700">Ramsey R(3,3)=6 (2 thms)</text>
 
-        <rect x="255" y="74" width="195" height="48" rx="8" fill="#065f46" stroke="#6ee7b7"/>
-        <text x="352" y="96" fill="#f1f5f9" text-anchor="middle" font-size="12" font-weight="700">FormalAtlas.ErdosStraus</text>
-        <text x="352" y="112" fill="#a7f3d0" text-anchor="middle" font-size="10.5">3 theorems (834/840 + sqs)</text>
+        <rect x="524" y="30" width="192" height="52" rx="8" fill="#1e293b" stroke="#94a3b8"/>
+        <text x="620" y="53" fill="#f1f5f9" text-anchor="middle" font-size="12" font-weight="700">Challenge.lean</text>
+        <text x="620" y="70" fill="#94a3b8" text-anchor="middle" font-size="10.5">45 isolated signatures</text>
 
-        <rect x="255" y="136" width="195" height="48" rx="8" fill="#5b21b6" stroke="#c4b5fd"/>
-        <text x="352" y="158" fill="#f1f5f9" text-anchor="middle" font-size="12" font-weight="700">FormalAtlas.LonelyRunner</text>
-        <text x="352" y="174" fill="#ddd6fe" text-anchor="middle" font-size="10.5">4 theorems (sharpness + n<=2)</text>
+        <rect x="524" y="102" width="192" height="52" rx="8" fill="#1e293b" stroke="#34d399" stroke-width="1.6"/>
+        <text x="620" y="125" fill="#f1f5f9" text-anchor="middle" font-size="12" font-weight="700">Solution.lean</text>
+        <text x="620" y="142" fill="#6ee7b7" text-anchor="middle" font-size="10.5">45 zero-sorry proofs</text>
 
-        <rect x="255" y="198" width="195" height="48" rx="8" fill="#92400e" stroke="#fcd34d"/>
-        <text x="352" y="220" fill="#f1f5f9" text-anchor="middle" font-size="12" font-weight="700">FormalAtlas.Brocard</text>
-        <text x="352" y="236" fill="#fde68a" text-anchor="middle" font-size="10.5">4 theorems (mod-4 + n<=15)</text>
+        <rect x="524" y="174" width="192" height="52" rx="8" fill="#1e293b" stroke="#60a5fa"/>
+        <text x="620" y="197" fill="#f1f5f9" text-anchor="middle" font-size="12" font-weight="700">NonVacuity.lean</text>
+        <text x="620" y="214" fill="#93c5fd" text-anchor="middle" font-size="10.5">10 concrete witnesses</text>
 
-        <!-- Layer 3: Challenge/Solution/NonVacuity/Adversarial -->
-        <rect x="520" y="18" width="185" height="46" rx="8" fill="#1e293b" stroke="#94a3b8"/>
-        <text x="612" y="39" fill="#f1f5f9" text-anchor="middle" font-size="12" font-weight="700">Challenge.lean</text>
-        <text x="612" y="54" fill="#94a3b8" text-anchor="middle" font-size="10.5">22 isolated signatures</text>
+        <rect x="524" y="246" width="192" height="52" rx="8" fill="#1e293b" stroke="#f87171"/>
+        <text x="620" y="269" fill="#f1f5f9" text-anchor="middle" font-size="12" font-weight="700">Adversarial.lean</text>
+        <text x="620" y="286" fill="#fca5a5" text-anchor="middle" font-size="10.5">14 false-variant refutations</text>
 
-        <rect x="520" y="78" width="185" height="46" rx="8" fill="#1e293b" stroke="#34d399" stroke-width="1.6"/>
-        <text x="612" y="99" fill="#f1f5f9" text-anchor="middle" font-size="12" font-weight="700">Solution.lean</text>
-        <text x="612" y="114" fill="#6ee7b7" text-anchor="middle" font-size="10.5">22 zero-sorry proofs</text>
+        <rect x="788" y="64" width="290" height="84" rx="10" fill="#0f172a" stroke="#34d399" stroke-width="2"/>
+        <text x="933" y="92" fill="#34d399" text-anchor="middle" font-size="13" font-weight="700">6-Kernel bwrap Replay</text>
+        <text x="933" y="113" fill="#cbd5e1" text-anchor="middle" font-size="10.8">lean · leanchecker-paranoid · lean4lean</text>
+        <text x="933" y="131" fill="#cbd5e1" text-anchor="middle" font-size="10.8">nanoda_bin · con-leche · con-ron</text>
 
-        <rect x="520" y="138" width="185" height="46" rx="8" fill="#1e293b" stroke="#60a5fa"/>
-        <text x="612" y="159" fill="#f1f5f9" text-anchor="middle" font-size="12" font-weight="700">NonVacuity.lean</text>
-        <text x="612" y="174" fill="#93c5fd" text-anchor="middle" font-size="10.5">6 concrete witnesses</text>
+        <rect x="788" y="182" width="290" height="84" rx="10" fill="#0f172a" stroke="#60a5fa" stroke-width="2"/>
+        <text x="933" y="210" fill="#93c5fd" text-anchor="middle" font-size="13" font-weight="700">VerifyAxioms + Comparator</text>
+        <text x="933" y="231" fill="#cbd5e1" text-anchor="middle" font-size="10.8">69/69 decls in &#123;propext, choice, Quot&#125;</text>
+        <text x="933" y="249" fill="#cbd5e1" text-anchor="middle" font-size="10.8">README parity enforced in CI</text>
 
-        <rect x="520" y="198" width="185" height="46" rx="8" fill="#1e293b" stroke="#f87171"/>
-        <text x="612" y="219" fill="#f1f5f9" text-anchor="middle" font-size="12" font-weight="700">Adversarial.lean</text>
-        <text x="612" y="234" fill="#fca5a5" text-anchor="middle" font-size="10.5">8 false-variant refutations</text>
+        <line x1="186" y1="150" x2="245" y2="25" stroke="#60a5fa" stroke-width="1.3" marker-end="url(#arr)"/>
+        <line x1="186" y1="156" x2="245" y2="66" stroke="#60a5fa" stroke-width="1.3" marker-end="url(#arr)"/>
+        <line x1="186" y1="162" x2="245" y2="107" stroke="#60a5fa" stroke-width="1.3" marker-end="url(#arr)"/>
+        <line x1="186" y1="168" x2="245" y2="148" stroke="#60a5fa" stroke-width="1.3" marker-end="url(#arr)"/>
+        <line x1="186" y1="172" x2="245" y2="189" stroke="#60a5fa" stroke-width="1.3" marker-end="url(#arr)"/>
+        <line x1="186" y1="178" x2="245" y2="230" stroke="#60a5fa" stroke-width="1.3" marker-end="url(#arr)"/>
+        <line x1="186" y1="184" x2="245" y2="271" stroke="#60a5fa" stroke-width="1.3" marker-end="url(#arr)"/>
+        <line x1="186" y1="190" x2="245" y2="312" stroke="#60a5fa" stroke-width="1.3" marker-end="url(#arr)"/>
 
-        <!-- Layer 4: VerifyAxioms + 6 Kernels -->
-        <rect x="780" y="38" width="275" height="72" rx="10" fill="#0f172a" stroke="#34d399" stroke-width="2"/>
-        <text x="917" y="64" fill="#34d399" text-anchor="middle" font-size="13" font-weight="700">6-Kernel bwrap Replay</text>
-        <text x="917" y="83" fill="#cbd5e1" text-anchor="middle" font-size="10.5">lean · leanchecker-paranoid · lean4lean</text>
-        <text x="917" y="99" fill="#cbd5e1" text-anchor="middle" font-size="10.5">nanoda_bin · con-leche · con-ron</text>
+        <line x1="454" y1="25" x2="520" y2="118" stroke="#60a5fa" stroke-width="1.2" marker-end="url(#arr)"/>
+        <line x1="454" y1="66" x2="520" y2="122" stroke="#60a5fa" stroke-width="1.2" marker-end="url(#arr)"/>
+        <line x1="454" y1="107" x2="520" y2="126" stroke="#60a5fa" stroke-width="1.2" marker-end="url(#arr)"/>
+        <line x1="454" y1="148" x2="520" y2="130" stroke="#60a5fa" stroke-width="1.2" marker-end="url(#arr)"/>
+        <line x1="454" y1="189" x2="520" y2="134" stroke="#60a5fa" stroke-width="1.2" marker-end="url(#arr)"/>
+        <line x1="454" y1="230" x2="520" y2="196" stroke="#60a5fa" stroke-width="1.2" marker-end="url(#arr)"/>
+        <line x1="454" y1="271" x2="520" y2="268" stroke="#60a5fa" stroke-width="1.2" marker-end="url(#arr)"/>
+        <line x1="454" y1="312" x2="520" y2="276" stroke="#60a5fa" stroke-width="1.2" marker-end="url(#arr)"/>
 
-        <rect x="780" y="142" width="275" height="72" rx="10" fill="#0f172a" stroke="#60a5fa" stroke-width="2"/>
-        <text x="917" y="168" fill="#93c5fd" text-anchor="middle" font-size="13" font-weight="700">VerifyAxioms + Comparator</text>
-        <text x="917" y="187" fill="#cbd5e1" text-anchor="middle" font-size="10.5">36/36 decls in &#123;propext, choice, Quot&#125;</text>
-        <text x="917" y="203" fill="#cbd5e1" text-anchor="middle" font-size="10.5">README parity checked in CI</text>
-
-        <!-- Edges -->
-        <line x1="190" y1="115" x2="252" y2="38" stroke="#60a5fa" stroke-width="1.5" marker-end="url(#arr)"/>
-        <line x1="190" y1="122" x2="252" y2="98" stroke="#60a5fa" stroke-width="1.5" marker-end="url(#arr)"/>
-        <line x1="190" y1="130" x2="252" y2="160" stroke="#60a5fa" stroke-width="1.5" marker-end="url(#arr)"/>
-        <line x1="190" y1="138" x2="252" y2="222" stroke="#60a5fa" stroke-width="1.5" marker-end="url(#arr)"/>
-        <line x1="450" y1="36" x2="517" y2="98" stroke="#60a5fa" stroke-width="1.4" marker-end="url(#arr)"/>
-        <line x1="450" y1="98" x2="517" y2="101" stroke="#60a5fa" stroke-width="1.4" marker-end="url(#arr)"/>
-        <line x1="450" y1="160" x2="517" y2="104" stroke="#60a5fa" stroke-width="1.4" marker-end="url(#arr)"/>
-        <line x1="450" y1="222" x2="517" y2="108" stroke="#60a5fa" stroke-width="1.4" marker-end="url(#arr)"/>
-        <line x1="450" y1="160" x2="517" y2="160" stroke="#60a5fa" stroke-width="1.2" marker-end="url(#arr)"/>
-        <line x1="450" y1="222" x2="517" y2="222" stroke="#60a5fa" stroke-width="1.2" marker-end="url(#arr)"/>
-        <line x1="705" y1="41" x2="777" y2="166" stroke="#94a3b8" stroke-width="1.4" marker-end="url(#arr)"/>
-        <line x1="705" y1="101" x2="777" y2="74" stroke="#34d399" stroke-width="1.6" marker-end="url(#arr)"/>
-        <line x1="705" y1="161" x2="777" y2="82" stroke="#34d399" stroke-width="1.4" marker-end="url(#arr)"/>
-        <line x1="705" y1="221" x2="777" y2="90" stroke="#34d399" stroke-width="1.4" marker-end="url(#arr)"/>
-        <line x1="705" y1="101" x2="777" y2="176" stroke="#60a5fa" stroke-width="1.4" marker-end="url(#arr)"/>
+        <line x1="716" y1="56" x2="784" y2="210" stroke="#94a3b8" stroke-width="1.4" marker-end="url(#arr)"/>
+        <line x1="716" y1="128" x2="784" y2="96" stroke="#34d399" stroke-width="1.6" marker-end="url(#arr)"/>
+        <line x1="716" y1="200" x2="784" y2="108" stroke="#34d399" stroke-width="1.4" marker-end="url(#arr)"/>
+        <line x1="716" y1="272" x2="784" y2="120" stroke="#34d399" stroke-width="1.4" marker-end="url(#arr)"/>
+        <line x1="716" y1="128" x2="784" y2="220" stroke="#60a5fa" stroke-width="1.4" marker-end="url(#arr)"/>
       </svg>
     </div>
 
-    <h2>Headline Theorems ({n_theorems})</h2>
+    <h2>Headline Theorems ({n_theorems} Across 8 Domains)</h2>
     <div class="filters">
       <button class="fbtn active" data-filter="all">All ({n_theorems})</button>
-      <button class="fbtn" data-filter="collatz">Collatz (11)</button>
-      <button class="fbtn" data-filter="erdos-straus">Erdős–Straus (3)</button>
-      <button class="fbtn" data-filter="lonely-runner">Lonely Runner (4)</button>
-      <button class="fbtn" data-filter="brocard">Brocard (4)</button>
+      <button class="fbtn" data-filter="collatz">Collatz (14)</button>
+      <button class="fbtn" data-filter="erdos-straus">Erdős–Straus (5)</button>
+      <button class="fbtn" data-filter="lonely-runner">Lonely Runner (7)</button>
+      <button class="fbtn" data-filter="brocard">Brocard (7)</button>
+      <button class="fbtn" data-filter="primes">Primes (4)</button>
+      <button class="fbtn" data-filter="goldbach">Goldbach (3)</button>
+      <button class="fbtn" data-filter="perfect-mersenne">Perfect / Mersenne (3)</button>
+      <button class="fbtn" data-filter="ramsey">Ramsey (2)</button>
     </div>
 
     <div class="grid" id="grid">
@@ -302,9 +337,9 @@ def build_site(out_dir: Path = OUT_DIR) -> Path:
 <body>
   <main>
     <h1>The Unsolved Mathematics Atlas <small style="color:var(--muted)">v{html.escape(version)}</small></h1>
-    <p class="sub">Audited, ranked corpus of {len(problems)} open mathematical problems · zero-Mathlib Lean 4.35.0 6-kernel formal core · primary-source verified citations &amp; retraction audit · updated {html.escape(str(meta.get("updated", "")))}.</p>
+    <p class="sub">Audited, ranked corpus of {len(problems)} open mathematical problems · 8-domain zero-Mathlib Lean 4.35.0 6-kernel formal core · primary-source verified citations &amp; retraction audit · FAIR RO-Crate / Croissant · updated {html.escape(str(meta.get("updated", "")))}.</p>
     <nav>
-      <a href="blueprint.html"><strong>→ Interactive Lean 4.35.0 Proof Blueprint ({n_theorems} Theorems)</strong></a>
+      <a href="blueprint.html"><strong>→ Interactive Lean 4.35.0 Proof Blueprint ({n_theorems} Theorems / {n_decls} Decls)</strong></a>
       <a href="https://github.com/0thernes/unsolved-mathematics/blob/main/paper/Donahue_2026_unsolved_mathematics_atlas.pdf">White Paper PDF</a>
       <a href="https://github.com/0thernes/unsolved-mathematics/blob/main/docs/CROSS_ATLAS_AUDIT_2026-11-25.md">Cross-Atlas Audit (1,900 Problems)</a>
       <a href="https://github.com/0thernes/unsolved-mathematics/blob/main/CLAIMS.md">Claims Ledger</a>
@@ -313,7 +348,7 @@ def build_site(out_dir: Path = OUT_DIR) -> Path:
 
     <div class="cards">
       <div class="card"><div class="num">{len(problems)}</div><div class="lbl">Ranked Problem Dossiers</div></div>
-      <div class="card"><div class="num">{n_theorems} / {n_decls}</div><div class="lbl">Lean 4.35.0 Theorems / Audited Decls (6 Kernels, 0 sorry)</div></div>
+      <div class="card"><div class="num">{n_theorems} / {n_decls}</div><div class="lbl">Lean 4.35.0 Theorems / Audited Decls (8 Domains, 6 Kernels, 0 sorry)</div></div>
       <div class="card"><div class="num">{n_verified}</div><div class="lbl">API-Verified Citations ({n_stripped} bad IDs stripped · {n_retracted}/{n_ret_checked} retracted DOIs)</div></div>
       <div class="card"><div class="num">0 / {len(problems)}</div><div class="lbl">Human Peer Reviews (honestly disclosed)</div></div>
     </div>
@@ -380,7 +415,7 @@ def build_site(out_dir: Path = OUT_DIR) -> Path:
 
 def main() -> int:
     out = build_site()
-    print(f"Built static Atlas site + Lean Proof Blueprint -> {out}")
+    print(f"Built static Atlas site + 8-domain Lean Proof Blueprint -> {out}")
     return 0
 
 

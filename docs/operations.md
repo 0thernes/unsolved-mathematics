@@ -8,7 +8,8 @@ checksums, git bundle backups, and third-party archival mirrors.
 
 Every authoritative data file (`data/problems.yaml`, `data/problems.json`,
 `data/dossier-status.json`, `data/citation-verification-log.json`,
-`rag/corpus.jsonl`, `formal/comparator.json`, `formal/formalization.yaml`) is
+`data/retraction-audit.json`, `rag/corpus.jsonl`, `lean/comparator.json`,
+`lean/formalization.yaml`, `paper/*`, `ro-crate-metadata.json`, `croissant.json`) is
 hashed in `data/MANIFEST.sha256`. Regenerate and verify after any data update:
 
 ```bash

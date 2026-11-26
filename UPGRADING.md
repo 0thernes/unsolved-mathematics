@@ -4,6 +4,31 @@
 
 ---
 
+## Upgrading from `v0.4.0` to `v0.5.0`
+
+### 1. Structural & Additive Changes (Non-Breaking)
+
+- **Eight-Domain Lean 4.35.0 Core (`22 → 45` theorems, `36 → 69` audited declarations):** All 22 `v0.4.0` comparator theorem names in `lean/Challenge.lean` are preserved verbatim; 23 new headline theorems, 4 new non-vacuity witnesses, and 6 new adversarial refutations were added across four new domain modules (`Primes.lean`, `Goldbach.lean`, `PerfectNumbers.lean`, `Ramsey.lean`) plus extensions to Collatz, Erdős–Straus, Lonely Runner ($n=3$), and Brocard ($n \le 20$).
+- **FAIR Metadata (`ro-crate-metadata.json`, `croissant.json`):** Added RO-Crate 1.1 and MLCommons Croissant 1.0 files, tracked in `data/MANIFEST.sha256` (40 tracked files).
+- **Live GitHub Pages Auto-Deploy:** `.github/workflows/pages.yml` now deploys `_site/index.html` and `_site/blueprint.html` automatically on push to `main`.
+- **Runtime `NameError` fixed in `problems/collatz-conjecture/experiments/odd_unit_lock_bridge_refinement.py`**, guarded by `ruff --select E9,F63,F7,F82` in CI.
+
+### 2. Upgrade Steps
+
+```bash
+git pull origin main
+python -m pip install -r requirements-lock.txt
+python scripts/generate.py --check
+python scripts/validate.py
+python scripts/check_retractions.py --check
+python scripts/check_readme_axioms.py
+python scripts/build_data_manifest.py --check
+python -m pytest -v tests/
+cd lean && lake build Challenge Solution NonVacuity Adversarial && lake env lean VerifyAxioms.lean
+```
+
+---
+
 ## Upgrading from `v0.3.x` to `v0.4.0`
 
 ### 1. Breaking / Structural Changes

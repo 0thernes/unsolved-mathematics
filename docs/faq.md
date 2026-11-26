@@ -6,7 +6,7 @@
 
 ## 2. Why is `problems/collatz-conjecture/` so much larger than the other 105 dossiers?
 
-In July 2026, `unsolved-mathematics` served as the live workspace for a multi-model research & QA case study on Collatz (`docs/WHITEPAPER-COLLATZ-MULTI-MODEL-CASE-STUDY-2026-07-01.md`), generating ~58.5 MB of experimental scripts, certificates, and quarantined refuted sketches. This asymmetry is intentionally documented as **Dilemma D1** in [`docs/reviews/2026-11-23-forensic-philosophical-audit.md`](reviews/2026-11-23-forensic-philosophical-audit.md) and scheduled for clean modular separation in `v0.4.0` (`ROADMAP.md`).
+In July 2026, `unsolved-mathematics` served as the live workspace for a multi-model research & QA case study on Collatz (`docs/WHITEPAPER-COLLATZ-MULTI-MODEL-CASE-STUDY-2026-07-01.md`), generating ~58.5 MB of experimental scripts, certificates, and quarantined refuted sketches. This asymmetry is intentionally documented as **Dilemma D1** in [`docs/reviews/2026-11-23-forensic-philosophical-audit.md`](reviews/2026-11-23-forensic-philosophical-audit.md) and tracked for clean modular separation in `ROADMAP.md`.
 
 ## 3. What do the citation verification flags in `problems/*/papers.md` mean?
 
@@ -17,7 +17,7 @@ In July 2026, `unsolved-mathematics` served as the live workspace for a multi-mo
 
 ## 4. How many AI models and human mathematicians have reviewed the 106 dossiers?
 
-As of `v0.4.0` (`2026-11-25`): **1 AI model pass** (Claude's in-house self-review on `2026-06-14`, recorded under the historical non-canonical session label `claude-opus-4-8` in `meta-analyses/*.md`) across the 106 meta-analyses and **0 independent human mathematician peer reviews**. Earlier README text mentioning a "four-model review panel" described a planned architecture, not completed reviews; `v0.3.0`+ corrects this disclosure explicitly across `README.md`, `CLAIMS.md`, and `LIMITATIONS.md`.
+As of `v0.5.0` (`2026-11-25`): **1 AI model pass** (Claude's in-house self-review on `2026-06-14`, recorded under the historical non-canonical session label `claude-opus-4-8` in `meta-analyses/*.md`) across the 106 meta-analyses and **0 independent human mathematician peer reviews**. Earlier README text mentioning a "four-model review panel" described a planned architecture, not completed reviews; `v0.3.0`+ corrects this disclosure explicitly across `README.md`, `CLAIMS.md`, and `LIMITATIONS.md`.
 
 ## 5. How is the Composite Severity Score (CSS) computed? Is it objective?
 

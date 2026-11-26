@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "unsolved-mathematics-atlas"
-version = "0.4.0"
+version = "0.5.0"
 description = "Reproducible ranked dossier of 106 open mathematical problems paired with a multi-kernel Lean 4.35.0 formal core and deterministic RAG corpus."
 readme = "README.md"
 license = { text = "MIT" }

@@ -761,4 +761,29 @@ public theorem collatz_negative_cycles :
     (iter T 11 (-17) = -17 ∧ (2 : Int) ^ 11 < (3 : Int) ^ (oddCount T 11 (-17))) := by
   exact ⟨⟨by decide, by decide⟩, ⟨by decide, by decide⟩⟩
 
+/-- **Zero fixed point:** `T^d(0) = 0` and `oddCount T d 0 = 0` for all `d`. -/
+public theorem collatz_zero_fixed_point (d : Nat) :
+    iter T d 0 = 0 ∧ oddCount T d 0 = 0 := by
+  induction d with
+  | zero => exact ⟨rfl, rfl⟩
+  | succ d ih =>
+    have h0 : T 0 = 0 := by decide
+    have hb0 : parityBit 0 = false := by decide
+    constructor
+    · simp only [iter, h0]; exact ih.1
+    · simp only [oddCount, parityWord, hb0, h0, wordOddCount, Bool.false_eq_true, ite_false, Nat.zero_add]
+      exact ih.2
+
+/-- **Non-negativity of affine intercept:** `0 ≤ wordIntercept w` for every parity word `w`. -/
+public theorem collatz_intercept_nonneg (w : List Bool) :
+    0 ≤ wordIntercept w :=
+  wordIntercept_nonneg w
+
+/-- **Parity-word length invariant:** `(parityWord f d x).length = d` for arbitrary `f`. -/
+public theorem collatz_parity_word_length (f : Int → Int) (d : Nat) (x : Int) :
+    (parityWord f d x).length = d := by
+  induction d generalizing x with
+  | zero => rfl
+  | succ d ih => simp only [parityWord, List.length_cons, ih]
+
 end FormalAtlas

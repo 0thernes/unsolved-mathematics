@@ -1,7 +1,7 @@
-# 📋 Research Kanban — The Unsolved Mathematics Atlas (`v0.4.0`)
+# 📋 Research Kanban — The Unsolved Mathematics Atlas (`v0.5.0`)
 
 > Operational board tracking the atlas's verification, formalization, and curation workstreams.
-> Updated `2026-11-25` for release `v0.4.0`.
+> Updated `2026-11-25` for release `v0.5.0`.
 
 **Legend:** 🟥 blocked · 🟧 needs-verification · 🟨 in-progress · 🟩 done · 🟦 backlog
 
@@ -26,7 +26,9 @@
 
 - [ ] Quarterly mathematical frontier tracking (monitoring late-2026 Lean-only GRH / Euler–NS claims until peer review settles; tracking Erdős Unit Distance `arXiv:2605.20695` peer review).
 
-## 🟩 Done (`v0.1.0` – `v0.4.0`)
+## 🟩 Done (`v0.1.0` – `v0.5.0`)
+
+- [x] **Cycle 4 Deep Refinement & 8-Domain Expansion (`v0.5.0`):** Expanded `lean/` from `22 → 45` headline theorems across 8 domains (+ `10` witnesses + `14` adversarial refutations = `69` audited declarations, 6/6 kernels PASS), expanded AMS-LaTeX monograph to 10 pages with 15-field corruption TikZ chart & 8-domain DAG (0 warnings, visually verified), added FAIR RO-Crate 1.1 + Croissant 1.0 metadata, enabled live GitHub Pages auto-deploy, synchronized `unsolved-problems-mega-atlas v2.4.0` (`0/1,900` retired), fixed real Python `NameError` in `odd_unit_lock_bridge_refinement.py` + 18 stale `formal/` references (`v0.5.0`).
 
 - [x] **Three-Cycle 10-Class Hardening, Build Standard `v1.2.0` & Playbook `v1.3` (`v0.4.0`):** Migrated `formal/` → `lean/` (`22` theorems + `6` non-vacuity witnesses + `8` adversarial false-variant refutations = `36` audited declarations, 6 independent kernels, verbatim `#print axioms` CI parity), live Crossref/DataCite retraction audit (`220/220` DOIs, `0` retracted, `3` publisher errata), 0-warning Tectonic AMS-LaTeX white paper PDF + clean-room arXiv tarball (`paper/`), interactive Proof Blueprint (`_site/blueprint.html`), `ERRATA.md`, `docs/CROSS_ATLAS_AUDIT_2026-11-25.md`, local machine-path privacy guard, LF normalization, and 55-test verification ladder (`v0.4.0`).
 - [x] **Standalone Lean 4.35.0 formal core (`formal/` → `lean/`):** Initial 14 theorems across Collatz, Erdős–Straus, Lonely Runner, and Brocard; 6 non-vacuity witnesses; `VerifyAxioms.lean`; `Challenge.lean` + `comparator.json`; `STATEMENT_FIDELITY.md`; 6-kernel verification (`v0.3.0`–`v0.3.1`).

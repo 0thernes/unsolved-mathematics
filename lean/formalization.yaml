@@ -1,7 +1,7 @@
 # Palomar Registry & Verification Disclosure Metadata
 # Schema reference: https://github.com/PalomarRegistry/PalomarPolicy/blob/main/CONTRIBUTING.md
-title: "FormalAtlas: Multi-Kernel Lean 4.35.0 Structural Core for The Unsolved Mathematics Atlas"
-version: "0.4.0"
+title: "FormalAtlas: Eight-Domain Multi-Kernel Lean 4.35.0 Structural Core for The Unsolved Mathematics Atlas"
+version: "0.5.0"
 date: "2026-11-25"
 authors:
   - name: "Alexander S. Donahue"
@@ -17,16 +17,18 @@ comparator_config: "comparator.json"
 non_vacuity_file: "NonVacuity.lean"
 adversarial_file: "Adversarial.lean"
 axiom_audit_file: "VerifyAxioms.lean"
-theorem_count: 22
-witness_count: 6
-adversarial_refutation_count: 8
+domain_count: 8
+theorem_count: 45
+witness_count: 10
+adversarial_refutation_count: 14
+audited_declaration_count: 69
 permitted_axioms:
   - "propext"
   - "Classical.choice"
   - "Quot.sound"
 automation:
   models:
-    - "Gemini (Antigravity, Google DeepMind — formalization expansion, adversarial tests & verification tooling, Nov 2026)"
+    - "Gemini (Antigravity, Google DeepMind — 8-domain formalization expansion, adversarial tests & verification tooling, Nov 2026)"
     - "Claude / GPT Codex (earlier Collatz empirical audit & roadmap, Jul 2026)"
   human_role: "Problem selection, mathematical scoping, definition & statement-fidelity audit, acceptance decisions"
   verification_kernels:
@@ -38,10 +40,9 @@ automation:
     - "con-ron (verified Rust)"
 review_status: "Not peer-reviewed; mechanically checked by Lean 4.35.0 multi-kernel stack and lake comparator"
 scope_and_limitations: >
-  Formalizes 22 structural theorems, modular reductions, sharpness bounds, and
-  no-go barriers associated with four open problems (Collatz, Erdős–Straus,
-  Lonely Runner, Brocard), paired with 6 non-vacuity witnesses and 8 explicit
-  adversarial false-variant refutations. Explicitly does NOT prove any open
-  conjecture: Collatz, Erdős–Straus (6 remaining Mordell quadratic-residue
-  classes mod 840 for general primes), uniform Lonely Runner, and Brocard
-  finiteness all remain OPEN.
+  Formalizes 45 structural theorems, classical foundations, modular reductions,
+  sharpness bounds, finite exhaustions, and no-go barriers across eight open-problem
+  domains (Collatz, Erdős–Straus, Lonely Runner, Brocard, Primes/Twin Primes,
+  Goldbach, Odd Perfect/Mersenne Primes, Ramsey R(3,3)=6), paired with 10 concrete
+  non-vacuity witnesses and 14 explicit adversarial false-variant refutations (69
+  audited declarations). Explicitly does NOT prove any open conjecture.

@@ -8,11 +8,12 @@
 ## 1. Mathematical Scope — What This Repository Does NOT Prove
 
 - **Zero open problems are solved by this repository.** Every open conjecture in `data/problems.yaml` (Collatz, Riemann Hypothesis, P vs NP, Hodge, BSD, Yang–Mills, Navier–Stokes, Goldbach, Erdős–Straus, Lonely Runner, Brocard, etc.) remains **OPEN** unless settled in the external mathematical literature with a verified resolving citation (currently: Connes Embedding 2020, Telescope Conjecture 2023, Erdős Unit Distance May 2026 `arXiv:2605.20695`).
-- **`lean/` proves structural lemmas, modular reductions, sharpness bounds, adversarial refutations, and no-go barriers — NOT the open conjectures themselves:**
-  - Collatz theorems (11 theorems: Terras bijection, affine & intercept laws, Böhm–Sontacchi cycle equation, parity-word cocycle, no finite 2-adic cover, positivity localization $\rho_w \le -1$, negative cycles $-5$/$-17$, $\varepsilon$-invariance $3n-1$ barrier) are elementary / classical rediscovery-tier structure formalized for mechanical trustworthiness.
-  - Erdős–Straus Mordell mod-840 covers 834/840 classes (99.29%) plus multiplicative closure and the 6 smallest exceptional squares $\{121, 169, 289, 361, 529, 841\}$, explicitly leaving general primes in $\{1, 121, 169, 289, 361, 529\} \pmod{840}$ open.
-  - Lonely Runner formalizes all-$n$ sharpness of $\frac{1}{n+1}$ (over $\mathbb{Q}$), speed-scaling invariance, and base cases $n \in \{1, 2\}$, NOT the general conjecture.
-  - Brocard formalizes mod-4 parity constraint and exhaustive check through $n \le 15$, NOT finiteness.
+- **`lean/` proves structural lemmas, classical foundations, modular reductions, sharpness bounds, finite exhaustions, adversarial refutations, and no-go barriers — NOT the open conjectures themselves:**
+  - Collatz theorems (14 theorems: Terras bijection, affine & intercept laws, Böhm–Sontacchi cycle equation, parity-word cocycle, no finite 2-adic cover, positivity localization $\rho_w \le -1$, negative cycles $-5$/$-17$, $\varepsilon$-invariance $3n-1$ barrier, zero/intercept/length invariants) are elementary / classical rediscovery-tier structure formalized for mechanical trustworthiness.
+  - Erdős–Straus Mordell mod-840 covers 834/840 classes (99.29%) plus multiplicative closure, cyclic symmetry, $2 \le n \le 30$, and the 6 smallest exceptional squares $\{121, 169, 289, 361, 529, 841\}$, explicitly leaving general primes in $\{1, 121, 169, 289, 361, 529\} \pmod{840}$ open.
+  - Lonely Runner formalizes all-$n$ sharpness of $\frac{1}{n+1}$ (over $\mathbb{Q}$), symmetry group (scaling, periodicity, time reversal), base cases $n \in \{1, 2\}$, and the $4 \nmid v_i$ parity family for $n = 3$, NOT the general conjecture.
+  - Brocard formalizes mod-3/4/10 invariants and exhaustive check through $n \le 20$ ($20!+1 = 2.43 \times 10^{18}$), NOT finiteness.
+  - Primes/Twins (Euclid, arbitrary prime gaps, oddness $\ge 3$, twin mod-6), Goldbach ($4 \le n \le 100$ + odd binary obstruction), Perfect/Mersenne (Mersenne exponent primality, $\{6, 28, 496, 8128\}$, no odd perfect $\le 100$), and Ramsey ($R(3,3) = 6$) are classical foundations and finite exhaustions — Twin Primes, Goldbach, Odd Perfect Numbers, Mersenne Infinitude, and higher Ramsey numbers remain **OPEN**.
 - **Finite computational certificates in `problems/collatz-conjecture/experiments/`** (e.g., Odd-Unit Lock Bridge Collapse Certificate) check finite parameter windows only and prove zero universal statements about Collatz.
 
 ## 2. Citation & Literature Verification Backlog

@@ -127,20 +127,6 @@ def classify_refinement(
             }
         )
 
-    if all_die:
-        interpretation = (
-            f"For the measured R={base_bits} repeat bridges, every "
-            "higher-precision previous-lock lift tested here fails to be "
-            "a higher-precision next-lock hit."
-        )
-    else:
-        interpretation = (
-            f"At least one measured R={base_bits} repeat bridge survives at a "
-            "tested higher precision as an algebraic lock bridge. Use the "
-            "state-lift microscope to check whether the observed merged orbit "
-            "state lies in the surviving lifted residue class."
-        )
-
     return {
         "high_bits": high_bits,
         "previous_high_lock_lifts": len(previous_high_locks),
@@ -197,6 +183,19 @@ def run(args: argparse.Namespace) -> dict[str, object]:
         for family in families
         for refinement in family["refinements"]
     )
+    if all_die:
+        interpretation = (
+            f"For the measured R={base_bits} repeat bridges, every "
+            "higher-precision previous-lock lift tested here fails to be "
+            "a higher-precision next-lock hit."
+        )
+    else:
+        interpretation = (
+            f"At least one measured R={base_bits} repeat bridge survives at a "
+            "tested higher precision as an algebraic lock bridge. Use the "
+            "state-lift microscope to check whether the observed merged orbit "
+            "state lies in the surviving lifted residue class."
+        )
     projection_mismatches = sum(
         int(refinement["low_projection_mismatches"])
         for family in families

@@ -114,4 +114,19 @@ Every modified and newly created artifact underwent a third full hostile pass be
 
 ## 7. Cross-Atlas Resolution Verdict
 
-Full primary-evidence reconciliation against `0thernes/unsolved-problems-mega-atlas` (1,900 problems) and all 11 sibling `0thernes` repositories is published in [`docs/CROSS_ATLAS_AUDIT_2026-11-25.md`](../CROSS_ATLAS_AUDIT_2026-11-25.md): **0 / 1,900** flagship Mega-Atlas macro problems are closed by `0thernes`; **3** specific 2026 sub-conjectures are proved in companion Lean 4.35.0 preprints (awaiting peer review), and **11** Mega-Atlas macro IDs have certified Lean 4.35.0 partial progress, exact finite minima, refutations, or structural barriers.
+Full primary-evidence reconciliation against `0thernes/unsolved-problems-mega-atlas` (`v2.4.0`, 1,900 problems) and all companion `0thernes` repositories is published in [`docs/CROSS_ATLAS_AUDIT_2026-11-25.md`](../CROSS_ATLAS_AUDIT_2026-11-25.md): **0 / 1,900** flagship Mega-Atlas macro problems are closed by `0thernes`; all 7 companion `0TH-2026-004..012` preprints are explicitly reconciled with parent status `OPEN` (or `N/A` for standalone `0TH-2026-006`).
+
+---
+
+## Cycle 4 — Post-`v0.4.0` Hostile Deep Refinement & `v0.5.0` Escalation
+
+After `v0.4.0` (`f811c9b`) passed 100% green across all GitHub Actions jobs (CI `45724228403` + SLSA Release `45724232811`), an additional hostile AST/syntax/reference sweep across the entire repository uncovered two hidden defects and six opportunities to match and exceed sibling `unsolved-problems-mega-atlas v2.4.0`:
+
+| ID | Class | Location | Defect / Opportunity | Resolution & Permanent Guard (`v0.5.0`) |
+|---|---|---|---|---|
+| **C4-BUG-01** | `bug` | `problems/collatz-conjecture/experiments/odd_unit_lock_bridge_refinement.py` | Real Python `NameError` (`all_die` undefined inside `classify_refinement()`, `interpretation` undefined inside `run()`), missed previously because `ruff` only linted `scripts/ rag/ tests/ examples/`. | Relocated `if all_die: interpretation = ...` cleanly into `run()`; added `ruff check --select E9,F63,F7,F82 problems/collatz-conjecture/experiments` to CI and pytest. |
+| **C4-ERR-01** | `error` | `README.md`, `SECURITY.md`, `docs/{operations,threat-model,glossary}.md`, `docs/adr/0002-multi-kernel-lean-core.md` | 18 stale pre-migration `formal/` paths and `Build Standard v1.1.0` references survived `v0.4.0`. | Reconciled all 18 active references to `lean/` and `Build Standard v1.2.0`; added automated stale-reference regression check in `tests/test_verification_ladder.py`. |
+| **C4-GAP-01** | `gap` | `lean/` | Formal core covered 4 domains / 22 theorems / 36 declarations. | Expanded zero-Mathlib Lean 4.35.0 core to **8 domains / 45 headline theorems / 10 witnesses / 14 adversarial refutations = 69 audited declarations** (adding `Primes.lean`, `Goldbach.lean`, `PerfectNumbers.lean`, `Ramsey.lean`, Lonely Runner $n=3$, Brocard $n \le 20$), all passing all 6 independent kernels. |
+| **C4-GAP-02** | `gap` | `ro-crate-metadata.json`, `croissant.json` | Missing machine-readable FAIR dataset descriptors. | Authored RO-Crate 1.1 and MLCommons Croissant 1.0 JSON-LD descriptors, tracked in `data/MANIFEST.sha256` (40 files) and schema-checked in pytest. |
+| **C4-GAP-03** | `gap` | `.github/workflows/pages.yml`, `scripts/build_site.py` | Pages workflow was `workflow_dispatch`-only and blueprint covered 4 domains. | Activated auto-deploy on push to `main` and upgraded `_site/blueprint.html` to all 8 domains / 45 theorems. |
+| **C4-ERR-02** | `error` | `paper/Donahue_2026_unsolved_mathematics_atlas.tex` | Draft `\code{\nolinkurl{...}}` stripped spaces and italicized inside theorems; 4 tables overflowed `\textwidth`; zero-axiom count off by 1 (`13` vs `12`). | Fixed with `\PassOptionsToPackage{obeyspaces}{url}` + `\upshape`, `tabularx`, exact count `12`, 15-field corruption TikZ chart, and 8-domain bus DAG — compiled to a 10-page **0-warning / 0-overfull** PDF verified page-by-page visually. |

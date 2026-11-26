@@ -296,4 +296,22 @@ public theorem erdos_straus_mordell_exceptions_small :
          es_scale 17 17 (by decide) h17, es_scale 19 19 (by decide) h19,
          es_scale 23 23 (by decide) h23, es_scale 29 29 (by decide) h29⟩
 
+/-- **Cyclic denominator symmetry:** `IsErdosStrausSol n x y z → IsErdosStrausSol n y z x`. -/
+public theorem erdos_straus_symmetry (n x y z : Nat) (h : IsErdosStrausSol n x y z) :
+    IsErdosStrausSol n y z x := by
+  have ⟨hx, hy, hz, heq⟩ := h
+  refine ⟨hy, hz, hx, ?_⟩
+  have hl : 4 * y * z * x = 4 * x * y * z := by ac_rfl
+  have hr : z * x + y * x + y * z = y * z + x * z + x * y := by
+    have h1 : z * x = x * z := Nat.mul_comm z x
+    have h2 : y * x = x * y := Nat.mul_comm y x
+    rw [h1, h2]; omega
+  rw [hl, hr, heq]
+
+/-- **Unconditional small-range check (`2 ≤ n ≤ 30`):** every integer in `[2, 30]`
+    lies outside Mordell's 6 exceptional classes mod 840 and admits a solution. -/
+public theorem erdos_straus_all_le_30 (n : Nat) (hlo : 2 ≤ n) (hhi : n ≤ 30) :
+    HasErdosStraus n :=
+  erdos_straus_mordell_840 n hlo (by omega) (by omega) (by omega) (by omega) (by omega) (by omega)
+
 end FormalAtlas

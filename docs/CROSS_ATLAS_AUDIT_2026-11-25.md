@@ -1,57 +1,49 @@
-# Cross-Atlas Resolution & Progress Audit (2026-11-25)
+# Cross-Atlas Resolution & Progress Audit (2026-11-25, Synchronized to Mega-Atlas `v2.4.0`)
 
 **Scope:** Primary-evidence cross-audit of:
-1. **`0thernes/unsolved-problems-mega-atlas`** (`outputs/MegaAtlas_Unsolved_Problems_V2.json`, **1,900** unsolved problems across 8 macro pillars and 28 superdomains, plus 20 `recently_resolved_benchmarks`).
-2. **`0thernes/unsolved-mathematics`** (`data/problems.yaml`, **106** ranked open mathematical problems across 38 fields, plus its Lean 4.35.0 6-kernel formal core in `lean/`).
-3. **All 11 `0thernes` research repositories** audited from their primary `CLAIMS.md`, `README.md`, and Lean 4.35.0 proof files as of **2026-11-25**.
+1. **`0thernes/unsolved-problems-mega-atlas` (`v2.4.0`)** (`outputs/MegaAtlas_Unsolved_Problems_V2.json`, **1,900** deduplicated unsolved problems across 8 macro pillars and 28 superdomains, `5,808` biconnected graph edges, `92` Pure Lean 4.35.0 internal-invariant theorems across 6 kernels, plus 20 `recently_resolved_benchmarks`).
+2. **`0thernes/unsolved-mathematics` (`v0.5.0`)** (`data/problems.yaml`, **106** ranked open mathematical problems across 38 fields, plus its standalone zero-Mathlib Lean 4.35.0 6-kernel formal core in `lean/` covering **45 headline theorems + 10 non-vacuity witnesses + 14 adversarial refutations = 69 audited declarations** across **8 open-problem domains**).
+3. **All companion `0thernes` research repositories & `0thernes-research-archive` preprints** audited from primary `CLAIMS.md`, `paper/main.tex`, and Lean 4.35.0 proof files as of **2026-11-25**.
 
 ---
 
 ## 1. Executive Verdict — Did `0thernes` Solve Any of the 1,900 Mega-Atlas Problems?
 
-> **Strict Honest Answer:** **ZERO (0 / 1,900)** of the flagship macro-level problems cataloged in `0thernes/unsolved-problems-mega-atlas` have been completely solved or closed by `0thernes` repositories. Every matched macro problem (`CS-001`, `CS-026`, `CS-051`, `CS-053`, `QM-011`, `SUB-032`, `NEURO-027`, `NT-005`, `NT-066`, `NT-078`, `COMB-046`) remains **OPEN** at the general level — exactly as each lab's own `CLAIMS.md` ledger transparently states.
+> **Strict Honest Answer:** **ZERO (`0 / 1,900`)** of the overarching macro-level problems cataloged in `0thernes/unsolved-problems-mega-atlas` (`v2.4.0`) have been completely solved or retired by `0thernes` repositories — independently confirmed by `unsolved-problems-mega-atlas` `CLAIMS.md` (`C10`) and every individual lab's `CLAIMS.md`.
 
-However, the primary-evidence audit separates **three distinct epistemic tiers** of genuine `0thernes` contributions:
+Primary-evidence separation across **three strict epistemic tiers**:
 
-### Tier A — 3 Specific Published 2026 Sub-Conjectures Completely Proved (Lean 4.35.0 Verified Preprints, Pending Peer Review)
+### Tier A — 7 Companion Independent Preprints in `0thernes-research-archive` (Narrowly Scoped Results; Self-Published, Pending Peer Review)
 
-None of these three specific sub-conjectures is broken out as its own standalone macro entry among the 1,900 Mega-Atlas IDs (one sits strictly inside the `QM-011` sub-frontier; the other two sit in discrete probability and catalytic computing frontiers not separately indexed in Mega-Atlas V2):
+Synchronized verbatim with `unsolved-problems-mega-atlas v2.4.0` (`paper/main.tex` Table 6):
 
-| # | Repository | Specific Sub-Conjecture Resolved | Verification Status | Relation to Mega-Atlas (1,900) |
-|---|---|---|---|---|
-| 1 | `0thernes/multinomial-tv-conjecture` | **Conjecture 7.7 of Banić & Elezović** (`arXiv:2610.17046v1` / `arXiv:2611.14735v1`): exact multinomial discrete total-variation adjacent constant $a_\triangle = \frac{1}{32} - \frac{4\sqrt{3}}{243}$ | Machine-checked in Lean 4.35.0 (author preprint; not yet peer-reviewed) | Not listed among the 1,900 Mega-Atlas macro entries (`0` hits for `multinomial`) |
-| 2 | `0thernes/pauli-contextuality-lab` | **Jonah's Conjecture E** (all 9 vertex cases for $N \ge 4$), exact Case C3 optima (`368` vs `344`), and disjoint Mermin degrees $(7^k - 5^k)/2$ | Machine-checked in Lean 4.35.0 (note: single-orbit transitivity [J3 Thm B4] is a cited paper input; Jonah's preprints are unrefereed Zenodo preprints) | Strict sub-frontier of **`QM-011`** (*Quantum Contextuality, Ontological Models & Psi-Ontic vs. Psi-Epistemic*); does NOT close macro `QM-011` |
-| 3 | `0thernes/catalytic-register-frontiers` | **Vinciguerra (`arXiv:2609.18692`)** 2-register positive-characteristic dichotomy (`T1`) and optimal 3-register powering exponent $\log_{13}(8) \approx 0.810714$ (`T3d`/`T3f`/`T3h`/`T3i`) | Machine-checked in Lean 4.35.0 (Zenodo DOI `10.5281/zenodo.24517198`; not yet peer-reviewed) | Pure-CS catalytic-register frontier not listed in Mega-Atlas (all chemistry hits for `catalytic` are chemical catalysis; `CS-005` is macro P vs PSPACE) |
-
-### Tier B — 11 Mega-Atlas Macro IDs With Certified Lean 4.35.0 Partial Progress, Exact Finite Minima, Refutations, or Formal Barriers
-
-| Mega-Atlas ID | Mega-Atlas Problem | Mega-Atlas `status_2026` | `0thernes` Repository | Certified Partial Progress / Barrier / Refutation | Macro Problem Status |
+| Archive ID | Repository | Parent Mega-Atlas ID(s) | Verification | Narrowly Scoped Result | Overarching Parent Status |
 |---|---|---|---|---|---|
-| **`CS-053`** | Exact Capacity Region of Colluding, Coded & Byzantine PIR | Partially Solved / Special Cases | `coded-pir-mlwe-complexity-lab` | `T1a`–`T1f`: Koszul–Veronese domination, $\mathbb{F}_{11}$ Byzantine $2/5$, scale-128 polymatroid barrier $8/13 > 3/5$, $\mathbb{P}^3$ impossibility | **OPEN** |
-| **`CS-026`** | Exact Quantum & Classical Hardness of Post-Quantum Lattice Problems | Active Breakthroughs / Frontier | `coded-pir-mlwe-complexity-lab`, `secmesh-pqsi` | `T2a`–`T2d`: Refutation of Luo `arXiv:2604.15858`, Chen Step 9 DFT cancellation, FIPS 203 $\mathrm{CBD}_2/\mathrm{CBD}_3$ $4.96\times$ Rényi-2 cliff, QGTL Berry curvature; 27 Lean theorems in `secmesh-pqsi` | **OPEN** |
-| **`CS-001`** | P versus NP Problem | Completely Open | `coded-pir-mlwe-complexity-lab`, `p-vs-np-frontier-lab` | `T3a`–`T3d`, `C1`–`C14` structural barrier & circuit-complexity formalizations | **OPEN** |
-| **`CS-051`** | Optimal Length of Constant-Query (3-Query) Locally Decodable Codes | Active Breakthroughs / Frontier | `coded-pir-mlwe-complexity-lab`, `p-vs-np-frontier-lab` | Related complexity/coding barrier checks | **OPEN** |
-| **`QM-011`** | Quantum Contextuality, Ontological Models & Psi-Ontic vs. Psi-Epistemic | Partially Solved / Special Cases | `kochen-specker-extremal-lab`, `pauli-contextuality-lab` | Certified pool minima `31` in $B(3,2)$ and `18` in $B(4,1)$ + Jonah Conjecture E sub-frontier | **OPEN** |
-| **`SUB-032`** | Non-Archimedean / $p$-adic AdS/CFT Holography Continuum Limit | Active Breakthroughs / Frontier | `ultrametrica` | 101 Lean proofs including curved discrete Gauss–Bonnet identities on ultrametric trees | **OPEN** |
-| **`NEURO-027`** | Working Memory Maintenance: Persistent Spiking vs. Activity-Silent | Active Breakthroughs / Frontier | `human-synapse-bouton-lab` | Lean 4.35.0 biophysical synaptic-bouton modeling workbench | **OPEN** |
-| **`NT-005`** | Collatz Conjecture ($3n+1$) | Independent / Undecidable Suspected | `unsolved-mathematics` (`lean/`) | 6-kernel Lean 4.35.0 structural core: Terras bijection, affine orbit law, cycle numerator identity, no finite 2-adic cover, positivity localization, parity-word composition, negative cycles (`-5`, `-17`), $3n-1$ $\varepsilon$-invariance barrier | **OPEN** |
-| **`NT-078`** | Erdős–Straus Conjecture ($4/n$ Egyptian Fractions) | Partially Solved / Special Cases | `unsolved-mathematics` (`lean/`) | 6-kernel Lean 4.35.0 Mordell mod-840 reduction covering 834/840 classes (99.29%), multiplicative closure, and certified witnesses for the 6 smallest exceptional squares $\{121, 169, 289, 361, 529, 841\}$ | **OPEN** |
-| **`COMB-046`** | Lonely Runner Conjecture (Wills–Cusick) | Active Breakthroughs / Frontier | `unsolved-mathematics` (`lean/`) | 6-kernel Lean 4.35.0 all-$n$ rational sharpness of $\frac{1}{n+1}$, speed-scaling invariance, and base cases $n \in \{1, 2\}$ | **OPEN** |
-| **`NT-066`** | Brocard's Problem ($n! + 1 = m^2$) | Completely Open | `unsolved-mathematics` (`lean/`) | 6-kernel Lean 4.35.0 exhaustive classification for $n \le 15$ (`{4, 5, 7}` only) + modular constraint $n \ge 4 \Rightarrow n! + 1 \equiv 1 \pmod 4$ | **OPEN** |
+| `0TH-2026-012` | `coded-pir-mlwe-complexity-lab` | `CS-053`, `CS-026`, `CS-001`, `CS-051` | Lean 4.35.0 (`6/6` kernels) | Koszul–Veronese syzygy rank ($4/7 \to 10/17$), LFSR domination, Chen Step 9 DFT cancellation, Luo refutation, $8/13$ polymatroid barrier, $\mathbb{F}_{11}$ Byzantine witness | **OPEN** |
+| `0TH-2026-011` | `secmesh-pqsi` | 13 Crypto / QC IDs (`CS-026`, etc.) | Lean 4.35.0 (`6/6` kernels) | 27 algebraic/IT/QGT invariants including $c_{\mathrm{eff}}^2 + C^2 = 1$ and sharp FIPS 203 $|e| \le 831$ | **OPEN** |
+| `0TH-2026-010` | `catalytic-register-frontiers` | `CS-005` (rel.) | Lean 4.35.0 (`7` kernels; Zenodo `10.5281/zenodo.24517198`) | Resolved Vinciguerra (`arXiv:2609.18692`) base-$p$ 2-register passive catalytic dichotomy and unique optimal 3-register powering exponent $\log_{13}(8) \approx 0.810714$ | **OPEN** |
+| `0TH-2026-009` | `pauli-contextuality-lab` | `QM-011` | Lean 4.35.0 / Mathlib (`6/6`) | Resolved Jonah's Conjecture E (9 vertex cases, $N \ge 4$, citing single-orbit transitivity as preprint input), disjoint Mermin degrees $(7^k-5^k)/2$, 4-qubit $C_3$ optima (`368` vs `344`) | **OPEN** |
+| `0TH-2026-004` | `kochen-specker-extremal-lab` | `QM-011` | Lean 4.35.0 (`6/6`) + DRUP | Exact minimum KS ray counts inside restricted pools (`31, 33, 18, 29`) | **OPEN** |
+| `0TH-2026-006` | `multinomial-tv-conjecture` | `STAT-001` (rel.; standalone) | Lean 4.35.0 / Mathlib | Resolved Banić–Elezović Conjecture 7.7 (`arXiv:2610.17046v1` / `arXiv:2611.14735v1`): $a_\triangle = \frac{1}{32} - \frac{4\sqrt{3}}{243}$ | **N/A (not a macro entry)** |
+| `0TH-2026-007/8` | `human-synapse-bouton-lab` | `NEURO-001`, `NEURO-019`, `NEURO-027` | Lean 4.35.0 (`6/6`) | 18 biophysical invariants + refuted pre-registered 40 Hz ATP sustainability ($f_{\mathrm{crit}} = 29.5625$ Hz) | **OPEN** |
 
-### Tier C — External Mathematical Literature Discrepancies Identified Between the Two Atlases
+*(Additional formal companion: `ultrametrica` — 101 Lean proofs including curved discrete Gauss–Bonnet on ultrametric trees related to `SUB-032`, parent **OPEN**.)*
 
-Comparing the 106 problems in `unsolved-mathematics` against the 1,900 entries in `unsolved-problems-mega-atlas` (`V2`, 2026-11-21 snapshot):
+### Tier B — 8 Open-Problem Domains Formalized in `unsolved-mathematics` (`lean/`, `v0.5.0`, 45 Headline Theorems + 24 Checks = 69 Declarations)
 
-1. **Corpus overlap:** **96 / 106** problems in `unsolved-mathematics` match directly (score ≥ 15) to entries in `unsolved-problems-mega-atlas`, plus **3** more (`erdos-straus-conjecture` → `NT-078`, `caccetta-haggkvist-conjecture` → `COMB-017`, `erdos-hajnal-conjecture` → `COMB-003`) matched by title/diacritic normalization (**99 / 106** direct catalog overlap), plus **`moving-sofa-problem`** (`SOLV-05`) and **`connes-embedding-aftermath`** (`SOLV-11`) appearing in `recently_resolved_benchmarks`. Only **5** specialized entries in `unsolved-mathematics` (`hilbert-sixteenth-problem`, `mandelbrot-locally-connected`, `one-third-two-thirds-conjecture`, `kothe-conjecture`, `telescope-conjecture`) have no direct standalone match in Mega-Atlas V2.
-2. **Erdős Unit Distance (`GEOM-069` vs `unit-distance-problem`):** Mega-Atlas V2 (`2026-11-21`) still lists `GEOM-069` as `Partially Solved / Special Cases` citing the 1984 $O(n^{4/3})$ bound, whereas `unsolved-mathematics` (`v0.3.0+`) integrates the live-verified May 2026 disproof preprint `arXiv:2605.20695` (with explicit pending-peer-review caveat).
-3. **12 Fall/Nov 2026 AI Proof Claims in Mega-Atlas (`status_2026: "AI Proof Claim (Fall/Nov 2026) — Under Verification"`):** Mega-Atlas tracks 12 unrefereed Fall/Nov 2026 AI-assisted proof claims (`NT-001` RH, `NT-002` GRH, `NT-023` Chowla, `NT-060` Artin, `ALG-010` Alperin, `ALG-011` Donovan, `ALG-045` Auslander–Reiten, `ALG-048` Lech, `ANL-001` 3D Navier–Stokes, `CS-017` APSP, `CS-018` ETH/SETH/3SUM, `QM-002` Yang–Mills). Consistent with `unsolved-mathematics`'s strict epistemic policy (`CLAIMS.md`, `LIMITATIONS.md`), **none of these 12 problems is promoted to `recently-resolved` until independent community verification and peer-reviewed consensus occur.**
+| Mega-Atlas ID | `unsolved-mathematics` Slug (Rank) | Lean 4.35.0 Module (`lean/FormalAtlas/`) | Certified Structural Results (6/6 Kernels) | Macro Status |
+|---|---|---|---|---|
+| `NT-005` | `collatz-conjecture` (#21) | `Collatz.lean` (14 thms) | Terras bijection, affine & intercept laws, Böhm–Sontacchi cycle eq., parity-word cocycle, zero fixed point, non-negativity, positivity localization ($\rho_w \le -1$), negative cycles (`-5`, `-17`), $3n-1$ $\varepsilon$-invariance barrier | **OPEN** |
+| `NT-078` | `erdos-straus-conjecture` (#97) | `ErdosStraus.lean` (5 thms) | Mordell mod-840 covering (834/840 = `99.29%`), multiplicative closure, symmetry, all $2 \le n \le 30$, and all 6 smallest exceptional squares `{121, 169, 289, 361, 529, 841}` | **OPEN** |
+| `COMB-046` | `lonely-runner-conjecture` (#88) | `LonelyRunner.lean` (7 thms) | All-$n$ rational sharpness $\delta \le 1/(n+1)$, base cases $n \in \{1,2\}$, scaling invariance, period shift, time reversal, and $n=3$ across all non-div-4 triples (7/8 parity classes) | **OPEN** |
+| `NT-066` | `brocard-problem` (#79) | `Brocard.lean` (7 thms) | Brown pairs `{4,5,7}`, mod-3 / mod-4 / mod-10 invariants, and exhaustive classification through $n \le 20$ ($20!+1 = 2.43 \times 10^{18}$) | **OPEN** |
+| `NT-004` | `twin-prime-conjecture` (#6) | `Primes.lean` (4 thms) | Euclid's infinitude of primes, arbitrary prime gaps via $(k+1)!+2$, oddness of primes $\ge 3$, and twin-prime mod-6 structure ($6 \mid p+1$ for $p \ge 4$) | **OPEN** |
+| `NT-003` | `goldbach-conjecture` (#2) | `Goldbach.lean` (3 thms) | Finite strong Goldbach for every even $4 \le n \le 100$, odd binary obstruction ($p=2 \lor q=2$), and concrete failure at `11` | **OPEN** |
+| `NT-076` / `NT-077` | `odd-perfect-numbers` (#8), `mersenne-primes-infinitude` (#9) | `PerfectNumbers.lean` (3 thms) | Algebraic proof of Mersenne exponent necessity ($2^n-1$ prime $\Rightarrow n$ prime), first 4 even perfect numbers `{6, 28, 496, 8128}`, and finite odd-perfect exclusion for $n \le 100$ | **OPEN** |
+| `COMB-002` | `ramsey-numbers` | `Ramsey.lean` (2 thms) | Exact Ramsey number $R(3,3) = 6$ from first principles (upper bound on $K_6$ + explicit symmetric $C_5$ lower bound on $K_5$) | **OPEN** |
 
----
+### Tier C — Overlap & External Frontier Reconciliation
 
-## 2. Reproducibility
-
-This cross-audit was produced directly from:
-- `https://raw.githubusercontent.com/0thernes/unsolved-problems-mega-atlas/main/outputs/MegaAtlas_Unsolved_Problems_V2.json` (`1,900` problem records, `20` resolved benchmarks)
-- `data/problems.yaml` (`106` problem records)
-- Local verified `CLAIMS.md` and Lean 4.35.0 proof manifests across all 11 sibling `0thernes` repositories as of `2026-11-25`.
+1. **Catalog overlap:** **99 / 106** problems in `unsolved-mathematics` map directly to entries in `unsolved-problems-mega-atlas` (`v2.4.0`), plus **2** (`moving-sofa-problem` `SOLV-05`, `connes-embedding-aftermath` `SOLV-11`) in its 20 `recently_resolved_benchmarks`; only 5 specialized problems have no standalone Mega-Atlas ID.
+2. **Erdős Unit Distance (`GEOM-069` vs `unit-distance-problem`):** `unsolved-mathematics` integrates the live-verified May 2026 disproof preprint `arXiv:2605.20695` (Alon–Bloom–Gowers–Litt–Sawin–Shankar–Tsimerman–Wang–Wood) with explicit pending-peer-review caveats.
+3. **12 Fall/Nov 2026 AI Proof Claims:** Both atlases strictly agree (`mega-atlas` `C6` and `unsolved-mathematics` `C-08`) that all 12 Fall/Nov 2026 AI proof claims (`NT-001` RH, `NT-002` GRH, `ANL-001` 3D Navier–Stokes, `QM-002` Yang–Mills, etc.) remain **unretired / `open`** pending human-readable exposition and community consensus.

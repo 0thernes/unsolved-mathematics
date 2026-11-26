@@ -642,3 +642,221 @@ def test_regression_v040_faq_and_claims_session_label_consistency():
         txt = (ROOT / rel).read_text(encoding="utf-8")
         assert "claude-opus-4-6" not in txt, f"Conflicting session label in {rel}"
         assert "claude-opus-4-8" in txt, f"Missing historical session label disclosure in {rel}"
+
+
+# --------------------------------------------------------------------------- #
+#  Cycle 4 (v0.5.0) 8-Domain Lean Oracles, FAIR Metadata & Bug Regression Tests
+# --------------------------------------------------------------------------- #
+def _is_prime(n: int) -> bool:
+    if n < 2:
+        return False
+    if n < 4:
+        return True
+    if n % 2 == 0:
+        return False
+    d = 3
+    while d * d <= n:
+        if n % d == 0:
+            return False
+        d += 2
+    return True
+
+
+def _div_sum_pairs(n: int) -> int:
+    if n == 0:
+        return 0
+    total = 0
+    limit = math.isqrt(n)
+    for d in range(1, limit + 1):
+        if n % d == 0:
+            q = n // d
+            total += d if d == q else d + q
+    return total
+
+
+def test_oracle_v050_brocard_exhaustive_le_20_and_mod3_mod10():
+    """Differential check matching Brocard le_20, mod3 (>=3), and mod10 (>=5)."""
+    sols = []
+    for n in range(0, 21):
+        val = math.factorial(n) + 1
+        m = math.isqrt(val)
+        if m * m == val:
+            sols.append((n, m))
+        if n >= 3:
+            assert val % 3 == 1
+        if n >= 5:
+            assert val % 10 == 1
+    assert sols == [(4, 5), (5, 11), (7, 71)]
+
+
+def test_oracle_v050_lonely_runner_n3_nondiv4_and_symmetries():
+    """Differential check matching period_shift, neg_time, and n3_nondiv4 (7/8 mod-4 classes)."""
+    def far_enough(m: int, p: int, q: int, v: int) -> bool:
+        r = (p * v) % q
+        return q <= m * r and q <= m * (q - r)
+
+    for m, p, q, v in ((3, 1, 6, 3), (3, 1, 6, 10), (4, 1, 4, 3), (2, 1, 2, 5)):
+        assert far_enough(m, p, q, v)
+        assert far_enough(m, p + q, q, v)
+        assert far_enough(m, -p, q, v)
+
+    checked = 0
+    for v1 in range(1, 16):
+        if v1 % 4 == 0:
+            continue
+        for v2 in range(v1 + 1, 17):
+            if v2 % 4 == 0:
+                continue
+            for v3 in range(v2 + 1, 18):
+                if v3 % 4 == 0:
+                    continue
+                assert all(far_enough(4, 1, 4, v) for v in (v1, v2, v3))
+                checked += 1
+    assert checked >= 150
+
+
+def test_oracle_v050_primes_euclid_gaps_and_twin_mod6():
+    """Differential check matching FormalAtlas.Primes (Euclid, gaps, odd >=3, twin mod 6)."""
+    for k in range(1, 11):
+        m = math.factorial(k + 1) + 2
+        assert all(not _is_prime(m + i) for i in range(k))
+    for p in range(3, 500):
+        if _is_prime(p):
+            assert p % 2 == 1
+            if p >= 4 and _is_prime(p + 2):
+                assert p % 6 == 5
+
+
+def test_oracle_v050_goldbach_even_le_100_and_odd_11():
+    """Differential check matching FormalAtlas.Goldbach (4..100 even + odd obstruction + failure at 11)."""
+    primes = [p for p in range(2, 101) if _is_prime(p)]
+    prime_set = set(primes)
+    for n in range(4, 101, 2):
+        assert any((n - p) in prime_set for p in primes if p <= n // 2), f"Goldbach failed at {n}"
+    for bad_odd in (11, 27):
+        assert not any((bad_odd - p) in prime_set for p in primes if p < bad_odd)
+
+
+def test_oracle_v050_perfect_numbers_mersenne_and_no_odd_le_100():
+    """Differential check matching FormalAtlas.PerfectNumbers (divSum, {6,28,496,8128}, Mersenne, odd<=100)."""
+    for n in range(1, 201):
+        naive = sum(d for d in range(1, n + 1) if n % d == 0)
+        assert _div_sum_pairs(n) == naive
+    for p in (6, 28, 496, 8128):
+        assert _div_sum_pairs(p) == 2 * p
+    for odd in range(1, 101, 2):
+        assert _div_sum_pairs(odd) != 2 * odd
+    for n in range(2, 20):
+        if _is_prime((1 << n) - 1):
+            assert _is_prime(n)
+    assert (1 << 11) - 1 == 23 * 89 and not _is_prime((1 << 11) - 1)
+
+
+def test_oracle_v050_ramsey_R33_exact_6():
+    """Exhaustive differential proof of R(3,3) = 6 over all 2^15 K_6 colorings and C_5 on K_5."""
+    # Lower bound: symmetric C_5 coloring on K_5 has zero monochromatic triangles
+    def c5(i: int, j: int) -> bool:
+        d = (j - i) % 5
+        return d == 1 or d == 4
+
+    for a in range(5):
+        for b in range(a + 1, 5):
+            for c in range(b + 1, 5):
+                assert not (c5(a, b) == c5(b, c) == c5(a, c))
+
+    # Upper bound: every one of the 2^15 = 32,768 2-colorings of K_6 has a monochromatic triangle
+    edges = [(i, j) for i in range(6) for j in range(i + 1, 6)]
+    edge_idx = {e: idx for idx, e in enumerate(edges)}
+    tri_masks = [
+        (1 << edge_idx[(a, b)]) | (1 << edge_idx[(b, c)]) | (1 << edge_idx[(a, c)])
+        for a in range(6)
+        for b in range(a + 1, 6)
+        for c in range(b + 1, 6)
+    ]
+    for coloring in range(1 << 15):
+        assert any((coloring & m) == m or (coloring & m) == 0 for m in tri_masks)
+
+
+def test_regression_v050_collatz_experiments_no_name_or_syntax_errors():
+    """Guard against C4-BUG-01: all Collatz experiment scripts parse cleanly with zero F82/E9 errors."""
+    import ast
+    import shutil
+
+    exp_dir = ROOT / "problems" / "collatz-conjecture" / "experiments"
+    py_files = sorted(exp_dir.rglob("*.py"))
+    assert py_files
+    for pyf in py_files:
+        ast.parse(pyf.read_text(encoding="utf-8"), filename=str(pyf))
+
+    ruff_bin = shutil.which("ruff")
+    if ruff_bin:
+        proc = subprocess.run(
+            [ruff_bin, "check", "--select", "E9,F63,F7,F82", str(exp_dir)],
+            cwd=ROOT,
+            capture_output=True,
+            text=True,
+        )
+        assert proc.returncode == 0, f"ruff E9/F82 failed on Collatz experiments:\n{proc.stdout}\n{proc.stderr}"
+
+
+def test_contract_v050_fair_ro_crate_and_croissant_metadata():
+    """Validate RO-Crate 1.1 and MLCommons Croissant 1.0 JSON-LD descriptors and referenced files."""
+    version = (ROOT / "VERSION").read_text(encoding="utf-8").strip()
+
+    ro = json.loads((ROOT / "ro-crate-metadata.json").read_text(encoding="utf-8"))
+    assert ro["@context"] == "https://w3id.org/ro/crate/1.1/context"
+    graph = {node["@id"]: node for node in ro["@graph"]}
+    assert graph["./"]["version"] == version
+    parts = [p["@id"] for p in graph["./"]["hasPart"]]
+    assert len(parts) >= 14
+    for rel in parts:
+        assert (ROOT / rel).exists(), f"RO-Crate missing referenced file: {rel}"
+
+    cr = json.loads((ROOT / "croissant.json").read_text(encoding="utf-8"))
+    assert cr["conformsTo"] == "http://mlcommons.org/croissant/1.0"
+    assert cr["version"] == version
+    for dist in cr["distribution"]:
+        assert (ROOT / dist["contentUrl"]).exists(), f"Croissant missing referenced file: {dist['contentUrl']}"
+
+
+def test_regression_v050_no_stale_formal_dir_references():
+    """Guard against C4-ERR-01: active docs must reference lean/ rather than legacy formal/."""
+    checked = [
+        "README.md",
+        "SECURITY.md",
+        "AGENTS.md",
+        "REPLICATION.md",
+        "CLAIMS.md",
+        "LIMITATIONS.md",
+        "docs/operations.md",
+        "docs/threat-model.md",
+        "docs/glossary.md",
+        "docs/configuration.md",
+        "docs/adr/0002-multi-kernel-lean-core.md",
+    ]
+    for rel in checked:
+        txt = (ROOT / rel).read_text(encoding="utf-8")
+        assert "cd formal" not in txt, f"Stale 'cd formal' in {rel}"
+        assert "formal/FormalAtlas" not in txt, f"Stale 'formal/FormalAtlas' in {rel}"
+        assert "formal/VerifyAxioms.lean" not in txt, f"Stale 'formal/VerifyAxioms.lean' in {rel}"
+        assert "formal/Challenge.lean" not in txt, f"Stale 'formal/Challenge.lean' in {rel}"
+
+
+def test_regression_v050_blueprint_contains_all_eight_domains(tmp_path: Path):
+    """Verify _site/blueprint.html renders all 8 domains and headline v0.5.0 Lean theorems."""
+    import build_site
+
+    build_site.build_site(tmp_path / "_site")
+    bp_txt = (tmp_path / "_site" / "blueprint.html").read_text(encoding="utf-8")
+    for token in (
+        "thm_collatz_positivity_localization",
+        "thm_erdos_straus_all_le_30",
+        "thm_lonely_runner_n3_nondiv4",
+        "thm_brocard_exhaustive_le_20",
+        "thm_euclid_infinitely_many_primes",
+        "thm_goldbach_even_le_100",
+        "thm_mersenne_exponent_prime",
+        "thm_ramsey_R33_upper",
+        "thm_ramsey_R33_lower",
+    ):
+        assert token in bp_txt, f"Missing v0.5.0 theorem {token} in blueprint.html"

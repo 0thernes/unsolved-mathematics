@@ -12,7 +12,8 @@
 - [REPLICATION.md](REPLICATION.md): Clean-clone reproduction protocol (Python + Lean 4.35.0 + Tectonic)
 - [PHILOSOPHY.md](PHILOSOPHY.md): Epistemic principles and research methodology
 - [ARCHITECTURE.md](ARCHITECTURE.md): Data model, build pipeline, and RAG architecture
-- [lean/STATEMENT_FIDELITY.md](lean/STATEMENT_FIDELITY.md): Line-by-line Lean 4.35.0 statement fidelity audit (22 theorems + 6 witnesses + 8 adversarial refutations)
-- [paper/Donahue_2026_unsolved_mathematics_atlas.pdf](paper/Donahue_2026_unsolved_mathematics_atlas.pdf): Compiled publication-grade AMS-LaTeX white paper
-- [docs/CROSS_ATLAS_AUDIT_2026-11-25.md](docs/CROSS_ATLAS_AUDIT_2026-11-25.md): Cross-check of 1,900 Mega-Atlas problems, 106 Atlas problems, and 11 `0thernes` research repositories
-- [docs/reviews/2026-11-25-three-cycle-hardening-audit.md](docs/reviews/2026-11-25-three-cycle-hardening-audit.md): Full 3-cycle, 10-class forensic & red-team hardening audit
+- [lean/STATEMENT_FIDELITY.md](lean/STATEMENT_FIDELITY.md): Line-by-line Lean 4.35.0 statement fidelity audit (45 theorems + 10 witnesses + 14 adversarial refutations across 8 domains)
+- [paper/Donahue_2026_unsolved_mathematics_atlas.pdf](paper/Donahue_2026_unsolved_mathematics_atlas.pdf): Compiled publication-grade 10-page AMS-LaTeX white paper
+- [ro-crate-metadata.json](ro-crate-metadata.json) & [croissant.json](croissant.json): FAIR RO-Crate 1.1 & MLCommons Croissant 1.0 dataset descriptors
+- [docs/CROSS_ATLAS_AUDIT_2026-11-25.md](docs/CROSS_ATLAS_AUDIT_2026-11-25.md): Synchronized cross-check of 1,900 Mega-Atlas `v2.4.0` problems, 106 Atlas problems, and companion `0thernes` research repositories
+- [docs/reviews/2026-11-25-three-cycle-hardening-audit.md](docs/reviews/2026-11-25-three-cycle-hardening-audit.md): Full 4-cycle, 10-class forensic & red-team hardening audit

@@ -9,7 +9,7 @@ personal data.
 
 ## Threat Surface
 
-- Supply-chain integrity of Python dependencies (`requirements.txt`, `pyproject.toml`, `requirements-lock.txt`) and Lean 4 toolchain pins (`formal/lean-toolchain`, `formal/lake-manifest.json`).
+- Supply-chain integrity of Python dependencies (`requirements.txt`, `pyproject.toml`, `requirements-lock.txt`) and Lean 4 toolchain pins (`lean/lean-toolchain`, `lean/lake-manifest.json`).
 - Untrusted input parsing in `rag/retriever.py`, `scripts/generate.py`, and experiment analyzers (no `eval`, `exec`, `pickle`, or `yaml.load` — only `yaml.safe_load` and `json.loads`).
 - Proof-assistant soundness and adversarial definition drift (mitigated via `lake check --paranoid` across six independent kernels and `lake comparator --paranoid`).
 

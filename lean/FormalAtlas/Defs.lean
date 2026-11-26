@@ -1,14 +1,20 @@
 module
 
+-- SPDX-License-Identifier: MIT
+
 /-!
 # FormalAtlas.Defs — Minimal Trusted Definitions
 
-Pure Lean 4 definitions (no Mathlib dependency) for the four unsolved-problem
-structural cores formalized in The Unsolved Mathematics Atlas:
+Pure Lean 4 definitions (no Mathlib dependency) for the eight open-problem
+structural cores formalized in The Unsolved Mathematics Atlas (`v0.5.0`):
   1. Collatz Conjecture & 3n-1 Sibling Control
   2. Erdős–Straus Conjecture (4/n = 1/x + 1/y + 1/z)
   3. Lonely Runner Conjecture (exact rational circular distance)
   4. Brocard's Problem (n! + 1 = m²)
+  5. Prime Infinitude, Prime Gaps & Twin Primes (`IsPrime`)
+  6. Goldbach's Conjecture (binary prime sums)
+  7. Odd Perfect Numbers & Mersenne Primes (`divSum`, `IsPerfect`)
+  8. Ramsey Theory (`HasMonoTriangle` on complete graphs `K_k`)
 
 Every definition is intentionally elementary and `@[expose]`d so a mathematician
 can audit statement fidelity against the published literature in under two minutes.
@@ -107,5 +113,49 @@ namespace FormalAtlas
 /-- `(n, m)` is a Brown-number solution to Brocard's equation `n! + 1 = m²`. -/
 @[expose] public def IsBrocardSol (n m : Nat) : Prop :=
   fact n + 1 = m * m
+
+-- ============================================================================
+-- 5. Primality, Divisors, Perfect Numbers & Graph Ramsey Colorings
+-- ============================================================================
+
+/-- Textbook primality: `p ≥ 2` and its only natural divisors are `1` and `p`. -/
+@[expose] public def IsPrime (p : Nat) : Prop :=
+  2 ≤ p ∧ ∀ d : Nat, d ∣ p → d = 1 ∨ d = p
+
+/-- Structurally recursive integer square root `⌊√n⌋` (exact for all `n < 2^32`). -/
+@[expose] public def isqrtAux (n lo hi : Nat) : Nat → Nat
+  | 0 => lo
+  | fuel + 1 =>
+    if hi ≤ lo + 1 then lo
+    else
+      let mid := (lo + hi) / 2
+      if mid * mid ≤ n then isqrtAux n mid hi fuel
+      else isqrtAux n lo mid fuel
+
+@[expose] public def isqrt (n : Nat) : Nat :=
+  if n == 0 then 0 else isqrtAux n 1 (n + 1) 32
+
+/-- Sum of all positive divisors `σ(n) = ∑_{d ∣ n} d`, computed over divisor pairs
+    `1 ≤ d ≤ ⌊√n⌋` (`d` and `n / d`, counting `d` once when `d * d = n`). -/
+@[expose] public def divSumPairs (n : Nat) : Nat → Nat
+  | 0 => 0
+  | d + 1 =>
+    let k := d + 1
+    let contrib :=
+      if n % k == 0 then
+        if k * k == n then k else k + n / k
+      else 0
+    contrib + divSumPairs n d
+
+@[expose] public def divSum (n : Nat) : Nat :=
+  divSumPairs n (isqrt n)
+
+/-- Textbook perfect number: `n > 0` and `σ(n) = 2n`. -/
+@[expose] public def IsPerfect (n : Nat) : Prop :=
+  0 < n ∧ divSum n = 2 * n
+
+/-- A 2-coloring `c : Fin k → Fin k → Bool` of `K_k` contains a monochromatic triangle. -/
+@[expose] public def HasMonoTriangle {k : Nat} (c : Fin k → Fin k → Bool) : Prop :=
+  ∃ a b d : Fin k, a.val < b.val ∧ b.val < d.val ∧ c a b = c b d ∧ c a b = c a d
 
 end FormalAtlas

@@ -24,6 +24,7 @@ point here. Edit this file, never the pointers.
   - `meta-analyses/` — 106 AI-assisted surveys (all explicitly labeled AI-generated, not peer-reviewed)
   - `docs/` — architecture, methodology, indexes, Cross-Atlas Audit (`docs/CROSS_ATLAS_AUDIT_2026-11-25.md`), ADRs (`docs/adr/`), forensic/red-team reviews (`docs/reviews/`), run log (`docs/run-log.md`)
   - `ERRATA.md` — append-only post-release correction & withdrawal ledger
+  - `ro-crate-metadata.json`, `croissant.json` — machine-readable FAIR RO-Crate 1.1 & MLCommons Croissant 1.0 dataset metadata
 - **Status:** active
 
 ## Commands
