@@ -30,6 +30,13 @@ rag = [
   "sentence-transformers>=3.0,<6.0",
 ]
 
+# This is a data-and-scripts research atlas, not an importable Python package.
+# Explicitly disable automatic package discovery so editable installs do not
+# mistake the top-level `data/`, `lean/`, `paper/`, `problems/`, `rag/`, and
+# `schema/` research directories for seven Python distributions.
+[tool.setuptools]
+packages = []
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-q"
