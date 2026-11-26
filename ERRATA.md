@@ -26,3 +26,45 @@ This file maintains the public, append-only errata and correction ledger for **T
 | `2026-11-25` | `v0.4.0` | `bug` | `problems/collatz-conjecture/experiments/odd_unit_lock_bridge_refinement.py` | Misplaced `if all_die: interpretation = ...` block inside `classify_refinement()` caused runtime `NameError` (`all_die` undefined in `classify_refinement`, `interpretation` undefined in `run()`). Relocated block into `run()` and added a permanent `ruff --select E9,F63,F7,F82` guard in CI and pytest. | `v0.5.0` (`0604df5`) |
 | `2026-11-25` | `v0.4.0` | `error` | `SECURITY.md`, `README.md`, `docs/{operations,threat-model,glossary}.md`, `docs/adr/0002-multi-kernel-lean-core.md` | 18 stale pre-migration `formal/` path references and `Build Standard v1.1.0` strings remained after the `v0.4.0` `formal/` → `lean/` migration. Reconciled all active docs to `lean/` and `Build Standard v1.2.0` and added an automated stale-reference regression test. | `v0.5.0` (`0604df5`) |
 | `2026-11-26` | `v0.5.0` | `hole` | `lean/FormalAtlas/Defs.lean` (`isqrt`), `lean/lakefile.toml` | `Defs.isqrt` passed fixed fuel `32` to `isqrtAux`, which was exact for all `v0.5.0` witnesses ($n \le 8128$) and $n < 2^{32}$ but silently truncated for $n \ge 2^{32}$; additionally `lean/lakefile.toml` did not explicitly enforce `autoImplicit = false`. Raised `isqrt` fuel to `n`, proved `isqrt_spec` unconditionally for ALL $n \in \mathbb{N}$ in `PerfectNumbers.lean` (unlocking general `thm_euclid_even_perfect`), and enabled `autoImplicit = false` in `lean/lakefile.toml`. | `v0.6.0` |
+
+---
+
+## 2026-11-26 statement audit
+
+An independent statement audit of `v0.5.0` (commit `0604df5`) was carried out on 2026-11-26. Audit log: <https://github.com/0thernes/0thernes-research-archive/blob/main/docs/reviews/2026-11-26-statement-audit.md>. The claim documents (`README.md`, `CLAIMS.md`, `LIMITATIONS.md`, `docs/`) and the descriptive text of `lean/formalization.yaml` were corrected in place. The items below sit in the frozen white paper, in `lean/` documentation, or in the Lean sources, and are recorded here instead of being edited. The 12 declarations added in `v0.6.0` were not part of the audit.
+
+### White paper (`paper/Donahue_2026_unsolved_mathematics_atlas.tex` and the `v0.6.0` PDF)
+
+1. **Where:** abstract (tex line 74, "the $3n-1$ barrier"); Explicit Non-Claim box (tex lines 108-112, "or methodological no-go barrier"); Section "Domain I" title (tex line 356, "$3n-1$ Sibling Barrier"); Theorem item at tex line 381 ("$\varepsilon$-Invariance barrier").
+   **What is wrong:** the wording presents a formal barrier. `thm_collatz_epsilon_invariance_barrier` states only that the $3n-1$ map $T_-$ has the Terras parity-word bijection for every $d$ and positive supercritical cycles at $5$ (period 3) and $17$ (period 11). No Lean statement quantifies over arguments or proofs.
+   **Correction:** read these passages as "the $3n-1$ sibling comparison". The inference that arguments which do not distinguish $\varepsilon = \pm 1$ cannot settle $3n+1$ is a heuristic, not a formalized theorem.
+   **Affects a theorem statement:** no. The Lean statement and its mathematical content in the tex item at line 381 are correct; only the label and the summary wording overstate it.
+
+2. **Where:** Explicit Non-Claim box (tex lines 110-112, "Lonely Runner for $n \ge 4$ and uniform $n$ ... remain open") and the Lonely Runner theorem block (tex lines 415-431).
+   **What is wrong:** the state of the art is misstated and prior work is not credited. The Lonely Runner conjecture is proved for up to 13 runners in recent preprints: Rosenfeld, arXiv:2509.14111 (8 runners); Trakulthongchai, arXiv:2511.22427 (9 and 10 runners); Sungkawichai and Trakulthongchai, arXiv:2604.23906 (11 to 13 runners). The 4-runner case formalized as `thm_lonely_runner_n3` is classical (Betke–Wills 1972; Cusick 1973, as cited in `lean/STATEMENT_FIDELITY.md`).
+   **Correction:** "the Lonely Runner conjecture remains open in general; it is proved for up to 13 runners (preprints above). The cases $n \le 3$ formalized here are classical."
+   **Affects a theorem statement:** no.
+
+### `lean/` documentation (not edited in this pass)
+
+3. **Where:** `lean/STATEMENT_FIDELITY.md` line 65 (row 30, `thm_lonely_runner_n3_nondiv4`, "Elementary mod-4 coverage (7/8 classes)"); also the historical `CHANGELOG.md` entry for `[0.5.0]` ("all `7/8` mod-4 residue combinations").
+   **What is wrong:** the hypothesis is $4 \nmid v_1, v_2, v_3$. Of the $4^3 = 64$ residue classes of speed triples mod 4, $3^3 = 27$ satisfy it. No reading gives 7/8. The proof uses the single witness $t = 1/4$.
+   **Correction:** "27 of 64 speed-triple residue classes mod 4 (no speed divisible by 4), witness $t = 1/4$".
+   **Affects a theorem statement:** no. The Lean statement is correct; the coverage figure in the prose is wrong.
+
+4. **Where:** `lean/STATEMENT_FIDELITY.md` line 119 ("$n \ge 4$ and the general uniform conjecture for all $n$ remain OPEN").
+   **What is wrong:** $n = 4$ to $12$ (5 to 13 runners) are proved in the preprints cited in item 2.
+   **Correction:** "not formalized here for $n \ge 4$; proved in the literature for up to 13 runners; open in general".
+   **Affects a theorem statement:** no.
+
+### Known issues in the formal code (not yet fixed)
+
+5. **Where:** `lean/FormalAtlas/Collatz.lean` lines 8-9 (module docstring, "no-go barriers"), lines 698-701 (section comment and docstring, "ε-Invariance / Sign-Blindness Barrier"), and the declaration name `thm_collatz_epsilon_invariance_barrier` (`lean/Challenge.lean` line 54, `lean/Solution.lean` line 58).
+   **What is wrong:** the name and docstrings describe a barrier that the statement does not contain (see item 1).
+   **Correction:** in a future release, reword the docstrings to "3n-1 sibling comparison" and consider a neutral alias for the declaration. Renaming requires updating `Challenge.lean`, `comparator.json` and `VerifyAxioms.lean` together.
+   **Affects a theorem statement:** no.
+
+6. **Where:** `lean/FormalAtlas/Defs.lean` lines 140-155 (`divSumPairs`, `divSum`, `IsPerfect`).
+   **What is wrong:** `divSum n` sums divisor pairs up to `isqrt n`. `isqrt_spec` is now proved, but no Lean lemma states that `divSum n` equals $\sum_{d \mid n} d$. The agreement is checked only by pytest differential tests.
+   **Correction:** add a lemma `divSum n = ∑ d ∣ n, d` (or an equivalent list-based statement) and cite it in `STATEMENT_FIDELITY.md`.
+   **Affects a theorem statement:** yes, in its reading. `thm_perfect_numbers_first_four`, `thm_no_odd_perfect_le_100` and `thm_euclid_even_perfect` are kernel-checked statements about `IsPerfect` as defined. Their identification with the textbook statements ($\sigma(n) = 2n$) rests on the missing lemma.

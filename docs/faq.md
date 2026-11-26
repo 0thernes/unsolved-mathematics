@@ -2,7 +2,7 @@
 
 ## 1. Does this repository claim to solve any open mathematical conjecture?
 
-**No.** Every open problem in the 106-problem catalog remains open unless the external mathematical community has produced a verifiable resolution (such as `unit-distance-problem`, updated to `recently-resolved` with explicit peer-review caveats following the May 2026 disproof `arXiv:2605.20695`). The Lean 4.35.0 formal core in `lean/` proves **structural lemmas, finite cases, and methodological barriers** — never full solutions of open conjectures. See [`CLAIMS.md`](../CLAIMS.md) and [`LIMITATIONS.md`](../LIMITATIONS.md).
+**No.** Every open problem in the 106-problem catalog remains open unless the external mathematical community has produced a verifiable resolution (such as `unit-distance-problem`, updated to `recently-resolved` with explicit peer-review caveats following the May 2026 disproof `arXiv:2605.20695`). The Lean 4.35.0 formal core in `lean/` proves **structural lemmas and finite cases** (classical or elementary results) — never full solutions of open conjectures. Its Collatz "$\varepsilon$-invariance" theorem records facts about the $3n-1$ map; the methodological reading drawn from it is a heuristic, not a formalized theorem. See [`CLAIMS.md`](../CLAIMS.md) and [`LIMITATIONS.md`](../LIMITATIONS.md).
 
 ## 2. Why is `problems/collatz-conjecture/` so much larger than the other 105 dossiers?
 

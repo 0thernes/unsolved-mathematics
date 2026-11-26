@@ -42,11 +42,17 @@ automation:
 review_status: "Not peer-reviewed; mechanically checked by Lean 4.35.0 multi-kernel stack, lake comparator, and live negative kernel rejection"
 scope_and_limitations: >
   Formalizes 53 structural theorems, classical foundations, modular reductions,
-  sharpness bounds, finite exhaustions, and no-go barriers across eight open-problem
+  sharpness bounds, finite exhaustions, and a 3n-1 sibling-map comparison (not a
+  formal barrier theorem) across eight open-problem
   domains (Collatz 18 incl. positive-cycle subcriticality & denominator bounds,
   Erdős–Straus 5, Lonely Runner 8 incl. COMPLETE n=3 for all positive triples,
   Brocard 7 incl. n ≤ 20, Primes/Twin Primes 4, Goldbach 3 incl. 4 ≤ n ≤ 100,
   Odd Perfect/Mersenne Primes 4 incl. Euclid's Even Perfect Number Theorem for all p ≥ 2,
   and Ramsey Theory 4 proving exact R(3,3)=6 and R(3,4)=9), paired with 12 concrete
   non-vacuity witnesses and 16 explicit adversarial false-variant refutations (81
-  audited declarations). Explicitly does NOT prove any open conjecture.
+  audited declarations). All results are classical or elementary; the 4-runner
+  Lonely Runner case is classical, and the conjecture is proved for up to 13
+  runners in recent preprints (arXiv:2509.14111, arXiv:2511.22427,
+  arXiv:2604.23906). Challenge.lean holds the sorry-stated comparator
+  specifications; the proof modules contain no sorry. Explicitly does NOT prove
+  any open conjecture.

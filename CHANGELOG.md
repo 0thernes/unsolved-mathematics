@@ -5,6 +5,16 @@ Format follows [Keep a Changelog](https://keepachangelog.com/); versions follow
 [SemVer](https://semver.org/) on the *structure/schema* (content grows
 continuously between structural versions).
 
+## [Unreleased] — 2026-11-26 statement audit corrections
+
+### Fixed (claim documents; no Lean, paper or data changes)
+- Corrected the prose to match the independent statement audit of `v0.5.0` ([audit log](https://github.com/0thernes/0thernes-research-archive/blob/main/docs/reviews/2026-11-26-statement-audit.md)) in `README.md`, `CLAIMS.md`, `LIMITATIONS.md`, `docs/faq.md`, `docs/glossary.md`, `docs/CROSS_ATLAS_AUDIT_2026-11-25.md` and the descriptive text of `lean/formalization.yaml`.
+- `thm_collatz_epsilon_invariance_barrier` is now described as what it states (the $3n-1$ map shares the Terras bijection and has positive cycles at 5 and 17). The "no-go barrier" reading is labelled a heuristic, not a formalized theorem.
+- The `thm_lonely_runner_n3_nondiv4` coverage figure is 27 of 64 speed-triple classes mod 4, not 7/8 (the `[0.5.0]` entry below keeps the old figure as a historical record).
+- Added prior-work credit: the 4-runner case is classical (Betke–Wills 1972; Cusick 1973), and the Lonely Runner conjecture is proved for up to 13 runners in recent preprints (arXiv:2509.14111, arXiv:2511.22427, arXiv:2604.23906).
+- "0 `sorry`" now reads "0 `sorry` in the proof modules"; `lean/Challenge.lean` holds the `sorry`-stated comparator specifications by design. The comparator scope (53 headline theorems) is stated separately from the six-kernel `lake check --paranoid` scope.
+- Recorded errors in the frozen white paper, in `lean/STATEMENT_FIDELITY.md` and in the Lean sources (docstrings; the missing `divSum` = $\sigma$ lemma) in `ERRATA.md` under "2026-11-26 statement audit". Regenerated `data/MANIFEST.sha256` for the edited `ERRATA.md` and `lean/formalization.yaml`.
+
 ## [0.6.0] — 2026-11-26
 
 ### Added (Cycle 5 Bleeding-Edge Milestone · Complete Lonely Runner $n\le 3$ · Euclid Even-Perfect · Exact Ramsey $R(3,4)=9$ · Dual Cryptographic Timestamps)
