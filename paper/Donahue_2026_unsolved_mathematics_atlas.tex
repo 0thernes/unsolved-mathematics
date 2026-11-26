@@ -12,7 +12,7 @@
 \usepackage{xurl}
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta,positioning}
-\usepackage[colorlinks=true,linkcolor=blue!60!black,citecolor=teal!60!black,urlcolor=blue!60!black,pdftitle={The Unsolved Mathematics Atlas (v0.5.0): Six-Kernel Formal Core and Audit},pdfauthor={Alexander S. Donahue}]{hyperref}
+\usepackage[colorlinks=true,linkcolor=blue!60!black,citecolor=teal!60!black,urlcolor=blue!60!black,pdftitle={The Unsolved Mathematics Atlas (v0.6.0): Six-Kernel Formal Core and Audit},pdfauthor={Alexander S. Donahue}]{hyperref}
 
 \emergencystretch=2.5em
 \tolerance=1200
@@ -32,8 +32,8 @@
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\code}[1]{{\upshape\nolinkurl{#1}}}
 
-\title[The Unsolved Mathematics Atlas (Version 0.5.0): Six-Kernel Formal Core \& Audit]{%
-  The Unsolved Mathematics Atlas (Version 0.5.0):\\
+\title[The Unsolved Mathematics Atlas (Version 0.6.0): Six-Kernel Formal Core \& Audit]{%
+  The Unsolved Mathematics Atlas (Version 0.6.0):\\
   A Standalone Eight-Domain, Six-Kernel Lean 4.35.0 Formal Core,\\
   Empirical Citation \& Retraction Audit,\\
   and Cross-Atlas Epistemic Verification Framework}
@@ -43,14 +43,15 @@
 \email{0\_0@0thernes.art}
 \urladdr{https://github.com/0thernes/unsolved-mathematics}
 \thanks{ORCID: \href{https://orcid.org/0009-0006-8168-9648}{\texttt{0009-0006-8168-9648}}.
-Repository release \texttt{v0.5.0} (November 25, 2026). All Lean 4.35.0 proofs and Python tools
-are MIT-licensed; prose, tables, and datasets are CC BY 4.0. Transparent AI-assistance and
-conflict-of-interest disclosures appear in Section~\ref{sec:governance}.}
+Repository release \texttt{v0.6.0} (November 26, 2026; Archive ID \texttt{0TH-BUILD-004}).
+All Lean 4.35.0 proofs and Python tools are MIT-licensed; prose, tables, and datasets are
+CC BY 4.0. Transparent AI-assistance and conflict-of-interest disclosures appear in
+Section~\ref{sec:governance}.}
 
 \subjclass[2020]{Primary 03B35, 11B83, 11D68, 11D61, 11A41; Secondary 05D10, 11J71, 68V15, 68V20}
 \keywords{Lean 4, multi-kernel verification, Collatz conjecture, Erd\H{o}s--Straus conjecture,
-Lonely Runner conjecture, Brocard's problem, Goldbach conjecture, Ramsey theory,
-citation verification, FAIR datasets, epistemic hygiene}
+Lonely Runner conjecture, Brocard's problem, Euclid even perfect numbers, Ramsey theory,
+citation verification, RFC 3161 timestamps, FAIR datasets, epistemic hygiene}
 
 \begin{document}
 
@@ -58,43 +59,35 @@ citation verification, FAIR datasets, epistemic hygiene}
 Large language models can rapidly draft mathematical surveys, yet unverified AI-assisted
 corpora suffer systematically from fabricated bibliographic identifiers, unhedged proof claims,
 definitional drift, silent indexing collisions, and opaque provenance. We present
-\textbf{The Unsolved Mathematics Atlas} (\texttt{v0.5.0}), an open, reproducible, FAIR-indexed
-research catalog of 106 unsolved mathematical problems across 38 fields paired with an
-end-to-end epistemic verification stack. Our contributions are fourfold.
-First, we report a live primary-source citation and retraction audit across all 554
-identifier-bearing bibliography rows: 445 identifiers verified cleanly against the arXiv and
-Crossref REST APIs, while \textbf{109 invalid or mismatched identifiers (19.7\% overall,
-peaking at 36.4\% in Dynamical Systems and 30.6\% in Geometric Topology)} were detected and
-purged; a subsequent Crossref and DataCite retraction audit of all 220 verified DOIs confirmed
-\textbf{0 retractions} and logged \textbf{3 publisher errata/corrections}.
-Second, we construct a standalone, zero-Mathlib \textbf{Lean 4.35.0} formal core (\code{lean/})
-certifying \textbf{45 headline theorems}, \textbf{10 concrete non-vacuity witnesses}, and
-\textbf{14 explicit adversarial false-variant refutations} (\textbf{69 audited declarations})
-across \textbf{eight} canonical open-problem domains: Collatz (14 theorems, including Terras's
-bijection, B\"ohm--Sontacchi cycle equation, unconditional positivity localization
-$\rho_w \le -1$, negative cycles $-5$/$-17$, and the $3n-1$ $\varepsilon$-invariance barrier),
-Erd\H{o}s--Straus (5 theorems: Mordell's 834/840 modular reduction, multiplicative closure,
-cyclic symmetry, $2 \le n \le 30$, and all six smallest exceptional squares), Lonely Runner
-(7 theorems: all-$n$ rational sharpness $\delta \le 1/(n+1)$, $n \in \{1,2\}$, scaling,
-periodicity, time reversal, and $n=3$ across all non-divisible-by-4 triples), Brocard's problem
-(7 theorems: Brown pairs, mod-3/4/10 invariants, and exhaustive classification through
-$n \le 20$, $20!+1 = 2.43 \times 10^{18}$), Primes and Twin Primes (4 theorems: Euclid's
-infinitude, arbitrary prime gaps, oddness $\ge 3$, twin-prime mod-6 structure), Goldbach
-(3 theorems: even $4 \le n \le 100$, odd binary obstruction, failure at $11$), Odd Perfect and
-Mersenne Primes (3 theorems: algebraic proof of Mersenne prime exponent necessity, first four
-even perfect numbers, odd-perfect exclusion $n \le 100$), and Ramsey Theory (2 theorems:
-exact first-principles determination of $R(3,3)=6$). Every declaration uses zero \code{sorry},
-zero \code{native_decide}, and axioms strictly within \texttt{\{propext, Classical.choice, Quot.sound\}},
-and passes independent replay across all \textbf{six} Lean 4.35.0 kernels plus
-\code{lake comparator}.
-Third, we present a synchronized Cross-Atlas resolution audit against
-\code{unsolved-problems-mega-atlas} (\texttt{v2.4.0}, 1,900 macro problems) and all seven
-companion \code{0thernes-research-archive} preprints, affirming strictly \textbf{0/1,900}
-macro-problem retirements.
-Fourth, we document a four-cycle, 10-class hardening protocol achieving 100.0\% (68/68)
-compliance on Build Standard \texttt{v1.2.0} across Windows and Ubuntu, 100\% targeted mutation
-kill rate, RO-Crate 1.1 and Croissant 1.0 FAIR metadata, SHA-256 dataset manifests, and SLSA
-build provenance. \textbf{No open conjecture in the catalog is claimed to be solved by this work.}
+\textbf{The Unsolved Mathematics Atlas} (\texttt{v0.6.0}), an open, reproducible, FAIR-indexed
+catalog of 106 unsolved mathematical problems across 38 fields paired with an end-to-end
+epistemic verification stack. Our contributions are fourfold.
+First, live primary-source auditing across all 554 identifier-bearing rows verified 445
+identifiers via the arXiv and Crossref REST APIs while purging \textbf{109 invalid identifiers
+(19.7\% overall, peaking at 36.4\% in Dynamical Systems and 30.6\% in Geometric Topology)}; a
+Crossref/DataCite retraction audit of all 220 verified DOIs confirmed \textbf{0 retractions}
+and logged \textbf{3 publisher errata}.
+Second, we build a standalone, zero-Mathlib \textbf{Lean 4.35.0} formal core (\code{lean/},
+enforcing \code{autoImplicit = false}) certifying \textbf{53 headline theorems}, \textbf{12
+non-vacuity witnesses}, and \textbf{16 adversarial false-variant refutations} (\textbf{81
+audited declarations}, 13 zero-axiom) across \textbf{eight} domains: Collatz (18 theorems,
+incl.\ Terras's bijection, positivity localization $\rho_w \le -1$, the $3n-1$ barrier, and
+positive-cycle subcriticality $3^o < 2^d$), Erd\H{o}s--Straus (5 theorems, Mordell 834/840),
+Lonely Runner (8 theorems: sharpness, symmetries, and \textbf{complete constructive $n \le 3$}
+for all positive 4-runner triples), Brocard (7 theorems, exhaustive $n \le 20$), Primes/Twins
+(4 theorems), Goldbach (3 theorems, $4\le n\le 100$), Perfect/Mersenne (4 theorems, incl.\ exact
+\code{isqrt} and \textbf{Euclid's even perfect theorem} for all $p \ge 2$), and Ramsey Theory
+(4 theorems: exact \textbf{$R(3,3)=6$} and \textbf{$R(3,4)=9$}). Every declaration uses zero
+\code{sorry}/\code{native_decide}, axioms strictly within \texttt{\{propext, Classical.choice,
+Quot.sound\}}, passes all \textbf{six} Lean 4.35.0 kernels plus \code{lake comparator}, and is
+guarded by a live 3-case negative kernel rejection test.
+Third, a Cross-Atlas audit against \code{unsolved-problems-mega-atlas} (\texttt{v2.7.0}, 1,900
+macro problems, 103 Lean invariants) and 16 companion archive entries across 76 public repos
+affirms strictly \textbf{0/1,900} macro retirements.
+Fourth, five hardening cycles achieve 100.0\% (68/68) Build Standard \texttt{v1.2.0} compliance,
+70 passing tests, 100\% mutation kill rate, RO-Crate 1.1 / Croissant 1.0 FAIR metadata, dual
+DigiCert RFC~3161 (\code{.tsr}) + Bitcoin OpenTimestamps (\code{.ots}) manifest proofs, and SLSA
+provenance. \textbf{No open conjecture in the catalog is claimed to be solved by this work.}
 \end{abstract}
 
 \maketitle
@@ -103,10 +96,10 @@ build provenance. \textbf{No open conjecture in the catalog is claimed to be sol
 
 The proliferation of AI-assisted mathematical writing introduces an acute verification
 asymmetry: generating a fluent survey or plausible proof sketch requires seconds, whereas
-exposing a hallucinated DOI, an unstated Lean axiom, a vacuous hypothesis, or a sign-blind
-Collatz heuristic requires disciplined mechanical infrastructure.
+exposing a hallucinated DOI, an unstated Lean axiom, a hidden implicit variable, a vacuous
+hypothesis, or a sign-blind Collatz heuristic requires disciplined mechanical infrastructure.
 \emph{The Unsolved Mathematics Atlas} (\url{https://github.com/0thernes/unsolved-mathematics},
-release \texttt{v0.5.0}) treats epistemic honesty and machine-checked falsifiability as its
+release \texttt{v0.6.0}) treats epistemic honesty and machine-checked falsifiability as its
 primary engineering invariants.
 
 To eliminate any ambiguity for human referees, institutional evaluators, or automated indexing
@@ -116,17 +109,17 @@ pipelines, we place our hard non-claim boundary at the front of this report:
 mathematical conjectures. Every formally verified theorem in \code{lean/} proves an exact
 structural identity, classical foundation, modular reduction, sharpness bound, finite
 exhaustion, or methodological no-go barrier. Collatz, Erd\H{o}s--Straus (general primes in
-Mordell's six square classes mod 840), uniform Lonely Runner, Brocard finiteness, Twin Primes,
-Goldbach's strong conjecture, Odd Perfect Numbers, Mersenne Infinitude, and higher Ramsey
-numbers ($R(5,5)$ and diagonal asymptotics) all remain \textbf{open}.
+Mordell's six square classes mod 840), Lonely Runner for $n \ge 4$ and uniform $n$, Brocard
+finiteness, Twin Primes, Goldbach's strong conjecture, Odd Perfect Numbers, Mersenne Infinitude,
+and higher Ramsey numbers ($R(5,5)$ and diagonal asymptotics) all remain \textbf{open}.
 \end{quote}
 
 Every substantive assertion across the repository is indexed in \code{CLAIMS.md} under one of
 six explicit epistemic tags---\code{kernel-checked}, \code{machine-checked-ci},
 \code{primary-source-verified}, \code{computational-certificate}, \code{editorial-synthesis},
 and \code{open-conjecture}---each paired with a falsification criterion (``What would prove us
-wrong''). Post-release errors are logged append-only in \code{ERRATA.md} under an explicit
-non-silent correction and withdrawal policy.
+wrong''). Post-release errors and definition-scope tightenings are logged append-only in
+\code{ERRATA.md} under an explicit non-silent correction and withdrawal policy.
 
 \section{Atlas Registry, Deterministic Scoring, and FAIR Architecture}\label{sec:atlas}
 
@@ -156,7 +149,7 @@ verbatim from \code{data/problems.json}.
 
 \begin{table}[htbp]
 \centering
-\caption{Top 15 Ranked Problems in \code{data/problems.json} (\texttt{v0.5.0}, frozen reference year 2026).}
+\caption{Top 15 Ranked Problems in \code{data/problems.json} (\texttt{v0.6.0}, frozen reference year 2026).}
 \label{tab:top15}
 \footnotesize
 \begin{tabular}{@{}rllrrl@{}}
@@ -182,15 +175,19 @@ verbatim from \code{data/problems.json}.
 \end{tabular}
 \end{table}
 
-\subsection{Elimination of Silent Retrieval Collisions and FAIR Metadata}
+\subsection{Retrieval Hygiene, FAIR Metadata, and Dual Cryptographic Timestamps}
 Forensic auditing of pre-\texttt{v0.3.0} releases exposed a silent key-collision defect in
 \code{rag/build_corpus.py}: resetting chunk counters per Markdown heading produced duplicate
 chunk IDs across roughly 80\% of multi-heading sections, silently overwriting vectors during
 dense indexing. Replacing that logic with a monotonic per-\code{(slug, section)} counter
 eliminated all duplicates (enforced by \code{scripts/validate.py} and regression-tested in
-\code{tests/}). Release \texttt{v0.5.0} further ships machine-readable FAIR dataset descriptors
+\code{tests/}). Release \texttt{v0.6.0} ships machine-readable FAIR dataset descriptors
 conforming to \textbf{RO-Crate 1.1} (\code{ro-crate-metadata.json}) and \textbf{MLCommons
-Croissant 1.0} (\code{croissant.json}), validated automatically in pytest.
+Croissant 1.0} (\code{croissant.json}), plus dual third-party cryptographic timestamp proofs
+over \code{data/MANIFEST.sha256} (40 tracked canonical files): a DigiCert RFC~3161 Time-Stamp
+Authority reply (\code{data/MANIFEST.sha256.tsr}) and a 3-calendar Bitcoin OpenTimestamps proof
+(\code{data/MANIFEST.sha256.ots}), both verified offline on every CI push and release tag via
+\code{scripts/timestamp_manifest.py --check}.
 
 \section{Empirical Primary-Source Citation and Retraction Audit}\label{sec:citations}
 
@@ -305,42 +302,44 @@ Roughly 2,100 historical pre-DOI bibliography rows remain explicitly flagged
 
 To eliminate external dependency rot and enable sub-second clean builds plus six-kernel replay,
 \code{lean/} builds strictly on Lean 4.35.0 Core \cite{demoura2021lean4} with \textbf{zero
-Mathlib dependency}. Every \code{.lean} file opens with \code{module} (Palomar isolation rule),
-and \code{lean/Challenge.lean} holds only the 45 isolated theorem signatures ($209$ lines,
-$9.6$\,KiB, well beneath Palomar's $1{,}000$-line / $100$\,KiB caps) judged by
-\code{lake comparator} against \code{lean/Solution.lean}.
+Mathlib dependency} and strict \code{autoImplicit = false} in \code{lean/lakefile.toml}
+(preventing silent unbound variable generalization). Every \code{.lean} file opens with
+\code{module} (Palomar isolation rule), and \code{lean/Challenge.lean} holds only the 53 isolated
+theorem signatures ($238$ lines, $11.0$\,KiB, well beneath Palomar's $1{,}000$-line / $100$\,KiB
+caps) judged by \code{lake comparator} against \code{lean/Solution.lean}.
 
 \begin{figure}[htbp]
 \centering
 \resizebox{\textwidth}{!}{%
 \begin{tikzpicture}[
-  box/.style={draw, rounded corners=4pt, align=center, font=\footnotesize, inner sep=4.5pt, minimum width=2.85cm},
+  box/.style={draw, rounded corners=4pt, align=center, font=\footnotesize, inner sep=4.5pt, minimum width=2.95cm},
+  dom/.style={box, minimum width=3.85cm},
   arr/.style={-{Stealth[length=2.1mm]}, thick, draw=blue!55!black}
 ]
-  \node[box, fill=blue!8] (defs) {\textbf{FormalAtlas.Defs}\\161 LOC $\cdot$ 0 Mathlib};
+  \node[box, fill=blue!8] (defs) {\textbf{FormalAtlas.Defs}\\172 LOC $\cdot$ 0 Mathlib\\\code{autoImplicit = false}};
 
-  \node[box, fill=blue!14, right=0.75cm of defs, yshift=2.45cm] (col) {\textbf{Collatz} (14)};
-  \node[box, fill=teal!12, right=0.75cm of defs, yshift=1.75cm] (es) {\textbf{Erd\H{o}s--Straus} (5)};
-  \node[box, fill=violet!12, right=0.75cm of defs, yshift=1.05cm] (lr) {\textbf{Lonely Runner} (7)};
-  \node[box, fill=orange!14, right=0.75cm of defs, yshift=0.35cm] (bro) {\textbf{Brocard $\le 20$} (7)};
-  \node[box, fill=cyan!12, right=0.75cm of defs, yshift=-0.35cm] (pr) {\textbf{Primes / Twins} (4)};
-  \node[box, fill=yellow!16, right=0.75cm of defs, yshift=-1.05cm] (gb) {\textbf{Goldbach $\le 100$} (3)};
-  \node[box, fill=pink!18, right=0.75cm of defs, yshift=-1.75cm] (pf) {\textbf{Perfect / Mersenne} (3)};
-  \node[box, fill=lime!16, right=0.75cm of defs, yshift=-2.45cm] (rm) {\textbf{Ramsey $R(3,3)=6$} (2)};
+  \node[dom, fill=blue!14, right=0.72cm of defs, yshift=2.45cm] (col) {\textbf{Collatz} (18)};
+  \node[dom, fill=teal!12, right=0.72cm of defs, yshift=1.75cm] (es) {\textbf{Erd\H{o}s--Straus} (5)};
+  \node[dom, fill=violet!12, right=0.72cm of defs, yshift=1.05cm] (lr) {\textbf{Lonely Runner $n\le 3$} (8)};
+  \node[dom, fill=orange!14, right=0.72cm of defs, yshift=0.35cm] (bro) {\textbf{Brocard $\le 20$} (7)};
+  \node[dom, fill=cyan!12, right=0.72cm of defs, yshift=-0.35cm] (pr) {\textbf{Primes / Twins} (4)};
+  \node[dom, fill=yellow!16, right=0.72cm of defs, yshift=-1.05cm] (gb) {\textbf{Goldbach $\le 100$} (3)};
+  \node[dom, fill=pink!18, right=0.72cm of defs, yshift=-1.75cm] (pf) {\textbf{Perfect / Euclid} (4)};
+  \node[dom, fill=lime!16, right=0.72cm of defs, yshift=-2.45cm] (rm) {\textbf{Ramsey $R(3,4)=9$} (4)};
 
-  \node[box, fill=green!12, right=1.15cm of bro, yshift=1.05cm] (sol) {\textbf{Solution.lean}\\45 zero-sorry proofs};
-  \node[box, fill=gray!14, right=1.15cm of pr, yshift=0.0cm] (nv) {\textbf{NonVacuity.lean}\\10 concrete witnesses};
-  \node[box, fill=red!10, right=1.15cm of pf, yshift=-0.25cm] (adv) {\textbf{Adversarial.lean}\\14 false-variant refutations};
+  \node[box, fill=green!12, right=0.95cm of bro, yshift=1.05cm] (sol) {\textbf{Solution.lean}\\53 zero-sorry proofs};
+  \node[box, fill=gray!14, right=0.95cm of pr, yshift=0.0cm] (nv) {\textbf{NonVacuity.lean}\\12 concrete witnesses};
+  \node[box, fill=red!10, right=0.95cm of pf, yshift=-0.25cm] (adv) {\textbf{Adversarial.lean}\\16 false-variant refutations};
 
-  \node[box, fill=green!20, right=0.8cm of nv, yshift=0.35cm, minimum width=3.2cm] (kern)
-    {\textbf{6-Kernel \texttt{bwrap} Audit}\\69/69 decls accepted\\\texttt{lean}, \texttt{leanchecker}, \texttt{lean4lean}\\\texttt{nanoda}, \texttt{con-leche}, \texttt{con-ron}};
+  \node[box, fill=green!20, right=0.75cm of nv, yshift=0.35cm, minimum width=3.35cm] (kern)
+    {\textbf{6-Kernel \texttt{bwrap} + Neg Gate}\\81/81 decls accepted (13 zero-ax)\\\texttt{lean}, \texttt{leanchecker}, \texttt{lean4lean}\\\texttt{nanoda}, \texttt{con-leche}, \texttt{con-ron}};
 
-  \coordinate (busTop) at ([xshift=0.45cm]col.east);
-  \coordinate (busBot) at ([xshift=0.45cm]rm.east);
+  \coordinate (busTop) at ([xshift=0.38cm]col.east);
+  \coordinate (busBot) at ([xshift=0.38cm]rm.east);
   \draw[thick, draw=blue!55!black] (busTop) -- (busBot);
   \foreach \m in {col,es,lr,bro,pr,gb,pf,rm}{
     \draw[arr] (defs.east) -- (\m.west);
-    \draw[thick, draw=blue!55!black] (\m.east) -- ([xshift=0.45cm]\m.east);
+    \draw[thick, draw=blue!55!black] (\m.east) -- ([xshift=0.38cm]\m.east);
   }
   \draw[arr] (busTop |- sol.west) -- (sol.west);
   \draw[arr] (busTop |- nv.west) -- (nv.west);
@@ -350,19 +349,19 @@ $9.6$\,KiB, well beneath Palomar's $1{,}000$-line / $100$\,KiB caps) judged by
   \draw[arr] (adv.east) -- (kern.west);
 \end{tikzpicture}%
 }
-\caption{Eight-domain, six-kernel architecture of \code{FormalAtlas} (\code{lean/}, \texttt{v0.5.0}).}
+\caption{Eight-domain, six-kernel architecture of \code{FormalAtlas} (\code{lean/}, \texttt{v0.6.0}).}
 \label{fig:lean-arch}
 \end{figure}
 
-\subsection{Domain I: Collatz Conjecture \& \texorpdfstring{$3n-1$}{3n-1} Sibling Barrier (14 Theorems)}
+\subsection{Domain I: Collatz Conjecture \& \texorpdfstring{$3n-1$}{3n-1} Sibling Barrier (18 Theorems)}
 Define the shortcut Collatz map $T : \Z \to \Z$ by $T(x) = x/2$ if $2 \mid x$ and $(3x+1)/2$
 otherwise, and its $\varepsilon=-1$ sibling $T_-(x) = x/2$ if $2 \mid x$ and $(3x-1)/2$
 otherwise \cite{terras1976,lagarias1985}. Let $w_d(f, x) \in \{0,1\}^d$ be the length-$d$ parity
 word, $o(f,d,x)$ its odd-step count, and $c(w) \in \Z_{\ge 0}$ its exact affine intercept
 \cite{bernsteinlagarias1996}.
 
-\begin{theorem}[Collatz Structural Core, \code{FormalAtlas/Collatz.lean}]\label{thm:collatz}
-All fourteen statements below are machine-checked in Lean 4.35.0:
+\begin{theorem}[Collatz Structural \& Positive-Cycle Core, \code{FormalAtlas/Collatz.lean}]\label{thm:collatz}
+All eighteen statements below are machine-checked in Lean 4.35.0:
 \begin{enumerate}
   \item \emph{Cylinder affine law (\code{thm_collatz_cylinder_affine_law}):}
     $T^d(2^d q + r) = 3^{o(T,d,r)} q + T^d(r)$.
@@ -390,10 +389,15 @@ All fourteen statements below are machine-checked in Lean 4.35.0:
     $T^3(-5)=-5$ ($o=2$) and $T^{11}(-17)=-17$ ($o=7$), certifying positivity is essential.
   \item \emph{Zero fixed point, intercept non-negativity, and word-length invariants:}
     $T^d(0)=0 \land o(T,d,0)=0$; $0 \le c(w)$; and $|w_d(f,x)| = d$.
+  \item \emph{Positive-cycle obstructions (\code{v0.6.0}, 4 theorems):}
+    For any $d \ge 1$ and $x > 0$ with $T^d(x) = x$, the orbit necessarily takes at least one
+    odd step ($o(T,d,x) \ge 1$), has strictly positive affine intercept ($c(w_d(T,x)) > 0$), and
+    is \emph{strictly subcritical}: $3^{o(T,d,x)} < 2^d$ with $2^d - 3^{o(T,d,x)} \le c(w_d(T,x))$;
+    in particular, no positive length-1 fixed point exists ($\forall x > 0,\ T(x) \ne x$).
 \end{enumerate}
 \end{theorem}
 
-\subsection{Domains II--IV: Erd\H{o}s--Straus, Lonely Runner, and Brocard (19 Theorems)}
+\subsection{Domains II--IV: Erd\H{o}s--Straus, Complete Lonely Runner (\texorpdfstring{$n \le 3$}{n <= 3}), and Brocard (20 Theorems)}
 
 \begin{theorem}[Erd\H{o}s--Straus Core, \code{FormalAtlas/ErdosStraus.lean}, 5 Theorems]
 Write $\mathrm{HasES}(n)$ for $\exists x,y,z \in \N_{>0},\ 4xyz = n(yz + xz + xy)$ \cite{mordell1969,elsholtztao2013}:
@@ -408,17 +412,21 @@ Write $\mathrm{HasES}(n)$ for $\exists x,y,z \in \N_{>0},\ 4xyz = n(yz + xz + xy
 \end{enumerate}
 \end{theorem}
 
-\begin{theorem}[Lonely Runner Core, \code{FormalAtlas/LonelyRunner.lean}, 7 Theorems]
+\begin{theorem}[Complete Lonely Runner Core Through $n \le 3$, \code{FormalAtlas/LonelyRunner.lean}, 8 Theorems]
 With exact integer circular separation $\mathrm{FarEnough}(m,p,q,v) \iff q \le mr \land q \le m(q-r)$
 for $r = (pv) \bmod q$ ($q > 0$) \cite{wills1967,tao2018lonely}:
 \begin{enumerate}
   \item \emph{All-$n$ rational sharpness:} for every $n \ge 1$ and $t = p/q$, speeds
     $\{1,\dots,n\}$ admit $i$ with $\|t \cdot i\| \le \frac{1}{n+1}$ (self-contained finite pigeonhole).
-  \item \emph{Constructive base cases:} full proofs for $n=1$ (gap $\ge 1/2$) and $n=2$ (gap $\ge 1/3$).
   \item \emph{Symmetry group:} exact speed scaling $(q,v) \mapsto (qk,vk)$, period shift
     $p \mapsto p+q$, and time reversal $p \mapsto -p$.
-  \item \emph{Four-runner ($n=3$) parity coverage:} for every triple $(v_1,v_2,v_3)$ with
-    $4 \nmid v_i$ ($7/8$ of mod-4 residue combinations), $t = 1/4$ achieves gap $\ge 1/4$.
+  \item \emph{Complete constructive proofs for $n \in \{1, 2, 3\}$ (\code{v0.6.0}):}
+    unconditional rational witnesses exist for $n=1$ (gap $\ge 1/2$), $n=2$ (gap $\ge 1/3$), and
+    every positive integer speed triple $(v_1, v_2, v_3) \in \Z_{>0}^3$ for $n = 3$
+    (4 runners, gap $\ge 1/4$, \code{thm_lonely_runner_n3}), proved from first principles in zero-Mathlib
+    Lean Core via strong induction on $v_1+v_2+v_3$ (2-adic halving via speed scaling), quarter-shift
+    counting, self-contained B\'ezout congruence, and exact rational nudging in the resonant
+    $4\operatorname{lcm}(u,v) \mid w$ regime (witnessed concretely at $(3,5,60)$ with $t = 61/480$).
 \end{enumerate}
 \end{theorem}
 
@@ -430,11 +438,11 @@ and exhaustive kernel-checked square bracketing proves $(4,5),(5,11),(7,71)$ are
 for all $n \le 20$ (through $20!+1 = 2{,}432{,}902{,}008{,}176{,}640{,}001$, zero \code{native_decide}).
 \end{theorem}
 
-\subsection{Domains V--VIII: Primes, Goldbach, Perfect/Mersenne \& Ramsey \texorpdfstring{$R(3,3)=6$}{R(3,3)=6} (12 Theorems)}
+\subsection{Domains V--VIII: Primes, Goldbach, Euclid Even-Perfect \& Exact Ramsey \texorpdfstring{$R(3,3)=6, R(3,4)=9$}{R(3,3)=6, R(3,4)=9} (15 Theorems)}
 
-\begin{theorem}[Primes, Goldbach, Perfect/Mersenne \& Ramsey Cores, 12 Theorems]
+\begin{theorem}[Primes, Goldbach, Perfect/Mersenne \& Ramsey Cores, 15 Theorems]
 Using textbook primality $\mathrm{IsPrime}(p) \iff p \ge 2 \land \forall d \mid p,\ d = 1 \lor d = p$
-and divisor sum $\sigma(n) = \sum_{d \mid n} d$:
+and unconditionally exact divisor sum $\sigma(n) = \sum_{d \mid n} d$:
 \begin{enumerate}
   \item \emph{Primes \& Twin Primes (\code{FormalAtlas/Primes.lean}, 4 theorems \cite{zhang2014bounded,maynard2015small}):}
     Euclid's theorem ($\forall N,\ \exists p > N,\ \mathrm{IsPrime}(p)$), arbitrary prime gaps
@@ -445,31 +453,39 @@ and divisor sum $\sigma(n) = \sum_{d \mid n} d$:
     every even integer $4 \le n \le 100$ is a sum of two certified primes (via verified computable
     primality \code{isPrimeBool_sound}); any odd binary prime sum $2k+1 = p+q$ forces $p=2 \lor q=2$;
     and binary Goldbach provably fails at $11$.
-  \item \emph{Odd Perfect Numbers \& Mersenne Primes (\code{FormalAtlas/PerfectNumbers.lean}, 3 theorems):}
+  \item \emph{Odd Perfect Numbers \& Mersenne Primes (\code{FormalAtlas/PerfectNumbers.lean}, 4 theorems):}
     pure algebraic factorization $2^a - 1 \mid 2^{ab} - 1$ proves Mersenne prime exponent necessity
     ($\mathrm{IsPrime}(2^n - 1) \implies \mathrm{IsPrime}(n)$ for $n \ge 2$); exact certification
-    of the first four even perfect numbers $\{6, 28, 496, 8128\}$; and exhaustive exclusion of odd
-    perfect numbers for all $n \le 100$.
-  \item \emph{Exact Ramsey Number $R(3,3)=6$ (\code{FormalAtlas/Ramsey.lean}, 2 theorems \cite{ramsey1930,greenwoodgleason1955}):}
-    every 2-coloring of $K_6$ contains a monochromatic triangle (\code{thm_ramsey_R33_upper}),
-    while the explicit symmetric $C_5$ coloring of $K_5$ contains zero monochromatic triangles
-    (\code{thm_ramsey_R33_lower}), establishing $R(3,3) = 6$ from first principles.
+    of $\{6, 28, 496, 8128\}$; exhaustive odd-perfect exclusion for $n \le 100$; and
+    \emph{Euclid's Even Perfect Number Theorem} (\code{thm_euclid_even_perfect}, \code{v0.6.0}):
+    for every $p \ge 2$, $\mathrm{IsPrime}(2^p - 1) \implies \mathrm{IsPerfect}(2^{p-1}(2^p - 1))$,
+    proved directly against \code{divSum} after lifting \code{isqrt}'s fuel from fixed $32$ to $n$ and
+    proving \code{isqrt_spec} unconditionally for all $n \in \N$.
+  \item \emph{Exact Ramsey Numbers $R(3,3)=6$ and $R(3,4)=9$ (\code{FormalAtlas/Ramsey.lean}, 4 theorems \cite{ramsey1930,greenwoodgleason1955}):}
+    every 2-coloring of $K_6$ contains a monochromatic triangle while $C_5$ on $K_5$ has none ($R(3,3)=6$);
+    and in \code{v0.6.0}, every symmetric 2-coloring of $K_9$ contains a red $K_3$ or a blue $K_4$
+    (\code{thm_ramsey_R34_upper}, proved via the Handshaking Lemma parity contradiction $9 \times 3 = 27$
+    odd and neighborhood reduction to \code{ramsey_R33_upper}), while the explicit symmetric circulant
+    $C_8(1,4,7)$ coloring of $K_8$ contains neither (\code{thm_ramsey_R34_lower}), establishing exact
+    $R(3,4) = 9$ from first principles.
 \end{enumerate}
 \end{theorem}
 
 \section{Statement Fidelity, Adversarial Defense, and Six-Kernel Replay}\label{sec:kernels}
 
-Formal proofs can still mislead if definitions deviate from textbooks or hypotheses are vacuous.
-Table~\ref{tab:defs} maps all core definitions in \code{FormalAtlas/Defs.lean} to standard
-mathematical objects; Table~\ref{tab:kernels} summarizes six-kernel independent replay across
-all 69 audited declarations (45 headline theorems, 10 concrete witnesses in \code{NonVacuity.lean},
-and 14 explicit false-variant refutations $\neg P$ in \code{Adversarial.lean}---including
-refuting zero Erd\H{o}s--Straus denominators, false Mersenne converse $2^{11}-1 = 23 \times 89$,
-abundant $12$, $R(3,3) \le 5$, odd Goldbach $11$, and near-square factorials $6!+1, 8!+1, 13!+1, 16!+1$).
+Formal proofs can still mislead if definitions deviate from textbooks, if hypotheses are vacuous,
+or if the checker harness itself is miswired. Table~\ref{tab:defs} maps all core definitions in
+\code{FormalAtlas/Defs.lean} to standard mathematical objects; Table~\ref{tab:kernels} summarizes
+six-kernel independent replay across all 81 audited declarations (53 headline theorems, 12 concrete
+witnesses in \code{NonVacuity.lean}, and 16 explicit false-variant refutations $\neg P$ in
+\code{Adversarial.lean}---including refuting zero Erd\H{o}s--Straus denominators, false Mersenne
+converse $2^{11}-1 = 23 \times 89$, abundant $12$, $R(3,3) \le 5$, $R(3,4) \le 8$, positive Collatz
+length-1 fixed points, odd Goldbach $11$, and near-square factorials $6!+1, 8!+1, 13!+1, 16!+1$)
+plus the live 3-case negative kernel rejection suite (\code{scripts/test_lean_negative.py}).
 
 \begin{table}[htbp]
 \centering
-\caption{Trusted Definition Statement-Fidelity Audit (\code{lean/FormalAtlas/Defs.lean}).}
+\caption{Trusted Definition Statement-Fidelity Audit (\code{lean/FormalAtlas/Defs.lean}, 172 LOC).}
 \label{tab:defs}
 \footnotesize
 \begin{tabularx}{\textwidth}{@{}ll>{\raggedright\arraybackslash}X@{}}
@@ -482,20 +498,20 @@ Lean Declaration & Mathematical Object & Exact Fidelity Notes \\
 \code{FarEnough m p q v} & $\|(p/q)v\| \ge 1/m$ on $\R/\Z$ & Exact integer remainder; zero float error \\
 \code{IsBrocardSol n m} & $n! + 1 = m^2$ over $\N$ & Exact \code{Nat} equality \code{fact n + 1 = m * m} \\
 \code{IsPrime p} & $p \ge 2 \land \forall d \mid p,\ d \in \{1, p\}$ & Literal textbook primality \\
-\code{divSum n}, \code{IsPerfect n} & $\sigma(n) = 2n$ ($n > 0$) & Exact divisor-pair sum over $1 \le d \le \lfloor\sqrt{n}\rfloor$ \\
-\code{HasMonoTriangle c} & Monochromatic $K_3 \subset K_k$ & Strict vertex triple $a < b < d$ with equal colors \\
+\code{isqrt}, \code{divSum}, \code{IsPerfect} & $\lfloor\sqrt{n}\rfloor$, $\sigma(n) = 2n$ ($n > 0$) & \code{isqrt} proved exact $\forall n \in \N$; exact divisor-pair sum \\
+\code{HasMonoTriangle}, \code{HasColorK4} & Monochromatic $K_3$ / $K_4 \subset K_k$ & Strict ascending tuples with equal edge colors \\
 \bottomrule
 \end{tabularx}
 \end{table}
 
 \begin{table}[htbp]
 \centering
-\caption{Independent Six-Kernel Replay Verdict Across All 69 Audited Declarations (\texttt{v0.5.0}).}
+\caption{Independent Six-Kernel Replay \& Live Negative Rejection Verdict Across All 81 Declarations (\texttt{v0.6.0}).}
 \label{tab:kernels}
 \footnotesize
 \begin{tabularx}{\textwidth}{@{}lll>{\raggedright\arraybackslash}X@{}}
 \toprule
-\# & Independent Kernel / Tool & Implementation & Verdict (69 Decls) \\
+\# & Independent Kernel / Gate & Implementation & Verdict (81 Decls, \code{autoImplicit = false}) \\
 \midrule
 1 & \code{lean} (\texttt{v4.35.0}) & Official C++ kernel & \textbf{ACCEPT} (0 \code{sorry} outside \code{Challenge}) \\
 2 & \code{leanchecker-paranoid --fresh} & Standalone C++ checker & \textbf{ACCEPT} (\code{Solution}, \code{NonVacuity}, \code{Adversarial}) \\
@@ -503,43 +519,50 @@ Lean Declaration & Mathematical Object & Exact Fidelity Notes \\
 4 & \code{nanoda_bin} & Rust kernel & \textbf{ACCEPT} (strict 3-axiom whitelist; 0 \code{sorryAx}) \\
 5 & \code{con-leche --verified} & Verified Lean checker & \textbf{ACCEPT} (all 3 minimal proof cones) \\
 6 & \code{con-ron --verified} & Verified Rust checker & \textbf{ACCEPT} (all 3 minimal proof cones) \\
--- & \code{lake comparator --paranoid} & Linux \code{bwrap} isolator & \textbf{ACCEPT} (45/45 exact match in Ubuntu CI) \\
+-- & \code{lake comparator --paranoid} & Linux \code{bwrap} isolator & \textbf{ACCEPT} (53/53 exact match in Ubuntu CI) \\
+-- & \code{scripts/test_lean_negative.py} & Live negative rejection & \textbf{PASS (3/3)} (rejects $6!+1=27^2$, $1/9 \ge 1/3$, \code{sorryAx}) \\
 \bottomrule
 \end{tabularx}
 \end{table}
 
 Every declaration depends strictly on a subset of \texttt{\{propext, Classical.choice, Quot.sound\}}
-(12 declarations use \textbf{zero axioms}), and \code{scripts/check_readme_axioms.py} enforces
+(13 declarations use \textbf{zero axioms}), and \code{scripts/check_readme_axioms.py} enforces
 verbatim \texttt{\#print axioms} parity between \code{VerifyAxioms.lean}, \code{STATEMENT_FIDELITY.md},
 and \code{README.md} on every CI run.
 
 \section{Cross-Atlas Resolution Audit (1,900 Macro Problems)}\label{sec:crossatlas}
 
 To guarantee strict consistency across sibling repositories, \code{docs/CROSS_ATLAS_AUDIT_2026-11-25.md}
-reconciles \code{unsolved-mathematics} (\texttt{v0.5.0}, 106 problems) and all companion
-\code{0thernes-research-archive} preprints against \code{unsolved-problems-mega-atlas}
-(\texttt{v2.4.0}, 1,900 deduplicated problems, 92 internal Lean invariants).
-Table~\ref{tab:crossatlas} summarizes all seven companion preprints verbatim: every overarching
-Mega-Atlas parent problem remains explicitly \textbf{OPEN} (\textbf{0 / 1,900 retired}).
+reconciles \code{unsolved-mathematics} (\texttt{v0.6.0}, Archive ID \code{0TH-BUILD-004}, 106 problems)
+and all companion \code{0thernes-research-archive} entries against \code{unsolved-problems-mega-atlas}
+(\texttt{v2.7.0}, commit \code{541f093}, 1,900 deduplicated problems, 103 internal Lean invariants,
+16 archive entries across 76 public repositories audited November 26, 2026).
+Table~\ref{tab:crossatlas} summarizes representative companion entries synchronized verbatim with
+Mega-Atlas \texttt{v2.7.0}: every overarching Mega-Atlas parent problem remains explicitly
+\textbf{OPEN} (\textbf{0 / 1,900 retired}).
 
 \begin{table}[htbp]
 \centering
 \caption{Synchronized Cross-Atlas Non-Retirement Audit Against \code{unsolved-problems-mega-atlas}
-(\texttt{v2.4.0}, 1,900 Macro Problems). All companion preprints are self-published and not yet
-externally peer-reviewed.}
+(\texttt{v2.7.0}, 1,900 Macro Problems, 16 Archive Entries Across 76 Public Repos). All companion
+preprints are self-published and pending external peer review.}
 \label{tab:crossatlas}
 \scriptsize
 \begin{tabularx}{\textwidth}{@{}ll>{\raggedright\arraybackslash}Xl@{}}
 \toprule
-Archive ID & Parent Mega-Atlas ID(s) & Narrowly Scoped Result (Lean 4.35.0) & Parent \\
+Archive ID & Parent Mega-Atlas ID(s) & Narrowly Scoped Result (Lean 4.35.0, 6/6 Kernels) & Parent \\
 \midrule
-\code{0TH-2026-012} & \code{CS-053}, \code{CS-026}, \code{CS-001}, \code{CS-051} & Koszul--Veronese syzygy, Chen Step 9 DFT, $8/13$ polymatroid, $\mathbb{F}_{11}$ & \textbf{OPEN} \\
-\code{0TH-2026-011} & 13 Crypto/QC IDs & 27 algebraic/IT/QGT invariants; sharp FIPS 203 $|e|\le 831$ & \textbf{OPEN} \\
-\code{0TH-2026-010} & \code{CS-005} (rel.) & Vinciguerra \cite{vinciguerra2026catalytic} 2-reg.\ dichotomy \& optimal $\log_{13} 8$ & \textbf{OPEN} \\
-\code{0TH-2026-009} & \code{QM-011} & Jonah Conjecture E ($N\ge 4$), disjoint Mermin $(7^k-5^k)/2$, $C_3$ optima & \textbf{OPEN} \\
-\code{0TH-2026-004} & \code{QM-011} & Exact KS pool minima ($31, 33, 18, 29$) + DRUP certificates & \textbf{OPEN} \\
-\code{0TH-2026-006} & \code{STAT-001} (rel.) & Bani\'c--Elezovi\'c Conj.\ 7.7 \cite{banic2026multinomial}: $a_\triangle = 1/32 - 4\sqrt{3}/243$ & \textbf{N/A} \\
-\code{0TH-2026-007/8} & \code{NEURO-001}, \code{NEURO-019} & 18 biophysical invariants; refuted $40$\,Hz ATP ($f_{\mathrm{crit}}=29.5625$\,Hz) & \textbf{OPEN} \\
+\code{0TH-2026-012} & \code{CS-053}, \code{CS-026}, \code{CS-004}+ & 27 thms: Koszul--Veronese syzygy, Chen DFT, $8/13$ Mat\'u\v{s}, $\mathrm{rank}(\langle 2,2,2\rangle)=7$ & \textbf{OPEN} \\
+\code{0TH-2026-011} & 13 Crypto/QC IDs & 28 invariants (63 decls): $c_{\mathrm{eff}}^2+C^2=1$, Toner CHSH, FIPS 203 $|e|\le 831$ & \textbf{OPEN} \\
+\code{0TH-2026-010} & \code{CS-005} & Vinciguerra \cite{vinciguerra2026catalytic} 2-reg.\ dichotomy \& optimal $\log_{13} 8$ (7 kernels) & \textbf{OPEN} \\
+\code{0TH-2026-009} & \code{QM-011}, \code{QC-037}, \code{QC-013} & Jonah Conjecture E ($N\ge 4$), disjoint Mermin $(7^k-5^k)/2$, $C_3$ optima & \textbf{OPEN} \\
+\code{0TH-2026-004} & \code{QM-011} & Exact KS pool minima ($31, 33, 18, 29$; 149 decls + DRUP certificates) & \textbf{OPEN} \\
+\code{0TH-2026-006} & \code{STAT-001} (rel.) & Bani\'c--Elezovi\'c Conj.\ 7.7 \cite{banic2026multinomial}: $a_\triangle = 1/32 - 4\sqrt{3}/243$ (standalone) & \textbf{N/A} \\
+\code{0TH-2026-013} & \code{CS-001}, \code{CS-005}, \code{CS-010/12} & 14 unconditional complexity-barrier theorems + 4 heuristic refutations & \textbf{OPEN} \\
+\code{0TH-2026-014..016} & \code{CM-018}, \code{ALG-035}, \code{CS-049}+ & 150 decls across non-Hermitian knots, fracton codes \& odd-cycle capacity & \textbf{OPEN} \\
+\code{0TH-2026-007/8} & \code{NEURO-001}, \code{NEURO-019} & 24 biophysical invariants; refuted $40$\,Hz ATP ($f_{\mathrm{crit}}=29.5625$\,Hz) & \textbf{OPEN} \\
+\code{0TH-BUILD-004} & \code{NT-005}, \code{NT-066}, \code{NT-078}+ & \textbf{This Atlas (\texttt{v0.6.0}):} 53 thms + 28 checks = 81 decls across 8 domains & \textbf{OPEN} \\
+\code{0TH-BUILD-001..012} & \code{SUB-032}, \code{CS-053}, \code{BIO-001}+ & Companion formal builds ($p$-adic AdS/CFT, RS MDS, A-Life Omega, HW) & \textbf{OPEN} \\
 \bottomrule
 \end{tabularx}
 \end{table}
@@ -552,14 +575,15 @@ Erd\H{o}s Unit Distance disproof preprint \cite{unitdistance2026} with explicit 
 caveats, both atlases strictly keep all 12 unrefereed Fall/Nov 2026 AI proof claims (RH, GRH,
 3D Navier--Stokes, Yang--Mills, etc.) unretired and \code{open}.
 
-\section{Four-Cycle, Ten-Class Hardening Audit and Verification Ladder}\label{sec:hardening}
+\section{Five-Cycle, Ten-Class Hardening Audit and Verification Ladder}\label{sec:hardening}
 
-Releases \texttt{v0.4.0}--\texttt{v0.5.0} underwent four structured hardening cycles classifying
+Releases \texttt{v0.4.0}--\texttt{v0.6.0} underwent five structured hardening cycles classifying
 every finding strictly into the ten classes of Build Standard \texttt{v1.2.0} (\code{bug},
 \code{error}, \code{issue}, \code{problem}, \code{concern}, \code{dilemma}, \code{conflict},
 \code{gap}, \code{hole}, \code{blindspot}; full ledger in
 \code{docs/reviews/2026-11-25-three-cycle-hardening-audit.md}). Table~\ref{tab:hardening}
-records representative resolved defects across all ten classes.
+records representative resolved defects across all ten classes, including the Cycle 5 discovery
+and removal of a silent $2^{32}$ fuel cap in \code{Defs.isqrt}.
 
 \begin{table}[htbp]
 \centering
@@ -575,21 +599,22 @@ Class & Defect Detected & Resolution \& Guard \\
 \code{error} & Draft paper CSS weights \& unverified \code{2605.20695} authors; stale \code{formal/} refs & Synced verbatim to \code{generate.py}, API log, and \code{lean/} \\
 \code{issue} & 89 tracked non-PS1 files carried CRLF endings & Enforced \texttt{newline="\textbackslash n"} and LF-normalized all 89 files \\
 \code{problem} & Windows lacks Linux \code{bwrap} for \code{lake check} & Local 6-kernel binary replay + Ubuntu \code{bwrap} CI \\
-\code{concern} & 9 July 2026 Collatz files leaked \texttt{C:\textbackslash Users\textbackslash\ldots} / \texttt{Z:\textbackslash\ldots} paths & Sanitized to relative paths + pytest negative guard \\
+\code{concern} & 9 July 2026 Collatz files leaked local machine paths & Sanitized to relative paths + pytest negative guard \\
 \code{dilemma} & Migrating \code{formal/} $\to$ \code{lean/} vs.\ breaking legacy URLs & \code{git mv} + redirect stub \code{formal/ROADMAP.md} \\
 \code{conflict} & \code{docs/faq.md} (\code{4-6}) vs.\ \code{LIMITATIONS.md}/\code{meta-analyses} (\code{4-8}) & Reconciled uniformly + pytest regression test \\
-\code{gap} & Missing \code{ERRATA.md}, FAIR RO-Crate/Croissant, Pages auto-deploy, 10 labels & Created all artifacts; synced 20 live GitHub labels \\
-\code{hole} & Missing automated README axiom-drift, Palomar, and \code{lean/} version checks & Added \code{check_readme_axioms.py} \& extended \code{validate.py} \\
-\code{blindspot} & Verified DOIs never audited for subsequent retractions & Added \code{check_retractions.py} (220/220 DOIs, 0 retracted) \\
+\code{gap} & Missing \code{ERRATA.md}, FAIR RO-Crate/Croissant, dual \code{.tsr}/\code{.ots} timestamps & Created all artifacts; synced 20 live GitHub labels \\
+\code{hole} & \code{Defs.isqrt} fixed fuel $32$ ($< 2^{32}$ cap); missing \code{autoImplicit = false} & Fuel raised to $n$ + proved \code{isqrt_spec} $\forall n$; \code{autoImplicit = false} \\
+\code{blindspot} & Verified DOIs unaudited for retractions; no live negative Lean rejection test & Added \code{check_retractions.py} \& \code{test_lean_negative.py} \\
 \bottomrule
 \end{tabularx}
 \end{table}
 
 Automated verification achieves \textbf{100.0\% (68/68)} Build Standard \texttt{v1.2.0}
 structure, completion, and core (\textbf{28/28}) compliance on both Windows and Linux Ubuntu,
-\textbf{65+} passing pytest/Hypothesis/oracle/metamorphic tests, \textbf{100.0\% (6/6)}
-targeted mutation kill rate, zero \code{ruff}/\code{mypy} errors, SHA-256 dataset manifests
-(\code{data/MANIFEST.sha256}), and GitHub SLSA build provenance attestations.
+\textbf{70} passing pytest, Hypothesis, oracle, and metamorphic tests, \textbf{100.0\% (6/6)}
+targeted mutation kill rate, zero \code{ruff} and \code{mypy} errors, SHA-256 manifests
+(\code{data/MANIFEST.sha256}) bound by DigiCert RFC~3161 (\code{.tsr}) and Bitcoin
+OpenTimestamps (\code{.ots}) cryptographic proofs, and GitHub SLSA build provenance.
 
 \section{Limitations, Governance, and Clean-Clone Replication}\label{sec:governance}
 
@@ -621,13 +646,15 @@ deterministic test suites. The author declares no competing financial interests 
 institutional or corporate LLC affiliation.
 
 \subsection{Clean-Clone Replication Protocol}
-From a clean clone of tag \texttt{v0.5.0}:
+From a clean clone of tag \texttt{v0.6.0}:
 \begin{verbatim}
 python -m pip install -r requirements-lock.txt
 python scripts/generate.py --check && python scripts/validate.py
 python scripts/check_retractions.py --check
 python scripts/check_readme_axioms.py
 python scripts/build_site.py && python scripts/build_data_manifest.py --check
+python scripts/timestamp_manifest.py --check
+python scripts/test_lean_negative.py
 python -m pytest -v tests/ && python tests/mutation_check.py
 cd lean && lake build Challenge Solution NonVacuity Adversarial
 lake env lean VerifyAxioms.lean

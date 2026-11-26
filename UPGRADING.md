@@ -4,6 +4,32 @@
 
 ---
 
+## Upgrading from `v0.5.0` to `v0.6.0`
+
+### 1. Structural & Additive Changes (Non-Breaking)
+
+- **Expanded Eight-Domain Lean 4.35.0 Core (`45 → 53` theorems, `69 → 81` audited declarations, `autoImplicit = false`):** All 45 `v0.5.0` comparator theorem names in `lean/Challenge.lean` are preserved verbatim; 8 new headline theorems, 2 non-vacuity witnesses, and 2 adversarial refutations were added (Collatz positive-cycle subcriticality & $d=1$ exclusion, complete Lonely Runner $n=3$ for all positive speed triples, Euclid's general even perfect number theorem for all $p \ge 2$, and exact Ramsey $R(3,4) = 9$). `Defs.isqrt` fuel was raised from fixed `32` to `n` and proved unconditionally exact for all `n : Nat`.
+- **Live Negative Kernel Rejection (`scripts/test_lean_negative.py`):** Enforced in `lean-formal` CI job.
+- **Dual Cryptographic Manifest Timestamps (`data/MANIFEST.sha256.tsr`, `data/MANIFEST.sha256.ots`):** Verified offline in CI and Release workflows via `scripts/timestamp_manifest.py --check` and attached to SLSA-attested GitHub Releases.
+
+### 2. Upgrade Steps
+
+```bash
+git pull origin main
+python -m pip install -r requirements-lock.txt
+python scripts/generate.py --check
+python scripts/validate.py
+python scripts/check_retractions.py --check
+python scripts/check_readme_axioms.py
+python scripts/build_data_manifest.py --check
+python scripts/timestamp_manifest.py --check
+python scripts/test_lean_negative.py
+python -m pytest -v tests/
+cd lean && lake build Challenge Solution NonVacuity Adversarial && lake env lean VerifyAxioms.lean
+```
+
+---
+
 ## Upgrading from `v0.4.0` to `v0.5.0`
 
 ### 1. Structural & Additive Changes (Non-Breaking)

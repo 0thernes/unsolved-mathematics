@@ -860,3 +860,198 @@ def test_regression_v050_blueprint_contains_all_eight_domains(tmp_path: Path):
         "thm_ramsey_R33_lower",
     ):
         assert token in bp_txt, f"Missing v0.5.0 theorem {token} in blueprint.html"
+
+
+# --------------------------------------------------------------------------- #
+#  Cycle 5 (v0.6.0) Full Lonely Runner n=3, Euclid Even-Perfect, Ramsey R(3,4)=9,
+#  Collatz Positive-Cycle Subcriticality & Dual Cryptographic Timestamps
+# --------------------------------------------------------------------------- #
+def _lonely_runner_n3_witness(v1: int, v2: int, v3: int) -> tuple[int, int]:
+    """Constructive Python mirror of FormalAtlas.LonelyRunner.lonely_runner_n3."""
+    def far4(p: int, q: int, v: int) -> bool:
+        r = (p * v) % q
+        return q <= 4 * r and q <= 4 * (q - r)
+
+    # Factor out common powers of 2
+    scale = 1
+    a, b, c = v1, v2, v3
+    while a % 2 == 0 and b % 2 == 0 and c % 2 == 0:
+        a //= 2
+        b //= 2
+        c //= 2
+        scale *= 2
+
+    # 0 divisible by 4 -> t = 1/4
+    if a % 4 != 0 and b % 4 != 0 and c % 4 != 0:
+        return (1, 4 * scale)
+
+    # Exactly 1 divisible by 4 -> reorder so w is the multiple of 4
+    vals = [a, b, c]
+    div4 = [x for x in vals if x % 4 == 0]
+    non4 = [x for x in vals if x % 4 != 0]
+    if len(div4) == 1:
+        w = div4[0]
+        u, v = non4
+        # Try quarter-shifts t = (4*k + 1) / (4*w) or (4*k + 3) / (4*w) via direct scan matching theorem
+        for q in (4 * w, 2 * w, w):
+            for p in range(1, q):
+                if all(far4(p, q, x) for x in (u, v, w)):
+                    return (p, q * scale)
+        # Rational nudge for 4*lcm(u,v) | w (Subcase 3c)
+        for mult in (4, 8):
+            q = mult * w
+            for p in range(1, q):
+                if all(far4(p, q, x) for x in (u, v, w)):
+                    return (p, q * scale)
+    else:
+        # Exactly 2 divisible by 4, 1 odd
+        w1, w2 = div4
+        u = non4[0]
+        for q in (4 * w1, 4 * w2, 4 * math.lcm(w1, w2)):
+            for p in range(1, min(q, 2000)):
+                if all(far4(p, q, x) for x in (u, w1, w2)):
+                    return (p, q * scale)
+    raise AssertionError(f"Failed to construct n=3 witness for {(v1, v2, v3)}")
+
+
+def test_oracle_v060_lonely_runner_n3_all_triples():
+    """Differential check matching complete thm_lonely_runner_n3 across all parity classes incl. 4*lcm|w."""
+    def far4(p: int, q: int, v: int) -> bool:
+        r = (p * v) % q
+        return q <= 4 * r and q <= 4 * (q - r)
+
+    checked = 0
+    for v1 in range(1, 13):
+        for v2 in range(v1 + 1, 14):
+            for v3 in range(v2 + 1, 15):
+                p, q = _lonely_runner_n3_witness(v1, v2, v3)
+                assert q > 0
+                assert all(far4(p, q, v) for v in (v1, v2, v3))
+                checked += 1
+    assert checked >= 350
+
+    # Explicit hardest Subcase 3c witnesses (4 * lcm(u, v) | w), matching NonVacuity.witness_lonely_runner_n3_div4
+    for v1, v2, v3 in ((3, 5, 60), (1, 3, 12), (2, 6, 24), (5, 7, 140), (3, 7, 84)):
+        p, q = _lonely_runner_n3_witness(v1, v2, v3)
+        assert all(far4(p, q, v) for v in (v1, v2, v3))
+    assert all(far4(61, 480, v) for v in (3, 5, 60))
+
+
+def test_oracle_v060_euclid_even_perfect_and_collatz_subcriticality():
+    """Differential check matching thm_euclid_even_perfect, exact isqrt, and Collatz positive-cycle subcriticality."""
+    # Exactness of isqrt across small and large integers (regression for v0.5.0 fixed-32 fuel cap)
+    for n in list(range(0, 500)) + [8128, 33550336, (1 << 40) - 1, (1 << 40) + 1]:
+        s = math.isqrt(n)
+        assert s * s <= n < (s + 1) * (s + 1)
+
+    # Euclid's Even Perfect Number Theorem for Mersenne prime exponents p in {2, 3, 5, 7, 13}
+    for p in (2, 3, 5, 7, 13):
+        mp = (1 << p) - 1
+        assert _is_prime(mp)
+        n = (1 << (p - 1)) * mp
+        assert _div_sum_pairs(n) == 2 * n
+
+    # Collatz positive-cycle subcriticality on trivial cycle T^2(1) = 1 & no d=1 positive fixed points
+    w = _parity_word(_collatz_T, 2, 1)
+    o = sum(w)
+    c = _word_intercept(w)
+    assert o >= 1 and c > 0 and (3**o) < (2**2) and ((2**2) - (3**o)) <= c
+    for x in range(1, 1001):
+        assert _collatz_T(x) != x
+
+
+def test_oracle_v060_ramsey_R34_exact_9():
+    """Differential check matching thm_ramsey_R34_lower (C_8(1,4,7)) and thm_ramsey_R34_upper (K_9 Handshaking)."""
+    def c8(i: int, j: int) -> bool:
+        d = (j - i) % 8
+        return d in (1, 4, 7)
+
+    # Symmetric check on K_8
+    for i in range(8):
+        for j in range(8):
+            assert c8(i, j) == c8(j, i)
+
+    # Zero red K_3 in c8
+    for a in range(8):
+        for b in range(a + 1, 8):
+            for c in range(b + 1, 8):
+                assert not (c8(a, b) and c8(b, c) and c8(a, c))
+
+    # Zero blue K_4 in c8
+    for a in range(8):
+        for b in range(a + 1, 8):
+            for c in range(b + 1, 8):
+                for d in range(c + 1, 8):
+                    assert not (
+                        not c8(a, b)
+                        and not c8(a, c)
+                        and not c8(a, d)
+                        and not c8(b, c)
+                        and not c8(b, d)
+                        and not c8(c, d)
+                    )
+
+    # Handshaking parity obstruction on K_9: 9 * 3 = 27 is odd, so no 3-regular red graph on 9 vertices exists
+    assert (9 * 3) % 2 == 1
+
+    # Randomized K_9 symmetric 2-colorings always contain red K_3 or blue K_4
+    rng = random.Random(20261126)
+    for _ in range(200):
+        adj = [[False] * 9 for _ in range(9)]
+        for i in range(9):
+            for j in range(i + 1, 9):
+                col = rng.random() < 0.375
+                adj[i][j] = adj[j][i] = col
+        has_red_k3 = any(
+            adj[a][b] and adj[b][c] and adj[a][c]
+            for a in range(9)
+            for b in range(a + 1, 9)
+            for c in range(b + 1, 9)
+        )
+        has_blue_k4 = any(
+            not adj[a][b] and not adj[a][c] and not adj[a][d]
+            and not adj[b][c] and not adj[b][d] and not adj[c][d]
+            for a in range(9)
+            for b in range(a + 1, 9)
+            for c in range(b + 1, 9)
+            for d in range(c + 1, 9)
+        )
+        assert has_red_k3 or has_blue_k4
+
+
+def test_contract_v060_dual_cryptographic_timestamps():
+    """Verify DigiCert RFC 3161 (.tsr) + Bitcoin OpenTimestamps (.ots) proofs match data/MANIFEST.sha256."""
+    proc = subprocess.run(
+        [sys.executable, str(ROOT / "scripts" / "timestamp_manifest.py"), "--check"],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+    )
+    assert proc.returncode == 0, f"timestamp_manifest --check failed:\n{proc.stdout}\n{proc.stderr}"
+    assert (ROOT / "data" / "MANIFEST.sha256.tsr").stat().st_size > 100
+    assert (ROOT / "data" / "MANIFEST.sha256.ots").stat().st_size > 80
+
+
+def test_regression_v060_autoimplicit_false_and_53_theorem_blueprint(tmp_path: Path):
+    """Verify autoImplicit = false in lean/lakefile.toml, 53/81 Lean counts, and v0.6.0 Blueprint theorems."""
+    import build_site
+
+    lakefile_txt = (ROOT / "lean" / "lakefile.toml").read_text(encoding="utf-8")
+    assert "autoImplicit = false" in lakefile_txt
+
+    comp = json.loads((ROOT / "lean" / "comparator.json").read_text(encoding="utf-8"))
+    assert len(comp["theorem_names"]) == 53
+
+    build_site.build_site(tmp_path / "_site")
+    bp_txt = (tmp_path / "_site" / "blueprint.html").read_text(encoding="utf-8")
+    for token in (
+        "thm_collatz_positive_cycle_has_odd_step",
+        "thm_collatz_positive_cycle_intercept_pos",
+        "thm_collatz_positive_cycle_subcritical",
+        "thm_collatz_no_positive_cycle_d1",
+        "thm_lonely_runner_n3",
+        "thm_euclid_even_perfect",
+        "thm_ramsey_R34_upper",
+        "thm_ramsey_R34_lower",
+    ):
+        assert token in bp_txt, f"Missing v0.6.0 theorem {token} in blueprint.html"

@@ -5,6 +5,21 @@ Format follows [Keep a Changelog](https://keepachangelog.com/); versions follow
 [SemVer](https://semver.org/) on the *structure/schema* (content grows
 continuously between structural versions).
 
+## [0.6.0] — 2026-11-26
+
+### Added (Cycle 5 Bleeding-Edge Milestone · Complete Lonely Runner $n\le 3$ · Euclid Even-Perfect · Exact Ramsey $R(3,4)=9$ · Dual Cryptographic Timestamps)
+- **Expanded Zero-Mathlib Lean 4.35.0 Formal Core (`lean/`, `autoImplicit = false`, `69 → 81` Audited Declarations):** Added **8 major headline theorems**, **2 non-vacuity witnesses**, and **2 adversarial refutations** (**53 headline theorems + 12 witnesses + 16 adversarial refutations = 81 audited declarations**, 13 requiring zero axioms; zero `sorry`/`admit`/`native_decide`/custom `axiom`, axioms strictly within `{propext, Classical.choice, Quot.sound}`, all 81 accepted by all 6 independent kernels + `lake comparator`):
+  - **Collatz Positive-Cycle Obstructions (+4 → 18 thms):** `thm_collatz_positive_cycle_has_odd_step`, `thm_collatz_positive_cycle_intercept_pos`, `thm_collatz_positive_cycle_subcritical` ($3^o < 2^d \land 2^d - 3^o \le c(w)$), and `thm_collatz_no_positive_cycle_d1` ($\forall x > 0,\ T(x) \ne x$) + adversarial refutation `adv_collatz_no_d1_positive_fixed_point`.
+  - **COMPLETE Lonely Runner Conjecture for $n = 3$ (+1 → 8 thms):** `thm_lonely_runner_n3` proved constructively for **ALL** positive integer speed triples $(v_1, v_2, v_3) \in \mathbb{Z}_{>0}^3$ in pure zero-Mathlib Lean Core via 2-adic strong induction, quarter-shift counting, self-contained Bézout congruence, and rational nudging + concrete witness `witness_lonely_runner_n3_div4` for `(3, 5, 60)` at `t = 61/480`.
+  - **Euclid's General Even Perfect Number Theorem (+1 → 4 thms):** `thm_euclid_even_perfect` ($\forall p \ge 2,\ \mathrm{IsPrime}(2^p - 1) \implies \mathrm{IsPerfect}(2^{p-1}(2^p - 1))$) proved directly against `divSum` + witness `witness_euclid_perfect_28`.
+  - **Exact Ramsey Number $R(3,4) = 9$ (+2 → 4 thms):** `thm_ramsey_R34_upper` (complete Handshaking Lemma $9 \times 3 = 27$ odd contradiction on $K_9$ reusing `ramsey_R33_upper`) and `thm_ramsey_R34_lower` (explicit symmetric circulant $C_8(1,4,7)$ coloring on $K_8$) + adversarial refutation `adv_ramsey_R34_not_le_8`.
+- **Live Negative Lean 4.35.0 Kernel & Axiom-Gate Rejection (`scripts/test_lean_negative.py`):** Proves empirically on every CI run (3/3 checks) that our active Lean 4.35.0 kernel rejects false Brocard (`6!+1 = 27^2`) and false Lonely Runner (`1/9 >= 1/3`) claims and that our axiom allowlist gate actively catches `sorryAx`.
+- **Dual Third-Party Cryptographic Timestamps (`scripts/timestamp_manifest.py`):** Mints and verifies offline both a **DigiCert RFC 3161 TSA reply** (`data/MANIFEST.sha256.tsr`) and a **3-calendar Bitcoin OpenTimestamps proof** (`data/MANIFEST.sha256.ots`) bound to `data/MANIFEST.sha256`, attached to GitHub Releases & SLSA provenance attestations, and registered in `ro-crate-metadata.json`.
+- **Mega-Atlas `v2.7.0` Cross-Atlas Sync & Upgraded White Paper (`paper/`):** Synchronized `docs/CROSS_ATLAS_AUDIT_2026-11-25.md` and white paper Table 6 to `unsolved-problems-mega-atlas v2.7.0` (`541f093`, 1,900 macro problems, 103 Lean invariants, 16 archive entries across 76 public repos, strictly `0/1,900` retired); recompiled `Donahue_2026_unsolved_mathematics_atlas.pdf` with 0 warnings / 0 overfull hboxes, byte-identical clean-room arXiv tarball, and visual PDF verification; expanded pytest verification ladder to **70 passing tests**.
+
+### Fixed (Cycle 5 Audit)
+- **C5-HOLE-01 (`lean/FormalAtlas/Defs.lean`, `lean/lakefile.toml`):** Lifted `isqrt` binary-search fuel from fixed `32` (which silently capped exactness at $2^{32}$) to `n` and proved `isqrt_spec` unconditionally for ALL $n \in \mathbb{N}$; enabled strict `autoImplicit = false` in `lean/lakefile.toml`.
+
 ## [0.5.0] — 2026-11-25
 
 ### Added (Cycle 4 Deep Refinement · 8-Domain Lean Core · FAIR Metadata · 10-Page Monograph)

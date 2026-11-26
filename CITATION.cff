@@ -13,18 +13,21 @@ url: "https://0thernes.github.io/unsolved-mathematics/"
 abstract: >
   A reproducible, ranked, FAIR-indexed research dossier collection of 106 open
   mathematical problems across 38 fields, paired with a standalone eight-domain,
-  six-kernel Lean 4.35.0 formal verification core (45 headline theorems, 10
-  non-vacuity witnesses, and 14 adversarial refutations across Collatz,
-  Erdős–Straus, Lonely Runner, Brocard, Primes/Twin Primes, Goldbach,
-  Perfect/Mersenne, and Ramsey R(3,3)=6), automated primary-source citation and
-  Crossref/DataCite retraction auditing, a deterministic BM25/dense RAG corpus,
-  RO-Crate 1.1 and Croissant 1.0 metadata, a compiled AMS-LaTeX white paper, and
-  documented epistemic integrity gates. Human contributions (CRediT):
-  Conceptualization, Methodology, Supervision, Formal analysis
-  (statement-fidelity audit), Validation, Writing – review & editing. AI tools
-  were used as disclosed drafting and formalization instruments; all formal
-  theorems are independently checked by six Lean 4.35.0 kernels. Not
-  peer-reviewed.
+  six-kernel Lean 4.35.0 formal verification core with autoImplicit = false
+  (53 headline theorems, 12 non-vacuity witnesses, and 16 adversarial
+  refutations across Collatz positive-cycle obstructions, Erdős–Straus, full
+  Lonely Runner through n = 3, Brocard through n <= 20, Primes/Twin Primes,
+  Goldbach, Euclid's general even perfect number theorem & Mersenne primes, and
+  exact Ramsey R(3,3) = 6 and R(3,4) = 9), live negative kernel rejection,
+  automated primary-source citation and Crossref/DataCite retraction auditing,
+  dual DigiCert RFC 3161 + Bitcoin OpenTimestamps cryptographic manifest proofs,
+  a deterministic BM25/dense RAG corpus, RO-Crate 1.1 and Croissant 1.0
+  metadata, a compiled AMS-LaTeX white paper, and documented epistemic integrity
+  gates. Human contributions (CRediT): Conceptualization, Methodology, Supervision,
+  Formal analysis (statement-fidelity audit), Validation, Writing – review &
+  editing. AI tools were used as disclosed drafting and formalization
+  instruments; all formal theorems are independently checked by six Lean 4.35.0
+  kernels. Not peer-reviewed.
 keywords:
   - mathematics
   - open problems
@@ -35,5 +38,5 @@ keywords:
   - retrieval-augmented generation
   - knowledge base
 license: CC-BY-4.0
-version: 0.5.0
-date-released: 2026-11-25
+version: 0.6.0
+date-released: 2026-11-26

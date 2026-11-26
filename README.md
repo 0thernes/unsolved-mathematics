@@ -5,19 +5,20 @@
 ### *An audited, ranked, research-grade dossier & Lean 4.35.0 formal core of humanity's open mathematical problems.*
 
 [![CI](https://github.com/0thernes/unsolved-mathematics/actions/workflows/ci.yml/badge.svg)](https://github.com/0thernes/unsolved-mathematics/actions/workflows/ci.yml)
-[![Version](https://img.shields.io/badge/version-0.5.0-blue.svg)](VERSION)
-[![Lean](https://img.shields.io/badge/Lean-4.35.0%20(6--kernel%20·%2045%20thms%20·%208%20domains)-7c3aed.svg)](lean/STATEMENT_FIDELITY.md)
+[![Version](https://img.shields.io/badge/version-0.6.0-blue.svg)](VERSION)
+[![Lean](https://img.shields.io/badge/Lean-4.35.0%20(6--kernel%20·%2053%20thms%20·%208%20domains)-7c3aed.svg)](lean/STATEMENT_FIDELITY.md)
 [![Citations](https://img.shields.io/badge/API--verified%20citations-445%20(0%20retracted)-10b981.svg)](data/citation-verification-log.json)
-[![Paper](https://img.shields.io/badge/White%20Paper-10p%20AMS--LaTeX%20PDF-b45309.svg)](paper/Donahue_2026_unsolved_mathematics_atlas.pdf)
+[![Paper](https://img.shields.io/badge/White%20Paper-AMS--LaTeX%20PDF-b45309.svg)](paper/Donahue_2026_unsolved_mathematics_atlas.pdf)
+[![Timestamps](https://img.shields.io/badge/Timestamps-RFC3161%20%2B%20Bitcoin%20OTS-0f766e.svg)](data/MANIFEST.sha256)
 [![Pages](https://img.shields.io/badge/Live%20Atlas%20%26%20Blueprint-GitHub%20Pages-0284c7.svg)](https://0thernes.github.io/unsolved-mathematics/)
 [![License: CC BY 4.0 / MIT](https://img.shields.io/badge/license-CC%20BY%204.0%20%2F%20MIT-slate.svg)](LICENSE)
 
 **Each problem gets its own world — origin, the mind that posed it, every serious attack on it,
 key papers with primary-source verification & retraction flags, key mathematicians, a deterministic RAG corpus,
-FAIR RO-Crate 1.1 & Croissant 1.0 metadata, a compiled 10-page AMS-LaTeX white paper, and a standalone
-eight-domain, six-kernel Lean 4.35.0 formal verification core.**
+FAIR RO-Crate 1.1 & Croissant 1.0 metadata, dual RFC 3161 + Bitcoin OpenTimestamps manifest proofs, a compiled AMS-LaTeX white paper, and a standalone
+eight-domain, six-kernel Lean 4.35.0 formal verification core (`autoImplicit = false`).**
 
-`v0.5.0` · branch `main` · **106 problems** · **45 Lean 4 theorems + 24 witnesses/refutations across 8 domains (0 `sorry`, 6 kernels)** · author **Alexander S. Donahue** ([ORCID 0009-0006-8168-9648](https://orcid.org/0009-0006-8168-9648)) · Status: `active`
+`v0.6.0` · branch `main` · **106 problems** · **53 Lean 4 theorems + 28 witnesses/refutations across 8 domains (81 decls, 0 `sorry`, 6 kernels + live negative rejection)** · author **Alexander S. Donahue** ([ORCID 0009-0006-8168-9648](https://orcid.org/0009-0006-8168-9648)) · Status: `active`
 
 [Live Web Atlas & Blueprint](https://0thernes.github.io/unsolved-mathematics/) · [Master Ranking](RANKING.md) · [White Paper PDF](paper/Donahue_2026_unsolved_mathematics_atlas.pdf) · [Formal Core (`lean/`)](lean/STATEMENT_FIDELITY.md) · [Cross-Atlas Audit (1,900)](docs/CROSS_ATLAS_AUDIT_2026-11-25.md) · [Claims Ledger](CLAIMS.md) · [Limitations](LIMITATIONS.md) · [Errata](ERRATA.md) · [Hardening Audit](docs/reviews/2026-11-25-three-cycle-hardening-audit.md) · [Replication](REPLICATION.md) · [Indexes](docs/indexes/)
 
@@ -44,9 +45,9 @@ For **every** problem you get a self-contained 7-section dossier:
 - 🧠 **`mathematicians.md`** — the top minds who shaped the problem
 - 🎯 **`status.md`** — the live mathematical frontier (updated through November 2026)
 - 🤖 **`rag/`** — deterministic chunked corpus (`3,763` unique chunks) with zero-dependency BM25 retrieval
-- 🔬 **`lean/`** — standalone zero-Mathlib Lean 4.35.0 formal core proving **45 structural theorems** + **10 non-vacuity witnesses** + **14 adversarial false-variant refutations** (69 audited declarations) across **8 open-problem domains**: Collatz, Erdős–Straus, Lonely Runner, Brocard, Primes/Twin Primes, Goldbach, Odd Perfect/Mersenne, and Ramsey $R(3,3)=6$ (0 `sorry`, 0 `admit`, 0 `native_decide`, standard axioms only, 6 independent kernels)
-- 📄 **`paper/`** — publication-grade 10-page AMS-LaTeX white paper ([PDF](paper/Donahue_2026_unsolved_mathematics_atlas.pdf) + clean-room-verified `arxiv_submission.tar.gz`)
-- 🌐 **FAIR & Interactive Blueprint** — [RO-Crate 1.1](ro-crate-metadata.json), [MLCommons Croissant 1.0](croissant.json), and live GitHub Pages [Atlas Explorer & 8-Domain Proof Blueprint](https://0thernes.github.io/unsolved-mathematics/blueprint.html)
+- 🔬 **`lean/`** — standalone zero-Mathlib Lean 4.35.0 formal core (`autoImplicit = false`) proving **53 structural theorems** + **12 non-vacuity witnesses** + **16 adversarial false-variant refutations** (**81 audited declarations**) across **8 open-problem domains**: Collatz (incl. positive-cycle subcriticality), Erdős–Straus, **complete Lonely Runner through $n = 3$ (all positive triples)**, Brocard ($n \le 20$), Primes/Twin Primes, Goldbach ($4 \le n \le 100$), **Euclid's general even perfect number theorem (all $p \ge 2$)** & Mersenne primes, and **exact Ramsey $R(3,3)=6$ and $R(3,4)=9$** (0 `sorry`, 0 `admit`, 0 `native_decide`, standard axioms only, 6 independent kernels + live negative kernel rejection)
+- 📄 **`paper/`** — publication-grade AMS-LaTeX white paper ([PDF](paper/Donahue_2026_unsolved_mathematics_atlas.pdf) + clean-room-verified `arxiv_submission.tar.gz`)
+- 🌐 **FAIR, Timestamps & Interactive Blueprint** — [RO-Crate 1.1](ro-crate-metadata.json), [MLCommons Croissant 1.0](croissant.json), dual DigiCert RFC 3161 (`.tsr`) + Bitcoin OpenTimestamps (`.ots`) proofs over `data/MANIFEST.sha256`, and live GitHub Pages [Atlas Explorer & 8-Domain Proof Blueprint](https://0thernes.github.io/unsolved-mathematics/blueprint.html)
 
 ## Quickstart
 
@@ -57,19 +58,20 @@ git clone https://github.com/0thernes/unsolved-mathematics.git
 cd unsolved-mathematics
 python -m pip install -r requirements-lock.txt
 
-# Validate schema, deterministic views, citations, meta-analyses, proof-claim sweep & SHA-256 manifest
+# Validate schema, deterministic views, citations, meta-analyses, proof-claim sweep, manifest & timestamps
 python scripts/generate.py --check
 python scripts/validate.py
 python scripts/check_papers.py
 python scripts/proof_claim_sweep.py
 python scripts/build_data_manifest.py --check
+python scripts/timestamp_manifest.py --check
 
 # Run full verification test ladder (unit, negative, regression, Hypothesis, differential, metamorphic, mutation)
 python -m pytest -v tests/
 python tests/mutation_check.py
 ```
 
-See [`REPLICATION.md`](REPLICATION.md) for full clean-clone replication commands including the 6-kernel Lean 4.35.0 verification pass.
+See [`REPLICATION.md`](REPLICATION.md) for full clean-clone replication commands including the 6-kernel Lean 4.35.0 verification pass and live negative kernel rejection test (`scripts/test_lean_negative.py`).
 
 ## Usage & Examples
 
@@ -86,10 +88,11 @@ python scripts/build_indexes.py
 python rag/build_corpus.py
 python scripts/build_data_manifest.py
 
-# Build and verify the Lean 4.35.0 formal core (zero Mathlib, 8 domains, 69 audited declarations)
+# Build and verify the Lean 4.35.0 formal core (zero Mathlib, autoImplicit = false, 8 domains, 81 audited declarations)
 cd lean
 lake build Challenge Solution NonVacuity Adversarial
 lake env lean VerifyAxioms.lean
+python ../scripts/test_lean_negative.py
 # On Linux with bubblewrap (all 6 independent Lean 4.35.0 kernels):
 lake check --paranoid
 lake comparator --config comparator.json --paranoid
@@ -250,25 +253,25 @@ unsolved-mathematics/
 │   └── kanban/               ← the research board
 ├── AUTHORS.md · SUBMISSIONS.md · ERRATA.md  ← credit · outreach · post-release errata
 ├── ro-crate-metadata.json · croissant.json  ← FAIR RO-Crate 1.1 & Croissant 1.0 metadata
-├── lean/                     ← standalone 8-domain, 6-kernel Lean 4.35.0 core (45 thms + 24 checks)
-├── paper/                    ← compiled 10-page AMS-LaTeX white paper PDF & arXiv source bundle
+├── lean/                     ← standalone 8-domain, 6-kernel Lean 4.35.0 core (53 thms + 28 checks)
+├── paper/                    ← compiled AMS-LaTeX white paper PDF & arXiv source bundle
 └── .github/                  ← CI/CD, Pages blueprint, SLSA releases, 10-class issue forms
 ```
 
 ## Formal Verification Core (`lean/`)
 
-`v0.5.0` provides a **zero-Mathlib, pure Lean 4.35.0** formal package verifying **45 headline theorems, 10 concrete non-vacuity witnesses, and 14 explicit adversarial false-variant refutations** (**69 audited declarations**) across **eight** canonical open-problem domains:
+`v0.6.0` provides a **zero-Mathlib, pure Lean 4.35.0** formal package (`autoImplicit = false`) verifying **53 headline theorems, 12 concrete non-vacuity witnesses, and 16 explicit adversarial false-variant refutations** (**81 audited declarations**, 13 requiring zero axioms) across **eight** canonical open-problem domains:
 
-- **Collatz Conjecture (14 theorems):** affine cylinder law, exact intercept law, Terras parity-word bijection, descent certificate soundness, no finite subcritical cover, spine ladder identity, unconditional **Positivity Localization** ($\rho_w \le -1$), **$\varepsilon$-Invariance Barrier** ($3n - 1$ positive cycles at `5` and `17`), Böhm–Sontacchi exact cycle equation, parity-word cocycle law, negative cycles of true $3n+1$ (`-5`, `-17`), zero fixed point, intercept non-negativity, and parity-word length.
+- **Collatz Conjecture (18 theorems):** affine cylinder law, exact intercept law, Terras parity-word bijection, descent certificate soundness, no finite subcritical cover, spine ladder identity, unconditional **Positivity Localization** ($\rho_w \le -1$), **$\varepsilon$-Invariance Barrier** ($3n - 1$ positive cycles at `5` and `17`), Böhm–Sontacchi exact cycle equation, parity-word cocycle law, negative cycles of true $3n+1$ (`-5`, `-17`), zero fixed point, intercept non-negativity, parity-word length, plus **positive-cycle obstructions**: every positive cycle has $\ge 1$ odd step, positive intercept $c(w) > 0$, strict subcriticality $3^o < 2^d \land 2^d - 3^o \le c(w)$, and zero length-1 positive fixed points.
 - **Erdős–Straus Conjecture (5 theorems):** Mordell mod-840 covering (`834/840 = 99.286%`), multiplicative closure (prime reduction), cyclic symmetry, base range $2 \le n \le 30$, and all 6 smallest exceptional squares $\{121, 169, 289, 361, 529, 841\}$.
-- **Lonely Runner Conjecture (7 theorems):** all-$n$ rational sharpness $\delta \le 1/(n+1)$, constructive base cases $n \in \{1, 2\}$, symmetry group (speed scaling, period shift, time reversal), and $n = 3$ (4 runners) across all triples with $4 \nmid v_i$ (`7/8` of mod-4 residue classes).
+- **Lonely Runner Conjecture (8 theorems — complete through $n = 3$):** all-$n$ rational sharpness $\delta \le 1/(n+1)$, constructive base cases $n \in \{1, 2\}$, symmetry group (speed scaling, period shift, time reversal), non-div-4 family, and **complete unconditional 4-runner Lonely Runner theorem (`thm_lonely_runner_n3`) for ALL positive integer speed triples** via 2-adic strong induction, quarter-shift counting, Bézout congruence, and exact rational nudging.
 - **Brocard's Problem (7 theorems):** Brown solutions `(4,5), (5,11), (7,71)`, mod-3/4/10 modular invariants, and exhaustive classification through $n \le 20$ ($20!+1 = 2{,}432{,}902{,}008{,}176{,}640{,}001$, zero `native_decide`).
 - **Primes & Twin Primes (4 theorems):** Euclid's infinitude of primes, arbitrary prime gaps via $(k+1)!+2$, oddness of primes $\ge 3$, and twin-prime mod-6 rigidity ($p \equiv 5 \pmod 6$ for $p \ge 4$).
 - **Goldbach's Conjecture (3 theorems):** exhaustive certified prime-pair decomposition for all even $4 \le n \le 100$, odd binary prime-sum obstruction ($p=2 \lor q=2$), and binary Goldbach failure at $11$.
-- **Odd Perfect Numbers & Mersenne Primes (3 theorems):** algebraic proof of Mersenne prime exponent necessity ($2^a - 1 \mid 2^{ab} - 1$), first four even perfect numbers $\{6, 28, 496, 8128\}$, and exhaustive odd-perfect exclusion $n \le 100$.
-- **Ramsey Theory (2 theorems):** exact first-principles determination of $R(3,3) = 6$ (pigeonhole upper bound on $K_6$ + explicit symmetric $C_5$ lower-bound coloring on $K_5$).
+- **Odd Perfect Numbers & Mersenne Primes (4 theorems):** algebraic proof of Mersenne prime exponent necessity ($2^a - 1 \mid 2^{ab} - 1$), first four even perfect numbers $\{6, 28, 496, 8128\}$, exhaustive odd-perfect exclusion $n \le 100$, and **Euclid's general Even Perfect Number Theorem (`thm_euclid_even_perfect`) for all $p \ge 2$** proved directly against unconditionally exact `isqrt`/`divSum`.
+- **Ramsey Theory (4 theorems):** exact first-principles determinations of **$R(3,3) = 6$** ($K_6$ pigeonhole + $C_5$ on $K_5$) and **$R(3,4) = 9$** (Handshaking Lemma $9 \times 3 = 27$ odd contradiction on $K_9$ + explicit symmetric circulant $C_8(1,4,7)$ coloring on $K_8$).
 
-Every theorem is audited against [`lean/Challenge.lean`](lean/Challenge.lean) (`lean/comparator.json`), paired with concrete witnesses in [`lean/NonVacuity.lean`](lean/NonVacuity.lean) and false-variant refutations in [`lean/Adversarial.lean`](lean/Adversarial.lean), axiom-checked by [`lean/VerifyAxioms.lean`](lean/VerifyAxioms.lean), documented in [`lean/STATEMENT_FIDELITY.md`](lean/STATEMENT_FIDELITY.md), and replayed across all 6 independent Lean 4.35.0 kernels ([`lean/six_kernel_audit.txt`](lean/six_kernel_audit.txt) + `bwrap`-sandboxed Ubuntu CI). **None of these theorems claims to resolve the underlying open conjectures.**
+Every theorem is audited against [`lean/Challenge.lean`](lean/Challenge.lean) (`lean/comparator.json`), paired with concrete witnesses in [`lean/NonVacuity.lean`](lean/NonVacuity.lean), false-variant refutations in [`lean/Adversarial.lean`](lean/Adversarial.lean), and live negative kernel rejection (`scripts/test_lean_negative.py`), axiom-checked by [`lean/VerifyAxioms.lean`](lean/VerifyAxioms.lean), documented in [`lean/STATEMENT_FIDELITY.md`](lean/STATEMENT_FIDELITY.md), and replayed across all 6 independent Lean 4.35.0 kernels ([`lean/six_kernel_audit.txt`](lean/six_kernel_audit.txt) + `bwrap`-sandboxed Ubuntu CI). **None of these theorems claims to resolve the underlying open conjectures.**
 
 ### 5-Second Proof Audit (Verbatim `#print axioms`, CI-Checked by `scripts/check_readme_axioms.py`)
 
@@ -288,6 +291,10 @@ Every theorem is audited against [`lean/Challenge.lean`](lean/Challenge.lean) (`
 'FormalAtlas.Challenge.thm_collatz_zero_fixed_point' depends on axioms: [propext, Classical.choice, Quot.sound]
 'FormalAtlas.Challenge.thm_collatz_intercept_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
 'FormalAtlas.Challenge.thm_collatz_parity_word_length' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Challenge.thm_collatz_positive_cycle_has_odd_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Challenge.thm_collatz_positive_cycle_intercept_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Challenge.thm_collatz_positive_cycle_subcritical' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Challenge.thm_collatz_no_positive_cycle_d1' depends on axioms: [propext, Classical.choice, Quot.sound]
 'FormalAtlas.Challenge.thm_erdos_straus_mordell_840' depends on axioms: [propext, Quot.sound]
 'FormalAtlas.Challenge.thm_erdos_straus_multiplicative_closure' depends on axioms: [propext]
 'FormalAtlas.Challenge.thm_erdos_straus_mordell_exceptions_small' depends on axioms: [propext, Quot.sound]
@@ -300,6 +307,7 @@ Every theorem is audited against [`lean/Challenge.lean`](lean/Challenge.lean) (`
 'FormalAtlas.Challenge.thm_lonely_runner_period_shift' depends on axioms: [propext]
 'FormalAtlas.Challenge.thm_lonely_runner_neg_time' depends on axioms: [propext, Quot.sound]
 'FormalAtlas.Challenge.thm_lonely_runner_n3_nondiv4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Challenge.thm_lonely_runner_n3' depends on axioms: [propext, Classical.choice, Quot.sound]
 'FormalAtlas.Challenge.thm_brocard_brown_solutions' does not depend on any axioms
 'FormalAtlas.Challenge.thm_brocard_exhaustive_le_12' depends on axioms: [propext, Quot.sound]
 'FormalAtlas.Challenge.thm_brocard_mod4_ge_4' depends on axioms: [propext, Quot.sound]
@@ -317,8 +325,11 @@ Every theorem is audited against [`lean/Challenge.lean`](lean/Challenge.lean) (`
 'FormalAtlas.Challenge.thm_mersenne_exponent_prime' depends on axioms: [propext, Quot.sound]
 'FormalAtlas.Challenge.thm_perfect_numbers_first_four' does not depend on any axioms
 'FormalAtlas.Challenge.thm_no_odd_perfect_le_100' depends on axioms: [propext, Quot.sound]
+'FormalAtlas.Challenge.thm_euclid_even_perfect' depends on axioms: [propext, Classical.choice, Quot.sound]
 'FormalAtlas.Challenge.thm_ramsey_R33_upper' depends on axioms: [propext, Quot.sound]
 'FormalAtlas.Challenge.thm_ramsey_R33_lower' depends on axioms: [propext, Quot.sound]
+'FormalAtlas.Challenge.thm_ramsey_R34_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Challenge.thm_ramsey_R34_lower' depends on axioms: [propext, Quot.sound]
 'FormalAtlas.NonVacuity.witness_descent_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
 'FormalAtlas.NonVacuity.witness_positivity_localization' does not depend on any axioms
 'FormalAtlas.NonVacuity.witness_subcritical_positive_cycle' depends on axioms: [propext, Classical.choice, Quot.sound]
@@ -329,6 +340,8 @@ Every theorem is audited against [`lean/Challenge.lean`](lean/Challenge.lean) (`
 'FormalAtlas.NonVacuity.witness_goldbach_100' depends on axioms: [propext, Quot.sound]
 'FormalAtlas.NonVacuity.witness_mersenne_31' depends on axioms: [propext, Quot.sound]
 'FormalAtlas.NonVacuity.witness_lonely_runner_n3_concrete' does not depend on any axioms
+'FormalAtlas.NonVacuity.witness_lonely_runner_n3_div4' does not depend on any axioms
+'FormalAtlas.NonVacuity.witness_euclid_perfect_28' depends on axioms: [propext, Classical.choice, Quot.sound]
 'FormalAtlas.Adversarial.adv_erdos_straus_zero_denom_blocked' depends on axioms: [propext, Quot.sound]
 'FormalAtlas.Adversarial.adv_erdos_straus_wrong_witness_refuted' does not depend on any axioms
 'FormalAtlas.Adversarial.adv_collatz_no_universal_descent_d1' depends on axioms: [propext, Classical.choice, Quot.sound]
@@ -343,6 +356,8 @@ Every theorem is audited against [`lean/Challenge.lean`](lean/Challenge.lean) (`
 'FormalAtlas.Adversarial.adv_twin_prime_mod6_needs_ge_4' depends on axioms: [propext, Quot.sound]
 'FormalAtlas.Adversarial.adv_ramsey_R33_not_le_5' depends on axioms: [propext, Quot.sound]
 'FormalAtlas.Adversarial.adv_goldbach_requires_even' depends on axioms: [propext, Quot.sound]
+'FormalAtlas.Adversarial.adv_ramsey_R34_not_le_8' depends on axioms: [propext, Quot.sound]
+'FormalAtlas.Adversarial.adv_collatz_no_d1_positive_fixed_point' depends on axioms: [propext, Classical.choice, Quot.sound]
 ```
 <!-- AXIOMS:END -->
 
@@ -360,7 +375,7 @@ See [`PHILOSOPHY.md`](PHILOSOPHY.md), [`docs/methodology/SOURCING.md`](docs/meth
 
 ## Maintenance Status
 
-**Status: active** (`v0.5.0`, updated `2026-11-25`). Planned milestones live in [`ROADMAP.md`](ROADMAP.md), operational tasks in [`docs/kanban/KANBAN.md`](docs/kanban/KANBAN.md), errata in [`ERRATA.md`](ERRATA.md), and verification history in [`docs/run-log.md`](docs/run-log.md) and [`CHANGELOG.md`](CHANGELOG.md).
+**Status: active** (`v0.6.0`, updated `2026-11-26`). Planned milestones live in [`ROADMAP.md`](ROADMAP.md), operational tasks in [`docs/kanban/KANBAN.md`](docs/kanban/KANBAN.md), errata in [`ERRATA.md`](ERRATA.md), and verification history in [`docs/run-log.md`](docs/run-log.md) and [`CHANGELOG.md`](CHANGELOG.md).
 
 ## Author & Accreditation
 

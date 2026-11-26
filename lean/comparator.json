@@ -16,6 +16,10 @@
     "FormalAtlas.Challenge.thm_collatz_zero_fixed_point",
     "FormalAtlas.Challenge.thm_collatz_intercept_nonneg",
     "FormalAtlas.Challenge.thm_collatz_parity_word_length",
+    "FormalAtlas.Challenge.thm_collatz_positive_cycle_has_odd_step",
+    "FormalAtlas.Challenge.thm_collatz_positive_cycle_intercept_pos",
+    "FormalAtlas.Challenge.thm_collatz_positive_cycle_subcritical",
+    "FormalAtlas.Challenge.thm_collatz_no_positive_cycle_d1",
     "FormalAtlas.Challenge.thm_erdos_straus_mordell_840",
     "FormalAtlas.Challenge.thm_erdos_straus_multiplicative_closure",
     "FormalAtlas.Challenge.thm_erdos_straus_mordell_exceptions_small",
@@ -28,6 +32,7 @@
     "FormalAtlas.Challenge.thm_lonely_runner_period_shift",
     "FormalAtlas.Challenge.thm_lonely_runner_neg_time",
     "FormalAtlas.Challenge.thm_lonely_runner_n3_nondiv4",
+    "FormalAtlas.Challenge.thm_lonely_runner_n3",
     "FormalAtlas.Challenge.thm_brocard_brown_solutions",
     "FormalAtlas.Challenge.thm_brocard_exhaustive_le_12",
     "FormalAtlas.Challenge.thm_brocard_mod4_ge_4",
@@ -45,8 +50,11 @@
     "FormalAtlas.Challenge.thm_mersenne_exponent_prime",
     "FormalAtlas.Challenge.thm_perfect_numbers_first_four",
     "FormalAtlas.Challenge.thm_no_odd_perfect_le_100",
+    "FormalAtlas.Challenge.thm_euclid_even_perfect",
     "FormalAtlas.Challenge.thm_ramsey_R33_upper",
-    "FormalAtlas.Challenge.thm_ramsey_R33_lower"
+    "FormalAtlas.Challenge.thm_ramsey_R33_lower",
+    "FormalAtlas.Challenge.thm_ramsey_R34_upper",
+    "FormalAtlas.Challenge.thm_ramsey_R34_lower"
   ],
   "definition_names": [],
   "permitted_axioms": [

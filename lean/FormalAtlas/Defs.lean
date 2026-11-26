@@ -122,7 +122,7 @@ namespace FormalAtlas
 @[expose] public def IsPrime (p : Nat) : Prop :=
   2 ≤ p ∧ ∀ d : Nat, d ∣ p → d = 1 ∨ d = p
 
-/-- Structurally recursive integer square root `⌊√n⌋` (exact for all `n < 2^32`). -/
+/-- Structurally recursive binary-search integer square root `⌊√n⌋`, exact for all `n : Nat`. -/
 @[expose] public def isqrtAux (n lo hi : Nat) : Nat → Nat
   | 0 => lo
   | fuel + 1 =>
@@ -133,7 +133,7 @@ namespace FormalAtlas
       else isqrtAux n lo mid fuel
 
 @[expose] public def isqrt (n : Nat) : Nat :=
-  if n == 0 then 0 else isqrtAux n 1 (n + 1) 32
+  if n == 0 then 0 else isqrtAux n 1 (n + 1) n
 
 /-- Sum of all positive divisors `σ(n) = ∑_{d ∣ n} d`, computed over divisor pairs
     `1 ≤ d ≤ ⌊√n⌋` (`d` and `n / d`, counting `d` once when `d * d = n`). -/
@@ -157,5 +157,16 @@ namespace FormalAtlas
 /-- A 2-coloring `c : Fin k → Fin k → Bool` of `K_k` contains a monochromatic triangle. -/
 @[expose] public def HasMonoTriangle {k : Nat} (c : Fin k → Fin k → Bool) : Prop :=
   ∃ a b d : Fin k, a.val < b.val ∧ b.val < d.val ∧ c a b = c b d ∧ c a b = c a d
+
+/-- A 2-coloring `c` of `K_k` contains a triangle (`K_3`) of specific color `col`. -/
+@[expose] public def HasColorTriangle {k : Nat} (c : Fin k → Fin k → Bool) (col : Bool) : Prop :=
+  ∃ a b d : Fin k, a.val < b.val ∧ b.val < d.val ∧
+    c a b = col ∧ c b d = col ∧ c a d = col
+
+/-- A 2-coloring `c` of `K_k` contains a monochromatic `K_4` of specific color `col`. -/
+@[expose] public def HasColorK4 {k : Nat} (c : Fin k → Fin k → Bool) (col : Bool) : Prop :=
+  ∃ a b d e : Fin k, a.val < b.val ∧ b.val < d.val ∧ d.val < e.val ∧
+    c a b = col ∧ c a d = col ∧ c a e = col ∧
+    c b d = col ∧ c b e = col ∧ c d e = col
 
 end FormalAtlas

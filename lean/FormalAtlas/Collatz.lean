@@ -786,4 +786,100 @@ public theorem collatz_parity_word_length (f : Int → Int) (d : Nat) (x : Int) 
   | zero => rfl
   | succ d ih => simp only [parityWord, List.length_cons, ih]
 
+-- ----------------------------------------------------------------------------
+-- v0.6.0 Cycle Lower-Bound Foundations (Eliahou / Steiner / Hercher prerequisite)
+-- ----------------------------------------------------------------------------
+
+theorem wordIntercept_zero_of_oddCount_zero (w : List Bool) (hz : wordOddCount w = 0) :
+    wordIntercept w = 0 := by
+  induction w with
+  | nil => rfl
+  | cons b ws ih =>
+    cases b
+    · simp only [wordOddCount, Bool.false_eq_true, ite_false, Nat.zero_add] at hz
+      simp only [wordIntercept, ih hz]; omega
+    · simp only [wordOddCount, ite_true] at hz; omega
+
+theorem pow3_pos (n : Nat) : (1 : Int) ≤ (3 : Int) ^ n := by
+  induction n with
+  | zero => decide
+  | succ k ih => rw [Int.pow_succ]; omega
+
+theorem wordIntercept_pos_of_oddCount_pos (w : List Bool) (hp : 0 < wordOddCount w) :
+    0 < wordIntercept w := by
+  induction w with
+  | nil => simp [wordOddCount] at hp
+  | cons b ws ih =>
+    cases b
+    · simp only [wordOddCount, Bool.false_eq_true, ite_false, Nat.zero_add] at hp
+      have hws := ih hp
+      simp only [wordIntercept]; omega
+    · simp only [wordIntercept]
+      have h3 : (1 : Int) ≤ (3 : Int) ^ wordOddCount ws := pow3_pos (wordOddCount ws)
+      have hnn : 0 ≤ wordIntercept ws := wordIntercept_nonneg ws
+      omega
+
+theorem pow2_ge_two_of_pos (d : Nat) (hd : 1 ≤ d) : (2 : Int) ≤ (2 : Int) ^ d := by
+  cases d with
+  | zero => omega
+  | succ k =>
+    have hpos : (1 : Int) ≤ (2 : Int) ^ k := pow2_pos k
+    rw [Int.pow_succ]
+    omega
+
+/-- **Positive-cycle odd-step necessity:** every positive Collatz cycle `T^d(x) = x` (`d ≥ 1, x > 0`)
+    must contain at least one odd step (`oddCount T d x ≥ 1`). -/
+public theorem collatz_positive_cycle_has_odd_step (d : Nat) (x : Int)
+    (hd : 1 ≤ d) (hx : 0 < x) (hcyc : iter T d x = x) :
+    1 ≤ oddCount T d x := by
+  have heq := collatz_cycle_equation d x hcyc
+  by_cases ho : oddCount T d x = 0
+  · have hc0 : wordIntercept (parityWord T d x) = 0 :=
+      wordIntercept_zero_of_oddCount_zero (parityWord T d x) ho
+    rw [ho, hc0] at heq
+    have hpow : (2 : Int) ≤ (2 : Int) ^ d := pow2_ge_two_of_pos d hd
+    have h30 : (3 : Int) ^ 0 = 1 := rfl
+    rw [h30] at heq
+    have hpos_prod : 0 < ((2 : Int) ^ d - 1) * x := Int.mul_pos (by omega) hx
+    omega
+  · omega
+
+/-- **Positive-cycle strict intercept positivity:** every positive Collatz cycle `T^d(x) = x`
+    (`d ≥ 1, x > 0`) has strictly positive affine intercept `0 < c(w_d(T, x))`. -/
+public theorem collatz_positive_cycle_intercept_pos (d : Nat) (x : Int)
+    (hd : 1 ≤ d) (hx : 0 < x) (hcyc : iter T d x = x) :
+    0 < wordIntercept (parityWord T d x) := by
+  have ho := collatz_positive_cycle_has_odd_step d x hd hx hcyc
+  exact wordIntercept_pos_of_oddCount_pos (parityWord T d x) ho
+
+/-- **Positive-cycle subcriticality & denominator bound (Eliahou / Steiner / Hercher foundation):**
+    Every positive Collatz cycle `T^d(x) = x` (`d ≥ 1, x > 0`) is strictly subcritical
+    (`3^o < 2^d`, equivalently `o / d < log₂(2) / log₂(3)`) and satisfies `2^d - 3^o ≤ c(w)`. -/
+public theorem collatz_positive_cycle_subcritical (d : Nat) (x : Int)
+    (hd : 1 ≤ d) (hx : 0 < x) (hcyc : iter T d x = x) :
+    (3 : Int) ^ (oddCount T d x) < (2 : Int) ^ d ∧
+    (2 : Int) ^ d - (3 : Int) ^ (oddCount T d x) ≤ wordIntercept (parityWord T d x) := by
+  have heq := collatz_cycle_equation d x hcyc
+  have hcpos := collatz_positive_cycle_intercept_pos d x hd hx hcyc
+  have hsub : (3 : Int) ^ (oddCount T d x) < (2 : Int) ^ d := by
+    by_cases hle : (2 : Int) ^ d ≤ (3 : Int) ^ (oddCount T d x)
+    · have hnp : ((2 : Int) ^ d - (3 : Int) ^ (oddCount T d x)) * x ≤ 0 :=
+        Int.mul_nonpos_of_nonpos_of_nonneg (by omega) (by omega)
+      omega
+    · omega
+  refine ⟨hsub, ?_⟩
+  have hmul : ((2 : Int) ^ d - (3 : Int) ^ (oddCount T d x)) * 1 ≤
+      ((2 : Int) ^ d - (3 : Int) ^ (oddCount T d x)) * x :=
+    Int.mul_le_mul_of_nonneg_left (by omega) (by omega)
+  rw [Int.mul_one] at hmul
+  omega
+
+/-- **No length-1 positive Collatz cycle:** no positive integer `x > 0` is a fixed point of `T`. -/
+public theorem collatz_no_positive_cycle_d1 (x : Int) (hx : 0 < x) :
+    iter T 1 x ≠ x := by
+  simp only [iter, T]
+  split
+  · omega
+  · omega
+
 end FormalAtlas

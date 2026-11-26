@@ -1,39 +1,37 @@
-# Six-Kernel Independent Verification Audit (Lean 4.35.0, v0.5.0)
-# Targets: Solution (45 headline theorems), NonVacuity (10 witnesses), Adversarial (14 refutations) — 69 audited declarations
+# Six-Kernel Independent Verification Audit (Lean 4.35.0, v0.6.0)
+# Options: autoImplicit = false, zero Mathlib, zero native_decide, zero sorry outside Challenge.lean
+# Targets: Solution (53 headline theorems), NonVacuity (12 witnesses), Adversarial (16 refutations) — 81 audited declarations
 # Strict permitted axiom whitelist: [propext, Classical.choice, Quot.sound] (NO sorryAx even declared in cones)
 
 [PASS] 1/6 lean (lake build Challenge Solution NonVacuity Adversarial)
-  ⚠ [3/19] Replayed Challenge | warning: Challenge.lean:20:15: declaration uses `sorry` | warning: Challenge.lean:24:15: declaration uses `sorry`
+  ⚠ [10/19] Built Challenge (6.4s) | warning: Challenge.lean:20:15: declaration uses `sorry` | warning: Challenge.lean:24:15: declaration uses `sorry` | warning: Challenge.lean:28:15: declaration uses `sorry` | warning: Challenge.lean:34:15: declaration uses `sorry` | warning: Challenge.lean:39:15: declaration uses `sorry`
 [PASS] 2/6 leanchecker-paranoid --fresh Solution
 [PASS] 2/6 leanchecker-paranoid --fresh NonVacuity
 [PASS] 2/6 leanchecker-paranoid --fresh Adversarial
-[PASS] export Solution minimal transitive cone (45 decls)
-  wrote Solution_cone.ndjson (15029154 bytes)
-[PASS] export NonVacuity minimal transitive cone (10 decls)
-  wrote NonVacuity_cone.ndjson (5692307 bytes)
-[PASS] export Adversarial minimal transitive cone (14 decls)
-  wrote Adversarial_cone.ndjson (7285333 bytes)
+[PASS] export Solution minimal transitive cone (53 decls)
+  wrote Solution_cone.ndjson (23121418 bytes)
+[PASS] export NonVacuity minimal transitive cone (12 decls)
+  wrote NonVacuity_cone.ndjson (7926729 bytes)
+[PASS] export Adversarial minimal transitive cone (16 decls)
+  wrote Adversarial_cone.ndjson (7338854 bytes)
 [PASS] 3/6 lean4lean --import Solution_cone.ndjson
-  checked 2729 declarations
+  checked 3362 declarations
 [PASS] 3/6 lean4lean --import NonVacuity_cone.ndjson
-  checked 1807 declarations
+  checked 2017 declarations
 [PASS] 3/6 lean4lean --import Adversarial_cone.ndjson
-  checked 2007 declarations
+  checked 2017 declarations
 [PASS] 4/6 nanoda_bin (strict 3-axiom whitelist) Solution_cone.ndjson
-  Checked 3017 declarations with no typechecker errors, 1 pretty printer errors: [ |     "Unable to print axioms", | ]
 [PASS] 4/6 nanoda_bin (strict 3-axiom whitelist) NonVacuity_cone.ndjson
-  Checked 2056 declarations with no typechecker errors, 1 pretty printer errors: [ |     "Unable to print axioms", | ]
 [PASS] 4/6 nanoda_bin (strict 3-axiom whitelist) Adversarial_cone.ndjson
-  Checked 2256 declarations with no typechecker errors, 1 pretty printer errors: [ |     "Unable to print axioms", | ]
 [PASS] 5/6 con-leche --verified Solution_cone.ndjson
-  con-leche: accepted 2732 declarations (--verified) | con-leche: 2 declarations hoisted ahead of the pinned Nat operations they ground: Nat.mul._f, Nat.mul
+  con-leche: accepted 3365 declarations (--verified) | con-leche: 2 declarations hoisted ahead of the pinned Nat operations they ground: Nat.mul._f, Nat.mul
 [PASS] 5/6 con-leche --verified NonVacuity_cone.ndjson
-  con-leche: accepted 1810 declarations (--verified)
+  con-leche: accepted 2020 declarations (--verified)
 [PASS] 5/6 con-leche --verified Adversarial_cone.ndjson
-  con-leche: accepted 2010 declarations (--verified)
+  con-leche: accepted 2020 declarations (--verified)
 [PASS] 6/6 con-ron --verified Solution_cone.ndjson
-  con-ron: accepted 2732 declarations (--verified) | con-ron: 2 declarations hoisted ahead of the pinned Nat operations they ground: Nat.mul._f, Nat.mul
+  con-ron: accepted 3365 declarations (--verified) | con-ron: 2 declarations hoisted ahead of the pinned Nat operations they ground: Nat.mul._f, Nat.mul
 [PASS] 6/6 con-ron --verified NonVacuity_cone.ndjson
-  con-ron: accepted 1810 declarations (--verified)
+  con-ron: accepted 2020 declarations (--verified)
 [PASS] 6/6 con-ron --verified Adversarial_cone.ndjson
-  con-ron: accepted 2010 declarations (--verified)
+  con-ron: accepted 2020 declarations (--verified)

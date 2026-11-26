@@ -33,19 +33,22 @@ check:
     {{py}} scripts/check_retractions.py --check
     {{py}} scripts/check_readme_axioms.py
     {{py}} scripts/build_data_manifest.py --check
+    {{py}} scripts/timestamp_manifest.py --check
 
 test:
     {{py}} -m pytest -q tests/
 
 formal:
     cd lean && lake build Challenge Solution NonVacuity Adversarial && lake env lean VerifyAxioms.lean && lake check --paranoid && lake comparator --config comparator.json --paranoid
+    {{py}} scripts/test_lean_negative.py
 
 formal-nosandbox:
     cd lean && lake build Challenge Solution NonVacuity Adversarial && lake env lean VerifyAxioms.lean && lake env leanchecker-paranoid --fresh Solution && lake env leanchecker-paranoid --fresh NonVacuity && lake env leanchecker-paranoid --fresh Adversarial
+    {{py}} scripts/test_lean_negative.py
 
 lint:
     ruff check scripts rag tests examples || true
-    mypy scripts/generate.py scripts/validate.py scripts/build_data_manifest.py scripts/build_site.py scripts/check_retractions.py scripts/check_readme_axioms.py rag/build_corpus.py rag/retriever.py || true
+    mypy scripts/generate.py scripts/validate.py scripts/build_data_manifest.py scripts/build_site.py scripts/check_retractions.py scripts/check_readme_axioms.py scripts/test_lean_negative.py scripts/timestamp_manifest.py rag/build_corpus.py rag/retriever.py || true
 
 mutate:
     {{py}} tests/mutation_check.py

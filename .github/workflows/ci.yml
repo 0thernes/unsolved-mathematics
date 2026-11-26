@@ -44,6 +44,7 @@ jobs:
           python scripts/check_readme_axioms.py
           python scripts/build_site.py
           python scripts/build_data_manifest.py --check
+          python scripts/timestamp_manifest.py --check
 
       - name: Verify deterministic rebuild (zero drift)
         shell: bash
@@ -80,7 +81,7 @@ jobs:
       - name: Audit forbidden tokens & Palomar limits (zero sorry/admit/native_decide/custom axiom)
         run: python3 scripts/check_readme_axioms.py
 
-      - name: Build Lean 4.35.0 package & verify axioms strictly within standard set (69 declarations)
+      - name: Build Lean 4.35.0 package & verify axioms strictly within standard set (81 declarations)
         working-directory: lean
         run: |
           lake build Challenge Solution NonVacuity Adversarial
@@ -94,7 +95,7 @@ jobs:
               txt,
               re.S,
           ))
-          assert len(matches) >= 69, f"Expected >=69 audited declarations, got {len(matches)}"
+          assert len(matches) >= 81, f"Expected >=81 audited declarations, got {len(matches)}"
           for m in matches:
               name = m.group(1)
               raw = m.group(2) or ""
@@ -103,6 +104,9 @@ jobs:
               assert not bad, f"Disallowed axiom(s) {bad} in {name}"
           print(f"OK: audited {len(matches)} theorems/witnesses/refutations — strictly within {sorted(allowed)}.")
           PY
+
+      - name: Live negative Lean 4.35.0 kernel & axiom-gate rejection test
+        run: python3 scripts/test_lean_negative.py
 
       - name: Replay through leanchecker-paranoid --fresh
         working-directory: lean
@@ -139,7 +143,7 @@ jobs:
           ruff check --select E9,F63,F7,F82 problems/collatz-conjecture/experiments
 
       - name: Strict type check (mypy)
-        run: mypy scripts/generate.py scripts/validate.py scripts/build_data_manifest.py scripts/build_site.py scripts/check_retractions.py scripts/check_readme_axioms.py rag/build_corpus.py rag/retriever.py
+        run: mypy scripts/generate.py scripts/validate.py scripts/build_data_manifest.py scripts/build_site.py scripts/check_retractions.py scripts/check_readme_axioms.py scripts/test_lean_negative.py scripts/timestamp_manifest.py rag/build_corpus.py rag/retriever.py
 
       - name: Dependency vulnerability scan (pip-audit, report-only)
         run: pip-audit -r requirements-lock.txt || true

@@ -4,9 +4,9 @@ module
 public import FormalAtlas.Defs
 
 /-!
-# Challenge — Isolated Statement Specification for `lake comparator` (`v0.5.0`)
+# Challenge — Isolated Statement Specification for `lake comparator` (`v0.6.0`)
 
-Contains ONLY the exact 45 headline theorem signatures across 8 open-problem domains
+Contains ONLY the exact 53 headline theorem signatures across 8 open-problem domains
 to be judged by `lake comparator --config comparator.json --paranoid` against `Solution.lean`.
 All proofs live exclusively in `FormalAtlas.*` and are exported via `Solution.lean`.
 -/
@@ -14,7 +14,7 @@ All proofs live exclusively in `FormalAtlas.*` and are exported via `Solution.le
 namespace FormalAtlas.Challenge
 
 -- ============================================================================
--- I. Collatz Conjecture & 3n-1 Sibling Control (14 theorems)
+-- I. Collatz Conjecture & 3n-1 Sibling Control (18 theorems)
 -- ============================================================================
 
 public theorem thm_collatz_cylinder_affine_law (d : Nat) (q r : Int) :
@@ -79,6 +79,22 @@ public theorem thm_collatz_intercept_nonneg (w : List Bool) :
 public theorem thm_collatz_parity_word_length (f : Int → Int) (d : Nat) (x : Int) :
     (parityWord f d x).length = d := sorry
 
+public theorem thm_collatz_positive_cycle_has_odd_step (d : Nat) (x : Int)
+    (hd : 1 ≤ d) (hx : 0 < x) (hcyc : iter T d x = x) :
+    1 ≤ oddCount T d x := sorry
+
+public theorem thm_collatz_positive_cycle_intercept_pos (d : Nat) (x : Int)
+    (hd : 1 ≤ d) (hx : 0 < x) (hcyc : iter T d x = x) :
+    0 < wordIntercept (parityWord T d x) := sorry
+
+public theorem thm_collatz_positive_cycle_subcritical (d : Nat) (x : Int)
+    (hd : 1 ≤ d) (hx : 0 < x) (hcyc : iter T d x = x) :
+    (3 : Int) ^ (oddCount T d x) < (2 : Int) ^ d ∧
+    (2 : Int) ^ d - (3 : Int) ^ (oddCount T d x) ≤ wordIntercept (parityWord T d x) := sorry
+
+public theorem thm_collatz_no_positive_cycle_d1 (x : Int) (hx : 0 < x) :
+    iter T 1 x ≠ x := sorry
+
 -- ============================================================================
 -- II. Erdős–Straus Conjecture (5 theorems)
 -- ============================================================================
@@ -102,7 +118,7 @@ public theorem thm_erdos_straus_all_le_30 (n : Nat) (hlo : 2 ≤ n) (hhi : n ≤
     HasErdosStraus n := sorry
 
 -- ============================================================================
--- III. Lonely Runner Conjecture (7 theorems)
+-- III. Lonely Runner Conjecture (8 theorems — complete through n = 3)
 -- ============================================================================
 
 public theorem thm_lonely_runner_sharpness_all_n (n : Nat) (hn : 1 ≤ n) (p q : Int) (hq : 0 < q) :
@@ -126,6 +142,9 @@ public theorem thm_lonely_runner_neg_time (m p q v : Int) (hq : 0 < q) (h : FarE
 
 public theorem thm_lonely_runner_n3_nondiv4 (v1 v2 v3 : Int)
     (h1 : v1 % 4 ≠ 0) (h2 : v2 % 4 ≠ 0) (h3 : v3 % 4 ≠ 0) :
+    ∃ p q : Int, 0 < q ∧ FarEnough 4 p q v1 ∧ FarEnough 4 p q v2 ∧ FarEnough 4 p q v3 := sorry
+
+public theorem thm_lonely_runner_n3 (v1 v2 v3 : Int) (hv1 : 0 < v1) (hv2 : 0 < v2) (hv3 : 0 < v3) :
     ∃ p q : Int, 0 < q ∧ FarEnough 4 p q v1 ∧ FarEnough 4 p q v2 ∧ FarEnough 4 p q v3 := sorry
 
 -- ============================================================================
@@ -184,7 +203,7 @@ public theorem thm_goldbach_binary_fails_at_11 :
     ¬ (∃ p q : Nat, IsPrime p ∧ IsPrime q ∧ p + q = 11) := sorry
 
 -- ============================================================================
--- VII. Odd Perfect Numbers & Mersenne Primes (3 theorems)
+-- VII. Odd Perfect Numbers & Mersenne Primes (4 theorems)
 -- ============================================================================
 
 public theorem thm_mersenne_exponent_prime (n : Nat) (hn : 2 ≤ n) (hm : IsPrime (2 ^ n - 1)) :
@@ -196,8 +215,11 @@ public theorem thm_perfect_numbers_first_four :
 public theorem thm_no_odd_perfect_le_100 (n : Nat) (hle : n ≤ 100) (hodd : n % 2 = 1) :
     ¬ IsPerfect n := sorry
 
+public theorem thm_euclid_even_perfect (p : Nat) (hp : 2 ≤ p) (hmp : IsPrime (2 ^ p - 1)) :
+    IsPerfect (2 ^ (p - 1) * (2 ^ p - 1)) := sorry
+
 -- ============================================================================
--- VIII. Ramsey Theory — Exact R(3, 3) = 6 (2 theorems)
+-- VIII. Ramsey Theory — Exact R(3, 3) = 6 and R(3, 4) = 9 (4 theorems)
 -- ============================================================================
 
 public theorem thm_ramsey_R33_upper (c : Fin 6 → Fin 6 → Bool) :
@@ -205,5 +227,12 @@ public theorem thm_ramsey_R33_upper (c : Fin 6 → Fin 6 → Bool) :
 
 public theorem thm_ramsey_R33_lower :
     ∃ c : Fin 5 → Fin 5 → Bool, (∀ i j : Fin 5, c i j = c j i) ∧ ¬ HasMonoTriangle c := sorry
+
+public theorem thm_ramsey_R34_upper (c : Fin 9 → Fin 9 → Bool) (hsym : ∀ i j, c i j = c j i) :
+    HasColorTriangle c true ∨ HasColorK4 c false := sorry
+
+public theorem thm_ramsey_R34_lower :
+    ∃ c : Fin 8 → Fin 8 → Bool, (∀ i j : Fin 8, c i j = c j i) ∧
+      ¬ HasColorTriangle c true ∧ ¬ HasColorK4 c false := sorry
 
 end FormalAtlas.Challenge

@@ -7,7 +7,7 @@ JSON/data files (data/problems.json, data/citation-verification-log.json,
 data/retraction-audit.json, lean/comparator.json, lean/VerifyAxioms.lean, VERSION)
 and emits:
   - _site/index.html      (searchable 106-problem Atlas explorer)
-  - _site/blueprint.html  (interactive 8-domain, 45-theorem Lean 4.35.0 Proof Blueprint & DAG)
+  - _site/blueprint.html  (interactive 8-domain, 53-theorem Lean 4.35.0 Proof Blueprint & DAG)
   - _site/problems.json
   - _site/social-preview.svg
 """
@@ -38,6 +38,10 @@ THEOREM_CATALOG: list[tuple[str, str, str, str, str]] = [
     ("thm_collatz_zero_fixed_point", "Collatz", "FormalAtlas/Collatz.lean", "T^d(0) = 0 & o(T,d,0) = 0", "Zero trivial fixed-point invariant"),
     ("thm_collatz_intercept_nonneg", "Collatz", "FormalAtlas/Collatz.lean", "0 <= wordIntercept w", "Non-negativity of affine intercept for all words"),
     ("thm_collatz_parity_word_length", "Collatz", "FormalAtlas/Collatz.lean", "(parityWord f d x).length = d", "Length preservation for arbitrary maps"),
+    ("thm_collatz_positive_cycle_has_odd_step", "Collatz", "FormalAtlas/Collatz.lean", "d>=1 & x>0 & T^d(x)=x => oddCount >= 1", "Every positive Collatz cycle contains at least one odd step"),
+    ("thm_collatz_positive_cycle_intercept_pos", "Collatz", "FormalAtlas/Collatz.lean", "d>=1 & x>0 & T^d(x)=x => wordIntercept w > 0", "Every positive Collatz cycle has strictly positive affine intercept"),
+    ("thm_collatz_positive_cycle_subcritical", "Collatz", "FormalAtlas/Collatz.lean", "3^o < 2^d & 2^d - 3^o <= c(w)", "Every positive Collatz cycle is strictly subcritical (2^d > 3^o)"),
+    ("thm_collatz_no_positive_cycle_d1", "Collatz", "FormalAtlas/Collatz.lean", "x > 0 => T(x) != x", "Elimination of all positive length-1 fixed points"),
     ("thm_erdos_straus_mordell_840", "Erdos-Straus", "FormalAtlas/ErdosStraus.lean", "n mod 840 not in {1,121,169,289,361,529}", "Mordell (1967) 834/840 modular reduction (99.29%)"),
     ("thm_erdos_straus_multiplicative_closure", "Erdos-Straus", "FormalAtlas/ErdosStraus.lean", "HasErdosStraus m => HasErdosStraus (m*k)", "Multiplicative closure / reduction to primes"),
     ("thm_erdos_straus_mordell_exceptions_small", "Erdos-Straus", "FormalAtlas/ErdosStraus.lean", "n in {121,169,289,361,529,841}", "Resolution of all 6 smallest exceptional squares"),
@@ -50,6 +54,7 @@ THEOREM_CATALOG: list[tuple[str, str, str, str, str]] = [
     ("thm_lonely_runner_period_shift", "Lonely Runner", "FormalAtlas/LonelyRunner.lean", "FarEnough m p q v => FarEnough m (p+q) q v", "Unit circle time-periodicity mod 1"),
     ("thm_lonely_runner_neg_time", "Lonely Runner", "FormalAtlas/LonelyRunner.lean", "FarEnough m p q v => FarEnough m (-p) q v", "Time-reversal symmetry t -> -t"),
     ("thm_lonely_runner_n3_nondiv4", "Lonely Runner", "FormalAtlas/LonelyRunner.lean", "n = 3, 4 nmid v_i => gap >= 1/4 at t=1/4", "4-runner constructive coverage (7/8 parity classes)"),
+    ("thm_lonely_runner_n3", "Lonely Runner", "FormalAtlas/LonelyRunner.lean", "forall v1,v2,v3 > 0, exists t=p/q, gap >= 1/4", "Complete constructive 4-runner Lonely Runner theorem (ALL triples)"),
     ("thm_brocard_brown_solutions", "Brocard", "FormalAtlas/Brocard.lean", "(4,5), (5,11), (7,71)", "Exact verification of all 3 known Brown pairs"),
     ("thm_brocard_exhaustive_le_12", "Brocard", "FormalAtlas/Brocard.lean", "n <= 12 => n in {4,5,7}", "Exhaustive classification through 12! + 1"),
     ("thm_brocard_mod4_ge_4", "Brocard", "FormalAtlas/Brocard.lean", "n >= 4 => (n! + 1) mod 4 = 1", "Odd-square modular constraint for all n >= 4"),
@@ -67,8 +72,11 @@ THEOREM_CATALOG: list[tuple[str, str, str, str, str]] = [
     ("thm_mersenne_exponent_prime", "Perfect-Mersenne", "FormalAtlas/PerfectNumbers.lean", "IsPrime (2^n - 1) => IsPrime n", "Algebraic factorization 2^a - 1 | 2^(ab) - 1"),
     ("thm_perfect_numbers_first_four", "Perfect-Mersenne", "FormalAtlas/PerfectNumbers.lean", "IsPerfect 6, 28, 496, 8128", "Exact sigma(n) = 2n for first four perfect numbers"),
     ("thm_no_odd_perfect_le_100", "Perfect-Mersenne", "FormalAtlas/PerfectNumbers.lean", "odd n <= 100 => not IsPerfect n", "Finite odd-perfect exclusion through 100"),
+    ("thm_euclid_even_perfect", "Perfect-Mersenne", "FormalAtlas/PerfectNumbers.lean", "p>=2 & IsPrime(2^p-1) => IsPerfect(2^(p-1)*(2^p-1))", "Euclid's Elements IX.36 even perfect theorem for ALL p >= 2"),
     ("thm_ramsey_R33_upper", "Ramsey", "FormalAtlas/Ramsey.lean", "forall c on K_6, HasMonoTriangle c", "Exact Ramsey upper bound R(3,3) <= 6"),
     ("thm_ramsey_R33_lower", "Ramsey", "FormalAtlas/Ramsey.lean", "exists symm c on K_5, not HasMonoTriangle c", "Explicit C_5 lower bound R(3,3) > 5 (proving R(3,3)=6)"),
+    ("thm_ramsey_R34_upper", "Ramsey", "FormalAtlas/Ramsey.lean", "forall symm c on K_9, red K_3 or blue K_4", "Exact Ramsey upper bound R(3,4) <= 9 via Handshaking Lemma"),
+    ("thm_ramsey_R34_lower", "Ramsey", "FormalAtlas/Ramsey.lean", "exists symm c on K_8, no red K_3 & no blue K_4", "Explicit C_8(1,4,7) coloring proving R(3,4) > 8 (exact R(3,4)=9)"),
 ]
 
 
@@ -137,7 +145,7 @@ def _build_blueprint_html(version: str, n_theorems: int, n_decls: int) -> str:
       <a href="https://github.com/0thernes/unsolved-mathematics/blob/main/paper/Donahue_2026_unsolved_mathematics_atlas.pdf">White Paper PDF</a>
     </nav>
     <h1>FormalAtlas Lean 4.35.0 Proof Blueprint <small style="color:var(--muted)">v{html.escape(version)}</small></h1>
-    <p class="sub">Standalone zero-Mathlib Lean 4.35.0 formal core across <strong>8 open-problem domains</strong>: <strong>{n_theorems} headline theorems</strong> + <strong>10 non-vacuity witnesses</strong> + <strong>14 adversarial false-variant refutations</strong> = <strong>{n_decls} audited declarations</strong> · axioms strictly within <code>&#123;propext, Classical.choice, Quot.sound&#125;</code> · verified across all <strong>6 independent kernels</strong>. <em>None of these theorems claims to solve an open conjecture.</em></p>
+    <p class="sub">Standalone zero-Mathlib Lean 4.35.0 formal core (<code>autoImplicit = false</code>) across <strong>8 open-problem domains</strong>: <strong>{n_theorems} headline theorems</strong> + <strong>12 non-vacuity witnesses</strong> + <strong>16 adversarial false-variant refutations</strong> = <strong>{n_decls} audited declarations</strong> · axioms strictly within <code>&#123;propext, Classical.choice, Quot.sound&#125;</code> · verified across all <strong>6 independent kernels</strong> + live negative kernel rejection. <em>None of these theorems claims to solve an open conjecture.</em></p>
 
     <h2>Eight-Domain Dependency &amp; Multi-Kernel Verification DAG</h2>
     <div class="dag-box">
@@ -149,14 +157,14 @@ def _build_blueprint_html(version: str, n_theorems: int, n_decls: int) -> str:
         </defs>
         <rect x="16" y="136" width="170" height="66" rx="10" fill="#0f172a" stroke="#60a5fa" stroke-width="2"/>
         <text x="101" y="164" fill="#f1f5f9" text-anchor="middle" font-size="13" font-weight="700">FormalAtlas.Defs</text>
-        <text x="101" y="184" fill="#94a3b8" text-anchor="middle" font-size="11">153 LOC · Zero Mathlib</text>
+        <text x="101" y="184" fill="#94a3b8" text-anchor="middle" font-size="11">172 LOC · Zero Mathlib</text>
 
         <rect x="248" y="8" width="206" height="34" rx="7" fill="#1e3a8a" stroke="#93c5fd"/>
-        <text x="351" y="30" fill="#f1f5f9" text-anchor="middle" font-size="11.5" font-weight="700">Collatz (14 theorems)</text>
+        <text x="351" y="30" fill="#f1f5f9" text-anchor="middle" font-size="11.5" font-weight="700">Collatz (18 theorems)</text>
         <rect x="248" y="49" width="206" height="34" rx="7" fill="#065f46" stroke="#6ee7b7"/>
         <text x="351" y="71" fill="#f1f5f9" text-anchor="middle" font-size="11.5" font-weight="700">Erdős–Straus (5 theorems)</text>
         <rect x="248" y="90" width="206" height="34" rx="7" fill="#5b21b6" stroke="#c4b5fd"/>
-        <text x="351" y="112" fill="#f1f5f9" text-anchor="middle" font-size="11.5" font-weight="700">Lonely Runner (7 theorems)</text>
+        <text x="351" y="112" fill="#f1f5f9" text-anchor="middle" font-size="11.5" font-weight="700">Lonely Runner n≤3 (8 thms)</text>
         <rect x="248" y="131" width="206" height="34" rx="7" fill="#92400e" stroke="#fcd34d"/>
         <text x="351" y="153" fill="#f1f5f9" text-anchor="middle" font-size="11.5" font-weight="700">Brocard ≤ 20 (7 theorems)</text>
         <rect x="248" y="172" width="206" height="34" rx="7" fill="#0e7490" stroke="#67e8f9"/>
@@ -164,25 +172,25 @@ def _build_blueprint_html(version: str, n_theorems: int, n_decls: int) -> str:
         <rect x="248" y="213" width="206" height="34" rx="7" fill="#854d0e" stroke="#fde047"/>
         <text x="351" y="235" fill="#f1f5f9" text-anchor="middle" font-size="11.5" font-weight="700">Goldbach ≤ 100 (3 theorems)</text>
         <rect x="248" y="254" width="206" height="34" rx="7" fill="#9d174d" stroke="#f9a8d4"/>
-        <text x="351" y="276" fill="#f1f5f9" text-anchor="middle" font-size="11.5" font-weight="700">Perfect / Mersenne (3 thms)</text>
+        <text x="351" y="276" fill="#f1f5f9" text-anchor="middle" font-size="11.5" font-weight="700">Perfect / Euclid (4 thms)</text>
         <rect x="248" y="295" width="206" height="34" rx="7" fill="#3f6212" stroke="#bef264"/>
-        <text x="351" y="317" fill="#f1f5f9" text-anchor="middle" font-size="11.5" font-weight="700">Ramsey R(3,3)=6 (2 thms)</text>
+        <text x="351" y="317" fill="#f1f5f9" text-anchor="middle" font-size="11.5" font-weight="700">Ramsey R(3,4)=9 (4 thms)</text>
 
         <rect x="524" y="30" width="192" height="52" rx="8" fill="#1e293b" stroke="#94a3b8"/>
         <text x="620" y="53" fill="#f1f5f9" text-anchor="middle" font-size="12" font-weight="700">Challenge.lean</text>
-        <text x="620" y="70" fill="#94a3b8" text-anchor="middle" font-size="10.5">45 isolated signatures</text>
+        <text x="620" y="70" fill="#94a3b8" text-anchor="middle" font-size="10.5">{n_theorems} isolated signatures</text>
 
         <rect x="524" y="102" width="192" height="52" rx="8" fill="#1e293b" stroke="#34d399" stroke-width="1.6"/>
         <text x="620" y="125" fill="#f1f5f9" text-anchor="middle" font-size="12" font-weight="700">Solution.lean</text>
-        <text x="620" y="142" fill="#6ee7b7" text-anchor="middle" font-size="10.5">45 zero-sorry proofs</text>
+        <text x="620" y="142" fill="#6ee7b7" text-anchor="middle" font-size="10.5">{n_theorems} zero-sorry proofs</text>
 
         <rect x="524" y="174" width="192" height="52" rx="8" fill="#1e293b" stroke="#60a5fa"/>
         <text x="620" y="197" fill="#f1f5f9" text-anchor="middle" font-size="12" font-weight="700">NonVacuity.lean</text>
-        <text x="620" y="214" fill="#93c5fd" text-anchor="middle" font-size="10.5">10 concrete witnesses</text>
+        <text x="620" y="214" fill="#93c5fd" text-anchor="middle" font-size="10.5">12 concrete witnesses</text>
 
         <rect x="524" y="246" width="192" height="52" rx="8" fill="#1e293b" stroke="#f87171"/>
         <text x="620" y="269" fill="#f1f5f9" text-anchor="middle" font-size="12" font-weight="700">Adversarial.lean</text>
-        <text x="620" y="286" fill="#fca5a5" text-anchor="middle" font-size="10.5">14 false-variant refutations</text>
+        <text x="620" y="286" fill="#fca5a5" text-anchor="middle" font-size="10.5">16 false-variant refutations</text>
 
         <rect x="788" y="64" width="290" height="84" rx="10" fill="#0f172a" stroke="#34d399" stroke-width="2"/>
         <text x="933" y="92" fill="#34d399" text-anchor="middle" font-size="13" font-weight="700">6-Kernel bwrap Replay</text>
@@ -190,9 +198,9 @@ def _build_blueprint_html(version: str, n_theorems: int, n_decls: int) -> str:
         <text x="933" y="131" fill="#cbd5e1" text-anchor="middle" font-size="10.8">nanoda_bin · con-leche · con-ron</text>
 
         <rect x="788" y="182" width="290" height="84" rx="10" fill="#0f172a" stroke="#60a5fa" stroke-width="2"/>
-        <text x="933" y="210" fill="#93c5fd" text-anchor="middle" font-size="13" font-weight="700">VerifyAxioms + Comparator</text>
-        <text x="933" y="231" fill="#cbd5e1" text-anchor="middle" font-size="10.8">69/69 decls in &#123;propext, choice, Quot&#125;</text>
-        <text x="933" y="249" fill="#cbd5e1" text-anchor="middle" font-size="10.8">README parity enforced in CI</text>
+        <text x="933" y="210" fill="#93c5fd" text-anchor="middle" font-size="13" font-weight="700">VerifyAxioms + Neg Gate</text>
+        <text x="933" y="231" fill="#cbd5e1" text-anchor="middle" font-size="10.8">{n_decls}/{n_decls} decls in &#123;propext, choice, Quot&#125;</text>
+        <text x="933" y="249" fill="#cbd5e1" text-anchor="middle" font-size="10.8">README parity + 3/3 live neg rejection</text>
 
         <line x1="186" y1="150" x2="245" y2="25" stroke="#60a5fa" stroke-width="1.3" marker-end="url(#arr)"/>
         <line x1="186" y1="156" x2="245" y2="66" stroke="#60a5fa" stroke-width="1.3" marker-end="url(#arr)"/>
@@ -223,14 +231,14 @@ def _build_blueprint_html(version: str, n_theorems: int, n_decls: int) -> str:
     <h2>Headline Theorems ({n_theorems} Across 8 Domains)</h2>
     <div class="filters">
       <button class="fbtn active" data-filter="all">All ({n_theorems})</button>
-      <button class="fbtn" data-filter="collatz">Collatz (14)</button>
+      <button class="fbtn" data-filter="collatz">Collatz (18)</button>
       <button class="fbtn" data-filter="erdos-straus">Erdős–Straus (5)</button>
-      <button class="fbtn" data-filter="lonely-runner">Lonely Runner (7)</button>
+      <button class="fbtn" data-filter="lonely-runner">Lonely Runner (8)</button>
       <button class="fbtn" data-filter="brocard">Brocard (7)</button>
       <button class="fbtn" data-filter="primes">Primes (4)</button>
       <button class="fbtn" data-filter="goldbach">Goldbach (3)</button>
-      <button class="fbtn" data-filter="perfect-mersenne">Perfect / Mersenne (3)</button>
-      <button class="fbtn" data-filter="ramsey">Ramsey (2)</button>
+      <button class="fbtn" data-filter="perfect-mersenne">Perfect / Mersenne (4)</button>
+      <button class="fbtn" data-filter="ramsey">Ramsey (4)</button>
     </div>
 
     <div class="grid" id="grid">

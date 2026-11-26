@@ -1,6 +1,9 @@
 name = "FormalAtlas"
-version = "0.5.0"
+version = "0.6.0"
 defaultTargets = ["FormalAtlas", "Solution", "NonVacuity", "Adversarial"]
+
+[leanOptions]
+autoImplicit = false
 
 [[lean_lib]]
 name = "FormalAtlas"

@@ -14,11 +14,11 @@ point here. Edit this file, never the pointers.
 - **Version:** `VERSION` (single source of truth; verified equal to `data/problems.yaml`, `CITATION.cff`, `pyproject.toml`, `lean/lakefile.toml`, and `lean/formalization.yaml`)
 - **Stack:** Python 3.11+ (`PyYAML`, `jsonschema`, `pytest`, `hypothesis`, `ruff`, `mypy`) + Lean 4.35.0 (`lean/`, zero Mathlib, 6-kernel `lake check --paranoid` + `lake comparator --paranoid`) + AMS-LaTeX (`tectonic`)
 - **Layout:**
-  - `data/` — canonical registry (`problems.yaml`), generated `problems.json`, `dossier-status.json`, `citation-verification-log.json`, `retraction-audit.json`, `MANIFEST.sha256`
+  - `data/` — canonical registry (`problems.yaml`), generated `problems.json`, `dossier-status.json`, `citation-verification-log.json`, `retraction-audit.json`, `MANIFEST.sha256` (+ DigiCert RFC 3161 `.tsr` & Bitcoin OpenTimestamps `.ots` proofs)
   - `problems/<slug>/` — 106 self-contained problem dossiers (8 markdown files + `metadata.json` + `rag/`)
-  - `lean/` — standalone Lean 4.35.0 formal core (`FormalAtlas/`, `Challenge.lean`, `Solution.lean`, `NonVacuity.lean`, `Adversarial.lean`, `VerifyAxioms.lean`, `comparator.json`, `formalization.yaml`, `STATEMENT_FIDELITY.md`, `six_kernel_audit.txt`)
+  - `lean/` — standalone Lean 4.35.0 formal core (`autoImplicit = false`, `FormalAtlas/`, `Challenge.lean`, `Solution.lean`, `NonVacuity.lean`, `Adversarial.lean`, `VerifyAxioms.lean`, `comparator.json`, `formalization.yaml`, `STATEMENT_FIDELITY.md`, `six_kernel_audit.txt`)
   - `paper/` — AMS-LaTeX white paper (`Donahue_2026_unsolved_mathematics_atlas.tex`, `references.bib`, compiled PDF, clean-room-verified `arxiv_submission.tar.gz`)
-  - `scripts/` — build engine (`generate.py`), integrity gate (`validate.py`), dossier/paper/pseudo-proof/citation/retraction/README-axiom checkers, static site + proof blueprint builder (`build_site.py`), Build Standard v1.2.0 auditors (`Audit-Repo.ps1`, `audit-repo.sh`)
+  - `scripts/` — build engine (`generate.py`), integrity gate (`validate.py`), dossier/paper/pseudo-proof/citation/retraction/README-axiom checkers, live negative Lean kernel test (`test_lean_negative.py`), dual timestamp tool (`timestamp_manifest.py`), static site + proof blueprint builder (`build_site.py`), Build Standard v1.2.0 auditors (`Audit-Repo.ps1`, `audit-repo.sh`)
   - `rag/` — deterministic chunker (`build_corpus.py`), BM25 & optional dense retriever (`retriever.py`)
   - `tests/` — unit, negative, regression, property-based (Hypothesis), golden/determinism, differential, metamorphic, and mutation tests
   - `meta-analyses/` — 106 AI-assisted surveys (all explicitly labeled AI-generated, not peer-reviewed)
@@ -34,9 +34,9 @@ Use `justfile` (or `Makefile` / `build.ps1`). Every command works from a clean c
 - `just setup` — install pinned Python dependencies
 - `just build` — regenerate `data/problems.json`, `RANKING.md`, `README.md` table, and all 106 dossier headers
 - `just corpus` — rebuild deterministic `rag/corpus.jsonl` with globally unique chunk IDs
-- `just check` — run `generate.py --check`, `validate.py`, `check_papers.py`, `proof_claim_sweep.py`, `check_retractions.py --check`, `check_readme_axioms.py`, `build_data_manifest.py --check`
+- `just check` — run `generate.py --check`, `validate.py`, `check_papers.py`, `proof_claim_sweep.py`, `check_retractions.py --check`, `check_readme_axioms.py`, `build_data_manifest.py --check`, `timestamp_manifest.py --check`
 - `just test` — run full pytest + Hypothesis + regression + differential + metamorphic suite
-- `just formal` — build Lean 4.35.0 core (`lean/`), run `VerifyAxioms.lean`, `lake check --paranoid`, `lake comparator --paranoid`
+- `just formal` — build Lean 4.35.0 core (`lean/`), run `VerifyAxioms.lean`, `lake check --paranoid`, `lake comparator --paranoid`, `scripts/test_lean_negative.py`
 - `just lint` — report-only `ruff` and `mypy` checks
 - `just mutate` — run targeted mutation test harness on core engine & validators
 - `just site` — build static Atlas explorer (`_site/index.html`) and Lean Proof Blueprint (`_site/blueprint.html`)

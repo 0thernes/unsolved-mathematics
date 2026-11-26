@@ -1,8 +1,8 @@
 # Replication Protocol
 
 Step-by-step instructions to reproduce every build artifact, RAG corpus,
-static proof blueprint, AMS-LaTeX white paper, test result, and 6-kernel
-Lean 4.35.0 proof from a clean clone (`v0.5.0`).
+static proof blueprint, AMS-LaTeX white paper, dual cryptographic timestamps, test result, and 6-kernel
+Lean 4.35.0 proof from a clean clone (`v0.6.0`).
 
 ## 1. Prerequisites
 
@@ -35,6 +35,8 @@ python scripts/proof_claim_sweep.py
 python scripts/check_retractions.py --check
 python scripts/check_readme_axioms.py
 python scripts/build_data_manifest.py --check
+python scripts/timestamp_manifest.py --check
+python scripts/test_lean_negative.py
 
 # 3. Run full verification test ladder + mutation check
 python -m pytest -v tests/
@@ -63,8 +65,10 @@ cd ../paper && tectonic -X compile Donahue_2026_unsolved_mathematics_atlas.tex
 - `scripts/check_papers.py` → `OK: 106 meta-analyses passed the integrity gate.`
 - `scripts/proof_claim_sweep.py` → `PSEUDO-PROOF SWEEP: clean — no unhedged victory-declarations found.`
 - `scripts/check_retractions.py --check` → `OK: data/retraction-audit.json clean — 220 verified DOIs audited, 0 retracted, 3 with publisher update/corrigendum notices, 0 errors.`
-- `scripts/check_readme_axioms.py` → `OK: 69 declarations (45 comparator theorems) verified in README.md + lean/STATEMENT_FIDELITY.md; 15 Lean files satisfy Palomar limits & zero forbidden tokens.`
-- `lean/`: 45/45 headline theorems across 8 domains in `Challenge.lean` matched by `Solution.lean` + 10 witnesses in `NonVacuity.lean` + 14 refutations in `Adversarial.lean`; `#print axioms` strictly within `[propext, Classical.choice, Quot.sound]` (12 use zero axioms); 0 `sorry`/`admit`/`native_decide`/custom `axiom` outside `Challenge.lean`.
+- `scripts/check_readme_axioms.py` → `OK: 81 declarations (53 comparator theorems) verified in README.md + lean/STATEMENT_FIDELITY.md; 15 Lean files satisfy Palomar limits & zero forbidden tokens.`
+- `scripts/timestamp_manifest.py --check` → `OK: Dual cryptographic timestamps verified offline against data/MANIFEST.sha256`
+- `scripts/test_lean_negative.py` → `OK: All 3 live negative Lean 4.35.0 kernel & axiom-gate rejection checks PASSED.`
+- `lean/`: `autoImplicit = false`; 53/53 headline theorems across 8 domains in `Challenge.lean` matched by `Solution.lean` + 12 witnesses in `NonVacuity.lean` + 16 refutations in `Adversarial.lean`; `#print axioms` strictly within `[propext, Classical.choice, Quot.sound]` (13 use zero axioms); 0 `sorry`/`admit`/`native_decide`/custom `axiom` outside `Challenge.lean`.
 
 ## 4. Independent Replication Log
 
@@ -73,4 +77,5 @@ cd ../paper && tectonic -X compile Donahue_2026_unsolved_mathematics_atlas.tex
 | 2026-11-23 | Alexander S. Donahue (operator) | Windows 11, Python 3.12.10, Lean 4.35.0 | `v0.3.0`/`v0.3.1` Python build, 45-test ladder, 6/6 mutation, 14-theorem 6-kernel Lean replay | PASS | Local non-sandboxed replay; full `bwrap` verified in Ubuntu CI |
 | 2026-11-23 | GitHub Actions (`ubuntu-latest` + `windows-latest`) | Ephemeral GitHub runners, Python 3.12, Lean 4.35.0 + `bwrap` | `v0.3.1` full CI + 6-kernel `bwrap` Lean + SLSA release | PASS ([CI 45275518493](https://github.com/0thernes/unsolved-mathematics/actions/runs/45275518493), [Release 45275528462](https://github.com/0thernes/unsolved-mathematics/actions/runs/45275528462)) | All 4 CI jobs + SLSA release green |
 | 2026-11-25 | GitHub Actions (`ubuntu-latest` + `windows-latest`) | Ephemeral GitHub runners, Python 3.12, Lean 4.35.0 + `bwrap` | `v0.4.0` full CI (36-decl 6-kernel `bwrap` Lean + 55 tests + 6/6 mutation + Build Standard `v1.2.0` 100%) + SLSA release | PASS ([CI 45724228403](https://github.com/0thernes/unsolved-mathematics/actions/runs/45724228403), [Release 45724232811](https://github.com/0thernes/unsolved-mathematics/actions/runs/45724232811)) | All 4 CI jobs + SLSA release green (`f811c9b`) |
-| 2026-11-25 | Alexander S. Donahue (operator) | Windows 11, Python 3.12.10, Lean 4.35.0, Tectonic 0.17.0 | `v0.5.0` Cycle 4 deep refinement: 69-decl 8-domain 6-kernel Lean replay, 10-page 0-warning PDF + clean-room arXiv tarball, FAIR RO-Crate/Croissant, 65-test ladder, 6/6 mutation, `ruff`/`mypy`, Build Standard `v1.2.0` 100.0% (`68/68`) | PASS | Local 6-kernel audit recorded in `lean/six_kernel_audit.txt`; full Ubuntu `bwrap` CI + Pages deploy verified upon push to `main` |
+| 2026-11-25 | GitHub Actions (`ubuntu-latest` + `windows-latest`) | Ephemeral GitHub runners, Python 3.12, Lean 4.35.0 + `bwrap` | `v0.5.0` full CI (69-decl 8-domain 6-kernel `bwrap` Lean + 65 tests + 6/6 mutation + Build Standard `v1.2.0` 100%) + SLSA release + Pages | PASS ([CI 45742865067](https://github.com/0thernes/unsolved-mathematics/actions/runs/45742865067), [Release 45742871338](https://github.com/0thernes/unsolved-mathematics/actions/runs/45742871338), [Pages 45742865456](https://github.com/0thernes/unsolved-mathematics/actions/runs/45742865456)) | All 4 CI/Release/Pages workflows green (`0604df5`) |
+| 2026-11-26 | Alexander S. Donahue (operator) | Windows 11, Python 3.12.10, Lean 4.35.0, Tectonic 0.17.0 | `v0.6.0` Cycle 5 milestone: 81-decl 8-domain 6-kernel Lean replay (`autoImplicit = false`), 3/3 live negative kernel rejection, dual `.tsr` + `.ots` timestamps, visually inspected 0-warning PDF + clean-room arXiv tarball, 70-test ladder, 6/6 mutation, `ruff`/`mypy`, Build Standard `v1.2.0` 100.0% (`68/68`) | PASS | Local 6-kernel audit recorded in `lean/six_kernel_audit.txt`; full Ubuntu `bwrap` CI, SLSA release & Pages deploy verified upon push to `main` |

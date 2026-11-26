@@ -6,10 +6,10 @@ import NonVacuity
 import Adversarial
 
 /-!
-# VerifyAxioms — Explicit `#print axioms` Audit for All 69 Audited Declarations (`v0.5.0`)
+# VerifyAxioms — Explicit `#print axioms` Audit for All 81 Audited Declarations (`v0.6.0`)
 
-45 headline theorems (`Solution.lean`) + 10 non-vacuity witnesses (`NonVacuity.lean`) +
-14 adversarial false-variant refutations (`Adversarial.lean`) = 69 declarations.
+53 headline theorems (`Solution.lean`) + 12 non-vacuity witnesses (`NonVacuity.lean`) +
+16 adversarial false-variant refutations (`Adversarial.lean`) = 81 declarations.
 Every declaration must depend strictly on a subset of `{propext, Classical.choice, Quot.sound}`.
 -/
 
@@ -27,6 +27,10 @@ Every declaration must depend strictly on a subset of `{propext, Classical.choic
 #print axioms FormalAtlas.Challenge.thm_collatz_zero_fixed_point
 #print axioms FormalAtlas.Challenge.thm_collatz_intercept_nonneg
 #print axioms FormalAtlas.Challenge.thm_collatz_parity_word_length
+#print axioms FormalAtlas.Challenge.thm_collatz_positive_cycle_has_odd_step
+#print axioms FormalAtlas.Challenge.thm_collatz_positive_cycle_intercept_pos
+#print axioms FormalAtlas.Challenge.thm_collatz_positive_cycle_subcritical
+#print axioms FormalAtlas.Challenge.thm_collatz_no_positive_cycle_d1
 #print axioms FormalAtlas.Challenge.thm_erdos_straus_mordell_840
 #print axioms FormalAtlas.Challenge.thm_erdos_straus_multiplicative_closure
 #print axioms FormalAtlas.Challenge.thm_erdos_straus_mordell_exceptions_small
@@ -39,6 +43,7 @@ Every declaration must depend strictly on a subset of `{propext, Classical.choic
 #print axioms FormalAtlas.Challenge.thm_lonely_runner_period_shift
 #print axioms FormalAtlas.Challenge.thm_lonely_runner_neg_time
 #print axioms FormalAtlas.Challenge.thm_lonely_runner_n3_nondiv4
+#print axioms FormalAtlas.Challenge.thm_lonely_runner_n3
 #print axioms FormalAtlas.Challenge.thm_brocard_brown_solutions
 #print axioms FormalAtlas.Challenge.thm_brocard_exhaustive_le_12
 #print axioms FormalAtlas.Challenge.thm_brocard_mod4_ge_4
@@ -56,8 +61,11 @@ Every declaration must depend strictly on a subset of `{propext, Classical.choic
 #print axioms FormalAtlas.Challenge.thm_mersenne_exponent_prime
 #print axioms FormalAtlas.Challenge.thm_perfect_numbers_first_four
 #print axioms FormalAtlas.Challenge.thm_no_odd_perfect_le_100
+#print axioms FormalAtlas.Challenge.thm_euclid_even_perfect
 #print axioms FormalAtlas.Challenge.thm_ramsey_R33_upper
 #print axioms FormalAtlas.Challenge.thm_ramsey_R33_lower
+#print axioms FormalAtlas.Challenge.thm_ramsey_R34_upper
+#print axioms FormalAtlas.Challenge.thm_ramsey_R34_lower
 #print axioms FormalAtlas.NonVacuity.witness_descent_certificate
 #print axioms FormalAtlas.NonVacuity.witness_positivity_localization
 #print axioms FormalAtlas.NonVacuity.witness_subcritical_positive_cycle
@@ -68,6 +76,8 @@ Every declaration must depend strictly on a subset of `{propext, Classical.choic
 #print axioms FormalAtlas.NonVacuity.witness_goldbach_100
 #print axioms FormalAtlas.NonVacuity.witness_mersenne_31
 #print axioms FormalAtlas.NonVacuity.witness_lonely_runner_n3_concrete
+#print axioms FormalAtlas.NonVacuity.witness_lonely_runner_n3_div4
+#print axioms FormalAtlas.NonVacuity.witness_euclid_perfect_28
 #print axioms FormalAtlas.Adversarial.adv_erdos_straus_zero_denom_blocked
 #print axioms FormalAtlas.Adversarial.adv_erdos_straus_wrong_witness_refuted
 #print axioms FormalAtlas.Adversarial.adv_collatz_no_universal_descent_d1
@@ -82,3 +92,5 @@ Every declaration must depend strictly on a subset of `{propext, Classical.choic
 #print axioms FormalAtlas.Adversarial.adv_twin_prime_mod6_needs_ge_4
 #print axioms FormalAtlas.Adversarial.adv_ramsey_R33_not_le_5
 #print axioms FormalAtlas.Adversarial.adv_goldbach_requires_even
+#print axioms FormalAtlas.Adversarial.adv_ramsey_R34_not_le_8
+#print axioms FormalAtlas.Adversarial.adv_collatz_no_d1_positive_fixed_point

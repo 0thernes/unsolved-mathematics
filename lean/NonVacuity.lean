@@ -4,11 +4,11 @@ module
 public import FormalAtlas
 
 /-!
-# NonVacuity — Concrete Witnesses Defeating Vacuous-Hypothesis Objections (`v0.5.0`)
+# NonVacuity — Concrete Witnesses Defeating Vacuous-Hypothesis Objections (`v0.6.0`)
 
 Per the Defensible Independent AI Research Playbook v1.3, every conditional hypothesis
 bundle in `Challenge.lean` across all 8 domains is paired with an explicit concrete
-non-vacuity witness (10 witnesses total).
+non-vacuity witness (12 witnesses total).
 -/
 
 namespace FormalAtlas.NonVacuity
@@ -76,5 +76,17 @@ public theorem witness_lonely_runner_n3_concrete :
     FarEnough 4 1 4 1 ∧ FarEnough 4 1 4 2 ∧ FarEnough 4 1 4 3 := by
   unfold FarEnough
   exact ⟨by decide, by decide, by decide⟩
+
+/-- Witness 11: Lonely Runner `n=3` Subcase 3c triple `(3, 5, 60)` (`4*3 ∣ 60` and `4*5 ∣ 60`)
+    achieves exact circular separation `≥ 1/4` at `t = 61 / 480`. -/
+public theorem witness_lonely_runner_n3_div4 :
+    FarEnough 4 61 480 3 ∧ FarEnough 4 61 480 5 ∧ FarEnough 4 61 480 60 := by
+  unfold FarEnough
+  exact ⟨by decide, by decide, by decide⟩
+
+/-- Witness 12: Euclid even-perfect instantiation at `p = 3` (`2^3 - 1 = 7` prime → `28` perfect). -/
+public theorem witness_euclid_perfect_28 :
+    IsPrime (2 ^ 3 - 1) ∧ IsPerfect (2 ^ (3 - 1) * (2 ^ 3 - 1)) := by
+  exact ⟨isPrimeBool_sound 7 (by decide), euclid_even_perfect 3 (by decide) (isPrimeBool_sound 7 (by decide))⟩
 
 end FormalAtlas.NonVacuity

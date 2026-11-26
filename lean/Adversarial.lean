@@ -4,9 +4,9 @@ module
 public import FormalAtlas
 
 /-!
-# Adversarial — Explicit Refutation of Weakened / False Variants (`v0.5.0`, Playbook #12)
+# Adversarial — Explicit Refutation of Weakened / False Variants (`v0.6.0`, Playbook #12)
 
-Tests all 8 formal domains adversarially by proving 14 deliberately false, overclaimed,
+Tests all 8 formal domains adversarially by proving 16 deliberately false, overclaimed,
 or degenerately weakened statements are PROVABLY FALSE under our definitions.
 -/
 
@@ -111,5 +111,20 @@ public theorem adv_goldbach_requires_even :
     ¬ (∀ n : Nat, 4 ≤ n → ∃ p q : Nat, IsPrime p ∧ IsPrime q ∧ p + q = n) := by
   intro hall
   exact goldbach_binary_fails_at_11 (hall 11 (by decide))
+
+/-- 15. Ramsey bound `R(3, 4) ≤ 8` is FALSE (refuted directly by `ramsey_R34_lower`). -/
+public theorem adv_ramsey_R34_not_le_8 :
+    ¬ (∀ c : Fin 8 → Fin 8 → Bool, (∀ i j, c i j = c j i) →
+      HasColorTriangle c true ∨ HasColorK4 c false) := by
+  intro hall
+  rcases hall c8Color ramsey_R34_lower.1 with h3 | h4
+  · exact ramsey_R34_lower.2.1 h3
+  · exact ramsey_R34_lower.2.2 h4
+
+/-- 16. No positive integer is a length-1 Collatz fixed point (`∃ x > 0, T(x) = x` is FALSE). -/
+public theorem adv_collatz_no_d1_positive_fixed_point :
+    ¬ (∃ x : Int, 0 < x ∧ iter T 1 x = x) := by
+  intro ⟨x, hx, hfix⟩
+  exact collatz_no_positive_cycle_d1 x hx hfix
 
 end FormalAtlas.Adversarial

@@ -5,15 +5,15 @@ public import FormalAtlas.Defs
 import FormalAtlas
 
 /-!
-# Solution — Zero-Sorry Proofs Matching `Challenge.lean` (`v0.5.0`)
+# Solution — Zero-Sorry Proofs Matching `Challenge.lean` (`v0.6.0`)
 
-Exports all 45 headline theorems across 8 open-problem domains in `FormalAtlas.Challenge`
+Exports all 53 headline theorems across 8 open-problem domains in `FormalAtlas.Challenge`
 with exact signature match for `lake comparator --config comparator.json --paranoid`.
 -/
 
 namespace FormalAtlas.Challenge
 
--- I. Collatz (14)
+-- I. Collatz (18)
 public theorem thm_collatz_cylinder_affine_law (d : Nat) (q r : Int) :
     iter T d ((2 : Int) ^ d * q + r) =
       (3 : Int) ^ (oddCount T d r) * q + iter T d r :=
@@ -90,6 +90,26 @@ public theorem thm_collatz_parity_word_length (f : Int → Int) (d : Nat) (x : I
     (parityWord f d x).length = d :=
   collatz_parity_word_length f d x
 
+public theorem thm_collatz_positive_cycle_has_odd_step (d : Nat) (x : Int)
+    (hd : 1 ≤ d) (hx : 0 < x) (hcyc : iter T d x = x) :
+    1 ≤ oddCount T d x :=
+  collatz_positive_cycle_has_odd_step d x hd hx hcyc
+
+public theorem thm_collatz_positive_cycle_intercept_pos (d : Nat) (x : Int)
+    (hd : 1 ≤ d) (hx : 0 < x) (hcyc : iter T d x = x) :
+    0 < wordIntercept (parityWord T d x) :=
+  collatz_positive_cycle_intercept_pos d x hd hx hcyc
+
+public theorem thm_collatz_positive_cycle_subcritical (d : Nat) (x : Int)
+    (hd : 1 ≤ d) (hx : 0 < x) (hcyc : iter T d x = x) :
+    (3 : Int) ^ (oddCount T d x) < (2 : Int) ^ d ∧
+    (2 : Int) ^ d - (3 : Int) ^ (oddCount T d x) ≤ wordIntercept (parityWord T d x) :=
+  collatz_positive_cycle_subcritical d x hd hx hcyc
+
+public theorem thm_collatz_no_positive_cycle_d1 (x : Int) (hx : 0 < x) :
+    iter T 1 x ≠ x :=
+  collatz_no_positive_cycle_d1 x hx
+
 -- II. Erdős–Straus (5)
 public theorem thm_erdos_straus_mordell_840 (n : Nat) (hn : 2 ≤ n)
     (h1 : n % 840 ≠ 1) (h2 : n % 840 ≠ 121) (h3 : n % 840 ≠ 169)
@@ -114,7 +134,7 @@ public theorem thm_erdos_straus_all_le_30 (n : Nat) (hlo : 2 ≤ n) (hhi : n ≤
     HasErdosStraus n :=
   erdos_straus_all_le_30 n hlo hhi
 
--- III. Lonely Runner (7)
+-- III. Lonely Runner (8)
 public theorem thm_lonely_runner_sharpness_all_n (n : Nat) (hn : 1 ≤ n) (p q : Int) (hq : 0 < q) :
     ∃ i : Nat, 1 ≤ i ∧ i ≤ n ∧ WithinDist ((n : Int) + 1) p q (i : Int) :=
   lonely_runner_sharpness_all_n n hn p q hq
@@ -144,6 +164,10 @@ public theorem thm_lonely_runner_n3_nondiv4 (v1 v2 v3 : Int)
     (h1 : v1 % 4 ≠ 0) (h2 : v2 % 4 ≠ 0) (h3 : v3 % 4 ≠ 0) :
     ∃ p q : Int, 0 < q ∧ FarEnough 4 p q v1 ∧ FarEnough 4 p q v2 ∧ FarEnough 4 p q v3 :=
   lonely_runner_n3_nondiv4 v1 v2 v3 h1 h2 h3
+
+public theorem thm_lonely_runner_n3 (v1 v2 v3 : Int) (hv1 : 0 < v1) (hv2 : 0 < v2) (hv3 : 0 < v3) :
+    ∃ p q : Int, 0 < q ∧ FarEnough 4 p q v1 ∧ FarEnough 4 p q v2 ∧ FarEnough 4 p q v3 :=
+  lonely_runner_n3 v1 v2 v3 hv1 hv2 hv3
 
 -- IV. Brocard (7)
 public theorem thm_brocard_brown_solutions :
@@ -205,7 +229,7 @@ public theorem thm_goldbach_binary_fails_at_11 :
     ¬ (∃ p q : Nat, IsPrime p ∧ IsPrime q ∧ p + q = 11) :=
   goldbach_binary_fails_at_11
 
--- VII. Odd Perfect & Mersenne (3)
+-- VII. Odd Perfect & Mersenne (4)
 public theorem thm_mersenne_exponent_prime (n : Nat) (hn : 2 ≤ n) (hm : IsPrime (2 ^ n - 1)) :
     IsPrime n :=
   mersenne_exponent_prime n hn hm
@@ -218,7 +242,11 @@ public theorem thm_no_odd_perfect_le_100 (n : Nat) (hle : n ≤ 100) (hodd : n %
     ¬ IsPerfect n :=
   no_odd_perfect_le_100 n hle hodd
 
--- VIII. Ramsey R(3,3) = 6 (2)
+public theorem thm_euclid_even_perfect (p : Nat) (hp : 2 ≤ p) (hmp : IsPrime (2 ^ p - 1)) :
+    IsPerfect (2 ^ (p - 1) * (2 ^ p - 1)) :=
+  euclid_even_perfect p hp hmp
+
+-- VIII. Ramsey R(3,3) = 6 & R(3,4) = 9 (4)
 public theorem thm_ramsey_R33_upper (c : Fin 6 → Fin 6 → Bool) :
     HasMonoTriangle c :=
   ramsey_R33_upper c
@@ -226,5 +254,14 @@ public theorem thm_ramsey_R33_upper (c : Fin 6 → Fin 6 → Bool) :
 public theorem thm_ramsey_R33_lower :
     ∃ c : Fin 5 → Fin 5 → Bool, (∀ i j : Fin 5, c i j = c j i) ∧ ¬ HasMonoTriangle c :=
   ⟨c5Color, ramsey_R33_lower⟩
+
+public theorem thm_ramsey_R34_upper (c : Fin 9 → Fin 9 → Bool) (hsym : ∀ i j, c i j = c j i) :
+    HasColorTriangle c true ∨ HasColorK4 c false :=
+  ramsey_R34_upper c hsym
+
+public theorem thm_ramsey_R34_lower :
+    ∃ c : Fin 8 → Fin 8 → Bool, (∀ i j : Fin 8, c i j = c j i) ∧
+      ¬ HasColorTriangle c true ∧ ¬ HasColorK4 c false :=
+  ⟨c8Color, ramsey_R34_lower⟩
 
 end FormalAtlas.Challenge
