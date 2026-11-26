@@ -114,15 +114,15 @@ jobs:
       - name: Replay through leanchecker-paranoid --fresh
         working-directory: lean
         run: |
-          lake env leanchecker-paranoid --fresh Solution
-          lake env leanchecker-paranoid --fresh NonVacuity
-          lake env leanchecker-paranoid --fresh Adversarial
+          timeout --signal=TERM --kill-after=30s 600s lake env leanchecker-paranoid --fresh Solution
+          timeout --signal=TERM --kill-after=30s 600s lake env leanchecker-paranoid --fresh NonVacuity
+          timeout --signal=TERM --kill-after=30s 600s lake env leanchecker-paranoid --fresh Adversarial
 
       - name: Run sandboxed 6-kernel lake check --paranoid & lake comparator --paranoid
         working-directory: lean
         run: |
-          lake check --paranoid
-          lake comparator --config comparator.json --paranoid
+          timeout --signal=TERM --kill-after=30s 900s lake check --paranoid
+          timeout --signal=TERM --kill-after=30s 900s lake comparator --config comparator.json --paranoid
 
   static-security-audit:
     name: Static Analysis · Typecheck · Security · Build Standard v1.2.0 Audit
