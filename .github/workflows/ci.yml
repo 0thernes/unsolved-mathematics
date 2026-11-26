@@ -63,6 +63,9 @@ jobs:
   lean-formal:
     name: Lean 4.35.0 Multi-Kernel Formal Core (6-kernel paranoid + comparator)
     runs-on: ubuntu-latest
+    # The comparator is intentionally exhaustive, but must not leave an
+    # indefinitely hung runner without a terminal CI result.
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
 
