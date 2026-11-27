@@ -14,7 +14,7 @@
 
 [Program page](https://lefttosolve.com/programs/Millennium%20Prize) · The Clay Millennium Prize problems that can be stated in Lean today, with nearby conjectures.
 
-Targets 21 · open 12 · solved by kind (site claim): `0` · kinds open/known/warmup/unformalized/other = 12/2/7/0/0 · snapshot `f1bcc922a11d5418` (`2026-11-27T05:46:57Z`).
+Targets 21 · open 12 · solved by kind (site claim): `warmup: 2` · kinds open/known/warmup/unformalized/other = 12/2/7/0/0 · snapshot `7cb07abf0cea37cb` (`2026-11-27T17:43:57Z`).
 
 Back to [all programs](../PROGRAMS.md).
 
@@ -23,8 +23,8 @@ Back to [all programs](../PROGRAMS.md).
 | 1 | [`ComplexityTheory.NP_ne_coNP`](https://lefttosolve.com/p/ComplexityTheory.NP_ne_coNP) | NP ≠ coNP | open | Computer Science |  |  |
 | 2 | [`ComplexityTheory.P_eq_BPP`](https://lefttosolve.com/p/ComplexityTheory.P_eq_BPP) | P = BPP | open | Computer Science |  |  |
 | 3 | [`ComplexityTheory.P_ne_NP`](https://lefttosolve.com/p/ComplexityTheory.P_ne_NP) | P ≠ NP | open | Computer Science |  |  |
-| 4 | [`ComplexityTheory.P_subset_BPP`](https://lefttosolve.com/p/ComplexityTheory.P_subset_BPP) | Conjectures in Complexity Theory — P subset BPP | warmup | Computer Science |  |  |
-| 5 | [`ComplexityTheory.coP_eq_P`](https://lefttosolve.com/p/ComplexityTheory.coP_eq_P) | Conjectures in Complexity Theory — coP eq P | warmup | Computer Science |  |  |
+| 4 | [`ComplexityTheory.P_subset_BPP`](https://lefttosolve.com/p/ComplexityTheory.P_subset_BPP) | Conjectures in Complexity Theory — P subset BPP | warmup | Computer Science |  | yes |
+| 5 | [`ComplexityTheory.coP_eq_P`](https://lefttosolve.com/p/ComplexityTheory.coP_eq_P) | Conjectures in Complexity Theory — coP eq P | warmup | Computer Science |  | yes |
 | 6 | [`ERH.extended_riemann_hypothesis`](https://lefttosolve.com/p/ERH.extended_riemann_hypothesis) | Extended Riemann Hypothesis (Dedekind zeta functions) | open | Number Theory |  |  |
 | 7 | [`NavierStokes.navier_stokes_existence_and_smoothness_R3`](https://lefttosolve.com/p/NavierStokes.navier_stokes_existence_and_smoothness_R3) | Existence And Smoothness Of The Navier–Stokes Equation — navier stokes existence and smoothness R3 | open | PDEs |  |  |
 | 8 | [`NavierStokes.navier_stokes_existence_and_smoothness_periodic`](https://lefttosolve.com/p/NavierStokes.navier_stokes_existence_and_smoothness_periodic) | Existence And Smoothness Of The Navier–Stokes Equation — navier stokes existence and smoothness periodic | open | PDEs |  |  |

@@ -2,6 +2,7 @@
 {"fields": ["Logic & Foundations"], "id": "wpc-barendregt-geuvers-klop", "kind": "unformalized", "prize": null, "solved": false, "title": "Barendregt–Geuvers–Klop conjecture"}
 {"fields": ["Computational Complexity"], "id": "wpc-berman-hartmanis-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Berman–Hartmanis conjecture"}
 {"fields": ["Number Theory"], "id": "wpc-bloch-kato-l-values", "kind": "unformalized", "prize": null, "solved": false, "title": "Bloch–Kato conjecture on special values of L-functions"}
+{"fields": ["Operator Theory"], "id": "wpc-crouzeix-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Crouzeix's conjecture"}
 {"fields": ["Operator Theory"], "id": "wpc-dixmier-unitarizability", "kind": "unformalized", "prize": null, "solved": false, "title": "Dixmier's unitarizability problem"}
 {"fields": ["Computer Science"], "id": "wpc-dynamic-optimality", "kind": "unformalized", "prize": null, "solved": false, "title": "Dynamic optimality conjecture for splay trees"}
 {"fields": ["Combinatorics"], "id": "wpc-entropy-influence-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Friedgut–Kalai entropy–influence conjecture"}
@@ -9,36 +10,51 @@
 {"fields": ["Logic & Foundations"], "id": "wpc-exponential-closedness", "kind": "unformalized", "prize": null, "solved": false, "title": "Zilber's exponential-algebraic closedness conjecture"}
 {"fields": ["Computational Complexity"], "id": "wpc-factoring-in-p", "kind": "unformalized", "prize": null, "solved": false, "title": "Can integers be factored in polynomial time on a classical computer?"}
 {"fields": ["Differential Geometry"], "id": "wpc-final-state-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Final state conjecture for black holes"}
-{"fields": ["Number Theory"], "id": "wpc-four-prime-squares", "kind": "unformalized", "prize": null, "solved": false, "title": "Sums of four squares of primes (Waring–Goldbach)"}
+{"fields": ["Number Theory"], "id": "wpc-four-prime-squares", "kind": "open", "prize": null, "solved": false, "title": "Sums of four squares of primes (Waring–Goldbach)"}
 {"fields": ["Combinatorics"], "id": "wpc-frame-stewart-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Frame–Stewart conjecture for five or more pegs"}
 {"fields": ["Number Theory"], "id": "wpc-generalized-ramanujan", "kind": "unformalized", "prize": null, "solved": false, "title": "Generalized Ramanujan conjecture for GL(n)"}
 {"fields": ["Computational Complexity"], "id": "wpc-graph-isomorphism-in-p", "kind": "unformalized", "prize": null, "solved": false, "title": "Is graph isomorphism in P?"}
 {"fields": ["Geometry"], "id": "wpc-heesch-problem", "kind": "unformalized", "prize": null, "solved": false, "title": "Heesch's problem"}
+{"fields": ["Real Functions"], "id": "wpc-hilbert-13-algebraic", "kind": "unformalized", "prize": null, "solved": false, "title": "Hilbert's thirteenth problem (algebraic version)"}
+{"fields": ["Number Theory"], "id": "wpc-hilbert-twelfth-problem", "kind": "unformalized", "prize": null, "solved": false, "title": "Hilbert's twelfth problem (Kronecker's Jugendtraum) for general number fields"}
 {"fields": ["Algebraic Geometry"], "id": "wpc-homological-mirror-symmetry", "kind": "unformalized", "prize": null, "solved": false, "title": "Kontsevich's homological mirror symmetry conjecture"}
+{"fields": ["Convex & Discrete Geometry"], "id": "wpc-illumination-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Illumination (Levi–Hadwiger–Gohberg–Markus) conjecture"}
+{"fields": ["Differential Geometry"], "id": "wpc-isometric-immersion-hyperbolic-plane-r4", "kind": "unformalized", "prize": null, "solved": false, "title": "Isometric immersion of the hyperbolic plane into R⁴"}
 {"fields": ["General Algebra"], "id": "wpc-jacobi-bound-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Jacobi bound conjecture for differential systems"}
+{"fields": ["General Topology"], "id": "wpc-jones-unknot", "kind": "unformalized", "prize": null, "solved": false, "title": "Does the Jones polynomial detect the unknot?"}
 {"fields": ["Computer Science"], "id": "wpc-k-server-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Deterministic k-server conjecture"}
+{"fields": ["Convex & Discrete Geometry"], "id": "wpc-kalai-3d-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Kalai's 3^d conjecture"}
 {"fields": ["Combinatorics"], "id": "wpc-komlos-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Komlós conjecture"}
+{"fields": ["Number Theory"], "id": "wpc-lang-trotter-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Lang–Trotter conjecture (fixed trace)"}
+{"fields": ["Number Theory"], "id": "wpc-langlands-functoriality", "kind": "unformalized", "prize": null, "solved": false, "title": "Langlands functoriality conjecture"}
 {"fields": ["Combinatorics"], "id": "wpc-list-edge-colouring-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "List edge-colouring conjecture"}
 {"fields": ["Number Theory"], "id": "wpc-local-langlands", "kind": "unformalized", "prize": null, "solved": false, "title": "Local Langlands conjecture for general reductive groups"}
 {"fields": ["Harmonic Analysis"], "id": "wpc-local-smoothing-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Sogge's local smoothing conjecture"}
 {"fields": ["Computational Complexity"], "id": "wpc-log-rank-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Log-rank conjecture"}
 {"fields": ["Combinatorics"], "id": "wpc-lovasz-woodall-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Lovász–Woodall conjecture"}
-{"fields": ["Convex & Discrete Geometry"], "id": "wpc-mahler-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Mahler's volume-product conjecture"}
+{"fields": ["Convex & Discrete Geometry"], "id": "wpc-mahler-conjecture", "kind": "open", "prize": null, "solved": false, "title": "Mahler's volume-product conjecture"}
 {"fields": ["Computer Science"], "id": "wpc-mortality-2x2", "kind": "unformalized", "prize": null, "solved": false, "title": "Matrix mortality problem for 2×2 integer matrices"}
 {"fields": ["Dynamical Systems"], "id": "wpc-morton-silverman", "kind": "unformalized", "prize": null, "solved": false, "title": "Morton–Silverman uniform boundedness conjecture"}
 {"fields": ["Algebraic Geometry"], "id": "wpc-mumford-tate-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Mumford–Tate conjecture"}
 {"fields": ["General Algebra"], "id": "wpc-nakayama-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Nakayama conjecture"}
+{"fields": ["Combinatorics"], "id": "wpc-new-digraph-reconstruction-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "New digraph reconstruction conjecture"}
 {"fields": ["Combinatorics"], "id": "wpc-nivat-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Nivat's conjecture"}
 {"fields": ["Computational Complexity"], "id": "wpc-omega-equals-two", "kind": "unformalized", "prize": null, "solved": false, "title": "Is the exponent of matrix multiplication ω equal to 2?"}
 {"fields": ["Computational Complexity"], "id": "wpc-omv-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Online Boolean matrix–vector (OMv) conjecture"}
 {"fields": ["Computational Complexity"], "id": "wpc-one-way-functions", "kind": "unformalized", "prize": null, "solved": false, "title": "Do one-way functions exist?"}
-{"fields": ["Number Theory"], "id": "wpc-prouhet-tarry-escott", "kind": "unformalized", "prize": null, "solved": false, "title": "Ideal solutions of the Prouhet–Tarry–Escott problem"}
+{"fields": ["Number Theory"], "id": "wpc-prouhet-tarry-escott", "kind": "open", "prize": null, "solved": false, "title": "Ideal solutions of the Prouhet–Tarry–Escott problem"}
 {"fields": ["Harmonic Analysis"], "id": "wpc-restriction-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Stein's Fourier restriction conjecture"}
 {"fields": ["Convex & Discrete Geometry"], "id": "wpc-sausage-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Fejes Tóth's sausage conjecture"}
+{"fields": ["Combinatorics"], "id": "wpc-schur-number-6", "kind": "unformalized", "prize": null, "solved": false, "title": "The Schur number S(6)"}
 {"fields": ["Computer Science"], "id": "wpc-separating-words", "kind": "unformalized", "prize": null, "solved": false, "title": "Separating words problem"}
 {"fields": ["Number Theory"], "id": "wpc-sha-finite", "kind": "unformalized", "prize": null, "solved": false, "title": "Finiteness of the Tate–Shafarevich group"}
+{"fields": ["Dynamical Systems"], "id": "wpc-smale-6-central-configurations", "kind": "unformalized", "prize": null, "solved": false, "title": "Smale's 6th problem: finiteness of central configurations"}
+{"fields": ["Approximation"], "id": "wpc-smale-7-log-energy", "kind": "unformalized", "prize": null, "solved": false, "title": "Smale's 7th problem: well-distributed points on the sphere"}
 {"fields": ["Differential Geometry"], "id": "wpc-strong-cosmic-censorship", "kind": "unformalized", "prize": null, "solved": false, "title": "Strong cosmic censorship conjecture (Christodoulou's formulation)"}
 {"fields": ["Differential Geometry"], "id": "wpc-syz-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Strominger–Yau–Zaslow (SYZ) conjecture"}
 {"fields": ["Differential Geometry"], "id": "wpc-thomas-yau-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Thomas–Yau conjecture"}
+{"fields": ["Computational Complexity"], "id": "wpc-vp-vs-vnp", "kind": "unformalized", "prize": null, "solved": false, "title": "VP versus VNP (Valiant's conjecture)"}
 {"fields": ["Differential Geometry"], "id": "wpc-weak-cosmic-censorship", "kind": "unformalized", "prize": null, "solved": false, "title": "Weak cosmic censorship conjecture"}
 {"fields": ["Computer Science"], "id": "wpc-x-plus-y-sorting", "kind": "unformalized", "prize": null, "solved": false, "title": "X + Y sorting"}
+{"fields": ["Quantum Theory"], "id": "wpc-yang-mills-existence-and-mass-gap", "kind": "unformalized", "prize": null, "solved": false, "title": "Yang–Mills existence and mass gap"}
+{"fields": ["Number Theory"], "id": "wpc-zeta-5-irrational", "kind": "unformalized", "prize": null, "solved": false, "title": "Is ζ(5) irrational?"}

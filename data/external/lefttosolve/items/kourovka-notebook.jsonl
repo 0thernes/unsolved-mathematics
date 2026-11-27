@@ -2,8 +2,8 @@
 {"fields": ["Group Theory"], "id": "Kourovka.1.40.kourovka_1_40", "kind": "open", "prize": null, "solved": false, "title": "Conjecture 1.40"}
 {"fields": ["Group Theory", "Topological Groups"], "id": "Kourovka.1.74.kourovka_1_74", "kind": "open", "prize": null, "solved": false, "title": "Conjecture 1.74 (Minimal topological groups)"}
 {"fields": ["Group Theory", "Topological Groups"], "id": "Kourovka.1.74.kourovka_1_74.variants.tarski_monster", "kind": "known", "prize": null, "solved": false, "title": "Conjecture 1.74 (Minimal topological groups) — tarski monster"}
-{"fields": ["Group Theory"], "id": "Kourovka.19.25.kourovka_19_25", "kind": "known", "prize": null, "solved": false, "title": "Conjecture 19.25"}
+{"fields": ["Group Theory"], "id": "Kourovka.19.25.kourovka_19_25", "kind": "known", "prize": null, "solved": true, "title": "Conjecture 19.25"}
 {"fields": ["Group Theory"], "id": "Kourovka.20.51.kourovka_20_51", "kind": "open", "prize": null, "solved": false, "title": "Conjecture 20.51"}
-{"fields": ["Group Theory"], "id": "Kourovka.20.76.kourovka_20_76", "kind": "known", "prize": null, "solved": false, "title": "Conjecture 20.76"}
+{"fields": ["Group Theory"], "id": "Kourovka.20.76.kourovka_20_76", "kind": "known", "prize": null, "solved": true, "title": "Conjecture 20.76"}
 {"fields": ["Group Theory"], "id": "Kourovka.8.8.kourovka_8_8a", "kind": "known", "prize": null, "solved": false, "title": "Conjecture 8.8 — kourovka 8 8a"}
 {"fields": ["Group Theory"], "id": "Kourovka.8.8.kourovka_8_8b", "kind": "open", "prize": null, "solved": false, "title": "Conjecture 8.8 — kourovka 8 8b"}

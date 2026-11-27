@@ -14,14 +14,14 @@
 
 [Program page](https://lefttosolve.com/programs/Open%20problems%20in%20information%20theory%20%28gokhanmergen%29) · Open problems stated in research papers and books.
 
-Targets 7 · open 7 · solved by kind (site claim): `0` · kinds open/known/warmup/unformalized/other = 0/0/0/7/0 · snapshot `f1bcc922a11d5418` (`2026-11-27T05:46:57Z`).
+Targets 7 · open 7 · solved by kind (site claim): `0` · kinds open/known/warmup/unformalized/other = 1/0/0/6/0 · snapshot `7cb07abf0cea37cb` (`2026-11-27T17:43:57Z`).
 
 Back to [all programs](../PROGRAMS.md).
 
 | # | Item id | Title | Kind | Fields | Prize | Site-solved flag |
 |---:|---|---|---|---|---|---|
 | 1 | [`itp-broadcast-channel`](https://lefttosolve.com/p/itp-broadcast-channel) | Capacity region of the two-receiver broadcast channel | unformalized | Information & Communication |  |  |
-| 2 | [`itp-courtade-kumar`](https://lefttosolve.com/p/itp-courtade-kumar) | Courtade–Kumar conjecture (most informative Boolean function) | unformalized | Combinatorics, Information & Communication |  |  |
+| 2 | [`itp-courtade-kumar`](https://lefttosolve.com/p/itp-courtade-kumar) | Courtade–Kumar conjecture (most informative Boolean function) | open | Combinatorics, Information & Communication |  |  |
 | 3 | [`itp-deletion-channel`](https://lefttosolve.com/p/itp-deletion-channel) | Capacity of the binary deletion channel | unformalized | Information & Communication, Probability |  |  |
 | 4 | [`itp-entropy-region`](https://lefttosolve.com/p/itp-entropy-region) | Entropy region of four or more random variables | unformalized | Convex & Discrete Geometry, Information & Communication |  |  |
 | 5 | [`itp-gaussian-interference-channel`](https://lefttosolve.com/p/itp-gaussian-interference-channel) | Capacity region of the two-user Gaussian interference channel | unformalized | Information & Communication |  |  |

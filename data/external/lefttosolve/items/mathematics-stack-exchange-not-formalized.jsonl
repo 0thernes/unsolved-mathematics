@@ -2,7 +2,7 @@
 {"fields": ["Number Theory"], "id": "mse-1022617", "kind": "unformalized", "prize": null, "solved": false, "title": "A similar, but hopefully easier problem than Gilbreath's conjecture"}
 {"fields": ["Combinatorics"], "id": "mse-104012", "kind": "unformalized", "prize": null, "solved": false, "title": "Cube nets hexomino tilings."}
 {"fields": ["Number Theory"], "id": "mse-1054560", "kind": "unformalized", "prize": null, "solved": false, "title": "Dickson's (and Bunyakovsky's) conjecture with compositeness constraints"}
-{"fields": ["General Algebra"], "id": "mse-1061115", "kind": "unformalized", "prize": null, "solved": false, "title": "On the problem of polynomial bijection from $\\mathbb Q\\times\\mathbb Q$ to $\\mathbb Q$"}
+{"fields": ["General Algebra"], "id": "mse-1061115", "kind": "open", "prize": null, "solved": false, "title": "On the problem of polynomial bijection from $\\mathbb Q\\times\\mathbb Q$ to $\\mathbb Q$"}
 {"fields": ["Number Theory"], "id": "mse-1065941", "kind": "unformalized", "prize": null, "solved": false, "title": "Two conjectures regarding $\\varphi(n)$"}
 {"fields": ["Number Theory"], "id": "mse-107395", "kind": "unformalized", "prize": null, "solved": false, "title": "Open problems with practical outcome in a visible future?"}
 {"fields": ["Number Theory"], "id": "mse-1088563", "kind": "unformalized", "prize": null, "solved": false, "title": "On $p^{\\log_q n}$, where $p$ and $q$ are distinct primes"}
@@ -27,7 +27,7 @@
 {"fields": ["Number Theory"], "id": "mse-141308", "kind": "unformalized", "prize": null, "solved": false, "title": "Primality test for specific class of $3\\cdot 2^n+1$"}
 {"fields": ["Number Theory"], "id": "mse-1414857", "kind": "unformalized", "prize": null, "solved": false, "title": "Would this proof strategy work for proving the lonely runner conjecture?"}
 {"fields": ["Number Theory"], "id": "mse-1416221", "kind": "unformalized", "prize": null, "solved": false, "title": "Conjectured new primality test for Mersenne numbers"}
-{"fields": ["Number Theory"], "id": "mse-1426354", "kind": "unformalized", "prize": null, "solved": false, "title": "A mixture with ingredients of two equivalences with Riemann Hypothesis"}
+{"fields": ["Number Theory"], "id": "mse-1426354", "kind": "open", "prize": null, "solved": false, "title": "A mixture with ingredients of two equivalences with Riemann Hypothesis"}
 {"fields": ["Number Theory"], "id": "mse-1457065", "kind": "unformalized", "prize": null, "solved": false, "title": "What does the Grothendieck's period conjecture mean?"}
 {"fields": ["Probability"], "id": "mse-1463216", "kind": "unformalized", "prize": null, "solved": false, "title": "Asymptotic value of card drawing game"}
 {"fields": ["Number Theory"], "id": "mse-1464339", "kind": "unformalized", "prize": null, "solved": false, "title": "Up to which value is Rassias' conjecture verified?"}
@@ -38,7 +38,7 @@
 {"fields": ["General Topology"], "id": "mse-1558028", "kind": "unformalized", "prize": null, "solved": false, "title": "Does a group homomorphism up to homotopy induce a map between classifying spaces?"}
 {"fields": ["Number Theory"], "id": "mse-158293", "kind": "unformalized", "prize": null, "solved": false, "title": "Density of odd numbers in a sequence relating base 2 and base 3 expansion"}
 {"fields": ["Number Theory"], "id": "mse-1595838", "kind": "unformalized", "prize": null, "solved": false, "title": "Are all totient values of Fibonacci Numbers distinct?"}
-{"fields": ["Combinatorics"], "id": "mse-1688329", "kind": "unformalized", "prize": null, "solved": false, "title": "Existence of a cycle of length $2^k$?"}
+{"fields": ["Combinatorics"], "id": "mse-1688329", "kind": "open", "prize": null, "solved": false, "title": "Existence of a cycle of length $2^k$?"}
 {"fields": ["Number Theory"], "id": "mse-16887", "kind": "unformalized", "prize": null, "solved": false, "title": "Does the equation $x^4+y^4+1 = z^2$ have a non-trivial solution?"}
 {"fields": ["General Algebra"], "id": "mse-1696714", "kind": "unformalized", "prize": null, "solved": false, "title": "If $|G_1|=|G_2|<\\infty$ and $|G_1'|<|G_2'|$, then $|Z(G_1)|\\geq |Z(G_2)|$? where $G'$ is the commutator subgroup of $G$."}
 {"fields": ["Number Theory"], "id": "mse-1697145", "kind": "unformalized", "prize": null, "solved": false, "title": "Are there infinitely many primes in any sequence determined by a $k$ that is not a Sierpinski number?"}
@@ -67,7 +67,7 @@
 {"fields": ["Number Theory"], "id": "mse-2012619", "kind": "unformalized", "prize": null, "solved": false, "title": "Name for Unsolved Problem"}
 {"fields": ["Commutative Algebra", "Group Theory"], "id": "mse-2014146", "kind": "unformalized", "prize": null, "solved": false, "title": "Is there a constructive proof that a Euclidean domain is a UFD?"}
 {"fields": ["Number Theory"], "id": "mse-2021539", "kind": "unformalized", "prize": null, "solved": false, "title": "Is there a maximal prime number not being a sum of consecutive primes?"}
-{"fields": ["Number Theory"], "id": "mse-2030706", "kind": "unformalized", "prize": null, "solved": false, "title": "Sets of natural numbers closed under addition of successors"}
+{"fields": ["Number Theory"], "id": "mse-2030706", "kind": "open", "prize": null, "solved": true, "title": "Sets of natural numbers closed under addition of successors"}
 {"fields": ["Number Theory"], "id": "mse-2045783", "kind": "unformalized", "prize": null, "solved": false, "title": "Prove that if $n \\mid 1 + \\sum_{k=0}^{n-1} k^{n-1}$ then $n$ is prime."}
 {"fields": ["Geometry"], "id": "mse-2049089", "kind": "unformalized", "prize": null, "solved": false, "title": "Packing squares 1 to 38 in a size 138 square"}
 {"fields": ["Number Theory", "Real Functions"], "id": "mse-2066932", "kind": "unformalized", "prize": null, "solved": false, "title": "Infinitely $more$ algebraic numbers $\\gamma$ and $\\delta$ for $_2F_1\\left(a,b;\\tfrac12;\\gamma\\right)=\\delta$?"}
@@ -116,8 +116,8 @@
 {"fields": ["General Topology", "Measure & Integration"], "id": "mse-2580732", "kind": "unformalized", "prize": null, "solved": false, "title": "Is there a concept of a 'measurable manifold'?"}
 {"fields": ["Number Theory"], "id": "mse-2581541", "kind": "unformalized", "prize": null, "solved": false, "title": "On super-logarithmic Collatz numbers"}
 {"fields": ["Number Theory"], "id": "mse-2615963", "kind": "unformalized", "prize": null, "solved": false, "title": "A congruence involving Chebyshev polynomials"}
-{"fields": ["Real Functions", "Sequences & Series"], "id": "mse-2621776", "kind": "unformalized", "prize": null, "solved": false, "title": "The sequence $\\,a_n=\\lfloor \\mathrm{e}^n\\rfloor$ contains infinitely many odd and infinitely many even terms"}
-{"fields": ["Combinatorics"], "id": "mse-263131", "kind": "unformalized", "prize": null, "solved": false, "title": "Is there a Steiner system $S(6,9,45)$?"}
+{"fields": ["Real Functions", "Sequences & Series"], "id": "mse-2621776", "kind": "open", "prize": null, "solved": false, "title": "The sequence $\\,a_n=\\lfloor \\mathrm{e}^n\\rfloor$ contains infinitely many odd and infinitely many even terms"}
+{"fields": ["Combinatorics"], "id": "mse-263131", "kind": "open", "prize": null, "solved": false, "title": "Is there a Steiner system $S(6,9,45)$?"}
 {"fields": ["Algebraic Geometry", "Manifolds"], "id": "mse-2633765", "kind": "unformalized", "prize": null, "solved": false, "title": "à la Shafarevich conjecture for the moduli space of Calabi-Yau manifolds"}
 {"fields": ["Number Theory"], "id": "mse-2637546", "kind": "unformalized", "prize": null, "solved": false, "title": "What is the name of the conjecture related to what Matt Parker has called \"The Square-Sum Problem\"?"}
 {"fields": ["Number Theory"], "id": "mse-2645263", "kind": "unformalized", "prize": null, "solved": false, "title": "On the conjecture that, for every $n$, $\\lfloor e^{\\frac{p_{n^2}\\#}{p_{n^2 + 1}}}\\rfloor $ is a square number."}
@@ -132,7 +132,7 @@
 {"fields": ["Number Theory"], "id": "mse-2749067", "kind": "unformalized", "prize": null, "solved": false, "title": "Disprove $m!=100x^2+20x$ using an estimation for factorial."}
 {"fields": ["Number Theory"], "id": "mse-2751545", "kind": "unformalized", "prize": null, "solved": false, "title": "A conjecture about $8n+6$"}
 {"fields": ["Number Theory"], "id": "mse-2751881", "kind": "unformalized", "prize": null, "solved": false, "title": "Why $9k \\pm 4$ can't be written as sum of four cubes"}
-{"fields": ["Commutative Algebra", "Group Theory"], "id": "mse-2822876", "kind": "unformalized", "prize": null, "solved": false, "title": "Is there a non-constant $h \\in \\mathbb{C}[x_1 , \\dots , x_n ]$ that divides every element of this given ideal?"}
+{"fields": ["Commutative Algebra", "Group Theory"], "id": "mse-2822876", "kind": "open", "prize": null, "solved": true, "title": "Is there a non-constant $h \\in \\mathbb{C}[x_1 , \\dots , x_n ]$ that divides every element of this given ideal?"}
 {"fields": ["Combinatorics"], "id": "mse-282747", "kind": "unformalized", "prize": null, "solved": false, "title": "Characterization of Sequences with Integral Binomial Coefficients"}
 {"fields": ["Real Functions"], "id": "mse-283960", "kind": "unformalized", "prize": null, "solved": false, "title": "Question regarding the status of Erdős' conjectures"}
 {"fields": ["Number Theory"], "id": "mse-2861089", "kind": "unformalized", "prize": null, "solved": false, "title": "Is there any function whose limit at $x_0$ is unknown?"}
@@ -170,17 +170,17 @@
 {"fields": ["Number Theory"], "id": "mse-3230707", "kind": "unformalized", "prize": null, "solved": false, "title": "Is there a maximum number of consecutive sexy prime pair sums that are all divisible by $10$?"}
 {"fields": ["Number Theory"], "id": "mse-3241568", "kind": "unformalized", "prize": null, "solved": false, "title": "An asymptotic series for $\\small\\prod_{k=n}^\\infty\\operatorname{sinc}\\left({2^{-k}}\\pi\\right),\\,n\\to\\infty$"}
 {"fields": ["Measure & Integration", "Special Functions"], "id": "mse-3257042", "kind": "unformalized", "prize": null, "solved": false, "title": "Is there an identity between the Clausen function $\\rm{Cl}_8\\left(\\frac\\pi3\\right)$ and $\\sum_{n=1}^\\infty \\frac{1}{n^9\\,\\binom {2n}n}$?"}
-{"fields": ["Number Theory"], "id": "mse-3257373", "kind": "unformalized", "prize": null, "solved": false, "title": "Is $\\lfloor \\zeta(-n) \\rfloor$ only prime for $n=23$?"}
+{"fields": ["Number Theory"], "id": "mse-3257373", "kind": "open", "prize": null, "solved": false, "title": "Is $\\lfloor \\zeta(-n) \\rfloor$ only prime for $n=23$?"}
 {"fields": ["Number Theory"], "id": "mse-3261953", "kind": "unformalized", "prize": null, "solved": false, "title": "Refinement of Bertrand's Postulate"}
 {"fields": ["Number Theory"], "id": "mse-3268475", "kind": "unformalized", "prize": null, "solved": false, "title": "Collatz conjecture, Tao-Collatz remainder and mod n."}
 {"fields": ["Number Theory"], "id": "mse-3271457", "kind": "unformalized", "prize": null, "solved": false, "title": "Conjectures on the primality of $\\sum\\limits_{i=1}^n p_i^{p_i}$ and $\\sum\\limits_{i=1}^n (-1)^ip_i^{p_i}$"}
 {"fields": ["Number Theory"], "id": "mse-3283519", "kind": "unformalized", "prize": null, "solved": false, "title": "Conjectured formula for the Fabius function"}
-{"fields": ["Number Theory"], "id": "mse-3286093", "kind": "unformalized", "prize": null, "solved": false, "title": "Conjecture: No positive integer can be written as $a^b+b^a$ in more than one way"}
+{"fields": ["Number Theory"], "id": "mse-3286093", "kind": "open", "prize": null, "solved": false, "title": "Conjecture: No positive integer can be written as $a^b+b^a$ in more than one way"}
 {"fields": ["Number Theory"], "id": "mse-3290080", "kind": "unformalized", "prize": null, "solved": false, "title": "Conjecture: Is the identity $2^5-5^2=2+5$ unique?"}
 {"fields": ["Number Theory"], "id": "mse-3325995", "kind": "unformalized", "prize": null, "solved": false, "title": "Is there a integer that makes $e^{\\pi\\sqrt{n}}$ closer to an integer than 163?"}
 {"fields": ["Number Theory"], "id": "mse-3336724", "kind": "unformalized", "prize": null, "solved": false, "title": "Are there any $3$-Fermat-pseudoprimes of the form $k^4+1$?"}
 {"fields": ["Real Functions"], "id": "mse-3358067", "kind": "unformalized", "prize": null, "solved": false, "title": "Conjecture: There is no $n\\neq3$ such that $\\arctan(1)+\\arctan(2)+\\cdots+\\arctan(n)=\\frac{k\\pi}{2}$, with $k$ integer."}
-{"fields": ["Number Theory"], "id": "mse-3369746", "kind": "unformalized", "prize": null, "solved": false, "title": "Rare gaps between integers having the same number of co-primes"}
+{"fields": ["Number Theory"], "id": "mse-3369746", "kind": "open", "prize": null, "solved": false, "title": "Rare gaps between integers having the same number of co-primes"}
 {"fields": ["General Algebra"], "id": "mse-3371305", "kind": "unformalized", "prize": null, "solved": false, "title": "Given $n$, exist $k$ such that $2^k$ contains $n$ as string."}
 {"fields": ["Number Theory"], "id": "mse-3385196", "kind": "unformalized", "prize": null, "solved": false, "title": "A generalization of the abc-conjecture?"}
 {"fields": ["Number Theory"], "id": "mse-3398377", "kind": "unformalized", "prize": null, "solved": false, "title": "Proof verification upper bound on the Mondrian Art Problem"}
@@ -228,7 +228,7 @@
 {"fields": ["Number Theory"], "id": "mse-3880570", "kind": "unformalized", "prize": null, "solved": false, "title": "Open questions in algebraic geometry that need insights from computations"}
 {"fields": ["Number Theory"], "id": "mse-3897185", "kind": "unformalized", "prize": null, "solved": false, "title": "Is $X = (n-1)^n + n$ always composite for $n \\geq 4 \\in \\Bbb Z$?"}
 {"fields": ["Commutative Algebra", "Group Theory"], "id": "mse-391917", "kind": "unformalized", "prize": null, "solved": false, "title": "Is there a general algorithm to find a primitive element of a given finite extension (with a finite number of intermediate fields)?)"}
-{"fields": ["Group Theory"], "id": "mse-3925067", "kind": "unformalized", "prize": null, "solved": false, "title": "Is there a group $G$ for which $\\mathrm{Aut}(G) \\simeq (\\mathbb{R},+)$?"}
+{"fields": ["Group Theory"], "id": "mse-3925067", "kind": "open", "prize": null, "solved": false, "title": "Is there a group $G$ for which $\\mathrm{Aut}(G) \\simeq (\\mathbb{R},+)$?"}
 {"fields": ["Number Theory"], "id": "mse-4013811", "kind": "unformalized", "prize": null, "solved": false, "title": "A combinatorial sieve for a specific setup"}
 {"fields": ["Number Theory"], "id": "mse-4029655", "kind": "unformalized", "prize": null, "solved": false, "title": "Small question about the Lonely runner conjecture"}
 {"fields": ["Number Theory"], "id": "mse-403786", "kind": "unformalized", "prize": null, "solved": false, "title": "Are there infinitely many primes $p_k$ such that $(p_k-1)!+p_k$ is a also prime?"}
@@ -240,8 +240,8 @@
 {"fields": ["Number Theory"], "id": "mse-4170595", "kind": "unformalized", "prize": null, "solved": false, "title": "On odd perfect numbers $p^k m^2$ with special prime $p$ satisfying $m^2 - p^k = 2^r t$ - Part II"}
 {"fields": ["Geometry"], "id": "mse-4173323", "kind": "unformalized", "prize": null, "solved": false, "title": "Is there an ellipse with rational major and minor axes which has a \"simple\" closed form perimeter?"}
 {"fields": ["Number Theory", "Sequences & Series"], "id": "mse-4185558", "kind": "unformalized", "prize": null, "solved": false, "title": "Is there any \"nice\" representation for algebraic numbers of degree 3 (or higher)?"}
-{"fields": ["Number Theory"], "id": "mse-419004", "kind": "unformalized", "prize": null, "solved": false, "title": "Are there infinitely many semi primes of the form $x^2 + 2x$ for integral $x$?"}
-{"fields": ["Probability", "Sequences & Series"], "id": "mse-4190405", "kind": "unformalized", "prize": null, "solved": false, "title": "Asymptotic behavior of recurrence $x_{n+1}=\\mbox{Stdev}(x_1,\\dots,x_n)$"}
+{"fields": ["Number Theory"], "id": "mse-419004", "kind": "open", "prize": null, "solved": false, "title": "Are there infinitely many semi primes of the form $x^2 + 2x$ for integral $x$?"}
+{"fields": ["Probability", "Sequences & Series"], "id": "mse-4190405", "kind": "open", "prize": null, "solved": false, "title": "Asymptotic behavior of recurrence $x_{n+1}=\\mbox{Stdev}(x_1,\\dots,x_n)$"}
 {"fields": ["Number Theory"], "id": "mse-4191460", "kind": "unformalized", "prize": null, "solved": false, "title": "Does this \"improvement\" to $I(m) < 2$, if $p^k m^2$ is an odd perfect number with special prime $p$, work?"}
 {"fields": ["Geometry"], "id": "mse-4191843", "kind": "unformalized", "prize": null, "solved": false, "title": "Another 6 points circle associated with a triangle?"}
 {"fields": ["Number Theory"], "id": "mse-4226512", "kind": "unformalized", "prize": null, "solved": false, "title": "What's the link between de Bruijn-Newman constant and RH"}
@@ -263,8 +263,8 @@
 {"fields": ["Measure & Integration"], "id": "mse-4439933", "kind": "unformalized", "prize": null, "solved": false, "title": "Is there a generalized solution to the \"Freshman's dream\" of derivatives equation?"}
 {"fields": ["Measure & Integration", "Real Functions"], "id": "mse-4445539", "kind": "unformalized", "prize": null, "solved": false, "title": "Is there an open subset $A$ of $[0,1]^2$ with measure $>\\frac{1}{100}$ that satisfies this property?"}
 {"fields": ["Number Theory"], "id": "mse-4447984", "kind": "unformalized", "prize": null, "solved": false, "title": "Questions about density of $\\left\\{\\ \\left( k+ \\frac{1}{2} \\right)^n \\right\\}$ in $[0,1]$"}
-{"fields": ["Real Functions"], "id": "mse-4452078", "kind": "unformalized", "prize": null, "solved": false, "title": "Is there any function such that the limit of its derivative divided by its value to the nth power diverges?"}
-{"fields": ["Number Theory"], "id": "mse-4462775", "kind": "unformalized", "prize": null, "solved": false, "title": "Show that $\\dim(Y)<\\infty$, application of the Hahn-Banach theorem."}
+{"fields": ["Real Functions"], "id": "mse-4452078", "kind": "open", "prize": null, "solved": true, "title": "Is there any function such that the limit of its derivative divided by its value to the nth power diverges?"}
+{"fields": ["Number Theory"], "id": "mse-4462775", "kind": "open", "prize": null, "solved": true, "title": "Show that $\\dim(Y)<\\infty$, application of the Hahn-Banach theorem."}
 {"fields": ["Number Theory"], "id": "mse-447334", "kind": "unformalized", "prize": null, "solved": false, "title": "Asymptotics of the lower approximation of a pair of natural numbers by a coprime pair"}
 {"fields": ["Number Theory"], "id": "mse-4498168", "kind": "unformalized", "prize": null, "solved": false, "title": "On the eighth powers $A^8+B^8=C^8+D^8$. Are there non-trivial solutions to it?"}
 {"fields": ["Number Theory"], "id": "mse-4499061", "kind": "unformalized", "prize": null, "solved": false, "title": "Is there any other known relationship between even perfect numbers and odd perfect numbers, apart from their multiplicative forms?"}
@@ -290,14 +290,14 @@
 {"fields": ["Real Functions"], "id": "mse-4750578", "kind": "unformalized", "prize": null, "solved": false, "title": "Asymptotic of specific type of recurrence using Riemann integral approximation"}
 {"fields": ["Number Theory"], "id": "mse-4756846", "kind": "unformalized", "prize": null, "solved": false, "title": "Conjecture about prime numbers and fibonacci numbers"}
 {"fields": ["Number Theory"], "id": "mse-4767550", "kind": "unformalized", "prize": null, "solved": false, "title": "A Number-theoretic Generalization of the Union-closed Sets Conjecture"}
-{"fields": ["Geometry"], "id": "mse-4769164", "kind": "unformalized", "prize": null, "solved": false, "title": "Is there a metric on the plane for which (unit) circles are triangles?"}
+{"fields": ["Geometry"], "id": "mse-4769164", "kind": "open", "prize": null, "solved": false, "title": "Is there a metric on the plane for which (unit) circles are triangles?"}
 {"fields": ["Combinatorics"], "id": "mse-4781908", "kind": "unformalized", "prize": null, "solved": false, "title": "Is there an algorithm for this variant of the dominating set problem?"}
 {"fields": ["Dynamical Systems", "Sequences & Series"], "id": "mse-4781942", "kind": "unformalized", "prize": null, "solved": false, "title": "Conjecture: If $a_1\\in\\mathbb{Z}$ and $a_n=\\sec (a_{n-1})$ then the proportion of positive terms approaches $\\frac{1}{\\sqrt{2\\pi}}$ as $n\\to\\infty$."}
 {"fields": ["Number Theory"], "id": "mse-4782732", "kind": "unformalized", "prize": null, "solved": false, "title": "Is the weak Goldbach conjecture proved?"}
 {"fields": ["Combinatorics"], "id": "mse-4804070", "kind": "unformalized", "prize": null, "solved": false, "title": "Does My Conjecture on Selecting 'Special Nodes' in TSP Matrices to Eliminate 97-99% of Edges Hold Potential for Polynomial Time Solutions?"}
 {"fields": ["Combinatorics"], "id": "mse-4805933", "kind": "unformalized", "prize": null, "solved": false, "title": "Galois theory in combinatorics"}
 {"fields": ["Geometry", "Number Theory"], "id": "mse-4806891", "kind": "unformalized", "prize": null, "solved": false, "title": "Does there exist a midsquare with natural sides and diagonal?"}
-{"fields": ["Geometry", "Sequences & Series"], "id": "mse-4815847", "kind": "unformalized", "prize": null, "solved": false, "title": "Can this be done? Split Pascal's triangle (without the $1$s) with a straight line into two regions of equal sums."}
+{"fields": ["Geometry", "Sequences & Series"], "id": "mse-4815847", "kind": "open", "prize": null, "solved": false, "title": "Can this be done? Split Pascal's triangle (without the $1$s) with a straight line into two regions of equal sums."}
 {"fields": ["Probability"], "id": "mse-4818235", "kind": "unformalized", "prize": null, "solved": false, "title": "Does a 3D random walk visit infinitely many primes almost surely?"}
 {"fields": ["Number Theory"], "id": "mse-4847208", "kind": "unformalized", "prize": null, "solved": false, "title": "Does the idea of creating a perfectly random problem to solve this have any merit, or is it completely useless quackery?"}
 {"fields": ["Combinatorics"], "id": "mse-4848183", "kind": "unformalized", "prize": null, "solved": false, "title": "Minimum number of edges for a tree that joins the $27$ nodes of a $3 \\times 3 \\times 3$ regular grid"}
@@ -342,7 +342,7 @@
 {"fields": ["Number Theory"], "id": "mse-5097283", "kind": "unformalized", "prize": null, "solved": false, "title": "Are $1,2,5,10$ the only solutions of $3^{n+1} \\pmod {2^n} > 2^n-1.5^n$?"}
 {"fields": ["Combinatorics"], "id": "mse-5099016", "kind": "unformalized", "prize": null, "solved": false, "title": "Removing Vertices from Graphs by Reductions - a Continuation of an Unsolved Problem"}
 {"fields": ["Number Theory"], "id": "mse-5099977", "kind": "unformalized", "prize": null, "solved": false, "title": "For every whole number $n$ $\\ge$ $2,$ there is at least one $k$ with $1$ $\\le$ $k$ $\\le$ $n$ such that $n + k$ and $nk + 1$ are prime numbers."}
-{"fields": ["Number Theory", "Real Functions"], "id": "mse-5100758", "kind": "unformalized", "prize": null, "solved": false, "title": "Is it true that the sequence $\\{n \\sin(n^n/2)\\}$ is unbounded but doesn't tend to infinity?"}
+{"fields": ["Number Theory", "Real Functions"], "id": "mse-5100758", "kind": "open", "prize": null, "solved": false, "title": "Is it true that the sequence $\\{n \\sin(n^n/2)\\}$ is unbounded but doesn't tend to infinity?"}
 {"fields": ["Geometry"], "id": "mse-5102549", "kind": "unformalized", "prize": null, "solved": false, "title": "Is there is a Jordan curve that approximates a circle, so that any “square inscribed in the curve” must be a tiny square and cannot be a large one?"}
 {"fields": ["Number Theory"], "id": "mse-5109464", "kind": "unformalized", "prize": null, "solved": false, "title": "Rational points and sections on a family of genus-2 hyperelliptic curves"}
 {"fields": ["Real Functions"], "id": "mse-5112273", "kind": "unformalized", "prize": null, "solved": false, "title": "Do there exist $\\alpha, \\beta \\in (0, \\pi/2)$ that are distinct rational multiples of $\\pi$ such that $\\frac{\\sin \\alpha}{\\sin \\beta}$ is rational?"}
@@ -352,7 +352,7 @@
 {"fields": ["Number Theory"], "id": "mse-511808", "kind": "unformalized", "prize": null, "solved": false, "title": "Using the Brun Sieve to show very weak approximation to twin prime conjecture"}
 {"fields": ["Commutative Algebra", "Complex Analysis"], "id": "mse-5120935", "kind": "unformalized", "prize": null, "solved": false, "title": "Behavior of polynomial roots when removing a single term."}
 {"fields": ["Logic & Foundations"], "id": "mse-5124478", "kind": "unformalized", "prize": null, "solved": false, "title": "Is there a classification of $\\aleph_0$-categorical varieties?"}
-{"fields": ["General Topology"], "id": "mse-5127397", "kind": "unformalized", "prize": null, "solved": false, "title": "Characterization of complete ultrametric vector space"}
+{"fields": ["General Topology"], "id": "mse-5127397", "kind": "open", "prize": null, "solved": false, "title": "Characterization of complete ultrametric vector space"}
 {"fields": ["General Algebra"], "id": "mse-5129856", "kind": "unformalized", "prize": null, "solved": false, "title": "How small is $\\Pr(TU=TV)$ for a random Toeplitz matrix over $\\mathbb{Z}$?"}
 {"fields": ["Algebraic Geometry", "Number Theory"], "id": "mse-5131524", "kind": "unformalized", "prize": null, "solved": false, "title": "How did Birch and Swinnerton-Dyer arrive at their conjecture?"}
 {"fields": ["General Algebra"], "id": "mse-5133875", "kind": "unformalized", "prize": null, "solved": false, "title": "Signs of polynomials in $e$ and $\\pi$"}

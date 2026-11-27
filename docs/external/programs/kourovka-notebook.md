@@ -14,7 +14,7 @@
 
 [Program page](https://lefttosolve.com/programs/Kourovka%20Notebook) · Unsolved problems in group theory from the Kourovka Notebook.
 
-Targets 9 · open 5 · solved by kind (site claim): `0` · kinds open/known/warmup/unformalized/other = 5/4/0/0/0 · snapshot `f1bcc922a11d5418` (`2026-11-27T05:46:57Z`).
+Targets 9 · open 5 · solved by kind (site claim): `known: 2` · kinds open/known/warmup/unformalized/other = 5/4/0/0/0 · snapshot `7cb07abf0cea37cb` (`2026-11-27T17:43:57Z`).
 
 Back to [all programs](../PROGRAMS.md).
 
@@ -24,8 +24,8 @@ Back to [all programs](../PROGRAMS.md).
 | 2 | [`Kourovka.1.40.kourovka_1_40`](https://lefttosolve.com/p/Kourovka.1.40.kourovka_1_40) | Conjecture 1.40 | open | Group Theory |  |  |
 | 3 | [`Kourovka.1.74.kourovka_1_74`](https://lefttosolve.com/p/Kourovka.1.74.kourovka_1_74) | Conjecture 1.74 (Minimal topological groups) | open | Group Theory, Topological Groups |  |  |
 | 4 | [`Kourovka.1.74.kourovka_1_74.variants.tarski_monster`](https://lefttosolve.com/p/Kourovka.1.74.kourovka_1_74.variants.tarski_monster) | Conjecture 1.74 (Minimal topological groups) — tarski monster | known | Group Theory, Topological Groups |  |  |
-| 5 | [`Kourovka.19.25.kourovka_19_25`](https://lefttosolve.com/p/Kourovka.19.25.kourovka_19_25) | Conjecture 19.25 | known | Group Theory |  |  |
+| 5 | [`Kourovka.19.25.kourovka_19_25`](https://lefttosolve.com/p/Kourovka.19.25.kourovka_19_25) | Conjecture 19.25 | known | Group Theory |  | yes |
 | 6 | [`Kourovka.20.51.kourovka_20_51`](https://lefttosolve.com/p/Kourovka.20.51.kourovka_20_51) | Conjecture 20.51 | open | Group Theory |  |  |
-| 7 | [`Kourovka.20.76.kourovka_20_76`](https://lefttosolve.com/p/Kourovka.20.76.kourovka_20_76) | Conjecture 20.76 | known | Group Theory |  |  |
+| 7 | [`Kourovka.20.76.kourovka_20_76`](https://lefttosolve.com/p/Kourovka.20.76.kourovka_20_76) | Conjecture 20.76 | known | Group Theory |  | yes |
 | 8 | [`Kourovka.8.8.kourovka_8_8a`](https://lefttosolve.com/p/Kourovka.8.8.kourovka_8_8a) | Conjecture 8.8 — kourovka 8 8a | known | Group Theory |  |  |
 | 9 | [`Kourovka.8.8.kourovka_8_8b`](https://lefttosolve.com/p/Kourovka.8.8.kourovka_8_8b) | Conjecture 8.8 — kourovka 8 8b | open | Group Theory |  |  |

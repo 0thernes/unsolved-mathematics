@@ -14,7 +14,7 @@
 
 [Program page](https://lefttosolve.com/programs/Erd%C5%91s%20Problems) · Paul Erdős's problems, many with cash prizes, as catalogued on erdosproblems.com by Thomas Bloom.
 
-Targets 2,068 · open 837 · solved by kind (site claim): `known: 534, warmup: 42` · kinds open/known/warmup/unformalized/other = 837/1187/44/0/0 · snapshot `f1bcc922a11d5418` (`2026-11-27T05:46:57Z`).
+Targets 2,068 · open 837 · solved by kind (site claim): `open: 50, known: 928, warmup: 43` · kinds open/known/warmup/unformalized/other = 837/1187/44/0/0 · snapshot `7cb07abf0cea37cb` (`2026-11-27T17:43:57Z`).
 
 Back to [all programs](../PROGRAMS.md).
 
@@ -27,7 +27,7 @@ Back to [all programs](../PROGRAMS.md).
 | 5 | [`Erdos10.erdos_10.variants.granville_soundararajan_odd`](https://lefttosolve.com/p/Erdos10.erdos_10.variants.granville_soundararajan_odd) | Erdős Problem 10 — granville soundararajan odd | open | Combinatorics, Number Theory |  |  |
 | 6 | [`Erdos100.erdos_100`](https://lefttosolve.com/p/Erdos100.erdos_100) | Erdős Problem 100 | open | Convex & Discrete Geometry |  |  |
 | 7 | [`Erdos100.erdos_100.variants.guth_katz`](https://lefttosolve.com/p/Erdos100.erdos_100.variants.guth_katz) | Erdős Problem 100 — guth katz | known | Convex & Discrete Geometry |  |  |
-| 8 | [`Erdos100.erdos_100.variants.kanold`](https://lefttosolve.com/p/Erdos100.erdos_100.variants.kanold) | Erdős Problem 100 — kanold | known | Convex & Discrete Geometry |  |  |
+| 8 | [`Erdos100.erdos_100.variants.kanold`](https://lefttosolve.com/p/Erdos100.erdos_100.variants.kanold) | Erdős Problem 100 — kanold | known | Convex & Discrete Geometry |  | yes |
 | 9 | [`Erdos100.erdos_100.variants.strong`](https://lefttosolve.com/p/Erdos100.erdos_100.variants.strong) | Erdős Problem 100 — strong | open | Convex & Discrete Geometry |  |  |
 | 10 | [`Erdos1000.erdos_1000.variants.liminf_eq_zero`](https://lefttosolve.com/p/Erdos1000.erdos_1000.variants.liminf_eq_zero) | Erdős Problem 1000 — liminf eq zero | known | Number Theory |  | yes |
 | 11 | [`Erdos1000.erdos_1000.variants.limsup_eq_one`](https://lefttosolve.com/p/Erdos1000.erdos_1000.variants.limsup_eq_one) | Erdős Problem 1000 — limsup eq one | known | Number Theory |  | yes |
@@ -36,10 +36,10 @@ Back to [all programs](../PROGRAMS.md).
 | 14 | [`Erdos1002.erdos_1002.variants.kesten`](https://lefttosolve.com/p/Erdos1002.erdos_1002.variants.kesten) | Erdős Problem 1002 — kesten | known | Number Theory |  |  |
 | 15 | [`Erdos1003.erdos_1003`](https://lefttosolve.com/p/Erdos1003.erdos_1003) | Erdős Problem 1003 | open | Number Theory |  |  |
 | 16 | [`Erdos1003.erdos_1003.variants.Icc`](https://lefttosolve.com/p/Erdos1003.erdos_1003.variants.Icc) | Erdős Problem 1003 — Icc | open | Number Theory |  |  |
-| 17 | [`Erdos1003.erdos_1003.variants.eps87`](https://lefttosolve.com/p/Erdos1003.erdos_1003.variants.eps87) | Erdős Problem 1003 — eps87 | known | Number Theory |  |  |
+| 17 | [`Erdos1003.erdos_1003.variants.eps87`](https://lefttosolve.com/p/Erdos1003.erdos_1003.variants.eps87) | Erdős Problem 1003 — eps87 | known | Number Theory |  | yes |
 | 18 | [`Erdos1004.erdos_1004`](https://lefttosolve.com/p/Erdos1004.erdos_1004) | Erdős Problem 1004 | open | Number Theory |  |  |
 | 19 | [`Erdos1004.erdos_1004.variants.le_of_isDistinctTotientRun`](https://lefttosolve.com/p/Erdos1004.erdos_1004.variants.le_of_isDistinctTotientRun) | Erdős Problem 1004 — le of isDistinctTotientRun | known | Number Theory |  | yes |
-| 20 | [`Erdos1005.erdos_1005`](https://lefttosolve.com/p/Erdos1005.erdos_1005) | Erdős Problem 1005 | known | Number Theory |  |  |
+| 20 | [`Erdos1005.erdos_1005`](https://lefttosolve.com/p/Erdos1005.erdos_1005) | Erdős Problem 1005 | known | Number Theory |  | yes |
 | 21 | [`Erdos1008.erdos_1008.variants.folkman`](https://lefttosolve.com/p/Erdos1008.erdos_1008.variants.folkman) | Erdős Problem 1008 — folkman | known | Combinatorics |  | yes |
 | 22 | [`Erdos1008.erdos_1008.variants.lower_bound`](https://lefttosolve.com/p/Erdos1008.erdos_1008.variants.lower_bound) | Erdős Problem 1008 — lower bound | known | Combinatorics |  | yes |
 | 23 | [`Erdos1008.erdos_1008.variants.three_quarters`](https://lefttosolve.com/p/Erdos1008.erdos_1008.variants.three_quarters) | Erdős Problem 1008 — three quarters | known | Combinatorics |  | yes |
@@ -49,10 +49,10 @@ Back to [all programs](../PROGRAMS.md).
 | 27 | [`Erdos1010.erdos_1010.variants.rademacher`](https://lefttosolve.com/p/Erdos1010.erdos_1010.variants.rademacher) | Erdős Problem 1010 — rademacher | known | Combinatorics |  | yes |
 | 28 | [`Erdos1013.erdos_1013.parts.i`](https://lefttosolve.com/p/Erdos1013.erdos_1013.parts.i) | Erdős Problem 1013 — i | open | Combinatorics |  |  |
 | 29 | [`Erdos1013.erdos_1013.parts.ii`](https://lefttosolve.com/p/Erdos1013.erdos_1013.parts.ii) | Erdős Problem 1013 — ii | open | Combinatorics |  |  |
-| 30 | [`Erdos1013.erdos_1013.variants.graver_yackel`](https://lefttosolve.com/p/Erdos1013.erdos_1013.variants.graver_yackel) | Erdős Problem 1013 — graver yackel | known | Combinatorics |  |  |
-| 31 | [`Erdos1013.erdos_1013.variants.lower`](https://lefttosolve.com/p/Erdos1013.erdos_1013.variants.lower) | Erdős Problem 1013 — lower | known | Combinatorics |  |  |
+| 30 | [`Erdos1013.erdos_1013.variants.graver_yackel`](https://lefttosolve.com/p/Erdos1013.erdos_1013.variants.graver_yackel) | Erdős Problem 1013 — graver yackel | known | Combinatorics |  | yes |
+| 31 | [`Erdos1013.erdos_1013.variants.lower`](https://lefttosolve.com/p/Erdos1013.erdos_1013.variants.lower) | Erdős Problem 1013 — lower | known | Combinatorics |  | yes |
 | 32 | [`Erdos1013.erdos_1013.variants.upper`](https://lefttosolve.com/p/Erdos1013.erdos_1013.variants.upper) | Erdős Problem 1013 — upper | known | Combinatorics |  |  |
-| 33 | [`Erdos1014.erdos_1014.variants.upper_bound`](https://lefttosolve.com/p/Erdos1014.erdos_1014.variants.upper_bound) | Erdős Problem 1014 — upper bound | known | Combinatorics |  |  |
+| 33 | [`Erdos1014.erdos_1014.variants.upper_bound`](https://lefttosolve.com/p/Erdos1014.erdos_1014.variants.upper_bound) | Erdős Problem 1014 — upper bound | known | Combinatorics |  | yes |
 | 34 | [`Erdos1017.erdos_1017.lower_bound`](https://lefttosolve.com/p/Erdos1017.erdos_1017.lower_bound) | Erdős Problem 1017 — lower bound | open | Combinatorics |  |  |
 | 35 | [`Erdos1017.erdos_1017.upper_bound`](https://lefttosolve.com/p/Erdos1017.erdos_1017.upper_bound) | Erdős Problem 1017 — upper bound | open | Combinatorics |  |  |
 | 36 | [`Erdos102.erdos_102`](https://lefttosolve.com/p/Erdos102.erdos_102) | Erdős Problem 102 | open | Convex & Discrete Geometry |  |  |
@@ -64,9 +64,9 @@ Back to [all programs](../PROGRAMS.md).
 | 42 | [`Erdos1023.erdos_1023.variants.hunter`](https://lefttosolve.com/p/Erdos1023.erdos_1023.variants.hunter) | Erdős Problem 1023 — hunter | known | Combinatorics |  | yes |
 | 43 | [`Erdos1024.erdos_1024`](https://lefttosolve.com/p/Erdos1024.erdos_1024) | Erdős Problem 1024 | known | Combinatorics |  | yes |
 | 44 | [`Erdos1026.erdos_1026`](https://lefttosolve.com/p/Erdos1026.erdos_1026) | Erdős Problem 1026 | known | Combinatorics |  | yes |
-| 45 | [`Erdos1026.erdos_1026.variants.hanani`](https://lefttosolve.com/p/Erdos1026.erdos_1026.variants.hanani) | Erdős Problem 1026 — hanani | known | Combinatorics |  |  |
-| 46 | [`Erdos1026.erdos_1026.variants.lower_bound`](https://lefttosolve.com/p/Erdos1026.erdos_1026.variants.lower_bound) | Erdős Problem 1026 — lower bound | known | Combinatorics |  |  |
-| 47 | [`Erdos1026.erdos_1026.variants.upper_bound`](https://lefttosolve.com/p/Erdos1026.erdos_1026.variants.upper_bound) | Erdős Problem 1026 — upper bound | known | Combinatorics |  |  |
+| 45 | [`Erdos1026.erdos_1026.variants.hanani`](https://lefttosolve.com/p/Erdos1026.erdos_1026.variants.hanani) | Erdős Problem 1026 — hanani | known | Combinatorics |  | yes |
+| 46 | [`Erdos1026.erdos_1026.variants.lower_bound`](https://lefttosolve.com/p/Erdos1026.erdos_1026.variants.lower_bound) | Erdős Problem 1026 — lower bound | known | Combinatorics |  | yes |
+| 47 | [`Erdos1026.erdos_1026.variants.upper_bound`](https://lefttosolve.com/p/Erdos1026.erdos_1026.variants.upper_bound) | Erdős Problem 1026 — upper bound | known | Combinatorics |  | yes |
 | 48 | [`Erdos1028.erdos_1028.variants.erdos_spencer`](https://lefttosolve.com/p/Erdos1028.erdos_1028.variants.erdos_spencer) | Erdős Problem 1028 — erdos spencer | known | Combinatorics |  | yes |
 | 49 | [`Erdos1028.erdos_1028.variants.lower_bound`](https://lefttosolve.com/p/Erdos1028.erdos_1028.variants.lower_bound) | Erdős Problem 1028 — lower bound | known | Combinatorics |  | yes |
 | 50 | [`Erdos1028.erdos_1028.variants.upper_bound`](https://lefttosolve.com/p/Erdos1028.erdos_1028.variants.upper_bound) | Erdős Problem 1028 — upper bound | known | Combinatorics |  | yes |
@@ -77,7 +77,7 @@ Back to [all programs](../PROGRAMS.md).
 | 55 | [`Erdos1032.erdos_1032`](https://lefttosolve.com/p/Erdos1032.erdos_1032) | Erdős Problem 1032 | open | Combinatorics |  |  |
 | 56 | [`Erdos1032.erdos_1032.variants.dirac_six`](https://lefttosolve.com/p/Erdos1032.erdos_1032.variants.dirac_six) | Erdős Problem 1032 — dirac six | known | Combinatorics |  | yes |
 | 57 | [`Erdos1032.erdos_1032.variants.five`](https://lefttosolve.com/p/Erdos1032.erdos_1032.variants.five) | Erdős Problem 1032 — five | open | Combinatorics |  |  |
-| 58 | [`Erdos1032.erdos_1032.variants.simonovits_toft`](https://lefttosolve.com/p/Erdos1032.erdos_1032.variants.simonovits_toft) | Erdős Problem 1032 — simonovits toft | known | Combinatorics |  |  |
+| 58 | [`Erdos1032.erdos_1032.variants.simonovits_toft`](https://lefttosolve.com/p/Erdos1032.erdos_1032.variants.simonovits_toft) | Erdős Problem 1032 — simonovits toft | known | Combinatorics |  | yes |
 | 59 | [`Erdos1033.erdos_1033.variants.erdos_laskar`](https://lefttosolve.com/p/Erdos1033.erdos_1033.variants.erdos_laskar) | Erdős Problem 1033 — erdos laskar | known | Combinatorics |  | yes |
 | 60 | [`Erdos1033.erdos_1033.variants.fan`](https://lefttosolve.com/p/Erdos1033.erdos_1033.variants.fan) | Erdős Problem 1033 — fan | known | Combinatorics |  | yes |
 | 61 | [`Erdos1033.erdos_1033.variants.three_halves`](https://lefttosolve.com/p/Erdos1033.erdos_1033.variants.three_halves) | Erdős Problem 1033 — three halves | known | Combinatorics |  | yes |
@@ -85,13 +85,13 @@ Back to [all programs](../PROGRAMS.md).
 | 63 | [`Erdos1034.erdos_1034.variants.lower_bound`](https://lefttosolve.com/p/Erdos1034.erdos_1034.variants.lower_bound) | Erdős Problem 1034 — lower bound | known | Combinatorics |  | yes |
 | 64 | [`Erdos1034.erdos_1034.variants.upper_bound`](https://lefttosolve.com/p/Erdos1034.erdos_1034.variants.upper_bound) | Erdős Problem 1034 — upper bound | known | Combinatorics |  | yes |
 | 65 | [`Erdos1035.erdos_1035`](https://lefttosolve.com/p/Erdos1035.erdos_1035) | Erdős Problem 1035 | open | Combinatorics |  |  |
-| 66 | [`Erdos1036.erdos_1036.variants.alon_hajnal`](https://lefttosolve.com/p/Erdos1036.erdos_1036.variants.alon_hajnal) | Erdős Problem 1036 — alon hajnal | known | Combinatorics |  |  |
+| 66 | [`Erdos1036.erdos_1036.variants.alon_hajnal`](https://lefttosolve.com/p/Erdos1036.erdos_1036.variants.alon_hajnal) | Erdős Problem 1036 — alon hajnal | known | Combinatorics |  | yes |
 | 67 | [`Erdos1036.erdos_1036.variants.erdos_hajnal`](https://lefttosolve.com/p/Erdos1036.erdos_1036.variants.erdos_hajnal) | Erdős Problem 1036 — erdos hajnal | known | Combinatorics |  | yes |
 | 68 | [`Erdos1037.erdos_1037.variants.cambie_chan_hunter`](https://lefttosolve.com/p/Erdos1037.erdos_1037.variants.cambie_chan_hunter) | Erdős Problem 1037 — cambie chan hunter | known | Combinatorics |  | yes |
 | 69 | [`Erdos1038.erdos_1038.parts.i`](https://lefttosolve.com/p/Erdos1038.erdos_1038.parts.i) | Erdős Problem 1038 — i | open | Measure & Integration |  |  |
-| 70 | [`Erdos1038.erdos_1038.parts.ii`](https://lefttosolve.com/p/Erdos1038.erdos_1038.parts.ii) | Erdős Problem 1038 — ii | known | Measure & Integration |  |  |
-| 71 | [`Erdos1038.erdos_1038.variants.inf_lowerBound`](https://lefttosolve.com/p/Erdos1038.erdos_1038.variants.inf_lowerBound) | Erdős Problem 1038 — inf lowerBound | known | Measure & Integration |  |  |
-| 72 | [`Erdos1038.erdos_1038.variants.inf_upperBound`](https://lefttosolve.com/p/Erdos1038.erdos_1038.variants.inf_upperBound) | Erdős Problem 1038 — inf upperBound | known | Measure & Integration |  |  |
+| 70 | [`Erdos1038.erdos_1038.parts.ii`](https://lefttosolve.com/p/Erdos1038.erdos_1038.parts.ii) | Erdős Problem 1038 — ii | known | Measure & Integration |  | yes |
+| 71 | [`Erdos1038.erdos_1038.variants.inf_lowerBound`](https://lefttosolve.com/p/Erdos1038.erdos_1038.variants.inf_lowerBound) | Erdős Problem 1038 — inf lowerBound | known | Measure & Integration |  | yes |
+| 72 | [`Erdos1038.erdos_1038.variants.inf_upperBound`](https://lefttosolve.com/p/Erdos1038.erdos_1038.variants.inf_upperBound) | Erdős Problem 1038 — inf upperBound | known | Measure & Integration |  | yes |
 | 73 | [`Erdos104.erdos_104`](https://lefttosolve.com/p/Erdos104.erdos_104) | Erdős Problem 104 | open | Convex & Discrete Geometry | $100 |  |
 | 74 | [`Erdos1041.exists_connected_component_contains_two_roots`](https://lefttosolve.com/p/Erdos1041.exists_connected_component_contains_two_roots) | Erdős–Herzog–Piranian Component Lemma | known | Several Complex Variables |  | yes |
 | 75 | [`Erdos1042.erdos_1042.parts.i`](https://lefttosolve.com/p/Erdos1042.erdos_1042.parts.i) | Erdős Problem 1042 — i | known | Complex Analysis |  | yes |
@@ -101,7 +101,7 @@ Back to [all programs](../PROGRAMS.md).
 | 79 | [`Erdos1042.erdos_1042.variants.universal`](https://lefttosolve.com/p/Erdos1042.erdos_1042.variants.universal) | Erdős Problem 1042 — universal | open | Complex Analysis |  |  |
 | 80 | [`Erdos1043.erdos_1043.variants.weak`](https://lefttosolve.com/p/Erdos1043.erdos_1043.variants.weak) | Erdős Problem 1043 — weak | known | Complex Analysis, Measure & Integration |  |  |
 | 81 | [`Erdos1044.erdos_1044.variants.fixed_degree`](https://lefttosolve.com/p/Erdos1044.erdos_1044.variants.fixed_degree) | Erdős Problem 1044 — fixed degree | open | Complex Analysis |  |  |
-| 82 | [`Erdos1044.erdos_1044.variants.fixed_degree_of_le_two`](https://lefttosolve.com/p/Erdos1044.erdos_1044.variants.fixed_degree_of_le_two) | Erdős Problem 1044 — fixed degree of le two | known | Complex Analysis |  |  |
+| 82 | [`Erdos1044.erdos_1044.variants.fixed_degree_of_le_two`](https://lefttosolve.com/p/Erdos1044.erdos_1044.variants.fixed_degree_of_le_two) | Erdős Problem 1044 — fixed degree of le two | known | Complex Analysis |  | yes |
 | 83 | [`Erdos1046.erdos_1046.variants.diameter`](https://lefttosolve.com/p/Erdos1046.erdos_1046.variants.diameter) | Erdős Problem 1046 — diameter | known | Complex Analysis |  | yes |
 | 84 | [`Erdos1047.erdos_1047.variants.goodman`](https://lefttosolve.com/p/Erdos1047.erdos_1047.variants.goodman) | Erdős Problem 1047 — goodman | known | Complex Analysis, Convex & Discrete Geometry |  | yes |
 | 85 | [`Erdos1047.erdos_1047.variants.goodman_simple_roots`](https://lefttosolve.com/p/Erdos1047.erdos_1047.variants.goodman_simple_roots) | Erdős Problem 1047 — goodman simple roots | known | Complex Analysis, Convex & Discrete Geometry |  | yes |
@@ -116,7 +116,7 @@ Back to [all programs](../PROGRAMS.md).
 | 94 | [`Erdos1048.erdos_1048.variants.r_le_one`](https://lefttosolve.com/p/Erdos1048.erdos_1048.variants.r_le_one) | Erdős Problem 1048 — r le one | known | Complex Analysis |  | yes |
 | 95 | [`Erdos1049.erdos_1049`](https://lefttosolve.com/p/Erdos1049.erdos_1049) | Erdős Problem 1049 | open | Number Theory |  |  |
 | 96 | [`Erdos105.erdos_105.variants.beck_szemeredi_trotter`](https://lefttosolve.com/p/Erdos105.erdos_105.variants.beck_szemeredi_trotter) | Erdős Problem 105 — beck szemeredi trotter | known | Combinatorics, Convex & Discrete Geometry | $50 | yes |
-| 97 | [`Erdos105.erdos_105.variants.hickerson`](https://lefttosolve.com/p/Erdos105.erdos_105.variants.hickerson) | Erdős Problem 105 — hickerson | known | Combinatorics, Convex & Discrete Geometry | $50 |  |
+| 97 | [`Erdos105.erdos_105.variants.hickerson`](https://lefttosolve.com/p/Erdos105.erdos_105.variants.hickerson) | Erdős Problem 105 — hickerson | known | Combinatorics, Convex & Discrete Geometry | $50 | yes |
 | 98 | [`Erdos1050.erdos_1050.variants.transcendental`](https://lefttosolve.com/p/Erdos1050.erdos_1050.variants.transcendental) | Erdős Problem 1050, variant [Er88c] (open). | open | Number Theory |  |  |
 | 99 | [`Erdos1051.erdos_1051.variants.rapid_growth`](https://lefttosolve.com/p/Erdos1051.erdos_1051.variants.rapid_growth) | Erdős Problem 1051 — rapid growth | known | Number Theory |  | yes |
 | 100 | [`Erdos1052.erdos_1052`](https://lefttosolve.com/p/Erdos1052.erdos_1052) | Erdős Problem 1052 | open | Number Theory | $10 |  |
@@ -134,31 +134,31 @@ Back to [all programs](../PROGRAMS.md).
 | 112 | [`Erdos1057.erdos_1057.variants.harman_lower_bound`](https://lefttosolve.com/p/Erdos1057.erdos_1057.variants.harman_lower_bound) | Erdős Problem 1057 — harman lower bound | known | Number Theory |  |  |
 | 113 | [`Erdos1057.erdos_1057.variants.lichtman_lower_bound`](https://lefttosolve.com/p/Erdos1057.erdos_1057.variants.lichtman_lower_bound) | Erdős Problem 1057 — lichtman lower bound | known | Number Theory |  |  |
 | 114 | [`Erdos1057.erdos_1057.variants.pomerance`](https://lefttosolve.com/p/Erdos1057.erdos_1057.variants.pomerance) | Erdős Problem 1057 — pomerance | open | Number Theory |  |  |
-| 115 | [`Erdos1057.erdos_1057.variants.upper_bound`](https://lefttosolve.com/p/Erdos1057.erdos_1057.variants.upper_bound) | Erdős Problem 1057 — upper bound | known | Number Theory |  |  |
+| 115 | [`Erdos1057.erdos_1057.variants.upper_bound`](https://lefttosolve.com/p/Erdos1057.erdos_1057.variants.upper_bound) | Erdős Problem 1057 — upper bound | known | Number Theory |  | yes |
 | 116 | [`Erdos1059.erdos_1059`](https://lefttosolve.com/p/Erdos1059.erdos_1059) | Erdős Problem 1059 | open | Number Theory |  |  |
 | 117 | [`Erdos1060.erdos_1060.parts.i`](https://lefttosolve.com/p/Erdos1060.erdos_1060.parts.i) | Erdős Problem 1060 — i | open | Number Theory |  |  |
 | 118 | [`Erdos1060.erdos_1060.parts.ii`](https://lefttosolve.com/p/Erdos1060.erdos_1060.parts.ii) | Erdős Problem 1060 — ii | open | Number Theory |  |  |
 | 119 | [`Erdos1061.erdos_1061`](https://lefttosolve.com/p/Erdos1061.erdos_1061) | Erdős Problem 1061 | open | Number Theory |  |  |
 | 120 | [`Erdos1062.erdos_1062.parts.ii`](https://lefttosolve.com/p/Erdos1062.erdos_1062.parts.ii) | Erdős Problem 1062 — ii | open | Number Theory |  |  |
-| 121 | [`Erdos1062.erdos_1062.variants.lebensold_bounds`](https://lefttosolve.com/p/Erdos1062.erdos_1062.variants.lebensold_bounds) | Erdős Problem 1062 — lebensold bounds | known | Number Theory |  |  |
+| 121 | [`Erdos1062.erdos_1062.variants.lebensold_bounds`](https://lefttosolve.com/p/Erdos1062.erdos_1062.variants.lebensold_bounds) | Erdős Problem 1062 — lebensold bounds | known | Number Theory |  | yes |
 | 122 | [`Erdos1063.erdos_1063.better_upper`](https://lefttosolve.com/p/Erdos1063.erdos_1063.better_upper) | Erdős Problem 1063 — better upper | open | Number Theory |  |  |
 | 123 | [`Erdos1064.erdos_1064`](https://lefttosolve.com/p/Erdos1064.erdos_1064) | Erdős Problem 1064 | known | Number Theory |  | yes |
 | 124 | [`Erdos1064.erdos_1064.variants.general_function`](https://lefttosolve.com/p/Erdos1064.erdos_1064.variants.general_function) | Erdős Problem 1064 — general function | known | Number Theory |  | yes |
 | 125 | [`Erdos1065.erdos_1065.parts.i`](https://lefttosolve.com/p/Erdos1065.erdos_1065.parts.i) | Erdős Problem 1065 — i | open | Number Theory |  |  |
 | 126 | [`Erdos1065.erdos_1065.parts.ii`](https://lefttosolve.com/p/Erdos1065.erdos_1065.parts.ii) | Erdős Problem 1065 — ii | open | Number Theory |  |  |
 | 127 | [`Erdos1066.erdos_1066`](https://lefttosolve.com/p/Erdos1066.erdos_1066) | Erdős Problem 1066 | open | Combinatorics, Convex & Discrete Geometry |  |  |
-| 128 | [`Erdos1066.erdos_1066.variants.higher_dim`](https://lefttosolve.com/p/Erdos1066.erdos_1066.variants.higher_dim) | Erdős Problem 1066 — higher dim | open | Convex & Discrete Geometry |  |  |
+| 128 | [`Erdos1066.erdos_1066.variants.higher_dim`](https://lefttosolve.com/p/Erdos1066.erdos_1066.variants.higher_dim) | Erdős Problem 1066 — higher dim | open | Convex & Discrete Geometry |  | yes |
 | 129 | [`Erdos1066.erdos_1066.variants.pach_toth`](https://lefttosolve.com/p/Erdos1066.erdos_1066.variants.pach_toth) | Erdős Problem 1066 — pach toth | known | Combinatorics, Convex & Discrete Geometry |  | yes |
 | 130 | [`Erdos1066.erdos_1066.variants.pollack`](https://lefttosolve.com/p/Erdos1066.erdos_1066.variants.pollack) | Erdős Problem 1066 — pollack | known | Combinatorics, Convex & Discrete Geometry |  | yes |
 | 131 | [`Erdos1066.erdos_1066.variants.swanepoel`](https://lefttosolve.com/p/Erdos1066.erdos_1066.variants.swanepoel) | Erdős Problem 1066 — swanepoel | known | Combinatorics, Convex & Discrete Geometry |  |  |
 | 132 | [`Erdos1067.erdos_1067.variants.infinite_edge_connectivity`](https://lefttosolve.com/p/Erdos1067.erdos_1067.variants.infinite_edge_connectivity) | Erdős Problem 1067 — infinite edge connectivity | known | Combinatorics |  | yes |
-| 133 | [`Erdos1068.erdos_1068`](https://lefttosolve.com/p/Erdos1068.erdos_1068) | Erdős Problem 1068 | open | Combinatorics |  |  |
+| 133 | [`Erdos1068.erdos_1068`](https://lefttosolve.com/p/Erdos1068.erdos_1068) | Erdős Problem 1068 | open | Combinatorics |  | yes |
 | 134 | [`Erdos1069.erdos_1069`](https://lefttosolve.com/p/Erdos1069.erdos_1069) | Erdős Problem 1069 | known | Combinatorics, Convex & Discrete Geometry |  | yes |
 | 135 | [`Erdos1069.erdos_1069.variants.lattice`](https://lefttosolve.com/p/Erdos1069.erdos_1069.variants.lattice) | Erdős Problem 1069 — lattice | warmup | Combinatorics, Convex & Discrete Geometry |  | yes |
 | 136 | [`Erdos107.erdos_107`](https://lefttosolve.com/p/Erdos107.erdos_107) | Erdős Problem 107 | open | Convex & Discrete Geometry | $500 |  |
 | 137 | [`Erdos107.variants.ersz_bounds`](https://lefttosolve.com/p/Erdos107.variants.ersz_bounds) | Erdős Problem 107 — ersz bounds | known | Convex & Discrete Geometry | $500 | yes |
-| 138 | [`Erdos107.variants.hmpt_bound`](https://lefttosolve.com/p/Erdos107.variants.hmpt_bound) | Erdős Problem 107 — hmpt bound | known | Convex & Discrete Geometry | $500 |  |
-| 139 | [`Erdos107.variants.su_bound`](https://lefttosolve.com/p/Erdos107.variants.su_bound) | Erdős Problem 107 — su bound | known | Convex & Discrete Geometry | $500 |  |
+| 138 | [`Erdos107.variants.hmpt_bound`](https://lefttosolve.com/p/Erdos107.variants.hmpt_bound) | Erdős Problem 107 — hmpt bound | known | Convex & Discrete Geometry | $500 | yes |
+| 139 | [`Erdos107.variants.su_bound`](https://lefttosolve.com/p/Erdos107.variants.su_bound) | Erdős Problem 107 — su bound | known | Convex & Discrete Geometry | $500 | yes |
 | 140 | [`Erdos1070.erdos_1070.parts.i`](https://lefttosolve.com/p/Erdos1070.erdos_1070.parts.i) | Erdős Problem 1070 — i | open | Combinatorics, Convex & Discrete Geometry |  |  |
 | 141 | [`Erdos1070.erdos_1070.parts.ii`](https://lefttosolve.com/p/Erdos1070.erdos_1070.parts.ii) | Erdős Problem 1070 — ii | known | Combinatorics, Convex & Discrete Geometry |  |  |
 | 142 | [`Erdos1070.erdos_1070.variants.matolcsi_ruzsa_varga_zsamboki`](https://lefttosolve.com/p/Erdos1070.erdos_1070.variants.matolcsi_ruzsa_varga_zsamboki) | Erdős Problem 1070 — matolcsi ruzsa varga zsamboki | known | Combinatorics, Convex & Discrete Geometry |  |  |
@@ -183,16 +183,16 @@ Back to [all programs](../PROGRAMS.md).
 | 161 | [`Erdos1082.erdos_1082.parts.i`](https://lefttosolve.com/p/Erdos1082.erdos_1082.parts.i) | Erdős Problem 1082 — i | open | Geometry |  |  |
 | 162 | [`Erdos1083.erdos_1083`](https://lefttosolve.com/p/Erdos1083.erdos_1083) | Erdős Problem 1083 | open | Convex & Discrete Geometry |  |  |
 | 163 | [`Erdos1084.erdos_1084.variants.easy_upper_d2`](https://lefttosolve.com/p/Erdos1084.erdos_1084.variants.easy_upper_d2) | Erdős Problem 1084 — easy upper d2 | known | Convex & Discrete Geometry |  | yes |
-| 164 | [`Erdos1084.erdos_1084.variants.triangular_optimal_d2`](https://lefttosolve.com/p/Erdos1084.erdos_1084.variants.triangular_optimal_d2) | Erdős Problem 1084 — triangular optimal d2 | known | Convex & Discrete Geometry |  |  |
+| 164 | [`Erdos1084.erdos_1084.variants.triangular_optimal_d2`](https://lefttosolve.com/p/Erdos1084.erdos_1084.variants.triangular_optimal_d2) | Erdős Problem 1084 — triangular optimal d2 | known | Convex & Discrete Geometry |  | yes |
 | 165 | [`Erdos1084.erdos_1084.variants.upper_d2`](https://lefttosolve.com/p/Erdos1084.erdos_1084.variants.upper_d2) | Erdős Problem 1084 — upper d2 | known | Convex & Discrete Geometry |  | yes |
-| 166 | [`Erdos1084.erdos_1084.variants.upper_lower_d3`](https://lefttosolve.com/p/Erdos1084.erdos_1084.variants.upper_lower_d3) | Erdős Problem 1084 — upper lower d3 | known | Convex & Discrete Geometry |  |  |
+| 166 | [`Erdos1084.erdos_1084.variants.upper_lower_d3`](https://lefttosolve.com/p/Erdos1084.erdos_1084.variants.upper_lower_d3) | Erdős Problem 1084 — upper lower d3 | known | Convex & Discrete Geometry |  | yes |
 | 167 | [`Erdos1085.erdos_1085.variants.lower_d2`](https://lefttosolve.com/p/Erdos1085.erdos_1085.variants.lower_d2) | Erdős Problem 1085 — lower d2 | known | Convex & Discrete Geometry |  | yes |
-| 168 | [`Erdos1085.erdos_1085.variants.lower_d3`](https://lefttosolve.com/p/Erdos1085.erdos_1085.variants.lower_d3) | Erdős Problem 1085 — lower d3 | known | Convex & Discrete Geometry |  |  |
+| 168 | [`Erdos1085.erdos_1085.variants.lower_d3`](https://lefttosolve.com/p/Erdos1085.erdos_1085.variants.lower_d3) | Erdős Problem 1085 — lower d3 | known | Convex & Discrete Geometry |  | yes |
 | 169 | [`Erdos1085.erdos_1085.variants.lower_d4_lenz`](https://lefttosolve.com/p/Erdos1085.erdos_1085.variants.lower_d4_lenz) | Erdős Problem 1085 — lower d4 lenz | known | Convex & Discrete Geometry |  | yes |
 | 170 | [`Erdos1085.erdos_1085.variants.upper_d2`](https://lefttosolve.com/p/Erdos1085.erdos_1085.variants.upper_d2) | Erdős Problem 1085 — upper d2 | known | Convex & Discrete Geometry |  | yes |
 | 171 | [`Erdos1085.erdos_1085.variants.upper_d3`](https://lefttosolve.com/p/Erdos1085.erdos_1085.variants.upper_d3) | Erdős Problem 1085 — upper d3 | open | Convex & Discrete Geometry |  |  |
 | 172 | [`Erdos1085.erdos_1085.variants.upper_d4_erdos`](https://lefttosolve.com/p/Erdos1085.erdos_1085.variants.upper_d4_erdos) | Erdős Problem 1085 — upper d4 erdos | known | Convex & Discrete Geometry |  | yes |
-| 173 | [`Erdos1085.erdos_1085.variants.upper_lower_d5_odd`](https://lefttosolve.com/p/Erdos1085.erdos_1085.variants.upper_lower_d5_odd) | Erdős Problem 1085 — upper lower d5 odd | known | Convex & Discrete Geometry |  |  |
+| 173 | [`Erdos1085.erdos_1085.variants.upper_lower_d5_odd`](https://lefttosolve.com/p/Erdos1085.erdos_1085.variants.upper_lower_d5_odd) | Erdős Problem 1085 — upper lower d5 odd | known | Convex & Discrete Geometry |  | yes |
 | 174 | [`Erdos1086.erdos_1086`](https://lefttosolve.com/p/Erdos1086.erdos_1086) | Erdős Problem 1086 | open | Convex & Discrete Geometry |  |  |
 | 175 | [`Erdos1086.erdos_1086.variants.erdos_purdy_lower`](https://lefttosolve.com/p/Erdos1086.erdos_1086.variants.erdos_purdy_lower) | Erdős Problem 1086 — erdos purdy lower | known | Convex & Discrete Geometry |  | yes |
 | 176 | [`Erdos1086.erdos_1086.variants.raz_sharir`](https://lefttosolve.com/p/Erdos1086.erdos_1086.variants.raz_sharir) | Erdős Problem 1086 — raz sharir | known | Convex & Discrete Geometry |  |  |
@@ -212,30 +212,30 @@ Back to [all programs](../PROGRAMS.md).
 | 190 | [`Erdos1095.erdos_1095.variants.upper_conjecture`](https://lefttosolve.com/p/Erdos1095.erdos_1095.variants.upper_conjecture) | Erdős Problem 1095 — upper conjecture | known | Number Theory |  | yes |
 | 191 | [`Erdos1098.erdos_1098.variants.center_finiteIndex`](https://lefttosolve.com/p/Erdos1098.erdos_1098.variants.center_finiteIndex) | Erdős Problem 1098 — center finiteIndex | known | Combinatorics, Group Theory |  | yes |
 | 192 | [`Erdos1099.erdos_1099.variants.factorial`](https://lefttosolve.com/p/Erdos1099.erdos_1099.variants.factorial) | Erdős Problem 1099 — factorial | known | Number Theory |  | yes |
-| 193 | [`Erdos1099.erdos_1099.variants.lcm`](https://lefttosolve.com/p/Erdos1099.erdos_1099.variants.lcm) | Erdős Problem 1099 — lcm | known | Number Theory |  |  |
+| 193 | [`Erdos1099.erdos_1099.variants.lcm`](https://lefttosolve.com/p/Erdos1099.erdos_1099.variants.lcm) | Erdős Problem 1099 — lcm | known | Number Theory |  | yes |
 | 194 | [`Erdos1099.erdos_1099.variants.ratio_sum`](https://lefttosolve.com/p/Erdos1099.erdos_1099.variants.ratio_sum) | Erdős Problem 1099 — ratio sum | known | Number Theory |  | yes |
 | 195 | [`Erdos11.erdos_11`](https://lefttosolve.com/p/Erdos11.erdos_11) | Erdős Problem 11 | open | Number Theory |  |  |
 | 196 | [`Erdos11.erdos_11.variants.all_odd`](https://lefttosolve.com/p/Erdos11.erdos_11.variants.all_odd) | Erdős Problem 11 — all odd | open | Number Theory |  |  |
 | 197 | [`Erdos11.erdos_11.variants.finite_bound1`](https://lefttosolve.com/p/Erdos11.erdos_11.variants.finite_bound1) | Erdős Problem 11 — finite bound1 | known | Number Theory |  | yes |
 | 198 | [`Erdos11.erdos_11.variants.finite_bound2`](https://lefttosolve.com/p/Erdos11.erdos_11.variants.finite_bound2) | Erdős Problem 11 — finite bound2 | known | Number Theory |  |  |
-| 199 | [`Erdos11.erdos_11.variants.granville_soundararajan`](https://lefttosolve.com/p/Erdos11.erdos_11.variants.granville_soundararajan) | Erdős Problem 11 — granville soundararajan | known | Number Theory |  |  |
+| 199 | [`Erdos11.erdos_11.variants.granville_soundararajan`](https://lefttosolve.com/p/Erdos11.erdos_11.variants.granville_soundararajan) | Erdős Problem 11 — granville soundararajan | known | Number Theory |  | yes |
 | 200 | [`Erdos11.erdos_11.variants.not_four_dvd`](https://lefttosolve.com/p/Erdos11.erdos_11.variants.not_four_dvd) | Erdős Problem 11 — not four dvd | open | Number Theory |  |  |
 | 201 | [`Erdos11.erdos_11.variants.two_pow_two`](https://lefttosolve.com/p/Erdos11.erdos_11.variants.two_pow_two) | Erdős Problem 11 — two pow two | open | Number Theory |  |  |
 | 202 | [`Erdos110.erdos_110.variants.de_bruijn_erdos`](https://lefttosolve.com/p/Erdos110.erdos_110.variants.de_bruijn_erdos) | Erdős Problem 110 — de bruijn erdos | known | Combinatorics |  | yes |
-| 203 | [`Erdos110.erdos_110.variants.lambie_hanson`](https://lefttosolve.com/p/Erdos110.erdos_110.variants.lambie_hanson) | Erdős Problem 110 — lambie hanson | known | Combinatorics, Logic & Foundations |  |  |
+| 203 | [`Erdos110.erdos_110.variants.lambie_hanson`](https://lefttosolve.com/p/Erdos110.erdos_110.variants.lambie_hanson) | Erdős Problem 110 — lambie hanson | known | Combinatorics, Logic & Foundations |  | yes |
 | 204 | [`Erdos1100.erdos_1100.parts.i`](https://lefttosolve.com/p/Erdos1100.erdos_1100.parts.i) | Erdős Problem 1100 — i | known | Number Theory |  | yes |
 | 205 | [`Erdos1100.erdos_1100.parts.ii`](https://lefttosolve.com/p/Erdos1100.erdos_1100.parts.ii) | Erdős Problem 1100 — ii | known | Number Theory |  | yes |
 | 206 | [`Erdos1100.erdos_1100.parts.iii`](https://lefttosolve.com/p/Erdos1100.erdos_1100.parts.iii) | Erdős Problem 1100 — iii | open | Number Theory |  |  |
 | 207 | [`Erdos1100.erdos_1100.variants.eq_omega`](https://lefttosolve.com/p/Erdos1100.erdos_1100.variants.eq_omega) | Erdős Problem 1100 — eq omega | known | Number Theory |  | yes |
 | 208 | [`Erdos1100.erdos_1100.variants.erdos_hall`](https://lefttosolve.com/p/Erdos1100.erdos_1100.variants.erdos_hall) | Erdős Problem 1100 — erdos hall | known | Number Theory |  | yes |
-| 209 | [`Erdos1100.erdos_1100.variants.erdos_simonovits`](https://lefttosolve.com/p/Erdos1100.erdos_1100.variants.erdos_simonovits) | Erdős Problem 1100 — erdos simonovits | known | Number Theory |  |  |
+| 209 | [`Erdos1100.erdos_1100.variants.erdos_simonovits`](https://lefttosolve.com/p/Erdos1100.erdos_1100.variants.erdos_simonovits) | Erdős Problem 1100 — erdos simonovits | known | Number Theory |  | yes |
 | 210 | [`Erdos1100.erdos_1100.variants.erdos_tenenbaum_g`](https://lefttosolve.com/p/Erdos1100.erdos_1100.variants.erdos_tenenbaum_g) | Erdős Problem 1100 — erdos tenenbaum g | known | Number Theory |  | yes |
-| 211 | [`Erdos1100.erdos_1100.variants.erdos_tenenbaum_max`](https://lefttosolve.com/p/Erdos1100.erdos_1100.variants.erdos_tenenbaum_max) | Erdős Problem 1100 — erdos tenenbaum max | known | Number Theory |  |  |
+| 211 | [`Erdos1100.erdos_1100.variants.erdos_tenenbaum_max`](https://lefttosolve.com/p/Erdos1100.erdos_1100.variants.erdos_tenenbaum_max) | Erdős Problem 1100 — erdos tenenbaum max | known | Number Theory |  | yes |
 | 212 | [`Erdos1100.erdos_1100.variants.normal_order`](https://lefttosolve.com/p/Erdos1100.erdos_1100.variants.normal_order) | Erdős Problem 1100 — normal order | known | Number Theory |  |  |
 | 213 | [`Erdos1101.erdos_1101.parts.i`](https://lefttosolve.com/p/Erdos1101.erdos_1101.parts.i) | Erdős Problem 1101 — i | open | Number Theory |  |  |
 | 214 | [`Erdos1101.erdos_1101.parts.ii`](https://lefttosolve.com/p/Erdos1101.erdos_1101.parts.ii) | Erdős Problem 1101 — ii | open | Number Theory |  |  |
 | 215 | [`Erdos1104.erdos_1104.variants.lower`](https://lefttosolve.com/p/Erdos1104.erdos_1104.variants.lower) | Erdős Problem 1104 — lower | known | Combinatorics |  |  |
-| 216 | [`Erdos1104.erdos_1104.variants.upper`](https://lefttosolve.com/p/Erdos1104.erdos_1104.variants.upper) | Erdős Problem 1104 — upper | known | Combinatorics |  |  |
+| 216 | [`Erdos1104.erdos_1104.variants.upper`](https://lefttosolve.com/p/Erdos1104.erdos_1104.variants.upper) | Erdős Problem 1104 — upper | known | Combinatorics |  | yes |
 | 217 | [`Erdos1106.erdos_1106.parts.i`](https://lefttosolve.com/p/Erdos1106.erdos_1106.parts.i) | Erdős Problem 1106 — i | known | Number Theory |  |  |
 | 218 | [`Erdos1106.erdos_1106.parts.ii`](https://lefttosolve.com/p/Erdos1106.erdos_1106.parts.ii) | Erdős Problem 1106 — ii | open | Number Theory |  |  |
 | 219 | [`Erdos1107.erdos_1107`](https://lefttosolve.com/p/Erdos1107.erdos_1107) | Erdős Problem 1107 | open | Number Theory |  |  |
@@ -248,14 +248,14 @@ Back to [all programs](../PROGRAMS.md).
 | 226 | [`Erdos1109.erdos_1109.variants.konyagin_lower`](https://lefttosolve.com/p/Erdos1109.erdos_1109.variants.konyagin_lower) | Erdős Problem 1109 — konyagin lower | known | Combinatorics, Number Theory |  |  |
 | 227 | [`Erdos1109.erdos_1109.variants.konyagin_upper`](https://lefttosolve.com/p/Erdos1109.erdos_1109.variants.konyagin_upper) | Erdős Problem 1109 — konyagin upper | known | Combinatorics, Number Theory |  |  |
 | 228 | [`Erdos1109.erdos_1109.variants.polylog`](https://lefttosolve.com/p/Erdos1109.erdos_1109.variants.polylog) | Erdős Problem 1109 — polylog | open | Combinatorics, Number Theory |  |  |
-| 229 | [`Erdos111.erdos_111`](https://lefttosolve.com/p/Erdos111.erdos_111) | Erdős Problem 111 | open | Combinatorics |  |  |
+| 229 | [`Erdos111.erdos_111`](https://lefttosolve.com/p/Erdos111.erdos_111) | Erdős Problem 111 | open | Combinatorics |  | yes |
 | 230 | [`Erdos111.erdos_111.variants.erdos_conjecture`](https://lefttosolve.com/p/Erdos111.erdos_111.variants.erdos_conjecture) | Erdős Problem 111 — erdos conjecture | open | Combinatorics |  |  |
 | 231 | [`Erdos111.erdos_111.variants.lower_bound`](https://lefttosolve.com/p/Erdos111.erdos_111.variants.lower_bound) | Linear lower bound (ZFC, [EHS82]) | known | Combinatorics |  | yes |
 | 232 | [`Erdos111.erdos_111.variants.upper_bound_existence`](https://lefttosolve.com/p/Erdos111.erdos_111.variants.upper_bound_existence) | Upper bound existence (Erdős-Hajnal-Szemerédi [EHS82]) | known | Combinatorics |  | yes |
-| 233 | [`Erdos1110.erdos_1110`](https://lefttosolve.com/p/Erdos1110.erdos_1110) | Erdős Problem 1110 | open | Combinatorics, Number Theory |  |  |
+| 233 | [`Erdos1110.erdos_1110`](https://lefttosolve.com/p/Erdos1110.erdos_1110) | Erdős Problem 1110 | open | Combinatorics, Number Theory |  | yes |
 | 234 | [`Erdos1111.erdos_1111`](https://lefttosolve.com/p/Erdos1111.erdos_1111) | Erdős Problem 1111 | open | Combinatorics |  |  |
 | 235 | [`Erdos1111.erdos_1111.variants.el_zahar_erdos`](https://lefttosolve.com/p/Erdos1111.erdos_1111.variants.el_zahar_erdos) | Erdős Problem 1111 — el zahar erdos | known | Combinatorics |  | yes |
-| 236 | [`Erdos1111.erdos_1111.variants.nguyen_scott_seymour`](https://lefttosolve.com/p/Erdos1111.erdos_1111.variants.nguyen_scott_seymour) | Erdős Problem 1111 — nguyen scott seymour | known | Combinatorics |  |  |
+| 236 | [`Erdos1111.erdos_1111.variants.nguyen_scott_seymour`](https://lefttosolve.com/p/Erdos1111.erdos_1111.variants.nguyen_scott_seymour) | Erdős Problem 1111 — nguyen scott seymour | known | Combinatorics |  | yes |
 | 237 | [`Erdos1111.erdos_1111.variants.three_three`](https://lefttosolve.com/p/Erdos1111.erdos_1111.variants.three_three) | Erdős Problem 1111 — three three | known | Combinatorics |  | yes |
 | 238 | [`Erdos1113.erdos_1113`](https://lefttosolve.com/p/Erdos1113.erdos_1113) | Erdős Problem 1113. | open | Number Theory |  |  |
 | 239 | [`Erdos1113.erdos_1113.variants.filaseta_finch_kozek`](https://lefttosolve.com/p/Erdos1113.erdos_1113.variants.filaseta_finch_kozek) | Filaseta–Finch–Kozek conjecture (2008). | open | Number Theory |  |  |
@@ -268,7 +268,7 @@ Back to [all programs](../PROGRAMS.md).
 | 246 | [`Erdos1122.erdos_1122`](https://lefttosolve.com/p/Erdos1122.erdos_1122) | Erdős Problem 1122 | open | Number Theory |  |  |
 | 247 | [`Erdos1122.erdos_1122.variants.monotone`](https://lefttosolve.com/p/Erdos1122.erdos_1122.variants.monotone) | Erdős Problem 1122 — monotone | known | Number Theory |  | yes |
 | 248 | [`Erdos1122.erdos_1122.variants.sub_tendsto_zero`](https://lefttosolve.com/p/Erdos1122.erdos_1122.variants.sub_tendsto_zero) | Erdős Problem 1122 — sub tendsto zero | known | Number Theory |  | yes |
-| 249 | [`Erdos1129.erdos_1129`](https://lefttosolve.com/p/Erdos1129.erdos_1129) | Erdős Problem 1129 | known | Approximation |  |  |
+| 249 | [`Erdos1129.erdos_1129`](https://lefttosolve.com/p/Erdos1129.erdos_1129) | Erdős Problem 1129 | known | Approximation |  | yes |
 | 250 | [`Erdos1129.erdos_1129.variants.canonical`](https://lefttosolve.com/p/Erdos1129.erdos_1129.variants.canonical) | Erdős Problem 1129 — canonical | known | Approximation |  | yes |
 | 251 | [`Erdos1129.erdos_1129.variants.chebyshev_upper_bound`](https://lefttosolve.com/p/Erdos1129.erdos_1129.variants.chebyshev_upper_bound) | Erdős Problem 1129 — chebyshev upper bound | known | Approximation |  | yes |
 | 252 | [`Erdos1129.erdos_1129.variants.erdos_lower_bound`](https://lefttosolve.com/p/Erdos1129.erdos_1129.variants.erdos_lower_bound) | Erdős Problem 1129 — erdos lower bound | known | Approximation |  | yes |
@@ -277,7 +277,7 @@ Back to [all programs](../PROGRAMS.md).
 | 255 | [`Erdos1129.erdos_1129.variants.three_nodes`](https://lefttosolve.com/p/Erdos1129.erdos_1129.variants.three_nodes) | Erdős Problem 1129 — three nodes | known | Approximation |  | yes |
 | 256 | [`Erdos1129.erdos_1129.variants.unique`](https://lefttosolve.com/p/Erdos1129.erdos_1129.variants.unique) | Erdős Problem 1129 — unique | known | Approximation |  | yes |
 | 257 | [`Erdos1130.erdos_1130.parts.i`](https://lefttosolve.com/p/Erdos1130.erdos_1130.parts.i) | Erdős Problem 1130 — i | known | Approximation |  | yes |
-| 258 | [`Erdos1130.erdos_1130.parts.ii`](https://lefttosolve.com/p/Erdos1130.erdos_1130.parts.ii) | Erdős Problem 1130 — ii | known | Approximation |  |  |
+| 258 | [`Erdos1130.erdos_1130.parts.ii`](https://lefttosolve.com/p/Erdos1130.erdos_1130.parts.ii) | Erdős Problem 1130 — ii | known | Approximation |  | yes |
 | 259 | [`Erdos1130.erdos_1130.variants.canonical`](https://lefttosolve.com/p/Erdos1130.erdos_1130.variants.canonical) | Erdős Problem 1130 — canonical | known | Approximation |  | yes |
 | 260 | [`Erdos1130.erdos_1130.variants.erdos_inequality`](https://lefttosolve.com/p/Erdos1130.erdos_1130.variants.erdos_inequality) | Erdős Problem 1130 — erdos inequality | known | Approximation |  | yes |
 | 261 | [`Erdos1130.erdos_1130.variants.erdos_inequality_canonical`](https://lefttosolve.com/p/Erdos1130.erdos_1130.variants.erdos_inequality_canonical) | Erdős Problem 1130 — erdos inequality canonical | known | Approximation |  | yes |
@@ -286,47 +286,47 @@ Back to [all programs](../PROGRAMS.md).
 | 264 | [`Erdos1132.erdos_1132.parts.i`](https://lefttosolve.com/p/Erdos1132.erdos_1132.parts.i) | Erdős Problem 1132 — i | open | Approximation |  |  |
 | 265 | [`Erdos1132.erdos_1132.parts.ii`](https://lefttosolve.com/p/Erdos1132.erdos_1132.parts.ii) | Erdős Problem 1132 — ii | open | Approximation |  |  |
 | 266 | [`Erdos1132.erdos_1132.variants.erdos_max`](https://lefttosolve.com/p/Erdos1132.erdos_1132.variants.erdos_max) | Erdős Problem 1132 — erdos max | known | Approximation |  | yes |
-| 267 | [`Erdos1132.erdos_1132.variants.tao`](https://lefttosolve.com/p/Erdos1132.erdos_1132.variants.tao) | Erdős Problem 1132 — tao | known | Approximation |  |  |
-| 268 | [`Erdos1133.erdos_1133`](https://lefttosolve.com/p/Erdos1133.erdos_1133) | Erdős Problem 1133 | known | Approximation, Real Functions |  |  |
-| 269 | [`Erdos1133.erdos_1133.variants.weaker`](https://lefttosolve.com/p/Erdos1133.erdos_1133.variants.weaker) | Erdős Problem 1133 — weaker | known | Approximation, Real Functions |  |  |
+| 267 | [`Erdos1132.erdos_1132.variants.tao`](https://lefttosolve.com/p/Erdos1132.erdos_1132.variants.tao) | Erdős Problem 1132 — tao | known | Approximation |  | yes |
+| 268 | [`Erdos1133.erdos_1133`](https://lefttosolve.com/p/Erdos1133.erdos_1133) | Erdős Problem 1133 | known | Approximation, Real Functions |  | yes |
+| 269 | [`Erdos1133.erdos_1133.variants.weaker`](https://lefttosolve.com/p/Erdos1133.erdos_1133.variants.weaker) | Erdős Problem 1133 — weaker | known | Approximation, Real Functions |  | yes |
 | 270 | [`Erdos1135.erdos_1135`](https://lefttosolve.com/p/Erdos1135.erdos_1135) | Erdős Problem 1135 | open | Dynamical Systems, Number Theory | $500 |  |
 | 271 | [`Erdos1136.erdos_1136.variants.mueller`](https://lefttosolve.com/p/Erdos1136.erdos_1136.variants.mueller) | Erdős Problem 1136 — mueller | known | Number Theory |  | yes |
 | 272 | [`Erdos1136.erdos_1136.variants.multiples_of_three`](https://lefttosolve.com/p/Erdos1136.erdos_1136.variants.multiples_of_three) | Erdős Problem 1136 — multiples of three | known | Number Theory |  | yes |
 | 273 | [`Erdos1136.erdos_1136.variants.upper_bound`](https://lefttosolve.com/p/Erdos1136.erdos_1136.variants.upper_bound) | Erdős Problem 1136 — upper bound | known | Number Theory |  | yes |
 | 274 | [`Erdos1137.erdos_1137`](https://lefttosolve.com/p/Erdos1137.erdos_1137) | Erdős Problem 1137 | open | Number Theory |  |  |
-| 275 | [`Erdos1139.erdos_1139`](https://lefttosolve.com/p/Erdos1139.erdos_1139) | Erdős Problem 1139 | open | Number Theory |  |  |
+| 275 | [`Erdos1139.erdos_1139`](https://lefttosolve.com/p/Erdos1139.erdos_1139) | Erdős Problem 1139 | open | Number Theory |  | yes |
 | 276 | [`Erdos114.erdos_114`](https://lefttosolve.com/p/Erdos114.erdos_114) | Erdős Problem 114 | open | Complex Analysis, Measure & Integration | $250 |  |
 | 277 | [`Erdos114.erdos_114.variants.large_n`](https://lefttosolve.com/p/Erdos114.erdos_114.variants.large_n) | Erdős Problem 114 — large n | known | Complex Analysis, Measure & Integration | $250 |  |
 | 278 | [`Erdos114.erdos_114.variants.two`](https://lefttosolve.com/p/Erdos114.erdos_114.variants.two) | Erdős Problem 114 — two | known | Complex Analysis, Measure & Integration | $250 | yes |
 | 279 | [`Erdos1140.erdos_1140`](https://lefttosolve.com/p/Erdos1140.erdos_1140) | Erdős Problem 1140 | known | Number Theory |  |  |
 | 280 | [`Erdos1140.erdos_1140.variants.at_most_one_exception`](https://lefttosolve.com/p/Erdos1140.erdos_1140.variants.at_most_one_exception) | Erdős Problem 1140 — at most one exception | known | Number Theory |  |  |
 | 281 | [`Erdos1141.erdos_1141.variants.mertens_third`](https://lefttosolve.com/p/Erdos1141.erdos_1141.variants.mertens_third) | Mertens' third theorem | known | Number Theory |  | yes |
-| 282 | [`Erdos1141.erdos_1141.variants.pollack_1_3`](https://lefttosolve.com/p/Erdos1141.erdos_1141.variants.pollack_1_3) | Theorem 1.3 of [Po17] | known | Number Theory |  |  |
+| 282 | [`Erdos1141.erdos_1141.variants.pollack_1_3`](https://lefttosolve.com/p/Erdos1141.erdos_1141.variants.pollack_1_3) | Theorem 1.3 of [Po17] | known | Number Theory |  | yes |
 | 283 | [`Erdos1142.erdos_1142`](https://lefttosolve.com/p/Erdos1142.erdos_1142) | Erdős Problem 1142 | open | Number Theory |  |  |
 | 284 | [`Erdos1142.erdos_1142.variants.mientka_weitzenkamp`](https://lefttosolve.com/p/Erdos1142.erdos_1142.variants.mientka_weitzenkamp) | Erdős Problem 1142 — mientka weitzenkamp | known | Number Theory |  | yes |
 | 285 | [`Erdos1145.erdos_1145`](https://lefttosolve.com/p/Erdos1145.erdos_1145) | Erdős Problem 1145 | open | Combinatorics |  |  |
 | 286 | [`Erdos1146.erdos_1146`](https://lefttosolve.com/p/Erdos1146.erdos_1146) | Erdős Problem 1146 | open | Number Theory |  |  |
-| 287 | [`Erdos1147.erdos_1147.variants.almost_every`](https://lefttosolve.com/p/Erdos1147.erdos_1147.variants.almost_every) | Erdős Problem 1147 — almost every | known | Number Theory |  |  |
-| 288 | [`Erdos1148.erdos_1148.variants.weaker`](https://lefttosolve.com/p/Erdos1148.erdos_1148.variants.weaker) | Erdős Problem 1148 — weaker | known | Number Theory |  |  |
+| 287 | [`Erdos1147.erdos_1147.variants.almost_every`](https://lefttosolve.com/p/Erdos1147.erdos_1147.variants.almost_every) | Erdős Problem 1147 — almost every | known | Number Theory |  | yes |
+| 288 | [`Erdos1148.erdos_1148.variants.weaker`](https://lefttosolve.com/p/Erdos1148.erdos_1148.variants.weaker) | Erdős Problem 1148 — weaker | known | Number Theory |  | yes |
 | 289 | [`Erdos1152.erdos_1152`](https://lefttosolve.com/p/Erdos1152.erdos_1152) | Erdős Problem 1152 | open | Approximation |  |  |
 | 290 | [`Erdos1154.erdos_1154.parts.i`](https://lefttosolve.com/p/Erdos1154.erdos_1154.parts.i) | Erdős Problem 1154 — i | open | Measure & Integration |  |  |
 | 291 | [`Erdos1154.erdos_1154.parts.ii`](https://lefttosolve.com/p/Erdos1154.erdos_1154.parts.ii) | Erdős Problem 1154 — ii | open | Measure & Integration |  |  |
-| 292 | [`Erdos1154.erdos_1154.variants.analytic_ring`](https://lefttosolve.com/p/Erdos1154.erdos_1154.variants.analytic_ring) | Erdős Problem 1154 — analytic ring | known | Measure & Integration |  |  |
-| 293 | [`Erdos1154.erdos_1154.variants.continuumHypothesis_field`](https://lefttosolve.com/p/Erdos1154.erdos_1154.variants.continuumHypothesis_field) | Erdős Problem 1154 — continuumHypothesis field | known | Measure & Integration |  |  |
+| 292 | [`Erdos1154.erdos_1154.variants.analytic_ring`](https://lefttosolve.com/p/Erdos1154.erdos_1154.variants.analytic_ring) | Erdős Problem 1154 — analytic ring | known | Measure & Integration |  | yes |
+| 293 | [`Erdos1154.erdos_1154.variants.continuumHypothesis_field`](https://lefttosolve.com/p/Erdos1154.erdos_1154.variants.continuumHypothesis_field) | Erdős Problem 1154 — continuumHypothesis field | known | Measure & Integration |  | yes |
 | 294 | [`Erdos1154.erdos_1154.variants.group`](https://lefttosolve.com/p/Erdos1154.erdos_1154.variants.group) | Erdős Problem 1154 — group | known | Measure & Integration |  | yes |
 | 295 | [`Erdos1157.erdos_1157`](https://lefttosolve.com/p/Erdos1157.erdos_1157) | Erdős Problem 1157 | open | Combinatorics |  |  |
 | 296 | [`Erdos1158.erdos_1158`](https://lefttosolve.com/p/Erdos1158.erdos_1158) | Erdős Problem 1158 | open | Combinatorics |  |  |
 | 297 | [`Erdos1159.erdos_1159`](https://lefttosolve.com/p/Erdos1159.erdos_1159) | Erdős Problem 1159 | open | Combinatorics, Geometry |  |  |
-| 298 | [`Erdos116.erdos_116.variants.log`](https://lefttosolve.com/p/Erdos116.erdos_116.variants.log) | Erdős Problem 116 — log | known | Complex Analysis |  |  |
+| 298 | [`Erdos116.erdos_116.variants.log`](https://lefttosolve.com/p/Erdos116.erdos_116.variants.log) | Erdős Problem 116 — log | known | Complex Analysis |  | yes |
 | 299 | [`Erdos116.erdos_116.variants.polya`](https://lefttosolve.com/p/Erdos116.erdos_116.variants.polya) | Erdős Problem 116 — polya | known | Complex Analysis |  | yes |
-| 300 | [`Erdos116.erdos_116.variants.upper`](https://lefttosolve.com/p/Erdos116.erdos_116.variants.upper) | Erdős Problem 116 — upper | known | Complex Analysis |  |  |
+| 300 | [`Erdos116.erdos_116.variants.upper`](https://lefttosolve.com/p/Erdos116.erdos_116.variants.upper) | Erdős Problem 116 — upper | known | Complex Analysis |  | yes |
 | 301 | [`Erdos1160.erdos_1160`](https://lefttosolve.com/p/Erdos1160.erdos_1160) | Erdős Problem 1160 | open | Group Theory |  |  |
 | 302 | [`Erdos1160.erdos_1160.variants.sum`](https://lefttosolve.com/p/Erdos1160.erdos_1160.variants.sum) | Erdős Problem 1160 — sum | open | Group Theory |  |  |
 | 303 | [`Erdos1162.erdos_1162`](https://lefttosolve.com/p/Erdos1162.erdos_1162) | Erdős Problem 1162 | open | Combinatorics, Group Theory |  |  |
-| 304 | [`Erdos1162.erdos_1162.variants.pyber`](https://lefttosolve.com/p/Erdos1162.erdos_1162.variants.pyber) | Erdős Problem 1162 — pyber | known | Combinatorics, Group Theory |  |  |
+| 304 | [`Erdos1162.erdos_1162.variants.pyber`](https://lefttosolve.com/p/Erdos1162.erdos_1162.variants.pyber) | Erdős Problem 1162 — pyber | known | Combinatorics, Group Theory |  | yes |
 | 305 | [`Erdos1162.erdos_1162.variants.roney_dougal_tracey`](https://lefttosolve.com/p/Erdos1162.erdos_1162.variants.roney_dougal_tracey) | Erdős Problem 1162 — roney dougal tracey | known | Combinatorics, Group Theory |  |  |
 | 306 | [`Erdos1162.erdos_1162.variants.roney_dougal_tracey_bounds`](https://lefttosolve.com/p/Erdos1162.erdos_1162.variants.roney_dougal_tracey_bounds) | Erdős Problem 1162 — roney dougal tracey bounds | known | Combinatorics, Group Theory |  |  |
-| 307 | [`Erdos1164.erdos_1164`](https://lefttosolve.com/p/Erdos1164.erdos_1164) | Erdős Problem 1164 | known | Probability |  |  |
+| 307 | [`Erdos1164.erdos_1164`](https://lefttosolve.com/p/Erdos1164.erdos_1164) | Erdős Problem 1164 | known | Probability |  | yes |
 | 308 | [`Erdos1164.erdos_1164.variants.dembo_peres_rosen_zeitouni`](https://lefttosolve.com/p/Erdos1164.erdos_1164.variants.dembo_peres_rosen_zeitouni) | Erdős Problem 1164 — dembo peres rosen zeitouni | known | Probability |  |  |
 | 309 | [`Erdos1165.erdos_1165`](https://lefttosolve.com/p/Erdos1165.erdos_1165) | Erdős Problem 1165 | known | Probability |  |  |
 | 310 | [`Erdos1165.erdos_1165.variants.hao_li_okada_zheng`](https://lefttosolve.com/p/Erdos1165.erdos_1165.variants.hao_li_okada_zheng) | Erdős Problem 1165 — hao li okada zheng | known | Probability |  |  |
@@ -338,10 +338,10 @@ Back to [all programs](../PROGRAMS.md).
 | 316 | [`Erdos1167.erdos_1167.variants.infinite_targets`](https://lefttosolve.com/p/Erdos1167.erdos_1167.variants.infinite_targets) | Infinite-target case. | open | Combinatorics |  |  |
 | 317 | [`Erdos1167.erdos_1167.variants.r_eq_two`](https://lefttosolve.com/p/Erdos1167.erdos_1167.variants.r_eq_two) | $r = 2$ case. | open | Combinatorics |  |  |
 | 318 | [`Erdos1168.erdos_1168`](https://lefttosolve.com/p/Erdos1168.erdos_1168) | Erdős Problem 1168. | open | Combinatorics |  |  |
-| 319 | [`Erdos1168.erdos_1168.variants.under_GCH`](https://lefttosolve.com/p/Erdos1168.erdos_1168.variants.under_GCH) | Erdős–Hajnal–Rado theorem under GCH | known | Combinatorics |  |  |
+| 319 | [`Erdos1168.erdos_1168.variants.under_GCH`](https://lefttosolve.com/p/Erdos1168.erdos_1168.variants.under_GCH) | Erdős–Hajnal–Rado theorem under GCH | known | Combinatorics |  | yes |
 | 320 | [`Erdos1169.erdos_1169`](https://lefttosolve.com/p/Erdos1169.erdos_1169) | Erdős Problem 1169 | open | Logic & Foundations |  |  |
 | 321 | [`Erdos1169.erdos_1169.variants.finite_blue_target`](https://lefttosolve.com/p/Erdos1169.erdos_1169.variants.finite_blue_target) | Erdős Problem 1169 — finite blue target | open | Logic & Foundations |  |  |
-| 322 | [`Erdos1169.erdos_1169.variants.hajnal_under_ch`](https://lefttosolve.com/p/Erdos1169.erdos_1169.variants.hajnal_under_ch) | Hajnal (1971), assuming CH. | known | Logic & Foundations |  |  |
+| 322 | [`Erdos1169.erdos_1169.variants.hajnal_under_ch`](https://lefttosolve.com/p/Erdos1169.erdos_1169.variants.hajnal_under_ch) | Hajnal (1971), assuming CH. | known | Logic & Foundations |  | yes |
 | 323 | [`Erdos1171.erdos_1171`](https://lefttosolve.com/p/Erdos1171.erdos_1171) | Erdős Problem 1171. | open | Combinatorics |  |  |
 | 324 | [`Erdos1171.erdos_1171.variants.k_one`](https://lefttosolve.com/p/Erdos1171.erdos_1171.variants.k_one) | Erdős–Hajnal theorem | known | Combinatorics |  | yes |
 | 325 | [`Erdos1171.erdos_1171.variants.mono_k`](https://lefttosolve.com/p/Erdos1171.erdos_1171.variants.mono_k) | Erdős Problem 1171 — mono k | warmup | Combinatorics |  | yes |
@@ -352,9 +352,9 @@ Back to [all programs](../PROGRAMS.md).
 | 330 | [`Erdos1175.erdos_1175.variants.aleph_one`](https://lefttosolve.com/p/Erdos1175.erdos_1175.variants.aleph_one) | Erdős Problem 1175 — aleph one | open | Combinatorics |  |  |
 | 331 | [`Erdos1175.erdos_1175.variants.threshold_formulation`](https://lefttosolve.com/p/Erdos1175.erdos_1175.variants.threshold_formulation) | Threshold reformulation variant. | open | Combinatorics |  |  |
 | 332 | [`Erdos1176.erdos_1176`](https://lefttosolve.com/p/Erdos1176.erdos_1176) | Erdős Problem 1176 | open | Combinatorics, Logic & Foundations |  |  |
-| 333 | [`Erdos1177.erdos_1177.parts.i`](https://lefttosolve.com/p/Erdos1177.erdos_1177.parts.i) | Erdős Problem 1177 — i | known | Combinatorics, Logic & Foundations |  |  |
+| 333 | [`Erdos1177.erdos_1177.parts.i`](https://lefttosolve.com/p/Erdos1177.erdos_1177.parts.i) | Erdős Problem 1177 — i | known | Combinatorics, Logic & Foundations |  | yes |
 | 334 | [`Erdos1177.erdos_1177.parts.ii`](https://lefttosolve.com/p/Erdos1177.erdos_1177.parts.ii) | Erdős Problem 1177 — ii | known | Combinatorics, Logic & Foundations |  |  |
-| 335 | [`Erdos1177.erdos_1177.parts.iii`](https://lefttosolve.com/p/Erdos1177.erdos_1177.parts.iii) | Erdős Problem 1177 — iii | known | Combinatorics, Logic & Foundations |  |  |
+| 335 | [`Erdos1177.erdos_1177.parts.iii`](https://lefttosolve.com/p/Erdos1177.erdos_1177.parts.iii) | Erdős Problem 1177 — iii | known | Combinatorics, Logic & Foundations |  | yes |
 | 336 | [`Erdos1178.erdos_1178`](https://lefttosolve.com/p/Erdos1178.erdos_1178) | Erdős Problem 1178 | open | Combinatorics |  |  |
 | 337 | [`Erdos118.erdos_118`](https://lefttosolve.com/p/Erdos118.erdos_118) | Erdős Problem 118 | known | Logic & Foundations |  |  |
 | 338 | [`Erdos118.erdos_118.variants.larson`](https://lefttosolve.com/p/Erdos118.erdos_118.variants.larson) | Larson (2000). | known | Logic & Foundations |  |  |
@@ -368,7 +368,7 @@ Back to [all programs](../PROGRAMS.md).
 | 346 | [`Erdos1182.erdos_1182.variants.brandt`](https://lefttosolve.com/p/Erdos1182.erdos_1182.variants.brandt) | Erdős Problem 1182 — brandt | known | Combinatorics |  | yes |
 | 347 | [`Erdos1182.erdos_1182.variants.brandt_expects`](https://lefttosolve.com/p/Erdos1182.erdos_1182.variants.brandt_expects) | Erdős Problem 1182 — brandt expects | open | Combinatorics |  |  |
 | 348 | [`Erdos1182.erdos_1182.variants.chvatal`](https://lefttosolve.com/p/Erdos1182.erdos_1182.variants.chvatal) | Erdős Problem 1182 — chvatal | known | Combinatorics |  | yes |
-| 349 | [`Erdos1182.erdos_1182.variants.f_lower`](https://lefttosolve.com/p/Erdos1182.erdos_1182.variants.f_lower) | Erdős Problem 1182 — f lower | known | Combinatorics |  |  |
+| 349 | [`Erdos1182.erdos_1182.variants.f_lower`](https://lefttosolve.com/p/Erdos1182.erdos_1182.variants.f_lower) | Erdős Problem 1182 — f lower | known | Combinatorics |  | yes |
 | 350 | [`Erdos1182.erdos_1182.variants.f_upper`](https://lefttosolve.com/p/Erdos1182.erdos_1182.variants.f_upper) | Erdős Problem 1182 — f upper | known | Combinatorics |  | yes |
 | 351 | [`Erdos1182.erdos_1182.variants.nikiforov_rousseau`](https://lefttosolve.com/p/Erdos1182.erdos_1182.variants.nikiforov_rousseau) | Erdős Problem 1182 — nikiforov rousseau | known | Combinatorics |  | yes |
 | 352 | [`Erdos1182.erdos_1182.variants.ramsey_ge`](https://lefttosolve.com/p/Erdos1182.erdos_1182.variants.ramsey_ge) | Erdős Problem 1182 — ramsey ge | warmup | Combinatorics |  | yes |
@@ -381,9 +381,9 @@ Back to [all programs](../PROGRAMS.md).
 | 359 | [`Erdos1184.erdos_1184.variants.upper`](https://lefttosolve.com/p/Erdos1184.erdos_1184.variants.upper) | Erdős Problem 1184 — upper | known | Number Theory |  | yes |
 | 360 | [`Erdos1186.erdos_1186`](https://lefttosolve.com/p/Erdos1186.erdos_1186) | Erdős Problem 1186 | open | Combinatorics, Number Theory |  |  |
 | 361 | [`Erdos1186.erdos_1186.variants.probabilistic`](https://lefttosolve.com/p/Erdos1186.erdos_1186.variants.probabilistic) | Erdős Problem 1186 — probabilistic | known | Combinatorics, Number Theory |  | yes |
-| 362 | [`Erdos1186.erdos_1186.variants.prs_bounds`](https://lefttosolve.com/p/Erdos1186.erdos_1186.variants.prs_bounds) | Erdős Problem 1186 — prs bounds | known | Combinatorics, Number Theory |  |  |
+| 362 | [`Erdos1186.erdos_1186.variants.prs_bounds`](https://lefttosolve.com/p/Erdos1186.erdos_1186.variants.prs_bounds) | Erdős Problem 1186 — prs bounds | known | Combinatorics, Number Theory |  | yes |
 | 363 | [`Erdos1186.erdos_1186.variants.prs_conjecture`](https://lefttosolve.com/p/Erdos1186.erdos_1186.variants.prs_conjecture) | Erdős Problem 1186 — prs conjecture | open | Combinatorics, Number Theory |  |  |
-| 364 | [`Erdos1186.erdos_1186.variants.van_der_waerden`](https://lefttosolve.com/p/Erdos1186.erdos_1186.variants.van_der_waerden) | Erdős Problem 1186 — van der waerden | known | Combinatorics, Number Theory |  |  |
+| 364 | [`Erdos1186.erdos_1186.variants.van_der_waerden`](https://lefttosolve.com/p/Erdos1186.erdos_1186.variants.van_der_waerden) | Erdős Problem 1186 — van der waerden | known | Combinatorics, Number Theory |  | yes |
 | 365 | [`Erdos1189.erdos_1189.parts.i`](https://lefttosolve.com/p/Erdos1189.erdos_1189.parts.i) | Erdős Problem 1189 — i | open | Number Theory |  |  |
 | 366 | [`Erdos1189.erdos_1189.parts.ii`](https://lefttosolve.com/p/Erdos1189.erdos_1189.parts.ii) | Erdős Problem 1189 — ii | open | Number Theory |  |  |
 | 367 | [`Erdos1189.erdos_1189.parts.iii`](https://lefttosolve.com/p/Erdos1189.erdos_1189.parts.iii) | Erdős Problem 1189 — iii | open | Number Theory |  |  |
@@ -394,31 +394,31 @@ Back to [all programs](../PROGRAMS.md).
 | 372 | [`Erdos1190.erdos_1190.variants.lower_bound`](https://lefttosolve.com/p/Erdos1190.erdos_1190.variants.lower_bound) | Erdős Problem 1190 — lower bound | known | Combinatorics, Number Theory |  | yes |
 | 373 | [`Erdos1190.erdos_1190.variants.lt_one`](https://lefttosolve.com/p/Erdos1190.erdos_1190.variants.lt_one) | Erdős Problem 1190 — lt one | known | Combinatorics, Number Theory |  | yes |
 | 374 | [`Erdos1190.erdos_1190.variants.tendsto_zero`](https://lefttosolve.com/p/Erdos1190.erdos_1190.variants.tendsto_zero) | Erdős Problem 1190 — tendsto zero | known | Combinatorics, Number Theory |  | yes |
-| 375 | [`Erdos1190.erdos_1190.variants.upper_bound`](https://lefttosolve.com/p/Erdos1190.erdos_1190.variants.upper_bound) | Erdős Problem 1190 — upper bound | known | Combinatorics, Number Theory |  |  |
+| 375 | [`Erdos1190.erdos_1190.variants.upper_bound`](https://lefttosolve.com/p/Erdos1190.erdos_1190.variants.upper_bound) | Erdős Problem 1190 — upper bound | known | Combinatorics, Number Theory |  | yes |
 | 376 | [`Erdos1191.erdos_1191.parts.i`](https://lefttosolve.com/p/Erdos1191.erdos_1191.parts.i) | Erdős Problem 1191 — i | open | Combinatorics, Number Theory | $1000 |  |
 | 377 | [`Erdos1191.erdos_1191.parts.ii`](https://lefttosolve.com/p/Erdos1191.erdos_1191.parts.ii) | Erdős Problem 1191 — ii | open | Combinatorics, Number Theory | $1000 |  |
 | 378 | [`Erdos1191.erdos_1191.variants.liminf_le`](https://lefttosolve.com/p/Erdos1191.erdos_1191.variants.liminf_le) | Erdős Problem 1191 — liminf le | known | Combinatorics, Number Theory | $1000 | yes |
 | 379 | [`Erdos1192.erdos_1192`](https://lefttosolve.com/p/Erdos1192.erdos_1192) | Erdős Problem 1192 | open | Combinatorics |  |  |
-| 380 | [`Erdos1192.erdos_1192.variants.renyi`](https://lefttosolve.com/p/Erdos1192.erdos_1192.variants.renyi) | Erdős Problem 1192 — renyi | known | Combinatorics |  |  |
-| 381 | [`Erdos1192.erdos_1192.variants.ruzsa`](https://lefttosolve.com/p/Erdos1192.erdos_1192.variants.ruzsa) | Erdős Problem 1192 — ruzsa | known | Combinatorics |  |  |
+| 380 | [`Erdos1192.erdos_1192.variants.renyi`](https://lefttosolve.com/p/Erdos1192.erdos_1192.variants.renyi) | Erdős Problem 1192 — renyi | known | Combinatorics |  | yes |
+| 381 | [`Erdos1192.erdos_1192.variants.ruzsa`](https://lefttosolve.com/p/Erdos1192.erdos_1192.variants.ruzsa) | Erdős Problem 1192 — ruzsa | known | Combinatorics |  | yes |
 | 382 | [`Erdos1194.erdos_1194`](https://lefttosolve.com/p/Erdos1194.erdos_1194) | Erdős Problem 1194 | open | Combinatorics, Number Theory |  |  |
 | 383 | [`Erdos1194.erdos_1194.variants.limsup_eq_top`](https://lefttosolve.com/p/Erdos1194.erdos_1194.variants.limsup_eq_top) | Erdős Problem 1194 — limsup eq top | known | Combinatorics, Number Theory |  | yes |
 | 384 | [`Erdos1195.erdos_1195.variants.exists_set`](https://lefttosolve.com/p/Erdos1195.erdos_1195.variants.exists_set) | Erdős Problem 1195 — exists set | known | Measure & Integration, Number Theory |  | yes |
 | 385 | [`Erdos1198.erdos_1198`](https://lefttosolve.com/p/Erdos1198.erdos_1198) | Erdős Problem 1198 | known | Combinatorics, Number Theory |  | yes |
 | 386 | [`Erdos1198.erdos_1198.variants.hindman`](https://lefttosolve.com/p/Erdos1198.erdos_1198.variants.hindman) | Erdős Problem 1198 — hindman | known | Combinatorics, Number Theory |  | yes |
-| 387 | [`Erdos1199.erdos_1199`](https://lefttosolve.com/p/Erdos1199.erdos_1199) | Erdős Problem 1199 | open | Combinatorics |  |  |
+| 387 | [`Erdos1199.erdos_1199`](https://lefttosolve.com/p/Erdos1199.erdos_1199) | Erdős Problem 1199 | open | Combinatorics |  | yes |
 | 388 | [`Erdos12.erdos_12.parts.iii`](https://lefttosolve.com/p/Erdos12.erdos_12.parts.iii) | Erdős Problem 12 — iii | open | Number Theory |  |  |
-| 389 | [`Erdos12.erdos_12.variants.baier`](https://lefttosolve.com/p/Erdos12.erdos_12.variants.baier) | Erdős Problem 12 — baier | known | Number Theory |  |  |
-| 390 | [`Erdos12.erdos_12.variants.erdos_sarkozy`](https://lefttosolve.com/p/Erdos12.erdos_12.variants.erdos_sarkozy) | Erdős Problem 12 — erdos sarkozy | known | Number Theory |  |  |
-| 391 | [`Erdos12.erdos_12.variants.erdos_sarkozy_density_0`](https://lefttosolve.com/p/Erdos12.erdos_12.variants.erdos_sarkozy_density_0) | Erdős Problem 12 — erdos sarkozy density 0 | known | Number Theory |  |  |
-| 392 | [`Erdos12.erdos_12.variants.example`](https://lefttosolve.com/p/Erdos12.erdos_12.variants.example) | Erdős Problem 12 — example | known | Number Theory |  |  |
-| 393 | [`Erdos12.erdos_12.variants.schoen`](https://lefttosolve.com/p/Erdos12.erdos_12.variants.schoen) | Erdős Problem 12 — schoen | known | Number Theory |  |  |
+| 389 | [`Erdos12.erdos_12.variants.baier`](https://lefttosolve.com/p/Erdos12.erdos_12.variants.baier) | Erdős Problem 12 — baier | known | Number Theory |  | yes |
+| 390 | [`Erdos12.erdos_12.variants.erdos_sarkozy`](https://lefttosolve.com/p/Erdos12.erdos_12.variants.erdos_sarkozy) | Erdős Problem 12 — erdos sarkozy | known | Number Theory |  | yes |
+| 391 | [`Erdos12.erdos_12.variants.erdos_sarkozy_density_0`](https://lefttosolve.com/p/Erdos12.erdos_12.variants.erdos_sarkozy_density_0) | Erdős Problem 12 — erdos sarkozy density 0 | known | Number Theory |  | yes |
+| 392 | [`Erdos12.erdos_12.variants.example`](https://lefttosolve.com/p/Erdos12.erdos_12.variants.example) | Erdős Problem 12 — example | known | Number Theory |  | yes |
+| 393 | [`Erdos12.erdos_12.variants.schoen`](https://lefttosolve.com/p/Erdos12.erdos_12.variants.schoen) | Erdős Problem 12 — schoen | known | Number Theory |  | yes |
 | 394 | [`Erdos120.erdos_120`](https://lefttosolve.com/p/Erdos120.erdos_120) | Erdős Problem 120 | open | Combinatorics, Measure & Integration | $100 |  |
 | 395 | [`Erdos120.erdos_120.variants.finite_set`](https://lefttosolve.com/p/Erdos120.erdos_120.variants.finite_set) | Erdős Problem 120 — finite set | known | Combinatorics, Measure & Integration | $100 | yes |
 | 396 | [`Erdos1201.erdos_1201`](https://lefttosolve.com/p/Erdos1201.erdos_1201) | Erdős Problem 1201 | open | Number Theory |  |  |
 | 397 | [`Erdos1201.erdos_1201.variants.epsilon_half`](https://lefttosolve.com/p/Erdos1201.erdos_1201.variants.epsilon_half) | Erdős Problem 1201 — epsilon half | known | Number Theory |  | yes |
 | 398 | [`Erdos1203.erdos_1203`](https://lefttosolve.com/p/Erdos1203.erdos_1203) | Erdős Problem 1203 | open | Number Theory |  |  |
-| 399 | [`Erdos1203.erdos_1203.variants.lower_bound`](https://lefttosolve.com/p/Erdos1203.erdos_1203.variants.lower_bound) | Erdős Problem 1203 — lower bound | known | Number Theory |  |  |
+| 399 | [`Erdos1203.erdos_1203.variants.lower_bound`](https://lefttosolve.com/p/Erdos1203.erdos_1203.variants.lower_bound) | Erdős Problem 1203 — lower bound | known | Number Theory |  | yes |
 | 400 | [`Erdos1204.erdos_1204.parts.i`](https://lefttosolve.com/p/Erdos1204.erdos_1204.parts.i) | Erdős Problem 1204 — i | open | Number Theory |  |  |
 | 401 | [`Erdos1204.erdos_1204.parts.ii`](https://lefttosolve.com/p/Erdos1204.erdos_1204.parts.ii) | Erdős Problem 1204 — ii | open | Number Theory |  |  |
 | 402 | [`Erdos1204.erdos_1204.variants.A_lower`](https://lefttosolve.com/p/Erdos1204.erdos_1204.variants.A_lower) | Erdős Problem 1204 — A lower | known | Number Theory |  | yes |
@@ -426,7 +426,7 @@ Back to [all programs](../PROGRAMS.md).
 | 404 | [`Erdos1204.erdos_1204.variants.B_upper`](https://lefttosolve.com/p/Erdos1204.erdos_1204.variants.B_upper) | Erdős Problem 1204 — B upper | known | Number Theory |  | yes |
 | 405 | [`Erdos1206.erdos_1206.parts.i`](https://lefttosolve.com/p/Erdos1206.erdos_1206.parts.i) | Erdős Problem 1206 — i | open | Combinatorics, Number Theory |  |  |
 | 406 | [`Erdos1206.erdos_1206.parts.ii`](https://lefttosolve.com/p/Erdos1206.erdos_1206.parts.ii) | Erdős Problem 1206 — ii | open | Combinatorics, Number Theory |  |  |
-| 407 | [`Erdos1207.erdos_1207`](https://lefttosolve.com/p/Erdos1207.erdos_1207) | Erdős Problem 1207 | known | Convex & Discrete Geometry |  |  |
+| 407 | [`Erdos1207.erdos_1207`](https://lefttosolve.com/p/Erdos1207.erdos_1207) | Erdős Problem 1207 | known | Convex & Discrete Geometry |  | yes |
 | 408 | [`Erdos1209.erdos_1209.parts.iii.b`](https://lefttosolve.com/p/Erdos1209.erdos_1209.parts.iii.b) | Erdős Problem 1209 | open | Number Theory |  |  |
 | 409 | [`Erdos1209.erdos_1209.parts.iii.c`](https://lefttosolve.com/p/Erdos1209.erdos_1209.parts.iii.c) | Erdős Problem 1209 — c | open | Number Theory |  |  |
 | 410 | [`Erdos1209.erdos_1209.parts.iii.d`](https://lefttosolve.com/p/Erdos1209.erdos_1209.parts.iii.d) | Erdős Problem 1209 | open | Number Theory |  |  |
@@ -443,7 +443,7 @@ Back to [all programs](../PROGRAMS.md).
 | 421 | [`Erdos1221.erdos_1221.variants.r_one`](https://lefttosolve.com/p/Erdos1221.erdos_1221.variants.r_one) | Erdős Problem 1221 — r one | known | Number Theory |  | yes |
 | 422 | [`Erdos1221.erdos_1221.variants.smallLambda_le`](https://lefttosolve.com/p/Erdos1221.erdos_1221.variants.smallLambda_le) | Erdős Problem 1221 — smallLambda le | known | Number Theory |  | yes |
 | 423 | [`Erdos123.erdos_123.variants.erdos_lewin_3_5_7`](https://lefttosolve.com/p/Erdos123.erdos_123.variants.erdos_lewin_3_5_7) | Erdős Problem 123 — erdos lewin 3 5 7 | known | Number Theory | $250 | yes |
-| 424 | [`Erdos123.erdos_123.variants.powers_2_3_5_snug`](https://lefttosolve.com/p/Erdos123.erdos_123.variants.powers_2_3_5_snug) | Erdős Problem 123 — powers 2 3 5 snug | open | Number Theory | $250 |  |
+| 424 | [`Erdos123.erdos_123.variants.powers_2_3_5_snug`](https://lefttosolve.com/p/Erdos123.erdos_123.variants.powers_2_3_5_snug) | Erdős Problem 123 — powers 2 3 5 snug | open | Number Theory | $250 | yes |
 | 425 | [`Erdos124.erdos124.melfi_construction`](https://lefttosolve.com/p/Erdos124.erdos124.melfi_construction) | Erdős Problem 124 — melfi construction | known | Number Theory |  | yes |
 | 426 | [`Erdos124.erdos124.ne_zero`](https://lefttosolve.com/p/Erdos124.erdos124.ne_zero) | Erdős Problem 124 — ne zero | open | Number Theory |  |  |
 | 427 | [`Erdos124.erdos124.ne_zero_three_four_seven`](https://lefttosolve.com/p/Erdos124.erdos124.ne_zero_three_four_seven) | Erdős Problem 124 — ne zero three four seven | known | Number Theory |  | yes |
@@ -456,15 +456,15 @@ Back to [all programs](../PROGRAMS.md).
 | 434 | [`Erdos127.erdos_127.variants.alon_upper`](https://lefttosolve.com/p/Erdos127.erdos_127.variants.alon_upper) | Erdős Problem 127 — alon upper | known | Combinatorics |  | yes |
 | 435 | [`Erdos128.erdos_128`](https://lefttosolve.com/p/Erdos128.erdos_128) | Erdős Problem 128 | open | Combinatorics | $250 |  |
 | 436 | [`Erdos13.erdos_13.variants.general`](https://lefttosolve.com/p/Erdos13.erdos_13.variants.general) | Erdős Problem 13 — general | open | Combinatorics, Number Theory | $100 |  |
-| 437 | [`Erdos131.erdos_131.variants.elrss`](https://lefttosolve.com/p/Erdos131.erdos_131.variants.elrss) | Erdős Problem 131 — elrss | known | Number Theory |  |  |
+| 437 | [`Erdos131.erdos_131.variants.elrss`](https://lefttosolve.com/p/Erdos131.erdos_131.variants.elrss) | Erdős Problem 131 — elrss | known | Number Theory |  | yes |
 | 438 | [`Erdos131.erdos_131.variants.pham_zakharov`](https://lefttosolve.com/p/Erdos131.erdos_131.variants.pham_zakharov) | Erdős Problem 131 — pham zakharov | known | Number Theory |  |  |
 | 439 | [`Erdos133.erdos_133.variants.asymptotic`](https://lefttosolve.com/p/Erdos133.erdos_133.variants.asymptotic) | Erdős Problem 133 — asymptotic | open | Combinatorics |  |  |
-| 440 | [`Erdos133.erdos_133.variants.furedi_seress`](https://lefttosolve.com/p/Erdos133.erdos_133.variants.furedi_seress) | Erdős Problem 133 — furedi seress | known | Combinatorics |  |  |
-| 441 | [`Erdos133.erdos_133.variants.hanson_seyffarth`](https://lefttosolve.com/p/Erdos133.erdos_133.variants.hanson_seyffarth) | Erdős Problem 133 — hanson seyffarth | known | Combinatorics |  |  |
+| 440 | [`Erdos133.erdos_133.variants.furedi_seress`](https://lefttosolve.com/p/Erdos133.erdos_133.variants.furedi_seress) | Erdős Problem 133 — furedi seress | known | Combinatorics |  | yes |
+| 441 | [`Erdos133.erdos_133.variants.hanson_seyffarth`](https://lefttosolve.com/p/Erdos133.erdos_133.variants.hanson_seyffarth) | Erdős Problem 133 — hanson seyffarth | known | Combinatorics |  | yes |
 | 442 | [`Erdos133.erdos_133.variants.lower_bound`](https://lefttosolve.com/p/Erdos133.erdos_133.variants.lower_bound) | Erdős Problem 133 — lower bound | known | Combinatorics |  | yes |
 | 443 | [`Erdos137.erdos_137`](https://lefttosolve.com/p/Erdos137.erdos_137) | Erdős Problem 137 | open | Number Theory |  |  |
 | 444 | [`Erdos137.erdos_137.variants.multiple_powerful_factors`](https://lefttosolve.com/p/Erdos137.erdos_137.variants.multiple_powerful_factors) | Erdős Problem 137 — multiple powerful factors | open | Number Theory |  |  |
-| 445 | [`Erdos137.erdos_137.variants.perfect_power`](https://lefttosolve.com/p/Erdos137.erdos_137.variants.perfect_power) | Erdős Problem 137 — perfect power | known | Number Theory |  |  |
+| 445 | [`Erdos137.erdos_137.variants.perfect_power`](https://lefttosolve.com/p/Erdos137.erdos_137.variants.perfect_power) | Erdős Problem 137 — perfect power | known | Number Theory |  | yes |
 | 446 | [`Erdos138.erdos_138.variants.prime`](https://lefttosolve.com/p/Erdos138.erdos_138.variants.prime) | Erdős Problem 138 — prime | known | Number Theory | $500 | yes |
 | 447 | [`Erdos138.erdos_138.variants.quotient`](https://lefttosolve.com/p/Erdos138.erdos_138.variants.quotient) | Erdős Problem 138 — quotient | open | Number Theory | $500 |  |
 | 448 | [`Erdos138.erdos_138.variants.upper`](https://lefttosolve.com/p/Erdos138.erdos_138.variants.upper) | Erdős Problem 138 — upper | known | Number Theory | $500 |  |
@@ -481,21 +481,21 @@ Back to [all programs](../PROGRAMS.md).
 | 459 | [`Erdos142.erdos_142.variants.lower`](https://lefttosolve.com/p/Erdos142.erdos_142.variants.lower) | Erdős Problem 142 — lower | open | Number Theory | $10000 |  |
 | 460 | [`Erdos142.erdos_142.variants.three`](https://lefttosolve.com/p/Erdos142.erdos_142.variants.three) | Erdős Problem 142 — three | open | Number Theory | $10000 |  |
 | 461 | [`Erdos143.erdos_143.parts.i`](https://lefttosolve.com/p/Erdos143.erdos_143.parts.i) | Erdős Problem 143 — i | known | Number Theory | $500 |  |
-| 462 | [`Erdos143.erdos_143.parts.ii`](https://lefttosolve.com/p/Erdos143.erdos_143.parts.ii) | Erdős Problem 143 — ii | known | Number Theory | $500 |  |
+| 462 | [`Erdos143.erdos_143.parts.ii`](https://lefttosolve.com/p/Erdos143.erdos_143.parts.ii) | Erdős Problem 143 — ii | known | Number Theory | $500 | yes |
 | 463 | [`Erdos145.erdos_145`](https://lefttosolve.com/p/Erdos145.erdos_145) | Erdős Problem 145 | open | Number Theory |  |  |
 | 464 | [`Erdos145.erdos_145.variants.le_three`](https://lefttosolve.com/p/Erdos145.erdos_145.variants.le_three) | Erdős Problem 145 — le three | known | Number Theory |  |  |
-| 465 | [`Erdos145.erdos_145.variants.le_two`](https://lefttosolve.com/p/Erdos145.erdos_145.variants.le_two) | Erdős Problem 145 — le two | known | Number Theory |  |  |
+| 465 | [`Erdos145.erdos_145.variants.le_two`](https://lefttosolve.com/p/Erdos145.erdos_145.variants.le_two) | Erdős Problem 145 — le two | known | Number Theory |  | yes |
 | 466 | [`Erdos145.erdos_145.variants.lt_eleven_thirds`](https://lefttosolve.com/p/Erdos145.erdos_145.variants.lt_eleven_thirds) | Erdős Problem 145 — lt eleven thirds | known | Number Theory |  |  |
 | 467 | [`Erdos146.erdos_146`](https://lefttosolve.com/p/Erdos146.erdos_146) | Erdős Problem 146 | known | Combinatorics | $500 | yes |
-| 468 | [`Erdos147.erdos_147.variants.cubic`](https://lefttosolve.com/p/Erdos147.erdos_147.variants.cubic) | Erdős Problem 147 — cubic | known | Combinatorics | $500 |  |
+| 468 | [`Erdos147.erdos_147.variants.cubic`](https://lefttosolve.com/p/Erdos147.erdos_147.variants.cubic) | Erdős Problem 147 — cubic | known | Combinatorics | $500 | yes |
 | 469 | [`Erdos147.erdos_147.variants.janzer_conjecture`](https://lefttosolve.com/p/Erdos147.erdos_147.variants.janzer_conjecture) | Erdős Problem 147 — janzer conjecture | open | Combinatorics | $500 |  |
-| 470 | [`Erdos147.erdos_147.variants.janzer_even`](https://lefttosolve.com/p/Erdos147.erdos_147.variants.janzer_even) | Erdős Problem 147 — janzer even | known | Combinatorics | $500 |  |
+| 470 | [`Erdos147.erdos_147.variants.janzer_even`](https://lefttosolve.com/p/Erdos147.erdos_147.variants.janzer_even) | Erdős Problem 147 — janzer even | known | Combinatorics | $500 | yes |
 | 471 | [`Erdos148.erdos_148`](https://lefttosolve.com/p/Erdos148.erdos_148) | Erdős Problem 148 | open | Number Theory |  |  |
 | 472 | [`Erdos148.erdos_148.variants.lower_bound`](https://lefttosolve.com/p/Erdos148.erdos_148.variants.lower_bound) | Erdős Problem 148 — lower bound | known | Number Theory |  |  |
 | 473 | [`Erdos148.erdos_148.variants.upper_bound`](https://lefttosolve.com/p/Erdos148.erdos_148.variants.upper_bound) | Erdős Problem 148 — upper bound | known | Number Theory |  |  |
 | 474 | [`Erdos15.erdos_15`](https://lefttosolve.com/p/Erdos15.erdos_15) | Erdős Problem 15: Convergence of Series with Primes | open | Number Theory |  |  |
 | 475 | [`Erdos150.erdos_150.variants.erdos_nesetril`](https://lefttosolve.com/p/Erdos150.erdos_150.variants.erdos_nesetril) | Erdős Problem 150 — erdos nesetril | known | Combinatorics |  | yes |
-| 476 | [`Erdos150.erdos_150.variants.lower_bound`](https://lefttosolve.com/p/Erdos150.erdos_150.variants.lower_bound) | Erdős Problem 150 — lower bound | known | Combinatorics |  |  |
+| 476 | [`Erdos150.erdos_150.variants.lower_bound`](https://lefttosolve.com/p/Erdos150.erdos_150.variants.lower_bound) | Erdős Problem 150 — lower bound | known | Combinatorics |  | yes |
 | 477 | [`Erdos150.erdos_150.variants.seymour`](https://lefttosolve.com/p/Erdos150.erdos_150.variants.seymour) | Erdős Problem 150 — seymour | known | Combinatorics |  | yes |
 | 478 | [`Erdos150.erdos_150.variants.upper_bound`](https://lefttosolve.com/p/Erdos150.erdos_150.variants.upper_bound) | Erdős Problem 150 — upper bound | known | Combinatorics |  | yes |
 | 479 | [`Erdos151.erdos_151`](https://lefttosolve.com/p/Erdos151.erdos_151) | Erdős Problem 151 | open | Combinatorics |  |  |
@@ -504,9 +504,9 @@ Back to [all programs](../PROGRAMS.md).
 | 482 | [`Erdos151.erdos_151.variants.sqrt_bound`](https://lefttosolve.com/p/Erdos151.erdos_151.variants.sqrt_bound) | Erdős Problem 151 — sqrt bound | known | Combinatorics |  | yes |
 | 483 | [`Erdos153.erdos_153`](https://lefttosolve.com/p/Erdos153.erdos_153) | Erdős Problem 153 | open | Combinatorics |  |  |
 | 484 | [`Erdos155.erdos_155`](https://lefttosolve.com/p/Erdos155.erdos_155) | Erdős Problem 155 | open | Combinatorics |  |  |
-| 485 | [`Erdos156.erdos_156`](https://lefttosolve.com/p/Erdos156.erdos_156) | Erdős Problem 156 | open | Combinatorics |  |  |
+| 485 | [`Erdos156.erdos_156`](https://lefttosolve.com/p/Erdos156.erdos_156) | Erdős Problem 156 | open | Combinatorics |  | yes |
 | 486 | [`Erdos156.erdos_156.variants.greedy_lower_bound`](https://lefttosolve.com/p/Erdos156.erdos_156.variants.greedy_lower_bound) | Erdős Problem 156 — greedy lower bound | known | Combinatorics |  | yes |
-| 487 | [`Erdos156.erdos_156.variants.ruzsa_upper_bound`](https://lefttosolve.com/p/Erdos156.erdos_156.variants.ruzsa_upper_bound) | Erdős Problem 156 — ruzsa upper bound | known | Combinatorics |  |  |
+| 487 | [`Erdos156.erdos_156.variants.ruzsa_upper_bound`](https://lefttosolve.com/p/Erdos156.erdos_156.variants.ruzsa_upper_bound) | Erdős Problem 156 — ruzsa upper bound | known | Combinatorics |  | yes |
 | 488 | [`Erdos158.erdos_158`](https://lefttosolve.com/p/Erdos158.erdos_158) | Erdős Problem 158 | open | Combinatorics |  |  |
 | 489 | [`Erdos158.erdos_158.variants.isSidon-prime`](https://lefttosolve.com/p/Erdos158.erdos_158.variants.isSidon-prime) | Erdős Problem 158 — isSidon' | known | Combinatorics |  | yes |
 | 490 | [`Erdos159.erdos_159`](https://lefttosolve.com/p/Erdos159.erdos_159) | Erdős Problem 159 | open | Combinatorics | $100 |  |
@@ -514,7 +514,7 @@ Back to [all programs](../PROGRAMS.md).
 | 492 | [`Erdos160.erdos_160.better_lower`](https://lefttosolve.com/p/Erdos160.erdos_160.better_lower) | Erdős Problem 160 — better lower | open | Combinatorics, Geometry |  |  |
 | 493 | [`Erdos160.erdos_160.better_upper`](https://lefttosolve.com/p/Erdos160.erdos_160.better_upper) | Erdős Problem 160 — better upper | open | Combinatorics, Geometry |  |  |
 | 494 | [`Erdos160.erdos_160.known_upper`](https://lefttosolve.com/p/Erdos160.erdos_160.known_upper) | Erdős Problem 160 — known upper | known | Combinatorics, Geometry |  | yes |
-| 495 | [`Erdos160.erdos_160.variants.known_lower`](https://lefttosolve.com/p/Erdos160.erdos_160.variants.known_lower) | Erdős Problem 160 — known lower | known | Combinatorics, Geometry |  |  |
+| 495 | [`Erdos160.erdos_160.variants.known_lower`](https://lefttosolve.com/p/Erdos160.erdos_160.variants.known_lower) | Erdős Problem 160 — known lower | known | Combinatorics, Geometry |  | yes |
 | 496 | [`Erdos161.erdos_161.parts.i`](https://lefttosolve.com/p/Erdos161.erdos_161.parts.i) | Erdős Problem 161 — i | open | Combinatorics | $500 |  |
 | 497 | [`Erdos161.erdos_161.parts.ii`](https://lefttosolve.com/p/Erdos161.erdos_161.parts.ii) | Erdős Problem 161 — ii | open | Combinatorics | $500 |  |
 | 498 | [`Erdos162.erdos_162`](https://lefttosolve.com/p/Erdos162.erdos_162) | Erdős Problem 162 | open | Combinatorics |  |  |
@@ -523,33 +523,33 @@ Back to [all programs](../PROGRAMS.md).
 | 501 | [`Erdos165.erdos_165.variants.conjecture`](https://lefttosolve.com/p/Erdos165.erdos_165.variants.conjecture) | Erdős Problem 165 — conjecture | open | Combinatorics | $250 |  |
 | 502 | [`Erdos165.erdos_165.variants.lower`](https://lefttosolve.com/p/Erdos165.erdos_165.variants.lower) | Erdős Problem 165 — lower | known | Combinatorics | $250 |  |
 | 503 | [`Erdos165.erdos_165.variants.upper`](https://lefttosolve.com/p/Erdos165.erdos_165.variants.upper) | Erdős Problem 165 — upper | known | Combinatorics | $250 | yes |
-| 504 | [`Erdos166.erdos_166.variants.mattheus_verstraete`](https://lefttosolve.com/p/Erdos166.erdos_166.variants.mattheus_verstraete) | Erdős Problem 166 — mattheus verstraete | known | Combinatorics | $250 |  |
+| 504 | [`Erdos166.erdos_166.variants.mattheus_verstraete`](https://lefttosolve.com/p/Erdos166.erdos_166.variants.mattheus_verstraete) | Erdős Problem 166 — mattheus verstraete | known | Combinatorics | $250 | yes |
 | 505 | [`Erdos168.erdos_168.parts.i`](https://lefttosolve.com/p/Erdos168.erdos_168.parts.i) | Erdős Problem 168 — i | open | Number Theory |  |  |
 | 506 | [`Erdos168.erdos_168.parts.ii`](https://lefttosolve.com/p/Erdos168.erdos_168.parts.ii) | Erdős Problem 168 — ii | open | Combinatorics, Number Theory |  |  |
 | 507 | [`Erdos168.erdos_168.variants.limit_exists`](https://lefttosolve.com/p/Erdos168.erdos_168.variants.limit_exists) | Erdős Problem 168 — limit exists | known | Combinatorics, Number Theory |  | yes |
 | 508 | [`Erdos17.erdos_17`](https://lefttosolve.com/p/Erdos17.erdos_17) | Erdős Problem 17. | open | Number Theory |  |  |
-| 509 | [`Erdos17.erdos_17.variants.upper_BES`](https://lefttosolve.com/p/Erdos17.erdos_17.variants.upper_BES) | Erdős Problem 17 — upper BES | known | Number Theory |  |  |
+| 509 | [`Erdos17.erdos_17.variants.upper_BES`](https://lefttosolve.com/p/Erdos17.erdos_17.variants.upper_BES) | Erdős Problem 17 — upper BES | known | Number Theory |  | yes |
 | 510 | [`Erdos17.erdos_17.variants.upper_Elsholtz`](https://lefttosolve.com/p/Erdos17.erdos_17.variants.upper_Elsholtz) | Erdős Problem 17 — upper Elsholtz | known | Number Theory |  |  |
 | 511 | [`Erdos170.erdos170`](https://lefttosolve.com/p/Erdos170.erdos170) | Erdős Problem 170 | open | Combinatorics |  |  |
-| 512 | [`Erdos170.erdos170.existing_bounds`](https://lefttosolve.com/p/Erdos170.erdos170.existing_bounds) | Erdős Problem 170 — existing bounds | known | Combinatorics |  |  |
+| 512 | [`Erdos170.erdos170.existing_bounds`](https://lefttosolve.com/p/Erdos170.erdos170.existing_bounds) | Erdős Problem 170 — existing bounds | known | Combinatorics |  | yes |
 | 513 | [`Erdos173.erdos_173`](https://lefttosolve.com/p/Erdos173.erdos_173) | Erdős Problem 173 | open | Combinatorics, Geometry |  |  |
 | 514 | [`Erdos173.erdos_173.variants.equilateral_exception`](https://lefttosolve.com/p/Erdos173.erdos_173.variants.equilateral_exception) | Erdős Problem 173 — equilateral exception | known | Combinatorics, Geometry |  | yes |
 | 515 | [`Erdos173.erdos_173.variants.right_triangle`](https://lefttosolve.com/p/Erdos173.erdos_173.variants.right_triangle) | Erdős Problem 173 — right triangle | known | Combinatorics, Geometry |  | yes |
 | 516 | [`Erdos174.erdos_174`](https://lefttosolve.com/p/Erdos174.erdos_174) | Erdős Problem 174 | open | Combinatorics, Convex & Discrete Geometry |  |  |
 | 517 | [`Erdos174.erdos_174.variants.brick`](https://lefttosolve.com/p/Erdos174.erdos_174.variants.brick) | Erdős Problem 174 — brick | known | Combinatorics, Convex & Discrete Geometry |  | yes |
-| 518 | [`Erdos174.erdos_174.variants.graham`](https://lefttosolve.com/p/Erdos174.erdos_174.variants.graham) | Erdős Problem 174 — graham | open | Combinatorics, Convex & Discrete Geometry |  |  |
-| 519 | [`Erdos174.erdos_174.variants.leader_russell_walters`](https://lefttosolve.com/p/Erdos174.erdos_174.variants.leader_russell_walters) | Erdős Problem 174 — leader russell walters | open | Combinatorics, Convex & Discrete Geometry |  |  |
-| 520 | [`Erdos174.erdos_174.variants.simplex`](https://lefttosolve.com/p/Erdos174.erdos_174.variants.simplex) | Erdős Problem 174 — simplex | known | Combinatorics, Convex & Discrete Geometry |  |  |
+| 518 | [`Erdos174.erdos_174.variants.graham`](https://lefttosolve.com/p/Erdos174.erdos_174.variants.graham) | Erdős Problem 174 — graham | open | Combinatorics, Convex & Discrete Geometry |  | yes |
+| 519 | [`Erdos174.erdos_174.variants.leader_russell_walters`](https://lefttosolve.com/p/Erdos174.erdos_174.variants.leader_russell_walters) | Erdős Problem 174 — leader russell walters | open | Combinatorics, Convex & Discrete Geometry |  | yes |
+| 520 | [`Erdos174.erdos_174.variants.simplex`](https://lefttosolve.com/p/Erdos174.erdos_174.variants.simplex) | Erdős Problem 174 — simplex | known | Combinatorics, Convex & Discrete Geometry |  | yes |
 | 521 | [`Erdos174.erdos_174.variants.spherical`](https://lefttosolve.com/p/Erdos174.erdos_174.variants.spherical) | Erdős Problem 174 — spherical | known | Combinatorics, Convex & Discrete Geometry |  | yes |
 | 522 | [`Erdos174.erdos_174.variants.trapezoid`](https://lefttosolve.com/p/Erdos174.erdos_174.variants.trapezoid) | Erdős Problem 174 — trapezoid | known | Combinatorics, Convex & Discrete Geometry |  |  |
 | 523 | [`Erdos18.erdos_18_vose`](https://lefttosolve.com/p/Erdos18.erdos_18_vose) | Vose's Theorem. | known | Number Theory | $250 | yes |
-| 524 | [`Erdos18.erdos_18a`](https://lefttosolve.com/p/Erdos18.erdos_18a) | Conjecture 1. | open | Number Theory | $250 |  |
-| 525 | [`Erdos18.erdos_18b`](https://lefttosolve.com/p/Erdos18.erdos_18b) | Conjecture 2. | open | Number Theory | $250 |  |
-| 526 | [`Erdos18.erdos_18c`](https://lefttosolve.com/p/Erdos18.erdos_18c) | Conjecture 3. | open | Number Theory | $250 |  |
+| 524 | [`Erdos18.erdos_18a`](https://lefttosolve.com/p/Erdos18.erdos_18a) | Conjecture 1. | open | Number Theory | $250 | yes |
+| 525 | [`Erdos18.erdos_18b`](https://lefttosolve.com/p/Erdos18.erdos_18b) | Conjecture 2. | open | Number Theory | $250 | yes |
+| 526 | [`Erdos18.erdos_18c`](https://lefttosolve.com/p/Erdos18.erdos_18c) | Conjecture 3. | open | Number Theory | $250 | yes |
 | 527 | [`Erdos180.erdos_180`](https://lefttosolve.com/p/Erdos180.erdos_180) | Erdős Problem 180 | known | Combinatorics |  | yes |
 | 528 | [`Erdos184.erdos_184.variants.bucic_montgomery`](https://lefttosolve.com/p/Erdos184.erdos_184.variants.bucic_montgomery) | Erdős Problem 184 — bucic montgomery | known | Combinatorics |  |  |
 | 529 | [`Erdos184.erdos_184.variants.conlon_fox_sudakov`](https://lefttosolve.com/p/Erdos184.erdos_184.variants.conlon_fox_sudakov) | Erdős Problem 184 — conlon fox sudakov | known | Combinatorics |  |  |
-| 530 | [`Erdos184.erdos_184.variants.covering`](https://lefttosolve.com/p/Erdos184.erdos_184.variants.covering) | Erdős Problem 184 — covering | known | Combinatorics |  |  |
+| 530 | [`Erdos184.erdos_184.variants.covering`](https://lefttosolve.com/p/Erdos184.erdos_184.variants.covering) | Erdős Problem 184 — covering | known | Combinatorics |  | yes |
 | 531 | [`Erdos184.erdos_184.variants.n_log_n`](https://lefttosolve.com/p/Erdos184.erdos_184.variants.n_log_n) | Erdős Problem 184 — n log n | known | Combinatorics |  | yes |
 | 532 | [`Erdos185.erdos_185.variants.moser`](https://lefttosolve.com/p/Erdos185.erdos_185.variants.moser) | Erdős Problem 185 — moser | known | Combinatorics, Number Theory |  | yes |
 | 533 | [`Erdos186.erdos_186`](https://lefttosolve.com/p/Erdos186.erdos_186) | Erdős Problem 186 | known | Number Theory |  |  |
@@ -565,7 +565,7 @@ Back to [all programs](../PROGRAMS.md).
 | 543 | [`Erdos19.erdos_19.variants.kahn`](https://lefttosolve.com/p/Erdos19.erdos_19.variants.kahn) | Erdős Problem 19 — kahn | known | Combinatorics | $500 |  |
 | 544 | [`Erdos19.erdos_19.variants.large_n`](https://lefttosolve.com/p/Erdos19.erdos_19.variants.large_n) | Erdős Problem 19 — large n | known | Combinatorics | $500 |  |
 | 545 | [`Erdos19.erdos_19.variants.lt_ten`](https://lefttosolve.com/p/Erdos19.erdos_19.variants.lt_ten) | Erdős Problem 19 — lt ten | known | Combinatorics | $500 | yes |
-| 546 | [`Erdos191.erdos_191.variants.conlon_fox_sudakov`](https://lefttosolve.com/p/Erdos191.erdos_191.variants.conlon_fox_sudakov) | Erdős Problem 191 — conlon fox sudakov | known | Combinatorics |  |  |
+| 546 | [`Erdos191.erdos_191.variants.conlon_fox_sudakov`](https://lefttosolve.com/p/Erdos191.erdos_191.variants.conlon_fox_sudakov) | Erdős Problem 191 — conlon fox sudakov | known | Combinatorics |  | yes |
 | 547 | [`Erdos191.erdos_191.variants.rodl_upper`](https://lefttosolve.com/p/Erdos191.erdos_191.variants.rodl_upper) | Erdős Problem 191 — rodl upper | known | Combinatorics |  | yes |
 | 548 | [`Erdos191.erdos_191.variants.three_colours`](https://lefttosolve.com/p/Erdos191.erdos_191.variants.three_colours) | Erdős Problem 191 — three colours | known | Combinatorics |  | yes |
 | 549 | [`Erdos193.erdos_193_z2`](https://lefttosolve.com/p/Erdos193.erdos_193_z2) | Erdős Problem 193 | known | Combinatorics |  | yes |
@@ -579,9 +579,9 @@ Back to [all programs](../PROGRAMS.md).
 | 557 | [`Erdos200.erdos_200.variants.upper`](https://lefttosolve.com/p/Erdos200.erdos_200.variants.upper) | Erdős Problem 200 — upper | known | Combinatorics, Number Theory |  | yes |
 | 558 | [`Erdos202.erdos_202.variants.erdos_szemeredi`](https://lefttosolve.com/p/Erdos202.erdos_202.variants.erdos_szemeredi) | Erdős Problem 202 — erdos szemeredi | known | Combinatorics, Number Theory |  | yes |
 | 559 | [`Erdos203.erdos_203`](https://lefttosolve.com/p/Erdos203.erdos_203) | Erdős Problem 203 | open | Combinatorics |  |  |
-| 560 | [`Erdos205.erdos_205.parts.i`](https://lefttosolve.com/p/Erdos205.erdos_205.parts.i) | Erdős Problem 205 — i | known | Number Theory |  |  |
-| 561 | [`Erdos205.erdos_205.parts.ii`](https://lefttosolve.com/p/Erdos205.erdos_205.parts.ii) | Erdős Problem 205 — ii | known | Number Theory |  |  |
-| 562 | [`Erdos205.erdos_205.parts.iii`](https://lefttosolve.com/p/Erdos205.erdos_205.parts.iii) | Erdős Problem 205 — iii | known | Number Theory |  |  |
+| 560 | [`Erdos205.erdos_205.parts.i`](https://lefttosolve.com/p/Erdos205.erdos_205.parts.i) | Erdős Problem 205 — i | known | Number Theory |  | yes |
+| 561 | [`Erdos205.erdos_205.parts.ii`](https://lefttosolve.com/p/Erdos205.erdos_205.parts.ii) | Erdős Problem 205 — ii | known | Number Theory |  | yes |
+| 562 | [`Erdos205.erdos_205.parts.iii`](https://lefttosolve.com/p/Erdos205.erdos_205.parts.iii) | Erdős Problem 205 — iii | known | Number Theory |  | yes |
 | 563 | [`Erdos205.erdos_205.variants.odd_counterexamples`](https://lefttosolve.com/p/Erdos205.erdos_205.variants.odd_counterexamples) | Erdős Problem 205 — odd counterexamples | open | Number Theory |  |  |
 | 564 | [`Erdos207.erdos_207`](https://lefttosolve.com/p/Erdos207.erdos_207) | Erdős Problem 207 | known | Combinatorics |  |  |
 | 565 | [`Erdos208.erdos_208.parts.i`](https://lefttosolve.com/p/Erdos208.erdos_208.parts.i) | Erdős Problem 208 — i | open | Number Theory |  |  |
@@ -589,20 +589,20 @@ Back to [all programs](../PROGRAMS.md).
 | 567 | [`Erdos208.erdos_208.variants.log_bound`](https://lefttosolve.com/p/Erdos208.erdos_208.variants.log_bound) | Erdős Problem 208 — log bound | open | Number Theory |  |  |
 | 568 | [`Erdos21.erdos_21.variants.lower`](https://lefttosolve.com/p/Erdos21.erdos_21.variants.lower) | Erdős Problem 21 — lower | known | Combinatorics | $500 | yes |
 | 569 | [`Erdos21.erdos_21.variants.small_values`](https://lefttosolve.com/p/Erdos21.erdos_21.variants.small_values) | Erdős Problem 21 — small values | known | Combinatorics | $500 | yes |
-| 570 | [`Erdos21.erdos_21.variants.three_n`](https://lefttosolve.com/p/Erdos21.erdos_21.variants.three_n) | Erdős Problem 21 — three n | open | Combinatorics | $500 |  |
-| 571 | [`Erdos210.erdos_210.lower_bound`](https://lefttosolve.com/p/Erdos210.erdos_210.lower_bound) | Erdős Problem 210 — lower bound | known | Combinatorics, Geometry |  |  |
+| 570 | [`Erdos21.erdos_21.variants.three_n`](https://lefttosolve.com/p/Erdos21.erdos_21.variants.three_n) | Erdős Problem 21 — three n | open | Combinatorics | $500 | yes |
+| 571 | [`Erdos210.erdos_210.lower_bound`](https://lefttosolve.com/p/Erdos210.erdos_210.lower_bound) | Erdős Problem 210 — lower bound | known | Combinatorics, Geometry |  | yes |
 | 572 | [`Erdos210.erdos_210.parts.i`](https://lefttosolve.com/p/Erdos210.erdos_210.parts.i) | Erdős Problem 210 — i | known | Combinatorics, Geometry |  | yes |
 | 573 | [`Erdos210.erdos_210.parts.ii`](https://lefttosolve.com/p/Erdos210.erdos_210.parts.ii) | Erdős Problem 210 — ii | known | Combinatorics, Geometry |  | yes |
-| 574 | [`Erdos210.erdos_210.variants.csima_sawyer`](https://lefttosolve.com/p/Erdos210.erdos_210.variants.csima_sawyer) | Erdős Problem 210 — csima sawyer | known | Combinatorics, Geometry |  |  |
+| 574 | [`Erdos210.erdos_210.variants.csima_sawyer`](https://lefttosolve.com/p/Erdos210.erdos_210.variants.csima_sawyer) | Erdős Problem 210 — csima sawyer | known | Combinatorics, Geometry |  | yes |
 | 575 | [`Erdos210.erdos_210.variants.even_upper_bound`](https://lefttosolve.com/p/Erdos210.erdos_210.variants.even_upper_bound) | Erdős Problem 210 — even upper bound | known | Combinatorics, Geometry |  | yes |
 | 576 | [`Erdos210.erdos_210.variants.green_tao`](https://lefttosolve.com/p/Erdos210.erdos_210.variants.green_tao) | Erdős Problem 210 — green tao | known | Combinatorics, Geometry |  |  |
 | 577 | [`Erdos210.erdos_210.variants.green_tao_odd`](https://lefttosolve.com/p/Erdos210.erdos_210.variants.green_tao_odd) | Erdős Problem 210 — green tao odd | known | Combinatorics, Geometry |  |  |
-| 578 | [`Erdos210.erdos_210.variants.seven`](https://lefttosolve.com/p/Erdos210.erdos_210.variants.seven) | Erdős Problem 210 — seven | known | Combinatorics, Geometry |  |  |
+| 578 | [`Erdos210.erdos_210.variants.seven`](https://lefttosolve.com/p/Erdos210.erdos_210.variants.seven) | Erdős Problem 210 — seven | known | Combinatorics, Geometry |  | yes |
 | 579 | [`Erdos211.erdos_211.variants.one_sixth`](https://lefttosolve.com/p/Erdos211.erdos_211.variants.one_sixth) | Erdős Problem 211 — one sixth | open | Combinatorics, Convex & Discrete Geometry | $100 |  |
 | 580 | [`Erdos211.erdos_211.variants.sharpness`](https://lefttosolve.com/p/Erdos211.erdos_211.variants.sharpness) | Erdős Problem 211 — sharpness | known | Combinatorics, Convex & Discrete Geometry | $100 | yes |
 | 581 | [`Erdos212.erdos_212`](https://lefttosolve.com/p/Erdos212.erdos_212) | Erdős Problem 212 | open | Convex & Discrete Geometry |  |  |
 | 582 | [`Erdos213.erdos_213`](https://lefttosolve.com/p/Erdos213.erdos_213) | Erdős Problem 213 | open | Convex & Discrete Geometry |  |  |
-| 583 | [`Erdos213.erdos_213.variants.KK08`](https://lefttosolve.com/p/Erdos213.erdos_213.variants.KK08) | Erdős Problem 213 — KK08 | known | Convex & Discrete Geometry |  |  |
+| 583 | [`Erdos213.erdos_213.variants.KK08`](https://lefttosolve.com/p/Erdos213.erdos_213.variants.KK08) | Erdős Problem 213 — KK08 | known | Convex & Discrete Geometry |  | yes |
 | 584 | [`Erdos214.erdos_214.variants.bounds`](https://lefttosolve.com/p/Erdos214.erdos_214.variants.bounds) | Erdős Problem 214 — bounds | known | Combinatorics, Convex & Discrete Geometry |  | yes |
 | 585 | [`Erdos214.erdos_214.variants.csizmadia_toth`](https://lefttosolve.com/p/Erdos214.erdos_214.variants.csizmadia_toth) | Erdős Problem 214 — csizmadia toth | known | Combinatorics, Convex & Discrete Geometry |  | yes |
 | 586 | [`Erdos214.erdos_214.variants.egmrss`](https://lefttosolve.com/p/Erdos214.erdos_214.variants.egmrss) | Erdős Problem 214 — egmrss | known | Combinatorics, Convex & Discrete Geometry |  | yes |
@@ -612,10 +612,10 @@ Back to [all programs](../PROGRAMS.md).
 | 590 | [`Erdos218.erdos_218.variants.ge`](https://lefttosolve.com/p/Erdos218.erdos_218.variants.ge) | Erdős Problem 218 — ge | open | Number Theory |  |  |
 | 591 | [`Erdos218.erdos_218.variants.infinite_equal_prime_gap`](https://lefttosolve.com/p/Erdos218.erdos_218.variants.infinite_equal_prime_gap) | Erdős Problem 218 — infinite equal prime gap | open | Number Theory |  |  |
 | 592 | [`Erdos218.erdos_218.variants.le`](https://lefttosolve.com/p/Erdos218.erdos_218.variants.le) | Erdős Problem 218 | open | Number Theory |  |  |
-| 593 | [`Erdos22.erdos_22.variants.bollobas_erdos_lower`](https://lefttosolve.com/p/Erdos22.erdos_22.variants.bollobas_erdos_lower) | Erdős Problem 22 — bollobas erdos lower | known | Combinatorics |  |  |
+| 593 | [`Erdos22.erdos_22.variants.bollobas_erdos_lower`](https://lefttosolve.com/p/Erdos22.erdos_22.variants.bollobas_erdos_lower) | Erdős Problem 22 — bollobas erdos lower | known | Combinatorics |  | yes |
 | 594 | [`Erdos22.erdos_22.variants.fox_loh_zhao`](https://lefttosolve.com/p/Erdos22.erdos_22.variants.fox_loh_zhao) | Erdős Problem 22 — fox loh zhao | known | Combinatorics |  |  |
-| 595 | [`Erdos22.erdos_22.variants.szemeredi_upper`](https://lefttosolve.com/p/Erdos22.erdos_22.variants.szemeredi_upper) | Erdős Problem 22 — szemeredi upper | known | Combinatorics |  |  |
-| 596 | [`Erdos228.erdos_228`](https://lefttosolve.com/p/Erdos228.erdos_228) | Erdős Problem 228 | known | Approximation, Combinatorics, Field Theory |  |  |
+| 595 | [`Erdos22.erdos_22.variants.szemeredi_upper`](https://lefttosolve.com/p/Erdos22.erdos_22.variants.szemeredi_upper) | Erdős Problem 22 — szemeredi upper | known | Combinatorics |  | yes |
+| 596 | [`Erdos228.erdos_228`](https://lefttosolve.com/p/Erdos228.erdos_228) | Erdős Problem 228 | known | Approximation, Combinatorics, Field Theory |  | yes |
 | 597 | [`Erdos229.theorem_1`](https://lefttosolve.com/p/Erdos229.theorem_1) | Erdős Problem 229 | known | Complex Analysis |  | yes |
 | 598 | [`Erdos23.blowupC5_tight`](https://lefttosolve.com/p/Erdos23.blowupC5_tight) | Erdős Problem 23 — blowupC5 tight | warmup | Combinatorics |  | yes |
 | 599 | [`Erdos23.erdos_23`](https://lefttosolve.com/p/Erdos23.erdos_23) | Erdős Problem 23 — erdos 23 | open | Combinatorics |  |  |
@@ -623,10 +623,10 @@ Back to [all programs](../PROGRAMS.md).
 | 601 | [`Erdos23.erdos_23.variants.n5`](https://lefttosolve.com/p/Erdos23.erdos_23.variants.n5) | Erdős Problem 23 — n5 | known | Combinatorics |  |  |
 | 602 | [`Erdos23.erdos_23.variants.n5_tight`](https://lefttosolve.com/p/Erdos23.erdos_23.variants.n5_tight) | Erdős Problem 23 — n5 tight | known | Combinatorics |  | yes |
 | 603 | [`Erdos230.erdos_230.variants.ultraflat`](https://lefttosolve.com/p/Erdos230.erdos_230.variants.ultraflat) | Erdős Problem 230 — ultraflat | known | Complex Analysis, Harmonic Analysis |  |  |
-| 604 | [`Erdos232.erdos_232.variants.croft_lower_bound`](https://lefttosolve.com/p/Erdos232.erdos_232.variants.croft_lower_bound) | Erdős Problem 232 — croft lower bound | known | Convex & Discrete Geometry, Measure & Integration |  |  |
-| 605 | [`Erdos232.erdos_232.variants.hexagonal_lower_bound`](https://lefttosolve.com/p/Erdos232.erdos_232.variants.hexagonal_lower_bound) | Erdős Problem 232 — hexagonal lower bound | known | Convex & Discrete Geometry, Measure & Integration |  |  |
+| 604 | [`Erdos232.erdos_232.variants.croft_lower_bound`](https://lefttosolve.com/p/Erdos232.erdos_232.variants.croft_lower_bound) | Erdős Problem 232 — croft lower bound | known | Convex & Discrete Geometry, Measure & Integration |  | yes |
+| 605 | [`Erdos232.erdos_232.variants.hexagonal_lower_bound`](https://lefttosolve.com/p/Erdos232.erdos_232.variants.hexagonal_lower_bound) | Erdős Problem 232 — hexagonal lower bound | known | Convex & Discrete Geometry, Measure & Integration |  | yes |
 | 606 | [`Erdos233.erdos_233`](https://lefttosolve.com/p/Erdos233.erdos_233) | Erdős Problem 233 | open | Number Theory |  |  |
-| 607 | [`Erdos233.erdos_233.variants.upper_bound`](https://lefttosolve.com/p/Erdos233.erdos_233.variants.upper_bound) | Erdős Problem 233 — upper bound | known | Number Theory |  |  |
+| 607 | [`Erdos233.erdos_233.variants.upper_bound`](https://lefttosolve.com/p/Erdos233.erdos_233.variants.upper_bound) | Erdős Problem 233 — upper bound | known | Number Theory |  | yes |
 | 608 | [`Erdos233.erdos_233.variants.upper_bound_unconditional`](https://lefttosolve.com/p/Erdos233.erdos_233.variants.upper_bound_unconditional) | Erdős Problem 233 — upper bound unconditional | known | Number Theory |  |  |
 | 609 | [`Erdos234.erdos_234`](https://lefttosolve.com/p/Erdos234.erdos_234) | Erdős Problem 234 | open | Number Theory |  |  |
 | 610 | [`Erdos236.erdos_236`](https://lefttosolve.com/p/Erdos236.erdos_236) | Erdős Problem 236 | open | Combinatorics, Number Theory |  |  |
@@ -640,14 +640,14 @@ Back to [all programs](../PROGRAMS.md).
 | 618 | [`Erdos241.erdos_241.variants.generalization`](https://lefttosolve.com/p/Erdos241.erdos_241.variants.generalization) | Erdős Problem 241 — generalization | open | Combinatorics | $100 |  |
 | 619 | [`Erdos241.erdos_241.variants.lower_bound`](https://lefttosolve.com/p/Erdos241.erdos_241.variants.lower_bound) | Erdős Problem 241 — lower bound | known | Combinatorics | $100 | yes |
 | 620 | [`Erdos241.erdos_241.variants.r_eq_2`](https://lefttosolve.com/p/Erdos241.erdos_241.variants.r_eq_2) | Erdős Problem 241 — r eq 2 | known | Combinatorics | $100 | yes |
-| 621 | [`Erdos241.erdos_241.variants.upper_bound`](https://lefttosolve.com/p/Erdos241.erdos_241.variants.upper_bound) | Erdős Problem 241 — upper bound | known | Combinatorics | $100 |  |
-| 622 | [`Erdos241.erdos_241.variants.upper_bound_white`](https://lefttosolve.com/p/Erdos241.erdos_241.variants.upper_bound_white) | Erdős Problem 241 — upper bound white | known | Combinatorics | $100 |  |
+| 621 | [`Erdos241.erdos_241.variants.upper_bound`](https://lefttosolve.com/p/Erdos241.erdos_241.variants.upper_bound) | Erdős Problem 241 — upper bound | known | Combinatorics | $100 | yes |
+| 622 | [`Erdos241.erdos_241.variants.upper_bound_white`](https://lefttosolve.com/p/Erdos241.erdos_241.variants.upper_bound_white) | Erdős Problem 241 — upper bound white | known | Combinatorics | $100 | yes |
 | 623 | [`Erdos242.erdos_242`](https://lefttosolve.com/p/Erdos242.erdos_242) | Erdős Problem 242 | open | Number Theory |  |  |
 | 624 | [`Erdos242.erdos_242.variants.schinzel_generalization`](https://lefttosolve.com/p/Erdos242.erdos_242.variants.schinzel_generalization) | Erdős Problem 242 — schinzel generalization | open | Number Theory |  |  |
 | 625 | [`Erdos243.erdos_243`](https://lefttosolve.com/p/Erdos243.erdos_243) | Erdős Problem 243 | open | Sequences & Series |  |  |
 | 626 | [`Erdos244.erdos_244`](https://lefttosolve.com/p/Erdos244.erdos_244) | Erdős Problem 244 | open | Number Theory |  |  |
-| 627 | [`Erdos244.erdos_244.variants.Romanoff`](https://lefttosolve.com/p/Erdos244.erdos_244.variants.Romanoff) | Erdős Problem 244 — Romanoff | known | Number Theory |  |  |
-| 628 | [`Erdos245.erdos_245`](https://lefttosolve.com/p/Erdos245.erdos_245) | Erdős Problem 245 | known | Combinatorics, Number Theory |  |  |
+| 627 | [`Erdos244.erdos_244.variants.Romanoff`](https://lefttosolve.com/p/Erdos244.erdos_244.variants.Romanoff) | Erdős Problem 244 — Romanoff | known | Number Theory |  | yes |
+| 628 | [`Erdos245.erdos_245`](https://lefttosolve.com/p/Erdos245.erdos_245) | Erdős Problem 245 | known | Combinatorics, Number Theory |  | yes |
 | 629 | [`Erdos245.erdos_245.variants.two`](https://lefttosolve.com/p/Erdos245.erdos_245.variants.two) | Erdős Problem 245 — two | known | Combinatorics, Number Theory |  | yes |
 | 630 | [`Erdos247.erdos_247`](https://lefttosolve.com/p/Erdos247.erdos_247) | Erdős Problem 247 | open | Number Theory |  |  |
 | 631 | [`Erdos247.erdos_247.variants.strong_condition`](https://lefttosolve.com/p/Erdos247.erdos_247.variants.strong_condition) | Erdős Problem 247 — strong condition | known | Number Theory |  | yes |
@@ -660,24 +660,24 @@ Back to [all programs](../PROGRAMS.md).
 | 638 | [`Erdos252.erdos_252.variants.k_eq_three`](https://lefttosolve.com/p/Erdos252.erdos_252.variants.k_eq_three) | Erdős Problem 252 — k eq three | known | Number Theory |  | yes |
 | 639 | [`Erdos252.erdos_252.variants.k_eq_two`](https://lefttosolve.com/p/Erdos252.erdos_252.variants.k_eq_two) | Erdős Problem 252 — k eq two | known | Number Theory |  | yes |
 | 640 | [`Erdos252.erdos_252.variants.k_eq_zero`](https://lefttosolve.com/p/Erdos252.erdos_252.variants.k_eq_zero) | Erdős Problem 252 — k eq zero | known | Number Theory |  | yes |
-| 641 | [`Erdos252.erdos_252.variants.k_ge_five`](https://lefttosolve.com/p/Erdos252.erdos_252.variants.k_ge_five) | Erdős Problem 252 — k ge five | open | Number Theory |  |  |
+| 641 | [`Erdos252.erdos_252.variants.k_ge_five`](https://lefttosolve.com/p/Erdos252.erdos_252.variants.k_ge_five) | Erdős Problem 252 — k ge five | open | Number Theory |  | yes |
 | 642 | [`Erdos252.erdos_252.variants.prime_tuples`](https://lefttosolve.com/p/Erdos252.erdos_252.variants.prime_tuples) | Erdős Problem 252 — prime tuples | known | Number Theory |  | yes |
 | 643 | [`Erdos252.erdos_252.variants.schinzel`](https://lefttosolve.com/p/Erdos252.erdos_252.variants.schinzel) | Erdős Problem 252 — schinzel | known | Number Theory |  | yes |
 | 644 | [`Erdos254.erdos_254.variants.cassels`](https://lefttosolve.com/p/Erdos254.erdos_254.variants.cassels) | Erdős Problem 254 — cassels | known | Number Theory |  | yes |
 | 645 | [`Erdos257.erdos_257`](https://lefttosolve.com/p/Erdos257.erdos_257) | Erdős Problem 257 | open | Number Theory |  |  |
-| 646 | [`Erdos258.erdos_258.variants.monotone`](https://lefttosolve.com/p/Erdos258.erdos_258.variants.monotone) | Erdős Problem 258 — monotone | known | Number Theory |  |  |
+| 646 | [`Erdos258.erdos_258.variants.monotone`](https://lefttosolve.com/p/Erdos258.erdos_258.variants.monotone) | Erdős Problem 258 — monotone | known | Number Theory |  | yes |
 | 647 | [`Erdos261.erdos_261.parts.ii`](https://lefttosolve.com/p/Erdos261.erdos_261.parts.ii) | Erdős Problem 261 — ii | open | Number Theory |  |  |
 | 648 | [`Erdos261.erdos_261.parts.iii`](https://lefttosolve.com/p/Erdos261.erdos_261.parts.iii) | Erdős Problem 261 — iii | open | Number Theory |  |  |
 | 649 | [`Erdos263.erdos_263.parts.i`](https://lefttosolve.com/p/Erdos263.erdos_263.parts.i) | Erdős Problem 263 — i | open | Number Theory |  |  |
 | 650 | [`Erdos263.erdos_263.parts.ii`](https://lefttosolve.com/p/Erdos263.erdos_263.parts.ii) | Erdős Problem 263 — ii | known | Number Theory |  | yes |
 | 651 | [`Erdos263.erdos_263.variants.doubly_exponential_all_but_countable`](https://lefttosolve.com/p/Erdos263.erdos_263.variants.doubly_exponential_all_but_countable) | Erdős Problem 263 — doubly exponential all but countable | known | Number Theory |  | yes |
 | 652 | [`Erdos263.erdos_263.variants.sub_doubly_exponential`](https://lefttosolve.com/p/Erdos263.erdos_263.variants.sub_doubly_exponential) | Erdős Problem 263 — sub doubly exponential | known | Number Theory |  | yes |
-| 653 | [`Erdos264.erdos_264.parts.i`](https://lefttosolve.com/p/Erdos264.erdos_264.parts.i) | Erdős Problem 264 — i | known | Number Theory |  |  |
+| 653 | [`Erdos264.erdos_264.parts.i`](https://lefttosolve.com/p/Erdos264.erdos_264.parts.i) | Erdős Problem 264 — i | known | Number Theory |  | yes |
 | 654 | [`Erdos264.erdos_264.parts.ii`](https://lefttosolve.com/p/Erdos264.erdos_264.parts.ii) | Erdős Problem 264 — ii | open | Number Theory |  |  |
-| 655 | [`Erdos264.erdos_264.variants.example`](https://lefttosolve.com/p/Erdos264.erdos_264.variants.example) | Erdős Problem 264 — example | known | Number Theory |  |  |
-| 656 | [`Erdos264.erdos_264.variants.ko_tao_neg`](https://lefttosolve.com/p/Erdos264.erdos_264.variants.ko_tao_neg) | Erdős Problem 264 — ko tao neg | known | Number Theory |  |  |
-| 657 | [`Erdos264.erdos_264.variants.ko_tao_pos`](https://lefttosolve.com/p/Erdos264.erdos_264.variants.ko_tao_pos) | Erdős Problem 264 — ko tao pos | known | Number Theory |  |  |
-| 658 | [`Erdos267.erdos_267.variants.fibonacci_inverse_sum`](https://lefttosolve.com/p/Erdos267.erdos_267.variants.fibonacci_inverse_sum) | Erdős Problem 267 — fibonacci inverse sum | known | Number Theory |  |  |
+| 655 | [`Erdos264.erdos_264.variants.example`](https://lefttosolve.com/p/Erdos264.erdos_264.variants.example) | Erdős Problem 264 — example | known | Number Theory |  | yes |
+| 656 | [`Erdos264.erdos_264.variants.ko_tao_neg`](https://lefttosolve.com/p/Erdos264.erdos_264.variants.ko_tao_neg) | Erdős Problem 264 — ko tao neg | known | Number Theory |  | yes |
+| 657 | [`Erdos264.erdos_264.variants.ko_tao_pos`](https://lefttosolve.com/p/Erdos264.erdos_264.variants.ko_tao_pos) | Erdős Problem 264 — ko tao pos | known | Number Theory |  | yes |
+| 658 | [`Erdos267.erdos_267.variants.fibonacci_inverse_sum`](https://lefttosolve.com/p/Erdos267.erdos_267.variants.fibonacci_inverse_sum) | Erdős Problem 267 — fibonacci inverse sum | known | Number Theory |  | yes |
 | 659 | [`Erdos267.erdos_267.variants.generalisation_ratio_limit_to_infinity`](https://lefttosolve.com/p/Erdos267.erdos_267.variants.generalisation_ratio_limit_to_infinity) | Erdős Problem 267 — generalisation ratio limit to infinity | open | Number Theory |  |  |
 | 660 | [`Erdos269.erdos_269.variants.infinite`](https://lefttosolve.com/p/Erdos269.erdos_269.variants.infinite) | Erdős Problem 269 — infinite | known | Number Theory |  | yes |
 | 661 | [`Erdos269.erdos_269.variants.irrational`](https://lefttosolve.com/p/Erdos269.erdos_269.variants.irrational) | Erdős Problem 269 — irrational | open | Number Theory |  |  |
@@ -685,7 +685,7 @@ Back to [all programs](../PROGRAMS.md).
 | 663 | [`Erdos270.erdos_270.variants.linear`](https://lefttosolve.com/p/Erdos270.erdos_270.variants.linear) | Erdős Problem 270 — linear | known | Number Theory |  | yes |
 | 664 | [`Erdos270.erdos_270.variants.monotone`](https://lefttosolve.com/p/Erdos270.erdos_270.variants.monotone) | Erdős Problem 270 — monotone | open | Number Theory |  |  |
 | 665 | [`Erdos272.erdos_272`](https://lefttosolve.com/p/Erdos272.erdos_272) | Erdős Problem 272 | open | Combinatorics |  |  |
-| 666 | [`Erdos272.erdos_272.variants.isBigO_sq`](https://lefttosolve.com/p/Erdos272.erdos_272.variants.isBigO_sq) | Erdős Problem 272 — isBigO sq | known | Combinatorics |  |  |
+| 666 | [`Erdos272.erdos_272.variants.isBigO_sq`](https://lefttosolve.com/p/Erdos272.erdos_272.variants.isBigO_sq) | Erdős Problem 272 — isBigO sq | known | Combinatorics |  | yes |
 | 667 | [`Erdos272.erdos_272.variants.szabo`](https://lefttosolve.com/p/Erdos272.erdos_272.variants.szabo) | Erdős Problem 272 — szabo | known | Combinatorics |  |  |
 | 668 | [`Erdos272.erdos_272.variants.szabo_strong`](https://lefttosolve.com/p/Erdos272.erdos_272.variants.szabo_strong) | Erdős Problem 272 — szabo strong | open | Combinatorics |  |  |
 | 669 | [`Erdos273.erdos_273`](https://lefttosolve.com/p/Erdos273.erdos_273) | Erdős Problem 273 | open | Combinatorics, Number Theory |  |  |
@@ -705,7 +705,7 @@ Back to [all programs](../PROGRAMS.md).
 | 683 | [`Erdos283.erdos_283.variants.graham_alpha`](https://lefttosolve.com/p/Erdos283.erdos_283.variants.graham_alpha) | Erdős Problem 283 — graham alpha | known | Number Theory |  | yes |
 | 684 | [`Erdos283.erdos_283.variants.van_doorn_linear`](https://lefttosolve.com/p/Erdos283.erdos_283.variants.van_doorn_linear) | Erdős Problem 283 — van doorn linear | known | Number Theory |  | yes |
 | 685 | [`Erdos283.erdos_283.variants.van_doorn_quadratic`](https://lefttosolve.com/p/Erdos283.erdos_283.variants.van_doorn_quadratic) | Erdős Problem 283 — van doorn quadratic | known | Number Theory |  | yes |
-| 686 | [`Erdos285.erdos_285`](https://lefttosolve.com/p/Erdos285.erdos_285) | Erdős Problem 285 | known | Combinatorics, Number Theory |  |  |
+| 686 | [`Erdos285.erdos_285`](https://lefttosolve.com/p/Erdos285.erdos_285) | Erdős Problem 285 | known | Combinatorics, Number Theory |  | yes |
 | 687 | [`Erdos285.erdos_285.variants.lb`](https://lefttosolve.com/p/Erdos285.erdos_285.variants.lb) | Erdős Problem 285 — lb | known | Combinatorics, Number Theory |  | yes |
 | 688 | [`Erdos287.erdos_287`](https://lefttosolve.com/p/Erdos287.erdos_287) | Erdős Problem 287 | open | Number Theory |  |  |
 | 689 | [`Erdos287.erdos_287.variants.prime_conjecture`](https://lefttosolve.com/p/Erdos287.erdos_287.variants.prime_conjecture) | Erdős Problem 287 — prime conjecture | open | Number Theory |  |  |
@@ -718,24 +718,24 @@ Back to [all programs](../PROGRAMS.md).
 | 696 | [`Erdos291.erdos_291.variants.shiu_heuristic_asymptotic`](https://lefttosolve.com/p/Erdos291.erdos_291.variants.shiu_heuristic_asymptotic) | Erdős Problem 291 — shiu heuristic asymptotic | open | Number Theory |  |  |
 | 697 | [`Erdos291.erdos_291.variants.shiu_heuristic_density_zero`](https://lefttosolve.com/p/Erdos291.erdos_291.variants.shiu_heuristic_density_zero) | Erdős Problem 291 — shiu heuristic density zero | open | Number Theory |  |  |
 | 698 | [`Erdos291.erdos_291.variants.steinerberger_generalization`](https://lefttosolve.com/p/Erdos291.erdos_291.variants.steinerberger_generalization) | Erdős Problem 291 — steinerberger generalization | known | Number Theory |  | yes |
-| 699 | [`Erdos291.erdos_291.variants.wu_yan`](https://lefttosolve.com/p/Erdos291.erdos_291.variants.wu_yan) | Erdős Problem 291 — wu yan | known | Number Theory |  |  |
+| 699 | [`Erdos291.erdos_291.variants.wu_yan`](https://lefttosolve.com/p/Erdos291.erdos_291.variants.wu_yan) | Erdős Problem 291 — wu yan | known | Number Theory |  | yes |
 | 700 | [`Erdos292.erdos_292.variants.martin`](https://lefttosolve.com/p/Erdos292.erdos_292.variants.martin) | Erdős Problem 292 — martin | known | Number Theory |  |  |
-| 701 | [`Erdos292.erdos_292.variants.mul`](https://lefttosolve.com/p/Erdos292.erdos_292.variants.mul) | Erdős Problem 292 — mul | known | Number Theory |  |  |
-| 702 | [`Erdos292.erdos_292.variants.prime_pow`](https://lefttosolve.com/p/Erdos292.erdos_292.variants.prime_pow) | Erdős Problem 292 — prime pow | known | Number Theory |  |  |
-| 703 | [`Erdos292.erdos_292.variants.two_mul`](https://lefttosolve.com/p/Erdos292.erdos_292.variants.two_mul) | Erdős Problem 292 — two mul | known | Number Theory |  |  |
+| 701 | [`Erdos292.erdos_292.variants.mul`](https://lefttosolve.com/p/Erdos292.erdos_292.variants.mul) | Erdős Problem 292 — mul | known | Number Theory |  | yes |
+| 702 | [`Erdos292.erdos_292.variants.prime_pow`](https://lefttosolve.com/p/Erdos292.erdos_292.variants.prime_pow) | Erdős Problem 292 — prime pow | known | Number Theory |  | yes |
+| 703 | [`Erdos292.erdos_292.variants.two_mul`](https://lefttosolve.com/p/Erdos292.erdos_292.variants.two_mul) | Erdős Problem 292 — two mul | known | Number Theory |  | yes |
 | 704 | [`Erdos294.erdos_294`](https://lefttosolve.com/p/Erdos294.erdos_294) | Erdős Problem 294 | known | Number Theory |  |  |
 | 705 | [`Erdos294.erdos_294.variants.erdos_graham_upper`](https://lefttosolve.com/p/Erdos294.erdos_294.variants.erdos_graham_upper) | Erdős Problem 294 — erdos graham upper | known | Number Theory |  | yes |
 | 706 | [`Erdos295.erdos_295`](https://lefttosolve.com/p/Erdos295.erdos_295) | Erdős Problem 295 — erdos 295 | open | Combinatorics, Number Theory |  |  |
-| 707 | [`Erdos295.erdos_295.variants.erdos_straus`](https://lefttosolve.com/p/Erdos295.erdos_295.variants.erdos_straus) | Erdős Problem 295 — erdos straus | known | Combinatorics, Number Theory |  |  |
+| 707 | [`Erdos295.erdos_295.variants.erdos_straus`](https://lefttosolve.com/p/Erdos295.erdos_295.variants.erdos_straus) | Erdős Problem 295 — erdos straus | known | Combinatorics, Number Theory |  | yes |
 | 708 | [`Erdos295.exists_k`](https://lefttosolve.com/p/Erdos295.exists_k) | Erdős Problem 295 — exists k | warmup | Combinatorics, Number Theory |  | yes |
-| 709 | [`Erdos297.erdos_297`](https://lefttosolve.com/p/Erdos297.erdos_297) | Erdős Problem 297 | known | Number Theory |  |  |
-| 710 | [`Erdos297.erdos_297.variants.general`](https://lefttosolve.com/p/Erdos297.erdos_297.variants.general) | Erdős Problem 297 — general | known | Number Theory |  |  |
+| 709 | [`Erdos297.erdos_297`](https://lefttosolve.com/p/Erdos297.erdos_297) | Erdős Problem 297 | known | Number Theory |  | yes |
+| 710 | [`Erdos297.erdos_297.variants.general`](https://lefttosolve.com/p/Erdos297.erdos_297.variants.general) | Erdős Problem 297 — general | known | Number Theory |  | yes |
 | 711 | [`Erdos297.erdos_297.variants.steinerberger`](https://lefttosolve.com/p/Erdos297.erdos_297.variants.steinerberger) | Erdős Problem 297 — steinerberger | known | Number Theory |  | yes |
-| 712 | [`Erdos298.erdos_298.variants.natural_density`](https://lefttosolve.com/p/Erdos298.erdos_298.variants.natural_density) | Erdős Problem 298 — natural density | known | Number Theory |  |  |
-| 713 | [`Erdos299.erdos_299.variants.density`](https://lefttosolve.com/p/Erdos299.erdos_299.variants.density) | Erdős Problem 299 — density | known | Number Theory, Sequences & Series |  |  |
+| 712 | [`Erdos298.erdos_298.variants.natural_density`](https://lefttosolve.com/p/Erdos298.erdos_298.variants.natural_density) | Erdős Problem 298 — natural density | known | Number Theory |  | yes |
+| 713 | [`Erdos299.erdos_299.variants.density`](https://lefttosolve.com/p/Erdos299.erdos_299.variants.density) | Erdős Problem 299 — density | known | Number Theory, Sequences & Series |  | yes |
 | 714 | [`Erdos3.erdos_3.variants.gowers`](https://lefttosolve.com/p/Erdos3.erdos_3.variants.gowers) | Erdős Problem 3 — gowers | known | Number Theory | $5000 |  |
 | 715 | [`Erdos3.erdos_3.variants.green_tao`](https://lefttosolve.com/p/Erdos3.erdos_3.variants.green_tao) | Erdős Problem 3 — green tao | known | Number Theory | $5000 |  |
-| 716 | [`Erdos3.erdos_3.variants.kelley_meka`](https://lefttosolve.com/p/Erdos3.erdos_3.variants.kelley_meka) | Erdős Problem 3 — kelley meka | known | Number Theory | $5000 |  |
+| 716 | [`Erdos3.erdos_3.variants.kelley_meka`](https://lefttosolve.com/p/Erdos3.erdos_3.variants.kelley_meka) | Erdős Problem 3 — kelley meka | known | Number Theory | $5000 | yes |
 | 717 | [`Erdos3.erdos_3.variants.leng_sah_sawhney`](https://lefttosolve.com/p/Erdos3.erdos_3.variants.leng_sah_sawhney) | Erdős Problem 3 — leng sah sawhney | known | Number Theory | $5000 |  |
 | 718 | [`Erdos30.erdos_30`](https://lefttosolve.com/p/Erdos30.erdos_30) | Erdős Problem 30 | open | Number Theory | $1000 |  |
 | 719 | [`Erdos30.erdos_30.variants.O_one`](https://lefttosolve.com/p/Erdos30.erdos_30.variants.O_one) | Erdős Problem 30 — O one | open | Number Theory | $1000 |  |
@@ -752,14 +752,14 @@ Back to [all programs](../PROGRAMS.md).
 | 730 | [`Erdos302.erdos_302.variants.upper_nine_tenths`](https://lefttosolve.com/p/Erdos302.erdos_302.variants.upper_nine_tenths) | Erdős Problem 302 — upper nine tenths | known | Number Theory |  | yes |
 | 731 | [`Erdos304.erdos_304.variants.upper_1950`](https://lefttosolve.com/p/Erdos304.erdos_304.variants.upper_1950) | Erdős Problem 304 — upper 1950 | known | Number Theory |  | yes |
 | 732 | [`Erdos304.erdos_304.variants.upper_1985`](https://lefttosolve.com/p/Erdos304.erdos_304.variants.upper_1985) | Erdős Problem 304 — upper 1985 | known | Number Theory |  | yes |
-| 733 | [`Erdos305.erdos_305.variants.bleicher_erdos`](https://lefttosolve.com/p/Erdos305.erdos_305.variants.bleicher_erdos) | Erdős Problem 305 — bleicher erdos | known | Number Theory |  |  |
+| 733 | [`Erdos305.erdos_305.variants.bleicher_erdos`](https://lefttosolve.com/p/Erdos305.erdos_305.variants.bleicher_erdos) | Erdős Problem 305 — bleicher erdos | known | Number Theory |  | yes |
 | 734 | [`Erdos305.erdos_305.variants.liu_sawhney`](https://lefttosolve.com/p/Erdos305.erdos_305.variants.liu_sawhney) | Erdős Problem 305 — liu sawhney | known | Number Theory |  |  |
 | 735 | [`Erdos305.erdos_305.variants.prime_lower_bound`](https://lefttosolve.com/p/Erdos305.erdos_305.variants.prime_lower_bound) | Erdős Problem 305 — prime lower bound | known | Number Theory |  | yes |
 | 736 | [`Erdos305.erdos_305.variants.yokota`](https://lefttosolve.com/p/Erdos305.erdos_305.variants.yokota) | Erdős Problem 305 — yokota | known | Number Theory |  |  |
 | 737 | [`Erdos307.erdos_307`](https://lefttosolve.com/p/Erdos307.erdos_307) | Erdős Problem 307 | open | Number Theory |  |  |
-| 738 | [`Erdos307.erdos_307.variants.coprime_one_notMem`](https://lefttosolve.com/p/Erdos307.erdos_307.variants.coprime_one_notMem) | Erdős Problem 307 — coprime one notMem | open | Combinatorics, Number Theory |  |  |
-| 739 | [`Erdos308.erdos_308.variants.all_N`](https://lefttosolve.com/p/Erdos308.erdos_308.variants.all_N) | Erdős Problem 308 — all N | open | Number Theory |  |  |
-| 740 | [`Erdos308.erdos_308.variants.croot`](https://lefttosolve.com/p/Erdos308.erdos_308.variants.croot) | Erdős Problem 308 — croot | known | Number Theory |  |  |
+| 738 | [`Erdos307.erdos_307.variants.coprime_one_notMem`](https://lefttosolve.com/p/Erdos307.erdos_307.variants.coprime_one_notMem) | Erdős Problem 307 — coprime one notMem | open | Combinatorics, Number Theory |  | yes |
+| 739 | [`Erdos308.erdos_308.variants.all_N`](https://lefttosolve.com/p/Erdos308.erdos_308.variants.all_N) | Erdős Problem 308 — all N | open | Number Theory |  | yes |
+| 740 | [`Erdos308.erdos_308.variants.croot`](https://lefttosolve.com/p/Erdos308.erdos_308.variants.croot) | Erdős Problem 308 — croot | known | Number Theory |  | yes |
 | 741 | [`Erdos310.erdos_310.variants.liu_sawhney`](https://lefttosolve.com/p/Erdos310.erdos_310.variants.liu_sawhney) | Erdős Problem 310 — liu sawhney | known | Number Theory |  |  |
 | 742 | [`Erdos311.delta_ge_exp`](https://lefttosolve.com/p/Erdos311.delta_ge_exp) | Erdős Problem 311 — delta ge exp | warmup | Number Theory |  | yes |
 | 743 | [`Erdos311.delta_ge_inv_lcm`](https://lefttosolve.com/p/Erdos311.delta_ge_inv_lcm) | Erdős Problem 311 — delta ge inv lcm | warmup | Number Theory |  | yes |
@@ -769,40 +769,40 @@ Back to [all programs](../PROGRAMS.md).
 | 747 | [`Erdos313.erdos_313.variants.primary_pseudoperfect_are_infinite`](https://lefttosolve.com/p/Erdos313.erdos_313.variants.primary_pseudoperfect_are_infinite) | Erdős Problem 313 — primary pseudoperfect are infinite | open | Number Theory |  |  |
 | 748 | [`Erdos317.erdos_317`](https://lefttosolve.com/p/Erdos317.erdos_317) | Erdős Problem 317 | open | Number Theory |  |  |
 | 749 | [`Erdos317.erdos_317.variants.claim2`](https://lefttosolve.com/p/Erdos317.erdos_317.variants.claim2) | Erdős Problem 317 — claim2 | open | Number Theory |  |  |
-| 750 | [`Erdos318.erdos_318.parts.i`](https://lefttosolve.com/p/Erdos318.erdos_318.parts.i) | Erdős Problem 318 — i | known | Number Theory |  |  |
-| 751 | [`Erdos318.erdos_318.parts.ii`](https://lefttosolve.com/p/Erdos318.erdos_318.parts.ii) | Erdős Problem 318 — ii | known | Number Theory |  |  |
-| 752 | [`Erdos318.erdos_318.variants.contain_single_even`](https://lefttosolve.com/p/Erdos318.erdos_318.variants.contain_single_even) | Erdős Problem 318 — contain single even | known | Number Theory |  |  |
+| 750 | [`Erdos318.erdos_318.parts.i`](https://lefttosolve.com/p/Erdos318.erdos_318.parts.i) | Erdős Problem 318 — i | known | Number Theory |  | yes |
+| 751 | [`Erdos318.erdos_318.parts.ii`](https://lefttosolve.com/p/Erdos318.erdos_318.parts.ii) | Erdős Problem 318 — ii | known | Number Theory |  | yes |
+| 752 | [`Erdos318.erdos_318.variants.contain_single_even`](https://lefttosolve.com/p/Erdos318.erdos_318.variants.contain_single_even) | Erdős Problem 318 — contain single even | known | Number Theory |  | yes |
 | 753 | [`Erdos319.erdos_319`](https://lefttosolve.com/p/Erdos319.erdos_319) | Erdős Problem 319 | open | Combinatorics |  |  |
 | 754 | [`Erdos319.erdos_319.variants.isTheta`](https://lefttosolve.com/p/Erdos319.erdos_319.variants.isTheta) | Erdős Problem 319 — isTheta | known | Combinatorics |  | yes |
-| 755 | [`Erdos319.erdos_319.variants.lb`](https://lefttosolve.com/p/Erdos319.erdos_319.variants.lb) | Erdős Problem 319 — lb | known | Combinatorics |  |  |
+| 755 | [`Erdos319.erdos_319.variants.lb`](https://lefttosolve.com/p/Erdos319.erdos_319.variants.lb) | Erdős Problem 319 — lb | known | Combinatorics |  | yes |
 | 756 | [`Erdos32.erdos_32`](https://lefttosolve.com/p/Erdos32.erdos_32) | Erdős Problem 32 | open | Number Theory | $50 |  |
-| 757 | [`Erdos32.erdos_32.variants.liminf_gt_one`](https://lefttosolve.com/p/Erdos32.erdos_32.variants.liminf_gt_one) | Erdős Problem 32 — liminf gt one | known | Number Theory | $50 |  |
+| 757 | [`Erdos32.erdos_32.variants.liminf_gt_one`](https://lefttosolve.com/p/Erdos32.erdos_32.variants.liminf_gt_one) | Erdős Problem 32 — liminf gt one | known | Number Theory | $50 | yes |
 | 758 | [`Erdos32.erdos_32.variants.log_bound`](https://lefttosolve.com/p/Erdos32.erdos_32.variants.log_bound) | Erdős Problem 32 — log bound | open | Number Theory | $50 |  |
 | 759 | [`Erdos32.erdos_32.variants.log_squared`](https://lefttosolve.com/p/Erdos32.erdos_32.variants.log_squared) | Erdős Problem 32 — log squared | known | Number Theory | $50 |  |
-| 760 | [`Erdos32.erdos_32.variants.ruzsa`](https://lefttosolve.com/p/Erdos32.erdos_32.variants.ruzsa) | Erdős Problem 32 — ruzsa | known | Number Theory | $50 |  |
+| 760 | [`Erdos32.erdos_32.variants.ruzsa`](https://lefttosolve.com/p/Erdos32.erdos_32.variants.ruzsa) | Erdős Problem 32 — ruzsa | known | Number Theory | $50 | yes |
 | 761 | [`Erdos321.erdos_321`](https://lefttosolve.com/p/Erdos321.erdos_321) | Erdős Problem 321 | known | Number Theory |  |  |
 | 762 | [`Erdos321.erdos_321.variants.isBigO`](https://lefttosolve.com/p/Erdos321.erdos_321.variants.isBigO) | Erdős Problem 321 — isBigO | open | Number Theory |  |  |
 | 763 | [`Erdos321.erdos_321.variants.isLittleO`](https://lefttosolve.com/p/Erdos321.erdos_321.variants.isLittleO) | Erdős Problem 321 — isLittleO | open | Number Theory |  |  |
 | 764 | [`Erdos321.erdos_321.variants.isTheta`](https://lefttosolve.com/p/Erdos321.erdos_321.variants.isTheta) | Erdős Problem 321 — isTheta | open | Number Theory |  |  |
 | 765 | [`Erdos321.erdos_321.variants.lower`](https://lefttosolve.com/p/Erdos321.erdos_321.variants.lower) | Erdős Problem 321 — lower | known | Number Theory |  |  |
-| 766 | [`Erdos321.erdos_321.variants.upper`](https://lefttosolve.com/p/Erdos321.erdos_321.variants.upper) | Erdős Problem 321 — upper | known | Number Theory |  |  |
+| 766 | [`Erdos321.erdos_321.variants.upper`](https://lefttosolve.com/p/Erdos321.erdos_321.variants.upper) | Erdős Problem 321 — upper | known | Number Theory |  | yes |
 | 767 | [`Erdos322.erdos_322`](https://lefttosolve.com/p/Erdos322.erdos_322) | Erdős Problem 322 | open | Number Theory |  |  |
 | 768 | [`Erdos323.erdos_323.parts.i`](https://lefttosolve.com/p/Erdos323.erdos_323.parts.i) | Erdős Problem 323 — i | open | Number Theory |  |  |
 | 769 | [`Erdos323.erdos_323.parts.ii`](https://lefttosolve.com/p/Erdos323.erdos_323.parts.ii) | Erdős Problem 323 — ii | open | Number Theory |  |  |
-| 770 | [`Erdos323.erdos_323.variants.k_eq_2`](https://lefttosolve.com/p/Erdos323.erdos_323.variants.k_eq_2) | Erdős Problem 323 — k eq 2 | known | Number Theory |  |  |
+| 770 | [`Erdos323.erdos_323.variants.k_eq_2`](https://lefttosolve.com/p/Erdos323.erdos_323.variants.k_eq_2) | Erdős Problem 323 — k eq 2 | known | Number Theory |  | yes |
 | 771 | [`Erdos323.erdos_323.variants.k_gt_2`](https://lefttosolve.com/p/Erdos323.erdos_323.variants.k_gt_2) | Erdős Problem 323 — k gt 2 | open | Number Theory |  |  |
 | 772 | [`Erdos324.erdos_324`](https://lefttosolve.com/p/Erdos324.erdos_324) | Erdős Problem 324 | open | Number Theory |  |  |
 | 773 | [`Erdos324.erdos_324.variants.quintic`](https://lefttosolve.com/p/Erdos324.erdos_324.variants.quintic) | Erdős Problem 324 — quintic | open | Number Theory |  |  |
 | 774 | [`Erdos325.erdos_325`](https://lefttosolve.com/p/Erdos325.erdos_325) | Erdős Problem 325 | open | Number Theory |  |  |
 | 775 | [`Erdos325.erdos_325.variants.weaker`](https://lefttosolve.com/p/Erdos325.erdos_325.variants.weaker) | Erdős Problem 325 — weaker | open | Number Theory |  |  |
 | 776 | [`Erdos325.erdos_325.variants.wooley`](https://lefttosolve.com/p/Erdos325.erdos_325.variants.wooley) | Erdős Problem 325 — wooley | known | Number Theory |  |  |
-| 777 | [`Erdos326.erdos_326`](https://lefttosolve.com/p/Erdos326.erdos_326) | Erdős Problem 326 | open | Combinatorics, Number Theory |  |  |
+| 777 | [`Erdos326.erdos_326`](https://lefttosolve.com/p/Erdos326.erdos_326) | Erdős Problem 326 | open | Combinatorics, Number Theory |  | yes |
 | 778 | [`Erdos326.erdos_326.variants.eq`](https://lefttosolve.com/p/Erdos326.erdos_326.variants.eq) | Erdős Problem 326 — eq | known | Combinatorics, Number Theory |  | yes |
 | 779 | [`Erdos329.erdos_329`](https://lefttosolve.com/p/Erdos329.erdos_329) | Erdős Problem 329. | open | Combinatorics, Number Theory |  |  |
 | 780 | [`Erdos329.erdos_329.variants.converse_implication`](https://lefttosolve.com/p/Erdos329.erdos_329.variants.converse_implication) | Erdős Problem 329: Maximum Density of Sidon Sets — converse implication | open | Combinatorics, Number Theory |  |  |
-| 781 | [`Erdos329.erdos_329.variants.kruckeberg_1961`](https://lefttosolve.com/p/Erdos329.erdos_329.variants.kruckeberg_1961) | Erdős Problem 329: Maximum Density of Sidon Sets — kruckeberg 1961 | known | Combinatorics, Number Theory |  |  |
-| 782 | [`Erdos329.erdos_329.variants.lower_bound`](https://lefttosolve.com/p/Erdos329.erdos_329.variants.lower_bound) | Erdős Problem 329: Maximum Density of Sidon Sets — lower bound | known | Combinatorics, Number Theory |  |  |
-| 783 | [`Erdos329.erdos_329.variants.turan_1941`](https://lefttosolve.com/p/Erdos329.erdos_329.variants.turan_1941) | Erdős Problem 329: Maximum Density of Sidon Sets — turan 1941 | known | Combinatorics, Number Theory |  |  |
+| 781 | [`Erdos329.erdos_329.variants.kruckeberg_1961`](https://lefttosolve.com/p/Erdos329.erdos_329.variants.kruckeberg_1961) | Erdős Problem 329: Maximum Density of Sidon Sets — kruckeberg 1961 | known | Combinatorics, Number Theory |  | yes |
+| 782 | [`Erdos329.erdos_329.variants.lower_bound`](https://lefttosolve.com/p/Erdos329.erdos_329.variants.lower_bound) | Erdős Problem 329: Maximum Density of Sidon Sets — lower bound | known | Combinatorics, Number Theory |  | yes |
+| 783 | [`Erdos329.erdos_329.variants.turan_1941`](https://lefttosolve.com/p/Erdos329.erdos_329.variants.turan_1941) | Erdős Problem 329: Maximum Density of Sidon Sets — turan 1941 | known | Combinatorics, Number Theory |  | yes |
 | 784 | [`Erdos329.exists_sidon_pos_density`](https://lefttosolve.com/p/Erdos329.exists_sidon_pos_density) | Erdős Problem 329: Maximum Density of Sidon Sets | warmup | Combinatorics, Number Theory |  | yes |
 | 785 | [`Erdos33.erdos_33`](https://lefttosolve.com/p/Erdos33.erdos_33) | Erdős Problem 33 | open | Number Theory |  |  |
 | 786 | [`Erdos331.erdos_331.variants.ruzsa`](https://lefttosolve.com/p/Erdos331.erdos_331.variants.ruzsa) | Erdős Problem 331 — ruzsa | known | Number Theory |  | yes |
@@ -841,27 +841,27 @@ Back to [all programs](../PROGRAMS.md).
 | 819 | [`Erdos349.erdos_349.variants.floor_3_halves_even`](https://lefttosolve.com/p/Erdos349.erdos_349.variants.floor_3_halves_even) | Erdos349 — floor 3 halves even | open | Number Theory |  |  |
 | 820 | [`Erdos349.erdos_349.variants.floor_3_halves_odd`](https://lefttosolve.com/p/Erdos349.erdos_349.variants.floor_3_halves_odd) | Erdos349 — floor 3 halves odd | open | Number Theory |  |  |
 | 821 | [`Erdos349.exists_t_for_k_disjoint_segments`](https://lefttosolve.com/p/Erdos349.exists_t_for_k_disjoint_segments) | Erdos349 | known | Number Theory |  | yes |
-| 822 | [`Erdos35.erdos_35.variants.plunnecke`](https://lefttosolve.com/p/Erdos35.erdos_35.variants.plunnecke) | Erdős Problem 35 — plunnecke | known | Number Theory |  |  |
+| 822 | [`Erdos35.erdos_35.variants.plunnecke`](https://lefttosolve.com/p/Erdos35.erdos_35.variants.plunnecke) | Erdős Problem 35 — plunnecke | known | Number Theory |  | yes |
 | 823 | [`Erdos350.erdos_350.variants.strengthening`](https://lefttosolve.com/p/Erdos350.erdos_350.variants.strengthening) | Erdős Problem 350 — strengthening | known | Combinatorics, Number Theory |  | yes |
 | 824 | [`Erdos351.erdos_351.variants.X`](https://lefttosolve.com/p/Erdos351.erdos_351.variants.X) | Erdős Problem 351 — X | known | Number Theory |  | yes |
 | 825 | [`Erdos351.erdos_351.variants.X_sq`](https://lefttosolve.com/p/Erdos351.erdos_351.variants.X_sq) | Erdős Problem 351 — X sq | known | Number Theory |  | yes |
 | 826 | [`Erdos352.erdos_352`](https://lefttosolve.com/p/Erdos352.erdos_352) | Erdős Problem 352 | open | Geometry |  |  |
-| 827 | [`Erdos354.erdos_354.parts.ii`](https://lefttosolve.com/p/Erdos354.erdos_354.parts.ii) | Erdős Problem 354 — ii | open | Number Theory |  |  |
+| 827 | [`Erdos354.erdos_354.parts.ii`](https://lefttosolve.com/p/Erdos354.erdos_354.parts.ii) | Erdős Problem 354 — ii | open | Number Theory |  | yes |
 | 828 | [`Erdos357.erdos_357.parts.i`](https://lefttosolve.com/p/Erdos357.erdos_357.parts.i) | Erdős Problem 357 — i | open | Number Theory |  |  |
-| 829 | [`Erdos357.erdos_357.parts.ii.bigO_version`](https://lefttosolve.com/p/Erdos357.erdos_357.parts.ii.bigO_version) | Erdős Problem 357 — bigO version | open | Number Theory |  |  |
+| 829 | [`Erdos357.erdos_357.parts.ii.bigO_version`](https://lefttosolve.com/p/Erdos357.erdos_357.parts.ii.bigO_version) | Erdős Problem 357 — bigO version | open | Number Theory |  | yes |
 | 830 | [`Erdos357.erdos_357.parts.ii.bigO_version_symm`](https://lefttosolve.com/p/Erdos357.erdos_357.parts.ii.bigO_version_symm) | Erdős Problem 357 — bigO version symm | open | Number Theory |  |  |
 | 831 | [`Erdos357.erdos_357.parts.ii.bigTheta_version`](https://lefttosolve.com/p/Erdos357.erdos_357.parts.ii.bigTheta_version) | Erdős Problem 357 — bigTheta version | open | Number Theory |  |  |
-| 832 | [`Erdos357.erdos_357.parts.ii.littleO_version`](https://lefttosolve.com/p/Erdos357.erdos_357.parts.ii.littleO_version) | Erdős Problem 357 — littleO version | open | Number Theory |  |  |
+| 832 | [`Erdos357.erdos_357.parts.ii.littleO_version`](https://lefttosolve.com/p/Erdos357.erdos_357.parts.ii.littleO_version) | Erdős Problem 357 — littleO version | open | Number Theory |  | yes |
 | 833 | [`Erdos357.erdos_357.parts.ii.littleO_version_symm`](https://lefttosolve.com/p/Erdos357.erdos_357.parts.ii.littleO_version_symm) | Erdős Problem 357 — littleO version symm | open | Number Theory |  |  |
-| 834 | [`Erdos357.erdos_357.variants.hegyvari`](https://lefttosolve.com/p/Erdos357.erdos_357.variants.hegyvari) | Erdős Problem 357 — hegyvari | known | Number Theory |  |  |
+| 834 | [`Erdos357.erdos_357.variants.hegyvari`](https://lefttosolve.com/p/Erdos357.erdos_357.variants.hegyvari) | Erdős Problem 357 — hegyvari | known | Number Theory |  | yes |
 | 835 | [`Erdos357.erdos_357.variants.infinite_set_density`](https://lefttosolve.com/p/Erdos357.erdos_357.variants.infinite_set_density) | Erdős Problem 357 — infinite set density | open | Number Theory |  |  |
 | 836 | [`Erdos357.erdos_357.variants.infinite_set_lower_density`](https://lefttosolve.com/p/Erdos357.erdos_357.variants.infinite_set_lower_density) | Erdős Problem 357 — infinite set lower density | known | Number Theory |  | yes |
 | 837 | [`Erdos357.erdos_357.variants.infinite_set_sum`](https://lefttosolve.com/p/Erdos357.erdos_357.variants.infinite_set_sum) | Erdős Problem 357 — infinite set sum | open | Number Theory |  |  |
 | 838 | [`Erdos357.erdos_357.variants.monotone.parts.i`](https://lefttosolve.com/p/Erdos357.erdos_357.variants.monotone.parts.i) | Erdős Problem 357 — i | open | Number Theory |  |  |
-| 839 | [`Erdos357.erdos_357.variants.monotone.parts.ii.bigO_version`](https://lefttosolve.com/p/Erdos357.erdos_357.variants.monotone.parts.ii.bigO_version) | Erdős Problem 357 — bigO version | open | Number Theory |  |  |
+| 839 | [`Erdos357.erdos_357.variants.monotone.parts.ii.bigO_version`](https://lefttosolve.com/p/Erdos357.erdos_357.variants.monotone.parts.ii.bigO_version) | Erdős Problem 357 — bigO version | open | Number Theory |  | yes |
 | 840 | [`Erdos357.erdos_357.variants.monotone.parts.ii.bigO_version_symm`](https://lefttosolve.com/p/Erdos357.erdos_357.variants.monotone.parts.ii.bigO_version_symm) | Erdős Problem 357 — bigO version symm | open | Number Theory |  |  |
 | 841 | [`Erdos357.erdos_357.variants.monotone.parts.ii.bigTheta_version`](https://lefttosolve.com/p/Erdos357.erdos_357.variants.monotone.parts.ii.bigTheta_version) | Erdős Problem 357 — bigTheta version | open | Number Theory |  |  |
-| 842 | [`Erdos357.erdos_357.variants.monotone.parts.ii.littleO_version`](https://lefttosolve.com/p/Erdos357.erdos_357.variants.monotone.parts.ii.littleO_version) | Erdős Problem 357 — littleO version | open | Number Theory |  |  |
+| 842 | [`Erdos357.erdos_357.variants.monotone.parts.ii.littleO_version`](https://lefttosolve.com/p/Erdos357.erdos_357.variants.monotone.parts.ii.littleO_version) | Erdős Problem 357 — littleO version | open | Number Theory |  | yes |
 | 843 | [`Erdos357.erdos_357.variants.monotone.parts.ii.littleO_version_symm`](https://lefttosolve.com/p/Erdos357.erdos_357.variants.monotone.parts.ii.littleO_version_symm) | Erdős Problem 357 — littleO version symm | open | Number Theory |  |  |
 | 844 | [`Erdos357.erdos_357.variants.weisenberg`](https://lefttosolve.com/p/Erdos357.erdos_357.variants.weisenberg) | Erdős Problem 357 — weisenberg | known | Number Theory |  | yes |
 | 845 | [`Erdos358.erdos_358.variants.prime_set`](https://lefttosolve.com/p/Erdos358.erdos_358.variants.prime_set) | Erdős Problem 358 — prime set | open | Combinatorics, Number Theory |  |  |
@@ -874,11 +874,11 @@ Back to [all programs](../PROGRAMS.md).
 | 852 | [`Erdos36.erdos_36`](https://lefttosolve.com/p/Erdos36.erdos_36) | Erdős Problem 36 | open | Combinatorics, Number Theory |  |  |
 | 853 | [`Erdos36.erdos_36.variants.exists`](https://lefttosolve.com/p/Erdos36.erdos_36.variants.exists) | Erdős Problem 36 — exists | known | Combinatorics, Number Theory |  | yes |
 | 854 | [`Erdos36.erdos_36.variants.lower`](https://lefttosolve.com/p/Erdos36.erdos_36.variants.lower) | Erdős Problem 36 — lower | open | Combinatorics, Number Theory |  |  |
-| 855 | [`Erdos36.erdos_36.variants.upper`](https://lefttosolve.com/p/Erdos36.erdos_36.variants.upper) | Erdős Problem 36 — upper | open | Combinatorics, Number Theory |  |  |
+| 855 | [`Erdos36.erdos_36.variants.upper`](https://lefttosolve.com/p/Erdos36.erdos_36.variants.upper) | Erdős Problem 36 — upper | open | Combinatorics, Number Theory |  | yes |
 | 856 | [`Erdos36.minimum_overlap.variants.lower.haugland_1996`](https://lefttosolve.com/p/Erdos36.minimum_overlap.variants.lower.haugland_1996) | Erdős Problem 36 — haugland 1996 | known | Combinatorics, Number Theory |  | yes |
 | 857 | [`Erdos36.minimum_overlap.variants.lower.white_2022`](https://lefttosolve.com/p/Erdos36.minimum_overlap.variants.lower.white_2022) | Erdős Problem 36 — white 2022 | known | Combinatorics, Number Theory |  |  |
 | 858 | [`Erdos36.minimum_overlap.variants.upper.MRS_1956`](https://lefttosolve.com/p/Erdos36.minimum_overlap.variants.upper.MRS_1956) | Erdős Problem 36 — MRS 1956 | known | Combinatorics, Number Theory |  | yes |
-| 859 | [`Erdos36.minimum_overlap.variants.upper.haugland_1996`](https://lefttosolve.com/p/Erdos36.minimum_overlap.variants.upper.haugland_1996) | Erdős Problem 36 — haugland 1996 | known | Combinatorics, Number Theory |  |  |
+| 859 | [`Erdos36.minimum_overlap.variants.upper.haugland_1996`](https://lefttosolve.com/p/Erdos36.minimum_overlap.variants.upper.haugland_1996) | Erdős Problem 36 — haugland 1996 | known | Combinatorics, Number Theory |  | yes |
 | 860 | [`Erdos36.minimum_overlap.variants.upper.haugland_2022`](https://lefttosolve.com/p/Erdos36.minimum_overlap.variants.upper.haugland_2022) | Erdős Problem 36 — haugland 2022 | known | Combinatorics, Number Theory |  | yes |
 | 861 | [`Erdos360.erdos_360`](https://lefttosolve.com/p/Erdos360.erdos_360) | Erdős Problem 360 | known | Combinatorics, Number Theory |  |  |
 | 862 | [`Erdos360.erdos_360.variants.alon_erdos`](https://lefttosolve.com/p/Erdos360.erdos_360.variants.alon_erdos) | Erdős Problem 360 — alon erdos | known | Combinatorics, Number Theory |  |  |
@@ -909,13 +909,13 @@ Back to [all programs](../PROGRAMS.md).
 | 887 | [`Erdos376.erdos_376`](https://lefttosolve.com/p/Erdos376.erdos_376) | Erdős Problem 376 | open | Number Theory |  |  |
 | 888 | [`Erdos376.erdos_376.variants.prime`](https://lefttosolve.com/p/Erdos376.erdos_376.variants.prime) | Erdős Problem 376 — prime | known | Number Theory |  | yes |
 | 889 | [`Erdos377.erdos_377`](https://lefttosolve.com/p/Erdos377.erdos_377) | Erdős Problem 377 | open | Number Theory |  |  |
-| 890 | [`Erdos377.erdos_377.variants.ae`](https://lefttosolve.com/p/Erdos377.erdos_377.variants.ae) | Erdős Problem 377 — ae | known | Number Theory |  |  |
-| 891 | [`Erdos377.erdos_377.variants.limit.i`](https://lefttosolve.com/p/Erdos377.erdos_377.variants.limit.i) | Erdős Problem 377 — i | known | Number Theory |  |  |
-| 892 | [`Erdos377.erdos_377.variants.limit.ii`](https://lefttosolve.com/p/Erdos377.erdos_377.variants.limit.ii) | Erdős Problem 377 — ii | known | Number Theory |  |  |
+| 890 | [`Erdos377.erdos_377.variants.ae`](https://lefttosolve.com/p/Erdos377.erdos_377.variants.ae) | Erdős Problem 377 — ae | known | Number Theory |  | yes |
+| 891 | [`Erdos377.erdos_377.variants.limit.i`](https://lefttosolve.com/p/Erdos377.erdos_377.variants.limit.i) | Erdős Problem 377 — i | known | Number Theory |  | yes |
+| 892 | [`Erdos377.erdos_377.variants.limit.ii`](https://lefttosolve.com/p/Erdos377.erdos_377.variants.limit.ii) | Erdős Problem 377 — ii | known | Number Theory |  | yes |
 | 893 | [`Erdos377.erdos_377.variants.ub`](https://lefttosolve.com/p/Erdos377.erdos_377.variants.ub) | Erdős Problem 377 — ub | known | Number Theory |  |  |
 | 894 | [`Erdos382.erdos_382.parts.i`](https://lefttosolve.com/p/Erdos382.erdos_382.parts.i) | Erdős Problem 382 — i | open | Number Theory |  |  |
 | 895 | [`Erdos382.erdos_382.parts.ii`](https://lefttosolve.com/p/Erdos382.erdos_382.parts.ii) | Erdős Problem 382 — ii | open | Number Theory |  |  |
-| 896 | [`Erdos382.erdos_382.variants.ramachandra`](https://lefttosolve.com/p/Erdos382.erdos_382.variants.ramachandra) | Erdős Problem 382 — ramachandra | known | Number Theory |  |  |
+| 896 | [`Erdos382.erdos_382.variants.ramachandra`](https://lefttosolve.com/p/Erdos382.erdos_382.variants.ramachandra) | Erdős Problem 382 — ramachandra | known | Number Theory |  | yes |
 | 897 | [`Erdos383.erdos_383`](https://lefttosolve.com/p/Erdos383.erdos_383) | Erdős Problem 383 | open | Number Theory |  |  |
 | 898 | [`Erdos384.erdos_384`](https://lefttosolve.com/p/Erdos384.erdos_384) | Erdős Problem 384 | known | Number Theory |  |  |
 | 899 | [`Erdos385.erdos_385.parts.i`](https://lefttosolve.com/p/Erdos385.erdos_385.parts.i) | Erdős Problem 385 — i | open | Number Theory |  |  |
@@ -934,7 +934,7 @@ Back to [all programs](../PROGRAMS.md).
 | 912 | [`Erdos39.erdos_39`](https://lefttosolve.com/p/Erdos39.erdos_39) | Erdős Problem 39 | open | Number Theory | $500 |  |
 | 913 | [`Erdos390.erdos_390`](https://lefttosolve.com/p/Erdos390.erdos_390) | Erdős Problem 390 | open | Number Theory |  |  |
 | 914 | [`Erdos390.erdos_390.variants.theta`](https://lefttosolve.com/p/Erdos390.erdos_390.variants.theta) | Erdős Problem 390 — theta | known | Number Theory |  | yes |
-| 915 | [`Erdos392.erdos_392.variants.lower`](https://lefttosolve.com/p/Erdos392.erdos_392.variants.lower) | Erdős Problem 392 — lower | known | Number Theory |  |  |
+| 915 | [`Erdos392.erdos_392.variants.lower`](https://lefttosolve.com/p/Erdos392.erdos_392.variants.lower) | Erdős Problem 392 — lower | known | Number Theory |  | yes |
 | 916 | [`Erdos393.erdos_393`](https://lefttosolve.com/p/Erdos393.erdos_393) | Erdős Problem 393 | open | Number Theory |  |  |
 | 917 | [`Erdos393.erdos_393.variants.berend_osgood`](https://lefttosolve.com/p/Erdos393.erdos_393.variants.berend_osgood) | Erdős Problem 393 — berend osgood | known | Number Theory |  |  |
 | 918 | [`Erdos393.erdos_393.variants.bui_pratt_zaharescu`](https://lefttosolve.com/p/Erdos393.erdos_393.variants.bui_pratt_zaharescu) | Erdős Problem 393 — bui pratt zaharescu | known | Number Theory |  |  |
@@ -943,16 +943,16 @@ Back to [all programs](../PROGRAMS.md).
 | 921 | [`Erdos394.erdos_394.variants.hall_bound`](https://lefttosolve.com/p/Erdos394.erdos_394.variants.hall_bound) | Erdős Problem 394 — hall bound | known | Number Theory |  | yes |
 | 922 | [`Erdos394.erdos_394.variants.hall_conjecture`](https://lefttosolve.com/p/Erdos394.erdos_394.variants.hall_conjecture) | Erdős Problem 394 — hall conjecture | open | Number Theory |  |  |
 | 923 | [`Erdos394.erdos_394.variants.lower_bound`](https://lefttosolve.com/p/Erdos394.erdos_394.variants.lower_bound) | Erdős Problem 394 — lower bound | known | Number Theory |  | yes |
-| 924 | [`Erdos395.erdos_395.variants.one`](https://lefttosolve.com/p/Erdos395.erdos_395.variants.one) | Erdős Problem 395 — one | known | Combinatorics, Probability |  |  |
-| 925 | [`Erdos395.erdos_395.variants.sharp`](https://lefttosolve.com/p/Erdos395.erdos_395.variants.sharp) | Erdős Problem 395 — sharp | known | Combinatorics, Probability |  |  |
+| 924 | [`Erdos395.erdos_395.variants.one`](https://lefttosolve.com/p/Erdos395.erdos_395.variants.one) | Erdős Problem 395 — one | known | Combinatorics, Probability |  | yes |
+| 925 | [`Erdos395.erdos_395.variants.sharp`](https://lefttosolve.com/p/Erdos395.erdos_395.variants.sharp) | Erdős Problem 395 — sharp | known | Combinatorics, Probability |  | yes |
 | 926 | [`Erdos396.erdos_396`](https://lefttosolve.com/p/Erdos396.erdos_396) | Erdős Problem 396 | open | Number Theory |  |  |
 | 927 | [`Erdos398.erdos_398`](https://lefttosolve.com/p/Erdos398.erdos_398) | Brocard's Problem | open | Number Theory |  |  |
-| 928 | [`Erdos399.erdos_399.variants.erdos_oblath`](https://lefttosolve.com/p/Erdos399.erdos_399.variants.erdos_oblath) | Erdős Problem 399 — erdos oblath | known | Number Theory |  |  |
+| 928 | [`Erdos399.erdos_399.variants.erdos_oblath`](https://lefttosolve.com/p/Erdos399.erdos_399.variants.erdos_oblath) | Erdős Problem 399 — erdos oblath | known | Number Theory |  | yes |
 | 929 | [`Erdos399.erdos_399.variants.pollack_shapiro`](https://lefttosolve.com/p/Erdos399.erdos_399.variants.pollack_shapiro) | Erdős Problem 399 — pollack shapiro | known | Number Theory |  | yes |
-| 930 | [`Erdos399.erdos_399.variants.sum_two_squares`](https://lefttosolve.com/p/Erdos399.erdos_399.variants.sum_two_squares) | Erdős Problem 399 — sum two squares | known | Number Theory |  |  |
-| 931 | [`Erdos4.erdos_4`](https://lefttosolve.com/p/Erdos4.erdos_4) | Erdős Problem 4 | known | Number Theory | $10000 |  |
+| 930 | [`Erdos399.erdos_399.variants.sum_two_squares`](https://lefttosolve.com/p/Erdos399.erdos_399.variants.sum_two_squares) | Erdős Problem 399 — sum two squares | known | Number Theory |  | yes |
+| 931 | [`Erdos4.erdos_4`](https://lefttosolve.com/p/Erdos4.erdos_4) | Erdős Problem 4 | known | Number Theory | $10000 | yes |
 | 932 | [`Erdos4.erdos_4.variants.rankin`](https://lefttosolve.com/p/Erdos4.erdos_4.variants.rankin) | Erdős Problem 4 — rankin | known | Number Theory | $10000 | yes |
-| 933 | [`Erdos40.erdos_40`](https://lefttosolve.com/p/Erdos40.erdos_40) | Erdős Problem 40 | open | Number Theory | $500 |  |
+| 933 | [`Erdos40.erdos_40`](https://lefttosolve.com/p/Erdos40.erdos_40) | Erdős Problem 40 | open | Number Theory | $500 | yes |
 | 934 | [`Erdos40.erdos_40.variants.weaker`](https://lefttosolve.com/p/Erdos40.erdos_40.variants.weaker) | Erdős Problem 40 — weaker | open | Number Theory | $500 |  |
 | 935 | [`Erdos400.erdos_400.parts.i`](https://lefttosolve.com/p/Erdos400.erdos_400.parts.i) | Erdős Problem 400 — i | open | Number Theory |  |  |
 | 936 | [`Erdos400.erdos_400.parts.ii`](https://lefttosolve.com/p/Erdos400.erdos_400.parts.ii) | Erdős Problem 400 — ii | open | Number Theory |  |  |
@@ -961,13 +961,13 @@ Back to [all programs](../PROGRAMS.md).
 | 939 | [`Erdos402.erdos_402.variants.equality`](https://lefttosolve.com/p/Erdos402.erdos_402.variants.equality) | Erdős Problem 402 — equality | known | Number Theory |  |  |
 | 940 | [`Erdos402.erdos_402.variants.szegedy_zaharescu_weak`](https://lefttosolve.com/p/Erdos402.erdos_402.variants.szegedy_zaharescu_weak) | Erdős Problem 402 — szegedy zaharescu weak | known | Number Theory |  |  |
 | 941 | [`Erdos405.erdos_405`](https://lefttosolve.com/p/Erdos405.erdos_405) | Erdős Problem 405 | known | Number Theory |  | yes |
-| 942 | [`Erdos405.erdos_405.variants.yu_liu`](https://lefttosolve.com/p/Erdos405.erdos_405.variants.yu_liu) | Erdős Problem 405 — yu liu | known | Number Theory |  |  |
+| 942 | [`Erdos405.erdos_405.variants.yu_liu`](https://lefttosolve.com/p/Erdos405.erdos_405.variants.yu_liu) | Erdős Problem 405 — yu liu | known | Number Theory |  | yes |
 | 943 | [`Erdos406.erdos_406`](https://lefttosolve.com/p/Erdos406.erdos_406) | Erdős Problem 406 | open | Number Theory |  |  |
 | 944 | [`Erdos406.erdos_406.variants.one_two`](https://lefttosolve.com/p/Erdos406.erdos_406.variants.one_two) | Erdős Problem 406 — one two | open | Number Theory |  |  |
 | 945 | [`Erdos408.erdos_408.parts.i`](https://lefttosolve.com/p/Erdos408.erdos_408.parts.i) | Erdős Problem 408 — i | open | Number Theory |  |  |
 | 946 | [`Erdos408.erdos_408.parts.ii`](https://lefttosolve.com/p/Erdos408.erdos_408.parts.ii) | Erdős Problem 408 — ii | open | Number Theory |  |  |
 | 947 | [`Erdos408.erdos_408.variants.ford_konyagin_luca`](https://lefttosolve.com/p/Erdos408.erdos_408.variants.ford_konyagin_luca) | Erdős Problem 408 — ford konyagin luca | known | Number Theory |  |  |
-| 948 | [`Erdos408.erdos_408.variants.pillai`](https://lefttosolve.com/p/Erdos408.erdos_408.variants.pillai) | Erdős Problem 408 — pillai | known | Number Theory |  |  |
+| 948 | [`Erdos408.erdos_408.variants.pillai`](https://lefttosolve.com/p/Erdos408.erdos_408.variants.pillai) | Erdős Problem 408 — pillai | known | Number Theory |  | yes |
 | 949 | [`Erdos409.erdos_409.parts.i`](https://lefttosolve.com/p/Erdos409.erdos_409.parts.i) | Erdős Problem 409 — i | open | Number Theory |  |  |
 | 950 | [`Erdos409.erdos_409.parts.i.isBigO`](https://lefttosolve.com/p/Erdos409.erdos_409.parts.i.isBigO) | Erdős Problem 409 — isBigO | open | Number Theory |  |  |
 | 951 | [`Erdos409.erdos_409.parts.i.isLittleO`](https://lefttosolve.com/p/Erdos409.erdos_409.parts.i.isLittleO) | Erdős Problem 409 — isLittleO | open | Number Theory |  |  |
@@ -991,7 +991,7 @@ Back to [all programs](../PROGRAMS.md).
 | 969 | [`Erdos413.erdos_413.variants.hasPosDensity_barrier_expProd`](https://lefttosolve.com/p/Erdos413.erdos_413.variants.hasPosDensity_barrier_expProd) | Erdős Problem 413 — hasPosDensity barrier expProd | known | Number Theory |  | yes |
 | 970 | [`Erdos414.erdos_414`](https://lefttosolve.com/p/Erdos414.erdos_414) | Erdős Problem 414 | open | Number Theory |  |  |
 | 971 | [`Erdos416.erdos_416.parts.ii`](https://lefttosolve.com/p/Erdos416.erdos_416.parts.ii) | Erdős Problem 416 — ii | open | Number Theory |  |  |
-| 972 | [`Erdos416.erdos_416.variants.Erdos`](https://lefttosolve.com/p/Erdos416.erdos_416.variants.Erdos) | Erdős Problem 416 — Erdos | known | Number Theory |  |  |
+| 972 | [`Erdos416.erdos_416.variants.Erdos`](https://lefttosolve.com/p/Erdos416.erdos_416.variants.Erdos) | Erdős Problem 416 — Erdos | known | Number Theory |  | yes |
 | 973 | [`Erdos416.erdos_416.variants.Ford`](https://lefttosolve.com/p/Erdos416.erdos_416.variants.Ford) | Erdős Problem 416 — Ford | known | Number Theory |  |  |
 | 974 | [`Erdos416.erdos_416.variants.Maier_Pomerance`](https://lefttosolve.com/p/Erdos416.erdos_416.variants.Maier_Pomerance) | Erdős Problem 416 — Maier Pomerance | known | Number Theory |  |  |
 | 975 | [`Erdos416.erdos_416.variants.Pillai`](https://lefttosolve.com/p/Erdos416.erdos_416.variants.Pillai) | Erdős Problem 416 — Pillai | known | Number Theory |  | yes |
@@ -1012,9 +1012,9 @@ Back to [all programs](../PROGRAMS.md).
 | 990 | [`Erdos422.erdos_422.variants.surjective`](https://lefttosolve.com/p/Erdos422.erdos_422.variants.surjective) | Erdős Problem 422 — surjective | open | Number Theory |  |  |
 | 991 | [`Erdos422.erdos_422.variants.well_defined`](https://lefttosolve.com/p/Erdos422.erdos_422.variants.well_defined) | Erdős Problem 422 — well defined | open | Number Theory |  |  |
 | 992 | [`Erdos423.erdos_423`](https://lefttosolve.com/p/Erdos423.erdos_423) | Erdős Problem 423 | open | Combinatorics, Number Theory |  |  |
-| 993 | [`Erdos423.erdos_423.variants.infinite_complement`](https://lefttosolve.com/p/Erdos423.erdos_423.variants.infinite_complement) | Erdős Problem 423 — infinite complement | known | Combinatorics, Number Theory |  |  |
-| 994 | [`Erdos423.erdos_423.variants.lower_bound`](https://lefttosolve.com/p/Erdos423.erdos_423.variants.lower_bound) | Erdős Problem 423 — lower bound | known | Combinatorics, Number Theory |  |  |
-| 995 | [`Erdos423.erdos_423.variants.unbounded`](https://lefttosolve.com/p/Erdos423.erdos_423.variants.unbounded) | Erdős Problem 423 — unbounded | known | Combinatorics, Number Theory |  |  |
+| 993 | [`Erdos423.erdos_423.variants.infinite_complement`](https://lefttosolve.com/p/Erdos423.erdos_423.variants.infinite_complement) | Erdős Problem 423 — infinite complement | known | Combinatorics, Number Theory |  | yes |
+| 994 | [`Erdos423.erdos_423.variants.lower_bound`](https://lefttosolve.com/p/Erdos423.erdos_423.variants.lower_bound) | Erdős Problem 423 — lower bound | known | Combinatorics, Number Theory |  | yes |
+| 995 | [`Erdos423.erdos_423.variants.unbounded`](https://lefttosolve.com/p/Erdos423.erdos_423.variants.unbounded) | Erdős Problem 423 — unbounded | known | Combinatorics, Number Theory |  | yes |
 | 996 | [`Erdos423.erdos_423.variants.upper_bound`](https://lefttosolve.com/p/Erdos423.erdos_423.variants.upper_bound) | Erdős Problem 423 — upper bound | known | Combinatorics, Number Theory |  |  |
 | 997 | [`Erdos424.erdos_424.variants.exact_density`](https://lefttosolve.com/p/Erdos424.erdos_424.variants.exact_density) | Erdős Problem 424: Sequence generated by $a_i a_j - 1$ — exact density | open | Number Theory |  |  |
 | 998 | [`Erdos425.erdos_425.parts.i`](https://lefttosolve.com/p/Erdos425.erdos_425.parts.i) | Erdős Problem 425 — i | open | Combinatorics, Number Theory |  |  |
@@ -1028,29 +1028,29 @@ Back to [all programs](../PROGRAMS.md).
 | 1006 | [`Erdos436.erdos_436.parts.i`](https://lefttosolve.com/p/Erdos436.erdos_436.parts.i) | Erdős Problem 436 — i | known | Number Theory |  | yes |
 | 1007 | [`Erdos436.erdos_436.parts.ii`](https://lefttosolve.com/p/Erdos436.erdos_436.parts.ii) | Erdős Problem 436 — ii | open | Number Theory |  |  |
 | 1008 | [`Erdos436.erdos_436.variants.even_three`](https://lefttosolve.com/p/Erdos436.erdos_436.variants.even_three) | Erdős Problem 436 — even three | known | Number Theory |  | yes |
-| 1009 | [`Erdos436.erdos_436.variants.five_two`](https://lefttosolve.com/p/Erdos436.erdos_436.variants.five_two) | Erdős Problem 436 — five two | known | Number Theory |  |  |
-| 1010 | [`Erdos436.erdos_436.variants.four_two`](https://lefttosolve.com/p/Erdos436.erdos_436.variants.four_two) | Erdős Problem 436 — four two | known | Number Theory |  |  |
+| 1009 | [`Erdos436.erdos_436.variants.five_two`](https://lefttosolve.com/p/Erdos436.erdos_436.variants.five_two) | Erdős Problem 436 — five two | known | Number Theory |  | yes |
+| 1010 | [`Erdos436.erdos_436.variants.four_two`](https://lefttosolve.com/p/Erdos436.erdos_436.variants.four_two) | Erdős Problem 436 — four two | known | Number Theory |  | yes |
 | 1011 | [`Erdos436.erdos_436.variants.ge_four`](https://lefttosolve.com/p/Erdos436.erdos_436.variants.ge_four) | Erdős Problem 436 — ge four | known | Number Theory |  |  |
-| 1012 | [`Erdos436.erdos_436.variants.seven_two`](https://lefttosolve.com/p/Erdos436.erdos_436.variants.seven_two) | Erdős Problem 436 — seven two | known | Number Theory |  |  |
-| 1013 | [`Erdos436.erdos_436.variants.six_two`](https://lefttosolve.com/p/Erdos436.erdos_436.variants.six_two) | Erdős Problem 436 — six two | known | Number Theory |  |  |
+| 1012 | [`Erdos436.erdos_436.variants.seven_two`](https://lefttosolve.com/p/Erdos436.erdos_436.variants.seven_two) | Erdős Problem 436 — seven two | known | Number Theory |  | yes |
+| 1013 | [`Erdos436.erdos_436.variants.six_two`](https://lefttosolve.com/p/Erdos436.erdos_436.variants.six_two) | Erdős Problem 436 — six two | known | Number Theory |  | yes |
 | 1014 | [`Erdos436.erdos_436.variants.three_three`](https://lefttosolve.com/p/Erdos436.erdos_436.variants.three_three) | Erdős Problem 436 — three three | known | Number Theory |  |  |
-| 1015 | [`Erdos436.erdos_436.variants.three_two`](https://lefttosolve.com/p/Erdos436.erdos_436.variants.three_two) | Erdős Problem 436 — three two | known | Number Theory |  |  |
+| 1015 | [`Erdos436.erdos_436.variants.three_two`](https://lefttosolve.com/p/Erdos436.erdos_436.variants.three_two) | Erdős Problem 436 — three two | known | Number Theory |  | yes |
 | 1016 | [`Erdos436.erdos_436.variants.two_two`](https://lefttosolve.com/p/Erdos436.erdos_436.variants.two_two) | Erdős Problem 436 — two two | known | Number Theory |  | yes |
-| 1017 | [`Erdos437.erdos_437.variants.little_o`](https://lefttosolve.com/p/Erdos437.erdos_437.variants.little_o) | Erdős Problem 437 — little o | known | Number Theory |  |  |
-| 1018 | [`Erdos437.erdos_437.variants.tao`](https://lefttosolve.com/p/Erdos437.erdos_437.variants.tao) | Erdős Problem 437 — tao | known | Number Theory |  |  |
+| 1017 | [`Erdos437.erdos_437.variants.little_o`](https://lefttosolve.com/p/Erdos437.erdos_437.variants.little_o) | Erdős Problem 437 — little o | known | Number Theory |  | yes |
+| 1018 | [`Erdos437.erdos_437.variants.tao`](https://lefttosolve.com/p/Erdos437.erdos_437.variants.tao) | Erdős Problem 437 — tao | known | Number Theory |  | yes |
 | 1019 | [`Erdos44.erdos_44`](https://lefttosolve.com/p/Erdos44.erdos_44) | Erdős Problem 44 | open | Combinatorics, Number Theory |  |  |
 | 1020 | [`Erdos44.erdos_44.variants.empty_start`](https://lefttosolve.com/p/Erdos44.erdos_44.variants.empty_start) | Erdős Problem 44: Extending Sidon Sets — empty start | known | Combinatorics, Number Theory |  | yes |
 | 1021 | [`Erdos44.greedy_sidon_construction`](https://lefttosolve.com/p/Erdos44.greedy_sidon_construction) | Erdős Problem 44: Extending Sidon Sets — greedy sidon construction | warmup | Combinatorics, Number Theory |  | yes |
 | 1022 | [`Erdos44.sidon_set_lower_bound`](https://lefttosolve.com/p/Erdos44.sidon_set_lower_bound) | Erdős Problem 44: Extending Sidon Sets — sidon set lower bound | warmup | Combinatorics, Number Theory |  | yes |
 | 1023 | [`Erdos441.erdos_441.variants.chen`](https://lefttosolve.com/p/Erdos441.erdos_441.variants.chen) | Erdős Problem 441 — chen | known | Number Theory |  |  |
-| 1024 | [`Erdos441.erdos_441.variants.chen_dai_infinitely_often`](https://lefttosolve.com/p/Erdos441.erdos_441.variants.chen_dai_infinitely_often) | Erdős Problem 441 — chen dai infinitely often | known | Number Theory |  |  |
+| 1024 | [`Erdos441.erdos_441.variants.chen_dai_infinitely_often`](https://lefttosolve.com/p/Erdos441.erdos_441.variants.chen_dai_infinitely_often) | Erdős Problem 441 — chen dai infinitely often | known | Number Theory |  | yes |
 | 1025 | [`Erdos441.erdos_441.variants.chen_dai_upper_bound`](https://lefttosolve.com/p/Erdos441.erdos_441.variants.chen_dai_upper_bound) | Erdős Problem 441 — chen dai upper bound | known | Number Theory |  |  |
-| 1026 | [`Erdos441.erdos_441.variants.erdos_upper_bound`](https://lefttosolve.com/p/Erdos441.erdos_441.variants.erdos_upper_bound) | Erdős Problem 441 — erdos upper bound | known | Number Theory |  |  |
-| 1027 | [`Erdos441.erdos_441.variants.lower_bound`](https://lefttosolve.com/p/Erdos441.erdos_441.variants.lower_bound) | Erdős Problem 441 — lower bound | known | Number Theory |  |  |
+| 1026 | [`Erdos441.erdos_441.variants.erdos_upper_bound`](https://lefttosolve.com/p/Erdos441.erdos_441.variants.erdos_upper_bound) | Erdős Problem 441 — erdos upper bound | known | Number Theory |  | yes |
+| 1027 | [`Erdos441.erdos_441.variants.lower_bound`](https://lefttosolve.com/p/Erdos441.erdos_441.variants.lower_bound) | Erdős Problem 441 — lower bound | known | Number Theory |  | yes |
 | 1028 | [`Erdos442.erdos_442.variants.tao`](https://lefttosolve.com/p/Erdos442.erdos_442.variants.tao) | Erdős Problem 442 — tao | known | Number Theory |  | yes |
 | 1029 | [`Erdos445.erdos_445`](https://lefttosolve.com/p/Erdos445.erdos_445) | Erdős Problem 445 | open | Number Theory |  |  |
-| 1030 | [`Erdos445.erdos_445.variants.heath_brown`](https://lefttosolve.com/p/Erdos445.erdos_445.variants.heath_brown) | Erdős Problem 445 — heath brown | known | Number Theory |  |  |
-| 1031 | [`Erdos445.erdos_445.variants.heilbronn`](https://lefttosolve.com/p/Erdos445.erdos_445.variants.heilbronn) | Erdős Problem 445 — heilbronn | known | Number Theory |  |  |
+| 1030 | [`Erdos445.erdos_445.variants.heath_brown`](https://lefttosolve.com/p/Erdos445.erdos_445.variants.heath_brown) | Erdős Problem 445 — heath brown | known | Number Theory |  | yes |
+| 1031 | [`Erdos445.erdos_445.variants.heilbronn`](https://lefttosolve.com/p/Erdos445.erdos_445.variants.heilbronn) | Erdős Problem 445 — heilbronn | known | Number Theory |  | yes |
 | 1032 | [`Erdos447.erdos_447.parts.i`](https://lefttosolve.com/p/Erdos447.erdos_447.parts.i) | Erdős Problem 447 — i | known | Combinatorics |  | yes |
 | 1033 | [`Erdos448.erdos_448.variants.erdos_tenenbaum`](https://lefttosolve.com/p/Erdos448.erdos_448.variants.erdos_tenenbaum) | Erdős Problem 448 — erdos tenenbaum | known | Number Theory |  |  |
 | 1034 | [`Erdos448.erdos_448.variants.ford`](https://lefttosolve.com/p/Erdos448.erdos_448.variants.ford) | Erdős Problem 448 — ford | known | Number Theory |  |  |
@@ -1059,9 +1059,9 @@ Back to [all programs](../PROGRAMS.md).
 | 1037 | [`Erdos450.erdos_450`](https://lefttosolve.com/p/Erdos450.erdos_450) | Erdős Problem 450 | open | Number Theory |  |  |
 | 1038 | [`Erdos452.erdos_452`](https://lefttosolve.com/p/Erdos452.erdos_452) | Erdős Problem 452 | open | Number Theory |  |  |
 | 1039 | [`Erdos454.erdos_454`](https://lefttosolve.com/p/Erdos454.erdos_454) | Erdős Problem 454 | open | Number Theory |  |  |
-| 1040 | [`Erdos454.erdos_454.variants.two_le_limsup`](https://lefttosolve.com/p/Erdos454.erdos_454.variants.two_le_limsup) | Erdős Problem 454 — two le limsup | known | Number Theory |  |  |
+| 1040 | [`Erdos454.erdos_454.variants.two_le_limsup`](https://lefttosolve.com/p/Erdos454.erdos_454.variants.two_le_limsup) | Erdős Problem 454 — two le limsup | known | Number Theory |  | yes |
 | 1041 | [`Erdos455.erdos_455`](https://lefttosolve.com/p/Erdos455.erdos_455) | Erdős Problem 455 | open | Number Theory |  |  |
-| 1042 | [`Erdos455.erdos_455.variants.liminf`](https://lefttosolve.com/p/Erdos455.erdos_455.variants.liminf) | Erdős Problem 455 — liminf | known | Number Theory |  |  |
+| 1042 | [`Erdos455.erdos_455.variants.liminf`](https://lefttosolve.com/p/Erdos455.erdos_455.variants.liminf) | Erdős Problem 455 — liminf | known | Number Theory |  | yes |
 | 1043 | [`Erdos456.erdos_456.parts.i`](https://lefttosolve.com/p/Erdos456.erdos_456.parts.i) | Erdős Problem 456 — i | open | Number Theory |  |  |
 | 1044 | [`Erdos456.erdos_456.parts.ii`](https://lefttosolve.com/p/Erdos456.erdos_456.parts.ii) | Erdős Problem 456 — ii | open | Number Theory |  |  |
 | 1045 | [`Erdos456.erdos_456.parts.iii`](https://lefttosolve.com/p/Erdos456.erdos_456.parts.iii) | Erdős Problem 456 — iii | open | Number Theory |  |  |
@@ -1069,22 +1069,22 @@ Back to [all programs](../PROGRAMS.md).
 | 1047 | [`Erdos456.erdos_456.variants.m_div_n`](https://lefttosolve.com/p/Erdos456.erdos_456.variants.m_div_n) | Erdős Problem 456 — m div n | known | Number Theory |  | yes |
 | 1048 | [`Erdos457.erdos_457.variants.one_sub`](https://lefttosolve.com/p/Erdos457.erdos_457.variants.one_sub) | Erdős Problem 457 — one sub | open | Number Theory |  |  |
 | 1049 | [`Erdos458.erdos_458`](https://lefttosolve.com/p/Erdos458.erdos_458) | Erdős Problem 458 | open | Number Theory |  |  |
-| 1050 | [`Erdos46.erdos_46.variants.infinitely_many_disjoint`](https://lefttosolve.com/p/Erdos46.erdos_46.variants.infinitely_many_disjoint) | Erdős Problem 46 — infinitely many disjoint | known | Combinatorics, Number Theory |  |  |
-| 1051 | [`Erdos46.erdos_46.variants.positive_rat`](https://lefttosolve.com/p/Erdos46.erdos_46.variants.positive_rat) | Erdős Problem 46 — positive rat | known | Combinatorics, Number Theory |  |  |
+| 1050 | [`Erdos46.erdos_46.variants.infinitely_many_disjoint`](https://lefttosolve.com/p/Erdos46.erdos_46.variants.infinitely_many_disjoint) | Erdős Problem 46 — infinitely many disjoint | known | Combinatorics, Number Theory |  | yes |
+| 1051 | [`Erdos46.erdos_46.variants.positive_rat`](https://lefttosolve.com/p/Erdos46.erdos_46.variants.positive_rat) | Erdős Problem 46 — positive rat | known | Combinatorics, Number Theory |  | yes |
 | 1052 | [`Erdos461.erdos_461`](https://lefttosolve.com/p/Erdos461.erdos_461) | Erdős Problem 461 | open | Number Theory |  |  |
 | 1053 | [`Erdos462.erdos_462`](https://lefttosolve.com/p/Erdos462.erdos_462) | Erdős Problem 462 | open | Number Theory |  |  |
 | 1054 | [`Erdos463.erdos_463`](https://lefttosolve.com/p/Erdos463.erdos_463) | Erdős Problem 463 | open | Number Theory |  |  |
-| 1055 | [`Erdos466.erdos_466.variants.graham`](https://lefttosolve.com/p/Erdos466.erdos_466.variants.graham) | Erdős Problem 466 — graham | known | Convex & Discrete Geometry, Number Theory |  |  |
+| 1055 | [`Erdos466.erdos_466.variants.graham`](https://lefttosolve.com/p/Erdos466.erdos_466.variants.graham) | Erdős Problem 466 — graham | known | Convex & Discrete Geometry, Number Theory |  | yes |
 | 1056 | [`Erdos466.erdos_466.variants.sarkozy`](https://lefttosolve.com/p/Erdos466.erdos_466.variants.sarkozy) | Erdős Problem 466 — sarkozy | known | Convex & Discrete Geometry, Number Theory |  |  |
 | 1057 | [`Erdos467.erdos_467`](https://lefttosolve.com/p/Erdos467.erdos_467) | Erdős Problem 467 | open | Number Theory |  |  |
 | 1058 | [`Erdos470.erdos_470.parts.i`](https://lefttosolve.com/p/Erdos470.erdos_470.parts.i) | Erdős Problem 470 — i | open | Number Theory | $10 |  |
 | 1059 | [`Erdos470.erdos_470.parts.ii`](https://lefttosolve.com/p/Erdos470.erdos_470.parts.ii) | Erdős Problem 470 — ii | open | Number Theory | $10 |  |
 | 1060 | [`Erdos470.erdos_470.variants.odd_weird_10_pow_21`](https://lefttosolve.com/p/Erdos470.erdos_470.variants.odd_weird_10_pow_21) | Erdős Problem 470 — odd weird 10 pow 21 | known | Number Theory | $10 |  |
 | 1061 | [`Erdos470.erdos_470.variants.odd_weird_prime_div`](https://lefttosolve.com/p/Erdos470.erdos_470.variants.odd_weird_prime_div) | Erdős Problem 470 — odd weird prime div | known | Number Theory | $10 |  |
-| 1062 | [`Erdos470.erdos_470.variants.prime_gap_imp_inf_prim_weird`](https://lefttosolve.com/p/Erdos470.erdos_470.variants.prime_gap_imp_inf_prim_weird) | Erdős Problem 470 — prime gap imp inf prim weird | known | Number Theory | $10 |  |
-| 1063 | [`Erdos470.erdos_470.variants.weird_pos_density`](https://lefttosolve.com/p/Erdos470.erdos_470.variants.weird_pos_density) | Erdős Problem 470 — weird pos density | known | Number Theory | $10 |  |
+| 1062 | [`Erdos470.erdos_470.variants.prime_gap_imp_inf_prim_weird`](https://lefttosolve.com/p/Erdos470.erdos_470.variants.prime_gap_imp_inf_prim_weird) | Erdős Problem 470 — prime gap imp inf prim weird | known | Number Theory | $10 | yes |
+| 1063 | [`Erdos470.erdos_470.variants.weird_pos_density`](https://lefttosolve.com/p/Erdos470.erdos_470.variants.weird_pos_density) | Erdős Problem 470 — weird pos density | known | Number Theory | $10 | yes |
 | 1064 | [`Erdos472.erdos_472`](https://lefttosolve.com/p/Erdos472.erdos_472) | Erdős Problem 472 | open | Number Theory |  |  |
-| 1065 | [`Erdos473.erdos_473.variants.finite`](https://lefttosolve.com/p/Erdos473.erdos_473.variants.finite) | Erdős Problem 473 — finite | open | Number Theory |  |  |
+| 1065 | [`Erdos473.erdos_473.variants.finite`](https://lefttosolve.com/p/Erdos473.erdos_473.variants.finite) | Erdős Problem 473 — finite | open | Number Theory |  | yes |
 | 1066 | [`Erdos477.erdos_477.variants.S_sq`](https://lefttosolve.com/p/Erdos477.erdos_477.variants.S_sq) | Erdős Problem 477 — S sq | known | Field Theory |  | yes |
 | 1067 | [`Erdos477.erdos_477.variants.X_pow_three`](https://lefttosolve.com/p/Erdos477.erdos_477.variants.X_pow_three) | Erdős Problem 477 — X pow three | open | Field Theory |  |  |
 | 1068 | [`Erdos477.erdos_477.variants.degree_two_dvd_condition_b_ne_zero`](https://lefttosolve.com/p/Erdos477.erdos_477.variants.degree_two_dvd_condition_b_ne_zero) | Erdős Problem 477 — degree two dvd condition b ne zero | known | Field Theory |  | yes |
@@ -1095,20 +1095,20 @@ Back to [all programs](../PROGRAMS.md).
 | 1073 | [`Erdos481.erdos_481`](https://lefttosolve.com/p/Erdos481.erdos_481) | Erdős Problem 481 | known | Combinatorics, Number Theory |  | yes |
 | 1074 | [`Erdos482.erdos_482.variants.stoll_explicit`](https://lefttosolve.com/p/Erdos482.erdos_482.variants.stoll_explicit) | Erdős Problem 482 — stoll explicit | known | Number Theory |  | yes |
 | 1075 | [`Erdos483.erdos_483`](https://lefttosolve.com/p/Erdos483.erdos_483) | Erdős Problem 483 | open | Combinatorics, Number Theory |  |  |
-| 1076 | [`Erdos488.erdos_488`](https://lefttosolve.com/p/Erdos488.erdos_488) | Erdős Problem 488 | open | Combinatorics, Number Theory |  |  |
+| 1076 | [`Erdos488.erdos_488`](https://lefttosolve.com/p/Erdos488.erdos_488) | Erdős Problem 488 | open | Combinatorics, Number Theory |  | yes |
 | 1077 | [`Erdos489.erdos_489.variants.squarefree`](https://lefttosolve.com/p/Erdos489.erdos_489.variants.squarefree) | Erdős Problem 489 — squarefree | known | Number Theory |  | yes |
 | 1078 | [`Erdos49.erdos_49.variants.primes_maximal`](https://lefttosolve.com/p/Erdos49.erdos_49.variants.primes_maximal) | Erdős Problem 49 — primes maximal | open | Number Theory |  |  |
 | 1079 | [`Erdos490.erdos_490.variants.limit`](https://lefttosolve.com/p/Erdos490.erdos_490.variants.limit) | Erdős Problem 490 — limit | open | Number Theory |  |  |
 | 1080 | [`Erdos494.erdos_494.variants.gordon_fraenkel_straus`](https://lefttosolve.com/p/Erdos494.erdos_494.variants.gordon_fraenkel_straus) | Erdős Problem 494 — gordon fraenkel straus | known | Combinatorics |  |  |
 | 1081 | [`Erdos494.erdos_494.variants.product`](https://lefttosolve.com/p/Erdos494.erdos_494.variants.product) | Erdős Problem 494 — product | known | Combinatorics |  | yes |
 | 1082 | [`Erdos495.erdos_495`](https://lefttosolve.com/p/Erdos495.erdos_495) | Erdős Problem 495 | open | Number Theory |  |  |
-| 1083 | [`Erdos499.erdos_499.variants.one_le`](https://lefttosolve.com/p/Erdos499.erdos_499.variants.one_le) | Erdős Problem 499 — one le | known | Linear Algebra |  |  |
+| 1083 | [`Erdos499.erdos_499.variants.one_le`](https://lefttosolve.com/p/Erdos499.erdos_499.variants.one_le) | Erdős Problem 499 — one le | known | Linear Algebra |  | yes |
 | 1084 | [`Erdos499.vanDerWaerden`](https://lefttosolve.com/p/Erdos499.vanDerWaerden) | Erdős Problem 499 | known | Linear Algebra |  | yes |
 | 1085 | [`Erdos5.erdos_5`](https://lefttosolve.com/p/Erdos5.erdos_5) | Erdős Problem 5 | open | Number Theory |  |  |
 | 1086 | [`Erdos5.erdos_5.variants.banks_freiberg_maynard`](https://lefttosolve.com/p/Erdos5.erdos_5.variants.banks_freiberg_maynard) | Erdős Problem 5 — banks freiberg maynard | known | Number Theory |  |  |
 | 1087 | [`Erdos5.erdos_5.variants.banks_freiberg_maynard_measure`](https://lefttosolve.com/p/Erdos5.erdos_5.variants.banks_freiberg_maynard_measure) | Erdős Problem 5 — banks freiberg maynard measure | known | Number Theory |  |  |
 | 1088 | [`Erdos5.erdos_5.variants.dense`](https://lefttosolve.com/p/Erdos5.erdos_5.variants.dense) | Erdős Problem 5 — dense | open | Number Theory |  |  |
-| 1089 | [`Erdos5.erdos_5.variants.erdos_ricci`](https://lefttosolve.com/p/Erdos5.erdos_5.variants.erdos_ricci) | Erdős Problem 5 — erdos ricci | known | Number Theory |  |  |
+| 1089 | [`Erdos5.erdos_5.variants.erdos_ricci`](https://lefttosolve.com/p/Erdos5.erdos_5.variants.erdos_ricci) | Erdős Problem 5 — erdos ricci | known | Number Theory |  | yes |
 | 1090 | [`Erdos5.erdos_5.variants.goldston_pintz_yildirim`](https://lefttosolve.com/p/Erdos5.erdos_5.variants.goldston_pintz_yildirim) | Erdős Problem 5 — goldston pintz yildirim | known | Number Theory |  |  |
 | 1091 | [`Erdos5.erdos_5.variants.hildebrand_maier`](https://lefttosolve.com/p/Erdos5.erdos_5.variants.hildebrand_maier) | Erdős Problem 5 — hildebrand maier | known | Number Theory |  |  |
 | 1092 | [`Erdos5.erdos_5.variants.hildebrand_maier_measure`](https://lefttosolve.com/p/Erdos5.erdos_5.variants.hildebrand_maier_measure) | Erdős Problem 5 — hildebrand maier measure | known | Number Theory |  |  |
@@ -1120,22 +1120,22 @@ Back to [all programs](../PROGRAMS.md).
 | 1098 | [`Erdos5.erdos_5.variants.westzynthius`](https://lefttosolve.com/p/Erdos5.erdos_5.variants.westzynthius) | Erdős Problem 5 — westzynthius | known | Number Theory |  | yes |
 | 1099 | [`Erdos50.erdos_50`](https://lefttosolve.com/p/Erdos50.erdos_50) | Erdős Problem 50 — erdos 50 | open | Number Theory | $250 |  |
 | 1100 | [`Erdos50.erdos_50_schoenberg`](https://lefttosolve.com/p/Erdos50.erdos_50_schoenberg) | Erdős Problem 50 — erdos 50 schoenberg | known | Number Theory | $250 | yes |
-| 1101 | [`Erdos50.erdos_50_singular`](https://lefttosolve.com/p/Erdos50.erdos_50_singular) | Erdős Problem 50 — erdos 50 singular | known | Number Theory | $250 |  |
+| 1101 | [`Erdos50.erdos_50_singular`](https://lefttosolve.com/p/Erdos50.erdos_50_singular) | Erdős Problem 50 — erdos 50 singular | known | Number Theory | $250 | yes |
 | 1102 | [`Erdos500.erdos_500`](https://lefttosolve.com/p/Erdos500.erdos_500) | Erdős Problem 500 | open | Combinatorics | $500 |  |
 | 1103 | [`Erdos500.erdos_500.variants.asymptotic`](https://lefttosolve.com/p/Erdos500.erdos_500.variants.asymptotic) | Erdős Problem 500 — asymptotic | open | Combinatorics | $500 |  |
 | 1104 | [`Erdos500.erdos_500.variants.lower_bound`](https://lefttosolve.com/p/Erdos500.erdos_500.variants.lower_bound) | Erdős Problem 500 — lower bound | known | Combinatorics | $500 | yes |
 | 1105 | [`Erdos500.erdos_500.variants.turan_conjecture`](https://lefttosolve.com/p/Erdos500.erdos_500.variants.turan_conjecture) | Erdős Problem 500 — turan conjecture | open | Combinatorics | $500 |  |
 | 1106 | [`Erdos501.erdos_501`](https://lefttosolve.com/p/Erdos501.erdos_501) | Erdős Problem 501 | open | Combinatorics, Measure & Integration |  |  |
-| 1107 | [`Erdos501.erdos_501.variants.erdosHajnal_finite`](https://lefttosolve.com/p/Erdos501.erdos_501.variants.erdosHajnal_finite) | Erdős–Hajnal (1960): arbitrarily large finite independent sets exist. | known | Combinatorics, Measure & Integration |  |  |
-| 1108 | [`Erdos501.erdos_501.variants.gladysz_size2`](https://lefttosolve.com/p/Erdos501.erdos_501.variants.gladysz_size2) | Gladysz (1962) [Gl62]: independent set of size 2 in the closed case. | known | Combinatorics, Measure & Integration |  |  |
-| 1109 | [`Erdos501.erdos_501.variants.hechler_CH`](https://lefttosolve.com/p/Erdos501.erdos_501.variants.hechler_CH) | Erdős Problem 501 — hechler CH | known | Combinatorics, Measure & Integration |  |  |
+| 1107 | [`Erdos501.erdos_501.variants.erdosHajnal_finite`](https://lefttosolve.com/p/Erdos501.erdos_501.variants.erdosHajnal_finite) | Erdős–Hajnal (1960): arbitrarily large finite independent sets exist. | known | Combinatorics, Measure & Integration |  | yes |
+| 1108 | [`Erdos501.erdos_501.variants.gladysz_size2`](https://lefttosolve.com/p/Erdos501.erdos_501.variants.gladysz_size2) | Gladysz (1962) [Gl62]: independent set of size 2 in the closed case. | known | Combinatorics, Measure & Integration |  | yes |
+| 1109 | [`Erdos501.erdos_501.variants.hechler_CH`](https://lefttosolve.com/p/Erdos501.erdos_501.variants.hechler_CH) | Erdős Problem 501 — hechler CH | known | Combinatorics, Measure & Integration |  | yes |
 | 1110 | [`Erdos503.erdos_503`](https://lefttosolve.com/p/Erdos503.erdos_503) | Erdős Problem 503 | open | Geometry |  |  |
-| 1111 | [`Erdos503.erdos_503.variants.R2`](https://lefttosolve.com/p/Erdos503.erdos_503.variants.R2) | Erdős Problem 503 — R2 | known | Geometry |  |  |
-| 1112 | [`Erdos503.erdos_503.variants.R3`](https://lefttosolve.com/p/Erdos503.erdos_503.variants.R3) | Erdős Problem 503 — R3 | known | Geometry |  |  |
-| 1113 | [`Erdos503.erdos_503.variants.lower_bound`](https://lefttosolve.com/p/Erdos503.erdos_503.variants.lower_bound) | Erdős Problem 503 — lower bound | known | Geometry |  |  |
-| 1114 | [`Erdos503.erdos_503.variants.upper_bound`](https://lefttosolve.com/p/Erdos503.erdos_503.variants.upper_bound) | Erdős Problem 503 — upper bound | known | Geometry |  |  |
-| 1115 | [`Erdos504.erdos_504`](https://lefttosolve.com/p/Erdos504.erdos_504) | Erdős–Szekeres (1960). — erdos 504 | known | Convex & Discrete Geometry |  |  |
-| 1116 | [`Erdos504.erdos_504.variants.endpoint`](https://lefttosolve.com/p/Erdos504.erdos_504.variants.endpoint) | Erdős–Szekeres (1960). — endpoint | known | Convex & Discrete Geometry |  |  |
+| 1111 | [`Erdos503.erdos_503.variants.R2`](https://lefttosolve.com/p/Erdos503.erdos_503.variants.R2) | Erdős Problem 503 — R2 | known | Geometry |  | yes |
+| 1112 | [`Erdos503.erdos_503.variants.R3`](https://lefttosolve.com/p/Erdos503.erdos_503.variants.R3) | Erdős Problem 503 — R3 | known | Geometry |  | yes |
+| 1113 | [`Erdos503.erdos_503.variants.lower_bound`](https://lefttosolve.com/p/Erdos503.erdos_503.variants.lower_bound) | Erdős Problem 503 — lower bound | known | Geometry |  | yes |
+| 1114 | [`Erdos503.erdos_503.variants.upper_bound`](https://lefttosolve.com/p/Erdos503.erdos_503.variants.upper_bound) | Erdős Problem 503 — upper bound | known | Geometry |  | yes |
+| 1115 | [`Erdos504.erdos_504`](https://lefttosolve.com/p/Erdos504.erdos_504) | Erdős–Szekeres (1960). — erdos 504 | known | Convex & Discrete Geometry |  | yes |
+| 1116 | [`Erdos504.erdos_504.variants.endpoint`](https://lefttosolve.com/p/Erdos504.erdos_504.variants.endpoint) | Erdős–Szekeres (1960). — endpoint | known | Convex & Discrete Geometry |  | yes |
 | 1117 | [`Erdos504.erdos_504.variants.sendov`](https://lefttosolve.com/p/Erdos504.erdos_504.variants.sendov) | Sendov (1995). | known | Convex & Discrete Geometry |  |  |
 | 1118 | [`Erdos505.erdos_505.small_dim`](https://lefttosolve.com/p/Erdos505.erdos_505.small_dim) | Borsuk's conjecture, small dimensions | known | Convex & Discrete Geometry |  | yes |
 | 1119 | [`Erdos506.erdos_506`](https://lefttosolve.com/p/Erdos506.erdos_506) | Erdős Problem 506 | open | Convex & Discrete Geometry, Geometry |  |  |
@@ -1149,19 +1149,19 @@ Back to [all programs](../PROGRAMS.md).
 | 1127 | [`Erdos507.erdos_507.variants.lower_kps82`](https://lefttosolve.com/p/Erdos507.erdos_507.variants.lower_kps82) | Erdős Problem 507 — lower kps82 | known | Geometry |  |  |
 | 1128 | [`Erdos507.erdos_507.variants.upper_cpz24`](https://lefttosolve.com/p/Erdos507.erdos_507.variants.upper_cpz24) | Erdős Problem 507 — upper cpz24 | known | Geometry |  |  |
 | 1129 | [`Erdos507.erdos_507.variants.upper_trivial`](https://lefttosolve.com/p/Erdos507.erdos_507.variants.upper_trivial) | Erdős Problem 507 — upper trivial | known | Geometry |  | yes |
-| 1130 | [`Erdos508.HadwigerNelsonAtLeastFive`](https://lefttosolve.com/p/Erdos508.HadwigerNelsonAtLeastFive) | Erdős Problem 508 — HadwigerNelsonAtLeastFive | known | Convex & Discrete Geometry |  |  |
+| 1130 | [`Erdos508.HadwigerNelsonAtLeastFive`](https://lefttosolve.com/p/Erdos508.HadwigerNelsonAtLeastFive) | Erdős Problem 508 — HadwigerNelsonAtLeastFive | known | Convex & Discrete Geometry |  | yes |
 | 1131 | [`Erdos508.HadwigerNelsonProblem`](https://lefttosolve.com/p/Erdos508.HadwigerNelsonProblem) | Erdős Problem 508 — HadwigerNelsonProblem | open | Convex & Discrete Geometry |  |  |
 | 1132 | [`Erdos509.erdos_509`](https://lefttosolve.com/p/Erdos509.erdos_509) | Erdős Problem 509 | open | Complex Analysis |  |  |
-| 1133 | [`Erdos509.erdos_509.variants.Cartan_bound`](https://lefttosolve.com/p/Erdos509.erdos_509.variants.Cartan_bound) | Erdős Problem 509 — Cartan bound | known | Complex Analysis |  |  |
-| 1134 | [`Erdos509.erdos_509.variants.Pommerenke_connected`](https://lefttosolve.com/p/Erdos509.erdos_509.variants.Pommerenke_connected) | Erdős Problem 509 — Pommerenke connected | known | Complex Analysis |  |  |
+| 1133 | [`Erdos509.erdos_509.variants.Cartan_bound`](https://lefttosolve.com/p/Erdos509.erdos_509.variants.Cartan_bound) | Erdős Problem 509 — Cartan bound | known | Complex Analysis |  | yes |
+| 1134 | [`Erdos509.erdos_509.variants.Pommerenke_connected`](https://lefttosolve.com/p/Erdos509.erdos_509.variants.Pommerenke_connected) | Erdős Problem 509 — Pommerenke connected | known | Complex Analysis |  | yes |
 | 1135 | [`Erdos51.erdos_51`](https://lefttosolve.com/p/Erdos51.erdos_51) | Erdős Problem 51 | open | Number Theory |  |  |
-| 1136 | [`Erdos510.erdos_510`](https://lefttosolve.com/p/Erdos510.erdos_510) | Chowla's cosine problem | open | Number Theory |  |  |
+| 1136 | [`Erdos510.erdos_510`](https://lefttosolve.com/p/Erdos510.erdos_510) | Chowla's cosine problem | open | Number Theory |  | yes |
 | 1137 | [`Erdos510.erdos_510.variants.bedert`](https://lefttosolve.com/p/Erdos510.erdos_510.variants.bedert) | Erdős Problem 510 — bedert | known | Number Theory |  |  |
-| 1138 | [`Erdos510.erdos_510.variants.ruzsa`](https://lefttosolve.com/p/Erdos510.erdos_510.variants.ruzsa) | Erdős Problem 510 — ruzsa | known | Number Theory |  |  |
+| 1138 | [`Erdos510.erdos_510.variants.ruzsa`](https://lefttosolve.com/p/Erdos510.erdos_510.variants.ruzsa) | Erdős Problem 510 — ruzsa | known | Number Theory |  | yes |
 | 1139 | [`Erdos513.erdos_513`](https://lefttosolve.com/p/Erdos513.erdos_513) | Erdős Problem 513 | open | Complex Analysis |  |  |
 | 1140 | [`Erdos513.erdos_513.variants.lower_bound`](https://lefttosolve.com/p/Erdos513.erdos_513.variants.lower_bound) | Erdős Problem 513 — lower bound | known | Complex Analysis |  | yes |
-| 1141 | [`Erdos513.erdos_513.variants.upper_bound`](https://lefttosolve.com/p/Erdos513.erdos_513.variants.upper_bound) | Erdős Problem 513 — upper bound | known | Complex Analysis |  |  |
-| 1142 | [`Erdos516.erdos_516.variants.limsup_ratio_eq_one`](https://lefttosolve.com/p/Erdos516.erdos_516.variants.limsup_ratio_eq_one) | Erdős Problem 516 — limsup ratio eq one | known | Complex Analysis |  |  |
+| 1141 | [`Erdos513.erdos_513.variants.upper_bound`](https://lefttosolve.com/p/Erdos513.erdos_513.variants.upper_bound) | Erdős Problem 513 — upper bound | known | Complex Analysis |  | yes |
+| 1142 | [`Erdos516.erdos_516.variants.limsup_ratio_eq_one`](https://lefttosolve.com/p/Erdos516.erdos_516.variants.limsup_ratio_eq_one) | Erdős Problem 516 — limsup ratio eq one | known | Complex Analysis |  | yes |
 | 1143 | [`Erdos517.erdos_517`](https://lefttosolve.com/p/Erdos517.erdos_517) | Erdős Problem 517 | open | Complex Analysis |  |  |
 | 1144 | [`Erdos517.erdos_517.variants.fejer`](https://lefttosolve.com/p/Erdos517.erdos_517.variants.fejer) | Erdős Problem 517 — fejer | known | Complex Analysis |  |  |
 | 1145 | [`Erdos52.erdos_52`](https://lefttosolve.com/p/Erdos52.erdos_52) | Erdős Problem 52 | open | Number Theory | $250 |  |
@@ -1170,7 +1170,7 @@ Back to [all programs](../PROGRAMS.md).
 | 1148 | [`Erdos525.erdos_525.variants.kashin`](https://lefttosolve.com/p/Erdos525.erdos_525.variants.kashin) | Erdős Problem 525 — kashin | known | Complex Analysis, Probability |  |  |
 | 1149 | [`Erdos525.erdos_525.variants.konyagin`](https://lefttosolve.com/p/Erdos525.erdos_525.variants.konyagin) | Erdős Problem 525 — konyagin | known | Complex Analysis, Probability |  |  |
 | 1150 | [`Erdos525.erdos_525.variants.konyagin_schlag`](https://lefttosolve.com/p/Erdos525.erdos_525.variants.konyagin_schlag) | Erdős Problem 525 — konyagin schlag | known | Complex Analysis, Probability |  |  |
-| 1151 | [`Erdos53.erdos_53.variants.upper`](https://lefttosolve.com/p/Erdos53.erdos_53.variants.upper) | Erdős Problem 53 — upper | known | Number Theory |  |  |
+| 1151 | [`Erdos53.erdos_53.variants.upper`](https://lefttosolve.com/p/Erdos53.erdos_53.variants.upper) | Erdős Problem 53 — upper | known | Number Theory |  | yes |
 | 1152 | [`Erdos533.erdos_533.variants.delta_four_eq_zero`](https://lefttosolve.com/p/Erdos533.erdos_533.variants.delta_four_eq_zero) | Erdős Problem 533 — delta four eq zero | known | Combinatorics |  | yes |
 | 1153 | [`Erdos533.erdos_533.variants.delta_seven_ge_quarter`](https://lefttosolve.com/p/Erdos533.erdos_533.variants.delta_seven_ge_quarter) | Erdős Problem 533 — delta seven ge quarter | known | Combinatorics |  | yes |
 | 1154 | [`Erdos533.erdos_533.variants.ehsss_upper`](https://lefttosolve.com/p/Erdos533.erdos_533.variants.ehsss_upper) | Erdős Problem 533 — ehsss upper | known | Combinatorics |  | yes |
@@ -1187,7 +1187,7 @@ Back to [all programs](../PROGRAMS.md).
 | 1165 | [`Erdos539.erdos_539`](https://lefttosolve.com/p/Erdos539.erdos_539) | Erdős Problem 539 | open | Combinatorics, Number Theory |  |  |
 | 1166 | [`Erdos539.erdos_539.variants.isBigO_sq_cube_root`](https://lefttosolve.com/p/Erdos539.erdos_539.variants.isBigO_sq_cube_root) | Erdős Problem 539 — isBigO sq cube root | known | Combinatorics, Number Theory |  | yes |
 | 1167 | [`Erdos539.erdos_539.variants.sq_isBigO`](https://lefttosolve.com/p/Erdos539.erdos_539.variants.sq_isBigO) | Erdős Problem 539 — sq isBigO | known | Combinatorics, Number Theory |  | yes |
-| 1168 | [`Erdos541.erdos_541.variants.general_moduli`](https://lefttosolve.com/p/Erdos541.erdos_541.variants.general_moduli) | Erdős Problem 541 — general moduli | known | Number Theory |  |  |
+| 1168 | [`Erdos541.erdos_541.variants.general_moduli`](https://lefttosolve.com/p/Erdos541.erdos_541.variants.general_moduli) | Erdős Problem 541 — general moduli | known | Number Theory |  | yes |
 | 1169 | [`Erdos541.erdos_541.variants.large_primes`](https://lefttosolve.com/p/Erdos541.erdos_541.variants.large_primes) | Erdős Problem 541 — large primes | known | Number Theory |  | yes |
 | 1170 | [`Erdos542.erdos_542.variants.chen`](https://lefttosolve.com/p/Erdos542.erdos_542.variants.chen) | Erdős Problem 542 — chen | known | Number Theory |  |  |
 | 1171 | [`Erdos542.erdos_542.variants.log_power`](https://lefttosolve.com/p/Erdos542.erdos_542.variants.log_power) | Erdős Problem 542 — log power | known | Number Theory |  | yes |
@@ -1199,12 +1199,12 @@ Back to [all programs](../PROGRAMS.md).
 | 1177 | [`Erdos547.erdos_547.variants.sufficiently_large`](https://lefttosolve.com/p/Erdos547.erdos_547.variants.sufficiently_large) | Erdős Problem 547 — sufficiently large | known | Combinatorics |  | yes |
 | 1178 | [`Erdos549.erdos_549`](https://lefttosolve.com/p/Erdos549.erdos_549) | Erdős Problem 549 | known | Combinatorics |  | yes |
 | 1179 | [`Erdos551.erdos_551`](https://lefttosolve.com/p/Erdos551.erdos_551) | Erdős Problem 551 | open | Combinatorics |  |  |
-| 1180 | [`Erdos551.erdos_551.variants.sufficiently_large`](https://lefttosolve.com/p/Erdos551.erdos_551.variants.sufficiently_large) | Erdős Problem 551 — sufficiently large | known | Combinatorics |  |  |
+| 1180 | [`Erdos551.erdos_551.variants.sufficiently_large`](https://lefttosolve.com/p/Erdos551.erdos_551.variants.sufficiently_large) | Erdős Problem 551 — sufficiently large | known | Combinatorics |  | yes |
 | 1181 | [`Erdos552.erdos_552.parts.i`](https://lefttosolve.com/p/Erdos552.erdos_552.parts.i) | Erdős Problem 552 — i | open | Combinatorics | $100 |  |
 | 1182 | [`Erdos552.erdos_552.parts.ii`](https://lefttosolve.com/p/Erdos552.erdos_552.parts.ii) | Erdős Problem 552 — ii | open | Combinatorics | $100 |  |
 | 1183 | [`Erdos554.erdos_554`](https://lefttosolve.com/p/Erdos554.erdos_554) | Erdős Problem 554 — erdos 554 | open | Combinatorics |  |  |
-| 1184 | [`Erdos554.erdos_554.variants.acjmr`](https://lefttosolve.com/p/Erdos554.erdos_554.variants.acjmr) | Erdős Problem 554 — acjmr | known | Combinatorics |  |  |
-| 1185 | [`Erdos554.erdos_554.variants.day_johnson`](https://lefttosolve.com/p/Erdos554.erdos_554.variants.day_johnson) | Erdős Problem 554 — day johnson | known | Combinatorics |  |  |
+| 1184 | [`Erdos554.erdos_554.variants.acjmr`](https://lefttosolve.com/p/Erdos554.erdos_554.variants.acjmr) | Erdős Problem 554 — acjmr | known | Combinatorics |  | yes |
+| 1185 | [`Erdos554.erdos_554.variants.day_johnson`](https://lefttosolve.com/p/Erdos554.erdos_554.variants.day_johnson) | Erdős Problem 554 — day johnson | known | Combinatorics |  | yes |
 | 1186 | [`Erdos554.erdos_554.variants.jenssen_skokan`](https://lefttosolve.com/p/Erdos554.erdos_554.variants.jenssen_skokan) | Erdős Problem 554 — jenssen skokan | known | Combinatorics |  |  |
 | 1187 | [`Erdos554.erdos_554.variants.lower_bound`](https://lefttosolve.com/p/Erdos554.erdos_554.variants.lower_bound) | Erdős Problem 554 — lower bound | known | Combinatorics |  | yes |
 | 1188 | [`Erdos554.erdos_554.variants.n_eq_two`](https://lefttosolve.com/p/Erdos554.erdos_554.variants.n_eq_two) | Erdős Problem 554 — n eq two | open | Combinatorics |  |  |
@@ -1215,21 +1215,21 @@ Back to [all programs](../PROGRAMS.md).
 | 1193 | [`Erdos556.erdos_556.variants.benevides_skokan_large_even`](https://lefttosolve.com/p/Erdos556.erdos_556.variants.benevides_skokan_large_even) | Erdős Problem 556 — benevides skokan large even | known | Combinatorics |  |  |
 | 1194 | [`Erdos556.erdos_556.variants.kss_large_odd`](https://lefttosolve.com/p/Erdos556.erdos_556.variants.kss_large_odd) | Erdős Problem 556 — kss large odd | known | Combinatorics |  |  |
 | 1195 | [`Erdos556.erdos_556.variants.luczak_asymptotic`](https://lefttosolve.com/p/Erdos556.erdos_556.variants.luczak_asymptotic) | Erdős Problem 556 — luczak asymptotic | known | Combinatorics |  |  |
-| 1196 | [`Erdos556.erdos_556.variants.luczak_asymptotic_even`](https://lefttosolve.com/p/Erdos556.erdos_556.variants.luczak_asymptotic_even) | Erdős Problem 556 — luczak asymptotic even | known | Combinatorics |  |  |
+| 1196 | [`Erdos556.erdos_556.variants.luczak_asymptotic_even`](https://lefttosolve.com/p/Erdos556.erdos_556.variants.luczak_asymptotic_even) | Erdős Problem 556 — luczak asymptotic even | known | Combinatorics |  | yes |
 | 1197 | [`Erdos556.erdos_556.variants.odd_lower_bound`](https://lefttosolve.com/p/Erdos556.erdos_556.variants.odd_lower_bound) | Erdős Problem 556 — odd lower bound | known | Combinatorics |  | yes |
 | 1198 | [`Erdos559.erdos_559.variants.draganic_petrova`](https://lefttosolve.com/p/Erdos559.erdos_559.variants.draganic_petrova) | Erdős Problem 559 — draganic petrova | known | Combinatorics |  |  |
-| 1199 | [`Erdos559.erdos_559.variants.rodl_szemeredi`](https://lefttosolve.com/p/Erdos559.erdos_559.variants.rodl_szemeredi) | Erdős Problem 559 — rodl szemeredi | known | Combinatorics |  |  |
+| 1199 | [`Erdos559.erdos_559.variants.rodl_szemeredi`](https://lefttosolve.com/p/Erdos559.erdos_559.variants.rodl_szemeredi) | Erdős Problem 559 — rodl szemeredi | known | Combinatorics |  | yes |
 | 1200 | [`Erdos559.erdos_559.variants.tikhomirov`](https://lefttosolve.com/p/Erdos559.erdos_559.variants.tikhomirov) | Erdős Problem 559 — tikhomirov | known | Combinatorics |  |  |
-| 1201 | [`Erdos559.erdos_559.variants.trees`](https://lefttosolve.com/p/Erdos559.erdos_559.variants.trees) | Erdős Problem 559 — trees | known | Combinatorics |  |  |
+| 1201 | [`Erdos559.erdos_559.variants.trees`](https://lefttosolve.com/p/Erdos559.erdos_559.variants.trees) | Erdős Problem 559 — trees | known | Combinatorics |  | yes |
 | 1202 | [`Erdos560.erdos_560`](https://lefttosolve.com/p/Erdos560.erdos_560) | Erdős Problem 560 | open | Combinatorics |  |  |
 | 1203 | [`Erdos560.erdos_560.variants.conlon_fox_wigderson`](https://lefttosolve.com/p/Erdos560.erdos_560.variants.conlon_fox_wigderson) | Erdős Problem 560 — conlon fox wigderson | open | Combinatorics |  |  |
-| 1204 | [`Erdos560.erdos_560.variants.lower_bound`](https://lefttosolve.com/p/Erdos560.erdos_560.variants.lower_bound) | Erdős Problem 560 — lower bound | known | Combinatorics |  |  |
-| 1205 | [`Erdos560.erdos_560.variants.upper_bound`](https://lefttosolve.com/p/Erdos560.erdos_560.variants.upper_bound) | Erdős Problem 560 — upper bound | known | Combinatorics |  |  |
+| 1204 | [`Erdos560.erdos_560.variants.lower_bound`](https://lefttosolve.com/p/Erdos560.erdos_560.variants.lower_bound) | Erdős Problem 560 — lower bound | known | Combinatorics |  | yes |
+| 1205 | [`Erdos560.erdos_560.variants.upper_bound`](https://lefttosolve.com/p/Erdos560.erdos_560.variants.upper_bound) | Erdős Problem 560 — upper bound | known | Combinatorics |  | yes |
 | 1206 | [`Erdos561.erdos_561`](https://lefttosolve.com/p/Erdos561.erdos_561) | Erdős Problem 561 | open | Combinatorics |  |  |
 | 1207 | [`Erdos562.erdos_562`](https://lefttosolve.com/p/Erdos562.erdos_562) | Erdős Problem 562 | open | Combinatorics |  |  |
 | 1208 | [`Erdos563.erdos_563`](https://lefttosolve.com/p/Erdos563.erdos_563) | Erdős Problem 563 | open | Combinatorics |  |  |
 | 1209 | [`Erdos564.erdos_564`](https://lefttosolve.com/p/Erdos564.erdos_564) | Erdős Problem 564 | open | Combinatorics | $500 |  |
-| 1210 | [`Erdos566.erdos_566`](https://lefttosolve.com/p/Erdos566.erdos_566) | Erdős Problem 566 | open | Combinatorics |  |  |
+| 1210 | [`Erdos566.erdos_566`](https://lefttosolve.com/p/Erdos566.erdos_566) | Erdős Problem 566 | open | Combinatorics |  | yes |
 | 1211 | [`Erdos567.erdos_567.parts.i`](https://lefttosolve.com/p/Erdos567.erdos_567.parts.i) | Erdős Problem 567 (Q3) | open | Combinatorics |  |  |
 | 1212 | [`Erdos567.erdos_567.parts.ii`](https://lefttosolve.com/p/Erdos567.erdos_567.parts.ii) | Erdős Problem 567 (K33) | open | Combinatorics |  |  |
 | 1213 | [`Erdos567.erdos_567.parts.iii`](https://lefttosolve.com/p/Erdos567.erdos_567.parts.iii) | Erdős Problem 567 (H5) | open | Combinatorics |  |  |
@@ -1238,12 +1238,12 @@ Back to [all programs](../PROGRAMS.md).
 | 1216 | [`Erdos570.erdos_570`](https://lefttosolve.com/p/Erdos570.erdos_570) | Erdős Problem 570 | known | Combinatorics |  |  |
 | 1217 | [`Erdos572.erdos_572`](https://lefttosolve.com/p/Erdos572.erdos_572) | Erdős Problem 572 | open | Combinatorics |  |  |
 | 1218 | [`Erdos573.erdos_573`](https://lefttosolve.com/p/Erdos573.erdos_573) | Erdős Problem 573 | open | Combinatorics |  |  |
-| 1219 | [`Erdos573.erdos_573.variants.c4_c5`](https://lefttosolve.com/p/Erdos573.erdos_573.variants.c4_c5) | Erdős Problem 573 — c4 c5 | known | Combinatorics |  |  |
-| 1220 | [`Erdos573.erdos_573.variants.kst`](https://lefttosolve.com/p/Erdos573.erdos_573.variants.kst) | Erdős Problem 573 — kst | known | Combinatorics |  |  |
+| 1219 | [`Erdos573.erdos_573.variants.c4_c5`](https://lefttosolve.com/p/Erdos573.erdos_573.variants.c4_c5) | Erdős Problem 573 — c4 c5 | known | Combinatorics |  | yes |
+| 1220 | [`Erdos573.erdos_573.variants.kst`](https://lefttosolve.com/p/Erdos573.erdos_573.variants.kst) | Erdős Problem 573 — kst | known | Combinatorics |  | yes |
 | 1221 | [`Erdos578.erdos_578`](https://lefttosolve.com/p/Erdos578.erdos_578) | Erdős Problem 578 | known | Combinatorics, Probability |  | yes |
-| 1222 | [`Erdos578.erdos_578.variants.riordan`](https://lefttosolve.com/p/Erdos578.erdos_578.variants.riordan) | Erdős Problem 578 — riordan | known | Combinatorics, Probability |  |  |
+| 1222 | [`Erdos578.erdos_578.variants.riordan`](https://lefttosolve.com/p/Erdos578.erdos_578.variants.riordan) | Erdős Problem 578 — riordan | known | Combinatorics, Probability |  | yes |
 | 1223 | [`Erdos579.erdos_579`](https://lefttosolve.com/p/Erdos579.erdos_579) | Erdős Problem 579 | open | Combinatorics |  |  |
-| 1224 | [`Erdos579.erdos_579.variants.ehss_large_delta`](https://lefttosolve.com/p/Erdos579.erdos_579.variants.ehss_large_delta) | Erdős Problem 579 — ehss large delta | known | Combinatorics |  |  |
+| 1224 | [`Erdos579.erdos_579.variants.ehss_large_delta`](https://lefttosolve.com/p/Erdos579.erdos_579.variants.ehss_large_delta) | Erdős Problem 579 — ehss large delta | known | Combinatorics |  | yes |
 | 1225 | [`Erdos583.erdos_583`](https://lefttosolve.com/p/Erdos583.erdos_583) | Erdős Problem 583 | open | Combinatorics |  |  |
 | 1226 | [`Erdos587.erdos_587.variants.nguyen_vu`](https://lefttosolve.com/p/Erdos587.erdos_587.variants.nguyen_vu) | Erdős Problem 587 — nguyen vu | known | Number Theory |  |  |
 | 1227 | [`Erdos588.erdos_588`](https://lefttosolve.com/p/Erdos588.erdos_588) | Erdős Problem 588 | open | Convex & Discrete Geometry | $100 |  |
@@ -1257,27 +1257,27 @@ Back to [all programs](../PROGRAMS.md).
 | 1235 | [`Erdos59.erdos_59.variants.big_o`](https://lefttosolve.com/p/Erdos59.erdos_59.variants.big_o) | Erdős Problem 59 — big o | open | Combinatorics |  |  |
 | 1236 | [`Erdos59.erdos_59.variants.c4`](https://lefttosolve.com/p/Erdos59.erdos_59.variants.c4) | Erdős Problem 59 — c4 | open | Combinatorics |  |  |
 | 1237 | [`Erdos59.erdos_59.variants.erdos_frankl_rodl`](https://lefttosolve.com/p/Erdos59.erdos_59.variants.erdos_frankl_rodl) | Erdős Problem 59 — erdos frankl rodl | known | Combinatorics |  |  |
-| 1238 | [`Erdos590.erdos_590.variants.finite_cardinal`](https://lefttosolve.com/p/Erdos590.erdos_590.variants.finite_cardinal) | Erdős Problem 590 — finite cardinal | known | Logic & Foundations | $250 |  |
+| 1238 | [`Erdos590.erdos_590.variants.finite_cardinal`](https://lefttosolve.com/p/Erdos590.erdos_590.variants.finite_cardinal) | Erdős Problem 590 — finite cardinal | known | Logic & Foundations | $250 | yes |
 | 1239 | [`Erdos590.erdos_590.variants.ge_three_false`](https://lefttosolve.com/p/Erdos590.erdos_590.variants.ge_three_false) | Erdős Problem 590 — ge three false | known | Logic & Foundations | $250 | yes |
 | 1240 | [`Erdos590.erdos_590.variants.two`](https://lefttosolve.com/p/Erdos590.erdos_590.variants.two) | Erdős Problem 590 — two | known | Logic & Foundations | $250 | yes |
 | 1241 | [`Erdos591.erdos_591`](https://lefttosolve.com/p/Erdos591.erdos_591) | Erdős Problem 591 | known | Logic & Foundations | $250 |  |
 | 1242 | [`Erdos592.erdos_592`](https://lefttosolve.com/p/Erdos592.erdos_592) | Erdős Problem 592 | open | Logic & Foundations | $1000 |  |
-| 1243 | [`Erdos593.erdos_593`](https://lefttosolve.com/p/Erdos593.erdos_593) | Erdős Problem 593 (\\$500) | open | Combinatorics | $500 |  |
+| 1243 | [`Erdos593.erdos_593`](https://lefttosolve.com/p/Erdos593.erdos_593) | Erdős Problem 593 (\\$500) | open | Combinatorics | $500 | yes |
 | 1244 | [`Erdos593.erdos_593.variants.common_pair_not_obligatory`](https://lefttosolve.com/p/Erdos593.erdos_593.variants.common_pair_not_obligatory) | Erdős Problem 593 — common pair not obligatory | known | Combinatorics | $500 | yes |
-| 1245 | [`Erdos593.erdos_593.variants.obligatory_implies_two_colorable`](https://lefttosolve.com/p/Erdos593.erdos_593.variants.obligatory_implies_two_colorable) | Necessary direction | known | Combinatorics | $500 |  |
+| 1245 | [`Erdos593.erdos_593.variants.obligatory_implies_two_colorable`](https://lefttosolve.com/p/Erdos593.erdos_593.variants.obligatory_implies_two_colorable) | Necessary direction | known | Combinatorics | $500 | yes |
 | 1246 | [`Erdos593.erdos_593.variants.two_colorable_implies_obligatory`](https://lefttosolve.com/p/Erdos593.erdos_593.variants.two_colorable_implies_obligatory) | Sufficient direction fails | known | Combinatorics | $500 | yes |
-| 1247 | [`Erdos594.erdos_594.variants.erdos_hajnal`](https://lefttosolve.com/p/Erdos594.erdos_594.variants.erdos_hajnal) | Erdős Problem 594 — erdos hajnal | known | Combinatorics, Logic & Foundations |  |  |
+| 1247 | [`Erdos594.erdos_594.variants.erdos_hajnal`](https://lefttosolve.com/p/Erdos594.erdos_594.variants.erdos_hajnal) | Erdős Problem 594 — erdos hajnal | known | Combinatorics, Logic & Foundations |  | yes |
 | 1248 | [`Erdos595.erdos_595`](https://lefttosolve.com/p/Erdos595.erdos_595) | Erdős Problem 595 (\\$250) | open | Combinatorics | $250 |  |
 | 1249 | [`Erdos596.erdos_596`](https://lefttosolve.com/p/Erdos596.erdos_596) | Erdős Problem 596 | open | Combinatorics |  |  |
-| 1250 | [`Erdos596.erdos_596.variants.C4_C6_finite_ramsey`](https://lefttosolve.com/p/Erdos596.erdos_596.variants.C4_C6_finite_ramsey) | Erdős Problem 596 — C4 C6 finite ramsey | known | Combinatorics |  |  |
-| 1251 | [`Erdos596.erdos_596.variants.C4_free_countable_escape`](https://lefttosolve.com/p/Erdos596.erdos_596.variants.C4_free_countable_escape) | Erdős Problem 596 — C4 free countable escape | known | Combinatorics |  |  |
+| 1250 | [`Erdos596.erdos_596.variants.C4_C6_finite_ramsey`](https://lefttosolve.com/p/Erdos596.erdos_596.variants.C4_C6_finite_ramsey) | Erdős Problem 596 — C4 C6 finite ramsey | known | Combinatorics |  | yes |
+| 1251 | [`Erdos596.erdos_596.variants.C4_free_countable_escape`](https://lefttosolve.com/p/Erdos596.erdos_596.variants.C4_free_countable_escape) | Erdős Problem 596 — C4 free countable escape | known | Combinatorics |  | yes |
 | 1252 | [`Erdos596.erdos_596.variants.K4_K3_exceptional_iff`](https://lefttosolve.com/p/Erdos596.erdos_596.variants.K4_K3_exceptional_iff) | Erdős Problem 596 — K4 K3 exceptional iff | open | Combinatorics |  |  |
-| 1253 | [`Erdos596.erdos_596.variants.K4_K3_finite_ramsey`](https://lefttosolve.com/p/Erdos596.erdos_596.variants.K4_K3_finite_ramsey) | Erdős Problem 596 — K4 K3 finite ramsey | known | Combinatorics |  |  |
-| 1254 | [`Erdos596.erdos_596.variants.exists_exceptional`](https://lefttosolve.com/p/Erdos596.erdos_596.variants.exists_exceptional) | Erdős Problem 596 — exists exceptional | known | Combinatorics |  |  |
-| 1255 | [`Erdos596.erdos_596.variants.original_conjecture_is_false`](https://lefttosolve.com/p/Erdos596.erdos_596.variants.original_conjecture_is_false) | Erdős Problem 596 — original conjecture is false | known | Combinatorics |  |  |
+| 1253 | [`Erdos596.erdos_596.variants.K4_K3_finite_ramsey`](https://lefttosolve.com/p/Erdos596.erdos_596.variants.K4_K3_finite_ramsey) | Erdős Problem 596 — K4 K3 finite ramsey | known | Combinatorics |  | yes |
+| 1254 | [`Erdos596.erdos_596.variants.exists_exceptional`](https://lefttosolve.com/p/Erdos596.erdos_596.variants.exists_exceptional) | Erdős Problem 596 — exists exceptional | known | Combinatorics |  | yes |
+| 1255 | [`Erdos596.erdos_596.variants.original_conjecture_is_false`](https://lefttosolve.com/p/Erdos596.erdos_596.variants.original_conjecture_is_false) | Erdős Problem 596 — original conjecture is false | known | Combinatorics |  | yes |
 | 1256 | [`Erdos597.erdos_597`](https://lefttosolve.com/p/Erdos597.erdos_597) | Erdős Problem 597 | open | Combinatorics, Logic & Foundations |  |  |
 | 1257 | [`Erdos597.erdos_597.variants.baumgartner`](https://lefttosolve.com/p/Erdos597.erdos_597.variants.baumgartner) | Erdős Problem 597 — baumgartner | known | Combinatorics, Logic & Foundations |  |  |
-| 1258 | [`Erdos597.erdos_597.variants.erdos_hajnal`](https://lefttosolve.com/p/Erdos597.erdos_597.variants.erdos_hajnal) | Erdős Problem 597 — erdos hajnal | known | Combinatorics, Logic & Foundations |  |  |
+| 1258 | [`Erdos597.erdos_597.variants.erdos_hajnal`](https://lefttosolve.com/p/Erdos597.erdos_597.variants.erdos_hajnal) | Erdős Problem 597 — erdos hajnal | known | Combinatorics, Logic & Foundations |  | yes |
 | 1259 | [`Erdos597.erdos_597.variants.finite`](https://lefttosolve.com/p/Erdos597.erdos_597.variants.finite) | Erdős Problem 597, finite case | open | Combinatorics, Logic & Foundations |  |  |
 | 1260 | [`Erdos598.erdos_598`](https://lefttosolve.com/p/Erdos598.erdos_598) | Erdős Problem 598 | open | Combinatorics, Logic & Foundations |  |  |
 | 1261 | [`Erdos599.erdos_599`](https://lefttosolve.com/p/Erdos599.erdos_599) | Erdős Problem 599 | known | Combinatorics |  |  |
@@ -1289,9 +1289,9 @@ Back to [all programs](../PROGRAMS.md).
 | 1267 | [`Erdos60.erdos_60.variants.two_copies`](https://lefttosolve.com/p/Erdos60.erdos_60.variants.two_copies) | Erdős Problem 60 — two copies | known | Combinatorics |  |  |
 | 1268 | [`Erdos600.erdos_600.parts.i`](https://lefttosolve.com/p/Erdos600.erdos_600.parts.i) | Erdős Problem 600 — i | open | Combinatorics |  |  |
 | 1269 | [`Erdos600.erdos_600.parts.ii`](https://lefttosolve.com/p/Erdos600.erdos_600.parts.ii) | Erdős Problem 600 — ii | open | Combinatorics |  |  |
-| 1270 | [`Erdos600.erdos_600.variants.ruzsa_szemeredi_upper_bound`](https://lefttosolve.com/p/Erdos600.erdos_600.variants.ruzsa_szemeredi_upper_bound) | Erdős Problem 600 — ruzsa szemeredi upper bound | known | Combinatorics |  |  |
+| 1270 | [`Erdos600.erdos_600.variants.ruzsa_szemeredi_upper_bound`](https://lefttosolve.com/p/Erdos600.erdos_600.variants.ruzsa_szemeredi_upper_bound) | Erdős Problem 600 — ruzsa szemeredi upper bound | known | Combinatorics |  | yes |
 | 1271 | [`Erdos601.erdos_601`](https://lefttosolve.com/p/Erdos601.erdos_601) | Erdős Problem 601 | open | Combinatorics | $500 |  |
-| 1272 | [`Erdos601.erdos_601.variants.erdos_hajnal_milner_1970`](https://lefttosolve.com/p/Erdos601.erdos_601.variants.erdos_hajnal_milner_1970) | Erdős–Hajnal–Milner (1970) | known | Combinatorics | $500 |  |
+| 1272 | [`Erdos601.erdos_601.variants.erdos_hajnal_milner_1970`](https://lefttosolve.com/p/Erdos601.erdos_601.variants.erdos_hajnal_milner_1970) | Erdős–Hajnal–Milner (1970) | known | Combinatorics | $500 | yes |
 | 1273 | [`Erdos601.erdos_601.variants.omega_1_omega_plus_2`](https://lefttosolve.com/p/Erdos601.erdos_601.variants.omega_1_omega_plus_2) | Erdős–Hajnal–Milner conjecture at $\\omega_1^{\\omega+2}$ | open | Combinatorics | $500 |  |
 | 1274 | [`Erdos601.erdos_601.variants.universal`](https://lefttosolve.com/p/Erdos601.erdos_601.variants.universal) | Erdős–Hajnal–Milner conjecture | open | Combinatorics | $500 |  |
 | 1275 | [`Erdos602.erdos_602`](https://lefttosolve.com/p/Erdos602.erdos_602) | Erdős Problem 602 | open | Combinatorics, Logic & Foundations |  |  |
@@ -1304,16 +1304,16 @@ Back to [all programs](../PROGRAMS.md).
 | 1282 | [`Erdos609.erdos_609`](https://lefttosolve.com/p/Erdos609.erdos_609) | Erdős Problem 609 | open | Combinatorics |  |  |
 | 1283 | [`Erdos61.erdos_61`](https://lefttosolve.com/p/Erdos61.erdos_61) | Erdős Problem 61 -- Erdős–Hajnal Conjecture | open | Combinatorics |  |  |
 | 1284 | [`Erdos61.erdos_61.variants.bnss23`](https://lefttosolve.com/p/Erdos61.erdos_61.variants.bnss23) | Erdős Problem 61 -- Erdős–Hajnal Conjecture — bnss23 | known | Combinatorics |  |  |
-| 1285 | [`Erdos61.erdos_61.variants.c5`](https://lefttosolve.com/p/Erdos61.erdos_61.variants.c5) | Erdős Problem 61 -- Erdős–Hajnal Conjecture — c5 | known | Combinatorics |  |  |
+| 1285 | [`Erdos61.erdos_61.variants.c5`](https://lefttosolve.com/p/Erdos61.erdos_61.variants.c5) | Erdős Problem 61 -- Erdős–Hajnal Conjecture — c5 | known | Combinatorics |  | yes |
 | 1286 | [`Erdos61.erdos_61.variants.erha89`](https://lefttosolve.com/p/Erdos61.erdos_61.variants.erha89) | Erdős Problem 61 -- Erdős–Hajnal Conjecture — erha89 | known | Combinatorics |  | yes |
-| 1287 | [`Erdos61.erdos_61.variants.p5`](https://lefttosolve.com/p/Erdos61.erdos_61.variants.p5) | Erdős Problem 61 -- Erdős–Hajnal Conjecture — p5 | known | Combinatorics |  |  |
+| 1287 | [`Erdos61.erdos_61.variants.p5`](https://lefttosolve.com/p/Erdos61.erdos_61.variants.p5) | Erdős Problem 61 -- Erdős–Hajnal Conjecture — p5 | known | Combinatorics |  | yes |
 | 1288 | [`Erdos611.erdos_611.parts.i`](https://lefttosolve.com/p/Erdos611.erdos_611.parts.i) | Erdős Problem 611 — i | open | Combinatorics |  |  |
 | 1289 | [`Erdos611.erdos_611.parts.ii`](https://lefttosolve.com/p/Erdos611.erdos_611.parts.ii) | Erdős Problem 611 — ii | open | Combinatorics |  |  |
-| 1290 | [`Erdos611.erdos_611.variants.bollobas_erdos`](https://lefttosolve.com/p/Erdos611.erdos_611.variants.bollobas_erdos) | Erdős Problem 611 — bollobas erdos | known | Combinatorics |  |  |
-| 1291 | [`Erdos611.erdos_611.variants.bollobas_erdos_sharp`](https://lefttosolve.com/p/Erdos611.erdos_611.variants.bollobas_erdos_sharp) | Erdős Problem 611 — bollobas erdos sharp | known | Combinatorics |  |  |
+| 1290 | [`Erdos611.erdos_611.variants.bollobas_erdos`](https://lefttosolve.com/p/Erdos611.erdos_611.variants.bollobas_erdos) | Erdős Problem 611 — bollobas erdos | known | Combinatorics |  | yes |
+| 1291 | [`Erdos611.erdos_611.variants.bollobas_erdos_sharp`](https://lefttosolve.com/p/Erdos611.erdos_611.variants.bollobas_erdos_sharp) | Erdős Problem 611 — bollobas erdos sharp | known | Combinatorics |  | yes |
 | 1292 | [`Erdos614.erdos_614`](https://lefttosolve.com/p/Erdos614.erdos_614) | Erdős Problem 614 | open | Combinatorics |  |  |
 | 1293 | [`Erdos615.erdos_615.variants.fox_loh_zhao`](https://lefttosolve.com/p/Erdos615.erdos_615.variants.fox_loh_zhao) | Erdős Problem 615 — fox loh zhao | known | Combinatorics |  |  |
-| 1294 | [`Erdos615.erdos_615.variants.sudakov`](https://lefttosolve.com/p/Erdos615.erdos_615.variants.sudakov) | Erdős Problem 615 — sudakov | known | Combinatorics |  |  |
+| 1294 | [`Erdos615.erdos_615.variants.sudakov`](https://lefttosolve.com/p/Erdos615.erdos_615.variants.sudakov) | Erdős Problem 615 — sudakov | known | Combinatorics |  | yes |
 | 1295 | [`Erdos616.erdos_616`](https://lefttosolve.com/p/Erdos616.erdos_616) | Erdős Problem 616 | open | Combinatorics |  |  |
 | 1296 | [`Erdos617.erdos_617`](https://lefttosolve.com/p/Erdos617.erdos_617) | Erdős Problem 617 | open | Combinatorics |  |  |
 | 1297 | [`Erdos617.erdos_617.variants.r2`](https://lefttosolve.com/p/Erdos617.erdos_617.variants.r2) | Erdős Problem 617 — r2 | known | Combinatorics |  | yes |
@@ -1324,22 +1324,22 @@ Back to [all programs](../PROGRAMS.md).
 | 1302 | [`Erdos619.erdos_619.variants.h_three_le`](https://lefttosolve.com/p/Erdos619.erdos_619.variants.h_three_le) | Erdős Problem 619 — h three le | known | Combinatorics |  | yes |
 | 1303 | [`Erdos619.erdos_619.variants.h_three_lower`](https://lefttosolve.com/p/Erdos619.erdos_619.variants.h_three_lower) | Erdős Problem 619 — h three lower | known | Combinatorics |  | yes |
 | 1304 | [`Erdos623.erdos_623`](https://lefttosolve.com/p/Erdos623.erdos_623) | Erdős Problem 623 | open | Logic & Foundations |  |  |
-| 1305 | [`Erdos624.erdos_624`](https://lefttosolve.com/p/Erdos624.erdos_624) | Erdős Problem 624 | open | Combinatorics |  |  |
+| 1305 | [`Erdos624.erdos_624`](https://lefttosolve.com/p/Erdos624.erdos_624) | Erdős Problem 624 | open | Combinatorics |  | yes |
 | 1306 | [`Erdos626.erdos_626.parts.i`](https://lefttosolve.com/p/Erdos626.erdos_626.parts.i) | Erdős Problem 626 — i | open | Combinatorics |  |  |
 | 1307 | [`Erdos626.erdos_626.parts.ii`](https://lefttosolve.com/p/Erdos626.erdos_626.parts.ii) | Erdős Problem 626 — ii | open | Combinatorics |  |  |
 | 1308 | [`Erdos626.erdos_626.variants.h_even_conjecture`](https://lefttosolve.com/p/Erdos626.erdos_626.variants.h_even_conjecture) | Erdős Problem 626 — h even conjecture | open | Combinatorics |  |  |
-| 1309 | [`Erdos626.erdos_626.variants.h_lower`](https://lefttosolve.com/p/Erdos626.erdos_626.variants.h_lower) | Erdős Problem 626 — h lower | known | Combinatorics |  |  |
+| 1309 | [`Erdos626.erdos_626.variants.h_lower`](https://lefttosolve.com/p/Erdos626.erdos_626.variants.h_lower) | Erdős Problem 626 — h lower | known | Combinatorics |  | yes |
 | 1310 | [`Erdos626.erdos_626.variants.h_odd_conjecture`](https://lefttosolve.com/p/Erdos626.erdos_626.variants.h_odd_conjecture) | Erdős Problem 626 — h odd conjecture | open | Combinatorics |  |  |
-| 1311 | [`Erdos626.erdos_626.variants.h_upper_odd`](https://lefttosolve.com/p/Erdos626.erdos_626.variants.h_upper_odd) | Erdős Problem 626 — h upper odd | known | Combinatorics |  |  |
-| 1312 | [`Erdos626.erdos_626.variants.kostochka`](https://lefttosolve.com/p/Erdos626.erdos_626.variants.kostochka) | Erdős Problem 626 — kostochka | known | Combinatorics |  |  |
+| 1311 | [`Erdos626.erdos_626.variants.h_upper_odd`](https://lefttosolve.com/p/Erdos626.erdos_626.variants.h_upper_odd) | Erdős Problem 626 — h upper odd | known | Combinatorics |  | yes |
+| 1312 | [`Erdos626.erdos_626.variants.kostochka`](https://lefttosolve.com/p/Erdos626.erdos_626.variants.kostochka) | Erdős Problem 626 — kostochka | known | Combinatorics |  | yes |
 | 1313 | [`Erdos627.erdos_627`](https://lefttosolve.com/p/Erdos627.erdos_627) | Erdős Problem 627 | open | Combinatorics |  |  |
 | 1314 | [`Erdos627.erdos_627.variants.afm_upper`](https://lefttosolve.com/p/Erdos627.erdos_627.variants.afm_upper) | Erdős Problem 627 — afm upper | known | Combinatorics |  |  |
 | 1315 | [`Erdos627.erdos_627.variants.conditional`](https://lefttosolve.com/p/Erdos627.erdos_627.variants.conditional) | Erdős Problem 627 — conditional | known | Combinatorics |  | yes |
-| 1316 | [`Erdos627.erdos_627.variants.erdos_1961`](https://lefttosolve.com/p/Erdos627.erdos_627.variants.erdos_1961) | Erdős Problem 627 — erdos 1961 | known | Combinatorics |  |  |
-| 1317 | [`Erdos627.erdos_627.variants.limit_bounds`](https://lefttosolve.com/p/Erdos627.erdos_627.variants.limit_bounds) | Erdős Problem 627 — limit bounds | known | Combinatorics |  |  |
-| 1318 | [`Erdos627.erdos_627.variants.lower`](https://lefttosolve.com/p/Erdos627.erdos_627.variants.lower) | Erdős Problem 627 — lower | known | Combinatorics |  |  |
-| 1319 | [`Erdos627.erdos_627.variants.theta`](https://lefttosolve.com/p/Erdos627.erdos_627.variants.theta) | Erdős Problem 627 — theta | known | Combinatorics |  |  |
-| 1320 | [`Erdos627.erdos_627.variants.upper`](https://lefttosolve.com/p/Erdos627.erdos_627.variants.upper) | Erdős Problem 627 — upper | known | Combinatorics |  |  |
+| 1316 | [`Erdos627.erdos_627.variants.erdos_1961`](https://lefttosolve.com/p/Erdos627.erdos_627.variants.erdos_1961) | Erdős Problem 627 — erdos 1961 | known | Combinatorics |  | yes |
+| 1317 | [`Erdos627.erdos_627.variants.limit_bounds`](https://lefttosolve.com/p/Erdos627.erdos_627.variants.limit_bounds) | Erdős Problem 627 — limit bounds | known | Combinatorics |  | yes |
+| 1318 | [`Erdos627.erdos_627.variants.lower`](https://lefttosolve.com/p/Erdos627.erdos_627.variants.lower) | Erdős Problem 627 — lower | known | Combinatorics |  | yes |
+| 1319 | [`Erdos627.erdos_627.variants.theta`](https://lefttosolve.com/p/Erdos627.erdos_627.variants.theta) | Erdős Problem 627 — theta | known | Combinatorics |  | yes |
+| 1320 | [`Erdos627.erdos_627.variants.upper`](https://lefttosolve.com/p/Erdos627.erdos_627.variants.upper) | Erdős Problem 627 — upper | known | Combinatorics |  | yes |
 | 1321 | [`Erdos628.erdos_628`](https://lefttosolve.com/p/Erdos628.erdos_628) | Erdős Problem 628 | open | Combinatorics |  |  |
 | 1322 | [`Erdos628.erdos_628.variants.independence_number_2`](https://lefttosolve.com/p/Erdos628.erdos_628.variants.independence_number_2) | Erdős Problem 628 — independence number 2 | known | Combinatorics |  | yes |
 | 1323 | [`Erdos628.erdos_628.variants.k_5_a_3_b_3`](https://lefttosolve.com/p/Erdos628.erdos_628.variants.k_5_a_3_b_3) | Erdős Problem 628 — k 5 a 3 b 3 | known | Combinatorics |  | yes |
@@ -1354,10 +1354,10 @@ Back to [all programs](../PROGRAMS.md).
 | 1332 | [`Erdos633.IsCuttable.sq`](https://lefttosolve.com/p/Erdos633.IsCuttable.sq) | Erdős Problem 633 — sq | warmup | Combinatorics, Geometry | $25 | yes |
 | 1333 | [`Erdos633.IsSimiliCuttable.of_ne_zero_two_three_five`](https://lefttosolve.com/p/Erdos633.IsSimiliCuttable.of_ne_zero_two_three_five) | Erdős Problem 633 — of ne zero two three five | known | Combinatorics, Geometry | $25 | yes |
 | 1334 | [`Erdos633.erdos_633`](https://lefttosolve.com/p/Erdos633.erdos_633) | Erdős Problem 633 — erdos 633 | known | Combinatorics, Geometry | $25 |  |
-| 1335 | [`Erdos633.exists_isSimiliCuttable_iff_ne_zero_two_three_five`](https://lefttosolve.com/p/Erdos633.exists_isSimiliCuttable_iff_ne_zero_two_three_five) | Erdős Problem 633 — exists isSimiliCuttable iff ne zero two three five | known | Combinatorics, Geometry | $25 |  |
-| 1336 | [`Erdos636.erdos_636.variants.best_possible`](https://lefttosolve.com/p/Erdos636.erdos_636.variants.best_possible) | Erdős Problem 636 — best possible | known | Combinatorics |  |  |
-| 1337 | [`Erdos636.erdos_636.variants.erdos_faudree_sos`](https://lefttosolve.com/p/Erdos636.erdos_636.variants.erdos_faudree_sos) | Erdős Problem 636 — erdos faudree sos | known | Combinatorics |  |  |
-| 1338 | [`Erdos639.erdos_639.variants.exact`](https://lefttosolve.com/p/Erdos639.erdos_639.variants.exact) | Erdős Problem 639 — exact | known | Combinatorics |  |  |
+| 1335 | [`Erdos633.exists_isSimiliCuttable_iff_ne_zero_two_three_five`](https://lefttosolve.com/p/Erdos633.exists_isSimiliCuttable_iff_ne_zero_two_three_five) | Erdős Problem 633 — exists isSimiliCuttable iff ne zero two three five | known | Combinatorics, Geometry | $25 | yes |
+| 1336 | [`Erdos636.erdos_636.variants.best_possible`](https://lefttosolve.com/p/Erdos636.erdos_636.variants.best_possible) | Erdős Problem 636 — best possible | known | Combinatorics |  | yes |
+| 1337 | [`Erdos636.erdos_636.variants.erdos_faudree_sos`](https://lefttosolve.com/p/Erdos636.erdos_636.variants.erdos_faudree_sos) | Erdős Problem 636 — erdos faudree sos | known | Combinatorics |  | yes |
+| 1338 | [`Erdos639.erdos_639.variants.exact`](https://lefttosolve.com/p/Erdos639.erdos_639.variants.exact) | Erdős Problem 639 — exact | known | Combinatorics |  | yes |
 | 1339 | [`Erdos64.erdos_64`](https://lefttosolve.com/p/Erdos64.erdos_64) | Erdős Problem 64 | open | Combinatorics | $1000 |  |
 | 1340 | [`Erdos640.erdos_640`](https://lefttosolve.com/p/Erdos640.erdos_640) | Erdős Problem 640 | open | Combinatorics |  |  |
 | 1341 | [`Erdos642.erdos_642`](https://lefttosolve.com/p/Erdos642.erdos_642) | Erdős Problem 642 | open | Combinatorics |  |  |
@@ -1375,8 +1375,8 @@ Back to [all programs](../PROGRAMS.md).
 | 1353 | [`Erdos65.erdos_65.parts.i`](https://lefttosolve.com/p/Erdos65.erdos_65.parts.i) | Erdős Problem 65 — i | known | Combinatorics |  |  |
 | 1354 | [`Erdos65.erdos_65.parts.ii`](https://lefttosolve.com/p/Erdos65.erdos_65.parts.ii) | Erdős Problem 65 — ii | open | Combinatorics |  |  |
 | 1355 | [`Erdos65.erdos_65.variants.liu_montgomery`](https://lefttosolve.com/p/Erdos65.erdos_65.variants.liu_montgomery) | Erdős Problem 65 — liu montgomery | known | Combinatorics |  |  |
-| 1356 | [`Erdos650.erdos_650.variants.erdos_selfridge`](https://lefttosolve.com/p/Erdos650.erdos_650.variants.erdos_selfridge) | Erdős Problem 650 — erdos selfridge | known | Combinatorics, Number Theory |  |  |
-| 1357 | [`Erdos650.erdos_650.variants.erdos_suranyi`](https://lefttosolve.com/p/Erdos650.erdos_650.variants.erdos_suranyi) | Erdős Problem 650 — erdos suranyi | known | Combinatorics, Number Theory |  |  |
+| 1356 | [`Erdos650.erdos_650.variants.erdos_selfridge`](https://lefttosolve.com/p/Erdos650.erdos_650.variants.erdos_selfridge) | Erdős Problem 650 — erdos selfridge | known | Combinatorics, Number Theory |  | yes |
+| 1357 | [`Erdos650.erdos_650.variants.erdos_suranyi`](https://lefttosolve.com/p/Erdos650.erdos_650.variants.erdos_suranyi) | Erdős Problem 650 — erdos suranyi | known | Combinatorics, Number Theory |  | yes |
 | 1358 | [`Erdos651.erdos_651`](https://lefttosolve.com/p/Erdos651.erdos_651) | Erdős Problem 651 — erdos 651 | known | Combinatorics, Convex & Discrete Geometry |  |  |
 | 1359 | [`Erdos651.erdos_651.variants.antitone`](https://lefttosolve.com/p/Erdos651.erdos_651.variants.antitone) | Erdős Problem 651 — antitone | known | Combinatorics, Convex & Discrete Geometry |  | yes |
 | 1360 | [`Erdos651.erdos_651.variants.planar`](https://lefttosolve.com/p/Erdos651.erdos_651.variants.planar) | Erdős Problem 651 — planar | known | Combinatorics, Convex & Discrete Geometry |  | yes |
@@ -1388,7 +1388,7 @@ Back to [all programs](../PROGRAMS.md).
 | 1366 | [`Erdos652.erdos_652.variants.first`](https://lefttosolve.com/p/Erdos652.erdos_652.variants.first) | Erdős Problem 652 — first | known | Combinatorics, Convex & Discrete Geometry |  | yes |
 | 1367 | [`Erdos652.erdos_652.variants.kth_lower_bound`](https://lefttosolve.com/p/Erdos652.erdos_652.variants.kth_lower_bound) | Erdős Problem 652 — kth lower bound | known | Combinatorics, Convex & Discrete Geometry |  | yes |
 | 1368 | [`Erdos652.erdos_652.variants.mathialagan`](https://lefttosolve.com/p/Erdos652.erdos_652.variants.mathialagan) | Erdős Problem 652 — mathialagan | known | Combinatorics, Convex & Discrete Geometry |  | yes |
-| 1369 | [`Erdos652.erdos_652.variants.order_sqrt`](https://lefttosolve.com/p/Erdos652.erdos_652.variants.order_sqrt) | Erdős Problem 652 — order sqrt | known | Combinatorics, Convex & Discrete Geometry |  |  |
+| 1369 | [`Erdos652.erdos_652.variants.order_sqrt`](https://lefttosolve.com/p/Erdos652.erdos_652.variants.order_sqrt) | Erdős Problem 652 — order sqrt | known | Combinatorics, Convex & Discrete Geometry |  | yes |
 | 1370 | [`Erdos652.erdos_652.variants.product`](https://lefttosolve.com/p/Erdos652.erdos_652.variants.product) | Erdős Problem 652 — product | known | Combinatorics, Convex & Discrete Geometry |  | yes |
 | 1371 | [`Erdos653.erdos_653`](https://lefttosolve.com/p/Erdos653.erdos_653) | Erdős Problem 653 | open | Combinatorics, Convex & Discrete Geometry |  |  |
 | 1372 | [`Erdos654.erdos_654.parts.ii`](https://lefttosolve.com/p/Erdos654.erdos_654.parts.ii) | Erdős Problem 654 — ii | open | Convex & Discrete Geometry |  |  |
@@ -1396,50 +1396,50 @@ Back to [all programs](../PROGRAMS.md).
 | 1374 | [`Erdos654.erdos_654.variants.general_position`](https://lefttosolve.com/p/Erdos654.erdos_654.variants.general_position) | Erdős Problem 654 — general position | open | Convex & Discrete Geometry |  |  |
 | 1375 | [`Erdos654.erdos_654.variants.general_position_one_sub_eps`](https://lefttosolve.com/p/Erdos654.erdos_654.variants.general_position_one_sub_eps) | Erdős Problem 654 — general position one sub eps | open | Convex & Discrete Geometry |  |  |
 | 1376 | [`Erdos655.erdos_655.variants.general_position`](https://lefttosolve.com/p/Erdos655.erdos_655.variants.general_position) | Erdős Problem 655 — general position | open | Combinatorics, Convex & Discrete Geometry |  |  |
-| 1377 | [`Erdos656.erdos_656`](https://lefttosolve.com/p/Erdos656.erdos_656) | Erdős Problem 656 | known | Combinatorics, Number Theory |  |  |
+| 1377 | [`Erdos656.erdos_656`](https://lefttosolve.com/p/Erdos656.erdos_656) | Erdős Problem 656 | known | Combinatorics, Number Theory |  | yes |
 | 1378 | [`Erdos657.erdos_657`](https://lefttosolve.com/p/Erdos657.erdos_657) | Erdős Problem 657 | open | Convex & Discrete Geometry |  |  |
 | 1379 | [`Erdos657.erdos_657.variants.dim_one`](https://lefttosolve.com/p/Erdos657.erdos_657.variants.dim_one) | Erdős Problem 657 — dim one | known | Convex & Discrete Geometry, Number Theory |  | yes |
-| 1380 | [`Erdos657.erdos_657.variants.dim_one_lower`](https://lefttosolve.com/p/Erdos657.erdos_657.variants.dim_one_lower) | Erdős Problem 657 — dim one lower | known | Convex & Discrete Geometry, Number Theory |  |  |
+| 1380 | [`Erdos657.erdos_657.variants.dim_one_lower`](https://lefttosolve.com/p/Erdos657.erdos_657.variants.dim_one_lower) | Erdős Problem 657 — dim one lower | known | Convex & Discrete Geometry, Number Theory |  | yes |
 | 1381 | [`Erdos657.erdos_657.variants.dim_one_upper`](https://lefttosolve.com/p/Erdos657.erdos_657.variants.dim_one_upper) | Erdős Problem 657 — dim one upper | known | Convex & Discrete Geometry, Number Theory |  | yes |
 | 1382 | [`Erdos657.erdos_657.variants.higher_dim`](https://lefttosolve.com/p/Erdos657.erdos_657.variants.higher_dim) | Erdős Problem 657 — higher dim | open | Convex & Discrete Geometry |  |  |
 | 1383 | [`Erdos659.erdos_659`](https://lefttosolve.com/p/Erdos659.erdos_659) | Erdős Problem 659 | known | Convex & Discrete Geometry |  | yes |
 | 1384 | [`Erdos66.erdos_66`](https://lefttosolve.com/p/Erdos66.erdos_66) | Erdős Problem 66 | open | Number Theory | $500 |  |
 | 1385 | [`Erdos660.erdos_660`](https://lefttosolve.com/p/Erdos660.erdos_660) | Erdős Problem 660 | open | Convex & Discrete Geometry, Geometry |  |  |
 | 1386 | [`Erdos660.erdos_660.variants.Er75f`](https://lefttosolve.com/p/Erdos660.erdos_660.variants.Er75f) | Erdős Problem 660 — Er75f | open | Convex & Discrete Geometry, Geometry |  |  |
-| 1387 | [`Erdos660.erdos_660.variants.altman_planar`](https://lefttosolve.com/p/Erdos660.erdos_660.variants.altman_planar) | Erdős Problem 660 — altman planar | known | Convex & Discrete Geometry, Geometry |  |  |
+| 1387 | [`Erdos660.erdos_660.variants.altman_planar`](https://lefttosolve.com/p/Erdos660.erdos_660.variants.altman_planar) | Erdős Problem 660 — altman planar | known | Convex & Discrete Geometry, Geometry |  | yes |
 | 1388 | [`Erdos661.erdos_661`](https://lefttosolve.com/p/Erdos661.erdos_661) | Erdős Problem 661 | open | Convex & Discrete Geometry | $50 |  |
-| 1389 | [`Erdos661.erdos_661.variants.grid_upper_bound`](https://lefttosolve.com/p/Erdos661.erdos_661.variants.grid_upper_bound) | Erdős Problem 661 — grid upper bound | known | Convex & Discrete Geometry | $50 |  |
-| 1390 | [`Erdos661.erdos_661.variants.lenz`](https://lefttosolve.com/p/Erdos661.erdos_661.variants.lenz) | Erdős Problem 661 — lenz | known | Convex & Discrete Geometry | $50 |  |
+| 1389 | [`Erdos661.erdos_661.variants.grid_upper_bound`](https://lefttosolve.com/p/Erdos661.erdos_661.variants.grid_upper_bound) | Erdős Problem 661 — grid upper bound | known | Convex & Discrete Geometry | $50 | yes |
+| 1390 | [`Erdos661.erdos_661.variants.lenz`](https://lefttosolve.com/p/Erdos661.erdos_661.variants.lenz) | Erdős Problem 661 — lenz | known | Convex & Discrete Geometry | $50 | yes |
 | 1391 | [`Erdos661.erdos_661.variants.little_o_distinct_distances`](https://lefttosolve.com/p/Erdos661.erdos_661.variants.little_o_distinct_distances) | Erdős Problem 661 — little o distinct distances | open | Convex & Discrete Geometry | $50 |  |
 | 1392 | [`Erdos663.erdos_663`](https://lefttosolve.com/p/Erdos663.erdos_663) | Erdős Problem 663 | open | Number Theory |  |  |
 | 1393 | [`Erdos664.erdos_664.variants.block_design`](https://lefttosolve.com/p/Erdos664.erdos_664.variants.block_design) | Erdős Problem 664 — block design | open | Combinatorics |  |  |
 | 1394 | [`Erdos665.erdos_665`](https://lefttosolve.com/p/Erdos665.erdos_665) | Erdős Problem 665 | open | Combinatorics |  |  |
 | 1395 | [`Erdos667.erdos_667`](https://lefttosolve.com/p/Erdos667.erdos_667) | Erdős Problem 667 | open | Combinatorics |  |  |
-| 1396 | [`Erdos667.erdos_667.variants.ramsey_bounds`](https://lefttosolve.com/p/Erdos667.erdos_667.variants.ramsey_bounds) | Erdős Problem 667 — ramsey bounds | known | Combinatorics |  |  |
+| 1396 | [`Erdos667.erdos_667.variants.ramsey_bounds`](https://lefttosolve.com/p/Erdos667.erdos_667.variants.ramsey_bounds) | Erdős Problem 667 — ramsey bounds | known | Combinatorics |  | yes |
 | 1397 | [`Erdos668.erdos_668.parts.i`](https://lefttosolve.com/p/Erdos668.erdos_668.parts.i) | Erdős Problem 668 — i | open | Convex & Discrete Geometry |  |  |
 | 1398 | [`Erdos668.erdos_668.parts.ii`](https://lefttosolve.com/p/Erdos668.erdos_668.parts.ii) | Erdős Problem 668 — ii | known | Convex & Discrete Geometry |  | yes |
 | 1399 | [`Erdos668.erdos_668.variants.four_points`](https://lefttosolve.com/p/Erdos668.erdos_668.variants.four_points) | Erdős Problem 668 — four points | known | Convex & Discrete Geometry |  | yes |
 | 1400 | [`Erdos669.erdos_669.parts.i`](https://lefttosolve.com/p/Erdos669.erdos_669.parts.i) | Erdős Problem 669 — i | open | Convex & Discrete Geometry |  |  |
 | 1401 | [`Erdos669.erdos_669.parts.ii`](https://lefttosolve.com/p/Erdos669.erdos_669.parts.ii) | Erdős Problem 669 — ii | open | Convex & Discrete Geometry |  |  |
-| 1402 | [`Erdos669.erdos_669.variants.burr_grunbaum_sloane_atLeast`](https://lefttosolve.com/p/Erdos669.erdos_669.variants.burr_grunbaum_sloane_atLeast) | Erdős Problem 669 — burr grunbaum sloane atLeast | known | Convex & Discrete Geometry |  |  |
-| 1403 | [`Erdos669.erdos_669.variants.burr_grunbaum_sloane_exactly`](https://lefttosolve.com/p/Erdos669.erdos_669.variants.burr_grunbaum_sloane_exactly) | Erdős Problem 669 — burr grunbaum sloane exactly | known | Convex & Discrete Geometry |  |  |
-| 1404 | [`Erdos669.erdos_669.variants.k_two`](https://lefttosolve.com/p/Erdos669.erdos_669.variants.k_two) | Erdős Problem 669 — k two | known | Convex & Discrete Geometry |  |  |
-| 1405 | [`Erdos669.erdos_669.variants.limit_le`](https://lefttosolve.com/p/Erdos669.erdos_669.variants.limit_le) | Erdős Problem 669 — limit le | known | Convex & Discrete Geometry |  |  |
-| 1406 | [`Erdos669.erdos_669.variants.upper_bound`](https://lefttosolve.com/p/Erdos669.erdos_669.variants.upper_bound) | Erdős Problem 669 — upper bound | known | Convex & Discrete Geometry |  |  |
+| 1402 | [`Erdos669.erdos_669.variants.burr_grunbaum_sloane_atLeast`](https://lefttosolve.com/p/Erdos669.erdos_669.variants.burr_grunbaum_sloane_atLeast) | Erdős Problem 669 — burr grunbaum sloane atLeast | known | Convex & Discrete Geometry |  | yes |
+| 1403 | [`Erdos669.erdos_669.variants.burr_grunbaum_sloane_exactly`](https://lefttosolve.com/p/Erdos669.erdos_669.variants.burr_grunbaum_sloane_exactly) | Erdős Problem 669 — burr grunbaum sloane exactly | known | Convex & Discrete Geometry |  | yes |
+| 1404 | [`Erdos669.erdos_669.variants.k_two`](https://lefttosolve.com/p/Erdos669.erdos_669.variants.k_two) | Erdős Problem 669 — k two | known | Convex & Discrete Geometry |  | yes |
+| 1405 | [`Erdos669.erdos_669.variants.limit_le`](https://lefttosolve.com/p/Erdos669.erdos_669.variants.limit_le) | Erdős Problem 669 — limit le | known | Convex & Discrete Geometry |  | yes |
+| 1406 | [`Erdos669.erdos_669.variants.upper_bound`](https://lefttosolve.com/p/Erdos669.erdos_669.variants.upper_bound) | Erdős Problem 669 — upper bound | known | Convex & Discrete Geometry |  | yes |
 | 1407 | [`Erdos67.erdos_67`](https://lefttosolve.com/p/Erdos67.erdos_67) | The Erdős discrepancy problem | known | Number Theory | $500 |  |
 | 1408 | [`Erdos67.erdos_67.variants.complex`](https://lefttosolve.com/p/Erdos67.erdos_67.variants.complex) | The Erdős discrepancy problem (complex variant) | known | Number Theory | $500 |  |
-| 1409 | [`Erdos670.erdos_670`](https://lefttosolve.com/p/Erdos670.erdos_670) | Erdős Problem 670 | open | Convex & Discrete Geometry |  |  |
+| 1409 | [`Erdos670.erdos_670`](https://lefttosolve.com/p/Erdos670.erdos_670) | Erdős Problem 670 | open | Convex & Discrete Geometry |  | yes |
 | 1410 | [`Erdos670.erdos_670.variants.dim_one`](https://lefttosolve.com/p/Erdos670.erdos_670.variants.dim_one) | Erdős Problem 670 — dim one | known | Convex & Discrete Geometry |  | yes |
 | 1411 | [`Erdos670.erdos_670.variants.uniform_in_dim`](https://lefttosolve.com/p/Erdos670.erdos_670.variants.uniform_in_dim) | Erdős Problem 670 — uniform in dim | known | Convex & Discrete Geometry |  | yes |
 | 1412 | [`Erdos672.erdos_672`](https://lefttosolve.com/p/Erdos672.erdos_672) | Erdős Problem 672 | open | Number Theory |  |  |
-| 1413 | [`Erdos672.erdos_672.variants.oblath`](https://lefttosolve.com/p/Erdos672.erdos_672.variants.oblath) | Erdős Problem 672 — oblath | known | Number Theory |  |  |
+| 1413 | [`Erdos672.erdos_672.variants.oblath`](https://lefttosolve.com/p/Erdos672.erdos_672.variants.oblath) | Erdős Problem 672 — oblath | known | Number Theory |  | yes |
 | 1414 | [`Erdos673.erdos_673.variants.tao`](https://lefttosolve.com/p/Erdos673.erdos_673.variants.tao) | Erdős Problem 673 — tao | warmup | Number Theory |  | yes |
 | 1415 | [`Erdos675.erdos_675.parts.i`](https://lefttosolve.com/p/Erdos675.erdos_675.parts.i) | Erdős Problem 675 — i | open | Number Theory |  |  |
 | 1416 | [`Erdos675.erdos_675.parts.ii`](https://lefttosolve.com/p/Erdos675.erdos_675.parts.ii) | Erdős Problem 675 — ii | open | Number Theory |  |  |
 | 1417 | [`Erdos675.erdos_675.parts.iii`](https://lefttosolve.com/p/Erdos675.erdos_675.parts.iii) | Erdős Problem 675 — iii | known | Number Theory |  | yes |
 | 1418 | [`Erdos675.erdos_675.variants.brun`](https://lefttosolve.com/p/Erdos675.erdos_675.variants.brun) | Erdős Problem 675 — brun | known | Number Theory |  |  |
 | 1419 | [`Erdos675.erdos_675.variants.squarefree`](https://lefttosolve.com/p/Erdos675.erdos_675.variants.squarefree) | Erdős Problem 675 — squarefree | known | Number Theory |  | yes |
-| 1420 | [`Erdos676.erdos_676`](https://lefttosolve.com/p/Erdos676.erdos_676) | Erdős Problem 676 | open | Number Theory |  |  |
+| 1420 | [`Erdos676.erdos_676`](https://lefttosolve.com/p/Erdos676.erdos_676) | Erdős Problem 676 | open | Number Theory |  | yes |
 | 1421 | [`Erdos677.erdos_677`](https://lefttosolve.com/p/Erdos677.erdos_677) | Erdős Problem 677 | open | Number Theory |  |  |
 | 1422 | [`Erdos679.erdos_679.parts.i`](https://lefttosolve.com/p/Erdos679.erdos_679.parts.i) | Erdős Problem 679 — i | open | Number Theory |  |  |
 | 1423 | [`Erdos68.erdos_68`](https://lefttosolve.com/p/Erdos68.erdos_68) | Erdős Problem 68 | open | Number Theory |  |  |
@@ -1455,7 +1455,7 @@ Back to [all programs](../PROGRAMS.md).
 | 1433 | [`Erdos685.erdos_685.parts.ii`](https://lefttosolve.com/p/Erdos685.erdos_685.parts.ii) | Erdős Problem 685 — ii | open | Number Theory |  |  |
 | 1434 | [`Erdos686.erdos_686`](https://lefttosolve.com/p/Erdos686.erdos_686) | Erdős Problem 686 | open | Number Theory |  |  |
 | 1435 | [`Erdos686.erdos_686.variants.four`](https://lefttosolve.com/p/Erdos686.erdos_686.variants.four) | Erdős Problem 686 — four | open | Number Theory |  |  |
-| 1436 | [`Erdos686.erdos_686.variants.four_three`](https://lefttosolve.com/p/Erdos686.erdos_686.variants.four_three) | Erdős Problem 686 — four three | known | Number Theory |  |  |
+| 1436 | [`Erdos686.erdos_686.variants.four_three`](https://lefttosolve.com/p/Erdos686.erdos_686.variants.four_three) | Erdős Problem 686 — four three | known | Number Theory |  | yes |
 | 1437 | [`Erdos686.erdos_686.variants.square`](https://lefttosolve.com/p/Erdos686.erdos_686.variants.square) | Erdős Problem 686 — square | open | Number Theory |  |  |
 | 1438 | [`Erdos686.erdos_686.variants.twenty_five`](https://lefttosolve.com/p/Erdos686.erdos_686.variants.twenty_five) | Erdős Problem 686 — twenty five | open | Number Theory |  |  |
 | 1439 | [`Erdos687.erdos_687.parts.i`](https://lefttosolve.com/p/Erdos687.erdos_687.parts.i) | Erdős Problem 687 — i | open | Number Theory | $1000 |  |
@@ -1465,21 +1465,21 @@ Back to [all programs](../PROGRAMS.md).
 | 1443 | [`Erdos687.erdos_687.variants.maier_pomerance`](https://lefttosolve.com/p/Erdos687.erdos_687.variants.maier_pomerance) | Erdős Problem 687 — maier pomerance | open | Number Theory | $1000 |  |
 | 1444 | [`Erdos688.erdos_688.parts.i`](https://lefttosolve.com/p/Erdos688.erdos_688.parts.i) | Erdős Problem 688 — i | open | Number Theory |  |  |
 | 1445 | [`Erdos688.erdos_688.parts.ii`](https://lefttosolve.com/p/Erdos688.erdos_688.parts.ii) | Erdős Problem 688 — ii | open | Number Theory |  |  |
-| 1446 | [`Erdos688.erdos_688.variants.lglglg_over_lglg_is_big_o`](https://lefttosolve.com/p/Erdos688.erdos_688.variants.lglglg_over_lglg_is_big_o) | Erdős Problem 688 — lglglg over lglg is big o | known | Number Theory |  |  |
+| 1446 | [`Erdos688.erdos_688.variants.lglglg_over_lglg_is_big_o`](https://lefttosolve.com/p/Erdos688.erdos_688.variants.lglglg_over_lglg_is_big_o) | Erdős Problem 688 — lglglg over lglg is big o | known | Number Theory |  | yes |
 | 1447 | [`Erdos69.erdos_69`](https://lefttosolve.com/p/Erdos69.erdos_69) | Erdős Problem 69 | warmup | Number Theory |  |  |
-| 1448 | [`Erdos690.erdos_690.variants.large_k`](https://lefttosolve.com/p/Erdos690.erdos_690.variants.large_k) | Erdős Problem 690 — large k | known | Number Theory |  |  |
-| 1449 | [`Erdos691.erdos_691`](https://lefttosolve.com/p/Erdos691.erdos_691) | Erdős Problem 691 | open | Number Theory |  |  |
+| 1448 | [`Erdos690.erdos_690.variants.large_k`](https://lefttosolve.com/p/Erdos690.erdos_690.variants.large_k) | Erdős Problem 690 — large k | known | Number Theory |  | yes |
+| 1449 | [`Erdos691.erdos_691`](https://lefttosolve.com/p/Erdos691.erdos_691) | Erdős Problem 691 | open | Number Theory |  | yes |
 | 1450 | [`Erdos692.erdos_692.parts.ii`](https://lefttosolve.com/p/Erdos692.erdos_692.parts.ii) | Erdős Problem 692 — ii | known | Number Theory |  |  |
 | 1451 | [`Erdos692.erdos_692.variants.cambie_local_maxima`](https://lefttosolve.com/p/Erdos692.erdos_692.variants.cambie_local_maxima) | Erdős Problem 692 — cambie local maxima | known | Number Theory |  |  |
-| 1452 | [`Erdos692.erdos_692.variants.erdos_upper_bound`](https://lefttosolve.com/p/Erdos692.erdos_692.variants.erdos_upper_bound) | Erdős Problem 692 — erdos upper bound | known | Number Theory |  |  |
+| 1452 | [`Erdos692.erdos_692.variants.erdos_upper_bound`](https://lefttosolve.com/p/Erdos692.erdos_692.variants.erdos_upper_bound) | Erdős Problem 692 — erdos upper bound | known | Number Theory |  | yes |
 | 1453 | [`Erdos693.erdos_693`](https://lefttosolve.com/p/Erdos693.erdos_693) | Erdős Problem 693 | open | Number Theory |  |  |
 | 1454 | [`Erdos694.erdos_694`](https://lefttosolve.com/p/Erdos694.erdos_694) | Erdős Problem 694 | known | Number Theory |  |  |
 | 1455 | [`Erdos694.erdos_694.variants.carmichael`](https://lefttosolve.com/p/Erdos694.erdos_694.variants.carmichael) | Erdős Problem 694 — carmichael | open | Number Theory |  |  |
-| 1456 | [`Erdos694.erdos_694.variants.inf_unique`](https://lefttosolve.com/p/Erdos694.erdos_694.variants.inf_unique) | Erdős Problem 694 — inf unique | known | Number Theory |  |  |
+| 1456 | [`Erdos694.erdos_694.variants.inf_unique`](https://lefttosolve.com/p/Erdos694.erdos_694.variants.inf_unique) | Erdős Problem 694 — inf unique | known | Number Theory |  | yes |
 | 1457 | [`Erdos695.erdos_695`](https://lefttosolve.com/p/Erdos695.erdos_695) | Erdős Problem 695 | open | Number Theory |  |  |
 | 1458 | [`Erdos695.erdos_695.variants.upperBound`](https://lefttosolve.com/p/Erdos695.erdos_695.variants.upperBound) | Erdős Problem 695 — upperBound | open | Number Theory |  |  |
 | 1459 | [`Erdos696.erdos_696`](https://lefttosolve.com/p/Erdos696.erdos_696) | Erdős Problem 696 | known | Number Theory |  |  |
-| 1460 | [`Erdos697.density_exists`](https://lefttosolve.com/p/Erdos697.density_exists) | Erdős Problem 697 | known | Number Theory |  |  |
+| 1460 | [`Erdos697.density_exists`](https://lefttosolve.com/p/Erdos697.density_exists) | Erdős Problem 697 | known | Number Theory |  | yes |
 | 1461 | [`Erdos697.erdos_697.parts.i`](https://lefttosolve.com/p/Erdos697.erdos_697.parts.i) | Erdős Problem 697 — i | known | Number Theory |  |  |
 | 1462 | [`Erdos697.erdos_697.parts.ii`](https://lefttosolve.com/p/Erdos697.erdos_697.parts.ii) | Erdős Problem 697 — ii | known | Number Theory |  |  |
 | 1463 | [`Erdos697.erdos_697.variants.delta_lt`](https://lefttosolve.com/p/Erdos697.erdos_697.variants.delta_lt) | Erdős Problem 697 — delta lt | known | Number Theory |  |  |
@@ -1487,40 +1487,40 @@ Back to [all programs](../PROGRAMS.md).
 | 1465 | [`Erdos699.erdos_szekeres_strengthening`](https://lefttosolve.com/p/Erdos699.erdos_szekeres_strengthening) | Erdős Problem 699 | open | Number Theory |  |  |
 | 1466 | [`Erdos7.erdos_7`](https://lefttosolve.com/p/Erdos7.erdos_7) | Erdős Problem 7 | open | Number Theory | $25 |  |
 | 1467 | [`Erdos70.erdos_70`](https://lefttosolve.com/p/Erdos70.erdos_70) | Erdős Problem 70 | open | Logic & Foundations |  |  |
-| 1468 | [`Erdos70.erdos_70.variants.erdos_rado`](https://lefttosolve.com/p/Erdos70.erdos_70.variants.erdos_rado) | Erdős–Rado partial result | known | Logic & Foundations |  |  |
-| 1469 | [`Erdos70.erdos_70.variants.omega_one`](https://lefttosolve.com/p/Erdos70.erdos_70.variants.omega_one) | The relation at $\\omega_1$ | open | Logic & Foundations |  |  |
+| 1468 | [`Erdos70.erdos_70.variants.erdos_rado`](https://lefttosolve.com/p/Erdos70.erdos_70.variants.erdos_rado) | Erdős–Rado partial result | known | Logic & Foundations |  | yes |
+| 1469 | [`Erdos70.erdos_70.variants.omega_one`](https://lefttosolve.com/p/Erdos70.erdos_70.variants.omega_one) | The relation at $\\omega_1$ | open | Logic & Foundations |  | yes |
 | 1470 | [`Erdos70.erdos_70.variants.omega_times_two_four`](https://lefttosolve.com/p/Erdos70.erdos_70.variants.omega_times_two_four) | First open case beyond Erdős–Rado | open | Logic & Foundations |  |  |
 | 1471 | [`Erdos700.erdos_700.parts.i`](https://lefttosolve.com/p/Erdos700.erdos_700.parts.i) | Erdős Problem 700 — i | open | Number Theory |  |  |
-| 1472 | [`Erdos700.erdos_700.parts.ii`](https://lefttosolve.com/p/Erdos700.erdos_700.parts.ii) | Erdős Problem 700 — ii | open | Number Theory |  |  |
+| 1472 | [`Erdos700.erdos_700.parts.ii`](https://lefttosolve.com/p/Erdos700.erdos_700.parts.ii) | Erdős Problem 700 — ii | open | Number Theory |  | yes |
 | 1473 | [`Erdos700.erdos_700.parts.iii`](https://lefttosolve.com/p/Erdos700.erdos_700.parts.iii) | Erdős Problem 700 — iii | open | Number Theory |  |  |
 | 1474 | [`Erdos700.erdos_700.variants.prime_power_divisor`](https://lefttosolve.com/p/Erdos700.erdos_700.variants.prime_power_divisor) | Erdős Problem 700 — prime power divisor | open | Number Theory |  |  |
-| 1475 | [`Erdos701.erdos_701`](https://lefttosolve.com/p/Erdos701.erdos_701) | Erdős Problem 701 | open | Combinatorics |  |  |
-| 1476 | [`Erdos703.erdos_703.variants.frankl_furedi`](https://lefttosolve.com/p/Erdos703.erdos_703.variants.frankl_furedi) | Erdős Problem 703 — frankl furedi | known | Combinatorics | $250 |  |
+| 1475 | [`Erdos701.erdos_701`](https://lefttosolve.com/p/Erdos701.erdos_701) | Erdős Problem 701 | open | Combinatorics |  | yes |
+| 1476 | [`Erdos703.erdos_703.variants.frankl_furedi`](https://lefttosolve.com/p/Erdos703.erdos_703.variants.frankl_furedi) | Erdős Problem 703 — frankl furedi | known | Combinatorics | $250 | yes |
 | 1477 | [`Erdos704.erdos_704.parts.i`](https://lefttosolve.com/p/Erdos704.erdos_704.parts.i) | Erdős Problem 704 — i | known | Combinatorics, Convex & Discrete Geometry |  | yes |
 | 1478 | [`Erdos704.erdos_704.parts.ii`](https://lefttosolve.com/p/Erdos704.erdos_704.parts.ii) | Erdős Problem 704 — ii | open | Combinatorics, Convex & Discrete Geometry |  |  |
 | 1479 | [`Erdos704.erdos_704.variants.cube_colouring`](https://lefttosolve.com/p/Erdos704.erdos_704.variants.cube_colouring) | Erdős Problem 704 — cube colouring | warmup | Combinatorics, Convex & Discrete Geometry |  | yes |
 | 1480 | [`Erdos704.erdos_704.variants.davies_lower`](https://lefttosolve.com/p/Erdos704.erdos_704.variants.davies_lower) | Erdős Problem 704 — davies lower | known | Combinatorics, Convex & Discrete Geometry |  |  |
-| 1481 | [`Erdos704.erdos_704.variants.davies_upper`](https://lefttosolve.com/p/Erdos704.erdos_704.variants.davies_upper) | Erdős Problem 704 — davies upper | known | Combinatorics, Convex & Discrete Geometry |  |  |
+| 1481 | [`Erdos704.erdos_704.variants.davies_upper`](https://lefttosolve.com/p/Erdos704.erdos_704.variants.davies_upper) | Erdős Problem 704 — davies upper | known | Combinatorics, Convex & Discrete Geometry |  | yes |
 | 1482 | [`Erdos704.erdos_704.variants.frankl_wilson`](https://lefttosolve.com/p/Erdos704.erdos_704.variants.frankl_wilson) | Erdős Problem 704 — frankl wilson | known | Combinatorics, Convex & Discrete Geometry |  | yes |
 | 1483 | [`Erdos704.erdos_704.variants.larman_rogers`](https://lefttosolve.com/p/Erdos704.erdos_704.variants.larman_rogers) | Erdős Problem 704 — larman rogers | known | Combinatorics, Convex & Discrete Geometry |  | yes |
-| 1484 | [`Erdos704.erdos_704.variants.larman_rogers_conjecture`](https://lefttosolve.com/p/Erdos704.erdos_704.variants.larman_rogers_conjecture) | Erdős Problem 704 — larman rogers conjecture | known | Combinatorics, Convex & Discrete Geometry |  |  |
-| 1485 | [`Erdos704.erdos_704.variants.raigorodskii`](https://lefttosolve.com/p/Erdos704.erdos_704.variants.raigorodskii) | Erdős Problem 704 — raigorodskii | known | Combinatorics, Convex & Discrete Geometry |  |  |
+| 1484 | [`Erdos704.erdos_704.variants.larman_rogers_conjecture`](https://lefttosolve.com/p/Erdos704.erdos_704.variants.larman_rogers_conjecture) | Erdős Problem 704 — larman rogers conjecture | known | Combinatorics, Convex & Discrete Geometry |  | yes |
+| 1485 | [`Erdos704.erdos_704.variants.raigorodskii`](https://lefttosolve.com/p/Erdos704.erdos_704.variants.raigorodskii) | Erdős Problem 704 — raigorodskii | known | Combinatorics, Convex & Discrete Geometry |  | yes |
 | 1486 | [`Erdos706.erdos_706`](https://lefttosolve.com/p/Erdos706.erdos_706) | Erdős Problem 706 | open | Combinatorics, Convex & Discrete Geometry |  |  |
 | 1487 | [`Erdos707.erdos_707.variants.counterexample_hall`](https://lefttosolve.com/p/Erdos707.erdos_707.variants.counterexample_hall) | Erdős Problem 707: Embedding Sidon Sets in Perfect Difference Sets — counterexample hall | known | Combinatorics, Number Theory | $1000 | yes |
 | 1488 | [`Erdos707.erdos_707.variants.counterexample_mian_chowla`](https://lefttosolve.com/p/Erdos707.erdos_707.variants.counterexample_mian_chowla) | Erdős Problem 707: Embedding Sidon Sets in Perfect Difference Sets — counterexample mian chowla | known | Combinatorics, Number Theory | $1000 | yes |
 | 1489 | [`Erdos707.erdos_707.variants.counterexample_prime`](https://lefttosolve.com/p/Erdos707.erdos_707.variants.counterexample_prime) | Erdős Problem 707: Embedding Sidon Sets in Perfect Difference Sets — counterexample prime | known | Combinatorics, Number Theory | $1000 | yes |
 | 1490 | [`Erdos707.erdos_707.variants.prime`](https://lefttosolve.com/p/Erdos707.erdos_707.variants.prime) | Erdős Problem 707: Embedding Sidon Sets in Perfect Difference Sets — prime | known | Combinatorics, Number Theory | $1000 | yes |
 | 1491 | [`Erdos707.erdos_707.variants.singer_construction`](https://lefttosolve.com/p/Erdos707.erdos_707.variants.singer_construction) | Erdős Problem 707: Embedding Sidon Sets in Perfect Difference Sets — singer construction | warmup | Combinatorics, Number Theory | $1000 | yes |
-| 1492 | [`Erdos707.erdos_707.variants.small_sidon_sets`](https://lefttosolve.com/p/Erdos707.erdos_707.variants.small_sidon_sets) | Erdős Problem 707: Embedding Sidon Sets in Perfect Difference Sets — small sidon sets | warmup | Combinatorics, Number Theory | $1000 |  |
+| 1492 | [`Erdos707.erdos_707.variants.small_sidon_sets`](https://lefttosolve.com/p/Erdos707.erdos_707.variants.small_sidon_sets) | Erdős Problem 707: Embedding Sidon Sets in Perfect Difference Sets — small sidon sets | warmup | Combinatorics, Number Theory | $1000 | yes |
 | 1493 | [`Erdos709.erdos_709`](https://lefttosolve.com/p/Erdos709.erdos_709) | Erdős Problem 709 | open | Number Theory |  |  |
 | 1494 | [`Erdos709.erdos_709.variants.ersu_lower`](https://lefttosolve.com/p/Erdos709.erdos_709.variants.ersu_lower) | Erdős Problem 709 — ersu lower | known | Number Theory |  | yes |
 | 1495 | [`Erdos709.erdos_709.variants.ersu_upper`](https://lefttosolve.com/p/Erdos709.erdos_709.variants.ersu_upper) | Erdős Problem 709 — ersu upper | known | Number Theory |  | yes |
 | 1496 | [`Erdos709.erdos_709.variants.van_doorn_lower`](https://lefttosolve.com/p/Erdos709.erdos_709.variants.van_doorn_lower) | Erdős Problem 709 — van doorn lower | known | Number Theory |  | yes |
 | 1497 | [`Erdos710.erdos_710`](https://lefttosolve.com/p/Erdos710.erdos_710) | Erdős Problem 710 | open | Number Theory | ₹2000 |  |
-| 1498 | [`Erdos710.erdos_710.variants.lower_bound`](https://lefttosolve.com/p/Erdos710.erdos_710.variants.lower_bound) | Erdős Problem 710 — lower bound | known | Number Theory | ₹2000 |  |
-| 1499 | [`Erdos710.erdos_710.variants.upper_bound`](https://lefttosolve.com/p/Erdos710.erdos_710.variants.upper_bound) | Erdős Problem 710 — upper bound | known | Number Theory | ₹2000 |  |
+| 1498 | [`Erdos710.erdos_710.variants.lower_bound`](https://lefttosolve.com/p/Erdos710.erdos_710.variants.lower_bound) | Erdős Problem 710 — lower bound | known | Number Theory | ₹2000 | yes |
+| 1499 | [`Erdos710.erdos_710.variants.upper_bound`](https://lefttosolve.com/p/Erdos710.erdos_710.variants.upper_bound) | Erdős Problem 710 — upper bound | known | Number Theory | ₹2000 | yes |
 | 1500 | [`Erdos711.erdos_711.parts.i`](https://lefttosolve.com/p/Erdos711.erdos_711.parts.i) | Erdős Problem 711 — i | open | Number Theory | ₹1000 |  |
-| 1501 | [`Erdos711.erdos_711.parts.ii`](https://lefttosolve.com/p/Erdos711.erdos_711.parts.ii) | Erdős Problem 711 — ii | known | Number Theory | ₹1000 |  |
+| 1501 | [`Erdos711.erdos_711.parts.ii`](https://lefttosolve.com/p/Erdos711.erdos_711.parts.ii) | Erdős Problem 711 — ii | known | Number Theory | ₹1000 | yes |
 | 1502 | [`Erdos712.erdos_712`](https://lefttosolve.com/p/Erdos712.erdos_712) | Erdős Problem 712 | open | Combinatorics | $500 |  |
 | 1503 | [`Erdos712.erdos_712.variants.graph_case`](https://lefttosolve.com/p/Erdos712.erdos_712.variants.graph_case) | Erdős Problem 712 — graph case | known | Combinatorics | $500 | yes |
 | 1504 | [`Erdos712.erdos_712.variants.graph_case_div_sq`](https://lefttosolve.com/p/Erdos712.erdos_712.variants.graph_case_div_sq) | Erdős Problem 712 — graph case div sq | known | Combinatorics | $500 | yes |
@@ -1528,11 +1528,11 @@ Back to [all programs](../PROGRAMS.md).
 | 1506 | [`Erdos713.erdos_713.parts.i`](https://lefttosolve.com/p/Erdos713.erdos_713.parts.i) | Erdős Problem 713 — i | open | Combinatorics | $500 |  |
 | 1507 | [`Erdos713.erdos_713.parts.ii`](https://lefttosolve.com/p/Erdos713.erdos_713.parts.ii) | Erdős Problem 713 — ii | open | Combinatorics | $500 |  |
 | 1508 | [`Erdos714.erdos_714`](https://lefttosolve.com/p/Erdos714.erdos_714) | Erdős Problem 714 | open | Combinatorics |  |  |
-| 1509 | [`Erdos716.erdos_716`](https://lefttosolve.com/p/Erdos716.erdos_716) | Erdős Problem 716 | known | Combinatorics |  |  |
+| 1509 | [`Erdos716.erdos_716`](https://lefttosolve.com/p/Erdos716.erdos_716) | Erdős Problem 716 | known | Combinatorics |  | yes |
 | 1510 | [`Erdos717.erdos_717.variants.erdos_fajtlowicz`](https://lefttosolve.com/p/Erdos717.erdos_717.variants.erdos_fajtlowicz) | Erdős Problem 717 — erdos fajtlowicz | known | Combinatorics |  | yes |
 | 1511 | [`Erdos719.erdos_719`](https://lefttosolve.com/p/Erdos719.erdos_719) | Erdős Problem 719 | open | Combinatorics |  |  |
-| 1512 | [`Erdos721.erdos_721.lower_bound`](https://lefttosolve.com/p/Erdos721.erdos_721.lower_bound) | Erdős Problem 721 — lower bound | known | Combinatorics, Number Theory |  |  |
-| 1513 | [`Erdos721.erdos_721.upper_bound`](https://lefttosolve.com/p/Erdos721.erdos_721.upper_bound) | Erdős Problem 721 — upper bound | known | Combinatorics, Number Theory |  |  |
+| 1512 | [`Erdos721.erdos_721.lower_bound`](https://lefttosolve.com/p/Erdos721.erdos_721.lower_bound) | Erdős Problem 721 — lower bound | known | Combinatorics, Number Theory |  | yes |
+| 1513 | [`Erdos721.erdos_721.upper_bound`](https://lefttosolve.com/p/Erdos721.erdos_721.upper_bound) | Erdős Problem 721 — upper bound | known | Combinatorics, Number Theory |  | yes |
 | 1514 | [`Erdos722.erdos_722`](https://lefttosolve.com/p/Erdos722.erdos_722) | Erdős Problem 722 | known | Combinatorics |  |  |
 | 1515 | [`Erdos723.erdos_723`](https://lefttosolve.com/p/Erdos723.erdos_723) | Erdős Problem 723: The prime power conjecture. | open | Combinatorics |  |  |
 | 1516 | [`Erdos723.erdos_723.variants.bruck_ryser`](https://lefttosolve.com/p/Erdos723.erdos_723.variants.bruck_ryser) | Erdős Problem 723: The prime power conjecture. — bruck ryser | known | Combinatorics |  | yes |
@@ -1541,19 +1541,19 @@ Back to [all programs](../PROGRAMS.md).
 | 1519 | [`Erdos723.erdos_723.variants.prime_power_is_projplane_order`](https://lefttosolve.com/p/Erdos723.erdos_723.variants.prime_power_is_projplane_order) | Erdős Problem 723: The prime power conjecture. — prime power is projplane order | known | Combinatorics |  | yes |
 | 1520 | [`Erdos724.erdos_724`](https://lefttosolve.com/p/Erdos724.erdos_724) | Erdős Problem 724 | open | Combinatorics |  |  |
 | 1521 | [`Erdos724.erdos_724.variants.beth`](https://lefttosolve.com/p/Erdos724.erdos_724.variants.beth) | Erdős Problem 724 — beth | known | Combinatorics |  |  |
-| 1522 | [`Erdos724.erdos_724.variants.bose_parker_shrikhande`](https://lefttosolve.com/p/Erdos724.erdos_724.variants.bose_parker_shrikhande) | Erdős Problem 724 — bose parker shrikhande | known | Combinatorics |  |  |
-| 1523 | [`Erdos724.erdos_724.variants.chowla_erdos_straus`](https://lefttosolve.com/p/Erdos724.erdos_724.variants.chowla_erdos_straus) | Erdős Problem 724 — chowla erdos straus | known | Combinatorics |  |  |
-| 1524 | [`Erdos724.erdos_724.variants.wilson`](https://lefttosolve.com/p/Erdos724.erdos_724.variants.wilson) | Erdős Problem 724 — wilson | known | Combinatorics |  |  |
+| 1522 | [`Erdos724.erdos_724.variants.bose_parker_shrikhande`](https://lefttosolve.com/p/Erdos724.erdos_724.variants.bose_parker_shrikhande) | Erdős Problem 724 — bose parker shrikhande | known | Combinatorics |  | yes |
+| 1523 | [`Erdos724.erdos_724.variants.chowla_erdos_straus`](https://lefttosolve.com/p/Erdos724.erdos_724.variants.chowla_erdos_straus) | Erdős Problem 724 — chowla erdos straus | known | Combinatorics |  | yes |
+| 1524 | [`Erdos724.erdos_724.variants.wilson`](https://lefttosolve.com/p/Erdos724.erdos_724.variants.wilson) | Erdős Problem 724 — wilson | known | Combinatorics |  | yes |
 | 1525 | [`Erdos725.erdos_725`](https://lefttosolve.com/p/Erdos725.erdos_725) | Erdős Problem 725 | open | Combinatorics |  |  |
-| 1526 | [`Erdos725.erdos_725.variants.erdos_kaplansky`](https://lefttosolve.com/p/Erdos725.erdos_725.variants.erdos_kaplansky) | Erdős Problem 725 — erdos kaplansky | known | Combinatorics |  |  |
-| 1527 | [`Erdos725.erdos_725.variants.yamamoto`](https://lefttosolve.com/p/Erdos725.erdos_725.variants.yamamoto) | Erdős Problem 725 — yamamoto | known | Combinatorics |  |  |
+| 1526 | [`Erdos725.erdos_725.variants.erdos_kaplansky`](https://lefttosolve.com/p/Erdos725.erdos_725.variants.erdos_kaplansky) | Erdős Problem 725 — erdos kaplansky | known | Combinatorics |  | yes |
+| 1527 | [`Erdos725.erdos_725.variants.yamamoto`](https://lefttosolve.com/p/Erdos725.erdos_725.variants.yamamoto) | Erdős Problem 725 — yamamoto | known | Combinatorics |  | yes |
 | 1528 | [`Erdos726.erdos_726`](https://lefttosolve.com/p/Erdos726.erdos_726) | Erdős Problem 726 | open | Number Theory |  |  |
 | 1529 | [`Erdos727.erdos_727`](https://lefttosolve.com/p/Erdos727.erdos_727) | Erdős Problem 727 | open | Number Theory |  |  |
 | 1530 | [`Erdos727.erdos_727.variants.k_1`](https://lefttosolve.com/p/Erdos727.erdos_727.variants.k_1) | Erdős Problem 727 — k 1 | known | Number Theory |  | yes |
 | 1531 | [`Erdos727.erdos_727.variants.k_1_2`](https://lefttosolve.com/p/Erdos727.erdos_727.variants.k_1_2) | Erdős Problem 727 — k 1 2 | known | Number Theory |  | yes |
 | 1532 | [`Erdos727.erdos_727.variants.k_2`](https://lefttosolve.com/p/Erdos727.erdos_727.variants.k_2) | Erdős Problem 727 — k 2 | open | Number Theory |  |  |
 | 1533 | [`Erdos731.erdos_731`](https://lefttosolve.com/p/Erdos731.erdos_731) | Erdős Problem 731 | open | Number Theory |  |  |
-| 1534 | [`Erdos731.erdos_731.variants.egrs75`](https://lefttosolve.com/p/Erdos731.erdos_731.variants.egrs75) | Erdős Problem 731 — egrs75 | known | Number Theory |  |  |
+| 1534 | [`Erdos731.erdos_731.variants.egrs75`](https://lefttosolve.com/p/Erdos731.erdos_731.variants.egrs75) | Erdős Problem 731 — egrs75 | known | Number Theory |  | yes |
 | 1535 | [`Erdos732.erdos_732.parts.i`](https://lefttosolve.com/p/Erdos732.erdos_732.parts.i) | Erdős Problem 732 — i | known | Combinatorics |  |  |
 | 1536 | [`Erdos732.erdos_732.parts.ii`](https://lefttosolve.com/p/Erdos732.erdos_732.parts.ii) | Erdős Problem 732 — ii | known | Combinatorics |  | yes |
 | 1537 | [`Erdos733.erdos_733.variants.limit_exists`](https://lefttosolve.com/p/Erdos733.erdos_733.variants.limit_exists) | Erdős Problem 733 — limit exists | open | Combinatorics, Convex & Discrete Geometry |  |  |
@@ -1562,11 +1562,11 @@ Back to [all programs](../PROGRAMS.md).
 | 1540 | [`Erdos739.erdos_739.variants.aleph_zero`](https://lefttosolve.com/p/Erdos739.erdos_739.variants.aleph_zero) | Erdős Problem 739 — aleph zero | known | Combinatorics |  | yes |
 | 1541 | [`Erdos739.erdos_739.variants.gch`](https://lefttosolve.com/p/Erdos739.erdos_739.variants.gch) | Erdős Problem 739 — gch | open | Combinatorics, Logic & Foundations |  |  |
 | 1542 | [`Erdos739.erdos_739.variants.induced`](https://lefttosolve.com/p/Erdos739.erdos_739.variants.induced) | Erdős Problem 739 — induced | known | Combinatorics, Logic & Foundations |  | yes |
-| 1543 | [`Erdos74.erdos_74.variants.sqrt`](https://lefttosolve.com/p/Erdos74.erdos_74.variants.sqrt) | Erdős Problem 74 — sqrt | open | Combinatorics | $500 |  |
+| 1543 | [`Erdos74.erdos_74.variants.sqrt`](https://lefttosolve.com/p/Erdos74.erdos_74.variants.sqrt) | Erdős Problem 74 — sqrt | open | Combinatorics | $500 | yes |
 | 1544 | [`Erdos740.erdos_740`](https://lefttosolve.com/p/Erdos740.erdos_740) | Erdős Problem 740: Infinitary version of chromatic number and odd cycles | open | Combinatorics |  |  |
-| 1545 | [`Erdos741.erdos_741.variants.lower`](https://lefttosolve.com/p/Erdos741.erdos_741.variants.lower) | Erdős Problem 741 — lower | open | Combinatorics |  |  |
-| 1546 | [`Erdos742.erdos_742`](https://lefttosolve.com/p/Erdos742.erdos_742) | Murty-Simon Conjecture | open | Combinatorics |  |  |
-| 1547 | [`Erdos742.variants.fan_bound`](https://lefttosolve.com/p/Erdos742.variants.fan_bound) | Erdős Problem 742 — fan bound | known | Combinatorics |  |  |
+| 1545 | [`Erdos741.erdos_741.variants.lower`](https://lefttosolve.com/p/Erdos741.erdos_741.variants.lower) | Erdős Problem 741 — lower | open | Combinatorics |  | yes |
+| 1546 | [`Erdos742.erdos_742`](https://lefttosolve.com/p/Erdos742.erdos_742) | Murty-Simon Conjecture | open | Combinatorics |  | yes |
+| 1547 | [`Erdos742.variants.fan_bound`](https://lefttosolve.com/p/Erdos742.variants.fan_bound) | Erdős Problem 742 — fan bound | known | Combinatorics |  | yes |
 | 1548 | [`Erdos742.variants.plesnik_bound`](https://lefttosolve.com/p/Erdos742.variants.plesnik_bound) | Erdős Problem 742 — plesnik bound | known | Combinatorics |  | yes |
 | 1549 | [`Erdos743.erdos_743`](https://lefttosolve.com/p/Erdos743.erdos_743) | Erdős Problem 743 | open | Combinatorics |  |  |
 | 1550 | [`Erdos743.erdos_743.variants.all_but_two_stars`](https://lefttosolve.com/p/Erdos743.erdos_743.variants.all_but_two_stars) | Erdős Problem 743 — all but two stars | known | Combinatorics |  | yes |
@@ -1580,17 +1580,17 @@ Back to [all programs](../PROGRAMS.md).
 | 1558 | [`Erdos748.erdos_748.variants.green_sapozhenko`](https://lefttosolve.com/p/Erdos748.erdos_748.variants.green_sapozhenko) | Erdős Problem 748 — green sapozhenko | known | Combinatorics, Number Theory |  |  |
 | 1559 | [`Erdos749.erdos_749`](https://lefttosolve.com/p/Erdos749.erdos_749) | Erdős Problem 749 | open | Number Theory |  |  |
 | 1560 | [`Erdos75.erdos_75`](https://lefttosolve.com/p/Erdos75.erdos_75) | Erdős Problem 75 | open | Combinatorics |  |  |
-| 1561 | [`Erdos750.erdos_750.variants.c_gt_quarter`](https://lefttosolve.com/p/Erdos750.erdos_750.variants.c_gt_quarter) | Erdős Problem 750 — c gt quarter | known | Combinatorics |  |  |
-| 1562 | [`Erdos750.erdos_750.variants.epsilon`](https://lefttosolve.com/p/Erdos750.erdos_750.variants.epsilon) | Erdős Problem 750 — epsilon | known | Combinatorics |  |  |
+| 1561 | [`Erdos750.erdos_750.variants.c_gt_quarter`](https://lefttosolve.com/p/Erdos750.erdos_750.variants.c_gt_quarter) | Erdős Problem 750 — c gt quarter | known | Combinatorics |  | yes |
+| 1562 | [`Erdos750.erdos_750.variants.epsilon`](https://lefttosolve.com/p/Erdos750.erdos_750.variants.epsilon) | Erdős Problem 750 — epsilon | known | Combinatorics |  | yes |
 | 1563 | [`Erdos751.erdos_751.parts.i`](https://lefttosolve.com/p/Erdos751.erdos_751.parts.i) | Erdős Problem 751 — i | known | Combinatorics |  | yes |
 | 1564 | [`Erdos751.erdos_751.parts.ii`](https://lefttosolve.com/p/Erdos751.erdos_751.parts.ii) | Erdős Problem 751 — ii | known | Combinatorics |  | yes |
 | 1565 | [`Erdos751.erdos_751.variants.bondy_vince`](https://lefttosolve.com/p/Erdos751.erdos_751.variants.bondy_vince) | Erdős Problem 751 — bondy vince | known | Combinatorics |  | yes |
 | 1566 | [`Erdos753.erdos_753.variants.alon`](https://lefttosolve.com/p/Erdos753.erdos_753.variants.alon) | Erdős Problem 753 — alon | known | Combinatorics |  | yes |
-| 1567 | [`Erdos755.erdos_755.variants.any_size_cdl`](https://lefttosolve.com/p/Erdos755.erdos_755.variants.any_size_cdl) | Erdős Problem 755 — any size cdl | known | Convex & Discrete Geometry |  |  |
-| 1568 | [`Erdos756.erdos_756`](https://lefttosolve.com/p/Erdos756.erdos_756) | Erdős Problem 756 | known | Convex & Discrete Geometry |  |  |
-| 1569 | [`Erdos756.erdos_756.variants.bhowmick_general`](https://lefttosolve.com/p/Erdos756.erdos_756.variants.bhowmick_general) | Erdős Problem 756 — bhowmick general | known | Convex & Discrete Geometry |  |  |
+| 1567 | [`Erdos755.erdos_755.variants.any_size_cdl`](https://lefttosolve.com/p/Erdos755.erdos_755.variants.any_size_cdl) | Erdős Problem 755 — any size cdl | known | Convex & Discrete Geometry |  | yes |
+| 1568 | [`Erdos756.erdos_756`](https://lefttosolve.com/p/Erdos756.erdos_756) | Erdős Problem 756 | known | Convex & Discrete Geometry |  | yes |
+| 1569 | [`Erdos756.erdos_756.variants.bhowmick_general`](https://lefttosolve.com/p/Erdos756.erdos_756.variants.bhowmick_general) | Erdős Problem 756 — bhowmick general | known | Convex & Discrete Geometry |  | yes |
 | 1570 | [`Erdos757.erdos_757`](https://lefttosolve.com/p/Erdos757.erdos_757) | Erdős Problem 757 | open | Combinatorics |  |  |
-| 1571 | [`Erdos757.erdos_757.variants.lowerBound`](https://lefttosolve.com/p/Erdos757.erdos_757.variants.lowerBound) | Erdős Problem 757 — lowerBound | known | Combinatorics |  |  |
+| 1571 | [`Erdos757.erdos_757.variants.lowerBound`](https://lefttosolve.com/p/Erdos757.erdos_757.variants.lowerBound) | Erdős Problem 757 — lowerBound | known | Combinatorics |  | yes |
 | 1572 | [`Erdos757.erdos_757.variants.upperBound`](https://lefttosolve.com/p/Erdos757.erdos_757.variants.upperBound) | Erdős Problem 757 — upperBound | known | Combinatorics |  | yes |
 | 1573 | [`Erdos760.erdos_760.variants.erdos_gimbel`](https://lefttosolve.com/p/Erdos760.erdos_760.variants.erdos_gimbel) | Erdős Problem 760 — erdos gimbel | known | Combinatorics |  | yes |
 | 1574 | [`Erdos761.erdos_761.parts.i`](https://lefttosolve.com/p/Erdos761.erdos_761.parts.i) | Erdős Problem 761 — i | open | Combinatorics |  |  |
@@ -1598,16 +1598,16 @@ Back to [all programs](../PROGRAMS.md).
 | 1576 | [`Erdos761.erdos_761.variants.parts_ii_imp_i`](https://lefttosolve.com/p/Erdos761.erdos_761.variants.parts_ii_imp_i) | Erdős Problem 761 — parts ii imp i | known | Combinatorics |  | yes |
 | 1577 | [`Erdos762.erdos_762.variants.bounded_clique_number`](https://lefttosolve.com/p/Erdos762.erdos_762.variants.bounded_clique_number) | Erdős Problem 762 — bounded clique number | known | Combinatorics |  | yes |
 | 1578 | [`Erdos762.erdos_762.variants.steiner`](https://lefttosolve.com/p/Erdos762.erdos_762.variants.steiner) | Erdős Problem 762 — steiner | known | Combinatorics |  | yes |
-| 1579 | [`Erdos763.erdos_763.variants.erdos_fuchs`](https://lefttosolve.com/p/Erdos763.erdos_763.variants.erdos_fuchs) | Erdős Problem 763 — erdos fuchs | known | Number Theory |  |  |
-| 1580 | [`Erdos763.erdos_763.variants.montgomery_vaughan`](https://lefttosolve.com/p/Erdos763.erdos_763.variants.montgomery_vaughan) | Erdős Problem 763 — montgomery vaughan | known | Number Theory |  |  |
-| 1581 | [`Erdos764.erdos_764.variants.vaughan`](https://lefttosolve.com/p/Erdos764.erdos_764.variants.vaughan) | Erdős Problem 764 — vaughan | known | Number Theory |  |  |
-| 1582 | [`Erdos765.erdos_765.variants.second_term`](https://lefttosolve.com/p/Erdos765.erdos_765.variants.second_term) | Erdős Problem 765 — second term | known | Combinatorics |  |  |
+| 1579 | [`Erdos763.erdos_763.variants.erdos_fuchs`](https://lefttosolve.com/p/Erdos763.erdos_763.variants.erdos_fuchs) | Erdős Problem 763 — erdos fuchs | known | Number Theory |  | yes |
+| 1580 | [`Erdos763.erdos_763.variants.montgomery_vaughan`](https://lefttosolve.com/p/Erdos763.erdos_763.variants.montgomery_vaughan) | Erdős Problem 763 — montgomery vaughan | known | Number Theory |  | yes |
+| 1581 | [`Erdos764.erdos_764.variants.vaughan`](https://lefttosolve.com/p/Erdos764.erdos_764.variants.vaughan) | Erdős Problem 764 — vaughan | known | Number Theory |  | yes |
+| 1582 | [`Erdos765.erdos_765.variants.second_term`](https://lefttosolve.com/p/Erdos765.erdos_765.variants.second_term) | Erdős Problem 765 — second term | known | Combinatorics |  | yes |
 | 1583 | [`Erdos766.erdos_766.parts.i`](https://lefttosolve.com/p/Erdos766.erdos_766.parts.i) | Erdős Problem 766 — i | open | Combinatorics |  |  |
 | 1584 | [`Erdos766.erdos_766.parts.ii`](https://lefttosolve.com/p/Erdos766.erdos_766.parts.ii) | Erdős Problem 766 — ii | open | Combinatorics |  |  |
 | 1585 | [`Erdos766.erdos_766.variants.minExtremalNumber_estimate`](https://lefttosolve.com/p/Erdos766.erdos_766.variants.minExtremalNumber_estimate) | Erdős Problem 766 — minExtremalNumber estimate | open | Combinatorics |  |  |
 | 1586 | [`Erdos766.erdos_766.variants.minExtremalNumber_strictMonoOn`](https://lefttosolve.com/p/Erdos766.erdos_766.variants.minExtremalNumber_strictMonoOn) | Erdős Problem 766 — minExtremalNumber strictMonoOn | open | Combinatorics |  |  |
-| 1587 | [`Erdos767.erdos_767.variants.czipszer`](https://lefttosolve.com/p/Erdos767.erdos_767.variants.czipszer) | Erdős Problem 767 — czipszer | known | Combinatorics |  |  |
-| 1588 | [`Erdos767.erdos_767.variants.posa`](https://lefttosolve.com/p/Erdos767.erdos_767.variants.posa) | Erdős Problem 767 — posa | known | Combinatorics |  |  |
+| 1587 | [`Erdos767.erdos_767.variants.czipszer`](https://lefttosolve.com/p/Erdos767.erdos_767.variants.czipszer) | Erdős Problem 767 — czipszer | known | Combinatorics |  | yes |
+| 1588 | [`Erdos767.erdos_767.variants.posa`](https://lefttosolve.com/p/Erdos767.erdos_767.variants.posa) | Erdős Problem 767 — posa | known | Combinatorics |  | yes |
 | 1589 | [`Erdos768.erdos_768`](https://lefttosolve.com/p/Erdos768.erdos_768) | Erdős Problem 768 | open | Number Theory |  |  |
 | 1590 | [`Erdos769.erdos_769.variants.growth_rate`](https://lefttosolve.com/p/Erdos769.erdos_769.variants.growth_rate) | Erdős Problem 769 — growth rate | open | Convex & Discrete Geometry |  |  |
 | 1591 | [`Erdos77.erdos_77`](https://lefttosolve.com/p/Erdos77.erdos_77) | Erdős Problem 77 | open | Combinatorics | $250 |  |
@@ -1619,9 +1619,9 @@ Back to [all programs](../PROGRAMS.md).
 | 1597 | [`Erdos770.erdos_770.variants.three`](https://lefttosolve.com/p/Erdos770.erdos_770.variants.three) | Erdős Problem 770 — three | open | Number Theory |  |  |
 | 1598 | [`Erdos771.erdos_771`](https://lefttosolve.com/p/Erdos771.erdos_771) | Erdős Problem 771 | known | Number Theory |  |  |
 | 1599 | [`Erdos771.erdos_771.variants.alon_freiman_upper`](https://lefttosolve.com/p/Erdos771.erdos_771.variants.alon_freiman_upper) | Erdős Problem 771 — alon freiman upper | known | Number Theory |  |  |
-| 1600 | [`Erdos771.erdos_771.variants.erdos_graham_lower`](https://lefttosolve.com/p/Erdos771.erdos_771.variants.erdos_graham_lower) | Erdős Problem 771 — erdos graham lower | known | Number Theory |  |  |
-| 1601 | [`Erdos772.erdos_772.variants.alon_erdos`](https://lefttosolve.com/p/Erdos772.erdos_772.variants.alon_erdos) | Erdős Problem 772 — alon erdos | known | Combinatorics, Number Theory |  |  |
-| 1602 | [`Erdos772.erdos_772.variants.upper_bound`](https://lefttosolve.com/p/Erdos772.erdos_772.variants.upper_bound) | Erdős Problem 772 — upper bound | known | Combinatorics, Number Theory |  |  |
+| 1600 | [`Erdos771.erdos_771.variants.erdos_graham_lower`](https://lefttosolve.com/p/Erdos771.erdos_771.variants.erdos_graham_lower) | Erdős Problem 771 — erdos graham lower | known | Number Theory |  | yes |
+| 1601 | [`Erdos772.erdos_772.variants.alon_erdos`](https://lefttosolve.com/p/Erdos772.erdos_772.variants.alon_erdos) | Erdős Problem 772 — alon erdos | known | Combinatorics, Number Theory |  | yes |
+| 1602 | [`Erdos772.erdos_772.variants.upper_bound`](https://lefttosolve.com/p/Erdos772.erdos_772.variants.upper_bound) | Erdős Problem 772 — upper bound | known | Combinatorics, Number Theory |  | yes |
 | 1603 | [`Erdos773.erdos_773`](https://lefttosolve.com/p/Erdos773.erdos_773) | Erdős Problem 773 | open | Number Theory |  |  |
 | 1604 | [`Erdos774.erdos_774`](https://lefttosolve.com/p/Erdos774.erdos_774) | Erdős Problem 774 | open | Combinatorics |  |  |
 | 1605 | [`Erdos775.erdos_775.variants.gao`](https://lefttosolve.com/p/Erdos775.erdos_775.variants.gao) | Erdős Problem 775 — gao | known | Combinatorics |  | yes |
@@ -1636,23 +1636,23 @@ Back to [all programs](../PROGRAMS.md).
 | 1614 | [`Erdos78.erdos_78.variants.nonconstructive`](https://lefttosolve.com/p/Erdos78.erdos_78.variants.nonconstructive) | Erdős Problem 78 — nonconstructive | known | Combinatorics | $100 | yes |
 | 1615 | [`Erdos78.erdos_78.variants.strongly_explicit`](https://lefttosolve.com/p/Erdos78.erdos_78.variants.strongly_explicit) | Erdős Problem 78 — strongly explicit | open | Combinatorics, Computer Science | $100 |  |
 | 1616 | [`Erdos780.erdos_780.variants.sharp`](https://lefttosolve.com/p/Erdos780.erdos_780.variants.sharp) | Erdős Problem 780 — sharp | warmup | Combinatorics |  | yes |
-| 1617 | [`Erdos781.erdos_781.variants.brown_erdos_freedman`](https://lefttosolve.com/p/Erdos781.erdos_781.variants.brown_erdos_freedman) | Erdős Problem 781 — brown erdos freedman | known | Combinatorics, Number Theory |  |  |
+| 1617 | [`Erdos781.erdos_781.variants.brown_erdos_freedman`](https://lefttosolve.com/p/Erdos781.erdos_781.variants.brown_erdos_freedman) | Erdős Problem 781 — brown erdos freedman | known | Combinatorics, Number Theory |  | yes |
 | 1618 | [`Erdos782.erdos_782.parts.i`](https://lefttosolve.com/p/Erdos782.erdos_782.parts.i) | Erdős Problem 782 — i | open | Number Theory |  |  |
 | 1619 | [`Erdos782.erdos_782.parts.ii`](https://lefttosolve.com/p/Erdos782.erdos_782.parts.ii) | Erdős Problem 782 — ii | open | Number Theory |  |  |
-| 1620 | [`Erdos782.erdos_782.variants.dietmann_elsholtz`](https://lefttosolve.com/p/Erdos782.erdos_782.variants.dietmann_elsholtz) | Erdős Problem 782 — dietmann elsholtz | known | Number Theory |  |  |
-| 1621 | [`Erdos782.erdos_782.variants.no_four_term_ap`](https://lefttosolve.com/p/Erdos782.erdos_782.variants.no_four_term_ap) | Erdős Problem 782 — no four term ap | known | Number Theory |  |  |
+| 1620 | [`Erdos782.erdos_782.variants.dietmann_elsholtz`](https://lefttosolve.com/p/Erdos782.erdos_782.variants.dietmann_elsholtz) | Erdős Problem 782 — dietmann elsholtz | known | Number Theory |  | yes |
+| 1621 | [`Erdos782.erdos_782.variants.no_four_term_ap`](https://lefttosolve.com/p/Erdos782.erdos_782.variants.no_four_term_ap) | Erdős Problem 782 — no four term ap | known | Number Theory |  | yes |
 | 1622 | [`Erdos785.erdos_785.variants.chen_conjecture`](https://lefttosolve.com/p/Erdos785.erdos_785.variants.chen_conjecture) | Erdős Problem 785 — chen conjecture | open | Number Theory |  |  |
 | 1623 | [`Erdos785.erdos_785.variants.chen_fang`](https://lefttosolve.com/p/Erdos785.erdos_785.variants.chen_fang) | Erdős Problem 785 — chen fang | known | Number Theory |  | yes |
-| 1624 | [`Erdos785.erdos_785.variants.chen_fang_limsup`](https://lefttosolve.com/p/Erdos785.erdos_785.variants.chen_fang_limsup) | Erdős Problem 785 — chen fang limsup | known | Number Theory |  |  |
+| 1624 | [`Erdos785.erdos_785.variants.chen_fang_limsup`](https://lefttosolve.com/p/Erdos785.erdos_785.variants.chen_fang_limsup) | Erdős Problem 785 — chen fang limsup | known | Number Theory |  | yes |
 | 1625 | [`Erdos785.erdos_785.variants.chen_fang_sharp`](https://lefttosolve.com/p/Erdos785.erdos_785.variants.chen_fang_sharp) | Erdős Problem 785 — chen fang sharp | known | Number Theory |  | yes |
 | 1626 | [`Erdos785.erdos_785.variants.danzer`](https://lefttosolve.com/p/Erdos785.erdos_785.variants.danzer) | Erdős Problem 785 — danzer | known | Number Theory |  | yes |
 | 1627 | [`Erdos785.erdos_785.variants.narkiewicz`](https://lefttosolve.com/p/Erdos785.erdos_785.variants.narkiewicz) | Erdős Problem 785 — narkiewicz | known | Number Theory |  | yes |
 | 1628 | [`Erdos785.erdos_785.variants.ruzsa_lower_bound`](https://lefttosolve.com/p/Erdos785.erdos_785.variants.ruzsa_lower_bound) | Erdős Problem 785 — ruzsa lower bound | known | Number Theory |  | yes |
-| 1629 | [`Erdos785.erdos_785.variants.ruzsa_upper_bound`](https://lefttosolve.com/p/Erdos785.erdos_785.variants.ruzsa_upper_bound) | Erdős Problem 785 — ruzsa upper bound | known | Number Theory |  |  |
+| 1629 | [`Erdos785.erdos_785.variants.ruzsa_upper_bound`](https://lefttosolve.com/p/Erdos785.erdos_785.variants.ruzsa_upper_bound) | Erdős Problem 785 — ruzsa upper bound | known | Number Theory |  | yes |
 | 1630 | [`Erdos785.erdos_785.variants.sarkozy_szemeredi`](https://lefttosolve.com/p/Erdos785.erdos_785.variants.sarkozy_szemeredi) | Erdős Problem 785 — sarkozy szemeredi | known | Number Theory |  | yes |
 | 1631 | [`Erdos786.erdos_786.parts.i`](https://lefttosolve.com/p/Erdos786.erdos_786.parts.i) | Erdős Problem 786 — i | open | Number Theory |  |  |
 | 1632 | [`Erdos786.erdos_786.parts.i.selfridge`](https://lefttosolve.com/p/Erdos786.erdos_786.parts.i.selfridge) | Erdős Problem 786 — selfridge | known | Number Theory |  | yes |
-| 1633 | [`Erdos786.erdos_786.parts.ii`](https://lefttosolve.com/p/Erdos786.erdos_786.parts.ii) | Erdős Problem 786 — ii | open | Number Theory |  |  |
+| 1633 | [`Erdos786.erdos_786.parts.ii`](https://lefttosolve.com/p/Erdos786.erdos_786.parts.ii) | Erdős Problem 786 — ii | open | Number Theory |  | yes |
 | 1634 | [`Erdos787.erdos_787`](https://lefttosolve.com/p/Erdos787.erdos_787) | Erdős Problem 787 | open | Combinatorics, Number Theory |  |  |
 | 1635 | [`Erdos787.erdos_787.variants.beker`](https://lefttosolve.com/p/Erdos787.erdos_787.variants.beker) | Erdős Problem 787 — beker | known | Combinatorics, Number Theory |  |  |
 | 1636 | [`Erdos787.erdos_787.variants.choi`](https://lefttosolve.com/p/Erdos787.erdos_787.variants.choi) | Erdős Problem 787 — choi | known | Combinatorics, Number Theory |  | yes |
@@ -1661,38 +1661,38 @@ Back to [all programs](../PROGRAMS.md).
 | 1639 | [`Erdos787.erdos_787.variants.ruzsa`](https://lefttosolve.com/p/Erdos787.erdos_787.variants.ruzsa) | Erdős Problem 787 — ruzsa | known | Combinatorics, Number Theory |  | yes |
 | 1640 | [`Erdos787.erdos_787.variants.sanders`](https://lefttosolve.com/p/Erdos787.erdos_787.variants.sanders) | Erdős Problem 787 — sanders | known | Combinatorics, Number Theory |  |  |
 | 1641 | [`Erdos789.erdos_789`](https://lefttosolve.com/p/Erdos789.erdos_789) | Erdős Problem 789 | open | Combinatorics |  |  |
-| 1642 | [`Erdos789.erdos_789.variants.isBigO_sq`](https://lefttosolve.com/p/Erdos789.erdos_789.variants.isBigO_sq) | Erdős Problem 789 — isBigO sq | known | Combinatorics |  |  |
+| 1642 | [`Erdos789.erdos_789.variants.isBigO_sq`](https://lefttosolve.com/p/Erdos789.erdos_789.variants.isBigO_sq) | Erdős Problem 789 — isBigO sq | known | Combinatorics |  | yes |
 | 1643 | [`Erdos789.erdos_789.variants.sq`](https://lefttosolve.com/p/Erdos789.erdos_789.variants.sq) | Erdős Problem 789 — sq | open | Combinatorics |  |  |
 | 1644 | [`Erdos789.erdos_789.variants.sq_isBigO`](https://lefttosolve.com/p/Erdos789.erdos_789.variants.sq_isBigO) | Erdős Problem 789 — sq isBigO | open | Combinatorics |  |  |
-| 1645 | [`Erdos79.erdos_79`](https://lefttosolve.com/p/Erdos79.erdos_79) | Erdős Problem 79 | known | Combinatorics |  |  |
+| 1645 | [`Erdos79.erdos_79`](https://lefttosolve.com/p/Erdos79.erdos_79) | Erdős Problem 79 | known | Combinatorics |  | yes |
 | 1646 | [`Erdos790.erdos_790.parts.i`](https://lefttosolve.com/p/Erdos790.erdos_790.parts.i) | Erdős Problem 790 — i | open | Combinatorics, Number Theory |  |  |
-| 1647 | [`Erdos790.erdos_790.parts.ii`](https://lefttosolve.com/p/Erdos790.erdos_790.parts.ii) | Erdős Problem 790 — ii | known | Combinatorics, Number Theory |  |  |
-| 1648 | [`Erdos790.erdos_790.parts.iii`](https://lefttosolve.com/p/Erdos790.erdos_790.parts.iii) | Erdős Problem 790 — iii | open | Combinatorics, Number Theory |  |  |
+| 1647 | [`Erdos790.erdos_790.parts.ii`](https://lefttosolve.com/p/Erdos790.erdos_790.parts.ii) | Erdős Problem 790 — ii | known | Combinatorics, Number Theory |  | yes |
+| 1648 | [`Erdos790.erdos_790.parts.iii`](https://lefttosolve.com/p/Erdos790.erdos_790.parts.iii) | Erdős Problem 790 — iii | open | Combinatorics, Number Theory |  | yes |
 | 1649 | [`Erdos790.erdos_790.variants.lower_bound`](https://lefttosolve.com/p/Erdos790.erdos_790.variants.lower_bound) | Erdős Problem 790 — lower bound | known | Combinatorics, Number Theory |  |  |
-| 1650 | [`Erdos790.erdos_790.variants.near_linear`](https://lefttosolve.com/p/Erdos790.erdos_790.variants.near_linear) | Erdős Problem 790 — near linear | open | Combinatorics, Number Theory |  |  |
-| 1651 | [`Erdos790.erdos_790.variants.upper_bound`](https://lefttosolve.com/p/Erdos790.erdos_790.variants.upper_bound) | Erdős Problem 790 — upper bound | known | Combinatorics, Number Theory |  |  |
+| 1650 | [`Erdos790.erdos_790.variants.near_linear`](https://lefttosolve.com/p/Erdos790.erdos_790.variants.near_linear) | Erdős Problem 790 — near linear | open | Combinatorics, Number Theory |  | yes |
+| 1651 | [`Erdos790.erdos_790.variants.upper_bound`](https://lefttosolve.com/p/Erdos790.erdos_790.variants.upper_bound) | Erdős Problem 790 — upper bound | known | Combinatorics, Number Theory |  | yes |
 | 1652 | [`Erdos792.erdos_792`](https://lefttosolve.com/p/Erdos792.erdos_792) | Erdős Problem 792 | open | Combinatorics, Number Theory |  |  |
 | 1653 | [`Erdos792.erdos_792.variants.alon_kleitman`](https://lefttosolve.com/p/Erdos792.erdos_792.variants.alon_kleitman) | Erdős Problem 792 — alon kleitman | known | Combinatorics, Number Theory |  | yes |
-| 1654 | [`Erdos792.erdos_792.variants.bourgain`](https://lefttosolve.com/p/Erdos792.erdos_792.variants.bourgain) | Erdős Problem 792 — bourgain | known | Combinatorics, Number Theory |  |  |
+| 1654 | [`Erdos792.erdos_792.variants.bourgain`](https://lefttosolve.com/p/Erdos792.erdos_792.variants.bourgain) | Erdős Problem 792 — bourgain | known | Combinatorics, Number Theory |  | yes |
 | 1655 | [`Erdos793.erdos_793`](https://lefttosolve.com/p/Erdos793.erdos_793) | Erdős Problem 793 | known | Number Theory |  | yes |
 | 1656 | [`Erdos794.erdos_794.variants.frankl_furedi`](https://lefttosolve.com/p/Erdos794.erdos_794.variants.frankl_furedi) | Erdős Problem 794 — frankl furedi | known | Combinatorics |  | yes |
-| 1657 | [`Erdos798.erdos_798.variants.lower_bound`](https://lefttosolve.com/p/Erdos798.erdos_798.variants.lower_bound) | Erdős Problem 798 — lower bound | known | Combinatorics, Convex & Discrete Geometry |  |  |
-| 1658 | [`Erdos798.erdos_798.variants.upper_bound`](https://lefttosolve.com/p/Erdos798.erdos_798.variants.upper_bound) | Erdős Problem 798 — upper bound | known | Combinatorics, Convex & Discrete Geometry |  |  |
-| 1659 | [`Erdos80.erdos_80.parts.i`](https://lefttosolve.com/p/Erdos80.erdos_80.parts.i) | Erdős Problem 80 — i | known | Combinatorics |  |  |
+| 1657 | [`Erdos798.erdos_798.variants.lower_bound`](https://lefttosolve.com/p/Erdos798.erdos_798.variants.lower_bound) | Erdős Problem 798 — lower bound | known | Combinatorics, Convex & Discrete Geometry |  | yes |
+| 1658 | [`Erdos798.erdos_798.variants.upper_bound`](https://lefttosolve.com/p/Erdos798.erdos_798.variants.upper_bound) | Erdős Problem 798 — upper bound | known | Combinatorics, Convex & Discrete Geometry |  | yes |
+| 1659 | [`Erdos80.erdos_80.parts.i`](https://lefttosolve.com/p/Erdos80.erdos_80.parts.i) | Erdős Problem 80 — i | known | Combinatorics |  | yes |
 | 1660 | [`Erdos80.erdos_80.parts.ii`](https://lefttosolve.com/p/Erdos80.erdos_80.parts.ii) | Erdős Problem 80 — ii | open | Combinatorics |  |  |
-| 1661 | [`Erdos800.erdos_800`](https://lefttosolve.com/p/Erdos800.erdos_800) | Erdős Problem 800 | known | Combinatorics |  |  |
-| 1662 | [`Erdos802.erdos_802`](https://lefttosolve.com/p/Erdos802.erdos_802) | Erdős Problem 802 | open | Combinatorics |  |  |
-| 1663 | [`Erdos802.erdos_802.variants.aeks`](https://lefttosolve.com/p/Erdos802.erdos_802.variants.aeks) | Erdős Problem 802 — aeks | known | Combinatorics |  |  |
-| 1664 | [`Erdos802.erdos_802.variants.alon`](https://lefttosolve.com/p/Erdos802.erdos_802.variants.alon) | Erdős Problem 802 — alon | known | Combinatorics |  |  |
-| 1665 | [`Erdos802.erdos_802.variants.r_eq_three`](https://lefttosolve.com/p/Erdos802.erdos_802.variants.r_eq_three) | Erdős Problem 802 — r eq three | known | Combinatorics |  |  |
+| 1661 | [`Erdos800.erdos_800`](https://lefttosolve.com/p/Erdos800.erdos_800) | Erdős Problem 800 | known | Combinatorics |  | yes |
+| 1662 | [`Erdos802.erdos_802`](https://lefttosolve.com/p/Erdos802.erdos_802) | Erdős Problem 802 | open | Combinatorics |  | yes |
+| 1663 | [`Erdos802.erdos_802.variants.aeks`](https://lefttosolve.com/p/Erdos802.erdos_802.variants.aeks) | Erdős Problem 802 — aeks | known | Combinatorics |  | yes |
+| 1664 | [`Erdos802.erdos_802.variants.alon`](https://lefttosolve.com/p/Erdos802.erdos_802.variants.alon) | Erdős Problem 802 — alon | known | Combinatorics |  | yes |
+| 1665 | [`Erdos802.erdos_802.variants.r_eq_three`](https://lefttosolve.com/p/Erdos802.erdos_802.variants.r_eq_three) | Erdős Problem 802 — r eq three | known | Combinatorics |  | yes |
 | 1666 | [`Erdos802.erdos_802.variants.shearer`](https://lefttosolve.com/p/Erdos802.erdos_802.variants.shearer) | Erdős Problem 802 — shearer | known | Combinatorics |  | yes |
-| 1667 | [`Erdos803.erdos_803.variants.alon`](https://lefttosolve.com/p/Erdos803.erdos_803.variants.alon) | Erdős Problem 803 — alon | known | Combinatorics |  |  |
-| 1668 | [`Erdos803.erdos_803.variants.janzer_sudakov`](https://lefttosolve.com/p/Erdos803.erdos_803.variants.janzer_sudakov) | Erdős Problem 803 — janzer sudakov | known | Combinatorics |  |  |
+| 1667 | [`Erdos803.erdos_803.variants.alon`](https://lefttosolve.com/p/Erdos803.erdos_803.variants.alon) | Erdős Problem 803 — alon | known | Combinatorics |  | yes |
+| 1668 | [`Erdos803.erdos_803.variants.janzer_sudakov`](https://lefttosolve.com/p/Erdos803.erdos_803.variants.janzer_sudakov) | Erdős Problem 803 — janzer sudakov | known | Combinatorics |  | yes |
 | 1669 | [`Erdos805.erdos_805.parts.i`](https://lefttosolve.com/p/Erdos805.erdos_805.parts.i) | Erdős Problem 805 — i | open | Combinatorics |  |  |
 | 1670 | [`Erdos805.erdos_805.parts.ii`](https://lefttosolve.com/p/Erdos805.erdos_805.parts.ii) | Erdős Problem 805 — ii | open | Combinatorics |  |  |
-| 1671 | [`Erdos805.erdos_805.variants.alon_bucic_sudakov`](https://lefttosolve.com/p/Erdos805.erdos_805.variants.alon_bucic_sudakov) | Erdős Problem 805 — alon bucic sudakov | known | Combinatorics |  |  |
-| 1672 | [`Erdos805.erdos_805.variants.alon_sudakov`](https://lefttosolve.com/p/Erdos805.erdos_805.variants.alon_sudakov) | Erdős Problem 805 — alon sudakov | known | Combinatorics |  |  |
-| 1673 | [`Erdos806.erdos_806.variants.alon_bukh_sudakov`](https://lefttosolve.com/p/Erdos806.erdos_806.variants.alon_bukh_sudakov) | Erdős Problem 806 — alon bukh sudakov | known | Number Theory |  |  |
+| 1671 | [`Erdos805.erdos_805.variants.alon_bucic_sudakov`](https://lefttosolve.com/p/Erdos805.erdos_805.variants.alon_bucic_sudakov) | Erdős Problem 805 — alon bucic sudakov | known | Combinatorics |  | yes |
+| 1672 | [`Erdos805.erdos_805.variants.alon_sudakov`](https://lefttosolve.com/p/Erdos805.erdos_805.variants.alon_sudakov) | Erdős Problem 805 — alon sudakov | known | Combinatorics |  | yes |
+| 1673 | [`Erdos806.erdos_806.variants.alon_bukh_sudakov`](https://lefttosolve.com/p/Erdos806.erdos_806.variants.alon_bukh_sudakov) | Erdős Problem 806 — alon bukh sudakov | known | Number Theory |  | yes |
 | 1674 | [`Erdos806.erdos_806.variants.erdos_newman`](https://lefttosolve.com/p/Erdos806.erdos_806.variants.erdos_newman) | Erdős Problem 806 — erdos newman | known | Number Theory |  | yes |
 | 1675 | [`Erdos808.erdos_808.variants.positive`](https://lefttosolve.com/p/Erdos808.erdos_808.variants.positive) | Erdős Problem 808 — positive | known | Combinatorics, Number Theory |  | yes |
 | 1676 | [`Erdos81.erdos_81`](https://lefttosolve.com/p/Erdos81.erdos_81) | Erdős Problem 81 | known | Combinatorics |  |  |
@@ -1700,28 +1700,28 @@ Back to [all programs](../PROGRAMS.md).
 | 1678 | [`Erdos810.erdos_810`](https://lefttosolve.com/p/Erdos810.erdos_810) | Erdős Problem 810 | open | Combinatorics |  |  |
 | 1679 | [`Erdos812.erdos_812.parts.i`](https://lefttosolve.com/p/Erdos812.erdos_812.parts.i) | Erdős Problem 812 — i | open | Combinatorics |  |  |
 | 1680 | [`Erdos812.erdos_812.parts.ii`](https://lefttosolve.com/p/Erdos812.erdos_812.parts.ii) | Erdős Problem 812 — ii | open | Combinatorics |  |  |
-| 1681 | [`Erdos812.erdos_812.variants.lower_bound`](https://lefttosolve.com/p/Erdos812.erdos_812.variants.lower_bound) | Erdős Problem 812 — lower bound | known | Combinatorics |  |  |
+| 1681 | [`Erdos812.erdos_812.variants.lower_bound`](https://lefttosolve.com/p/Erdos812.erdos_812.variants.lower_bound) | Erdős Problem 812 — lower bound | known | Combinatorics |  | yes |
 | 1682 | [`Erdos813.erdos_813`](https://lefttosolve.com/p/Erdos813.erdos_813) | Erdős Problem 813 | open | Combinatorics |  |  |
 | 1683 | [`Erdos813.erdos_813.variants.bucic_sudakov`](https://lefttosolve.com/p/Erdos813.erdos_813.variants.bucic_sudakov) | Erdős Problem 813 — bucic sudakov | known | Combinatorics |  |  |
 | 1684 | [`Erdos813.erdos_813.variants.erdos_hajnal`](https://lefttosolve.com/p/Erdos813.erdos_813.variants.erdos_hajnal) | Erdős Problem 813 — erdos hajnal | known | Combinatorics |  |  |
-| 1685 | [`Erdos813.erdos_813.variants.lower`](https://lefttosolve.com/p/Erdos813.erdos_813.variants.lower) | Erdős Problem 813 — lower | known | Combinatorics |  |  |
+| 1685 | [`Erdos813.erdos_813.variants.lower`](https://lefttosolve.com/p/Erdos813.erdos_813.variants.lower) | Erdős Problem 813 — lower | known | Combinatorics |  | yes |
 | 1686 | [`Erdos813.erdos_813.variants.upper`](https://lefttosolve.com/p/Erdos813.erdos_813.variants.upper) | Erdős Problem 813 — upper | open | Combinatorics |  |  |
 | 1687 | [`Erdos814.erdos_814.variants.sauermann`](https://lefttosolve.com/p/Erdos814.erdos_814.variants.sauermann) | Erdős Problem 814 — sauermann | known | Combinatorics |  |  |
 | 1688 | [`Erdos816.erdos_816.variants.chen_ma`](https://lefttosolve.com/p/Erdos816.erdos_816.variants.chen_ma) | Erdős Problem 816 — chen ma | known | Combinatorics |  |  |
 | 1689 | [`Erdos817.erdos_817.variants.bdd_power`](https://lefttosolve.com/p/Erdos817.erdos_817.variants.bdd_power) | Erdős Problem 817 — bdd power | known | Combinatorics, Number Theory |  | yes |
-| 1690 | [`Erdos818.erdos_818.variants.solymosi`](https://lefttosolve.com/p/Erdos818.erdos_818.variants.solymosi) | Erdős Problem 818 — solymosi | known | Combinatorics, Number Theory |  |  |
+| 1690 | [`Erdos818.erdos_818.variants.solymosi`](https://lefttosolve.com/p/Erdos818.erdos_818.variants.solymosi) | Erdős Problem 818 — solymosi | known | Combinatorics, Number Theory |  | yes |
 | 1691 | [`Erdos819.erdos_819`](https://lefttosolve.com/p/Erdos819.erdos_819) | Erdős Problem 819 | open | Combinatorics, Number Theory |  |  |
-| 1692 | [`Erdos819.erdos_819.variants.erdos_freud_lower`](https://lefttosolve.com/p/Erdos819.erdos_819.variants.erdos_freud_lower) | Erdős Problem 819 — erdos freud lower | known | Combinatorics, Number Theory |  |  |
+| 1692 | [`Erdos819.erdos_819.variants.erdos_freud_lower`](https://lefttosolve.com/p/Erdos819.erdos_819.variants.erdos_freud_lower) | Erdős Problem 819 — erdos freud lower | known | Combinatorics, Number Theory |  | yes |
 | 1693 | [`Erdos82.erdos_82`](https://lefttosolve.com/p/Erdos82.erdos_82) | Erdős Problem 82 | open | Combinatorics |  |  |
-| 1694 | [`Erdos82.erdos_82.variants.F_upper_bound`](https://lefttosolve.com/p/Erdos82.erdos_82.variants.F_upper_bound) | Erdős Problem 82 — F upper bound | known | Combinatorics |  |  |
+| 1694 | [`Erdos82.erdos_82.variants.F_upper_bound`](https://lefttosolve.com/p/Erdos82.erdos_82.variants.F_upper_bound) | Erdős Problem 82 — F upper bound | known | Combinatorics |  | yes |
 | 1695 | [`Erdos820.erdos_820`](https://lefttosolve.com/p/Erdos820.erdos_820) | Erdős Problem 820 | open | Number Theory |  |  |
 | 1696 | [`Erdos820.erdos_820.variants.erdos_lower`](https://lefttosolve.com/p/Erdos820.erdos_820.variants.erdos_lower) | Erdős Problem 820 — erdos lower | known | Number Theory |  |  |
 | 1697 | [`Erdos820.erdos_820.variants.log_log_exponent`](https://lefttosolve.com/p/Erdos820.erdos_820.variants.log_log_exponent) | Erdős Problem 820 — log log exponent | open | Number Theory |  |  |
 | 1698 | [`Erdos820.erdos_820.variants.two_pow_upper`](https://lefttosolve.com/p/Erdos820.erdos_820.variants.two_pow_upper) | Erdős Problem 820 — two pow upper | open | Number Theory |  |  |
 | 1699 | [`Erdos821.erdos_821.variants.erdos`](https://lefttosolve.com/p/Erdos821.erdos_821.variants.erdos) | Erdős Problem 821 — erdos | known | Number Theory |  |  |
 | 1700 | [`Erdos821.erdos_821.variants.lichtman`](https://lefttosolve.com/p/Erdos821.erdos_821.variants.lichtman) | Erdős Problem 821 — lichtman | known | Number Theory |  |  |
-| 1701 | [`Erdos821.erdos_821.variants.pillai`](https://lefttosolve.com/p/Erdos821.erdos_821.variants.pillai) | Erdős Problem 821 — pillai | known | Number Theory |  |  |
-| 1702 | [`Erdos823.erdos_823.variants.totient`](https://lefttosolve.com/p/Erdos823.erdos_823.variants.totient) | Erdős Problem 823 — totient | known | Number Theory |  |  |
+| 1701 | [`Erdos821.erdos_821.variants.pillai`](https://lefttosolve.com/p/Erdos821.erdos_821.variants.pillai) | Erdős Problem 821 — pillai | known | Number Theory |  | yes |
+| 1702 | [`Erdos823.erdos_823.variants.totient`](https://lefttosolve.com/p/Erdos823.erdos_823.variants.totient) | Erdős Problem 823 — totient | known | Number Theory |  | yes |
 | 1703 | [`Erdos824.erdos_824.variants.pollack_pomerance`](https://lefttosolve.com/p/Erdos824.erdos_824.variants.pollack_pomerance) | Erdős Problem 824 — pollack pomerance | known | Number Theory |  |  |
 | 1704 | [`Erdos824.erdos_824.variants.squarefree`](https://lefttosolve.com/p/Erdos824.erdos_824.variants.squarefree) | Erdős Problem 824 — squarefree | open | Number Theory |  |  |
 | 1705 | [`Erdos826.erdos_826`](https://lefttosolve.com/p/Erdos826.erdos_826) | Erdős Problem 826 | open | Number Theory |  |  |
@@ -1732,20 +1732,20 @@ Back to [all programs](../PROGRAMS.md).
 | 1710 | [`Erdos828.erdos_828`](https://lefttosolve.com/p/Erdos828.erdos_828) | Erdős Problem 828 | open | Number Theory |  |  |
 | 1711 | [`Erdos828.erdos_828.variants.lehmer_conjecture`](https://lefttosolve.com/p/Erdos828.erdos_828.variants.lehmer_conjecture) | Erdős Problem 828 — lehmer conjecture | open | Number Theory |  |  |
 | 1712 | [`Erdos829.erdos_829`](https://lefttosolve.com/p/Erdos829.erdos_829) | Erdős Problem 829 (open). | open | Number Theory |  |  |
-| 1713 | [`Erdos829.variants.mahler`](https://lefttosolve.com/p/Erdos829.variants.mahler) | Erdős Problem 829 — mahler | known | Number Theory |  |  |
-| 1714 | [`Erdos829.variants.mordell`](https://lefttosolve.com/p/Erdos829.variants.mordell) | Erdős Problem 829 — mordell | known | Number Theory |  |  |
-| 1715 | [`Erdos829.variants.stewart`](https://lefttosolve.com/p/Erdos829.variants.stewart) | Erdős Problem 829 — stewart | known | Number Theory |  |  |
-| 1716 | [`Erdos83.erdos_83.variants.ahlswede_khachatrian`](https://lefttosolve.com/p/Erdos83.erdos_83.variants.ahlswede_khachatrian) | Erdős Problem 83 — ahlswede khachatrian | known | Combinatorics | $500 |  |
+| 1713 | [`Erdos829.variants.mahler`](https://lefttosolve.com/p/Erdos829.variants.mahler) | Erdős Problem 829 — mahler | known | Number Theory |  | yes |
+| 1714 | [`Erdos829.variants.mordell`](https://lefttosolve.com/p/Erdos829.variants.mordell) | Erdős Problem 829 — mordell | known | Number Theory |  | yes |
+| 1715 | [`Erdos829.variants.stewart`](https://lefttosolve.com/p/Erdos829.variants.stewart) | Erdős Problem 829 — stewart | known | Number Theory |  | yes |
+| 1716 | [`Erdos83.erdos_83.variants.ahlswede_khachatrian`](https://lefttosolve.com/p/Erdos83.erdos_83.variants.ahlswede_khachatrian) | Erdős Problem 83 — ahlswede khachatrian | known | Combinatorics | $500 | yes |
 | 1717 | [`Erdos83.erdos_83.variants.extremal`](https://lefttosolve.com/p/Erdos83.erdos_83.variants.extremal) | Erdős Problem 83 — extremal | known | Combinatorics | $500 | yes |
 | 1718 | [`Erdos830.erdos_830.parts.i`](https://lefttosolve.com/p/Erdos830.erdos_830.parts.i) | Erdos Problem 830, Part 1 | open | Number Theory |  |  |
 | 1719 | [`Erdos830.erdos_830.parts.ii`](https://lefttosolve.com/p/Erdos830.erdos_830.parts.ii) | Erdos Problem 830, Part 2 | open | Number Theory |  |  |
-| 1720 | [`Erdos830.erdos_830.variants.erdos`](https://lefttosolve.com/p/Erdos830.erdos_830.variants.erdos) | Erdős Problem 830 — erdos | known | Number Theory |  |  |
+| 1720 | [`Erdos830.erdos_830.variants.erdos`](https://lefttosolve.com/p/Erdos830.erdos_830.variants.erdos) | Erdős Problem 830 — erdos | known | Number Theory |  | yes |
 | 1721 | [`Erdos830.erdos_830.variants.pomerance`](https://lefttosolve.com/p/Erdos830.erdos_830.variants.pomerance) | Erdős Problem 830 — pomerance | known | Number Theory |  |  |
-| 1722 | [`Erdos830.erdos_830.variants.pomerance_stronger`](https://lefttosolve.com/p/Erdos830.erdos_830.variants.pomerance_stronger) | Erdős Problem 830 — pomerance stronger | known | Number Theory |  |  |
+| 1722 | [`Erdos830.erdos_830.variants.pomerance_stronger`](https://lefttosolve.com/p/Erdos830.erdos_830.variants.pomerance_stronger) | Erdős Problem 830 — pomerance stronger | known | Number Theory |  | yes |
 | 1723 | [`Erdos831.erdos_831`](https://lefttosolve.com/p/Erdos831.erdos_831) | Erdős Problem 831 | open | Convex & Discrete Geometry, Geometry |  |  |
 | 1724 | [`Erdos831.erdos_831.variants.szekeres`](https://lefttosolve.com/p/Erdos831.erdos_831.variants.szekeres) | Erdős Problem 831 — szekeres | known | Convex & Discrete Geometry, Geometry |  | yes |
 | 1725 | [`Erdos832.erdos_832`](https://lefttosolve.com/p/Erdos832.erdos_832) | Erdős Problem 832 | known | Combinatorics |  | yes |
-| 1726 | [`Erdos833.erdos_833`](https://lefttosolve.com/p/Erdos833.erdos_833) | Erdős Problem 833 | known | Combinatorics |  |  |
+| 1726 | [`Erdos833.erdos_833`](https://lefttosolve.com/p/Erdos833.erdos_833) | Erdős Problem 833 | known | Combinatorics |  | yes |
 | 1727 | [`Erdos834.erdos_834.parts.i`](https://lefttosolve.com/p/Erdos834.erdos_834.parts.i) | Erdős Problem 834 — i | known | Combinatorics |  | yes |
 | 1728 | [`Erdos834.erdos_834.parts.ii`](https://lefttosolve.com/p/Erdos834.erdos_834.parts.ii) | Erdős Problem 834 — ii | known | Combinatorics |  | yes |
 | 1729 | [`Erdos835.chromaticNumber_johnson_2k_k_lower_bound`](https://lefttosolve.com/p/Erdos835.chromaticNumber_johnson_2k_k_lower_bound) | Erdős Problem 835 — chromaticNumber johnson 2k k lower bound | known | Combinatorics |  | yes |
@@ -1761,28 +1761,28 @@ Back to [all programs](../PROGRAMS.md).
 | 1739 | [`Erdos839.erdos_839.parts.ii`](https://lefttosolve.com/p/Erdos839.erdos_839.parts.ii) | Erdős Problem 839 — ii | open | Number Theory |  |  |
 | 1740 | [`Erdos840.erdos_840`](https://lefttosolve.com/p/Erdos840.erdos_840) | Erdős Problem 840 | open | Combinatorics, Number Theory |  |  |
 | 1741 | [`Erdos840.erdos_840.variants.erdos_freud_lower`](https://lefttosolve.com/p/Erdos840.erdos_840.variants.erdos_freud_lower) | Erdős Problem 840 — erdos freud lower | known | Combinatorics, Number Theory |  | yes |
-| 1742 | [`Erdos840.erdos_840.variants.pikhurko`](https://lefttosolve.com/p/Erdos840.erdos_840.variants.pikhurko) | Erdős Problem 840 — pikhurko | known | Combinatorics, Number Theory |  |  |
+| 1742 | [`Erdos840.erdos_840.variants.pikhurko`](https://lefttosolve.com/p/Erdos840.erdos_840.variants.pikhurko) | Erdős Problem 840 — pikhurko | known | Combinatorics, Number Theory |  | yes |
 | 1743 | [`Erdos848.erdos_848`](https://lefttosolve.com/p/Erdos848.erdos_848) | Erdős Problem 848 | known | Number Theory |  |  |
 | 1744 | [`Erdos849.erdos_849`](https://lefttosolve.com/p/Erdos849.erdos_849) | Erdős Problem 849 | open | Number Theory |  |  |
 | 1745 | [`Erdos85.erdos_85`](https://lefttosolve.com/p/Erdos85.erdos_85) | Erdős Problem 85 | open | Combinatorics |  |  |
 | 1746 | [`Erdos850.erdos_850`](https://lefttosolve.com/p/Erdos850.erdos_850) | Erdős Problem 850 | open | Number Theory |  |  |
 | 1747 | [`Erdos851.erdos_851.variants.romanoff`](https://lefttosolve.com/p/Erdos851.erdos_851.variants.romanoff) | Erdős Problem 851 — romanoff | known | Number Theory |  | yes |
-| 1748 | [`Erdos852.erdos_852.parts.i`](https://lefttosolve.com/p/Erdos852.erdos_852.parts.i) | Erdős Problem 852 — i | open | Number Theory |  |  |
+| 1748 | [`Erdos852.erdos_852.parts.i`](https://lefttosolve.com/p/Erdos852.erdos_852.parts.i) | Erdős Problem 852 — i | open | Number Theory |  | yes |
 | 1749 | [`Erdos852.erdos_852.parts.ii`](https://lefttosolve.com/p/Erdos852.erdos_852.parts.ii) | Erdős Problem 852 — ii | open | Number Theory |  |  |
-| 1750 | [`Erdos852.erdos_852.variants.tendsto_atTop`](https://lefttosolve.com/p/Erdos852.erdos_852.variants.tendsto_atTop) | Erdős Problem 852 — tendsto atTop | known | Number Theory |  |  |
+| 1750 | [`Erdos852.erdos_852.variants.tendsto_atTop`](https://lefttosolve.com/p/Erdos852.erdos_852.variants.tendsto_atTop) | Erdős Problem 852 — tendsto atTop | known | Number Theory |  | yes |
 | 1751 | [`Erdos853.erdos_853.parts.i`](https://lefttosolve.com/p/Erdos853.erdos_853.parts.i) | Erdős Problem 853 — i | open | Number Theory |  |  |
 | 1752 | [`Erdos853.erdos_853.parts.ii`](https://lefttosolve.com/p/Erdos853.erdos_853.parts.ii) | Erdős Problem 853 — ii | open | Number Theory |  |  |
 | 1753 | [`Erdos854.erdos_854.parts.i`](https://lefttosolve.com/p/Erdos854.erdos_854.parts.i) | Erdős Problem 854 — i | open | Number Theory |  |  |
 | 1754 | [`Erdos854.erdos_854.parts.ii`](https://lefttosolve.com/p/Erdos854.erdos_854.parts.ii) | Erdős Problem 854 — ii | open | Number Theory |  |  |
 | 1755 | [`Erdos855.erdos_855`](https://lefttosolve.com/p/Erdos855.erdos_855) | Erdős Problem 855 | open | Number Theory |  |  |
 | 1756 | [`Erdos856.erdos_856`](https://lefttosolve.com/p/Erdos856.erdos_856) | Erdős Problem 856 | open | Number Theory |  |  |
-| 1757 | [`Erdos856.erdos_856.variants.erdos_upper`](https://lefttosolve.com/p/Erdos856.erdos_856.variants.erdos_upper) | Erdős Problem 856 — erdos upper | known | Number Theory |  |  |
-| 1758 | [`Erdos856.erdos_856.variants.tang_zhang_lower`](https://lefttosolve.com/p/Erdos856.erdos_856.variants.tang_zhang_lower) | Erdős Problem 856 — tang zhang lower | known | Number Theory |  |  |
-| 1759 | [`Erdos856.erdos_856.variants.tang_zhang_three_lower`](https://lefttosolve.com/p/Erdos856.erdos_856.variants.tang_zhang_three_lower) | Erdős Problem 856 — tang zhang three lower | known | Number Theory |  |  |
-| 1760 | [`Erdos856.erdos_856.variants.tang_zhang_three_upper`](https://lefttosolve.com/p/Erdos856.erdos_856.variants.tang_zhang_three_upper) | Erdős Problem 856 — tang zhang three upper | known | Number Theory |  |  |
+| 1757 | [`Erdos856.erdos_856.variants.erdos_upper`](https://lefttosolve.com/p/Erdos856.erdos_856.variants.erdos_upper) | Erdős Problem 856 — erdos upper | known | Number Theory |  | yes |
+| 1758 | [`Erdos856.erdos_856.variants.tang_zhang_lower`](https://lefttosolve.com/p/Erdos856.erdos_856.variants.tang_zhang_lower) | Erdős Problem 856 — tang zhang lower | known | Number Theory |  | yes |
+| 1759 | [`Erdos856.erdos_856.variants.tang_zhang_three_lower`](https://lefttosolve.com/p/Erdos856.erdos_856.variants.tang_zhang_three_lower) | Erdős Problem 856 — tang zhang three lower | known | Number Theory |  | yes |
+| 1760 | [`Erdos856.erdos_856.variants.tang_zhang_three_upper`](https://lefttosolve.com/p/Erdos856.erdos_856.variants.tang_zhang_three_upper) | Erdős Problem 856 — tang zhang three upper | known | Number Theory |  | yes |
 | 1761 | [`Erdos857.erdos_857`](https://lefttosolve.com/p/Erdos857.erdos_857) | Erdős Problem 857 | known | Combinatorics |  |  |
-| 1762 | [`Erdos858.erdos_858.variants.infinite`](https://lefttosolve.com/p/Erdos858.erdos_858.variants.infinite) | Erdős Problem 858 — infinite | known | Number Theory |  |  |
-| 1763 | [`Erdos858.erdos_858.variants.positive`](https://lefttosolve.com/p/Erdos858.erdos_858.variants.positive) | Erdős Problem 858 — positive | known | Number Theory |  |  |
+| 1762 | [`Erdos858.erdos_858.variants.infinite`](https://lefttosolve.com/p/Erdos858.erdos_858.variants.infinite) | Erdős Problem 858 — infinite | known | Number Theory |  | yes |
+| 1763 | [`Erdos858.erdos_858.variants.positive`](https://lefttosolve.com/p/Erdos858.erdos_858.variants.positive) | Erdős Problem 858 — positive | known | Number Theory |  | yes |
 | 1764 | [`Erdos859.erdos_859`](https://lefttosolve.com/p/Erdos859.erdos_859) | Erdős Problem 859 | open | Number Theory |  |  |
 | 1765 | [`Erdos859.erdos_859.variants.erdos_upper_lower_bounds`](https://lefttosolve.com/p/Erdos859.erdos_859.variants.erdos_upper_lower_bounds) | Erdős Problem 859 — erdos upper lower bounds | known | Number Theory |  |  |
 | 1766 | [`Erdos859.erdos_859.variants.positive_density`](https://lefttosolve.com/p/Erdos859.erdos_859.variants.positive_density) | Erdős Problem 859 — positive density | warmup | Number Theory |  | yes |
@@ -1793,20 +1793,20 @@ Back to [all programs](../PROGRAMS.md).
 | 1771 | [`Erdos860.erdos_860.variants.ruzsa`](https://lefttosolve.com/p/Erdos860.erdos_860.variants.ruzsa) | Erdős Problem 860 — ruzsa | known | Number Theory |  | yes |
 | 1772 | [`Erdos862.erdos_862.variants.lower_bound`](https://lefttosolve.com/p/Erdos862.erdos_862.variants.lower_bound) | Erdős Problem 862 — lower bound | known | Combinatorics, Number Theory |  | yes |
 | 1773 | [`Erdos864.erdos_864`](https://lefttosolve.com/p/Erdos864.erdos_864) | Erdős Problem 864 | open | Combinatorics, Number Theory |  |  |
-| 1774 | [`Erdos864.erdos_864.variants.lower_bound`](https://lefttosolve.com/p/Erdos864.erdos_864.variants.lower_bound) | Erdős Problem 864 — lower bound | known | Combinatorics, Number Theory |  |  |
+| 1774 | [`Erdos864.erdos_864.variants.lower_bound`](https://lefttosolve.com/p/Erdos864.erdos_864.variants.lower_bound) | Erdős Problem 864 — lower bound | known | Combinatorics, Number Theory |  | yes |
 | 1775 | [`Erdos865.erdos_865.variants.sos`](https://lefttosolve.com/p/Erdos865.erdos_865.variants.sos) | Erdős Problem 865 — sos | open | Combinatorics, Number Theory |  |  |
-| 1776 | [`Erdos865.erdos_865.variants.upper_bound`](https://lefttosolve.com/p/Erdos865.erdos_865.variants.upper_bound) | Erdős Problem 865 — upper bound | known | Combinatorics, Number Theory |  |  |
+| 1776 | [`Erdos865.erdos_865.variants.upper_bound`](https://lefttosolve.com/p/Erdos865.erdos_865.variants.upper_bound) | Erdős Problem 865 — upper bound | known | Combinatorics, Number Theory |  | yes |
 | 1777 | [`Erdos867.erdos_867.variants.coppersmith_phillips_lower_bound`](https://lefttosolve.com/p/Erdos867.erdos_867.variants.coppersmith_phillips_lower_bound) | Erdős Problem 867 — coppersmith phillips lower bound | known | Combinatorics, Number Theory |  | yes |
-| 1778 | [`Erdos867.erdos_867.variants.coppersmith_phillips_upper_bound`](https://lefttosolve.com/p/Erdos867.erdos_867.variants.coppersmith_phillips_upper_bound) | Erdős Problem 867 — coppersmith phillips upper bound | known | Combinatorics, Number Theory |  |  |
+| 1778 | [`Erdos867.erdos_867.variants.coppersmith_phillips_upper_bound`](https://lefttosolve.com/p/Erdos867.erdos_867.variants.coppersmith_phillips_upper_bound) | Erdős Problem 867 — coppersmith phillips upper bound | known | Combinatorics, Number Theory |  | yes |
 | 1779 | [`Erdos867.erdos_867.variants.freud`](https://lefttosolve.com/p/Erdos867.erdos_867.variants.freud) | Erdős Problem 867 — freud | known | Combinatorics, Number Theory |  | yes |
 | 1780 | [`Erdos868.erdos_868.parts.i`](https://lefttosolve.com/p/Erdos868.erdos_868.parts.i) | Erdős Problem 868 — i | known | Combinatorics, Number Theory |  | yes |
 | 1781 | [`Erdos868.erdos_868.parts.ii`](https://lefttosolve.com/p/Erdos868.erdos_868.parts.ii) | Erdős Problem 868 — ii | known | Combinatorics, Number Theory |  | yes |
-| 1782 | [`Erdos868.erdos_868.variants.fixed_`](https://lefttosolve.com/p/Erdos868.erdos_868.variants.fixed_) | Erdős Problem 868 — fixed ε | known | Combinatorics, Number Theory |  |  |
+| 1782 | [`Erdos868.erdos_868.variants.fixed_`](https://lefttosolve.com/p/Erdos868.erdos_868.variants.fixed_) | Erdős Problem 868 — fixed ε | known | Combinatorics, Number Theory |  | yes |
 | 1783 | [`Erdos87.erdos_87.parts.i`](https://lefttosolve.com/p/Erdos87.erdos_87.parts.i) | Erdős Problem 87 — i | open | Combinatorics |  |  |
 | 1784 | [`Erdos87.erdos_87.parts.ii`](https://lefttosolve.com/p/Erdos87.erdos_87.parts.ii) | Erdős Problem 87 — ii | open | Combinatorics |  |  |
 | 1785 | [`Erdos872.erdos_872.parts.i`](https://lefttosolve.com/p/Erdos872.erdos_872.parts.i) | Erdős Problem 872 — i | open | Combinatorics, Game Theory & Economics, Number Theory |  |  |
 | 1786 | [`Erdos873.erdos_873`](https://lefttosolve.com/p/Erdos873.erdos_873) | Erdős Problem 873 | open | Number Theory |  |  |
-| 1787 | [`Erdos873.erdos_873.variants.triple_lower_bound_infinitely_often`](https://lefttosolve.com/p/Erdos873.erdos_873.variants.triple_lower_bound_infinitely_often) | Erdős Problem 873 — triple lower bound infinitely often | known | Number Theory |  |  |
+| 1787 | [`Erdos873.erdos_873.variants.triple_lower_bound_infinitely_often`](https://lefttosolve.com/p/Erdos873.erdos_873.variants.triple_lower_bound_infinitely_often) | Erdős Problem 873 — triple lower bound infinitely often | known | Number Theory |  | yes |
 | 1788 | [`Erdos873.erdos_873.variants.triple_upper_bound`](https://lefttosolve.com/p/Erdos873.erdos_873.variants.triple_upper_bound) | Erdős Problem 873 — triple upper bound | known | Number Theory |  | yes |
 | 1789 | [`Erdos875.erdos_875`](https://lefttosolve.com/p/Erdos875.erdos_875) | Erdős Problem 875 | open | Number Theory |  |  |
 | 1790 | [`Erdos875.erdos_875.variants.deshouillers_freiman`](https://lefttosolve.com/p/Erdos875.erdos_875.variants.deshouillers_freiman) | Erdős Problem 875 — deshouillers freiman | known | Number Theory |  |  |
@@ -1814,41 +1814,41 @@ Back to [all programs](../PROGRAMS.md).
 | 1792 | [`Erdos875.erdos_875.variants.polynomial_gaps`](https://lefttosolve.com/p/Erdos875.erdos_875.variants.polynomial_gaps) | Erdős Problem 875 — polynomial gaps | known | Number Theory |  | yes |
 | 1793 | [`Erdos876.erdos_876.parts.i`](https://lefttosolve.com/p/Erdos876.erdos_876.parts.i) | Erdős Problem 876 — i | open | Number Theory |  |  |
 | 1794 | [`Erdos876.erdos_876.parts.ii`](https://lefttosolve.com/p/Erdos876.erdos_876.parts.ii) | Erdős Problem 876 — ii | open | Number Theory |  |  |
-| 1795 | [`Erdos876.erdos_876.variants.dem_polynomial`](https://lefttosolve.com/p/Erdos876.erdos_876.variants.dem_polynomial) | Erdős Problem 876 — dem polynomial | known | Number Theory |  |  |
-| 1796 | [`Erdos876.erdos_876.variants.dem_ratio`](https://lefttosolve.com/p/Erdos876.erdos_876.variants.dem_ratio) | Erdős Problem 876 — dem ratio | known | Number Theory |  |  |
-| 1797 | [`Erdos876.erdos_876.variants.density_zero`](https://lefttosolve.com/p/Erdos876.erdos_876.variants.density_zero) | Erdős Problem 876 — density zero | known | Number Theory |  |  |
+| 1795 | [`Erdos876.erdos_876.variants.dem_polynomial`](https://lefttosolve.com/p/Erdos876.erdos_876.variants.dem_polynomial) | Erdős Problem 876 — dem polynomial | known | Number Theory |  | yes |
+| 1796 | [`Erdos876.erdos_876.variants.dem_ratio`](https://lefttosolve.com/p/Erdos876.erdos_876.variants.dem_ratio) | Erdős Problem 876 — dem ratio | known | Number Theory |  | yes |
+| 1797 | [`Erdos876.erdos_876.variants.density_zero`](https://lefttosolve.com/p/Erdos876.erdos_876.variants.density_zero) | Erdős Problem 876 — density zero | known | Number Theory |  | yes |
 | 1798 | [`Erdos876.erdos_876.variants.recip_sum_bounds`](https://lefttosolve.com/p/Erdos876.erdos_876.variants.recip_sum_bounds) | Erdős Problem 876 — recip sum bounds | known | Number Theory |  |  |
-| 1799 | [`Erdos876.erdos_876.variants.recip_sum_lt`](https://lefttosolve.com/p/Erdos876.erdos_876.variants.recip_sum_lt) | Erdős Problem 876 — recip sum lt | known | Number Theory |  |  |
+| 1799 | [`Erdos876.erdos_876.variants.recip_sum_lt`](https://lefttosolve.com/p/Erdos876.erdos_876.variants.recip_sum_lt) | Erdős Problem 876 — recip sum lt | known | Number Theory |  | yes |
 | 1800 | [`Erdos877.erdos_877.variants.balogh_liu_sharifzadeh_treglown`](https://lefttosolve.com/p/Erdos877.erdos_877.variants.balogh_liu_sharifzadeh_treglown) | Erdős Problem 877 — balogh liu sharifzadeh treglown | known | Combinatorics, Number Theory |  |  |
-| 1801 | [`Erdos877.erdos_877.variants.cameron_erdos`](https://lefttosolve.com/p/Erdos877.erdos_877.variants.cameron_erdos) | Erdős Problem 877 — cameron erdos | known | Combinatorics, Number Theory |  |  |
+| 1801 | [`Erdos877.erdos_877.variants.cameron_erdos`](https://lefttosolve.com/p/Erdos877.erdos_877.variants.cameron_erdos) | Erdős Problem 877 — cameron erdos | known | Combinatorics, Number Theory |  | yes |
 | 1802 | [`Erdos878.erdos_878.parts.iii_all`](https://lefttosolve.com/p/Erdos878.erdos_878.parts.iii_all) | Erdős Problem 878 — iii all | known | Number Theory |  | yes |
 | 1803 | [`Erdos878.erdos_878.parts.iv`](https://lefttosolve.com/p/Erdos878.erdos_878.parts.iv) | Erdős Problem 878 — iv | open | Number Theory |  |  |
-| 1804 | [`Erdos878.erdos_878.parts.v`](https://lefttosolve.com/p/Erdos878.erdos_878.parts.v) | Erdős Problem 878 — v | open | Number Theory |  |  |
+| 1804 | [`Erdos878.erdos_878.parts.v`](https://lefttosolve.com/p/Erdos878.erdos_878.parts.v) | Erdős Problem 878 — v | open | Number Theory |  | yes |
 | 1805 | [`Erdos878.erdos_878.parts.vi`](https://lefttosolve.com/p/Erdos878.erdos_878.parts.vi) | Erdős Problem 878 — vi | open | Number Theory |  |  |
 | 1806 | [`Erdos878.erdos_878.variants.H_div_self_liminf_finite`](https://lefttosolve.com/p/Erdos878.erdos_878.variants.H_div_self_liminf_finite) | Erdős Problem 878 — H div self liminf finite | known | Number Theory |  | yes |
 | 1807 | [`Erdos878.erdos_878.variants.H_div_self_limsup_infinite`](https://lefttosolve.com/p/Erdos878.erdos_878.variants.H_div_self_limsup_infinite) | Erdős Problem 878 — H div self limsup infinite | known | Number Theory |  | yes |
 | 1808 | [`Erdos878.erdos_878.variants.H_lower_quadruple_log_infinitely_often`](https://lefttosolve.com/p/Erdos878.erdos_878.variants.H_lower_quadruple_log_infinitely_often) | Erdős Problem 878 — H lower quadruple log infinitely often | known | Number Theory |  | yes |
 | 1809 | [`Erdos878.erdos_878.variants.H_upper_triple_log`](https://lefttosolve.com/p/Erdos878.erdos_878.variants.H_upper_triple_log) | Erdős Problem 878 — H upper triple log | known | Number Theory |  | yes |
 | 1810 | [`Erdos878.erdos_878.variants.second_question_subsequence`](https://lefttosolve.com/p/Erdos878.erdos_878.variants.second_question_subsequence) | Erdős Problem 878 — second question subsequence | known | Number Theory |  | yes |
-| 1811 | [`Erdos88.erdos_88.variants.erdos_mckay`](https://lefttosolve.com/p/Erdos88.erdos_88.variants.erdos_mckay) | Erdős Problem 88 — erdos mckay | known | Combinatorics | $100 |  |
+| 1811 | [`Erdos88.erdos_88.variants.erdos_mckay`](https://lefttosolve.com/p/Erdos88.erdos_88.variants.erdos_mckay) | Erdős Problem 88 — erdos mckay | known | Combinatorics | $100 | yes |
 | 1812 | [`Erdos88.erdos_88.variants.kwan_sah_sauermann_sawhney`](https://lefttosolve.com/p/Erdos88.erdos_88.variants.kwan_sah_sauermann_sawhney) | Erdős Problem 88 — kwan sah sauermann sawhney | known | Combinatorics | $100 |  |
 | 1813 | [`Erdos881.erdos_881`](https://lefttosolve.com/p/Erdos881.erdos_881) | Erdős Problem 881 | open | Combinatorics, Number Theory |  |  |
-| 1814 | [`Erdos882.erdos_882`](https://lefttosolve.com/p/Erdos882.erdos_882) | Erdős Problem 882 | known | Combinatorics, Number Theory |  |  |
-| 1815 | [`Erdos882.erdos_882.variants.greedy`](https://lefttosolve.com/p/Erdos882.erdos_882.variants.greedy) | Erdős Problem 882 — greedy | known | Combinatorics, Number Theory |  |  |
+| 1814 | [`Erdos882.erdos_882`](https://lefttosolve.com/p/Erdos882.erdos_882) | Erdős Problem 882 | known | Combinatorics, Number Theory |  | yes |
+| 1815 | [`Erdos882.erdos_882.variants.greedy`](https://lefttosolve.com/p/Erdos882.erdos_882.variants.greedy) | Erdős Problem 882 — greedy | known | Combinatorics, Number Theory |  | yes |
 | 1816 | [`Erdos883.erdos_883.parts.i`](https://lefttosolve.com/p/Erdos883.erdos_883.parts.i) | Erdős Problem 883 — i | open | Combinatorics, Number Theory |  |  |
-| 1817 | [`Erdos883.erdos_883.parts.ii`](https://lefttosolve.com/p/Erdos883.erdos_883.parts.ii) | Erdős Problem 883 — ii | known | Combinatorics, Number Theory |  |  |
+| 1817 | [`Erdos883.erdos_883.parts.ii`](https://lefttosolve.com/p/Erdos883.erdos_883.parts.ii) | Erdős Problem 883 — ii | known | Combinatorics, Number Theory |  | yes |
 | 1818 | [`Erdos884.erdos_884_false_of_hardy_littlewood`](https://lefttosolve.com/p/Erdos884.erdos_884_false_of_hardy_littlewood) | Erdős Problem 884 | known | Number Theory |  | yes |
 | 1819 | [`Erdos885.erdos_885`](https://lefttosolve.com/p/Erdos885.erdos_885) | Erdős Problem 885 | open | Number Theory |  |  |
 | 1820 | [`Erdos886.erdos_886`](https://lefttosolve.com/p/Erdos886.erdos_886) | Erdős Problem 886 | open | Number Theory |  |  |
 | 1821 | [`Erdos887.erdos_887.parts.i`](https://lefttosolve.com/p/Erdos887.erdos_887.parts.i) | Erdős Problem 887 — i | open | Number Theory |  |  |
 | 1822 | [`Erdos887.erdos_887.parts.ii`](https://lefttosolve.com/p/Erdos887.erdos_887.parts.ii) | Erdős Problem 887 — ii | open | Number Theory |  |  |
 | 1823 | [`Erdos887.erdos_887.variants.rosenfeld_infinite`](https://lefttosolve.com/p/Erdos887.erdos_887.variants.rosenfeld_infinite) | Erdős Problem 887 — rosenfeld infinite | known | Number Theory |  | yes |
-| 1824 | [`Erdos888.erdos_888.variants.primes`](https://lefttosolve.com/p/Erdos888.erdos_888.variants.primes) | Erdős Problem 888 — primes | known | Number Theory |  |  |
-| 1825 | [`Erdos888.erdos_888.variants.sarkozy`](https://lefttosolve.com/p/Erdos888.erdos_888.variants.sarkozy) | Erdős Problem 888 — sarkozy | known | Number Theory |  |  |
-| 1826 | [`Erdos888.erdos_888.variants.semiprimes`](https://lefttosolve.com/p/Erdos888.erdos_888.variants.semiprimes) | Erdős Problem 888 — semiprimes | known | Number Theory |  |  |
+| 1824 | [`Erdos888.erdos_888.variants.primes`](https://lefttosolve.com/p/Erdos888.erdos_888.variants.primes) | Erdős Problem 888 — primes | known | Number Theory |  | yes |
+| 1825 | [`Erdos888.erdos_888.variants.sarkozy`](https://lefttosolve.com/p/Erdos888.erdos_888.variants.sarkozy) | Erdős Problem 888 — sarkozy | known | Number Theory |  | yes |
+| 1826 | [`Erdos888.erdos_888.variants.semiprimes`](https://lefttosolve.com/p/Erdos888.erdos_888.variants.semiprimes) | Erdős Problem 888 — semiprimes | known | Number Theory |  | yes |
 | 1827 | [`Erdos889.erdos_889`](https://lefttosolve.com/p/Erdos889.erdos_889) | Erdős Problem 889 | open | Number Theory |  |  |
 | 1828 | [`Erdos889.erdos_889.variants.general`](https://lefttosolve.com/p/Erdos889.erdos_889.variants.general) | Erdős Problem 889 — general | open | Number Theory |  |  |
-| 1829 | [`Erdos889.erdos_889.variants.v0_gt_1`](https://lefttosolve.com/p/Erdos889.erdos_889.variants.v0_gt_1) | Erdős Problem 889 — v0 gt 1 | known | Number Theory |  |  |
+| 1829 | [`Erdos889.erdos_889.variants.v0_gt_1`](https://lefttosolve.com/p/Erdos889.erdos_889.variants.v0_gt_1) | Erdős Problem 889 — v0 gt 1 | known | Number Theory |  | yes |
 | 1830 | [`Erdos889.erdos_889.variants.v1_eq_1_finite`](https://lefttosolve.com/p/Erdos889.erdos_889.variants.v1_eq_1_finite) | Erdős Problem 889 — v1 eq 1 finite | open | Number Theory |  |  |
 | 1831 | [`Erdos89.erdos_89`](https://lefttosolve.com/p/Erdos89.erdos_89) | Erdős Problem 89 | open | Convex & Discrete Geometry | $500 |  |
 | 1832 | [`Erdos89.erdos_89.variants.grid_upper_bound`](https://lefttosolve.com/p/Erdos89.erdos_89.variants.grid_upper_bound) | Erdős Problem 89 — grid upper bound | known | Convex & Discrete Geometry | $500 | yes |
@@ -1859,10 +1859,10 @@ Back to [all programs](../PROGRAMS.md).
 | 1837 | [`Erdos890.erdos_890.variants.omega_limsup`](https://lefttosolve.com/p/Erdos890.erdos_890.variants.omega_limsup) | Erdős Problem 890 — omega limsup | known | Number Theory |  | yes |
 | 1838 | [`Erdos891.erdos_891`](https://lefttosolve.com/p/Erdos891.erdos_891) | Erdős Problem 891 | open | Number Theory |  |  |
 | 1839 | [`Erdos891.erdos_891.variants.case_k_2`](https://lefttosolve.com/p/Erdos891.erdos_891.variants.case_k_2) | Erdős Problem 891 — case k 2 | open | Number Theory |  |  |
-| 1840 | [`Erdos891.erdos_891.variants.schinzel`](https://lefttosolve.com/p/Erdos891.erdos_891.variants.schinzel) | Erdős Problem 891 — schinzel | known | Number Theory |  |  |
+| 1840 | [`Erdos891.erdos_891.variants.schinzel`](https://lefttosolve.com/p/Erdos891.erdos_891.variants.schinzel) | Erdős Problem 891 — schinzel | known | Number Theory |  | yes |
 | 1841 | [`Erdos891.erdos_891.variants.weisenberg`](https://lefttosolve.com/p/Erdos891.erdos_891.variants.weisenberg) | Erdős Problem 891 — weisenberg | known | Number Theory |  | yes |
 | 1842 | [`Erdos893.erdos_893`](https://lefttosolve.com/p/Erdos893.erdos_893) | Erdős Problem 893 | open | Combinatorics |  |  |
-| 1843 | [`Erdos893.erdos_893.variants.unbounded`](https://lefttosolve.com/p/Erdos893.erdos_893.variants.unbounded) | Erdős Problem 893 — unbounded | known | Combinatorics |  |  |
+| 1843 | [`Erdos893.erdos_893.variants.unbounded`](https://lefttosolve.com/p/Erdos893.erdos_893.variants.unbounded) | Erdős Problem 893 — unbounded | known | Combinatorics |  | yes |
 | 1844 | [`Erdos895.erdos_895.variants.hindman`](https://lefttosolve.com/p/Erdos895.erdos_895.variants.hindman) | Erdős Problem 895 — hindman | open | Combinatorics |  |  |
 | 1845 | [`Erdos897.erdos_897.variants.parts.i`](https://lefttosolve.com/p/Erdos897.erdos_897.variants.parts.i) | Erdős Problem 897 — i | open | Number Theory |  |  |
 | 1846 | [`Erdos897.erdos_897.variants.parts.ii`](https://lefttosolve.com/p/Erdos897.erdos_897.variants.parts.ii) | Erdős Problem 897 — ii | open | Number Theory |  |  |
@@ -1877,7 +1877,7 @@ Back to [all programs](../PROGRAMS.md).
 | 1855 | [`Erdos902.erdos_902.variants.f_two`](https://lefttosolve.com/p/Erdos902.erdos_902.variants.f_two) | Erdős Problem 902 — f two | known | Combinatorics |  | yes |
 | 1856 | [`Erdos902.erdos_902.variants.szekeres_f_three`](https://lefttosolve.com/p/Erdos902.erdos_902.variants.szekeres_f_three) | Erdős Problem 902 — szekeres f three | known | Combinatorics |  | yes |
 | 1857 | [`Erdos902.erdos_902.variants.szekeres_lower`](https://lefttosolve.com/p/Erdos902.erdos_902.variants.szekeres_lower) | Erdős Problem 902 — szekeres lower | known | Combinatorics |  | yes |
-| 1858 | [`Erdos903.erdos_903`](https://lefttosolve.com/p/Erdos903.erdos_903) | Erdős Problem 903 | known | Combinatorics |  |  |
+| 1858 | [`Erdos903.erdos_903`](https://lefttosolve.com/p/Erdos903.erdos_903) | Erdős Problem 903 | known | Combinatorics |  | yes |
 | 1859 | [`Erdos906.erdos_906`](https://lefttosolve.com/p/Erdos906.erdos_906) | Erdős Problem 906 | open | Complex Analysis |  |  |
 | 1860 | [`Erdos91.erdos_91`](https://lefttosolve.com/p/Erdos91.erdos_91) | Erdős Problem 91 | open | Convex & Discrete Geometry |  |  |
 | 1861 | [`Erdos91.erdos_91.test.circleSeven_optimal`](https://lefttosolve.com/p/Erdos91.erdos_91.test.circleSeven_optimal) | Erdős Problem 91 — circleSeven optimal | warmup | Convex & Discrete Geometry |  | yes |
@@ -1893,40 +1893,40 @@ Back to [all programs](../PROGRAMS.md).
 | 1871 | [`Erdos910.erdos_910.variants.rudin_CH`](https://lefttosolve.com/p/Erdos910.erdos_910.variants.rudin_CH) | Erdős Problem 910 — rudin CH | known | General Topology |  |  |
 | 1872 | [`Erdos911.erdos_911`](https://lefttosolve.com/p/Erdos911.erdos_911) | Erdős Problem 911 | open | Combinatorics |  |  |
 | 1873 | [`Erdos912.erdos_912`](https://lefttosolve.com/p/Erdos912.erdos_912) | Erdős Problem 912 | open | Number Theory |  |  |
-| 1874 | [`Erdos912.erdos_912.variants.selfridge`](https://lefttosolve.com/p/Erdos912.erdos_912.variants.selfridge) | Erdős Problem 912 — selfridge | known | Number Theory |  |  |
+| 1874 | [`Erdos912.erdos_912.variants.selfridge`](https://lefttosolve.com/p/Erdos912.erdos_912.variants.selfridge) | Erdős Problem 912 — selfridge | known | Number Theory |  | yes |
 | 1875 | [`Erdos912.erdos_912.variants.tao`](https://lefttosolve.com/p/Erdos912.erdos_912.variants.tao) | Erdős Problem 912 — tao | open | Number Theory |  |  |
 | 1876 | [`Erdos913.erdos_913`](https://lefttosolve.com/p/Erdos913.erdos_913) | Erdős Problem 913 | open | Number Theory |  |  |
 | 1877 | [`Erdos913.erdos_913.variants.infinite_many_8p_sq_add_one_primes`](https://lefttosolve.com/p/Erdos913.erdos_913.variants.infinite_many_8p_sq_add_one_primes) | Erdős Problem 913 — infinite many 8p sq add one primes | open | Number Theory |  |  |
 | 1878 | [`Erdos914.erdos_914.variants.equitable_colouring`](https://lefttosolve.com/p/Erdos914.erdos_914.variants.equitable_colouring) | Erdős Problem 914 — equitable colouring | known | Combinatorics |  | yes |
-| 1879 | [`Erdos915.erdos_915.variants.edge_disjoint`](https://lefttosolve.com/p/Erdos915.erdos_915.variants.edge_disjoint) | Erdős Problem 915 — edge disjoint | known | Combinatorics |  |  |
+| 1879 | [`Erdos915.erdos_915.variants.edge_disjoint`](https://lefttosolve.com/p/Erdos915.erdos_915.variants.edge_disjoint) | Erdős Problem 915 — edge disjoint | known | Combinatorics |  | yes |
 | 1880 | [`Erdos917.erdos_917.parts.i`](https://lefttosolve.com/p/Erdos917.erdos_917.parts.i) | Erdős Problem 917 — i | known | Combinatorics |  | yes |
 | 1881 | [`Erdos917.erdos_917.parts.ii`](https://lefttosolve.com/p/Erdos917.erdos_917.parts.ii) | Erdős Problem 917 — ii | open | Combinatorics |  |  |
 | 1882 | [`Erdos917.erdos_917.parts.iii`](https://lefttosolve.com/p/Erdos917.erdos_917.parts.iii) | Erdős Problem 917 — iii | known | Combinatorics |  | yes |
-| 1883 | [`Erdos917.erdos_917.variants.dirac`](https://lefttosolve.com/p/Erdos917.erdos_917.variants.dirac) | Erdős Problem 917 — dirac | known | Combinatorics |  |  |
-| 1884 | [`Erdos917.erdos_917.variants.erdos_three_dvd`](https://lefttosolve.com/p/Erdos917.erdos_917.variants.erdos_three_dvd) | Erdős Problem 917 — erdos three dvd | known | Combinatorics |  |  |
-| 1885 | [`Erdos917.erdos_917.variants.lower_construction`](https://lefttosolve.com/p/Erdos917.erdos_917.variants.lower_construction) | Erdős Problem 917 — lower construction | known | Combinatorics |  |  |
-| 1886 | [`Erdos917.erdos_917.variants.luo_ma_yang`](https://lefttosolve.com/p/Erdos917.erdos_917.variants.luo_ma_yang) | Erdős Problem 917 — luo ma yang | known | Combinatorics |  |  |
-| 1887 | [`Erdos917.erdos_917.variants.not_asymptotic`](https://lefttosolve.com/p/Erdos917.erdos_917.variants.not_asymptotic) | Erdős Problem 917 — not asymptotic | known | Combinatorics |  |  |
-| 1888 | [`Erdos917.erdos_917.variants.stiebitz_upper`](https://lefttosolve.com/p/Erdos917.erdos_917.variants.stiebitz_upper) | Erdős Problem 917 — stiebitz upper | known | Combinatorics |  |  |
+| 1883 | [`Erdos917.erdos_917.variants.dirac`](https://lefttosolve.com/p/Erdos917.erdos_917.variants.dirac) | Erdős Problem 917 — dirac | known | Combinatorics |  | yes |
+| 1884 | [`Erdos917.erdos_917.variants.erdos_three_dvd`](https://lefttosolve.com/p/Erdos917.erdos_917.variants.erdos_three_dvd) | Erdős Problem 917 — erdos three dvd | known | Combinatorics |  | yes |
+| 1885 | [`Erdos917.erdos_917.variants.lower_construction`](https://lefttosolve.com/p/Erdos917.erdos_917.variants.lower_construction) | Erdős Problem 917 — lower construction | known | Combinatorics |  | yes |
+| 1886 | [`Erdos917.erdos_917.variants.luo_ma_yang`](https://lefttosolve.com/p/Erdos917.erdos_917.variants.luo_ma_yang) | Erdős Problem 917 — luo ma yang | known | Combinatorics |  | yes |
+| 1887 | [`Erdos917.erdos_917.variants.not_asymptotic`](https://lefttosolve.com/p/Erdos917.erdos_917.variants.not_asymptotic) | Erdős Problem 917 — not asymptotic | known | Combinatorics |  | yes |
+| 1888 | [`Erdos917.erdos_917.variants.stiebitz_upper`](https://lefttosolve.com/p/Erdos917.erdos_917.variants.stiebitz_upper) | Erdős Problem 917 — stiebitz upper | known | Combinatorics |  | yes |
 | 1889 | [`Erdos917.erdos_917.variants.three_dvd`](https://lefttosolve.com/p/Erdos917.erdos_917.variants.three_dvd) | Erdős Problem 917 — three dvd | open | Combinatorics |  |  |
 | 1890 | [`Erdos918.erdos_918.parts.i`](https://lefttosolve.com/p/Erdos918.erdos_918.parts.i) | Erdős Problem 918 — i | open | Combinatorics |  |  |
 | 1891 | [`Erdos918.erdos_918.parts.ii`](https://lefttosolve.com/p/Erdos918.erdos_918.parts.ii) | Erdős Problem 918 — ii | open | Combinatorics |  |  |
 | 1892 | [`Erdos918.erdos_918.variants.all_subgraphs.parts.i`](https://lefttosolve.com/p/Erdos918.erdos_918.variants.all_subgraphs.parts.i) | Erdős Problem 918 — i | open | Combinatorics |  |  |
 | 1893 | [`Erdos918.erdos_918.variants.all_subgraphs.parts.ii`](https://lefttosolve.com/p/Erdos918.erdos_918.variants.all_subgraphs.parts.ii) | Erdős Problem 918 — ii | open | Combinatorics |  |  |
-| 1894 | [`Erdos92.erdos_92.variants.strong`](https://lefttosolve.com/p/Erdos92.erdos_92.variants.strong) | Erdős Problem 92 — strong | known | Convex & Discrete Geometry | $500 |  |
+| 1894 | [`Erdos92.erdos_92.variants.strong`](https://lefttosolve.com/p/Erdos92.erdos_92.variants.strong) | Erdős Problem 92 — strong | known | Convex & Discrete Geometry | $500 | yes |
 | 1895 | [`Erdos92.erdos_92.variants.weak`](https://lefttosolve.com/p/Erdos92.erdos_92.variants.weak) | Erdős Problem 92 — weak | known | Convex & Discrete Geometry | $500 |  |
 | 1896 | [`Erdos920.erdos_920.variants.k_eq_3`](https://lefttosolve.com/p/Erdos920.erdos_920.variants.k_eq_3) | Erdős Problem 920 — k eq 3 | known | Combinatorics |  |  |
-| 1897 | [`Erdos920.erdos_920.variants.lower_bound_k_eq_4`](https://lefttosolve.com/p/Erdos920.erdos_920.variants.lower_bound_k_eq_4) | Erdős Problem 920 — lower bound k eq 4 | known | Combinatorics |  |  |
-| 1898 | [`Erdos920.erdos_920.variants.lower_bound_k_ge_5`](https://lefttosolve.com/p/Erdos920.erdos_920.variants.lower_bound_k_ge_5) | Erdős Problem 920 — lower bound k ge 5 | known | Combinatorics |  |  |
+| 1897 | [`Erdos920.erdos_920.variants.lower_bound_k_eq_4`](https://lefttosolve.com/p/Erdos920.erdos_920.variants.lower_bound_k_eq_4) | Erdős Problem 920 — lower bound k eq 4 | known | Combinatorics |  | yes |
+| 1898 | [`Erdos920.erdos_920.variants.lower_bound_k_ge_5`](https://lefttosolve.com/p/Erdos920.erdos_920.variants.lower_bound_k_ge_5) | Erdős Problem 920 — lower bound k ge 5 | known | Combinatorics |  | yes |
 | 1899 | [`Erdos920.erdos_920.variants.upper_bound`](https://lefttosolve.com/p/Erdos920.erdos_920.variants.upper_bound) | Erdős Problem 920 — upper bound | known | Combinatorics |  |  |
-| 1900 | [`Erdos926.erdos_926.variants.aks`](https://lefttosolve.com/p/Erdos926.erdos_926.variants.aks) | Erdős Problem 926 — aks | known | Combinatorics |  |  |
+| 1900 | [`Erdos926.erdos_926.variants.aks`](https://lefttosolve.com/p/Erdos926.erdos_926.variants.aks) | Erdős Problem 926 — aks | known | Combinatorics |  | yes |
 | 1901 | [`Erdos929.erdos_929.parts.i`](https://lefttosolve.com/p/Erdos929.erdos_929.parts.i) | Erdős Problem 929 — i | open | Number Theory |  |  |
 | 1902 | [`Erdos929.erdos_929.parts.ii`](https://lefttosolve.com/p/Erdos929.erdos_929.parts.ii) | Erdős Problem 929 — ii | open | Number Theory |  |  |
 | 1903 | [`Erdos929.erdos_929.variants.rosser`](https://lefttosolve.com/p/Erdos929.erdos_929.variants.rosser) | Erdős Problem 929 — rosser | known | Number Theory |  |  |
 | 1904 | [`Erdos929.erdos_929.variants.trivial_upper`](https://lefttosolve.com/p/Erdos929.erdos_929.variants.trivial_upper) | Erdős Problem 929 — trivial upper | warmup | Number Theory |  | yes |
 | 1905 | [`Erdos930.erdos_930`](https://lefttosolve.com/p/Erdos930.erdos_930) | Erdős Problem 930 | open | Number Theory |  |  |
-| 1906 | [`Erdos930.erdos_930.variants.consecutive_integers`](https://lefttosolve.com/p/Erdos930.erdos_930.variants.consecutive_integers) | Erdős Problem 930 — consecutive integers | known | Number Theory |  |  |
-| 1907 | [`Erdos930.erdos_930.variants.consecutive_strong`](https://lefttosolve.com/p/Erdos930.erdos_930.variants.consecutive_strong) | Erdős Problem 930 — consecutive strong | known | Number Theory |  |  |
+| 1906 | [`Erdos930.erdos_930.variants.consecutive_integers`](https://lefttosolve.com/p/Erdos930.erdos_930.variants.consecutive_integers) | Erdős Problem 930 — consecutive integers | known | Number Theory |  | yes |
+| 1907 | [`Erdos930.erdos_930.variants.consecutive_strong`](https://lefttosolve.com/p/Erdos930.erdos_930.variants.consecutive_strong) | Erdős Problem 930 — consecutive strong | known | Number Theory |  | yes |
 | 1908 | [`Erdos931.erdos_931`](https://lefttosolve.com/p/Erdos931.erdos_931) | Erdős Problem 931 | open | Number Theory |  |  |
 | 1909 | [`Erdos931.erdos_931.variants.additional_condition`](https://lefttosolve.com/p/Erdos931.erdos_931.variants.additional_condition) | Erdős Problem 931 — additional condition | open | Number Theory |  |  |
 | 1910 | [`Erdos931.erdos_931.variants.exists_prime`](https://lefttosolve.com/p/Erdos931.erdos_931.variants.exists_prime) | Erdős Problem 931 — exists prime | open | Number Theory |  |  |
@@ -1938,10 +1938,10 @@ Back to [all programs](../PROGRAMS.md).
 | 1916 | [`Erdos934.erdos_934.variants.ccjk_conjecture_false`](https://lefttosolve.com/p/Erdos934.erdos_934.variants.ccjk_conjecture_false) | Erdős Problem 934 — ccjk conjecture false | known | Combinatorics |  | yes |
 | 1917 | [`Erdos934.erdos_934.variants.h_one`](https://lefttosolve.com/p/Erdos934.erdos_934.variants.h_one) | Erdős Problem 934 — h one | known | Combinatorics |  | yes |
 | 1918 | [`Erdos934.erdos_934.variants.h_three_three`](https://lefttosolve.com/p/Erdos934.erdos_934.variants.h_three_three) | Erdős Problem 934 — h three three | known | Combinatorics |  | yes |
-| 1919 | [`Erdos934.erdos_934.variants.h_two`](https://lefttosolve.com/p/Erdos934.erdos_934.variants.h_two) | Erdős Problem 934 — h two | known | Combinatorics |  |  |
+| 1919 | [`Erdos934.erdos_934.variants.h_two`](https://lefttosolve.com/p/Erdos934.erdos_934.variants.h_two) | Erdős Problem 934 — h two | known | Combinatorics |  | yes |
 | 1920 | [`Erdos934.erdos_934.variants.kmp_h_three_four`](https://lefttosolve.com/p/Erdos934.erdos_934.variants.kmp_h_three_four) | Erdős Problem 934 — kmp h three four | known | Combinatorics |  | yes |
 | 1921 | [`Erdos934.erdos_934.variants.kmp_liminf`](https://lefttosolve.com/p/Erdos934.erdos_934.variants.kmp_liminf) | Erdős Problem 934 — kmp liminf | known | Combinatorics |  | yes |
-| 1922 | [`Erdos934.erdos_934.variants.lower_large_t`](https://lefttosolve.com/p/Erdos934.erdos_934.variants.lower_large_t) | Erdős Problem 934 — lower large t | known | Combinatorics |  |  |
+| 1922 | [`Erdos934.erdos_934.variants.lower_large_t`](https://lefttosolve.com/p/Erdos934.erdos_934.variants.lower_large_t) | Erdős Problem 934 — lower large t | known | Combinatorics |  | yes |
 | 1923 | [`Erdos934.erdos_934.variants.lower_liminf`](https://lefttosolve.com/p/Erdos934.erdos_934.variants.lower_liminf) | Erdős Problem 934 — lower liminf | known | Combinatorics |  | yes |
 | 1924 | [`Erdos934.erdos_934.variants.upper`](https://lefttosolve.com/p/Erdos934.erdos_934.variants.upper) | Erdős Problem 934 — upper | known | Combinatorics |  | yes |
 | 1925 | [`Erdos935.erdos_935.parts.i`](https://lefttosolve.com/p/Erdos935.erdos_935.parts.i) | Erdős Problem 935 — i | open | Number Theory |  |  |
@@ -1957,7 +1957,7 @@ Back to [all programs](../PROGRAMS.md).
 | 1935 | [`Erdos939.erdos_939.variants.infinite_of_six_le`](https://lefttosolve.com/p/Erdos939.erdos_939.variants.infinite_of_six_le) | Erdős Problem 939 — infinite of six le | known | Number Theory |  | yes |
 | 1936 | [`Erdos939.erdos_939.variants.seven`](https://lefttosolve.com/p/Erdos939.erdos_939.variants.seven) | Erdős Problem 939 — seven | known | Number Theory |  | yes |
 | 1937 | [`Erdos939.erdos_939.variants.triples`](https://lefttosolve.com/p/Erdos939.erdos_939.variants.triples) | Erdős Problem 939 — triples | known | Number Theory |  | yes |
-| 1938 | [`Erdos94.erdos_94.variants.no_three_on_a_line`](https://lefttosolve.com/p/Erdos94.erdos_94.variants.no_three_on_a_line) | Erdős Problem 94 — no three on a line | known | Combinatorics, Convex & Discrete Geometry | £25 |  |
+| 1938 | [`Erdos94.erdos_94.variants.no_three_on_a_line`](https://lefttosolve.com/p/Erdos94.erdos_94.variants.no_three_on_a_line) | Erdős Problem 94 — no three on a line | known | Combinatorics, Convex & Discrete Geometry | £25 | yes |
 | 1939 | [`Erdos94.erdos_94.variants.regular_ngon`](https://lefttosolve.com/p/Erdos94.erdos_94.variants.regular_ngon) | Erdős Problem 94 — regular ngon | open | Combinatorics, Convex & Discrete Geometry | £25 |  |
 | 1940 | [`Erdos940.erdos_940`](https://lefttosolve.com/p/Erdos940.erdos_940) | Erdős Problem 940 | open | Number Theory |  |  |
 | 1941 | [`Erdos940.erdos_940.variants.large_integers`](https://lefttosolve.com/p/Erdos940.erdos_940.variants.large_integers) | Erdős Problem 940 — large integers | open | Number Theory |  |  |
@@ -1969,11 +1969,11 @@ Back to [all programs](../PROGRAMS.md).
 | 1947 | [`Erdos942.erdos_942.variants.limsup`](https://lefttosolve.com/p/Erdos942.erdos_942.variants.limsup) | Erdős Problem 942 — limsup | warmup | Number Theory |  | yes |
 | 1948 | [`Erdos943.erdos_943`](https://lefttosolve.com/p/Erdos943.erdos_943) | Erdős Problem 943 | open | Number Theory |  |  |
 | 1949 | [`Erdos944.erdos_944`](https://lefttosolve.com/p/Erdos944.erdos_944) | Erdős Problem 944 | open | Number Theory |  |  |
-| 1950 | [`Erdos944.erdos_944.variants.dirac_conjecture`](https://lefttosolve.com/p/Erdos944.erdos_944.variants.dirac_conjecture) | Erdős Problem 944 — dirac conjecture | known | Number Theory |  |  |
+| 1950 | [`Erdos944.erdos_944.variants.dirac_conjecture`](https://lefttosolve.com/p/Erdos944.erdos_944.variants.dirac_conjecture) | Erdős Problem 944 — dirac conjecture | known | Number Theory |  | yes |
 | 1951 | [`Erdos944.erdos_944.variants.dirac_conjecture.k_eq_5`](https://lefttosolve.com/p/Erdos944.erdos_944.variants.dirac_conjecture.k_eq_5) | Erdős Problem 944 — k eq 5 | known | Number Theory |  | yes |
-| 1952 | [`Erdos944.erdos_944.variants.dirac_conjecture.k_ge_five`](https://lefttosolve.com/p/Erdos944.erdos_944.variants.dirac_conjecture.k_ge_five) | Erdős Problem 944 — k ge five | known | Number Theory |  |  |
+| 1952 | [`Erdos944.erdos_944.variants.dirac_conjecture.k_ge_five`](https://lefttosolve.com/p/Erdos944.erdos_944.variants.dirac_conjecture.k_ge_five) | Erdős Problem 944 — k ge five | known | Number Theory |  | yes |
 | 1953 | [`Erdos944.erdos_944.variants.dirac_conjecture.k_sub_one_not_prime`](https://lefttosolve.com/p/Erdos944.erdos_944.variants.dirac_conjecture.k_sub_one_not_prime) | Erdős Problem 944 — k sub one not prime | known | Number Theory |  | yes |
-| 1954 | [`Erdos944.erdos_944.variants.large_k_for_any_r`](https://lefttosolve.com/p/Erdos944.erdos_944.variants.large_k_for_any_r) | Erdős Problem 944 — large k for any r | known | Number Theory |  |  |
+| 1954 | [`Erdos944.erdos_944.variants.large_k_for_any_r`](https://lefttosolve.com/p/Erdos944.erdos_944.variants.large_k_for_any_r) | Erdős Problem 944 — large k for any r | known | Number Theory |  | yes |
 | 1955 | [`Erdos945.erdos_945`](https://lefttosolve.com/p/Erdos945.erdos_945) | Erdős Problem 945 | open | Number Theory |  |  |
 | 1956 | [`Erdos945.erdos_945.variants.constant`](https://lefttosolve.com/p/Erdos945.erdos_945.variants.constant) | Erdős Problem 945 — constant | open | Number Theory |  |  |
 | 1957 | [`Erdos945.erdos_945.variants.equivalence`](https://lefttosolve.com/p/Erdos945.erdos_945.variants.equivalence) | Erdős Problem 945 — equivalence | warmup | Number Theory |  | yes |
@@ -1998,93 +1998,93 @@ Back to [all programs](../PROGRAMS.md).
 | 1976 | [`Erdos954.erdos_954.variants.lower`](https://lefttosolve.com/p/Erdos954.erdos_954.variants.lower) | Erdős Problem 954 — lower | warmup | Number Theory |  | yes |
 | 1977 | [`Erdos954.erdos_954.variants.upper`](https://lefttosolve.com/p/Erdos954.erdos_954.variants.upper) | Erdős Problem 954 — upper | open | Number Theory |  |  |
 | 1978 | [`Erdos955.erdos_955`](https://lefttosolve.com/p/Erdos955.erdos_955) | Erdős Problem 955 | open | Number Theory |  |  |
-| 1979 | [`Erdos955.erdos_955.variants.empty_preimage`](https://lefttosolve.com/p/Erdos955.erdos_955.variants.empty_preimage) | Erdős Problem 955 — empty preimage | known | Number Theory |  |  |
+| 1979 | [`Erdos955.erdos_955.variants.empty_preimage`](https://lefttosolve.com/p/Erdos955.erdos_955.variants.empty_preimage) | Erdős Problem 955 — empty preimage | known | Number Theory |  | yes |
 | 1980 | [`Erdos955.erdos_955.variants.pollack_pomerance_thompson_bound`](https://lefttosolve.com/p/Erdos955.erdos_955.variants.pollack_pomerance_thompson_bound) | Erdős Problem 955 — pollack pomerance thompson bound | known | Number Theory |  |  |
-| 1981 | [`Erdos955.erdos_955.variants.pollack_primes`](https://lefttosolve.com/p/Erdos955.erdos_955.variants.pollack_primes) | Erdős Problem 955 — pollack primes | known | Number Theory |  |  |
-| 1982 | [`Erdos955.erdos_955.variants.positive_density`](https://lefttosolve.com/p/Erdos955.erdos_955.variants.positive_density) | Erdős Problem 955 — positive density | known | Number Theory |  |  |
-| 1983 | [`Erdos955.erdos_955.variants.troupe_sum_of_two_squares`](https://lefttosolve.com/p/Erdos955.erdos_955.variants.troupe_sum_of_two_squares) | Erdős Problem 955 — troupe sum of two squares | known | Number Theory |  |  |
+| 1981 | [`Erdos955.erdos_955.variants.pollack_primes`](https://lefttosolve.com/p/Erdos955.erdos_955.variants.pollack_primes) | Erdős Problem 955 — pollack primes | known | Number Theory |  | yes |
+| 1982 | [`Erdos955.erdos_955.variants.positive_density`](https://lefttosolve.com/p/Erdos955.erdos_955.variants.positive_density) | Erdős Problem 955 — positive density | known | Number Theory |  | yes |
+| 1983 | [`Erdos955.erdos_955.variants.troupe_sum_of_two_squares`](https://lefttosolve.com/p/Erdos955.erdos_955.variants.troupe_sum_of_two_squares) | Erdős Problem 955 — troupe sum of two squares | known | Number Theory |  | yes |
 | 1984 | [`Erdos955.erdos_955.variants.troupe_unusually_many_prime_factors`](https://lefttosolve.com/p/Erdos955.erdos_955.variants.troupe_unusually_many_prime_factors) | Erdős Problem 955 — troupe unusually many prime factors | known | Number Theory |  |  |
 | 1985 | [`Erdos959.erdos_959`](https://lefttosolve.com/p/Erdos959.erdos_959) | Erdős Problem 959 | open | Convex & Discrete Geometry |  |  |
 | 1986 | [`Erdos96.erdos_96`](https://lefttosolve.com/p/Erdos96.erdos_96) | Erdős Problem 96 | known | Convex & Discrete Geometry |  | yes |
 | 1987 | [`Erdos961.erdos_961`](https://lefttosolve.com/p/Erdos961.erdos_961) | Erdős Problem 961 | open | Number Theory |  |  |
-| 1988 | [`Erdos961.erdos_961.sylvester_schur`](https://lefttosolve.com/p/Erdos961.erdos_961.sylvester_schur) | Erdős Problem 961 — sylvester schur | known | Number Theory |  |  |
+| 1988 | [`Erdos961.erdos_961.sylvester_schur`](https://lefttosolve.com/p/Erdos961.erdos_961.sylvester_schur) | Erdős Problem 961 — sylvester schur | known | Number Theory |  | yes |
 | 1989 | [`Erdos961.erdos_961.variants.erdos_upper_bound`](https://lefttosolve.com/p/Erdos961.erdos_961.variants.erdos_upper_bound) | Erdős Problem 961 — erdos upper bound | known | Number Theory |  |  |
 | 1990 | [`Erdos961.erdos_961.variants.jutila_ramachandra_shorey_upper_bound`](https://lefttosolve.com/p/Erdos961.erdos_961.variants.jutila_ramachandra_shorey_upper_bound) | Erdős Problem 961 — jutila ramachandra shorey upper bound | known | Number Theory |  |  |
 | 1991 | [`Erdos962.erdos_962`](https://lefttosolve.com/p/Erdos962.erdos_962) | Erdős Problem 962 | open | Number Theory |  |  |
 | 1992 | [`Erdos962.erdos_962.variants.tang_lower_bound`](https://lefttosolve.com/p/Erdos962.erdos_962.variants.tang_lower_bound) | Erdős Problem 962 — tang lower bound | known | Number Theory |  | yes |
 | 1993 | [`Erdos962.erdos_962.variants.tao_upper_bound`](https://lefttosolve.com/p/Erdos962.erdos_962.variants.tao_upper_bound) | Erdős Problem 962 — tao upper bound | known | Number Theory |  | yes |
-| 1994 | [`Erdos963.erdos_963.parts.i`](https://lefttosolve.com/p/Erdos963.erdos_963.parts.i) | Erdős Problem 963 — i | open | Combinatorics, Number Theory |  |  |
+| 1994 | [`Erdos963.erdos_963.parts.i`](https://lefttosolve.com/p/Erdos963.erdos_963.parts.i) | Erdős Problem 963 — i | open | Combinatorics, Number Theory |  | yes |
 | 1995 | [`Erdos963.erdos_963.parts.ii`](https://lefttosolve.com/p/Erdos963.erdos_963.parts.ii) | Erdős Problem 963 — ii | open | Combinatorics, Number Theory |  |  |
 | 1996 | [`Erdos963.erdos_963.variants.positive`](https://lefttosolve.com/p/Erdos963.erdos_963.variants.positive) | Erdős Problem 963 — positive | open | Combinatorics, Number Theory |  |  |
 | 1997 | [`Erdos964.erdos_964.variants.eberhard`](https://lefttosolve.com/p/Erdos964.erdos_964.variants.eberhard) | Erdős Problem 964 — eberhard | known | Number Theory |  |  |
-| 1998 | [`Erdos965.erdos_965.variants.generalization`](https://lefttosolve.com/p/Erdos965.erdos_965.variants.generalization) | Erdős Problem 965 — generalization | known | Combinatorics, Logic & Foundations |  |  |
+| 1998 | [`Erdos965.erdos_965.variants.generalization`](https://lefttosolve.com/p/Erdos965.erdos_965.variants.generalization) | Erdős Problem 965 — generalization | known | Combinatorics, Logic & Foundations |  | yes |
 | 1999 | [`Erdos967.erdos_967.variants.finite`](https://lefttosolve.com/p/Erdos967.erdos_967.variants.finite) | Erdős Problem 967 — finite | open | Complex Analysis, Number Theory |  |  |
 | 2000 | [`Erdos967.erdos_967.variants.tauberian`](https://lefttosolve.com/p/Erdos967.erdos_967.variants.tauberian) | Erdős Problem 967 — tauberian | known | Number Theory, Sequences & Series |  |  |
 | 2001 | [`Erdos967.erdos_967.variants.two_three_five`](https://lefttosolve.com/p/Erdos967.erdos_967.variants.two_three_five) | Erdős Problem 967 — two three five | open | Complex Analysis, Number Theory |  |  |
 | 2002 | [`Erdos967.erdos_967.variants.yip`](https://lefttosolve.com/p/Erdos967.erdos_967.variants.yip) | Erdős Problem 967 — yip | known | Complex Analysis, Number Theory |  | yes |
-| 2003 | [`Erdos968.erdos_968.variants.decreasing_steps_pos_lower_density`](https://lefttosolve.com/p/Erdos968.erdos_968.variants.decreasing_steps_pos_lower_density) | Erdős Problem 968 — decreasing steps pos lower density | known | Number Theory |  |  |
+| 2003 | [`Erdos968.erdos_968.variants.decreasing_steps_pos_lower_density`](https://lefttosolve.com/p/Erdos968.erdos_968.variants.decreasing_steps_pos_lower_density) | Erdős Problem 968 — decreasing steps pos lower density | known | Number Theory |  | yes |
 | 2004 | [`Erdos968.erdos_968.variants.infinite_decreasingTriples`](https://lefttosolve.com/p/Erdos968.erdos_968.variants.infinite_decreasingTriples) | Erdős Problem 968 — infinite decreasingTriples | known | Number Theory |  |  |
 | 2005 | [`Erdos968.erdos_968.variants.infinite_increasingTriples`](https://lefttosolve.com/p/Erdos968.erdos_968.variants.infinite_increasingTriples) | Erdős Problem 968 — infinite increasingTriples | known | Number Theory |  |  |
-| 2006 | [`Erdos968.erdos_968.variants.sum_abs_diff_isTheta_log_sq`](https://lefttosolve.com/p/Erdos968.erdos_968.variants.sum_abs_diff_isTheta_log_sq) | Erdős Problem 968 — sum abs diff isTheta log sq | known | Number Theory |  |  |
+| 2006 | [`Erdos968.erdos_968.variants.sum_abs_diff_isTheta_log_sq`](https://lefttosolve.com/p/Erdos968.erdos_968.variants.sum_abs_diff_isTheta_log_sq) | Erdős Problem 968 — sum abs diff isTheta log sq | known | Number Theory |  | yes |
 | 2007 | [`Erdos969.erdos_969`](https://lefttosolve.com/p/Erdos969.erdos_969) | Erdős Problem 969 | open | Number Theory |  |  |
-| 2008 | [`Erdos969.erdos_969.variants.evelyn_linfoot`](https://lefttosolve.com/p/Erdos969.erdos_969.variants.evelyn_linfoot) | Erdős Problem 969 — evelyn linfoot | known | Number Theory |  |  |
-| 2009 | [`Erdos969.erdos_969.variants.prime_number_theorem`](https://lefttosolve.com/p/Erdos969.erdos_969.variants.prime_number_theorem) | Erdős Problem 969 — prime number theorem | known | Number Theory |  |  |
+| 2008 | [`Erdos969.erdos_969.variants.evelyn_linfoot`](https://lefttosolve.com/p/Erdos969.erdos_969.variants.evelyn_linfoot) | Erdős Problem 969 — evelyn linfoot | known | Number Theory |  | yes |
+| 2009 | [`Erdos969.erdos_969.variants.prime_number_theorem`](https://lefttosolve.com/p/Erdos969.erdos_969.variants.prime_number_theorem) | Erdős Problem 969 — prime number theorem | known | Number Theory |  | yes |
 | 2010 | [`Erdos97.erdos_97`](https://lefttosolve.com/p/Erdos97.erdos_97) | Erdős Problem 97 | known | Convex & Discrete Geometry | $100 | yes |
-| 2011 | [`Erdos97.erdos_97.variants.k_equidistant`](https://lefttosolve.com/p/Erdos97.erdos_97.variants.k_equidistant) | Erdős Problem 97 — k equidistant | open | Convex & Discrete Geometry | $100 |  |
+| 2011 | [`Erdos97.erdos_97.variants.k_equidistant`](https://lefttosolve.com/p/Erdos97.erdos_97.variants.k_equidistant) | Erdős Problem 97 — k equidistant | open | Convex & Discrete Geometry | $100 | yes |
 | 2012 | [`Erdos97.erdos_97.variants.three_unit_distance`](https://lefttosolve.com/p/Erdos97.erdos_97.variants.three_unit_distance) | Erdős Problem 97 — three unit distance | known | Convex & Discrete Geometry | $100 | yes |
-| 2013 | [`Erdos97.erdos_97.variants.three_unit_distance_cut_min`](https://lefttosolve.com/p/Erdos97.erdos_97.variants.three_unit_distance_cut_min) | Erdős Problem 97 — three unit distance cut min | known | Convex & Discrete Geometry | $100 |  |
+| 2013 | [`Erdos97.erdos_97.variants.three_unit_distance_cut_min`](https://lefttosolve.com/p/Erdos97.erdos_97.variants.three_unit_distance_cut_min) | Erdős Problem 97 — three unit distance cut min | known | Convex & Discrete Geometry | $100 | yes |
 | 2014 | [`Erdos971.erdos_971`](https://lefttosolve.com/p/Erdos971.erdos_971) | Erdős Problem 971 | open | Number Theory |  |  |
-| 2015 | [`Erdos971.erdos_971.variants.infinite_sequence`](https://lefttosolve.com/p/Erdos971.erdos_971.variants.infinite_sequence) | Erdős Problem 971 — infinite sequence | known | Number Theory |  |  |
-| 2016 | [`Erdos971.erdos_971.variants.many_small`](https://lefttosolve.com/p/Erdos971.erdos_971.variants.many_small) | Erdős Problem 971 — many small | known | Number Theory |  |  |
+| 2015 | [`Erdos971.erdos_971.variants.infinite_sequence`](https://lefttosolve.com/p/Erdos971.erdos_971.variants.infinite_sequence) | Erdős Problem 971 — infinite sequence | known | Number Theory |  | yes |
+| 2016 | [`Erdos971.erdos_971.variants.many_small`](https://lefttosolve.com/p/Erdos971.erdos_971.variants.many_small) | Erdős Problem 971 — many small | known | Number Theory |  | yes |
 | 2017 | [`Erdos972.erdos_972`](https://lefttosolve.com/p/Erdos972.erdos_972) | Erdős problem 972. | open | Number Theory |  |  |
 | 2018 | [`Erdos973.erdos_973.variants.le_one`](https://lefttosolve.com/p/Erdos973.erdos_973.variants.le_one) | Erdős Problem 973 — le one | known | Number Theory |  | yes |
-| 2019 | [`Erdos973.erdos_973.variants.m2_bounds`](https://lefttosolve.com/p/Erdos973.erdos_973.variants.m2_bounds) | Erdős Problem 973 — m2 bounds | known | Number Theory |  |  |
+| 2019 | [`Erdos973.erdos_973.variants.m2_bounds`](https://lefttosolve.com/p/Erdos973.erdos_973.variants.m2_bounds) | Erdős Problem 973 — m2 bounds | known | Number Theory |  | yes |
 | 2020 | [`Erdos973.erdos_973.variants.tang`](https://lefttosolve.com/p/Erdos973.erdos_973.variants.tang) | Erdős Problem 973 — tang | known | Number Theory |  | yes |
-| 2021 | [`Erdos974.erdos_974.variants.two_tuples`](https://lefttosolve.com/p/Erdos974.erdos_974.variants.two_tuples) | Erdős Problem 974 — two tuples | known | Complex Analysis, Number Theory |  |  |
+| 2021 | [`Erdos974.erdos_974.variants.two_tuples`](https://lefttosolve.com/p/Erdos974.erdos_974.variants.two_tuples) | Erdős Problem 974 — two tuples | known | Complex Analysis, Number Theory |  | yes |
 | 2022 | [`Erdos975.erdos_975`](https://lefttosolve.com/p/Erdos975.erdos_975) | Erdős Problem 975 | open | Number Theory |  |  |
-| 2023 | [`Erdos975.erdos_975.variants.lower_bound`](https://lefttosolve.com/p/Erdos975.erdos_975.variants.lower_bound) | Erdős Problem 975 — lower bound | known | Number Theory |  |  |
+| 2023 | [`Erdos975.erdos_975.variants.lower_bound`](https://lefttosolve.com/p/Erdos975.erdos_975.variants.lower_bound) | Erdős Problem 975 — lower bound | known | Number Theory |  | yes |
 | 2024 | [`Erdos975.erdos_975.variants.n2_plus_1`](https://lefttosolve.com/p/Erdos975.erdos_975.variants.n2_plus_1) | Erdős Problem 975 — n2 plus 1 | known | Number Theory |  | yes |
-| 2025 | [`Erdos975.erdos_975.variants.n2_plus_1_strong`](https://lefttosolve.com/p/Erdos975.erdos_975.variants.n2_plus_1_strong) | Erdős Problem 975 — n2 plus 1 strong | known | Number Theory |  |  |
+| 2025 | [`Erdos975.erdos_975.variants.n2_plus_1_strong`](https://lefttosolve.com/p/Erdos975.erdos_975.variants.n2_plus_1_strong) | Erdős Problem 975 — n2 plus 1 strong | known | Number Theory |  | yes |
 | 2026 | [`Erdos975.erdos_975.variants.quadratic`](https://lefttosolve.com/p/Erdos975.erdos_975.variants.quadratic) | Erdős Problem 975 — quadratic | known | Number Theory |  |  |
-| 2027 | [`Erdos975.erdos_975.variants.upper_bound`](https://lefttosolve.com/p/Erdos975.erdos_975.variants.upper_bound) | Erdős Problem 975 — upper bound | known | Number Theory |  |  |
+| 2027 | [`Erdos975.erdos_975.variants.upper_bound`](https://lefttosolve.com/p/Erdos975.erdos_975.variants.upper_bound) | Erdős Problem 975 — upper bound | known | Number Theory |  | yes |
 | 2028 | [`Erdos976.erdos_976`](https://lefttosolve.com/p/Erdos976.erdos_976) | Erdős Problem 976 | open | Number Theory |  |  |
 | 2029 | [`Erdos976.erdos_976.parts.i`](https://lefttosolve.com/p/Erdos976.erdos_976.parts.i) | Erdős Problem 976 — i | open | Number Theory |  |  |
 | 2030 | [`Erdos976.erdos_976.parts.ii`](https://lefttosolve.com/p/Erdos976.erdos_976.parts.ii) | Erdős Problem 976 — ii | open | Number Theory |  |  |
 | 2031 | [`Erdos976.erdos_976.variants.erdos`](https://lefttosolve.com/p/Erdos976.erdos_976.variants.erdos) | Erdős Problem 976 — erdos | known | Number Theory |  |  |
-| 2032 | [`Erdos976.erdos_976.variants.nagell_ricci`](https://lefttosolve.com/p/Erdos976.erdos_976.variants.nagell_ricci) | Erdős Problem 976 — nagell ricci | known | Number Theory |  |  |
+| 2032 | [`Erdos976.erdos_976.variants.nagell_ricci`](https://lefttosolve.com/p/Erdos976.erdos_976.variants.nagell_ricci) | Erdős Problem 976 — nagell ricci | known | Number Theory |  | yes |
 | 2033 | [`Erdos976.erdos_976.variants.tenenbaum`](https://lefttosolve.com/p/Erdos976.erdos_976.variants.tenenbaum) | Erdős Problem 976 — tenenbaum | known | Number Theory |  |  |
 | 2034 | [`Erdos977.erdos_977.variants.factorial`](https://lefttosolve.com/p/Erdos977.erdos_977.variants.factorial) | Erdős Problem 977 — factorial | open | Number Theory |  |  |
 | 2035 | [`Erdos977.erdos_977.variants.lai`](https://lefttosolve.com/p/Erdos977.erdos_977.variants.lai) | Erdős Problem 977 — lai | known | Number Theory |  |  |
-| 2036 | [`Erdos977.erdos_977.variants.schinzel`](https://lefttosolve.com/p/Erdos977.erdos_977.variants.schinzel) | Erdős Problem 977 — schinzel | known | Number Theory |  |  |
+| 2036 | [`Erdos977.erdos_977.variants.schinzel`](https://lefttosolve.com/p/Erdos977.erdos_977.variants.schinzel) | Erdős Problem 977 — schinzel | known | Number Theory |  | yes |
 | 2037 | [`Erdos977.erdos_977.variants.stewart`](https://lefttosolve.com/p/Erdos977.erdos_977.variants.stewart) | Erdős Problem 977 — stewart | known | Number Theory |  |  |
 | 2038 | [`Erdos978.erdos_978.parts.i`](https://lefttosolve.com/p/Erdos978.erdos_978.parts.i) | Erdős Problem 978 — i | known | Number Theory |  |  |
 | 2039 | [`Erdos978.erdos_978.variants.sub_one`](https://lefttosolve.com/p/Erdos978.erdos_978.variants.sub_one) | Erdős Problem 978 — sub one | known | Number Theory |  |  |
-| 2040 | [`Erdos978.erdos_978.variants.sub_two`](https://lefttosolve.com/p/Erdos978.erdos_978.variants.sub_two) | Erdős Problem 978 — sub two | known | Number Theory |  |  |
+| 2040 | [`Erdos978.erdos_978.variants.sub_two`](https://lefttosolve.com/p/Erdos978.erdos_978.variants.sub_two) | Erdős Problem 978 — sub two | known | Number Theory |  | yes |
 | 2041 | [`Erdos979.erdos_979`](https://lefttosolve.com/p/Erdos979.erdos_979) | Erdős Problem 979 | open | Number Theory |  |  |
-| 2042 | [`Erdos979.erdos_979.variants.k2`](https://lefttosolve.com/p/Erdos979.erdos_979.variants.k2) | Erdős Problem 979 — k2 | known | Number Theory |  |  |
+| 2042 | [`Erdos979.erdos_979.variants.k2`](https://lefttosolve.com/p/Erdos979.erdos_979.variants.k2) | Erdős Problem 979 — k2 | known | Number Theory |  | yes |
 | 2043 | [`Erdos98.erdos_98`](https://lefttosolve.com/p/Erdos98.erdos_98) | Erdős Problem 98 | open | Convex & Discrete Geometry |  |  |
 | 2044 | [`Erdos98.erdos_98.variants.upper_bound`](https://lefttosolve.com/p/Erdos98.erdos_98.variants.upper_bound) | Erdős Problem 98 — upper bound | known | Convex & Discrete Geometry |  | yes |
 | 2045 | [`Erdos980.erdos_980`](https://lefttosolve.com/p/Erdos980.erdos_980) | Erdős Problem 980 | known | Number Theory |  |  |
-| 2046 | [`Erdos980.erdos_980.variants.erdos_two`](https://lefttosolve.com/p/Erdos980.erdos_980.variants.erdos_two) | Erdős Problem 980 — erdos two | known | Number Theory |  |  |
+| 2046 | [`Erdos980.erdos_980.variants.erdos_two`](https://lefttosolve.com/p/Erdos980.erdos_980.variants.erdos_two) | Erdős Problem 980 — erdos two | known | Number Theory |  | yes |
 | 2047 | [`Erdos981.erdos_981.variants.first_time`](https://lefttosolve.com/p/Erdos981.erdos_981.variants.first_time) | Erdős Problem 981 — first time | known | Number Theory |  |  |
 | 2048 | [`Erdos982.erdos_982`](https://lefttosolve.com/p/Erdos982.erdos_982) | Erdős Problem 982 | open | Convex & Discrete Geometry |  |  |
 | 2049 | [`Erdos983.erdos_983.parts.i`](https://lefttosolve.com/p/Erdos983.erdos_983.parts.i) | Erdős Problem 983 — i | known | Number Theory |  | yes |
 | 2050 | [`Erdos983.erdos_983.parts.ii`](https://lefttosolve.com/p/Erdos983.erdos_983.parts.ii) | Erdős Problem 983 — ii | open | Number Theory |  |  |
-| 2051 | [`Erdos983.erdos_983.variants.erdos_straus`](https://lefttosolve.com/p/Erdos983.erdos_983.variants.erdos_straus) | Erdős Problem 983 — erdos straus | known | Number Theory |  |  |
+| 2051 | [`Erdos983.erdos_983.variants.erdos_straus`](https://lefttosolve.com/p/Erdos983.erdos_983.variants.erdos_straus) | Erdős Problem 983 — erdos straus | known | Number Theory |  | yes |
 | 2052 | [`Erdos983.erdos_983.variants.upper_bound`](https://lefttosolve.com/p/Erdos983.erdos_983.variants.upper_bound) | Erdős Problem 983 — upper bound | known | Number Theory |  | yes |
 | 2053 | [`Erdos985.erdos_985`](https://lefttosolve.com/p/Erdos985.erdos_985) | Erdős Problem 985 | known | Number Theory |  |  |
 | 2054 | [`Erdos985.erdos_985.variants.two_three_five_primitive_root`](https://lefttosolve.com/p/Erdos985.erdos_985.variants.two_three_five_primitive_root) | Erdős Problem 985 — two three five primitive root | known | Number Theory |  |  |
 | 2055 | [`Erdos99.erdos_99`](https://lefttosolve.com/p/Erdos99.erdos_99) | Erdős Problem 99 | open | Convex & Discrete Geometry | $100 |  |
 | 2056 | [`Erdos990.erdos_990.variants.counterexample`](https://lefttosolve.com/p/Erdos990.erdos_990.variants.counterexample) | Erdős Problem 990 — counterexample | known | Complex Analysis, Field Theory |  | yes |
-| 2057 | [`Erdos990.erdos_990.variants.erdos_turan`](https://lefttosolve.com/p/Erdos990.erdos_990.variants.erdos_turan) | Erdős Problem 990 — erdos turan | known | Complex Analysis, Field Theory |  |  |
+| 2057 | [`Erdos990.erdos_990.variants.erdos_turan`](https://lefttosolve.com/p/Erdos990.erdos_990.variants.erdos_turan) | Erdős Problem 990 — erdos turan | known | Complex Analysis, Field Theory |  | yes |
 | 2058 | [`Erdos990.erdos_990.variants.hayman`](https://lefttosolve.com/p/Erdos990.erdos_990.variants.hayman) | Erdős Problem 990 — hayman | known | Complex Analysis, Field Theory |  | yes |
-| 2059 | [`Erdos994.erdos_994`](https://lefttosolve.com/p/Erdos994.erdos_994) | Erdős Problem 994 | known | Measure & Integration, Number Theory |  |  |
-| 2060 | [`Erdos995.erdos_995`](https://lefttosolve.com/p/Erdos995.erdos_995) | Erdős Problem 995 | open | Harmonic Analysis, Number Theory |  |  |
-| 2061 | [`Erdos995.erdos_995.variants.erdos_lower_bound`](https://lefttosolve.com/p/Erdos995.erdos_995.variants.erdos_lower_bound) | Erdős Problem 995 — erdos lower bound | known | Harmonic Analysis, Number Theory |  |  |
-| 2062 | [`Erdos996.erdos_996`](https://lefttosolve.com/p/Erdos996.erdos_996) | Erdős Problem 996 | open | Harmonic Analysis |  |  |
-| 2063 | [`Erdos996.erdos_996.variants.log2`](https://lefttosolve.com/p/Erdos996.erdos_996.variants.log2) | Erdős Problem 996 — log2 | known | Harmonic Analysis |  |  |
+| 2059 | [`Erdos994.erdos_994`](https://lefttosolve.com/p/Erdos994.erdos_994) | Erdős Problem 994 | known | Measure & Integration, Number Theory |  | yes |
+| 2060 | [`Erdos995.erdos_995`](https://lefttosolve.com/p/Erdos995.erdos_995) | Erdős Problem 995 | open | Harmonic Analysis, Number Theory |  | yes |
+| 2061 | [`Erdos995.erdos_995.variants.erdos_lower_bound`](https://lefttosolve.com/p/Erdos995.erdos_995.variants.erdos_lower_bound) | Erdős Problem 995 — erdos lower bound | known | Harmonic Analysis, Number Theory |  | yes |
+| 2062 | [`Erdos996.erdos_996`](https://lefttosolve.com/p/Erdos996.erdos_996) | Erdős Problem 996 | open | Harmonic Analysis |  | yes |
+| 2063 | [`Erdos996.erdos_996.variants.log2`](https://lefttosolve.com/p/Erdos996.erdos_996.variants.log2) | Erdős Problem 996 — log2 | known | Harmonic Analysis |  | yes |
 | 2064 | [`Erdos997.erdos_997.variants.irrational`](https://lefttosolve.com/p/Erdos997.erdos_997.variants.irrational) | Erdős Problem 997 — irrational | known | Number Theory |  |  |
 | 2065 | [`Erdos997.erdos_997.variants.lacunary`](https://lefttosolve.com/p/Erdos997.erdos_997.variants.lacunary) | Erdős Problem 997 — lacunary | known | Number Theory |  | yes |
-| 2066 | [`Erdos999.erdos_999`](https://lefttosolve.com/p/Erdos999.erdos_999) | Erdős Problem 999 | known | Number Theory |  |  |
+| 2066 | [`Erdos999.erdos_999`](https://lefttosolve.com/p/Erdos999.erdos_999) | Erdős Problem 999 | known | Number Theory |  | yes |
 | 2067 | [`Erdos999.erdos_999.variants.easy_direction`](https://lefttosolve.com/p/Erdos999.erdos_999.variants.easy_direction) | Erdős Problem 999 — easy direction | warmup | Number Theory |  | yes |
-| 2068 | [`Erdos999.erdos_999.variants.erdos`](https://lefttosolve.com/p/Erdos999.erdos_999.variants.erdos) | Erdős Problem 999 — erdos | known | Number Theory |  |  |
+| 2068 | [`Erdos999.erdos_999.variants.erdos`](https://lefttosolve.com/p/Erdos999.erdos_999.variants.erdos) | Erdős Problem 999 — erdos | known | Number Theory |  | yes |

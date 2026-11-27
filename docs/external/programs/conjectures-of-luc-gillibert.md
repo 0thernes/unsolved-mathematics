@@ -14,12 +14,12 @@
 
 [Program page](https://lefttosolve.com/programs/Conjectures%20of%20Luc%20Gillibert) · Open problems stated in research papers and books.
 
-Targets 3 · open 3 · solved by kind (site claim): `0` · kinds open/known/warmup/unformalized/other = 0/0/0/3/0 · snapshot `f1bcc922a11d5418` (`2026-11-27T05:46:57Z`).
+Targets 3 · open 3 · solved by kind (site claim): `open: 1` · kinds open/known/warmup/unformalized/other = 3/0/0/0/0 · snapshot `7cb07abf0cea37cb` (`2026-11-27T17:43:57Z`).
 
 Back to [all programs](../PROGRAMS.md).
 
 | # | Item id | Title | Kind | Fields | Prize | Site-solved flag |
 |---:|---|---|---|---|---|---|
-| 1 | [`gillibert-equal-halves`](https://lefttosolve.com/p/gillibert-equal-halves) | Equal halves conjecture (vertex-transitive graphs) | unformalized | Combinatorics, Group Theory |  |  |
-| 2 | [`gillibert-fair-traversal`](https://lefttosolve.com/p/gillibert-fair-traversal) | Fair traversal conjecture (Hamiltonian paths in vertex-transitive graphs) | unformalized | Combinatorics |  |  |
-| 3 | [`gillibert-geodesic-deletion`](https://lefttosolve.com/p/gillibert-geodesic-deletion) | Geodesic deletion conjecture (vertex-transitive graphs) | unformalized | Combinatorics |  |  |
+| 1 | [`gillibert-equal-halves`](https://lefttosolve.com/p/gillibert-equal-halves) | Equal halves conjecture (vertex-transitive graphs) | open | Combinatorics, Group Theory |  | yes |
+| 2 | [`gillibert-fair-traversal`](https://lefttosolve.com/p/gillibert-fair-traversal) | Fair traversal conjecture (Hamiltonian paths in vertex-transitive graphs) | open | Combinatorics |  |  |
+| 3 | [`gillibert-geodesic-deletion`](https://lefttosolve.com/p/gillibert-geodesic-deletion) | Geodesic deletion conjecture (vertex-transitive graphs) | open | Combinatorics |  |  |

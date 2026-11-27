@@ -1,5 +1,3 @@
-{"fields": ["General Algebra"], "id": "mo-396154", "kind": "unformalized", "prize": null, "solved": false, "title": "Unbounded derived Nakayama lemma"}
-{"fields": ["Algebraic Geometry"], "id": "mo-396168", "kind": "unformalized", "prize": null, "solved": false, "title": "Full Exceptional Collection of Vector Bundles for Toric Varieties"}
 {"fields": ["Differential Geometry"], "id": "mo-39617", "kind": "unformalized", "prize": null, "solved": false, "title": "Geodesic confluence as witness to a local extrinsic bound"}
 {"fields": ["Differential Geometry", "General Topology"], "id": "mo-396173", "kind": "unformalized", "prize": null, "solved": false, "title": "planar linkage isomorphic to an exotic sphere"}
 {"fields": ["Algebraic Geometry"], "id": "mo-396178", "kind": "unformalized", "prize": null, "solved": false, "title": "Torsors for nonabelian groups and maps to contracted products"}
@@ -37,7 +35,7 @@
 {"fields": ["Harmonic Analysis"], "id": "mo-396478", "kind": "unformalized", "prize": null, "solved": false, "title": "Existence and uniqueness of solution of a nonlinear system"}
 {"fields": ["Uncategorised"], "id": "mo-396490", "kind": "unformalized", "prize": null, "solved": false, "title": "Uniform distribution of log(log((n!)!)) mod 1"}
 {"fields": ["Harmonic Analysis", "Operator Theory"], "id": "mo-396492", "kind": "unformalized", "prize": null, "solved": false, "title": "Fermat's Last Theorem (FLT) in standard model space corresponding to an infinite Blaschke product"}
-{"fields": ["Probability"], "id": "mo-396509", "kind": "unformalized", "prize": null, "solved": false, "title": "An inequality for three iid random variables with a log-concave density"}
+{"fields": ["Probability"], "id": "mo-396509", "kind": "open", "prize": null, "solved": true, "title": "An inequality for three iid random variables with a log-concave density"}
 {"fields": ["Number Theory"], "id": "mo-396510", "kind": "unformalized", "prize": null, "solved": false, "title": "Eichler-Shimura isomorphism as simple $(k-1)$-fold integration?"}
 {"fields": ["Operator Theory", "Real Functions"], "id": "mo-396520", "kind": "unformalized", "prize": null, "solved": false, "title": "Does the weak formulation of a parabolic PDE applies to a (good) non-test function?"}
 {"fields": ["General Algebra"], "id": "mo-396525", "kind": "unformalized", "prize": null, "solved": false, "title": "How quickly can irreducible aperiodic convex combinations of permutation matrices converge to the stationary distribution?"}
@@ -934,7 +932,7 @@
 {"fields": ["Harmonic Analysis"], "id": "mo-407189", "kind": "unformalized", "prize": null, "solved": false, "title": "Are Poisson integrals uniquely determined by their radial limits?"}
 {"fields": ["Number Theory"], "id": "mo-407205", "kind": "unformalized", "prize": null, "solved": false, "title": "Numbers made up of primes from a given set"}
 {"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "mo-407222", "kind": "unformalized", "prize": null, "solved": false, "title": "What is the average component size of a coloring?"}
-{"fields": ["Combinatorics"], "id": "mo-407245", "kind": "unformalized", "prize": null, "solved": false, "title": "Minimum number of partitions of a set such that the same pair must occur in a block in at least half of them"}
+{"fields": ["Combinatorics"], "id": "mo-407245", "kind": "open", "prize": null, "solved": true, "title": "Minimum number of partitions of a set such that the same pair must occur in a block in at least half of them"}
 {"fields": ["Differential Geometry", "Operator Theory"], "id": "mo-407247", "kind": "unformalized", "prize": null, "solved": false, "title": "Are smooth functions with compact support a core for the Laplacian on compact manifolds with boundary?"}
 {"fields": ["Number Theory"], "id": "mo-40725", "kind": "unformalized", "prize": null, "solved": false, "title": "Base locus of divisors on blowings up of the projective space"}
 {"fields": ["Algebraic Geometry"], "id": "mo-407255", "kind": "unformalized", "prize": null, "solved": false, "title": "Conics on Gushel-Mukai fourfold"}
@@ -1299,7 +1297,7 @@
 {"fields": ["Algebraic Geometry"], "id": "mo-410633", "kind": "unformalized", "prize": null, "solved": false, "title": "Derived Chow varieties"}
 {"fields": ["Algebraic Geometry", "General Algebra"], "id": "mo-410652", "kind": "unformalized", "prize": null, "solved": false, "title": "Relation between push forward by diagonal morphism and higher direct image functors"}
 {"fields": ["Operator Theory"], "id": "mo-410654", "kind": "unformalized", "prize": null, "solved": false, "title": "Multiplier on a Sobolev space"}
-{"fields": ["Combinatorics", "Computational Complexity"], "id": "mo-410663", "kind": "unformalized", "prize": null, "solved": false, "title": "Upper bound on the number of perfect matchings in $K_{3,3}$-free graphs"}
+{"fields": ["Combinatorics", "Computational Complexity"], "id": "mo-410663", "kind": "open", "prize": null, "solved": true, "title": "Upper bound on the number of perfect matchings in $K_{3,3}$-free graphs"}
 {"fields": ["General Topology"], "id": "mo-410674", "kind": "unformalized", "prize": null, "solved": false, "title": "Does $K(n)$ detect minimal $K(n)$-local cell structures?"}
 {"fields": ["Number Theory"], "id": "mo-410679", "kind": "unformalized", "prize": null, "solved": false, "title": "Is the absolute Galois group $\\text{Gal}(\\bar K/K)$ isomorphic to $\\text{Gal}(K(S)/K)$?"}
 {"fields": ["Convex & Discrete Geometry", "Differential Geometry"], "id": "mo-41068", "kind": "unformalized", "prize": null, "solved": false, "title": "Are packing-homogeneous spaces homogeneous?"}
@@ -2455,7 +2453,7 @@
 {"fields": ["Algebraic Geometry", "Number Theory"], "id": "mo-423071", "kind": "unformalized", "prize": null, "solved": false, "title": "Affine GIT quotients and the excursion algebra in Fargues–Scholze"}
 {"fields": ["Group Theory", "Probability"], "id": "mo-423090", "kind": "unformalized", "prize": null, "solved": false, "title": "A system of linear equations with way too many unknowns — constructing a bivariate distribution from marginals and \"the diagonal\""}
 {"fields": ["Differential Geometry", "Operator Theory"], "id": "mo-423095", "kind": "unformalized", "prize": null, "solved": false, "title": "Is the range of the exterior covariant derivative closed in $L^{2}$?"}
-{"fields": ["Computational Complexity"], "id": "mo-423115", "kind": "unformalized", "prize": null, "solved": false, "title": "Two-player item picking game"}
+{"fields": ["Computational Complexity"], "id": "mo-423115", "kind": "open", "prize": null, "solved": false, "title": "Two-player item picking game"}
 {"fields": ["Differential Geometry", "General Algebra"], "id": "mo-423121", "kind": "unformalized", "prize": null, "solved": false, "title": "Algebras which admit tensor calculus and (pseudo-)Riemannian geometry"}
 {"fields": ["Group Theory"], "id": "mo-423122", "kind": "unformalized", "prize": null, "solved": false, "title": "Fusing the $\\mathrm{PGL}(2,11)$ conjugacy classes of $\\mathrm{Aut}(M_{12})$"}
 {"fields": ["Algebraic Geometry"], "id": "mo-423123", "kind": "unformalized", "prize": null, "solved": false, "title": "When is maximal analytic continuation a Zariski open set?"}
@@ -3571,7 +3569,7 @@
 {"fields": ["Algebraic Geometry", "Number Theory"], "id": "mo-433837", "kind": "unformalized", "prize": null, "solved": false, "title": "Can you determine the least degree of a morphism between algebraic curves?"}
 {"fields": ["Algebraic Geometry"], "id": "mo-433840", "kind": "unformalized", "prize": null, "solved": false, "title": "Do algebraic tori have no $H^1$?"}
 {"fields": ["General Topology"], "id": "mo-433846", "kind": "unformalized", "prize": null, "solved": false, "title": "Presentation of handlebody mapping class group"}
-{"fields": ["Number Theory"], "id": "mo-433862", "kind": "unformalized", "prize": null, "solved": false, "title": "Do primes of the form $4k+1$ ever lead the greatest prime factor race?"}
+{"fields": ["Number Theory"], "id": "mo-433862", "kind": "open", "prize": null, "solved": false, "title": "Do primes of the form $4k+1$ ever lead the greatest prime factor race?"}
 {"fields": ["General Topology"], "id": "mo-433893", "kind": "unformalized", "prize": null, "solved": false, "title": "Long exact sequence in Borel-Moore homology"}
 {"fields": ["Algebraic Geometry", "General Algebra"], "id": "mo-433894", "kind": "unformalized", "prize": null, "solved": false, "title": "Epimorphisms and quotients in Sch versus $\\mathrm{Sh}(\\mathrm{Ring}^{\\mathrm{op}},\\mathrm{Zar})$"}
 {"fields": ["Differential Geometry"], "id": "mo-433914", "kind": "unformalized", "prize": null, "solved": false, "title": "Maximum symmetry metric on irreducible compact symmetric space"}
@@ -4152,7 +4150,7 @@
 {"fields": ["Convex & Discrete Geometry", "General Topology"], "id": "mo-439867", "kind": "unformalized", "prize": null, "solved": false, "title": "Does this \"join-like complex\" of $K_5$ and $K_3$ embed in $\\Bbb R^4$?"}
 {"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "mo-439875", "kind": "unformalized", "prize": null, "solved": false, "title": "Toric decomposition of multipartitions"}
 {"fields": ["Harmonic Analysis", "Real Functions"], "id": "mo-439891", "kind": "unformalized", "prize": null, "solved": false, "title": "Uniqueness of a second order linear ode"}
-{"fields": ["Number Theory"], "id": "mo-439892", "kind": "unformalized", "prize": null, "solved": false, "title": "Is the Goldbach conjecture easier if we allow 1 as a prime?"}
+{"fields": ["Number Theory"], "id": "mo-439892", "kind": "open", "prize": null, "solved": false, "title": "Is the Goldbach conjecture easier if we allow 1 as a prime?"}
 {"fields": ["Logic & Foundations", "Probability"], "id": "mo-439903", "kind": "unformalized", "prize": null, "solved": false, "title": "Relationship between measure theory and quantification"}
 {"fields": ["Algebraic Geometry", "General Algebra"], "id": "mo-439908", "kind": "unformalized", "prize": null, "solved": false, "title": "Getting an equivariant morphism"}
 {"fields": ["Uncategorised"], "id": "mo-439915", "kind": "unformalized", "prize": null, "solved": false, "title": "Evolution equation in renormalization group for infinitely-many variables"}
@@ -5037,7 +5035,7 @@
 {"fields": ["Uncategorised"], "id": "mo-448771", "kind": "unformalized", "prize": null, "solved": false, "title": "Nerve functor for symmetric monoidal category"}
 {"fields": ["Dynamical Systems", "Harmonic Analysis"], "id": "mo-448773", "kind": "unformalized", "prize": null, "solved": false, "title": "Can a 4D spacecraft, with just a single rigid thruster, achieve any rotational velocity?"}
 {"fields": ["Probability"], "id": "mo-448775", "kind": "unformalized", "prize": null, "solved": false, "title": "Why wavelet methods are not popular anymore in nonparametric statistics?"}
-{"fields": ["Operator Theory"], "id": "mo-448788", "kind": "unformalized", "prize": null, "solved": false, "title": "What is the standard groupoid model of the Cuntz algebra?"}
+{"fields": ["Operator Theory"], "id": "mo-448788", "kind": "open", "prize": null, "solved": true, "title": "What is the standard groupoid model of the Cuntz algebra?"}
 {"fields": ["Group Theory"], "id": "mo-448792", "kind": "unformalized", "prize": null, "solved": false, "title": "Conjugacy classes of $P\\Gamma L(2,q)$"}
 {"fields": ["Combinatorics", "General Algebra"], "id": "mo-448797", "kind": "unformalized", "prize": null, "solved": false, "title": "Root space inner products and the partial order on roots"}
 {"fields": ["General Algebra"], "id": "mo-448808", "kind": "unformalized", "prize": null, "solved": false, "title": "Correct notion of \"connected\" for dga of bundle-valued forms"}
@@ -6542,7 +6540,7 @@
 {"fields": ["Probability"], "id": "mo-465881", "kind": "unformalized", "prize": null, "solved": false, "title": "Brownian motion reflected at a trailing barrier"}
 {"fields": ["Combinatorics", "General Algebra"], "id": "mo-465882", "kind": "unformalized", "prize": null, "solved": false, "title": "Given a low-rank symmetric positive semidefinite matrix and a basis of its nullspace, is there a fast way to get the nonzero eigenvalues?"}
 {"fields": ["Combinatorics", "General Topology"], "id": "mo-465890", "kind": "unformalized", "prize": null, "solved": false, "title": "Subdivision via poset maps and pullback"}
-{"fields": ["Convex & Discrete Geometry", "Probability"], "id": "mo-465929", "kind": "unformalized", "prize": null, "solved": false, "title": "Are 1-Wasserstein and 2-Wasserstein distances between multivariate normal distributions equivalent?"}
+{"fields": ["Convex & Discrete Geometry", "Probability"], "id": "mo-465929", "kind": "open", "prize": null, "solved": false, "title": "Are 1-Wasserstein and 2-Wasserstein distances between multivariate normal distributions equivalent?"}
 {"fields": ["Operator Theory", "Real Functions"], "id": "mo-465941", "kind": "unformalized", "prize": null, "solved": false, "title": "Fractional powers of Dirichlet-to-Neumann map to derive estimate for PDE"}
 {"fields": ["Algebraic Geometry"], "id": "mo-465946", "kind": "unformalized", "prize": null, "solved": false, "title": "Is a derived scheme determined by classical + formal points?"}
 {"fields": ["Logic & Foundations"], "id": "mo-465954", "kind": "unformalized", "prize": null, "solved": false, "title": "Namba forcing, one Cardinal up"}
@@ -7570,7 +7568,7 @@
 {"fields": ["Convex & Discrete Geometry", "Differential Geometry"], "id": "mo-476567", "kind": "unformalized", "prize": null, "solved": false, "title": "Under what conditions do distances from pivot points uniquely identify a point on a manifold?"}
 {"fields": ["Computational Complexity", "General Algebra"], "id": "mo-47657", "kind": "unformalized", "prize": null, "solved": false, "title": "Differential ideal membership problem"}
 {"fields": ["Group Theory"], "id": "mo-476575", "kind": "unformalized", "prize": null, "solved": false, "title": "Stem extensions and quotients of Schur covers"}
-{"fields": ["Number Theory"], "id": "mo-476578", "kind": "unformalized", "prize": null, "solved": false, "title": "Is it true that $\\left\\{\\frac{\\sigma(n)}{\\varphi(n)}:\\ n\\in\\mathbb{Z}_{\\geq 1}\\right\\}=\\{r\\in\\mathbb Q:\\ r\\ge1\\}$?"}
+{"fields": ["Number Theory"], "id": "mo-476578", "kind": "open", "prize": null, "solved": false, "title": "Is it true that $\\left\\{\\frac{\\sigma(n)}{\\varphi(n)}:\\ n\\in\\mathbb{Z}_{\\geq 1}\\right\\}=\\{r\\in\\mathbb Q:\\ r\\ge1\\}$?"}
 {"fields": ["Harmonic Analysis"], "id": "mo-476585", "kind": "unformalized", "prize": null, "solved": false, "title": "Inclusion in Hardy-Smirnov spaces for the analytic continuation of a Cauchy-Type integral with a continuous boundary function"}
 {"fields": ["Logic & Foundations"], "id": "mo-476596", "kind": "unformalized", "prize": null, "solved": false, "title": "Realizing arithmetic hierarchy in algebraic number theory"}
 {"fields": ["Logic & Foundations"], "id": "mo-476597", "kind": "unformalized", "prize": null, "solved": false, "title": "Can a path in Kleene's $\\mathcal{O}$ enumerate all of the computable reals via uniform diagonalization?"}
@@ -7823,7 +7821,7 @@
 {"fields": ["Differential Geometry", "Harmonic Analysis"], "id": "mo-478860", "kind": "unformalized", "prize": null, "solved": false, "title": "Sobolev embedding theorems in vector bundles on non-compact manifolds"}
 {"fields": ["General Algebra"], "id": "mo-478867", "kind": "unformalized", "prize": null, "solved": false, "title": "2-category structure on Mod(R)"}
 {"fields": ["General Algebra"], "id": "mo-478879", "kind": "unformalized", "prize": null, "solved": false, "title": "When is a bimodule that is projective as a right and as a left module also projective as a bimodule"}
-{"fields": ["Probability"], "id": "mo-47888", "kind": "unformalized", "prize": null, "solved": false, "title": "Expectation, multinomial distribution, and monotonicity (A conjecture)"}
+{"fields": ["Probability"], "id": "mo-47888", "kind": "open", "prize": null, "solved": true, "title": "Expectation, multinomial distribution, and monotonicity (A conjecture)"}
 {"fields": ["Algebraic Geometry", "Number Theory"], "id": "mo-478885", "kind": "unformalized", "prize": null, "solved": false, "title": "When do we have $\\bigoplus_{i + j = n} R^i f_* \\mathbb{Q}_\\ell \\otimes_{\\mathbb{Q}_\\ell} R^j g_* \\mathbb{Q}_\\ell \\cong R^{i + j} h_* \\mathbb{Q}_\\ell$?"}
 {"fields": ["Group Theory", "Harmonic Analysis"], "id": "mo-478904", "kind": "unformalized", "prize": null, "solved": false, "title": "Monstrous moonshine, Dedekind eta function, and the hypergeometric function"}
 {"fields": ["General Topology"], "id": "mo-478910", "kind": "unformalized", "prize": null, "solved": false, "title": "Can every orientation preserving homeomorphism of a manifold isotoped to be identity on a locally flat embedded disk?"}
@@ -7882,7 +7880,7 @@
 {"fields": ["Algebraic Geometry", "General Algebra"], "id": "mo-479396", "kind": "unformalized", "prize": null, "solved": false, "title": "What is the equivalent of Artin gluing for quasicoherent sheaves?"}
 {"fields": ["Uncategorised"], "id": "mo-479400", "kind": "unformalized", "prize": null, "solved": false, "title": "Is there a matrix that has the completely opposite effect of a Hadamard matrix?"}
 {"fields": ["Probability"], "id": "mo-479412", "kind": "unformalized", "prize": null, "solved": false, "title": "Discrete random walk in an expanding cage (i.e. in a growing domain)"}
-{"fields": ["Number Theory"], "id": "mo-479419", "kind": "unformalized", "prize": null, "solved": false, "title": "Is $2\\uparrow\\uparrow\\infty + 3$ divisible by a prime number?"}
+{"fields": ["Number Theory"], "id": "mo-479419", "kind": "open", "prize": null, "solved": false, "title": "Is $2\\uparrow\\uparrow\\infty + 3$ divisible by a prime number?"}
 {"fields": ["Number Theory"], "id": "mo-47942", "kind": "unformalized", "prize": null, "solved": false, "title": "Nonnegative to Positive Curvature."}
 {"fields": ["General Topology"], "id": "mo-479433", "kind": "unformalized", "prize": null, "solved": false, "title": "A problem on the box topology"}
 {"fields": ["Probability"], "id": "mo-479441", "kind": "unformalized", "prize": null, "solved": false, "title": "Distribution of this integral of Fourier multiplier"}
@@ -7967,7 +7965,7 @@
 {"fields": ["Operator Theory", "Real Functions"], "id": "mo-480155", "kind": "unformalized", "prize": null, "solved": false, "title": "Schwartz kernel of spectral projection of Laplacian and integrated density of states"}
 {"fields": ["Probability"], "id": "mo-480192", "kind": "unformalized", "prize": null, "solved": false, "title": "Parameters of Wishart distribution and generalized inverse"}
 {"fields": ["Algebraic Geometry", "General Algebra"], "id": "mo-480195", "kind": "unformalized", "prize": null, "solved": false, "title": "Phantoms and Geometry"}
-{"fields": ["General Algebra", "Operator Theory"], "id": "mo-480222", "kind": "unformalized", "prize": null, "solved": false, "title": "What are the Cuntz semigroups of the Cuntz algebras?"}
+{"fields": ["General Algebra", "Operator Theory"], "id": "mo-480222", "kind": "open", "prize": null, "solved": true, "title": "What are the Cuntz semigroups of the Cuntz algebras?"}
 {"fields": ["Harmonic Analysis"], "id": "mo-480236", "kind": "unformalized", "prize": null, "solved": false, "title": "Sobolev inequalities and Wiener algebra"}
 {"fields": ["Operator Theory", "Real Functions"], "id": "mo-480241", "kind": "unformalized", "prize": null, "solved": false, "title": "Fredholm index of degenerate elliptic PDE"}
 {"fields": ["Algebraic Geometry", "General Algebra"], "id": "mo-480250", "kind": "unformalized", "prize": null, "solved": false, "title": "Lifting a morphism between quasi-projective varieties"}
@@ -8470,7 +8468,7 @@
 {"fields": ["Uncategorised"], "id": "mo-485160", "kind": "unformalized", "prize": null, "solved": false, "title": "What is the sum of the series $\\sum\\limits_{n=1}^{\\infty}\\frac{16n^{2}((2n-2)!!)^{2}n!}{4^{n}(3n)!}$?"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "mo-485162", "kind": "unformalized", "prize": null, "solved": false, "title": "Doubling or addition formulas for the central binomial coefficients $\\binom{2n}{n}$?"}
 {"fields": ["General Topology", "Harmonic Analysis"], "id": "mo-485163", "kind": "unformalized", "prize": null, "solved": false, "title": "When are such double maze puzzles solvable?"}
-{"fields": ["Number Theory"], "id": "mo-485166", "kind": "unformalized", "prize": null, "solved": false, "title": "Are there infinitely many cubes which are Goldbach numbers?"}
+{"fields": ["Number Theory"], "id": "mo-485166", "kind": "open", "prize": null, "solved": false, "title": "Are there infinitely many cubes which are Goldbach numbers?"}
 {"fields": ["Operator Theory"], "id": "mo-485169", "kind": "unformalized", "prize": null, "solved": false, "title": "Reflexive symmetrically amenable Banach algebra"}
 {"fields": ["Algebraic Geometry", "Number Theory"], "id": "mo-485170", "kind": "unformalized", "prize": null, "solved": false, "title": "Automorphic representations occurring in both degree $i$ and $i+1$"}
 {"fields": ["General Algebra", "Operator Theory"], "id": "mo-485192", "kind": "unformalized", "prize": null, "solved": false, "title": "Rigged Hilbert space and function of ultra-rapid decay"}
@@ -8699,7 +8697,7 @@
 {"fields": ["Number Theory"], "id": "mo-487180", "kind": "unformalized", "prize": null, "solved": false, "title": "Strict inequality among sums of floors"}
 {"fields": ["Combinatorics", "Logic & Foundations"], "id": "mo-487188", "kind": "unformalized", "prize": null, "solved": false, "title": "Degrees in infinite graphs $G$ with $G\\cong L(G)$"}
 {"fields": ["Combinatorics", "General Algebra"], "id": "mo-487192", "kind": "unformalized", "prize": null, "solved": false, "title": "Centraliser algebra of a poset"}
-{"fields": ["Combinatorics"], "id": "mo-487213", "kind": "unformalized", "prize": null, "solved": false, "title": "A well-quasi-ordering of finite interval orders?"}
+{"fields": ["Combinatorics"], "id": "mo-487213", "kind": "open", "prize": null, "solved": false, "title": "A well-quasi-ordering of finite interval orders?"}
 {"fields": ["Harmonic Analysis", "Number Theory"], "id": "mo-487221", "kind": "unformalized", "prize": null, "solved": false, "title": "Comparison between two infinite sums"}
 {"fields": ["Uncategorised"], "id": "mo-487226", "kind": "unformalized", "prize": null, "solved": false, "title": "Explicit chain map for coproduct in cyclic homology"}
 {"fields": ["General Topology"], "id": "mo-487232", "kind": "unformalized", "prize": null, "solved": false, "title": "Is the graph of a $W^{1,2}$-function path-connected?"}
@@ -8874,7 +8872,7 @@
 {"fields": ["Differential Geometry"], "id": "mo-488863", "kind": "unformalized", "prize": null, "solved": false, "title": "When are Hamiltonian symplectomorphisms in the derived subgroup"}
 {"fields": ["General Algebra"], "id": "mo-488864", "kind": "unformalized", "prize": null, "solved": false, "title": "Commuting with (homotopy) cosimplicial limits"}
 {"fields": ["Algebraic Geometry"], "id": "mo-48887", "kind": "unformalized", "prize": null, "solved": false, "title": "Geometric points in geometry agree with \"geometric points\" of the Zariski topos"}
-{"fields": ["Combinatorics"], "id": "mo-488874", "kind": "unformalized", "prize": null, "solved": false, "title": "Decomposing a multigraph into two subgraphs with condition on sum of maximum degrees"}
+{"fields": ["Combinatorics"], "id": "mo-488874", "kind": "open", "prize": null, "solved": false, "title": "Decomposing a multigraph into two subgraphs with condition on sum of maximum degrees"}
 {"fields": ["General Algebra", "Number Theory"], "id": "mo-488879", "kind": "unformalized", "prize": null, "solved": false, "title": "Upper bounds on the index of the Bhargava factorial"}
 {"fields": ["Algebraic Geometry"], "id": "mo-488898", "kind": "unformalized", "prize": null, "solved": false, "title": "Recovering line bundles using classical generator of $D^b(X)$"}
 {"fields": ["Dynamical Systems", "Group Theory"], "id": "mo-488911", "kind": "unformalized", "prize": null, "solved": false, "title": "Ergodicity and topological transitivity of surjective endomorphisms on compact metric groups"}
@@ -10325,7 +10323,7 @@
 {"fields": ["Combinatorics", "General Algebra"], "id": "mo-506584", "kind": "unformalized", "prize": null, "solved": false, "title": "Convexity of a sum involving Kostka numbers"}
 {"fields": ["Algebraic Geometry", "General Topology"], "id": "mo-506588", "kind": "unformalized", "prize": null, "solved": false, "title": "Etale homotopy type and anabelian reconstruction beyond $\\pi_1$"}
 {"fields": ["Combinatorics"], "id": "mo-506593", "kind": "unformalized", "prize": null, "solved": false, "title": "Concentrating sparsity by grouping adjacent terms"}
-{"fields": ["Combinatorics", "General Algebra"], "id": "mo-506603", "kind": "unformalized", "prize": null, "solved": false, "title": "Disjoint nonsingular matrix partition"}
+{"fields": ["Combinatorics", "General Algebra"], "id": "mo-506603", "kind": "open", "prize": null, "solved": true, "title": "Disjoint nonsingular matrix partition"}
 {"fields": ["Algebraic Geometry"], "id": "mo-506607", "kind": "unformalized", "prize": null, "solved": false, "title": "Defining the cotangent complex via equivalence classes of derived étale curves"}
 {"fields": ["Number Theory"], "id": "mo-50661", "kind": "unformalized", "prize": null, "solved": false, "title": "unboundedness of number of integral points on elliptic curves?"}
 {"fields": ["General Algebra", "Logic & Foundations"], "id": "mo-506611", "kind": "unformalized", "prize": null, "solved": false, "title": "Auslander-Reiten translation of an algebra viewed as a bimodule?"}
@@ -12997,7 +12995,7 @@
 {"fields": ["Harmonic Analysis"], "id": "mo-92969", "kind": "unformalized", "prize": null, "solved": false, "title": "harmonic function and MVP"}
 {"fields": ["General Algebra", "Group Theory"], "id": "mo-92986", "kind": "unformalized", "prize": null, "solved": false, "title": "Extensions of $Z/p$ by $Z/p$ and uniqueness of cokernels"}
 {"fields": ["Convex & Discrete Geometry"], "id": "mo-93008", "kind": "unformalized", "prize": null, "solved": false, "title": "The area of the intersection of convex sets with prescribed pairwise intersections"}
-{"fields": ["General Algebra"], "id": "mo-93022", "kind": "unformalized", "prize": null, "solved": false, "title": "connectivity in automata by words of length n-1"}
+{"fields": ["General Algebra"], "id": "mo-93022", "kind": "open", "prize": null, "solved": true, "title": "connectivity in automata by words of length n-1"}
 {"fields": ["Probability"], "id": "mo-93031", "kind": "unformalized", "prize": null, "solved": false, "title": "what books to read to quickly understand adiabatic approximation"}
 {"fields": ["Number Theory"], "id": "mo-93059", "kind": "unformalized", "prize": null, "solved": false, "title": "Structure of the algebra of mod $p$ modular forms"}
 {"fields": ["Logic & Foundations"], "id": "mo-93067", "kind": "unformalized", "prize": null, "solved": false, "title": "A least model contains a given model and a given set"}

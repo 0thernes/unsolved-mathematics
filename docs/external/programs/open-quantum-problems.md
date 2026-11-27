@@ -14,7 +14,7 @@
 
 [Program page](https://lefttosolve.com/programs/Open%20Quantum%20Problems) · Open problems stated in research papers and books.
 
-Targets 32 · open 28 · solved by kind (site claim): `warmup: 4` · kinds open/known/warmup/unformalized/other = 28/0/4/0/0 · snapshot `f1bcc922a11d5418` (`2026-11-27T05:46:57Z`).
+Targets 32 · open 28 · solved by kind (site claim): `warmup: 4` · kinds open/known/warmup/unformalized/other = 28/0/4/0/0 · snapshot `7cb07abf0cea37cb` (`2026-11-27T17:43:57Z`).
 
 Back to [all programs](../PROGRAMS.md).
 
