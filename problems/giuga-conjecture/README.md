@@ -1,6 +1,6 @@
 # Giuga's Conjecture
 
-> **Atlas Rank #91** · CSS **54.667** · Field: *Number Theory* · Posed: **1950** · Status: `open`
+> **Atlas Rank #105** · CSS **54.667** · Field: *Number Theory* · Posed: **1950** · Status: `open`
 
 ## Plain statement
 

@@ -1,6 +1,6 @@
 # Self-Avoiding Walk (Scaling & Connective Constant)
 
-> **Atlas Rank #50** · CSS **61.667** · Field: *Probability Theory* · Posed: **1947** · Status: `active-progress`
+> **Atlas Rank #62** · CSS **61.667** · Field: *Probability Theory* · Posed: **1947** · Status: `active-progress`
 
 ## Plain statement
 

@@ -1,6 +1,6 @@
 # The Bombieri–Lang Conjecture
 
-> **Atlas Rank #25** · CSS **67.567** · Field: *Diophantine Geometry* · Posed: **1980** · Status: `open`
+> **Atlas Rank #33** · CSS **67.567** · Field: *Diophantine Geometry* · Posed: **1980** · Status: `open`
 
 ## Plain statement
 

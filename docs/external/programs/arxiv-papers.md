@@ -3,123 +3,125 @@
 # arXiv papers — Left to Solve program mirror
 
 > [!IMPORTANT]
-> **Third-party data, mirrored daily.** Counts, kinds and "solved here" flags come from
-> [lefttosolve.com](https://lefttosolve.com/programs) (formal statements from
-> [google-deepmind/formal-conjectures](https://github.com/google-deepmind/formal-conjectures), Apache-2.0).
-> "Solved here" means *marked solved by agents on that site*; this Atlas has **not** verified any of
-> those claims, and nothing in this mirror changes the status of any Atlas problem. Status signals
-> below are prompts for human review only. Not affiliated with Left to Solve.
+> **Third-party data, mirrored daily (all 25 programs / all items).** Counts, kinds and "solved here" flags come from
+> [lefttosolve.com](https://lefttosolve.com/programs) (formal Lean statements from
+> [google-deepmind/formal-conjectures](https://github.com/google-deepmind/formal-conjectures), Apache-2.0; titles from
+> MathOverflow, Math StackExchange, OEIS and Wikipedia remain under their upstream CC BY-SA 4.0 / source licenses and
+> are carved out of this repository's CC BY 4.0 license — see `THIRD_PARTY_NOTICES.md`).
+> "Solved here" is disaggregated by `kind` (`open` / `known` / `warmup`) so known theorems and warmup exercises are
+> never misread as solved open conjectures. This Atlas has **not** verified external claims, and nothing in this mirror
+> modifies `data/problems.yaml`. Not affiliated with Left to Solve.
 
 [Program page](https://lefttosolve.com/programs/arXiv%20papers) · Open problems stated in research papers and books.
 
-Targets 105 · open 43 · solved here (site claim) 26 · kinds open/known/unformalized/other = 43/55/0/7 · snapshot `6aad4dc91eea6bbb` (`2026-11-27T04:31:27Z`).
+Targets 105 · open 43 · solved by kind (site claim): `known: 26, warmup: 7` · kinds open/known/warmup/unformalized/other = 43/55/7/0/0 · snapshot `f1bcc922a11d5418` (`2026-11-27T05:46:57Z`).
 
 Back to [all programs](../PROGRAMS.md).
 
 | # | Item id | Title | Kind | Fields | Prize | Site-solved flag |
 |---:|---|---|---|---|---|---|
-| 1 | `Arxiv.0805.3777.cprank_le_of_square_slices` | Generic and maximal rank of 3-tensors — cprank le of square slices | known | Linear Algebra |  |  |
-| 2 | `Arxiv.0805.3777.cprank_le_of_three_slices` | Generic and maximal rank of 3-tensors — cprank le of three slices | known | Linear Algebra |  |  |
-| 3 | `Arxiv.0805.3777.isGenericRank_cube` | Generic and maximal rank of 3-tensors — isGenericRank cube | known | Algebraic Geometry, Linear Algebra |  |  |
-| 4 | `Arxiv.0805.3777.isGenericRank_four` | Generic and maximal rank of 3-tensors — isGenericRank four | known | Algebraic Geometry, Linear Algebra |  |  |
-| 5 | `Arxiv.0805.3777.isGenericRank_matrix` | Generic and maximal rank of 3-tensors — isGenericRank matrix | warmup | Linear Algebra |  | yes |
-| 6 | `Arxiv.0805.3777.isGenericRank_of_eq_critical` | Generic and maximal rank of 3-tensors — isGenericRank of eq critical | known | Algebraic Geometry, Linear Algebra |  |  |
-| 7 | `Arxiv.0805.3777.isGenericRank_of_gt_critical` | Generic and maximal rank of 3-tensors — isGenericRank of gt critical | known | Algebraic Geometry, Linear Algebra |  |  |
-| 8 | `Arxiv.0805.3777.isGenericRank_of_le_critical` | Friedland's conjecture. | open | Algebraic Geometry, Linear Algebra |  |  |
-| 9 | `Arxiv.0805.3777.isGenericRank_three_even` | Generic and maximal rank of 3-tensors — isGenericRank three even | known | Algebraic Geometry, Linear Algebra |  |  |
-| 10 | `Arxiv.0805.3777.isGenericRank_three_odd` | Generic and maximal rank of 3-tensors — isGenericRank three odd | known | Algebraic Geometry, Linear Algebra |  |  |
-| 11 | `Arxiv.0805.3777.isMaxRank_cube` | Open problem. | open | Linear Algebra |  |  |
-| 12 | `Arxiv.0805.3777.isMaxRank_le_two_mul_isGenericRank` | Generic and maximal rank of 3-tensors — isMaxRank le two mul isGenericRank | known | Algebraic Geometry, Linear Algebra |  | yes |
-| 13 | `Arxiv.0805.3777.isMaxRank_of_le_min` | Generic and maximal rank of 3-tensors — isMaxRank of le min | known | Linear Algebra |  |  |
-| 14 | `Arxiv.0805.3777.isMaxRank_three` | Generic and maximal rank of 3-tensors — isMaxRank three | known | Algebraic Geometry, Linear Algebra |  |  |
-| 15 | `Arxiv.0805.3777.isMaxRank_three_three_five_bounds` | Generic and maximal rank of 3-tensors — isMaxRank three three five bounds | known | Linear Algebra |  | yes |
-| 16 | `Arxiv.0805.3777.isMaxRank_two` | Generic and maximal rank of 3-tensors — isMaxRank two | known | Linear Algebra |  |  |
-| 17 | `Arxiv.0912.2382.curling_number_conjecture` | The Curling Number Conjecture | open | Number Theory |  |  |
-| 18 | `Arxiv.1207.5099.conjecture` | Conway's subprime Fibonacci sequences | open | Number Theory |  |  |
-| 19 | `Arxiv.1601.03081.crystals_components_unique` | Unique Crystal Components | open | Number Theory, Real Functions |  |  |
-| 20 | `Arxiv.1609.08688.maximalLength_four` | The length of an $s$-increasing sequence of $r$-tuples — maximalLength four | warmup | Combinatorics |  | yes |
-| 21 | `Arxiv.1609.08688.maximalLength_le_isBigO` | The length of an $s$-increasing sequence of $r$-tuples — maximalLength le isBigO | known | Combinatorics |  |  |
-| 22 | `Arxiv.1609.08688.maximalLength_le_strong` | The length of an $s$-increasing sequence of $r$-tuples — maximalLength le strong | open | Combinatorics |  |  |
-| 23 | `Arxiv.1609.08688.maximalLength_pow` | The length of an $s$-increasing sequence of $r$-tuples — maximalLength pow | known | Combinatorics |  | yes |
-| 24 | `Arxiv.1609.08688.maximalLength_pow_eventually` | The length of an $s$-increasing sequence of $r$-tuples — maximalLength pow eventually | known | Combinatorics |  | yes |
-| 25 | `Arxiv.1701.08900.second_moment` | Pittel's second-moment conjecture for nearly balanced markets — second moment | open | Combinatorics, Game Theory & Economics, Probability |  |  |
-| 26 | `Arxiv.1701.08900.second_moment_one_extra_worker` | Pittel's second-moment conjecture for nearly balanced markets — second moment one extra worker | open | Combinatorics, Game Theory & Economics, Probability |  |  |
-| 27 | `Arxiv.2001.02665.kotzig_conjecture_large` | Ringel's Conjecture and Kotzig's Conjecture for large $n$ — kotzig conjecture large | known | Combinatorics |  |  |
-| 28 | `Arxiv.2001.02665.ringel_conjecture_large` | Ringel's Conjecture and Kotzig's Conjecture for large $n$ — ringel conjecture large | known | Combinatorics |  |  |
-| 29 | `Arxiv.2104.00502.barker_conjecture` | Barker sequences | open | Combinatorics, Information & Communication, Number Theory |  |  |
-| 30 | `Arxiv.2107.00295.independentDominationEven` | Conjecture 1.6 (Even case). | known | Combinatorics |  | yes |
-| 31 | `Arxiv.2107.00295.independentDominationOdd` | Conjecture 1.6 (Odd case). | known | Combinatorics |  | yes |
-| 32 | `Arxiv.2107.12475.CollatzLike` | Digit $2$ in base $3$ representation of $2^n$ | open | Combinatorics, Number Theory |  |  |
-| 33 | `Arxiv.2110.04263.multiplicative_persistence_conjecture` | Multiplicative persistence | open | Number Theory |  |  |
-| 34 | `Arxiv.2208.14736.zariski_cancellation_problem.variants.dim_one` | Zariski Cancellation — dim one | known | Algebraic Geometry, Commutative Algebra |  | yes |
-| 35 | `Arxiv.2208.14736.zariski_cancellation_problem.variants.dim_two` | Zariski Cancellation — dim two | known | Algebraic Geometry, Commutative Algebra |  |  |
-| 36 | `Arxiv.2208.14736.zariski_cancellation_problem.variants.false_pos_card` | Zariski Cancellation — false pos card | known | Algebraic Geometry, Commutative Algebra |  |  |
-| 37 | `Arxiv.2406.10319.pittel_hyperbola_threshold` | Pittel's stable-matching hyperbola threshold conjecture | open | Combinatorics, Probability |  |  |
-| 38 | `Arxiv.2501.03234.conjecture_1_1` | Conjecture 1.1 | open | Number Theory |  |  |
-| 39 | `Arxiv.2501.03234.conjecture_4_1` | Conjecture 4.1 | open | Number Theory |  |  |
-| 40 | `Arxiv.2501.03234.conjecture_4_2` | Conjecture 4.2 | open | Number Theory |  |  |
-| 41 | `Arxiv.2501.03234.conjecture_4_3` | Conjecture 4.3 | open | Number Theory |  |  |
-| 42 | `Arxiv.2501.03234.conjecture_4_4` | Conjecture 4.4 | open | Number Theory |  |  |
-| 43 | `Arxiv.2507.17780.tx_graffiti_conjecture_1` | TxGraffiti Conjecture 1: independence, annihilation, and residue | known | Combinatorics |  |  |
-| 44 | `Arxiv.2507.17780.tx_graffiti_conjecture_2` | TxGraffiti Conjecture 2: zero forcing versus independence (cubic graphs) | known | Combinatorics |  | yes |
-| 45 | `Arxiv.2507.17780.tx_graffiti_conjecture_3` | TxGraffiti Conjecture 3: independent domination versus saturation (regular) | open | Combinatorics |  |  |
-| 46 | `Arxiv.2602.05192.finiteAdditiveConvolution_degree` | First Proof, Theorem 4 — finiteAdditiveConvolution degree | warmup | Real Functions |  | yes |
-| 47 | `Arxiv.2602.05192.four_2` | First Proof, Theorem 4 — four 2 | known | Real Functions |  | yes |
-| 48 | `Arxiv.2602.05192.four_3` | First Proof, Theorem 4 — four 3 | known | Real Functions |  | yes |
-| 49 | `Arxiv.2604.08040.cyc_alternatingGroup_five` | Group structure via subgroup counts | warmup | Group Theory |  | yes |
-| 50 | `Arxiv.2604.08040.nilpotent_of_cyc_lt` | Theorem 3.1. | known | Group Theory |  |  |
-| 51 | `Arxiv.2604.08040.solvable_of_cyc_lt_two_pow_succ` | Theorem 4.2. | known | Group Theory |  |  |
-| 52 | `Arxiv.2605.02731.dean_conjecture` | Conjecture 1.1 (Dean, 1988). | open | Combinatorics |  |  |
-| 53 | `Arxiv.2605.02731.dean_conjecture.variants.five` | Dean's conjecture on cycles of length divisible by `k` — five | open | Combinatorics |  |  |
-| 54 | `Arxiv.2605.02731.dean_conjecture.variants.four` | Dean's conjecture on cycles of length divisible by `k` — four | known | Combinatorics |  |  |
-| 55 | `Arxiv.2605.02731.dean_conjecture.variants.six_le` | Dean's conjecture on cycles of length divisible by `k` — six le | known | Combinatorics |  |  |
-| 56 | `Arxiv.2605.02731.dean_conjecture.variants.three` | Dean's conjecture on cycles of length divisible by `k` — three | known | Combinatorics |  |  |
-| 57 | `Arxiv.2605.12342.conjecture_1.variants.rank_3_3` | Fernandes' conjecture on the 2-generation of even direct product permutation groups — rank 3 3 | known | Group Theory |  | yes |
-| 58 | `Arxiv.2605.12342.conjecture_1.variants.rank_4_3` | Fernandes' conjecture on the 2-generation of even direct product permutation groups — rank 4 3 | known | Group Theory |  | yes |
-| 59 | `Arxiv.2605.12342.conjecture_1.variants.rank_4_4` | Fernandes' conjecture on the 2-generation of even direct product permutation groups — rank 4 4 | known | Group Theory |  | yes |
-| 60 | `Arxiv.2606.03696.bondy_conjecture` | Conjecture 1 (Bondy, 1980). | open | Combinatorics |  |  |
-| 61 | `Arxiv.2606.03696.bondy_conjecture.variants.large_explicit` | Theorem 1.1 (Ma-Ning-Zhao, 2026), explicit threshold. | known | Combinatorics |  |  |
-| 62 | `Arxiv.2606.03696.bondy_conjecture.variants.one` | Bondy's conjecture on longest cycles in highly connected graphs — one | known | Combinatorics |  | yes |
-| 63 | `Arxiv.2606.03696.bondy_conjecture.variants.three` | Bondy's conjecture on longest cycles in highly connected graphs — three | known | Combinatorics |  |  |
-| 64 | `Arxiv.2606.03696.bondy_conjecture.variants.two` | Bondy's conjecture on longest cycles in highly connected graphs — two | known | Combinatorics |  |  |
-| 65 | `Arxiv.2607.03582.volume_lpSum_eq_of_isParallelogramAtOrigin` | Planar $L_p$-Rogers-Shephard, the equality case | known | Convex & Discrete Geometry |  | yes |
-| 66 | `Arxiv.2607.03582.volume_lpSum_le` | Corollary 29 (Fradelizi-Manui-Meyer-Ndiaye, 2026). | known | Convex & Discrete Geometry |  |  |
-| 67 | `Arxiv.2607.05349.hasFiniteConcentration_of_hasMicroscopicWeighting` | The microscopic weighting on a metric space — hasFiniteConcentration of hasMicroscopicWeighting | known | Geometry, Linear Algebra |  | yes |
-| 68 | `Arxiv.2607.05349.hasMicroscopicWeighting_iff_of_isUnit` | The microscopic weighting on a metric space — hasMicroscopicWeighting iff of isUnit | known | Geometry, Linear Algebra |  | yes |
-| 69 | `Arxiv.2607.05739.tan_arctan_sum_not_integer` | Conjecture (Amdeberhan-Medina-Moll, 2008). | open | Number Theory |  |  |
-| 70 | `Arxiv.2607.05739.x_eq_tan_sum_arctan` | Integer values of $\\tan(\\arctan 1 + \\arctan 2 + \\cdots + \\arctan n)$ — x eq tan sum arctan | warmup | Number Theory |  | yes |
-| 71 | `Arxiv.2607.05739.x_succ` | Integer values of $\\tan(\\arctan 1 + \\arctan 2 + \\cdots + \\arctan n)$ — x succ | warmup | Number Theory |  | yes |
-| 72 | `Arxiv.2607.06396.alon_tarsi_short_cycle_cover` | Conjecture 4 (Alon-Tarsi, 1985), simple-graph specialization. | open | Combinatorics |  |  |
-| 73 | `Arxiv.2607.08366.min_modulus` | Conjecture 1 (Fonollosa, 2026). | open | Number Theory |  |  |
-| 74 | `Arxiv.2607.08630.balister_gyori_schelp_conjecture` | The Balister–Győri–Schelp conjecture | open | Combinatorics |  |  |
-| 75 | `Arxiv.2607.27197.maxwell_conjecture.counterexample` | Theorem 1 | known | Optics, Potential Theory |  | yes |
-| 76 | `Arxiv.2607.27197.maxwell_conjecture.counterexample_morse` | The Maxwell conjecture — counterexample morse | known | Optics, Potential Theory |  | yes |
-| 77 | `Arxiv.2607.27197.maxwell_conjecture.iterated` | Proposition 1 | known | Optics, Potential Theory |  |  |
-| 78 | `Arxiv.2607.27197.maxwell_conjecture.phiZero_critical_points` | Lemma 2 | known | Optics, Potential Theory |  | yes |
-| 79 | `Arxiv.2607.27197.maxwell_conjecture.variants.polynomial_bound` | The Maxwell conjecture — polynomial bound | open | Optics, Potential Theory |  |  |
-| 80 | `Arxiv.2607.27197.maxwell_conjecture.variants.three_charges` | The Maxwell conjecture — three charges | open | Optics, Potential Theory |  |  |
-| 81 | `Arxiv.2607.27197.maxwell_conjecture.variants.three_equal_magnitudes` | The Maxwell conjecture — three equal magnitudes | known | Optics, Potential Theory |  |  |
-| 82 | `Arxiv.2607.27197.maxwell_conjecture.variants.two_charges` | The Maxwell conjecture — two charges | warmup | Optics, Potential Theory |  | yes |
-| 83 | `Arxiv.2610.08796.exists_isPolyTime_bayesNash` | Computing Bayes–Nash equilibria in Bayesian simple security games | open | Computer Science, Game Theory & Economics |  |  |
-| 84 | `Arxiv.id2303_01089.conjecture_1_3` | Conjecture 1.3 | open | Dynamical Systems |  |  |
-| 85 | `Arxiv.id2303_01089.conjecture_1_4` | Conjecture 1.4 | known | Dynamical Systems |  |  |
-| 86 | `Arxiv.math.0110202.banach_mazur_rotation_problem` | Banach-Mazur Rotation Problem | open | Functional Analysis |  |  |
-| 87 | `Arxiv.math.0608009.dixmier_conjecture.variants.dimension_one` | The Dixmier Conjecture — dimension one | open | Associative Rings |  |  |
-| 88 | `Arxiv.math.0608009.dixmier_conjecture.variants.dimension_two` | The Dixmier Conjecture — dimension two | open | Associative Rings |  |  |
-| 89 | `Arxiv.math.0608009.dixmier_conjecture.variants.poisson_implication` | The Dixmier Conjecture — poisson implication | known | Algebraic Geometry, Associative Rings, Nonassociative Rings |  |  |
-| 90 | `Arxiv.math.0608009.poisson_conjecture.variants.dimension_one` | The Poisson Conjecture — dimension one | open | Algebraic Geometry, Nonassociative Rings |  |  |
-| 91 | `Arxiv.math.0703548.bass_conjecture_integral_domain` | Bass conjecture for commutative integral domains, in idempotent-matrix form. | open | Associative Rings, Group Theory, K-Theory |  |  |
-| 92 | `Arxiv.math.0703548.projective_module_isStablyFree` | Vanishing of the reduced projective class group for integral group rings. | open | Associative Rings, Group Theory, K-Theory |  |  |
-| 93 | `AtiyahSutcliffe.conjecture_one` | The first Atiyah--Sutcliffe conjecture | open | Geometry, Mechanics |  |  |
-| 94 | `CunninghamChain.infinitely_many_firstKind_chains` | Cunningham chains — Jones's conjecture — infinitely many firstKind chains | open | Number Theory |  |  |
-| 95 | `CunninghamChain.infinitely_many_secondKind_chains` | Cunningham chains — Jones's conjecture — infinitely many secondKind chains | open | Number Theory |  |  |
-| 96 | `HopfAlgebraCohomology.cohomologyRing_finiteType` | Finite generation conjecture — cohomologyRing finiteType | open | Associative Rings, Category Theory |  |  |
-| 97 | `HopfAlgebraCohomology.cohomologyRing_finiteType_monoidAlgebra` | Evens–Venkov | known | Associative Rings, Group Theory |  |  |
-| 98 | `HopfAlgebraCohomology.cohomologyRing_finiteType_of_isCocomm` | Friedlander–Suslin | known | Algebraic Geometry, Associative Rings, Category Theory |  |  |
-| 99 | `HopfAlgebraCohomology.cohomology_finite` | Finite generation conjecture — cohomology finite | open | Associative Rings, Category Theory |  |  |
-| 100 | `HopfAlgebraCohomology.cohomology_finite_of_isCocomm` | Friedlander–Suslin | known | Algebraic Geometry, Associative Rings, Category Theory |  |  |
-| 101 | `Margulis.conjecture_1_1` | A conjecture by Margulis on matrix groups | open | Linear Algebra, Number Theory, Topological Groups |  |  |
-| 102 | `NowhereDenseSpectralSet.exists_nowhereDense_spectralSet` | Spectral sets and weak tiling — exists nowhereDense spectralSet | open | Functional Analysis, Harmonic Analysis |  |  |
-| 103 | `SpectralSetProduct.isSpectral_right_of_product_of_convexBody` | Spectral sets and weak tiling — isSpectral right of product of convexBody | open | Functional Analysis, Harmonic Analysis |  |  |
-| 104 | `SpectralSetProduct.isSpectral_right_of_product_one_dimensional` | Spectral sets and weak tiling — isSpectral right of product one dimensional | known | Functional Analysis, Harmonic Analysis |  |  |
-| 105 | `SpectralSetProduct.isSpectral_right_of_product_two_dimensional` | Spectral sets and weak tiling — isSpectral right of product two dimensional | known | Functional Analysis, Harmonic Analysis |  |  |
+| 1 | [`Arxiv.0805.3777.cprank_le_of_square_slices`](https://lefttosolve.com/p/Arxiv.0805.3777.cprank_le_of_square_slices) | Generic and maximal rank of 3-tensors — cprank le of square slices | known | Linear Algebra |  |  |
+| 2 | [`Arxiv.0805.3777.cprank_le_of_three_slices`](https://lefttosolve.com/p/Arxiv.0805.3777.cprank_le_of_three_slices) | Generic and maximal rank of 3-tensors — cprank le of three slices | known | Linear Algebra |  |  |
+| 3 | [`Arxiv.0805.3777.isGenericRank_cube`](https://lefttosolve.com/p/Arxiv.0805.3777.isGenericRank_cube) | Generic and maximal rank of 3-tensors — isGenericRank cube | known | Algebraic Geometry, Linear Algebra |  | yes |
+| 4 | [`Arxiv.0805.3777.isGenericRank_four`](https://lefttosolve.com/p/Arxiv.0805.3777.isGenericRank_four) | Generic and maximal rank of 3-tensors — isGenericRank four | known | Algebraic Geometry, Linear Algebra |  |  |
+| 5 | [`Arxiv.0805.3777.isGenericRank_matrix`](https://lefttosolve.com/p/Arxiv.0805.3777.isGenericRank_matrix) | Generic and maximal rank of 3-tensors — isGenericRank matrix | warmup | Linear Algebra |  | yes |
+| 6 | [`Arxiv.0805.3777.isGenericRank_of_eq_critical`](https://lefttosolve.com/p/Arxiv.0805.3777.isGenericRank_of_eq_critical) | Generic and maximal rank of 3-tensors — isGenericRank of eq critical | known | Algebraic Geometry, Linear Algebra |  |  |
+| 7 | [`Arxiv.0805.3777.isGenericRank_of_gt_critical`](https://lefttosolve.com/p/Arxiv.0805.3777.isGenericRank_of_gt_critical) | Generic and maximal rank of 3-tensors — isGenericRank of gt critical | known | Algebraic Geometry, Linear Algebra |  |  |
+| 8 | [`Arxiv.0805.3777.isGenericRank_of_le_critical`](https://lefttosolve.com/p/Arxiv.0805.3777.isGenericRank_of_le_critical) | Friedland's conjecture. | open | Algebraic Geometry, Linear Algebra |  |  |
+| 9 | [`Arxiv.0805.3777.isGenericRank_three_even`](https://lefttosolve.com/p/Arxiv.0805.3777.isGenericRank_three_even) | Generic and maximal rank of 3-tensors — isGenericRank three even | known | Algebraic Geometry, Linear Algebra |  | yes |
+| 10 | [`Arxiv.0805.3777.isGenericRank_three_odd`](https://lefttosolve.com/p/Arxiv.0805.3777.isGenericRank_three_odd) | Generic and maximal rank of 3-tensors — isGenericRank three odd | known | Algebraic Geometry, Linear Algebra |  |  |
+| 11 | [`Arxiv.0805.3777.isMaxRank_cube`](https://lefttosolve.com/p/Arxiv.0805.3777.isMaxRank_cube) | Open problem. | open | Linear Algebra |  |  |
+| 12 | [`Arxiv.0805.3777.isMaxRank_le_two_mul_isGenericRank`](https://lefttosolve.com/p/Arxiv.0805.3777.isMaxRank_le_two_mul_isGenericRank) | Generic and maximal rank of 3-tensors — isMaxRank le two mul isGenericRank | known | Algebraic Geometry, Linear Algebra |  | yes |
+| 13 | [`Arxiv.0805.3777.isMaxRank_of_le_min`](https://lefttosolve.com/p/Arxiv.0805.3777.isMaxRank_of_le_min) | Generic and maximal rank of 3-tensors — isMaxRank of le min | known | Linear Algebra |  |  |
+| 14 | [`Arxiv.0805.3777.isMaxRank_three`](https://lefttosolve.com/p/Arxiv.0805.3777.isMaxRank_three) | Generic and maximal rank of 3-tensors — isMaxRank three | known | Algebraic Geometry, Linear Algebra |  |  |
+| 15 | [`Arxiv.0805.3777.isMaxRank_three_three_five_bounds`](https://lefttosolve.com/p/Arxiv.0805.3777.isMaxRank_three_three_five_bounds) | Generic and maximal rank of 3-tensors — isMaxRank three three five bounds | known | Linear Algebra |  | yes |
+| 16 | [`Arxiv.0805.3777.isMaxRank_two`](https://lefttosolve.com/p/Arxiv.0805.3777.isMaxRank_two) | Generic and maximal rank of 3-tensors — isMaxRank two | known | Linear Algebra |  |  |
+| 17 | [`Arxiv.0912.2382.curling_number_conjecture`](https://lefttosolve.com/p/Arxiv.0912.2382.curling_number_conjecture) | The Curling Number Conjecture | open | Number Theory |  |  |
+| 18 | [`Arxiv.1207.5099.conjecture`](https://lefttosolve.com/p/Arxiv.1207.5099.conjecture) | Conway's subprime Fibonacci sequences | open | Number Theory |  |  |
+| 19 | [`Arxiv.1601.03081.crystals_components_unique`](https://lefttosolve.com/p/Arxiv.1601.03081.crystals_components_unique) | Unique Crystal Components | open | Number Theory, Real Functions |  |  |
+| 20 | [`Arxiv.1609.08688.maximalLength_four`](https://lefttosolve.com/p/Arxiv.1609.08688.maximalLength_four) | The length of an $s$-increasing sequence of $r$-tuples — maximalLength four | warmup | Combinatorics |  | yes |
+| 21 | [`Arxiv.1609.08688.maximalLength_le_isBigO`](https://lefttosolve.com/p/Arxiv.1609.08688.maximalLength_le_isBigO) | The length of an $s$-increasing sequence of $r$-tuples — maximalLength le isBigO | known | Combinatorics |  |  |
+| 22 | [`Arxiv.1609.08688.maximalLength_le_strong`](https://lefttosolve.com/p/Arxiv.1609.08688.maximalLength_le_strong) | The length of an $s$-increasing sequence of $r$-tuples — maximalLength le strong | open | Combinatorics |  |  |
+| 23 | [`Arxiv.1609.08688.maximalLength_pow`](https://lefttosolve.com/p/Arxiv.1609.08688.maximalLength_pow) | The length of an $s$-increasing sequence of $r$-tuples — maximalLength pow | known | Combinatorics |  | yes |
+| 24 | [`Arxiv.1609.08688.maximalLength_pow_eventually`](https://lefttosolve.com/p/Arxiv.1609.08688.maximalLength_pow_eventually) | The length of an $s$-increasing sequence of $r$-tuples — maximalLength pow eventually | known | Combinatorics |  | yes |
+| 25 | [`Arxiv.1701.08900.second_moment`](https://lefttosolve.com/p/Arxiv.1701.08900.second_moment) | Pittel's second-moment conjecture for nearly balanced markets — second moment | open | Combinatorics, Game Theory & Economics, Probability |  |  |
+| 26 | [`Arxiv.1701.08900.second_moment_one_extra_worker`](https://lefttosolve.com/p/Arxiv.1701.08900.second_moment_one_extra_worker) | Pittel's second-moment conjecture for nearly balanced markets — second moment one extra worker | open | Combinatorics, Game Theory & Economics, Probability |  |  |
+| 27 | [`Arxiv.2001.02665.kotzig_conjecture_large`](https://lefttosolve.com/p/Arxiv.2001.02665.kotzig_conjecture_large) | Ringel's Conjecture and Kotzig's Conjecture for large $n$ — kotzig conjecture large | known | Combinatorics |  |  |
+| 28 | [`Arxiv.2001.02665.ringel_conjecture_large`](https://lefttosolve.com/p/Arxiv.2001.02665.ringel_conjecture_large) | Ringel's Conjecture and Kotzig's Conjecture for large $n$ — ringel conjecture large | known | Combinatorics |  |  |
+| 29 | [`Arxiv.2104.00502.barker_conjecture`](https://lefttosolve.com/p/Arxiv.2104.00502.barker_conjecture) | Barker sequences | open | Combinatorics, Information & Communication, Number Theory |  |  |
+| 30 | [`Arxiv.2107.00295.independentDominationEven`](https://lefttosolve.com/p/Arxiv.2107.00295.independentDominationEven) | Conjecture 1.6 (Even case). | known | Combinatorics |  | yes |
+| 31 | [`Arxiv.2107.00295.independentDominationOdd`](https://lefttosolve.com/p/Arxiv.2107.00295.independentDominationOdd) | Conjecture 1.6 (Odd case). | known | Combinatorics |  | yes |
+| 32 | [`Arxiv.2107.12475.CollatzLike`](https://lefttosolve.com/p/Arxiv.2107.12475.CollatzLike) | Digit $2$ in base $3$ representation of $2^n$ | open | Combinatorics, Number Theory |  |  |
+| 33 | [`Arxiv.2110.04263.multiplicative_persistence_conjecture`](https://lefttosolve.com/p/Arxiv.2110.04263.multiplicative_persistence_conjecture) | Multiplicative persistence | open | Number Theory |  |  |
+| 34 | [`Arxiv.2208.14736.zariski_cancellation_problem.variants.dim_one`](https://lefttosolve.com/p/Arxiv.2208.14736.zariski_cancellation_problem.variants.dim_one) | Zariski Cancellation — dim one | known | Algebraic Geometry, Commutative Algebra |  | yes |
+| 35 | [`Arxiv.2208.14736.zariski_cancellation_problem.variants.dim_two`](https://lefttosolve.com/p/Arxiv.2208.14736.zariski_cancellation_problem.variants.dim_two) | Zariski Cancellation — dim two | known | Algebraic Geometry, Commutative Algebra |  |  |
+| 36 | [`Arxiv.2208.14736.zariski_cancellation_problem.variants.false_pos_card`](https://lefttosolve.com/p/Arxiv.2208.14736.zariski_cancellation_problem.variants.false_pos_card) | Zariski Cancellation — false pos card | known | Algebraic Geometry, Commutative Algebra |  |  |
+| 37 | [`Arxiv.2406.10319.pittel_hyperbola_threshold`](https://lefttosolve.com/p/Arxiv.2406.10319.pittel_hyperbola_threshold) | Pittel's stable-matching hyperbola threshold conjecture | open | Combinatorics, Probability |  |  |
+| 38 | [`Arxiv.2501.03234.conjecture_1_1`](https://lefttosolve.com/p/Arxiv.2501.03234.conjecture_1_1) | Conjecture 1.1 | open | Number Theory |  |  |
+| 39 | [`Arxiv.2501.03234.conjecture_4_1`](https://lefttosolve.com/p/Arxiv.2501.03234.conjecture_4_1) | Conjecture 4.1 | open | Number Theory |  |  |
+| 40 | [`Arxiv.2501.03234.conjecture_4_2`](https://lefttosolve.com/p/Arxiv.2501.03234.conjecture_4_2) | Conjecture 4.2 | open | Number Theory |  |  |
+| 41 | [`Arxiv.2501.03234.conjecture_4_3`](https://lefttosolve.com/p/Arxiv.2501.03234.conjecture_4_3) | Conjecture 4.3 | open | Number Theory |  |  |
+| 42 | [`Arxiv.2501.03234.conjecture_4_4`](https://lefttosolve.com/p/Arxiv.2501.03234.conjecture_4_4) | Conjecture 4.4 | open | Number Theory |  |  |
+| 43 | [`Arxiv.2507.17780.tx_graffiti_conjecture_1`](https://lefttosolve.com/p/Arxiv.2507.17780.tx_graffiti_conjecture_1) | TxGraffiti Conjecture 1: independence, annihilation, and residue | known | Combinatorics |  | yes |
+| 44 | [`Arxiv.2507.17780.tx_graffiti_conjecture_2`](https://lefttosolve.com/p/Arxiv.2507.17780.tx_graffiti_conjecture_2) | TxGraffiti Conjecture 2: zero forcing versus independence (cubic graphs) | known | Combinatorics |  | yes |
+| 45 | [`Arxiv.2507.17780.tx_graffiti_conjecture_3`](https://lefttosolve.com/p/Arxiv.2507.17780.tx_graffiti_conjecture_3) | TxGraffiti Conjecture 3: independent domination versus saturation (regular) | open | Combinatorics |  |  |
+| 46 | [`Arxiv.2602.05192.finiteAdditiveConvolution_degree`](https://lefttosolve.com/p/Arxiv.2602.05192.finiteAdditiveConvolution_degree) | First Proof, Theorem 4 — finiteAdditiveConvolution degree | warmup | Real Functions |  | yes |
+| 47 | [`Arxiv.2602.05192.four_2`](https://lefttosolve.com/p/Arxiv.2602.05192.four_2) | First Proof, Theorem 4 — four 2 | known | Real Functions |  | yes |
+| 48 | [`Arxiv.2602.05192.four_3`](https://lefttosolve.com/p/Arxiv.2602.05192.four_3) | First Proof, Theorem 4 — four 3 | known | Real Functions |  | yes |
+| 49 | [`Arxiv.2604.08040.cyc_alternatingGroup_five`](https://lefttosolve.com/p/Arxiv.2604.08040.cyc_alternatingGroup_five) | Group structure via subgroup counts | warmup | Group Theory |  | yes |
+| 50 | [`Arxiv.2604.08040.nilpotent_of_cyc_lt`](https://lefttosolve.com/p/Arxiv.2604.08040.nilpotent_of_cyc_lt) | Theorem 3.1. | known | Group Theory |  |  |
+| 51 | [`Arxiv.2604.08040.solvable_of_cyc_lt_two_pow_succ`](https://lefttosolve.com/p/Arxiv.2604.08040.solvable_of_cyc_lt_two_pow_succ) | Theorem 4.2. | known | Group Theory |  |  |
+| 52 | [`Arxiv.2605.02731.dean_conjecture`](https://lefttosolve.com/p/Arxiv.2605.02731.dean_conjecture) | Conjecture 1.1 (Dean, 1988). | open | Combinatorics |  |  |
+| 53 | [`Arxiv.2605.02731.dean_conjecture.variants.five`](https://lefttosolve.com/p/Arxiv.2605.02731.dean_conjecture.variants.five) | Dean's conjecture on cycles of length divisible by `k` — five | open | Combinatorics |  |  |
+| 54 | [`Arxiv.2605.02731.dean_conjecture.variants.four`](https://lefttosolve.com/p/Arxiv.2605.02731.dean_conjecture.variants.four) | Dean's conjecture on cycles of length divisible by `k` — four | known | Combinatorics |  |  |
+| 55 | [`Arxiv.2605.02731.dean_conjecture.variants.six_le`](https://lefttosolve.com/p/Arxiv.2605.02731.dean_conjecture.variants.six_le) | Dean's conjecture on cycles of length divisible by `k` — six le | known | Combinatorics |  |  |
+| 56 | [`Arxiv.2605.02731.dean_conjecture.variants.three`](https://lefttosolve.com/p/Arxiv.2605.02731.dean_conjecture.variants.three) | Dean's conjecture on cycles of length divisible by `k` — three | known | Combinatorics |  |  |
+| 57 | [`Arxiv.2605.12342.conjecture_1.variants.rank_3_3`](https://lefttosolve.com/p/Arxiv.2605.12342.conjecture_1.variants.rank_3_3) | Fernandes' conjecture on the 2-generation of even direct product permutation groups — rank 3 3 | known | Group Theory |  | yes |
+| 58 | [`Arxiv.2605.12342.conjecture_1.variants.rank_4_3`](https://lefttosolve.com/p/Arxiv.2605.12342.conjecture_1.variants.rank_4_3) | Fernandes' conjecture on the 2-generation of even direct product permutation groups — rank 4 3 | known | Group Theory |  | yes |
+| 59 | [`Arxiv.2605.12342.conjecture_1.variants.rank_4_4`](https://lefttosolve.com/p/Arxiv.2605.12342.conjecture_1.variants.rank_4_4) | Fernandes' conjecture on the 2-generation of even direct product permutation groups — rank 4 4 | known | Group Theory |  | yes |
+| 60 | [`Arxiv.2606.03696.bondy_conjecture`](https://lefttosolve.com/p/Arxiv.2606.03696.bondy_conjecture) | Conjecture 1 (Bondy, 1980). | open | Combinatorics |  |  |
+| 61 | [`Arxiv.2606.03696.bondy_conjecture.variants.large_explicit`](https://lefttosolve.com/p/Arxiv.2606.03696.bondy_conjecture.variants.large_explicit) | Theorem 1.1 (Ma-Ning-Zhao, 2026), explicit threshold. | known | Combinatorics |  |  |
+| 62 | [`Arxiv.2606.03696.bondy_conjecture.variants.one`](https://lefttosolve.com/p/Arxiv.2606.03696.bondy_conjecture.variants.one) | Bondy's conjecture on longest cycles in highly connected graphs — one | known | Combinatorics |  | yes |
+| 63 | [`Arxiv.2606.03696.bondy_conjecture.variants.three`](https://lefttosolve.com/p/Arxiv.2606.03696.bondy_conjecture.variants.three) | Bondy's conjecture on longest cycles in highly connected graphs — three | known | Combinatorics |  |  |
+| 64 | [`Arxiv.2606.03696.bondy_conjecture.variants.two`](https://lefttosolve.com/p/Arxiv.2606.03696.bondy_conjecture.variants.two) | Bondy's conjecture on longest cycles in highly connected graphs — two | known | Combinatorics |  | yes |
+| 65 | [`Arxiv.2607.03582.volume_lpSum_eq_of_isParallelogramAtOrigin`](https://lefttosolve.com/p/Arxiv.2607.03582.volume_lpSum_eq_of_isParallelogramAtOrigin) | Planar $L_p$-Rogers-Shephard, the equality case | known | Convex & Discrete Geometry |  | yes |
+| 66 | [`Arxiv.2607.03582.volume_lpSum_le`](https://lefttosolve.com/p/Arxiv.2607.03582.volume_lpSum_le) | Corollary 29 (Fradelizi-Manui-Meyer-Ndiaye, 2026). | known | Convex & Discrete Geometry |  | yes |
+| 67 | [`Arxiv.2607.05349.hasFiniteConcentration_of_hasMicroscopicWeighting`](https://lefttosolve.com/p/Arxiv.2607.05349.hasFiniteConcentration_of_hasMicroscopicWeighting) | The microscopic weighting on a metric space — hasFiniteConcentration of hasMicroscopicWeighting | known | Geometry, Linear Algebra |  | yes |
+| 68 | [`Arxiv.2607.05349.hasMicroscopicWeighting_iff_of_isUnit`](https://lefttosolve.com/p/Arxiv.2607.05349.hasMicroscopicWeighting_iff_of_isUnit) | The microscopic weighting on a metric space — hasMicroscopicWeighting iff of isUnit | known | Geometry, Linear Algebra |  | yes |
+| 69 | [`Arxiv.2607.05739.tan_arctan_sum_not_integer`](https://lefttosolve.com/p/Arxiv.2607.05739.tan_arctan_sum_not_integer) | Conjecture (Amdeberhan-Medina-Moll, 2008). | open | Number Theory |  |  |
+| 70 | [`Arxiv.2607.05739.x_eq_tan_sum_arctan`](https://lefttosolve.com/p/Arxiv.2607.05739.x_eq_tan_sum_arctan) | Integer values of $\\tan(\\arctan 1 + \\arctan 2 + \\cdots + \\arctan n)$ — x eq tan sum arctan | warmup | Number Theory |  | yes |
+| 71 | [`Arxiv.2607.05739.x_succ`](https://lefttosolve.com/p/Arxiv.2607.05739.x_succ) | Integer values of $\\tan(\\arctan 1 + \\arctan 2 + \\cdots + \\arctan n)$ — x succ | warmup | Number Theory |  | yes |
+| 72 | [`Arxiv.2607.06396.alon_tarsi_short_cycle_cover`](https://lefttosolve.com/p/Arxiv.2607.06396.alon_tarsi_short_cycle_cover) | Conjecture 4 (Alon-Tarsi, 1985), simple-graph specialization. | open | Combinatorics |  |  |
+| 73 | [`Arxiv.2607.08366.min_modulus`](https://lefttosolve.com/p/Arxiv.2607.08366.min_modulus) | Conjecture 1 (Fonollosa, 2026). | open | Number Theory |  |  |
+| 74 | [`Arxiv.2607.08630.balister_gyori_schelp_conjecture`](https://lefttosolve.com/p/Arxiv.2607.08630.balister_gyori_schelp_conjecture) | The Balister–Győri–Schelp conjecture | open | Combinatorics |  |  |
+| 75 | [`Arxiv.2607.27197.maxwell_conjecture.counterexample`](https://lefttosolve.com/p/Arxiv.2607.27197.maxwell_conjecture.counterexample) | Theorem 1 | known | Optics, Potential Theory |  | yes |
+| 76 | [`Arxiv.2607.27197.maxwell_conjecture.counterexample_morse`](https://lefttosolve.com/p/Arxiv.2607.27197.maxwell_conjecture.counterexample_morse) | The Maxwell conjecture — counterexample morse | known | Optics, Potential Theory |  | yes |
+| 77 | [`Arxiv.2607.27197.maxwell_conjecture.iterated`](https://lefttosolve.com/p/Arxiv.2607.27197.maxwell_conjecture.iterated) | Proposition 1 | known | Optics, Potential Theory |  | yes |
+| 78 | [`Arxiv.2607.27197.maxwell_conjecture.phiZero_critical_points`](https://lefttosolve.com/p/Arxiv.2607.27197.maxwell_conjecture.phiZero_critical_points) | Lemma 2 | known | Optics, Potential Theory |  | yes |
+| 79 | [`Arxiv.2607.27197.maxwell_conjecture.variants.polynomial_bound`](https://lefttosolve.com/p/Arxiv.2607.27197.maxwell_conjecture.variants.polynomial_bound) | The Maxwell conjecture — polynomial bound | open | Optics, Potential Theory |  |  |
+| 80 | [`Arxiv.2607.27197.maxwell_conjecture.variants.three_charges`](https://lefttosolve.com/p/Arxiv.2607.27197.maxwell_conjecture.variants.three_charges) | The Maxwell conjecture — three charges | open | Optics, Potential Theory |  |  |
+| 81 | [`Arxiv.2607.27197.maxwell_conjecture.variants.three_equal_magnitudes`](https://lefttosolve.com/p/Arxiv.2607.27197.maxwell_conjecture.variants.three_equal_magnitudes) | The Maxwell conjecture — three equal magnitudes | known | Optics, Potential Theory |  |  |
+| 82 | [`Arxiv.2607.27197.maxwell_conjecture.variants.two_charges`](https://lefttosolve.com/p/Arxiv.2607.27197.maxwell_conjecture.variants.two_charges) | The Maxwell conjecture — two charges | warmup | Optics, Potential Theory |  | yes |
+| 83 | [`Arxiv.2610.08796.exists_isPolyTime_bayesNash`](https://lefttosolve.com/p/Arxiv.2610.08796.exists_isPolyTime_bayesNash) | Computing Bayes–Nash equilibria in Bayesian simple security games | open | Computer Science, Game Theory & Economics |  |  |
+| 84 | [`Arxiv.id2303_01089.conjecture_1_3`](https://lefttosolve.com/p/Arxiv.id2303_01089.conjecture_1_3) | Conjecture 1.3 | open | Dynamical Systems |  |  |
+| 85 | [`Arxiv.id2303_01089.conjecture_1_4`](https://lefttosolve.com/p/Arxiv.id2303_01089.conjecture_1_4) | Conjecture 1.4 | known | Dynamical Systems |  |  |
+| 86 | [`Arxiv.math.0110202.banach_mazur_rotation_problem`](https://lefttosolve.com/p/Arxiv.math.0110202.banach_mazur_rotation_problem) | Banach-Mazur Rotation Problem | open | Functional Analysis |  |  |
+| 87 | [`Arxiv.math.0608009.dixmier_conjecture.variants.dimension_one`](https://lefttosolve.com/p/Arxiv.math.0608009.dixmier_conjecture.variants.dimension_one) | The Dixmier Conjecture — dimension one | open | Associative Rings |  |  |
+| 88 | [`Arxiv.math.0608009.dixmier_conjecture.variants.dimension_two`](https://lefttosolve.com/p/Arxiv.math.0608009.dixmier_conjecture.variants.dimension_two) | The Dixmier Conjecture — dimension two | open | Associative Rings |  |  |
+| 89 | [`Arxiv.math.0608009.dixmier_conjecture.variants.poisson_implication`](https://lefttosolve.com/p/Arxiv.math.0608009.dixmier_conjecture.variants.poisson_implication) | The Dixmier Conjecture — poisson implication | known | Algebraic Geometry, Associative Rings, Nonassociative Rings |  |  |
+| 90 | [`Arxiv.math.0608009.poisson_conjecture.variants.dimension_one`](https://lefttosolve.com/p/Arxiv.math.0608009.poisson_conjecture.variants.dimension_one) | The Poisson Conjecture — dimension one | open | Algebraic Geometry, Nonassociative Rings |  |  |
+| 91 | [`Arxiv.math.0703548.bass_conjecture_integral_domain`](https://lefttosolve.com/p/Arxiv.math.0703548.bass_conjecture_integral_domain) | Bass conjecture for commutative integral domains, in idempotent-matrix form. | open | Associative Rings, Group Theory, K-Theory |  |  |
+| 92 | [`Arxiv.math.0703548.projective_module_isStablyFree`](https://lefttosolve.com/p/Arxiv.math.0703548.projective_module_isStablyFree) | Vanishing of the reduced projective class group for integral group rings. | open | Associative Rings, Group Theory, K-Theory |  |  |
+| 93 | [`AtiyahSutcliffe.conjecture_one`](https://lefttosolve.com/p/AtiyahSutcliffe.conjecture_one) | The first Atiyah--Sutcliffe conjecture | open | Geometry, Mechanics |  |  |
+| 94 | [`CunninghamChain.infinitely_many_firstKind_chains`](https://lefttosolve.com/p/CunninghamChain.infinitely_many_firstKind_chains) | Cunningham chains — Jones's conjecture — infinitely many firstKind chains | open | Number Theory |  |  |
+| 95 | [`CunninghamChain.infinitely_many_secondKind_chains`](https://lefttosolve.com/p/CunninghamChain.infinitely_many_secondKind_chains) | Cunningham chains — Jones's conjecture — infinitely many secondKind chains | open | Number Theory |  |  |
+| 96 | [`HopfAlgebraCohomology.cohomologyRing_finiteType`](https://lefttosolve.com/p/HopfAlgebraCohomology.cohomologyRing_finiteType) | Finite generation conjecture — cohomologyRing finiteType | open | Associative Rings, Category Theory |  |  |
+| 97 | [`HopfAlgebraCohomology.cohomologyRing_finiteType_monoidAlgebra`](https://lefttosolve.com/p/HopfAlgebraCohomology.cohomologyRing_finiteType_monoidAlgebra) | Evens–Venkov | known | Associative Rings, Group Theory |  |  |
+| 98 | [`HopfAlgebraCohomology.cohomologyRing_finiteType_of_isCocomm`](https://lefttosolve.com/p/HopfAlgebraCohomology.cohomologyRing_finiteType_of_isCocomm) | Friedlander–Suslin | known | Algebraic Geometry, Associative Rings, Category Theory |  |  |
+| 99 | [`HopfAlgebraCohomology.cohomology_finite`](https://lefttosolve.com/p/HopfAlgebraCohomology.cohomology_finite) | Finite generation conjecture — cohomology finite | open | Associative Rings, Category Theory |  |  |
+| 100 | [`HopfAlgebraCohomology.cohomology_finite_of_isCocomm`](https://lefttosolve.com/p/HopfAlgebraCohomology.cohomology_finite_of_isCocomm) | Friedlander–Suslin | known | Algebraic Geometry, Associative Rings, Category Theory |  |  |
+| 101 | [`Margulis.conjecture_1_1`](https://lefttosolve.com/p/Margulis.conjecture_1_1) | A conjecture by Margulis on matrix groups | open | Linear Algebra, Number Theory, Topological Groups |  |  |
+| 102 | [`NowhereDenseSpectralSet.exists_nowhereDense_spectralSet`](https://lefttosolve.com/p/NowhereDenseSpectralSet.exists_nowhereDense_spectralSet) | Spectral sets and weak tiling — exists nowhereDense spectralSet | open | Functional Analysis, Harmonic Analysis |  |  |
+| 103 | [`SpectralSetProduct.isSpectral_right_of_product_of_convexBody`](https://lefttosolve.com/p/SpectralSetProduct.isSpectral_right_of_product_of_convexBody) | Spectral sets and weak tiling — isSpectral right of product of convexBody | open | Functional Analysis, Harmonic Analysis |  |  |
+| 104 | [`SpectralSetProduct.isSpectral_right_of_product_one_dimensional`](https://lefttosolve.com/p/SpectralSetProduct.isSpectral_right_of_product_one_dimensional) | Spectral sets and weak tiling — isSpectral right of product one dimensional | known | Functional Analysis, Harmonic Analysis |  |  |
+| 105 | [`SpectralSetProduct.isSpectral_right_of_product_two_dimensional`](https://lefttosolve.com/p/SpectralSetProduct.isSpectral_right_of_product_two_dimensional) | Spectral sets and weak tiling — isSpectral right of product two dimensional | known | Functional Analysis, Harmonic Analysis |  |  |

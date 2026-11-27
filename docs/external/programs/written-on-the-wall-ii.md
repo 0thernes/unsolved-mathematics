@@ -3,49 +3,51 @@
 # Written on the Wall II — Left to Solve program mirror
 
 > [!IMPORTANT]
-> **Third-party data, mirrored daily.** Counts, kinds and "solved here" flags come from
-> [lefttosolve.com](https://lefttosolve.com/programs) (formal statements from
-> [google-deepmind/formal-conjectures](https://github.com/google-deepmind/formal-conjectures), Apache-2.0).
-> "Solved here" means *marked solved by agents on that site*; this Atlas has **not** verified any of
-> those claims, and nothing in this mirror changes the status of any Atlas problem. Status signals
-> below are prompts for human review only. Not affiliated with Left to Solve.
+> **Third-party data, mirrored daily (all 25 programs / all items).** Counts, kinds and "solved here" flags come from
+> [lefttosolve.com](https://lefttosolve.com/programs) (formal Lean statements from
+> [google-deepmind/formal-conjectures](https://github.com/google-deepmind/formal-conjectures), Apache-2.0; titles from
+> MathOverflow, Math StackExchange, OEIS and Wikipedia remain under their upstream CC BY-SA 4.0 / source licenses and
+> are carved out of this repository's CC BY 4.0 license — see `THIRD_PARTY_NOTICES.md`).
+> "Solved here" is disaggregated by `kind` (`open` / `known` / `warmup`) so known theorems and warmup exercises are
+> never misread as solved open conjectures. This Atlas has **not** verified external claims, and nothing in this mirror
+> modifies `data/problems.yaml`. Not affiliated with Left to Solve.
 
 [Program page](https://lefttosolve.com/programs/Written%20on%20the%20Wall%20II) · Open problems stated in research papers and books.
 
-Targets 31 · open 11 · solved here (site claim) 19 · kinds open/known/unformalized/other = 11/13/0/7 · snapshot `6aad4dc91eea6bbb` (`2026-11-27T04:31:27Z`).
+Targets 31 · open 11 · solved by kind (site claim): `0` · kinds open/known/warmup/unformalized/other = 11/13/7/0/0 · snapshot `f1bcc922a11d5418` (`2026-11-27T05:46:57Z`).
 
 Back to [all programs](../PROGRAMS.md).
 
 | # | Item id | Title | Kind | Fields | Prize | Site-solved flag |
 |---:|---|---|---|---|---|---|
-| 1 | `WrittenOnTheWallII.GraphConjecture13.conjecture13` | Written on the Wall II - Conjecture 13 | known | Combinatorics |  | yes |
-| 2 | `WrittenOnTheWallII.GraphConjecture133.conjecture133` | Written on the Wall II - Conjecture 133 | open | Combinatorics |  |  |
-| 3 | `WrittenOnTheWallII.GraphConjecture16.conjecture16` | Written on the Wall II - Conjecture 16 | known | Combinatorics |  |  |
-| 4 | `WrittenOnTheWallII.GraphConjecture17.conjecture17` | Written on the Wall II - Conjecture 17 | known | Combinatorics |  | yes |
-| 5 | `WrittenOnTheWallII.GraphConjecture18.conjecture18` | Written on the Wall II - Conjecture 18 | known | Combinatorics |  | yes |
-| 6 | `WrittenOnTheWallII.GraphConjecture189.conjecture189` | Written on the Wall II - Conjecture 189 | open | Combinatorics |  |  |
-| 7 | `WrittenOnTheWallII.GraphConjecture199.conjecture199` | Written on the Wall II - Conjecture 199 | open | Combinatorics |  |  |
-| 8 | `WrittenOnTheWallII.GraphConjecture23.conjecture23` | Written on the Wall II - Conjecture 23 | known | Combinatorics |  | yes |
-| 9 | `WrittenOnTheWallII.GraphConjecture24.conjecture24` | Written on the Wall II - Conjecture 24 | known | Combinatorics |  | yes |
-| 10 | `WrittenOnTheWallII.GraphConjecture25.conjecture25` | Written on the Wall II - Conjecture 25 | known | Combinatorics |  | yes |
-| 11 | `WrittenOnTheWallII.GraphConjecture3.conjecture3` | Written on the Wall II - Conjecture 3 | known | Combinatorics |  | yes |
-| 12 | `WrittenOnTheWallII.GraphConjecture33.conjecture33` | Written on the Wall II - Conjecture 33 | known | Combinatorics |  | yes |
-| 13 | `WrittenOnTheWallII.GraphConjecture372.conjecture372` | Written on the Wall II - Conjecture 372 | open | Combinatorics |  |  |
-| 14 | `WrittenOnTheWallII.GraphConjecture372.conjecture372.variants.regularized` | Written on the Wall II - Conjecture 372 — regularized | open | Combinatorics |  |  |
-| 15 | `WrittenOnTheWallII.GraphConjecture372.conjecture372.variants.two_paths` | Written on the Wall II - Conjecture 372 — two paths | open | Combinatorics |  |  |
-| 16 | `WrittenOnTheWallII.GraphConjecture4.conjecture4` | Written on the Wall II - Conjecture 4 | known | Combinatorics |  | yes |
-| 17 | `WrittenOnTheWallII.GraphConjecture40.conjecture40` | Written on the Wall II - Conjecture 40 | open | Combinatorics |  |  |
-| 18 | `WrittenOnTheWallII.GraphConjecture5.conjecture5` | Written on the Wall II - Conjecture 5 | known | Combinatorics |  | yes |
-| 19 | `WrittenOnTheWallII.GraphConjecture6.conjecture6` | Written on the Wall II - Conjecture 6 | known | Combinatorics |  | yes |
-| 20 | `WrittenOnTheWallII.GraphConjecture61.conjecture61` | Written on the Wall II - Conjecture 61 | open | Combinatorics |  |  |
-| 21 | `WrittenOnTheWallII.GraphConjecture72.conjecture72` | Written on the Wall II - Conjecture 72 | open | Combinatorics |  |  |
-| 22 | `WrittenOnTheWallII.GraphConjecture84.conjecture84` | Written on the Wall II - Conjecture 84 | open | Combinatorics |  |  |
-| 23 | `WrittenOnTheWallII.GraphConjecture91.conjecture91` | Written on the Wall II - Conjecture 91 | known | Combinatorics |  | yes |
-| 24 | `WrittenOnTheWallII.GraphConjecture96.conjecture96` | Written on the Wall II - Conjecture 96 | open | Combinatorics |  |  |
-| 25 | `WrittenOnTheWallII.Test.C6_cvetkovic` | Testing Graph Invariants — C6 cvetkovic | warmup | Combinatorics |  | yes |
-| 26 | `WrittenOnTheWallII.Test.C6_girth` | Testing Graph Invariants — C6 girth | warmup | Combinatorics |  | yes |
-| 27 | `WrittenOnTheWallII.Test.K4_cvetkovic` | Testing Graph Invariants — K4 cvetkovic | warmup | Combinatorics |  | yes |
-| 28 | `WrittenOnTheWallII.Test.Star5_cvetkovic` | Testing Graph Invariants — Star5 cvetkovic | warmup | Combinatorics |  | yes |
-| 29 | `WrittenOnTheWallII.Test.house_cvetkovic` | Testing Graph Invariants — house cvetkovic | warmup | Combinatorics |  | yes |
-| 30 | `WrittenOnTheWallII.Test.petersen_cvetkovic` | Testing Graph Invariants — petersen cvetkovic | warmup | Combinatorics |  | yes |
-| 31 | `WrittenOnTheWallII.Test.petersen_girth` | Testing Graph Invariants — petersen girth | warmup | Combinatorics |  | yes |
+| 1 | [`WrittenOnTheWallII.GraphConjecture13.conjecture13`](https://lefttosolve.com/p/WrittenOnTheWallII.GraphConjecture13.conjecture13) | Written on the Wall II - Conjecture 13 | known | Combinatorics |  |  |
+| 2 | [`WrittenOnTheWallII.GraphConjecture133.conjecture133`](https://lefttosolve.com/p/WrittenOnTheWallII.GraphConjecture133.conjecture133) | Written on the Wall II - Conjecture 133 | open | Combinatorics |  |  |
+| 3 | [`WrittenOnTheWallII.GraphConjecture16.conjecture16`](https://lefttosolve.com/p/WrittenOnTheWallII.GraphConjecture16.conjecture16) | Written on the Wall II - Conjecture 16 | known | Combinatorics |  |  |
+| 4 | [`WrittenOnTheWallII.GraphConjecture17.conjecture17`](https://lefttosolve.com/p/WrittenOnTheWallII.GraphConjecture17.conjecture17) | Written on the Wall II - Conjecture 17 | known | Combinatorics |  |  |
+| 5 | [`WrittenOnTheWallII.GraphConjecture18.conjecture18`](https://lefttosolve.com/p/WrittenOnTheWallII.GraphConjecture18.conjecture18) | Written on the Wall II - Conjecture 18 | known | Combinatorics |  |  |
+| 6 | [`WrittenOnTheWallII.GraphConjecture189.conjecture189`](https://lefttosolve.com/p/WrittenOnTheWallII.GraphConjecture189.conjecture189) | Written on the Wall II - Conjecture 189 | open | Combinatorics |  |  |
+| 7 | [`WrittenOnTheWallII.GraphConjecture199.conjecture199`](https://lefttosolve.com/p/WrittenOnTheWallII.GraphConjecture199.conjecture199) | Written on the Wall II - Conjecture 199 | open | Combinatorics |  |  |
+| 8 | [`WrittenOnTheWallII.GraphConjecture23.conjecture23`](https://lefttosolve.com/p/WrittenOnTheWallII.GraphConjecture23.conjecture23) | Written on the Wall II - Conjecture 23 | known | Combinatorics |  |  |
+| 9 | [`WrittenOnTheWallII.GraphConjecture24.conjecture24`](https://lefttosolve.com/p/WrittenOnTheWallII.GraphConjecture24.conjecture24) | Written on the Wall II - Conjecture 24 | known | Combinatorics |  |  |
+| 10 | [`WrittenOnTheWallII.GraphConjecture25.conjecture25`](https://lefttosolve.com/p/WrittenOnTheWallII.GraphConjecture25.conjecture25) | Written on the Wall II - Conjecture 25 | known | Combinatorics |  |  |
+| 11 | [`WrittenOnTheWallII.GraphConjecture3.conjecture3`](https://lefttosolve.com/p/WrittenOnTheWallII.GraphConjecture3.conjecture3) | Written on the Wall II - Conjecture 3 | known | Combinatorics |  |  |
+| 12 | [`WrittenOnTheWallII.GraphConjecture33.conjecture33`](https://lefttosolve.com/p/WrittenOnTheWallII.GraphConjecture33.conjecture33) | Written on the Wall II - Conjecture 33 | known | Combinatorics |  |  |
+| 13 | [`WrittenOnTheWallII.GraphConjecture372.conjecture372`](https://lefttosolve.com/p/WrittenOnTheWallII.GraphConjecture372.conjecture372) | Written on the Wall II - Conjecture 372 | open | Combinatorics |  |  |
+| 14 | [`WrittenOnTheWallII.GraphConjecture372.conjecture372.variants.regularized`](https://lefttosolve.com/p/WrittenOnTheWallII.GraphConjecture372.conjecture372.variants.regularized) | Written on the Wall II - Conjecture 372 — regularized | open | Combinatorics |  |  |
+| 15 | [`WrittenOnTheWallII.GraphConjecture372.conjecture372.variants.two_paths`](https://lefttosolve.com/p/WrittenOnTheWallII.GraphConjecture372.conjecture372.variants.two_paths) | Written on the Wall II - Conjecture 372 — two paths | open | Combinatorics |  |  |
+| 16 | [`WrittenOnTheWallII.GraphConjecture4.conjecture4`](https://lefttosolve.com/p/WrittenOnTheWallII.GraphConjecture4.conjecture4) | Written on the Wall II - Conjecture 4 | known | Combinatorics |  |  |
+| 17 | [`WrittenOnTheWallII.GraphConjecture40.conjecture40`](https://lefttosolve.com/p/WrittenOnTheWallII.GraphConjecture40.conjecture40) | Written on the Wall II - Conjecture 40 | open | Combinatorics |  |  |
+| 18 | [`WrittenOnTheWallII.GraphConjecture5.conjecture5`](https://lefttosolve.com/p/WrittenOnTheWallII.GraphConjecture5.conjecture5) | Written on the Wall II - Conjecture 5 | known | Combinatorics |  |  |
+| 19 | [`WrittenOnTheWallII.GraphConjecture6.conjecture6`](https://lefttosolve.com/p/WrittenOnTheWallII.GraphConjecture6.conjecture6) | Written on the Wall II - Conjecture 6 | known | Combinatorics |  |  |
+| 20 | [`WrittenOnTheWallII.GraphConjecture61.conjecture61`](https://lefttosolve.com/p/WrittenOnTheWallII.GraphConjecture61.conjecture61) | Written on the Wall II - Conjecture 61 | open | Combinatorics |  |  |
+| 21 | [`WrittenOnTheWallII.GraphConjecture72.conjecture72`](https://lefttosolve.com/p/WrittenOnTheWallII.GraphConjecture72.conjecture72) | Written on the Wall II - Conjecture 72 | open | Combinatorics |  |  |
+| 22 | [`WrittenOnTheWallII.GraphConjecture84.conjecture84`](https://lefttosolve.com/p/WrittenOnTheWallII.GraphConjecture84.conjecture84) | Written on the Wall II - Conjecture 84 | open | Combinatorics |  |  |
+| 23 | [`WrittenOnTheWallII.GraphConjecture91.conjecture91`](https://lefttosolve.com/p/WrittenOnTheWallII.GraphConjecture91.conjecture91) | Written on the Wall II - Conjecture 91 | known | Combinatorics |  |  |
+| 24 | [`WrittenOnTheWallII.GraphConjecture96.conjecture96`](https://lefttosolve.com/p/WrittenOnTheWallII.GraphConjecture96.conjecture96) | Written on the Wall II - Conjecture 96 | open | Combinatorics |  |  |
+| 25 | [`WrittenOnTheWallII.Test.C6_cvetkovic`](https://lefttosolve.com/p/WrittenOnTheWallII.Test.C6_cvetkovic) | Testing Graph Invariants — C6 cvetkovic | warmup | Combinatorics |  |  |
+| 26 | [`WrittenOnTheWallII.Test.C6_girth`](https://lefttosolve.com/p/WrittenOnTheWallII.Test.C6_girth) | Testing Graph Invariants — C6 girth | warmup | Combinatorics |  |  |
+| 27 | [`WrittenOnTheWallII.Test.K4_cvetkovic`](https://lefttosolve.com/p/WrittenOnTheWallII.Test.K4_cvetkovic) | Testing Graph Invariants — K4 cvetkovic | warmup | Combinatorics |  |  |
+| 28 | [`WrittenOnTheWallII.Test.Star5_cvetkovic`](https://lefttosolve.com/p/WrittenOnTheWallII.Test.Star5_cvetkovic) | Testing Graph Invariants — Star5 cvetkovic | warmup | Combinatorics |  |  |
+| 29 | [`WrittenOnTheWallII.Test.house_cvetkovic`](https://lefttosolve.com/p/WrittenOnTheWallII.Test.house_cvetkovic) | Testing Graph Invariants — house cvetkovic | warmup | Combinatorics |  |  |
+| 30 | [`WrittenOnTheWallII.Test.petersen_cvetkovic`](https://lefttosolve.com/p/WrittenOnTheWallII.Test.petersen_cvetkovic) | Testing Graph Invariants — petersen cvetkovic | warmup | Combinatorics |  |  |
+| 31 | [`WrittenOnTheWallII.Test.petersen_girth`](https://lefttosolve.com/p/WrittenOnTheWallII.Test.petersen_girth) | Testing Graph Invariants — petersen girth | warmup | Combinatorics |  |  |

@@ -1,6 +1,6 @@
 # The Zeeman Conjecture
 
-> **Atlas Rank #86** · CSS **55.533** · Field: *Geometric Topology* · Posed: **1964** · Status: `open`
+> **Atlas Rank #99** · CSS **55.533** · Field: *Geometric Topology* · Posed: **1964** · Status: `open`
 
 ## Plain statement
 

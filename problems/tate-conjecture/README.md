@@ -1,6 +1,6 @@
 # The Tate Conjecture
 
-> **Atlas Rank #15** · CSS **72.6** · Field: *Arithmetic Geometry* · Posed: **1963** · Status: `open`
+> **Atlas Rank #20** · CSS **72.6** · Field: *Arithmetic Geometry* · Posed: **1963** · Status: `open`
 
 ## Plain statement
 

@@ -1,6 +1,6 @@
 {"fields": ["Number Theory"], "id": "OeisA100474.conjecture", "kind": "open", "prize": null, "solved": false, "title": "Conjectures associated with A100474"}
 {"fields": ["Number Theory"], "id": "OeisA100475.conjecture", "kind": "open", "prize": null, "solved": false, "title": "Prime-th recurrence with reversal at each step"}
-{"fields": ["Number Theory"], "id": "OeisA100478.conjecture", "kind": "known", "prize": null, "solved": true, "title": "Pentanacci $\\pi$ sequence"}
+{"fields": ["Number Theory"], "id": "OeisA100478.conjecture", "kind": "known", "prize": null, "solved": false, "title": "Pentanacci $\\pi$ sequence"}
 {"fields": ["Number Theory"], "id": "OeisA100800.conjecture", "kind": "open", "prize": null, "solved": false, "title": "Conjectures associated with A100800"}
 {"fields": ["Number Theory"], "id": "OeisA101779.conjecture", "kind": "open", "prize": null, "solved": false, "title": "Conjectures associated with A101779"}
 {"fields": ["Number Theory"], "id": "OeisA102847.conjecture", "kind": "open", "prize": null, "solved": false, "title": "$a(0) = 1$, $a(n) = a(n-1)a(n-1) + 2$"}
@@ -12,9 +12,9 @@
 {"fields": ["Number Theory"], "id": "OeisA105210.conjecture_disjoint_starting_values", "kind": "open", "prize": null, "solved": false, "title": "Conjectures associated with A105210 — conjecture disjoint starting values"}
 {"fields": ["Number Theory"], "id": "OeisA105720.conjecture", "kind": "open", "prize": null, "solved": false, "title": "Triangular matchstick numbers in the class of prime numbers"}
 {"fields": ["Number Theory"], "id": "OeisA105751.conjecture.variants.moll_p_mod_4_eq_1", "kind": "open", "prize": null, "solved": false, "title": "Imaginary part of $\\prod_{k=0}^n (1 + k \\cdot i)$, $i = \\sqrt{-1}$ — moll p mod 4 eq 1"}
-{"fields": ["Number Theory"], "id": "OeisA105751.prime_divides_some_term", "kind": "warmup", "prize": null, "solved": true, "title": "Imaginary part of $\\prod_{k=0}^n (1 + k \\cdot i)$, $i = \\sqrt{-1}$"}
+{"fields": ["Number Theory"], "id": "OeisA105751.prime_divides_some_term", "kind": "warmup", "prize": null, "solved": false, "title": "Imaginary part of $\\prod_{k=0}^n (1 + k \\cdot i)$, $i = \\sqrt{-1}$"}
 {"fields": ["Number Theory"], "id": "OeisA107247.conjecture", "kind": "open", "prize": null, "solved": false, "title": "Sum of squares of nonacci numbers — conjecture"}
-{"fields": ["Number Theory"], "id": "OeisA107247.known_prime_and_semiprimes", "kind": "warmup", "prize": null, "solved": true, "title": "Sum of squares of nonacci numbers — known prime and semiprimes"}
+{"fields": ["Number Theory"], "id": "OeisA107247.known_prime_and_semiprimes", "kind": "warmup", "prize": null, "solved": false, "title": "Sum of squares of nonacci numbers — known prime and semiprimes"}
 {"fields": ["Number Theory"], "id": "OeisA108129.conjecture", "kind": "open", "prize": null, "solved": false, "title": "Riesel Problem"}
 {"fields": ["Number Theory"], "id": "OeisA108301.conjecture", "kind": "open", "prize": null, "solved": false, "title": "Digital sum of the Fermat number $2^{2^n} + 1$"}
 {"fields": ["Number Theory"], "id": "OeisA108569.conjecture", "kind": "open", "prize": null, "solved": false, "title": "Numbers $n$ such that $\\phi(n) = \\phi(n + \\phi(n))$"}
@@ -33,7 +33,7 @@
 {"fields": ["Number Theory"], "id": "OeisA110854.conjecture", "kind": "open", "prize": null, "solved": false, "title": "Conjectures associated with A110854"}
 {"fields": ["Number Theory"], "id": "OeisA111114.conjecture", "kind": "open", "prize": null, "solved": false, "title": "Integer part of $\\mathrm{prime}(n)/\\pi(n)$"}
 {"fields": ["Number Theory"], "id": "OeisA111291.colton_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Number of refactorable numbers (A033950) $\\le 10^n$ — colton conjecture"}
-{"fields": ["Number Theory"], "id": "OeisA111291.conjecture", "kind": "known", "prize": null, "solved": true, "title": "Number of refactorable numbers (A033950) $\\le 10^n$ — conjecture"}
+{"fields": ["Number Theory"], "id": "OeisA111291.conjecture", "kind": "known", "prize": null, "solved": false, "title": "Number of refactorable numbers (A033950) $\\le 10^n$ — conjecture"}
 {"fields": ["Number Theory"], "id": "OeisA113010.conjecture", "kind": "open", "prize": null, "solved": false, "title": "Number of digits of n raised to the power of the sum of the digits of n"}
 {"fields": ["Number Theory"], "id": "OeisA113213.conjecture", "kind": "open", "prize": null, "solved": false, "title": "Smallest number $m$ such that $2^n - m$ and $2^n + m$ are primes"}
 {"fields": ["Number Theory"], "id": "OeisA113257.conjecture1", "kind": "open", "prize": null, "solved": false, "title": "Ascending descending base exponent transform of squares — conjecture1"}
@@ -67,9 +67,9 @@
 {"fields": ["Number Theory"], "id": "OeisA153330.conjecture3", "kind": "open", "prize": null, "solved": false, "title": "Collatz step differences — conjecture3"}
 {"fields": ["Number Theory"], "id": "OeisA153330.conjecture4", "kind": "open", "prize": null, "solved": false, "title": "Collatz step differences — conjecture4"}
 {"fields": ["Number Theory"], "id": "OeisA157237.conjecture", "kind": "open", "prize": null, "solved": false, "title": "Representations as $p + 2^x + 11 \\cdot 2^y$ with $p \\equiv 1 \\pmod 6$"}
-{"fields": ["Combinatorics", "Number Theory"], "id": "OeisA158110.a_0", "kind": "warmup", "prize": null, "solved": true, "title": "Exponentials of $\\sum_{n \\ge 1} q^{n^m} x^n / n$ — a 0"}
-{"fields": ["Combinatorics", "Number Theory"], "id": "OeisA158110.a_1", "kind": "warmup", "prize": null, "solved": true, "title": "Exponentials of $\\sum_{n \\ge 1} q^{n^m} x^n / n$ — a 1"}
-{"fields": ["Combinatorics", "Number Theory"], "id": "OeisA158110.a_2", "kind": "warmup", "prize": null, "solved": true, "title": "Exponentials of $\\sum_{n \\ge 1} q^{n^m} x^n / n$ — a 2"}
+{"fields": ["Combinatorics", "Number Theory"], "id": "OeisA158110.a_0", "kind": "warmup", "prize": null, "solved": false, "title": "Exponentials of $\\sum_{n \\ge 1} q^{n^m} x^n / n$ — a 0"}
+{"fields": ["Combinatorics", "Number Theory"], "id": "OeisA158110.a_1", "kind": "warmup", "prize": null, "solved": false, "title": "Exponentials of $\\sum_{n \\ge 1} q^{n^m} x^n / n$ — a 1"}
+{"fields": ["Combinatorics", "Number Theory"], "id": "OeisA158110.a_2", "kind": "warmup", "prize": null, "solved": false, "title": "Exponentials of $\\sum_{n \\ge 1} q^{n^m} x^n / n$ — a 2"}
 {"fields": ["Number Theory"], "id": "OeisA159829.conjecture2", "kind": "open", "prize": null, "solved": false, "title": "Smallest $m$ such that $n^3 + m^3 + 1$ is prime"}
 {"fields": ["Number Theory"], "id": "OeisA1599.eq_one_of_odd_of_a", "kind": "open", "prize": null, "solved": false, "title": "Ore's harmonic numbers"}
 {"fields": ["Number Theory"], "id": "OeisA160324.conjecture1", "kind": "open", "prize": null, "solved": false, "title": "Number of ways to express $n$ as sum of square, pentagonal, and hexagonal numbers — conjecture1"}
@@ -93,26 +93,26 @@
 {"fields": ["Number Theory"], "id": "OeisA179537.conjecture3", "kind": "open", "prize": null, "solved": false, "title": "Central binomial sum $a(n) = \\sum_{k=0}^n \\binom{n}{k}^2 \\binom{n-k}{k}^2 (-16)^k$ — conjecture3"}
 {"fields": ["Number Theory"], "id": "OeisA179537.conjecture4", "kind": "open", "prize": null, "solved": false, "title": "Central binomial sum $a(n) = \\sum_{k=0}^n \\binom{n}{k}^2 \\binom{n-k}{k}^2 (-16)^k$ — conjecture4"}
 {"fields": ["Number Theory"], "id": "OeisA180017.conjecture", "kind": "open", "prize": null, "solved": false, "title": "Difference of digit sums in base 3 and base 2"}
-{"fields": ["Number Theory"], "id": "OeisA181076.a_0", "kind": "warmup", "prize": null, "solved": true, "title": "Hanna's exponential series for $\\binom{n+k-1}{k}^{n}$ — a 0"}
-{"fields": ["Number Theory"], "id": "OeisA181076.a_1", "kind": "warmup", "prize": null, "solved": true, "title": "Hanna's exponential series for $\\binom{n+k-1}{k}^{n}$ — a 1"}
-{"fields": ["Number Theory"], "id": "OeisA181076.a_2", "kind": "warmup", "prize": null, "solved": true, "title": "Hanna's exponential series for $\\binom{n+k-1}{k}^{n}$ — a 2"}
-{"fields": ["Number Theory"], "id": "OeisA181076.a_3", "kind": "warmup", "prize": null, "solved": true, "title": "Hanna's exponential series for $\\binom{n+k-1}{k}^{n}$ — a 3"}
-{"fields": ["Number Theory"], "id": "OeisA181076.a_4", "kind": "warmup", "prize": null, "solved": true, "title": "Hanna's exponential series for $\\binom{n+k-1}{k}^{n}$ — a 4"}
-{"fields": ["Number Theory"], "id": "OeisA181078.a_0", "kind": "warmup", "prize": null, "solved": true, "title": "Hanna's exponential series for $\\binom{n+k-1}{k}^{n+k-1}$ — a 0"}
-{"fields": ["Number Theory"], "id": "OeisA181078.a_1", "kind": "warmup", "prize": null, "solved": true, "title": "Hanna's exponential series for $\\binom{n+k-1}{k}^{n+k-1}$ — a 1"}
-{"fields": ["Number Theory"], "id": "OeisA181078.a_2", "kind": "warmup", "prize": null, "solved": true, "title": "Hanna's exponential series for $\\binom{n+k-1}{k}^{n+k-1}$ — a 2"}
-{"fields": ["Number Theory"], "id": "OeisA181078.a_3", "kind": "warmup", "prize": null, "solved": true, "title": "Hanna's exponential series for $\\binom{n+k-1}{k}^{n+k-1}$ — a 3"}
-{"fields": ["Number Theory"], "id": "OeisA181078.a_4", "kind": "warmup", "prize": null, "solved": true, "title": "Hanna's exponential series for $\\binom{n+k-1}{k}^{n+k-1}$ — a 4"}
-{"fields": ["Number Theory"], "id": "OeisA181082.a_0", "kind": "warmup", "prize": null, "solved": true, "title": "Hanna's exponential series for $\\binom{n}{k}^{n+k}$ — a 0"}
-{"fields": ["Number Theory"], "id": "OeisA181082.a_1", "kind": "warmup", "prize": null, "solved": true, "title": "Hanna's exponential series for $\\binom{n}{k}^{n+k}$ — a 1"}
-{"fields": ["Number Theory"], "id": "OeisA181082.a_2", "kind": "warmup", "prize": null, "solved": true, "title": "Hanna's exponential series for $\\binom{n}{k}^{n+k}$ — a 2"}
-{"fields": ["Number Theory"], "id": "OeisA181082.a_3", "kind": "warmup", "prize": null, "solved": true, "title": "Hanna's exponential series for $\\binom{n}{k}^{n+k}$ — a 3"}
-{"fields": ["Number Theory"], "id": "OeisA181082.a_4", "kind": "warmup", "prize": null, "solved": true, "title": "Hanna's exponential series for $\\binom{n}{k}^{n+k}$ — a 4"}
-{"fields": ["Number Theory"], "id": "OeisA181084.a_0", "kind": "warmup", "prize": null, "solved": true, "title": "Hanna's exponential series for $\\binom{n}{k}^{n+k+1}$ — a 0"}
-{"fields": ["Number Theory"], "id": "OeisA181084.a_1", "kind": "warmup", "prize": null, "solved": true, "title": "Hanna's exponential series for $\\binom{n}{k}^{n+k+1}$ — a 1"}
-{"fields": ["Number Theory"], "id": "OeisA181084.a_2", "kind": "warmup", "prize": null, "solved": true, "title": "Hanna's exponential series for $\\binom{n}{k}^{n+k+1}$ — a 2"}
-{"fields": ["Number Theory"], "id": "OeisA181084.a_3", "kind": "warmup", "prize": null, "solved": true, "title": "Hanna's exponential series for $\\binom{n}{k}^{n+k+1}$ — a 3"}
-{"fields": ["Number Theory"], "id": "OeisA181084.a_4", "kind": "warmup", "prize": null, "solved": true, "title": "Hanna's exponential series for $\\binom{n}{k}^{n+k+1}$ — a 4"}
+{"fields": ["Number Theory"], "id": "OeisA181076.a_0", "kind": "warmup", "prize": null, "solved": false, "title": "Hanna's exponential series for $\\binom{n+k-1}{k}^{n}$ — a 0"}
+{"fields": ["Number Theory"], "id": "OeisA181076.a_1", "kind": "warmup", "prize": null, "solved": false, "title": "Hanna's exponential series for $\\binom{n+k-1}{k}^{n}$ — a 1"}
+{"fields": ["Number Theory"], "id": "OeisA181076.a_2", "kind": "warmup", "prize": null, "solved": false, "title": "Hanna's exponential series for $\\binom{n+k-1}{k}^{n}$ — a 2"}
+{"fields": ["Number Theory"], "id": "OeisA181076.a_3", "kind": "warmup", "prize": null, "solved": false, "title": "Hanna's exponential series for $\\binom{n+k-1}{k}^{n}$ — a 3"}
+{"fields": ["Number Theory"], "id": "OeisA181076.a_4", "kind": "warmup", "prize": null, "solved": false, "title": "Hanna's exponential series for $\\binom{n+k-1}{k}^{n}$ — a 4"}
+{"fields": ["Number Theory"], "id": "OeisA181078.a_0", "kind": "warmup", "prize": null, "solved": false, "title": "Hanna's exponential series for $\\binom{n+k-1}{k}^{n+k-1}$ — a 0"}
+{"fields": ["Number Theory"], "id": "OeisA181078.a_1", "kind": "warmup", "prize": null, "solved": false, "title": "Hanna's exponential series for $\\binom{n+k-1}{k}^{n+k-1}$ — a 1"}
+{"fields": ["Number Theory"], "id": "OeisA181078.a_2", "kind": "warmup", "prize": null, "solved": false, "title": "Hanna's exponential series for $\\binom{n+k-1}{k}^{n+k-1}$ — a 2"}
+{"fields": ["Number Theory"], "id": "OeisA181078.a_3", "kind": "warmup", "prize": null, "solved": false, "title": "Hanna's exponential series for $\\binom{n+k-1}{k}^{n+k-1}$ — a 3"}
+{"fields": ["Number Theory"], "id": "OeisA181078.a_4", "kind": "warmup", "prize": null, "solved": false, "title": "Hanna's exponential series for $\\binom{n+k-1}{k}^{n+k-1}$ — a 4"}
+{"fields": ["Number Theory"], "id": "OeisA181082.a_0", "kind": "warmup", "prize": null, "solved": false, "title": "Hanna's exponential series for $\\binom{n}{k}^{n+k}$ — a 0"}
+{"fields": ["Number Theory"], "id": "OeisA181082.a_1", "kind": "warmup", "prize": null, "solved": false, "title": "Hanna's exponential series for $\\binom{n}{k}^{n+k}$ — a 1"}
+{"fields": ["Number Theory"], "id": "OeisA181082.a_2", "kind": "warmup", "prize": null, "solved": false, "title": "Hanna's exponential series for $\\binom{n}{k}^{n+k}$ — a 2"}
+{"fields": ["Number Theory"], "id": "OeisA181082.a_3", "kind": "warmup", "prize": null, "solved": false, "title": "Hanna's exponential series for $\\binom{n}{k}^{n+k}$ — a 3"}
+{"fields": ["Number Theory"], "id": "OeisA181082.a_4", "kind": "warmup", "prize": null, "solved": false, "title": "Hanna's exponential series for $\\binom{n}{k}^{n+k}$ — a 4"}
+{"fields": ["Number Theory"], "id": "OeisA181084.a_0", "kind": "warmup", "prize": null, "solved": false, "title": "Hanna's exponential series for $\\binom{n}{k}^{n+k+1}$ — a 0"}
+{"fields": ["Number Theory"], "id": "OeisA181084.a_1", "kind": "warmup", "prize": null, "solved": false, "title": "Hanna's exponential series for $\\binom{n}{k}^{n+k+1}$ — a 1"}
+{"fields": ["Number Theory"], "id": "OeisA181084.a_2", "kind": "warmup", "prize": null, "solved": false, "title": "Hanna's exponential series for $\\binom{n}{k}^{n+k+1}$ — a 2"}
+{"fields": ["Number Theory"], "id": "OeisA181084.a_3", "kind": "warmup", "prize": null, "solved": false, "title": "Hanna's exponential series for $\\binom{n}{k}^{n+k+1}$ — a 3"}
+{"fields": ["Number Theory"], "id": "OeisA181084.a_4", "kind": "warmup", "prize": null, "solved": false, "title": "Hanna's exponential series for $\\binom{n}{k}^{n+k+1}$ — a 4"}
 {"fields": ["Number Theory"], "id": "OeisA181391.conjecture", "kind": "open", "prize": null, "solved": false, "title": "Van Eck's sequence (OEIS A181391)"}
 {"fields": ["Linear Algebra", "Number Theory"], "id": "OeisA1818.conjecture2", "kind": "known", "prize": null, "solved": false, "title": "Squares of double factorials"}
 {"fields": ["Number Theory"], "id": "OeisA182126.conjecture1", "kind": "open", "prize": null, "solved": false, "title": "Product of two consecutive primes modulo the next prime — conjecture1"}
@@ -120,20 +120,20 @@
 {"fields": ["Number Theory"], "id": "OeisA182126.conjecture3", "kind": "open", "prize": null, "solved": false, "title": "Product of two consecutive primes modulo the next prime — conjecture3"}
 {"fields": ["Number Theory"], "id": "OeisA182510.conjecture1", "kind": "open", "prize": null, "solved": false, "title": "Recurrence with bitwise XOR — conjecture1"}
 {"fields": ["Number Theory"], "id": "OeisA182510.conjecture2", "kind": "open", "prize": null, "solved": false, "title": "Recurrence with bitwise XOR — conjecture2"}
-{"fields": ["Number Theory"], "id": "OeisA183128.a_0", "kind": "warmup", "prize": null, "solved": true, "title": "Hanna's exponential series for $\\binom{n+k-1}{k}^{k^2+1}$ — a 0"}
-{"fields": ["Number Theory"], "id": "OeisA183128.a_1", "kind": "warmup", "prize": null, "solved": true, "title": "Hanna's exponential series for $\\binom{n+k-1}{k}^{k^2+1}$ — a 1"}
-{"fields": ["Number Theory"], "id": "OeisA183128.a_2", "kind": "warmup", "prize": null, "solved": true, "title": "Hanna's exponential series for $\\binom{n+k-1}{k}^{k^2+1}$ — a 2"}
-{"fields": ["Number Theory"], "id": "OeisA183128.a_3", "kind": "warmup", "prize": null, "solved": true, "title": "Hanna's exponential series for $\\binom{n+k-1}{k}^{k^2+1}$ — a 3"}
-{"fields": ["Number Theory"], "id": "OeisA183128.a_4", "kind": "warmup", "prize": null, "solved": true, "title": "Hanna's exponential series for $\\binom{n+k-1}{k}^{k^2+1}$ — a 4"}
-{"fields": ["Number Theory"], "id": "OeisA183129.a_0", "kind": "warmup", "prize": null, "solved": true, "title": "Hanna's exponential series for $\\binom{n+k-1}{k}^{k^2+k}$ — a 0"}
-{"fields": ["Number Theory"], "id": "OeisA183129.a_1", "kind": "warmup", "prize": null, "solved": true, "title": "Hanna's exponential series for $\\binom{n+k-1}{k}^{k^2+k}$ — a 1"}
-{"fields": ["Number Theory"], "id": "OeisA183129.a_2", "kind": "warmup", "prize": null, "solved": true, "title": "Hanna's exponential series for $\\binom{n+k-1}{k}^{k^2+k}$ — a 2"}
-{"fields": ["Number Theory"], "id": "OeisA183129.a_3", "kind": "warmup", "prize": null, "solved": true, "title": "Hanna's exponential series for $\\binom{n+k-1}{k}^{k^2+k}$ — a 3"}
-{"fields": ["Number Theory"], "id": "OeisA183129.a_4", "kind": "warmup", "prize": null, "solved": true, "title": "Hanna's exponential series for $\\binom{n+k-1}{k}^{k^2+k}$ — a 4"}
+{"fields": ["Number Theory"], "id": "OeisA183128.a_0", "kind": "warmup", "prize": null, "solved": false, "title": "Hanna's exponential series for $\\binom{n+k-1}{k}^{k^2+1}$ — a 0"}
+{"fields": ["Number Theory"], "id": "OeisA183128.a_1", "kind": "warmup", "prize": null, "solved": false, "title": "Hanna's exponential series for $\\binom{n+k-1}{k}^{k^2+1}$ — a 1"}
+{"fields": ["Number Theory"], "id": "OeisA183128.a_2", "kind": "warmup", "prize": null, "solved": false, "title": "Hanna's exponential series for $\\binom{n+k-1}{k}^{k^2+1}$ — a 2"}
+{"fields": ["Number Theory"], "id": "OeisA183128.a_3", "kind": "warmup", "prize": null, "solved": false, "title": "Hanna's exponential series for $\\binom{n+k-1}{k}^{k^2+1}$ — a 3"}
+{"fields": ["Number Theory"], "id": "OeisA183128.a_4", "kind": "warmup", "prize": null, "solved": false, "title": "Hanna's exponential series for $\\binom{n+k-1}{k}^{k^2+1}$ — a 4"}
+{"fields": ["Number Theory"], "id": "OeisA183129.a_0", "kind": "warmup", "prize": null, "solved": false, "title": "Hanna's exponential series for $\\binom{n+k-1}{k}^{k^2+k}$ — a 0"}
+{"fields": ["Number Theory"], "id": "OeisA183129.a_1", "kind": "warmup", "prize": null, "solved": false, "title": "Hanna's exponential series for $\\binom{n+k-1}{k}^{k^2+k}$ — a 1"}
+{"fields": ["Number Theory"], "id": "OeisA183129.a_2", "kind": "warmup", "prize": null, "solved": false, "title": "Hanna's exponential series for $\\binom{n+k-1}{k}^{k^2+k}$ — a 2"}
+{"fields": ["Number Theory"], "id": "OeisA183129.a_3", "kind": "warmup", "prize": null, "solved": false, "title": "Hanna's exponential series for $\\binom{n+k-1}{k}^{k^2+k}$ — a 3"}
+{"fields": ["Number Theory"], "id": "OeisA183129.a_4", "kind": "warmup", "prize": null, "solved": false, "title": "Hanna's exponential series for $\\binom{n+k-1}{k}^{k^2+k}$ — a 4"}
 {"fields": ["Number Theory"], "id": "OeisA185150.conjecture", "kind": "open", "prize": null, "solved": false, "title": "Number of odd primes between $n^2$ and $(n+1)^2$ with $(n/p) = 1$"}
 {"fields": ["Number Theory"], "id": "OeisA187759.conjecture", "kind": "open", "prize": null, "solved": false, "title": "Number of ways to write $n = x + y$ ($0 < x < y < n$) with $6x \\pm 1$ and $6y \\pm 1$ prime"}
-{"fields": ["Number Theory"], "id": "OeisA189286.conjecture_1", "kind": "known", "prize": null, "solved": true, "title": "Normalized convolution of $\\binom{6k}{3k}\\binom{3k}{k}$ — conjecture 1"}
-{"fields": ["Number Theory"], "id": "OeisA189286.conjecture_2", "kind": "warmup", "prize": null, "solved": true, "title": "Normalized convolution of $\\binom{6k}{3k}\\binom{3k}{k}$ — conjecture 2"}
+{"fields": ["Number Theory"], "id": "OeisA189286.conjecture_1", "kind": "known", "prize": null, "solved": false, "title": "Normalized convolution of $\\binom{6k}{3k}\\binom{3k}{k}$ — conjecture 1"}
+{"fields": ["Number Theory"], "id": "OeisA189286.conjecture_2", "kind": "warmup", "prize": null, "solved": false, "title": "Normalized convolution of $\\binom{6k}{3k}\\binom{3k}{k}$ — conjecture 2"}
 {"fields": ["Number Theory"], "id": "OeisA189286.conjecture_3", "kind": "open", "prize": null, "solved": false, "title": "Normalized convolution of $\\binom{6k}{3k}\\binom{3k}{k}$ — conjecture 3"}
 {"fields": ["Number Theory"], "id": "OeisA189409.conjecture_1", "kind": "open", "prize": null, "solved": false, "title": "Primorial squared plus one — conjecture 1"}
 {"fields": ["Number Theory"], "id": "OeisA189409.conjecture_2", "kind": "open", "prize": null, "solved": false, "title": "Primorial squared plus one — conjecture 2"}
@@ -142,7 +142,7 @@
 {"fields": ["Number Theory"], "id": "OeisA191004.conjecture_1", "kind": "open", "prize": null, "solved": false, "title": "Representations of $n = p + q + (n \\bmod 2)q$ with Jacobi symbol constraints — conjecture 1"}
 {"fields": ["Number Theory"], "id": "OeisA191004.conjecture_2", "kind": "open", "prize": null, "solved": false, "title": "Representations of $n = p + q + (n \\bmod 2)q$ with Jacobi symbol constraints — conjecture 2"}
 {"fields": ["Number Theory"], "id": "OeisA191004.conjecture_3", "kind": "open", "prize": null, "solved": false, "title": "Representations of $n = p + q + (n \\bmod 2)q$ with Jacobi symbol constraints — conjecture 3"}
-{"fields": ["Number Theory"], "id": "OeisA193279.a_eq_self_of_perfect_of_even", "kind": "warmup", "prize": null, "solved": true, "title": "Number of distinct sums of distinct proper divisors of $n$"}
+{"fields": ["Number Theory"], "id": "OeisA193279.a_eq_self_of_perfect_of_even", "kind": "warmup", "prize": null, "solved": false, "title": "Number of distinct sums of distinct proper divisors of $n$"}
 {"fields": ["Number Theory"], "id": "OeisA195441.conjecture", "kind": "open", "prize": null, "solved": false, "title": "Denominator of $B_{n+1}(x) - B_{n+1}$"}
 {"fields": ["Number Theory"], "id": "OeisA196697.conjecture_1", "kind": "open", "prize": null, "solved": false, "title": "Number of primes of the form $2^n \\pm 2^k \\pm 1$ with $0 \\le k < n$ — conjecture 1"}
 {"fields": ["Number Theory"], "id": "OeisA196697.conjecture_2", "kind": "open", "prize": null, "solved": false, "title": "Number of primes of the form $2^n \\pm 2^k \\pm 1$ with $0 \\le k < n$ — conjecture 2"}
@@ -150,8 +150,8 @@
 {"fields": ["Number Theory"], "id": "OeisA196698.conjecture_2", "kind": "open", "prize": null, "solved": false, "title": "Primes of the form $3^n \\pm 3^k \\pm 1$ — conjecture 2"}
 {"fields": ["Number Theory"], "id": "OeisA197630.conjecture", "kind": "open", "prize": null, "solved": false, "title": "Lerch quotients of odd primes"}
 {"fields": ["Computer Science", "Number Theory"], "id": "OeisA2.density_one", "kind": "open", "prize": null, "solved": false, "title": "Density of ones in the Kolakoski sequence"}
-{"fields": ["Number Theory"], "id": "OeisA206911.conjecture_1", "kind": "known", "prize": null, "solved": true, "title": "Position of $n$-th partial sum of the harmonic series when jointly ranked with $\\{\\log(k+1)\\}$ — conjecture 1"}
-{"fields": ["Number Theory"], "id": "OeisA206911.conjecture_2", "kind": "known", "prize": null, "solved": true, "title": "Position of $n$-th partial sum of the harmonic series when jointly ranked with $\\{\\log(k+1)\\}$ — conjecture 2"}
+{"fields": ["Number Theory"], "id": "OeisA206911.conjecture_1", "kind": "known", "prize": null, "solved": false, "title": "Position of $n$-th partial sum of the harmonic series when jointly ranked with $\\{\\log(k+1)\\}$ — conjecture 1"}
+{"fields": ["Number Theory"], "id": "OeisA206911.conjecture_2", "kind": "known", "prize": null, "solved": false, "title": "Position of $n$-th partial sum of the harmonic series when jointly ranked with $\\{\\log(k+1)\\}$ — conjecture 2"}
 {"fields": ["Number Theory"], "id": "OeisA208425.conjecture_1", "kind": "open", "prize": null, "solved": false, "title": "Expansion of $\\sum_{n \\ge 0} \\frac{(3n)!}{n!^3} \\frac{x^{2n}}{(1-x)^{3n+1}}$ — conjecture 1"}
 {"fields": ["Number Theory"], "id": "OeisA208425.conjecture_2", "kind": "open", "prize": null, "solved": false, "title": "Expansion of $\\sum_{n \\ge 0} \\frac{(3n)!}{n!^3} \\frac{x^{2n}}{(1-x)^{3n+1}}$ — conjecture 2"}
 {"fields": ["Number Theory"], "id": "OeisA208425.conjecture_3", "kind": "open", "prize": null, "solved": false, "title": "Expansion of $\\sum_{n \\ge 0} \\frac{(3n)!}{n!^3} \\frac{x^{2n}}{(1-x)^{3n+1}}$ — conjecture 3"}
@@ -173,7 +173,7 @@
 {"fields": ["Number Theory"], "id": "OeisA216265.conjecture", "kind": "open", "prize": null, "solved": false, "title": "Number of primes between $n^3 - n$ and $n^3$"}
 {"fields": ["Number Theory"], "id": "OeisA217317.conjecture", "kind": "open", "prize": null, "solved": false, "title": "Number of primes between $n^2$ and $n^2 + (\\log_2 n)^2$"}
 {"fields": ["Field Theory", "Number Theory"], "id": "OeisA217703.conjecture_1", "kind": "open", "prize": null, "solved": false, "title": "Recurrence $a(n+1) = 2n(n+1)a(n) - n^4 a(n-1)$ and associated polynomials — conjecture 1"}
-{"fields": ["Number Theory"], "id": "OeisA217703.conjecture_2", "kind": "known", "prize": null, "solved": true, "title": "Recurrence $a(n+1) = 2n(n+1)a(n) - n^4 a(n-1)$ and associated polynomials — conjecture 2"}
+{"fields": ["Number Theory"], "id": "OeisA217703.conjecture_2", "kind": "known", "prize": null, "solved": false, "title": "Recurrence $a(n+1) = 2n(n+1)a(n) - n^4 a(n-1)$ and associated polynomials — conjecture 2"}
 {"fields": ["Number Theory"], "id": "OeisA217785.conjecture_1", "kind": "open", "prize": null, "solved": false, "title": "Smallest integer $s > n$ such that $1 + 2s + 3s^2 + \\dots + n s^{n-1}$ is prime — conjecture 1"}
 {"fields": ["Number Theory"], "id": "OeisA217785.conjecture_2", "kind": "open", "prize": null, "solved": false, "title": "Smallest integer $s > n$ such that $1 + 2s + 3s^2 + \\dots + n s^{n-1}$ is prime — conjecture 2"}
 {"fields": ["Field Theory", "Number Theory"], "id": "OeisA217785.conjecture_3", "kind": "open", "prize": null, "solved": false, "title": "Smallest integer $s > n$ such that $1 + 2s + 3s^2 + \\dots + n s^{n-1}$ is prime — conjecture 3"}
@@ -199,13 +199,13 @@
 {"fields": ["Number Theory"], "id": "OeisA219838.conjecture_3", "kind": "open", "prize": null, "solved": false, "title": "Partitions of $n$ into $x + y$ with $(xy)^2 + xy + 1$ prime — conjecture 3"}
 {"fields": ["Number Theory"], "id": "OeisA223086.conjecture", "kind": "open", "prize": null, "solved": false, "title": "Trajectory of $64$ under the map $n \\to \\text{A006368}(n)$"}
 {"fields": ["Number Theory"], "id": "OeisA224.conjecture", "kind": "open", "prize": null, "solved": false, "title": "Number of squares $\\bmod n$"}
-{"fields": ["Number Theory"], "id": "OeisA226163.conjecture", "kind": "known", "prize": null, "solved": true, "title": "Determinant of Legendre symbol matrix with factorial shifts"}
+{"fields": ["Number Theory"], "id": "OeisA226163.conjecture", "kind": "known", "prize": null, "solved": false, "title": "Determinant of Legendre symbol matrix with factorial shifts"}
 {"fields": ["Number Theory"], "id": "OeisA227923.conjecture_1", "kind": "open", "prize": null, "solved": false, "title": "Representations using Sophie Germain primes and twin prime pairs — conjecture 1"}
 {"fields": ["Number Theory"], "id": "OeisA227923.conjecture_2", "kind": "open", "prize": null, "solved": false, "title": "Representations using Sophie Germain primes and twin prime pairs — conjecture 2"}
 {"fields": ["Number Theory"], "id": "OeisA227923.conjecture_3", "kind": "open", "prize": null, "solved": false, "title": "Representations using Sophie Germain primes and twin prime pairs — conjecture 3"}
 {"fields": ["Number Theory"], "id": "OeisA227923.conjecture_4", "kind": "open", "prize": null, "solved": false, "title": "Representations using Sophie Germain primes and twin prime pairs — conjecture 4"}
-{"fields": ["Number Theory"], "id": "OeisA228304.conjecture_1", "kind": "known", "prize": null, "solved": true, "title": "Alternating sum of fourth powers of binomial coefficients — conjecture 1"}
-{"fields": ["Number Theory"], "id": "OeisA228304.conjecture_2", "kind": "known", "prize": null, "solved": true, "title": "Alternating sum of fourth powers of binomial coefficients — conjecture 2"}
+{"fields": ["Number Theory"], "id": "OeisA228304.conjecture_1", "kind": "known", "prize": null, "solved": false, "title": "Alternating sum of fourth powers of binomial coefficients — conjecture 1"}
+{"fields": ["Number Theory"], "id": "OeisA228304.conjecture_2", "kind": "known", "prize": null, "solved": false, "title": "Alternating sum of fourth powers of binomial coefficients — conjecture 2"}
 {"fields": ["Number Theory"], "id": "OeisA228425.conjecture_1", "kind": "open", "prize": null, "solved": false, "title": "Partitions of $n$ into $x + y$ with $x(x+1)/2 + y^2$ prime — conjecture 1"}
 {"fields": ["Number Theory"], "id": "OeisA228425.conjecture_2", "kind": "open", "prize": null, "solved": false, "title": "Partitions of $n$ into $x + y$ with $x(x+1)/2 + y^2$ prime — conjecture 2"}
 {"fields": ["Number Theory"], "id": "OeisA228425.conjecture_3", "kind": "open", "prize": null, "solved": false, "title": "Partitions of $n$ into $x + y$ with $x(x+1)/2 + y^2$ prime — conjecture 3"}
@@ -245,7 +245,7 @@
 {"fields": ["Number Theory"], "id": "OeisA232194.conjecture_6", "kind": "open", "prize": null, "solved": false, "title": "Ways to write $n = x + y$ with $nx + y$ and $ny - x$ both prime — conjecture 6"}
 {"fields": ["Number Theory"], "id": "OeisA2326.conjecture1", "kind": "open", "prize": null, "solved": false, "title": "Multiplicative order of 2 mod $2n+1$ — conjecture1"}
 {"fields": ["Number Theory"], "id": "OeisA2326.conjecture2", "kind": "open", "prize": null, "solved": false, "title": "Multiplicative order of 2 mod $2n+1$ — conjecture2"}
-{"fields": ["Number Theory"], "id": "OeisA232616.conjecture_1", "kind": "known", "prize": null, "solved": true, "title": "Least $m > 0$ such that $\\{2^k - k : k = 1, \\dots, m\\}$ covers all residues modulo $n$ — conjecture 1"}
+{"fields": ["Number Theory"], "id": "OeisA232616.conjecture_1", "kind": "known", "prize": null, "solved": false, "title": "Least $m > 0$ such that $\\{2^k - k : k = 1, \\dots, m\\}$ covers all residues modulo $n$ — conjecture 1"}
 {"fields": ["Number Theory"], "id": "OeisA232616.conjecture_2", "kind": "open", "prize": null, "solved": false, "title": "Least $m > 0$ such that $\\{2^k - k : k = 1, \\dots, m\\}$ covers all residues modulo $n$ — conjecture 2"}
 {"fields": ["Number Theory"], "id": "OeisA232616.conjecture_3", "kind": "open", "prize": null, "solved": false, "title": "Least $m > 0$ such that $\\{2^k - k : k = 1, \\dots, m\\}$ covers all residues modulo $n$ — conjecture 3"}
 {"fields": ["Number Theory"], "id": "OeisA233544.conjecture_1", "kind": "open", "prize": null, "solved": false, "title": "Representations $n = k^2 + m$ ($0 < k^2 \\le m$) with $\\sigma(k^2) + \\phi(m)$ prime — conjecture 1"}
@@ -265,7 +265,7 @@
 {"fields": ["Number Theory"], "id": "OeisA234246.conjecture_5", "kind": "open", "prize": null, "solved": false, "title": "Number of integers $0 < k < n$ such that $k \\phi(n - k) + 1$ is a square — conjecture 5"}
 {"fields": ["Number Theory"], "id": "OeisA234246.conjecture_6", "kind": "open", "prize": null, "solved": false, "title": "Number of integers $0 < k < n$ such that $k \\phi(n - k) + 1$ is a square — conjecture 6"}
 {"fields": ["Number Theory"], "id": "OeisA234360.conjecture_1", "kind": "open", "prize": null, "solved": false, "title": "Number of integers $0 < k < n$ such that $(k + 1)^{\\phi(n - k)} + k$ is prime — conjecture 1"}
-{"fields": ["Number Theory"], "id": "OeisA234360.conjecture_2", "kind": "known", "prize": null, "solved": true, "title": "Number of integers $0 < k < n$ such that $(k + 1)^{\\phi(n - k)} + k$ is prime — conjecture 2"}
+{"fields": ["Number Theory"], "id": "OeisA234360.conjecture_2", "kind": "known", "prize": null, "solved": false, "title": "Number of integers $0 < k < n$ such that $(k + 1)^{\\phi(n - k)} + k$ is prime — conjecture 2"}
 {"fields": ["Number Theory"], "id": "OeisA234360.conjecture_3", "kind": "open", "prize": null, "solved": false, "title": "Number of integers $0 < k < n$ such that $(k + 1)^{\\phi(n - k)} + k$ is prime — conjecture 3"}
 {"fields": ["Number Theory"], "id": "OeisA234360.conjecture_4", "kind": "open", "prize": null, "solved": false, "title": "Number of integers $0 < k < n$ such that $(k + 1)^{\\phi(n - k)} + k$ is prime — conjecture 4"}
 {"fields": ["Number Theory"], "id": "OeisA234642.conjecture", "kind": "open", "prize": null, "solved": false, "title": "Smallest $x$ such that $x \\bmod \\phi(x) = n$, or $0$ if no such $x$ exists"}
@@ -340,9 +340,9 @@
 {"fields": ["Number Theory"], "id": "OeisA261307.conjecture", "kind": "open", "prize": null, "solved": false, "title": "Prime values in recurrence $a(n+1) = |a(n) - \\gcd(a(n), 7n+6)|$"}
 {"fields": ["Number Theory"], "id": "OeisA261627.conjecture_1", "kind": "open", "prize": null, "solved": false, "title": "Primes $p$ such that $n - (p n' - 1)$ and $n + (p n' - 1)$ are both prime — conjecture 1"}
 {"fields": ["Number Theory"], "id": "OeisA261627.conjecture_2", "kind": "open", "prize": null, "solved": false, "title": "Primes $p$ such that $n - (p n' - 1)$ and $n + (p n' - 1)$ are both prime — conjecture 2"}
-{"fields": ["Number Theory"], "id": "OeisA261680.conjecture", "kind": "known", "prize": null, "solved": true, "title": "Sums of four binary palindromes"}
+{"fields": ["Number Theory"], "id": "OeisA261680.conjecture", "kind": "known", "prize": null, "solved": false, "title": "Sums of four binary palindromes"}
 {"fields": ["Number Theory"], "id": "OeisA261876.conjecture_1", "kind": "open", "prize": null, "solved": false, "title": "Refining Lagrange's four-square theorem with $(5x^2 + 7y^2 + 9z^2)yz$ a square — conjecture 1"}
-{"fields": ["Number Theory"], "id": "OeisA261876.conjecture_2", "kind": "known", "prize": null, "solved": true, "title": "Refining Lagrange's four-square theorem with $(5x^2 + 7y^2 + 9z^2)yz$ a square — conjecture 2"}
+{"fields": ["Number Theory"], "id": "OeisA261876.conjecture_2", "kind": "known", "prize": null, "solved": false, "title": "Refining Lagrange's four-square theorem with $(5x^2 + 7y^2 + 9z^2)yz$ a square — conjecture 2"}
 {"fields": ["Number Theory"], "id": "OeisA261876.conjecture_3", "kind": "open", "prize": null, "solved": false, "title": "Refining Lagrange's four-square theorem with $(5x^2 + 7y^2 + 9z^2)yz$ a square — conjecture 3"}
 {"fields": ["Number Theory"], "id": "OeisA262403.conjecture_1", "kind": "open", "prize": null, "solved": false, "title": "Additive decompositions of $\\pi(T(n))$ — conjecture 1"}
 {"fields": ["Number Theory"], "id": "OeisA262403.conjecture_2", "kind": "open", "prize": null, "solved": false, "title": "Additive decompositions of $\\pi(T(n))$ — conjecture 2"}
@@ -375,11 +375,11 @@
 {"fields": ["Number Theory"], "id": "OeisA34693.exists_k_stronger", "kind": "open", "prize": null, "solved": false, "title": "Smallest number $k$ such that $kn + 1$ is prime — exists k stronger"}
 {"fields": ["Number Theory"], "id": "OeisA34694.conjecture", "kind": "open", "prize": null, "solved": false, "title": "Smallest prime $\\equiv 1 \\pmod n$"}
 {"fields": ["Number Theory"], "id": "OeisA357513.general_supercongruence", "kind": "open", "prize": null, "solved": false, "title": "Numerator of a sum involving binomial coefficients"}
-{"fields": ["Number Theory"], "id": "OeisA358684.a_7", "kind": "warmup", "prize": null, "solved": true, "title": "Factor bounds for Fermat numbers"}
-{"fields": ["Number Theory"], "id": "OeisA368630.a_1", "kind": "warmup", "prize": null, "solved": true, "title": "A self-compositional exponential generating function — a 1"}
-{"fields": ["Number Theory"], "id": "OeisA368630.a_2", "kind": "warmup", "prize": null, "solved": true, "title": "A self-compositional exponential generating function — a 2"}
-{"fields": ["Number Theory"], "id": "OeisA368630.a_3", "kind": "warmup", "prize": null, "solved": true, "title": "A self-compositional exponential generating function — a 3"}
-{"fields": ["Number Theory"], "id": "OeisA368630.a_4", "kind": "warmup", "prize": null, "solved": true, "title": "A self-compositional exponential generating function — a 4"}
+{"fields": ["Number Theory"], "id": "OeisA358684.a_7", "kind": "warmup", "prize": null, "solved": false, "title": "Factor bounds for Fermat numbers"}
+{"fields": ["Number Theory"], "id": "OeisA368630.a_1", "kind": "warmup", "prize": null, "solved": false, "title": "A self-compositional exponential generating function — a 1"}
+{"fields": ["Number Theory"], "id": "OeisA368630.a_2", "kind": "warmup", "prize": null, "solved": false, "title": "A self-compositional exponential generating function — a 2"}
+{"fields": ["Number Theory"], "id": "OeisA368630.a_3", "kind": "warmup", "prize": null, "solved": false, "title": "A self-compositional exponential generating function — a 3"}
+{"fields": ["Number Theory"], "id": "OeisA368630.a_4", "kind": "warmup", "prize": null, "solved": false, "title": "A self-compositional exponential generating function — a 4"}
 {"fields": ["Number Theory"], "id": "OeisA37274.home_prime_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Home primes (OEIS A037274)"}
 {"fields": ["Number Theory"], "id": "OeisA38098.conjecture1", "kind": "open", "prize": null, "solved": false, "title": "Number of primes $< n^3$ — conjecture1"}
 {"fields": ["Number Theory"], "id": "OeisA38098.conjecture2", "kind": "open", "prize": null, "solved": false, "title": "Number of primes $< n^3$ — conjecture2"}
@@ -390,10 +390,10 @@
 {"fields": ["Number Theory"], "id": "OeisA38552.starkHeegner_classNumberOne", "kind": "known", "prize": null, "solved": false, "title": "Conjectures associated with A038552 — starkHeegner classNumberOne"}
 {"fields": ["Number Theory"], "id": "OeisA38771.conjecture1", "kind": "open", "prize": null, "solved": false, "title": "Smallest composite $c$ such that $\\textrm{primorial}(n) + c$ is prime — conjecture1"}
 {"fields": ["Number Theory"], "id": "OeisA38771.conjecture2", "kind": "open", "prize": null, "solved": false, "title": "Smallest composite $c$ such that $\\textrm{primorial}(n) + c$ is prime — conjecture2"}
-{"fields": ["Number Theory"], "id": "OeisA396843.a_2", "kind": "warmup", "prize": null, "solved": true, "title": "A compositional generating function — a 2"}
-{"fields": ["Number Theory"], "id": "OeisA396843.a_3", "kind": "warmup", "prize": null, "solved": true, "title": "A compositional generating function — a 3"}
-{"fields": ["Number Theory"], "id": "OeisA396843.a_4", "kind": "warmup", "prize": null, "solved": true, "title": "A compositional generating function — a 4"}
-{"fields": ["Number Theory"], "id": "OeisA396843.a_5", "kind": "warmup", "prize": null, "solved": true, "title": "A compositional generating function — a 5"}
+{"fields": ["Number Theory"], "id": "OeisA396843.a_2", "kind": "warmup", "prize": null, "solved": false, "title": "A compositional generating function — a 2"}
+{"fields": ["Number Theory"], "id": "OeisA396843.a_3", "kind": "warmup", "prize": null, "solved": false, "title": "A compositional generating function — a 3"}
+{"fields": ["Number Theory"], "id": "OeisA396843.a_4", "kind": "warmup", "prize": null, "solved": false, "title": "A compositional generating function — a 4"}
+{"fields": ["Number Theory"], "id": "OeisA396843.a_5", "kind": "warmup", "prize": null, "solved": false, "title": "A compositional generating function — a 5"}
 {"fields": ["Number Theory"], "id": "OeisA40.conjecture", "kind": "open", "prize": null, "solved": false, "title": "Conjecture from Thomas Ordowski (2023)"}
 {"fields": ["Number Theory"], "id": "OeisA401006.eventually_prime", "kind": "open", "prize": null, "solved": false, "title": "Decimal concatenation of a cofactor and the largest prime factor"}
 {"fields": ["Number Theory"], "id": "OeisA41.noPowerPartitionNumber", "kind": "open", "prize": null, "solved": false, "title": "No powers as partition numbers"}

@@ -27,7 +27,7 @@
 {"fields": ["Combinatorics"], "id": "Erdos1010.erdos_1010.variants.rademacher", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 1010 — rademacher"}
 {"fields": ["Combinatorics"], "id": "Erdos1013.erdos_1013.parts.i", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 1013 — i"}
 {"fields": ["Combinatorics"], "id": "Erdos1013.erdos_1013.parts.ii", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 1013 — ii"}
-{"fields": ["Combinatorics"], "id": "Erdos1013.erdos_1013.variants.graver_yackel", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 1013 — graver yackel"}
+{"fields": ["Combinatorics"], "id": "Erdos1013.erdos_1013.variants.graver_yackel", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 1013 — graver yackel"}
 {"fields": ["Combinatorics"], "id": "Erdos1013.erdos_1013.variants.lower", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 1013 — lower"}
 {"fields": ["Combinatorics"], "id": "Erdos1013.erdos_1013.variants.upper", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 1013 — upper"}
 {"fields": ["Combinatorics"], "id": "Erdos1014.erdos_1014.variants.upper_bound", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 1014 — upper bound"}
@@ -40,11 +40,11 @@
 {"fields": ["Combinatorics"], "id": "Erdos1022.erdos_1022.variants.lt_two", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 1022 — lt two"}
 {"fields": ["Combinatorics"], "id": "Erdos1023.erdos_1023.variants.erdos_kleitman", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 1023 — erdos kleitman"}
 {"fields": ["Combinatorics"], "id": "Erdos1023.erdos_1023.variants.hunter", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 1023 — hunter"}
-{"fields": ["Combinatorics"], "id": "Erdos1024.erdos_1024", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 1024"}
+{"fields": ["Combinatorics"], "id": "Erdos1024.erdos_1024", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 1024"}
 {"fields": ["Combinatorics"], "id": "Erdos1026.erdos_1026", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 1026"}
-{"fields": ["Combinatorics"], "id": "Erdos1026.erdos_1026.variants.hanani", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 1026 — hanani"}
-{"fields": ["Combinatorics"], "id": "Erdos1026.erdos_1026.variants.lower_bound", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 1026 — lower bound"}
-{"fields": ["Combinatorics"], "id": "Erdos1026.erdos_1026.variants.upper_bound", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 1026 — upper bound"}
+{"fields": ["Combinatorics"], "id": "Erdos1026.erdos_1026.variants.hanani", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 1026 — hanani"}
+{"fields": ["Combinatorics"], "id": "Erdos1026.erdos_1026.variants.lower_bound", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 1026 — lower bound"}
+{"fields": ["Combinatorics"], "id": "Erdos1026.erdos_1026.variants.upper_bound", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 1026 — upper bound"}
 {"fields": ["Combinatorics"], "id": "Erdos1028.erdos_1028.variants.erdos_spencer", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 1028 — erdos spencer"}
 {"fields": ["Combinatorics"], "id": "Erdos1028.erdos_1028.variants.lower_bound", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 1028 — lower bound"}
 {"fields": ["Combinatorics"], "id": "Erdos1028.erdos_1028.variants.upper_bound", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 1028 — upper bound"}
@@ -68,8 +68,8 @@
 {"fields": ["Combinatorics"], "id": "Erdos1037.erdos_1037.variants.cambie_chan_hunter", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 1037 — cambie chan hunter"}
 {"fields": ["Measure & Integration"], "id": "Erdos1038.erdos_1038.parts.i", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 1038 — i"}
 {"fields": ["Measure & Integration"], "id": "Erdos1038.erdos_1038.parts.ii", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 1038 — ii"}
-{"fields": ["Measure & Integration"], "id": "Erdos1038.erdos_1038.variants.inf_lowerBound", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 1038 — inf lowerBound"}
-{"fields": ["Measure & Integration"], "id": "Erdos1038.erdos_1038.variants.inf_upperBound", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 1038 — inf upperBound"}
+{"fields": ["Measure & Integration"], "id": "Erdos1038.erdos_1038.variants.inf_lowerBound", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 1038 — inf lowerBound"}
+{"fields": ["Measure & Integration"], "id": "Erdos1038.erdos_1038.variants.inf_upperBound", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 1038 — inf upperBound"}
 {"fields": ["Convex & Discrete Geometry"], "id": "Erdos104.erdos_104", "kind": "open", "prize": "$100", "solved": false, "title": "Erdős Problem 104"}
 {"fields": ["Several Complex Variables"], "id": "Erdos1041.exists_connected_component_contains_two_roots", "kind": "known", "prize": null, "solved": true, "title": "Erdős–Herzog–Piranian Component Lemma"}
 {"fields": ["Complex Analysis"], "id": "Erdos1042.erdos_1042.parts.i", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 1042 — i"}
@@ -93,8 +93,8 @@
 {"fields": ["Complex Analysis"], "id": "Erdos1048.erdos_1048.variants.pommerenke_ncard_components", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 1048 — pommerenke ncard components"}
 {"fields": ["Complex Analysis"], "id": "Erdos1048.erdos_1048.variants.r_le_one", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 1048 — r le one"}
 {"fields": ["Number Theory"], "id": "Erdos1049.erdos_1049", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 1049"}
-{"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Erdos105.erdos_105.variants.beck_szemeredi_trotter", "kind": "known", "prize": "$50", "solved": false, "title": "Erdős Problem 105 — beck szemeredi trotter"}
-{"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Erdos105.erdos_105.variants.hickerson", "kind": "known", "prize": "$50", "solved": true, "title": "Erdős Problem 105 — hickerson"}
+{"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Erdos105.erdos_105.variants.beck_szemeredi_trotter", "kind": "known", "prize": "$50", "solved": true, "title": "Erdős Problem 105 — beck szemeredi trotter"}
+{"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Erdos105.erdos_105.variants.hickerson", "kind": "known", "prize": "$50", "solved": false, "title": "Erdős Problem 105 — hickerson"}
 {"fields": ["Number Theory"], "id": "Erdos1050.erdos_1050.variants.transcendental", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 1050, variant [Er88c] (open)."}
 {"fields": ["Number Theory"], "id": "Erdos1051.erdos_1051.variants.rapid_growth", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 1051 — rapid growth"}
 {"fields": ["Number Theory"], "id": "Erdos1052.erdos_1052", "kind": "open", "prize": "$10", "solved": false, "title": "Erdős Problem 1052"}
@@ -129,9 +129,9 @@
 {"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Erdos1066.erdos_1066.variants.pach_toth", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 1066 — pach toth"}
 {"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Erdos1066.erdos_1066.variants.pollack", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 1066 — pollack"}
 {"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Erdos1066.erdos_1066.variants.swanepoel", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 1066 — swanepoel"}
-{"fields": ["Combinatorics"], "id": "Erdos1067.erdos_1067.variants.infinite_edge_connectivity", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 1067 — infinite edge connectivity"}
+{"fields": ["Combinatorics"], "id": "Erdos1067.erdos_1067.variants.infinite_edge_connectivity", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 1067 — infinite edge connectivity"}
 {"fields": ["Combinatorics"], "id": "Erdos1068.erdos_1068", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 1068"}
-{"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Erdos1069.erdos_1069", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 1069"}
+{"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Erdos1069.erdos_1069", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 1069"}
 {"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Erdos1069.erdos_1069.variants.lattice", "kind": "warmup", "prize": null, "solved": true, "title": "Erdős Problem 1069 — lattice"}
 {"fields": ["Convex & Discrete Geometry"], "id": "Erdos107.erdos_107", "kind": "open", "prize": "$500", "solved": false, "title": "Erdős Problem 107"}
 {"fields": ["Convex & Discrete Geometry"], "id": "Erdos107.variants.ersz_bounds", "kind": "known", "prize": "$500", "solved": true, "title": "Erdős Problem 107 — ersz bounds"}
@@ -164,10 +164,10 @@
 {"fields": ["Convex & Discrete Geometry"], "id": "Erdos1084.erdos_1084.variants.triangular_optimal_d2", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 1084 — triangular optimal d2"}
 {"fields": ["Convex & Discrete Geometry"], "id": "Erdos1084.erdos_1084.variants.upper_d2", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 1084 — upper d2"}
 {"fields": ["Convex & Discrete Geometry"], "id": "Erdos1084.erdos_1084.variants.upper_lower_d3", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 1084 — upper lower d3"}
-{"fields": ["Convex & Discrete Geometry"], "id": "Erdos1085.erdos_1085.variants.lower_d2", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 1085 — lower d2"}
+{"fields": ["Convex & Discrete Geometry"], "id": "Erdos1085.erdos_1085.variants.lower_d2", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 1085 — lower d2"}
 {"fields": ["Convex & Discrete Geometry"], "id": "Erdos1085.erdos_1085.variants.lower_d3", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 1085 — lower d3"}
 {"fields": ["Convex & Discrete Geometry"], "id": "Erdos1085.erdos_1085.variants.lower_d4_lenz", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 1085 — lower d4 lenz"}
-{"fields": ["Convex & Discrete Geometry"], "id": "Erdos1085.erdos_1085.variants.upper_d2", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 1085 — upper d2"}
+{"fields": ["Convex & Discrete Geometry"], "id": "Erdos1085.erdos_1085.variants.upper_d2", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 1085 — upper d2"}
 {"fields": ["Convex & Discrete Geometry"], "id": "Erdos1085.erdos_1085.variants.upper_d3", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 1085 — upper d3"}
 {"fields": ["Convex & Discrete Geometry"], "id": "Erdos1085.erdos_1085.variants.upper_d4_erdos", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 1085 — upper d4 erdos"}
 {"fields": ["Convex & Discrete Geometry"], "id": "Erdos1085.erdos_1085.variants.upper_lower_d5_odd", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 1085 — upper lower d5 odd"}
@@ -201,13 +201,13 @@
 {"fields": ["Number Theory"], "id": "Erdos11.erdos_11.variants.two_pow_two", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 11 — two pow two"}
 {"fields": ["Combinatorics"], "id": "Erdos110.erdos_110.variants.de_bruijn_erdos", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 110 — de bruijn erdos"}
 {"fields": ["Combinatorics", "Logic & Foundations"], "id": "Erdos110.erdos_110.variants.lambie_hanson", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 110 — lambie hanson"}
-{"fields": ["Number Theory"], "id": "Erdos1100.erdos_1100.parts.i", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 1100 — i"}
+{"fields": ["Number Theory"], "id": "Erdos1100.erdos_1100.parts.i", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 1100 — i"}
 {"fields": ["Number Theory"], "id": "Erdos1100.erdos_1100.parts.ii", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 1100 — ii"}
 {"fields": ["Number Theory"], "id": "Erdos1100.erdos_1100.parts.iii", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 1100 — iii"}
 {"fields": ["Number Theory"], "id": "Erdos1100.erdos_1100.variants.eq_omega", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 1100 — eq omega"}
 {"fields": ["Number Theory"], "id": "Erdos1100.erdos_1100.variants.erdos_hall", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 1100 — erdos hall"}
 {"fields": ["Number Theory"], "id": "Erdos1100.erdos_1100.variants.erdos_simonovits", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 1100 — erdos simonovits"}
-{"fields": ["Number Theory"], "id": "Erdos1100.erdos_1100.variants.erdos_tenenbaum_g", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 1100 — erdos tenenbaum g"}
+{"fields": ["Number Theory"], "id": "Erdos1100.erdos_1100.variants.erdos_tenenbaum_g", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 1100 — erdos tenenbaum g"}
 {"fields": ["Number Theory"], "id": "Erdos1100.erdos_1100.variants.erdos_tenenbaum_max", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 1100 — erdos tenenbaum max"}
 {"fields": ["Number Theory"], "id": "Erdos1100.erdos_1100.variants.normal_order", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 1100 — normal order"}
 {"fields": ["Number Theory"], "id": "Erdos1101.erdos_1101.parts.i", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 1101 — i"}
@@ -222,14 +222,14 @@
 {"fields": ["Number Theory"], "id": "Erdos1108.erdos_1108.parts.ii", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 1108 — ii"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos1109.erdos_1109", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 1109"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos1109.erdos_1109.variants.erdos_sarkozy_lower", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 1109 — erdos sarkozy lower"}
-{"fields": ["Combinatorics", "Number Theory"], "id": "Erdos1109.erdos_1109.variants.erdos_sarkozy_upper", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 1109 — erdos sarkozy upper"}
+{"fields": ["Combinatorics", "Number Theory"], "id": "Erdos1109.erdos_1109.variants.erdos_sarkozy_upper", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 1109 — erdos sarkozy upper"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos1109.erdos_1109.variants.konyagin_lower", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 1109 — konyagin lower"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos1109.erdos_1109.variants.konyagin_upper", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 1109 — konyagin upper"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos1109.erdos_1109.variants.polylog", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 1109 — polylog"}
 {"fields": ["Combinatorics"], "id": "Erdos111.erdos_111", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 111"}
 {"fields": ["Combinatorics"], "id": "Erdos111.erdos_111.variants.erdos_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 111 — erdos conjecture"}
 {"fields": ["Combinatorics"], "id": "Erdos111.erdos_111.variants.lower_bound", "kind": "known", "prize": null, "solved": true, "title": "Linear lower bound (ZFC, [EHS82])"}
-{"fields": ["Combinatorics"], "id": "Erdos111.erdos_111.variants.upper_bound_existence", "kind": "known", "prize": null, "solved": false, "title": "Upper bound existence (Erdős-Hajnal-Szemerédi [EHS82])"}
+{"fields": ["Combinatorics"], "id": "Erdos111.erdos_111.variants.upper_bound_existence", "kind": "known", "prize": null, "solved": true, "title": "Upper bound existence (Erdős-Hajnal-Szemerédi [EHS82])"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos1110.erdos_1110", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 1110"}
 {"fields": ["Combinatorics"], "id": "Erdos1111.erdos_1111", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 1111"}
 {"fields": ["Combinatorics"], "id": "Erdos1111.erdos_1111.variants.el_zahar_erdos", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 1111 — el zahar erdos"}
@@ -285,18 +285,18 @@
 {"fields": ["Combinatorics"], "id": "Erdos1145.erdos_1145", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 1145"}
 {"fields": ["Number Theory"], "id": "Erdos1146.erdos_1146", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 1146"}
 {"fields": ["Number Theory"], "id": "Erdos1147.erdos_1147.variants.almost_every", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 1147 — almost every"}
-{"fields": ["Number Theory"], "id": "Erdos1148.erdos_1148.variants.weaker", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 1148 — weaker"}
+{"fields": ["Number Theory"], "id": "Erdos1148.erdos_1148.variants.weaker", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 1148 — weaker"}
 {"fields": ["Approximation"], "id": "Erdos1152.erdos_1152", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 1152"}
 {"fields": ["Measure & Integration"], "id": "Erdos1154.erdos_1154.parts.i", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 1154 — i"}
 {"fields": ["Measure & Integration"], "id": "Erdos1154.erdos_1154.parts.ii", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 1154 — ii"}
 {"fields": ["Measure & Integration"], "id": "Erdos1154.erdos_1154.variants.analytic_ring", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 1154 — analytic ring"}
 {"fields": ["Measure & Integration"], "id": "Erdos1154.erdos_1154.variants.continuumHypothesis_field", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 1154 — continuumHypothesis field"}
-{"fields": ["Measure & Integration"], "id": "Erdos1154.erdos_1154.variants.group", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 1154 — group"}
+{"fields": ["Measure & Integration"], "id": "Erdos1154.erdos_1154.variants.group", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 1154 — group"}
 {"fields": ["Combinatorics"], "id": "Erdos1157.erdos_1157", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 1157"}
 {"fields": ["Combinatorics"], "id": "Erdos1158.erdos_1158", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 1158"}
 {"fields": ["Combinatorics", "Geometry"], "id": "Erdos1159.erdos_1159", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 1159"}
 {"fields": ["Complex Analysis"], "id": "Erdos116.erdos_116.variants.log", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 116 — log"}
-{"fields": ["Complex Analysis"], "id": "Erdos116.erdos_116.variants.polya", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 116 — polya"}
+{"fields": ["Complex Analysis"], "id": "Erdos116.erdos_116.variants.polya", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 116 — polya"}
 {"fields": ["Complex Analysis"], "id": "Erdos116.erdos_116.variants.upper", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 116 — upper"}
 {"fields": ["Group Theory"], "id": "Erdos1160.erdos_1160", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 1160"}
 {"fields": ["Group Theory"], "id": "Erdos1160.erdos_1160.variants.sum", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 1160 — sum"}
@@ -347,7 +347,7 @@
 {"fields": ["Combinatorics"], "id": "Erdos1182.erdos_1182.variants.brandt_expects", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 1182 — brandt expects"}
 {"fields": ["Combinatorics"], "id": "Erdos1182.erdos_1182.variants.chvatal", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 1182 — chvatal"}
 {"fields": ["Combinatorics"], "id": "Erdos1182.erdos_1182.variants.f_lower", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 1182 — f lower"}
-{"fields": ["Combinatorics"], "id": "Erdos1182.erdos_1182.variants.f_upper", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 1182 — f upper"}
+{"fields": ["Combinatorics"], "id": "Erdos1182.erdos_1182.variants.f_upper", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 1182 — f upper"}
 {"fields": ["Combinatorics"], "id": "Erdos1182.erdos_1182.variants.nikiforov_rousseau", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 1182 — nikiforov rousseau"}
 {"fields": ["Combinatorics"], "id": "Erdos1182.erdos_1182.variants.ramsey_ge", "kind": "warmup", "prize": null, "solved": true, "title": "Erdős Problem 1182 — ramsey ge"}
 {"fields": ["Combinatorics"], "id": "Erdos1182.erdos_1182.variants.small_values", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 1182 — small values"}
@@ -361,7 +361,7 @@
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos1186.erdos_1186.variants.probabilistic", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 1186 — probabilistic"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos1186.erdos_1186.variants.prs_bounds", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 1186 — prs bounds"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos1186.erdos_1186.variants.prs_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 1186 — prs conjecture"}
-{"fields": ["Combinatorics", "Number Theory"], "id": "Erdos1186.erdos_1186.variants.van_der_waerden", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 1186 — van der waerden"}
+{"fields": ["Combinatorics", "Number Theory"], "id": "Erdos1186.erdos_1186.variants.van_der_waerden", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 1186 — van der waerden"}
 {"fields": ["Number Theory"], "id": "Erdos1189.erdos_1189.parts.i", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 1189 — i"}
 {"fields": ["Number Theory"], "id": "Erdos1189.erdos_1189.parts.ii", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 1189 — ii"}
 {"fields": ["Number Theory"], "id": "Erdos1189.erdos_1189.parts.iii", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 1189 — iii"}
@@ -387,16 +387,16 @@
 {"fields": ["Combinatorics"], "id": "Erdos1199.erdos_1199", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 1199"}
 {"fields": ["Number Theory"], "id": "Erdos12.erdos_12.parts.iii", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 12 — iii"}
 {"fields": ["Number Theory"], "id": "Erdos12.erdos_12.variants.baier", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 12 — baier"}
-{"fields": ["Number Theory"], "id": "Erdos12.erdos_12.variants.erdos_sarkozy", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 12 — erdos sarkozy"}
+{"fields": ["Number Theory"], "id": "Erdos12.erdos_12.variants.erdos_sarkozy", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 12 — erdos sarkozy"}
 {"fields": ["Number Theory"], "id": "Erdos12.erdos_12.variants.erdos_sarkozy_density_0", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 12 — erdos sarkozy density 0"}
-{"fields": ["Number Theory"], "id": "Erdos12.erdos_12.variants.example", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 12 — example"}
-{"fields": ["Number Theory"], "id": "Erdos12.erdos_12.variants.schoen", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 12 — schoen"}
+{"fields": ["Number Theory"], "id": "Erdos12.erdos_12.variants.example", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 12 — example"}
+{"fields": ["Number Theory"], "id": "Erdos12.erdos_12.variants.schoen", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 12 — schoen"}
 {"fields": ["Combinatorics", "Measure & Integration"], "id": "Erdos120.erdos_120", "kind": "open", "prize": "$100", "solved": false, "title": "Erdős Problem 120"}
 {"fields": ["Combinatorics", "Measure & Integration"], "id": "Erdos120.erdos_120.variants.finite_set", "kind": "known", "prize": "$100", "solved": true, "title": "Erdős Problem 120 — finite set"}
 {"fields": ["Number Theory"], "id": "Erdos1201.erdos_1201", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 1201"}
 {"fields": ["Number Theory"], "id": "Erdos1201.erdos_1201.variants.epsilon_half", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 1201 — epsilon half"}
 {"fields": ["Number Theory"], "id": "Erdos1203.erdos_1203", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 1203"}
-{"fields": ["Number Theory"], "id": "Erdos1203.erdos_1203.variants.lower_bound", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 1203 — lower bound"}
+{"fields": ["Number Theory"], "id": "Erdos1203.erdos_1203.variants.lower_bound", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 1203 — lower bound"}
 {"fields": ["Number Theory"], "id": "Erdos1204.erdos_1204.parts.i", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 1204 — i"}
 {"fields": ["Number Theory"], "id": "Erdos1204.erdos_1204.parts.ii", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 1204 — ii"}
 {"fields": ["Number Theory"], "id": "Erdos1204.erdos_1204.variants.A_lower", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 1204 — A lower"}
@@ -488,7 +488,7 @@
 {"fields": ["Combinatorics"], "id": "Erdos158.erdos_158", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 158"}
 {"fields": ["Combinatorics"], "id": "Erdos158.erdos_158.variants.isSidon-prime", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 158 — isSidon'"}
 {"fields": ["Combinatorics"], "id": "Erdos159.erdos_159", "kind": "open", "prize": "$100", "solved": false, "title": "Erdős Problem 159"}
-{"fields": ["Number Theory"], "id": "Erdos16.erdos_16.variant.romanoff", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 16 — romanoff"}
+{"fields": ["Number Theory"], "id": "Erdos16.erdos_16.variant.romanoff", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 16 — romanoff"}
 {"fields": ["Combinatorics", "Geometry"], "id": "Erdos160.erdos_160.better_lower", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 160 — better lower"}
 {"fields": ["Combinatorics", "Geometry"], "id": "Erdos160.erdos_160.better_upper", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 160 — better upper"}
 {"fields": ["Combinatorics", "Geometry"], "id": "Erdos160.erdos_160.known_upper", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 160 — known upper"}
@@ -557,9 +557,9 @@
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos200.erdos_200.variants.upper", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 200 — upper"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos202.erdos_202.variants.erdos_szemeredi", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 202 — erdos szemeredi"}
 {"fields": ["Combinatorics"], "id": "Erdos203.erdos_203", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 203"}
-{"fields": ["Number Theory"], "id": "Erdos205.erdos_205.parts.i", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 205 — i"}
-{"fields": ["Number Theory"], "id": "Erdos205.erdos_205.parts.ii", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 205 — ii"}
-{"fields": ["Number Theory"], "id": "Erdos205.erdos_205.parts.iii", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 205 — iii"}
+{"fields": ["Number Theory"], "id": "Erdos205.erdos_205.parts.i", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 205 — i"}
+{"fields": ["Number Theory"], "id": "Erdos205.erdos_205.parts.ii", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 205 — ii"}
+{"fields": ["Number Theory"], "id": "Erdos205.erdos_205.parts.iii", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 205 — iii"}
 {"fields": ["Number Theory"], "id": "Erdos205.erdos_205.variants.odd_counterexamples", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 205 — odd counterexamples"}
 {"fields": ["Combinatorics"], "id": "Erdos207.erdos_207", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 207"}
 {"fields": ["Number Theory"], "id": "Erdos208.erdos_208.parts.i", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 208 — i"}
@@ -575,12 +575,12 @@
 {"fields": ["Combinatorics", "Geometry"], "id": "Erdos210.erdos_210.variants.even_upper_bound", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 210 — even upper bound"}
 {"fields": ["Combinatorics", "Geometry"], "id": "Erdos210.erdos_210.variants.green_tao", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 210 — green tao"}
 {"fields": ["Combinatorics", "Geometry"], "id": "Erdos210.erdos_210.variants.green_tao_odd", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 210 — green tao odd"}
-{"fields": ["Combinatorics", "Geometry"], "id": "Erdos210.erdos_210.variants.seven", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 210 — seven"}
+{"fields": ["Combinatorics", "Geometry"], "id": "Erdos210.erdos_210.variants.seven", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 210 — seven"}
 {"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Erdos211.erdos_211.variants.one_sixth", "kind": "open", "prize": "$100", "solved": false, "title": "Erdős Problem 211 — one sixth"}
 {"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Erdos211.erdos_211.variants.sharpness", "kind": "known", "prize": "$100", "solved": true, "title": "Erdős Problem 211 — sharpness"}
 {"fields": ["Convex & Discrete Geometry"], "id": "Erdos212.erdos_212", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 212"}
 {"fields": ["Convex & Discrete Geometry"], "id": "Erdos213.erdos_213", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 213"}
-{"fields": ["Convex & Discrete Geometry"], "id": "Erdos213.erdos_213.variants.KK08", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 213 — KK08"}
+{"fields": ["Convex & Discrete Geometry"], "id": "Erdos213.erdos_213.variants.KK08", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 213 — KK08"}
 {"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Erdos214.erdos_214.variants.bounds", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 214 — bounds"}
 {"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Erdos214.erdos_214.variants.csizmadia_toth", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 214 — csizmadia toth"}
 {"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Erdos214.erdos_214.variants.egmrss", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 214 — egmrss"}
@@ -601,15 +601,15 @@
 {"fields": ["Combinatorics"], "id": "Erdos23.erdos_23.variants.n5", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 23 — n5"}
 {"fields": ["Combinatorics"], "id": "Erdos23.erdos_23.variants.n5_tight", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 23 — n5 tight"}
 {"fields": ["Complex Analysis", "Harmonic Analysis"], "id": "Erdos230.erdos_230.variants.ultraflat", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 230 — ultraflat"}
-{"fields": ["Convex & Discrete Geometry", "Measure & Integration"], "id": "Erdos232.erdos_232.variants.croft_lower_bound", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 232 — croft lower bound"}
-{"fields": ["Convex & Discrete Geometry", "Measure & Integration"], "id": "Erdos232.erdos_232.variants.hexagonal_lower_bound", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 232 — hexagonal lower bound"}
+{"fields": ["Convex & Discrete Geometry", "Measure & Integration"], "id": "Erdos232.erdos_232.variants.croft_lower_bound", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 232 — croft lower bound"}
+{"fields": ["Convex & Discrete Geometry", "Measure & Integration"], "id": "Erdos232.erdos_232.variants.hexagonal_lower_bound", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 232 — hexagonal lower bound"}
 {"fields": ["Number Theory"], "id": "Erdos233.erdos_233", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 233"}
-{"fields": ["Number Theory"], "id": "Erdos233.erdos_233.variants.upper_bound", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 233 — upper bound"}
+{"fields": ["Number Theory"], "id": "Erdos233.erdos_233.variants.upper_bound", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 233 — upper bound"}
 {"fields": ["Number Theory"], "id": "Erdos233.erdos_233.variants.upper_bound_unconditional", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 233 — upper bound unconditional"}
 {"fields": ["Number Theory"], "id": "Erdos234.erdos_234", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 234"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos236.erdos_236", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 236"}
 {"fields": ["Number Theory"], "id": "Erdos238.erdos_238", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 238"}
-{"fields": ["Number Theory"], "id": "Erdos238.erdos_238.variants.small_c1", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 238 — small c1"}
+{"fields": ["Number Theory"], "id": "Erdos238.erdos_238.variants.small_c1", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 238 — small c1"}
 {"fields": ["Number Theory"], "id": "Erdos239.erdos_239", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 239"}
 {"fields": ["Number Theory"], "id": "Erdos240.erdos_240.variants.finite", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 240 — finite"}
 {"fields": ["Number Theory"], "id": "Erdos240.erdos_240.variants.tijdeman_epsilon", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 240 — tijdeman epsilon"}
@@ -628,19 +628,19 @@
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos245.erdos_245", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 245"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos245.erdos_245.variants.two", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 245 — two"}
 {"fields": ["Number Theory"], "id": "Erdos247.erdos_247", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 247"}
-{"fields": ["Number Theory"], "id": "Erdos247.erdos_247.variants.strong_condition", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 247 — strong condition"}
+{"fields": ["Number Theory"], "id": "Erdos247.erdos_247.variants.strong_condition", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 247 — strong condition"}
 {"fields": ["Number Theory"], "id": "Erdos249.erdos_249", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 249"}
 {"fields": ["Number Theory"], "id": "Erdos25.erdos_25", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 25: Logarithmic density of size-dependent congruences"}
 {"fields": ["Number Theory"], "id": "Erdos251.erdos_251", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 251"}
 {"fields": ["Number Theory"], "id": "Erdos252.erdos_252", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 252"}
-{"fields": ["Number Theory"], "id": "Erdos252.erdos_252.variants.k_eq_four", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 252 — k eq four"}
+{"fields": ["Number Theory"], "id": "Erdos252.erdos_252.variants.k_eq_four", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 252 — k eq four"}
 {"fields": ["Number Theory"], "id": "Erdos252.erdos_252.variants.k_eq_one", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 252 — k eq one"}
-{"fields": ["Number Theory"], "id": "Erdos252.erdos_252.variants.k_eq_three", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 252 — k eq three"}
+{"fields": ["Number Theory"], "id": "Erdos252.erdos_252.variants.k_eq_three", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 252 — k eq three"}
 {"fields": ["Number Theory"], "id": "Erdos252.erdos_252.variants.k_eq_two", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 252 — k eq two"}
 {"fields": ["Number Theory"], "id": "Erdos252.erdos_252.variants.k_eq_zero", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 252 — k eq zero"}
 {"fields": ["Number Theory"], "id": "Erdos252.erdos_252.variants.k_ge_five", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 252 — k ge five"}
-{"fields": ["Number Theory"], "id": "Erdos252.erdos_252.variants.prime_tuples", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 252 — prime tuples"}
-{"fields": ["Number Theory"], "id": "Erdos252.erdos_252.variants.schinzel", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 252 — schinzel"}
+{"fields": ["Number Theory"], "id": "Erdos252.erdos_252.variants.prime_tuples", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 252 — prime tuples"}
+{"fields": ["Number Theory"], "id": "Erdos252.erdos_252.variants.schinzel", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 252 — schinzel"}
 {"fields": ["Number Theory"], "id": "Erdos254.erdos_254.variants.cassels", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 254 — cassels"}
 {"fields": ["Number Theory"], "id": "Erdos257.erdos_257", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 257"}
 {"fields": ["Number Theory"], "id": "Erdos258.erdos_258.variants.monotone", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 258 — monotone"}
@@ -650,11 +650,11 @@
 {"fields": ["Number Theory"], "id": "Erdos263.erdos_263.parts.ii", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 263 — ii"}
 {"fields": ["Number Theory"], "id": "Erdos263.erdos_263.variants.doubly_exponential_all_but_countable", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 263 — doubly exponential all but countable"}
 {"fields": ["Number Theory"], "id": "Erdos263.erdos_263.variants.sub_doubly_exponential", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 263 — sub doubly exponential"}
-{"fields": ["Number Theory"], "id": "Erdos264.erdos_264.parts.i", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 264 — i"}
+{"fields": ["Number Theory"], "id": "Erdos264.erdos_264.parts.i", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 264 — i"}
 {"fields": ["Number Theory"], "id": "Erdos264.erdos_264.parts.ii", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 264 — ii"}
-{"fields": ["Number Theory"], "id": "Erdos264.erdos_264.variants.example", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 264 — example"}
-{"fields": ["Number Theory"], "id": "Erdos264.erdos_264.variants.ko_tao_neg", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 264 — ko tao neg"}
-{"fields": ["Number Theory"], "id": "Erdos264.erdos_264.variants.ko_tao_pos", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 264 — ko tao pos"}
+{"fields": ["Number Theory"], "id": "Erdos264.erdos_264.variants.example", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 264 — example"}
+{"fields": ["Number Theory"], "id": "Erdos264.erdos_264.variants.ko_tao_neg", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 264 — ko tao neg"}
+{"fields": ["Number Theory"], "id": "Erdos264.erdos_264.variants.ko_tao_pos", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 264 — ko tao pos"}
 {"fields": ["Number Theory"], "id": "Erdos267.erdos_267.variants.fibonacci_inverse_sum", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 267 — fibonacci inverse sum"}
 {"fields": ["Number Theory"], "id": "Erdos267.erdos_267.variants.generalisation_ratio_limit_to_infinity", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 267 — generalisation ratio limit to infinity"}
 {"fields": ["Number Theory"], "id": "Erdos269.erdos_269.variants.infinite", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 269 — infinite"}
@@ -698,9 +698,9 @@
 {"fields": ["Number Theory"], "id": "Erdos291.erdos_291.variants.steinerberger_generalization", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 291 — steinerberger generalization"}
 {"fields": ["Number Theory"], "id": "Erdos291.erdos_291.variants.wu_yan", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 291 — wu yan"}
 {"fields": ["Number Theory"], "id": "Erdos292.erdos_292.variants.martin", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 292 — martin"}
-{"fields": ["Number Theory"], "id": "Erdos292.erdos_292.variants.mul", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 292 — mul"}
-{"fields": ["Number Theory"], "id": "Erdos292.erdos_292.variants.prime_pow", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 292 — prime pow"}
-{"fields": ["Number Theory"], "id": "Erdos292.erdos_292.variants.two_mul", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 292 — two mul"}
+{"fields": ["Number Theory"], "id": "Erdos292.erdos_292.variants.mul", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 292 — mul"}
+{"fields": ["Number Theory"], "id": "Erdos292.erdos_292.variants.prime_pow", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 292 — prime pow"}
+{"fields": ["Number Theory"], "id": "Erdos292.erdos_292.variants.two_mul", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 292 — two mul"}
 {"fields": ["Number Theory"], "id": "Erdos294.erdos_294", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 294"}
 {"fields": ["Number Theory"], "id": "Erdos294.erdos_294.variants.erdos_graham_upper", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 294 — erdos graham upper"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos295.erdos_295", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 295 — erdos 295"}
@@ -747,9 +747,9 @@
 {"fields": ["Number Theory"], "id": "Erdos313.erdos_313.variants.primary_pseudoperfect_are_infinite", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 313 — primary pseudoperfect are infinite"}
 {"fields": ["Number Theory"], "id": "Erdos317.erdos_317", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 317"}
 {"fields": ["Number Theory"], "id": "Erdos317.erdos_317.variants.claim2", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 317 — claim2"}
-{"fields": ["Number Theory"], "id": "Erdos318.erdos_318.parts.i", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 318 — i"}
+{"fields": ["Number Theory"], "id": "Erdos318.erdos_318.parts.i", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 318 — i"}
 {"fields": ["Number Theory"], "id": "Erdos318.erdos_318.parts.ii", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 318 — ii"}
-{"fields": ["Number Theory"], "id": "Erdos318.erdos_318.variants.contain_single_even", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 318 — contain single even"}
+{"fields": ["Number Theory"], "id": "Erdos318.erdos_318.variants.contain_single_even", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 318 — contain single even"}
 {"fields": ["Combinatorics"], "id": "Erdos319.erdos_319", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 319"}
 {"fields": ["Combinatorics"], "id": "Erdos319.erdos_319.variants.isTheta", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 319 — isTheta"}
 {"fields": ["Combinatorics"], "id": "Erdos319.erdos_319.variants.lb", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 319 — lb"}
@@ -778,9 +778,9 @@
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos326.erdos_326.variants.eq", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 326 — eq"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos329.erdos_329", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 329."}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos329.erdos_329.variants.converse_implication", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 329: Maximum Density of Sidon Sets — converse implication"}
-{"fields": ["Combinatorics", "Number Theory"], "id": "Erdos329.erdos_329.variants.kruckeberg_1961", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 329: Maximum Density of Sidon Sets — kruckeberg 1961"}
-{"fields": ["Combinatorics", "Number Theory"], "id": "Erdos329.erdos_329.variants.lower_bound", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 329: Maximum Density of Sidon Sets — lower bound"}
-{"fields": ["Combinatorics", "Number Theory"], "id": "Erdos329.erdos_329.variants.turan_1941", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 329: Maximum Density of Sidon Sets — turan 1941"}
+{"fields": ["Combinatorics", "Number Theory"], "id": "Erdos329.erdos_329.variants.kruckeberg_1961", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 329: Maximum Density of Sidon Sets — kruckeberg 1961"}
+{"fields": ["Combinatorics", "Number Theory"], "id": "Erdos329.erdos_329.variants.lower_bound", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 329: Maximum Density of Sidon Sets — lower bound"}
+{"fields": ["Combinatorics", "Number Theory"], "id": "Erdos329.erdos_329.variants.turan_1941", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 329: Maximum Density of Sidon Sets — turan 1941"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos329.exists_sidon_pos_density", "kind": "warmup", "prize": null, "solved": true, "title": "Erdős Problem 329: Maximum Density of Sidon Sets"}
 {"fields": ["Number Theory"], "id": "Erdos33.erdos_33", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 33"}
 {"fields": ["Number Theory"], "id": "Erdos331.erdos_331.variants.ruzsa", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 331 — ruzsa"}
@@ -795,7 +795,7 @@
 {"fields": ["Number Theory"], "id": "Erdos338.erdos_338.variants.kelly", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 338 — kelly"}
 {"fields": ["Number Theory"], "id": "Erdos338.erdos_338.variants.kelly_lowerDensity", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 338 — kelly lowerDensity"}
 {"fields": ["Number Theory"], "id": "Erdos338.erdos_338.variants.same_order_after_finite_removal", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 338 — same order after finite removal"}
-{"fields": ["Number Theory"], "id": "Erdos338.erdos_338.variants.squares", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 338 — squares"}
+{"fields": ["Number Theory"], "id": "Erdos338.erdos_338.variants.squares", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 338 — squares"}
 {"fields": ["Number Theory"], "id": "Erdos338.erdos_338.variants.triangular", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 338 — triangular"}
 {"fields": ["Combinatorics"], "id": "Erdos340.erdos_340", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 340"}
 {"fields": ["Combinatorics"], "id": "Erdos340.erdos_340.variants._33_mem_sub", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 340 —  33 mem sub"}
@@ -818,8 +818,8 @@
 {"fields": ["Number Theory"], "id": "Erdos349.erdos_349", "kind": "open", "prize": null, "solved": false, "title": "Erdos349"}
 {"fields": ["Number Theory"], "id": "Erdos349.erdos_349.variants.floor_3_halves_even", "kind": "open", "prize": null, "solved": false, "title": "Erdos349 — floor 3 halves even"}
 {"fields": ["Number Theory"], "id": "Erdos349.erdos_349.variants.floor_3_halves_odd", "kind": "open", "prize": null, "solved": false, "title": "Erdos349 — floor 3 halves odd"}
-{"fields": ["Number Theory"], "id": "Erdos349.exists_t_for_k_disjoint_segments", "kind": "known", "prize": null, "solved": false, "title": "Erdos349"}
-{"fields": ["Number Theory"], "id": "Erdos35.erdos_35.variants.plunnecke", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 35 — plunnecke"}
+{"fields": ["Number Theory"], "id": "Erdos349.exists_t_for_k_disjoint_segments", "kind": "known", "prize": null, "solved": true, "title": "Erdos349"}
+{"fields": ["Number Theory"], "id": "Erdos35.erdos_35.variants.plunnecke", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 35 — plunnecke"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos350.erdos_350.variants.strengthening", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 350 — strengthening"}
 {"fields": ["Number Theory"], "id": "Erdos351.erdos_351.variants.X", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 351 — X"}
 {"fields": ["Number Theory"], "id": "Erdos351.erdos_351.variants.X_sq", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 351 — X sq"}
@@ -853,11 +853,11 @@
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos36.erdos_36.variants.exists", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 36 — exists"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos36.erdos_36.variants.lower", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 36 — lower"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos36.erdos_36.variants.upper", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 36 — upper"}
-{"fields": ["Combinatorics", "Number Theory"], "id": "Erdos36.minimum_overlap.variants.lower.haugland_1996", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 36 — haugland 1996"}
+{"fields": ["Combinatorics", "Number Theory"], "id": "Erdos36.minimum_overlap.variants.lower.haugland_1996", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 36 — haugland 1996"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos36.minimum_overlap.variants.lower.white_2022", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 36 — white 2022"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos36.minimum_overlap.variants.upper.MRS_1956", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 36 — MRS 1956"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos36.minimum_overlap.variants.upper.haugland_1996", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 36 — haugland 1996"}
-{"fields": ["Combinatorics", "Number Theory"], "id": "Erdos36.minimum_overlap.variants.upper.haugland_2022", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 36 — haugland 2022"}
+{"fields": ["Combinatorics", "Number Theory"], "id": "Erdos36.minimum_overlap.variants.upper.haugland_2022", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 36 — haugland 2022"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos360.erdos_360", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 360"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos360.erdos_360.variants.alon_erdos", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 360 — alon erdos"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos360.erdos_360.variants.vu", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 360 — vu"}
@@ -921,15 +921,15 @@
 {"fields": ["Number Theory"], "id": "Erdos394.erdos_394.variants.hall_bound", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 394 — hall bound"}
 {"fields": ["Number Theory"], "id": "Erdos394.erdos_394.variants.hall_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 394 — hall conjecture"}
 {"fields": ["Number Theory"], "id": "Erdos394.erdos_394.variants.lower_bound", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 394 — lower bound"}
-{"fields": ["Combinatorics", "Probability"], "id": "Erdos395.erdos_395.variants.one", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 395 — one"}
-{"fields": ["Combinatorics", "Probability"], "id": "Erdos395.erdos_395.variants.sharp", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 395 — sharp"}
+{"fields": ["Combinatorics", "Probability"], "id": "Erdos395.erdos_395.variants.one", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 395 — one"}
+{"fields": ["Combinatorics", "Probability"], "id": "Erdos395.erdos_395.variants.sharp", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 395 — sharp"}
 {"fields": ["Number Theory"], "id": "Erdos396.erdos_396", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 396"}
 {"fields": ["Number Theory"], "id": "Erdos398.erdos_398", "kind": "open", "prize": null, "solved": false, "title": "Brocard's Problem"}
-{"fields": ["Number Theory"], "id": "Erdos399.erdos_399.variants.erdos_oblath", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 399 — erdos oblath"}
+{"fields": ["Number Theory"], "id": "Erdos399.erdos_399.variants.erdos_oblath", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 399 — erdos oblath"}
 {"fields": ["Number Theory"], "id": "Erdos399.erdos_399.variants.pollack_shapiro", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 399 — pollack shapiro"}
 {"fields": ["Number Theory"], "id": "Erdos399.erdos_399.variants.sum_two_squares", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 399 — sum two squares"}
 {"fields": ["Number Theory"], "id": "Erdos4.erdos_4", "kind": "known", "prize": "$10000", "solved": false, "title": "Erdős Problem 4"}
-{"fields": ["Number Theory"], "id": "Erdos4.erdos_4.variants.rankin", "kind": "known", "prize": "$10000", "solved": false, "title": "Erdős Problem 4 — rankin"}
+{"fields": ["Number Theory"], "id": "Erdos4.erdos_4.variants.rankin", "kind": "known", "prize": "$10000", "solved": true, "title": "Erdős Problem 4 — rankin"}
 {"fields": ["Number Theory"], "id": "Erdos40.erdos_40", "kind": "open", "prize": "$500", "solved": false, "title": "Erdős Problem 40"}
 {"fields": ["Number Theory"], "id": "Erdos40.erdos_40.variants.weaker", "kind": "open", "prize": "$500", "solved": false, "title": "Erdős Problem 40 — weaker"}
 {"fields": ["Number Theory"], "id": "Erdos400.erdos_400.parts.i", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 400 — i"}
@@ -939,13 +939,13 @@
 {"fields": ["Number Theory"], "id": "Erdos402.erdos_402.variants.equality", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 402 — equality"}
 {"fields": ["Number Theory"], "id": "Erdos402.erdos_402.variants.szegedy_zaharescu_weak", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 402 — szegedy zaharescu weak"}
 {"fields": ["Number Theory"], "id": "Erdos405.erdos_405", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 405"}
-{"fields": ["Number Theory"], "id": "Erdos405.erdos_405.variants.yu_liu", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 405 — yu liu"}
+{"fields": ["Number Theory"], "id": "Erdos405.erdos_405.variants.yu_liu", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 405 — yu liu"}
 {"fields": ["Number Theory"], "id": "Erdos406.erdos_406", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 406"}
 {"fields": ["Number Theory"], "id": "Erdos406.erdos_406.variants.one_two", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 406 — one two"}
 {"fields": ["Number Theory"], "id": "Erdos408.erdos_408.parts.i", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 408 — i"}
 {"fields": ["Number Theory"], "id": "Erdos408.erdos_408.parts.ii", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 408 — ii"}
 {"fields": ["Number Theory"], "id": "Erdos408.erdos_408.variants.ford_konyagin_luca", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 408 — ford konyagin luca"}
-{"fields": ["Number Theory"], "id": "Erdos408.erdos_408.variants.pillai", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 408 — pillai"}
+{"fields": ["Number Theory"], "id": "Erdos408.erdos_408.variants.pillai", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 408 — pillai"}
 {"fields": ["Number Theory"], "id": "Erdos409.erdos_409.parts.i", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 409 — i"}
 {"fields": ["Number Theory"], "id": "Erdos409.erdos_409.parts.i.isBigO", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 409 — isBigO"}
 {"fields": ["Number Theory"], "id": "Erdos409.erdos_409.parts.i.isLittleO", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 409 — isLittleO"}
@@ -990,9 +990,9 @@
 {"fields": ["Number Theory"], "id": "Erdos422.erdos_422.variants.surjective", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 422 — surjective"}
 {"fields": ["Number Theory"], "id": "Erdos422.erdos_422.variants.well_defined", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 422 — well defined"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos423.erdos_423", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 423"}
-{"fields": ["Combinatorics", "Number Theory"], "id": "Erdos423.erdos_423.variants.infinite_complement", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 423 — infinite complement"}
-{"fields": ["Combinatorics", "Number Theory"], "id": "Erdos423.erdos_423.variants.lower_bound", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 423 — lower bound"}
-{"fields": ["Combinatorics", "Number Theory"], "id": "Erdos423.erdos_423.variants.unbounded", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 423 — unbounded"}
+{"fields": ["Combinatorics", "Number Theory"], "id": "Erdos423.erdos_423.variants.infinite_complement", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 423 — infinite complement"}
+{"fields": ["Combinatorics", "Number Theory"], "id": "Erdos423.erdos_423.variants.lower_bound", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 423 — lower bound"}
+{"fields": ["Combinatorics", "Number Theory"], "id": "Erdos423.erdos_423.variants.unbounded", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 423 — unbounded"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos423.erdos_423.variants.upper_bound", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 423 — upper bound"}
 {"fields": ["Number Theory"], "id": "Erdos424.erdos_424.variants.exact_density", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 424: Sequence generated by $a_i a_j - 1$ — exact density"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos425.erdos_425.parts.i", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 425 — i"}
@@ -1002,7 +1002,7 @@
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos43.erdos_43.parts.i", "kind": "known", "prize": "$100", "solved": true, "title": "Erdős Problem 43 — i"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos43.erdos_43.parts.ii", "kind": "known", "prize": "$100", "solved": true, "title": "Erdős Problem 43 — ii"}
 {"fields": ["Number Theory"], "id": "Erdos430.erdos_430", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 430"}
-{"fields": ["Number Theory"], "id": "Erdos433.erdos_433", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 433"}
+{"fields": ["Number Theory"], "id": "Erdos433.erdos_433", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 433"}
 {"fields": ["Number Theory"], "id": "Erdos436.erdos_436.parts.i", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 436 — i"}
 {"fields": ["Number Theory"], "id": "Erdos436.erdos_436.parts.ii", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 436 — ii"}
 {"fields": ["Number Theory"], "id": "Erdos436.erdos_436.variants.even_three", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 436 — even three"}
@@ -1014,7 +1014,7 @@
 {"fields": ["Number Theory"], "id": "Erdos436.erdos_436.variants.three_three", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 436 — three three"}
 {"fields": ["Number Theory"], "id": "Erdos436.erdos_436.variants.three_two", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 436 — three two"}
 {"fields": ["Number Theory"], "id": "Erdos436.erdos_436.variants.two_two", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 436 — two two"}
-{"fields": ["Number Theory"], "id": "Erdos437.erdos_437.variants.little_o", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 437 — little o"}
+{"fields": ["Number Theory"], "id": "Erdos437.erdos_437.variants.little_o", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 437 — little o"}
 {"fields": ["Number Theory"], "id": "Erdos437.erdos_437.variants.tao", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 437 — tao"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos44.erdos_44", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 44"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos44.erdos_44.variants.empty_start", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 44: Extending Sidon Sets — empty start"}
@@ -1023,12 +1023,12 @@
 {"fields": ["Number Theory"], "id": "Erdos441.erdos_441.variants.chen", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 441 — chen"}
 {"fields": ["Number Theory"], "id": "Erdos441.erdos_441.variants.chen_dai_infinitely_often", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 441 — chen dai infinitely often"}
 {"fields": ["Number Theory"], "id": "Erdos441.erdos_441.variants.chen_dai_upper_bound", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 441 — chen dai upper bound"}
-{"fields": ["Number Theory"], "id": "Erdos441.erdos_441.variants.erdos_upper_bound", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 441 — erdos upper bound"}
-{"fields": ["Number Theory"], "id": "Erdos441.erdos_441.variants.lower_bound", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 441 — lower bound"}
+{"fields": ["Number Theory"], "id": "Erdos441.erdos_441.variants.erdos_upper_bound", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 441 — erdos upper bound"}
+{"fields": ["Number Theory"], "id": "Erdos441.erdos_441.variants.lower_bound", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 441 — lower bound"}
 {"fields": ["Number Theory"], "id": "Erdos442.erdos_442.variants.tao", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 442 — tao"}
 {"fields": ["Number Theory"], "id": "Erdos445.erdos_445", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 445"}
 {"fields": ["Number Theory"], "id": "Erdos445.erdos_445.variants.heath_brown", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 445 — heath brown"}
-{"fields": ["Number Theory"], "id": "Erdos445.erdos_445.variants.heilbronn", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 445 — heilbronn"}
+{"fields": ["Number Theory"], "id": "Erdos445.erdos_445.variants.heilbronn", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 445 — heilbronn"}
 {"fields": ["Combinatorics"], "id": "Erdos447.erdos_447.parts.i", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 447 — i"}
 {"fields": ["Number Theory"], "id": "Erdos448.erdos_448.variants.erdos_tenenbaum", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 448 — erdos tenenbaum"}
 {"fields": ["Number Theory"], "id": "Erdos448.erdos_448.variants.ford", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 448 — ford"}
@@ -1037,9 +1037,9 @@
 {"fields": ["Number Theory"], "id": "Erdos450.erdos_450", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 450"}
 {"fields": ["Number Theory"], "id": "Erdos452.erdos_452", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 452"}
 {"fields": ["Number Theory"], "id": "Erdos454.erdos_454", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 454"}
-{"fields": ["Number Theory"], "id": "Erdos454.erdos_454.variants.two_le_limsup", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 454 — two le limsup"}
+{"fields": ["Number Theory"], "id": "Erdos454.erdos_454.variants.two_le_limsup", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 454 — two le limsup"}
 {"fields": ["Number Theory"], "id": "Erdos455.erdos_455", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 455"}
-{"fields": ["Number Theory"], "id": "Erdos455.erdos_455.variants.liminf", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 455 — liminf"}
+{"fields": ["Number Theory"], "id": "Erdos455.erdos_455.variants.liminf", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 455 — liminf"}
 {"fields": ["Number Theory"], "id": "Erdos456.erdos_456.parts.i", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 456 — i"}
 {"fields": ["Number Theory"], "id": "Erdos456.erdos_456.parts.ii", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 456 — ii"}
 {"fields": ["Number Theory"], "id": "Erdos456.erdos_456.parts.iii", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 456 — iii"}
@@ -1052,14 +1052,14 @@
 {"fields": ["Number Theory"], "id": "Erdos461.erdos_461", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 461"}
 {"fields": ["Number Theory"], "id": "Erdos462.erdos_462", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 462"}
 {"fields": ["Number Theory"], "id": "Erdos463.erdos_463", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 463"}
-{"fields": ["Convex & Discrete Geometry", "Number Theory"], "id": "Erdos466.erdos_466.variants.graham", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 466 — graham"}
+{"fields": ["Convex & Discrete Geometry", "Number Theory"], "id": "Erdos466.erdos_466.variants.graham", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 466 — graham"}
 {"fields": ["Convex & Discrete Geometry", "Number Theory"], "id": "Erdos466.erdos_466.variants.sarkozy", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 466 — sarkozy"}
 {"fields": ["Number Theory"], "id": "Erdos467.erdos_467", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 467"}
 {"fields": ["Number Theory"], "id": "Erdos470.erdos_470.parts.i", "kind": "open", "prize": "$10", "solved": false, "title": "Erdős Problem 470 — i"}
 {"fields": ["Number Theory"], "id": "Erdos470.erdos_470.parts.ii", "kind": "open", "prize": "$10", "solved": false, "title": "Erdős Problem 470 — ii"}
 {"fields": ["Number Theory"], "id": "Erdos470.erdos_470.variants.odd_weird_10_pow_21", "kind": "known", "prize": "$10", "solved": false, "title": "Erdős Problem 470 — odd weird 10 pow 21"}
 {"fields": ["Number Theory"], "id": "Erdos470.erdos_470.variants.odd_weird_prime_div", "kind": "known", "prize": "$10", "solved": false, "title": "Erdős Problem 470 — odd weird prime div"}
-{"fields": ["Number Theory"], "id": "Erdos470.erdos_470.variants.prime_gap_imp_inf_prim_weird", "kind": "known", "prize": "$10", "solved": true, "title": "Erdős Problem 470 — prime gap imp inf prim weird"}
+{"fields": ["Number Theory"], "id": "Erdos470.erdos_470.variants.prime_gap_imp_inf_prim_weird", "kind": "known", "prize": "$10", "solved": false, "title": "Erdős Problem 470 — prime gap imp inf prim weird"}
 {"fields": ["Number Theory"], "id": "Erdos470.erdos_470.variants.weird_pos_density", "kind": "known", "prize": "$10", "solved": false, "title": "Erdős Problem 470 — weird pos density"}
 {"fields": ["Number Theory"], "id": "Erdos472.erdos_472", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 472"}
 {"fields": ["Number Theory"], "id": "Erdos473.erdos_473.variants.finite", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 473 — finite"}
@@ -1080,7 +1080,7 @@
 {"fields": ["Combinatorics"], "id": "Erdos494.erdos_494.variants.gordon_fraenkel_straus", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 494 — gordon fraenkel straus"}
 {"fields": ["Combinatorics"], "id": "Erdos494.erdos_494.variants.product", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 494 — product"}
 {"fields": ["Number Theory"], "id": "Erdos495.erdos_495", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 495"}
-{"fields": ["Linear Algebra"], "id": "Erdos499.erdos_499.variants.one_le", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 499 — one le"}
+{"fields": ["Linear Algebra"], "id": "Erdos499.erdos_499.variants.one_le", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 499 — one le"}
 {"fields": ["Linear Algebra"], "id": "Erdos499.vanDerWaerden", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 499"}
 {"fields": ["Number Theory"], "id": "Erdos5.erdos_5", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 5"}
 {"fields": ["Number Theory"], "id": "Erdos5.erdos_5.variants.banks_freiberg_maynard", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 5 — banks freiberg maynard"}
@@ -1104,14 +1104,14 @@
 {"fields": ["Combinatorics"], "id": "Erdos500.erdos_500.variants.lower_bound", "kind": "known", "prize": "$500", "solved": true, "title": "Erdős Problem 500 — lower bound"}
 {"fields": ["Combinatorics"], "id": "Erdos500.erdos_500.variants.turan_conjecture", "kind": "open", "prize": "$500", "solved": false, "title": "Erdős Problem 500 — turan conjecture"}
 {"fields": ["Combinatorics", "Measure & Integration"], "id": "Erdos501.erdos_501", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 501"}
-{"fields": ["Combinatorics", "Measure & Integration"], "id": "Erdos501.erdos_501.variants.erdosHajnal_finite", "kind": "known", "prize": null, "solved": true, "title": "Erdős–Hajnal (1960): arbitrarily large finite independent sets exist."}
-{"fields": ["Combinatorics", "Measure & Integration"], "id": "Erdos501.erdos_501.variants.gladysz_size2", "kind": "known", "prize": null, "solved": true, "title": "Gladysz (1962) [Gl62]: independent set of size 2 in the closed case."}
-{"fields": ["Combinatorics", "Measure & Integration"], "id": "Erdos501.erdos_501.variants.hechler_CH", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 501 — hechler CH"}
+{"fields": ["Combinatorics", "Measure & Integration"], "id": "Erdos501.erdos_501.variants.erdosHajnal_finite", "kind": "known", "prize": null, "solved": false, "title": "Erdős–Hajnal (1960): arbitrarily large finite independent sets exist."}
+{"fields": ["Combinatorics", "Measure & Integration"], "id": "Erdos501.erdos_501.variants.gladysz_size2", "kind": "known", "prize": null, "solved": false, "title": "Gladysz (1962) [Gl62]: independent set of size 2 in the closed case."}
+{"fields": ["Combinatorics", "Measure & Integration"], "id": "Erdos501.erdos_501.variants.hechler_CH", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 501 — hechler CH"}
 {"fields": ["Geometry"], "id": "Erdos503.erdos_503", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 503"}
-{"fields": ["Geometry"], "id": "Erdos503.erdos_503.variants.R2", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 503 — R2"}
-{"fields": ["Geometry"], "id": "Erdos503.erdos_503.variants.R3", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 503 — R3"}
-{"fields": ["Geometry"], "id": "Erdos503.erdos_503.variants.lower_bound", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 503 — lower bound"}
-{"fields": ["Geometry"], "id": "Erdos503.erdos_503.variants.upper_bound", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 503 — upper bound"}
+{"fields": ["Geometry"], "id": "Erdos503.erdos_503.variants.R2", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 503 — R2"}
+{"fields": ["Geometry"], "id": "Erdos503.erdos_503.variants.R3", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 503 — R3"}
+{"fields": ["Geometry"], "id": "Erdos503.erdos_503.variants.lower_bound", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 503 — lower bound"}
+{"fields": ["Geometry"], "id": "Erdos503.erdos_503.variants.upper_bound", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 503 — upper bound"}
 {"fields": ["Convex & Discrete Geometry"], "id": "Erdos504.erdos_504", "kind": "known", "prize": null, "solved": false, "title": "Erdős–Szekeres (1960). — erdos 504"}
 {"fields": ["Convex & Discrete Geometry"], "id": "Erdos504.erdos_504.variants.endpoint", "kind": "known", "prize": null, "solved": false, "title": "Erdős–Szekeres (1960). — endpoint"}
 {"fields": ["Convex & Discrete Geometry"], "id": "Erdos504.erdos_504.variants.sendov", "kind": "known", "prize": null, "solved": false, "title": "Sendov (1995)."}
@@ -1130,14 +1130,14 @@
 {"fields": ["Convex & Discrete Geometry"], "id": "Erdos508.HadwigerNelsonAtLeastFive", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 508 — HadwigerNelsonAtLeastFive"}
 {"fields": ["Convex & Discrete Geometry"], "id": "Erdos508.HadwigerNelsonProblem", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 508 — HadwigerNelsonProblem"}
 {"fields": ["Complex Analysis"], "id": "Erdos509.erdos_509", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 509"}
-{"fields": ["Complex Analysis"], "id": "Erdos509.erdos_509.variants.Cartan_bound", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 509 — Cartan bound"}
+{"fields": ["Complex Analysis"], "id": "Erdos509.erdos_509.variants.Cartan_bound", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 509 — Cartan bound"}
 {"fields": ["Complex Analysis"], "id": "Erdos509.erdos_509.variants.Pommerenke_connected", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 509 — Pommerenke connected"}
 {"fields": ["Number Theory"], "id": "Erdos51.erdos_51", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 51"}
 {"fields": ["Number Theory"], "id": "Erdos510.erdos_510", "kind": "open", "prize": null, "solved": false, "title": "Chowla's cosine problem"}
 {"fields": ["Number Theory"], "id": "Erdos510.erdos_510.variants.bedert", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 510 — bedert"}
 {"fields": ["Number Theory"], "id": "Erdos510.erdos_510.variants.ruzsa", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 510 — ruzsa"}
 {"fields": ["Complex Analysis"], "id": "Erdos513.erdos_513", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 513"}
-{"fields": ["Complex Analysis"], "id": "Erdos513.erdos_513.variants.lower_bound", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 513 — lower bound"}
+{"fields": ["Complex Analysis"], "id": "Erdos513.erdos_513.variants.lower_bound", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 513 — lower bound"}
 {"fields": ["Complex Analysis"], "id": "Erdos513.erdos_513.variants.upper_bound", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 513 — upper bound"}
 {"fields": ["Complex Analysis"], "id": "Erdos516.erdos_516.variants.limsup_ratio_eq_one", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 516 — limsup ratio eq one"}
 {"fields": ["Complex Analysis"], "id": "Erdos517.erdos_517", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 517"}
@@ -1148,7 +1148,7 @@
 {"fields": ["Complex Analysis", "Probability"], "id": "Erdos525.erdos_525.variants.kashin", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 525 — kashin"}
 {"fields": ["Complex Analysis", "Probability"], "id": "Erdos525.erdos_525.variants.konyagin", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 525 — konyagin"}
 {"fields": ["Complex Analysis", "Probability"], "id": "Erdos525.erdos_525.variants.konyagin_schlag", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 525 — konyagin schlag"}
-{"fields": ["Number Theory"], "id": "Erdos53.erdos_53.variants.upper", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 53 — upper"}
+{"fields": ["Number Theory"], "id": "Erdos53.erdos_53.variants.upper", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 53 — upper"}
 {"fields": ["Combinatorics"], "id": "Erdos533.erdos_533.variants.delta_four_eq_zero", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 533 — delta four eq zero"}
 {"fields": ["Combinatorics"], "id": "Erdos533.erdos_533.variants.delta_seven_ge_quarter", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 533 — delta seven ge quarter"}
 {"fields": ["Combinatorics"], "id": "Erdos533.erdos_533.variants.ehsss_upper", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 533 — ehsss upper"}
@@ -1174,7 +1174,7 @@
 {"fields": ["Combinatorics"], "id": "Erdos544.erdos_544.parts.i", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 544 — i"}
 {"fields": ["Combinatorics"], "id": "Erdos544.erdos_544.parts.ii", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 544 — ii"}
 {"fields": ["Combinatorics"], "id": "Erdos545.erdos_545", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 545"}
-{"fields": ["Combinatorics"], "id": "Erdos547.erdos_547.variants.sufficiently_large", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 547 — sufficiently large"}
+{"fields": ["Combinatorics"], "id": "Erdos547.erdos_547.variants.sufficiently_large", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 547 — sufficiently large"}
 {"fields": ["Combinatorics"], "id": "Erdos549.erdos_549", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 549"}
 {"fields": ["Combinatorics"], "id": "Erdos551.erdos_551", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 551"}
 {"fields": ["Combinatorics"], "id": "Erdos551.erdos_551.variants.sufficiently_large", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 551 — sufficiently large"}
@@ -1201,8 +1201,8 @@
 {"fields": ["Combinatorics"], "id": "Erdos559.erdos_559.variants.trees", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 559 — trees"}
 {"fields": ["Combinatorics"], "id": "Erdos560.erdos_560", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 560"}
 {"fields": ["Combinatorics"], "id": "Erdos560.erdos_560.variants.conlon_fox_wigderson", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 560 — conlon fox wigderson"}
-{"fields": ["Combinatorics"], "id": "Erdos560.erdos_560.variants.lower_bound", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 560 — lower bound"}
-{"fields": ["Combinatorics"], "id": "Erdos560.erdos_560.variants.upper_bound", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 560 — upper bound"}
+{"fields": ["Combinatorics"], "id": "Erdos560.erdos_560.variants.lower_bound", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 560 — lower bound"}
+{"fields": ["Combinatorics"], "id": "Erdos560.erdos_560.variants.upper_bound", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 560 — upper bound"}
 {"fields": ["Combinatorics"], "id": "Erdos561.erdos_561", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 561"}
 {"fields": ["Combinatorics"], "id": "Erdos562.erdos_562", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 562"}
 {"fields": ["Combinatorics"], "id": "Erdos563.erdos_563", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 563"}
@@ -1216,8 +1216,8 @@
 {"fields": ["Combinatorics"], "id": "Erdos570.erdos_570", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 570"}
 {"fields": ["Combinatorics"], "id": "Erdos572.erdos_572", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 572"}
 {"fields": ["Combinatorics"], "id": "Erdos573.erdos_573", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 573"}
-{"fields": ["Combinatorics"], "id": "Erdos573.erdos_573.variants.c4_c5", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 573 — c4 c5"}
-{"fields": ["Combinatorics"], "id": "Erdos573.erdos_573.variants.kst", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 573 — kst"}
+{"fields": ["Combinatorics"], "id": "Erdos573.erdos_573.variants.c4_c5", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 573 — c4 c5"}
+{"fields": ["Combinatorics"], "id": "Erdos573.erdos_573.variants.kst", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 573 — kst"}
 {"fields": ["Combinatorics", "Probability"], "id": "Erdos578.erdos_578", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 578"}
 {"fields": ["Combinatorics", "Probability"], "id": "Erdos578.erdos_578.variants.riordan", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 578 — riordan"}
 {"fields": ["Combinatorics"], "id": "Erdos579.erdos_579", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 579"}
@@ -1244,18 +1244,18 @@
 {"fields": ["Combinatorics"], "id": "Erdos593.erdos_593.variants.common_pair_not_obligatory", "kind": "known", "prize": "$500", "solved": true, "title": "Erdős Problem 593 — common pair not obligatory"}
 {"fields": ["Combinatorics"], "id": "Erdos593.erdos_593.variants.obligatory_implies_two_colorable", "kind": "known", "prize": "$500", "solved": false, "title": "Necessary direction"}
 {"fields": ["Combinatorics"], "id": "Erdos593.erdos_593.variants.two_colorable_implies_obligatory", "kind": "known", "prize": "$500", "solved": true, "title": "Sufficient direction fails"}
-{"fields": ["Combinatorics", "Logic & Foundations"], "id": "Erdos594.erdos_594.variants.erdos_hajnal", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 594 — erdos hajnal"}
+{"fields": ["Combinatorics", "Logic & Foundations"], "id": "Erdos594.erdos_594.variants.erdos_hajnal", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 594 — erdos hajnal"}
 {"fields": ["Combinatorics"], "id": "Erdos595.erdos_595", "kind": "open", "prize": "$250", "solved": false, "title": "Erdős Problem 595 (\\$250)"}
 {"fields": ["Combinatorics"], "id": "Erdos596.erdos_596", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 596"}
-{"fields": ["Combinatorics"], "id": "Erdos596.erdos_596.variants.C4_C6_finite_ramsey", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 596 — C4 C6 finite ramsey"}
-{"fields": ["Combinatorics"], "id": "Erdos596.erdos_596.variants.C4_free_countable_escape", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 596 — C4 free countable escape"}
+{"fields": ["Combinatorics"], "id": "Erdos596.erdos_596.variants.C4_C6_finite_ramsey", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 596 — C4 C6 finite ramsey"}
+{"fields": ["Combinatorics"], "id": "Erdos596.erdos_596.variants.C4_free_countable_escape", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 596 — C4 free countable escape"}
 {"fields": ["Combinatorics"], "id": "Erdos596.erdos_596.variants.K4_K3_exceptional_iff", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 596 — K4 K3 exceptional iff"}
 {"fields": ["Combinatorics"], "id": "Erdos596.erdos_596.variants.K4_K3_finite_ramsey", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 596 — K4 K3 finite ramsey"}
-{"fields": ["Combinatorics"], "id": "Erdos596.erdos_596.variants.exists_exceptional", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 596 — exists exceptional"}
-{"fields": ["Combinatorics"], "id": "Erdos596.erdos_596.variants.original_conjecture_is_false", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 596 — original conjecture is false"}
+{"fields": ["Combinatorics"], "id": "Erdos596.erdos_596.variants.exists_exceptional", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 596 — exists exceptional"}
+{"fields": ["Combinatorics"], "id": "Erdos596.erdos_596.variants.original_conjecture_is_false", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 596 — original conjecture is false"}
 {"fields": ["Combinatorics", "Logic & Foundations"], "id": "Erdos597.erdos_597", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 597"}
 {"fields": ["Combinatorics", "Logic & Foundations"], "id": "Erdos597.erdos_597.variants.baumgartner", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 597 — baumgartner"}
-{"fields": ["Combinatorics", "Logic & Foundations"], "id": "Erdos597.erdos_597.variants.erdos_hajnal", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 597 — erdos hajnal"}
+{"fields": ["Combinatorics", "Logic & Foundations"], "id": "Erdos597.erdos_597.variants.erdos_hajnal", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 597 — erdos hajnal"}
 {"fields": ["Combinatorics", "Logic & Foundations"], "id": "Erdos597.erdos_597.variants.finite", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 597, finite case"}
 {"fields": ["Combinatorics", "Logic & Foundations"], "id": "Erdos598.erdos_598", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 598"}
 {"fields": ["Combinatorics"], "id": "Erdos599.erdos_599", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 599"}
@@ -1267,7 +1267,7 @@
 {"fields": ["Combinatorics"], "id": "Erdos60.erdos_60.variants.two_copies", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 60 — two copies"}
 {"fields": ["Combinatorics"], "id": "Erdos600.erdos_600.parts.i", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 600 — i"}
 {"fields": ["Combinatorics"], "id": "Erdos600.erdos_600.parts.ii", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 600 — ii"}
-{"fields": ["Combinatorics"], "id": "Erdos600.erdos_600.variants.ruzsa_szemeredi_upper_bound", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 600 — ruzsa szemeredi upper bound"}
+{"fields": ["Combinatorics"], "id": "Erdos600.erdos_600.variants.ruzsa_szemeredi_upper_bound", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 600 — ruzsa szemeredi upper bound"}
 {"fields": ["Combinatorics"], "id": "Erdos601.erdos_601", "kind": "open", "prize": "$500", "solved": false, "title": "Erdős Problem 601"}
 {"fields": ["Combinatorics"], "id": "Erdos601.erdos_601.variants.erdos_hajnal_milner_1970", "kind": "known", "prize": "$500", "solved": false, "title": "Erdős–Hajnal–Milner (1970)"}
 {"fields": ["Combinatorics"], "id": "Erdos601.erdos_601.variants.omega_1_omega_plus_2", "kind": "open", "prize": "$500", "solved": false, "title": "Erdős–Hajnal–Milner conjecture at $\\omega_1^{\\omega+2}$"}
@@ -1283,12 +1283,12 @@
 {"fields": ["Combinatorics"], "id": "Erdos61.erdos_61", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 61 -- Erdős–Hajnal Conjecture"}
 {"fields": ["Combinatorics"], "id": "Erdos61.erdos_61.variants.bnss23", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 61 -- Erdős–Hajnal Conjecture — bnss23"}
 {"fields": ["Combinatorics"], "id": "Erdos61.erdos_61.variants.c5", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 61 -- Erdős–Hajnal Conjecture — c5"}
-{"fields": ["Combinatorics"], "id": "Erdos61.erdos_61.variants.erha89", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 61 -- Erdős–Hajnal Conjecture — erha89"}
+{"fields": ["Combinatorics"], "id": "Erdos61.erdos_61.variants.erha89", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 61 -- Erdős–Hajnal Conjecture — erha89"}
 {"fields": ["Combinatorics"], "id": "Erdos61.erdos_61.variants.p5", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 61 -- Erdős–Hajnal Conjecture — p5"}
 {"fields": ["Combinatorics"], "id": "Erdos611.erdos_611.parts.i", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 611 — i"}
 {"fields": ["Combinatorics"], "id": "Erdos611.erdos_611.parts.ii", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 611 — ii"}
-{"fields": ["Combinatorics"], "id": "Erdos611.erdos_611.variants.bollobas_erdos", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 611 — bollobas erdos"}
-{"fields": ["Combinatorics"], "id": "Erdos611.erdos_611.variants.bollobas_erdos_sharp", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 611 — bollobas erdos sharp"}
+{"fields": ["Combinatorics"], "id": "Erdos611.erdos_611.variants.bollobas_erdos", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 611 — bollobas erdos"}
+{"fields": ["Combinatorics"], "id": "Erdos611.erdos_611.variants.bollobas_erdos_sharp", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 611 — bollobas erdos sharp"}
 {"fields": ["Combinatorics"], "id": "Erdos614.erdos_614", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 614"}
 {"fields": ["Combinatorics"], "id": "Erdos615.erdos_615.variants.fox_loh_zhao", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 615 — fox loh zhao"}
 {"fields": ["Combinatorics"], "id": "Erdos615.erdos_615.variants.sudakov", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 615 — sudakov"}
@@ -1306,22 +1306,22 @@
 {"fields": ["Combinatorics"], "id": "Erdos626.erdos_626.parts.i", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 626 — i"}
 {"fields": ["Combinatorics"], "id": "Erdos626.erdos_626.parts.ii", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 626 — ii"}
 {"fields": ["Combinatorics"], "id": "Erdos626.erdos_626.variants.h_even_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 626 — h even conjecture"}
-{"fields": ["Combinatorics"], "id": "Erdos626.erdos_626.variants.h_lower", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 626 — h lower"}
+{"fields": ["Combinatorics"], "id": "Erdos626.erdos_626.variants.h_lower", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 626 — h lower"}
 {"fields": ["Combinatorics"], "id": "Erdos626.erdos_626.variants.h_odd_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 626 — h odd conjecture"}
-{"fields": ["Combinatorics"], "id": "Erdos626.erdos_626.variants.h_upper_odd", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 626 — h upper odd"}
-{"fields": ["Combinatorics"], "id": "Erdos626.erdos_626.variants.kostochka", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 626 — kostochka"}
+{"fields": ["Combinatorics"], "id": "Erdos626.erdos_626.variants.h_upper_odd", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 626 — h upper odd"}
+{"fields": ["Combinatorics"], "id": "Erdos626.erdos_626.variants.kostochka", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 626 — kostochka"}
 {"fields": ["Combinatorics"], "id": "Erdos627.erdos_627", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 627"}
 {"fields": ["Combinatorics"], "id": "Erdos627.erdos_627.variants.afm_upper", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 627 — afm upper"}
 {"fields": ["Combinatorics"], "id": "Erdos627.erdos_627.variants.conditional", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 627 — conditional"}
-{"fields": ["Combinatorics"], "id": "Erdos627.erdos_627.variants.erdos_1961", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 627 — erdos 1961"}
-{"fields": ["Combinatorics"], "id": "Erdos627.erdos_627.variants.limit_bounds", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 627 — limit bounds"}
-{"fields": ["Combinatorics"], "id": "Erdos627.erdos_627.variants.lower", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 627 — lower"}
-{"fields": ["Combinatorics"], "id": "Erdos627.erdos_627.variants.theta", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 627 — theta"}
-{"fields": ["Combinatorics"], "id": "Erdos627.erdos_627.variants.upper", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 627 — upper"}
+{"fields": ["Combinatorics"], "id": "Erdos627.erdos_627.variants.erdos_1961", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 627 — erdos 1961"}
+{"fields": ["Combinatorics"], "id": "Erdos627.erdos_627.variants.limit_bounds", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 627 — limit bounds"}
+{"fields": ["Combinatorics"], "id": "Erdos627.erdos_627.variants.lower", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 627 — lower"}
+{"fields": ["Combinatorics"], "id": "Erdos627.erdos_627.variants.theta", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 627 — theta"}
+{"fields": ["Combinatorics"], "id": "Erdos627.erdos_627.variants.upper", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 627 — upper"}
 {"fields": ["Combinatorics"], "id": "Erdos628.erdos_628", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 628"}
 {"fields": ["Combinatorics"], "id": "Erdos628.erdos_628.variants.independence_number_2", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 628 — independence number 2"}
 {"fields": ["Combinatorics"], "id": "Erdos628.erdos_628.variants.k_5_a_3_b_3", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 628 — k 5 a 3 b 3"}
-{"fields": ["Combinatorics"], "id": "Erdos628.erdos_628.variants.quasi_line", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 628 — quasi line"}
+{"fields": ["Combinatorics"], "id": "Erdos628.erdos_628.variants.quasi_line", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 628 — quasi line"}
 {"fields": ["Combinatorics"], "id": "Erdos629.erdos_629", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 629"}
 {"fields": ["Combinatorics"], "id": "Erdos629.erdos_629.variants.ert_bounds", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 629 — ert bounds"}
 {"fields": ["Combinatorics"], "id": "Erdos629.erdos_629.variants.hmt_recursion", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 629 — hmt recursion"}
@@ -1333,9 +1333,9 @@
 {"fields": ["Combinatorics", "Geometry"], "id": "Erdos633.IsSimiliCuttable.of_ne_zero_two_three_five", "kind": "known", "prize": "$25", "solved": true, "title": "Erdős Problem 633 — of ne zero two three five"}
 {"fields": ["Combinatorics", "Geometry"], "id": "Erdos633.erdos_633", "kind": "known", "prize": "$25", "solved": false, "title": "Erdős Problem 633 — erdos 633"}
 {"fields": ["Combinatorics", "Geometry"], "id": "Erdos633.exists_isSimiliCuttable_iff_ne_zero_two_three_five", "kind": "known", "prize": "$25", "solved": false, "title": "Erdős Problem 633 — exists isSimiliCuttable iff ne zero two three five"}
-{"fields": ["Combinatorics"], "id": "Erdos636.erdos_636.variants.best_possible", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 636 — best possible"}
+{"fields": ["Combinatorics"], "id": "Erdos636.erdos_636.variants.best_possible", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 636 — best possible"}
 {"fields": ["Combinatorics"], "id": "Erdos636.erdos_636.variants.erdos_faudree_sos", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 636 — erdos faudree sos"}
-{"fields": ["Combinatorics"], "id": "Erdos639.erdos_639.variants.exact", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 639 — exact"}
+{"fields": ["Combinatorics"], "id": "Erdos639.erdos_639.variants.exact", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 639 — exact"}
 {"fields": ["Combinatorics"], "id": "Erdos64.erdos_64", "kind": "open", "prize": "$1000", "solved": false, "title": "Erdős Problem 64"}
 {"fields": ["Combinatorics"], "id": "Erdos640.erdos_640", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 640"}
 {"fields": ["Combinatorics"], "id": "Erdos642.erdos_642", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 642"}
@@ -1353,19 +1353,19 @@
 {"fields": ["Combinatorics"], "id": "Erdos65.erdos_65.parts.i", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 65 — i"}
 {"fields": ["Combinatorics"], "id": "Erdos65.erdos_65.parts.ii", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 65 — ii"}
 {"fields": ["Combinatorics"], "id": "Erdos65.erdos_65.variants.liu_montgomery", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 65 — liu montgomery"}
-{"fields": ["Combinatorics", "Number Theory"], "id": "Erdos650.erdos_650.variants.erdos_selfridge", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 650 — erdos selfridge"}
-{"fields": ["Combinatorics", "Number Theory"], "id": "Erdos650.erdos_650.variants.erdos_suranyi", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 650 — erdos suranyi"}
+{"fields": ["Combinatorics", "Number Theory"], "id": "Erdos650.erdos_650.variants.erdos_selfridge", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 650 — erdos selfridge"}
+{"fields": ["Combinatorics", "Number Theory"], "id": "Erdos650.erdos_650.variants.erdos_suranyi", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 650 — erdos suranyi"}
 {"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Erdos651.erdos_651", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 651 — erdos 651"}
 {"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Erdos651.erdos_651.variants.antitone", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 651 — antitone"}
 {"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Erdos651.erdos_651.variants.planar", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 651 — planar"}
 {"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Erdos651.erdos_651.variants.pohoata_zakharov", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 651 — pohoata zakharov"}
 {"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Erdos651.erdos_651.variants.subexponential", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 651 — subexponential"}
 {"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Erdos651.nonempty_cardSet", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 651 — nonempty cardSet"}
-{"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Erdos652.erdos_652", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 652"}
+{"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Erdos652.erdos_652", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 652"}
 {"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Erdos652.erdos_652.variants.elekes", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 652 — elekes"}
 {"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Erdos652.erdos_652.variants.first", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 652 — first"}
-{"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Erdos652.erdos_652.variants.kth_lower_bound", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 652 — kth lower bound"}
-{"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Erdos652.erdos_652.variants.mathialagan", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 652 — mathialagan"}
+{"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Erdos652.erdos_652.variants.kth_lower_bound", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 652 — kth lower bound"}
+{"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Erdos652.erdos_652.variants.mathialagan", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 652 — mathialagan"}
 {"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Erdos652.erdos_652.variants.order_sqrt", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 652 — order sqrt"}
 {"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Erdos652.erdos_652.variants.product", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 652 — product"}
 {"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Erdos653.erdos_653", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 653"}
@@ -1374,7 +1374,7 @@
 {"fields": ["Convex & Discrete Geometry"], "id": "Erdos654.erdos_654.variants.general_position", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 654 — general position"}
 {"fields": ["Convex & Discrete Geometry"], "id": "Erdos654.erdos_654.variants.general_position_one_sub_eps", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 654 — general position one sub eps"}
 {"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Erdos655.erdos_655.variants.general_position", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 655 — general position"}
-{"fields": ["Combinatorics", "Number Theory"], "id": "Erdos656.erdos_656", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 656"}
+{"fields": ["Combinatorics", "Number Theory"], "id": "Erdos656.erdos_656", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 656"}
 {"fields": ["Convex & Discrete Geometry"], "id": "Erdos657.erdos_657", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 657"}
 {"fields": ["Convex & Discrete Geometry", "Number Theory"], "id": "Erdos657.erdos_657.variants.dim_one", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 657 — dim one"}
 {"fields": ["Convex & Discrete Geometry", "Number Theory"], "id": "Erdos657.erdos_657.variants.dim_one_lower", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 657 — dim one lower"}
@@ -1386,24 +1386,24 @@
 {"fields": ["Convex & Discrete Geometry", "Geometry"], "id": "Erdos660.erdos_660.variants.Er75f", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 660 — Er75f"}
 {"fields": ["Convex & Discrete Geometry", "Geometry"], "id": "Erdos660.erdos_660.variants.altman_planar", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 660 — altman planar"}
 {"fields": ["Convex & Discrete Geometry"], "id": "Erdos661.erdos_661", "kind": "open", "prize": "$50", "solved": false, "title": "Erdős Problem 661"}
-{"fields": ["Convex & Discrete Geometry"], "id": "Erdos661.erdos_661.variants.grid_upper_bound", "kind": "known", "prize": "$50", "solved": true, "title": "Erdős Problem 661 — grid upper bound"}
-{"fields": ["Convex & Discrete Geometry"], "id": "Erdos661.erdos_661.variants.lenz", "kind": "known", "prize": "$50", "solved": true, "title": "Erdős Problem 661 — lenz"}
+{"fields": ["Convex & Discrete Geometry"], "id": "Erdos661.erdos_661.variants.grid_upper_bound", "kind": "known", "prize": "$50", "solved": false, "title": "Erdős Problem 661 — grid upper bound"}
+{"fields": ["Convex & Discrete Geometry"], "id": "Erdos661.erdos_661.variants.lenz", "kind": "known", "prize": "$50", "solved": false, "title": "Erdős Problem 661 — lenz"}
 {"fields": ["Convex & Discrete Geometry"], "id": "Erdos661.erdos_661.variants.little_o_distinct_distances", "kind": "open", "prize": "$50", "solved": false, "title": "Erdős Problem 661 — little o distinct distances"}
 {"fields": ["Number Theory"], "id": "Erdos663.erdos_663", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 663"}
 {"fields": ["Combinatorics"], "id": "Erdos664.erdos_664.variants.block_design", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 664 — block design"}
 {"fields": ["Combinatorics"], "id": "Erdos665.erdos_665", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 665"}
 {"fields": ["Combinatorics"], "id": "Erdos667.erdos_667", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 667"}
-{"fields": ["Combinatorics"], "id": "Erdos667.erdos_667.variants.ramsey_bounds", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 667 — ramsey bounds"}
+{"fields": ["Combinatorics"], "id": "Erdos667.erdos_667.variants.ramsey_bounds", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 667 — ramsey bounds"}
 {"fields": ["Convex & Discrete Geometry"], "id": "Erdos668.erdos_668.parts.i", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 668 — i"}
 {"fields": ["Convex & Discrete Geometry"], "id": "Erdos668.erdos_668.parts.ii", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 668 — ii"}
 {"fields": ["Convex & Discrete Geometry"], "id": "Erdos668.erdos_668.variants.four_points", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 668 — four points"}
 {"fields": ["Convex & Discrete Geometry"], "id": "Erdos669.erdos_669.parts.i", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 669 — i"}
 {"fields": ["Convex & Discrete Geometry"], "id": "Erdos669.erdos_669.parts.ii", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 669 — ii"}
-{"fields": ["Convex & Discrete Geometry"], "id": "Erdos669.erdos_669.variants.burr_grunbaum_sloane_atLeast", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 669 — burr grunbaum sloane atLeast"}
-{"fields": ["Convex & Discrete Geometry"], "id": "Erdos669.erdos_669.variants.burr_grunbaum_sloane_exactly", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 669 — burr grunbaum sloane exactly"}
-{"fields": ["Convex & Discrete Geometry"], "id": "Erdos669.erdos_669.variants.k_two", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 669 — k two"}
-{"fields": ["Convex & Discrete Geometry"], "id": "Erdos669.erdos_669.variants.limit_le", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 669 — limit le"}
-{"fields": ["Convex & Discrete Geometry"], "id": "Erdos669.erdos_669.variants.upper_bound", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 669 — upper bound"}
+{"fields": ["Convex & Discrete Geometry"], "id": "Erdos669.erdos_669.variants.burr_grunbaum_sloane_atLeast", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 669 — burr grunbaum sloane atLeast"}
+{"fields": ["Convex & Discrete Geometry"], "id": "Erdos669.erdos_669.variants.burr_grunbaum_sloane_exactly", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 669 — burr grunbaum sloane exactly"}
+{"fields": ["Convex & Discrete Geometry"], "id": "Erdos669.erdos_669.variants.k_two", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 669 — k two"}
+{"fields": ["Convex & Discrete Geometry"], "id": "Erdos669.erdos_669.variants.limit_le", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 669 — limit le"}
+{"fields": ["Convex & Discrete Geometry"], "id": "Erdos669.erdos_669.variants.upper_bound", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 669 — upper bound"}
 {"fields": ["Number Theory"], "id": "Erdos67.erdos_67", "kind": "known", "prize": "$500", "solved": false, "title": "The Erdős discrepancy problem"}
 {"fields": ["Number Theory"], "id": "Erdos67.erdos_67.variants.complex", "kind": "known", "prize": "$500", "solved": false, "title": "The Erdős discrepancy problem (complex variant)"}
 {"fields": ["Convex & Discrete Geometry"], "id": "Erdos670.erdos_670", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 670"}
@@ -1457,7 +1457,7 @@
 {"fields": ["Number Theory"], "id": "Erdos695.erdos_695", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 695"}
 {"fields": ["Number Theory"], "id": "Erdos695.erdos_695.variants.upperBound", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 695 — upperBound"}
 {"fields": ["Number Theory"], "id": "Erdos696.erdos_696", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 696"}
-{"fields": ["Number Theory"], "id": "Erdos697.density_exists", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 697"}
+{"fields": ["Number Theory"], "id": "Erdos697.density_exists", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 697"}
 {"fields": ["Number Theory"], "id": "Erdos697.erdos_697.parts.i", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 697 — i"}
 {"fields": ["Number Theory"], "id": "Erdos697.erdos_697.parts.ii", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 697 — ii"}
 {"fields": ["Number Theory"], "id": "Erdos697.erdos_697.variants.delta_lt", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 697 — delta lt"}
@@ -1506,7 +1506,7 @@
 {"fields": ["Combinatorics"], "id": "Erdos713.erdos_713.parts.i", "kind": "open", "prize": "$500", "solved": false, "title": "Erdős Problem 713 — i"}
 {"fields": ["Combinatorics"], "id": "Erdos713.erdos_713.parts.ii", "kind": "open", "prize": "$500", "solved": false, "title": "Erdős Problem 713 — ii"}
 {"fields": ["Combinatorics"], "id": "Erdos714.erdos_714", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 714"}
-{"fields": ["Combinatorics"], "id": "Erdos716.erdos_716", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 716"}
+{"fields": ["Combinatorics"], "id": "Erdos716.erdos_716", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 716"}
 {"fields": ["Combinatorics"], "id": "Erdos717.erdos_717.variants.erdos_fajtlowicz", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 717 — erdos fajtlowicz"}
 {"fields": ["Combinatorics"], "id": "Erdos719.erdos_719", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 719"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos721.erdos_721.lower_bound", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 721 — lower bound"}
@@ -1551,22 +1551,22 @@
 {"fields": ["Combinatorics"], "id": "Erdos743.erdos_743.variants.almost_linear_degree", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 743 — almost linear degree"}
 {"fields": ["Combinatorics"], "id": "Erdos743.erdos_743.variants.bollobas", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 743 — bollobas"}
 {"fields": ["Combinatorics"], "id": "Erdos743.erdos_743.variants.bounded_degree", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 743 — bounded degree"}
-{"fields": ["Combinatorics"], "id": "Erdos743.erdos_743.variants.fishburn", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 743 — fishburn"}
+{"fields": ["Combinatorics"], "id": "Erdos743.erdos_743.variants.fishburn", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 743 — fishburn"}
 {"fields": ["Combinatorics"], "id": "Erdos743.erdos_743.variants.largest_trees", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 743 — largest trees"}
 {"fields": ["Combinatorics"], "id": "Erdos743.erdos_743.variants.stars_or_paths", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 743 — stars or paths"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos748.erdos_748.variants.asymptotic", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 748 — asymptotic"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos748.erdos_748.variants.green_sapozhenko", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 748 — green sapozhenko"}
 {"fields": ["Number Theory"], "id": "Erdos749.erdos_749", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 749"}
 {"fields": ["Combinatorics"], "id": "Erdos75.erdos_75", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 75"}
-{"fields": ["Combinatorics"], "id": "Erdos750.erdos_750.variants.c_gt_quarter", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 750 — c gt quarter"}
-{"fields": ["Combinatorics"], "id": "Erdos750.erdos_750.variants.epsilon", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 750 — epsilon"}
+{"fields": ["Combinatorics"], "id": "Erdos750.erdos_750.variants.c_gt_quarter", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 750 — c gt quarter"}
+{"fields": ["Combinatorics"], "id": "Erdos750.erdos_750.variants.epsilon", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 750 — epsilon"}
 {"fields": ["Combinatorics"], "id": "Erdos751.erdos_751.parts.i", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 751 — i"}
 {"fields": ["Combinatorics"], "id": "Erdos751.erdos_751.parts.ii", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 751 — ii"}
-{"fields": ["Combinatorics"], "id": "Erdos751.erdos_751.variants.bondy_vince", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 751 — bondy vince"}
+{"fields": ["Combinatorics"], "id": "Erdos751.erdos_751.variants.bondy_vince", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 751 — bondy vince"}
 {"fields": ["Combinatorics"], "id": "Erdos753.erdos_753.variants.alon", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 753 — alon"}
 {"fields": ["Convex & Discrete Geometry"], "id": "Erdos755.erdos_755.variants.any_size_cdl", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 755 — any size cdl"}
-{"fields": ["Convex & Discrete Geometry"], "id": "Erdos756.erdos_756", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 756"}
-{"fields": ["Convex & Discrete Geometry"], "id": "Erdos756.erdos_756.variants.bhowmick_general", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 756 — bhowmick general"}
+{"fields": ["Convex & Discrete Geometry"], "id": "Erdos756.erdos_756", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 756"}
+{"fields": ["Convex & Discrete Geometry"], "id": "Erdos756.erdos_756.variants.bhowmick_general", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 756 — bhowmick general"}
 {"fields": ["Combinatorics"], "id": "Erdos757.erdos_757", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 757"}
 {"fields": ["Combinatorics"], "id": "Erdos757.erdos_757.variants.lowerBound", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 757 — lowerBound"}
 {"fields": ["Combinatorics"], "id": "Erdos757.erdos_757.variants.upperBound", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 757 — upperBound"}
@@ -1584,8 +1584,8 @@
 {"fields": ["Combinatorics"], "id": "Erdos766.erdos_766.parts.ii", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 766 — ii"}
 {"fields": ["Combinatorics"], "id": "Erdos766.erdos_766.variants.minExtremalNumber_estimate", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 766 — minExtremalNumber estimate"}
 {"fields": ["Combinatorics"], "id": "Erdos766.erdos_766.variants.minExtremalNumber_strictMonoOn", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 766 — minExtremalNumber strictMonoOn"}
-{"fields": ["Combinatorics"], "id": "Erdos767.erdos_767.variants.czipszer", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 767 — czipszer"}
-{"fields": ["Combinatorics"], "id": "Erdos767.erdos_767.variants.posa", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 767 — posa"}
+{"fields": ["Combinatorics"], "id": "Erdos767.erdos_767.variants.czipszer", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 767 — czipszer"}
+{"fields": ["Combinatorics"], "id": "Erdos767.erdos_767.variants.posa", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 767 — posa"}
 {"fields": ["Number Theory"], "id": "Erdos768.erdos_768", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 768"}
 {"fields": ["Convex & Discrete Geometry"], "id": "Erdos769.erdos_769.variants.growth_rate", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 769 — growth rate"}
 {"fields": ["Combinatorics"], "id": "Erdos77.erdos_77", "kind": "open", "prize": "$250", "solved": false, "title": "Erdős Problem 77"}
@@ -1597,9 +1597,9 @@
 {"fields": ["Number Theory"], "id": "Erdos770.erdos_770.variants.three", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 770 — three"}
 {"fields": ["Number Theory"], "id": "Erdos771.erdos_771", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 771"}
 {"fields": ["Number Theory"], "id": "Erdos771.erdos_771.variants.alon_freiman_upper", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 771 — alon freiman upper"}
-{"fields": ["Number Theory"], "id": "Erdos771.erdos_771.variants.erdos_graham_lower", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 771 — erdos graham lower"}
-{"fields": ["Combinatorics", "Number Theory"], "id": "Erdos772.erdos_772.variants.alon_erdos", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 772 — alon erdos"}
-{"fields": ["Combinatorics", "Number Theory"], "id": "Erdos772.erdos_772.variants.upper_bound", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 772 — upper bound"}
+{"fields": ["Number Theory"], "id": "Erdos771.erdos_771.variants.erdos_graham_lower", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 771 — erdos graham lower"}
+{"fields": ["Combinatorics", "Number Theory"], "id": "Erdos772.erdos_772.variants.alon_erdos", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 772 — alon erdos"}
+{"fields": ["Combinatorics", "Number Theory"], "id": "Erdos772.erdos_772.variants.upper_bound", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 772 — upper bound"}
 {"fields": ["Number Theory"], "id": "Erdos773.erdos_773", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 773"}
 {"fields": ["Combinatorics"], "id": "Erdos774.erdos_774", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 774"}
 {"fields": ["Combinatorics"], "id": "Erdos775.erdos_775.variants.gao", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 775 — gao"}
@@ -1614,20 +1614,20 @@
 {"fields": ["Combinatorics"], "id": "Erdos78.erdos_78.variants.nonconstructive", "kind": "known", "prize": "$100", "solved": true, "title": "Erdős Problem 78 — nonconstructive"}
 {"fields": ["Combinatorics", "Computer Science"], "id": "Erdos78.erdos_78.variants.strongly_explicit", "kind": "open", "prize": "$100", "solved": false, "title": "Erdős Problem 78 — strongly explicit"}
 {"fields": ["Combinatorics"], "id": "Erdos780.erdos_780.variants.sharp", "kind": "warmup", "prize": null, "solved": true, "title": "Erdős Problem 780 — sharp"}
-{"fields": ["Combinatorics", "Number Theory"], "id": "Erdos781.erdos_781.variants.brown_erdos_freedman", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 781 — brown erdos freedman"}
+{"fields": ["Combinatorics", "Number Theory"], "id": "Erdos781.erdos_781.variants.brown_erdos_freedman", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 781 — brown erdos freedman"}
 {"fields": ["Number Theory"], "id": "Erdos782.erdos_782.parts.i", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 782 — i"}
 {"fields": ["Number Theory"], "id": "Erdos782.erdos_782.parts.ii", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 782 — ii"}
 {"fields": ["Number Theory"], "id": "Erdos782.erdos_782.variants.dietmann_elsholtz", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 782 — dietmann elsholtz"}
-{"fields": ["Number Theory"], "id": "Erdos782.erdos_782.variants.no_four_term_ap", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 782 — no four term ap"}
+{"fields": ["Number Theory"], "id": "Erdos782.erdos_782.variants.no_four_term_ap", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 782 — no four term ap"}
 {"fields": ["Number Theory"], "id": "Erdos785.erdos_785.variants.chen_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 785 — chen conjecture"}
-{"fields": ["Number Theory"], "id": "Erdos785.erdos_785.variants.chen_fang", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 785 — chen fang"}
+{"fields": ["Number Theory"], "id": "Erdos785.erdos_785.variants.chen_fang", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 785 — chen fang"}
 {"fields": ["Number Theory"], "id": "Erdos785.erdos_785.variants.chen_fang_limsup", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 785 — chen fang limsup"}
 {"fields": ["Number Theory"], "id": "Erdos785.erdos_785.variants.chen_fang_sharp", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 785 — chen fang sharp"}
 {"fields": ["Number Theory"], "id": "Erdos785.erdos_785.variants.danzer", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 785 — danzer"}
 {"fields": ["Number Theory"], "id": "Erdos785.erdos_785.variants.narkiewicz", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 785 — narkiewicz"}
 {"fields": ["Number Theory"], "id": "Erdos785.erdos_785.variants.ruzsa_lower_bound", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 785 — ruzsa lower bound"}
 {"fields": ["Number Theory"], "id": "Erdos785.erdos_785.variants.ruzsa_upper_bound", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 785 — ruzsa upper bound"}
-{"fields": ["Number Theory"], "id": "Erdos785.erdos_785.variants.sarkozy_szemeredi", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 785 — sarkozy szemeredi"}
+{"fields": ["Number Theory"], "id": "Erdos785.erdos_785.variants.sarkozy_szemeredi", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 785 — sarkozy szemeredi"}
 {"fields": ["Number Theory"], "id": "Erdos786.erdos_786.parts.i", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 786 — i"}
 {"fields": ["Number Theory"], "id": "Erdos786.erdos_786.parts.i.selfridge", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 786 — selfridge"}
 {"fields": ["Number Theory"], "id": "Erdos786.erdos_786.parts.ii", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 786 — ii"}
@@ -1639,7 +1639,7 @@
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos787.erdos_787.variants.ruzsa", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 787 — ruzsa"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos787.erdos_787.variants.sanders", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 787 — sanders"}
 {"fields": ["Combinatorics"], "id": "Erdos789.erdos_789", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 789"}
-{"fields": ["Combinatorics"], "id": "Erdos789.erdos_789.variants.isBigO_sq", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 789 — isBigO sq"}
+{"fields": ["Combinatorics"], "id": "Erdos789.erdos_789.variants.isBigO_sq", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 789 — isBigO sq"}
 {"fields": ["Combinatorics"], "id": "Erdos789.erdos_789.variants.sq", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 789 — sq"}
 {"fields": ["Combinatorics"], "id": "Erdos789.erdos_789.variants.sq_isBigO", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 789 — sq isBigO"}
 {"fields": ["Combinatorics"], "id": "Erdos79.erdos_79", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 79"}
@@ -1648,29 +1648,29 @@
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos790.erdos_790.parts.iii", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 790 — iii"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos790.erdos_790.variants.lower_bound", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 790 — lower bound"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos790.erdos_790.variants.near_linear", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 790 — near linear"}
-{"fields": ["Combinatorics", "Number Theory"], "id": "Erdos790.erdos_790.variants.upper_bound", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 790 — upper bound"}
+{"fields": ["Combinatorics", "Number Theory"], "id": "Erdos790.erdos_790.variants.upper_bound", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 790 — upper bound"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos792.erdos_792", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 792"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos792.erdos_792.variants.alon_kleitman", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 792 — alon kleitman"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos792.erdos_792.variants.bourgain", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 792 — bourgain"}
-{"fields": ["Number Theory"], "id": "Erdos793.erdos_793", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 793"}
+{"fields": ["Number Theory"], "id": "Erdos793.erdos_793", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 793"}
 {"fields": ["Combinatorics"], "id": "Erdos794.erdos_794.variants.frankl_furedi", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 794 — frankl furedi"}
-{"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Erdos798.erdos_798.variants.lower_bound", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 798 — lower bound"}
-{"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Erdos798.erdos_798.variants.upper_bound", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 798 — upper bound"}
+{"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Erdos798.erdos_798.variants.lower_bound", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 798 — lower bound"}
+{"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Erdos798.erdos_798.variants.upper_bound", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 798 — upper bound"}
 {"fields": ["Combinatorics"], "id": "Erdos80.erdos_80.parts.i", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 80 — i"}
 {"fields": ["Combinatorics"], "id": "Erdos80.erdos_80.parts.ii", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 80 — ii"}
-{"fields": ["Combinatorics"], "id": "Erdos800.erdos_800", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 800"}
+{"fields": ["Combinatorics"], "id": "Erdos800.erdos_800", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 800"}
 {"fields": ["Combinatorics"], "id": "Erdos802.erdos_802", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 802"}
-{"fields": ["Combinatorics"], "id": "Erdos802.erdos_802.variants.aeks", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 802 — aeks"}
-{"fields": ["Combinatorics"], "id": "Erdos802.erdos_802.variants.alon", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 802 — alon"}
-{"fields": ["Combinatorics"], "id": "Erdos802.erdos_802.variants.r_eq_three", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 802 — r eq three"}
+{"fields": ["Combinatorics"], "id": "Erdos802.erdos_802.variants.aeks", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 802 — aeks"}
+{"fields": ["Combinatorics"], "id": "Erdos802.erdos_802.variants.alon", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 802 — alon"}
+{"fields": ["Combinatorics"], "id": "Erdos802.erdos_802.variants.r_eq_three", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 802 — r eq three"}
 {"fields": ["Combinatorics"], "id": "Erdos802.erdos_802.variants.shearer", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 802 — shearer"}
 {"fields": ["Combinatorics"], "id": "Erdos803.erdos_803.variants.alon", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 803 — alon"}
 {"fields": ["Combinatorics"], "id": "Erdos803.erdos_803.variants.janzer_sudakov", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 803 — janzer sudakov"}
 {"fields": ["Combinatorics"], "id": "Erdos805.erdos_805.parts.i", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 805 — i"}
 {"fields": ["Combinatorics"], "id": "Erdos805.erdos_805.parts.ii", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 805 — ii"}
 {"fields": ["Combinatorics"], "id": "Erdos805.erdos_805.variants.alon_bucic_sudakov", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 805 — alon bucic sudakov"}
-{"fields": ["Combinatorics"], "id": "Erdos805.erdos_805.variants.alon_sudakov", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 805 — alon sudakov"}
-{"fields": ["Number Theory"], "id": "Erdos806.erdos_806.variants.alon_bukh_sudakov", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 806 — alon bukh sudakov"}
+{"fields": ["Combinatorics"], "id": "Erdos805.erdos_805.variants.alon_sudakov", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 805 — alon sudakov"}
+{"fields": ["Number Theory"], "id": "Erdos806.erdos_806.variants.alon_bukh_sudakov", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 806 — alon bukh sudakov"}
 {"fields": ["Number Theory"], "id": "Erdos806.erdos_806.variants.erdos_newman", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 806 — erdos newman"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos808.erdos_808.variants.positive", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 808 — positive"}
 {"fields": ["Combinatorics"], "id": "Erdos81.erdos_81", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 81"}
@@ -1678,7 +1678,7 @@
 {"fields": ["Combinatorics"], "id": "Erdos810.erdos_810", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 810"}
 {"fields": ["Combinatorics"], "id": "Erdos812.erdos_812.parts.i", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 812 — i"}
 {"fields": ["Combinatorics"], "id": "Erdos812.erdos_812.parts.ii", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 812 — ii"}
-{"fields": ["Combinatorics"], "id": "Erdos812.erdos_812.variants.lower_bound", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 812 — lower bound"}
+{"fields": ["Combinatorics"], "id": "Erdos812.erdos_812.variants.lower_bound", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 812 — lower bound"}
 {"fields": ["Combinatorics"], "id": "Erdos813.erdos_813", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 813"}
 {"fields": ["Combinatorics"], "id": "Erdos813.erdos_813.variants.bucic_sudakov", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 813 — bucic sudakov"}
 {"fields": ["Combinatorics"], "id": "Erdos813.erdos_813.variants.erdos_hajnal", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 813 — erdos hajnal"}
@@ -1687,9 +1687,9 @@
 {"fields": ["Combinatorics"], "id": "Erdos814.erdos_814.variants.sauermann", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 814 — sauermann"}
 {"fields": ["Combinatorics"], "id": "Erdos816.erdos_816.variants.chen_ma", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 816 — chen ma"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos817.erdos_817.variants.bdd_power", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 817 — bdd power"}
-{"fields": ["Combinatorics", "Number Theory"], "id": "Erdos818.erdos_818.variants.solymosi", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 818 — solymosi"}
+{"fields": ["Combinatorics", "Number Theory"], "id": "Erdos818.erdos_818.variants.solymosi", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 818 — solymosi"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos819.erdos_819", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 819"}
-{"fields": ["Combinatorics", "Number Theory"], "id": "Erdos819.erdos_819.variants.erdos_freud_lower", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 819 — erdos freud lower"}
+{"fields": ["Combinatorics", "Number Theory"], "id": "Erdos819.erdos_819.variants.erdos_freud_lower", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 819 — erdos freud lower"}
 {"fields": ["Combinatorics"], "id": "Erdos82.erdos_82", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 82"}
 {"fields": ["Combinatorics"], "id": "Erdos82.erdos_82.variants.F_upper_bound", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 82 — F upper bound"}
 {"fields": ["Number Theory"], "id": "Erdos820.erdos_820", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 820"}
@@ -1698,8 +1698,8 @@
 {"fields": ["Number Theory"], "id": "Erdos820.erdos_820.variants.two_pow_upper", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 820 — two pow upper"}
 {"fields": ["Number Theory"], "id": "Erdos821.erdos_821.variants.erdos", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 821 — erdos"}
 {"fields": ["Number Theory"], "id": "Erdos821.erdos_821.variants.lichtman", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 821 — lichtman"}
-{"fields": ["Number Theory"], "id": "Erdos821.erdos_821.variants.pillai", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 821 — pillai"}
-{"fields": ["Number Theory"], "id": "Erdos823.erdos_823.variants.totient", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 823 — totient"}
+{"fields": ["Number Theory"], "id": "Erdos821.erdos_821.variants.pillai", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 821 — pillai"}
+{"fields": ["Number Theory"], "id": "Erdos823.erdos_823.variants.totient", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 823 — totient"}
 {"fields": ["Number Theory"], "id": "Erdos824.erdos_824.variants.pollack_pomerance", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 824 — pollack pomerance"}
 {"fields": ["Number Theory"], "id": "Erdos824.erdos_824.variants.squarefree", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 824 — squarefree"}
 {"fields": ["Number Theory"], "id": "Erdos826.erdos_826", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 826"}
@@ -1711,7 +1711,7 @@
 {"fields": ["Number Theory"], "id": "Erdos828.erdos_828.variants.lehmer_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 828 — lehmer conjecture"}
 {"fields": ["Number Theory"], "id": "Erdos829.erdos_829", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 829 (open)."}
 {"fields": ["Number Theory"], "id": "Erdos829.variants.mahler", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 829 — mahler"}
-{"fields": ["Number Theory"], "id": "Erdos829.variants.mordell", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 829 — mordell"}
+{"fields": ["Number Theory"], "id": "Erdos829.variants.mordell", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 829 — mordell"}
 {"fields": ["Number Theory"], "id": "Erdos829.variants.stewart", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 829 — stewart"}
 {"fields": ["Combinatorics"], "id": "Erdos83.erdos_83.variants.ahlswede_khachatrian", "kind": "known", "prize": "$500", "solved": false, "title": "Erdős Problem 83 — ahlswede khachatrian"}
 {"fields": ["Combinatorics"], "id": "Erdos83.erdos_83.variants.extremal", "kind": "known", "prize": "$500", "solved": true, "title": "Erdős Problem 83 — extremal"}
@@ -1723,13 +1723,13 @@
 {"fields": ["Convex & Discrete Geometry", "Geometry"], "id": "Erdos831.erdos_831", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 831"}
 {"fields": ["Convex & Discrete Geometry", "Geometry"], "id": "Erdos831.erdos_831.variants.szekeres", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 831 — szekeres"}
 {"fields": ["Combinatorics"], "id": "Erdos832.erdos_832", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 832"}
-{"fields": ["Combinatorics"], "id": "Erdos833.erdos_833", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 833"}
+{"fields": ["Combinatorics"], "id": "Erdos833.erdos_833", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 833"}
 {"fields": ["Combinatorics"], "id": "Erdos834.erdos_834.parts.i", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 834 — i"}
 {"fields": ["Combinatorics"], "id": "Erdos834.erdos_834.parts.ii", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 834 — ii"}
-{"fields": ["Combinatorics"], "id": "Erdos835.chromaticNumber_johnson_2k_k_lower_bound", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 835 — chromaticNumber johnson 2k k lower bound"}
+{"fields": ["Combinatorics"], "id": "Erdos835.chromaticNumber_johnson_2k_k_lower_bound", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 835 — chromaticNumber johnson 2k k lower bound"}
 {"fields": ["Combinatorics"], "id": "Erdos835.erdos_835", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 835 — erdos 835"}
 {"fields": ["Combinatorics"], "id": "Erdos835.erdos_835.variants.johnson", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 835 — johnson"}
-{"fields": ["Combinatorics"], "id": "Erdos835.johnsonGraph_2k_k_chromaticNumber_known_cases", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 835 — johnsonGraph 2k k chromaticNumber known cases"}
+{"fields": ["Combinatorics"], "id": "Erdos835.johnsonGraph_2k_k_chromaticNumber_known_cases", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 835 — johnsonGraph 2k k chromaticNumber known cases"}
 {"fields": ["Combinatorics"], "id": "Erdos835.johnson_chromaticNumber", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 835 — johnson chromaticNumber"}
 {"fields": ["Combinatorics"], "id": "Erdos837.erdos_837", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 837"}
 {"fields": ["Convex & Discrete Geometry"], "id": "Erdos838.erdos_838.parts.i", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 838 — i"}
@@ -1739,7 +1739,7 @@
 {"fields": ["Number Theory"], "id": "Erdos839.erdos_839.parts.ii", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 839 — ii"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos840.erdos_840", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 840"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos840.erdos_840.variants.erdos_freud_lower", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 840 — erdos freud lower"}
-{"fields": ["Combinatorics", "Number Theory"], "id": "Erdos840.erdos_840.variants.pikhurko", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 840 — pikhurko"}
+{"fields": ["Combinatorics", "Number Theory"], "id": "Erdos840.erdos_840.variants.pikhurko", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 840 — pikhurko"}
 {"fields": ["Number Theory"], "id": "Erdos848.erdos_848", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 848"}
 {"fields": ["Number Theory"], "id": "Erdos849.erdos_849", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 849"}
 {"fields": ["Combinatorics"], "id": "Erdos85.erdos_85", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 85"}
@@ -1754,13 +1754,13 @@
 {"fields": ["Number Theory"], "id": "Erdos854.erdos_854.parts.ii", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 854 — ii"}
 {"fields": ["Number Theory"], "id": "Erdos855.erdos_855", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 855"}
 {"fields": ["Number Theory"], "id": "Erdos856.erdos_856", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 856"}
-{"fields": ["Number Theory"], "id": "Erdos856.erdos_856.variants.erdos_upper", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 856 — erdos upper"}
+{"fields": ["Number Theory"], "id": "Erdos856.erdos_856.variants.erdos_upper", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 856 — erdos upper"}
 {"fields": ["Number Theory"], "id": "Erdos856.erdos_856.variants.tang_zhang_lower", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 856 — tang zhang lower"}
 {"fields": ["Number Theory"], "id": "Erdos856.erdos_856.variants.tang_zhang_three_lower", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 856 — tang zhang three lower"}
 {"fields": ["Number Theory"], "id": "Erdos856.erdos_856.variants.tang_zhang_three_upper", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 856 — tang zhang three upper"}
 {"fields": ["Combinatorics"], "id": "Erdos857.erdos_857", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 857"}
 {"fields": ["Number Theory"], "id": "Erdos858.erdos_858.variants.infinite", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 858 — infinite"}
-{"fields": ["Number Theory"], "id": "Erdos858.erdos_858.variants.positive", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 858 — positive"}
+{"fields": ["Number Theory"], "id": "Erdos858.erdos_858.variants.positive", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 858 — positive"}
 {"fields": ["Number Theory"], "id": "Erdos859.erdos_859", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 859"}
 {"fields": ["Number Theory"], "id": "Erdos859.erdos_859.variants.erdos_upper_lower_bounds", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 859 — erdos upper lower bounds"}
 {"fields": ["Number Theory"], "id": "Erdos859.erdos_859.variants.positive_density", "kind": "warmup", "prize": null, "solved": true, "title": "Erdős Problem 859 — positive density"}
@@ -1771,7 +1771,7 @@
 {"fields": ["Number Theory"], "id": "Erdos860.erdos_860.variants.ruzsa", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 860 — ruzsa"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos862.erdos_862.variants.lower_bound", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 862 — lower bound"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos864.erdos_864", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 864"}
-{"fields": ["Combinatorics", "Number Theory"], "id": "Erdos864.erdos_864.variants.lower_bound", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 864 — lower bound"}
+{"fields": ["Combinatorics", "Number Theory"], "id": "Erdos864.erdos_864.variants.lower_bound", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 864 — lower bound"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos865.erdos_865.variants.sos", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 865 — sos"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos865.erdos_865.variants.upper_bound", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 865 — upper bound"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos867.erdos_867.variants.coppersmith_phillips_lower_bound", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 867 — coppersmith phillips lower bound"}
@@ -1788,17 +1788,17 @@
 {"fields": ["Number Theory"], "id": "Erdos873.erdos_873.variants.triple_upper_bound", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 873 — triple upper bound"}
 {"fields": ["Number Theory"], "id": "Erdos875.erdos_875", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 875"}
 {"fields": ["Number Theory"], "id": "Erdos875.erdos_875.variants.deshouillers_freiman", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 875 — deshouillers freiman"}
-{"fields": ["Number Theory"], "id": "Erdos875.erdos_875.variants.erdos_nicolas_sarkozy", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 875 — erdos nicolas sarkozy"}
+{"fields": ["Number Theory"], "id": "Erdos875.erdos_875.variants.erdos_nicolas_sarkozy", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 875 — erdos nicolas sarkozy"}
 {"fields": ["Number Theory"], "id": "Erdos875.erdos_875.variants.polynomial_gaps", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 875 — polynomial gaps"}
 {"fields": ["Number Theory"], "id": "Erdos876.erdos_876.parts.i", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 876 — i"}
 {"fields": ["Number Theory"], "id": "Erdos876.erdos_876.parts.ii", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 876 — ii"}
-{"fields": ["Number Theory"], "id": "Erdos876.erdos_876.variants.dem_polynomial", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 876 — dem polynomial"}
-{"fields": ["Number Theory"], "id": "Erdos876.erdos_876.variants.dem_ratio", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 876 — dem ratio"}
-{"fields": ["Number Theory"], "id": "Erdos876.erdos_876.variants.density_zero", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 876 — density zero"}
+{"fields": ["Number Theory"], "id": "Erdos876.erdos_876.variants.dem_polynomial", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 876 — dem polynomial"}
+{"fields": ["Number Theory"], "id": "Erdos876.erdos_876.variants.dem_ratio", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 876 — dem ratio"}
+{"fields": ["Number Theory"], "id": "Erdos876.erdos_876.variants.density_zero", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 876 — density zero"}
 {"fields": ["Number Theory"], "id": "Erdos876.erdos_876.variants.recip_sum_bounds", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 876 — recip sum bounds"}
-{"fields": ["Number Theory"], "id": "Erdos876.erdos_876.variants.recip_sum_lt", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 876 — recip sum lt"}
+{"fields": ["Number Theory"], "id": "Erdos876.erdos_876.variants.recip_sum_lt", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 876 — recip sum lt"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos877.erdos_877.variants.balogh_liu_sharifzadeh_treglown", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 877 — balogh liu sharifzadeh treglown"}
-{"fields": ["Combinatorics", "Number Theory"], "id": "Erdos877.erdos_877.variants.cameron_erdos", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 877 — cameron erdos"}
+{"fields": ["Combinatorics", "Number Theory"], "id": "Erdos877.erdos_877.variants.cameron_erdos", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 877 — cameron erdos"}
 {"fields": ["Number Theory"], "id": "Erdos878.erdos_878.parts.iii_all", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 878 — iii all"}
 {"fields": ["Number Theory"], "id": "Erdos878.erdos_878.parts.iv", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 878 — iv"}
 {"fields": ["Number Theory"], "id": "Erdos878.erdos_878.parts.v", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 878 — v"}
@@ -1811,22 +1811,22 @@
 {"fields": ["Combinatorics"], "id": "Erdos88.erdos_88.variants.erdos_mckay", "kind": "known", "prize": "$100", "solved": false, "title": "Erdős Problem 88 — erdos mckay"}
 {"fields": ["Combinatorics"], "id": "Erdos88.erdos_88.variants.kwan_sah_sauermann_sawhney", "kind": "known", "prize": "$100", "solved": false, "title": "Erdős Problem 88 — kwan sah sauermann sawhney"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos881.erdos_881", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 881"}
-{"fields": ["Combinatorics", "Number Theory"], "id": "Erdos882.erdos_882", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 882"}
-{"fields": ["Combinatorics", "Number Theory"], "id": "Erdos882.erdos_882.variants.greedy", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 882 — greedy"}
+{"fields": ["Combinatorics", "Number Theory"], "id": "Erdos882.erdos_882", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 882"}
+{"fields": ["Combinatorics", "Number Theory"], "id": "Erdos882.erdos_882.variants.greedy", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 882 — greedy"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos883.erdos_883.parts.i", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 883 — i"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos883.erdos_883.parts.ii", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 883 — ii"}
-{"fields": ["Number Theory"], "id": "Erdos884.erdos_884_false_of_hardy_littlewood", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 884"}
+{"fields": ["Number Theory"], "id": "Erdos884.erdos_884_false_of_hardy_littlewood", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 884"}
 {"fields": ["Number Theory"], "id": "Erdos885.erdos_885", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 885"}
 {"fields": ["Number Theory"], "id": "Erdos886.erdos_886", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 886"}
 {"fields": ["Number Theory"], "id": "Erdos887.erdos_887.parts.i", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 887 — i"}
 {"fields": ["Number Theory"], "id": "Erdos887.erdos_887.parts.ii", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 887 — ii"}
 {"fields": ["Number Theory"], "id": "Erdos887.erdos_887.variants.rosenfeld_infinite", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 887 — rosenfeld infinite"}
-{"fields": ["Number Theory"], "id": "Erdos888.erdos_888.variants.primes", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 888 — primes"}
+{"fields": ["Number Theory"], "id": "Erdos888.erdos_888.variants.primes", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 888 — primes"}
 {"fields": ["Number Theory"], "id": "Erdos888.erdos_888.variants.sarkozy", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 888 — sarkozy"}
 {"fields": ["Number Theory"], "id": "Erdos888.erdos_888.variants.semiprimes", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 888 — semiprimes"}
 {"fields": ["Number Theory"], "id": "Erdos889.erdos_889", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 889"}
 {"fields": ["Number Theory"], "id": "Erdos889.erdos_889.variants.general", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 889 — general"}
-{"fields": ["Number Theory"], "id": "Erdos889.erdos_889.variants.v0_gt_1", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 889 — v0 gt 1"}
+{"fields": ["Number Theory"], "id": "Erdos889.erdos_889.variants.v0_gt_1", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 889 — v0 gt 1"}
 {"fields": ["Number Theory"], "id": "Erdos889.erdos_889.variants.v1_eq_1_finite", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 889 — v1 eq 1 finite"}
 {"fields": ["Convex & Discrete Geometry"], "id": "Erdos89.erdos_89", "kind": "open", "prize": "$500", "solved": false, "title": "Erdős Problem 89"}
 {"fields": ["Convex & Discrete Geometry"], "id": "Erdos89.erdos_89.variants.grid_upper_bound", "kind": "known", "prize": "$500", "solved": true, "title": "Erdős Problem 89 — grid upper bound"}
@@ -1840,12 +1840,12 @@
 {"fields": ["Number Theory"], "id": "Erdos891.erdos_891.variants.schinzel", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 891 — schinzel"}
 {"fields": ["Number Theory"], "id": "Erdos891.erdos_891.variants.weisenberg", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 891 — weisenberg"}
 {"fields": ["Combinatorics"], "id": "Erdos893.erdos_893", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 893"}
-{"fields": ["Combinatorics"], "id": "Erdos893.erdos_893.variants.unbounded", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 893 — unbounded"}
+{"fields": ["Combinatorics"], "id": "Erdos893.erdos_893.variants.unbounded", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 893 — unbounded"}
 {"fields": ["Combinatorics"], "id": "Erdos895.erdos_895.variants.hindman", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 895 — hindman"}
 {"fields": ["Number Theory"], "id": "Erdos897.erdos_897.variants.parts.i", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 897 — i"}
 {"fields": ["Number Theory"], "id": "Erdos897.erdos_897.variants.parts.ii", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 897 — ii"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos9.erdos_9", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 9"}
-{"fields": ["Convex & Discrete Geometry"], "id": "Erdos90.erdos_90", "kind": "known", "prize": "$500", "solved": false, "title": "Erdős Problem 90: The unit distance problem"}
+{"fields": ["Convex & Discrete Geometry"], "id": "Erdos90.erdos_90", "kind": "known", "prize": "$500", "solved": true, "title": "Erdős Problem 90: The unit distance problem"}
 {"fields": ["Convex & Discrete Geometry"], "id": "Erdos90.erdos_90.variants.sawin_explicit", "kind": "known", "prize": "$500", "solved": false, "title": "Sawin's explicit exponent."}
 {"fields": ["Convex & Discrete Geometry"], "id": "Erdos90.sawin_lattice_reduction", "kind": "known", "prize": "$500", "solved": true, "title": "Sawin's Lemma 2: lattice geometry of unit distances"}
 {"fields": ["Combinatorics"], "id": "Erdos901.erdos_901", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 901"}
@@ -1855,7 +1855,7 @@
 {"fields": ["Combinatorics"], "id": "Erdos902.erdos_902.variants.f_two", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 902 — f two"}
 {"fields": ["Combinatorics"], "id": "Erdos902.erdos_902.variants.szekeres_f_three", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 902 — szekeres f three"}
 {"fields": ["Combinatorics"], "id": "Erdos902.erdos_902.variants.szekeres_lower", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 902 — szekeres lower"}
-{"fields": ["Combinatorics"], "id": "Erdos903.erdos_903", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 903"}
+{"fields": ["Combinatorics"], "id": "Erdos903.erdos_903", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 903"}
 {"fields": ["Complex Analysis"], "id": "Erdos906.erdos_906", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 906"}
 {"fields": ["Convex & Discrete Geometry"], "id": "Erdos91.erdos_91", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 91"}
 {"fields": ["Convex & Discrete Geometry"], "id": "Erdos91.erdos_91.test.circleSeven_optimal", "kind": "warmup", "prize": null, "solved": true, "title": "Erdős Problem 91 — circleSeven optimal"}
@@ -1880,11 +1880,11 @@
 {"fields": ["Combinatorics"], "id": "Erdos917.erdos_917.parts.i", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 917 — i"}
 {"fields": ["Combinatorics"], "id": "Erdos917.erdos_917.parts.ii", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 917 — ii"}
 {"fields": ["Combinatorics"], "id": "Erdos917.erdos_917.parts.iii", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 917 — iii"}
-{"fields": ["Combinatorics"], "id": "Erdos917.erdos_917.variants.dirac", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 917 — dirac"}
-{"fields": ["Combinatorics"], "id": "Erdos917.erdos_917.variants.erdos_three_dvd", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 917 — erdos three dvd"}
-{"fields": ["Combinatorics"], "id": "Erdos917.erdos_917.variants.lower_construction", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 917 — lower construction"}
+{"fields": ["Combinatorics"], "id": "Erdos917.erdos_917.variants.dirac", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 917 — dirac"}
+{"fields": ["Combinatorics"], "id": "Erdos917.erdos_917.variants.erdos_three_dvd", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 917 — erdos three dvd"}
+{"fields": ["Combinatorics"], "id": "Erdos917.erdos_917.variants.lower_construction", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 917 — lower construction"}
 {"fields": ["Combinatorics"], "id": "Erdos917.erdos_917.variants.luo_ma_yang", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 917 — luo ma yang"}
-{"fields": ["Combinatorics"], "id": "Erdos917.erdos_917.variants.not_asymptotic", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 917 — not asymptotic"}
+{"fields": ["Combinatorics"], "id": "Erdos917.erdos_917.variants.not_asymptotic", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 917 — not asymptotic"}
 {"fields": ["Combinatorics"], "id": "Erdos917.erdos_917.variants.stiebitz_upper", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 917 — stiebitz upper"}
 {"fields": ["Combinatorics"], "id": "Erdos917.erdos_917.variants.three_dvd", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 917 — three dvd"}
 {"fields": ["Combinatorics"], "id": "Erdos918.erdos_918.parts.i", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 918 — i"}
@@ -1897,7 +1897,7 @@
 {"fields": ["Combinatorics"], "id": "Erdos920.erdos_920.variants.lower_bound_k_eq_4", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 920 — lower bound k eq 4"}
 {"fields": ["Combinatorics"], "id": "Erdos920.erdos_920.variants.lower_bound_k_ge_5", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 920 — lower bound k ge 5"}
 {"fields": ["Combinatorics"], "id": "Erdos920.erdos_920.variants.upper_bound", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 920 — upper bound"}
-{"fields": ["Combinatorics"], "id": "Erdos926.erdos_926.variants.aks", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 926 — aks"}
+{"fields": ["Combinatorics"], "id": "Erdos926.erdos_926.variants.aks", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 926 — aks"}
 {"fields": ["Number Theory"], "id": "Erdos929.erdos_929.parts.i", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 929 — i"}
 {"fields": ["Number Theory"], "id": "Erdos929.erdos_929.parts.ii", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 929 — ii"}
 {"fields": ["Number Theory"], "id": "Erdos929.erdos_929.variants.rosser", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 929 — rosser"}
@@ -1920,7 +1920,7 @@
 {"fields": ["Combinatorics"], "id": "Erdos934.erdos_934.variants.kmp_h_three_four", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 934 — kmp h three four"}
 {"fields": ["Combinatorics"], "id": "Erdos934.erdos_934.variants.kmp_liminf", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 934 — kmp liminf"}
 {"fields": ["Combinatorics"], "id": "Erdos934.erdos_934.variants.lower_large_t", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 934 — lower large t"}
-{"fields": ["Combinatorics"], "id": "Erdos934.erdos_934.variants.lower_liminf", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 934 — lower liminf"}
+{"fields": ["Combinatorics"], "id": "Erdos934.erdos_934.variants.lower_liminf", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 934 — lower liminf"}
 {"fields": ["Combinatorics"], "id": "Erdos934.erdos_934.variants.upper", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 934 — upper"}
 {"fields": ["Number Theory"], "id": "Erdos935.erdos_935.parts.i", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 935 — i"}
 {"fields": ["Number Theory"], "id": "Erdos935.erdos_935.parts.iii", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 935 — iii"}
@@ -1935,7 +1935,7 @@
 {"fields": ["Number Theory"], "id": "Erdos939.erdos_939.variants.infinite_of_six_le", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 939 — infinite of six le"}
 {"fields": ["Number Theory"], "id": "Erdos939.erdos_939.variants.seven", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 939 — seven"}
 {"fields": ["Number Theory"], "id": "Erdos939.erdos_939.variants.triples", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 939 — triples"}
-{"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Erdos94.erdos_94.variants.no_three_on_a_line", "kind": "known", "prize": "£25", "solved": true, "title": "Erdős Problem 94 — no three on a line"}
+{"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Erdos94.erdos_94.variants.no_three_on_a_line", "kind": "known", "prize": "£25", "solved": false, "title": "Erdős Problem 94 — no three on a line"}
 {"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Erdos94.erdos_94.variants.regular_ngon", "kind": "open", "prize": "£25", "solved": false, "title": "Erdős Problem 94 — regular ngon"}
 {"fields": ["Number Theory"], "id": "Erdos940.erdos_940", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 940"}
 {"fields": ["Number Theory"], "id": "Erdos940.erdos_940.variants.large_integers", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 940 — large integers"}
@@ -1969,33 +1969,33 @@
 {"fields": ["Number Theory"], "id": "Erdos950.erdos_950.variants.debruijn_erdos_turan", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 950 — debruijn erdos turan"}
 {"fields": ["Number Theory"], "id": "Erdos950.erdos_950.variants.sum_primes", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 950 — sum primes"}
 {"fields": ["Number Theory"], "id": "Erdos950.erdos_950.variants.weaker_pi", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 950 — weaker pi"}
-{"fields": ["Number Theory"], "id": "Erdos950.erdos_950.variants.weaker_pi_implies_f", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 950 — weaker pi implies f"}
+{"fields": ["Number Theory"], "id": "Erdos950.erdos_950.variants.weaker_pi_implies_f", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 950 — weaker pi implies f"}
 {"fields": ["Number Theory"], "id": "Erdos951.erdos_951", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 951"}
 {"fields": ["Number Theory"], "id": "Erdos951.erdos_951.variants.beurling", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 951 — beurling"}
 {"fields": ["Number Theory"], "id": "Erdos954.erdos_954", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 954"}
 {"fields": ["Number Theory"], "id": "Erdos954.erdos_954.variants.lower", "kind": "warmup", "prize": null, "solved": true, "title": "Erdős Problem 954 — lower"}
 {"fields": ["Number Theory"], "id": "Erdos954.erdos_954.variants.upper", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 954 — upper"}
 {"fields": ["Number Theory"], "id": "Erdos955.erdos_955", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 955"}
-{"fields": ["Number Theory"], "id": "Erdos955.erdos_955.variants.empty_preimage", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 955 — empty preimage"}
+{"fields": ["Number Theory"], "id": "Erdos955.erdos_955.variants.empty_preimage", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 955 — empty preimage"}
 {"fields": ["Number Theory"], "id": "Erdos955.erdos_955.variants.pollack_pomerance_thompson_bound", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 955 — pollack pomerance thompson bound"}
-{"fields": ["Number Theory"], "id": "Erdos955.erdos_955.variants.pollack_primes", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 955 — pollack primes"}
+{"fields": ["Number Theory"], "id": "Erdos955.erdos_955.variants.pollack_primes", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 955 — pollack primes"}
 {"fields": ["Number Theory"], "id": "Erdos955.erdos_955.variants.positive_density", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 955 — positive density"}
-{"fields": ["Number Theory"], "id": "Erdos955.erdos_955.variants.troupe_sum_of_two_squares", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 955 — troupe sum of two squares"}
+{"fields": ["Number Theory"], "id": "Erdos955.erdos_955.variants.troupe_sum_of_two_squares", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 955 — troupe sum of two squares"}
 {"fields": ["Number Theory"], "id": "Erdos955.erdos_955.variants.troupe_unusually_many_prime_factors", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 955 — troupe unusually many prime factors"}
 {"fields": ["Convex & Discrete Geometry"], "id": "Erdos959.erdos_959", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 959"}
 {"fields": ["Convex & Discrete Geometry"], "id": "Erdos96.erdos_96", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 96"}
 {"fields": ["Number Theory"], "id": "Erdos961.erdos_961", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 961"}
-{"fields": ["Number Theory"], "id": "Erdos961.erdos_961.sylvester_schur", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 961 — sylvester schur"}
+{"fields": ["Number Theory"], "id": "Erdos961.erdos_961.sylvester_schur", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 961 — sylvester schur"}
 {"fields": ["Number Theory"], "id": "Erdos961.erdos_961.variants.erdos_upper_bound", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 961 — erdos upper bound"}
 {"fields": ["Number Theory"], "id": "Erdos961.erdos_961.variants.jutila_ramachandra_shorey_upper_bound", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 961 — jutila ramachandra shorey upper bound"}
 {"fields": ["Number Theory"], "id": "Erdos962.erdos_962", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 962"}
-{"fields": ["Number Theory"], "id": "Erdos962.erdos_962.variants.tang_lower_bound", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 962 — tang lower bound"}
+{"fields": ["Number Theory"], "id": "Erdos962.erdos_962.variants.tang_lower_bound", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 962 — tang lower bound"}
 {"fields": ["Number Theory"], "id": "Erdos962.erdos_962.variants.tao_upper_bound", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 962 — tao upper bound"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos963.erdos_963.parts.i", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 963 — i"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos963.erdos_963.parts.ii", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 963 — ii"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Erdos963.erdos_963.variants.positive", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 963 — positive"}
 {"fields": ["Number Theory"], "id": "Erdos964.erdos_964.variants.eberhard", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 964 — eberhard"}
-{"fields": ["Combinatorics", "Logic & Foundations"], "id": "Erdos965.erdos_965.variants.generalization", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 965 — generalization"}
+{"fields": ["Combinatorics", "Logic & Foundations"], "id": "Erdos965.erdos_965.variants.generalization", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 965 — generalization"}
 {"fields": ["Complex Analysis", "Number Theory"], "id": "Erdos967.erdos_967.variants.finite", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 967 — finite"}
 {"fields": ["Number Theory", "Sequences & Series"], "id": "Erdos967.erdos_967.variants.tauberian", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 967 — tauberian"}
 {"fields": ["Complex Analysis", "Number Theory"], "id": "Erdos967.erdos_967.variants.two_three_five", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 967 — two three five"}
@@ -2006,7 +2006,7 @@
 {"fields": ["Number Theory"], "id": "Erdos968.erdos_968.variants.sum_abs_diff_isTheta_log_sq", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 968 — sum abs diff isTheta log sq"}
 {"fields": ["Number Theory"], "id": "Erdos969.erdos_969", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 969"}
 {"fields": ["Number Theory"], "id": "Erdos969.erdos_969.variants.evelyn_linfoot", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 969 — evelyn linfoot"}
-{"fields": ["Number Theory"], "id": "Erdos969.erdos_969.variants.prime_number_theorem", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 969 — prime number theorem"}
+{"fields": ["Number Theory"], "id": "Erdos969.erdos_969.variants.prime_number_theorem", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 969 — prime number theorem"}
 {"fields": ["Convex & Discrete Geometry"], "id": "Erdos97.erdos_97", "kind": "known", "prize": "$100", "solved": true, "title": "Erdős Problem 97"}
 {"fields": ["Convex & Discrete Geometry"], "id": "Erdos97.erdos_97.variants.k_equidistant", "kind": "open", "prize": "$100", "solved": false, "title": "Erdős Problem 97 — k equidistant"}
 {"fields": ["Convex & Discrete Geometry"], "id": "Erdos97.erdos_97.variants.three_unit_distance", "kind": "known", "prize": "$100", "solved": true, "title": "Erdős Problem 97 — three unit distance"}
@@ -2018,10 +2018,10 @@
 {"fields": ["Number Theory"], "id": "Erdos973.erdos_973.variants.le_one", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 973 — le one"}
 {"fields": ["Number Theory"], "id": "Erdos973.erdos_973.variants.m2_bounds", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 973 — m2 bounds"}
 {"fields": ["Number Theory"], "id": "Erdos973.erdos_973.variants.tang", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 973 — tang"}
-{"fields": ["Complex Analysis", "Number Theory"], "id": "Erdos974.erdos_974.variants.two_tuples", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 974 — two tuples"}
+{"fields": ["Complex Analysis", "Number Theory"], "id": "Erdos974.erdos_974.variants.two_tuples", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 974 — two tuples"}
 {"fields": ["Number Theory"], "id": "Erdos975.erdos_975", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 975"}
 {"fields": ["Number Theory"], "id": "Erdos975.erdos_975.variants.lower_bound", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 975 — lower bound"}
-{"fields": ["Number Theory"], "id": "Erdos975.erdos_975.variants.n2_plus_1", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 975 — n2 plus 1"}
+{"fields": ["Number Theory"], "id": "Erdos975.erdos_975.variants.n2_plus_1", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 975 — n2 plus 1"}
 {"fields": ["Number Theory"], "id": "Erdos975.erdos_975.variants.n2_plus_1_strong", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 975 — n2 plus 1 strong"}
 {"fields": ["Number Theory"], "id": "Erdos975.erdos_975.variants.quadratic", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 975 — quadratic"}
 {"fields": ["Number Theory"], "id": "Erdos975.erdos_975.variants.upper_bound", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 975 — upper bound"}
@@ -2037,7 +2037,7 @@
 {"fields": ["Number Theory"], "id": "Erdos977.erdos_977.variants.stewart", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 977 — stewart"}
 {"fields": ["Number Theory"], "id": "Erdos978.erdos_978.parts.i", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 978 — i"}
 {"fields": ["Number Theory"], "id": "Erdos978.erdos_978.variants.sub_one", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 978 — sub one"}
-{"fields": ["Number Theory"], "id": "Erdos978.erdos_978.variants.sub_two", "kind": "known", "prize": null, "solved": true, "title": "Erdős Problem 978 — sub two"}
+{"fields": ["Number Theory"], "id": "Erdos978.erdos_978.variants.sub_two", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 978 — sub two"}
 {"fields": ["Number Theory"], "id": "Erdos979.erdos_979", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 979"}
 {"fields": ["Number Theory"], "id": "Erdos979.erdos_979.variants.k2", "kind": "known", "prize": null, "solved": false, "title": "Erdős Problem 979 — k2"}
 {"fields": ["Convex & Discrete Geometry"], "id": "Erdos98.erdos_98", "kind": "open", "prize": null, "solved": false, "title": "Erdős Problem 98"}

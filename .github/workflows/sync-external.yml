@@ -1,6 +1,6 @@
-# Daily mirror of the lefttosolve.com research programs into data/external/ + docs/external/.
+# Daily mirror of ALL 25 lefttosolve.com research programs (~59k+ targets) into data/external/ + docs/external/.
 # Commits straight to main only when the upstream data actually changed (Build Standard v1.2.0 R1:
-# no PRs, no branches). A failed consistency guard writes nothing and turns this run red.
+# no PRs, no branches). A failed completeness/consistency/A24 guard writes nothing and turns this run red.
 name: Daily External Program Sync (lefttosolve.com)
 
 on:
@@ -18,9 +18,9 @@ concurrency:
 
 jobs:
   sync:
-    name: Fetch, verify & commit external program lists
+    name: Fetch, verify & commit all 25 external program lists (~59k+ items)
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v7
 
@@ -34,11 +34,13 @@ jobs:
       - name: Install pinned dependencies
         run: python -m pip install -r requirements-lock.txt
 
-      - name: Live fetch (guarded; aborts without writing on any inconsistency)
+      - name: Live full-catalogue fetch (all 25 programs; fail-closed on inconsistency)
         run: python scripts/sync_external_programs.py
 
-      - name: Offline integrity re-check of the written snapshot and views
-        run: python scripts/sync_external_programs.py --check
+      - name: Offline integrity, shard size (<5 MB A24) & view re-check
+        run: |
+          python scripts/sync_external_programs.py --check
+          python -c "import pathlib; big=[str(p) for p in pathlib.Path('data/external').rglob('*') if p.is_file() and p.stat().st_size >= 5*1024*1024]; assert not big, big; print('PASS: all data/external files < 5 MB (Build Standard A24)')"
 
       - name: Commit straight to main when data changed
         id: commit
@@ -48,20 +50,21 @@ jobs:
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add data/external docs/external
-            git commit -m "chore(external): daily lefttosolve.com program sync $(date -u +%F)"
+            git commit -m "chore(external): daily lefttosolve.com full program sync $(date -u +%F)"
             git pull --rebase origin main
             git push origin HEAD:main
             changed=true
           fi
           echo "changed=$changed" >> "$GITHUB_OUTPUT"
           {
-            echo "### External program sync"
+            echo "### External program sync (all 25 programs)"
             python - <<'PY'
           import json
           s = json.load(open("data/external/lefttosolve/snapshot.json", encoding="utf-8"))
           t = s["totals"]
           print(f"- last content change: `{s['last_changed_utc']}`")
           print(f"- programs: {t['programs']} · targets: {t['sum_card_targets']:,} · mirrored items: {t['mirrored_items']:,} · consistent: {t['consistent']}")
+          print(f"- solved_by_kind: `{t.get('solved_by_kind')}`")
           PY
             echo "- committed this run: $changed"
           } >> "$GITHUB_STEP_SUMMARY"

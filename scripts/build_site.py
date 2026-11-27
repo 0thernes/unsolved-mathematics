@@ -6,12 +6,12 @@ Zero third-party dependencies beyond Python stdlib: reads canonical generated
 JSON/data files (data/problems.json, data/citation-verification-log.json,
 data/retraction-audit.json, lean/comparator.json, lean/VerifyAxioms.lean, VERSION)
 and emits:
-  - _site/index.html      (searchable 106-problem Atlas explorer)
+  - _site/index.html      (searchable curated Atlas explorer)
   - _site/blueprint.html  (interactive 8-domain, 66-theorem Lean 4.35.0 Proof Blueprint & DAG)
   - _site/problems.json
   - _site/social-preview.svg
   - _site/programs.html + external-programs.json + external-crosswalk.json
-    (daily Left to Solve program mirror from data/external/, when a snapshot is committed)
+    (daily full Left to Solve mirror across all 25 programs from data/external/)
 """
 
 from __future__ import annotations
@@ -95,7 +95,7 @@ THEOREM_CATALOG: list[tuple[str, str, str, str, str]] = [
 ]
 
 
-def _build_blueprint_html(version: str, n_theorems: int, n_decls: int) -> str:
+def _build_blueprint_html(version: str, n_theorems: int, n_decls: int, n_problems: int) -> str:
     gh_base = "https://github.com/0thernes/unsolved-mathematics/blob/main/lean/"
     cards = []
     for idx, (name, group, src_file, formula, desc) in enumerate(THEOREM_CATALOG, 1):
@@ -154,7 +154,8 @@ def _build_blueprint_html(version: str, n_theorems: int, n_decls: int) -> str:
 <body>
   <main>
     <nav>
-      <a href="index.html">← Atlas Problem Explorer (106 Problems)</a>
+      <a href="index.html">← Atlas Problem Explorer ({n_problems} Problems)</a>
+      <a href="programs.html">External Programs (All 25 · Daily)</a>
       <a href="https://github.com/0thernes/unsolved-mathematics/tree/main/lean">lean/ Source</a>
       <a href="https://github.com/0thernes/unsolved-mathematics/blob/main/lean/STATEMENT_FIDELITY.md">Statement Fidelity Audit</a>
       <a href="https://github.com/0thernes/unsolved-mathematics/blob/main/paper/Donahue_2026_unsolved_mathematics_atlas.pdf">White Paper PDF</a>
@@ -285,8 +286,13 @@ def _build_blueprint_html(version: str, n_theorems: int, n_decls: int) -> str:
 """
 
 
+def _fmt_sbk(sbk: dict[str, int]) -> str:
+    parts = [f"{k}: {sbk.get(k, 0):,}" for k in ("open", "known", "warmup", "unformalized", "other") if sbk.get(k, 0) > 0]
+    return ", ".join(parts) if parts else "0"
+
+
 def _build_programs_html(version: str) -> str | None:
-    """External research-program mirror page (lefttosolve.com), if a snapshot is committed."""
+    """External research-program mirror page (lefttosolve.com, all 25 programs), if a snapshot is committed."""
     snap_path = ROOT / "data" / "external" / "lefttosolve" / "snapshot.json"
     cw_path = ROOT / "data" / "external" / "lefttosolve" / "crosswalk.json"
     if not snap_path.exists() or not cw_path.exists():
@@ -295,18 +301,26 @@ def _build_programs_html(version: str) -> str | None:
     cw = json.loads(cw_path.read_text(encoding="utf-8"))
     t = snap["totals"]
     gh = "https://github.com/0thernes/unsolved-mathematics/blob/main"
+    global_sbk = t.get("solved_by_kind") or {}
+    global_kinds = t.get("kinds") or {}
+    total_solved_flags = sum(global_sbk.values()) if global_sbk else sum(p.get("solved_here", 0) for p in snap["programs"])
     prog_rows = []
     for i, p in enumerate(snap["programs"], 1):
         k = p["kinds"]
+        psbk = p.get("solved_by_kind") or {}
+        shards = p.get("shards") or []
+        shard_note = f" ({len(shards)} shards)" if len(shards) > 1 else ""
         idx = (
-            f'<a href="{gh}/docs/external/programs/{html.escape(p["slug"])}.md">{p["mirrored_count"]:,} items</a>'
+            f'<a href="{gh}/docs/external/programs/{html.escape(p["slug"])}.md">{p["mirrored_count"]:,} items{shard_note}</a>'
             if p.get("mirrored")
             else "counts only"
         )
+        sbk_cell = _fmt_sbk(psbk) if psbk else f"{p['solved_here']:,}"
         prog_rows.append(
             f"<tr><td>{i}</td><td><a href=\"{html.escape(p['url'])}\">{html.escape(p['name'])}</a></td>"
-            f"<td>{p['targets']:,}</td><td>{p['open']:,}</td><td>{p['solved_here']:,}</td>"
-            f"<td>{k['open']} / {k['known']} / {k['unformalized']} / {k['other']}</td><td>{idx}</td></tr>"
+            f"<td>{p['targets']:,}</td><td>{p['open']:,}</td><td>{html.escape(sbk_cell)}</td>"
+            f"<td>{k.get('open', 0):,} / {k.get('known', 0):,} / {k.get('warmup', 0):,} / {k.get('unformalized', 0):,}</td>"
+            f"<td>{idx}</td></tr>"
         )
     cw_rows = []
     for r in cw["problems"]:
@@ -328,13 +342,18 @@ def _build_programs_html(version: str) -> str | None:
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>External Research Programs (Left to Solve mirror) · Unsolved Mathematics Atlas v{html.escape(version)}</title>
+  <title>External Research Programs (Full Left to Solve Mirror) · Unsolved Mathematics Atlas v{html.escape(version)}</title>
   <style>
     body {{ margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif; background:#0b1020; color:#f1f5f9; line-height:1.5; }}
-    main {{ max-width:1160px; margin:0 auto; padding:2rem 1.25rem 4rem; }}
-    .note {{ background:#1e293b; border-left:4px solid #f59e0b; padding:.8rem 1rem; border-radius:6px; margin:1rem 0 1.4rem; }}
+    main {{ max-width:1180px; margin:0 auto; padding:2rem 1.25rem 4rem; }}
+    .note {{ background:#1e293b; border-left:4px solid #f59e0b; padding:.85rem 1rem; border-radius:6px; margin:1rem 0 1.4rem; }}
+    .cards {{ display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:.85rem; margin:1rem 0 1.5rem; }}
+    .card {{ background:#131c36; border:1px solid #243259; border-radius:10px; padding:.9rem; }}
+    .card .num {{ font-size:1.45rem; font-weight:700; color:#60a5fa; }}
+    .card .lbl {{ font-size:.84rem; color:#94a3b8; }}
+    input {{ background:#131c36; color:#f1f5f9; border:1px solid #243259; border-radius:6px; padding:.48rem .75rem; font-size:.92rem; width:100%; max-width:420px; margin-bottom:.85rem; }}
     table {{ width:100%; border-collapse:collapse; background:#131c36; border:1px solid #243259; margin-bottom:2rem; }}
-    th, td {{ padding:.5rem .7rem; border-bottom:1px solid #243259; text-align:left; font-size:.9rem; vertical-align:top; }}
+    th, td {{ padding:.5rem .7rem; border-bottom:1px solid #243259; text-align:left; font-size:.88rem; vertical-align:top; }}
     th {{ background:#0f172a; color:#cbd5e1; }}
     a {{ color:#93c5fd; text-decoration:none; }} a:hover {{ text-decoration:underline; }}
     code {{ font-size:.82rem; }} .badge {{ padding:.1rem .45rem; border-radius:999px; background:#1e293b; font-size:.78rem; }}
@@ -344,24 +363,34 @@ def _build_programs_html(version: str) -> str | None:
 <body>
   <main>
     <p><a href="index.html">← Atlas Problem Explorer</a> · <a href="blueprint.html">Lean Proof Blueprint</a></p>
-    <h1>External Research Programs <small class="muted">Left to Solve mirror</small></h1>
-    <div class="note"><strong>Third-party data, re-checked daily.</strong> Counts, kinds and “solved here” flags come from
-      <a href="https://lefttosolve.com/programs">lefttosolve.com</a> (formal statements from
-      <a href="https://github.com/google-deepmind/formal-conjectures">google-deepmind/formal-conjectures</a>, Apache-2.0).
-      “Solved here” means marked solved by agents on that site; this Atlas has <strong>not</strong> verified those claims and
-      no Atlas status is changed automatically. Not affiliated with Left to Solve.</div>
-    <p class="muted">Last content change <code>{html.escape(snap['last_changed_utc'])}</code> · {t['programs']} programs ·
-      {t['sum_card_targets']:,} targets · {t['mirrored_items']:,} formal items mirrored · upstream commit
+    <h1>External Research Programs <small class="muted">Full Left to Solve Mirror (All {t['programs']} Programs)</small></h1>
+    <div class="note"><strong>Third-party metadata mirror, refreshed daily (carved out of CC BY 4.0).</strong>
+      Counts, kinds, and disaggregated “solved here” flags come from <a href="https://lefttosolve.com/programs">lefttosolve.com</a>
+      (formal Lean statements from <a href="https://github.com/google-deepmind/formal-conjectures">google-deepmind/formal-conjectures</a>, Apache-2.0;
+      titles from Wikipedia, MathOverflow, Math StackExchange, and OEIS retain their upstream CC BY-SA 4.0 / source licenses — zero statement excerpts are stored;
+      see <a href="{gh}/THIRD_PARTY_NOTICES.md">THIRD_PARTY_NOTICES.md</a>).
+      “Solved here” is disaggregated by <code>kind</code> so <code>known</code> literature theorems and <code>warmup</code> exercises are never confused with solved <code>open</code> conjectures.
+      This Atlas has <strong>not</strong> verified external claims, and no Atlas status is changed automatically. Not affiliated with Left to Solve.</div>
+    <div class="cards">
+      <div class="card"><div class="num">{t['mirrored_items']:,}</div><div class="lbl">Mirrored Items across all {t['programs']} Programs (&lt;4 MB shards)</div></div>
+      <div class="card"><div class="num">{global_kinds.get('open', 0):,}</div><div class="lbl">Lean-Stated <code>open</code> Targets ({global_kinds.get('known', 0):,} known · {global_kinds.get('warmup', 0):,} warmup)</div></div>
+      <div class="card"><div class="num">{total_solved_flags:,}</div><div class="lbl">Site Solved Flags ({html.escape(_fmt_sbk(global_sbk))})</div></div>
+      <div class="card"><div class="num">{s['problems_with_matches']} / {s['atlas_problems']}</div><div class="lbl">Curated Atlas Crosswalk ({s['problems_with_signals']} review signals)</div></div>
+    </div>
+    <p class="muted">Last content change <code>{html.escape(snap['last_changed_utc'])}</code> · upstream commit
       <code>{html.escape(str((snap.get('upstream') or {}).get('commit') or '')[:12])}</code> · content SHA-256
-      <code>{html.escape(snap['content_sha256'][:16])}…</code></p>
-    <h2>Programs</h2>
-    <table>
-      <thead><tr><th>#</th><th>Program</th><th>Targets</th><th>Open</th><th>Solved here (site claim)</th><th>Kinds open / known / unformalized / other</th><th>Item index</th></tr></thead>
+      <code>{html.escape(snap['content_sha256'][:16])}…</code> · offline search CLI:
+      <code>python scripts/search_all_problems.py --query "prime"</code></p>
+    <h2>All {t['programs']} Programs</h2>
+    <input id="pq" type="search" placeholder="Filter programs by name or counts..." aria-label="Filter programs">
+    <table id="ptbl">
+      <thead><tr><th>#</th><th>Program</th><th>Targets</th><th>Open</th><th>Solved by kind (site claim)</th><th>Kinds: open / known / warmup / unformalized</th><th>Item index</th></tr></thead>
       <tbody>{"".join(prog_rows)}</tbody>
     </table>
-    <h2>Atlas crosswalk <small class="muted">{s['problems_with_matches']}/{s['atlas_problems']} matched · {s['problems_with_signals']} review signals</small></h2>
+    <h2>Curated Atlas Crosswalk <small class="muted">{s['problems_with_matches']}/{s['atlas_problems']} matched · {s['problems_with_signals']} review signals</small></h2>
     <p class="muted">{html.escape(cw['rule'])}</p>
-    <table>
+    <input id="cq" type="search" placeholder="Filter crosswalk by Atlas problem or Lean ID..." aria-label="Filter crosswalk">
+    <table id="ctbl">
       <thead><tr><th>Atlas problem</th><th>Atlas status</th><th>External items (relation · kind)</th><th>Review signals</th></tr></thead>
       <tbody>{"".join(cw_rows)}</tbody>
     </table>
@@ -370,6 +399,18 @@ def _build_programs_html(version: str) -> str | None:
       <a href="{gh}/docs/external/PROGRAMS.md">PROGRAMS.md</a> · verified offline by
       <code>python scripts/sync_external_programs.py --check</code>.</p>
   </main>
+  <script>
+    function bindFilter(inputId, tableId) {{
+      const inp = document.getElementById(inputId);
+      const rows = Array.from(document.querySelectorAll('#' + tableId + ' tbody tr'));
+      inp.addEventListener('input', () => {{
+        const term = inp.value.trim().toLowerCase();
+        for (const r of rows) r.style.display = (!term || r.textContent.toLowerCase().includes(term)) ? '' : 'none';
+      }});
+    }}
+    bindFilter('pq', 'ptbl');
+    bindFilter('cq', 'ctbl');
+  </script>
 </body>
 </html>
 """
@@ -520,7 +561,7 @@ def build_site(out_dir: Path = OUT_DIR) -> Path:
     index_path = out_dir / "index.html"
     index_path.write_text(page, encoding="utf-8", newline="\n")
     (out_dir / "blueprint.html").write_text(
-        _build_blueprint_html(version, n_theorems, n_decls), encoding="utf-8", newline="\n"
+        _build_blueprint_html(version, n_theorems, n_decls, len(problems)), encoding="utf-8", newline="\n"
     )
     shutil.copy2(ROOT / "data" / "problems.json", out_dir / "problems.json")
     shutil.copy2(ROOT / "docs" / "media" / "social-preview.svg", out_dir / "social-preview.svg")

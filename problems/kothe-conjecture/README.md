@@ -1,6 +1,6 @@
 # Köthe's Conjecture
 
-> **Atlas Rank #64** · CSS **59.1** · Field: *Ring Theory* · Posed: **1930** · Status: `open`
+> **Atlas Rank #77** · CSS **59.1** · Field: *Ring Theory* · Posed: **1930** · Status: `open`
 
 ## Plain statement
 

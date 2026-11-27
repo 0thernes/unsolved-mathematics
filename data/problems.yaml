@@ -20,9 +20,9 @@
 
 meta:
   atlas_name: "The Unsolved Mathematics Atlas"
-  version: "0.7.0"
+  version: "0.8.0"
   maintainer: "0thernes"
-  updated: "2026-11-26"
+  updated: "2026-11-27"
   default_branch: "main"
   disclaimer: >
     Difficulty, centrality, age, and tractability scores are curated editorial
@@ -1766,3 +1766,259 @@ problems:
     tags: ["chromatic", "telescope", "K-theory", "Ravenel", "disproved"]
 
 
+  - slug: erdos-szemeredi-asymptotic-bounds
+    title: "Erdős Problem 142 (Asymptotic Density of k-AP-Free Sets)"
+    field: "Extremal Combinatorics"
+    subfields: ["Additive Combinatorics", "Fourier Analysis", "Higher-Order Gowers Uniformity"]
+    year_posed: 1973
+    originators: ["Paul Erdős"]
+    millennium_prize: false
+    statement_plain: >
+      Find an asymptotic formula for r_k(N), the maximum size of a subset of {1,
+      ..., N} containing no non-trivial k-term arithmetic progression; in
+      particular, determine whether r_k(N) = o(N / (log N)^C) for all C > 0 and pin
+      down the true growth rate between Behrend-type lower bounds and Kelley–Meka /
+      Leng–Sah–Sawhney upper bounds.
+    difficulty: 91
+    centrality: 78
+    tractability: 22
+    status: "active-progress"
+    tags: ["Erdos-prize", "arithmetic-progressions", "Szemeredi", "additive-combinatorics", "Gowers-norms"]
+
+  - slug: erdos-turan-additive-bases
+    title: "The Erdős–Turán Conjecture on Additive Bases"
+    field: "Number Theory"
+    subfields: ["Additive Number Theory", "Additive Combinatorics", "Analytic Number Theory"]
+    year_posed: 1941
+    originators: ["Paul Erdős", "Pál Turán"]
+    millennium_prize: false
+    statement_plain: >
+      If A is a subset of the natural numbers such that every sufficiently large
+      integer can be written as a sum of two elements of A (an asymptotic additive
+      basis of order 2), then the representation function r_A(n) = |{(a, b) in A x A
+      : a + b = n}| must be unbounded.
+    difficulty: 87
+    centrality: 66
+    tractability: 18
+    status: "open"
+    tags: ["Erdos-prize", "additive-bases", "representation-function", "Sidon", "number-theory"]
+
+  - slug: erdos-sidon-sets-problem-30
+    title: "The Erdős–Turán Sidon Set Conjecture (Erdős Problem 30)"
+    field: "Combinatorics"
+    subfields: ["Additive Combinatorics", "Extremal Number Theory", "Finite Projective Geometry"]
+    year_posed: 1941
+    originators: ["Paul Erdős", "Pál Turán"]
+    millennium_prize: false
+    statement_plain: >
+      Let h(N) be the maximum size of a Sidon set (a set with all pairwise sums a +
+      b, a <= b, distinct) contained in {1, 2, ..., N}. Prove (or disprove) that
+      h(N) = N^{1/2} + O_eps(N^eps) for every eps > 0 (and, in the strongest form,
+      whether h(N) = N^{1/2} + O(1)).
+    difficulty: 84
+    centrality: 62
+    tractability: 25
+    status: "active-progress"
+    tags: ["Erdos-prize", "Sidon-sets", "B2-sequences", "additive-combinatorics", "projective-planes"]
+
+  - slug: erdos-happy-ending-problem
+    title: "The Happy Ending Problem (Erdős–Szekeres Conjecture)"
+    field: "Combinatorial Geometry"
+    subfields: ["Discrete Geometry", "Ramsey Theory", "Order Types"]
+    year_posed: 1935
+    originators: ["Esther Klein", "Paul Erdős", "George Szekeres"]
+    millennium_prize: false
+    statement_plain: >
+      Let ES(n) be the smallest integer N such that any N points in the plane in
+      general position (no three collinear) contain the vertices of a convex n-gon.
+      The Erdős–Szekeres conjecture asserts that ES(n) = 2^{n-2} + 1 for every n >=
+      3.
+    difficulty: 83
+    centrality: 69
+    tractability: 30
+    status: "active-progress"
+    tags: ["Erdos-prize", "convex-polygons", "Ramsey-theory", "discrete-geometry", "Erdos-Szekeres"]
+
+  - slug: dirichlet-divisor-problem
+    title: "The Dirichlet Divisor Problem"
+    field: "Analytic Number Theory"
+    subfields: ["Exponential Sums", "Lattice Point Counting", "Riemann Zeta Function"]
+    year_posed: 1849
+    originators: ["Peter Gustav Lejeune Dirichlet"]
+    millennium_prize: false
+    statement_plain: >
+      Let D(x) = sum_{n <= x} d(n) be the summatory divisor function and Delta(x) =
+      D(x) - x log x - (2 gamma - 1) x be the error term. Determine the infimum
+      theta of all exponents alpha such that Delta(x) = O(x^alpha); the Dirichlet
+      divisor conjecture asserts that theta = 1/4 (i.e., Delta(x) = O_eps(x^{1/4 +
+      eps}) for all eps > 0).
+    difficulty: 88
+    centrality: 74
+    tractability: 18
+    status: "active-progress"
+    tags: ["divisor-function", "exponential-sums", "lattice-points", "zeta-function", "Dirichlet"]
+
+  - slug: cramer-conjecture
+    title: "Cramér's Conjecture on Prime Gaps"
+    field: "Analytic Number Theory"
+    subfields: ["Distribution of Primes", "Probabilistic Number Theory", "Sieve Theory"]
+    year_posed: 1936
+    originators: ["Harald Cramér"]
+    millennium_prize: false
+    statement_plain: >
+      Let p_n be the n-th prime. Cramér's conjecture asserts that the gap between
+      consecutive primes satisfies p_{n+1} - p_n = O((log p_n)^2) — and in Cramér's
+      stronger 1936 probabilistic formulation, limsup_{n -> infty} (p_{n+1} - p_n) /
+      (log p_n)^2 = 1 (though Granville's 1995 heuristic suggests >= 2 e^{-gamma} ~
+      1.1229).
+    difficulty: 91
+    centrality: 77
+    tractability: 12
+    status: "open"
+    tags: ["prime-gaps", "Cramer-model", "primes", "analytic-number-theory", "Granville"]
+
+  - slug: bateman-horn-conjecture
+    title: "The Bateman–Horn Conjecture"
+    field: "Analytic Number Theory"
+    subfields: ["Prime Values of Polynomials", "Sieve Theory", "Euler Products"]
+    year_posed: 1962
+    originators: ["Paul T. Bateman", "Roger A. Horn"]
+    millennium_prize: false
+    statement_plain: >
+      Given distinct irreducible integer polynomials f_1, ..., f_k with positive
+      leading coefficients whose product has no fixed prime divisor
+      (Bunyakovsky/Schinzel admissibility), the number of integers n <= x for which
+      f_1(n), ..., f_k(n) are all simultaneously prime is asymptotic to
+      (C(f_1,...,f_k) / prod deg(f_i)) * integral_2^x dt / (log t)^k, where C is the
+      explicit local Euler product.
+    difficulty: 93
+    centrality: 80
+    tractability: 10
+    status: "open"
+    tags: ["polynomial-primes", "Euler-product", "Schinzel", "Hardy-Littlewood", "analytic-number-theory"]
+
+  - slug: resolution-of-singularities-char-p
+    title: "Resolution of Singularities in Positive Characteristic"
+    field: "Algebraic Geometry"
+    subfields: ["Birational Geometry", "Singularity Theory", "Arithmetic Geometry"]
+    year_posed: 1964
+    originators: ["Oscar Zariski", "Heisuke Hironaka", "Shreeram Abhyankar"]
+    millennium_prize: false
+    statement_plain: >
+      Does every algebraic variety (or integral scheme of finite type) of arbitrary
+      dimension d >= 4 over a field k of positive characteristic p > 0 admit a
+      resolution of singularities — a proper birational morphism X' -> X with X'
+      nonsingular?
+    difficulty: 94
+    centrality: 83
+    tractability: 16
+    status: "active-progress"
+    tags: ["resolution-of-singularities", "characteristic-p", "birational-geometry", "Hironaka", "algebraic-geometry"]
+
+  - slug: class-number-problem-real-quadratic
+    title: "Gauss's Class Number Problem for Real Quadratic Fields"
+    field: "Number Theory"
+    subfields: ["Algebraic Number Theory", "Quadratic Forms", "L-functions"]
+    year_posed: 1801
+    originators: ["Carl Friedrich Gauss"]
+    millennium_prize: false
+    statement_plain: >
+      Are there infinitely many real quadratic number fields Q(sqrt(d)) (with d > 0
+      squarefree) whose ideal class number h(d) equals 1 (equivalently, whose ring
+      of integers is a unique factorization domain)?
+    difficulty: 91
+    centrality: 78
+    tractability: 14
+    status: "open"
+    tags: ["class-number", "real-quadratic-fields", "Gauss", "algebraic-number-theory", "Dirichlet-class-number-formula"]
+
+  - slug: cohen-lenstra-heuristics
+    title: "The Cohen–Lenstra Heuristics"
+    field: "Number Theory"
+    subfields: ["Algebraic Number Theory", "Arithmetic Statistics", "Class Groups"]
+    year_posed: 1984
+    originators: ["Henri Cohen", "Hendrik W. Lenstra Jr."]
+    millennium_prize: false
+    statement_plain: >
+      As K ranges over imaginary (or real) quadratic number fields ordered by
+      discriminant, the odd part of the ideal class group Cl(K) is conjectured to be
+      distributed like a random finite abelian group G weighted inversely by
+      |Aut(G)| (for imaginary quadratic fields, u = 0) or by |G| * |Aut(G)| (for
+      real quadratic fields, u = 1).
+    difficulty: 91
+    centrality: 79
+    tractability: 24
+    status: "active-progress"
+    tags: ["class-groups", "arithmetic-statistics", "quadratic-fields", "Cohen-Lenstra", "Selmer-groups"]
+
+  - slug: cerny-conjecture
+    title: "The Černý Conjecture"
+    field: "Combinatorics"
+    subfields: ["Automata Theory", "Theoretical Computer Science", "Transformation Semigroups"]
+    year_posed: 1964
+    originators: ["Ján Černý"]
+    millennium_prize: false
+    statement_plain: >
+      If a deterministic finite automaton with n states admits a synchronizing
+      (reset) word — an input string that maps every state to the same single state
+      — then it admits a synchronizing word of length at most (n - 1)^2.
+    difficulty: 82
+    centrality: 60
+    tractability: 30
+    status: "active-progress"
+    tags: ["automata-theory", "synchronizing-words", "semigroups", "combinatorics", "Cerny"]
+
+  - slug: conway-99-graph-problem
+    title: "Conway's 99-Graph Problem"
+    field: "Graph Theory"
+    subfields: ["Algebraic Graph Theory", "Strongly Regular Graphs", "Finite Geometry"]
+    year_posed: 1970
+    originators: ["John Horton Conway"]
+    millennium_prize: false
+    statement_plain: >
+      Does there exist an undirected graph with 99 vertices in which every pair of
+      adjacent vertices has exactly 1 common neighbor and every pair of non-adjacent
+      vertices has exactly 2 common neighbors — i.e., a strongly regular graph with
+      parameters srg(99, 14, 1, 2)?
+    difficulty: 84
+    centrality: 54
+    tractability: 26
+    status: "open"
+    tags: ["strongly-regular-graphs", "Conway-prize", "algebraic-graph-theory", "finite-geometry", "99-graph"]
+
+  - slug: beck-fiala-conjecture
+    title: "The Beck–Fiala Conjecture"
+    field: "Combinatorics"
+    subfields: ["Discrepancy Theory", "Convex Geometry", "Theoretical Computer Science"]
+    year_posed: 1981
+    originators: ["József Beck", "Tibor Fiala"]
+    millennium_prize: false
+    statement_plain: >
+      Given any finite hypergraph (set system) in which every element belongs to at
+      most t sets (maximum degree t), there exists a red/blue coloring chi: V ->
+      {-1, +1} such that every set S has discrepancy |sum_{v in S} chi(v)| =
+      O(sqrt(t)) — independent of the number of elements n and sets m.
+    difficulty: 86
+    centrality: 71
+    tractability: 28
+    status: "active-progress"
+    tags: ["discrepancy-theory", "Beck-Fiala", "Komlos", "convex-geometry", "combinatorics"]
+
+  - slug: riesel-problem
+    title: "The Riesel Problem"
+    field: "Number Theory"
+    subfields: ["Elementary Number Theory", "Covering Systems", "Computational Number Theory"]
+    year_posed: 1956
+    originators: ["Hans Riesel"]
+    millennium_prize: false
+    statement_plain: >
+      A Riesel number is an odd positive integer k such that k * 2^n - 1 is
+      composite for every integer n >= 1. Hans Riesel proved in 1956 that k =
+      509,203 is a Riesel number; the Riesel problem asks whether 509,203 is the
+      smallest Riesel number (equivalently, whether every remaining odd candidate k
+      < 509,203 produces at least one prime k * 2^n - 1).
+    difficulty: 76
+    centrality: 48
+    tractability: 42
+    status: "active-progress"
+    tags: ["Riesel-numbers", "covering-systems", "OEIS", "primality", "computational-number-theory"]

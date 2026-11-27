@@ -1,0 +1,11 @@
+# Approaches — The Erdős–Turán Conjecture on Additive Bases
+
+_Major strategies, partial results, and barriers._
+
+1. **Generating-Function & Hardy–Littlewood Analytic Methods.** Let $f(z) = \sum_{a \in A} z^a$ for $|z| < 1$. Then $f(z)^2 = \sum_{n \ge 0} r_A(n) z^n$. If $r_A(n) \ge 1$ for $n \ge n_0$ and $r_A(n) \le B$, then $f(z)^2 - (1-z)^{-1}$ has bounded coefficients, constraining the $L^2$ and $H^p$ behavior of $f(z)$ near the unit circle. However, Borwein–Choi–Chu (2006) showed that purely $L^2$-norm / Parseval inequalities on $f(z)^2$ yield only finite lower bounds like $\limsup r_A(n) \ge 8$.
+2. **Finite-Support Local Extremal Analysis (Grekos–Haddad–Helou–Pihko 2003).** By comparing $|A \cap [0, N]|^2$ against $\sum_{n \le 2N} r_A(n)$ and analyzing the extremal density of $B_2[g]$ sets (sets with $r_A(n) \le g$), one shows that if the maximum density of a $B_2[g]$ set were strictly less than $\sqrt{g / 2}$? Actually the trivial lower bound on a basis is $|A \cap [0, N]| \ge \sqrt{2N}$ (unordered) vs the known $B_2[g]$ upper bounds — closing the constant gap in $B_2[g]$ sets would raise the finite constant lower bound, though not directly to $\infty$.
+3. **Erdős–Fuchs-Style Oscillation Theorems.** Erdős and Fuchs (1956) proved that $\sum_{n \le x} r_A(n) = c x + o(x^{1/4} (\log x)^{-1/2})$ is impossible for any $A \subseteq \mathbb{N}$, proving that the summatory representation function cannot be *too* smooth. Yet ruling out bounded $r_A(n)$ requires ruling out bounded fluctuations rather than small cumulative error.
+4. **Difference-Set & Sidon-Decomposition Structure.** Since Nathanson's counterexample over $\mathbb{Z}$ uses arbitrarily negative elements to cancel collisions, any valid proof **must critically exploit the one-sidedness $A \subseteq \mathbb{N}$** (positivity of exponents in $f(z)$ or non-negativity of $a+b$).
+
+## Core Barrier
+Any purely group-theoretic or shift-invariant argument fails because the statement is false in $\mathbb{Z}$. Meanwhile, generating-function methods (which do use $A \subseteq \mathbb{N}$ via analyticity on the unit disk) have not found a way to prevent bounded oscillations of $r_A(n)$ in $[1, B]$ for moderate $B$ (e.g., $B = 10$).

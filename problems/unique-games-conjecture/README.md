@@ -1,6 +1,6 @@
 # The Unique Games Conjecture
 
-> **Atlas Rank #40** · CSS **64.1** · Field: *Computational Complexity Theory* · Posed: **2002** · Status: `active-progress`
+> **Atlas Rank #51** · CSS **64.1** · Field: *Computational Complexity Theory* · Posed: **2002** · Status: `active-progress`
 
 ## Plain statement
 

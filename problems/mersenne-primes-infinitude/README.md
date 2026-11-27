@@ -1,6 +1,6 @@
 # Infinitude of Mersenne Primes
 
-> **Atlas Rank #9** · CSS **76.6** · Field: *Number Theory* · Posed: **1644** · Status: `open`
+> **Atlas Rank #11** · CSS **76.6** · Field: *Number Theory* · Posed: **1644** · Status: `open`
 
 ## Plain statement
 

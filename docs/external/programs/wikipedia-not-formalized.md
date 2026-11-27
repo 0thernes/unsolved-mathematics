@@ -3,62 +3,64 @@
 # Wikipedia (not formalized) — Left to Solve program mirror
 
 > [!IMPORTANT]
-> **Third-party data, mirrored daily.** Counts, kinds and "solved here" flags come from
-> [lefttosolve.com](https://lefttosolve.com/programs) (formal statements from
-> [google-deepmind/formal-conjectures](https://github.com/google-deepmind/formal-conjectures), Apache-2.0).
-> "Solved here" means *marked solved by agents on that site*; this Atlas has **not** verified any of
-> those claims, and nothing in this mirror changes the status of any Atlas problem. Status signals
-> below are prompts for human review only. Not affiliated with Left to Solve.
+> **Third-party data, mirrored daily (all 25 programs / all items).** Counts, kinds and "solved here" flags come from
+> [lefttosolve.com](https://lefttosolve.com/programs) (formal Lean statements from
+> [google-deepmind/formal-conjectures](https://github.com/google-deepmind/formal-conjectures), Apache-2.0; titles from
+> MathOverflow, Math StackExchange, OEIS and Wikipedia remain under their upstream CC BY-SA 4.0 / source licenses and
+> are carved out of this repository's CC BY 4.0 license — see `THIRD_PARTY_NOTICES.md`).
+> "Solved here" is disaggregated by `kind` (`open` / `known` / `warmup`) so known theorems and warmup exercises are
+> never misread as solved open conjectures. This Atlas has **not** verified external claims, and nothing in this mirror
+> modifies `data/problems.yaml`. Not affiliated with Left to Solve.
 
 [Program page](https://lefttosolve.com/programs/Wikipedia%20%28not%20formalized%29) · Open problems stated in research papers and books.
 
-Targets 44 · open 44 · solved here (site claim) 0 · kinds open/known/unformalized/other = 0/0/44/0 · snapshot `6aad4dc91eea6bbb` (`2026-11-27T04:31:27Z`).
+Targets 44 · open 44 · solved by kind (site claim): `0` · kinds open/known/warmup/unformalized/other = 0/0/0/44/0 · snapshot `f1bcc922a11d5418` (`2026-11-27T05:46:57Z`).
 
 Back to [all programs](../PROGRAMS.md).
 
 | # | Item id | Title | Kind | Fields | Prize | Site-solved flag |
 |---:|---|---|---|---|---|---|
-| 1 | `wpc-3sum-conjecture` | 3SUM conjecture | unformalized | Computational Complexity |  |  |
-| 2 | `wpc-barendregt-geuvers-klop` | Barendregt–Geuvers–Klop conjecture | unformalized | Logic & Foundations |  |  |
-| 3 | `wpc-berman-hartmanis-conjecture` | Berman–Hartmanis conjecture | unformalized | Computational Complexity |  |  |
-| 4 | `wpc-bloch-kato-l-values` | Bloch–Kato conjecture on special values of L-functions | unformalized | Number Theory |  |  |
-| 5 | `wpc-dixmier-unitarizability` | Dixmier's unitarizability problem | unformalized | Operator Theory |  |  |
-| 6 | `wpc-dynamic-optimality` | Dynamic optimality conjecture for splay trees | unformalized | Computer Science |  |  |
-| 7 | `wpc-entropy-influence-conjecture` | Friedgut–Kalai entropy–influence conjecture | unformalized | Combinatorics |  |  |
-| 8 | `wpc-evasiveness-conjecture` | Evasiveness (Aanderaa–Karp–Rosenberg) conjecture | unformalized | Computational Complexity |  |  |
-| 9 | `wpc-exponential-closedness` | Zilber's exponential-algebraic closedness conjecture | unformalized | Logic & Foundations |  |  |
-| 10 | `wpc-factoring-in-p` | Can integers be factored in polynomial time on a classical computer? | unformalized | Computational Complexity |  |  |
-| 11 | `wpc-final-state-conjecture` | Final state conjecture for black holes | unformalized | Differential Geometry |  |  |
-| 12 | `wpc-four-prime-squares` | Sums of four squares of primes (Waring–Goldbach) | unformalized | Number Theory |  |  |
-| 13 | `wpc-frame-stewart-conjecture` | Frame–Stewart conjecture for five or more pegs | unformalized | Combinatorics |  |  |
-| 14 | `wpc-generalized-ramanujan` | Generalized Ramanujan conjecture for GL(n) | unformalized | Number Theory |  |  |
-| 15 | `wpc-graph-isomorphism-in-p` | Is graph isomorphism in P? | unformalized | Computational Complexity |  |  |
-| 16 | `wpc-heesch-problem` | Heesch's problem | unformalized | Geometry |  |  |
-| 17 | `wpc-homological-mirror-symmetry` | Kontsevich's homological mirror symmetry conjecture | unformalized | Algebraic Geometry |  |  |
-| 18 | `wpc-jacobi-bound-conjecture` | Jacobi bound conjecture for differential systems | unformalized | General Algebra |  |  |
-| 19 | `wpc-k-server-conjecture` | Deterministic k-server conjecture | unformalized | Computer Science |  |  |
-| 20 | `wpc-komlos-conjecture` | Komlós conjecture | unformalized | Combinatorics |  |  |
-| 21 | `wpc-list-edge-colouring-conjecture` | List edge-colouring conjecture | unformalized | Combinatorics |  |  |
-| 22 | `wpc-local-langlands` | Local Langlands conjecture for general reductive groups | unformalized | Number Theory |  |  |
-| 23 | `wpc-local-smoothing-conjecture` | Sogge's local smoothing conjecture | unformalized | Harmonic Analysis |  |  |
-| 24 | `wpc-log-rank-conjecture` | Log-rank conjecture | unformalized | Computational Complexity |  |  |
-| 25 | `wpc-lovasz-woodall-conjecture` | Lovász–Woodall conjecture | unformalized | Combinatorics |  |  |
-| 26 | `wpc-mahler-conjecture` | Mahler's volume-product conjecture | unformalized | Convex & Discrete Geometry |  |  |
-| 27 | `wpc-mortality-2x2` | Matrix mortality problem for 2×2 integer matrices | unformalized | Computer Science |  |  |
-| 28 | `wpc-morton-silverman` | Morton–Silverman uniform boundedness conjecture | unformalized | Dynamical Systems |  |  |
-| 29 | `wpc-mumford-tate-conjecture` | Mumford–Tate conjecture | unformalized | Algebraic Geometry |  |  |
-| 30 | `wpc-nakayama-conjecture` | Nakayama conjecture | unformalized | General Algebra |  |  |
-| 31 | `wpc-nivat-conjecture` | Nivat's conjecture | unformalized | Combinatorics |  |  |
-| 32 | `wpc-omega-equals-two` | Is the exponent of matrix multiplication ω equal to 2? | unformalized | Computational Complexity |  |  |
-| 33 | `wpc-omv-conjecture` | Online Boolean matrix–vector (OMv) conjecture | unformalized | Computational Complexity |  |  |
-| 34 | `wpc-one-way-functions` | Do one-way functions exist? | unformalized | Computational Complexity |  |  |
-| 35 | `wpc-prouhet-tarry-escott` | Ideal solutions of the Prouhet–Tarry–Escott problem | unformalized | Number Theory |  |  |
-| 36 | `wpc-restriction-conjecture` | Stein's Fourier restriction conjecture | unformalized | Harmonic Analysis |  |  |
-| 37 | `wpc-sausage-conjecture` | Fejes Tóth's sausage conjecture | unformalized | Convex & Discrete Geometry |  |  |
-| 38 | `wpc-separating-words` | Separating words problem | unformalized | Computer Science |  |  |
-| 39 | `wpc-sha-finite` | Finiteness of the Tate–Shafarevich group | unformalized | Number Theory |  |  |
-| 40 | `wpc-strong-cosmic-censorship` | Strong cosmic censorship conjecture (Christodoulou's formulation) | unformalized | Differential Geometry |  |  |
-| 41 | `wpc-syz-conjecture` | Strominger–Yau–Zaslow (SYZ) conjecture | unformalized | Differential Geometry |  |  |
-| 42 | `wpc-thomas-yau-conjecture` | Thomas–Yau conjecture | unformalized | Differential Geometry |  |  |
-| 43 | `wpc-weak-cosmic-censorship` | Weak cosmic censorship conjecture | unformalized | Differential Geometry |  |  |
-| 44 | `wpc-x-plus-y-sorting` | X + Y sorting | unformalized | Computer Science |  |  |
+| 1 | [`wpc-3sum-conjecture`](https://lefttosolve.com/p/wpc-3sum-conjecture) | 3SUM conjecture | unformalized | Computational Complexity |  |  |
+| 2 | [`wpc-barendregt-geuvers-klop`](https://lefttosolve.com/p/wpc-barendregt-geuvers-klop) | Barendregt–Geuvers–Klop conjecture | unformalized | Logic & Foundations |  |  |
+| 3 | [`wpc-berman-hartmanis-conjecture`](https://lefttosolve.com/p/wpc-berman-hartmanis-conjecture) | Berman–Hartmanis conjecture | unformalized | Computational Complexity |  |  |
+| 4 | [`wpc-bloch-kato-l-values`](https://lefttosolve.com/p/wpc-bloch-kato-l-values) | Bloch–Kato conjecture on special values of L-functions | unformalized | Number Theory |  |  |
+| 5 | [`wpc-dixmier-unitarizability`](https://lefttosolve.com/p/wpc-dixmier-unitarizability) | Dixmier's unitarizability problem | unformalized | Operator Theory |  |  |
+| 6 | [`wpc-dynamic-optimality`](https://lefttosolve.com/p/wpc-dynamic-optimality) | Dynamic optimality conjecture for splay trees | unformalized | Computer Science |  |  |
+| 7 | [`wpc-entropy-influence-conjecture`](https://lefttosolve.com/p/wpc-entropy-influence-conjecture) | Friedgut–Kalai entropy–influence conjecture | unformalized | Combinatorics |  |  |
+| 8 | [`wpc-evasiveness-conjecture`](https://lefttosolve.com/p/wpc-evasiveness-conjecture) | Evasiveness (Aanderaa–Karp–Rosenberg) conjecture | unformalized | Computational Complexity |  |  |
+| 9 | [`wpc-exponential-closedness`](https://lefttosolve.com/p/wpc-exponential-closedness) | Zilber's exponential-algebraic closedness conjecture | unformalized | Logic & Foundations |  |  |
+| 10 | [`wpc-factoring-in-p`](https://lefttosolve.com/p/wpc-factoring-in-p) | Can integers be factored in polynomial time on a classical computer? | unformalized | Computational Complexity |  |  |
+| 11 | [`wpc-final-state-conjecture`](https://lefttosolve.com/p/wpc-final-state-conjecture) | Final state conjecture for black holes | unformalized | Differential Geometry |  |  |
+| 12 | [`wpc-four-prime-squares`](https://lefttosolve.com/p/wpc-four-prime-squares) | Sums of four squares of primes (Waring–Goldbach) | unformalized | Number Theory |  |  |
+| 13 | [`wpc-frame-stewart-conjecture`](https://lefttosolve.com/p/wpc-frame-stewart-conjecture) | Frame–Stewart conjecture for five or more pegs | unformalized | Combinatorics |  |  |
+| 14 | [`wpc-generalized-ramanujan`](https://lefttosolve.com/p/wpc-generalized-ramanujan) | Generalized Ramanujan conjecture for GL(n) | unformalized | Number Theory |  |  |
+| 15 | [`wpc-graph-isomorphism-in-p`](https://lefttosolve.com/p/wpc-graph-isomorphism-in-p) | Is graph isomorphism in P? | unformalized | Computational Complexity |  |  |
+| 16 | [`wpc-heesch-problem`](https://lefttosolve.com/p/wpc-heesch-problem) | Heesch's problem | unformalized | Geometry |  |  |
+| 17 | [`wpc-homological-mirror-symmetry`](https://lefttosolve.com/p/wpc-homological-mirror-symmetry) | Kontsevich's homological mirror symmetry conjecture | unformalized | Algebraic Geometry |  |  |
+| 18 | [`wpc-jacobi-bound-conjecture`](https://lefttosolve.com/p/wpc-jacobi-bound-conjecture) | Jacobi bound conjecture for differential systems | unformalized | General Algebra |  |  |
+| 19 | [`wpc-k-server-conjecture`](https://lefttosolve.com/p/wpc-k-server-conjecture) | Deterministic k-server conjecture | unformalized | Computer Science |  |  |
+| 20 | [`wpc-komlos-conjecture`](https://lefttosolve.com/p/wpc-komlos-conjecture) | Komlós conjecture | unformalized | Combinatorics |  |  |
+| 21 | [`wpc-list-edge-colouring-conjecture`](https://lefttosolve.com/p/wpc-list-edge-colouring-conjecture) | List edge-colouring conjecture | unformalized | Combinatorics |  |  |
+| 22 | [`wpc-local-langlands`](https://lefttosolve.com/p/wpc-local-langlands) | Local Langlands conjecture for general reductive groups | unformalized | Number Theory |  |  |
+| 23 | [`wpc-local-smoothing-conjecture`](https://lefttosolve.com/p/wpc-local-smoothing-conjecture) | Sogge's local smoothing conjecture | unformalized | Harmonic Analysis |  |  |
+| 24 | [`wpc-log-rank-conjecture`](https://lefttosolve.com/p/wpc-log-rank-conjecture) | Log-rank conjecture | unformalized | Computational Complexity |  |  |
+| 25 | [`wpc-lovasz-woodall-conjecture`](https://lefttosolve.com/p/wpc-lovasz-woodall-conjecture) | Lovász–Woodall conjecture | unformalized | Combinatorics |  |  |
+| 26 | [`wpc-mahler-conjecture`](https://lefttosolve.com/p/wpc-mahler-conjecture) | Mahler's volume-product conjecture | unformalized | Convex & Discrete Geometry |  |  |
+| 27 | [`wpc-mortality-2x2`](https://lefttosolve.com/p/wpc-mortality-2x2) | Matrix mortality problem for 2×2 integer matrices | unformalized | Computer Science |  |  |
+| 28 | [`wpc-morton-silverman`](https://lefttosolve.com/p/wpc-morton-silverman) | Morton–Silverman uniform boundedness conjecture | unformalized | Dynamical Systems |  |  |
+| 29 | [`wpc-mumford-tate-conjecture`](https://lefttosolve.com/p/wpc-mumford-tate-conjecture) | Mumford–Tate conjecture | unformalized | Algebraic Geometry |  |  |
+| 30 | [`wpc-nakayama-conjecture`](https://lefttosolve.com/p/wpc-nakayama-conjecture) | Nakayama conjecture | unformalized | General Algebra |  |  |
+| 31 | [`wpc-nivat-conjecture`](https://lefttosolve.com/p/wpc-nivat-conjecture) | Nivat's conjecture | unformalized | Combinatorics |  |  |
+| 32 | [`wpc-omega-equals-two`](https://lefttosolve.com/p/wpc-omega-equals-two) | Is the exponent of matrix multiplication ω equal to 2? | unformalized | Computational Complexity |  |  |
+| 33 | [`wpc-omv-conjecture`](https://lefttosolve.com/p/wpc-omv-conjecture) | Online Boolean matrix–vector (OMv) conjecture | unformalized | Computational Complexity |  |  |
+| 34 | [`wpc-one-way-functions`](https://lefttosolve.com/p/wpc-one-way-functions) | Do one-way functions exist? | unformalized | Computational Complexity |  |  |
+| 35 | [`wpc-prouhet-tarry-escott`](https://lefttosolve.com/p/wpc-prouhet-tarry-escott) | Ideal solutions of the Prouhet–Tarry–Escott problem | unformalized | Number Theory |  |  |
+| 36 | [`wpc-restriction-conjecture`](https://lefttosolve.com/p/wpc-restriction-conjecture) | Stein's Fourier restriction conjecture | unformalized | Harmonic Analysis |  |  |
+| 37 | [`wpc-sausage-conjecture`](https://lefttosolve.com/p/wpc-sausage-conjecture) | Fejes Tóth's sausage conjecture | unformalized | Convex & Discrete Geometry |  |  |
+| 38 | [`wpc-separating-words`](https://lefttosolve.com/p/wpc-separating-words) | Separating words problem | unformalized | Computer Science |  |  |
+| 39 | [`wpc-sha-finite`](https://lefttosolve.com/p/wpc-sha-finite) | Finiteness of the Tate–Shafarevich group | unformalized | Number Theory |  |  |
+| 40 | [`wpc-strong-cosmic-censorship`](https://lefttosolve.com/p/wpc-strong-cosmic-censorship) | Strong cosmic censorship conjecture (Christodoulou's formulation) | unformalized | Differential Geometry |  |  |
+| 41 | [`wpc-syz-conjecture`](https://lefttosolve.com/p/wpc-syz-conjecture) | Strominger–Yau–Zaslow (SYZ) conjecture | unformalized | Differential Geometry |  |  |
+| 42 | [`wpc-thomas-yau-conjecture`](https://lefttosolve.com/p/wpc-thomas-yau-conjecture) | Thomas–Yau conjecture | unformalized | Differential Geometry |  |  |
+| 43 | [`wpc-weak-cosmic-censorship`](https://lefttosolve.com/p/wpc-weak-cosmic-censorship) | Weak cosmic censorship conjecture | unformalized | Differential Geometry |  |  |
+| 44 | [`wpc-x-plus-y-sorting`](https://lefttosolve.com/p/wpc-x-plus-y-sorting) | X + Y sorting | unformalized | Computer Science |  |  |

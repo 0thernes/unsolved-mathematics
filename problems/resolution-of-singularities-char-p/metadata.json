@@ -1,0 +1,32 @@
+{
+  "slug": "resolution-of-singularities-char-p",
+  "title": "Resolution of Singularities in Positive Characteristic",
+  "field": "Algebraic Geometry",
+  "subfields": [
+    "Birational Geometry",
+    "Singularity Theory",
+    "Arithmetic Geometry"
+  ],
+  "year_posed": 1964,
+  "originators": [
+    "Oscar Zariski",
+    "Heisuke Hironaka",
+    "Shreeram Abhyankar"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Does every algebraic variety (or integral scheme of finite type) of arbitrary dimension d >= 4 over a field k of positive characteristic p > 0 admit a resolution of singularities — a proper birational morphism X' -> X with X' nonsingular?\n",
+  "difficulty": 94,
+  "centrality": 83,
+  "tractability": 16,
+  "status": "active-progress",
+  "tags": [
+    "resolution-of-singularities",
+    "characteristic-p",
+    "birational-geometry",
+    "Hironaka",
+    "algebraic-geometry"
+  ],
+  "rank": 15,
+  "css": 75.033,
+  "folder": "resolution-of-singularities-char-p"
+}

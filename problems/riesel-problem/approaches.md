@@ -1,0 +1,10 @@
+# Approaches — The Riesel Problem
+
+_Major strategies, partial results, and barriers._
+
+1. **Covering-System Proofs of Compositeness.** Every known Riesel number is proved composite for all $n$ either by a finite covering system of congruences (forcing $k \cdot 2^n - 1$ to be divisible by one of a finite set of primes) or by an algebraic factorization (e.g., $k = 2^m$? No, $k$ is odd, or $k = a^r$ when $n$ hits a residue class combined with a partial covering). Notice Filaseta, Finch, and Kozek (2008) showed that **no finite covering system can prove any remaining $k < 509{,}203$ is Riesel without huge moduli**, and Hough's 2015 theorem further constrains covering systems.
+2. **Distributed LLR Primality Testing (PrimeGrid).** Because $k \cdot 2^n - 1$ admits the deterministic $O(n \log n)$ Lucas–Lehmer–Riesel test (implemented via FFT multiplication in `LLR` / `PRST`), eliminating a candidate $k$ requires only finding *one* prime $k \cdot 2^n - 1$. Heuristically (assuming random prime density $\sim c / (n \log 2)$), the sum $\sum_{n=1}^{\infty} 1/n$ diverges slowly, so a non-Riesel $k$ can easily avoid primes past $n = 10^7$ or even $10^9$ by sheer bad luck!
+3. **Algebraic / Non-Covering Riesel Obstruction.** A deeper theoretical question (posed by Erdős and Odlyzko / Filaseta) asks whether there exist Riesel numbers *not* explained by any finite covering system (so-called "uncovered" Riesel numbers). None is known, yet disproving their existence appears as hard as the Bateman–Horn / Schinzel conjectures for exponential families.
+
+## Core Barrier
+The problem splits into an asymmetric computational-vs-theoretical dilemma: if $509{,}203$ truly is the smallest Riesel number, **pure computation can eventually prove it** (by discovering a prime for each of the $\sim 40$ remaining $k$ values), though the expected exponent $n$ for the unluckiest $k$ could exceed $10^8$ or $10^{10}$. Conversely, if some remaining $k < 509{,}203$ *is* an uncovered Riesel number without a covering system, no current mathematical technique can prove it is composite for all $n$!

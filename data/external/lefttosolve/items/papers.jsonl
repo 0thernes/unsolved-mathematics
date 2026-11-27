@@ -115,7 +115,7 @@
 {"fields": ["Number Theory"], "id": "PartitionParity.bellaiche_nicolas.even", "kind": "known", "prize": null, "solved": false, "title": "Parities of partition numbers — even"}
 {"fields": ["Number Theory"], "id": "PartitionParity.bellaiche_nicolas.even_explicit", "kind": "known", "prize": null, "solved": false, "title": "Parities of partition numbers — even explicit"}
 {"fields": ["Number Theory"], "id": "PartitionParity.bellaiche_nicolas.odd_explicit", "kind": "known", "prize": null, "solved": false, "title": "Parities of partition numbers — odd explicit"}
-{"fields": ["Number Theory"], "id": "PartitionParity.classNumber_eq_ncard_reducedForms", "kind": "warmup", "prize": null, "solved": false, "title": "Parities of partition numbers — classNumber eq ncard reducedForms"}
+{"fields": ["Number Theory"], "id": "PartitionParity.classNumber_eq_ncard_reducedForms", "kind": "warmup", "prize": null, "solved": true, "title": "Parities of partition numbers — classNumber eq ncard reducedForms"}
 {"fields": ["Number Theory"], "id": "PartitionParity.kolberg", "kind": "known", "prize": null, "solved": true, "title": "Parities of partition numbers — kolberg"}
 {"fields": ["Number Theory"], "id": "PartitionParity.ono.polynomial", "kind": "open", "prize": null, "solved": false, "title": "Parities of partition numbers — polynomial"}
 {"fields": ["Number Theory"], "id": "PartitionParity.ono_swaminathan.odd_bound", "kind": "known", "prize": null, "solved": false, "title": "Parities of partition numbers — odd bound"}
@@ -151,7 +151,7 @@
 {"fields": ["Number Theory"], "id": "RiemannZetaMoments.moment_isEquiv-109", "kind": "open", "prize": null, "solved": false, "title": "Moments of the Riemann zeta function on the critical line — moment isEquiv₃"}
 {"fields": ["Number Theory"], "id": "RiemannZetaMoments.moment_isEquiv-115", "kind": "open", "prize": null, "solved": false, "title": "Moments of the Riemann zeta function on the critical line — moment isEquiv₄"}
 {"fields": ["Number Theory"], "id": "RiemannZetaMoments.moment_isEquiv-122", "kind": "open", "prize": null, "solved": false, "title": "Moments of the Riemann zeta function on the critical line — moment isEquivₖ"}
-{"fields": ["Number Theory"], "id": "RiemannZetaMoments.moment_isEquiv-77", "kind": "known", "prize": null, "solved": false, "title": "Moments of the Riemann zeta function on the critical line — moment isEquiv₁"}
+{"fields": ["Number Theory"], "id": "RiemannZetaMoments.moment_isEquiv-77", "kind": "known", "prize": null, "solved": true, "title": "Moments of the Riemann zeta function on the critical line — moment isEquiv₁"}
 {"fields": ["Number Theory"], "id": "RiemannZetaMoments.moment_isEquiv-83", "kind": "known", "prize": null, "solved": false, "title": "Moments of the Riemann zeta function on the critical line — moment isEquiv₂"}
 {"fields": ["Combinatorics"], "id": "RingelConjecture.ringel_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Ringel's Conjecture"}
 {"fields": ["Algebraic Geometry", "Number Theory"], "id": "SerreUniformity.serre_uniformity", "kind": "open", "prize": null, "solved": false, "title": "Serre's uniformity question over $\\mathbb{Q}$"}

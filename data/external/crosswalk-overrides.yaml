@@ -109,4 +109,40 @@ include:
     - {id: Hall.hall_conjecture, relation: primary}
   kothe-conjecture:
     - {id: Koethe.KotheConjecture, relation: primary}
+  sunflower-conjecture:
+    - {id: Erdos20.erdos_20, relation: primary}
+  erdos-szemeredi-asymptotic-bounds:
+    - {id: Erdos142.erdos_142, relation: primary}
+  erdos-turan-additive-bases:
+    - {id: Erdos28.erdos_28, relation: primary}
+  erdos-sidon-sets-problem-30:
+    - {id: Erdos30.erdos_30, relation: primary}
+    - {id: Erdos30.erdos_30.variants.O_one, relation: variant}
+    - {id: Erdos30.erdos_30.variants.balogh_furedi_roy, relation: variant}
+  erdos-happy-ending-problem:
+    - {id: Erdos107.erdos_107, relation: primary}
+  dirichlet-divisor-problem:
+    - {id: DirichletDivisorProblem.dirichlet_divisor_problem, relation: primary}
+    - {id: DirichletDivisorProblem.divisor_error_hardy, relation: related}
+  cramer-conjecture:
+    - {id: CramerConjecture.cramer_conjecture, relation: primary}
+  bateman-horn-conjecture:
+    - {id: BatemanHornConjecture.bateman_horn_conjecture, relation: primary}
+  resolution-of-singularities-char-p:
+    - {id: AlgebraicGeometry.resolution_of_singularities, relation: primary}
+    - {id: AlgebraicGeometry.resolution_of_singularities_of_topologicalKrullDim_le_three, relation: related}
+  class-number-problem-real-quadratic:
+    - {id: ClassNumberProblem.class_number_problem, relation: primary}
+  cohen-lenstra-heuristics:
+    - {id: CohenLenstraHeuristics.cohen_lenstra_imaginary_quadratic_p_sylow_conjecture, relation: primary}
+    - {id: CohenLenstraHeuristics.cohen_lenstra_real_quadratic_p_sylow_conjecture, relation: primary}
+  cerny-conjecture:
+    - {id: CernyConjecture.cerny_conjecture, relation: primary}
+    - {id: CernyConjecture.shitov_upper_bound, relation: related}
+  conway-99-graph-problem:
+    - {id: Conway99Graph.conway99Graph, relation: primary}
+  beck-fiala-conjecture:
+    - {id: BeckFiala.beck_fiala_conjecture, relation: primary}
+  riesel-problem:
+    - {id: OeisA108129.conjecture, relation: primary}
 exclude: {}

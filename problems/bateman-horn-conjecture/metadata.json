@@ -1,0 +1,31 @@
+{
+  "slug": "bateman-horn-conjecture",
+  "title": "The Bateman–Horn Conjecture",
+  "field": "Analytic Number Theory",
+  "subfields": [
+    "Prime Values of Polynomials",
+    "Sieve Theory",
+    "Euler Products"
+  ],
+  "year_posed": 1962,
+  "originators": [
+    "Paul T. Bateman",
+    "Roger A. Horn"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Given distinct irreducible integer polynomials f_1, ..., f_k with positive leading coefficients whose product has no fixed prime divisor (Bunyakovsky/Schinzel admissibility), the number of integers n <= x for which f_1(n), ..., f_k(n) are all simultaneously prime is asymptotic to (C(f_1,...,f_k) / prod deg(f_i)) * integral_2^x dt / (log t)^k, where C is the explicit local Euler product.\n",
+  "difficulty": 93,
+  "centrality": 80,
+  "tractability": 10,
+  "status": "open",
+  "tags": [
+    "polynomial-primes",
+    "Euler-product",
+    "Schinzel",
+    "Hardy-Littlewood",
+    "analytic-number-theory"
+  ],
+  "rank": 17,
+  "css": 74.467,
+  "folder": "bateman-horn-conjecture"
+}

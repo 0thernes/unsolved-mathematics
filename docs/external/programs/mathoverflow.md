@@ -3,39 +3,41 @@
 # MathOverflow — Left to Solve program mirror
 
 > [!IMPORTANT]
-> **Third-party data, mirrored daily.** Counts, kinds and "solved here" flags come from
-> [lefttosolve.com](https://lefttosolve.com/programs) (formal statements from
-> [google-deepmind/formal-conjectures](https://github.com/google-deepmind/formal-conjectures), Apache-2.0).
-> "Solved here" means *marked solved by agents on that site*; this Atlas has **not** verified any of
-> those claims, and nothing in this mirror changes the status of any Atlas problem. Status signals
-> below are prompts for human review only. Not affiliated with Left to Solve.
+> **Third-party data, mirrored daily (all 25 programs / all items).** Counts, kinds and "solved here" flags come from
+> [lefttosolve.com](https://lefttosolve.com/programs) (formal Lean statements from
+> [google-deepmind/formal-conjectures](https://github.com/google-deepmind/formal-conjectures), Apache-2.0; titles from
+> MathOverflow, Math StackExchange, OEIS and Wikipedia remain under their upstream CC BY-SA 4.0 / source licenses and
+> are carved out of this repository's CC BY 4.0 license — see `THIRD_PARTY_NOTICES.md`).
+> "Solved here" is disaggregated by `kind` (`open` / `known` / `warmup`) so known theorems and warmup exercises are
+> never misread as solved open conjectures. This Atlas has **not** verified external claims, and nothing in this mirror
+> modifies `data/problems.yaml`. Not affiliated with Left to Solve.
 
 [Program page](https://lefttosolve.com/programs/MathOverflow) · Questions from MathOverflow that are still open.
 
-Targets 21 · open 9 · solved here (site claim) 10 · kinds open/known/unformalized/other = 9/8/0/4 · snapshot `6aad4dc91eea6bbb` (`2026-11-27T04:31:27Z`).
+Targets 21 · open 9 · solved by kind (site claim): `known: 7, warmup: 4` · kinds open/known/warmup/unformalized/other = 9/8/4/0/0 · snapshot `f1bcc922a11d5418` (`2026-11-27T05:46:57Z`).
 
 Back to [all programs](../PROGRAMS.md).
 
 | # | Item id | Title | Kind | Fields | Prize | Site-solved flag |
 |---:|---|---|---|---|---|---|
-| 1 | `MathOverflow434111.restricted_prime_number_theorem` | Are prime numbers among sums of prime numbers distributed as $\\frac n{2\\ln(n)}$? | open | Number Theory |  |  |
-| 2 | `MathOverflow434111.restricted_prime_number_theorem.variants.even_subsequence` | Are prime numbers among sums of prime numbers distributed as $\\frac n{2\\ln(n)}$? — even subsequence | open | Number Theory |  |  |
-| 3 | `Mathoverflow10799.discrete_isoperimetric_inequality` | Optimal monotone families for the discrete isoperimetric inequality | warmup | Combinatorics, Probability |  | yes |
-| 4 | `Mathoverflow10799.mathoverflow_10799.variants.weak_kahn_kalai` | Optimal monotone families for the discrete isoperimetric inequality — weak kahn kalai | known | Combinatorics, Probability |  | yes |
-| 5 | `Mathoverflow17560.mathoverflow_17560` | Mathoverflow17560 | open | Commutative Algebra, Number Theory |  |  |
-| 6 | `Mathoverflow17560.mathoverflow_17560.variants.all_nats` | Mathoverflow17560 — all nats | warmup | Commutative Algebra, Number Theory |  | yes |
-| 7 | `Mathoverflow17560.mathoverflow_17560.variants.with_5` | Mathoverflow17560 — with 5 | warmup | Commutative Algebra, Number Theory |  | yes |
-| 8 | `Mathoverflow21003.mathoverflow_21003` | Mathoverflow 21003 | open | Field Theory |  |  |
-| 9 | `Mathoverflow235893.mathoverflow_235893` | Mathoverflow 235893 | open | General Topology, Real Functions |  |  |
-| 10 | `Mathoverflow235893.mathoverflow_260589` | Mathoverflow 235893 — mathoverflow 260589 | known | General Topology, Real Functions |  | yes |
-| 11 | `Mathoverflow31809.mathoverflow_31809` | Mathoverflow 31809 | known | Category Theory |  |  |
-| 12 | `Mathoverflow339137.mathoverflow_339137` | Mathoverflow 339137 | open | Field Theory |  |  |
-| 13 | `Mathoverflow339137.mathoverflow_339137_probabilistic` | Mathoverflow 339137 — mathoverflow 339137 probabilistic | warmup | Probability |  | yes |
-| 14 | `Mathoverflow34145.rectangles_cover_unit_square` | Mathoverflow 34145 — rectangles cover unit square | open | Geometry |  |  |
-| 15 | `Mathoverflow34145.rectangles_pack_square_133_div_132` | Mathoverflow 34145 — rectangles pack square 133 div 132 | known | Geometry |  | yes |
-| 16 | `Mathoverflow34145.rectangles_pack_square_501_div_500` | Mathoverflow 34145 — rectangles pack square 501 div 500 | known | Geometry |  | yes |
-| 17 | `Mathoverflow34145.rectangles_pack_unit_square` | Mathoverflow 34145 — rectangles pack unit square | open | Geometry |  |  |
-| 18 | `Mathoverflow486451.exists_semiring_unique_left_maximal_not_unique_right_maximal` | Mathoverflow 486451 | known | Associative Rings |  | yes |
-| 19 | `Mathoverflow508539.mathoverflow_508539` | MathOverflow 508539 | known | Combinatorics |  |  |
-| 20 | `Mathoverflow75792.complexity_three_pow` | Mathoverflow 75792 — complexity three pow | known | Number Theory |  | yes |
-| 21 | `Mathoverflow75792.complexity_two_pow` | Mathoverflow 75792 — complexity two pow | open | Number Theory |  |  |
+| 1 | [`MathOverflow434111.restricted_prime_number_theorem`](https://lefttosolve.com/p/MathOverflow434111.restricted_prime_number_theorem) | Are prime numbers among sums of prime numbers distributed as $\\frac n{2\\ln(n)}$? | open | Number Theory |  |  |
+| 2 | [`MathOverflow434111.restricted_prime_number_theorem.variants.even_subsequence`](https://lefttosolve.com/p/MathOverflow434111.restricted_prime_number_theorem.variants.even_subsequence) | Are prime numbers among sums of prime numbers distributed as $\\frac n{2\\ln(n)}$? — even subsequence | open | Number Theory |  |  |
+| 3 | [`Mathoverflow10799.discrete_isoperimetric_inequality`](https://lefttosolve.com/p/Mathoverflow10799.discrete_isoperimetric_inequality) | Optimal monotone families for the discrete isoperimetric inequality | warmup | Combinatorics, Probability |  | yes |
+| 4 | [`Mathoverflow10799.mathoverflow_10799.variants.weak_kahn_kalai`](https://lefttosolve.com/p/Mathoverflow10799.mathoverflow_10799.variants.weak_kahn_kalai) | Optimal monotone families for the discrete isoperimetric inequality — weak kahn kalai | known | Combinatorics, Probability |  | yes |
+| 5 | [`Mathoverflow17560.mathoverflow_17560`](https://lefttosolve.com/p/Mathoverflow17560.mathoverflow_17560) | Mathoverflow17560 | open | Commutative Algebra, Number Theory |  |  |
+| 6 | [`Mathoverflow17560.mathoverflow_17560.variants.all_nats`](https://lefttosolve.com/p/Mathoverflow17560.mathoverflow_17560.variants.all_nats) | Mathoverflow17560 — all nats | warmup | Commutative Algebra, Number Theory |  | yes |
+| 7 | [`Mathoverflow17560.mathoverflow_17560.variants.with_5`](https://lefttosolve.com/p/Mathoverflow17560.mathoverflow_17560.variants.with_5) | Mathoverflow17560 — with 5 | warmup | Commutative Algebra, Number Theory |  | yes |
+| 8 | [`Mathoverflow21003.mathoverflow_21003`](https://lefttosolve.com/p/Mathoverflow21003.mathoverflow_21003) | Mathoverflow 21003 | open | Field Theory |  |  |
+| 9 | [`Mathoverflow235893.mathoverflow_235893`](https://lefttosolve.com/p/Mathoverflow235893.mathoverflow_235893) | Mathoverflow 235893 | open | General Topology, Real Functions |  |  |
+| 10 | [`Mathoverflow235893.mathoverflow_260589`](https://lefttosolve.com/p/Mathoverflow235893.mathoverflow_260589) | Mathoverflow 235893 — mathoverflow 260589 | known | General Topology, Real Functions |  | yes |
+| 11 | [`Mathoverflow31809.mathoverflow_31809`](https://lefttosolve.com/p/Mathoverflow31809.mathoverflow_31809) | Mathoverflow 31809 | known | Category Theory |  |  |
+| 12 | [`Mathoverflow339137.mathoverflow_339137`](https://lefttosolve.com/p/Mathoverflow339137.mathoverflow_339137) | Mathoverflow 339137 | open | Field Theory |  |  |
+| 13 | [`Mathoverflow339137.mathoverflow_339137_probabilistic`](https://lefttosolve.com/p/Mathoverflow339137.mathoverflow_339137_probabilistic) | Mathoverflow 339137 — mathoverflow 339137 probabilistic | warmup | Probability |  | yes |
+| 14 | [`Mathoverflow34145.rectangles_cover_unit_square`](https://lefttosolve.com/p/Mathoverflow34145.rectangles_cover_unit_square) | Mathoverflow 34145 — rectangles cover unit square | open | Geometry |  |  |
+| 15 | [`Mathoverflow34145.rectangles_pack_square_133_div_132`](https://lefttosolve.com/p/Mathoverflow34145.rectangles_pack_square_133_div_132) | Mathoverflow 34145 — rectangles pack square 133 div 132 | known | Geometry |  | yes |
+| 16 | [`Mathoverflow34145.rectangles_pack_square_501_div_500`](https://lefttosolve.com/p/Mathoverflow34145.rectangles_pack_square_501_div_500) | Mathoverflow 34145 — rectangles pack square 501 div 500 | known | Geometry |  | yes |
+| 17 | [`Mathoverflow34145.rectangles_pack_unit_square`](https://lefttosolve.com/p/Mathoverflow34145.rectangles_pack_unit_square) | Mathoverflow 34145 — rectangles pack unit square | open | Geometry |  |  |
+| 18 | [`Mathoverflow486451.exists_semiring_unique_left_maximal_not_unique_right_maximal`](https://lefttosolve.com/p/Mathoverflow486451.exists_semiring_unique_left_maximal_not_unique_right_maximal) | Mathoverflow 486451 | known | Associative Rings |  | yes |
+| 19 | [`Mathoverflow508539.mathoverflow_508539`](https://lefttosolve.com/p/Mathoverflow508539.mathoverflow_508539) | MathOverflow 508539 | known | Combinatorics |  | yes |
+| 20 | [`Mathoverflow75792.complexity_three_pow`](https://lefttosolve.com/p/Mathoverflow75792.complexity_three_pow) | Mathoverflow 75792 — complexity three pow | known | Number Theory |  | yes |
+| 21 | [`Mathoverflow75792.complexity_two_pow`](https://lefttosolve.com/p/Mathoverflow75792.complexity_two_pow) | Mathoverflow 75792 — complexity two pow | open | Number Theory |  |  |

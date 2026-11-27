@@ -1,6 +1,6 @@
 # The Sunflower Conjecture
 
-> **Atlas Rank #67** · CSS **58.3** · Field: *Extremal Combinatorics* · Posed: **1960** · Status: `active-progress`
+> **Atlas Rank #80** · CSS **58.3** · Field: *Extremal Combinatorics* · Posed: **1960** · Status: `active-progress`
 
 ## Plain statement
 

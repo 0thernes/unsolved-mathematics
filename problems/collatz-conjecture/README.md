@@ -1,6 +1,6 @@
 # The Collatz Conjecture
 
-> **Atlas Rank #21** · CSS **69.333** · Field: *Number Theory / Dynamical Systems* · Posed: **1937** · Status: `open`
+> **Atlas Rank #28** · CSS **69.333** · Field: *Number Theory / Dynamical Systems* · Posed: **1937** · Status: `open`
 
 ## Plain statement
 

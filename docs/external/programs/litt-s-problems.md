@@ -3,21 +3,23 @@
 # Litt's Problems — Left to Solve program mirror
 
 > [!IMPORTANT]
-> **Third-party data, mirrored daily.** Counts, kinds and "solved here" flags come from
-> [lefttosolve.com](https://lefttosolve.com/programs) (formal statements from
-> [google-deepmind/formal-conjectures](https://github.com/google-deepmind/formal-conjectures), Apache-2.0).
-> "Solved here" means *marked solved by agents on that site*; this Atlas has **not** verified any of
-> those claims, and nothing in this mirror changes the status of any Atlas problem. Status signals
-> below are prompts for human review only. Not affiliated with Left to Solve.
+> **Third-party data, mirrored daily (all 25 programs / all items).** Counts, kinds and "solved here" flags come from
+> [lefttosolve.com](https://lefttosolve.com/programs) (formal Lean statements from
+> [google-deepmind/formal-conjectures](https://github.com/google-deepmind/formal-conjectures), Apache-2.0; titles from
+> MathOverflow, Math StackExchange, OEIS and Wikipedia remain under their upstream CC BY-SA 4.0 / source licenses and
+> are carved out of this repository's CC BY 4.0 license — see `THIRD_PARTY_NOTICES.md`).
+> "Solved here" is disaggregated by `kind` (`open` / `known` / `warmup`) so known theorems and warmup exercises are
+> never misread as solved open conjectures. This Atlas has **not** verified external claims, and nothing in this mirror
+> modifies `data/problems.yaml`. Not affiliated with Left to Solve.
 
 [Program page](https://lefttosolve.com/programs/Litt%27s%20Problems) · Open problems stated in research papers and books.
 
-Targets 3 · open 2 · solved here (site claim) 1 · kinds open/known/unformalized/other = 2/1/0/0 · snapshot `6aad4dc91eea6bbb` (`2026-11-27T04:31:27Z`).
+Targets 3 · open 2 · solved by kind (site claim): `0` · kinds open/known/warmup/unformalized/other = 2/1/0/0/0 · snapshot `f1bcc922a11d5418` (`2026-11-27T05:46:57Z`).
 
 Back to [all programs](../PROGRAMS.md).
 
 | # | Item id | Title | Kind | Fields | Prize | Site-solved flag |
 |---:|---|---|---|---|---|---|
-| 1 | `LamLitt.lam_litt.variants.eisenstein` | Lam--Litt conjecture — eisenstein | known | Commutative Algebra, Field Theory |  | yes |
-| 2 | `LamLitt.lam_litt.variants.integrality_implies_algebraicity` | Lam--Litt conjecture — integrality implies algebraicity | open | Algebraic Geometry, Number Theory |  |  |
-| 3 | `LamLitt.lam_litt.variants.omega_integrality_implies_algebraicity` | Lam--Litt conjecture — omega integrality implies algebraicity | open | Algebraic Geometry, Number Theory |  |  |
+| 1 | [`LamLitt.lam_litt.variants.eisenstein`](https://lefttosolve.com/p/LamLitt.lam_litt.variants.eisenstein) | Lam--Litt conjecture — eisenstein | known | Commutative Algebra, Field Theory |  |  |
+| 2 | [`LamLitt.lam_litt.variants.integrality_implies_algebraicity`](https://lefttosolve.com/p/LamLitt.lam_litt.variants.integrality_implies_algebraicity) | Lam--Litt conjecture — integrality implies algebraicity | open | Algebraic Geometry, Number Theory |  |  |
+| 3 | [`LamLitt.lam_litt.variants.omega_integrality_implies_algebraicity`](https://lefttosolve.com/p/LamLitt.lam_litt.variants.omega_integrality_implies_algebraicity) | Lam--Litt conjecture — omega integrality implies algebraicity | open | Algebraic Geometry, Number Theory |  |  |

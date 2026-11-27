@@ -1,0 +1,30 @@
+{
+  "slug": "class-number-problem-real-quadratic",
+  "title": "Gauss's Class Number Problem for Real Quadratic Fields",
+  "field": "Number Theory",
+  "subfields": [
+    "Algebraic Number Theory",
+    "Quadratic Forms",
+    "L-functions"
+  ],
+  "year_posed": 1801,
+  "originators": [
+    "Carl Friedrich Gauss"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Are there infinitely many real quadratic number fields Q(sqrt(d)) (with d > 0 squarefree) whose ideal class number h(d) equals 1 (equivalently, whose ring of integers is a unique factorization domain)?\n",
+  "difficulty": 91,
+  "centrality": 78,
+  "tractability": 14,
+  "status": "open",
+  "tags": [
+    "class-number",
+    "real-quadratic-fields",
+    "Gauss",
+    "algebraic-number-theory",
+    "Dirichlet-class-number-formula"
+  ],
+  "rank": 4,
+  "css": 83.4,
+  "folder": "class-number-problem-real-quadratic"
+}

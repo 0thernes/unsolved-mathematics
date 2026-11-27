@@ -1,6 +1,6 @@
 # Grothendieck's Section Conjecture
 
-> **Atlas Rank #39** · CSS **64.167** · Field: *Arithmetic Geometry* · Posed: **1983** · Status: `open`
+> **Atlas Rank #50** · CSS **64.167** · Field: *Arithmetic Geometry* · Posed: **1983** · Status: `open`
 
 ## Plain statement
 

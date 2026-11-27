@@ -1,6 +1,6 @@
 # The Cycle Double Cover Conjecture
 
-> **Atlas Rank #75** · CSS **57.033** · Field: *Graph Theory* · Posed: **1973** · Status: `open`
+> **Atlas Rank #88** · CSS **57.033** · Field: *Graph Theory* · Posed: **1973** · Status: `open`
 
 ## Plain statement
 

@@ -1,0 +1,30 @@
+{
+  "slug": "cramer-conjecture",
+  "title": "Cramér's Conjecture on Prime Gaps",
+  "field": "Analytic Number Theory",
+  "subfields": [
+    "Distribution of Primes",
+    "Probabilistic Number Theory",
+    "Sieve Theory"
+  ],
+  "year_posed": 1936,
+  "originators": [
+    "Harald Cramér"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Let p_n be the n-th prime. Cramér's conjecture asserts that the gap between consecutive primes satisfies p_{n+1} - p_n = O((log p_n)^2) — and in Cramér's stronger 1936 probabilistic formulation, limsup_{n -> infty} (p_{n+1} - p_n) / (log p_n)^2 = 1 (though Granville's 1995 heuristic suggests >= 2 e^{-gamma} ~ 1.1229).\n",
+  "difficulty": 91,
+  "centrality": 77,
+  "tractability": 12,
+  "status": "open",
+  "tags": [
+    "prime-gaps",
+    "Cramer-model",
+    "primes",
+    "analytic-number-theory",
+    "Granville"
+  ],
+  "rank": 18,
+  "css": 74.3,
+  "folder": "cramer-conjecture"
+}

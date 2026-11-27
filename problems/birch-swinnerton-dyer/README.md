@@ -1,6 +1,6 @@
 # The Birch and Swinnerton-Dyer Conjecture
 
-> **Atlas Rank #7** · CSS **78.867** · Field: *Number Theory* · Posed: **1965** · Status: `open`  · 🏛️ **Millennium Prize Problem**
+> **Atlas Rank #8** · CSS **78.867** · Field: *Number Theory* · Posed: **1965** · Status: `open`  · 🏛️ **Millennium Prize Problem**
 
 ## Plain statement
 

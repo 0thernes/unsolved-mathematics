@@ -1,6 +1,6 @@
 # The Eilenberg–Ganea Conjecture
 
-> **Atlas Rank #83** · CSS **56.2** · Field: *Algebraic Topology* · Posed: **1957** · Status: `open`
+> **Atlas Rank #96** · CSS **56.2** · Field: *Algebraic Topology* · Posed: **1957** · Status: `open`
 
 ## Plain statement
 

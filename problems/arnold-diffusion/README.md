@@ -1,6 +1,6 @@
 # Arnold Diffusion (Genericity)
 
-> **Atlas Rank #44** · CSS **62.933** · Field: *Dynamical Systems* · Posed: **1964** · Status: `active-progress`
+> **Atlas Rank #55** · CSS **62.933** · Field: *Dynamical Systems* · Posed: **1964** · Status: `active-progress`
 
 ## Plain statement
 

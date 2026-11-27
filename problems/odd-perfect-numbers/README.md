@@ -1,6 +1,6 @@
 # Existence of Odd Perfect Numbers
 
-> **Atlas Rank #8** · CSS **78.3** · Field: *Number Theory* · Posed: **300 BCE** · Status: `open`
+> **Atlas Rank #9** · CSS **78.3** · Field: *Number Theory* · Posed: **300 BCE** · Status: `open`
 
 ## Plain statement
 

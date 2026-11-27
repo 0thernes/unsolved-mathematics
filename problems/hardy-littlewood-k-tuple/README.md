@@ -1,6 +1,6 @@
 # The Hardy–Littlewood k-tuple Conjecture
 
-> **Atlas Rank #20** · CSS **69.567** · Field: *Analytic Number Theory* · Posed: **1923** · Status: `active-progress`
+> **Atlas Rank #27** · CSS **69.567** · Field: *Analytic Number Theory* · Posed: **1923** · Status: `active-progress`
 
 ## Plain statement
 

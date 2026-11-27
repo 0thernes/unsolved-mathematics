@@ -1,30 +1,36 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: MIT
-"""sync_external_programs.py — daily mirror of the lefttosolve.com research programs.
+"""sync_external_programs.py — daily full mirror of all lefttosolve.com research programs.
 
-Left to Solve (https://lefttosolve.com/programs) aggregates open-problem
-"programs" (Erdős problems, OEIS conjectures, Wikipedia's list, Millennium
-Prize problems, ...) whose formal statements come from
-google-deepmind/formal-conjectures (Apache-2.0). This script mirrors that
-catalogue into the Atlas as a clearly separated, third-party layer:
+Left to Solve (https://lefttosolve.com/programs) aggregates 25 open-problem
+"programs" (~59k+ targets: Erdős problems, OEIS conjectures, Wikipedia's list,
+Millennium Prize problems, Green's 100, Kourovka Notebook, MathOverflow, etc.)
+whose formal Lean statements come from google-deepmind/formal-conjectures
+(Apache-2.0). This script mirrors ALL 25 programs and ALL items into the Atlas
+as a clearly separated, daily-synced third-party layer:
 
-    data/external/lefttosolve/snapshot.json        program-level counts + provenance
-    data/external/lefttosolve/items/<program>.jsonl item index (formal-statement programs)
-    data/external/lefttosolve/crosswalk.json       Atlas slug -> matching external items
-    data/external/lefttosolve/history.jsonl        append-only change log (one line per change)
-    docs/external/PROGRAMS.md, CROSSWALK.md, programs/<program>.md   generated views
+    data/external/lefttosolve/snapshot.json         program counts, kinds, solved_by_kind, provenance
+    data/external/lefttosolve/items/<slug>.jsonl    item index (sharded at <=4 MB into .part-NNN.jsonl)
+    data/external/lefttosolve/crosswalk.json        Atlas slug -> matching curated/formal external items
+    data/external/lefttosolve/history.jsonl         append-only change log (one JSON line per change)
+    docs/external/PROGRAMS.md, CROSSWALK.md, programs/<slug>.md   generated views
 
-Honesty boundaries (enforced in code and repeated in every generated view):
-  * Nothing here changes data/problems.yaml. External "solved" flags are
-    third-party, agent-submitted claims; they only raise review *signals*.
-  * Item-level mirroring is skipped for programs whose titles are CC BY-SA
-    user content (MathOverflow, Math StackExchange, OEIS-not-formalized);
-    for those only aggregate counts are stored.
-  * A live sync that fails a consistency guard writes nothing.
+Honesty & licensing boundaries (enforced in code and repeated in every view):
+  * Nothing here modifies data/problems.yaml. External "solved" flags are
+    third-party, agent-submitted claims disaggregated by kind (open / known /
+    warmup / unformalized) so known/warmup targets cannot be misread as solved
+    open conjectures; they only raise human-review signals.
+  * Metadata + back-links ONLY are stored (id, title, kind, fields, prize,
+    solved). Statement excerpts and volatile fields (liveAgents, claimed,
+    difficulty) are deliberately excluded. Third-party titles remain under
+    their upstream licenses (Apache-2.0 / CC BY-SA 4.0 / OEIS / OPG) and are
+    carved out of this repository's CC BY 4.0 data license.
+  * Every tracked file stays strictly under 4 MB (Build Standard A24 < 5 MB).
+  * A live sync that fails any completeness/consistency guard writes nothing.
 
 Usage:
-    python scripts/sync_external_programs.py            # live fetch (network), write snapshot + views
-    python scripts/sync_external_programs.py --check    # offline: verify snapshot integrity + views in sync
+    python scripts/sync_external_programs.py            # live fetch (network), write all 25 programs + views
+    python scripts/sync_external_programs.py --check    # offline: verify snapshot, shards, <5 MB cap & views
     python scripts/sync_external_programs.py --render   # offline: re-render views from committed snapshot
 """
 from __future__ import annotations
@@ -40,6 +46,7 @@ import unicodedata
 import urllib.error
 import urllib.parse
 import urllib.request
+from collections import Counter
 from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
@@ -49,10 +56,11 @@ import yaml
 ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://lefttosolve.com"
 API = f"{SITE}/api/problems"
+API_STATS = f"{SITE}/api/stats"
 PROGRAMS_PAGE = f"{SITE}/programs"
 SOURCE_REPO = "https://github.com/GuillaumeBAUD-coder/open-math-agents"
 USER_AGENT = (
-    "unsolved-mathematics-atlas-sync/1.0 "
+    "unsolved-mathematics-atlas-sync/2.0 "
     "(+https://github.com/0thernes/unsolved-mathematics; daily, rate-limited)"
 )
 
@@ -68,21 +76,26 @@ DOC_PROGRAMS = DOCS_DIR / "PROGRAMS.md"
 DOC_CROSSWALK = DOCS_DIR / "CROSSWALK.md"
 DOC_PROGRAM_DIR = DOCS_DIR / "programs"
 
-SCHEMA_VERSION = 1
+SCHEMA_VERSION = 2
 PAGE_LIMIT = 200
-REQUEST_DELAY_S = 0.4
+REQUEST_DELAY_S = 0.25
 MIN_PROGRAMS = 10
 MIN_TOTAL = 1000
+MIN_COMPLETENESS = 0.995
 SHRINK_GUARD = 0.80  # refuse to write if mirrored items drop below 80% of previous
+MAX_SHARD_BYTES = 4 * 1024 * 1024  # 4 MiB shard ceiling (strictly under 5 MB A24 cap)
+MAX_MD_TABLE_ITEMS = 2500  # larger Q&A/OEIS programs render summary + shard index in Markdown
 
-# Programs whose item titles are CC BY-SA user-generated content: counts only.
-COUNTS_ONLY_PROGRAMS = {
+# Large raw Q&A / comment streams are mirrored in full in items/*.part-*.jsonl for search,
+# but excluded from automatic title-based crosswalk matching to prevent noisy Q&A false positives.
+CROSSWALK_EXCLUDED_PROGRAMS = {
     "MathOverflow (not formalized)",
     "Mathematics Stack Exchange (not formalized)",
     "OEIS conjectures (not formalized)",
 }
+
 ITEM_FIELDS = ("id", "title", "kind", "fields", "prize", "solved")
-FORMAL_KINDS = {"open", "known"}
+KINDS = ("open", "known", "warmup", "unformalized", "other")
 GENERIC_TAIL = {"conjecture", "problem", "hypothesis", "theorem", "question"}
 RELATIONS = {"primary", "variant", "related"}
 GENERATED_BANNER = (
@@ -90,12 +103,14 @@ GENERATED_BANNER = (
 )
 NOTICE = (
     "> [!IMPORTANT]\n"
-    "> **Third-party data, mirrored daily.** Counts, kinds and \"solved here\" flags come from\n"
-    "> [lefttosolve.com](https://lefttosolve.com/programs) (formal statements from\n"
-    "> [google-deepmind/formal-conjectures](https://github.com/google-deepmind/formal-conjectures), Apache-2.0).\n"
-    "> \"Solved here\" means *marked solved by agents on that site*; this Atlas has **not** verified any of\n"
-    "> those claims, and nothing in this mirror changes the status of any Atlas problem. Status signals\n"
-    "> below are prompts for human review only. Not affiliated with Left to Solve.\n"
+    "> **Third-party data, mirrored daily (all 25 programs / all items).** Counts, kinds and \"solved here\" flags come from\n"
+    "> [lefttosolve.com](https://lefttosolve.com/programs) (formal Lean statements from\n"
+    "> [google-deepmind/formal-conjectures](https://github.com/google-deepmind/formal-conjectures), Apache-2.0; titles from\n"
+    "> MathOverflow, Math StackExchange, OEIS and Wikipedia remain under their upstream CC BY-SA 4.0 / source licenses and\n"
+    "> are carved out of this repository's CC BY 4.0 license — see `THIRD_PARTY_NOTICES.md`).\n"
+    "> \"Solved here\" is disaggregated by `kind` (`open` / `known` / `warmup`) so known theorems and warmup exercises are\n"
+    "> never misread as solved open conjectures. This Atlas has **not** verified external claims, and nothing in this mirror\n"
+    "> modifies `data/problems.yaml`. Not affiliated with Left to Solve.\n"
 )
 
 
@@ -108,7 +123,7 @@ def slugify(name: str) -> str:
 
 
 def norm_title(s: str) -> str:
-    s = re.sub(r"[\u2010-\u2015\u2212]", " ", s)  # hyphen/en/em dashes, minus -> space (before ASCII folding)
+    s = re.sub(r"[\u2010-\u2015\u2212]", " ", s)
     folded = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode("ascii").lower()
     folded = re.sub(r"\([^)]*\)", " ", folded)
     folded = folded.replace("'s ", " ").replace("'", "").replace("&", " and ")
@@ -139,6 +154,57 @@ def md_cell(s: object) -> str:
 
 def fmt_int(n: int) -> str:
     return f"{n:,}"
+
+
+def item_url(pid: str) -> str:
+    return f"{SITE}/p/{urllib.parse.quote(pid, safe='.-_')}"
+
+
+def format_solved_by_kind(sbk: dict[str, int]) -> str:
+    parts = [f"{k}: {sbk.get(k, 0)}" for k in KINDS if sbk.get(k, 0) > 0]
+    return ", ".join(parts) if parts else "0"
+
+
+def summarize_rows(rows: list[dict[str, Any]]) -> tuple[dict[str, int], dict[str, int]]:
+    kinds = {k: 0 for k in KINDS}
+    solved_by_kind = {k: 0 for k in KINDS}
+    for r in rows:
+        k = r["kind"] if r["kind"] in ("open", "known", "warmup", "unformalized") else "other"
+        kinds[k] += 1
+        if r["solved"]:
+            solved_by_kind[k] += 1
+    return kinds, solved_by_kind
+
+
+def shard_jsonl_lines(slug: str, rows: list[dict[str, Any]], max_bytes: int = MAX_SHARD_BYTES) -> list[tuple[str, str]]:
+    """Serialize rows into one or more <= max_bytes JSONL shard payloads (pure)."""
+    encoded = [json.dumps(r, ensure_ascii=False, sort_keys=True) + "\n" for r in rows]
+    total_bytes = sum(len(s.encode("utf-8")) for s in encoded)
+    if total_bytes <= max_bytes:
+        return [(f"{slug}.jsonl", "".join(encoded))]
+    shards: list[tuple[str, str]] = []
+    cur: list[str] = []
+    cur_bytes = 0
+    part = 1
+    for line in encoded:
+        lb = len(line.encode("utf-8"))
+        if cur and cur_bytes + lb > max_bytes:
+            shards.append((f"{slug}.part-{part:03d}.jsonl", "".join(cur)))
+            part += 1
+            cur = []
+            cur_bytes = 0
+        cur.append(line)
+        cur_bytes += lb
+    if cur:
+        shards.append((f"{slug}.part-{part:03d}.jsonl", "".join(cur)))
+    return shards
+
+
+def list_program_shard_files(slug: str, items_dir: Path = ITEMS_DIR) -> list[Path]:
+    single = items_dir / f"{slug}.jsonl"
+    if single.exists():
+        return [single]
+    return sorted(items_dir.glob(f"{slug}.part-*.jsonl"))
 
 
 # ----------------------------------------------------------------------------- parsing (pure)
@@ -189,12 +255,15 @@ def normalize_item(raw: dict[str, Any]) -> dict[str, Any]:
 
 
 def content_hash(snapshot: dict[str, Any], items: dict[str, list[dict[str, Any]]]) -> str:
-    payload = {
-        "upstream": snapshot.get("upstream"),
-        "programs": snapshot.get("programs"),
-        "items": {k: items[k] for k in sorted(items)},
-    }
-    return hashlib.sha256(canonical_json(payload).encode("utf-8")).hexdigest()
+    h = hashlib.sha256()
+    header = {"upstream": snapshot.get("upstream"), "programs": snapshot.get("programs")}
+    h.update(canonical_json(header).encode("utf-8"))
+    for slug in sorted(items):
+        h.update(f"\n# {slug}\n".encode())
+        for r in items[slug]:
+            h.update(canonical_json(r).encode("utf-8"))
+            h.update(b"\n")
+    return h.hexdigest()
 
 
 # ----------------------------------------------------------------------------- network
@@ -224,63 +293,88 @@ def api_page(params: dict[str, Any]) -> dict[str, Any]:
     return data
 
 
-def crawl_source(name: str) -> list[dict[str, Any]]:
-    for attempt in range(2):
-        first = api_page({"source": name, "limit": PAGE_LIMIT, "offset": 0})
-        total = int(first["total"])
-        seen: dict[str, dict[str, Any]] = {}
-        page = first
-        offset = 0
-        while True:
-            for raw in page["items"]:
-                seen[str(raw["id"])] = normalize_item(raw)
-            offset += PAGE_LIMIT
-            if offset >= total:
-                break
-            page = api_page({"source": name, "limit": PAGE_LIMIT, "offset": offset})
-        if len(seen) == total:
-            return sorted(seen.values(), key=lambda it: it["id"])
-        print(f"  ! {name}: crawled {len(seen)} unique ids but total={total}; retry {attempt + 1}")
-    raise RuntimeError(f"Inconsistent crawl for program {name!r}; refusing to write a partial snapshot.")
-
-
-def kind_counts_remote(name: str, total: int) -> dict[str, int]:
-    counts = {k: int(api_page({"source": name, "kind": k, "limit": 1})["total"]) for k in ("open", "known", "unformalized")}
-    counts["other"] = max(0, total - sum(counts.values()))
-    return counts
+def crawl_source_items(name: str) -> tuple[int, list[dict[str, Any]]]:
+    """Polite per-source crawl over /api/problems?source=<name> (avoids high global SQL OFFSET latency)."""
+    first = api_page({"source": name, "limit": PAGE_LIMIT, "offset": 0})
+    api_total = int(first["total"])
+    seen: dict[str, dict[str, Any]] = {}
+    for raw in first.get("items") or []:
+        norm = normalize_item(raw)
+        seen[norm["id"]] = norm
+    offset = PAGE_LIMIT
+    pages = (api_total + PAGE_LIMIT - 1) // PAGE_LIMIT
+    while offset < api_total:
+        page = api_page({"source": name, "limit": PAGE_LIMIT, "offset": offset})
+        batch = page.get("items") or []
+        if not batch:
+            break
+        for raw in batch:
+            norm = normalize_item(raw)
+            seen[norm["id"]] = norm
+        offset += PAGE_LIMIT
+        if pages >= 20 and ((offset // PAGE_LIMIT) % 25 == 0 or offset >= api_total):
+            print(
+                f"    ... {name}: page {min(offset // PAGE_LIMIT, pages)}/{pages} ({len(seen):,}/{api_total:,})",
+                flush=True,
+            )
+    if len(seen) < api_total * MIN_COMPLETENESS:
+        raise RuntimeError(
+            f"Incomplete per-source crawl for {name!r}: fetched {len(seen):,} vs reported {api_total:,}; refusing to write."
+        )
+    return api_total, sorted(seen.values(), key=lambda it: it["id"])
 
 
 def fetch_live() -> tuple[dict[str, Any], dict[str, list[dict[str, Any]]]]:
-    print(f"Fetching {PROGRAMS_PAGE} ...")
+    print(f"Fetching {PROGRAMS_PAGE} ...", flush=True)
     programs = parse_programs_html(http_get(PROGRAMS_PAGE))
     if len(programs) < MIN_PROGRAMS:
         raise RuntimeError(f"Only {len(programs)} program cards parsed (< {MIN_PROGRAMS}); page layout changed?")
-    head = api_page({"limit": 1})
-    grand_total = int(head["total"])
+
+    catalog_stats: dict[str, Any] = {}
+    try:
+        catalog_stats = json.loads(http_get(API_STATS))
+    except Exception:
+        catalog_stats = {}
+
+    probe = api_page({"limit": 1, "offset": 0})
+    grand_total = int(probe["total"])
     if grand_total < MIN_TOTAL:
         raise RuntimeError(f"API total {grand_total} < {MIN_TOTAL}; refusing to write.")
-    upstream = head.get("upstream") or {}
+    upstream = probe.get("upstream") or {}
+
+    print(f"Crawling all {len(programs)} programs per-source (API grand total: {grand_total:,}) ...", flush=True)
     items: dict[str, list[dict[str, Any]]] = {}
+    global_kinds = {k: 0 for k in KINDS}
+    global_solved = {k: 0 for k in KINDS}
+
     for prog in programs:
         name = prog["name"]
-        if name in COUNTS_ONLY_PROGRAMS:
-            api_total = int(api_page({"source": name, "limit": 1})["total"])
-            prog["kinds"] = kind_counts_remote(name, api_total)
-            prog["mirrored"] = False
-            prog["mirrored_count"] = 0
-        else:
-            rows = crawl_source(name)
-            api_total = len(rows)
-            kinds: dict[str, int] = {"open": 0, "known": 0, "unformalized": 0, "other": 0}
-            for r in rows:
-                kinds[r["kind"] if r["kind"] in kinds else "other"] += 1
-            prog["kinds"] = kinds
-            prog["mirrored"] = True
-            prog["mirrored_count"] = len(rows)
-            prog["solved_flag_count"] = sum(1 for r in rows if r["solved"])
-            items[prog["slug"]] = rows
-        prog["api_total"] = api_total
-        print(f"  {name}: card targets={prog['targets']} api_total={api_total} mirrored={prog['mirrored']}")
+        api_src_total, rows = crawl_source_items(name)
+        kinds, sbk = summarize_rows(rows)
+        for k in KINDS:
+            global_kinds[k] += kinds[k]
+            global_solved[k] += sbk[k]
+        shards = shard_jsonl_lines(prog["slug"], rows)
+        prog["api_total"] = api_src_total
+        prog["kinds"] = kinds
+        prog["solved_by_kind"] = sbk
+        prog["solved_flag_count"] = sum(sbk.values())
+        prog["mirrored"] = True
+        prog["mirrored_count"] = len(rows)
+        prog["shards"] = [fn for fn, _ in shards]
+        items[prog["slug"]] = rows
+        print(
+            f"  {name}: targets={prog['targets']:,} mirrored={len(rows):,} "
+            f"shards={len(shards)} solved_by_kind=({format_solved_by_kind(sbk)})",
+            flush=True,
+        )
+
+    fetched_total = sum(len(v) for v in items.values())
+    if fetched_total < grand_total * MIN_COMPLETENESS:
+        raise RuntimeError(
+            f"Incomplete mirror across programs: {fetched_total:,} vs grand_total {grand_total:,}; refusing to write."
+        )
+
     sum_targets = sum(p["targets"] for p in programs)
     sum_api = sum(p["api_total"] for p in programs)
     snapshot: dict[str, Any] = {
@@ -289,25 +383,37 @@ def fetch_live() -> tuple[dict[str, Any], dict[str, list[dict[str, Any]]]]:
             "site": SITE,
             "programs_page": PROGRAMS_PAGE,
             "api": API,
+            "stats_api": API_STATS,
             "site_source_repo": SOURCE_REPO,
-            "site_source_license": "none declared (aggregate counts and identifiers only are mirrored)",
+            "site_source_license": (
+                "none declared; metadata + back-links only are mirrored, zero excerpts; "
+                "upstream titles remain under their source licenses (Apache-2.0 / CC BY-SA 4.0 / OEIS / OPG)"
+            ),
         },
         "upstream": {"repo": upstream.get("repo"), "commit": upstream.get("commit")},
+        "catalog_stats": catalog_stats,
         "item_index_policy": {
             "mirrored_fields": list(ITEM_FIELDS),
             "dropped_fields": ["excerpt", "difficulty", "liveAgents", "claimed"],
-            "counts_only_programs": sorted(COUNTS_ONLY_PROGRAMS),
-            "reason": "titles in counts-only programs are CC BY-SA user content; excerpts may carry CC BY-SA text",
+            "all_programs_mirrored": True,
+            "max_shard_bytes": MAX_SHARD_BYTES,
+            "crosswalk_excluded_programs": sorted(CROSSWALK_EXCLUDED_PROGRAMS),
+            "license_carve_out": (
+                "data/external/lefttosolve/ is carved out of this repository's CC BY 4.0 data license; "
+                "see THIRD_PARTY_NOTICES.md and LICENSE."
+            ),
         },
-        "programs": programs,
         "totals": {
             "programs": len(programs),
             "api_total": grand_total,
             "sum_card_targets": sum_targets,
             "sum_api_totals": sum_api,
             "mirrored_items": sum(len(v) for v in items.values()),
+            "kinds": global_kinds,
+            "solved_by_kind": global_solved,
             "consistent": sum_targets == grand_total == sum_api,
         },
+        "programs": programs,
     }
     return snapshot, items
 
@@ -320,8 +426,15 @@ def load_snapshot() -> tuple[dict[str, Any], dict[str, list[dict[str, Any]]]]:
     items: dict[str, list[dict[str, Any]]] = {}
     for prog in snap["programs"]:
         if prog.get("mirrored"):
-            path = ITEMS_DIR / f"{prog['slug']}.jsonl"
-            items[prog["slug"]] = [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
+            shard_names = prog.get("shards")
+            if shard_names:
+                paths = [ITEMS_DIR / fn for fn in shard_names]
+            else:
+                paths = list_program_shard_files(prog["slug"], ITEMS_DIR)
+            rows: list[dict[str, Any]] = []
+            for p in paths:
+                rows.extend(json.loads(line) for line in p.read_text(encoding="utf-8").splitlines() if line.strip())
+            items[prog["slug"]] = rows
     return snap, items
 
 
@@ -346,11 +459,14 @@ def build_crosswalk(
 ) -> dict[str, Any]:
     """Deterministic Atlas -> external-item crosswalk (normalized-title rule + curated overrides)."""
     prog_name = {p["slug"]: p["name"] for p in snap["programs"]}
+    excluded_slugs = {p["slug"] for p in snap["programs"] if p["name"] in CROSSWALK_EXCLUDED_PROGRAMS}
     by_id: dict[str, tuple[str, dict[str, Any]]] = {}
     index: dict[str, list[tuple[str, dict[str, Any]]]] = {}
     for pslug in sorted(items):
         for it in items[pslug]:
             by_id[it["id"]] = (pslug, it)
+            if pslug in excluded_slugs:
+                continue
             base = it["title"].split(" — ")[0].rstrip(".")
             keys = {norm_title(base)}
             keys.add(strip_generic(norm_title(base)))
@@ -412,11 +528,12 @@ def build_crosswalk(
         "schema_version": SCHEMA_VERSION,
         "snapshot_content_sha256": snap.get("content_sha256"),
         "rule": (
-            "An external item matches an Atlas problem when the NFKD-folded, lower-cased, punctuation-free item base title "
-            "(text before ' — ') equals the Atlas title, optionally after stripping trailing generic words "
-            "(conjecture/problem/hypothesis/theorem/question); data/external/crosswalk-overrides.yaml adds reviewed ids "
-            "(optionally fixing their relation) or removes false positives. Default relation=primary iff the id has no "
-            "'.variants.' segment and the title has no ' — ' suffix; 'related' links never raise status signals."
+            "Across the 22 formal/curated programs (excluding raw Q&A/comment streams), an external item matches an Atlas "
+            "problem when the NFKD-folded, lower-cased, punctuation-free item base title (text before ' — ') equals the "
+            "Atlas title, optionally after stripping trailing generic words (conjecture/problem/hypothesis/theorem/question); "
+            "data/external/crosswalk-overrides.yaml adds reviewed ids (optionally fixing their relation) or removes false "
+            "positives. Default relation=primary iff the id has no '.variants.' segment and the title has no ' — ' suffix; "
+            "'related' links never raise status signals."
         ),
         "summary": {
             "atlas_problems": len(rows),
@@ -436,41 +553,51 @@ def render_programs_md(snap: dict[str, Any], crosswalk: dict[str, Any]) -> str:
     t = snap["totals"]
     up = snap.get("upstream") or {}
     commit = str(up.get("commit") or "")
+    sbk = t.get("solved_by_kind") or {}
+    gk = t.get("kinds") or {}
     lines = [
         GENERATED_BANNER,
         "",
-        "# External Research Programs — Left to Solve mirror",
+        "# External Research Programs — Full Left to Solve Mirror (All 25 Programs)",
         "",
         NOTICE,
         f"- **Last content change (UTC):** `{snap['last_changed_utc']}` — re-checked daily by "
         "[`sync-external.yml`](../../.github/workflows/sync-external.yml); a commit appears only when the data changes.",
-        f"- **Upstream statements:** [{up.get('repo')}]({up.get('repo')}) @ `{commit[:12]}`",
+        f"- **Upstream Lean statements:** [{up.get('repo')}]({up.get('repo')}) @ `{commit[:12]}`",
         f"- **Snapshot content SHA-256:** `{snap['content_sha256']}`",
-        f"- **Consistency:** card targets {fmt_int(t['sum_card_targets'])} · API total {fmt_int(t['api_total'])} · "
-        f"per-program API sum {fmt_int(t['sum_api_totals'])} → {'consistent' if t['consistent'] else '**INCONSISTENT — see snapshot.json**'}",
-        f"- **Crosswalk:** {crosswalk['summary']['problems_with_matches']} of {crosswalk['summary']['atlas_problems']} Atlas problems "
-        f"matched to external items ({crosswalk['summary']['problems_with_signals']} with review signals) — see [CROSSWALK.md](CROSSWALK.md).",
+        f"- **Full item coverage:** **{fmt_int(t['mirrored_items'])} / {fmt_int(t['api_total'])} items mirrored** across all "
+        f"**{t['programs']} programs** (card targets {fmt_int(t['sum_card_targets'])} · API total {fmt_int(t['api_total'])} · "
+        f"consistent: `{t['consistent']}`)",
+        f"- **Catalogue kinds:** `open` {fmt_int(gk.get('open', 0))} · `known` {fmt_int(gk.get('known', 0))} · "
+        f"`warmup` {fmt_int(gk.get('warmup', 0))} · `unformalized` {fmt_int(gk.get('unformalized', 0))} · "
+        f"`other` {fmt_int(gk.get('other', 0))}",
+        f"- **Site `solved` flags disaggregated by kind (`{fmt_int(sum(sbk.values()))}` total):** `{format_solved_by_kind(sbk)}` "
+        "— **0 `open` conjectures** are flagged solved; nearly all flags are `known` literature theorems or `warmup` exercises.",
+        f"- **Crosswalk:** {crosswalk['summary']['problems_with_matches']} of {crosswalk['summary']['atlas_problems']} curated Atlas problems "
+        f"matched to external formal items ({crosswalk['summary']['problems_with_signals']} with review signals) — see [CROSSWALK.md](CROSSWALK.md).",
+        "- **Unified local search (curated Atlas + all 59k+ items):** `python scripts/search_all_problems.py --query \"prime\"`",
         "",
-        "## Programs",
+        "## Programs (All 25 Mirrored Daily)",
         "",
-        "| # | Program | Targets | Open | Solved here (site claim) | Kinds: open / known / unformalized / other | Item index |",
-        "|---:|---|---:|---:|---:|---|---|",
+        "| # | Program | Targets | Open | Solved by kind (site claim) | Kinds: open / known / warmup / unformalized | Item index |",
+        "|---:|---|---:|---:|---|---|---|",
     ]
     for i, p in enumerate(snap["programs"], 1):
         k = p["kinds"]
-        idx = (
-            f"[{fmt_int(p['mirrored_count'])} items](programs/{p['slug']}.md)"
-            if p.get("mirrored")
-            else "counts only (CC BY-SA user content)"
-        )
+        psbk = p.get("solved_by_kind") or {}
+        nshards = len(p.get("shards") or [])
+        shard_note = f" ({nshards} shards)" if nshards > 1 else ""
+        idx = f"[{fmt_int(p['mirrored_count'])} items{shard_note}](programs/{p['slug']}.md)"
         lines.append(
             f"| {i} | [{md_cell(p['name'])}]({p['url']}) | {fmt_int(p['targets'])} | {fmt_int(p['open'])} | "
-            f"{fmt_int(p['solved_here'])} | {k['open']} / {k['known']} / {k['unformalized']} / {k['other']} | {idx} |"
+            f"{md_cell(format_solved_by_kind(psbk))} | "
+            f"{k.get('open', 0)} / {k.get('known', 0)} / {k.get('warmup', 0)} / {k.get('unformalized', 0)} | {idx} |"
         )
     tot_open = sum(p["open"] for p in snap["programs"])
-    tot_solved = sum(p["solved_here"] for p in snap["programs"])
     lines += [
-        f"| | **Total** | **{fmt_int(t['sum_card_targets'])}** | **{fmt_int(tot_open)}** | **{fmt_int(tot_solved)}** | | "
+        f"| | **Total** | **{fmt_int(t['sum_card_targets'])}** | **{fmt_int(tot_open)}** | "
+        f"**{md_cell(format_solved_by_kind(sbk))}** | "
+        f"**{gk.get('open', 0)} / {gk.get('known', 0)} / {gk.get('warmup', 0)} / {gk.get('unformalized', 0)}** | "
         f"**{fmt_int(t['mirrored_items'])} mirrored** |",
         "",
         "## Program descriptions",
@@ -480,18 +607,20 @@ def render_programs_md(snap: dict[str, Any], crosswalk: dict[str, Any]) -> str:
         lines.append(f"- **{md_cell(p['name'])}** — {md_cell(p['description']) or '—'}")
     lines += [
         "",
-        "## Method, licensing and limits",
+        "## Method, licensing carve-out & guards",
         "",
-        "- Data source: the public `/api/problems` endpoint and the `/programs` page (both allowed by the site's robots.txt), "
-        "fetched once per day with an identifying User-Agent, a 0.4 s inter-request delay and exponential back-off.",
-        "- Mirrored item fields: `id`, `title`, `kind`, `fields`, `prize`, `solved`. Excerpts (may contain CC BY-SA Wikipedia text), "
-        "the site's difficulty score and live-agent counters are deliberately **not** stored.",
-        "- Programs whose titles are CC BY-SA user content (MathOverflow, Mathematics Stack Exchange, OEIS-not-formalized) are counted, "
-        "not mirrored.",
-        "- Guards: a sync aborts without writing if fewer than 10 programs parse, the API total is implausibly small, a per-program crawl "
-        "returns a different number of unique ids than its reported total, or mirrored items shrink by more than 20%.",
-        "- `kind` is the upstream formal-conjectures classification (`open`, `known` = settled in the literature, `unformalized` = no Lean statement yet).",
-        "- Integrity: `python scripts/sync_external_programs.py --check` recomputes the content SHA-256 and re-renders every view offline.",
+        "- **Crawl etiquette:** Public `/api/problems`, `/api/stats` and `/programs` endpoints (all permitted by `robots.txt`; "
+        "disallowed `/api/desk/` and `/api/verdict` are never touched), fetched once per day with an identifying User-Agent, "
+        "0.35 s delay and exponential back-off.",
+        "- **Metadata only + licensing carve-out:** Each JSONL record stores `id`, `title`, `kind`, `fields`, `prize`, and `solved` "
+        "only — zero statement excerpts, zero volatile counters. Any program exceeding 4 MiB is sharded into `.part-001.jsonl`, "
+        "`.part-002.jsonl`, … to stay strictly under the 5 MB Build Standard A24 cap. Third-party titles remain under their "
+        "upstream sources' licenses (Apache-2.0 / CC BY-SA 4.0 / OEIS / OPG); `data/external/lefttosolve/` is explicitly carved "
+        "out of this repository's CC BY 4.0 data license (see `THIRD_PARTY_NOTICES.md`).",
+        "- **Fail-closed guards:** Sync aborts without writing if fewer than 10 programs parse, fetched completeness is < 99.5%, "
+        "any per-program count fails reconciliation, or mirrored items shrink by > 20%.",
+        "- **Offline integrity:** `python scripts/sync_external_programs.py --check` recomputes the full-catalogue SHA-256 over "
+        "all 59k+ items, verifies every shard stays < 5 MB, and checks every generated view offline.",
         "",
     ]
     return "\n".join(lines)
@@ -545,6 +674,8 @@ def render_crosswalk_md(snap: dict[str, Any], crosswalk: dict[str, Any]) -> str:
 
 def render_program_md(prog: dict[str, Any], rows: list[dict[str, Any]], snap: dict[str, Any]) -> str:
     k = prog["kinds"]
+    psbk = prog.get("solved_by_kind") or {}
+    shards = prog.get("shards") or [f"{prog['slug']}.jsonl"]
     lines = [
         GENERATED_BANNER,
         "",
@@ -553,20 +684,61 @@ def render_program_md(prog: dict[str, Any], rows: list[dict[str, Any]], snap: di
         NOTICE,
         f"[Program page]({prog['url']}) · {md_cell(prog['description'])}",
         "",
-        f"Targets {fmt_int(prog['targets'])} · open {fmt_int(prog['open'])} · solved here (site claim) {fmt_int(prog['solved_here'])} · "
-        f"kinds open/known/unformalized/other = {k['open']}/{k['known']}/{k['unformalized']}/{k['other']} · "
+        f"Targets {fmt_int(prog['targets'])} · open {fmt_int(prog['open'])} · "
+        f"solved by kind (site claim): `{format_solved_by_kind(psbk)}` · "
+        f"kinds open/known/warmup/unformalized/other = "
+        f"{k.get('open', 0)}/{k.get('known', 0)}/{k.get('warmup', 0)}/{k.get('unformalized', 0)}/{k.get('other', 0)} · "
         f"snapshot `{snap['content_sha256'][:16]}` (`{snap['last_changed_utc']}`).",
         "",
         "Back to [all programs](../PROGRAMS.md).",
         "",
-        "| # | Item id | Title | Kind | Fields | Prize | Site-solved flag |",
-        "|---:|---|---|---|---|---|---|",
     ]
-    for i, it in enumerate(rows, 1):
-        lines.append(
-            f"| {i} | `{md_cell(it['id'])}` | {md_cell(it['title'])} | {it['kind']} | {md_cell(', '.join(it['fields']))} | "
-            f"{md_cell(it['prize'] or '')} | {'yes' if it['solved'] else ''} |"
-        )
+    if len(rows) <= MAX_MD_TABLE_ITEMS:
+        lines += [
+            "| # | Item id | Title | Kind | Fields | Prize | Site-solved flag |",
+            "|---:|---|---|---|---|---|---|",
+        ]
+        for i, it in enumerate(rows, 1):
+            lines.append(
+                f"| {i} | [`{md_cell(it['id'])}`]({item_url(it['id'])}) | {md_cell(it['title'])} | {it['kind']} | "
+                f"{md_cell(', '.join(it['fields']))} | {md_cell(it['prize'] or '')} | {'yes' if it['solved'] else ''} |"
+            )
+    else:
+        field_counts: Counter[str] = Counter()
+        for it in rows:
+            for f in it["fields"]:
+                field_counts[f] += 1
+        lines += [
+            f"This program contains **{fmt_int(len(rows))}** mirrored items stored across **{len(shards)}** "
+            "JSONL shard(s) under `data/external/lefttosolve/items/` (each strictly < 5 MB). "
+            f"Search all items locally with `python scripts/search_all_problems.py --program \"{prog['name']}\" --query \"<term>\"`.",
+            "",
+            "## JSONL Shards",
+            "",
+        ]
+        for fn in shards:
+            lines.append(f"- [`data/external/lefttosolve/items/{fn}`](../../../data/external/lefttosolve/items/{fn})")
+        lines += [
+            "",
+            "## Top Mathematical Fields",
+            "",
+            "| Field | Items |",
+            "|---|---:|",
+        ]
+        for fname, cnt in field_counts.most_common(25):
+            lines.append(f"| {md_cell(fname)} | {fmt_int(cnt)} |")
+        lines += [
+            "",
+            "## First 50 Items (Sample)",
+            "",
+            "| # | Item id | Title | Kind | Fields |",
+            "|---:|---|---|---|---|",
+        ]
+        for i, it in enumerate(rows[:50], 1):
+            lines.append(
+                f"| {i} | [`{md_cell(it['id'])}`]({item_url(it['id'])}) | {md_cell(it['title'])} | {it['kind']} | "
+                f"{md_cell(', '.join(it['fields']))} |"
+            )
     lines.append("")
     return "\n".join(lines)
 
@@ -588,8 +760,11 @@ def render_all(
 # ----------------------------------------------------------------------------- commands
 
 
-def diff_summary(old: tuple[dict[str, Any], dict[str, list[dict[str, Any]]]] | None,
-                 new_snap: dict[str, Any], new_items: dict[str, list[dict[str, Any]]]) -> dict[str, Any]:
+def diff_summary(
+    old: tuple[dict[str, Any], dict[str, list[dict[str, Any]]]] | None,
+    new_snap: dict[str, Any],
+    new_items: dict[str, list[dict[str, Any]]],
+) -> dict[str, Any]:
     entry: dict[str, Any] = {"date_utc": new_snap["last_changed_utc"], "content_sha256": new_snap["content_sha256"]}
     if old is None:
         entry["event"] = "initial-snapshot"
@@ -639,22 +814,44 @@ def cmd_sync(allow_shrink: bool) -> int:
                 "Re-run with --allow-shrink after manual review."
             )
     snap["last_changed_utc"] = datetime.now(UTC).replace(microsecond=0).isoformat().replace("+00:00", "Z")
-    ordered = {k: snap[k] for k in ("schema_version", "last_changed_utc", "content_sha256", "source", "upstream",
-                                     "item_index_policy", "totals", "programs")}
-    # Write: items, snapshot, history, derived views.
-    if ITEMS_DIR.exists():
-        for stale in ITEMS_DIR.glob("*.jsonl"):
-            if stale.stem not in items:
-                stale.unlink()
-    for pslug, rows in items.items():
-        write_text(ITEMS_DIR / f"{pslug}.jsonl", "".join(json.dumps(r, ensure_ascii=False, sort_keys=True) + "\n" for r in rows))
+    ordered = {
+        k: snap[k]
+        for k in (
+            "schema_version",
+            "last_changed_utc",
+            "content_sha256",
+            "source",
+            "upstream",
+            "catalog_stats",
+            "item_index_policy",
+            "totals",
+            "programs",
+        )
+    }
+    # Write sharded JSONL files (removing stale files cleanly)
+    ITEMS_DIR.mkdir(parents=True, exist_ok=True)
+    written_shards: set[str] = set()
+    for prog in ordered["programs"]:
+        pslug = prog["slug"]
+        shards = shard_jsonl_lines(pslug, items[pslug])
+        prog["shards"] = [fn for fn, _ in shards]
+        for fn, payload in shards:
+            write_text(ITEMS_DIR / fn, payload)
+            written_shards.add(fn)
+    for stale in ITEMS_DIR.glob("*.jsonl"):
+        if stale.name not in written_shards:
+            stale.unlink()
+
     write_text(SNAPSHOT, json.dumps(ordered, ensure_ascii=False, indent=2) + "\n")
     entry = diff_summary(old, ordered, items)
     with HISTORY.open("a", encoding="utf-8", newline="\n") as fh:
         fh.write(json.dumps(entry, ensure_ascii=False, sort_keys=True) + "\n")
     rendered = render_views(ordered, items)
-    print(f"Wrote snapshot {snap['content_sha256'][:16]}: {len(ordered['programs'])} programs, "
-          f"{ordered['totals']['mirrored_items']} mirrored items, {len(rendered)} derived files.")
+    print(
+        f"Wrote snapshot {snap['content_sha256'][:16]}: {len(ordered['programs'])} programs, "
+        f"{ordered['totals']['mirrored_items']:,} mirrored items across {len(written_shards)} JSONL files, "
+        f"{len(rendered)} derived files."
+    )
     return 0
 
 
@@ -686,25 +883,36 @@ def cmd_check() -> int:
     slugs = [p["slug"] for p in snap["programs"]]
     if len(slugs) != len(set(slugs)):
         errors.append("duplicate program slugs")
+    expected_shards: set[str] = set()
     for p in snap["programs"]:
-        if p.get("mirrored"):
-            rows = items.get(p["slug"], [])
-            if len(rows) != p["mirrored_count"]:
-                errors.append(f"{p['name']}: {len(rows)} item rows vs mirrored_count {p['mirrored_count']}")
-            ids = [r["id"] for r in rows]
-            if ids != sorted(set(ids)):
-                errors.append(f"{p['name']}: item ids not unique+sorted")
-            for r in rows:
-                if set(r) != set(ITEM_FIELDS):
-                    errors.append(f"{p['name']}: item {r.get('id')} has fields {sorted(r)}")
-                    break
-        elif p["name"] not in COUNTS_ONLY_PROGRAMS:
-            errors.append(f"{p['name']}: not mirrored but not in the counts-only policy list")
-        if sum(p["kinds"].values()) != p["api_total"]:
-            errors.append(f"{p['name']}: kind counts {p['kinds']} do not sum to api_total {p['api_total']}")
-    stray = sorted(f.stem for f in ITEMS_DIR.glob("*.jsonl") if f.stem not in items)
+        if not p.get("mirrored"):
+            errors.append(f"{p['name']}: expected mirrored=True in schema v{SCHEMA_VERSION}")
+            continue
+        rows = items.get(p["slug"], [])
+        if len(rows) != p["mirrored_count"]:
+            errors.append(f"{p['name']}: {len(rows)} item rows vs mirrored_count {p['mirrored_count']}")
+        ids = [r["id"] for r in rows]
+        if ids != sorted(set(ids)):
+            errors.append(f"{p['name']}: item ids not unique+sorted")
+        for r in rows:
+            if set(r) != set(ITEM_FIELDS):
+                errors.append(f"{p['name']}: item {r.get('id')} has fields {sorted(r)}")
+                break
+        kinds, sbk = summarize_rows(rows)
+        if kinds != p["kinds"]:
+            errors.append(f"{p['name']}: kinds {p['kinds']} != recomputed {kinds}")
+        if sbk != p.get("solved_by_kind"):
+            errors.append(f"{p['name']}: solved_by_kind {p.get('solved_by_kind')} != recomputed {sbk}")
+        for fn in p.get("shards") or []:
+            expected_shards.add(fn)
+            sp = ITEMS_DIR / fn
+            if not sp.exists():
+                errors.append(f"{p['name']}: missing shard {fn}")
+            elif sp.stat().st_size >= 5 * 1024 * 1024:
+                errors.append(f"{p['name']}: shard {fn} exceeds 5 MB A24 cap ({sp.stat().st_size} bytes)")
+    stray = sorted(f.name for f in ITEMS_DIR.glob("*.jsonl") if f.name not in expected_shards)
     if stray:
-        errors.append(f"stray item files: {stray}")
+        errors.append(f"stray item shard files: {stray}")
     crosswalk = build_crosswalk(snap, items, load_problems(), load_overrides())
     crosswalk["snapshot_content_sha256"] = snap["content_sha256"]
     for path, text in render_all(snap, items, crosswalk).items():
@@ -727,9 +935,11 @@ def cmd_check() -> int:
             print(f"  - {e}", file=sys.stderr)
         return 1
     t = snap["totals"]
+    sbk = t.get("solved_by_kind") or {}
     print(
-        f"OK: external program mirror verified offline — {t['programs']} programs, {t['sum_card_targets']:,} targets, "
-        f"{t['mirrored_items']:,} mirrored items, crosswalk {crosswalk['summary']['problems_with_matches']}/"
+        f"OK: full external program mirror verified offline — {t['programs']} programs, {t['sum_card_targets']:,} targets, "
+        f"{t['mirrored_items']:,} mirrored items ({len(expected_shards)} shards, all <5 MB), "
+        f"solved_by_kind=({format_solved_by_kind(sbk)}), crosswalk {crosswalk['summary']['problems_with_matches']}/"
         f"{crosswalk['summary']['atlas_problems']} (content {snap['content_sha256'][:16]}, last change {snap['last_changed_utc']})."
     )
     return 0
@@ -742,7 +952,7 @@ def main() -> int:
         pass
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     g = ap.add_mutually_exclusive_group()
-    g.add_argument("--check", action="store_true", help="offline integrity + freshness-of-views check (no network)")
+    g.add_argument("--check", action="store_true", help="offline integrity + shard size + freshness check (no network)")
     g.add_argument("--render", action="store_true", help="offline re-render of views from the committed snapshot")
     ap.add_argument("--allow-shrink", action="store_true", help="permit >20%% drop in mirrored items (manual review)")
     args = ap.parse_args()

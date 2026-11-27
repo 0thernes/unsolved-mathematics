@@ -1,6 +1,6 @@
 # P versus NP
 
-> **Atlas Rank #4** · CSS **81.967** · Field: *Computational Complexity Theory* · Posed: **1971** · Status: `open`  · 🏛️ **Millennium Prize Problem**
+> **Atlas Rank #5** · CSS **81.967** · Field: *Computational Complexity Theory* · Posed: **1971** · Status: `open`  · 🏛️ **Millennium Prize Problem**
 
 ## Plain statement
 

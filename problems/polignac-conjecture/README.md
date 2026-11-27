@@ -1,6 +1,6 @@
 # Polignac's Conjecture
 
-> **Atlas Rank #17** · CSS **70.3** · Field: *Number Theory* · Posed: **1849** · Status: `active-progress`
+> **Atlas Rank #24** · CSS **70.3** · Field: *Number Theory* · Posed: **1849** · Status: `active-progress`
 
 ## Plain statement
 

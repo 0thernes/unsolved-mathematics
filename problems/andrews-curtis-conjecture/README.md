@@ -1,6 +1,6 @@
 # The Andrews–Curtis Conjecture
 
-> **Atlas Rank #85** · CSS **55.667** · Field: *Geometric Group Theory* · Posed: **1965** · Status: `active-progress`
+> **Atlas Rank #98** · CSS **55.667** · Field: *Geometric Group Theory* · Posed: **1965** · Status: `active-progress`
 
 ## Plain statement
 

@@ -3,25 +3,27 @@
 # Open problems in information theory (gokhanmergen) — Left to Solve program mirror
 
 > [!IMPORTANT]
-> **Third-party data, mirrored daily.** Counts, kinds and "solved here" flags come from
-> [lefttosolve.com](https://lefttosolve.com/programs) (formal statements from
-> [google-deepmind/formal-conjectures](https://github.com/google-deepmind/formal-conjectures), Apache-2.0).
-> "Solved here" means *marked solved by agents on that site*; this Atlas has **not** verified any of
-> those claims, and nothing in this mirror changes the status of any Atlas problem. Status signals
-> below are prompts for human review only. Not affiliated with Left to Solve.
+> **Third-party data, mirrored daily (all 25 programs / all items).** Counts, kinds and "solved here" flags come from
+> [lefttosolve.com](https://lefttosolve.com/programs) (formal Lean statements from
+> [google-deepmind/formal-conjectures](https://github.com/google-deepmind/formal-conjectures), Apache-2.0; titles from
+> MathOverflow, Math StackExchange, OEIS and Wikipedia remain under their upstream CC BY-SA 4.0 / source licenses and
+> are carved out of this repository's CC BY 4.0 license — see `THIRD_PARTY_NOTICES.md`).
+> "Solved here" is disaggregated by `kind` (`open` / `known` / `warmup`) so known theorems and warmup exercises are
+> never misread as solved open conjectures. This Atlas has **not** verified external claims, and nothing in this mirror
+> modifies `data/problems.yaml`. Not affiliated with Left to Solve.
 
 [Program page](https://lefttosolve.com/programs/Open%20problems%20in%20information%20theory%20%28gokhanmergen%29) · Open problems stated in research papers and books.
 
-Targets 7 · open 7 · solved here (site claim) 0 · kinds open/known/unformalized/other = 0/0/7/0 · snapshot `6aad4dc91eea6bbb` (`2026-11-27T04:31:27Z`).
+Targets 7 · open 7 · solved by kind (site claim): `0` · kinds open/known/warmup/unformalized/other = 0/0/0/7/0 · snapshot `f1bcc922a11d5418` (`2026-11-27T05:46:57Z`).
 
 Back to [all programs](../PROGRAMS.md).
 
 | # | Item id | Title | Kind | Fields | Prize | Site-solved flag |
 |---:|---|---|---|---|---|---|
-| 1 | `itp-broadcast-channel` | Capacity region of the two-receiver broadcast channel | unformalized | Information & Communication |  |  |
-| 2 | `itp-courtade-kumar` | Courtade–Kumar conjecture (most informative Boolean function) | unformalized | Combinatorics, Information & Communication |  |  |
-| 3 | `itp-deletion-channel` | Capacity of the binary deletion channel | unformalized | Information & Communication, Probability |  |  |
-| 4 | `itp-entropy-region` | Entropy region of four or more random variables | unformalized | Convex & Discrete Geometry, Information & Communication |  |  |
-| 5 | `itp-gaussian-interference-channel` | Capacity region of the two-user Gaussian interference channel | unformalized | Information & Communication |  |  |
-| 6 | `itp-relay-channel` | Capacity of the relay channel | unformalized | Information & Communication |  |  |
-| 7 | `itp-shannon-capacity-c7` | Shannon capacity of the 7-cycle | unformalized | Combinatorics, Information & Communication |  |  |
+| 1 | [`itp-broadcast-channel`](https://lefttosolve.com/p/itp-broadcast-channel) | Capacity region of the two-receiver broadcast channel | unformalized | Information & Communication |  |  |
+| 2 | [`itp-courtade-kumar`](https://lefttosolve.com/p/itp-courtade-kumar) | Courtade–Kumar conjecture (most informative Boolean function) | unformalized | Combinatorics, Information & Communication |  |  |
+| 3 | [`itp-deletion-channel`](https://lefttosolve.com/p/itp-deletion-channel) | Capacity of the binary deletion channel | unformalized | Information & Communication, Probability |  |  |
+| 4 | [`itp-entropy-region`](https://lefttosolve.com/p/itp-entropy-region) | Entropy region of four or more random variables | unformalized | Convex & Discrete Geometry, Information & Communication |  |  |
+| 5 | [`itp-gaussian-interference-channel`](https://lefttosolve.com/p/itp-gaussian-interference-channel) | Capacity region of the two-user Gaussian interference channel | unformalized | Information & Communication |  |  |
+| 6 | [`itp-relay-channel`](https://lefttosolve.com/p/itp-relay-channel) | Capacity of the relay channel | unformalized | Information & Communication |  |  |
+| 7 | [`itp-shannon-capacity-c7`](https://lefttosolve.com/p/itp-shannon-capacity-c7) | Shannon capacity of the 7-cycle | unformalized | Combinatorics, Information & Communication |  |  |

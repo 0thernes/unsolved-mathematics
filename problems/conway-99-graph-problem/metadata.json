@@ -1,0 +1,30 @@
+{
+  "slug": "conway-99-graph-problem",
+  "title": "Conway's 99-Graph Problem",
+  "field": "Graph Theory",
+  "subfields": [
+    "Algebraic Graph Theory",
+    "Strongly Regular Graphs",
+    "Finite Geometry"
+  ],
+  "year_posed": 1970,
+  "originators": [
+    "John Horton Conway"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Does there exist an undirected graph with 99 vertices in which every pair of adjacent vertices has exactly 1 common neighbor and every pair of non-adjacent vertices has exactly 2 common neighbors — i.e., a strongly regular graph with parameters srg(99, 14, 1, 2)?\n",
+  "difficulty": 84,
+  "centrality": 54,
+  "tractability": 26,
+  "status": "open",
+  "tags": [
+    "strongly-regular-graphs",
+    "Conway-prize",
+    "algebraic-graph-theory",
+    "finite-geometry",
+    "99-graph"
+  ],
+  "rank": 67,
+  "css": 60.933,
+  "folder": "conway-99-graph-problem"
+}

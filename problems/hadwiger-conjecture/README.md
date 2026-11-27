@@ -1,6 +1,6 @@
 # Hadwiger's Conjecture (Graph Coloring)
 
-> **Atlas Rank #28** · CSS **67.133** · Field: *Graph Theory* · Posed: **1943** · Status: `active-progress`
+> **Atlas Rank #36** · CSS **67.133** · Field: *Graph Theory* · Posed: **1943** · Status: `active-progress`
 
 ## Plain statement
 

@@ -126,10 +126,10 @@ def test_regression_bug01_rag_chunk_ids_globally_unique(tmp_path: Path):
     ]
 
 
-def test_regression_bug02_all_106_dossier_readmes_synced():
+def test_regression_bug02_all_120_dossier_readmes_synced():
     """BUG-02: every problems/<slug>/README.md must reflect current Atlas Rank & CSS."""
     reg = json.loads((ROOT / "data" / "problems.json").read_text(encoding="utf-8"))
-    assert len(reg["problems"]) == 106
+    assert len(reg["problems"]) == 120
     for p in reg["problems"]:
         readme = (ROOT / "problems" / p["slug"] / "README.md").read_text(encoding="utf-8")
         expected = generate.dossier_header_line(p, p["rank"], p["css"])
@@ -222,7 +222,7 @@ def test_contract_problems_json_and_version_parity():
     version = (ROOT / "VERSION").read_text(encoding="utf-8").strip()
     reg = json.loads((ROOT / "data" / "problems.json").read_text(encoding="utf-8"))
     assert reg["meta"]["version"] == version
-    assert len(reg["problems"]) == 106
+    assert len(reg["problems"]) == 120
     errors = generate.validate(reg["problems"])
     assert errors == [], errors
 

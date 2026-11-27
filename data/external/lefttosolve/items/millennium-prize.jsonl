@@ -1,8 +1,8 @@
 {"fields": ["Computer Science"], "id": "ComplexityTheory.NP_ne_coNP", "kind": "open", "prize": null, "solved": false, "title": "NP ≠ coNP"}
 {"fields": ["Computer Science"], "id": "ComplexityTheory.P_eq_BPP", "kind": "open", "prize": null, "solved": false, "title": "P = BPP"}
 {"fields": ["Computer Science"], "id": "ComplexityTheory.P_ne_NP", "kind": "open", "prize": null, "solved": false, "title": "P ≠ NP"}
-{"fields": ["Computer Science"], "id": "ComplexityTheory.P_subset_BPP", "kind": "warmup", "prize": null, "solved": true, "title": "Conjectures in Complexity Theory — P subset BPP"}
-{"fields": ["Computer Science"], "id": "ComplexityTheory.coP_eq_P", "kind": "warmup", "prize": null, "solved": true, "title": "Conjectures in Complexity Theory — coP eq P"}
+{"fields": ["Computer Science"], "id": "ComplexityTheory.P_subset_BPP", "kind": "warmup", "prize": null, "solved": false, "title": "Conjectures in Complexity Theory — P subset BPP"}
+{"fields": ["Computer Science"], "id": "ComplexityTheory.coP_eq_P", "kind": "warmup", "prize": null, "solved": false, "title": "Conjectures in Complexity Theory — coP eq P"}
 {"fields": ["Number Theory"], "id": "ERH.extended_riemann_hypothesis", "kind": "open", "prize": null, "solved": false, "title": "Extended Riemann Hypothesis (Dedekind zeta functions)"}
 {"fields": ["PDEs"], "id": "NavierStokes.navier_stokes_existence_and_smoothness_R3", "kind": "open", "prize": null, "solved": false, "title": "Existence And Smoothness Of The Navier–Stokes Equation — navier stokes existence and smoothness R3"}
 {"fields": ["PDEs"], "id": "NavierStokes.navier_stokes_existence_and_smoothness_periodic", "kind": "open", "prize": null, "solved": false, "title": "Existence And Smoothness Of The Navier–Stokes Equation — navier stokes existence and smoothness periodic"}

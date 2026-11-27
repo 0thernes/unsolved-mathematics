@@ -1,0 +1,31 @@
+{
+  "slug": "cohen-lenstra-heuristics",
+  "title": "The Cohen–Lenstra Heuristics",
+  "field": "Number Theory",
+  "subfields": [
+    "Algebraic Number Theory",
+    "Arithmetic Statistics",
+    "Class Groups"
+  ],
+  "year_posed": 1984,
+  "originators": [
+    "Henri Cohen",
+    "Hendrik W. Lenstra Jr."
+  ],
+  "millennium_prize": false,
+  "statement_plain": "As K ranges over imaginary (or real) quadratic number fields ordered by discriminant, the odd part of the ideal class group Cl(K) is conjectured to be distributed like a random finite abelian group G weighted inversely by |Aut(G)| (for imaginary quadratic fields, u = 0) or by |G| * |Aut(G)| (for real quadratic fields, u = 1).\n",
+  "difficulty": 91,
+  "centrality": 79,
+  "tractability": 24,
+  "status": "active-progress",
+  "tags": [
+    "class-groups",
+    "arithmetic-statistics",
+    "quadratic-fields",
+    "Cohen-Lenstra",
+    "Selmer-groups"
+  ],
+  "rank": 23,
+  "css": 70.5,
+  "folder": "cohen-lenstra-heuristics"
+}

@@ -1,0 +1,30 @@
+{
+  "slug": "erdos-szemeredi-asymptotic-bounds",
+  "title": "Erdős Problem 142 (Asymptotic Density of k-AP-Free Sets)",
+  "field": "Extremal Combinatorics",
+  "subfields": [
+    "Additive Combinatorics",
+    "Fourier Analysis",
+    "Higher-Order Gowers Uniformity"
+  ],
+  "year_posed": 1973,
+  "originators": [
+    "Paul Erdős"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Find an asymptotic formula for r_k(N), the maximum size of a subset of {1, ..., N} containing no non-trivial k-term arithmetic progression; in particular, determine whether r_k(N) = o(N / (log N)^C) for all C > 0 and pin down the true growth rate between Behrend-type lower bounds and Kelley–Meka / Leng–Sah–Sawhney upper bounds.\n",
+  "difficulty": 91,
+  "centrality": 78,
+  "tractability": 22,
+  "status": "active-progress",
+  "tags": [
+    "Erdos-prize",
+    "arithmetic-progressions",
+    "Szemeredi",
+    "additive-combinatorics",
+    "Gowers-norms"
+  ],
+  "rank": 22,
+  "css": 71.133,
+  "folder": "erdos-szemeredi-asymptotic-bounds"
+}

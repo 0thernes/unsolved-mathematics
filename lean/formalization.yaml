@@ -1,8 +1,8 @@
 # Palomar Registry & Verification Disclosure Metadata
 # Schema reference: https://github.com/PalomarRegistry/PalomarPolicy/blob/main/CONTRIBUTING.md
 title: "FormalAtlas: Eight-Domain Multi-Kernel Lean 4.35.0 Structural Core for The Unsolved Mathematics Atlas"
-version: "0.7.0"
-date: "2026-11-26"
+version: "0.8.0"
+date: "2026-11-27"
 authors:
   - name: "Alexander S. Donahue"
     orcid: "0009-0006-8168-9648"

@@ -3,47 +3,49 @@
 # Other — Left to Solve program mirror
 
 > [!IMPORTANT]
-> **Third-party data, mirrored daily.** Counts, kinds and "solved here" flags come from
-> [lefttosolve.com](https://lefttosolve.com/programs) (formal statements from
-> [google-deepmind/formal-conjectures](https://github.com/google-deepmind/formal-conjectures), Apache-2.0).
-> "Solved here" means *marked solved by agents on that site*; this Atlas has **not** verified any of
-> those claims, and nothing in this mirror changes the status of any Atlas problem. Status signals
-> below are prompts for human review only. Not affiliated with Left to Solve.
+> **Third-party data, mirrored daily (all 25 programs / all items).** Counts, kinds and "solved here" flags come from
+> [lefttosolve.com](https://lefttosolve.com/programs) (formal Lean statements from
+> [google-deepmind/formal-conjectures](https://github.com/google-deepmind/formal-conjectures), Apache-2.0; titles from
+> MathOverflow, Math StackExchange, OEIS and Wikipedia remain under their upstream CC BY-SA 4.0 / source licenses and
+> are carved out of this repository's CC BY 4.0 license — see `THIRD_PARTY_NOTICES.md`).
+> "Solved here" is disaggregated by `kind` (`open` / `known` / `warmup`) so known theorems and warmup exercises are
+> never misread as solved open conjectures. This Atlas has **not** verified external claims, and nothing in this mirror
+> modifies `data/problems.yaml`. Not affiliated with Left to Solve.
 
 [Program page](https://lefttosolve.com/programs/Other) · Open problems stated in research papers and books.
 
-Targets 29 · open 17 · solved here (site claim) 6 · kinds open/known/unformalized/other = 17/12/0/0 · snapshot `6aad4dc91eea6bbb` (`2026-11-27T04:31:27Z`).
+Targets 29 · open 17 · solved by kind (site claim): `known: 7` · kinds open/known/warmup/unformalized/other = 17/12/0/0/0 · snapshot `f1bcc922a11d5418` (`2026-11-27T05:46:57Z`).
 
 Back to [all programs](../PROGRAMS.md).
 
 | # | Item id | Title | Kind | Fields | Prize | Site-solved flag |
 |---:|---|---|---|---|---|---|
-| 1 | `BeaverMathOlympiad.beaver_math_olympiad_problem_1` | Beaver Math Olympiad (BMO) — beaver math olympiad problem 1 | open | Combinatorics, Computer Science, Number Theory |  |  |
-| 2 | `BeaverMathOlympiad.beaver_math_olympiad_problem_2_antihydra` | Beaver Math Olympiad (BMO) — beaver math olympiad problem 2 antihydra | open | Combinatorics, Computer Science, Number Theory |  |  |
-| 3 | `BeaverMathOlympiad.beaver_math_olympiad_problem_2_antihydra.variants.set` | Beaver Math Olympiad (BMO) — set | open | Combinatorics, Computer Science, Number Theory |  |  |
-| 4 | `BeaverMathOlympiad.beaver_math_olympiad_problem_5` | Beaver Math Olympiad (BMO) — beaver math olympiad problem 5 | open | Combinatorics, Computer Science, Number Theory |  |  |
-| 5 | `BeaverMathOlympiad.beaver_math_olympiad_problem_8` | Beaver Math Olympiad (BMO) — beaver math olympiad problem 8 | open | Combinatorics, Computer Science, Number Theory |  |  |
-| 6 | `EquationalTheories_677_255.Equation677_not_implies_Equation255` | Equational Theories | known | General Algebra |  | yes |
-| 7 | `EquationalTheories_677_255.Finite.Equation677_implies_Equation255` | Equational Theories, Problem 8.1. | open | General Algebra |  |  |
-| 8 | `Gerstenhaber.finrank_adjoin_pair_le` | Gerstenhaber's theorem | known | Associative Rings, Linear Algebra |  | yes |
-| 9 | `Gerstenhaber.finrank_adjoin_triple_le` | The Gerstenhaber problem | open | Associative Rings, Linear Algebra |  |  |
-| 10 | `HyperbolicGroupsResiduallyFinite.hyperbolic_exists_finiteIndex_ne_top` | Residual finiteness of hyperbolic groups — hyperbolic exists finiteIndex ne top | known | Group Theory |  |  |
-| 11 | `HyperbolicGroupsResiduallyFinite.hyperbolic_residuallyFinite` | Residual finiteness of hyperbolic groups — hyperbolic residuallyFinite | known | Group Theory |  |  |
-| 12 | `HyperbolicGroupsResiduallyFinite.hyperbolic_residuallyFinite_iff_exists_finiteIndex_ne_top` | Residual finiteness of hyperbolic groups — hyperbolic residuallyFinite iff exists finiteIndex ne top | known | Group Theory |  |  |
-| 13 | `Rule30.centerColumn_frequency_half` | Rule 30 Prize, Problem 2 (equal frequency). | open | Computer Science, Dynamical Systems |  |  |
-| 14 | `Rule30.centerColumn_not_eventually_periodic` | Rule 30 Prize, Problem 1 (non-periodicity). | open | Computer Science, Dynamical Systems |  |  |
-| 15 | `SmarandacheWellinPrime.conjecture` | Smarandache–Wellin primes | open | Number Theory |  |  |
-| 16 | `SuffixPrefixAvoidance.suffix_prefix_avoidance_bound` | Suffix-prefix avoidance bound | known | Combinatorics |  | yes |
-| 17 | `SymbolLengthMilnorKTheory.symbol_length_problem` | The symbol length problem | open | Field Theory, K-Theory |  |  |
-| 18 | `SymbolLengthMilnorKTheory.symbol_length_problem.variants.bounded` | The symbol length of $K^M_n(\\mathbb{C}(x_1, \\dots, x_m))/p$ — bounded | open | Field Theory, K-Theory |  |  |
-| 19 | `SymbolLengthMilnorKTheory.symbol_length_problem.variants.degree_two` | Matzri's theorem | known | Associative Rings, Field Theory, K-Theory |  |  |
-| 20 | `SymbolLengthMilnorKTheory.symbol_length_problem.variants.degree_two_ge` | The symbol length of $K^M_n(\\mathbb{C}(x_1, \\dots, x_m))/p$ — degree two ge | known | Associative Rings, Field Theory, K-Theory |  |  |
-| 21 | `SymbolLengthMilnorKTheory.symbol_length_problem.variants.degree_two_isLeast` | Becher and Hoffmann's question | open | Associative Rings, Field Theory, K-Theory |  |  |
-| 22 | `SymbolLengthMilnorKTheory.symbol_length_problem.variants.uniform` | The symbol length of $K^M_n(\\mathbb{C}(x_1, \\dots, x_m))/p$ — uniform | open | Field Theory, K-Theory |  |  |
-| 23 | `SymbolLengthMilnorKTheory.symbol_length_problem.variants.zero_mem_of_lt` | The symbol length of $K^M_n(\\mathbb{C}(x_1, \\dots, x_m))/p$ — zero mem of lt | known | Field Theory, K-Theory |  |  |
-| 24 | `VCDimConvex.exists_convex_rn_add_two_vc_n_forall_not_hasAddVCNDimAtMost` | VCₙ dimension of convex sets in ℝⁿ, ℝⁿ⁺¹, ℝⁿ⁺² — exists convex rn add two vc n forall not hasAddVCNDimAtMost | known | Combinatorics, Convex & Discrete Geometry |  | yes |
-| 25 | `VCDimConvex.exists_exponential_bound_hasAddVCNDimAtMost_n_of_convex_rn_add_one` | VCₙ dimension of convex sets in ℝⁿ, ℝⁿ⁺¹, ℝⁿ⁺² — exists exponential bound hasAddVCNDimAtMost n of convex rn add one | open | Combinatorics, Convex & Discrete Geometry |  |  |
-| 26 | `VCDimConvex.exists_infinite_convex_r3_shatters` | VCₙ dimension of convex sets in ℝⁿ, ℝⁿ⁺¹, ℝⁿ⁺² — exists infinite convex r3 shatters | known | Combinatorics, Convex & Discrete Geometry |  | yes |
-| 27 | `VCDimConvex.hasAddVCDimAtMost_three_of_convex_r2` | VCₙ dimension of convex sets in ℝⁿ, ℝⁿ⁺¹, ℝⁿ⁺² — hasAddVCDimAtMost three of convex r2 | known | Combinatorics, Convex & Discrete Geometry |  | yes |
-| 28 | `VCDimConvex.hasAddVCNDimAtMost_n_two_of_convex_rn_add_one` | VCₙ dimension of convex sets in ℝⁿ, ℝⁿ⁺¹, ℝⁿ⁺² — hasAddVCNDimAtMost n two of convex rn add one | open | Combinatorics, Convex & Discrete Geometry |  |  |
-| 29 | `VCDimConvex.hasAddVCNDimAtMost_two_two_of_convex_r3` | VCₙ dimension of convex sets in ℝⁿ, ℝⁿ⁺¹, ℝⁿ⁺² — hasAddVCNDimAtMost two two of convex r3 | open | Combinatorics, Convex & Discrete Geometry |  |  |
+| 1 | [`BeaverMathOlympiad.beaver_math_olympiad_problem_1`](https://lefttosolve.com/p/BeaverMathOlympiad.beaver_math_olympiad_problem_1) | Beaver Math Olympiad (BMO) — beaver math olympiad problem 1 | open | Combinatorics, Computer Science, Number Theory |  |  |
+| 2 | [`BeaverMathOlympiad.beaver_math_olympiad_problem_2_antihydra`](https://lefttosolve.com/p/BeaverMathOlympiad.beaver_math_olympiad_problem_2_antihydra) | Beaver Math Olympiad (BMO) — beaver math olympiad problem 2 antihydra | open | Combinatorics, Computer Science, Number Theory |  |  |
+| 3 | [`BeaverMathOlympiad.beaver_math_olympiad_problem_2_antihydra.variants.set`](https://lefttosolve.com/p/BeaverMathOlympiad.beaver_math_olympiad_problem_2_antihydra.variants.set) | Beaver Math Olympiad (BMO) — set | open | Combinatorics, Computer Science, Number Theory |  |  |
+| 4 | [`BeaverMathOlympiad.beaver_math_olympiad_problem_5`](https://lefttosolve.com/p/BeaverMathOlympiad.beaver_math_olympiad_problem_5) | Beaver Math Olympiad (BMO) — beaver math olympiad problem 5 | open | Combinatorics, Computer Science, Number Theory |  |  |
+| 5 | [`BeaverMathOlympiad.beaver_math_olympiad_problem_8`](https://lefttosolve.com/p/BeaverMathOlympiad.beaver_math_olympiad_problem_8) | Beaver Math Olympiad (BMO) — beaver math olympiad problem 8 | open | Combinatorics, Computer Science, Number Theory |  |  |
+| 6 | [`EquationalTheories_677_255.Equation677_not_implies_Equation255`](https://lefttosolve.com/p/EquationalTheories_677_255.Equation677_not_implies_Equation255) | Equational Theories | known | General Algebra |  | yes |
+| 7 | [`EquationalTheories_677_255.Finite.Equation677_implies_Equation255`](https://lefttosolve.com/p/EquationalTheories_677_255.Finite.Equation677_implies_Equation255) | Equational Theories, Problem 8.1. | open | General Algebra |  |  |
+| 8 | [`Gerstenhaber.finrank_adjoin_pair_le`](https://lefttosolve.com/p/Gerstenhaber.finrank_adjoin_pair_le) | Gerstenhaber's theorem | known | Associative Rings, Linear Algebra |  | yes |
+| 9 | [`Gerstenhaber.finrank_adjoin_triple_le`](https://lefttosolve.com/p/Gerstenhaber.finrank_adjoin_triple_le) | The Gerstenhaber problem | open | Associative Rings, Linear Algebra |  |  |
+| 10 | [`HyperbolicGroupsResiduallyFinite.hyperbolic_exists_finiteIndex_ne_top`](https://lefttosolve.com/p/HyperbolicGroupsResiduallyFinite.hyperbolic_exists_finiteIndex_ne_top) | Residual finiteness of hyperbolic groups — hyperbolic exists finiteIndex ne top | known | Group Theory |  |  |
+| 11 | [`HyperbolicGroupsResiduallyFinite.hyperbolic_residuallyFinite`](https://lefttosolve.com/p/HyperbolicGroupsResiduallyFinite.hyperbolic_residuallyFinite) | Residual finiteness of hyperbolic groups — hyperbolic residuallyFinite | known | Group Theory |  |  |
+| 12 | [`HyperbolicGroupsResiduallyFinite.hyperbolic_residuallyFinite_iff_exists_finiteIndex_ne_top`](https://lefttosolve.com/p/HyperbolicGroupsResiduallyFinite.hyperbolic_residuallyFinite_iff_exists_finiteIndex_ne_top) | Residual finiteness of hyperbolic groups — hyperbolic residuallyFinite iff exists finiteIndex ne top | known | Group Theory |  |  |
+| 13 | [`Rule30.centerColumn_frequency_half`](https://lefttosolve.com/p/Rule30.centerColumn_frequency_half) | Rule 30 Prize, Problem 2 (equal frequency). | open | Computer Science, Dynamical Systems |  |  |
+| 14 | [`Rule30.centerColumn_not_eventually_periodic`](https://lefttosolve.com/p/Rule30.centerColumn_not_eventually_periodic) | Rule 30 Prize, Problem 1 (non-periodicity). | open | Computer Science, Dynamical Systems |  |  |
+| 15 | [`SmarandacheWellinPrime.conjecture`](https://lefttosolve.com/p/SmarandacheWellinPrime.conjecture) | Smarandache–Wellin primes | open | Number Theory |  |  |
+| 16 | [`SuffixPrefixAvoidance.suffix_prefix_avoidance_bound`](https://lefttosolve.com/p/SuffixPrefixAvoidance.suffix_prefix_avoidance_bound) | Suffix-prefix avoidance bound | known | Combinatorics |  | yes |
+| 17 | [`SymbolLengthMilnorKTheory.symbol_length_problem`](https://lefttosolve.com/p/SymbolLengthMilnorKTheory.symbol_length_problem) | The symbol length problem | open | Field Theory, K-Theory |  |  |
+| 18 | [`SymbolLengthMilnorKTheory.symbol_length_problem.variants.bounded`](https://lefttosolve.com/p/SymbolLengthMilnorKTheory.symbol_length_problem.variants.bounded) | The symbol length of $K^M_n(\\mathbb{C}(x_1, \\dots, x_m))/p$ — bounded | open | Field Theory, K-Theory |  |  |
+| 19 | [`SymbolLengthMilnorKTheory.symbol_length_problem.variants.degree_two`](https://lefttosolve.com/p/SymbolLengthMilnorKTheory.symbol_length_problem.variants.degree_two) | Matzri's theorem | known | Associative Rings, Field Theory, K-Theory |  |  |
+| 20 | [`SymbolLengthMilnorKTheory.symbol_length_problem.variants.degree_two_ge`](https://lefttosolve.com/p/SymbolLengthMilnorKTheory.symbol_length_problem.variants.degree_two_ge) | The symbol length of $K^M_n(\\mathbb{C}(x_1, \\dots, x_m))/p$ — degree two ge | known | Associative Rings, Field Theory, K-Theory |  | yes |
+| 21 | [`SymbolLengthMilnorKTheory.symbol_length_problem.variants.degree_two_isLeast`](https://lefttosolve.com/p/SymbolLengthMilnorKTheory.symbol_length_problem.variants.degree_two_isLeast) | Becher and Hoffmann's question | open | Associative Rings, Field Theory, K-Theory |  |  |
+| 22 | [`SymbolLengthMilnorKTheory.symbol_length_problem.variants.uniform`](https://lefttosolve.com/p/SymbolLengthMilnorKTheory.symbol_length_problem.variants.uniform) | The symbol length of $K^M_n(\\mathbb{C}(x_1, \\dots, x_m))/p$ — uniform | open | Field Theory, K-Theory |  |  |
+| 23 | [`SymbolLengthMilnorKTheory.symbol_length_problem.variants.zero_mem_of_lt`](https://lefttosolve.com/p/SymbolLengthMilnorKTheory.symbol_length_problem.variants.zero_mem_of_lt) | The symbol length of $K^M_n(\\mathbb{C}(x_1, \\dots, x_m))/p$ — zero mem of lt | known | Field Theory, K-Theory |  |  |
+| 24 | [`VCDimConvex.exists_convex_rn_add_two_vc_n_forall_not_hasAddVCNDimAtMost`](https://lefttosolve.com/p/VCDimConvex.exists_convex_rn_add_two_vc_n_forall_not_hasAddVCNDimAtMost) | VCₙ dimension of convex sets in ℝⁿ, ℝⁿ⁺¹, ℝⁿ⁺² — exists convex rn add two vc n forall not hasAddVCNDimAtMost | known | Combinatorics, Convex & Discrete Geometry |  | yes |
+| 25 | [`VCDimConvex.exists_exponential_bound_hasAddVCNDimAtMost_n_of_convex_rn_add_one`](https://lefttosolve.com/p/VCDimConvex.exists_exponential_bound_hasAddVCNDimAtMost_n_of_convex_rn_add_one) | VCₙ dimension of convex sets in ℝⁿ, ℝⁿ⁺¹, ℝⁿ⁺² — exists exponential bound hasAddVCNDimAtMost n of convex rn add one | open | Combinatorics, Convex & Discrete Geometry |  |  |
+| 26 | [`VCDimConvex.exists_infinite_convex_r3_shatters`](https://lefttosolve.com/p/VCDimConvex.exists_infinite_convex_r3_shatters) | VCₙ dimension of convex sets in ℝⁿ, ℝⁿ⁺¹, ℝⁿ⁺² — exists infinite convex r3 shatters | known | Combinatorics, Convex & Discrete Geometry |  | yes |
+| 27 | [`VCDimConvex.hasAddVCDimAtMost_three_of_convex_r2`](https://lefttosolve.com/p/VCDimConvex.hasAddVCDimAtMost_three_of_convex_r2) | VCₙ dimension of convex sets in ℝⁿ, ℝⁿ⁺¹, ℝⁿ⁺² — hasAddVCDimAtMost three of convex r2 | known | Combinatorics, Convex & Discrete Geometry |  | yes |
+| 28 | [`VCDimConvex.hasAddVCNDimAtMost_n_two_of_convex_rn_add_one`](https://lefttosolve.com/p/VCDimConvex.hasAddVCNDimAtMost_n_two_of_convex_rn_add_one) | VCₙ dimension of convex sets in ℝⁿ, ℝⁿ⁺¹, ℝⁿ⁺² — hasAddVCNDimAtMost n two of convex rn add one | open | Combinatorics, Convex & Discrete Geometry |  |  |
+| 29 | [`VCDimConvex.hasAddVCNDimAtMost_two_two_of_convex_r3`](https://lefttosolve.com/p/VCDimConvex.hasAddVCNDimAtMost_two_two_of_convex_r3) | VCₙ dimension of convex sets in ℝⁿ, ℝⁿ⁺¹, ℝⁿ⁺² — hasAddVCNDimAtMost two two of convex r3 | open | Combinatorics, Convex & Discrete Geometry |  |  |

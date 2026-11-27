@@ -1,6 +1,6 @@
 # The Slice–Ribbon Conjecture
 
-> **Atlas Rank #74** · CSS **57.067** · Field: *Knot Theory* · Posed: **1962** · Status: `open`
+> **Atlas Rank #87** · CSS **57.067** · Field: *Knot Theory* · Posed: **1962** · Status: `open`
 
 ## Plain statement
 

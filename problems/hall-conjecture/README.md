@@ -1,6 +1,6 @@
 # Hall's Conjecture
 
-> **Atlas Rank #94** · CSS **53.867** · Field: *Number Theory* · Posed: **1971** · Status: `open`
+> **Atlas Rank #108** · CSS **53.867** · Field: *Number Theory* · Posed: **1971** · Status: `open`
 
 ## Plain statement
 

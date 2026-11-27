@@ -9,8 +9,8 @@
 {"fields": ["Number Theory"], "id": "AgohGiuga.agoh_giuga.variants.giuga", "kind": "open", "prize": null, "solved": false, "title": "Agoh-Giuga conjecture"}
 {"fields": ["Number Theory"], "id": "AgohGiuga.agoh_giuga.variants.isStrongGiuga_growth", "kind": "known", "prize": null, "solved": true, "title": "Agoh-Giuga conjecture — isStrongGiuga growth"}
 {"fields": ["Number Theory"], "id": "AgohGiuga.agoh_giuga.variants.le_primeFactors_card_of_isStrongGiuga", "kind": "known", "prize": null, "solved": true, "title": "Agoh-Giuga conjecture — le primeFactors card of isStrongGiuga"}
-{"fields": ["Number Theory"], "id": "AgohGiuga.isStrongGiuga_iff", "kind": "known", "prize": null, "solved": true, "title": "Agoh-Giuga conjecture — isStrongGiuga iff"}
-{"fields": ["Number Theory"], "id": "AgohGiuga.isWeakGiuga_iff_sum_primeFactors", "kind": "known", "prize": null, "solved": true, "title": "Agoh-Giuga conjecture — isWeakGiuga iff sum primeFactors"}
+{"fields": ["Number Theory"], "id": "AgohGiuga.isStrongGiuga_iff", "kind": "known", "prize": null, "solved": false, "title": "Agoh-Giuga conjecture — isStrongGiuga iff"}
+{"fields": ["Number Theory"], "id": "AgohGiuga.isWeakGiuga_iff_sum_primeFactors", "kind": "known", "prize": null, "solved": false, "title": "Agoh-Giuga conjecture — isWeakGiuga iff sum primeFactors"}
 {"fields": ["Number Theory"], "id": "AgrawalConjecture.agrawal_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Agrawal's Primality Conjecture."}
 {"fields": ["Number Theory"], "id": "AgrawalConjecture.agrawal_conjecture.variants.popovych", "kind": "open", "prize": null, "solved": false, "title": "Roman B. Popovych Conjecture."}
 {"fields": ["Number Theory"], "id": "Algebra.exists_quadraticAlgebra_of_isQuadraticExtension", "kind": "warmup", "prize": null, "solved": true, "title": "Infinitude of Wall–Sun–Sun primes — exists quadraticAlgebra of isQuadraticExtension"}
@@ -21,7 +21,7 @@
 {"fields": ["Approximation", "Field Theory", "Number Theory"], "id": "AlgebraicNormality.irrational_algebraic_absolutely_normal", "kind": "open", "prize": null, "solved": false, "title": "Normality of Irrational Algebraic Numbers — irrational algebraic absolutely normal"}
 {"fields": ["Approximation", "Field Theory", "Number Theory"], "id": "AlgebraicNormality.irrational_algebraic_normal_in_some_base", "kind": "open", "prize": null, "solved": false, "title": "Normality of Irrational Algebraic Numbers — irrational algebraic normal in some base"}
 {"fields": ["Number Theory"], "id": "AlmostPerfectNumbers.exists_almost_perfect_not_power_of_two", "kind": "open", "prize": null, "solved": false, "title": "Non-Power-of-2 Almost Perfect Numbers Conjecture."}
-{"fields": ["Combinatorics"], "id": "AlonSaksSeymourConjecture.alon_saks_seymour_conjecture", "kind": "known", "prize": null, "solved": true, "title": "The Alon–Saks–Seymour conjecture — disproved."}
+{"fields": ["Combinatorics"], "id": "AlonSaksSeymourConjecture.alon_saks_seymour_conjecture", "kind": "known", "prize": null, "solved": false, "title": "The Alon–Saks–Seymour conjecture — disproved."}
 {"fields": ["Combinatorics"], "id": "AlonSaksSeymourConjecture.alon_saks_seymour_conjecture.variants.graham_pollak", "kind": "known", "prize": null, "solved": true, "title": "The Graham–Pollak theorem (1971)."}
 {"fields": ["Combinatorics"], "id": "AlonSaksSeymourConjecture.alon_saks_seymour_conjecture.variants.huang_sudakov", "kind": "known", "prize": null, "solved": true, "title": "Huang–Sudakov (2012): a polynomial separation."}
 {"fields": ["Combinatorics"], "id": "AlspachConjecture.alspach_conjecture", "kind": "known", "prize": null, "solved": false, "title": "Alspach's conjecture (1981), proved by Bryant, Horsley and Pettersson (2014)."}
@@ -65,7 +65,7 @@
 {"fields": ["Complex Analysis"], "id": "Bloch.univalentBlochConstant_lower_bound", "kind": "known", "prize": null, "solved": false, "title": "Bloch and Landau constants — univalentBlochConstant lower bound"}
 {"fields": ["Convex & Discrete Geometry"], "id": "Borsuk.borsuk_conjecture.four", "kind": "open", "prize": null, "solved": false, "title": "Borsuk's conjecture — four"}
 {"fields": ["Convex & Discrete Geometry"], "id": "Borsuk.borsuk_conjecture.four.eight_parts", "kind": "known", "prize": null, "solved": false, "title": "Partial result in dimension $4$ — eight parts"}
-{"fields": ["Convex & Discrete Geometry"], "id": "Borsuk.borsuk_conjecture.four.nine_parts", "kind": "known", "prize": null, "solved": true, "title": "Partial result in dimension $4$ — nine parts"}
+{"fields": ["Convex & Discrete Geometry"], "id": "Borsuk.borsuk_conjecture.four.nine_parts", "kind": "known", "prize": null, "solved": false, "title": "Partial result in dimension $4$ — nine parts"}
 {"fields": ["Convex & Discrete Geometry"], "id": "Borsuk.borsuk_conjecture.not_of_nine_le", "kind": "known", "prize": null, "solved": false, "title": "Borsuk's conjecture — not of nine le"}
 {"fields": ["Group Theory"], "id": "BoundedBurnsideProblem.bounded_burnside_problem", "kind": "known", "prize": null, "solved": false, "title": "Bounded Burnside problem"}
 {"fields": ["Complex Analysis"], "id": "BrennanConjecture.brennan_universalSpectrumBounded", "kind": "open", "prize": null, "solved": false, "title": "Brennan's Conjecture"}
@@ -74,16 +74,16 @@
 {"fields": ["Number Theory"], "id": "Buchi.buchi_problem", "kind": "open", "prize": null, "solved": false, "title": "Büchi's problem"}
 {"fields": ["Number Theory"], "id": "Buchi.buchi_problem_M5", "kind": "open", "prize": null, "solved": false, "title": "Büchi's problem (first open case, $M = 5$)"}
 {"fields": ["Number Theory"], "id": "Bunyakovsky.bunyakovsky_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Bunyakovsky conjecture"}
-{"fields": ["Logic & Foundations"], "id": "BusyBeaver.BB_1", "kind": "warmup", "prize": null, "solved": true, "title": "Busy Beaver — BB 1"}
-{"fields": ["Logic & Foundations"], "id": "BusyBeaver.BB_2", "kind": "warmup", "prize": null, "solved": true, "title": "Busy Beaver — BB 2"}
-{"fields": ["Logic & Foundations"], "id": "BusyBeaver.BB_3", "kind": "warmup", "prize": null, "solved": true, "title": "Busy Beaver — BB 3"}
+{"fields": ["Logic & Foundations"], "id": "BusyBeaver.BB_1", "kind": "warmup", "prize": null, "solved": false, "title": "Busy Beaver — BB 1"}
+{"fields": ["Logic & Foundations"], "id": "BusyBeaver.BB_2", "kind": "warmup", "prize": null, "solved": false, "title": "Busy Beaver — BB 2"}
+{"fields": ["Logic & Foundations"], "id": "BusyBeaver.BB_3", "kind": "warmup", "prize": null, "solved": false, "title": "Busy Beaver — BB 3"}
 {"fields": ["Logic & Foundations"], "id": "BusyBeaver.BB_4", "kind": "warmup", "prize": null, "solved": false, "title": "Busy Beaver — BB 4"}
 {"fields": ["Logic & Foundations"], "id": "BusyBeaver.BB_5", "kind": "known", "prize": null, "solved": false, "title": "Busy Beaver — BB 5"}
 {"fields": ["Logic & Foundations"], "id": "BusyBeaver.BB_6", "kind": "open", "prize": null, "solved": false, "title": "Busy Beaver — BB 6"}
-{"fields": ["Logic & Foundations"], "id": "BusyBeaver.sanity_check", "kind": "warmup", "prize": null, "solved": true, "title": "Busy Beaver — sanity check"}
+{"fields": ["Logic & Foundations"], "id": "BusyBeaver.sanity_check", "kind": "warmup", "prize": null, "solved": false, "title": "Busy Beaver — sanity check"}
 {"fields": ["Combinatorics", "Linear Algebra"], "id": "ButsonHadamardMatrix.butson_hadamard_fourth_roots_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Complex Hadamard conjecture for fourth roots of unity"}
-{"fields": ["Combinatorics", "Linear Algebra"], "id": "ButsonHadamardMatrix.butson_prime_divisibility", "kind": "known", "prize": null, "solved": true, "title": "Butson's prime divisibility theorem"}
-{"fields": ["Combinatorics", "Linear Algebra"], "id": "ButsonHadamardMatrix.not_forall_odd_prime_mul_exists", "kind": "known", "prize": null, "solved": true, "title": "Disproof of the odd-prime-multiple existence claim"}
+{"fields": ["Combinatorics", "Linear Algebra"], "id": "ButsonHadamardMatrix.butson_prime_divisibility", "kind": "known", "prize": null, "solved": false, "title": "Butson's prime divisibility theorem"}
+{"fields": ["Combinatorics", "Linear Algebra"], "id": "ButsonHadamardMatrix.not_forall_odd_prime_mul_exists", "kind": "known", "prize": null, "solved": false, "title": "Disproof of the odd-prime-multiple existence claim"}
 {"fields": ["Number Theory"], "id": "CarmichaelTotient.carchimaelTotient_bound", "kind": "known", "prize": null, "solved": false, "title": "Carmichael's totient function conjecture — carchimaelTotient bound"}
 {"fields": ["Number Theory"], "id": "CarmichaelTotient.charmichaelTotient", "kind": "open", "prize": null, "solved": false, "title": "Carmichael's totient function conjecture — charmichaelTotient"}
 {"fields": ["Number Theory"], "id": "Catalan.pillais_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Catalan's conjecture and related Diophantine equations"}
@@ -97,7 +97,7 @@
 {"fields": ["Number Theory"], "id": "ChowlaLiouvilleConjecture.chowla_liouville_conjecture.variants.averaged_two_point", "kind": "known", "prize": null, "solved": false, "title": "Shift-Averaged Two-Point Chowla Theorem"}
 {"fields": ["Number Theory"], "id": "ChowlaLiouvilleConjecture.chowla_liouville_conjecture.variants.averaged_two_point_uniform", "kind": "known", "prize": null, "solved": false, "title": "Uniform Shift-Averaged Two-Point Chowla Theorem"}
 {"fields": ["Number Theory"], "id": "ChowlaLiouvilleConjecture.chowla_liouville_conjecture.variants.logarithmic_two_point", "kind": "known", "prize": null, "solved": false, "title": "Logarithmically Averaged Two-Point Chowla Theorem"}
-{"fields": ["Number Theory"], "id": "ChowlaLiouvilleConjecture.chowla_liouville_conjecture.variants.one_point", "kind": "warmup", "prize": null, "solved": true, "title": "One-Point Liouville Average"}
+{"fields": ["Number Theory"], "id": "ChowlaLiouvilleConjecture.chowla_liouville_conjecture.variants.one_point", "kind": "warmup", "prize": null, "solved": false, "title": "One-Point Liouville Average"}
 {"fields": ["Number Theory"], "id": "ClassNumberProblem.class_number_problem", "kind": "open", "prize": null, "solved": false, "title": "Class number problem for real quadratic fields"}
 {"fields": ["Number Theory"], "id": "ClassNumberProblem.class_number_problem.variants.imaginary", "kind": "known", "prize": null, "solved": false, "title": "Stark–Heegner theorem"}
 {"fields": ["Number Theory"], "id": "CohenLenstraHeuristics.cohen_lenstra_imaginary_quadratic_p_sylow_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Cohen–Lenstra Heuristic (Imaginary Quadratic Case, $u = 0$)"}
@@ -127,7 +127,7 @@
 {"fields": ["Complex Analysis", "Number Theory"], "id": "DensityHypothesis.density_hypothesis_zeta_zeros", "kind": "open", "prize": null, "solved": false, "title": "Density hypothesis for Riemann zeta zeros — density hypothesis zeta zeros"}
 {"fields": ["Complex Analysis", "Number Theory"], "id": "DensityHypothesis.guth_maynard_zero_density", "kind": "known", "prize": null, "solved": false, "title": "Density hypothesis for Riemann zeta zeros — guth maynard zero density"}
 {"fields": ["Number Theory"], "id": "DescartesNumber.descartes_cubeFree_lt_seven_primeFactors_unique", "kind": "known", "prize": null, "solved": false, "title": "Banks–Güloğlu–Nevans–Saidak Uniqueness Theorem"}
-{"fields": ["Number Theory"], "id": "DescartesNumber.descartes_cubeFree_not_dvd_three_primeFactors_gt_million", "kind": "known", "prize": null, "solved": true, "title": "Banks–Güloğlu–Nevans–Saidak Theorem"}
+{"fields": ["Number Theory"], "id": "DescartesNumber.descartes_cubeFree_not_dvd_three_primeFactors_gt_million", "kind": "known", "prize": null, "solved": false, "title": "Banks–Güloğlu–Nevans–Saidak Theorem"}
 {"fields": ["Number Theory"], "id": "DescartesNumber.descartes_non_example_factor_gt_ten_pow_twelve", "kind": "known", "prize": null, "solved": false, "title": "Tóth's Lower Bound on Spoof Factorizations"}
 {"fields": ["Number Theory"], "id": "DescartesNumber.descartes_number_unique", "kind": "open", "prize": null, "solved": false, "title": "Descartes Numbers"}
 {"fields": ["Linear Algebra"], "id": "DeterminantalConjecture.determinantal_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Determinantal conjecture"}
@@ -141,8 +141,8 @@
 {"fields": ["Number Theory"], "id": "DiophantineTuple.noIntegralDiophantineFiveTuple", "kind": "known", "prize": null, "solved": false, "title": "Diophantine $m$-tuples — noIntegralDiophantineFiveTuple"}
 {"fields": ["Number Theory"], "id": "DiophantineTuple.rational_7_tuple", "kind": "open", "prize": null, "solved": false, "title": "Diophantine $m$-tuples — rational 7 tuple"}
 {"fields": ["Number Theory"], "id": "DirichletDivisorProblem.dirichlet_divisor_problem", "kind": "open", "prize": null, "solved": false, "title": "Dirichlet divisor problem"}
-{"fields": ["Number Theory"], "id": "DirichletDivisorProblem.divisor_error_dirichlet", "kind": "warmup", "prize": null, "solved": true, "title": "Dirichlet divisor problem — divisor error dirichlet"}
-{"fields": ["Number Theory"], "id": "DirichletDivisorProblem.divisor_error_hardy", "kind": "known", "prize": null, "solved": false, "title": "Dirichlet divisor problem — divisor error hardy"}
+{"fields": ["Number Theory"], "id": "DirichletDivisorProblem.divisor_error_dirichlet", "kind": "warmup", "prize": null, "solved": false, "title": "Dirichlet divisor problem — divisor error dirichlet"}
+{"fields": ["Number Theory"], "id": "DirichletDivisorProblem.divisor_error_hardy", "kind": "known", "prize": null, "solved": true, "title": "Dirichlet divisor problem — divisor error hardy"}
 {"fields": ["Number Theory"], "id": "ElliottHalberstamConjecture.elliott_halberstam", "kind": "open", "prize": null, "solved": false, "title": "Elliott–Halberstam conjecture"}
 {"fields": ["Number Theory"], "id": "ElliottHalberstamConjecture.elliott_halberstam.variants.bombieri_vinogradov", "kind": "known", "prize": null, "solved": false, "title": "Elliott–Halberstam conjecture — bombieri vinogradov"}
 {"fields": ["Number Theory"], "id": "ElliottHalberstamConjecture.elliott_halberstam.variants.friedlander_granville", "kind": "known", "prize": null, "solved": true, "title": "Elliott–Halberstam conjecture — friedlander granville"}
@@ -176,13 +176,13 @@
 {"fields": ["Convex & Discrete Geometry", "Geometry"], "id": "ErdosUlamProblem.erdos_ulam_problem.variants.solymosi_de_zeeuw", "kind": "known", "prize": null, "solved": false, "title": "The Erdős–Ulam problem — solymosi de zeeuw"}
 {"fields": ["Number Theory"], "id": "EswarathasanLevineConjecture.eswarathasan_levine_harmonic_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Eswarathasan–Levine conjectures on harmonic numerators — eswarathasan levine harmonic conjecture"}
 {"fields": ["Number Theory"], "id": "EswarathasanLevineConjecture.eswarathasan_levine_harmonic_primes_infinite", "kind": "open", "prize": null, "solved": false, "title": "Eswarathasan–Levine conjectures on harmonic numerators — eswarathasan levine harmonic primes infinite"}
-{"fields": ["Number Theory"], "id": "EswarathasanLevineConjecture.eswarathasan_levine_three_elements_subset", "kind": "known", "prize": null, "solved": true, "title": "Eswarathasan–Levine conjectures on harmonic numerators — eswarathasan levine three elements subset"}
-{"fields": ["Number Theory"], "id": "EswarathasanLevineConjecture.harmonicNumDivisibleSet_two_empty", "kind": "warmup", "prize": null, "solved": true, "title": "Eswarathasan–Levine conjectures on harmonic numerators — harmonicNumDivisibleSet two empty"}
+{"fields": ["Number Theory"], "id": "EswarathasanLevineConjecture.eswarathasan_levine_three_elements_subset", "kind": "known", "prize": null, "solved": false, "title": "Eswarathasan–Levine conjectures on harmonic numerators — eswarathasan levine three elements subset"}
+{"fields": ["Number Theory"], "id": "EswarathasanLevineConjecture.harmonicNumDivisibleSet_two_empty", "kind": "warmup", "prize": null, "solved": false, "title": "Eswarathasan–Levine conjectures on harmonic numerators — harmonicNumDivisibleSet two empty"}
 {"fields": ["Number Theory"], "id": "EuclidNumbers.euclid_numbers_are_square_free", "kind": "open", "prize": null, "solved": false, "title": "Euclid Numbers conjecture — euclid numbers are square free"}
 {"fields": ["Number Theory"], "id": "EuclidNumbers.infinite_prime_euclid_numbers", "kind": "open", "prize": null, "solved": false, "title": "Euclid Numbers conjecture — infinite prime euclid numbers"}
 {"fields": ["Field Theory"], "id": "EulerBrick.cuboidThree", "kind": "open", "prize": null, "solved": false, "title": "Open questions regarding the existence of Euler bricks — cuboidThree"}
 {"fields": ["Field Theory"], "id": "EulerBrick.cuboidTwo", "kind": "open", "prize": null, "solved": false, "title": "Open questions regarding the existence of Euler bricks — cuboidTwo"}
-{"fields": ["Field Theory"], "id": "EulerBrick.cuboid_perfect_euler_brick", "kind": "known", "prize": null, "solved": true, "title": "Open questions regarding the existence of Euler bricks — cuboid perfect euler brick"}
+{"fields": ["Field Theory"], "id": "EulerBrick.cuboid_perfect_euler_brick", "kind": "known", "prize": null, "solved": false, "title": "Open questions regarding the existence of Euler bricks — cuboid perfect euler brick"}
 {"fields": ["Number Theory"], "id": "EulerBrick.four_dim_euler_brick_existence", "kind": "open", "prize": null, "solved": false, "title": "Open questions regarding the existence of Euler bricks — four dim euler brick existence"}
 {"fields": ["Number Theory"], "id": "EulerBrick.n_dim_euler_brick_existence", "kind": "open", "prize": null, "solved": false, "title": "Open questions regarding the existence of Euler bricks — n dim euler brick existence"}
 {"fields": ["Number Theory"], "id": "EulerBrick.perfect_euler_brick_existence", "kind": "open", "prize": null, "solved": false, "title": "Open questions regarding the existence of Euler bricks — perfect euler brick existence"}
@@ -210,8 +210,8 @@
 {"fields": ["Group Theory"], "id": "GapConjecture.gap_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Gap conjecture"}
 {"fields": ["Number Theory"], "id": "GaussCircleProblem.error_isBigO", "kind": "open", "prize": null, "solved": false, "title": "Gauss circle problem — error isBigO"}
 {"fields": ["Number Theory"], "id": "GaussCircleProblem.error_le", "kind": "known", "prize": null, "solved": true, "title": "Gauss circle problem — error le"}
-{"fields": ["Number Theory"], "id": "GaussCircleProblem.error_not_isLittleO", "kind": "known", "prize": null, "solved": false, "title": "Gauss circle problem — error not isLittleO"}
-{"fields": ["Number Theory"], "id": "GaussCircleProblem.exact_form_floor", "kind": "known", "prize": null, "solved": true, "title": "Gauss circle problem — exact form floor"}
+{"fields": ["Number Theory"], "id": "GaussCircleProblem.error_not_isLittleO", "kind": "known", "prize": null, "solved": true, "title": "Gauss circle problem — error not isLittleO"}
+{"fields": ["Number Theory"], "id": "GaussCircleProblem.exact_form_floor", "kind": "known", "prize": null, "solved": false, "title": "Gauss circle problem — exact form floor"}
 {"fields": ["Number Theory"], "id": "Gilbreath.gilbreath_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Gilbreath's conjecture"}
 {"fields": ["Number Theory"], "id": "GoldbachConjecture.goldbach", "kind": "open", "prize": null, "solved": false, "title": "Goldbach's conjecture"}
 {"fields": ["Complex Analysis"], "id": "GoodmanConjecture.goodman_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Goodman's conjecture."}
@@ -226,7 +226,7 @@
 {"fields": ["Linear Algebra"], "id": "Hadamard.HadamardConjecture", "kind": "open", "prize": null, "solved": false, "title": "Hadamard's conjecture"}
 {"fields": ["Linear Algebra"], "id": "Hadamard.HadamardConjecture.variants.167", "kind": "open", "prize": null, "solved": false, "title": "Hadamard's conjecture — «167»"}
 {"fields": ["Linear Algebra"], "id": "Hadamard.HadamardConjecture.variants.first_cases", "kind": "known", "prize": null, "solved": false, "title": "Hadamard's conjecture — first cases"}
-{"fields": ["Combinatorics"], "id": "HajosConjecture.hajos_conjecture", "kind": "known", "prize": null, "solved": true, "title": "Hajós' conjecture (1961) — disproved."}
+{"fields": ["Combinatorics"], "id": "HajosConjecture.hajos_conjecture", "kind": "known", "prize": null, "solved": false, "title": "Hajós' conjecture (1961) — disproved."}
 {"fields": ["Combinatorics"], "id": "HajosConjecture.hajos_conjecture.variants.catlin", "kind": "known", "prize": null, "solved": true, "title": "Catlin (1979): counterexamples for every $k \\ge 7$."}
 {"fields": ["Combinatorics"], "id": "HajosConjecture.hajos_conjecture.variants.five_six", "kind": "open", "prize": null, "solved": false, "title": "The cases $k = 5$ and $k = 6$ remain open."}
 {"fields": ["Combinatorics"], "id": "HajosConjecture.hajos_conjecture.variants.le_four", "kind": "known", "prize": null, "solved": true, "title": "The cases $k \\le 4$ (Dirac 1952)."}
@@ -234,18 +234,18 @@
 {"fields": ["Number Theory"], "id": "Hall.hall_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Hall's conjecture — hall conjecture"}
 {"fields": ["Number Theory"], "id": "Hall.weak_hall_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Hall's conjecture — weak hall conjecture"}
 {"fields": ["Number Theory"], "id": "HardyLittlewood.first_hardy_littlewood_conjecture", "kind": "open", "prize": null, "solved": false, "title": "First Hardy–Littlewood conjecture — first hardy littlewood conjecture"}
-{"fields": ["Number Theory"], "id": "HardyLittlewood.not_first_and_secondHardyLittlewoodConjecture", "kind": "known", "prize": null, "solved": true, "title": "First Hardy–Littlewood conjecture — not first and secondHardyLittlewoodConjecture"}
+{"fields": ["Number Theory"], "id": "HardyLittlewood.not_first_and_secondHardyLittlewoodConjecture", "kind": "known", "prize": null, "solved": false, "title": "First Hardy–Littlewood conjecture — not first and secondHardyLittlewoodConjecture"}
 {"fields": ["Number Theory"], "id": "HardyLittlewood.second_hardy_littlewood_conjecture", "kind": "open", "prize": null, "solved": false, "title": "First Hardy–Littlewood conjecture — second hardy littlewood conjecture"}
 {"fields": ["Algebraic Geometry", "Number Theory"], "id": "HasseWeil.exists_hasAnalyticContinuation", "kind": "open", "prize": null, "solved": false, "title": "The Hasse--Weil conjecture for elliptic curves — exists hasAnalyticContinuation"}
 {"fields": ["Algebraic Geometry", "Number Theory"], "id": "HasseWeil.exists_hasAnalyticContinuation_rat", "kind": "known", "prize": null, "solved": false, "title": "The Hasse--Weil conjecture for elliptic curves — exists hasAnalyticContinuation rat"}
 {"fields": ["Algebraic Geometry", "Number Theory"], "id": "HasseWeil.exists_hasMeromorphicContinuation", "kind": "open", "prize": null, "solved": false, "title": "The Hasse--Weil conjecture for elliptic curves — exists hasMeromorphicContinuation"}
-{"fields": ["Combinatorics"], "id": "HedetniemiConjecture.hedetniemi_conjecture", "kind": "known", "prize": null, "solved": true, "title": "Hedetniemi's conjecture (1966) — disproved."}
+{"fields": ["Combinatorics"], "id": "HedetniemiConjecture.hedetniemi_conjecture", "kind": "known", "prize": null, "solved": false, "title": "Hedetniemi's conjecture (1966) — disproved."}
 {"fields": ["Combinatorics"], "id": "HedetniemiConjecture.hedetniemi_conjecture.variants.el_zahar_sauer", "kind": "known", "prize": null, "solved": true, "title": "El-Zahar–Sauer (1985): the conjecture holds when `min {χ(G), χ(H)} ≤ 4`."}
 {"fields": ["Combinatorics"], "id": "HedetniemiConjecture.hedetniemi_conjecture.variants.shitov", "kind": "known", "prize": null, "solved": true, "title": "Shitov (2019): the conjecture fails."}
 {"fields": ["Number Theory"], "id": "HyperperfectNumber.infinitely_many_hyperperfect_numbers", "kind": "open", "prize": null, "solved": false, "title": "Hyperperfect numbers — infinitely many hyperperfect numbers"}
 {"fields": ["Number Theory"], "id": "HyperperfectNumber.mccranie_odd_hyperperfect_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Hyperperfect numbers — mccranie odd hyperperfect conjecture"}
 {"fields": ["Number Theory"], "id": "HyperperfectNumber.minoli_bear_hyperperfect_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Hyperperfect numbers — minoli bear hyperperfect conjecture"}
-{"fields": ["Number Theory"], "id": "HyperperfectNumber.two_hyperperfect_characterization", "kind": "known", "prize": null, "solved": true, "title": "Hyperperfect numbers — two hyperperfect characterization"}
+{"fields": ["Number Theory"], "id": "HyperperfectNumber.two_hyperperfect_characterization", "kind": "known", "prize": null, "solved": false, "title": "Hyperperfect numbers — two hyperperfect characterization"}
 {"fields": ["Number Theory"], "id": "Idoneal.idoneal_numbers_completeness", "kind": "known", "prize": null, "solved": false, "title": "Idoneal numbers completeness conjecture"}
 {"fields": ["Geometry"], "id": "InscribedSquare.exists_inscribed_rectangle", "kind": "known", "prize": null, "solved": false, "title": "Inscribed square problem — exists inscribed rectangle"}
 {"fields": ["Geometry"], "id": "InscribedSquare.exists_inscribed_rectangle_of_smooth", "kind": "known", "prize": null, "solved": false, "title": "Inscribed square problem — exists inscribed rectangle of smooth"}
@@ -269,19 +269,19 @@
 {"fields": ["Algebraic Geometry"], "id": "JacobianConjecture.jacobian_conjecture_two_variables", "kind": "open", "prize": null, "solved": false, "title": "Jacobian conjecture"}
 {"fields": ["Associative Rings"], "id": "Jacobson.jacobson_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Jacobson Conjecture"}
 {"fields": ["Associative Rings", "Commutative Algebra"], "id": "Jacobson.jacobson_conjecture_of_comm_ring", "kind": "warmup", "prize": null, "solved": true, "title": "Jacobson Conjecture — jacobson conjecture of comm ring"}
-{"fields": ["Associative Rings"], "id": "Jacobson.jacobson_conjecture_of_right_noetherian", "kind": "known", "prize": null, "solved": true, "title": "Jacobson Conjecture — jacobson conjecture of right noetherian"}
+{"fields": ["Associative Rings"], "id": "Jacobson.jacobson_conjecture_of_right_noetherian", "kind": "known", "prize": null, "solved": false, "title": "Jacobson Conjecture — jacobson conjecture of right noetherian"}
 {"fields": ["Dynamical Systems", "Number Theory"], "id": "JugglerConjecture.juggler_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Juggler conjecture"}
 {"fields": ["Harmonic Analysis"], "id": "Kakeya.kakeya_2d", "kind": "known", "prize": null, "solved": false, "title": "Kakeya problem — kakeya 2d"}
 {"fields": ["Harmonic Analysis"], "id": "Kakeya.kakeya_3d", "kind": "known", "prize": null, "solved": false, "title": "Kakeya problem — kakeya 3d"}
 {"fields": ["Convex & Discrete Geometry"], "id": "Kakeya.kakeya_finite", "kind": "known", "prize": null, "solved": false, "title": "Kakeya problem — kakeya finite"}
 {"fields": ["Harmonic Analysis"], "id": "Kakeya.kakeya_set_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Kakeya problem — kakeya set conjecture"}
-{"fields": ["Associative Rings", "Group Theory"], "id": "Kaplansky.UnitConjecture.counterexamples.i", "kind": "known", "prize": null, "solved": true, "title": "Kaplansky's Conjectures — i"}
-{"fields": ["Associative Rings", "Group Theory"], "id": "Kaplansky.UnitConjecture.counterexamples.ii", "kind": "known", "prize": null, "solved": true, "title": "Kaplansky's Conjectures — ii"}
-{"fields": ["Associative Rings", "Group Theory"], "id": "Kaplansky.direct_finiteness_conjecture", "kind": "known", "prize": null, "solved": true, "title": "Kaplansky's direct finiteness conjecture"}
+{"fields": ["Associative Rings", "Group Theory"], "id": "Kaplansky.UnitConjecture.counterexamples.i", "kind": "known", "prize": null, "solved": false, "title": "Kaplansky's Conjectures — i"}
+{"fields": ["Associative Rings", "Group Theory"], "id": "Kaplansky.UnitConjecture.counterexamples.ii", "kind": "known", "prize": null, "solved": false, "title": "Kaplansky's Conjectures — ii"}
+{"fields": ["Associative Rings", "Group Theory"], "id": "Kaplansky.direct_finiteness_conjecture", "kind": "known", "prize": null, "solved": false, "title": "Kaplansky's direct finiteness conjecture"}
 {"fields": ["Associative Rings", "Group Theory"], "id": "Kaplansky.direct_finiteness_conjecture.variants.char_two", "kind": "known", "prize": null, "solved": true, "title": "Kaplansky's Conjectures — char two"}
 {"fields": ["Associative Rings", "Group Theory"], "id": "Kaplansky.direct_finiteness_conjecture.variants.char_zero", "kind": "known", "prize": null, "solved": true, "title": "Kaplansky's Conjectures — char zero"}
 {"fields": ["Associative Rings", "Group Theory"], "id": "Kaplansky.idempotent_conjecture", "kind": "open", "prize": null, "solved": false, "title": "The idempotent conjecture"}
-{"fields": ["Group Theory"], "id": "Kaplansky.promislow_group_is_torsionfree", "kind": "warmup", "prize": null, "solved": true, "title": "Kaplansky's Conjectures"}
+{"fields": ["Group Theory"], "id": "Kaplansky.promislow_group_is_torsionfree", "kind": "warmup", "prize": null, "solved": false, "title": "Kaplansky's Conjectures"}
 {"fields": ["Number Theory"], "id": "KeithNumber.keith_numbers_infinite", "kind": "open", "prize": null, "solved": false, "title": "Keith numbers — keith numbers infinite"}
 {"fields": ["Number Theory"], "id": "KeithNumber.klazar_luca_keith_counting_bound", "kind": "known", "prize": null, "solved": false, "title": "Keith numbers — klazar luca keith counting bound"}
 {"fields": ["Associative Rings"], "id": "Koethe.KotheConjecture", "kind": "open", "prize": null, "solved": false, "title": "Köthe conjecture — KotheConjecture"}
@@ -298,13 +298,13 @@
 {"fields": ["Number Theory"], "id": "LegendreConjecture.legendre_conjecture.ferreira_large_n", "kind": "known", "prize": null, "solved": false, "title": "Legendre's conjecture — ferreira large n"}
 {"fields": ["Number Theory"], "id": "LehmerMahlerMeasureProblem.lehmer_mahler_measure_problem", "kind": "open", "prize": null, "solved": false, "title": "Lehmer's Mahler measure problem"}
 {"fields": ["Number Theory"], "id": "LehmerMahlerMeasureProblem.lehmer_mahler_measure_problem.variants.best", "kind": "open", "prize": null, "solved": false, "title": "Lehmer's Mahler measure problem — best"}
-{"fields": ["Number Theory"], "id": "LehmerMahlerMeasureProblem.lehmer_mahler_measure_problem.variants.not_reciprocal", "kind": "known", "prize": null, "solved": false, "title": "Lehmer's Mahler measure problem — not reciprocal"}
-{"fields": ["Number Theory"], "id": "LehmerMahlerMeasureProblem.lehmer_mahler_measure_problem.variants.odd", "kind": "known", "prize": null, "solved": false, "title": "Lehmer's Mahler measure problem — odd"}
+{"fields": ["Number Theory"], "id": "LehmerMahlerMeasureProblem.lehmer_mahler_measure_problem.variants.not_reciprocal", "kind": "known", "prize": null, "solved": true, "title": "Lehmer's Mahler measure problem — not reciprocal"}
+{"fields": ["Number Theory"], "id": "LehmerMahlerMeasureProblem.lehmer_mahler_measure_problem.variants.odd", "kind": "known", "prize": null, "solved": true, "title": "Lehmer's Mahler measure problem — odd"}
 {"fields": ["Number Theory"], "id": "LehmerTotient.lehmer_totient", "kind": "open", "prize": null, "solved": false, "title": "Lehmer's totient problem"}
-{"fields": ["Group Theory"], "id": "LeinsterGroup.abelian_is_leinster_iff_cyclic_perfect", "kind": "known", "prize": null, "solved": true, "title": "Leinster Groups — abelian is leinster iff cyclic perfect"}
-{"fields": ["Group Theory"], "id": "LeinsterGroup.cyclic_of_perfect_is_leinster", "kind": "warmup", "prize": null, "solved": true, "title": "Leinster Groups — cyclic of perfect is leinster"}
-{"fields": ["Group Theory"], "id": "LeinsterGroup.dihedral_is_leinster_iff_odd_perfect", "kind": "known", "prize": null, "solved": true, "title": "Leinster Groups — dihedral is leinster iff odd perfect"}
-{"fields": ["Group Theory"], "id": "LeinsterGroup.exists_nonabelian_leinster_group", "kind": "known", "prize": null, "solved": true, "title": "Leinster Groups — exists nonabelian leinster group"}
+{"fields": ["Group Theory"], "id": "LeinsterGroup.abelian_is_leinster_iff_cyclic_perfect", "kind": "known", "prize": null, "solved": false, "title": "Leinster Groups — abelian is leinster iff cyclic perfect"}
+{"fields": ["Group Theory"], "id": "LeinsterGroup.cyclic_of_perfect_is_leinster", "kind": "warmup", "prize": null, "solved": false, "title": "Leinster Groups — cyclic of perfect is leinster"}
+{"fields": ["Group Theory"], "id": "LeinsterGroup.dihedral_is_leinster_iff_odd_perfect", "kind": "known", "prize": null, "solved": false, "title": "Leinster Groups — dihedral is leinster iff odd perfect"}
+{"fields": ["Group Theory"], "id": "LeinsterGroup.exists_nonabelian_leinster_group", "kind": "known", "prize": null, "solved": false, "title": "Leinster Groups — exists nonabelian leinster group"}
 {"fields": ["Group Theory"], "id": "LeinsterGroup.infinitely_many_leinster_groups", "kind": "open", "prize": null, "solved": false, "title": "Conjecture"}
 {"fields": ["Number Theory"], "id": "Lemoine.lemoine_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Lemoine's conjectures — lemoine conjecture"}
 {"fields": ["Number Theory"], "id": "Lemoine.lemoine_conjecture_extension", "kind": "open", "prize": null, "solved": false, "title": "Lemoine's conjectures — lemoine conjecture extension"}
@@ -330,7 +330,7 @@
 {"fields": ["Number Theory"], "id": "MagicSquares.exists_magic_square_squares", "kind": "open", "prize": null, "solved": false, "title": "Magic Squares — exists magic square squares"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "MagicSquares.exists_semi_magic_square_cubes", "kind": "open", "prize": null, "solved": false, "title": "Magic Squares — exists semi magic square cubes"}
 {"fields": ["Number Theory"], "id": "Mahler32.mahler_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Mahler's 3/2 Problem"}
-{"fields": ["Number Theory"], "id": "Mahler32.mahler_conjecture.variants.consequence", "kind": "warmup", "prize": null, "solved": true, "title": "Mahler's 3/2 Problem — consequence"}
+{"fields": ["Number Theory"], "id": "Mahler32.mahler_conjecture.variants.consequence", "kind": "warmup", "prize": null, "solved": false, "title": "Mahler's 3/2 Problem — consequence"}
 {"fields": ["Number Theory"], "id": "Mahler32.mahler_conjecture.variants.flatto_lagarias_pollington", "kind": "known", "prize": null, "solved": true, "title": "Mahler's 3/2 Problem — flatto lagarias pollington"}
 {"fields": ["Dynamical Systems"], "id": "Mandelbrot.MLC", "kind": "open", "prize": null, "solved": false, "title": "Conjectures about the Mandelbrot and Multibrot sets — MLC"}
 {"fields": ["Dynamical Systems"], "id": "Mandelbrot.MLC_general_exponent", "kind": "open", "prize": null, "solved": false, "title": "Conjectures about the Mandelbrot and Multibrot sets — MLC general exponent"}
@@ -338,18 +338,18 @@
 {"fields": ["Dynamical Systems"], "id": "Mandelbrot.density_of_hyperbolicity_general_exponent", "kind": "open", "prize": null, "solved": false, "title": "Conjectures about the Mandelbrot and Multibrot sets — density of hyperbolicity general exponent"}
 {"fields": ["Dynamical Systems"], "id": "Mandelbrot.volume_frontier_mandelbrotSet_eq_zero", "kind": "open", "prize": null, "solved": false, "title": "Conjectures about the Mandelbrot and Multibrot sets — volume frontier mandelbrotSet eq zero"}
 {"fields": ["Dynamical Systems"], "id": "Mandelbrot.volume_frontier_multibrotSet_eq_zero", "kind": "open", "prize": null, "solved": false, "title": "Conjectures about the Mandelbrot and Multibrot sets — volume frontier multibrotSet eq zero"}
-{"fields": ["Number Theory"], "id": "MaximalPrimeGap.infinite_maximalPrimeGapIndex", "kind": "warmup", "prize": null, "solved": true, "title": "Shanks's asymptotic conjecture for maximal prime gaps — infinite maximalPrimeGapIndex"}
+{"fields": ["Number Theory"], "id": "MaximalPrimeGap.infinite_maximalPrimeGapIndex", "kind": "warmup", "prize": null, "solved": false, "title": "Shanks's asymptotic conjecture for maximal prime gaps — infinite maximalPrimeGapIndex"}
 {"fields": ["Number Theory"], "id": "MaximalPrimeGap.shanks_maximal_prime_gap_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Shanks's asymptotic conjecture for maximal prime gaps — shanks maximal prime gap conjecture"}
 {"fields": ["Number Theory"], "id": "MaximalPrimeGap.shanks_maximal_prime_gap_conjecture.variants.record_indices", "kind": "open", "prize": null, "solved": false, "title": "Shanks's asymptotic conjecture for maximal prime gaps — record indices"}
 {"fields": ["Field Theory"], "id": "MeanValueProblem.mean_value_problem", "kind": "open", "prize": null, "solved": false, "title": "Mean value problem"}
 {"fields": ["Field Theory"], "id": "MeanValueProblem.mean_value_problem_leq_4", "kind": "known", "prize": null, "solved": false, "title": "Mean value problem — mean value problem leq 4"}
-{"fields": ["Field Theory"], "id": "MeanValueProblem.mean_value_problem_of_real_roots", "kind": "known", "prize": null, "solved": true, "title": "Mean value problem — mean value problem of real roots"}
-{"fields": ["Field Theory"], "id": "MeanValueProblem.mean_value_problem_of_roots_same_norm", "kind": "known", "prize": null, "solved": true, "title": "Mean value problem — mean value problem of roots same norm"}
+{"fields": ["Field Theory"], "id": "MeanValueProblem.mean_value_problem_of_real_roots", "kind": "known", "prize": null, "solved": false, "title": "Mean value problem — mean value problem of real roots"}
+{"fields": ["Field Theory"], "id": "MeanValueProblem.mean_value_problem_of_roots_same_norm", "kind": "known", "prize": null, "solved": false, "title": "Mean value problem — mean value problem of roots same norm"}
 {"fields": ["Number Theory"], "id": "Mersenne.catalans_mersenne_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Conjectures about Mersenne primes — catalans mersenne conjecture"}
 {"fields": ["Number Theory"], "id": "Mersenne.infinitely_many_mersenne_primes", "kind": "open", "prize": null, "solved": false, "title": "Conjectures about Mersenne primes — infinitely many mersenne primes"}
 {"fields": ["Number Theory"], "id": "Mersenne.new_mersenne_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Conjectures about Mersenne primes — new mersenne conjecture"}
 {"fields": ["Number Theory"], "id": "Mersenne.new_mersenne_conjecture.variants.prime", "kind": "open", "prize": null, "solved": false, "title": "Conjectures about Mersenne primes"}
-{"fields": ["Number Theory"], "id": "Mersenne.rotkiewicz_infinite_non_wieferich_of_squarefree_mersenne", "kind": "known", "prize": null, "solved": true, "title": "Conjectures about Mersenne primes — rotkiewicz infinite non wieferich of squarefree mersenne"}
+{"fields": ["Number Theory"], "id": "Mersenne.rotkiewicz_infinite_non_wieferich_of_squarefree_mersenne", "kind": "known", "prize": null, "solved": false, "title": "Conjectures about Mersenne primes — rotkiewicz infinite non wieferich of squarefree mersenne"}
 {"fields": ["Number Theory"], "id": "Mersenne.sq_dvd_mersenne_iff_isWieferichPrime", "kind": "warmup", "prize": null, "solved": true, "title": "Conjectures about Mersenne primes — sq dvd mersenne iff isWieferichPrime"}
 {"fields": ["Number Theory"], "id": "Mersenne.squarefree_mersenne_of_prime", "kind": "open", "prize": null, "solved": false, "title": "Conjectures about Mersenne primes — squarefree mersenne of prime"}
 {"fields": ["Combinatorics", "Game Theory & Economics"], "id": "MeynielConjecture.meyniel_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Meyniel's conjecture (c. 1985)."}
@@ -359,17 +359,17 @@
 {"fields": ["Number Theory"], "id": "Mills.exists-prime", "kind": "known", "prize": null, "solved": false, "title": "Mills' theorem"}
 {"fields": ["Number Theory"], "id": "Mills.exists_least", "kind": "known", "prize": null, "solved": false, "title": "Mills' constant."}
 {"fields": ["Number Theory"], "id": "Mills.irrational", "kind": "known", "prize": null, "solved": false, "title": "Mills' constant is irrational"}
-{"fields": ["Number Theory"], "id": "Mills.lower_bound_of_RH", "kind": "known", "prize": null, "solved": true, "title": "Mills' constant lower bound"}
+{"fields": ["Number Theory"], "id": "Mills.lower_bound_of_RH", "kind": "known", "prize": null, "solved": false, "title": "Mills' constant lower bound"}
 {"fields": ["Number Theory"], "id": "Mills.mem_Ioo", "kind": "known", "prize": null, "solved": false, "title": "Mills' Theorem"}
 {"fields": ["Computer Science", "Number Theory"], "id": "MinimalPrime.base_seventeen_f19_family_minimal_prime_question", "kind": "open", "prize": null, "solved": false, "title": "Minimal primes in radix bases — base seventeen f19 family minimal prime question"}
 {"fields": ["Computer Science", "Number Theory"], "id": "MinimalPrime.base_ten_minimal_primes_card", "kind": "known", "prize": null, "solved": true, "title": "Minimal primes in radix bases — base ten minimal primes card"}
-{"fields": ["Computer Science", "Number Theory"], "id": "MinimalPrime.base_ten_minimal_primes_eq", "kind": "known", "prize": null, "solved": true, "title": "Minimal primes in radix bases — base ten minimal primes eq"}
+{"fields": ["Computer Science", "Number Theory"], "id": "MinimalPrime.base_ten_minimal_primes_eq", "kind": "known", "prize": null, "solved": false, "title": "Minimal primes in radix bases — base ten minimal primes eq"}
 {"fields": ["Computer Science", "Number Theory"], "id": "MinimalPrime.minimal_primes_finite_in_every_base", "kind": "warmup", "prize": null, "solved": true, "title": "Minimal primes in radix bases — minimal primes finite in every base"}
-{"fields": ["Number Theory"], "id": "ModularityConjecture.modularity_conjecture", "kind": "known", "prize": null, "solved": true, "title": "Modularity conjecture"}
+{"fields": ["Number Theory"], "id": "ModularityConjecture.modularity_conjecture", "kind": "known", "prize": null, "solved": false, "title": "Modularity conjecture"}
 {"fields": ["Complex Analysis", "Number Theory"], "id": "MontgomeryPairCorrelationConjecture.montgomery_pair_correlation_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Montgomery's GUE pair correlation conjecture for zeta zeros"}
 {"fields": ["Complex Analysis", "Number Theory"], "id": "MontgomeryPairCorrelationConjecture.montgomery_pair_correlation_conjecture.variants.general_interval", "kind": "open", "prize": null, "solved": false, "title": "Montgomery's GUE pair correlation conjecture for zeta zeros — general interval"}
 {"fields": ["Convex & Discrete Geometry"], "id": "MoserWorm.convex_mosers_worm_problem", "kind": "open", "prize": null, "solved": false, "title": "Convex Moser's Worm Problem"}
-{"fields": ["Convex & Discrete Geometry"], "id": "MoserWorm.convex_mosers_worm_problem_bound_attained", "kind": "known", "prize": null, "solved": true, "title": "Moser's Worm — convex mosers worm problem bound attained"}
+{"fields": ["Convex & Discrete Geometry"], "id": "MoserWorm.convex_mosers_worm_problem_bound_attained", "kind": "known", "prize": null, "solved": false, "title": "Moser's Worm — convex mosers worm problem bound attained"}
 {"fields": ["Convex & Discrete Geometry"], "id": "MoserWorm.convex_mosers_worm_problem_lower_bound", "kind": "known", "prize": null, "solved": false, "title": "Moser's Worm — convex mosers worm problem lower bound"}
 {"fields": ["Convex & Discrete Geometry"], "id": "MoserWorm.convex_mosers_worm_problem_upper_bound", "kind": "known", "prize": null, "solved": false, "title": "Moser's Worm — convex mosers worm problem upper bound"}
 {"fields": ["Convex & Discrete Geometry"], "id": "MoserWorm.mosers_worm_problem", "kind": "open", "prize": null, "solved": false, "title": "Moser's Worm Problem"}
@@ -402,7 +402,7 @@
 {"fields": ["Combinatorics"], "id": "PetersenColoringConjecture.petersen_coloring_conjecture", "kind": "open", "prize": null, "solved": false, "title": "The Petersen colouring conjecture (Jaeger 1988)."}
 {"fields": ["Combinatorics"], "id": "PetersenColoringConjecture.petersen_coloring_conjecture.variants.normal_five_edge_coloring", "kind": "known", "prize": null, "solved": true, "title": "Jaeger's reformulation: normal `5`-edge-colourings."}
 {"fields": ["Commutative Algebra"], "id": "PierceBirkhoff.pierce_birkhoff_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Pierce–Birkhoff conjecture — pierce birkhoff conjecture"}
-{"fields": ["Commutative Algebra"], "id": "PierceBirkhoff.pierce_birkhoff_conjecture_dim_one", "kind": "known", "prize": null, "solved": true, "title": "Pierce–Birkhoff conjecture — pierce birkhoff conjecture dim one"}
+{"fields": ["Commutative Algebra"], "id": "PierceBirkhoff.pierce_birkhoff_conjecture_dim_one", "kind": "known", "prize": null, "solved": false, "title": "Pierce–Birkhoff conjecture — pierce birkhoff conjecture dim one"}
 {"fields": ["Commutative Algebra"], "id": "PierceBirkhoff.pierce_birkhoff_conjecture_dim_two", "kind": "known", "prize": null, "solved": false, "title": "Pierce–Birkhoff conjecture — pierce birkhoff conjecture dim two"}
 {"fields": ["Number Theory"], "id": "PierpontPrime.infinitely_many_pierpont_primes", "kind": "open", "prize": null, "solved": false, "title": "Pierpont primes"}
 {"fields": ["Number Theory"], "id": "PollocksConjecture.pollock_tetrahedral", "kind": "open", "prize": null, "solved": false, "title": "Pollock's (tetrahedral numbers) conjecture"}
@@ -411,9 +411,9 @@
 {"fields": ["Computer Science"], "id": "PolyTime.isPolyTime_primeFactorsList", "kind": "open", "prize": null, "solved": false, "title": "The integer factorization problem"}
 {"fields": ["Computer Science"], "id": "PolyTime.isPolyTime_squareRootSum", "kind": "open", "prize": null, "solved": false, "title": "Is the square-root sum problem polynomial time (single sum version)?"}
 {"fields": ["Computer Science"], "id": "PolyTime.isPolyTime_squareRootSumTwoSided", "kind": "open", "prize": null, "solved": false, "title": "Is the square-root sum problem polynomial time (two sum version)?"}
-{"fields": ["Harmonic Analysis"], "id": "PompeiuProblem.ball_not_hasPompeiuProperty", "kind": "known", "prize": null, "solved": true, "title": "The Pompeiu problem"}
+{"fields": ["Harmonic Analysis"], "id": "PompeiuProblem.ball_not_hasPompeiuProperty", "kind": "known", "prize": null, "solved": false, "title": "The Pompeiu problem"}
 {"fields": ["Number Theory"], "id": "PowerfulNumbersDensity.asymptotic_bateman_grosswald", "kind": "known", "prize": null, "solved": false, "title": "Asymptotic density of powerful numbers — asymptotic bateman grosswald"}
-{"fields": ["Number Theory"], "id": "PowerfulNumbersDensity.asymptotic_erdos_szekeres", "kind": "known", "prize": null, "solved": true, "title": "Asymptotic density of powerful numbers — asymptotic erdos szekeres"}
+{"fields": ["Number Theory"], "id": "PowerfulNumbersDensity.asymptotic_erdos_szekeres", "kind": "known", "prize": null, "solved": false, "title": "Asymptotic density of powerful numbers — asymptotic erdos szekeres"}
 {"fields": ["Number Theory"], "id": "PowerfulNumbersDensity.error_term_improvement", "kind": "known", "prize": null, "solved": false, "title": "Asymptotic density of powerful numbers — error term improvement"}
 {"fields": ["Number Theory"], "id": "PrimeTriplets.prime_triplets", "kind": "open", "prize": null, "solved": false, "title": "Prime Triplet Conjecture"}
 {"fields": ["Number Theory"], "id": "PrimesAndPerfectSquares.infinite_prime_sq_add_one", "kind": "open", "prize": null, "solved": false, "title": "Primes and perfect squares"}
@@ -425,10 +425,10 @@
 {"fields": ["Number Theory"], "id": "ProthPrime.infinitely_many_proth_primes", "kind": "open", "prize": null, "solved": false, "title": "Proth primes — infinitely many proth primes"}
 {"fields": ["Number Theory"], "id": "ProthPrime.infinitely_many_proth_primes_multiplier_three", "kind": "open", "prize": null, "solved": false, "title": "Proth primes — infinitely many proth primes multiplier three"}
 {"fields": ["Number Theory"], "id": "ProthPrime.proth_primality_criterion", "kind": "warmup", "prize": null, "solved": true, "title": "Proth's primality theorem"}
-{"fields": ["Number Theory"], "id": "QuadraticAlgebra.discr_rat_of_modEq_one", "kind": "warmup", "prize": null, "solved": true, "title": "Infinitude of Wall–Sun–Sun primes — discr rat of modEq one"}
+{"fields": ["Number Theory"], "id": "QuadraticAlgebra.discr_rat_of_modEq_one", "kind": "warmup", "prize": null, "solved": false, "title": "Infinitude of Wall–Sun–Sun primes — discr rat of modEq one"}
 {"fields": ["Number Theory"], "id": "QuadraticAlgebra.discr_rat_of_not_modEq_one", "kind": "warmup", "prize": null, "solved": true, "title": "Infinitude of Wall–Sun–Sun primes — discr rat of not modEq one"}
 {"fields": ["Number Theory"], "id": "QuasiperfectNumbers.exists_quasiperfect", "kind": "open", "prize": null, "solved": false, "title": "Quasiperfect Numbers Conjecture."}
-{"fields": ["Number Theory"], "id": "RamanujanTau.-_two", "kind": "warmup", "prize": null, "solved": true, "title": "Ramanujan τ-function — τ two"}
+{"fields": ["Number Theory"], "id": "RamanujanTau.-_two", "kind": "warmup", "prize": null, "solved": false, "title": "Ramanujan τ-function — τ two"}
 {"fields": ["Number Theory"], "id": "RamanujanTau.lehmer_ramanujan_tau", "kind": "open", "prize": null, "solved": false, "title": "Ramanujan τ-function — lehmer ramanujan tau"}
 {"fields": ["Number Theory"], "id": "RamanujanTau.ramanujan_petersson", "kind": "known", "prize": null, "solved": false, "title": "Ramanujan τ-function — ramanujan petersson"}
 {"fields": ["Combinatorics"], "id": "RamseyNumbers.ramsey_number_five_five", "kind": "open", "prize": null, "solved": false, "title": "Ramsey numbers — ramsey number five five"}
@@ -436,7 +436,7 @@
 {"fields": ["Combinatorics"], "id": "RamseyNumbers.ramsey_number_four_five", "kind": "known", "prize": null, "solved": false, "title": "Ramsey numbers — ramsey number four five"}
 {"fields": ["Combinatorics"], "id": "RamseyNumbers.ramsey_number_four_four", "kind": "known", "prize": null, "solved": true, "title": "Ramsey numbers — ramsey number four four"}
 {"fields": ["Combinatorics"], "id": "RamseyNumbers.ramsey_number_six_six", "kind": "open", "prize": null, "solved": false, "title": "Ramsey numbers — ramsey number six six"}
-{"fields": ["Combinatorics"], "id": "RamseyNumbers.ramsey_number_six_six_lower_bound", "kind": "known", "prize": null, "solved": true, "title": "Ramsey numbers — ramsey number six six lower bound"}
+{"fields": ["Combinatorics"], "id": "RamseyNumbers.ramsey_number_six_six_lower_bound", "kind": "known", "prize": null, "solved": false, "title": "Ramsey numbers — ramsey number six six lower bound"}
 {"fields": ["Combinatorics"], "id": "RamseyNumbers.ramsey_number_six_six_upper_bound", "kind": "known", "prize": null, "solved": false, "title": "Ramsey numbers — ramsey number six six upper bound"}
 {"fields": ["Combinatorics"], "id": "RamseyNumbers.ramsey_number_three_eight", "kind": "known", "prize": null, "solved": false, "title": "Ramsey numbers — ramsey number three eight"}
 {"fields": ["Combinatorics"], "id": "RamseyNumbers.ramsey_number_three_five", "kind": "known", "prize": null, "solved": true, "title": "Ramsey numbers — ramsey number three five"}
@@ -450,12 +450,12 @@
 {"fields": ["Combinatorics"], "id": "ReconstructionConjecture.reconstruction_conjecture", "kind": "open", "prize": null, "solved": false, "title": "The reconstruction conjecture"}
 {"fields": ["Combinatorics"], "id": "ReconstructionConjecture.reconstruction_conjecture.variants.tree", "kind": "known", "prize": null, "solved": false, "title": "Trees are reconstructible"}
 {"fields": ["Number Theory"], "id": "RefactorableNumber.infinitely_many_consecutive_refactorable_pairs", "kind": "open", "prize": null, "solved": false, "title": "Colton's Conjecture (1999, Conjecture 2)"}
-{"fields": ["Number Theory"], "id": "RefactorableNumber.no_three_consecutive_refactorable", "kind": "known", "prize": null, "solved": true, "title": "Zelinsky's Theorem (2002)"}
+{"fields": ["Number Theory"], "id": "RefactorableNumber.no_three_consecutive_refactorable", "kind": "known", "prize": null, "solved": false, "title": "Zelinsky's Theorem (2002)"}
 {"fields": ["Number Theory"], "id": "RefactorableNumber.refactorable_hasDensity_zero", "kind": "known", "prize": null, "solved": true, "title": "Kennedy–Cooper Theorem (1990)"}
 {"fields": ["Number Theory"], "id": "RefactorableNumber.zelinsky_refactorable_progression_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Zelinsky's Conjecture (2002, Conjecture 32)"}
 {"fields": ["Number Theory"], "id": "RegularPrimes.infinitude_of_irregularprimes", "kind": "known", "prize": null, "solved": false, "title": "Infinite Regular Primes — infinitude of irregularprimes"}
 {"fields": ["Number Theory"], "id": "RegularPrimes.isRegularPrime_iff_Bernoulli", "kind": "warmup", "prize": null, "solved": false, "title": "Kummer's criterion."}
-{"fields": ["Number Theory"], "id": "RegularPrimes.not_isRegularPrime_37", "kind": "warmup", "prize": null, "solved": true, "title": "Infinite Regular Primes — not isRegularPrime 37"}
+{"fields": ["Number Theory"], "id": "RegularPrimes.not_isRegularPrime_37", "kind": "warmup", "prize": null, "solved": false, "title": "Infinite Regular Primes — not isRegularPrime 37"}
 {"fields": ["Number Theory"], "id": "RegularPrimes.regularprime_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Infinite Regular Primes — regularprime conjecture"}
 {"fields": ["Number Theory"], "id": "RegularPrimes.small_regular_primes", "kind": "warmup", "prize": null, "solved": false, "title": "Infinite Regular Primes — small regular primes"}
 {"fields": ["Number Theory"], "id": "RepunitPrime.infinitely_many_repunit_primes", "kind": "open", "prize": null, "solved": false, "title": "Decimal Repunit Primes"}
@@ -466,9 +466,9 @@
 {"fields": ["Number Theory", "Special Functions"], "id": "RiemannZetaValues.irrational_nine", "kind": "open", "prize": null, "solved": false, "title": "Particular values of the Riemann zeta function — irrational nine"}
 {"fields": ["Number Theory", "Special Functions"], "id": "RiemannZetaValues.irrational_odd", "kind": "open", "prize": null, "solved": false, "title": "Particular values of the Riemann zeta function — irrational odd"}
 {"fields": ["Number Theory", "Special Functions"], "id": "RiemannZetaValues.irrational_seven", "kind": "open", "prize": null, "solved": false, "title": "Particular values of the Riemann zeta function — irrational seven"}
-{"fields": ["Number Theory", "Special Functions"], "id": "RiemannZetaValues.irrational_three", "kind": "known", "prize": null, "solved": false, "title": "Particular values of the Riemann zeta function — irrational three"}
+{"fields": ["Number Theory", "Special Functions"], "id": "RiemannZetaValues.irrational_three", "kind": "known", "prize": null, "solved": true, "title": "Particular values of the Riemann zeta function — irrational three"}
 {"fields": ["Number Theory", "Special Functions"], "id": "RiemannZetaValues.transcendental_three", "kind": "open", "prize": null, "solved": false, "title": "Particular values of the Riemann zeta function — transcendental three"}
-{"fields": ["Number Theory"], "id": "RowlandSequence.rowland_diff_eq_one_or_prime", "kind": "known", "prize": null, "solved": true, "title": "Rowland's GCD prime-generating recurrence — rowland diff eq one or prime"}
+{"fields": ["Number Theory"], "id": "RowlandSequence.rowland_diff_eq_one_or_prime", "kind": "known", "prize": null, "solved": false, "title": "Rowland's GCD prime-generating recurrence — rowland diff eq one or prime"}
 {"fields": ["Number Theory"], "id": "RowlandSequence.rowland_generates_all_odd_primes", "kind": "open", "prize": null, "solved": false, "title": "Rowland's GCD prime-generating recurrence — rowland generates all odd primes"}
 {"fields": ["Number Theory"], "id": "RudinsConjecture.rudins_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Rudin's conjecture."}
 {"fields": ["Number Theory"], "id": "RudinsConjecture.rudins_conjecture_strong", "kind": "open", "prize": null, "solved": false, "title": "Rudin's conjecture on squares in arithmetic progressions — rudins conjecture strong"}
@@ -479,8 +479,8 @@
 {"fields": ["Computer Science", "Number Theory"], "id": "ScholzConjecture.scholz_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Scholz conjecture on addition chains"}
 {"fields": ["Number Theory"], "id": "Selfridge.selfridge_conjecture", "kind": "open", "prize": null, "solved": false, "title": "PSW conjecture"}
 {"fields": ["Number Theory"], "id": "Selfridge.selfridge_seq_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Selfridge's conjectures"}
-{"fields": ["Complex Analysis", "Convex & Discrete Geometry", "Field Theory"], "id": "Sendov.sendov_conjecture.variants.eventually_true", "kind": "known", "prize": null, "solved": false, "title": "Sendov's conjecture — eventually true"}
-{"fields": ["Complex Analysis", "Convex & Discrete Geometry", "Field Theory"], "id": "Sendov.sendov_conjecture.variants.le_eight", "kind": "known", "prize": null, "solved": false, "title": "Sendov's conjecture — le eight"}
+{"fields": ["Complex Analysis", "Convex & Discrete Geometry", "Field Theory"], "id": "Sendov.sendov_conjecture.variants.eventually_true", "kind": "known", "prize": null, "solved": true, "title": "Sendov's conjecture — eventually true"}
+{"fields": ["Complex Analysis", "Convex & Discrete Geometry", "Field Theory"], "id": "Sendov.sendov_conjecture.variants.le_eight", "kind": "known", "prize": null, "solved": true, "title": "Sendov's conjecture — le eight"}
 {"fields": ["Algebraic Geometry", "Commutative Algebra"], "id": "SerreMultiplicityConjectures.intersectionMultiplicity_eq_zero_of_lt", "kind": "known", "prize": null, "solved": false, "title": "Vanishing"}
 {"fields": ["Algebraic Geometry", "Commutative Algebra"], "id": "SerreMultiplicityConjectures.intersectionMultiplicity_nonneg", "kind": "known", "prize": null, "solved": false, "title": "Non-negativity"}
 {"fields": ["Algebraic Geometry", "Commutative Algebra"], "id": "SerreMultiplicityConjectures.intersectionMultiplicity_pos", "kind": "open", "prize": null, "solved": false, "title": "Positivity conjecture."}
@@ -488,18 +488,18 @@
 {"fields": ["Algebraic Geometry", "Commutative Algebra"], "id": "SerreMultiplicityConjectures.intersectionMultiplicity_pos_of_unramified", "kind": "known", "prize": null, "solved": false, "title": "Serre's multiplicity conjectures — intersectionMultiplicity pos of unramified"}
 {"fields": ["Algebraic Geometry", "Commutative Algebra"], "id": "SerreMultiplicityConjectures.intersectionMultiplicity_pos_quotient", "kind": "open", "prize": null, "solved": false, "title": "Positivity conjecture"}
 {"fields": ["Algebraic Geometry", "Commutative Algebra"], "id": "SerreMultiplicityConjectures.supportDim_add_supportDim_le_ringKrullDim", "kind": "known", "prize": null, "solved": false, "title": "Dimension inequality."}
-{"fields": ["Combinatorics"], "id": "SidorenkoConjecture.sidorenko_completeBipartiteGraph_graphon", "kind": "known", "prize": null, "solved": true, "title": "Sidorenko's conjecture (1993)"}
+{"fields": ["Combinatorics"], "id": "SidorenkoConjecture.sidorenko_completeBipartiteGraph_graphon", "kind": "known", "prize": null, "solved": false, "title": "Sidorenko's conjecture (1993)"}
 {"fields": ["Combinatorics"], "id": "SidorenkoConjecture.sidorenko_conjecture.variants.complete_bipartite", "kind": "known", "prize": null, "solved": true, "title": "Case: complete bipartite graphs `K_{s,t}` (Sidorenko 1993)."}
 {"fields": ["Combinatorics"], "id": "SidorenkoConjecture.sidorenko_conjecture.variants.even_cycle", "kind": "known", "prize": null, "solved": true, "title": "Case: even cycles `C_{2k}` (Sidorenko 1993)."}
 {"fields": ["Combinatorics"], "id": "SidorenkoConjecture.sidorenko_conjecture.variants.path_blakley_roy", "kind": "known", "prize": null, "solved": true, "title": "Case: paths, the Blakley–Roy inequality (1965)."}
 {"fields": ["Combinatorics"], "id": "SidorenkoConjecture.sidorenko_conjecture_graphon", "kind": "known", "prize": null, "solved": false, "title": "Sidorenko's conjecture for graphons (1993)."}
-{"fields": ["Combinatorics"], "id": "SidorenkoConjecture.sidorenko_even_cycle_graphon", "kind": "known", "prize": null, "solved": true, "title": "Case: `H = C_{2k}` is an even cycle (Sidorenko 1993, graphon version)."}
-{"fields": ["Combinatorics"], "id": "SidorenkoConjecture.sidorenko_tree_graphon", "kind": "known", "prize": null, "solved": true, "title": "Case: `H` is a tree (Sidorenko 1993, graphon version)."}
-{"fields": ["Combinatorics"], "id": "SidorenkoConjecture.tournament_anti_sidorenko_single_even_degree_tree", "kind": "known", "prize": null, "solved": true, "title": "TAS Trees Conjecture: Trees with a single even-degree vertex."}
+{"fields": ["Combinatorics"], "id": "SidorenkoConjecture.sidorenko_even_cycle_graphon", "kind": "known", "prize": null, "solved": false, "title": "Case: `H = C_{2k}` is an even cycle (Sidorenko 1993, graphon version)."}
+{"fields": ["Combinatorics"], "id": "SidorenkoConjecture.sidorenko_tree_graphon", "kind": "known", "prize": null, "solved": false, "title": "Case: `H` is a tree (Sidorenko 1993, graphon version)."}
+{"fields": ["Combinatorics"], "id": "SidorenkoConjecture.tournament_anti_sidorenko_single_even_degree_tree", "kind": "known", "prize": null, "solved": false, "title": "TAS Trees Conjecture: Trees with a single even-degree vertex."}
 {"fields": ["Combinatorics"], "id": "SidorenkoConjecture.tournament_anti_sidorenko_spider234", "kind": "known", "prize": null, "solved": false, "title": "TAS Trees Conjecture: The $(2,3,4)$-spider tree (Solved case)."}
 {"fields": ["Combinatorics"], "id": "SidorenkoConjecture.tournament_anti_sidorenko_trees_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Tournament Anti-Sidorenko (TAS) Trees Conjecture."}
 {"fields": ["Combinatorics"], "id": "SidorenkoConjecture.tournament_anti_sidorenko_trees_conjecture_tournamenton", "kind": "open", "prize": null, "solved": false, "title": "Tournament Anti-Sidorenko (TAS) Trees Conjecture (Tournamenton limit version)."}
-{"fields": ["Number Theory"], "id": "SierpinskiEgyptianFractionConjecture.sierpinski_counterexamples_hasDensity_zero", "kind": "known", "prize": null, "solved": true, "title": "Webb–Vaughan Density Bound"}
+{"fields": ["Number Theory"], "id": "SierpinskiEgyptianFractionConjecture.sierpinski_counterexamples_hasDensity_zero", "kind": "known", "prize": null, "solved": false, "title": "Webb–Vaughan Density Bound"}
 {"fields": ["Number Theory"], "id": "SierpinskiEgyptianFractionConjecture.sierpinski_egyptian_fraction_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Sierpiński's $5 / n$ Conjecture"}
 {"fields": ["Number Theory"], "id": "SierpinskiNumber.extended_sierpinski_problem", "kind": "open", "prize": null, "solved": false, "title": "The extended Sierpiński problem."}
 {"fields": ["Number Theory"], "id": "SierpinskiNumber.prime_sierpinski_problem", "kind": "open", "prize": null, "solved": false, "title": "The prime Sierpiński problem."}
@@ -542,7 +542,7 @@
 {"fields": ["Number Theory"], "id": "SternPrime.stern_primes_finite", "kind": "open", "prize": null, "solved": false, "title": "Stern Primes — stern primes finite"}
 {"fields": ["Number Theory"], "id": "SumOfThreeCubes.isSumOfThreeCubes_iff_mod_9", "kind": "open", "prize": null, "solved": false, "title": "Sum of three cubes"}
 {"fields": ["Combinatorics"], "id": "SumnerUniversalTournamentConjecture.sumner_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Sumner's universal tournament conjecture (1971)."}
-{"fields": ["Combinatorics"], "id": "SumnerUniversalTournamentConjecture.sumner_conjecture.variants.el_sahili", "kind": "known", "prize": null, "solved": false, "title": "El Sahili (2004): tournaments on $3n - 3$ vertices suffice."}
+{"fields": ["Combinatorics"], "id": "SumnerUniversalTournamentConjecture.sumner_conjecture.variants.el_sahili", "kind": "known", "prize": null, "solved": true, "title": "El Sahili (2004): tournaments on $3n - 3$ vertices suffice."}
 {"fields": ["Combinatorics"], "id": "SumnerUniversalTournamentConjecture.sumner_conjecture.variants.large_n", "kind": "known", "prize": null, "solved": false, "title": "Kühn–Mycroft–Osthus (2011): the conjecture holds for all sufficiently large $n$."}
 {"fields": ["Combinatorics"], "id": "SumnerUniversalTournamentConjecture.sumner_conjecture.variants.sharp", "kind": "known", "prize": null, "solved": true, "title": "The bound $2n - 2$ would be sharp."}
 {"fields": ["Number Theory"], "id": "Superperfect.twoFivePerfect", "kind": "open", "prize": null, "solved": false, "title": "(m,k)-perfect numbers"}
@@ -582,7 +582,7 @@
 {"fields": ["Special Functions"], "id": "Transcendental.transcendental_gamma_one_div_two", "kind": "known", "prize": null, "solved": true, "title": "Open questions on transcendence of numbers — transcendental gamma one div two"}
 {"fields": ["Special Functions"], "id": "Transcendental.transcendental_gompertzConstant", "kind": "open", "prize": null, "solved": false, "title": "Open questions on transcendence of numbers — transcendental gompertzConstant"}
 {"fields": ["Combinatorics"], "id": "TuzaConjecture.tuza_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Tuza's conjecture"}
-{"fields": ["Combinatorics"], "id": "TuzaConjecture.tuza_conjecture.variants.haxell", "kind": "known", "prize": null, "solved": false, "title": "Tuza's conjecture — haxell"}
+{"fields": ["Combinatorics"], "id": "TuzaConjecture.tuza_conjecture.variants.haxell", "kind": "known", "prize": null, "solved": true, "title": "Tuza's conjecture — haxell"}
 {"fields": ["Number Theory"], "id": "TwinPrimes.twin_primes", "kind": "open", "prize": null, "solved": false, "title": "Twin prime conjecture"}
 {"fields": ["Combinatorics"], "id": "UnionClosed.union_closed", "kind": "open", "prize": null, "solved": false, "title": "Union-closed sets conjecture"}
 {"fields": ["Combinatorics"], "id": "UnionClosed.union_closed.variants.cardinality_even_of_union_closed_tight", "kind": "open", "prize": null, "solved": false, "title": "Union-closed sets conjecture — cardinality even of union closed tight"}

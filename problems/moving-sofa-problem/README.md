@@ -1,6 +1,6 @@
 # The Moving Sofa Problem
 
-> **Atlas Rank #105** · CSS **46.6** · Field: *Geometry* · Posed: **1966** · Status: `active-progress`
+> **Atlas Rank #119** · CSS **46.6** · Field: *Geometry* · Posed: **1966** · Status: `active-progress`
 
 ## Plain statement
 

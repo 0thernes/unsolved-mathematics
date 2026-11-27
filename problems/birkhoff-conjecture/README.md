@@ -1,6 +1,6 @@
 # The Birkhoff Conjecture (Integrable Billiards)
 
-> **Atlas Rank #47** · CSS **62.0** · Field: *Dynamical Systems* · Posed: **1927** · Status: `active-progress`
+> **Atlas Rank #58** · CSS **62.0** · Field: *Dynamical Systems* · Posed: **1927** · Status: `active-progress`
 
 ## Plain statement
 

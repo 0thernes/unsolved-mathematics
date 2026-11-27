@@ -1,6 +1,6 @@
 # The Zilber–Pink Conjecture
 
-> **Atlas Rank #37** · CSS **64.4** · Field: *Diophantine Geometry* · Posed: **2005** · Status: `open`
+> **Atlas Rank #48** · CSS **64.4** · Field: *Diophantine Geometry* · Posed: **2005** · Status: `open`
 
 ## Plain statement
 

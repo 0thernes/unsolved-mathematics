@@ -1,6 +1,6 @@
 # The Hilbert–Smith Conjecture
 
-> **Atlas Rank #55** · CSS **60.8** · Field: *Geometric Topology* · Posed: **1933** · Status: `active-progress`
+> **Atlas Rank #68** · CSS **60.8** · Field: *Geometric Topology* · Posed: **1933** · Status: `active-progress`
 
 ## Plain statement
 

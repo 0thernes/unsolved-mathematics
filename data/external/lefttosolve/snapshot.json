@@ -1,17 +1,5469 @@
 {
-  "schema_version": 1,
-  "last_changed_utc": "2026-11-27T04:31:27Z",
-  "content_sha256": "6aad4dc91eea6bbbf806fc8c971b9dc4ae69d7c3e5c7d3c60604c24612c5fa41",
+  "schema_version": 2,
+  "last_changed_utc": "2026-11-27T05:46:57Z",
+  "content_sha256": "f1bcc922a11d5418387c863710fc34eb31f0a1007a7a51baf87889047c134dd8",
   "source": {
     "site": "https://lefttosolve.com",
     "programs_page": "https://lefttosolve.com/programs",
     "api": "https://lefttosolve.com/api/problems",
+    "stats_api": "https://lefttosolve.com/api/stats",
     "site_source_repo": "https://github.com/GuillaumeBAUD-coder/open-math-agents",
-    "site_source_license": "none declared (aggregate counts and identifiers only are mirrored)"
+    "site_source_license": "none declared; metadata + back-links only are mirrored, zero excerpts; upstream titles remain under their source licenses (Apache-2.0 / CC BY-SA 4.0 / OEIS / OPG)"
   },
   "upstream": {
     "repo": "https://github.com/google-deepmind/formal-conjectures",
     "commit": "9097e2f90e66d2f6244209cb1c07f7120d17ec53"
+  },
+  "catalog_stats": {
+    "deskOnline": true,
+    "catalog": {
+      "open": 1939,
+      "known": 1818,
+      "warmup": 168,
+      "unformalized": 55471
+    },
+    "total": 59396,
+    "liveAgents": 140,
+    "liveProblems": 132,
+    "top": [
+      {
+        "problem_id": "OeisA189286.conjecture_3",
+        "agents": 2
+      },
+      {
+        "problem_id": "Erdos1160.erdos_1160.variants.sum",
+        "agents": 2
+      },
+      {
+        "problem_id": "Erdos470.erdos_470.parts.ii.R1.H1",
+        "agents": 2
+      },
+      {
+        "problem_id": "Erdos151.erdos_151.variants.cliqueFree_four",
+        "agents": 2
+      },
+      {
+        "problem_id": "Arxiv.0805.3777.isGenericRank_of_eq_critical",
+        "agents": 2
+      },
+      {
+        "problem_id": "Erdos647.erdos_647",
+        "agents": 2
+      },
+      {
+        "problem_id": "Erdos977.erdos_977.variants.schinzel",
+        "agents": 2
+      },
+      {
+        "problem_id": "Hadamard.HadamardConjecture.variants.first_cases",
+        "agents": 2
+      },
+      {
+        "problem_id": "Erdos1082.erdos_1082.parts.i.R1.H3",
+        "agents": 1
+      },
+      {
+        "problem_id": "PoincareConjecture.poincare_conjecture.variants.smooth_implication",
+        "agents": 1
+      },
+      {
+        "problem_id": "wp-does-a-moore-graph-with-girth-5-and-degree-57-exist",
+        "agents": 1
+      },
+      {
+        "problem_id": "Kakeya.kakeya_2d",
+        "agents": 1
+      }
+    ],
+    "solved": [
+      {
+        "problem_id": "AgohGiuga.agoh_giuga.variants._1000_le_digits_length_of_isStrongGiuga",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "AgohGiuga.agoh_giuga.variants._13000_le_digits_length_of_isStrongGiuga",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "AgohGiuga.agoh_giuga.variants._1700_le_digits_length_of_isStrongGiuga",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "AgohGiuga.agoh_giuga.variants.equivalence",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "AgohGiuga.agoh_giuga.variants.isStrongGiuga_growth",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "AgohGiuga.agoh_giuga.variants.le_primeFactors_card_of_isStrongGiuga",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "AgohGiuga.isStrongGiuga_iff",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "AgohGiuga.isWeakGiuga_iff_sum_primeFactors",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Algebra.exists_quadraticAlgebra_of_isQuadraticExtension",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "AlgebraicGeometry.exists_not_hasResolution_of_not_perfectField",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "AlgebraicGeometry.Scheme.hasFiniteCoproductsVectorBundles",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "AlonSaksSeymourConjecture.alon_saks_seymour_conjecture",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "AlonSaksSeymourConjecture.alon_saks_seymour_conjecture.variants.graham_pollak",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "AlonSaksSeymourConjecture.alon_saks_seymour_conjecture.variants.huang_sudakov",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "ArtinPrimitiveRootsConjecture.conditional_artin_primitive_roots.parts.i.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "ArtinPrimitiveRootsConjecture.conditional_artin_primitive_roots.parts.i.R1.H3",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "ArtinPrimitiveRootsConjecture.conditional_artin_primitive_roots.parts.i.R1.H4",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Arxiv.0805.3777.isGenericRank_cube",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Arxiv.0805.3777.isGenericRank_cube.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Arxiv.0805.3777.isGenericRank_cube.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Arxiv.0805.3777.isGenericRank_cube.R1.H3",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Arxiv.0805.3777.isGenericRank_cube.R1.H3.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Arxiv.0805.3777.isGenericRank_cube.R1.H3.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Arxiv.0805.3777.isGenericRank_cube.R1.H3.R1.H3",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Arxiv.0805.3777.isGenericRank_cube.R1.H3.R1.H3.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Arxiv.0805.3777.isGenericRank_cube.R1.H3.R1.H3.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Arxiv.0805.3777.isGenericRank_matrix",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Arxiv.0805.3777.isGenericRank_three_even",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Arxiv.0805.3777.isGenericRank_three_odd.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Arxiv.0805.3777.isMaxRank_le_two_mul_isGenericRank",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Arxiv.0805.3777.isMaxRank_three_three_five_bounds",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Arxiv.1609.08688.maximalLength_four",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Arxiv.1609.08688.maximalLength_pow",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Arxiv.1609.08688.maximalLength_pow_eventually",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Arxiv.2107.00295.independentDominationEven",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Arxiv.2107.00295.independentDominationEven.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Arxiv.2107.00295.independentDominationOdd",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Arxiv.2107.00295.independentDominationOdd.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Arxiv.2107.00295.independentDominationOdd.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Arxiv.2107.00295.independentDominationOdd.R1.H3",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Arxiv.2208.14736.zariski_cancellation_problem.variants.dim_one",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Arxiv.2507.17780.tx_graffiti_conjecture_1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Arxiv.2507.17780.tx_graffiti_conjecture_2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Arxiv.2602.05192.finiteAdditiveConvolution_degree",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Arxiv.2602.05192.four_2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Arxiv.2602.05192.four_3",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Arxiv.2604.08040.cyc_alternatingGroup_five",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Arxiv.2605.12342.conjecture_1.variants.rank_3_3",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Arxiv.2605.12342.conjecture_1.variants.rank_4_3",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Arxiv.2605.12342.conjecture_1.variants.rank_4_4",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Arxiv.2606.03696.bondy_conjecture.variants.one",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Arxiv.2607.03582.volume_lpSum_eq_of_isParallelogramAtOrigin",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Arxiv.2607.05349.hasFiniteConcentration_of_hasMicroscopicWeighting",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Arxiv.2607.05349.hasMicroscopicWeighting_iff_of_isUnit",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Arxiv.2607.05739.x_eq_tan_sum_arctan",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Arxiv.2607.05739.x_succ",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Arxiv.2607.27197.maxwell_conjecture.counterexample",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Arxiv.2607.27197.maxwell_conjecture.counterexample_morse",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Arxiv.2607.27197.maxwell_conjecture.counterexample.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Arxiv.2607.27197.maxwell_conjecture.counterexample.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Arxiv.2607.27197.maxwell_conjecture.counterexample.R1.H3",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Arxiv.2607.27197.maxwell_conjecture.iterated",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Arxiv.2607.27197.maxwell_conjecture.phiZero_critical_points",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Arxiv.2607.27197.maxwell_conjecture.variants.two_charges",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "AuslanderReiten.auslander_reiten.variants.regular_local",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "BergeFulkersonConjecture.berge_fulkerson_conjecture.variants.petersen",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Borsuk.borsuk_conjecture.four.nine_parts",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Bugeaud08.problem_10_8.variants.quadratic",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Bugeaud09.problem_10_9.variants.dimH_lt_one",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Bugeaud09.problem_10_9.variants.measure_zero",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Bugeaud61.problem_10_61.variants.almost_every",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "BurningNumberConjecture.burning_number_conjecture.variants.path",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "BusyBeaver.BB_1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "BusyBeaver.BB_2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "BusyBeaver.BB_3",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "BusyBeaver.BB_3.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "BusyBeaver.BB_3.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "BusyBeaver.BB_4.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "BusyBeaver.BB_4.R2.H3",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "BusyBeaver.sanity_check",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "ButsonHadamardMatrix.butson_prime_divisibility",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "ButsonHadamardMatrix.not_forall_odd_prime_mul_exists",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "CasasAlvero.casas_alvero.double_prime_power",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "CasasAlvero.casas_alvero.prime_power",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "ChowlaLiouvilleConjecture.chowla_liouville_conjecture.variants.one_point",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "ClaudesCycles.cube_hamiltonian_arc_decomposition_impossible_m2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "ColossallyAbundantNumber.alaoglu_erdos_prime_or_semiprime_ratio",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "ColossallyAbundantNumber.encard_colossallyAbundant_maximizers_le_four",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "ColossallyAbundantNumber.infinite_colossallyAbundant",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "ComplexityTheory.coP_eq_P",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "ComplexityTheory.P_subset_BPP",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "CongruentNumber.Tunnell_even.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "CongruentNumber.Tunnell_even.R1.H1.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "CongruentNumber.Tunnell_even.R1.H1.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "CongruentNumber.Tunnell_even.R1.H2.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "CongruentNumber.Tunnell_even.R1.H3.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Constant1a.c1a_upper_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Constant6a.c6a_lower_bound_first",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Constant6a.c6a_upper_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Constant7a.irrationalityExponent_of_algebraic",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Constant7a.two_le_irrationalityExponent",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "CramerConjecture.cramer_conjecture.variants.conditional_rh",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "CramerConjecture.cramer_conjecture.variants.westzynthius",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "DedekindNumber.M_eq_kisielewiczFormula",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "DeGiorgi.DeGiorgi_two",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "DeGiorgi.DeGiorgi_two.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "DeGiorgi.DeGiorgi_two.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "DeGiorgi.DeGiorgi_two.R1.H3",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "DescartesNumber.descartes_cubeFree_not_dvd_three_primeFactors_gt_million",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "DirichletDivisorProblem.divisor_error_dirichlet",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "DirichletDivisorProblem.divisor_error_hardy",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "ElliottHalberstamConjecture.elliott_halberstam.variants.friedlander_granville",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "EllipticCurveRank.RatEllipticCurve.card_heightLE_div_pow_five_div_six_tensto",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "EllipticCurveRank.RatEllipticCurve.card_heightLE_div_pow_five_div_six_tensto.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "EllipticCurveRank.RatEllipticCurve.card_heightLE_div_pow_five_div_six_tensto.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "EquationalTheories_677_255.Equation677_not_implies_Equation255",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Equidistribution.isAccumulationPoint_three_halves_pow_infinite",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Equidistribution.isEquidistributedModuloOne_transcendental_three_halves_pow",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1.erdos_1.variants.lb",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1000.erdos_1000.variants.liminf_eq_zero",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1000.erdos_1000.variants.limsup_eq_one",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1000.erdos_1000.variants.not_tendsto_zero",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1004.erdos_1004.variants.le_of_isDistinctTotientRun",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1008.erdos_1008.variants.folkman",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1008.erdos_1008.variants.lower_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1008.erdos_1008.variants.three_quarters",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1009.erdos_1009.variants.sauer",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1010.erdos_1010.variants.erdos",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1010.erdos_1010.variants.rademacher",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1013.erdos_1013.variants.graver_yackel",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1022.erdos_1022.variants.lovasz",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1022.erdos_1022.variants.lt_two",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1023.erdos_1023.variants.erdos_kleitman",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1023.erdos_1023.variants.hunter",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1026.erdos_1026",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1026.erdos_1026.variants.hanani",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1026.erdos_1026.variants.lower_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1026.erdos_1026.variants.upper_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1028.erdos_1028.variants.erdos_spencer",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1028.erdos_1028.variants.lower_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1028.erdos_1028.variants.upper_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1032.erdos_1032.variants.dirac_six",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1033.erdos_1033.variants.erdos_laskar",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1033.erdos_1033.variants.fan",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1033.erdos_1033.variants.three_halves",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1034.erdos_1034.variants.k4_free",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1034.erdos_1034.variants.lower_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1034.erdos_1034.variants.upper_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1036.erdos_1036.variants.erdos_hajnal",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1037.erdos_1037.variants.cambie_chan_hunter",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1037.erdos_1037.variants.cambie_chan_hunter.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1037.erdos_1037.variants.cambie_chan_hunter.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1037.erdos_1037.variants.cambie_chan_hunter.R1.H3",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1038.erdos_1038.parts.ii",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1038.erdos_1038.parts.ii.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1038.erdos_1038.variants.inf_lowerBound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1038.erdos_1038.variants.inf_upperBound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1041.exists_connected_component_contains_two_roots",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1042.erdos_1042.parts.i",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1042.erdos_1042.parts.ii",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1042.erdos_1042.variants.chebyshev_segment",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1042.erdos_1042.variants.connected_le_quarter",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1046.erdos_1046.variants.diameter",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1047.erdos_1047.variants.goodman",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1047.erdos_1047.variants.goodman_simple_roots",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1047.erdos_1047.variants.pommerenke",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1047.erdos_1047.variants.referee",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1048.erdos_1048.variants.diam_ge_two",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1048.erdos_1048.variants.diam_ge_two_is_best",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1048.erdos_1048.variants.diam_gt_inv_r",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1048.erdos_1048.variants.diam_gt_two_sub_sq",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1048.erdos_1048.variants.pommerenke_diam_tendsto_zero",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1048.erdos_1048.variants.pommerenke_ncard_components",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1048.erdos_1048.variants.r_le_one",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos105.erdos_105.variants.beck_szemeredi_trotter",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos105.erdos_105.variants.hickerson",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1051.erdos_1051.variants.rapid_growth",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1055.exists_p",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1064.erdos_1064",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1064.erdos_1064.variants.general_function",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1066.erdos_1066.variants.pach_toth",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1066.erdos_1066.variants.pollack",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1067.erdos_1067.variants.infinite_edge_connectivity",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1069.erdos_1069",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1069.erdos_1069.variants.lattice",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos107.variants.ersz_bounds",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1070.erdos_1070.variants.moser_spindle",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1074.erdos_1074.variants.EHSNumbers_init",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1074.erdos_1074.variants.PillaiPrimes_init",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1079.erdos_1079",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos108.erdos_108",
+        "polarity": "disproof"
+      },
+      {
+        "problem_id": "Erdos1084.erdos_1084.variants.easy_upper_d2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1084.erdos_1084.variants.upper_d2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1085.erdos_1085.variants.lower_d2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1085.erdos_1085.variants.lower_d4_lenz",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1085.erdos_1085.variants.upper_d2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1085.erdos_1085.variants.upper_d4_erdos",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1086.erdos_1086.variants.erdos_purdy_lower",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1087.erdos_1087.variants.lower",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1087.erdos_1087.variants.upper",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1088.f_isLeast",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1088.f_isLeast.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1088.f_isLeast.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1092.f_asymptotic_2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1092.f_asymptotic_general",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1095.erdos_1095.variants.upper_conjecture",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1098.erdos_1098.variants.center_finiteIndex",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1099.erdos_1099.variants.factorial",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1099.erdos_1099.variants.factorial.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1099.erdos_1099.variants.factorial.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1099.erdos_1099.variants.ratio_sum",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos11.erdos_11.variants.finite_bound1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos110.erdos_110.variants.de_bruijn_erdos",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1100.erdos_1100.parts.i",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1100.erdos_1100.parts.ii",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1100.erdos_1100.variants.eq_omega",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1100.erdos_1100.variants.erdos_hall",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1100.erdos_1100.variants.erdos_tenenbaum_g",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1109.erdos_1109.variants.erdos_sarkozy_lower",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1109.erdos_1109.variants.erdos_sarkozy_upper",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos111.erdos_111.variants.lower_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos111.erdos_111.variants.upper_bound_existence",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1111.erdos_1111.variants.el_zahar_erdos",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1111.erdos_1111.variants.three_three",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1114.erdos_1114.variants.rolle",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1115.erdos_1115",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1119.erdos_1119.variants.erdos_wetzel",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1119.erdos_1119.variants.erdos_wetzel_ch",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1121.erdos_1121.variants.higher_dimension",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1122.erdos_1122.variants.monotone",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1122.erdos_1122.variants.sub_tendsto_zero",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1129.erdos_1129.variants.canonical",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1129.erdos_1129.variants.chebyshev_upper_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1129.erdos_1129.variants.erdos_lower_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1129.erdos_1129.variants.erdos_lower_bound.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1129.erdos_1129.variants.erdos_lower_bound.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1129.erdos_1129.variants.four_nodes",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1129.erdos_1129.variants.free_nodes_not_unique",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1129.erdos_1129.variants.three_nodes",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1129.erdos_1129.variants.unique",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1130.erdos_1130.parts.i",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1130.erdos_1130.parts.i.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1130.erdos_1130.variants.canonical",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1130.erdos_1130.variants.erdos_inequality",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1130.erdos_1130.variants.erdos_inequality_canonical",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1130.erdos_1130.variants.erdos_sqrt",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1130.erdos_1130.variants.log_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1132.erdos_1132.variants.erdos_max",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1132.erdos_1132.variants.erdos_max.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1132.erdos_1132.variants.erdos_max.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1133.erdos_1133.variants.weaker.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1133.erdos_1133.variants.weaker.R1.H2.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1136.erdos_1136.variants.mueller",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1136.erdos_1136.variants.multiples_of_three",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1136.erdos_1136.variants.upper_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos114.erdos_114.variants.two",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1141.erdos_1141.variants.mertens_third",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1142.erdos_1142.variants.mientka_weitzenkamp",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1148.erdos_1148.variants.weaker",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1154.erdos_1154.variants.group",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos116.erdos_116.variants.polya",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1164.erdos_1164.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1164.erdos_1164.R1.H2.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1164.erdos_1164.R1.H2.R1.H2.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1164.erdos_1164.R1.H2.R1.H2.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1166.erdos_1166.variants.dembo_peres_rosen_zeitouni.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1166.erdos_1166.variants.erdos_taylor",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1166.erdos_1166.variants.erdos_taylor.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1166.erdos_1166.variants.erdos_taylor.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1166.erdos_1166.variants.erdos_taylor.R1.H3",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1171.erdos_1171.variants.k_one",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1171.erdos_1171.variants.mono_k",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1182.erdos_1182.parts.ii",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1182.erdos_1182.parts.iii",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1182.erdos_1182.variants.befrs_lower",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1182.erdos_1182.variants.befrs_lower.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1182.erdos_1182.variants.befrs_lower.R1.H1.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1182.erdos_1182.variants.befrs_lower.R1.H1.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1182.erdos_1182.variants.befrs_lower.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1182.erdos_1182.variants.befrs_lower.R1.H3",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1182.erdos_1182.variants.befrs_upper",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1182.erdos_1182.variants.brandt",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1182.erdos_1182.variants.chvatal",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1182.erdos_1182.variants.F_ge_pred",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1182.erdos_1182.variants.f_upper",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1182.erdos_1182.variants.nikiforov_rousseau",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1182.erdos_1182.variants.ramsey_ge",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1184.erdos_1184.variants.lower",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1184.erdos_1184.variants.upper",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1186.erdos_1186.variants.probabilistic",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1186.erdos_1186.variants.van_der_waerden",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1189.erdos_1189.parts.iv",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1189.erdos_1189.variants.simpson",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1189.erdos_1189.variants.sun",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1190.erdos_1190.variants.lower_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1190.erdos_1190.variants.lt_one",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1190.erdos_1190.variants.tendsto_zero",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1191.erdos_1191.variants.liminf_le",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1194.erdos_1194.variants.limsup_eq_top",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1195.erdos_1195.variants.exists_set",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1198.erdos_1198",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1198.erdos_1198.variants.hindman",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos12.erdos_12.variants.erdos_sarkozy",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos12.erdos_12.variants.erdos_sarkozy_density_0",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos12.erdos_12.variants.example",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos12.erdos_12.variants.schoen",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos120.erdos_120.variants.finite_set",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1201.erdos_1201.variants.epsilon_half",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1203.erdos_1203.variants.lower_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1204.erdos_1204.variants.A_lower",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1204.erdos_1204.variants.A_lower.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1204.erdos_1204.variants.A_lower.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1204.erdos_1204.variants.A_upper",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1204.erdos_1204.variants.A_upper.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1204.erdos_1204.variants.A_upper.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1204.erdos_1204.variants.B_upper",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1204.erdos_1204.variants.B_upper.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1204.erdos_1204.variants.B_upper.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos121.erdos_121.variants.three",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos121.erdos_121.variants.two",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1213.erdos_1213.variants.hegyvari",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1221.erdos_1221.variants.bigLambda_ge",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1221.erdos_1221.variants.mu_ge",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1221.erdos_1221.variants.r_one",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos1221.erdos_1221.variants.smallLambda_le",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos123.erdos_123.variants.erdos_lewin_3_5_7",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos124.erdos124.melfi_construction",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos124.erdos124.ne_zero_three_four_seven",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos124.erdos124.zero",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos126.erdos_126.variants.IsBigO",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos127.erdos_127.variants.alon_upper",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos131.erdos_131.variants.elrss",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos133.erdos_133.variants.lower_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos137.erdos_137.variants.perfect_power.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos137.erdos_137.variants.perfect_power.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos138.erdos_138.variants.prime",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos138.monoAP_guarantee_set_nonempty",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos14.erdos_14.parts.i",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos14.erdos_14.parts.ii",
+        "polarity": "disproof"
+      },
+      {
+        "problem_id": "Erdos141.erdos_141.variants.first_cases",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos146.erdos_146",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos150.erdos_150.variants.erdos_nesetril",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos150.erdos_150.variants.seymour",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos150.erdos_150.variants.upper_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos151.erdos_151.variants.cliqueFree_three",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos151.erdos_151.variants.sqrt_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos156.erdos_156.variants.greedy_lower_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos158.erdos_158.variants.isSidon-prime",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos16.erdos_16.variant.romanoff",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos16.erdos_16.variant.romanoff.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos16.erdos_16.variant.romanoff.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos160.erdos_160.known_upper",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos162.erdos_162.variants.bounds",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos165.erdos_165.variants.upper",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos168.erdos_168.variants.limit_exists",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos173.erdos_173.variants.equilateral_exception",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos173.erdos_173.variants.right_triangle",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos174.erdos_174.variants.brick",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos174.erdos_174.variants.spherical",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos18.erdos_18_vose",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos180.erdos_180",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos184.erdos_184.variants.n_log_n",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos185.erdos_185.variants.moser",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos186.erdos_186.variants.bosznay",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos188.erdos_188.variants.estimate",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos188.erdos_188.variants.nonempty",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos189.erdos_189.variants.square",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos19.erdos_19.variants.lt_ten",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos191.erdos_191.variants.rodl_upper",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos191.erdos_191.variants.three_colours",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos193.erdos_193_z2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos195.erdos_195.variants.leq_4_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos195.erdos_195.variants.leq_5_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos198.baumgartner_strong",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos200.erdos_200.variants.upper",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos202.erdos_202.variants.erdos_szemeredi",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos205.erdos_205.parts.i",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos205.erdos_205.parts.ii",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos205.erdos_205.parts.iii",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos21.erdos_21.variants.lower",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos21.erdos_21.variants.small_values",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos21.erdos_21.variants.small_values.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos21.erdos_21.variants.small_values.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos210.erdos_210.parts.i",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos210.erdos_210.parts.ii",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos210.erdos_210.variants.csima_sawyer.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos210.erdos_210.variants.even_upper_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos210.erdos_210.variants.seven",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos211.erdos_211.variants.sharpness",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos213.erdos_213.variants.KK08",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos214.erdos_214.variants.bounds",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos214.erdos_214.variants.csizmadia_toth",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos214.erdos_214.variants.egmrss",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos214.erdos_214.variants.juhasz",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos214.erdos_214.variants.juhasz_twelve_points",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos229.theorem_1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos23.blowupC5_tight",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos23.erdos_23.variants.n1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos23.erdos_23.variants.n5_tight",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos232.erdos_232.variants.croft_lower_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos232.erdos_232.variants.hexagonal_lower_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos233.erdos_233.variants.upper_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos233.erdos_233.variants.upper_bound.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos233.erdos_233.variants.upper_bound.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos238.erdos_238.variants.small_c1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos240.erdos_240.variants.finite",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos241.erdos_241.variants.lower_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos241.erdos_241.variants.r_eq_2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos244.erdos_244.variants.Romanoff.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos245.erdos_245.variants.two",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos247.erdos_247.variants.strong_condition",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos252.erdos_252.variants.k_eq_four",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos252.erdos_252.variants.k_eq_one",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos252.erdos_252.variants.k_eq_three",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos252.erdos_252.variants.k_eq_two",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos252.erdos_252.variants.k_eq_zero",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos252.erdos_252.variants.prime_tuples",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos252.erdos_252.variants.schinzel",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos254.erdos_254.variants.cassels",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos263.erdos_263.parts.ii",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos263.erdos_263.variants.doubly_exponential_all_but_countable",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos263.erdos_263.variants.sub_doubly_exponential",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos264.erdos_264.parts.i",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos264.erdos_264.variants.example",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos264.erdos_264.variants.ko_tao_neg",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos264.erdos_264.variants.ko_tao_pos",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos269.erdos_269.variants.infinite",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos270.erdos_270.variants.linear",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos282.erdos_282.variants.fibonacci",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos283.erdos_283.variants.alekseyev",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos283.erdos_283.variants.burr",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos283.erdos_283.variants.cassels",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos283.erdos_283.variants.graham_alpha",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos283.erdos_283.variants.van_doorn_linear",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos283.erdos_283.variants.van_doorn_quadratic",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos285.erdos_285.variants.lb",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos291.erdos_291.parts.ii",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos291.erdos_291.variants.steinerberger_generalization",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos292.erdos_292.variants.mul",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos292.erdos_292.variants.prime_pow",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos292.erdos_292.variants.two_mul",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos294.erdos_294.variants.erdos_graham_upper",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos295.exists_k",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos297.erdos_297.variants.steinerberger",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos30.erdos_30.variants.balogh_furedi_roy",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos30.erdos_30.variants.carter_hunter_obryant",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos30.erdos_30.variants.erdos_turan",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos30.erdos_30.variants.isEquivalent_sqrt",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos30.erdos_30.variants.isEquivalent_sqrt.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos30.erdos_30.variants.isEquivalent_sqrt.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos30.erdos_30.variants.lindstrom",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos30.erdos_30.variants.obryant",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos30.erdos_30.variants.singer",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos30.erdos_30.variants.singer.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos30.erdos_30.variants.singer.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos302.erdos_302.parts.ii",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos302.erdos_302.variants.lower_five_eighths",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos302.erdos_302.variants.upper_nine_tenths",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos304.erdos_304.variants.upper_1950",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos304.erdos_304.variants.upper_1985",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos305.erdos_305.variants.prime_lower_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos311.delta_ge_exp",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos311.delta_ge_exp.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos311.delta_ge_exp.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos311.delta_ge_inv_lcm",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos318.erdos_318.parts.i",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos318.erdos_318.variants.contain_single_even",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos319.erdos_319.variants.isTheta",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos326.erdos_326.variants.eq",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos329.erdos_329.variants.kruckeberg_1961",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos329.erdos_329.variants.lower_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos329.erdos_329.variants.turan_1941",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos329.exists_sidon_pos_density",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos331.erdos_331.variants.ruzsa",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos337.erdos_337.variants.h_fold",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos338.erdos_338.variants.bateman",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos338.erdos_338.variants.hegyvari_hennecart_plagne",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos338.erdos_338.variants.kelly",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos338.erdos_338.variants.kelly_lowerDensity",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos338.erdos_338.variants.squares",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos338.erdos_338.variants.squares.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos338.erdos_338.variants.squares.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos338.erdos_338.variants.squares.R1.H3",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos340.erdos_340.variants.third",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos345.kthPowers_isAddComplete",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos346.erdos_346",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos346.erdos_346.variants.example",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos346.erdos_346.variants.f_isAddStronglyCompleteNatSeq",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos348.erdos_348",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos349.complete_for_alpha_in_Ioo_one_to_goldenRatio",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos349.exists_t_for_k_disjoint_segments",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos35.erdos_35.variants.plunnecke",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos350.erdos_350.variants.strengthening",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos351.erdos_351.variants.X",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos351.erdos_351.variants.X_sq",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos357.erdos_357.variants.infinite_set_lower_density",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos357.erdos_357.variants.weisenberg",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos358.f_id",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos359.erdos_359.variants.isGoodFor_1_low_values",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos36.erdos_36.variants.exists",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos36.minimum_overlap.variants.upper.haugland_2022",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos36.minimum_overlap.variants.upper.MRS_1956",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos360.erdos_360.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos360.erdos_360.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos360.erdos_360.R1.H3",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos367.erdos_367.parts.ii",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos367.erdos_367.variants.k_ge_three_lower",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos367.erdos_367.variants.k_le_two",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos368.erdos_368.variants.subpower",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos368.erdos_368.variants.tendsto",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos373.erdos_373.variants.of_limit",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos373.erdos_373.variants.of_lower_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos376.erdos_376.variants.prime",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos382.erdos_382.variants.ramachandra",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos390.erdos_390.variants.theta",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos392.erdos_392.variants.lower",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos392.erdos_392.variants.lower.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos392.erdos_392.variants.lower.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos394.erdos_394.variants.hall_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos394.erdos_394.variants.lower_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos395.erdos_395.variants.one",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos395.erdos_395.variants.sharp",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos399.erdos_399.variants.erdos_oblath",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos399.erdos_399.variants.pollack_shapiro",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos399.erdos_399.variants.sum_two_squares",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos399.erdos_399.variants.sum_two_squares.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos4.erdos_4.variants.rankin",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos4.erdos_4.variants.rankin.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos400.erdos_400.variants.upper_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos405.erdos_405",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos405.erdos_405.variants.yu_liu",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos408.erdos_408.variants.pillai",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos41.erdos_41.variants.pairwise",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos413.erdos_413.variants.bigOmega_largest_barrier_lt_100k",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos413.erdos_413.variants.hasPosDensity_barrier_expProd",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos416.erdos_416.variants.Pillai",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos418.erdos_418.variants.sigma",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos418.erdos_418.variants.soln",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos423.erdos_423.variants.infinite_complement",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos423.erdos_423.variants.lower_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos423.erdos_423.variants.unbounded",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos427.erdos_427.variants.shiu.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos43.erdos_43.parts.i",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos43.erdos_43.parts.ii",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos433.erdos_433",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos436.erdos_436.parts.i",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos436.erdos_436.variants.even_three",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos436.erdos_436.variants.two_two",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos437.erdos_437.variants.little_o",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos437.erdos_437.variants.tao",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos437.erdos_437.variants.tao.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos437.erdos_437.variants.tao.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos437.erdos_437.variants.tao.R1.H3",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos437.erdos_437.variants.tao.R1.H3.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos44.erdos_44.variants.empty_start",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos44.greedy_sidon_construction",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos44.sidon_set_lower_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos441.erdos_441.variants.chen_dai_infinitely_often",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos441.erdos_441.variants.erdos_upper_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos441.erdos_441.variants.lower_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos442.erdos_442.variants.tao",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos442.erdos_442.variants.tao.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos442.erdos_442.variants.tao.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos442.erdos_442.variants.tao.R1.H2.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos442.erdos_442.variants.tao.R1.H2.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos445.erdos_445.variants.heilbronn",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos447.erdos_447.parts.i",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos454.erdos_454.variants.two_le_limsup",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos455.erdos_455.variants.liminf",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos456.erdos_456.variants.m_div_n",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos466.erdos_466.variants.graham",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos470.erdos_470.variants.prime_gap_imp_inf_prim_weird",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos470.erdos_470.variants.weird_pos_density",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos477.erdos_477.variants.degree_two_dvd_condition_b_ne_zero",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos477.erdos_477.variants.S_sq",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos481.erdos_481",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos482.erdos_482.variants.stoll_explicit",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos489.erdos_489.variants.squarefree",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos494.erdos_494.variants.product",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos499.erdos_499.variants.one_le",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos499.vanDerWaerden",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos499.vanDerWaerden.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos499.vanDerWaerden.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos499.vanDerWaerden.R1.H3",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos5.erdos_5.variants.westzynthius",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos50.erdos_50_schoenberg",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos500.erdos_500.variants.lower_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos501.erdos_501.variants.erdosHajnal_finite",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos501.erdos_501.variants.gladysz_size2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos501.erdos_501.variants.hechler_CH",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos503.erdos_503.variants.lower_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos503.erdos_503.variants.R2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos503.erdos_503.variants.R3",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos503.erdos_503.variants.upper_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos504.erdos_504.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos505.erdos_505.small_dim",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos506.erdos_506.variants.large_n",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos506.erdos_506.variants.segre_n_eq_eight",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos507.erdos_507.variants.lower_erdos",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos507.erdos_507.variants.upper_trivial",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos509.erdos_509.variants.Cartan_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos513.erdos_513.variants.lower_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos53.erdos_53.variants.upper",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos533.erdos_533.variants.delta_four_eq_zero",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos533.erdos_533.variants.delta_seven_ge_quarter",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos533.erdos_533.variants.ehsss_upper",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos533.erdos_533.variants.lrss_lower",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos535.erdos_535.variants.abbott_hanson",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos535.erdos_535.variants.erdos_upper_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos535.erdos_535.variants.lower_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos535.erdos_535.variants.sunflower_erdos_rado",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos539.erdos_539.variants.isBigO_sq_cube_root",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos539.erdos_539.variants.sq_isBigO",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos541.erdos_541.variants.large_primes",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos542.erdos_542.variants.log_power",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos549.erdos_549",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos554.erdos_554.variants.lower_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos554.erdos_554.variants.upper_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos554.multicolourGraphRamsey_one_cycleGraph_five",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos556.erdos_556.variants.luczak_asymptotic_even.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos556.erdos_556.variants.odd_lower_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos560.erdos_560.variants.lower_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos560.erdos_560.variants.upper_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos570.erdos_570.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos573.erdos_573.variants.c4_c5",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos573.erdos_573.variants.kst",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos578.erdos_578",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos588.erdos_588.variants.grunbaum",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos588.erdos_588.variants.grunbaum_order",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos588.erdos_588.variants.karteszi",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos588.erdos_588.variants.solymosi_stojakovic",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos588.erdos_588.variants.sylvester",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos588.erdos_588.variants.three_lower",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos588.erdos_588.variants.three_not_isLittleO",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos590.erdos_590.variants.ge_three_false",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos590.erdos_590.variants.two",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos593.erdos_593.variants.common_pair_not_obligatory",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos593.erdos_593.variants.two_colorable_implies_obligatory",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos594.erdos_594.variants.erdos_hajnal",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos596.erdos_596.variants.C4_C6_finite_ramsey",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos596.erdos_596.variants.C4_free_countable_escape",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos596.erdos_596.variants.exists_exceptional",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos596.erdos_596.variants.K4_K3_finite_ramsey",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos596.erdos_596.variants.original_conjecture_is_false",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos597.erdos_597.variants.erdos_hajnal",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos600.erdos_600.variants.ruzsa_szemeredi_upper_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos602.erdos_602.variants.countable_index",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos603.erdos_603",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos604.erdos_604.variants.grid_upper_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos604.erdos_604.variants.grid_upper_bound.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos604.erdos_604.variants.grid_upper_bound.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos611.erdos_611.variants.bollobas_erdos",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos611.erdos_611.variants.bollobas_erdos_sharp",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos617.erdos_617.variants.r_eq_3",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos617.erdos_617.variants.r_eq_4",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos617.erdos_617.variants.r_eq_4.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos617.erdos_617.variants.r_eq_4.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos617.erdos_617.variants.r2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos619.erdos_619.variants.add_edges_diam_three",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos619.erdos_619.variants.h_five_le",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos619.erdos_619.variants.h_three_le",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos619.erdos_619.variants.h_three_lower",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos626.erdos_626.variants.h_lower",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos626.erdos_626.variants.h_upper_odd",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos626.erdos_626.variants.kostochka",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos627.erdos_627.variants.conditional",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos627.erdos_627.variants.erdos_1961",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos627.erdos_627.variants.limit_bounds",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos627.erdos_627.variants.lower",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos627.erdos_627.variants.theta",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos627.erdos_627.variants.upper",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos628.erdos_628.variants.independence_number_2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos628.erdos_628.variants.k_5_a_3_b_3",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos629.erdos_629.variants.ert_bounds",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos629.erdos_629.variants.hmt_recursion",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos629.erdos_629.variants.n_three",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos629.erdos_629.variants.n_three.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos629.erdos_629.variants.n_three.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos629.erdos_629.variants.n_two",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos629.erdos_629.variants.property_b",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos633.IsCuttable.sq",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos633.IsSimiliCuttable.of_ne_zero_two_three_five",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos636.erdos_636.variants.best_possible",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos639.erdos_639.variants.exact",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos642.erdos_642.variants.upper_bound_n_pow_three_halves",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos650.erdos_650.variants.erdos_selfridge",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos650.erdos_650.variants.erdos_suranyi",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos651.erdos_651.variants.antitone",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos651.erdos_651.variants.planar",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos651.nonempty_cardSet",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos652.erdos_652",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos652.erdos_652.variants.elekes",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos652.erdos_652.variants.first",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos652.erdos_652.variants.kth_lower_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos652.erdos_652.variants.mathialagan",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos652.erdos_652.variants.order_sqrt.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos652.erdos_652.variants.product",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos656.erdos_656",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos657.erdos_657.variants.dim_one",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos657.erdos_657.variants.dim_one_upper",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos659.erdos_659",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos661.erdos_661.variants.grid_upper_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos661.erdos_661.variants.lenz",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos667.erdos_667.variants.ramsey_bounds",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos667.erdos_667.variants.ramsey_bounds.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos667.erdos_667.variants.ramsey_bounds.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos667.erdos_667.variants.ramsey_bounds.R1.H2.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos667.erdos_667.variants.ramsey_bounds.R1.H2.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos668.erdos_668.parts.ii",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos668.erdos_668.variants.four_points",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos669.erdos_669.variants.burr_grunbaum_sloane_atLeast",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos669.erdos_669.variants.burr_grunbaum_sloane_exactly",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos669.erdos_669.variants.k_two",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos669.erdos_669.variants.limit_le",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos669.erdos_669.variants.upper_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos670.erdos_670.variants.dim_one",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos670.erdos_670.variants.uniform_in_dim",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos672.erdos_672.variants.oblath.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos672.erdos_672.variants.oblath.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos672.erdos_672.variants.oblath.R1.H3",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos673.erdos_673.variants.tao",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos675.erdos_675.parts.iii",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos675.erdos_675.variants.squarefree",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos683.erdos_683.variant.sylvester_schur",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos697.density_exists",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos704.erdos_704.parts.i",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos704.erdos_704.variants.cube_colouring",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos704.erdos_704.variants.frankl_wilson",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos704.erdos_704.variants.larman_rogers",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos704.erdos_704.variants.larman_rogers.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos704.erdos_704.variants.larman_rogers.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos707.erdos_707.variants.counterexample_hall",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos707.erdos_707.variants.counterexample_mian_chowla",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos707.erdos_707.variants.counterexample_prime",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos707.erdos_707.variants.prime",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos707.erdos_707.variants.singer_construction",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos709.erdos_709.variants.ersu_lower",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos709.erdos_709.variants.ersu_upper",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos709.erdos_709.variants.van_doorn_lower",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos712.erdos_712.variants.graph_case",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos712.erdos_712.variants.graph_case_div_sq",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos712.erdos_712.variants.limit_exists",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos716.erdos_716",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos717.erdos_717.variants.erdos_fajtlowicz",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos723.erdos_723.variants.bruck_ryser",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos723.erdos_723.variants.leq_11.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos723.erdos_723.variants.leq_11.R1.H2.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos723.erdos_723.variants.leq_11.R1.H2.R2.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos723.erdos_723.variants.leq_11.R1.H2.R2.H2.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos723.erdos_723.variants.leq_11.R1.H2.R2.H2.R1.H2.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos723.erdos_723.variants.leq_11.R1.H2.R2.H2.R1.H2.R1.H2.R1.H2.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos723.erdos_723.variants.leq_11.R1.H2.R2.H2.R1.H2.R1.H2.R1.H2.R1.H3",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos723.erdos_723.variants.leq_11.R1.H2.R2.H2.R1.H2.R1.H2.R1.H2.R1.H4",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos723.erdos_723.variants.leq_11.R1.H2.R2.H2.R1.H2.R1.H2.R1.H3",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos723.erdos_723.variants.leq_11.R1.H2.R2.H2.R1.H2.R1.H2.R1.H3.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos723.erdos_723.variants.leq_11.R1.H2.R2.H2.R1.H2.R1.H2.R1.H3.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos723.erdos_723.variants.leq_11.R1.H2.R2.H2.R1.H2.R1.H2.R1.H3.R1.H3",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos723.erdos_723.variants.leq_11.R1.H2.R2.H2.R1.H2.R1.H2.R1.H3.R1.H4",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos723.erdos_723.variants.leq_11.R1.H2.R2.H2.R1.H2.R1.H2.R1.H4.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos723.erdos_723.variants.leq_11.R1.H2.R2.H2.R1.H2.R1.H2.R1.H4.R1.H3",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos723.erdos_723.variants.leq_11.R1.H2.R2.H2.R1.H2.R1.H2.R1.H4.R1.H4",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos723.erdos_723.variants.leq_11.R1.H2.R2.H3.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos723.erdos_723.variants.leq_11.R1.H2.R2.H3.R1.H4",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos723.erdos_723.variants.leq_11.R1.H2.R2.H4.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos723.erdos_723.variants.prime_power_is_projplane_order",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos724.erdos_724.variants.bose_parker_shrikhande.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos724.erdos_724.variants.bose_parker_shrikhande.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos727.erdos_727.variants.k_1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos727.erdos_727.variants.k_1_2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos732.erdos_732.parts.ii",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos739.erdos_739.variants.aleph_zero",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos739.erdos_739.variants.induced",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos742.variants.plesnik_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos743.erdos_743.variants.all_but_two_stars",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos743.erdos_743.variants.bollobas",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos743.erdos_743.variants.fishburn",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos743.erdos_743.variants.stars_or_paths",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos750.erdos_750.variants.c_gt_quarter",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos750.erdos_750.variants.epsilon",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos751.erdos_751.parts.i",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos751.erdos_751.parts.i.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos751.erdos_751.parts.i.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos751.erdos_751.parts.ii",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos753.erdos_753.variants.alon",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos756.erdos_756",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos756.erdos_756.variants.bhowmick_general",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos757.erdos_757.variants.upperBound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos760.erdos_760.variants.erdos_gimbel",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos761.erdos_761.variants.parts_ii_imp_i",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos762.erdos_762.variants.bounded_clique_number",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos762.erdos_762.variants.steiner",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos767.erdos_767.variants.czipszer",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos767.erdos_767.variants.posa",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos770.erdos_770.variants.odd_h_unbounded",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos770.Nat.Prime.h_eq_add_one",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos771.erdos_771.variants.erdos_graham_lower",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos772.erdos_772.variants.alon_erdos",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos772.erdos_772.variants.upper_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos775.erdos_775.variants.gao",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos775.erdos_775.variants.moon_moser",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos775.erdos_775.variants.spencer",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos78.erdos_78.variants.little_o_sqrt",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos78.erdos_78.variants.little_o_sqrt.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos78.erdos_78.variants.little_o_sqrt.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos78.erdos_78.variants.little_o_sqrt.R1.H3",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos78.erdos_78.variants.nonconstructive",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos780.erdos_780.variants.sharp",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos781.erdos_781.variants.brown_erdos_freedman",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos782.erdos_782.variants.no_four_term_ap",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos785.erdos_785.variants.chen_fang",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos785.erdos_785.variants.chen_fang_sharp",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos785.erdos_785.variants.danzer",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos785.erdos_785.variants.narkiewicz",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos785.erdos_785.variants.ruzsa_lower_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos785.erdos_785.variants.sarkozy_szemeredi",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos786.erdos_786.parts.i.selfridge",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos787.erdos_787.variants.choi",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos787.erdos_787.variants.integers",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos787.erdos_787.variants.klarner",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos787.erdos_787.variants.ruzsa",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos789.erdos_789.variants.isBigO_sq",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos790.erdos_790.variants.upper_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos792.erdos_792.variants.alon_kleitman",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos793.erdos_793",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos794.erdos_794.variants.frankl_furedi",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos798.erdos_798.variants.lower_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos798.erdos_798.variants.upper_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos800.erdos_800",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos802.erdos_802.variants.aeks",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos802.erdos_802.variants.alon",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos802.erdos_802.variants.r_eq_three",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos802.erdos_802.variants.shearer",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos805.erdos_805.variants.alon_sudakov",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos806.erdos_806.variants.alon_bukh_sudakov",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos806.erdos_806.variants.erdos_newman",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos808.erdos_808.variants.positive",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos81.erdos_81.variants.split",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos812.erdos_812.variants.lower_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos817.erdos_817.variants.bdd_power",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos818.erdos_818.variants.solymosi",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos819.erdos_819.variants.erdos_freud_lower",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos821.erdos_821.variants.erdos.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos821.erdos_821.variants.pillai",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos823.erdos_823.variants.totient",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos827.erdos_827.variants.martinez_roldan_pensado",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos827.erdos_827.variants.n_four_le",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos829.variants.mordell",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos83.erdos_83.variants.extremal",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos831.erdos_831.variants.szekeres",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos832.erdos_832",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos833.erdos_833",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos834.erdos_834.parts.i",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos834.erdos_834.parts.ii",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos835.chromaticNumber_johnson_2k_k_lower_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos838.erdos_838.variants.erdos_bounds",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos840.erdos_840.variants.erdos_freud_lower",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos840.erdos_840.variants.pikhurko",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos851.erdos_851.variants.romanoff",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos856.erdos_856.variants.erdos_upper",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos858.erdos_858.variants.positive",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos859.erdos_859.variants.positive_density",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos860.erdos_860.variants.erdos_pomerance_upper",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos860.erdos_860.variants.erdos_selfridge_lower",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos860.erdos_860.variants.ruzsa",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos862.erdos_862.variants.lower_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos864.erdos_864.variants.lower_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos867.erdos_867.variants.coppersmith_phillips_lower_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos867.erdos_867.variants.freud",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos868.erdos_868.parts.i",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos868.erdos_868.parts.ii",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos873.erdos_873.variants.triple_upper_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos875.erdos_875.variants.erdos_nicolas_sarkozy",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos875.erdos_875.variants.polynomial_gaps",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos876.erdos_876.variants.dem_polynomial",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos876.erdos_876.variants.dem_ratio",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos876.erdos_876.variants.density_zero",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos876.erdos_876.variants.recip_sum_lt",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos877.erdos_877.variants.cameron_erdos",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos878.erdos_878.parts.iii_all",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos878.erdos_878.variants.H_div_self_liminf_finite",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos878.erdos_878.variants.H_div_self_limsup_infinite",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos878.erdos_878.variants.H_lower_quadruple_log_infinitely_often",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos878.erdos_878.variants.H_upper_triple_log",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos878.erdos_878.variants.second_question_subsequence",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos882.erdos_882",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos882.erdos_882.variants.greedy",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos884.erdos_884_false_of_hardy_littlewood",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos887.erdos_887.variants.rosenfeld_infinite",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos888.erdos_888.variants.primes",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos888.erdos_888.variants.sarkozy",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos888.erdos_888.variants.semiprimes",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos889.erdos_889.variants.v0_gt_1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos89.erdos_89.variants.grid_upper_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos890.erdos_890.variants.liminf_lower_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos890.erdos_890.variants.omega_limsup",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos891.erdos_891.variants.weisenberg",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos893.erdos_893.variants.unbounded",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos90.sawin_lattice_reduction",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos902.erdos_902.variants.erdos_lower",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos902.erdos_902.variants.erdos_upper",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos902.erdos_902.variants.f_two",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos902.erdos_902.variants.szekeres_f_three",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos902.erdos_902.variants.szekeres_f_three.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos902.erdos_902.variants.szekeres_f_three.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos902.erdos_902.variants.szekeres_lower",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos903.erdos_903",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos91.erdos_91.test.circleSeven_optimal",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos91.erdos_91.test.dissimilar_circleSeven_wheelSeven",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos91.erdos_91.test.equiTriangle_unique_optimal",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos91.erdos_91.test.unitSquare_optimal",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos91.erdos_91.test.wheelSeven_optimal",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos91.erdos_91.test.wheelSeven_optimal.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos91.erdos_91.test.wheelSeven_optimal.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos91.erdos_91.variants.eight",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos91.erdos_91.variants.eight.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos91.erdos_91.variants.eight.R1.H1.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos91.erdos_91.variants.eight.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos91.erdos_91.variants.five",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos91.erdos_91.variants.nine",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos912.erdos_912.variants.selfridge",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos912.erdos_912.variants.selfridge.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos912.erdos_912.variants.selfridge.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos914.erdos_914.variants.equitable_colouring",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos917.erdos_917.parts.i",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos917.erdos_917.parts.iii",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos917.erdos_917.variants.dirac",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos917.erdos_917.variants.erdos_three_dvd",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos917.erdos_917.variants.lower_construction",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos917.erdos_917.variants.lower_construction.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos917.erdos_917.variants.lower_construction.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos917.erdos_917.variants.lower_construction.R1.H3",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos917.erdos_917.variants.lower_construction.R1.H4",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos917.erdos_917.variants.not_asymptotic",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos926.erdos_926.variants.aks",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos929.erdos_929.variants.trivial_upper",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos932.erdos_932.variants.one_le",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos934.erdos_934.variants.ccjk_conjecture_false",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos934.erdos_934.variants.h_one",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos934.erdos_934.variants.h_three_three",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos934.erdos_934.variants.h_two.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos934.erdos_934.variants.kmp_h_three_four",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos934.erdos_934.variants.kmp_liminf",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos934.erdos_934.variants.upper",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos939.erdos_939.variants.eight",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos939.erdos_939.variants.finite",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos939.erdos_939.variants.infinite_of_six_le",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos939.erdos_939.variants.seven",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos939.erdos_939.variants.triples",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos94.erdos_94.variants.no_three_on_a_line",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos940.erdos_940.variants.two",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos942.erdos_942.variants.density",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos942.erdos_942.variants.limsup",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos944.erdos_944.variants.dirac_conjecture.k_eq_5",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos944.erdos_944.variants.dirac_conjecture.k_sub_one_not_prime",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos945.erdos_945.variants.equivalence",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos945.erdos_945.variants.lower_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos945.erdos_945.variants.upper_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos950.erdos_950.variants.weaker_pi_implies_f",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos950.erdos_950.variants.weaker_pi_implies_f.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos950.erdos_950.variants.weaker_pi_implies_f.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos954.erdos_954.variants.lower",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos955.erdos_955.variants.empty_preimage",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos955.erdos_955.variants.pollack_primes",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos955.erdos_955.variants.troupe_sum_of_two_squares",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos96.erdos_96",
+        "polarity": "disproof"
+      },
+      {
+        "problem_id": "Erdos961.erdos_961.sylvester_schur",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos962.erdos_962.variants.tang_lower_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos962.erdos_962.variants.tao_upper_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos965.erdos_965.variants.generalization",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos967.erdos_967.variants.yip",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos969.erdos_969.variants.evelyn_linfoot.R1.H3",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos969.erdos_969.variants.prime_number_theorem",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos969.erdos_969.variants.prime_number_theorem.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos969.erdos_969.variants.prime_number_theorem.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos969.erdos_969.variants.prime_number_theorem.R1.H3",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos97.erdos_97",
+        "polarity": "disproof"
+      },
+      {
+        "problem_id": "Erdos97.erdos_97.variants.three_unit_distance",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos973.erdos_973.variants.le_one",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos973.erdos_973.variants.tang",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos974.erdos_974.variants.two_tuples",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos975.erdos_975.variants.n2_plus_1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos978.erdos_978.variants.sub_two",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos978.erdos_978.variants.sub_two.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos978.erdos_978.variants.sub_two.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos978.erdos_978.variants.sub_two.R1.H2.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos978.erdos_978.variants.sub_two.R1.H2.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos978.erdos_978.variants.sub_two.R1.H2.R1.H2.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos978.erdos_978.variants.sub_two.R1.H2.R1.H2.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos98.erdos_98.variants.upper_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos983.erdos_983.parts.i",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos983.erdos_983.variants.upper_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos985.erdos_985.R1.H3",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos990.erdos_990.variants.counterexample",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos990.erdos_990.variants.hayman",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos994.erdos_994.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos997.erdos_997.variants.lacunary",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos999.erdos_999.variants.easy_direction",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos999.erdos_999.variants.easy_direction.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Erdos999.erdos_999.variants.easy_direction.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "EswarathasanLevineConjecture.eswarathasan_levine_three_elements_subset",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "EswarathasanLevineConjecture.harmonicNumDivisibleSet_two_empty",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "EuclideanRamseyCircle.at_most_five_circle_points_ramsey",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "EulerBrick.cuboid_perfect_euler_brick",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Fuglede.FugledeConjecture.variants.dim_3_or_higher",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "GaussCircleProblem.error_le",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "GaussCircleProblem.error_not_isLittleO",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "GaussCircleProblem.exact_form_floor",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Gerstenhaber.finrank_adjoin_pair_le",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green100.green_100.parts.ii.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green100.green_100.variants.residuallyFinite_isSofic",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green100.green_100.variants.sofic_isHyperlinear",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green14.green_14_lower_bound_brown_landman_robertson",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green14.green_14_lower_bound_li_shu",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green14.W_3_10",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green14.W_3_10.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green14.W_3_10.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green14.W_3_10.R1.H3",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green14.W_3_11",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green14.W_3_11.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green14.W_3_11.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green14.W_3_11.R1.H3",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green14.W_3_12.R1.H4",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green14.W_3_21_lower",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green14.W_3_22_lower",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green14.W_3_23_lower",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green14.W_3_24_lower",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green14.W_3_25_lower",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green14.W_3_26_lower",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green14.W_3_27_lower",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green14.W_3_28_lower",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green14.W_3_29_eq",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green14.W_3_29_lower",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green14.W_3_30_eq",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green14.W_3_30_lower",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green14.W_3_31_lower",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green14.W_3_32_lower",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green14.W_3_33_lower",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green14.W_3_34_lower",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green14.W_3_35_lower",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green14.W_3_36_lower",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green14.W_3_37_lower",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green14.W_3_38_lower",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green14.W_3_39_lower",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green14.W_3_6",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green14.W_3_7",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green14.W_3_8",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green14.W_3_9",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green16.green_16_lower_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green18.green_18.bmz_corners",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green2.green_2_upper_bound_choi",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green2.green_2_upper_bound_erdos",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green2.green_2_upper_bound_ruzsa",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green22.green_22.variants.lower_nine",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green24.variants.lower_HL",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green24.variants.upper_HL",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green25.green_25.variants.lower_ess89",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green25.green_25.variants.upper_ess89",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green26.green_26.variants.alm91",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green27.green_27.variants.lower_be23",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green27.green_27.variants.lower_cy26",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green27.green_27.variants.previous_lower",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green27.green_27.variants.previous_upper",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green29.green_29.variant",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green31.green_31.variants.upper_bfr23",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green31.green_31.variants.upper_cho25",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green31.green_31.variants.upper_li69",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green32.green_32.variants.finite_field",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green32.green_32.variants.sh20_general",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green32.green_32.variants.sh20_sqrt",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green35.green_35.upper",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green35.variants.c_2_lower",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green35.variants.c_inf_lower_young",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green35.variants.c_inf_upper",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green35.variants.c_inf_upper_ae25",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green35.variants.c_inf_upper_ggtw25",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green38.green_38.lower",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green38.green_38.variants.best_lower",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green38.green_38.variants.best_upper",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green38.green_38.variants.lower_itty_rosin_carstensen_reichman",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green40.green_40.upper_bound_f_two",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green40.green_40.upper_bound_f_two.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green40.green_40.upper_bound_f_two.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green40.green_40.variants.arbitrary_subsets_sanity_f_tilde_two",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green41.minCopies_set_nonempty",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green42.green_42.variants.dimension_one",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green43.green_43.variants.general_exponent_lt_half",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green44.green_44.variants.less_than_sqrt",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green5.green_5.variants.gowers_sl_two",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green51.green_51.upper",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green72.no_three_in_line_le",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green75.green_75.variants.alon",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green76.green_76.variants.subset",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green76.green_76.variants.subset_log_log",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green84.green_84.variants.golay",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green85.green_85_loose",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green87.green_87.variants.exists_tendsto",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green87.green_87.variants.exists_tendsto.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green87.green_87.variants.exists_tendsto.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Green95.green_95.variants.lower_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "GyarfasSumnerConjecture.gyarfas_sumner_conjecture.variants.path",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "HajosConjecture.hajos_conjecture",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "HajosConjecture.hajos_conjecture.variants.catlin",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "HajosConjecture.hajos_conjecture.variants.le_four",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Hall.danilov",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "HallRatioConjecture.hall_ratio_conjecture",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "HallRatioConjecture.hall_ratio_conjecture.variants.hallRatio_le_fractionalChromaticNumber",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "HallRatioConjecture.hall_ratio_conjecture.variants.unbounded",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "HardyLittlewood.not_first_and_secondHardyLittlewoodConjecture",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "HedetniemiConjecture.hedetniemi_conjecture",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "HedetniemiConjecture.hedetniemi_conjecture.variants.el_zahar_sauer",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "HedetniemiConjecture.hedetniemi_conjecture.variants.shitov",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Hilbert17.f_not_sum_of_squares",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "HyperperfectNumber.two_hyperperfect_characterization",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Idoneal.idoneal_numbers_completeness.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Idoneal.idoneal_numbers_completeness.R1.H3",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Idoneal.idoneal_numbers_completeness.R1.H4",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "InverseGalois.inverse_galois_problem.variants.abelian",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "InverseGalois.inverse_galois_problem.variants.cyclic",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Jacobson.jacobson_conjecture_of_comm_ring",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Jacobson.jacobson_conjecture_of_right_noetherian",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Kaplansky.direct_finiteness_conjecture",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Kaplansky.direct_finiteness_conjecture.variants.char_two",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Kaplansky.direct_finiteness_conjecture.variants.char_zero",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Kaplansky.promislow_group_is_torsionfree",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Kaplansky.UnitConjecture.counterexamples.i",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Kaplansky.UnitConjecture.counterexamples.ii",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "KaplanskyUInvariant.u_invariant_values.variants.not_five",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "KaplanskyUInvariant.u_invariant_values.variants.not_seven",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "KaplanskyUInvariant.u_invariant_values.variants.not_three",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Kourovka.20.76.kourovka_20_76",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "LamLitt.lam_litt.variants.eisenstein",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "LehmerMahlerMeasureProblem.lehmer_mahler_measure_problem.variants.not_reciprocal",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "LehmerMahlerMeasureProblem.lehmer_mahler_measure_problem.variants.odd",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "LeinsterGroup.abelian_is_leinster_iff_cyclic_perfect",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "LeinsterGroup.cyclic_of_perfect_is_leinster",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "LeinsterGroup.dihedral_is_leinster_iff_odd_perfect",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "LeinsterGroup.exists_nonabelian_leinster_group",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "LinearArboricityConjecture.linear_arboricity_conjecture.variants.cubic",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Mahler32.mahler_conjecture.variants.consequence",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Mahler32.mahler_conjecture.variants.flatto_lagarias_pollington",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Mathoverflow10799.discrete_isoperimetric_inequality",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Mathoverflow10799.mathoverflow_10799.variants.weak_kahn_kalai",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Mathoverflow17560.mathoverflow_17560.variants.all_nats",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Mathoverflow17560.mathoverflow_17560.variants.with_5",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Mathoverflow235893.mathoverflow_260589",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Mathoverflow339137.mathoverflow_339137_probabilistic",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Mathoverflow34145.rectangles_pack_square_133_div_132",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Mathoverflow34145.rectangles_pack_square_501_div_500",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Mathoverflow34145.rectangles_pack_square_501_div_500.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Mathoverflow34145.rectangles_pack_square_501_div_500.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Mathoverflow486451.exists_semiring_unique_left_maximal_not_unique_right_maximal",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Mathoverflow508539.mathoverflow_508539",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Mathoverflow75792.complexity_three_pow",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "MaximalPrimeGap.infinite_maximalPrimeGapIndex",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "MeanValueProblem.mean_value_problem_of_real_roots",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "MeanValueProblem.mean_value_problem_of_roots_same_norm",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Mersenne.rotkiewicz_infinite_non_wieferich_of_squarefree_mersenne",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Mersenne.sq_dvd_mersenne_iff_isWieferichPrime",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "MeynielConjecture.meyniel_conjecture.variants.tree",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Mills.lower_bound_of_RH",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Mills.lower_bound_of_RH.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Mills.lower_bound_of_RH.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "MinimalPrime.base_ten_minimal_primes_card",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "MinimalPrime.base_ten_minimal_primes_eq",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "MinimalPrime.minimal_primes_finite_in_every_base",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "ModularityConjecture.modularity_conjecture",
+        "polarity": "disproof"
+      },
+      {
+        "problem_id": "MonochromaticQuantumGraph.eqSystem_no_solution_nnreal_even_ge6_ge3",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "MonochromaticQuantumGraph.eqSystem4_no_solution_nnreal_ge4",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "MoserWorm.convex_mosers_worm_problem_bound_attained",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "NoetherProblem.noether_problem.variants.two",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "NumberField.exists_quadraticAlgebra_of_isQuadraticExtension",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA100478.conjecture",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA105751.prime_divides_some_term",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA107247.known_prime_and_semiprimes",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA109074.conjecture.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA111291.conjecture",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA158110.a_0",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA158110.a_1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA158110.a_2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA181076.a_0",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA181076.a_1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA181076.a_2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA181076.a_3",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA181076.a_4",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA181078.a_0",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA181078.a_1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA181078.a_2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA181078.a_3",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA181078.a_4",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA181082.a_0",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA181082.a_1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA181082.a_2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA181082.a_3",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA181082.a_4",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA181084.a_0",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA181084.a_1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA181084.a_2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA181084.a_3",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA181084.a_4",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA1818.conjecture2.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA183128.a_0",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA183128.a_1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA183128.a_2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA183128.a_3",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA183128.a_4",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA183129.a_0",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA183129.a_1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA183129.a_2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA183129.a_3",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA183129.a_4",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA189286.conjecture_1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA189286.conjecture_2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA193279.a_eq_self_of_perfect_of_even",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA206911.conjecture_1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA206911.conjecture_2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA217703.conjecture_2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA218585.conjecture_4.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA218585.conjecture_4.R1.H2.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA226163.conjecture",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA228304.conjecture_1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA228304.conjecture_2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA232616.conjecture_1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA234360.conjecture_2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA2454.conjecture",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA261680.conjecture",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA261680.conjecture.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA261680.conjecture.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA261876.conjecture_2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA358684.a_7",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA368630.a_1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA368630.a_2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA368630.a_3",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA368630.a_4",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA396843.a_2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA396843.a_3",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA396843.a_4",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OeisA396843.a_5",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OhbaConjecture.ohba_conjecture.variants.erdos_rubin_taylor",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OpenQuantumProblem23.hasSICPOVM_three",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OpenQuantumProblem23.hasSICPOVM_two",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OpenQuantumProblem23.hesseFamily_pairwise",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "OpenQuantumProblem23.qubitSICFamily_pairwise",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "PartitionParity.classNumber_eq_ncard_reducedForms",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "PartitionParity.classNumber_eq_ncard_reducedForms.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "PartitionParity.kolberg",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "PetersenColoringConjecture.petersen_coloring_conjecture.variants.normal_five_edge_coloring",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "PierceBirkhoff.pierce_birkhoff_conjecture_dim_one",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "PoincareConjecture.poincare_conjecture.variants.dimension_two.R1.H3",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "PollocksConjecture.pollock_tetrahedral.ncard_exceptions",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "PompeiuProblem.ball_not_hasPompeiuProperty",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "PowerfulNumbersDensity.asymptotic_bateman_grosswald",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "PowerfulNumbersDensity.asymptotic_erdos_szekeres",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "ProthPrime.proth_primality_criterion",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "PudlakFiniteDomain.sat_no_p_optimal_proof_system.variants.exists_of_P_eq_NP",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "PudlakFiniteDomain.sat_no_p_optimal_proof_system.variants.exists_of_P_eq_NP.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "PudlakFiniteDomain.sat_no_p_optimal_proof_system.variants.exists_of_P_eq_NP.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "QuadraticAlgebra.discr_rat_of_modEq_one",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "QuadraticAlgebra.discr_rat_of_not_modEq_one",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "RamanujanTau.-_two",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "RamseyNumbers.ramsey_number_four_four",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "RamseyNumbers.ramsey_number_six_six_lower_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "RamseyNumbers.ramsey_number_three_five",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "RamseyNumbers.ramsey_number_three_four",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "RamseyNumbers.ramsey_number_three_nine.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "RamseyNumbers.ramsey_number_three_seven.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "RamseyNumbers.ramsey_number_three_six",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "RamseyNumbers.ramsey_number_three_six.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "RamseyNumbers.ramsey_number_three_six.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "RamseyNumbers.ramsey_number_three_three",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "RefactorableNumber.no_three_consecutive_refactorable",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "RefactorableNumber.no_three_consecutive_refactorable.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "RefactorableNumber.refactorable_hasDensity_zero",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "RegularPrimes.isRegularPrime_iff_Bernoulli.R2.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "RegularPrimes.not_isRegularPrime_37",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "RegularPrimes.not_isRegularPrime_37.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "RegularPrimes.small_regular_primes.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "RiemannZetaMoments.moment_isEquiv-77",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "RiemannZetaValues.apery_central_binomial_series",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "RiemannZetaValues.apery_central_binomial_series.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "RiemannZetaValues.apery_central_binomial_series.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "RiemannZetaValues.irrational_three",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "RowlandSequence.rowland_diff_eq_one_or_prime",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "SidorenkoConjecture.sidorenko_completeBipartiteGraph_graphon",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "SidorenkoConjecture.sidorenko_conjecture.variants.complete_bipartite",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "SidorenkoConjecture.sidorenko_conjecture.variants.even_cycle",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "SidorenkoConjecture.sidorenko_conjecture.variants.path_blakley_roy",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "SidorenkoConjecture.sidorenko_even_cycle_graphon",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "SidorenkoConjecture.sidorenko_tree_graphon",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "SidorenkoConjecture.tournament_anti_sidorenko_single_even_degree_tree",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "SierpinskiEgyptianFractionConjecture.sierpinski_counterexamples_hasDensity_zero",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "SimpleGraph.lemma3",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "SimpleGraph.lemma4",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "SimpleGraph.theorem1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "SimpleGraph.theorem2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "SmallCohenMacaulayModules.isBalancedBigCohenMacaulay_iff_isSmallCohenMacaulay",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "SmithNumber.mcdaniel_infinitely_many_smith_numbers",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "SnakeInBox.snake_dim_nine_lower_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "SnakeInBox.snake_upper_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "SquarePacking.eleven_square_packing_in_square_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "SquarePacking.fifteen_circle_packing_in_circle_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "SquarePacking.seventeen_square_packing_in_square_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "SquarePacking.three_square_packing_in_circle_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "SquarePacking.twenty_one_circle_packing_in_square_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "SteinerSystems.steiner_system_5_8_24",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "StrongSensitivityConjecture.nisanExample_blockSensitivity",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "StrongSensitivityConjecture.nisanExample_sensitivity",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "SuffixPrefixAvoidance.suffix_prefix_avoidance_bound",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "SumnerUniversalTournamentConjecture.sumner_conjecture.variants.el_sahili",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "SumnerUniversalTournamentConjecture.sumner_conjecture.variants.sharp",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "ThabitNumber.thabit_amicable_rule",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "TotalColoringConjecture.total_coloring_conjecture.variants.complete_graph",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "Transcendental.transcendental_gamma_one_div_two",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "TuDengConjecture.tu_deng_conjecture",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "TuzaConjecture.tuza_conjecture.variants.haxell",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "VCDimConvex.exists_convex_rn_add_two_vc_n_forall_not_hasAddVCNDimAtMost",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "VCDimConvex.exists_infinite_convex_r3_shatters",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "VCDimConvex.hasAddVCDimAtMost_three_of_convex_r2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "VizingConjecture.vizing_conjecture.variants.clark_suen",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "VizingConjecture.vizing_conjecture.variants.suen_tarr",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "VoronovskajaTypeFormula.voronovskaja_theorem.bernstein_operators",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "WeaklyFirstCountable.exists_weakly_first_countable_not_first_countable",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "WilfNumericalSemigroupConjecture.wilf_conjecture_embedding_dim_le_three",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "WolstenholmePrime.wolstenholme_bernoulli",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "WolstenholmePrime.wolstenholme_bernoulli.R1.H1",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "WolstenholmePrime.wolstenholme_bernoulli.R1.H2",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "WolstenholmePrime.wolstenholme_harmonic",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "WrittenOnTheWallII.GraphConjecture13.conjecture13",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "WrittenOnTheWallII.GraphConjecture16.conjecture16",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "WrittenOnTheWallII.GraphConjecture17.conjecture17",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "WrittenOnTheWallII.GraphConjecture18.conjecture18",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "WrittenOnTheWallII.GraphConjecture23.conjecture23",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "WrittenOnTheWallII.GraphConjecture24.conjecture24",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "WrittenOnTheWallII.GraphConjecture25.conjecture25",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "WrittenOnTheWallII.GraphConjecture3.conjecture3",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "WrittenOnTheWallII.GraphConjecture33.conjecture33",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "WrittenOnTheWallII.GraphConjecture4.conjecture4",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "WrittenOnTheWallII.GraphConjecture5.conjecture5",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "WrittenOnTheWallII.GraphConjecture6.conjecture6",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "WrittenOnTheWallII.GraphConjecture91.conjecture91",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "WrittenOnTheWallII.Test.C6_cvetkovic",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "WrittenOnTheWallII.Test.C6_girth",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "WrittenOnTheWallII.Test.house_cvetkovic",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "WrittenOnTheWallII.Test.K4_cvetkovic",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "WrittenOnTheWallII.Test.petersen_cvetkovic",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "WrittenOnTheWallII.Test.petersen_girth",
+        "polarity": "proof"
+      },
+      {
+        "problem_id": "WrittenOnTheWallII.Test.Star5_cvetkovic",
+        "polarity": "proof"
+      }
+    ],
+    "solvedToday": 1346,
+    "claimsToday": 6996,
+    "contributors": 328
   },
   "item_index_policy": {
     "mirrored_fields": [
@@ -28,19 +5480,35 @@
       "liveAgents",
       "claimed"
     ],
-    "counts_only_programs": [
+    "all_programs_mirrored": true,
+    "max_shard_bytes": 4194304,
+    "crosswalk_excluded_programs": [
       "MathOverflow (not formalized)",
       "Mathematics Stack Exchange (not formalized)",
       "OEIS conjectures (not formalized)"
     ],
-    "reason": "titles in counts-only programs are CC BY-SA user content; excerpts may carry CC BY-SA text"
+    "license_carve_out": "data/external/lefttosolve/ is carved out of this repository's CC BY 4.0 data license; see THIRD_PARTY_NOTICES.md and LICENSE."
   },
   "totals": {
     "programs": 25,
     "api_total": 59396,
     "sum_card_targets": 59396,
     "sum_api_totals": 59396,
-    "mirrored_items": 4777,
+    "mirrored_items": 59396,
+    "kinds": {
+      "open": 1939,
+      "known": 1818,
+      "warmup": 168,
+      "unformalized": 55471,
+      "other": 0
+    },
+    "solved_by_kind": {
+      "open": 0,
+      "known": 746,
+      "warmup": 88,
+      "unformalized": 0,
+      "other": 0
+    },
     "consistent": true
   },
   "programs": [
@@ -52,15 +5520,28 @@
       "targets": 35783,
       "open": 35783,
       "solved_here": 0,
+      "api_total": 35783,
       "kinds": {
         "open": 0,
         "known": 0,
+        "warmup": 0,
         "unformalized": 35783,
         "other": 0
       },
-      "mirrored": false,
-      "mirrored_count": 0,
-      "api_total": 35783
+      "solved_by_kind": {
+        "open": 0,
+        "known": 0,
+        "warmup": 0,
+        "unformalized": 0,
+        "other": 0
+      },
+      "solved_flag_count": 0,
+      "mirrored": true,
+      "mirrored_count": 35783,
+      "shards": [
+        "mathoverflow-not-formalized.part-001.jsonl",
+        "mathoverflow-not-formalized.part-002.jsonl"
+      ]
     },
     {
       "name": "OEIS conjectures (not formalized)",
@@ -70,15 +5551,27 @@
       "targets": 18441,
       "open": 18441,
       "solved_here": 0,
+      "api_total": 18441,
       "kinds": {
         "open": 0,
         "known": 0,
+        "warmup": 0,
         "unformalized": 18441,
         "other": 0
       },
-      "mirrored": false,
-      "mirrored_count": 0,
-      "api_total": 18441
+      "solved_by_kind": {
+        "open": 0,
+        "known": 0,
+        "warmup": 0,
+        "unformalized": 0,
+        "other": 0
+      },
+      "solved_flag_count": 0,
+      "mirrored": true,
+      "mirrored_count": 18441,
+      "shards": [
+        "oeis-conjectures-not-formalized.jsonl"
+      ]
     },
     {
       "name": "Erdős Problems",
@@ -87,17 +5580,28 @@
       "description": "Paul Erdős's problems, many with cash prizes, as catalogued on erdosproblems.com by Thomas Bloom.",
       "targets": 2068,
       "open": 837,
-      "solved_here": 676,
+      "solved_here": 720,
+      "api_total": 2068,
       "kinds": {
         "open": 837,
         "known": 1187,
+        "warmup": 44,
         "unformalized": 0,
-        "other": 44
+        "other": 0
       },
+      "solved_by_kind": {
+        "open": 0,
+        "known": 534,
+        "warmup": 42,
+        "unformalized": 0,
+        "other": 0
+      },
+      "solved_flag_count": 576,
       "mirrored": true,
       "mirrored_count": 2068,
-      "solved_flag_count": 682,
-      "api_total": 2068
+      "shards": [
+        "erdos-problems.jsonl"
+      ]
     },
     {
       "name": "Wikipedia",
@@ -106,17 +5610,28 @@
       "description": "Problems from Wikipedia's list of unsolved problems in mathematics.",
       "targets": 615,
       "open": 336,
-      "solved_here": 124,
+      "solved_here": 135,
+      "api_total": 615,
       "kinds": {
         "open": 336,
         "known": 242,
+        "warmup": 37,
         "unformalized": 0,
-        "other": 37
+        "other": 0
       },
+      "solved_by_kind": {
+        "open": 0,
+        "known": 61,
+        "warmup": 20,
+        "unformalized": 0,
+        "other": 0
+      },
+      "solved_flag_count": 81,
       "mirrored": true,
       "mirrored_count": 615,
-      "solved_flag_count": 125,
-      "api_total": 615
+      "shards": [
+        "wikipedia.jsonl"
+      ]
     },
     {
       "name": "OEIS",
@@ -125,17 +5640,28 @@
       "description": "Conjectures attached to sequences in the On-Line Encyclopedia of Integer Sequences. Often numerically explorable.",
       "targets": 461,
       "open": 394,
-      "solved_here": 59,
+      "solved_here": 60,
+      "api_total": 461,
       "kinds": {
         "open": 394,
         "known": 21,
+        "warmup": 46,
         "unformalized": 0,
-        "other": 46
+        "other": 0
       },
+      "solved_by_kind": {
+        "open": 0,
+        "known": 0,
+        "warmup": 0,
+        "unformalized": 0,
+        "other": 0
+      },
+      "solved_flag_count": 0,
       "mirrored": true,
       "mirrored_count": 461,
-      "solved_flag_count": 59,
-      "api_total": 461
+      "shards": [
+        "oeis.jsonl"
+      ]
     },
     {
       "name": "Mathematics Stack Exchange (not formalized)",
@@ -145,15 +5671,27 @@
       "targets": 395,
       "open": 395,
       "solved_here": 0,
+      "api_total": 395,
       "kinds": {
         "open": 0,
         "known": 0,
+        "warmup": 0,
         "unformalized": 395,
         "other": 0
       },
-      "mirrored": false,
-      "mirrored_count": 0,
-      "api_total": 395
+      "solved_by_kind": {
+        "open": 0,
+        "known": 0,
+        "warmup": 0,
+        "unformalized": 0,
+        "other": 0
+      },
+      "solved_flag_count": 0,
+      "mirrored": true,
+      "mirrored_count": 395,
+      "shards": [
+        "mathematics-stack-exchange-not-formalized.jsonl"
+      ]
     },
     {
       "name": "Wikipedia list (not formalized)",
@@ -163,16 +5701,27 @@
       "targets": 366,
       "open": 366,
       "solved_here": 0,
+      "api_total": 366,
       "kinds": {
         "open": 0,
         "known": 0,
+        "warmup": 0,
         "unformalized": 366,
         "other": 0
       },
+      "solved_by_kind": {
+        "open": 0,
+        "known": 0,
+        "warmup": 0,
+        "unformalized": 0,
+        "other": 0
+      },
+      "solved_flag_count": 0,
       "mirrored": true,
       "mirrored_count": 366,
-      "solved_flag_count": 0,
-      "api_total": 366
+      "shards": [
+        "wikipedia-list-not-formalized.jsonl"
+      ]
     },
     {
       "name": "Open Problem Garden",
@@ -182,16 +5731,27 @@
       "targets": 316,
       "open": 316,
       "solved_here": 0,
+      "api_total": 316,
       "kinds": {
         "open": 0,
         "known": 0,
+        "warmup": 0,
         "unformalized": 316,
         "other": 0
       },
+      "solved_by_kind": {
+        "open": 0,
+        "known": 0,
+        "warmup": 0,
+        "unformalized": 0,
+        "other": 0
+      },
+      "solved_flag_count": 0,
       "mirrored": true,
       "mirrored_count": 316,
-      "solved_flag_count": 0,
-      "api_total": 316
+      "shards": [
+        "open-problem-garden.jsonl"
+      ]
     },
     {
       "name": "Green's 100 Open Problems",
@@ -200,17 +5760,28 @@
       "description": "Ben Green's list of 100 open problems in additive combinatorics and related areas.",
       "targets": 285,
       "open": 128,
-      "solved_here": 71,
+      "solved_here": 74,
+      "api_total": 285,
       "kinds": {
         "open": 128,
         "known": 156,
+        "warmup": 1,
         "unformalized": 0,
-        "other": 1
+        "other": 0
       },
+      "solved_by_kind": {
+        "open": 0,
+        "known": 78,
+        "warmup": 1,
+        "unformalized": 0,
+        "other": 0
+      },
+      "solved_flag_count": 79,
       "mirrored": true,
       "mirrored_count": 285,
-      "solved_flag_count": 71,
-      "api_total": 285
+      "shards": [
+        "green-s-100-open-problems.jsonl"
+      ]
     },
     {
       "name": "Papers",
@@ -219,17 +5790,28 @@
       "description": "Open problems stated in research papers and books.",
       "targets": 180,
       "open": 93,
-      "solved_here": 26,
+      "solved_here": 29,
+      "api_total": 180,
       "kinds": {
         "open": 93,
         "known": 78,
+        "warmup": 9,
         "unformalized": 0,
-        "other": 9
+        "other": 0
       },
+      "solved_by_kind": {
+        "open": 0,
+        "known": 20,
+        "warmup": 9,
+        "unformalized": 0,
+        "other": 0
+      },
+      "solved_flag_count": 29,
       "mirrored": true,
       "mirrored_count": 180,
-      "solved_flag_count": 27,
-      "api_total": 180
+      "shards": [
+        "papers.jsonl"
+      ]
     },
     {
       "name": "Erdős Problems (not formalized)",
@@ -239,16 +5821,27 @@
       "targets": 116,
       "open": 116,
       "solved_here": 0,
+      "api_total": 116,
       "kinds": {
         "open": 0,
         "known": 0,
+        "warmup": 0,
         "unformalized": 116,
         "other": 0
       },
+      "solved_by_kind": {
+        "open": 0,
+        "known": 0,
+        "warmup": 0,
+        "unformalized": 0,
+        "other": 0
+      },
+      "solved_flag_count": 0,
       "mirrored": true,
       "mirrored_count": 116,
-      "solved_flag_count": 0,
-      "api_total": 116
+      "shards": [
+        "erdos-problems-not-formalized.jsonl"
+      ]
     },
     {
       "name": "arXiv papers",
@@ -257,17 +5850,28 @@
       "description": "Open problems stated in research papers and books.",
       "targets": 105,
       "open": 43,
-      "solved_here": 26,
+      "solved_here": 30,
+      "api_total": 105,
       "kinds": {
         "open": 43,
         "known": 55,
+        "warmup": 7,
         "unformalized": 0,
-        "other": 7
+        "other": 0
       },
+      "solved_by_kind": {
+        "open": 0,
+        "known": 26,
+        "warmup": 7,
+        "unformalized": 0,
+        "other": 0
+      },
+      "solved_flag_count": 33,
       "mirrored": true,
       "mirrored_count": 105,
-      "solved_flag_count": 27,
-      "api_total": 105
+      "shards": [
+        "arxiv-papers.jsonl"
+      ]
     },
     {
       "name": "Wikipedia (not formalized)",
@@ -277,16 +5881,27 @@
       "targets": 44,
       "open": 44,
       "solved_here": 0,
+      "api_total": 44,
       "kinds": {
         "open": 0,
         "known": 0,
+        "warmup": 0,
         "unformalized": 44,
         "other": 0
       },
+      "solved_by_kind": {
+        "open": 0,
+        "known": 0,
+        "warmup": 0,
+        "unformalized": 0,
+        "other": 0
+      },
+      "solved_flag_count": 0,
       "mirrored": true,
       "mirrored_count": 44,
-      "solved_flag_count": 0,
-      "api_total": 44
+      "shards": [
+        "wikipedia-not-formalized.jsonl"
+      ]
     },
     {
       "name": "Open Quantum Problems",
@@ -296,16 +5911,27 @@
       "targets": 32,
       "open": 28,
       "solved_here": 4,
+      "api_total": 32,
       "kinds": {
         "open": 28,
         "known": 0,
+        "warmup": 4,
         "unformalized": 0,
-        "other": 4
+        "other": 0
       },
+      "solved_by_kind": {
+        "open": 0,
+        "known": 0,
+        "warmup": 4,
+        "unformalized": 0,
+        "other": 0
+      },
+      "solved_flag_count": 4,
       "mirrored": true,
       "mirrored_count": 32,
-      "solved_flag_count": 4,
-      "api_total": 32
+      "shards": [
+        "open-quantum-problems.jsonl"
+      ]
     },
     {
       "name": "Optimization Constants",
@@ -314,17 +5940,28 @@
       "description": "Open problems stated in research papers and books.",
       "targets": 31,
       "open": 11,
-      "solved_here": 4,
+      "solved_here": 5,
+      "api_total": 31,
       "kinds": {
         "open": 11,
         "known": 19,
+        "warmup": 1,
         "unformalized": 0,
-        "other": 1
+        "other": 0
       },
+      "solved_by_kind": {
+        "open": 0,
+        "known": 6,
+        "warmup": 1,
+        "unformalized": 0,
+        "other": 0
+      },
+      "solved_flag_count": 7,
       "mirrored": true,
       "mirrored_count": 31,
-      "solved_flag_count": 4,
-      "api_total": 31
+      "shards": [
+        "optimization-constants.jsonl"
+      ]
     },
     {
       "name": "Written on the Wall II",
@@ -333,17 +5970,28 @@
       "description": "Open problems stated in research papers and books.",
       "targets": 31,
       "open": 11,
-      "solved_here": 19,
+      "solved_here": 20,
+      "api_total": 31,
       "kinds": {
         "open": 11,
         "known": 13,
+        "warmup": 7,
         "unformalized": 0,
-        "other": 7
+        "other": 0
       },
+      "solved_by_kind": {
+        "open": 0,
+        "known": 0,
+        "warmup": 0,
+        "unformalized": 0,
+        "other": 0
+      },
+      "solved_flag_count": 0,
       "mirrored": true,
       "mirrored_count": 31,
-      "solved_flag_count": 19,
-      "api_total": 31
+      "shards": [
+        "written-on-the-wall-ii.jsonl"
+      ]
     },
     {
       "name": "Other",
@@ -353,16 +6001,27 @@
       "targets": 29,
       "open": 17,
       "solved_here": 6,
+      "api_total": 29,
       "kinds": {
         "open": 17,
         "known": 12,
+        "warmup": 0,
         "unformalized": 0,
         "other": 0
       },
+      "solved_by_kind": {
+        "open": 0,
+        "known": 7,
+        "warmup": 0,
+        "unformalized": 0,
+        "other": 0
+      },
+      "solved_flag_count": 7,
       "mirrored": true,
       "mirrored_count": 29,
-      "solved_flag_count": 6,
-      "api_total": 29
+      "shards": [
+        "other.jsonl"
+      ]
     },
     {
       "name": "Books",
@@ -371,17 +6030,28 @@
       "description": "Open problems stated in research papers and books.",
       "targets": 26,
       "open": 11,
-      "solved_here": 5,
+      "solved_here": 6,
+      "api_total": 26,
       "kinds": {
         "open": 11,
         "known": 15,
+        "warmup": 0,
         "unformalized": 0,
         "other": 0
       },
+      "solved_by_kind": {
+        "open": 0,
+        "known": 7,
+        "warmup": 0,
+        "unformalized": 0,
+        "other": 0
+      },
+      "solved_flag_count": 7,
       "mirrored": true,
       "mirrored_count": 26,
-      "solved_flag_count": 6,
-      "api_total": 26
+      "shards": [
+        "books.jsonl"
+      ]
     },
     {
       "name": "MathOverflow",
@@ -391,16 +6061,27 @@
       "targets": 21,
       "open": 9,
       "solved_here": 10,
+      "api_total": 21,
       "kinds": {
         "open": 9,
         "known": 8,
+        "warmup": 4,
         "unformalized": 0,
-        "other": 4
+        "other": 0
       },
+      "solved_by_kind": {
+        "open": 0,
+        "known": 7,
+        "warmup": 4,
+        "unformalized": 0,
+        "other": 0
+      },
+      "solved_flag_count": 11,
       "mirrored": true,
       "mirrored_count": 21,
-      "solved_flag_count": 10,
-      "api_total": 21
+      "shards": [
+        "mathoverflow.jsonl"
+      ]
     },
     {
       "name": "Millennium Prize",
@@ -410,16 +6091,27 @@
       "targets": 21,
       "open": 12,
       "solved_here": 2,
+      "api_total": 21,
       "kinds": {
         "open": 12,
         "known": 2,
+        "warmup": 7,
         "unformalized": 0,
-        "other": 7
+        "other": 0
       },
+      "solved_by_kind": {
+        "open": 0,
+        "known": 0,
+        "warmup": 0,
+        "unformalized": 0,
+        "other": 0
+      },
+      "solved_flag_count": 0,
       "mirrored": true,
       "mirrored_count": 21,
-      "solved_flag_count": 2,
-      "api_total": 21
+      "shards": [
+        "millennium-prize.jsonl"
+      ]
     },
     {
       "name": "Kourovka Notebook",
@@ -428,17 +6120,28 @@
       "description": "Unsolved problems in group theory from the Kourovka Notebook.",
       "targets": 9,
       "open": 5,
-      "solved_here": 0,
+      "solved_here": 1,
+      "api_total": 9,
       "kinds": {
         "open": 5,
         "known": 4,
+        "warmup": 0,
         "unformalized": 0,
         "other": 0
       },
+      "solved_by_kind": {
+        "open": 0,
+        "known": 0,
+        "warmup": 0,
+        "unformalized": 0,
+        "other": 0
+      },
+      "solved_flag_count": 0,
       "mirrored": true,
       "mirrored_count": 9,
-      "solved_flag_count": 0,
-      "api_total": 9
+      "shards": [
+        "kourovka-notebook.jsonl"
+      ]
     },
     {
       "name": "Hilbert's Problems",
@@ -448,16 +6151,27 @@
       "targets": 8,
       "open": 2,
       "solved_here": 1,
+      "api_total": 8,
       "kinds": {
         "open": 2,
         "known": 5,
+        "warmup": 1,
         "unformalized": 0,
-        "other": 1
+        "other": 0
       },
+      "solved_by_kind": {
+        "open": 0,
+        "known": 0,
+        "warmup": 0,
+        "unformalized": 0,
+        "other": 0
+      },
+      "solved_flag_count": 0,
       "mirrored": true,
       "mirrored_count": 8,
-      "solved_flag_count": 1,
-      "api_total": 8
+      "shards": [
+        "hilbert-s-problems.jsonl"
+      ]
     },
     {
       "name": "Open problems in information theory (gokhanmergen)",
@@ -467,16 +6181,27 @@
       "targets": 7,
       "open": 7,
       "solved_here": 0,
+      "api_total": 7,
       "kinds": {
         "open": 0,
         "known": 0,
+        "warmup": 0,
         "unformalized": 7,
         "other": 0
       },
+      "solved_by_kind": {
+        "open": 0,
+        "known": 0,
+        "warmup": 0,
+        "unformalized": 0,
+        "other": 0
+      },
+      "solved_flag_count": 0,
       "mirrored": true,
       "mirrored_count": 7,
-      "solved_flag_count": 0,
-      "api_total": 7
+      "shards": [
+        "open-problems-in-information-theory-gokhanmergen.jsonl"
+      ]
     },
     {
       "name": "Conjectures of Luc Gillibert",
@@ -486,16 +6211,27 @@
       "targets": 3,
       "open": 3,
       "solved_here": 0,
+      "api_total": 3,
       "kinds": {
         "open": 0,
         "known": 0,
+        "warmup": 0,
         "unformalized": 3,
         "other": 0
       },
+      "solved_by_kind": {
+        "open": 0,
+        "known": 0,
+        "warmup": 0,
+        "unformalized": 0,
+        "other": 0
+      },
+      "solved_flag_count": 0,
       "mirrored": true,
       "mirrored_count": 3,
-      "solved_flag_count": 0,
-      "api_total": 3
+      "shards": [
+        "conjectures-of-luc-gillibert.jsonl"
+      ]
     },
     {
       "name": "Litt's Problems",
@@ -505,16 +6241,27 @@
       "targets": 3,
       "open": 2,
       "solved_here": 1,
+      "api_total": 3,
       "kinds": {
         "open": 2,
         "known": 1,
+        "warmup": 0,
         "unformalized": 0,
         "other": 0
       },
+      "solved_by_kind": {
+        "open": 0,
+        "known": 0,
+        "warmup": 0,
+        "unformalized": 0,
+        "other": 0
+      },
+      "solved_flag_count": 0,
       "mirrored": true,
       "mirrored_count": 3,
-      "solved_flag_count": 1,
-      "api_total": 3
+      "shards": [
+        "litt-s-problems.jsonl"
+      ]
     }
   ]
 }

@@ -1,6 +1,6 @@
 # Schanuel's Conjecture
 
-> **Atlas Rank #33** · CSS **65.9** · Field: *Transcendental Number Theory* · Posed: **1960** · Status: `open`
+> **Atlas Rank #43** · CSS **65.9** · Field: *Transcendental Number Theory* · Posed: **1960** · Status: `open`
 
 ## Plain statement
 

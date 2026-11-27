@@ -1,6 +1,6 @@
 # Lehmer's Mahler Measure Conjecture
 
-> **Atlas Rank #52** · CSS **61.4** · Field: *Number Theory* · Posed: **1933** · Status: `open`
+> **Atlas Rank #64** · CSS **61.4** · Field: *Number Theory* · Posed: **1933** · Status: `open`
 
 ## Plain statement
 

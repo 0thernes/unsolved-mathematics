@@ -1,6 +1,6 @@
 # Sendov's Conjecture
 
-> **Atlas Rank #104** · CSS **46.967** · Field: *Complex Analysis* · Posed: **1959** · Status: `active-progress`
+> **Atlas Rank #118** · CSS **46.967** · Field: *Complex Analysis* · Posed: **1959** · Status: `active-progress`
 
 ## Plain statement
 

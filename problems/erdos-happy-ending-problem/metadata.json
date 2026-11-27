@@ -1,0 +1,32 @@
+{
+  "slug": "erdos-happy-ending-problem",
+  "title": "The Happy Ending Problem (Erdős–Szekeres Conjecture)",
+  "field": "Combinatorial Geometry",
+  "subfields": [
+    "Discrete Geometry",
+    "Ramsey Theory",
+    "Order Types"
+  ],
+  "year_posed": 1935,
+  "originators": [
+    "Esther Klein",
+    "Paul Erdős",
+    "George Szekeres"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Let ES(n) be the smallest integer N such that any N points in the plane in general position (no three collinear) contain the vertices of a convex n-gon. The Erdős–Szekeres conjecture asserts that ES(n) = 2^{n-2} + 1 for every n >= 3.\n",
+  "difficulty": 83,
+  "centrality": 69,
+  "tractability": 30,
+  "status": "active-progress",
+  "tags": [
+    "Erdos-prize",
+    "convex-polygons",
+    "Ramsey-theory",
+    "discrete-geometry",
+    "Erdos-Szekeres"
+  ],
+  "rank": 38,
+  "css": 66.967,
+  "folder": "erdos-happy-ending-problem"
+}

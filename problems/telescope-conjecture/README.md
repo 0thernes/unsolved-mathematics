@@ -1,6 +1,6 @@
 # The Telescope Conjecture (Disproved 2023)
 
-> **Atlas Rank #89** · CSS **55.3** · Field: *Algebraic Topology* · Posed: **1984** · Status: `recently-resolved`
+> **Atlas Rank #102** · CSS **55.3** · Field: *Algebraic Topology* · Posed: **1984** · Status: `recently-resolved`
 
 ## Plain statement
 

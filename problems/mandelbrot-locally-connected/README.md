@@ -1,6 +1,6 @@
 # The MLC Conjecture (Mandelbrot Locally Connected)
 
-> **Atlas Rank #42** · CSS **63.733** · Field: *Complex Dynamics* · Posed: **1982** · Status: `active-progress`
+> **Atlas Rank #53** · CSS **63.733** · Field: *Complex Dynamics* · Posed: **1982** · Status: `active-progress`
 
 ## Plain statement
 

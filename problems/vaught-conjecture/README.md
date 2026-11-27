@@ -1,6 +1,6 @@
 # Vaught's Conjecture
 
-> **Atlas Rank #62** · CSS **59.333** · Field: *Mathematical Logic* · Posed: **1961** · Status: `open`
+> **Atlas Rank #75** · CSS **59.333** · Field: *Mathematical Logic* · Posed: **1961** · Status: `open`
 
 ## Plain statement
 

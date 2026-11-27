@@ -1,6 +1,6 @@
 # The KPZ Universality Conjecture
 
-> **Atlas Rank #54** · CSS **60.967** · Field: *Probability Theory* · Posed: **1986** · Status: `active-progress`
+> **Atlas Rank #66** · CSS **60.967** · Field: *Probability Theory* · Posed: **1986** · Status: `active-progress`
 
 ## Plain statement
 

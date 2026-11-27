@@ -1,0 +1,31 @@
+{
+  "slug": "beck-fiala-conjecture",
+  "title": "The Beck–Fiala Conjecture",
+  "field": "Combinatorics",
+  "subfields": [
+    "Discrepancy Theory",
+    "Convex Geometry",
+    "Theoretical Computer Science"
+  ],
+  "year_posed": 1981,
+  "originators": [
+    "József Beck",
+    "Tibor Fiala"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Given any finite hypergraph (set system) in which every element belongs to at most t sets (maximum degree t), there exists a red/blue coloring chi: V -> {-1, +1} such that every set S has discrepancy |sum_{v in S} chi(v)| = O(sqrt(t)) — independent of the number of elements n and sets m.\n",
+  "difficulty": 86,
+  "centrality": 71,
+  "tractability": 28,
+  "status": "active-progress",
+  "tags": [
+    "discrepancy-theory",
+    "Beck-Fiala",
+    "Komlos",
+    "convex-geometry",
+    "combinatorics"
+  ],
+  "rank": 42,
+  "css": 65.9,
+  "folder": "beck-fiala-conjecture"
+}

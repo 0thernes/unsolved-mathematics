@@ -19,13 +19,13 @@
 
 ## 2. Citation & Literature Verification Backlog
 
-- **Not all ~2,650 citations across the 106 dossiers are human-verified.** Automated primary-source resolution (`scripts/verify_citations.py`) verified arXiv IDs and Crossref DOIs and purged confirmed AI-hallucinated identifiers (logged transparently in `data/citation-verification-log.json`).
+- **Not all ~2,775 citations across the 120 dossiers are human-verified.** Automated primary-source resolution (`scripts/verify_citations.py`) verified **531** arXiv IDs and Crossref DOIs (445 across the original 106 dossiers plus 86/86 across the 14 dossiers added in `v0.8.0`) and purged 109 confirmed AI-hallucinated identifiers from the original corpus (logged transparently in `data/citation-verification-log.json`, 640 total records, 0 network errors), while `scripts/check_retractions.py` audited all **282 verified DOIs** with **0 retractions** (`data/retraction-audit.json`).
 - Historical pre-DOI citations (17th–20th century monographs, journal volumes without DOIs in the table) remain flagged `high-confidence`, `needs-verification`, or `ai-suggested`. Per [`docs/methodology/SOURCING.md`](docs/methodology/SOURCING.md), **only rows tagged `verified` may be cited directly as primary-source confirmed**; all other rows are research leads requiring source verification before downstream citation.
 
 ## 3. Meta-Analysis Panel Reality vs Design
 
-- All 106 documents in `meta-analyses/` are **AI-generated surveys, NOT peer-reviewed**.
-- **Honest gap:** While the framework in `docs/review/AI-META-REVIEW.md` defines a four-model AI review panel (Claude, GPT, Gemini, Grok) plus human academic review, **only Claude's in-house self-review ran on 2026-06-14** (under the non-canonical session label `claude-opus-4-8`); GPT, Gemini, Grok, and human review remain `pending` (`0/106` badged). Do NOT interpret `meta-analyses/` as multi-model-validated or human-peer-reviewed.
+- All **120** documents in `meta-analyses/` are **AI-generated surveys, NOT peer-reviewed**.
+- **Honest gap:** While the framework in `docs/review/AI-META-REVIEW.md` defines a four-model AI review panel (Claude, GPT, Gemini, Grok) plus human academic review, **only Claude's in-house self-review ran on 2026-06-14 across the original 106 dossiers** (under the non-canonical session label `claude-opus-4-8`); the 14 new `v0.8.0` meta-analyses carry `pending` across all four AI panels, and GPT, Gemini, Grok, and human review remain `pending` across the entire corpus (`0/120` badged). Do NOT interpret `meta-analyses/` as multi-model-validated or human-peer-reviewed.
 
 ## 4. Real vs Metaphor Audit
 
@@ -39,13 +39,14 @@
 
 ## 5. External Program Mirror (Left to Solve) — Third-Party Data Boundaries
 
-- `data/external/` and `docs/external/` mirror [lefttosolve.com](https://lefttosolve.com/programs) daily. Its "solved here" flags are **agent-submitted claims on a third-party site** and have **not** been verified by this Atlas; `kind` values are the upstream formal-conjectures classification. Neither ever changes `data/problems.yaml`; mismatches only appear as review signals in `docs/external/CROSSWALK.md`.
+- `data/external/` and `docs/external/` mirror **all 25 programs** (~59k+ items, sharded at $\le 4\text{ MiB}$ per JSONL file to remain strictly under Build Standard A24's 5 MB cap) from [lefttosolve.com](https://lefttosolve.com/programs) daily. Its "solved here" flags are **agent-submitted claims on a third-party site** disaggregated by `kind` (`open` / `known` / `warmup` / `unformalized`) so solved `known` literature theorems and `warmup` exercises are never misread as solved `open` conjectures; none have been verified by this Atlas. Neither counts nor flags ever modify `data/problems.yaml`; mismatches only appear as review signals in `docs/external/CROSSWALK.md`.
+- **Metadata only & CC BY-SA 4.0 licensing carve-out:** Each mirrored JSONL record stores identifiers, titles, kinds, fields, prizes, and `solved` flags only — **zero statement excerpts** and zero volatile counters. Third-party titles (Wikipedia, MathOverflow, Mathematics Stack Exchange, OEIS, etc.) retain their upstream licenses (`CC BY-SA 4.0` / `Apache-2.0` / upstream terms) and `data/external/lefttosolve/` + `docs/external/` are **explicitly carved out of this repository's CC BY 4.0 data license** (see `LICENSE` and `THIRD_PARTY_NOTICES.md`). Raw Q&A/comment streams (`MathOverflow`, `Mathematics Stack Exchange`, `OEIS conjectures (not formalized)`) are mirrored in full for offline search (`scripts/search_all_problems.py`) but excluded from automatic title-based crosswalk matching to prevent noisy false positives.
 - The crosswalk is a **title/identity-level** correspondence (normalized-title rule + curated overrides), not a statement-fidelity certification; a matched formal statement may be a variant or a stronger/weaker form.
-- The daily job depends on an external website and API whose format can change; guards abort the sync without writing, so the committed snapshot can be stale — `last_changed_utc` in `snapshot.json` records the last content change.
+- The daily job depends on an external website and API whose format can change; fail-closed guards abort the sync without writing (`< 99.5%` completeness or `> 20%` shrink), so the committed snapshot can be stale — `last_changed_utc` in `snapshot.json` records the last content change.
 - The mirror is excluded from `data/MANIFEST.sha256` and the dual timestamps because it changes daily; integrity is the per-snapshot content SHA-256 plus git history.
 
 ## 6. Structural Imbalance & Environment Boundaries
 
-- **Collatz footprint:** `problems/collatz-conjecture/` holds an extensive empirical & audit laboratory (~58 MB) alongside 105 concise survey dossiers (~30 KB median). This reflects the July 2026 case-study history and is tracked in `ROADMAP.md` as an architectural trade-off.
+- **Collatz footprint:** `problems/collatz-conjecture/` holds an extensive empirical & audit laboratory (~58 MB) alongside 119 concise survey dossiers (~30 KB median). This reflects the July 2026 case-study history and is tracked in `ROADMAP.md` as an architectural trade-off.
 - **Windows vs Linux sandbox:** `lake check --paranoid` and `lake comparator --paranoid` require Linux `bubblewrap` (`bwrap`) for untrusted sandboxing. On Windows, local verification exports NDJSON via `leanexport` and replays all 6 kernels with `--inadvisably-no-sandbox`; full `bwrap`-sandboxed 6-kernel execution runs automatically in Ubuntu GitHub Actions CI.
 - **Independent researcher status:** Alexander S. Donahue publishes as an independent researcher (`ORCID 0009-0006-8168-9648`). No LLC or institutional affiliation is claimed.

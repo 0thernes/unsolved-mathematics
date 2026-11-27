@@ -1,6 +1,6 @@
 # Bunyakovsky's Conjecture
 
-> **Atlas Rank #27** · CSS **67.367** · Field: *Number Theory* · Posed: **1857** · Status: `open`
+> **Atlas Rank #35** · CSS **67.367** · Field: *Number Theory* · Posed: **1857** · Status: `open`
 
 ## Plain statement
 

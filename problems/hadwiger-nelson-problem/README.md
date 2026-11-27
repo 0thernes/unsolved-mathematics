@@ -1,6 +1,6 @@
 # The Hadwiger–Nelson Problem
 
-> **Atlas Rank #72** · CSS **57.367** · Field: *Combinatorial Geometry* · Posed: **1950** · Status: `active-progress`
+> **Atlas Rank #85** · CSS **57.367** · Field: *Combinatorial Geometry* · Posed: **1950** · Status: `active-progress`
 
 ## Plain statement
 

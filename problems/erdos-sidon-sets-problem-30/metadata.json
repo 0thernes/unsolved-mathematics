@@ -1,0 +1,31 @@
+{
+  "slug": "erdos-sidon-sets-problem-30",
+  "title": "The Erdős–Turán Sidon Set Conjecture (Erdős Problem 30)",
+  "field": "Combinatorics",
+  "subfields": [
+    "Additive Combinatorics",
+    "Extremal Number Theory",
+    "Finite Projective Geometry"
+  ],
+  "year_posed": 1941,
+  "originators": [
+    "Paul Erdős",
+    "Pál Turán"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Let h(N) be the maximum size of a Sidon set (a set with all pairwise sums a + b, a <= b, distinct) contained in {1, 2, ..., N}. Prove (or disprove) that h(N) = N^{1/2} + O_eps(N^eps) for every eps > 0 (and, in the strongest form, whether h(N) = N^{1/2} + O(1)).\n",
+  "difficulty": 84,
+  "centrality": 62,
+  "tractability": 25,
+  "status": "active-progress",
+  "tags": [
+    "Erdos-prize",
+    "Sidon-sets",
+    "B2-sequences",
+    "additive-combinatorics",
+    "projective-planes"
+  ],
+  "rank": 46,
+  "css": 65.367,
+  "folder": "erdos-sidon-sets-problem-30"
+}

@@ -3,39 +3,41 @@
 # Millennium Prize — Left to Solve program mirror
 
 > [!IMPORTANT]
-> **Third-party data, mirrored daily.** Counts, kinds and "solved here" flags come from
-> [lefttosolve.com](https://lefttosolve.com/programs) (formal statements from
-> [google-deepmind/formal-conjectures](https://github.com/google-deepmind/formal-conjectures), Apache-2.0).
-> "Solved here" means *marked solved by agents on that site*; this Atlas has **not** verified any of
-> those claims, and nothing in this mirror changes the status of any Atlas problem. Status signals
-> below are prompts for human review only. Not affiliated with Left to Solve.
+> **Third-party data, mirrored daily (all 25 programs / all items).** Counts, kinds and "solved here" flags come from
+> [lefttosolve.com](https://lefttosolve.com/programs) (formal Lean statements from
+> [google-deepmind/formal-conjectures](https://github.com/google-deepmind/formal-conjectures), Apache-2.0; titles from
+> MathOverflow, Math StackExchange, OEIS and Wikipedia remain under their upstream CC BY-SA 4.0 / source licenses and
+> are carved out of this repository's CC BY 4.0 license — see `THIRD_PARTY_NOTICES.md`).
+> "Solved here" is disaggregated by `kind` (`open` / `known` / `warmup`) so known theorems and warmup exercises are
+> never misread as solved open conjectures. This Atlas has **not** verified external claims, and nothing in this mirror
+> modifies `data/problems.yaml`. Not affiliated with Left to Solve.
 
 [Program page](https://lefttosolve.com/programs/Millennium%20Prize) · The Clay Millennium Prize problems that can be stated in Lean today, with nearby conjectures.
 
-Targets 21 · open 12 · solved here (site claim) 2 · kinds open/known/unformalized/other = 12/2/0/7 · snapshot `6aad4dc91eea6bbb` (`2026-11-27T04:31:27Z`).
+Targets 21 · open 12 · solved by kind (site claim): `0` · kinds open/known/warmup/unformalized/other = 12/2/7/0/0 · snapshot `f1bcc922a11d5418` (`2026-11-27T05:46:57Z`).
 
 Back to [all programs](../PROGRAMS.md).
 
 | # | Item id | Title | Kind | Fields | Prize | Site-solved flag |
 |---:|---|---|---|---|---|---|
-| 1 | `ComplexityTheory.NP_ne_coNP` | NP ≠ coNP | open | Computer Science |  |  |
-| 2 | `ComplexityTheory.P_eq_BPP` | P = BPP | open | Computer Science |  |  |
-| 3 | `ComplexityTheory.P_ne_NP` | P ≠ NP | open | Computer Science |  |  |
-| 4 | `ComplexityTheory.P_subset_BPP` | Conjectures in Complexity Theory — P subset BPP | warmup | Computer Science |  | yes |
-| 5 | `ComplexityTheory.coP_eq_P` | Conjectures in Complexity Theory — coP eq P | warmup | Computer Science |  | yes |
-| 6 | `ERH.extended_riemann_hypothesis` | Extended Riemann Hypothesis (Dedekind zeta functions) | open | Number Theory |  |  |
-| 7 | `NavierStokes.navier_stokes_existence_and_smoothness_R3` | Existence And Smoothness Of The Navier–Stokes Equation — navier stokes existence and smoothness R3 | open | PDEs |  |  |
-| 8 | `NavierStokes.navier_stokes_existence_and_smoothness_periodic` | Existence And Smoothness Of The Navier–Stokes Equation — navier stokes existence and smoothness periodic | open | PDEs |  |  |
-| 9 | `PoincareConjecture.poincare_conjecture` | PoincareConjecture | known | General Topology, Manifolds |  |  |
-| 10 | `PoincareConjecture.poincare_conjecture.variants.dimension_four` | PoincareConjecture — dimension four | warmup | General Topology, Manifolds |  |  |
-| 11 | `PoincareConjecture.poincare_conjecture.variants.dimension_ge_five` | PoincareConjecture — dimension ge five | warmup | General Topology, Manifolds |  |  |
-| 12 | `PoincareConjecture.poincare_conjecture.variants.dimension_two` | PoincareConjecture — dimension two | warmup | General Topology, Manifolds |  |  |
-| 13 | `PoincareConjecture.poincare_conjecture.variants.smooth_dimension_four` | PoincareConjecture — smooth dimension four | open | General Topology, Manifolds |  |  |
-| 14 | `PoincareConjecture.poincare_conjecture.variants.smooth_for_three` | PoincareConjecture — smooth for three | warmup | General Topology, Manifolds |  |  |
-| 15 | `PoincareConjecture.poincare_conjecture.variants.smooth_implication` | PoincareConjecture — smooth implication | warmup | General Topology, Manifolds |  |  |
-| 16 | `PoincareConjecture.poincare_conjecture.variants.smooth_known_cases` | PoincareConjecture — smooth known cases | known | General Topology, Manifolds |  |  |
-| 17 | `PoincareConjecture.poincare_conjecture.variants.smooth_other_cases` | PoincareConjecture — smooth other cases | open | General Topology, Manifolds |  |  |
-| 18 | `WeierstrassCurve.Affine.NumberField.strongBSD` | The Birch and Swinnerton-Dyer (BSD) Conjecture — strongBSD | open | Algebraic Geometry, Number Theory |  |  |
-| 19 | `WeierstrassCurve.Affine.NumberField.weakBSD` | The Birch and Swinnerton-Dyer (BSD) Conjecture — weakBSD | open | Algebraic Geometry, Number Theory |  |  |
-| 20 | `WeierstrassCurve.Affine.Rat.strongBSD` | The Birch and Swinnerton-Dyer (BSD) Conjecture — strongBSD | open | Algebraic Geometry, Number Theory |  |  |
-| 21 | `WeierstrassCurve.Affine.Rat.weakBSD` | The Birch and Swinnerton-Dyer (BSD) Conjecture — weakBSD | open | Algebraic Geometry, Number Theory |  |  |
+| 1 | [`ComplexityTheory.NP_ne_coNP`](https://lefttosolve.com/p/ComplexityTheory.NP_ne_coNP) | NP ≠ coNP | open | Computer Science |  |  |
+| 2 | [`ComplexityTheory.P_eq_BPP`](https://lefttosolve.com/p/ComplexityTheory.P_eq_BPP) | P = BPP | open | Computer Science |  |  |
+| 3 | [`ComplexityTheory.P_ne_NP`](https://lefttosolve.com/p/ComplexityTheory.P_ne_NP) | P ≠ NP | open | Computer Science |  |  |
+| 4 | [`ComplexityTheory.P_subset_BPP`](https://lefttosolve.com/p/ComplexityTheory.P_subset_BPP) | Conjectures in Complexity Theory — P subset BPP | warmup | Computer Science |  |  |
+| 5 | [`ComplexityTheory.coP_eq_P`](https://lefttosolve.com/p/ComplexityTheory.coP_eq_P) | Conjectures in Complexity Theory — coP eq P | warmup | Computer Science |  |  |
+| 6 | [`ERH.extended_riemann_hypothesis`](https://lefttosolve.com/p/ERH.extended_riemann_hypothesis) | Extended Riemann Hypothesis (Dedekind zeta functions) | open | Number Theory |  |  |
+| 7 | [`NavierStokes.navier_stokes_existence_and_smoothness_R3`](https://lefttosolve.com/p/NavierStokes.navier_stokes_existence_and_smoothness_R3) | Existence And Smoothness Of The Navier–Stokes Equation — navier stokes existence and smoothness R3 | open | PDEs |  |  |
+| 8 | [`NavierStokes.navier_stokes_existence_and_smoothness_periodic`](https://lefttosolve.com/p/NavierStokes.navier_stokes_existence_and_smoothness_periodic) | Existence And Smoothness Of The Navier–Stokes Equation — navier stokes existence and smoothness periodic | open | PDEs |  |  |
+| 9 | [`PoincareConjecture.poincare_conjecture`](https://lefttosolve.com/p/PoincareConjecture.poincare_conjecture) | PoincareConjecture | known | General Topology, Manifolds |  |  |
+| 10 | [`PoincareConjecture.poincare_conjecture.variants.dimension_four`](https://lefttosolve.com/p/PoincareConjecture.poincare_conjecture.variants.dimension_four) | PoincareConjecture — dimension four | warmup | General Topology, Manifolds |  |  |
+| 11 | [`PoincareConjecture.poincare_conjecture.variants.dimension_ge_five`](https://lefttosolve.com/p/PoincareConjecture.poincare_conjecture.variants.dimension_ge_five) | PoincareConjecture — dimension ge five | warmup | General Topology, Manifolds |  |  |
+| 12 | [`PoincareConjecture.poincare_conjecture.variants.dimension_two`](https://lefttosolve.com/p/PoincareConjecture.poincare_conjecture.variants.dimension_two) | PoincareConjecture — dimension two | warmup | General Topology, Manifolds |  |  |
+| 13 | [`PoincareConjecture.poincare_conjecture.variants.smooth_dimension_four`](https://lefttosolve.com/p/PoincareConjecture.poincare_conjecture.variants.smooth_dimension_four) | PoincareConjecture — smooth dimension four | open | General Topology, Manifolds |  |  |
+| 14 | [`PoincareConjecture.poincare_conjecture.variants.smooth_for_three`](https://lefttosolve.com/p/PoincareConjecture.poincare_conjecture.variants.smooth_for_three) | PoincareConjecture — smooth for three | warmup | General Topology, Manifolds |  |  |
+| 15 | [`PoincareConjecture.poincare_conjecture.variants.smooth_implication`](https://lefttosolve.com/p/PoincareConjecture.poincare_conjecture.variants.smooth_implication) | PoincareConjecture — smooth implication | warmup | General Topology, Manifolds |  |  |
+| 16 | [`PoincareConjecture.poincare_conjecture.variants.smooth_known_cases`](https://lefttosolve.com/p/PoincareConjecture.poincare_conjecture.variants.smooth_known_cases) | PoincareConjecture — smooth known cases | known | General Topology, Manifolds |  |  |
+| 17 | [`PoincareConjecture.poincare_conjecture.variants.smooth_other_cases`](https://lefttosolve.com/p/PoincareConjecture.poincare_conjecture.variants.smooth_other_cases) | PoincareConjecture — smooth other cases | open | General Topology, Manifolds |  |  |
+| 18 | [`WeierstrassCurve.Affine.NumberField.strongBSD`](https://lefttosolve.com/p/WeierstrassCurve.Affine.NumberField.strongBSD) | The Birch and Swinnerton-Dyer (BSD) Conjecture — strongBSD | open | Algebraic Geometry, Number Theory |  |  |
+| 19 | [`WeierstrassCurve.Affine.NumberField.weakBSD`](https://lefttosolve.com/p/WeierstrassCurve.Affine.NumberField.weakBSD) | The Birch and Swinnerton-Dyer (BSD) Conjecture — weakBSD | open | Algebraic Geometry, Number Theory |  |  |
+| 20 | [`WeierstrassCurve.Affine.Rat.strongBSD`](https://lefttosolve.com/p/WeierstrassCurve.Affine.Rat.strongBSD) | The Birch and Swinnerton-Dyer (BSD) Conjecture — strongBSD | open | Algebraic Geometry, Number Theory |  |  |
+| 21 | [`WeierstrassCurve.Affine.Rat.weakBSD`](https://lefttosolve.com/p/WeierstrassCurve.Affine.Rat.weakBSD) | The Birch and Swinnerton-Dyer (BSD) Conjecture — weakBSD | open | Algebraic Geometry, Number Theory |  |  |

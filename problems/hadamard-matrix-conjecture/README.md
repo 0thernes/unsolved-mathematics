@@ -1,6 +1,6 @@
 # The Hadamard Matrix Conjecture
 
-> **Atlas Rank #73** · CSS **57.167** · Field: *Combinatorics* · Posed: **1893** · Status: `active-progress`
+> **Atlas Rank #86** · CSS **57.167** · Field: *Combinatorics* · Posed: **1893** · Status: `active-progress`
 
 ## Plain statement
 

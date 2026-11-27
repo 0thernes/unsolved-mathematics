@@ -1,6 +1,6 @@
 # The Palis Conjecture (Finitude / Density of Attractors)
 
-> **Atlas Rank #57** · CSS **60.467** · Field: *Dynamical Systems* · Posed: **1995** · Status: `open`
+> **Atlas Rank #70** · CSS **60.467** · Field: *Dynamical Systems* · Posed: **1995** · Status: `open`
 
 ## Plain statement
 

@@ -1,6 +1,6 @@
 # Artin's Primitive Root Conjecture
 
-> **Atlas Rank #49** · CSS **61.9** · Field: *Number Theory* · Posed: **1927** · Status: `active-progress`
+> **Atlas Rank #61** · CSS **61.9** · Field: *Number Theory* · Posed: **1927** · Status: `active-progress`
 
 ## Plain statement
 

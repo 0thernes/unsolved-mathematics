@@ -5,8 +5,21 @@ Copyright (c) 2026 Alexander Donahue (GitHub: 0thernes; contact: 0_0@0thernes.ar
 Author, curator, and Human-in-the-Loop of The Unsolved Mathematics Atlas.
 
 The PROSE AND DATA content of The Unsolved Mathematics Atlas (everything under
-problems/, docs/, data/, and the markdown documentation) is licensed under the
-Creative Commons Attribution 4.0 International License.
+problems/, docs/, data/, and the markdown documentation, EXCEPT the third-party
+external mirror under data/external/lefttosolve/ and docs/external/ described
+below) is licensed under the Creative Commons Attribution 4.0 International
+License.
+
+Third-Party External Mirror Carve-Out:
+  The daily sidecar metadata mirror under data/external/lefttosolve/ and the
+  generated views under docs/external/ are NOT covered by the CC BY 4.0 license
+  above. Those files mirror factual metadata and back-links only (no problem
+  statements or excerpts) from lefttosolve.com and its upstream sources
+  (google-deepmind/formal-conjectures [Apache-2.0], teorth/erdosproblems
+  [Apache-2.0], Wikipedia / MathOverflow / Mathematics Stack Exchange / OEIS
+  [CC BY-SA 4.0], and Open Problem Garden). Third-party titles retain their
+  upstream sources' licenses; see THIRD_PARTY_NOTICES.md for full attribution
+  and removal-on-request terms.
 
 You are free to:
   - Share — copy and redistribute the material in any medium or format

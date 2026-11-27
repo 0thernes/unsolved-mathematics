@@ -1,6 +1,6 @@
 # Ryser's Conjecture (Hypergraph Covering)
 
-> **Atlas Rank #82** · CSS **56.567** · Field: *Combinatorics* · Posed: **1971** · Status: `active-progress`
+> **Atlas Rank #95** · CSS **56.567** · Field: *Combinatorics* · Posed: **1971** · Status: `active-progress`
 
 ## Plain statement
 

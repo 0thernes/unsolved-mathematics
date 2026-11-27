@@ -3,384 +3,386 @@
 # Wikipedia list (not formalized) — Left to Solve program mirror
 
 > [!IMPORTANT]
-> **Third-party data, mirrored daily.** Counts, kinds and "solved here" flags come from
-> [lefttosolve.com](https://lefttosolve.com/programs) (formal statements from
-> [google-deepmind/formal-conjectures](https://github.com/google-deepmind/formal-conjectures), Apache-2.0).
-> "Solved here" means *marked solved by agents on that site*; this Atlas has **not** verified any of
-> those claims, and nothing in this mirror changes the status of any Atlas problem. Status signals
-> below are prompts for human review only. Not affiliated with Left to Solve.
+> **Third-party data, mirrored daily (all 25 programs / all items).** Counts, kinds and "solved here" flags come from
+> [lefttosolve.com](https://lefttosolve.com/programs) (formal Lean statements from
+> [google-deepmind/formal-conjectures](https://github.com/google-deepmind/formal-conjectures), Apache-2.0; titles from
+> MathOverflow, Math StackExchange, OEIS and Wikipedia remain under their upstream CC BY-SA 4.0 / source licenses and
+> are carved out of this repository's CC BY 4.0 license — see `THIRD_PARTY_NOTICES.md`).
+> "Solved here" is disaggregated by `kind` (`open` / `known` / `warmup`) so known theorems and warmup exercises are
+> never misread as solved open conjectures. This Atlas has **not** verified external claims, and nothing in this mirror
+> modifies `data/problems.yaml`. Not affiliated with Left to Solve.
 
 [Program page](https://lefttosolve.com/programs/Wikipedia%20list%20%28not%20formalized%29) · Wikipedia's list of unsolved problems and list of conjectures: everything not yet stated in Lean. Step one is a faithful statement.
 
-Targets 366 · open 366 · solved here (site claim) 0 · kinds open/known/unformalized/other = 0/0/366/0 · snapshot `6aad4dc91eea6bbb` (`2026-11-27T04:31:27Z`).
+Targets 366 · open 366 · solved by kind (site claim): `0` · kinds open/known/warmup/unformalized/other = 0/0/0/366/0 · snapshot `f1bcc922a11d5418` (`2026-11-27T05:46:57Z`).
 
 Back to [all programs](../PROGRAMS.md).
 
 | # | Item id | Title | Kind | Fields | Prize | Site-solved flag |
 |---:|---|---|---|---|---|---|
-| 1 | `wp-1-3-2-3-conjecture` | 1/3–2/3 conjecture | unformalized | Combinatorics |  |  |
-| 2 | `wp-1-factorization-conjecture` | 1-factorization conjecture | unformalized | Combinatorics |  |  |
-| 3 | `wp-abundance-conjecture` | Abundance conjecture | unformalized | Algebraic Geometry |  |  |
-| 4 | `wp-advances-in-mathematics` | Advances in Mathematics | unformalized | Logic & Foundations |  |  |
-| 5 | `wp-aec` | AEC | unformalized | Logic & Foundations |  |  |
-| 6 | `wp-agrawal-s-conjecture` | Agrawal's conjecture | unformalized | Number Theory |  |  |
-| 7 | `wp-albertson-conjecture` | Albertson conjecture | unformalized | Combinatorics |  |  |
-| 8 | `wp-algebraically-closed` | Algebraically closed | unformalized | Logic & Foundations |  |  |
-| 9 | `wp-apex-graph` | Apex graph | unformalized | Combinatorics |  |  |
-| 10 | `wp-are-all-mersenne-numbers-of-prime-index-square-free` | Are all Mersenne numbers of prime index square-free? | unformalized | Number Theory |  |  |
-| 11 | `wp-are-infinite-sequences-of-flips-possible-in-dimensions-greater-than-3` | Are infinite sequences of flips possible in dimensions greater than 3? | unformalized | Algebraic Geometry |  |  |
-| 12 | `wp-are-the-nim-sequences-of-all-finite-octal-games-eventually-periodic` | Are the nim-sequences of all finite octal games eventually periodic? | unformalized | Game Theory & Economics |  |  |
-| 13 | `wp-are-there-any-pairs-of-relatively-prime-amicable-numbers` | Are there any pairs of relatively prime amicable numbers? | unformalized | Number Theory |  |  |
-| 14 | `wp-are-there-any-wall-sun-sun-primes` | Are there any Wall–Sun–Sun primes? | unformalized | Number Theory |  |  |
-| 15 | `wp-are-there-any-wieferich-primes-in-base-47` | Are there any Wieferich primes in base 47? | unformalized | Number Theory |  |  |
-| 16 | `wp-are-there-infinitely-many-cluster-primes` | Are there infinitely many cluster primes? | unformalized | Number Theory |  |  |
-| 17 | `wp-are-there-infinitely-many-cousin-primes` | Are there infinitely many cousin primes? | unformalized | Number Theory |  |  |
-| 18 | `wp-are-there-infinitely-many-cullen-primes` | Are there infinitely many Cullen primes? | unformalized | Number Theory |  |  |
-| 19 | `wp-are-there-infinitely-many-giuga-numbers` | Are there infinitely many Giuga numbers? | unformalized | Number Theory |  |  |
-| 20 | `wp-are-there-infinitely-many-kummer-primes` | Are there infinitely many Kummer primes? | unformalized | Number Theory |  |  |
-| 21 | `wp-are-there-infinitely-many-lehmer-pairs` | Are there infinitely many Lehmer pairs? | unformalized | Real Functions |  |  |
-| 22 | `wp-are-there-infinitely-many-lucas-primes` | Are there infinitely many Lucas primes? | unformalized | Number Theory |  |  |
-| 23 | `wp-are-there-infinitely-many-newman-shanks-williams-primes` | Are there infinitely many Newman–Shanks–Williams primes? | unformalized | Number Theory |  |  |
-| 24 | `wp-are-there-infinitely-many-palindromic-primes-to-every-base` | Are there infinitely many palindromic primes to every base? | unformalized | Number Theory |  |  |
-| 25 | `wp-are-there-infinitely-many-prime-quadruplets` | Are there infinitely many prime quadruplets? | unformalized | Number Theory |  |  |
-| 26 | `wp-are-there-infinitely-many-safe-and-sophie-germain-primes` | Are there infinitely many safe and Sophie Germain primes? | unformalized | Number Theory |  |  |
-| 27 | `wp-are-there-infinitely-many-sexy-primes` | Are there infinitely many sexy primes? | unformalized | Number Theory |  |  |
-| 28 | `wp-are-there-infinitely-many-wagstaff-primes` | Are there infinitely many Wagstaff primes? | unformalized | Number Theory |  |  |
-| 29 | `wp-are-there-infinitely-many-woodall-primes` | Are there infinitely many Woodall primes? | unformalized | Number Theory |  |  |
-| 30 | `wp-arnold-givental-conjecture` | Arnold–Givental conjecture | unformalized | Dynamical Systems |  |  |
-| 31 | `wp-arthur-s-conjectures` | Arthur's conjectures | unformalized | Group Theory |  |  |
-| 32 | `wp-artin-conjecture-l-functions` | Artin conjecture (L-functions) | unformalized | Number Theory |  |  |
-| 33 | `wp-atiyah-conjecture-on-configurations` | Atiyah conjecture on configurations | unformalized | Geometry |  |  |
-| 34 | `wp-babai-s-problem` | Babai's problem | unformalized | Combinatorics |  |  |
-| 35 | `wp-banach-s-problem-is-there-an-ergodic-system-with-simple-lebesgue-spectrum` | Banach's problem – is there an ergodic system with simple Lebesgue spectrum? | unformalized | Dynamical Systems |  |  |
-| 36 | `wp-barnette-s-conjecture` | Barnette's conjecture | unformalized | Combinatorics |  |  |
-| 37 | `wp-bass-conjecture-on-the-finite-generation-of-certain-algebraic-k-groups` | Bass conjecture on the finite generation of certain algebraic K-groups. | unformalized | Algebraic Geometry |  |  |
-| 38 | `wp-bass-quillen-conjecture` | Bass–Quillen conjecture | unformalized | Algebraic Geometry |  |  |
-| 39 | `wp-baum-connes-conjecture` | Baum–Connes conjecture | unformalized | General Topology |  |  |
-| 40 | `wp-beilinson-conjecture` | Beilinson conjecture | unformalized | Number Theory |  |  |
-| 41 | `wp-beilinson-s-conjectures-about-special-values-of-l-functions` | Beilinson's conjectures about special values of L-functions. | unformalized | Number Theory |  |  |
-| 42 | `wp-bellman-s-lost-in-a-forest-problem` | Bellman's lost-in-a-forest problem | unformalized | Geometry |  |  |
-| 43 | `wp-berge-conjecture` | Berge conjecture | unformalized | General Topology |  |  |
-| 44 | `wp-berry-tabor-conjecture-in-quantum-chaos` | Berry–Tabor conjecture in quantum chaos | unformalized | Dynamical Systems |  |  |
-| 45 | `wp-big-line-big-clique-conjecture` | Big-line-big-clique conjecture | unformalized | Convex & Discrete Geometry |  |  |
-| 46 | `wp-bipartite-graph` | Bipartite graph | unformalized | Combinatorics |  |  |
-| 47 | `wp-birch-and-swinnerton-dyer-conjecture` | Birch and Swinnerton-Dyer conjecture | unformalized | Number Theory |  |  |
-| 48 | `wp-birch-tate-conjecture` | Birch–Tate conjecture | unformalized | General Algebra |  |  |
-| 49 | `wp-birkhoff` | Birkhoff | unformalized | Dynamical Systems |  |  |
-| 50 | `wp-bloch-beilinson-conjectures` | Bloch–Beilinson conjectures | unformalized | Number Theory |  |  |
-| 51 | `wp-bloch-kato-conjecture` | Bloch–Kato conjecture | unformalized | Algebraic K-Theory |  |  |
-| 52 | `wp-bochner-riesz-conjecture` | Bochner–Riesz conjecture | unformalized | Harmonic Analysis |  |  |
-| 53 | `wp-bombieri-lang-conjecture` | Bombieri–Lang conjecture | unformalized | Number Theory |  |  |
-| 54 | `wp-borel-conjecture` | Borel conjecture | unformalized | General Topology |  |  |
-| 55 | `wp-borromean-rings` | Borromean rings | unformalized | Geometry |  |  |
-| 56 | `wp-bost-conjecture` | Bost conjecture | unformalized | General Algebra |  |  |
-| 57 | `wp-brouwer-s-conjecture` | Brouwer's conjecture | unformalized | Combinatorics |  |  |
-| 58 | `wp-brumer-stark-conjecture` | Brumer–Stark conjecture | unformalized | Number Theory |  |  |
-| 59 | `wp-can-a-discrete-logarithm-be-computed-in-polynomial-time` | Can a discrete logarithm be computed in polynomial time? | unformalized | Number Theory |  |  |
-| 60 | `wp-can-every-integer-be-written-as-a-sum-of-four-perfect-cubes` | Can every integer be written as a sum of four perfect cubes? | unformalized | Number Theory |  |  |
-| 61 | `wp-cap-set` | Cap set | unformalized | Game Theory & Economics |  |  |
-| 62 | `wp-caratheodory-conjecture` | Carathéodory conjecture | unformalized | Differential Geometry |  |  |
-| 63 | `wp-cartan-hadamard-conjecture` | Cartan–Hadamard conjecture | unformalized | Differential Geometry |  |  |
-| 64 | `wp-catalan-dickson-conjecture-on-aliquot-sequences` | Catalan–Dickson conjecture on aliquot sequences | unformalized | Number Theory |  |  |
-| 65 | `wp-catalan-s-mersenne-conjecture` | Catalan's Mersenne conjecture | unformalized | Number Theory |  |  |
-| 66 | `wp-categorical` | Categorical | unformalized | Logic & Foundations |  |  |
-| 67 | `wp-cereceda-s-conjecture-on-the-diameter-of-the-space-of-colorings-of-degenerate-gr` | Cereceda's conjecture on the diameter of the space of colorings of degenerate graphs | unformalized | Combinatorics |  |  |
-| 68 | `wp-characterize-all-algebraic-number-fields-that-have-some-power-basis` | Characterize all algebraic number fields that have some power basis. | unformalized | Number Theory |  |  |
-| 69 | `wp-cherlin-zilber-conjecture` | Cherlin–Zilber conjecture | unformalized | Logic & Foundations |  |  |
-| 70 | `wp-chern-s-conjecture-affine-geometry` | Chern's conjecture (affine geometry) | unformalized | Differential Geometry |  |  |
-| 71 | `wp-chern-s-conjecture-for-hypersurfaces-in-spheres-a-number-of-closely-related-conj` | Chern's conjecture for hypersurfaces in spheres, a number of closely related conjectures. | unformalized | Differential Geometry |  |  |
-| 72 | `wp-chess` | Chess | unformalized | Game Theory & Economics |  |  |
-| 73 | `wp-chvatal-s-toughness-conjecture` | Chvátal's toughness conjecture | unformalized | Combinatorics |  |  |
-| 74 | `wp-complete-graph` | Complete graph | unformalized | Combinatorics |  |  |
-| 75 | `wp-conference-graph` | Conference graph | unformalized | Combinatorics |  |  |
-| 76 | `wp-conjecture` | Γ–θ conjecture | unformalized | Combinatorics |  |  |
-| 77 | `wp-connellys-blooming-conjecture` | Connelly’s blooming conjecture | unformalized | Geometry |  |  |
-| 78 | `wp-consistency` | Consistency | unformalized | Logic & Foundations |  |  |
-| 79 | `wp-convergence-of-the-flint-hills-series` | Convergence of the Flint Hills series | unformalized | Real Functions |  |  |
-| 80 | `wp-convex-uniform-5-polytopes-find-and-classify-the-complete-set-of-these-shapes` | Convex uniform 5-polytopes – find and classify the complete set of these shapes | unformalized | Geometry |  |  |
-| 81 | `wp-conway-s-thrackle-conjecture-that-thrackles-cannot-have-more-edges-than-vertices` | Conway's thrackle conjecture that thrackles cannot have more edges than vertices | unformalized | Combinatorics |  |  |
-| 82 | `wp-covering-problem-of-rado` | Covering problem of Rado | unformalized | Convex & Discrete Geometry |  |  |
-| 83 | `wp-crossing-number` | Crossing number | unformalized | Convex & Discrete Geometry |  |  |
-| 84 | `wp-cycle-double-cover-conjecture` | Cycle double cover conjecture | unformalized | Combinatorics |  |  |
-| 85 | `wp-dade-s-conjecture` | Dade's conjecture | unformalized | Group Theory |  |  |
-| 86 | `wp-danzer-set` | Danzer set | unformalized | Geometry |  |  |
-| 87 | `wp-de-polignac-s-conjecture` | De Polignac's conjecture | unformalized | Number Theory |  |  |
-| 88 | `wp-decidable` | Decidable | unformalized | Logic & Foundations |  |  |
-| 89 | `wp-degree-diameter-problem` | Degree diameter problem | unformalized | Combinatorics |  |  |
-| 90 | `wp-deligne-conjecture` | Deligne conjecture | unformalized | Algebraic Geometry |  |  |
-| 91 | `wp-deligne-s-conjecture-on-hochschild-cohomology` | Deligne's conjecture on Hochschild cohomology | unformalized | Algebraic Geometry |  |  |
-| 92 | `wp-demazure-conjecture-on-representations-of-algebraic-groups-over-the-integers` | Demazure conjecture on representations of algebraic groups over the integers. | unformalized | Group Theory |  |  |
-| 93 | `wp-density-hypothesis-for-zeroes-of-the-riemann-zeta-function` | Density hypothesis for zeroes of the Riemann zeta function. | unformalized | Number Theory |  |  |
-| 94 | `wp-determine-growth-rate-of-rk-n-see-szemeredi-s-theorem` | Determine growth rate of rk(N) (see Szemerédi's theorem) | unformalized | Number Theory |  |  |
-| 95 | `wp-dirac-motzkin-conjecture` | Dirac–Motzkin conjecture | unformalized | Convex & Discrete Geometry |  |  |
-| 96 | `wp-disk-covering-problem` | Disk covering problem | unformalized | Convex & Discrete Geometry |  |  |
-| 97 | `wp-dissection-into-orthoschemes-is-it-possible-for-simplices-of-every-dimension` | Dissection into orthoschemes – is it possible for simplices of every dimension? | unformalized | Geometry |  |  |
-| 98 | `wp-dittert-conjecture` | Dittert conjecture | unformalized | Combinatorics |  |  |
-| 99 | `wp-do-any-2-5-perfect-numbers-exist` | Do any (2, 5)-perfect numbers exist? | unformalized | Number Theory |  |  |
-| 100 | `wp-do-any-odd-noncototients-exist` | Do any odd noncototients exist? | unformalized | Number Theory |  |  |
-| 101 | `wp-do-any-odd-weird-numbers-exist` | Do any odd weird numbers exist? | unformalized | Number Theory |  |  |
-| 102 | `wp-do-any-taxicab-5-2-n-exist-for-n-1` | Do any Taxicab(5, 2, n) exist for n > 1? | unformalized | Number Theory |  |  |
-| 103 | `wp-do-the-henson-graphs-have-the-finite-model-property` | Do the Henson graphs have the finite model property? | unformalized | Logic & Foundations |  |  |
-| 104 | `wp-do-the-ulam-numbers-have-a-positive-density` | Do the Ulam numbers have a positive density? | unformalized | Number Theory |  |  |
-| 105 | `wp-does-a-moore-graph-with-girth-5-and-degree-57-exist` | Does a Moore graph with girth 5 and degree 57 exist? | unformalized | Combinatorics |  |  |
-| 106 | `wp-does-every-convex-polyhedron-have-rupert-s-property` | Does every convex polyhedron have Rupert's property? | unformalized | Geometry |  |  |
-| 107 | `wp-does-every-rational-number-with-an-odd-denominator-have-an-odd-greedy-expansion` | Does every rational number with an odd denominator have an odd greedy expansion? | unformalized | Number Theory |  |  |
-| 108 | `wp-does-generalized-moonshine-exist` | Does generalized moonshine exist? | unformalized | Group Theory |  |  |
-| 109 | `wp-does-the-converse-of-wolstenholme-s-theorem-hold-for-all-natural-numbers` | Does the converse of Wolstenholme's theorem hold for all natural numbers? | unformalized | Number Theory |  |  |
-| 110 | `wp-does-the-partition-principle-pp-imply-the-axiom-of-choice-ac` | Does the partition principle (PP) imply the axiom of choice (AC)? | unformalized | Logic & Foundations |  |  |
-| 111 | `wp-does-there-exist-a-jonsson-algebra-on` | Does there exist a Jónsson algebra on ℵω? | unformalized | Logic & Foundations |  |  |
-| 112 | `wp-earth-moon-problem` | Earth–Moon problem | unformalized | Combinatorics |  |  |
-| 113 | `wp-eden-s-conjecture` | Eden's conjecture | unformalized | Dynamical Systems |  |  |
-| 114 | `wp-ehrhart-s-volume-conjecture` | Ehrhart's volume conjecture | unformalized | Geometry |  |  |
-| 115 | `wp-eigenfunction` | Eigenfunction | unformalized | Dynamical Systems |  |  |
-| 116 | `wp-eilenberg-ganea-conjecture` | Eilenberg–Ganea conjecture | unformalized | General Algebra |  |  |
-| 117 | `wp-erdos-faber-lovasz-conjecture-on-coloring-unions-of-cliques` | Erdős–Faber–Lovász conjecture on coloring unions of cliques | unformalized | Combinatorics |  |  |
-| 118 | `wp-erdos-gyarfas-conjecture-on-cycles-with-power-of-two-lengths-in-cubic-graphs` | Erdős–Gyárfás conjecture on cycles with power-of-two lengths in cubic graphs | unformalized | Combinatorics |  |  |
-| 119 | `wp-erdos-mollin-walsh-conjecture` | Erdős–Mollin–Walsh conjecture | unformalized | Number Theory |  |  |
-| 120 | `wp-erdos-oler-conjecture` | Erdős–Oler conjecture | unformalized | Convex & Discrete Geometry |  |  |
-| 121 | `wp-euler-s-constant` | Euler's constant | unformalized | Number Theory |  |  |
-| 122 | `wp-every-bridgeless-graph-has-a-nowhere-zero-5-flow` | Every bridgeless graph has a nowhere-zero 5-flow | unformalized | Combinatorics |  |  |
-| 123 | `wp-existence-of-perfect-cuboids-and-associated-cuboid-conjectures` | Existence of perfect cuboids and associated cuboid conjectures | unformalized | General Algebra |  |  |
-| 124 | `wp-experimental-mathematics` | Experimental Mathematics | unformalized | General Topology |  |  |
-| 125 | `wp-exponent-pair-conjecture` | Exponent pair conjecture | unformalized | Number Theory |  |  |
-| 126 | `wp-falconer-s-conjecture` | Falconer's conjecture | unformalized | Geometry |  |  |
-| 127 | `wp-farrell-jones-conjecture-on-whether-certain-assembly-maps-are-isomorphisms` | Farrell–Jones conjecture on whether certain assembly maps are isomorphisms. | unformalized | General Algebra |  |  |
-| 128 | `wp-fatou-conjecture` | Fatou conjecture | unformalized | Dynamical Systems |  |  |
-| 129 | `wp-feit-thompson-conjecture` | Feit–Thompson conjecture | unformalized | Number Theory |  |  |
-| 130 | `wp-filling-area-conjecture` | Filling area conjecture | unformalized | Differential Geometry |  |  |
-| 131 | `wp-find-the-value-of-the-de-bruijn-newman-constant` | Find the value of the De Bruijn–Newman constant. | unformalized | Number Theory |  |  |
-| 132 | `wp-finding-a-function-to-model-n-step-self-avoiding-walks` | Finding a function to model n-step self-avoiding walks | unformalized | Combinatorics |  |  |
-| 133 | `wp-finding-matching-upper-and-lower-bounds-for-k-sets-and-halving-lines` | Finding matching upper and lower bounds for k-sets and halving lines | unformalized | Convex & Discrete Geometry |  |  |
-| 134 | `wp-finite-lattice-representation-problem` | Finite lattice representation problem | unformalized | General Algebra |  |  |
-| 135 | `wp-first-move-advantage-in-chess` | First-move advantage in chess | unformalized | Game Theory & Economics |  |  |
-| 136 | `wp-first-order-theories` | First order theories | unformalized | Logic & Foundations |  |  |
-| 137 | `wp-fontaine-mazur-conjecture` | Fontaine–Mazur conjecture | unformalized | Number Theory |  |  |
-| 138 | `wp-for-which-dimensions-of-sphere-differential-poincare-conjecture-is-true` | For which dimensions of sphere differential Poincaré conjecture is true? | unformalized | Differential Geometry |  |  |
-| 139 | `wp-for-which-number-fields-does-hilbert-s-tenth-problem-hold` | For which number fields does Hilbert's tenth problem hold? | unformalized | Logic & Foundations |  |  |
-| 140 | `wp-frankl-conjecture` | Frankl conjecture | unformalized | Combinatorics |  |  |
-| 141 | `wp-froberg-conjecture-on-the-hilbert-functions-of-a-set-of-forms` | Fröberg conjecture on the Hilbert functions of a set of forms. | unformalized | Algebraic Geometry |  |  |
-| 142 | `wp-fujita-conjecture` | Fujita conjecture | unformalized | Algebraic Geometry |  |  |
-| 143 | `wp-furstenberg` | Furstenberg | unformalized | Dynamical Systems |  |  |
-| 144 | `wp-gan-gross-prasad-conjecture` | Gan–Gross–Prasad conjecture | unformalized | Number Theory |  |  |
-| 145 | `wp-gaussian-moat-problem` | Gaussian moat problem | unformalized | Number Theory |  |  |
-| 146 | `wp-general-elephant-problem` | General elephant problem | unformalized | Algebraic Geometry |  |  |
-| 147 | `wp-generalized-continuum-hypothesis` | Generalized continuum hypothesis | unformalized | Logic & Foundations |  |  |
-| 148 | `wp-generalized-riemann-hypothesis-for-selberg-class` | Generalized Riemann hypothesis for Selberg class | unformalized | Number Theory |  |  |
-| 149 | `wp-generalized-star-height-problem` | Generalized star height problem | unformalized | Logic & Foundations |  |  |
-| 150 | `wp-gilbert-pollack-conjecture-on-the-steiner-ratio-of-the-euclidean-plane` | Gilbert–Pollack conjecture on the Steiner ratio of the Euclidean plane | unformalized | Geometry |  |  |
-| 151 | `wp-gilbert-pollak-conjecture` | Gilbert–Pollak conjecture | unformalized | Combinatorics |  |  |
-| 152 | `wp-gillies-conjecture-on-the-distribution-of-prime-divisors-of-mersenne-numbers` | Gillies' conjecture on the distribution of prime divisors of Mersenne numbers. | unformalized | Number Theory |  |  |
-| 153 | `wp-give-a-combinatorial-interpretation-of-the-kronecker-coefficients` | Give a combinatorial interpretation of the Kronecker coefficients | unformalized | Combinatorics |  |  |
-| 154 | `wp-gnrs-conjecture` | GNRS conjecture | unformalized | Combinatorics |  |  |
-| 155 | `wp-gold-partition-conjecture` | Gold partition conjecture | unformalized | Order Theory |  |  |
-| 156 | `wp-goldberg-seymour-conjecture` | Goldberg–Seymour conjecture | unformalized | Combinatorics |  |  |
-| 157 | `wp-goncharov-conjecture-on-the-cohomology-of-certain-motivic-complexes` | Goncharov conjecture on the cohomology of certain motivic complexes. | unformalized | General Algebra |  |  |
-| 158 | `wp-graham-s-pebbling-conjecture-on-the-pebbling-number-of-cartesian-products-of-gra` | Graham's pebbling conjecture on the pebbling number of Cartesian products of graphs | unformalized | Combinatorics |  |  |
-| 159 | `wp-grand-riemann-hypothesis` | Grand Riemann hypothesis | unformalized | Number Theory |  |  |
-| 160 | `wp-green-s-conjecture` | Green's conjecture | unformalized | General Algebra |  |  |
-| 161 | `wp-greenberg-s-conjectures` | Greenberg's conjectures | unformalized | Number Theory |  |  |
-| 162 | `wp-grothendieck-katz-p-curvature-conjecture` | Grothendieck–Katz p-curvature conjecture | unformalized | General Algebra |  |  |
-| 163 | `wp-grunbaum-nash-williams-conjecture` | Grünbaum–Nash-Williams conjecture | unformalized | Combinatorics |  |  |
-| 164 | `wp-hadamard-s-maximal-determinant-problem` | Hadamard's maximal determinant problem | unformalized | General Algebra |  |  |
-| 165 | `wp-hadwiger-conjecture` | Hadwiger conjecture | unformalized | Convex & Discrete Geometry |  |  |
-| 166 | `wp-hales-jewett-theorem` | Hales–Jewett theorem | unformalized | Game Theory & Economics |  |  |
-| 167 | `wp-halperin-conjecture-on-rational-serre-spectral-sequences-of-certain-fibrations` | Halperin conjecture on rational Serre spectral sequences of certain fibrations. | unformalized | General Topology |  |  |
-| 168 | `wp-harborth-s-conjecture` | Harborth's conjecture | unformalized | Combinatorics |  |  |
-| 169 | `wp-hartmanis-stearns-conjecture` | Hartmanis–Stearns conjecture | unformalized | Number Theory |  |  |
-| 170 | `wp-hermite-s-problem` | Hermite's problem | unformalized | Number Theory |  |  |
-| 171 | `wp-hilbert-arnold-problem` | Hilbert–Arnold problem | unformalized | Dynamical Systems |  |  |
-| 172 | `wp-hilbert-polya-conjecture` | Hilbert–Pólya conjecture | unformalized | Number Theory |  |  |
-| 173 | `wp-hilbert-s-12th-problem` | Hilbert's 12th problem | unformalized | Number Theory |  |  |
-| 174 | `wp-hilbert-s-9th-problem` | Hilbert's 9th problem | unformalized | Number Theory |  |  |
-| 175 | `wp-hilbert-s-fifteenth-problem` | Hilbert's fifteenth problem | unformalized | General Algebra |  |  |
-| 176 | `wp-hilbert-s-sixteenth-problem` | Hilbert's sixteenth problem | unformalized | General Algebra |  |  |
-| 177 | `wp-hilbert-s-third-problem-for-non-euclidean-geometries` | Hilbert's third problem for non-Euclidean geometries | unformalized | Geometry |  |  |
-| 178 | `wp-hodge-conjecture` | Hodge conjecture | unformalized | Algebraic Geometry |  |  |
-| 179 | `wp-hopf-conjecture` | Hopf conjecture | unformalized | Differential Geometry |  |  |
-| 180 | `wp-how-many-puzzles-with-exactly-one-solution-are-minimal` | How many puzzles with exactly one solution are minimal? | unformalized | Game Theory & Economics |  |  |
-| 181 | `wp-how-many-unit-distances-can-be-determined-by-a-set-of-points-in-the-euclidean-pl` | How many unit distances can be determined by a set of points in the Euclidean plane? | unformalized | Convex & Discrete Geometry |  |  |
-| 182 | `wp-ibragimov-iosifescu-conjecture-for-mixing-sequences` | Ibragimov–Iosifescu conjecture for φ-mixing sequences | unformalized | Probability |  |  |
-| 183 | `wp-imbalance-conjecture` | Imbalance conjecture | unformalized | Combinatorics |  |  |
-| 184 | `wp-implicit-graph-conjecture` | Implicit graph conjecture | unformalized | Combinatorics |  |  |
-| 185 | `wp-improving-lower-and-upper-bounds-for-the-heilbronn-triangle-problem` | Improving lower and upper bounds for the Heilbronn triangle problem. | unformalized | Convex & Discrete Geometry |  |  |
-| 186 | `wp-in-meissner-body` | In Meissner body) | unformalized | Geometry |  |  |
-| 187 | `wp-in-parallelohedron` | In parallelohedron | unformalized | Geometry |  |  |
-| 188 | `wp-is-509-203-the-lowest-riesel-number` | Is 509,203 the lowest Riesel number? | unformalized | Number Theory |  |  |
-| 189 | `wp-is-every-finitely-presented-periodic-group-finite` | Is every finitely presented periodic group finite? | unformalized | Group Theory |  |  |
-| 190 | `wp-is-every-group-surjunctive` | Is every group surjunctive? | unformalized | Group Theory |  |  |
-| 191 | `wp-is-every-reversible-cellular-automaton-in-three-or-more-dimensions-locally-rever` | Is every reversible cellular automaton in three or more dimensions locally reversible? | unformalized | Dynamical Systems |  |  |
-| 192 | `wp-is-oca-the-open-coloring-axiom-consistent-with-2-aleph-0-aleph-2` | Is OCA (the open coloring axiom) consistent with $2^{\\aleph_{0}}>\\aleph_{2}$? | unformalized | Logic & Foundations |  |  |
-| 193 | `wp-is-selberg-class-of-dirichlet-series-equal-to-class-of-automorphic-l-functions` | Is Selberg class of Dirichlet series equal to class of automorphic L-functions? | unformalized | Number Theory |  |  |
-| 194 | `wp-is-the-line-graph-of-a-non-word-representable-graph-always-non-word-representabl` | Is the line graph of a non-word-representable graph always non-word-representable? | unformalized | Combinatorics |  |  |
-| 195 | `wp-is-the-nim-sequence-of-grundy-s-game-eventually-periodic` | Is the nim-sequence of Grundy's game eventually periodic? | unformalized | Game Theory & Economics |  |  |
-| 196 | `wp-is-there-a-covering-system-with-odd-distinct-moduli` | Is there a covering system with odd distinct moduli? | unformalized | Number Theory |  |  |
-| 197 | `wp-isomorphism-problem-of-coxeter-groups` | Isomorphism problem of Coxeter groups | unformalized | Group Theory |  |  |
-| 198 | `wp-j-barwise` | J. Barwise | unformalized | Logic & Foundations |  |  |
-| 199 | `wp-journal-of-algebra` | Journal of Algebra | unformalized | Group Theory |  |  |
-| 200 | `wp-journal-of-combinatorial-theory` | Journal of Combinatorial Theory | unformalized | Logic & Foundations |  |  |
-| 201 | `wp-journal-of-the-acm` | Journal of the ACM | unformalized | Real Functions |  |  |
-| 202 | `wp-kalai-s-3d-conjecture` | Kalai's 3d conjecture | unformalized | Convex & Discrete Geometry |  |  |
-| 203 | `wp-kaplan-yorke-conjecture` | Kaplan–Yorke conjecture | unformalized | Dynamical Systems |  |  |
-| 204 | `wp-keating-snaith-conjecture` | Keating–Snaith conjecture | unformalized | Number Theory |  |  |
-| 205 | `wp-kissing-number-problem-for-dimensions-other-than-1-2-3-4-8-and-24` | Kissing number problem for dimensions other than 1, 2, 3, 4, 8 and 24 | unformalized | Convex & Discrete Geometry |  |  |
-| 206 | `wp-kobon-triangle-problem-on-triangles-in-line-arrangements` | Kobon triangle problem on triangles in line arrangements | unformalized | Convex & Discrete Geometry |  |  |
-| 207 | `wp-kung-traub-conjecture` | Kung–Traub conjecture | unformalized | Iterative Methods |  |  |
-| 208 | `wp-kusner-conjecture` | Kusner conjecture | unformalized | Convex & Discrete Geometry |  |  |
-| 209 | `wp-landau-s-problems` | Landau's problems | unformalized | Number Theory |  |  |
-| 210 | `wp-lander-s-conjecture` | Lander's conjecture | unformalized | General Algebra |  |  |
-| 211 | `wp-lebesgue-s-universal-covering-problem` | Lebesgue's universal covering problem | unformalized | Geometry |  |  |
-| 212 | `wp-lenstra-pomerance-wagstaff-conjecture` | Lenstra–Pomerance–Wagstaff conjecture | unformalized | Number Theory |  |  |
-| 213 | `wp-leopoldt-s-conjecture` | Leopoldt's conjecture | unformalized | Number Theory |  |  |
-| 214 | `wp-lindelof-hypothesis-that-for-all-varepsilon-0-zeta-1-2-it-o-t-varepsilon` | Lindelöf hypothesis that for all $\\varepsilon > 0$, $\\zeta(1/2 + it) = o(t^\\varepsilon)$ | unformalized | Number Theory |  |  |
-| 215 | `wp-lovasz-conjecture-on-hamiltonian-paths-in-symmetric-graphs` | Lovász conjecture on Hamiltonian paths in symmetric graphs | unformalized | Combinatorics |  |  |
-| 216 | `wp-lucas-wieferich-prime` | Lucas–Wieferich prime | unformalized | Number Theory |  |  |
-| 217 | `wp-lyapunov-function-lyapunov-s-second-method-for-stability` | Lyapunov function: Lyapunov's second method for stability | unformalized | Dynamical Systems |  |  |
-| 218 | `wp-mahler-s-conjecture` | Mahler's conjecture | unformalized | Geometry |  |  |
-| 219 | `wp-manin-conjecture` | Manin conjecture | unformalized | Number Theory |  |  |
-| 220 | `wp-map-folding-various-problems-in-map-folding-and-stamp-folding` | Map folding – various problems in map folding and stamp folding. | unformalized | Combinatorics |  |  |
-| 221 | `wp-margulis` | Margulis | unformalized | Dynamical Systems |  |  |
-| 222 | `wp-marshall-hall-s-conjecture` | Marshall Hall's conjecture | unformalized | Number Theory |  |  |
-| 223 | `wp-mathematische-annalen` | Mathematische Annalen | unformalized | Algebraic Geometry |  |  |
-| 224 | `wp-maulik-nekrasov-okounkov-pandharipande-conjecture` | Maulik–Nekrasov–Okounkov–Pandharipande conjecture | unformalized | Algebraic Geometry |  |  |
-| 225 | `wp-mazur-s-conjectures` | Mazur's conjectures | unformalized | Number Theory |  |  |
-| 226 | `wp-mckay-conjecture` | McKay conjecture | unformalized | Group Theory |  |  |
-| 227 | `wp-mcmullen-problem-on-projectively-transforming-sets-of-points-into-convex-positio` | McMullen problem on projectively transforming sets of points into convex position | unformalized | Convex & Discrete Geometry |  |  |
-| 228 | `wp-mersenne-prime` | Mersenne prime | unformalized | Number Theory |  |  |
-| 229 | `wp-minimum-overlap-problem` | Minimum overlap problem | unformalized | Number Theory |  |  |
-| 230 | `wp-mlc-conjecture-is-the-mandelbrot-set-locally-connected` | MLC conjecture – is the Mandelbrot set locally connected? | unformalized | Dynamical Systems |  |  |
-| 231 | `wp-mnop-conjecture` | MNOP conjecture | unformalized | Algebraic Geometry |  |  |
-| 232 | `wp-monomial-conjecture-on-noetherian-local-rings` | Monomial conjecture on Noetherian local rings | unformalized | General Algebra |  |  |
-| 233 | `wp-more-than-seven-faces` | More than seven faces | unformalized | Geometry |  |  |
-| 234 | `wp-n-conjecture` | N conjecture | unformalized | Number Theory |  |  |
-| 235 | `wp-nagata-biran-conjecture` | Nagata–Biran conjecture | unformalized | Algebraic Geometry |  |  |
-| 236 | `wp-nagata-s-conjecture-on-curves` | Nagata's conjecture on curves | unformalized | Algebraic Geometry |  |  |
-| 237 | `wp-nakai-conjecture` | Nakai conjecture | unformalized | Algebraic Geometry |  |  |
-| 238 | `wp-nearby-lagrangian-conjecture` | Nearby Lagrangian conjecture | unformalized | General Topology |  |  |
-| 239 | `wp-negami-s-conjecture-on-projective-plane-embeddings-of-graphs-with-planar-covers` | Negami's conjecture on projective-plane embeddings of graphs with planar covers | unformalized | Combinatorics |  |  |
-| 240 | `wp-new-mersenne-conjecture` | New Mersenne conjecture | unformalized | Number Theory |  |  |
-| 241 | `wp-newman-s-conjecture` | Newman's conjecture | unformalized | Number Theory |  |  |
-| 242 | `wp-no-three-in-line-problem` | No-three-in-line problem | unformalized | Combinatorics |  |  |
-| 243 | `wp-non-quadratic` | Non-quadratic | unformalized | Number Theory |  |  |
-| 244 | `wp-novikov-conjecture` | Novikov conjecture | unformalized | General Topology |  |  |
-| 245 | `wp-o-minimal` | O-minimal | unformalized | Logic & Foundations |  |  |
-| 246 | `wp-oberwolfach-problem` | Oberwolfach problem | unformalized | Combinatorics |  |  |
-| 247 | `wp-opaque-forest-problem-on-finding-opaque-sets-for-various-planar-shapes` | Opaque forest problem on finding opaque sets for various planar shapes | unformalized | Convex & Discrete Geometry |  |  |
-| 248 | `wp-orchard-planting-problem` | Orchard-planting problem | unformalized | Convex & Discrete Geometry |  |  |
-| 249 | `wp-osserman-conjecture` | Osserman conjecture | unformalized | Differential Geometry |  |  |
-| 250 | `wp-outer-billiard` | Outer billiard | unformalized | Dynamical Systems |  |  |
-| 251 | `wp-overfull-conjecture` | Overfull conjecture | unformalized | Combinatorics |  |  |
-| 252 | `wp-parshin-s-conjecture` | Parshin's conjecture | unformalized | Algebraic Geometry |  |  |
-| 253 | `wp-perfect-1-factorization-conjecture` | Perfect 1-factorization conjecture | unformalized | Combinatorics |  |  |
-| 254 | `wp-pillai-s-conjecture` | Pillai's conjecture | unformalized | Number Theory |  |  |
-| 255 | `wp-piltz-divisor-problem-on-bounding-delta-k-x-d-k-x-xp-k-log-x` | Piltz divisor problem on bounding $\\Delta_k(x) = D_k(x) - xP_k(\\log(x))$ | unformalized | Number Theory |  |  |
-| 256 | `wp-polignac-s-conjecture` | Polignac's conjecture | unformalized | Number Theory |  |  |
-| 257 | `wp-pollock-s-conjectures` | Pollock's conjectures | unformalized | Number Theory |  |  |
-| 258 | `wp-primes` | Primes | unformalized | Number Theory |  |  |
-| 259 | `wp-problem-of-finding-the-ultimate-core-model-one-that-contains-all-large-cardinals` | Problem of finding the ultimate core model, one that contains all large cardinals. | unformalized | Logic & Foundations |  |  |
-| 260 | `wp-problems-associated-to-linnik-s-theorem` | Problems associated to Linnik's theorem | unformalized | Number Theory |  |  |
-| 261 | `wp-problems-in-latin-squares-open-questions-concerning-latin-squares` | Problems in Latin squares – open questions concerning Latin squares | unformalized | Combinatorics |  |  |
-| 262 | `wp-problems-in-loop-theory-and-quasigroup-theory-consider-generalizations-of-groups` | Problems in loop theory and quasigroup theory consider generalizations of groups | unformalized | Group Theory |  |  |
-| 263 | `wp-proof-theoretic-ordinal` | Proof-theoretic ordinal | unformalized | Logic & Foundations |  |  |
-| 264 | `wp-property-b` | Property B | unformalized | Combinatorics |  |  |
-| 265 | `wp-quadrisecants-of-wild-knots` | Quadrisecants of wild knots | unformalized | General Topology |  |  |
-| 266 | `wp-quantum-pcp-conjecture` | Quantum PCP conjecture | unformalized | Computational Complexity |  |  |
-| 267 | `wp-quantum-unique-ergodicity-conjecture` | Quantum unique ergodicity conjecture | unformalized | Dynamical Systems |  |  |
-| 268 | `wp-rational-dense-problem` | Rational dense problem | unformalized | Number Theory |  |  |
-| 269 | `wp-reduct` | Reduct | unformalized | Logic & Foundations |  |  |
-| 270 | `wp-regularity-of-solutions-of-euler-equations` | Regularity of solutions of Euler equations | unformalized | Real Functions |  |  |
-| 271 | `wp-regularity-of-solutions-of-vlasov-maxwell-equations` | Regularity of solutions of Vlasov–Maxwell equations | unformalized | Real Functions |  |  |
-| 272 | `wp-reinhardt-cardinals` | Reinhardt cardinals | unformalized | Logic & Foundations |  |  |
-| 273 | `wp-reinhardt-s-conjecture` | Reinhardt's conjecture | unformalized | Convex & Discrete Geometry |  |  |
-| 274 | `wp-rendezvous-problem` | Rendezvous problem | unformalized | Game Theory & Economics |  |  |
-| 275 | `wp-representation` | Representation | unformalized | Combinatorics |  |  |
-| 276 | `wp-riemann-zeta-function` | Riemann zeta function | unformalized | Number Theory |  |  |
-| 277 | `wp-ringel-kotzig-conjecture` | Ringel–Kotzig conjecture | unformalized | Combinatorics |  |  |
-| 278 | `wp-rokhlin-s` | Rokhlin's | unformalized | Dynamical Systems |  |  |
-| 279 | `wp-ropelength-problems` | Ropelength problems | unformalized | Geometry |  |  |
-| 280 | `wp-rota-s-basis-conjecture` | Rota's basis conjecture | unformalized | General Algebra |  |  |
-| 281 | `wp-ryser-s-conjecture` | Ryser's conjecture | unformalized | Combinatorics |  |  |
-| 282 | `wp-ryser-s-conjecture-on-circulant-hadamard-matrices` | Ryser's conjecture on circulant Hadamard matrices | unformalized | General Algebra |  |  |
-| 283 | `wp-sarnak-conjecture` | Sarnak conjecture | unformalized | Topological Entropy |  |  |
-| 284 | `wp-second-hardy-littlewood-conjecture` | Second Hardy–Littlewood conjecture | unformalized | Number Theory |  |  |
-| 285 | `wp-second-neighborhood-problem` | Second neighborhood problem | unformalized | Combinatorics |  |  |
-| 286 | `wp-section-conjecture` | Section conjecture | unformalized | Algebraic Geometry |  |  |
-| 287 | `wp-selberg-s-1-4-conjecture` | Selberg's 1/4 conjecture | unformalized | Number Theory |  |  |
-| 288 | `wp-selberg-s-orthogonality-conjecture` | Selberg's orthogonality conjecture | unformalized | Number Theory |  |  |
-| 289 | `wp-serre-s-conjecture-ii` | Serre's conjecture II | unformalized | General Algebra |  |  |
-| 290 | `wp-set` | Set | unformalized | Game Theory & Economics |  |  |
-| 291 | `wp-shephard-s-problem-a-k-a-durer-s-conjecture` | Shephard's problem (a.k.a. Dürer's conjecture) | unformalized | Geometry |  |  |
-| 292 | `wp-sic-povm` | SIC-POVM | unformalized | General Algebra |  |  |
-| 293 | `wp-simple-continued-fraction` | Simple continued fraction | unformalized | Number Theory |  |  |
-| 294 | `wp-singular-cardinals-hypothesis` | Singular cardinals hypothesis | unformalized | Logic & Foundations |  |  |
-| 295 | `wp-sister-beiter-conjecture` | Sister Beiter conjecture | unformalized | Number Theory |  |  |
-| 296 | `wp-skolem-problem` | Skolem problem | unformalized | Number Theory |  |  |
-| 297 | `wp-solving-the-happy-ending-problem-for-arbitrary-n` | Solving the happy ending problem for arbitrary $n$ | unformalized | Convex & Discrete Geometry |  |  |
-| 298 | `wp-spectral-gap-conjecture` | Spectral gap conjecture | unformalized | Ergodic Theory |  |  |
-| 299 | `wp-sphere-packing` | Sphere packing | unformalized | Convex & Discrete Geometry |  |  |
-| 300 | `wp-spherical` | Spherical | unformalized | Algebraic Geometry |  |  |
-| 301 | `wp-spherical-bernstein-s-problem-a-generalization-of-bernstein-s-problem` | Spherical Bernstein's problem, a generalization of Bernstein's problem | unformalized | Differential Geometry |  |  |
-| 302 | `wp-square-packing-in-a-square` | Square packing in a square | unformalized | Convex & Discrete Geometry |  |  |
-| 303 | `wp-stable-field-conjecture` | Stable field conjecture | unformalized | Logic & Foundations |  |  |
-| 304 | `wp-standard-conjectures-on-algebraic-cycles` | Standard conjectures on algebraic cycles | unformalized | Algebraic Geometry |  |  |
-| 305 | `wp-stark-conjectures-including-brumer-stark-conjecture` | Stark conjectures (including Brumer–Stark conjecture) | unformalized | Number Theory |  |  |
-| 306 | `wp-strong-papadimitriou-ratajczak-conjecture` | Strong Papadimitriou–Ratajczak conjecture | unformalized | Combinatorics |  |  |
-| 307 | `wp-strongly-regular` | Strongly regular | unformalized | Combinatorics |  |  |
-| 308 | `wp-sudoku` | Sudoku | unformalized | Game Theory & Economics |  |  |
-| 309 | `wp-sumner-s-conjecture` | Sumner's conjecture | unformalized | Combinatorics |  |  |
-| 310 | `wp-sunflower-conjecture` | Sunflower conjecture | unformalized | Combinatorics |  |  |
-| 311 | `wp-superpermutation` | Superpermutation | unformalized | Combinatorics |  |  |
-| 312 | `wp-supersingular-primes` | Supersingular primes | unformalized | Number Theory |  |  |
-| 313 | `wp-szpiro-s-conjecture` | Szpiro's conjecture | unformalized | Number Theory |  |  |
-| 314 | `wp-szymanski-s-conjecture` | Szymanski's conjecture | unformalized | Combinatorics |  |  |
-| 315 | `wp-tammes-problem-for-numbers-of-nodes-greater-than-14-except-24` | Tammes problem for numbers of nodes greater than 14 (except 24). | unformalized | Convex & Discrete Geometry |  |  |
-| 316 | `wp-tate-conjecture` | Tate conjecture | unformalized | Algebraic Geometry |  |  |
-| 317 | `wp-telescope-conjecture` | Telescope conjecture | unformalized | General Topology |  |  |
-| 318 | `wp-teschner-s-bondage-number-conjecture` | Teschner's bondage number conjecture | unformalized | Combinatorics |  |  |
-| 319 | `wp-thomson-problem` | Thomson problem | unformalized | Geometry |  |  |
-| 320 | `wp-tic-tac-toe-variants` | Tic-tac-toe variants | unformalized | Game Theory & Economics |  |  |
-| 321 | `wp-toeplitz-conjecture` | Toeplitz' conjecture | unformalized | Jordan Curves |  |  |
-| 322 | `wp-torsion-conjecture` | Torsion conjecture | unformalized | Geometry |  |  |
-| 323 | `wp-triangular-billiards-does-every-triangle-have-a-periodic-billiards-path` | Triangular billiards – does every triangle have a periodic billiards path? | unformalized | Dynamical Systems |  |  |
-| 324 | `wp-tripod-packing` | Tripod packing | unformalized | Convex & Discrete Geometry |  |  |
-| 325 | `wp-turan-s-brick-factory-problem` | Turán's brick factory problem | unformalized | Combinatorics |  |  |
-| 326 | `wp-types` | Types | unformalized | Logic & Foundations |  |  |
-| 327 | `wp-ulam-s-packing-conjecture-about-the-identity-of-the-worst-packing-convex-solid` | Ulam's packing conjecture about the identity of the worst-packing convex solid | unformalized | Convex & Discrete Geometry |  |  |
-| 328 | `wp-unfriendly-partition-conjecture` | Unfriendly partition conjecture | unformalized | Combinatorics |  |  |
-| 329 | `wp-uniform-boundedness-conjecture-for-rational-points` | Uniform boundedness conjecture for rational points | unformalized | General Algebra |  |  |
-| 330 | `wp-unique-games-conjecture` | Unique games conjecture | unformalized | Computational Complexity |  |  |
-| 331 | `wp-uniqueness-conjecture-for-markov-numbers` | Uniqueness conjecture for Markov numbers | unformalized | Number Theory |  |  |
-| 332 | `wp-universal-point-sets-of-subquadratic-size-for-planar-graphs` | Universal point sets of subquadratic size for planar graphs | unformalized | Combinatorics |  |  |
-| 333 | `wp-unknotting-problem` | Unknotting problem | unformalized | General Topology |  |  |
-| 334 | `wp-values-of-g-k-and-g-k-in-waring-s-problem` | Values of g(k) and G(k) in Waring's problem | unformalized | Number Theory |  |  |
-| 335 | `wp-values-of-the-hermite-constants-for-dimensions-other-than-1-8-and-24` | Values of the Hermite constants for dimensions other than 1–8 and 24 | unformalized | Geometry |  |  |
-| 336 | `wp-values-of-the-van-der-waerden-numbers` | Values of the Van der Waerden numbers | unformalized | Combinatorics |  |  |
-| 337 | `wp-varieties` | Varieties | unformalized | Algebraic Geometry |  |  |
-| 338 | `wp-vertex-coloring-game` | Vertex coloring game | unformalized | Combinatorics |  |  |
-| 339 | `wp-virasoro-conjecture` | Virasoro conjecture | unformalized | Algebraic Geometry |  |  |
-| 340 | `wp-vitushkin-s-conjecture-on-compact-subsets-of-mathbb-c-with-analytic-capacity-0` | Vitushkin's conjecture on compact subsets of $\\mathbb{C}$ with analytic capacity $0$ | unformalized | Real Functions |  |  |
-| 341 | `wp-vizing-s-conjecture-on-the-domination-number-of-cartesian-products-of-graphs` | Vizing's conjecture on the domination number of cartesian products of graphs | unformalized | Combinatorics |  |  |
-| 342 | `wp-vojta-s-conjecture` | Vojta's conjecture | unformalized | Number Theory |  |  |
-| 343 | `wp-volume-conjecture` | Volume conjecture | unformalized | General Topology |  |  |
-| 344 | `wp-voronoi-diagram` | Voronoi diagram | unformalized | Geometry |  |  |
-| 345 | `wp-walescki-s-theorem-for-hypergraphs` | Walescki's theorem for hypergraphs | unformalized | Combinatorics |  |  |
-| 346 | `wp-weaire-phelan-structure` | Weaire–Phelan structure | unformalized | Geometry |  |  |
-| 347 | `wp-weight-monodromy-conjecture` | Weight monodromy conjecture | unformalized | Algebraic Geometry |  |  |
-| 348 | `wp-weinstein-conjecture` | Weinstein conjecture | unformalized | Dynamical Systems |  |  |
-| 349 | `wp-what-is-the-exact-value-of-landau-s-constants-including-bloch-s-constant` | What is the exact value of Landau's constants, including Bloch's constant? | unformalized | Real Functions |  |  |
-| 350 | `wp-what-is-the-largest-possible-pathwidth-of-an-vertex-cubic-graph` | What is the largest possible pathwidth of an -vertex cubic graph? | unformalized | Combinatorics |  |  |
-| 351 | `wp-what-is-the-lowest-number-of-faces-possible-for-a-holyhedron` | What is the lowest number of faces possible for a holyhedron? | unformalized | Geometry |  |  |
-| 352 | `wp-what-is-the-maximum-number-of-givens-for-a-minimal-puzzle` | What is the maximum number of givens for a minimal puzzle? | unformalized | Game Theory & Economics |  |  |
-| 353 | `wp-what-is-the-perfect-value-of-komi` | What is the perfect value of Komi? | unformalized | Game Theory & Economics |  |  |
-| 354 | `wp-what-is-the-smallest-skewes-s-number` | What is the smallest Skewes's number? | unformalized | Number Theory |  |  |
-| 355 | `wp-which-transcendental-numbers-are-exponential-periods` | Which transcendental numbers are (exponential) periods? | unformalized | Number Theory |  |  |
-| 356 | `wp-whitehead-conjecture` | Whitehead conjecture | unformalized | General Topology |  |  |
-| 357 | `wp-wild-problems` | Wild problems | unformalized | General Algebra |  |  |
-| 358 | `wp-williamson-conjecture` | Williamson conjecture | unformalized | General Algebra |  |  |
-| 359 | `wp-woodall-s-conjecture` | Woodall's conjecture | unformalized | Combinatorics |  |  |
-| 360 | `wp-woodin` | Woodin | unformalized | Logic & Foundations |  |  |
-| 361 | `wp-yau-s-conjecture-on-the-first-eigenvalue` | Yau's conjecture on the first eigenvalue | unformalized | Differential Geometry |  |  |
-| 362 | `wp-zarankiewicz-problem` | Zarankiewicz problem | unformalized | Combinatorics |  |  |
-| 363 | `wp-zariski-lipman-conjecture` | Zariski–Lipman conjecture | unformalized | General Algebra |  |  |
-| 364 | `wp-zauner-s-conjecture` | Zauner's conjecture | unformalized | Operator Theory |  |  |
-| 365 | `wp-zeeman-conjecture` | Zeeman conjecture | unformalized | General Topology |  |  |
-| 366 | `wp-zilber-pink-conjecture` | Zilber–Pink conjecture | unformalized | Number Theory |  |  |
+| 1 | [`wp-1-3-2-3-conjecture`](https://lefttosolve.com/p/wp-1-3-2-3-conjecture) | 1/3–2/3 conjecture | unformalized | Combinatorics |  |  |
+| 2 | [`wp-1-factorization-conjecture`](https://lefttosolve.com/p/wp-1-factorization-conjecture) | 1-factorization conjecture | unformalized | Combinatorics |  |  |
+| 3 | [`wp-abundance-conjecture`](https://lefttosolve.com/p/wp-abundance-conjecture) | Abundance conjecture | unformalized | Algebraic Geometry |  |  |
+| 4 | [`wp-advances-in-mathematics`](https://lefttosolve.com/p/wp-advances-in-mathematics) | Advances in Mathematics | unformalized | Logic & Foundations |  |  |
+| 5 | [`wp-aec`](https://lefttosolve.com/p/wp-aec) | AEC | unformalized | Logic & Foundations |  |  |
+| 6 | [`wp-agrawal-s-conjecture`](https://lefttosolve.com/p/wp-agrawal-s-conjecture) | Agrawal's conjecture | unformalized | Number Theory |  |  |
+| 7 | [`wp-albertson-conjecture`](https://lefttosolve.com/p/wp-albertson-conjecture) | Albertson conjecture | unformalized | Combinatorics |  |  |
+| 8 | [`wp-algebraically-closed`](https://lefttosolve.com/p/wp-algebraically-closed) | Algebraically closed | unformalized | Logic & Foundations |  |  |
+| 9 | [`wp-apex-graph`](https://lefttosolve.com/p/wp-apex-graph) | Apex graph | unformalized | Combinatorics |  |  |
+| 10 | [`wp-are-all-mersenne-numbers-of-prime-index-square-free`](https://lefttosolve.com/p/wp-are-all-mersenne-numbers-of-prime-index-square-free) | Are all Mersenne numbers of prime index square-free? | unformalized | Number Theory |  |  |
+| 11 | [`wp-are-infinite-sequences-of-flips-possible-in-dimensions-greater-than-3`](https://lefttosolve.com/p/wp-are-infinite-sequences-of-flips-possible-in-dimensions-greater-than-3) | Are infinite sequences of flips possible in dimensions greater than 3? | unformalized | Algebraic Geometry |  |  |
+| 12 | [`wp-are-the-nim-sequences-of-all-finite-octal-games-eventually-periodic`](https://lefttosolve.com/p/wp-are-the-nim-sequences-of-all-finite-octal-games-eventually-periodic) | Are the nim-sequences of all finite octal games eventually periodic? | unformalized | Game Theory & Economics |  |  |
+| 13 | [`wp-are-there-any-pairs-of-relatively-prime-amicable-numbers`](https://lefttosolve.com/p/wp-are-there-any-pairs-of-relatively-prime-amicable-numbers) | Are there any pairs of relatively prime amicable numbers? | unformalized | Number Theory |  |  |
+| 14 | [`wp-are-there-any-wall-sun-sun-primes`](https://lefttosolve.com/p/wp-are-there-any-wall-sun-sun-primes) | Are there any Wall–Sun–Sun primes? | unformalized | Number Theory |  |  |
+| 15 | [`wp-are-there-any-wieferich-primes-in-base-47`](https://lefttosolve.com/p/wp-are-there-any-wieferich-primes-in-base-47) | Are there any Wieferich primes in base 47? | unformalized | Number Theory |  |  |
+| 16 | [`wp-are-there-infinitely-many-cluster-primes`](https://lefttosolve.com/p/wp-are-there-infinitely-many-cluster-primes) | Are there infinitely many cluster primes? | unformalized | Number Theory |  |  |
+| 17 | [`wp-are-there-infinitely-many-cousin-primes`](https://lefttosolve.com/p/wp-are-there-infinitely-many-cousin-primes) | Are there infinitely many cousin primes? | unformalized | Number Theory |  |  |
+| 18 | [`wp-are-there-infinitely-many-cullen-primes`](https://lefttosolve.com/p/wp-are-there-infinitely-many-cullen-primes) | Are there infinitely many Cullen primes? | unformalized | Number Theory |  |  |
+| 19 | [`wp-are-there-infinitely-many-giuga-numbers`](https://lefttosolve.com/p/wp-are-there-infinitely-many-giuga-numbers) | Are there infinitely many Giuga numbers? | unformalized | Number Theory |  |  |
+| 20 | [`wp-are-there-infinitely-many-kummer-primes`](https://lefttosolve.com/p/wp-are-there-infinitely-many-kummer-primes) | Are there infinitely many Kummer primes? | unformalized | Number Theory |  |  |
+| 21 | [`wp-are-there-infinitely-many-lehmer-pairs`](https://lefttosolve.com/p/wp-are-there-infinitely-many-lehmer-pairs) | Are there infinitely many Lehmer pairs? | unformalized | Real Functions |  |  |
+| 22 | [`wp-are-there-infinitely-many-lucas-primes`](https://lefttosolve.com/p/wp-are-there-infinitely-many-lucas-primes) | Are there infinitely many Lucas primes? | unformalized | Number Theory |  |  |
+| 23 | [`wp-are-there-infinitely-many-newman-shanks-williams-primes`](https://lefttosolve.com/p/wp-are-there-infinitely-many-newman-shanks-williams-primes) | Are there infinitely many Newman–Shanks–Williams primes? | unformalized | Number Theory |  |  |
+| 24 | [`wp-are-there-infinitely-many-palindromic-primes-to-every-base`](https://lefttosolve.com/p/wp-are-there-infinitely-many-palindromic-primes-to-every-base) | Are there infinitely many palindromic primes to every base? | unformalized | Number Theory |  |  |
+| 25 | [`wp-are-there-infinitely-many-prime-quadruplets`](https://lefttosolve.com/p/wp-are-there-infinitely-many-prime-quadruplets) | Are there infinitely many prime quadruplets? | unformalized | Number Theory |  |  |
+| 26 | [`wp-are-there-infinitely-many-safe-and-sophie-germain-primes`](https://lefttosolve.com/p/wp-are-there-infinitely-many-safe-and-sophie-germain-primes) | Are there infinitely many safe and Sophie Germain primes? | unformalized | Number Theory |  |  |
+| 27 | [`wp-are-there-infinitely-many-sexy-primes`](https://lefttosolve.com/p/wp-are-there-infinitely-many-sexy-primes) | Are there infinitely many sexy primes? | unformalized | Number Theory |  |  |
+| 28 | [`wp-are-there-infinitely-many-wagstaff-primes`](https://lefttosolve.com/p/wp-are-there-infinitely-many-wagstaff-primes) | Are there infinitely many Wagstaff primes? | unformalized | Number Theory |  |  |
+| 29 | [`wp-are-there-infinitely-many-woodall-primes`](https://lefttosolve.com/p/wp-are-there-infinitely-many-woodall-primes) | Are there infinitely many Woodall primes? | unformalized | Number Theory |  |  |
+| 30 | [`wp-arnold-givental-conjecture`](https://lefttosolve.com/p/wp-arnold-givental-conjecture) | Arnold–Givental conjecture | unformalized | Dynamical Systems |  |  |
+| 31 | [`wp-arthur-s-conjectures`](https://lefttosolve.com/p/wp-arthur-s-conjectures) | Arthur's conjectures | unformalized | Group Theory |  |  |
+| 32 | [`wp-artin-conjecture-l-functions`](https://lefttosolve.com/p/wp-artin-conjecture-l-functions) | Artin conjecture (L-functions) | unformalized | Number Theory |  |  |
+| 33 | [`wp-atiyah-conjecture-on-configurations`](https://lefttosolve.com/p/wp-atiyah-conjecture-on-configurations) | Atiyah conjecture on configurations | unformalized | Geometry |  |  |
+| 34 | [`wp-babai-s-problem`](https://lefttosolve.com/p/wp-babai-s-problem) | Babai's problem | unformalized | Combinatorics |  |  |
+| 35 | [`wp-banach-s-problem-is-there-an-ergodic-system-with-simple-lebesgue-spectrum`](https://lefttosolve.com/p/wp-banach-s-problem-is-there-an-ergodic-system-with-simple-lebesgue-spectrum) | Banach's problem – is there an ergodic system with simple Lebesgue spectrum? | unformalized | Dynamical Systems |  |  |
+| 36 | [`wp-barnette-s-conjecture`](https://lefttosolve.com/p/wp-barnette-s-conjecture) | Barnette's conjecture | unformalized | Combinatorics |  |  |
+| 37 | [`wp-bass-conjecture-on-the-finite-generation-of-certain-algebraic-k-groups`](https://lefttosolve.com/p/wp-bass-conjecture-on-the-finite-generation-of-certain-algebraic-k-groups) | Bass conjecture on the finite generation of certain algebraic K-groups. | unformalized | Algebraic Geometry |  |  |
+| 38 | [`wp-bass-quillen-conjecture`](https://lefttosolve.com/p/wp-bass-quillen-conjecture) | Bass–Quillen conjecture | unformalized | Algebraic Geometry |  |  |
+| 39 | [`wp-baum-connes-conjecture`](https://lefttosolve.com/p/wp-baum-connes-conjecture) | Baum–Connes conjecture | unformalized | General Topology |  |  |
+| 40 | [`wp-beilinson-conjecture`](https://lefttosolve.com/p/wp-beilinson-conjecture) | Beilinson conjecture | unformalized | Number Theory |  |  |
+| 41 | [`wp-beilinson-s-conjectures-about-special-values-of-l-functions`](https://lefttosolve.com/p/wp-beilinson-s-conjectures-about-special-values-of-l-functions) | Beilinson's conjectures about special values of L-functions. | unformalized | Number Theory |  |  |
+| 42 | [`wp-bellman-s-lost-in-a-forest-problem`](https://lefttosolve.com/p/wp-bellman-s-lost-in-a-forest-problem) | Bellman's lost-in-a-forest problem | unformalized | Geometry |  |  |
+| 43 | [`wp-berge-conjecture`](https://lefttosolve.com/p/wp-berge-conjecture) | Berge conjecture | unformalized | General Topology |  |  |
+| 44 | [`wp-berry-tabor-conjecture-in-quantum-chaos`](https://lefttosolve.com/p/wp-berry-tabor-conjecture-in-quantum-chaos) | Berry–Tabor conjecture in quantum chaos | unformalized | Dynamical Systems |  |  |
+| 45 | [`wp-big-line-big-clique-conjecture`](https://lefttosolve.com/p/wp-big-line-big-clique-conjecture) | Big-line-big-clique conjecture | unformalized | Convex & Discrete Geometry |  |  |
+| 46 | [`wp-bipartite-graph`](https://lefttosolve.com/p/wp-bipartite-graph) | Bipartite graph | unformalized | Combinatorics |  |  |
+| 47 | [`wp-birch-and-swinnerton-dyer-conjecture`](https://lefttosolve.com/p/wp-birch-and-swinnerton-dyer-conjecture) | Birch and Swinnerton-Dyer conjecture | unformalized | Number Theory |  |  |
+| 48 | [`wp-birch-tate-conjecture`](https://lefttosolve.com/p/wp-birch-tate-conjecture) | Birch–Tate conjecture | unformalized | General Algebra |  |  |
+| 49 | [`wp-birkhoff`](https://lefttosolve.com/p/wp-birkhoff) | Birkhoff | unformalized | Dynamical Systems |  |  |
+| 50 | [`wp-bloch-beilinson-conjectures`](https://lefttosolve.com/p/wp-bloch-beilinson-conjectures) | Bloch–Beilinson conjectures | unformalized | Number Theory |  |  |
+| 51 | [`wp-bloch-kato-conjecture`](https://lefttosolve.com/p/wp-bloch-kato-conjecture) | Bloch–Kato conjecture | unformalized | Algebraic K-Theory |  |  |
+| 52 | [`wp-bochner-riesz-conjecture`](https://lefttosolve.com/p/wp-bochner-riesz-conjecture) | Bochner–Riesz conjecture | unformalized | Harmonic Analysis |  |  |
+| 53 | [`wp-bombieri-lang-conjecture`](https://lefttosolve.com/p/wp-bombieri-lang-conjecture) | Bombieri–Lang conjecture | unformalized | Number Theory |  |  |
+| 54 | [`wp-borel-conjecture`](https://lefttosolve.com/p/wp-borel-conjecture) | Borel conjecture | unformalized | General Topology |  |  |
+| 55 | [`wp-borromean-rings`](https://lefttosolve.com/p/wp-borromean-rings) | Borromean rings | unformalized | Geometry |  |  |
+| 56 | [`wp-bost-conjecture`](https://lefttosolve.com/p/wp-bost-conjecture) | Bost conjecture | unformalized | General Algebra |  |  |
+| 57 | [`wp-brouwer-s-conjecture`](https://lefttosolve.com/p/wp-brouwer-s-conjecture) | Brouwer's conjecture | unformalized | Combinatorics |  |  |
+| 58 | [`wp-brumer-stark-conjecture`](https://lefttosolve.com/p/wp-brumer-stark-conjecture) | Brumer–Stark conjecture | unformalized | Number Theory |  |  |
+| 59 | [`wp-can-a-discrete-logarithm-be-computed-in-polynomial-time`](https://lefttosolve.com/p/wp-can-a-discrete-logarithm-be-computed-in-polynomial-time) | Can a discrete logarithm be computed in polynomial time? | unformalized | Number Theory |  |  |
+| 60 | [`wp-can-every-integer-be-written-as-a-sum-of-four-perfect-cubes`](https://lefttosolve.com/p/wp-can-every-integer-be-written-as-a-sum-of-four-perfect-cubes) | Can every integer be written as a sum of four perfect cubes? | unformalized | Number Theory |  |  |
+| 61 | [`wp-cap-set`](https://lefttosolve.com/p/wp-cap-set) | Cap set | unformalized | Game Theory & Economics |  |  |
+| 62 | [`wp-caratheodory-conjecture`](https://lefttosolve.com/p/wp-caratheodory-conjecture) | Carathéodory conjecture | unformalized | Differential Geometry |  |  |
+| 63 | [`wp-cartan-hadamard-conjecture`](https://lefttosolve.com/p/wp-cartan-hadamard-conjecture) | Cartan–Hadamard conjecture | unformalized | Differential Geometry |  |  |
+| 64 | [`wp-catalan-dickson-conjecture-on-aliquot-sequences`](https://lefttosolve.com/p/wp-catalan-dickson-conjecture-on-aliquot-sequences) | Catalan–Dickson conjecture on aliquot sequences | unformalized | Number Theory |  |  |
+| 65 | [`wp-catalan-s-mersenne-conjecture`](https://lefttosolve.com/p/wp-catalan-s-mersenne-conjecture) | Catalan's Mersenne conjecture | unformalized | Number Theory |  |  |
+| 66 | [`wp-categorical`](https://lefttosolve.com/p/wp-categorical) | Categorical | unformalized | Logic & Foundations |  |  |
+| 67 | [`wp-cereceda-s-conjecture-on-the-diameter-of-the-space-of-colorings-of-degenerate-gr`](https://lefttosolve.com/p/wp-cereceda-s-conjecture-on-the-diameter-of-the-space-of-colorings-of-degenerate-gr) | Cereceda's conjecture on the diameter of the space of colorings of degenerate graphs | unformalized | Combinatorics |  |  |
+| 68 | [`wp-characterize-all-algebraic-number-fields-that-have-some-power-basis`](https://lefttosolve.com/p/wp-characterize-all-algebraic-number-fields-that-have-some-power-basis) | Characterize all algebraic number fields that have some power basis. | unformalized | Number Theory |  |  |
+| 69 | [`wp-cherlin-zilber-conjecture`](https://lefttosolve.com/p/wp-cherlin-zilber-conjecture) | Cherlin–Zilber conjecture | unformalized | Logic & Foundations |  |  |
+| 70 | [`wp-chern-s-conjecture-affine-geometry`](https://lefttosolve.com/p/wp-chern-s-conjecture-affine-geometry) | Chern's conjecture (affine geometry) | unformalized | Differential Geometry |  |  |
+| 71 | [`wp-chern-s-conjecture-for-hypersurfaces-in-spheres-a-number-of-closely-related-conj`](https://lefttosolve.com/p/wp-chern-s-conjecture-for-hypersurfaces-in-spheres-a-number-of-closely-related-conj) | Chern's conjecture for hypersurfaces in spheres, a number of closely related conjectures. | unformalized | Differential Geometry |  |  |
+| 72 | [`wp-chess`](https://lefttosolve.com/p/wp-chess) | Chess | unformalized | Game Theory & Economics |  |  |
+| 73 | [`wp-chvatal-s-toughness-conjecture`](https://lefttosolve.com/p/wp-chvatal-s-toughness-conjecture) | Chvátal's toughness conjecture | unformalized | Combinatorics |  |  |
+| 74 | [`wp-complete-graph`](https://lefttosolve.com/p/wp-complete-graph) | Complete graph | unformalized | Combinatorics |  |  |
+| 75 | [`wp-conference-graph`](https://lefttosolve.com/p/wp-conference-graph) | Conference graph | unformalized | Combinatorics |  |  |
+| 76 | [`wp-conjecture`](https://lefttosolve.com/p/wp-conjecture) | Γ–θ conjecture | unformalized | Combinatorics |  |  |
+| 77 | [`wp-connellys-blooming-conjecture`](https://lefttosolve.com/p/wp-connellys-blooming-conjecture) | Connelly’s blooming conjecture | unformalized | Geometry |  |  |
+| 78 | [`wp-consistency`](https://lefttosolve.com/p/wp-consistency) | Consistency | unformalized | Logic & Foundations |  |  |
+| 79 | [`wp-convergence-of-the-flint-hills-series`](https://lefttosolve.com/p/wp-convergence-of-the-flint-hills-series) | Convergence of the Flint Hills series | unformalized | Real Functions |  |  |
+| 80 | [`wp-convex-uniform-5-polytopes-find-and-classify-the-complete-set-of-these-shapes`](https://lefttosolve.com/p/wp-convex-uniform-5-polytopes-find-and-classify-the-complete-set-of-these-shapes) | Convex uniform 5-polytopes – find and classify the complete set of these shapes | unformalized | Geometry |  |  |
+| 81 | [`wp-conway-s-thrackle-conjecture-that-thrackles-cannot-have-more-edges-than-vertices`](https://lefttosolve.com/p/wp-conway-s-thrackle-conjecture-that-thrackles-cannot-have-more-edges-than-vertices) | Conway's thrackle conjecture that thrackles cannot have more edges than vertices | unformalized | Combinatorics |  |  |
+| 82 | [`wp-covering-problem-of-rado`](https://lefttosolve.com/p/wp-covering-problem-of-rado) | Covering problem of Rado | unformalized | Convex & Discrete Geometry |  |  |
+| 83 | [`wp-crossing-number`](https://lefttosolve.com/p/wp-crossing-number) | Crossing number | unformalized | Convex & Discrete Geometry |  |  |
+| 84 | [`wp-cycle-double-cover-conjecture`](https://lefttosolve.com/p/wp-cycle-double-cover-conjecture) | Cycle double cover conjecture | unformalized | Combinatorics |  |  |
+| 85 | [`wp-dade-s-conjecture`](https://lefttosolve.com/p/wp-dade-s-conjecture) | Dade's conjecture | unformalized | Group Theory |  |  |
+| 86 | [`wp-danzer-set`](https://lefttosolve.com/p/wp-danzer-set) | Danzer set | unformalized | Geometry |  |  |
+| 87 | [`wp-de-polignac-s-conjecture`](https://lefttosolve.com/p/wp-de-polignac-s-conjecture) | De Polignac's conjecture | unformalized | Number Theory |  |  |
+| 88 | [`wp-decidable`](https://lefttosolve.com/p/wp-decidable) | Decidable | unformalized | Logic & Foundations |  |  |
+| 89 | [`wp-degree-diameter-problem`](https://lefttosolve.com/p/wp-degree-diameter-problem) | Degree diameter problem | unformalized | Combinatorics |  |  |
+| 90 | [`wp-deligne-conjecture`](https://lefttosolve.com/p/wp-deligne-conjecture) | Deligne conjecture | unformalized | Algebraic Geometry |  |  |
+| 91 | [`wp-deligne-s-conjecture-on-hochschild-cohomology`](https://lefttosolve.com/p/wp-deligne-s-conjecture-on-hochschild-cohomology) | Deligne's conjecture on Hochschild cohomology | unformalized | Algebraic Geometry |  |  |
+| 92 | [`wp-demazure-conjecture-on-representations-of-algebraic-groups-over-the-integers`](https://lefttosolve.com/p/wp-demazure-conjecture-on-representations-of-algebraic-groups-over-the-integers) | Demazure conjecture on representations of algebraic groups over the integers. | unformalized | Group Theory |  |  |
+| 93 | [`wp-density-hypothesis-for-zeroes-of-the-riemann-zeta-function`](https://lefttosolve.com/p/wp-density-hypothesis-for-zeroes-of-the-riemann-zeta-function) | Density hypothesis for zeroes of the Riemann zeta function. | unformalized | Number Theory |  |  |
+| 94 | [`wp-determine-growth-rate-of-rk-n-see-szemeredi-s-theorem`](https://lefttosolve.com/p/wp-determine-growth-rate-of-rk-n-see-szemeredi-s-theorem) | Determine growth rate of rk(N) (see Szemerédi's theorem) | unformalized | Number Theory |  |  |
+| 95 | [`wp-dirac-motzkin-conjecture`](https://lefttosolve.com/p/wp-dirac-motzkin-conjecture) | Dirac–Motzkin conjecture | unformalized | Convex & Discrete Geometry |  |  |
+| 96 | [`wp-disk-covering-problem`](https://lefttosolve.com/p/wp-disk-covering-problem) | Disk covering problem | unformalized | Convex & Discrete Geometry |  |  |
+| 97 | [`wp-dissection-into-orthoschemes-is-it-possible-for-simplices-of-every-dimension`](https://lefttosolve.com/p/wp-dissection-into-orthoschemes-is-it-possible-for-simplices-of-every-dimension) | Dissection into orthoschemes – is it possible for simplices of every dimension? | unformalized | Geometry |  |  |
+| 98 | [`wp-dittert-conjecture`](https://lefttosolve.com/p/wp-dittert-conjecture) | Dittert conjecture | unformalized | Combinatorics |  |  |
+| 99 | [`wp-do-any-2-5-perfect-numbers-exist`](https://lefttosolve.com/p/wp-do-any-2-5-perfect-numbers-exist) | Do any (2, 5)-perfect numbers exist? | unformalized | Number Theory |  |  |
+| 100 | [`wp-do-any-odd-noncototients-exist`](https://lefttosolve.com/p/wp-do-any-odd-noncototients-exist) | Do any odd noncototients exist? | unformalized | Number Theory |  |  |
+| 101 | [`wp-do-any-odd-weird-numbers-exist`](https://lefttosolve.com/p/wp-do-any-odd-weird-numbers-exist) | Do any odd weird numbers exist? | unformalized | Number Theory |  |  |
+| 102 | [`wp-do-any-taxicab-5-2-n-exist-for-n-1`](https://lefttosolve.com/p/wp-do-any-taxicab-5-2-n-exist-for-n-1) | Do any Taxicab(5, 2, n) exist for n > 1? | unformalized | Number Theory |  |  |
+| 103 | [`wp-do-the-henson-graphs-have-the-finite-model-property`](https://lefttosolve.com/p/wp-do-the-henson-graphs-have-the-finite-model-property) | Do the Henson graphs have the finite model property? | unformalized | Logic & Foundations |  |  |
+| 104 | [`wp-do-the-ulam-numbers-have-a-positive-density`](https://lefttosolve.com/p/wp-do-the-ulam-numbers-have-a-positive-density) | Do the Ulam numbers have a positive density? | unformalized | Number Theory |  |  |
+| 105 | [`wp-does-a-moore-graph-with-girth-5-and-degree-57-exist`](https://lefttosolve.com/p/wp-does-a-moore-graph-with-girth-5-and-degree-57-exist) | Does a Moore graph with girth 5 and degree 57 exist? | unformalized | Combinatorics |  |  |
+| 106 | [`wp-does-every-convex-polyhedron-have-rupert-s-property`](https://lefttosolve.com/p/wp-does-every-convex-polyhedron-have-rupert-s-property) | Does every convex polyhedron have Rupert's property? | unformalized | Geometry |  |  |
+| 107 | [`wp-does-every-rational-number-with-an-odd-denominator-have-an-odd-greedy-expansion`](https://lefttosolve.com/p/wp-does-every-rational-number-with-an-odd-denominator-have-an-odd-greedy-expansion) | Does every rational number with an odd denominator have an odd greedy expansion? | unformalized | Number Theory |  |  |
+| 108 | [`wp-does-generalized-moonshine-exist`](https://lefttosolve.com/p/wp-does-generalized-moonshine-exist) | Does generalized moonshine exist? | unformalized | Group Theory |  |  |
+| 109 | [`wp-does-the-converse-of-wolstenholme-s-theorem-hold-for-all-natural-numbers`](https://lefttosolve.com/p/wp-does-the-converse-of-wolstenholme-s-theorem-hold-for-all-natural-numbers) | Does the converse of Wolstenholme's theorem hold for all natural numbers? | unformalized | Number Theory |  |  |
+| 110 | [`wp-does-the-partition-principle-pp-imply-the-axiom-of-choice-ac`](https://lefttosolve.com/p/wp-does-the-partition-principle-pp-imply-the-axiom-of-choice-ac) | Does the partition principle (PP) imply the axiom of choice (AC)? | unformalized | Logic & Foundations |  |  |
+| 111 | [`wp-does-there-exist-a-jonsson-algebra-on`](https://lefttosolve.com/p/wp-does-there-exist-a-jonsson-algebra-on) | Does there exist a Jónsson algebra on ℵω? | unformalized | Logic & Foundations |  |  |
+| 112 | [`wp-earth-moon-problem`](https://lefttosolve.com/p/wp-earth-moon-problem) | Earth–Moon problem | unformalized | Combinatorics |  |  |
+| 113 | [`wp-eden-s-conjecture`](https://lefttosolve.com/p/wp-eden-s-conjecture) | Eden's conjecture | unformalized | Dynamical Systems |  |  |
+| 114 | [`wp-ehrhart-s-volume-conjecture`](https://lefttosolve.com/p/wp-ehrhart-s-volume-conjecture) | Ehrhart's volume conjecture | unformalized | Geometry |  |  |
+| 115 | [`wp-eigenfunction`](https://lefttosolve.com/p/wp-eigenfunction) | Eigenfunction | unformalized | Dynamical Systems |  |  |
+| 116 | [`wp-eilenberg-ganea-conjecture`](https://lefttosolve.com/p/wp-eilenberg-ganea-conjecture) | Eilenberg–Ganea conjecture | unformalized | General Algebra |  |  |
+| 117 | [`wp-erdos-faber-lovasz-conjecture-on-coloring-unions-of-cliques`](https://lefttosolve.com/p/wp-erdos-faber-lovasz-conjecture-on-coloring-unions-of-cliques) | Erdős–Faber–Lovász conjecture on coloring unions of cliques | unformalized | Combinatorics |  |  |
+| 118 | [`wp-erdos-gyarfas-conjecture-on-cycles-with-power-of-two-lengths-in-cubic-graphs`](https://lefttosolve.com/p/wp-erdos-gyarfas-conjecture-on-cycles-with-power-of-two-lengths-in-cubic-graphs) | Erdős–Gyárfás conjecture on cycles with power-of-two lengths in cubic graphs | unformalized | Combinatorics |  |  |
+| 119 | [`wp-erdos-mollin-walsh-conjecture`](https://lefttosolve.com/p/wp-erdos-mollin-walsh-conjecture) | Erdős–Mollin–Walsh conjecture | unformalized | Number Theory |  |  |
+| 120 | [`wp-erdos-oler-conjecture`](https://lefttosolve.com/p/wp-erdos-oler-conjecture) | Erdős–Oler conjecture | unformalized | Convex & Discrete Geometry |  |  |
+| 121 | [`wp-euler-s-constant`](https://lefttosolve.com/p/wp-euler-s-constant) | Euler's constant | unformalized | Number Theory |  |  |
+| 122 | [`wp-every-bridgeless-graph-has-a-nowhere-zero-5-flow`](https://lefttosolve.com/p/wp-every-bridgeless-graph-has-a-nowhere-zero-5-flow) | Every bridgeless graph has a nowhere-zero 5-flow | unformalized | Combinatorics |  |  |
+| 123 | [`wp-existence-of-perfect-cuboids-and-associated-cuboid-conjectures`](https://lefttosolve.com/p/wp-existence-of-perfect-cuboids-and-associated-cuboid-conjectures) | Existence of perfect cuboids and associated cuboid conjectures | unformalized | General Algebra |  |  |
+| 124 | [`wp-experimental-mathematics`](https://lefttosolve.com/p/wp-experimental-mathematics) | Experimental Mathematics | unformalized | General Topology |  |  |
+| 125 | [`wp-exponent-pair-conjecture`](https://lefttosolve.com/p/wp-exponent-pair-conjecture) | Exponent pair conjecture | unformalized | Number Theory |  |  |
+| 126 | [`wp-falconer-s-conjecture`](https://lefttosolve.com/p/wp-falconer-s-conjecture) | Falconer's conjecture | unformalized | Geometry |  |  |
+| 127 | [`wp-farrell-jones-conjecture-on-whether-certain-assembly-maps-are-isomorphisms`](https://lefttosolve.com/p/wp-farrell-jones-conjecture-on-whether-certain-assembly-maps-are-isomorphisms) | Farrell–Jones conjecture on whether certain assembly maps are isomorphisms. | unformalized | General Algebra |  |  |
+| 128 | [`wp-fatou-conjecture`](https://lefttosolve.com/p/wp-fatou-conjecture) | Fatou conjecture | unformalized | Dynamical Systems |  |  |
+| 129 | [`wp-feit-thompson-conjecture`](https://lefttosolve.com/p/wp-feit-thompson-conjecture) | Feit–Thompson conjecture | unformalized | Number Theory |  |  |
+| 130 | [`wp-filling-area-conjecture`](https://lefttosolve.com/p/wp-filling-area-conjecture) | Filling area conjecture | unformalized | Differential Geometry |  |  |
+| 131 | [`wp-find-the-value-of-the-de-bruijn-newman-constant`](https://lefttosolve.com/p/wp-find-the-value-of-the-de-bruijn-newman-constant) | Find the value of the De Bruijn–Newman constant. | unformalized | Number Theory |  |  |
+| 132 | [`wp-finding-a-function-to-model-n-step-self-avoiding-walks`](https://lefttosolve.com/p/wp-finding-a-function-to-model-n-step-self-avoiding-walks) | Finding a function to model n-step self-avoiding walks | unformalized | Combinatorics |  |  |
+| 133 | [`wp-finding-matching-upper-and-lower-bounds-for-k-sets-and-halving-lines`](https://lefttosolve.com/p/wp-finding-matching-upper-and-lower-bounds-for-k-sets-and-halving-lines) | Finding matching upper and lower bounds for k-sets and halving lines | unformalized | Convex & Discrete Geometry |  |  |
+| 134 | [`wp-finite-lattice-representation-problem`](https://lefttosolve.com/p/wp-finite-lattice-representation-problem) | Finite lattice representation problem | unformalized | General Algebra |  |  |
+| 135 | [`wp-first-move-advantage-in-chess`](https://lefttosolve.com/p/wp-first-move-advantage-in-chess) | First-move advantage in chess | unformalized | Game Theory & Economics |  |  |
+| 136 | [`wp-first-order-theories`](https://lefttosolve.com/p/wp-first-order-theories) | First order theories | unformalized | Logic & Foundations |  |  |
+| 137 | [`wp-fontaine-mazur-conjecture`](https://lefttosolve.com/p/wp-fontaine-mazur-conjecture) | Fontaine–Mazur conjecture | unformalized | Number Theory |  |  |
+| 138 | [`wp-for-which-dimensions-of-sphere-differential-poincare-conjecture-is-true`](https://lefttosolve.com/p/wp-for-which-dimensions-of-sphere-differential-poincare-conjecture-is-true) | For which dimensions of sphere differential Poincaré conjecture is true? | unformalized | Differential Geometry |  |  |
+| 139 | [`wp-for-which-number-fields-does-hilbert-s-tenth-problem-hold`](https://lefttosolve.com/p/wp-for-which-number-fields-does-hilbert-s-tenth-problem-hold) | For which number fields does Hilbert's tenth problem hold? | unformalized | Logic & Foundations |  |  |
+| 140 | [`wp-frankl-conjecture`](https://lefttosolve.com/p/wp-frankl-conjecture) | Frankl conjecture | unformalized | Combinatorics |  |  |
+| 141 | [`wp-froberg-conjecture-on-the-hilbert-functions-of-a-set-of-forms`](https://lefttosolve.com/p/wp-froberg-conjecture-on-the-hilbert-functions-of-a-set-of-forms) | Fröberg conjecture on the Hilbert functions of a set of forms. | unformalized | Algebraic Geometry |  |  |
+| 142 | [`wp-fujita-conjecture`](https://lefttosolve.com/p/wp-fujita-conjecture) | Fujita conjecture | unformalized | Algebraic Geometry |  |  |
+| 143 | [`wp-furstenberg`](https://lefttosolve.com/p/wp-furstenberg) | Furstenberg | unformalized | Dynamical Systems |  |  |
+| 144 | [`wp-gan-gross-prasad-conjecture`](https://lefttosolve.com/p/wp-gan-gross-prasad-conjecture) | Gan–Gross–Prasad conjecture | unformalized | Number Theory |  |  |
+| 145 | [`wp-gaussian-moat-problem`](https://lefttosolve.com/p/wp-gaussian-moat-problem) | Gaussian moat problem | unformalized | Number Theory |  |  |
+| 146 | [`wp-general-elephant-problem`](https://lefttosolve.com/p/wp-general-elephant-problem) | General elephant problem | unformalized | Algebraic Geometry |  |  |
+| 147 | [`wp-generalized-continuum-hypothesis`](https://lefttosolve.com/p/wp-generalized-continuum-hypothesis) | Generalized continuum hypothesis | unformalized | Logic & Foundations |  |  |
+| 148 | [`wp-generalized-riemann-hypothesis-for-selberg-class`](https://lefttosolve.com/p/wp-generalized-riemann-hypothesis-for-selberg-class) | Generalized Riemann hypothesis for Selberg class | unformalized | Number Theory |  |  |
+| 149 | [`wp-generalized-star-height-problem`](https://lefttosolve.com/p/wp-generalized-star-height-problem) | Generalized star height problem | unformalized | Logic & Foundations |  |  |
+| 150 | [`wp-gilbert-pollack-conjecture-on-the-steiner-ratio-of-the-euclidean-plane`](https://lefttosolve.com/p/wp-gilbert-pollack-conjecture-on-the-steiner-ratio-of-the-euclidean-plane) | Gilbert–Pollack conjecture on the Steiner ratio of the Euclidean plane | unformalized | Geometry |  |  |
+| 151 | [`wp-gilbert-pollak-conjecture`](https://lefttosolve.com/p/wp-gilbert-pollak-conjecture) | Gilbert–Pollak conjecture | unformalized | Combinatorics |  |  |
+| 152 | [`wp-gillies-conjecture-on-the-distribution-of-prime-divisors-of-mersenne-numbers`](https://lefttosolve.com/p/wp-gillies-conjecture-on-the-distribution-of-prime-divisors-of-mersenne-numbers) | Gillies' conjecture on the distribution of prime divisors of Mersenne numbers. | unformalized | Number Theory |  |  |
+| 153 | [`wp-give-a-combinatorial-interpretation-of-the-kronecker-coefficients`](https://lefttosolve.com/p/wp-give-a-combinatorial-interpretation-of-the-kronecker-coefficients) | Give a combinatorial interpretation of the Kronecker coefficients | unformalized | Combinatorics |  |  |
+| 154 | [`wp-gnrs-conjecture`](https://lefttosolve.com/p/wp-gnrs-conjecture) | GNRS conjecture | unformalized | Combinatorics |  |  |
+| 155 | [`wp-gold-partition-conjecture`](https://lefttosolve.com/p/wp-gold-partition-conjecture) | Gold partition conjecture | unformalized | Order Theory |  |  |
+| 156 | [`wp-goldberg-seymour-conjecture`](https://lefttosolve.com/p/wp-goldberg-seymour-conjecture) | Goldberg–Seymour conjecture | unformalized | Combinatorics |  |  |
+| 157 | [`wp-goncharov-conjecture-on-the-cohomology-of-certain-motivic-complexes`](https://lefttosolve.com/p/wp-goncharov-conjecture-on-the-cohomology-of-certain-motivic-complexes) | Goncharov conjecture on the cohomology of certain motivic complexes. | unformalized | General Algebra |  |  |
+| 158 | [`wp-graham-s-pebbling-conjecture-on-the-pebbling-number-of-cartesian-products-of-gra`](https://lefttosolve.com/p/wp-graham-s-pebbling-conjecture-on-the-pebbling-number-of-cartesian-products-of-gra) | Graham's pebbling conjecture on the pebbling number of Cartesian products of graphs | unformalized | Combinatorics |  |  |
+| 159 | [`wp-grand-riemann-hypothesis`](https://lefttosolve.com/p/wp-grand-riemann-hypothesis) | Grand Riemann hypothesis | unformalized | Number Theory |  |  |
+| 160 | [`wp-green-s-conjecture`](https://lefttosolve.com/p/wp-green-s-conjecture) | Green's conjecture | unformalized | General Algebra |  |  |
+| 161 | [`wp-greenberg-s-conjectures`](https://lefttosolve.com/p/wp-greenberg-s-conjectures) | Greenberg's conjectures | unformalized | Number Theory |  |  |
+| 162 | [`wp-grothendieck-katz-p-curvature-conjecture`](https://lefttosolve.com/p/wp-grothendieck-katz-p-curvature-conjecture) | Grothendieck–Katz p-curvature conjecture | unformalized | General Algebra |  |  |
+| 163 | [`wp-grunbaum-nash-williams-conjecture`](https://lefttosolve.com/p/wp-grunbaum-nash-williams-conjecture) | Grünbaum–Nash-Williams conjecture | unformalized | Combinatorics |  |  |
+| 164 | [`wp-hadamard-s-maximal-determinant-problem`](https://lefttosolve.com/p/wp-hadamard-s-maximal-determinant-problem) | Hadamard's maximal determinant problem | unformalized | General Algebra |  |  |
+| 165 | [`wp-hadwiger-conjecture`](https://lefttosolve.com/p/wp-hadwiger-conjecture) | Hadwiger conjecture | unformalized | Convex & Discrete Geometry |  |  |
+| 166 | [`wp-hales-jewett-theorem`](https://lefttosolve.com/p/wp-hales-jewett-theorem) | Hales–Jewett theorem | unformalized | Game Theory & Economics |  |  |
+| 167 | [`wp-halperin-conjecture-on-rational-serre-spectral-sequences-of-certain-fibrations`](https://lefttosolve.com/p/wp-halperin-conjecture-on-rational-serre-spectral-sequences-of-certain-fibrations) | Halperin conjecture on rational Serre spectral sequences of certain fibrations. | unformalized | General Topology |  |  |
+| 168 | [`wp-harborth-s-conjecture`](https://lefttosolve.com/p/wp-harborth-s-conjecture) | Harborth's conjecture | unformalized | Combinatorics |  |  |
+| 169 | [`wp-hartmanis-stearns-conjecture`](https://lefttosolve.com/p/wp-hartmanis-stearns-conjecture) | Hartmanis–Stearns conjecture | unformalized | Number Theory |  |  |
+| 170 | [`wp-hermite-s-problem`](https://lefttosolve.com/p/wp-hermite-s-problem) | Hermite's problem | unformalized | Number Theory |  |  |
+| 171 | [`wp-hilbert-arnold-problem`](https://lefttosolve.com/p/wp-hilbert-arnold-problem) | Hilbert–Arnold problem | unformalized | Dynamical Systems |  |  |
+| 172 | [`wp-hilbert-polya-conjecture`](https://lefttosolve.com/p/wp-hilbert-polya-conjecture) | Hilbert–Pólya conjecture | unformalized | Number Theory |  |  |
+| 173 | [`wp-hilbert-s-12th-problem`](https://lefttosolve.com/p/wp-hilbert-s-12th-problem) | Hilbert's 12th problem | unformalized | Number Theory |  |  |
+| 174 | [`wp-hilbert-s-9th-problem`](https://lefttosolve.com/p/wp-hilbert-s-9th-problem) | Hilbert's 9th problem | unformalized | Number Theory |  |  |
+| 175 | [`wp-hilbert-s-fifteenth-problem`](https://lefttosolve.com/p/wp-hilbert-s-fifteenth-problem) | Hilbert's fifteenth problem | unformalized | General Algebra |  |  |
+| 176 | [`wp-hilbert-s-sixteenth-problem`](https://lefttosolve.com/p/wp-hilbert-s-sixteenth-problem) | Hilbert's sixteenth problem | unformalized | General Algebra |  |  |
+| 177 | [`wp-hilbert-s-third-problem-for-non-euclidean-geometries`](https://lefttosolve.com/p/wp-hilbert-s-third-problem-for-non-euclidean-geometries) | Hilbert's third problem for non-Euclidean geometries | unformalized | Geometry |  |  |
+| 178 | [`wp-hodge-conjecture`](https://lefttosolve.com/p/wp-hodge-conjecture) | Hodge conjecture | unformalized | Algebraic Geometry |  |  |
+| 179 | [`wp-hopf-conjecture`](https://lefttosolve.com/p/wp-hopf-conjecture) | Hopf conjecture | unformalized | Differential Geometry |  |  |
+| 180 | [`wp-how-many-puzzles-with-exactly-one-solution-are-minimal`](https://lefttosolve.com/p/wp-how-many-puzzles-with-exactly-one-solution-are-minimal) | How many puzzles with exactly one solution are minimal? | unformalized | Game Theory & Economics |  |  |
+| 181 | [`wp-how-many-unit-distances-can-be-determined-by-a-set-of-points-in-the-euclidean-pl`](https://lefttosolve.com/p/wp-how-many-unit-distances-can-be-determined-by-a-set-of-points-in-the-euclidean-pl) | How many unit distances can be determined by a set of points in the Euclidean plane? | unformalized | Convex & Discrete Geometry |  |  |
+| 182 | [`wp-ibragimov-iosifescu-conjecture-for-mixing-sequences`](https://lefttosolve.com/p/wp-ibragimov-iosifescu-conjecture-for-mixing-sequences) | Ibragimov–Iosifescu conjecture for φ-mixing sequences | unformalized | Probability |  |  |
+| 183 | [`wp-imbalance-conjecture`](https://lefttosolve.com/p/wp-imbalance-conjecture) | Imbalance conjecture | unformalized | Combinatorics |  |  |
+| 184 | [`wp-implicit-graph-conjecture`](https://lefttosolve.com/p/wp-implicit-graph-conjecture) | Implicit graph conjecture | unformalized | Combinatorics |  |  |
+| 185 | [`wp-improving-lower-and-upper-bounds-for-the-heilbronn-triangle-problem`](https://lefttosolve.com/p/wp-improving-lower-and-upper-bounds-for-the-heilbronn-triangle-problem) | Improving lower and upper bounds for the Heilbronn triangle problem. | unformalized | Convex & Discrete Geometry |  |  |
+| 186 | [`wp-in-meissner-body`](https://lefttosolve.com/p/wp-in-meissner-body) | In Meissner body) | unformalized | Geometry |  |  |
+| 187 | [`wp-in-parallelohedron`](https://lefttosolve.com/p/wp-in-parallelohedron) | In parallelohedron | unformalized | Geometry |  |  |
+| 188 | [`wp-is-509-203-the-lowest-riesel-number`](https://lefttosolve.com/p/wp-is-509-203-the-lowest-riesel-number) | Is 509,203 the lowest Riesel number? | unformalized | Number Theory |  |  |
+| 189 | [`wp-is-every-finitely-presented-periodic-group-finite`](https://lefttosolve.com/p/wp-is-every-finitely-presented-periodic-group-finite) | Is every finitely presented periodic group finite? | unformalized | Group Theory |  |  |
+| 190 | [`wp-is-every-group-surjunctive`](https://lefttosolve.com/p/wp-is-every-group-surjunctive) | Is every group surjunctive? | unformalized | Group Theory |  |  |
+| 191 | [`wp-is-every-reversible-cellular-automaton-in-three-or-more-dimensions-locally-rever`](https://lefttosolve.com/p/wp-is-every-reversible-cellular-automaton-in-three-or-more-dimensions-locally-rever) | Is every reversible cellular automaton in three or more dimensions locally reversible? | unformalized | Dynamical Systems |  |  |
+| 192 | [`wp-is-oca-the-open-coloring-axiom-consistent-with-2-aleph-0-aleph-2`](https://lefttosolve.com/p/wp-is-oca-the-open-coloring-axiom-consistent-with-2-aleph-0-aleph-2) | Is OCA (the open coloring axiom) consistent with $2^{\\aleph_{0}}>\\aleph_{2}$? | unformalized | Logic & Foundations |  |  |
+| 193 | [`wp-is-selberg-class-of-dirichlet-series-equal-to-class-of-automorphic-l-functions`](https://lefttosolve.com/p/wp-is-selberg-class-of-dirichlet-series-equal-to-class-of-automorphic-l-functions) | Is Selberg class of Dirichlet series equal to class of automorphic L-functions? | unformalized | Number Theory |  |  |
+| 194 | [`wp-is-the-line-graph-of-a-non-word-representable-graph-always-non-word-representabl`](https://lefttosolve.com/p/wp-is-the-line-graph-of-a-non-word-representable-graph-always-non-word-representabl) | Is the line graph of a non-word-representable graph always non-word-representable? | unformalized | Combinatorics |  |  |
+| 195 | [`wp-is-the-nim-sequence-of-grundy-s-game-eventually-periodic`](https://lefttosolve.com/p/wp-is-the-nim-sequence-of-grundy-s-game-eventually-periodic) | Is the nim-sequence of Grundy's game eventually periodic? | unformalized | Game Theory & Economics |  |  |
+| 196 | [`wp-is-there-a-covering-system-with-odd-distinct-moduli`](https://lefttosolve.com/p/wp-is-there-a-covering-system-with-odd-distinct-moduli) | Is there a covering system with odd distinct moduli? | unformalized | Number Theory |  |  |
+| 197 | [`wp-isomorphism-problem-of-coxeter-groups`](https://lefttosolve.com/p/wp-isomorphism-problem-of-coxeter-groups) | Isomorphism problem of Coxeter groups | unformalized | Group Theory |  |  |
+| 198 | [`wp-j-barwise`](https://lefttosolve.com/p/wp-j-barwise) | J. Barwise | unformalized | Logic & Foundations |  |  |
+| 199 | [`wp-journal-of-algebra`](https://lefttosolve.com/p/wp-journal-of-algebra) | Journal of Algebra | unformalized | Group Theory |  |  |
+| 200 | [`wp-journal-of-combinatorial-theory`](https://lefttosolve.com/p/wp-journal-of-combinatorial-theory) | Journal of Combinatorial Theory | unformalized | Logic & Foundations |  |  |
+| 201 | [`wp-journal-of-the-acm`](https://lefttosolve.com/p/wp-journal-of-the-acm) | Journal of the ACM | unformalized | Real Functions |  |  |
+| 202 | [`wp-kalai-s-3d-conjecture`](https://lefttosolve.com/p/wp-kalai-s-3d-conjecture) | Kalai's 3d conjecture | unformalized | Convex & Discrete Geometry |  |  |
+| 203 | [`wp-kaplan-yorke-conjecture`](https://lefttosolve.com/p/wp-kaplan-yorke-conjecture) | Kaplan–Yorke conjecture | unformalized | Dynamical Systems |  |  |
+| 204 | [`wp-keating-snaith-conjecture`](https://lefttosolve.com/p/wp-keating-snaith-conjecture) | Keating–Snaith conjecture | unformalized | Number Theory |  |  |
+| 205 | [`wp-kissing-number-problem-for-dimensions-other-than-1-2-3-4-8-and-24`](https://lefttosolve.com/p/wp-kissing-number-problem-for-dimensions-other-than-1-2-3-4-8-and-24) | Kissing number problem for dimensions other than 1, 2, 3, 4, 8 and 24 | unformalized | Convex & Discrete Geometry |  |  |
+| 206 | [`wp-kobon-triangle-problem-on-triangles-in-line-arrangements`](https://lefttosolve.com/p/wp-kobon-triangle-problem-on-triangles-in-line-arrangements) | Kobon triangle problem on triangles in line arrangements | unformalized | Convex & Discrete Geometry |  |  |
+| 207 | [`wp-kung-traub-conjecture`](https://lefttosolve.com/p/wp-kung-traub-conjecture) | Kung–Traub conjecture | unformalized | Iterative Methods |  |  |
+| 208 | [`wp-kusner-conjecture`](https://lefttosolve.com/p/wp-kusner-conjecture) | Kusner conjecture | unformalized | Convex & Discrete Geometry |  |  |
+| 209 | [`wp-landau-s-problems`](https://lefttosolve.com/p/wp-landau-s-problems) | Landau's problems | unformalized | Number Theory |  |  |
+| 210 | [`wp-lander-s-conjecture`](https://lefttosolve.com/p/wp-lander-s-conjecture) | Lander's conjecture | unformalized | General Algebra |  |  |
+| 211 | [`wp-lebesgue-s-universal-covering-problem`](https://lefttosolve.com/p/wp-lebesgue-s-universal-covering-problem) | Lebesgue's universal covering problem | unformalized | Geometry |  |  |
+| 212 | [`wp-lenstra-pomerance-wagstaff-conjecture`](https://lefttosolve.com/p/wp-lenstra-pomerance-wagstaff-conjecture) | Lenstra–Pomerance–Wagstaff conjecture | unformalized | Number Theory |  |  |
+| 213 | [`wp-leopoldt-s-conjecture`](https://lefttosolve.com/p/wp-leopoldt-s-conjecture) | Leopoldt's conjecture | unformalized | Number Theory |  |  |
+| 214 | [`wp-lindelof-hypothesis-that-for-all-varepsilon-0-zeta-1-2-it-o-t-varepsilon`](https://lefttosolve.com/p/wp-lindelof-hypothesis-that-for-all-varepsilon-0-zeta-1-2-it-o-t-varepsilon) | Lindelöf hypothesis that for all $\\varepsilon > 0$, $\\zeta(1/2 + it) = o(t^\\varepsilon)$ | unformalized | Number Theory |  |  |
+| 215 | [`wp-lovasz-conjecture-on-hamiltonian-paths-in-symmetric-graphs`](https://lefttosolve.com/p/wp-lovasz-conjecture-on-hamiltonian-paths-in-symmetric-graphs) | Lovász conjecture on Hamiltonian paths in symmetric graphs | unformalized | Combinatorics |  |  |
+| 216 | [`wp-lucas-wieferich-prime`](https://lefttosolve.com/p/wp-lucas-wieferich-prime) | Lucas–Wieferich prime | unformalized | Number Theory |  |  |
+| 217 | [`wp-lyapunov-function-lyapunov-s-second-method-for-stability`](https://lefttosolve.com/p/wp-lyapunov-function-lyapunov-s-second-method-for-stability) | Lyapunov function: Lyapunov's second method for stability | unformalized | Dynamical Systems |  |  |
+| 218 | [`wp-mahler-s-conjecture`](https://lefttosolve.com/p/wp-mahler-s-conjecture) | Mahler's conjecture | unformalized | Geometry |  |  |
+| 219 | [`wp-manin-conjecture`](https://lefttosolve.com/p/wp-manin-conjecture) | Manin conjecture | unformalized | Number Theory |  |  |
+| 220 | [`wp-map-folding-various-problems-in-map-folding-and-stamp-folding`](https://lefttosolve.com/p/wp-map-folding-various-problems-in-map-folding-and-stamp-folding) | Map folding – various problems in map folding and stamp folding. | unformalized | Combinatorics |  |  |
+| 221 | [`wp-margulis`](https://lefttosolve.com/p/wp-margulis) | Margulis | unformalized | Dynamical Systems |  |  |
+| 222 | [`wp-marshall-hall-s-conjecture`](https://lefttosolve.com/p/wp-marshall-hall-s-conjecture) | Marshall Hall's conjecture | unformalized | Number Theory |  |  |
+| 223 | [`wp-mathematische-annalen`](https://lefttosolve.com/p/wp-mathematische-annalen) | Mathematische Annalen | unformalized | Algebraic Geometry |  |  |
+| 224 | [`wp-maulik-nekrasov-okounkov-pandharipande-conjecture`](https://lefttosolve.com/p/wp-maulik-nekrasov-okounkov-pandharipande-conjecture) | Maulik–Nekrasov–Okounkov–Pandharipande conjecture | unformalized | Algebraic Geometry |  |  |
+| 225 | [`wp-mazur-s-conjectures`](https://lefttosolve.com/p/wp-mazur-s-conjectures) | Mazur's conjectures | unformalized | Number Theory |  |  |
+| 226 | [`wp-mckay-conjecture`](https://lefttosolve.com/p/wp-mckay-conjecture) | McKay conjecture | unformalized | Group Theory |  |  |
+| 227 | [`wp-mcmullen-problem-on-projectively-transforming-sets-of-points-into-convex-positio`](https://lefttosolve.com/p/wp-mcmullen-problem-on-projectively-transforming-sets-of-points-into-convex-positio) | McMullen problem on projectively transforming sets of points into convex position | unformalized | Convex & Discrete Geometry |  |  |
+| 228 | [`wp-mersenne-prime`](https://lefttosolve.com/p/wp-mersenne-prime) | Mersenne prime | unformalized | Number Theory |  |  |
+| 229 | [`wp-minimum-overlap-problem`](https://lefttosolve.com/p/wp-minimum-overlap-problem) | Minimum overlap problem | unformalized | Number Theory |  |  |
+| 230 | [`wp-mlc-conjecture-is-the-mandelbrot-set-locally-connected`](https://lefttosolve.com/p/wp-mlc-conjecture-is-the-mandelbrot-set-locally-connected) | MLC conjecture – is the Mandelbrot set locally connected? | unformalized | Dynamical Systems |  |  |
+| 231 | [`wp-mnop-conjecture`](https://lefttosolve.com/p/wp-mnop-conjecture) | MNOP conjecture | unformalized | Algebraic Geometry |  |  |
+| 232 | [`wp-monomial-conjecture-on-noetherian-local-rings`](https://lefttosolve.com/p/wp-monomial-conjecture-on-noetherian-local-rings) | Monomial conjecture on Noetherian local rings | unformalized | General Algebra |  |  |
+| 233 | [`wp-more-than-seven-faces`](https://lefttosolve.com/p/wp-more-than-seven-faces) | More than seven faces | unformalized | Geometry |  |  |
+| 234 | [`wp-n-conjecture`](https://lefttosolve.com/p/wp-n-conjecture) | N conjecture | unformalized | Number Theory |  |  |
+| 235 | [`wp-nagata-biran-conjecture`](https://lefttosolve.com/p/wp-nagata-biran-conjecture) | Nagata–Biran conjecture | unformalized | Algebraic Geometry |  |  |
+| 236 | [`wp-nagata-s-conjecture-on-curves`](https://lefttosolve.com/p/wp-nagata-s-conjecture-on-curves) | Nagata's conjecture on curves | unformalized | Algebraic Geometry |  |  |
+| 237 | [`wp-nakai-conjecture`](https://lefttosolve.com/p/wp-nakai-conjecture) | Nakai conjecture | unformalized | Algebraic Geometry |  |  |
+| 238 | [`wp-nearby-lagrangian-conjecture`](https://lefttosolve.com/p/wp-nearby-lagrangian-conjecture) | Nearby Lagrangian conjecture | unformalized | General Topology |  |  |
+| 239 | [`wp-negami-s-conjecture-on-projective-plane-embeddings-of-graphs-with-planar-covers`](https://lefttosolve.com/p/wp-negami-s-conjecture-on-projective-plane-embeddings-of-graphs-with-planar-covers) | Negami's conjecture on projective-plane embeddings of graphs with planar covers | unformalized | Combinatorics |  |  |
+| 240 | [`wp-new-mersenne-conjecture`](https://lefttosolve.com/p/wp-new-mersenne-conjecture) | New Mersenne conjecture | unformalized | Number Theory |  |  |
+| 241 | [`wp-newman-s-conjecture`](https://lefttosolve.com/p/wp-newman-s-conjecture) | Newman's conjecture | unformalized | Number Theory |  |  |
+| 242 | [`wp-no-three-in-line-problem`](https://lefttosolve.com/p/wp-no-three-in-line-problem) | No-three-in-line problem | unformalized | Combinatorics |  |  |
+| 243 | [`wp-non-quadratic`](https://lefttosolve.com/p/wp-non-quadratic) | Non-quadratic | unformalized | Number Theory |  |  |
+| 244 | [`wp-novikov-conjecture`](https://lefttosolve.com/p/wp-novikov-conjecture) | Novikov conjecture | unformalized | General Topology |  |  |
+| 245 | [`wp-o-minimal`](https://lefttosolve.com/p/wp-o-minimal) | O-minimal | unformalized | Logic & Foundations |  |  |
+| 246 | [`wp-oberwolfach-problem`](https://lefttosolve.com/p/wp-oberwolfach-problem) | Oberwolfach problem | unformalized | Combinatorics |  |  |
+| 247 | [`wp-opaque-forest-problem-on-finding-opaque-sets-for-various-planar-shapes`](https://lefttosolve.com/p/wp-opaque-forest-problem-on-finding-opaque-sets-for-various-planar-shapes) | Opaque forest problem on finding opaque sets for various planar shapes | unformalized | Convex & Discrete Geometry |  |  |
+| 248 | [`wp-orchard-planting-problem`](https://lefttosolve.com/p/wp-orchard-planting-problem) | Orchard-planting problem | unformalized | Convex & Discrete Geometry |  |  |
+| 249 | [`wp-osserman-conjecture`](https://lefttosolve.com/p/wp-osserman-conjecture) | Osserman conjecture | unformalized | Differential Geometry |  |  |
+| 250 | [`wp-outer-billiard`](https://lefttosolve.com/p/wp-outer-billiard) | Outer billiard | unformalized | Dynamical Systems |  |  |
+| 251 | [`wp-overfull-conjecture`](https://lefttosolve.com/p/wp-overfull-conjecture) | Overfull conjecture | unformalized | Combinatorics |  |  |
+| 252 | [`wp-parshin-s-conjecture`](https://lefttosolve.com/p/wp-parshin-s-conjecture) | Parshin's conjecture | unformalized | Algebraic Geometry |  |  |
+| 253 | [`wp-perfect-1-factorization-conjecture`](https://lefttosolve.com/p/wp-perfect-1-factorization-conjecture) | Perfect 1-factorization conjecture | unformalized | Combinatorics |  |  |
+| 254 | [`wp-pillai-s-conjecture`](https://lefttosolve.com/p/wp-pillai-s-conjecture) | Pillai's conjecture | unformalized | Number Theory |  |  |
+| 255 | [`wp-piltz-divisor-problem-on-bounding-delta-k-x-d-k-x-xp-k-log-x`](https://lefttosolve.com/p/wp-piltz-divisor-problem-on-bounding-delta-k-x-d-k-x-xp-k-log-x) | Piltz divisor problem on bounding $\\Delta_k(x) = D_k(x) - xP_k(\\log(x))$ | unformalized | Number Theory |  |  |
+| 256 | [`wp-polignac-s-conjecture`](https://lefttosolve.com/p/wp-polignac-s-conjecture) | Polignac's conjecture | unformalized | Number Theory |  |  |
+| 257 | [`wp-pollock-s-conjectures`](https://lefttosolve.com/p/wp-pollock-s-conjectures) | Pollock's conjectures | unformalized | Number Theory |  |  |
+| 258 | [`wp-primes`](https://lefttosolve.com/p/wp-primes) | Primes | unformalized | Number Theory |  |  |
+| 259 | [`wp-problem-of-finding-the-ultimate-core-model-one-that-contains-all-large-cardinals`](https://lefttosolve.com/p/wp-problem-of-finding-the-ultimate-core-model-one-that-contains-all-large-cardinals) | Problem of finding the ultimate core model, one that contains all large cardinals. | unformalized | Logic & Foundations |  |  |
+| 260 | [`wp-problems-associated-to-linnik-s-theorem`](https://lefttosolve.com/p/wp-problems-associated-to-linnik-s-theorem) | Problems associated to Linnik's theorem | unformalized | Number Theory |  |  |
+| 261 | [`wp-problems-in-latin-squares-open-questions-concerning-latin-squares`](https://lefttosolve.com/p/wp-problems-in-latin-squares-open-questions-concerning-latin-squares) | Problems in Latin squares – open questions concerning Latin squares | unformalized | Combinatorics |  |  |
+| 262 | [`wp-problems-in-loop-theory-and-quasigroup-theory-consider-generalizations-of-groups`](https://lefttosolve.com/p/wp-problems-in-loop-theory-and-quasigroup-theory-consider-generalizations-of-groups) | Problems in loop theory and quasigroup theory consider generalizations of groups | unformalized | Group Theory |  |  |
+| 263 | [`wp-proof-theoretic-ordinal`](https://lefttosolve.com/p/wp-proof-theoretic-ordinal) | Proof-theoretic ordinal | unformalized | Logic & Foundations |  |  |
+| 264 | [`wp-property-b`](https://lefttosolve.com/p/wp-property-b) | Property B | unformalized | Combinatorics |  |  |
+| 265 | [`wp-quadrisecants-of-wild-knots`](https://lefttosolve.com/p/wp-quadrisecants-of-wild-knots) | Quadrisecants of wild knots | unformalized | General Topology |  |  |
+| 266 | [`wp-quantum-pcp-conjecture`](https://lefttosolve.com/p/wp-quantum-pcp-conjecture) | Quantum PCP conjecture | unformalized | Computational Complexity |  |  |
+| 267 | [`wp-quantum-unique-ergodicity-conjecture`](https://lefttosolve.com/p/wp-quantum-unique-ergodicity-conjecture) | Quantum unique ergodicity conjecture | unformalized | Dynamical Systems |  |  |
+| 268 | [`wp-rational-dense-problem`](https://lefttosolve.com/p/wp-rational-dense-problem) | Rational dense problem | unformalized | Number Theory |  |  |
+| 269 | [`wp-reduct`](https://lefttosolve.com/p/wp-reduct) | Reduct | unformalized | Logic & Foundations |  |  |
+| 270 | [`wp-regularity-of-solutions-of-euler-equations`](https://lefttosolve.com/p/wp-regularity-of-solutions-of-euler-equations) | Regularity of solutions of Euler equations | unformalized | Real Functions |  |  |
+| 271 | [`wp-regularity-of-solutions-of-vlasov-maxwell-equations`](https://lefttosolve.com/p/wp-regularity-of-solutions-of-vlasov-maxwell-equations) | Regularity of solutions of Vlasov–Maxwell equations | unformalized | Real Functions |  |  |
+| 272 | [`wp-reinhardt-cardinals`](https://lefttosolve.com/p/wp-reinhardt-cardinals) | Reinhardt cardinals | unformalized | Logic & Foundations |  |  |
+| 273 | [`wp-reinhardt-s-conjecture`](https://lefttosolve.com/p/wp-reinhardt-s-conjecture) | Reinhardt's conjecture | unformalized | Convex & Discrete Geometry |  |  |
+| 274 | [`wp-rendezvous-problem`](https://lefttosolve.com/p/wp-rendezvous-problem) | Rendezvous problem | unformalized | Game Theory & Economics |  |  |
+| 275 | [`wp-representation`](https://lefttosolve.com/p/wp-representation) | Representation | unformalized | Combinatorics |  |  |
+| 276 | [`wp-riemann-zeta-function`](https://lefttosolve.com/p/wp-riemann-zeta-function) | Riemann zeta function | unformalized | Number Theory |  |  |
+| 277 | [`wp-ringel-kotzig-conjecture`](https://lefttosolve.com/p/wp-ringel-kotzig-conjecture) | Ringel–Kotzig conjecture | unformalized | Combinatorics |  |  |
+| 278 | [`wp-rokhlin-s`](https://lefttosolve.com/p/wp-rokhlin-s) | Rokhlin's | unformalized | Dynamical Systems |  |  |
+| 279 | [`wp-ropelength-problems`](https://lefttosolve.com/p/wp-ropelength-problems) | Ropelength problems | unformalized | Geometry |  |  |
+| 280 | [`wp-rota-s-basis-conjecture`](https://lefttosolve.com/p/wp-rota-s-basis-conjecture) | Rota's basis conjecture | unformalized | General Algebra |  |  |
+| 281 | [`wp-ryser-s-conjecture`](https://lefttosolve.com/p/wp-ryser-s-conjecture) | Ryser's conjecture | unformalized | Combinatorics |  |  |
+| 282 | [`wp-ryser-s-conjecture-on-circulant-hadamard-matrices`](https://lefttosolve.com/p/wp-ryser-s-conjecture-on-circulant-hadamard-matrices) | Ryser's conjecture on circulant Hadamard matrices | unformalized | General Algebra |  |  |
+| 283 | [`wp-sarnak-conjecture`](https://lefttosolve.com/p/wp-sarnak-conjecture) | Sarnak conjecture | unformalized | Topological Entropy |  |  |
+| 284 | [`wp-second-hardy-littlewood-conjecture`](https://lefttosolve.com/p/wp-second-hardy-littlewood-conjecture) | Second Hardy–Littlewood conjecture | unformalized | Number Theory |  |  |
+| 285 | [`wp-second-neighborhood-problem`](https://lefttosolve.com/p/wp-second-neighborhood-problem) | Second neighborhood problem | unformalized | Combinatorics |  |  |
+| 286 | [`wp-section-conjecture`](https://lefttosolve.com/p/wp-section-conjecture) | Section conjecture | unformalized | Algebraic Geometry |  |  |
+| 287 | [`wp-selberg-s-1-4-conjecture`](https://lefttosolve.com/p/wp-selberg-s-1-4-conjecture) | Selberg's 1/4 conjecture | unformalized | Number Theory |  |  |
+| 288 | [`wp-selberg-s-orthogonality-conjecture`](https://lefttosolve.com/p/wp-selberg-s-orthogonality-conjecture) | Selberg's orthogonality conjecture | unformalized | Number Theory |  |  |
+| 289 | [`wp-serre-s-conjecture-ii`](https://lefttosolve.com/p/wp-serre-s-conjecture-ii) | Serre's conjecture II | unformalized | General Algebra |  |  |
+| 290 | [`wp-set`](https://lefttosolve.com/p/wp-set) | Set | unformalized | Game Theory & Economics |  |  |
+| 291 | [`wp-shephard-s-problem-a-k-a-durer-s-conjecture`](https://lefttosolve.com/p/wp-shephard-s-problem-a-k-a-durer-s-conjecture) | Shephard's problem (a.k.a. Dürer's conjecture) | unformalized | Geometry |  |  |
+| 292 | [`wp-sic-povm`](https://lefttosolve.com/p/wp-sic-povm) | SIC-POVM | unformalized | General Algebra |  |  |
+| 293 | [`wp-simple-continued-fraction`](https://lefttosolve.com/p/wp-simple-continued-fraction) | Simple continued fraction | unformalized | Number Theory |  |  |
+| 294 | [`wp-singular-cardinals-hypothesis`](https://lefttosolve.com/p/wp-singular-cardinals-hypothesis) | Singular cardinals hypothesis | unformalized | Logic & Foundations |  |  |
+| 295 | [`wp-sister-beiter-conjecture`](https://lefttosolve.com/p/wp-sister-beiter-conjecture) | Sister Beiter conjecture | unformalized | Number Theory |  |  |
+| 296 | [`wp-skolem-problem`](https://lefttosolve.com/p/wp-skolem-problem) | Skolem problem | unformalized | Number Theory |  |  |
+| 297 | [`wp-solving-the-happy-ending-problem-for-arbitrary-n`](https://lefttosolve.com/p/wp-solving-the-happy-ending-problem-for-arbitrary-n) | Solving the happy ending problem for arbitrary $n$ | unformalized | Convex & Discrete Geometry |  |  |
+| 298 | [`wp-spectral-gap-conjecture`](https://lefttosolve.com/p/wp-spectral-gap-conjecture) | Spectral gap conjecture | unformalized | Ergodic Theory |  |  |
+| 299 | [`wp-sphere-packing`](https://lefttosolve.com/p/wp-sphere-packing) | Sphere packing | unformalized | Convex & Discrete Geometry |  |  |
+| 300 | [`wp-spherical`](https://lefttosolve.com/p/wp-spherical) | Spherical | unformalized | Algebraic Geometry |  |  |
+| 301 | [`wp-spherical-bernstein-s-problem-a-generalization-of-bernstein-s-problem`](https://lefttosolve.com/p/wp-spherical-bernstein-s-problem-a-generalization-of-bernstein-s-problem) | Spherical Bernstein's problem, a generalization of Bernstein's problem | unformalized | Differential Geometry |  |  |
+| 302 | [`wp-square-packing-in-a-square`](https://lefttosolve.com/p/wp-square-packing-in-a-square) | Square packing in a square | unformalized | Convex & Discrete Geometry |  |  |
+| 303 | [`wp-stable-field-conjecture`](https://lefttosolve.com/p/wp-stable-field-conjecture) | Stable field conjecture | unformalized | Logic & Foundations |  |  |
+| 304 | [`wp-standard-conjectures-on-algebraic-cycles`](https://lefttosolve.com/p/wp-standard-conjectures-on-algebraic-cycles) | Standard conjectures on algebraic cycles | unformalized | Algebraic Geometry |  |  |
+| 305 | [`wp-stark-conjectures-including-brumer-stark-conjecture`](https://lefttosolve.com/p/wp-stark-conjectures-including-brumer-stark-conjecture) | Stark conjectures (including Brumer–Stark conjecture) | unformalized | Number Theory |  |  |
+| 306 | [`wp-strong-papadimitriou-ratajczak-conjecture`](https://lefttosolve.com/p/wp-strong-papadimitriou-ratajczak-conjecture) | Strong Papadimitriou–Ratajczak conjecture | unformalized | Combinatorics |  |  |
+| 307 | [`wp-strongly-regular`](https://lefttosolve.com/p/wp-strongly-regular) | Strongly regular | unformalized | Combinatorics |  |  |
+| 308 | [`wp-sudoku`](https://lefttosolve.com/p/wp-sudoku) | Sudoku | unformalized | Game Theory & Economics |  |  |
+| 309 | [`wp-sumner-s-conjecture`](https://lefttosolve.com/p/wp-sumner-s-conjecture) | Sumner's conjecture | unformalized | Combinatorics |  |  |
+| 310 | [`wp-sunflower-conjecture`](https://lefttosolve.com/p/wp-sunflower-conjecture) | Sunflower conjecture | unformalized | Combinatorics |  |  |
+| 311 | [`wp-superpermutation`](https://lefttosolve.com/p/wp-superpermutation) | Superpermutation | unformalized | Combinatorics |  |  |
+| 312 | [`wp-supersingular-primes`](https://lefttosolve.com/p/wp-supersingular-primes) | Supersingular primes | unformalized | Number Theory |  |  |
+| 313 | [`wp-szpiro-s-conjecture`](https://lefttosolve.com/p/wp-szpiro-s-conjecture) | Szpiro's conjecture | unformalized | Number Theory |  |  |
+| 314 | [`wp-szymanski-s-conjecture`](https://lefttosolve.com/p/wp-szymanski-s-conjecture) | Szymanski's conjecture | unformalized | Combinatorics |  |  |
+| 315 | [`wp-tammes-problem-for-numbers-of-nodes-greater-than-14-except-24`](https://lefttosolve.com/p/wp-tammes-problem-for-numbers-of-nodes-greater-than-14-except-24) | Tammes problem for numbers of nodes greater than 14 (except 24). | unformalized | Convex & Discrete Geometry |  |  |
+| 316 | [`wp-tate-conjecture`](https://lefttosolve.com/p/wp-tate-conjecture) | Tate conjecture | unformalized | Algebraic Geometry |  |  |
+| 317 | [`wp-telescope-conjecture`](https://lefttosolve.com/p/wp-telescope-conjecture) | Telescope conjecture | unformalized | General Topology |  |  |
+| 318 | [`wp-teschner-s-bondage-number-conjecture`](https://lefttosolve.com/p/wp-teschner-s-bondage-number-conjecture) | Teschner's bondage number conjecture | unformalized | Combinatorics |  |  |
+| 319 | [`wp-thomson-problem`](https://lefttosolve.com/p/wp-thomson-problem) | Thomson problem | unformalized | Geometry |  |  |
+| 320 | [`wp-tic-tac-toe-variants`](https://lefttosolve.com/p/wp-tic-tac-toe-variants) | Tic-tac-toe variants | unformalized | Game Theory & Economics |  |  |
+| 321 | [`wp-toeplitz-conjecture`](https://lefttosolve.com/p/wp-toeplitz-conjecture) | Toeplitz' conjecture | unformalized | Jordan Curves |  |  |
+| 322 | [`wp-torsion-conjecture`](https://lefttosolve.com/p/wp-torsion-conjecture) | Torsion conjecture | unformalized | Geometry |  |  |
+| 323 | [`wp-triangular-billiards-does-every-triangle-have-a-periodic-billiards-path`](https://lefttosolve.com/p/wp-triangular-billiards-does-every-triangle-have-a-periodic-billiards-path) | Triangular billiards – does every triangle have a periodic billiards path? | unformalized | Dynamical Systems |  |  |
+| 324 | [`wp-tripod-packing`](https://lefttosolve.com/p/wp-tripod-packing) | Tripod packing | unformalized | Convex & Discrete Geometry |  |  |
+| 325 | [`wp-turan-s-brick-factory-problem`](https://lefttosolve.com/p/wp-turan-s-brick-factory-problem) | Turán's brick factory problem | unformalized | Combinatorics |  |  |
+| 326 | [`wp-types`](https://lefttosolve.com/p/wp-types) | Types | unformalized | Logic & Foundations |  |  |
+| 327 | [`wp-ulam-s-packing-conjecture-about-the-identity-of-the-worst-packing-convex-solid`](https://lefttosolve.com/p/wp-ulam-s-packing-conjecture-about-the-identity-of-the-worst-packing-convex-solid) | Ulam's packing conjecture about the identity of the worst-packing convex solid | unformalized | Convex & Discrete Geometry |  |  |
+| 328 | [`wp-unfriendly-partition-conjecture`](https://lefttosolve.com/p/wp-unfriendly-partition-conjecture) | Unfriendly partition conjecture | unformalized | Combinatorics |  |  |
+| 329 | [`wp-uniform-boundedness-conjecture-for-rational-points`](https://lefttosolve.com/p/wp-uniform-boundedness-conjecture-for-rational-points) | Uniform boundedness conjecture for rational points | unformalized | General Algebra |  |  |
+| 330 | [`wp-unique-games-conjecture`](https://lefttosolve.com/p/wp-unique-games-conjecture) | Unique games conjecture | unformalized | Computational Complexity |  |  |
+| 331 | [`wp-uniqueness-conjecture-for-markov-numbers`](https://lefttosolve.com/p/wp-uniqueness-conjecture-for-markov-numbers) | Uniqueness conjecture for Markov numbers | unformalized | Number Theory |  |  |
+| 332 | [`wp-universal-point-sets-of-subquadratic-size-for-planar-graphs`](https://lefttosolve.com/p/wp-universal-point-sets-of-subquadratic-size-for-planar-graphs) | Universal point sets of subquadratic size for planar graphs | unformalized | Combinatorics |  |  |
+| 333 | [`wp-unknotting-problem`](https://lefttosolve.com/p/wp-unknotting-problem) | Unknotting problem | unformalized | General Topology |  |  |
+| 334 | [`wp-values-of-g-k-and-g-k-in-waring-s-problem`](https://lefttosolve.com/p/wp-values-of-g-k-and-g-k-in-waring-s-problem) | Values of g(k) and G(k) in Waring's problem | unformalized | Number Theory |  |  |
+| 335 | [`wp-values-of-the-hermite-constants-for-dimensions-other-than-1-8-and-24`](https://lefttosolve.com/p/wp-values-of-the-hermite-constants-for-dimensions-other-than-1-8-and-24) | Values of the Hermite constants for dimensions other than 1–8 and 24 | unformalized | Geometry |  |  |
+| 336 | [`wp-values-of-the-van-der-waerden-numbers`](https://lefttosolve.com/p/wp-values-of-the-van-der-waerden-numbers) | Values of the Van der Waerden numbers | unformalized | Combinatorics |  |  |
+| 337 | [`wp-varieties`](https://lefttosolve.com/p/wp-varieties) | Varieties | unformalized | Algebraic Geometry |  |  |
+| 338 | [`wp-vertex-coloring-game`](https://lefttosolve.com/p/wp-vertex-coloring-game) | Vertex coloring game | unformalized | Combinatorics |  |  |
+| 339 | [`wp-virasoro-conjecture`](https://lefttosolve.com/p/wp-virasoro-conjecture) | Virasoro conjecture | unformalized | Algebraic Geometry |  |  |
+| 340 | [`wp-vitushkin-s-conjecture-on-compact-subsets-of-mathbb-c-with-analytic-capacity-0`](https://lefttosolve.com/p/wp-vitushkin-s-conjecture-on-compact-subsets-of-mathbb-c-with-analytic-capacity-0) | Vitushkin's conjecture on compact subsets of $\\mathbb{C}$ with analytic capacity $0$ | unformalized | Real Functions |  |  |
+| 341 | [`wp-vizing-s-conjecture-on-the-domination-number-of-cartesian-products-of-graphs`](https://lefttosolve.com/p/wp-vizing-s-conjecture-on-the-domination-number-of-cartesian-products-of-graphs) | Vizing's conjecture on the domination number of cartesian products of graphs | unformalized | Combinatorics |  |  |
+| 342 | [`wp-vojta-s-conjecture`](https://lefttosolve.com/p/wp-vojta-s-conjecture) | Vojta's conjecture | unformalized | Number Theory |  |  |
+| 343 | [`wp-volume-conjecture`](https://lefttosolve.com/p/wp-volume-conjecture) | Volume conjecture | unformalized | General Topology |  |  |
+| 344 | [`wp-voronoi-diagram`](https://lefttosolve.com/p/wp-voronoi-diagram) | Voronoi diagram | unformalized | Geometry |  |  |
+| 345 | [`wp-walescki-s-theorem-for-hypergraphs`](https://lefttosolve.com/p/wp-walescki-s-theorem-for-hypergraphs) | Walescki's theorem for hypergraphs | unformalized | Combinatorics |  |  |
+| 346 | [`wp-weaire-phelan-structure`](https://lefttosolve.com/p/wp-weaire-phelan-structure) | Weaire–Phelan structure | unformalized | Geometry |  |  |
+| 347 | [`wp-weight-monodromy-conjecture`](https://lefttosolve.com/p/wp-weight-monodromy-conjecture) | Weight monodromy conjecture | unformalized | Algebraic Geometry |  |  |
+| 348 | [`wp-weinstein-conjecture`](https://lefttosolve.com/p/wp-weinstein-conjecture) | Weinstein conjecture | unformalized | Dynamical Systems |  |  |
+| 349 | [`wp-what-is-the-exact-value-of-landau-s-constants-including-bloch-s-constant`](https://lefttosolve.com/p/wp-what-is-the-exact-value-of-landau-s-constants-including-bloch-s-constant) | What is the exact value of Landau's constants, including Bloch's constant? | unformalized | Real Functions |  |  |
+| 350 | [`wp-what-is-the-largest-possible-pathwidth-of-an-vertex-cubic-graph`](https://lefttosolve.com/p/wp-what-is-the-largest-possible-pathwidth-of-an-vertex-cubic-graph) | What is the largest possible pathwidth of an -vertex cubic graph? | unformalized | Combinatorics |  |  |
+| 351 | [`wp-what-is-the-lowest-number-of-faces-possible-for-a-holyhedron`](https://lefttosolve.com/p/wp-what-is-the-lowest-number-of-faces-possible-for-a-holyhedron) | What is the lowest number of faces possible for a holyhedron? | unformalized | Geometry |  |  |
+| 352 | [`wp-what-is-the-maximum-number-of-givens-for-a-minimal-puzzle`](https://lefttosolve.com/p/wp-what-is-the-maximum-number-of-givens-for-a-minimal-puzzle) | What is the maximum number of givens for a minimal puzzle? | unformalized | Game Theory & Economics |  |  |
+| 353 | [`wp-what-is-the-perfect-value-of-komi`](https://lefttosolve.com/p/wp-what-is-the-perfect-value-of-komi) | What is the perfect value of Komi? | unformalized | Game Theory & Economics |  |  |
+| 354 | [`wp-what-is-the-smallest-skewes-s-number`](https://lefttosolve.com/p/wp-what-is-the-smallest-skewes-s-number) | What is the smallest Skewes's number? | unformalized | Number Theory |  |  |
+| 355 | [`wp-which-transcendental-numbers-are-exponential-periods`](https://lefttosolve.com/p/wp-which-transcendental-numbers-are-exponential-periods) | Which transcendental numbers are (exponential) periods? | unformalized | Number Theory |  |  |
+| 356 | [`wp-whitehead-conjecture`](https://lefttosolve.com/p/wp-whitehead-conjecture) | Whitehead conjecture | unformalized | General Topology |  |  |
+| 357 | [`wp-wild-problems`](https://lefttosolve.com/p/wp-wild-problems) | Wild problems | unformalized | General Algebra |  |  |
+| 358 | [`wp-williamson-conjecture`](https://lefttosolve.com/p/wp-williamson-conjecture) | Williamson conjecture | unformalized | General Algebra |  |  |
+| 359 | [`wp-woodall-s-conjecture`](https://lefttosolve.com/p/wp-woodall-s-conjecture) | Woodall's conjecture | unformalized | Combinatorics |  |  |
+| 360 | [`wp-woodin`](https://lefttosolve.com/p/wp-woodin) | Woodin | unformalized | Logic & Foundations |  |  |
+| 361 | [`wp-yau-s-conjecture-on-the-first-eigenvalue`](https://lefttosolve.com/p/wp-yau-s-conjecture-on-the-first-eigenvalue) | Yau's conjecture on the first eigenvalue | unformalized | Differential Geometry |  |  |
+| 362 | [`wp-zarankiewicz-problem`](https://lefttosolve.com/p/wp-zarankiewicz-problem) | Zarankiewicz problem | unformalized | Combinatorics |  |  |
+| 363 | [`wp-zariski-lipman-conjecture`](https://lefttosolve.com/p/wp-zariski-lipman-conjecture) | Zariski–Lipman conjecture | unformalized | General Algebra |  |  |
+| 364 | [`wp-zauner-s-conjecture`](https://lefttosolve.com/p/wp-zauner-s-conjecture) | Zauner's conjecture | unformalized | Operator Theory |  |  |
+| 365 | [`wp-zeeman-conjecture`](https://lefttosolve.com/p/wp-zeeman-conjecture) | Zeeman conjecture | unformalized | General Topology |  |  |
+| 366 | [`wp-zilber-pink-conjecture`](https://lefttosolve.com/p/wp-zilber-pink-conjecture) | Zilber–Pink conjecture | unformalized | Number Theory |  |  |

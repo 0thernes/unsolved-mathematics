@@ -1,0 +1,30 @@
+{
+  "slug": "cerny-conjecture",
+  "title": "The Černý Conjecture",
+  "field": "Combinatorics",
+  "subfields": [
+    "Automata Theory",
+    "Theoretical Computer Science",
+    "Transformation Semigroups"
+  ],
+  "year_posed": 1964,
+  "originators": [
+    "Ján Černý"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "If a deterministic finite automaton with n states admits a synchronizing (reset) word — an input string that maps every state to the same single state — then it admits a synchronizing word of length at most (n - 1)^2.\n",
+  "difficulty": 82,
+  "centrality": 60,
+  "tractability": 30,
+  "status": "active-progress",
+  "tags": [
+    "automata-theory",
+    "synchronizing-words",
+    "semigroups",
+    "combinatorics",
+    "Cerny"
+  ],
+  "rank": 59,
+  "css": 61.933,
+  "folder": "cerny-conjecture"
+}

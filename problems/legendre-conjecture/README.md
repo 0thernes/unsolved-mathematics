@@ -1,6 +1,6 @@
 # Legendre's Conjecture
 
-> **Atlas Rank #16** · CSS **71.333** · Field: *Number Theory* · Posed: **1808** · Status: `open`
+> **Atlas Rank #21** · CSS **71.333** · Field: *Number Theory* · Posed: **1808** · Status: `open`
 
 ## Plain statement
 

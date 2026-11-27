@@ -1,0 +1,10 @@
+# Approaches — Gauss's Class Number Problem for Real Quadratic Fields
+
+_Major strategies, partial results, and barriers._
+
+1. **Dirichlet Class Number Formula & Regulator Separation.** Since $h(D) \log \varepsilon_D = \sqrt{D} L(1, \chi_D) \asymp D^{1/2 + o(1)}$, proving $h(D) = 1$ infinitely often is equivalent to finding infinitely many fundamental discriminants $D > 0$ whose fundamental unit $\varepsilon_D$ is maximally large ($\log \varepsilon_D \approx \sqrt{D} L(1, \chi_D)$). By contrast, special parametric families (Richaud–Degert types like $d = n^2 + 1$) have *tiny* regulators $\log \varepsilon_D \asymp \log D$, which forces $h(D) \to \infty$!
+2. **Continued Fractions of $\sqrt{D}$.** The size of $\log \varepsilon_D$ is governed by the period length of the continued fraction of $\sqrt{D}$. Proving $h(D) = 1$ requires infinitely many $D$ whose continued fraction has period length $\approx D^{1/2}$ AND whose reduced quadratic forms all lie in the single principal cycle — a notoriously wild dynamical/arithmetic property.
+3. **Cohen–Lenstra Heuristics & Moments of Class Groups.** Understanding the odd part of $\mathrm{Cl}(\mathbb{Q}(\sqrt{D}))$ via higher moments (Davenport–Heilbronn 1971 gives the average of $|\mathrm{Cl}[3]| = 4/3$ for real quadratic fields!) proves positive proportions of real quadratic fields have class number *not divisible by 3* (and $2$-part is controlled by genus theory, so prime $p \equiv 1 \pmod 4$ automatically has odd $h(p)$). Yet ruling out divisibility by *all* odd primes simultaneously remains utterly out of reach.
+
+## Core Barrier
+In imaginary quadratic fields, the unit group is finite, so $h(D) \asymp \sqrt{|D|} L(1, \chi_D)$ directly forces $h(D)$ to grow. In real quadratic fields, the product $h(D) \log \varepsilon_D$ is smooth and predictable, while its factorization into the discrete class number $h(D)$ and the chaotic regulator $\log \varepsilon_D$ lacks any known analytic handle capable of forcing $h(D) = 1$ infinitely often.

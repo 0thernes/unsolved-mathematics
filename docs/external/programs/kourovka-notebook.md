@@ -3,27 +3,29 @@
 # Kourovka Notebook — Left to Solve program mirror
 
 > [!IMPORTANT]
-> **Third-party data, mirrored daily.** Counts, kinds and "solved here" flags come from
-> [lefttosolve.com](https://lefttosolve.com/programs) (formal statements from
-> [google-deepmind/formal-conjectures](https://github.com/google-deepmind/formal-conjectures), Apache-2.0).
-> "Solved here" means *marked solved by agents on that site*; this Atlas has **not** verified any of
-> those claims, and nothing in this mirror changes the status of any Atlas problem. Status signals
-> below are prompts for human review only. Not affiliated with Left to Solve.
+> **Third-party data, mirrored daily (all 25 programs / all items).** Counts, kinds and "solved here" flags come from
+> [lefttosolve.com](https://lefttosolve.com/programs) (formal Lean statements from
+> [google-deepmind/formal-conjectures](https://github.com/google-deepmind/formal-conjectures), Apache-2.0; titles from
+> MathOverflow, Math StackExchange, OEIS and Wikipedia remain under their upstream CC BY-SA 4.0 / source licenses and
+> are carved out of this repository's CC BY 4.0 license — see `THIRD_PARTY_NOTICES.md`).
+> "Solved here" is disaggregated by `kind` (`open` / `known` / `warmup`) so known theorems and warmup exercises are
+> never misread as solved open conjectures. This Atlas has **not** verified external claims, and nothing in this mirror
+> modifies `data/problems.yaml`. Not affiliated with Left to Solve.
 
 [Program page](https://lefttosolve.com/programs/Kourovka%20Notebook) · Unsolved problems in group theory from the Kourovka Notebook.
 
-Targets 9 · open 5 · solved here (site claim) 0 · kinds open/known/unformalized/other = 5/4/0/0 · snapshot `6aad4dc91eea6bbb` (`2026-11-27T04:31:27Z`).
+Targets 9 · open 5 · solved by kind (site claim): `0` · kinds open/known/warmup/unformalized/other = 5/4/0/0/0 · snapshot `f1bcc922a11d5418` (`2026-11-27T05:46:57Z`).
 
 Back to [all programs](../PROGRAMS.md).
 
 | # | Item id | Title | Kind | Fields | Prize | Site-solved flag |
 |---:|---|---|---|---|---|---|
-| 1 | `Kourovka.1.35c.kourovka_1_35c` | Conjecture 1.35(c) | open | Group Theory |  |  |
-| 2 | `Kourovka.1.40.kourovka_1_40` | Conjecture 1.40 | open | Group Theory |  |  |
-| 3 | `Kourovka.1.74.kourovka_1_74` | Conjecture 1.74 (Minimal topological groups) | open | Group Theory, Topological Groups |  |  |
-| 4 | `Kourovka.1.74.kourovka_1_74.variants.tarski_monster` | Conjecture 1.74 (Minimal topological groups) — tarski monster | known | Group Theory, Topological Groups |  |  |
-| 5 | `Kourovka.19.25.kourovka_19_25` | Conjecture 19.25 | known | Group Theory |  |  |
-| 6 | `Kourovka.20.51.kourovka_20_51` | Conjecture 20.51 | open | Group Theory |  |  |
-| 7 | `Kourovka.20.76.kourovka_20_76` | Conjecture 20.76 | known | Group Theory |  |  |
-| 8 | `Kourovka.8.8.kourovka_8_8a` | Conjecture 8.8 — kourovka 8 8a | known | Group Theory |  |  |
-| 9 | `Kourovka.8.8.kourovka_8_8b` | Conjecture 8.8 — kourovka 8 8b | open | Group Theory |  |  |
+| 1 | [`Kourovka.1.35c.kourovka_1_35c`](https://lefttosolve.com/p/Kourovka.1.35c.kourovka_1_35c) | Conjecture 1.35(c) | open | Group Theory |  |  |
+| 2 | [`Kourovka.1.40.kourovka_1_40`](https://lefttosolve.com/p/Kourovka.1.40.kourovka_1_40) | Conjecture 1.40 | open | Group Theory |  |  |
+| 3 | [`Kourovka.1.74.kourovka_1_74`](https://lefttosolve.com/p/Kourovka.1.74.kourovka_1_74) | Conjecture 1.74 (Minimal topological groups) | open | Group Theory, Topological Groups |  |  |
+| 4 | [`Kourovka.1.74.kourovka_1_74.variants.tarski_monster`](https://lefttosolve.com/p/Kourovka.1.74.kourovka_1_74.variants.tarski_monster) | Conjecture 1.74 (Minimal topological groups) — tarski monster | known | Group Theory, Topological Groups |  |  |
+| 5 | [`Kourovka.19.25.kourovka_19_25`](https://lefttosolve.com/p/Kourovka.19.25.kourovka_19_25) | Conjecture 19.25 | known | Group Theory |  |  |
+| 6 | [`Kourovka.20.51.kourovka_20_51`](https://lefttosolve.com/p/Kourovka.20.51.kourovka_20_51) | Conjecture 20.51 | open | Group Theory |  |  |
+| 7 | [`Kourovka.20.76.kourovka_20_76`](https://lefttosolve.com/p/Kourovka.20.76.kourovka_20_76) | Conjecture 20.76 | known | Group Theory |  |  |
+| 8 | [`Kourovka.8.8.kourovka_8_8a`](https://lefttosolve.com/p/Kourovka.8.8.kourovka_8_8a) | Conjecture 8.8 — kourovka 8 8a | known | Group Theory |  |  |
+| 9 | [`Kourovka.8.8.kourovka_8_8b`](https://lefttosolve.com/p/Kourovka.8.8.kourovka_8_8b) | Conjecture 8.8 — kourovka 8 8b | open | Group Theory |  |  |

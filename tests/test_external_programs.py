@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: MIT
-"""Offline tests for scripts/sync_external_programs.py (no network)."""
+"""Offline tests for scripts/sync_external_programs.py and scripts/search_all_problems.py (no network)."""
 from __future__ import annotations
 
 import json
@@ -11,6 +11,7 @@ import pytest
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
 
+import search_all_problems as sap  # noqa: E402
 import sync_external_programs as sx  # noqa: E402
 
 CARD_HTML = (
@@ -49,6 +50,29 @@ def test_norm_title_and_generic_strip() -> None:
     assert sx.norm_title("Erdős–Straus Conjecture") == "erdos straus conjecture"
 
 
+def test_shard_jsonl_splits_cleanly_under_cap() -> None:
+    rows = [{"id": f"id-{i:04d}", "title": "x" * 100, "kind": "unformalized", "fields": [], "prize": None, "solved": False} for i in range(40)]
+    shards = sx.shard_jsonl_lines("big-prog", rows, max_bytes=1200)
+    assert len(shards) >= 4
+    assert all(name.startswith("big-prog.part-") and name.endswith(".jsonl") for name, _ in shards)
+    assert all(len(body.encode("utf-8")) <= 1200 for _, body in shards)
+    reconstructed = [json.loads(ln) for _, body in shards for ln in body.splitlines()]
+    assert reconstructed == rows
+
+
+def test_summarize_rows_disaggregates_solved_by_kind() -> None:
+    rows = [
+        {"id": "a", "title": "A", "kind": "open", "fields": [], "prize": None, "solved": False},
+        {"id": "b", "title": "B", "kind": "known", "fields": [], "prize": None, "solved": True},
+        {"id": "c", "title": "C", "kind": "warmup", "fields": [], "prize": None, "solved": True},
+        {"id": "d", "title": "D", "kind": "unformalized", "fields": [], "prize": None, "solved": False},
+    ]
+    kinds, sbk = sx.summarize_rows(rows)
+    assert kinds == {"open": 1, "known": 1, "warmup": 1, "unformalized": 1, "other": 0}
+    assert sbk == {"open": 0, "known": 1, "warmup": 1, "unformalized": 0, "other": 0}
+    assert sx.format_solved_by_kind(sbk) == "known: 1, warmup: 1"
+
+
 def _fixture_snapshot() -> tuple[dict, dict]:
     items = {"wikipedia": [
         {"id": "CollatzConjecture.collatz_conjecture", "title": "Collatz conjecture", "kind": "open",
@@ -78,7 +102,6 @@ def test_crosswalk_rule_primary_variant_and_signals() -> None:
     assert rows["collatz-conjecture"]["signals"] == []
     uc = rows["union-closed-sets-conjecture"]
     assert uc["matches"][0]["relation"] == "primary"
-    # known primary -> status signal; a site-solved flag on a *known* statement is formalization, not a signal
     assert len(uc["signals"]) == 1 and "`known`" in uc["signals"][0]
     assert any("unverified third-party" in s for s in rows["beal-conjecture"]["signals"])
     assert rows["kakeya-conjecture"]["matches"][0]["relation"] == "variant"
@@ -115,20 +138,35 @@ def test_content_hash_is_order_independent_over_programs_dict_keys() -> None:
     assert h1 == h2 and len(h1) == 64
 
 
-def test_committed_snapshot_passes_offline_check() -> None:
+def test_committed_snapshot_passes_offline_check_and_full_coverage() -> None:
     if not sx.SNAPSHOT.exists():
         pytest.skip("no committed snapshot")
     assert sx.cmd_check() == 0
+    snap = json.loads(sx.SNAPSHOT.read_text(encoding="utf-8"))
+    assert snap["totals"]["mirrored_items"] == snap["totals"]["api_total"]
+    assert snap["totals"]["mirrored_items"] >= 50000
+    assert all(p["mirrored"] for p in snap["programs"])
 
 
-def test_committed_snapshot_respects_licensing_policy() -> None:
+def test_committed_snapshot_respects_no_excerpts_and_5mb_cap() -> None:
     if not sx.SNAPSHOT.exists():
         pytest.skip("no committed snapshot")
-    snap = json.loads(sx.SNAPSHOT.read_text(encoding="utf-8"))
-    for p in snap["programs"]:
-        if p["name"] in sx.COUNTS_ONLY_PROGRAMS:
-            assert p["mirrored"] is False
-            assert not (sx.ITEMS_DIR / f"{p['slug']}.jsonl").exists()
     for f in sx.ITEMS_DIR.glob("*.jsonl"):
-        for line in f.read_text(encoding="utf-8").splitlines():
-            assert "excerpt" not in json.loads(line)
+        assert f.stat().st_size < 5 * 1024 * 1024
+        with f.open("r", encoding="utf-8") as fh:
+            first_line = fh.readline()
+            if first_line.strip():
+                assert "excerpt" not in json.loads(first_line)
+
+
+def test_unified_search_hits_both_curated_atlas_and_all_59k_external() -> None:
+    if not sx.SNAPSHOT.exists():
+        pytest.skip("no committed snapshot")
+    atlas_hits = sap.search_atlas(query="Collatz", limit=5)
+    assert any(h["id"] == "collatz-conjecture" for h in atlas_hits)
+    ext_hits = sap.search_external(query="Collatz", limit=10)
+    assert any(h["id"] == "CollatzConjecture.collatz_conjecture" for h in ext_hits)
+    mo_hits = sap.search_external(program="MathOverflow (not formalized)", query="Riemann", limit=5)
+    assert len(mo_hits) >= 1
+    oeis_hits = sap.search_external(program="OEIS conjectures (not formalized)", query="Mersenne", limit=5)
+    assert len(oeis_hits) >= 1

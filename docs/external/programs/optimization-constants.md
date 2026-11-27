@@ -3,49 +3,51 @@
 # Optimization Constants — Left to Solve program mirror
 
 > [!IMPORTANT]
-> **Third-party data, mirrored daily.** Counts, kinds and "solved here" flags come from
-> [lefttosolve.com](https://lefttosolve.com/programs) (formal statements from
-> [google-deepmind/formal-conjectures](https://github.com/google-deepmind/formal-conjectures), Apache-2.0).
-> "Solved here" means *marked solved by agents on that site*; this Atlas has **not** verified any of
-> those claims, and nothing in this mirror changes the status of any Atlas problem. Status signals
-> below are prompts for human review only. Not affiliated with Left to Solve.
+> **Third-party data, mirrored daily (all 25 programs / all items).** Counts, kinds and "solved here" flags come from
+> [lefttosolve.com](https://lefttosolve.com/programs) (formal Lean statements from
+> [google-deepmind/formal-conjectures](https://github.com/google-deepmind/formal-conjectures), Apache-2.0; titles from
+> MathOverflow, Math StackExchange, OEIS and Wikipedia remain under their upstream CC BY-SA 4.0 / source licenses and
+> are carved out of this repository's CC BY 4.0 license — see `THIRD_PARTY_NOTICES.md`).
+> "Solved here" is disaggregated by `kind` (`open` / `known` / `warmup`) so known theorems and warmup exercises are
+> never misread as solved open conjectures. This Atlas has **not** verified external claims, and nothing in this mirror
+> modifies `data/problems.yaml`. Not affiliated with Left to Solve.
 
 [Program page](https://lefttosolve.com/programs/Optimization%20Constants) · Open problems stated in research papers and books.
 
-Targets 31 · open 11 · solved here (site claim) 4 · kinds open/known/unformalized/other = 11/19/0/1 · snapshot `6aad4dc91eea6bbb` (`2026-11-27T04:31:27Z`).
+Targets 31 · open 11 · solved by kind (site claim): `known: 6, warmup: 1` · kinds open/known/warmup/unformalized/other = 11/19/1/0/0 · snapshot `f1bcc922a11d5418` (`2026-11-27T05:46:57Z`).
 
 Back to [all programs](../PROGRAMS.md).
 
 | # | Item id | Title | Kind | Fields | Prize | Site-solved flag |
 |---:|---|---|---|---|---|---|
-| 1 | `Constant14.c14_ge_4` | Tao's Optimization Constant 14 / Smallest $n$ for which the value of $BB(n)$ is undecidable — c14 ge 4 | known | Computer Science, Logic & Foundations |  |  |
-| 2 | `Constant14.c14_ge_5` | Tao's Optimization Constant 14 / Smallest $n$ for which the value of $BB(n)$ is undecidable — c14 ge 5 | known | Computer Science, Logic & Foundations |  |  |
-| 3 | `Constant14.c14_le_20` | Tao's Optimization Constant 14 / Smallest $n$ for which the value of $BB(n)$ is undecidable — c14 le 20 | open | Computer Science, Logic & Foundations |  |  |
-| 4 | `Constant14.c14_le_432` | Tao's Optimization Constant 14 / Smallest $n$ for which the value of $BB(n)$ is undecidable — c14 le 432 | known | Computer Science, Logic & Foundations |  |  |
-| 5 | `Constant14.c14_le_748` | Tao's Optimization Constant 14 / Smallest $n$ for which the value of $BB(n)$ is undecidable — c14 le 748 | known | Computer Science, Logic & Foundations |  |  |
-| 6 | `Constant14.c14_le_7910` | Tao's Optimization Constant 14 / Smallest $n$ for which the value of $BB(n)$ is undecidable — c14 le 7910 | known | Computer Science, Logic & Foundations |  |  |
-| 7 | `Constant14.c14_lower_bound` | Tao's Optimization Constant 14 / Smallest $n$ for which the value of $BB(n)$ is undecidable — c14 lower bound | known | Computer Science, Logic & Foundations |  |  |
-| 8 | `Constant14.c14_lower_bound_improved` | Tao's Optimization Constant 14 / Smallest $n$ for which the value of $BB(n)$ is undecidable — c14 lower bound improved | open | Computer Science, Logic & Foundations |  |  |
-| 9 | `Constant14.c14_upper_bound` | Tao's Optimization Constant 14 / Smallest $n$ for which the value of $BB(n)$ is undecidable — c14 upper bound | known | Computer Science, Logic & Foundations |  |  |
-| 10 | `Constant14.c14_upper_bound_improved` | Tao's Optimization Constant 14 / Smallest $n$ for which the value of $BB(n)$ is undecidable — c14 upper bound improved | open | Computer Science, Logic & Foundations |  |  |
-| 11 | `Constant1a.c1a_eq` | Tao's Optimization constant 1a / An autocorrelation constant related to Sidon sets — c1a eq | open | Combinatorics, Number Theory, Real Functions |  |  |
-| 12 | `Constant1a.c1a_lower_bound` | Tao's Optimization constant 1a / An autocorrelation constant related to Sidon sets — c1a lower bound | known | Combinatorics, Number Theory, Real Functions |  |  |
-| 13 | `Constant1a.c1a_upper_bound` | Tao's Optimization constant 1a / An autocorrelation constant related to Sidon sets — c1a upper bound | known | Combinatorics, Number Theory, Real Functions |  | yes |
-| 14 | `Constant1a.mem_Ico_c1a` | Tao's Optimization constant 1a / An autocorrelation constant related to Sidon sets — mem Ico c1a | open | Combinatorics, Number Theory, Real Functions |  |  |
-| 15 | `Constant1a.mem_Ioc_c1a` | Tao's Optimization constant 1a / An autocorrelation constant related to Sidon sets — mem Ioc c1a | open | Combinatorics, Number Theory, Real Functions |  |  |
-| 16 | `Constant6a.c6a_eq_half` | Tao's Optimization Constant 6a / The Union-Closed Sets Conjecture — c6a eq half | open | Combinatorics |  |  |
-| 17 | `Constant6a.c6a_lower_bound` | Tao's Optimization Constant 6a / The Union-Closed Sets Conjecture — c6a lower bound | known | Combinatorics |  |  |
-| 18 | `Constant6a.c6a_lower_bound_first` | Tao's Optimization Constant 6a / The Union-Closed Sets Conjecture — c6a lower bound first | known | Combinatorics |  |  |
-| 19 | `Constant6a.c6a_lower_bound_improved` | Tao's Optimization Constant 6a / The Union-Closed Sets Conjecture — c6a lower bound improved | open | Combinatorics |  |  |
-| 20 | `Constant6a.c6a_lower_bound_intermediate` | Tao's Optimization Constant 6a / The Union-Closed Sets Conjecture — c6a lower bound intermediate | known | Combinatorics |  |  |
-| 21 | `Constant6a.c6a_upper_bound` | Tao's Optimization Constant 6a / The Union-Closed Sets Conjecture — c6a upper bound | known | Combinatorics |  | yes |
-| 22 | `Constant6a.c6a_upper_bound_improved` | Tao's Optimization Constant 6a / The Union-Closed Sets Conjecture — c6a upper bound improved | open | Combinatorics |  |  |
-| 23 | `Constant7a.c7a_le_42` | Tao's Optimization Constant 7a / The Irrationality Measure of $\\pi$ — c7a le 42 | known | Number Theory |  |  |
-| 24 | `Constant7a.c7a_lt_14_797075` | Tao's Optimization Constant 7a / The Irrationality Measure of $\\pi$ — c7a lt 14 797075 | known | Number Theory |  |  |
-| 25 | `Constant7a.c7a_upper_bound` | Tao's Optimization Constant 7a / The Irrationality Measure of $\\pi$ — c7a upper bound | known | Number Theory |  |  |
-| 26 | `Constant7a.irrationalityExponent_of_algebraic` | Tao's Optimization Constant 7a / The Irrationality Measure of $\\pi$ — irrationalityExponent of algebraic | known | Number Theory |  | yes |
-| 27 | `Constant7a.two_le_irrationalityExponent` | Tao's Optimization Constant 7a / The Irrationality Measure of $\\pi$ — two le irrationalityExponent | warmup | Number Theory |  | yes |
-| 28 | `Constant7b.c7b_lower_bound_improved` | Tao's Optimization Constant 7b / The Irrationality Measure of $\\Gamma(1/4)$ — c7b lower bound improved | open | Number Theory, Special Functions |  |  |
-| 29 | `Constant7b.c7b_upper_bound` | Tao's Optimization Constant 7b / The Irrationality Measure of $\\Gamma(1/4)$ — c7b upper bound | known | Number Theory, Special Functions |  |  |
-| 30 | `Constant7b.c7b_upper_bound_improved` | Tao's Optimization Constant 7b / The Irrationality Measure of $\\Gamma(1/4)$ — c7b upper bound improved | open | Number Theory, Special Functions |  |  |
-| 31 | `Constant7b.irrational_gamma_one_div_four` | Tao's Optimization Constant 7b / The Irrationality Measure of $\\Gamma(1/4)$ — irrational gamma one div four | known | Number Theory, Special Functions |  |  |
+| 1 | [`Constant14.c14_ge_4`](https://lefttosolve.com/p/Constant14.c14_ge_4) | Tao's Optimization Constant 14 / Smallest $n$ for which the value of $BB(n)$ is undecidable — c14 ge 4 | known | Computer Science, Logic & Foundations |  |  |
+| 2 | [`Constant14.c14_ge_5`](https://lefttosolve.com/p/Constant14.c14_ge_5) | Tao's Optimization Constant 14 / Smallest $n$ for which the value of $BB(n)$ is undecidable — c14 ge 5 | known | Computer Science, Logic & Foundations |  |  |
+| 3 | [`Constant14.c14_le_20`](https://lefttosolve.com/p/Constant14.c14_le_20) | Tao's Optimization Constant 14 / Smallest $n$ for which the value of $BB(n)$ is undecidable — c14 le 20 | open | Computer Science, Logic & Foundations |  |  |
+| 4 | [`Constant14.c14_le_432`](https://lefttosolve.com/p/Constant14.c14_le_432) | Tao's Optimization Constant 14 / Smallest $n$ for which the value of $BB(n)$ is undecidable — c14 le 432 | known | Computer Science, Logic & Foundations |  |  |
+| 5 | [`Constant14.c14_le_748`](https://lefttosolve.com/p/Constant14.c14_le_748) | Tao's Optimization Constant 14 / Smallest $n$ for which the value of $BB(n)$ is undecidable — c14 le 748 | known | Computer Science, Logic & Foundations |  |  |
+| 6 | [`Constant14.c14_le_7910`](https://lefttosolve.com/p/Constant14.c14_le_7910) | Tao's Optimization Constant 14 / Smallest $n$ for which the value of $BB(n)$ is undecidable — c14 le 7910 | known | Computer Science, Logic & Foundations |  |  |
+| 7 | [`Constant14.c14_lower_bound`](https://lefttosolve.com/p/Constant14.c14_lower_bound) | Tao's Optimization Constant 14 / Smallest $n$ for which the value of $BB(n)$ is undecidable — c14 lower bound | known | Computer Science, Logic & Foundations |  |  |
+| 8 | [`Constant14.c14_lower_bound_improved`](https://lefttosolve.com/p/Constant14.c14_lower_bound_improved) | Tao's Optimization Constant 14 / Smallest $n$ for which the value of $BB(n)$ is undecidable — c14 lower bound improved | open | Computer Science, Logic & Foundations |  |  |
+| 9 | [`Constant14.c14_upper_bound`](https://lefttosolve.com/p/Constant14.c14_upper_bound) | Tao's Optimization Constant 14 / Smallest $n$ for which the value of $BB(n)$ is undecidable — c14 upper bound | known | Computer Science, Logic & Foundations |  |  |
+| 10 | [`Constant14.c14_upper_bound_improved`](https://lefttosolve.com/p/Constant14.c14_upper_bound_improved) | Tao's Optimization Constant 14 / Smallest $n$ for which the value of $BB(n)$ is undecidable — c14 upper bound improved | open | Computer Science, Logic & Foundations |  |  |
+| 11 | [`Constant1a.c1a_eq`](https://lefttosolve.com/p/Constant1a.c1a_eq) | Tao's Optimization constant 1a / An autocorrelation constant related to Sidon sets — c1a eq | open | Combinatorics, Number Theory, Real Functions |  |  |
+| 12 | [`Constant1a.c1a_lower_bound`](https://lefttosolve.com/p/Constant1a.c1a_lower_bound) | Tao's Optimization constant 1a / An autocorrelation constant related to Sidon sets — c1a lower bound | known | Combinatorics, Number Theory, Real Functions |  |  |
+| 13 | [`Constant1a.c1a_upper_bound`](https://lefttosolve.com/p/Constant1a.c1a_upper_bound) | Tao's Optimization constant 1a / An autocorrelation constant related to Sidon sets — c1a upper bound | known | Combinatorics, Number Theory, Real Functions |  | yes |
+| 14 | [`Constant1a.mem_Ico_c1a`](https://lefttosolve.com/p/Constant1a.mem_Ico_c1a) | Tao's Optimization constant 1a / An autocorrelation constant related to Sidon sets — mem Ico c1a | open | Combinatorics, Number Theory, Real Functions |  |  |
+| 15 | [`Constant1a.mem_Ioc_c1a`](https://lefttosolve.com/p/Constant1a.mem_Ioc_c1a) | Tao's Optimization constant 1a / An autocorrelation constant related to Sidon sets — mem Ioc c1a | open | Combinatorics, Number Theory, Real Functions |  |  |
+| 16 | [`Constant6a.c6a_eq_half`](https://lefttosolve.com/p/Constant6a.c6a_eq_half) | Tao's Optimization Constant 6a / The Union-Closed Sets Conjecture — c6a eq half | open | Combinatorics |  |  |
+| 17 | [`Constant6a.c6a_lower_bound`](https://lefttosolve.com/p/Constant6a.c6a_lower_bound) | Tao's Optimization Constant 6a / The Union-Closed Sets Conjecture — c6a lower bound | known | Combinatorics |  | yes |
+| 18 | [`Constant6a.c6a_lower_bound_first`](https://lefttosolve.com/p/Constant6a.c6a_lower_bound_first) | Tao's Optimization Constant 6a / The Union-Closed Sets Conjecture — c6a lower bound first | known | Combinatorics |  | yes |
+| 19 | [`Constant6a.c6a_lower_bound_improved`](https://lefttosolve.com/p/Constant6a.c6a_lower_bound_improved) | Tao's Optimization Constant 6a / The Union-Closed Sets Conjecture — c6a lower bound improved | open | Combinatorics |  |  |
+| 20 | [`Constant6a.c6a_lower_bound_intermediate`](https://lefttosolve.com/p/Constant6a.c6a_lower_bound_intermediate) | Tao's Optimization Constant 6a / The Union-Closed Sets Conjecture — c6a lower bound intermediate | known | Combinatorics |  | yes |
+| 21 | [`Constant6a.c6a_upper_bound`](https://lefttosolve.com/p/Constant6a.c6a_upper_bound) | Tao's Optimization Constant 6a / The Union-Closed Sets Conjecture — c6a upper bound | known | Combinatorics |  | yes |
+| 22 | [`Constant6a.c6a_upper_bound_improved`](https://lefttosolve.com/p/Constant6a.c6a_upper_bound_improved) | Tao's Optimization Constant 6a / The Union-Closed Sets Conjecture — c6a upper bound improved | open | Combinatorics |  |  |
+| 23 | [`Constant7a.c7a_le_42`](https://lefttosolve.com/p/Constant7a.c7a_le_42) | Tao's Optimization Constant 7a / The Irrationality Measure of $\\pi$ — c7a le 42 | known | Number Theory |  |  |
+| 24 | [`Constant7a.c7a_lt_14_797075`](https://lefttosolve.com/p/Constant7a.c7a_lt_14_797075) | Tao's Optimization Constant 7a / The Irrationality Measure of $\\pi$ — c7a lt 14 797075 | known | Number Theory |  |  |
+| 25 | [`Constant7a.c7a_upper_bound`](https://lefttosolve.com/p/Constant7a.c7a_upper_bound) | Tao's Optimization Constant 7a / The Irrationality Measure of $\\pi$ — c7a upper bound | known | Number Theory |  |  |
+| 26 | [`Constant7a.irrationalityExponent_of_algebraic`](https://lefttosolve.com/p/Constant7a.irrationalityExponent_of_algebraic) | Tao's Optimization Constant 7a / The Irrationality Measure of $\\pi$ — irrationalityExponent of algebraic | known | Number Theory |  | yes |
+| 27 | [`Constant7a.two_le_irrationalityExponent`](https://lefttosolve.com/p/Constant7a.two_le_irrationalityExponent) | Tao's Optimization Constant 7a / The Irrationality Measure of $\\pi$ — two le irrationalityExponent | warmup | Number Theory |  | yes |
+| 28 | [`Constant7b.c7b_lower_bound_improved`](https://lefttosolve.com/p/Constant7b.c7b_lower_bound_improved) | Tao's Optimization Constant 7b / The Irrationality Measure of $\\Gamma(1/4)$ — c7b lower bound improved | open | Number Theory, Special Functions |  |  |
+| 29 | [`Constant7b.c7b_upper_bound`](https://lefttosolve.com/p/Constant7b.c7b_upper_bound) | Tao's Optimization Constant 7b / The Irrationality Measure of $\\Gamma(1/4)$ — c7b upper bound | known | Number Theory, Special Functions |  |  |
+| 30 | [`Constant7b.c7b_upper_bound_improved`](https://lefttosolve.com/p/Constant7b.c7b_upper_bound_improved) | Tao's Optimization Constant 7b / The Irrationality Measure of $\\Gamma(1/4)$ — c7b upper bound improved | open | Number Theory, Special Functions |  |  |
+| 31 | [`Constant7b.irrational_gamma_one_div_four`](https://lefttosolve.com/p/Constant7b.irrational_gamma_one_div_four) | Tao's Optimization Constant 7b / The Irrationality Measure of $\\Gamma(1/4)$ — irrational gamma one div four | known | Number Theory, Special Functions |  |  |

@@ -98,8 +98,8 @@
 {"fields": ["Combinatorics", "Number Theory"], "id": "Green25.green_25", "kind": "open", "prize": null, "solved": false, "title": "Green's Open Problem 25"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Green25.green_25.lower", "kind": "open", "prize": null, "solved": false, "title": "Green's Open Problem 25 — lower"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Green25.green_25.upper", "kind": "open", "prize": null, "solved": false, "title": "Green's Open Problem 25 — upper"}
-{"fields": ["Combinatorics", "Number Theory"], "id": "Green25.green_25.variants.lower_ess89", "kind": "known", "prize": null, "solved": false, "title": "Green's Open Problem 25 — lower ess89"}
-{"fields": ["Combinatorics", "Number Theory"], "id": "Green25.green_25.variants.upper_ess89", "kind": "known", "prize": null, "solved": false, "title": "Green's Open Problem 25 — upper ess89"}
+{"fields": ["Combinatorics", "Number Theory"], "id": "Green25.green_25.variants.lower_ess89", "kind": "known", "prize": null, "solved": true, "title": "Green's Open Problem 25 — lower ess89"}
+{"fields": ["Combinatorics", "Number Theory"], "id": "Green25.green_25.variants.upper_ess89", "kind": "known", "prize": null, "solved": true, "title": "Green's Open Problem 25 — upper ess89"}
 {"fields": ["Combinatorics", "Linear Algebra", "Number Theory"], "id": "Green26.green_26", "kind": "known", "prize": null, "solved": false, "title": "Green's Open Problem 26 — green 26"}
 {"fields": ["Combinatorics", "Linear Algebra", "Number Theory"], "id": "Green26.green_26.variants.alm91", "kind": "known", "prize": null, "solved": true, "title": "Green's Open Problem 26 — alm91"}
 {"fields": ["Combinatorics", "Linear Algebra", "Number Theory"], "id": "Green26.green_26.variants.open", "kind": "open", "prize": null, "solved": false, "title": "Green's Open Problem 26"}
@@ -107,8 +107,8 @@
 {"fields": ["Combinatorics", "Number Theory"], "id": "Green27.green_27.equivalent", "kind": "open", "prize": null, "solved": false, "title": "Green's Open Problem 27 — equivalent"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Green27.green_27.lower", "kind": "known", "prize": null, "solved": false, "title": "Green's Open Problem 27 — lower"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Green27.green_27.upper", "kind": "open", "prize": null, "solved": false, "title": "Green's Open Problem 27 — upper"}
-{"fields": ["Combinatorics", "Number Theory"], "id": "Green27.green_27.variants.lower_be23", "kind": "known", "prize": null, "solved": false, "title": "Green's Open Problem 27 — lower be23"}
-{"fields": ["Combinatorics", "Number Theory"], "id": "Green27.green_27.variants.lower_cy26", "kind": "known", "prize": null, "solved": false, "title": "Green's Open Problem 27 — lower cy26"}
+{"fields": ["Combinatorics", "Number Theory"], "id": "Green27.green_27.variants.lower_be23", "kind": "known", "prize": null, "solved": true, "title": "Green's Open Problem 27 — lower be23"}
+{"fields": ["Combinatorics", "Number Theory"], "id": "Green27.green_27.variants.lower_cy26", "kind": "known", "prize": null, "solved": true, "title": "Green's Open Problem 27 — lower cy26"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Green27.green_27.variants.previous_lower", "kind": "known", "prize": null, "solved": true, "title": "Green's Open Problem 27 — previous lower"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Green27.green_27.variants.previous_upper", "kind": "known", "prize": null, "solved": true, "title": "Green's Open Problem 27 — previous upper"}
 {"fields": ["Probability"], "id": "Green28.green_28", "kind": "open", "prize": null, "solved": false, "title": "Green's Open Problem 28"}
@@ -169,7 +169,7 @@
 {"fields": ["Convex & Discrete Geometry", "Geometry"], "id": "Green41.green_41.variants.double_exponential_bound", "kind": "open", "prize": null, "solved": false, "title": "Ben Green's Open Problem 41 — double exponential bound"}
 {"fields": ["Convex & Discrete Geometry", "Geometry"], "id": "Green41.green_41.variants.kravitz_leng", "kind": "known", "prize": null, "solved": false, "title": "Ben Green's Open Problem 41 — kravitz leng"}
 {"fields": ["Convex & Discrete Geometry", "Geometry"], "id": "Green41.green_41.variants.polynomial_bound", "kind": "open", "prize": null, "solved": false, "title": "Ben Green's Open Problem 41 — polynomial bound"}
-{"fields": ["Convex & Discrete Geometry", "Geometry"], "id": "Green41.minCopies_set_nonempty", "kind": "known", "prize": null, "solved": false, "title": "Ben Green's Open Problem 41 — minCopies set nonempty"}
+{"fields": ["Convex & Discrete Geometry", "Geometry"], "id": "Green41.minCopies_set_nonempty", "kind": "known", "prize": null, "solved": true, "title": "Ben Green's Open Problem 41 — minCopies set nonempty"}
 {"fields": ["Convex & Discrete Geometry", "Geometry"], "id": "Green42.green_42.variants.dimension_one", "kind": "known", "prize": null, "solved": true, "title": "Green's Open Problem 42 — dimension one"}
 {"fields": ["Number Theory"], "id": "Green43.green_43", "kind": "open", "prize": null, "solved": false, "title": "Ben Green's Open Problem 43"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Green43.green_43.variants.alon_peres", "kind": "open", "prize": null, "solved": false, "title": "Ben Green's Open Problem 43 — alon peres"}
@@ -187,7 +187,7 @@
 {"fields": ["Number Theory"], "id": "Green47.green_47.variants.finite_exceptions", "kind": "open", "prize": null, "solved": false, "title": "Green's Open Problem 47 — finite exceptions"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Green49.green_49", "kind": "known", "prize": null, "solved": false, "title": "Green's Open Problem 49"}
 {"fields": ["Combinatorics", "Group Theory"], "id": "Green5.green_5", "kind": "open", "prize": null, "solved": false, "title": "Ben Green's Open Problem 5"}
-{"fields": ["Combinatorics", "Group Theory"], "id": "Green5.green_5.variants.gowers_sl_two", "kind": "known", "prize": null, "solved": false, "title": "Ben Green's Open Problem 5 — gowers sl two"}
+{"fields": ["Combinatorics", "Group Theory"], "id": "Green5.green_5.variants.gowers_sl_two", "kind": "known", "prize": null, "solved": true, "title": "Ben Green's Open Problem 5 — gowers sl two"}
 {"fields": ["Combinatorics", "Group Theory"], "id": "Green5.green_5.variants.kedlaya", "kind": "known", "prize": null, "solved": false, "title": "Ben Green's Open Problem 5 — kedlaya"}
 {"fields": ["Combinatorics", "Group Theory"], "id": "Green5.green_5.variants.sl_two", "kind": "open", "prize": null, "solved": false, "title": "Ben Green's Open Problem 5 — sl two"}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Green50.green_50", "kind": "open", "prize": null, "solved": false, "title": "Ben Green's Open Problem 50"}
@@ -239,8 +239,8 @@
 {"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Green75.green_75.variants.pinchasi", "kind": "known", "prize": null, "solved": false, "title": "Ben Green's Open Problem 75 — pinchasi"}
 {"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Green76.green_76", "kind": "open", "prize": null, "solved": false, "title": "Ben Green's Open Problem 76"}
 {"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Green76.green_76.variants.exists_constant", "kind": "open", "prize": null, "solved": false, "title": "Ben Green's Open Problem 76 — exists constant"}
-{"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Green76.green_76.variants.subset", "kind": "known", "prize": null, "solved": false, "title": "Ben Green's Open Problem 76 — subset"}
-{"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Green76.green_76.variants.subset_log_log", "kind": "known", "prize": null, "solved": false, "title": "Ben Green's Open Problem 76 — subset log log"}
+{"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Green76.green_76.variants.subset", "kind": "known", "prize": null, "solved": true, "title": "Ben Green's Open Problem 76 — subset"}
+{"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Green76.green_76.variants.subset_log_log", "kind": "known", "prize": null, "solved": true, "title": "Ben Green's Open Problem 76 — subset log log"}
 {"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Green76.green_76.variants.weak_net", "kind": "open", "prize": null, "solved": false, "title": "Ben Green's Open Problem 76 — weak net"}
 {"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "Green77.green_77", "kind": "open", "prize": null, "solved": false, "title": "Ben Green's Open Problem 77"}
 {"fields": ["Harmonic Analysis", "Number Theory"], "id": "Green82.green_82", "kind": "open", "prize": null, "solved": false, "title": "Ben Green's Open Problem 82 — green 82"}

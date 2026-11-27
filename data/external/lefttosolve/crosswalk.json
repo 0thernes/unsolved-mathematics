@@ -1,12 +1,12 @@
 {
-  "schema_version": 1,
-  "snapshot_content_sha256": "6aad4dc91eea6bbbf806fc8c971b9dc4ae69d7c3e5c7d3c60604c24612c5fa41",
-  "rule": "An external item matches an Atlas problem when the NFKD-folded, lower-cased, punctuation-free item base title (text before ' — ') equals the Atlas title, optionally after stripping trailing generic words (conjecture/problem/hypothesis/theorem/question); data/external/crosswalk-overrides.yaml adds reviewed ids (optionally fixing their relation) or removes false positives. Default relation=primary iff the id has no '.variants.' segment and the title has no ' — ' suffix; 'related' links never raise status signals.",
+  "schema_version": 2,
+  "snapshot_content_sha256": "f1bcc922a11d5418387c863710fc34eb31f0a1007a7a51baf87889047c134dd8",
+  "rule": "Across the 22 formal/curated programs (excluding raw Q&A/comment streams), an external item matches an Atlas problem when the NFKD-folded, lower-cased, punctuation-free item base title (text before ' — ') equals the Atlas title, optionally after stripping trailing generic words (conjecture/problem/hypothesis/theorem/question); data/external/crosswalk-overrides.yaml adds reviewed ids (optionally fixing their relation) or removes false positives. Default relation=primary iff the id has no '.variants.' segment and the title has no ' — ' suffix; 'related' links never raise status signals.",
   "summary": {
-    "atlas_problems": 106,
-    "problems_with_matches": 98,
-    "problems_with_primary_match": 88,
-    "total_matches": 162,
+    "atlas_problems": 120,
+    "problems_with_matches": 112,
+    "problems_with_primary_match": 102,
+    "total_matches": 187,
     "problems_with_signals": 0
   },
   "problems": [
@@ -797,7 +797,7 @@
           "program_slug": "wikipedia",
           "title": "Sendov's conjecture — eventually true",
           "kind": "known",
-          "site_solved_flag": false,
+          "site_solved_flag": true,
           "relation": "variant",
           "via": "normalized-title"
         },
@@ -807,7 +807,7 @@
           "program_slug": "wikipedia",
           "title": "Sendov's conjecture — le eight",
           "kind": "known",
-          "site_solved_flag": false,
+          "site_solved_flag": true,
           "relation": "variant",
           "via": "normalized-title"
         }
@@ -1204,6 +1204,16 @@
       "atlas_status": "active-progress",
       "matches": [
         {
+          "id": "Erdos20.erdos_20",
+          "program": "Erdős Problems",
+          "program_slug": "erdos-problems",
+          "title": "Erdős Problem 20",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        },
+        {
           "id": "wp-sunflower-conjecture",
           "program": "Wikipedia list (not formalized)",
           "program_slug": "wikipedia-list-not-formalized",
@@ -1327,7 +1337,7 @@
           "program_slug": "erdos-problems",
           "title": "Erdős Problem 90: The unit distance problem",
           "kind": "known",
-          "site_solved_flag": false,
+          "site_solved_flag": true,
           "relation": "primary",
           "via": "curated-override"
         },
@@ -1441,7 +1451,7 @@
           "program_slug": "wikipedia",
           "title": "Lehmer's Mahler measure problem — not reciprocal",
           "kind": "known",
-          "site_solved_flag": false,
+          "site_solved_flag": true,
           "relation": "variant",
           "via": "normalized-title"
         },
@@ -1451,7 +1461,7 @@
           "program_slug": "wikipedia",
           "title": "Lehmer's Mahler measure problem — odd",
           "kind": "known",
-          "site_solved_flag": false,
+          "site_solved_flag": true,
           "relation": "variant",
           "via": "normalized-title"
         }
@@ -2466,6 +2476,358 @@
           "site_solved_flag": false,
           "relation": "primary",
           "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "erdos-szemeredi-asymptotic-bounds",
+      "title": "Erdős Problem 142 (Asymptotic Density of k-AP-Free Sets)",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "Erdos142.erdos_142",
+          "program": "Erdős Problems",
+          "program_slug": "erdos-problems",
+          "title": "Erdős Problem 142",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        },
+        {
+          "id": "Erdos142.erdos_142.variants.isTheta",
+          "program": "Erdős Problems",
+          "program_slug": "erdos-problems",
+          "title": "Erdős Problem 142 — isTheta",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "normalized-title"
+        },
+        {
+          "id": "Erdos142.erdos_142.variants.lower",
+          "program": "Erdős Problems",
+          "program_slug": "erdos-problems",
+          "title": "Erdős Problem 142 — lower",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "normalized-title"
+        },
+        {
+          "id": "Erdos142.erdos_142.variants.three",
+          "program": "Erdős Problems",
+          "program_slug": "erdos-problems",
+          "title": "Erdős Problem 142 — three",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "erdos-turan-additive-bases",
+      "title": "The Erdős–Turán Conjecture on Additive Bases",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "Erdos28.erdos_28",
+          "program": "Erdős Problems",
+          "program_slug": "erdos-problems",
+          "title": "Erdős Problem 28",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "erdos-sidon-sets-problem-30",
+      "title": "The Erdős–Turán Sidon Set Conjecture (Erdős Problem 30)",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "Erdos30.erdos_30",
+          "program": "Erdős Problems",
+          "program_slug": "erdos-problems",
+          "title": "Erdős Problem 30",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        },
+        {
+          "id": "Erdos30.erdos_30.variants.O_one",
+          "program": "Erdős Problems",
+          "program_slug": "erdos-problems",
+          "title": "Erdős Problem 30 — O one",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "curated-override"
+        },
+        {
+          "id": "Erdos30.erdos_30.variants.balogh_furedi_roy",
+          "program": "Erdős Problems",
+          "program_slug": "erdos-problems",
+          "title": "Erdős Problem 30 — balogh furedi roy",
+          "kind": "known",
+          "site_solved_flag": true,
+          "relation": "variant",
+          "via": "curated-override"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "erdos-happy-ending-problem",
+      "title": "The Happy Ending Problem (Erdős–Szekeres Conjecture)",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "Erdos107.erdos_107",
+          "program": "Erdős Problems",
+          "program_slug": "erdos-problems",
+          "title": "Erdős Problem 107",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "dirichlet-divisor-problem",
+      "title": "The Dirichlet Divisor Problem",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "DirichletDivisorProblem.dirichlet_divisor_problem",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Dirichlet divisor problem",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        },
+        {
+          "id": "DirichletDivisorProblem.divisor_error_dirichlet",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Dirichlet divisor problem — divisor error dirichlet",
+          "kind": "warmup",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "normalized-title"
+        },
+        {
+          "id": "DirichletDivisorProblem.divisor_error_hardy",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Dirichlet divisor problem — divisor error hardy",
+          "kind": "known",
+          "site_solved_flag": true,
+          "relation": "related",
+          "via": "curated-override"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "cramer-conjecture",
+      "title": "Cramér's Conjecture on Prime Gaps",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "CramerConjecture.cramer_conjecture",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Cramér's Conjecture",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "bateman-horn-conjecture",
+      "title": "The Bateman–Horn Conjecture",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "BatemanHornConjecture.bateman_horn_conjecture",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "The Bateman-Horn Conjecture",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "resolution-of-singularities-char-p",
+      "title": "Resolution of Singularities in Positive Characteristic",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "AlgebraicGeometry.resolution_of_singularities",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Resolution of singularities in positive characteristic.",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        },
+        {
+          "id": "AlgebraicGeometry.resolution_of_singularities_of_topologicalKrullDim_le_three",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Resolution of singularities",
+          "kind": "known",
+          "site_solved_flag": false,
+          "relation": "related",
+          "via": "curated-override"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "class-number-problem-real-quadratic",
+      "title": "Gauss's Class Number Problem for Real Quadratic Fields",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "ClassNumberProblem.class_number_problem",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Class number problem for real quadratic fields",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "cohen-lenstra-heuristics",
+      "title": "The Cohen–Lenstra Heuristics",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "CohenLenstraHeuristics.cohen_lenstra_imaginary_quadratic_p_sylow_conjecture",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Cohen–Lenstra Heuristic (Imaginary Quadratic Case, $u = 0$)",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        },
+        {
+          "id": "CohenLenstraHeuristics.cohen_lenstra_real_quadratic_p_sylow_conjecture",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Cohen–Lenstra Heuristic (Real Quadratic Case, $u = 1$)",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "cerny-conjecture",
+      "title": "The Černý Conjecture",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "CernyConjecture.cerny_conjecture",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Černý Conjecture",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        },
+        {
+          "id": "CernyConjecture.shitov_upper_bound",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Shitov's bound (2019)",
+          "kind": "known",
+          "site_solved_flag": false,
+          "relation": "related",
+          "via": "curated-override"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "conway-99-graph-problem",
+      "title": "Conway's 99-Graph Problem",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "Conway99Graph.conway99Graph",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Conway's 99-graph problem",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "beck-fiala-conjecture",
+      "title": "The Beck–Fiala Conjecture",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "BeckFiala.beck_fiala_conjecture",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "The Beck–Fiala conjecture",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "riesel-problem",
+      "title": "The Riesel Problem",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "OeisA108129.conjecture",
+          "program": "OEIS",
+          "program_slug": "oeis",
+          "title": "Riesel Problem",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
         }
       ],
       "signals": []

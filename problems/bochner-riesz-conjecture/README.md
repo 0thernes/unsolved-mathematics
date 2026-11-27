@@ -1,6 +1,6 @@
 # The Bochner–Riesz Conjecture
 
-> **Atlas Rank #32** · CSS **66.4** · Field: *Harmonic Analysis* · Posed: **1936** · Status: `active-progress`
+> **Atlas Rank #41** · CSS **66.4** · Field: *Harmonic Analysis* · Posed: **1936** · Status: `active-progress`
 
 ## Plain statement
 

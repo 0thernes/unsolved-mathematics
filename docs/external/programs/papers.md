@@ -3,198 +3,200 @@
 # Papers — Left to Solve program mirror
 
 > [!IMPORTANT]
-> **Third-party data, mirrored daily.** Counts, kinds and "solved here" flags come from
-> [lefttosolve.com](https://lefttosolve.com/programs) (formal statements from
-> [google-deepmind/formal-conjectures](https://github.com/google-deepmind/formal-conjectures), Apache-2.0).
-> "Solved here" means *marked solved by agents on that site*; this Atlas has **not** verified any of
-> those claims, and nothing in this mirror changes the status of any Atlas problem. Status signals
-> below are prompts for human review only. Not affiliated with Left to Solve.
+> **Third-party data, mirrored daily (all 25 programs / all items).** Counts, kinds and "solved here" flags come from
+> [lefttosolve.com](https://lefttosolve.com/programs) (formal Lean statements from
+> [google-deepmind/formal-conjectures](https://github.com/google-deepmind/formal-conjectures), Apache-2.0; titles from
+> MathOverflow, Math StackExchange, OEIS and Wikipedia remain under their upstream CC BY-SA 4.0 / source licenses and
+> are carved out of this repository's CC BY 4.0 license — see `THIRD_PARTY_NOTICES.md`).
+> "Solved here" is disaggregated by `kind` (`open` / `known` / `warmup`) so known theorems and warmup exercises are
+> never misread as solved open conjectures. This Atlas has **not** verified external claims, and nothing in this mirror
+> modifies `data/problems.yaml`. Not affiliated with Left to Solve.
 
 [Program page](https://lefttosolve.com/programs/Papers) · Open problems stated in research papers and books.
 
-Targets 180 · open 93 · solved here (site claim) 26 · kinds open/known/unformalized/other = 93/78/0/9 · snapshot `6aad4dc91eea6bbb` (`2026-11-27T04:31:27Z`).
+Targets 180 · open 93 · solved by kind (site claim): `known: 20, warmup: 9` · kinds open/known/warmup/unformalized/other = 93/78/9/0/0 · snapshot `f1bcc922a11d5418` (`2026-11-27T05:46:57Z`).
 
 Back to [all programs](../PROGRAMS.md).
 
 | # | Item id | Title | Kind | Fields | Prize | Site-solved flag |
 |---:|---|---|---|---|---|---|
-| 1 | `AlgebraicGeometry.Scheme.harthshorne_conjecture` | AlgebraicGeometry | open | Algebraic Geometry |  |  |
-| 2 | `AlgebraicGeometry.Scheme.hasFiniteCoproductsVectorBundles` | AlgebraicGeometry | warmup | Algebraic Geometry |  | yes |
-| 3 | `AuslanderReiten.auslander_reiten.variants.commutative` | The Auslander-Reiten conjecture for commutative Noetherian rings | open | Category Theory, Commutative Algebra |  |  |
-| 4 | `AuslanderReiten.auslander_reiten.variants.local_free` | The Auslander-Reiten conjecture — local free | open | Category Theory, Commutative Algebra |  |  |
-| 5 | `AuslanderReiten.auslander_reiten.variants.normal` | The Auslander-Reiten conjecture — normal | known | Category Theory, Commutative Algebra |  |  |
-| 6 | `AuslanderReiten.auslander_reiten.variants.regular_local` | The Auslander-Reiten conjecture — regular local | warmup | Category Theory, Commutative Algebra |  | yes |
-| 7 | `BollobasEldridgeCatlinConjecture.bollobas_eldridge_catlin_conjecture` | The Bollobás–Eldridge–Catlin conjecture (1978). | open | Combinatorics |  |  |
-| 8 | `BollobasEldridgeCatlinConjecture.bollobas_eldridge_catlin_conjecture.variants.maxDegree_le_two` | Maximum degree two (Aigner–Brandt 1993). | known | Combinatorics |  |  |
-| 9 | `BollobasEldridgeCatlinConjecture.bollobas_eldridge_catlin_conjecture.variants.maxDegree_three_large_n` | Maximum degree three, for large $n$ (Csaba–Shokoufandeh–Szemerédi 2003). | known | Combinatorics |  |  |
-| 10 | `BranchingVAS.reachability_decidable` | Decidability of reachability for branching vector addition systems | known | Computer Science, Logic & Foundations |  |  |
-| 11 | `BurningNumberConjecture.burning_number_conjecture` | The burning number conjecture | open | Combinatorics |  |  |
-| 12 | `BurningNumberConjecture.burning_number_conjecture.variants.norin_turcotte` | Norin–Turcotte (2024): the burning number conjecture holds asymptotically. | known | Combinatorics |  |  |
-| 13 | `BurningNumberConjecture.burning_number_conjecture.variants.path` | Paths attain the conjectured bound | known | Combinatorics |  | yes |
-| 14 | `CardinalityLindelof.HasG-Singletons.lindelof_card` | Conjecture about cardinality of Lindelöf spaces — lindelof card | open | General Topology |  |  |
-| 15 | `CasasAlvero.casas_alvero.double_prime_power` | Casas-Alvero Conjecture — double prime power | known | Field Theory |  | yes |
-| 16 | `CasasAlvero.casas_alvero.prime_power` | Casas-Alvero Conjecture — prime power | known | Field Theory |  | yes |
-| 17 | `CasasAlvero.casas_alvero_conjecture` | Casas-Alvero Conjecture | open | Field Theory |  |  |
-| 18 | `CatchUp.value_of_even_mul_succ_self_div_two` | The Catch-Up game and conjecture | open | Game Theory & Economics, Number Theory |  |  |
-| 19 | `ClaudesCycles.cube_hamiltonian_arc_decomposition_even` | Claude's Cycles — cube hamiltonian arc decomposition even | known | Combinatorics |  |  |
-| 20 | `ClaudesCycles.cube_hamiltonian_arc_decomposition_impossible_m2` | Claude's Cycles — cube hamiltonian arc decomposition impossible m2 | known | Combinatorics |  | yes |
-| 21 | `ConjugacyClassSizes.conjClassSizes_iff_sym_three` | Markel's $S_3$-conjecture | open | Group Theory |  |  |
-| 22 | `ConjugacyClassSizes.conjClassSizes_iff_sym_three_solvable` | The $S_3$-conjecture (conjugacy classes of distinct sizes) | known | Group Theory |  |  |
-| 23 | `DeGiorgi.DeGiorgi_eight` | De Giorgi's conjecture — DeGiorgi eight | open | PDEs |  |  |
-| 24 | `DeGiorgi.DeGiorgi_five` | De Giorgi's conjecture — DeGiorgi five | open | PDEs |  |  |
-| 25 | `DeGiorgi.DeGiorgi_four` | De Giorgi's conjecture — DeGiorgi four | open | PDEs |  |  |
-| 26 | `DeGiorgi.DeGiorgi_ge_nine` | De Giorgi's conjecture — DeGiorgi ge nine | known | PDEs |  |  |
-| 27 | `DeGiorgi.DeGiorgi_le_eight` | De Giorgi's conjecture — DeGiorgi le eight | open | PDEs |  |  |
-| 28 | `DeGiorgi.DeGiorgi_seven` | De Giorgi's conjecture — DeGiorgi seven | open | PDEs |  |  |
-| 29 | `DeGiorgi.DeGiorgi_six` | De Giorgi's conjecture — DeGiorgi six | open | PDEs |  |  |
-| 30 | `DeGiorgi.DeGiorgi_three` | De Giorgi's conjecture — DeGiorgi three | known | PDEs |  |  |
-| 31 | `DeGiorgi.DeGiorgi_two` | De Giorgi's conjecture — DeGiorgi two | known | PDEs |  | yes |
-| 32 | `DirichletCharacter.distinct_prop_lt` | Simple zeros of the Riemann zeta function on the critical line — distinct prop lt | open | Number Theory |  |  |
-| 33 | `DirichletCharacter.distinct_prop_one_hundred` | Simple zeros of the Riemann zeta function on the critical line — distinct prop one hundred | open | Number Theory |  |  |
-| 34 | `DirichletCharacter.simple_prop_lt` | Simple zeros of the Riemann zeta function on the critical line — simple prop lt | open | Number Theory |  |  |
-| 35 | `DirichletCharacter.simple_prop_one_hundred` | Simple zeros of the Riemann zeta function on the critical line — simple prop one hundred | open | Number Theory |  |  |
-| 36 | `DisjointNPPairs.no_complete_disjoint_NP_pair` | There is no complete disjoint NP pair | open | Computer Science, Logic & Foundations |  |  |
-| 37 | `DisjointNPPairs.no_complete_disjoint_NP_pair.variants.exists_of_NP_eq_coNP` | If `NP = coNP` then a complete disjoint NP pair exists | known | Computer Science, Logic & Foundations |  |  |
-| 38 | `DisjointNPPairs.no_complete_disjoint_coNP_pair` | There is no complete disjoint coNP pair | open | Computer Science, Logic & Foundations |  |  |
-| 39 | `DubnerConjecture.dubner_conjecture` | Dubner's conjecture | open | Number Theory |  |  |
-| 40 | `EisenbudGreenHarris.eisenbud_green_harris` | The Eisenbud-Green-Harris conjecture. | open | Commutative Algebra |  |  |
-| 41 | `EisenbudGreenHarris.eisenbud_green_harris.variants.caviglia_deStefani` | The Eisenbud-Green-Harris conjecture — caviglia deStefani | known | Commutative Algebra |  |  |
-| 42 | `EisenbudGreenHarris.eisenbud_green_harris.variants.clements_lindstrom` | The Clements-Lindström theorem | known | Commutative Algebra |  |  |
-| 43 | `EisenbudGreenHarris.eisenbud_green_harris.variants.macaulay` | Macaulay's theorem | known | Commutative Algebra |  |  |
-| 44 | `EuclideanRamseyCircle.at_most_five_circle_points_ramsey` | Euclidean Ramsey configurations on a circle | known | Combinatorics, Convex & Discrete Geometry |  | yes |
-| 45 | `FanelliMoscardelli.stability_threshold_tight` | Fanelli–Moscardelli conjecture on approximate roommates stability | open | Combinatorics, Computer Science, Game Theory & Economics |  |  |
-| 46 | `FiniteLocallyFreeGroupSchemeExponent.killed_by_rank.variants.commutative` | Is a finite locally free group scheme killed by its order? — commutative | known | Algebraic Geometry, Associative Rings |  |  |
-| 47 | `FiniteLocallyFreeGroupSchemeExponent.killed_by_rank.variants.field` | Is a finite locally free group scheme killed by its order? — field | known | Algebraic Geometry, Associative Rings |  |  |
-| 48 | `FiniteLocallyFreeGroupSchemeExponent.killed_by_rank.variants.reduced_base` | Is a finite locally free group scheme killed by its order? — reduced base | known | Algebraic Geometry, Associative Rings |  |  |
-| 49 | `FiniteLocallyFreeGroupSchemeExponent.optimal_exponent` | Is a finite locally free group scheme killed by its order? | open | Algebraic Geometry, Associative Rings |  |  |
-| 50 | `FusibleNumber.conj_7_1` | Main conjecture on fusible numbers | open | Combinatorics |  |  |
-| 51 | `Gourevitch.gourevitch_series_identity` | Gourevitch's series identity | known | Number Theory, Special Functions |  |  |
-| 52 | `HallRatioConjecture.hall_ratio_conjecture` | The Hall ratio conjecture (Harris 2019) — disproved. | known | Combinatorics |  | yes |
-| 53 | `HallRatioConjecture.hall_ratio_conjecture.variants.hallRatio_le_fractionalChromaticNumber` | The Hall ratio is a lower bound for the fractional chromatic number. | known | Combinatorics |  | yes |
-| 54 | `HallRatioConjecture.hall_ratio_conjecture.variants.unbounded` | Unbounded ratio (Dvořák–Ossona de Mendez–Wu 2020; Blumenthal et al. 2022). | known | Combinatorics |  | yes |
-| 55 | `Homogeneous.countablyMonolithicSpace_card_lt` | Conjectures around homogeneous topological spaces — countablyMonolithicSpace card lt | open | General Topology |  |  |
-| 56 | `Homogeneous.firstCountableTopology_of_countablyMonolithicSpace` | Conjectures around homogeneous topological spaces — firstCountableTopology of countablyMonolithicSpace | open | General Topology |  |  |
-| 57 | `Homogeneous.homogeneousSpace_exists_inj_tendsto` | Conjectures around homogeneous topological spaces — homogeneousSpace exists inj tendsto | open | General Topology |  |  |
-| 58 | `Homogeneous.homogeneousSpace_exists_surjective` | Conjectures around homogeneous topological spaces — homogeneousSpace exists surjective | open | General Topology |  |  |
-| 59 | `Homogeneous.monolithicSpace_exists_nhds_generated_countable` | Conjectures around homogeneous topological spaces — monolithicSpace exists nhds generated countable | open | General Topology |  |  |
-| 60 | `IrvingLeather.irving_leather_growth_rate` | The Irving–Leather conjecture on stable matchings — irving leather growth rate | open | Combinatorics |  |  |
-| 61 | `IrvingLeather.irving_leather_pow_two` | The Irving–Leather conjecture on stable matchings — irving leather pow two | open | Combinatorics |  |  |
-| 62 | `KaplanskyUInvariant.u_invariant_values` | The values of the $u$-invariant | open | Field Theory, Number Theory |  |  |
-| 63 | `KaplanskyUInvariant.u_invariant_values.variants.even` | Merkurjev's theorem | known | Field Theory, Number Theory |  |  |
-| 64 | `KaplanskyUInvariant.u_invariant_values.variants.fifteen` | Kaplansky's problem on the values of the $u$-invariant — fifteen | open | Field Theory, Number Theory |  |  |
-| 65 | `KaplanskyUInvariant.u_invariant_values.variants.kaplansky_conjecture` | Kaplansky's conjecture | known | Field Theory, Number Theory |  |  |
-| 66 | `KaplanskyUInvariant.u_invariant_values.variants.karpenko` | Karpenko's theorem | known | Field Theory, Number Theory |  |  |
-| 67 | `KaplanskyUInvariant.u_invariant_values.variants.nine` | Izhboldin's theorem | known | Field Theory, Number Theory |  |  |
-| 68 | `KaplanskyUInvariant.u_invariant_values.variants.not_five` | Kaplansky's problem on the values of the $u$-invariant — not five | known | Field Theory, Number Theory |  | yes |
-| 69 | `KaplanskyUInvariant.u_invariant_values.variants.not_seven` | Kaplansky's problem on the values of the $u$-invariant — not seven | known | Field Theory, Number Theory |  | yes |
-| 70 | `KaplanskyUInvariant.u_invariant_values.variants.not_three` | Kaplansky's problem on the values of the $u$-invariant — not three | known | Field Theory, Number Theory |  | yes |
-| 71 | `KaplanskyUInvariant.u_invariant_values.variants.odd` | Kaplansky's problem on the values of the $u$-invariant — odd | open | Field Theory, Number Theory |  |  |
-| 72 | `KaplanskyUInvariant.u_invariant_values.variants.thirteen` | Kaplansky's problem on the values of the $u$-invariant — thirteen | open | Field Theory, Number Theory |  |  |
-| 73 | `KaplanskyUInvariant.u_invariant_values.variants.two_pow_add_one` | Vishik's theorem | known | Field Theory, Number Theory |  |  |
-| 74 | `KotzigConjecture.kotzig_conjecture` | Kotzig's Conjecture | open | Combinatorics |  |  |
-| 75 | `Kurepa.kurepa_conjecture` | Kurepa's conjecture | open | Number Theory |  |  |
-| 76 | `Kurepa.kurepa_conjecture.variants.gcd` | Kurepa's conjecture — gcd | open | Number Theory |  |  |
-| 77 | `Kurepa.kurepa_conjecture.variants.prime` | Kurepa's conjecture — prime | open | Number Theory |  |  |
-| 78 | `LatinSquare.growthRateZn` | Conjectures about Latin Squares — growthRateZn | known | Combinatorics |  |  |
-| 79 | `LatinSquare.latinSquareNearTransversal` | Conjectures about Latin Squares — latinSquareNearTransversal | open | Combinatorics |  |  |
-| 80 | `LatinSquare.latinSquareOrder11Transversal` | Conjectures about Latin Squares — latinSquareOrder11Transversal | open | Combinatorics |  |  |
-| 81 | `LatinSquare.maxTransversalsBound` | Conjectures about Latin Squares — maxTransversalsBound | known | Combinatorics |  |  |
-| 82 | `LatinSquare.molsExistenceProblem` | Conjectures about Latin Squares — molsExistenceProblem | open | Combinatorics |  |  |
-| 83 | `LatinSquare.molsOrder12` | Conjectures about Latin Squares — molsOrder12 | open | Combinatorics |  |  |
-| 84 | `LatinSquare.numTransversalsZn` | Conjectures about Latin Squares — numTransversalsZn | known | Combinatorics |  |  |
-| 85 | `LatinSquare.oddOrderLatinSquareTransversal` | Conjectures about Latin Squares — oddOrderLatinSquareTransversal | open | Combinatorics |  |  |
-| 86 | `LatinSquare.oddOrderLeq9LatinSquareTransversal` | Conjectures about Latin Squares — oddOrderLeq9LatinSquareTransversal | known | Combinatorics |  |  |
-| 87 | `LatinTableau.SimpleGraph.LatinTableauConjecture` | Latin Tableau Conjecture | open | Combinatorics |  |  |
-| 88 | `LennonPittel.lennon_pittel_conjecture` | Lennon–Pittel conjecture on random stable matchings | open | Combinatorics, Probability |  |  |
-| 89 | `ManickamMiklosSinghiConjecture.manickam_miklos_singhi_conjecture` | The Manickam–Miklós–Singhi conjecture (1988). | open | Combinatorics |  |  |
-| 90 | `ManickamMiklosSinghiConjecture.manickam_miklos_singhi_conjecture.variants.pokrovskiy` | The Manickam–Miklós–Singhi conjecture (1988) — pokrovskiy | known | Combinatorics |  |  |
-| 91 | `ManickamMiklosSinghiConjecture.manickam_miklos_singhi_conjecture.variants.quadratic` | Chowdhury–Sarkis–Shahriari (2014): the conjecture holds for $n \\ge 8k^2$. | known | Combinatorics |  |  |
-| 92 | `MonochromaticQuantumGraph.eqSystem10_no_solution_d3` | Monochromatic quantum graphs (inherited vertex colorings) — eqSystem10 no solution d3 | open | Algebraic Geometry, Combinatorics, Quantum Theory |  |  |
-| 93 | `MonochromaticQuantumGraph.eqSystem10_no_solution_d3_real` | Monochromatic quantum graphs (inherited vertex colorings) — eqSystem10 no solution d3 real | open | Algebraic Geometry, Combinatorics, Quantum Theory |  |  |
-| 94 | `MonochromaticQuantumGraph.eqSystem10_no_solution_d4` | Monochromatic quantum graphs (inherited vertex colorings) — eqSystem10 no solution d4 | open | Algebraic Geometry, Combinatorics, Quantum Theory |  |  |
-| 95 | `MonochromaticQuantumGraph.eqSystem10_no_solution_d5` | Monochromatic quantum graphs (inherited vertex colorings) — eqSystem10 no solution d5 | open | Algebraic Geometry, Combinatorics, Quantum Theory |  |  |
-| 96 | `MonochromaticQuantumGraph.eqSystem10_no_solution_d6` | Monochromatic quantum graphs (inherited vertex colorings) — eqSystem10 no solution d6 | open | Algebraic Geometry, Combinatorics, Quantum Theory |  |  |
-| 97 | `MonochromaticQuantumGraph.eqSystem10_no_solution_d7` | Monochromatic quantum graphs (inherited vertex colorings) — eqSystem10 no solution d7 | open | Algebraic Geometry, Combinatorics, Quantum Theory |  |  |
-| 98 | `MonochromaticQuantumGraph.eqSystem12_no_solution_d3` | Monochromatic quantum graphs (inherited vertex colorings) — eqSystem12 no solution d3 | open | Algebraic Geometry, Combinatorics, Quantum Theory |  |  |
-| 99 | `MonochromaticQuantumGraph.eqSystem14_no_solution_d3` | Monochromatic quantum graphs (inherited vertex colorings) — eqSystem14 no solution d3 | open | Algebraic Geometry, Combinatorics, Quantum Theory |  |  |
-| 100 | `MonochromaticQuantumGraph.eqSystem16_no_solution_d3` | Monochromatic quantum graphs (inherited vertex colorings) — eqSystem16 no solution d3 | open | Algebraic Geometry, Combinatorics, Quantum Theory |  |  |
-| 101 | `MonochromaticQuantumGraph.eqSystem4_no_solution_nnreal_ge4` | Monochromatic quantum graphs (inherited vertex colorings) — eqSystem4 no solution nnreal ge4 | known | Algebraic Geometry, Combinatorics, Quantum Theory |  | yes |
-| 102 | `MonochromaticQuantumGraph.eqSystem6_no_solution_d3_real` | Monochromatic quantum graphs (inherited vertex colorings) — eqSystem6 no solution d3 real | open | Algebraic Geometry, Combinatorics, Quantum Theory |  |  |
-| 103 | `MonochromaticQuantumGraph.eqSystem6_no_solution_ge3` | Monochromatic quantum graphs (inherited vertex colorings) — eqSystem6 no solution ge3 | open | Algebraic Geometry, Combinatorics, Quantum Theory |  |  |
-| 104 | `MonochromaticQuantumGraph.eqSystem6_no_solution_ge3_real` | Monochromatic quantum graphs (inherited vertex colorings) — eqSystem6 no solution ge3 real | open | Algebraic Geometry, Combinatorics, Quantum Theory |  |  |
-| 105 | `MonochromaticQuantumGraph.eqSystem8_no_solution_d3` | Monochromatic quantum graphs (inherited vertex colorings) — eqSystem8 no solution d3 | open | Algebraic Geometry, Combinatorics, Quantum Theory |  |  |
-| 106 | `MonochromaticQuantumGraph.eqSystem8_no_solution_d3_real` | Monochromatic quantum graphs (inherited vertex colorings) — eqSystem8 no solution d3 real | open | Algebraic Geometry, Combinatorics, Quantum Theory |  |  |
-| 107 | `MonochromaticQuantumGraph.eqSystem_no_solution_ge6_ge3` | Monochromatic quantum graphs (inherited vertex colorings) — eqSystem no solution ge6 ge3 | open | Algebraic Geometry, Combinatorics, Quantum Theory |  |  |
-| 108 | `MonochromaticQuantumGraph.eqSystem_no_solution_ge6_ge3_real` | Monochromatic quantum graphs (inherited vertex colorings) — eqSystem no solution ge6 ge3 real | open | Algebraic Geometry, Combinatorics, Quantum Theory |  |  |
-| 109 | `MonochromaticQuantumGraph.eqSystem_no_solution_nnreal_even_ge6_ge3` | Monochromatic quantum graphs (inherited vertex colorings) — eqSystem no solution nnreal even ge6 ge3 | known | Algebraic Geometry, Combinatorics, Quantum Theory |  | yes |
-| 110 | `NLSCritical.NLS_apriori` | Energy-critical NLS in three dimensions. | known | PDEs |  |  |
-| 111 | `OneTwoThreeConjecture.one_two_three_conjecture` | The 1-2-3 conjecture (Karoński–Łuczak–Thomason 2004), proved by Keusch (2024). | known | Combinatorics |  |  |
-| 112 | `PartitionParity.ahlgren.even` | Parities of partition numbers — even | known | Number Theory |  |  |
-| 113 | `PartitionParity.ahlgren.odd` | Parities of partition numbers — odd | known | Number Theory |  |  |
-| 114 | `PartitionParity.bellaiche_green_soundararajan.odd` | Parities of partition numbers — odd | known | Number Theory |  |  |
-| 115 | `PartitionParity.bellaiche_nicolas.even` | Parities of partition numbers — even | known | Number Theory |  |  |
-| 116 | `PartitionParity.bellaiche_nicolas.even_explicit` | Parities of partition numbers — even explicit | known | Number Theory |  |  |
-| 117 | `PartitionParity.bellaiche_nicolas.odd_explicit` | Parities of partition numbers — odd explicit | known | Number Theory |  |  |
-| 118 | `PartitionParity.classNumber_eq_ncard_reducedForms` | Parities of partition numbers — classNumber eq ncard reducedForms | warmup | Number Theory |  |  |
-| 119 | `PartitionParity.kolberg` | Parities of partition numbers — kolberg | known | Number Theory |  | yes |
-| 120 | `PartitionParity.ono.polynomial` | Parities of partition numbers — polynomial | open | Number Theory |  |  |
-| 121 | `PartitionParity.ono_swaminathan.odd_bound` | Parities of partition numbers — odd bound | known | Number Theory |  |  |
-| 122 | `PartitionParity.ono_swaminathan.quadratic` | Parities of partition numbers — quadratic | known | Number Theory |  |  |
-| 123 | `PartitionParity.parkin_shanks` | Parities of partition numbers — parkin shanks | open | Number Theory |  |  |
-| 124 | `PartitionParity.subbarao.even` | Parities of partition numbers — even | known | Number Theory |  |  |
-| 125 | `PartitionParity.subbarao.odd` | Parities of partition numbers — odd | known | Number Theory |  |  |
-| 126 | `PartitionParity.zheng.odd` | Parities of partition numbers — odd | known | Number Theory |  |  |
-| 127 | `PfisterPythagorasNumber.pfister_problem` | Pfister's problem | open | Algebraic Geometry, Field Theory, Number Theory |  |  |
-| 128 | `PfisterPythagorasNumber.pfister_problem.variants.eq_two_pow` | Pfister's problem on the Pythagoras number of $\\mathbb{R}(X_1, \\dots, X_n)$ — eq two pow | open | Algebraic Geometry, Field Theory, Number Theory |  |  |
-| 129 | `PfisterPythagorasNumber.pfister_problem.variants.lower_bound` | Pfister's problem on the Pythagoras number of $\\mathbb{R}(X_1, \\dots, X_n)$ — lower bound | known | Algebraic Geometry, Field Theory, Number Theory |  |  |
-| 130 | `PrimeTuplesConjecture.prime_tuples_conjecture` | Prime Tuples Conjecture | open | Number Theory |  |  |
-| 131 | `PudlakFiniteDomain.np_inter_conp_no_complete_language` | NP ∩ coNP has no complete language | open | Computer Science, Logic & Foundations |  |  |
-| 132 | `PudlakFiniteDomain.sat_no_p_optimal_proof_system` | SAT has no p-optimal proof system | open | Computer Science, Logic & Foundations |  |  |
-| 133 | `PudlakFiniteDomain.sat_no_p_optimal_proof_system.variants.exists_of_P_eq_NP` | If `P = NP` then every NP-complete language has a p-optimal proof system. | warmup | Computer Science, Logic & Foundations |  | yes |
-| 134 | `PudlakFiniteDomain.tfnp_no_complete_problem` | TFNP has no complete problem | open | Computer Science, Logic & Foundations |  |  |
-| 135 | `PudlakFiniteDomain.tfnp_no_complete_problem.variants.exists_of_NP_eq_coNP` | If `NP = coNP` then TFNP has a complete problem | known | Computer Science, Logic & Foundations |  |  |
-| 136 | `PudlakFiniteDomain.up_no_complete_language` | UP has no complete language | open | Computer Science, Logic & Foundations |  |  |
-| 137 | `ReedOmegaDeltaChi.reed_conjecture_-_6_-_2` | Reed's omega, delta, and chi conjecture — reed conjecture Δ 6 ω 2 | open | Combinatorics |  |  |
-| 138 | `ReedOmegaDeltaChi.reed_omega_delta_chi_conjecture` | Reed's omega, delta, and chi conjecture — reed omega delta chi conjecture | open | Combinatorics |  |  |
-| 139 | `ReedOmegaDeltaChi.reed_omega_delta_chi_conjecture_for_finite_graphs` | Reed's omega, delta, and chi conjecture — reed omega delta chi conjecture for finite graphs | open | Combinatorics |  |  |
-| 140 | `RiemannHypothesis.beurling_nyman_criterion` | Beurling-Nyman Criterion | known | Measure & Integration, Number Theory |  |  |
-| 141 | `RiemannHypothesis.beurling_nyman_criterion_rhs` | RiemannHypothesis | known | Measure & Integration, Number Theory |  |  |
-| 142 | `RiemannHypothesis.lagarias_criterion` | Lagarias' Criterion | known | Number Theory |  |  |
-| 143 | `RiemannHypothesis.lagarias_criterion_rhs` | RiemannHypothesis | known | Number Theory |  |  |
-| 144 | `RiemannHypothesis.li_criterion` | Li's Criterion | known | Number Theory |  |  |
-| 145 | `RiemannHypothesis.li_criterion_rhs` | RiemannHypothesis | known | Number Theory |  |  |
-| 146 | `RiemannHypothesis.robin_criterion` | Robin's Criterion | known | Number Theory |  |  |
-| 147 | `RiemannHypothesis.robin_criterion_rhs` | RiemannHypothesis | known | Number Theory |  |  |
-| 148 | `RiemannHypothesis.weil_positivity_criterion` | Weil's Positivity Criterion | known | Functional Analysis, Number Theory |  |  |
-| 149 | `RiemannHypothesis.weil_positivity_criterion_rhs` | RiemannHypothesis | known | Functional Analysis, Number Theory |  |  |
-| 150 | `RiemannZetaMoments.moment_isEquiv` | Moments of the Riemann zeta function on the critical line — moment isEquiv | open | Number Theory |  |  |
-| 151 | `RiemannZetaMoments.moment_isEquiv-109` | Moments of the Riemann zeta function on the critical line — moment isEquiv₃ | open | Number Theory |  |  |
-| 152 | `RiemannZetaMoments.moment_isEquiv-115` | Moments of the Riemann zeta function on the critical line — moment isEquiv₄ | open | Number Theory |  |  |
-| 153 | `RiemannZetaMoments.moment_isEquiv-122` | Moments of the Riemann zeta function on the critical line — moment isEquivₖ | open | Number Theory |  |  |
-| 154 | `RiemannZetaMoments.moment_isEquiv-77` | Moments of the Riemann zeta function on the critical line — moment isEquiv₁ | known | Number Theory |  |  |
-| 155 | `RiemannZetaMoments.moment_isEquiv-83` | Moments of the Riemann zeta function on the critical line — moment isEquiv₂ | known | Number Theory |  |  |
-| 156 | `RingelConjecture.ringel_conjecture` | Ringel's Conjecture | open | Combinatorics |  |  |
-| 157 | `SerreUniformity.serre_uniformity` | Serre's uniformity question over $\\mathbb{Q}$ | open | Algebraic Geometry, Number Theory |  |  |
-| 158 | `SerreUniformity.serre_uniformity.variants.bound_37` | Serre's uniformity conjecture over $\\mathbb{Q}$, explicit form | open | Algebraic Geometry, Number Theory |  |  |
-| 159 | `ShelahSpencerZeroOneLaw.zeroOne_irrational` | ShelahSpencerZeroOneLaw | known | Combinatorics, Logic & Foundations |  |  |
-| 160 | `ShelahSpencerZeroOneLaw.zeroOne_rational` | ShelahSpencerZeroOneLaw | known | Combinatorics, Logic & Foundations |  |  |
-| 161 | `SimpleGraph.lemma3` | Lemma 3. | warmup | Combinatorics |  | yes |
-| 162 | `SimpleGraph.lemma4` | Lemma 4. | warmup | Combinatorics |  | yes |
-| 163 | `SimpleGraph.theorem1` | Theorem 1. | known | Combinatorics |  | yes |
-| 164 | `SimpleGraph.theorem2` | Theorem 2. | known | Combinatorics |  | yes |
-| 165 | `StrongSensitivityConjecture.nisanExample_blockSensitivity` | Strong Sensitivity Conjecture (`bs(f) ≤ s(f)^2`) — nisanExample blockSensitivity | warmup | Computer Science |  | yes |
-| 166 | `StrongSensitivityConjecture.nisanExample_sensitivity` | Strong Sensitivity Conjecture (`bs(f) ≤ s(f)^2`) — nisanExample sensitivity | warmup | Computer Science |  | yes |
-| 167 | `TuDengConjecture.tu_deng_conjecture` | The Tu-Deng conjecture. | known | Combinatorics, Information & Communication, Number Theory |  | yes |
-| 168 | `VoronovskajaTypeFormula.voronovskaja_theorem.bernstein_operators` | Voronovskaja-type Formula for the Bezier Variant of the Bernstein Operators | known | Operator Theory, Real Functions, Sequences & Series |  | yes |
-| 169 | `WeakTiling.problem_4_2` | Problem 4.2. | open | Functional Analysis, Harmonic Analysis |  |  |
-| 170 | `WeaklyFirstCountable.CH.existsWeaklyFirstCountableCompactNotFirstCountable` | Conjectures about Weakly First Countable spaces — existsWeaklyFirstCountableCompactNotFirstCountable | known | General Topology |  |  |
-| 171 | `WeaklyFirstCountable.cardinalMk_le_continuum_of_weaklyFirstCountable_of_countableSouslinNumber` | Conjectures about Weakly First Countable spaces — cardinalMk le continuum of weaklyFirstCountable of countableSouslinNumber | open | General Topology |  |  |
-| 172 | `WeaklyFirstCountable.existsWeaklyFirstCountableCompactBig` | Conjectures about Weakly First Countable spaces — existsWeaklyFirstCountableCompactBig | open | General Topology |  |  |
-| 173 | `WeaklyFirstCountable.existsWeaklyFirstCountableCompactNotFirstCountable` | Conjectures about Weakly First Countable spaces — existsWeaklyFirstCountableCompactNotFirstCountable | open | General Topology |  |  |
-| 174 | `WeaklyFirstCountable.exists_weakly_first_countable_not_first_countable` | Conjectures about Weakly First Countable spaces — exists weakly first countable not first countable | warmup | General Topology |  | yes |
-| 175 | `ZagierMZV.zagier_conjecture` | Zagier's conjecture | open | Number Theory |  |  |
-| 176 | `ZagierMZV.zagier_upper_bound` | Upper bound | known | Number Theory |  |  |
-| 177 | `riemannZeta.distinct_prop_lt` | Simple zeros of the Riemann zeta function on the critical line — distinct prop lt | open | Number Theory |  |  |
-| 178 | `riemannZeta.distinct_prop_one_hundred` | Simple zeros of the Riemann zeta function on the critical line — distinct prop one hundred | open | Number Theory |  |  |
-| 179 | `riemannZeta.simple_prop_lt` | Simple zeros of the Riemann zeta function on the critical line — simple prop lt | open | Number Theory |  |  |
-| 180 | `riemannZeta.simple_prop_one_hundred` | Simple zeros of the Riemann zeta function on the critical line — simple prop one hundred | open | Number Theory |  |  |
+| 1 | [`AlgebraicGeometry.Scheme.harthshorne_conjecture`](https://lefttosolve.com/p/AlgebraicGeometry.Scheme.harthshorne_conjecture) | AlgebraicGeometry | open | Algebraic Geometry |  |  |
+| 2 | [`AlgebraicGeometry.Scheme.hasFiniteCoproductsVectorBundles`](https://lefttosolve.com/p/AlgebraicGeometry.Scheme.hasFiniteCoproductsVectorBundles) | AlgebraicGeometry | warmup | Algebraic Geometry |  | yes |
+| 3 | [`AuslanderReiten.auslander_reiten.variants.commutative`](https://lefttosolve.com/p/AuslanderReiten.auslander_reiten.variants.commutative) | The Auslander-Reiten conjecture for commutative Noetherian rings | open | Category Theory, Commutative Algebra |  |  |
+| 4 | [`AuslanderReiten.auslander_reiten.variants.local_free`](https://lefttosolve.com/p/AuslanderReiten.auslander_reiten.variants.local_free) | The Auslander-Reiten conjecture — local free | open | Category Theory, Commutative Algebra |  |  |
+| 5 | [`AuslanderReiten.auslander_reiten.variants.normal`](https://lefttosolve.com/p/AuslanderReiten.auslander_reiten.variants.normal) | The Auslander-Reiten conjecture — normal | known | Category Theory, Commutative Algebra |  |  |
+| 6 | [`AuslanderReiten.auslander_reiten.variants.regular_local`](https://lefttosolve.com/p/AuslanderReiten.auslander_reiten.variants.regular_local) | The Auslander-Reiten conjecture — regular local | warmup | Category Theory, Commutative Algebra |  | yes |
+| 7 | [`BollobasEldridgeCatlinConjecture.bollobas_eldridge_catlin_conjecture`](https://lefttosolve.com/p/BollobasEldridgeCatlinConjecture.bollobas_eldridge_catlin_conjecture) | The Bollobás–Eldridge–Catlin conjecture (1978). | open | Combinatorics |  |  |
+| 8 | [`BollobasEldridgeCatlinConjecture.bollobas_eldridge_catlin_conjecture.variants.maxDegree_le_two`](https://lefttosolve.com/p/BollobasEldridgeCatlinConjecture.bollobas_eldridge_catlin_conjecture.variants.maxDegree_le_two) | Maximum degree two (Aigner–Brandt 1993). | known | Combinatorics |  |  |
+| 9 | [`BollobasEldridgeCatlinConjecture.bollobas_eldridge_catlin_conjecture.variants.maxDegree_three_large_n`](https://lefttosolve.com/p/BollobasEldridgeCatlinConjecture.bollobas_eldridge_catlin_conjecture.variants.maxDegree_three_large_n) | Maximum degree three, for large $n$ (Csaba–Shokoufandeh–Szemerédi 2003). | known | Combinatorics |  |  |
+| 10 | [`BranchingVAS.reachability_decidable`](https://lefttosolve.com/p/BranchingVAS.reachability_decidable) | Decidability of reachability for branching vector addition systems | known | Computer Science, Logic & Foundations |  |  |
+| 11 | [`BurningNumberConjecture.burning_number_conjecture`](https://lefttosolve.com/p/BurningNumberConjecture.burning_number_conjecture) | The burning number conjecture | open | Combinatorics |  |  |
+| 12 | [`BurningNumberConjecture.burning_number_conjecture.variants.norin_turcotte`](https://lefttosolve.com/p/BurningNumberConjecture.burning_number_conjecture.variants.norin_turcotte) | Norin–Turcotte (2024): the burning number conjecture holds asymptotically. | known | Combinatorics |  |  |
+| 13 | [`BurningNumberConjecture.burning_number_conjecture.variants.path`](https://lefttosolve.com/p/BurningNumberConjecture.burning_number_conjecture.variants.path) | Paths attain the conjectured bound | known | Combinatorics |  | yes |
+| 14 | [`CardinalityLindelof.HasG-Singletons.lindelof_card`](https://lefttosolve.com/p/CardinalityLindelof.HasG-Singletons.lindelof_card) | Conjecture about cardinality of Lindelöf spaces — lindelof card | open | General Topology |  |  |
+| 15 | [`CasasAlvero.casas_alvero.double_prime_power`](https://lefttosolve.com/p/CasasAlvero.casas_alvero.double_prime_power) | Casas-Alvero Conjecture — double prime power | known | Field Theory |  | yes |
+| 16 | [`CasasAlvero.casas_alvero.prime_power`](https://lefttosolve.com/p/CasasAlvero.casas_alvero.prime_power) | Casas-Alvero Conjecture — prime power | known | Field Theory |  | yes |
+| 17 | [`CasasAlvero.casas_alvero_conjecture`](https://lefttosolve.com/p/CasasAlvero.casas_alvero_conjecture) | Casas-Alvero Conjecture | open | Field Theory |  |  |
+| 18 | [`CatchUp.value_of_even_mul_succ_self_div_two`](https://lefttosolve.com/p/CatchUp.value_of_even_mul_succ_self_div_two) | The Catch-Up game and conjecture | open | Game Theory & Economics, Number Theory |  |  |
+| 19 | [`ClaudesCycles.cube_hamiltonian_arc_decomposition_even`](https://lefttosolve.com/p/ClaudesCycles.cube_hamiltonian_arc_decomposition_even) | Claude's Cycles — cube hamiltonian arc decomposition even | known | Combinatorics |  |  |
+| 20 | [`ClaudesCycles.cube_hamiltonian_arc_decomposition_impossible_m2`](https://lefttosolve.com/p/ClaudesCycles.cube_hamiltonian_arc_decomposition_impossible_m2) | Claude's Cycles — cube hamiltonian arc decomposition impossible m2 | known | Combinatorics |  | yes |
+| 21 | [`ConjugacyClassSizes.conjClassSizes_iff_sym_three`](https://lefttosolve.com/p/ConjugacyClassSizes.conjClassSizes_iff_sym_three) | Markel's $S_3$-conjecture | open | Group Theory |  |  |
+| 22 | [`ConjugacyClassSizes.conjClassSizes_iff_sym_three_solvable`](https://lefttosolve.com/p/ConjugacyClassSizes.conjClassSizes_iff_sym_three_solvable) | The $S_3$-conjecture (conjugacy classes of distinct sizes) | known | Group Theory |  |  |
+| 23 | [`DeGiorgi.DeGiorgi_eight`](https://lefttosolve.com/p/DeGiorgi.DeGiorgi_eight) | De Giorgi's conjecture — DeGiorgi eight | open | PDEs |  |  |
+| 24 | [`DeGiorgi.DeGiorgi_five`](https://lefttosolve.com/p/DeGiorgi.DeGiorgi_five) | De Giorgi's conjecture — DeGiorgi five | open | PDEs |  |  |
+| 25 | [`DeGiorgi.DeGiorgi_four`](https://lefttosolve.com/p/DeGiorgi.DeGiorgi_four) | De Giorgi's conjecture — DeGiorgi four | open | PDEs |  |  |
+| 26 | [`DeGiorgi.DeGiorgi_ge_nine`](https://lefttosolve.com/p/DeGiorgi.DeGiorgi_ge_nine) | De Giorgi's conjecture — DeGiorgi ge nine | known | PDEs |  |  |
+| 27 | [`DeGiorgi.DeGiorgi_le_eight`](https://lefttosolve.com/p/DeGiorgi.DeGiorgi_le_eight) | De Giorgi's conjecture — DeGiorgi le eight | open | PDEs |  |  |
+| 28 | [`DeGiorgi.DeGiorgi_seven`](https://lefttosolve.com/p/DeGiorgi.DeGiorgi_seven) | De Giorgi's conjecture — DeGiorgi seven | open | PDEs |  |  |
+| 29 | [`DeGiorgi.DeGiorgi_six`](https://lefttosolve.com/p/DeGiorgi.DeGiorgi_six) | De Giorgi's conjecture — DeGiorgi six | open | PDEs |  |  |
+| 30 | [`DeGiorgi.DeGiorgi_three`](https://lefttosolve.com/p/DeGiorgi.DeGiorgi_three) | De Giorgi's conjecture — DeGiorgi three | known | PDEs |  |  |
+| 31 | [`DeGiorgi.DeGiorgi_two`](https://lefttosolve.com/p/DeGiorgi.DeGiorgi_two) | De Giorgi's conjecture — DeGiorgi two | known | PDEs |  | yes |
+| 32 | [`DirichletCharacter.distinct_prop_lt`](https://lefttosolve.com/p/DirichletCharacter.distinct_prop_lt) | Simple zeros of the Riemann zeta function on the critical line — distinct prop lt | open | Number Theory |  |  |
+| 33 | [`DirichletCharacter.distinct_prop_one_hundred`](https://lefttosolve.com/p/DirichletCharacter.distinct_prop_one_hundred) | Simple zeros of the Riemann zeta function on the critical line — distinct prop one hundred | open | Number Theory |  |  |
+| 34 | [`DirichletCharacter.simple_prop_lt`](https://lefttosolve.com/p/DirichletCharacter.simple_prop_lt) | Simple zeros of the Riemann zeta function on the critical line — simple prop lt | open | Number Theory |  |  |
+| 35 | [`DirichletCharacter.simple_prop_one_hundred`](https://lefttosolve.com/p/DirichletCharacter.simple_prop_one_hundred) | Simple zeros of the Riemann zeta function on the critical line — simple prop one hundred | open | Number Theory |  |  |
+| 36 | [`DisjointNPPairs.no_complete_disjoint_NP_pair`](https://lefttosolve.com/p/DisjointNPPairs.no_complete_disjoint_NP_pair) | There is no complete disjoint NP pair | open | Computer Science, Logic & Foundations |  |  |
+| 37 | [`DisjointNPPairs.no_complete_disjoint_NP_pair.variants.exists_of_NP_eq_coNP`](https://lefttosolve.com/p/DisjointNPPairs.no_complete_disjoint_NP_pair.variants.exists_of_NP_eq_coNP) | If `NP = coNP` then a complete disjoint NP pair exists | known | Computer Science, Logic & Foundations |  |  |
+| 38 | [`DisjointNPPairs.no_complete_disjoint_coNP_pair`](https://lefttosolve.com/p/DisjointNPPairs.no_complete_disjoint_coNP_pair) | There is no complete disjoint coNP pair | open | Computer Science, Logic & Foundations |  |  |
+| 39 | [`DubnerConjecture.dubner_conjecture`](https://lefttosolve.com/p/DubnerConjecture.dubner_conjecture) | Dubner's conjecture | open | Number Theory |  |  |
+| 40 | [`EisenbudGreenHarris.eisenbud_green_harris`](https://lefttosolve.com/p/EisenbudGreenHarris.eisenbud_green_harris) | The Eisenbud-Green-Harris conjecture. | open | Commutative Algebra |  |  |
+| 41 | [`EisenbudGreenHarris.eisenbud_green_harris.variants.caviglia_deStefani`](https://lefttosolve.com/p/EisenbudGreenHarris.eisenbud_green_harris.variants.caviglia_deStefani) | The Eisenbud-Green-Harris conjecture — caviglia deStefani | known | Commutative Algebra |  |  |
+| 42 | [`EisenbudGreenHarris.eisenbud_green_harris.variants.clements_lindstrom`](https://lefttosolve.com/p/EisenbudGreenHarris.eisenbud_green_harris.variants.clements_lindstrom) | The Clements-Lindström theorem | known | Commutative Algebra |  |  |
+| 43 | [`EisenbudGreenHarris.eisenbud_green_harris.variants.macaulay`](https://lefttosolve.com/p/EisenbudGreenHarris.eisenbud_green_harris.variants.macaulay) | Macaulay's theorem | known | Commutative Algebra |  |  |
+| 44 | [`EuclideanRamseyCircle.at_most_five_circle_points_ramsey`](https://lefttosolve.com/p/EuclideanRamseyCircle.at_most_five_circle_points_ramsey) | Euclidean Ramsey configurations on a circle | known | Combinatorics, Convex & Discrete Geometry |  | yes |
+| 45 | [`FanelliMoscardelli.stability_threshold_tight`](https://lefttosolve.com/p/FanelliMoscardelli.stability_threshold_tight) | Fanelli–Moscardelli conjecture on approximate roommates stability | open | Combinatorics, Computer Science, Game Theory & Economics |  |  |
+| 46 | [`FiniteLocallyFreeGroupSchemeExponent.killed_by_rank.variants.commutative`](https://lefttosolve.com/p/FiniteLocallyFreeGroupSchemeExponent.killed_by_rank.variants.commutative) | Is a finite locally free group scheme killed by its order? — commutative | known | Algebraic Geometry, Associative Rings |  |  |
+| 47 | [`FiniteLocallyFreeGroupSchemeExponent.killed_by_rank.variants.field`](https://lefttosolve.com/p/FiniteLocallyFreeGroupSchemeExponent.killed_by_rank.variants.field) | Is a finite locally free group scheme killed by its order? — field | known | Algebraic Geometry, Associative Rings |  |  |
+| 48 | [`FiniteLocallyFreeGroupSchemeExponent.killed_by_rank.variants.reduced_base`](https://lefttosolve.com/p/FiniteLocallyFreeGroupSchemeExponent.killed_by_rank.variants.reduced_base) | Is a finite locally free group scheme killed by its order? — reduced base | known | Algebraic Geometry, Associative Rings |  |  |
+| 49 | [`FiniteLocallyFreeGroupSchemeExponent.optimal_exponent`](https://lefttosolve.com/p/FiniteLocallyFreeGroupSchemeExponent.optimal_exponent) | Is a finite locally free group scheme killed by its order? | open | Algebraic Geometry, Associative Rings |  |  |
+| 50 | [`FusibleNumber.conj_7_1`](https://lefttosolve.com/p/FusibleNumber.conj_7_1) | Main conjecture on fusible numbers | open | Combinatorics |  |  |
+| 51 | [`Gourevitch.gourevitch_series_identity`](https://lefttosolve.com/p/Gourevitch.gourevitch_series_identity) | Gourevitch's series identity | known | Number Theory, Special Functions |  |  |
+| 52 | [`HallRatioConjecture.hall_ratio_conjecture`](https://lefttosolve.com/p/HallRatioConjecture.hall_ratio_conjecture) | The Hall ratio conjecture (Harris 2019) — disproved. | known | Combinatorics |  | yes |
+| 53 | [`HallRatioConjecture.hall_ratio_conjecture.variants.hallRatio_le_fractionalChromaticNumber`](https://lefttosolve.com/p/HallRatioConjecture.hall_ratio_conjecture.variants.hallRatio_le_fractionalChromaticNumber) | The Hall ratio is a lower bound for the fractional chromatic number. | known | Combinatorics |  | yes |
+| 54 | [`HallRatioConjecture.hall_ratio_conjecture.variants.unbounded`](https://lefttosolve.com/p/HallRatioConjecture.hall_ratio_conjecture.variants.unbounded) | Unbounded ratio (Dvořák–Ossona de Mendez–Wu 2020; Blumenthal et al. 2022). | known | Combinatorics |  | yes |
+| 55 | [`Homogeneous.countablyMonolithicSpace_card_lt`](https://lefttosolve.com/p/Homogeneous.countablyMonolithicSpace_card_lt) | Conjectures around homogeneous topological spaces — countablyMonolithicSpace card lt | open | General Topology |  |  |
+| 56 | [`Homogeneous.firstCountableTopology_of_countablyMonolithicSpace`](https://lefttosolve.com/p/Homogeneous.firstCountableTopology_of_countablyMonolithicSpace) | Conjectures around homogeneous topological spaces — firstCountableTopology of countablyMonolithicSpace | open | General Topology |  |  |
+| 57 | [`Homogeneous.homogeneousSpace_exists_inj_tendsto`](https://lefttosolve.com/p/Homogeneous.homogeneousSpace_exists_inj_tendsto) | Conjectures around homogeneous topological spaces — homogeneousSpace exists inj tendsto | open | General Topology |  |  |
+| 58 | [`Homogeneous.homogeneousSpace_exists_surjective`](https://lefttosolve.com/p/Homogeneous.homogeneousSpace_exists_surjective) | Conjectures around homogeneous topological spaces — homogeneousSpace exists surjective | open | General Topology |  |  |
+| 59 | [`Homogeneous.monolithicSpace_exists_nhds_generated_countable`](https://lefttosolve.com/p/Homogeneous.monolithicSpace_exists_nhds_generated_countable) | Conjectures around homogeneous topological spaces — monolithicSpace exists nhds generated countable | open | General Topology |  |  |
+| 60 | [`IrvingLeather.irving_leather_growth_rate`](https://lefttosolve.com/p/IrvingLeather.irving_leather_growth_rate) | The Irving–Leather conjecture on stable matchings — irving leather growth rate | open | Combinatorics |  |  |
+| 61 | [`IrvingLeather.irving_leather_pow_two`](https://lefttosolve.com/p/IrvingLeather.irving_leather_pow_two) | The Irving–Leather conjecture on stable matchings — irving leather pow two | open | Combinatorics |  |  |
+| 62 | [`KaplanskyUInvariant.u_invariant_values`](https://lefttosolve.com/p/KaplanskyUInvariant.u_invariant_values) | The values of the $u$-invariant | open | Field Theory, Number Theory |  |  |
+| 63 | [`KaplanskyUInvariant.u_invariant_values.variants.even`](https://lefttosolve.com/p/KaplanskyUInvariant.u_invariant_values.variants.even) | Merkurjev's theorem | known | Field Theory, Number Theory |  |  |
+| 64 | [`KaplanskyUInvariant.u_invariant_values.variants.fifteen`](https://lefttosolve.com/p/KaplanskyUInvariant.u_invariant_values.variants.fifteen) | Kaplansky's problem on the values of the $u$-invariant — fifteen | open | Field Theory, Number Theory |  |  |
+| 65 | [`KaplanskyUInvariant.u_invariant_values.variants.kaplansky_conjecture`](https://lefttosolve.com/p/KaplanskyUInvariant.u_invariant_values.variants.kaplansky_conjecture) | Kaplansky's conjecture | known | Field Theory, Number Theory |  |  |
+| 66 | [`KaplanskyUInvariant.u_invariant_values.variants.karpenko`](https://lefttosolve.com/p/KaplanskyUInvariant.u_invariant_values.variants.karpenko) | Karpenko's theorem | known | Field Theory, Number Theory |  |  |
+| 67 | [`KaplanskyUInvariant.u_invariant_values.variants.nine`](https://lefttosolve.com/p/KaplanskyUInvariant.u_invariant_values.variants.nine) | Izhboldin's theorem | known | Field Theory, Number Theory |  |  |
+| 68 | [`KaplanskyUInvariant.u_invariant_values.variants.not_five`](https://lefttosolve.com/p/KaplanskyUInvariant.u_invariant_values.variants.not_five) | Kaplansky's problem on the values of the $u$-invariant — not five | known | Field Theory, Number Theory |  | yes |
+| 69 | [`KaplanskyUInvariant.u_invariant_values.variants.not_seven`](https://lefttosolve.com/p/KaplanskyUInvariant.u_invariant_values.variants.not_seven) | Kaplansky's problem on the values of the $u$-invariant — not seven | known | Field Theory, Number Theory |  | yes |
+| 70 | [`KaplanskyUInvariant.u_invariant_values.variants.not_three`](https://lefttosolve.com/p/KaplanskyUInvariant.u_invariant_values.variants.not_three) | Kaplansky's problem on the values of the $u$-invariant — not three | known | Field Theory, Number Theory |  | yes |
+| 71 | [`KaplanskyUInvariant.u_invariant_values.variants.odd`](https://lefttosolve.com/p/KaplanskyUInvariant.u_invariant_values.variants.odd) | Kaplansky's problem on the values of the $u$-invariant — odd | open | Field Theory, Number Theory |  |  |
+| 72 | [`KaplanskyUInvariant.u_invariant_values.variants.thirteen`](https://lefttosolve.com/p/KaplanskyUInvariant.u_invariant_values.variants.thirteen) | Kaplansky's problem on the values of the $u$-invariant — thirteen | open | Field Theory, Number Theory |  |  |
+| 73 | [`KaplanskyUInvariant.u_invariant_values.variants.two_pow_add_one`](https://lefttosolve.com/p/KaplanskyUInvariant.u_invariant_values.variants.two_pow_add_one) | Vishik's theorem | known | Field Theory, Number Theory |  |  |
+| 74 | [`KotzigConjecture.kotzig_conjecture`](https://lefttosolve.com/p/KotzigConjecture.kotzig_conjecture) | Kotzig's Conjecture | open | Combinatorics |  |  |
+| 75 | [`Kurepa.kurepa_conjecture`](https://lefttosolve.com/p/Kurepa.kurepa_conjecture) | Kurepa's conjecture | open | Number Theory |  |  |
+| 76 | [`Kurepa.kurepa_conjecture.variants.gcd`](https://lefttosolve.com/p/Kurepa.kurepa_conjecture.variants.gcd) | Kurepa's conjecture — gcd | open | Number Theory |  |  |
+| 77 | [`Kurepa.kurepa_conjecture.variants.prime`](https://lefttosolve.com/p/Kurepa.kurepa_conjecture.variants.prime) | Kurepa's conjecture — prime | open | Number Theory |  |  |
+| 78 | [`LatinSquare.growthRateZn`](https://lefttosolve.com/p/LatinSquare.growthRateZn) | Conjectures about Latin Squares — growthRateZn | known | Combinatorics |  |  |
+| 79 | [`LatinSquare.latinSquareNearTransversal`](https://lefttosolve.com/p/LatinSquare.latinSquareNearTransversal) | Conjectures about Latin Squares — latinSquareNearTransversal | open | Combinatorics |  |  |
+| 80 | [`LatinSquare.latinSquareOrder11Transversal`](https://lefttosolve.com/p/LatinSquare.latinSquareOrder11Transversal) | Conjectures about Latin Squares — latinSquareOrder11Transversal | open | Combinatorics |  |  |
+| 81 | [`LatinSquare.maxTransversalsBound`](https://lefttosolve.com/p/LatinSquare.maxTransversalsBound) | Conjectures about Latin Squares — maxTransversalsBound | known | Combinatorics |  |  |
+| 82 | [`LatinSquare.molsExistenceProblem`](https://lefttosolve.com/p/LatinSquare.molsExistenceProblem) | Conjectures about Latin Squares — molsExistenceProblem | open | Combinatorics |  |  |
+| 83 | [`LatinSquare.molsOrder12`](https://lefttosolve.com/p/LatinSquare.molsOrder12) | Conjectures about Latin Squares — molsOrder12 | open | Combinatorics |  |  |
+| 84 | [`LatinSquare.numTransversalsZn`](https://lefttosolve.com/p/LatinSquare.numTransversalsZn) | Conjectures about Latin Squares — numTransversalsZn | known | Combinatorics |  |  |
+| 85 | [`LatinSquare.oddOrderLatinSquareTransversal`](https://lefttosolve.com/p/LatinSquare.oddOrderLatinSquareTransversal) | Conjectures about Latin Squares — oddOrderLatinSquareTransversal | open | Combinatorics |  |  |
+| 86 | [`LatinSquare.oddOrderLeq9LatinSquareTransversal`](https://lefttosolve.com/p/LatinSquare.oddOrderLeq9LatinSquareTransversal) | Conjectures about Latin Squares — oddOrderLeq9LatinSquareTransversal | known | Combinatorics |  |  |
+| 87 | [`LatinTableau.SimpleGraph.LatinTableauConjecture`](https://lefttosolve.com/p/LatinTableau.SimpleGraph.LatinTableauConjecture) | Latin Tableau Conjecture | open | Combinatorics |  |  |
+| 88 | [`LennonPittel.lennon_pittel_conjecture`](https://lefttosolve.com/p/LennonPittel.lennon_pittel_conjecture) | Lennon–Pittel conjecture on random stable matchings | open | Combinatorics, Probability |  |  |
+| 89 | [`ManickamMiklosSinghiConjecture.manickam_miklos_singhi_conjecture`](https://lefttosolve.com/p/ManickamMiklosSinghiConjecture.manickam_miklos_singhi_conjecture) | The Manickam–Miklós–Singhi conjecture (1988). | open | Combinatorics |  |  |
+| 90 | [`ManickamMiklosSinghiConjecture.manickam_miklos_singhi_conjecture.variants.pokrovskiy`](https://lefttosolve.com/p/ManickamMiklosSinghiConjecture.manickam_miklos_singhi_conjecture.variants.pokrovskiy) | The Manickam–Miklós–Singhi conjecture (1988) — pokrovskiy | known | Combinatorics |  |  |
+| 91 | [`ManickamMiklosSinghiConjecture.manickam_miklos_singhi_conjecture.variants.quadratic`](https://lefttosolve.com/p/ManickamMiklosSinghiConjecture.manickam_miklos_singhi_conjecture.variants.quadratic) | Chowdhury–Sarkis–Shahriari (2014): the conjecture holds for $n \\ge 8k^2$. | known | Combinatorics |  |  |
+| 92 | [`MonochromaticQuantumGraph.eqSystem10_no_solution_d3`](https://lefttosolve.com/p/MonochromaticQuantumGraph.eqSystem10_no_solution_d3) | Monochromatic quantum graphs (inherited vertex colorings) — eqSystem10 no solution d3 | open | Algebraic Geometry, Combinatorics, Quantum Theory |  |  |
+| 93 | [`MonochromaticQuantumGraph.eqSystem10_no_solution_d3_real`](https://lefttosolve.com/p/MonochromaticQuantumGraph.eqSystem10_no_solution_d3_real) | Monochromatic quantum graphs (inherited vertex colorings) — eqSystem10 no solution d3 real | open | Algebraic Geometry, Combinatorics, Quantum Theory |  |  |
+| 94 | [`MonochromaticQuantumGraph.eqSystem10_no_solution_d4`](https://lefttosolve.com/p/MonochromaticQuantumGraph.eqSystem10_no_solution_d4) | Monochromatic quantum graphs (inherited vertex colorings) — eqSystem10 no solution d4 | open | Algebraic Geometry, Combinatorics, Quantum Theory |  |  |
+| 95 | [`MonochromaticQuantumGraph.eqSystem10_no_solution_d5`](https://lefttosolve.com/p/MonochromaticQuantumGraph.eqSystem10_no_solution_d5) | Monochromatic quantum graphs (inherited vertex colorings) — eqSystem10 no solution d5 | open | Algebraic Geometry, Combinatorics, Quantum Theory |  |  |
+| 96 | [`MonochromaticQuantumGraph.eqSystem10_no_solution_d6`](https://lefttosolve.com/p/MonochromaticQuantumGraph.eqSystem10_no_solution_d6) | Monochromatic quantum graphs (inherited vertex colorings) — eqSystem10 no solution d6 | open | Algebraic Geometry, Combinatorics, Quantum Theory |  |  |
+| 97 | [`MonochromaticQuantumGraph.eqSystem10_no_solution_d7`](https://lefttosolve.com/p/MonochromaticQuantumGraph.eqSystem10_no_solution_d7) | Monochromatic quantum graphs (inherited vertex colorings) — eqSystem10 no solution d7 | open | Algebraic Geometry, Combinatorics, Quantum Theory |  |  |
+| 98 | [`MonochromaticQuantumGraph.eqSystem12_no_solution_d3`](https://lefttosolve.com/p/MonochromaticQuantumGraph.eqSystem12_no_solution_d3) | Monochromatic quantum graphs (inherited vertex colorings) — eqSystem12 no solution d3 | open | Algebraic Geometry, Combinatorics, Quantum Theory |  |  |
+| 99 | [`MonochromaticQuantumGraph.eqSystem14_no_solution_d3`](https://lefttosolve.com/p/MonochromaticQuantumGraph.eqSystem14_no_solution_d3) | Monochromatic quantum graphs (inherited vertex colorings) — eqSystem14 no solution d3 | open | Algebraic Geometry, Combinatorics, Quantum Theory |  |  |
+| 100 | [`MonochromaticQuantumGraph.eqSystem16_no_solution_d3`](https://lefttosolve.com/p/MonochromaticQuantumGraph.eqSystem16_no_solution_d3) | Monochromatic quantum graphs (inherited vertex colorings) — eqSystem16 no solution d3 | open | Algebraic Geometry, Combinatorics, Quantum Theory |  |  |
+| 101 | [`MonochromaticQuantumGraph.eqSystem4_no_solution_nnreal_ge4`](https://lefttosolve.com/p/MonochromaticQuantumGraph.eqSystem4_no_solution_nnreal_ge4) | Monochromatic quantum graphs (inherited vertex colorings) — eqSystem4 no solution nnreal ge4 | known | Algebraic Geometry, Combinatorics, Quantum Theory |  | yes |
+| 102 | [`MonochromaticQuantumGraph.eqSystem6_no_solution_d3_real`](https://lefttosolve.com/p/MonochromaticQuantumGraph.eqSystem6_no_solution_d3_real) | Monochromatic quantum graphs (inherited vertex colorings) — eqSystem6 no solution d3 real | open | Algebraic Geometry, Combinatorics, Quantum Theory |  |  |
+| 103 | [`MonochromaticQuantumGraph.eqSystem6_no_solution_ge3`](https://lefttosolve.com/p/MonochromaticQuantumGraph.eqSystem6_no_solution_ge3) | Monochromatic quantum graphs (inherited vertex colorings) — eqSystem6 no solution ge3 | open | Algebraic Geometry, Combinatorics, Quantum Theory |  |  |
+| 104 | [`MonochromaticQuantumGraph.eqSystem6_no_solution_ge3_real`](https://lefttosolve.com/p/MonochromaticQuantumGraph.eqSystem6_no_solution_ge3_real) | Monochromatic quantum graphs (inherited vertex colorings) — eqSystem6 no solution ge3 real | open | Algebraic Geometry, Combinatorics, Quantum Theory |  |  |
+| 105 | [`MonochromaticQuantumGraph.eqSystem8_no_solution_d3`](https://lefttosolve.com/p/MonochromaticQuantumGraph.eqSystem8_no_solution_d3) | Monochromatic quantum graphs (inherited vertex colorings) — eqSystem8 no solution d3 | open | Algebraic Geometry, Combinatorics, Quantum Theory |  |  |
+| 106 | [`MonochromaticQuantumGraph.eqSystem8_no_solution_d3_real`](https://lefttosolve.com/p/MonochromaticQuantumGraph.eqSystem8_no_solution_d3_real) | Monochromatic quantum graphs (inherited vertex colorings) — eqSystem8 no solution d3 real | open | Algebraic Geometry, Combinatorics, Quantum Theory |  |  |
+| 107 | [`MonochromaticQuantumGraph.eqSystem_no_solution_ge6_ge3`](https://lefttosolve.com/p/MonochromaticQuantumGraph.eqSystem_no_solution_ge6_ge3) | Monochromatic quantum graphs (inherited vertex colorings) — eqSystem no solution ge6 ge3 | open | Algebraic Geometry, Combinatorics, Quantum Theory |  |  |
+| 108 | [`MonochromaticQuantumGraph.eqSystem_no_solution_ge6_ge3_real`](https://lefttosolve.com/p/MonochromaticQuantumGraph.eqSystem_no_solution_ge6_ge3_real) | Monochromatic quantum graphs (inherited vertex colorings) — eqSystem no solution ge6 ge3 real | open | Algebraic Geometry, Combinatorics, Quantum Theory |  |  |
+| 109 | [`MonochromaticQuantumGraph.eqSystem_no_solution_nnreal_even_ge6_ge3`](https://lefttosolve.com/p/MonochromaticQuantumGraph.eqSystem_no_solution_nnreal_even_ge6_ge3) | Monochromatic quantum graphs (inherited vertex colorings) — eqSystem no solution nnreal even ge6 ge3 | known | Algebraic Geometry, Combinatorics, Quantum Theory |  | yes |
+| 110 | [`NLSCritical.NLS_apriori`](https://lefttosolve.com/p/NLSCritical.NLS_apriori) | Energy-critical NLS in three dimensions. | known | PDEs |  |  |
+| 111 | [`OneTwoThreeConjecture.one_two_three_conjecture`](https://lefttosolve.com/p/OneTwoThreeConjecture.one_two_three_conjecture) | The 1-2-3 conjecture (Karoński–Łuczak–Thomason 2004), proved by Keusch (2024). | known | Combinatorics |  |  |
+| 112 | [`PartitionParity.ahlgren.even`](https://lefttosolve.com/p/PartitionParity.ahlgren.even) | Parities of partition numbers — even | known | Number Theory |  |  |
+| 113 | [`PartitionParity.ahlgren.odd`](https://lefttosolve.com/p/PartitionParity.ahlgren.odd) | Parities of partition numbers — odd | known | Number Theory |  |  |
+| 114 | [`PartitionParity.bellaiche_green_soundararajan.odd`](https://lefttosolve.com/p/PartitionParity.bellaiche_green_soundararajan.odd) | Parities of partition numbers — odd | known | Number Theory |  |  |
+| 115 | [`PartitionParity.bellaiche_nicolas.even`](https://lefttosolve.com/p/PartitionParity.bellaiche_nicolas.even) | Parities of partition numbers — even | known | Number Theory |  |  |
+| 116 | [`PartitionParity.bellaiche_nicolas.even_explicit`](https://lefttosolve.com/p/PartitionParity.bellaiche_nicolas.even_explicit) | Parities of partition numbers — even explicit | known | Number Theory |  |  |
+| 117 | [`PartitionParity.bellaiche_nicolas.odd_explicit`](https://lefttosolve.com/p/PartitionParity.bellaiche_nicolas.odd_explicit) | Parities of partition numbers — odd explicit | known | Number Theory |  |  |
+| 118 | [`PartitionParity.classNumber_eq_ncard_reducedForms`](https://lefttosolve.com/p/PartitionParity.classNumber_eq_ncard_reducedForms) | Parities of partition numbers — classNumber eq ncard reducedForms | warmup | Number Theory |  | yes |
+| 119 | [`PartitionParity.kolberg`](https://lefttosolve.com/p/PartitionParity.kolberg) | Parities of partition numbers — kolberg | known | Number Theory |  | yes |
+| 120 | [`PartitionParity.ono.polynomial`](https://lefttosolve.com/p/PartitionParity.ono.polynomial) | Parities of partition numbers — polynomial | open | Number Theory |  |  |
+| 121 | [`PartitionParity.ono_swaminathan.odd_bound`](https://lefttosolve.com/p/PartitionParity.ono_swaminathan.odd_bound) | Parities of partition numbers — odd bound | known | Number Theory |  |  |
+| 122 | [`PartitionParity.ono_swaminathan.quadratic`](https://lefttosolve.com/p/PartitionParity.ono_swaminathan.quadratic) | Parities of partition numbers — quadratic | known | Number Theory |  |  |
+| 123 | [`PartitionParity.parkin_shanks`](https://lefttosolve.com/p/PartitionParity.parkin_shanks) | Parities of partition numbers — parkin shanks | open | Number Theory |  |  |
+| 124 | [`PartitionParity.subbarao.even`](https://lefttosolve.com/p/PartitionParity.subbarao.even) | Parities of partition numbers — even | known | Number Theory |  |  |
+| 125 | [`PartitionParity.subbarao.odd`](https://lefttosolve.com/p/PartitionParity.subbarao.odd) | Parities of partition numbers — odd | known | Number Theory |  |  |
+| 126 | [`PartitionParity.zheng.odd`](https://lefttosolve.com/p/PartitionParity.zheng.odd) | Parities of partition numbers — odd | known | Number Theory |  |  |
+| 127 | [`PfisterPythagorasNumber.pfister_problem`](https://lefttosolve.com/p/PfisterPythagorasNumber.pfister_problem) | Pfister's problem | open | Algebraic Geometry, Field Theory, Number Theory |  |  |
+| 128 | [`PfisterPythagorasNumber.pfister_problem.variants.eq_two_pow`](https://lefttosolve.com/p/PfisterPythagorasNumber.pfister_problem.variants.eq_two_pow) | Pfister's problem on the Pythagoras number of $\\mathbb{R}(X_1, \\dots, X_n)$ — eq two pow | open | Algebraic Geometry, Field Theory, Number Theory |  |  |
+| 129 | [`PfisterPythagorasNumber.pfister_problem.variants.lower_bound`](https://lefttosolve.com/p/PfisterPythagorasNumber.pfister_problem.variants.lower_bound) | Pfister's problem on the Pythagoras number of $\\mathbb{R}(X_1, \\dots, X_n)$ — lower bound | known | Algebraic Geometry, Field Theory, Number Theory |  |  |
+| 130 | [`PrimeTuplesConjecture.prime_tuples_conjecture`](https://lefttosolve.com/p/PrimeTuplesConjecture.prime_tuples_conjecture) | Prime Tuples Conjecture | open | Number Theory |  |  |
+| 131 | [`PudlakFiniteDomain.np_inter_conp_no_complete_language`](https://lefttosolve.com/p/PudlakFiniteDomain.np_inter_conp_no_complete_language) | NP ∩ coNP has no complete language | open | Computer Science, Logic & Foundations |  |  |
+| 132 | [`PudlakFiniteDomain.sat_no_p_optimal_proof_system`](https://lefttosolve.com/p/PudlakFiniteDomain.sat_no_p_optimal_proof_system) | SAT has no p-optimal proof system | open | Computer Science, Logic & Foundations |  |  |
+| 133 | [`PudlakFiniteDomain.sat_no_p_optimal_proof_system.variants.exists_of_P_eq_NP`](https://lefttosolve.com/p/PudlakFiniteDomain.sat_no_p_optimal_proof_system.variants.exists_of_P_eq_NP) | If `P = NP` then every NP-complete language has a p-optimal proof system. | warmup | Computer Science, Logic & Foundations |  | yes |
+| 134 | [`PudlakFiniteDomain.tfnp_no_complete_problem`](https://lefttosolve.com/p/PudlakFiniteDomain.tfnp_no_complete_problem) | TFNP has no complete problem | open | Computer Science, Logic & Foundations |  |  |
+| 135 | [`PudlakFiniteDomain.tfnp_no_complete_problem.variants.exists_of_NP_eq_coNP`](https://lefttosolve.com/p/PudlakFiniteDomain.tfnp_no_complete_problem.variants.exists_of_NP_eq_coNP) | If `NP = coNP` then TFNP has a complete problem | known | Computer Science, Logic & Foundations |  |  |
+| 136 | [`PudlakFiniteDomain.up_no_complete_language`](https://lefttosolve.com/p/PudlakFiniteDomain.up_no_complete_language) | UP has no complete language | open | Computer Science, Logic & Foundations |  |  |
+| 137 | [`ReedOmegaDeltaChi.reed_conjecture_-_6_-_2`](https://lefttosolve.com/p/ReedOmegaDeltaChi.reed_conjecture_-_6_-_2) | Reed's omega, delta, and chi conjecture — reed conjecture Δ 6 ω 2 | open | Combinatorics |  |  |
+| 138 | [`ReedOmegaDeltaChi.reed_omega_delta_chi_conjecture`](https://lefttosolve.com/p/ReedOmegaDeltaChi.reed_omega_delta_chi_conjecture) | Reed's omega, delta, and chi conjecture — reed omega delta chi conjecture | open | Combinatorics |  |  |
+| 139 | [`ReedOmegaDeltaChi.reed_omega_delta_chi_conjecture_for_finite_graphs`](https://lefttosolve.com/p/ReedOmegaDeltaChi.reed_omega_delta_chi_conjecture_for_finite_graphs) | Reed's omega, delta, and chi conjecture — reed omega delta chi conjecture for finite graphs | open | Combinatorics |  |  |
+| 140 | [`RiemannHypothesis.beurling_nyman_criterion`](https://lefttosolve.com/p/RiemannHypothesis.beurling_nyman_criterion) | Beurling-Nyman Criterion | known | Measure & Integration, Number Theory |  |  |
+| 141 | [`RiemannHypothesis.beurling_nyman_criterion_rhs`](https://lefttosolve.com/p/RiemannHypothesis.beurling_nyman_criterion_rhs) | RiemannHypothesis | known | Measure & Integration, Number Theory |  |  |
+| 142 | [`RiemannHypothesis.lagarias_criterion`](https://lefttosolve.com/p/RiemannHypothesis.lagarias_criterion) | Lagarias' Criterion | known | Number Theory |  |  |
+| 143 | [`RiemannHypothesis.lagarias_criterion_rhs`](https://lefttosolve.com/p/RiemannHypothesis.lagarias_criterion_rhs) | RiemannHypothesis | known | Number Theory |  |  |
+| 144 | [`RiemannHypothesis.li_criterion`](https://lefttosolve.com/p/RiemannHypothesis.li_criterion) | Li's Criterion | known | Number Theory |  |  |
+| 145 | [`RiemannHypothesis.li_criterion_rhs`](https://lefttosolve.com/p/RiemannHypothesis.li_criterion_rhs) | RiemannHypothesis | known | Number Theory |  |  |
+| 146 | [`RiemannHypothesis.robin_criterion`](https://lefttosolve.com/p/RiemannHypothesis.robin_criterion) | Robin's Criterion | known | Number Theory |  |  |
+| 147 | [`RiemannHypothesis.robin_criterion_rhs`](https://lefttosolve.com/p/RiemannHypothesis.robin_criterion_rhs) | RiemannHypothesis | known | Number Theory |  |  |
+| 148 | [`RiemannHypothesis.weil_positivity_criterion`](https://lefttosolve.com/p/RiemannHypothesis.weil_positivity_criterion) | Weil's Positivity Criterion | known | Functional Analysis, Number Theory |  |  |
+| 149 | [`RiemannHypothesis.weil_positivity_criterion_rhs`](https://lefttosolve.com/p/RiemannHypothesis.weil_positivity_criterion_rhs) | RiemannHypothesis | known | Functional Analysis, Number Theory |  |  |
+| 150 | [`RiemannZetaMoments.moment_isEquiv`](https://lefttosolve.com/p/RiemannZetaMoments.moment_isEquiv) | Moments of the Riemann zeta function on the critical line — moment isEquiv | open | Number Theory |  |  |
+| 151 | [`RiemannZetaMoments.moment_isEquiv-109`](https://lefttosolve.com/p/RiemannZetaMoments.moment_isEquiv-109) | Moments of the Riemann zeta function on the critical line — moment isEquiv₃ | open | Number Theory |  |  |
+| 152 | [`RiemannZetaMoments.moment_isEquiv-115`](https://lefttosolve.com/p/RiemannZetaMoments.moment_isEquiv-115) | Moments of the Riemann zeta function on the critical line — moment isEquiv₄ | open | Number Theory |  |  |
+| 153 | [`RiemannZetaMoments.moment_isEquiv-122`](https://lefttosolve.com/p/RiemannZetaMoments.moment_isEquiv-122) | Moments of the Riemann zeta function on the critical line — moment isEquivₖ | open | Number Theory |  |  |
+| 154 | [`RiemannZetaMoments.moment_isEquiv-77`](https://lefttosolve.com/p/RiemannZetaMoments.moment_isEquiv-77) | Moments of the Riemann zeta function on the critical line — moment isEquiv₁ | known | Number Theory |  | yes |
+| 155 | [`RiemannZetaMoments.moment_isEquiv-83`](https://lefttosolve.com/p/RiemannZetaMoments.moment_isEquiv-83) | Moments of the Riemann zeta function on the critical line — moment isEquiv₂ | known | Number Theory |  |  |
+| 156 | [`RingelConjecture.ringel_conjecture`](https://lefttosolve.com/p/RingelConjecture.ringel_conjecture) | Ringel's Conjecture | open | Combinatorics |  |  |
+| 157 | [`SerreUniformity.serre_uniformity`](https://lefttosolve.com/p/SerreUniformity.serre_uniformity) | Serre's uniformity question over $\\mathbb{Q}$ | open | Algebraic Geometry, Number Theory |  |  |
+| 158 | [`SerreUniformity.serre_uniformity.variants.bound_37`](https://lefttosolve.com/p/SerreUniformity.serre_uniformity.variants.bound_37) | Serre's uniformity conjecture over $\\mathbb{Q}$, explicit form | open | Algebraic Geometry, Number Theory |  |  |
+| 159 | [`ShelahSpencerZeroOneLaw.zeroOne_irrational`](https://lefttosolve.com/p/ShelahSpencerZeroOneLaw.zeroOne_irrational) | ShelahSpencerZeroOneLaw | known | Combinatorics, Logic & Foundations |  |  |
+| 160 | [`ShelahSpencerZeroOneLaw.zeroOne_rational`](https://lefttosolve.com/p/ShelahSpencerZeroOneLaw.zeroOne_rational) | ShelahSpencerZeroOneLaw | known | Combinatorics, Logic & Foundations |  |  |
+| 161 | [`SimpleGraph.lemma3`](https://lefttosolve.com/p/SimpleGraph.lemma3) | Lemma 3. | warmup | Combinatorics |  | yes |
+| 162 | [`SimpleGraph.lemma4`](https://lefttosolve.com/p/SimpleGraph.lemma4) | Lemma 4. | warmup | Combinatorics |  | yes |
+| 163 | [`SimpleGraph.theorem1`](https://lefttosolve.com/p/SimpleGraph.theorem1) | Theorem 1. | known | Combinatorics |  | yes |
+| 164 | [`SimpleGraph.theorem2`](https://lefttosolve.com/p/SimpleGraph.theorem2) | Theorem 2. | known | Combinatorics |  | yes |
+| 165 | [`StrongSensitivityConjecture.nisanExample_blockSensitivity`](https://lefttosolve.com/p/StrongSensitivityConjecture.nisanExample_blockSensitivity) | Strong Sensitivity Conjecture (`bs(f) ≤ s(f)^2`) — nisanExample blockSensitivity | warmup | Computer Science |  | yes |
+| 166 | [`StrongSensitivityConjecture.nisanExample_sensitivity`](https://lefttosolve.com/p/StrongSensitivityConjecture.nisanExample_sensitivity) | Strong Sensitivity Conjecture (`bs(f) ≤ s(f)^2`) — nisanExample sensitivity | warmup | Computer Science |  | yes |
+| 167 | [`TuDengConjecture.tu_deng_conjecture`](https://lefttosolve.com/p/TuDengConjecture.tu_deng_conjecture) | The Tu-Deng conjecture. | known | Combinatorics, Information & Communication, Number Theory |  | yes |
+| 168 | [`VoronovskajaTypeFormula.voronovskaja_theorem.bernstein_operators`](https://lefttosolve.com/p/VoronovskajaTypeFormula.voronovskaja_theorem.bernstein_operators) | Voronovskaja-type Formula for the Bezier Variant of the Bernstein Operators | known | Operator Theory, Real Functions, Sequences & Series |  | yes |
+| 169 | [`WeakTiling.problem_4_2`](https://lefttosolve.com/p/WeakTiling.problem_4_2) | Problem 4.2. | open | Functional Analysis, Harmonic Analysis |  |  |
+| 170 | [`WeaklyFirstCountable.CH.existsWeaklyFirstCountableCompactNotFirstCountable`](https://lefttosolve.com/p/WeaklyFirstCountable.CH.existsWeaklyFirstCountableCompactNotFirstCountable) | Conjectures about Weakly First Countable spaces — existsWeaklyFirstCountableCompactNotFirstCountable | known | General Topology |  |  |
+| 171 | [`WeaklyFirstCountable.cardinalMk_le_continuum_of_weaklyFirstCountable_of_countableSouslinNumber`](https://lefttosolve.com/p/WeaklyFirstCountable.cardinalMk_le_continuum_of_weaklyFirstCountable_of_countableSouslinNumber) | Conjectures about Weakly First Countable spaces — cardinalMk le continuum of weaklyFirstCountable of countableSouslinNumber | open | General Topology |  |  |
+| 172 | [`WeaklyFirstCountable.existsWeaklyFirstCountableCompactBig`](https://lefttosolve.com/p/WeaklyFirstCountable.existsWeaklyFirstCountableCompactBig) | Conjectures about Weakly First Countable spaces — existsWeaklyFirstCountableCompactBig | open | General Topology |  |  |
+| 173 | [`WeaklyFirstCountable.existsWeaklyFirstCountableCompactNotFirstCountable`](https://lefttosolve.com/p/WeaklyFirstCountable.existsWeaklyFirstCountableCompactNotFirstCountable) | Conjectures about Weakly First Countable spaces — existsWeaklyFirstCountableCompactNotFirstCountable | open | General Topology |  |  |
+| 174 | [`WeaklyFirstCountable.exists_weakly_first_countable_not_first_countable`](https://lefttosolve.com/p/WeaklyFirstCountable.exists_weakly_first_countable_not_first_countable) | Conjectures about Weakly First Countable spaces — exists weakly first countable not first countable | warmup | General Topology |  | yes |
+| 175 | [`ZagierMZV.zagier_conjecture`](https://lefttosolve.com/p/ZagierMZV.zagier_conjecture) | Zagier's conjecture | open | Number Theory |  |  |
+| 176 | [`ZagierMZV.zagier_upper_bound`](https://lefttosolve.com/p/ZagierMZV.zagier_upper_bound) | Upper bound | known | Number Theory |  |  |
+| 177 | [`riemannZeta.distinct_prop_lt`](https://lefttosolve.com/p/riemannZeta.distinct_prop_lt) | Simple zeros of the Riemann zeta function on the critical line — distinct prop lt | open | Number Theory |  |  |
+| 178 | [`riemannZeta.distinct_prop_one_hundred`](https://lefttosolve.com/p/riemannZeta.distinct_prop_one_hundred) | Simple zeros of the Riemann zeta function on the critical line — distinct prop one hundred | open | Number Theory |  |  |
+| 179 | [`riemannZeta.simple_prop_lt`](https://lefttosolve.com/p/riemannZeta.simple_prop_lt) | Simple zeros of the Riemann zeta function on the critical line — simple prop lt | open | Number Theory |  |  |
+| 180 | [`riemannZeta.simple_prop_one_hundred`](https://lefttosolve.com/p/riemannZeta.simple_prop_one_hundred) | Simple zeros of the Riemann zeta function on the critical line — simple prop one hundred | open | Number Theory |  |  |

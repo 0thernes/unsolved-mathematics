@@ -1,6 +1,6 @@
 # The Erdős–Hajnal Conjecture
 
-> **Atlas Rank #78** · CSS **56.867** · Field: *Graph Theory* · Posed: **1989** · Status: `active-progress`
+> **Atlas Rank #91** · CSS **56.867** · Field: *Graph Theory* · Posed: **1989** · Status: `active-progress`
 
 ## Plain statement
 

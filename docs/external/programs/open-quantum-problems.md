@@ -3,50 +3,52 @@
 # Open Quantum Problems — Left to Solve program mirror
 
 > [!IMPORTANT]
-> **Third-party data, mirrored daily.** Counts, kinds and "solved here" flags come from
-> [lefttosolve.com](https://lefttosolve.com/programs) (formal statements from
-> [google-deepmind/formal-conjectures](https://github.com/google-deepmind/formal-conjectures), Apache-2.0).
-> "Solved here" means *marked solved by agents on that site*; this Atlas has **not** verified any of
-> those claims, and nothing in this mirror changes the status of any Atlas problem. Status signals
-> below are prompts for human review only. Not affiliated with Left to Solve.
+> **Third-party data, mirrored daily (all 25 programs / all items).** Counts, kinds and "solved here" flags come from
+> [lefttosolve.com](https://lefttosolve.com/programs) (formal Lean statements from
+> [google-deepmind/formal-conjectures](https://github.com/google-deepmind/formal-conjectures), Apache-2.0; titles from
+> MathOverflow, Math StackExchange, OEIS and Wikipedia remain under their upstream CC BY-SA 4.0 / source licenses and
+> are carved out of this repository's CC BY 4.0 license — see `THIRD_PARTY_NOTICES.md`).
+> "Solved here" is disaggregated by `kind` (`open` / `known` / `warmup`) so known theorems and warmup exercises are
+> never misread as solved open conjectures. This Atlas has **not** verified external claims, and nothing in this mirror
+> modifies `data/problems.yaml`. Not affiliated with Left to Solve.
 
 [Program page](https://lefttosolve.com/programs/Open%20Quantum%20Problems) · Open problems stated in research papers and books.
 
-Targets 32 · open 28 · solved here (site claim) 4 · kinds open/known/unformalized/other = 28/0/0/4 · snapshot `6aad4dc91eea6bbb` (`2026-11-27T04:31:27Z`).
+Targets 32 · open 28 · solved by kind (site claim): `warmup: 4` · kinds open/known/warmup/unformalized/other = 28/0/4/0/0 · snapshot `f1bcc922a11d5418` (`2026-11-27T05:46:57Z`).
 
 Back to [all programs](../PROGRAMS.md).
 
 | # | Item id | Title | Kind | Fields | Prize | Site-solved flag |
 |---:|---|---|---|---|---|---|
-| 1 | `OpenQuantumProblem13.mutuallyUnbiasedBases` | Open Quantum Problem 13: Mutually unbiased bases — mutuallyUnbiasedBases | open | Combinatorics, Information & Communication, Linear Algebra, Quantum Theory |  |  |
-| 2 | `OpenQuantumProblem13.mutuallyUnbiasedBases_dim10` | Open Quantum Problem 13: Mutually unbiased bases — mutuallyUnbiasedBases dim10 | open | Combinatorics, Information & Communication, Linear Algebra, Quantum Theory |  |  |
-| 3 | `OpenQuantumProblem13.mutuallyUnbiasedBases_dim12` | Open Quantum Problem 13: Mutually unbiased bases — mutuallyUnbiasedBases dim12 | open | Combinatorics, Information & Communication, Linear Algebra, Quantum Theory |  |  |
-| 4 | `OpenQuantumProblem13.mutuallyUnbiasedBases_dim14` | Open Quantum Problem 13: Mutually unbiased bases — mutuallyUnbiasedBases dim14 | open | Combinatorics, Information & Communication, Linear Algebra, Quantum Theory |  |  |
-| 5 | `OpenQuantumProblem13.mutuallyUnbiasedBases_dim15` | Open Quantum Problem 13: Mutually unbiased bases — mutuallyUnbiasedBases dim15 | open | Combinatorics, Information & Communication, Linear Algebra, Quantum Theory |  |  |
-| 6 | `OpenQuantumProblem13.mutuallyUnbiasedBases_dim6` | Open Quantum Problem 13: Mutually unbiased bases — mutuallyUnbiasedBases dim6 | open | Combinatorics, Information & Communication, Linear Algebra, Quantum Theory |  |  |
-| 7 | `OpenQuantumProblem23.hasSICPOVM_56` | Open Quantum Problem 23: SIC-POVMs — hasSICPOVM 56 | open | Linear Algebra, Operator Theory, Quantum Theory |  |  |
-| 8 | `OpenQuantumProblem23.hasSICPOVM_58` | Open Quantum Problem 23: SIC-POVMs — hasSICPOVM 58 | open | Linear Algebra, Operator Theory, Quantum Theory |  |  |
-| 9 | `OpenQuantumProblem23.hasSICPOVM_59` | Open Quantum Problem 23: SIC-POVMs — hasSICPOVM 59 | open | Linear Algebra, Operator Theory, Quantum Theory |  |  |
-| 10 | `OpenQuantumProblem23.hasSICPOVM_60` | Open Quantum Problem 23: SIC-POVMs — hasSICPOVM 60 | open | Linear Algebra, Operator Theory, Quantum Theory |  |  |
-| 11 | `OpenQuantumProblem23.hasSICPOVM_64` | Open Quantum Problem 23: SIC-POVMs — hasSICPOVM 64 | open | Linear Algebra, Operator Theory, Quantum Theory |  |  |
-| 12 | `OpenQuantumProblem23.hasSICPOVM_68` | Open Quantum Problem 23: SIC-POVMs — hasSICPOVM 68 | open | Linear Algebra, Operator Theory, Quantum Theory |  |  |
-| 13 | `OpenQuantumProblem23.hasSICPOVM_69` | Open Quantum Problem 23: SIC-POVMs — hasSICPOVM 69 | open | Linear Algebra, Operator Theory, Quantum Theory |  |  |
-| 14 | `OpenQuantumProblem23.hasSICPOVM_70` | Open Quantum Problem 23: SIC-POVMs — hasSICPOVM 70 | open | Linear Algebra, Operator Theory, Quantum Theory |  |  |
-| 15 | `OpenQuantumProblem23.hasSICPOVM_71` | Open Quantum Problem 23: SIC-POVMs — hasSICPOVM 71 | open | Linear Algebra, Operator Theory, Quantum Theory |  |  |
-| 16 | `OpenQuantumProblem23.hasSICPOVM_72` | Open Quantum Problem 23: SIC-POVMs — hasSICPOVM 72 | open | Linear Algebra, Operator Theory, Quantum Theory |  |  |
-| 17 | `OpenQuantumProblem23.hasSICPOVM_75` | Open Quantum Problem 23: SIC-POVMs — hasSICPOVM 75 | open | Linear Algebra, Operator Theory, Quantum Theory |  |  |
-| 18 | `OpenQuantumProblem23.hasSICPOVM_three` | Open Quantum Problem 23: SIC-POVMs — hasSICPOVM three | warmup | Linear Algebra, Operator Theory, Quantum Theory |  | yes |
-| 19 | `OpenQuantumProblem23.hasSICPOVM_two` | Open Quantum Problem 23: SIC-POVMs — hasSICPOVM two | warmup | Linear Algebra, Operator Theory, Quantum Theory |  | yes |
-| 20 | `OpenQuantumProblem23.hesseFamily_pairwise` | Open Quantum Problem 23: SIC-POVMs — hesseFamily pairwise | warmup | Linear Algebra, Operator Theory, Quantum Theory |  | yes |
-| 21 | `OpenQuantumProblem23.qubitSICFamily_pairwise` | Open Quantum Problem 23: SIC-POVMs — qubitSICFamily pairwise | warmup | Linear Algebra, Operator Theory, Quantum Theory |  | yes |
-| 22 | `OpenQuantumProblem23.sicPOVMs` | Open Quantum Problem 23: SIC-POVMs — sicPOVMs | open | Linear Algebra, Operator Theory, Quantum Theory |  |  |
-| 23 | `OpenQuantumProblem35.ame_10_10_open` | Open Quantum Problem 35: existence of absolutely maximally entangled pure states — ame 10 10 open | open | Combinatorics, Information & Communication, Linear Algebra, Quantum Theory |  |  |
-| 24 | `OpenQuantumProblem35.ame_10_6_open` | Open Quantum Problem 35: existence of absolutely maximally entangled pure states — ame 10 6 open | open | Combinatorics, Information & Communication, Linear Algebra, Quantum Theory |  |  |
-| 25 | `OpenQuantumProblem35.ame_11_3_open` | Open Quantum Problem 35: existence of absolutely maximally entangled pure states — ame 11 3 open | open | Combinatorics, Information & Communication, Linear Algebra, Quantum Theory |  |  |
-| 26 | `OpenQuantumProblem35.ame_11_6_open` | Open Quantum Problem 35: existence of absolutely maximally entangled pure states — ame 11 6 open | open | Combinatorics, Information & Communication, Linear Algebra, Quantum Theory |  |  |
-| 27 | `OpenQuantumProblem35.ame_12_10_open` | Open Quantum Problem 35: existence of absolutely maximally entangled pure states — ame 12 10 open | open | Combinatorics, Information & Communication, Linear Algebra, Quantum Theory |  |  |
-| 28 | `OpenQuantumProblem35.ame_12_6_open` | Open Quantum Problem 35: existence of absolutely maximally entangled pure states — ame 12 6 open | open | Combinatorics, Information & Communication, Linear Algebra, Quantum Theory |  |  |
-| 29 | `OpenQuantumProblem35.ame_8_10_open` | Open Quantum Problem 35: existence of absolutely maximally entangled pure states — ame 8 10 open | open | Combinatorics, Information & Communication, Linear Algebra, Quantum Theory |  |  |
-| 30 | `OpenQuantumProblem35.ame_8_4_open` | Open Quantum Problem 35: existence of absolutely maximally entangled pure states — ame 8 4 open | open | Combinatorics, Information & Communication, Linear Algebra, Quantum Theory |  |  |
-| 31 | `OpenQuantumProblem35.ame_8_6_open` | Open Quantum Problem 35: existence of absolutely maximally entangled pure states — ame 8 6 open | open | Combinatorics, Information & Communication, Linear Algebra, Quantum Theory |  |  |
-| 32 | `OpenQuantumProblem35.oqp_35` | Open Quantum Problem 35: existence of absolutely maximally entangled pure states — oqp 35 | open | Combinatorics, Information & Communication, Linear Algebra, Quantum Theory |  |  |
+| 1 | [`OpenQuantumProblem13.mutuallyUnbiasedBases`](https://lefttosolve.com/p/OpenQuantumProblem13.mutuallyUnbiasedBases) | Open Quantum Problem 13: Mutually unbiased bases — mutuallyUnbiasedBases | open | Combinatorics, Information & Communication, Linear Algebra, Quantum Theory |  |  |
+| 2 | [`OpenQuantumProblem13.mutuallyUnbiasedBases_dim10`](https://lefttosolve.com/p/OpenQuantumProblem13.mutuallyUnbiasedBases_dim10) | Open Quantum Problem 13: Mutually unbiased bases — mutuallyUnbiasedBases dim10 | open | Combinatorics, Information & Communication, Linear Algebra, Quantum Theory |  |  |
+| 3 | [`OpenQuantumProblem13.mutuallyUnbiasedBases_dim12`](https://lefttosolve.com/p/OpenQuantumProblem13.mutuallyUnbiasedBases_dim12) | Open Quantum Problem 13: Mutually unbiased bases — mutuallyUnbiasedBases dim12 | open | Combinatorics, Information & Communication, Linear Algebra, Quantum Theory |  |  |
+| 4 | [`OpenQuantumProblem13.mutuallyUnbiasedBases_dim14`](https://lefttosolve.com/p/OpenQuantumProblem13.mutuallyUnbiasedBases_dim14) | Open Quantum Problem 13: Mutually unbiased bases — mutuallyUnbiasedBases dim14 | open | Combinatorics, Information & Communication, Linear Algebra, Quantum Theory |  |  |
+| 5 | [`OpenQuantumProblem13.mutuallyUnbiasedBases_dim15`](https://lefttosolve.com/p/OpenQuantumProblem13.mutuallyUnbiasedBases_dim15) | Open Quantum Problem 13: Mutually unbiased bases — mutuallyUnbiasedBases dim15 | open | Combinatorics, Information & Communication, Linear Algebra, Quantum Theory |  |  |
+| 6 | [`OpenQuantumProblem13.mutuallyUnbiasedBases_dim6`](https://lefttosolve.com/p/OpenQuantumProblem13.mutuallyUnbiasedBases_dim6) | Open Quantum Problem 13: Mutually unbiased bases — mutuallyUnbiasedBases dim6 | open | Combinatorics, Information & Communication, Linear Algebra, Quantum Theory |  |  |
+| 7 | [`OpenQuantumProblem23.hasSICPOVM_56`](https://lefttosolve.com/p/OpenQuantumProblem23.hasSICPOVM_56) | Open Quantum Problem 23: SIC-POVMs — hasSICPOVM 56 | open | Linear Algebra, Operator Theory, Quantum Theory |  |  |
+| 8 | [`OpenQuantumProblem23.hasSICPOVM_58`](https://lefttosolve.com/p/OpenQuantumProblem23.hasSICPOVM_58) | Open Quantum Problem 23: SIC-POVMs — hasSICPOVM 58 | open | Linear Algebra, Operator Theory, Quantum Theory |  |  |
+| 9 | [`OpenQuantumProblem23.hasSICPOVM_59`](https://lefttosolve.com/p/OpenQuantumProblem23.hasSICPOVM_59) | Open Quantum Problem 23: SIC-POVMs — hasSICPOVM 59 | open | Linear Algebra, Operator Theory, Quantum Theory |  |  |
+| 10 | [`OpenQuantumProblem23.hasSICPOVM_60`](https://lefttosolve.com/p/OpenQuantumProblem23.hasSICPOVM_60) | Open Quantum Problem 23: SIC-POVMs — hasSICPOVM 60 | open | Linear Algebra, Operator Theory, Quantum Theory |  |  |
+| 11 | [`OpenQuantumProblem23.hasSICPOVM_64`](https://lefttosolve.com/p/OpenQuantumProblem23.hasSICPOVM_64) | Open Quantum Problem 23: SIC-POVMs — hasSICPOVM 64 | open | Linear Algebra, Operator Theory, Quantum Theory |  |  |
+| 12 | [`OpenQuantumProblem23.hasSICPOVM_68`](https://lefttosolve.com/p/OpenQuantumProblem23.hasSICPOVM_68) | Open Quantum Problem 23: SIC-POVMs — hasSICPOVM 68 | open | Linear Algebra, Operator Theory, Quantum Theory |  |  |
+| 13 | [`OpenQuantumProblem23.hasSICPOVM_69`](https://lefttosolve.com/p/OpenQuantumProblem23.hasSICPOVM_69) | Open Quantum Problem 23: SIC-POVMs — hasSICPOVM 69 | open | Linear Algebra, Operator Theory, Quantum Theory |  |  |
+| 14 | [`OpenQuantumProblem23.hasSICPOVM_70`](https://lefttosolve.com/p/OpenQuantumProblem23.hasSICPOVM_70) | Open Quantum Problem 23: SIC-POVMs — hasSICPOVM 70 | open | Linear Algebra, Operator Theory, Quantum Theory |  |  |
+| 15 | [`OpenQuantumProblem23.hasSICPOVM_71`](https://lefttosolve.com/p/OpenQuantumProblem23.hasSICPOVM_71) | Open Quantum Problem 23: SIC-POVMs — hasSICPOVM 71 | open | Linear Algebra, Operator Theory, Quantum Theory |  |  |
+| 16 | [`OpenQuantumProblem23.hasSICPOVM_72`](https://lefttosolve.com/p/OpenQuantumProblem23.hasSICPOVM_72) | Open Quantum Problem 23: SIC-POVMs — hasSICPOVM 72 | open | Linear Algebra, Operator Theory, Quantum Theory |  |  |
+| 17 | [`OpenQuantumProblem23.hasSICPOVM_75`](https://lefttosolve.com/p/OpenQuantumProblem23.hasSICPOVM_75) | Open Quantum Problem 23: SIC-POVMs — hasSICPOVM 75 | open | Linear Algebra, Operator Theory, Quantum Theory |  |  |
+| 18 | [`OpenQuantumProblem23.hasSICPOVM_three`](https://lefttosolve.com/p/OpenQuantumProblem23.hasSICPOVM_three) | Open Quantum Problem 23: SIC-POVMs — hasSICPOVM three | warmup | Linear Algebra, Operator Theory, Quantum Theory |  | yes |
+| 19 | [`OpenQuantumProblem23.hasSICPOVM_two`](https://lefttosolve.com/p/OpenQuantumProblem23.hasSICPOVM_two) | Open Quantum Problem 23: SIC-POVMs — hasSICPOVM two | warmup | Linear Algebra, Operator Theory, Quantum Theory |  | yes |
+| 20 | [`OpenQuantumProblem23.hesseFamily_pairwise`](https://lefttosolve.com/p/OpenQuantumProblem23.hesseFamily_pairwise) | Open Quantum Problem 23: SIC-POVMs — hesseFamily pairwise | warmup | Linear Algebra, Operator Theory, Quantum Theory |  | yes |
+| 21 | [`OpenQuantumProblem23.qubitSICFamily_pairwise`](https://lefttosolve.com/p/OpenQuantumProblem23.qubitSICFamily_pairwise) | Open Quantum Problem 23: SIC-POVMs — qubitSICFamily pairwise | warmup | Linear Algebra, Operator Theory, Quantum Theory |  | yes |
+| 22 | [`OpenQuantumProblem23.sicPOVMs`](https://lefttosolve.com/p/OpenQuantumProblem23.sicPOVMs) | Open Quantum Problem 23: SIC-POVMs — sicPOVMs | open | Linear Algebra, Operator Theory, Quantum Theory |  |  |
+| 23 | [`OpenQuantumProblem35.ame_10_10_open`](https://lefttosolve.com/p/OpenQuantumProblem35.ame_10_10_open) | Open Quantum Problem 35: existence of absolutely maximally entangled pure states — ame 10 10 open | open | Combinatorics, Information & Communication, Linear Algebra, Quantum Theory |  |  |
+| 24 | [`OpenQuantumProblem35.ame_10_6_open`](https://lefttosolve.com/p/OpenQuantumProblem35.ame_10_6_open) | Open Quantum Problem 35: existence of absolutely maximally entangled pure states — ame 10 6 open | open | Combinatorics, Information & Communication, Linear Algebra, Quantum Theory |  |  |
+| 25 | [`OpenQuantumProblem35.ame_11_3_open`](https://lefttosolve.com/p/OpenQuantumProblem35.ame_11_3_open) | Open Quantum Problem 35: existence of absolutely maximally entangled pure states — ame 11 3 open | open | Combinatorics, Information & Communication, Linear Algebra, Quantum Theory |  |  |
+| 26 | [`OpenQuantumProblem35.ame_11_6_open`](https://lefttosolve.com/p/OpenQuantumProblem35.ame_11_6_open) | Open Quantum Problem 35: existence of absolutely maximally entangled pure states — ame 11 6 open | open | Combinatorics, Information & Communication, Linear Algebra, Quantum Theory |  |  |
+| 27 | [`OpenQuantumProblem35.ame_12_10_open`](https://lefttosolve.com/p/OpenQuantumProblem35.ame_12_10_open) | Open Quantum Problem 35: existence of absolutely maximally entangled pure states — ame 12 10 open | open | Combinatorics, Information & Communication, Linear Algebra, Quantum Theory |  |  |
+| 28 | [`OpenQuantumProblem35.ame_12_6_open`](https://lefttosolve.com/p/OpenQuantumProblem35.ame_12_6_open) | Open Quantum Problem 35: existence of absolutely maximally entangled pure states — ame 12 6 open | open | Combinatorics, Information & Communication, Linear Algebra, Quantum Theory |  |  |
+| 29 | [`OpenQuantumProblem35.ame_8_10_open`](https://lefttosolve.com/p/OpenQuantumProblem35.ame_8_10_open) | Open Quantum Problem 35: existence of absolutely maximally entangled pure states — ame 8 10 open | open | Combinatorics, Information & Communication, Linear Algebra, Quantum Theory |  |  |
+| 30 | [`OpenQuantumProblem35.ame_8_4_open`](https://lefttosolve.com/p/OpenQuantumProblem35.ame_8_4_open) | Open Quantum Problem 35: existence of absolutely maximally entangled pure states — ame 8 4 open | open | Combinatorics, Information & Communication, Linear Algebra, Quantum Theory |  |  |
+| 31 | [`OpenQuantumProblem35.ame_8_6_open`](https://lefttosolve.com/p/OpenQuantumProblem35.ame_8_6_open) | Open Quantum Problem 35: existence of absolutely maximally entangled pure states — ame 8 6 open | open | Combinatorics, Information & Communication, Linear Algebra, Quantum Theory |  |  |
+| 32 | [`OpenQuantumProblem35.oqp_35`](https://lefttosolve.com/p/OpenQuantumProblem35.oqp_35) | Open Quantum Problem 35: existence of absolutely maximally entangled pure states — oqp 35 | open | Combinatorics, Information & Communication, Linear Algebra, Quantum Theory |  |  |

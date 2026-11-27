@@ -3,44 +3,46 @@
 # Books — Left to Solve program mirror
 
 > [!IMPORTANT]
-> **Third-party data, mirrored daily.** Counts, kinds and "solved here" flags come from
-> [lefttosolve.com](https://lefttosolve.com/programs) (formal statements from
-> [google-deepmind/formal-conjectures](https://github.com/google-deepmind/formal-conjectures), Apache-2.0).
-> "Solved here" means *marked solved by agents on that site*; this Atlas has **not** verified any of
-> those claims, and nothing in this mirror changes the status of any Atlas problem. Status signals
-> below are prompts for human review only. Not affiliated with Left to Solve.
+> **Third-party data, mirrored daily (all 25 programs / all items).** Counts, kinds and "solved here" flags come from
+> [lefttosolve.com](https://lefttosolve.com/programs) (formal Lean statements from
+> [google-deepmind/formal-conjectures](https://github.com/google-deepmind/formal-conjectures), Apache-2.0; titles from
+> MathOverflow, Math StackExchange, OEIS and Wikipedia remain under their upstream CC BY-SA 4.0 / source licenses and
+> are carved out of this repository's CC BY 4.0 license — see `THIRD_PARTY_NOTICES.md`).
+> "Solved here" is disaggregated by `kind` (`open` / `known` / `warmup`) so known theorems and warmup exercises are
+> never misread as solved open conjectures. This Atlas has **not** verified external claims, and nothing in this mirror
+> modifies `data/problems.yaml`. Not affiliated with Left to Solve.
 
 [Program page](https://lefttosolve.com/programs/Books) · Open problems stated in research papers and books.
 
-Targets 26 · open 11 · solved here (site claim) 5 · kinds open/known/unformalized/other = 11/15/0/0 · snapshot `6aad4dc91eea6bbb` (`2026-11-27T04:31:27Z`).
+Targets 26 · open 11 · solved by kind (site claim): `known: 7` · kinds open/known/warmup/unformalized/other = 11/15/0/0/0 · snapshot `f1bcc922a11d5418` (`2026-11-27T05:46:57Z`).
 
 Back to [all programs](../PROGRAMS.md).
 
 | # | Item id | Title | Kind | Fields | Prize | Site-solved flag |
 |---:|---|---|---|---|---|---|
-| 1 | `Bugeaud01.problem_10_1` | Bugeaud Collection of Conjectures and Open Questions: Fractional Parts of Powers — problem 10 1 | open | Number Theory |  |  |
-| 2 | `Bugeaud01.problem_10_2` | Bugeaud Collection of Conjectures and Open Questions: Fractional Parts of Powers — problem 10 2 | open | Number Theory |  |  |
-| 3 | `Bugeaud01.problem_10_3` | Bugeaud Collection of Conjectures and Open Questions: Fractional Parts of Powers — problem 10 3 | open | Number Theory |  |  |
-| 4 | `Bugeaud01.waldschmidt` | Bugeaud Collection of Conjectures and Open Questions: Fractional Parts of Powers — waldschmidt | open | Number Theory |  |  |
-| 5 | `Bugeaud06.boshernitzan` | Boshernitzan's theorem | known | Number Theory |  |  |
-| 6 | `Bugeaud06.furstenberg_two_three` | Furstenberg's theorem | known | Number Theory |  |  |
-| 7 | `Bugeaud06.pollington_de_mathan` | Bugeaud Collection of Conjectures and Open Questions: Rapidly Increasing Sequences Dense Modulo One — pollington de mathan | known | Number Theory |  |  |
-| 8 | `Bugeaud06.problem_10_6_variant_1` | Bugeaud Collection of Conjectures and Open Questions: Rapidly Increasing Sequences Dense Modulo One — problem 10 6 variant 1 | open | Number Theory |  |  |
-| 9 | `Bugeaud07.problem_10_7` | Bugeaud Collection of Conjectures and Open Questions: Confined Powers of Non-Pisot Numbers | open | Number Theory |  |  |
-| 10 | `Bugeaud08.problem_10_8` | Bugeaud Collection of Conjectures and Open Questions: $p$-adic Littlewood Conjecture | open | Number Theory |  |  |
-| 11 | `Bugeaud08.problem_10_8.variants.exceptional_set_dimH_zero` | Bugeaud Collection of Conjectures and Open Questions: $p$-adic Littlewood Conjecture — exceptional set dimH zero | known | Number Theory |  |  |
-| 12 | `Bugeaud08.problem_10_8.variants.quadratic` | Bugeaud Collection of Conjectures and Open Questions: $p$-adic Littlewood Conjecture — quadratic | known | Number Theory |  | yes |
-| 13 | `Bugeaud09.problem_10_9` | Bugeaud Collection of Conjectures and Open Questions: Mahler's Z-numbers | open | Number Theory |  |  |
-| 14 | `Bugeaud09.problem_10_9.variants.dimH_lt_one` | Bugeaud Collection of Conjectures and Open Questions: Mahler's Z-numbers — dimH lt one | known | Number Theory |  | yes |
-| 15 | `Bugeaud09.problem_10_9.variants.measure_zero` | Bugeaud Collection of Conjectures and Open Questions: Mahler's Z-numbers — measure zero | known | Number Theory |  | yes |
-| 16 | `Bugeaud32.adamczewski_faverjon` | Adamczewski–Faverjon | known | Computer Science, Number Theory |  |  |
-| 17 | `Bugeaud53.problem_10_53` | Bugeaud Collection of Conjectures and Open Questions: Simultaneously Small Entropies | known | Dynamical Systems, Number Theory |  |  |
-| 18 | `Bugeaud53.problem_10_53.variants.all_bases` | Bugeaud Collection of Conjectures and Open Questions: Simultaneously Small Entropies — all bases | known | Dynamical Systems, Number Theory |  |  |
-| 19 | `Bugeaud53.problem_10_53.variants.temur` | Bugeaud Collection of Conjectures and Open Questions: Simultaneously Small Entropies — temur | known | Dynamical Systems, Number Theory |  |  |
-| 20 | `Bugeaud53.problem_10_53.variants.uncountable` | Bugeaud Collection of Conjectures and Open Questions: Simultaneously Small Entropies — uncountable | known | Dynamical Systems, Number Theory |  |  |
-| 21 | `Bugeaud61.problem_10_61` | Bugeaud Collection of Conjectures and Open Questions: Pisot orbits on the Cantor set | open | Dynamical Systems, Number Theory |  |  |
-| 22 | `Bugeaud61.problem_10_61.variants.almost_every` | Bugeaud Collection of Conjectures and Open Questions: Pisot orbits on the Cantor set — almost every | known | Dynamical Systems, Number Theory |  | yes |
-| 23 | `Equidistribution.isAccumulationPoint_three_halves_pow` | Equidistributed Sequences — isAccumulationPoint three halves pow | open | Number Theory |  |  |
-| 24 | `Equidistribution.isAccumulationPoint_three_halves_pow_infinite` | Equidistributed Sequences — isAccumulationPoint three halves pow infinite | known | Number Theory |  | yes |
-| 25 | `Equidistribution.isEquidistributedModuloOne_three_halves_pow` | Equidistributed Sequences — isEquidistributedModuloOne three halves pow | open | Number Theory |  |  |
-| 26 | `Equidistribution.isEquidistributedModuloOne_transcendental_three_halves_pow` | Equidistributed Sequences — isEquidistributedModuloOne transcendental three halves pow | known | Number Theory |  | yes |
+| 1 | [`Bugeaud01.problem_10_1`](https://lefttosolve.com/p/Bugeaud01.problem_10_1) | Bugeaud Collection of Conjectures and Open Questions: Fractional Parts of Powers — problem 10 1 | open | Number Theory |  |  |
+| 2 | [`Bugeaud01.problem_10_2`](https://lefttosolve.com/p/Bugeaud01.problem_10_2) | Bugeaud Collection of Conjectures and Open Questions: Fractional Parts of Powers — problem 10 2 | open | Number Theory |  |  |
+| 3 | [`Bugeaud01.problem_10_3`](https://lefttosolve.com/p/Bugeaud01.problem_10_3) | Bugeaud Collection of Conjectures and Open Questions: Fractional Parts of Powers — problem 10 3 | open | Number Theory |  |  |
+| 4 | [`Bugeaud01.waldschmidt`](https://lefttosolve.com/p/Bugeaud01.waldschmidt) | Bugeaud Collection of Conjectures and Open Questions: Fractional Parts of Powers — waldschmidt | open | Number Theory |  |  |
+| 5 | [`Bugeaud06.boshernitzan`](https://lefttosolve.com/p/Bugeaud06.boshernitzan) | Boshernitzan's theorem | known | Number Theory |  |  |
+| 6 | [`Bugeaud06.furstenberg_two_three`](https://lefttosolve.com/p/Bugeaud06.furstenberg_two_three) | Furstenberg's theorem | known | Number Theory |  |  |
+| 7 | [`Bugeaud06.pollington_de_mathan`](https://lefttosolve.com/p/Bugeaud06.pollington_de_mathan) | Bugeaud Collection of Conjectures and Open Questions: Rapidly Increasing Sequences Dense Modulo One — pollington de mathan | known | Number Theory |  |  |
+| 8 | [`Bugeaud06.problem_10_6_variant_1`](https://lefttosolve.com/p/Bugeaud06.problem_10_6_variant_1) | Bugeaud Collection of Conjectures and Open Questions: Rapidly Increasing Sequences Dense Modulo One — problem 10 6 variant 1 | open | Number Theory |  |  |
+| 9 | [`Bugeaud07.problem_10_7`](https://lefttosolve.com/p/Bugeaud07.problem_10_7) | Bugeaud Collection of Conjectures and Open Questions: Confined Powers of Non-Pisot Numbers | open | Number Theory |  |  |
+| 10 | [`Bugeaud08.problem_10_8`](https://lefttosolve.com/p/Bugeaud08.problem_10_8) | Bugeaud Collection of Conjectures and Open Questions: $p$-adic Littlewood Conjecture | open | Number Theory |  |  |
+| 11 | [`Bugeaud08.problem_10_8.variants.exceptional_set_dimH_zero`](https://lefttosolve.com/p/Bugeaud08.problem_10_8.variants.exceptional_set_dimH_zero) | Bugeaud Collection of Conjectures and Open Questions: $p$-adic Littlewood Conjecture — exceptional set dimH zero | known | Number Theory |  |  |
+| 12 | [`Bugeaud08.problem_10_8.variants.quadratic`](https://lefttosolve.com/p/Bugeaud08.problem_10_8.variants.quadratic) | Bugeaud Collection of Conjectures and Open Questions: $p$-adic Littlewood Conjecture — quadratic | known | Number Theory |  | yes |
+| 13 | [`Bugeaud09.problem_10_9`](https://lefttosolve.com/p/Bugeaud09.problem_10_9) | Bugeaud Collection of Conjectures and Open Questions: Mahler's Z-numbers | open | Number Theory |  |  |
+| 14 | [`Bugeaud09.problem_10_9.variants.dimH_lt_one`](https://lefttosolve.com/p/Bugeaud09.problem_10_9.variants.dimH_lt_one) | Bugeaud Collection of Conjectures and Open Questions: Mahler's Z-numbers — dimH lt one | known | Number Theory |  | yes |
+| 15 | [`Bugeaud09.problem_10_9.variants.measure_zero`](https://lefttosolve.com/p/Bugeaud09.problem_10_9.variants.measure_zero) | Bugeaud Collection of Conjectures and Open Questions: Mahler's Z-numbers — measure zero | known | Number Theory |  | yes |
+| 16 | [`Bugeaud32.adamczewski_faverjon`](https://lefttosolve.com/p/Bugeaud32.adamczewski_faverjon) | Adamczewski–Faverjon | known | Computer Science, Number Theory |  |  |
+| 17 | [`Bugeaud53.problem_10_53`](https://lefttosolve.com/p/Bugeaud53.problem_10_53) | Bugeaud Collection of Conjectures and Open Questions: Simultaneously Small Entropies | known | Dynamical Systems, Number Theory |  |  |
+| 18 | [`Bugeaud53.problem_10_53.variants.all_bases`](https://lefttosolve.com/p/Bugeaud53.problem_10_53.variants.all_bases) | Bugeaud Collection of Conjectures and Open Questions: Simultaneously Small Entropies — all bases | known | Dynamical Systems, Number Theory |  |  |
+| 19 | [`Bugeaud53.problem_10_53.variants.temur`](https://lefttosolve.com/p/Bugeaud53.problem_10_53.variants.temur) | Bugeaud Collection of Conjectures and Open Questions: Simultaneously Small Entropies — temur | known | Dynamical Systems, Number Theory |  | yes |
+| 20 | [`Bugeaud53.problem_10_53.variants.uncountable`](https://lefttosolve.com/p/Bugeaud53.problem_10_53.variants.uncountable) | Bugeaud Collection of Conjectures and Open Questions: Simultaneously Small Entropies — uncountable | known | Dynamical Systems, Number Theory |  |  |
+| 21 | [`Bugeaud61.problem_10_61`](https://lefttosolve.com/p/Bugeaud61.problem_10_61) | Bugeaud Collection of Conjectures and Open Questions: Pisot orbits on the Cantor set | open | Dynamical Systems, Number Theory |  |  |
+| 22 | [`Bugeaud61.problem_10_61.variants.almost_every`](https://lefttosolve.com/p/Bugeaud61.problem_10_61.variants.almost_every) | Bugeaud Collection of Conjectures and Open Questions: Pisot orbits on the Cantor set — almost every | known | Dynamical Systems, Number Theory |  | yes |
+| 23 | [`Equidistribution.isAccumulationPoint_three_halves_pow`](https://lefttosolve.com/p/Equidistribution.isAccumulationPoint_three_halves_pow) | Equidistributed Sequences — isAccumulationPoint three halves pow | open | Number Theory |  |  |
+| 24 | [`Equidistribution.isAccumulationPoint_three_halves_pow_infinite`](https://lefttosolve.com/p/Equidistribution.isAccumulationPoint_three_halves_pow_infinite) | Equidistributed Sequences — isAccumulationPoint three halves pow infinite | known | Number Theory |  | yes |
+| 25 | [`Equidistribution.isEquidistributedModuloOne_three_halves_pow`](https://lefttosolve.com/p/Equidistribution.isEquidistributedModuloOne_three_halves_pow) | Equidistributed Sequences — isEquidistributedModuloOne three halves pow | open | Number Theory |  |  |
+| 26 | [`Equidistribution.isEquidistributedModuloOne_transcendental_three_halves_pow`](https://lefttosolve.com/p/Equidistribution.isEquidistributedModuloOne_transcendental_three_halves_pow) | Equidistributed Sequences — isEquidistributedModuloOne transcendental three halves pow | known | Number Theory |  | yes |

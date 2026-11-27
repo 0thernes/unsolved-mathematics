@@ -1,6 +1,6 @@
 # The Connes Embedding Problem (Resolved 2020)
 
-> **Atlas Rank #87** · CSS **55.433** · Field: *Operator Algebras* · Posed: **1976** · Status: `recently-resolved`
+> **Atlas Rank #100** · CSS **55.433** · Field: *Operator Algebras* · Posed: **1976** · Status: `recently-resolved`
 
 ## Plain statement
 

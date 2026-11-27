@@ -1,6 +1,6 @@
 # The Catalan–Dickson Conjecture (Aliquot Sequences)
 
-> **Atlas Rank #69** · CSS **58.0** · Field: *Number Theory* · Posed: **1888** · Status: `open`
+> **Atlas Rank #82** · CSS **58.0** · Field: *Number Theory* · Posed: **1888** · Status: `open`
 
 ## Plain statement
 

@@ -1,6 +1,6 @@
 # The Union-Closed Sets Conjecture (Frankl)
 
-> **Atlas Rank #96** · CSS **53.033** · Field: *Combinatorics* · Posed: **1979** · Status: `active-progress`
+> **Atlas Rank #110** · CSS **53.033** · Field: *Combinatorics* · Posed: **1979** · Status: `active-progress`
 
 ## Plain statement
 

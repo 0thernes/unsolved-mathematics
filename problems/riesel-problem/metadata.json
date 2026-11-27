@@ -1,0 +1,30 @@
+{
+  "slug": "riesel-problem",
+  "title": "The Riesel Problem",
+  "field": "Number Theory",
+  "subfields": [
+    "Elementary Number Theory",
+    "Covering Systems",
+    "Computational Number Theory"
+  ],
+  "year_posed": 1956,
+  "originators": [
+    "Hans Riesel"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "A Riesel number is an odd positive integer k such that k * 2^n - 1 is composite for every integer n >= 1. Hans Riesel proved in 1956 that k = 509,203 is a Riesel number; the Riesel problem asks whether 509,203 is the smallest Riesel number (equivalently, whether every remaining odd candidate k < 509,203 produces at least one prime k * 2^n - 1).\n",
+  "difficulty": 76,
+  "centrality": 48,
+  "tractability": 42,
+  "status": "active-progress",
+  "tags": [
+    "Riesel-numbers",
+    "covering-systems",
+    "OEIS",
+    "primality",
+    "computational-number-theory"
+  ],
+  "rank": 103,
+  "css": 55.267,
+  "folder": "riesel-problem"
+}

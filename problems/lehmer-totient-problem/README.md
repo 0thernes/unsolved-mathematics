@@ -1,6 +1,6 @@
 # Lehmer's Totient Problem
 
-> **Atlas Rank #92** · CSS **54.367** · Field: *Number Theory* · Posed: **1932** · Status: `open`
+> **Atlas Rank #106** · CSS **54.367** · Field: *Number Theory* · Posed: **1932** · Status: `open`
 
 ## Plain statement
 

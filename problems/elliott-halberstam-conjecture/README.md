@@ -1,6 +1,6 @@
 # The Elliott–Halberstam Conjecture
 
-> **Atlas Rank #41** · CSS **64.067** · Field: *Analytic Number Theory* · Posed: **1968** · Status: `active-progress`
+> **Atlas Rank #52** · CSS **64.067** · Field: *Analytic Number Theory* · Posed: **1968** · Status: `active-progress`
 
 ## Plain statement
 

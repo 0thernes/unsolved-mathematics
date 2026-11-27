@@ -1,9 +1,9 @@
 {
   "meta": {
     "atlas_name": "The Unsolved Mathematics Atlas",
-    "version": "0.7.0",
+    "version": "0.8.0",
     "maintainer": "0thernes",
-    "updated": "2026-11-26",
+    "updated": "2026-11-27",
     "default_branch": "main",
     "disclaimer": "Difficulty, centrality, age, and tractability scores are curated editorial estimates intended to produce a useful, reproducible ordering — NOT objective measurements. Paper and people lists are research scaffolding: each is marked with a verification status and MUST be checked against primary sources before citation. Nothing here asserts a problem is solved unless explicitly stated.\n"
   },
@@ -93,6 +93,35 @@
       "css": 84.967
     },
     {
+      "slug": "class-number-problem-real-quadratic",
+      "title": "Gauss's Class Number Problem for Real Quadratic Fields",
+      "field": "Number Theory",
+      "subfields": [
+        "Algebraic Number Theory",
+        "Quadratic Forms",
+        "L-functions"
+      ],
+      "year_posed": 1801,
+      "originators": [
+        "Carl Friedrich Gauss"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Are there infinitely many real quadratic number fields Q(sqrt(d)) (with d > 0 squarefree) whose ideal class number h(d) equals 1 (equivalently, whose ring of integers is a unique factorization domain)?\n",
+      "difficulty": 91,
+      "centrality": 78,
+      "tractability": 14,
+      "status": "open",
+      "tags": [
+        "class-number",
+        "real-quadratic-fields",
+        "Gauss",
+        "algebraic-number-theory",
+        "Dirichlet-class-number-formula"
+      ],
+      "rank": 4,
+      "css": 83.4
+    },
+    {
       "slug": "p-versus-np",
       "title": "P versus NP",
       "field": "Computational Complexity Theory",
@@ -119,7 +148,7 @@
         "logic",
         "cryptography"
       ],
-      "rank": 4,
+      "rank": 5,
       "css": 81.967
     },
     {
@@ -146,7 +175,7 @@
         "algebraic-cycles",
         "complex-varieties"
       ],
-      "rank": 5,
+      "rank": 6,
       "css": 79.967
     },
     {
@@ -174,7 +203,7 @@
         "sieve",
         "bounded-gaps"
       ],
-      "rank": 6,
+      "rank": 7,
       "css": 79.6
     },
     {
@@ -203,7 +232,7 @@
         "rational-points",
         "BSD"
       ],
-      "rank": 7,
+      "rank": 8,
       "css": 78.867
     },
     {
@@ -229,8 +258,37 @@
         "divisors",
         "ancient"
       ],
-      "rank": 8,
+      "rank": 9,
       "css": 78.3
+    },
+    {
+      "slug": "dirichlet-divisor-problem",
+      "title": "The Dirichlet Divisor Problem",
+      "field": "Analytic Number Theory",
+      "subfields": [
+        "Exponential Sums",
+        "Lattice Point Counting",
+        "Riemann Zeta Function"
+      ],
+      "year_posed": 1849,
+      "originators": [
+        "Peter Gustav Lejeune Dirichlet"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Let D(x) = sum_{n <= x} d(n) be the summatory divisor function and Delta(x) = D(x) - x log x - (2 gamma - 1) x be the error term. Determine the infimum theta of all exponents alpha such that Delta(x) = O(x^alpha); the Dirichlet divisor conjecture asserts that theta = 1/4 (i.e., Delta(x) = O_eps(x^{1/4 + eps}) for all eps > 0).\n",
+      "difficulty": 88,
+      "centrality": 74,
+      "tractability": 18,
+      "status": "active-progress",
+      "tags": [
+        "divisor-function",
+        "exponential-sums",
+        "lattice-points",
+        "zeta-function",
+        "Dirichlet"
+      ],
+      "rank": 10,
+      "css": 77.4
     },
     {
       "slug": "mersenne-primes-infinitude",
@@ -254,7 +312,7 @@
         "mersenne",
         "GIMPS"
       ],
-      "rank": 9,
+      "rank": 11,
       "css": 76.6
     },
     {
@@ -283,7 +341,7 @@
         "Woodin",
         "large-cardinals"
       ],
-      "rank": 10,
+      "rank": 12,
       "css": 76.267
     },
     {
@@ -310,7 +368,7 @@
         "Hilbert",
         "dynamics"
       ],
-      "rank": 11,
+      "rank": 13,
       "css": 76.1
     },
     {
@@ -341,8 +399,39 @@
         "mass-gap",
         "physics"
       ],
-      "rank": 12,
+      "rank": 14,
       "css": 75.333
+    },
+    {
+      "slug": "resolution-of-singularities-char-p",
+      "title": "Resolution of Singularities in Positive Characteristic",
+      "field": "Algebraic Geometry",
+      "subfields": [
+        "Birational Geometry",
+        "Singularity Theory",
+        "Arithmetic Geometry"
+      ],
+      "year_posed": 1964,
+      "originators": [
+        "Oscar Zariski",
+        "Heisuke Hironaka",
+        "Shreeram Abhyankar"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Does every algebraic variety (or integral scheme of finite type) of arbitrary dimension d >= 4 over a field k of positive characteristic p > 0 admit a resolution of singularities — a proper birational morphism X' -> X with X' nonsingular?\n",
+      "difficulty": 94,
+      "centrality": 83,
+      "tractability": 16,
+      "status": "active-progress",
+      "tags": [
+        "resolution-of-singularities",
+        "characteristic-p",
+        "birational-geometry",
+        "Hironaka",
+        "algebraic-geometry"
+      ],
+      "rank": 15,
+      "css": 75.033
     },
     {
       "slug": "navier-stokes-smoothness",
@@ -371,8 +460,67 @@
         "regularity",
         "turbulence"
       ],
-      "rank": 13,
+      "rank": 16,
       "css": 74.733
+    },
+    {
+      "slug": "bateman-horn-conjecture",
+      "title": "The Bateman–Horn Conjecture",
+      "field": "Analytic Number Theory",
+      "subfields": [
+        "Prime Values of Polynomials",
+        "Sieve Theory",
+        "Euler Products"
+      ],
+      "year_posed": 1962,
+      "originators": [
+        "Paul T. Bateman",
+        "Roger A. Horn"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Given distinct irreducible integer polynomials f_1, ..., f_k with positive leading coefficients whose product has no fixed prime divisor (Bunyakovsky/Schinzel admissibility), the number of integers n <= x for which f_1(n), ..., f_k(n) are all simultaneously prime is asymptotic to (C(f_1,...,f_k) / prod deg(f_i)) * integral_2^x dt / (log t)^k, where C is the explicit local Euler product.\n",
+      "difficulty": 93,
+      "centrality": 80,
+      "tractability": 10,
+      "status": "open",
+      "tags": [
+        "polynomial-primes",
+        "Euler-product",
+        "Schinzel",
+        "Hardy-Littlewood",
+        "analytic-number-theory"
+      ],
+      "rank": 17,
+      "css": 74.467
+    },
+    {
+      "slug": "cramer-conjecture",
+      "title": "Cramér's Conjecture on Prime Gaps",
+      "field": "Analytic Number Theory",
+      "subfields": [
+        "Distribution of Primes",
+        "Probabilistic Number Theory",
+        "Sieve Theory"
+      ],
+      "year_posed": 1936,
+      "originators": [
+        "Harald Cramér"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Let p_n be the n-th prime. Cramér's conjecture asserts that the gap between consecutive primes satisfies p_{n+1} - p_n = O((log p_n)^2) — and in Cramér's stronger 1936 probabilistic formulation, limsup_{n -> infty} (p_{n+1} - p_n) / (log p_n)^2 = 1 (though Granville's 1995 heuristic suggests >= 2 e^{-gamma} ~ 1.1229).\n",
+      "difficulty": 91,
+      "centrality": 77,
+      "tractability": 12,
+      "status": "open",
+      "tags": [
+        "prime-gaps",
+        "Cramer-model",
+        "primes",
+        "analytic-number-theory",
+        "Granville"
+      ],
+      "rank": 18,
+      "css": 74.3
     },
     {
       "slug": "abc-conjecture",
@@ -399,7 +547,7 @@
         "Mochizuki",
         "IUT"
       ],
-      "rank": 14,
+      "rank": 19,
       "css": 73.833
     },
     {
@@ -427,7 +575,7 @@
         "Galois",
         "motives"
       ],
-      "rank": 15,
+      "rank": 20,
       "css": 72.6
     },
     {
@@ -452,8 +600,67 @@
         "gaps",
         "Legendre"
       ],
-      "rank": 16,
+      "rank": 21,
       "css": 71.333
+    },
+    {
+      "slug": "erdos-szemeredi-asymptotic-bounds",
+      "title": "Erdős Problem 142 (Asymptotic Density of k-AP-Free Sets)",
+      "field": "Extremal Combinatorics",
+      "subfields": [
+        "Additive Combinatorics",
+        "Fourier Analysis",
+        "Higher-Order Gowers Uniformity"
+      ],
+      "year_posed": 1973,
+      "originators": [
+        "Paul Erdős"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Find an asymptotic formula for r_k(N), the maximum size of a subset of {1, ..., N} containing no non-trivial k-term arithmetic progression; in particular, determine whether r_k(N) = o(N / (log N)^C) for all C > 0 and pin down the true growth rate between Behrend-type lower bounds and Kelley–Meka / Leng–Sah–Sawhney upper bounds.\n",
+      "difficulty": 91,
+      "centrality": 78,
+      "tractability": 22,
+      "status": "active-progress",
+      "tags": [
+        "Erdos-prize",
+        "arithmetic-progressions",
+        "Szemeredi",
+        "additive-combinatorics",
+        "Gowers-norms"
+      ],
+      "rank": 22,
+      "css": 71.133
+    },
+    {
+      "slug": "cohen-lenstra-heuristics",
+      "title": "The Cohen–Lenstra Heuristics",
+      "field": "Number Theory",
+      "subfields": [
+        "Algebraic Number Theory",
+        "Arithmetic Statistics",
+        "Class Groups"
+      ],
+      "year_posed": 1984,
+      "originators": [
+        "Henri Cohen",
+        "Hendrik W. Lenstra Jr."
+      ],
+      "millennium_prize": false,
+      "statement_plain": "As K ranges over imaginary (or real) quadratic number fields ordered by discriminant, the odd part of the ideal class group Cl(K) is conjectured to be distributed like a random finite abelian group G weighted inversely by |Aut(G)| (for imaginary quadratic fields, u = 0) or by |G| * |Aut(G)| (for real quadratic fields, u = 1).\n",
+      "difficulty": 91,
+      "centrality": 79,
+      "tractability": 24,
+      "status": "active-progress",
+      "tags": [
+        "class-groups",
+        "arithmetic-statistics",
+        "quadratic-fields",
+        "Cohen-Lenstra",
+        "Selmer-groups"
+      ],
+      "rank": 23,
+      "css": 70.5
     },
     {
       "slug": "polignac-conjecture",
@@ -477,7 +684,7 @@
         "gaps",
         "bounded-gaps"
       ],
-      "rank": 17,
+      "rank": 24,
       "css": 70.3
     },
     {
@@ -505,7 +712,7 @@
         "Mordell",
         "Nevanlinna"
       ],
-      "rank": 18,
+      "rank": 25,
       "css": 70.3
     },
     {
@@ -533,7 +740,7 @@
         "rigidity",
         "Hilbert-irreducibility"
       ],
-      "rank": 19,
+      "rank": 26,
       "css": 69.933
     },
     {
@@ -561,7 +768,7 @@
         "admissible",
         "density"
       ],
-      "rank": 20,
+      "rank": 27,
       "css": 69.567
     },
     {
@@ -587,7 +794,7 @@
         "3n+1",
         "dynamics"
       ],
-      "rank": 21,
+      "rank": 28,
       "css": 69.333
     },
     {
@@ -616,8 +823,38 @@
         "restriction",
         "Wang-Zahl"
       ],
-      "rank": 22,
+      "rank": 29,
       "css": 69.167
+    },
+    {
+      "slug": "erdos-turan-additive-bases",
+      "title": "The Erdős–Turán Conjecture on Additive Bases",
+      "field": "Number Theory",
+      "subfields": [
+        "Additive Number Theory",
+        "Additive Combinatorics",
+        "Analytic Number Theory"
+      ],
+      "year_posed": 1941,
+      "originators": [
+        "Paul Erdős",
+        "Pál Turán"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "If A is a subset of the natural numbers such that every sufficiently large integer can be written as a sum of two elements of A (an asymptotic additive basis of order 2), then the representation function r_A(n) = |{(a, b) in A x A : a + b = n}| must be unbounded.\n",
+      "difficulty": 87,
+      "centrality": 66,
+      "tractability": 18,
+      "status": "open",
+      "tags": [
+        "Erdos-prize",
+        "additive-bases",
+        "representation-function",
+        "Sidon",
+        "number-theory"
+      ],
+      "rank": 30,
+      "css": 68.467
     },
     {
       "slug": "jacobian-conjecture",
@@ -642,7 +879,7 @@
         "automorphisms",
         "Keller"
       ],
-      "rank": 23,
+      "rank": 31,
       "css": 68.4
     },
     {
@@ -669,7 +906,7 @@
         "Kakeya",
         "polynomial-method"
       ],
-      "rank": 24,
+      "rank": 32,
       "css": 67.733
     },
     {
@@ -697,7 +934,7 @@
         "Mordell",
         "Zariski-density"
       ],
-      "rank": 25,
+      "rank": 33,
       "css": 67.567
     },
     {
@@ -725,7 +962,7 @@
         "assembly-map",
         "groups"
       ],
-      "rank": 26,
+      "rank": 34,
       "css": 67.567
     },
     {
@@ -750,7 +987,7 @@
         "polynomials",
         "Hardy-Littlewood"
       ],
-      "rank": 27,
+      "rank": 35,
       "css": 67.367
     },
     {
@@ -776,7 +1013,7 @@
         "minors",
         "four-color"
       ],
-      "rank": 28,
+      "rank": 36,
       "css": 67.133
     },
     {
@@ -803,8 +1040,39 @@
         "EKL",
         "dynamics"
       ],
-      "rank": 29,
+      "rank": 37,
       "css": 67.0
+    },
+    {
+      "slug": "erdos-happy-ending-problem",
+      "title": "The Happy Ending Problem (Erdős–Szekeres Conjecture)",
+      "field": "Combinatorial Geometry",
+      "subfields": [
+        "Discrete Geometry",
+        "Ramsey Theory",
+        "Order Types"
+      ],
+      "year_posed": 1935,
+      "originators": [
+        "Esther Klein",
+        "Paul Erdős",
+        "George Szekeres"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Let ES(n) be the smallest integer N such that any N points in the plane in general position (no three collinear) contain the vertices of a convex n-gon. The Erdős–Szekeres conjecture asserts that ES(n) = 2^{n-2} + 1 for every n >= 3.\n",
+      "difficulty": 83,
+      "centrality": 69,
+      "tractability": 30,
+      "status": "active-progress",
+      "tags": [
+        "Erdos-prize",
+        "convex-polygons",
+        "Ramsey-theory",
+        "discrete-geometry",
+        "Erdos-Szekeres"
+      ],
+      "rank": 38,
+      "css": 66.967
     },
     {
       "slug": "schinzel-hypothesis-h",
@@ -831,7 +1099,7 @@
         "Dickson",
         "Bateman-Horn"
       ],
-      "rank": 30,
+      "rank": 39,
       "css": 66.733
     },
     {
@@ -856,7 +1124,7 @@
         "Hilbert-space",
         "invariant-subspaces"
       ],
-      "rank": 31,
+      "rank": 40,
       "css": 66.567
     },
     {
@@ -884,8 +1152,38 @@
         "restriction",
         "Carleson-Sjolin"
       ],
-      "rank": 32,
+      "rank": 41,
       "css": 66.4
+    },
+    {
+      "slug": "beck-fiala-conjecture",
+      "title": "The Beck–Fiala Conjecture",
+      "field": "Combinatorics",
+      "subfields": [
+        "Discrepancy Theory",
+        "Convex Geometry",
+        "Theoretical Computer Science"
+      ],
+      "year_posed": 1981,
+      "originators": [
+        "József Beck",
+        "Tibor Fiala"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Given any finite hypergraph (set system) in which every element belongs to at most t sets (maximum degree t), there exists a red/blue coloring chi: V -> {-1, +1} such that every set S has discrepancy |sum_{v in S} chi(v)| = O(sqrt(t)) — independent of the number of elements n and sets m.\n",
+      "difficulty": 86,
+      "centrality": 71,
+      "tractability": 28,
+      "status": "active-progress",
+      "tags": [
+        "discrepancy-theory",
+        "Beck-Fiala",
+        "Komlos",
+        "convex-geometry",
+        "combinatorics"
+      ],
+      "rank": 42,
+      "css": 65.9
     },
     {
       "slug": "schanuel-conjecture",
@@ -910,7 +1208,7 @@
         "exponential",
         "model-theory"
       ],
-      "rank": 33,
+      "rank": 43,
       "css": 65.9
     },
     {
@@ -938,7 +1236,7 @@
         "Gluck-twist",
         "gauge-theory"
       ],
-      "rank": 34,
+      "rank": 44,
       "css": 65.533
     },
     {
@@ -967,8 +1265,38 @@
         "p-adic-Hodge",
         "Langlands"
       ],
-      "rank": 35,
+      "rank": 45,
       "css": 65.467
+    },
+    {
+      "slug": "erdos-sidon-sets-problem-30",
+      "title": "The Erdős–Turán Sidon Set Conjecture (Erdős Problem 30)",
+      "field": "Combinatorics",
+      "subfields": [
+        "Additive Combinatorics",
+        "Extremal Number Theory",
+        "Finite Projective Geometry"
+      ],
+      "year_posed": 1941,
+      "originators": [
+        "Paul Erdős",
+        "Pál Turán"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Let h(N) be the maximum size of a Sidon set (a set with all pairwise sums a + b, a <= b, distinct) contained in {1, 2, ..., N}. Prove (or disprove) that h(N) = N^{1/2} + O_eps(N^eps) for every eps > 0 (and, in the strongest form, whether h(N) = N^{1/2} + O(1)).\n",
+      "difficulty": 84,
+      "centrality": 62,
+      "tractability": 25,
+      "status": "active-progress",
+      "tags": [
+        "Erdos-prize",
+        "Sidon-sets",
+        "B2-sequences",
+        "additive-combinatorics",
+        "projective-planes"
+      ],
+      "rank": 46,
+      "css": 65.367
     },
     {
       "slug": "baum-connes-conjecture",
@@ -996,7 +1324,7 @@
         "C-star-algebras",
         "Gromov"
       ],
-      "rank": 36,
+      "rank": 47,
       "css": 64.733
     },
     {
@@ -1025,7 +1353,7 @@
         "Mordell-Lang",
         "o-minimal"
       ],
-      "rank": 37,
+      "rank": 48,
       "css": 64.4
     },
     {
@@ -1052,7 +1380,7 @@
         "Farrell-Jones",
         "surgery"
       ],
-      "rank": 38,
+      "rank": 49,
       "css": 64.167
     },
     {
@@ -1079,7 +1407,7 @@
         "rational-points",
         "Grothendieck"
       ],
-      "rank": 39,
+      "rank": 50,
       "css": 64.167
     },
     {
@@ -1107,7 +1435,7 @@
         "2-to-2",
         "hardness"
       ],
-      "rank": 40,
+      "rank": 51,
       "css": 64.1
     },
     {
@@ -1135,7 +1463,7 @@
         "Bombieri-Vinogradov",
         "bounded-gaps"
       ],
-      "rank": 41,
+      "rank": 52,
       "css": 64.067
     },
     {
@@ -1163,7 +1491,7 @@
         "Yoccoz",
         "hyperbolicity"
       ],
-      "rank": 42,
+      "rank": 53,
       "css": 63.733
     },
     {
@@ -1191,7 +1519,7 @@
         "Tao",
         "Sarnak"
       ],
-      "rank": 43,
+      "rank": 54,
       "css": 63.667
     },
     {
@@ -1218,7 +1546,7 @@
         "instability",
         "Mather-theory"
       ],
-      "rank": 44,
+      "rank": 55,
       "css": 62.933
     },
     {
@@ -1245,7 +1573,7 @@
         "Jacobian",
         "Tsuchimoto"
       ],
-      "rank": 45,
+      "rank": 56,
       "css": 62.067
     },
     {
@@ -1273,7 +1601,7 @@
         "GUE",
         "RH"
       ],
-      "rank": 46,
+      "rank": 57,
       "css": 62.033
     },
     {
@@ -1300,8 +1628,37 @@
         "Kaloshin",
         "ellipses"
       ],
-      "rank": 47,
+      "rank": 58,
       "css": 62.0
+    },
+    {
+      "slug": "cerny-conjecture",
+      "title": "The Černý Conjecture",
+      "field": "Combinatorics",
+      "subfields": [
+        "Automata Theory",
+        "Theoretical Computer Science",
+        "Transformation Semigroups"
+      ],
+      "year_posed": 1964,
+      "originators": [
+        "Ján Černý"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "If a deterministic finite automaton with n states admits a synchronizing (reset) word — an input string that maps every state to the same single state — then it admits a synchronizing word of length at most (n - 1)^2.\n",
+      "difficulty": 82,
+      "centrality": 60,
+      "tractability": 30,
+      "status": "active-progress",
+      "tags": [
+        "automata-theory",
+        "synchronizing-words",
+        "semigroups",
+        "combinatorics",
+        "Cerny"
+      ],
+      "rank": 59,
+      "css": 61.933
     },
     {
       "slug": "furstenberg-conjecture",
@@ -1327,7 +1684,7 @@
         "Rudolph",
         "entropy"
       ],
-      "rank": 48,
+      "rank": 60,
       "css": 61.933
     },
     {
@@ -1354,7 +1711,7 @@
         "Hooley",
         "GRH"
       ],
-      "rank": 49,
+      "rank": 61,
       "css": 61.9
     },
     {
@@ -1382,7 +1739,7 @@
         "SLE",
         "Duminil-Copin"
       ],
-      "rank": 50,
+      "rank": 62,
       "css": 61.667
     },
     {
@@ -1409,7 +1766,7 @@
         "CW",
         "group-theory"
       ],
-      "rank": 51,
+      "rank": 63,
       "css": 61.467
     },
     {
@@ -1437,7 +1794,7 @@
         "Lehmer-number",
         "Salem"
       ],
-      "rank": 52,
+      "rank": 64,
       "css": 61.4
     },
     {
@@ -1464,7 +1821,7 @@
         "Taubes",
         "ECH"
       ],
-      "rank": 53,
+      "rank": 65,
       "css": 61.033
     },
     {
@@ -1494,8 +1851,37 @@
         "regularity-structures",
         "universality"
       ],
-      "rank": 54,
+      "rank": 66,
       "css": 60.967
+    },
+    {
+      "slug": "conway-99-graph-problem",
+      "title": "Conway's 99-Graph Problem",
+      "field": "Graph Theory",
+      "subfields": [
+        "Algebraic Graph Theory",
+        "Strongly Regular Graphs",
+        "Finite Geometry"
+      ],
+      "year_posed": 1970,
+      "originators": [
+        "John Horton Conway"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "Does there exist an undirected graph with 99 vertices in which every pair of adjacent vertices has exactly 1 common neighbor and every pair of non-adjacent vertices has exactly 2 common neighbors — i.e., a strongly regular graph with parameters srg(99, 14, 1, 2)?\n",
+      "difficulty": 84,
+      "centrality": 54,
+      "tractability": 26,
+      "status": "open",
+      "tags": [
+        "strongly-regular-graphs",
+        "Conway-prize",
+        "algebraic-graph-theory",
+        "finite-geometry",
+        "99-graph"
+      ],
+      "rank": 67,
+      "css": 60.933
     },
     {
       "slug": "hilbert-smith-conjecture",
@@ -1522,7 +1908,7 @@
         "Lie-groups",
         "manifolds"
       ],
-      "rank": 55,
+      "rank": 68,
       "css": 60.8
     },
     {
@@ -1549,7 +1935,7 @@
         "Gupta",
         "automorphisms"
       ],
-      "rank": 56,
+      "rank": 69,
       "css": 60.733
     },
     {
@@ -1576,7 +1962,7 @@
         "SRB-measures",
         "Palis-program"
       ],
-      "rank": 57,
+      "rank": 70,
       "css": 60.467
     },
     {
@@ -1602,7 +1988,7 @@
         "square-peg",
         "topology"
       ],
-      "rank": 58,
+      "rank": 71,
       "css": 60.267
     },
     {
@@ -1629,7 +2015,7 @@
         "Kakeya",
         "Guth-Iosevich-Ou-Wang"
       ],
-      "rank": 59,
+      "rank": 72,
       "css": 60.033
     },
     {
@@ -1656,7 +2042,7 @@
         "abc",
         "Diophantine"
       ],
-      "rank": 60,
+      "rank": 73,
       "css": 59.833
     },
     {
@@ -1686,7 +2072,7 @@
         "homothets",
         "illumination"
       ],
-      "rank": 61,
+      "rank": 74,
       "css": 59.6
     },
     {
@@ -1713,7 +2099,7 @@
         "topological-Vaught",
         "Borel"
       ],
-      "rank": 62,
+      "rank": 75,
       "css": 59.333
     },
     {
@@ -1741,7 +2127,7 @@
         "classification",
         "model-theory"
       ],
-      "rank": 63,
+      "rank": 76,
       "css": 59.133
     },
     {
@@ -1768,7 +2154,7 @@
         "noncommutative",
         "Amitsur"
       ],
-      "rank": 64,
+      "rank": 77,
       "css": 59.1
     },
     {
@@ -1795,7 +2181,7 @@
         "disjointness",
         "Chowla"
       ],
-      "rank": 65,
+      "rank": 78,
       "css": 58.567
     },
     {
@@ -1822,7 +2208,7 @@
         "cyclotomic",
         "class-groups"
       ],
-      "rank": 66,
+      "rank": 79,
       "css": 58.533
     },
     {
@@ -1849,7 +2235,7 @@
         "Erdos-Rado",
         "Alweiss-Lovett-Wu-Zhang"
       ],
-      "rank": 67,
+      "rank": 80,
       "css": 58.3
     },
     {
@@ -1878,7 +2264,7 @@
         "six-exponentials",
         "logarithms"
       ],
-      "rank": 68,
+      "rank": 81,
       "css": 58.167
     },
     {
@@ -1906,7 +2292,7 @@
         "Guy-Selfridge",
         "iteration"
       ],
-      "rank": 69,
+      "rank": 82,
       "css": 58.0
     },
     {
@@ -1934,7 +2320,7 @@
         "Szemeredi-Trotter",
         "disproved-2026"
       ],
-      "rank": 70,
+      "rank": 83,
       "css": 57.533
     },
     {
@@ -1962,7 +2348,7 @@
         "hyperbolic-volume",
         "quantum-invariants"
       ],
-      "rank": 71,
+      "rank": 84,
       "css": 57.533
     },
     {
@@ -1990,7 +2376,7 @@
         "de-Grey",
         "unit-distance"
       ],
-      "rank": 72,
+      "rank": 85,
       "css": 57.367
     },
     {
@@ -2017,7 +2403,7 @@
         "designs",
         "orthogonal"
       ],
-      "rank": 73,
+      "rank": 86,
       "css": 57.167
     },
     {
@@ -2044,7 +2430,7 @@
         "4-ball",
         "concordance"
       ],
-      "rank": 74,
+      "rank": 87,
       "css": 57.067
     },
     {
@@ -2072,7 +2458,7 @@
         "double-cover",
         "embeddings"
       ],
-      "rank": 75,
+      "rank": 88,
       "css": 57.033
     },
     {
@@ -2099,7 +2485,7 @@
         "Hecke",
         "non-vanishing"
       ],
-      "rank": 76,
+      "rank": 89,
       "css": 56.967
     },
     {
@@ -2125,7 +2511,7 @@
         "Carmichael",
         "Ford"
       ],
-      "rank": 77,
+      "rank": 90,
       "css": 56.933
     },
     {
@@ -2153,7 +2539,7 @@
         "cliques",
         "Erdos"
       ],
-      "rank": 78,
+      "rank": 91,
       "css": 56.867
     },
     {
@@ -2179,7 +2565,7 @@
         "squares",
         "Brown-numbers"
       ],
-      "rank": 79,
+      "rank": 92,
       "css": 56.8
     },
     {
@@ -2207,7 +2593,7 @@
         "out-degree",
         "Seymour"
       ],
-      "rank": 80,
+      "rank": 93,
       "css": 56.8
     },
     {
@@ -2234,7 +2620,7 @@
         "Ulam",
         "isomorphism"
       ],
-      "rank": 81,
+      "rank": 94,
       "css": 56.567
     },
     {
@@ -2262,7 +2648,7 @@
         "matching",
         "Konig"
       ],
-      "rank": 82,
+      "rank": 95,
       "css": 56.567
     },
     {
@@ -2289,7 +2675,7 @@
         "aspherical",
         "Bestvina-Brady"
       ],
-      "rank": 83,
+      "rank": 96,
       "css": 56.2
     },
     {
@@ -2316,7 +2702,7 @@
         "minimal-surfaces",
         "tilings"
       ],
-      "rank": 84,
+      "rank": 97,
       "css": 55.967
     },
     {
@@ -2343,7 +2729,7 @@
         "AC-moves",
         "topology"
       ],
-      "rank": 85,
+      "rank": 98,
       "css": 55.667
     },
     {
@@ -2370,7 +2756,7 @@
         "Andrews-Curtis",
         "contractible"
       ],
-      "rank": 86,
+      "rank": 99,
       "css": 55.533
     },
     {
@@ -2397,7 +2783,7 @@
         "quantum",
         "Tsirelson"
       ],
-      "rank": 87,
+      "rank": 100,
       "css": 55.433
     },
     {
@@ -2424,7 +2810,7 @@
         "view-obstruction",
         "covering"
       ],
-      "rank": 88,
+      "rank": 101,
       "css": 55.333
     },
     {
@@ -2452,8 +2838,37 @@
         "Ravenel",
         "disproved"
       ],
-      "rank": 89,
+      "rank": 102,
       "css": 55.3
+    },
+    {
+      "slug": "riesel-problem",
+      "title": "The Riesel Problem",
+      "field": "Number Theory",
+      "subfields": [
+        "Elementary Number Theory",
+        "Covering Systems",
+        "Computational Number Theory"
+      ],
+      "year_posed": 1956,
+      "originators": [
+        "Hans Riesel"
+      ],
+      "millennium_prize": false,
+      "statement_plain": "A Riesel number is an odd positive integer k such that k * 2^n - 1 is composite for every integer n >= 1. Hans Riesel proved in 1956 that k = 509,203 is a Riesel number; the Riesel problem asks whether 509,203 is the smallest Riesel number (equivalently, whether every remaining odd candidate k < 509,203 produces at least one prime k * 2^n - 1).\n",
+      "difficulty": 76,
+      "centrality": 48,
+      "tractability": 42,
+      "status": "active-progress",
+      "tags": [
+        "Riesel-numbers",
+        "covering-systems",
+        "OEIS",
+        "primality",
+        "computational-number-theory"
+      ],
+      "rank": 103,
+      "css": 55.267
     },
     {
       "slug": "beal-conjecture",
@@ -2477,7 +2892,7 @@
         "Fermat",
         "prize-problem"
       ],
-      "rank": 90,
+      "rank": 104,
       "css": 55.0
     },
     {
@@ -2504,7 +2919,7 @@
         "Agoh",
         "congruences"
       ],
-      "rank": 91,
+      "rank": 105,
       "css": 54.667
     },
     {
@@ -2529,7 +2944,7 @@
         "Carmichael",
         "Lehmer"
       ],
-      "rank": 92,
+      "rank": 106,
       "css": 54.367
     },
     {
@@ -2557,7 +2972,7 @@
         "Vizing",
         "Molloy-Reed"
       ],
-      "rank": 93,
+      "rank": 107,
       "css": 54.067
     },
     {
@@ -2584,7 +2999,7 @@
         "heights",
         "Danilov"
       ],
-      "rank": 94,
+      "rank": 108,
       "css": 53.867
     },
     {
@@ -2611,7 +3026,7 @@
         "univalent",
         "spectrum"
       ],
-      "rank": 95,
+      "rank": 109,
       "css": 53.4
     },
     {
@@ -2638,7 +3053,7 @@
         "Gilmer",
         "entropy"
       ],
-      "rank": 96,
+      "rank": 110,
       "css": 53.033
     },
     {
@@ -2665,7 +3080,7 @@
         "Erdos",
         "unit-fractions"
       ],
-      "rank": 97,
+      "rank": 111,
       "css": 53.0
     },
     {
@@ -2694,7 +3109,7 @@
         "Ringel",
         "decompositions"
       ],
-      "rank": 98,
+      "rank": 112,
       "css": 52.333
     },
     {
@@ -2719,7 +3134,7 @@
         "consecutive",
         "factorization"
       ],
-      "rank": 99,
+      "rank": 113,
       "css": 51.3
     },
     {
@@ -2746,7 +3161,7 @@
         "tournaments",
         "Dean"
       ],
-      "rank": 100,
+      "rank": 114,
       "css": 50.0
     },
     {
@@ -2775,7 +3190,7 @@
         "balanced-pairs",
         "sorting"
       ],
-      "rank": 101,
+      "rank": 115,
       "css": 49.867
     },
     {
@@ -2801,7 +3216,7 @@
         "binomial",
         "multiplicity"
       ],
-      "rank": 102,
+      "rank": 116,
       "css": 48.067
     },
     {
@@ -2828,7 +3243,7 @@
         "difference-table",
         "Gilbreath"
       ],
-      "rank": 103,
+      "rank": 117,
       "css": 47.933
     },
     {
@@ -2853,7 +3268,7 @@
         "critical-points",
         "Tao"
       ],
-      "rank": 104,
+      "rank": 118,
       "css": 46.967
     },
     {
@@ -2880,7 +3295,7 @@
         "Baek",
         "corridor"
       ],
-      "rank": 105,
+      "rank": 119,
       "css": 46.6
     },
     {
@@ -2906,7 +3321,7 @@
         "matrices",
         "spectral"
       ],
-      "rank": 106,
+      "rank": 120,
       "css": 43.967
     }
   ]

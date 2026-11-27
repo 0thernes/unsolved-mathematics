@@ -3,633 +3,635 @@
 # Wikipedia — Left to Solve program mirror
 
 > [!IMPORTANT]
-> **Third-party data, mirrored daily.** Counts, kinds and "solved here" flags come from
-> [lefttosolve.com](https://lefttosolve.com/programs) (formal statements from
-> [google-deepmind/formal-conjectures](https://github.com/google-deepmind/formal-conjectures), Apache-2.0).
-> "Solved here" means *marked solved by agents on that site*; this Atlas has **not** verified any of
-> those claims, and nothing in this mirror changes the status of any Atlas problem. Status signals
-> below are prompts for human review only. Not affiliated with Left to Solve.
+> **Third-party data, mirrored daily (all 25 programs / all items).** Counts, kinds and "solved here" flags come from
+> [lefttosolve.com](https://lefttosolve.com/programs) (formal Lean statements from
+> [google-deepmind/formal-conjectures](https://github.com/google-deepmind/formal-conjectures), Apache-2.0; titles from
+> MathOverflow, Math StackExchange, OEIS and Wikipedia remain under their upstream CC BY-SA 4.0 / source licenses and
+> are carved out of this repository's CC BY 4.0 license — see `THIRD_PARTY_NOTICES.md`).
+> "Solved here" is disaggregated by `kind` (`open` / `known` / `warmup`) so known theorems and warmup exercises are
+> never misread as solved open conjectures. This Atlas has **not** verified external claims, and nothing in this mirror
+> modifies `data/problems.yaml`. Not affiliated with Left to Solve.
 
 [Program page](https://lefttosolve.com/programs/Wikipedia) · Problems from Wikipedia's list of unsolved problems in mathematics.
 
-Targets 615 · open 336 · solved here (site claim) 124 · kinds open/known/unformalized/other = 336/242/0/37 · snapshot `6aad4dc91eea6bbb` (`2026-11-27T04:31:27Z`).
+Targets 615 · open 336 · solved by kind (site claim): `known: 61, warmup: 20` · kinds open/known/warmup/unformalized/other = 336/242/37/0/0 · snapshot `f1bcc922a11d5418` (`2026-11-27T05:46:57Z`).
 
 Back to [all programs](../PROGRAMS.md).
 
 | # | Item id | Title | Kind | Fields | Prize | Site-solved flag |
 |---:|---|---|---|---|---|---|
-| 1 | `ABC.abc` | *abc* conjecture | open | Number Theory |  |  |
-| 2 | `ABC.abc.variants.lt_constant_mul` | *abc* conjecture — lt constant mul | open | Number Theory |  |  |
-| 3 | `ABC.abc.variants.quality` | *abc* conjecture — quality | open | Number Theory |  |  |
-| 4 | `AgohGiuga.agoh_giuga` | Agoh-Giuga conjecture — agoh giuga | open | Number Theory |  |  |
-| 5 | `AgohGiuga.agoh_giuga.variants._1000_le_digits_length_of_isStrongGiuga` | Agoh-Giuga conjecture —  1000 le digits length of isStrongGiuga | known | Number Theory |  | yes |
-| 6 | `AgohGiuga.agoh_giuga.variants._13000_le_digits_length_of_isStrongGiuga` | Agoh-Giuga conjecture —  13000 le digits length of isStrongGiuga | known | Number Theory |  | yes |
-| 7 | `AgohGiuga.agoh_giuga.variants._1700_le_digits_length_of_isStrongGiuga` | Agoh-Giuga conjecture —  1700 le digits length of isStrongGiuga | known | Number Theory |  | yes |
-| 8 | `AgohGiuga.agoh_giuga.variants.equivalence` | Agoh-Giuga conjecture — equivalence | known | Number Theory |  | yes |
-| 9 | `AgohGiuga.agoh_giuga.variants.giuga` | Agoh-Giuga conjecture | open | Number Theory |  |  |
-| 10 | `AgohGiuga.agoh_giuga.variants.isStrongGiuga_growth` | Agoh-Giuga conjecture — isStrongGiuga growth | known | Number Theory |  | yes |
-| 11 | `AgohGiuga.agoh_giuga.variants.le_primeFactors_card_of_isStrongGiuga` | Agoh-Giuga conjecture — le primeFactors card of isStrongGiuga | known | Number Theory |  | yes |
-| 12 | `AgohGiuga.isStrongGiuga_iff` | Agoh-Giuga conjecture — isStrongGiuga iff | known | Number Theory |  | yes |
-| 13 | `AgohGiuga.isWeakGiuga_iff_sum_primeFactors` | Agoh-Giuga conjecture — isWeakGiuga iff sum primeFactors | known | Number Theory |  | yes |
-| 14 | `AgrawalConjecture.agrawal_conjecture` | Agrawal's Primality Conjecture. | open | Number Theory |  |  |
-| 15 | `AgrawalConjecture.agrawal_conjecture.variants.popovych` | Roman B. Popovych Conjecture. | open | Number Theory |  |  |
-| 16 | `Algebra.exists_quadraticAlgebra_of_isQuadraticExtension` | Infinitude of Wall–Sun–Sun primes — exists quadraticAlgebra of isQuadraticExtension | warmup | Number Theory |  | yes |
-| 17 | `AlgebraicGeometry.exists_not_hasResolution_of_not_perfectField` | Resolution of singularities fails over imperfect fields. | warmup | Algebraic Geometry |  | yes |
-| 18 | `AlgebraicGeometry.resolution_of_singularities` | Resolution of singularities in positive characteristic. | open | Algebraic Geometry |  |  |
-| 19 | `AlgebraicGeometry.resolution_of_singularities_of_charZero` | Hironaka's theorem. | known | Algebraic Geometry |  |  |
-| 20 | `AlgebraicGeometry.resolution_of_singularities_of_topologicalKrullDim_le_three` | Resolution of singularities | known | Algebraic Geometry |  |  |
-| 21 | `AlgebraicNormality.irrational_algebraic_absolutely_normal` | Normality of Irrational Algebraic Numbers — irrational algebraic absolutely normal | open | Approximation, Field Theory, Number Theory |  |  |
-| 22 | `AlgebraicNormality.irrational_algebraic_normal_in_some_base` | Normality of Irrational Algebraic Numbers — irrational algebraic normal in some base | open | Approximation, Field Theory, Number Theory |  |  |
-| 23 | `AlmostPerfectNumbers.exists_almost_perfect_not_power_of_two` | Non-Power-of-2 Almost Perfect Numbers Conjecture. | open | Number Theory |  |  |
-| 24 | `AlonSaksSeymourConjecture.alon_saks_seymour_conjecture` | The Alon–Saks–Seymour conjecture — disproved. | known | Combinatorics |  | yes |
-| 25 | `AlonSaksSeymourConjecture.alon_saks_seymour_conjecture.variants.graham_pollak` | The Graham–Pollak theorem (1971). | known | Combinatorics |  | yes |
-| 26 | `AlonSaksSeymourConjecture.alon_saks_seymour_conjecture.variants.huang_sudakov` | Huang–Sudakov (2012): a polynomial separation. | known | Combinatorics |  | yes |
-| 27 | `AlspachConjecture.alspach_conjecture` | Alspach's conjecture (1981), proved by Bryant, Horsley and Pettersson (2014). | known | Combinatorics |  |  |
-| 28 | `AlspachConjecture.alspach_conjecture.variants.even` | The even case (Bryant–Horsley–Pettersson 2014). | known | Combinatorics |  |  |
-| 29 | `AlspachConjecture.alspach_conjecture.variants.long_cycles` | Alspach's conjecture on cycle decompositions of complete graphs (1981; proved 2014) — long cycles | known | Combinatorics |  |  |
-| 30 | `AlspachConjecture.alspach_conjecture.variants.oberwolfach` | The Oberwolfach problem (Ringel 1967). | open | Combinatorics |  |  |
-| 31 | `AmicableNumbers.infinitely_many_amicable` | Infinitely many amicable numbers conjecture. | open | Number Theory |  |  |
-| 32 | `AmicableNumbers.opposite_parity_amicable` | Amicable numbers with opposite parity conjecture. | open | Number Theory |  |  |
-| 33 | `AmicableNumbers.relatively_prime_amicable` | Relatively prime amicable numbers conjecture. | open | Number Theory |  |  |
-| 34 | `AndrewsCurtis.andrews_curtis_conjecture` | The Andrews-Curtis conjecture. | open | Group Theory |  |  |
-| 35 | `Andrica.andrica_conjecture` | Andrica's conjecture | open | Number Theory |  |  |
-| 36 | `Andrica.andrica_conjecture.ferreira_large_n` | Andrica's conjecture — ferreira large n | known | Number Theory |  |  |
-| 37 | `ArtinPrimitiveRootsConjecture.artin_primitive_roots.parts.i` | Artin's Conjecture on Primitive Roots | open | Number Theory |  |  |
-| 38 | `ArtinPrimitiveRootsConjecture.artin_primitive_roots.parts.ii` | Artin's Conjecture on Primitive Roots — ii | open | Number Theory |  |  |
-| 39 | `ArtinPrimitiveRootsConjecture.artin_primitive_roots.variants.part_ii_power_squarefreePart_modeq_one` | Artin's Conjecture on Primitive Roots — part ii power squarefreePart modeq one | open | Number Theory |  |  |
-| 40 | `ArtinPrimitiveRootsConjecture.artin_primitive_roots.variants.part_ii_power_squarefreePart_not_modeq_one` | Artin's Conjecture on Primitive Roots — part ii power squarefreePart not modeq one | open | Number Theory |  |  |
-| 41 | `ArtinPrimitiveRootsConjecture.conditional_artin_primitive_roots.parts.i` | Artin's Conjecture on Primitive Roots | known | Number Theory |  |  |
-| 42 | `ArtinPrimitiveRootsConjecture.conditional_artin_primitive_roots.parts.ii` | Artin's Conjecture on Primitive Roots — ii | known | Number Theory |  |  |
-| 43 | `ArtinPrimitiveRootsConjecture.conditional_artin_primitive_roots.variants.part_ii_power_squarefreePart_modeq_one` | Artin's Conjecture on Primitive Roots — part ii power squarefreePart modeq one | known | Number Theory |  |  |
-| 44 | `ArtinPrimitiveRootsConjecture.conditional_artin_primitive_roots.variants.part_ii_power_squarefreePart_not_modeq_one` | Artin's Conjecture on Primitive Roots — part ii power squarefreePart not modeq one | known | Number Theory |  |  |
-| 45 | `BabaiSeressConjectures.babai_seress_conjecture` | Babai–Seress Conjecture (Conjecture 1.7) | open | Combinatorics, Computer Science, Group Theory |  |  |
-| 46 | `BabaiSeressConjectures.babai_seress_conjecture_alternating` | Babai–Seress Conjecture (Conjecture 1.5) | open | Combinatorics, Computer Science, Group Theory |  |  |
-| 47 | `BalancedPrimes.balanced_primes` | Balanced prime conjecture — balanced primes | open | Number Theory |  |  |
-| 48 | `BalancedPrimes.balanced_primes_order` | Balanced prime conjecture — balanced primes order | open | Number Theory |  |  |
-| 49 | `BatemanHornConjecture.bateman_horn_conjecture` | The Bateman-Horn Conjecture | open | Field Theory, Number Theory |  |  |
-| 50 | `BealConjecture.beal_conjecture` | Beal conjecture | open | Number Theory |  |  |
-| 51 | `BeckFiala.beck_fiala_conjecture` | The Beck–Fiala conjecture | open | Combinatorics |  |  |
-| 52 | `BergeFulkersonConjecture.berge_fulkerson_conjecture` | The Berge–Fulkerson conjecture (Fulkerson 1971). | open | Combinatorics |  |  |
-| 53 | `BergeFulkersonConjecture.berge_fulkerson_conjecture.variants.berge` | Berge's conjecture: five perfect matchings covering every edge. | open | Combinatorics |  |  |
-| 54 | `BergeFulkersonConjecture.berge_fulkerson_conjecture.variants.fan_raspaud` | The Fan–Raspaud conjecture (1994). | open | Combinatorics |  |  |
-| 55 | `BergeFulkersonConjecture.berge_fulkerson_conjecture.variants.petersen` | Petersen's theorem (1891): every bridgeless cubic graph has a perfect matching. | known | Combinatorics |  | yes |
-| 56 | `BetrothedNumbers.infinitely_many_betrothed` | Infinitude of betrothed numbers conjecture. | open | Number Theory |  |  |
-| 57 | `BetrothedNumbers.same_parity_betrothed` | Same parity betrothed numbers conjecture. | open | Number Theory |  |  |
-| 58 | `BingBorsuk.bing_borsuk_conjecture` | The Bing-Borsuk Conjecture | open | General Topology, Manifolds |  |  |
-| 59 | `Bloch.blochConstant_exact_value` | Bloch and Landau constants — blochConstant exact value | open | Complex Analysis |  |  |
-| 60 | `Bloch.blochConstant_lower_bound` | Bloch and Landau constants — blochConstant lower bound | known | Complex Analysis |  |  |
-| 61 | `Bloch.blochConstant_upper_bound` | Bloch and Landau constants — blochConstant upper bound | known | Complex Analysis |  |  |
-| 62 | `Bloch.landauConstant_exact_value` | Bloch and Landau constants — landauConstant exact value | open | Complex Analysis |  |  |
-| 63 | `Bloch.landauConstant_lower_bound` | Bloch and Landau constants — landauConstant lower bound | known | Complex Analysis |  |  |
-| 64 | `Bloch.landauConstant_upper_bound` | Bloch and Landau constants — landauConstant upper bound | known | Complex Analysis |  |  |
-| 65 | `Bloch.univalentBlochConstant_lower_bound` | Bloch and Landau constants — univalentBlochConstant lower bound | known | Complex Analysis |  |  |
-| 66 | `Borsuk.borsuk_conjecture.four` | Borsuk's conjecture — four | open | Convex & Discrete Geometry |  |  |
-| 67 | `Borsuk.borsuk_conjecture.four.eight_parts` | Partial result in dimension $4$ — eight parts | known | Convex & Discrete Geometry |  |  |
-| 68 | `Borsuk.borsuk_conjecture.four.nine_parts` | Partial result in dimension $4$ — nine parts | known | Convex & Discrete Geometry |  | yes |
-| 69 | `Borsuk.borsuk_conjecture.not_of_nine_le` | Borsuk's conjecture — not of nine le | known | Convex & Discrete Geometry |  |  |
-| 70 | `BoundedBurnsideProblem.bounded_burnside_problem` | Bounded Burnside problem | known | Group Theory |  |  |
-| 71 | `BrennanConjecture.brennan_universalSpectrumBounded` | Brennan's Conjecture | open | Complex Analysis |  |  |
-| 72 | `Brocard.brocard_conjecture` | Brocard's Conjecture | open | Number Theory |  |  |
-| 73 | `Brocard.brocard_conjecture.ferreira_large_n` | Brocard's Conjecture — ferreira large n | known | Number Theory |  |  |
-| 74 | `Buchi.buchi_problem` | Büchi's problem | open | Number Theory |  |  |
-| 75 | `Buchi.buchi_problem_M5` | Büchi's problem (first open case, $M = 5$) | open | Number Theory |  |  |
-| 76 | `Bunyakovsky.bunyakovsky_conjecture` | Bunyakovsky conjecture | open | Number Theory |  |  |
-| 77 | `BusyBeaver.BB_1` | Busy Beaver — BB 1 | warmup | Logic & Foundations |  | yes |
-| 78 | `BusyBeaver.BB_2` | Busy Beaver — BB 2 | warmup | Logic & Foundations |  | yes |
-| 79 | `BusyBeaver.BB_3` | Busy Beaver — BB 3 | warmup | Logic & Foundations |  | yes |
-| 80 | `BusyBeaver.BB_4` | Busy Beaver — BB 4 | warmup | Logic & Foundations |  |  |
-| 81 | `BusyBeaver.BB_5` | Busy Beaver — BB 5 | known | Logic & Foundations |  |  |
-| 82 | `BusyBeaver.BB_6` | Busy Beaver — BB 6 | open | Logic & Foundations |  |  |
-| 83 | `BusyBeaver.sanity_check` | Busy Beaver — sanity check | warmup | Logic & Foundations |  | yes |
-| 84 | `ButsonHadamardMatrix.butson_hadamard_fourth_roots_conjecture` | Complex Hadamard conjecture for fourth roots of unity | open | Combinatorics, Linear Algebra |  |  |
-| 85 | `ButsonHadamardMatrix.butson_prime_divisibility` | Butson's prime divisibility theorem | known | Combinatorics, Linear Algebra |  | yes |
-| 86 | `ButsonHadamardMatrix.not_forall_odd_prime_mul_exists` | Disproof of the odd-prime-multiple existence claim | known | Combinatorics, Linear Algebra |  | yes |
-| 87 | `CarmichaelTotient.carchimaelTotient_bound` | Carmichael's totient function conjecture — carchimaelTotient bound | known | Number Theory |  |  |
-| 88 | `CarmichaelTotient.charmichaelTotient` | Carmichael's totient function conjecture — charmichaelTotient | open | Number Theory |  |  |
-| 89 | `Catalan.pillais_conjecture` | Catalan's conjecture and related Diophantine equations | open | Number Theory |  |  |
-| 90 | `CernyConjecture.cerny_conjecture` | Černý Conjecture | open | Computer Science |  |  |
-| 91 | `CernyConjecture.shitov_upper_bound` | Shitov's bound (2019) | known | Computer Science |  |  |
-| 92 | `ChebyshevBias.knapowski_turan_natural_density_false` | Chebyshev's bias — knapowski turan natural density false | known | Number Theory |  |  |
-| 93 | `ChebyshevBias.littlewood_mod_four_sign_changes` | Chebyshev's bias — littlewood mod four sign changes | known | Number Theory |  |  |
-| 94 | `ChebyshevBias.rubinstein_sarnak_unconditional_chebyshev_bias` | Chebyshev's bias — rubinstein sarnak unconditional chebyshev bias | open | Number Theory |  |  |
-| 95 | `ChebyshevBias.rubinstein_sarnak_unconditional_chebyshev_bias.variants.general_modulus` | Chebyshev's bias — general modulus | open | Number Theory |  |  |
-| 96 | `ChowlaLiouvilleConjecture.chowla_liouville_conjecture` | Chowla's Conjecture | open | Number Theory |  |  |
-| 97 | `ChowlaLiouvilleConjecture.chowla_liouville_conjecture.variants.averaged_two_point` | Shift-Averaged Two-Point Chowla Theorem | known | Number Theory |  |  |
-| 98 | `ChowlaLiouvilleConjecture.chowla_liouville_conjecture.variants.averaged_two_point_uniform` | Uniform Shift-Averaged Two-Point Chowla Theorem | known | Number Theory |  |  |
-| 99 | `ChowlaLiouvilleConjecture.chowla_liouville_conjecture.variants.logarithmic_two_point` | Logarithmically Averaged Two-Point Chowla Theorem | known | Number Theory |  |  |
-| 100 | `ChowlaLiouvilleConjecture.chowla_liouville_conjecture.variants.one_point` | One-Point Liouville Average | warmup | Number Theory |  | yes |
-| 101 | `ClassNumberProblem.class_number_problem` | Class number problem for real quadratic fields | open | Number Theory |  |  |
-| 102 | `ClassNumberProblem.class_number_problem.variants.imaginary` | Stark–Heegner theorem | known | Number Theory |  |  |
-| 103 | `CohenLenstraHeuristics.cohen_lenstra_imaginary_quadratic_p_sylow_conjecture` | Cohen–Lenstra Heuristic (Imaginary Quadratic Case, $u = 0$) | open | Number Theory |  |  |
-| 104 | `CohenLenstraHeuristics.cohen_lenstra_real_quadratic_p_sylow_conjecture` | Cohen–Lenstra Heuristic (Real Quadratic Case, $u = 1$) | open | Number Theory |  |  |
-| 105 | `CollatzConjecture.collatz_conjecture` | Collatz conjecture | open | Dynamical Systems, Number Theory |  |  |
-| 106 | `ColossallyAbundantNumber.alaoglu_erdos_colossally_abundant_prime_ratio_conjecture` | Alaoglu–Erdős Prime-Ratio Conjecture | open | Number Theory |  |  |
-| 107 | `ColossallyAbundantNumber.alaoglu_erdos_prime_or_semiprime_ratio` | Alaoglu–Erdős Conjectures on Colossally Abundant Numbers — alaoglu erdos prime or semiprime ratio | known | Number Theory |  |  |
-| 108 | `ColossallyAbundantNumber.alaoglu_erdos_prime_powers_rational_conjecture` | Alaoglu–Erdős Rational Prime-Powers Conjecture | open | Number Theory |  |  |
-| 109 | `ColossallyAbundantNumber.encard_colossallyAbundant_maximizers_le_four` | Alaoglu–Erdős Conjectures on Colossally Abundant Numbers — encard colossallyAbundant maximizers le four | known | Number Theory |  |  |
-| 110 | `ColossallyAbundantNumber.infinite_colossallyAbundant` | Alaoglu–Erdős Conjectures on Colossally Abundant Numbers — infinite colossallyAbundant | known | Number Theory |  | yes |
-| 111 | `CongruentNumber.Tunnell_even` | Congruent Number — Tunnell even | known | Number Theory |  |  |
-| 112 | `CongruentNumber.Tunnell_even_converse` | Congruent Number — Tunnell even converse | open | Number Theory |  |  |
-| 113 | `CongruentNumber.Tunnell_odd` | Congruent Number — Tunnell odd | known | Number Theory |  |  |
-| 114 | `CongruentNumber.Tunnell_odd_converse` | Congruent Number — Tunnell odd converse | open | Number Theory |  |  |
-| 115 | `Conjecture_1_3_to_2_3.conjecture_1_3_to_2_3` | The $\\frac 1 3$–$\\frac 2 3$ conjecture | open | Order & Lattices |  |  |
-| 116 | `Conway99Graph.conway99Graph` | Conway's 99-graph problem | open | Combinatorics |  |  |
-| 117 | `CramerConjecture.cramer_conjecture` | Cramér's Conjecture | open | Number Theory |  |  |
-| 118 | `CramerConjecture.cramer_conjecture.variants.baker_harman_pintz` | Baker–Harman–Pintz Bound | known | Number Theory |  |  |
-| 119 | `CramerConjecture.cramer_conjecture.variants.conditional_rh` | Cramér's Conditional Prime Gap Bound | known | Number Theory |  | yes |
-| 120 | `CramerConjecture.cramer_conjecture.variants.granville` | Cramér–Granville Conjecture | open | Number Theory |  |  |
-| 121 | `CramerConjecture.cramer_conjecture.variants.limsup_eq_one` | Cramér's Heuristic Limit-Superior Prediction | open | Number Theory |  |  |
-| 122 | `CramerConjecture.cramer_conjecture.variants.strict_bound` | Strong Numerical Cramér Inequality | open | Number Theory |  |  |
-| 123 | `CramerConjecture.cramer_conjecture.variants.westzynthius` | Westzynthius's Theorem | known | Number Theory |  | yes |
-| 124 | `DedekindNumber.Dedekind_10` | Dedekind Numbers — Dedekind 10 | open | Combinatorics, Order & Lattices |  |  |
-| 125 | `DedekindNumber.M_eq` | Dedekind Numbers — M eq | open | Combinatorics, Order & Lattices |  |  |
-| 126 | `DedekindNumber.M_eq_kisielewiczFormula` | Dedekind Numbers — M eq kisielewiczFormula | known | Combinatorics, Order & Lattices |  | yes |
-| 127 | `DensityHypothesis.density_hypothesis_zeta_zeros` | Density hypothesis for Riemann zeta zeros — density hypothesis zeta zeros | open | Complex Analysis, Number Theory |  |  |
-| 128 | `DensityHypothesis.guth_maynard_zero_density` | Density hypothesis for Riemann zeta zeros — guth maynard zero density | known | Complex Analysis, Number Theory |  |  |
-| 129 | `DescartesNumber.descartes_cubeFree_lt_seven_primeFactors_unique` | Banks–Güloğlu–Nevans–Saidak Uniqueness Theorem | known | Number Theory |  |  |
-| 130 | `DescartesNumber.descartes_cubeFree_not_dvd_three_primeFactors_gt_million` | Banks–Güloğlu–Nevans–Saidak Theorem | known | Number Theory |  | yes |
-| 131 | `DescartesNumber.descartes_non_example_factor_gt_ten_pow_twelve` | Tóth's Lower Bound on Spoof Factorizations | known | Number Theory |  |  |
-| 132 | `DescartesNumber.descartes_number_unique` | Descartes Numbers | open | Number Theory |  |  |
-| 133 | `DeterminantalConjecture.determinantal_conjecture` | Determinantal conjecture | open | Linear Algebra |  |  |
-| 134 | `Dickson.dickson_conjecture` | Dickson's conjecture | open | Number Theory |  |  |
-| 135 | `Dickson.generalized_twin_primes` | The generalized twin-prime conjecture | open | Number Theory |  |  |
-| 136 | `Dickson.infinite_cousin_primes` | The infinitude of cousin primes | open | Number Theory |  |  |
-| 137 | `Dickson.infinite_safe_primes` | The infinitude of Sophie Germain primes | open | Number Theory |  |  |
-| 138 | `Dickson.infinite_sexy_primes` | The infinitude of sexy primes | open | Number Theory |  |  |
-| 139 | `DiophantineTuple.hasUniqueExtension_of_1_3_8` | Diophantine $m$-tuples — hasUniqueExtension of 1 3 8 | known | Number Theory |  |  |
-| 140 | `DiophantineTuple.hasUniqueExtension_of_forall` | Diophantine $m$-tuples — hasUniqueExtension of forall | open | Number Theory |  |  |
-| 141 | `DiophantineTuple.noIntegralDiophantineFiveTuple` | Diophantine $m$-tuples — noIntegralDiophantineFiveTuple | known | Number Theory |  |  |
-| 142 | `DiophantineTuple.rational_7_tuple` | Diophantine $m$-tuples — rational 7 tuple | open | Number Theory |  |  |
-| 143 | `DirichletDivisorProblem.dirichlet_divisor_problem` | Dirichlet divisor problem | open | Number Theory |  |  |
-| 144 | `DirichletDivisorProblem.divisor_error_dirichlet` | Dirichlet divisor problem — divisor error dirichlet | warmup | Number Theory |  | yes |
-| 145 | `DirichletDivisorProblem.divisor_error_hardy` | Dirichlet divisor problem — divisor error hardy | known | Number Theory |  |  |
-| 146 | `ElliottHalberstamConjecture.elliott_halberstam` | Elliott–Halberstam conjecture | open | Number Theory |  |  |
-| 147 | `ElliottHalberstamConjecture.elliott_halberstam.variants.bombieri_vinogradov` | Elliott–Halberstam conjecture — bombieri vinogradov | known | Number Theory |  |  |
-| 148 | `ElliottHalberstamConjecture.elliott_halberstam.variants.friedlander_granville` | Elliott–Halberstam conjecture — friedlander granville | known | Number Theory |  | yes |
-| 149 | `EllipticCurveRank.RatEllipticCurve._02062_le_density_rank_zero` | Some conjectures about ranks of elliptic curves over ℚ —  02062 le density rank zero | known | Algebraic Geometry, Number Theory |  |  |
-| 150 | `EllipticCurveRank.RatEllipticCurve._08375_le_density_rank_zero_one` | Some conjectures about ranks of elliptic curves over ℚ —  08375 le density rank zero one | known | Algebraic Geometry, Number Theory |  |  |
-| 151 | `EllipticCurveRank.RatEllipticCurve.avg_rank_lt_0885` | Some conjectures about ranks of elliptic curves over ℚ — avg rank lt 0885 | known | Algebraic Geometry, Number Theory |  |  |
-| 152 | `EllipticCurveRank.RatEllipticCurve.card_heightLE_div_pow_five_div_six_tensto` | Some conjectures about ranks of elliptic curves over ℚ — card heightLE div pow five div six tensto | warmup | Algebraic Geometry, Number Theory |  | yes |
-| 153 | `EllipticCurveRank.RatEllipticCurve.exists_rank_ge_thirtyone` | Some conjectures about ranks of elliptic curves over ℚ — exists rank ge thirtyone | known | Algebraic Geometry, Number Theory |  |  |
-| 154 | `EllipticCurveRank.RatEllipticCurve.exists_rank_ge_thirtytwo` | Some conjectures about ranks of elliptic curves over ℚ — exists rank ge thirtytwo | open | Algebraic Geometry, Number Theory |  |  |
-| 155 | `EllipticCurveRank.RatEllipticCurve.finite_twentyone_lt_finrank` | Some conjectures about ranks of elliptic curves over ℚ — finite twentyone lt finrank | open | Algebraic Geometry, Number Theory |  |  |
-| 156 | `EllipticCurveRank.RatEllipticCurve.goldfeld_conjecture` | Goldfeld's conjecture — goldfeld conjecture | open | Algebraic Geometry, Number Theory |  |  |
-| 157 | `EllipticCurveRank.RatEllipticCurve.goldfeld_conjecture.variants.squarefree` | Some conjectures about ranks of elliptic curves over ℚ — squarefree | open | Algebraic Geometry, Number Theory |  |  |
-| 158 | `EllipticCurveRank.RatEllipticCurve.goldfeld_conjecture.variants.two_le` | Goldfeld's conjecture — two le | known | Algebraic Geometry, Number Theory |  |  |
-| 159 | `EllipticCurveRank.RatEllipticCurve.half_rank_zero_and_half_rank_one` | Some conjectures about ranks of elliptic curves over ℚ — half rank zero and half rank one | open | Algebraic Geometry, Number Theory |  |  |
-| 160 | `EllipticCurveRank.RatEllipticCurve.rank_height_count_asymptotic` | Some conjectures about ranks of elliptic curves over ℚ — rank height count asymptotic | open | Algebraic Geometry, Number Theory |  |  |
-| 161 | `EllipticCurveRank.RatEllipticCurve.twentyone_le_rank_height_count_asymptotic` | Some conjectures about ranks of elliptic curves over ℚ — twentyone le rank height count asymptotic | open | Algebraic Geometry, Number Theory |  |  |
-| 162 | `EllipticCurveRank.RatEllipticCurve.unbounded_rank_conjecture` | Some conjectures about ranks of elliptic curves over ℚ — unbounded rank conjecture | open | Algebraic Geometry, Number Theory |  |  |
-| 163 | `EllipticCurveRank.WeierstrassCurve.rank_claudeAlpogeHowell31` | Some conjectures about ranks of elliptic curves over ℚ — rank claudeAlpogeHowell31 | open | Algebraic Geometry, Number Theory |  |  |
-| 164 | `EllipticCurveRank.WeierstrassCurve.rank_elkies28` | Some conjectures about ranks of elliptic curves over ℚ — rank elkies28 | open | Algebraic Geometry, Number Theory |  |  |
-| 165 | `EllipticCurveRank.WeierstrassCurve.rank_elkiesKlagsbrun29` | Some conjectures about ranks of elliptic curves over ℚ — rank elkiesKlagsbrun29 | open | Algebraic Geometry, Number Theory |  |  |
-| 166 | `EllipticCurveRank.WeierstrassCurve.rank_ranksunbounded30` | Some conjectures about ranks of elliptic curves over ℚ — rank ranksunbounded30 | open | Algebraic Geometry, Number Theory |  |  |
-| 167 | `EllipticCurveRank.WeierstrassCurve.thirty_le_rank_ranksunbounded30` | Some conjectures about ranks of elliptic curves over ℚ — thirty le rank ranksunbounded30 | known | Algebraic Geometry, Number Theory |  |  |
-| 168 | `EllipticCurveRank.WeierstrassCurve.thirtyone_le_rank_claudeAlpogeHowell31` | Some conjectures about ranks of elliptic curves over ℚ — thirtyone le rank claudeAlpogeHowell31 | known | Algebraic Geometry, Number Theory |  |  |
-| 169 | `EllipticCurveRank.WeierstrassCurve.twentyeight_le_rank_elkies28` | Some conjectures about ranks of elliptic curves over ℚ — twentyeight le rank elkies28 | known | Algebraic Geometry, Number Theory |  |  |
-| 170 | `EllipticCurveRank.WeierstrassCurve.twentynine_le_rank_elkiesKlagsbrun29` | Some conjectures about ranks of elliptic curves over ℚ — twentynine le rank elkiesKlagsbrun29 | known | Algebraic Geometry, Number Theory |  |  |
-| 171 | `EllipticDivisibilitySequence.einsiedler_everest_ward_finite_primes` | Prime values and primitive divisors in elliptic divisibility sequences — einsiedler everest ward finite primes | open | Algebraic Geometry, Number Theory |  |  |
-| 172 | `EllipticDivisibilitySequence.silverman_eds_primitive_prime_divisors` | Prime values and primitive divisors in elliptic divisibility sequences — silverman eds primitive prime divisors | known | Algebraic Geometry, Number Theory |  |  |
-| 173 | `Emirp.infinitude_question` | Emirps | open | Number Theory |  |  |
-| 174 | `ErdosMoser.erdos_moser_conjecture` | The Erdős–Moser equation | open | Number Theory |  |  |
-| 175 | `ErdosUlamProblem.erdos_ulam_problem` | The Erdős–Ulam problem (Ulam 1945). | open | Convex & Discrete Geometry, Geometry |  |  |
-| 176 | `ErdosUlamProblem.erdos_ulam_problem.variants.solymosi_de_zeeuw` | The Erdős–Ulam problem — solymosi de zeeuw | known | Convex & Discrete Geometry, Geometry |  |  |
-| 177 | `EswarathasanLevineConjecture.eswarathasan_levine_harmonic_conjecture` | Eswarathasan–Levine conjectures on harmonic numerators — eswarathasan levine harmonic conjecture | open | Number Theory |  |  |
-| 178 | `EswarathasanLevineConjecture.eswarathasan_levine_harmonic_primes_infinite` | Eswarathasan–Levine conjectures on harmonic numerators — eswarathasan levine harmonic primes infinite | open | Number Theory |  |  |
-| 179 | `EswarathasanLevineConjecture.eswarathasan_levine_three_elements_subset` | Eswarathasan–Levine conjectures on harmonic numerators — eswarathasan levine three elements subset | known | Number Theory |  | yes |
-| 180 | `EswarathasanLevineConjecture.harmonicNumDivisibleSet_two_empty` | Eswarathasan–Levine conjectures on harmonic numerators — harmonicNumDivisibleSet two empty | warmup | Number Theory |  | yes |
-| 181 | `EuclidNumbers.euclid_numbers_are_square_free` | Euclid Numbers conjecture — euclid numbers are square free | open | Number Theory |  |  |
-| 182 | `EuclidNumbers.infinite_prime_euclid_numbers` | Euclid Numbers conjecture — infinite prime euclid numbers | open | Number Theory |  |  |
-| 183 | `EulerBrick.cuboidThree` | Open questions regarding the existence of Euler bricks — cuboidThree | open | Field Theory |  |  |
-| 184 | `EulerBrick.cuboidTwo` | Open questions regarding the existence of Euler bricks — cuboidTwo | open | Field Theory |  |  |
-| 185 | `EulerBrick.cuboid_perfect_euler_brick` | Open questions regarding the existence of Euler bricks — cuboid perfect euler brick | known | Field Theory |  | yes |
-| 186 | `EulerBrick.four_dim_euler_brick_existence` | Open questions regarding the existence of Euler bricks — four dim euler brick existence | open | Number Theory |  |  |
-| 187 | `EulerBrick.n_dim_euler_brick_existence` | Open questions regarding the existence of Euler bricks — n dim euler brick existence | open | Number Theory |  |  |
-| 188 | `EulerBrick.perfect_euler_brick_existence` | Open questions regarding the existence of Euler bricks — perfect euler brick existence | open | Number Theory |  |  |
-| 189 | `EulerSumOfPowers.eulers_sum_of_powers_conjecture` | Euler's sum of powers conjecture | open | Number Theory |  |  |
-| 190 | `Exponentials.four_exponentials_conjecture` | Four exponentials conjecture | open | Special Functions |  |  |
-| 191 | `Exponentials.two_pow_three_pow_transcendental` | Exponentials conjectures and theorems | open | Number Theory |  |  |
-| 192 | `FactorialPrime.infinitely_many_factorial_primes` | Factorial primes | open | Number Theory |  |  |
-| 193 | `FeitThompsonPrimeConjecture.feit_thompson_primes` | Feit-Thompson conjecture on primes | open | Number Theory |  |  |
-| 194 | `Fermat.exists_fermat_not_squarefree` | Open questions about Fermat numbers — exists fermat not squarefree | open | Number Theory |  |  |
-| 195 | `Fermat.fermat_number_are_composite` | Open questions about Fermat numbers — fermat number are composite | open | Number Theory |  |  |
-| 196 | `Fermat.infinite_fermat_composite` | Open questions about Fermat numbers — infinite fermat composite | open | Number Theory |  |  |
-| 197 | `Fermat.infinite_fermat_primes` | Open questions about Fermat numbers — infinite fermat primes | open | Number Theory |  |  |
-| 198 | `FermatCatalanConjecture.fermat_catalan` | Fermat-Catalan conjecture | open | Number Theory |  |  |
-| 199 | `FermatCatalanConjecture.fermat_catalan.variants.darmon_granville` | Fermat-Catalan conjecture — darmon granville | known | Number Theory |  |  |
-| 200 | `FibonacciPrimes.fib_primes_infinite` | Fibonacci Primes | open | Number Theory |  |  |
-| 201 | `FibonacciPrimes.fib_primes_infinite.variant` | Fibonacci Primes — variant | open | Number Theory |  |  |
-| 202 | `Firoozbakht.firoozbakht_conjecture` | Firoozbakht's conjecture — firoozbakht conjecture | open | Number Theory |  |  |
-| 203 | `Firoozbakht.firoozbakht_conjecture_consequence` | Firoozbakht's conjecture — firoozbakht conjecture consequence | known | Number Theory |  |  |
-| 204 | `FlintCooksonHills.cookson_hills_series_converges` | Convergence of the Flint Hills and Cookson Hills series — cookson hills series converges | open | Sequences & Series |  |  |
-| 205 | `FlintCooksonHills.flint_hills_series_converges` | Convergence of the Flint Hills and Cookson Hills series — flint hills series converges | open | Sequences & Series |  |  |
-| 206 | `FortuneConjecture.fortune_conjecture` | Fortune's Conjecture | open | Number Theory |  |  |
-| 207 | `Fuglede.FugledeConjecture.variants.dim_1` | Fuglede's conjecture — dim 1 | open | Functional Analysis, Harmonic Analysis, Operator Theory |  |  |
-| 208 | `Fuglede.FugledeConjecture.variants.dim_2` | Fuglede's conjecture — dim 2 | open | Functional Analysis, Harmonic Analysis, Operator Theory |  |  |
-| 209 | `Fuglede.FugledeConjecture.variants.dim_3_or_higher` | Fuglede's conjecture — dim 3 or higher | known | Functional Analysis, Harmonic Analysis, Operator Theory |  | yes |
-| 210 | `GapConjecture.gap_conjecture` | Gap conjecture | open | Group Theory |  |  |
-| 211 | `GaussCircleProblem.error_isBigO` | Gauss circle problem — error isBigO | open | Number Theory |  |  |
-| 212 | `GaussCircleProblem.error_le` | Gauss circle problem — error le | known | Number Theory |  | yes |
-| 213 | `GaussCircleProblem.error_not_isLittleO` | Gauss circle problem — error not isLittleO | known | Number Theory |  |  |
-| 214 | `GaussCircleProblem.exact_form_floor` | Gauss circle problem — exact form floor | known | Number Theory |  | yes |
-| 215 | `Gilbreath.gilbreath_conjecture` | Gilbreath's conjecture | open | Number Theory |  |  |
-| 216 | `GoldbachConjecture.goldbach` | Goldbach's conjecture | open | Number Theory |  |  |
-| 217 | `GoodmanConjecture.goodman_conjecture` | Goodman's conjecture. | open | Complex Analysis |  |  |
-| 218 | `Goormaghtigh.goormaghtigh_conjecture` | The Goormaghtigh conjecture | open | Number Theory |  |  |
-| 219 | `GracefulLabeling.graceful_tree_conjecture` | Graceful Tree Conjecture (Ringel–Kotzig conjecture) | open | Combinatorics |  |  |
-| 220 | `Grimm.grimm_conjecture` | Grimm's Conjecture | open | Number Theory |  |  |
-| 221 | `Grimm.grimm_conjecture_weak` | Grimm's Conjecture, weaker version | open | Number Theory |  |  |
-| 222 | `GromovPolynomialGrowth.GromovPolynomialGrowthTheorem` | Gromov's Polynomial Growth Theorem | known | Group Theory |  |  |
-| 223 | `GyarfasSumnerConjecture.gyarfas_sumner_conjecture` | The Gyárfás–Sumner conjecture (Gyárfás 1975, Sumner 1981). | open | Combinatorics |  |  |
-| 224 | `GyarfasSumnerConjecture.gyarfas_sumner_conjecture.variants.path` | Paths (Gyárfás 1987). | known | Combinatorics |  | yes |
-| 225 | `GyarfasSumnerConjecture.gyarfas_sumner_conjecture.variants.radius_two` | Trees of radius two (Kierstead–Penrice 1994). | known | Combinatorics |  |  |
-| 226 | `Hadamard.HadamardConjecture` | Hadamard's conjecture | open | Linear Algebra |  |  |
-| 227 | `Hadamard.HadamardConjecture.variants.167` | Hadamard's conjecture — «167» | open | Linear Algebra |  |  |
-| 228 | `Hadamard.HadamardConjecture.variants.first_cases` | Hadamard's conjecture — first cases | known | Linear Algebra |  |  |
-| 229 | `HajosConjecture.hajos_conjecture` | Hajós' conjecture (1961) — disproved. | known | Combinatorics |  | yes |
-| 230 | `HajosConjecture.hajos_conjecture.variants.catlin` | Catlin (1979): counterexamples for every $k \\ge 7$. | known | Combinatorics |  | yes |
-| 231 | `HajosConjecture.hajos_conjecture.variants.five_six` | The cases $k = 5$ and $k = 6$ remain open. | open | Combinatorics |  |  |
-| 232 | `HajosConjecture.hajos_conjecture.variants.le_four` | The cases $k \\le 4$ (Dirac 1952). | known | Combinatorics |  | yes |
-| 233 | `Hall.danilov` | Hall's conjecture — danilov | known | Number Theory |  | yes |
-| 234 | `Hall.hall_conjecture` | Hall's conjecture — hall conjecture | open | Number Theory |  |  |
-| 235 | `Hall.weak_hall_conjecture` | Hall's conjecture — weak hall conjecture | open | Number Theory |  |  |
-| 236 | `HardyLittlewood.first_hardy_littlewood_conjecture` | First Hardy–Littlewood conjecture — first hardy littlewood conjecture | open | Number Theory |  |  |
-| 237 | `HardyLittlewood.not_first_and_secondHardyLittlewoodConjecture` | First Hardy–Littlewood conjecture — not first and secondHardyLittlewoodConjecture | known | Number Theory |  | yes |
-| 238 | `HardyLittlewood.second_hardy_littlewood_conjecture` | First Hardy–Littlewood conjecture — second hardy littlewood conjecture | open | Number Theory |  |  |
-| 239 | `HasseWeil.exists_hasAnalyticContinuation` | The Hasse--Weil conjecture for elliptic curves — exists hasAnalyticContinuation | open | Algebraic Geometry, Number Theory |  |  |
-| 240 | `HasseWeil.exists_hasAnalyticContinuation_rat` | The Hasse--Weil conjecture for elliptic curves — exists hasAnalyticContinuation rat | known | Algebraic Geometry, Number Theory |  |  |
-| 241 | `HasseWeil.exists_hasMeromorphicContinuation` | The Hasse--Weil conjecture for elliptic curves — exists hasMeromorphicContinuation | open | Algebraic Geometry, Number Theory |  |  |
-| 242 | `HedetniemiConjecture.hedetniemi_conjecture` | Hedetniemi's conjecture (1966) — disproved. | known | Combinatorics |  | yes |
-| 243 | `HedetniemiConjecture.hedetniemi_conjecture.variants.el_zahar_sauer` | El-Zahar–Sauer (1985): the conjecture holds when `min {χ(G), χ(H)} ≤ 4`. | known | Combinatorics |  | yes |
-| 244 | `HedetniemiConjecture.hedetniemi_conjecture.variants.shitov` | Shitov (2019): the conjecture fails. | known | Combinatorics |  | yes |
-| 245 | `HyperperfectNumber.infinitely_many_hyperperfect_numbers` | Hyperperfect numbers — infinitely many hyperperfect numbers | open | Number Theory |  |  |
-| 246 | `HyperperfectNumber.mccranie_odd_hyperperfect_conjecture` | Hyperperfect numbers — mccranie odd hyperperfect conjecture | open | Number Theory |  |  |
-| 247 | `HyperperfectNumber.minoli_bear_hyperperfect_conjecture` | Hyperperfect numbers — minoli bear hyperperfect conjecture | open | Number Theory |  |  |
-| 248 | `HyperperfectNumber.two_hyperperfect_characterization` | Hyperperfect numbers — two hyperperfect characterization | known | Number Theory |  | yes |
-| 249 | `Idoneal.idoneal_numbers_completeness` | Idoneal numbers completeness conjecture | known | Number Theory |  |  |
-| 250 | `InscribedSquare.exists_inscribed_rectangle` | Inscribed square problem — exists inscribed rectangle | known | Geometry |  |  |
-| 251 | `InscribedSquare.exists_inscribed_rectangle_of_smooth` | Inscribed square problem — exists inscribed rectangle of smooth | known | Geometry |  |  |
-| 252 | `InscribedSquare.exists_inscribed_square_of_C2` | Inscribed square problem — exists inscribed square of C2 | known | Geometry |  |  |
-| 253 | `InscribedSquare.inscribed_rectangle_problem` | Inscribed rectangle problem | open | Geometry |  |  |
-| 254 | `InscribedSquare.inscribed_square_problem` | Inscribed square problem | open | Geometry |  |  |
-| 255 | `InvariantSubspaceProblem.Invariant_subspace_problem` | Invariant Subspace Problem | open | Operator Theory |  |  |
-| 256 | `InverseGalois.inverse_galois_problem` | Inverse Galois problem | open | Field Theory |  |  |
-| 257 | `InverseGalois.inverse_galois_problem.variants.abelian` | Inverse Galois problem — abelian | known | Field Theory |  | yes |
-| 258 | `InverseGalois.inverse_galois_problem.variants.complex_function_field` | Inverse Galois problem — complex function field | known | Field Theory |  |  |
-| 259 | `InverseGalois.inverse_galois_problem.variants.complex_rational_functions` | Inverse Galois problem — complex rational functions | known | Field Theory |  |  |
-| 260 | `InverseGalois.inverse_galois_problem.variants.cyclic` | Inverse Galois problem — cyclic | known | Field Theory |  | yes |
-| 261 | `Irrational.algebraicIndependent_e_pi` | Open questions on irrationality of numbers — algebraicIndependent e pi | open | Special Functions |  |  |
-| 262 | `Irrational.irrational_e_plus_pi` | Open questions on irrationality of numbers — irrational e plus pi | open | Special Functions |  |  |
-| 263 | `Irrational.irrational_e_times_pi` | Open questions on irrationality of numbers — irrational e times pi | open | Special Functions |  |  |
-| 264 | `Irrational.irrational_e_to_e` | Open questions on irrationality of numbers — irrational e to e | open | Special Functions |  |  |
-| 265 | `Irrational.irrational_eulerMascheroniConstant` | Open questions on irrationality of numbers — irrational eulerMascheroniConstant | open | Special Functions |  |  |
-| 266 | `Irrational.irrational_ln_pi` | Open questions on irrationality of numbers — irrational ln pi | open | Special Functions |  |  |
-| 267 | `Irrational.irrational_pi_to_e` | Open questions on irrationality of numbers — irrational pi to e | open | Special Functions |  |  |
-| 268 | `Irrational.irrational_pi_to_pi` | Open questions on irrationality of numbers — irrational pi to pi | open | Special Functions |  |  |
-| 269 | `JacobianConjecture.jacobian_conjecture_two_variables` | Jacobian conjecture | open | Algebraic Geometry |  |  |
-| 270 | `Jacobson.jacobson_conjecture` | Jacobson Conjecture | open | Associative Rings |  |  |
-| 271 | `Jacobson.jacobson_conjecture_of_comm_ring` | Jacobson Conjecture — jacobson conjecture of comm ring | warmup | Associative Rings, Commutative Algebra |  | yes |
-| 272 | `Jacobson.jacobson_conjecture_of_right_noetherian` | Jacobson Conjecture — jacobson conjecture of right noetherian | known | Associative Rings |  | yes |
-| 273 | `JugglerConjecture.juggler_conjecture` | Juggler conjecture | open | Dynamical Systems, Number Theory |  |  |
-| 274 | `Kakeya.kakeya_2d` | Kakeya problem — kakeya 2d | known | Harmonic Analysis |  |  |
-| 275 | `Kakeya.kakeya_3d` | Kakeya problem — kakeya 3d | known | Harmonic Analysis |  |  |
-| 276 | `Kakeya.kakeya_finite` | Kakeya problem — kakeya finite | known | Convex & Discrete Geometry |  |  |
-| 277 | `Kakeya.kakeya_set_conjecture` | Kakeya problem — kakeya set conjecture | open | Harmonic Analysis |  |  |
-| 278 | `Kaplansky.UnitConjecture.counterexamples.i` | Kaplansky's Conjectures — i | known | Associative Rings, Group Theory |  | yes |
-| 279 | `Kaplansky.UnitConjecture.counterexamples.ii` | Kaplansky's Conjectures — ii | known | Associative Rings, Group Theory |  | yes |
-| 280 | `Kaplansky.direct_finiteness_conjecture` | Kaplansky's direct finiteness conjecture | known | Associative Rings, Group Theory |  | yes |
-| 281 | `Kaplansky.direct_finiteness_conjecture.variants.char_two` | Kaplansky's Conjectures — char two | known | Associative Rings, Group Theory |  | yes |
-| 282 | `Kaplansky.direct_finiteness_conjecture.variants.char_zero` | Kaplansky's Conjectures — char zero | known | Associative Rings, Group Theory |  | yes |
-| 283 | `Kaplansky.idempotent_conjecture` | The idempotent conjecture | open | Associative Rings, Group Theory |  |  |
-| 284 | `Kaplansky.promislow_group_is_torsionfree` | Kaplansky's Conjectures | warmup | Group Theory |  | yes |
-| 285 | `KeithNumber.keith_numbers_infinite` | Keith numbers — keith numbers infinite | open | Number Theory |  |  |
-| 286 | `KeithNumber.klazar_luca_keith_counting_bound` | Keith numbers — klazar luca keith counting bound | known | Number Theory |  |  |
-| 287 | `Koethe.KotheConjecture` | Köthe conjecture — KotheConjecture | open | Associative Rings |  |  |
-| 288 | `Koethe.KotherConjecture.variants.general_matrix` | Köthe conjecture — general matrix | open | Associative Rings |  |  |
-| 289 | `Koethe.KotherConjecture.variants.le_KotherRadical` | Köthe conjecture — le KotherRadical | open | Associative Rings |  |  |
-| 290 | `Koethe.KotherConjecture.variants.matrixOver_KotherRadical` | Köthe conjecture — matrixOver KotherRadical | open | Associative Rings |  |  |
-| 291 | `Koethe.KotherConjecture.variants.two_by_two_matrix` | Köthe conjecture — two by two matrix | open | Associative Rings |  |  |
-| 292 | `Koethe.amitsur_conjecture` | Köthe conjecture — amitsur conjecture | known | Associative Rings |  |  |
-| 293 | `KummerVandiver.kummer_vandiver` | Kummer–Vandiver conjecture | open | Number Theory |  |  |
-| 294 | `LanderParkinSelfridge.lander_parkin_selfridge` | Lander, Parkin, and Selfridge Conjecture | open | Number Theory |  |  |
-| 295 | `LanderParkinSelfridge.lander_parkin_selfridge.variants.five_three` | Lander, Parkin, and Selfridge Conjecture — five three | open | Number Theory |  |  |
-| 296 | `LebesgueNagell.lebesgue_nagell` | Lebesgue-Nagell Equation Conjecture | open | Number Theory |  |  |
-| 297 | `LegendreConjecture.legendre_conjecture` | Legendre's conjecture | open | Number Theory |  |  |
-| 298 | `LegendreConjecture.legendre_conjecture.ferreira_large_n` | Legendre's conjecture — ferreira large n | known | Number Theory |  |  |
-| 299 | `LehmerMahlerMeasureProblem.lehmer_mahler_measure_problem` | Lehmer's Mahler measure problem | open | Number Theory |  |  |
-| 300 | `LehmerMahlerMeasureProblem.lehmer_mahler_measure_problem.variants.best` | Lehmer's Mahler measure problem — best | open | Number Theory |  |  |
-| 301 | `LehmerMahlerMeasureProblem.lehmer_mahler_measure_problem.variants.not_reciprocal` | Lehmer's Mahler measure problem — not reciprocal | known | Number Theory |  |  |
-| 302 | `LehmerMahlerMeasureProblem.lehmer_mahler_measure_problem.variants.odd` | Lehmer's Mahler measure problem — odd | known | Number Theory |  |  |
-| 303 | `LehmerTotient.lehmer_totient` | Lehmer's totient problem | open | Number Theory |  |  |
-| 304 | `LeinsterGroup.abelian_is_leinster_iff_cyclic_perfect` | Leinster Groups — abelian is leinster iff cyclic perfect | known | Group Theory |  | yes |
-| 305 | `LeinsterGroup.cyclic_of_perfect_is_leinster` | Leinster Groups — cyclic of perfect is leinster | warmup | Group Theory |  | yes |
-| 306 | `LeinsterGroup.dihedral_is_leinster_iff_odd_perfect` | Leinster Groups — dihedral is leinster iff odd perfect | known | Group Theory |  | yes |
-| 307 | `LeinsterGroup.exists_nonabelian_leinster_group` | Leinster Groups — exists nonabelian leinster group | known | Group Theory |  | yes |
-| 308 | `LeinsterGroup.infinitely_many_leinster_groups` | Conjecture | open | Group Theory |  |  |
-| 309 | `Lemoine.lemoine_conjecture` | Lemoine's conjectures — lemoine conjecture | open | Number Theory |  |  |
-| 310 | `Lemoine.lemoine_conjecture_extension` | Lemoine's conjectures — lemoine conjecture extension | open | Number Theory |  |  |
-| 311 | `LinearArboricityConjecture.linear_arboricity_conjecture` | The linear arboricity conjecture | open | Combinatorics |  |  |
-| 312 | `LinearArboricityConjecture.linear_arboricity_conjecture.variants.alon` | Alon (1988): the linear arboricity conjecture holds asymptotically. | known | Combinatorics |  |  |
-| 313 | `LinearArboricityConjecture.linear_arboricity_conjecture.variants.cubic` | Cubic graphs have linear arboricity two | known | Combinatorics |  | yes |
-| 314 | `LinearArboricityConjecture.linear_arboricity_conjecture.variants.regular` | The linear arboricity conjecture for regular graphs. | open | Combinatorics |  |  |
-| 315 | `LittlewoodConjecture.littlewood_conjecture` | Littlewood conjectures | open | Number Theory |  |  |
-| 316 | `LittlewoodConjecture.padic_littlewood_conjecture` | Littlewood conjectures — padic littlewood conjecture | open | Number Theory |  |  |
-| 317 | `LocalUniformization.local_uniformization` | Local uniformization in positive characteristic. | open | Algebraic Geometry, Commutative Algebra, Field Theory |  |  |
-| 318 | `LocalUniformization.local_uniformization_after_finite_extension` | Local uniformization after a finite extension. | known | Algebraic Geometry, Commutative Algebra, Field Theory |  |  |
-| 319 | `LocalUniformization.local_uniformization_of_charZero` | Zariski's local uniformization theorem. | known | Algebraic Geometry, Commutative Algebra, Field Theory |  |  |
-| 320 | `LocalUniformization.local_uniformization_of_trdeg_le_three` | Local uniformization | known | Algebraic Geometry, Commutative Algebra, Field Theory |  |  |
-| 321 | `LonelyRunnerConjecture.lonely_runner_conjecture` | Lonely runner conjecture | open | Number Theory |  |  |
-| 322 | `LonelyRunnerConjecture.lonely_runner_conjecture.variants.tao_2017` | Theorem 1.3 (Tao, 2017; arXiv:1701.02048). | known | Number Theory |  |  |
-| 323 | `LovaszConjecture.lovasz_conjecture` | Lovász's conjecture (1970). | open | Combinatorics |  |  |
-| 324 | `LovaszConjecture.lovasz_conjecture.variants.babai` | Babai (1979): long cycles in vertex-transitive graphs. | known | Combinatorics |  |  |
-| 325 | `LovaszConjecture.lovasz_conjecture.variants.dense` | Christofides–Hladký–Máthé (2014): Hamiltonian-path corollary of the dense case. | known | Combinatorics |  |  |
-| 326 | `LovaszPlummerConjecture.sheehan_conjecture` | Sheehan's conjecture (1977). | open | Combinatorics |  |  |
-| 327 | `LovaszPlummerConjecture.sheehan_conjecture.variants.thomassen` | Thomassen (1998): regular graphs of large degree. | known | Combinatorics |  |  |
-| 328 | `LychrelNumbers.isLychrel10_196` | Lychrel numbers in base 10 | open | Number Theory |  |  |
-| 329 | `LychrelNumbers.no_lychrel_numbers_base10` | Lychrel conjecture (base 10) | open | Number Theory |  |  |
-| 330 | `MagicSquares.exists_magic_square_squares` | Magic Squares — exists magic square squares | open | Number Theory |  |  |
-| 331 | `MagicSquares.exists_semi_magic_square_cubes` | Magic Squares — exists semi magic square cubes | open | Combinatorics, Number Theory |  |  |
-| 332 | `Mahler32.mahler_conjecture` | Mahler's 3/2 Problem | open | Number Theory |  |  |
-| 333 | `Mahler32.mahler_conjecture.variants.consequence` | Mahler's 3/2 Problem — consequence | warmup | Number Theory |  | yes |
-| 334 | `Mahler32.mahler_conjecture.variants.flatto_lagarias_pollington` | Mahler's 3/2 Problem — flatto lagarias pollington | known | Number Theory |  | yes |
-| 335 | `Mandelbrot.MLC` | Conjectures about the Mandelbrot and Multibrot sets — MLC | open | Dynamical Systems |  |  |
-| 336 | `Mandelbrot.MLC_general_exponent` | Conjectures about the Mandelbrot and Multibrot sets — MLC general exponent | open | Dynamical Systems |  |  |
-| 337 | `Mandelbrot.density_of_hyperbolicity` | Conjectures about the Mandelbrot and Multibrot sets — density of hyperbolicity | open | Dynamical Systems |  |  |
-| 338 | `Mandelbrot.density_of_hyperbolicity_general_exponent` | Conjectures about the Mandelbrot and Multibrot sets — density of hyperbolicity general exponent | open | Dynamical Systems |  |  |
-| 339 | `Mandelbrot.volume_frontier_mandelbrotSet_eq_zero` | Conjectures about the Mandelbrot and Multibrot sets — volume frontier mandelbrotSet eq zero | open | Dynamical Systems |  |  |
-| 340 | `Mandelbrot.volume_frontier_multibrotSet_eq_zero` | Conjectures about the Mandelbrot and Multibrot sets — volume frontier multibrotSet eq zero | open | Dynamical Systems |  |  |
-| 341 | `MaximalPrimeGap.infinite_maximalPrimeGapIndex` | Shanks's asymptotic conjecture for maximal prime gaps — infinite maximalPrimeGapIndex | warmup | Number Theory |  | yes |
-| 342 | `MaximalPrimeGap.shanks_maximal_prime_gap_conjecture` | Shanks's asymptotic conjecture for maximal prime gaps — shanks maximal prime gap conjecture | open | Number Theory |  |  |
-| 343 | `MaximalPrimeGap.shanks_maximal_prime_gap_conjecture.variants.record_indices` | Shanks's asymptotic conjecture for maximal prime gaps — record indices | open | Number Theory |  |  |
-| 344 | `MeanValueProblem.mean_value_problem` | Mean value problem | open | Field Theory |  |  |
-| 345 | `MeanValueProblem.mean_value_problem_leq_4` | Mean value problem — mean value problem leq 4 | known | Field Theory |  |  |
-| 346 | `MeanValueProblem.mean_value_problem_of_real_roots` | Mean value problem — mean value problem of real roots | known | Field Theory |  | yes |
-| 347 | `MeanValueProblem.mean_value_problem_of_roots_same_norm` | Mean value problem — mean value problem of roots same norm | known | Field Theory |  | yes |
-| 348 | `Mersenne.catalans_mersenne_conjecture` | Conjectures about Mersenne primes — catalans mersenne conjecture | open | Number Theory |  |  |
-| 349 | `Mersenne.infinitely_many_mersenne_primes` | Conjectures about Mersenne primes — infinitely many mersenne primes | open | Number Theory |  |  |
-| 350 | `Mersenne.new_mersenne_conjecture` | Conjectures about Mersenne primes — new mersenne conjecture | open | Number Theory |  |  |
-| 351 | `Mersenne.new_mersenne_conjecture.variants.prime` | Conjectures about Mersenne primes | open | Number Theory |  |  |
-| 352 | `Mersenne.rotkiewicz_infinite_non_wieferich_of_squarefree_mersenne` | Conjectures about Mersenne primes — rotkiewicz infinite non wieferich of squarefree mersenne | known | Number Theory |  | yes |
-| 353 | `Mersenne.sq_dvd_mersenne_iff_isWieferichPrime` | Conjectures about Mersenne primes — sq dvd mersenne iff isWieferichPrime | warmup | Number Theory |  | yes |
-| 354 | `Mersenne.squarefree_mersenne_of_prime` | Conjectures about Mersenne primes — squarefree mersenne of prime | open | Number Theory |  |  |
-| 355 | `MeynielConjecture.meyniel_conjecture` | Meyniel's conjecture (c. 1985). | open | Combinatorics, Game Theory & Economics |  |  |
-| 356 | `MeynielConjecture.meyniel_conjecture.variants.scott_sudakov` | Scott–Sudakov (2011): the best known general bound. | known | Combinatorics, Game Theory & Economics |  |  |
-| 357 | `MeynielConjecture.meyniel_conjecture.variants.soft` | The soft Meyniel conjecture. | open | Combinatorics, Game Theory & Economics |  |  |
-| 358 | `MeynielConjecture.meyniel_conjecture.variants.tree` | Trees are cop-win (Nowakowski–Winkler 1983). | known | Combinatorics, Game Theory & Economics |  | yes |
-| 359 | `Mills.exists-prime` | Mills' theorem | known | Number Theory |  |  |
-| 360 | `Mills.exists_least` | Mills' constant. | known | Number Theory |  |  |
-| 361 | `Mills.irrational` | Mills' constant is irrational | known | Number Theory |  |  |
-| 362 | `Mills.lower_bound_of_RH` | Mills' constant lower bound | known | Number Theory |  | yes |
-| 363 | `Mills.mem_Ioo` | Mills' Theorem | known | Number Theory |  |  |
-| 364 | `MinimalPrime.base_seventeen_f19_family_minimal_prime_question` | Minimal primes in radix bases — base seventeen f19 family minimal prime question | open | Computer Science, Number Theory |  |  |
-| 365 | `MinimalPrime.base_ten_minimal_primes_card` | Minimal primes in radix bases — base ten minimal primes card | known | Computer Science, Number Theory |  | yes |
-| 366 | `MinimalPrime.base_ten_minimal_primes_eq` | Minimal primes in radix bases — base ten minimal primes eq | known | Computer Science, Number Theory |  | yes |
-| 367 | `MinimalPrime.minimal_primes_finite_in_every_base` | Minimal primes in radix bases — minimal primes finite in every base | warmup | Computer Science, Number Theory |  | yes |
-| 368 | `ModularityConjecture.modularity_conjecture` | Modularity conjecture | known | Number Theory |  | yes |
-| 369 | `MontgomeryPairCorrelationConjecture.montgomery_pair_correlation_conjecture` | Montgomery's GUE pair correlation conjecture for zeta zeros | open | Complex Analysis, Number Theory |  |  |
-| 370 | `MontgomeryPairCorrelationConjecture.montgomery_pair_correlation_conjecture.variants.general_interval` | Montgomery's GUE pair correlation conjecture for zeta zeros — general interval | open | Complex Analysis, Number Theory |  |  |
-| 371 | `MoserWorm.convex_mosers_worm_problem` | Convex Moser's Worm Problem | open | Convex & Discrete Geometry |  |  |
-| 372 | `MoserWorm.convex_mosers_worm_problem_bound_attained` | Moser's Worm — convex mosers worm problem bound attained | known | Convex & Discrete Geometry |  | yes |
-| 373 | `MoserWorm.convex_mosers_worm_problem_lower_bound` | Moser's Worm — convex mosers worm problem lower bound | known | Convex & Discrete Geometry |  |  |
-| 374 | `MoserWorm.convex_mosers_worm_problem_upper_bound` | Moser's Worm — convex mosers worm problem upper bound | known | Convex & Discrete Geometry |  |  |
-| 375 | `MoserWorm.mosers_worm_problem` | Moser's Worm Problem | open | Convex & Discrete Geometry |  |  |
-| 376 | `MoserWorm.mosers_worm_problem_upper_bound` | Moser's Worm — mosers worm problem upper bound | known | Convex & Discrete Geometry |  |  |
-| 377 | `MovingSofa.ambidextrousSofaConstant_eq_romiksSofa_area` | Moving Sofa Problem — ambidextrousSofaConstant eq romiksSofa area | open | Calculus of Variations |  |  |
-| 378 | `MovingSofa.romiksSofa_area_le_ambidextrousSofaConstant` | Moving Sofa Problem — romiksSofa area le ambidextrousSofaConstant | known | Calculus of Variations |  |  |
-| 379 | `MultivariableMahlerMeasure.boyd_mahler_measure_set_closed_conjecture` | Boyd's Closedness Conjecture | open | Number Theory |  |  |
-| 380 | `MultivariableMahlerMeasure.boyd_mahler_measure_strict_hierarchy_conjecture` | Boyd's Strict Hierarchy Conjecture | open | Number Theory |  |  |
-| 381 | `MultivariableMahlerMeasure.lawton_multivariable_mahler_measure_limit` | Lawton's Multivariable Limit Theorem | known | Number Theory |  |  |
-| 382 | `MultivariableMahlerMeasure.smyth_three_variable_linear_mahler_measure` | Smyth's Linear Mahler Formula | known | Number Theory |  |  |
-| 383 | `NoetherProblem.noether_problem` | Rational_variety | known | Algebraic Geometry, Field Theory |  |  |
-| 384 | `NoetherProblem.noether_problem.variants.forty_seven` | Rational_variety — forty seven | known | Algebraic Geometry, Field Theory |  |  |
-| 385 | `NoetherProblem.noether_problem.variants.four` | Rational_variety — four | known | Algebraic Geometry, Field Theory |  |  |
-| 386 | `NoetherProblem.noether_problem.variants.three` | Rational_variety — three | known | Algebraic Geometry, Field Theory |  |  |
-| 387 | `NoetherProblem.noether_problem.variants.two` | Rational_variety — two | known | Algebraic Geometry, Field Theory |  | yes |
-| 388 | `NormalNumber.pi_normal_base_ten` | Normality of mathematical constants | open | Number Theory |  |  |
-| 389 | `NumberField.exists_quadraticAlgebra_of_isQuadraticExtension` | Infinitude of Wall–Sun–Sun primes — exists quadraticAlgebra of isQuadraticExtension | warmup | Number Theory |  | yes |
-| 390 | `OhbaConjecture.ohba_conjecture` | Ohba's conjecture (2002), proved by Noel, Reed and Wu (2015). | known | Combinatorics |  |  |
-| 391 | `OhbaConjecture.ohba_conjecture.variants.erdos_rubin_taylor` | Ohba's conjecture (2002; proved by Noel, Reed and Wu 2015) — erdos rubin taylor | known | Combinatorics |  | yes |
-| 392 | `Oppermann.oppermann_conjecture` | Oppermann's Conjecture | open | Number Theory |  |  |
-| 393 | `Oppermann.oppermann_conjecture.ferreira_large_x` | Oppermann's Conjecture — ferreira large x | known | Number Theory |  |  |
-| 394 | `Oppermann.oppermann_conjecture.parts.i` | Oppermann's Conjecture — i | open | Number Theory |  |  |
-| 395 | `Oppermann.oppermann_conjecture.parts.ii` | Oppermann's Conjecture — ii | open | Number Theory |  |  |
-| 396 | `PebblingNumberConjecture.pebbling_number_conjecture` | Pebbling number conjecture | open | Combinatorics |  |  |
-| 397 | `PellNumbers.infinite_pellNumber_primes` | Infinitude of Pell number primes | open | Number Theory |  |  |
-| 398 | `PerfectNumbers.infinitely_many_even_perfect` | Infinitely many even perfect numbers conjecture. | open | Number Theory |  |  |
-| 399 | `PerfectNumbers.infinitely_many_perfect` | Infinitely many perfect numbers conjecture. | open | Number Theory |  |  |
-| 400 | `PerfectNumbers.odd_perfect_number.lower_bound` | Perfect numbers — lower bound | known | Number Theory |  |  |
-| 401 | `PerfectNumbers.odd_perfect_number_conjecture` | Odd Perfect Number Conjecture. | open | Number Theory |  |  |
-| 402 | `PetersenColoringConjecture.petersen_coloring_conjecture` | The Petersen colouring conjecture (Jaeger 1988). | open | Combinatorics |  |  |
-| 403 | `PetersenColoringConjecture.petersen_coloring_conjecture.variants.normal_five_edge_coloring` | Jaeger's reformulation: normal `5`-edge-colourings. | known | Combinatorics |  | yes |
-| 404 | `PierceBirkhoff.pierce_birkhoff_conjecture` | Pierce–Birkhoff conjecture — pierce birkhoff conjecture | open | Commutative Algebra |  |  |
-| 405 | `PierceBirkhoff.pierce_birkhoff_conjecture_dim_one` | Pierce–Birkhoff conjecture — pierce birkhoff conjecture dim one | known | Commutative Algebra |  | yes |
-| 406 | `PierceBirkhoff.pierce_birkhoff_conjecture_dim_two` | Pierce–Birkhoff conjecture — pierce birkhoff conjecture dim two | known | Commutative Algebra |  |  |
-| 407 | `PierpontPrime.infinitely_many_pierpont_primes` | Pierpont primes | open | Number Theory |  |  |
-| 408 | `PollocksConjecture.pollock_tetrahedral` | Pollock's (tetrahedral numbers) conjecture | open | Number Theory |  |  |
-| 409 | `PollocksConjecture.pollock_tetrahedral.ncard_exceptions` | Pollock's (tetrahedral numbers) conjecture — ncard exceptions | warmup | Number Theory |  | yes |
-| 410 | `PollocksConjecture.pollock_tetrahedral.salzer_levine` | Pollock's (tetrahedral numbers) conjecture — salzer levine | open | Number Theory |  |  |
-| 411 | `PolyTime.isPolyTime_primeFactorsList` | The integer factorization problem | open | Computer Science |  |  |
-| 412 | `PolyTime.isPolyTime_squareRootSum` | Is the square-root sum problem polynomial time (single sum version)? | open | Computer Science |  |  |
-| 413 | `PolyTime.isPolyTime_squareRootSumTwoSided` | Is the square-root sum problem polynomial time (two sum version)? | open | Computer Science |  |  |
-| 414 | `PompeiuProblem.ball_not_hasPompeiuProperty` | The Pompeiu problem | known | Harmonic Analysis |  | yes |
-| 415 | `PowerfulNumbersDensity.asymptotic_bateman_grosswald` | Asymptotic density of powerful numbers — asymptotic bateman grosswald | known | Number Theory |  |  |
-| 416 | `PowerfulNumbersDensity.asymptotic_erdos_szekeres` | Asymptotic density of powerful numbers — asymptotic erdos szekeres | known | Number Theory |  | yes |
-| 417 | `PowerfulNumbersDensity.error_term_improvement` | Asymptotic density of powerful numbers — error term improvement | known | Number Theory |  |  |
-| 418 | `PrimeTriplets.prime_triplets` | Prime Triplet Conjecture | open | Number Theory |  |  |
-| 419 | `PrimesAndPerfectSquares.infinite_prime_sq_add_one` | Primes and perfect squares | open | Number Theory |  |  |
-| 420 | `PrimorialPrime.infinitely_many_primorial_primes` | Infinitude of primorial primes | open | Number Theory |  |  |
-| 421 | `PrimorialPrime.infinitely_many_primorial_primes.variants.composite` | Infinitude of primorial primes — composite | open | Number Theory |  |  |
-| 422 | `PrimorialPrime.infinitely_many_primorial_primes.variants.composite_euclid` | Infinitude of primorial primes — composite euclid | open | Number Theory |  |  |
-| 423 | `PrimorialPrime.infinitely_many_primorial_primes.variants.composite_kummer` | Infinitude of primorial primes — composite kummer | open | Number Theory |  |  |
-| 424 | `PrimorialPrime.infinitely_many_primorial_primes.variants.kummer` | Infinitude of primorial primes — kummer | open | Number Theory |  |  |
-| 425 | `ProthPrime.infinitely_many_proth_primes` | Proth primes — infinitely many proth primes | open | Number Theory |  |  |
-| 426 | `ProthPrime.infinitely_many_proth_primes_multiplier_three` | Proth primes — infinitely many proth primes multiplier three | open | Number Theory |  |  |
-| 427 | `ProthPrime.proth_primality_criterion` | Proth's primality theorem | warmup | Number Theory |  | yes |
-| 428 | `QuadraticAlgebra.discr_rat_of_modEq_one` | Infinitude of Wall–Sun–Sun primes — discr rat of modEq one | warmup | Number Theory |  | yes |
-| 429 | `QuadraticAlgebra.discr_rat_of_not_modEq_one` | Infinitude of Wall–Sun–Sun primes — discr rat of not modEq one | warmup | Number Theory |  | yes |
-| 430 | `QuasiperfectNumbers.exists_quasiperfect` | Quasiperfect Numbers Conjecture. | open | Number Theory |  |  |
-| 431 | `RamanujanTau.-_two` | Ramanujan τ-function — τ two | warmup | Number Theory |  | yes |
-| 432 | `RamanujanTau.lehmer_ramanujan_tau` | Ramanujan τ-function — lehmer ramanujan tau | open | Number Theory |  |  |
-| 433 | `RamanujanTau.ramanujan_petersson` | Ramanujan τ-function — ramanujan petersson | known | Number Theory |  |  |
-| 434 | `RamseyNumbers.ramsey_number_five_five` | Ramsey numbers — ramsey number five five | open | Combinatorics |  |  |
-| 435 | `RamseyNumbers.ramsey_number_five_five_upper_bound` | Ramsey numbers — ramsey number five five upper bound | known | Combinatorics |  |  |
-| 436 | `RamseyNumbers.ramsey_number_four_five` | Ramsey numbers — ramsey number four five | known | Combinatorics |  |  |
-| 437 | `RamseyNumbers.ramsey_number_four_four` | Ramsey numbers — ramsey number four four | known | Combinatorics |  | yes |
-| 438 | `RamseyNumbers.ramsey_number_six_six` | Ramsey numbers — ramsey number six six | open | Combinatorics |  |  |
-| 439 | `RamseyNumbers.ramsey_number_six_six_lower_bound` | Ramsey numbers — ramsey number six six lower bound | known | Combinatorics |  | yes |
-| 440 | `RamseyNumbers.ramsey_number_six_six_upper_bound` | Ramsey numbers — ramsey number six six upper bound | known | Combinatorics |  |  |
-| 441 | `RamseyNumbers.ramsey_number_three_eight` | Ramsey numbers — ramsey number three eight | known | Combinatorics |  |  |
-| 442 | `RamseyNumbers.ramsey_number_three_five` | Ramsey numbers — ramsey number three five | known | Combinatorics |  | yes |
-| 443 | `RamseyNumbers.ramsey_number_three_four` | Ramsey numbers — ramsey number three four | known | Combinatorics |  | yes |
-| 444 | `RamseyNumbers.ramsey_number_three_nine` | Ramsey numbers — ramsey number three nine | known | Combinatorics |  |  |
-| 445 | `RamseyNumbers.ramsey_number_three_seven` | Ramsey numbers — ramsey number three seven | known | Combinatorics |  |  |
-| 446 | `RamseyNumbers.ramsey_number_three_six` | Ramsey numbers — ramsey number three six | known | Combinatorics |  | yes |
-| 447 | `RamseyNumbers.ramsey_number_three_three` | Ramsey numbers — ramsey number three three | known | Combinatorics |  | yes |
-| 448 | `RationalDistanceProblem.rational_distance_problem` | Rational distance problem | open | Geometry, Number Theory |  |  |
-| 449 | `ReconstructionConjecture.edge_reconstruction_conjecture` | The edge reconstruction conjecture | open | Combinatorics |  |  |
-| 450 | `ReconstructionConjecture.reconstruction_conjecture` | The reconstruction conjecture | open | Combinatorics |  |  |
-| 451 | `ReconstructionConjecture.reconstruction_conjecture.variants.tree` | Trees are reconstructible | known | Combinatorics |  |  |
-| 452 | `RefactorableNumber.infinitely_many_consecutive_refactorable_pairs` | Colton's Conjecture (1999, Conjecture 2) | open | Number Theory |  |  |
-| 453 | `RefactorableNumber.no_three_consecutive_refactorable` | Zelinsky's Theorem (2002) | known | Number Theory |  | yes |
-| 454 | `RefactorableNumber.refactorable_hasDensity_zero` | Kennedy–Cooper Theorem (1990) | known | Number Theory |  | yes |
-| 455 | `RefactorableNumber.zelinsky_refactorable_progression_conjecture` | Zelinsky's Conjecture (2002, Conjecture 32) | open | Number Theory |  |  |
-| 456 | `RegularPrimes.infinitude_of_irregularprimes` | Infinite Regular Primes — infinitude of irregularprimes | known | Number Theory |  |  |
-| 457 | `RegularPrimes.isRegularPrime_iff_Bernoulli` | Kummer's criterion. | warmup | Number Theory |  |  |
-| 458 | `RegularPrimes.not_isRegularPrime_37` | Infinite Regular Primes — not isRegularPrime 37 | warmup | Number Theory |  | yes |
-| 459 | `RegularPrimes.regularprime_conjecture` | Infinite Regular Primes — regularprime conjecture | open | Number Theory |  |  |
-| 460 | `RegularPrimes.small_regular_primes` | Infinite Regular Primes — small regular primes | warmup | Number Theory |  |  |
-| 461 | `RepunitPrime.infinitely_many_repunit_primes` | Decimal Repunit Primes | open | Number Theory |  |  |
-| 462 | `RiemannZetaValues.apery_central_binomial_series` | Particular values of the Riemann zeta function — apery central binomial series | warmup | Number Theory, Special Functions |  | yes |
-| 463 | `RiemannZetaValues.exists_irrational_of_five_seven_nine_eleven` | Particular values of the Riemann zeta function — exists irrational of five seven nine eleven | known | Number Theory, Special Functions |  |  |
-| 464 | `RiemannZetaValues.infinite_irrational_at_odd` | Particular values of the Riemann zeta function — infinite irrational at odd | known | Number Theory, Special Functions |  |  |
-| 465 | `RiemannZetaValues.irrational_eleven` | Particular values of the Riemann zeta function — irrational eleven | open | Number Theory, Special Functions |  |  |
-| 466 | `RiemannZetaValues.irrational_nine` | Particular values of the Riemann zeta function — irrational nine | open | Number Theory, Special Functions |  |  |
-| 467 | `RiemannZetaValues.irrational_odd` | Particular values of the Riemann zeta function — irrational odd | open | Number Theory, Special Functions |  |  |
-| 468 | `RiemannZetaValues.irrational_seven` | Particular values of the Riemann zeta function — irrational seven | open | Number Theory, Special Functions |  |  |
-| 469 | `RiemannZetaValues.irrational_three` | Particular values of the Riemann zeta function — irrational three | known | Number Theory, Special Functions |  |  |
-| 470 | `RiemannZetaValues.transcendental_three` | Particular values of the Riemann zeta function — transcendental three | open | Number Theory, Special Functions |  |  |
-| 471 | `RowlandSequence.rowland_diff_eq_one_or_prime` | Rowland's GCD prime-generating recurrence — rowland diff eq one or prime | known | Number Theory |  | yes |
-| 472 | `RowlandSequence.rowland_generates_all_odd_primes` | Rowland's GCD prime-generating recurrence — rowland generates all odd primes | open | Number Theory |  |  |
-| 473 | `RudinsConjecture.rudins_conjecture` | Rudin's conjecture. | open | Number Theory |  |  |
-| 474 | `RudinsConjecture.rudins_conjecture_strong` | Rudin's conjecture on squares in arithmetic progressions — rudins conjecture strong | open | Number Theory |  |  |
-| 475 | `RudinsConjecture.rudins_conjecture_unique` | Rudin's conjecture on squares in arithmetic progressions — rudins conjecture unique | open | Number Theory |  |  |
-| 476 | `SatoTateConjecture.satoTate_conjecture` | The Sato–Tate conjecture | known | Algebraic Geometry, Number Theory |  |  |
-| 477 | `Schanuel.schanuel_conjecture` | Schanuel's Conjecture | open | Number Theory, Special Functions |  |  |
-| 478 | `Schinzel.schinzel_conjecture` | Schinzel conjecture (H hypothesis) | open | Number Theory |  |  |
-| 479 | `ScholzConjecture.scholz_conjecture` | Scholz conjecture on addition chains | open | Computer Science, Number Theory |  |  |
-| 480 | `Selfridge.selfridge_conjecture` | PSW conjecture | open | Number Theory |  |  |
-| 481 | `Selfridge.selfridge_seq_conjecture` | Selfridge's conjectures | open | Number Theory |  |  |
-| 482 | `Sendov.sendov_conjecture.variants.eventually_true` | Sendov's conjecture — eventually true | known | Complex Analysis, Convex & Discrete Geometry, Field Theory |  |  |
-| 483 | `Sendov.sendov_conjecture.variants.le_eight` | Sendov's conjecture — le eight | known | Complex Analysis, Convex & Discrete Geometry, Field Theory |  |  |
-| 484 | `SerreMultiplicityConjectures.intersectionMultiplicity_eq_zero_of_lt` | Vanishing | known | Algebraic Geometry, Commutative Algebra |  |  |
-| 485 | `SerreMultiplicityConjectures.intersectionMultiplicity_nonneg` | Non-negativity | known | Algebraic Geometry, Commutative Algebra |  |  |
-| 486 | `SerreMultiplicityConjectures.intersectionMultiplicity_pos` | Positivity conjecture. | open | Algebraic Geometry, Commutative Algebra |  |  |
-| 487 | `SerreMultiplicityConjectures.intersectionMultiplicity_pos_of_equalCharacteristic` | Serre's multiplicity conjectures — intersectionMultiplicity pos of equalCharacteristic | known | Algebraic Geometry, Commutative Algebra |  |  |
-| 488 | `SerreMultiplicityConjectures.intersectionMultiplicity_pos_of_unramified` | Serre's multiplicity conjectures — intersectionMultiplicity pos of unramified | known | Algebraic Geometry, Commutative Algebra |  |  |
-| 489 | `SerreMultiplicityConjectures.intersectionMultiplicity_pos_quotient` | Positivity conjecture | open | Algebraic Geometry, Commutative Algebra |  |  |
-| 490 | `SerreMultiplicityConjectures.supportDim_add_supportDim_le_ringKrullDim` | Dimension inequality. | known | Algebraic Geometry, Commutative Algebra |  |  |
-| 491 | `SidorenkoConjecture.sidorenko_completeBipartiteGraph_graphon` | Sidorenko's conjecture (1993) | known | Combinatorics |  | yes |
-| 492 | `SidorenkoConjecture.sidorenko_conjecture.variants.complete_bipartite` | Case: complete bipartite graphs `K_{s,t}` (Sidorenko 1993). | known | Combinatorics |  | yes |
-| 493 | `SidorenkoConjecture.sidorenko_conjecture.variants.even_cycle` | Case: even cycles `C_{2k}` (Sidorenko 1993). | known | Combinatorics |  | yes |
-| 494 | `SidorenkoConjecture.sidorenko_conjecture.variants.path_blakley_roy` | Case: paths, the Blakley–Roy inequality (1965). | known | Combinatorics |  | yes |
-| 495 | `SidorenkoConjecture.sidorenko_conjecture_graphon` | Sidorenko's conjecture for graphons (1993). | known | Combinatorics |  |  |
-| 496 | `SidorenkoConjecture.sidorenko_even_cycle_graphon` | Case: `H = C_{2k}` is an even cycle (Sidorenko 1993, graphon version). | known | Combinatorics |  | yes |
-| 497 | `SidorenkoConjecture.sidorenko_tree_graphon` | Case: `H` is a tree (Sidorenko 1993, graphon version). | known | Combinatorics |  | yes |
-| 498 | `SidorenkoConjecture.tournament_anti_sidorenko_single_even_degree_tree` | TAS Trees Conjecture: Trees with a single even-degree vertex. | known | Combinatorics |  | yes |
-| 499 | `SidorenkoConjecture.tournament_anti_sidorenko_spider234` | TAS Trees Conjecture: The $(2,3,4)$-spider tree (Solved case). | known | Combinatorics |  |  |
-| 500 | `SidorenkoConjecture.tournament_anti_sidorenko_trees_conjecture` | Tournament Anti-Sidorenko (TAS) Trees Conjecture. | open | Combinatorics |  |  |
-| 501 | `SidorenkoConjecture.tournament_anti_sidorenko_trees_conjecture_tournamenton` | Tournament Anti-Sidorenko (TAS) Trees Conjecture (Tournamenton limit version). | open | Combinatorics |  |  |
-| 502 | `SierpinskiEgyptianFractionConjecture.sierpinski_counterexamples_hasDensity_zero` | Webb–Vaughan Density Bound | known | Number Theory |  | yes |
-| 503 | `SierpinskiEgyptianFractionConjecture.sierpinski_egyptian_fraction_conjecture` | Sierpiński's $5 / n$ Conjecture | open | Number Theory |  |  |
-| 504 | `SierpinskiNumber.extended_sierpinski_problem` | The extended Sierpiński problem. | open | Number Theory |  |  |
-| 505 | `SierpinskiNumber.prime_sierpinski_problem` | The prime Sierpiński problem. | open | Number Theory |  |  |
-| 506 | `SierpinskiNumber.selfridge_conjecture` | The Sierpiński problem (Selfridge's conjecture). | open | Number Theory |  |  |
-| 507 | `Singmaster.singmaster` | Singmaster's conjecture | open | Number Theory |  |  |
-| 508 | `SixStandardDeviations.six_standard_deviations` | Six standard deviations suffice | known | Combinatorics |  |  |
-| 509 | `SkewesNumber.littlewood_pi_minus_li_infinite_sign_changes` | Skewes's Number and Sign Changes of $\\pi(x) - \\operatorname{li}(x)$ — littlewood pi minus li infinite sign changes | known | Number Theory |  |  |
-| 510 | `SkewesNumber.skewes_crossover_known_bounds` | Skewes's Number and Sign Changes of $\\pi(x) - \\operatorname{li}(x)$ — skewes crossover known bounds | known | Number Theory |  |  |
-| 511 | `SkewesNumber.skewes_number` | Skewes's Number and Sign Changes of $\\pi(x) - \\operatorname{li}(x)$ — skewes number | open | Number Theory |  |  |
-| 512 | `SkewesNumber.skewes_number.variants.no_crossover_below_known_region` | Skewes's Number and Sign Changes of $\\pi(x) - \\operatorname{li}(x)$ — no crossover below known region | open | Number Theory |  |  |
-| 513 | `SmallCohenMacaulayModules.exists_isBalancedBigCohenMacaulay` | Existence of balanced big Cohen-Macaulay modules. | known | Commutative Algebra |  |  |
-| 514 | `SmallCohenMacaulayModules.exists_isSmallCohenMacaulay` | The small Cohen-Macaulay modules conjecture. | open | Commutative Algebra |  |  |
-| 515 | `SmallCohenMacaulayModules.exists_isSmallCohenMacaulay.variants.ringKrullDim_le_two` | The small Cohen-Macaulay modules conjecture — ringKrullDim le two | known | Commutative Algebra |  |  |
-| 516 | `SmallCohenMacaulayModules.isBalancedBigCohenMacaulay_iff_isSmallCohenMacaulay` | The small Cohen-Macaulay modules conjecture | warmup | Commutative Algebra |  | yes |
-| 517 | `SmithNumber.infinite_smith_brothers` | McDaniel's Theorem on Smith Numbers and the Smith Brothers Problem | open | Number Theory |  |  |
-| 518 | `SmithNumber.mcdaniel_infinitely_many_smith_numbers` | McDaniel's Theorem (1987) | known | Number Theory |  | yes |
-| 519 | `SnakeInBox.coil_small_dimensions` | Snake in the box — coil small dimensions | known | Combinatorics |  |  |
-| 520 | `SnakeInBox.coil_upper_bound` | Snake in the box — coil upper bound | known | Combinatorics |  |  |
-| 521 | `SnakeInBox.snake_dim_nine` | Snake in the box — snake dim nine | open | Combinatorics |  |  |
-| 522 | `SnakeInBox.snake_dim_nine_lower_bound` | Snake in the box — snake dim nine lower bound | known | Combinatorics |  | yes |
-| 523 | `SnakeInBox.snake_small_dimensions` | Snake in the box — snake small dimensions | known | Combinatorics |  |  |
-| 524 | `SnakeInBox.snake_upper_bound` | Snake in the box — snake upper bound | known | Combinatorics |  | yes |
-| 525 | `SolitaryNumber.infinite_club_exists` | Existence of an infinite club. | open | Number Theory |  |  |
-| 526 | `SolitaryNumber.is_ten_solitary` | Is 10 a solitary number? | open | Number Theory |  |  |
-| 527 | `SparseRuler.wichmann_conjecture` | Wichmann's conjecture on optimal rulers. | open | Combinatorics |  |  |
-| 528 | `SquarePacking.eleven_square_packing_in_square_bound` | Packing — eleven square packing in square bound | warmup | Geometry |  | yes |
-| 529 | `SquarePacking.fifteen_circle_packing_in_circle_bound` | Packing — fifteen circle packing in circle bound | warmup | Geometry |  | yes |
-| 530 | `SquarePacking.least_eleven_square_packing_in_square` | Packing — least eleven square packing in square | open | Geometry |  |  |
-| 531 | `SquarePacking.least_fifteen_circle_packing_in_circle` | Packing — least fifteen circle packing in circle | open | Geometry |  |  |
-| 532 | `SquarePacking.least_seventeen_square_packing_in_square` | Packing — least seventeen square packing in square | open | Geometry |  |  |
-| 533 | `SquarePacking.least_twenty_one_circle_packing_in_square` | Packing — least twenty one circle packing in square | open | Geometry |  |  |
-| 534 | `SquarePacking.seventeen_square_packing_in_square_bound` | Packing — seventeen square packing in square bound | warmup | Geometry |  | yes |
-| 535 | `SquarePacking.three_square_packing_in_circle_bound` | Packing — three square packing in circle bound | warmup | Geometry |  | yes |
-| 536 | `SquarePacking.twenty_one_circle_packing_in_square_bound` | Packing — twenty one circle packing in square bound | warmup | Geometry |  | yes |
-| 537 | `SteinerSystems.infinitely_many_steiner_t4` | There are infinitely many Steiner systems with $t = 4$. | known | Combinatorics |  |  |
-| 538 | `SteinerSystems.infinitely_many_steiner_t5` | There are infinitely many Steiner systems with $t = 5$. | known | Combinatorics |  |  |
-| 539 | `SteinerSystems.large_steiner_systems` | Steiner Systems | open | Combinatorics |  |  |
-| 540 | `SteinerSystems.steiner_system_5_8_24` | Existence of $S(5, 8, 24)$ | known | Combinatorics |  | yes |
-| 541 | `SternPrime.isSternPrime_iff` | Stern Primes — isSternPrime iff | open | Number Theory |  |  |
-| 542 | `SternPrime.stern_primes_finite` | Stern Primes — stern primes finite | open | Number Theory |  |  |
-| 543 | `SumOfThreeCubes.isSumOfThreeCubes_iff_mod_9` | Sum of three cubes | open | Number Theory |  |  |
-| 544 | `SumnerUniversalTournamentConjecture.sumner_conjecture` | Sumner's universal tournament conjecture (1971). | open | Combinatorics |  |  |
-| 545 | `SumnerUniversalTournamentConjecture.sumner_conjecture.variants.el_sahili` | El Sahili (2004): tournaments on $3n - 3$ vertices suffice. | known | Combinatorics |  |  |
-| 546 | `SumnerUniversalTournamentConjecture.sumner_conjecture.variants.large_n` | Kühn–Mycroft–Osthus (2011): the conjecture holds for all sufficiently large $n$. | known | Combinatorics |  |  |
-| 547 | `SumnerUniversalTournamentConjecture.sumner_conjecture.variants.sharp` | The bound $2n - 2$ would be sharp. | known | Combinatorics |  | yes |
-| 548 | `Superperfect.twoFivePerfect` | (m,k)-perfect numbers | open | Number Theory |  |  |
-| 549 | `TarskiExponentialFunctionProblem.isDecidable_completeTheory_realExp_of_realSchanuelConjecture` | Macintyre–Wilkie | known | Field Theory, Logic & Foundations, Number Theory |  |  |
-| 550 | `TarskiExponentialFunctionProblem.isDecidable_completeTheory_real_orderedField` | Tarski's theorem. | known | Field Theory, Logic & Foundations |  |  |
-| 551 | `TarskiExponentialFunctionProblem.tarski_exponential_function_problem` | Tarski's exponential function problem. | open | Field Theory, Logic & Foundations |  |  |
-| 552 | `Taxicab.taxicab_for_5_2_2` | Taxicab numbers — taxicab for 5 2 2 | open | Number Theory |  |  |
-| 553 | `Taxicab.taxicab_for_5_2_n` | Taxicab numbers — taxicab for 5 2 n | open | Number Theory |  |  |
-| 554 | `TernaryGoldbachConjecture.ternaryGoldbach` | Goldbach's conjecture — ternaryGoldbach | known | Number Theory |  |  |
-| 555 | `ThabitNumber.exists_thabit_amicable_exponent_gt_seven` | Thabit numbers and Thabit primes — exists thabit amicable exponent gt seven | open | Number Theory |  |  |
-| 556 | `ThabitNumber.infinitely_many_thabit_primes` | Thabit numbers and Thabit primes — infinitely many thabit primes | open | Number Theory |  |  |
-| 557 | `ThabitNumber.thabit_amicable_rule` | Thābit ibn Qurra's amicable number theorem | warmup | Number Theory |  | yes |
-| 558 | `Toronto.DiscreteTopology.of_t2_of_torontoSpace` | Toronto spaces — of t2 of torontoSpace | open | General Topology |  |  |
-| 559 | `TotalColoringConjecture.total_coloring_conjecture` | The total colouring conjecture (Behzad 1965, Vizing 1968). | open | Combinatorics |  |  |
-| 560 | `TotalColoringConjecture.total_coloring_conjecture.variants.complete_graph` | Complete graphs. | known | Combinatorics |  | yes |
-| 561 | `TotalColoringConjecture.total_coloring_conjecture.variants.maxDegree_le_five` | The total colouring conjecture (Behzad 1965, Vizing 1968) — maxDegree le five | known | Combinatorics |  |  |
-| 562 | `TotalColoringConjecture.total_coloring_conjecture.variants.molloy_reed` | Molloy–Reed (1998): $\\chi''(G) \\le \\Delta(G) + C$ for an absolute constant $C$. | known | Combinatorics |  |  |
-| 563 | `Transcendental.exp_add_pi_transcendental` | Open questions on transcendence of numbers — exp add pi transcendental | open | Number Theory, Special Functions |  |  |
-| 564 | `Transcendental.exp_exp_transcendental` | Open questions on transcendence of numbers — exp exp transcendental | open | Number Theory, Special Functions |  |  |
-| 565 | `Transcendental.exp_mul_pi_transcendental` | Open questions on transcendence of numbers — exp mul pi transcendental | open | Number Theory, Special Functions |  |  |
-| 566 | `Transcendental.exp_pow_pi_sq_transcendental` | Open questions on transcendence of numbers — exp pow pi sq transcendental | open | Number Theory, Special Functions |  |  |
-| 567 | `Transcendental.pi_pow_exp_transcendental` | Open questions on transcendence of numbers — pi pow exp transcendental | open | Number Theory, Special Functions |  |  |
-| 568 | `Transcendental.pi_pow_pi_pow_pi_pow_pi_not_integer` | Open questions on transcendence of numbers — pi pow pi pow pi pow pi not integer | open | Number Theory, Special Functions |  |  |
-| 569 | `Transcendental.pi_pow_pi_pow_pi_pow_pi_transcendental` | Open questions on transcendence of numbers — pi pow pi pow pi pow pi transcendental | open | Number Theory, Special Functions |  |  |
-| 570 | `Transcendental.pi_pow_pi_pow_pi_transcendental` | Open questions on transcendence of numbers — pi pow pi pow pi transcendental | open | Number Theory, Special Functions |  |  |
-| 571 | `Transcendental.pi_pow_pi_transcendental` | Open questions on transcendence of numbers — pi pow pi transcendental | open | Number Theory, Special Functions |  |  |
-| 572 | `Transcendental.pi_pow_sqrt_two_transcendental` | Open questions on transcendence of numbers — pi pow sqrt two transcendental | open | Number Theory, Special Functions |  |  |
-| 573 | `Transcendental.rlog_pi_transcendental` | Open questions on transcendence of numbers — rlog pi transcendental | open | Number Theory, Special Functions |  |  |
-| 574 | `Transcendental.rlog_rlog_two_transcendental` | Open questions on transcendence of numbers — rlog rlog two transcendental | open | Number Theory, Special Functions |  |  |
-| 575 | `Transcendental.sin_exp_transcendental` | Open questions on transcendence of numbers — sin exp transcendental | open | Number Theory, Special Functions |  |  |
-| 576 | `Transcendental.transcendental_catalanConstant` | Open questions on transcendence of numbers — transcendental catalanConstant | open | Number Theory, Special Functions |  |  |
-| 577 | `Transcendental.transcendental_eulerMascheroniConstant_or_gompertzConstant` | Open questions on transcendence of numbers — transcendental eulerMascheroniConstant or gompertzConstant | known | Number Theory, Special Functions |  |  |
-| 578 | `Transcendental.transcendental_gamma_one_div` | Open questions on transcendence of numbers — transcendental gamma one div | open | Special Functions |  |  |
-| 579 | `Transcendental.transcendental_gamma_one_div_four` | Open questions on transcendence of numbers — transcendental gamma one div four | known | Special Functions |  |  |
-| 580 | `Transcendental.transcendental_gamma_one_div_six` | Open questions on transcendence of numbers — transcendental gamma one div six | known | Special Functions |  |  |
-| 581 | `Transcendental.transcendental_gamma_one_div_three` | Open questions on transcendence of numbers — transcendental gamma one div three | known | Special Functions |  |  |
-| 582 | `Transcendental.transcendental_gamma_one_div_two` | Open questions on transcendence of numbers — transcendental gamma one div two | known | Special Functions |  | yes |
-| 583 | `Transcendental.transcendental_gompertzConstant` | Open questions on transcendence of numbers — transcendental gompertzConstant | open | Special Functions |  |  |
-| 584 | `TuzaConjecture.tuza_conjecture` | Tuza's conjecture | open | Combinatorics |  |  |
-| 585 | `TuzaConjecture.tuza_conjecture.variants.haxell` | Tuza's conjecture — haxell | known | Combinatorics |  |  |
-| 586 | `TwinPrimes.twin_primes` | Twin prime conjecture | open | Number Theory |  |  |
-| 587 | `UnionClosed.union_closed` | Union-closed sets conjecture | open | Combinatorics |  |  |
-| 588 | `UnionClosed.union_closed.variants.cardinality_even_of_union_closed_tight` | Union-closed sets conjecture — cardinality even of union closed tight | open | Combinatorics |  |  |
-| 589 | `UnionClosed.union_closed.variants.family_card` | Union-closed sets conjecture — family card | known | Combinatorics |  |  |
-| 590 | `UnionClosed.union_closed.variants.univ_card` | Union-closed sets conjecture — univ card | known | Combinatorics |  |  |
-| 591 | `UnionClosed.union_closed.variants.yu` | Union-closed sets conjecture — yu | known | Combinatorics |  |  |
-| 592 | `UntouchableNumber.chen_zhao_untouchable_lower_density` | Erdős (1973); Chen–Zhao (2011) | known | Number Theory |  |  |
-| 593 | `UntouchableNumber.unique_odd_untouchable_conjecture` | Unique Odd Untouchable Conjecture | open | Number Theory |  |  |
-| 594 | `VaughtConjecture.vaught_conjecture` | Vaught conjecture | open | Logic & Foundations |  |  |
-| 595 | `VizingConjecture.vizing_conjecture` | Vizing's conjecture (1968). | open | Combinatorics |  |  |
-| 596 | `VizingConjecture.vizing_conjecture.variants.clark_suen` | The Clark–Suen inequality (2000). | known | Combinatorics |  | yes |
-| 597 | `VizingConjecture.vizing_conjecture.variants.suen_tarr` | The Suen–Tarr inequality (2012). | known | Combinatorics |  | yes |
-| 598 | `WallSunSun.exists_isWallSunSunPrime` | Infinitude of Wall–Sun–Sun primes — exists isWallSunSunPrime | open | Number Theory |  |  |
-| 599 | `WallSunSun.infinite_isWallSunSunPrime` | Infinitude of Wall–Sun–Sun primes — infinite isWallSunSunPrime | open | Number Theory |  |  |
-| 600 | `WallSunSun.infinite_isWallSunSunPrime_of_disc_eq` | Infinitude of Wall–Sun–Sun primes — infinite isWallSunSunPrime of disc eq | open | Number Theory |  |  |
-| 601 | `WeighingMatrix.weighing_matrix_conjecture` | Weighing matrix conjecture | open | Combinatorics, Linear Algebra |  |  |
-| 602 | `WeighingMatrix.weighing_matrix_conjecture.variants.asymptotic` | Asymptotic existence of weighing matrices | known | Combinatorics, Linear Algebra |  |  |
-| 603 | `WieferichMirimanoffPrime.exists_isWieferichPrime_and_isMirimanoffPrime` | Can a prime $p$ satisfy $2^{p-1} \\equiv 1 \\pmod{p^2}$ and $3^{p-1} \\equiv 1 \\pmod{p^2}$? — exists isWieferichPrime and isMirimanoffPrime | open | Number Theory |  |  |
-| 604 | `WieferichMirimanoffPrime.isMirimanoffPrime_iff` | Can a prime $p$ satisfy $2^{p-1} \\equiv 1 \\pmod{p^2}$ and $3^{p-1} \\equiv 1 \\pmod{p^2}$? — isMirimanoffPrime iff | open | Number Theory |  |  |
-| 605 | `WieferichPrime.exists_isWieferichPrimeBase_47` | Wieferich primes — exists isWieferichPrimeBase 47 | open | Number Theory |  |  |
-| 606 | `WieferichPrime.infinite_isWieferichPrime` | Wieferich primes — infinite isWieferichPrime | open | Number Theory |  |  |
-| 607 | `WieferichPrime.infinite_isWieferichPrimeBase` | Wieferich primes — infinite isWieferichPrimeBase | open | Number Theory |  |  |
-| 608 | `WieferichPrime.isWieferichPrime_iff` | Wieferich primes — isWieferichPrime iff | open | Number Theory |  |  |
-| 609 | `WilfNumericalSemigroupConjecture.wilf_conjecture_embedding_dim_le_three` | Fröberg–Gottlieb–Häggkvist Theorem | known | Group Theory, Number Theory |  | yes |
-| 610 | `WilfNumericalSemigroupConjecture.wilf_numerical_semigroup_conjecture` | Wilf's Conjecture | open | Group Theory, Number Theory |  |  |
-| 611 | `WilsonPrime.infinitely_many_wilson_primes` | Wilson primes | open | Number Theory |  |  |
-| 612 | `WolstenholmePrime.wolstenholme_bernoulli` | Wolstenholme Prime — wolstenholme bernoulli | warmup | Number Theory |  | yes |
-| 613 | `WolstenholmePrime.wolstenholme_harmonic` | Wolstenholme Prime — wolstenholme harmonic | warmup | Number Theory |  | yes |
-| 614 | `WolstenholmePrime.wolstenholme_prime_infinite` | Wolstenholme Prime — wolstenholme prime infinite | open | Number Theory |  |  |
-| 615 | `WoodallPrimes.infinitely_many_woodall_primes` | WoodallPrimes | open | Number Theory |  |  |
+| 1 | [`ABC.abc`](https://lefttosolve.com/p/ABC.abc) | *abc* conjecture | open | Number Theory |  |  |
+| 2 | [`ABC.abc.variants.lt_constant_mul`](https://lefttosolve.com/p/ABC.abc.variants.lt_constant_mul) | *abc* conjecture — lt constant mul | open | Number Theory |  |  |
+| 3 | [`ABC.abc.variants.quality`](https://lefttosolve.com/p/ABC.abc.variants.quality) | *abc* conjecture — quality | open | Number Theory |  |  |
+| 4 | [`AgohGiuga.agoh_giuga`](https://lefttosolve.com/p/AgohGiuga.agoh_giuga) | Agoh-Giuga conjecture — agoh giuga | open | Number Theory |  |  |
+| 5 | [`AgohGiuga.agoh_giuga.variants._1000_le_digits_length_of_isStrongGiuga`](https://lefttosolve.com/p/AgohGiuga.agoh_giuga.variants._1000_le_digits_length_of_isStrongGiuga) | Agoh-Giuga conjecture —  1000 le digits length of isStrongGiuga | known | Number Theory |  | yes |
+| 6 | [`AgohGiuga.agoh_giuga.variants._13000_le_digits_length_of_isStrongGiuga`](https://lefttosolve.com/p/AgohGiuga.agoh_giuga.variants._13000_le_digits_length_of_isStrongGiuga) | Agoh-Giuga conjecture —  13000 le digits length of isStrongGiuga | known | Number Theory |  | yes |
+| 7 | [`AgohGiuga.agoh_giuga.variants._1700_le_digits_length_of_isStrongGiuga`](https://lefttosolve.com/p/AgohGiuga.agoh_giuga.variants._1700_le_digits_length_of_isStrongGiuga) | Agoh-Giuga conjecture —  1700 le digits length of isStrongGiuga | known | Number Theory |  | yes |
+| 8 | [`AgohGiuga.agoh_giuga.variants.equivalence`](https://lefttosolve.com/p/AgohGiuga.agoh_giuga.variants.equivalence) | Agoh-Giuga conjecture — equivalence | known | Number Theory |  | yes |
+| 9 | [`AgohGiuga.agoh_giuga.variants.giuga`](https://lefttosolve.com/p/AgohGiuga.agoh_giuga.variants.giuga) | Agoh-Giuga conjecture | open | Number Theory |  |  |
+| 10 | [`AgohGiuga.agoh_giuga.variants.isStrongGiuga_growth`](https://lefttosolve.com/p/AgohGiuga.agoh_giuga.variants.isStrongGiuga_growth) | Agoh-Giuga conjecture — isStrongGiuga growth | known | Number Theory |  | yes |
+| 11 | [`AgohGiuga.agoh_giuga.variants.le_primeFactors_card_of_isStrongGiuga`](https://lefttosolve.com/p/AgohGiuga.agoh_giuga.variants.le_primeFactors_card_of_isStrongGiuga) | Agoh-Giuga conjecture — le primeFactors card of isStrongGiuga | known | Number Theory |  | yes |
+| 12 | [`AgohGiuga.isStrongGiuga_iff`](https://lefttosolve.com/p/AgohGiuga.isStrongGiuga_iff) | Agoh-Giuga conjecture — isStrongGiuga iff | known | Number Theory |  |  |
+| 13 | [`AgohGiuga.isWeakGiuga_iff_sum_primeFactors`](https://lefttosolve.com/p/AgohGiuga.isWeakGiuga_iff_sum_primeFactors) | Agoh-Giuga conjecture — isWeakGiuga iff sum primeFactors | known | Number Theory |  |  |
+| 14 | [`AgrawalConjecture.agrawal_conjecture`](https://lefttosolve.com/p/AgrawalConjecture.agrawal_conjecture) | Agrawal's Primality Conjecture. | open | Number Theory |  |  |
+| 15 | [`AgrawalConjecture.agrawal_conjecture.variants.popovych`](https://lefttosolve.com/p/AgrawalConjecture.agrawal_conjecture.variants.popovych) | Roman B. Popovych Conjecture. | open | Number Theory |  |  |
+| 16 | [`Algebra.exists_quadraticAlgebra_of_isQuadraticExtension`](https://lefttosolve.com/p/Algebra.exists_quadraticAlgebra_of_isQuadraticExtension) | Infinitude of Wall–Sun–Sun primes — exists quadraticAlgebra of isQuadraticExtension | warmup | Number Theory |  | yes |
+| 17 | [`AlgebraicGeometry.exists_not_hasResolution_of_not_perfectField`](https://lefttosolve.com/p/AlgebraicGeometry.exists_not_hasResolution_of_not_perfectField) | Resolution of singularities fails over imperfect fields. | warmup | Algebraic Geometry |  | yes |
+| 18 | [`AlgebraicGeometry.resolution_of_singularities`](https://lefttosolve.com/p/AlgebraicGeometry.resolution_of_singularities) | Resolution of singularities in positive characteristic. | open | Algebraic Geometry |  |  |
+| 19 | [`AlgebraicGeometry.resolution_of_singularities_of_charZero`](https://lefttosolve.com/p/AlgebraicGeometry.resolution_of_singularities_of_charZero) | Hironaka's theorem. | known | Algebraic Geometry |  |  |
+| 20 | [`AlgebraicGeometry.resolution_of_singularities_of_topologicalKrullDim_le_three`](https://lefttosolve.com/p/AlgebraicGeometry.resolution_of_singularities_of_topologicalKrullDim_le_three) | Resolution of singularities | known | Algebraic Geometry |  |  |
+| 21 | [`AlgebraicNormality.irrational_algebraic_absolutely_normal`](https://lefttosolve.com/p/AlgebraicNormality.irrational_algebraic_absolutely_normal) | Normality of Irrational Algebraic Numbers — irrational algebraic absolutely normal | open | Approximation, Field Theory, Number Theory |  |  |
+| 22 | [`AlgebraicNormality.irrational_algebraic_normal_in_some_base`](https://lefttosolve.com/p/AlgebraicNormality.irrational_algebraic_normal_in_some_base) | Normality of Irrational Algebraic Numbers — irrational algebraic normal in some base | open | Approximation, Field Theory, Number Theory |  |  |
+| 23 | [`AlmostPerfectNumbers.exists_almost_perfect_not_power_of_two`](https://lefttosolve.com/p/AlmostPerfectNumbers.exists_almost_perfect_not_power_of_two) | Non-Power-of-2 Almost Perfect Numbers Conjecture. | open | Number Theory |  |  |
+| 24 | [`AlonSaksSeymourConjecture.alon_saks_seymour_conjecture`](https://lefttosolve.com/p/AlonSaksSeymourConjecture.alon_saks_seymour_conjecture) | The Alon–Saks–Seymour conjecture — disproved. | known | Combinatorics |  |  |
+| 25 | [`AlonSaksSeymourConjecture.alon_saks_seymour_conjecture.variants.graham_pollak`](https://lefttosolve.com/p/AlonSaksSeymourConjecture.alon_saks_seymour_conjecture.variants.graham_pollak) | The Graham–Pollak theorem (1971). | known | Combinatorics |  | yes |
+| 26 | [`AlonSaksSeymourConjecture.alon_saks_seymour_conjecture.variants.huang_sudakov`](https://lefttosolve.com/p/AlonSaksSeymourConjecture.alon_saks_seymour_conjecture.variants.huang_sudakov) | Huang–Sudakov (2012): a polynomial separation. | known | Combinatorics |  | yes |
+| 27 | [`AlspachConjecture.alspach_conjecture`](https://lefttosolve.com/p/AlspachConjecture.alspach_conjecture) | Alspach's conjecture (1981), proved by Bryant, Horsley and Pettersson (2014). | known | Combinatorics |  |  |
+| 28 | [`AlspachConjecture.alspach_conjecture.variants.even`](https://lefttosolve.com/p/AlspachConjecture.alspach_conjecture.variants.even) | The even case (Bryant–Horsley–Pettersson 2014). | known | Combinatorics |  |  |
+| 29 | [`AlspachConjecture.alspach_conjecture.variants.long_cycles`](https://lefttosolve.com/p/AlspachConjecture.alspach_conjecture.variants.long_cycles) | Alspach's conjecture on cycle decompositions of complete graphs (1981; proved 2014) — long cycles | known | Combinatorics |  |  |
+| 30 | [`AlspachConjecture.alspach_conjecture.variants.oberwolfach`](https://lefttosolve.com/p/AlspachConjecture.alspach_conjecture.variants.oberwolfach) | The Oberwolfach problem (Ringel 1967). | open | Combinatorics |  |  |
+| 31 | [`AmicableNumbers.infinitely_many_amicable`](https://lefttosolve.com/p/AmicableNumbers.infinitely_many_amicable) | Infinitely many amicable numbers conjecture. | open | Number Theory |  |  |
+| 32 | [`AmicableNumbers.opposite_parity_amicable`](https://lefttosolve.com/p/AmicableNumbers.opposite_parity_amicable) | Amicable numbers with opposite parity conjecture. | open | Number Theory |  |  |
+| 33 | [`AmicableNumbers.relatively_prime_amicable`](https://lefttosolve.com/p/AmicableNumbers.relatively_prime_amicable) | Relatively prime amicable numbers conjecture. | open | Number Theory |  |  |
+| 34 | [`AndrewsCurtis.andrews_curtis_conjecture`](https://lefttosolve.com/p/AndrewsCurtis.andrews_curtis_conjecture) | The Andrews-Curtis conjecture. | open | Group Theory |  |  |
+| 35 | [`Andrica.andrica_conjecture`](https://lefttosolve.com/p/Andrica.andrica_conjecture) | Andrica's conjecture | open | Number Theory |  |  |
+| 36 | [`Andrica.andrica_conjecture.ferreira_large_n`](https://lefttosolve.com/p/Andrica.andrica_conjecture.ferreira_large_n) | Andrica's conjecture — ferreira large n | known | Number Theory |  |  |
+| 37 | [`ArtinPrimitiveRootsConjecture.artin_primitive_roots.parts.i`](https://lefttosolve.com/p/ArtinPrimitiveRootsConjecture.artin_primitive_roots.parts.i) | Artin's Conjecture on Primitive Roots | open | Number Theory |  |  |
+| 38 | [`ArtinPrimitiveRootsConjecture.artin_primitive_roots.parts.ii`](https://lefttosolve.com/p/ArtinPrimitiveRootsConjecture.artin_primitive_roots.parts.ii) | Artin's Conjecture on Primitive Roots — ii | open | Number Theory |  |  |
+| 39 | [`ArtinPrimitiveRootsConjecture.artin_primitive_roots.variants.part_ii_power_squarefreePart_modeq_one`](https://lefttosolve.com/p/ArtinPrimitiveRootsConjecture.artin_primitive_roots.variants.part_ii_power_squarefreePart_modeq_one) | Artin's Conjecture on Primitive Roots — part ii power squarefreePart modeq one | open | Number Theory |  |  |
+| 40 | [`ArtinPrimitiveRootsConjecture.artin_primitive_roots.variants.part_ii_power_squarefreePart_not_modeq_one`](https://lefttosolve.com/p/ArtinPrimitiveRootsConjecture.artin_primitive_roots.variants.part_ii_power_squarefreePart_not_modeq_one) | Artin's Conjecture on Primitive Roots — part ii power squarefreePart not modeq one | open | Number Theory |  |  |
+| 41 | [`ArtinPrimitiveRootsConjecture.conditional_artin_primitive_roots.parts.i`](https://lefttosolve.com/p/ArtinPrimitiveRootsConjecture.conditional_artin_primitive_roots.parts.i) | Artin's Conjecture on Primitive Roots | known | Number Theory |  |  |
+| 42 | [`ArtinPrimitiveRootsConjecture.conditional_artin_primitive_roots.parts.ii`](https://lefttosolve.com/p/ArtinPrimitiveRootsConjecture.conditional_artin_primitive_roots.parts.ii) | Artin's Conjecture on Primitive Roots — ii | known | Number Theory |  |  |
+| 43 | [`ArtinPrimitiveRootsConjecture.conditional_artin_primitive_roots.variants.part_ii_power_squarefreePart_modeq_one`](https://lefttosolve.com/p/ArtinPrimitiveRootsConjecture.conditional_artin_primitive_roots.variants.part_ii_power_squarefreePart_modeq_one) | Artin's Conjecture on Primitive Roots — part ii power squarefreePart modeq one | known | Number Theory |  |  |
+| 44 | [`ArtinPrimitiveRootsConjecture.conditional_artin_primitive_roots.variants.part_ii_power_squarefreePart_not_modeq_one`](https://lefttosolve.com/p/ArtinPrimitiveRootsConjecture.conditional_artin_primitive_roots.variants.part_ii_power_squarefreePart_not_modeq_one) | Artin's Conjecture on Primitive Roots — part ii power squarefreePart not modeq one | known | Number Theory |  |  |
+| 45 | [`BabaiSeressConjectures.babai_seress_conjecture`](https://lefttosolve.com/p/BabaiSeressConjectures.babai_seress_conjecture) | Babai–Seress Conjecture (Conjecture 1.7) | open | Combinatorics, Computer Science, Group Theory |  |  |
+| 46 | [`BabaiSeressConjectures.babai_seress_conjecture_alternating`](https://lefttosolve.com/p/BabaiSeressConjectures.babai_seress_conjecture_alternating) | Babai–Seress Conjecture (Conjecture 1.5) | open | Combinatorics, Computer Science, Group Theory |  |  |
+| 47 | [`BalancedPrimes.balanced_primes`](https://lefttosolve.com/p/BalancedPrimes.balanced_primes) | Balanced prime conjecture — balanced primes | open | Number Theory |  |  |
+| 48 | [`BalancedPrimes.balanced_primes_order`](https://lefttosolve.com/p/BalancedPrimes.balanced_primes_order) | Balanced prime conjecture — balanced primes order | open | Number Theory |  |  |
+| 49 | [`BatemanHornConjecture.bateman_horn_conjecture`](https://lefttosolve.com/p/BatemanHornConjecture.bateman_horn_conjecture) | The Bateman-Horn Conjecture | open | Field Theory, Number Theory |  |  |
+| 50 | [`BealConjecture.beal_conjecture`](https://lefttosolve.com/p/BealConjecture.beal_conjecture) | Beal conjecture | open | Number Theory |  |  |
+| 51 | [`BeckFiala.beck_fiala_conjecture`](https://lefttosolve.com/p/BeckFiala.beck_fiala_conjecture) | The Beck–Fiala conjecture | open | Combinatorics |  |  |
+| 52 | [`BergeFulkersonConjecture.berge_fulkerson_conjecture`](https://lefttosolve.com/p/BergeFulkersonConjecture.berge_fulkerson_conjecture) | The Berge–Fulkerson conjecture (Fulkerson 1971). | open | Combinatorics |  |  |
+| 53 | [`BergeFulkersonConjecture.berge_fulkerson_conjecture.variants.berge`](https://lefttosolve.com/p/BergeFulkersonConjecture.berge_fulkerson_conjecture.variants.berge) | Berge's conjecture: five perfect matchings covering every edge. | open | Combinatorics |  |  |
+| 54 | [`BergeFulkersonConjecture.berge_fulkerson_conjecture.variants.fan_raspaud`](https://lefttosolve.com/p/BergeFulkersonConjecture.berge_fulkerson_conjecture.variants.fan_raspaud) | The Fan–Raspaud conjecture (1994). | open | Combinatorics |  |  |
+| 55 | [`BergeFulkersonConjecture.berge_fulkerson_conjecture.variants.petersen`](https://lefttosolve.com/p/BergeFulkersonConjecture.berge_fulkerson_conjecture.variants.petersen) | Petersen's theorem (1891): every bridgeless cubic graph has a perfect matching. | known | Combinatorics |  | yes |
+| 56 | [`BetrothedNumbers.infinitely_many_betrothed`](https://lefttosolve.com/p/BetrothedNumbers.infinitely_many_betrothed) | Infinitude of betrothed numbers conjecture. | open | Number Theory |  |  |
+| 57 | [`BetrothedNumbers.same_parity_betrothed`](https://lefttosolve.com/p/BetrothedNumbers.same_parity_betrothed) | Same parity betrothed numbers conjecture. | open | Number Theory |  |  |
+| 58 | [`BingBorsuk.bing_borsuk_conjecture`](https://lefttosolve.com/p/BingBorsuk.bing_borsuk_conjecture) | The Bing-Borsuk Conjecture | open | General Topology, Manifolds |  |  |
+| 59 | [`Bloch.blochConstant_exact_value`](https://lefttosolve.com/p/Bloch.blochConstant_exact_value) | Bloch and Landau constants — blochConstant exact value | open | Complex Analysis |  |  |
+| 60 | [`Bloch.blochConstant_lower_bound`](https://lefttosolve.com/p/Bloch.blochConstant_lower_bound) | Bloch and Landau constants — blochConstant lower bound | known | Complex Analysis |  |  |
+| 61 | [`Bloch.blochConstant_upper_bound`](https://lefttosolve.com/p/Bloch.blochConstant_upper_bound) | Bloch and Landau constants — blochConstant upper bound | known | Complex Analysis |  |  |
+| 62 | [`Bloch.landauConstant_exact_value`](https://lefttosolve.com/p/Bloch.landauConstant_exact_value) | Bloch and Landau constants — landauConstant exact value | open | Complex Analysis |  |  |
+| 63 | [`Bloch.landauConstant_lower_bound`](https://lefttosolve.com/p/Bloch.landauConstant_lower_bound) | Bloch and Landau constants — landauConstant lower bound | known | Complex Analysis |  |  |
+| 64 | [`Bloch.landauConstant_upper_bound`](https://lefttosolve.com/p/Bloch.landauConstant_upper_bound) | Bloch and Landau constants — landauConstant upper bound | known | Complex Analysis |  |  |
+| 65 | [`Bloch.univalentBlochConstant_lower_bound`](https://lefttosolve.com/p/Bloch.univalentBlochConstant_lower_bound) | Bloch and Landau constants — univalentBlochConstant lower bound | known | Complex Analysis |  |  |
+| 66 | [`Borsuk.borsuk_conjecture.four`](https://lefttosolve.com/p/Borsuk.borsuk_conjecture.four) | Borsuk's conjecture — four | open | Convex & Discrete Geometry |  |  |
+| 67 | [`Borsuk.borsuk_conjecture.four.eight_parts`](https://lefttosolve.com/p/Borsuk.borsuk_conjecture.four.eight_parts) | Partial result in dimension $4$ — eight parts | known | Convex & Discrete Geometry |  |  |
+| 68 | [`Borsuk.borsuk_conjecture.four.nine_parts`](https://lefttosolve.com/p/Borsuk.borsuk_conjecture.four.nine_parts) | Partial result in dimension $4$ — nine parts | known | Convex & Discrete Geometry |  |  |
+| 69 | [`Borsuk.borsuk_conjecture.not_of_nine_le`](https://lefttosolve.com/p/Borsuk.borsuk_conjecture.not_of_nine_le) | Borsuk's conjecture — not of nine le | known | Convex & Discrete Geometry |  |  |
+| 70 | [`BoundedBurnsideProblem.bounded_burnside_problem`](https://lefttosolve.com/p/BoundedBurnsideProblem.bounded_burnside_problem) | Bounded Burnside problem | known | Group Theory |  |  |
+| 71 | [`BrennanConjecture.brennan_universalSpectrumBounded`](https://lefttosolve.com/p/BrennanConjecture.brennan_universalSpectrumBounded) | Brennan's Conjecture | open | Complex Analysis |  |  |
+| 72 | [`Brocard.brocard_conjecture`](https://lefttosolve.com/p/Brocard.brocard_conjecture) | Brocard's Conjecture | open | Number Theory |  |  |
+| 73 | [`Brocard.brocard_conjecture.ferreira_large_n`](https://lefttosolve.com/p/Brocard.brocard_conjecture.ferreira_large_n) | Brocard's Conjecture — ferreira large n | known | Number Theory |  |  |
+| 74 | [`Buchi.buchi_problem`](https://lefttosolve.com/p/Buchi.buchi_problem) | Büchi's problem | open | Number Theory |  |  |
+| 75 | [`Buchi.buchi_problem_M5`](https://lefttosolve.com/p/Buchi.buchi_problem_M5) | Büchi's problem (first open case, $M = 5$) | open | Number Theory |  |  |
+| 76 | [`Bunyakovsky.bunyakovsky_conjecture`](https://lefttosolve.com/p/Bunyakovsky.bunyakovsky_conjecture) | Bunyakovsky conjecture | open | Number Theory |  |  |
+| 77 | [`BusyBeaver.BB_1`](https://lefttosolve.com/p/BusyBeaver.BB_1) | Busy Beaver — BB 1 | warmup | Logic & Foundations |  |  |
+| 78 | [`BusyBeaver.BB_2`](https://lefttosolve.com/p/BusyBeaver.BB_2) | Busy Beaver — BB 2 | warmup | Logic & Foundations |  |  |
+| 79 | [`BusyBeaver.BB_3`](https://lefttosolve.com/p/BusyBeaver.BB_3) | Busy Beaver — BB 3 | warmup | Logic & Foundations |  |  |
+| 80 | [`BusyBeaver.BB_4`](https://lefttosolve.com/p/BusyBeaver.BB_4) | Busy Beaver — BB 4 | warmup | Logic & Foundations |  |  |
+| 81 | [`BusyBeaver.BB_5`](https://lefttosolve.com/p/BusyBeaver.BB_5) | Busy Beaver — BB 5 | known | Logic & Foundations |  |  |
+| 82 | [`BusyBeaver.BB_6`](https://lefttosolve.com/p/BusyBeaver.BB_6) | Busy Beaver — BB 6 | open | Logic & Foundations |  |  |
+| 83 | [`BusyBeaver.sanity_check`](https://lefttosolve.com/p/BusyBeaver.sanity_check) | Busy Beaver — sanity check | warmup | Logic & Foundations |  |  |
+| 84 | [`ButsonHadamardMatrix.butson_hadamard_fourth_roots_conjecture`](https://lefttosolve.com/p/ButsonHadamardMatrix.butson_hadamard_fourth_roots_conjecture) | Complex Hadamard conjecture for fourth roots of unity | open | Combinatorics, Linear Algebra |  |  |
+| 85 | [`ButsonHadamardMatrix.butson_prime_divisibility`](https://lefttosolve.com/p/ButsonHadamardMatrix.butson_prime_divisibility) | Butson's prime divisibility theorem | known | Combinatorics, Linear Algebra |  |  |
+| 86 | [`ButsonHadamardMatrix.not_forall_odd_prime_mul_exists`](https://lefttosolve.com/p/ButsonHadamardMatrix.not_forall_odd_prime_mul_exists) | Disproof of the odd-prime-multiple existence claim | known | Combinatorics, Linear Algebra |  |  |
+| 87 | [`CarmichaelTotient.carchimaelTotient_bound`](https://lefttosolve.com/p/CarmichaelTotient.carchimaelTotient_bound) | Carmichael's totient function conjecture — carchimaelTotient bound | known | Number Theory |  |  |
+| 88 | [`CarmichaelTotient.charmichaelTotient`](https://lefttosolve.com/p/CarmichaelTotient.charmichaelTotient) | Carmichael's totient function conjecture — charmichaelTotient | open | Number Theory |  |  |
+| 89 | [`Catalan.pillais_conjecture`](https://lefttosolve.com/p/Catalan.pillais_conjecture) | Catalan's conjecture and related Diophantine equations | open | Number Theory |  |  |
+| 90 | [`CernyConjecture.cerny_conjecture`](https://lefttosolve.com/p/CernyConjecture.cerny_conjecture) | Černý Conjecture | open | Computer Science |  |  |
+| 91 | [`CernyConjecture.shitov_upper_bound`](https://lefttosolve.com/p/CernyConjecture.shitov_upper_bound) | Shitov's bound (2019) | known | Computer Science |  |  |
+| 92 | [`ChebyshevBias.knapowski_turan_natural_density_false`](https://lefttosolve.com/p/ChebyshevBias.knapowski_turan_natural_density_false) | Chebyshev's bias — knapowski turan natural density false | known | Number Theory |  |  |
+| 93 | [`ChebyshevBias.littlewood_mod_four_sign_changes`](https://lefttosolve.com/p/ChebyshevBias.littlewood_mod_four_sign_changes) | Chebyshev's bias — littlewood mod four sign changes | known | Number Theory |  |  |
+| 94 | [`ChebyshevBias.rubinstein_sarnak_unconditional_chebyshev_bias`](https://lefttosolve.com/p/ChebyshevBias.rubinstein_sarnak_unconditional_chebyshev_bias) | Chebyshev's bias — rubinstein sarnak unconditional chebyshev bias | open | Number Theory |  |  |
+| 95 | [`ChebyshevBias.rubinstein_sarnak_unconditional_chebyshev_bias.variants.general_modulus`](https://lefttosolve.com/p/ChebyshevBias.rubinstein_sarnak_unconditional_chebyshev_bias.variants.general_modulus) | Chebyshev's bias — general modulus | open | Number Theory |  |  |
+| 96 | [`ChowlaLiouvilleConjecture.chowla_liouville_conjecture`](https://lefttosolve.com/p/ChowlaLiouvilleConjecture.chowla_liouville_conjecture) | Chowla's Conjecture | open | Number Theory |  |  |
+| 97 | [`ChowlaLiouvilleConjecture.chowla_liouville_conjecture.variants.averaged_two_point`](https://lefttosolve.com/p/ChowlaLiouvilleConjecture.chowla_liouville_conjecture.variants.averaged_two_point) | Shift-Averaged Two-Point Chowla Theorem | known | Number Theory |  |  |
+| 98 | [`ChowlaLiouvilleConjecture.chowla_liouville_conjecture.variants.averaged_two_point_uniform`](https://lefttosolve.com/p/ChowlaLiouvilleConjecture.chowla_liouville_conjecture.variants.averaged_two_point_uniform) | Uniform Shift-Averaged Two-Point Chowla Theorem | known | Number Theory |  |  |
+| 99 | [`ChowlaLiouvilleConjecture.chowla_liouville_conjecture.variants.logarithmic_two_point`](https://lefttosolve.com/p/ChowlaLiouvilleConjecture.chowla_liouville_conjecture.variants.logarithmic_two_point) | Logarithmically Averaged Two-Point Chowla Theorem | known | Number Theory |  |  |
+| 100 | [`ChowlaLiouvilleConjecture.chowla_liouville_conjecture.variants.one_point`](https://lefttosolve.com/p/ChowlaLiouvilleConjecture.chowla_liouville_conjecture.variants.one_point) | One-Point Liouville Average | warmup | Number Theory |  |  |
+| 101 | [`ClassNumberProblem.class_number_problem`](https://lefttosolve.com/p/ClassNumberProblem.class_number_problem) | Class number problem for real quadratic fields | open | Number Theory |  |  |
+| 102 | [`ClassNumberProblem.class_number_problem.variants.imaginary`](https://lefttosolve.com/p/ClassNumberProblem.class_number_problem.variants.imaginary) | Stark–Heegner theorem | known | Number Theory |  |  |
+| 103 | [`CohenLenstraHeuristics.cohen_lenstra_imaginary_quadratic_p_sylow_conjecture`](https://lefttosolve.com/p/CohenLenstraHeuristics.cohen_lenstra_imaginary_quadratic_p_sylow_conjecture) | Cohen–Lenstra Heuristic (Imaginary Quadratic Case, $u = 0$) | open | Number Theory |  |  |
+| 104 | [`CohenLenstraHeuristics.cohen_lenstra_real_quadratic_p_sylow_conjecture`](https://lefttosolve.com/p/CohenLenstraHeuristics.cohen_lenstra_real_quadratic_p_sylow_conjecture) | Cohen–Lenstra Heuristic (Real Quadratic Case, $u = 1$) | open | Number Theory |  |  |
+| 105 | [`CollatzConjecture.collatz_conjecture`](https://lefttosolve.com/p/CollatzConjecture.collatz_conjecture) | Collatz conjecture | open | Dynamical Systems, Number Theory |  |  |
+| 106 | [`ColossallyAbundantNumber.alaoglu_erdos_colossally_abundant_prime_ratio_conjecture`](https://lefttosolve.com/p/ColossallyAbundantNumber.alaoglu_erdos_colossally_abundant_prime_ratio_conjecture) | Alaoglu–Erdős Prime-Ratio Conjecture | open | Number Theory |  |  |
+| 107 | [`ColossallyAbundantNumber.alaoglu_erdos_prime_or_semiprime_ratio`](https://lefttosolve.com/p/ColossallyAbundantNumber.alaoglu_erdos_prime_or_semiprime_ratio) | Alaoglu–Erdős Conjectures on Colossally Abundant Numbers — alaoglu erdos prime or semiprime ratio | known | Number Theory |  |  |
+| 108 | [`ColossallyAbundantNumber.alaoglu_erdos_prime_powers_rational_conjecture`](https://lefttosolve.com/p/ColossallyAbundantNumber.alaoglu_erdos_prime_powers_rational_conjecture) | Alaoglu–Erdős Rational Prime-Powers Conjecture | open | Number Theory |  |  |
+| 109 | [`ColossallyAbundantNumber.encard_colossallyAbundant_maximizers_le_four`](https://lefttosolve.com/p/ColossallyAbundantNumber.encard_colossallyAbundant_maximizers_le_four) | Alaoglu–Erdős Conjectures on Colossally Abundant Numbers — encard colossallyAbundant maximizers le four | known | Number Theory |  |  |
+| 110 | [`ColossallyAbundantNumber.infinite_colossallyAbundant`](https://lefttosolve.com/p/ColossallyAbundantNumber.infinite_colossallyAbundant) | Alaoglu–Erdős Conjectures on Colossally Abundant Numbers — infinite colossallyAbundant | known | Number Theory |  | yes |
+| 111 | [`CongruentNumber.Tunnell_even`](https://lefttosolve.com/p/CongruentNumber.Tunnell_even) | Congruent Number — Tunnell even | known | Number Theory |  |  |
+| 112 | [`CongruentNumber.Tunnell_even_converse`](https://lefttosolve.com/p/CongruentNumber.Tunnell_even_converse) | Congruent Number — Tunnell even converse | open | Number Theory |  |  |
+| 113 | [`CongruentNumber.Tunnell_odd`](https://lefttosolve.com/p/CongruentNumber.Tunnell_odd) | Congruent Number — Tunnell odd | known | Number Theory |  |  |
+| 114 | [`CongruentNumber.Tunnell_odd_converse`](https://lefttosolve.com/p/CongruentNumber.Tunnell_odd_converse) | Congruent Number — Tunnell odd converse | open | Number Theory |  |  |
+| 115 | [`Conjecture_1_3_to_2_3.conjecture_1_3_to_2_3`](https://lefttosolve.com/p/Conjecture_1_3_to_2_3.conjecture_1_3_to_2_3) | The $\\frac 1 3$–$\\frac 2 3$ conjecture | open | Order & Lattices |  |  |
+| 116 | [`Conway99Graph.conway99Graph`](https://lefttosolve.com/p/Conway99Graph.conway99Graph) | Conway's 99-graph problem | open | Combinatorics |  |  |
+| 117 | [`CramerConjecture.cramer_conjecture`](https://lefttosolve.com/p/CramerConjecture.cramer_conjecture) | Cramér's Conjecture | open | Number Theory |  |  |
+| 118 | [`CramerConjecture.cramer_conjecture.variants.baker_harman_pintz`](https://lefttosolve.com/p/CramerConjecture.cramer_conjecture.variants.baker_harman_pintz) | Baker–Harman–Pintz Bound | known | Number Theory |  |  |
+| 119 | [`CramerConjecture.cramer_conjecture.variants.conditional_rh`](https://lefttosolve.com/p/CramerConjecture.cramer_conjecture.variants.conditional_rh) | Cramér's Conditional Prime Gap Bound | known | Number Theory |  | yes |
+| 120 | [`CramerConjecture.cramer_conjecture.variants.granville`](https://lefttosolve.com/p/CramerConjecture.cramer_conjecture.variants.granville) | Cramér–Granville Conjecture | open | Number Theory |  |  |
+| 121 | [`CramerConjecture.cramer_conjecture.variants.limsup_eq_one`](https://lefttosolve.com/p/CramerConjecture.cramer_conjecture.variants.limsup_eq_one) | Cramér's Heuristic Limit-Superior Prediction | open | Number Theory |  |  |
+| 122 | [`CramerConjecture.cramer_conjecture.variants.strict_bound`](https://lefttosolve.com/p/CramerConjecture.cramer_conjecture.variants.strict_bound) | Strong Numerical Cramér Inequality | open | Number Theory |  |  |
+| 123 | [`CramerConjecture.cramer_conjecture.variants.westzynthius`](https://lefttosolve.com/p/CramerConjecture.cramer_conjecture.variants.westzynthius) | Westzynthius's Theorem | known | Number Theory |  | yes |
+| 124 | [`DedekindNumber.Dedekind_10`](https://lefttosolve.com/p/DedekindNumber.Dedekind_10) | Dedekind Numbers — Dedekind 10 | open | Combinatorics, Order & Lattices |  |  |
+| 125 | [`DedekindNumber.M_eq`](https://lefttosolve.com/p/DedekindNumber.M_eq) | Dedekind Numbers — M eq | open | Combinatorics, Order & Lattices |  |  |
+| 126 | [`DedekindNumber.M_eq_kisielewiczFormula`](https://lefttosolve.com/p/DedekindNumber.M_eq_kisielewiczFormula) | Dedekind Numbers — M eq kisielewiczFormula | known | Combinatorics, Order & Lattices |  | yes |
+| 127 | [`DensityHypothesis.density_hypothesis_zeta_zeros`](https://lefttosolve.com/p/DensityHypothesis.density_hypothesis_zeta_zeros) | Density hypothesis for Riemann zeta zeros — density hypothesis zeta zeros | open | Complex Analysis, Number Theory |  |  |
+| 128 | [`DensityHypothesis.guth_maynard_zero_density`](https://lefttosolve.com/p/DensityHypothesis.guth_maynard_zero_density) | Density hypothesis for Riemann zeta zeros — guth maynard zero density | known | Complex Analysis, Number Theory |  |  |
+| 129 | [`DescartesNumber.descartes_cubeFree_lt_seven_primeFactors_unique`](https://lefttosolve.com/p/DescartesNumber.descartes_cubeFree_lt_seven_primeFactors_unique) | Banks–Güloğlu–Nevans–Saidak Uniqueness Theorem | known | Number Theory |  |  |
+| 130 | [`DescartesNumber.descartes_cubeFree_not_dvd_three_primeFactors_gt_million`](https://lefttosolve.com/p/DescartesNumber.descartes_cubeFree_not_dvd_three_primeFactors_gt_million) | Banks–Güloğlu–Nevans–Saidak Theorem | known | Number Theory |  |  |
+| 131 | [`DescartesNumber.descartes_non_example_factor_gt_ten_pow_twelve`](https://lefttosolve.com/p/DescartesNumber.descartes_non_example_factor_gt_ten_pow_twelve) | Tóth's Lower Bound on Spoof Factorizations | known | Number Theory |  |  |
+| 132 | [`DescartesNumber.descartes_number_unique`](https://lefttosolve.com/p/DescartesNumber.descartes_number_unique) | Descartes Numbers | open | Number Theory |  |  |
+| 133 | [`DeterminantalConjecture.determinantal_conjecture`](https://lefttosolve.com/p/DeterminantalConjecture.determinantal_conjecture) | Determinantal conjecture | open | Linear Algebra |  |  |
+| 134 | [`Dickson.dickson_conjecture`](https://lefttosolve.com/p/Dickson.dickson_conjecture) | Dickson's conjecture | open | Number Theory |  |  |
+| 135 | [`Dickson.generalized_twin_primes`](https://lefttosolve.com/p/Dickson.generalized_twin_primes) | The generalized twin-prime conjecture | open | Number Theory |  |  |
+| 136 | [`Dickson.infinite_cousin_primes`](https://lefttosolve.com/p/Dickson.infinite_cousin_primes) | The infinitude of cousin primes | open | Number Theory |  |  |
+| 137 | [`Dickson.infinite_safe_primes`](https://lefttosolve.com/p/Dickson.infinite_safe_primes) | The infinitude of Sophie Germain primes | open | Number Theory |  |  |
+| 138 | [`Dickson.infinite_sexy_primes`](https://lefttosolve.com/p/Dickson.infinite_sexy_primes) | The infinitude of sexy primes | open | Number Theory |  |  |
+| 139 | [`DiophantineTuple.hasUniqueExtension_of_1_3_8`](https://lefttosolve.com/p/DiophantineTuple.hasUniqueExtension_of_1_3_8) | Diophantine $m$-tuples — hasUniqueExtension of 1 3 8 | known | Number Theory |  |  |
+| 140 | [`DiophantineTuple.hasUniqueExtension_of_forall`](https://lefttosolve.com/p/DiophantineTuple.hasUniqueExtension_of_forall) | Diophantine $m$-tuples — hasUniqueExtension of forall | open | Number Theory |  |  |
+| 141 | [`DiophantineTuple.noIntegralDiophantineFiveTuple`](https://lefttosolve.com/p/DiophantineTuple.noIntegralDiophantineFiveTuple) | Diophantine $m$-tuples — noIntegralDiophantineFiveTuple | known | Number Theory |  |  |
+| 142 | [`DiophantineTuple.rational_7_tuple`](https://lefttosolve.com/p/DiophantineTuple.rational_7_tuple) | Diophantine $m$-tuples — rational 7 tuple | open | Number Theory |  |  |
+| 143 | [`DirichletDivisorProblem.dirichlet_divisor_problem`](https://lefttosolve.com/p/DirichletDivisorProblem.dirichlet_divisor_problem) | Dirichlet divisor problem | open | Number Theory |  |  |
+| 144 | [`DirichletDivisorProblem.divisor_error_dirichlet`](https://lefttosolve.com/p/DirichletDivisorProblem.divisor_error_dirichlet) | Dirichlet divisor problem — divisor error dirichlet | warmup | Number Theory |  |  |
+| 145 | [`DirichletDivisorProblem.divisor_error_hardy`](https://lefttosolve.com/p/DirichletDivisorProblem.divisor_error_hardy) | Dirichlet divisor problem — divisor error hardy | known | Number Theory |  | yes |
+| 146 | [`ElliottHalberstamConjecture.elliott_halberstam`](https://lefttosolve.com/p/ElliottHalberstamConjecture.elliott_halberstam) | Elliott–Halberstam conjecture | open | Number Theory |  |  |
+| 147 | [`ElliottHalberstamConjecture.elliott_halberstam.variants.bombieri_vinogradov`](https://lefttosolve.com/p/ElliottHalberstamConjecture.elliott_halberstam.variants.bombieri_vinogradov) | Elliott–Halberstam conjecture — bombieri vinogradov | known | Number Theory |  |  |
+| 148 | [`ElliottHalberstamConjecture.elliott_halberstam.variants.friedlander_granville`](https://lefttosolve.com/p/ElliottHalberstamConjecture.elliott_halberstam.variants.friedlander_granville) | Elliott–Halberstam conjecture — friedlander granville | known | Number Theory |  | yes |
+| 149 | [`EllipticCurveRank.RatEllipticCurve._02062_le_density_rank_zero`](https://lefttosolve.com/p/EllipticCurveRank.RatEllipticCurve._02062_le_density_rank_zero) | Some conjectures about ranks of elliptic curves over ℚ —  02062 le density rank zero | known | Algebraic Geometry, Number Theory |  |  |
+| 150 | [`EllipticCurveRank.RatEllipticCurve._08375_le_density_rank_zero_one`](https://lefttosolve.com/p/EllipticCurveRank.RatEllipticCurve._08375_le_density_rank_zero_one) | Some conjectures about ranks of elliptic curves over ℚ —  08375 le density rank zero one | known | Algebraic Geometry, Number Theory |  |  |
+| 151 | [`EllipticCurveRank.RatEllipticCurve.avg_rank_lt_0885`](https://lefttosolve.com/p/EllipticCurveRank.RatEllipticCurve.avg_rank_lt_0885) | Some conjectures about ranks of elliptic curves over ℚ — avg rank lt 0885 | known | Algebraic Geometry, Number Theory |  |  |
+| 152 | [`EllipticCurveRank.RatEllipticCurve.card_heightLE_div_pow_five_div_six_tensto`](https://lefttosolve.com/p/EllipticCurveRank.RatEllipticCurve.card_heightLE_div_pow_five_div_six_tensto) | Some conjectures about ranks of elliptic curves over ℚ — card heightLE div pow five div six tensto | warmup | Algebraic Geometry, Number Theory |  | yes |
+| 153 | [`EllipticCurveRank.RatEllipticCurve.exists_rank_ge_thirtyone`](https://lefttosolve.com/p/EllipticCurveRank.RatEllipticCurve.exists_rank_ge_thirtyone) | Some conjectures about ranks of elliptic curves over ℚ — exists rank ge thirtyone | known | Algebraic Geometry, Number Theory |  |  |
+| 154 | [`EllipticCurveRank.RatEllipticCurve.exists_rank_ge_thirtytwo`](https://lefttosolve.com/p/EllipticCurveRank.RatEllipticCurve.exists_rank_ge_thirtytwo) | Some conjectures about ranks of elliptic curves over ℚ — exists rank ge thirtytwo | open | Algebraic Geometry, Number Theory |  |  |
+| 155 | [`EllipticCurveRank.RatEllipticCurve.finite_twentyone_lt_finrank`](https://lefttosolve.com/p/EllipticCurveRank.RatEllipticCurve.finite_twentyone_lt_finrank) | Some conjectures about ranks of elliptic curves over ℚ — finite twentyone lt finrank | open | Algebraic Geometry, Number Theory |  |  |
+| 156 | [`EllipticCurveRank.RatEllipticCurve.goldfeld_conjecture`](https://lefttosolve.com/p/EllipticCurveRank.RatEllipticCurve.goldfeld_conjecture) | Goldfeld's conjecture — goldfeld conjecture | open | Algebraic Geometry, Number Theory |  |  |
+| 157 | [`EllipticCurveRank.RatEllipticCurve.goldfeld_conjecture.variants.squarefree`](https://lefttosolve.com/p/EllipticCurveRank.RatEllipticCurve.goldfeld_conjecture.variants.squarefree) | Some conjectures about ranks of elliptic curves over ℚ — squarefree | open | Algebraic Geometry, Number Theory |  |  |
+| 158 | [`EllipticCurveRank.RatEllipticCurve.goldfeld_conjecture.variants.two_le`](https://lefttosolve.com/p/EllipticCurveRank.RatEllipticCurve.goldfeld_conjecture.variants.two_le) | Goldfeld's conjecture — two le | known | Algebraic Geometry, Number Theory |  |  |
+| 159 | [`EllipticCurveRank.RatEllipticCurve.half_rank_zero_and_half_rank_one`](https://lefttosolve.com/p/EllipticCurveRank.RatEllipticCurve.half_rank_zero_and_half_rank_one) | Some conjectures about ranks of elliptic curves over ℚ — half rank zero and half rank one | open | Algebraic Geometry, Number Theory |  |  |
+| 160 | [`EllipticCurveRank.RatEllipticCurve.rank_height_count_asymptotic`](https://lefttosolve.com/p/EllipticCurveRank.RatEllipticCurve.rank_height_count_asymptotic) | Some conjectures about ranks of elliptic curves over ℚ — rank height count asymptotic | open | Algebraic Geometry, Number Theory |  |  |
+| 161 | [`EllipticCurveRank.RatEllipticCurve.twentyone_le_rank_height_count_asymptotic`](https://lefttosolve.com/p/EllipticCurveRank.RatEllipticCurve.twentyone_le_rank_height_count_asymptotic) | Some conjectures about ranks of elliptic curves over ℚ — twentyone le rank height count asymptotic | open | Algebraic Geometry, Number Theory |  |  |
+| 162 | [`EllipticCurveRank.RatEllipticCurve.unbounded_rank_conjecture`](https://lefttosolve.com/p/EllipticCurveRank.RatEllipticCurve.unbounded_rank_conjecture) | Some conjectures about ranks of elliptic curves over ℚ — unbounded rank conjecture | open | Algebraic Geometry, Number Theory |  |  |
+| 163 | [`EllipticCurveRank.WeierstrassCurve.rank_claudeAlpogeHowell31`](https://lefttosolve.com/p/EllipticCurveRank.WeierstrassCurve.rank_claudeAlpogeHowell31) | Some conjectures about ranks of elliptic curves over ℚ — rank claudeAlpogeHowell31 | open | Algebraic Geometry, Number Theory |  |  |
+| 164 | [`EllipticCurveRank.WeierstrassCurve.rank_elkies28`](https://lefttosolve.com/p/EllipticCurveRank.WeierstrassCurve.rank_elkies28) | Some conjectures about ranks of elliptic curves over ℚ — rank elkies28 | open | Algebraic Geometry, Number Theory |  |  |
+| 165 | [`EllipticCurveRank.WeierstrassCurve.rank_elkiesKlagsbrun29`](https://lefttosolve.com/p/EllipticCurveRank.WeierstrassCurve.rank_elkiesKlagsbrun29) | Some conjectures about ranks of elliptic curves over ℚ — rank elkiesKlagsbrun29 | open | Algebraic Geometry, Number Theory |  |  |
+| 166 | [`EllipticCurveRank.WeierstrassCurve.rank_ranksunbounded30`](https://lefttosolve.com/p/EllipticCurveRank.WeierstrassCurve.rank_ranksunbounded30) | Some conjectures about ranks of elliptic curves over ℚ — rank ranksunbounded30 | open | Algebraic Geometry, Number Theory |  |  |
+| 167 | [`EllipticCurveRank.WeierstrassCurve.thirty_le_rank_ranksunbounded30`](https://lefttosolve.com/p/EllipticCurveRank.WeierstrassCurve.thirty_le_rank_ranksunbounded30) | Some conjectures about ranks of elliptic curves over ℚ — thirty le rank ranksunbounded30 | known | Algebraic Geometry, Number Theory |  |  |
+| 168 | [`EllipticCurveRank.WeierstrassCurve.thirtyone_le_rank_claudeAlpogeHowell31`](https://lefttosolve.com/p/EllipticCurveRank.WeierstrassCurve.thirtyone_le_rank_claudeAlpogeHowell31) | Some conjectures about ranks of elliptic curves over ℚ — thirtyone le rank claudeAlpogeHowell31 | known | Algebraic Geometry, Number Theory |  |  |
+| 169 | [`EllipticCurveRank.WeierstrassCurve.twentyeight_le_rank_elkies28`](https://lefttosolve.com/p/EllipticCurveRank.WeierstrassCurve.twentyeight_le_rank_elkies28) | Some conjectures about ranks of elliptic curves over ℚ — twentyeight le rank elkies28 | known | Algebraic Geometry, Number Theory |  |  |
+| 170 | [`EllipticCurveRank.WeierstrassCurve.twentynine_le_rank_elkiesKlagsbrun29`](https://lefttosolve.com/p/EllipticCurveRank.WeierstrassCurve.twentynine_le_rank_elkiesKlagsbrun29) | Some conjectures about ranks of elliptic curves over ℚ — twentynine le rank elkiesKlagsbrun29 | known | Algebraic Geometry, Number Theory |  |  |
+| 171 | [`EllipticDivisibilitySequence.einsiedler_everest_ward_finite_primes`](https://lefttosolve.com/p/EllipticDivisibilitySequence.einsiedler_everest_ward_finite_primes) | Prime values and primitive divisors in elliptic divisibility sequences — einsiedler everest ward finite primes | open | Algebraic Geometry, Number Theory |  |  |
+| 172 | [`EllipticDivisibilitySequence.silverman_eds_primitive_prime_divisors`](https://lefttosolve.com/p/EllipticDivisibilitySequence.silverman_eds_primitive_prime_divisors) | Prime values and primitive divisors in elliptic divisibility sequences — silverman eds primitive prime divisors | known | Algebraic Geometry, Number Theory |  |  |
+| 173 | [`Emirp.infinitude_question`](https://lefttosolve.com/p/Emirp.infinitude_question) | Emirps | open | Number Theory |  |  |
+| 174 | [`ErdosMoser.erdos_moser_conjecture`](https://lefttosolve.com/p/ErdosMoser.erdos_moser_conjecture) | The Erdős–Moser equation | open | Number Theory |  |  |
+| 175 | [`ErdosUlamProblem.erdos_ulam_problem`](https://lefttosolve.com/p/ErdosUlamProblem.erdos_ulam_problem) | The Erdős–Ulam problem (Ulam 1945). | open | Convex & Discrete Geometry, Geometry |  |  |
+| 176 | [`ErdosUlamProblem.erdos_ulam_problem.variants.solymosi_de_zeeuw`](https://lefttosolve.com/p/ErdosUlamProblem.erdos_ulam_problem.variants.solymosi_de_zeeuw) | The Erdős–Ulam problem — solymosi de zeeuw | known | Convex & Discrete Geometry, Geometry |  |  |
+| 177 | [`EswarathasanLevineConjecture.eswarathasan_levine_harmonic_conjecture`](https://lefttosolve.com/p/EswarathasanLevineConjecture.eswarathasan_levine_harmonic_conjecture) | Eswarathasan–Levine conjectures on harmonic numerators — eswarathasan levine harmonic conjecture | open | Number Theory |  |  |
+| 178 | [`EswarathasanLevineConjecture.eswarathasan_levine_harmonic_primes_infinite`](https://lefttosolve.com/p/EswarathasanLevineConjecture.eswarathasan_levine_harmonic_primes_infinite) | Eswarathasan–Levine conjectures on harmonic numerators — eswarathasan levine harmonic primes infinite | open | Number Theory |  |  |
+| 179 | [`EswarathasanLevineConjecture.eswarathasan_levine_three_elements_subset`](https://lefttosolve.com/p/EswarathasanLevineConjecture.eswarathasan_levine_three_elements_subset) | Eswarathasan–Levine conjectures on harmonic numerators — eswarathasan levine three elements subset | known | Number Theory |  |  |
+| 180 | [`EswarathasanLevineConjecture.harmonicNumDivisibleSet_two_empty`](https://lefttosolve.com/p/EswarathasanLevineConjecture.harmonicNumDivisibleSet_two_empty) | Eswarathasan–Levine conjectures on harmonic numerators — harmonicNumDivisibleSet two empty | warmup | Number Theory |  |  |
+| 181 | [`EuclidNumbers.euclid_numbers_are_square_free`](https://lefttosolve.com/p/EuclidNumbers.euclid_numbers_are_square_free) | Euclid Numbers conjecture — euclid numbers are square free | open | Number Theory |  |  |
+| 182 | [`EuclidNumbers.infinite_prime_euclid_numbers`](https://lefttosolve.com/p/EuclidNumbers.infinite_prime_euclid_numbers) | Euclid Numbers conjecture — infinite prime euclid numbers | open | Number Theory |  |  |
+| 183 | [`EulerBrick.cuboidThree`](https://lefttosolve.com/p/EulerBrick.cuboidThree) | Open questions regarding the existence of Euler bricks — cuboidThree | open | Field Theory |  |  |
+| 184 | [`EulerBrick.cuboidTwo`](https://lefttosolve.com/p/EulerBrick.cuboidTwo) | Open questions regarding the existence of Euler bricks — cuboidTwo | open | Field Theory |  |  |
+| 185 | [`EulerBrick.cuboid_perfect_euler_brick`](https://lefttosolve.com/p/EulerBrick.cuboid_perfect_euler_brick) | Open questions regarding the existence of Euler bricks — cuboid perfect euler brick | known | Field Theory |  |  |
+| 186 | [`EulerBrick.four_dim_euler_brick_existence`](https://lefttosolve.com/p/EulerBrick.four_dim_euler_brick_existence) | Open questions regarding the existence of Euler bricks — four dim euler brick existence | open | Number Theory |  |  |
+| 187 | [`EulerBrick.n_dim_euler_brick_existence`](https://lefttosolve.com/p/EulerBrick.n_dim_euler_brick_existence) | Open questions regarding the existence of Euler bricks — n dim euler brick existence | open | Number Theory |  |  |
+| 188 | [`EulerBrick.perfect_euler_brick_existence`](https://lefttosolve.com/p/EulerBrick.perfect_euler_brick_existence) | Open questions regarding the existence of Euler bricks — perfect euler brick existence | open | Number Theory |  |  |
+| 189 | [`EulerSumOfPowers.eulers_sum_of_powers_conjecture`](https://lefttosolve.com/p/EulerSumOfPowers.eulers_sum_of_powers_conjecture) | Euler's sum of powers conjecture | open | Number Theory |  |  |
+| 190 | [`Exponentials.four_exponentials_conjecture`](https://lefttosolve.com/p/Exponentials.four_exponentials_conjecture) | Four exponentials conjecture | open | Special Functions |  |  |
+| 191 | [`Exponentials.two_pow_three_pow_transcendental`](https://lefttosolve.com/p/Exponentials.two_pow_three_pow_transcendental) | Exponentials conjectures and theorems | open | Number Theory |  |  |
+| 192 | [`FactorialPrime.infinitely_many_factorial_primes`](https://lefttosolve.com/p/FactorialPrime.infinitely_many_factorial_primes) | Factorial primes | open | Number Theory |  |  |
+| 193 | [`FeitThompsonPrimeConjecture.feit_thompson_primes`](https://lefttosolve.com/p/FeitThompsonPrimeConjecture.feit_thompson_primes) | Feit-Thompson conjecture on primes | open | Number Theory |  |  |
+| 194 | [`Fermat.exists_fermat_not_squarefree`](https://lefttosolve.com/p/Fermat.exists_fermat_not_squarefree) | Open questions about Fermat numbers — exists fermat not squarefree | open | Number Theory |  |  |
+| 195 | [`Fermat.fermat_number_are_composite`](https://lefttosolve.com/p/Fermat.fermat_number_are_composite) | Open questions about Fermat numbers — fermat number are composite | open | Number Theory |  |  |
+| 196 | [`Fermat.infinite_fermat_composite`](https://lefttosolve.com/p/Fermat.infinite_fermat_composite) | Open questions about Fermat numbers — infinite fermat composite | open | Number Theory |  |  |
+| 197 | [`Fermat.infinite_fermat_primes`](https://lefttosolve.com/p/Fermat.infinite_fermat_primes) | Open questions about Fermat numbers — infinite fermat primes | open | Number Theory |  |  |
+| 198 | [`FermatCatalanConjecture.fermat_catalan`](https://lefttosolve.com/p/FermatCatalanConjecture.fermat_catalan) | Fermat-Catalan conjecture | open | Number Theory |  |  |
+| 199 | [`FermatCatalanConjecture.fermat_catalan.variants.darmon_granville`](https://lefttosolve.com/p/FermatCatalanConjecture.fermat_catalan.variants.darmon_granville) | Fermat-Catalan conjecture — darmon granville | known | Number Theory |  |  |
+| 200 | [`FibonacciPrimes.fib_primes_infinite`](https://lefttosolve.com/p/FibonacciPrimes.fib_primes_infinite) | Fibonacci Primes | open | Number Theory |  |  |
+| 201 | [`FibonacciPrimes.fib_primes_infinite.variant`](https://lefttosolve.com/p/FibonacciPrimes.fib_primes_infinite.variant) | Fibonacci Primes — variant | open | Number Theory |  |  |
+| 202 | [`Firoozbakht.firoozbakht_conjecture`](https://lefttosolve.com/p/Firoozbakht.firoozbakht_conjecture) | Firoozbakht's conjecture — firoozbakht conjecture | open | Number Theory |  |  |
+| 203 | [`Firoozbakht.firoozbakht_conjecture_consequence`](https://lefttosolve.com/p/Firoozbakht.firoozbakht_conjecture_consequence) | Firoozbakht's conjecture — firoozbakht conjecture consequence | known | Number Theory |  |  |
+| 204 | [`FlintCooksonHills.cookson_hills_series_converges`](https://lefttosolve.com/p/FlintCooksonHills.cookson_hills_series_converges) | Convergence of the Flint Hills and Cookson Hills series — cookson hills series converges | open | Sequences & Series |  |  |
+| 205 | [`FlintCooksonHills.flint_hills_series_converges`](https://lefttosolve.com/p/FlintCooksonHills.flint_hills_series_converges) | Convergence of the Flint Hills and Cookson Hills series — flint hills series converges | open | Sequences & Series |  |  |
+| 206 | [`FortuneConjecture.fortune_conjecture`](https://lefttosolve.com/p/FortuneConjecture.fortune_conjecture) | Fortune's Conjecture | open | Number Theory |  |  |
+| 207 | [`Fuglede.FugledeConjecture.variants.dim_1`](https://lefttosolve.com/p/Fuglede.FugledeConjecture.variants.dim_1) | Fuglede's conjecture — dim 1 | open | Functional Analysis, Harmonic Analysis, Operator Theory |  |  |
+| 208 | [`Fuglede.FugledeConjecture.variants.dim_2`](https://lefttosolve.com/p/Fuglede.FugledeConjecture.variants.dim_2) | Fuglede's conjecture — dim 2 | open | Functional Analysis, Harmonic Analysis, Operator Theory |  |  |
+| 209 | [`Fuglede.FugledeConjecture.variants.dim_3_or_higher`](https://lefttosolve.com/p/Fuglede.FugledeConjecture.variants.dim_3_or_higher) | Fuglede's conjecture — dim 3 or higher | known | Functional Analysis, Harmonic Analysis, Operator Theory |  | yes |
+| 210 | [`GapConjecture.gap_conjecture`](https://lefttosolve.com/p/GapConjecture.gap_conjecture) | Gap conjecture | open | Group Theory |  |  |
+| 211 | [`GaussCircleProblem.error_isBigO`](https://lefttosolve.com/p/GaussCircleProblem.error_isBigO) | Gauss circle problem — error isBigO | open | Number Theory |  |  |
+| 212 | [`GaussCircleProblem.error_le`](https://lefttosolve.com/p/GaussCircleProblem.error_le) | Gauss circle problem — error le | known | Number Theory |  | yes |
+| 213 | [`GaussCircleProblem.error_not_isLittleO`](https://lefttosolve.com/p/GaussCircleProblem.error_not_isLittleO) | Gauss circle problem — error not isLittleO | known | Number Theory |  | yes |
+| 214 | [`GaussCircleProblem.exact_form_floor`](https://lefttosolve.com/p/GaussCircleProblem.exact_form_floor) | Gauss circle problem — exact form floor | known | Number Theory |  |  |
+| 215 | [`Gilbreath.gilbreath_conjecture`](https://lefttosolve.com/p/Gilbreath.gilbreath_conjecture) | Gilbreath's conjecture | open | Number Theory |  |  |
+| 216 | [`GoldbachConjecture.goldbach`](https://lefttosolve.com/p/GoldbachConjecture.goldbach) | Goldbach's conjecture | open | Number Theory |  |  |
+| 217 | [`GoodmanConjecture.goodman_conjecture`](https://lefttosolve.com/p/GoodmanConjecture.goodman_conjecture) | Goodman's conjecture. | open | Complex Analysis |  |  |
+| 218 | [`Goormaghtigh.goormaghtigh_conjecture`](https://lefttosolve.com/p/Goormaghtigh.goormaghtigh_conjecture) | The Goormaghtigh conjecture | open | Number Theory |  |  |
+| 219 | [`GracefulLabeling.graceful_tree_conjecture`](https://lefttosolve.com/p/GracefulLabeling.graceful_tree_conjecture) | Graceful Tree Conjecture (Ringel–Kotzig conjecture) | open | Combinatorics |  |  |
+| 220 | [`Grimm.grimm_conjecture`](https://lefttosolve.com/p/Grimm.grimm_conjecture) | Grimm's Conjecture | open | Number Theory |  |  |
+| 221 | [`Grimm.grimm_conjecture_weak`](https://lefttosolve.com/p/Grimm.grimm_conjecture_weak) | Grimm's Conjecture, weaker version | open | Number Theory |  |  |
+| 222 | [`GromovPolynomialGrowth.GromovPolynomialGrowthTheorem`](https://lefttosolve.com/p/GromovPolynomialGrowth.GromovPolynomialGrowthTheorem) | Gromov's Polynomial Growth Theorem | known | Group Theory |  |  |
+| 223 | [`GyarfasSumnerConjecture.gyarfas_sumner_conjecture`](https://lefttosolve.com/p/GyarfasSumnerConjecture.gyarfas_sumner_conjecture) | The Gyárfás–Sumner conjecture (Gyárfás 1975, Sumner 1981). | open | Combinatorics |  |  |
+| 224 | [`GyarfasSumnerConjecture.gyarfas_sumner_conjecture.variants.path`](https://lefttosolve.com/p/GyarfasSumnerConjecture.gyarfas_sumner_conjecture.variants.path) | Paths (Gyárfás 1987). | known | Combinatorics |  | yes |
+| 225 | [`GyarfasSumnerConjecture.gyarfas_sumner_conjecture.variants.radius_two`](https://lefttosolve.com/p/GyarfasSumnerConjecture.gyarfas_sumner_conjecture.variants.radius_two) | Trees of radius two (Kierstead–Penrice 1994). | known | Combinatorics |  |  |
+| 226 | [`Hadamard.HadamardConjecture`](https://lefttosolve.com/p/Hadamard.HadamardConjecture) | Hadamard's conjecture | open | Linear Algebra |  |  |
+| 227 | [`Hadamard.HadamardConjecture.variants.167`](https://lefttosolve.com/p/Hadamard.HadamardConjecture.variants.167) | Hadamard's conjecture — «167» | open | Linear Algebra |  |  |
+| 228 | [`Hadamard.HadamardConjecture.variants.first_cases`](https://lefttosolve.com/p/Hadamard.HadamardConjecture.variants.first_cases) | Hadamard's conjecture — first cases | known | Linear Algebra |  |  |
+| 229 | [`HajosConjecture.hajos_conjecture`](https://lefttosolve.com/p/HajosConjecture.hajos_conjecture) | Hajós' conjecture (1961) — disproved. | known | Combinatorics |  |  |
+| 230 | [`HajosConjecture.hajos_conjecture.variants.catlin`](https://lefttosolve.com/p/HajosConjecture.hajos_conjecture.variants.catlin) | Catlin (1979): counterexamples for every $k \\ge 7$. | known | Combinatorics |  | yes |
+| 231 | [`HajosConjecture.hajos_conjecture.variants.five_six`](https://lefttosolve.com/p/HajosConjecture.hajos_conjecture.variants.five_six) | The cases $k = 5$ and $k = 6$ remain open. | open | Combinatorics |  |  |
+| 232 | [`HajosConjecture.hajos_conjecture.variants.le_four`](https://lefttosolve.com/p/HajosConjecture.hajos_conjecture.variants.le_four) | The cases $k \\le 4$ (Dirac 1952). | known | Combinatorics |  | yes |
+| 233 | [`Hall.danilov`](https://lefttosolve.com/p/Hall.danilov) | Hall's conjecture — danilov | known | Number Theory |  | yes |
+| 234 | [`Hall.hall_conjecture`](https://lefttosolve.com/p/Hall.hall_conjecture) | Hall's conjecture — hall conjecture | open | Number Theory |  |  |
+| 235 | [`Hall.weak_hall_conjecture`](https://lefttosolve.com/p/Hall.weak_hall_conjecture) | Hall's conjecture — weak hall conjecture | open | Number Theory |  |  |
+| 236 | [`HardyLittlewood.first_hardy_littlewood_conjecture`](https://lefttosolve.com/p/HardyLittlewood.first_hardy_littlewood_conjecture) | First Hardy–Littlewood conjecture — first hardy littlewood conjecture | open | Number Theory |  |  |
+| 237 | [`HardyLittlewood.not_first_and_secondHardyLittlewoodConjecture`](https://lefttosolve.com/p/HardyLittlewood.not_first_and_secondHardyLittlewoodConjecture) | First Hardy–Littlewood conjecture — not first and secondHardyLittlewoodConjecture | known | Number Theory |  |  |
+| 238 | [`HardyLittlewood.second_hardy_littlewood_conjecture`](https://lefttosolve.com/p/HardyLittlewood.second_hardy_littlewood_conjecture) | First Hardy–Littlewood conjecture — second hardy littlewood conjecture | open | Number Theory |  |  |
+| 239 | [`HasseWeil.exists_hasAnalyticContinuation`](https://lefttosolve.com/p/HasseWeil.exists_hasAnalyticContinuation) | The Hasse--Weil conjecture for elliptic curves — exists hasAnalyticContinuation | open | Algebraic Geometry, Number Theory |  |  |
+| 240 | [`HasseWeil.exists_hasAnalyticContinuation_rat`](https://lefttosolve.com/p/HasseWeil.exists_hasAnalyticContinuation_rat) | The Hasse--Weil conjecture for elliptic curves — exists hasAnalyticContinuation rat | known | Algebraic Geometry, Number Theory |  |  |
+| 241 | [`HasseWeil.exists_hasMeromorphicContinuation`](https://lefttosolve.com/p/HasseWeil.exists_hasMeromorphicContinuation) | The Hasse--Weil conjecture for elliptic curves — exists hasMeromorphicContinuation | open | Algebraic Geometry, Number Theory |  |  |
+| 242 | [`HedetniemiConjecture.hedetniemi_conjecture`](https://lefttosolve.com/p/HedetniemiConjecture.hedetniemi_conjecture) | Hedetniemi's conjecture (1966) — disproved. | known | Combinatorics |  |  |
+| 243 | [`HedetniemiConjecture.hedetniemi_conjecture.variants.el_zahar_sauer`](https://lefttosolve.com/p/HedetniemiConjecture.hedetniemi_conjecture.variants.el_zahar_sauer) | El-Zahar–Sauer (1985): the conjecture holds when `min {χ(G), χ(H)} ≤ 4`. | known | Combinatorics |  | yes |
+| 244 | [`HedetniemiConjecture.hedetniemi_conjecture.variants.shitov`](https://lefttosolve.com/p/HedetniemiConjecture.hedetniemi_conjecture.variants.shitov) | Shitov (2019): the conjecture fails. | known | Combinatorics |  | yes |
+| 245 | [`HyperperfectNumber.infinitely_many_hyperperfect_numbers`](https://lefttosolve.com/p/HyperperfectNumber.infinitely_many_hyperperfect_numbers) | Hyperperfect numbers — infinitely many hyperperfect numbers | open | Number Theory |  |  |
+| 246 | [`HyperperfectNumber.mccranie_odd_hyperperfect_conjecture`](https://lefttosolve.com/p/HyperperfectNumber.mccranie_odd_hyperperfect_conjecture) | Hyperperfect numbers — mccranie odd hyperperfect conjecture | open | Number Theory |  |  |
+| 247 | [`HyperperfectNumber.minoli_bear_hyperperfect_conjecture`](https://lefttosolve.com/p/HyperperfectNumber.minoli_bear_hyperperfect_conjecture) | Hyperperfect numbers — minoli bear hyperperfect conjecture | open | Number Theory |  |  |
+| 248 | [`HyperperfectNumber.two_hyperperfect_characterization`](https://lefttosolve.com/p/HyperperfectNumber.two_hyperperfect_characterization) | Hyperperfect numbers — two hyperperfect characterization | known | Number Theory |  |  |
+| 249 | [`Idoneal.idoneal_numbers_completeness`](https://lefttosolve.com/p/Idoneal.idoneal_numbers_completeness) | Idoneal numbers completeness conjecture | known | Number Theory |  |  |
+| 250 | [`InscribedSquare.exists_inscribed_rectangle`](https://lefttosolve.com/p/InscribedSquare.exists_inscribed_rectangle) | Inscribed square problem — exists inscribed rectangle | known | Geometry |  |  |
+| 251 | [`InscribedSquare.exists_inscribed_rectangle_of_smooth`](https://lefttosolve.com/p/InscribedSquare.exists_inscribed_rectangle_of_smooth) | Inscribed square problem — exists inscribed rectangle of smooth | known | Geometry |  |  |
+| 252 | [`InscribedSquare.exists_inscribed_square_of_C2`](https://lefttosolve.com/p/InscribedSquare.exists_inscribed_square_of_C2) | Inscribed square problem — exists inscribed square of C2 | known | Geometry |  |  |
+| 253 | [`InscribedSquare.inscribed_rectangle_problem`](https://lefttosolve.com/p/InscribedSquare.inscribed_rectangle_problem) | Inscribed rectangle problem | open | Geometry |  |  |
+| 254 | [`InscribedSquare.inscribed_square_problem`](https://lefttosolve.com/p/InscribedSquare.inscribed_square_problem) | Inscribed square problem | open | Geometry |  |  |
+| 255 | [`InvariantSubspaceProblem.Invariant_subspace_problem`](https://lefttosolve.com/p/InvariantSubspaceProblem.Invariant_subspace_problem) | Invariant Subspace Problem | open | Operator Theory |  |  |
+| 256 | [`InverseGalois.inverse_galois_problem`](https://lefttosolve.com/p/InverseGalois.inverse_galois_problem) | Inverse Galois problem | open | Field Theory |  |  |
+| 257 | [`InverseGalois.inverse_galois_problem.variants.abelian`](https://lefttosolve.com/p/InverseGalois.inverse_galois_problem.variants.abelian) | Inverse Galois problem — abelian | known | Field Theory |  | yes |
+| 258 | [`InverseGalois.inverse_galois_problem.variants.complex_function_field`](https://lefttosolve.com/p/InverseGalois.inverse_galois_problem.variants.complex_function_field) | Inverse Galois problem — complex function field | known | Field Theory |  |  |
+| 259 | [`InverseGalois.inverse_galois_problem.variants.complex_rational_functions`](https://lefttosolve.com/p/InverseGalois.inverse_galois_problem.variants.complex_rational_functions) | Inverse Galois problem — complex rational functions | known | Field Theory |  |  |
+| 260 | [`InverseGalois.inverse_galois_problem.variants.cyclic`](https://lefttosolve.com/p/InverseGalois.inverse_galois_problem.variants.cyclic) | Inverse Galois problem — cyclic | known | Field Theory |  | yes |
+| 261 | [`Irrational.algebraicIndependent_e_pi`](https://lefttosolve.com/p/Irrational.algebraicIndependent_e_pi) | Open questions on irrationality of numbers — algebraicIndependent e pi | open | Special Functions |  |  |
+| 262 | [`Irrational.irrational_e_plus_pi`](https://lefttosolve.com/p/Irrational.irrational_e_plus_pi) | Open questions on irrationality of numbers — irrational e plus pi | open | Special Functions |  |  |
+| 263 | [`Irrational.irrational_e_times_pi`](https://lefttosolve.com/p/Irrational.irrational_e_times_pi) | Open questions on irrationality of numbers — irrational e times pi | open | Special Functions |  |  |
+| 264 | [`Irrational.irrational_e_to_e`](https://lefttosolve.com/p/Irrational.irrational_e_to_e) | Open questions on irrationality of numbers — irrational e to e | open | Special Functions |  |  |
+| 265 | [`Irrational.irrational_eulerMascheroniConstant`](https://lefttosolve.com/p/Irrational.irrational_eulerMascheroniConstant) | Open questions on irrationality of numbers — irrational eulerMascheroniConstant | open | Special Functions |  |  |
+| 266 | [`Irrational.irrational_ln_pi`](https://lefttosolve.com/p/Irrational.irrational_ln_pi) | Open questions on irrationality of numbers — irrational ln pi | open | Special Functions |  |  |
+| 267 | [`Irrational.irrational_pi_to_e`](https://lefttosolve.com/p/Irrational.irrational_pi_to_e) | Open questions on irrationality of numbers — irrational pi to e | open | Special Functions |  |  |
+| 268 | [`Irrational.irrational_pi_to_pi`](https://lefttosolve.com/p/Irrational.irrational_pi_to_pi) | Open questions on irrationality of numbers — irrational pi to pi | open | Special Functions |  |  |
+| 269 | [`JacobianConjecture.jacobian_conjecture_two_variables`](https://lefttosolve.com/p/JacobianConjecture.jacobian_conjecture_two_variables) | Jacobian conjecture | open | Algebraic Geometry |  |  |
+| 270 | [`Jacobson.jacobson_conjecture`](https://lefttosolve.com/p/Jacobson.jacobson_conjecture) | Jacobson Conjecture | open | Associative Rings |  |  |
+| 271 | [`Jacobson.jacobson_conjecture_of_comm_ring`](https://lefttosolve.com/p/Jacobson.jacobson_conjecture_of_comm_ring) | Jacobson Conjecture — jacobson conjecture of comm ring | warmup | Associative Rings, Commutative Algebra |  | yes |
+| 272 | [`Jacobson.jacobson_conjecture_of_right_noetherian`](https://lefttosolve.com/p/Jacobson.jacobson_conjecture_of_right_noetherian) | Jacobson Conjecture — jacobson conjecture of right noetherian | known | Associative Rings |  |  |
+| 273 | [`JugglerConjecture.juggler_conjecture`](https://lefttosolve.com/p/JugglerConjecture.juggler_conjecture) | Juggler conjecture | open | Dynamical Systems, Number Theory |  |  |
+| 274 | [`Kakeya.kakeya_2d`](https://lefttosolve.com/p/Kakeya.kakeya_2d) | Kakeya problem — kakeya 2d | known | Harmonic Analysis |  |  |
+| 275 | [`Kakeya.kakeya_3d`](https://lefttosolve.com/p/Kakeya.kakeya_3d) | Kakeya problem — kakeya 3d | known | Harmonic Analysis |  |  |
+| 276 | [`Kakeya.kakeya_finite`](https://lefttosolve.com/p/Kakeya.kakeya_finite) | Kakeya problem — kakeya finite | known | Convex & Discrete Geometry |  |  |
+| 277 | [`Kakeya.kakeya_set_conjecture`](https://lefttosolve.com/p/Kakeya.kakeya_set_conjecture) | Kakeya problem — kakeya set conjecture | open | Harmonic Analysis |  |  |
+| 278 | [`Kaplansky.UnitConjecture.counterexamples.i`](https://lefttosolve.com/p/Kaplansky.UnitConjecture.counterexamples.i) | Kaplansky's Conjectures — i | known | Associative Rings, Group Theory |  |  |
+| 279 | [`Kaplansky.UnitConjecture.counterexamples.ii`](https://lefttosolve.com/p/Kaplansky.UnitConjecture.counterexamples.ii) | Kaplansky's Conjectures — ii | known | Associative Rings, Group Theory |  |  |
+| 280 | [`Kaplansky.direct_finiteness_conjecture`](https://lefttosolve.com/p/Kaplansky.direct_finiteness_conjecture) | Kaplansky's direct finiteness conjecture | known | Associative Rings, Group Theory |  |  |
+| 281 | [`Kaplansky.direct_finiteness_conjecture.variants.char_two`](https://lefttosolve.com/p/Kaplansky.direct_finiteness_conjecture.variants.char_two) | Kaplansky's Conjectures — char two | known | Associative Rings, Group Theory |  | yes |
+| 282 | [`Kaplansky.direct_finiteness_conjecture.variants.char_zero`](https://lefttosolve.com/p/Kaplansky.direct_finiteness_conjecture.variants.char_zero) | Kaplansky's Conjectures — char zero | known | Associative Rings, Group Theory |  | yes |
+| 283 | [`Kaplansky.idempotent_conjecture`](https://lefttosolve.com/p/Kaplansky.idempotent_conjecture) | The idempotent conjecture | open | Associative Rings, Group Theory |  |  |
+| 284 | [`Kaplansky.promislow_group_is_torsionfree`](https://lefttosolve.com/p/Kaplansky.promislow_group_is_torsionfree) | Kaplansky's Conjectures | warmup | Group Theory |  |  |
+| 285 | [`KeithNumber.keith_numbers_infinite`](https://lefttosolve.com/p/KeithNumber.keith_numbers_infinite) | Keith numbers — keith numbers infinite | open | Number Theory |  |  |
+| 286 | [`KeithNumber.klazar_luca_keith_counting_bound`](https://lefttosolve.com/p/KeithNumber.klazar_luca_keith_counting_bound) | Keith numbers — klazar luca keith counting bound | known | Number Theory |  |  |
+| 287 | [`Koethe.KotheConjecture`](https://lefttosolve.com/p/Koethe.KotheConjecture) | Köthe conjecture — KotheConjecture | open | Associative Rings |  |  |
+| 288 | [`Koethe.KotherConjecture.variants.general_matrix`](https://lefttosolve.com/p/Koethe.KotherConjecture.variants.general_matrix) | Köthe conjecture — general matrix | open | Associative Rings |  |  |
+| 289 | [`Koethe.KotherConjecture.variants.le_KotherRadical`](https://lefttosolve.com/p/Koethe.KotherConjecture.variants.le_KotherRadical) | Köthe conjecture — le KotherRadical | open | Associative Rings |  |  |
+| 290 | [`Koethe.KotherConjecture.variants.matrixOver_KotherRadical`](https://lefttosolve.com/p/Koethe.KotherConjecture.variants.matrixOver_KotherRadical) | Köthe conjecture — matrixOver KotherRadical | open | Associative Rings |  |  |
+| 291 | [`Koethe.KotherConjecture.variants.two_by_two_matrix`](https://lefttosolve.com/p/Koethe.KotherConjecture.variants.two_by_two_matrix) | Köthe conjecture — two by two matrix | open | Associative Rings |  |  |
+| 292 | [`Koethe.amitsur_conjecture`](https://lefttosolve.com/p/Koethe.amitsur_conjecture) | Köthe conjecture — amitsur conjecture | known | Associative Rings |  |  |
+| 293 | [`KummerVandiver.kummer_vandiver`](https://lefttosolve.com/p/KummerVandiver.kummer_vandiver) | Kummer–Vandiver conjecture | open | Number Theory |  |  |
+| 294 | [`LanderParkinSelfridge.lander_parkin_selfridge`](https://lefttosolve.com/p/LanderParkinSelfridge.lander_parkin_selfridge) | Lander, Parkin, and Selfridge Conjecture | open | Number Theory |  |  |
+| 295 | [`LanderParkinSelfridge.lander_parkin_selfridge.variants.five_three`](https://lefttosolve.com/p/LanderParkinSelfridge.lander_parkin_selfridge.variants.five_three) | Lander, Parkin, and Selfridge Conjecture — five three | open | Number Theory |  |  |
+| 296 | [`LebesgueNagell.lebesgue_nagell`](https://lefttosolve.com/p/LebesgueNagell.lebesgue_nagell) | Lebesgue-Nagell Equation Conjecture | open | Number Theory |  |  |
+| 297 | [`LegendreConjecture.legendre_conjecture`](https://lefttosolve.com/p/LegendreConjecture.legendre_conjecture) | Legendre's conjecture | open | Number Theory |  |  |
+| 298 | [`LegendreConjecture.legendre_conjecture.ferreira_large_n`](https://lefttosolve.com/p/LegendreConjecture.legendre_conjecture.ferreira_large_n) | Legendre's conjecture — ferreira large n | known | Number Theory |  |  |
+| 299 | [`LehmerMahlerMeasureProblem.lehmer_mahler_measure_problem`](https://lefttosolve.com/p/LehmerMahlerMeasureProblem.lehmer_mahler_measure_problem) | Lehmer's Mahler measure problem | open | Number Theory |  |  |
+| 300 | [`LehmerMahlerMeasureProblem.lehmer_mahler_measure_problem.variants.best`](https://lefttosolve.com/p/LehmerMahlerMeasureProblem.lehmer_mahler_measure_problem.variants.best) | Lehmer's Mahler measure problem — best | open | Number Theory |  |  |
+| 301 | [`LehmerMahlerMeasureProblem.lehmer_mahler_measure_problem.variants.not_reciprocal`](https://lefttosolve.com/p/LehmerMahlerMeasureProblem.lehmer_mahler_measure_problem.variants.not_reciprocal) | Lehmer's Mahler measure problem — not reciprocal | known | Number Theory |  | yes |
+| 302 | [`LehmerMahlerMeasureProblem.lehmer_mahler_measure_problem.variants.odd`](https://lefttosolve.com/p/LehmerMahlerMeasureProblem.lehmer_mahler_measure_problem.variants.odd) | Lehmer's Mahler measure problem — odd | known | Number Theory |  | yes |
+| 303 | [`LehmerTotient.lehmer_totient`](https://lefttosolve.com/p/LehmerTotient.lehmer_totient) | Lehmer's totient problem | open | Number Theory |  |  |
+| 304 | [`LeinsterGroup.abelian_is_leinster_iff_cyclic_perfect`](https://lefttosolve.com/p/LeinsterGroup.abelian_is_leinster_iff_cyclic_perfect) | Leinster Groups — abelian is leinster iff cyclic perfect | known | Group Theory |  |  |
+| 305 | [`LeinsterGroup.cyclic_of_perfect_is_leinster`](https://lefttosolve.com/p/LeinsterGroup.cyclic_of_perfect_is_leinster) | Leinster Groups — cyclic of perfect is leinster | warmup | Group Theory |  |  |
+| 306 | [`LeinsterGroup.dihedral_is_leinster_iff_odd_perfect`](https://lefttosolve.com/p/LeinsterGroup.dihedral_is_leinster_iff_odd_perfect) | Leinster Groups — dihedral is leinster iff odd perfect | known | Group Theory |  |  |
+| 307 | [`LeinsterGroup.exists_nonabelian_leinster_group`](https://lefttosolve.com/p/LeinsterGroup.exists_nonabelian_leinster_group) | Leinster Groups — exists nonabelian leinster group | known | Group Theory |  |  |
+| 308 | [`LeinsterGroup.infinitely_many_leinster_groups`](https://lefttosolve.com/p/LeinsterGroup.infinitely_many_leinster_groups) | Conjecture | open | Group Theory |  |  |
+| 309 | [`Lemoine.lemoine_conjecture`](https://lefttosolve.com/p/Lemoine.lemoine_conjecture) | Lemoine's conjectures — lemoine conjecture | open | Number Theory |  |  |
+| 310 | [`Lemoine.lemoine_conjecture_extension`](https://lefttosolve.com/p/Lemoine.lemoine_conjecture_extension) | Lemoine's conjectures — lemoine conjecture extension | open | Number Theory |  |  |
+| 311 | [`LinearArboricityConjecture.linear_arboricity_conjecture`](https://lefttosolve.com/p/LinearArboricityConjecture.linear_arboricity_conjecture) | The linear arboricity conjecture | open | Combinatorics |  |  |
+| 312 | [`LinearArboricityConjecture.linear_arboricity_conjecture.variants.alon`](https://lefttosolve.com/p/LinearArboricityConjecture.linear_arboricity_conjecture.variants.alon) | Alon (1988): the linear arboricity conjecture holds asymptotically. | known | Combinatorics |  |  |
+| 313 | [`LinearArboricityConjecture.linear_arboricity_conjecture.variants.cubic`](https://lefttosolve.com/p/LinearArboricityConjecture.linear_arboricity_conjecture.variants.cubic) | Cubic graphs have linear arboricity two | known | Combinatorics |  | yes |
+| 314 | [`LinearArboricityConjecture.linear_arboricity_conjecture.variants.regular`](https://lefttosolve.com/p/LinearArboricityConjecture.linear_arboricity_conjecture.variants.regular) | The linear arboricity conjecture for regular graphs. | open | Combinatorics |  |  |
+| 315 | [`LittlewoodConjecture.littlewood_conjecture`](https://lefttosolve.com/p/LittlewoodConjecture.littlewood_conjecture) | Littlewood conjectures | open | Number Theory |  |  |
+| 316 | [`LittlewoodConjecture.padic_littlewood_conjecture`](https://lefttosolve.com/p/LittlewoodConjecture.padic_littlewood_conjecture) | Littlewood conjectures — padic littlewood conjecture | open | Number Theory |  |  |
+| 317 | [`LocalUniformization.local_uniformization`](https://lefttosolve.com/p/LocalUniformization.local_uniformization) | Local uniformization in positive characteristic. | open | Algebraic Geometry, Commutative Algebra, Field Theory |  |  |
+| 318 | [`LocalUniformization.local_uniformization_after_finite_extension`](https://lefttosolve.com/p/LocalUniformization.local_uniformization_after_finite_extension) | Local uniformization after a finite extension. | known | Algebraic Geometry, Commutative Algebra, Field Theory |  |  |
+| 319 | [`LocalUniformization.local_uniformization_of_charZero`](https://lefttosolve.com/p/LocalUniformization.local_uniformization_of_charZero) | Zariski's local uniformization theorem. | known | Algebraic Geometry, Commutative Algebra, Field Theory |  |  |
+| 320 | [`LocalUniformization.local_uniformization_of_trdeg_le_three`](https://lefttosolve.com/p/LocalUniformization.local_uniformization_of_trdeg_le_three) | Local uniformization | known | Algebraic Geometry, Commutative Algebra, Field Theory |  |  |
+| 321 | [`LonelyRunnerConjecture.lonely_runner_conjecture`](https://lefttosolve.com/p/LonelyRunnerConjecture.lonely_runner_conjecture) | Lonely runner conjecture | open | Number Theory |  |  |
+| 322 | [`LonelyRunnerConjecture.lonely_runner_conjecture.variants.tao_2017`](https://lefttosolve.com/p/LonelyRunnerConjecture.lonely_runner_conjecture.variants.tao_2017) | Theorem 1.3 (Tao, 2017; arXiv:1701.02048). | known | Number Theory |  |  |
+| 323 | [`LovaszConjecture.lovasz_conjecture`](https://lefttosolve.com/p/LovaszConjecture.lovasz_conjecture) | Lovász's conjecture (1970). | open | Combinatorics |  |  |
+| 324 | [`LovaszConjecture.lovasz_conjecture.variants.babai`](https://lefttosolve.com/p/LovaszConjecture.lovasz_conjecture.variants.babai) | Babai (1979): long cycles in vertex-transitive graphs. | known | Combinatorics |  |  |
+| 325 | [`LovaszConjecture.lovasz_conjecture.variants.dense`](https://lefttosolve.com/p/LovaszConjecture.lovasz_conjecture.variants.dense) | Christofides–Hladký–Máthé (2014): Hamiltonian-path corollary of the dense case. | known | Combinatorics |  |  |
+| 326 | [`LovaszPlummerConjecture.sheehan_conjecture`](https://lefttosolve.com/p/LovaszPlummerConjecture.sheehan_conjecture) | Sheehan's conjecture (1977). | open | Combinatorics |  |  |
+| 327 | [`LovaszPlummerConjecture.sheehan_conjecture.variants.thomassen`](https://lefttosolve.com/p/LovaszPlummerConjecture.sheehan_conjecture.variants.thomassen) | Thomassen (1998): regular graphs of large degree. | known | Combinatorics |  |  |
+| 328 | [`LychrelNumbers.isLychrel10_196`](https://lefttosolve.com/p/LychrelNumbers.isLychrel10_196) | Lychrel numbers in base 10 | open | Number Theory |  |  |
+| 329 | [`LychrelNumbers.no_lychrel_numbers_base10`](https://lefttosolve.com/p/LychrelNumbers.no_lychrel_numbers_base10) | Lychrel conjecture (base 10) | open | Number Theory |  |  |
+| 330 | [`MagicSquares.exists_magic_square_squares`](https://lefttosolve.com/p/MagicSquares.exists_magic_square_squares) | Magic Squares — exists magic square squares | open | Number Theory |  |  |
+| 331 | [`MagicSquares.exists_semi_magic_square_cubes`](https://lefttosolve.com/p/MagicSquares.exists_semi_magic_square_cubes) | Magic Squares — exists semi magic square cubes | open | Combinatorics, Number Theory |  |  |
+| 332 | [`Mahler32.mahler_conjecture`](https://lefttosolve.com/p/Mahler32.mahler_conjecture) | Mahler's 3/2 Problem | open | Number Theory |  |  |
+| 333 | [`Mahler32.mahler_conjecture.variants.consequence`](https://lefttosolve.com/p/Mahler32.mahler_conjecture.variants.consequence) | Mahler's 3/2 Problem — consequence | warmup | Number Theory |  |  |
+| 334 | [`Mahler32.mahler_conjecture.variants.flatto_lagarias_pollington`](https://lefttosolve.com/p/Mahler32.mahler_conjecture.variants.flatto_lagarias_pollington) | Mahler's 3/2 Problem — flatto lagarias pollington | known | Number Theory |  | yes |
+| 335 | [`Mandelbrot.MLC`](https://lefttosolve.com/p/Mandelbrot.MLC) | Conjectures about the Mandelbrot and Multibrot sets — MLC | open | Dynamical Systems |  |  |
+| 336 | [`Mandelbrot.MLC_general_exponent`](https://lefttosolve.com/p/Mandelbrot.MLC_general_exponent) | Conjectures about the Mandelbrot and Multibrot sets — MLC general exponent | open | Dynamical Systems |  |  |
+| 337 | [`Mandelbrot.density_of_hyperbolicity`](https://lefttosolve.com/p/Mandelbrot.density_of_hyperbolicity) | Conjectures about the Mandelbrot and Multibrot sets — density of hyperbolicity | open | Dynamical Systems |  |  |
+| 338 | [`Mandelbrot.density_of_hyperbolicity_general_exponent`](https://lefttosolve.com/p/Mandelbrot.density_of_hyperbolicity_general_exponent) | Conjectures about the Mandelbrot and Multibrot sets — density of hyperbolicity general exponent | open | Dynamical Systems |  |  |
+| 339 | [`Mandelbrot.volume_frontier_mandelbrotSet_eq_zero`](https://lefttosolve.com/p/Mandelbrot.volume_frontier_mandelbrotSet_eq_zero) | Conjectures about the Mandelbrot and Multibrot sets — volume frontier mandelbrotSet eq zero | open | Dynamical Systems |  |  |
+| 340 | [`Mandelbrot.volume_frontier_multibrotSet_eq_zero`](https://lefttosolve.com/p/Mandelbrot.volume_frontier_multibrotSet_eq_zero) | Conjectures about the Mandelbrot and Multibrot sets — volume frontier multibrotSet eq zero | open | Dynamical Systems |  |  |
+| 341 | [`MaximalPrimeGap.infinite_maximalPrimeGapIndex`](https://lefttosolve.com/p/MaximalPrimeGap.infinite_maximalPrimeGapIndex) | Shanks's asymptotic conjecture for maximal prime gaps — infinite maximalPrimeGapIndex | warmup | Number Theory |  |  |
+| 342 | [`MaximalPrimeGap.shanks_maximal_prime_gap_conjecture`](https://lefttosolve.com/p/MaximalPrimeGap.shanks_maximal_prime_gap_conjecture) | Shanks's asymptotic conjecture for maximal prime gaps — shanks maximal prime gap conjecture | open | Number Theory |  |  |
+| 343 | [`MaximalPrimeGap.shanks_maximal_prime_gap_conjecture.variants.record_indices`](https://lefttosolve.com/p/MaximalPrimeGap.shanks_maximal_prime_gap_conjecture.variants.record_indices) | Shanks's asymptotic conjecture for maximal prime gaps — record indices | open | Number Theory |  |  |
+| 344 | [`MeanValueProblem.mean_value_problem`](https://lefttosolve.com/p/MeanValueProblem.mean_value_problem) | Mean value problem | open | Field Theory |  |  |
+| 345 | [`MeanValueProblem.mean_value_problem_leq_4`](https://lefttosolve.com/p/MeanValueProblem.mean_value_problem_leq_4) | Mean value problem — mean value problem leq 4 | known | Field Theory |  |  |
+| 346 | [`MeanValueProblem.mean_value_problem_of_real_roots`](https://lefttosolve.com/p/MeanValueProblem.mean_value_problem_of_real_roots) | Mean value problem — mean value problem of real roots | known | Field Theory |  |  |
+| 347 | [`MeanValueProblem.mean_value_problem_of_roots_same_norm`](https://lefttosolve.com/p/MeanValueProblem.mean_value_problem_of_roots_same_norm) | Mean value problem — mean value problem of roots same norm | known | Field Theory |  |  |
+| 348 | [`Mersenne.catalans_mersenne_conjecture`](https://lefttosolve.com/p/Mersenne.catalans_mersenne_conjecture) | Conjectures about Mersenne primes — catalans mersenne conjecture | open | Number Theory |  |  |
+| 349 | [`Mersenne.infinitely_many_mersenne_primes`](https://lefttosolve.com/p/Mersenne.infinitely_many_mersenne_primes) | Conjectures about Mersenne primes — infinitely many mersenne primes | open | Number Theory |  |  |
+| 350 | [`Mersenne.new_mersenne_conjecture`](https://lefttosolve.com/p/Mersenne.new_mersenne_conjecture) | Conjectures about Mersenne primes — new mersenne conjecture | open | Number Theory |  |  |
+| 351 | [`Mersenne.new_mersenne_conjecture.variants.prime`](https://lefttosolve.com/p/Mersenne.new_mersenne_conjecture.variants.prime) | Conjectures about Mersenne primes | open | Number Theory |  |  |
+| 352 | [`Mersenne.rotkiewicz_infinite_non_wieferich_of_squarefree_mersenne`](https://lefttosolve.com/p/Mersenne.rotkiewicz_infinite_non_wieferich_of_squarefree_mersenne) | Conjectures about Mersenne primes — rotkiewicz infinite non wieferich of squarefree mersenne | known | Number Theory |  |  |
+| 353 | [`Mersenne.sq_dvd_mersenne_iff_isWieferichPrime`](https://lefttosolve.com/p/Mersenne.sq_dvd_mersenne_iff_isWieferichPrime) | Conjectures about Mersenne primes — sq dvd mersenne iff isWieferichPrime | warmup | Number Theory |  | yes |
+| 354 | [`Mersenne.squarefree_mersenne_of_prime`](https://lefttosolve.com/p/Mersenne.squarefree_mersenne_of_prime) | Conjectures about Mersenne primes — squarefree mersenne of prime | open | Number Theory |  |  |
+| 355 | [`MeynielConjecture.meyniel_conjecture`](https://lefttosolve.com/p/MeynielConjecture.meyniel_conjecture) | Meyniel's conjecture (c. 1985). | open | Combinatorics, Game Theory & Economics |  |  |
+| 356 | [`MeynielConjecture.meyniel_conjecture.variants.scott_sudakov`](https://lefttosolve.com/p/MeynielConjecture.meyniel_conjecture.variants.scott_sudakov) | Scott–Sudakov (2011): the best known general bound. | known | Combinatorics, Game Theory & Economics |  |  |
+| 357 | [`MeynielConjecture.meyniel_conjecture.variants.soft`](https://lefttosolve.com/p/MeynielConjecture.meyniel_conjecture.variants.soft) | The soft Meyniel conjecture. | open | Combinatorics, Game Theory & Economics |  |  |
+| 358 | [`MeynielConjecture.meyniel_conjecture.variants.tree`](https://lefttosolve.com/p/MeynielConjecture.meyniel_conjecture.variants.tree) | Trees are cop-win (Nowakowski–Winkler 1983). | known | Combinatorics, Game Theory & Economics |  | yes |
+| 359 | [`Mills.exists-prime`](https://lefttosolve.com/p/Mills.exists-prime) | Mills' theorem | known | Number Theory |  |  |
+| 360 | [`Mills.exists_least`](https://lefttosolve.com/p/Mills.exists_least) | Mills' constant. | known | Number Theory |  |  |
+| 361 | [`Mills.irrational`](https://lefttosolve.com/p/Mills.irrational) | Mills' constant is irrational | known | Number Theory |  |  |
+| 362 | [`Mills.lower_bound_of_RH`](https://lefttosolve.com/p/Mills.lower_bound_of_RH) | Mills' constant lower bound | known | Number Theory |  |  |
+| 363 | [`Mills.mem_Ioo`](https://lefttosolve.com/p/Mills.mem_Ioo) | Mills' Theorem | known | Number Theory |  |  |
+| 364 | [`MinimalPrime.base_seventeen_f19_family_minimal_prime_question`](https://lefttosolve.com/p/MinimalPrime.base_seventeen_f19_family_minimal_prime_question) | Minimal primes in radix bases — base seventeen f19 family minimal prime question | open | Computer Science, Number Theory |  |  |
+| 365 | [`MinimalPrime.base_ten_minimal_primes_card`](https://lefttosolve.com/p/MinimalPrime.base_ten_minimal_primes_card) | Minimal primes in radix bases — base ten minimal primes card | known | Computer Science, Number Theory |  | yes |
+| 366 | [`MinimalPrime.base_ten_minimal_primes_eq`](https://lefttosolve.com/p/MinimalPrime.base_ten_minimal_primes_eq) | Minimal primes in radix bases — base ten minimal primes eq | known | Computer Science, Number Theory |  |  |
+| 367 | [`MinimalPrime.minimal_primes_finite_in_every_base`](https://lefttosolve.com/p/MinimalPrime.minimal_primes_finite_in_every_base) | Minimal primes in radix bases — minimal primes finite in every base | warmup | Computer Science, Number Theory |  | yes |
+| 368 | [`ModularityConjecture.modularity_conjecture`](https://lefttosolve.com/p/ModularityConjecture.modularity_conjecture) | Modularity conjecture | known | Number Theory |  |  |
+| 369 | [`MontgomeryPairCorrelationConjecture.montgomery_pair_correlation_conjecture`](https://lefttosolve.com/p/MontgomeryPairCorrelationConjecture.montgomery_pair_correlation_conjecture) | Montgomery's GUE pair correlation conjecture for zeta zeros | open | Complex Analysis, Number Theory |  |  |
+| 370 | [`MontgomeryPairCorrelationConjecture.montgomery_pair_correlation_conjecture.variants.general_interval`](https://lefttosolve.com/p/MontgomeryPairCorrelationConjecture.montgomery_pair_correlation_conjecture.variants.general_interval) | Montgomery's GUE pair correlation conjecture for zeta zeros — general interval | open | Complex Analysis, Number Theory |  |  |
+| 371 | [`MoserWorm.convex_mosers_worm_problem`](https://lefttosolve.com/p/MoserWorm.convex_mosers_worm_problem) | Convex Moser's Worm Problem | open | Convex & Discrete Geometry |  |  |
+| 372 | [`MoserWorm.convex_mosers_worm_problem_bound_attained`](https://lefttosolve.com/p/MoserWorm.convex_mosers_worm_problem_bound_attained) | Moser's Worm — convex mosers worm problem bound attained | known | Convex & Discrete Geometry |  |  |
+| 373 | [`MoserWorm.convex_mosers_worm_problem_lower_bound`](https://lefttosolve.com/p/MoserWorm.convex_mosers_worm_problem_lower_bound) | Moser's Worm — convex mosers worm problem lower bound | known | Convex & Discrete Geometry |  |  |
+| 374 | [`MoserWorm.convex_mosers_worm_problem_upper_bound`](https://lefttosolve.com/p/MoserWorm.convex_mosers_worm_problem_upper_bound) | Moser's Worm — convex mosers worm problem upper bound | known | Convex & Discrete Geometry |  |  |
+| 375 | [`MoserWorm.mosers_worm_problem`](https://lefttosolve.com/p/MoserWorm.mosers_worm_problem) | Moser's Worm Problem | open | Convex & Discrete Geometry |  |  |
+| 376 | [`MoserWorm.mosers_worm_problem_upper_bound`](https://lefttosolve.com/p/MoserWorm.mosers_worm_problem_upper_bound) | Moser's Worm — mosers worm problem upper bound | known | Convex & Discrete Geometry |  |  |
+| 377 | [`MovingSofa.ambidextrousSofaConstant_eq_romiksSofa_area`](https://lefttosolve.com/p/MovingSofa.ambidextrousSofaConstant_eq_romiksSofa_area) | Moving Sofa Problem — ambidextrousSofaConstant eq romiksSofa area | open | Calculus of Variations |  |  |
+| 378 | [`MovingSofa.romiksSofa_area_le_ambidextrousSofaConstant`](https://lefttosolve.com/p/MovingSofa.romiksSofa_area_le_ambidextrousSofaConstant) | Moving Sofa Problem — romiksSofa area le ambidextrousSofaConstant | known | Calculus of Variations |  |  |
+| 379 | [`MultivariableMahlerMeasure.boyd_mahler_measure_set_closed_conjecture`](https://lefttosolve.com/p/MultivariableMahlerMeasure.boyd_mahler_measure_set_closed_conjecture) | Boyd's Closedness Conjecture | open | Number Theory |  |  |
+| 380 | [`MultivariableMahlerMeasure.boyd_mahler_measure_strict_hierarchy_conjecture`](https://lefttosolve.com/p/MultivariableMahlerMeasure.boyd_mahler_measure_strict_hierarchy_conjecture) | Boyd's Strict Hierarchy Conjecture | open | Number Theory |  |  |
+| 381 | [`MultivariableMahlerMeasure.lawton_multivariable_mahler_measure_limit`](https://lefttosolve.com/p/MultivariableMahlerMeasure.lawton_multivariable_mahler_measure_limit) | Lawton's Multivariable Limit Theorem | known | Number Theory |  |  |
+| 382 | [`MultivariableMahlerMeasure.smyth_three_variable_linear_mahler_measure`](https://lefttosolve.com/p/MultivariableMahlerMeasure.smyth_three_variable_linear_mahler_measure) | Smyth's Linear Mahler Formula | known | Number Theory |  |  |
+| 383 | [`NoetherProblem.noether_problem`](https://lefttosolve.com/p/NoetherProblem.noether_problem) | Rational_variety | known | Algebraic Geometry, Field Theory |  |  |
+| 384 | [`NoetherProblem.noether_problem.variants.forty_seven`](https://lefttosolve.com/p/NoetherProblem.noether_problem.variants.forty_seven) | Rational_variety — forty seven | known | Algebraic Geometry, Field Theory |  |  |
+| 385 | [`NoetherProblem.noether_problem.variants.four`](https://lefttosolve.com/p/NoetherProblem.noether_problem.variants.four) | Rational_variety — four | known | Algebraic Geometry, Field Theory |  |  |
+| 386 | [`NoetherProblem.noether_problem.variants.three`](https://lefttosolve.com/p/NoetherProblem.noether_problem.variants.three) | Rational_variety — three | known | Algebraic Geometry, Field Theory |  |  |
+| 387 | [`NoetherProblem.noether_problem.variants.two`](https://lefttosolve.com/p/NoetherProblem.noether_problem.variants.two) | Rational_variety — two | known | Algebraic Geometry, Field Theory |  | yes |
+| 388 | [`NormalNumber.pi_normal_base_ten`](https://lefttosolve.com/p/NormalNumber.pi_normal_base_ten) | Normality of mathematical constants | open | Number Theory |  |  |
+| 389 | [`NumberField.exists_quadraticAlgebra_of_isQuadraticExtension`](https://lefttosolve.com/p/NumberField.exists_quadraticAlgebra_of_isQuadraticExtension) | Infinitude of Wall–Sun–Sun primes — exists quadraticAlgebra of isQuadraticExtension | warmup | Number Theory |  | yes |
+| 390 | [`OhbaConjecture.ohba_conjecture`](https://lefttosolve.com/p/OhbaConjecture.ohba_conjecture) | Ohba's conjecture (2002), proved by Noel, Reed and Wu (2015). | known | Combinatorics |  |  |
+| 391 | [`OhbaConjecture.ohba_conjecture.variants.erdos_rubin_taylor`](https://lefttosolve.com/p/OhbaConjecture.ohba_conjecture.variants.erdos_rubin_taylor) | Ohba's conjecture (2002; proved by Noel, Reed and Wu 2015) — erdos rubin taylor | known | Combinatorics |  | yes |
+| 392 | [`Oppermann.oppermann_conjecture`](https://lefttosolve.com/p/Oppermann.oppermann_conjecture) | Oppermann's Conjecture | open | Number Theory |  |  |
+| 393 | [`Oppermann.oppermann_conjecture.ferreira_large_x`](https://lefttosolve.com/p/Oppermann.oppermann_conjecture.ferreira_large_x) | Oppermann's Conjecture — ferreira large x | known | Number Theory |  |  |
+| 394 | [`Oppermann.oppermann_conjecture.parts.i`](https://lefttosolve.com/p/Oppermann.oppermann_conjecture.parts.i) | Oppermann's Conjecture — i | open | Number Theory |  |  |
+| 395 | [`Oppermann.oppermann_conjecture.parts.ii`](https://lefttosolve.com/p/Oppermann.oppermann_conjecture.parts.ii) | Oppermann's Conjecture — ii | open | Number Theory |  |  |
+| 396 | [`PebblingNumberConjecture.pebbling_number_conjecture`](https://lefttosolve.com/p/PebblingNumberConjecture.pebbling_number_conjecture) | Pebbling number conjecture | open | Combinatorics |  |  |
+| 397 | [`PellNumbers.infinite_pellNumber_primes`](https://lefttosolve.com/p/PellNumbers.infinite_pellNumber_primes) | Infinitude of Pell number primes | open | Number Theory |  |  |
+| 398 | [`PerfectNumbers.infinitely_many_even_perfect`](https://lefttosolve.com/p/PerfectNumbers.infinitely_many_even_perfect) | Infinitely many even perfect numbers conjecture. | open | Number Theory |  |  |
+| 399 | [`PerfectNumbers.infinitely_many_perfect`](https://lefttosolve.com/p/PerfectNumbers.infinitely_many_perfect) | Infinitely many perfect numbers conjecture. | open | Number Theory |  |  |
+| 400 | [`PerfectNumbers.odd_perfect_number.lower_bound`](https://lefttosolve.com/p/PerfectNumbers.odd_perfect_number.lower_bound) | Perfect numbers — lower bound | known | Number Theory |  |  |
+| 401 | [`PerfectNumbers.odd_perfect_number_conjecture`](https://lefttosolve.com/p/PerfectNumbers.odd_perfect_number_conjecture) | Odd Perfect Number Conjecture. | open | Number Theory |  |  |
+| 402 | [`PetersenColoringConjecture.petersen_coloring_conjecture`](https://lefttosolve.com/p/PetersenColoringConjecture.petersen_coloring_conjecture) | The Petersen colouring conjecture (Jaeger 1988). | open | Combinatorics |  |  |
+| 403 | [`PetersenColoringConjecture.petersen_coloring_conjecture.variants.normal_five_edge_coloring`](https://lefttosolve.com/p/PetersenColoringConjecture.petersen_coloring_conjecture.variants.normal_five_edge_coloring) | Jaeger's reformulation: normal `5`-edge-colourings. | known | Combinatorics |  | yes |
+| 404 | [`PierceBirkhoff.pierce_birkhoff_conjecture`](https://lefttosolve.com/p/PierceBirkhoff.pierce_birkhoff_conjecture) | Pierce–Birkhoff conjecture — pierce birkhoff conjecture | open | Commutative Algebra |  |  |
+| 405 | [`PierceBirkhoff.pierce_birkhoff_conjecture_dim_one`](https://lefttosolve.com/p/PierceBirkhoff.pierce_birkhoff_conjecture_dim_one) | Pierce–Birkhoff conjecture — pierce birkhoff conjecture dim one | known | Commutative Algebra |  |  |
+| 406 | [`PierceBirkhoff.pierce_birkhoff_conjecture_dim_two`](https://lefttosolve.com/p/PierceBirkhoff.pierce_birkhoff_conjecture_dim_two) | Pierce–Birkhoff conjecture — pierce birkhoff conjecture dim two | known | Commutative Algebra |  |  |
+| 407 | [`PierpontPrime.infinitely_many_pierpont_primes`](https://lefttosolve.com/p/PierpontPrime.infinitely_many_pierpont_primes) | Pierpont primes | open | Number Theory |  |  |
+| 408 | [`PollocksConjecture.pollock_tetrahedral`](https://lefttosolve.com/p/PollocksConjecture.pollock_tetrahedral) | Pollock's (tetrahedral numbers) conjecture | open | Number Theory |  |  |
+| 409 | [`PollocksConjecture.pollock_tetrahedral.ncard_exceptions`](https://lefttosolve.com/p/PollocksConjecture.pollock_tetrahedral.ncard_exceptions) | Pollock's (tetrahedral numbers) conjecture — ncard exceptions | warmup | Number Theory |  | yes |
+| 410 | [`PollocksConjecture.pollock_tetrahedral.salzer_levine`](https://lefttosolve.com/p/PollocksConjecture.pollock_tetrahedral.salzer_levine) | Pollock's (tetrahedral numbers) conjecture — salzer levine | open | Number Theory |  |  |
+| 411 | [`PolyTime.isPolyTime_primeFactorsList`](https://lefttosolve.com/p/PolyTime.isPolyTime_primeFactorsList) | The integer factorization problem | open | Computer Science |  |  |
+| 412 | [`PolyTime.isPolyTime_squareRootSum`](https://lefttosolve.com/p/PolyTime.isPolyTime_squareRootSum) | Is the square-root sum problem polynomial time (single sum version)? | open | Computer Science |  |  |
+| 413 | [`PolyTime.isPolyTime_squareRootSumTwoSided`](https://lefttosolve.com/p/PolyTime.isPolyTime_squareRootSumTwoSided) | Is the square-root sum problem polynomial time (two sum version)? | open | Computer Science |  |  |
+| 414 | [`PompeiuProblem.ball_not_hasPompeiuProperty`](https://lefttosolve.com/p/PompeiuProblem.ball_not_hasPompeiuProperty) | The Pompeiu problem | known | Harmonic Analysis |  |  |
+| 415 | [`PowerfulNumbersDensity.asymptotic_bateman_grosswald`](https://lefttosolve.com/p/PowerfulNumbersDensity.asymptotic_bateman_grosswald) | Asymptotic density of powerful numbers — asymptotic bateman grosswald | known | Number Theory |  |  |
+| 416 | [`PowerfulNumbersDensity.asymptotic_erdos_szekeres`](https://lefttosolve.com/p/PowerfulNumbersDensity.asymptotic_erdos_szekeres) | Asymptotic density of powerful numbers — asymptotic erdos szekeres | known | Number Theory |  |  |
+| 417 | [`PowerfulNumbersDensity.error_term_improvement`](https://lefttosolve.com/p/PowerfulNumbersDensity.error_term_improvement) | Asymptotic density of powerful numbers — error term improvement | known | Number Theory |  |  |
+| 418 | [`PrimeTriplets.prime_triplets`](https://lefttosolve.com/p/PrimeTriplets.prime_triplets) | Prime Triplet Conjecture | open | Number Theory |  |  |
+| 419 | [`PrimesAndPerfectSquares.infinite_prime_sq_add_one`](https://lefttosolve.com/p/PrimesAndPerfectSquares.infinite_prime_sq_add_one) | Primes and perfect squares | open | Number Theory |  |  |
+| 420 | [`PrimorialPrime.infinitely_many_primorial_primes`](https://lefttosolve.com/p/PrimorialPrime.infinitely_many_primorial_primes) | Infinitude of primorial primes | open | Number Theory |  |  |
+| 421 | [`PrimorialPrime.infinitely_many_primorial_primes.variants.composite`](https://lefttosolve.com/p/PrimorialPrime.infinitely_many_primorial_primes.variants.composite) | Infinitude of primorial primes — composite | open | Number Theory |  |  |
+| 422 | [`PrimorialPrime.infinitely_many_primorial_primes.variants.composite_euclid`](https://lefttosolve.com/p/PrimorialPrime.infinitely_many_primorial_primes.variants.composite_euclid) | Infinitude of primorial primes — composite euclid | open | Number Theory |  |  |
+| 423 | [`PrimorialPrime.infinitely_many_primorial_primes.variants.composite_kummer`](https://lefttosolve.com/p/PrimorialPrime.infinitely_many_primorial_primes.variants.composite_kummer) | Infinitude of primorial primes — composite kummer | open | Number Theory |  |  |
+| 424 | [`PrimorialPrime.infinitely_many_primorial_primes.variants.kummer`](https://lefttosolve.com/p/PrimorialPrime.infinitely_many_primorial_primes.variants.kummer) | Infinitude of primorial primes — kummer | open | Number Theory |  |  |
+| 425 | [`ProthPrime.infinitely_many_proth_primes`](https://lefttosolve.com/p/ProthPrime.infinitely_many_proth_primes) | Proth primes — infinitely many proth primes | open | Number Theory |  |  |
+| 426 | [`ProthPrime.infinitely_many_proth_primes_multiplier_three`](https://lefttosolve.com/p/ProthPrime.infinitely_many_proth_primes_multiplier_three) | Proth primes — infinitely many proth primes multiplier three | open | Number Theory |  |  |
+| 427 | [`ProthPrime.proth_primality_criterion`](https://lefttosolve.com/p/ProthPrime.proth_primality_criterion) | Proth's primality theorem | warmup | Number Theory |  | yes |
+| 428 | [`QuadraticAlgebra.discr_rat_of_modEq_one`](https://lefttosolve.com/p/QuadraticAlgebra.discr_rat_of_modEq_one) | Infinitude of Wall–Sun–Sun primes — discr rat of modEq one | warmup | Number Theory |  |  |
+| 429 | [`QuadraticAlgebra.discr_rat_of_not_modEq_one`](https://lefttosolve.com/p/QuadraticAlgebra.discr_rat_of_not_modEq_one) | Infinitude of Wall–Sun–Sun primes — discr rat of not modEq one | warmup | Number Theory |  | yes |
+| 430 | [`QuasiperfectNumbers.exists_quasiperfect`](https://lefttosolve.com/p/QuasiperfectNumbers.exists_quasiperfect) | Quasiperfect Numbers Conjecture. | open | Number Theory |  |  |
+| 431 | [`RamanujanTau.-_two`](https://lefttosolve.com/p/RamanujanTau.-_two) | Ramanujan τ-function — τ two | warmup | Number Theory |  |  |
+| 432 | [`RamanujanTau.lehmer_ramanujan_tau`](https://lefttosolve.com/p/RamanujanTau.lehmer_ramanujan_tau) | Ramanujan τ-function — lehmer ramanujan tau | open | Number Theory |  |  |
+| 433 | [`RamanujanTau.ramanujan_petersson`](https://lefttosolve.com/p/RamanujanTau.ramanujan_petersson) | Ramanujan τ-function — ramanujan petersson | known | Number Theory |  |  |
+| 434 | [`RamseyNumbers.ramsey_number_five_five`](https://lefttosolve.com/p/RamseyNumbers.ramsey_number_five_five) | Ramsey numbers — ramsey number five five | open | Combinatorics |  |  |
+| 435 | [`RamseyNumbers.ramsey_number_five_five_upper_bound`](https://lefttosolve.com/p/RamseyNumbers.ramsey_number_five_five_upper_bound) | Ramsey numbers — ramsey number five five upper bound | known | Combinatorics |  |  |
+| 436 | [`RamseyNumbers.ramsey_number_four_five`](https://lefttosolve.com/p/RamseyNumbers.ramsey_number_four_five) | Ramsey numbers — ramsey number four five | known | Combinatorics |  |  |
+| 437 | [`RamseyNumbers.ramsey_number_four_four`](https://lefttosolve.com/p/RamseyNumbers.ramsey_number_four_four) | Ramsey numbers — ramsey number four four | known | Combinatorics |  | yes |
+| 438 | [`RamseyNumbers.ramsey_number_six_six`](https://lefttosolve.com/p/RamseyNumbers.ramsey_number_six_six) | Ramsey numbers — ramsey number six six | open | Combinatorics |  |  |
+| 439 | [`RamseyNumbers.ramsey_number_six_six_lower_bound`](https://lefttosolve.com/p/RamseyNumbers.ramsey_number_six_six_lower_bound) | Ramsey numbers — ramsey number six six lower bound | known | Combinatorics |  |  |
+| 440 | [`RamseyNumbers.ramsey_number_six_six_upper_bound`](https://lefttosolve.com/p/RamseyNumbers.ramsey_number_six_six_upper_bound) | Ramsey numbers — ramsey number six six upper bound | known | Combinatorics |  |  |
+| 441 | [`RamseyNumbers.ramsey_number_three_eight`](https://lefttosolve.com/p/RamseyNumbers.ramsey_number_three_eight) | Ramsey numbers — ramsey number three eight | known | Combinatorics |  |  |
+| 442 | [`RamseyNumbers.ramsey_number_three_five`](https://lefttosolve.com/p/RamseyNumbers.ramsey_number_three_five) | Ramsey numbers — ramsey number three five | known | Combinatorics |  | yes |
+| 443 | [`RamseyNumbers.ramsey_number_three_four`](https://lefttosolve.com/p/RamseyNumbers.ramsey_number_three_four) | Ramsey numbers — ramsey number three four | known | Combinatorics |  | yes |
+| 444 | [`RamseyNumbers.ramsey_number_three_nine`](https://lefttosolve.com/p/RamseyNumbers.ramsey_number_three_nine) | Ramsey numbers — ramsey number three nine | known | Combinatorics |  |  |
+| 445 | [`RamseyNumbers.ramsey_number_three_seven`](https://lefttosolve.com/p/RamseyNumbers.ramsey_number_three_seven) | Ramsey numbers — ramsey number three seven | known | Combinatorics |  |  |
+| 446 | [`RamseyNumbers.ramsey_number_three_six`](https://lefttosolve.com/p/RamseyNumbers.ramsey_number_three_six) | Ramsey numbers — ramsey number three six | known | Combinatorics |  | yes |
+| 447 | [`RamseyNumbers.ramsey_number_three_three`](https://lefttosolve.com/p/RamseyNumbers.ramsey_number_three_three) | Ramsey numbers — ramsey number three three | known | Combinatorics |  | yes |
+| 448 | [`RationalDistanceProblem.rational_distance_problem`](https://lefttosolve.com/p/RationalDistanceProblem.rational_distance_problem) | Rational distance problem | open | Geometry, Number Theory |  |  |
+| 449 | [`ReconstructionConjecture.edge_reconstruction_conjecture`](https://lefttosolve.com/p/ReconstructionConjecture.edge_reconstruction_conjecture) | The edge reconstruction conjecture | open | Combinatorics |  |  |
+| 450 | [`ReconstructionConjecture.reconstruction_conjecture`](https://lefttosolve.com/p/ReconstructionConjecture.reconstruction_conjecture) | The reconstruction conjecture | open | Combinatorics |  |  |
+| 451 | [`ReconstructionConjecture.reconstruction_conjecture.variants.tree`](https://lefttosolve.com/p/ReconstructionConjecture.reconstruction_conjecture.variants.tree) | Trees are reconstructible | known | Combinatorics |  |  |
+| 452 | [`RefactorableNumber.infinitely_many_consecutive_refactorable_pairs`](https://lefttosolve.com/p/RefactorableNumber.infinitely_many_consecutive_refactorable_pairs) | Colton's Conjecture (1999, Conjecture 2) | open | Number Theory |  |  |
+| 453 | [`RefactorableNumber.no_three_consecutive_refactorable`](https://lefttosolve.com/p/RefactorableNumber.no_three_consecutive_refactorable) | Zelinsky's Theorem (2002) | known | Number Theory |  |  |
+| 454 | [`RefactorableNumber.refactorable_hasDensity_zero`](https://lefttosolve.com/p/RefactorableNumber.refactorable_hasDensity_zero) | Kennedy–Cooper Theorem (1990) | known | Number Theory |  | yes |
+| 455 | [`RefactorableNumber.zelinsky_refactorable_progression_conjecture`](https://lefttosolve.com/p/RefactorableNumber.zelinsky_refactorable_progression_conjecture) | Zelinsky's Conjecture (2002, Conjecture 32) | open | Number Theory |  |  |
+| 456 | [`RegularPrimes.infinitude_of_irregularprimes`](https://lefttosolve.com/p/RegularPrimes.infinitude_of_irregularprimes) | Infinite Regular Primes — infinitude of irregularprimes | known | Number Theory |  |  |
+| 457 | [`RegularPrimes.isRegularPrime_iff_Bernoulli`](https://lefttosolve.com/p/RegularPrimes.isRegularPrime_iff_Bernoulli) | Kummer's criterion. | warmup | Number Theory |  |  |
+| 458 | [`RegularPrimes.not_isRegularPrime_37`](https://lefttosolve.com/p/RegularPrimes.not_isRegularPrime_37) | Infinite Regular Primes — not isRegularPrime 37 | warmup | Number Theory |  |  |
+| 459 | [`RegularPrimes.regularprime_conjecture`](https://lefttosolve.com/p/RegularPrimes.regularprime_conjecture) | Infinite Regular Primes — regularprime conjecture | open | Number Theory |  |  |
+| 460 | [`RegularPrimes.small_regular_primes`](https://lefttosolve.com/p/RegularPrimes.small_regular_primes) | Infinite Regular Primes — small regular primes | warmup | Number Theory |  |  |
+| 461 | [`RepunitPrime.infinitely_many_repunit_primes`](https://lefttosolve.com/p/RepunitPrime.infinitely_many_repunit_primes) | Decimal Repunit Primes | open | Number Theory |  |  |
+| 462 | [`RiemannZetaValues.apery_central_binomial_series`](https://lefttosolve.com/p/RiemannZetaValues.apery_central_binomial_series) | Particular values of the Riemann zeta function — apery central binomial series | warmup | Number Theory, Special Functions |  | yes |
+| 463 | [`RiemannZetaValues.exists_irrational_of_five_seven_nine_eleven`](https://lefttosolve.com/p/RiemannZetaValues.exists_irrational_of_five_seven_nine_eleven) | Particular values of the Riemann zeta function — exists irrational of five seven nine eleven | known | Number Theory, Special Functions |  |  |
+| 464 | [`RiemannZetaValues.infinite_irrational_at_odd`](https://lefttosolve.com/p/RiemannZetaValues.infinite_irrational_at_odd) | Particular values of the Riemann zeta function — infinite irrational at odd | known | Number Theory, Special Functions |  |  |
+| 465 | [`RiemannZetaValues.irrational_eleven`](https://lefttosolve.com/p/RiemannZetaValues.irrational_eleven) | Particular values of the Riemann zeta function — irrational eleven | open | Number Theory, Special Functions |  |  |
+| 466 | [`RiemannZetaValues.irrational_nine`](https://lefttosolve.com/p/RiemannZetaValues.irrational_nine) | Particular values of the Riemann zeta function — irrational nine | open | Number Theory, Special Functions |  |  |
+| 467 | [`RiemannZetaValues.irrational_odd`](https://lefttosolve.com/p/RiemannZetaValues.irrational_odd) | Particular values of the Riemann zeta function — irrational odd | open | Number Theory, Special Functions |  |  |
+| 468 | [`RiemannZetaValues.irrational_seven`](https://lefttosolve.com/p/RiemannZetaValues.irrational_seven) | Particular values of the Riemann zeta function — irrational seven | open | Number Theory, Special Functions |  |  |
+| 469 | [`RiemannZetaValues.irrational_three`](https://lefttosolve.com/p/RiemannZetaValues.irrational_three) | Particular values of the Riemann zeta function — irrational three | known | Number Theory, Special Functions |  | yes |
+| 470 | [`RiemannZetaValues.transcendental_three`](https://lefttosolve.com/p/RiemannZetaValues.transcendental_three) | Particular values of the Riemann zeta function — transcendental three | open | Number Theory, Special Functions |  |  |
+| 471 | [`RowlandSequence.rowland_diff_eq_one_or_prime`](https://lefttosolve.com/p/RowlandSequence.rowland_diff_eq_one_or_prime) | Rowland's GCD prime-generating recurrence — rowland diff eq one or prime | known | Number Theory |  |  |
+| 472 | [`RowlandSequence.rowland_generates_all_odd_primes`](https://lefttosolve.com/p/RowlandSequence.rowland_generates_all_odd_primes) | Rowland's GCD prime-generating recurrence — rowland generates all odd primes | open | Number Theory |  |  |
+| 473 | [`RudinsConjecture.rudins_conjecture`](https://lefttosolve.com/p/RudinsConjecture.rudins_conjecture) | Rudin's conjecture. | open | Number Theory |  |  |
+| 474 | [`RudinsConjecture.rudins_conjecture_strong`](https://lefttosolve.com/p/RudinsConjecture.rudins_conjecture_strong) | Rudin's conjecture on squares in arithmetic progressions — rudins conjecture strong | open | Number Theory |  |  |
+| 475 | [`RudinsConjecture.rudins_conjecture_unique`](https://lefttosolve.com/p/RudinsConjecture.rudins_conjecture_unique) | Rudin's conjecture on squares in arithmetic progressions — rudins conjecture unique | open | Number Theory |  |  |
+| 476 | [`SatoTateConjecture.satoTate_conjecture`](https://lefttosolve.com/p/SatoTateConjecture.satoTate_conjecture) | The Sato–Tate conjecture | known | Algebraic Geometry, Number Theory |  |  |
+| 477 | [`Schanuel.schanuel_conjecture`](https://lefttosolve.com/p/Schanuel.schanuel_conjecture) | Schanuel's Conjecture | open | Number Theory, Special Functions |  |  |
+| 478 | [`Schinzel.schinzel_conjecture`](https://lefttosolve.com/p/Schinzel.schinzel_conjecture) | Schinzel conjecture (H hypothesis) | open | Number Theory |  |  |
+| 479 | [`ScholzConjecture.scholz_conjecture`](https://lefttosolve.com/p/ScholzConjecture.scholz_conjecture) | Scholz conjecture on addition chains | open | Computer Science, Number Theory |  |  |
+| 480 | [`Selfridge.selfridge_conjecture`](https://lefttosolve.com/p/Selfridge.selfridge_conjecture) | PSW conjecture | open | Number Theory |  |  |
+| 481 | [`Selfridge.selfridge_seq_conjecture`](https://lefttosolve.com/p/Selfridge.selfridge_seq_conjecture) | Selfridge's conjectures | open | Number Theory |  |  |
+| 482 | [`Sendov.sendov_conjecture.variants.eventually_true`](https://lefttosolve.com/p/Sendov.sendov_conjecture.variants.eventually_true) | Sendov's conjecture — eventually true | known | Complex Analysis, Convex & Discrete Geometry, Field Theory |  | yes |
+| 483 | [`Sendov.sendov_conjecture.variants.le_eight`](https://lefttosolve.com/p/Sendov.sendov_conjecture.variants.le_eight) | Sendov's conjecture — le eight | known | Complex Analysis, Convex & Discrete Geometry, Field Theory |  | yes |
+| 484 | [`SerreMultiplicityConjectures.intersectionMultiplicity_eq_zero_of_lt`](https://lefttosolve.com/p/SerreMultiplicityConjectures.intersectionMultiplicity_eq_zero_of_lt) | Vanishing | known | Algebraic Geometry, Commutative Algebra |  |  |
+| 485 | [`SerreMultiplicityConjectures.intersectionMultiplicity_nonneg`](https://lefttosolve.com/p/SerreMultiplicityConjectures.intersectionMultiplicity_nonneg) | Non-negativity | known | Algebraic Geometry, Commutative Algebra |  |  |
+| 486 | [`SerreMultiplicityConjectures.intersectionMultiplicity_pos`](https://lefttosolve.com/p/SerreMultiplicityConjectures.intersectionMultiplicity_pos) | Positivity conjecture. | open | Algebraic Geometry, Commutative Algebra |  |  |
+| 487 | [`SerreMultiplicityConjectures.intersectionMultiplicity_pos_of_equalCharacteristic`](https://lefttosolve.com/p/SerreMultiplicityConjectures.intersectionMultiplicity_pos_of_equalCharacteristic) | Serre's multiplicity conjectures — intersectionMultiplicity pos of equalCharacteristic | known | Algebraic Geometry, Commutative Algebra |  |  |
+| 488 | [`SerreMultiplicityConjectures.intersectionMultiplicity_pos_of_unramified`](https://lefttosolve.com/p/SerreMultiplicityConjectures.intersectionMultiplicity_pos_of_unramified) | Serre's multiplicity conjectures — intersectionMultiplicity pos of unramified | known | Algebraic Geometry, Commutative Algebra |  |  |
+| 489 | [`SerreMultiplicityConjectures.intersectionMultiplicity_pos_quotient`](https://lefttosolve.com/p/SerreMultiplicityConjectures.intersectionMultiplicity_pos_quotient) | Positivity conjecture | open | Algebraic Geometry, Commutative Algebra |  |  |
+| 490 | [`SerreMultiplicityConjectures.supportDim_add_supportDim_le_ringKrullDim`](https://lefttosolve.com/p/SerreMultiplicityConjectures.supportDim_add_supportDim_le_ringKrullDim) | Dimension inequality. | known | Algebraic Geometry, Commutative Algebra |  |  |
+| 491 | [`SidorenkoConjecture.sidorenko_completeBipartiteGraph_graphon`](https://lefttosolve.com/p/SidorenkoConjecture.sidorenko_completeBipartiteGraph_graphon) | Sidorenko's conjecture (1993) | known | Combinatorics |  |  |
+| 492 | [`SidorenkoConjecture.sidorenko_conjecture.variants.complete_bipartite`](https://lefttosolve.com/p/SidorenkoConjecture.sidorenko_conjecture.variants.complete_bipartite) | Case: complete bipartite graphs `K_{s,t}` (Sidorenko 1993). | known | Combinatorics |  | yes |
+| 493 | [`SidorenkoConjecture.sidorenko_conjecture.variants.even_cycle`](https://lefttosolve.com/p/SidorenkoConjecture.sidorenko_conjecture.variants.even_cycle) | Case: even cycles `C_{2k}` (Sidorenko 1993). | known | Combinatorics |  | yes |
+| 494 | [`SidorenkoConjecture.sidorenko_conjecture.variants.path_blakley_roy`](https://lefttosolve.com/p/SidorenkoConjecture.sidorenko_conjecture.variants.path_blakley_roy) | Case: paths, the Blakley–Roy inequality (1965). | known | Combinatorics |  | yes |
+| 495 | [`SidorenkoConjecture.sidorenko_conjecture_graphon`](https://lefttosolve.com/p/SidorenkoConjecture.sidorenko_conjecture_graphon) | Sidorenko's conjecture for graphons (1993). | known | Combinatorics |  |  |
+| 496 | [`SidorenkoConjecture.sidorenko_even_cycle_graphon`](https://lefttosolve.com/p/SidorenkoConjecture.sidorenko_even_cycle_graphon) | Case: `H = C_{2k}` is an even cycle (Sidorenko 1993, graphon version). | known | Combinatorics |  |  |
+| 497 | [`SidorenkoConjecture.sidorenko_tree_graphon`](https://lefttosolve.com/p/SidorenkoConjecture.sidorenko_tree_graphon) | Case: `H` is a tree (Sidorenko 1993, graphon version). | known | Combinatorics |  |  |
+| 498 | [`SidorenkoConjecture.tournament_anti_sidorenko_single_even_degree_tree`](https://lefttosolve.com/p/SidorenkoConjecture.tournament_anti_sidorenko_single_even_degree_tree) | TAS Trees Conjecture: Trees with a single even-degree vertex. | known | Combinatorics |  |  |
+| 499 | [`SidorenkoConjecture.tournament_anti_sidorenko_spider234`](https://lefttosolve.com/p/SidorenkoConjecture.tournament_anti_sidorenko_spider234) | TAS Trees Conjecture: The $(2,3,4)$-spider tree (Solved case). | known | Combinatorics |  |  |
+| 500 | [`SidorenkoConjecture.tournament_anti_sidorenko_trees_conjecture`](https://lefttosolve.com/p/SidorenkoConjecture.tournament_anti_sidorenko_trees_conjecture) | Tournament Anti-Sidorenko (TAS) Trees Conjecture. | open | Combinatorics |  |  |
+| 501 | [`SidorenkoConjecture.tournament_anti_sidorenko_trees_conjecture_tournamenton`](https://lefttosolve.com/p/SidorenkoConjecture.tournament_anti_sidorenko_trees_conjecture_tournamenton) | Tournament Anti-Sidorenko (TAS) Trees Conjecture (Tournamenton limit version). | open | Combinatorics |  |  |
+| 502 | [`SierpinskiEgyptianFractionConjecture.sierpinski_counterexamples_hasDensity_zero`](https://lefttosolve.com/p/SierpinskiEgyptianFractionConjecture.sierpinski_counterexamples_hasDensity_zero) | Webb–Vaughan Density Bound | known | Number Theory |  |  |
+| 503 | [`SierpinskiEgyptianFractionConjecture.sierpinski_egyptian_fraction_conjecture`](https://lefttosolve.com/p/SierpinskiEgyptianFractionConjecture.sierpinski_egyptian_fraction_conjecture) | Sierpiński's $5 / n$ Conjecture | open | Number Theory |  |  |
+| 504 | [`SierpinskiNumber.extended_sierpinski_problem`](https://lefttosolve.com/p/SierpinskiNumber.extended_sierpinski_problem) | The extended Sierpiński problem. | open | Number Theory |  |  |
+| 505 | [`SierpinskiNumber.prime_sierpinski_problem`](https://lefttosolve.com/p/SierpinskiNumber.prime_sierpinski_problem) | The prime Sierpiński problem. | open | Number Theory |  |  |
+| 506 | [`SierpinskiNumber.selfridge_conjecture`](https://lefttosolve.com/p/SierpinskiNumber.selfridge_conjecture) | The Sierpiński problem (Selfridge's conjecture). | open | Number Theory |  |  |
+| 507 | [`Singmaster.singmaster`](https://lefttosolve.com/p/Singmaster.singmaster) | Singmaster's conjecture | open | Number Theory |  |  |
+| 508 | [`SixStandardDeviations.six_standard_deviations`](https://lefttosolve.com/p/SixStandardDeviations.six_standard_deviations) | Six standard deviations suffice | known | Combinatorics |  |  |
+| 509 | [`SkewesNumber.littlewood_pi_minus_li_infinite_sign_changes`](https://lefttosolve.com/p/SkewesNumber.littlewood_pi_minus_li_infinite_sign_changes) | Skewes's Number and Sign Changes of $\\pi(x) - \\operatorname{li}(x)$ — littlewood pi minus li infinite sign changes | known | Number Theory |  |  |
+| 510 | [`SkewesNumber.skewes_crossover_known_bounds`](https://lefttosolve.com/p/SkewesNumber.skewes_crossover_known_bounds) | Skewes's Number and Sign Changes of $\\pi(x) - \\operatorname{li}(x)$ — skewes crossover known bounds | known | Number Theory |  |  |
+| 511 | [`SkewesNumber.skewes_number`](https://lefttosolve.com/p/SkewesNumber.skewes_number) | Skewes's Number and Sign Changes of $\\pi(x) - \\operatorname{li}(x)$ — skewes number | open | Number Theory |  |  |
+| 512 | [`SkewesNumber.skewes_number.variants.no_crossover_below_known_region`](https://lefttosolve.com/p/SkewesNumber.skewes_number.variants.no_crossover_below_known_region) | Skewes's Number and Sign Changes of $\\pi(x) - \\operatorname{li}(x)$ — no crossover below known region | open | Number Theory |  |  |
+| 513 | [`SmallCohenMacaulayModules.exists_isBalancedBigCohenMacaulay`](https://lefttosolve.com/p/SmallCohenMacaulayModules.exists_isBalancedBigCohenMacaulay) | Existence of balanced big Cohen-Macaulay modules. | known | Commutative Algebra |  |  |
+| 514 | [`SmallCohenMacaulayModules.exists_isSmallCohenMacaulay`](https://lefttosolve.com/p/SmallCohenMacaulayModules.exists_isSmallCohenMacaulay) | The small Cohen-Macaulay modules conjecture. | open | Commutative Algebra |  |  |
+| 515 | [`SmallCohenMacaulayModules.exists_isSmallCohenMacaulay.variants.ringKrullDim_le_two`](https://lefttosolve.com/p/SmallCohenMacaulayModules.exists_isSmallCohenMacaulay.variants.ringKrullDim_le_two) | The small Cohen-Macaulay modules conjecture — ringKrullDim le two | known | Commutative Algebra |  |  |
+| 516 | [`SmallCohenMacaulayModules.isBalancedBigCohenMacaulay_iff_isSmallCohenMacaulay`](https://lefttosolve.com/p/SmallCohenMacaulayModules.isBalancedBigCohenMacaulay_iff_isSmallCohenMacaulay) | The small Cohen-Macaulay modules conjecture | warmup | Commutative Algebra |  | yes |
+| 517 | [`SmithNumber.infinite_smith_brothers`](https://lefttosolve.com/p/SmithNumber.infinite_smith_brothers) | McDaniel's Theorem on Smith Numbers and the Smith Brothers Problem | open | Number Theory |  |  |
+| 518 | [`SmithNumber.mcdaniel_infinitely_many_smith_numbers`](https://lefttosolve.com/p/SmithNumber.mcdaniel_infinitely_many_smith_numbers) | McDaniel's Theorem (1987) | known | Number Theory |  | yes |
+| 519 | [`SnakeInBox.coil_small_dimensions`](https://lefttosolve.com/p/SnakeInBox.coil_small_dimensions) | Snake in the box — coil small dimensions | known | Combinatorics |  |  |
+| 520 | [`SnakeInBox.coil_upper_bound`](https://lefttosolve.com/p/SnakeInBox.coil_upper_bound) | Snake in the box — coil upper bound | known | Combinatorics |  |  |
+| 521 | [`SnakeInBox.snake_dim_nine`](https://lefttosolve.com/p/SnakeInBox.snake_dim_nine) | Snake in the box — snake dim nine | open | Combinatorics |  |  |
+| 522 | [`SnakeInBox.snake_dim_nine_lower_bound`](https://lefttosolve.com/p/SnakeInBox.snake_dim_nine_lower_bound) | Snake in the box — snake dim nine lower bound | known | Combinatorics |  | yes |
+| 523 | [`SnakeInBox.snake_small_dimensions`](https://lefttosolve.com/p/SnakeInBox.snake_small_dimensions) | Snake in the box — snake small dimensions | known | Combinatorics |  |  |
+| 524 | [`SnakeInBox.snake_upper_bound`](https://lefttosolve.com/p/SnakeInBox.snake_upper_bound) | Snake in the box — snake upper bound | known | Combinatorics |  | yes |
+| 525 | [`SolitaryNumber.infinite_club_exists`](https://lefttosolve.com/p/SolitaryNumber.infinite_club_exists) | Existence of an infinite club. | open | Number Theory |  |  |
+| 526 | [`SolitaryNumber.is_ten_solitary`](https://lefttosolve.com/p/SolitaryNumber.is_ten_solitary) | Is 10 a solitary number? | open | Number Theory |  |  |
+| 527 | [`SparseRuler.wichmann_conjecture`](https://lefttosolve.com/p/SparseRuler.wichmann_conjecture) | Wichmann's conjecture on optimal rulers. | open | Combinatorics |  |  |
+| 528 | [`SquarePacking.eleven_square_packing_in_square_bound`](https://lefttosolve.com/p/SquarePacking.eleven_square_packing_in_square_bound) | Packing — eleven square packing in square bound | warmup | Geometry |  | yes |
+| 529 | [`SquarePacking.fifteen_circle_packing_in_circle_bound`](https://lefttosolve.com/p/SquarePacking.fifteen_circle_packing_in_circle_bound) | Packing — fifteen circle packing in circle bound | warmup | Geometry |  | yes |
+| 530 | [`SquarePacking.least_eleven_square_packing_in_square`](https://lefttosolve.com/p/SquarePacking.least_eleven_square_packing_in_square) | Packing — least eleven square packing in square | open | Geometry |  |  |
+| 531 | [`SquarePacking.least_fifteen_circle_packing_in_circle`](https://lefttosolve.com/p/SquarePacking.least_fifteen_circle_packing_in_circle) | Packing — least fifteen circle packing in circle | open | Geometry |  |  |
+| 532 | [`SquarePacking.least_seventeen_square_packing_in_square`](https://lefttosolve.com/p/SquarePacking.least_seventeen_square_packing_in_square) | Packing — least seventeen square packing in square | open | Geometry |  |  |
+| 533 | [`SquarePacking.least_twenty_one_circle_packing_in_square`](https://lefttosolve.com/p/SquarePacking.least_twenty_one_circle_packing_in_square) | Packing — least twenty one circle packing in square | open | Geometry |  |  |
+| 534 | [`SquarePacking.seventeen_square_packing_in_square_bound`](https://lefttosolve.com/p/SquarePacking.seventeen_square_packing_in_square_bound) | Packing — seventeen square packing in square bound | warmup | Geometry |  | yes |
+| 535 | [`SquarePacking.three_square_packing_in_circle_bound`](https://lefttosolve.com/p/SquarePacking.three_square_packing_in_circle_bound) | Packing — three square packing in circle bound | warmup | Geometry |  | yes |
+| 536 | [`SquarePacking.twenty_one_circle_packing_in_square_bound`](https://lefttosolve.com/p/SquarePacking.twenty_one_circle_packing_in_square_bound) | Packing — twenty one circle packing in square bound | warmup | Geometry |  | yes |
+| 537 | [`SteinerSystems.infinitely_many_steiner_t4`](https://lefttosolve.com/p/SteinerSystems.infinitely_many_steiner_t4) | There are infinitely many Steiner systems with $t = 4$. | known | Combinatorics |  |  |
+| 538 | [`SteinerSystems.infinitely_many_steiner_t5`](https://lefttosolve.com/p/SteinerSystems.infinitely_many_steiner_t5) | There are infinitely many Steiner systems with $t = 5$. | known | Combinatorics |  |  |
+| 539 | [`SteinerSystems.large_steiner_systems`](https://lefttosolve.com/p/SteinerSystems.large_steiner_systems) | Steiner Systems | open | Combinatorics |  |  |
+| 540 | [`SteinerSystems.steiner_system_5_8_24`](https://lefttosolve.com/p/SteinerSystems.steiner_system_5_8_24) | Existence of $S(5, 8, 24)$ | known | Combinatorics |  | yes |
+| 541 | [`SternPrime.isSternPrime_iff`](https://lefttosolve.com/p/SternPrime.isSternPrime_iff) | Stern Primes — isSternPrime iff | open | Number Theory |  |  |
+| 542 | [`SternPrime.stern_primes_finite`](https://lefttosolve.com/p/SternPrime.stern_primes_finite) | Stern Primes — stern primes finite | open | Number Theory |  |  |
+| 543 | [`SumOfThreeCubes.isSumOfThreeCubes_iff_mod_9`](https://lefttosolve.com/p/SumOfThreeCubes.isSumOfThreeCubes_iff_mod_9) | Sum of three cubes | open | Number Theory |  |  |
+| 544 | [`SumnerUniversalTournamentConjecture.sumner_conjecture`](https://lefttosolve.com/p/SumnerUniversalTournamentConjecture.sumner_conjecture) | Sumner's universal tournament conjecture (1971). | open | Combinatorics |  |  |
+| 545 | [`SumnerUniversalTournamentConjecture.sumner_conjecture.variants.el_sahili`](https://lefttosolve.com/p/SumnerUniversalTournamentConjecture.sumner_conjecture.variants.el_sahili) | El Sahili (2004): tournaments on $3n - 3$ vertices suffice. | known | Combinatorics |  | yes |
+| 546 | [`SumnerUniversalTournamentConjecture.sumner_conjecture.variants.large_n`](https://lefttosolve.com/p/SumnerUniversalTournamentConjecture.sumner_conjecture.variants.large_n) | Kühn–Mycroft–Osthus (2011): the conjecture holds for all sufficiently large $n$. | known | Combinatorics |  |  |
+| 547 | [`SumnerUniversalTournamentConjecture.sumner_conjecture.variants.sharp`](https://lefttosolve.com/p/SumnerUniversalTournamentConjecture.sumner_conjecture.variants.sharp) | The bound $2n - 2$ would be sharp. | known | Combinatorics |  | yes |
+| 548 | [`Superperfect.twoFivePerfect`](https://lefttosolve.com/p/Superperfect.twoFivePerfect) | (m,k)-perfect numbers | open | Number Theory |  |  |
+| 549 | [`TarskiExponentialFunctionProblem.isDecidable_completeTheory_realExp_of_realSchanuelConjecture`](https://lefttosolve.com/p/TarskiExponentialFunctionProblem.isDecidable_completeTheory_realExp_of_realSchanuelConjecture) | Macintyre–Wilkie | known | Field Theory, Logic & Foundations, Number Theory |  |  |
+| 550 | [`TarskiExponentialFunctionProblem.isDecidable_completeTheory_real_orderedField`](https://lefttosolve.com/p/TarskiExponentialFunctionProblem.isDecidable_completeTheory_real_orderedField) | Tarski's theorem. | known | Field Theory, Logic & Foundations |  |  |
+| 551 | [`TarskiExponentialFunctionProblem.tarski_exponential_function_problem`](https://lefttosolve.com/p/TarskiExponentialFunctionProblem.tarski_exponential_function_problem) | Tarski's exponential function problem. | open | Field Theory, Logic & Foundations |  |  |
+| 552 | [`Taxicab.taxicab_for_5_2_2`](https://lefttosolve.com/p/Taxicab.taxicab_for_5_2_2) | Taxicab numbers — taxicab for 5 2 2 | open | Number Theory |  |  |
+| 553 | [`Taxicab.taxicab_for_5_2_n`](https://lefttosolve.com/p/Taxicab.taxicab_for_5_2_n) | Taxicab numbers — taxicab for 5 2 n | open | Number Theory |  |  |
+| 554 | [`TernaryGoldbachConjecture.ternaryGoldbach`](https://lefttosolve.com/p/TernaryGoldbachConjecture.ternaryGoldbach) | Goldbach's conjecture — ternaryGoldbach | known | Number Theory |  |  |
+| 555 | [`ThabitNumber.exists_thabit_amicable_exponent_gt_seven`](https://lefttosolve.com/p/ThabitNumber.exists_thabit_amicable_exponent_gt_seven) | Thabit numbers and Thabit primes — exists thabit amicable exponent gt seven | open | Number Theory |  |  |
+| 556 | [`ThabitNumber.infinitely_many_thabit_primes`](https://lefttosolve.com/p/ThabitNumber.infinitely_many_thabit_primes) | Thabit numbers and Thabit primes — infinitely many thabit primes | open | Number Theory |  |  |
+| 557 | [`ThabitNumber.thabit_amicable_rule`](https://lefttosolve.com/p/ThabitNumber.thabit_amicable_rule) | Thābit ibn Qurra's amicable number theorem | warmup | Number Theory |  | yes |
+| 558 | [`Toronto.DiscreteTopology.of_t2_of_torontoSpace`](https://lefttosolve.com/p/Toronto.DiscreteTopology.of_t2_of_torontoSpace) | Toronto spaces — of t2 of torontoSpace | open | General Topology |  |  |
+| 559 | [`TotalColoringConjecture.total_coloring_conjecture`](https://lefttosolve.com/p/TotalColoringConjecture.total_coloring_conjecture) | The total colouring conjecture (Behzad 1965, Vizing 1968). | open | Combinatorics |  |  |
+| 560 | [`TotalColoringConjecture.total_coloring_conjecture.variants.complete_graph`](https://lefttosolve.com/p/TotalColoringConjecture.total_coloring_conjecture.variants.complete_graph) | Complete graphs. | known | Combinatorics |  | yes |
+| 561 | [`TotalColoringConjecture.total_coloring_conjecture.variants.maxDegree_le_five`](https://lefttosolve.com/p/TotalColoringConjecture.total_coloring_conjecture.variants.maxDegree_le_five) | The total colouring conjecture (Behzad 1965, Vizing 1968) — maxDegree le five | known | Combinatorics |  |  |
+| 562 | [`TotalColoringConjecture.total_coloring_conjecture.variants.molloy_reed`](https://lefttosolve.com/p/TotalColoringConjecture.total_coloring_conjecture.variants.molloy_reed) | Molloy–Reed (1998): $\\chi''(G) \\le \\Delta(G) + C$ for an absolute constant $C$. | known | Combinatorics |  |  |
+| 563 | [`Transcendental.exp_add_pi_transcendental`](https://lefttosolve.com/p/Transcendental.exp_add_pi_transcendental) | Open questions on transcendence of numbers — exp add pi transcendental | open | Number Theory, Special Functions |  |  |
+| 564 | [`Transcendental.exp_exp_transcendental`](https://lefttosolve.com/p/Transcendental.exp_exp_transcendental) | Open questions on transcendence of numbers — exp exp transcendental | open | Number Theory, Special Functions |  |  |
+| 565 | [`Transcendental.exp_mul_pi_transcendental`](https://lefttosolve.com/p/Transcendental.exp_mul_pi_transcendental) | Open questions on transcendence of numbers — exp mul pi transcendental | open | Number Theory, Special Functions |  |  |
+| 566 | [`Transcendental.exp_pow_pi_sq_transcendental`](https://lefttosolve.com/p/Transcendental.exp_pow_pi_sq_transcendental) | Open questions on transcendence of numbers — exp pow pi sq transcendental | open | Number Theory, Special Functions |  |  |
+| 567 | [`Transcendental.pi_pow_exp_transcendental`](https://lefttosolve.com/p/Transcendental.pi_pow_exp_transcendental) | Open questions on transcendence of numbers — pi pow exp transcendental | open | Number Theory, Special Functions |  |  |
+| 568 | [`Transcendental.pi_pow_pi_pow_pi_pow_pi_not_integer`](https://lefttosolve.com/p/Transcendental.pi_pow_pi_pow_pi_pow_pi_not_integer) | Open questions on transcendence of numbers — pi pow pi pow pi pow pi not integer | open | Number Theory, Special Functions |  |  |
+| 569 | [`Transcendental.pi_pow_pi_pow_pi_pow_pi_transcendental`](https://lefttosolve.com/p/Transcendental.pi_pow_pi_pow_pi_pow_pi_transcendental) | Open questions on transcendence of numbers — pi pow pi pow pi pow pi transcendental | open | Number Theory, Special Functions |  |  |
+| 570 | [`Transcendental.pi_pow_pi_pow_pi_transcendental`](https://lefttosolve.com/p/Transcendental.pi_pow_pi_pow_pi_transcendental) | Open questions on transcendence of numbers — pi pow pi pow pi transcendental | open | Number Theory, Special Functions |  |  |
+| 571 | [`Transcendental.pi_pow_pi_transcendental`](https://lefttosolve.com/p/Transcendental.pi_pow_pi_transcendental) | Open questions on transcendence of numbers — pi pow pi transcendental | open | Number Theory, Special Functions |  |  |
+| 572 | [`Transcendental.pi_pow_sqrt_two_transcendental`](https://lefttosolve.com/p/Transcendental.pi_pow_sqrt_two_transcendental) | Open questions on transcendence of numbers — pi pow sqrt two transcendental | open | Number Theory, Special Functions |  |  |
+| 573 | [`Transcendental.rlog_pi_transcendental`](https://lefttosolve.com/p/Transcendental.rlog_pi_transcendental) | Open questions on transcendence of numbers — rlog pi transcendental | open | Number Theory, Special Functions |  |  |
+| 574 | [`Transcendental.rlog_rlog_two_transcendental`](https://lefttosolve.com/p/Transcendental.rlog_rlog_two_transcendental) | Open questions on transcendence of numbers — rlog rlog two transcendental | open | Number Theory, Special Functions |  |  |
+| 575 | [`Transcendental.sin_exp_transcendental`](https://lefttosolve.com/p/Transcendental.sin_exp_transcendental) | Open questions on transcendence of numbers — sin exp transcendental | open | Number Theory, Special Functions |  |  |
+| 576 | [`Transcendental.transcendental_catalanConstant`](https://lefttosolve.com/p/Transcendental.transcendental_catalanConstant) | Open questions on transcendence of numbers — transcendental catalanConstant | open | Number Theory, Special Functions |  |  |
+| 577 | [`Transcendental.transcendental_eulerMascheroniConstant_or_gompertzConstant`](https://lefttosolve.com/p/Transcendental.transcendental_eulerMascheroniConstant_or_gompertzConstant) | Open questions on transcendence of numbers — transcendental eulerMascheroniConstant or gompertzConstant | known | Number Theory, Special Functions |  |  |
+| 578 | [`Transcendental.transcendental_gamma_one_div`](https://lefttosolve.com/p/Transcendental.transcendental_gamma_one_div) | Open questions on transcendence of numbers — transcendental gamma one div | open | Special Functions |  |  |
+| 579 | [`Transcendental.transcendental_gamma_one_div_four`](https://lefttosolve.com/p/Transcendental.transcendental_gamma_one_div_four) | Open questions on transcendence of numbers — transcendental gamma one div four | known | Special Functions |  |  |
+| 580 | [`Transcendental.transcendental_gamma_one_div_six`](https://lefttosolve.com/p/Transcendental.transcendental_gamma_one_div_six) | Open questions on transcendence of numbers — transcendental gamma one div six | known | Special Functions |  |  |
+| 581 | [`Transcendental.transcendental_gamma_one_div_three`](https://lefttosolve.com/p/Transcendental.transcendental_gamma_one_div_three) | Open questions on transcendence of numbers — transcendental gamma one div three | known | Special Functions |  |  |
+| 582 | [`Transcendental.transcendental_gamma_one_div_two`](https://lefttosolve.com/p/Transcendental.transcendental_gamma_one_div_two) | Open questions on transcendence of numbers — transcendental gamma one div two | known | Special Functions |  | yes |
+| 583 | [`Transcendental.transcendental_gompertzConstant`](https://lefttosolve.com/p/Transcendental.transcendental_gompertzConstant) | Open questions on transcendence of numbers — transcendental gompertzConstant | open | Special Functions |  |  |
+| 584 | [`TuzaConjecture.tuza_conjecture`](https://lefttosolve.com/p/TuzaConjecture.tuza_conjecture) | Tuza's conjecture | open | Combinatorics |  |  |
+| 585 | [`TuzaConjecture.tuza_conjecture.variants.haxell`](https://lefttosolve.com/p/TuzaConjecture.tuza_conjecture.variants.haxell) | Tuza's conjecture — haxell | known | Combinatorics |  | yes |
+| 586 | [`TwinPrimes.twin_primes`](https://lefttosolve.com/p/TwinPrimes.twin_primes) | Twin prime conjecture | open | Number Theory |  |  |
+| 587 | [`UnionClosed.union_closed`](https://lefttosolve.com/p/UnionClosed.union_closed) | Union-closed sets conjecture | open | Combinatorics |  |  |
+| 588 | [`UnionClosed.union_closed.variants.cardinality_even_of_union_closed_tight`](https://lefttosolve.com/p/UnionClosed.union_closed.variants.cardinality_even_of_union_closed_tight) | Union-closed sets conjecture — cardinality even of union closed tight | open | Combinatorics |  |  |
+| 589 | [`UnionClosed.union_closed.variants.family_card`](https://lefttosolve.com/p/UnionClosed.union_closed.variants.family_card) | Union-closed sets conjecture — family card | known | Combinatorics |  |  |
+| 590 | [`UnionClosed.union_closed.variants.univ_card`](https://lefttosolve.com/p/UnionClosed.union_closed.variants.univ_card) | Union-closed sets conjecture — univ card | known | Combinatorics |  |  |
+| 591 | [`UnionClosed.union_closed.variants.yu`](https://lefttosolve.com/p/UnionClosed.union_closed.variants.yu) | Union-closed sets conjecture — yu | known | Combinatorics |  |  |
+| 592 | [`UntouchableNumber.chen_zhao_untouchable_lower_density`](https://lefttosolve.com/p/UntouchableNumber.chen_zhao_untouchable_lower_density) | Erdős (1973); Chen–Zhao (2011) | known | Number Theory |  |  |
+| 593 | [`UntouchableNumber.unique_odd_untouchable_conjecture`](https://lefttosolve.com/p/UntouchableNumber.unique_odd_untouchable_conjecture) | Unique Odd Untouchable Conjecture | open | Number Theory |  |  |
+| 594 | [`VaughtConjecture.vaught_conjecture`](https://lefttosolve.com/p/VaughtConjecture.vaught_conjecture) | Vaught conjecture | open | Logic & Foundations |  |  |
+| 595 | [`VizingConjecture.vizing_conjecture`](https://lefttosolve.com/p/VizingConjecture.vizing_conjecture) | Vizing's conjecture (1968). | open | Combinatorics |  |  |
+| 596 | [`VizingConjecture.vizing_conjecture.variants.clark_suen`](https://lefttosolve.com/p/VizingConjecture.vizing_conjecture.variants.clark_suen) | The Clark–Suen inequality (2000). | known | Combinatorics |  | yes |
+| 597 | [`VizingConjecture.vizing_conjecture.variants.suen_tarr`](https://lefttosolve.com/p/VizingConjecture.vizing_conjecture.variants.suen_tarr) | The Suen–Tarr inequality (2012). | known | Combinatorics |  | yes |
+| 598 | [`WallSunSun.exists_isWallSunSunPrime`](https://lefttosolve.com/p/WallSunSun.exists_isWallSunSunPrime) | Infinitude of Wall–Sun–Sun primes — exists isWallSunSunPrime | open | Number Theory |  |  |
+| 599 | [`WallSunSun.infinite_isWallSunSunPrime`](https://lefttosolve.com/p/WallSunSun.infinite_isWallSunSunPrime) | Infinitude of Wall–Sun–Sun primes — infinite isWallSunSunPrime | open | Number Theory |  |  |
+| 600 | [`WallSunSun.infinite_isWallSunSunPrime_of_disc_eq`](https://lefttosolve.com/p/WallSunSun.infinite_isWallSunSunPrime_of_disc_eq) | Infinitude of Wall–Sun–Sun primes — infinite isWallSunSunPrime of disc eq | open | Number Theory |  |  |
+| 601 | [`WeighingMatrix.weighing_matrix_conjecture`](https://lefttosolve.com/p/WeighingMatrix.weighing_matrix_conjecture) | Weighing matrix conjecture | open | Combinatorics, Linear Algebra |  |  |
+| 602 | [`WeighingMatrix.weighing_matrix_conjecture.variants.asymptotic`](https://lefttosolve.com/p/WeighingMatrix.weighing_matrix_conjecture.variants.asymptotic) | Asymptotic existence of weighing matrices | known | Combinatorics, Linear Algebra |  |  |
+| 603 | [`WieferichMirimanoffPrime.exists_isWieferichPrime_and_isMirimanoffPrime`](https://lefttosolve.com/p/WieferichMirimanoffPrime.exists_isWieferichPrime_and_isMirimanoffPrime) | Can a prime $p$ satisfy $2^{p-1} \\equiv 1 \\pmod{p^2}$ and $3^{p-1} \\equiv 1 \\pmod{p^2}$? — exists isWieferichPrime and isMirimanoffPrime | open | Number Theory |  |  |
+| 604 | [`WieferichMirimanoffPrime.isMirimanoffPrime_iff`](https://lefttosolve.com/p/WieferichMirimanoffPrime.isMirimanoffPrime_iff) | Can a prime $p$ satisfy $2^{p-1} \\equiv 1 \\pmod{p^2}$ and $3^{p-1} \\equiv 1 \\pmod{p^2}$? — isMirimanoffPrime iff | open | Number Theory |  |  |
+| 605 | [`WieferichPrime.exists_isWieferichPrimeBase_47`](https://lefttosolve.com/p/WieferichPrime.exists_isWieferichPrimeBase_47) | Wieferich primes — exists isWieferichPrimeBase 47 | open | Number Theory |  |  |
+| 606 | [`WieferichPrime.infinite_isWieferichPrime`](https://lefttosolve.com/p/WieferichPrime.infinite_isWieferichPrime) | Wieferich primes — infinite isWieferichPrime | open | Number Theory |  |  |
+| 607 | [`WieferichPrime.infinite_isWieferichPrimeBase`](https://lefttosolve.com/p/WieferichPrime.infinite_isWieferichPrimeBase) | Wieferich primes — infinite isWieferichPrimeBase | open | Number Theory |  |  |
+| 608 | [`WieferichPrime.isWieferichPrime_iff`](https://lefttosolve.com/p/WieferichPrime.isWieferichPrime_iff) | Wieferich primes — isWieferichPrime iff | open | Number Theory |  |  |
+| 609 | [`WilfNumericalSemigroupConjecture.wilf_conjecture_embedding_dim_le_three`](https://lefttosolve.com/p/WilfNumericalSemigroupConjecture.wilf_conjecture_embedding_dim_le_three) | Fröberg–Gottlieb–Häggkvist Theorem | known | Group Theory, Number Theory |  | yes |
+| 610 | [`WilfNumericalSemigroupConjecture.wilf_numerical_semigroup_conjecture`](https://lefttosolve.com/p/WilfNumericalSemigroupConjecture.wilf_numerical_semigroup_conjecture) | Wilf's Conjecture | open | Group Theory, Number Theory |  |  |
+| 611 | [`WilsonPrime.infinitely_many_wilson_primes`](https://lefttosolve.com/p/WilsonPrime.infinitely_many_wilson_primes) | Wilson primes | open | Number Theory |  |  |
+| 612 | [`WolstenholmePrime.wolstenholme_bernoulli`](https://lefttosolve.com/p/WolstenholmePrime.wolstenholme_bernoulli) | Wolstenholme Prime — wolstenholme bernoulli | warmup | Number Theory |  | yes |
+| 613 | [`WolstenholmePrime.wolstenholme_harmonic`](https://lefttosolve.com/p/WolstenholmePrime.wolstenholme_harmonic) | Wolstenholme Prime — wolstenholme harmonic | warmup | Number Theory |  | yes |
+| 614 | [`WolstenholmePrime.wolstenholme_prime_infinite`](https://lefttosolve.com/p/WolstenholmePrime.wolstenholme_prime_infinite) | Wolstenholme Prime — wolstenholme prime infinite | open | Number Theory |  |  |
+| 615 | [`WoodallPrimes.infinitely_many_woodall_primes`](https://lefttosolve.com/p/WoodallPrimes.infinitely_many_woodall_primes) | WoodallPrimes | open | Number Theory |  |  |

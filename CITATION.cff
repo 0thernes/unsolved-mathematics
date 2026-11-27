@@ -13,11 +13,13 @@ url: "https://0thernes.github.io/unsolved-mathematics/"
 identifiers:
   - type: swh
     value: "swh:1:snp:c11ec8263dd64b986c52bb400b8c3a85a3e6a254"
-    description: "Software Heritage permanent archival snapshot of release v0.6.0 (v0.7.0 snapshot requested upon release)"
+    description: "Software Heritage permanent archival snapshot of release v0.6.0 (v0.8.0 snapshot requested upon release)"
 abstract: >
-  A reproducible, ranked, FAIR-indexed research dossier collection of 106 open
-  mathematical problems across 38 fields, paired with a standalone eight-domain,
-  six-kernel Lean 4.35.0 formal verification core with autoImplicit = false
+  A reproducible, ranked, FAIR-indexed research dossier collection of 120 open
+  mathematical problems across 38 fields (plus a daily full sidecar mirror of
+  all 25 Left to Solve research programs / 59,396 targets), paired with a
+  standalone eight-domain, six-kernel Lean 4.35.0 formal verification core with
+  autoImplicit = false
   (66 headline theorems, 16 non-vacuity witnesses, and 20 adversarial
   refutations = 102 audited declarations across Collatz Fine-Wilf valuation
   ceilings / d <= 7 & 1-/2-odd-step positive-cycle exclusion / catalytic
@@ -44,5 +46,5 @@ keywords:
   - retrieval-augmented generation
   - knowledge base
 license: CC-BY-4.0
-version: 0.7.0
-date-released: 2026-11-26
+version: 0.8.0
+date-released: 2026-11-27

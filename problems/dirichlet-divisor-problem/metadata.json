@@ -1,0 +1,30 @@
+{
+  "slug": "dirichlet-divisor-problem",
+  "title": "The Dirichlet Divisor Problem",
+  "field": "Analytic Number Theory",
+  "subfields": [
+    "Exponential Sums",
+    "Lattice Point Counting",
+    "Riemann Zeta Function"
+  ],
+  "year_posed": 1849,
+  "originators": [
+    "Peter Gustav Lejeune Dirichlet"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "Let D(x) = sum_{n <= x} d(n) be the summatory divisor function and Delta(x) = D(x) - x log x - (2 gamma - 1) x be the error term. Determine the infimum theta of all exponents alpha such that Delta(x) = O(x^alpha); the Dirichlet divisor conjecture asserts that theta = 1/4 (i.e., Delta(x) = O_eps(x^{1/4 + eps}) for all eps > 0).\n",
+  "difficulty": 88,
+  "centrality": 74,
+  "tractability": 18,
+  "status": "active-progress",
+  "tags": [
+    "divisor-function",
+    "exponential-sums",
+    "lattice-points",
+    "zeta-function",
+    "Dirichlet"
+  ],
+  "rank": 10,
+  "css": 77.4,
+  "folder": "dirichlet-divisor-problem"
+}

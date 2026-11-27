@@ -1,6 +1,6 @@
 # Brocard's Problem
 
-> **Atlas Rank #79** · CSS **56.8** · Field: *Number Theory* · Posed: **1876** · Status: `open`
+> **Atlas Rank #92** · CSS **56.8** · Field: *Number Theory* · Posed: **1876** · Status: `open`
 
 ## Plain statement
 

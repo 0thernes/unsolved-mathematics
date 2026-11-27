@@ -16,6 +16,6 @@
 {"fields": ["Geometry"], "id": "Mathoverflow34145.rectangles_pack_square_501_div_500", "kind": "known", "prize": null, "solved": true, "title": "Mathoverflow 34145 — rectangles pack square 501 div 500"}
 {"fields": ["Geometry"], "id": "Mathoverflow34145.rectangles_pack_unit_square", "kind": "open", "prize": null, "solved": false, "title": "Mathoverflow 34145 — rectangles pack unit square"}
 {"fields": ["Associative Rings"], "id": "Mathoverflow486451.exists_semiring_unique_left_maximal_not_unique_right_maximal", "kind": "known", "prize": null, "solved": true, "title": "Mathoverflow 486451"}
-{"fields": ["Combinatorics"], "id": "Mathoverflow508539.mathoverflow_508539", "kind": "known", "prize": null, "solved": false, "title": "MathOverflow 508539"}
+{"fields": ["Combinatorics"], "id": "Mathoverflow508539.mathoverflow_508539", "kind": "known", "prize": null, "solved": true, "title": "MathOverflow 508539"}
 {"fields": ["Number Theory"], "id": "Mathoverflow75792.complexity_three_pow", "kind": "known", "prize": null, "solved": true, "title": "Mathoverflow 75792 — complexity three pow"}
 {"fields": ["Number Theory"], "id": "Mathoverflow75792.complexity_two_pow", "kind": "open", "prize": null, "solved": false, "title": "Mathoverflow 75792 — complexity two pow"}

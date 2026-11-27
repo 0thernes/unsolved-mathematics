@@ -1,0 +1,31 @@
+{
+  "slug": "erdos-turan-additive-bases",
+  "title": "The Erdős–Turán Conjecture on Additive Bases",
+  "field": "Number Theory",
+  "subfields": [
+    "Additive Number Theory",
+    "Additive Combinatorics",
+    "Analytic Number Theory"
+  ],
+  "year_posed": 1941,
+  "originators": [
+    "Paul Erdős",
+    "Pál Turán"
+  ],
+  "millennium_prize": false,
+  "statement_plain": "If A is a subset of the natural numbers such that every sufficiently large integer can be written as a sum of two elements of A (an asymptotic additive basis of order 2), then the representation function r_A(n) = |{(a, b) in A x A : a + b = n}| must be unbounded.\n",
+  "difficulty": 87,
+  "centrality": 66,
+  "tractability": 18,
+  "status": "open",
+  "tags": [
+    "Erdos-prize",
+    "additive-bases",
+    "representation-function",
+    "Sidon",
+    "number-theory"
+  ],
+  "rank": 30,
+  "css": 68.467,
+  "folder": "erdos-turan-additive-bases"
+}

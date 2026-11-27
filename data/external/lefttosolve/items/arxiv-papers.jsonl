@@ -1,12 +1,12 @@
 {"fields": ["Linear Algebra"], "id": "Arxiv.0805.3777.cprank_le_of_square_slices", "kind": "known", "prize": null, "solved": false, "title": "Generic and maximal rank of 3-tensors — cprank le of square slices"}
 {"fields": ["Linear Algebra"], "id": "Arxiv.0805.3777.cprank_le_of_three_slices", "kind": "known", "prize": null, "solved": false, "title": "Generic and maximal rank of 3-tensors — cprank le of three slices"}
-{"fields": ["Algebraic Geometry", "Linear Algebra"], "id": "Arxiv.0805.3777.isGenericRank_cube", "kind": "known", "prize": null, "solved": false, "title": "Generic and maximal rank of 3-tensors — isGenericRank cube"}
+{"fields": ["Algebraic Geometry", "Linear Algebra"], "id": "Arxiv.0805.3777.isGenericRank_cube", "kind": "known", "prize": null, "solved": true, "title": "Generic and maximal rank of 3-tensors — isGenericRank cube"}
 {"fields": ["Algebraic Geometry", "Linear Algebra"], "id": "Arxiv.0805.3777.isGenericRank_four", "kind": "known", "prize": null, "solved": false, "title": "Generic and maximal rank of 3-tensors — isGenericRank four"}
 {"fields": ["Linear Algebra"], "id": "Arxiv.0805.3777.isGenericRank_matrix", "kind": "warmup", "prize": null, "solved": true, "title": "Generic and maximal rank of 3-tensors — isGenericRank matrix"}
 {"fields": ["Algebraic Geometry", "Linear Algebra"], "id": "Arxiv.0805.3777.isGenericRank_of_eq_critical", "kind": "known", "prize": null, "solved": false, "title": "Generic and maximal rank of 3-tensors — isGenericRank of eq critical"}
 {"fields": ["Algebraic Geometry", "Linear Algebra"], "id": "Arxiv.0805.3777.isGenericRank_of_gt_critical", "kind": "known", "prize": null, "solved": false, "title": "Generic and maximal rank of 3-tensors — isGenericRank of gt critical"}
 {"fields": ["Algebraic Geometry", "Linear Algebra"], "id": "Arxiv.0805.3777.isGenericRank_of_le_critical", "kind": "open", "prize": null, "solved": false, "title": "Friedland's conjecture."}
-{"fields": ["Algebraic Geometry", "Linear Algebra"], "id": "Arxiv.0805.3777.isGenericRank_three_even", "kind": "known", "prize": null, "solved": false, "title": "Generic and maximal rank of 3-tensors — isGenericRank three even"}
+{"fields": ["Algebraic Geometry", "Linear Algebra"], "id": "Arxiv.0805.3777.isGenericRank_three_even", "kind": "known", "prize": null, "solved": true, "title": "Generic and maximal rank of 3-tensors — isGenericRank three even"}
 {"fields": ["Algebraic Geometry", "Linear Algebra"], "id": "Arxiv.0805.3777.isGenericRank_three_odd", "kind": "known", "prize": null, "solved": false, "title": "Generic and maximal rank of 3-tensors — isGenericRank three odd"}
 {"fields": ["Linear Algebra"], "id": "Arxiv.0805.3777.isMaxRank_cube", "kind": "open", "prize": null, "solved": false, "title": "Open problem."}
 {"fields": ["Algebraic Geometry", "Linear Algebra"], "id": "Arxiv.0805.3777.isMaxRank_le_two_mul_isGenericRank", "kind": "known", "prize": null, "solved": true, "title": "Generic and maximal rank of 3-tensors — isMaxRank le two mul isGenericRank"}
@@ -40,7 +40,7 @@
 {"fields": ["Number Theory"], "id": "Arxiv.2501.03234.conjecture_4_2", "kind": "open", "prize": null, "solved": false, "title": "Conjecture 4.2"}
 {"fields": ["Number Theory"], "id": "Arxiv.2501.03234.conjecture_4_3", "kind": "open", "prize": null, "solved": false, "title": "Conjecture 4.3"}
 {"fields": ["Number Theory"], "id": "Arxiv.2501.03234.conjecture_4_4", "kind": "open", "prize": null, "solved": false, "title": "Conjecture 4.4"}
-{"fields": ["Combinatorics"], "id": "Arxiv.2507.17780.tx_graffiti_conjecture_1", "kind": "known", "prize": null, "solved": false, "title": "TxGraffiti Conjecture 1: independence, annihilation, and residue"}
+{"fields": ["Combinatorics"], "id": "Arxiv.2507.17780.tx_graffiti_conjecture_1", "kind": "known", "prize": null, "solved": true, "title": "TxGraffiti Conjecture 1: independence, annihilation, and residue"}
 {"fields": ["Combinatorics"], "id": "Arxiv.2507.17780.tx_graffiti_conjecture_2", "kind": "known", "prize": null, "solved": true, "title": "TxGraffiti Conjecture 2: zero forcing versus independence (cubic graphs)"}
 {"fields": ["Combinatorics"], "id": "Arxiv.2507.17780.tx_graffiti_conjecture_3", "kind": "open", "prize": null, "solved": false, "title": "TxGraffiti Conjecture 3: independent domination versus saturation (regular)"}
 {"fields": ["Real Functions"], "id": "Arxiv.2602.05192.finiteAdditiveConvolution_degree", "kind": "warmup", "prize": null, "solved": true, "title": "First Proof, Theorem 4 — finiteAdditiveConvolution degree"}
@@ -61,9 +61,9 @@
 {"fields": ["Combinatorics"], "id": "Arxiv.2606.03696.bondy_conjecture.variants.large_explicit", "kind": "known", "prize": null, "solved": false, "title": "Theorem 1.1 (Ma-Ning-Zhao, 2026), explicit threshold."}
 {"fields": ["Combinatorics"], "id": "Arxiv.2606.03696.bondy_conjecture.variants.one", "kind": "known", "prize": null, "solved": true, "title": "Bondy's conjecture on longest cycles in highly connected graphs — one"}
 {"fields": ["Combinatorics"], "id": "Arxiv.2606.03696.bondy_conjecture.variants.three", "kind": "known", "prize": null, "solved": false, "title": "Bondy's conjecture on longest cycles in highly connected graphs — three"}
-{"fields": ["Combinatorics"], "id": "Arxiv.2606.03696.bondy_conjecture.variants.two", "kind": "known", "prize": null, "solved": false, "title": "Bondy's conjecture on longest cycles in highly connected graphs — two"}
+{"fields": ["Combinatorics"], "id": "Arxiv.2606.03696.bondy_conjecture.variants.two", "kind": "known", "prize": null, "solved": true, "title": "Bondy's conjecture on longest cycles in highly connected graphs — two"}
 {"fields": ["Convex & Discrete Geometry"], "id": "Arxiv.2607.03582.volume_lpSum_eq_of_isParallelogramAtOrigin", "kind": "known", "prize": null, "solved": true, "title": "Planar $L_p$-Rogers-Shephard, the equality case"}
-{"fields": ["Convex & Discrete Geometry"], "id": "Arxiv.2607.03582.volume_lpSum_le", "kind": "known", "prize": null, "solved": false, "title": "Corollary 29 (Fradelizi-Manui-Meyer-Ndiaye, 2026)."}
+{"fields": ["Convex & Discrete Geometry"], "id": "Arxiv.2607.03582.volume_lpSum_le", "kind": "known", "prize": null, "solved": true, "title": "Corollary 29 (Fradelizi-Manui-Meyer-Ndiaye, 2026)."}
 {"fields": ["Geometry", "Linear Algebra"], "id": "Arxiv.2607.05349.hasFiniteConcentration_of_hasMicroscopicWeighting", "kind": "known", "prize": null, "solved": true, "title": "The microscopic weighting on a metric space — hasFiniteConcentration of hasMicroscopicWeighting"}
 {"fields": ["Geometry", "Linear Algebra"], "id": "Arxiv.2607.05349.hasMicroscopicWeighting_iff_of_isUnit", "kind": "known", "prize": null, "solved": true, "title": "The microscopic weighting on a metric space — hasMicroscopicWeighting iff of isUnit"}
 {"fields": ["Number Theory"], "id": "Arxiv.2607.05739.tan_arctan_sum_not_integer", "kind": "open", "prize": null, "solved": false, "title": "Conjecture (Amdeberhan-Medina-Moll, 2008)."}
@@ -74,7 +74,7 @@
 {"fields": ["Combinatorics"], "id": "Arxiv.2607.08630.balister_gyori_schelp_conjecture", "kind": "open", "prize": null, "solved": false, "title": "The Balister–Győri–Schelp conjecture"}
 {"fields": ["Optics", "Potential Theory"], "id": "Arxiv.2607.27197.maxwell_conjecture.counterexample", "kind": "known", "prize": null, "solved": true, "title": "Theorem 1"}
 {"fields": ["Optics", "Potential Theory"], "id": "Arxiv.2607.27197.maxwell_conjecture.counterexample_morse", "kind": "known", "prize": null, "solved": true, "title": "The Maxwell conjecture — counterexample morse"}
-{"fields": ["Optics", "Potential Theory"], "id": "Arxiv.2607.27197.maxwell_conjecture.iterated", "kind": "known", "prize": null, "solved": false, "title": "Proposition 1"}
+{"fields": ["Optics", "Potential Theory"], "id": "Arxiv.2607.27197.maxwell_conjecture.iterated", "kind": "known", "prize": null, "solved": true, "title": "Proposition 1"}
 {"fields": ["Optics", "Potential Theory"], "id": "Arxiv.2607.27197.maxwell_conjecture.phiZero_critical_points", "kind": "known", "prize": null, "solved": true, "title": "Lemma 2"}
 {"fields": ["Optics", "Potential Theory"], "id": "Arxiv.2607.27197.maxwell_conjecture.variants.polynomial_bound", "kind": "open", "prize": null, "solved": false, "title": "The Maxwell conjecture — polynomial bound"}
 {"fields": ["Optics", "Potential Theory"], "id": "Arxiv.2607.27197.maxwell_conjecture.variants.three_charges", "kind": "open", "prize": null, "solved": false, "title": "The Maxwell conjecture — three charges"}
