@@ -12,7 +12,7 @@
 
 [Program page](https://lefttosolve.com/programs/Wikipedia) · Problems from Wikipedia's list of unsolved problems in mathematics.
 
-Targets 615 · open 336 · solved here (site claim) 114 · kinds open/known/unformalized/other = 336/242/0/37 · snapshot `1491f139c5a17e60` (`2026-11-27T03:29:12Z`).
+Targets 615 · open 336 · solved here (site claim) 124 · kinds open/known/unformalized/other = 336/242/0/37 · snapshot `6aad4dc91eea6bbb` (`2026-11-27T04:31:27Z`).
 
 Back to [all programs](../PROGRAMS.md).
 
@@ -297,9 +297,9 @@ Back to [all programs](../PROGRAMS.md).
 | 277 | `Kakeya.kakeya_set_conjecture` | Kakeya problem — kakeya set conjecture | open | Harmonic Analysis |  |  |
 | 278 | `Kaplansky.UnitConjecture.counterexamples.i` | Kaplansky's Conjectures — i | known | Associative Rings, Group Theory |  | yes |
 | 279 | `Kaplansky.UnitConjecture.counterexamples.ii` | Kaplansky's Conjectures — ii | known | Associative Rings, Group Theory |  | yes |
-| 280 | `Kaplansky.direct_finiteness_conjecture` | Kaplansky's direct finiteness conjecture | known | Associative Rings, Group Theory |  |  |
-| 281 | `Kaplansky.direct_finiteness_conjecture.variants.char_two` | Kaplansky's Conjectures — char two | known | Associative Rings, Group Theory |  |  |
-| 282 | `Kaplansky.direct_finiteness_conjecture.variants.char_zero` | Kaplansky's Conjectures — char zero | known | Associative Rings, Group Theory |  |  |
+| 280 | `Kaplansky.direct_finiteness_conjecture` | Kaplansky's direct finiteness conjecture | known | Associative Rings, Group Theory |  | yes |
+| 281 | `Kaplansky.direct_finiteness_conjecture.variants.char_two` | Kaplansky's Conjectures — char two | known | Associative Rings, Group Theory |  | yes |
+| 282 | `Kaplansky.direct_finiteness_conjecture.variants.char_zero` | Kaplansky's Conjectures — char zero | known | Associative Rings, Group Theory |  | yes |
 | 283 | `Kaplansky.idempotent_conjecture` | The idempotent conjecture | open | Associative Rings, Group Theory |  |  |
 | 284 | `Kaplansky.promislow_group_is_torsionfree` | Kaplansky's Conjectures | warmup | Group Theory |  | yes |
 | 285 | `KeithNumber.keith_numbers_infinite` | Keith numbers — keith numbers infinite | open | Number Theory |  |  |
@@ -379,7 +379,7 @@ Back to [all programs](../PROGRAMS.md).
 | 359 | `Mills.exists-prime` | Mills' theorem | known | Number Theory |  |  |
 | 360 | `Mills.exists_least` | Mills' constant. | known | Number Theory |  |  |
 | 361 | `Mills.irrational` | Mills' constant is irrational | known | Number Theory |  |  |
-| 362 | `Mills.lower_bound_of_RH` | Mills' constant lower bound | known | Number Theory |  |  |
+| 362 | `Mills.lower_bound_of_RH` | Mills' constant lower bound | known | Number Theory |  | yes |
 | 363 | `Mills.mem_Ioo` | Mills' Theorem | known | Number Theory |  |  |
 | 364 | `MinimalPrime.base_seventeen_f19_family_minimal_prime_question` | Minimal primes in radix bases — base seventeen f19 family minimal prime question | open | Computer Science, Number Theory |  |  |
 | 365 | `MinimalPrime.base_ten_minimal_primes_card` | Minimal primes in radix bases — base ten minimal primes card | known | Computer Science, Number Theory |  | yes |
@@ -389,7 +389,7 @@ Back to [all programs](../PROGRAMS.md).
 | 369 | `MontgomeryPairCorrelationConjecture.montgomery_pair_correlation_conjecture` | Montgomery's GUE pair correlation conjecture for zeta zeros | open | Complex Analysis, Number Theory |  |  |
 | 370 | `MontgomeryPairCorrelationConjecture.montgomery_pair_correlation_conjecture.variants.general_interval` | Montgomery's GUE pair correlation conjecture for zeta zeros — general interval | open | Complex Analysis, Number Theory |  |  |
 | 371 | `MoserWorm.convex_mosers_worm_problem` | Convex Moser's Worm Problem | open | Convex & Discrete Geometry |  |  |
-| 372 | `MoserWorm.convex_mosers_worm_problem_bound_attained` | Moser's Worm — convex mosers worm problem bound attained | known | Convex & Discrete Geometry |  |  |
+| 372 | `MoserWorm.convex_mosers_worm_problem_bound_attained` | Moser's Worm — convex mosers worm problem bound attained | known | Convex & Discrete Geometry |  | yes |
 | 373 | `MoserWorm.convex_mosers_worm_problem_lower_bound` | Moser's Worm — convex mosers worm problem lower bound | known | Convex & Discrete Geometry |  |  |
 | 374 | `MoserWorm.convex_mosers_worm_problem_upper_bound` | Moser's Worm — convex mosers worm problem upper bound | known | Convex & Discrete Geometry |  |  |
 | 375 | `MoserWorm.mosers_worm_problem` | Moser's Worm Problem | open | Convex & Discrete Geometry |  |  |
@@ -470,12 +470,12 @@ Back to [all programs](../PROGRAMS.md).
 | 450 | `ReconstructionConjecture.reconstruction_conjecture` | The reconstruction conjecture | open | Combinatorics |  |  |
 | 451 | `ReconstructionConjecture.reconstruction_conjecture.variants.tree` | Trees are reconstructible | known | Combinatorics |  |  |
 | 452 | `RefactorableNumber.infinitely_many_consecutive_refactorable_pairs` | Colton's Conjecture (1999, Conjecture 2) | open | Number Theory |  |  |
-| 453 | `RefactorableNumber.no_three_consecutive_refactorable` | Zelinsky's Theorem (2002) | known | Number Theory |  |  |
+| 453 | `RefactorableNumber.no_three_consecutive_refactorable` | Zelinsky's Theorem (2002) | known | Number Theory |  | yes |
 | 454 | `RefactorableNumber.refactorable_hasDensity_zero` | Kennedy–Cooper Theorem (1990) | known | Number Theory |  | yes |
 | 455 | `RefactorableNumber.zelinsky_refactorable_progression_conjecture` | Zelinsky's Conjecture (2002, Conjecture 32) | open | Number Theory |  |  |
 | 456 | `RegularPrimes.infinitude_of_irregularprimes` | Infinite Regular Primes — infinitude of irregularprimes | known | Number Theory |  |  |
 | 457 | `RegularPrimes.isRegularPrime_iff_Bernoulli` | Kummer's criterion. | warmup | Number Theory |  |  |
-| 458 | `RegularPrimes.not_isRegularPrime_37` | Infinite Regular Primes — not isRegularPrime 37 | warmup | Number Theory |  |  |
+| 458 | `RegularPrimes.not_isRegularPrime_37` | Infinite Regular Primes — not isRegularPrime 37 | warmup | Number Theory |  | yes |
 | 459 | `RegularPrimes.regularprime_conjecture` | Infinite Regular Primes — regularprime conjecture | open | Number Theory |  |  |
 | 460 | `RegularPrimes.small_regular_primes` | Infinite Regular Primes — small regular primes | warmup | Number Theory |  |  |
 | 461 | `RepunitPrime.infinitely_many_repunit_primes` | Decimal Repunit Primes | open | Number Theory |  |  |
@@ -533,7 +533,7 @@ Back to [all programs](../PROGRAMS.md).
 | 513 | `SmallCohenMacaulayModules.exists_isBalancedBigCohenMacaulay` | Existence of balanced big Cohen-Macaulay modules. | known | Commutative Algebra |  |  |
 | 514 | `SmallCohenMacaulayModules.exists_isSmallCohenMacaulay` | The small Cohen-Macaulay modules conjecture. | open | Commutative Algebra |  |  |
 | 515 | `SmallCohenMacaulayModules.exists_isSmallCohenMacaulay.variants.ringKrullDim_le_two` | The small Cohen-Macaulay modules conjecture — ringKrullDim le two | known | Commutative Algebra |  |  |
-| 516 | `SmallCohenMacaulayModules.isBalancedBigCohenMacaulay_iff_isSmallCohenMacaulay` | The small Cohen-Macaulay modules conjecture | warmup | Commutative Algebra |  |  |
+| 516 | `SmallCohenMacaulayModules.isBalancedBigCohenMacaulay_iff_isSmallCohenMacaulay` | The small Cohen-Macaulay modules conjecture | warmup | Commutative Algebra |  | yes |
 | 517 | `SmithNumber.infinite_smith_brothers` | McDaniel's Theorem on Smith Numbers and the Smith Brothers Problem | open | Number Theory |  |  |
 | 518 | `SmithNumber.mcdaniel_infinitely_many_smith_numbers` | McDaniel's Theorem (1987) | known | Number Theory |  | yes |
 | 519 | `SnakeInBox.coil_small_dimensions` | Snake in the box — coil small dimensions | known | Combinatorics |  |  |
@@ -626,7 +626,7 @@ Back to [all programs](../PROGRAMS.md).
 | 606 | `WieferichPrime.infinite_isWieferichPrime` | Wieferich primes — infinite isWieferichPrime | open | Number Theory |  |  |
 | 607 | `WieferichPrime.infinite_isWieferichPrimeBase` | Wieferich primes — infinite isWieferichPrimeBase | open | Number Theory |  |  |
 | 608 | `WieferichPrime.isWieferichPrime_iff` | Wieferich primes — isWieferichPrime iff | open | Number Theory |  |  |
-| 609 | `WilfNumericalSemigroupConjecture.wilf_conjecture_embedding_dim_le_three` | Fröberg–Gottlieb–Häggkvist Theorem | known | Group Theory, Number Theory |  |  |
+| 609 | `WilfNumericalSemigroupConjecture.wilf_conjecture_embedding_dim_le_three` | Fröberg–Gottlieb–Häggkvist Theorem | known | Group Theory, Number Theory |  | yes |
 | 610 | `WilfNumericalSemigroupConjecture.wilf_numerical_semigroup_conjecture` | Wilf's Conjecture | open | Group Theory, Number Theory |  |  |
 | 611 | `WilsonPrime.infinitely_many_wilson_primes` | Wilson primes | open | Number Theory |  |  |
 | 612 | `WolstenholmePrime.wolstenholme_bernoulli` | Wolstenholme Prime — wolstenholme bernoulli | warmup | Number Theory |  | yes |

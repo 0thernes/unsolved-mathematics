@@ -12,7 +12,7 @@
 
 [Program page](https://lefttosolve.com/programs/Wikipedia%20list%20%28not%20formalized%29) · Wikipedia's list of unsolved problems and list of conjectures: everything not yet stated in Lean. Step one is a faithful statement.
 
-Targets 366 · open 366 · solved here (site claim) 0 · kinds open/known/unformalized/other = 0/0/366/0 · snapshot `1491f139c5a17e60` (`2026-11-27T03:29:12Z`).
+Targets 366 · open 366 · solved here (site claim) 0 · kinds open/known/unformalized/other = 0/0/366/0 · snapshot `6aad4dc91eea6bbb` (`2026-11-27T04:31:27Z`).
 
 Back to [all programs](../PROGRAMS.md).
 

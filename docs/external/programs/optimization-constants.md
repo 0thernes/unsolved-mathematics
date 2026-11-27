@@ -12,7 +12,7 @@
 
 [Program page](https://lefttosolve.com/programs/Optimization%20Constants) · Open problems stated in research papers and books.
 
-Targets 31 · open 11 · solved here (site claim) 3 · kinds open/known/unformalized/other = 11/19/0/1 · snapshot `1491f139c5a17e60` (`2026-11-27T03:29:12Z`).
+Targets 31 · open 11 · solved here (site claim) 4 · kinds open/known/unformalized/other = 11/19/0/1 · snapshot `6aad4dc91eea6bbb` (`2026-11-27T04:31:27Z`).
 
 Back to [all programs](../PROGRAMS.md).
 
@@ -43,7 +43,7 @@ Back to [all programs](../PROGRAMS.md).
 | 23 | `Constant7a.c7a_le_42` | Tao's Optimization Constant 7a / The Irrationality Measure of $\\pi$ — c7a le 42 | known | Number Theory |  |  |
 | 24 | `Constant7a.c7a_lt_14_797075` | Tao's Optimization Constant 7a / The Irrationality Measure of $\\pi$ — c7a lt 14 797075 | known | Number Theory |  |  |
 | 25 | `Constant7a.c7a_upper_bound` | Tao's Optimization Constant 7a / The Irrationality Measure of $\\pi$ — c7a upper bound | known | Number Theory |  |  |
-| 26 | `Constant7a.irrationalityExponent_of_algebraic` | Tao's Optimization Constant 7a / The Irrationality Measure of $\\pi$ — irrationalityExponent of algebraic | known | Number Theory |  |  |
+| 26 | `Constant7a.irrationalityExponent_of_algebraic` | Tao's Optimization Constant 7a / The Irrationality Measure of $\\pi$ — irrationalityExponent of algebraic | known | Number Theory |  | yes |
 | 27 | `Constant7a.two_le_irrationalityExponent` | Tao's Optimization Constant 7a / The Irrationality Measure of $\\pi$ — two le irrationalityExponent | warmup | Number Theory |  | yes |
 | 28 | `Constant7b.c7b_lower_bound_improved` | Tao's Optimization Constant 7b / The Irrationality Measure of $\\Gamma(1/4)$ — c7b lower bound improved | open | Number Theory, Special Functions |  |  |
 | 29 | `Constant7b.c7b_upper_bound` | Tao's Optimization Constant 7b / The Irrationality Measure of $\\Gamma(1/4)$ — c7b upper bound | known | Number Theory, Special Functions |  |  |

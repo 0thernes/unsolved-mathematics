@@ -12,7 +12,7 @@
 
 [Program page](https://lefttosolve.com/programs/Millennium%20Prize) · The Clay Millennium Prize problems that can be stated in Lean today, with nearby conjectures.
 
-Targets 21 · open 12 · solved here (site claim) 2 · kinds open/known/unformalized/other = 12/2/0/7 · snapshot `1491f139c5a17e60` (`2026-11-27T03:29:12Z`).
+Targets 21 · open 12 · solved here (site claim) 2 · kinds open/known/unformalized/other = 12/2/0/7 · snapshot `6aad4dc91eea6bbb` (`2026-11-27T04:31:27Z`).
 
 Back to [all programs](../PROGRAMS.md).
 

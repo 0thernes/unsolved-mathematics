@@ -12,7 +12,7 @@
 
 [Program page](https://lefttosolve.com/programs/Open%20Quantum%20Problems) · Open problems stated in research papers and books.
 
-Targets 32 · open 28 · solved here (site claim) 4 · kinds open/known/unformalized/other = 28/0/0/4 · snapshot `1491f139c5a17e60` (`2026-11-27T03:29:12Z`).
+Targets 32 · open 28 · solved here (site claim) 4 · kinds open/known/unformalized/other = 28/0/0/4 · snapshot `6aad4dc91eea6bbb` (`2026-11-27T04:31:27Z`).
 
 Back to [all programs](../PROGRAMS.md).
 

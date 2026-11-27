@@ -12,7 +12,7 @@
 
 [Program page](https://lefttosolve.com/programs/arXiv%20papers) · Open problems stated in research papers and books.
 
-Targets 105 · open 43 · solved here (site claim) 26 · kinds open/known/unformalized/other = 43/55/0/7 · snapshot `1491f139c5a17e60` (`2026-11-27T03:29:12Z`).
+Targets 105 · open 43 · solved here (site claim) 26 · kinds open/known/unformalized/other = 43/55/0/7 · snapshot `6aad4dc91eea6bbb` (`2026-11-27T04:31:27Z`).
 
 Back to [all programs](../PROGRAMS.md).
 
@@ -32,7 +32,7 @@ Back to [all programs](../PROGRAMS.md).
 | 12 | `Arxiv.0805.3777.isMaxRank_le_two_mul_isGenericRank` | Generic and maximal rank of 3-tensors — isMaxRank le two mul isGenericRank | known | Algebraic Geometry, Linear Algebra |  | yes |
 | 13 | `Arxiv.0805.3777.isMaxRank_of_le_min` | Generic and maximal rank of 3-tensors — isMaxRank of le min | known | Linear Algebra |  |  |
 | 14 | `Arxiv.0805.3777.isMaxRank_three` | Generic and maximal rank of 3-tensors — isMaxRank three | known | Algebraic Geometry, Linear Algebra |  |  |
-| 15 | `Arxiv.0805.3777.isMaxRank_three_three_five_bounds` | Generic and maximal rank of 3-tensors — isMaxRank three three five bounds | known | Linear Algebra |  |  |
+| 15 | `Arxiv.0805.3777.isMaxRank_three_three_five_bounds` | Generic and maximal rank of 3-tensors — isMaxRank three three five bounds | known | Linear Algebra |  | yes |
 | 16 | `Arxiv.0805.3777.isMaxRank_two` | Generic and maximal rank of 3-tensors — isMaxRank two | known | Linear Algebra |  |  |
 | 17 | `Arxiv.0912.2382.curling_number_conjecture` | The Curling Number Conjecture | open | Number Theory |  |  |
 | 18 | `Arxiv.1207.5099.conjecture` | Conway's subprime Fibonacci sequences | open | Number Theory |  |  |

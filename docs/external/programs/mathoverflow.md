@@ -12,7 +12,7 @@
 
 [Program page](https://lefttosolve.com/programs/MathOverflow) · Questions from MathOverflow that are still open.
 
-Targets 21 · open 9 · solved here (site claim) 9 · kinds open/known/unformalized/other = 9/8/0/4 · snapshot `1491f139c5a17e60` (`2026-11-27T03:29:12Z`).
+Targets 21 · open 9 · solved here (site claim) 10 · kinds open/known/unformalized/other = 9/8/0/4 · snapshot `6aad4dc91eea6bbb` (`2026-11-27T04:31:27Z`).
 
 Back to [all programs](../PROGRAMS.md).
 
@@ -27,7 +27,7 @@ Back to [all programs](../PROGRAMS.md).
 | 7 | `Mathoverflow17560.mathoverflow_17560.variants.with_5` | Mathoverflow17560 — with 5 | warmup | Commutative Algebra, Number Theory |  | yes |
 | 8 | `Mathoverflow21003.mathoverflow_21003` | Mathoverflow 21003 | open | Field Theory |  |  |
 | 9 | `Mathoverflow235893.mathoverflow_235893` | Mathoverflow 235893 | open | General Topology, Real Functions |  |  |
-| 10 | `Mathoverflow235893.mathoverflow_260589` | Mathoverflow 235893 — mathoverflow 260589 | known | General Topology, Real Functions |  |  |
+| 10 | `Mathoverflow235893.mathoverflow_260589` | Mathoverflow 235893 — mathoverflow 260589 | known | General Topology, Real Functions |  | yes |
 | 11 | `Mathoverflow31809.mathoverflow_31809` | Mathoverflow 31809 | known | Category Theory |  |  |
 | 12 | `Mathoverflow339137.mathoverflow_339137` | Mathoverflow 339137 | open | Field Theory |  |  |
 | 13 | `Mathoverflow339137.mathoverflow_339137_probabilistic` | Mathoverflow 339137 — mathoverflow 339137 probabilistic | warmup | Probability |  | yes |

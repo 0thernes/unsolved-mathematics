@@ -12,7 +12,7 @@
 {"fields": ["Algebraic Geometry", "Linear Algebra"], "id": "Arxiv.0805.3777.isMaxRank_le_two_mul_isGenericRank", "kind": "known", "prize": null, "solved": true, "title": "Generic and maximal rank of 3-tensors — isMaxRank le two mul isGenericRank"}
 {"fields": ["Linear Algebra"], "id": "Arxiv.0805.3777.isMaxRank_of_le_min", "kind": "known", "prize": null, "solved": false, "title": "Generic and maximal rank of 3-tensors — isMaxRank of le min"}
 {"fields": ["Algebraic Geometry", "Linear Algebra"], "id": "Arxiv.0805.3777.isMaxRank_three", "kind": "known", "prize": null, "solved": false, "title": "Generic and maximal rank of 3-tensors — isMaxRank three"}
-{"fields": ["Linear Algebra"], "id": "Arxiv.0805.3777.isMaxRank_three_three_five_bounds", "kind": "known", "prize": null, "solved": false, "title": "Generic and maximal rank of 3-tensors — isMaxRank three three five bounds"}
+{"fields": ["Linear Algebra"], "id": "Arxiv.0805.3777.isMaxRank_three_three_five_bounds", "kind": "known", "prize": null, "solved": true, "title": "Generic and maximal rank of 3-tensors — isMaxRank three three five bounds"}
 {"fields": ["Linear Algebra"], "id": "Arxiv.0805.3777.isMaxRank_two", "kind": "known", "prize": null, "solved": false, "title": "Generic and maximal rank of 3-tensors — isMaxRank two"}
 {"fields": ["Number Theory"], "id": "Arxiv.0912.2382.curling_number_conjecture", "kind": "open", "prize": null, "solved": false, "title": "The Curling Number Conjecture"}
 {"fields": ["Number Theory"], "id": "Arxiv.1207.5099.conjecture", "kind": "open", "prize": null, "solved": false, "title": "Conway's subprime Fibonacci sequences"}

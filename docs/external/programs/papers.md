@@ -12,7 +12,7 @@
 
 [Program page](https://lefttosolve.com/programs/Papers) · Open problems stated in research papers and books.
 
-Targets 180 · open 93 · solved here (site claim) 23 · kinds open/known/unformalized/other = 93/78/0/9 · snapshot `1491f139c5a17e60` (`2026-11-27T03:29:12Z`).
+Targets 180 · open 93 · solved here (site claim) 26 · kinds open/known/unformalized/other = 93/78/0/9 · snapshot `6aad4dc91eea6bbb` (`2026-11-27T04:31:27Z`).
 
 Back to [all programs](../PROGRAMS.md).
 
@@ -61,7 +61,7 @@ Back to [all programs](../PROGRAMS.md).
 | 41 | `EisenbudGreenHarris.eisenbud_green_harris.variants.caviglia_deStefani` | The Eisenbud-Green-Harris conjecture — caviglia deStefani | known | Commutative Algebra |  |  |
 | 42 | `EisenbudGreenHarris.eisenbud_green_harris.variants.clements_lindstrom` | The Clements-Lindström theorem | known | Commutative Algebra |  |  |
 | 43 | `EisenbudGreenHarris.eisenbud_green_harris.variants.macaulay` | Macaulay's theorem | known | Commutative Algebra |  |  |
-| 44 | `EuclideanRamseyCircle.at_most_five_circle_points_ramsey` | Euclidean Ramsey configurations on a circle | known | Combinatorics, Convex & Discrete Geometry |  |  |
+| 44 | `EuclideanRamseyCircle.at_most_five_circle_points_ramsey` | Euclidean Ramsey configurations on a circle | known | Combinatorics, Convex & Discrete Geometry |  | yes |
 | 45 | `FanelliMoscardelli.stability_threshold_tight` | Fanelli–Moscardelli conjecture on approximate roommates stability | open | Combinatorics, Computer Science, Game Theory & Economics |  |  |
 | 46 | `FiniteLocallyFreeGroupSchemeExponent.killed_by_rank.variants.commutative` | Is a finite locally free group scheme killed by its order? — commutative | known | Algebraic Geometry, Associative Rings |  |  |
 | 47 | `FiniteLocallyFreeGroupSchemeExponent.killed_by_rank.variants.field` | Is a finite locally free group scheme killed by its order? — field | known | Algebraic Geometry, Associative Rings |  |  |
@@ -69,9 +69,9 @@ Back to [all programs](../PROGRAMS.md).
 | 49 | `FiniteLocallyFreeGroupSchemeExponent.optimal_exponent` | Is a finite locally free group scheme killed by its order? | open | Algebraic Geometry, Associative Rings |  |  |
 | 50 | `FusibleNumber.conj_7_1` | Main conjecture on fusible numbers | open | Combinatorics |  |  |
 | 51 | `Gourevitch.gourevitch_series_identity` | Gourevitch's series identity | known | Number Theory, Special Functions |  |  |
-| 52 | `HallRatioConjecture.hall_ratio_conjecture` | The Hall ratio conjecture (Harris 2019) — disproved. | known | Combinatorics |  |  |
+| 52 | `HallRatioConjecture.hall_ratio_conjecture` | The Hall ratio conjecture (Harris 2019) — disproved. | known | Combinatorics |  | yes |
 | 53 | `HallRatioConjecture.hall_ratio_conjecture.variants.hallRatio_le_fractionalChromaticNumber` | The Hall ratio is a lower bound for the fractional chromatic number. | known | Combinatorics |  | yes |
-| 54 | `HallRatioConjecture.hall_ratio_conjecture.variants.unbounded` | Unbounded ratio (Dvořák–Ossona de Mendez–Wu 2020; Blumenthal et al. 2022). | known | Combinatorics |  |  |
+| 54 | `HallRatioConjecture.hall_ratio_conjecture.variants.unbounded` | Unbounded ratio (Dvořák–Ossona de Mendez–Wu 2020; Blumenthal et al. 2022). | known | Combinatorics |  | yes |
 | 55 | `Homogeneous.countablyMonolithicSpace_card_lt` | Conjectures around homogeneous topological spaces — countablyMonolithicSpace card lt | open | General Topology |  |  |
 | 56 | `Homogeneous.firstCountableTopology_of_countablyMonolithicSpace` | Conjectures around homogeneous topological spaces — firstCountableTopology of countablyMonolithicSpace | open | General Topology |  |  |
 | 57 | `Homogeneous.homogeneousSpace_exists_inj_tendsto` | Conjectures around homogeneous topological spaces — homogeneousSpace exists inj tendsto | open | General Topology |  |  |
@@ -184,7 +184,7 @@ Back to [all programs](../PROGRAMS.md).
 | 164 | `SimpleGraph.theorem2` | Theorem 2. | known | Combinatorics |  | yes |
 | 165 | `StrongSensitivityConjecture.nisanExample_blockSensitivity` | Strong Sensitivity Conjecture (`bs(f) ≤ s(f)^2`) — nisanExample blockSensitivity | warmup | Computer Science |  | yes |
 | 166 | `StrongSensitivityConjecture.nisanExample_sensitivity` | Strong Sensitivity Conjecture (`bs(f) ≤ s(f)^2`) — nisanExample sensitivity | warmup | Computer Science |  | yes |
-| 167 | `TuDengConjecture.tu_deng_conjecture` | The Tu-Deng conjecture. | known | Combinatorics, Information & Communication, Number Theory |  |  |
+| 167 | `TuDengConjecture.tu_deng_conjecture` | The Tu-Deng conjecture. | known | Combinatorics, Information & Communication, Number Theory |  | yes |
 | 168 | `VoronovskajaTypeFormula.voronovskaja_theorem.bernstein_operators` | Voronovskaja-type Formula for the Bezier Variant of the Bernstein Operators | known | Operator Theory, Real Functions, Sequences & Series |  | yes |
 | 169 | `WeakTiling.problem_4_2` | Problem 4.2. | open | Functional Analysis, Harmonic Analysis |  |  |
 | 170 | `WeaklyFirstCountable.CH.existsWeaklyFirstCountableCompactNotFirstCountable` | Conjectures about Weakly First Countable spaces — existsWeaklyFirstCountableCompactNotFirstCountable | known | General Topology |  |  |

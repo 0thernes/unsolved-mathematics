@@ -12,7 +12,7 @@
 
 [Program page](https://lefttosolve.com/programs/Erd%C5%91s%20Problems) · Paul Erdős's problems, many with cash prizes, as catalogued on erdosproblems.com by Thomas Bloom.
 
-Targets 2,068 · open 837 · solved here (site claim) 605 · kinds open/known/unformalized/other = 837/1187/0/44 · snapshot `1491f139c5a17e60` (`2026-11-27T03:29:12Z`).
+Targets 2,068 · open 837 · solved here (site claim) 676 · kinds open/known/unformalized/other = 837/1187/0/44 · snapshot `6aad4dc91eea6bbb` (`2026-11-27T04:31:27Z`).
 
 Back to [all programs](../PROGRAMS.md).
 
@@ -36,7 +36,7 @@ Back to [all programs](../PROGRAMS.md).
 | 16 | `Erdos1003.erdos_1003.variants.Icc` | Erdős Problem 1003 — Icc | open | Number Theory |  |  |
 | 17 | `Erdos1003.erdos_1003.variants.eps87` | Erdős Problem 1003 — eps87 | known | Number Theory |  |  |
 | 18 | `Erdos1004.erdos_1004` | Erdős Problem 1004 | open | Number Theory |  |  |
-| 19 | `Erdos1004.erdos_1004.variants.le_of_isDistinctTotientRun` | Erdős Problem 1004 — le of isDistinctTotientRun | known | Number Theory |  |  |
+| 19 | `Erdos1004.erdos_1004.variants.le_of_isDistinctTotientRun` | Erdős Problem 1004 — le of isDistinctTotientRun | known | Number Theory |  | yes |
 | 20 | `Erdos1005.erdos_1005` | Erdős Problem 1005 | known | Number Theory |  |  |
 | 21 | `Erdos1008.erdos_1008.variants.folkman` | Erdős Problem 1008 — folkman | known | Combinatorics |  | yes |
 | 22 | `Erdos1008.erdos_1008.variants.lower_bound` | Erdős Problem 1008 — lower bound | known | Combinatorics |  | yes |
@@ -146,7 +146,7 @@ Back to [all programs](../PROGRAMS.md).
 | 126 | `Erdos1065.erdos_1065.parts.ii` | Erdős Problem 1065 — ii | open | Number Theory |  |  |
 | 127 | `Erdos1066.erdos_1066` | Erdős Problem 1066 | open | Combinatorics, Convex & Discrete Geometry |  |  |
 | 128 | `Erdos1066.erdos_1066.variants.higher_dim` | Erdős Problem 1066 — higher dim | open | Convex & Discrete Geometry |  |  |
-| 129 | `Erdos1066.erdos_1066.variants.pach_toth` | Erdős Problem 1066 — pach toth | known | Combinatorics, Convex & Discrete Geometry |  |  |
+| 129 | `Erdos1066.erdos_1066.variants.pach_toth` | Erdős Problem 1066 — pach toth | known | Combinatorics, Convex & Discrete Geometry |  | yes |
 | 130 | `Erdos1066.erdos_1066.variants.pollack` | Erdős Problem 1066 — pollack | known | Combinatorics, Convex & Discrete Geometry |  | yes |
 | 131 | `Erdos1066.erdos_1066.variants.swanepoel` | Erdős Problem 1066 — swanepoel | known | Combinatorics, Convex & Discrete Geometry |  |  |
 | 132 | `Erdos1067.erdos_1067.variants.infinite_edge_connectivity` | Erdős Problem 1067 — infinite edge connectivity | known | Combinatorics |  |  |
@@ -175,7 +175,7 @@ Back to [all programs](../PROGRAMS.md).
 | 155 | `Erdos1074.erdos_1074.variants.PillaiPrimes_init` | Erdős Problem 1074 — PillaiPrimes init | warmup | Number Theory |  | yes |
 | 156 | `Erdos1075.erdos_1075` | Erdős Problem 1075 | open | Combinatorics |  |  |
 | 157 | `Erdos1079.erdos_1079` | Erdős Problem 1079 | known | Combinatorics |  | yes |
-| 158 | `Erdos108.erdos_108` | Erdős Problem 108 | known | Combinatorics |  |  |
+| 158 | `Erdos108.erdos_108` | Erdős Problem 108 | known | Combinatorics |  | yes |
 | 159 | `Erdos1081.erdos_1081` | Erdős Problem 1081 | known | Number Theory |  |  |
 | 160 | `Erdos1081.erdos_1081.variants.blomer_granville` | Erdős Problem 1081 — blomer granville | known | Number Theory |  |  |
 | 161 | `Erdos1082.erdos_1082.parts.i` | Erdős Problem 1082 — i | open | Geometry |  |  |
@@ -192,7 +192,7 @@ Back to [all programs](../PROGRAMS.md).
 | 172 | `Erdos1085.erdos_1085.variants.upper_d4_erdos` | Erdős Problem 1085 — upper d4 erdos | known | Convex & Discrete Geometry |  | yes |
 | 173 | `Erdos1085.erdos_1085.variants.upper_lower_d5_odd` | Erdős Problem 1085 — upper lower d5 odd | known | Convex & Discrete Geometry |  |  |
 | 174 | `Erdos1086.erdos_1086` | Erdős Problem 1086 | open | Convex & Discrete Geometry |  |  |
-| 175 | `Erdos1086.erdos_1086.variants.erdos_purdy_lower` | Erdős Problem 1086 — erdos purdy lower | known | Convex & Discrete Geometry |  |  |
+| 175 | `Erdos1086.erdos_1086.variants.erdos_purdy_lower` | Erdős Problem 1086 — erdos purdy lower | known | Convex & Discrete Geometry |  | yes |
 | 176 | `Erdos1086.erdos_1086.variants.raz_sharir` | Erdős Problem 1086 — raz sharir | known | Convex & Discrete Geometry |  |  |
 | 177 | `Erdos1087.erdos_1087` | Erdős Problem 1087 | open | Convex & Discrete Geometry |  |  |
 | 178 | `Erdos1087.erdos_1087.variants.lower` | Erdős Problem 1087 — lower | known | Convex & Discrete Geometry |  | yes |
@@ -209,7 +209,7 @@ Back to [all programs](../PROGRAMS.md).
 | 189 | `Erdos1095.erdos_1095.variants.lower_solved` | Erdős Problem 1095 — lower solved | known | Number Theory |  |  |
 | 190 | `Erdos1095.erdos_1095.variants.upper_conjecture` | Erdős Problem 1095 — upper conjecture | known | Number Theory |  | yes |
 | 191 | `Erdos1098.erdos_1098.variants.center_finiteIndex` | Erdős Problem 1098 — center finiteIndex | known | Combinatorics, Group Theory |  | yes |
-| 192 | `Erdos1099.erdos_1099.variants.factorial` | Erdős Problem 1099 — factorial | known | Number Theory |  |  |
+| 192 | `Erdos1099.erdos_1099.variants.factorial` | Erdős Problem 1099 — factorial | known | Number Theory |  | yes |
 | 193 | `Erdos1099.erdos_1099.variants.lcm` | Erdős Problem 1099 — lcm | known | Number Theory |  |  |
 | 194 | `Erdos1099.erdos_1099.variants.ratio_sum` | Erdős Problem 1099 — ratio sum | known | Number Theory |  | yes |
 | 195 | `Erdos11.erdos_11` | Erdős Problem 11 | open | Number Theory |  |  |
@@ -295,7 +295,7 @@ Back to [all programs](../PROGRAMS.md).
 | 275 | `Erdos1139.erdos_1139` | Erdős Problem 1139 | open | Number Theory |  |  |
 | 276 | `Erdos114.erdos_114` | Erdős Problem 114 | open | Complex Analysis, Measure & Integration | $250 |  |
 | 277 | `Erdos114.erdos_114.variants.large_n` | Erdős Problem 114 — large n | known | Complex Analysis, Measure & Integration | $250 |  |
-| 278 | `Erdos114.erdos_114.variants.two` | Erdős Problem 114 — two | known | Complex Analysis, Measure & Integration | $250 |  |
+| 278 | `Erdos114.erdos_114.variants.two` | Erdős Problem 114 — two | known | Complex Analysis, Measure & Integration | $250 | yes |
 | 279 | `Erdos1140.erdos_1140` | Erdős Problem 1140 | known | Number Theory |  |  |
 | 280 | `Erdos1140.erdos_1140.variants.at_most_one_exception` | Erdős Problem 1140 — at most one exception | known | Number Theory |  |  |
 | 281 | `Erdos1141.erdos_1141.variants.mertens_third` | Mertens' third theorem | known | Number Theory |  | yes |
@@ -341,7 +341,7 @@ Back to [all programs](../PROGRAMS.md).
 | 321 | `Erdos1169.erdos_1169.variants.finite_blue_target` | Erdős Problem 1169 — finite blue target | open | Logic & Foundations |  |  |
 | 322 | `Erdos1169.erdos_1169.variants.hajnal_under_ch` | Hajnal (1971), assuming CH. | known | Logic & Foundations |  |  |
 | 323 | `Erdos1171.erdos_1171` | Erdős Problem 1171. | open | Combinatorics |  |  |
-| 324 | `Erdos1171.erdos_1171.variants.k_one` | Erdős–Hajnal theorem | known | Combinatorics |  |  |
+| 324 | `Erdos1171.erdos_1171.variants.k_one` | Erdős–Hajnal theorem | known | Combinatorics |  | yes |
 | 325 | `Erdos1171.erdos_1171.variants.mono_k` | Erdős Problem 1171 — mono k | warmup | Combinatorics |  | yes |
 | 326 | `Erdos1173.erdos_1173` | Erdős–Hajnal Problem 1173 | open | Logic & Foundations |  |  |
 | 327 | `Erdos1174.erdos_1174.parts.i` | Erdős Problem 1174, part (i) | open | Combinatorics, Logic & Foundations |  |  |
@@ -391,7 +391,7 @@ Back to [all programs](../PROGRAMS.md).
 | 371 | `Erdos1189.erdos_1189.variants.sun` | Erdős Problem 1189 — sun | known | Number Theory |  | yes |
 | 372 | `Erdos1190.erdos_1190.variants.lower_bound` | Erdős Problem 1190 — lower bound | known | Combinatorics, Number Theory |  | yes |
 | 373 | `Erdos1190.erdos_1190.variants.lt_one` | Erdős Problem 1190 — lt one | known | Combinatorics, Number Theory |  | yes |
-| 374 | `Erdos1190.erdos_1190.variants.tendsto_zero` | Erdős Problem 1190 — tendsto zero | known | Combinatorics, Number Theory |  |  |
+| 374 | `Erdos1190.erdos_1190.variants.tendsto_zero` | Erdős Problem 1190 — tendsto zero | known | Combinatorics, Number Theory |  | yes |
 | 375 | `Erdos1190.erdos_1190.variants.upper_bound` | Erdős Problem 1190 — upper bound | known | Combinatorics, Number Theory |  |  |
 | 376 | `Erdos1191.erdos_1191.parts.i` | Erdős Problem 1191 — i | open | Combinatorics, Number Theory | $1000 |  |
 | 377 | `Erdos1191.erdos_1191.parts.ii` | Erdős Problem 1191 — ii | open | Combinatorics, Number Theory | $1000 |  |
@@ -414,12 +414,12 @@ Back to [all programs](../PROGRAMS.md).
 | 394 | `Erdos120.erdos_120` | Erdős Problem 120 | open | Combinatorics, Measure & Integration | $100 |  |
 | 395 | `Erdos120.erdos_120.variants.finite_set` | Erdős Problem 120 — finite set | known | Combinatorics, Measure & Integration | $100 | yes |
 | 396 | `Erdos1201.erdos_1201` | Erdős Problem 1201 | open | Number Theory |  |  |
-| 397 | `Erdos1201.erdos_1201.variants.epsilon_half` | Erdős Problem 1201 — epsilon half | known | Number Theory |  |  |
+| 397 | `Erdos1201.erdos_1201.variants.epsilon_half` | Erdős Problem 1201 — epsilon half | known | Number Theory |  | yes |
 | 398 | `Erdos1203.erdos_1203` | Erdős Problem 1203 | open | Number Theory |  |  |
 | 399 | `Erdos1203.erdos_1203.variants.lower_bound` | Erdős Problem 1203 — lower bound | known | Number Theory |  | yes |
 | 400 | `Erdos1204.erdos_1204.parts.i` | Erdős Problem 1204 — i | open | Number Theory |  |  |
 | 401 | `Erdos1204.erdos_1204.parts.ii` | Erdős Problem 1204 — ii | open | Number Theory |  |  |
-| 402 | `Erdos1204.erdos_1204.variants.A_lower` | Erdős Problem 1204 — A lower | known | Number Theory |  |  |
+| 402 | `Erdos1204.erdos_1204.variants.A_lower` | Erdős Problem 1204 — A lower | known | Number Theory |  | yes |
 | 403 | `Erdos1204.erdos_1204.variants.A_upper` | Erdős Problem 1204 — A upper | known | Number Theory |  | yes |
 | 404 | `Erdos1204.erdos_1204.variants.B_upper` | Erdős Problem 1204 — B upper | known | Number Theory |  | yes |
 | 405 | `Erdos1206.erdos_1206.parts.i` | Erdős Problem 1206 — i | open | Combinatorics, Number Theory |  |  |
@@ -484,7 +484,7 @@ Back to [all programs](../PROGRAMS.md).
 | 464 | `Erdos145.erdos_145.variants.le_three` | Erdős Problem 145 — le three | known | Number Theory |  |  |
 | 465 | `Erdos145.erdos_145.variants.le_two` | Erdős Problem 145 — le two | known | Number Theory |  |  |
 | 466 | `Erdos145.erdos_145.variants.lt_eleven_thirds` | Erdős Problem 145 — lt eleven thirds | known | Number Theory |  |  |
-| 467 | `Erdos146.erdos_146` | Erdős Problem 146 | known | Combinatorics | $500 |  |
+| 467 | `Erdos146.erdos_146` | Erdős Problem 146 | known | Combinatorics | $500 | yes |
 | 468 | `Erdos147.erdos_147.variants.cubic` | Erdős Problem 147 — cubic | known | Combinatorics | $500 |  |
 | 469 | `Erdos147.erdos_147.variants.janzer_conjecture` | Erdős Problem 147 — janzer conjecture | open | Combinatorics | $500 |  |
 | 470 | `Erdos147.erdos_147.variants.janzer_even` | Erdős Problem 147 — janzer even | known | Combinatorics | $500 |  |
@@ -544,7 +544,7 @@ Back to [all programs](../PROGRAMS.md).
 | 524 | `Erdos18.erdos_18a` | Conjecture 1. | open | Number Theory | $250 |  |
 | 525 | `Erdos18.erdos_18b` | Conjecture 2. | open | Number Theory | $250 |  |
 | 526 | `Erdos18.erdos_18c` | Conjecture 3. | open | Number Theory | $250 |  |
-| 527 | `Erdos180.erdos_180` | Erdős Problem 180 | known | Combinatorics |  |  |
+| 527 | `Erdos180.erdos_180` | Erdős Problem 180 | known | Combinatorics |  | yes |
 | 528 | `Erdos184.erdos_184.variants.bucic_montgomery` | Erdős Problem 184 — bucic montgomery | known | Combinatorics |  |  |
 | 529 | `Erdos184.erdos_184.variants.conlon_fox_sudakov` | Erdős Problem 184 — conlon fox sudakov | known | Combinatorics |  |  |
 | 530 | `Erdos184.erdos_184.variants.covering` | Erdős Problem 184 — covering | known | Combinatorics |  |  |
@@ -575,7 +575,7 @@ Back to [all programs](../PROGRAMS.md).
 | 555 | `Erdos20.erdos_20` | Erdős Problem 20 | open | Combinatorics | $1000 |  |
 | 556 | `Erdos200.erdos_200` | Erdős Problem 200 | open | Combinatorics, Number Theory |  |  |
 | 557 | `Erdos200.erdos_200.variants.upper` | Erdős Problem 200 — upper | known | Combinatorics, Number Theory |  | yes |
-| 558 | `Erdos202.erdos_202.variants.erdos_szemeredi` | Erdős Problem 202 — erdos szemeredi | known | Combinatorics, Number Theory |  |  |
+| 558 | `Erdos202.erdos_202.variants.erdos_szemeredi` | Erdős Problem 202 — erdos szemeredi | known | Combinatorics, Number Theory |  | yes |
 | 559 | `Erdos203.erdos_203` | Erdős Problem 203 | open | Combinatorics |  |  |
 | 560 | `Erdos205.erdos_205.parts.i` | Erdős Problem 205 — i | known | Number Theory |  | yes |
 | 561 | `Erdos205.erdos_205.parts.ii` | Erdős Problem 205 — ii | known | Number Theory |  | yes |
@@ -624,14 +624,14 @@ Back to [all programs](../PROGRAMS.md).
 | 604 | `Erdos232.erdos_232.variants.croft_lower_bound` | Erdős Problem 232 — croft lower bound | known | Convex & Discrete Geometry, Measure & Integration |  | yes |
 | 605 | `Erdos232.erdos_232.variants.hexagonal_lower_bound` | Erdős Problem 232 — hexagonal lower bound | known | Convex & Discrete Geometry, Measure & Integration |  | yes |
 | 606 | `Erdos233.erdos_233` | Erdős Problem 233 | open | Number Theory |  |  |
-| 607 | `Erdos233.erdos_233.variants.upper_bound` | Erdős Problem 233 — upper bound | known | Number Theory |  |  |
+| 607 | `Erdos233.erdos_233.variants.upper_bound` | Erdős Problem 233 — upper bound | known | Number Theory |  | yes |
 | 608 | `Erdos233.erdos_233.variants.upper_bound_unconditional` | Erdős Problem 233 — upper bound unconditional | known | Number Theory |  |  |
 | 609 | `Erdos234.erdos_234` | Erdős Problem 234 | open | Number Theory |  |  |
 | 610 | `Erdos236.erdos_236` | Erdős Problem 236 | open | Combinatorics, Number Theory |  |  |
 | 611 | `Erdos238.erdos_238` | Erdős Problem 238 | open | Number Theory |  |  |
 | 612 | `Erdos238.erdos_238.variants.small_c1` | Erdős Problem 238 — small c1 | known | Number Theory |  |  |
 | 613 | `Erdos239.erdos_239` | Erdős Problem 239 | known | Number Theory |  |  |
-| 614 | `Erdos240.erdos_240.variants.finite` | Erdős Problem 240 — finite | known | Number Theory |  |  |
+| 614 | `Erdos240.erdos_240.variants.finite` | Erdős Problem 240 — finite | known | Number Theory |  | yes |
 | 615 | `Erdos240.erdos_240.variants.tijdeman_epsilon` | Erdős Problem 240 — tijdeman epsilon | known | Number Theory |  |  |
 | 616 | `Erdos240.erdos_240.variants.tijdeman_finite` | Erdős Problem 240 — tijdeman finite | known | Number Theory |  |  |
 | 617 | `Erdos241.erdos_241` | Erdős Problem 241 | open | Combinatorics | $100 |  |
@@ -661,20 +661,20 @@ Back to [all programs](../PROGRAMS.md).
 | 641 | `Erdos252.erdos_252.variants.k_ge_five` | Erdős Problem 252 — k ge five | open | Number Theory |  |  |
 | 642 | `Erdos252.erdos_252.variants.prime_tuples` | Erdős Problem 252 — prime tuples | known | Number Theory |  |  |
 | 643 | `Erdos252.erdos_252.variants.schinzel` | Erdős Problem 252 — schinzel | known | Number Theory |  |  |
-| 644 | `Erdos254.erdos_254.variants.cassels` | Erdős Problem 254 — cassels | known | Number Theory |  |  |
+| 644 | `Erdos254.erdos_254.variants.cassels` | Erdős Problem 254 — cassels | known | Number Theory |  | yes |
 | 645 | `Erdos257.erdos_257` | Erdős Problem 257 | open | Number Theory |  |  |
 | 646 | `Erdos258.erdos_258.variants.monotone` | Erdős Problem 258 — monotone | known | Number Theory |  |  |
 | 647 | `Erdos261.erdos_261.parts.ii` | Erdős Problem 261 — ii | open | Number Theory |  |  |
 | 648 | `Erdos261.erdos_261.parts.iii` | Erdős Problem 261 — iii | open | Number Theory |  |  |
 | 649 | `Erdos263.erdos_263.parts.i` | Erdős Problem 263 — i | open | Number Theory |  |  |
 | 650 | `Erdos263.erdos_263.parts.ii` | Erdős Problem 263 — ii | known | Number Theory |  | yes |
-| 651 | `Erdos263.erdos_263.variants.doubly_exponential_all_but_countable` | Erdős Problem 263 — doubly exponential all but countable | known | Number Theory |  |  |
+| 651 | `Erdos263.erdos_263.variants.doubly_exponential_all_but_countable` | Erdős Problem 263 — doubly exponential all but countable | known | Number Theory |  | yes |
 | 652 | `Erdos263.erdos_263.variants.sub_doubly_exponential` | Erdős Problem 263 — sub doubly exponential | known | Number Theory |  | yes |
 | 653 | `Erdos264.erdos_264.parts.i` | Erdős Problem 264 — i | known | Number Theory |  | yes |
 | 654 | `Erdos264.erdos_264.parts.ii` | Erdős Problem 264 — ii | open | Number Theory |  |  |
 | 655 | `Erdos264.erdos_264.variants.example` | Erdős Problem 264 — example | known | Number Theory |  | yes |
 | 656 | `Erdos264.erdos_264.variants.ko_tao_neg` | Erdős Problem 264 — ko tao neg | known | Number Theory |  | yes |
-| 657 | `Erdos264.erdos_264.variants.ko_tao_pos` | Erdős Problem 264 — ko tao pos | known | Number Theory |  |  |
+| 657 | `Erdos264.erdos_264.variants.ko_tao_pos` | Erdős Problem 264 — ko tao pos | known | Number Theory |  | yes |
 | 658 | `Erdos267.erdos_267.variants.fibonacci_inverse_sum` | Erdős Problem 267 — fibonacci inverse sum | known | Number Theory |  |  |
 | 659 | `Erdos267.erdos_267.variants.generalisation_ratio_limit_to_infinity` | Erdős Problem 267 — generalisation ratio limit to infinity | open | Number Theory |  |  |
 | 660 | `Erdos269.erdos_269.variants.infinite` | Erdős Problem 269 — infinite | known | Number Theory |  | yes |
@@ -833,7 +833,7 @@ Back to [all programs](../PROGRAMS.md).
 | 813 | `Erdos346.erdos_346` | Erdős Problem 346 | known | Number Theory |  | yes |
 | 814 | `Erdos346.erdos_346.variants.example` | Erdős Problem 346 — example | known | Number Theory |  | yes |
 | 815 | `Erdos346.erdos_346.variants.f_isAddStronglyCompleteNatSeq` | Erdős Problem 346 — f isAddStronglyCompleteNatSeq | known | Number Theory |  | yes |
-| 816 | `Erdos348.erdos_348` | Erdős Problem 348 | known | Number Theory |  |  |
+| 816 | `Erdos348.erdos_348` | Erdős Problem 348 | known | Number Theory |  | yes |
 | 817 | `Erdos349.complete_for_alpha_in_Ioo_one_to_goldenRatio` | Erdos349 | known | Number Theory |  | yes |
 | 818 | `Erdos349.erdos_349` | Erdos349 | open | Number Theory |  |  |
 | 819 | `Erdos349.erdos_349.variants.floor_3_halves_even` | Erdos349 — floor 3 halves even | open | Number Theory |  |  |
@@ -931,14 +931,14 @@ Back to [all programs](../PROGRAMS.md).
 | 911 | `Erdos389.erdos_389` | Erdős Problem 389 | open | Number Theory |  |  |
 | 912 | `Erdos39.erdos_39` | Erdős Problem 39 | open | Number Theory | $500 |  |
 | 913 | `Erdos390.erdos_390` | Erdős Problem 390 | open | Number Theory |  |  |
-| 914 | `Erdos390.erdos_390.variants.theta` | Erdős Problem 390 — theta | known | Number Theory |  |  |
+| 914 | `Erdos390.erdos_390.variants.theta` | Erdős Problem 390 — theta | known | Number Theory |  | yes |
 | 915 | `Erdos392.erdos_392.variants.lower` | Erdős Problem 392 — lower | known | Number Theory |  |  |
 | 916 | `Erdos393.erdos_393` | Erdős Problem 393 | open | Number Theory |  |  |
 | 917 | `Erdos393.erdos_393.variants.berend_osgood` | Erdős Problem 393 — berend osgood | known | Number Theory |  |  |
 | 918 | `Erdos393.erdos_393.variants.bui_pratt_zaharescu` | Erdős Problem 393 — bui pratt zaharescu | known | Number Theory |  |  |
 | 919 | `Erdos393.erdos_393.variants.infinitely_often_one` | Erdős Problem 393 — infinitely often one | open | Number Theory |  |  |
 | 920 | `Erdos394.erdos_394.variants.factorial_gap_conjecture` | Erdős Problem 394 — factorial gap conjecture | open | Number Theory |  |  |
-| 921 | `Erdos394.erdos_394.variants.hall_bound` | Erdős Problem 394 — hall bound | known | Number Theory |  |  |
+| 921 | `Erdos394.erdos_394.variants.hall_bound` | Erdős Problem 394 — hall bound | known | Number Theory |  | yes |
 | 922 | `Erdos394.erdos_394.variants.hall_conjecture` | Erdős Problem 394 — hall conjecture | open | Number Theory |  |  |
 | 923 | `Erdos394.erdos_394.variants.lower_bound` | Erdős Problem 394 — lower bound | known | Number Theory |  | yes |
 | 924 | `Erdos395.erdos_395.variants.one` | Erdős Problem 395 — one | known | Combinatorics, Probability |  | yes |
@@ -997,7 +997,7 @@ Back to [all programs](../PROGRAMS.md).
 | 977 | `Erdos417.erdos_417.parts.ii` | Erdős Problem 417 — ii | open | Number Theory |  |  |
 | 978 | `Erdos418.erdos_418.variants.density` | Erdős Problem 418 — density | open | Number Theory |  |  |
 | 979 | `Erdos418.erdos_418.variants.odd_noncototient` | Erdős Problem 418 — odd noncototient | open | Number Theory |  |  |
-| 980 | `Erdos418.erdos_418.variants.sigma` | Erdős Problem 418 — sigma | known | Number Theory |  |  |
+| 980 | `Erdos418.erdos_418.variants.sigma` | Erdős Problem 418 — sigma | known | Number Theory |  | yes |
 | 981 | `Erdos418.erdos_418.variants.soln` | Erdős Problem 418 — soln | known | Number Theory |  | yes |
 | 982 | `Erdos420.erdos_420.parts.i` | Erdős Problem 420 — i | open | Number Theory |  |  |
 | 983 | `Erdos420.erdos_420.parts.ii` | Erdős Problem 420 — ii | open | Number Theory |  |  |
@@ -1019,8 +1019,8 @@ Back to [all programs](../PROGRAMS.md).
 | 999 | `Erdos425.erdos_425.parts.ii` | Erdős Problem 425 — ii | open | Combinatorics, Number Theory |  |  |
 | 1000 | `Erdos427.erdos_427.variants.shiu` | Shiu's theorem | known | Number Theory |  |  |
 | 1001 | `Erdos428.erdos_428` | Erdős Problem 428 | open | Number Theory |  |  |
-| 1002 | `Erdos43.erdos_43.parts.i` | Erdős Problem 43 — i | known | Combinatorics, Number Theory | $100 |  |
-| 1003 | `Erdos43.erdos_43.parts.ii` | Erdős Problem 43 — ii | known | Combinatorics, Number Theory | $100 |  |
+| 1002 | `Erdos43.erdos_43.parts.i` | Erdős Problem 43 — i | known | Combinatorics, Number Theory | $100 | yes |
+| 1003 | `Erdos43.erdos_43.parts.ii` | Erdős Problem 43 — ii | known | Combinatorics, Number Theory | $100 | yes |
 | 1004 | `Erdos430.erdos_430` | Erdős Problem 430 | open | Number Theory |  |  |
 | 1005 | `Erdos433.erdos_433` | Erdős Problem 433 | known | Number Theory |  |  |
 | 1006 | `Erdos436.erdos_436.parts.i` | Erdős Problem 436 — i | known | Number Theory |  | yes |
@@ -1048,7 +1048,7 @@ Back to [all programs](../PROGRAMS.md).
 | 1028 | `Erdos442.erdos_442.variants.tao` | Erdős Problem 442 — tao | known | Number Theory |  | yes |
 | 1029 | `Erdos445.erdos_445` | Erdős Problem 445 | open | Number Theory |  |  |
 | 1030 | `Erdos445.erdos_445.variants.heath_brown` | Erdős Problem 445 — heath brown | known | Number Theory |  |  |
-| 1031 | `Erdos445.erdos_445.variants.heilbronn` | Erdős Problem 445 — heilbronn | known | Number Theory |  |  |
+| 1031 | `Erdos445.erdos_445.variants.heilbronn` | Erdős Problem 445 — heilbronn | known | Number Theory |  | yes |
 | 1032 | `Erdos447.erdos_447.parts.i` | Erdős Problem 447 — i | known | Combinatorics |  | yes |
 | 1033 | `Erdos448.erdos_448.variants.erdos_tenenbaum` | Erdős Problem 448 — erdos tenenbaum | known | Number Theory |  |  |
 | 1034 | `Erdos448.erdos_448.variants.ford` | Erdős Problem 448 — ford | known | Number Theory |  |  |
@@ -1094,7 +1094,7 @@ Back to [all programs](../PROGRAMS.md).
 | 1074 | `Erdos482.erdos_482.variants.stoll_explicit` | Erdős Problem 482 — stoll explicit | known | Number Theory |  | yes |
 | 1075 | `Erdos483.erdos_483` | Erdős Problem 483 | open | Combinatorics, Number Theory |  |  |
 | 1076 | `Erdos488.erdos_488` | Erdős Problem 488 | open | Combinatorics, Number Theory |  |  |
-| 1077 | `Erdos489.erdos_489.variants.squarefree` | Erdős Problem 489 — squarefree | known | Number Theory |  |  |
+| 1077 | `Erdos489.erdos_489.variants.squarefree` | Erdős Problem 489 — squarefree | known | Number Theory |  | yes |
 | 1078 | `Erdos49.erdos_49.variants.primes_maximal` | Erdős Problem 49 — primes maximal | open | Number Theory |  |  |
 | 1079 | `Erdos490.erdos_490.variants.limit` | Erdős Problem 490 — limit | open | Number Theory |  |  |
 | 1080 | `Erdos494.erdos_494.variants.gordon_fraenkel_straus` | Erdős Problem 494 — gordon fraenkel straus | known | Combinatorics |  |  |
@@ -1135,7 +1135,7 @@ Back to [all programs](../PROGRAMS.md).
 | 1115 | `Erdos504.erdos_504` | Erdős–Szekeres (1960). — erdos 504 | known | Convex & Discrete Geometry |  |  |
 | 1116 | `Erdos504.erdos_504.variants.endpoint` | Erdős–Szekeres (1960). — endpoint | known | Convex & Discrete Geometry |  |  |
 | 1117 | `Erdos504.erdos_504.variants.sendov` | Sendov (1995). | known | Convex & Discrete Geometry |  |  |
-| 1118 | `Erdos505.erdos_505.small_dim` | Borsuk's conjecture, small dimensions | known | Convex & Discrete Geometry |  |  |
+| 1118 | `Erdos505.erdos_505.small_dim` | Borsuk's conjecture, small dimensions | known | Convex & Discrete Geometry |  | yes |
 | 1119 | `Erdos506.erdos_506` | Erdős Problem 506 | open | Convex & Discrete Geometry, Geometry |  |  |
 | 1120 | `Erdos506.erdos_506.variants.large_n` | Erdős Problem 506 — large n | known | Convex & Discrete Geometry, Geometry |  | yes |
 | 1121 | `Erdos506.erdos_506.variants.segre_n_eq_eight` | Erdős Problem 506 — segre n eq eight | known | Convex & Discrete Geometry, Geometry |  | yes |
@@ -1171,11 +1171,11 @@ Back to [all programs](../PROGRAMS.md).
 | 1151 | `Erdos53.erdos_53.variants.upper` | Erdős Problem 53 — upper | known | Number Theory |  | yes |
 | 1152 | `Erdos533.erdos_533.variants.delta_four_eq_zero` | Erdős Problem 533 — delta four eq zero | known | Combinatorics |  | yes |
 | 1153 | `Erdos533.erdos_533.variants.delta_seven_ge_quarter` | Erdős Problem 533 — delta seven ge quarter | known | Combinatorics |  | yes |
-| 1154 | `Erdos533.erdos_533.variants.ehsss_upper` | Erdős Problem 533 — ehsss upper | known | Combinatorics |  |  |
+| 1154 | `Erdos533.erdos_533.variants.ehsss_upper` | Erdős Problem 533 — ehsss upper | known | Combinatorics |  | yes |
 | 1155 | `Erdos533.erdos_533.variants.lrss_lower` | Erdős Problem 533 — lrss lower | known | Combinatorics |  | yes |
 | 1156 | `Erdos535.erdos_535` | Erdős Problem 535 | open | Combinatorics, Number Theory |  |  |
-| 1157 | `Erdos535.erdos_535.variants.abbott_hanson` | Erdős Problem 535 — abbott hanson | known | Combinatorics, Number Theory |  |  |
-| 1158 | `Erdos535.erdos_535.variants.erdos_upper_bound` | Erdős Problem 535 — erdos upper bound | known | Combinatorics, Number Theory |  |  |
+| 1157 | `Erdos535.erdos_535.variants.abbott_hanson` | Erdős Problem 535 — abbott hanson | known | Combinatorics, Number Theory |  | yes |
+| 1158 | `Erdos535.erdos_535.variants.erdos_upper_bound` | Erdős Problem 535 — erdos upper bound | known | Combinatorics, Number Theory |  | yes |
 | 1159 | `Erdos535.erdos_535.variants.first_open_case` | Erdős Problem 535 — first open case | open | Combinatorics, Number Theory |  |  |
 | 1160 | `Erdos535.erdos_535.variants.lower_bound` | Erdős Problem 535 — lower bound | known | Combinatorics, Number Theory |  | yes |
 | 1161 | `Erdos535.erdos_535.variants.sunflower_erdos_rado` | Erdős Problem 535 — sunflower erdos rado | known | Combinatorics, Number Theory |  | yes |
@@ -1188,7 +1188,7 @@ Back to [all programs](../PROGRAMS.md).
 | 1168 | `Erdos541.erdos_541.variants.general_moduli` | Erdős Problem 541 — general moduli | known | Number Theory |  |  |
 | 1169 | `Erdos541.erdos_541.variants.large_primes` | Erdős Problem 541 — large primes | known | Number Theory |  | yes |
 | 1170 | `Erdos542.erdos_542.variants.chen` | Erdős Problem 542 — chen | known | Number Theory |  |  |
-| 1171 | `Erdos542.erdos_542.variants.log_power` | Erdős Problem 542 — log power | known | Number Theory |  |  |
+| 1171 | `Erdos542.erdos_542.variants.log_power` | Erdős Problem 542 — log power | known | Number Theory |  | yes |
 | 1172 | `Erdos542.erdos_542.variants.one_add_little_o` | Erdős Problem 542 — one add little o | open | Number Theory |  |  |
 | 1173 | `Erdos542.erdos_542.variants.only_two` | Erdős Problem 542 — only two | open | Number Theory |  |  |
 | 1174 | `Erdos544.erdos_544.parts.i` | Erdős Problem 544 — i | open | Combinatorics |  |  |
@@ -1268,14 +1268,14 @@ Back to [all programs](../PROGRAMS.md).
 | 1248 | `Erdos595.erdos_595` | Erdős Problem 595 (\\$250) | open | Combinatorics | $250 |  |
 | 1249 | `Erdos596.erdos_596` | Erdős Problem 596 | open | Combinatorics |  |  |
 | 1250 | `Erdos596.erdos_596.variants.C4_C6_finite_ramsey` | Erdős Problem 596 — C4 C6 finite ramsey | known | Combinatorics |  | yes |
-| 1251 | `Erdos596.erdos_596.variants.C4_free_countable_escape` | Erdős Problem 596 — C4 free countable escape | known | Combinatorics |  |  |
+| 1251 | `Erdos596.erdos_596.variants.C4_free_countable_escape` | Erdős Problem 596 — C4 free countable escape | known | Combinatorics |  | yes |
 | 1252 | `Erdos596.erdos_596.variants.K4_K3_exceptional_iff` | Erdős Problem 596 — K4 K3 exceptional iff | open | Combinatorics |  |  |
 | 1253 | `Erdos596.erdos_596.variants.K4_K3_finite_ramsey` | Erdős Problem 596 — K4 K3 finite ramsey | known | Combinatorics |  |  |
-| 1254 | `Erdos596.erdos_596.variants.exists_exceptional` | Erdős Problem 596 — exists exceptional | known | Combinatorics |  |  |
-| 1255 | `Erdos596.erdos_596.variants.original_conjecture_is_false` | Erdős Problem 596 — original conjecture is false | known | Combinatorics |  |  |
+| 1254 | `Erdos596.erdos_596.variants.exists_exceptional` | Erdős Problem 596 — exists exceptional | known | Combinatorics |  | yes |
+| 1255 | `Erdos596.erdos_596.variants.original_conjecture_is_false` | Erdős Problem 596 — original conjecture is false | known | Combinatorics |  | yes |
 | 1256 | `Erdos597.erdos_597` | Erdős Problem 597 | open | Combinatorics, Logic & Foundations |  |  |
 | 1257 | `Erdos597.erdos_597.variants.baumgartner` | Erdős Problem 597 — baumgartner | known | Combinatorics, Logic & Foundations |  |  |
-| 1258 | `Erdos597.erdos_597.variants.erdos_hajnal` | Erdős Problem 597 — erdos hajnal | known | Combinatorics, Logic & Foundations |  |  |
+| 1258 | `Erdos597.erdos_597.variants.erdos_hajnal` | Erdős Problem 597 — erdos hajnal | known | Combinatorics, Logic & Foundations |  | yes |
 | 1259 | `Erdos597.erdos_597.variants.finite` | Erdős Problem 597, finite case | open | Combinatorics, Logic & Foundations |  |  |
 | 1260 | `Erdos598.erdos_598` | Erdős Problem 598 | open | Combinatorics, Logic & Foundations |  |  |
 | 1261 | `Erdos599.erdos_599` | Erdős Problem 599 | known | Combinatorics |  |  |
@@ -1296,7 +1296,7 @@ Back to [all programs](../PROGRAMS.md).
 | 1276 | `Erdos602.erdos_602.variants.countable_index` | Countable index set case. | known | Combinatorics, Logic & Foundations |  | yes |
 | 1277 | `Erdos603.erdos_603` | Erdős Problem 603 | known | Combinatorics, Logic & Foundations |  | yes |
 | 1278 | `Erdos604.erdos_604.variants.average` | Erdős Problem 604 — average | open | Convex & Discrete Geometry | $500 |  |
-| 1279 | `Erdos604.erdos_604.variants.grid_upper_bound` | Erdős Problem 604 — grid upper bound | known | Convex & Discrete Geometry | $500 |  |
+| 1279 | `Erdos604.erdos_604.variants.grid_upper_bound` | Erdős Problem 604 — grid upper bound | known | Convex & Discrete Geometry | $500 | yes |
 | 1280 | `Erdos604.erdos_604.variants.katz_tardos` | Erdős Problem 604 — katz tardos | known | Convex & Discrete Geometry | $500 |  |
 | 1281 | `Erdos604.erdos_604.variants.sqrt_log` | Erdős Problem 604 — sqrt log | open | Convex & Discrete Geometry | $500 |  |
 | 1282 | `Erdos609.erdos_609` | Erdős Problem 609 | open | Combinatorics |  |  |
@@ -1332,7 +1332,7 @@ Back to [all programs](../PROGRAMS.md).
 | 1312 | `Erdos626.erdos_626.variants.kostochka` | Erdős Problem 626 — kostochka | known | Combinatorics |  | yes |
 | 1313 | `Erdos627.erdos_627` | Erdős Problem 627 | open | Combinatorics |  |  |
 | 1314 | `Erdos627.erdos_627.variants.afm_upper` | Erdős Problem 627 — afm upper | known | Combinatorics |  |  |
-| 1315 | `Erdos627.erdos_627.variants.conditional` | Erdős Problem 627 — conditional | known | Combinatorics |  |  |
+| 1315 | `Erdos627.erdos_627.variants.conditional` | Erdős Problem 627 — conditional | known | Combinatorics |  | yes |
 | 1316 | `Erdos627.erdos_627.variants.erdos_1961` | Erdős Problem 627 — erdos 1961 | known | Combinatorics |  | yes |
 | 1317 | `Erdos627.erdos_627.variants.limit_bounds` | Erdős Problem 627 — limit bounds | known | Combinatorics |  | yes |
 | 1318 | `Erdos627.erdos_627.variants.lower` | Erdős Problem 627 — lower | known | Combinatorics |  | yes |
@@ -1340,12 +1340,12 @@ Back to [all programs](../PROGRAMS.md).
 | 1320 | `Erdos627.erdos_627.variants.upper` | Erdős Problem 627 — upper | known | Combinatorics |  | yes |
 | 1321 | `Erdos628.erdos_628` | Erdős Problem 628 | open | Combinatorics |  |  |
 | 1322 | `Erdos628.erdos_628.variants.independence_number_2` | Erdős Problem 628 — independence number 2 | known | Combinatorics |  | yes |
-| 1323 | `Erdos628.erdos_628.variants.k_5_a_3_b_3` | Erdős Problem 628 — k 5 a 3 b 3 | known | Combinatorics |  |  |
+| 1323 | `Erdos628.erdos_628.variants.k_5_a_3_b_3` | Erdős Problem 628 — k 5 a 3 b 3 | known | Combinatorics |  | yes |
 | 1324 | `Erdos628.erdos_628.variants.quasi_line` | Erdős Problem 628 — quasi line | known | Combinatorics |  |  |
 | 1325 | `Erdos629.erdos_629` | Erdős Problem 629 | open | Combinatorics |  |  |
 | 1326 | `Erdos629.erdos_629.variants.ert_bounds` | Erdős Problem 629 — ert bounds | known | Combinatorics |  | yes |
 | 1327 | `Erdos629.erdos_629.variants.hmt_recursion` | Erdős Problem 629 — hmt recursion | known | Combinatorics |  | yes |
-| 1328 | `Erdos629.erdos_629.variants.n_three` | Erdős Problem 629 — n three | known | Combinatorics |  |  |
+| 1328 | `Erdos629.erdos_629.variants.n_three` | Erdős Problem 629 — n three | known | Combinatorics |  | yes |
 | 1329 | `Erdos629.erdos_629.variants.n_two` | Erdős Problem 629 — n two | known | Combinatorics |  | yes |
 | 1330 | `Erdos629.erdos_629.variants.property_b` | Erdős Problem 629 — property b | known | Combinatorics |  | yes |
 | 1331 | `Erdos629.erdos_629.variants.radhakrishnan_srinivasan` | Erdős Problem 629 — radhakrishnan srinivasan | known | Combinatorics |  |  |
@@ -1353,7 +1353,7 @@ Back to [all programs](../PROGRAMS.md).
 | 1333 | `Erdos633.IsSimiliCuttable.of_ne_zero_two_three_five` | Erdős Problem 633 — of ne zero two three five | known | Combinatorics, Geometry | $25 | yes |
 | 1334 | `Erdos633.erdos_633` | Erdős Problem 633 — erdos 633 | known | Combinatorics, Geometry | $25 |  |
 | 1335 | `Erdos633.exists_isSimiliCuttable_iff_ne_zero_two_three_five` | Erdős Problem 633 — exists isSimiliCuttable iff ne zero two three five | known | Combinatorics, Geometry | $25 |  |
-| 1336 | `Erdos636.erdos_636.variants.best_possible` | Erdős Problem 636 — best possible | known | Combinatorics |  |  |
+| 1336 | `Erdos636.erdos_636.variants.best_possible` | Erdős Problem 636 — best possible | known | Combinatorics |  | yes |
 | 1337 | `Erdos636.erdos_636.variants.erdos_faudree_sos` | Erdős Problem 636 — erdos faudree sos | known | Combinatorics |  |  |
 | 1338 | `Erdos639.erdos_639.variants.exact` | Erdős Problem 639 — exact | known | Combinatorics |  | yes |
 | 1339 | `Erdos64.erdos_64` | Erdős Problem 64 | open | Combinatorics | $1000 |  |
@@ -1400,13 +1400,13 @@ Back to [all programs](../PROGRAMS.md).
 | 1380 | `Erdos657.erdos_657.variants.dim_one_lower` | Erdős Problem 657 — dim one lower | known | Convex & Discrete Geometry, Number Theory |  |  |
 | 1381 | `Erdos657.erdos_657.variants.dim_one_upper` | Erdős Problem 657 — dim one upper | known | Convex & Discrete Geometry, Number Theory |  | yes |
 | 1382 | `Erdos657.erdos_657.variants.higher_dim` | Erdős Problem 657 — higher dim | open | Convex & Discrete Geometry |  |  |
-| 1383 | `Erdos659.erdos_659` | Erdős Problem 659 | known | Convex & Discrete Geometry |  |  |
+| 1383 | `Erdos659.erdos_659` | Erdős Problem 659 | known | Convex & Discrete Geometry |  | yes |
 | 1384 | `Erdos66.erdos_66` | Erdős Problem 66 | open | Number Theory | $500 |  |
 | 1385 | `Erdos660.erdos_660` | Erdős Problem 660 | open | Convex & Discrete Geometry, Geometry |  |  |
 | 1386 | `Erdos660.erdos_660.variants.Er75f` | Erdős Problem 660 — Er75f | open | Convex & Discrete Geometry, Geometry |  |  |
 | 1387 | `Erdos660.erdos_660.variants.altman_planar` | Erdős Problem 660 — altman planar | known | Convex & Discrete Geometry, Geometry |  |  |
 | 1388 | `Erdos661.erdos_661` | Erdős Problem 661 | open | Convex & Discrete Geometry | $50 |  |
-| 1389 | `Erdos661.erdos_661.variants.grid_upper_bound` | Erdős Problem 661 — grid upper bound | known | Convex & Discrete Geometry | $50 |  |
+| 1389 | `Erdos661.erdos_661.variants.grid_upper_bound` | Erdős Problem 661 — grid upper bound | known | Convex & Discrete Geometry | $50 | yes |
 | 1390 | `Erdos661.erdos_661.variants.lenz` | Erdős Problem 661 — lenz | known | Convex & Discrete Geometry | $50 | yes |
 | 1391 | `Erdos661.erdos_661.variants.little_o_distinct_distances` | Erdős Problem 661 — little o distinct distances | open | Convex & Discrete Geometry | $50 |  |
 | 1392 | `Erdos663.erdos_663` | Erdős Problem 663 | open | Number Theory |  |  |
@@ -1499,7 +1499,7 @@ Back to [all programs](../PROGRAMS.md).
 | 1479 | `Erdos704.erdos_704.variants.cube_colouring` | Erdős Problem 704 — cube colouring | warmup | Combinatorics, Convex & Discrete Geometry |  | yes |
 | 1480 | `Erdos704.erdos_704.variants.davies_lower` | Erdős Problem 704 — davies lower | known | Combinatorics, Convex & Discrete Geometry |  |  |
 | 1481 | `Erdos704.erdos_704.variants.davies_upper` | Erdős Problem 704 — davies upper | known | Combinatorics, Convex & Discrete Geometry |  |  |
-| 1482 | `Erdos704.erdos_704.variants.frankl_wilson` | Erdős Problem 704 — frankl wilson | known | Combinatorics, Convex & Discrete Geometry |  |  |
+| 1482 | `Erdos704.erdos_704.variants.frankl_wilson` | Erdős Problem 704 — frankl wilson | known | Combinatorics, Convex & Discrete Geometry |  | yes |
 | 1483 | `Erdos704.erdos_704.variants.larman_rogers` | Erdős Problem 704 — larman rogers | known | Combinatorics, Convex & Discrete Geometry |  | yes |
 | 1484 | `Erdos704.erdos_704.variants.larman_rogers_conjecture` | Erdős Problem 704 — larman rogers conjecture | known | Combinatorics, Convex & Discrete Geometry |  |  |
 | 1485 | `Erdos704.erdos_704.variants.raigorodskii` | Erdős Problem 704 — raigorodskii | known | Combinatorics, Convex & Discrete Geometry |  |  |
@@ -1511,9 +1511,9 @@ Back to [all programs](../PROGRAMS.md).
 | 1491 | `Erdos707.erdos_707.variants.singer_construction` | Erdős Problem 707: Embedding Sidon Sets in Perfect Difference Sets — singer construction | warmup | Combinatorics, Number Theory | $1000 | yes |
 | 1492 | `Erdos707.erdos_707.variants.small_sidon_sets` | Erdős Problem 707: Embedding Sidon Sets in Perfect Difference Sets — small sidon sets | warmup | Combinatorics, Number Theory | $1000 |  |
 | 1493 | `Erdos709.erdos_709` | Erdős Problem 709 | open | Number Theory |  |  |
-| 1494 | `Erdos709.erdos_709.variants.ersu_lower` | Erdős Problem 709 — ersu lower | known | Number Theory |  |  |
+| 1494 | `Erdos709.erdos_709.variants.ersu_lower` | Erdős Problem 709 — ersu lower | known | Number Theory |  | yes |
 | 1495 | `Erdos709.erdos_709.variants.ersu_upper` | Erdős Problem 709 — ersu upper | known | Number Theory |  | yes |
-| 1496 | `Erdos709.erdos_709.variants.van_doorn_lower` | Erdős Problem 709 — van doorn lower | known | Number Theory |  |  |
+| 1496 | `Erdos709.erdos_709.variants.van_doorn_lower` | Erdős Problem 709 — van doorn lower | known | Number Theory |  | yes |
 | 1497 | `Erdos710.erdos_710` | Erdős Problem 710 | open | Number Theory | ₹2000 |  |
 | 1498 | `Erdos710.erdos_710.variants.lower_bound` | Erdős Problem 710 — lower bound | known | Number Theory | ₹2000 |  |
 | 1499 | `Erdos710.erdos_710.variants.upper_bound` | Erdős Problem 710 — upper bound | known | Number Theory | ₹2000 |  |
@@ -1643,9 +1643,9 @@ Back to [all programs](../PROGRAMS.md).
 | 1623 | `Erdos785.erdos_785.variants.chen_fang` | Erdős Problem 785 — chen fang | known | Number Theory |  |  |
 | 1624 | `Erdos785.erdos_785.variants.chen_fang_limsup` | Erdős Problem 785 — chen fang limsup | known | Number Theory |  |  |
 | 1625 | `Erdos785.erdos_785.variants.chen_fang_sharp` | Erdős Problem 785 — chen fang sharp | known | Number Theory |  | yes |
-| 1626 | `Erdos785.erdos_785.variants.danzer` | Erdős Problem 785 — danzer | known | Number Theory |  |  |
+| 1626 | `Erdos785.erdos_785.variants.danzer` | Erdős Problem 785 — danzer | known | Number Theory |  | yes |
 | 1627 | `Erdos785.erdos_785.variants.narkiewicz` | Erdős Problem 785 — narkiewicz | known | Number Theory |  | yes |
-| 1628 | `Erdos785.erdos_785.variants.ruzsa_lower_bound` | Erdős Problem 785 — ruzsa lower bound | known | Number Theory |  |  |
+| 1628 | `Erdos785.erdos_785.variants.ruzsa_lower_bound` | Erdős Problem 785 — ruzsa lower bound | known | Number Theory |  | yes |
 | 1629 | `Erdos785.erdos_785.variants.ruzsa_upper_bound` | Erdős Problem 785 — ruzsa upper bound | known | Number Theory |  |  |
 | 1630 | `Erdos785.erdos_785.variants.sarkozy_szemeredi` | Erdős Problem 785 — sarkozy szemeredi | known | Number Theory |  |  |
 | 1631 | `Erdos786.erdos_786.parts.i` | Erdős Problem 786 — i | open | Number Theory |  |  |
@@ -1742,7 +1742,7 @@ Back to [all programs](../PROGRAMS.md).
 | 1722 | `Erdos830.erdos_830.variants.pomerance_stronger` | Erdős Problem 830 — pomerance stronger | known | Number Theory |  |  |
 | 1723 | `Erdos831.erdos_831` | Erdős Problem 831 | open | Convex & Discrete Geometry, Geometry |  |  |
 | 1724 | `Erdos831.erdos_831.variants.szekeres` | Erdős Problem 831 — szekeres | known | Convex & Discrete Geometry, Geometry |  | yes |
-| 1725 | `Erdos832.erdos_832` | Erdős Problem 832 | known | Combinatorics |  |  |
+| 1725 | `Erdos832.erdos_832` | Erdős Problem 832 | known | Combinatorics |  | yes |
 | 1726 | `Erdos833.erdos_833` | Erdős Problem 833 | known | Combinatorics |  | yes |
 | 1727 | `Erdos834.erdos_834.parts.i` | Erdős Problem 834 — i | known | Combinatorics |  | yes |
 | 1728 | `Erdos834.erdos_834.parts.ii` | Erdős Problem 834 — ii | known | Combinatorics |  | yes |
@@ -1754,17 +1754,17 @@ Back to [all programs](../PROGRAMS.md).
 | 1734 | `Erdos837.erdos_837` | Erdős Problem 837 | open | Combinatorics |  |  |
 | 1735 | `Erdos838.erdos_838.parts.i` | Erdős Problem 838 — i | open | Convex & Discrete Geometry |  |  |
 | 1736 | `Erdos838.erdos_838.parts.ii` | Erdős Problem 838 — ii | open | Convex & Discrete Geometry |  |  |
-| 1737 | `Erdos838.erdos_838.variants.erdos_bounds` | Erdős Problem 838 — erdos bounds | known | Convex & Discrete Geometry |  |  |
+| 1737 | `Erdos838.erdos_838.variants.erdos_bounds` | Erdős Problem 838 — erdos bounds | known | Convex & Discrete Geometry |  | yes |
 | 1738 | `Erdos839.erdos_839.parts.i` | Erdős Problem 839 — i | open | Number Theory |  |  |
 | 1739 | `Erdos839.erdos_839.parts.ii` | Erdős Problem 839 — ii | open | Number Theory |  |  |
 | 1740 | `Erdos840.erdos_840` | Erdős Problem 840 | open | Combinatorics, Number Theory |  |  |
 | 1741 | `Erdos840.erdos_840.variants.erdos_freud_lower` | Erdős Problem 840 — erdos freud lower | known | Combinatorics, Number Theory |  | yes |
-| 1742 | `Erdos840.erdos_840.variants.pikhurko` | Erdős Problem 840 — pikhurko | known | Combinatorics, Number Theory |  |  |
+| 1742 | `Erdos840.erdos_840.variants.pikhurko` | Erdős Problem 840 — pikhurko | known | Combinatorics, Number Theory |  | yes |
 | 1743 | `Erdos848.erdos_848` | Erdős Problem 848 | known | Number Theory |  |  |
 | 1744 | `Erdos849.erdos_849` | Erdős Problem 849 | open | Number Theory |  |  |
 | 1745 | `Erdos85.erdos_85` | Erdős Problem 85 | open | Combinatorics |  |  |
 | 1746 | `Erdos850.erdos_850` | Erdős Problem 850 | open | Number Theory |  |  |
-| 1747 | `Erdos851.erdos_851.variants.romanoff` | Erdős Problem 851 — romanoff | known | Number Theory |  |  |
+| 1747 | `Erdos851.erdos_851.variants.romanoff` | Erdős Problem 851 — romanoff | known | Number Theory |  | yes |
 | 1748 | `Erdos852.erdos_852.parts.i` | Erdős Problem 852 — i | open | Number Theory |  |  |
 | 1749 | `Erdos852.erdos_852.parts.ii` | Erdős Problem 852 — ii | open | Number Theory |  |  |
 | 1750 | `Erdos852.erdos_852.variants.tendsto_atTop` | Erdős Problem 852 — tendsto atTop | known | Number Theory |  |  |
@@ -1780,15 +1780,15 @@ Back to [all programs](../PROGRAMS.md).
 | 1760 | `Erdos856.erdos_856.variants.tang_zhang_three_upper` | Erdős Problem 856 — tang zhang three upper | known | Number Theory |  |  |
 | 1761 | `Erdos857.erdos_857` | Erdős Problem 857 | known | Combinatorics |  |  |
 | 1762 | `Erdos858.erdos_858.variants.infinite` | Erdős Problem 858 — infinite | known | Number Theory |  |  |
-| 1763 | `Erdos858.erdos_858.variants.positive` | Erdős Problem 858 — positive | known | Number Theory |  |  |
+| 1763 | `Erdos858.erdos_858.variants.positive` | Erdős Problem 858 — positive | known | Number Theory |  | yes |
 | 1764 | `Erdos859.erdos_859` | Erdős Problem 859 | open | Number Theory |  |  |
 | 1765 | `Erdos859.erdos_859.variants.erdos_upper_lower_bounds` | Erdős Problem 859 — erdos upper lower bounds | known | Number Theory |  |  |
 | 1766 | `Erdos859.erdos_859.variants.positive_density` | Erdős Problem 859 — positive density | warmup | Number Theory |  | yes |
 | 1767 | `Erdos86.erdos_86` | Erdős Problem 86 | open | Combinatorics | $100 |  |
 | 1768 | `Erdos860.erdos_860` | Erdős Problem 860 | open | Number Theory |  |  |
 | 1769 | `Erdos860.erdos_860.variants.erdos_pomerance_upper` | Erdős Problem 860 — erdos pomerance upper | known | Number Theory |  | yes |
-| 1770 | `Erdos860.erdos_860.variants.erdos_selfridge_lower` | Erdős Problem 860 — erdos selfridge lower | known | Number Theory |  |  |
-| 1771 | `Erdos860.erdos_860.variants.ruzsa` | Erdős Problem 860 — ruzsa | known | Number Theory |  |  |
+| 1770 | `Erdos860.erdos_860.variants.erdos_selfridge_lower` | Erdős Problem 860 — erdos selfridge lower | known | Number Theory |  | yes |
+| 1771 | `Erdos860.erdos_860.variants.ruzsa` | Erdős Problem 860 — ruzsa | known | Number Theory |  | yes |
 | 1772 | `Erdos862.erdos_862.variants.lower_bound` | Erdős Problem 862 — lower bound | known | Combinatorics, Number Theory |  | yes |
 | 1773 | `Erdos864.erdos_864` | Erdős Problem 864 | open | Combinatorics, Number Theory |  |  |
 | 1774 | `Erdos864.erdos_864.variants.lower_bound` | Erdős Problem 864 — lower bound | known | Combinatorics, Number Theory |  | yes |
@@ -1809,7 +1809,7 @@ Back to [all programs](../PROGRAMS.md).
 | 1789 | `Erdos875.erdos_875` | Erdős Problem 875 | open | Number Theory |  |  |
 | 1790 | `Erdos875.erdos_875.variants.deshouillers_freiman` | Erdős Problem 875 — deshouillers freiman | known | Number Theory |  |  |
 | 1791 | `Erdos875.erdos_875.variants.erdos_nicolas_sarkozy` | Erdős Problem 875 — erdos nicolas sarkozy | known | Number Theory |  |  |
-| 1792 | `Erdos875.erdos_875.variants.polynomial_gaps` | Erdős Problem 875 — polynomial gaps | known | Number Theory |  |  |
+| 1792 | `Erdos875.erdos_875.variants.polynomial_gaps` | Erdős Problem 875 — polynomial gaps | known | Number Theory |  | yes |
 | 1793 | `Erdos876.erdos_876.parts.i` | Erdős Problem 876 — i | open | Number Theory |  |  |
 | 1794 | `Erdos876.erdos_876.parts.ii` | Erdős Problem 876 — ii | open | Number Theory |  |  |
 | 1795 | `Erdos876.erdos_876.variants.dem_polynomial` | Erdős Problem 876 — dem polynomial | known | Number Theory |  | yes |
@@ -1827,7 +1827,7 @@ Back to [all programs](../PROGRAMS.md).
 | 1807 | `Erdos878.erdos_878.variants.H_div_self_limsup_infinite` | Erdős Problem 878 — H div self limsup infinite | known | Number Theory |  | yes |
 | 1808 | `Erdos878.erdos_878.variants.H_lower_quadruple_log_infinitely_often` | Erdős Problem 878 — H lower quadruple log infinitely often | known | Number Theory |  | yes |
 | 1809 | `Erdos878.erdos_878.variants.H_upper_triple_log` | Erdős Problem 878 — H upper triple log | known | Number Theory |  | yes |
-| 1810 | `Erdos878.erdos_878.variants.second_question_subsequence` | Erdős Problem 878 — second question subsequence | known | Number Theory |  |  |
+| 1810 | `Erdos878.erdos_878.variants.second_question_subsequence` | Erdős Problem 878 — second question subsequence | known | Number Theory |  | yes |
 | 1811 | `Erdos88.erdos_88.variants.erdos_mckay` | Erdős Problem 88 — erdos mckay | known | Combinatorics | $100 |  |
 | 1812 | `Erdos88.erdos_88.variants.kwan_sah_sauermann_sawhney` | Erdős Problem 88 — kwan sah sauermann sawhney | known | Combinatorics | $100 |  |
 | 1813 | `Erdos881.erdos_881` | Erdős Problem 881 | open | Combinatorics, Number Theory |  |  |
@@ -1849,7 +1849,7 @@ Back to [all programs](../PROGRAMS.md).
 | 1829 | `Erdos889.erdos_889.variants.v0_gt_1` | Erdős Problem 889 — v0 gt 1 | known | Number Theory |  | yes |
 | 1830 | `Erdos889.erdos_889.variants.v1_eq_1_finite` | Erdős Problem 889 — v1 eq 1 finite | open | Number Theory |  |  |
 | 1831 | `Erdos89.erdos_89` | Erdős Problem 89 | open | Convex & Discrete Geometry | $500 |  |
-| 1832 | `Erdos89.erdos_89.variants.grid_upper_bound` | Erdős Problem 89 — grid upper bound | known | Convex & Discrete Geometry | $500 |  |
+| 1832 | `Erdos89.erdos_89.variants.grid_upper_bound` | Erdős Problem 89 — grid upper bound | known | Convex & Discrete Geometry | $500 | yes |
 | 1833 | `Erdos89.erdos_89.variants.n_dvd_log_n` | Erdős Problem 89 — n dvd log n | known | Convex & Discrete Geometry | $500 |  |
 | 1834 | `Erdos890.erdos_890.parts.a` | Erdős Problem 890 — a | open | Number Theory |  |  |
 | 1835 | `Erdos890.erdos_890.parts.b` | Erdős Problem 890 | open | Number Theory |  |  |
@@ -1884,7 +1884,7 @@ Back to [all programs](../PROGRAMS.md).
 | 1864 | `Erdos91.erdos_91.test.unitSquare_optimal` | Erdős Problem 91 — unitSquare optimal | warmup | Convex & Discrete Geometry |  | yes |
 | 1865 | `Erdos91.erdos_91.test.wheelSeven_optimal` | Erdős Problem 91 — wheelSeven optimal | warmup | Convex & Discrete Geometry |  | yes |
 | 1866 | `Erdos91.erdos_91.variants.eight` | Erdős Problem 91 — eight | known | Convex & Discrete Geometry |  | yes |
-| 1867 | `Erdos91.erdos_91.variants.five` | Erdős Problem 91 — five | known | Convex & Discrete Geometry |  |  |
+| 1867 | `Erdos91.erdos_91.variants.five` | Erdős Problem 91 — five | known | Convex & Discrete Geometry |  | yes |
 | 1868 | `Erdos91.erdos_91.variants.nine` | Erdős Problem 91 — nine | known | Convex & Discrete Geometry |  | yes |
 | 1869 | `Erdos910.erdos_910.parts.i` | Erdős Problem 910 — i | known | General Topology |  |  |
 | 1870 | `Erdos910.erdos_910.parts.ii` | Erdős Problem 910 — ii | known | General Topology |  |  |
@@ -1975,8 +1975,8 @@ Back to [all programs](../PROGRAMS.md).
 | 1955 | `Erdos945.erdos_945` | Erdős Problem 945 | open | Number Theory |  |  |
 | 1956 | `Erdos945.erdos_945.variants.constant` | Erdős Problem 945 — constant | open | Number Theory |  |  |
 | 1957 | `Erdos945.erdos_945.variants.equivalence` | Erdős Problem 945 — equivalence | warmup | Number Theory |  | yes |
-| 1958 | `Erdos945.erdos_945.variants.lower_bound` | Erdős Problem 945 — lower bound | known | Number Theory |  |  |
-| 1959 | `Erdos945.erdos_945.variants.upper_bound` | Erdős Problem 945 — upper bound | known | Number Theory |  |  |
+| 1958 | `Erdos945.erdos_945.variants.lower_bound` | Erdős Problem 945 — lower bound | known | Number Theory |  | yes |
+| 1959 | `Erdos945.erdos_945.variants.upper_bound` | Erdős Problem 945 — upper bound | known | Number Theory |  | yes |
 | 1960 | `Erdos946.erdos_946.variants.heathbrown_lower_bound` | Erdős Problem 946 — heathbrown lower bound | known | Number Theory |  |  |
 | 1961 | `Erdos946.erdos_946.variants.hildebrand_lower_bound` | Erdős Problem 946 — hildebrand lower bound | known | Number Theory |  |  |
 | 1962 | `Erdos946.erdos_946.variants.spiro_5040` | Erdős Problem 946 — spiro 5040 | known | Number Theory |  |  |
@@ -1996,11 +1996,11 @@ Back to [all programs](../PROGRAMS.md).
 | 1976 | `Erdos954.erdos_954.variants.lower` | Erdős Problem 954 — lower | warmup | Number Theory |  | yes |
 | 1977 | `Erdos954.erdos_954.variants.upper` | Erdős Problem 954 — upper | open | Number Theory |  |  |
 | 1978 | `Erdos955.erdos_955` | Erdős Problem 955 | open | Number Theory |  |  |
-| 1979 | `Erdos955.erdos_955.variants.empty_preimage` | Erdős Problem 955 — empty preimage | known | Number Theory |  |  |
+| 1979 | `Erdos955.erdos_955.variants.empty_preimage` | Erdős Problem 955 — empty preimage | known | Number Theory |  | yes |
 | 1980 | `Erdos955.erdos_955.variants.pollack_pomerance_thompson_bound` | Erdős Problem 955 — pollack pomerance thompson bound | known | Number Theory |  |  |
-| 1981 | `Erdos955.erdos_955.variants.pollack_primes` | Erdős Problem 955 — pollack primes | known | Number Theory |  |  |
+| 1981 | `Erdos955.erdos_955.variants.pollack_primes` | Erdős Problem 955 — pollack primes | known | Number Theory |  | yes |
 | 1982 | `Erdos955.erdos_955.variants.positive_density` | Erdős Problem 955 — positive density | known | Number Theory |  |  |
-| 1983 | `Erdos955.erdos_955.variants.troupe_sum_of_two_squares` | Erdős Problem 955 — troupe sum of two squares | known | Number Theory |  |  |
+| 1983 | `Erdos955.erdos_955.variants.troupe_sum_of_two_squares` | Erdős Problem 955 — troupe sum of two squares | known | Number Theory |  | yes |
 | 1984 | `Erdos955.erdos_955.variants.troupe_unusually_many_prime_factors` | Erdős Problem 955 — troupe unusually many prime factors | known | Number Theory |  |  |
 | 1985 | `Erdos959.erdos_959` | Erdős Problem 959 | open | Convex & Discrete Geometry |  |  |
 | 1986 | `Erdos96.erdos_96` | Erdős Problem 96 | known | Convex & Discrete Geometry |  | yes |
@@ -2015,7 +2015,7 @@ Back to [all programs](../PROGRAMS.md).
 | 1995 | `Erdos963.erdos_963.parts.ii` | Erdős Problem 963 — ii | open | Combinatorics, Number Theory |  |  |
 | 1996 | `Erdos963.erdos_963.variants.positive` | Erdős Problem 963 — positive | open | Combinatorics, Number Theory |  |  |
 | 1997 | `Erdos964.erdos_964.variants.eberhard` | Erdős Problem 964 — eberhard | known | Number Theory |  |  |
-| 1998 | `Erdos965.erdos_965.variants.generalization` | Erdős Problem 965 — generalization | known | Combinatorics, Logic & Foundations |  |  |
+| 1998 | `Erdos965.erdos_965.variants.generalization` | Erdős Problem 965 — generalization | known | Combinatorics, Logic & Foundations |  | yes |
 | 1999 | `Erdos967.erdos_967.variants.finite` | Erdős Problem 967 — finite | open | Complex Analysis, Number Theory |  |  |
 | 2000 | `Erdos967.erdos_967.variants.tauberian` | Erdős Problem 967 — tauberian | known | Number Theory, Sequences & Series |  |  |
 | 2001 | `Erdos967.erdos_967.variants.two_three_five` | Erdős Problem 967 — two three five | open | Complex Analysis, Number Theory |  |  |
@@ -2037,7 +2037,7 @@ Back to [all programs](../PROGRAMS.md).
 | 2017 | `Erdos972.erdos_972` | Erdős problem 972. | open | Number Theory |  |  |
 | 2018 | `Erdos973.erdos_973.variants.le_one` | Erdős Problem 973 — le one | known | Number Theory |  | yes |
 | 2019 | `Erdos973.erdos_973.variants.m2_bounds` | Erdős Problem 973 — m2 bounds | known | Number Theory |  |  |
-| 2020 | `Erdos973.erdos_973.variants.tang` | Erdős Problem 973 — tang | known | Number Theory |  |  |
+| 2020 | `Erdos973.erdos_973.variants.tang` | Erdős Problem 973 — tang | known | Number Theory |  | yes |
 | 2021 | `Erdos974.erdos_974.variants.two_tuples` | Erdős Problem 974 — two tuples | known | Complex Analysis, Number Theory |  | yes |
 | 2022 | `Erdos975.erdos_975` | Erdős Problem 975 | open | Number Theory |  |  |
 | 2023 | `Erdos975.erdos_975.variants.lower_bound` | Erdős Problem 975 — lower bound | known | Number Theory |  |  |
@@ -2066,7 +2066,7 @@ Back to [all programs](../PROGRAMS.md).
 | 2046 | `Erdos980.erdos_980.variants.erdos_two` | Erdős Problem 980 — erdos two | known | Number Theory |  |  |
 | 2047 | `Erdos981.erdos_981.variants.first_time` | Erdős Problem 981 — first time | known | Number Theory |  |  |
 | 2048 | `Erdos982.erdos_982` | Erdős Problem 982 | open | Convex & Discrete Geometry |  |  |
-| 2049 | `Erdos983.erdos_983.parts.i` | Erdős Problem 983 — i | known | Number Theory |  |  |
+| 2049 | `Erdos983.erdos_983.parts.i` | Erdős Problem 983 — i | known | Number Theory |  | yes |
 | 2050 | `Erdos983.erdos_983.parts.ii` | Erdős Problem 983 — ii | open | Number Theory |  |  |
 | 2051 | `Erdos983.erdos_983.variants.erdos_straus` | Erdős Problem 983 — erdos straus | known | Number Theory |  |  |
 | 2052 | `Erdos983.erdos_983.variants.upper_bound` | Erdős Problem 983 — upper bound | known | Number Theory |  | yes |
@@ -2075,14 +2075,14 @@ Back to [all programs](../PROGRAMS.md).
 | 2055 | `Erdos99.erdos_99` | Erdős Problem 99 | open | Convex & Discrete Geometry | $100 |  |
 | 2056 | `Erdos990.erdos_990.variants.counterexample` | Erdős Problem 990 — counterexample | known | Complex Analysis, Field Theory |  | yes |
 | 2057 | `Erdos990.erdos_990.variants.erdos_turan` | Erdős Problem 990 — erdos turan | known | Complex Analysis, Field Theory |  |  |
-| 2058 | `Erdos990.erdos_990.variants.hayman` | Erdős Problem 990 — hayman | known | Complex Analysis, Field Theory |  |  |
+| 2058 | `Erdos990.erdos_990.variants.hayman` | Erdős Problem 990 — hayman | known | Complex Analysis, Field Theory |  | yes |
 | 2059 | `Erdos994.erdos_994` | Erdős Problem 994 | known | Measure & Integration, Number Theory |  |  |
 | 2060 | `Erdos995.erdos_995` | Erdős Problem 995 | open | Harmonic Analysis, Number Theory |  |  |
 | 2061 | `Erdos995.erdos_995.variants.erdos_lower_bound` | Erdős Problem 995 — erdos lower bound | known | Harmonic Analysis, Number Theory |  |  |
 | 2062 | `Erdos996.erdos_996` | Erdős Problem 996 | open | Harmonic Analysis |  |  |
 | 2063 | `Erdos996.erdos_996.variants.log2` | Erdős Problem 996 — log2 | known | Harmonic Analysis |  |  |
 | 2064 | `Erdos997.erdos_997.variants.irrational` | Erdős Problem 997 — irrational | known | Number Theory |  |  |
-| 2065 | `Erdos997.erdos_997.variants.lacunary` | Erdős Problem 997 — lacunary | known | Number Theory |  |  |
+| 2065 | `Erdos997.erdos_997.variants.lacunary` | Erdős Problem 997 — lacunary | known | Number Theory |  | yes |
 | 2066 | `Erdos999.erdos_999` | Erdős Problem 999 | known | Number Theory |  |  |
 | 2067 | `Erdos999.erdos_999.variants.easy_direction` | Erdős Problem 999 — easy direction | warmup | Number Theory |  | yes |
 | 2068 | `Erdos999.erdos_999.variants.erdos` | Erdős Problem 999 — erdos | known | Number Theory |  |  |

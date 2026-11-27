@@ -12,7 +12,7 @@
 
 [Program page](https://lefttosolve.com/programs/Written%20on%20the%20Wall%20II) · Open problems stated in research papers and books.
 
-Targets 31 · open 11 · solved here (site claim) 19 · kinds open/known/unformalized/other = 11/13/0/7 · snapshot `1491f139c5a17e60` (`2026-11-27T03:29:12Z`).
+Targets 31 · open 11 · solved here (site claim) 19 · kinds open/known/unformalized/other = 11/13/0/7 · snapshot `6aad4dc91eea6bbb` (`2026-11-27T04:31:27Z`).
 
 Back to [all programs](../PROGRAMS.md).
 

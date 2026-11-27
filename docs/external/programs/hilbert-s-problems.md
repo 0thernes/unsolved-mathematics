@@ -12,7 +12,7 @@
 
 [Program page](https://lefttosolve.com/programs/Hilbert%27s%20Problems) · What remains open of Hilbert's 1900 list.
 
-Targets 8 · open 2 · solved here (site claim) 1 · kinds open/known/unformalized/other = 2/5/0/1 · snapshot `1491f139c5a17e60` (`2026-11-27T03:29:12Z`).
+Targets 8 · open 2 · solved here (site claim) 1 · kinds open/known/unformalized/other = 2/5/0/1 · snapshot `6aad4dc91eea6bbb` (`2026-11-27T04:31:27Z`).
 
 Back to [all programs](../PROGRAMS.md).
 

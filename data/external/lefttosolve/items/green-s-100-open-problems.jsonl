@@ -248,7 +248,7 @@
 {"fields": ["Harmonic Analysis", "Number Theory"], "id": "Green82.green_82_upper_bound", "kind": "known", "prize": null, "solved": false, "title": "Ben Green's Open Problem 82 — green 82 upper bound"}
 {"fields": ["Combinatorics", "Harmonic Analysis"], "id": "Green84.green_84", "kind": "known", "prize": null, "solved": false, "title": "Ben Green's Open Problem 84"}
 {"fields": ["Combinatorics", "Complex Analysis", "Harmonic Analysis"], "id": "Green84.green_84.variants.bbmst", "kind": "known", "prize": null, "solved": false, "title": "Flat Littlewood polynomials exist."}
-{"fields": ["Combinatorics", "Harmonic Analysis"], "id": "Green84.green_84.variants.golay", "kind": "known", "prize": null, "solved": false, "title": "Ben Green's Open Problem 84 — golay"}
+{"fields": ["Combinatorics", "Harmonic Analysis"], "id": "Green84.green_84.variants.golay", "kind": "known", "prize": null, "solved": true, "title": "Ben Green's Open Problem 84 — golay"}
 {"fields": ["Combinatorics", "Complex Analysis", "Harmonic Analysis"], "id": "Green84.green_84.variants.littlewood", "kind": "open", "prize": null, "solved": false, "title": "Ben Green's Open Problem 84 — littlewood"}
 {"fields": ["Combinatorics", "Harmonic Analysis", "Number Theory"], "id": "Green84.green_84.variants.ultraflat_mod", "kind": "open", "prize": null, "solved": false, "title": "Ben Green's Open Problem 84 — ultraflat mod"}
 {"fields": ["Convex & Discrete Geometry", "Measure & Integration"], "id": "Green85.green_85", "kind": "open", "prize": null, "solved": false, "title": "Green's Open Problem 85 — green 85"}

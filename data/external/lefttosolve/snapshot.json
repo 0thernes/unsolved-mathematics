@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "last_changed_utc": "2026-11-27T03:29:12Z",
-  "content_sha256": "1491f139c5a17e60eaffda296a690b843f93aef8c45dc130bdfcb9c6e7564f02",
+  "last_changed_utc": "2026-11-27T04:31:27Z",
+  "content_sha256": "6aad4dc91eea6bbbf806fc8c971b9dc4ae69d7c3e5c7d3c60604c24612c5fa41",
   "source": {
     "site": "https://lefttosolve.com",
     "programs_page": "https://lefttosolve.com/programs",
@@ -87,7 +87,7 @@
       "description": "Paul Erdős's problems, many with cash prizes, as catalogued on erdosproblems.com by Thomas Bloom.",
       "targets": 2068,
       "open": 837,
-      "solved_here": 605,
+      "solved_here": 676,
       "kinds": {
         "open": 837,
         "known": 1187,
@@ -96,7 +96,7 @@
       },
       "mirrored": true,
       "mirrored_count": 2068,
-      "solved_flag_count": 614,
+      "solved_flag_count": 682,
       "api_total": 2068
     },
     {
@@ -106,7 +106,7 @@
       "description": "Problems from Wikipedia's list of unsolved problems in mathematics.",
       "targets": 615,
       "open": 336,
-      "solved_here": 114,
+      "solved_here": 124,
       "kinds": {
         "open": 336,
         "known": 242,
@@ -115,7 +115,7 @@
       },
       "mirrored": true,
       "mirrored_count": 615,
-      "solved_flag_count": 116,
+      "solved_flag_count": 125,
       "api_total": 615
     },
     {
@@ -200,7 +200,7 @@
       "description": "Ben Green's list of 100 open problems in additive combinatorics and related areas.",
       "targets": 285,
       "open": 128,
-      "solved_here": 67,
+      "solved_here": 71,
       "kinds": {
         "open": 128,
         "known": 156,
@@ -209,7 +209,7 @@
       },
       "mirrored": true,
       "mirrored_count": 285,
-      "solved_flag_count": 70,
+      "solved_flag_count": 71,
       "api_total": 285
     },
     {
@@ -219,7 +219,7 @@
       "description": "Open problems stated in research papers and books.",
       "targets": 180,
       "open": 93,
-      "solved_here": 23,
+      "solved_here": 26,
       "kinds": {
         "open": 93,
         "known": 78,
@@ -228,7 +228,7 @@
       },
       "mirrored": true,
       "mirrored_count": 180,
-      "solved_flag_count": 23,
+      "solved_flag_count": 27,
       "api_total": 180
     },
     {
@@ -266,7 +266,7 @@
       },
       "mirrored": true,
       "mirrored_count": 105,
-      "solved_flag_count": 26,
+      "solved_flag_count": 27,
       "api_total": 105
     },
     {
@@ -314,7 +314,7 @@
       "description": "Open problems stated in research papers and books.",
       "targets": 31,
       "open": 11,
-      "solved_here": 3,
+      "solved_here": 4,
       "kinds": {
         "open": 11,
         "known": 19,
@@ -323,7 +323,7 @@
       },
       "mirrored": true,
       "mirrored_count": 31,
-      "solved_flag_count": 3,
+      "solved_flag_count": 4,
       "api_total": 31
     },
     {
@@ -380,7 +380,7 @@
       },
       "mirrored": true,
       "mirrored_count": 26,
-      "solved_flag_count": 5,
+      "solved_flag_count": 6,
       "api_total": 26
     },
     {
@@ -390,7 +390,7 @@
       "description": "Questions from MathOverflow that are still open.",
       "targets": 21,
       "open": 9,
-      "solved_here": 9,
+      "solved_here": 10,
       "kinds": {
         "open": 9,
         "known": 8,
@@ -399,7 +399,7 @@
       },
       "mirrored": true,
       "mirrored_count": 21,
-      "solved_flag_count": 9,
+      "solved_flag_count": 10,
       "api_total": 21
     },
     {

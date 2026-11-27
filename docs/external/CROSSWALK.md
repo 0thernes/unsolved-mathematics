@@ -10,7 +10,7 @@
 > those claims, and nothing in this mirror changes the status of any Atlas problem. Status signals
 > below are prompts for human review only. Not affiliated with Left to Solve.
 
-Snapshot `1491f139c5a17e60` (last content change `2026-11-27T03:29:12Z`). 98/106 Atlas problems matched (88 with a primary statement, 162 item links); 0 carry review signals.
+Snapshot `6aad4dc91eea6bbb` (last content change `2026-11-27T04:31:27Z`). 98/106 Atlas problems matched (88 with a primary statement, 162 item links); 0 carry review signals.
 
 **Matching rule.** An external item matches an Atlas problem when the NFKD-folded, lower-cased, punctuation-free item base title (text before ' — ') equals the Atlas title, optionally after stripping trailing generic words (conjecture/problem/hypothesis/theorem/question); data/external/crosswalk-overrides.yaml adds reviewed ids (optionally fixing their relation) or removes false positives. Default relation=primary iff the id has no '.variants.' segment and the title has no ' — ' suffix; 'related' links never raise status signals.
 
@@ -97,7 +97,7 @@ _None._
 | [The Slice–Ribbon Conjecture](../../problems/slice-ribbon-conjecture/README.md) | `open` | `opg-slice-ribbon-problem-0` · primary · unformalized · [Open Problem Garden](programs/open-problem-garden.md) |
 | [The Zeeman Conjecture](../../problems/zeeman-conjecture/README.md) | `open` | `wp-zeeman-conjecture` · primary · unformalized · [Wikipedia list (not formalized)](programs/wikipedia-list-not-formalized.md) |
 | [The Eilenberg–Ganea Conjecture](../../problems/eilenberg-ganea-conjecture/README.md) | `open` | `wp-eilenberg-ganea-conjecture` · primary · unformalized · [Wikipedia list (not formalized)](programs/wikipedia-list-not-formalized.md) |
-| [The Erdős–Hajnal Conjecture](../../problems/erdos-hajnal-conjecture/README.md) | `active-progress` | `Erdos1171.erdos_1171.variants.k_one` · variant · known · [Erdős Problems](programs/erdos-problems.md) |
+| [The Erdős–Hajnal Conjecture](../../problems/erdos-hajnal-conjecture/README.md) | `active-progress` | `Erdos1171.erdos_1171.variants.k_one` · variant · known · site-solved flag · [Erdős Problems](programs/erdos-problems.md) |
 | [Seymour's Second Neighborhood Conjecture](../../problems/seymour-second-neighborhood-conjecture/README.md) | `open` | `opg-seymours-second-neighbourhood-conjecture` · primary · unformalized · [Open Problem Garden](programs/open-problem-garden.md)<br>`wp-second-neighborhood-problem` · primary · unformalized · [Wikipedia list (not formalized)](programs/wikipedia-list-not-formalized.md) |
 | [The Total Coloring Conjecture](../../problems/total-coloring-conjecture/README.md) | `active-progress` | `TotalColoringConjecture.total_coloring_conjecture` · primary · open · [Wikipedia](programs/wikipedia.md)<br>`TotalColoringConjecture.total_coloring_conjecture.variants.maxDegree_le_five` · variant · known · [Wikipedia](programs/wikipedia.md)<br>`opg-behzads-conjecture` · primary · unformalized · [Open Problem Garden](programs/open-problem-garden.md) |
 | [The 1/3–2/3 Conjecture](../../problems/one-third-two-thirds-conjecture/README.md) | `active-progress` | `wp-1-3-2-3-conjecture` · primary · unformalized · [Wikipedia list (not formalized)](programs/wikipedia-list-not-formalized.md) |

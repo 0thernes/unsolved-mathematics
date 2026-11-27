@@ -12,7 +12,7 @@
 
 [Program page](https://lefttosolve.com/programs/Kourovka%20Notebook) · Unsolved problems in group theory from the Kourovka Notebook.
 
-Targets 9 · open 5 · solved here (site claim) 0 · kinds open/known/unformalized/other = 5/4/0/0 · snapshot `1491f139c5a17e60` (`2026-11-27T03:29:12Z`).
+Targets 9 · open 5 · solved here (site claim) 0 · kinds open/known/unformalized/other = 5/4/0/0 · snapshot `6aad4dc91eea6bbb` (`2026-11-27T04:31:27Z`).
 
 Back to [all programs](../PROGRAMS.md).
 

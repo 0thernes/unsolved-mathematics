@@ -12,7 +12,7 @@
 
 [Program page](https://lefttosolve.com/programs/Books) · Open problems stated in research papers and books.
 
-Targets 26 · open 11 · solved here (site claim) 5 · kinds open/known/unformalized/other = 11/15/0/0 · snapshot `1491f139c5a17e60` (`2026-11-27T03:29:12Z`).
+Targets 26 · open 11 · solved here (site claim) 5 · kinds open/known/unformalized/other = 11/15/0/0 · snapshot `6aad4dc91eea6bbb` (`2026-11-27T04:31:27Z`).
 
 Back to [all programs](../PROGRAMS.md).
 
@@ -39,7 +39,7 @@ Back to [all programs](../PROGRAMS.md).
 | 19 | `Bugeaud53.problem_10_53.variants.temur` | Bugeaud Collection of Conjectures and Open Questions: Simultaneously Small Entropies — temur | known | Dynamical Systems, Number Theory |  |  |
 | 20 | `Bugeaud53.problem_10_53.variants.uncountable` | Bugeaud Collection of Conjectures and Open Questions: Simultaneously Small Entropies — uncountable | known | Dynamical Systems, Number Theory |  |  |
 | 21 | `Bugeaud61.problem_10_61` | Bugeaud Collection of Conjectures and Open Questions: Pisot orbits on the Cantor set | open | Dynamical Systems, Number Theory |  |  |
-| 22 | `Bugeaud61.problem_10_61.variants.almost_every` | Bugeaud Collection of Conjectures and Open Questions: Pisot orbits on the Cantor set — almost every | known | Dynamical Systems, Number Theory |  |  |
+| 22 | `Bugeaud61.problem_10_61.variants.almost_every` | Bugeaud Collection of Conjectures and Open Questions: Pisot orbits on the Cantor set — almost every | known | Dynamical Systems, Number Theory |  | yes |
 | 23 | `Equidistribution.isAccumulationPoint_three_halves_pow` | Equidistributed Sequences — isAccumulationPoint three halves pow | open | Number Theory |  |  |
 | 24 | `Equidistribution.isAccumulationPoint_three_halves_pow_infinite` | Equidistributed Sequences — isAccumulationPoint three halves pow infinite | known | Number Theory |  | yes |
 | 25 | `Equidistribution.isEquidistributedModuloOne_three_halves_pow` | Equidistributed Sequences — isEquidistributedModuloOne three halves pow | open | Number Theory |  |  |

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "snapshot_content_sha256": "1491f139c5a17e60eaffda296a690b843f93aef8c45dc130bdfcb9c6e7564f02",
+  "snapshot_content_sha256": "6aad4dc91eea6bbbf806fc8c971b9dc4ae69d7c3e5c7d3c60604c24612c5fa41",
   "rule": "An external item matches an Atlas problem when the NFKD-folded, lower-cased, punctuation-free item base title (text before ' — ') equals the Atlas title, optionally after stripping trailing generic words (conjecture/problem/hypothesis/theorem/question); data/external/crosswalk-overrides.yaml adds reviewed ids (optionally fixing their relation) or removes false positives. Default relation=primary iff the id has no '.variants.' segment and the title has no ' — ' suffix; 'related' links never raise status signals.",
   "summary": {
     "atlas_problems": 106,
@@ -1797,7 +1797,7 @@
           "program_slug": "erdos-problems",
           "title": "Erdős–Hajnal theorem",
           "kind": "known",
-          "site_solved_flag": false,
+          "site_solved_flag": true,
           "relation": "variant",
           "via": "normalized-title"
         }

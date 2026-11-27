@@ -10,9 +10,9 @@
 > those claims, and nothing in this mirror changes the status of any Atlas problem. Status signals
 > below are prompts for human review only. Not affiliated with Left to Solve.
 
-- **Last content change (UTC):** `2026-11-27T03:29:12Z` — re-checked daily by [`sync-external.yml`](../../.github/workflows/sync-external.yml); a commit appears only when the data changes.
+- **Last content change (UTC):** `2026-11-27T04:31:27Z` — re-checked daily by [`sync-external.yml`](../../.github/workflows/sync-external.yml); a commit appears only when the data changes.
 - **Upstream statements:** [https://github.com/google-deepmind/formal-conjectures](https://github.com/google-deepmind/formal-conjectures) @ `9097e2f90e66`
-- **Snapshot content SHA-256:** `1491f139c5a17e60eaffda296a690b843f93aef8c45dc130bdfcb9c6e7564f02`
+- **Snapshot content SHA-256:** `6aad4dc91eea6bbbf806fc8c971b9dc4ae69d7c3e5c7d3c60604c24612c5fa41`
 - **Consistency:** card targets 59,396 · API total 59,396 · per-program API sum 59,396 → consistent
 - **Crosswalk:** 98 of 106 Atlas problems matched to external items (0 with review signals) — see [CROSSWALK.md](CROSSWALK.md).
 
@@ -22,30 +22,30 @@
 |---:|---|---:|---:|---:|---|---|
 | 1 | [MathOverflow (not formalized)](https://lefttosolve.com/programs/MathOverflow%20%28not%20formalized%29) | 35,783 | 35,783 | 0 | 0 / 0 / 35783 / 0 | counts only (CC BY-SA user content) |
 | 2 | [OEIS conjectures (not formalized)](https://lefttosolve.com/programs/OEIS%20conjectures%20%28not%20formalized%29) | 18,441 | 18,441 | 0 | 0 / 0 / 18441 / 0 | counts only (CC BY-SA user content) |
-| 3 | [Erdős Problems](https://lefttosolve.com/programs/Erd%C5%91s%20Problems) | 2,068 | 837 | 605 | 837 / 1187 / 0 / 44 | [2,068 items](programs/erdos-problems.md) |
-| 4 | [Wikipedia](https://lefttosolve.com/programs/Wikipedia) | 615 | 336 | 114 | 336 / 242 / 0 / 37 | [615 items](programs/wikipedia.md) |
+| 3 | [Erdős Problems](https://lefttosolve.com/programs/Erd%C5%91s%20Problems) | 2,068 | 837 | 676 | 837 / 1187 / 0 / 44 | [2,068 items](programs/erdos-problems.md) |
+| 4 | [Wikipedia](https://lefttosolve.com/programs/Wikipedia) | 615 | 336 | 124 | 336 / 242 / 0 / 37 | [615 items](programs/wikipedia.md) |
 | 5 | [OEIS](https://lefttosolve.com/programs/OEIS) | 461 | 394 | 59 | 394 / 21 / 0 / 46 | [461 items](programs/oeis.md) |
 | 6 | [Mathematics Stack Exchange (not formalized)](https://lefttosolve.com/programs/Mathematics%20Stack%20Exchange%20%28not%20formalized%29) | 395 | 395 | 0 | 0 / 0 / 395 / 0 | counts only (CC BY-SA user content) |
 | 7 | [Wikipedia list (not formalized)](https://lefttosolve.com/programs/Wikipedia%20list%20%28not%20formalized%29) | 366 | 366 | 0 | 0 / 0 / 366 / 0 | [366 items](programs/wikipedia-list-not-formalized.md) |
 | 8 | [Open Problem Garden](https://lefttosolve.com/programs/Open%20Problem%20Garden) | 316 | 316 | 0 | 0 / 0 / 316 / 0 | [316 items](programs/open-problem-garden.md) |
-| 9 | [Green's 100 Open Problems](https://lefttosolve.com/programs/Green%27s%20100%20Open%20Problems) | 285 | 128 | 67 | 128 / 156 / 0 / 1 | [285 items](programs/green-s-100-open-problems.md) |
-| 10 | [Papers](https://lefttosolve.com/programs/Papers) | 180 | 93 | 23 | 93 / 78 / 0 / 9 | [180 items](programs/papers.md) |
+| 9 | [Green's 100 Open Problems](https://lefttosolve.com/programs/Green%27s%20100%20Open%20Problems) | 285 | 128 | 71 | 128 / 156 / 0 / 1 | [285 items](programs/green-s-100-open-problems.md) |
+| 10 | [Papers](https://lefttosolve.com/programs/Papers) | 180 | 93 | 26 | 93 / 78 / 0 / 9 | [180 items](programs/papers.md) |
 | 11 | [Erdős Problems (not formalized)](https://lefttosolve.com/programs/Erd%C5%91s%20Problems%20%28not%20formalized%29) | 116 | 116 | 0 | 0 / 0 / 116 / 0 | [116 items](programs/erdos-problems-not-formalized.md) |
 | 12 | [arXiv papers](https://lefttosolve.com/programs/arXiv%20papers) | 105 | 43 | 26 | 43 / 55 / 0 / 7 | [105 items](programs/arxiv-papers.md) |
 | 13 | [Wikipedia (not formalized)](https://lefttosolve.com/programs/Wikipedia%20%28not%20formalized%29) | 44 | 44 | 0 | 0 / 0 / 44 / 0 | [44 items](programs/wikipedia-not-formalized.md) |
 | 14 | [Open Quantum Problems](https://lefttosolve.com/programs/Open%20Quantum%20Problems) | 32 | 28 | 4 | 28 / 0 / 0 / 4 | [32 items](programs/open-quantum-problems.md) |
-| 15 | [Optimization Constants](https://lefttosolve.com/programs/Optimization%20Constants) | 31 | 11 | 3 | 11 / 19 / 0 / 1 | [31 items](programs/optimization-constants.md) |
+| 15 | [Optimization Constants](https://lefttosolve.com/programs/Optimization%20Constants) | 31 | 11 | 4 | 11 / 19 / 0 / 1 | [31 items](programs/optimization-constants.md) |
 | 16 | [Written on the Wall II](https://lefttosolve.com/programs/Written%20on%20the%20Wall%20II) | 31 | 11 | 19 | 11 / 13 / 0 / 7 | [31 items](programs/written-on-the-wall-ii.md) |
 | 17 | [Other](https://lefttosolve.com/programs/Other) | 29 | 17 | 6 | 17 / 12 / 0 / 0 | [29 items](programs/other.md) |
 | 18 | [Books](https://lefttosolve.com/programs/Books) | 26 | 11 | 5 | 11 / 15 / 0 / 0 | [26 items](programs/books.md) |
-| 19 | [MathOverflow](https://lefttosolve.com/programs/MathOverflow) | 21 | 9 | 9 | 9 / 8 / 0 / 4 | [21 items](programs/mathoverflow.md) |
+| 19 | [MathOverflow](https://lefttosolve.com/programs/MathOverflow) | 21 | 9 | 10 | 9 / 8 / 0 / 4 | [21 items](programs/mathoverflow.md) |
 | 20 | [Millennium Prize](https://lefttosolve.com/programs/Millennium%20Prize) | 21 | 12 | 2 | 12 / 2 / 0 / 7 | [21 items](programs/millennium-prize.md) |
 | 21 | [Kourovka Notebook](https://lefttosolve.com/programs/Kourovka%20Notebook) | 9 | 5 | 0 | 5 / 4 / 0 / 0 | [9 items](programs/kourovka-notebook.md) |
 | 22 | [Hilbert's Problems](https://lefttosolve.com/programs/Hilbert%27s%20Problems) | 8 | 2 | 1 | 2 / 5 / 0 / 1 | [8 items](programs/hilbert-s-problems.md) |
 | 23 | [Open problems in information theory (gokhanmergen)](https://lefttosolve.com/programs/Open%20problems%20in%20information%20theory%20%28gokhanmergen%29) | 7 | 7 | 0 | 0 / 0 / 7 / 0 | [7 items](programs/open-problems-in-information-theory-gokhanmergen.md) |
 | 24 | [Conjectures of Luc Gillibert](https://lefttosolve.com/programs/Conjectures%20of%20Luc%20Gillibert) | 3 | 3 | 0 | 0 / 0 / 3 / 0 | [3 items](programs/conjectures-of-luc-gillibert.md) |
 | 25 | [Litt's Problems](https://lefttosolve.com/programs/Litt%27s%20Problems) | 3 | 2 | 1 | 2 / 1 / 0 / 0 | [3 items](programs/litt-s-problems.md) |
-| | **Total** | **59,396** | **57,410** | **944** | | **4,777 mirrored** |
+| | **Total** | **59,396** | **57,410** | **1,034** | | **4,777 mirrored** |
 
 ## Program descriptions
 

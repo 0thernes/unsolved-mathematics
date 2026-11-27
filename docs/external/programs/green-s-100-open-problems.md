@@ -12,7 +12,7 @@
 
 [Program page](https://lefttosolve.com/programs/Green%27s%20100%20Open%20Problems) · Ben Green's list of 100 open problems in additive combinatorics and related areas.
 
-Targets 285 · open 128 · solved here (site claim) 67 · kinds open/known/unformalized/other = 128/156/0/1 · snapshot `1491f139c5a17e60` (`2026-11-27T03:29:12Z`).
+Targets 285 · open 128 · solved here (site claim) 71 · kinds open/known/unformalized/other = 128/156/0/1 · snapshot `6aad4dc91eea6bbb` (`2026-11-27T04:31:27Z`).
 
 Back to [all programs](../PROGRAMS.md).
 
@@ -268,7 +268,7 @@ Back to [all programs](../PROGRAMS.md).
 | 248 | `Green82.green_82_upper_bound` | Ben Green's Open Problem 82 — green 82 upper bound | known | Harmonic Analysis, Number Theory |  |  |
 | 249 | `Green84.green_84` | Ben Green's Open Problem 84 | known | Combinatorics, Harmonic Analysis |  |  |
 | 250 | `Green84.green_84.variants.bbmst` | Flat Littlewood polynomials exist. | known | Combinatorics, Complex Analysis, Harmonic Analysis |  |  |
-| 251 | `Green84.green_84.variants.golay` | Ben Green's Open Problem 84 — golay | known | Combinatorics, Harmonic Analysis |  |  |
+| 251 | `Green84.green_84.variants.golay` | Ben Green's Open Problem 84 — golay | known | Combinatorics, Harmonic Analysis |  | yes |
 | 252 | `Green84.green_84.variants.littlewood` | Ben Green's Open Problem 84 — littlewood | open | Combinatorics, Complex Analysis, Harmonic Analysis |  |  |
 | 253 | `Green84.green_84.variants.ultraflat_mod` | Ben Green's Open Problem 84 — ultraflat mod | open | Combinatorics, Harmonic Analysis, Number Theory |  |  |
 | 254 | `Green85.green_85` | Green's Open Problem 85 — green 85 | open | Convex & Discrete Geometry, Measure & Integration |  |  |

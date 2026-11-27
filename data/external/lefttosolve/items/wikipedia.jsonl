@@ -277,9 +277,9 @@
 {"fields": ["Harmonic Analysis"], "id": "Kakeya.kakeya_set_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Kakeya problem — kakeya set conjecture"}
 {"fields": ["Associative Rings", "Group Theory"], "id": "Kaplansky.UnitConjecture.counterexamples.i", "kind": "known", "prize": null, "solved": true, "title": "Kaplansky's Conjectures — i"}
 {"fields": ["Associative Rings", "Group Theory"], "id": "Kaplansky.UnitConjecture.counterexamples.ii", "kind": "known", "prize": null, "solved": true, "title": "Kaplansky's Conjectures — ii"}
-{"fields": ["Associative Rings", "Group Theory"], "id": "Kaplansky.direct_finiteness_conjecture", "kind": "known", "prize": null, "solved": false, "title": "Kaplansky's direct finiteness conjecture"}
-{"fields": ["Associative Rings", "Group Theory"], "id": "Kaplansky.direct_finiteness_conjecture.variants.char_two", "kind": "known", "prize": null, "solved": false, "title": "Kaplansky's Conjectures — char two"}
-{"fields": ["Associative Rings", "Group Theory"], "id": "Kaplansky.direct_finiteness_conjecture.variants.char_zero", "kind": "known", "prize": null, "solved": false, "title": "Kaplansky's Conjectures — char zero"}
+{"fields": ["Associative Rings", "Group Theory"], "id": "Kaplansky.direct_finiteness_conjecture", "kind": "known", "prize": null, "solved": true, "title": "Kaplansky's direct finiteness conjecture"}
+{"fields": ["Associative Rings", "Group Theory"], "id": "Kaplansky.direct_finiteness_conjecture.variants.char_two", "kind": "known", "prize": null, "solved": true, "title": "Kaplansky's Conjectures — char two"}
+{"fields": ["Associative Rings", "Group Theory"], "id": "Kaplansky.direct_finiteness_conjecture.variants.char_zero", "kind": "known", "prize": null, "solved": true, "title": "Kaplansky's Conjectures — char zero"}
 {"fields": ["Associative Rings", "Group Theory"], "id": "Kaplansky.idempotent_conjecture", "kind": "open", "prize": null, "solved": false, "title": "The idempotent conjecture"}
 {"fields": ["Group Theory"], "id": "Kaplansky.promislow_group_is_torsionfree", "kind": "warmup", "prize": null, "solved": true, "title": "Kaplansky's Conjectures"}
 {"fields": ["Number Theory"], "id": "KeithNumber.keith_numbers_infinite", "kind": "open", "prize": null, "solved": false, "title": "Keith numbers — keith numbers infinite"}
@@ -359,7 +359,7 @@
 {"fields": ["Number Theory"], "id": "Mills.exists-prime", "kind": "known", "prize": null, "solved": false, "title": "Mills' theorem"}
 {"fields": ["Number Theory"], "id": "Mills.exists_least", "kind": "known", "prize": null, "solved": false, "title": "Mills' constant."}
 {"fields": ["Number Theory"], "id": "Mills.irrational", "kind": "known", "prize": null, "solved": false, "title": "Mills' constant is irrational"}
-{"fields": ["Number Theory"], "id": "Mills.lower_bound_of_RH", "kind": "known", "prize": null, "solved": false, "title": "Mills' constant lower bound"}
+{"fields": ["Number Theory"], "id": "Mills.lower_bound_of_RH", "kind": "known", "prize": null, "solved": true, "title": "Mills' constant lower bound"}
 {"fields": ["Number Theory"], "id": "Mills.mem_Ioo", "kind": "known", "prize": null, "solved": false, "title": "Mills' Theorem"}
 {"fields": ["Computer Science", "Number Theory"], "id": "MinimalPrime.base_seventeen_f19_family_minimal_prime_question", "kind": "open", "prize": null, "solved": false, "title": "Minimal primes in radix bases — base seventeen f19 family minimal prime question"}
 {"fields": ["Computer Science", "Number Theory"], "id": "MinimalPrime.base_ten_minimal_primes_card", "kind": "known", "prize": null, "solved": true, "title": "Minimal primes in radix bases — base ten minimal primes card"}
@@ -369,7 +369,7 @@
 {"fields": ["Complex Analysis", "Number Theory"], "id": "MontgomeryPairCorrelationConjecture.montgomery_pair_correlation_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Montgomery's GUE pair correlation conjecture for zeta zeros"}
 {"fields": ["Complex Analysis", "Number Theory"], "id": "MontgomeryPairCorrelationConjecture.montgomery_pair_correlation_conjecture.variants.general_interval", "kind": "open", "prize": null, "solved": false, "title": "Montgomery's GUE pair correlation conjecture for zeta zeros — general interval"}
 {"fields": ["Convex & Discrete Geometry"], "id": "MoserWorm.convex_mosers_worm_problem", "kind": "open", "prize": null, "solved": false, "title": "Convex Moser's Worm Problem"}
-{"fields": ["Convex & Discrete Geometry"], "id": "MoserWorm.convex_mosers_worm_problem_bound_attained", "kind": "known", "prize": null, "solved": false, "title": "Moser's Worm — convex mosers worm problem bound attained"}
+{"fields": ["Convex & Discrete Geometry"], "id": "MoserWorm.convex_mosers_worm_problem_bound_attained", "kind": "known", "prize": null, "solved": true, "title": "Moser's Worm — convex mosers worm problem bound attained"}
 {"fields": ["Convex & Discrete Geometry"], "id": "MoserWorm.convex_mosers_worm_problem_lower_bound", "kind": "known", "prize": null, "solved": false, "title": "Moser's Worm — convex mosers worm problem lower bound"}
 {"fields": ["Convex & Discrete Geometry"], "id": "MoserWorm.convex_mosers_worm_problem_upper_bound", "kind": "known", "prize": null, "solved": false, "title": "Moser's Worm — convex mosers worm problem upper bound"}
 {"fields": ["Convex & Discrete Geometry"], "id": "MoserWorm.mosers_worm_problem", "kind": "open", "prize": null, "solved": false, "title": "Moser's Worm Problem"}
@@ -450,12 +450,12 @@
 {"fields": ["Combinatorics"], "id": "ReconstructionConjecture.reconstruction_conjecture", "kind": "open", "prize": null, "solved": false, "title": "The reconstruction conjecture"}
 {"fields": ["Combinatorics"], "id": "ReconstructionConjecture.reconstruction_conjecture.variants.tree", "kind": "known", "prize": null, "solved": false, "title": "Trees are reconstructible"}
 {"fields": ["Number Theory"], "id": "RefactorableNumber.infinitely_many_consecutive_refactorable_pairs", "kind": "open", "prize": null, "solved": false, "title": "Colton's Conjecture (1999, Conjecture 2)"}
-{"fields": ["Number Theory"], "id": "RefactorableNumber.no_three_consecutive_refactorable", "kind": "known", "prize": null, "solved": false, "title": "Zelinsky's Theorem (2002)"}
+{"fields": ["Number Theory"], "id": "RefactorableNumber.no_three_consecutive_refactorable", "kind": "known", "prize": null, "solved": true, "title": "Zelinsky's Theorem (2002)"}
 {"fields": ["Number Theory"], "id": "RefactorableNumber.refactorable_hasDensity_zero", "kind": "known", "prize": null, "solved": true, "title": "Kennedy–Cooper Theorem (1990)"}
 {"fields": ["Number Theory"], "id": "RefactorableNumber.zelinsky_refactorable_progression_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Zelinsky's Conjecture (2002, Conjecture 32)"}
 {"fields": ["Number Theory"], "id": "RegularPrimes.infinitude_of_irregularprimes", "kind": "known", "prize": null, "solved": false, "title": "Infinite Regular Primes — infinitude of irregularprimes"}
 {"fields": ["Number Theory"], "id": "RegularPrimes.isRegularPrime_iff_Bernoulli", "kind": "warmup", "prize": null, "solved": false, "title": "Kummer's criterion."}
-{"fields": ["Number Theory"], "id": "RegularPrimes.not_isRegularPrime_37", "kind": "warmup", "prize": null, "solved": false, "title": "Infinite Regular Primes — not isRegularPrime 37"}
+{"fields": ["Number Theory"], "id": "RegularPrimes.not_isRegularPrime_37", "kind": "warmup", "prize": null, "solved": true, "title": "Infinite Regular Primes — not isRegularPrime 37"}
 {"fields": ["Number Theory"], "id": "RegularPrimes.regularprime_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Infinite Regular Primes — regularprime conjecture"}
 {"fields": ["Number Theory"], "id": "RegularPrimes.small_regular_primes", "kind": "warmup", "prize": null, "solved": false, "title": "Infinite Regular Primes — small regular primes"}
 {"fields": ["Number Theory"], "id": "RepunitPrime.infinitely_many_repunit_primes", "kind": "open", "prize": null, "solved": false, "title": "Decimal Repunit Primes"}
@@ -513,7 +513,7 @@
 {"fields": ["Commutative Algebra"], "id": "SmallCohenMacaulayModules.exists_isBalancedBigCohenMacaulay", "kind": "known", "prize": null, "solved": false, "title": "Existence of balanced big Cohen-Macaulay modules."}
 {"fields": ["Commutative Algebra"], "id": "SmallCohenMacaulayModules.exists_isSmallCohenMacaulay", "kind": "open", "prize": null, "solved": false, "title": "The small Cohen-Macaulay modules conjecture."}
 {"fields": ["Commutative Algebra"], "id": "SmallCohenMacaulayModules.exists_isSmallCohenMacaulay.variants.ringKrullDim_le_two", "kind": "known", "prize": null, "solved": false, "title": "The small Cohen-Macaulay modules conjecture — ringKrullDim le two"}
-{"fields": ["Commutative Algebra"], "id": "SmallCohenMacaulayModules.isBalancedBigCohenMacaulay_iff_isSmallCohenMacaulay", "kind": "warmup", "prize": null, "solved": false, "title": "The small Cohen-Macaulay modules conjecture"}
+{"fields": ["Commutative Algebra"], "id": "SmallCohenMacaulayModules.isBalancedBigCohenMacaulay_iff_isSmallCohenMacaulay", "kind": "warmup", "prize": null, "solved": true, "title": "The small Cohen-Macaulay modules conjecture"}
 {"fields": ["Number Theory"], "id": "SmithNumber.infinite_smith_brothers", "kind": "open", "prize": null, "solved": false, "title": "McDaniel's Theorem on Smith Numbers and the Smith Brothers Problem"}
 {"fields": ["Number Theory"], "id": "SmithNumber.mcdaniel_infinitely_many_smith_numbers", "kind": "known", "prize": null, "solved": true, "title": "McDaniel's Theorem (1987)"}
 {"fields": ["Combinatorics"], "id": "SnakeInBox.coil_small_dimensions", "kind": "known", "prize": null, "solved": false, "title": "Snake in the box — coil small dimensions"}
@@ -606,7 +606,7 @@
 {"fields": ["Number Theory"], "id": "WieferichPrime.infinite_isWieferichPrime", "kind": "open", "prize": null, "solved": false, "title": "Wieferich primes — infinite isWieferichPrime"}
 {"fields": ["Number Theory"], "id": "WieferichPrime.infinite_isWieferichPrimeBase", "kind": "open", "prize": null, "solved": false, "title": "Wieferich primes — infinite isWieferichPrimeBase"}
 {"fields": ["Number Theory"], "id": "WieferichPrime.isWieferichPrime_iff", "kind": "open", "prize": null, "solved": false, "title": "Wieferich primes — isWieferichPrime iff"}
-{"fields": ["Group Theory", "Number Theory"], "id": "WilfNumericalSemigroupConjecture.wilf_conjecture_embedding_dim_le_three", "kind": "known", "prize": null, "solved": false, "title": "Fröberg–Gottlieb–Häggkvist Theorem"}
+{"fields": ["Group Theory", "Number Theory"], "id": "WilfNumericalSemigroupConjecture.wilf_conjecture_embedding_dim_le_three", "kind": "known", "prize": null, "solved": true, "title": "Fröberg–Gottlieb–Häggkvist Theorem"}
 {"fields": ["Group Theory", "Number Theory"], "id": "WilfNumericalSemigroupConjecture.wilf_numerical_semigroup_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Wilf's Conjecture"}
 {"fields": ["Number Theory"], "id": "WilsonPrime.infinitely_many_wilson_primes", "kind": "open", "prize": null, "solved": false, "title": "Wilson primes"}
 {"fields": ["Number Theory"], "id": "WolstenholmePrime.wolstenholme_bernoulli", "kind": "warmup", "prize": null, "solved": true, "title": "Wolstenholme Prime — wolstenholme bernoulli"}

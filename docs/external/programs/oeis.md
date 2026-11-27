@@ -12,7 +12,7 @@
 
 [Program page](https://lefttosolve.com/programs/OEIS) · Conjectures attached to sequences in the On-Line Encyclopedia of Integer Sequences. Often numerically explorable.
 
-Targets 461 · open 394 · solved here (site claim) 59 · kinds open/known/unformalized/other = 394/21/0/46 · snapshot `1491f139c5a17e60` (`2026-11-27T03:29:12Z`).
+Targets 461 · open 394 · solved here (site claim) 59 · kinds open/known/unformalized/other = 394/21/0/46 · snapshot `6aad4dc91eea6bbb` (`2026-11-27T04:31:27Z`).
 
 Back to [all programs](../PROGRAMS.md).
 
