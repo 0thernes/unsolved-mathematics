@@ -30,7 +30,7 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 
 try:
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")  # type: ignore[attr-defined]
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")  # type: ignore[union-attr]
 except Exception:
     pass
 

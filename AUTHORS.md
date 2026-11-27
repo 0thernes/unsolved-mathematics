@@ -15,8 +15,8 @@ The atlas was assembled with AI assistance under continuous human direction.
 Drafting, structuring, verification tooling, and Lean 4 formalization assistance
 used frontier language models (Claude, Codex/GPT, Gemini). While the review
 architecture ([docs/review/AI-META-REVIEW.md](docs/review/AI-META-REVIEW.md))
-defines a planned multi-model panel (Grok, Gemini, GPT, Claude), as of `v0.4.0`
-(`2026-11-25`) **only 1 of 4 AI review passes (Claude self-review on 2026-06-14,
+defines a planned multi-model panel (Grok, Gemini, GPT, Claude), as of `v0.7.0`
+(`2026-11-26`) **only 1 of 4 AI review passes (Claude self-review on 2026-06-14,
 recorded under the historical non-canonical session label `claude-opus-4-8`) has been
 executed across the 106 meta-analyses, and 0 of 106 have independent human peer
 review**.
@@ -28,8 +28,8 @@ AI-generated content is never presented as human-peer-reviewed. See
 ## How to credit
 Please cite as described in [CITATION.cff](CITATION.cff). At minimum:
 
-> Donahue, Alexander. *The Unsolved Mathematics Atlas.* 2026.
-> https://github.com/0thernes/unsolved-mathematics (CC BY 4.0).
+> Donahue, Alexander S. (ORCID 0009-0006-8168-9648). *The Unsolved Mathematics Atlas.* 2026.
+> https://github.com/0thernes/unsolved-mathematics (CC BY 4.0 / MIT).
 
 ## Contributors
 Academic reviewers, verifiers, and contributors who help advance the atlas

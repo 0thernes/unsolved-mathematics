@@ -1033,14 +1033,14 @@ def test_contract_v060_dual_cryptographic_timestamps():
 
 
 def test_regression_v060_autoimplicit_false_and_53_theorem_blueprint(tmp_path: Path):
-    """Verify autoImplicit = false in lean/lakefile.toml, 53/81 Lean counts, and v0.6.0 Blueprint theorems."""
+    """Verify autoImplicit = false in lean/lakefile.toml, >=53 Lean theorems, and v0.6.0 Blueprint theorems."""
     import build_site
 
     lakefile_txt = (ROOT / "lean" / "lakefile.toml").read_text(encoding="utf-8")
     assert "autoImplicit = false" in lakefile_txt
 
     comp = json.loads((ROOT / "lean" / "comparator.json").read_text(encoding="utf-8"))
-    assert len(comp["theorem_names"]) == 53
+    assert len(comp["theorem_names"]) >= 53
 
     build_site.build_site(tmp_path / "_site")
     bp_txt = (tmp_path / "_site" / "blueprint.html").read_text(encoding="utf-8")
@@ -1055,3 +1055,160 @@ def test_regression_v060_autoimplicit_false_and_53_theorem_blueprint(tmp_path: P
         "thm_ramsey_R34_lower",
     ):
         assert token in bp_txt, f"Missing v0.6.0 theorem {token} in blueprint.html"
+
+
+# --------------------------------------------------------------------------- #
+#  Cycle 6 / 3-Cycle /goal Hardening (v0.7.0) — Complete Euclid–Euler,
+#  Euler 2p | (q-1), Collatz Fine–Wilf / d<=7 / 1-&2-Odd Exclusion & Audits
+# --------------------------------------------------------------------------- #
+def test_oracle_v070_euclid_euler_and_mersenne_divisor_congruence():
+    """Differential check matching thm_euclid_euler_even_perfect_iff and thm_mersenne_prime_divisor_congruence."""
+    # Complete Euclid-Euler iff on every even integer 2 <= n <= 10,000
+    euclid_set = {
+        (1 << (p - 1)) * ((1 << p) - 1)
+        for p in range(2, 16)
+        if _is_prime((1 << p) - 1)
+    }
+    for n in range(2, 10001, 2):
+        assert (_div_sum_pairs(n) == 2 * n) == (n in euclid_set)
+
+    # Euler 1750: for every odd prime p <= 29 and every prime q | (2^p - 1), 2p | (q - 1)
+    for p in range(3, 30):
+        if not _is_prime(p):
+            continue
+        m = (1 << p) - 1
+        rem = m
+        d = 2
+        while d * d <= rem:
+            if rem % d == 0:
+                assert _is_prime(d) and (d - 1) % (2 * p) == 0
+                while rem % d == 0:
+                    rem //= d
+            d += 1 if d == 2 else 2
+        if rem > 1:
+            assert _is_prime(rem) and (rem - 1) % (2 * p) == 0
+
+
+def test_oracle_v070_collatz_low_odd_and_fine_wilf_and_d_le_7():
+    """Differential check matching 1-/2-odd-step exclusion, Fine-Wilf spine ceiling, d<=7, and catalytic cylinder."""
+    # 1-odd-step & 2-odd-step positive-cycle exclusion across all (d, a, b) with d <= 20
+    for d in range(1, 21):
+        # o = 1: (2^d - 3) * x = 2^a (0 <= a < d)
+        denom1 = (1 << d) - 3
+        if denom1 > 0:
+            for a in range(d):
+                if (1 << a) % denom1 == 0:
+                    x = (1 << a) // denom1
+                    assert d == 2 and x in (1, 2)
+        # o = 2: (2^d - 9) * x = 3 * 2^a + 2^b (0 <= a < b < d)
+        denom2 = (1 << d) - 9
+        if denom2 > 0:
+            for a in range(d):
+                for b in range(a + 1, d):
+                    num = 3 * (1 << a) + (1 << b)
+                    if num % denom2 == 0:
+                        x = num // denom2
+                        assert d == 4 and x in (1, 2)
+
+    # Fine-Wilf valuation ceiling & exact valuation isometry on pairs of short words
+    words = [
+        [True, False],
+        [True, False, True],
+        [True, True, False],
+        [False, True, False, True],
+        [True, False, False, True, False],
+    ]
+    for w in words:
+        for v in words:
+            dw = (1 << len(w)) - (3 ** sum(w))
+            dv = (1 << len(v)) - (3 ** sum(v))
+            cw = _word_intercept(w)
+            cv = _word_intercept(v)
+            sep = cw * dv - cv * dw
+            bound = len(w) + len(v) - math.gcd(len(w), len(v))
+            if sep != 0:
+                assert sep % (1 << bound) != 0
+                lcp = 0
+                while w[lcp % len(w)] == v[lcp % len(v)]:
+                    lcp += 1
+                assert sep % (1 << lcp) == 0 and sep % (1 << (lcp + 1)) != 0
+
+    # Exhaustive d <= 7 positive-cycle check
+    for d in range(1, 8):
+        for mask in range(1 << d):
+            w = [bool((mask >> i) & 1) for i in range(d)]
+            denom = (1 << d) - (3 ** sum(w))
+            c = _word_intercept(w)
+            if denom > 0 and c > 0 and c % denom == 0:
+                assert (c // denom) in (1, 2)
+
+
+def test_regression_v070_extended_forbidden_tokens_and_palomar_manifest():
+    """Verify check_readme_axioms catches Playbook v1.3 extended tokens & requires lake-manifest.json."""
+    import check_readme_axioms
+
+    for bad in (
+        "private axiom sneak : False",
+        "noncomputable axiom leak : True",
+        "@[implemented_by foo] def bar := 0",
+        "@[extern \"c_fn\"] opaque baz : Nat",
+        "@[csimp] theorem t : 1 = 1 := rfl",
+        "example := Lean.ofReduceBool_native.x",
+    ):
+        assert check_readme_axioms.FORBIDDEN_RE.search(bad), f"FORBIDDEN_RE missed: {bad}"
+
+    assert (ROOT / "lean" / "lake-manifest.json").exists()
+    assert not any(p.is_symlink() for p in (ROOT / "lean").rglob("*.lean"))
+
+
+def test_regression_v070_collatz_b023_fix_and_fair_version_parity():
+    """Guard against C1-BUG-01 (B023 closure bug) and C1-GAP-04 (RO-Crate/Croissant version parity)."""
+    import shutil
+
+    import validate
+
+    ruff_bin = shutil.which("ruff")
+    if ruff_bin:
+        proc = subprocess.run(
+            [ruff_bin, "check", "--select", "E9,F63,F7,F82,B023", str(ROOT / "problems" / "collatz-conjecture" / "experiments")],
+            cwd=ROOT,
+            capture_output=True,
+            text=True,
+        )
+        assert proc.returncode == 0, f"ruff E9/F82/B023 failed:\n{proc.stdout}\n{proc.stderr}"
+
+    # Verify validate.check_version_parity covers ro-crate-metadata.json and croissant.json
+    import inspect
+    src = inspect.getsource(validate.check_version_parity)
+    assert "ro-crate-metadata.json" in src and "croissant.json" in src
+
+
+def test_regression_v070_glossary_ranking_export_control_and_66_theorem_blueprint(tmp_path: Path):
+    """Guard against C1-ERR-01..05 prose fixes and verify 66/102 Lean counts & v0.7.0 Blueprint."""
+    import build_site
+
+    glossary = (ROOT / "docs" / "glossary.md").read_text(encoding="utf-8")
+    assert "Bochner–Riesel" not in glossary and "Bochner–Riesz" in glossary
+
+    ranking = (ROOT / "docs" / "methodology" / "RANKING.md").read_text(encoding="utf-8")
+    assert "89.933" in ranking and "open a PR" not in ranking
+
+    assert (ROOT / "docs" / "LITERATURE_AND_EXPORT_CONTROL.md").exists()
+    assert (ROOT / ".github" / "ISSUE_TEMPLATE" / "finding.yml").exists()
+
+    comp = json.loads((ROOT / "lean" / "comparator.json").read_text(encoding="utf-8"))
+    assert len(comp["theorem_names"]) == 66
+
+    build_site.build_site(tmp_path / "_site")
+    bp_txt = (tmp_path / "_site" / "blueprint.html").read_text(encoding="utf-8")
+    for token in (
+        "thm_collatz_positive_cycle_one_odd",
+        "thm_collatz_positive_cycle_two_odd",
+        "thm_collatz_fine_wilf_spine_ceiling",
+        "thm_collatz_no_nontrivial_positive_cycle_le_7",
+        "thm_collatz_catalytic_reversible_cylinder",
+        "thm_euler_even_perfect_converse",
+        "thm_euclid_euler_even_perfect_iff",
+        "thm_mersenne_prime_divisor_congruence",
+    ):
+        assert token in bp_txt, f"Missing v0.7.0 theorem {token} in blueprint.html"

@@ -6,10 +6,10 @@ import NonVacuity
 import Adversarial
 
 /-!
-# VerifyAxioms — Explicit `#print axioms` Audit for All 81 Audited Declarations (`v0.6.0`)
+# VerifyAxioms — Explicit `#print axioms` Audit for All 102 Audited Declarations (`v0.7.0`)
 
-53 headline theorems (`Solution.lean`) + 12 non-vacuity witnesses (`NonVacuity.lean`) +
-16 adversarial false-variant refutations (`Adversarial.lean`) = 81 declarations.
+66 headline theorems (`Solution.lean`) + 16 non-vacuity witnesses (`NonVacuity.lean`) +
+20 adversarial false-variant refutations (`Adversarial.lean`) = 102 declarations.
 Every declaration must depend strictly on a subset of `{propext, Classical.choice, Quot.sound}`.
 -/
 
@@ -31,6 +31,16 @@ Every declaration must depend strictly on a subset of `{propext, Classical.choic
 #print axioms FormalAtlas.Challenge.thm_collatz_positive_cycle_intercept_pos
 #print axioms FormalAtlas.Challenge.thm_collatz_positive_cycle_subcritical
 #print axioms FormalAtlas.Challenge.thm_collatz_no_positive_cycle_d1
+#print axioms FormalAtlas.Challenge.thm_collatz_positive_cycle_one_odd
+#print axioms FormalAtlas.Challenge.thm_collatz_positive_cycle_two_odd
+#print axioms FormalAtlas.Challenge.thm_collatz_2adic_isometry
+#print axioms FormalAtlas.Challenge.thm_collatz_periodic_spine_congruence
+#print axioms FormalAtlas.Challenge.thm_collatz_odd_unit_lock_valuation_isometry
+#print axioms FormalAtlas.Challenge.thm_collatz_fine_wilf_spine_ceiling
+#print axioms FormalAtlas.Challenge.thm_collatz_trivial_cycle_orbit
+#print axioms FormalAtlas.Challenge.thm_collatz_no_nontrivial_positive_cycle_le_7
+#print axioms FormalAtlas.Challenge.thm_collatz_no_positive_cycle_odd_le_7
+#print axioms FormalAtlas.Challenge.thm_collatz_catalytic_reversible_cylinder
 #print axioms FormalAtlas.Challenge.thm_erdos_straus_mordell_840
 #print axioms FormalAtlas.Challenge.thm_erdos_straus_multiplicative_closure
 #print axioms FormalAtlas.Challenge.thm_erdos_straus_mordell_exceptions_small
@@ -62,6 +72,9 @@ Every declaration must depend strictly on a subset of `{propext, Classical.choic
 #print axioms FormalAtlas.Challenge.thm_perfect_numbers_first_four
 #print axioms FormalAtlas.Challenge.thm_no_odd_perfect_le_100
 #print axioms FormalAtlas.Challenge.thm_euclid_even_perfect
+#print axioms FormalAtlas.Challenge.thm_euler_even_perfect_converse
+#print axioms FormalAtlas.Challenge.thm_euclid_euler_even_perfect_iff
+#print axioms FormalAtlas.Challenge.thm_mersenne_prime_divisor_congruence
 #print axioms FormalAtlas.Challenge.thm_ramsey_R33_upper
 #print axioms FormalAtlas.Challenge.thm_ramsey_R33_lower
 #print axioms FormalAtlas.Challenge.thm_ramsey_R34_upper
@@ -78,6 +91,10 @@ Every declaration must depend strictly on a subset of `{propext, Classical.choic
 #print axioms FormalAtlas.NonVacuity.witness_lonely_runner_n3_concrete
 #print axioms FormalAtlas.NonVacuity.witness_lonely_runner_n3_div4
 #print axioms FormalAtlas.NonVacuity.witness_euclid_perfect_28
+#print axioms FormalAtlas.NonVacuity.witness_mersenne_divisor_23_of_M11
+#print axioms FormalAtlas.NonVacuity.witness_collatz_two_odd_trivial_cycle
+#print axioms FormalAtlas.NonVacuity.witness_odd_unit_lock_fine_wilf
+#print axioms FormalAtlas.NonVacuity.witness_catalytic_cylinder
 #print axioms FormalAtlas.Adversarial.adv_erdos_straus_zero_denom_blocked
 #print axioms FormalAtlas.Adversarial.adv_erdos_straus_wrong_witness_refuted
 #print axioms FormalAtlas.Adversarial.adv_collatz_no_universal_descent_d1
@@ -94,3 +111,7 @@ Every declaration must depend strictly on a subset of `{propext, Classical.choic
 #print axioms FormalAtlas.Adversarial.adv_goldbach_requires_even
 #print axioms FormalAtlas.Adversarial.adv_ramsey_R34_not_le_8
 #print axioms FormalAtlas.Adversarial.adv_collatz_no_d1_positive_fixed_point
+#print axioms FormalAtlas.Adversarial.adv_collatz_no_nontrivial_low_odd_cycle
+#print axioms FormalAtlas.Adversarial.adv_even_non_mersenne_not_perfect
+#print axioms FormalAtlas.Adversarial.adv_collatz_no_odd_period_le_7
+#print axioms FormalAtlas.Adversarial.adv_collatz_distinct_spines_bounded_v2

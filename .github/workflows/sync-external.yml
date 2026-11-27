@@ -1,0 +1,73 @@
+# Daily mirror of the lefttosolve.com research programs into data/external/ + docs/external/.
+# Commits straight to main only when the upstream data actually changed (Build Standard v1.2.0 R1:
+# no PRs, no branches). A failed consistency guard writes nothing and turns this run red.
+name: Daily External Program Sync (lefttosolve.com)
+
+on:
+  schedule:
+    - cron: "37 7 * * *"   # once per day, 07:37 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write   # push the refreshed snapshot to main
+  actions: write    # dispatch the Pages workflow (GITHUB_TOKEN pushes do not trigger workflows)
+
+concurrency:
+  group: sync-external
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    name: Fetch, verify & commit external program lists
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-lock.txt
+
+      - name: Install pinned dependencies
+        run: python -m pip install -r requirements-lock.txt
+
+      - name: Live fetch (guarded; aborts without writing on any inconsistency)
+        run: python scripts/sync_external_programs.py
+
+      - name: Offline integrity re-check of the written snapshot and views
+        run: python scripts/sync_external_programs.py --check
+
+      - name: Commit straight to main when data changed
+        id: commit
+        run: |
+          changed=false
+          if [ -n "$(git status --porcelain -- data/external docs/external)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/external docs/external
+            git commit -m "chore(external): daily lefttosolve.com program sync $(date -u +%F)"
+            git pull --rebase origin main
+            git push origin HEAD:main
+            changed=true
+          fi
+          echo "changed=$changed" >> "$GITHUB_OUTPUT"
+          {
+            echo "### External program sync"
+            python - <<'PY'
+          import json
+          s = json.load(open("data/external/lefttosolve/snapshot.json", encoding="utf-8"))
+          t = s["totals"]
+          print(f"- last content change: `{s['last_changed_utc']}`")
+          print(f"- programs: {t['programs']} · targets: {t['sum_card_targets']:,} · mirrored items: {t['mirrored_items']:,} · consistent: {t['consistent']}")
+          PY
+            echo "- committed this run: $changed"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Redeploy GitHub Pages with the refreshed lists
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --ref main

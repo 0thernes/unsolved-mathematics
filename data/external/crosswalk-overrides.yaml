@@ -1,0 +1,112 @@
+# SPDX-License-Identifier: CC-BY-4.0
+# Curated overrides for the Atlas <-> Left to Solve crosswalk
+# (consumed by scripts/sync_external_programs.py; see docs/external/CROSSWALK.md).
+#
+# The automatic rule matches external items by normalized base title. Use
+#   include: { <atlas-slug>: [<id> | {id: <id>, relation: primary|variant|related}, ...] }
+#   exclude: { <atlas-slug>: [<id>, ...] }   to drop a false positive
+# Every id must exist in the mirrored item index (data/external/lefttosolve/items/),
+# every slug in data/problems.yaml; --check fails otherwise.
+# Links are title/identity-level correspondences reviewed against the item id and title
+# (AI-assisted, maintainer-directed); they are NOT statement-fidelity certifications.
+# 'related' = a different but closely connected statement (never raises status signals).
+include:
+  p-versus-np:
+    - {id: ComplexityTheory.P_ne_NP, relation: primary}
+  navier-stokes-smoothness:
+    - {id: NavierStokes.navier_stokes_existence_and_smoothness_R3, relation: primary}
+    - {id: NavierStokes.navier_stokes_existence_and_smoothness_periodic, relation: primary}
+  birch-swinnerton-dyer:
+    - {id: WeierstrassCurve.Affine.Rat.weakBSD, relation: primary}
+    - {id: WeierstrassCurve.Affine.Rat.strongBSD, relation: primary}
+  odd-perfect-numbers:
+    - {id: PerfectNumbers.odd_perfect_number_conjecture, relation: primary}
+    - {id: PerfectNumbers.odd_perfect_number.lower_bound, relation: variant}
+  mersenne-primes-infinitude:
+    - {id: Mersenne.infinitely_many_mersenne_primes, relation: primary}
+  hadwiger-nelson-problem:
+    - {id: Erdos508.HadwigerNelsonProblem, relation: primary}
+    - {id: Erdos508.HadwigerNelsonAtLeastFive, relation: variant}
+  erdos-straus-conjecture:
+    - {id: Erdos242.erdos_242, relation: primary}        # erdosproblems.com/242 is the Erdős–Straus conjecture
+  hadamard-matrix-conjecture:
+    - {id: Hadamard.HadamardConjecture, relation: primary}
+    - {id: Hadamard.HadamardConjecture.variants.167, relation: variant}
+    - {id: Hadamard.HadamardConjecture.variants.first_cases, relation: variant}
+  montgomery-pair-correlation:
+    - {id: MontgomeryPairCorrelationConjecture.montgomery_pair_correlation_conjecture, relation: primary}
+    - {id: MontgomeryPairCorrelationConjecture.montgomery_pair_correlation_conjecture.variants.general_interval, relation: variant}
+  hardy-littlewood-k-tuple:
+    - {id: HardyLittlewood.first_hardy_littlewood_conjecture, relation: primary}
+    - {id: PrimeTuplesConjecture.prime_tuples_conjecture, relation: related}
+    - {id: Dickson.dickson_conjecture, relation: related}
+  andrews-curtis-conjecture:
+    - {id: AndrewsCurtis.andrews_curtis_conjecture, relation: primary}
+  littlewood-conjecture:
+    - {id: LittlewoodConjecture.littlewood_conjecture, relation: primary}
+    - {id: LittlewoodConjecture.padic_littlewood_conjecture, relation: related}
+  schinzel-hypothesis-h:
+    - {id: Schinzel.schinzel_conjecture, relation: primary}
+  whitehead-asphericity-conjecture:
+    - {id: wp-whitehead-conjecture, relation: primary}
+  caccetta-haggkvist-conjecture:
+    - {id: opg-caccetta-haggkvist-conjecture, relation: primary}
+  unit-distance-problem:
+    - {id: Erdos90.erdos_90, relation: primary}
+    - {id: Erdos90.erdos_90.variants.sawin_explicit, relation: variant}
+    - {id: Erdos90.sawin_lattice_reduction, relation: related}
+  falconer-distance-conjecture:
+    - {id: wp-falconer-s-conjecture, relation: primary}
+  artin-primitive-root-conjecture:
+    - {id: ArtinPrimitiveRootsConjecture.artin_primitive_roots.parts.i, relation: primary}
+    - {id: ArtinPrimitiveRootsConjecture.artin_primitive_roots.parts.ii, relation: variant}
+    - {id: ArtinPrimitiveRootsConjecture.conditional_artin_primitive_roots.parts.i, relation: related}
+  sarnak-mobius-conjecture:
+    - {id: wp-sarnak-conjecture, relation: primary}
+  mandelbrot-locally-connected:
+    - {id: Mandelbrot.MLC, relation: primary}
+    - {id: wp-mlc-conjecture-is-the-mandelbrot-set-locally-connected, relation: primary}
+    - {id: Mandelbrot.density_of_hyperbolicity, relation: related}
+  slice-ribbon-conjecture:
+    - {id: opg-slice-ribbon-problem-0, relation: primary}
+  seymour-second-neighborhood-conjecture:
+    - {id: opg-seymours-second-neighbourhood-conjecture, relation: primary}
+    - {id: wp-second-neighborhood-problem, relation: primary}
+  total-coloring-conjecture:
+    - {id: TotalColoringConjecture.total_coloring_conjecture, relation: primary}
+    - {id: TotalColoringConjecture.total_coloring_conjecture.variants.maxDegree_le_five, relation: variant}
+    - {id: opg-behzads-conjecture, relation: primary}
+  catalan-dickson-conjecture:
+    - {id: wp-catalan-dickson-conjecture-on-aliquot-sequences, relation: primary}
+  lehmer-tau-conjecture:
+    - {id: RamanujanTau.lehmer_ramanujan_tau, relation: primary}
+  restriction-conjecture:
+    - {id: wpc-restriction-conjecture, relation: primary}
+  furstenberg-conjecture:
+    - {id: Bugeaud06.furstenberg_two_three, relation: related}   # topological ×2×3 theorem; the measure conjecture is not mirrored
+  cherlin-zilber-conjecture:
+    - {id: wp-cherlin-zilber-conjecture, relation: primary}
+  kelvin-problem:
+    - {id: wp-weaire-phelan-structure, relation: related}
+  self-avoiding-walk:
+    - {id: wp-finding-a-function-to-model-n-step-self-avoiding-walks, relation: related}
+  carmichael-totient-conjecture:
+    - {id: CarmichaelTotient.charmichaelTotient, relation: primary}
+    - {id: CarmichaelTotient.carchimaelTotient_bound, relation: variant}
+  giuga-conjecture:
+    - {id: AgohGiuga.agoh_giuga.variants.giuga, relation: primary}
+    - {id: AgohGiuga.agoh_giuga, relation: related}
+    - {id: opg-giugas-conjecture-on-primality, relation: primary}
+  section-conjecture:
+    - {id: wp-section-conjecture, relation: primary}
+  greenberg-conjecture:
+    - {id: wp-greenberg-s-conjectures, relation: related}
+  continuum-hypothesis:
+    - {id: wp-generalized-continuum-hypothesis, relation: related}
+  kakeya-conjecture:
+    - {id: Kakeya.kakeya_set_conjecture, relation: primary}
+  hall-conjecture:
+    - {id: Hall.hall_conjecture, relation: primary}
+  kothe-conjecture:
+    - {id: Koethe.KotheConjecture, relation: primary}
+exclude: {}

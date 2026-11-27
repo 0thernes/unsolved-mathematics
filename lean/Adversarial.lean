@@ -4,9 +4,9 @@ module
 public import FormalAtlas
 
 /-!
-# Adversarial — Explicit Refutation of Weakened / False Variants (`v0.6.0`, Playbook #12)
+# Adversarial — Explicit Refutation of Weakened / False Variants (`v0.7.0`, Playbook #12)
 
-Tests all 8 formal domains adversarially by proving 16 deliberately false, overclaimed,
+Tests all 8 formal domains adversarially by proving 20 deliberately false, overclaimed,
 or degenerately weakened statements are PROVABLY FALSE under our definitions.
 -/
 
@@ -126,5 +126,68 @@ public theorem adv_collatz_no_d1_positive_fixed_point :
     ¬ (∃ x : Int, 0 < x ∧ iter T 1 x = x) := by
   intro ⟨x, hx, hfix⟩
   exact collatz_no_positive_cycle_d1 x hx hfix
+
+/-- 17. No nontrivial positive integer `x ≥ 3` can lie on ANY 1-odd-step or 2-odd-step Collatz cycle. -/
+public theorem adv_collatz_no_nontrivial_low_odd_cycle :
+    ¬ (∃ d : Nat, ∃ x : Int, 1 ≤ d ∧ 3 ≤ x ∧ iter T d x = x ∧
+        (oddCount T d x = 1 ∨ oddCount T d x = 2)) := by
+  intro ⟨d, x, hd, hx, hcyc, hcases⟩
+  rcases hcases with h1 | h2
+  · have ⟨_, hx12⟩ := collatz_positive_cycle_one_odd d x hd (by omega) hcyc h1
+    omega
+  · have ⟨_, hx12⟩ := collatz_positive_cycle_two_odd d x hd (by omega) hcyc h2
+    omega
+
+/-- 18. Even integers of Euclid shape with composite `2^p - 1` (`p = 4`: `8 * 15 = 120`) are NOT perfect. -/
+public theorem adv_even_non_mersenne_not_perfect :
+    ¬ IsPerfect (2 ^ (4 - 1) * (2 ^ 4 - 1)) := by
+  intro hperf
+  have ⟨p, hp2, hmp, heq⟩ := euler_even_perfect_converse 120 (by decide) hperf
+  have h120 : 2 ^ (p - 1) * (2 ^ p - 1) = 120 := heq.symm
+  have hmono : ∀ a b : Nat, a ≤ b → 2 ^ a ≤ 2 ^ b := by
+    intro a b
+    induction b with
+    | zero =>
+      intro h
+      have ha0 : a = 0 := by omega
+      subst ha0
+      exact Nat.le_refl 1
+    | succ k ih =>
+      intro h
+      by_cases he : a = k + 1
+      · subst he; exact Nat.le_refl _
+      · have := ih (by omega); rw [Nat.pow_succ]; omega
+  -- p ≥ 5 forces 2^(p-1) * (2^p - 1) ≥ 16 * 31 = 496 > 120
+  have hple4 : p ≤ 4 := by
+    by_cases hge5 : 5 ≤ p
+    · have h1 : 2 ^ 4 ≤ 2 ^ (p - 1) := hmono 4 (p - 1) (by omega)
+      have h2 : 2 ^ 5 ≤ 2 ^ p := hmono 5 p hge5
+      have hprod : 16 * 31 ≤ 2 ^ (p - 1) * (2 ^ p - 1) := Nat.mul_le_mul (by omega) (by omega)
+      omega
+    · omega
+  by_cases hp2' : p = 2
+  · rw [hp2'] at h120; simp at h120
+  · by_cases hp3' : p = 3
+    · rw [hp3'] at h120; simp at h120
+    · have hp4' : p = 4 := by omega
+      rw [hp4'] at hmp
+      have h3 : 3 ∣ 2 ^ 4 - 1 := ⟨5, by decide⟩
+      have hc := hmp.2 3 h3
+      omega
+
+/-- 19. No positive integer lies on ANY odd-period Collatz cycle through `d ≤ 7` (`d ∈ {1, 3, 5, 7}`). -/
+public theorem adv_collatz_no_odd_period_le_7 :
+    ¬ (∃ d : Nat, ∃ x : Int, 1 ≤ d ∧ d ≤ 7 ∧ d % 2 = 1 ∧ 0 < x ∧ iter T d x = x) := by
+  intro ⟨d, x, hd1, hd7, hodd, hx, hcyc⟩
+  exact collatz_no_positive_cycle_odd_le_7 d x hd1 hd7 hodd hx hcyc
+
+/-- 20. Distinct periodic Collatz spines CANNOT match to 2-adic precision `|w| + |v| - gcd(|w|, |v|)`. -/
+public theorem adv_collatz_distinct_spines_bounded_v2 :
+    ¬ (∃ w v : List Bool, 1 ≤ w.length ∧ 1 ≤ v.length ∧
+        wordIntercept w * spineDenom v ≠ wordIntercept v * spineDenom w ∧
+        (wordIntercept w * spineDenom v - wordIntercept v * spineDenom w) %
+          ((2 : Int) ^ (w.length + v.length - Nat.gcd w.length v.length)) = 0) := by
+  intro ⟨w, v, hw, hv, hne, hdiv⟩
+  exact collatz_fine_wilf_spine_ceiling w v hw hv hne hdiv
 
 end FormalAtlas.Adversarial

@@ -1,0 +1,43 @@
+name: 🧭 Finding Report (10-Class Build Standard v1.2.0)
+description: Report a bug, error, issue, problem, concern, dilemma, conflict, gap, hole, or blindspot.
+title: "[finding] <short summary>"
+labels: ["triage"]
+body:
+  - type: dropdown
+    id: finding_class
+    attributes:
+      label: Finding class (Build Standard v1.2.0 — choose exactly one)
+      description: Classify the finding using the canonical 10-class taxonomy.
+      options:
+        - "bug — defect in program logic"
+        - "error — wrong artifact, number, claim, doc, config, or build"
+        - "issue — weakness, inconsistency, or fragility in something that exists"
+        - "problem — external obstacle blocking progress"
+        - "concern — risk that has not caused harm yet (security, legal, misleading)"
+        - "dilemma — trade-off between valid options needing owner decision"
+        - "conflict — two requirements, sources, or rules contradict each other"
+        - "gap — required or expected file, feature, or check is missing"
+        - "hole — missing safeguard allowing a defect to slip through"
+        - "blindspot — unexamined assumption, platform, or failure mode"
+    validations:
+      required: true
+  - type: input
+    id: component
+    attributes:
+      label: Affected file(s) or module(s)
+      placeholder: "lean/FormalAtlas/Collatz.lean or scripts/validate.py"
+    validations:
+      required: true
+  - type: textarea
+    id: detail
+    attributes:
+      label: Evidence & reproduction steps
+      description: Include exact commands, line numbers, or primary-source citations.
+    validations:
+      required: true
+  - type: textarea
+    id: fix
+    attributes:
+      label: Suggested fix or guard (optional)
+    validations:
+      required: false

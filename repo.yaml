@@ -74,7 +74,7 @@ items:
   B02: {status: done}
   B03: {status: done, note: "Verified in tests/test_verification_ladder.py (clean rebuild & tie-break determinism)"}
   B04: {status: done}
-  B05: {status: done, note: "Every claim C-01..C-13 in CLAIMS.md maps to executable CI checks or formal proofs"}
+  B05: {status: done, note: "Every claim C-01..C-14 in CLAIMS.md maps to executable CI checks or formal proofs"}
   B06: {status: done, note: "Negative tests in tests/test_verification_ladder.py"}
   B07: {status: done, note: "Dedicated regression tests for BUG-01..BUG-07 and ERR-02..ERR-03 in tests/test_verification_ladder.py"}
   B08: {status: done, note: "Golden determinism & rebuild tests in tests/test_verification_ladder.py"}
@@ -91,7 +91,7 @@ items:
   B19: {status: n/a, note: "Build and validation pipeline is single-threaded deterministic"}
   B20: {status: done, note: "Exact integer/Fraction arithmetic in formal proofs & oracles; bounded IEEE-754 CSS rounding tested in tests/test_properties.py"}
   B21: {status: n/a, note: "Not a networked runtime service"}
-  B22: {status: done, note: "Lean 4.35.0 formal core in lean/ with autoImplicit=false (53 theorems, 12 non-vacuity witnesses, 16 adversarial refutations = 81 audited decls across 8 domains, 6-kernel replay + live negative kernel rejection)"}
+  B22: {status: done, note: "Lean 4.35.0 formal core in lean/ with autoImplicit=false (66 theorems, 16 non-vacuity witnesses, 20 adversarial refutations = 102 audited decls across 8 domains, 6-kernel replay + live negative kernel rejection)"}
   B23: {status: n/a, note: "Pure mathematical theorem proving in Lean 4; no TLA+/Alloy concurrent state-machine protocol"}
   B24: {status: done, note: "Lean 4.35.0 dependently typed pure functional core (lean/) replayed across 6 independent kernels"}
   B25: {status: n/a, note: "No C/Rust systems implementation requiring Kani/CBMC bounded model checking"}

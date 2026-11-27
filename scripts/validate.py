@@ -98,6 +98,22 @@ def check_version_parity() -> list[str]:
         fver = str(fdata.get("version", ""))
         if fver != ver:
             issues.append(f"lean/formalization.yaml version ({fver}) != VERSION ({ver})")
+
+    rocrate = ROOT / "ro-crate-metadata.json"
+    if rocrate.exists():
+        ro_data = json.loads(rocrate.read_text(encoding="utf-8"))
+        for node in ro_data.get("@graph", []):
+            if node.get("@id") == "./":
+                ro_ver = str(node.get("version", ""))
+                if ro_ver != ver:
+                    issues.append(f"ro-crate-metadata.json version ({ro_ver}) != VERSION ({ver})")
+
+    croissant = ROOT / "croissant.json"
+    if croissant.exists():
+        cr_data = json.loads(croissant.read_text(encoding="utf-8"))
+        cr_ver = str(cr_data.get("version", ""))
+        if cr_ver != ver:
+            issues.append(f"croissant.json version ({cr_ver}) != VERSION ({ver})")
     return issues
 
 

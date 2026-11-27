@@ -1,7 +1,7 @@
-# 📋 Research Kanban — The Unsolved Mathematics Atlas (`v0.6.0`)
+# 📋 Research Kanban — The Unsolved Mathematics Atlas (`v0.7.0`)
 
 > Operational board tracking the atlas's verification, formalization, and curation workstreams.
-> Updated `2026-11-26` for release `v0.6.0`.
+> Updated `2026-11-26` for release `v0.7.0`.
 
 **Legend:** 🟥 blocked · 🟧 needs-verification · 🟨 in-progress · 🟩 done · 🟦 backlog
 
@@ -26,7 +26,9 @@
 
 - [ ] Quarterly mathematical frontier tracking (monitoring late-2026 Lean-only GRH / Euler–NS claims until peer review settles; tracking Erdős Unit Distance `arXiv:2605.20695` peer review).
 
-## 🟩 Done (`v0.1.0` – `v0.6.0`)
+## 🟩 Done (`v0.1.0` – `v0.7.0`)
+
+- [x] **3-Cycle `/goal` Forensic Hardening & Landmark Formal Core Expansion (`v0.7.0`):** Expanded `lean/` from `53 → 66` headline theorems (`81 → 102` audited declarations, 14 zero-axiom, 6/6 independent kernels PASS) adding the **Complete Euclid–Euler Biconditional Theorem**, **Euler's 1750 Mersenne Prime Divisor Congruence ($2p \mid q-1$)**, **Collatz Fine–Wilf Odd-Unit-Lock Spine Valuation Ceiling**, **2-adic cylinder & valuation isometries**, **exhaustive $d \le 7$ & unconditional 1-/2-odd-step positive-cycle exclusions (all $d \ge 1$)**, and **catalytic reversible cylinder evaluation**; fixed `B023` closure bug in Collatz experiments, all 13 `mypy` errors across 6 scripts (18/18 files clean), `Bochner–Riesel` → `Bochner–Riesz`, stale `2025` RH CSS worked example, and `build.ps1` `-LiteralPath`; added 10-class `.github/ISSUE_TEMPLATE/finding.yml`, `docs/LITERATURE_AND_EXPORT_CONTROL.md`, extended Playbook v1.3 forbidden-token/manifest/symlink checks, Node 24 `@v7/@v5/@v4` CI with SHA-256-pinned `gitleaks`/`osv-scanner`, 1-to-1 numbered Claims Ledger table + 7 new live-verified BibTeX refs in the 0-warning white paper, 84 passing tests, and the daily Left to Solve external-program mirror (`v0.7.0`).
 
 - [x] **Cycle 5 Bleeding-Edge Milestone (`v0.6.0`):** Enabled `autoImplicit = false` in `lean/lakefile.toml`, fixed `Defs.isqrt` fixed-32 fuel cap to unconditional `isqrt_spec` for all `n : Nat`, expanded `lean/` from `45 → 53` headline theorems (`69 → 81` audited declarations, 13 zero-axiom, 6/6 kernels PASS) adding **complete constructive Lonely Runner $n=3$ (all positive speed triples)**, **Euclid's general even perfect number theorem (all $p \ge 2$)**, **exact Ramsey $R(3,4)=9$** ($K_9$ Handshaking Lemma + $C_8(1,4,7)$), and 4 Collatz positive-cycle obstruction theorems; added 3-case live negative kernel rejection (`scripts/test_lean_negative.py`), dual DigiCert RFC 3161 (`.tsr`) + 3-calendar Bitcoin OpenTimestamps (`.ots`) manifest proofs (`scripts/timestamp_manifest.py`), Mega-Atlas `v2.7.0` sync (`0/1,900` retired across 16 archive entries / 76 public repos), visually verified white paper upgrade, and 70 passing verification-ladder tests (`v0.6.0`).
 

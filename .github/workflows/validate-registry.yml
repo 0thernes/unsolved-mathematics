@@ -8,17 +8,22 @@ on:
       - "data/**"
       - "schema/**"
       - "scripts/**"
+      - "lean/**"
+      - "ro-crate-metadata.json"
+      - "croissant.json"
+      - ".github/workflows/validate-registry.yml"
+  workflow_dispatch:
 
 permissions:
   contents: read
 
 jobs:
   schema:
-    name: Schema · Integrity · Manifest
+    name: Schema · Integrity · Axioms · Manifest · Timestamps
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
           cache: pip
@@ -26,7 +31,12 @@ jobs:
       - run: python -m pip install -r requirements-lock.txt
       - name: Schema-validate registry
         run: python scripts/generate.py --check
-      - name: Integrity & manifest gate
+      - name: Full integrity, sweep, retraction, axiom-parity, manifest & timestamp gates
         run: |
           python scripts/validate.py
+          python scripts/check_papers.py
+          python scripts/proof_claim_sweep.py
+          python scripts/check_retractions.py --check
+          python scripts/check_readme_axioms.py
           python scripts/build_data_manifest.py --check
+          python scripts/timestamp_manifest.py --check

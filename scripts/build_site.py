@@ -7,9 +7,11 @@ JSON/data files (data/problems.json, data/citation-verification-log.json,
 data/retraction-audit.json, lean/comparator.json, lean/VerifyAxioms.lean, VERSION)
 and emits:
   - _site/index.html      (searchable 106-problem Atlas explorer)
-  - _site/blueprint.html  (interactive 8-domain, 53-theorem Lean 4.35.0 Proof Blueprint & DAG)
+  - _site/blueprint.html  (interactive 8-domain, 66-theorem Lean 4.35.0 Proof Blueprint & DAG)
   - _site/problems.json
   - _site/social-preview.svg
+  - _site/programs.html + external-programs.json + external-crosswalk.json
+    (daily Left to Solve program mirror from data/external/, when a snapshot is committed)
 """
 
 from __future__ import annotations
@@ -42,6 +44,16 @@ THEOREM_CATALOG: list[tuple[str, str, str, str, str]] = [
     ("thm_collatz_positive_cycle_intercept_pos", "Collatz", "FormalAtlas/Collatz.lean", "d>=1 & x>0 & T^d(x)=x => wordIntercept w > 0", "Every positive Collatz cycle has strictly positive affine intercept"),
     ("thm_collatz_positive_cycle_subcritical", "Collatz", "FormalAtlas/Collatz.lean", "3^o < 2^d & 2^d - 3^o <= c(w)", "Every positive Collatz cycle is strictly subcritical (2^d > 3^o)"),
     ("thm_collatz_no_positive_cycle_d1", "Collatz", "FormalAtlas/Collatz.lean", "x > 0 => T(x) != x", "Elimination of all positive length-1 fixed points"),
+    ("thm_collatz_positive_cycle_one_odd", "Collatz", "FormalAtlas/Collatz.lean", "d>=1 & x>0 & T^d(x)=x & o=1 => d=2 & x in {1,2}", "Unconditional 1-odd-step positive-cycle exclusion for all d >= 1"),
+    ("thm_collatz_positive_cycle_two_odd", "Collatz", "FormalAtlas/Collatz.lean", "d>=1 & x>0 & T^d(x)=x & o=2 => d=4 & x in {1,2}", "Unconditional 2-odd-step positive-cycle exclusion for all d >= 1"),
+    ("thm_collatz_2adic_isometry", "Collatz", "FormalAtlas/Collatz.lean", "parityWord T d x = parityWord T d y <-> 2^d | (x - y)", "Exact 2-adic cylinder isometry of shortcut Collatz map"),
+    ("thm_collatz_periodic_spine_congruence", "Collatz", "FormalAtlas/Collatz.lean", "2^k | (D(w) x - c(w)) <-> parityWord T k x = periodicPrefix w k", "Periodic spine 2-adic congruence characterization"),
+    ("thm_collatz_odd_unit_lock_valuation_isometry", "Collatz", "FormalAtlas/Collatz.lean", "2^k | (c(w)D(v) - c(v)D(w)) <-> prefix(w^inf, k) = prefix(v^inf, k)", "Exact Odd-Unit-Lock 2-adic valuation isometry v2(rho_w - rho_v) = lcp"),
+    ("thm_collatz_fine_wilf_spine_ceiling", "Collatz", "FormalAtlas/Collatz.lean", "rho_w != rho_v => v2(rho_w - rho_v) < |w| + |v| - gcd(|w|,|v|)", "Unconditional Fine-Wilf Odd-Unit-Lock spine valuation ceiling"),
+    ("thm_collatz_trivial_cycle_orbit", "Collatz", "FormalAtlas/Collatz.lean", "T^{2k}(1)=1, T^{2k+1}(1)=2, T^{2k}(2)=2, T^{2k+1}(2)=1", "Exact periodic orbit of the trivial positive cycle 1 <-> 2"),
+    ("thm_collatz_no_nontrivial_positive_cycle_le_7", "Collatz", "FormalAtlas/Collatz.lean", "1<=d<=7 & x>0 & T^d(x)=x => x in {1, 2}", "Exhaustive low-period positive-cycle exclusion through d <= 7"),
+    ("thm_collatz_no_positive_cycle_odd_le_7", "Collatz", "FormalAtlas/Collatz.lean", "odd d<=7 & x>0 => T^d(x) != x", "No positive odd-period Collatz cycles for d in {1, 3, 5, 7}"),
+    ("thm_collatz_catalytic_reversible_cylinder", "Collatz", "FormalAtlas/Collatz.lean", "catCollatzStep d q r acc cat = (acc + T^d(2^d q + r), cat)", "Zero-workspace catalytic reversible evaluation of Collatz cylinders"),
     ("thm_erdos_straus_mordell_840", "Erdos-Straus", "FormalAtlas/ErdosStraus.lean", "n mod 840 not in {1,121,169,289,361,529}", "Mordell (1967) 834/840 modular reduction (99.29%)"),
     ("thm_erdos_straus_multiplicative_closure", "Erdos-Straus", "FormalAtlas/ErdosStraus.lean", "HasErdosStraus m => HasErdosStraus (m*k)", "Multiplicative closure / reduction to primes"),
     ("thm_erdos_straus_mordell_exceptions_small", "Erdos-Straus", "FormalAtlas/ErdosStraus.lean", "n in {121,169,289,361,529,841}", "Resolution of all 6 smallest exceptional squares"),
@@ -73,6 +85,9 @@ THEOREM_CATALOG: list[tuple[str, str, str, str, str]] = [
     ("thm_perfect_numbers_first_four", "Perfect-Mersenne", "FormalAtlas/PerfectNumbers.lean", "IsPerfect 6, 28, 496, 8128", "Exact sigma(n) = 2n for first four perfect numbers"),
     ("thm_no_odd_perfect_le_100", "Perfect-Mersenne", "FormalAtlas/PerfectNumbers.lean", "odd n <= 100 => not IsPerfect n", "Finite odd-perfect exclusion through 100"),
     ("thm_euclid_even_perfect", "Perfect-Mersenne", "FormalAtlas/PerfectNumbers.lean", "p>=2 & IsPrime(2^p-1) => IsPerfect(2^(p-1)*(2^p-1))", "Euclid's Elements IX.36 even perfect theorem for ALL p >= 2"),
+    ("thm_euler_even_perfect_converse", "Perfect-Mersenne", "FormalAtlas/PerfectNumbers.lean", "even n & IsPerfect n => exists p>=2, IsPrime(2^p-1) & n=2^(p-1)(2^p-1)", "Euler's 1747 converse for ALL even perfect numbers"),
+    ("thm_euclid_euler_even_perfect_iff", "Perfect-Mersenne", "FormalAtlas/PerfectNumbers.lean", "even n => (IsPerfect n <-> exists p>=2, Mersenne form)", "Complete Euclid-Euler biconditional characterization of even perfect numbers"),
+    ("thm_mersenne_prime_divisor_congruence", "Perfect-Mersenne", "FormalAtlas/PerfectNumbers.lean", "IsPrime p & p>=3 & IsPrime q & q | (2^p-1) => 2p | (q-1)", "Euler's 1750 Mersenne prime divisor congruence via Fermat's Little Theorem"),
     ("thm_ramsey_R33_upper", "Ramsey", "FormalAtlas/Ramsey.lean", "forall c on K_6, HasMonoTriangle c", "Exact Ramsey upper bound R(3,3) <= 6"),
     ("thm_ramsey_R33_lower", "Ramsey", "FormalAtlas/Ramsey.lean", "exists symm c on K_5, not HasMonoTriangle c", "Explicit C_5 lower bound R(3,3) > 5 (proving R(3,3)=6)"),
     ("thm_ramsey_R34_upper", "Ramsey", "FormalAtlas/Ramsey.lean", "forall symm c on K_9, red K_3 or blue K_4", "Exact Ramsey upper bound R(3,4) <= 9 via Handshaking Lemma"),
@@ -145,7 +160,7 @@ def _build_blueprint_html(version: str, n_theorems: int, n_decls: int) -> str:
       <a href="https://github.com/0thernes/unsolved-mathematics/blob/main/paper/Donahue_2026_unsolved_mathematics_atlas.pdf">White Paper PDF</a>
     </nav>
     <h1>FormalAtlas Lean 4.35.0 Proof Blueprint <small style="color:var(--muted)">v{html.escape(version)}</small></h1>
-    <p class="sub">Standalone zero-Mathlib Lean 4.35.0 formal core (<code>autoImplicit = false</code>) across <strong>8 open-problem domains</strong>: <strong>{n_theorems} headline theorems</strong> + <strong>12 non-vacuity witnesses</strong> + <strong>16 adversarial false-variant refutations</strong> = <strong>{n_decls} audited declarations</strong> · axioms strictly within <code>&#123;propext, Classical.choice, Quot.sound&#125;</code> · verified across all <strong>6 independent kernels</strong> + live negative kernel rejection. <em>None of these theorems claims to solve an open conjecture.</em></p>
+    <p class="sub">Standalone zero-Mathlib Lean 4.35.0 formal core (<code>autoImplicit = false</code>) across <strong>8 open-problem domains</strong>: <strong>{n_theorems} headline theorems</strong> + <strong>16 non-vacuity witnesses</strong> + <strong>20 adversarial false-variant refutations</strong> = <strong>{n_decls} audited declarations</strong> · axioms strictly within <code>&#123;propext, Classical.choice, Quot.sound&#125;</code> · verified across all <strong>6 independent kernels</strong> + live negative kernel rejection. <em>None of these theorems claims to solve an open conjecture.</em></p>
 
     <h2>Eight-Domain Dependency &amp; Multi-Kernel Verification DAG</h2>
     <div class="dag-box">
@@ -157,10 +172,10 @@ def _build_blueprint_html(version: str, n_theorems: int, n_decls: int) -> str:
         </defs>
         <rect x="16" y="136" width="170" height="66" rx="10" fill="#0f172a" stroke="#60a5fa" stroke-width="2"/>
         <text x="101" y="164" fill="#f1f5f9" text-anchor="middle" font-size="13" font-weight="700">FormalAtlas.Defs</text>
-        <text x="101" y="184" fill="#94a3b8" text-anchor="middle" font-size="11">172 LOC · Zero Mathlib</text>
+        <text x="101" y="184" fill="#94a3b8" text-anchor="middle" font-size="11">202 LOC · Zero Mathlib</text>
 
         <rect x="248" y="8" width="206" height="34" rx="7" fill="#1e3a8a" stroke="#93c5fd"/>
-        <text x="351" y="30" fill="#f1f5f9" text-anchor="middle" font-size="11.5" font-weight="700">Collatz (18 theorems)</text>
+        <text x="351" y="30" fill="#f1f5f9" text-anchor="middle" font-size="11.5" font-weight="700">Collatz (28 theorems)</text>
         <rect x="248" y="49" width="206" height="34" rx="7" fill="#065f46" stroke="#6ee7b7"/>
         <text x="351" y="71" fill="#f1f5f9" text-anchor="middle" font-size="11.5" font-weight="700">Erdős–Straus (5 theorems)</text>
         <rect x="248" y="90" width="206" height="34" rx="7" fill="#5b21b6" stroke="#c4b5fd"/>
@@ -172,7 +187,7 @@ def _build_blueprint_html(version: str, n_theorems: int, n_decls: int) -> str:
         <rect x="248" y="213" width="206" height="34" rx="7" fill="#854d0e" stroke="#fde047"/>
         <text x="351" y="235" fill="#f1f5f9" text-anchor="middle" font-size="11.5" font-weight="700">Goldbach ≤ 100 (3 theorems)</text>
         <rect x="248" y="254" width="206" height="34" rx="7" fill="#9d174d" stroke="#f9a8d4"/>
-        <text x="351" y="276" fill="#f1f5f9" text-anchor="middle" font-size="11.5" font-weight="700">Perfect / Euclid (4 thms)</text>
+        <text x="351" y="276" fill="#f1f5f9" text-anchor="middle" font-size="11.5" font-weight="700">Euclid–Euler / Mersenne (7)</text>
         <rect x="248" y="295" width="206" height="34" rx="7" fill="#3f6212" stroke="#bef264"/>
         <text x="351" y="317" fill="#f1f5f9" text-anchor="middle" font-size="11.5" font-weight="700">Ramsey R(3,4)=9 (4 thms)</text>
 
@@ -186,11 +201,11 @@ def _build_blueprint_html(version: str, n_theorems: int, n_decls: int) -> str:
 
         <rect x="524" y="174" width="192" height="52" rx="8" fill="#1e293b" stroke="#60a5fa"/>
         <text x="620" y="197" fill="#f1f5f9" text-anchor="middle" font-size="12" font-weight="700">NonVacuity.lean</text>
-        <text x="620" y="214" fill="#93c5fd" text-anchor="middle" font-size="10.5">12 concrete witnesses</text>
+        <text x="620" y="214" fill="#93c5fd" text-anchor="middle" font-size="10.5">16 concrete witnesses</text>
 
         <rect x="524" y="246" width="192" height="52" rx="8" fill="#1e293b" stroke="#f87171"/>
         <text x="620" y="269" fill="#f1f5f9" text-anchor="middle" font-size="12" font-weight="700">Adversarial.lean</text>
-        <text x="620" y="286" fill="#fca5a5" text-anchor="middle" font-size="10.5">16 false-variant refutations</text>
+        <text x="620" y="286" fill="#fca5a5" text-anchor="middle" font-size="10.5">20 false-variant refutations</text>
 
         <rect x="788" y="64" width="290" height="84" rx="10" fill="#0f172a" stroke="#34d399" stroke-width="2"/>
         <text x="933" y="92" fill="#34d399" text-anchor="middle" font-size="13" font-weight="700">6-Kernel bwrap Replay</text>
@@ -231,13 +246,13 @@ def _build_blueprint_html(version: str, n_theorems: int, n_decls: int) -> str:
     <h2>Headline Theorems ({n_theorems} Across 8 Domains)</h2>
     <div class="filters">
       <button class="fbtn active" data-filter="all">All ({n_theorems})</button>
-      <button class="fbtn" data-filter="collatz">Collatz (18)</button>
+      <button class="fbtn" data-filter="collatz">Collatz (28)</button>
       <button class="fbtn" data-filter="erdos-straus">Erdős–Straus (5)</button>
       <button class="fbtn" data-filter="lonely-runner">Lonely Runner (8)</button>
       <button class="fbtn" data-filter="brocard">Brocard (7)</button>
       <button class="fbtn" data-filter="primes">Primes (4)</button>
       <button class="fbtn" data-filter="goldbach">Goldbach (3)</button>
-      <button class="fbtn" data-filter="perfect-mersenne">Perfect / Mersenne (4)</button>
+      <button class="fbtn" data-filter="perfect-mersenne">Perfect / Mersenne (7)</button>
       <button class="fbtn" data-filter="ramsey">Ramsey (4)</button>
     </div>
 
@@ -265,6 +280,96 @@ def _build_blueprint_html(version: str, n_theorems: int, n_decls: int) -> str:
       }});
     }}
   </script>
+</body>
+</html>
+"""
+
+
+def _build_programs_html(version: str) -> str | None:
+    """External research-program mirror page (lefttosolve.com), if a snapshot is committed."""
+    snap_path = ROOT / "data" / "external" / "lefttosolve" / "snapshot.json"
+    cw_path = ROOT / "data" / "external" / "lefttosolve" / "crosswalk.json"
+    if not snap_path.exists() or not cw_path.exists():
+        return None
+    snap = json.loads(snap_path.read_text(encoding="utf-8"))
+    cw = json.loads(cw_path.read_text(encoding="utf-8"))
+    t = snap["totals"]
+    gh = "https://github.com/0thernes/unsolved-mathematics/blob/main"
+    prog_rows = []
+    for i, p in enumerate(snap["programs"], 1):
+        k = p["kinds"]
+        idx = (
+            f'<a href="{gh}/docs/external/programs/{html.escape(p["slug"])}.md">{p["mirrored_count"]:,} items</a>'
+            if p.get("mirrored")
+            else "counts only"
+        )
+        prog_rows.append(
+            f"<tr><td>{i}</td><td><a href=\"{html.escape(p['url'])}\">{html.escape(p['name'])}</a></td>"
+            f"<td>{p['targets']:,}</td><td>{p['open']:,}</td><td>{p['solved_here']:,}</td>"
+            f"<td>{k['open']} / {k['known']} / {k['unformalized']} / {k['other']}</td><td>{idx}</td></tr>"
+        )
+    cw_rows = []
+    for r in cw["problems"]:
+        if not r["matches"]:
+            continue
+        items = "<br>".join(
+            f"<code>{html.escape(m['id'])}</code> · {html.escape(m['relation'])} · {html.escape(m['kind'])}"
+            + (" · <strong>site-solved flag</strong>" if m["site_solved_flag"] else "")
+            for m in r["matches"]
+        )
+        sig = "<br>".join(html.escape(s) for s in r["signals"]) or "—"
+        cw_rows.append(
+            f"<tr><td>{html.escape(r['title'])}</td><td><span class=\"badge\">{html.escape(r['atlas_status'])}</span></td>"
+            f"<td>{items}</td><td>{sig}</td></tr>"
+        )
+    s = cw["summary"]
+    return f"""<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>External Research Programs (Left to Solve mirror) · Unsolved Mathematics Atlas v{html.escape(version)}</title>
+  <style>
+    body {{ margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif; background:#0b1020; color:#f1f5f9; line-height:1.5; }}
+    main {{ max-width:1160px; margin:0 auto; padding:2rem 1.25rem 4rem; }}
+    .note {{ background:#1e293b; border-left:4px solid #f59e0b; padding:.8rem 1rem; border-radius:6px; margin:1rem 0 1.4rem; }}
+    table {{ width:100%; border-collapse:collapse; background:#131c36; border:1px solid #243259; margin-bottom:2rem; }}
+    th, td {{ padding:.5rem .7rem; border-bottom:1px solid #243259; text-align:left; font-size:.9rem; vertical-align:top; }}
+    th {{ background:#0f172a; color:#cbd5e1; }}
+    a {{ color:#93c5fd; text-decoration:none; }} a:hover {{ text-decoration:underline; }}
+    code {{ font-size:.82rem; }} .badge {{ padding:.1rem .45rem; border-radius:999px; background:#1e293b; font-size:.78rem; }}
+    .muted {{ color:#94a3b8; }}
+  </style>
+</head>
+<body>
+  <main>
+    <p><a href="index.html">← Atlas Problem Explorer</a> · <a href="blueprint.html">Lean Proof Blueprint</a></p>
+    <h1>External Research Programs <small class="muted">Left to Solve mirror</small></h1>
+    <div class="note"><strong>Third-party data, re-checked daily.</strong> Counts, kinds and “solved here” flags come from
+      <a href="https://lefttosolve.com/programs">lefttosolve.com</a> (formal statements from
+      <a href="https://github.com/google-deepmind/formal-conjectures">google-deepmind/formal-conjectures</a>, Apache-2.0).
+      “Solved here” means marked solved by agents on that site; this Atlas has <strong>not</strong> verified those claims and
+      no Atlas status is changed automatically. Not affiliated with Left to Solve.</div>
+    <p class="muted">Last content change <code>{html.escape(snap['last_changed_utc'])}</code> · {t['programs']} programs ·
+      {t['sum_card_targets']:,} targets · {t['mirrored_items']:,} formal items mirrored · upstream commit
+      <code>{html.escape(str((snap.get('upstream') or {}).get('commit') or '')[:12])}</code> · content SHA-256
+      <code>{html.escape(snap['content_sha256'][:16])}…</code></p>
+    <h2>Programs</h2>
+    <table>
+      <thead><tr><th>#</th><th>Program</th><th>Targets</th><th>Open</th><th>Solved here (site claim)</th><th>Kinds open / known / unformalized / other</th><th>Item index</th></tr></thead>
+      <tbody>{"".join(prog_rows)}</tbody>
+    </table>
+    <h2>Atlas crosswalk <small class="muted">{s['problems_with_matches']}/{s['atlas_problems']} matched · {s['problems_with_signals']} review signals</small></h2>
+    <p class="muted">{html.escape(cw['rule'])}</p>
+    <table>
+      <thead><tr><th>Atlas problem</th><th>Atlas status</th><th>External items (relation · kind)</th><th>Review signals</th></tr></thead>
+      <tbody>{"".join(cw_rows)}</tbody>
+    </table>
+    <p class="muted">Sources: <a href="{gh}/data/external/lefttosolve/snapshot.json">snapshot.json</a> ·
+      <a href="{gh}/data/external/lefttosolve/crosswalk.json">crosswalk.json</a> ·
+      <a href="{gh}/docs/external/PROGRAMS.md">PROGRAMS.md</a> · verified offline by
+      <code>python scripts/sync_external_programs.py --check</code>.</p>
+  </main>
 </body>
 </html>
 """
@@ -348,6 +453,7 @@ def build_site(out_dir: Path = OUT_DIR) -> Path:
     <p class="sub">Audited, ranked corpus of {len(problems)} open mathematical problems · 8-domain zero-Mathlib Lean 4.35.0 6-kernel formal core · primary-source verified citations &amp; retraction audit · FAIR RO-Crate / Croissant · updated {html.escape(str(meta.get("updated", "")))}.</p>
     <nav>
       <a href="blueprint.html"><strong>→ Interactive Lean 4.35.0 Proof Blueprint ({n_theorems} Theorems / {n_decls} Decls)</strong></a>
+      <a href="programs.html">External Programs (Left to Solve, daily)</a>
       <a href="https://github.com/0thernes/unsolved-mathematics/blob/main/paper/Donahue_2026_unsolved_mathematics_atlas.pdf">White Paper PDF</a>
       <a href="https://github.com/0thernes/unsolved-mathematics/blob/main/docs/CROSS_ATLAS_AUDIT_2026-11-25.md">Cross-Atlas Audit (1,900 Problems)</a>
       <a href="https://github.com/0thernes/unsolved-mathematics/blob/main/CLAIMS.md">Claims Ledger</a>
@@ -418,6 +524,12 @@ def build_site(out_dir: Path = OUT_DIR) -> Path:
     )
     shutil.copy2(ROOT / "data" / "problems.json", out_dir / "problems.json")
     shutil.copy2(ROOT / "docs" / "media" / "social-preview.svg", out_dir / "social-preview.svg")
+    programs_page = _build_programs_html(version)
+    if programs_page is not None:
+        (out_dir / "programs.html").write_text(programs_page, encoding="utf-8", newline="\n")
+        ext = ROOT / "data" / "external" / "lefttosolve"
+        shutil.copy2(ext / "snapshot.json", out_dir / "external-programs.json")
+        shutil.copy2(ext / "crosswalk.json", out_dir / "external-crosswalk.json")
     return index_path
 
 

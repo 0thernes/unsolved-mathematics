@@ -38,7 +38,10 @@ AXIOM_LINE_RE = re.compile(
     re.S,
 )
 FORBIDDEN_RE = re.compile(
-    r"\b(sorry|admit|native_decide|sorryAx|Lean\.trustCompiler|Lean\.ofReduceBool)\b|^\s*axiom\b",
+    r"\b(sorry|admit|native_decide|sorryAx|Lean\.trustCompiler|Lean\.ofReduceBool|implemented_by)\b"
+    r"|^\s*((?:private|protected|noncomputable)\s+)*axiom\b"
+    r"|@\[(?:extern|csimp)\b"
+    r"|_native\.",
     re.M,
 )
 
@@ -122,9 +125,14 @@ def main() -> int:
         issues.extend(check_verbatim_block(FIDELITY, FIDELITY.read_text(encoding="utf-8"), expected_decls))
 
     # Palomar rules & forbidden token audit
+    if not (LEAN_DIR / "lake-manifest.json").exists():
+        issues.append("lean/lake-manifest.json missing (required by Palomar rules)")
     lean_files = sorted(LEAN_DIR.rglob("*.lean"))
     lean_files = [f for f in lean_files if ".lake" not in f.parts and "build" not in f.parts]
     for lf in lean_files:
+        if lf.is_symlink():
+            issues.append(f"{lf.relative_to(ROOT).as_posix()}: symlinked .lean file forbidden by Palomar rules")
+            continue
         raw = lf.read_text(encoding="utf-8")
         lines = raw.splitlines()
         rel = lf.relative_to(ROOT).as_posix()

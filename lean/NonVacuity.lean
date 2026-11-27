@@ -4,11 +4,11 @@ module
 public import FormalAtlas
 
 /-!
-# NonVacuity — Concrete Witnesses Defeating Vacuous-Hypothesis Objections (`v0.6.0`)
+# NonVacuity — Concrete Witnesses Defeating Vacuous-Hypothesis Objections (`v0.7.0`)
 
 Per the Defensible Independent AI Research Playbook v1.3, every conditional hypothesis
 bundle in `Challenge.lean` across all 8 domains is paired with an explicit concrete
-non-vacuity witness (12 witnesses total).
+non-vacuity witness (16 witnesses total).
 -/
 
 namespace FormalAtlas.NonVacuity
@@ -88,5 +88,31 @@ public theorem witness_lonely_runner_n3_div4 :
 public theorem witness_euclid_perfect_28 :
     IsPrime (2 ^ 3 - 1) ∧ IsPerfect (2 ^ (3 - 1) * (2 ^ 3 - 1)) := by
   exact ⟨isPrimeBool_sound 7 (by decide), euclid_even_perfect 3 (by decide) (isPrimeBool_sound 7 (by decide))⟩
+
+/-- Witness 13: Euler Mersenne divisor instantiation at `p = 11`, `q = 23` (`23 ∣ 2^11 - 1`, `22 ∣ 23 - 1`). -/
+public theorem witness_mersenne_divisor_23_of_M11 :
+    IsPrime 11 ∧ IsPrime 23 ∧ 23 ∣ 2 ^ 11 - 1 ∧ 2 * 11 ∣ 23 - 1 := by
+  exact ⟨isPrimeBool_sound 11 (by decide), isPrimeBool_sound 23 (by decide),
+         ⟨89, by decide⟩, ⟨1, by decide⟩⟩
+
+/-- Witness 14: Trivial 2-odd-step Collatz cycle `1 → 2 → 1 → 2 → 1` (`d = 4`, `o = 2`). -/
+public theorem witness_collatz_two_odd_trivial_cycle :
+    iter T 4 1 = 1 ∧ oddCount T 4 1 = 2 ∧ iter T 4 2 = 2 ∧ oddCount T 4 2 = 2 := by
+  exact ⟨by decide, by decide, by decide, by decide⟩
+
+/-- Witness 15: Odd-unit-lock Fine–Wilf sharpness on `w = [T, F]` vs `v = [T, F, T]`:
+    distinct rational spines (`1` vs `-5`) agree on 3 bits (`2^3 | sep`), fail at `2^4` (`|w|+|v|-gcd = 4`). -/
+public theorem witness_odd_unit_lock_fine_wilf :
+    let w := [true, false]
+    let v := [true, false, true]
+    wordIntercept w * spineDenom v ≠ wordIntercept v * spineDenom w ∧
+    (wordIntercept w * spineDenom v - wordIntercept v * spineDenom w) % ((2 : Int) ^ 3) = 0 ∧
+    (wordIntercept w * spineDenom v - wordIntercept v * spineDenom w) % ((2 : Int) ^ 4) ≠ 0 := by
+  exact ⟨by decide, by decide, by decide⟩
+
+/-- Witness 16: Catalytic zero-workspace reversible cylinder evaluation at `d=2, q=1, r=1, acc=10, cat=999`. -/
+public theorem witness_catalytic_cylinder :
+    catCollatzStep 2 1 1 10 999 = (14, 999) := by
+  decide
 
 end FormalAtlas.NonVacuity

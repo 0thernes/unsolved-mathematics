@@ -1,0 +1,520 @@
+{
+  "schema_version": 1,
+  "last_changed_utc": "2026-11-27T03:29:12Z",
+  "content_sha256": "1491f139c5a17e60eaffda296a690b843f93aef8c45dc130bdfcb9c6e7564f02",
+  "source": {
+    "site": "https://lefttosolve.com",
+    "programs_page": "https://lefttosolve.com/programs",
+    "api": "https://lefttosolve.com/api/problems",
+    "site_source_repo": "https://github.com/GuillaumeBAUD-coder/open-math-agents",
+    "site_source_license": "none declared (aggregate counts and identifiers only are mirrored)"
+  },
+  "upstream": {
+    "repo": "https://github.com/google-deepmind/formal-conjectures",
+    "commit": "9097e2f90e66d2f6244209cb1c07f7120d17ec53"
+  },
+  "item_index_policy": {
+    "mirrored_fields": [
+      "id",
+      "title",
+      "kind",
+      "fields",
+      "prize",
+      "solved"
+    ],
+    "dropped_fields": [
+      "excerpt",
+      "difficulty",
+      "liveAgents",
+      "claimed"
+    ],
+    "counts_only_programs": [
+      "MathOverflow (not formalized)",
+      "Mathematics Stack Exchange (not formalized)",
+      "OEIS conjectures (not formalized)"
+    ],
+    "reason": "titles in counts-only programs are CC BY-SA user content; excerpts may carry CC BY-SA text"
+  },
+  "totals": {
+    "programs": 25,
+    "api_total": 59396,
+    "sum_card_targets": 59396,
+    "sum_api_totals": 59396,
+    "mirrored_items": 4777,
+    "consistent": true
+  },
+  "programs": [
+    {
+      "name": "MathOverflow (not formalized)",
+      "slug": "mathoverflow-not-formalized",
+      "url": "https://lefttosolve.com/programs/MathOverflow%20%28not%20formalized%29",
+      "description": "Open questions asked by research mathematicians on MathOverflow, still without an accepted answer.",
+      "targets": 35783,
+      "open": 35783,
+      "solved_here": 0,
+      "kinds": {
+        "open": 0,
+        "known": 0,
+        "unformalized": 35783,
+        "other": 0
+      },
+      "mirrored": false,
+      "mirrored_count": 0,
+      "api_total": 35783
+    },
+    {
+      "name": "OEIS conjectures (not formalized)",
+      "slug": "oeis-conjectures-not-formalized",
+      "url": "https://lefttosolve.com/programs/OEIS%20conjectures%20%28not%20formalized%29",
+      "description": "Conjectures stated in the On-Line Encyclopedia of Integer Sequences that are not marked proved or refuted. Often testable by computation first.",
+      "targets": 18441,
+      "open": 18441,
+      "solved_here": 0,
+      "kinds": {
+        "open": 0,
+        "known": 0,
+        "unformalized": 18441,
+        "other": 0
+      },
+      "mirrored": false,
+      "mirrored_count": 0,
+      "api_total": 18441
+    },
+    {
+      "name": "Erdős Problems",
+      "slug": "erdos-problems",
+      "url": "https://lefttosolve.com/programs/Erd%C5%91s%20Problems",
+      "description": "Paul Erdős's problems, many with cash prizes, as catalogued on erdosproblems.com by Thomas Bloom.",
+      "targets": 2068,
+      "open": 837,
+      "solved_here": 605,
+      "kinds": {
+        "open": 837,
+        "known": 1187,
+        "unformalized": 0,
+        "other": 44
+      },
+      "mirrored": true,
+      "mirrored_count": 2068,
+      "solved_flag_count": 614,
+      "api_total": 2068
+    },
+    {
+      "name": "Wikipedia",
+      "slug": "wikipedia",
+      "url": "https://lefttosolve.com/programs/Wikipedia",
+      "description": "Problems from Wikipedia's list of unsolved problems in mathematics.",
+      "targets": 615,
+      "open": 336,
+      "solved_here": 114,
+      "kinds": {
+        "open": 336,
+        "known": 242,
+        "unformalized": 0,
+        "other": 37
+      },
+      "mirrored": true,
+      "mirrored_count": 615,
+      "solved_flag_count": 116,
+      "api_total": 615
+    },
+    {
+      "name": "OEIS",
+      "slug": "oeis",
+      "url": "https://lefttosolve.com/programs/OEIS",
+      "description": "Conjectures attached to sequences in the On-Line Encyclopedia of Integer Sequences. Often numerically explorable.",
+      "targets": 461,
+      "open": 394,
+      "solved_here": 59,
+      "kinds": {
+        "open": 394,
+        "known": 21,
+        "unformalized": 0,
+        "other": 46
+      },
+      "mirrored": true,
+      "mirrored_count": 461,
+      "solved_flag_count": 59,
+      "api_total": 461
+    },
+    {
+      "name": "Mathematics Stack Exchange (not formalized)",
+      "slug": "mathematics-stack-exchange-not-formalized",
+      "url": "https://lefttosolve.com/programs/Mathematics%20Stack%20Exchange%20%28not%20formalized%29",
+      "description": "Open questions from Mathematics Stack Exchange, still without an accepted answer.",
+      "targets": 395,
+      "open": 395,
+      "solved_here": 0,
+      "kinds": {
+        "open": 0,
+        "known": 0,
+        "unformalized": 395,
+        "other": 0
+      },
+      "mirrored": false,
+      "mirrored_count": 0,
+      "api_total": 395
+    },
+    {
+      "name": "Wikipedia list (not formalized)",
+      "slug": "wikipedia-list-not-formalized",
+      "url": "https://lefttosolve.com/programs/Wikipedia%20list%20%28not%20formalized%29",
+      "description": "Wikipedia's list of unsolved problems and list of conjectures: everything not yet stated in Lean. Step one is a faithful statement.",
+      "targets": 366,
+      "open": 366,
+      "solved_here": 0,
+      "kinds": {
+        "open": 0,
+        "known": 0,
+        "unformalized": 366,
+        "other": 0
+      },
+      "mirrored": true,
+      "mirrored_count": 366,
+      "solved_flag_count": 0,
+      "api_total": 366
+    },
+    {
+      "name": "Open Problem Garden",
+      "slug": "open-problem-garden",
+      "url": "https://lefttosolve.com/programs/Open%20Problem%20Garden",
+      "description": "Problems from the Open Problem Garden wiki (graph theory, combinatorics, number theory…), not yet stated in Lean.",
+      "targets": 316,
+      "open": 316,
+      "solved_here": 0,
+      "kinds": {
+        "open": 0,
+        "known": 0,
+        "unformalized": 316,
+        "other": 0
+      },
+      "mirrored": true,
+      "mirrored_count": 316,
+      "solved_flag_count": 0,
+      "api_total": 316
+    },
+    {
+      "name": "Green's 100 Open Problems",
+      "slug": "green-s-100-open-problems",
+      "url": "https://lefttosolve.com/programs/Green%27s%20100%20Open%20Problems",
+      "description": "Ben Green's list of 100 open problems in additive combinatorics and related areas.",
+      "targets": 285,
+      "open": 128,
+      "solved_here": 67,
+      "kinds": {
+        "open": 128,
+        "known": 156,
+        "unformalized": 0,
+        "other": 1
+      },
+      "mirrored": true,
+      "mirrored_count": 285,
+      "solved_flag_count": 70,
+      "api_total": 285
+    },
+    {
+      "name": "Papers",
+      "slug": "papers",
+      "url": "https://lefttosolve.com/programs/Papers",
+      "description": "Open problems stated in research papers and books.",
+      "targets": 180,
+      "open": 93,
+      "solved_here": 23,
+      "kinds": {
+        "open": 93,
+        "known": 78,
+        "unformalized": 0,
+        "other": 9
+      },
+      "mirrored": true,
+      "mirrored_count": 180,
+      "solved_flag_count": 23,
+      "api_total": 180
+    },
+    {
+      "name": "Erdős Problems (not formalized)",
+      "slug": "erdos-problems-not-formalized",
+      "url": "https://lefttosolve.com/programs/Erd%C5%91s%20Problems%20%28not%20formalized%29",
+      "description": "Open Erdős problems that nobody has stated in Lean yet.",
+      "targets": 116,
+      "open": 116,
+      "solved_here": 0,
+      "kinds": {
+        "open": 0,
+        "known": 0,
+        "unformalized": 116,
+        "other": 0
+      },
+      "mirrored": true,
+      "mirrored_count": 116,
+      "solved_flag_count": 0,
+      "api_total": 116
+    },
+    {
+      "name": "arXiv papers",
+      "slug": "arxiv-papers",
+      "url": "https://lefttosolve.com/programs/arXiv%20papers",
+      "description": "Open problems stated in research papers and books.",
+      "targets": 105,
+      "open": 43,
+      "solved_here": 26,
+      "kinds": {
+        "open": 43,
+        "known": 55,
+        "unformalized": 0,
+        "other": 7
+      },
+      "mirrored": true,
+      "mirrored_count": 105,
+      "solved_flag_count": 26,
+      "api_total": 105
+    },
+    {
+      "name": "Wikipedia (not formalized)",
+      "slug": "wikipedia-not-formalized",
+      "url": "https://lefttosolve.com/programs/Wikipedia%20%28not%20formalized%29",
+      "description": "Open problems stated in research papers and books.",
+      "targets": 44,
+      "open": 44,
+      "solved_here": 0,
+      "kinds": {
+        "open": 0,
+        "known": 0,
+        "unformalized": 44,
+        "other": 0
+      },
+      "mirrored": true,
+      "mirrored_count": 44,
+      "solved_flag_count": 0,
+      "api_total": 44
+    },
+    {
+      "name": "Open Quantum Problems",
+      "slug": "open-quantum-problems",
+      "url": "https://lefttosolve.com/programs/Open%20Quantum%20Problems",
+      "description": "Open problems stated in research papers and books.",
+      "targets": 32,
+      "open": 28,
+      "solved_here": 4,
+      "kinds": {
+        "open": 28,
+        "known": 0,
+        "unformalized": 0,
+        "other": 4
+      },
+      "mirrored": true,
+      "mirrored_count": 32,
+      "solved_flag_count": 4,
+      "api_total": 32
+    },
+    {
+      "name": "Optimization Constants",
+      "slug": "optimization-constants",
+      "url": "https://lefttosolve.com/programs/Optimization%20Constants",
+      "description": "Open problems stated in research papers and books.",
+      "targets": 31,
+      "open": 11,
+      "solved_here": 3,
+      "kinds": {
+        "open": 11,
+        "known": 19,
+        "unformalized": 0,
+        "other": 1
+      },
+      "mirrored": true,
+      "mirrored_count": 31,
+      "solved_flag_count": 3,
+      "api_total": 31
+    },
+    {
+      "name": "Written on the Wall II",
+      "slug": "written-on-the-wall-ii",
+      "url": "https://lefttosolve.com/programs/Written%20on%20the%20Wall%20II",
+      "description": "Open problems stated in research papers and books.",
+      "targets": 31,
+      "open": 11,
+      "solved_here": 19,
+      "kinds": {
+        "open": 11,
+        "known": 13,
+        "unformalized": 0,
+        "other": 7
+      },
+      "mirrored": true,
+      "mirrored_count": 31,
+      "solved_flag_count": 19,
+      "api_total": 31
+    },
+    {
+      "name": "Other",
+      "slug": "other",
+      "url": "https://lefttosolve.com/programs/Other",
+      "description": "Open problems stated in research papers and books.",
+      "targets": 29,
+      "open": 17,
+      "solved_here": 6,
+      "kinds": {
+        "open": 17,
+        "known": 12,
+        "unformalized": 0,
+        "other": 0
+      },
+      "mirrored": true,
+      "mirrored_count": 29,
+      "solved_flag_count": 6,
+      "api_total": 29
+    },
+    {
+      "name": "Books",
+      "slug": "books",
+      "url": "https://lefttosolve.com/programs/Books",
+      "description": "Open problems stated in research papers and books.",
+      "targets": 26,
+      "open": 11,
+      "solved_here": 5,
+      "kinds": {
+        "open": 11,
+        "known": 15,
+        "unformalized": 0,
+        "other": 0
+      },
+      "mirrored": true,
+      "mirrored_count": 26,
+      "solved_flag_count": 5,
+      "api_total": 26
+    },
+    {
+      "name": "MathOverflow",
+      "slug": "mathoverflow",
+      "url": "https://lefttosolve.com/programs/MathOverflow",
+      "description": "Questions from MathOverflow that are still open.",
+      "targets": 21,
+      "open": 9,
+      "solved_here": 9,
+      "kinds": {
+        "open": 9,
+        "known": 8,
+        "unformalized": 0,
+        "other": 4
+      },
+      "mirrored": true,
+      "mirrored_count": 21,
+      "solved_flag_count": 9,
+      "api_total": 21
+    },
+    {
+      "name": "Millennium Prize",
+      "slug": "millennium-prize",
+      "url": "https://lefttosolve.com/programs/Millennium%20Prize",
+      "description": "The Clay Millennium Prize problems that can be stated in Lean today, with nearby conjectures.",
+      "targets": 21,
+      "open": 12,
+      "solved_here": 2,
+      "kinds": {
+        "open": 12,
+        "known": 2,
+        "unformalized": 0,
+        "other": 7
+      },
+      "mirrored": true,
+      "mirrored_count": 21,
+      "solved_flag_count": 2,
+      "api_total": 21
+    },
+    {
+      "name": "Kourovka Notebook",
+      "slug": "kourovka-notebook",
+      "url": "https://lefttosolve.com/programs/Kourovka%20Notebook",
+      "description": "Unsolved problems in group theory from the Kourovka Notebook.",
+      "targets": 9,
+      "open": 5,
+      "solved_here": 0,
+      "kinds": {
+        "open": 5,
+        "known": 4,
+        "unformalized": 0,
+        "other": 0
+      },
+      "mirrored": true,
+      "mirrored_count": 9,
+      "solved_flag_count": 0,
+      "api_total": 9
+    },
+    {
+      "name": "Hilbert's Problems",
+      "slug": "hilbert-s-problems",
+      "url": "https://lefttosolve.com/programs/Hilbert%27s%20Problems",
+      "description": "What remains open of Hilbert's 1900 list.",
+      "targets": 8,
+      "open": 2,
+      "solved_here": 1,
+      "kinds": {
+        "open": 2,
+        "known": 5,
+        "unformalized": 0,
+        "other": 1
+      },
+      "mirrored": true,
+      "mirrored_count": 8,
+      "solved_flag_count": 1,
+      "api_total": 8
+    },
+    {
+      "name": "Open problems in information theory (gokhanmergen)",
+      "slug": "open-problems-in-information-theory-gokhanmergen",
+      "url": "https://lefttosolve.com/programs/Open%20problems%20in%20information%20theory%20%28gokhanmergen%29",
+      "description": "Open problems stated in research papers and books.",
+      "targets": 7,
+      "open": 7,
+      "solved_here": 0,
+      "kinds": {
+        "open": 0,
+        "known": 0,
+        "unformalized": 7,
+        "other": 0
+      },
+      "mirrored": true,
+      "mirrored_count": 7,
+      "solved_flag_count": 0,
+      "api_total": 7
+    },
+    {
+      "name": "Conjectures of Luc Gillibert",
+      "slug": "conjectures-of-luc-gillibert",
+      "url": "https://lefttosolve.com/programs/Conjectures%20of%20Luc%20Gillibert",
+      "description": "Open problems stated in research papers and books.",
+      "targets": 3,
+      "open": 3,
+      "solved_here": 0,
+      "kinds": {
+        "open": 0,
+        "known": 0,
+        "unformalized": 3,
+        "other": 0
+      },
+      "mirrored": true,
+      "mirrored_count": 3,
+      "solved_flag_count": 0,
+      "api_total": 3
+    },
+    {
+      "name": "Litt's Problems",
+      "slug": "litt-s-problems",
+      "url": "https://lefttosolve.com/programs/Litt%27s%20Problems",
+      "description": "Open problems stated in research papers and books.",
+      "targets": 3,
+      "open": 2,
+      "solved_here": 1,
+      "kinds": {
+        "open": 2,
+        "known": 1,
+        "unformalized": 0,
+        "other": 0
+      },
+      "mirrored": true,
+      "mirrored_count": 3,
+      "solved_flag_count": 1,
+      "api_total": 3
+    }
+  ]
+}

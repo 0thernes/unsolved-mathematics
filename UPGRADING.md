@@ -4,6 +4,34 @@
 
 ---
 
+## Upgrading from `v0.6.0` to `v0.7.0`
+
+### 1. Structural & Additive Changes (Non-Breaking)
+
+- **Expanded Eight-Domain Lean 4.35.0 Core (`53 → 66` theorems, `81 → 102` audited declarations, `autoImplicit = false`):** All 53 `v0.6.0` comparator theorem names in `lean/Challenge.lean` are preserved verbatim; 13 new headline theorems, 4 non-vacuity witnesses, and 4 adversarial refutations were added (Complete Euclid–Euler biconditional theorem, Euler's 1750 Mersenne prime divisor congruence $2p \mid (q-1)$, Collatz 2-adic isometry, periodic spine congruence, Odd-Unit-Lock valuation isometry, Fine–Wilf spine valuation ceiling, exhaustive $1 \le d \le 7$ positive-cycle exclusion, unconditional 1- and 2-odd-step positive-cycle exclusion for all $d \ge 1$, and zero-workspace catalytic reversible cylinder evaluation).
+- **Tightened Verification Gates:** `scripts/check_readme_axioms.py` now checks extended Playbook v1.3 forbidden tokens (`private/protected/noncomputable axiom`, `implemented_by`, `@[extern]`, `@[csimp]`, `_native.`), `lean/lake-manifest.json`, and zero `.lean` symlinks; `scripts/validate.py` enforces RO-Crate & Croissant version parity; `mypy --explicit-package-bases scripts rag examples` now passes with 0 errors across all 18/18 core Python modules.
+- **Node 24 GitHub Actions Workflows:** Upgraded all workflows to `@v7`/`@v5`/`@v4` with report-only `gitleaks 8.30.1` and `osv-scanner 2.7.1`.
+
+### 2. Upgrade Steps
+
+```bash
+git pull origin main
+python -m pip install -r requirements-lock.txt
+python scripts/generate.py --check
+python scripts/validate.py
+python scripts/check_retractions.py --check
+python scripts/check_readme_axioms.py
+python scripts/build_data_manifest.py --check
+python scripts/timestamp_manifest.py --check
+python scripts/test_lean_negative.py
+python -m pytest -v tests/
+python tests/mutation_check.py
+mypy --explicit-package-bases scripts rag examples
+cd lean && lake build Challenge Solution NonVacuity Adversarial && lake env lean VerifyAxioms.lean
+```
+
+---
+
 ## Upgrading from `v0.5.0` to `v0.6.0`
 
 ### 1. Structural & Additive Changes (Non-Breaking)

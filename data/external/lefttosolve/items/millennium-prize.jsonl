@@ -1,0 +1,21 @@
+{"fields": ["Computer Science"], "id": "ComplexityTheory.NP_ne_coNP", "kind": "open", "prize": null, "solved": false, "title": "NP ≠ coNP"}
+{"fields": ["Computer Science"], "id": "ComplexityTheory.P_eq_BPP", "kind": "open", "prize": null, "solved": false, "title": "P = BPP"}
+{"fields": ["Computer Science"], "id": "ComplexityTheory.P_ne_NP", "kind": "open", "prize": null, "solved": false, "title": "P ≠ NP"}
+{"fields": ["Computer Science"], "id": "ComplexityTheory.P_subset_BPP", "kind": "warmup", "prize": null, "solved": true, "title": "Conjectures in Complexity Theory — P subset BPP"}
+{"fields": ["Computer Science"], "id": "ComplexityTheory.coP_eq_P", "kind": "warmup", "prize": null, "solved": true, "title": "Conjectures in Complexity Theory — coP eq P"}
+{"fields": ["Number Theory"], "id": "ERH.extended_riemann_hypothesis", "kind": "open", "prize": null, "solved": false, "title": "Extended Riemann Hypothesis (Dedekind zeta functions)"}
+{"fields": ["PDEs"], "id": "NavierStokes.navier_stokes_existence_and_smoothness_R3", "kind": "open", "prize": null, "solved": false, "title": "Existence And Smoothness Of The Navier–Stokes Equation — navier stokes existence and smoothness R3"}
+{"fields": ["PDEs"], "id": "NavierStokes.navier_stokes_existence_and_smoothness_periodic", "kind": "open", "prize": null, "solved": false, "title": "Existence And Smoothness Of The Navier–Stokes Equation — navier stokes existence and smoothness periodic"}
+{"fields": ["General Topology", "Manifolds"], "id": "PoincareConjecture.poincare_conjecture", "kind": "known", "prize": null, "solved": false, "title": "PoincareConjecture"}
+{"fields": ["General Topology", "Manifolds"], "id": "PoincareConjecture.poincare_conjecture.variants.dimension_four", "kind": "warmup", "prize": null, "solved": false, "title": "PoincareConjecture — dimension four"}
+{"fields": ["General Topology", "Manifolds"], "id": "PoincareConjecture.poincare_conjecture.variants.dimension_ge_five", "kind": "warmup", "prize": null, "solved": false, "title": "PoincareConjecture — dimension ge five"}
+{"fields": ["General Topology", "Manifolds"], "id": "PoincareConjecture.poincare_conjecture.variants.dimension_two", "kind": "warmup", "prize": null, "solved": false, "title": "PoincareConjecture — dimension two"}
+{"fields": ["General Topology", "Manifolds"], "id": "PoincareConjecture.poincare_conjecture.variants.smooth_dimension_four", "kind": "open", "prize": null, "solved": false, "title": "PoincareConjecture — smooth dimension four"}
+{"fields": ["General Topology", "Manifolds"], "id": "PoincareConjecture.poincare_conjecture.variants.smooth_for_three", "kind": "warmup", "prize": null, "solved": false, "title": "PoincareConjecture — smooth for three"}
+{"fields": ["General Topology", "Manifolds"], "id": "PoincareConjecture.poincare_conjecture.variants.smooth_implication", "kind": "warmup", "prize": null, "solved": false, "title": "PoincareConjecture — smooth implication"}
+{"fields": ["General Topology", "Manifolds"], "id": "PoincareConjecture.poincare_conjecture.variants.smooth_known_cases", "kind": "known", "prize": null, "solved": false, "title": "PoincareConjecture — smooth known cases"}
+{"fields": ["General Topology", "Manifolds"], "id": "PoincareConjecture.poincare_conjecture.variants.smooth_other_cases", "kind": "open", "prize": null, "solved": false, "title": "PoincareConjecture — smooth other cases"}
+{"fields": ["Algebraic Geometry", "Number Theory"], "id": "WeierstrassCurve.Affine.NumberField.strongBSD", "kind": "open", "prize": null, "solved": false, "title": "The Birch and Swinnerton-Dyer (BSD) Conjecture — strongBSD"}
+{"fields": ["Algebraic Geometry", "Number Theory"], "id": "WeierstrassCurve.Affine.NumberField.weakBSD", "kind": "open", "prize": null, "solved": false, "title": "The Birch and Swinnerton-Dyer (BSD) Conjecture — weakBSD"}
+{"fields": ["Algebraic Geometry", "Number Theory"], "id": "WeierstrassCurve.Affine.Rat.strongBSD", "kind": "open", "prize": null, "solved": false, "title": "The Birch and Swinnerton-Dyer (BSD) Conjecture — strongBSD"}
+{"fields": ["Algebraic Geometry", "Number Theory"], "id": "WeierstrassCurve.Affine.Rat.weakBSD", "kind": "open", "prize": null, "solved": false, "title": "The Birch and Swinnerton-Dyer (BSD) Conjecture — weakBSD"}

@@ -10,7 +10,7 @@ atlas, and how the author requests review responsibly.
 You are invited to:
 
 1. **Verify citations.** Pick a problem's `papers.md`; confirm that flagged
-   references exist and say what the dossier claims; open a PR or
+   references exist and say what the dossier claims; open a
    [verification issue](../../.github/ISSUE_TEMPLATE/verification.yml) promoting
    flags to `verified` (or correcting them). See
    [SOURCING.md](../methodology/SOURCING.md).

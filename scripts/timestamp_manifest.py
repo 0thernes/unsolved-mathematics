@@ -35,7 +35,9 @@ OTS_CALENDARS = [
     "https://a.pool.eternitywall.com/digest",
 ]
 OTS_HEADER = b"\x00OpenTimestamps\x00\x00Proof\x00\xbf\x89\xe2\xe8\x84\xe8\x92\x94\x01"
-USER_AGENT = "unsolved-mathematics/0.6.0 (https://github.com/0thernes/unsolved-mathematics)"
+_VER_FILE = ROOT / "VERSION"
+_VER = _VER_FILE.read_text(encoding="utf-8").strip() if _VER_FILE.exists() else "0.7.0"
+USER_AGENT = f"unsolved-mathematics/{_VER} (https://github.com/0thernes/unsolved-mathematics)"
 
 
 def der_len(n: int) -> bytes:

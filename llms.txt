@@ -12,8 +12,10 @@
 - [REPLICATION.md](REPLICATION.md): Clean-clone reproduction protocol (Python + Lean 4.35.0 + Tectonic)
 - [PHILOSOPHY.md](PHILOSOPHY.md): Epistemic principles and research methodology
 - [ARCHITECTURE.md](ARCHITECTURE.md): Data model, build pipeline, and RAG architecture
-- [lean/STATEMENT_FIDELITY.md](lean/STATEMENT_FIDELITY.md): Line-by-line Lean 4.35.0 statement fidelity audit (`autoImplicit = false`, 53 theorems + 12 witnesses + 16 adversarial refutations = 81 audited decls across 8 domains + live negative kernel rejection)
-- [paper/Donahue_2026_unsolved_mathematics_atlas.pdf](paper/Donahue_2026_unsolved_mathematics_atlas.pdf): Compiled publication-grade AMS-LaTeX white paper
+- [lean/STATEMENT_FIDELITY.md](lean/STATEMENT_FIDELITY.md): Line-by-line Lean 4.35.0 statement fidelity audit (`autoImplicit = false`, 66 theorems + 16 witnesses + 20 adversarial refutations = 102 audited decls across 8 domains + live negative kernel rejection)
+- [paper/Donahue_2026_unsolved_mathematics_atlas.pdf](paper/Donahue_2026_unsolved_mathematics_atlas.pdf): Compiled publication-grade AMS-LaTeX white paper (`v0.7.0`, 1-to-1 numbered Claims Ledger)
 - [ro-crate-metadata.json](ro-crate-metadata.json) & [croissant.json](croissant.json): FAIR RO-Crate 1.1 & MLCommons Croissant 1.0 dataset descriptors (+ dual RFC 3161 `.tsr` & Bitcoin OpenTimestamps `.ots` manifest proofs)
+- [docs/LITERATURE_AND_EXPORT_CONTROL.md](docs/LITERATURE_AND_EXPORT_CONTROL.md): Primary literature search audit log & 15 CFR §734.8 export-control self-screen
 - [docs/CROSS_ATLAS_AUDIT_2026-11-25.md](docs/CROSS_ATLAS_AUDIT_2026-11-25.md): Synchronized cross-check of 1,900 Mega-Atlas `v2.7.0` problems, 106 Atlas problems, and 16 companion `0thernes-research-archive` entries across 76 public repos
-- [docs/reviews/2026-11-25-three-cycle-hardening-audit.md](docs/reviews/2026-11-25-three-cycle-hardening-audit.md): Full 5-cycle, 10-class forensic & red-team hardening audit
+- [docs/external/PROGRAMS.md](docs/external/PROGRAMS.md) & [docs/external/CROSSWALK.md](docs/external/CROSSWALK.md): Daily guarded third-party mirror of all 25 Left to Solve research programs (59,396 targets; 4,777 mirrored items; 98/106 Atlas crosswalk; review signals only)
+- [docs/reviews/2026-11-25-three-cycle-hardening-audit.md](docs/reviews/2026-11-25-three-cycle-hardening-audit.md): Full multi-cycle, 10-class forensic & red-team hardening audit

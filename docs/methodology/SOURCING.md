@@ -10,7 +10,7 @@ one of four flags:
 
 | Flag | Meaning | May be cited as fact? |
 |------|---------|:---------------------:|
-| `verified` | A human checked the primary source (DOI / arXiv / published text) | ✅ Yes |
+| `verified` | Identifier (DOI / arXiv ID) resolved live against arXiv/Crossref APIs with verified author/title/year overlap & Crossref/DataCite retraction check (or human-checked primary text); see `data/citation-verification-log.json` | ✅ Yes |
 | `high-confidence` | Canonical, widely-known result; details (year, venue) align with standard references | ⚠️ With a spot-check |
 | `needs-verification` | Plausible and probably real, but not yet checked against the source | ❌ Not yet |
 | `ai-suggested` | Generated as a research lead; existence not confirmed | ❌ No — lead only |

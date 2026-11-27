@@ -1,0 +1,3 @@
+{"fields": ["Combinatorics", "Group Theory"], "id": "gillibert-equal-halves", "kind": "unformalized", "prize": null, "solved": false, "title": "Equal halves conjecture (vertex-transitive graphs)"}
+{"fields": ["Combinatorics"], "id": "gillibert-fair-traversal", "kind": "unformalized", "prize": null, "solved": false, "title": "Fair traversal conjecture (Hamiltonian paths in vertex-transitive graphs)"}
+{"fields": ["Combinatorics"], "id": "gillibert-geodesic-deletion", "kind": "unformalized", "prize": null, "solved": false, "title": "Geodesic deletion conjecture (vertex-transitive graphs)"}

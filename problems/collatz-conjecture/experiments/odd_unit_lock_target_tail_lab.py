@@ -284,8 +284,8 @@ def main() -> int:
         tail_by_threshold = {
             item["threshold_e_ge"]: item for item in row["tail_comparison"]
         }
-        def fmt(threshold: int) -> str:
-            item = tail_by_threshold.get(threshold)
+        def fmt(threshold: int, table: dict = tail_by_threshold) -> str:
+            item = table.get(threshold)
             if not item:
                 return "n/a"
             return f"{item['count']} ({item['observed_over_geometric']}x geom)"

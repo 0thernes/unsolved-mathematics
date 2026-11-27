@@ -5,15 +5,15 @@ public import FormalAtlas.Defs
 import FormalAtlas
 
 /-!
-# Solution — Zero-Sorry Proofs Matching `Challenge.lean` (`v0.6.0`)
+# Solution — Zero-Sorry Proofs Matching `Challenge.lean` (`v0.7.0`)
 
-Exports all 53 headline theorems across 8 open-problem domains in `FormalAtlas.Challenge`
+Exports all 66 headline theorems across 8 open-problem domains in `FormalAtlas.Challenge`
 with exact signature match for `lake comparator --config comparator.json --paranoid`.
 -/
 
 namespace FormalAtlas.Challenge
 
--- I. Collatz (18)
+-- I. Collatz (28)
 public theorem thm_collatz_cylinder_affine_law (d : Nat) (q r : Int) :
     iter T d ((2 : Int) ^ d * q + r) =
       (3 : Int) ^ (oddCount T d r) * q + iter T d r :=
@@ -109,6 +109,58 @@ public theorem thm_collatz_positive_cycle_subcritical (d : Nat) (x : Int)
 public theorem thm_collatz_no_positive_cycle_d1 (x : Int) (hx : 0 < x) :
     iter T 1 x ≠ x :=
   collatz_no_positive_cycle_d1 x hx
+
+public theorem thm_collatz_positive_cycle_one_odd (d : Nat) (x : Int)
+    (hd : 1 ≤ d) (hx : 0 < x) (hcyc : iter T d x = x) (ho : oddCount T d x = 1) :
+    d = 2 ∧ (x = 1 ∨ x = 2) :=
+  collatz_positive_cycle_one_odd d x hd hx hcyc ho
+
+public theorem thm_collatz_positive_cycle_two_odd (d : Nat) (x : Int)
+    (hd : 1 ≤ d) (hx : 0 < x) (hcyc : iter T d x = x) (ho : oddCount T d x = 2) :
+    d = 4 ∧ (x = 1 ∨ x = 2) :=
+  collatz_positive_cycle_two_odd d x hd hx hcyc ho
+
+public theorem thm_collatz_2adic_isometry (d : Nat) (x y : Int) :
+    parityWord T d x = parityWord T d y ↔ (x - y) % ((2 : Int) ^ d) = 0 :=
+  collatz_2adic_isometry d x y
+
+public theorem thm_collatz_periodic_spine_congruence (w : List Bool) (k : Nat) (x : Int)
+    (hw : 1 ≤ w.length) :
+    (spineDenom w * x - wordIntercept w) % ((2 : Int) ^ k) = 0 ↔
+      parityWord T k x = periodicPrefix w k :=
+  collatz_periodic_spine_congruence w k x hw
+
+public theorem thm_collatz_odd_unit_lock_valuation_isometry (w v : List Bool) (k : Nat)
+    (hw : 1 ≤ w.length) (hv : 1 ≤ v.length) :
+    (wordIntercept w * spineDenom v - wordIntercept v * spineDenom w) % ((2 : Int) ^ k) = 0 ↔
+      periodicPrefix w k = periodicPrefix v k :=
+  collatz_odd_unit_lock_valuation_isometry w v k hw hv
+
+public theorem thm_collatz_fine_wilf_spine_ceiling (w v : List Bool)
+    (hw : 1 ≤ w.length) (hv : 1 ≤ v.length)
+    (hne : wordIntercept w * spineDenom v ≠ wordIntercept v * spineDenom w) :
+    (wordIntercept w * spineDenom v - wordIntercept v * spineDenom w) %
+      ((2 : Int) ^ (w.length + v.length - Nat.gcd w.length v.length)) ≠ 0 :=
+  collatz_fine_wilf_spine_ceiling w v hw hv hne
+
+public theorem thm_collatz_trivial_cycle_orbit (k : Nat) :
+    iter T (2 * k) 1 = 1 ∧ iter T (2 * k + 1) 1 = 2 ∧
+    iter T (2 * k) 2 = 2 ∧ iter T (2 * k + 1) 2 = 1 :=
+  collatz_trivial_cycle_orbit k
+
+public theorem thm_collatz_no_nontrivial_positive_cycle_le_7 (d : Nat) (x : Int)
+    (hd1 : 1 ≤ d) (hd7 : d ≤ 7) (hx : 0 < x) (hcyc : iter T d x = x) :
+    x = 1 ∨ x = 2 :=
+  collatz_no_nontrivial_positive_cycle_le_7 d x hd1 hd7 hx hcyc
+
+public theorem thm_collatz_no_positive_cycle_odd_le_7 (d : Nat) (x : Int)
+    (hd1 : 1 ≤ d) (hd7 : d ≤ 7) (hodd : d % 2 = 1) (hx : 0 < x) :
+    iter T d x ≠ x :=
+  collatz_no_positive_cycle_odd_le_7 d x hd1 hd7 hodd hx
+
+public theorem thm_collatz_catalytic_reversible_cylinder (d : Nat) (q r acc cat : Int) :
+    catCollatzStep d q r acc cat = (acc + iter T d ((2 : Int) ^ d * q + r), cat) :=
+  collatz_catalytic_reversible_cylinder d q r acc cat
 
 -- II. Erdős–Straus (5)
 public theorem thm_erdos_straus_mordell_840 (n : Nat) (hn : 2 ≤ n)
@@ -229,7 +281,7 @@ public theorem thm_goldbach_binary_fails_at_11 :
     ¬ (∃ p q : Nat, IsPrime p ∧ IsPrime q ∧ p + q = 11) :=
   goldbach_binary_fails_at_11
 
--- VII. Odd Perfect & Mersenne (4)
+-- VII. Odd Perfect & Mersenne (7)
 public theorem thm_mersenne_exponent_prime (n : Nat) (hn : 2 ≤ n) (hm : IsPrime (2 ^ n - 1)) :
     IsPrime n :=
   mersenne_exponent_prime n hn hm
@@ -245,6 +297,19 @@ public theorem thm_no_odd_perfect_le_100 (n : Nat) (hle : n ≤ 100) (hodd : n %
 public theorem thm_euclid_even_perfect (p : Nat) (hp : 2 ≤ p) (hmp : IsPrime (2 ^ p - 1)) :
     IsPerfect (2 ^ (p - 1) * (2 ^ p - 1)) :=
   euclid_even_perfect p hp hmp
+
+public theorem thm_euler_even_perfect_converse (n : Nat) (heven : n % 2 = 0) (hperf : IsPerfect n) :
+    ∃ p : Nat, 2 ≤ p ∧ IsPrime (2 ^ p - 1) ∧ n = 2 ^ (p - 1) * (2 ^ p - 1) :=
+  euler_even_perfect_converse n heven hperf
+
+public theorem thm_euclid_euler_even_perfect_iff (n : Nat) (heven : n % 2 = 0) :
+    IsPerfect n ↔ ∃ p : Nat, 2 ≤ p ∧ IsPrime (2 ^ p - 1) ∧ n = 2 ^ (p - 1) * (2 ^ p - 1) :=
+  euclid_euler_even_perfect_iff n heven
+
+public theorem thm_mersenne_prime_divisor_congruence (p q : Nat)
+    (hp : IsPrime p) (hp3 : 3 ≤ p) (hq : IsPrime q) (hdvd : q ∣ 2 ^ p - 1) :
+    2 * p ∣ q - 1 :=
+  mersenne_prime_divisor_congruence p q hp hp3 hq hdvd
 
 -- VIII. Ramsey R(3,3) = 6 & R(3,4) = 9 (4)
 public theorem thm_ramsey_R33_upper (c : Fin 6 → Fin 6 → Bool) :

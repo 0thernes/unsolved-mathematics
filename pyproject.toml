@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "unsolved-mathematics-atlas"
-version = "0.6.0"
+version = "0.7.0"
 description = "Reproducible ranked dossier of 106 open mathematical problems paired with a multi-kernel Lean 4.35.0 formal core and deterministic RAG corpus."
 readme = "README.md"
 license = { text = "MIT" }
@@ -55,4 +55,5 @@ python_version = "3.11"
 warn_unused_ignores = true
 warn_redundant_casts = true
 ignore_missing_imports = true
-files = ["scripts/generate.py", "scripts/validate.py", "scripts/check_dossiers.py", "scripts/check_papers.py", "scripts/proof_claim_sweep.py", "scripts/verify_citations.py", "rag/build_corpus.py", "rag/retriever.py"]
+explicit_package_bases = true
+files = ["scripts", "rag", "examples"]

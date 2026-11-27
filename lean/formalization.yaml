@@ -1,7 +1,7 @@
 # Palomar Registry & Verification Disclosure Metadata
 # Schema reference: https://github.com/PalomarRegistry/PalomarPolicy/blob/main/CONTRIBUTING.md
 title: "FormalAtlas: Eight-Domain Multi-Kernel Lean 4.35.0 Structural Core for The Unsolved Mathematics Atlas"
-version: "0.6.0"
+version: "0.7.0"
 date: "2026-11-26"
 authors:
   - name: "Alexander S. Donahue"
@@ -10,6 +10,7 @@ authors:
 repository: "https://github.com/0thernes/unsolved-mathematics"
 license: "MIT"
 lean_toolchain: "leanprover/lean4:v4.35.0"
+lean_commit: "eb6cafb7290e8bd5f2937522d8d804f58f02bafc"
 lean_options: "autoImplicit = false; zero Mathlib; zero native_decide"
 dependencies: "None (standalone Lean 4 Core; zero Mathlib)"
 challenge_file: "Challenge.lean"
@@ -19,17 +20,17 @@ non_vacuity_file: "NonVacuity.lean"
 adversarial_file: "Adversarial.lean"
 axiom_audit_file: "VerifyAxioms.lean"
 domain_count: 8
-theorem_count: 53
-witness_count: 12
-adversarial_refutation_count: 16
-audited_declaration_count: 81
+theorem_count: 66
+witness_count: 16
+adversarial_refutation_count: 20
+audited_declaration_count: 102
 permitted_axioms:
   - "propext"
   - "Classical.choice"
   - "Quot.sound"
 automation:
   models:
-    - "Gemini (Antigravity, Google DeepMind — 8-domain formalization expansion, full Lonely Runner n=3, Euclid even-perfect, Ramsey R(3,4)=9, adversarial tests & verification tooling, Nov 2026)"
+    - "Gemini (Antigravity, Google DeepMind — 8-domain formalization expansion, Complete Euclid–Euler biconditional theorem, Euler Mersenne divisor congruence 2p | q-1, Collatz Fine–Wilf Odd-Unit-Lock Spine Valuation Ceiling, 2-adic isometry, exhaustive d<=7 & unconditional 1-/2-odd-step positive-cycle exclusion, catalytic cylinder, full Lonely Runner n=3, Ramsey R(3,4)=9, adversarial tests & verification tooling, Nov 2026)"
     - "Claude / GPT Codex (earlier Collatz empirical audit & roadmap, Jul 2026)"
   human_role: "Problem selection, mathematical scoping, definition & statement-fidelity audit, acceptance decisions"
   verification_kernels:
@@ -41,18 +42,21 @@ automation:
     - "con-ron (verified Rust)"
 review_status: "Not peer-reviewed; mechanically checked by Lean 4.35.0 multi-kernel stack, lake comparator, and live negative kernel rejection"
 scope_and_limitations: >
-  Formalizes 53 structural theorems, classical foundations, modular reductions,
+  Formalizes 66 structural theorems, classical foundations, modular reductions,
   sharpness bounds, finite exhaustions, and a 3n-1 sibling-map comparison (not a
-  formal barrier theorem) across eight open-problem
-  domains (Collatz 18 incl. positive-cycle subcriticality & denominator bounds,
-  Erdős–Straus 5, Lonely Runner 8 incl. COMPLETE n=3 for all positive triples,
-  Brocard 7 incl. n ≤ 20, Primes/Twin Primes 4, Goldbach 3 incl. 4 ≤ n ≤ 100,
-  Odd Perfect/Mersenne Primes 4 incl. Euclid's Even Perfect Number Theorem for all p ≥ 2,
-  and Ramsey Theory 4 proving exact R(3,3)=6 and R(3,4)=9), paired with 12 concrete
-  non-vacuity witnesses and 16 explicit adversarial false-variant refutations (81
-  audited declarations). All results are classical or elementary; the 4-runner
-  Lonely Runner case is classical, and the conjecture is proved for up to 13
-  runners in recent preprints (arXiv:2509.14111, arXiv:2511.22427,
-  arXiv:2604.23906). Challenge.lean holds the sorry-stated comparator
-  specifications; the proof modules contain no sorry. Explicitly does NOT prove
-  any open conjecture.
+  formal barrier theorem) across eight open-problem domains (Collatz 28 incl.
+  Fine–Wilf Odd-Unit-Lock Spine Valuation Ceiling, 2-adic isometry, periodic spine
+  congruence, exhaustive d <= 7 & unconditional 1-/2-odd-step positive-cycle
+  exclusion for all d >= 1, and catalytic reversible cylinder evaluation,
+  Erdős–Straus 5, Lonely Runner 8 incl. constructive n=3 for all positive triples,
+  Brocard 7 incl. n <= 20, Primes/Twin Primes 4, Goldbach 3 incl. 4 <= n <= 100,
+  Odd Perfect/Mersenne Primes 7 incl. Complete Euclid–Euler Theorem with proved
+  divSum_eq_divSumLin and Euler's 1750 Mersenne prime divisor congruence 2p | q - 1,
+  and Ramsey Theory 4 proving exact R(3,3)=6 and R(3,4)=9), paired with 16 concrete
+  non-vacuity witnesses and 20 explicit adversarial false-variant refutations (102
+  audited declarations). All results are classical, elementary, or bounded structural
+  identities; the 4-runner Lonely Runner case is classical (Betke–Wills 1972; Cusick
+  1973), and the conjecture is proved for up to 13 runners in recent preprints
+  (arXiv:2509.14111, arXiv:2511.22427, arXiv:2604.23906). Challenge.lean holds the
+  66 sorry-stated comparator specifications; the proof modules contain zero sorry.
+  Explicitly does NOT prove any open conjecture.

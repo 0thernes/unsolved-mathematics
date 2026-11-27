@@ -5,8 +5,9 @@ public import FormalAtlas.Defs
 /-!
 # FormalAtlas.Collatz — Machine-Checked Structural Core & Obstructions
 
-Proves the foundational structural theorems and no-go barriers of the Collatz
-research program in pure Lean 4 (zero Mathlib, zero `sorry`, standard axioms only):
+Proves the foundational structural theorems, finite cycle exclusions, and `3n-1`
+sibling-map comparison of the Collatz research program in pure Lean 4 (zero Mathlib,
+zero `sorry` in proof modules, standard axioms only):
   1. `collatz_cylinder_affine_law` — `T^d(2^d q + r) = 3^o q + T^d(r)`
   2. `collatz_exact_intercept_law` — `2^d T^d(x) = 3^o x + c(w)`
   3. `terras_parity_word_bijection` — Terras (1976) injectivity & surjectivity mod `2^d`
@@ -15,8 +16,10 @@ research program in pure Lean 4 (zero Mathlib, zero `sorry`, standard axioms onl
   6. `collatz_spine_ladder_identity` — cleared-denominator Spine Ladder linearization
   7. `collatz_positivity_localization` — every supercritical periodic spine satisfies `ρ_w ≤ -1`
      (exact integer form: `wordIntercept w ≥ 3^(wordOddCount w) - 2^(w.length)`)
-  8. `collatz_epsilon_invariance_barrier` — sibling `3n-1` has identical Terras bijection
-     yet possesses genuine positive supercritical cycles at `5` and `17`.
+  8. `collatz_epsilon_invariance_barrier` — `3n-1` sibling comparison: `TMinus` has the
+     identical Terras bijection yet possesses positive supercritical cycles at `5` and `17`
+     (note: the methodological "no-go barrier" reading is a heuristic, not a formalized
+     meta-theorem; declaration name retained for backward compatibility).
 
 Explicit non-claim: proves NO part of the Collatz Conjecture (status: OPEN).
 -/
@@ -695,10 +698,14 @@ public theorem collatz_positivity_localization (w : List Bool)
   omega
 
 -- ----------------------------------------------------------------------------
--- Theorem 8: ε-Invariance / Sign-Blindness Barrier (Sibling 3n-1)
+-- Theorem 8: 3n-1 Sibling Comparison (declaration name kept for compatibility)
 -- ----------------------------------------------------------------------------
 
-/-- **Theorem 8 (ε-Invariance / Sign-Blindness Barrier).** -/
+/-- **Theorem 8 (`3n-1` Sibling Comparison).**
+    The sibling map `TMinus` (`3n-1`) shares the identical Terras parity-word bijection
+    with `T` yet has positive supercritical cycles at `5` (period 3) and `17` (period 11).
+    (The inference that arguments blind to the sign of `ε = ±1` cannot settle `3n+1` is a
+    methodological heuristic, not a formalized meta-theorem.) -/
 public theorem collatz_epsilon_invariance_barrier :
     (∀ d : Nat,
       (∀ x y : Int, 0 ≤ x → x < (2 : Int) ^ d → 0 ≤ y → y < (2 : Int) ^ d →
@@ -881,5 +888,947 @@ public theorem collatz_no_positive_cycle_d1 (x : Int) (hx : 0 < x) :
   split
   · omega
   · omega
+
+-- ----------------------------------------------------------------------------
+-- v0.7.0 Deep Collatz Frontier: 2-Adic Isometry, Odd-Unit-Lock Periodic-Echo
+-- Valuation Law, Unconditional Fine–Wilf Spine Ceiling, Cycle Eliminations
+-- through d ≤ 7, and Catalytic Reversible Cylinder Evaluation
+-- ----------------------------------------------------------------------------
+
+/-- **2-Adic Cylinder Isometry:** for all integers `x, y` and depths `d`,
+    `parityWord T d x = parityWord T d y ↔ (x - y) % 2^d = 0`. -/
+public theorem collatz_2adic_isometry (d : Nat) (x y : Int) :
+    parityWord T d x = parityWord T d y ↔ (x - y) % ((2 : Int) ^ d) = 0 := by
+  constructor
+  · exact terras_inj_general T T_shift_one d x y
+  · intro hdiv
+    have ⟨q, hq⟩ := Int.dvd_of_emod_eq_zero hdiv
+    have hxy : x = (2 : Int) ^ d * q + y := by omega
+    rw [hxy]
+    exact (collatz_cylinder_affine_and_word d q y).1
+
+theorem dvd_pow2_of_odd_mul (m : Nat) (D : Int) (hodd : D % 2 ≠ 0) :
+    ∀ z : Int, (D * z) % ((2 : Int) ^ m) = 0 → z % ((2 : Int) ^ m) = 0 := by
+  induction m with
+  | zero => intro z _; simp
+  | succ m ihm =>
+    intro z hz
+    have hdiv : (2 : Int) ^ (m + 1) = 2 * (2 : Int) ^ m := by rw [Int.pow_succ, Int.mul_comm]
+    have ⟨q, hq⟩ := Int.dvd_of_emod_eq_zero hz
+    rw [hdiv] at hq
+    have hDz2 : (D * z) % 2 = 0 := Int.emod_eq_zero_of_dvd ⟨(2 : Int) ^ m * q, by
+      rw [hq, Int.mul_assoc]⟩
+    have hDm : D % 2 = 1 := by omega
+    have hz_even : z % 2 = 0 := by
+      have hmul : (D * z) % 2 = ((D % 2) * (z % 2)) % 2 := Int.mul_emod D z 2
+      rw [hDm, Int.one_mul] at hmul
+      omega
+    let z' := z / 2
+    have hz_eq : z = 2 * z' := by omega
+    have hq' : D * z' = (2 : Int) ^ m * q := by
+      have h2eq : 2 * (D * z') = 2 * ((2 : Int) ^ m * q) := by
+        calc 2 * (D * z') = D * (2 * z') := by rw [← Int.mul_assoc, Int.mul_comm 2 D, Int.mul_assoc]
+        _ = D * z := by rw [← hz_eq]
+        _ = 2 * (2 : Int) ^ m * q := hq
+        _ = 2 * ((2 : Int) ^ m * q) := Int.mul_assoc _ _ _
+      omega
+    have hz' : (D * z') % ((2 : Int) ^ m) = 0 := Int.emod_eq_zero_of_dvd ⟨q, hq'⟩
+    have ⟨q2, hq2⟩ := Int.dvd_of_emod_eq_zero (ihm z' hz')
+    rw [hz_eq, hdiv]
+    exact Int.emod_eq_zero_of_dvd ⟨q2, by rw [hq2, Int.mul_assoc]⟩
+
+theorem pow3_odd (n : Nat) : ((3 : Int) ^ n) % 2 = 1 := by
+  induction n with
+  | zero => decide
+  | succ k ih =>
+    rw [Int.pow_succ, Int.mul_emod, ih]
+    decide
+
+theorem spineDenom_odd (w : List Bool) (hw : 1 ≤ w.length) :
+    spineDenom w % 2 ≠ 0 := by
+  unfold spineDenom
+  cases hlen : w.length with
+  | zero => omega
+  | succ m =>
+    have h2 : ((2 : Int) ^ (m + 1)) % 2 = 0 := by
+      rw [Int.pow_succ]
+      exact Int.emod_eq_zero_of_dvd ⟨(2 : Int) ^ m, by rw [Int.mul_comm]⟩
+    have h3 : ((3 : Int) ^ wordOddCount w) % 2 = 1 := pow3_odd (wordOddCount w)
+    have hsub := Int.sub_emod ((2 : Int) ^ (m + 1)) ((3 : Int) ^ wordOddCount w) 2
+    rw [h2, h3] at hsub
+    omega
+
+theorem periodicPrefixFrom_length (w : List Bool) (start k : Nat) :
+    (periodicPrefixFrom w start k).length = k := by
+  induction k generalizing start with
+  | zero => rfl
+  | succ k ih => simp [periodicPrefixFrom, ih]
+
+theorem periodicPrefix_length (w : List Bool) (k : Nat) :
+    (periodicPrefix w k).length = k :=
+  periodicPrefixFrom_length w 0 k
+
+theorem periodicPrefixFrom_append (w : List Bool) (start k1 k2 : Nat) :
+    periodicPrefixFrom w start (k1 + k2) =
+      periodicPrefixFrom w start k1 ++ periodicPrefixFrom w (start + k1) k2 := by
+  induction k1 generalizing start with
+  | zero => simp [periodicPrefixFrom]
+  | succ k1 ih =>
+    have hadd : k1 + 1 + k2 = (k1 + k2) + 1 := by omega
+    rw [hadd]
+    simp only [periodicPrefixFrom, List.cons_append]
+    have hst : start + 1 + k1 = start + (k1 + 1) := by omega
+    rw [ih (start + 1), hst]
+
+theorem periodicBit_add_len (w : List Bool) (i : Nat) :
+    periodicBit w (i + w.length) = periodicBit w i := by
+  unfold periodicBit
+  rw [Nat.add_mod_right]
+
+theorem periodicPrefixFrom_add_len (w : List Bool) (start k : Nat) :
+    periodicPrefixFrom w (start + w.length) k = periodicPrefixFrom w start k := by
+  induction k generalizing start with
+  | zero => rfl
+  | succ k ih =>
+    simp only [periodicPrefixFrom, periodicBit_add_len]
+    have hst : start + w.length + 1 = (start + 1) + w.length := by omega
+    rw [hst, ih (start + 1)]
+
+theorem periodicPrefix_self (w : List Bool) :
+    periodicPrefix w w.length = w := by
+  have haux : ∀ (u v : List Bool),
+      periodicPrefixFrom (u ++ v) u.length v.length = v := by
+    intro u v
+    induction v generalizing u with
+    | nil => rfl
+    | cons b vs ih =>
+      simp only [List.length_cons, periodicPrefixFrom]
+      have hbit : periodicBit (u ++ b :: vs) u.length = b := by
+        unfold periodicBit
+        have hlt : u.length < (u ++ b :: vs).length := by simp
+        rw [Nat.mod_eq_of_lt hlt]
+        have hget : (u ++ b :: vs).getD u.length false = b := by
+          clear ih hlt
+          induction u with
+          | nil => rfl
+          | cons a us ihu =>
+            simp only [List.cons_append, List.length_cons, List.getD_cons_succ]
+            exact ihu
+        exact hget
+      rw [hbit]
+      have hrec := ih (u ++ [b])
+      have hcat : (u ++ [b]) ++ vs = u ++ (b :: vs) := by
+        rw [List.append_assoc]; rfl
+      have hlen : (u ++ [b]).length = u.length + 1 := by simp
+      rw [hcat, hlen] at hrec
+      rw [hrec]
+  have h := haux [] w
+  simp only [List.nil_append, List.length_nil] at h
+  exact h
+
+theorem list_append_inj_of_len {α : Type} {a b c d : List α}
+    (hlen : a.length = c.length) (heq : a ++ b = c ++ d) : a = c ∧ b = d := by
+  induction a generalizing c with
+  | nil =>
+    cases c with
+    | nil => exact ⟨rfl, heq⟩
+    | cons _ _ => simp at hlen
+  | cons x xs ih =>
+    cases c with
+    | nil => simp at hlen
+    | cons y ys =>
+      simp only [List.length_cons, List.cons_append, List.cons.injEq] at hlen heq
+      have ⟨h1, h2⟩ := ih (by omega) heq.2
+      exact ⟨by rw [heq.1, h1], h2⟩
+
+theorem periodicPrefix_congruence_forward (w : List Bool) (k : Nat) (x : Int)
+    (hword : parityWord T k x = periodicPrefix w k) :
+    (spineDenom w * x - wordIntercept w) % ((2 : Int) ^ k) = 0 := by
+  -- Lift to depth w.length + k via Terras surjectivity
+  have ⟨y, _, _, hyw⟩ := (terras_parity_word_bijection (w.length + k)).2
+    (periodicPrefix w (w.length + k)) (periodicPrefix_length w (w.length + k))
+  have hsplit_p : periodicPrefix w (w.length + k) = w ++ periodicPrefix w k := by
+    unfold periodicPrefix
+    rw [periodicPrefixFrom_append, periodicPrefixFrom_add_len]
+    have hself : periodicPrefixFrom w 0 w.length = w := periodicPrefix_self w
+    rw [hself]
+  have hsplit_y : parityWord T (w.length + k) y =
+      parityWord T w.length y ++ parityWord T k (iter T w.length y) :=
+    collatz_parity_word_append T w.length k y
+  rw [hsplit_y, hsplit_p] at hyw
+  have ⟨hy_head, hy_tail⟩ := list_append_inj_of_len (collatz_parity_word_length T w.length y) hyw
+  -- Also first k bits of y match periodicPrefix w k = parityWord T k x
+  have hy_pref_k : parityWord T k y = periodicPrefix w k := by
+    have hsplit_y2 : parityWord T (k + w.length) y =
+        parityWord T k y ++ parityWord T w.length (iter T k y) :=
+      collatz_parity_word_append T k w.length y
+    have hsplit_p2 : periodicPrefix w (k + w.length) =
+        periodicPrefix w k ++ periodicPrefixFrom w k w.length := by
+      unfold periodicPrefix
+      rw [periodicPrefixFrom_append, Nat.zero_add]
+    have hcomm : k + w.length = w.length + k := Nat.add_comm k w.length
+    have hyw2 : parityWord T (k + w.length) y = periodicPrefix w (k + w.length) := by
+      rw [hcomm, hsplit_y, hsplit_p]
+      exact hyw
+    rw [hsplit_y2, hsplit_p2] at hyw2
+    have hlen_k : (parityWord T k y).length = (periodicPrefix w k).length := by
+      rw [collatz_parity_word_length, periodicPrefix_length]
+    exact (list_append_inj_of_len hlen_k hyw2).1
+  -- Since parityWord T k (T^|w|(y)) = periodicPrefix w k = parityWord T k y, 2^k ∣ (T^|w|(y) - y)
+  have hshift_eq : parityWord T k (iter T w.length y) = parityWord T k y := by
+    rw [hy_tail, hy_pref_k]
+  have hdvd_step : (iter T w.length y - y) % ((2 : Int) ^ k) = 0 :=
+    (collatz_2adic_isometry k (iter T w.length y) y).mp hshift_eq
+  have ⟨q1, hq1⟩ := Int.dvd_of_emod_eq_zero hdvd_step
+  -- Exact intercept law on y at depth |w|: 2^|w| * T^|w|(y) = 3^o * y + c(w)
+  have hlaw := collatz_exact_intercept_law w.length y
+  unfold oddCount at hlaw
+  rw [hy_head] at hlaw
+  have hy_cong : (spineDenom w * y - wordIntercept w) % ((2 : Int) ^ k) = 0 := by
+    unfold spineDenom
+    refine Int.emod_eq_zero_of_dvd ⟨-((2 : Int) ^ w.length * q1), ?_⟩
+    have hmul : (2 : Int) ^ w.length * (iter T w.length y - y) =
+        (2 : Int) ^ w.length * ((2 : Int) ^ k * q1) := by rw [hq1]
+    have h1 : (2 : Int) ^ w.length * (iter T w.length y - y) =
+        (2 : Int) ^ w.length * iter T w.length y - (2 : Int) ^ w.length * y := Int.mul_sub _ _ _
+    have h2 : ((2 : Int) ^ w.length - (3 : Int) ^ wordOddCount w) * y =
+        (2 : Int) ^ w.length * y - (3 : Int) ^ wordOddCount w * y := Int.sub_mul _ _ _
+    have h3 : (2 : Int) ^ w.length * ((2 : Int) ^ k * q1) =
+        (2 : Int) ^ k * ((2 : Int) ^ w.length * q1) := by
+      rw [← Int.mul_assoc, Int.mul_comm ((2 : Int) ^ w.length) ((2 : Int) ^ k), Int.mul_assoc]
+    have h4 : (2 : Int) ^ k * -((2 : Int) ^ w.length * q1) =
+        -((2 : Int) ^ k * ((2 : Int) ^ w.length * q1)) := Int.mul_neg _ _
+    omega
+  -- Finally x ≡ y (mod 2^k) since parityWord T k x = periodicPrefix w k = parityWord T k y
+  have hxy_dvd : (x - y) % ((2 : Int) ^ k) = 0 :=
+    (collatz_2adic_isometry k x y).mp (by rw [hword, hy_pref_k])
+  have ⟨q2, hq2⟩ := Int.dvd_of_emod_eq_zero hxy_dvd
+  have ⟨q3, hq3⟩ := Int.dvd_of_emod_eq_zero hy_cong
+  refine Int.emod_eq_zero_of_dvd ⟨spineDenom w * q2 + q3, ?_⟩
+  have hdiff : spineDenom w * x - wordIntercept w =
+      spineDenom w * (x - y) + (spineDenom w * y - wordIntercept w) := by
+    rw [Int.mul_sub]; omega
+  rw [hdiff, hq2, hq3, Int.mul_add]
+  have hcomm : spineDenom w * ((2 : Int) ^ k * q2) = (2 : Int) ^ k * (spineDenom w * q2) := by
+    rw [← Int.mul_assoc, Int.mul_comm (spineDenom w) ((2 : Int) ^ k), Int.mul_assoc]
+  rw [hcomm]
+
+/-- **Periodic Spine Congruence Theorem:** for every non-empty parity word `w`,
+    every precision `k`, and every integer `x`,
+    `(D(w) * x - c(w)) % 2^k = 0 ↔ parityWord T k x = periodicPrefix w k`. -/
+public theorem collatz_periodic_spine_congruence (w : List Bool) (k : Nat) (x : Int)
+    (hw : 1 ≤ w.length) :
+    (spineDenom w * x - wordIntercept w) % ((2 : Int) ^ k) = 0 ↔
+      parityWord T k x = periodicPrefix w k := by
+  constructor
+  · intro hcong
+    have ⟨y, _, _, hyw⟩ := (terras_parity_word_bijection k).2
+      (periodicPrefix w k) (periodicPrefix_length w k)
+    have hy_cong := periodicPrefix_congruence_forward w k y hyw
+    have ⟨q1, hq1⟩ := Int.dvd_of_emod_eq_zero hcong
+    have ⟨q2, hq2⟩ := Int.dvd_of_emod_eq_zero hy_cong
+    have hDxy : (spineDenom w * (x - y)) % ((2 : Int) ^ k) = 0 := by
+      refine Int.emod_eq_zero_of_dvd ⟨q1 - q2, ?_⟩
+      rw [Int.mul_sub, Int.mul_sub]
+      omega
+    have hxy := dvd_pow2_of_odd_mul k (spineDenom w) (spineDenom_odd w hw) (x - y) hDxy
+    have hpw := (collatz_2adic_isometry k x y).mpr hxy
+    rw [hpw, hyw]
+  · exact periodicPrefix_congruence_forward w k x
+
+/-- **Odd-Unit-Lock Exact Periodic-Echo Valuation Isometry:**
+    For ANY two non-empty parity words `w, v` and ANY 2-adic precision `k`,
+    the cleared-denominator spine separation `c(w) D(v) - c(v) D(w)` is divisible by `2^k`
+    if and only if the infinite periodic parity words `w^∞` and `v^∞` agree on their first `k` bits.
+    Equivalently: `v₂(ρ_w - ρ_v) = lcp(w^∞, v^∞)`. -/
+public theorem collatz_odd_unit_lock_valuation_isometry (w v : List Bool) (k : Nat)
+    (hw : 1 ≤ w.length) (hv : 1 ≤ v.length) :
+    (wordIntercept w * spineDenom v - wordIntercept v * spineDenom w) % ((2 : Int) ^ k) = 0 ↔
+      periodicPrefix w k = periodicPrefix v k := by
+  have ⟨x, _, _, hxw⟩ := (terras_parity_word_bijection k).2
+    (periodicPrefix w k) (periodicPrefix_length w k)
+  have ⟨y, _, _, hyv⟩ := (terras_parity_word_bijection k).2
+    (periodicPrefix v k) (periodicPrefix_length v k)
+  have hx_cong := periodicPrefix_congruence_forward w k x hxw
+  have hy_cong := periodicPrefix_congruence_forward v k y hyv
+  have ⟨qx, hqx⟩ := Int.dvd_of_emod_eq_zero hx_cong
+  have ⟨qy, hqy⟩ := Int.dvd_of_emod_eq_zero hy_cong
+  -- Identity: c(w)*D(v) - c(v)*D(w) = D(w)*D(v)*(x - y) - D(v)*(D(w)*x - c(w)) + D(w)*(D(v)*y - c(v))
+  have hid : wordIntercept w * spineDenom v - wordIntercept v * spineDenom w =
+      (spineDenom w * spineDenom v) * (x - y) -
+      spineDenom v * (spineDenom w * x - wordIntercept w) +
+      spineDenom w * (spineDenom v * y - wordIntercept v) := by
+    have h1 : (spineDenom w * spineDenom v) * (x - y) =
+        spineDenom w * spineDenom v * x - spineDenom w * spineDenom v * y := Int.mul_sub _ _ _
+    have h2 : spineDenom v * (spineDenom w * x - wordIntercept w) =
+        spineDenom v * (spineDenom w * x) - spineDenom v * wordIntercept w := Int.mul_sub _ _ _
+    have h3 : spineDenom w * (spineDenom v * y - wordIntercept v) =
+        spineDenom w * (spineDenom v * y) - spineDenom w * wordIntercept v := Int.mul_sub _ _ _
+    have hc1 : spineDenom v * (spineDenom w * x) = spineDenom w * spineDenom v * x := by
+      rw [← Int.mul_assoc, Int.mul_comm (spineDenom v) (spineDenom w)]
+    have hc2 : spineDenom w * (spineDenom v * y) = spineDenom w * spineDenom v * y := by
+      rw [← Int.mul_assoc]
+    have hc3 : spineDenom v * wordIntercept w = wordIntercept w * spineDenom v := Int.mul_comm _ _
+    have hc4 : spineDenom w * wordIntercept v = wordIntercept v * spineDenom w := Int.mul_comm _ _
+    omega
+  have hDprod_odd : (spineDenom w * spineDenom v) % 2 ≠ 0 := by
+    have hwo := spineDenom_odd w hw
+    have hvo := spineDenom_odd v hv
+    have hw1 : spineDenom w % 2 = 1 := by omega
+    have hv1 : spineDenom v % 2 = 1 := by omega
+    rw [Int.mul_emod, hw1, hv1]
+    decide
+  constructor
+  · intro hsep
+    have ⟨qs, hqs⟩ := Int.dvd_of_emod_eq_zero hsep
+    have hprod_dvd : ((spineDenom w * spineDenom v) * (x - y)) % ((2 : Int) ^ k) = 0 := by
+      refine Int.emod_eq_zero_of_dvd ⟨qs + spineDenom v * qx - spineDenom w * qy, ?_⟩
+      have hrhs : (2 : Int) ^ k * (qs + spineDenom v * qx - spineDenom w * qy) =
+          (2 : Int) ^ k * qs + (2 : Int) ^ k * (spineDenom v * qx) -
+          (2 : Int) ^ k * (spineDenom w * qy) := by
+        rw [Int.mul_sub, Int.mul_add]
+      have ha : (2 : Int) ^ k * (spineDenom v * qx) = spineDenom v * ((2 : Int) ^ k * qx) := by
+        rw [← Int.mul_assoc, Int.mul_comm ((2 : Int) ^ k) (spineDenom v), Int.mul_assoc]
+      have hb : (2 : Int) ^ k * (spineDenom w * qy) = spineDenom w * ((2 : Int) ^ k * qy) := by
+        rw [← Int.mul_assoc, Int.mul_comm ((2 : Int) ^ k) (spineDenom w), Int.mul_assoc]
+      rw [hrhs, ha, hb, ← hqx, ← hqy, ← hqs]
+      omega
+    have hxy := dvd_pow2_of_odd_mul k (spineDenom w * spineDenom v) hDprod_odd (x - y) hprod_dvd
+    have hpw := (collatz_2adic_isometry k x y).mpr hxy
+    rw [← hxw, ← hyv, hpw]
+  · intro hpref
+    have hpw : parityWord T k x = parityWord T k y := by rw [hxw, hyv, hpref]
+    have hxy := (collatz_2adic_isometry k x y).mp hpw
+    have ⟨qxy, hqxy⟩ := Int.dvd_of_emod_eq_zero hxy
+    refine Int.emod_eq_zero_of_dvd ⟨(spineDenom w * spineDenom v) * qxy - spineDenom v * qx + spineDenom w * qy, ?_⟩
+    rw [hid, hqxy, hqx, hqy, Int.mul_add, Int.mul_sub]
+    have ha : (2 : Int) ^ k * ((spineDenom w * spineDenom v) * qxy) =
+        (spineDenom w * spineDenom v) * ((2 : Int) ^ k * qxy) := by
+      rw [← Int.mul_assoc, Int.mul_comm ((2 : Int) ^ k) _, Int.mul_assoc]
+    have hb : (2 : Int) ^ k * (spineDenom v * qx) = spineDenom v * ((2 : Int) ^ k * qx) := by
+      rw [← Int.mul_assoc, Int.mul_comm ((2 : Int) ^ k) _, Int.mul_assoc]
+    have hc : (2 : Int) ^ k * (spineDenom w * qy) = spineDenom w * ((2 : Int) ^ k * qy) := by
+      rw [← Int.mul_assoc, Int.mul_comm ((2 : Int) ^ k) _, Int.mul_assoc]
+    rw [ha, hb, hc]
+
+-- ----------------------------------------------------------------------------
+-- Fine–Wilf Periodicity Theorem & Unconditional Odd-Unit-Lock Valuation Ceiling
+-- ----------------------------------------------------------------------------
+
+theorem periodicPrefixFrom_eq_iff (w v : List Bool) (start k : Nat) :
+    periodicPrefixFrom w start k = periodicPrefixFrom v start k ↔
+      ∀ i : Nat, i < k → periodicBit w (start + i) = periodicBit v (start + i) := by
+  induction k generalizing start with
+  | zero =>
+    constructor
+    · intro _ i hi; omega
+    · intro _; rfl
+  | succ k ih =>
+    simp only [periodicPrefixFrom, List.cons.injEq]
+    constructor
+    · intro ⟨h0, htail⟩ i hi
+      cases i with
+      | zero => simpa using h0
+      | succ j =>
+        have hj : j < k := by omega
+        have hstep := (ih (start + 1)).mp htail j hj
+        have hidx : start + 1 + j = start + (j + 1) := by omega
+        rw [← hidx]; exact hstep
+    · intro hall
+      refine ⟨by simpa using hall 0 (by omega), (ih (start + 1)).mpr ?_⟩
+      intro j hj
+      have hidx : start + 1 + j = start + (j + 1) := by omega
+      rw [hidx]
+      exact hall (j + 1) (by omega)
+
+theorem nat_gcd_sub_right (p q : Nat) (hpq : p ≤ q) :
+    Nat.gcd p (q - p) = Nat.gcd p q := by
+  have h1 : Nat.gcd p (q - p) = Nat.gcd (q - p) p := Nat.gcd_comm p (q - p)
+  have h2 : Nat.gcd q p = Nat.gcd p q := Nat.gcd_comm q p
+  rw [h1, ← h2]
+  have hadd : (q - p) + p = q := by omega
+  have hstep : Nat.gcd (q - p) p = Nat.gcd ((q - p) + p) p := (Nat.gcd_add_self_left p (q - p)).symm
+  rw [hadd] at hstep
+  exact hstep
+
+theorem fine_wilf_periodic_aux :
+    ∀ (s p q : Nat) (f g : Nat → Bool),
+      p + q ≤ s → 1 ≤ p → 1 ≤ q →
+      (∀ i, f (i + p) = f i) → (∀ i, g (i + q) = g i) →
+      (∀ i, i < p + q - Nat.gcd p q → f i = g i) →
+      ∀ i, f i = g i := by
+  intro s
+  induction s with
+  | zero => intro p q _ _ hs hp _ _ _ _; omega
+  | succ s ih =>
+    intro p q f g hs hp hq hf hg hagree
+    have hmod_f : ∀ i : Nat, f i = f (i % p) := by
+      intro i
+      have hdiv : i = i % p + p * (i / p) := by
+        have := Nat.div_add_mod i p; omega
+      have hmul : ∀ m r : Nat, f (r + p * m) = f r := by
+        intro m
+        induction m with
+        | zero => intro r; simp
+        | succ m ihm =>
+          intro r
+          have hstep : r + p * (m + 1) = (r + p * m) + p := by
+            rw [Nat.mul_add, Nat.mul_one, Nat.add_assoc]
+          rw [hstep, hf, ihm]
+      have hres := hmul (i / p) (i % p)
+      rw [← hdiv] at hres
+      exact hres
+    have hmod_g : ∀ i : Nat, g i = g (i % q) := by
+      intro i
+      have hdiv : i = i % q + q * (i / q) := by
+        have := Nat.div_add_mod i q; omega
+      have hmul : ∀ m r : Nat, g (r + q * m) = g r := by
+        intro m
+        induction m with
+        | zero => intro r; simp
+        | succ m ihm =>
+          intro r
+          have hstep : r + q * (m + 1) = (r + q * m) + q := by
+            rw [Nat.mul_add, Nat.mul_one, Nat.add_assoc]
+          rw [hstep, hg, ihm]
+      have hres := hmul (i / q) (i % q)
+      rw [← hdiv] at hres
+      exact hres
+    by_cases heq : p = q
+    · subst heq
+      intro i
+      rw [hmod_f i, hmod_g i]
+      have hlt : i % p < p := Nat.mod_lt i (by omega)
+      have hgcd : Nat.gcd p p = p := Nat.gcd_self p
+      exact hagree (i % p) (by omega)
+    · have hstep : ∀ (a b : Nat) (u v : Nat → Bool),
+          a + b ≤ s + 1 → 1 ≤ a → a < b →
+          (∀ i, u (i + a) = u i) → (∀ i, v (i + b) = v i) →
+          (∀ i, i < a + b - Nat.gcd a b → u i = v i) →
+          ∀ i, u i = v i := by
+        intro a b u v hab ha hlt hu hv huv
+        let b' := b - a
+        let h : Nat → Bool := fun i => v (i % b')
+        have hb'pos : 1 ≤ b' := by omega
+        have hh_per : ∀ i, h (i + b') = h i := by
+          intro i; simp only [h, Nat.add_mod_right]
+        have hgcd_eq : Nat.gcd a b' = Nat.gcd a b := nat_gcd_sub_right a b (by omega)
+        have hgcd_le_a : Nat.gcd a b ≤ a := Nat.gcd_le_left b (by omega)
+        have huh_aux : ∀ m : Nat, ∀ i : Nat, i ≤ m → i < b - Nat.gcd a b → u i = h i := by
+          intro m
+          induction m with
+          | zero =>
+            intro i hi _
+            have hi0 : i = 0 := by omega
+            subst hi0
+            simp only [h, Nat.zero_mod]
+            exact huv 0 (by omega)
+          | succ m ihm =>
+            intro i him hi
+            by_cases hic : i < b'
+            · simp only [h, Nat.mod_eq_of_lt hic]
+              exact huv i (by omega)
+            · let j := i - b'
+              have hji : j ≤ m := by omega
+              have hjlt : j < b - Nat.gcd a b := by omega
+              have hj_eq : u j = h j := ihm j hji hjlt
+              have hij_mod : i % b' = j % b' := by
+                have hadd : i = j + b' := by omega
+                rw [hadd, Nat.add_mod_right]
+              have hjp : j + b = i + a := by omega
+              have h1 : u i = u (i + a) := (hu i).symm
+              have h2 : u (i + a) = v (i + a) := huv (i + a) (by omega)
+              have h3 : v (i + a) = v (j + b) := by rw [hjp]
+              have h4 : v (j + b) = v j := hv j
+              have h5 : v j = u j := (huv j (by omega)).symm
+              have h6 : h j = h i := by simp only [h, hij_mod]
+              rw [h1, h2, h3, h4, h5, hj_eq, h6]
+        have huh : ∀ i, i < a + b' - Nat.gcd a b' → u i = h i := by
+          intro i hi
+          rw [hgcd_eq] at hi
+          exact huh_aux i i (Nat.le_refl i) (by omega)
+        have hu_eq_h : ∀ i, u i = h i :=
+          ih a b' u h (by omega) ha hb'pos hu hh_per huh
+        have hu_per_b : ∀ i, u (i + b) = u i := by
+          intro i
+          have hsplit : i + b = (i + a) + b' := by omega
+          rw [hsplit, hu_eq_h ((i + a) + b'), hh_per (i + a), ← hu_eq_h (i + a), hu i]
+        have hmod_u : ∀ i : Nat, u i = u (i % b) := by
+          intro i
+          have hdiv : i = i % b + b * (i / b) := by
+            have := Nat.div_add_mod i b; omega
+          have hmul : ∀ m r : Nat, u (r + b * m) = u r := by
+            intro m
+            induction m with
+            | zero => intro r; simp
+            | succ m ihm =>
+              intro r
+              have hst : r + b * (m + 1) = (r + b * m) + b := by
+                rw [Nat.mul_add, Nat.mul_one, Nat.add_assoc]
+              rw [hst, hu_per_b, ihm]
+          have hres := hmul (i / b) (i % b)
+          rw [← hdiv] at hres
+          exact hres
+        have hmod_v : ∀ i : Nat, v i = v (i % b) := by
+          intro i
+          have hdiv : i = i % b + b * (i / b) := by
+            have := Nat.div_add_mod i b; omega
+          have hmul : ∀ m r : Nat, v (r + b * m) = v r := by
+            intro m
+            induction m with
+            | zero => intro r; simp
+            | succ m ihm =>
+              intro r
+              have hst : r + b * (m + 1) = (r + b * m) + b := by
+                rw [Nat.mul_add, Nat.mul_one, Nat.add_assoc]
+              rw [hst, hv, ihm]
+          have hres := hmul (i / b) (i % b)
+          rw [← hdiv] at hres
+          exact hres
+        intro i
+        rw [hmod_u i, hmod_v i]
+        have hlt_b : i % b < b := Nat.mod_lt i (by omega)
+        exact huv (i % b) (by omega)
+      by_cases hlt : p < q
+      · exact hstep p q f g hs hp hlt hf hg hagree
+      · intro i
+        have hqlt : q < p := by omega
+        have hagree' : ∀ j, j < q + p - Nat.gcd q p → g j = f j := by
+          intro j hj
+          rw [Nat.gcd_comm] at hj
+          exact (hagree j (by omega)).symm
+        exact (hstep q p g f (by omega) hq hqlt hg hf hagree' i).symm
+
+theorem int_zero_of_dvd_all_pow2 (z : Int) (hall : ∀ k : Nat, z % ((2 : Int) ^ k) = 0) : z = 0 := by
+  have hbound : ∀ n : Nat, (n : Int) < (2 : Int) ^ n := by
+    intro n
+    induction n with
+    | zero => decide
+    | succ n ih =>
+      rw [Int.pow_succ]
+      have hpos := pow2_pos n
+      omega
+  let k := z.natAbs + 1
+  have hdiv := hall k
+  have ⟨q, hq⟩ := Int.dvd_of_emod_eq_zero hdiv
+  have hlt : (z.natAbs : Int) < (2 : Int) ^ k := by
+    have hb := hbound k
+    omega
+  have hpos := pow2_pos k
+  by_cases hqp : 1 ≤ q
+  · have h1 := Int.mul_le_mul_of_nonneg_left hqp (by omega : (0 : Int) ≤ (2 : Int) ^ k)
+    rw [Int.mul_one] at h1
+    omega
+  · by_cases hqn : q ≤ -1
+    · have h2 := Int.mul_le_mul_of_nonneg_left hqn (by omega : (0 : Int) ≤ (2 : Int) ^ k)
+      have hm1 : (2 : Int) ^ k * (-1) = -((2 : Int) ^ k) := by omega
+      rw [hm1] at h2
+      omega
+    · have hq0 : q = 0 := by omega
+      rw [hq0, Int.mul_zero] at hq
+      exact hq
+
+/-- **Unconditional Fine–Wilf Odd-Unit-Lock Spine Valuation Ceiling:**
+    For ANY two non-empty parity words `w, v` with distinct rational periodic spines
+    (`c(w) D(v) ≠ c(v) D(w)`), the cleared-denominator spine separation is NOT divisible by
+    `2^(|w| + |v| - gcd(|w|, |v|))`. Equivalently:
+    `v₂(ρ_w - ρ_v) ≤ |w| + |v| - gcd(|w|, |v|) - 1`. -/
+public theorem collatz_fine_wilf_spine_ceiling (w v : List Bool)
+    (hw : 1 ≤ w.length) (hv : 1 ≤ v.length)
+    (hne : wordIntercept w * spineDenom v ≠ wordIntercept v * spineDenom w) :
+    (wordIntercept w * spineDenom v - wordIntercept v * spineDenom w) %
+      ((2 : Int) ^ (w.length + v.length - Nat.gcd w.length v.length)) ≠ 0 := by
+  intro hdiv
+  let L := w.length + v.length - Nat.gcd w.length v.length
+  have hpref : periodicPrefix w L = periodicPrefix v L :=
+    (collatz_odd_unit_lock_valuation_isometry w v L hw hv).mp hdiv
+  have hagree : ∀ i, i < L → periodicBit w i = periodicBit v i := by
+    intro i hi
+    have h := (periodicPrefixFrom_eq_iff w v 0 L).mp hpref i hi
+    simpa using h
+  have hall_bits : ∀ i, periodicBit w i = periodicBit v i :=
+    fine_wilf_periodic_aux (w.length + v.length) w.length v.length
+      (periodicBit w) (periodicBit v) (Nat.le_refl _) hw hv
+      (periodicBit_add_len w) (periodicBit_add_len v) hagree
+  have hall_div : ∀ k : Nat,
+      (wordIntercept w * spineDenom v - wordIntercept v * spineDenom w) % ((2 : Int) ^ k) = 0 := by
+    intro k
+    apply (collatz_odd_unit_lock_valuation_isometry w v k hw hv).mpr
+    apply (periodicPrefixFrom_eq_iff w v 0 k).mpr
+    intro i _
+    exact hall_bits (0 + i)
+  have hzero := int_zero_of_dvd_all_pow2 _ hall_div
+  omega
+
+-- ----------------------------------------------------------------------------
+-- Exact Low-Period Positive Cycle Eliminations (d ≤ 7) & Trivial Cycle Orbit
+-- ----------------------------------------------------------------------------
+
+/-- **Exact Trivial Cycle Orbit (`1 ↔ 2`):** for all `k : Nat`,
+    `T^(2k)(1) = 1`, `T^(2k+1)(1) = 2`, `T^(2k)(2) = 2`, and `T^(2k+1)(2) = 1`. -/
+public theorem collatz_trivial_cycle_orbit (k : Nat) :
+    iter T (2 * k) 1 = 1 ∧ iter T (2 * k + 1) 1 = 2 ∧
+    iter T (2 * k) 2 = 2 ∧ iter T (2 * k + 1) 2 = 1 := by
+  have hT1 : T 1 = 2 := by decide
+  have hT2 : T 2 = 1 := by decide
+  induction k with
+  | zero => exact ⟨rfl, hT1, rfl, hT2⟩
+  | succ k ih =>
+    have he1 : 2 * (k + 1) = 2 * k + 2 := by omega
+    have ho1 : 2 * (k + 1) + 1 = (2 * k + 1) + 2 := by omega
+    have hstep2 : ∀ m x, iter T (m + 2) x = iter T m (T (T x)) := by
+      intro m x; rfl
+    have hTT1 : T (T 1) = 1 := by rw [hT1, hT2]
+    have hTT2 : T (T 2) = 2 := by rw [hT2, hT1]
+    refine ⟨?_, ?_, ?_, ?_⟩
+    · rw [he1, hstep2, hTT1]; exact ih.1
+    · rw [ho1, hstep2, hTT1]; exact ih.2.1
+    · rw [he1, hstep2, hTT2]; exact ih.2.2.1
+    · rw [ho1, hstep2, hTT2]; exact ih.2.2.2
+
+def allBoolWords : Nat → List (List Bool)
+  | 0 => [[]]
+  | d + 1 => (allBoolWords d).map (false :: ·) ++ (allBoolWords d).map (true :: ·)
+
+theorem mem_allBoolWords (w : List Bool) : w ∈ allBoolWords w.length := by
+  induction w with
+  | nil => simp [allBoolWords]
+  | cons b ws ih =>
+    simp only [List.length_cons, allBoolWords, List.mem_append, List.mem_map]
+    cases b
+    · exact Or.inl ⟨ws, ih, rfl⟩
+    · exact Or.inr ⟨ws, ih, rfl⟩
+
+def isOnlyTrivialCycleWord (w : List Bool) : Bool :=
+  let D := spineDenom w
+  let c := wordIntercept w
+  !(decide (0 < D ∧ 0 < c ∧ c % D = 0 ∧ c ≠ D ∧ c ≠ 2 * D))
+
+theorem no_nontrivial_cycle_of_check (d : Nat) (hd : 1 ≤ d)
+    (hchk : (allBoolWords d).all isOnlyTrivialCycleWord = true) :
+    ∀ x : Int, 0 < x → iter T d x = x → x = 1 ∨ x = 2 := by
+  intro x hx hcyc
+  let w := parityWord T d x
+  have hlen : w.length = d := collatz_parity_word_length T d x
+  have hmem : w ∈ allBoolWords d := by rw [← hlen]; exact mem_allBoolWords w
+  have hok : isOnlyTrivialCycleWord w = true := List.all_eq_true.mp hchk w hmem
+  have heq := collatz_cycle_equation d x hcyc
+  have hcpos := collatz_positive_cycle_intercept_pos d x hd hx hcyc
+  have hsub := (collatz_positive_cycle_subcritical d x hd hx hcyc).1
+  have hD_eq : spineDenom w = (2 : Int) ^ d - (3 : Int) ^ (oddCount T d x) := by
+    unfold spineDenom oddCount
+    rw [hlen]
+  have hD_pos : 0 < spineDenom w := by omega
+  have hdiv : wordIntercept w % spineDenom w = 0 := by
+    refine Int.emod_eq_zero_of_dvd ⟨x, ?_⟩
+    rw [hD_eq]
+    exact heq.symm
+  have hDx : spineDenom w * x = wordIntercept w := by
+    rw [hD_eq]; exact heq
+  unfold isOnlyTrivialCycleWord at hok
+  simp only [Bool.not_eq_true', decide_eq_false_iff_not] at hok
+  by_cases h1 : wordIntercept w = spineDenom w
+  · left
+    have hmul : spineDenom w * (x - 1) = 0 := by rw [Int.mul_sub, Int.mul_one, hDx, h1]; omega
+    rcases Int.mul_eq_zero.mp hmul with hDz | hx1
+    · omega
+    · omega
+  · by_cases h2 : wordIntercept w = 2 * spineDenom w
+    · right
+      have hmul : spineDenom w * (x - 2) = 0 := by
+        rw [Int.mul_sub, hDx, h2]
+        have : spineDenom w * 2 = 2 * spineDenom w := Int.mul_comm _ _
+        omega
+      rcases Int.mul_eq_zero.mp hmul with hDz | hx2
+      · omega
+      · omega
+    · exfalso
+      exact hok ⟨hD_pos, hcpos, hdiv, h1, h2⟩
+
+/-- **Exhaustive Low-Period Positive Cycle Classification (`1 ≤ d ≤ 7`):**
+    Every positive integer `x > 0` satisfying `T^d(x) = x` for `1 ≤ d ≤ 7` lies on the
+    trivial cycle `x ∈ {1, 2}` (pure kernel verification, zero `native_decide`). -/
+public theorem collatz_no_nontrivial_positive_cycle_le_7 (d : Nat) (x : Int)
+    (hd1 : 1 ≤ d) (hd7 : d ≤ 7) (hx : 0 < x) (hcyc : iter T d x = x) :
+    x = 1 ∨ x = 2 := by
+  have hd_cases : d = 1 ∨ d = 2 ∨ d = 3 ∨ d = 4 ∨ d = 5 ∨ d = 6 ∨ d = 7 := by omega
+  rcases hd_cases with rfl | rfl | rfl | rfl | rfl | rfl | rfl
+  · exact absurd hcyc (collatz_no_positive_cycle_d1 x hx)
+  · exact no_nontrivial_cycle_of_check 2 (by decide) (by decide) x hx hcyc
+  · exact no_nontrivial_cycle_of_check 3 (by decide) (by decide) x hx hcyc
+  · exact no_nontrivial_cycle_of_check 4 (by decide) (by decide) x hx hcyc
+  · exact no_nontrivial_cycle_of_check 5 (by decide) (by decide) x hx hcyc
+  · exact no_nontrivial_cycle_of_check 6 (by decide) (by decide) x hx hcyc
+  · exact no_nontrivial_cycle_of_check 7 (by decide) (by decide) x hx hcyc
+
+/-- **No Odd-Period Positive Collatz Cycles Through `d ≤ 7`:**
+    No positive integer `x > 0` satisfies `T^d(x) = x` for any odd period `d ∈ {1, 3, 5, 7}`. -/
+public theorem collatz_no_positive_cycle_odd_le_7 (d : Nat) (x : Int)
+    (hd1 : 1 ≤ d) (hd7 : d ≤ 7) (hodd : d % 2 = 1) (hx : 0 < x) :
+    iter T d x ≠ x := by
+  intro hcyc
+  have hk : d = 2 * (d / 2) + 1 := by omega
+  have h12 := collatz_no_nontrivial_positive_cycle_le_7 d x hd1 hd7 hx hcyc
+  have horb := collatz_trivial_cycle_orbit (d / 2)
+  rcases h12 with rfl | rfl
+  · rw [hk, horb.2.1] at hcyc; omega
+  · rw [hk, horb.2.2.2] at hcyc; omega
+
+-- ----------------------------------------------------------------------------
+-- Catalytic Zero-Workspace Reversible Register Evaluation of Collatz Cylinder
+-- ----------------------------------------------------------------------------
+
+/-- **Catalytic Reversible Cylinder Theorem:**
+    Starting from any accumulator `acc` and ANY arbitrary pre-filled catalyst register `cat`,
+    the reversible register sequence `catCollatzStep d q r acc cat` cleanly adds
+    `T^d(2^d q + r)` into `acc` while restoring `cat` identically (zero clean workspace). -/
+public theorem collatz_catalytic_reversible_cylinder (d : Nat) (q r acc cat : Int) :
+    catCollatzStep d q r acc cat = (acc + iter T d ((2 : Int) ^ d * q + r), cat) := by
+  dsimp only [catCollatzStep]
+  rw [collatz_cylinder_affine_law d q r]
+  refine Prod.ext ?_ ?_ <;> omega
+
+
+-- ----------------------------------------------------------------------------
+-- v0.7.0 Unconditional 1-Odd-Step & 2-Odd-Step Positive Cycle Exclusion (All d ≥ 1)
+-- ----------------------------------------------------------------------------
+
+theorem wordIntercept_of_oddCount_one (w : List Bool) (ho : wordOddCount w = 1) :
+    ∃ a : Nat, a < w.length ∧ wordIntercept w = (2 : Int) ^ a := by
+  induction w with
+  | nil => simp [wordOddCount] at ho
+  | cons b ws ih =>
+    cases b
+    · simp only [wordOddCount, Bool.false_eq_true, ite_false, Nat.zero_add] at ho
+      have ⟨a, ha_lt, ha_eq⟩ := ih ho
+      refine ⟨a + 1, by simp; omega, ?_⟩
+      simp only [wordIntercept, ha_eq]
+      rw [Int.pow_succ, Int.mul_comm]
+    · simp only [wordOddCount, ite_true] at ho
+      have hws0 : wordOddCount ws = 0 := by omega
+      have hcw0 : wordIntercept ws = 0 := wordIntercept_zero_of_oddCount_zero ws hws0
+      refine ⟨0, by simp, ?_⟩
+      simp only [wordIntercept, hws0, hcw0]
+      rfl
+
+theorem wordIntercept_of_oddCount_two (w : List Bool) (ho : wordOddCount w = 2) :
+    ∃ a b : Nat, a < b ∧ b < w.length ∧
+      wordIntercept w = 3 * (2 : Int) ^ a + (2 : Int) ^ b := by
+  induction w with
+  | nil => simp [wordOddCount] at ho
+  | cons c ws ih =>
+    cases c
+    · simp only [wordOddCount, Bool.false_eq_true, ite_false, Nat.zero_add] at ho
+      have ⟨a, b, hab, hblt, heq⟩ := ih ho
+      refine ⟨a + 1, b + 1, by omega, by simp; omega, ?_⟩
+      simp only [wordIntercept, heq]
+      rw [Int.mul_add, Int.pow_succ, Int.pow_succ]
+      omega
+    · simp only [wordOddCount, ite_true] at ho
+      have hws1 : wordOddCount ws = 1 := by omega
+      have ⟨c0, hc0_lt, hc0_eq⟩ := wordIntercept_of_oddCount_one ws hws1
+      refine ⟨0, c0 + 1, by omega, by simp; omega, ?_⟩
+      simp only [wordIntercept, hws1, hc0_eq]
+      rw [Int.pow_zero, Int.pow_one, Int.mul_one, Int.pow_succ, Int.mul_comm ((2 : Int) ^ c0) 2]
+
+theorem odd_dvd_pow2_mul_nat (u : Nat) (hu_odd : u % 2 = 1) :
+    ∀ a m : Nat, u ∣ 2 ^ a * m → u ∣ m := by
+  intro a
+  induction a with
+  | zero => intro m h; simpa using h
+  | succ a ih =>
+    intro m ⟨k, hk⟩
+    have hpow : 2 ^ (a + 1) * m = 2 * (2 ^ a * m) := by
+      rw [Nat.pow_succ, Nat.mul_comm (2 ^ a) 2, Nat.mul_assoc]
+    rw [hpow] at hk
+    have hk_even : k % 2 = 0 := by
+      by_cases hko : k % 2 = 1
+      · have : (u * k) % 2 = 1 := by rw [Nat.mul_mod, hu_odd, hko]
+        omega
+      · omega
+    have hk2 : k = 2 * (k / 2) := by omega
+    have hcancel : 2 ^ a * m = u * (k / 2) := by
+      have : 2 * (2 ^ a * m) = 2 * (u * (k / 2)) := by
+        calc 2 * (2 ^ a * m) = u * k := hk
+        _ = u * (2 * (k / 2)) := by rw [← hk2]
+        _ = 2 * (u * (k / 2)) := by ac_rfl
+      omega
+    exact ih m ⟨k / 2, hcancel⟩
+
+theorem pow2_nat_mono_collatz {a b : Nat} (h : a ≤ b) : 2 ^ a ≤ 2 ^ b := by
+  induction b with
+  | zero =>
+    have ha0 : a = 0 := by omega
+    subst ha0
+    exact Nat.le_refl 1
+  | succ k ih =>
+    by_cases heq : a = k + 1
+    · subst heq; exact Nat.le_refl _
+    · have hrec := ih (by omega)
+      rw [Nat.pow_succ]
+      omega
+
+theorem pow2_nat_ge_of_ge (d : Nat) (hd : 5 ≤ d) : 16 ≤ 2 ^ (d - 1) := by
+  have : 2 ^ 4 ≤ 2 ^ (d - 1) := pow2_nat_mono_collatz (by omega)
+  have h16 : 2 ^ 4 = 16 := rfl
+  omega
+
+/-- **Unconditional 1-Odd-Step Positive-Cycle Exclusion (all periods `d ≥ 1`):**
+    The ONLY positive Collatz cycle with `oddCount T d x = 1` is the trivial cycle `1 ↔ 2` (`d = 2`). -/
+public theorem collatz_positive_cycle_one_odd (d : Nat) (x : Int)
+    (hd : 1 ≤ d) (hx : 0 < x) (hcyc : iter T d x = x) (ho : oddCount T d x = 1) :
+    d = 2 ∧ (x = 1 ∨ x = 2) := by
+  have heq := collatz_cycle_equation d x hcyc
+  have hsub := (collatz_positive_cycle_subcritical d x hd hx hcyc).1
+  have hlen : (parityWord T d x).length = d := collatz_parity_word_length T d x
+  have ⟨a, ha_lt, ha_eq⟩ := wordIntercept_of_oddCount_one (parityWord T d x) ho
+  rw [hlen] at ha_lt
+  rw [ho] at heq hsub
+  rw [ha_eq] at heq
+  have h31 : (3 : Int) ^ 1 = 3 := rfl
+  rw [h31] at heq hsub
+  -- Cast to Nat: (2^d - 3) * x.toNat = 2^a
+  have hd_ge2 : 2 ≤ d := by
+    by_cases hlt : d < 2
+    · have hd1 : d = 1 := by omega
+      subst hd1; simp at hsub
+    · omega
+  have hpow2_d : ((2 ^ d : Nat) : Int) = (2 : Int) ^ d := by simp
+  have hpow2_a : ((2 ^ a : Nat) : Int) = (2 : Int) ^ a := by simp
+  have h2d_ge4 : 4 ≤ 2 ^ d := by
+    have : 2 ^ 2 ≤ 2 ^ d := pow2_nat_mono_collatz hd_ge2
+    exact this
+  let u : Nat := 2 ^ d - 3
+  have hu_cast : (u : Int) = (2 : Int) ^ d - 3 := by dsimp only [u]; omega
+  have hx_cast : (x.toNat : Int) = x := by omega
+  have hnat_eq : u * x.toNat = 2 ^ a := by
+    have hint : ((u * x.toNat : Nat) : Int) = ((2 ^ a : Nat) : Int) := by
+      rw [Int.natCast_mul, hu_cast, hx_cast, hpow2_a, heq]
+    exact Int.ofNat.inj hint
+  have hu_odd : u % 2 = 1 := by
+    have h2d_even : 2 ^ d % 2 = 0 := by
+      have : 2 ^ d = 2 ^ (d - 1) * 2 := by
+        calc 2 ^ d = 2 ^ ((d - 1) + 1) := by congr 1; omega
+        _ = 2 ^ (d - 1) * 2 := Nat.pow_succ 2 (d - 1)
+      rw [this]; omega
+    dsimp only [u]; omega
+  have hu_dvd1 : u ∣ 1 := odd_dvd_pow2_mul_nat u hu_odd a 1 (by
+    rw [Nat.mul_one]; exact ⟨x.toNat, hnat_eq.symm⟩)
+  have hu1 : u = 1 := Nat.eq_one_of_dvd_one hu_dvd1
+  have h2d4 : 2 ^ d = 4 := by dsimp only [u] at hu1; omega
+  have hd2 : d = 2 := by
+    by_cases hge3 : 3 ≤ d
+    · have : 2 ^ 3 ≤ 2 ^ d := pow2_nat_mono_collatz hge3
+      have h8 : 2 ^ 3 = 8 := rfl
+      omega
+    · omega
+  refine ⟨hd2, ?_⟩
+  rw [hu1, Nat.one_mul] at hnat_eq
+  have ha_lt2 : a < 2 := by omega
+  by_cases ha0 : a = 0
+  · left
+    rw [ha0] at hnat_eq
+    have h1 : (2 : Nat) ^ 0 = 1 := rfl
+    rw [h1] at hnat_eq
+    omega
+  · right
+    have ha1 : a = 1 := by omega
+    rw [ha1] at hnat_eq
+    have h2 : (2 : Nat) ^ 1 = 2 := rfl
+    rw [h2] at hnat_eq
+    omega
+
+/-- **Unconditional 2-Odd-Step Positive-Cycle Exclusion (all periods `d ≥ 1`):**
+    The ONLY positive Collatz cycle with `oddCount T d x = 2` is the twice-traversed trivial cycle
+    `1 → 2 → 1 → 2 → 1` (`d = 4`, `x ∈ {1, 2}`). -/
+public theorem collatz_positive_cycle_two_odd (d : Nat) (x : Int)
+    (hd : 1 ≤ d) (hx : 0 < x) (hcyc : iter T d x = x) (ho : oddCount T d x = 2) :
+    d = 4 ∧ (x = 1 ∨ x = 2) := by
+  have heq := collatz_cycle_equation d x hcyc
+  have hsub := (collatz_positive_cycle_subcritical d x hd hx hcyc).1
+  have hlen : (parityWord T d x).length = d := collatz_parity_word_length T d x
+  have ⟨a, b, hab, hblt, hab_eq⟩ := wordIntercept_of_oddCount_two (parityWord T d x) ho
+  rw [hlen] at hblt
+  rw [ho] at heq hsub
+  rw [hab_eq] at heq
+  have h32 : (3 : Int) ^ 2 = 9 := rfl
+  rw [h32] at heq hsub
+  -- Deduce d ≥ 4 from 9 < 2^d
+  have hd_ge4 : 4 ≤ d := by
+    by_cases hlt : d < 4
+    · have hle3 : 2 ^ d ≤ 2 ^ 3 := pow2_nat_mono_collatz (by omega)
+      have h8 : 2 ^ 3 = 8 := rfl
+      have hcast : ((2 ^ d : Nat) : Int) = (2 : Int) ^ d := by simp
+      omega
+    · omega
+  have h2d_ge16 : 16 ≤ 2 ^ d := by
+    have : 2 ^ 4 ≤ 2 ^ d := pow2_nat_mono_collatz hd_ge4
+    exact this
+  let u : Nat := 2 ^ d - 9
+  let m : Nat := b - a
+  have hm_ge1 : 1 ≤ m := by omega
+  have hm_le : m ≤ d - 1 := by omega
+  have hba : b = a + m := by omega
+  have hpow2_d : ((2 ^ d : Nat) : Int) = (2 : Int) ^ d := by simp
+  have hu_cast : (u : Int) = (2 : Int) ^ d - 9 := by dsimp only [u]; omega
+  have hx_cast : (x.toNat : Int) = x := by omega
+  have hnat_eq : u * x.toNat = 2 ^ a * (3 + 2 ^ m) := by
+    have hint : ((u * x.toNat : Nat) : Int) = ((2 ^ a * (3 + 2 ^ m) : Nat) : Int) := by
+      rw [Int.natCast_mul, hu_cast, hx_cast, heq]
+      rw [hba, Int.pow_add]
+      push_cast
+      rw [Int.mul_add, Int.mul_comm ((2 : Int) ^ a) 3]
+    exact Int.ofNat.inj hint
+  have hu_odd : u % 2 = 1 := by
+    have h2d_even : 2 ^ d % 2 = 0 := by
+      have : 2 ^ d = 2 ^ (d - 1) * 2 := by
+        calc 2 ^ d = 2 ^ ((d - 1) + 1) := by congr 1; omega
+        _ = 2 ^ (d - 1) * 2 := Nat.pow_succ 2 (d - 1)
+      rw [this]; omega
+    dsimp only [u]; omega
+  have hu_dvd : u ∣ 3 + 2 ^ m :=
+    odd_dvd_pow2_mul_nat u hu_odd a (3 + 2 ^ m) ⟨x.toNat, hnat_eq.symm⟩
+  have hpos_rhs : 0 < 3 + 2 ^ m := Nat.add_pos_left (by decide) (2 ^ m)
+  have hu_le : u ≤ 3 + 2 ^ m := Nat.le_of_dvd hpos_rhs hu_dvd
+  -- Rule out d ≥ 5: 2^d - 9 > 3 + 2^(d-1) ≥ 3 + 2^m
+  have hd4 : d = 4 := by
+    by_cases hge5 : 5 ≤ d
+    · exfalso
+      have h16 : 16 ≤ 2 ^ (d - 1) := pow2_nat_ge_of_ge d hge5
+      have hm_pow : 2 ^ m ≤ 2 ^ (d - 1) := pow2_nat_mono_collatz hm_le
+      have h2d_split : 2 ^ d = 2 ^ (d - 1) * 2 := by
+        calc 2 ^ d = 2 ^ ((d - 1) + 1) := by congr 1; omega
+        _ = 2 ^ (d - 1) * 2 := Nat.pow_succ 2 (d - 1)
+      dsimp only [u] at hu_le
+      omega
+    · omega
+  refine ⟨hd4, ?_⟩
+  -- For d = 4: u = 7, m ∈ {1, 2, 3}, only m = 2 gives 7 ∣ (3 + 2^m)
+  have hu7 : u = 7 := by dsimp only [u]; rw [hd4]
+  rw [hu7] at hu_dvd hnat_eq
+  have hm2 : m = 2 := by
+    by_cases hm1 : m = 1
+    · rw [hm1] at hu_dvd; have := Nat.mod_eq_zero_of_dvd hu_dvd; simp at this
+    · by_cases hm2' : m = 2
+      · exact hm2'
+      · have hm3 : m = 3 := by omega
+        rw [hm3] at hu_dvd; have := Nat.mod_eq_zero_of_dvd hu_dvd; simp at this
+  rw [hm2] at hnat_eq
+  have h7 : 3 + 2 ^ 2 = 7 := rfl
+  rw [h7, Nat.mul_comm (2 ^ a) 7] at hnat_eq
+  have hx_pow : x.toNat = 2 ^ a := Nat.eq_of_mul_eq_mul_left (by decide : 0 < 7) hnat_eq
+  have ha_lt2 : a < 2 := by omega
+  by_cases ha0 : a = 0
+  · left
+    rw [ha0] at hx_pow
+    have h1 : (2 : Nat) ^ 0 = 1 := rfl
+    rw [h1] at hx_pow
+    omega
+  · right
+    have ha1 : a = 1 := by omega
+    rw [ha1] at hx_pow
+    have h2 : (2 : Nat) ^ 1 = 2 := rfl
+    rw [h2] at hx_pow
+    omega
 
 end FormalAtlas

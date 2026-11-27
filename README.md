@@ -5,8 +5,8 @@
 ### *An audited, ranked, research-grade dossier & Lean 4.35.0 formal core of humanity's open mathematical problems.*
 
 [![CI](https://github.com/0thernes/unsolved-mathematics/actions/workflows/ci.yml/badge.svg)](https://github.com/0thernes/unsolved-mathematics/actions/workflows/ci.yml)
-[![Version](https://img.shields.io/badge/version-0.6.0-blue.svg)](VERSION)
-[![Lean](https://img.shields.io/badge/Lean-4.35.0%20(6--kernel%20·%2053%20thms%20·%208%20domains)-7c3aed.svg)](lean/STATEMENT_FIDELITY.md)
+[![Version](https://img.shields.io/badge/version-0.7.0-blue.svg)](VERSION)
+[![Lean](https://img.shields.io/badge/Lean-4.35.0%20(6--kernel%20·%2066%20thms%20·%208%20domains)-7c3aed.svg)](lean/STATEMENT_FIDELITY.md)
 [![Citations](https://img.shields.io/badge/API--verified%20citations-445%20(0%20retracted)-10b981.svg)](data/citation-verification-log.json)
 [![Paper](https://img.shields.io/badge/White%20Paper-AMS--LaTeX%20PDF-b45309.svg)](paper/Donahue_2026_unsolved_mathematics_atlas.pdf)
 [![Timestamps](https://img.shields.io/badge/Timestamps-RFC3161%20%2B%20Bitcoin%20OTS-0f766e.svg)](data/MANIFEST.sha256)
@@ -18,7 +18,7 @@ key papers with primary-source verification & retraction flags, key mathematicia
 FAIR RO-Crate 1.1 & Croissant 1.0 metadata, dual RFC 3161 + Bitcoin OpenTimestamps manifest proofs, a compiled AMS-LaTeX white paper, and a standalone
 eight-domain, six-kernel Lean 4.35.0 formal verification core (`autoImplicit = false`).**
 
-`v0.6.0` · branch `main` · **106 problems** · **53 Lean 4 theorems + 28 witnesses/refutations across 8 domains (81 decls; 0 `sorry` in proof modules, while `lean/Challenge.lean` holds the 53 `sorry`-stated comparator specifications by design; 6 kernels + live negative rejection)** · author **Alexander S. Donahue** ([ORCID 0009-0006-8168-9648](https://orcid.org/0009-0006-8168-9648)) · Status: `active`
+`v0.7.0` · branch `main` · **106 problems** · **66 Lean 4 theorems + 36 witnesses/refutations across 8 domains (102 decls; 0 `sorry` in proof modules, while `lean/Challenge.lean` holds the 66 `sorry`-stated comparator specifications by design; 6 kernels + live negative rejection)** · author **Alexander S. Donahue** ([ORCID 0009-0006-8168-9648](https://orcid.org/0009-0006-8168-9648)) · Status: `active`
 
 [Live Web Atlas & Blueprint](https://0thernes.github.io/unsolved-mathematics/) · [Master Ranking](RANKING.md) · [White Paper PDF](paper/Donahue_2026_unsolved_mathematics_atlas.pdf) · [Formal Core (`lean/`)](lean/STATEMENT_FIDELITY.md) · [Cross-Atlas Audit (1,900)](docs/CROSS_ATLAS_AUDIT_2026-11-25.md) · [Claims Ledger](CLAIMS.md) · [Limitations](LIMITATIONS.md) · [Errata](ERRATA.md) · [Hardening Audit](docs/reviews/2026-11-25-three-cycle-hardening-audit.md) · [Replication](REPLICATION.md) · [Indexes](docs/indexes/)
 
@@ -45,7 +45,7 @@ For **every** problem you get a self-contained 7-section dossier:
 - 🧠 **`mathematicians.md`** — the top minds who shaped the problem
 - 🎯 **`status.md`** — the live mathematical frontier (updated through November 2026)
 - 🤖 **`rag/`** — deterministic chunked corpus (`3,763` unique chunks) with zero-dependency BM25 retrieval
-- 🔬 **`lean/`** — standalone zero-Mathlib Lean 4.35.0 formal core (`autoImplicit = false`) proving **53 structural theorems** + **12 non-vacuity witnesses** + **16 adversarial false-variant refutations** (**81 audited declarations**) across **8 open-problem domains**: Collatz (incl. positive-cycle subcriticality), Erdős–Straus, **complete Lonely Runner through $n = 3$ (all positive triples)**, Brocard ($n \le 20$), Primes/Twin Primes, Goldbach ($4 \le n \le 100$), **Euclid's general even perfect number theorem (all $p \ge 2$)** & Mersenne primes, and **exact Ramsey $R(3,3)=6$ and $R(3,4)=9$** (0 `sorry`, 0 `admit`, 0 `native_decide` in the proof modules; `lean/Challenge.lean` is the `sorry`-stated comparator specification; standard axioms only, 6 independent kernels + live negative kernel rejection). These are classical or elementary results; none settles an open conjecture.
+- 🔬 **`lean/`** — standalone zero-Mathlib Lean 4.35.0 formal core (`autoImplicit = false`) proving **66 structural theorems** + **16 non-vacuity witnesses** + **20 adversarial false-variant refutations** (**102 audited declarations**, 14 zero-axiom) across **8 open-problem domains**: Collatz (28 thms, incl. Fine–Wilf Odd-Unit-Lock spine valuation ceiling, 2-adic isometry, exhaustive $d \le 7$ & unconditional 1-/2-odd-step positive-cycle exclusion, catalytic cylinder), Erdős–Straus (5), **constructive Lonely Runner through $n = 3$** (8, classical 4-runner case), Brocard $n \le 20$ (7), Primes/Twin Primes (4), Goldbach $4 \le n \le 100$ (3), **Complete Euclid–Euler biconditional even perfect number theorem (`divSum_eq_divSumLin` proved $\forall n$) & Euler's 1750 Mersenne prime divisor congruence $2p \mid (q-1)$** (7), and **exact Ramsey $R(3,3)=6$ and $R(3,4)=9$** (4) (0 `sorry`, 0 `admit`, 0 `native_decide` in the proof modules; `lean/Challenge.lean` is the `sorry`-stated comparator specification; standard axioms only, 6 independent kernels + live negative kernel rejection). These are classical, elementary, or bounded structural results; none settles an open conjecture.
 - 📄 **`paper/`** — publication-grade AMS-LaTeX white paper ([PDF](paper/Donahue_2026_unsolved_mathematics_atlas.pdf) + clean-room-verified `arxiv_submission.tar.gz`)
 - 🌐 **FAIR, Timestamps & Interactive Blueprint** — [RO-Crate 1.1](ro-crate-metadata.json), [MLCommons Croissant 1.0](croissant.json), dual DigiCert RFC 3161 (`.tsr`) + Bitcoin OpenTimestamps (`.ots`) proofs over `data/MANIFEST.sha256`, and live GitHub Pages [Atlas Explorer & 8-Domain Proof Blueprint](https://0thernes.github.io/unsolved-mathematics/blueprint.html)
 
@@ -88,7 +88,7 @@ python scripts/build_indexes.py
 python rag/build_corpus.py
 python scripts/build_data_manifest.py
 
-# Build and verify the Lean 4.35.0 formal core (zero Mathlib, autoImplicit = false, 8 domains, 81 audited declarations)
+# Build and verify the Lean 4.35.0 formal core (zero Mathlib, autoImplicit = false, 8 domains, 102 audited declarations)
 cd lean
 lake build Challenge Solution NonVacuity Adversarial
 lake env lean VerifyAxioms.lean
@@ -228,6 +228,7 @@ by `scripts/build_indexes.py`):
 - 👤 [Originators index](docs/indexes/originators.md) — every mathematician → the problems they posed
 - ✅ [Verification dashboard](docs/indexes/verification.md) — provenance of all ~2,650 citations
 - 📖 [Glossary](docs/glossary.md) — the recurring concepts that thread the dossiers
+- 🌐 [External research programs](docs/external/PROGRAMS.md) — daily mirror of all [Left to Solve](https://lefttosolve.com/programs) programs (Erdős, OEIS, Wikipedia, Millennium, Green's 100, Kourovka, …) with an [Atlas crosswalk](docs/external/CROSSWALK.md); third-party data, review signals only, never auto-changes an Atlas status
 
 ## Repository map
 
@@ -239,7 +240,8 @@ unsolved-mathematics/
 ├── PHILOSOPHY.md             ← why this exists and the principles behind it
 ├── data/
 │   ├── problems.yaml         ← THE single source of truth
-│   └── problems.json         ← generated machine registry (computed ranks/CSS)
+│   ├── problems.json         ← generated machine registry (computed ranks/CSS)
+│   └── external/             ← daily Left to Solve program mirror + crosswalk (third-party)
 ├── schema/                   ← JSON Schemas for problems, papers, people
 ├── scripts/                  ← generate.py (build engine), validate, helpers
 ├── problems/
@@ -253,27 +255,27 @@ unsolved-mathematics/
 │   └── kanban/               ← the research board
 ├── AUTHORS.md · SUBMISSIONS.md · ERRATA.md  ← credit · outreach · post-release errata
 ├── ro-crate-metadata.json · croissant.json  ← FAIR RO-Crate 1.1 & Croissant 1.0 metadata
-├── lean/                     ← standalone 8-domain, 6-kernel Lean 4.35.0 core (53 thms + 28 checks)
+├── lean/                     ← standalone 8-domain, 6-kernel Lean 4.35.0 core (66 thms + 36 checks)
 ├── paper/                    ← compiled AMS-LaTeX white paper PDF & arXiv source bundle
 └── .github/                  ← CI/CD, Pages blueprint, SLSA releases, 10-class issue forms
 ```
 
 ## Formal Verification Core (`lean/`)
 
-`v0.6.0` provides a **zero-Mathlib, pure Lean 4.35.0** formal package (`autoImplicit = false`) verifying **53 headline theorems, 12 concrete non-vacuity witnesses, and 16 explicit adversarial false-variant refutations** (**81 audited declarations**, 13 requiring zero axioms) across **eight** canonical open-problem domains:
+`v0.7.0` provides a **zero-Mathlib, pure Lean 4.35.0** formal package (`autoImplicit = false`, commit `eb6cafb7`) verifying **66 headline theorems, 16 concrete non-vacuity witnesses, and 20 explicit adversarial false-variant refutations** (**102 audited declarations**, 14 requiring zero axioms) across **eight** canonical open-problem domains:
 
-- **Collatz Conjecture (18 theorems):** affine cylinder law, exact intercept law, Terras parity-word bijection, descent certificate soundness, no finite subcritical cover, spine ladder identity, unconditional **Positivity Localization** ($\rho_w \le -1$), the **$3n-1$ sibling comparison** (`thm_collatz_epsilon_invariance_barrier`: the $3n-1$ map shares the Terras bijection and has positive cycles at `5` and `17`; the inference that arguments blind to the sign of $\varepsilon$ cannot settle $3n+1$ is a heuristic, not a formalized theorem), Böhm–Sontacchi exact cycle equation, parity-word cocycle law, negative cycles of true $3n+1$ (`-5`, `-17`), zero fixed point, intercept non-negativity, parity-word length, plus **positive-cycle obstructions**: every positive cycle has $\ge 1$ odd step, positive intercept $c(w) > 0$, strict subcriticality $3^o < 2^d \land 2^d - 3^o \le c(w)$, and zero length-1 positive fixed points.
+- **Collatz Conjecture (28 theorems):** affine cylinder law, exact intercept law, Terras parity-word bijection, descent certificate soundness, no finite subcritical cover, spine ladder identity, unconditional **Positivity Localization** ($\rho_w \le -1$), the **$3n-1$ sibling comparison** (`thm_collatz_epsilon_invariance_barrier`: the $3n-1$ map shares the Terras bijection and has positive cycles at `5` and `17`; the inference that arguments blind to the sign of $\varepsilon$ cannot settle $3n+1$ is a heuristic, not a formalized meta-theorem), Böhm–Sontacchi exact cycle equation, parity-word cocycle law, negative cycles of true $3n+1$ (`-5`, `-17`), zero/intercept/length invariants, positive-cycle subcriticality ($3^o < 2^d$), **unconditional 1- & 2-odd-step positive-cycle exclusion for ALL $d \ge 1$**, **2-adic cylinder isometry**, **periodic spine congruence**, **Odd-Unit-Lock exact periodic-echo valuation isometry** ($v_2(\rho_w - \rho_v) = \operatorname{lcp}(w^\infty, v^\infty)$), **unconditional Fine–Wilf spine valuation ceiling** ($v_2(\rho_w - \rho_v) < |w| + |v| - \gcd(|w|,|v|)$), **exhaustive $1 \le d \le 7$ positive-cycle classification & odd-period exclusion**, and **zero-workspace catalytic reversible cylinder evaluation**.
 - **Erdős–Straus Conjecture (5 theorems):** Mordell mod-840 covering (`834/840 = 99.286%`), multiplicative closure (prime reduction), cyclic symmetry, base range $2 \le n \le 30$, and all 6 smallest exceptional squares $\{121, 169, 289, 361, 529, 841\}$.
-- **Lonely Runner Conjecture (8 theorems — complete through $n = 3$):** all-$n$ rational sharpness $\delta \le 1/(n+1)$, constructive base cases $n \in \{1, 2\}$, symmetry group (speed scaling, period shift, time reversal), the $t = 1/4$ family (`thm_lonely_runner_n3_nondiv4`: speed triples with no speed divisible by 4, i.e. 27 of the 64 residue classes of speed triples mod 4), and a **4-runner Lonely Runner theorem (`thm_lonely_runner_n3`) for all positive integer speed triples** via 2-adic strong induction, quarter-shift counting, Bézout congruence, and exact rational nudging. The 4-runner case is a classical result (Betke–Wills 1972; Cusick 1973). The conjecture itself is proved for up to 13 runners in recent preprints (Rosenfeld, arXiv:2509.14111, 8 runners; Trakulthongchai, arXiv:2511.22427, 9 and 10; Sungkawichai and Trakulthongchai, arXiv:2604.23906, 11 to 13), well beyond the cases formalized here.
+- **Lonely Runner Conjecture (8 theorems — complete through $n = 3$):** all-$n$ rational sharpness $\delta \le 1/(n+1)$, constructive base cases $n \in \{1, 2\}$, symmetry group (speed scaling, period shift, time reversal), the $t = 1/4$ family (`thm_lonely_runner_n3_nondiv4`: speed triples with no speed divisible by 4, i.e. 27 of the 64 residue classes of speed triples mod 4), and a **4-runner Lonely Runner theorem (`thm_lonely_runner_n3`) for all positive integer speed triples** via 2-adic strong induction, quarter-shift counting, Bézout congruence, and exact rational nudging. The 4-runner case is a classical result (Betke–Wills 1972; Cusick 1973); the conjecture itself is proved for up to 13 runners in recent preprints (Rosenfeld, `arXiv:2509.14111`, 8 runners; Trakulthongchai, `arXiv:2511.22427`, 9 and 10; Sungkawichai & Trakulthongchai, `arXiv:2604.23906`, 11 to 13), well beyond the cases formalized here.
 - **Brocard's Problem (7 theorems):** Brown solutions `(4,5), (5,11), (7,71)`, mod-3/4/10 modular invariants, and exhaustive classification through $n \le 20$ ($20!+1 = 2{,}432{,}902{,}008{,}176{,}640{,}001$, zero `native_decide`).
 - **Primes & Twin Primes (4 theorems):** Euclid's infinitude of primes, arbitrary prime gaps via $(k+1)!+2$, oddness of primes $\ge 3$, and twin-prime mod-6 rigidity ($p \equiv 5 \pmod 6$ for $p \ge 4$).
 - **Goldbach's Conjecture (3 theorems):** exhaustive certified prime-pair decomposition for all even $4 \le n \le 100$, odd binary prime-sum obstruction ($p=2 \lor q=2$), and binary Goldbach failure at $11$.
-- **Odd Perfect Numbers & Mersenne Primes (4 theorems):** algebraic proof of Mersenne prime exponent necessity ($2^a - 1 \mid 2^{ab} - 1$), first four even perfect numbers $\{6, 28, 496, 8128\}$, exhaustive odd-perfect exclusion $n \le 100$, and **Euclid's general Even Perfect Number Theorem (`thm_euclid_even_perfect`) for all $p \ge 2$** proved directly against unconditionally exact `isqrt`/`divSum`.
+- **Odd Perfect Numbers & Mersenne Primes (7 theorems):** algebraic proof of Mersenne prime exponent necessity ($2^a - 1 \mid 2^{ab} - 1$), first four even perfect numbers $\{6, 28, 496, 8128\}$, exhaustive odd-perfect exclusion $n \le 100$, **Complete Euclid–Euler Biconditional Theorem** (`thm_euclid_even_perfect`, `thm_euler_even_perfect_converse`, `thm_euclid_euler_even_perfect_iff`) for ALL even perfect numbers (with `divSum_eq_divSumLin` proved unconditionally $\forall n \in \mathbb{N}$), and **Euler's 1750 Mersenne Prime Divisor Congruence (`thm_mersenne_prime_divisor_congruence`: $2p \mid q - 1$)** via Fermat's Little Theorem.
 - **Ramsey Theory (4 theorems):** exact first-principles determinations of **$R(3,3) = 6$** ($K_6$ pigeonhole + $C_5$ on $K_5$) and **$R(3,4) = 9$** (Handshaking Lemma $9 \times 3 = 27$ odd contradiction on $K_9$ + explicit symmetric circulant $C_8(1,4,7)$ coloring on $K_8$).
 
-The 53 headline theorems are checked against the specifications in [`lean/Challenge.lean`](lean/Challenge.lean) by `lake comparator --paranoid` (`lean/comparator.json` lists exactly these 53); the 12 witnesses and 16 refutations are covered by `lake build`, `leanchecker-paranoid --fresh` and the six-kernel `lake check --paranoid`. The theorems are paired with concrete witnesses in [`lean/NonVacuity.lean`](lean/NonVacuity.lean), false-variant refutations in [`lean/Adversarial.lean`](lean/Adversarial.lean), and live negative kernel rejection (`scripts/test_lean_negative.py`), axiom-checked by [`lean/VerifyAxioms.lean`](lean/VerifyAxioms.lean), documented in [`lean/STATEMENT_FIDELITY.md`](lean/STATEMENT_FIDELITY.md), and replayed across all 6 independent Lean 4.35.0 kernels ([`lean/six_kernel_audit.txt`](lean/six_kernel_audit.txt) + `bwrap`-sandboxed Ubuntu CI). **None of these theorems claims to resolve the underlying open conjectures.**
+The 66 headline theorems are checked against the specifications in [`lean/Challenge.lean`](lean/Challenge.lean) by `lake comparator --paranoid` (`lean/comparator.json` lists exactly these 66); the 16 witnesses and 20 refutations are covered by `lake build`, `leanchecker-paranoid --fresh`, and the six-kernel `lake check --paranoid`. The theorems are paired with concrete witnesses in [`lean/NonVacuity.lean`](lean/NonVacuity.lean), false-variant refutations in [`lean/Adversarial.lean`](lean/Adversarial.lean), and live negative kernel rejection (`scripts/test_lean_negative.py`), axiom-checked by [`lean/VerifyAxioms.lean`](lean/VerifyAxioms.lean), documented in [`lean/STATEMENT_FIDELITY.md`](lean/STATEMENT_FIDELITY.md), and replayed across all 6 independent Lean 4.35.0 kernels ([`lean/six_kernel_audit.txt`](lean/six_kernel_audit.txt) + `bwrap`-sandboxed Ubuntu CI). **None of these theorems claims to resolve the underlying open conjectures.**
 
-An independent statement audit on 2026-11-26 ([audit log](https://github.com/0thernes/0thernes-research-archive/blob/main/docs/reviews/2026-11-26-statement-audit.md)) covered `v0.5.0` (commit `0604df5`, 69 declarations). It found that the Lean statements read correctly against their definitions, with one caveat (the perfect-number results are stated for the computational `divSum`, whose agreement with $\sigma(n)$ is checked in pytest, not in Lean), that the results are classical or elementary, and that three prose claims needed correction: the $\varepsilon$-invariance wording, the Lonely Runner residue-class count (27 of 64, not 7/8) and the `sorry` count. The 12 declarations added in `v0.6.0` (including `thm_lonely_runner_n3`, `thm_euclid_even_perfect` and $R(3,4)=9$) were not part of that audit. See [`ERRATA.md`](ERRATA.md).
+An independent statement audit on 2026-11-26 ([audit log](https://github.com/0thernes/0thernes-research-archive/blob/main/docs/reviews/2026-11-26-statement-audit.md)) covered `v0.5.0` (commit `0604df5`, 69 declarations) and flagged six items (`3n-1` barrier overstatement, Lonely Runner 13-runner prior art & 27/64 mod-4 coverage, `Challenge.lean` `sorry` disclosure, `Collatz.lean` docstrings, and the missing Lean `divSum = ∑_{d|n} d` lemma). All six items are resolved in `v0.7.0` (including the unconditional Lean proof `divSum_eq_divSumLin` in `PerfectNumbers.lean`); the 33 declarations added in `v0.6.0`–`v0.7.0` have not yet undergone a separate independent statement audit. See [`ERRATA.md`](ERRATA.md).
 
 ### 5-Second Proof Audit (Verbatim `#print axioms`, CI-Checked by `scripts/check_readme_axioms.py`)
 
@@ -297,6 +299,16 @@ An independent statement audit on 2026-11-26 ([audit log](https://github.com/0th
 'FormalAtlas.Challenge.thm_collatz_positive_cycle_intercept_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
 'FormalAtlas.Challenge.thm_collatz_positive_cycle_subcritical' depends on axioms: [propext, Classical.choice, Quot.sound]
 'FormalAtlas.Challenge.thm_collatz_no_positive_cycle_d1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Challenge.thm_collatz_positive_cycle_one_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Challenge.thm_collatz_positive_cycle_two_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Challenge.thm_collatz_2adic_isometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Challenge.thm_collatz_periodic_spine_congruence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Challenge.thm_collatz_odd_unit_lock_valuation_isometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Challenge.thm_collatz_fine_wilf_spine_ceiling' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Challenge.thm_collatz_trivial_cycle_orbit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Challenge.thm_collatz_no_nontrivial_positive_cycle_le_7' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Challenge.thm_collatz_no_positive_cycle_odd_le_7' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Challenge.thm_collatz_catalytic_reversible_cylinder' depends on axioms: [propext, Classical.choice, Quot.sound]
 'FormalAtlas.Challenge.thm_erdos_straus_mordell_840' depends on axioms: [propext, Quot.sound]
 'FormalAtlas.Challenge.thm_erdos_straus_multiplicative_closure' depends on axioms: [propext]
 'FormalAtlas.Challenge.thm_erdos_straus_mordell_exceptions_small' depends on axioms: [propext, Quot.sound]
@@ -328,6 +340,9 @@ An independent statement audit on 2026-11-26 ([audit log](https://github.com/0th
 'FormalAtlas.Challenge.thm_perfect_numbers_first_four' does not depend on any axioms
 'FormalAtlas.Challenge.thm_no_odd_perfect_le_100' depends on axioms: [propext, Quot.sound]
 'FormalAtlas.Challenge.thm_euclid_even_perfect' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Challenge.thm_euler_even_perfect_converse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Challenge.thm_euclid_euler_even_perfect_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Challenge.thm_mersenne_prime_divisor_congruence' depends on axioms: [propext, Classical.choice, Quot.sound]
 'FormalAtlas.Challenge.thm_ramsey_R33_upper' depends on axioms: [propext, Quot.sound]
 'FormalAtlas.Challenge.thm_ramsey_R33_lower' depends on axioms: [propext, Quot.sound]
 'FormalAtlas.Challenge.thm_ramsey_R34_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
@@ -344,6 +359,10 @@ An independent statement audit on 2026-11-26 ([audit log](https://github.com/0th
 'FormalAtlas.NonVacuity.witness_lonely_runner_n3_concrete' does not depend on any axioms
 'FormalAtlas.NonVacuity.witness_lonely_runner_n3_div4' does not depend on any axioms
 'FormalAtlas.NonVacuity.witness_euclid_perfect_28' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.NonVacuity.witness_mersenne_divisor_23_of_M11' depends on axioms: [propext, Quot.sound]
+'FormalAtlas.NonVacuity.witness_collatz_two_odd_trivial_cycle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.NonVacuity.witness_odd_unit_lock_fine_wilf' does not depend on any axioms
+'FormalAtlas.NonVacuity.witness_catalytic_cylinder' depends on axioms: [propext, Classical.choice, Quot.sound]
 'FormalAtlas.Adversarial.adv_erdos_straus_zero_denom_blocked' depends on axioms: [propext, Quot.sound]
 'FormalAtlas.Adversarial.adv_erdos_straus_wrong_witness_refuted' does not depend on any axioms
 'FormalAtlas.Adversarial.adv_collatz_no_universal_descent_d1' depends on axioms: [propext, Classical.choice, Quot.sound]
@@ -360,6 +379,10 @@ An independent statement audit on 2026-11-26 ([audit log](https://github.com/0th
 'FormalAtlas.Adversarial.adv_goldbach_requires_even' depends on axioms: [propext, Quot.sound]
 'FormalAtlas.Adversarial.adv_ramsey_R34_not_le_8' depends on axioms: [propext, Quot.sound]
 'FormalAtlas.Adversarial.adv_collatz_no_d1_positive_fixed_point' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Adversarial.adv_collatz_no_nontrivial_low_odd_cycle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Adversarial.adv_even_non_mersenne_not_perfect' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Adversarial.adv_collatz_no_odd_period_le_7' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAtlas.Adversarial.adv_collatz_distinct_spines_bounded_v2' depends on axioms: [propext, Classical.choice, Quot.sound]
 ```
 <!-- AXIOMS:END -->
 
@@ -377,7 +400,7 @@ See [`PHILOSOPHY.md`](PHILOSOPHY.md), [`docs/methodology/SOURCING.md`](docs/meth
 
 ## Maintenance Status
 
-**Status: active** (`v0.6.0`, updated `2026-11-26`). Planned milestones live in [`ROADMAP.md`](ROADMAP.md), operational tasks in [`docs/kanban/KANBAN.md`](docs/kanban/KANBAN.md), errata in [`ERRATA.md`](ERRATA.md), and verification history in [`docs/run-log.md`](docs/run-log.md) and [`CHANGELOG.md`](CHANGELOG.md).
+**Status: active** (`v0.7.0`, updated `2026-11-26`). Planned milestones live in [`ROADMAP.md`](ROADMAP.md), operational tasks in [`docs/kanban/KANBAN.md`](docs/kanban/KANBAN.md), errata in [`ERRATA.md`](ERRATA.md), literature & export-control audit in [`docs/LITERATURE_AND_EXPORT_CONTROL.md`](docs/LITERATURE_AND_EXPORT_CONTROL.md), and verification history in [`docs/run-log.md`](docs/run-log.md) and [`CHANGELOG.md`](CHANGELOG.md).
 
 ## Author & Accreditation
 

@@ -11,7 +11,7 @@ point here. Edit this file, never the pointers.
 - **Purpose:** Reproducible, ranked, research-grade atlas of 106 open mathematical problems across 38 fields, paired with a standalone zero-Mathlib multi-kernel Lean 4.35.0 formal verification core (`lean/`), primary-source citation & Crossref retraction auditing, a deterministic BM25/dense RAG corpus, an interactive proof blueprint (`_site/blueprint.html`), and a compiled AMS-LaTeX technical white paper (`paper/`).
 - **Owner:** Alexander S. Donahue (`@0thernes`, ORCID `0009-0006-8168-9648`, independent researcher — do NOT use `0thernes LLC` until an entity is legally formed)
 - **Manifest:** `repo.yaml` (Build Standard for LLMs `v1.2.0`)
-- **Version:** `VERSION` (single source of truth; verified equal to `data/problems.yaml`, `CITATION.cff`, `pyproject.toml`, `lean/lakefile.toml`, and `lean/formalization.yaml`)
+- **Version:** `VERSION` (single source of truth; verified equal to `data/problems.yaml`, `CITATION.cff`, `pyproject.toml`, `lean/lakefile.toml`, `lean/formalization.yaml`, `ro-crate-metadata.json`, and `croissant.json`)
 - **Stack:** Python 3.11+ (`PyYAML`, `jsonschema`, `pytest`, `hypothesis`, `ruff`, `mypy`) + Lean 4.35.0 (`lean/`, zero Mathlib, 6-kernel `lake check --paranoid` + `lake comparator --paranoid`) + AMS-LaTeX (`tectonic`)
 - **Layout:**
   - `data/` — canonical registry (`problems.yaml`), generated `problems.json`, `dossier-status.json`, `citation-verification-log.json`, `retraction-audit.json`, `MANIFEST.sha256` (+ DigiCert RFC 3161 `.tsr` & Bitcoin OpenTimestamps `.ots` proofs)

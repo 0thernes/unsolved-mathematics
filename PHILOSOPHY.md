@@ -51,7 +51,7 @@ rebuild is a knowledge base you cannot trust. Anyone can clone the repo, run one
 command, and get *byte-identical* generated artifacts.
 
 ### 5. Ranking is an argument, not a verdict
-Ordering 40 of the deepest questions ever asked is inherently presumptuous. We
+Ordering 106 of the deepest questions ever asked is inherently presumptuous. We
 do it anyway — because a defensible, transparent ordering is more useful than no
 ordering — but we treat the ranking as a **falsifiable claim**. Disagree with
 where the Jacobian Conjecture sits? Change its `difficulty` in the registry,

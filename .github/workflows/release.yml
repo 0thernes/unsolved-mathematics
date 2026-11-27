@@ -1,3 +1,5 @@
+# Runs after a v* tag is pushed. Publishes CHANGELOG notes, artifacts, dual RFC 3161/OTS timestamps,
+# SHA256SUMS, and (on public repos) SLSA build provenance attestations. Never gates a push.
 name: Release & SLSA Provenance
 
 on:
@@ -15,7 +17,7 @@ jobs:
     name: Package · SHA256SUMS · SLSA Attestation · GitHub Release
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
@@ -29,7 +31,7 @@ jobs:
           fi
 
       - name: Set up Python 3.12 & verify integrity before packaging
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: "3.12"
       - run: |
@@ -63,7 +65,8 @@ jobs:
           cat dist/SHA256SUMS
 
       - name: Generate SLSA build provenance attestation
-        uses: actions/attest-build-provenance@v2
+        uses: actions/attest-build-provenance@v4
+        continue-on-error: true
         with:
           subject-path: |
             dist/unsolved-mathematics-*.tar.gz
@@ -75,16 +78,21 @@ jobs:
             dist/Donahue_2026_unsolved_mathematics_atlas-*.pdf
             dist/arxiv_submission-*.tar.gz
 
+      - name: Extract release notes from CHANGELOG.md
+        run: |
+          tag="${GITHUB_REF_NAME#v}"
+          awk -v v="$tag" '$0 ~ "^## \\[" v "\\]" {f=1; next} f && /^## \[/ {exit} f' CHANGELOG.md > notes.md
+          [ -s notes.md ] || echo "Release $GITHUB_REF_NAME" > notes.md
+          {
+            echo
+            echo "Verify release checksums and SLSA provenance:"
+            echo "\`\`\`bash"
+            echo "sha256sum -c SHA256SUMS"
+            echo "gh attestation verify unsolved-mathematics-${GITHUB_REF_NAME}.tar.gz --repo $GITHUB_REPOSITORY"
+            echo "\`\`\`"
+          } >> notes.md
+
       - name: Publish GitHub Release
-        uses: softprops/action-gh-release@v2
-        with:
-          generate_release_notes: true
-          files: |
-            dist/unsolved-mathematics-*.tar.gz
-            dist/SHA256SUMS
-            dist/MANIFEST-*.sha256
-            dist/MANIFEST-*.sha256.tsr
-            dist/MANIFEST-*.sha256.ots
-            dist/problems-*.json
-            dist/Donahue_2026_unsolved_mathematics_atlas-*.pdf
-            dist/arxiv_submission-*.tar.gz
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "$GITHUB_REF_NAME" dist/* --title "$GITHUB_REF_NAME" --notes-file notes.md --verify-tag

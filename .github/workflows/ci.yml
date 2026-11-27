@@ -1,9 +1,12 @@
+# Informational CI: runs on every push to main and reports. Never a required check; gates nothing (Build Standard v1.2.0 R1).
 name: CI
 
 on:
   push:
     branches: [main]
   workflow_dispatch:
+  schedule:
+    - cron: "17 6 * * 1"   # weekly drift & vulnerability check
 
 permissions:
   contents: read
@@ -21,10 +24,10 @@ jobs:
       matrix:
         os: [ubuntu-latest, windows-latest]
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Set up Python 3.12
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: "3.12"
           cache: pip
@@ -42,6 +45,7 @@ jobs:
           python scripts/proof_claim_sweep.py
           python scripts/check_retractions.py --check
           python scripts/check_readme_axioms.py
+          python scripts/sync_external_programs.py --check
           python scripts/build_site.py
           python scripts/build_data_manifest.py --check
           python scripts/timestamp_manifest.py --check
@@ -61,13 +65,13 @@ jobs:
         run: python tests/mutation_check.py
 
   lean-formal:
-    name: Lean 4.35.0 Multi-Kernel Formal Core (6-kernel paranoid + comparator)
+    name: Lean 4.35.0 Multi-Kernel Formal Core (6-kernel paranoid + comparator, 102 declarations)
     runs-on: ubuntu-latest
     # The comparator is intentionally exhaustive, but must not leave an
     # indefinitely hung runner without a terminal CI result.
     timeout-minutes: 30
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Install bubblewrap sandbox for lake check / lake comparator
         run: |
@@ -84,7 +88,7 @@ jobs:
       - name: Audit forbidden tokens & Palomar limits (zero sorry/admit/native_decide/custom axiom)
         run: python3 scripts/check_readme_axioms.py
 
-      - name: Build Lean 4.35.0 package & verify axioms strictly within standard set (81 declarations)
+      - name: Build Lean 4.35.0 package & verify axioms strictly within standard set (102 declarations)
         working-directory: lean
         run: |
           lake build Challenge Solution NonVacuity Adversarial
@@ -98,7 +102,7 @@ jobs:
               txt,
               re.S,
           ))
-          assert len(matches) >= 81, f"Expected >=81 audited declarations, got {len(matches)}"
+          assert len(matches) >= 102, f"Expected >=102 audited declarations, got {len(matches)}"
           for m in matches:
               name = m.group(1)
               raw = m.group(2) or ""
@@ -125,13 +129,14 @@ jobs:
           timeout --signal=TERM --kill-after=30s 900s lake comparator --config comparator.json --paranoid
 
   static-security-audit:
-    name: Static Analysis · Typecheck · Security · Build Standard v1.2.0 Audit
+    name: Static Analysis · Typecheck · Security · Build Standard v1.2.0 Audit (report-only)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
+        with: { fetch-depth: 0 }
 
       - name: Set up Python 3.12
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: "3.12"
           cache: pip
@@ -140,16 +145,49 @@ jobs:
       - name: Install tools
         run: python -m pip install -r requirements-lock.txt pip-audit
 
-      - name: Lint (ruff — core + Collatz experiment syntax/NameError guard)
+      - name: Lint (ruff — core + Collatz experiment syntax/closure guard, report-only)
+        continue-on-error: true
         run: |
           ruff check scripts rag tests examples
-          ruff check --select E9,F63,F7,F82 problems/collatz-conjecture/experiments
+          ruff check --select E9,F63,F7,F82,B023 problems/collatz-conjecture/experiments
 
-      - name: Strict type check (mypy)
-        run: mypy scripts/generate.py scripts/validate.py scripts/build_data_manifest.py scripts/build_site.py scripts/check_retractions.py scripts/check_readme_axioms.py scripts/test_lean_negative.py scripts/timestamp_manifest.py rag/build_corpus.py rag/retriever.py
+      - name: Strict type check (mypy across all 19 core Python modules, report-only)
+        continue-on-error: true
+        run: mypy --explicit-package-bases scripts rag examples
 
       - name: Dependency vulnerability scan (pip-audit, report-only)
-        run: pip-audit -r requirements-lock.txt || true
+        continue-on-error: true
+        run: pip-audit -r requirements-lock.txt
+
+      - name: Secret scan (gitleaks 8.30.1 SHA-256 verified, full history, report-only)
+        continue-on-error: true
+        run: |
+          curl -sSfL -o gitleaks.tgz https://github.com/gitleaks/gitleaks/releases/download/v8.30.1/gitleaks_8.30.1_linux_x64.tar.gz
+          echo "551f6fc83ea457d62a0d98237cbad105af8d557003051f41f3e7ca7b3f2470eb  gitleaks.tgz" | sha256sum -c -
+          tar xzf gitleaks.tgz gitleaks
+          ./gitleaks detect --source . --redact --no-banner --exit-code 0 --report-format json --report-path gitleaks.json
+          echo "gitleaks findings: $(grep -c '\"RuleID\"' gitleaks.json || true)" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Dependency OSV scan (osv-scanner 2.7.1 SHA-256 verified, report-only)
+        continue-on-error: true
+        run: |
+          curl -sSfL -o osv-scanner https://github.com/google/osv-scanner/releases/download/v2.7.1/osv-scanner_linux_amd64
+          echo "fb7dab19a8bd9bbe5c3189f09d4b7ee1820c9553a23bac202648a56efd2f6ee8  osv-scanner" | sha256sum -c -
+          chmod +x osv-scanner
+          ./osv-scanner --recursive . > osv.txt 2>&1 || true
+          { echo '### osv-scanner'; echo '```'; tail -n 40 osv.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Build Standard v1.2.0 repository audit (report-only)
-        run: bash scripts/audit-repo.sh . || true
+        continue-on-error: true
+        run: bash scripts/audit-repo.sh --json audit.json --markdown "$GITHUB_STEP_SUMMARY" .
+
+      - name: Upload audit & security reports
+        if: always()
+        continue-on-error: true
+        uses: actions/upload-artifact@v7
+        with:
+          name: build-standard-and-security-reports
+          path: |
+            audit.json
+            gitleaks.json
+            osv.txt

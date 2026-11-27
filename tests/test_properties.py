@@ -90,8 +90,16 @@ def test_property_lonely_runner_n2_exact_rational_witness(v1: int, delta: int):
         f = val - math.floor(val)
         return min(f, 1 - f)
 
-    # Check constructive candidate times matching standard n=2 proof (multiples of 1/(3*v1), 1/(3*v2), 1/(v1+v2))
-    candidates = [Fraction(1, 3 * v1), Fraction(2, 3 * v1), Fraction(1, 3 * v2), Fraction(2, 3 * v2)]
+    # Check constructive rational candidates from the n=2 proof.  The half-turn
+    # witness is essential when both speeds are odd (for example (1, 69)); the
+    # previous candidate set omitted it and produced a false property failure.
+    candidates = [
+        Fraction(1, 2),
+        Fraction(1, 3 * v1),
+        Fraction(2, 3 * v1),
+        Fraction(1, 3 * v2),
+        Fraction(2, 3 * v2),
+    ]
     for k in range(1, min(2 * v2, 60)):
         candidates.append(Fraction(k, 3 * v2))
         candidates.append(Fraction(k, 3 * v1))

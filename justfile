@@ -48,7 +48,8 @@ formal-nosandbox:
 
 lint:
     ruff check scripts rag tests examples || true
-    mypy scripts/generate.py scripts/validate.py scripts/build_data_manifest.py scripts/build_site.py scripts/check_retractions.py scripts/check_readme_axioms.py scripts/test_lean_negative.py scripts/timestamp_manifest.py rag/build_corpus.py rag/retriever.py || true
+    ruff check --select E9,F63,F7,F82,B023 problems/collatz-conjecture/experiments || true
+    mypy --explicit-package-bases scripts rag examples || true
 
 mutate:
     {{py}} tests/mutation_check.py

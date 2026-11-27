@@ -2,7 +2,7 @@
 
 ## 1. Does this repository claim to solve any open mathematical conjecture?
 
-**No.** Every open problem in the 106-problem catalog remains open unless the external mathematical community has produced a verifiable resolution (such as `unit-distance-problem`, updated to `recently-resolved` with explicit peer-review caveats following the May 2026 disproof `arXiv:2605.20695`). The Lean 4.35.0 formal core in `lean/` proves **structural lemmas and finite cases** (classical or elementary results) — never full solutions of open conjectures. Its Collatz "$\varepsilon$-invariance" theorem records facts about the $3n-1$ map; the methodological reading drawn from it is a heuristic, not a formalized theorem. See [`CLAIMS.md`](../CLAIMS.md) and [`LIMITATIONS.md`](../LIMITATIONS.md).
+**No.** Every open problem in the 106-problem catalog remains open unless the external mathematical community has produced a verifiable resolution (such as `unit-distance-problem`, updated to `recently-resolved` with explicit peer-review caveats following the May 2026 disproof `arXiv:2605.20695`). The Lean 4.35.0 formal core in `lean/` proves **structural lemmas, classical foundations, and finite cases** — never full solutions of open conjectures. Its Collatz "$\varepsilon$-invariance" theorem (`thm_collatz_epsilon_invariance_barrier`) records facts about the $3n-1$ map; the methodological reading drawn from it is a heuristic, not a formalized meta-theorem. See [`CLAIMS.md`](../CLAIMS.md) and [`LIMITATIONS.md`](../LIMITATIONS.md).
 
 ## 2. Why is `problems/collatz-conjecture/` so much larger than the other 105 dossiers?
 
@@ -17,7 +17,7 @@ In July 2026, `unsolved-mathematics` served as the live workspace for a multi-mo
 
 ## 4. How many AI models and human mathematicians have reviewed the 106 dossiers?
 
-As of `v0.6.0` (`2026-11-26`): **1 AI model pass** (Claude's in-house self-review on `2026-06-14`, recorded under the historical non-canonical session label `claude-opus-4-8` in `meta-analyses/*.md`) across the 106 meta-analyses and **0 independent human mathematician peer reviews**. Earlier README text mentioning a "four-model review panel" described a planned architecture, not completed reviews; `v0.3.0`+ corrects this disclosure explicitly across `README.md`, `CLAIMS.md`, and `LIMITATIONS.md`.
+As of `v0.7.0` (`2026-11-26`): **1 AI model pass** (Claude's in-house self-review on `2026-06-14`, recorded under the historical non-canonical session label `claude-opus-4-8` in `meta-analyses/*.md`) across the 106 meta-analyses and **0 independent human mathematician peer reviews**. Earlier README text mentioning a "four-model review panel" described a planned architecture, not completed reviews; `v0.3.0`+ corrects this disclosure explicitly across `README.md`, `CLAIMS.md`, and `LIMITATIONS.md`.
 
 ## 5. How is the Composite Severity Score (CSS) computed? Is it objective?
 

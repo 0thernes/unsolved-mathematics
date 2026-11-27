@@ -22,7 +22,7 @@ import sys
 from pathlib import Path
 
 try:
-    sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
+    sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[union-attr]
 except Exception:
     pass
 
@@ -61,7 +61,7 @@ def front_matter(text: str):
 
 
 def load_validator():
-    import jsonschema  # type: ignore
+    import jsonschema
 
     schema = json.loads(SCHEMA.read_text(encoding="utf-8"))
     return jsonschema.Draft202012Validator(schema)

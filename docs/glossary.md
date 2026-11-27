@@ -37,7 +37,7 @@ reader; each points at the problems where the idea is load-bearing.
 
 - **Hausdorff / Minkowski dimension** — notions of fractional dimension of a set;
   Kakeya asks whether direction-rich sets must be full-dimensional. *(Kakeya.)*
-- **Restriction / Kakeya / Bochner–Riesel circle of conjectures** — a web of
+- **Restriction / Kakeya / Bochner–Riesz circle of conjectures** — a web of
   harmonic-analysis problems linking Fourier restriction to dimension of Kakeya
   sets. *(Kakeya.)*
 - **Weak / mild solution** — a solution satisfying a PDE in an integrated sense;
@@ -102,14 +102,16 @@ reader; each points at the problems where the idea is load-bearing.
 
 ---
 
-## Epistemic, Formal Verification & Build Standard Terms (`v0.5.0`)
+## Epistemic, Formal Verification & Build Standard Terms (`v0.7.0`)
 
 - **Composite Severity Score (CSS):** Deterministic 0–100 editorial ranking heuristic (`docs/methodology/RANKING.md`, pinned `CURRENT_YEAR = 2026`, tie-break `(-css, slug)`).
 - **Ten-Class Finding Taxonomy:** Build Standard `v1.2.0` classification partitioning findings into `bug`, `error`, `issue`, `problem`, `concern`, `dilemma`, `conflict`, `gap`, `hole`, and `blindspot`.
 - **Multi-Kernel Verification:** Re-checking exported Lean 4.35.0 proof terms across six independent type checkers (`lean`, `leanchecker-paranoid`, `lean4lean`, `nanoda_bin`, `con-leche`, `con-ron`) to minimize single-kernel trust risk.
 - **Statement Fidelity:** Explicit human-auditable correspondence between textbook mathematics and formal Lean definitions/types (`lean/STATEMENT_FIDELITY.md`), preventing hidden vacuity or goalpost-moving.
 - **Non-Vacuity Witness:** Concrete computable Lean construction (`lean/NonVacuity.lean`) proving every universally quantified theorem's hypothesis set is inhabited.
-- **Adversarial False-Variant Refutation:** Explicit Lean proof of `¬ P` (`lean/Adversarial.lean`) demonstrating that deliberately weakened or overclaimed variants are provably refuted under our definitions.
-- **Barrier Meta-Theorem:** Formal proof that an entire class of proof methods cannot resolve a conjecture (for example relativization for P vs NP). This repository contains no such formal meta-theorem. `thm_collatz_epsilon_invariance_barrier` in `lean/FormalAtlas/Collatz.lean` only shows that the $3n-1$ map shares the Terras bijection and has positive cycles at $5$ and $17$; the inference that arguments invariant under $3n+1 \leftrightarrow 3n-1$ cannot settle Collatz is a heuristic, not formalized.
+- **Adversarial False-Variant Refutation:** Explicit Lean proof of `¬ P` (`lean/Adversarial.lean`) demonstrating that deliberately weakened or overclaimed variants are provably refuted under our definitions, complemented by live negative kernel rejection (`scripts/test_lean_negative.py`).
+- **Barrier Meta-Theorem:** Formal proof that an entire class of proof methods cannot resolve a conjecture (for example relativization for P vs NP). This repository contains no such formal meta-theorem. `thm_collatz_epsilon_invariance_barrier` in `lean/FormalAtlas/Collatz.lean` proves that the $3n-1$ map shares the Terras bijection and has positive cycles at $5$ and $17$; the inference that arguments invariant under $3n+1 \leftrightarrow 3n-1$ cannot settle Collatz is a heuristic, not formalized.
 - **Primary-Source Citation & Retraction Verification:** Live API validation of arXiv IDs (`export.arxiv.org`) and DOIs (`api.crossref.org`, `api.datacite.org`) logged in `data/citation-verification-log.json` (`scripts/verify_citations.py`) and `data/retraction-audit.json` (`scripts/check_retractions.py`).
-- **SLSA Provenance Attestation:** Cryptographically signed release provenance generated via `actions/attest-build-provenance@v2` linking tagged releases and `SHA256SUMS` to immutable GitHub Actions runs.
+- **Dual Cryptographic Timestamps:** Independent third-party DigiCert RFC 3161 TSA reply (`data/MANIFEST.sha256.tsr`) and 3-calendar Bitcoin OpenTimestamps proof (`data/MANIFEST.sha256.ots`) binding `data/MANIFEST.sha256` offline via `scripts/timestamp_manifest.py --check`.
+- **Software Heritage SWHID (ISO/IEC 18670):** Persistent intrinsic archival identifier for immutable source snapshots (e.g., `swh:1:snp:c11ec8263dd64b986c52bb400b8c3a85a3e6a254`).
+- **SLSA Provenance Attestation:** Cryptographically signed release provenance generated via `actions/attest-build-provenance@v4` linking tagged releases and `SHA256SUMS` to immutable GitHub Actions runs.

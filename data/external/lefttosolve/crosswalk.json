@@ -1,0 +1,2474 @@
+{
+  "schema_version": 1,
+  "snapshot_content_sha256": "1491f139c5a17e60eaffda296a690b843f93aef8c45dc130bdfcb9c6e7564f02",
+  "rule": "An external item matches an Atlas problem when the NFKD-folded, lower-cased, punctuation-free item base title (text before ' — ') equals the Atlas title, optionally after stripping trailing generic words (conjecture/problem/hypothesis/theorem/question); data/external/crosswalk-overrides.yaml adds reviewed ids (optionally fixing their relation) or removes false positives. Default relation=primary iff the id has no '.variants.' segment and the title has no ' — ' suffix; 'related' links never raise status signals.",
+  "summary": {
+    "atlas_problems": 106,
+    "problems_with_matches": 98,
+    "problems_with_primary_match": 88,
+    "total_matches": 162,
+    "problems_with_signals": 0
+  },
+  "problems": [
+    {
+      "slug": "riemann-hypothesis",
+      "title": "The Riemann Hypothesis",
+      "atlas_status": "open",
+      "matches": [],
+      "signals": []
+    },
+    {
+      "slug": "p-versus-np",
+      "title": "P versus NP",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "ComplexityTheory.P_ne_NP",
+          "program": "Millennium Prize",
+          "program_slug": "millennium-prize",
+          "title": "P ≠ NP",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "hodge-conjecture",
+      "title": "The Hodge Conjecture",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "wp-hodge-conjecture",
+          "program": "Wikipedia list (not formalized)",
+          "program_slug": "wikipedia-list-not-formalized",
+          "title": "Hodge conjecture",
+          "kind": "unformalized",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "birch-swinnerton-dyer",
+      "title": "The Birch and Swinnerton-Dyer Conjecture",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "WeierstrassCurve.Affine.NumberField.strongBSD",
+          "program": "Millennium Prize",
+          "program_slug": "millennium-prize",
+          "title": "The Birch and Swinnerton-Dyer (BSD) Conjecture — strongBSD",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "normalized-title"
+        },
+        {
+          "id": "WeierstrassCurve.Affine.NumberField.weakBSD",
+          "program": "Millennium Prize",
+          "program_slug": "millennium-prize",
+          "title": "The Birch and Swinnerton-Dyer (BSD) Conjecture — weakBSD",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "normalized-title"
+        },
+        {
+          "id": "WeierstrassCurve.Affine.Rat.strongBSD",
+          "program": "Millennium Prize",
+          "program_slug": "millennium-prize",
+          "title": "The Birch and Swinnerton-Dyer (BSD) Conjecture — strongBSD",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        },
+        {
+          "id": "WeierstrassCurve.Affine.Rat.weakBSD",
+          "program": "Millennium Prize",
+          "program_slug": "millennium-prize",
+          "title": "The Birch and Swinnerton-Dyer (BSD) Conjecture — weakBSD",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        },
+        {
+          "id": "wp-birch-and-swinnerton-dyer-conjecture",
+          "program": "Wikipedia list (not formalized)",
+          "program_slug": "wikipedia-list-not-formalized",
+          "title": "Birch and Swinnerton-Dyer conjecture",
+          "kind": "unformalized",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "yang-mills-mass-gap",
+      "title": "Yang–Mills Existence and Mass Gap",
+      "atlas_status": "open",
+      "matches": [],
+      "signals": []
+    },
+    {
+      "slug": "navier-stokes-smoothness",
+      "title": "Navier–Stokes Existence and Smoothness",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "NavierStokes.navier_stokes_existence_and_smoothness_R3",
+          "program": "Millennium Prize",
+          "program_slug": "millennium-prize",
+          "title": "Existence And Smoothness Of The Navier–Stokes Equation — navier stokes existence and smoothness R3",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        },
+        {
+          "id": "NavierStokes.navier_stokes_existence_and_smoothness_periodic",
+          "program": "Millennium Prize",
+          "program_slug": "millennium-prize",
+          "title": "Existence And Smoothness Of The Navier–Stokes Equation — navier stokes existence and smoothness periodic",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "goldbach-conjecture",
+      "title": "Goldbach's Conjecture",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "GoldbachConjecture.goldbach",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Goldbach's conjecture",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        },
+        {
+          "id": "TernaryGoldbachConjecture.ternaryGoldbach",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Goldbach's conjecture — ternaryGoldbach",
+          "kind": "known",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "twin-prime-conjecture",
+      "title": "The Twin Prime Conjecture",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "TwinPrimes.twin_primes",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Twin prime conjecture",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "abc-conjecture",
+      "title": "The abc Conjecture",
+      "atlas_status": "disputed-claim",
+      "matches": [
+        {
+          "id": "ABC.abc",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "*abc* conjecture",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        },
+        {
+          "id": "ABC.abc.variants.lt_constant_mul",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "*abc* conjecture — lt constant mul",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "normalized-title"
+        },
+        {
+          "id": "ABC.abc.variants.quality",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "*abc* conjecture — quality",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "collatz-conjecture",
+      "title": "The Collatz Conjecture",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "CollatzConjecture.collatz_conjecture",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Collatz conjecture",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "odd-perfect-numbers",
+      "title": "Existence of Odd Perfect Numbers",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "PerfectNumbers.odd_perfect_number.lower_bound",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Perfect numbers — lower bound",
+          "kind": "known",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "curated-override"
+        },
+        {
+          "id": "PerfectNumbers.odd_perfect_number_conjecture",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Odd Perfect Number Conjecture.",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "mersenne-primes-infinitude",
+      "title": "Infinitude of Mersenne Primes",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "Mersenne.infinitely_many_mersenne_primes",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Conjectures about Mersenne primes — infinitely many mersenne primes",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "jacobian-conjecture",
+      "title": "The Jacobian Conjecture",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "JacobianConjecture.jacobian_conjecture_two_variables",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Jacobian conjecture",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "invariant-subspace-problem",
+      "title": "The Invariant Subspace Problem",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "InvariantSubspaceProblem.Invariant_subspace_problem",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Invariant Subspace Problem",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "hadwiger-conjecture",
+      "title": "Hadwiger's Conjecture (Graph Coloring)",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "wp-hadwiger-conjecture",
+          "program": "Wikipedia list (not formalized)",
+          "program_slug": "wikipedia-list-not-formalized",
+          "title": "Hadwiger conjecture",
+          "kind": "unformalized",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "kakeya-conjecture",
+      "title": "The Kakeya Conjecture",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "Kakeya.kakeya_2d",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Kakeya problem — kakeya 2d",
+          "kind": "known",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "normalized-title"
+        },
+        {
+          "id": "Kakeya.kakeya_3d",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Kakeya problem — kakeya 3d",
+          "kind": "known",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "normalized-title"
+        },
+        {
+          "id": "Kakeya.kakeya_finite",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Kakeya problem — kakeya finite",
+          "kind": "known",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "normalized-title"
+        },
+        {
+          "id": "Kakeya.kakeya_set_conjecture",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Kakeya problem — kakeya set conjecture",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "hadwiger-nelson-problem",
+      "title": "The Hadwiger–Nelson Problem",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "Erdos508.HadwigerNelsonAtLeastFive",
+          "program": "Erdős Problems",
+          "program_slug": "erdos-problems",
+          "title": "Erdős Problem 508 — HadwigerNelsonAtLeastFive",
+          "kind": "known",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "curated-override"
+        },
+        {
+          "id": "Erdos508.HadwigerNelsonProblem",
+          "program": "Erdős Problems",
+          "program_slug": "erdos-problems",
+          "title": "Erdős Problem 508 — HadwigerNelsonProblem",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "inscribed-square-problem",
+      "title": "The Inscribed Square Problem (Toeplitz)",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "InscribedSquare.exists_inscribed_rectangle",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Inscribed square problem — exists inscribed rectangle",
+          "kind": "known",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "normalized-title"
+        },
+        {
+          "id": "InscribedSquare.exists_inscribed_rectangle_of_smooth",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Inscribed square problem — exists inscribed rectangle of smooth",
+          "kind": "known",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "normalized-title"
+        },
+        {
+          "id": "InscribedSquare.exists_inscribed_square_of_C2",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Inscribed square problem — exists inscribed square of C2",
+          "kind": "known",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "normalized-title"
+        },
+        {
+          "id": "InscribedSquare.inscribed_square_problem",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Inscribed square problem",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "lonely-runner-conjecture",
+      "title": "The Lonely Runner Conjecture",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "LonelyRunnerConjecture.lonely_runner_conjecture",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Lonely runner conjecture",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "union-closed-sets-conjecture",
+      "title": "The Union-Closed Sets Conjecture (Frankl)",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "UnionClosed.union_closed",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Union-closed sets conjecture",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        },
+        {
+          "id": "UnionClosed.union_closed.variants.cardinality_even_of_union_closed_tight",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Union-closed sets conjecture — cardinality even of union closed tight",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "normalized-title"
+        },
+        {
+          "id": "UnionClosed.union_closed.variants.family_card",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Union-closed sets conjecture — family card",
+          "kind": "known",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "normalized-title"
+        },
+        {
+          "id": "UnionClosed.union_closed.variants.univ_card",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Union-closed sets conjecture — univ card",
+          "kind": "known",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "normalized-title"
+        },
+        {
+          "id": "UnionClosed.union_closed.variants.yu",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Union-closed sets conjecture — yu",
+          "kind": "known",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "legendre-conjecture",
+      "title": "Legendre's Conjecture",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "LegendreConjecture.legendre_conjecture",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Legendre's conjecture",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        },
+        {
+          "id": "LegendreConjecture.legendre_conjecture.ferreira_large_n",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Legendre's conjecture — ferreira large n",
+          "kind": "known",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "polignac-conjecture",
+      "title": "Polignac's Conjecture",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "wp-polignac-s-conjecture",
+          "program": "Wikipedia list (not formalized)",
+          "program_slug": "wikipedia-list-not-formalized",
+          "title": "Polignac's conjecture",
+          "kind": "unformalized",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "beal-conjecture",
+      "title": "The Beal Conjecture",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "BealConjecture.beal_conjecture",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Beal conjecture",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "erdos-straus-conjecture",
+      "title": "The Erdős–Straus Conjecture",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "Erdos242.erdos_242",
+          "program": "Erdős Problems",
+          "program_slug": "erdos-problems",
+          "title": "Erdős Problem 242",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "brocard-problem",
+      "title": "Brocard's Problem",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "Brocard.brocard_conjecture",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Brocard's Conjecture",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        },
+        {
+          "id": "Brocard.brocard_conjecture.ferreira_large_n",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Brocard's Conjecture — ferreira large n",
+          "kind": "known",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "normalized-title"
+        },
+        {
+          "id": "Erdos398.erdos_398",
+          "program": "Erdős Problems",
+          "program_slug": "erdos-problems",
+          "title": "Brocard's Problem",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "lehmer-totient-problem",
+      "title": "Lehmer's Totient Problem",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "LehmerTotient.lehmer_totient",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Lehmer's totient problem",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "singmaster-conjecture",
+      "title": "Singmaster's Conjecture",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "Singmaster.singmaster",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Singmaster's conjecture",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "gilbreath-conjecture",
+      "title": "Gilbreath's Conjecture",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "Gilbreath.gilbreath_conjecture",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Gilbreath's conjecture",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "schanuel-conjecture",
+      "title": "Schanuel's Conjecture",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "Schanuel.schanuel_conjecture",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Schanuel's Conjecture",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "bunyakovsky-conjecture",
+      "title": "Bunyakovsky's Conjecture",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "Bunyakovsky.bunyakovsky_conjecture",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Bunyakovsky conjecture",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "grimm-conjecture",
+      "title": "Grimm's Conjecture",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "Grimm.grimm_conjecture",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Grimm's Conjecture",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "sendov-conjecture",
+      "title": "Sendov's Conjecture",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "Erdos504.erdos_504.variants.sendov",
+          "program": "Erdős Problems",
+          "program_slug": "erdos-problems",
+          "title": "Sendov (1995).",
+          "kind": "known",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "normalized-title"
+        },
+        {
+          "id": "Sendov.sendov_conjecture.variants.eventually_true",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Sendov's conjecture — eventually true",
+          "kind": "known",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "normalized-title"
+        },
+        {
+          "id": "Sendov.sendov_conjecture.variants.le_eight",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Sendov's conjecture — le eight",
+          "kind": "known",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "hadamard-matrix-conjecture",
+      "title": "The Hadamard Matrix Conjecture",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "Hadamard.HadamardConjecture",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Hadamard's conjecture",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        },
+        {
+          "id": "Hadamard.HadamardConjecture.variants.167",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Hadamard's conjecture — «167»",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "curated-override"
+        },
+        {
+          "id": "Hadamard.HadamardConjecture.variants.first_cases",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Hadamard's conjecture — first cases",
+          "kind": "known",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "curated-override"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "crouzeix-conjecture",
+      "title": "Crouzeix's Conjecture",
+      "atlas_status": "active-progress",
+      "matches": [],
+      "signals": []
+    },
+    {
+      "slug": "montgomery-pair-correlation",
+      "title": "Montgomery's Pair Correlation Conjecture",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "MontgomeryPairCorrelationConjecture.montgomery_pair_correlation_conjecture",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Montgomery's GUE pair correlation conjecture for zeta zeros",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        },
+        {
+          "id": "MontgomeryPairCorrelationConjecture.montgomery_pair_correlation_conjecture.variants.general_interval",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Montgomery's GUE pair correlation conjecture for zeta zeros — general interval",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "curated-override"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "hardy-littlewood-k-tuple",
+      "title": "The Hardy–Littlewood k-tuple Conjecture",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "Dickson.dickson_conjecture",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Dickson's conjecture",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "related",
+          "via": "curated-override"
+        },
+        {
+          "id": "HardyLittlewood.first_hardy_littlewood_conjecture",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "First Hardy–Littlewood conjecture — first hardy littlewood conjecture",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        },
+        {
+          "id": "PrimeTuplesConjecture.prime_tuples_conjecture",
+          "program": "Papers",
+          "program_slug": "papers",
+          "title": "Prime Tuples Conjecture",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "related",
+          "via": "curated-override"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "andrews-curtis-conjecture",
+      "title": "The Andrews–Curtis Conjecture",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "AndrewsCurtis.andrews_curtis_conjecture",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "The Andrews-Curtis conjecture.",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "connes-embedding-aftermath",
+      "title": "The Connes Embedding Problem (Resolved 2020)",
+      "atlas_status": "recently-resolved",
+      "matches": [],
+      "signals": []
+    },
+    {
+      "slug": "hilbert-sixteenth-problem",
+      "title": "Hilbert's Sixteenth Problem (Second Part)",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "wp-hilbert-s-sixteenth-problem",
+          "program": "Wikipedia list (not formalized)",
+          "program_slug": "wikipedia-list-not-formalized",
+          "title": "Hilbert's sixteenth problem",
+          "kind": "unformalized",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "littlewood-conjecture",
+      "title": "The Littlewood Conjecture",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "LittlewoodConjecture.littlewood_conjecture",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Littlewood conjectures",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        },
+        {
+          "id": "LittlewoodConjecture.padic_littlewood_conjecture",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Littlewood conjectures — padic littlewood conjecture",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "related",
+          "via": "curated-override"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "continuum-hypothesis",
+      "title": "The Continuum Hypothesis",
+      "atlas_status": "independent",
+      "matches": [
+        {
+          "id": "wp-generalized-continuum-hypothesis",
+          "program": "Wikipedia list (not formalized)",
+          "program_slug": "wikipedia-list-not-formalized",
+          "title": "Generalized continuum hypothesis",
+          "kind": "unformalized",
+          "site_solved_flag": false,
+          "relation": "related",
+          "via": "curated-override"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "tate-conjecture",
+      "title": "The Tate Conjecture",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "wp-tate-conjecture",
+          "program": "Wikipedia list (not formalized)",
+          "program_slug": "wikipedia-list-not-formalized",
+          "title": "Tate conjecture",
+          "kind": "unformalized",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "schinzel-hypothesis-h",
+      "title": "Schinzel's Hypothesis H",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "Schinzel.schinzel_conjecture",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Schinzel conjecture (H hypothesis)",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "inverse-galois-problem",
+      "title": "The Inverse Galois Problem",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "InverseGalois.inverse_galois_problem",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Inverse Galois problem",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        },
+        {
+          "id": "InverseGalois.inverse_galois_problem.variants.abelian",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Inverse Galois problem — abelian",
+          "kind": "known",
+          "site_solved_flag": true,
+          "relation": "variant",
+          "via": "normalized-title"
+        },
+        {
+          "id": "InverseGalois.inverse_galois_problem.variants.complex_function_field",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Inverse Galois problem — complex function field",
+          "kind": "known",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "normalized-title"
+        },
+        {
+          "id": "InverseGalois.inverse_galois_problem.variants.complex_rational_functions",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Inverse Galois problem — complex rational functions",
+          "kind": "known",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "normalized-title"
+        },
+        {
+          "id": "InverseGalois.inverse_galois_problem.variants.cyclic",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Inverse Galois problem — cyclic",
+          "kind": "known",
+          "site_solved_flag": true,
+          "relation": "variant",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "novikov-conjecture",
+      "title": "The Novikov Conjecture",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "wp-novikov-conjecture",
+          "program": "Wikipedia list (not formalized)",
+          "program_slug": "wikipedia-list-not-formalized",
+          "title": "Novikov conjecture",
+          "kind": "unformalized",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "baum-connes-conjecture",
+      "title": "The Baum–Connes Conjecture",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "wp-baum-connes-conjecture",
+          "program": "Wikipedia list (not formalized)",
+          "program_slug": "wikipedia-list-not-formalized",
+          "title": "Baum–Connes conjecture",
+          "kind": "unformalized",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "unique-games-conjecture",
+      "title": "The Unique Games Conjecture",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "wp-unique-games-conjecture",
+          "program": "Wikipedia list (not formalized)",
+          "program_slug": "wikipedia-list-not-formalized",
+          "title": "Unique games conjecture",
+          "kind": "unformalized",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "whitehead-asphericity-conjecture",
+      "title": "The Whitehead Asphericity Conjecture",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "wp-whitehead-conjecture",
+          "program": "Wikipedia list (not formalized)",
+          "program_slug": "wikipedia-list-not-formalized",
+          "title": "Whitehead conjecture",
+          "kind": "unformalized",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "hilbert-smith-conjecture",
+      "title": "The Hilbert–Smith Conjecture",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "Hilbert5.hilbert_smith_conjecture",
+          "program": "Hilbert's Problems",
+          "program_slug": "hilbert-s-problems",
+          "title": "Hilbert–Smith conjecture",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "sunflower-conjecture",
+      "title": "The Sunflower Conjecture",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "wp-sunflower-conjecture",
+          "program": "Wikipedia list (not formalized)",
+          "program_slug": "wikipedia-list-not-formalized",
+          "title": "Sunflower conjecture",
+          "kind": "unformalized",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "reconstruction-conjecture",
+      "title": "The Reconstruction Conjecture (Ulam)",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "ReconstructionConjecture.reconstruction_conjecture",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "The reconstruction conjecture",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "cycle-double-cover-conjecture",
+      "title": "The Cycle Double Cover Conjecture",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "wp-cycle-double-cover-conjecture",
+          "program": "Wikipedia list (not formalized)",
+          "program_slug": "wikipedia-list-not-formalized",
+          "title": "Cycle double cover conjecture",
+          "kind": "unformalized",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "graceful-tree-conjecture",
+      "title": "The Graceful Tree Conjecture (Ringel–Kotzig)",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "GracefulLabeling.graceful_tree_conjecture",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Graceful Tree Conjecture (Ringel–Kotzig conjecture)",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "caccetta-haggkvist-conjecture",
+      "title": "The Caccetta–Häggkvist Conjecture",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "opg-caccetta-haggkvist-conjecture",
+          "program": "Open Problem Garden",
+          "program_slug": "open-problem-garden",
+          "title": "Caccetta-Häggkvist Conjecture",
+          "kind": "unformalized",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "moving-sofa-problem",
+      "title": "The Moving Sofa Problem",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "MovingSofa.ambidextrousSofaConstant_eq_romiksSofa_area",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Moving Sofa Problem — ambidextrousSofaConstant eq romiksSofa area",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "normalized-title"
+        },
+        {
+          "id": "MovingSofa.romiksSofa_area_le_ambidextrousSofaConstant",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Moving Sofa Problem — romiksSofa area le ambidextrousSofaConstant",
+          "kind": "known",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "unit-distance-problem",
+      "title": "The Erdős Unit Distance Problem (Disproved 2026)",
+      "atlas_status": "recently-resolved",
+      "matches": [
+        {
+          "id": "Erdos90.erdos_90",
+          "program": "Erdős Problems",
+          "program_slug": "erdos-problems",
+          "title": "Erdős Problem 90: The unit distance problem",
+          "kind": "known",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        },
+        {
+          "id": "Erdos90.erdos_90.variants.sawin_explicit",
+          "program": "Erdős Problems",
+          "program_slug": "erdos-problems",
+          "title": "Sawin's explicit exponent.",
+          "kind": "known",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "curated-override"
+        },
+        {
+          "id": "Erdos90.sawin_lattice_reduction",
+          "program": "Erdős Problems",
+          "program_slug": "erdos-problems",
+          "title": "Sawin's Lemma 2: lattice geometry of unit distances",
+          "kind": "known",
+          "site_solved_flag": true,
+          "relation": "related",
+          "via": "curated-override"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "falconer-distance-conjecture",
+      "title": "The Falconer Distance Conjecture",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "wp-falconer-s-conjecture",
+          "program": "Wikipedia list (not formalized)",
+          "program_slug": "wikipedia-list-not-formalized",
+          "title": "Falconer's conjecture",
+          "kind": "unformalized",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "artin-primitive-root-conjecture",
+      "title": "Artin's Primitive Root Conjecture",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "ArtinPrimitiveRootsConjecture.artin_primitive_roots.parts.i",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Artin's Conjecture on Primitive Roots",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        },
+        {
+          "id": "ArtinPrimitiveRootsConjecture.artin_primitive_roots.parts.ii",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Artin's Conjecture on Primitive Roots — ii",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "curated-override"
+        },
+        {
+          "id": "ArtinPrimitiveRootsConjecture.conditional_artin_primitive_roots.parts.i",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Artin's Conjecture on Primitive Roots",
+          "kind": "known",
+          "site_solved_flag": false,
+          "relation": "related",
+          "via": "curated-override"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "lehmer-mahler-measure-conjecture",
+      "title": "Lehmer's Mahler Measure Conjecture",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "LehmerMahlerMeasureProblem.lehmer_mahler_measure_problem",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Lehmer's Mahler measure problem",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        },
+        {
+          "id": "LehmerMahlerMeasureProblem.lehmer_mahler_measure_problem.variants.best",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Lehmer's Mahler measure problem — best",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "normalized-title"
+        },
+        {
+          "id": "LehmerMahlerMeasureProblem.lehmer_mahler_measure_problem.variants.not_reciprocal",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Lehmer's Mahler measure problem — not reciprocal",
+          "kind": "known",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "normalized-title"
+        },
+        {
+          "id": "LehmerMahlerMeasureProblem.lehmer_mahler_measure_problem.variants.odd",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Lehmer's Mahler measure problem — odd",
+          "kind": "known",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "four-exponentials-conjecture",
+      "title": "The Four Exponentials Conjecture",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "Exponentials.four_exponentials_conjecture",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Four exponentials conjecture",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "grand-riemann-hypothesis",
+      "title": "The Grand Riemann Hypothesis",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "wp-grand-riemann-hypothesis",
+          "program": "Wikipedia list (not formalized)",
+          "program_slug": "wikipedia-list-not-formalized",
+          "title": "Grand Riemann hypothesis",
+          "kind": "unformalized",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "vojta-conjecture",
+      "title": "Vojta's Conjecture",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "wp-vojta-s-conjecture",
+          "program": "Wikipedia list (not formalized)",
+          "program_slug": "wikipedia-list-not-formalized",
+          "title": "Vojta's conjecture",
+          "kind": "unformalized",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "bombieri-lang-conjecture",
+      "title": "The Bombieri–Lang Conjecture",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "wp-bombieri-lang-conjecture",
+          "program": "Wikipedia list (not formalized)",
+          "program_slug": "wikipedia-list-not-formalized",
+          "title": "Bombieri–Lang conjecture",
+          "kind": "unformalized",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "elliott-halberstam-conjecture",
+      "title": "The Elliott–Halberstam Conjecture",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "ElliottHalberstamConjecture.elliott_halberstam",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Elliott–Halberstam conjecture",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        },
+        {
+          "id": "ElliottHalberstamConjecture.elliott_halberstam.variants.bombieri_vinogradov",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Elliott–Halberstam conjecture — bombieri vinogradov",
+          "kind": "known",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "normalized-title"
+        },
+        {
+          "id": "ElliottHalberstamConjecture.elliott_halberstam.variants.friedlander_granville",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Elliott–Halberstam conjecture — friedlander granville",
+          "kind": "known",
+          "site_solved_flag": true,
+          "relation": "variant",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "chowla-conjecture",
+      "title": "The Chowla Conjecture",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "ChowlaLiouvilleConjecture.chowla_liouville_conjecture",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Chowla's Conjecture",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "sarnak-mobius-conjecture",
+      "title": "Sarnak's Möbius Disjointness Conjecture",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "wp-sarnak-conjecture",
+          "program": "Wikipedia list (not formalized)",
+          "program_slug": "wikipedia-list-not-formalized",
+          "title": "Sarnak conjecture",
+          "kind": "unformalized",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "mandelbrot-locally-connected",
+      "title": "The MLC Conjecture (Mandelbrot Locally Connected)",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "Mandelbrot.MLC",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Conjectures about the Mandelbrot and Multibrot sets — MLC",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        },
+        {
+          "id": "Mandelbrot.density_of_hyperbolicity",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Conjectures about the Mandelbrot and Multibrot sets — density of hyperbolicity",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "related",
+          "via": "curated-override"
+        },
+        {
+          "id": "wp-mlc-conjecture-is-the-mandelbrot-set-locally-connected",
+          "program": "Wikipedia list (not formalized)",
+          "program_slug": "wikipedia-list-not-formalized",
+          "title": "MLC conjecture – is the Mandelbrot set locally connected?",
+          "kind": "unformalized",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "birkhoff-conjecture",
+      "title": "The Birkhoff Conjecture (Integrable Billiards)",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "wp-birkhoff",
+          "program": "Wikipedia list (not formalized)",
+          "program_slug": "wikipedia-list-not-formalized",
+          "title": "Birkhoff",
+          "kind": "unformalized",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "weinstein-conjecture",
+      "title": "The Weinstein Conjecture",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "wp-weinstein-conjecture",
+          "program": "Wikipedia list (not formalized)",
+          "program_slug": "wikipedia-list-not-formalized",
+          "title": "Weinstein conjecture",
+          "kind": "unformalized",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "smooth-4d-poincare-conjecture",
+      "title": "The Smooth 4-Dimensional Poincaré Conjecture",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "opg-smooth-4-dimensional-poincare-conjecture",
+          "program": "Open Problem Garden",
+          "program_slug": "open-problem-garden",
+          "title": "Smooth 4-dimensional Poincare conjecture",
+          "kind": "unformalized",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "borel-conjecture",
+      "title": "The Borel Conjecture",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "wp-borel-conjecture",
+          "program": "Wikipedia list (not formalized)",
+          "program_slug": "wikipedia-list-not-formalized",
+          "title": "Borel conjecture",
+          "kind": "unformalized",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "volume-conjecture",
+      "title": "The Volume Conjecture",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "wp-volume-conjecture",
+          "program": "Wikipedia list (not formalized)",
+          "program_slug": "wikipedia-list-not-formalized",
+          "title": "Volume conjecture",
+          "kind": "unformalized",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "slice-ribbon-conjecture",
+      "title": "The Slice–Ribbon Conjecture",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "opg-slice-ribbon-problem-0",
+          "program": "Open Problem Garden",
+          "program_slug": "open-problem-garden",
+          "title": "Slice-ribbon problem",
+          "kind": "unformalized",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "zeeman-conjecture",
+      "title": "The Zeeman Conjecture",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "wp-zeeman-conjecture",
+          "program": "Wikipedia list (not formalized)",
+          "program_slug": "wikipedia-list-not-formalized",
+          "title": "Zeeman conjecture",
+          "kind": "unformalized",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "eilenberg-ganea-conjecture",
+      "title": "The Eilenberg–Ganea Conjecture",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "wp-eilenberg-ganea-conjecture",
+          "program": "Wikipedia list (not formalized)",
+          "program_slug": "wikipedia-list-not-formalized",
+          "title": "Eilenberg–Ganea conjecture",
+          "kind": "unformalized",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "erdos-hajnal-conjecture",
+      "title": "The Erdős–Hajnal Conjecture",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "Erdos1171.erdos_1171.variants.k_one",
+          "program": "Erdős Problems",
+          "program_slug": "erdos-problems",
+          "title": "Erdős–Hajnal theorem",
+          "kind": "known",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "seymour-second-neighborhood-conjecture",
+      "title": "Seymour's Second Neighborhood Conjecture",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "opg-seymours-second-neighbourhood-conjecture",
+          "program": "Open Problem Garden",
+          "program_slug": "open-problem-garden",
+          "title": "Seymour's Second Neighbourhood Conjecture",
+          "kind": "unformalized",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        },
+        {
+          "id": "wp-second-neighborhood-problem",
+          "program": "Wikipedia list (not formalized)",
+          "program_slug": "wikipedia-list-not-formalized",
+          "title": "Second neighborhood problem",
+          "kind": "unformalized",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "total-coloring-conjecture",
+      "title": "The Total Coloring Conjecture",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "TotalColoringConjecture.total_coloring_conjecture",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "The total colouring conjecture (Behzad 1965, Vizing 1968).",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        },
+        {
+          "id": "TotalColoringConjecture.total_coloring_conjecture.variants.maxDegree_le_five",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "The total colouring conjecture (Behzad 1965, Vizing 1968) — maxDegree le five",
+          "kind": "known",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "curated-override"
+        },
+        {
+          "id": "opg-behzads-conjecture",
+          "program": "Open Problem Garden",
+          "program_slug": "open-problem-garden",
+          "title": "Total Colouring Conjecture",
+          "kind": "unformalized",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "one-third-two-thirds-conjecture",
+      "title": "The 1/3–2/3 Conjecture",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "wp-1-3-2-3-conjecture",
+          "program": "Wikipedia list (not formalized)",
+          "program_slug": "wikipedia-list-not-formalized",
+          "title": "1/3–2/3 conjecture",
+          "kind": "unformalized",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "zariski-cancellation-problem",
+      "title": "The Zariski Cancellation Problem",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "Arxiv.2208.14736.zariski_cancellation_problem.variants.dim_one",
+          "program": "arXiv papers",
+          "program_slug": "arxiv-papers",
+          "title": "Zariski Cancellation — dim one",
+          "kind": "known",
+          "site_solved_flag": true,
+          "relation": "variant",
+          "via": "normalized-title"
+        },
+        {
+          "id": "Arxiv.2208.14736.zariski_cancellation_problem.variants.dim_two",
+          "program": "arXiv papers",
+          "program_slug": "arxiv-papers",
+          "title": "Zariski Cancellation — dim two",
+          "kind": "known",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "normalized-title"
+        },
+        {
+          "id": "Arxiv.2208.14736.zariski_cancellation_problem.variants.false_pos_card",
+          "program": "arXiv papers",
+          "program_slug": "arxiv-papers",
+          "title": "Zariski Cancellation — false pos card",
+          "kind": "known",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "kothe-conjecture",
+      "title": "Köthe's Conjecture",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "Koethe.KotheConjecture",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Köthe conjecture — KotheConjecture",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        },
+        {
+          "id": "Koethe.KotherConjecture.variants.general_matrix",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Köthe conjecture — general matrix",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "normalized-title"
+        },
+        {
+          "id": "Koethe.KotherConjecture.variants.le_KotherRadical",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Köthe conjecture — le KotherRadical",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "normalized-title"
+        },
+        {
+          "id": "Koethe.KotherConjecture.variants.matrixOver_KotherRadical",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Köthe conjecture — matrixOver KotherRadical",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "normalized-title"
+        },
+        {
+          "id": "Koethe.KotherConjecture.variants.two_by_two_matrix",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Köthe conjecture — two by two matrix",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "normalized-title"
+        },
+        {
+          "id": "Koethe.amitsur_conjecture",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Köthe conjecture — amitsur conjecture",
+          "kind": "known",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "vaught-conjecture",
+      "title": "Vaught's Conjecture",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "VaughtConjecture.vaught_conjecture",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Vaught conjecture",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "hall-conjecture",
+      "title": "Hall's Conjecture",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "Hall.danilov",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Hall's conjecture — danilov",
+          "kind": "known",
+          "site_solved_flag": true,
+          "relation": "variant",
+          "via": "normalized-title"
+        },
+        {
+          "id": "Hall.hall_conjecture",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Hall's conjecture — hall conjecture",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        },
+        {
+          "id": "Hall.weak_hall_conjecture",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Hall's conjecture — weak hall conjecture",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "catalan-dickson-conjecture",
+      "title": "The Catalan–Dickson Conjecture (Aliquot Sequences)",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "wp-catalan-dickson-conjecture-on-aliquot-sequences",
+          "program": "Wikipedia list (not formalized)",
+          "program_slug": "wikipedia-list-not-formalized",
+          "title": "Catalan–Dickson conjecture on aliquot sequences",
+          "kind": "unformalized",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "lehmer-tau-conjecture",
+      "title": "Lehmer's Conjecture on the Ramanujan Tau Function",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "RamanujanTau.lehmer_ramanujan_tau",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Ramanujan τ-function — lehmer ramanujan tau",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "restriction-conjecture",
+      "title": "The Restriction Conjecture",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "wpc-restriction-conjecture",
+          "program": "Wikipedia (not formalized)",
+          "program_slug": "wikipedia-not-formalized",
+          "title": "Stein's Fourier restriction conjecture",
+          "kind": "unformalized",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "bochner-riesz-conjecture",
+      "title": "The Bochner–Riesz Conjecture",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "wp-bochner-riesz-conjecture",
+          "program": "Wikipedia list (not formalized)",
+          "program_slug": "wikipedia-list-not-formalized",
+          "title": "Bochner–Riesz conjecture",
+          "kind": "unformalized",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "furstenberg-conjecture",
+      "title": "Furstenberg's ×2 ×3 Conjecture",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "Bugeaud06.furstenberg_two_three",
+          "program": "Books",
+          "program_slug": "books",
+          "title": "Furstenberg's theorem",
+          "kind": "known",
+          "site_solved_flag": false,
+          "relation": "related",
+          "via": "curated-override"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "palis-conjecture",
+      "title": "The Palis Conjecture (Finitude / Density of Attractors)",
+      "atlas_status": "open",
+      "matches": [],
+      "signals": []
+    },
+    {
+      "slug": "arnold-diffusion",
+      "title": "Arnold Diffusion (Genericity)",
+      "atlas_status": "active-progress",
+      "matches": [],
+      "signals": []
+    },
+    {
+      "slug": "cherlin-zilber-conjecture",
+      "title": "The Cherlin–Zilber Algebraicity Conjecture",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "wp-cherlin-zilber-conjecture",
+          "program": "Wikipedia list (not formalized)",
+          "program_slug": "wikipedia-list-not-formalized",
+          "title": "Cherlin–Zilber conjecture",
+          "kind": "unformalized",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "ryser-conjecture",
+      "title": "Ryser's Conjecture (Hypergraph Covering)",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "wp-ryser-s-conjecture",
+          "program": "Wikipedia list (not formalized)",
+          "program_slug": "wikipedia-list-not-formalized",
+          "title": "Ryser's conjecture",
+          "kind": "unformalized",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "hadwiger-covering-conjecture",
+      "title": "The Hadwiger Covering Conjecture",
+      "atlas_status": "open",
+      "matches": [],
+      "signals": []
+    },
+    {
+      "slug": "kelvin-problem",
+      "title": "The Kelvin Problem (Optimal Space Partition)",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "wp-weaire-phelan-structure",
+          "program": "Wikipedia list (not formalized)",
+          "program_slug": "wikipedia-list-not-formalized",
+          "title": "Weaire–Phelan structure",
+          "kind": "unformalized",
+          "site_solved_flag": false,
+          "relation": "related",
+          "via": "curated-override"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "self-avoiding-walk",
+      "title": "Self-Avoiding Walk (Scaling & Connective Constant)",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "wp-finding-a-function-to-model-n-step-self-avoiding-walks",
+          "program": "Wikipedia list (not formalized)",
+          "program_slug": "wikipedia-list-not-formalized",
+          "title": "Finding a function to model n-step self-avoiding walks",
+          "kind": "unformalized",
+          "site_solved_flag": false,
+          "relation": "related",
+          "via": "curated-override"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "kpz-universality",
+      "title": "The KPZ Universality Conjecture",
+      "atlas_status": "active-progress",
+      "matches": [],
+      "signals": []
+    },
+    {
+      "slug": "carmichael-totient-conjecture",
+      "title": "Carmichael's Totient Conjecture",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "CarmichaelTotient.carchimaelTotient_bound",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Carmichael's totient function conjecture — carchimaelTotient bound",
+          "kind": "known",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "curated-override"
+        },
+        {
+          "id": "CarmichaelTotient.charmichaelTotient",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Carmichael's totient function conjecture — charmichaelTotient",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "giuga-conjecture",
+      "title": "Giuga's Conjecture",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "AgohGiuga.agoh_giuga",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Agoh-Giuga conjecture — agoh giuga",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "related",
+          "via": "curated-override"
+        },
+        {
+          "id": "AgohGiuga.agoh_giuga.variants.giuga",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Agoh-Giuga conjecture",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        },
+        {
+          "id": "opg-giugas-conjecture-on-primality",
+          "program": "Open Problem Garden",
+          "program_slug": "open-problem-garden",
+          "title": "Giuga's Conjecture on Primality",
+          "kind": "unformalized",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "pillai-conjecture",
+      "title": "Pillai's Conjecture",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "wp-pillai-s-conjecture",
+          "program": "Wikipedia list (not formalized)",
+          "program_slug": "wikipedia-list-not-formalized",
+          "title": "Pillai's conjecture",
+          "kind": "unformalized",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "brennan-conjecture",
+      "title": "Brennan's Conjecture",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "BrennanConjecture.brennan_universalSpectrumBounded",
+          "program": "Wikipedia",
+          "program_slug": "wikipedia",
+          "title": "Brennan's Conjecture",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "dixmier-conjecture",
+      "title": "The Dixmier Conjecture",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "Arxiv.math.0608009.dixmier_conjecture.variants.dimension_one",
+          "program": "arXiv papers",
+          "program_slug": "arxiv-papers",
+          "title": "The Dixmier Conjecture — dimension one",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "normalized-title"
+        },
+        {
+          "id": "Arxiv.math.0608009.dixmier_conjecture.variants.dimension_two",
+          "program": "arXiv papers",
+          "program_slug": "arxiv-papers",
+          "title": "The Dixmier Conjecture — dimension two",
+          "kind": "open",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "normalized-title"
+        },
+        {
+          "id": "Arxiv.math.0608009.dixmier_conjecture.variants.poisson_implication",
+          "program": "arXiv papers",
+          "program_slug": "arxiv-papers",
+          "title": "The Dixmier Conjecture — poisson implication",
+          "kind": "known",
+          "site_solved_flag": false,
+          "relation": "variant",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "zilber-pink-conjecture",
+      "title": "The Zilber–Pink Conjecture",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "wp-zilber-pink-conjecture",
+          "program": "Wikipedia list (not formalized)",
+          "program_slug": "wikipedia-list-not-formalized",
+          "title": "Zilber–Pink conjecture",
+          "kind": "unformalized",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "section-conjecture",
+      "title": "Grothendieck's Section Conjecture",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "wp-section-conjecture",
+          "program": "Wikipedia list (not formalized)",
+          "program_slug": "wikipedia-list-not-formalized",
+          "title": "Section conjecture",
+          "kind": "unformalized",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "curated-override"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "fontaine-mazur-conjecture",
+      "title": "The Fontaine–Mazur Conjecture",
+      "atlas_status": "active-progress",
+      "matches": [
+        {
+          "id": "wp-fontaine-mazur-conjecture",
+          "program": "Wikipedia list (not formalized)",
+          "program_slug": "wikipedia-list-not-formalized",
+          "title": "Fontaine–Mazur conjecture",
+          "kind": "unformalized",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "greenberg-conjecture",
+      "title": "Greenberg's Conjecture",
+      "atlas_status": "open",
+      "matches": [
+        {
+          "id": "wp-greenberg-s-conjectures",
+          "program": "Wikipedia list (not formalized)",
+          "program_slug": "wikipedia-list-not-formalized",
+          "title": "Greenberg's conjectures",
+          "kind": "unformalized",
+          "site_solved_flag": false,
+          "relation": "related",
+          "via": "curated-override"
+        }
+      ],
+      "signals": []
+    },
+    {
+      "slug": "telescope-conjecture",
+      "title": "The Telescope Conjecture (Disproved 2023)",
+      "atlas_status": "recently-resolved",
+      "matches": [
+        {
+          "id": "wp-telescope-conjecture",
+          "program": "Wikipedia list (not formalized)",
+          "program_slug": "wikipedia-list-not-formalized",
+          "title": "Telescope conjecture",
+          "kind": "unformalized",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
+      "signals": []
+    }
+  ]
+}

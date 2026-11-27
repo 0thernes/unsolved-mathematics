@@ -61,8 +61,9 @@ not, and cannot be — but that they are:
 2. **reproducible** (same registry ⇒ same ranking, byte for byte),
 3. **falsifiable** (disagree → edit the registry → rerun → argue from the diff).
 
-If you think a problem is mis-ranked, that is a feature request with a concrete
-form: open a PR changing its scores and justify the change in the PR body.
+If you think a problem is mis-ranked, that is a concrete finding: open a GitHub
+issue proposing updated scores with justification (Build Standard R2 commits
+directly to `main` rather than using pull requests).
 
 ## Status vocabulary
 
@@ -80,14 +81,14 @@ Independent of CSS, each problem carries a `status`:
 ## Worked example
 
 The Riemann Hypothesis: difficulty 99, centrality 100, year 1859
-(age_score = clamp((2025−1859)/3,0,100) = clamp(55.3,0,100) = 55.3),
-tractability 8.
+(`age_score = clamp((2026 − 1859) / 3, 0, 100) = clamp(55.667, 0, 100) = 55.667`),
+tractability 8:
 
 ```
-CSS = 0.40·99 + 0.30·100 + 0.20·55.3 + 0.10·(100−8)
-    = 39.6 + 30 + 11.07 + 9.2
-    = 89.87
+CSS = 0.40·99 + 0.30·100 + 0.20·55.6667 + 0.10·(100−8)
+    = 39.6 + 30.0 + 11.1333 + 9.2
+    = 89.933
 ```
 
-That places RH at or near the summit — which matches mathematical consensus
-about its difficulty and centrality, a sanity check that the weighting behaves.
+That matches `data/problems.json` and `RANKING.md` (`89.933`) verbatim, placing RH
+at the summit — matching mathematical consensus about its difficulty and centrality.

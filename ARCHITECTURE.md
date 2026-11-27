@@ -70,6 +70,10 @@ Heading-aware, token-aware chunker → JSONL corpus → BM25 (zero-dep) or dense
 - `methodology/` — ranking formula and sourcing standards.
 - `kanban/` — the live research board.
 
+### 3.6 External program mirror (`data/external/`, `docs/external/`)
+
+`scripts/sync_external_programs.py` mirrors the public [Left to Solve](https://lefttosolve.com/programs) program catalogue once per day (`.github/workflows/sync-external.yml`): program-level counts and provenance in `data/external/lefttosolve/snapshot.json`, a formal-statement item index per program in `items/*.jsonl`, an append-only `history.jsonl`, and a deterministic Atlas crosswalk (`crosswalk.json`, curated via `data/external/crosswalk-overrides.yaml`). This layer is deliberately **outside** `data/problems.yaml`, `data/MANIFEST.sha256` and the RAG corpus: it changes daily, carries its own content SHA-256, is verified offline by `--check` in CI, and can only raise human-review signals — it never edits an Atlas status.
+
 ## 4. Entity model (summary)
 
 The atlas is, conceptually, a small graph database flattened into files. The
@@ -115,16 +119,16 @@ The full ER specification, including cardinalities and the "ERP" (Entity-
 Relationship-Process) operational layer, is in
 [docs/architecture/ERD.md](docs/architecture/ERD.md).
 
-## 5. Build & CI
+## 5. Build, Formal Core & CI
 
 | Workflow | Trigger | Does |
 |----------|---------|------|
-| `ci.yml` | push / PR | install deps, `generate.py --check`, build corpus, run tests |
-| `validate-registry.yml` | push to `data/**` | schema-validate the registry, fail on drift |
-| `pages.yml` *(optional)* | push to `main` | publish the atlas as a static site |
+| `ci.yml` | push to `main` / manual | Windows + Ubuntu verification ladder (pytest, Hypothesis, mutation, manifest, `.tsr`/`.ots` timestamps), Linux `bwrap` 6-kernel Lean 4.35.0 replay + live negative kernel test, report-only `ruff`/`mypy`/`gitleaks`/`osv-scanner`/Build Standard audit |
+| `validate-registry.yml` | push to `data/**`, `schema/**`, `scripts/**`, `lean/**` | Schema, view freshness, proof-claim sweep, retraction, axiom-parity, manifest & timestamp checks |
+| `pages.yml` | push to `main` | Build and deploy live Atlas Explorer (`_site/index.html`) + 8-domain Lean Proof Blueprint (`_site/blueprint.html`) |
+| `release.yml` | push `v*` tag | Package reproducible tarball, white paper PDF & arXiv bundle, `.tsr`/`.ots` timestamps, `SHA256SUMS`, SLSA provenance (`attest-build-provenance@v4`), and GitHub Release |
 
-CI fails if the committed `RANKING.md` / README table is stale relative to the
-registry — the generated views must always match their source.
+CI reports immediately if the committed `RANKING.md`, README table, `data/MANIFEST.sha256`, or verbatim `#print axioms` block drifts from canonical sources.
 
 ## 6. Extending
 

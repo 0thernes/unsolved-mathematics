@@ -6,7 +6,7 @@ module
 # FormalAtlas.Defs — Minimal Trusted Definitions
 
 Pure Lean 4 definitions (no Mathlib dependency) for the eight open-problem
-structural cores formalized in The Unsolved Mathematics Atlas (`v0.5.0`):
+structural cores formalized in The Unsolved Mathematics Atlas (`v0.7.0`):
   1. Collatz Conjecture & 3n-1 Sibling Control
   2. Erdős–Straus Conjecture (4/n = 1/x + 1/y + 1/z)
   3. Lonely Runner Conjecture (exact rational circular distance)
@@ -14,7 +14,7 @@ structural cores formalized in The Unsolved Mathematics Atlas (`v0.5.0`):
   5. Prime Infinitude, Prime Gaps & Twin Primes (`IsPrime`)
   6. Goldbach's Conjecture (binary prime sums)
   7. Odd Perfect Numbers & Mersenne Primes (`divSum`, `IsPerfect`)
-  8. Ramsey Theory (`HasMonoTriangle` on complete graphs `K_k`)
+  8. Ramsey Theory (`HasMonoTriangle`, `HasColorTriangle`, `HasColorK4` on `K_k`)
 
 Every definition is intentionally elementary and `@[expose]`d so a mathematician
 can audit statement fidelity against the published literature in under two minutes.
@@ -73,6 +73,36 @@ namespace FormalAtlas
 @[expose] public def rotateWordN : Nat → List Bool → List Bool
   | 0, w => w
   | k + 1, w => rotateWordN k (rotateWord w)
+
+/-- `i`-th bit of the infinite periodic extension `w^∞` (`false` fallback if `w = []`). -/
+@[expose] public def periodicBit (w : List Bool) (i : Nat) : Bool :=
+  w.getD (i % w.length) false
+
+/-- Length-`k` slice of the infinite periodic word `w^∞` starting at offset `start`. -/
+@[expose] public def periodicPrefixFrom (w : List Bool) (start : Nat) : Nat → List Bool
+  | 0 => []
+  | k + 1 => periodicBit w start :: periodicPrefixFrom w (start + 1) k
+
+/-- Length-`k` prefix of the infinite periodic parity word `w^∞`. -/
+@[expose] public def periodicPrefix (w : List Bool) (k : Nat) : List Bool :=
+  periodicPrefixFrom w 0 k
+
+/-- Exact cleared-denominator periodic spine denominator `D(w) = 2^|w| - 3^(o(w))`
+    (strictly odd whenever `|w| ≥ 1`). -/
+@[expose] public def spineDenom (w : List Bool) : Int :=
+  (2 : Int) ^ w.length - (3 : Int) ^ (wordOddCount w)
+
+/-- Zero-workspace reversible catalytic register evaluation of the Collatz cylinder affine law:
+    borrows an arbitrary pre-filled catalyst `cat`, accumulates `T^d(2^d q + r)` into `acc`,
+    and uncomputes `cat` identically back to its initial value. -/
+@[expose] public def catCollatzStep (d : Nat) (q r acc cat : Int) : Int × Int :=
+  let c1 := cat + (3 : Int) ^ (oddCount T d r) * q
+  let c2 := c1 + iter T d r
+  let acc1 := acc + c2
+  let acc2 := acc1 - cat
+  let c3 := c2 - iter T d r
+  let c4 := c3 - (3 : Int) ^ (oddCount T d r) * q
+  (acc2, c4)
 
 -- ============================================================================
 -- 2. Erdős–Straus Conjecture (exact denominator-cleared form)
