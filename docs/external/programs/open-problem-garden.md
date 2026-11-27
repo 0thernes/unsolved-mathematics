@@ -14,23 +14,23 @@
 
 [Program page](https://lefttosolve.com/programs/Open%20Problem%20Garden) · Problems from the Open Problem Garden wiki (graph theory, combinatorics, number theory…), not yet stated in Lean.
 
-Targets 316 · open 316 · solved by kind (site claim): `0` · kinds open/known/warmup/unformalized/other = 0/0/0/316/0 · snapshot `f1bcc922a11d5418` (`2026-11-27T05:46:57Z`).
+Targets 316 · open 316 · solved by kind (site claim): `open: 6` · kinds open/known/warmup/unformalized/other = 67/0/0/249/0 · snapshot `7cb07abf0cea37cb` (`2026-11-27T17:43:57Z`).
 
 Back to [all programs](../PROGRAMS.md).
 
 | # | Item id | Title | Kind | Fields | Prize | Site-solved flag |
 |---:|---|---|---|---|---|---|
-| 1 | [`opg-2-accessibility-of-primes`](https://lefttosolve.com/p/opg-2-accessibility-of-primes) | 2-accessibility of primes | unformalized | Combinatorics |  |  |
+| 1 | [`opg-2-accessibility-of-primes`](https://lefttosolve.com/p/opg-2-accessibility-of-primes) | 2-accessibility of primes | open | Combinatorics |  |  |
 | 2 | [`opg-3-accessibility-of-fibonacci-numbers`](https://lefttosolve.com/p/opg-3-accessibility-of-fibonacci-numbers) | 3-accessibility of Fibonacci numbers | unformalized | Combinatorics |  |  |
 | 3 | [`opg-3-colourability-of-arrangements-of-great-circles`](https://lefttosolve.com/p/opg-3-colourability-of-arrangements-of-great-circles) | 3-Colourability of Arrangements of Great Circles | unformalized | Combinatorics |  |  |
 | 4 | [`opg-3-decomposition-conjecture`](https://lefttosolve.com/p/opg-3-decomposition-conjecture) | 3-Decomposition Conjecture | unformalized | Combinatorics |  |  |
-| 5 | [`opg-3-edge-coloring-conjecture`](https://lefttosolve.com/p/opg-3-edge-coloring-conjecture) | 3-Edge-Coloring Conjecture | unformalized | Combinatorics |  |  |
-| 6 | [`opg-3-flow-conjecture`](https://lefttosolve.com/p/opg-3-flow-conjecture) | 3-flow conjecture | unformalized | Combinatorics |  |  |
-| 7 | [`opg-4-connected-graphs-are-not-uniquely-hamiltonian`](https://lefttosolve.com/p/opg-4-connected-graphs-are-not-uniquely-hamiltonian) | 4-connected graphs are not uniquely hamiltonian | unformalized | Combinatorics |  |  |
+| 5 | [`opg-3-edge-coloring-conjecture`](https://lefttosolve.com/p/opg-3-edge-coloring-conjecture) | 3-Edge-Coloring Conjecture | open | Combinatorics |  |  |
+| 6 | [`opg-3-flow-conjecture`](https://lefttosolve.com/p/opg-3-flow-conjecture) | 3-flow conjecture | open | Combinatorics |  |  |
+| 7 | [`opg-4-connected-graphs-are-not-uniquely-hamiltonian`](https://lefttosolve.com/p/opg-4-connected-graphs-are-not-uniquely-hamiltonian) | 4-connected graphs are not uniquely hamiltonian | open | Combinatorics |  |  |
 | 8 | [`opg-4-flow-conjecture`](https://lefttosolve.com/p/opg-4-flow-conjecture) | 4-flow conjecture | unformalized | Combinatorics |  |  |
-| 9 | [`opg-5-flow-conjecture`](https://lefttosolve.com/p/opg-5-flow-conjecture) | 5-flow conjecture | unformalized | Combinatorics |  |  |
+| 9 | [`opg-5-flow-conjecture`](https://lefttosolve.com/p/opg-5-flow-conjecture) | 5-flow conjecture | open | Combinatorics |  |  |
 | 10 | [`opg-5-local-tensions`](https://lefttosolve.com/p/opg-5-local-tensions) | 5-local-tensions | unformalized | Combinatorics |  |  |
-| 11 | [`opg-57-regular-moore-graph`](https://lefttosolve.com/p/opg-57-regular-moore-graph) | 57-regular Moore graph? | unformalized | Combinatorics |  |  |
+| 11 | [`opg-57-regular-moore-graph`](https://lefttosolve.com/p/opg-57-regular-moore-graph) | 57-regular Moore graph? | open | Combinatorics |  |  |
 | 12 | [`opg-a-conjecture-about-direct-product-of-funcoids`](https://lefttosolve.com/p/opg-a-conjecture-about-direct-product-of-funcoids) | A conjecture about direct product of funcoids | unformalized | General Topology |  |  |
 | 13 | [`opg-a-conjecture-on-iterated-circumcentres`](https://lefttosolve.com/p/opg-a-conjecture-on-iterated-circumcentres) | A conjecture on iterated circumcentres | unformalized | Geometry |  |  |
 | 14 | [`opg-a-diagram-about-funcoids-and-reloids`](https://lefttosolve.com/p/opg-a-diagram-about-funcoids-and-reloids) | A diagram about funcoids and reloids | unformalized | General Topology |  |  |
@@ -45,17 +45,17 @@ Back to [all programs](../PROGRAMS.md).
 | 23 | [`opg-a-sextic-counterexample-to-eulers-sum-of-powers-conjecture`](https://lefttosolve.com/p/opg-a-sextic-counterexample-to-eulers-sum-of-powers-conjecture) | A sextic counterexample to Euler's sum of powers conjecture | unformalized | Number Theory |  |  |
 | 24 | [`opg-a-transversal-achievement-game-on-a-square-grid`](https://lefttosolve.com/p/opg-a-transversal-achievement-game-on-a-square-grid) | Transversal achievement game on a square grid | unformalized | Combinatorics |  |  |
 | 25 | [`opg-acyclic-edge-coloring`](https://lefttosolve.com/p/opg-acyclic-edge-coloring) | Acyclic edge-colouring | unformalized | Combinatorics |  |  |
-| 26 | [`opg-adams-conjecture`](https://lefttosolve.com/p/opg-adams-conjecture) | Ádám's Conjecture | unformalized | Combinatorics |  |  |
+| 26 | [`opg-adams-conjecture`](https://lefttosolve.com/p/opg-adams-conjecture) | Ádám's Conjecture | open | Combinatorics |  |  |
 | 27 | [`opg-alexas-conjecture-on-primality`](https://lefttosolve.com/p/opg-alexas-conjecture-on-primality) | Alexa's Conjecture on Primality | unformalized | Number Theory |  |  |
 | 28 | [`opg-algorithm-for-graph-homomorphisms`](https://lefttosolve.com/p/opg-algorithm-for-graph-homomorphisms) | Algorithm for graph homomorphisms | unformalized | Combinatorics |  |  |
 | 29 | [`opg-almost-all-non-hamiltonian-3-regular-graphs-are-1-connected`](https://lefttosolve.com/p/opg-almost-all-non-hamiltonian-3-regular-graphs-are-1-connected) | Almost all non-Hamiltonian 3-regular graphs are 1-connected | unformalized | Combinatorics |  |  |
 | 30 | [`opg-another-conjecture-about-reloids-and-funcoids`](https://lefttosolve.com/p/opg-another-conjecture-about-reloids-and-funcoids) | Another conjecture about reloids and funcoids | unformalized | General Topology |  |  |
 | 31 | [`opg-antichains-in-the-cycle-continuous-order`](https://lefttosolve.com/p/opg-antichains-in-the-cycle-continuous-order) | Antichains in the cycle continuous order | unformalized | Combinatorics |  |  |
-| 32 | [`opg-antidirected-trees-in-digraphs`](https://lefttosolve.com/p/opg-antidirected-trees-in-digraphs) | Antidirected trees in digraphs | unformalized | Combinatorics |  |  |
+| 32 | [`opg-antidirected-trees-in-digraphs`](https://lefttosolve.com/p/opg-antidirected-trees-in-digraphs) | Antidirected trees in digraphs | open | Combinatorics |  |  |
 | 33 | [`opg-approximation-ratio-for-k-outerplanar-graphs`](https://lefttosolve.com/p/opg-approximation-ratio-for-k-outerplanar-graphs) | Approximation ratio for k-outerplanar graphs | unformalized | Combinatorics |  |  |
 | 34 | [`opg-approximation-ratio-for-maximum-edge-disjoint-paths-problem`](https://lefttosolve.com/p/opg-approximation-ratio-for-maximum-edge-disjoint-paths-problem) | Approximation Ratio for Maximum Edge Disjoint Paths problem | unformalized | Combinatorics |  |  |
-| 35 | [`opg-arc-disjoint-directed-cycles-in-regular-directed-graphs`](https://lefttosolve.com/p/opg-arc-disjoint-directed-cycles-in-regular-directed-graphs) | Arc-disjoint directed cycles in regular directed graphs | unformalized | Combinatorics |  |  |
-| 36 | [`opg-arc-disjoint-out-branching-and-in-branching`](https://lefttosolve.com/p/opg-arc-disjoint-out-branching-and-in-branching) | Arc-disjoint out-branching and in-branching | unformalized | Combinatorics |  |  |
+| 35 | [`opg-arc-disjoint-directed-cycles-in-regular-directed-graphs`](https://lefttosolve.com/p/opg-arc-disjoint-directed-cycles-in-regular-directed-graphs) | Arc-disjoint directed cycles in regular directed graphs | open | Combinatorics |  |  |
+| 36 | [`opg-arc-disjoint-out-branching-and-in-branching`](https://lefttosolve.com/p/opg-arc-disjoint-out-branching-and-in-branching) | Arc-disjoint out-branching and in-branching | open | Combinatorics |  |  |
 | 37 | [`opg-arc-disjoint-strongly-connected-spanning-subdigraphs`](https://lefttosolve.com/p/opg-arc-disjoint-strongly-connected-spanning-subdigraphs) | Arc-disjoint strongly connected spanning subdigraphs | unformalized | Combinatorics |  |  |
 | 38 | [`opg-are-critical-k-forests-tight`](https://lefttosolve.com/p/opg-are-critical-k-forests-tight) | ¿Are critical k-forests tight? | unformalized | Combinatorics |  |  |
 | 39 | [`opg-are-different-notions-of-the-crossing-number-the-same`](https://lefttosolve.com/p/opg-are-different-notions-of-the-crossing-number-the-same) | Are different notions of the crossing number the same? | unformalized | Combinatorics |  |  |
@@ -66,30 +66,30 @@ Back to [all programs](../PROGRAMS.md).
 | 44 | [`opg-average-diameter-of-a-bounded-cell-of-a-simple-arrangement`](https://lefttosolve.com/p/opg-average-diameter-of-a-bounded-cell-of-a-simple-arrangement) | Average diameter of a bounded cell of a simple arrangement | unformalized | Geometry |  |  |
 | 45 | [`opg-bases-of-many-weights`](https://lefttosolve.com/p/opg-bases-of-many-weights) | Bases of many weights | unformalized | Combinatorics |  |  |
 | 46 | [`opg-behzads-conjecture`](https://lefttosolve.com/p/opg-behzads-conjecture) | Total Colouring Conjecture | unformalized | Combinatorics |  |  |
-| 47 | [`opg-bene-conjecture`](https://lefttosolve.com/p/opg-bene-conjecture) | Beneš Conjecture | unformalized | Combinatorics |  |  |
+| 47 | [`opg-bene-conjecture`](https://lefttosolve.com/p/opg-bene-conjecture) | Beneš Conjecture | open | Combinatorics |  | yes |
 | 48 | [`opg-bene-conjecture-graph-theoretic-form-0`](https://lefttosolve.com/p/opg-bene-conjecture-graph-theoretic-form-0) | Beneš Conjecture (graph-theoretic form) | unformalized | Combinatorics |  |  |
 | 49 | [`opg-big-line-or-big-clique-in-planar-point-sets`](https://lefttosolve.com/p/opg-big-line-or-big-clique-in-planar-point-sets) | Big Line or Big Clique in Planar Point Sets | unformalized | Geometry |  |  |
 | 50 | [`opg-black-and-white-cycle-conjecture`](https://lefttosolve.com/p/opg-black-and-white-cycle-conjecture) | Black and White Cycle Conjecture | unformalized | Combinatorics |  |  |
 | 51 | [`opg-blatter-specker-theorem-for-ternary-relations`](https://lefttosolve.com/p/opg-blatter-specker-theorem-for-ternary-relations) | Blatter-Specker Theorem for ternary relations | unformalized | Logic & Foundations |  |  |
 | 52 | [`opg-book-thickness-of-subdivisions`](https://lefttosolve.com/p/opg-book-thickness-of-subdivisions) | Book Thickness of Subdivisions | unformalized | Combinatorics |  |  |
-| 53 | [`opg-bouchets-6-flow-conjecture`](https://lefttosolve.com/p/opg-bouchets-6-flow-conjecture) | Bouchet's 6-flow conjecture | unformalized | Combinatorics |  |  |
+| 53 | [`opg-bouchets-6-flow-conjecture`](https://lefttosolve.com/p/opg-bouchets-6-flow-conjecture) | Bouchet's 6-flow conjecture | open | Combinatorics |  |  |
 | 54 | [`opg-bounding-the-chromatic-number-of-triangle-free-graphs-with-fixed-maximum-degree`](https://lefttosolve.com/p/opg-bounding-the-chromatic-number-of-triangle-free-graphs-with-fixed-maximum-degree) | Bounding the chromatic number of triangle-free graphs with fixed maximum degree | unformalized | Combinatorics |  |  |
 | 55 | [`opg-c-r-stability-conjecture`](https://lefttosolve.com/p/opg-c-r-stability-conjecture) | $C^r$ Stability Conjecture | unformalized | Real Functions |  |  |
-| 56 | [`opg-caccetta-haggkvist-conjecture`](https://lefttosolve.com/p/opg-caccetta-haggkvist-conjecture) | Caccetta-Häggkvist Conjecture | unformalized | Combinatorics |  |  |
+| 56 | [`opg-caccetta-haggkvist-conjecture`](https://lefttosolve.com/p/opg-caccetta-haggkvist-conjecture) | Caccetta-Häggkvist Conjecture | open | Combinatorics |  |  |
 | 57 | [`opg-characterizing-aleph-0-aleph-1-graphs`](https://lefttosolve.com/p/opg-characterizing-aleph-0-aleph-1-graphs) | Characterizing (aleph_0,aleph_1)-graphs | unformalized | Combinatorics |  |  |
-| 58 | [`opg-chords-of-longest-cycles`](https://lefttosolve.com/p/opg-chords-of-longest-cycles) | Chords of longest cycles | unformalized | Combinatorics |  |  |
+| 58 | [`opg-chords-of-longest-cycles`](https://lefttosolve.com/p/opg-chords-of-longest-cycles) | Chords of longest cycles | open | Combinatorics |  |  |
 | 59 | [`opg-chromatic-number-of-associahedron`](https://lefttosolve.com/p/opg-chromatic-number-of-associahedron) | Chromatic number of associahedron | unformalized | Geometry |  |  |
 | 60 | [`opg-chromatic-number-of-common-graphs`](https://lefttosolve.com/p/opg-chromatic-number-of-common-graphs) | Chromatic Number of Common Graphs | unformalized | Combinatorics |  |  |
-| 61 | [`opg-chromatic-number-of-random-lifts-of-complete-graphs`](https://lefttosolve.com/p/opg-chromatic-number-of-random-lifts-of-complete-graphs) | Chromatic number of random lifts of complete graphs | unformalized | Combinatorics |  |  |
+| 61 | [`opg-chromatic-number-of-random-lifts-of-complete-graphs`](https://lefttosolve.com/p/opg-chromatic-number-of-random-lifts-of-complete-graphs) | Chromatic number of random lifts of complete graphs | open | Combinatorics |  |  |
 | 62 | [`opg-circular-choosability-of-planar-graphs`](https://lefttosolve.com/p/opg-circular-choosability-of-planar-graphs) | Circular choosability of planar graphs | unformalized | Combinatorics |  |  |
 | 63 | [`opg-circular-chromatic-number-of-triangle-free-planar-graphs`](https://lefttosolve.com/p/opg-circular-chromatic-number-of-triangle-free-planar-graphs) | Circular coloring triangle-free subcubic planar graphs | unformalized | Combinatorics |  |  |
 | 64 | [`opg-circular-colouring-the-orthogonality-graph`](https://lefttosolve.com/p/opg-circular-colouring-the-orthogonality-graph) | Circular colouring the orthogonality graph | unformalized | Combinatorics |  |  |
-| 65 | [`opg-circular-flow-number-of-regular-class-1-graphs`](https://lefttosolve.com/p/opg-circular-flow-number-of-regular-class-1-graphs) | Circular flow number of regular class 1 graphs | unformalized | Combinatorics |  |  |
-| 66 | [`opg-circular-flow-numbers-of-r-graphs`](https://lefttosolve.com/p/opg-circular-flow-numbers-of-r-graphs) | Circular flow numbers of $r$-graphs | unformalized | Combinatorics |  |  |
+| 65 | [`opg-circular-flow-number-of-regular-class-1-graphs`](https://lefttosolve.com/p/opg-circular-flow-number-of-regular-class-1-graphs) | Circular flow number of regular class 1 graphs | open | Combinatorics |  |  |
+| 66 | [`opg-circular-flow-numbers-of-r-graphs`](https://lefttosolve.com/p/opg-circular-flow-numbers-of-r-graphs) | Circular flow numbers of $r$-graphs | open | Combinatorics |  |  |
 | 67 | [`opg-closing-lemma-for-diffeomorphism-dynamical-systems`](https://lefttosolve.com/p/opg-closing-lemma-for-diffeomorphism-dynamical-systems) | Closing Lemma for Diffeomorphism (Dynamical Systems) | unformalized | General Topology |  |  |
 | 68 | [`opg-coloring-and-immersion`](https://lefttosolve.com/p/opg-coloring-and-immersion) | Coloring and immersion | unformalized | Combinatorics |  |  |
 | 69 | [`opg-coloring-random-subgraphs`](https://lefttosolve.com/p/opg-coloring-random-subgraphs) | Coloring random subgraphs | unformalized | Combinatorics |  |  |
-| 70 | [`opg-coloring-the-odd-distance-graph`](https://lefttosolve.com/p/opg-coloring-the-odd-distance-graph) | Coloring the Odd Distance Graph | unformalized | Combinatorics |  |  |
+| 70 | [`opg-coloring-the-odd-distance-graph`](https://lefttosolve.com/p/opg-coloring-the-odd-distance-graph) | Coloring the Odd Distance Graph | open | Combinatorics |  | yes |
 | 71 | [`opg-coloring-the-union-of-degenerate-graphs`](https://lefttosolve.com/p/opg-coloring-the-union-of-degenerate-graphs) | Coloring the union of degenerate graphs | unformalized | Combinatorics |  |  |
 | 72 | [`opg-complete-bipartite-subgraphs-of-perfect-graphs`](https://lefttosolve.com/p/opg-complete-bipartite-subgraphs-of-perfect-graphs) | Complete bipartite subgraphs of perfect graphs | unformalized | Combinatorics |  |  |
 | 73 | [`opg-complexity-of-square-root-sum`](https://lefttosolve.com/p/opg-complexity-of-square-root-sum) | Complexity of square-root sum | unformalized | Computer Science |  |  |
@@ -106,14 +106,14 @@ Back to [all programs](../PROGRAMS.md).
 | 84 | [`opg-crossing-numbers-and-coloring`](https://lefttosolve.com/p/opg-crossing-numbers-and-coloring) | Crossing numbers and coloring | unformalized | Combinatorics |  |  |
 | 85 | [`opg-crossing-sequences`](https://lefttosolve.com/p/opg-crossing-sequences) | Crossing sequences | unformalized | Combinatorics |  |  |
 | 86 | [`opg-cube-simplex-conjecture`](https://lefttosolve.com/p/opg-cube-simplex-conjecture) | Cube-Simplex conjecture | unformalized | Geometry |  |  |
-| 87 | [`opg-cycle-double-covers-containing-predefined-2-regular-subgraphs`](https://lefttosolve.com/p/opg-cycle-double-covers-containing-predefined-2-regular-subgraphs) | Cycle Double Covers Containing Predefined 2-Regular Subgraphs | unformalized | Combinatorics |  |  |
+| 87 | [`opg-cycle-double-covers-containing-predefined-2-regular-subgraphs`](https://lefttosolve.com/p/opg-cycle-double-covers-containing-predefined-2-regular-subgraphs) | Cycle Double Covers Containing Predefined 2-Regular Subgraphs | open | Combinatorics |  |  |
 | 88 | [`opg-cyclic-spanning-subdigraph-with-small-cyclomatic-number`](https://lefttosolve.com/p/opg-cyclic-spanning-subdigraph-with-small-cyclomatic-number) | Cyclic spanning subdigraph with small cyclomatic number | unformalized | Combinatorics |  |  |
 | 89 | [`opg-d-urers-conjecture`](https://lefttosolve.com/p/opg-d-urers-conjecture) | Durer's Conjecture | unformalized | Geometry |  |  |
 | 90 | [`opg-decomposing-a-connected-graph-into-paths`](https://lefttosolve.com/p/opg-decomposing-a-connected-graph-into-paths) | Decomposing a connected graph into paths. | unformalized | Combinatorics |  |  |
 | 91 | [`opg-decomposing-an-eulerian-graph-into-cycles`](https://lefttosolve.com/p/opg-decomposing-an-eulerian-graph-into-cycles) | Decomposing an eulerian graph into cycles. | unformalized | Combinatorics |  |  |
 | 92 | [`opg-decomposing-an-eulerian-graph-into-cycles-with-no-two-consecutives-edges-on-a-pr`](https://lefttosolve.com/p/opg-decomposing-an-eulerian-graph-into-cycles-with-no-two-consecutives-edges-on-a-pr) | Decomposing an eulerian graph into cycles with no two consecutives edges on a prescribed eulerian tour. | unformalized | Combinatorics |  |  |
-| 93 | [`opg-decomposing-an-even-tournament-in-directed-paths`](https://lefttosolve.com/p/opg-decomposing-an-even-tournament-in-directed-paths) | Decomposing an even tournament in directed paths. | unformalized | Combinatorics |  |  |
-| 94 | [`opg-decomposing-k-arc-strong-tournament-into-k-spanning-strong-digraphs`](https://lefttosolve.com/p/opg-decomposing-k-arc-strong-tournament-into-k-spanning-strong-digraphs) | Decomposing k-arc-strong tournament into k spanning strong digraphs | unformalized | Combinatorics |  |  |
+| 93 | [`opg-decomposing-an-even-tournament-in-directed-paths`](https://lefttosolve.com/p/opg-decomposing-an-even-tournament-in-directed-paths) | Decomposing an even tournament in directed paths. | open | Combinatorics |  |  |
+| 94 | [`opg-decomposing-k-arc-strong-tournament-into-k-spanning-strong-digraphs`](https://lefttosolve.com/p/opg-decomposing-k-arc-strong-tournament-into-k-spanning-strong-digraphs) | Decomposing k-arc-strong tournament into k spanning strong digraphs | open | Combinatorics |  |  |
 | 95 | [`opg-decomposing-the-prism-of-a-3-connected-cubic-planar-graphs-in-hamilton-cycles`](https://lefttosolve.com/p/opg-decomposing-the-prism-of-a-3-connected-cubic-planar-graphs-in-hamilton-cycles) | Hamilton decomposition of prisms over 3-connected cubic planar graphs | unformalized | Combinatorics |  |  |
 | 96 | [`opg-decomposition-of-completions-of-reloids`](https://lefttosolve.com/p/opg-decomposition-of-completions-of-reloids) | Decomposition of completions of reloids | unformalized | General Topology |  |  |
 | 97 | [`opg-degenerate-colorings-of-planar-graphs`](https://lefttosolve.com/p/opg-degenerate-colorings-of-planar-graphs) | Degenerate colorings of planar graphs | unformalized | Combinatorics |  |  |
@@ -122,15 +122,15 @@ Back to [all programs](../PROGRAMS.md).
 | 100 | [`opg-dings-tau-r-vs-tau-conjecture`](https://lefttosolve.com/p/opg-dings-tau-r-vs-tau-conjecture) | Ding's tau_r vs. tau conjecture | unformalized | Combinatorics |  |  |
 | 101 | [`opg-diracs-conjecture`](https://lefttosolve.com/p/opg-diracs-conjecture) | Dirac's Conjecture | unformalized | Geometry |  |  |
 | 102 | [`opg-direct-proof-of-a-theorem-about-compact-funcoids`](https://lefttosolve.com/p/opg-direct-proof-of-a-theorem-about-compact-funcoids) | Direct proof of a theorem about compact funcoids | unformalized | General Topology |  |  |
-| 103 | [`opg-directed-cycle-of-length-twice-the-minimum-outdegree`](https://lefttosolve.com/p/opg-directed-cycle-of-length-twice-the-minimum-outdegree) | Directed path of length twice the minimum outdegree | unformalized | Combinatorics |  |  |
-| 104 | [`opg-distribution-and-upper-bound-of-mimic-numbers`](https://lefttosolve.com/p/opg-distribution-and-upper-bound-of-mimic-numbers) | Distribution and upper bound of mimic numbers | unformalized | Number Theory |  |  |
+| 103 | [`opg-directed-cycle-of-length-twice-the-minimum-outdegree`](https://lefttosolve.com/p/opg-directed-cycle-of-length-twice-the-minimum-outdegree) | Directed path of length twice the minimum outdegree | open | Combinatorics |  |  |
+| 104 | [`opg-distribution-and-upper-bound-of-mimic-numbers`](https://lefttosolve.com/p/opg-distribution-and-upper-bound-of-mimic-numbers) | Distribution and upper bound of mimic numbers | open | Number Theory |  |  |
 | 105 | [`opg-dividing-up-the-unrestricted-partitions`](https://lefttosolve.com/p/opg-dividing-up-the-unrestricted-partitions) | Dividing up the unrestricted partitions | unformalized | Combinatorics |  |  |
 | 106 | [`opg-divisibility-of-central-binomial-coefficients`](https://lefttosolve.com/p/opg-divisibility-of-central-binomial-coefficients) | Divisibility of central binomial coefficients | unformalized | Number Theory |  |  |
-| 107 | [`opg-do-any-three-longest-paths-in-a-connected-graph-have-a-vertex-in-common`](https://lefttosolve.com/p/opg-do-any-three-longest-paths-in-a-connected-graph-have-a-vertex-in-common) | Do any three longest paths in a connected graph have a vertex in common? | unformalized | Combinatorics |  |  |
+| 107 | [`opg-do-any-three-longest-paths-in-a-connected-graph-have-a-vertex-in-common`](https://lefttosolve.com/p/opg-do-any-three-longest-paths-in-a-connected-graph-have-a-vertex-in-common) | Do any three longest paths in a connected graph have a vertex in common? | open | Combinatorics |  |  |
 | 108 | [`opg-does-the-symmetric-chromatic-function-distinguish-trees`](https://lefttosolve.com/p/opg-does-the-symmetric-chromatic-function-distinguish-trees) | Does the chromatic symmetric function distinguish between trees? | unformalized | Combinatorics |  |  |
 | 109 | [`opg-domination-in-cubic-graphs`](https://lefttosolve.com/p/opg-domination-in-cubic-graphs) | Domination in cubic graphs | unformalized | Combinatorics |  |  |
 | 110 | [`opg-domination-in-plane-triangulations`](https://lefttosolve.com/p/opg-domination-in-plane-triangulations) | Domination in plane triangulations | unformalized | Combinatorics |  |  |
-| 111 | [`opg-double-critical-graph-conjecture`](https://lefttosolve.com/p/opg-double-critical-graph-conjecture) | Double-critical graph conjecture | unformalized | Combinatorics |  |  |
+| 111 | [`opg-double-critical-graph-conjecture`](https://lefttosolve.com/p/opg-double-critical-graph-conjecture) | Double-critical graph conjecture | open | Combinatorics |  |  |
 | 112 | [`opg-drawing-disconnected-graphs-on-surfaces`](https://lefttosolve.com/p/opg-drawing-disconnected-graphs-on-surfaces) | Drawing disconnected graphs on surfaces | unformalized | Combinatorics |  |  |
 | 113 | [`opg-edge-antipodal-colorings-of-cubes`](https://lefttosolve.com/p/opg-edge-antipodal-colorings-of-cubes) | Edge-antipodal colorings of cubes | unformalized | Combinatorics |  |  |
 | 114 | [`opg-edge-colouring-geometric-complete-graphs`](https://lefttosolve.com/p/opg-edge-colouring-geometric-complete-graphs) | Edge-Colouring Geometric Complete Graphs | unformalized | Geometry |  |  |
@@ -138,7 +138,7 @@ Back to [all programs](../PROGRAMS.md).
 | 116 | [`opg-edge-unfolding-convex-polyhedra`](https://lefttosolve.com/p/opg-edge-unfolding-convex-polyhedra) | Edge-Unfolding Convex Polyhedra | unformalized | Geometry |  |  |
 | 117 | [`opg-end-devouring-rays`](https://lefttosolve.com/p/opg-end-devouring-rays) | End-Devouring Rays | unformalized | Combinatorics |  |  |
 | 118 | [`opg-equality-in-a-matroidal-circumference-bound`](https://lefttosolve.com/p/opg-equality-in-a-matroidal-circumference-bound) | Equality in a matroidal circumference bound | unformalized | Combinatorics |  |  |
-| 119 | [`opg-erdos-posa-property-for-long-directed-cycles`](https://lefttosolve.com/p/opg-erdos-posa-property-for-long-directed-cycles) | Erdős-Posa property for long directed cycles | unformalized | Combinatorics |  |  |
+| 119 | [`opg-erdos-posa-property-for-long-directed-cycles`](https://lefttosolve.com/p/opg-erdos-posa-property-for-long-directed-cycles) | Erdős-Posa property for long directed cycles | open | Combinatorics |  |  |
 | 120 | [`opg-erdos-szekeres-conjecture`](https://lefttosolve.com/p/opg-erdos-szekeres-conjecture) | Erdös-Szekeres conjecture | unformalized | Geometry |  |  |
 | 121 | [`opg-even-vs-odd-latin-squares`](https://lefttosolve.com/p/opg-even-vs-odd-latin-squares) | Even vs. odd latin squares | unformalized | Combinatorics |  |  |
 | 122 | [`opg-every-4-connected-toroidal-graph-has-a-hamilton-cycle`](https://lefttosolve.com/p/opg-every-4-connected-toroidal-graph-has-a-hamilton-cycle) | Every 4-connected toroidal graph has a Hamilton cycle | unformalized | Combinatorics |  |  |
@@ -155,11 +155,11 @@ Back to [all programs](../PROGRAMS.md).
 | 133 | [`opg-finding-k-edge-outerplanar-graph-embeddings`](https://lefttosolve.com/p/opg-finding-k-edge-outerplanar-graph-embeddings) | Finding k-edge-outerplanar graph embeddings | unformalized | Combinatorics |  |  |
 | 134 | [`opg-finite-satisfiability-of-positive-horn-logic-entailment`](https://lefttosolve.com/p/opg-finite-satisfiability-of-positive-horn-logic-entailment) | Finite entailment of Positive Horn logic | unformalized | Logic & Foundations |  |  |
 | 135 | [`opg-fixed-point-logic-with-counting`](https://lefttosolve.com/p/opg-fixed-point-logic-with-counting) | Fixed-point logic with counting | unformalized | Logic & Foundations |  |  |
-| 136 | [`opg-forcing-a-2-regular-minor`](https://lefttosolve.com/p/opg-forcing-a-2-regular-minor) | Forcing a 2-regular minor | unformalized | Combinatorics |  |  |
-| 137 | [`opg-forcing-a-k-6-minor`](https://lefttosolve.com/p/opg-forcing-a-k-6-minor) | Forcing a $K_6$-minor | unformalized | Combinatorics |  |  |
+| 136 | [`opg-forcing-a-2-regular-minor`](https://lefttosolve.com/p/opg-forcing-a-2-regular-minor) | Forcing a 2-regular minor | open | Combinatorics |  |  |
+| 137 | [`opg-forcing-a-k-6-minor`](https://lefttosolve.com/p/opg-forcing-a-k-6-minor) | Forcing a $K_6$-minor | open | Combinatorics |  |  |
 | 138 | [`opg-fractional-hadwiger`](https://lefttosolve.com/p/opg-fractional-hadwiger) | Fractional Hadwiger | unformalized | Combinatorics |  |  |
-| 139 | [`opg-frankls-union-closed-sets-conjecture`](https://lefttosolve.com/p/opg-frankls-union-closed-sets-conjecture) | Frankl's union-closed sets conjecture | unformalized | Combinatorics |  |  |
-| 140 | [`opg-friendly-partitions`](https://lefttosolve.com/p/opg-friendly-partitions) | Friendly partitions | unformalized | Combinatorics |  |  |
+| 139 | [`opg-frankls-union-closed-sets-conjecture`](https://lefttosolve.com/p/opg-frankls-union-closed-sets-conjecture) | Frankl's union-closed sets conjecture | open | Combinatorics |  |  |
+| 140 | [`opg-friendly-partitions`](https://lefttosolve.com/p/opg-friendly-partitions) | Friendly partitions | open | Combinatorics |  |  |
 | 141 | [`opg-funcolidal-products-inside-an-inward-reloid`](https://lefttosolve.com/p/opg-funcolidal-products-inside-an-inward-reloid) | Funcoidal products inside an inward reloid | unformalized | General Topology |  |  |
 | 142 | [`opg-gaos-theorem-for-nonabelian-groups`](https://lefttosolve.com/p/opg-gaos-theorem-for-nonabelian-groups) | Gao's theorem for nonabelian groups | unformalized | Number Theory |  |  |
 | 143 | [`opg-general-position-subsets`](https://lefttosolve.com/p/opg-general-position-subsets) | General position subsets | unformalized | Geometry |  |  |
@@ -167,35 +167,35 @@ Back to [all programs](../PROGRAMS.md).
 | 145 | [`opg-generalized-path-connectedness-in-proximity-spaces`](https://lefttosolve.com/p/opg-generalized-path-connectedness-in-proximity-spaces) | Generalized path-connectedness in proximity spaces | unformalized | General Topology |  |  |
 | 146 | [`opg-geodesic-cycles-and-tuttes-theorem`](https://lefttosolve.com/p/opg-geodesic-cycles-and-tuttes-theorem) | Geodesic cycles and Tutte's Theorem | unformalized | Combinatorics |  |  |
 | 147 | [`opg-giugas-conjecture-on-primality`](https://lefttosolve.com/p/opg-giugas-conjecture-on-primality) | Giuga's Conjecture on Primality | unformalized | Number Theory |  |  |
-| 148 | [`opg-goldbergs-conjecture`](https://lefttosolve.com/p/opg-goldbergs-conjecture) | Goldberg's conjecture | unformalized | Combinatorics |  |  |
-| 149 | [`opg-good-edge-labelings`](https://lefttosolve.com/p/opg-good-edge-labelings) | Good Edge Labelings | unformalized | Combinatorics |  |  |
+| 148 | [`opg-goldbergs-conjecture`](https://lefttosolve.com/p/opg-goldbergs-conjecture) | Goldberg's conjecture | open | Combinatorics |  |  |
+| 149 | [`opg-good-edge-labelings`](https://lefttosolve.com/p/opg-good-edge-labelings) | Good Edge Labelings | open | Combinatorics |  |  |
 | 150 | [`opg-grahams-conjecture-on-tree-reconstruction`](https://lefttosolve.com/p/opg-grahams-conjecture-on-tree-reconstruction) | Graham's conjecture on tree reconstruction | unformalized | Combinatorics |  |  |
 | 151 | [`opg-graph-product-of-multifuncoids`](https://lefttosolve.com/p/opg-graph-product-of-multifuncoids) | Graph product of multifuncoids | unformalized | General Topology |  |  |
-| 152 | [`opg-graphs-with-a-forbidden-induced-tree-are-chi-bounded`](https://lefttosolve.com/p/opg-graphs-with-a-forbidden-induced-tree-are-chi-bounded) | Graphs with a forbidden induced tree are chi-bounded | unformalized | Combinatorics |  |  |
+| 152 | [`opg-graphs-with-a-forbidden-induced-tree-are-chi-bounded`](https://lefttosolve.com/p/opg-graphs-with-a-forbidden-induced-tree-are-chi-bounded) | Graphs with a forbidden induced tree are chi-bounded | open | Combinatorics |  |  |
 | 153 | [`opg-growth-of-finitely-presented-groups`](https://lefttosolve.com/p/opg-growth-of-finitely-presented-groups) | Growth of finitely presented groups | unformalized | Group Theory |  |  |
 | 154 | [`opg-grunbaums-conjecture`](https://lefttosolve.com/p/opg-grunbaums-conjecture) | Grunbaum's Conjecture | unformalized | Combinatorics |  |  |
 | 155 | [`opg-half-integral-flow-polynomial-values`](https://lefttosolve.com/p/opg-half-integral-flow-polynomial-values) | Half-integral flow polynomial values | unformalized | Combinatorics |  |  |
-| 156 | [`opg-hamilton-cycle-in-small-d-diregular-graphs`](https://lefttosolve.com/p/opg-hamilton-cycle-in-small-d-diregular-graphs) | Hamilton cycle in small d-diregular graphs | unformalized | Combinatorics |  |  |
-| 157 | [`opg-hamiltonian-cycles-in-line-graphs`](https://lefttosolve.com/p/opg-hamiltonian-cycles-in-line-graphs) | Hamiltonian cycles in line graphs | unformalized | Combinatorics |  |  |
+| 156 | [`opg-hamilton-cycle-in-small-d-diregular-graphs`](https://lefttosolve.com/p/opg-hamilton-cycle-in-small-d-diregular-graphs) | Hamilton cycle in small d-diregular graphs | open | Combinatorics |  |  |
+| 157 | [`opg-hamiltonian-cycles-in-line-graphs`](https://lefttosolve.com/p/opg-hamiltonian-cycles-in-line-graphs) | Hamiltonian cycles in line graphs | open | Combinatorics |  |  |
 | 158 | [`opg-hamiltonian-cycles-in-line-graphs-of-infinite-graphs`](https://lefttosolve.com/p/opg-hamiltonian-cycles-in-line-graphs-of-infinite-graphs) | Hamiltonian cycles in line graphs of infinite graphs | unformalized | Combinatorics |  |  |
 | 159 | [`opg-hamiltonian-cycles-in-powers-of-infinite-graphs`](https://lefttosolve.com/p/opg-hamiltonian-cycles-in-powers-of-infinite-graphs) | Hamiltonian cycles in powers of infinite graphs | unformalized | Combinatorics |  |  |
 | 160 | [`opg-hamiltonian-paths-and-cycles-in-vertex-transitive-graphs`](https://lefttosolve.com/p/opg-hamiltonian-paths-and-cycles-in-vertex-transitive-graphs) | Hamiltonian paths and cycles in vertex transitive graphs | unformalized | Combinatorics |  |  |
 | 161 | [`opg-hamiltonicity-of-cayley-graphs`](https://lefttosolve.com/p/opg-hamiltonicity-of-cayley-graphs) | Hamiltonicity of Cayley graphs | unformalized | Combinatorics |  |  |
 | 162 | [`opg-high-connectivity-no-k-n`](https://lefttosolve.com/p/opg-high-connectivity-no-k-n) | Highly connected graphs with no K_n minor | unformalized | Combinatorics |  |  |
-| 163 | [`opg-high-girth-low-degree-4-chromatic-graphs`](https://lefttosolve.com/p/opg-high-girth-low-degree-4-chromatic-graphs) | 4-regular 4-chromatic graphs of high girth | unformalized | Combinatorics |  |  |
+| 163 | [`opg-high-girth-low-degree-4-chromatic-graphs`](https://lefttosolve.com/p/opg-high-girth-low-degree-4-chromatic-graphs) | 4-regular 4-chromatic graphs of high girth | open | Combinatorics |  |  |
 | 164 | [`opg-highly-arc-transitive-two-ended-digraphs`](https://lefttosolve.com/p/opg-highly-arc-transitive-two-ended-digraphs) | Highly arc transitive two ended digraphs | unformalized | Combinatorics |  |  |
-| 165 | [`opg-hoand-reed-conjecture`](https://lefttosolve.com/p/opg-hoand-reed-conjecture) | Hoàng-Reed Conjecture | unformalized | Combinatorics |  |  |
-| 166 | [`opg-inequality-for-square-summable-complex-series`](https://lefttosolve.com/p/opg-inequality-for-square-summable-complex-series) | Inequality for square summable complex series | unformalized | Real Functions |  |  |
+| 165 | [`opg-hoand-reed-conjecture`](https://lefttosolve.com/p/opg-hoand-reed-conjecture) | Hoàng-Reed Conjecture | open | Combinatorics |  |  |
+| 166 | [`opg-inequality-for-square-summable-complex-series`](https://lefttosolve.com/p/opg-inequality-for-square-summable-complex-series) | Inequality for square summable complex series | open | Real Functions |  |  |
 | 167 | [`opg-infinite-distributivity-of-meet-over-join-for-a-principal-funcoid`](https://lefttosolve.com/p/opg-infinite-distributivity-of-meet-over-join-for-a-principal-funcoid) | Infinite distributivity of meet over join for a principal funcoid | unformalized | General Topology |  |  |
 | 168 | [`opg-infinite-uniquely-hamiltonian-graphs`](https://lefttosolve.com/p/opg-infinite-uniquely-hamiltonian-graphs) | Infinite uniquely hamiltonian graphs | unformalized | Combinatorics |  |  |
-| 169 | [`opg-intersecting-two-perfect-matchings`](https://lefttosolve.com/p/opg-intersecting-two-perfect-matchings) | The intersection of two perfect matchings | unformalized | Combinatorics |  |  |
-| 170 | [`opg-inverse-of-an-integer-matrix`](https://lefttosolve.com/p/opg-inverse-of-an-integer-matrix) | Inverse of an integer matrix | unformalized | General Algebra |  |  |
+| 169 | [`opg-intersecting-two-perfect-matchings`](https://lefttosolve.com/p/opg-intersecting-two-perfect-matchings) | The intersection of two perfect matchings | open | Combinatorics |  |  |
+| 170 | [`opg-inverse-of-an-integer-matrix`](https://lefttosolve.com/p/opg-inverse-of-an-integer-matrix) | Inverse of an integer matrix | open | General Algebra |  | yes |
 | 171 | [`opg-is-there-an-algorithm-to-determine-if-a-triangulated-4-manifold-is-combinatorial`](https://lefttosolve.com/p/opg-is-there-an-algorithm-to-determine-if-a-triangulated-4-manifold-is-combinatorial) | Is there an algorithm to determine if a triangulated 4-manifold is combinatorially equivalent to the 4-sphere? | unformalized | General Topology |  |  |
-| 172 | [`opg-jaegers-modular-orientation-conjecture`](https://lefttosolve.com/p/opg-jaegers-modular-orientation-conjecture) | Jaeger's modular orientation conjecture | unformalized | Combinatorics |  |  |
+| 172 | [`opg-jaegers-modular-orientation-conjecture`](https://lefttosolve.com/p/opg-jaegers-modular-orientation-conjecture) | Jaeger's modular orientation conjecture | open | Combinatorics |  |  |
 | 173 | [`opg-jones-conjecture`](https://lefttosolve.com/p/opg-jones-conjecture) | Jones' conjecture | unformalized | Combinatorics |  |  |
 | 174 | [`opg-jorgensens-conjecture`](https://lefttosolve.com/p/opg-jorgensens-conjecture) | Jorgensen's Conjecture | unformalized | Combinatorics |  |  |
-| 175 | [`opg-kneser-poulsen-conjecture`](https://lefttosolve.com/p/opg-kneser-poulsen-conjecture) | Kneser–Poulsen conjecture | unformalized | Geometry |  |  |
-| 176 | [`opg-kriesells-conjecture`](https://lefttosolve.com/p/opg-kriesells-conjecture) | Kriesell's Conjecture | unformalized | Combinatorics |  |  |
+| 175 | [`opg-kneser-poulsen-conjecture`](https://lefttosolve.com/p/opg-kneser-poulsen-conjecture) | Kneser–Poulsen conjecture | open | Geometry |  |  |
+| 176 | [`opg-kriesells-conjecture`](https://lefttosolve.com/p/opg-kriesells-conjecture) | Kriesell's Conjecture | open | Combinatorics |  |  |
 | 177 | [`opg-laplacian-degrees-of-a-graph`](https://lefttosolve.com/p/opg-laplacian-degrees-of-a-graph) | Laplacian Degrees of a Graph | unformalized | Combinatorics |  |  |
 | 178 | [`opg-large-acyclic-induced-subdigraph-in-a-planar-oriented-graph`](https://lefttosolve.com/p/opg-large-acyclic-induced-subdigraph-in-a-planar-oriented-graph) | Large acyclic induced subdigraph in a planar oriented graph. | unformalized | Combinatorics |  |  |
 | 179 | [`opg-length-of-surreal-product`](https://lefttosolve.com/p/opg-length-of-surreal-product) | Length of surreal product | unformalized | Combinatorics |  |  |
@@ -205,31 +205,31 @@ Back to [all programs](../PROGRAMS.md).
 | 183 | [`opg-linial-berge-path-partition-duality`](https://lefttosolve.com/p/opg-linial-berge-path-partition-duality) | Linial-Berge path partition duality | unformalized | Combinatorics |  |  |
 | 184 | [`opg-list-colorings-of-edge-critical-graphs`](https://lefttosolve.com/p/opg-list-colorings-of-edge-critical-graphs) | List colorings of edge-critical graphs | unformalized | Combinatorics |  |  |
 | 185 | [`opg-list-total-colouring-conjecture`](https://lefttosolve.com/p/opg-list-total-colouring-conjecture) | List Total Colouring Conjecture | unformalized | Combinatorics |  |  |
-| 186 | [`opg-long-directed-cycles-in-digraph-with-minimum-in-and-out-degree`](https://lefttosolve.com/p/opg-long-directed-cycles-in-digraph-with-minimum-in-and-out-degree) | Long directed cycles in diregular digraphs | unformalized | Combinatorics |  |  |
+| 186 | [`opg-long-directed-cycles-in-digraph-with-minimum-in-and-out-degree`](https://lefttosolve.com/p/opg-long-directed-cycles-in-digraph-with-minimum-in-and-out-degree) | Long directed cycles in diregular digraphs | open | Combinatorics |  |  |
 | 187 | [`opg-long-rainbow-arithemtic-progressions`](https://lefttosolve.com/p/opg-long-rainbow-arithemtic-progressions) | Long rainbow arithmetic progressions | unformalized | Combinatorics |  |  |
-| 188 | [`opg-lovasz-path-removal-conjecture`](https://lefttosolve.com/p/opg-lovasz-path-removal-conjecture) | Lovász Path Removal Conjecture | unformalized | Combinatorics |  |  |
+| 188 | [`opg-lovasz-path-removal-conjecture`](https://lefttosolve.com/p/opg-lovasz-path-removal-conjecture) | Lovász Path Removal Conjecture | open | Combinatorics |  |  |
 | 189 | [`opg-m-n-cycle-covers`](https://lefttosolve.com/p/opg-m-n-cycle-covers) | (m,n)-cycle covers | unformalized | Combinatorics |  |  |
-| 190 | [`opg-maceachen-conjecture`](https://lefttosolve.com/p/opg-maceachen-conjecture) | MacEachen Conjecture | unformalized | Number Theory |  |  |
+| 190 | [`opg-maceachen-conjecture`](https://lefttosolve.com/p/opg-maceachen-conjecture) | MacEachen Conjecture | open | Number Theory |  |  |
 | 191 | [`opg-mapping-planar-graphs-to-odd-cycles`](https://lefttosolve.com/p/opg-mapping-planar-graphs-to-odd-cycles) | Mapping planar graphs to odd cycles | unformalized | Combinatorics |  |  |
-| 192 | [`opg-matchings-extends-to-hamilton-cycles-in-hypercubes`](https://lefttosolve.com/p/opg-matchings-extends-to-hamilton-cycles-in-hypercubes) | Matchings extend to Hamiltonian cycles in hypercubes | unformalized | Combinatorics |  |  |
+| 192 | [`opg-matchings-extends-to-hamilton-cycles-in-hypercubes`](https://lefttosolve.com/p/opg-matchings-extends-to-hamilton-cycles-in-hypercubes) | Matchings extend to Hamiltonian cycles in hypercubes | open | Combinatorics |  |  |
 | 193 | [`opg-minimal-graphs-with-a-prescribed-number-of-spanning-trees`](https://lefttosolve.com/p/opg-minimal-graphs-with-a-prescribed-number-of-spanning-trees) | Minimal graphs with a prescribed number of spanning trees | unformalized | Combinatorics |  |  |
-| 194 | [`opg-minimum-number-of-transitive-subtournaments-of-order-3-in-a-tournament`](https://lefttosolve.com/p/opg-minimum-number-of-transitive-subtournaments-of-order-3-in-a-tournament) | Minimum number of arc-disjoint transitive subtournaments of order 3 in a tournament | unformalized | Combinatorics |  |  |
+| 194 | [`opg-minimum-number-of-transitive-subtournaments-of-order-3-in-a-tournament`](https://lefttosolve.com/p/opg-minimum-number-of-transitive-subtournaments-of-order-3-in-a-tournament) | Minimum number of arc-disjoint transitive subtournaments of order 3 in a tournament | open | Combinatorics |  |  |
 | 195 | [`opg-monadic-second-order-logic-with-cardinality-predicates`](https://lefttosolve.com/p/opg-monadic-second-order-logic-with-cardinality-predicates) | Monadic second-order logic with cardinality predicates | unformalized | Logic & Foundations |  |  |
-| 196 | [`opg-monochromatic-reachability-vs-rainbow-triangles`](https://lefttosolve.com/p/opg-monochromatic-reachability-vs-rainbow-triangles) | Monochromatic reachability or rainbow triangles | unformalized | Combinatorics |  |  |
+| 196 | [`opg-monochromatic-reachability-vs-rainbow-triangles`](https://lefttosolve.com/p/opg-monochromatic-reachability-vs-rainbow-triangles) | Monochromatic reachability or rainbow triangles | open | Combinatorics |  |  |
 | 197 | [`opg-monochromatoc-reachability-in-arc-colored-digraphs`](https://lefttosolve.com/p/opg-monochromatoc-reachability-in-arc-colored-digraphs) | Monochromatic reachability in arc-colored digraphs | unformalized | Combinatorics |  |  |
 | 198 | [`opg-monotone-4-term-arithmetic-progressions`](https://lefttosolve.com/p/opg-monotone-4-term-arithmetic-progressions) | Monotone 4-term Arithmetic Progressions | unformalized | Combinatorics |  |  |
 | 199 | [`opg-mso-alternation-hierarchy-over-pictures`](https://lefttosolve.com/p/opg-mso-alternation-hierarchy-over-pictures) | MSO alternation hierarchy over pictures | unformalized | Logic & Foundations |  |  |
 | 200 | [`opg-multicolour-erdos-hajnal-conjecture`](https://lefttosolve.com/p/opg-multicolour-erdos-hajnal-conjecture) | Multicolour Erdős--Hajnal Conjecture | unformalized | Combinatorics |  |  |
-| 201 | [`opg-nearly-spanning-regular-subgraphs`](https://lefttosolve.com/p/opg-nearly-spanning-regular-subgraphs) | Nearly spanning regular subgraphs | unformalized | Combinatorics |  |  |
+| 201 | [`opg-nearly-spanning-regular-subgraphs`](https://lefttosolve.com/p/opg-nearly-spanning-regular-subgraphs) | Nearly spanning regular subgraphs | open | Combinatorics |  |  |
 | 202 | [`opg-negative-association-in-uniform-forests`](https://lefttosolve.com/p/opg-negative-association-in-uniform-forests) | Negative association in uniform forests | unformalized | Combinatorics |  |  |
-| 203 | [`opg-non-edges-vs-feedback-edge-sets-in-digraphs`](https://lefttosolve.com/p/opg-non-edges-vs-feedback-edge-sets-in-digraphs) | Non-edges vs. feedback edge sets in digraphs | unformalized | Combinatorics |  |  |
-| 204 | [`opg-number-of-cliques-in-minor-closed-classes`](https://lefttosolve.com/p/opg-number-of-cliques-in-minor-closed-classes) | Number of Cliques in Minor-Closed Classes | unformalized | Combinatorics |  |  |
+| 203 | [`opg-non-edges-vs-feedback-edge-sets-in-digraphs`](https://lefttosolve.com/p/opg-non-edges-vs-feedback-edge-sets-in-digraphs) | Non-edges vs. feedback edge sets in digraphs | open | Combinatorics |  |  |
+| 204 | [`opg-number-of-cliques-in-minor-closed-classes`](https://lefttosolve.com/p/opg-number-of-cliques-in-minor-closed-classes) | Number of Cliques in Minor-Closed Classes | open | Combinatorics |  |  |
 | 205 | [`opg-obstacle-number-of-planar-graphs`](https://lefttosolve.com/p/opg-obstacle-number-of-planar-graphs) | Obstacle number of planar graphs | unformalized | Combinatorics |  |  |
 | 206 | [`opg-odd-cycle-transversal-in-triangle-free-graphs`](https://lefttosolve.com/p/opg-odd-cycle-transversal-in-triangle-free-graphs) | Odd-cycle transversal in triangle-free graphs | unformalized | Combinatorics |  |  |
 | 207 | [`opg-odd-incongruent-covering-systems`](https://lefttosolve.com/p/opg-odd-incongruent-covering-systems) | Odd incongruent covering systems | unformalized | Number Theory |  |  |
 | 208 | [`opg-olsons-conjecture`](https://lefttosolve.com/p/opg-olsons-conjecture) | Olson's Conjecture | unformalized | Number Theory |  |  |
 | 209 | [`opg-order-invariant-queries`](https://lefttosolve.com/p/opg-order-invariant-queries) | Order-invariant queries | unformalized | Logic & Foundations |  |  |
-| 210 | [`opg-oriented-trees-in-n-chromatic-digraphs`](https://lefttosolve.com/p/opg-oriented-trees-in-n-chromatic-digraphs) | Oriented trees in n-chromatic digraphs | unformalized | Combinatorics |  |  |
+| 210 | [`opg-oriented-trees-in-n-chromatic-digraphs`](https://lefttosolve.com/p/opg-oriented-trees-in-n-chromatic-digraphs) | Oriented trees in n-chromatic digraphs | open | Combinatorics |  |  |
 | 211 | [`opg-outer-reloid-of-restricted-funcoid`](https://lefttosolve.com/p/opg-outer-reloid-of-restricted-funcoid) | Outer reloid of restricted funcoid | unformalized | General Topology |  |  |
 | 212 | [`opg-outward-reloid-of-composition-vs-composition-of-outward-reloids`](https://lefttosolve.com/p/opg-outward-reloid-of-composition-vs-composition-of-outward-reloids) | Outward reloid of composition vs composition of outward reloids | unformalized | General Topology |  |  |
 | 213 | [`opg-p-vs-bpp`](https://lefttosolve.com/p/opg-p-vs-bpp) | P vs. BPP | unformalized | Computer Science |  |  |
@@ -237,11 +237,11 @@ Back to [all programs](../PROGRAMS.md).
 | 215 | [`opg-p-vs-pspace`](https://lefttosolve.com/p/opg-p-vs-pspace) | P vs. PSPACE | unformalized | Computer Science |  |  |
 | 216 | [`opg-packing-t-joins`](https://lefttosolve.com/p/opg-packing-t-joins) | Packing T-joins | unformalized | Combinatorics |  |  |
 | 217 | [`opg-partial-list-coloring`](https://lefttosolve.com/p/opg-partial-list-coloring) | Partial List Coloring | unformalized | Combinatorics |  |  |
-| 218 | [`opg-partition-of-a-cubic-3-connected-graphs-into-paths-of-length-2`](https://lefttosolve.com/p/opg-partition-of-a-cubic-3-connected-graphs-into-paths-of-length-2) | Partition of a cubic 3-connected graphs into paths of length 2. | unformalized | Combinatorics |  |  |
+| 218 | [`opg-partition-of-a-cubic-3-connected-graphs-into-paths-of-length-2`](https://lefttosolve.com/p/opg-partition-of-a-cubic-3-connected-graphs-into-paths-of-length-2) | Partition of a cubic 3-connected graphs into paths of length 2. | open | Combinatorics |  |  |
 | 219 | [`opg-partitioning-edge-connectivity`](https://lefttosolve.com/p/opg-partitioning-edge-connectivity) | Partitioning edge-connectivity | unformalized | Combinatorics |  |  |
 | 220 | [`opg-partitioning-planar-digraphs`](https://lefttosolve.com/p/opg-partitioning-planar-digraphs) | The Two Color Conjecture | unformalized | Combinatorics |  |  |
 | 221 | [`opg-partitioning-the-projective-plane`](https://lefttosolve.com/p/opg-partitioning-the-projective-plane) | Partitioning the Projective Plane | unformalized | Geometry |  |  |
-| 222 | [`opg-partitionning-a-tournament-into-k-strongly-connected-subtournaments`](https://lefttosolve.com/p/opg-partitionning-a-tournament-into-k-strongly-connected-subtournaments) | Partitionning a tournament into k-strongly connected subtournaments. | unformalized | Combinatorics |  |  |
+| 222 | [`opg-partitionning-a-tournament-into-k-strongly-connected-subtournaments`](https://lefttosolve.com/p/opg-partitionning-a-tournament-into-k-strongly-connected-subtournaments) | Partitionning a tournament into k-strongly connected subtournaments. | open | Combinatorics |  |  |
 | 223 | [`opg-pebbling-a-cartesian-product`](https://lefttosolve.com/p/opg-pebbling-a-cartesian-product) | Pebbling a cartesian product | unformalized | Combinatorics |  |  |
 | 224 | [`opg-pentagon-problem`](https://lefttosolve.com/p/opg-pentagon-problem) | Pentagon problem | unformalized | Combinatorics |  |  |
 | 225 | [`opg-point-sets-with-no-empty-pentagon`](https://lefttosolve.com/p/opg-point-sets-with-no-empty-pentagon) | Point sets with no empty pentagon | unformalized | Geometry |  |  |
@@ -256,16 +256,16 @@ Back to [all programs](../PROGRAMS.md).
 | 234 | [`opg-refuting-random-3sat-instances-on-o-n-clauses-weak-form`](https://lefttosolve.com/p/opg-refuting-random-3sat-instances-on-o-n-clauses-weak-form) | Refuting random 3SAT-instances on $O(n)$ clauses (weak form) | unformalized | Computer Science |  |  |
 | 235 | [`opg-rendezvous-on-a-line`](https://lefttosolve.com/p/opg-rendezvous-on-a-line) | Rendezvous on a line | unformalized | Uncategorised |  |  |
 | 236 | [`opg-roller-coaster-permutations`](https://lefttosolve.com/p/opg-roller-coaster-permutations) | Roller Coaster permutations | unformalized | Combinatorics |  |  |
-| 237 | [`opg-rotas-unimodal-conjecture`](https://lefttosolve.com/p/opg-rotas-unimodal-conjecture) | Rota's unimodal conjecture | unformalized | Combinatorics |  |  |
+| 237 | [`opg-rotas-unimodal-conjecture`](https://lefttosolve.com/p/opg-rotas-unimodal-conjecture) | Rota's unimodal conjecture | open | Combinatorics |  |  |
 | 238 | [`opg-s-s-f-s-f-for-reloids`](https://lefttosolve.com/p/opg-s-s-f-s-f-for-reloids) | S(S(f)) = S(f) for reloids | unformalized | General Topology |  |  |
 | 239 | [`opg-saturated-k-sperner-systems-of-minimum-size`](https://lefttosolve.com/p/opg-saturated-k-sperner-systems-of-minimum-size) | Saturated $k$-Sperner Systems of Minimum Size | unformalized | Combinatorics |  |  |
 | 240 | [`opg-saturation-in-the-hypercube`](https://lefttosolve.com/p/opg-saturation-in-the-hypercube) | Saturation in the Hypercube | unformalized | Combinatorics |  |  |
 | 241 | [`opg-seagull-problem`](https://lefttosolve.com/p/opg-seagull-problem) | Seagull problem | unformalized | Combinatorics |  |  |
 | 242 | [`opg-sets-with-distinct-subset-sums`](https://lefttosolve.com/p/opg-sets-with-distinct-subset-sums) | Sets with distinct subset sums | unformalized | Number Theory |  |  |
 | 243 | [`opg-several-ways-to-apply-a-multivalued-multiargument-function-to-a-family-of-filter`](https://lefttosolve.com/p/opg-several-ways-to-apply-a-multivalued-multiargument-function-to-a-family-of-filter) | Several ways to apply a (multivalued) multiargument function to a family of filters | unformalized | General Topology |  |  |
-| 244 | [`opg-seymours-r-graph-conjecture`](https://lefttosolve.com/p/opg-seymours-r-graph-conjecture) | Seymour's r-graph conjecture | unformalized | Combinatorics |  |  |
-| 245 | [`opg-seymours-second-neighbourhood-conjecture`](https://lefttosolve.com/p/opg-seymours-second-neighbourhood-conjecture) | Seymour's Second Neighbourhood Conjecture | unformalized | Combinatorics |  |  |
-| 246 | [`opg-seymours-self-minor-conjecture`](https://lefttosolve.com/p/opg-seymours-self-minor-conjecture) | Seymour's self-minor conjecture | unformalized | Combinatorics |  |  |
+| 244 | [`opg-seymours-r-graph-conjecture`](https://lefttosolve.com/p/opg-seymours-r-graph-conjecture) | Seymour's r-graph conjecture | open | Combinatorics |  |  |
+| 245 | [`opg-seymours-second-neighbourhood-conjecture`](https://lefttosolve.com/p/opg-seymours-second-neighbourhood-conjecture) | Seymour's Second Neighbourhood Conjecture | open | Combinatorics |  | yes |
+| 246 | [`opg-seymours-self-minor-conjecture`](https://lefttosolve.com/p/opg-seymours-self-minor-conjecture) | Seymour's self-minor conjecture | open | Combinatorics |  |  |
 | 247 | [`opg-shuffle-exchange-conjecture`](https://lefttosolve.com/p/opg-shuffle-exchange-conjecture) | Shuffle-Exchange Conjecture | unformalized | Combinatorics |  |  |
 | 248 | [`opg-shuffle-exchange-conjecture-graph-theoretic-form`](https://lefttosolve.com/p/opg-shuffle-exchange-conjecture-graph-theoretic-form) | Shuffle-Exchange Conjecture (graph-theoretic form) | unformalized | Combinatorics |  |  |
 | 249 | [`opg-signing-a-graph-to-have-small-magnitude-eigenvalues`](https://lefttosolve.com/p/opg-signing-a-graph-to-have-small-magnitude-eigenvalues) | Signing a graph to have small magnitude eigenvalues | unformalized | Combinatorics |  |  |
@@ -277,21 +277,21 @@ Back to [all programs](../PROGRAMS.md).
 | 255 | [`opg-snevilys-conjecture`](https://lefttosolve.com/p/opg-snevilys-conjecture) | Snevily's conjecture | unformalized | Number Theory |  |  |
 | 256 | [`opg-something-like-picard-for-1-forms`](https://lefttosolve.com/p/opg-something-like-picard-for-1-forms) | Something like Picard for 1-forms | unformalized | Real Functions |  |  |
 | 257 | [`opg-special-primes`](https://lefttosolve.com/p/opg-special-primes) | Special Primes | unformalized | Number Theory |  |  |
-| 258 | [`opg-splitting-a-digraph-with-minimum-outdegree-constraints`](https://lefttosolve.com/p/opg-splitting-a-digraph-with-minimum-outdegree-constraints) | Splitting a digraph with minimum outdegree constraints | unformalized | Combinatorics |  |  |
+| 258 | [`opg-splitting-a-digraph-with-minimum-outdegree-constraints`](https://lefttosolve.com/p/opg-splitting-a-digraph-with-minimum-outdegree-constraints) | Splitting a digraph with minimum outdegree constraints | open | Combinatorics |  |  |
 | 259 | [`opg-stable-set-meeting-all-longest-directed-paths`](https://lefttosolve.com/p/opg-stable-set-meeting-all-longest-directed-paths) | Stable set meeting all longest directed paths. | unformalized | Combinatorics |  |  |
 | 260 | [`opg-star-chromatic-index-of-complete-graphs`](https://lefttosolve.com/p/opg-star-chromatic-index-of-complete-graphs) | Star chromatic index of complete graphs | unformalized | Combinatorics |  |  |
 | 261 | [`opg-star-chromatic-index-of-cubic-graphs`](https://lefttosolve.com/p/opg-star-chromatic-index-of-cubic-graphs) | Star chromatic index of cubic graphs | unformalized | Combinatorics |  |  |
 | 262 | [`opg-strange-series`](https://lefttosolve.com/p/opg-strange-series) | The 3n+1 conjecture | unformalized | Number Theory |  |  |
 | 263 | [`opg-strict-inequalities-for-products-of-filters`](https://lefttosolve.com/p/opg-strict-inequalities-for-products-of-filters) | Strict inequalities for products of filters | unformalized | General Topology |  |  |
 | 264 | [`opg-strong-5-cycle-double-cover-conjecture`](https://lefttosolve.com/p/opg-strong-5-cycle-double-cover-conjecture) | Strong 5-cycle double cover conjecture | unformalized | Combinatorics |  |  |
-| 265 | [`opg-strong-colorability`](https://lefttosolve.com/p/opg-strong-colorability) | Strong colorability | unformalized | Combinatorics |  |  |
+| 265 | [`opg-strong-colorability`](https://lefttosolve.com/p/opg-strong-colorability) | Strong colorability | open | Combinatorics |  |  |
 | 266 | [`opg-strong-edge-colouring-conjecture`](https://lefttosolve.com/p/opg-strong-edge-colouring-conjecture) | Strong edge colouring conjecture | unformalized | Combinatorics |  |  |
-| 267 | [`opg-strong-matchings-and-covers`](https://lefttosolve.com/p/opg-strong-matchings-and-covers) | Strong matchings and covers | unformalized | Combinatorics |  |  |
+| 267 | [`opg-strong-matchings-and-covers`](https://lefttosolve.com/p/opg-strong-matchings-and-covers) | Strong matchings and covers | open | Combinatorics |  |  |
 | 268 | [`opg-subdivision-of-a-transitive-tournament-in-digraphs-with-large-outdegree`](https://lefttosolve.com/p/opg-subdivision-of-a-transitive-tournament-in-digraphs-with-large-outdegree) | Subdivision of a transitive tournament in digraphs with large outdegree. | unformalized | Combinatorics |  |  |
 | 269 | [`opg-subgraph-of-large-average-degree-and-large-average-degree`](https://lefttosolve.com/p/opg-subgraph-of-large-average-degree-and-large-average-degree) | Subgraph of large average degree and large girth. | unformalized | Combinatorics |  |  |
-| 270 | [`opg-subgroup-formed-by-elements-of-order-dividing-n`](https://lefttosolve.com/p/opg-subgroup-formed-by-elements-of-order-dividing-n) | Subgroup formed by elements of order dividing n | unformalized | Group Theory |  |  |
+| 270 | [`opg-subgroup-formed-by-elements-of-order-dividing-n`](https://lefttosolve.com/p/opg-subgroup-formed-by-elements-of-order-dividing-n) | Subgroup formed by elements of order dividing n | open | Group Theory |  |  |
 | 271 | [`opg-sum-of-prime-and-semiprime-conjecture`](https://lefttosolve.com/p/opg-sum-of-prime-and-semiprime-conjecture) | Sum of prime and semiprime conjecture | unformalized | Number Theory |  |  |
-| 272 | [`opg-sums-of-independent-random-variables-with-unbounded-variance`](https://lefttosolve.com/p/opg-sums-of-independent-random-variables-with-unbounded-variance) | Sums of independent random variables with unbounded variance | unformalized | Computer Science |  |  |
+| 272 | [`opg-sums-of-independent-random-variables-with-unbounded-variance`](https://lefttosolve.com/p/opg-sums-of-independent-random-variables-with-unbounded-variance) | Sums of independent random variables with unbounded variance | open | Computer Science |  | yes |
 | 273 | [`opg-switching-reconstruction-conjecture`](https://lefttosolve.com/p/opg-switching-reconstruction-conjecture) | Switching reconstruction conjecture | unformalized | Combinatorics |  |  |
 | 274 | [`opg-switching-reconstruction-of-digraphs`](https://lefttosolve.com/p/opg-switching-reconstruction-of-digraphs) | Switching reconstruction of digraphs | unformalized | Combinatorics |  |  |
 | 275 | [`opg-termination-of-the-sixth-goodstein-sequence`](https://lefttosolve.com/p/opg-termination-of-the-sixth-goodstein-sequence) | Termination of the sixth Goodstein Sequence | unformalized | Logic & Foundations |  |  |
@@ -310,20 +310,20 @@ Back to [all programs](../PROGRAMS.md).
 | 288 | [`opg-three-4-flows-conjecture`](https://lefttosolve.com/p/opg-three-4-flows-conjecture) | The three 4-flows conjecture | unformalized | Combinatorics |  |  |
 | 289 | [`opg-three-chromatic-0-2-graphs`](https://lefttosolve.com/p/opg-three-chromatic-0-2-graphs) | Three-chromatic (0,2)-graphs | unformalized | Combinatorics |  |  |
 | 290 | [`opg-torsion-for-subsets-of-mathbb-r-3`](https://lefttosolve.com/p/opg-torsion-for-subsets-of-mathbb-r-3) | Fundamental group torsion for subsets of Euclidean 3-space | unformalized | General Topology |  |  |
-| 291 | [`opg-triangle-packing-vs-triangle-edge-transversal`](https://lefttosolve.com/p/opg-triangle-packing-vs-triangle-edge-transversal) | Triangle-packing vs triangle edge-transversal. | unformalized | Combinatorics |  |  |
+| 291 | [`opg-triangle-packing-vs-triangle-edge-transversal`](https://lefttosolve.com/p/opg-triangle-packing-vs-triangle-edge-transversal) | Triangle-packing vs triangle edge-transversal. | open | Combinatorics |  |  |
 | 292 | [`opg-turan-number-of-a-finite-family`](https://lefttosolve.com/p/opg-turan-number-of-a-finite-family) | Turán number of a finite family. | unformalized | Combinatorics |  |  |
 | 293 | [`opg-turan-problem-for-10-cycles-in-the-hypercube`](https://lefttosolve.com/p/opg-turan-problem-for-10-cycles-in-the-hypercube) | Turán Problem for $10$-Cycles in the Hypercube | unformalized | Combinatorics |  |  |
 | 294 | [`opg-turans-problem-for-hypergraphs`](https://lefttosolve.com/p/opg-turans-problem-for-hypergraphs) | Turán's problem for hypergraphs | unformalized | Combinatorics |  |  |
 | 295 | [`opg-unconditional-derandomization-of-mathcal-am`](https://lefttosolve.com/p/opg-unconditional-derandomization-of-mathcal-am) | Unconditional derandomization of Arthur-Merlin games | unformalized | Computer Science |  |  |
 | 296 | [`opg-unfriendly-partitions`](https://lefttosolve.com/p/opg-unfriendly-partitions) | Unfriendly partitions | unformalized | Combinatorics |  |  |
 | 297 | [`opg-unions-of-triangle-free-graphs`](https://lefttosolve.com/p/opg-unions-of-triangle-free-graphs) | Unions of triangle free graphs | unformalized | Combinatorics |  |  |
-| 298 | [`opg-uniquely-hamiltonian-graphs`](https://lefttosolve.com/p/opg-uniquely-hamiltonian-graphs) | R-regular graphs are not uniquely hamiltonian. | unformalized | Combinatorics |  |  |
+| 298 | [`opg-uniquely-hamiltonian-graphs`](https://lefttosolve.com/p/opg-uniquely-hamiltonian-graphs) | R-regular graphs are not uniquely hamiltonian. | open | Combinatorics |  |  |
 | 299 | [`opg-unit-vector-flows`](https://lefttosolve.com/p/opg-unit-vector-flows) | Unit vector flows | unformalized | Combinatorics |  |  |
 | 300 | [`opg-universal-highly-arc-transitive-digraphs`](https://lefttosolve.com/p/opg-universal-highly-arc-transitive-digraphs) | Universal highly arc transitive digraphs | unformalized | Combinatorics |  |  |
 | 301 | [`opg-universal-steiner-triple-systems`](https://lefttosolve.com/p/opg-universal-steiner-triple-systems) | Universal Steiner triple systems | unformalized | Combinatorics |  |  |
 | 302 | [`opg-unsolvability-of-word-problem-for-2-knot-complements`](https://lefttosolve.com/p/opg-unsolvability-of-word-problem-for-2-knot-complements) | Unsolvability of word problem for 2-knot complements | unformalized | General Topology |  |  |
 | 303 | [`opg-upgrading-a-completary-multifuncoid`](https://lefttosolve.com/p/opg-upgrading-a-completary-multifuncoid) | Upgrading a completary multifuncoid | unformalized | General Topology |  |  |
-| 304 | [`opg-vertex-coloring-of-graph-fractional-powers`](https://lefttosolve.com/p/opg-vertex-coloring-of-graph-fractional-powers) | Vertex Coloring of graph fractional powers | unformalized | Combinatorics |  |  |
+| 304 | [`opg-vertex-coloring-of-graph-fractional-powers`](https://lefttosolve.com/p/opg-vertex-coloring-of-graph-fractional-powers) | Vertex Coloring of graph fractional powers | open | Combinatorics |  | yes |
 | 305 | [`opg-vertex-cover-integrality-gap`](https://lefttosolve.com/p/opg-vertex-cover-integrality-gap) | Vertex Cover Integrality Gap | unformalized | Logic & Foundations |  |  |
 | 306 | [`opg-waring-rank-of-determinant`](https://lefttosolve.com/p/opg-waring-rank-of-determinant) | Waring rank of determinant | unformalized | General Algebra |  |  |
 | 307 | [`opg-weak-pentagon-problem`](https://lefttosolve.com/p/opg-weak-pentagon-problem) | Weak pentagon problem | unformalized | Combinatorics |  |  |

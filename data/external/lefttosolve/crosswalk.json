@@ -1,13 +1,13 @@
 {
   "schema_version": 2,
-  "snapshot_content_sha256": "f1bcc922a11d5418387c863710fc34eb31f0a1007a7a51baf87889047c134dd8",
+  "snapshot_content_sha256": "7cb07abf0cea37cb0d308f147e960598e0a3de38a36a42f46516575b049fc19c",
   "rule": "Across the 22 formal/curated programs (excluding raw Q&A/comment streams), an external item matches an Atlas problem when the NFKD-folded, lower-cased, punctuation-free item base title (text before ' — ') equals the Atlas title, optionally after stripping trailing generic words (conjecture/problem/hypothesis/theorem/question); data/external/crosswalk-overrides.yaml adds reviewed ids (optionally fixing their relation) or removes false positives. Default relation=primary iff the id has no '.variants.' segment and the title has no ' — ' suffix; 'related' links never raise status signals.",
   "summary": {
     "atlas_problems": 120,
-    "problems_with_matches": 112,
-    "problems_with_primary_match": 102,
-    "total_matches": 187,
-    "problems_with_signals": 0
+    "problems_with_matches": 114,
+    "problems_with_primary_match": 104,
+    "total_matches": 189,
+    "problems_with_signals": 4
   },
   "problems": [
     {
@@ -103,7 +103,7 @@
           "program": "Wikipedia list (not formalized)",
           "program_slug": "wikipedia-list-not-formalized",
           "title": "Birch and Swinnerton-Dyer conjecture",
-          "kind": "unformalized",
+          "kind": "open",
           "site_solved_flag": false,
           "relation": "primary",
           "via": "normalized-title"
@@ -115,7 +115,18 @@
       "slug": "yang-mills-mass-gap",
       "title": "Yang–Mills Existence and Mass Gap",
       "atlas_status": "open",
-      "matches": [],
+      "matches": [
+        {
+          "id": "wpc-yang-mills-existence-and-mass-gap",
+          "program": "Wikipedia (not formalized)",
+          "program_slug": "wikipedia-not-formalized",
+          "title": "Yang–Mills existence and mass gap",
+          "kind": "unformalized",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
       "signals": []
     },
     {
@@ -359,7 +370,7 @@
           "program_slug": "wikipedia",
           "title": "Kakeya problem — kakeya 2d",
           "kind": "known",
-          "site_solved_flag": false,
+          "site_solved_flag": true,
           "relation": "variant",
           "via": "normalized-title"
         },
@@ -379,7 +390,7 @@
           "program_slug": "wikipedia",
           "title": "Kakeya problem — kakeya finite",
           "kind": "known",
-          "site_solved_flag": false,
+          "site_solved_flag": true,
           "relation": "variant",
           "via": "normalized-title"
         },
@@ -407,7 +418,7 @@
           "program_slug": "erdos-problems",
           "title": "Erdős Problem 508 — HadwigerNelsonAtLeastFive",
           "kind": "known",
-          "site_solved_flag": false,
+          "site_solved_flag": true,
           "relation": "variant",
           "via": "curated-override"
         },
@@ -541,7 +552,7 @@
           "program_slug": "wikipedia",
           "title": "Union-closed sets conjecture — yu",
           "kind": "known",
-          "site_solved_flag": false,
+          "site_solved_flag": true,
           "relation": "variant",
           "via": "normalized-title"
         }
@@ -845,7 +856,7 @@
           "program_slug": "wikipedia",
           "title": "Hadamard's conjecture — first cases",
           "kind": "known",
-          "site_solved_flag": false,
+          "site_solved_flag": true,
           "relation": "variant",
           "via": "curated-override"
         }
@@ -856,7 +867,18 @@
       "slug": "crouzeix-conjecture",
       "title": "Crouzeix's Conjecture",
       "atlas_status": "active-progress",
-      "matches": [],
+      "matches": [
+        {
+          "id": "wpc-crouzeix-conjecture",
+          "program": "Wikipedia (not formalized)",
+          "program_slug": "wikipedia-not-formalized",
+          "title": "Crouzeix's conjecture",
+          "kind": "unformalized",
+          "site_solved_flag": false,
+          "relation": "primary",
+          "via": "normalized-title"
+        }
+      ],
       "signals": []
     },
     {
@@ -1290,7 +1312,7 @@
           "program": "Open Problem Garden",
           "program_slug": "open-problem-garden",
           "title": "Caccetta-Häggkvist Conjecture",
-          "kind": "unformalized",
+          "kind": "open",
           "site_solved_flag": false,
           "relation": "primary",
           "via": "curated-override"
@@ -1319,7 +1341,7 @@
           "program_slug": "wikipedia",
           "title": "Moving Sofa Problem — romiksSofa area le ambidextrousSofaConstant",
           "kind": "known",
-          "site_solved_flag": false,
+          "site_solved_flag": true,
           "relation": "variant",
           "via": "normalized-title"
         }
@@ -1824,8 +1846,8 @@
           "program": "Open Problem Garden",
           "program_slug": "open-problem-garden",
           "title": "Seymour's Second Neighbourhood Conjecture",
-          "kind": "unformalized",
-          "site_solved_flag": false,
+          "kind": "open",
+          "site_solved_flag": true,
           "relation": "primary",
           "via": "curated-override"
         },
@@ -1840,7 +1862,9 @@
           "via": "curated-override"
         }
       ],
-      "signals": []
+      "signals": [
+        "opg-seymours-second-neighbourhood-conjecture: lefttosolve.com marks this still-`open` statement solved by its agents (unverified third-party claim)"
+      ]
     },
     {
       "slug": "total-coloring-conjecture",
@@ -1947,7 +1971,7 @@
           "program_slug": "wikipedia",
           "title": "Köthe conjecture — KotheConjecture",
           "kind": "open",
-          "site_solved_flag": false,
+          "site_solved_flag": true,
           "relation": "primary",
           "via": "curated-override"
         },
@@ -1957,7 +1981,7 @@
           "program_slug": "wikipedia",
           "title": "Köthe conjecture — general matrix",
           "kind": "open",
-          "site_solved_flag": false,
+          "site_solved_flag": true,
           "relation": "variant",
           "via": "normalized-title"
         },
@@ -1967,7 +1991,7 @@
           "program_slug": "wikipedia",
           "title": "Köthe conjecture — le KotherRadical",
           "kind": "open",
-          "site_solved_flag": false,
+          "site_solved_flag": true,
           "relation": "variant",
           "via": "normalized-title"
         },
@@ -1977,7 +2001,7 @@
           "program_slug": "wikipedia",
           "title": "Köthe conjecture — matrixOver KotherRadical",
           "kind": "open",
-          "site_solved_flag": false,
+          "site_solved_flag": true,
           "relation": "variant",
           "via": "normalized-title"
         },
@@ -1987,7 +2011,7 @@
           "program_slug": "wikipedia",
           "title": "Köthe conjecture — two by two matrix",
           "kind": "open",
-          "site_solved_flag": false,
+          "site_solved_flag": true,
           "relation": "variant",
           "via": "normalized-title"
         },
@@ -1997,12 +2021,18 @@
           "program_slug": "wikipedia",
           "title": "Köthe conjecture — amitsur conjecture",
           "kind": "known",
-          "site_solved_flag": false,
+          "site_solved_flag": true,
           "relation": "variant",
           "via": "normalized-title"
         }
       ],
-      "signals": []
+      "signals": [
+        "Koethe.KotheConjecture: lefttosolve.com marks this still-`open` statement solved by its agents (unverified third-party claim)",
+        "Koethe.KotherConjecture.variants.general_matrix: lefttosolve.com marks this still-`open` statement solved by its agents (unverified third-party claim)",
+        "Koethe.KotherConjecture.variants.le_KotherRadical: lefttosolve.com marks this still-`open` statement solved by its agents (unverified third-party claim)",
+        "Koethe.KotherConjecture.variants.matrixOver_KotherRadical: lefttosolve.com marks this still-`open` statement solved by its agents (unverified third-party claim)",
+        "Koethe.KotherConjecture.variants.two_by_two_matrix: lefttosolve.com marks this still-`open` statement solved by its agents (unverified third-party claim)"
+      ]
     },
     {
       "slug": "vaught-conjecture",
@@ -2124,7 +2154,7 @@
           "program": "Wikipedia list (not formalized)",
           "program_slug": "wikipedia-list-not-formalized",
           "title": "Bochner–Riesz conjecture",
-          "kind": "unformalized",
+          "kind": "open",
           "site_solved_flag": false,
           "relation": "primary",
           "via": "normalized-title"
@@ -2143,7 +2173,7 @@
           "program_slug": "books",
           "title": "Furstenberg's theorem",
           "kind": "known",
-          "site_solved_flag": false,
+          "site_solved_flag": true,
           "relation": "related",
           "via": "curated-override"
         }
@@ -2345,12 +2375,14 @@
           "program_slug": "wikipedia",
           "title": "Brennan's Conjecture",
           "kind": "open",
-          "site_solved_flag": false,
+          "site_solved_flag": true,
           "relation": "primary",
           "via": "normalized-title"
         }
       ],
-      "signals": []
+      "signals": [
+        "BrennanConjecture.brennan_universalSpectrumBounded: lefttosolve.com marks this still-`open` statement solved by its agents (unverified third-party claim)"
+      ]
     },
     {
       "slug": "dixmier-conjecture",
@@ -2623,7 +2655,7 @@
           "program_slug": "wikipedia",
           "title": "Dirichlet divisor problem — divisor error dirichlet",
           "kind": "warmup",
-          "site_solved_flag": false,
+          "site_solved_flag": true,
           "relation": "variant",
           "via": "normalized-title"
         },
@@ -2771,7 +2803,7 @@
           "program_slug": "wikipedia",
           "title": "Shitov's bound (2019)",
           "kind": "known",
-          "site_solved_flag": false,
+          "site_solved_flag": true,
           "relation": "related",
           "via": "curated-override"
         }
@@ -2807,12 +2839,14 @@
           "program_slug": "wikipedia",
           "title": "The Beck–Fiala conjecture",
           "kind": "open",
-          "site_solved_flag": false,
+          "site_solved_flag": true,
           "relation": "primary",
           "via": "curated-override"
         }
       ],
-      "signals": []
+      "signals": [
+        "BeckFiala.beck_fiala_conjecture: lefttosolve.com marks this still-`open` statement solved by its agents (unverified third-party claim)"
+      ]
     },
     {
       "slug": "riesel-problem",

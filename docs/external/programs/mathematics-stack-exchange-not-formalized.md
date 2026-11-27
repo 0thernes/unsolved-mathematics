@@ -14,7 +14,7 @@
 
 [Program page](https://lefttosolve.com/programs/Mathematics%20Stack%20Exchange%20%28not%20formalized%29) · Open questions from Mathematics Stack Exchange, still without an accepted answer.
 
-Targets 395 · open 395 · solved by kind (site claim): `0` · kinds open/known/warmup/unformalized/other = 0/0/0/395/0 · snapshot `f1bcc922a11d5418` (`2026-11-27T05:46:57Z`).
+Targets 395 · open 395 · solved by kind (site claim): `open: 4` · kinds open/known/warmup/unformalized/other = 19/0/0/376/0 · snapshot `7cb07abf0cea37cb` (`2026-11-27T17:43:57Z`).
 
 Back to [all programs](../PROGRAMS.md).
 
@@ -24,7 +24,7 @@ Back to [all programs](../PROGRAMS.md).
 | 2 | [`mse-1022617`](https://lefttosolve.com/p/mse-1022617) | A similar, but hopefully easier problem than Gilbreath's conjecture | unformalized | Number Theory |  |  |
 | 3 | [`mse-104012`](https://lefttosolve.com/p/mse-104012) | Cube nets hexomino tilings. | unformalized | Combinatorics |  |  |
 | 4 | [`mse-1054560`](https://lefttosolve.com/p/mse-1054560) | Dickson's (and Bunyakovsky's) conjecture with compositeness constraints | unformalized | Number Theory |  |  |
-| 5 | [`mse-1061115`](https://lefttosolve.com/p/mse-1061115) | On the problem of polynomial bijection from $\\mathbb Q\\times\\mathbb Q$ to $\\mathbb Q$ | unformalized | General Algebra |  |  |
+| 5 | [`mse-1061115`](https://lefttosolve.com/p/mse-1061115) | On the problem of polynomial bijection from $\\mathbb Q\\times\\mathbb Q$ to $\\mathbb Q$ | open | General Algebra |  |  |
 | 6 | [`mse-1065941`](https://lefttosolve.com/p/mse-1065941) | Two conjectures regarding $\\varphi(n)$ | unformalized | Number Theory |  |  |
 | 7 | [`mse-107395`](https://lefttosolve.com/p/mse-107395) | Open problems with practical outcome in a visible future? | unformalized | Number Theory |  |  |
 | 8 | [`mse-1088563`](https://lefttosolve.com/p/mse-1088563) | On $p^{\\log_q n}$, where $p$ and $q$ are distinct primes | unformalized | Number Theory |  |  |
@@ -49,7 +49,7 @@ Back to [all programs](../PROGRAMS.md).
 | 27 | [`mse-141308`](https://lefttosolve.com/p/mse-141308) | Primality test for specific class of $3\\cdot 2^n+1$ | unformalized | Number Theory |  |  |
 | 28 | [`mse-1414857`](https://lefttosolve.com/p/mse-1414857) | Would this proof strategy work for proving the lonely runner conjecture? | unformalized | Number Theory |  |  |
 | 29 | [`mse-1416221`](https://lefttosolve.com/p/mse-1416221) | Conjectured new primality test for Mersenne numbers | unformalized | Number Theory |  |  |
-| 30 | [`mse-1426354`](https://lefttosolve.com/p/mse-1426354) | A mixture with ingredients of two equivalences with Riemann Hypothesis | unformalized | Number Theory |  |  |
+| 30 | [`mse-1426354`](https://lefttosolve.com/p/mse-1426354) | A mixture with ingredients of two equivalences with Riemann Hypothesis | open | Number Theory |  |  |
 | 31 | [`mse-1457065`](https://lefttosolve.com/p/mse-1457065) | What does the Grothendieck's period conjecture mean? | unformalized | Number Theory |  |  |
 | 32 | [`mse-1463216`](https://lefttosolve.com/p/mse-1463216) | Asymptotic value of card drawing game | unformalized | Probability |  |  |
 | 33 | [`mse-1464339`](https://lefttosolve.com/p/mse-1464339) | Up to which value is Rassias' conjecture verified? | unformalized | Number Theory |  |  |
@@ -60,7 +60,7 @@ Back to [all programs](../PROGRAMS.md).
 | 38 | [`mse-1558028`](https://lefttosolve.com/p/mse-1558028) | Does a group homomorphism up to homotopy induce a map between classifying spaces? | unformalized | General Topology |  |  |
 | 39 | [`mse-158293`](https://lefttosolve.com/p/mse-158293) | Density of odd numbers in a sequence relating base 2 and base 3 expansion | unformalized | Number Theory |  |  |
 | 40 | [`mse-1595838`](https://lefttosolve.com/p/mse-1595838) | Are all totient values of Fibonacci Numbers distinct? | unformalized | Number Theory |  |  |
-| 41 | [`mse-1688329`](https://lefttosolve.com/p/mse-1688329) | Existence of a cycle of length $2^k$? | unformalized | Combinatorics |  |  |
+| 41 | [`mse-1688329`](https://lefttosolve.com/p/mse-1688329) | Existence of a cycle of length $2^k$? | open | Combinatorics |  |  |
 | 42 | [`mse-16887`](https://lefttosolve.com/p/mse-16887) | Does the equation $x^4+y^4+1 = z^2$ have a non-trivial solution? | unformalized | Number Theory |  |  |
 | 43 | [`mse-1696714`](https://lefttosolve.com/p/mse-1696714) | If $\|G_1\|=\|G_2\|<\\infty$ and $\|G_1'\|<\|G_2'\|$, then $\|Z(G_1)\|\\geq \|Z(G_2)\|$? where $G'$ is the commutator subgroup of $G$. | unformalized | General Algebra |  |  |
 | 44 | [`mse-1697145`](https://lefttosolve.com/p/mse-1697145) | Are there infinitely many primes in any sequence determined by a $k$ that is not a Sierpinski number? | unformalized | Number Theory |  |  |
@@ -89,7 +89,7 @@ Back to [all programs](../PROGRAMS.md).
 | 67 | [`mse-2012619`](https://lefttosolve.com/p/mse-2012619) | Name for Unsolved Problem | unformalized | Number Theory |  |  |
 | 68 | [`mse-2014146`](https://lefttosolve.com/p/mse-2014146) | Is there a constructive proof that a Euclidean domain is a UFD? | unformalized | Commutative Algebra, Group Theory |  |  |
 | 69 | [`mse-2021539`](https://lefttosolve.com/p/mse-2021539) | Is there a maximal prime number not being a sum of consecutive primes? | unformalized | Number Theory |  |  |
-| 70 | [`mse-2030706`](https://lefttosolve.com/p/mse-2030706) | Sets of natural numbers closed under addition of successors | unformalized | Number Theory |  |  |
+| 70 | [`mse-2030706`](https://lefttosolve.com/p/mse-2030706) | Sets of natural numbers closed under addition of successors | open | Number Theory |  | yes |
 | 71 | [`mse-2045783`](https://lefttosolve.com/p/mse-2045783) | Prove that if $n \\mid 1 + \\sum_{k=0}^{n-1} k^{n-1}$ then $n$ is prime. | unformalized | Number Theory |  |  |
 | 72 | [`mse-2049089`](https://lefttosolve.com/p/mse-2049089) | Packing squares 1 to 38 in a size 138 square | unformalized | Geometry |  |  |
 | 73 | [`mse-2066932`](https://lefttosolve.com/p/mse-2066932) | Infinitely $more$ algebraic numbers $\\gamma$ and $\\delta$ for $_2F_1\\left(a,b;\\tfrac12;\\gamma\\right)=\\delta$? | unformalized | Number Theory, Real Functions |  |  |
@@ -138,8 +138,8 @@ Back to [all programs](../PROGRAMS.md).
 | 116 | [`mse-2580732`](https://lefttosolve.com/p/mse-2580732) | Is there a concept of a 'measurable manifold'? | unformalized | General Topology, Measure & Integration |  |  |
 | 117 | [`mse-2581541`](https://lefttosolve.com/p/mse-2581541) | On super-logarithmic Collatz numbers | unformalized | Number Theory |  |  |
 | 118 | [`mse-2615963`](https://lefttosolve.com/p/mse-2615963) | A congruence involving Chebyshev polynomials | unformalized | Number Theory |  |  |
-| 119 | [`mse-2621776`](https://lefttosolve.com/p/mse-2621776) | The sequence $\\,a_n=\\lfloor \\mathrm{e}^n\\rfloor$ contains infinitely many odd and infinitely many even terms | unformalized | Real Functions, Sequences & Series |  |  |
-| 120 | [`mse-263131`](https://lefttosolve.com/p/mse-263131) | Is there a Steiner system $S(6,9,45)$? | unformalized | Combinatorics |  |  |
+| 119 | [`mse-2621776`](https://lefttosolve.com/p/mse-2621776) | The sequence $\\,a_n=\\lfloor \\mathrm{e}^n\\rfloor$ contains infinitely many odd and infinitely many even terms | open | Real Functions, Sequences & Series |  |  |
+| 120 | [`mse-263131`](https://lefttosolve.com/p/mse-263131) | Is there a Steiner system $S(6,9,45)$? | open | Combinatorics |  |  |
 | 121 | [`mse-2633765`](https://lefttosolve.com/p/mse-2633765) | à la Shafarevich conjecture for the moduli space of Calabi-Yau manifolds | unformalized | Algebraic Geometry, Manifolds |  |  |
 | 122 | [`mse-2637546`](https://lefttosolve.com/p/mse-2637546) | What is the name of the conjecture related to what Matt Parker has called "The Square-Sum Problem"? | unformalized | Number Theory |  |  |
 | 123 | [`mse-2645263`](https://lefttosolve.com/p/mse-2645263) | On the conjecture that, for every $n$, $\\lfloor e^{\\frac{p_{n^2}\\#}{p_{n^2 + 1}}}\\rfloor $ is a square number. | unformalized | Number Theory |  |  |
@@ -154,7 +154,7 @@ Back to [all programs](../PROGRAMS.md).
 | 132 | [`mse-2749067`](https://lefttosolve.com/p/mse-2749067) | Disprove $m!=100x^2+20x$ using an estimation for factorial. | unformalized | Number Theory |  |  |
 | 133 | [`mse-2751545`](https://lefttosolve.com/p/mse-2751545) | A conjecture about $8n+6$ | unformalized | Number Theory |  |  |
 | 134 | [`mse-2751881`](https://lefttosolve.com/p/mse-2751881) | Why $9k \\pm 4$ can't be written as sum of four cubes | unformalized | Number Theory |  |  |
-| 135 | [`mse-2822876`](https://lefttosolve.com/p/mse-2822876) | Is there a non-constant $h \\in \\mathbb{C}[x_1 , \\dots , x_n ]$ that divides every element of this given ideal? | unformalized | Commutative Algebra, Group Theory |  |  |
+| 135 | [`mse-2822876`](https://lefttosolve.com/p/mse-2822876) | Is there a non-constant $h \\in \\mathbb{C}[x_1 , \\dots , x_n ]$ that divides every element of this given ideal? | open | Commutative Algebra, Group Theory |  | yes |
 | 136 | [`mse-282747`](https://lefttosolve.com/p/mse-282747) | Characterization of Sequences with Integral Binomial Coefficients | unformalized | Combinatorics |  |  |
 | 137 | [`mse-283960`](https://lefttosolve.com/p/mse-283960) | Question regarding the status of Erdős' conjectures | unformalized | Real Functions |  |  |
 | 138 | [`mse-2861089`](https://lefttosolve.com/p/mse-2861089) | Is there any function whose limit at $x_0$ is unknown? | unformalized | Number Theory |  |  |
@@ -192,17 +192,17 @@ Back to [all programs](../PROGRAMS.md).
 | 170 | [`mse-3230707`](https://lefttosolve.com/p/mse-3230707) | Is there a maximum number of consecutive sexy prime pair sums that are all divisible by $10$? | unformalized | Number Theory |  |  |
 | 171 | [`mse-3241568`](https://lefttosolve.com/p/mse-3241568) | An asymptotic series for $\\small\\prod_{k=n}^\\infty\\operatorname{sinc}\\left({2^{-k}}\\pi\\right),\\,n\\to\\infty$ | unformalized | Number Theory |  |  |
 | 172 | [`mse-3257042`](https://lefttosolve.com/p/mse-3257042) | Is there an identity between the Clausen function $\\rm{Cl}_8\\left(\\frac\\pi3\\right)$ and $\\sum_{n=1}^\\infty \\frac{1}{n^9\\,\\binom {2n}n}$? | unformalized | Measure & Integration, Special Functions |  |  |
-| 173 | [`mse-3257373`](https://lefttosolve.com/p/mse-3257373) | Is $\\lfloor \\zeta(-n) \\rfloor$ only prime for $n=23$? | unformalized | Number Theory |  |  |
+| 173 | [`mse-3257373`](https://lefttosolve.com/p/mse-3257373) | Is $\\lfloor \\zeta(-n) \\rfloor$ only prime for $n=23$? | open | Number Theory |  |  |
 | 174 | [`mse-3261953`](https://lefttosolve.com/p/mse-3261953) | Refinement of Bertrand's Postulate | unformalized | Number Theory |  |  |
 | 175 | [`mse-3268475`](https://lefttosolve.com/p/mse-3268475) | Collatz conjecture, Tao-Collatz remainder and mod n. | unformalized | Number Theory |  |  |
 | 176 | [`mse-3271457`](https://lefttosolve.com/p/mse-3271457) | Conjectures on the primality of $\\sum\\limits_{i=1}^n p_i^{p_i}$ and $\\sum\\limits_{i=1}^n (-1)^ip_i^{p_i}$ | unformalized | Number Theory |  |  |
 | 177 | [`mse-3283519`](https://lefttosolve.com/p/mse-3283519) | Conjectured formula for the Fabius function | unformalized | Number Theory |  |  |
-| 178 | [`mse-3286093`](https://lefttosolve.com/p/mse-3286093) | Conjecture: No positive integer can be written as $a^b+b^a$ in more than one way | unformalized | Number Theory |  |  |
+| 178 | [`mse-3286093`](https://lefttosolve.com/p/mse-3286093) | Conjecture: No positive integer can be written as $a^b+b^a$ in more than one way | open | Number Theory |  |  |
 | 179 | [`mse-3290080`](https://lefttosolve.com/p/mse-3290080) | Conjecture: Is the identity $2^5-5^2=2+5$ unique? | unformalized | Number Theory |  |  |
 | 180 | [`mse-3325995`](https://lefttosolve.com/p/mse-3325995) | Is there a integer that makes $e^{\\pi\\sqrt{n}}$ closer to an integer than 163? | unformalized | Number Theory |  |  |
 | 181 | [`mse-3336724`](https://lefttosolve.com/p/mse-3336724) | Are there any $3$-Fermat-pseudoprimes of the form $k^4+1$? | unformalized | Number Theory |  |  |
 | 182 | [`mse-3358067`](https://lefttosolve.com/p/mse-3358067) | Conjecture: There is no $n\\neq3$ such that $\\arctan(1)+\\arctan(2)+\\cdots+\\arctan(n)=\\frac{k\\pi}{2}$, with $k$ integer. | unformalized | Real Functions |  |  |
-| 183 | [`mse-3369746`](https://lefttosolve.com/p/mse-3369746) | Rare gaps between integers having the same number of co-primes | unformalized | Number Theory |  |  |
+| 183 | [`mse-3369746`](https://lefttosolve.com/p/mse-3369746) | Rare gaps between integers having the same number of co-primes | open | Number Theory |  |  |
 | 184 | [`mse-3371305`](https://lefttosolve.com/p/mse-3371305) | Given $n$, exist $k$ such that $2^k$ contains $n$ as string. | unformalized | General Algebra |  |  |
 | 185 | [`mse-3385196`](https://lefttosolve.com/p/mse-3385196) | A generalization of the abc-conjecture? | unformalized | Number Theory |  |  |
 | 186 | [`mse-3398377`](https://lefttosolve.com/p/mse-3398377) | Proof verification upper bound on the Mondrian Art Problem | unformalized | Number Theory |  |  |
@@ -250,7 +250,7 @@ Back to [all programs](../PROGRAMS.md).
 | 228 | [`mse-3880570`](https://lefttosolve.com/p/mse-3880570) | Open questions in algebraic geometry that need insights from computations | unformalized | Number Theory |  |  |
 | 229 | [`mse-3897185`](https://lefttosolve.com/p/mse-3897185) | Is $X = (n-1)^n + n$ always composite for $n \\geq 4 \\in \\Bbb Z$? | unformalized | Number Theory |  |  |
 | 230 | [`mse-391917`](https://lefttosolve.com/p/mse-391917) | Is there a general algorithm to find a primitive element of a given finite extension (with a finite number of intermediate fields)?) | unformalized | Commutative Algebra, Group Theory |  |  |
-| 231 | [`mse-3925067`](https://lefttosolve.com/p/mse-3925067) | Is there a group $G$ for which $\\mathrm{Aut}(G) \\simeq (\\mathbb{R},+)$? | unformalized | Group Theory |  |  |
+| 231 | [`mse-3925067`](https://lefttosolve.com/p/mse-3925067) | Is there a group $G$ for which $\\mathrm{Aut}(G) \\simeq (\\mathbb{R},+)$? | open | Group Theory |  |  |
 | 232 | [`mse-4013811`](https://lefttosolve.com/p/mse-4013811) | A combinatorial sieve for a specific setup | unformalized | Number Theory |  |  |
 | 233 | [`mse-4029655`](https://lefttosolve.com/p/mse-4029655) | Small question about the Lonely runner conjecture | unformalized | Number Theory |  |  |
 | 234 | [`mse-403786`](https://lefttosolve.com/p/mse-403786) | Are there infinitely many primes $p_k$ such that $(p_k-1)!+p_k$ is a also prime? | unformalized | Number Theory |  |  |
@@ -262,8 +262,8 @@ Back to [all programs](../PROGRAMS.md).
 | 240 | [`mse-4170595`](https://lefttosolve.com/p/mse-4170595) | On odd perfect numbers $p^k m^2$ with special prime $p$ satisfying $m^2 - p^k = 2^r t$ - Part II | unformalized | Number Theory |  |  |
 | 241 | [`mse-4173323`](https://lefttosolve.com/p/mse-4173323) | Is there an ellipse with rational major and minor axes which has a "simple" closed form perimeter? | unformalized | Geometry |  |  |
 | 242 | [`mse-4185558`](https://lefttosolve.com/p/mse-4185558) | Is there any "nice" representation for algebraic numbers of degree 3 (or higher)? | unformalized | Number Theory, Sequences & Series |  |  |
-| 243 | [`mse-419004`](https://lefttosolve.com/p/mse-419004) | Are there infinitely many semi primes of the form $x^2 + 2x$ for integral $x$? | unformalized | Number Theory |  |  |
-| 244 | [`mse-4190405`](https://lefttosolve.com/p/mse-4190405) | Asymptotic behavior of recurrence $x_{n+1}=\\mbox{Stdev}(x_1,\\dots,x_n)$ | unformalized | Probability, Sequences & Series |  |  |
+| 243 | [`mse-419004`](https://lefttosolve.com/p/mse-419004) | Are there infinitely many semi primes of the form $x^2 + 2x$ for integral $x$? | open | Number Theory |  |  |
+| 244 | [`mse-4190405`](https://lefttosolve.com/p/mse-4190405) | Asymptotic behavior of recurrence $x_{n+1}=\\mbox{Stdev}(x_1,\\dots,x_n)$ | open | Probability, Sequences & Series |  |  |
 | 245 | [`mse-4191460`](https://lefttosolve.com/p/mse-4191460) | Does this "improvement" to $I(m) < 2$, if $p^k m^2$ is an odd perfect number with special prime $p$, work? | unformalized | Number Theory |  |  |
 | 246 | [`mse-4191843`](https://lefttosolve.com/p/mse-4191843) | Another 6 points circle associated with a triangle? | unformalized | Geometry |  |  |
 | 247 | [`mse-4226512`](https://lefttosolve.com/p/mse-4226512) | What's the link between de Bruijn-Newman constant and RH | unformalized | Number Theory |  |  |
@@ -285,8 +285,8 @@ Back to [all programs](../PROGRAMS.md).
 | 263 | [`mse-4439933`](https://lefttosolve.com/p/mse-4439933) | Is there a generalized solution to the "Freshman's dream" of derivatives equation? | unformalized | Measure & Integration |  |  |
 | 264 | [`mse-4445539`](https://lefttosolve.com/p/mse-4445539) | Is there an open subset $A$ of $[0,1]^2$ with measure $>\\frac{1}{100}$ that satisfies this property? | unformalized | Measure & Integration, Real Functions |  |  |
 | 265 | [`mse-4447984`](https://lefttosolve.com/p/mse-4447984) | Questions about density of $\\left\\{\\ \\left( k+ \\frac{1}{2} \\right)^n \\right\\}$ in $[0,1]$ | unformalized | Number Theory |  |  |
-| 266 | [`mse-4452078`](https://lefttosolve.com/p/mse-4452078) | Is there any function such that the limit of its derivative divided by its value to the nth power diverges? | unformalized | Real Functions |  |  |
-| 267 | [`mse-4462775`](https://lefttosolve.com/p/mse-4462775) | Show that $\\dim(Y)<\\infty$, application of the Hahn-Banach theorem. | unformalized | Number Theory |  |  |
+| 266 | [`mse-4452078`](https://lefttosolve.com/p/mse-4452078) | Is there any function such that the limit of its derivative divided by its value to the nth power diverges? | open | Real Functions |  | yes |
+| 267 | [`mse-4462775`](https://lefttosolve.com/p/mse-4462775) | Show that $\\dim(Y)<\\infty$, application of the Hahn-Banach theorem. | open | Number Theory |  | yes |
 | 268 | [`mse-447334`](https://lefttosolve.com/p/mse-447334) | Asymptotics of the lower approximation of a pair of natural numbers by a coprime pair | unformalized | Number Theory |  |  |
 | 269 | [`mse-4498168`](https://lefttosolve.com/p/mse-4498168) | On the eighth powers $A^8+B^8=C^8+D^8$. Are there non-trivial solutions to it? | unformalized | Number Theory |  |  |
 | 270 | [`mse-4499061`](https://lefttosolve.com/p/mse-4499061) | Is there any other known relationship between even perfect numbers and odd perfect numbers, apart from their multiplicative forms? | unformalized | Number Theory |  |  |
@@ -312,14 +312,14 @@ Back to [all programs](../PROGRAMS.md).
 | 290 | [`mse-4750578`](https://lefttosolve.com/p/mse-4750578) | Asymptotic of specific type of recurrence using Riemann integral approximation | unformalized | Real Functions |  |  |
 | 291 | [`mse-4756846`](https://lefttosolve.com/p/mse-4756846) | Conjecture about prime numbers and fibonacci numbers | unformalized | Number Theory |  |  |
 | 292 | [`mse-4767550`](https://lefttosolve.com/p/mse-4767550) | A Number-theoretic Generalization of the Union-closed Sets Conjecture | unformalized | Number Theory |  |  |
-| 293 | [`mse-4769164`](https://lefttosolve.com/p/mse-4769164) | Is there a metric on the plane for which (unit) circles are triangles? | unformalized | Geometry |  |  |
+| 293 | [`mse-4769164`](https://lefttosolve.com/p/mse-4769164) | Is there a metric on the plane for which (unit) circles are triangles? | open | Geometry |  |  |
 | 294 | [`mse-4781908`](https://lefttosolve.com/p/mse-4781908) | Is there an algorithm for this variant of the dominating set problem? | unformalized | Combinatorics |  |  |
 | 295 | [`mse-4781942`](https://lefttosolve.com/p/mse-4781942) | Conjecture: If $a_1\\in\\mathbb{Z}$ and $a_n=\\sec (a_{n-1})$ then the proportion of positive terms approaches $\\frac{1}{\\sqrt{2\\pi}}$ as $n\\to\\infty$. | unformalized | Dynamical Systems, Sequences & Series |  |  |
 | 296 | [`mse-4782732`](https://lefttosolve.com/p/mse-4782732) | Is the weak Goldbach conjecture proved? | unformalized | Number Theory |  |  |
 | 297 | [`mse-4804070`](https://lefttosolve.com/p/mse-4804070) | Does My Conjecture on Selecting 'Special Nodes' in TSP Matrices to Eliminate 97-99% of Edges Hold Potential for Polynomial Time Solutions? | unformalized | Combinatorics |  |  |
 | 298 | [`mse-4805933`](https://lefttosolve.com/p/mse-4805933) | Galois theory in combinatorics | unformalized | Combinatorics |  |  |
 | 299 | [`mse-4806891`](https://lefttosolve.com/p/mse-4806891) | Does there exist a midsquare with natural sides and diagonal? | unformalized | Geometry, Number Theory |  |  |
-| 300 | [`mse-4815847`](https://lefttosolve.com/p/mse-4815847) | Can this be done? Split Pascal's triangle (without the $1$s) with a straight line into two regions of equal sums. | unformalized | Geometry, Sequences & Series |  |  |
+| 300 | [`mse-4815847`](https://lefttosolve.com/p/mse-4815847) | Can this be done? Split Pascal's triangle (without the $1$s) with a straight line into two regions of equal sums. | open | Geometry, Sequences & Series |  |  |
 | 301 | [`mse-4818235`](https://lefttosolve.com/p/mse-4818235) | Does a 3D random walk visit infinitely many primes almost surely? | unformalized | Probability |  |  |
 | 302 | [`mse-4847208`](https://lefttosolve.com/p/mse-4847208) | Does the idea of creating a perfectly random problem to solve this have any merit, or is it completely useless quackery? | unformalized | Number Theory |  |  |
 | 303 | [`mse-4848183`](https://lefttosolve.com/p/mse-4848183) | Minimum number of edges for a tree that joins the $27$ nodes of a $3 \\times 3 \\times 3$ regular grid | unformalized | Combinatorics |  |  |
@@ -364,7 +364,7 @@ Back to [all programs](../PROGRAMS.md).
 | 342 | [`mse-5097283`](https://lefttosolve.com/p/mse-5097283) | Are $1,2,5,10$ the only solutions of $3^{n+1} \\pmod {2^n} > 2^n-1.5^n$? | unformalized | Number Theory |  |  |
 | 343 | [`mse-5099016`](https://lefttosolve.com/p/mse-5099016) | Removing Vertices from Graphs by Reductions - a Continuation of an Unsolved Problem | unformalized | Combinatorics |  |  |
 | 344 | [`mse-5099977`](https://lefttosolve.com/p/mse-5099977) | For every whole number $n$ $\\ge$ $2,$ there is at least one $k$ with $1$ $\\le$ $k$ $\\le$ $n$ such that $n + k$ and $nk + 1$ are prime numbers. | unformalized | Number Theory |  |  |
-| 345 | [`mse-5100758`](https://lefttosolve.com/p/mse-5100758) | Is it true that the sequence $\\{n \\sin(n^n/2)\\}$ is unbounded but doesn't tend to infinity? | unformalized | Number Theory, Real Functions |  |  |
+| 345 | [`mse-5100758`](https://lefttosolve.com/p/mse-5100758) | Is it true that the sequence $\\{n \\sin(n^n/2)\\}$ is unbounded but doesn't tend to infinity? | open | Number Theory, Real Functions |  |  |
 | 346 | [`mse-5102549`](https://lefttosolve.com/p/mse-5102549) | Is there is a Jordan curve that approximates a circle, so that any “square inscribed in the curve” must be a tiny square and cannot be a large one? | unformalized | Geometry |  |  |
 | 347 | [`mse-5109464`](https://lefttosolve.com/p/mse-5109464) | Rational points and sections on a family of genus-2 hyperelliptic curves | unformalized | Number Theory |  |  |
 | 348 | [`mse-5112273`](https://lefttosolve.com/p/mse-5112273) | Do there exist $\\alpha, \\beta \\in (0, \\pi/2)$ that are distinct rational multiples of $\\pi$ such that $\\frac{\\sin \\alpha}{\\sin \\beta}$ is rational? | unformalized | Real Functions |  |  |
@@ -374,7 +374,7 @@ Back to [all programs](../PROGRAMS.md).
 | 352 | [`mse-511808`](https://lefttosolve.com/p/mse-511808) | Using the Brun Sieve to show very weak approximation to twin prime conjecture | unformalized | Number Theory |  |  |
 | 353 | [`mse-5120935`](https://lefttosolve.com/p/mse-5120935) | Behavior of polynomial roots when removing a single term. | unformalized | Commutative Algebra, Complex Analysis |  |  |
 | 354 | [`mse-5124478`](https://lefttosolve.com/p/mse-5124478) | Is there a classification of $\\aleph_0$-categorical varieties? | unformalized | Logic & Foundations |  |  |
-| 355 | [`mse-5127397`](https://lefttosolve.com/p/mse-5127397) | Characterization of complete ultrametric vector space | unformalized | General Topology |  |  |
+| 355 | [`mse-5127397`](https://lefttosolve.com/p/mse-5127397) | Characterization of complete ultrametric vector space | open | General Topology |  |  |
 | 356 | [`mse-5129856`](https://lefttosolve.com/p/mse-5129856) | How small is $\\Pr(TU=TV)$ for a random Toeplitz matrix over $\\mathbb{Z}$? | unformalized | General Algebra |  |  |
 | 357 | [`mse-5131524`](https://lefttosolve.com/p/mse-5131524) | How did Birch and Swinnerton-Dyer arrive at their conjecture? | unformalized | Algebraic Geometry, Number Theory |  |  |
 | 358 | [`mse-5133875`](https://lefttosolve.com/p/mse-5133875) | Signs of polynomials in $e$ and $\\pi$ | unformalized | General Algebra |  |  |

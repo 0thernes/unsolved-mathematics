@@ -12,50 +12,52 @@
 > never misread as solved open conjectures. This Atlas has **not** verified external claims, and nothing in this mirror
 > modifies `data/problems.yaml`. Not affiliated with Left to Solve.
 
-- **Last content change (UTC):** `2026-11-27T05:46:57Z` — re-checked daily by [`sync-external.yml`](../../.github/workflows/sync-external.yml); a commit appears only when the data changes.
+- **Last content change (UTC):** `2026-11-27T17:43:57Z` — re-checked daily by [`sync-external.yml`](../../.github/workflows/sync-external.yml); a commit appears only when the data changes.
 - **Upstream Lean statements:** [https://github.com/google-deepmind/formal-conjectures](https://github.com/google-deepmind/formal-conjectures) @ `9097e2f90e66`
-- **Snapshot content SHA-256:** `f1bcc922a11d5418387c863710fc34eb31f0a1007a7a51baf87889047c134dd8`
-- **Full item coverage:** **59,396 / 59,396 items mirrored** across all **25 programs** (card targets 59,396 · API total 59,396 · consistent: `True`)
-- **Catalogue kinds:** `open` 1,939 · `known` 1,818 · `warmup` 168 · `unformalized` 55,471 · `other` 0
-- **Site `solved` flags disaggregated by kind (`834` total):** `known: 746, warmup: 88` — **0 `open` conjectures** are flagged solved; nearly all flags are `known` literature theorems or `warmup` exercises.
-- **Crosswalk:** 112 of 120 curated Atlas problems matched to external formal items (0 with review signals) — see [CROSSWALK.md](CROSSWALK.md).
+- **Snapshot content SHA-256:** `7cb07abf0cea37cb0d308f147e960598e0a3de38a36a42f46516575b049fc19c`
+- **Full item coverage:** **62,790 / 62,790 items mirrored** across all **26 programs** (card targets 62,790 · API total 62,790 · consistent: `True`)
+- **Catalogue kinds:** `open` 2,549 · `known` 1,818 · `warmup` 168 · `unformalized` 58,255 · `other` 0
+- **Site `solved` flags disaggregated by kind (`1,809` total):** `open: 326, known: 1322, warmup: 161` — **0 `open` conjectures** are flagged solved; nearly all flags are `known` literature theorems or `warmup` exercises.
+- **Crosswalk:** 114 of 120 curated Atlas problems matched to external formal items (4 with review signals) — see [CROSSWALK.md](CROSSWALK.md).
 - **Unified local search (curated Atlas + all 59k+ items):** `python scripts/search_all_problems.py --query "prime"`
 
 ## Programs (All 25 Mirrored Daily)
 
 | # | Program | Targets | Open | Solved by kind (site claim) | Kinds: open / known / warmup / unformalized | Item index |
 |---:|---|---:|---:|---|---|---|
-| 1 | [MathOverflow (not formalized)](https://lefttosolve.com/programs/MathOverflow%20%28not%20formalized%29) | 35,783 | 35,783 | 0 | 0 / 0 / 0 / 35783 | [35,783 items (2 shards)](programs/mathoverflow-not-formalized.md) |
-| 2 | [OEIS conjectures (not formalized)](https://lefttosolve.com/programs/OEIS%20conjectures%20%28not%20formalized%29) | 18,441 | 18,441 | 0 | 0 / 0 / 0 / 18441 | [18,441 items](programs/oeis-conjectures-not-formalized.md) |
-| 3 | [Erdős Problems](https://lefttosolve.com/programs/Erd%C5%91s%20Problems) | 2,068 | 837 | known: 534, warmup: 42 | 837 / 1187 / 44 / 0 | [2,068 items](programs/erdos-problems.md) |
-| 4 | [Wikipedia](https://lefttosolve.com/programs/Wikipedia) | 615 | 336 | known: 61, warmup: 20 | 336 / 242 / 37 / 0 | [615 items](programs/wikipedia.md) |
-| 5 | [OEIS](https://lefttosolve.com/programs/OEIS) | 461 | 394 | 0 | 394 / 21 / 46 / 0 | [461 items](programs/oeis.md) |
-| 6 | [Mathematics Stack Exchange (not formalized)](https://lefttosolve.com/programs/Mathematics%20Stack%20Exchange%20%28not%20formalized%29) | 395 | 395 | 0 | 0 / 0 / 0 / 395 | [395 items](programs/mathematics-stack-exchange-not-formalized.md) |
-| 7 | [Wikipedia list (not formalized)](https://lefttosolve.com/programs/Wikipedia%20list%20%28not%20formalized%29) | 366 | 366 | 0 | 0 / 0 / 0 / 366 | [366 items](programs/wikipedia-list-not-formalized.md) |
-| 8 | [Open Problem Garden](https://lefttosolve.com/programs/Open%20Problem%20Garden) | 316 | 316 | 0 | 0 / 0 / 0 / 316 | [316 items](programs/open-problem-garden.md) |
-| 9 | [Green's 100 Open Problems](https://lefttosolve.com/programs/Green%27s%20100%20Open%20Problems) | 285 | 128 | known: 78, warmup: 1 | 128 / 156 / 1 / 0 | [285 items](programs/green-s-100-open-problems.md) |
-| 10 | [Papers](https://lefttosolve.com/programs/Papers) | 180 | 93 | known: 20, warmup: 9 | 93 / 78 / 9 / 0 | [180 items](programs/papers.md) |
-| 11 | [Erdős Problems (not formalized)](https://lefttosolve.com/programs/Erd%C5%91s%20Problems%20%28not%20formalized%29) | 116 | 116 | 0 | 0 / 0 / 0 / 116 | [116 items](programs/erdos-problems-not-formalized.md) |
-| 12 | [arXiv papers](https://lefttosolve.com/programs/arXiv%20papers) | 105 | 43 | known: 26, warmup: 7 | 43 / 55 / 7 / 0 | [105 items](programs/arxiv-papers.md) |
-| 13 | [Wikipedia (not formalized)](https://lefttosolve.com/programs/Wikipedia%20%28not%20formalized%29) | 44 | 44 | 0 | 0 / 0 / 0 / 44 | [44 items](programs/wikipedia-not-formalized.md) |
-| 14 | [Open Quantum Problems](https://lefttosolve.com/programs/Open%20Quantum%20Problems) | 32 | 28 | warmup: 4 | 28 / 0 / 4 / 0 | [32 items](programs/open-quantum-problems.md) |
-| 15 | [Optimization Constants](https://lefttosolve.com/programs/Optimization%20Constants) | 31 | 11 | known: 6, warmup: 1 | 11 / 19 / 1 / 0 | [31 items](programs/optimization-constants.md) |
-| 16 | [Written on the Wall II](https://lefttosolve.com/programs/Written%20on%20the%20Wall%20II) | 31 | 11 | 0 | 11 / 13 / 7 / 0 | [31 items](programs/written-on-the-wall-ii.md) |
-| 17 | [Other](https://lefttosolve.com/programs/Other) | 29 | 17 | known: 7 | 17 / 12 / 0 / 0 | [29 items](programs/other.md) |
-| 18 | [Books](https://lefttosolve.com/programs/Books) | 26 | 11 | known: 7 | 11 / 15 / 0 / 0 | [26 items](programs/books.md) |
-| 19 | [MathOverflow](https://lefttosolve.com/programs/MathOverflow) | 21 | 9 | known: 7, warmup: 4 | 9 / 8 / 4 / 0 | [21 items](programs/mathoverflow.md) |
-| 20 | [Millennium Prize](https://lefttosolve.com/programs/Millennium%20Prize) | 21 | 12 | 0 | 12 / 2 / 7 / 0 | [21 items](programs/millennium-prize.md) |
-| 21 | [Kourovka Notebook](https://lefttosolve.com/programs/Kourovka%20Notebook) | 9 | 5 | 0 | 5 / 4 / 0 / 0 | [9 items](programs/kourovka-notebook.md) |
-| 22 | [Hilbert's Problems](https://lefttosolve.com/programs/Hilbert%27s%20Problems) | 8 | 2 | 0 | 2 / 5 / 1 / 0 | [8 items](programs/hilbert-s-problems.md) |
-| 23 | [Open problems in information theory (gokhanmergen)](https://lefttosolve.com/programs/Open%20problems%20in%20information%20theory%20%28gokhanmergen%29) | 7 | 7 | 0 | 0 / 0 / 0 / 7 | [7 items](programs/open-problems-in-information-theory-gokhanmergen.md) |
-| 24 | [Conjectures of Luc Gillibert](https://lefttosolve.com/programs/Conjectures%20of%20Luc%20Gillibert) | 3 | 3 | 0 | 0 / 0 / 0 / 3 | [3 items](programs/conjectures-of-luc-gillibert.md) |
-| 25 | [Litt's Problems](https://lefttosolve.com/programs/Litt%27s%20Problems) | 3 | 2 | 0 | 2 / 1 / 0 / 0 | [3 items](programs/litt-s-problems.md) |
-| | **Total** | **59,396** | **57,410** | **known: 746, warmup: 88** | **1939 / 1818 / 168 / 55471** | **59,396 mirrored** |
+| 1 | [MathOverflow (not formalized)](https://lefttosolve.com/programs/MathOverflow%20%28not%20formalized%29) | 35,783 | 35,783 | open: 16 | 42 / 0 / 0 / 35741 | [35,783 items (2 shards)](programs/mathoverflow-not-formalized.md) |
+| 2 | [OEIS conjectures (not formalized)](https://lefttosolve.com/programs/OEIS%20conjectures%20%28not%20formalized%29) | 18,451 | 18,451 | open: 152 | 415 / 0 / 0 / 18036 | [18,451 items](programs/oeis-conjectures-not-formalized.md) |
+| 3 | [arXiv abstracts (not formalized)](https://lefttosolve.com/programs/arXiv%20abstracts%20%28not%20formalized%29) | 3,368 | 3,368 | open: 5 | 10 / 0 / 0 / 3358 | [3,368 items](programs/arxiv-abstracts-not-formalized.md) |
+| 4 | [Erdős Problems](https://lefttosolve.com/programs/Erd%C5%91s%20Problems) | 2,068 | 837 | open: 50, known: 928, warmup: 43 | 837 / 1187 / 44 / 0 | [2,068 items](programs/erdos-problems.md) |
+| 5 | [Wikipedia](https://lefttosolve.com/programs/Wikipedia) | 615 | 336 | open: 14, known: 141, warmup: 36 | 336 / 242 / 37 / 0 | [615 items](programs/wikipedia.md) |
+| 6 | [OEIS](https://lefttosolve.com/programs/OEIS) | 461 | 394 | open: 36, known: 16, warmup: 46 | 394 / 21 / 46 / 0 | [461 items](programs/oeis.md) |
+| 7 | [Mathematics Stack Exchange (not formalized)](https://lefttosolve.com/programs/Mathematics%20Stack%20Exchange%20%28not%20formalized%29) | 395 | 395 | open: 4 | 19 / 0 / 0 / 376 | [395 items](programs/mathematics-stack-exchange-not-formalized.md) |
+| 8 | [Wikipedia list (not formalized)](https://lefttosolve.com/programs/Wikipedia%20list%20%28not%20formalized%29) | 366 | 366 | 0 | 27 / 0 / 0 / 339 | [366 items](programs/wikipedia-list-not-formalized.md) |
+| 9 | [Open Problem Garden](https://lefttosolve.com/programs/Open%20Problem%20Garden) | 316 | 316 | open: 6 | 67 / 0 / 0 / 249 | [316 items](programs/open-problem-garden.md) |
+| 10 | [Green's 100 Open Problems](https://lefttosolve.com/programs/Green%27s%20100%20Open%20Problems) | 285 | 128 | open: 9, known: 112, warmup: 1 | 128 / 156 / 1 / 0 | [285 items](programs/green-s-100-open-problems.md) |
+| 11 | [Papers](https://lefttosolve.com/programs/Papers) | 180 | 93 | open: 14, known: 30, warmup: 9 | 93 / 78 / 9 / 0 | [180 items](programs/papers.md) |
+| 12 | [Erdős Problems (not formalized)](https://lefttosolve.com/programs/Erd%C5%91s%20Problems%20%28not%20formalized%29) | 116 | 116 | open: 1 | 23 / 0 / 0 / 93 | [116 items](programs/erdos-problems-not-formalized.md) |
+| 13 | [arXiv papers](https://lefttosolve.com/programs/arXiv%20papers) | 105 | 43 | open: 4, known: 41, warmup: 7 | 43 / 55 / 7 / 0 | [105 items](programs/arxiv-papers.md) |
+| 14 | [Wikipedia (not formalized)](https://lefttosolve.com/programs/Wikipedia%20%28not%20formalized%29) | 60 | 60 | 0 | 3 / 0 / 0 / 57 | [60 items](programs/wikipedia-not-formalized.md) |
+| 15 | [Open Quantum Problems](https://lefttosolve.com/programs/Open%20Quantum%20Problems) | 32 | 28 | warmup: 4 | 28 / 0 / 4 / 0 | [32 items](programs/open-quantum-problems.md) |
+| 16 | [Optimization Constants](https://lefttosolve.com/programs/Optimization%20Constants) | 31 | 11 | open: 2, known: 8, warmup: 1 | 11 / 19 / 1 / 0 | [31 items](programs/optimization-constants.md) |
+| 17 | [Written on the Wall II](https://lefttosolve.com/programs/Written%20on%20the%20Wall%20II) | 31 | 11 | open: 7, known: 13, warmup: 7 | 11 / 13 / 7 / 0 | [31 items](programs/written-on-the-wall-ii.md) |
+| 18 | [Other](https://lefttosolve.com/programs/Other) | 29 | 17 | open: 4, known: 8 | 17 / 12 / 0 / 0 | [29 items](programs/other.md) |
+| 19 | [Books](https://lefttosolve.com/programs/Books) | 26 | 11 | open: 1, known: 13 | 11 / 15 / 0 / 0 | [26 items](programs/books.md) |
+| 20 | [MathOverflow](https://lefttosolve.com/programs/MathOverflow) | 21 | 9 | known: 7, warmup: 4 | 9 / 8 / 4 / 0 | [21 items](programs/mathoverflow.md) |
+| 21 | [Millennium Prize](https://lefttosolve.com/programs/Millennium%20Prize) | 21 | 12 | warmup: 2 | 12 / 2 / 7 / 0 | [21 items](programs/millennium-prize.md) |
+| 22 | [Kourovka Notebook](https://lefttosolve.com/programs/Kourovka%20Notebook) | 9 | 5 | known: 2 | 5 / 4 / 0 / 0 | [9 items](programs/kourovka-notebook.md) |
+| 23 | [Hilbert's Problems](https://lefttosolve.com/programs/Hilbert%27s%20Problems) | 8 | 2 | known: 2, warmup: 1 | 2 / 5 / 1 / 0 | [8 items](programs/hilbert-s-problems.md) |
+| 24 | [Open problems in information theory (gokhanmergen)](https://lefttosolve.com/programs/Open%20problems%20in%20information%20theory%20%28gokhanmergen%29) | 7 | 7 | 0 | 1 / 0 / 0 / 6 | [7 items](programs/open-problems-in-information-theory-gokhanmergen.md) |
+| 25 | [Conjectures of Luc Gillibert](https://lefttosolve.com/programs/Conjectures%20of%20Luc%20Gillibert) | 3 | 3 | open: 1 | 3 / 0 / 0 / 0 | [3 items](programs/conjectures-of-luc-gillibert.md) |
+| 26 | [Litt's Problems](https://lefttosolve.com/programs/Litt%27s%20Problems) | 3 | 2 | known: 1 | 2 / 1 / 0 / 0 | [3 items](programs/litt-s-problems.md) |
+| | **Total** | **62,790** | **60,804** | **open: 326, known: 1322, warmup: 161** | **2549 / 1818 / 168 / 58255** | **62,790 mirrored** |
 
 ## Program descriptions
 
 - **MathOverflow (not formalized)** — Open questions asked by research mathematicians on MathOverflow, still without an accepted answer.
 - **OEIS conjectures (not formalized)** — Conjectures stated in the On-Line Encyclopedia of Integer Sequences that are not marked proved or refuted. Often testable by computation first.
+- **arXiv abstracts (not formalized)** — Open problems stated in research papers and books.
 - **Erdős Problems** — Paul Erdős's problems, many with cash prizes, as catalogued on erdosproblems.com by Thomas Bloom.
 - **Wikipedia** — Problems from Wikipedia's list of unsolved problems in mathematics.
 - **OEIS** — Conjectures attached to sequences in the On-Line Encyclopedia of Integer Sequences. Often numerically explorable.

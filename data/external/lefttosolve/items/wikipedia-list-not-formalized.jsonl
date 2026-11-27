@@ -3,29 +3,29 @@
 {"fields": ["Algebraic Geometry"], "id": "wp-abundance-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Abundance conjecture"}
 {"fields": ["Logic & Foundations"], "id": "wp-advances-in-mathematics", "kind": "unformalized", "prize": null, "solved": false, "title": "Advances in Mathematics"}
 {"fields": ["Logic & Foundations"], "id": "wp-aec", "kind": "unformalized", "prize": null, "solved": false, "title": "AEC"}
-{"fields": ["Number Theory"], "id": "wp-agrawal-s-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Agrawal's conjecture"}
-{"fields": ["Combinatorics"], "id": "wp-albertson-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Albertson conjecture"}
-{"fields": ["Logic & Foundations"], "id": "wp-algebraically-closed", "kind": "unformalized", "prize": null, "solved": false, "title": "Algebraically closed"}
-{"fields": ["Combinatorics"], "id": "wp-apex-graph", "kind": "unformalized", "prize": null, "solved": false, "title": "Apex graph"}
-{"fields": ["Number Theory"], "id": "wp-are-all-mersenne-numbers-of-prime-index-square-free", "kind": "unformalized", "prize": null, "solved": false, "title": "Are all Mersenne numbers of prime index square-free?"}
+{"fields": ["Number Theory"], "id": "wp-agrawal-s-conjecture", "kind": "open", "prize": null, "solved": false, "title": "Agrawal's conjecture"}
+{"fields": ["Combinatorics"], "id": "wp-albertson-conjecture", "kind": "open", "prize": null, "solved": false, "title": "Albertson conjecture"}
+{"fields": ["Logic & Foundations"], "id": "wp-algebraically-closed", "kind": "open", "prize": null, "solved": false, "title": "Algebraically closed"}
+{"fields": ["Combinatorics"], "id": "wp-apex-graph", "kind": "open", "prize": null, "solved": false, "title": "Apex graph"}
+{"fields": ["Number Theory"], "id": "wp-are-all-mersenne-numbers-of-prime-index-square-free", "kind": "open", "prize": null, "solved": false, "title": "Are all Mersenne numbers of prime index square-free?"}
 {"fields": ["Algebraic Geometry"], "id": "wp-are-infinite-sequences-of-flips-possible-in-dimensions-greater-than-3", "kind": "unformalized", "prize": null, "solved": false, "title": "Are infinite sequences of flips possible in dimensions greater than 3?"}
-{"fields": ["Game Theory & Economics"], "id": "wp-are-the-nim-sequences-of-all-finite-octal-games-eventually-periodic", "kind": "unformalized", "prize": null, "solved": false, "title": "Are the nim-sequences of all finite octal games eventually periodic?"}
-{"fields": ["Number Theory"], "id": "wp-are-there-any-pairs-of-relatively-prime-amicable-numbers", "kind": "unformalized", "prize": null, "solved": false, "title": "Are there any pairs of relatively prime amicable numbers?"}
+{"fields": ["Game Theory & Economics"], "id": "wp-are-the-nim-sequences-of-all-finite-octal-games-eventually-periodic", "kind": "open", "prize": null, "solved": false, "title": "Are the nim-sequences of all finite octal games eventually periodic?"}
+{"fields": ["Number Theory"], "id": "wp-are-there-any-pairs-of-relatively-prime-amicable-numbers", "kind": "open", "prize": null, "solved": false, "title": "Are there any pairs of relatively prime amicable numbers?"}
 {"fields": ["Number Theory"], "id": "wp-are-there-any-wall-sun-sun-primes", "kind": "unformalized", "prize": null, "solved": false, "title": "Are there any Wall–Sun–Sun primes?"}
 {"fields": ["Number Theory"], "id": "wp-are-there-any-wieferich-primes-in-base-47", "kind": "unformalized", "prize": null, "solved": false, "title": "Are there any Wieferich primes in base 47?"}
-{"fields": ["Number Theory"], "id": "wp-are-there-infinitely-many-cluster-primes", "kind": "unformalized", "prize": null, "solved": false, "title": "Are there infinitely many cluster primes?"}
-{"fields": ["Number Theory"], "id": "wp-are-there-infinitely-many-cousin-primes", "kind": "unformalized", "prize": null, "solved": false, "title": "Are there infinitely many cousin primes?"}
-{"fields": ["Number Theory"], "id": "wp-are-there-infinitely-many-cullen-primes", "kind": "unformalized", "prize": null, "solved": false, "title": "Are there infinitely many Cullen primes?"}
-{"fields": ["Number Theory"], "id": "wp-are-there-infinitely-many-giuga-numbers", "kind": "unformalized", "prize": null, "solved": false, "title": "Are there infinitely many Giuga numbers?"}
-{"fields": ["Number Theory"], "id": "wp-are-there-infinitely-many-kummer-primes", "kind": "unformalized", "prize": null, "solved": false, "title": "Are there infinitely many Kummer primes?"}
+{"fields": ["Number Theory"], "id": "wp-are-there-infinitely-many-cluster-primes", "kind": "open", "prize": null, "solved": false, "title": "Are there infinitely many cluster primes?"}
+{"fields": ["Number Theory"], "id": "wp-are-there-infinitely-many-cousin-primes", "kind": "open", "prize": null, "solved": false, "title": "Are there infinitely many cousin primes?"}
+{"fields": ["Number Theory"], "id": "wp-are-there-infinitely-many-cullen-primes", "kind": "open", "prize": null, "solved": false, "title": "Are there infinitely many Cullen primes?"}
+{"fields": ["Number Theory"], "id": "wp-are-there-infinitely-many-giuga-numbers", "kind": "open", "prize": null, "solved": false, "title": "Are there infinitely many Giuga numbers?"}
+{"fields": ["Number Theory"], "id": "wp-are-there-infinitely-many-kummer-primes", "kind": "open", "prize": null, "solved": false, "title": "Are there infinitely many Kummer primes?"}
 {"fields": ["Real Functions"], "id": "wp-are-there-infinitely-many-lehmer-pairs", "kind": "unformalized", "prize": null, "solved": false, "title": "Are there infinitely many Lehmer pairs?"}
-{"fields": ["Number Theory"], "id": "wp-are-there-infinitely-many-lucas-primes", "kind": "unformalized", "prize": null, "solved": false, "title": "Are there infinitely many Lucas primes?"}
-{"fields": ["Number Theory"], "id": "wp-are-there-infinitely-many-newman-shanks-williams-primes", "kind": "unformalized", "prize": null, "solved": false, "title": "Are there infinitely many Newman–Shanks–Williams primes?"}
-{"fields": ["Number Theory"], "id": "wp-are-there-infinitely-many-palindromic-primes-to-every-base", "kind": "unformalized", "prize": null, "solved": false, "title": "Are there infinitely many palindromic primes to every base?"}
-{"fields": ["Number Theory"], "id": "wp-are-there-infinitely-many-prime-quadruplets", "kind": "unformalized", "prize": null, "solved": false, "title": "Are there infinitely many prime quadruplets?"}
-{"fields": ["Number Theory"], "id": "wp-are-there-infinitely-many-safe-and-sophie-germain-primes", "kind": "unformalized", "prize": null, "solved": false, "title": "Are there infinitely many safe and Sophie Germain primes?"}
+{"fields": ["Number Theory"], "id": "wp-are-there-infinitely-many-lucas-primes", "kind": "open", "prize": null, "solved": false, "title": "Are there infinitely many Lucas primes?"}
+{"fields": ["Number Theory"], "id": "wp-are-there-infinitely-many-newman-shanks-williams-primes", "kind": "open", "prize": null, "solved": false, "title": "Are there infinitely many Newman–Shanks–Williams primes?"}
+{"fields": ["Number Theory"], "id": "wp-are-there-infinitely-many-palindromic-primes-to-every-base", "kind": "open", "prize": null, "solved": false, "title": "Are there infinitely many palindromic primes to every base?"}
+{"fields": ["Number Theory"], "id": "wp-are-there-infinitely-many-prime-quadruplets", "kind": "open", "prize": null, "solved": false, "title": "Are there infinitely many prime quadruplets?"}
+{"fields": ["Number Theory"], "id": "wp-are-there-infinitely-many-safe-and-sophie-germain-primes", "kind": "open", "prize": null, "solved": false, "title": "Are there infinitely many safe and Sophie Germain primes?"}
 {"fields": ["Number Theory"], "id": "wp-are-there-infinitely-many-sexy-primes", "kind": "unformalized", "prize": null, "solved": false, "title": "Are there infinitely many sexy primes?"}
-{"fields": ["Number Theory"], "id": "wp-are-there-infinitely-many-wagstaff-primes", "kind": "unformalized", "prize": null, "solved": false, "title": "Are there infinitely many Wagstaff primes?"}
+{"fields": ["Number Theory"], "id": "wp-are-there-infinitely-many-wagstaff-primes", "kind": "open", "prize": null, "solved": false, "title": "Are there infinitely many Wagstaff primes?"}
 {"fields": ["Number Theory"], "id": "wp-are-there-infinitely-many-woodall-primes", "kind": "unformalized", "prize": null, "solved": false, "title": "Are there infinitely many Woodall primes?"}
 {"fields": ["Dynamical Systems"], "id": "wp-arnold-givental-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Arnold–Givental conjecture"}
 {"fields": ["Group Theory"], "id": "wp-arthur-s-conjectures", "kind": "unformalized", "prize": null, "solved": false, "title": "Arthur's conjectures"}
@@ -44,12 +44,12 @@
 {"fields": ["Dynamical Systems"], "id": "wp-berry-tabor-conjecture-in-quantum-chaos", "kind": "unformalized", "prize": null, "solved": false, "title": "Berry–Tabor conjecture in quantum chaos"}
 {"fields": ["Convex & Discrete Geometry"], "id": "wp-big-line-big-clique-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Big-line-big-clique conjecture"}
 {"fields": ["Combinatorics"], "id": "wp-bipartite-graph", "kind": "unformalized", "prize": null, "solved": false, "title": "Bipartite graph"}
-{"fields": ["Number Theory"], "id": "wp-birch-and-swinnerton-dyer-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Birch and Swinnerton-Dyer conjecture"}
+{"fields": ["Number Theory"], "id": "wp-birch-and-swinnerton-dyer-conjecture", "kind": "open", "prize": null, "solved": false, "title": "Birch and Swinnerton-Dyer conjecture"}
 {"fields": ["General Algebra"], "id": "wp-birch-tate-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Birch–Tate conjecture"}
 {"fields": ["Dynamical Systems"], "id": "wp-birkhoff", "kind": "unformalized", "prize": null, "solved": false, "title": "Birkhoff"}
 {"fields": ["Number Theory"], "id": "wp-bloch-beilinson-conjectures", "kind": "unformalized", "prize": null, "solved": false, "title": "Bloch–Beilinson conjectures"}
 {"fields": ["Algebraic K-Theory"], "id": "wp-bloch-kato-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Bloch–Kato conjecture"}
-{"fields": ["Harmonic Analysis"], "id": "wp-bochner-riesz-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Bochner–Riesz conjecture"}
+{"fields": ["Harmonic Analysis"], "id": "wp-bochner-riesz-conjecture", "kind": "open", "prize": null, "solved": false, "title": "Bochner–Riesz conjecture"}
 {"fields": ["Number Theory"], "id": "wp-bombieri-lang-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Bombieri–Lang conjecture"}
 {"fields": ["General Topology"], "id": "wp-borel-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Borel conjecture"}
 {"fields": ["Geometry"], "id": "wp-borromean-rings", "kind": "unformalized", "prize": null, "solved": false, "title": "Borromean rings"}
@@ -57,7 +57,7 @@
 {"fields": ["Combinatorics"], "id": "wp-brouwer-s-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Brouwer's conjecture"}
 {"fields": ["Number Theory"], "id": "wp-brumer-stark-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Brumer–Stark conjecture"}
 {"fields": ["Number Theory"], "id": "wp-can-a-discrete-logarithm-be-computed-in-polynomial-time", "kind": "unformalized", "prize": null, "solved": false, "title": "Can a discrete logarithm be computed in polynomial time?"}
-{"fields": ["Number Theory"], "id": "wp-can-every-integer-be-written-as-a-sum-of-four-perfect-cubes", "kind": "unformalized", "prize": null, "solved": false, "title": "Can every integer be written as a sum of four perfect cubes?"}
+{"fields": ["Number Theory"], "id": "wp-can-every-integer-be-written-as-a-sum-of-four-perfect-cubes", "kind": "open", "prize": null, "solved": false, "title": "Can every integer be written as a sum of four perfect cubes?"}
 {"fields": ["Game Theory & Economics"], "id": "wp-cap-set", "kind": "unformalized", "prize": null, "solved": false, "title": "Cap set"}
 {"fields": ["Differential Geometry"], "id": "wp-caratheodory-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Carathéodory conjecture"}
 {"fields": ["Differential Geometry"], "id": "wp-cartan-hadamard-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Cartan–Hadamard conjecture"}
@@ -97,12 +97,12 @@
 {"fields": ["Geometry"], "id": "wp-dissection-into-orthoschemes-is-it-possible-for-simplices-of-every-dimension", "kind": "unformalized", "prize": null, "solved": false, "title": "Dissection into orthoschemes – is it possible for simplices of every dimension?"}
 {"fields": ["Combinatorics"], "id": "wp-dittert-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Dittert conjecture"}
 {"fields": ["Number Theory"], "id": "wp-do-any-2-5-perfect-numbers-exist", "kind": "unformalized", "prize": null, "solved": false, "title": "Do any (2, 5)-perfect numbers exist?"}
-{"fields": ["Number Theory"], "id": "wp-do-any-odd-noncototients-exist", "kind": "unformalized", "prize": null, "solved": false, "title": "Do any odd noncototients exist?"}
+{"fields": ["Number Theory"], "id": "wp-do-any-odd-noncototients-exist", "kind": "open", "prize": null, "solved": false, "title": "Do any odd noncototients exist?"}
 {"fields": ["Number Theory"], "id": "wp-do-any-odd-weird-numbers-exist", "kind": "unformalized", "prize": null, "solved": false, "title": "Do any odd weird numbers exist?"}
 {"fields": ["Number Theory"], "id": "wp-do-any-taxicab-5-2-n-exist-for-n-1", "kind": "unformalized", "prize": null, "solved": false, "title": "Do any Taxicab(5, 2, n) exist for n > 1?"}
 {"fields": ["Logic & Foundations"], "id": "wp-do-the-henson-graphs-have-the-finite-model-property", "kind": "unformalized", "prize": null, "solved": false, "title": "Do the Henson graphs have the finite model property?"}
 {"fields": ["Number Theory"], "id": "wp-do-the-ulam-numbers-have-a-positive-density", "kind": "unformalized", "prize": null, "solved": false, "title": "Do the Ulam numbers have a positive density?"}
-{"fields": ["Combinatorics"], "id": "wp-does-a-moore-graph-with-girth-5-and-degree-57-exist", "kind": "unformalized", "prize": null, "solved": false, "title": "Does a Moore graph with girth 5 and degree 57 exist?"}
+{"fields": ["Combinatorics"], "id": "wp-does-a-moore-graph-with-girth-5-and-degree-57-exist", "kind": "open", "prize": null, "solved": false, "title": "Does a Moore graph with girth 5 and degree 57 exist?"}
 {"fields": ["Geometry"], "id": "wp-does-every-convex-polyhedron-have-rupert-s-property", "kind": "unformalized", "prize": null, "solved": false, "title": "Does every convex polyhedron have Rupert's property?"}
 {"fields": ["Number Theory"], "id": "wp-does-every-rational-number-with-an-odd-denominator-have-an-odd-greedy-expansion", "kind": "unformalized", "prize": null, "solved": false, "title": "Does every rational number with an odd denominator have an odd greedy expansion?"}
 {"fields": ["Group Theory"], "id": "wp-does-generalized-moonshine-exist", "kind": "unformalized", "prize": null, "solved": false, "title": "Does generalized moonshine exist?"}
@@ -137,7 +137,7 @@
 {"fields": ["Number Theory"], "id": "wp-fontaine-mazur-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Fontaine–Mazur conjecture"}
 {"fields": ["Differential Geometry"], "id": "wp-for-which-dimensions-of-sphere-differential-poincare-conjecture-is-true", "kind": "unformalized", "prize": null, "solved": false, "title": "For which dimensions of sphere differential Poincaré conjecture is true?"}
 {"fields": ["Logic & Foundations"], "id": "wp-for-which-number-fields-does-hilbert-s-tenth-problem-hold", "kind": "unformalized", "prize": null, "solved": false, "title": "For which number fields does Hilbert's tenth problem hold?"}
-{"fields": ["Combinatorics"], "id": "wp-frankl-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Frankl conjecture"}
+{"fields": ["Combinatorics"], "id": "wp-frankl-conjecture", "kind": "open", "prize": null, "solved": false, "title": "Frankl conjecture"}
 {"fields": ["Algebraic Geometry"], "id": "wp-froberg-conjecture-on-the-hilbert-functions-of-a-set-of-forms", "kind": "unformalized", "prize": null, "solved": false, "title": "Fröberg conjecture on the Hilbert functions of a set of forms."}
 {"fields": ["Algebraic Geometry"], "id": "wp-fujita-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Fujita conjecture"}
 {"fields": ["Dynamical Systems"], "id": "wp-furstenberg", "kind": "unformalized", "prize": null, "solved": false, "title": "Furstenberg"}
@@ -152,7 +152,7 @@
 {"fields": ["Number Theory"], "id": "wp-gillies-conjecture-on-the-distribution-of-prime-divisors-of-mersenne-numbers", "kind": "unformalized", "prize": null, "solved": false, "title": "Gillies' conjecture on the distribution of prime divisors of Mersenne numbers."}
 {"fields": ["Combinatorics"], "id": "wp-give-a-combinatorial-interpretation-of-the-kronecker-coefficients", "kind": "unformalized", "prize": null, "solved": false, "title": "Give a combinatorial interpretation of the Kronecker coefficients"}
 {"fields": ["Combinatorics"], "id": "wp-gnrs-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "GNRS conjecture"}
-{"fields": ["Order Theory"], "id": "wp-gold-partition-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Gold partition conjecture"}
+{"fields": ["Order Theory"], "id": "wp-gold-partition-conjecture", "kind": "open", "prize": null, "solved": false, "title": "Gold partition conjecture"}
 {"fields": ["Combinatorics"], "id": "wp-goldberg-seymour-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Goldberg–Seymour conjecture"}
 {"fields": ["General Algebra"], "id": "wp-goncharov-conjecture-on-the-cohomology-of-certain-motivic-complexes", "kind": "unformalized", "prize": null, "solved": false, "title": "Goncharov conjecture on the cohomology of certain motivic complexes."}
 {"fields": ["Combinatorics"], "id": "wp-graham-s-pebbling-conjecture-on-the-pebbling-number-of-cartesian-products-of-gra", "kind": "unformalized", "prize": null, "solved": false, "title": "Graham's pebbling conjecture on the pebbling number of Cartesian products of graphs"}
@@ -204,7 +204,7 @@
 {"fields": ["Number Theory"], "id": "wp-keating-snaith-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Keating–Snaith conjecture"}
 {"fields": ["Convex & Discrete Geometry"], "id": "wp-kissing-number-problem-for-dimensions-other-than-1-2-3-4-8-and-24", "kind": "unformalized", "prize": null, "solved": false, "title": "Kissing number problem for dimensions other than 1, 2, 3, 4, 8 and 24"}
 {"fields": ["Convex & Discrete Geometry"], "id": "wp-kobon-triangle-problem-on-triangles-in-line-arrangements", "kind": "unformalized", "prize": null, "solved": false, "title": "Kobon triangle problem on triangles in line arrangements"}
-{"fields": ["Iterative Methods"], "id": "wp-kung-traub-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Kung–Traub conjecture"}
+{"fields": ["Iterative Methods"], "id": "wp-kung-traub-conjecture", "kind": "open", "prize": null, "solved": false, "title": "Kung–Traub conjecture"}
 {"fields": ["Convex & Discrete Geometry"], "id": "wp-kusner-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Kusner conjecture"}
 {"fields": ["Number Theory"], "id": "wp-landau-s-problems", "kind": "unformalized", "prize": null, "solved": false, "title": "Landau's problems"}
 {"fields": ["General Algebra"], "id": "wp-lander-s-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Lander's conjecture"}
@@ -358,7 +358,7 @@
 {"fields": ["General Algebra"], "id": "wp-williamson-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Williamson conjecture"}
 {"fields": ["Combinatorics"], "id": "wp-woodall-s-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Woodall's conjecture"}
 {"fields": ["Logic & Foundations"], "id": "wp-woodin", "kind": "unformalized", "prize": null, "solved": false, "title": "Woodin"}
-{"fields": ["Differential Geometry"], "id": "wp-yau-s-conjecture-on-the-first-eigenvalue", "kind": "unformalized", "prize": null, "solved": false, "title": "Yau's conjecture on the first eigenvalue"}
+{"fields": ["Differential Geometry"], "id": "wp-yau-s-conjecture-on-the-first-eigenvalue", "kind": "open", "prize": null, "solved": false, "title": "Yau's conjecture on the first eigenvalue"}
 {"fields": ["Combinatorics"], "id": "wp-zarankiewicz-problem", "kind": "unformalized", "prize": null, "solved": false, "title": "Zarankiewicz problem"}
 {"fields": ["General Algebra"], "id": "wp-zariski-lipman-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Zariski–Lipman conjecture"}
 {"fields": ["Operator Theory"], "id": "wp-zauner-s-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Zauner's conjecture"}

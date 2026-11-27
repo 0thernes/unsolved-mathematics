@@ -14,7 +14,7 @@
 
 [Program page](https://lefttosolve.com/programs/Erd%C5%91s%20Problems%20%28not%20formalized%29) · Open Erdős problems that nobody has stated in Lean yet.
 
-Targets 116 · open 116 · solved by kind (site claim): `0` · kinds open/known/warmup/unformalized/other = 0/0/0/116/0 · snapshot `f1bcc922a11d5418` (`2026-11-27T05:46:57Z`).
+Targets 116 · open 116 · solved by kind (site claim): `open: 1` · kinds open/known/warmup/unformalized/other = 23/0/0/93/0 · snapshot `7cb07abf0cea37cb` (`2026-11-27T17:43:57Z`).
 
 Back to [all programs](../PROGRAMS.md).
 
@@ -22,17 +22,17 @@ Back to [all programs](../PROGRAMS.md).
 |---:|---|---|---|---|---|---|
 | 1 | [`erdos-1011`](https://lefttosolve.com/p/erdos-1011) | Erdős Problem 1011 | unformalized | Combinatorics |  |  |
 | 2 | [`erdos-1016`](https://lefttosolve.com/p/erdos-1016) | Erdős Problem 1016 | unformalized | Combinatorics |  |  |
-| 3 | [`erdos-1039`](https://lefttosolve.com/p/erdos-1039) | Erdős Problem 1039 | unformalized | Real Functions |  |  |
+| 3 | [`erdos-1039`](https://lefttosolve.com/p/erdos-1039) | Erdős Problem 1039 | open | Real Functions |  |  |
 | 4 | [`erdos-1040`](https://lefttosolve.com/p/erdos-1040) | Erdős Problem 1040 | unformalized | Real Functions |  |  |
-| 5 | [`erdos-1045`](https://lefttosolve.com/p/erdos-1045) | Erdős Problem 1045 | unformalized | Real Functions |  |  |
-| 6 | [`erdos-1054`](https://lefttosolve.com/p/erdos-1054) | Erdős Problem 1054 | unformalized | Number Theory |  |  |
+| 5 | [`erdos-1045`](https://lefttosolve.com/p/erdos-1045) | Erdős Problem 1045 | open | Real Functions |  |  |
+| 6 | [`erdos-1054`](https://lefttosolve.com/p/erdos-1054) | Erdős Problem 1054 | open | Number Theory |  |  |
 | 7 | [`erdos-1097`](https://lefttosolve.com/p/erdos-1097) | Erdős Problem 1097 | unformalized | Combinatorics, Number Theory |  |  |
 | 8 | [`erdos-1103`](https://lefttosolve.com/p/erdos-1103) | Erdős Problem 1103 | unformalized | Number Theory |  |  |
-| 9 | [`erdos-1112`](https://lefttosolve.com/p/erdos-1112) | Erdős Problem 1112 | unformalized | Combinatorics |  |  |
+| 9 | [`erdos-1112`](https://lefttosolve.com/p/erdos-1112) | Erdős Problem 1112 | open | Combinatorics |  |  |
 | 10 | [`erdos-1117`](https://lefttosolve.com/p/erdos-1117) | Erdős Problem 1117 | unformalized | Real Functions |  |  |
 | 11 | [`erdos-112`](https://lefttosolve.com/p/erdos-112) | Erdős Problem 112 | unformalized | Combinatorics |  |  |
 | 12 | [`erdos-1120`](https://lefttosolve.com/p/erdos-1120) | Erdős Problem 1120 | unformalized | Real Functions |  |  |
-| 13 | [`erdos-1131`](https://lefttosolve.com/p/erdos-1131) | Erdős Problem 1131 | unformalized | Real Functions |  |  |
+| 13 | [`erdos-1131`](https://lefttosolve.com/p/erdos-1131) | Erdős Problem 1131 | open | Real Functions |  | yes |
 | 14 | [`erdos-1143`](https://lefttosolve.com/p/erdos-1143) | Erdős Problem 1143 | unformalized | Number Theory |  |  |
 | 15 | [`erdos-1144`](https://lefttosolve.com/p/erdos-1144) | Erdős Problem 1144 | unformalized | Number Theory, Probability |  |  |
 | 16 | [`erdos-1150`](https://lefttosolve.com/p/erdos-1150) | Erdős Problem 1150 | unformalized | Real Functions |  |  |
@@ -45,7 +45,7 @@ Back to [all programs](../PROGRAMS.md).
 | 23 | [`erdos-1172`](https://lefttosolve.com/p/erdos-1172) | Erdős Problem 1172 | unformalized | Combinatorics, Logic & Foundations |  |  |
 | 24 | [`erdos-1181`](https://lefttosolve.com/p/erdos-1181) | Erdős Problem 1181 | unformalized | Number Theory |  |  |
 | 25 | [`erdos-1188`](https://lefttosolve.com/p/erdos-1188) | Erdős Problem 1188 | unformalized | Number Theory |  |  |
-| 26 | [`erdos-1200`](https://lefttosolve.com/p/erdos-1200) | Erdős Problem 1200 | unformalized | Number Theory |  |  |
+| 26 | [`erdos-1200`](https://lefttosolve.com/p/erdos-1200) | Erdős Problem 1200 | open | Number Theory |  |  |
 | 27 | [`erdos-1208`](https://lefttosolve.com/p/erdos-1208) | Erdős Problem 1208 | unformalized | Geometry |  |  |
 | 28 | [`erdos-1212`](https://lefttosolve.com/p/erdos-1212) | Erdős Problem 1212 | unformalized | Number Theory |  |  |
 | 29 | [`erdos-1218`](https://lefttosolve.com/p/erdos-1218) | Erdős Problem 1218 | unformalized | Combinatorics, Logic & Foundations |  |  |
@@ -53,12 +53,12 @@ Back to [all programs](../PROGRAMS.md).
 | 31 | [`erdos-1220`](https://lefttosolve.com/p/erdos-1220) | Erdős Problem 1220 | unformalized | Combinatorics, Logic & Foundations |  |  |
 | 32 | [`erdos-129`](https://lefttosolve.com/p/erdos-129) | Erdős Problem 129 | unformalized | Combinatorics |  |  |
 | 33 | [`erdos-130`](https://lefttosolve.com/p/erdos-130) | Erdős Problem 130 | unformalized | Combinatorics |  |  |
-| 34 | [`erdos-132`](https://lefttosolve.com/p/erdos-132) | Erdős Problem 132 | unformalized | Combinatorics | $100 |  |
-| 35 | [`erdos-149`](https://lefttosolve.com/p/erdos-149) | Erdős Problem 149 | unformalized | Combinatorics |  |  |
+| 34 | [`erdos-132`](https://lefttosolve.com/p/erdos-132) | Erdős Problem 132 | open | Combinatorics | $100 |  |
+| 35 | [`erdos-149`](https://lefttosolve.com/p/erdos-149) | Erdős Problem 149 | open | Combinatorics |  |  |
 | 36 | [`erdos-167`](https://lefttosolve.com/p/erdos-167) | Erdős Problem 167 | unformalized | Combinatorics |  |  |
 | 37 | [`erdos-169`](https://lefttosolve.com/p/erdos-169) | Erdős Problem 169 | unformalized | Combinatorics |  |  |
 | 38 | [`erdos-172`](https://lefttosolve.com/p/erdos-172) | Erdős Problem 172 | unformalized | Combinatorics |  |  |
-| 39 | [`erdos-176`](https://lefttosolve.com/p/erdos-176) | Erdős Problem 176 | unformalized | Combinatorics |  |  |
+| 39 | [`erdos-176`](https://lefttosolve.com/p/erdos-176) | Erdős Problem 176 | open | Combinatorics |  |  |
 | 40 | [`erdos-177`](https://lefttosolve.com/p/erdos-177) | Erdős Problem 177 | unformalized | Combinatorics |  |  |
 | 41 | [`erdos-181`](https://lefttosolve.com/p/erdos-181) | Erdős Problem 181 | unformalized | Combinatorics |  |  |
 | 42 | [`erdos-187`](https://lefttosolve.com/p/erdos-187) | Erdős Problem 187 | unformalized | Combinatorics |  |  |
@@ -70,7 +70,7 @@ Back to [all programs](../PROGRAMS.md).
 | 48 | [`erdos-271`](https://lefttosolve.com/p/erdos-271) | Erdős Problem 271 | unformalized | Combinatorics |  |  |
 | 49 | [`erdos-278`](https://lefttosolve.com/p/erdos-278) | Erdős Problem 278 | unformalized | Number Theory |  |  |
 | 50 | [`erdos-289`](https://lefttosolve.com/p/erdos-289) | Erdős Problem 289 | unformalized | Number Theory |  |  |
-| 51 | [`erdos-301`](https://lefttosolve.com/p/erdos-301) | Erdős Problem 301 | unformalized | Number Theory |  |  |
+| 51 | [`erdos-301`](https://lefttosolve.com/p/erdos-301) | Erdős Problem 301 | open | Number Theory |  |  |
 | 52 | [`erdos-306`](https://lefttosolve.com/p/erdos-306) | Erdős Problem 306 | unformalized | Number Theory |  |  |
 | 53 | [`erdos-327`](https://lefttosolve.com/p/erdos-327) | Erdős Problem 327 | unformalized | Number Theory |  |  |
 | 54 | [`erdos-334`](https://lefttosolve.com/p/erdos-334) | Erdős Problem 334 | unformalized | Number Theory |  |  |
@@ -85,40 +85,40 @@ Back to [all programs](../PROGRAMS.md).
 | 63 | [`erdos-431`](https://lefttosolve.com/p/erdos-431) | Erdős Problem 431 | unformalized | Number Theory |  |  |
 | 64 | [`erdos-432`](https://lefttosolve.com/p/erdos-432) | Erdős Problem 432 | unformalized | Number Theory |  |  |
 | 65 | [`erdos-451`](https://lefttosolve.com/p/erdos-451) | Erdős Problem 451 | unformalized | Number Theory |  |  |
-| 66 | [`erdos-460`](https://lefttosolve.com/p/erdos-460) | Erdős Problem 460 | unformalized | Number Theory |  |  |
+| 66 | [`erdos-460`](https://lefttosolve.com/p/erdos-460) | Erdős Problem 460 | open | Number Theory |  |  |
 | 67 | [`erdos-468`](https://lefttosolve.com/p/erdos-468) | Erdős Problem 468 | unformalized | Number Theory |  |  |
 | 68 | [`erdos-475`](https://lefttosolve.com/p/erdos-475) | Erdős Problem 475 | unformalized | Combinatorics, Number Theory |  |  |
 | 69 | [`erdos-486`](https://lefttosolve.com/p/erdos-486) | Erdős Problem 486 | unformalized | Number Theory |  |  |
-| 70 | [`erdos-514`](https://lefttosolve.com/p/erdos-514) | Erdős Problem 514 | unformalized | Real Functions |  |  |
+| 70 | [`erdos-514`](https://lefttosolve.com/p/erdos-514) | Erdős Problem 514 | open | Real Functions |  |  |
 | 71 | [`erdos-520`](https://lefttosolve.com/p/erdos-520) | Erdős Problem 520 | unformalized | Number Theory, Probability |  |  |
-| 72 | [`erdos-521`](https://lefttosolve.com/p/erdos-521) | Erdős Problem 521 | unformalized | Probability, Real Functions |  |  |
+| 72 | [`erdos-521`](https://lefttosolve.com/p/erdos-521) | Erdős Problem 521 | open | Probability, Real Functions |  |  |
 | 73 | [`erdos-524`](https://lefttosolve.com/p/erdos-524) | Erdős Problem 524 | unformalized | Probability, Real Functions |  |  |
 | 74 | [`erdos-528`](https://lefttosolve.com/p/erdos-528) | Erdős Problem 528 | unformalized | Geometry |  |  |
-| 75 | [`erdos-529`](https://lefttosolve.com/p/erdos-529) | Erdős Problem 529 | unformalized | Geometry, Probability |  |  |
+| 75 | [`erdos-529`](https://lefttosolve.com/p/erdos-529) | Erdős Problem 529 | open | Geometry, Probability |  |  |
 | 76 | [`erdos-530`](https://lefttosolve.com/p/erdos-530) | Erdős Problem 530 | unformalized | Number Theory |  |  |
 | 77 | [`erdos-531`](https://lefttosolve.com/p/erdos-531) | Erdős Problem 531 | unformalized | Combinatorics, Number Theory |  |  |
 | 78 | [`erdos-550`](https://lefttosolve.com/p/erdos-550) | Erdős Problem 550 | unformalized | Combinatorics |  |  |
 | 79 | [`erdos-558`](https://lefttosolve.com/p/erdos-558) | Erdős Problem 558 | unformalized | Combinatorics |  |  |
 | 80 | [`erdos-576`](https://lefttosolve.com/p/erdos-576) | Erdős Problem 576 | unformalized | Combinatorics |  |  |
-| 81 | [`erdos-580`](https://lefttosolve.com/p/erdos-580) | Erdős Problem 580 | unformalized | Combinatorics |  |  |
+| 81 | [`erdos-580`](https://lefttosolve.com/p/erdos-580) | Erdős Problem 580 | open | Combinatorics |  |  |
 | 82 | [`erdos-584`](https://lefttosolve.com/p/erdos-584) | Erdős Problem 584 | unformalized | Combinatorics |  |  |
 | 83 | [`erdos-585`](https://lefttosolve.com/p/erdos-585) | Erdős Problem 585 | unformalized | Combinatorics |  |  |
 | 84 | [`erdos-589`](https://lefttosolve.com/p/erdos-589) | Erdős Problem 589 | unformalized | Geometry |  |  |
 | 85 | [`erdos-612`](https://lefttosolve.com/p/erdos-612) | Erdős Problem 612 | unformalized | Combinatorics |  |  |
 | 86 | [`erdos-62`](https://lefttosolve.com/p/erdos-62) | Erdős Problem 62 | unformalized | Combinatorics |  |  |
 | 87 | [`erdos-620`](https://lefttosolve.com/p/erdos-620) | Erdős Problem 620 | unformalized | Combinatorics |  |  |
-| 88 | [`erdos-634`](https://lefttosolve.com/p/erdos-634) | Erdős Problem 634 | unformalized | Geometry | $25 |  |
+| 88 | [`erdos-634`](https://lefttosolve.com/p/erdos-634) | Erdős Problem 634 | open | Geometry | $25 |  |
 | 89 | [`erdos-635`](https://lefttosolve.com/p/erdos-635) | Erdős Problem 635 | unformalized | Number Theory |  |  |
 | 90 | [`erdos-638`](https://lefttosolve.com/p/erdos-638) | Erdős Problem 638 | unformalized | Combinatorics |  |  |
 | 91 | [`erdos-662`](https://lefttosolve.com/p/erdos-662) | Erdős Problem 662 | unformalized | Geometry |  |  |
-| 92 | [`erdos-671`](https://lefttosolve.com/p/erdos-671) | Erdős Problem 671 | unformalized | Real Functions | $250 |  |
-| 93 | [`erdos-684`](https://lefttosolve.com/p/erdos-684) | Erdős Problem 684 | unformalized | Number Theory |  |  |
-| 94 | [`erdos-689`](https://lefttosolve.com/p/erdos-689) | Erdős Problem 689 | unformalized | Number Theory |  |  |
-| 95 | [`erdos-708`](https://lefttosolve.com/p/erdos-708) | Erdős Problem 708 | unformalized | Number Theory | $100 |  |
-| 96 | [`erdos-738`](https://lefttosolve.com/p/erdos-738) | Erdős Problem 738 | unformalized | Combinatorics |  |  |
+| 92 | [`erdos-671`](https://lefttosolve.com/p/erdos-671) | Erdős Problem 671 | open | Real Functions | $250 |  |
+| 93 | [`erdos-684`](https://lefttosolve.com/p/erdos-684) | Erdős Problem 684 | open | Number Theory |  |  |
+| 94 | [`erdos-689`](https://lefttosolve.com/p/erdos-689) | Erdős Problem 689 | open | Number Theory |  |  |
+| 95 | [`erdos-708`](https://lefttosolve.com/p/erdos-708) | Erdős Problem 708 | open | Number Theory | $100 |  |
+| 96 | [`erdos-738`](https://lefttosolve.com/p/erdos-738) | Erdős Problem 738 | open | Combinatorics |  |  |
 | 97 | [`erdos-776`](https://lefttosolve.com/p/erdos-776) | Erdős Problem 776 | unformalized | Combinatorics |  |  |
 | 98 | [`erdos-778`](https://lefttosolve.com/p/erdos-778) | Erdős Problem 778 | unformalized | Combinatorics |  |  |
-| 99 | [`erdos-788`](https://lefttosolve.com/p/erdos-788) | Erdős Problem 788 | unformalized | Combinatorics |  |  |
+| 99 | [`erdos-788`](https://lefttosolve.com/p/erdos-788) | Erdős Problem 788 | open | Combinatorics |  |  |
 | 100 | [`erdos-791`](https://lefttosolve.com/p/erdos-791) | Erdős Problem 791 | unformalized | Combinatorics |  |  |
 | 101 | [`erdos-796`](https://lefttosolve.com/p/erdos-796) | Erdős Problem 796 | unformalized | Number Theory |  |  |
 | 102 | [`erdos-809`](https://lefttosolve.com/p/erdos-809) | Erdős Problem 809 | unformalized | Combinatorics |  |  |
@@ -130,7 +130,7 @@ Back to [all programs](../PROGRAMS.md).
 | 108 | [`erdos-879`](https://lefttosolve.com/p/erdos-879) | Erdős Problem 879 | unformalized | Number Theory |  |  |
 | 109 | [`erdos-892`](https://lefttosolve.com/p/erdos-892) | Erdős Problem 892 | unformalized | Number Theory |  |  |
 | 110 | [`erdos-919`](https://lefttosolve.com/p/erdos-919) | Erdős Problem 919 | unformalized | Combinatorics |  |  |
-| 111 | [`erdos-928`](https://lefttosolve.com/p/erdos-928) | Erdős Problem 928 | unformalized | Number Theory |  |  |
+| 111 | [`erdos-928`](https://lefttosolve.com/p/erdos-928) | Erdős Problem 928 | open | Number Theory |  |  |
 | 112 | [`erdos-952`](https://lefttosolve.com/p/erdos-952) | Erdős Problem 952 | unformalized | Number Theory |  |  |
 | 113 | [`erdos-953`](https://lefttosolve.com/p/erdos-953) | Erdős Problem 953 | unformalized | Geometry |  |  |
 | 114 | [`erdos-956`](https://lefttosolve.com/p/erdos-956) | Erdős Problem 956 | unformalized | Geometry |  |  |

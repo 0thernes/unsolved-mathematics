@@ -14,11 +14,11 @@
 
 [Program page](https://lefttosolve.com/programs/OEIS%20conjectures%20%28not%20formalized%29) · Conjectures stated in the On-Line Encyclopedia of Integer Sequences that are not marked proved or refuted. Often testable by computation first.
 
-Targets 18,441 · open 18,441 · solved by kind (site claim): `0` · kinds open/known/warmup/unformalized/other = 0/0/0/18441/0 · snapshot `f1bcc922a11d5418` (`2026-11-27T05:46:57Z`).
+Targets 18,451 · open 18,451 · solved by kind (site claim): `open: 152` · kinds open/known/warmup/unformalized/other = 415/0/0/18036/0 · snapshot `7cb07abf0cea37cb` (`2026-11-27T17:43:57Z`).
 
 Back to [all programs](../PROGRAMS.md).
 
-This program contains **18,441** mirrored items stored across **1** JSONL shard(s) under `data/external/lefttosolve/items/` (each strictly < 5 MB). Search all items locally with `python scripts/search_all_problems.py --program "OEIS conjectures (not formalized)" --query "<term>"`.
+This program contains **18,451** mirrored items stored across **1** JSONL shard(s) under `data/external/lefttosolve/items/` (each strictly < 5 MB). Search all items locally with `python scripts/search_all_problems.py --program "OEIS conjectures (not formalized)" --query "<term>"`.
 
 ## JSONL Shards
 
@@ -28,8 +28,8 @@ This program contains **18,441** mirrored items stored across **1** JSONL shard(
 
 | Field | Items |
 |---|---:|
-| Number Theory | 15,577 |
-| Combinatorics | 1,908 |
+| Number Theory | 15,585 |
+| Combinatorics | 1,910 |
 | General Algebra | 540 |
 | Geometry | 416 |
 
@@ -37,13 +37,13 @@ This program contains **18,441** mirrored items stored across **1** JSONL shard(
 
 | # | Item id | Title | Kind | Fields |
 |---:|---|---|---|---|
-| 1 | [`oeis-a000001`](https://lefttosolve.com/p/oeis-a000001) | A000001: Number of groups of order n. | unformalized | Number Theory |
-| 2 | [`oeis-a000009`](https://lefttosolve.com/p/oeis-a000009) | A000009: Expansion of Product_{m >= 1} (1 + x^m); number of partitions of n into distinct parts; number of partitions of n into odd parts. | unformalized | Number Theory |
+| 1 | [`oeis-a000001`](https://lefttosolve.com/p/oeis-a000001) | A000001: Number of groups of order n. | open | Number Theory |
+| 2 | [`oeis-a000009`](https://lefttosolve.com/p/oeis-a000009) | A000009: Expansion of Product_{m >= 1} (1 + x^m); number of partitions of n into distinct parts; number of partitions of n into odd parts. | open | Number Theory |
 | 3 | [`oeis-a000032`](https://lefttosolve.com/p/oeis-a000032) | A000032: Lucas numbers beginning at 2: L(n) = L(n-1) + L(n-2), L(0) = 2, L(1) = 1. | unformalized | Number Theory |
-| 4 | [`oeis-a000033`](https://lefttosolve.com/p/oeis-a000033) | A000033: a(n) = A058087(n,n-2). | unformalized | Number Theory |
+| 4 | [`oeis-a000033`](https://lefttosolve.com/p/oeis-a000033) | A000033: a(n) = A058087(n,n-2). | open | Number Theory |
 | 5 | [`oeis-a000041`](https://lefttosolve.com/p/oeis-a000041) | A000041: a(n) is the number of partitions of n (the partition numbers). | unformalized | Number Theory |
-| 6 | [`oeis-a000043`](https://lefttosolve.com/p/oeis-a000043) | A000043: Mersenne exponents: primes p such that 2^p - 1 is prime. Then 2^p - 1 is called a Mersenne prime. | unformalized | Number Theory |
-| 7 | [`oeis-a000051`](https://lefttosolve.com/p/oeis-a000051) | A000051: a(n) = 2^n + 1. | unformalized | Number Theory |
+| 6 | [`oeis-a000043`](https://lefttosolve.com/p/oeis-a000043) | A000043: Mersenne exponents: primes p such that 2^p - 1 is prime. Then 2^p - 1 is called a Mersenne prime. | open | Number Theory |
+| 7 | [`oeis-a000051`](https://lefttosolve.com/p/oeis-a000051) | A000051: a(n) = 2^n + 1. | open | Number Theory |
 | 8 | [`oeis-a000073`](https://lefttosolve.com/p/oeis-a000073) | A000073: Tribonacci numbers: a(n) = a(n-1) + a(n-2) + a(n-3) for n >= 3 with a(0) = a(1) = 0 and a(2) = 1. | unformalized | Number Theory |
 | 9 | [`oeis-a000079`](https://lefttosolve.com/p/oeis-a000079) | A000079: Powers of 2: a(n) = 2^n. | unformalized | Number Theory |
 | 10 | [`oeis-a000089`](https://lefttosolve.com/p/oeis-a000089) | A000089: Number of solutions to x^2 + 1 == 0 (mod n). | unformalized | Number Theory |
@@ -51,34 +51,34 @@ This program contains **18,441** mirrored items stored across **1** JSONL shard(
 | 12 | [`oeis-a000111`](https://lefttosolve.com/p/oeis-a000111) | A000111: Euler or up/down numbers: e.g.f. sec(x) + tan(x). Also for n >= 2, half the number of alternating permutations on n letters (A0012 | unformalized | Combinatorics |
 | 13 | [`oeis-a000122`](https://lefttosolve.com/p/oeis-a000122) | A000122: Expansion of Jacobi theta function theta3(x) = Sum{m =-oo..oo} x^(m^2) (number of integer solutions to k^2 = n). | unformalized | Number Theory |
 | 14 | [`oeis-a000123`](https://lefttosolve.com/p/oeis-a000123) | A000123: Number of binary partitions: number of partitions of 2n into powers of 2. | unformalized | Combinatorics |
-| 15 | [`oeis-a000126`](https://lefttosolve.com/p/oeis-a000126) | A000126: A nonlinear binomial sum. | unformalized | Combinatorics |
-| 16 | [`oeis-a000139`](https://lefttosolve.com/p/oeis-a000139) | A000139: a(n) = 2*(3*n)! / ((2*n+1)!*(n+1)!). | unformalized | Number Theory |
+| 15 | [`oeis-a000126`](https://lefttosolve.com/p/oeis-a000126) | A000126: A nonlinear binomial sum. | open | Combinatorics |
+| 16 | [`oeis-a000139`](https://lefttosolve.com/p/oeis-a000139) | A000139: a(n) = 2*(3*n)! / ((2*n+1)!*(n+1)!). | open | Number Theory |
 | 17 | [`oeis-a000155`](https://lefttosolve.com/p/oeis-a000155) | A000155: Nearest integer to modified Bessel function K_n(1). | unformalized | Number Theory |
 | 18 | [`oeis-a000159`](https://lefttosolve.com/p/oeis-a000159) | A000159: a(n) = A058087(n,n-3). | unformalized | Number Theory |
-| 19 | [`oeis-a000166`](https://lefttosolve.com/p/oeis-a000166) | A000166: Subfactorial or rencontres numbers, or derangements: number of permutations of n elements with no fixed points. | unformalized | Combinatorics |
+| 19 | [`oeis-a000166`](https://lefttosolve.com/p/oeis-a000166) | A000166: Subfactorial or rencontres numbers, or derangements: number of permutations of n elements with no fixed points. | open | Combinatorics |
 | 20 | [`oeis-a000170`](https://lefttosolve.com/p/oeis-a000170) | A000170: Number of ways of placing n nonattacking queens on an n X n board. | unformalized | Number Theory |
 | 21 | [`oeis-a000181`](https://lefttosolve.com/p/oeis-a000181) | A000181: a(n) = A058087(n,n-4). | unformalized | Number Theory |
 | 22 | [`oeis-a000182`](https://lefttosolve.com/p/oeis-a000182) | A000182: Tangent (or "Zag") numbers: e.g.f. tan(x), also (up to signs) e.g.f. tanh(x). | unformalized | Number Theory |
 | 23 | [`oeis-a000185`](https://lefttosolve.com/p/oeis-a000185) | A000185: a(n) = A058087(n,n-5). | unformalized | Number Theory |
-| 24 | [`oeis-a000188`](https://lefttosolve.com/p/oeis-a000188) | A000188: (1) Number of solutions to x^2 == 0 (mod n). (2) Also square root of largest square dividing n. (3) Also max_{ d divides n } gcd(d | unformalized | Number Theory |
+| 24 | [`oeis-a000188`](https://lefttosolve.com/p/oeis-a000188) | A000188: (1) Number of solutions to x^2 == 0 (mod n). (2) Also square root of largest square dividing n. (3) Also max_{ d divides n } gcd(d | open | Number Theory |
 | 25 | [`oeis-a000212`](https://lefttosolve.com/p/oeis-a000212) | A000212: a(n) = floor(n^2/3). | unformalized | Geometry |
-| 26 | [`oeis-a000215`](https://lefttosolve.com/p/oeis-a000215) | A000215: Fermat numbers: a(n) = 2^(2^n) + 1. | unformalized | Number Theory |
+| 26 | [`oeis-a000215`](https://lefttosolve.com/p/oeis-a000215) | A000215: Fermat numbers: a(n) = 2^(2^n) + 1. | open | Number Theory |
 | 27 | [`oeis-a000225`](https://lefttosolve.com/p/oeis-a000225) | A000225: a(n) = 2^n - 1. (Sometimes called Mersenne numbers, although that name is usually reserved for A001348.) | unformalized | Number Theory |
 | 28 | [`oeis-a000232`](https://lefttosolve.com/p/oeis-a000232) | A000232: Construct a triangle as in A036262. Sequence is one less than the position of the first number larger than 2 in the n-th row (n-th | unformalized | Geometry |
 | 29 | [`oeis-a000247`](https://lefttosolve.com/p/oeis-a000247) | A000247: a(n) = 2^n - n - 2. | unformalized | General Algebra |
 | 30 | [`oeis-a000254`](https://lefttosolve.com/p/oeis-a000254) | A000254: Unsigned Stirling numbers of first kind, s(n+1,2): a(n+1) = (n+1)*a(n) + n!. | unformalized | Number Theory |
-| 31 | [`oeis-a000262`](https://lefttosolve.com/p/oeis-a000262) | A000262: Number of "sets of lists": number of partitions of {1,...,n} into any number of lists, where a list means an ordered subset. | unformalized | Number Theory |
-| 32 | [`oeis-a000265`](https://lefttosolve.com/p/oeis-a000265) | A000265: Remove all factors of 2 from n; or largest odd divisor of n; or odd part of n. | unformalized | Number Theory |
+| 31 | [`oeis-a000262`](https://lefttosolve.com/p/oeis-a000262) | A000262: Number of "sets of lists": number of partitions of {1,...,n} into any number of lists, where a list means an ordered subset. | open | Number Theory |
+| 32 | [`oeis-a000265`](https://lefttosolve.com/p/oeis-a000265) | A000265: Remove all factors of 2 from n; or largest odd divisor of n; or odd part of n. | open | Number Theory |
 | 33 | [`oeis-a000267`](https://lefttosolve.com/p/oeis-a000267) | A000267: Integer part of square root of 4n+1. | unformalized | Number Theory |
 | 34 | [`oeis-a000274`](https://lefttosolve.com/p/oeis-a000274) | A000274: Number of permutations of length n with 2 consecutive ascending pairs. | unformalized | Combinatorics |
 | 35 | [`oeis-a000276`](https://lefttosolve.com/p/oeis-a000276) | A000276: Associated Stirling numbers. | unformalized | Number Theory |
-| 36 | [`oeis-a000330`](https://lefttosolve.com/p/oeis-a000330) | A000330: Square pyramidal numbers: a(n) = 0^2 + 1^2 + 2^2 + ... + n^2 = n*(n+1)*(2*n+1)/6. | unformalized | Number Theory |
+| 36 | [`oeis-a000330`](https://lefttosolve.com/p/oeis-a000330) | A000330: Square pyramidal numbers: a(n) = 0^2 + 1^2 + 2^2 + ... + n^2 = n*(n+1)*(2*n+1)/6. | open | Number Theory |
 | 37 | [`oeis-a000332`](https://lefttosolve.com/p/oeis-a000332) | A000332: Binomial coefficient binomial(n,4) = n*(n-1)*(n-2)*(n-3)/24. | unformalized | Combinatorics |
-| 38 | [`oeis-a000350`](https://lefttosolve.com/p/oeis-a000350) | A000350: Numbers m such that Fibonacci(m) ends with m. | unformalized | Number Theory |
-| 39 | [`oeis-a000364`](https://lefttosolve.com/p/oeis-a000364) | A000364: Euler (or secant or "Zig") numbers: e.g.f. (even powers only) sec(x) = 1/cos(x). | unformalized | Number Theory |
+| 38 | [`oeis-a000350`](https://lefttosolve.com/p/oeis-a000350) | A000350: Numbers m such that Fibonacci(m) ends with m. | open | Number Theory |
+| 39 | [`oeis-a000364`](https://lefttosolve.com/p/oeis-a000364) | A000364: Euler (or secant or "Zig") numbers: e.g.f. (even powers only) sec(x) = 1/cos(x). | open | Number Theory |
 | 40 | [`oeis-a000373`](https://lefttosolve.com/p/oeis-a000373) | A000373: Conjectured dimension of a module associated with the free commutative Moufang loop with n generators. | unformalized | Number Theory |
 | 41 | [`oeis-a000382`](https://lefttosolve.com/p/oeis-a000382) | A000382: Restricted permutations. | unformalized | Combinatorics |
-| 42 | [`oeis-a000392`](https://lefttosolve.com/p/oeis-a000392) | A000392: Stirling numbers of second kind S(n,3). | unformalized | Number Theory |
+| 42 | [`oeis-a000392`](https://lefttosolve.com/p/oeis-a000392) | A000392: Stirling numbers of second kind S(n,3). | open | Number Theory |
 | 43 | [`oeis-a000425`](https://lefttosolve.com/p/oeis-a000425) | A000425: Coefficients of ménage hit polynomials. | unformalized | General Algebra |
 | 44 | [`oeis-a000436`](https://lefttosolve.com/p/oeis-a000436) | A000436: Generalized Euler numbers c(3,n). | unformalized | Number Theory |
 | 45 | [`oeis-a000464`](https://lefttosolve.com/p/oeis-a000464) | A000464: Expansion of e.g.f. sin(x)/cos(2*x). | unformalized | Number Theory |
@@ -86,4 +86,4 @@ This program contains **18,441** mirrored items stored across **1** JSONL shard(
 | 47 | [`oeis-a000521`](https://lefttosolve.com/p/oeis-a000521) | A000521: Coefficients of modular function j as power series in q = e^(2 Pi i t). Another name is the elliptic modular invariant J(tau). | unformalized | Number Theory |
 | 48 | [`oeis-a000522`](https://lefttosolve.com/p/oeis-a000522) | A000522: Total number of ordered k-tuples (k=0..n) of distinct elements from an n-element set: a(n) = Sum_{k=0..n} n!/k!. | unformalized | Number Theory |
 | 49 | [`oeis-a000531`](https://lefttosolve.com/p/oeis-a000531) | A000531: Maximum number of (2n + 1)-sided cyclic polygons with specified side lengths. | unformalized | Geometry |
-| 50 | [`oeis-a000579`](https://lefttosolve.com/p/oeis-a000579) | A000579: Figurate numbers or binomial coefficients C(n,6). | unformalized | Combinatorics |
+| 50 | [`oeis-a000579`](https://lefttosolve.com/p/oeis-a000579) | A000579: Figurate numbers or binomial coefficients C(n,6). | open | Combinatorics |

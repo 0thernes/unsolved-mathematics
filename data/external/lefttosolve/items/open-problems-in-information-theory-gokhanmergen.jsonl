@@ -1,5 +1,5 @@
 {"fields": ["Information & Communication"], "id": "itp-broadcast-channel", "kind": "unformalized", "prize": null, "solved": false, "title": "Capacity region of the two-receiver broadcast channel"}
-{"fields": ["Combinatorics", "Information & Communication"], "id": "itp-courtade-kumar", "kind": "unformalized", "prize": null, "solved": false, "title": "Courtade–Kumar conjecture (most informative Boolean function)"}
+{"fields": ["Combinatorics", "Information & Communication"], "id": "itp-courtade-kumar", "kind": "open", "prize": null, "solved": false, "title": "Courtade–Kumar conjecture (most informative Boolean function)"}
 {"fields": ["Information & Communication", "Probability"], "id": "itp-deletion-channel", "kind": "unformalized", "prize": null, "solved": false, "title": "Capacity of the binary deletion channel"}
 {"fields": ["Convex & Discrete Geometry", "Information & Communication"], "id": "itp-entropy-region", "kind": "unformalized", "prize": null, "solved": false, "title": "Entropy region of four or more random variables"}
 {"fields": ["Information & Communication"], "id": "itp-gaussian-interference-channel", "kind": "unformalized", "prize": null, "solved": false, "title": "Capacity region of the two-user Gaussian interference channel"}

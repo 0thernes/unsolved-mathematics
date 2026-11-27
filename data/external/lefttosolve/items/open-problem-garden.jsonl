@@ -1,14 +1,14 @@
-{"fields": ["Combinatorics"], "id": "opg-2-accessibility-of-primes", "kind": "unformalized", "prize": null, "solved": false, "title": "2-accessibility of primes"}
+{"fields": ["Combinatorics"], "id": "opg-2-accessibility-of-primes", "kind": "open", "prize": null, "solved": false, "title": "2-accessibility of primes"}
 {"fields": ["Combinatorics"], "id": "opg-3-accessibility-of-fibonacci-numbers", "kind": "unformalized", "prize": null, "solved": false, "title": "3-accessibility of Fibonacci numbers"}
 {"fields": ["Combinatorics"], "id": "opg-3-colourability-of-arrangements-of-great-circles", "kind": "unformalized", "prize": null, "solved": false, "title": "3-Colourability of Arrangements of Great Circles"}
 {"fields": ["Combinatorics"], "id": "opg-3-decomposition-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "3-Decomposition Conjecture"}
-{"fields": ["Combinatorics"], "id": "opg-3-edge-coloring-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "3-Edge-Coloring Conjecture"}
-{"fields": ["Combinatorics"], "id": "opg-3-flow-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "3-flow conjecture"}
-{"fields": ["Combinatorics"], "id": "opg-4-connected-graphs-are-not-uniquely-hamiltonian", "kind": "unformalized", "prize": null, "solved": false, "title": "4-connected graphs are not uniquely hamiltonian"}
+{"fields": ["Combinatorics"], "id": "opg-3-edge-coloring-conjecture", "kind": "open", "prize": null, "solved": false, "title": "3-Edge-Coloring Conjecture"}
+{"fields": ["Combinatorics"], "id": "opg-3-flow-conjecture", "kind": "open", "prize": null, "solved": false, "title": "3-flow conjecture"}
+{"fields": ["Combinatorics"], "id": "opg-4-connected-graphs-are-not-uniquely-hamiltonian", "kind": "open", "prize": null, "solved": false, "title": "4-connected graphs are not uniquely hamiltonian"}
 {"fields": ["Combinatorics"], "id": "opg-4-flow-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "4-flow conjecture"}
-{"fields": ["Combinatorics"], "id": "opg-5-flow-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "5-flow conjecture"}
+{"fields": ["Combinatorics"], "id": "opg-5-flow-conjecture", "kind": "open", "prize": null, "solved": false, "title": "5-flow conjecture"}
 {"fields": ["Combinatorics"], "id": "opg-5-local-tensions", "kind": "unformalized", "prize": null, "solved": false, "title": "5-local-tensions"}
-{"fields": ["Combinatorics"], "id": "opg-57-regular-moore-graph", "kind": "unformalized", "prize": null, "solved": false, "title": "57-regular Moore graph?"}
+{"fields": ["Combinatorics"], "id": "opg-57-regular-moore-graph", "kind": "open", "prize": null, "solved": false, "title": "57-regular Moore graph?"}
 {"fields": ["General Topology"], "id": "opg-a-conjecture-about-direct-product-of-funcoids", "kind": "unformalized", "prize": null, "solved": false, "title": "A conjecture about direct product of funcoids"}
 {"fields": ["Geometry"], "id": "opg-a-conjecture-on-iterated-circumcentres", "kind": "unformalized", "prize": null, "solved": false, "title": "A conjecture on iterated circumcentres"}
 {"fields": ["General Topology"], "id": "opg-a-diagram-about-funcoids-and-reloids", "kind": "unformalized", "prize": null, "solved": false, "title": "A diagram about funcoids and reloids"}
@@ -23,17 +23,17 @@
 {"fields": ["Number Theory"], "id": "opg-a-sextic-counterexample-to-eulers-sum-of-powers-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "A sextic counterexample to Euler's sum of powers conjecture"}
 {"fields": ["Combinatorics"], "id": "opg-a-transversal-achievement-game-on-a-square-grid", "kind": "unformalized", "prize": null, "solved": false, "title": "Transversal achievement game on a square grid"}
 {"fields": ["Combinatorics"], "id": "opg-acyclic-edge-coloring", "kind": "unformalized", "prize": null, "solved": false, "title": "Acyclic edge-colouring"}
-{"fields": ["Combinatorics"], "id": "opg-adams-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Ádám's Conjecture"}
+{"fields": ["Combinatorics"], "id": "opg-adams-conjecture", "kind": "open", "prize": null, "solved": false, "title": "Ádám's Conjecture"}
 {"fields": ["Number Theory"], "id": "opg-alexas-conjecture-on-primality", "kind": "unformalized", "prize": null, "solved": false, "title": "Alexa's Conjecture on Primality"}
 {"fields": ["Combinatorics"], "id": "opg-algorithm-for-graph-homomorphisms", "kind": "unformalized", "prize": null, "solved": false, "title": "Algorithm for graph homomorphisms"}
 {"fields": ["Combinatorics"], "id": "opg-almost-all-non-hamiltonian-3-regular-graphs-are-1-connected", "kind": "unformalized", "prize": null, "solved": false, "title": "Almost all non-Hamiltonian 3-regular graphs are 1-connected"}
 {"fields": ["General Topology"], "id": "opg-another-conjecture-about-reloids-and-funcoids", "kind": "unformalized", "prize": null, "solved": false, "title": "Another conjecture about reloids and funcoids"}
 {"fields": ["Combinatorics"], "id": "opg-antichains-in-the-cycle-continuous-order", "kind": "unformalized", "prize": null, "solved": false, "title": "Antichains in the cycle continuous order"}
-{"fields": ["Combinatorics"], "id": "opg-antidirected-trees-in-digraphs", "kind": "unformalized", "prize": null, "solved": false, "title": "Antidirected trees in digraphs"}
+{"fields": ["Combinatorics"], "id": "opg-antidirected-trees-in-digraphs", "kind": "open", "prize": null, "solved": false, "title": "Antidirected trees in digraphs"}
 {"fields": ["Combinatorics"], "id": "opg-approximation-ratio-for-k-outerplanar-graphs", "kind": "unformalized", "prize": null, "solved": false, "title": "Approximation ratio for k-outerplanar graphs"}
 {"fields": ["Combinatorics"], "id": "opg-approximation-ratio-for-maximum-edge-disjoint-paths-problem", "kind": "unformalized", "prize": null, "solved": false, "title": "Approximation Ratio for Maximum Edge Disjoint Paths problem"}
-{"fields": ["Combinatorics"], "id": "opg-arc-disjoint-directed-cycles-in-regular-directed-graphs", "kind": "unformalized", "prize": null, "solved": false, "title": "Arc-disjoint directed cycles in regular directed graphs"}
-{"fields": ["Combinatorics"], "id": "opg-arc-disjoint-out-branching-and-in-branching", "kind": "unformalized", "prize": null, "solved": false, "title": "Arc-disjoint out-branching and in-branching"}
+{"fields": ["Combinatorics"], "id": "opg-arc-disjoint-directed-cycles-in-regular-directed-graphs", "kind": "open", "prize": null, "solved": false, "title": "Arc-disjoint directed cycles in regular directed graphs"}
+{"fields": ["Combinatorics"], "id": "opg-arc-disjoint-out-branching-and-in-branching", "kind": "open", "prize": null, "solved": false, "title": "Arc-disjoint out-branching and in-branching"}
 {"fields": ["Combinatorics"], "id": "opg-arc-disjoint-strongly-connected-spanning-subdigraphs", "kind": "unformalized", "prize": null, "solved": false, "title": "Arc-disjoint strongly connected spanning subdigraphs"}
 {"fields": ["Combinatorics"], "id": "opg-are-critical-k-forests-tight", "kind": "unformalized", "prize": null, "solved": false, "title": "¿Are critical k-forests tight?"}
 {"fields": ["Combinatorics"], "id": "opg-are-different-notions-of-the-crossing-number-the-same", "kind": "unformalized", "prize": null, "solved": false, "title": "Are different notions of the crossing number the same?"}
@@ -44,30 +44,30 @@
 {"fields": ["Geometry"], "id": "opg-average-diameter-of-a-bounded-cell-of-a-simple-arrangement", "kind": "unformalized", "prize": null, "solved": false, "title": "Average diameter of a bounded cell of a simple arrangement"}
 {"fields": ["Combinatorics"], "id": "opg-bases-of-many-weights", "kind": "unformalized", "prize": null, "solved": false, "title": "Bases of many weights"}
 {"fields": ["Combinatorics"], "id": "opg-behzads-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Total Colouring Conjecture"}
-{"fields": ["Combinatorics"], "id": "opg-bene-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Beneš Conjecture"}
+{"fields": ["Combinatorics"], "id": "opg-bene-conjecture", "kind": "open", "prize": null, "solved": true, "title": "Beneš Conjecture"}
 {"fields": ["Combinatorics"], "id": "opg-bene-conjecture-graph-theoretic-form-0", "kind": "unformalized", "prize": null, "solved": false, "title": "Beneš Conjecture (graph-theoretic form)"}
 {"fields": ["Geometry"], "id": "opg-big-line-or-big-clique-in-planar-point-sets", "kind": "unformalized", "prize": null, "solved": false, "title": "Big Line or Big Clique in Planar Point Sets"}
 {"fields": ["Combinatorics"], "id": "opg-black-and-white-cycle-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Black and White Cycle Conjecture"}
 {"fields": ["Logic & Foundations"], "id": "opg-blatter-specker-theorem-for-ternary-relations", "kind": "unformalized", "prize": null, "solved": false, "title": "Blatter-Specker Theorem for ternary relations"}
 {"fields": ["Combinatorics"], "id": "opg-book-thickness-of-subdivisions", "kind": "unformalized", "prize": null, "solved": false, "title": "Book Thickness of Subdivisions"}
-{"fields": ["Combinatorics"], "id": "opg-bouchets-6-flow-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Bouchet's 6-flow conjecture"}
+{"fields": ["Combinatorics"], "id": "opg-bouchets-6-flow-conjecture", "kind": "open", "prize": null, "solved": false, "title": "Bouchet's 6-flow conjecture"}
 {"fields": ["Combinatorics"], "id": "opg-bounding-the-chromatic-number-of-triangle-free-graphs-with-fixed-maximum-degree", "kind": "unformalized", "prize": null, "solved": false, "title": "Bounding the chromatic number of triangle-free graphs with fixed maximum degree"}
 {"fields": ["Real Functions"], "id": "opg-c-r-stability-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "$C^r$ Stability Conjecture"}
-{"fields": ["Combinatorics"], "id": "opg-caccetta-haggkvist-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Caccetta-Häggkvist Conjecture"}
+{"fields": ["Combinatorics"], "id": "opg-caccetta-haggkvist-conjecture", "kind": "open", "prize": null, "solved": false, "title": "Caccetta-Häggkvist Conjecture"}
 {"fields": ["Combinatorics"], "id": "opg-characterizing-aleph-0-aleph-1-graphs", "kind": "unformalized", "prize": null, "solved": false, "title": "Characterizing (aleph_0,aleph_1)-graphs"}
-{"fields": ["Combinatorics"], "id": "opg-chords-of-longest-cycles", "kind": "unformalized", "prize": null, "solved": false, "title": "Chords of longest cycles"}
+{"fields": ["Combinatorics"], "id": "opg-chords-of-longest-cycles", "kind": "open", "prize": null, "solved": false, "title": "Chords of longest cycles"}
 {"fields": ["Geometry"], "id": "opg-chromatic-number-of-associahedron", "kind": "unformalized", "prize": null, "solved": false, "title": "Chromatic number of associahedron"}
 {"fields": ["Combinatorics"], "id": "opg-chromatic-number-of-common-graphs", "kind": "unformalized", "prize": null, "solved": false, "title": "Chromatic Number of Common Graphs"}
-{"fields": ["Combinatorics"], "id": "opg-chromatic-number-of-random-lifts-of-complete-graphs", "kind": "unformalized", "prize": null, "solved": false, "title": "Chromatic number of random lifts of complete graphs"}
+{"fields": ["Combinatorics"], "id": "opg-chromatic-number-of-random-lifts-of-complete-graphs", "kind": "open", "prize": null, "solved": false, "title": "Chromatic number of random lifts of complete graphs"}
 {"fields": ["Combinatorics"], "id": "opg-circular-choosability-of-planar-graphs", "kind": "unformalized", "prize": null, "solved": false, "title": "Circular choosability of planar graphs"}
 {"fields": ["Combinatorics"], "id": "opg-circular-chromatic-number-of-triangle-free-planar-graphs", "kind": "unformalized", "prize": null, "solved": false, "title": "Circular coloring triangle-free subcubic planar graphs"}
 {"fields": ["Combinatorics"], "id": "opg-circular-colouring-the-orthogonality-graph", "kind": "unformalized", "prize": null, "solved": false, "title": "Circular colouring the orthogonality graph"}
-{"fields": ["Combinatorics"], "id": "opg-circular-flow-number-of-regular-class-1-graphs", "kind": "unformalized", "prize": null, "solved": false, "title": "Circular flow number of regular class 1 graphs"}
-{"fields": ["Combinatorics"], "id": "opg-circular-flow-numbers-of-r-graphs", "kind": "unformalized", "prize": null, "solved": false, "title": "Circular flow numbers of $r$-graphs"}
+{"fields": ["Combinatorics"], "id": "opg-circular-flow-number-of-regular-class-1-graphs", "kind": "open", "prize": null, "solved": false, "title": "Circular flow number of regular class 1 graphs"}
+{"fields": ["Combinatorics"], "id": "opg-circular-flow-numbers-of-r-graphs", "kind": "open", "prize": null, "solved": false, "title": "Circular flow numbers of $r$-graphs"}
 {"fields": ["General Topology"], "id": "opg-closing-lemma-for-diffeomorphism-dynamical-systems", "kind": "unformalized", "prize": null, "solved": false, "title": "Closing Lemma for Diffeomorphism (Dynamical Systems)"}
 {"fields": ["Combinatorics"], "id": "opg-coloring-and-immersion", "kind": "unformalized", "prize": null, "solved": false, "title": "Coloring and immersion"}
 {"fields": ["Combinatorics"], "id": "opg-coloring-random-subgraphs", "kind": "unformalized", "prize": null, "solved": false, "title": "Coloring random subgraphs"}
-{"fields": ["Combinatorics"], "id": "opg-coloring-the-odd-distance-graph", "kind": "unformalized", "prize": null, "solved": false, "title": "Coloring the Odd Distance Graph"}
+{"fields": ["Combinatorics"], "id": "opg-coloring-the-odd-distance-graph", "kind": "open", "prize": null, "solved": true, "title": "Coloring the Odd Distance Graph"}
 {"fields": ["Combinatorics"], "id": "opg-coloring-the-union-of-degenerate-graphs", "kind": "unformalized", "prize": null, "solved": false, "title": "Coloring the union of degenerate graphs"}
 {"fields": ["Combinatorics"], "id": "opg-complete-bipartite-subgraphs-of-perfect-graphs", "kind": "unformalized", "prize": null, "solved": false, "title": "Complete bipartite subgraphs of perfect graphs"}
 {"fields": ["Computer Science"], "id": "opg-complexity-of-square-root-sum", "kind": "unformalized", "prize": null, "solved": false, "title": "Complexity of square-root sum"}
@@ -84,14 +84,14 @@
 {"fields": ["Combinatorics"], "id": "opg-crossing-numbers-and-coloring", "kind": "unformalized", "prize": null, "solved": false, "title": "Crossing numbers and coloring"}
 {"fields": ["Combinatorics"], "id": "opg-crossing-sequences", "kind": "unformalized", "prize": null, "solved": false, "title": "Crossing sequences"}
 {"fields": ["Geometry"], "id": "opg-cube-simplex-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Cube-Simplex conjecture"}
-{"fields": ["Combinatorics"], "id": "opg-cycle-double-covers-containing-predefined-2-regular-subgraphs", "kind": "unformalized", "prize": null, "solved": false, "title": "Cycle Double Covers Containing Predefined 2-Regular Subgraphs"}
+{"fields": ["Combinatorics"], "id": "opg-cycle-double-covers-containing-predefined-2-regular-subgraphs", "kind": "open", "prize": null, "solved": false, "title": "Cycle Double Covers Containing Predefined 2-Regular Subgraphs"}
 {"fields": ["Combinatorics"], "id": "opg-cyclic-spanning-subdigraph-with-small-cyclomatic-number", "kind": "unformalized", "prize": null, "solved": false, "title": "Cyclic spanning subdigraph with small cyclomatic number"}
 {"fields": ["Geometry"], "id": "opg-d-urers-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Durer's Conjecture"}
 {"fields": ["Combinatorics"], "id": "opg-decomposing-a-connected-graph-into-paths", "kind": "unformalized", "prize": null, "solved": false, "title": "Decomposing a connected graph into paths."}
 {"fields": ["Combinatorics"], "id": "opg-decomposing-an-eulerian-graph-into-cycles", "kind": "unformalized", "prize": null, "solved": false, "title": "Decomposing an eulerian graph into cycles."}
 {"fields": ["Combinatorics"], "id": "opg-decomposing-an-eulerian-graph-into-cycles-with-no-two-consecutives-edges-on-a-pr", "kind": "unformalized", "prize": null, "solved": false, "title": "Decomposing an eulerian graph into cycles with no two consecutives edges on a prescribed eulerian tour."}
-{"fields": ["Combinatorics"], "id": "opg-decomposing-an-even-tournament-in-directed-paths", "kind": "unformalized", "prize": null, "solved": false, "title": "Decomposing an even tournament in directed paths."}
-{"fields": ["Combinatorics"], "id": "opg-decomposing-k-arc-strong-tournament-into-k-spanning-strong-digraphs", "kind": "unformalized", "prize": null, "solved": false, "title": "Decomposing k-arc-strong tournament into k spanning strong digraphs"}
+{"fields": ["Combinatorics"], "id": "opg-decomposing-an-even-tournament-in-directed-paths", "kind": "open", "prize": null, "solved": false, "title": "Decomposing an even tournament in directed paths."}
+{"fields": ["Combinatorics"], "id": "opg-decomposing-k-arc-strong-tournament-into-k-spanning-strong-digraphs", "kind": "open", "prize": null, "solved": false, "title": "Decomposing k-arc-strong tournament into k spanning strong digraphs"}
 {"fields": ["Combinatorics"], "id": "opg-decomposing-the-prism-of-a-3-connected-cubic-planar-graphs-in-hamilton-cycles", "kind": "unformalized", "prize": null, "solved": false, "title": "Hamilton decomposition of prisms over 3-connected cubic planar graphs"}
 {"fields": ["General Topology"], "id": "opg-decomposition-of-completions-of-reloids", "kind": "unformalized", "prize": null, "solved": false, "title": "Decomposition of completions of reloids"}
 {"fields": ["Combinatorics"], "id": "opg-degenerate-colorings-of-planar-graphs", "kind": "unformalized", "prize": null, "solved": false, "title": "Degenerate colorings of planar graphs"}
@@ -100,15 +100,15 @@
 {"fields": ["Combinatorics"], "id": "opg-dings-tau-r-vs-tau-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Ding's tau_r vs. tau conjecture"}
 {"fields": ["Geometry"], "id": "opg-diracs-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Dirac's Conjecture"}
 {"fields": ["General Topology"], "id": "opg-direct-proof-of-a-theorem-about-compact-funcoids", "kind": "unformalized", "prize": null, "solved": false, "title": "Direct proof of a theorem about compact funcoids"}
-{"fields": ["Combinatorics"], "id": "opg-directed-cycle-of-length-twice-the-minimum-outdegree", "kind": "unformalized", "prize": null, "solved": false, "title": "Directed path of length twice the minimum outdegree"}
-{"fields": ["Number Theory"], "id": "opg-distribution-and-upper-bound-of-mimic-numbers", "kind": "unformalized", "prize": null, "solved": false, "title": "Distribution and upper bound of mimic numbers"}
+{"fields": ["Combinatorics"], "id": "opg-directed-cycle-of-length-twice-the-minimum-outdegree", "kind": "open", "prize": null, "solved": false, "title": "Directed path of length twice the minimum outdegree"}
+{"fields": ["Number Theory"], "id": "opg-distribution-and-upper-bound-of-mimic-numbers", "kind": "open", "prize": null, "solved": false, "title": "Distribution and upper bound of mimic numbers"}
 {"fields": ["Combinatorics"], "id": "opg-dividing-up-the-unrestricted-partitions", "kind": "unformalized", "prize": null, "solved": false, "title": "Dividing up the unrestricted partitions"}
 {"fields": ["Number Theory"], "id": "opg-divisibility-of-central-binomial-coefficients", "kind": "unformalized", "prize": null, "solved": false, "title": "Divisibility of central binomial coefficients"}
-{"fields": ["Combinatorics"], "id": "opg-do-any-three-longest-paths-in-a-connected-graph-have-a-vertex-in-common", "kind": "unformalized", "prize": null, "solved": false, "title": "Do any three longest paths in a connected graph have a vertex in common?"}
+{"fields": ["Combinatorics"], "id": "opg-do-any-three-longest-paths-in-a-connected-graph-have-a-vertex-in-common", "kind": "open", "prize": null, "solved": false, "title": "Do any three longest paths in a connected graph have a vertex in common?"}
 {"fields": ["Combinatorics"], "id": "opg-does-the-symmetric-chromatic-function-distinguish-trees", "kind": "unformalized", "prize": null, "solved": false, "title": "Does the chromatic symmetric function distinguish between trees?"}
 {"fields": ["Combinatorics"], "id": "opg-domination-in-cubic-graphs", "kind": "unformalized", "prize": null, "solved": false, "title": "Domination in cubic graphs"}
 {"fields": ["Combinatorics"], "id": "opg-domination-in-plane-triangulations", "kind": "unformalized", "prize": null, "solved": false, "title": "Domination in plane triangulations"}
-{"fields": ["Combinatorics"], "id": "opg-double-critical-graph-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Double-critical graph conjecture"}
+{"fields": ["Combinatorics"], "id": "opg-double-critical-graph-conjecture", "kind": "open", "prize": null, "solved": false, "title": "Double-critical graph conjecture"}
 {"fields": ["Combinatorics"], "id": "opg-drawing-disconnected-graphs-on-surfaces", "kind": "unformalized", "prize": null, "solved": false, "title": "Drawing disconnected graphs on surfaces"}
 {"fields": ["Combinatorics"], "id": "opg-edge-antipodal-colorings-of-cubes", "kind": "unformalized", "prize": null, "solved": false, "title": "Edge-antipodal colorings of cubes"}
 {"fields": ["Geometry"], "id": "opg-edge-colouring-geometric-complete-graphs", "kind": "unformalized", "prize": null, "solved": false, "title": "Edge-Colouring Geometric Complete Graphs"}
@@ -116,7 +116,7 @@
 {"fields": ["Geometry"], "id": "opg-edge-unfolding-convex-polyhedra", "kind": "unformalized", "prize": null, "solved": false, "title": "Edge-Unfolding Convex Polyhedra"}
 {"fields": ["Combinatorics"], "id": "opg-end-devouring-rays", "kind": "unformalized", "prize": null, "solved": false, "title": "End-Devouring Rays"}
 {"fields": ["Combinatorics"], "id": "opg-equality-in-a-matroidal-circumference-bound", "kind": "unformalized", "prize": null, "solved": false, "title": "Equality in a matroidal circumference bound"}
-{"fields": ["Combinatorics"], "id": "opg-erdos-posa-property-for-long-directed-cycles", "kind": "unformalized", "prize": null, "solved": false, "title": "Erdős-Posa property for long directed cycles"}
+{"fields": ["Combinatorics"], "id": "opg-erdos-posa-property-for-long-directed-cycles", "kind": "open", "prize": null, "solved": false, "title": "Erdős-Posa property for long directed cycles"}
 {"fields": ["Geometry"], "id": "opg-erdos-szekeres-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Erdös-Szekeres conjecture"}
 {"fields": ["Combinatorics"], "id": "opg-even-vs-odd-latin-squares", "kind": "unformalized", "prize": null, "solved": false, "title": "Even vs. odd latin squares"}
 {"fields": ["Combinatorics"], "id": "opg-every-4-connected-toroidal-graph-has-a-hamilton-cycle", "kind": "unformalized", "prize": null, "solved": false, "title": "Every 4-connected toroidal graph has a Hamilton cycle"}
@@ -133,11 +133,11 @@
 {"fields": ["Combinatorics"], "id": "opg-finding-k-edge-outerplanar-graph-embeddings", "kind": "unformalized", "prize": null, "solved": false, "title": "Finding k-edge-outerplanar graph embeddings"}
 {"fields": ["Logic & Foundations"], "id": "opg-finite-satisfiability-of-positive-horn-logic-entailment", "kind": "unformalized", "prize": null, "solved": false, "title": "Finite entailment of Positive Horn logic"}
 {"fields": ["Logic & Foundations"], "id": "opg-fixed-point-logic-with-counting", "kind": "unformalized", "prize": null, "solved": false, "title": "Fixed-point logic with counting"}
-{"fields": ["Combinatorics"], "id": "opg-forcing-a-2-regular-minor", "kind": "unformalized", "prize": null, "solved": false, "title": "Forcing a 2-regular minor"}
-{"fields": ["Combinatorics"], "id": "opg-forcing-a-k-6-minor", "kind": "unformalized", "prize": null, "solved": false, "title": "Forcing a $K_6$-minor"}
+{"fields": ["Combinatorics"], "id": "opg-forcing-a-2-regular-minor", "kind": "open", "prize": null, "solved": false, "title": "Forcing a 2-regular minor"}
+{"fields": ["Combinatorics"], "id": "opg-forcing-a-k-6-minor", "kind": "open", "prize": null, "solved": false, "title": "Forcing a $K_6$-minor"}
 {"fields": ["Combinatorics"], "id": "opg-fractional-hadwiger", "kind": "unformalized", "prize": null, "solved": false, "title": "Fractional Hadwiger"}
-{"fields": ["Combinatorics"], "id": "opg-frankls-union-closed-sets-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Frankl's union-closed sets conjecture"}
-{"fields": ["Combinatorics"], "id": "opg-friendly-partitions", "kind": "unformalized", "prize": null, "solved": false, "title": "Friendly partitions"}
+{"fields": ["Combinatorics"], "id": "opg-frankls-union-closed-sets-conjecture", "kind": "open", "prize": null, "solved": false, "title": "Frankl's union-closed sets conjecture"}
+{"fields": ["Combinatorics"], "id": "opg-friendly-partitions", "kind": "open", "prize": null, "solved": false, "title": "Friendly partitions"}
 {"fields": ["General Topology"], "id": "opg-funcolidal-products-inside-an-inward-reloid", "kind": "unformalized", "prize": null, "solved": false, "title": "Funcoidal products inside an inward reloid"}
 {"fields": ["Number Theory"], "id": "opg-gaos-theorem-for-nonabelian-groups", "kind": "unformalized", "prize": null, "solved": false, "title": "Gao's theorem for nonabelian groups"}
 {"fields": ["Geometry"], "id": "opg-general-position-subsets", "kind": "unformalized", "prize": null, "solved": false, "title": "General position subsets"}
@@ -145,35 +145,35 @@
 {"fields": ["General Topology"], "id": "opg-generalized-path-connectedness-in-proximity-spaces", "kind": "unformalized", "prize": null, "solved": false, "title": "Generalized path-connectedness in proximity spaces"}
 {"fields": ["Combinatorics"], "id": "opg-geodesic-cycles-and-tuttes-theorem", "kind": "unformalized", "prize": null, "solved": false, "title": "Geodesic cycles and Tutte's Theorem"}
 {"fields": ["Number Theory"], "id": "opg-giugas-conjecture-on-primality", "kind": "unformalized", "prize": null, "solved": false, "title": "Giuga's Conjecture on Primality"}
-{"fields": ["Combinatorics"], "id": "opg-goldbergs-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Goldberg's conjecture"}
-{"fields": ["Combinatorics"], "id": "opg-good-edge-labelings", "kind": "unformalized", "prize": null, "solved": false, "title": "Good Edge Labelings"}
+{"fields": ["Combinatorics"], "id": "opg-goldbergs-conjecture", "kind": "open", "prize": null, "solved": false, "title": "Goldberg's conjecture"}
+{"fields": ["Combinatorics"], "id": "opg-good-edge-labelings", "kind": "open", "prize": null, "solved": false, "title": "Good Edge Labelings"}
 {"fields": ["Combinatorics"], "id": "opg-grahams-conjecture-on-tree-reconstruction", "kind": "unformalized", "prize": null, "solved": false, "title": "Graham's conjecture on tree reconstruction"}
 {"fields": ["General Topology"], "id": "opg-graph-product-of-multifuncoids", "kind": "unformalized", "prize": null, "solved": false, "title": "Graph product of multifuncoids"}
-{"fields": ["Combinatorics"], "id": "opg-graphs-with-a-forbidden-induced-tree-are-chi-bounded", "kind": "unformalized", "prize": null, "solved": false, "title": "Graphs with a forbidden induced tree are chi-bounded"}
+{"fields": ["Combinatorics"], "id": "opg-graphs-with-a-forbidden-induced-tree-are-chi-bounded", "kind": "open", "prize": null, "solved": false, "title": "Graphs with a forbidden induced tree are chi-bounded"}
 {"fields": ["Group Theory"], "id": "opg-growth-of-finitely-presented-groups", "kind": "unformalized", "prize": null, "solved": false, "title": "Growth of finitely presented groups"}
 {"fields": ["Combinatorics"], "id": "opg-grunbaums-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Grunbaum's Conjecture"}
 {"fields": ["Combinatorics"], "id": "opg-half-integral-flow-polynomial-values", "kind": "unformalized", "prize": null, "solved": false, "title": "Half-integral flow polynomial values"}
-{"fields": ["Combinatorics"], "id": "opg-hamilton-cycle-in-small-d-diregular-graphs", "kind": "unformalized", "prize": null, "solved": false, "title": "Hamilton cycle in small d-diregular graphs"}
-{"fields": ["Combinatorics"], "id": "opg-hamiltonian-cycles-in-line-graphs", "kind": "unformalized", "prize": null, "solved": false, "title": "Hamiltonian cycles in line graphs"}
+{"fields": ["Combinatorics"], "id": "opg-hamilton-cycle-in-small-d-diregular-graphs", "kind": "open", "prize": null, "solved": false, "title": "Hamilton cycle in small d-diregular graphs"}
+{"fields": ["Combinatorics"], "id": "opg-hamiltonian-cycles-in-line-graphs", "kind": "open", "prize": null, "solved": false, "title": "Hamiltonian cycles in line graphs"}
 {"fields": ["Combinatorics"], "id": "opg-hamiltonian-cycles-in-line-graphs-of-infinite-graphs", "kind": "unformalized", "prize": null, "solved": false, "title": "Hamiltonian cycles in line graphs of infinite graphs"}
 {"fields": ["Combinatorics"], "id": "opg-hamiltonian-cycles-in-powers-of-infinite-graphs", "kind": "unformalized", "prize": null, "solved": false, "title": "Hamiltonian cycles in powers of infinite graphs"}
 {"fields": ["Combinatorics"], "id": "opg-hamiltonian-paths-and-cycles-in-vertex-transitive-graphs", "kind": "unformalized", "prize": null, "solved": false, "title": "Hamiltonian paths and cycles in vertex transitive graphs"}
 {"fields": ["Combinatorics"], "id": "opg-hamiltonicity-of-cayley-graphs", "kind": "unformalized", "prize": null, "solved": false, "title": "Hamiltonicity of Cayley graphs"}
 {"fields": ["Combinatorics"], "id": "opg-high-connectivity-no-k-n", "kind": "unformalized", "prize": null, "solved": false, "title": "Highly connected graphs with no K_n minor"}
-{"fields": ["Combinatorics"], "id": "opg-high-girth-low-degree-4-chromatic-graphs", "kind": "unformalized", "prize": null, "solved": false, "title": "4-regular 4-chromatic graphs of high girth"}
+{"fields": ["Combinatorics"], "id": "opg-high-girth-low-degree-4-chromatic-graphs", "kind": "open", "prize": null, "solved": false, "title": "4-regular 4-chromatic graphs of high girth"}
 {"fields": ["Combinatorics"], "id": "opg-highly-arc-transitive-two-ended-digraphs", "kind": "unformalized", "prize": null, "solved": false, "title": "Highly arc transitive two ended digraphs"}
-{"fields": ["Combinatorics"], "id": "opg-hoand-reed-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Hoàng-Reed Conjecture"}
-{"fields": ["Real Functions"], "id": "opg-inequality-for-square-summable-complex-series", "kind": "unformalized", "prize": null, "solved": false, "title": "Inequality for square summable complex series"}
+{"fields": ["Combinatorics"], "id": "opg-hoand-reed-conjecture", "kind": "open", "prize": null, "solved": false, "title": "Hoàng-Reed Conjecture"}
+{"fields": ["Real Functions"], "id": "opg-inequality-for-square-summable-complex-series", "kind": "open", "prize": null, "solved": false, "title": "Inequality for square summable complex series"}
 {"fields": ["General Topology"], "id": "opg-infinite-distributivity-of-meet-over-join-for-a-principal-funcoid", "kind": "unformalized", "prize": null, "solved": false, "title": "Infinite distributivity of meet over join for a principal funcoid"}
 {"fields": ["Combinatorics"], "id": "opg-infinite-uniquely-hamiltonian-graphs", "kind": "unformalized", "prize": null, "solved": false, "title": "Infinite uniquely hamiltonian graphs"}
-{"fields": ["Combinatorics"], "id": "opg-intersecting-two-perfect-matchings", "kind": "unformalized", "prize": null, "solved": false, "title": "The intersection of two perfect matchings"}
-{"fields": ["General Algebra"], "id": "opg-inverse-of-an-integer-matrix", "kind": "unformalized", "prize": null, "solved": false, "title": "Inverse of an integer matrix"}
+{"fields": ["Combinatorics"], "id": "opg-intersecting-two-perfect-matchings", "kind": "open", "prize": null, "solved": false, "title": "The intersection of two perfect matchings"}
+{"fields": ["General Algebra"], "id": "opg-inverse-of-an-integer-matrix", "kind": "open", "prize": null, "solved": true, "title": "Inverse of an integer matrix"}
 {"fields": ["General Topology"], "id": "opg-is-there-an-algorithm-to-determine-if-a-triangulated-4-manifold-is-combinatorial", "kind": "unformalized", "prize": null, "solved": false, "title": "Is there an algorithm to determine if a triangulated 4-manifold is combinatorially equivalent to the 4-sphere?"}
-{"fields": ["Combinatorics"], "id": "opg-jaegers-modular-orientation-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Jaeger's modular orientation conjecture"}
+{"fields": ["Combinatorics"], "id": "opg-jaegers-modular-orientation-conjecture", "kind": "open", "prize": null, "solved": false, "title": "Jaeger's modular orientation conjecture"}
 {"fields": ["Combinatorics"], "id": "opg-jones-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Jones' conjecture"}
 {"fields": ["Combinatorics"], "id": "opg-jorgensens-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Jorgensen's Conjecture"}
-{"fields": ["Geometry"], "id": "opg-kneser-poulsen-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Kneser–Poulsen conjecture"}
-{"fields": ["Combinatorics"], "id": "opg-kriesells-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Kriesell's Conjecture"}
+{"fields": ["Geometry"], "id": "opg-kneser-poulsen-conjecture", "kind": "open", "prize": null, "solved": false, "title": "Kneser–Poulsen conjecture"}
+{"fields": ["Combinatorics"], "id": "opg-kriesells-conjecture", "kind": "open", "prize": null, "solved": false, "title": "Kriesell's Conjecture"}
 {"fields": ["Combinatorics"], "id": "opg-laplacian-degrees-of-a-graph", "kind": "unformalized", "prize": null, "solved": false, "title": "Laplacian Degrees of a Graph"}
 {"fields": ["Combinatorics"], "id": "opg-large-acyclic-induced-subdigraph-in-a-planar-oriented-graph", "kind": "unformalized", "prize": null, "solved": false, "title": "Large acyclic induced subdigraph in a planar oriented graph."}
 {"fields": ["Combinatorics"], "id": "opg-length-of-surreal-product", "kind": "unformalized", "prize": null, "solved": false, "title": "Length of surreal product"}
@@ -183,31 +183,31 @@
 {"fields": ["Combinatorics"], "id": "opg-linial-berge-path-partition-duality", "kind": "unformalized", "prize": null, "solved": false, "title": "Linial-Berge path partition duality"}
 {"fields": ["Combinatorics"], "id": "opg-list-colorings-of-edge-critical-graphs", "kind": "unformalized", "prize": null, "solved": false, "title": "List colorings of edge-critical graphs"}
 {"fields": ["Combinatorics"], "id": "opg-list-total-colouring-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "List Total Colouring Conjecture"}
-{"fields": ["Combinatorics"], "id": "opg-long-directed-cycles-in-digraph-with-minimum-in-and-out-degree", "kind": "unformalized", "prize": null, "solved": false, "title": "Long directed cycles in diregular digraphs"}
+{"fields": ["Combinatorics"], "id": "opg-long-directed-cycles-in-digraph-with-minimum-in-and-out-degree", "kind": "open", "prize": null, "solved": false, "title": "Long directed cycles in diregular digraphs"}
 {"fields": ["Combinatorics"], "id": "opg-long-rainbow-arithemtic-progressions", "kind": "unformalized", "prize": null, "solved": false, "title": "Long rainbow arithmetic progressions"}
-{"fields": ["Combinatorics"], "id": "opg-lovasz-path-removal-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Lovász Path Removal Conjecture"}
+{"fields": ["Combinatorics"], "id": "opg-lovasz-path-removal-conjecture", "kind": "open", "prize": null, "solved": false, "title": "Lovász Path Removal Conjecture"}
 {"fields": ["Combinatorics"], "id": "opg-m-n-cycle-covers", "kind": "unformalized", "prize": null, "solved": false, "title": "(m,n)-cycle covers"}
-{"fields": ["Number Theory"], "id": "opg-maceachen-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "MacEachen Conjecture"}
+{"fields": ["Number Theory"], "id": "opg-maceachen-conjecture", "kind": "open", "prize": null, "solved": false, "title": "MacEachen Conjecture"}
 {"fields": ["Combinatorics"], "id": "opg-mapping-planar-graphs-to-odd-cycles", "kind": "unformalized", "prize": null, "solved": false, "title": "Mapping planar graphs to odd cycles"}
-{"fields": ["Combinatorics"], "id": "opg-matchings-extends-to-hamilton-cycles-in-hypercubes", "kind": "unformalized", "prize": null, "solved": false, "title": "Matchings extend to Hamiltonian cycles in hypercubes"}
+{"fields": ["Combinatorics"], "id": "opg-matchings-extends-to-hamilton-cycles-in-hypercubes", "kind": "open", "prize": null, "solved": false, "title": "Matchings extend to Hamiltonian cycles in hypercubes"}
 {"fields": ["Combinatorics"], "id": "opg-minimal-graphs-with-a-prescribed-number-of-spanning-trees", "kind": "unformalized", "prize": null, "solved": false, "title": "Minimal graphs with a prescribed number of spanning trees"}
-{"fields": ["Combinatorics"], "id": "opg-minimum-number-of-transitive-subtournaments-of-order-3-in-a-tournament", "kind": "unformalized", "prize": null, "solved": false, "title": "Minimum number of arc-disjoint transitive subtournaments of order 3 in a tournament"}
+{"fields": ["Combinatorics"], "id": "opg-minimum-number-of-transitive-subtournaments-of-order-3-in-a-tournament", "kind": "open", "prize": null, "solved": false, "title": "Minimum number of arc-disjoint transitive subtournaments of order 3 in a tournament"}
 {"fields": ["Logic & Foundations"], "id": "opg-monadic-second-order-logic-with-cardinality-predicates", "kind": "unformalized", "prize": null, "solved": false, "title": "Monadic second-order logic with cardinality predicates"}
-{"fields": ["Combinatorics"], "id": "opg-monochromatic-reachability-vs-rainbow-triangles", "kind": "unformalized", "prize": null, "solved": false, "title": "Monochromatic reachability or rainbow triangles"}
+{"fields": ["Combinatorics"], "id": "opg-monochromatic-reachability-vs-rainbow-triangles", "kind": "open", "prize": null, "solved": false, "title": "Monochromatic reachability or rainbow triangles"}
 {"fields": ["Combinatorics"], "id": "opg-monochromatoc-reachability-in-arc-colored-digraphs", "kind": "unformalized", "prize": null, "solved": false, "title": "Monochromatic reachability in arc-colored digraphs"}
 {"fields": ["Combinatorics"], "id": "opg-monotone-4-term-arithmetic-progressions", "kind": "unformalized", "prize": null, "solved": false, "title": "Monotone 4-term Arithmetic Progressions"}
 {"fields": ["Logic & Foundations"], "id": "opg-mso-alternation-hierarchy-over-pictures", "kind": "unformalized", "prize": null, "solved": false, "title": "MSO alternation hierarchy over pictures"}
 {"fields": ["Combinatorics"], "id": "opg-multicolour-erdos-hajnal-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Multicolour Erdős--Hajnal Conjecture"}
-{"fields": ["Combinatorics"], "id": "opg-nearly-spanning-regular-subgraphs", "kind": "unformalized", "prize": null, "solved": false, "title": "Nearly spanning regular subgraphs"}
+{"fields": ["Combinatorics"], "id": "opg-nearly-spanning-regular-subgraphs", "kind": "open", "prize": null, "solved": false, "title": "Nearly spanning regular subgraphs"}
 {"fields": ["Combinatorics"], "id": "opg-negative-association-in-uniform-forests", "kind": "unformalized", "prize": null, "solved": false, "title": "Negative association in uniform forests"}
-{"fields": ["Combinatorics"], "id": "opg-non-edges-vs-feedback-edge-sets-in-digraphs", "kind": "unformalized", "prize": null, "solved": false, "title": "Non-edges vs. feedback edge sets in digraphs"}
-{"fields": ["Combinatorics"], "id": "opg-number-of-cliques-in-minor-closed-classes", "kind": "unformalized", "prize": null, "solved": false, "title": "Number of Cliques in Minor-Closed Classes"}
+{"fields": ["Combinatorics"], "id": "opg-non-edges-vs-feedback-edge-sets-in-digraphs", "kind": "open", "prize": null, "solved": false, "title": "Non-edges vs. feedback edge sets in digraphs"}
+{"fields": ["Combinatorics"], "id": "opg-number-of-cliques-in-minor-closed-classes", "kind": "open", "prize": null, "solved": false, "title": "Number of Cliques in Minor-Closed Classes"}
 {"fields": ["Combinatorics"], "id": "opg-obstacle-number-of-planar-graphs", "kind": "unformalized", "prize": null, "solved": false, "title": "Obstacle number of planar graphs"}
 {"fields": ["Combinatorics"], "id": "opg-odd-cycle-transversal-in-triangle-free-graphs", "kind": "unformalized", "prize": null, "solved": false, "title": "Odd-cycle transversal in triangle-free graphs"}
 {"fields": ["Number Theory"], "id": "opg-odd-incongruent-covering-systems", "kind": "unformalized", "prize": null, "solved": false, "title": "Odd incongruent covering systems"}
 {"fields": ["Number Theory"], "id": "opg-olsons-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Olson's Conjecture"}
 {"fields": ["Logic & Foundations"], "id": "opg-order-invariant-queries", "kind": "unformalized", "prize": null, "solved": false, "title": "Order-invariant queries"}
-{"fields": ["Combinatorics"], "id": "opg-oriented-trees-in-n-chromatic-digraphs", "kind": "unformalized", "prize": null, "solved": false, "title": "Oriented trees in n-chromatic digraphs"}
+{"fields": ["Combinatorics"], "id": "opg-oriented-trees-in-n-chromatic-digraphs", "kind": "open", "prize": null, "solved": false, "title": "Oriented trees in n-chromatic digraphs"}
 {"fields": ["General Topology"], "id": "opg-outer-reloid-of-restricted-funcoid", "kind": "unformalized", "prize": null, "solved": false, "title": "Outer reloid of restricted funcoid"}
 {"fields": ["General Topology"], "id": "opg-outward-reloid-of-composition-vs-composition-of-outward-reloids", "kind": "unformalized", "prize": null, "solved": false, "title": "Outward reloid of composition vs composition of outward reloids"}
 {"fields": ["Computer Science"], "id": "opg-p-vs-bpp", "kind": "unformalized", "prize": null, "solved": false, "title": "P vs. BPP"}
@@ -215,11 +215,11 @@
 {"fields": ["Computer Science"], "id": "opg-p-vs-pspace", "kind": "unformalized", "prize": null, "solved": false, "title": "P vs. PSPACE"}
 {"fields": ["Combinatorics"], "id": "opg-packing-t-joins", "kind": "unformalized", "prize": null, "solved": false, "title": "Packing T-joins"}
 {"fields": ["Combinatorics"], "id": "opg-partial-list-coloring", "kind": "unformalized", "prize": null, "solved": false, "title": "Partial List Coloring"}
-{"fields": ["Combinatorics"], "id": "opg-partition-of-a-cubic-3-connected-graphs-into-paths-of-length-2", "kind": "unformalized", "prize": null, "solved": false, "title": "Partition of a cubic 3-connected graphs into paths of length 2."}
+{"fields": ["Combinatorics"], "id": "opg-partition-of-a-cubic-3-connected-graphs-into-paths-of-length-2", "kind": "open", "prize": null, "solved": false, "title": "Partition of a cubic 3-connected graphs into paths of length 2."}
 {"fields": ["Combinatorics"], "id": "opg-partitioning-edge-connectivity", "kind": "unformalized", "prize": null, "solved": false, "title": "Partitioning edge-connectivity"}
 {"fields": ["Combinatorics"], "id": "opg-partitioning-planar-digraphs", "kind": "unformalized", "prize": null, "solved": false, "title": "The Two Color Conjecture"}
 {"fields": ["Geometry"], "id": "opg-partitioning-the-projective-plane", "kind": "unformalized", "prize": null, "solved": false, "title": "Partitioning the Projective Plane"}
-{"fields": ["Combinatorics"], "id": "opg-partitionning-a-tournament-into-k-strongly-connected-subtournaments", "kind": "unformalized", "prize": null, "solved": false, "title": "Partitionning a tournament into k-strongly connected subtournaments."}
+{"fields": ["Combinatorics"], "id": "opg-partitionning-a-tournament-into-k-strongly-connected-subtournaments", "kind": "open", "prize": null, "solved": false, "title": "Partitionning a tournament into k-strongly connected subtournaments."}
 {"fields": ["Combinatorics"], "id": "opg-pebbling-a-cartesian-product", "kind": "unformalized", "prize": null, "solved": false, "title": "Pebbling a cartesian product"}
 {"fields": ["Combinatorics"], "id": "opg-pentagon-problem", "kind": "unformalized", "prize": null, "solved": false, "title": "Pentagon problem"}
 {"fields": ["Geometry"], "id": "opg-point-sets-with-no-empty-pentagon", "kind": "unformalized", "prize": null, "solved": false, "title": "Point sets with no empty pentagon"}
@@ -234,16 +234,16 @@
 {"fields": ["Computer Science"], "id": "opg-refuting-random-3sat-instances-on-o-n-clauses-weak-form", "kind": "unformalized", "prize": null, "solved": false, "title": "Refuting random 3SAT-instances on $O(n)$ clauses (weak form)"}
 {"fields": ["Uncategorised"], "id": "opg-rendezvous-on-a-line", "kind": "unformalized", "prize": null, "solved": false, "title": "Rendezvous on a line"}
 {"fields": ["Combinatorics"], "id": "opg-roller-coaster-permutations", "kind": "unformalized", "prize": null, "solved": false, "title": "Roller Coaster permutations"}
-{"fields": ["Combinatorics"], "id": "opg-rotas-unimodal-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Rota's unimodal conjecture"}
+{"fields": ["Combinatorics"], "id": "opg-rotas-unimodal-conjecture", "kind": "open", "prize": null, "solved": false, "title": "Rota's unimodal conjecture"}
 {"fields": ["General Topology"], "id": "opg-s-s-f-s-f-for-reloids", "kind": "unformalized", "prize": null, "solved": false, "title": "S(S(f)) = S(f) for reloids"}
 {"fields": ["Combinatorics"], "id": "opg-saturated-k-sperner-systems-of-minimum-size", "kind": "unformalized", "prize": null, "solved": false, "title": "Saturated $k$-Sperner Systems of Minimum Size"}
 {"fields": ["Combinatorics"], "id": "opg-saturation-in-the-hypercube", "kind": "unformalized", "prize": null, "solved": false, "title": "Saturation in the Hypercube"}
 {"fields": ["Combinatorics"], "id": "opg-seagull-problem", "kind": "unformalized", "prize": null, "solved": false, "title": "Seagull problem"}
 {"fields": ["Number Theory"], "id": "opg-sets-with-distinct-subset-sums", "kind": "unformalized", "prize": null, "solved": false, "title": "Sets with distinct subset sums"}
 {"fields": ["General Topology"], "id": "opg-several-ways-to-apply-a-multivalued-multiargument-function-to-a-family-of-filter", "kind": "unformalized", "prize": null, "solved": false, "title": "Several ways to apply a (multivalued) multiargument function to a family of filters"}
-{"fields": ["Combinatorics"], "id": "opg-seymours-r-graph-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Seymour's r-graph conjecture"}
-{"fields": ["Combinatorics"], "id": "opg-seymours-second-neighbourhood-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Seymour's Second Neighbourhood Conjecture"}
-{"fields": ["Combinatorics"], "id": "opg-seymours-self-minor-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Seymour's self-minor conjecture"}
+{"fields": ["Combinatorics"], "id": "opg-seymours-r-graph-conjecture", "kind": "open", "prize": null, "solved": false, "title": "Seymour's r-graph conjecture"}
+{"fields": ["Combinatorics"], "id": "opg-seymours-second-neighbourhood-conjecture", "kind": "open", "prize": null, "solved": true, "title": "Seymour's Second Neighbourhood Conjecture"}
+{"fields": ["Combinatorics"], "id": "opg-seymours-self-minor-conjecture", "kind": "open", "prize": null, "solved": false, "title": "Seymour's self-minor conjecture"}
 {"fields": ["Combinatorics"], "id": "opg-shuffle-exchange-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Shuffle-Exchange Conjecture"}
 {"fields": ["Combinatorics"], "id": "opg-shuffle-exchange-conjecture-graph-theoretic-form", "kind": "unformalized", "prize": null, "solved": false, "title": "Shuffle-Exchange Conjecture (graph-theoretic form)"}
 {"fields": ["Combinatorics"], "id": "opg-signing-a-graph-to-have-small-magnitude-eigenvalues", "kind": "unformalized", "prize": null, "solved": false, "title": "Signing a graph to have small magnitude eigenvalues"}
@@ -255,21 +255,21 @@
 {"fields": ["Number Theory"], "id": "opg-snevilys-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Snevily's conjecture"}
 {"fields": ["Real Functions"], "id": "opg-something-like-picard-for-1-forms", "kind": "unformalized", "prize": null, "solved": false, "title": "Something like Picard for 1-forms"}
 {"fields": ["Number Theory"], "id": "opg-special-primes", "kind": "unformalized", "prize": null, "solved": false, "title": "Special Primes"}
-{"fields": ["Combinatorics"], "id": "opg-splitting-a-digraph-with-minimum-outdegree-constraints", "kind": "unformalized", "prize": null, "solved": false, "title": "Splitting a digraph with minimum outdegree constraints"}
+{"fields": ["Combinatorics"], "id": "opg-splitting-a-digraph-with-minimum-outdegree-constraints", "kind": "open", "prize": null, "solved": false, "title": "Splitting a digraph with minimum outdegree constraints"}
 {"fields": ["Combinatorics"], "id": "opg-stable-set-meeting-all-longest-directed-paths", "kind": "unformalized", "prize": null, "solved": false, "title": "Stable set meeting all longest directed paths."}
 {"fields": ["Combinatorics"], "id": "opg-star-chromatic-index-of-complete-graphs", "kind": "unformalized", "prize": null, "solved": false, "title": "Star chromatic index of complete graphs"}
 {"fields": ["Combinatorics"], "id": "opg-star-chromatic-index-of-cubic-graphs", "kind": "unformalized", "prize": null, "solved": false, "title": "Star chromatic index of cubic graphs"}
 {"fields": ["Number Theory"], "id": "opg-strange-series", "kind": "unformalized", "prize": null, "solved": false, "title": "The 3n+1 conjecture"}
 {"fields": ["General Topology"], "id": "opg-strict-inequalities-for-products-of-filters", "kind": "unformalized", "prize": null, "solved": false, "title": "Strict inequalities for products of filters"}
 {"fields": ["Combinatorics"], "id": "opg-strong-5-cycle-double-cover-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Strong 5-cycle double cover conjecture"}
-{"fields": ["Combinatorics"], "id": "opg-strong-colorability", "kind": "unformalized", "prize": null, "solved": false, "title": "Strong colorability"}
+{"fields": ["Combinatorics"], "id": "opg-strong-colorability", "kind": "open", "prize": null, "solved": false, "title": "Strong colorability"}
 {"fields": ["Combinatorics"], "id": "opg-strong-edge-colouring-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Strong edge colouring conjecture"}
-{"fields": ["Combinatorics"], "id": "opg-strong-matchings-and-covers", "kind": "unformalized", "prize": null, "solved": false, "title": "Strong matchings and covers"}
+{"fields": ["Combinatorics"], "id": "opg-strong-matchings-and-covers", "kind": "open", "prize": null, "solved": false, "title": "Strong matchings and covers"}
 {"fields": ["Combinatorics"], "id": "opg-subdivision-of-a-transitive-tournament-in-digraphs-with-large-outdegree", "kind": "unformalized", "prize": null, "solved": false, "title": "Subdivision of a transitive tournament in digraphs with large outdegree."}
 {"fields": ["Combinatorics"], "id": "opg-subgraph-of-large-average-degree-and-large-average-degree", "kind": "unformalized", "prize": null, "solved": false, "title": "Subgraph of large average degree and large girth."}
-{"fields": ["Group Theory"], "id": "opg-subgroup-formed-by-elements-of-order-dividing-n", "kind": "unformalized", "prize": null, "solved": false, "title": "Subgroup formed by elements of order dividing n"}
+{"fields": ["Group Theory"], "id": "opg-subgroup-formed-by-elements-of-order-dividing-n", "kind": "open", "prize": null, "solved": false, "title": "Subgroup formed by elements of order dividing n"}
 {"fields": ["Number Theory"], "id": "opg-sum-of-prime-and-semiprime-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Sum of prime and semiprime conjecture"}
-{"fields": ["Computer Science"], "id": "opg-sums-of-independent-random-variables-with-unbounded-variance", "kind": "unformalized", "prize": null, "solved": false, "title": "Sums of independent random variables with unbounded variance"}
+{"fields": ["Computer Science"], "id": "opg-sums-of-independent-random-variables-with-unbounded-variance", "kind": "open", "prize": null, "solved": true, "title": "Sums of independent random variables with unbounded variance"}
 {"fields": ["Combinatorics"], "id": "opg-switching-reconstruction-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "Switching reconstruction conjecture"}
 {"fields": ["Combinatorics"], "id": "opg-switching-reconstruction-of-digraphs", "kind": "unformalized", "prize": null, "solved": false, "title": "Switching reconstruction of digraphs"}
 {"fields": ["Logic & Foundations"], "id": "opg-termination-of-the-sixth-goodstein-sequence", "kind": "unformalized", "prize": null, "solved": false, "title": "Termination of the sixth Goodstein Sequence"}
@@ -288,20 +288,20 @@
 {"fields": ["Combinatorics"], "id": "opg-three-4-flows-conjecture", "kind": "unformalized", "prize": null, "solved": false, "title": "The three 4-flows conjecture"}
 {"fields": ["Combinatorics"], "id": "opg-three-chromatic-0-2-graphs", "kind": "unformalized", "prize": null, "solved": false, "title": "Three-chromatic (0,2)-graphs"}
 {"fields": ["General Topology"], "id": "opg-torsion-for-subsets-of-mathbb-r-3", "kind": "unformalized", "prize": null, "solved": false, "title": "Fundamental group torsion for subsets of Euclidean 3-space"}
-{"fields": ["Combinatorics"], "id": "opg-triangle-packing-vs-triangle-edge-transversal", "kind": "unformalized", "prize": null, "solved": false, "title": "Triangle-packing vs triangle edge-transversal."}
+{"fields": ["Combinatorics"], "id": "opg-triangle-packing-vs-triangle-edge-transversal", "kind": "open", "prize": null, "solved": false, "title": "Triangle-packing vs triangle edge-transversal."}
 {"fields": ["Combinatorics"], "id": "opg-turan-number-of-a-finite-family", "kind": "unformalized", "prize": null, "solved": false, "title": "Turán number of a finite family."}
 {"fields": ["Combinatorics"], "id": "opg-turan-problem-for-10-cycles-in-the-hypercube", "kind": "unformalized", "prize": null, "solved": false, "title": "Turán Problem for $10$-Cycles in the Hypercube"}
 {"fields": ["Combinatorics"], "id": "opg-turans-problem-for-hypergraphs", "kind": "unformalized", "prize": null, "solved": false, "title": "Turán's problem for hypergraphs"}
 {"fields": ["Computer Science"], "id": "opg-unconditional-derandomization-of-mathcal-am", "kind": "unformalized", "prize": null, "solved": false, "title": "Unconditional derandomization of Arthur-Merlin games"}
 {"fields": ["Combinatorics"], "id": "opg-unfriendly-partitions", "kind": "unformalized", "prize": null, "solved": false, "title": "Unfriendly partitions"}
 {"fields": ["Combinatorics"], "id": "opg-unions-of-triangle-free-graphs", "kind": "unformalized", "prize": null, "solved": false, "title": "Unions of triangle free graphs"}
-{"fields": ["Combinatorics"], "id": "opg-uniquely-hamiltonian-graphs", "kind": "unformalized", "prize": null, "solved": false, "title": "R-regular graphs are not uniquely hamiltonian."}
+{"fields": ["Combinatorics"], "id": "opg-uniquely-hamiltonian-graphs", "kind": "open", "prize": null, "solved": false, "title": "R-regular graphs are not uniquely hamiltonian."}
 {"fields": ["Combinatorics"], "id": "opg-unit-vector-flows", "kind": "unformalized", "prize": null, "solved": false, "title": "Unit vector flows"}
 {"fields": ["Combinatorics"], "id": "opg-universal-highly-arc-transitive-digraphs", "kind": "unformalized", "prize": null, "solved": false, "title": "Universal highly arc transitive digraphs"}
 {"fields": ["Combinatorics"], "id": "opg-universal-steiner-triple-systems", "kind": "unformalized", "prize": null, "solved": false, "title": "Universal Steiner triple systems"}
 {"fields": ["General Topology"], "id": "opg-unsolvability-of-word-problem-for-2-knot-complements", "kind": "unformalized", "prize": null, "solved": false, "title": "Unsolvability of word problem for 2-knot complements"}
 {"fields": ["General Topology"], "id": "opg-upgrading-a-completary-multifuncoid", "kind": "unformalized", "prize": null, "solved": false, "title": "Upgrading a completary multifuncoid"}
-{"fields": ["Combinatorics"], "id": "opg-vertex-coloring-of-graph-fractional-powers", "kind": "unformalized", "prize": null, "solved": false, "title": "Vertex Coloring of graph fractional powers"}
+{"fields": ["Combinatorics"], "id": "opg-vertex-coloring-of-graph-fractional-powers", "kind": "open", "prize": null, "solved": true, "title": "Vertex Coloring of graph fractional powers"}
 {"fields": ["Logic & Foundations"], "id": "opg-vertex-cover-integrality-gap", "kind": "unformalized", "prize": null, "solved": false, "title": "Vertex Cover Integrality Gap"}
 {"fields": ["General Algebra"], "id": "opg-waring-rank-of-determinant", "kind": "unformalized", "prize": null, "solved": false, "title": "Waring rank of determinant"}
 {"fields": ["Combinatorics"], "id": "opg-weak-pentagon-problem", "kind": "unformalized", "prize": null, "solved": false, "title": "Weak pentagon problem"}

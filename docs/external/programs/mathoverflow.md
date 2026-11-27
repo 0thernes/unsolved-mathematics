@@ -14,7 +14,7 @@
 
 [Program page](https://lefttosolve.com/programs/MathOverflow) · Questions from MathOverflow that are still open.
 
-Targets 21 · open 9 · solved by kind (site claim): `known: 7, warmup: 4` · kinds open/known/warmup/unformalized/other = 9/8/4/0/0 · snapshot `f1bcc922a11d5418` (`2026-11-27T05:46:57Z`).
+Targets 21 · open 9 · solved by kind (site claim): `known: 7, warmup: 4` · kinds open/known/warmup/unformalized/other = 9/8/4/0/0 · snapshot `7cb07abf0cea37cb` (`2026-11-27T17:43:57Z`).
 
 Back to [all programs](../PROGRAMS.md).
 

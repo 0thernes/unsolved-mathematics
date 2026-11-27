@@ -199,7 +199,7 @@
 {"fields": ["General Topology"], "id": "mo-104379", "kind": "unformalized", "prize": null, "solved": false, "title": "Are open convex PL subsets of R^n PL homeomorphic to R^n?"}
 {"fields": ["Number Theory"], "id": "mo-104397", "kind": "unformalized", "prize": null, "solved": false, "title": "Base-Change and Automorphic-Induction for $GL_1$"}
 {"fields": ["Harmonic Analysis", "Number Theory"], "id": "mo-104399", "kind": "unformalized", "prize": null, "solved": false, "title": "Euler divergent series $(-1)^nn!$ in $\\mathbb{R}$ and $\\mathbb{Q}_p$"}
-{"fields": ["Combinatorics", "Computational Complexity"], "id": "mo-104415", "kind": "unformalized", "prize": null, "solved": false, "title": "A generalization of the triangle counting problem for simple weighted graphs"}
+{"fields": ["Combinatorics", "Computational Complexity"], "id": "mo-104415", "kind": "open", "prize": null, "solved": false, "title": "A generalization of the triangle counting problem for simple weighted graphs"}
 {"fields": ["Number Theory", "Probability"], "id": "mo-104444", "kind": "unformalized", "prize": null, "solved": false, "title": "Small geometric progression modulo N"}
 {"fields": ["General Algebra", "Logic & Foundations"], "id": "mo-104447", "kind": "unformalized", "prize": null, "solved": false, "title": "Minimal Koszul-Tate resolutions"}
 {"fields": ["Number Theory"], "id": "mo-104453", "kind": "unformalized", "prize": null, "solved": false, "title": "Explicit defining equations for the Leopoldt locus"}
@@ -2534,7 +2534,7 @@
 {"fields": ["Combinatorics", "Convex & Discrete Geometry"], "id": "mo-148787", "kind": "unformalized", "prize": null, "solved": false, "title": "Realization spaces of 3-dimensional polytopes with fixed face areas"}
 {"fields": ["General Topology"], "id": "mo-148802", "kind": "unformalized", "prize": null, "solved": false, "title": "On the obstruction of a sequence of simplicial spaces that is levelwise a fibration"}
 {"fields": ["Dynamical Systems", "Probability"], "id": "mo-148816", "kind": "unformalized", "prize": null, "solved": false, "title": "Best convergence rate for convolutions on $\\mathbb{Z}_p$"}
-{"fields": ["Combinatorics", "General Algebra"], "id": "mo-148821", "kind": "unformalized", "prize": null, "solved": false, "title": "Size of b-matching constructed from b maximal matchings"}
+{"fields": ["Combinatorics", "General Algebra"], "id": "mo-148821", "kind": "open", "prize": null, "solved": true, "title": "Size of b-matching constructed from b maximal matchings"}
 {"fields": ["General Algebra"], "id": "mo-148836", "kind": "unformalized", "prize": null, "solved": false, "title": "Proof that the category of presheaves on a category $C$ is equivalent to the category of presheaves on its Karoubi envelope"}
 {"fields": ["Group Theory"], "id": "mo-148854", "kind": "unformalized", "prize": null, "solved": false, "title": "Abelian subgroup in an infinite non-abelian 3-group"}
 {"fields": ["Algebraic Geometry"], "id": "mo-148886", "kind": "unformalized", "prize": null, "solved": false, "title": "Non minimal K3 surfaces as hypersurfaces of weighted projective spaces"}
@@ -4475,7 +4475,7 @@
 {"fields": ["Algebraic Geometry", "Number Theory"], "id": "mo-184476", "kind": "unformalized", "prize": null, "solved": false, "title": "Moduli interpretation of Eisenstein series"}
 {"fields": ["Algebraic Geometry", "Differential Geometry"], "id": "mo-184494", "kind": "unformalized", "prize": null, "solved": false, "title": "Towards an enhanced version of homological mirror symmetry for affine varieties"}
 {"fields": ["General Algebra"], "id": "mo-184499", "kind": "unformalized", "prize": null, "solved": false, "title": "Applying Lemma 2.12 of Deligne's/ Milne's \"Tannakian Categories\" on an irreducible representation"}
-{"fields": ["Differential Geometry"], "id": "mo-184507", "kind": "unformalized", "prize": null, "solved": false, "title": "Slice a compact C1 surface in R3 by a moving transverse plane. Does the length of the slice depend C1 on the plane?"}
+{"fields": ["Differential Geometry"], "id": "mo-184507", "kind": "open", "prize": null, "solved": true, "title": "Slice a compact C1 surface in R3 by a moving transverse plane. Does the length of the slice depend C1 on the plane?"}
 {"fields": ["Uncategorised"], "id": "mo-184529", "kind": "unformalized", "prize": null, "solved": false, "title": "Coding for channels with concentrated error"}
 {"fields": ["Uncategorised"], "id": "mo-184542", "kind": "unformalized", "prize": null, "solved": false, "title": "Average entropy of quantum system in bipartite pure state for finite temperature"}
 {"fields": ["Operator Theory", "Real Functions"], "id": "mo-184561", "kind": "unformalized", "prize": null, "solved": false, "title": "Sobolev spaces of maps between manifolds and the Palais-Smale Condition"}
@@ -4881,7 +4881,7 @@
 {"fields": ["Group Theory"], "id": "mo-191855", "kind": "unformalized", "prize": null, "solved": false, "title": "Generating infinite index subgroups of a free group"}
 {"fields": ["Number Theory"], "id": "mo-191863", "kind": "unformalized", "prize": null, "solved": false, "title": "Showing that a crypto hash function is not permutation, possibly conditionally?"}
 {"fields": ["Differential Geometry"], "id": "mo-191883", "kind": "unformalized", "prize": null, "solved": false, "title": "hard Lefschetz property of symplectic manifolds"}
-{"fields": ["Number Theory"], "id": "mo-191889", "kind": "unformalized", "prize": null, "solved": false, "title": "$x^4+y^4$ powerful for relatively prime $x,y$"}
+{"fields": ["Number Theory"], "id": "mo-191889", "kind": "open", "prize": null, "solved": false, "title": "$x^4+y^4$ powerful for relatively prime $x,y$"}
 {"fields": ["Dynamical Systems", "Operator Theory"], "id": "mo-191895", "kind": "unformalized", "prize": null, "solved": false, "title": "Is Akcoglu's theorem for power bounded positive operators still an open problem?"}
 {"fields": ["Number Theory"], "id": "mo-191899", "kind": "unformalized", "prize": null, "solved": false, "title": "Possible weakening of Robins criterion for RH"}
 {"fields": ["Operator Theory", "Real Functions"], "id": "mo-191900", "kind": "unformalized", "prize": null, "solved": false, "title": "Is logarithmic convexity of the heat kernel with complex time a general fact?"}
@@ -5492,7 +5492,7 @@
 {"fields": ["General Topology", "Group Theory"], "id": "mo-202150", "kind": "unformalized", "prize": null, "solved": false, "title": "Pro-p topology on free group"}
 {"fields": ["Number Theory"], "id": "mo-202158", "kind": "unformalized", "prize": null, "solved": false, "title": "Normal basis in cyclotomic number fields"}
 {"fields": ["General Algebra"], "id": "mo-202163", "kind": "unformalized", "prize": null, "solved": false, "title": "Nilpotent operator of the Weyl algebra"}
-{"fields": ["Combinatorics", "Probability"], "id": "mo-202165", "kind": "unformalized", "prize": null, "solved": false, "title": "Transitivity of balanced mass transport in Z"}
+{"fields": ["Combinatorics", "Probability"], "id": "mo-202165", "kind": "open", "prize": null, "solved": false, "title": "Transitivity of balanced mass transport in Z"}
 {"fields": ["Probability"], "id": "mo-202174", "kind": "unformalized", "prize": null, "solved": false, "title": "Elementary function relative to erf"}
 {"fields": ["Algebraic Geometry", "General Algebra"], "id": "mo-202177", "kind": "unformalized", "prize": null, "solved": false, "title": "What is the co-kernel of the morphism of vector bundles?"}
 {"fields": ["Number Theory"], "id": "mo-202224", "kind": "unformalized", "prize": null, "solved": false, "title": "Algebraic integer with conjugates on the unit circle"}
@@ -5650,7 +5650,7 @@
 {"fields": ["Combinatorics", "Number Theory"], "id": "mo-204356", "kind": "unformalized", "prize": null, "solved": false, "title": "Generalized arithmetic progressions contained in Bohr sets"}
 {"fields": ["Number Theory"], "id": "mo-204361", "kind": "unformalized", "prize": null, "solved": false, "title": "Open problems in Banach spaces, universality"}
 {"fields": ["Probability"], "id": "mo-204369", "kind": "unformalized", "prize": null, "solved": false, "title": "Functions whose Laplace transforms have prescribed behavior at minus infinity"}
-{"fields": ["Harmonic Analysis"], "id": "mo-204379", "kind": "unformalized", "prize": null, "solved": false, "title": "Maximizing the discrepancy in Jensen's inequality for a certain function"}
+{"fields": ["Harmonic Analysis"], "id": "mo-204379", "kind": "open", "prize": null, "solved": false, "title": "Maximizing the discrepancy in Jensen's inequality for a certain function"}
 {"fields": ["Combinatorics"], "id": "mo-204396", "kind": "unformalized", "prize": null, "solved": false, "title": "Decomposing a weakly chordal graph into disjoint union of co-chordal graphs"}
 {"fields": ["Computational Complexity", "General Algebra"], "id": "mo-204401", "kind": "unformalized", "prize": null, "solved": false, "title": "What is the complexity of intersecting two matrix algebras over a finite field?"}
 {"fields": ["Differential Geometry", "Real Functions"], "id": "mo-204402", "kind": "unformalized", "prize": null, "solved": false, "title": "On fundamental solutions to Poisson equation on 3-dimensional manifolds"}
@@ -6719,7 +6719,7 @@
 {"fields": ["Combinatorics", "Probability"], "id": "mo-220857", "kind": "unformalized", "prize": null, "solved": false, "title": "Finding closest set of K disjoint hyperspheres to a point in $\\mathbb{R}^n$ with uniform radius"}
 {"fields": ["Differential Geometry"], "id": "mo-220878", "kind": "unformalized", "prize": null, "solved": false, "title": "Hodge-Weil Formula for Quaternionic-Kähler manifold"}
 {"fields": ["General Algebra", "General Topology"], "id": "mo-220886", "kind": "unformalized", "prize": null, "solved": false, "title": "What's the story with the Hopf fibration and the Jacobi identity?"}
-{"fields": ["Number Theory"], "id": "mo-220902", "kind": "unformalized", "prize": null, "solved": false, "title": "Primes of the form $(2m+1)^2-2^{2s+1}$"}
+{"fields": ["Number Theory"], "id": "mo-220902", "kind": "open", "prize": null, "solved": false, "title": "Primes of the form $(2m+1)^2-2^{2s+1}$"}
 {"fields": ["Combinatorics", "General Algebra"], "id": "mo-220910", "kind": "unformalized", "prize": null, "solved": false, "title": "Simpler proofs of certain Ramsey numbers"}
 {"fields": ["Algebraic Geometry"], "id": "mo-220918", "kind": "unformalized", "prize": null, "solved": false, "title": "Are holomorphic quasi-positive line bundles on a Kähler manifold positive?"}
 {"fields": ["Combinatorics"], "id": "mo-220938", "kind": "unformalized", "prize": null, "solved": false, "title": "Constructing a generating function using a series with all negative and positive powers of a variable"}
@@ -7860,7 +7860,7 @@
 {"fields": ["Algebraic Geometry"], "id": "mo-235568", "kind": "unformalized", "prize": null, "solved": false, "title": "Nonabelian Hodge structure for noncompact curves and Hodge structure on the fundamental group"}
 {"fields": ["Algebraic Geometry", "General Algebra"], "id": "mo-235569", "kind": "unformalized", "prize": null, "solved": false, "title": "Center Picard group non-commutative algebra"}
 {"fields": ["Probability"], "id": "mo-235570", "kind": "unformalized", "prize": null, "solved": false, "title": "The necessary sufficient condition for recurrence of a Markovian random walk"}
-{"fields": ["Number Theory"], "id": "mo-235576", "kind": "unformalized", "prize": null, "solved": false, "title": "On even almost perfect numbers other than powers of two"}
+{"fields": ["Number Theory"], "id": "mo-235576", "kind": "open", "prize": null, "solved": false, "title": "On even almost perfect numbers other than powers of two"}
 {"fields": ["General Algebra", "Logic & Foundations"], "id": "mo-235577", "kind": "unformalized", "prize": null, "solved": false, "title": "Is an weakly finite R-module Serre subcategory of the category of R-modules?"}
 {"fields": ["General Algebra", "Group Theory"], "id": "mo-235579", "kind": "unformalized", "prize": null, "solved": false, "title": "How bad can $SK_1$ of a commutative ring be?"}
 {"fields": ["Differential Geometry", "General Topology"], "id": "mo-235581", "kind": "unformalized", "prize": null, "solved": false, "title": "Homotopy groups of the Grassmannians"}
@@ -7971,7 +7971,7 @@
 {"fields": ["Differential Geometry"], "id": "mo-236687", "kind": "unformalized", "prize": null, "solved": false, "title": "Principal orbits for hamiltonian actions"}
 {"fields": ["Algebraic Geometry", "Differential Geometry"], "id": "mo-236692", "kind": "unformalized", "prize": null, "solved": false, "title": "Is there any notion of \"smoothification\" from $\\mathbb{R}$-schemes to generalized smooth spaces?"}
 {"fields": ["General Algebra", "Operator Theory"], "id": "mo-236709", "kind": "unformalized", "prize": null, "solved": false, "title": "Conditions for continuity of non-simple eigenvectors"}
-{"fields": ["Operator Theory"], "id": "mo-236762", "kind": "unformalized", "prize": null, "solved": false, "title": "Automorphisms of Cuntz algebra"}
+{"fields": ["Operator Theory"], "id": "mo-236762", "kind": "open", "prize": null, "solved": true, "title": "Automorphisms of Cuntz algebra"}
 {"fields": ["Differential Geometry"], "id": "mo-236784", "kind": "unformalized", "prize": null, "solved": false, "title": "Moment map of equivariant line bundles"}
 {"fields": ["Number Theory"], "id": "mo-236806", "kind": "unformalized", "prize": null, "solved": false, "title": "How to estimate $\\prod_{t=1}^{N}\\frac{1}{2-z^t}$ for large $N$?"}
 {"fields": ["Uncategorised"], "id": "mo-236813", "kind": "unformalized", "prize": null, "solved": false, "title": "A question about multidimensional integral"}
@@ -8352,7 +8352,7 @@
 {"fields": ["Computational Complexity", "Convex & Discrete Geometry"], "id": "mo-242227", "kind": "unformalized", "prize": null, "solved": false, "title": "Finding good high-dimensional sphere coverings in Euclidean space"}
 {"fields": ["Operator Theory"], "id": "mo-242232", "kind": "unformalized", "prize": null, "solved": false, "title": "Adjoint of U_p and Atkin-Lehner theory"}
 {"fields": ["Differential Geometry"], "id": "mo-242239", "kind": "unformalized", "prize": null, "solved": false, "title": "Holonomy group of a dense, open submanifold"}
-{"fields": ["Number Theory"], "id": "mo-242286", "kind": "unformalized", "prize": null, "solved": false, "title": "Is the number $\\sum_{p\\text{ prime}}p^{-2}$ known to be irrational?"}
+{"fields": ["Number Theory"], "id": "mo-242286", "kind": "open", "prize": null, "solved": false, "title": "Is the number $\\sum_{p\\text{ prime}}p^{-2}$ known to be irrational?"}
 {"fields": ["Differential Geometry", "General Topology"], "id": "mo-24229", "kind": "unformalized", "prize": null, "solved": false, "title": "Maps of loop spaces with infinity-bounded differential."}
 {"fields": ["Group Theory"], "id": "mo-242299", "kind": "unformalized", "prize": null, "solved": false, "title": "Is there an interval of finite groups, at index n, with strictly more elements than the subgroup lattice of any group, of order n?"}
 {"fields": ["Combinatorics", "General Algebra"], "id": "mo-242304", "kind": "unformalized", "prize": null, "solved": false, "title": "Enumerating a class of polynomials"}
@@ -10537,7 +10537,7 @@
 {"fields": ["Computational Complexity", "Number Theory"], "id": "mo-268574", "kind": "unformalized", "prize": null, "solved": false, "title": "Shortest vector problem with a null vector constraint"}
 {"fields": ["Combinatorics", "General Algebra"], "id": "mo-268585", "kind": "unformalized", "prize": null, "solved": false, "title": "Connection between Gelfand-Tsetlin basis and SSYT basis in Schur module"}
 {"fields": ["General Algebra"], "id": "mo-268589", "kind": "unformalized", "prize": null, "solved": false, "title": "An automorphism of a tensor product commuting with $\\mathrm{Id}\\otimes g$"}
-{"fields": ["Number Theory"], "id": "mo-268590", "kind": "unformalized", "prize": null, "solved": false, "title": "Can a number be palindromic in more than 3 consecutive number bases?"}
+{"fields": ["Number Theory"], "id": "mo-268590", "kind": "open", "prize": null, "solved": false, "title": "Can a number be palindromic in more than 3 consecutive number bases?"}
 {"fields": ["Number Theory"], "id": "mo-268591", "kind": "unformalized", "prize": null, "solved": false, "title": "Exact ramification information of mod $p$ Galois representation"}
 {"fields": ["Uncategorised"], "id": "mo-268602", "kind": "unformalized", "prize": null, "solved": false, "title": "\"Monomorphicness\" of a natural morphism induced by a monoidal functor"}
 {"fields": ["Uncategorised"], "id": "mo-268617", "kind": "unformalized", "prize": null, "solved": false, "title": "Does stabilization preserve the property of being a full subcategory?"}
@@ -11021,7 +11021,7 @@
 {"fields": ["Number Theory"], "id": "mo-273945", "kind": "unformalized", "prize": null, "solved": false, "title": "Arguments of Hecke-eigenvalues"}
 {"fields": ["General Algebra"], "id": "mo-273960", "kind": "unformalized", "prize": null, "solved": false, "title": "K-theory and homology of groups"}
 {"fields": ["Combinatorics"], "id": "mo-273966", "kind": "unformalized", "prize": null, "solved": false, "title": "The best split for an inheritance"}
-{"fields": ["Group Theory", "Number Theory"], "id": "mo-273976", "kind": "unformalized", "prize": null, "solved": false, "title": "$G$ a group, with $p$ a prime number, and $|G|=2^p-1$, is it abelian?"}
+{"fields": ["Group Theory", "Number Theory"], "id": "mo-273976", "kind": "open", "prize": null, "solved": false, "title": "$G$ a group, with $p$ a prime number, and $|G|=2^p-1$, is it abelian?"}
 {"fields": ["Algebraic Geometry", "General Algebra"], "id": "mo-273981", "kind": "unformalized", "prize": null, "solved": false, "title": "Is this scheme reduced?"}
 {"fields": ["General Algebra"], "id": "mo-27451", "kind": "unformalized", "prize": null, "solved": false, "title": "A system of linear equations with linear constraints"}
 {"fields": ["Algebraic Geometry"], "id": "mo-274979", "kind": "unformalized", "prize": null, "solved": false, "title": "Stable base loci and flips"}
@@ -11465,7 +11465,7 @@
 {"fields": ["Uncategorised"], "id": "mo-280158", "kind": "unformalized", "prize": null, "solved": false, "title": "Kodaira-Spencer maps and deformation theory"}
 {"fields": ["Algebraic Geometry", "Number Theory"], "id": "mo-280169", "kind": "unformalized", "prize": null, "solved": false, "title": "\"Lifting\" of Jacobi forms of weight zero vs. index one?"}
 {"fields": ["Number Theory"], "id": "mo-280175", "kind": "unformalized", "prize": null, "solved": false, "title": "Ramanujan Pi formula and idoneal numbers"}
-{"fields": ["Number Theory"], "id": "mo-280192", "kind": "unformalized", "prize": null, "solved": false, "title": "Is there always one integer between these two rational numbers?"}
+{"fields": ["Number Theory"], "id": "mo-280192", "kind": "open", "prize": null, "solved": false, "title": "Is there always one integer between these two rational numbers?"}
 {"fields": ["Uncategorised"], "id": "mo-280195", "kind": "unformalized", "prize": null, "solved": false, "title": "Identities for powers of functions based on generalization of Lagrange interpolation"}
 {"fields": ["Combinatorics"], "id": "mo-280200", "kind": "unformalized", "prize": null, "solved": false, "title": "Analogue of Catalan numbers for non-associative but commutative products"}
 {"fields": ["Uncategorised"], "id": "mo-280231", "kind": "unformalized", "prize": null, "solved": false, "title": "For a mixed hodge structure, what is the exact condition on the graded pieces?"}
@@ -11670,7 +11670,7 @@
 {"fields": ["Dynamical Systems", "Probability"], "id": "mo-282145", "kind": "unformalized", "prize": null, "solved": false, "title": "A Stochastic Dynamical Billiard"}
 {"fields": ["Differential Geometry"], "id": "mo-282155", "kind": "unformalized", "prize": null, "solved": false, "title": "Lagrangian up to Hamiltonian in cotangent bundle"}
 {"fields": ["Algebraic Geometry", "Number Theory"], "id": "mo-282156", "kind": "unformalized", "prize": null, "solved": false, "title": "On the coherence of a Néron-ring"}
-{"fields": ["Number Theory"], "id": "mo-282159", "kind": "unformalized", "prize": null, "solved": false, "title": "Is there any positive integer sequence $c_{n+1}=\\frac{c_n(c_n+n+d)}n$?"}
+{"fields": ["Number Theory"], "id": "mo-282159", "kind": "open", "prize": null, "solved": false, "title": "Is there any positive integer sequence $c_{n+1}=\\frac{c_n(c_n+n+d)}n$?"}
 {"fields": ["General Algebra"], "id": "mo-282163", "kind": "unformalized", "prize": null, "solved": false, "title": "etale cohomology of tori"}
 {"fields": ["General Topology"], "id": "mo-282173", "kind": "unformalized", "prize": null, "solved": false, "title": "Category of representations of the path-groupoid"}
 {"fields": ["General Algebra"], "id": "mo-282181", "kind": "unformalized", "prize": null, "solved": false, "title": "Fong's Causal Theories: Is he also describing a Monad structure? Is the causal category also a bimonad?"}
@@ -13431,7 +13431,7 @@
 {"fields": ["General Algebra", "Logic & Foundations"], "id": "mo-300948", "kind": "unformalized", "prize": null, "solved": false, "title": "Periodic algebras from periodic simple modules"}
 {"fields": ["General Algebra", "Number Theory"], "id": "mo-300954", "kind": "unformalized", "prize": null, "solved": false, "title": "Supercuspidals and representations of $\\operatorname{Gal}(\\overline{F}/F)$"}
 {"fields": ["Operator Theory", "Probability"], "id": "mo-300957", "kind": "unformalized", "prize": null, "solved": false, "title": "Random contractions and contractions on the space of measures"}
-{"fields": ["Combinatorics", "Number Theory"], "id": "mo-300962", "kind": "unformalized", "prize": null, "solved": false, "title": "Is every integer $n>1$ the sum of two triangular numbers and two powers of $5$?"}
+{"fields": ["Combinatorics", "Number Theory"], "id": "mo-300962", "kind": "open", "prize": null, "solved": false, "title": "Is every integer $n>1$ the sum of two triangular numbers and two powers of $5$?"}
 {"fields": ["General Topology", "Logic & Foundations"], "id": "mo-300964", "kind": "unformalized", "prize": null, "solved": false, "title": "Which spaces are still Lindelöf after forcing with a Suslin tree?"}
 {"fields": ["Algebraic Geometry", "Operator Theory"], "id": "mo-300968", "kind": "unformalized", "prize": null, "solved": false, "title": "Distributions Supported at a Point of a Variety"}
 {"fields": ["General Topology", "Operator Theory"], "id": "mo-300975", "kind": "unformalized", "prize": null, "solved": false, "title": "description of dual space of space of Radon measure equipped with topology of weak convergence"}
@@ -14228,7 +14228,7 @@
 {"fields": ["Differential Geometry", "General Topology"], "id": "mo-309773", "kind": "unformalized", "prize": null, "solved": false, "title": "Bar construction and space of homotopy invariant functionals"}
 {"fields": ["General Topology"], "id": "mo-309780", "kind": "unformalized", "prize": null, "solved": false, "title": "Irreducible separators of compact manifolds"}
 {"fields": ["General Topology"], "id": "mo-309781", "kind": "unformalized", "prize": null, "solved": false, "title": "Non-Abelian fundamental group? --- a bizarre example"}
-{"fields": ["General Algebra"], "id": "mo-309804", "kind": "unformalized", "prize": null, "solved": false, "title": "A trace-constrained maximization problem in the cone of positive definite matrices"}
+{"fields": ["General Algebra"], "id": "mo-309804", "kind": "open", "prize": null, "solved": true, "title": "A trace-constrained maximization problem in the cone of positive definite matrices"}
 {"fields": ["Number Theory"], "id": "mo-309815", "kind": "unformalized", "prize": null, "solved": false, "title": "Linear diophantine quasivariety having a unique solution"}
 {"fields": ["Operator Theory"], "id": "mo-309816", "kind": "unformalized", "prize": null, "solved": false, "title": "Confusion over dentability and denting points"}
 {"fields": ["Combinatorics"], "id": "mo-309838", "kind": "unformalized", "prize": null, "solved": false, "title": "Can these two generalizations of Polya Enumeration be combined?"}
@@ -14480,7 +14480,7 @@
 {"fields": ["Number Theory"], "id": "mo-312554", "kind": "unformalized", "prize": null, "solved": false, "title": "Is there a result that connects the discriminant of an order to the discriminants of the generators of an integral basis for the order?"}
 {"fields": ["General Topology", "Group Theory"], "id": "mo-312560", "kind": "unformalized", "prize": null, "solved": false, "title": "Uniqueness of the boundary of a hierarchically hyperbolic group"}
 {"fields": ["Algebraic Geometry"], "id": "mo-312562", "kind": "unformalized", "prize": null, "solved": false, "title": "Semicontinuity of cohomology of torsion-free sheaves restricted to divisors"}
-{"fields": ["Harmonic Analysis"], "id": "mo-312603", "kind": "unformalized", "prize": null, "solved": false, "title": "Function of two sets intersection"}
+{"fields": ["Harmonic Analysis"], "id": "mo-312603", "kind": "open", "prize": null, "solved": true, "title": "Function of two sets intersection"}
 {"fields": ["Convex & Discrete Geometry"], "id": "mo-312612", "kind": "unformalized", "prize": null, "solved": false, "title": "Inefficient covering by translates"}
 {"fields": ["General Algebra", "General Topology"], "id": "mo-312622", "kind": "unformalized", "prize": null, "solved": false, "title": "Does Deligne's exceptional series lead to an \"exceptional K-theory\"?"}
 {"fields": ["Uncategorised"], "id": "mo-312624", "kind": "unformalized", "prize": null, "solved": false, "title": "Comparison of two $GL_N(\\mathbb{Z}_\\ell)$ Galois representations"}
@@ -14882,7 +14882,7 @@
 {"fields": ["Combinatorics", "Number Theory"], "id": "mo-316208", "kind": "unformalized", "prize": null, "solved": false, "title": "Is there a permutation $\\pi\\in S_n$ with $\\sum\\limits_{0<k<n}\\frac1{\\pi(k)^2-\\pi(k+1)^2}=0$ for each $n>7$?"}
 {"fields": ["General Algebra"], "id": "mo-316238", "kind": "unformalized", "prize": null, "solved": false, "title": "Formalization and set-theoretic issues in the definition a functor category"}
 {"fields": ["Algebraic Geometry", "Number Theory"], "id": "mo-316255", "kind": "unformalized", "prize": null, "solved": false, "title": "Traces of Frobenius Endomorphism on Etale Cohomology and $G$-torsors"}
-{"fields": ["Number Theory"], "id": "mo-316298", "kind": "unformalized", "prize": null, "solved": false, "title": "Can we write each positive integer as $x^2+y^2+\\varphi(z^2)$?"}
+{"fields": ["Number Theory"], "id": "mo-316298", "kind": "open", "prize": null, "solved": false, "title": "Can we write each positive integer as $x^2+y^2+\\varphi(z^2)$?"}
 {"fields": ["Algebraic Geometry", "General Topology"], "id": "mo-316305", "kind": "unformalized", "prize": null, "solved": false, "title": "Can a birational morphism between two smooth varieties of the same betti numbers exist?"}
 {"fields": ["Combinatorics"], "id": "mo-316312", "kind": "unformalized", "prize": null, "solved": false, "title": "Asymptotic upper bound for partial binomial-like sum"}
 {"fields": ["Combinatorics"], "id": "mo-316313", "kind": "unformalized", "prize": null, "solved": false, "title": "Bivariate power series as rational function"}
@@ -16822,7 +16822,7 @@
 {"fields": ["General Algebra"], "id": "mo-336558", "kind": "unformalized", "prize": null, "solved": false, "title": "defining \"half\" of a quadratic form over $\\mathbb{Z}_2$"}
 {"fields": ["General Algebra"], "id": "mo-33656", "kind": "unformalized", "prize": null, "solved": false, "title": "Does the category of pro-sets have a generator?"}
 {"fields": ["Algebraic Geometry"], "id": "mo-336568", "kind": "unformalized", "prize": null, "solved": false, "title": "Are torsion-free rank 1 modules over integral schemes line bundles?"}
-{"fields": ["Number Theory"], "id": "mo-336569", "kind": "unformalized", "prize": null, "solved": false, "title": "Are there infinitely many zeroes of $\\sum_{r = 1}^{n-1} \\mu(r)\\gcd(n,r) $?"}
+{"fields": ["Number Theory"], "id": "mo-336569", "kind": "open", "prize": null, "solved": false, "title": "Are there infinitely many zeroes of $\\sum_{r = 1}^{n-1} \\mu(r)\\gcd(n,r) $?"}
 {"fields": ["Algebraic Geometry"], "id": "mo-336573", "kind": "unformalized", "prize": null, "solved": false, "title": "Question regarding intersection product in Chow group of $\\mathbb{P}^n\\times\\mathbb{P}^m $"}
 {"fields": ["Combinatorics", "Group Theory"], "id": "mo-336592", "kind": "unformalized", "prize": null, "solved": false, "title": "Maximal factorization of finite simple groups and no extra intermediate"}
 {"fields": ["Group Theory"], "id": "mo-336605", "kind": "unformalized", "prize": null, "solved": false, "title": "Are all exceptional Schur covers sub-sporadic?"}
@@ -17240,7 +17240,7 @@
 {"fields": ["Algebraic Geometry"], "id": "mo-34094", "kind": "unformalized", "prize": null, "solved": false, "title": "Interpolation on real Riemann surfaces"}
 {"fields": ["Algebraic Geometry", "General Algebra"], "id": "mo-341307", "kind": "unformalized", "prize": null, "solved": false, "title": "Finite generation of certain graded sequences of ideals"}
 {"fields": ["Number Theory"], "id": "mo-341313", "kind": "unformalized", "prize": null, "solved": false, "title": "Which knot invariants have no known diagram-independent descriptions?"}
-{"fields": ["Number Theory"], "id": "mo-341315", "kind": "unformalized", "prize": null, "solved": false, "title": "Are there infinitely many primes $p$, positive integers $ k, n $ such that $1 \\le n < p$ and $p^k > n.rad(p^{k+1}−n)$?"}
+{"fields": ["Number Theory"], "id": "mo-341315", "kind": "open", "prize": null, "solved": true, "title": "Are there infinitely many primes $p$, positive integers $ k, n $ such that $1 \\le n < p$ and $p^k > n.rad(p^{k+1}−n)$?"}
 {"fields": ["Algebraic Geometry", "Harmonic Analysis"], "id": "mo-341331", "kind": "unformalized", "prize": null, "solved": false, "title": "Intersections of algebraic surfaces with hypercubes of a $d$-dimensional grid"}
 {"fields": ["Number Theory"], "id": "mo-341357", "kind": "unformalized", "prize": null, "solved": false, "title": "Does weight $2$ cuspidal Bianchi modular form have infinitely many zero Fourier coefficient at prime ideals?"}
 {"fields": ["General Topology", "Logic & Foundations"], "id": "mo-341358", "kind": "unformalized", "prize": null, "solved": false, "title": "Borromean Lines of three $\\mathbb{R}^1$ in $\\mathbb{R}^3$ and analogous Milnor link invariants"}
@@ -17917,7 +17917,7 @@
 {"fields": ["General Algebra"], "id": "mo-348531", "kind": "unformalized", "prize": null, "solved": false, "title": "Internal diagrams in a fibration are monadic"}
 {"fields": ["General Algebra", "General Topology"], "id": "mo-348542", "kind": "unformalized", "prize": null, "solved": false, "title": "Shapes of cores of symmetric monoidal $(\\infty,n)$-categories (with duals)"}
 {"fields": ["Uncategorised"], "id": "mo-348543", "kind": "unformalized", "prize": null, "solved": false, "title": "Standard definition of a resolvent: A-zI must be onto, not merely have a dense range?"}
-{"fields": ["General Algebra"], "id": "mo-348551", "kind": "unformalized", "prize": null, "solved": false, "title": "Unimodality of a function of a non-negative matrix"}
+{"fields": ["General Algebra"], "id": "mo-348551", "kind": "open", "prize": null, "solved": true, "title": "Unimodality of a function of a non-negative matrix"}
 {"fields": ["Probability"], "id": "mo-348553", "kind": "unformalized", "prize": null, "solved": false, "title": "Likelihood estimator for inhomgeneous Poisson process"}
 {"fields": ["Number Theory"], "id": "mo-348562", "kind": "unformalized", "prize": null, "solved": false, "title": "Questions involving primes $p\\equiv1\\pmod4$"}
 {"fields": ["Uncategorised"], "id": "mo-348570", "kind": "unformalized", "prize": null, "solved": false, "title": "Gegenbauer's addition theorem for Jacobi polynomials"}
@@ -19312,7 +19312,7 @@
 {"fields": ["Combinatorics", "General Algebra"], "id": "mo-363058", "kind": "unformalized", "prize": null, "solved": false, "title": "Eigenvectors of a symmetric sum of tensor products"}
 {"fields": ["Uncategorised"], "id": "mo-363061", "kind": "unformalized", "prize": null, "solved": false, "title": "Subharmonic functions with reasonably non absolute continuous laplacian"}
 {"fields": ["Logic & Foundations"], "id": "mo-363065", "kind": "unformalized", "prize": null, "solved": false, "title": "Physical and mathematical significance of the NS-2 brane"}
-{"fields": ["Combinatorics", "General Algebra"], "id": "mo-363072", "kind": "unformalized", "prize": null, "solved": false, "title": "Frobenius inner product of a zero line-sum matrix and a doubly stochastic matrix"}
+{"fields": ["Combinatorics", "General Algebra"], "id": "mo-363072", "kind": "open", "prize": null, "solved": false, "title": "Frobenius inner product of a zero line-sum matrix and a doubly stochastic matrix"}
 {"fields": ["Probability"], "id": "mo-363084", "kind": "unformalized", "prize": null, "solved": false, "title": "What is the Onsager-Machlup function for $dX(t)=f(B(t)) dt+dB(t)$?"}
 {"fields": ["Algebraic Geometry"], "id": "mo-363103", "kind": "unformalized", "prize": null, "solved": false, "title": "$\\mathscr{M}_*$, the stack of generalized elliptic curves (with some additional conditions) is locally of finite presentaion"}
 {"fields": ["Algebraic Geometry", "Differential Geometry"], "id": "mo-363110", "kind": "unformalized", "prize": null, "solved": false, "title": "Ideals of a $C^{\\infty}$-ring"}
@@ -19442,7 +19442,7 @@
 {"fields": ["Convex & Discrete Geometry", "Differential Geometry"], "id": "mo-36437", "kind": "unformalized", "prize": null, "solved": false, "title": "Convexity and Strong convexity of subsets of Surfaces"}
 {"fields": ["General Algebra"], "id": "mo-364374", "kind": "unformalized", "prize": null, "solved": false, "title": "Jordan normal form in a reductive group"}
 {"fields": ["General Algebra"], "id": "mo-364375", "kind": "unformalized", "prize": null, "solved": false, "title": "Bruhat-Tits theory: how does the normalizer act on an apartment?"}
-{"fields": ["General Algebra"], "id": "mo-364377", "kind": "unformalized", "prize": null, "solved": false, "title": "Can an orthogonal matrix move monotonically toward a signed permutation matrix?"}
+{"fields": ["General Algebra"], "id": "mo-364377", "kind": "open", "prize": null, "solved": true, "title": "Can an orthogonal matrix move monotonically toward a signed permutation matrix?"}
 {"fields": ["General Algebra"], "id": "mo-364408", "kind": "unformalized", "prize": null, "solved": false, "title": "Link between characters and isotypic components"}
 {"fields": ["Number Theory"], "id": "mo-364413", "kind": "unformalized", "prize": null, "solved": false, "title": "What is the multiplicative order of this number"}
 {"fields": ["General Algebra"], "id": "mo-364423", "kind": "unformalized", "prize": null, "solved": false, "title": "Invariant theory for the orthogonal group and Clifford algebras"}
@@ -19643,7 +19643,7 @@
 {"fields": ["Number Theory"], "id": "mo-366237", "kind": "unformalized", "prize": null, "solved": false, "title": "Are the ordinates of the non-trivial zeros of $\\zeta(s)$ uniformly distributed around the mid points of Gram point intervals they can be mapped to?"}
 {"fields": ["Algebraic Geometry", "Number Theory"], "id": "mo-366246", "kind": "unformalized", "prize": null, "solved": false, "title": "Commutative group stacks and Galois cohomology"}
 {"fields": ["Real Functions"], "id": "mo-366259", "kind": "unformalized", "prize": null, "solved": false, "title": "Is there a solution of a first order nonlinear PDE?"}
-{"fields": ["Number Theory"], "id": "mo-366273", "kind": "unformalized", "prize": null, "solved": false, "title": "Numbers of the form $x^2(x-1) + y^2(y-1) + z^2(z-1)$ with $x,y,z\\in\\mathbb Z$"}
+{"fields": ["Number Theory"], "id": "mo-366273", "kind": "open", "prize": null, "solved": false, "title": "Numbers of the form $x^2(x-1) + y^2(y-1) + z^2(z-1)$ with $x,y,z\\in\\mathbb Z$"}
 {"fields": ["Probability"], "id": "mo-366285", "kind": "unformalized", "prize": null, "solved": false, "title": "Minimizing an f-divergence and Jeffrey's Rule"}
 {"fields": ["General Algebra"], "id": "mo-366286", "kind": "unformalized", "prize": null, "solved": false, "title": "Rational functions with trivial Weil symbols at every point"}
 {"fields": ["Harmonic Analysis", "Probability"], "id": "mo-366302", "kind": "unformalized", "prize": null, "solved": false, "title": "Prove $\\int_{0}^{\\infty} \\cos(\\omega x) \\exp(-x^{\\alpha}) \\, {\\rm d} x \\ge {\\alpha^2 \\sqrt{\\pi} \\over 8} \\exp \\left( -\\frac{\\omega^2}{4} \\right)$"}
@@ -19841,7 +19841,7 @@
 {"fields": ["Algebraic Geometry", "General Algebra"], "id": "mo-36870", "kind": "unformalized", "prize": null, "solved": false, "title": "Numerical evidence of Beilinson's conjecture in local fields and function fields"}
 {"fields": ["General Algebra", "Logic & Foundations"], "id": "mo-368717", "kind": "unformalized", "prize": null, "solved": false, "title": "Associativity equation for topological rings and logarithms"}
 {"fields": ["Combinatorics", "General Algebra"], "id": "mo-368729", "kind": "unformalized", "prize": null, "solved": false, "title": "how do I find eigenvalues of Cayley graph for one subset given a different subset"}
-{"fields": ["Number Theory"], "id": "mo-368734", "kind": "unformalized", "prize": null, "solved": false, "title": "Integer polynomial inducing a permutation of order $p$ on $\\mathbb{Z}/p\\mathbb{Z}$ for infinitely many $p$"}
+{"fields": ["Number Theory"], "id": "mo-368734", "kind": "open", "prize": null, "solved": false, "title": "Integer polynomial inducing a permutation of order $p$ on $\\mathbb{Z}/p\\mathbb{Z}$ for infinitely many $p$"}
 {"fields": ["Algebraic Geometry", "Number Theory"], "id": "mo-368757", "kind": "unformalized", "prize": null, "solved": false, "title": "Theta Function Associated to Kummer Lattice"}
 {"fields": ["General Topology"], "id": "mo-368758", "kind": "unformalized", "prize": null, "solved": false, "title": "One periodic cohomology theories?"}
 {"fields": ["General Algebra", "General Topology"], "id": "mo-368759", "kind": "unformalized", "prize": null, "solved": false, "title": "Is there a Swan-style description of topological K-homology?"}
@@ -22463,3 +22463,5 @@
 {"fields": ["Harmonic Analysis", "Operator Theory"], "id": "mo-396149", "kind": "unformalized", "prize": null, "solved": false, "title": "Express Dirichlet energy $E_\\mu(f) := \\int \\|\\nabla f(x)\\|^2 d\\mu(x)$ in terms of Fourier information alone"}
 {"fields": ["General Topology"], "id": "mo-39615", "kind": "unformalized", "prize": null, "solved": false, "title": "The Mapping Cylinder of a Pullback Square"}
 {"fields": ["Logic & Foundations"], "id": "mo-396150", "kind": "unformalized", "prize": null, "solved": false, "title": "When is a $\\Sigma_n$ Skolem hull a proper submodel?"}
+{"fields": ["General Algebra"], "id": "mo-396154", "kind": "unformalized", "prize": null, "solved": false, "title": "Unbounded derived Nakayama lemma"}
+{"fields": ["Algebraic Geometry"], "id": "mo-396168", "kind": "unformalized", "prize": null, "solved": false, "title": "Full Exceptional Collection of Vector Bundles for Toric Varieties"}

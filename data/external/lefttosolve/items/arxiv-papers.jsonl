@@ -1,19 +1,19 @@
-{"fields": ["Linear Algebra"], "id": "Arxiv.0805.3777.cprank_le_of_square_slices", "kind": "known", "prize": null, "solved": false, "title": "Generic and maximal rank of 3-tensors — cprank le of square slices"}
-{"fields": ["Linear Algebra"], "id": "Arxiv.0805.3777.cprank_le_of_three_slices", "kind": "known", "prize": null, "solved": false, "title": "Generic and maximal rank of 3-tensors — cprank le of three slices"}
+{"fields": ["Linear Algebra"], "id": "Arxiv.0805.3777.cprank_le_of_square_slices", "kind": "known", "prize": null, "solved": true, "title": "Generic and maximal rank of 3-tensors — cprank le of square slices"}
+{"fields": ["Linear Algebra"], "id": "Arxiv.0805.3777.cprank_le_of_three_slices", "kind": "known", "prize": null, "solved": true, "title": "Generic and maximal rank of 3-tensors — cprank le of three slices"}
 {"fields": ["Algebraic Geometry", "Linear Algebra"], "id": "Arxiv.0805.3777.isGenericRank_cube", "kind": "known", "prize": null, "solved": true, "title": "Generic and maximal rank of 3-tensors — isGenericRank cube"}
-{"fields": ["Algebraic Geometry", "Linear Algebra"], "id": "Arxiv.0805.3777.isGenericRank_four", "kind": "known", "prize": null, "solved": false, "title": "Generic and maximal rank of 3-tensors — isGenericRank four"}
+{"fields": ["Algebraic Geometry", "Linear Algebra"], "id": "Arxiv.0805.3777.isGenericRank_four", "kind": "known", "prize": null, "solved": true, "title": "Generic and maximal rank of 3-tensors — isGenericRank four"}
 {"fields": ["Linear Algebra"], "id": "Arxiv.0805.3777.isGenericRank_matrix", "kind": "warmup", "prize": null, "solved": true, "title": "Generic and maximal rank of 3-tensors — isGenericRank matrix"}
-{"fields": ["Algebraic Geometry", "Linear Algebra"], "id": "Arxiv.0805.3777.isGenericRank_of_eq_critical", "kind": "known", "prize": null, "solved": false, "title": "Generic and maximal rank of 3-tensors — isGenericRank of eq critical"}
-{"fields": ["Algebraic Geometry", "Linear Algebra"], "id": "Arxiv.0805.3777.isGenericRank_of_gt_critical", "kind": "known", "prize": null, "solved": false, "title": "Generic and maximal rank of 3-tensors — isGenericRank of gt critical"}
+{"fields": ["Algebraic Geometry", "Linear Algebra"], "id": "Arxiv.0805.3777.isGenericRank_of_eq_critical", "kind": "known", "prize": null, "solved": true, "title": "Generic and maximal rank of 3-tensors — isGenericRank of eq critical"}
+{"fields": ["Algebraic Geometry", "Linear Algebra"], "id": "Arxiv.0805.3777.isGenericRank_of_gt_critical", "kind": "known", "prize": null, "solved": true, "title": "Generic and maximal rank of 3-tensors — isGenericRank of gt critical"}
 {"fields": ["Algebraic Geometry", "Linear Algebra"], "id": "Arxiv.0805.3777.isGenericRank_of_le_critical", "kind": "open", "prize": null, "solved": false, "title": "Friedland's conjecture."}
 {"fields": ["Algebraic Geometry", "Linear Algebra"], "id": "Arxiv.0805.3777.isGenericRank_three_even", "kind": "known", "prize": null, "solved": true, "title": "Generic and maximal rank of 3-tensors — isGenericRank three even"}
-{"fields": ["Algebraic Geometry", "Linear Algebra"], "id": "Arxiv.0805.3777.isGenericRank_three_odd", "kind": "known", "prize": null, "solved": false, "title": "Generic and maximal rank of 3-tensors — isGenericRank three odd"}
+{"fields": ["Algebraic Geometry", "Linear Algebra"], "id": "Arxiv.0805.3777.isGenericRank_three_odd", "kind": "known", "prize": null, "solved": true, "title": "Generic and maximal rank of 3-tensors — isGenericRank three odd"}
 {"fields": ["Linear Algebra"], "id": "Arxiv.0805.3777.isMaxRank_cube", "kind": "open", "prize": null, "solved": false, "title": "Open problem."}
 {"fields": ["Algebraic Geometry", "Linear Algebra"], "id": "Arxiv.0805.3777.isMaxRank_le_two_mul_isGenericRank", "kind": "known", "prize": null, "solved": true, "title": "Generic and maximal rank of 3-tensors — isMaxRank le two mul isGenericRank"}
-{"fields": ["Linear Algebra"], "id": "Arxiv.0805.3777.isMaxRank_of_le_min", "kind": "known", "prize": null, "solved": false, "title": "Generic and maximal rank of 3-tensors — isMaxRank of le min"}
-{"fields": ["Algebraic Geometry", "Linear Algebra"], "id": "Arxiv.0805.3777.isMaxRank_three", "kind": "known", "prize": null, "solved": false, "title": "Generic and maximal rank of 3-tensors — isMaxRank three"}
+{"fields": ["Linear Algebra"], "id": "Arxiv.0805.3777.isMaxRank_of_le_min", "kind": "known", "prize": null, "solved": true, "title": "Generic and maximal rank of 3-tensors — isMaxRank of le min"}
+{"fields": ["Algebraic Geometry", "Linear Algebra"], "id": "Arxiv.0805.3777.isMaxRank_three", "kind": "known", "prize": null, "solved": true, "title": "Generic and maximal rank of 3-tensors — isMaxRank three"}
 {"fields": ["Linear Algebra"], "id": "Arxiv.0805.3777.isMaxRank_three_three_five_bounds", "kind": "known", "prize": null, "solved": true, "title": "Generic and maximal rank of 3-tensors — isMaxRank three three five bounds"}
-{"fields": ["Linear Algebra"], "id": "Arxiv.0805.3777.isMaxRank_two", "kind": "known", "prize": null, "solved": false, "title": "Generic and maximal rank of 3-tensors — isMaxRank two"}
+{"fields": ["Linear Algebra"], "id": "Arxiv.0805.3777.isMaxRank_two", "kind": "known", "prize": null, "solved": true, "title": "Generic and maximal rank of 3-tensors — isMaxRank two"}
 {"fields": ["Number Theory"], "id": "Arxiv.0912.2382.curling_number_conjecture", "kind": "open", "prize": null, "solved": false, "title": "The Curling Number Conjecture"}
 {"fields": ["Number Theory"], "id": "Arxiv.1207.5099.conjecture", "kind": "open", "prize": null, "solved": false, "title": "Conway's subprime Fibonacci sequences"}
 {"fields": ["Number Theory", "Real Functions"], "id": "Arxiv.1601.03081.crystals_components_unique", "kind": "open", "prize": null, "solved": false, "title": "Unique Crystal Components"}
@@ -26,7 +26,7 @@
 {"fields": ["Combinatorics", "Game Theory & Economics", "Probability"], "id": "Arxiv.1701.08900.second_moment_one_extra_worker", "kind": "open", "prize": null, "solved": false, "title": "Pittel's second-moment conjecture for nearly balanced markets — second moment one extra worker"}
 {"fields": ["Combinatorics"], "id": "Arxiv.2001.02665.kotzig_conjecture_large", "kind": "known", "prize": null, "solved": false, "title": "Ringel's Conjecture and Kotzig's Conjecture for large $n$ — kotzig conjecture large"}
 {"fields": ["Combinatorics"], "id": "Arxiv.2001.02665.ringel_conjecture_large", "kind": "known", "prize": null, "solved": false, "title": "Ringel's Conjecture and Kotzig's Conjecture for large $n$ — ringel conjecture large"}
-{"fields": ["Combinatorics", "Information & Communication", "Number Theory"], "id": "Arxiv.2104.00502.barker_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Barker sequences"}
+{"fields": ["Combinatorics", "Information & Communication", "Number Theory"], "id": "Arxiv.2104.00502.barker_conjecture", "kind": "open", "prize": null, "solved": true, "title": "Barker sequences"}
 {"fields": ["Combinatorics"], "id": "Arxiv.2107.00295.independentDominationEven", "kind": "known", "prize": null, "solved": true, "title": "Conjecture 1.6 (Even case)."}
 {"fields": ["Combinatorics"], "id": "Arxiv.2107.00295.independentDominationOdd", "kind": "known", "prize": null, "solved": true, "title": "Conjecture 1.6 (Odd case)."}
 {"fields": ["Combinatorics", "Number Theory"], "id": "Arxiv.2107.12475.CollatzLike", "kind": "open", "prize": null, "solved": false, "title": "Digit $2$ in base $3$ representation of $2^n$"}
@@ -42,25 +42,25 @@
 {"fields": ["Number Theory"], "id": "Arxiv.2501.03234.conjecture_4_4", "kind": "open", "prize": null, "solved": false, "title": "Conjecture 4.4"}
 {"fields": ["Combinatorics"], "id": "Arxiv.2507.17780.tx_graffiti_conjecture_1", "kind": "known", "prize": null, "solved": true, "title": "TxGraffiti Conjecture 1: independence, annihilation, and residue"}
 {"fields": ["Combinatorics"], "id": "Arxiv.2507.17780.tx_graffiti_conjecture_2", "kind": "known", "prize": null, "solved": true, "title": "TxGraffiti Conjecture 2: zero forcing versus independence (cubic graphs)"}
-{"fields": ["Combinatorics"], "id": "Arxiv.2507.17780.tx_graffiti_conjecture_3", "kind": "open", "prize": null, "solved": false, "title": "TxGraffiti Conjecture 3: independent domination versus saturation (regular)"}
+{"fields": ["Combinatorics"], "id": "Arxiv.2507.17780.tx_graffiti_conjecture_3", "kind": "open", "prize": null, "solved": true, "title": "TxGraffiti Conjecture 3: independent domination versus saturation (regular)"}
 {"fields": ["Real Functions"], "id": "Arxiv.2602.05192.finiteAdditiveConvolution_degree", "kind": "warmup", "prize": null, "solved": true, "title": "First Proof, Theorem 4 — finiteAdditiveConvolution degree"}
 {"fields": ["Real Functions"], "id": "Arxiv.2602.05192.four_2", "kind": "known", "prize": null, "solved": true, "title": "First Proof, Theorem 4 — four 2"}
 {"fields": ["Real Functions"], "id": "Arxiv.2602.05192.four_3", "kind": "known", "prize": null, "solved": true, "title": "First Proof, Theorem 4 — four 3"}
 {"fields": ["Group Theory"], "id": "Arxiv.2604.08040.cyc_alternatingGroup_five", "kind": "warmup", "prize": null, "solved": true, "title": "Group structure via subgroup counts"}
-{"fields": ["Group Theory"], "id": "Arxiv.2604.08040.nilpotent_of_cyc_lt", "kind": "known", "prize": null, "solved": false, "title": "Theorem 3.1."}
-{"fields": ["Group Theory"], "id": "Arxiv.2604.08040.solvable_of_cyc_lt_two_pow_succ", "kind": "known", "prize": null, "solved": false, "title": "Theorem 4.2."}
+{"fields": ["Group Theory"], "id": "Arxiv.2604.08040.nilpotent_of_cyc_lt", "kind": "known", "prize": null, "solved": true, "title": "Theorem 3.1."}
+{"fields": ["Group Theory"], "id": "Arxiv.2604.08040.solvable_of_cyc_lt_two_pow_succ", "kind": "known", "prize": null, "solved": true, "title": "Theorem 4.2."}
 {"fields": ["Combinatorics"], "id": "Arxiv.2605.02731.dean_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Conjecture 1.1 (Dean, 1988)."}
 {"fields": ["Combinatorics"], "id": "Arxiv.2605.02731.dean_conjecture.variants.five", "kind": "open", "prize": null, "solved": false, "title": "Dean's conjecture on cycles of length divisible by `k` — five"}
 {"fields": ["Combinatorics"], "id": "Arxiv.2605.02731.dean_conjecture.variants.four", "kind": "known", "prize": null, "solved": false, "title": "Dean's conjecture on cycles of length divisible by `k` — four"}
 {"fields": ["Combinatorics"], "id": "Arxiv.2605.02731.dean_conjecture.variants.six_le", "kind": "known", "prize": null, "solved": false, "title": "Dean's conjecture on cycles of length divisible by `k` — six le"}
-{"fields": ["Combinatorics"], "id": "Arxiv.2605.02731.dean_conjecture.variants.three", "kind": "known", "prize": null, "solved": false, "title": "Dean's conjecture on cycles of length divisible by `k` — three"}
+{"fields": ["Combinatorics"], "id": "Arxiv.2605.02731.dean_conjecture.variants.three", "kind": "known", "prize": null, "solved": true, "title": "Dean's conjecture on cycles of length divisible by `k` — three"}
 {"fields": ["Group Theory"], "id": "Arxiv.2605.12342.conjecture_1.variants.rank_3_3", "kind": "known", "prize": null, "solved": true, "title": "Fernandes' conjecture on the 2-generation of even direct product permutation groups — rank 3 3"}
 {"fields": ["Group Theory"], "id": "Arxiv.2605.12342.conjecture_1.variants.rank_4_3", "kind": "known", "prize": null, "solved": true, "title": "Fernandes' conjecture on the 2-generation of even direct product permutation groups — rank 4 3"}
 {"fields": ["Group Theory"], "id": "Arxiv.2605.12342.conjecture_1.variants.rank_4_4", "kind": "known", "prize": null, "solved": true, "title": "Fernandes' conjecture on the 2-generation of even direct product permutation groups — rank 4 4"}
 {"fields": ["Combinatorics"], "id": "Arxiv.2606.03696.bondy_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Conjecture 1 (Bondy, 1980)."}
 {"fields": ["Combinatorics"], "id": "Arxiv.2606.03696.bondy_conjecture.variants.large_explicit", "kind": "known", "prize": null, "solved": false, "title": "Theorem 1.1 (Ma-Ning-Zhao, 2026), explicit threshold."}
 {"fields": ["Combinatorics"], "id": "Arxiv.2606.03696.bondy_conjecture.variants.one", "kind": "known", "prize": null, "solved": true, "title": "Bondy's conjecture on longest cycles in highly connected graphs — one"}
-{"fields": ["Combinatorics"], "id": "Arxiv.2606.03696.bondy_conjecture.variants.three", "kind": "known", "prize": null, "solved": false, "title": "Bondy's conjecture on longest cycles in highly connected graphs — three"}
+{"fields": ["Combinatorics"], "id": "Arxiv.2606.03696.bondy_conjecture.variants.three", "kind": "known", "prize": null, "solved": true, "title": "Bondy's conjecture on longest cycles in highly connected graphs — three"}
 {"fields": ["Combinatorics"], "id": "Arxiv.2606.03696.bondy_conjecture.variants.two", "kind": "known", "prize": null, "solved": true, "title": "Bondy's conjecture on longest cycles in highly connected graphs — two"}
 {"fields": ["Convex & Discrete Geometry"], "id": "Arxiv.2607.03582.volume_lpSum_eq_of_isParallelogramAtOrigin", "kind": "known", "prize": null, "solved": true, "title": "Planar $L_p$-Rogers-Shephard, the equality case"}
 {"fields": ["Convex & Discrete Geometry"], "id": "Arxiv.2607.03582.volume_lpSum_le", "kind": "known", "prize": null, "solved": true, "title": "Corollary 29 (Fradelizi-Manui-Meyer-Ndiaye, 2026)."}
@@ -71,7 +71,7 @@
 {"fields": ["Number Theory"], "id": "Arxiv.2607.05739.x_succ", "kind": "warmup", "prize": null, "solved": true, "title": "Integer values of $\\tan(\\arctan 1 + \\arctan 2 + \\cdots + \\arctan n)$ — x succ"}
 {"fields": ["Combinatorics"], "id": "Arxiv.2607.06396.alon_tarsi_short_cycle_cover", "kind": "open", "prize": null, "solved": false, "title": "Conjecture 4 (Alon-Tarsi, 1985), simple-graph specialization."}
 {"fields": ["Number Theory"], "id": "Arxiv.2607.08366.min_modulus", "kind": "open", "prize": null, "solved": false, "title": "Conjecture 1 (Fonollosa, 2026)."}
-{"fields": ["Combinatorics"], "id": "Arxiv.2607.08630.balister_gyori_schelp_conjecture", "kind": "open", "prize": null, "solved": false, "title": "The Balister–Győri–Schelp conjecture"}
+{"fields": ["Combinatorics"], "id": "Arxiv.2607.08630.balister_gyori_schelp_conjecture", "kind": "open", "prize": null, "solved": true, "title": "The Balister–Győri–Schelp conjecture"}
 {"fields": ["Optics", "Potential Theory"], "id": "Arxiv.2607.27197.maxwell_conjecture.counterexample", "kind": "known", "prize": null, "solved": true, "title": "Theorem 1"}
 {"fields": ["Optics", "Potential Theory"], "id": "Arxiv.2607.27197.maxwell_conjecture.counterexample_morse", "kind": "known", "prize": null, "solved": true, "title": "The Maxwell conjecture — counterexample morse"}
 {"fields": ["Optics", "Potential Theory"], "id": "Arxiv.2607.27197.maxwell_conjecture.iterated", "kind": "known", "prize": null, "solved": true, "title": "Proposition 1"}
@@ -82,7 +82,7 @@
 {"fields": ["Optics", "Potential Theory"], "id": "Arxiv.2607.27197.maxwell_conjecture.variants.two_charges", "kind": "warmup", "prize": null, "solved": true, "title": "The Maxwell conjecture — two charges"}
 {"fields": ["Computer Science", "Game Theory & Economics"], "id": "Arxiv.2610.08796.exists_isPolyTime_bayesNash", "kind": "open", "prize": null, "solved": false, "title": "Computing Bayes–Nash equilibria in Bayesian simple security games"}
 {"fields": ["Dynamical Systems"], "id": "Arxiv.id2303_01089.conjecture_1_3", "kind": "open", "prize": null, "solved": false, "title": "Conjecture 1.3"}
-{"fields": ["Dynamical Systems"], "id": "Arxiv.id2303_01089.conjecture_1_4", "kind": "known", "prize": null, "solved": false, "title": "Conjecture 1.4"}
+{"fields": ["Dynamical Systems"], "id": "Arxiv.id2303_01089.conjecture_1_4", "kind": "known", "prize": null, "solved": true, "title": "Conjecture 1.4"}
 {"fields": ["Functional Analysis"], "id": "Arxiv.math.0110202.banach_mazur_rotation_problem", "kind": "open", "prize": null, "solved": false, "title": "Banach-Mazur Rotation Problem"}
 {"fields": ["Associative Rings"], "id": "Arxiv.math.0608009.dixmier_conjecture.variants.dimension_one", "kind": "open", "prize": null, "solved": false, "title": "The Dixmier Conjecture — dimension one"}
 {"fields": ["Associative Rings"], "id": "Arxiv.math.0608009.dixmier_conjecture.variants.dimension_two", "kind": "open", "prize": null, "solved": false, "title": "The Dixmier Conjecture — dimension two"}
@@ -90,7 +90,7 @@
 {"fields": ["Algebraic Geometry", "Nonassociative Rings"], "id": "Arxiv.math.0608009.poisson_conjecture.variants.dimension_one", "kind": "open", "prize": null, "solved": false, "title": "The Poisson Conjecture — dimension one"}
 {"fields": ["Associative Rings", "Group Theory", "K-Theory"], "id": "Arxiv.math.0703548.bass_conjecture_integral_domain", "kind": "open", "prize": null, "solved": false, "title": "Bass conjecture for commutative integral domains, in idempotent-matrix form."}
 {"fields": ["Associative Rings", "Group Theory", "K-Theory"], "id": "Arxiv.math.0703548.projective_module_isStablyFree", "kind": "open", "prize": null, "solved": false, "title": "Vanishing of the reduced projective class group for integral group rings."}
-{"fields": ["Geometry", "Mechanics"], "id": "AtiyahSutcliffe.conjecture_one", "kind": "open", "prize": null, "solved": false, "title": "The first Atiyah--Sutcliffe conjecture"}
+{"fields": ["Geometry", "Mechanics"], "id": "AtiyahSutcliffe.conjecture_one", "kind": "open", "prize": null, "solved": true, "title": "The first Atiyah--Sutcliffe conjecture"}
 {"fields": ["Number Theory"], "id": "CunninghamChain.infinitely_many_firstKind_chains", "kind": "open", "prize": null, "solved": false, "title": "Cunningham chains — Jones's conjecture — infinitely many firstKind chains"}
 {"fields": ["Number Theory"], "id": "CunninghamChain.infinitely_many_secondKind_chains", "kind": "open", "prize": null, "solved": false, "title": "Cunningham chains — Jones's conjecture — infinitely many secondKind chains"}
 {"fields": ["Associative Rings", "Category Theory"], "id": "HopfAlgebraCohomology.cohomologyRing_finiteType", "kind": "open", "prize": null, "solved": false, "title": "Finite generation conjecture — cohomologyRing finiteType"}
@@ -101,5 +101,5 @@
 {"fields": ["Linear Algebra", "Number Theory", "Topological Groups"], "id": "Margulis.conjecture_1_1", "kind": "open", "prize": null, "solved": false, "title": "A conjecture by Margulis on matrix groups"}
 {"fields": ["Functional Analysis", "Harmonic Analysis"], "id": "NowhereDenseSpectralSet.exists_nowhereDense_spectralSet", "kind": "open", "prize": null, "solved": false, "title": "Spectral sets and weak tiling — exists nowhereDense spectralSet"}
 {"fields": ["Functional Analysis", "Harmonic Analysis"], "id": "SpectralSetProduct.isSpectral_right_of_product_of_convexBody", "kind": "open", "prize": null, "solved": false, "title": "Spectral sets and weak tiling — isSpectral right of product of convexBody"}
-{"fields": ["Functional Analysis", "Harmonic Analysis"], "id": "SpectralSetProduct.isSpectral_right_of_product_one_dimensional", "kind": "known", "prize": null, "solved": false, "title": "Spectral sets and weak tiling — isSpectral right of product one dimensional"}
+{"fields": ["Functional Analysis", "Harmonic Analysis"], "id": "SpectralSetProduct.isSpectral_right_of_product_one_dimensional", "kind": "known", "prize": null, "solved": true, "title": "Spectral sets and weak tiling — isSpectral right of product one dimensional"}
 {"fields": ["Functional Analysis", "Harmonic Analysis"], "id": "SpectralSetProduct.isSpectral_right_of_product_two_dimensional", "kind": "known", "prize": null, "solved": false, "title": "Spectral sets and weak tiling — isSpectral right of product two dimensional"}

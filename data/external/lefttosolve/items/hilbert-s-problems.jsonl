@@ -1,6 +1,6 @@
-{"fields": ["Field Theory"], "id": "Hilbert17.f_not_sum_of_squares", "kind": "warmup", "prize": null, "solved": false, "title": "Hilbert's 17th problem — f not sum of squares"}
-{"fields": ["Field Theory"], "id": "Hilbert17.hilbert_17th_problem", "kind": "known", "prize": null, "solved": false, "title": "Hilbert's 17th problem — hilbert 17th problem"}
-{"fields": ["Field Theory"], "id": "Hilbert17.hilbert_17th_problem_poly", "kind": "known", "prize": null, "solved": false, "title": "Hilbert's 17th problem — hilbert 17th problem poly"}
+{"fields": ["Field Theory"], "id": "Hilbert17.f_not_sum_of_squares", "kind": "warmup", "prize": null, "solved": true, "title": "Hilbert's 17th problem — f not sum of squares"}
+{"fields": ["Field Theory"], "id": "Hilbert17.hilbert_17th_problem", "kind": "known", "prize": null, "solved": true, "title": "Hilbert's 17th problem — hilbert 17th problem"}
+{"fields": ["Field Theory"], "id": "Hilbert17.hilbert_17th_problem_poly", "kind": "known", "prize": null, "solved": true, "title": "Hilbert's 17th problem — hilbert 17th problem poly"}
 {"fields": ["Manifolds", "Topological Groups"], "id": "Hilbert5.hilbert_fifth_problem", "kind": "known", "prize": null, "solved": false, "title": "Hilbert's fifth problem"}
 {"fields": ["Global Analysis", "Manifolds", "Topological Groups"], "id": "Hilbert5.hilbert_smith_conjecture", "kind": "open", "prize": null, "solved": false, "title": "Hilbert–Smith conjecture"}
 {"fields": ["Global Analysis", "Manifolds", "Topological Groups"], "id": "Hilbert5.hilbert_smith_conjecture.variants.dimension_three", "kind": "known", "prize": null, "solved": false, "title": "Pardon's theorem"}

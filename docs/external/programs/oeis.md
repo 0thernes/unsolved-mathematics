@@ -14,15 +14,15 @@
 
 [Program page](https://lefttosolve.com/programs/OEIS) · Conjectures attached to sequences in the On-Line Encyclopedia of Integer Sequences. Often numerically explorable.
 
-Targets 461 · open 394 · solved by kind (site claim): `0` · kinds open/known/warmup/unformalized/other = 394/21/46/0/0 · snapshot `f1bcc922a11d5418` (`2026-11-27T05:46:57Z`).
+Targets 461 · open 394 · solved by kind (site claim): `open: 36, known: 16, warmup: 46` · kinds open/known/warmup/unformalized/other = 394/21/46/0/0 · snapshot `7cb07abf0cea37cb` (`2026-11-27T17:43:57Z`).
 
 Back to [all programs](../PROGRAMS.md).
 
 | # | Item id | Title | Kind | Fields | Prize | Site-solved flag |
 |---:|---|---|---|---|---|---|
 | 1 | [`OeisA100474.conjecture`](https://lefttosolve.com/p/OeisA100474.conjecture) | Conjectures associated with A100474 | open | Number Theory |  |  |
-| 2 | [`OeisA100475.conjecture`](https://lefttosolve.com/p/OeisA100475.conjecture) | Prime-th recurrence with reversal at each step | open | Number Theory |  |  |
-| 3 | [`OeisA100478.conjecture`](https://lefttosolve.com/p/OeisA100478.conjecture) | Pentanacci $\\pi$ sequence | known | Number Theory |  |  |
+| 2 | [`OeisA100475.conjecture`](https://lefttosolve.com/p/OeisA100475.conjecture) | Prime-th recurrence with reversal at each step | open | Number Theory |  | yes |
+| 3 | [`OeisA100478.conjecture`](https://lefttosolve.com/p/OeisA100478.conjecture) | Pentanacci $\\pi$ sequence | known | Number Theory |  | yes |
 | 4 | [`OeisA100800.conjecture`](https://lefttosolve.com/p/OeisA100800.conjecture) | Conjectures associated with A100800 | open | Number Theory |  |  |
 | 5 | [`OeisA101779.conjecture`](https://lefttosolve.com/p/OeisA101779.conjecture) | Conjectures associated with A101779 | open | Number Theory |  |  |
 | 6 | [`OeisA102847.conjecture`](https://lefttosolve.com/p/OeisA102847.conjecture) | $a(0) = 1$, $a(n) = a(n-1)a(n-1) + 2$ | open | Number Theory |  |  |
@@ -32,15 +32,15 @@ Back to [all programs](../PROGRAMS.md).
 | 10 | [`OeisA105020.conjecture`](https://lefttosolve.com/p/OeisA105020.conjecture) | Array read by upward antidiagonals | open | Number Theory |  |  |
 | 11 | [`OeisA105210.conjecture`](https://lefttosolve.com/p/OeisA105210.conjecture) | Conjectures associated with A105210 | open | Number Theory |  |  |
 | 12 | [`OeisA105210.conjecture_disjoint_starting_values`](https://lefttosolve.com/p/OeisA105210.conjecture_disjoint_starting_values) | Conjectures associated with A105210 — conjecture disjoint starting values | open | Number Theory |  |  |
-| 13 | [`OeisA105720.conjecture`](https://lefttosolve.com/p/OeisA105720.conjecture) | Triangular matchstick numbers in the class of prime numbers | open | Number Theory |  |  |
+| 13 | [`OeisA105720.conjecture`](https://lefttosolve.com/p/OeisA105720.conjecture) | Triangular matchstick numbers in the class of prime numbers | open | Number Theory |  | yes |
 | 14 | [`OeisA105751.conjecture.variants.moll_p_mod_4_eq_1`](https://lefttosolve.com/p/OeisA105751.conjecture.variants.moll_p_mod_4_eq_1) | Imaginary part of $\\prod_{k=0}^n (1 + k \\cdot i)$, $i = \\sqrt{-1}$ — moll p mod 4 eq 1 | open | Number Theory |  |  |
-| 15 | [`OeisA105751.prime_divides_some_term`](https://lefttosolve.com/p/OeisA105751.prime_divides_some_term) | Imaginary part of $\\prod_{k=0}^n (1 + k \\cdot i)$, $i = \\sqrt{-1}$ | warmup | Number Theory |  |  |
+| 15 | [`OeisA105751.prime_divides_some_term`](https://lefttosolve.com/p/OeisA105751.prime_divides_some_term) | Imaginary part of $\\prod_{k=0}^n (1 + k \\cdot i)$, $i = \\sqrt{-1}$ | warmup | Number Theory |  | yes |
 | 16 | [`OeisA107247.conjecture`](https://lefttosolve.com/p/OeisA107247.conjecture) | Sum of squares of nonacci numbers — conjecture | open | Number Theory |  |  |
-| 17 | [`OeisA107247.known_prime_and_semiprimes`](https://lefttosolve.com/p/OeisA107247.known_prime_and_semiprimes) | Sum of squares of nonacci numbers — known prime and semiprimes | warmup | Number Theory |  |  |
+| 17 | [`OeisA107247.known_prime_and_semiprimes`](https://lefttosolve.com/p/OeisA107247.known_prime_and_semiprimes) | Sum of squares of nonacci numbers — known prime and semiprimes | warmup | Number Theory |  | yes |
 | 18 | [`OeisA108129.conjecture`](https://lefttosolve.com/p/OeisA108129.conjecture) | Riesel Problem | open | Number Theory |  |  |
 | 19 | [`OeisA108301.conjecture`](https://lefttosolve.com/p/OeisA108301.conjecture) | Digital sum of the Fermat number $2^{2^n} + 1$ | open | Number Theory |  |  |
-| 20 | [`OeisA108569.conjecture`](https://lefttosolve.com/p/OeisA108569.conjecture) | Numbers $n$ such that $\\phi(n) = \\phi(n + \\phi(n))$ | open | Number Theory |  |  |
-| 21 | [`OeisA108864.conjecture`](https://lefttosolve.com/p/OeisA108864.conjecture) | Numbers $n$ such that the perfect deficiency of $n$ is $\\le 10$. | open | Number Theory |  |  |
+| 20 | [`OeisA108569.conjecture`](https://lefttosolve.com/p/OeisA108569.conjecture) | Numbers $n$ such that $\\phi(n) = \\phi(n + \\phi(n))$ | open | Number Theory |  | yes |
+| 21 | [`OeisA108864.conjecture`](https://lefttosolve.com/p/OeisA108864.conjecture) | Numbers $n$ such that the perfect deficiency of $n$ is $\\le 10$. | open | Number Theory |  | yes |
 | 22 | [`OeisA108866.conjecture`](https://lefttosolve.com/p/OeisA108866.conjecture) | Numerator of $\\sum_{k=1}^n 2^k/k$. | open | Number Theory |  |  |
 | 23 | [`OeisA109074.conjecture`](https://lefttosolve.com/p/OeisA109074.conjecture) | Numerator of $\\binom{6n-2}{2n} / \\left(2 \\binom{4n-1}{2n}\\right)$ | known | Combinatorics, Number Theory |  |  |
 | 24 | [`OeisA109227.conjecture`](https://lefttosolve.com/p/OeisA109227.conjecture) | Conjectures associated with A109227 | open | Number Theory |  |  |
@@ -50,21 +50,21 @@ Back to [all programs](../PROGRAMS.md).
 | 28 | [`OeisA109908.conjecture`](https://lefttosolve.com/p/OeisA109908.conjecture) | Conjectures associated with A109908 | open | Number Theory |  |  |
 | 29 | [`OeisA109909.conjecture`](https://lefttosolve.com/p/OeisA109909.conjecture) | Conjectures associated with A109909 | open | Number Theory |  |  |
 | 30 | [`OeisA110475.conjecture`](https://lefttosolve.com/p/OeisA110475.conjecture) | Number of symbols '*' and '^' to write the canonical prime factorization of n | open | Number Theory |  |  |
-| 31 | [`OeisA110566.conjecture`](https://lefttosolve.com/p/OeisA110566.conjecture) | $a(n) = \\operatorname{lcm}\\{1,2,\\dots,n\\}/\\operatorname{denom}(H(n))$ | open | Number Theory |  |  |
+| 31 | [`OeisA110566.conjecture`](https://lefttosolve.com/p/OeisA110566.conjecture) | $a(n) = \\operatorname{lcm}\\{1,2,\\dots,n\\}/\\operatorname{denom}(H(n))$ | open | Number Theory |  | yes |
 | 32 | [`OeisA110835.conjecture`](https://lefttosolve.com/p/OeisA110835.conjecture) | Smallest $m > 0$ such that there are no primes between $nm$ and $n(m+1)$ inclusive. | open | Number Theory |  |  |
 | 33 | [`OeisA110854.conjecture`](https://lefttosolve.com/p/OeisA110854.conjecture) | Conjectures associated with A110854 | open | Number Theory |  |  |
 | 34 | [`OeisA111114.conjecture`](https://lefttosolve.com/p/OeisA111114.conjecture) | Integer part of $\\mathrm{prime}(n)/\\pi(n)$ | open | Number Theory |  |  |
 | 35 | [`OeisA111291.colton_conjecture`](https://lefttosolve.com/p/OeisA111291.colton_conjecture) | Number of refactorable numbers (A033950) $\\le 10^n$ — colton conjecture | open | Number Theory |  |  |
-| 36 | [`OeisA111291.conjecture`](https://lefttosolve.com/p/OeisA111291.conjecture) | Number of refactorable numbers (A033950) $\\le 10^n$ — conjecture | known | Number Theory |  |  |
+| 36 | [`OeisA111291.conjecture`](https://lefttosolve.com/p/OeisA111291.conjecture) | Number of refactorable numbers (A033950) $\\le 10^n$ — conjecture | known | Number Theory |  | yes |
 | 37 | [`OeisA113010.conjecture`](https://lefttosolve.com/p/OeisA113010.conjecture) | Number of digits of n raised to the power of the sum of the digits of n | open | Number Theory |  |  |
 | 38 | [`OeisA113213.conjecture`](https://lefttosolve.com/p/OeisA113213.conjecture) | Smallest number $m$ such that $2^n - m$ and $2^n + m$ are primes | open | Number Theory |  |  |
 | 39 | [`OeisA113257.conjecture1`](https://lefttosolve.com/p/OeisA113257.conjecture1) | Ascending descending base exponent transform of squares — conjecture1 | open | Number Theory |  |  |
 | 40 | [`OeisA113257.conjecture2`](https://lefttosolve.com/p/OeisA113257.conjecture2) | Ascending descending base exponent transform of squares — conjecture2 | open | Number Theory |  |  |
-| 41 | [`OeisA113258.conjecture`](https://lefttosolve.com/p/OeisA113258.conjecture) | Ascending descending base exponent transform of factorials | open | Number Theory |  |  |
+| 41 | [`OeisA113258.conjecture`](https://lefttosolve.com/p/OeisA113258.conjecture) | Ascending descending base exponent transform of factorials | open | Number Theory |  | yes |
 | 42 | [`OeisA113271.conjecture1`](https://lefttosolve.com/p/OeisA113271.conjecture1) | Ascending descending base exponent transform of $2^n$ | open | Number Theory |  |  |
 | 43 | [`OeisA113609.conjecture`](https://lefttosolve.com/p/OeisA113609.conjecture) | Number of prime powers $q<=n$ such that also $q+2$ is a prime power | open | Number Theory |  |  |
 | 44 | [`OeisA114137.conjecture1`](https://lefttosolve.com/p/OeisA114137.conjecture1) | Difference between first odd semiprime $> 2^n$ and $2^n$ — conjecture1 | open | Number Theory |  |  |
-| 45 | [`OeisA114137.conjecture2`](https://lefttosolve.com/p/OeisA114137.conjecture2) | Difference between first odd semiprime $> 2^n$ and $2^n$ — conjecture2 | open | Number Theory |  |  |
+| 45 | [`OeisA114137.conjecture2`](https://lefttosolve.com/p/OeisA114137.conjecture2) | Difference between first odd semiprime $> 2^n$ and $2^n$ — conjecture2 | open | Number Theory |  | yes |
 | 46 | [`OeisA114216.conjecture`](https://lefttosolve.com/p/OeisA114216.conjecture) | Largest odd divisor of $a(n-1) + \\textrm{prime}(n)$ | open | Number Theory |  |  |
 | 47 | [`OeisA114362.conjecture1`](https://lefttosolve.com/p/OeisA114362.conjecture1) | Numerator of $\\zeta(4n)/\\zeta(2n)^2$ (with $a(0)=2$ instead of $-2$) | open | Number Theory |  |  |
 | 48 | [`OeisA1146.conjecture`](https://lefttosolve.com/p/OeisA1146.conjecture) | $a(n) = 2^(2^n)$ | open | Number Theory |  |  |
@@ -75,7 +75,7 @@ Back to [all programs](../PROGRAMS.md).
 | 53 | [`OeisA1157.conjecture`](https://lefttosolve.com/p/OeisA1157.conjecture) | Sum of squares of divisors of $n$ | open | Number Theory |  |  |
 | 54 | [`OeisA116150.conjecture`](https://lefttosolve.com/p/OeisA116150.conjecture) | $a(n) = \\sum_{j=1}^{n} (3^j + (-2)^j)$ | open | Number Theory |  |  |
 | 55 | [`OeisA117027.conjecture`](https://lefttosolve.com/p/OeisA117027.conjecture) | Determinants of 2 X 2 matrices of non-overlapping blocks of 4 consecutive primes | open | Number Theory |  |  |
-| 56 | [`OeisA117531.conjecture`](https://lefttosolve.com/p/OeisA117531.conjecture) | Number of primes in $n$-th row of triangle $k^2 - k + p_n$ | open | Number Theory |  |  |
+| 56 | [`OeisA117531.conjecture`](https://lefttosolve.com/p/OeisA117531.conjecture) | Number of primes in $n$-th row of triangle $k^2 - k + p_n$ | open | Number Theory |  | yes |
 | 57 | [`OeisA117545.conjecture`](https://lefttosolve.com/p/OeisA117545.conjecture) | Least $k$ such that cyclotomic polynomial $\\Phi_k(n)$ is prime | open | Number Theory |  |  |
 | 58 | [`OeisA119563.conjecture`](https://lefttosolve.com/p/OeisA119563.conjecture) | Sum of Fermat number and Mersenne number minus 1: $2^{2^n} + 2^n - 1$ | open | Number Theory |  |  |
 | 59 | [`OeisA119591.conjecture`](https://lefttosolve.com/p/OeisA119591.conjecture) | Least $k \\ge 1$ such that $2 \\cdot n^k - 1$ is prime | open | Number Theory |  |  |
@@ -88,10 +88,10 @@ Back to [all programs](../PROGRAMS.md).
 | 66 | [`OeisA153330.conjecture2`](https://lefttosolve.com/p/OeisA153330.conjecture2) | Collatz step differences — conjecture2 | open | Number Theory |  |  |
 | 67 | [`OeisA153330.conjecture3`](https://lefttosolve.com/p/OeisA153330.conjecture3) | Collatz step differences — conjecture3 | open | Number Theory |  |  |
 | 68 | [`OeisA153330.conjecture4`](https://lefttosolve.com/p/OeisA153330.conjecture4) | Collatz step differences — conjecture4 | open | Number Theory |  |  |
-| 69 | [`OeisA157237.conjecture`](https://lefttosolve.com/p/OeisA157237.conjecture) | Representations as $p + 2^x + 11 \\cdot 2^y$ with $p \\equiv 1 \\pmod 6$ | open | Number Theory |  |  |
-| 70 | [`OeisA158110.a_0`](https://lefttosolve.com/p/OeisA158110.a_0) | Exponentials of $\\sum_{n \\ge 1} q^{n^m} x^n / n$ — a 0 | warmup | Combinatorics, Number Theory |  |  |
-| 71 | [`OeisA158110.a_1`](https://lefttosolve.com/p/OeisA158110.a_1) | Exponentials of $\\sum_{n \\ge 1} q^{n^m} x^n / n$ — a 1 | warmup | Combinatorics, Number Theory |  |  |
-| 72 | [`OeisA158110.a_2`](https://lefttosolve.com/p/OeisA158110.a_2) | Exponentials of $\\sum_{n \\ge 1} q^{n^m} x^n / n$ — a 2 | warmup | Combinatorics, Number Theory |  |  |
+| 69 | [`OeisA157237.conjecture`](https://lefttosolve.com/p/OeisA157237.conjecture) | Representations as $p + 2^x + 11 \\cdot 2^y$ with $p \\equiv 1 \\pmod 6$ | open | Number Theory |  | yes |
+| 70 | [`OeisA158110.a_0`](https://lefttosolve.com/p/OeisA158110.a_0) | Exponentials of $\\sum_{n \\ge 1} q^{n^m} x^n / n$ — a 0 | warmup | Combinatorics, Number Theory |  | yes |
+| 71 | [`OeisA158110.a_1`](https://lefttosolve.com/p/OeisA158110.a_1) | Exponentials of $\\sum_{n \\ge 1} q^{n^m} x^n / n$ — a 1 | warmup | Combinatorics, Number Theory |  | yes |
+| 72 | [`OeisA158110.a_2`](https://lefttosolve.com/p/OeisA158110.a_2) | Exponentials of $\\sum_{n \\ge 1} q^{n^m} x^n / n$ — a 2 | warmup | Combinatorics, Number Theory |  | yes |
 | 73 | [`OeisA159829.conjecture2`](https://lefttosolve.com/p/OeisA159829.conjecture2) | Smallest $m$ such that $n^3 + m^3 + 1$ is prime | open | Number Theory |  |  |
 | 74 | [`OeisA1599.eq_one_of_odd_of_a`](https://lefttosolve.com/p/OeisA1599.eq_one_of_odd_of_a) | Ore's harmonic numbers | open | Number Theory |  |  |
 | 75 | [`OeisA160324.conjecture1`](https://lefttosolve.com/p/OeisA160324.conjecture1) | Number of ways to express $n$ as sum of square, pentagonal, and hexagonal numbers — conjecture1 | open | Number Theory |  |  |
@@ -108,63 +108,63 @@ Back to [all programs](../PROGRAMS.md).
 | 86 | [`OeisA179524.conjecture1`](https://lefttosolve.com/p/OeisA179524.conjecture1) | Central binomial sum $a(n) = \\sum_{k=0}^n (-4)^k \\binom{n}{k}^2 \\binom{n-k}{k}^2$ — conjecture1 | open | Number Theory |  |  |
 | 87 | [`OeisA179524.conjecture2`](https://lefttosolve.com/p/OeisA179524.conjecture2) | Central binomial sum $a(n) = \\sum_{k=0}^n (-4)^k \\binom{n}{k}^2 \\binom{n-k}{k}^2$ — conjecture2 | open | Number Theory |  |  |
 | 88 | [`OeisA179524.conjecture3`](https://lefttosolve.com/p/OeisA179524.conjecture3) | Central binomial sum $a(n) = \\sum_{k=0}^n (-4)^k \\binom{n}{k}^2 \\binom{n-k}{k}^2$ — conjecture3 | open | Number Theory |  |  |
-| 89 | [`OeisA179524.conjecture4`](https://lefttosolve.com/p/OeisA179524.conjecture4) | Central binomial sum $a(n) = \\sum_{k=0}^n (-4)^k \\binom{n}{k}^2 \\binom{n-k}{k}^2$ — conjecture4 | open | Number Theory |  |  |
+| 89 | [`OeisA179524.conjecture4`](https://lefttosolve.com/p/OeisA179524.conjecture4) | Central binomial sum $a(n) = \\sum_{k=0}^n (-4)^k \\binom{n}{k}^2 \\binom{n-k}{k}^2$ — conjecture4 | open | Number Theory |  | yes |
 | 90 | [`OeisA179524.conjecture5`](https://lefttosolve.com/p/OeisA179524.conjecture5) | Central binomial sum $a(n) = \\sum_{k=0}^n (-4)^k \\binom{n}{k}^2 \\binom{n-k}{k}^2$ — conjecture5 | open | Number Theory |  |  |
 | 91 | [`OeisA179537.conjecture1`](https://lefttosolve.com/p/OeisA179537.conjecture1) | Central binomial sum $a(n) = \\sum_{k=0}^n \\binom{n}{k}^2 \\binom{n-k}{k}^2 (-16)^k$ — conjecture1 | open | Number Theory |  |  |
 | 92 | [`OeisA179537.conjecture2`](https://lefttosolve.com/p/OeisA179537.conjecture2) | Central binomial sum $a(n) = \\sum_{k=0}^n \\binom{n}{k}^2 \\binom{n-k}{k}^2 (-16)^k$ — conjecture2 | open | Number Theory |  |  |
 | 93 | [`OeisA179537.conjecture3`](https://lefttosolve.com/p/OeisA179537.conjecture3) | Central binomial sum $a(n) = \\sum_{k=0}^n \\binom{n}{k}^2 \\binom{n-k}{k}^2 (-16)^k$ — conjecture3 | open | Number Theory |  |  |
 | 94 | [`OeisA179537.conjecture4`](https://lefttosolve.com/p/OeisA179537.conjecture4) | Central binomial sum $a(n) = \\sum_{k=0}^n \\binom{n}{k}^2 \\binom{n-k}{k}^2 (-16)^k$ — conjecture4 | open | Number Theory |  |  |
 | 95 | [`OeisA180017.conjecture`](https://lefttosolve.com/p/OeisA180017.conjecture) | Difference of digit sums in base 3 and base 2 | open | Number Theory |  |  |
-| 96 | [`OeisA181076.a_0`](https://lefttosolve.com/p/OeisA181076.a_0) | Hanna's exponential series for $\\binom{n+k-1}{k}^{n}$ — a 0 | warmup | Number Theory |  |  |
-| 97 | [`OeisA181076.a_1`](https://lefttosolve.com/p/OeisA181076.a_1) | Hanna's exponential series for $\\binom{n+k-1}{k}^{n}$ — a 1 | warmup | Number Theory |  |  |
-| 98 | [`OeisA181076.a_2`](https://lefttosolve.com/p/OeisA181076.a_2) | Hanna's exponential series for $\\binom{n+k-1}{k}^{n}$ — a 2 | warmup | Number Theory |  |  |
-| 99 | [`OeisA181076.a_3`](https://lefttosolve.com/p/OeisA181076.a_3) | Hanna's exponential series for $\\binom{n+k-1}{k}^{n}$ — a 3 | warmup | Number Theory |  |  |
-| 100 | [`OeisA181076.a_4`](https://lefttosolve.com/p/OeisA181076.a_4) | Hanna's exponential series for $\\binom{n+k-1}{k}^{n}$ — a 4 | warmup | Number Theory |  |  |
-| 101 | [`OeisA181078.a_0`](https://lefttosolve.com/p/OeisA181078.a_0) | Hanna's exponential series for $\\binom{n+k-1}{k}^{n+k-1}$ — a 0 | warmup | Number Theory |  |  |
-| 102 | [`OeisA181078.a_1`](https://lefttosolve.com/p/OeisA181078.a_1) | Hanna's exponential series for $\\binom{n+k-1}{k}^{n+k-1}$ — a 1 | warmup | Number Theory |  |  |
-| 103 | [`OeisA181078.a_2`](https://lefttosolve.com/p/OeisA181078.a_2) | Hanna's exponential series for $\\binom{n+k-1}{k}^{n+k-1}$ — a 2 | warmup | Number Theory |  |  |
-| 104 | [`OeisA181078.a_3`](https://lefttosolve.com/p/OeisA181078.a_3) | Hanna's exponential series for $\\binom{n+k-1}{k}^{n+k-1}$ — a 3 | warmup | Number Theory |  |  |
-| 105 | [`OeisA181078.a_4`](https://lefttosolve.com/p/OeisA181078.a_4) | Hanna's exponential series for $\\binom{n+k-1}{k}^{n+k-1}$ — a 4 | warmup | Number Theory |  |  |
-| 106 | [`OeisA181082.a_0`](https://lefttosolve.com/p/OeisA181082.a_0) | Hanna's exponential series for $\\binom{n}{k}^{n+k}$ — a 0 | warmup | Number Theory |  |  |
-| 107 | [`OeisA181082.a_1`](https://lefttosolve.com/p/OeisA181082.a_1) | Hanna's exponential series for $\\binom{n}{k}^{n+k}$ — a 1 | warmup | Number Theory |  |  |
-| 108 | [`OeisA181082.a_2`](https://lefttosolve.com/p/OeisA181082.a_2) | Hanna's exponential series for $\\binom{n}{k}^{n+k}$ — a 2 | warmup | Number Theory |  |  |
-| 109 | [`OeisA181082.a_3`](https://lefttosolve.com/p/OeisA181082.a_3) | Hanna's exponential series for $\\binom{n}{k}^{n+k}$ — a 3 | warmup | Number Theory |  |  |
-| 110 | [`OeisA181082.a_4`](https://lefttosolve.com/p/OeisA181082.a_4) | Hanna's exponential series for $\\binom{n}{k}^{n+k}$ — a 4 | warmup | Number Theory |  |  |
-| 111 | [`OeisA181084.a_0`](https://lefttosolve.com/p/OeisA181084.a_0) | Hanna's exponential series for $\\binom{n}{k}^{n+k+1}$ — a 0 | warmup | Number Theory |  |  |
-| 112 | [`OeisA181084.a_1`](https://lefttosolve.com/p/OeisA181084.a_1) | Hanna's exponential series for $\\binom{n}{k}^{n+k+1}$ — a 1 | warmup | Number Theory |  |  |
-| 113 | [`OeisA181084.a_2`](https://lefttosolve.com/p/OeisA181084.a_2) | Hanna's exponential series for $\\binom{n}{k}^{n+k+1}$ — a 2 | warmup | Number Theory |  |  |
-| 114 | [`OeisA181084.a_3`](https://lefttosolve.com/p/OeisA181084.a_3) | Hanna's exponential series for $\\binom{n}{k}^{n+k+1}$ — a 3 | warmup | Number Theory |  |  |
-| 115 | [`OeisA181084.a_4`](https://lefttosolve.com/p/OeisA181084.a_4) | Hanna's exponential series for $\\binom{n}{k}^{n+k+1}$ — a 4 | warmup | Number Theory |  |  |
+| 96 | [`OeisA181076.a_0`](https://lefttosolve.com/p/OeisA181076.a_0) | Hanna's exponential series for $\\binom{n+k-1}{k}^{n}$ — a 0 | warmup | Number Theory |  | yes |
+| 97 | [`OeisA181076.a_1`](https://lefttosolve.com/p/OeisA181076.a_1) | Hanna's exponential series for $\\binom{n+k-1}{k}^{n}$ — a 1 | warmup | Number Theory |  | yes |
+| 98 | [`OeisA181076.a_2`](https://lefttosolve.com/p/OeisA181076.a_2) | Hanna's exponential series for $\\binom{n+k-1}{k}^{n}$ — a 2 | warmup | Number Theory |  | yes |
+| 99 | [`OeisA181076.a_3`](https://lefttosolve.com/p/OeisA181076.a_3) | Hanna's exponential series for $\\binom{n+k-1}{k}^{n}$ — a 3 | warmup | Number Theory |  | yes |
+| 100 | [`OeisA181076.a_4`](https://lefttosolve.com/p/OeisA181076.a_4) | Hanna's exponential series for $\\binom{n+k-1}{k}^{n}$ — a 4 | warmup | Number Theory |  | yes |
+| 101 | [`OeisA181078.a_0`](https://lefttosolve.com/p/OeisA181078.a_0) | Hanna's exponential series for $\\binom{n+k-1}{k}^{n+k-1}$ — a 0 | warmup | Number Theory |  | yes |
+| 102 | [`OeisA181078.a_1`](https://lefttosolve.com/p/OeisA181078.a_1) | Hanna's exponential series for $\\binom{n+k-1}{k}^{n+k-1}$ — a 1 | warmup | Number Theory |  | yes |
+| 103 | [`OeisA181078.a_2`](https://lefttosolve.com/p/OeisA181078.a_2) | Hanna's exponential series for $\\binom{n+k-1}{k}^{n+k-1}$ — a 2 | warmup | Number Theory |  | yes |
+| 104 | [`OeisA181078.a_3`](https://lefttosolve.com/p/OeisA181078.a_3) | Hanna's exponential series for $\\binom{n+k-1}{k}^{n+k-1}$ — a 3 | warmup | Number Theory |  | yes |
+| 105 | [`OeisA181078.a_4`](https://lefttosolve.com/p/OeisA181078.a_4) | Hanna's exponential series for $\\binom{n+k-1}{k}^{n+k-1}$ — a 4 | warmup | Number Theory |  | yes |
+| 106 | [`OeisA181082.a_0`](https://lefttosolve.com/p/OeisA181082.a_0) | Hanna's exponential series for $\\binom{n}{k}^{n+k}$ — a 0 | warmup | Number Theory |  | yes |
+| 107 | [`OeisA181082.a_1`](https://lefttosolve.com/p/OeisA181082.a_1) | Hanna's exponential series for $\\binom{n}{k}^{n+k}$ — a 1 | warmup | Number Theory |  | yes |
+| 108 | [`OeisA181082.a_2`](https://lefttosolve.com/p/OeisA181082.a_2) | Hanna's exponential series for $\\binom{n}{k}^{n+k}$ — a 2 | warmup | Number Theory |  | yes |
+| 109 | [`OeisA181082.a_3`](https://lefttosolve.com/p/OeisA181082.a_3) | Hanna's exponential series for $\\binom{n}{k}^{n+k}$ — a 3 | warmup | Number Theory |  | yes |
+| 110 | [`OeisA181082.a_4`](https://lefttosolve.com/p/OeisA181082.a_4) | Hanna's exponential series for $\\binom{n}{k}^{n+k}$ — a 4 | warmup | Number Theory |  | yes |
+| 111 | [`OeisA181084.a_0`](https://lefttosolve.com/p/OeisA181084.a_0) | Hanna's exponential series for $\\binom{n}{k}^{n+k+1}$ — a 0 | warmup | Number Theory |  | yes |
+| 112 | [`OeisA181084.a_1`](https://lefttosolve.com/p/OeisA181084.a_1) | Hanna's exponential series for $\\binom{n}{k}^{n+k+1}$ — a 1 | warmup | Number Theory |  | yes |
+| 113 | [`OeisA181084.a_2`](https://lefttosolve.com/p/OeisA181084.a_2) | Hanna's exponential series for $\\binom{n}{k}^{n+k+1}$ — a 2 | warmup | Number Theory |  | yes |
+| 114 | [`OeisA181084.a_3`](https://lefttosolve.com/p/OeisA181084.a_3) | Hanna's exponential series for $\\binom{n}{k}^{n+k+1}$ — a 3 | warmup | Number Theory |  | yes |
+| 115 | [`OeisA181084.a_4`](https://lefttosolve.com/p/OeisA181084.a_4) | Hanna's exponential series for $\\binom{n}{k}^{n+k+1}$ — a 4 | warmup | Number Theory |  | yes |
 | 116 | [`OeisA181391.conjecture`](https://lefttosolve.com/p/OeisA181391.conjecture) | Van Eck's sequence (OEIS A181391) | open | Number Theory |  |  |
-| 117 | [`OeisA1818.conjecture2`](https://lefttosolve.com/p/OeisA1818.conjecture2) | Squares of double factorials | known | Linear Algebra, Number Theory |  |  |
+| 117 | [`OeisA1818.conjecture2`](https://lefttosolve.com/p/OeisA1818.conjecture2) | Squares of double factorials | known | Linear Algebra, Number Theory |  | yes |
 | 118 | [`OeisA182126.conjecture1`](https://lefttosolve.com/p/OeisA182126.conjecture1) | Product of two consecutive primes modulo the next prime — conjecture1 | open | Number Theory |  |  |
 | 119 | [`OeisA182126.conjecture2`](https://lefttosolve.com/p/OeisA182126.conjecture2) | Product of two consecutive primes modulo the next prime — conjecture2 | open | Number Theory |  |  |
 | 120 | [`OeisA182126.conjecture3`](https://lefttosolve.com/p/OeisA182126.conjecture3) | Product of two consecutive primes modulo the next prime — conjecture3 | open | Number Theory |  |  |
 | 121 | [`OeisA182510.conjecture1`](https://lefttosolve.com/p/OeisA182510.conjecture1) | Recurrence with bitwise XOR — conjecture1 | open | Number Theory |  |  |
 | 122 | [`OeisA182510.conjecture2`](https://lefttosolve.com/p/OeisA182510.conjecture2) | Recurrence with bitwise XOR — conjecture2 | open | Number Theory |  |  |
-| 123 | [`OeisA183128.a_0`](https://lefttosolve.com/p/OeisA183128.a_0) | Hanna's exponential series for $\\binom{n+k-1}{k}^{k^2+1}$ — a 0 | warmup | Number Theory |  |  |
-| 124 | [`OeisA183128.a_1`](https://lefttosolve.com/p/OeisA183128.a_1) | Hanna's exponential series for $\\binom{n+k-1}{k}^{k^2+1}$ — a 1 | warmup | Number Theory |  |  |
-| 125 | [`OeisA183128.a_2`](https://lefttosolve.com/p/OeisA183128.a_2) | Hanna's exponential series for $\\binom{n+k-1}{k}^{k^2+1}$ — a 2 | warmup | Number Theory |  |  |
-| 126 | [`OeisA183128.a_3`](https://lefttosolve.com/p/OeisA183128.a_3) | Hanna's exponential series for $\\binom{n+k-1}{k}^{k^2+1}$ — a 3 | warmup | Number Theory |  |  |
-| 127 | [`OeisA183128.a_4`](https://lefttosolve.com/p/OeisA183128.a_4) | Hanna's exponential series for $\\binom{n+k-1}{k}^{k^2+1}$ — a 4 | warmup | Number Theory |  |  |
-| 128 | [`OeisA183129.a_0`](https://lefttosolve.com/p/OeisA183129.a_0) | Hanna's exponential series for $\\binom{n+k-1}{k}^{k^2+k}$ — a 0 | warmup | Number Theory |  |  |
-| 129 | [`OeisA183129.a_1`](https://lefttosolve.com/p/OeisA183129.a_1) | Hanna's exponential series for $\\binom{n+k-1}{k}^{k^2+k}$ — a 1 | warmup | Number Theory |  |  |
-| 130 | [`OeisA183129.a_2`](https://lefttosolve.com/p/OeisA183129.a_2) | Hanna's exponential series for $\\binom{n+k-1}{k}^{k^2+k}$ — a 2 | warmup | Number Theory |  |  |
-| 131 | [`OeisA183129.a_3`](https://lefttosolve.com/p/OeisA183129.a_3) | Hanna's exponential series for $\\binom{n+k-1}{k}^{k^2+k}$ — a 3 | warmup | Number Theory |  |  |
-| 132 | [`OeisA183129.a_4`](https://lefttosolve.com/p/OeisA183129.a_4) | Hanna's exponential series for $\\binom{n+k-1}{k}^{k^2+k}$ — a 4 | warmup | Number Theory |  |  |
+| 123 | [`OeisA183128.a_0`](https://lefttosolve.com/p/OeisA183128.a_0) | Hanna's exponential series for $\\binom{n+k-1}{k}^{k^2+1}$ — a 0 | warmup | Number Theory |  | yes |
+| 124 | [`OeisA183128.a_1`](https://lefttosolve.com/p/OeisA183128.a_1) | Hanna's exponential series for $\\binom{n+k-1}{k}^{k^2+1}$ — a 1 | warmup | Number Theory |  | yes |
+| 125 | [`OeisA183128.a_2`](https://lefttosolve.com/p/OeisA183128.a_2) | Hanna's exponential series for $\\binom{n+k-1}{k}^{k^2+1}$ — a 2 | warmup | Number Theory |  | yes |
+| 126 | [`OeisA183128.a_3`](https://lefttosolve.com/p/OeisA183128.a_3) | Hanna's exponential series for $\\binom{n+k-1}{k}^{k^2+1}$ — a 3 | warmup | Number Theory |  | yes |
+| 127 | [`OeisA183128.a_4`](https://lefttosolve.com/p/OeisA183128.a_4) | Hanna's exponential series for $\\binom{n+k-1}{k}^{k^2+1}$ — a 4 | warmup | Number Theory |  | yes |
+| 128 | [`OeisA183129.a_0`](https://lefttosolve.com/p/OeisA183129.a_0) | Hanna's exponential series for $\\binom{n+k-1}{k}^{k^2+k}$ — a 0 | warmup | Number Theory |  | yes |
+| 129 | [`OeisA183129.a_1`](https://lefttosolve.com/p/OeisA183129.a_1) | Hanna's exponential series for $\\binom{n+k-1}{k}^{k^2+k}$ — a 1 | warmup | Number Theory |  | yes |
+| 130 | [`OeisA183129.a_2`](https://lefttosolve.com/p/OeisA183129.a_2) | Hanna's exponential series for $\\binom{n+k-1}{k}^{k^2+k}$ — a 2 | warmup | Number Theory |  | yes |
+| 131 | [`OeisA183129.a_3`](https://lefttosolve.com/p/OeisA183129.a_3) | Hanna's exponential series for $\\binom{n+k-1}{k}^{k^2+k}$ — a 3 | warmup | Number Theory |  | yes |
+| 132 | [`OeisA183129.a_4`](https://lefttosolve.com/p/OeisA183129.a_4) | Hanna's exponential series for $\\binom{n+k-1}{k}^{k^2+k}$ — a 4 | warmup | Number Theory |  | yes |
 | 133 | [`OeisA185150.conjecture`](https://lefttosolve.com/p/OeisA185150.conjecture) | Number of odd primes between $n^2$ and $(n+1)^2$ with $(n/p) = 1$ | open | Number Theory |  |  |
 | 134 | [`OeisA187759.conjecture`](https://lefttosolve.com/p/OeisA187759.conjecture) | Number of ways to write $n = x + y$ ($0 < x < y < n$) with $6x \\pm 1$ and $6y \\pm 1$ prime | open | Number Theory |  |  |
-| 135 | [`OeisA189286.conjecture_1`](https://lefttosolve.com/p/OeisA189286.conjecture_1) | Normalized convolution of $\\binom{6k}{3k}\\binom{3k}{k}$ — conjecture 1 | known | Number Theory |  |  |
-| 136 | [`OeisA189286.conjecture_2`](https://lefttosolve.com/p/OeisA189286.conjecture_2) | Normalized convolution of $\\binom{6k}{3k}\\binom{3k}{k}$ — conjecture 2 | warmup | Number Theory |  |  |
-| 137 | [`OeisA189286.conjecture_3`](https://lefttosolve.com/p/OeisA189286.conjecture_3) | Normalized convolution of $\\binom{6k}{3k}\\binom{3k}{k}$ — conjecture 3 | open | Number Theory |  |  |
-| 138 | [`OeisA189409.conjecture_1`](https://lefttosolve.com/p/OeisA189409.conjecture_1) | Primorial squared plus one — conjecture 1 | open | Number Theory |  |  |
+| 135 | [`OeisA189286.conjecture_1`](https://lefttosolve.com/p/OeisA189286.conjecture_1) | Normalized convolution of $\\binom{6k}{3k}\\binom{3k}{k}$ — conjecture 1 | known | Number Theory |  | yes |
+| 136 | [`OeisA189286.conjecture_2`](https://lefttosolve.com/p/OeisA189286.conjecture_2) | Normalized convolution of $\\binom{6k}{3k}\\binom{3k}{k}$ — conjecture 2 | warmup | Number Theory |  | yes |
+| 137 | [`OeisA189286.conjecture_3`](https://lefttosolve.com/p/OeisA189286.conjecture_3) | Normalized convolution of $\\binom{6k}{3k}\\binom{3k}{k}$ — conjecture 3 | open | Number Theory |  | yes |
+| 138 | [`OeisA189409.conjecture_1`](https://lefttosolve.com/p/OeisA189409.conjecture_1) | Primorial squared plus one — conjecture 1 | open | Number Theory |  | yes |
 | 139 | [`OeisA189409.conjecture_2`](https://lefttosolve.com/p/OeisA189409.conjecture_2) | Primorial squared plus one — conjecture 2 | open | Number Theory |  |  |
-| 140 | [`OeisA190969.conjecture_1`](https://lefttosolve.com/p/OeisA190969.conjecture_1) | Linear recurrence $a(n) = 5a(n-1) - 8a(n-2)$ with $a(0)=0, a(1)=1$ — conjecture 1 | open | Number Theory |  |  |
-| 141 | [`OeisA190969.conjecture_2`](https://lefttosolve.com/p/OeisA190969.conjecture_2) | Linear recurrence $a(n) = 5a(n-1) - 8a(n-2)$ with $a(0)=0, a(1)=1$ — conjecture 2 | open | Number Theory |  |  |
+| 140 | [`OeisA190969.conjecture_1`](https://lefttosolve.com/p/OeisA190969.conjecture_1) | Linear recurrence $a(n) = 5a(n-1) - 8a(n-2)$ with $a(0)=0, a(1)=1$ — conjecture 1 | open | Number Theory |  | yes |
+| 141 | [`OeisA190969.conjecture_2`](https://lefttosolve.com/p/OeisA190969.conjecture_2) | Linear recurrence $a(n) = 5a(n-1) - 8a(n-2)$ with $a(0)=0, a(1)=1$ — conjecture 2 | open | Number Theory |  | yes |
 | 142 | [`OeisA191004.conjecture_1`](https://lefttosolve.com/p/OeisA191004.conjecture_1) | Representations of $n = p + q + (n \\bmod 2)q$ with Jacobi symbol constraints — conjecture 1 | open | Number Theory |  |  |
 | 143 | [`OeisA191004.conjecture_2`](https://lefttosolve.com/p/OeisA191004.conjecture_2) | Representations of $n = p + q + (n \\bmod 2)q$ with Jacobi symbol constraints — conjecture 2 | open | Number Theory |  |  |
 | 144 | [`OeisA191004.conjecture_3`](https://lefttosolve.com/p/OeisA191004.conjecture_3) | Representations of $n = p + q + (n \\bmod 2)q$ with Jacobi symbol constraints — conjecture 3 | open | Number Theory |  |  |
-| 145 | [`OeisA193279.a_eq_self_of_perfect_of_even`](https://lefttosolve.com/p/OeisA193279.a_eq_self_of_perfect_of_even) | Number of distinct sums of distinct proper divisors of $n$ | warmup | Number Theory |  |  |
+| 145 | [`OeisA193279.a_eq_self_of_perfect_of_even`](https://lefttosolve.com/p/OeisA193279.a_eq_self_of_perfect_of_even) | Number of distinct sums of distinct proper divisors of $n$ | warmup | Number Theory |  | yes |
 | 146 | [`OeisA195441.conjecture`](https://lefttosolve.com/p/OeisA195441.conjecture) | Denominator of $B_{n+1}(x) - B_{n+1}$ | open | Number Theory |  |  |
 | 147 | [`OeisA196697.conjecture_1`](https://lefttosolve.com/p/OeisA196697.conjecture_1) | Number of primes of the form $2^n \\pm 2^k \\pm 1$ with $0 \\le k < n$ — conjecture 1 | open | Number Theory |  |  |
 | 148 | [`OeisA196697.conjecture_2`](https://lefttosolve.com/p/OeisA196697.conjecture_2) | Number of primes of the form $2^n \\pm 2^k \\pm 1$ with $0 \\le k < n$ — conjecture 2 | open | Number Theory |  |  |
@@ -172,15 +172,15 @@ Back to [all programs](../PROGRAMS.md).
 | 150 | [`OeisA196698.conjecture_2`](https://lefttosolve.com/p/OeisA196698.conjecture_2) | Primes of the form $3^n \\pm 3^k \\pm 1$ — conjecture 2 | open | Number Theory |  |  |
 | 151 | [`OeisA197630.conjecture`](https://lefttosolve.com/p/OeisA197630.conjecture) | Lerch quotients of odd primes | open | Number Theory |  |  |
 | 152 | [`OeisA2.density_one`](https://lefttosolve.com/p/OeisA2.density_one) | Density of ones in the Kolakoski sequence | open | Computer Science, Number Theory |  |  |
-| 153 | [`OeisA206911.conjecture_1`](https://lefttosolve.com/p/OeisA206911.conjecture_1) | Position of $n$-th partial sum of the harmonic series when jointly ranked with $\\{\\log(k+1)\\}$ — conjecture 1 | known | Number Theory |  |  |
-| 154 | [`OeisA206911.conjecture_2`](https://lefttosolve.com/p/OeisA206911.conjecture_2) | Position of $n$-th partial sum of the harmonic series when jointly ranked with $\\{\\log(k+1)\\}$ — conjecture 2 | known | Number Theory |  |  |
-| 155 | [`OeisA208425.conjecture_1`](https://lefttosolve.com/p/OeisA208425.conjecture_1) | Expansion of $\\sum_{n \\ge 0} \\frac{(3n)!}{n!^3} \\frac{x^{2n}}{(1-x)^{3n+1}}$ — conjecture 1 | open | Number Theory |  |  |
-| 156 | [`OeisA208425.conjecture_2`](https://lefttosolve.com/p/OeisA208425.conjecture_2) | Expansion of $\\sum_{n \\ge 0} \\frac{(3n)!}{n!^3} \\frac{x^{2n}}{(1-x)^{3n+1}}$ — conjecture 2 | open | Number Theory |  |  |
-| 157 | [`OeisA208425.conjecture_3`](https://lefttosolve.com/p/OeisA208425.conjecture_3) | Expansion of $\\sum_{n \\ge 0} \\frac{(3n)!}{n!^3} \\frac{x^{2n}}{(1-x)^{3n+1}}$ — conjecture 3 | open | Number Theory |  |  |
+| 153 | [`OeisA206911.conjecture_1`](https://lefttosolve.com/p/OeisA206911.conjecture_1) | Position of $n$-th partial sum of the harmonic series when jointly ranked with $\\{\\log(k+1)\\}$ — conjecture 1 | known | Number Theory |  | yes |
+| 154 | [`OeisA206911.conjecture_2`](https://lefttosolve.com/p/OeisA206911.conjecture_2) | Position of $n$-th partial sum of the harmonic series when jointly ranked with $\\{\\log(k+1)\\}$ — conjecture 2 | known | Number Theory |  | yes |
+| 155 | [`OeisA208425.conjecture_1`](https://lefttosolve.com/p/OeisA208425.conjecture_1) | Expansion of $\\sum_{n \\ge 0} \\frac{(3n)!}{n!^3} \\frac{x^{2n}}{(1-x)^{3n+1}}$ — conjecture 1 | open | Number Theory |  | yes |
+| 156 | [`OeisA208425.conjecture_2`](https://lefttosolve.com/p/OeisA208425.conjecture_2) | Expansion of $\\sum_{n \\ge 0} \\frac{(3n)!}{n!^3} \\frac{x^{2n}}{(1-x)^{3n+1}}$ — conjecture 2 | open | Number Theory |  | yes |
+| 157 | [`OeisA208425.conjecture_3`](https://lefttosolve.com/p/OeisA208425.conjecture_3) | Expansion of $\\sum_{n \\ge 0} \\frac{(3n)!}{n!^3} \\frac{x^{2n}}{(1-x)^{3n+1}}$ — conjecture 3 | open | Number Theory |  | yes |
 | 158 | [`OeisA210186.conjecture_1`](https://lefttosolve.com/p/OeisA210186.conjecture_1) | Least integer $m > 1$ dividing no sum of two distinct primorials up to $P_n$ — conjecture 1 | open | Number Theory |  |  |
 | 159 | [`OeisA210186.conjecture_2`](https://lefttosolve.com/p/OeisA210186.conjecture_2) | Least integer $m > 1$ dividing no sum of two distinct primorials up to $P_n$ — conjecture 2 | open | Number Theory |  |  |
-| 160 | [`OeisA212334.conjecture_1`](https://lefttosolve.com/p/OeisA212334.conjecture_1) | Balanced walks on a 4-dimensional cubic lattice with neighbor steps — conjecture 1 | open | Number Theory |  |  |
-| 161 | [`OeisA212334.conjecture_2`](https://lefttosolve.com/p/OeisA212334.conjecture_2) | Balanced walks on a 4-dimensional cubic lattice with neighbor steps — conjecture 2 | open | Number Theory |  |  |
+| 160 | [`OeisA212334.conjecture_1`](https://lefttosolve.com/p/OeisA212334.conjecture_1) | Balanced walks on a 4-dimensional cubic lattice with neighbor steps — conjecture 1 | open | Number Theory |  | yes |
+| 161 | [`OeisA212334.conjecture_2`](https://lefttosolve.com/p/OeisA212334.conjecture_2) | Balanced walks on a 4-dimensional cubic lattice with neighbor steps — conjecture 2 | open | Number Theory |  | yes |
 | 162 | [`OeisA212496.conjecture_1`](https://lefttosolve.com/p/OeisA212496.conjecture_1) | Partial sums of $(-1)^{k - \\Omega(k)}$ — conjecture 1 | open | Number Theory |  |  |
 | 163 | [`OeisA212496.conjecture_2`](https://lefttosolve.com/p/OeisA212496.conjecture_2) | Partial sums of $(-1)^{k - \\Omega(k)}$ — conjecture 2 | open | Number Theory |  |  |
 | 164 | [`OeisA212496.conjecture_3`](https://lefttosolve.com/p/OeisA212496.conjecture_3) | Partial sums of $(-1)^{k - \\Omega(k)}$ — conjecture 3 | open | Number Theory |  |  |
@@ -195,7 +195,7 @@ Back to [all programs](../PROGRAMS.md).
 | 173 | [`OeisA216265.conjecture`](https://lefttosolve.com/p/OeisA216265.conjecture) | Number of primes between $n^3 - n$ and $n^3$ | open | Number Theory |  |  |
 | 174 | [`OeisA217317.conjecture`](https://lefttosolve.com/p/OeisA217317.conjecture) | Number of primes between $n^2$ and $n^2 + (\\log_2 n)^2$ | open | Number Theory |  |  |
 | 175 | [`OeisA217703.conjecture_1`](https://lefttosolve.com/p/OeisA217703.conjecture_1) | Recurrence $a(n+1) = 2n(n+1)a(n) - n^4 a(n-1)$ and associated polynomials — conjecture 1 | open | Field Theory, Number Theory |  |  |
-| 176 | [`OeisA217703.conjecture_2`](https://lefttosolve.com/p/OeisA217703.conjecture_2) | Recurrence $a(n+1) = 2n(n+1)a(n) - n^4 a(n-1)$ and associated polynomials — conjecture 2 | known | Number Theory |  |  |
+| 176 | [`OeisA217703.conjecture_2`](https://lefttosolve.com/p/OeisA217703.conjecture_2) | Recurrence $a(n+1) = 2n(n+1)a(n) - n^4 a(n-1)$ and associated polynomials — conjecture 2 | known | Number Theory |  | yes |
 | 177 | [`OeisA217785.conjecture_1`](https://lefttosolve.com/p/OeisA217785.conjecture_1) | Smallest integer $s > n$ such that $1 + 2s + 3s^2 + \\dots + n s^{n-1}$ is prime — conjecture 1 | open | Number Theory |  |  |
 | 178 | [`OeisA217785.conjecture_2`](https://lefttosolve.com/p/OeisA217785.conjecture_2) | Smallest integer $s > n$ such that $1 + 2s + 3s^2 + \\dots + n s^{n-1}$ is prime — conjecture 2 | open | Number Theory |  |  |
 | 179 | [`OeisA217785.conjecture_3`](https://lefttosolve.com/p/OeisA217785.conjecture_3) | Smallest integer $s > n$ such that $1 + 2s + 3s^2 + \\dots + n s^{n-1}$ is prime — conjecture 3 | open | Field Theory, Number Theory |  |  |
@@ -221,13 +221,13 @@ Back to [all programs](../PROGRAMS.md).
 | 199 | [`OeisA219838.conjecture_3`](https://lefttosolve.com/p/OeisA219838.conjecture_3) | Partitions of $n$ into $x + y$ with $(xy)^2 + xy + 1$ prime — conjecture 3 | open | Number Theory |  |  |
 | 200 | [`OeisA223086.conjecture`](https://lefttosolve.com/p/OeisA223086.conjecture) | Trajectory of $64$ under the map $n \\to \\text{A006368}(n)$ | open | Number Theory |  |  |
 | 201 | [`OeisA224.conjecture`](https://lefttosolve.com/p/OeisA224.conjecture) | Number of squares $\\bmod n$ | open | Number Theory |  |  |
-| 202 | [`OeisA226163.conjecture`](https://lefttosolve.com/p/OeisA226163.conjecture) | Determinant of Legendre symbol matrix with factorial shifts | known | Number Theory |  |  |
+| 202 | [`OeisA226163.conjecture`](https://lefttosolve.com/p/OeisA226163.conjecture) | Determinant of Legendre symbol matrix with factorial shifts | known | Number Theory |  | yes |
 | 203 | [`OeisA227923.conjecture_1`](https://lefttosolve.com/p/OeisA227923.conjecture_1) | Representations using Sophie Germain primes and twin prime pairs — conjecture 1 | open | Number Theory |  |  |
 | 204 | [`OeisA227923.conjecture_2`](https://lefttosolve.com/p/OeisA227923.conjecture_2) | Representations using Sophie Germain primes and twin prime pairs — conjecture 2 | open | Number Theory |  |  |
 | 205 | [`OeisA227923.conjecture_3`](https://lefttosolve.com/p/OeisA227923.conjecture_3) | Representations using Sophie Germain primes and twin prime pairs — conjecture 3 | open | Number Theory |  |  |
 | 206 | [`OeisA227923.conjecture_4`](https://lefttosolve.com/p/OeisA227923.conjecture_4) | Representations using Sophie Germain primes and twin prime pairs — conjecture 4 | open | Number Theory |  |  |
-| 207 | [`OeisA228304.conjecture_1`](https://lefttosolve.com/p/OeisA228304.conjecture_1) | Alternating sum of fourth powers of binomial coefficients — conjecture 1 | known | Number Theory |  |  |
-| 208 | [`OeisA228304.conjecture_2`](https://lefttosolve.com/p/OeisA228304.conjecture_2) | Alternating sum of fourth powers of binomial coefficients — conjecture 2 | known | Number Theory |  |  |
+| 207 | [`OeisA228304.conjecture_1`](https://lefttosolve.com/p/OeisA228304.conjecture_1) | Alternating sum of fourth powers of binomial coefficients — conjecture 1 | known | Number Theory |  | yes |
+| 208 | [`OeisA228304.conjecture_2`](https://lefttosolve.com/p/OeisA228304.conjecture_2) | Alternating sum of fourth powers of binomial coefficients — conjecture 2 | known | Number Theory |  | yes |
 | 209 | [`OeisA228425.conjecture_1`](https://lefttosolve.com/p/OeisA228425.conjecture_1) | Partitions of $n$ into $x + y$ with $x(x+1)/2 + y^2$ prime — conjecture 1 | open | Number Theory |  |  |
 | 210 | [`OeisA228425.conjecture_2`](https://lefttosolve.com/p/OeisA228425.conjecture_2) | Partitions of $n$ into $x + y$ with $x(x+1)/2 + y^2$ prime — conjecture 2 | open | Number Theory |  |  |
 | 211 | [`OeisA228425.conjecture_3`](https://lefttosolve.com/p/OeisA228425.conjecture_3) | Partitions of $n$ into $x + y$ with $x(x+1)/2 + y^2$ prime — conjecture 3 | open | Number Theory |  |  |
@@ -267,7 +267,7 @@ Back to [all programs](../PROGRAMS.md).
 | 245 | [`OeisA232194.conjecture_6`](https://lefttosolve.com/p/OeisA232194.conjecture_6) | Ways to write $n = x + y$ with $nx + y$ and $ny - x$ both prime — conjecture 6 | open | Number Theory |  |  |
 | 246 | [`OeisA2326.conjecture1`](https://lefttosolve.com/p/OeisA2326.conjecture1) | Multiplicative order of 2 mod $2n+1$ — conjecture1 | open | Number Theory |  |  |
 | 247 | [`OeisA2326.conjecture2`](https://lefttosolve.com/p/OeisA2326.conjecture2) | Multiplicative order of 2 mod $2n+1$ — conjecture2 | open | Number Theory |  |  |
-| 248 | [`OeisA232616.conjecture_1`](https://lefttosolve.com/p/OeisA232616.conjecture_1) | Least $m > 0$ such that $\\{2^k - k : k = 1, \\dots, m\\}$ covers all residues modulo $n$ — conjecture 1 | known | Number Theory |  |  |
+| 248 | [`OeisA232616.conjecture_1`](https://lefttosolve.com/p/OeisA232616.conjecture_1) | Least $m > 0$ such that $\\{2^k - k : k = 1, \\dots, m\\}$ covers all residues modulo $n$ — conjecture 1 | known | Number Theory |  | yes |
 | 249 | [`OeisA232616.conjecture_2`](https://lefttosolve.com/p/OeisA232616.conjecture_2) | Least $m > 0$ such that $\\{2^k - k : k = 1, \\dots, m\\}$ covers all residues modulo $n$ — conjecture 2 | open | Number Theory |  |  |
 | 250 | [`OeisA232616.conjecture_3`](https://lefttosolve.com/p/OeisA232616.conjecture_3) | Least $m > 0$ such that $\\{2^k - k : k = 1, \\dots, m\\}$ covers all residues modulo $n$ — conjecture 3 | open | Number Theory |  |  |
 | 251 | [`OeisA233544.conjecture_1`](https://lefttosolve.com/p/OeisA233544.conjecture_1) | Representations $n = k^2 + m$ ($0 < k^2 \\le m$) with $\\sigma(k^2) + \\phi(m)$ prime — conjecture 1 | open | Number Theory |  |  |
@@ -286,10 +286,10 @@ Back to [all programs](../PROGRAMS.md).
 | 264 | [`OeisA234246.conjecture_4`](https://lefttosolve.com/p/OeisA234246.conjecture_4) | Number of integers $0 < k < n$ such that $k \\phi(n - k) + 1$ is a square — conjecture 4 | open | Number Theory |  |  |
 | 265 | [`OeisA234246.conjecture_5`](https://lefttosolve.com/p/OeisA234246.conjecture_5) | Number of integers $0 < k < n$ such that $k \\phi(n - k) + 1$ is a square — conjecture 5 | open | Number Theory |  |  |
 | 266 | [`OeisA234246.conjecture_6`](https://lefttosolve.com/p/OeisA234246.conjecture_6) | Number of integers $0 < k < n$ such that $k \\phi(n - k) + 1$ is a square — conjecture 6 | open | Number Theory |  |  |
-| 267 | [`OeisA234360.conjecture_1`](https://lefttosolve.com/p/OeisA234360.conjecture_1) | Number of integers $0 < k < n$ such that $(k + 1)^{\\phi(n - k)} + k$ is prime — conjecture 1 | open | Number Theory |  |  |
-| 268 | [`OeisA234360.conjecture_2`](https://lefttosolve.com/p/OeisA234360.conjecture_2) | Number of integers $0 < k < n$ such that $(k + 1)^{\\phi(n - k)} + k$ is prime — conjecture 2 | known | Number Theory |  |  |
+| 267 | [`OeisA234360.conjecture_1`](https://lefttosolve.com/p/OeisA234360.conjecture_1) | Number of integers $0 < k < n$ such that $(k + 1)^{\\phi(n - k)} + k$ is prime — conjecture 1 | open | Number Theory |  | yes |
+| 268 | [`OeisA234360.conjecture_2`](https://lefttosolve.com/p/OeisA234360.conjecture_2) | Number of integers $0 < k < n$ such that $(k + 1)^{\\phi(n - k)} + k$ is prime — conjecture 2 | known | Number Theory |  | yes |
 | 269 | [`OeisA234360.conjecture_3`](https://lefttosolve.com/p/OeisA234360.conjecture_3) | Number of integers $0 < k < n$ such that $(k + 1)^{\\phi(n - k)} + k$ is prime — conjecture 3 | open | Number Theory |  |  |
-| 270 | [`OeisA234360.conjecture_4`](https://lefttosolve.com/p/OeisA234360.conjecture_4) | Number of integers $0 < k < n$ such that $(k + 1)^{\\phi(n - k)} + k$ is prime — conjecture 4 | open | Number Theory |  |  |
+| 270 | [`OeisA234360.conjecture_4`](https://lefttosolve.com/p/OeisA234360.conjecture_4) | Number of integers $0 < k < n$ such that $(k + 1)^{\\phi(n - k)} + k$ is prime — conjecture 4 | open | Number Theory |  | yes |
 | 271 | [`OeisA234642.conjecture`](https://lefttosolve.com/p/OeisA234642.conjecture) | Smallest $x$ such that $x \\bmod \\phi(x) = n$, or $0$ if no such $x$ exists | open | Number Theory |  |  |
 | 272 | [`OeisA234694.conjecture_1`](https://lefttosolve.com/p/OeisA234694.conjecture_1) | Integers $0 < k < n$ with $p = k + \\mathrm{prime}(n - k)$ and $\\mathrm{prime}(p) - p + 1$ prime — conjecture 1 | open | Number Theory |  |  |
 | 273 | [`OeisA234694.conjecture_2`](https://lefttosolve.com/p/OeisA234694.conjecture_2) | Integers $0 < k < n$ with $p = k + \\mathrm{prime}(n - k)$ and $\\mathrm{prime}(p) - p + 1$ prime — conjecture 2 | open | Number Theory |  |  |
@@ -316,7 +316,7 @@ Back to [all programs](../PROGRAMS.md).
 | 294 | [`OeisA237720.conjecture_3`](https://lefttosolve.com/p/OeisA237720.conjecture_3) | Number of primes $p \\le (n+1)/2$ with $\\lfloor\\sqrt{n-p}\\rfloor$ prime — conjecture 3 | open | Number Theory |  |  |
 | 295 | [`OeisA238224.conjecture`](https://lefttosolve.com/p/OeisA238224.conjecture) | Pairs $\\{j, k\\}$ with $0 < j < k \\le n$, $k \\equiv 1 \\pmod j$, and $\\pi(jn) \\mid \\pi(kn)$ | open | Number Theory |  |  |
 | 296 | [`OeisA238281.conjecture_1`](https://lefttosolve.com/p/OeisA238281.conjecture_1) | Equal prime counts in adjacent intervals $(kn, (k+1)n)$ and $((k+1)n, (k+2)n)$ — conjecture 1 | open | Number Theory |  |  |
-| 297 | [`OeisA238281.conjecture_2`](https://lefttosolve.com/p/OeisA238281.conjecture_2) | Equal prime counts in adjacent intervals $(kn, (k+1)n)$ and $((k+1)n, (k+2)n)$ — conjecture 2 | open | Number Theory |  |  |
+| 297 | [`OeisA238281.conjecture_2`](https://lefttosolve.com/p/OeisA238281.conjecture_2) | Equal prime counts in adjacent intervals $(kn, (k+1)n)$ and $((k+1)n, (k+2)n)$ — conjecture 2 | open | Number Theory |  | yes |
 | 298 | [`OeisA238281.conjecture_3`](https://lefttosolve.com/p/OeisA238281.conjecture_3) | Equal prime counts in adjacent intervals $(kn, (k+1)n)$ and $((k+1)n, (k+2)n)$ — conjecture 3 | open | Number Theory |  |  |
 | 299 | [`OeisA238568.conjecture_1`](https://lefttosolve.com/p/OeisA238568.conjecture_1) | Number of positive integers $k < n$ such that $n^2 - \\pi(k n)$ is prime — conjecture 1 | open | Number Theory |  |  |
 | 300 | [`OeisA238568.conjecture_2`](https://lefttosolve.com/p/OeisA238568.conjecture_2) | Number of positive integers $k < n$ such that $n^2 - \\pi(k n)$ is prime — conjecture 2 | open | Number Theory |  |  |
@@ -333,7 +333,7 @@ Back to [all programs](../PROGRAMS.md).
 | 311 | [`OeisA239957.conjecture`](https://lefttosolve.com/p/OeisA239957.conjecture) | Zhi-Wei Sun's Conjecture (A239957) | open | Number Theory |  |  |
 | 312 | [`OeisA240088.conjecture`](https://lefttosolve.com/p/OeisA240088.conjecture) | Ways of writing $n$ as an ordered sum of a triangular, square, and pentagonal number | open | Number Theory |  |  |
 | 313 | [`OeisA2407.conjecture`](https://lefttosolve.com/p/OeisA2407.conjecture) | Cuban Primes | open | Number Theory |  |  |
-| 314 | [`OeisA241898.conjecture_2`](https://lefttosolve.com/p/OeisA241898.conjecture_2) | Largest smallest-base in a decomposition of $n$ into at most four squares | open | Number Theory |  |  |
+| 314 | [`OeisA241898.conjecture_2`](https://lefttosolve.com/p/OeisA241898.conjecture_2) | Largest smallest-base in a decomposition of $n$ into at most four squares | open | Number Theory |  | yes |
 | 315 | [`OeisA242174.conjecture_1`](https://lefttosolve.com/p/OeisA242174.conjecture_1) | Least primitive prime divisor of the Franel numbers of order $4$ — conjecture 1 | open | Number Theory |  |  |
 | 316 | [`OeisA242174.conjecture_2`](https://lefttosolve.com/p/OeisA242174.conjecture_2) | Least primitive prime divisor of the Franel numbers of order $4$ — conjecture 2 | open | Number Theory |  |  |
 | 317 | [`OeisA2426.conjecture`](https://lefttosolve.com/p/OeisA2426.conjecture) | Central trinomial coefficients | open | Number Theory |  |  |
@@ -342,14 +342,14 @@ Back to [all programs](../PROGRAMS.md).
 | 320 | [`OeisA24356.conjecture`](https://lefttosolve.com/p/OeisA24356.conjecture) | Determinant of Hankel matrix of the first $2n-1$ prime numbers | open | Linear Algebra, Number Theory |  |  |
 | 321 | [`OeisA245211.conjecture`](https://lefttosolve.com/p/OeisA245211.conjecture) | Sum of $d \\cdot \\tau(d)$ over proper divisors $d$ of $n$ | open | Number Theory |  |  |
 | 322 | [`OeisA245212.conjecture`](https://lefttosolve.com/p/OeisA245212.conjecture) | Difference between $n \\tau(n)$ and $\\sum_{d \\mid n, d < n} d \\tau(d)$ | open | Number Theory |  |  |
-| 323 | [`OeisA2454.conjecture`](https://lefttosolve.com/p/OeisA2454.conjecture) | Central factorial numbers: $((2n)!!)^2$ | known | Linear Algebra, Number Theory |  |  |
+| 323 | [`OeisA2454.conjecture`](https://lefttosolve.com/p/OeisA2454.conjecture) | Central factorial numbers: $((2n)!!)^2$ | known | Linear Algebra, Number Theory |  | yes |
 | 324 | [`OeisA247824.conjecture_1`](https://lefttosolve.com/p/OeisA247824.conjecture_1) | Least $m$ such that $m + n$ divides $\\mathrm{prime}(m) + \\mathrm{prime}(n)$ — conjecture 1 | open | Number Theory |  |  |
 | 325 | [`OeisA247824.conjecture_2`](https://lefttosolve.com/p/OeisA247824.conjecture_2) | Least $m$ such that $m + n$ divides $\\mathrm{prime}(m) + \\mathrm{prime}(n)$ — conjecture 2 | known | Number Theory |  |  |
-| 326 | [`OeisA248123.conjecture`](https://lefttosolve.com/p/OeisA248123.conjecture) | Least $m > 0$ coprime to $n$ such that $mn \\mid C(m+n)$ | open | Number Theory |  |  |
+| 326 | [`OeisA248123.conjecture`](https://lefttosolve.com/p/OeisA248123.conjecture) | Least $m > 0$ coprime to $n$ such that $mn \\mid C(m+n)$ | open | Number Theory |  | yes |
 | 327 | [`OeisA249609.conjecture`](https://lefttosolve.com/p/OeisA249609.conjecture) | Smallest $m \\in [1, n]$ such that $\\binom{n}{m}$ is evil | open | Number Theory |  |  |
 | 328 | [`OeisA250131.conjecture_1`](https://lefttosolve.com/p/OeisA250131.conjecture_1) | Odd part of the digital sum of $3^n$ divided by the maximal power of $3$ — conjecture 1 | open | Number Theory |  |  |
 | 329 | [`OeisA250131.conjecture_2`](https://lefttosolve.com/p/OeisA250131.conjecture_2) | Odd part of the digital sum of $3^n$ divided by the maximal power of $3$ — conjecture 2 | open | Number Theory |  |  |
-| 330 | [`OeisA251758.conjecture`](https://lefttosolve.com/p/OeisA251758.conjecture) | Floor of $n^2$ divided by the sum of products of consecutive divisors of $n$ | open | Number Theory |  |  |
+| 330 | [`OeisA251758.conjecture`](https://lefttosolve.com/p/OeisA251758.conjecture) | Floor of $n^2$ divided by the sum of products of consecutive divisors of $n$ | open | Number Theory |  | yes |
 | 331 | [`OeisA253187.conjecture_1`](https://lefttosolve.com/p/OeisA253187.conjecture_1) | Representations of $n$ as the sum of two pentagonal and a generalized decagonal number — conjecture 1 | open | Number Theory |  |  |
 | 332 | [`OeisA253187.conjecture_2`](https://lefttosolve.com/p/OeisA253187.conjecture_2) | Representations of $n$ as the sum of two pentagonal and a generalized decagonal number — conjecture 2 | open | Number Theory |  |  |
 | 333 | [`OeisA255916.conjecture_1`](https://lefttosolve.com/p/OeisA255916.conjecture_1) | Representations of $n$ as a sum of generalized heptagonal, octagonal, and nonagonal numbers — conjecture 1 | open | Number Theory |  |  |
@@ -362,10 +362,10 @@ Back to [all programs](../PROGRAMS.md).
 | 340 | [`OeisA261307.conjecture`](https://lefttosolve.com/p/OeisA261307.conjecture) | Prime values in recurrence $a(n+1) = \|a(n) - \\gcd(a(n), 7n+6)\|$ | open | Number Theory |  |  |
 | 341 | [`OeisA261627.conjecture_1`](https://lefttosolve.com/p/OeisA261627.conjecture_1) | Primes $p$ such that $n - (p n' - 1)$ and $n + (p n' - 1)$ are both prime — conjecture 1 | open | Number Theory |  |  |
 | 342 | [`OeisA261627.conjecture_2`](https://lefttosolve.com/p/OeisA261627.conjecture_2) | Primes $p$ such that $n - (p n' - 1)$ and $n + (p n' - 1)$ are both prime — conjecture 2 | open | Number Theory |  |  |
-| 343 | [`OeisA261680.conjecture`](https://lefttosolve.com/p/OeisA261680.conjecture) | Sums of four binary palindromes | known | Number Theory |  |  |
+| 343 | [`OeisA261680.conjecture`](https://lefttosolve.com/p/OeisA261680.conjecture) | Sums of four binary palindromes | known | Number Theory |  | yes |
 | 344 | [`OeisA261876.conjecture_1`](https://lefttosolve.com/p/OeisA261876.conjecture_1) | Refining Lagrange's four-square theorem with $(5x^2 + 7y^2 + 9z^2)yz$ a square — conjecture 1 | open | Number Theory |  |  |
-| 345 | [`OeisA261876.conjecture_2`](https://lefttosolve.com/p/OeisA261876.conjecture_2) | Refining Lagrange's four-square theorem with $(5x^2 + 7y^2 + 9z^2)yz$ a square — conjecture 2 | known | Number Theory |  |  |
-| 346 | [`OeisA261876.conjecture_3`](https://lefttosolve.com/p/OeisA261876.conjecture_3) | Refining Lagrange's four-square theorem with $(5x^2 + 7y^2 + 9z^2)yz$ a square — conjecture 3 | open | Number Theory |  |  |
+| 345 | [`OeisA261876.conjecture_2`](https://lefttosolve.com/p/OeisA261876.conjecture_2) | Refining Lagrange's four-square theorem with $(5x^2 + 7y^2 + 9z^2)yz$ a square — conjecture 2 | known | Number Theory |  | yes |
+| 346 | [`OeisA261876.conjecture_3`](https://lefttosolve.com/p/OeisA261876.conjecture_3) | Refining Lagrange's four-square theorem with $(5x^2 + 7y^2 + 9z^2)yz$ a square — conjecture 3 | open | Number Theory |  | yes |
 | 347 | [`OeisA262403.conjecture_1`](https://lefttosolve.com/p/OeisA262403.conjecture_1) | Additive decompositions of $\\pi(T(n))$ — conjecture 1 | open | Number Theory |  |  |
 | 348 | [`OeisA262403.conjecture_2`](https://lefttosolve.com/p/OeisA262403.conjecture_2) | Additive decompositions of $\\pi(T(n))$ — conjecture 2 | open | Number Theory |  |  |
 | 349 | [`OeisA262403.conjecture_3`](https://lefttosolve.com/p/OeisA262403.conjecture_3) | Additive decompositions of $\\pi(T(n))$ — conjecture 3 | open | Number Theory |  |  |
@@ -390,18 +390,18 @@ Back to [all programs](../PROGRAMS.md).
 | 368 | [`OeisA287616.conjecture`](https://lefttosolve.com/p/OeisA287616.conjecture) | Zhi-Wei Sun's Conjecture (A287616) | known | Number Theory |  |  |
 | 369 | [`OeisA303656.conjecture`](https://lefttosolve.com/p/OeisA303656.conjecture) | Zhi-Wei Sun's Conjecture (A303656) | open | Number Theory |  |  |
 | 370 | [`OeisA308734.conjecture`](https://lefttosolve.com/p/OeisA308734.conjecture) | Zhi-Wei Sun's Four-Square Conjecture (A308734) | open | Number Theory |  |  |
-| 371 | [`OeisA331631.conjecture`](https://lefttosolve.com/p/OeisA331631.conjecture) | Tripling until the seed's digits reappear | open | Number Theory |  |  |
+| 371 | [`OeisA331631.conjecture`](https://lefttosolve.com/p/OeisA331631.conjecture) | Tripling until the seed's digits reappear | open | Number Theory |  | yes |
 | 372 | [`OeisA34693.a_isBigO`](https://lefttosolve.com/p/OeisA34693.a_isBigO) | Smallest number $k$ such that $kn + 1$ is prime — a isBigO | open | Number Theory |  |  |
 | 373 | [`OeisA34693.a_unbounded`](https://lefttosolve.com/p/OeisA34693.a_unbounded) | Smallest number $k$ such that $kn + 1$ is prime — a unbounded | open | Number Theory |  |  |
 | 374 | [`OeisA34693.exists_k`](https://lefttosolve.com/p/OeisA34693.exists_k) | Smallest number $k$ such that $kn + 1$ is prime — exists k | open | Number Theory |  |  |
 | 375 | [`OeisA34693.exists_k_stronger`](https://lefttosolve.com/p/OeisA34693.exists_k_stronger) | Smallest number $k$ such that $kn + 1$ is prime — exists k stronger | open | Number Theory |  |  |
 | 376 | [`OeisA34694.conjecture`](https://lefttosolve.com/p/OeisA34694.conjecture) | Smallest prime $\\equiv 1 \\pmod n$ | open | Number Theory |  |  |
-| 377 | [`OeisA357513.general_supercongruence`](https://lefttosolve.com/p/OeisA357513.general_supercongruence) | Numerator of a sum involving binomial coefficients | open | Number Theory |  |  |
-| 378 | [`OeisA358684.a_7`](https://lefttosolve.com/p/OeisA358684.a_7) | Factor bounds for Fermat numbers | warmup | Number Theory |  |  |
-| 379 | [`OeisA368630.a_1`](https://lefttosolve.com/p/OeisA368630.a_1) | A self-compositional exponential generating function — a 1 | warmup | Number Theory |  |  |
-| 380 | [`OeisA368630.a_2`](https://lefttosolve.com/p/OeisA368630.a_2) | A self-compositional exponential generating function — a 2 | warmup | Number Theory |  |  |
-| 381 | [`OeisA368630.a_3`](https://lefttosolve.com/p/OeisA368630.a_3) | A self-compositional exponential generating function — a 3 | warmup | Number Theory |  |  |
-| 382 | [`OeisA368630.a_4`](https://lefttosolve.com/p/OeisA368630.a_4) | A self-compositional exponential generating function — a 4 | warmup | Number Theory |  |  |
+| 377 | [`OeisA357513.general_supercongruence`](https://lefttosolve.com/p/OeisA357513.general_supercongruence) | Numerator of a sum involving binomial coefficients | open | Number Theory |  | yes |
+| 378 | [`OeisA358684.a_7`](https://lefttosolve.com/p/OeisA358684.a_7) | Factor bounds for Fermat numbers | warmup | Number Theory |  | yes |
+| 379 | [`OeisA368630.a_1`](https://lefttosolve.com/p/OeisA368630.a_1) | A self-compositional exponential generating function — a 1 | warmup | Number Theory |  | yes |
+| 380 | [`OeisA368630.a_2`](https://lefttosolve.com/p/OeisA368630.a_2) | A self-compositional exponential generating function — a 2 | warmup | Number Theory |  | yes |
+| 381 | [`OeisA368630.a_3`](https://lefttosolve.com/p/OeisA368630.a_3) | A self-compositional exponential generating function — a 3 | warmup | Number Theory |  | yes |
+| 382 | [`OeisA368630.a_4`](https://lefttosolve.com/p/OeisA368630.a_4) | A self-compositional exponential generating function — a 4 | warmup | Number Theory |  | yes |
 | 383 | [`OeisA37274.home_prime_conjecture`](https://lefttosolve.com/p/OeisA37274.home_prime_conjecture) | Home primes (OEIS A037274) | open | Number Theory |  |  |
 | 384 | [`OeisA38098.conjecture1`](https://lefttosolve.com/p/OeisA38098.conjecture1) | Number of primes $< n^3$ — conjecture1 | open | Number Theory |  |  |
 | 385 | [`OeisA38098.conjecture2`](https://lefttosolve.com/p/OeisA38098.conjecture2) | Number of primes $< n^3$ — conjecture2 | open | Number Theory |  |  |
@@ -409,18 +409,18 @@ Back to [all programs](../PROGRAMS.md).
 | 387 | [`OeisA38552.isA038552_eq_largestNegFundDisc`](https://lefttosolve.com/p/OeisA38552.isA038552_eq_largestNegFundDisc) | Conjectures associated with A038552 — isA038552 eq largestNegFundDisc | open | Number Theory |  |  |
 | 388 | [`OeisA38552.largestEven_lt_largestOdd_negFundDisc`](https://lefttosolve.com/p/OeisA38552.largestEven_lt_largestOdd_negFundDisc) | Conjectures associated with A038552 — largestEven lt largestOdd negFundDisc | open | Number Theory |  |  |
 | 389 | [`OeisA38552.mod_24_of_isA038552`](https://lefttosolve.com/p/OeisA38552.mod_24_of_isA038552) | Conjectures associated with A038552 — mod 24 of isA038552 | open | Number Theory |  |  |
-| 390 | [`OeisA38552.starkHeegner_classNumberOne`](https://lefttosolve.com/p/OeisA38552.starkHeegner_classNumberOne) | Conjectures associated with A038552 — starkHeegner classNumberOne | known | Number Theory |  |  |
+| 390 | [`OeisA38552.starkHeegner_classNumberOne`](https://lefttosolve.com/p/OeisA38552.starkHeegner_classNumberOne) | Conjectures associated with A038552 — starkHeegner classNumberOne | known | Number Theory |  | yes |
 | 391 | [`OeisA38771.conjecture1`](https://lefttosolve.com/p/OeisA38771.conjecture1) | Smallest composite $c$ such that $\\textrm{primorial}(n) + c$ is prime — conjecture1 | open | Number Theory |  |  |
 | 392 | [`OeisA38771.conjecture2`](https://lefttosolve.com/p/OeisA38771.conjecture2) | Smallest composite $c$ such that $\\textrm{primorial}(n) + c$ is prime — conjecture2 | open | Number Theory |  |  |
-| 393 | [`OeisA396843.a_2`](https://lefttosolve.com/p/OeisA396843.a_2) | A compositional generating function — a 2 | warmup | Number Theory |  |  |
-| 394 | [`OeisA396843.a_3`](https://lefttosolve.com/p/OeisA396843.a_3) | A compositional generating function — a 3 | warmup | Number Theory |  |  |
-| 395 | [`OeisA396843.a_4`](https://lefttosolve.com/p/OeisA396843.a_4) | A compositional generating function — a 4 | warmup | Number Theory |  |  |
-| 396 | [`OeisA396843.a_5`](https://lefttosolve.com/p/OeisA396843.a_5) | A compositional generating function — a 5 | warmup | Number Theory |  |  |
+| 393 | [`OeisA396843.a_2`](https://lefttosolve.com/p/OeisA396843.a_2) | A compositional generating function — a 2 | warmup | Number Theory |  | yes |
+| 394 | [`OeisA396843.a_3`](https://lefttosolve.com/p/OeisA396843.a_3) | A compositional generating function — a 3 | warmup | Number Theory |  | yes |
+| 395 | [`OeisA396843.a_4`](https://lefttosolve.com/p/OeisA396843.a_4) | A compositional generating function — a 4 | warmup | Number Theory |  | yes |
+| 396 | [`OeisA396843.a_5`](https://lefttosolve.com/p/OeisA396843.a_5) | A compositional generating function — a 5 | warmup | Number Theory |  | yes |
 | 397 | [`OeisA40.conjecture`](https://lefttosolve.com/p/OeisA40.conjecture) | Conjecture from Thomas Ordowski (2023) | open | Number Theory |  |  |
 | 398 | [`OeisA401006.eventually_prime`](https://lefttosolve.com/p/OeisA401006.eventually_prime) | Decimal concatenation of a cofactor and the largest prime factor | open | Number Theory |  |  |
 | 399 | [`OeisA41.noPowerPartitionNumber`](https://lefttosolve.com/p/OeisA41.noPowerPartitionNumber) | No powers as partition numbers | open | Number Theory |  |  |
 | 400 | [`OeisA4290.conjecture`](https://lefttosolve.com/p/OeisA4290.conjecture) | Least positive multiple of $n$ in base 10 with digits 0 and 1 | open | Number Theory |  |  |
-| 401 | [`OeisA46969.conjecture1`](https://lefttosolve.com/p/OeisA46969.conjecture1) | Denominators of coefficients in Stirling's expansion for $\\log(\\Gamma(z))$ | open | Number Theory |  |  |
+| 401 | [`OeisA46969.conjecture1`](https://lefttosolve.com/p/OeisA46969.conjecture1) | Denominators of coefficients in Stirling's expansion for $\\log(\\Gamma(z))$ | open | Number Theory |  | yes |
 | 402 | [`OeisA5132.conjecture`](https://lefttosolve.com/p/OeisA5132.conjecture) | Recamán's sequence | open | Number Theory |  |  |
 | 403 | [`OeisA5153.conjecture`](https://lefttosolve.com/p/OeisA5153.conjecture) | Practical numbers | open | Number Theory |  |  |
 | 404 | [`OeisA51903.conjecture1`](https://lefttosolve.com/p/OeisA51903.conjecture1) | Maximum exponent in the prime factorization of $n$ | open | Number Theory |  |  |
@@ -429,7 +429,7 @@ Back to [all programs](../PROGRAMS.md).
 | 407 | [`OeisA53067.conjecture`](https://lefttosolve.com/p/OeisA53067.conjecture) | Concatenation of the next $n$ numbers | open | Number Theory |  |  |
 | 408 | [`OeisA55487.conjecture`](https://lefttosolve.com/p/OeisA55487.conjecture) | Least $m$ such that $\\phi(m) = n!$ | open | Number Theory |  |  |
 | 409 | [`OeisA56777.comesFromPrimeQuadruple_of_a`](https://lefttosolve.com/p/OeisA56777.comesFromPrimeQuadruple_of_a) | Divisibility of $2^n + 1$ by $n$ | open | Number Theory |  |  |
-| 410 | [`OeisA60841.conjecture1`](https://lefttosolve.com/p/OeisA60841.conjecture1) | Numerator of $1/\\det(M)$ for $M[i,j] = 1/\\operatorname{lcm}(i,j)$ | open | Linear Algebra, Number Theory |  |  |
+| 410 | [`OeisA60841.conjecture1`](https://lefttosolve.com/p/OeisA60841.conjecture1) | Numerator of $1/\\det(M)$ for $M[i,j] = 1/\\operatorname{lcm}(i,j)$ | open | Linear Algebra, Number Theory |  | yes |
 | 411 | [`OeisA63880.mod_216_of_a`](https://lefttosolve.com/p/OeisA63880.mod_216_of_a) | Conjectures associated with A063880 — mod 216 of a | open | Number Theory |  |  |
 | 412 | [`OeisA63880.unique_primitive_108`](https://lefttosolve.com/p/OeisA63880.unique_primitive_108) | Conjectures associated with A063880 — unique primitive 108 | open | Number Theory |  |  |
 | 413 | [`OeisA64313.conjecture`](https://lefttosolve.com/p/OeisA64313.conjecture) | Integer part of area of a regular polygon with $n$ sides each of length 1 | open | Geometry |  |  |
@@ -437,7 +437,7 @@ Back to [all programs](../PROGRAMS.md).
 | 415 | [`OeisA67720.prime_add_one_of_a`](https://lefttosolve.com/p/OeisA67720.prime_add_one_of_a) | Conjectures associated with A067720 | open | Number Theory |  |  |
 | 416 | [`OeisA67836.conjecture`](https://lefttosolve.com/p/OeisA67836.conjecture) | Euclid–Fortunate prime coverage | open | Number Theory |  |  |
 | 417 | [`OeisA69004.conjecture1`](https://lefttosolve.com/p/OeisA69004.conjecture1) | Number of times $n^2 + s^2$ is prime for positive integers $s < n$ | open | Number Theory |  |  |
-| 418 | [`OeisA69004.conjecture2.variants.without_upper_bound`](https://lefttosolve.com/p/OeisA69004.conjecture2.variants.without_upper_bound) | Number of times $n^2 + s^2$ is prime for positive integers $s < n$ — without upper bound | open | Number Theory |  |  |
+| 418 | [`OeisA69004.conjecture2.variants.without_upper_bound`](https://lefttosolve.com/p/OeisA69004.conjecture2.variants.without_upper_bound) | Number of times $n^2 + s^2$ is prime for positive integers $s < n$ — without upper bound | open | Number Theory |  | yes |
 | 419 | [`OeisA69191.conjecture_1`](https://lefttosolve.com/p/OeisA69191.conjecture_1) | Determinant of prime sum indicator matrix — conjecture 1 | open | Number Theory |  |  |
 | 420 | [`OeisA69191.conjecture_2`](https://lefttosolve.com/p/OeisA69191.conjecture_2) | Determinant of prime sum indicator matrix — conjecture 2 | open | Number Theory |  |  |
 | 421 | [`OeisA69922.conjecture`](https://lefttosolve.com/p/OeisA69922.conjecture) | Number of primes $p$ such that $n^n \\le p \\le n^n + n^2$ | open | Number Theory |  |  |
@@ -459,21 +459,21 @@ Back to [all programs](../PROGRAMS.md).
 | 437 | [`OeisA7918.conjecture1`](https://lefttosolve.com/p/OeisA7918.conjecture1) | Least prime $\\ge n$ — conjecture1 | open | Number Theory |  |  |
 | 438 | [`OeisA7918.conjecture2`](https://lefttosolve.com/p/OeisA7918.conjecture2) | Least prime $\\ge n$ — conjecture2 | open | Number Theory |  |  |
 | 439 | [`OeisA79727.conjecture1`](https://lefttosolve.com/p/OeisA79727.conjecture1) | $a(n) = \\sum_{k=0}^n \\binom{2k}{k}^3$ — conjecture1 | open | Number Theory |  |  |
-| 440 | [`OeisA79727.conjecture2`](https://lefttosolve.com/p/OeisA79727.conjecture2) | $a(n) = \\sum_{k=0}^n \\binom{2k}{k}^3$ — conjecture2 | open | Number Theory |  |  |
-| 441 | [`OeisA79727.conjecture3`](https://lefttosolve.com/p/OeisA79727.conjecture3) | $a(n) = \\sum_{k=0}^n \\binom{2k}{k}^3$ — conjecture3 | open | Number Theory |  |  |
-| 442 | [`OeisA79727.conjecture4`](https://lefttosolve.com/p/OeisA79727.conjecture4) | $a(n) = \\sum_{k=0}^n \\binom{2k}{k}^3$ — conjecture4 | open | Number Theory |  |  |
+| 440 | [`OeisA79727.conjecture2`](https://lefttosolve.com/p/OeisA79727.conjecture2) | $a(n) = \\sum_{k=0}^n \\binom{2k}{k}^3$ — conjecture2 | open | Number Theory |  | yes |
+| 441 | [`OeisA79727.conjecture3`](https://lefttosolve.com/p/OeisA79727.conjecture3) | $a(n) = \\sum_{k=0}^n \\binom{2k}{k}^3$ — conjecture3 | open | Number Theory |  | yes |
+| 442 | [`OeisA79727.conjecture4`](https://lefttosolve.com/p/OeisA79727.conjecture4) | $a(n) = \\sum_{k=0}^n \\binom{2k}{k}^3$ — conjecture4 | open | Number Theory |  | yes |
 | 443 | [`OeisA80101.conjecture`](https://lefttosolve.com/p/OeisA80101.conjecture) | Number of prime powers strictly between $n$-th prime and $(n+1)$-th prime | open | Number Theory |  |  |
 | 444 | [`OeisA80326.conjecture`](https://lefttosolve.com/p/OeisA80326.conjecture) | Denominator of $\\sum_{k=1}^n k^{\\mu(k)}$ | open | Number Theory |  |  |
 | 445 | [`OeisA81091.conjectureA81091`](https://lefttosolve.com/p/OeisA81091.conjectureA81091) | Conjecture (A81091) | open | Number Theory |  |  |
 | 446 | [`OeisA83753.conjecture`](https://lefttosolve.com/p/OeisA83753.conjecture) | Smallest palindrome with exactly $n$ divisors | open | Number Theory |  |  |
 | 447 | [`OeisA86766.conjecture1`](https://lefttosolve.com/p/OeisA86766.conjecture1) | Smallest $r$ such that (concatenation of $n$, $r$ times) $\\cdot 10 + 1$ is prime — conjecture1 | open | Number Theory |  |  |
-| 448 | [`OeisA86766.conjecture2`](https://lefttosolve.com/p/OeisA86766.conjecture2) | Smallest $r$ such that (concatenation of $n$, $r$ times) $\\cdot 10 + 1$ is prime — conjecture2 | open | Number Theory |  |  |
+| 448 | [`OeisA86766.conjecture2`](https://lefttosolve.com/p/OeisA86766.conjecture2) | Smallest $r$ such that (concatenation of $n$, $r$ times) $\\cdot 10 + 1$ is prime — conjecture2 | open | Number Theory |  | yes |
 | 449 | [`OeisA86766.conjecture3`](https://lefttosolve.com/p/OeisA86766.conjecture3) | Smallest $r$ such that (concatenation of $n$, $r$ times) $\\cdot 10 + 1$ is prime — conjecture3 | open | Number Theory |  |  |
 | 450 | [`OeisA87207.conjecture`](https://lefttosolve.com/p/OeisA87207.conjecture) | Binary representation of primes that divide a number, in decimal | open | Number Theory |  |  |
 | 451 | [`OeisA87455.conjecture`](https://lefttosolve.com/p/OeisA87455.conjecture) | Expansion of $(1 - x)/(1 - 2 x + 3 x^2)$ | open | Number Theory, Probability |  |  |
 | 452 | [`OeisA87571.conjecture`](https://lefttosolve.com/p/OeisA87571.conjecture) | Smallest prime formed by concatenation $n, n-1, \\dots, n-k$ | open | Number Theory |  |  |
 | 453 | [`OeisA91591.conjecture`](https://lefttosolve.com/p/OeisA91591.conjecture) | Number of pairs of twin primes between $n^2$ and $(n+1)^2$ | open | Number Theory |  |  |
-| 454 | [`OeisA92243.conjecture1`](https://lefttosolve.com/p/OeisA92243.conjecture1) | Tug of war score between prime gap increases and decreases — conjecture1 | open | Number Theory |  |  |
+| 454 | [`OeisA92243.conjecture1`](https://lefttosolve.com/p/OeisA92243.conjecture1) | Tug of war score between prime gap increases and decreases — conjecture1 | open | Number Theory |  | yes |
 | 455 | [`OeisA92243.conjecture2`](https://lefttosolve.com/p/OeisA92243.conjecture2) | Tug of war score between prime gap increases and decreases — conjecture2 | open | Number Theory |  |  |
 | 456 | [`OeisA92243.conjecture3`](https://lefttosolve.com/p/OeisA92243.conjecture3) | Tug of war score between prime gap increases and decreases — conjecture3 | open | Number Theory |  |  |
 | 457 | [`OeisA92243.conjecture4`](https://lefttosolve.com/p/OeisA92243.conjecture4) | Tug of war score between prime gap increases and decreases — conjecture4 | open | Number Theory |  |  |

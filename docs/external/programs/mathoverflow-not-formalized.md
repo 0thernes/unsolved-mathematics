@@ -14,7 +14,7 @@
 
 [Program page](https://lefttosolve.com/programs/MathOverflow%20%28not%20formalized%29) · Open questions asked by research mathematicians on MathOverflow, still without an accepted answer.
 
-Targets 35,783 · open 35,783 · solved by kind (site claim): `0` · kinds open/known/warmup/unformalized/other = 0/0/0/35783/0 · snapshot `f1bcc922a11d5418` (`2026-11-27T05:46:57Z`).
+Targets 35,783 · open 35,783 · solved by kind (site claim): `open: 16` · kinds open/known/warmup/unformalized/other = 42/0/0/35741/0 · snapshot `7cb07abf0cea37cb` (`2026-11-27T17:43:57Z`).
 
 Back to [all programs](../PROGRAMS.md).
 

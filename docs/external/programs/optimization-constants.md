@@ -14,7 +14,7 @@
 
 [Program page](https://lefttosolve.com/programs/Optimization%20Constants) · Open problems stated in research papers and books.
 
-Targets 31 · open 11 · solved by kind (site claim): `known: 6, warmup: 1` · kinds open/known/warmup/unformalized/other = 11/19/1/0/0 · snapshot `f1bcc922a11d5418` (`2026-11-27T05:46:57Z`).
+Targets 31 · open 11 · solved by kind (site claim): `open: 2, known: 8, warmup: 1` · kinds open/known/warmup/unformalized/other = 11/19/1/0/0 · snapshot `7cb07abf0cea37cb` (`2026-11-27T17:43:57Z`).
 
 Back to [all programs](../PROGRAMS.md).
 
@@ -31,18 +31,18 @@ Back to [all programs](../PROGRAMS.md).
 | 9 | [`Constant14.c14_upper_bound`](https://lefttosolve.com/p/Constant14.c14_upper_bound) | Tao's Optimization Constant 14 / Smallest $n$ for which the value of $BB(n)$ is undecidable — c14 upper bound | known | Computer Science, Logic & Foundations |  |  |
 | 10 | [`Constant14.c14_upper_bound_improved`](https://lefttosolve.com/p/Constant14.c14_upper_bound_improved) | Tao's Optimization Constant 14 / Smallest $n$ for which the value of $BB(n)$ is undecidable — c14 upper bound improved | open | Computer Science, Logic & Foundations |  |  |
 | 11 | [`Constant1a.c1a_eq`](https://lefttosolve.com/p/Constant1a.c1a_eq) | Tao's Optimization constant 1a / An autocorrelation constant related to Sidon sets — c1a eq | open | Combinatorics, Number Theory, Real Functions |  |  |
-| 12 | [`Constant1a.c1a_lower_bound`](https://lefttosolve.com/p/Constant1a.c1a_lower_bound) | Tao's Optimization constant 1a / An autocorrelation constant related to Sidon sets — c1a lower bound | known | Combinatorics, Number Theory, Real Functions |  |  |
+| 12 | [`Constant1a.c1a_lower_bound`](https://lefttosolve.com/p/Constant1a.c1a_lower_bound) | Tao's Optimization constant 1a / An autocorrelation constant related to Sidon sets — c1a lower bound | known | Combinatorics, Number Theory, Real Functions |  | yes |
 | 13 | [`Constant1a.c1a_upper_bound`](https://lefttosolve.com/p/Constant1a.c1a_upper_bound) | Tao's Optimization constant 1a / An autocorrelation constant related to Sidon sets — c1a upper bound | known | Combinatorics, Number Theory, Real Functions |  | yes |
-| 14 | [`Constant1a.mem_Ico_c1a`](https://lefttosolve.com/p/Constant1a.mem_Ico_c1a) | Tao's Optimization constant 1a / An autocorrelation constant related to Sidon sets — mem Ico c1a | open | Combinatorics, Number Theory, Real Functions |  |  |
+| 14 | [`Constant1a.mem_Ico_c1a`](https://lefttosolve.com/p/Constant1a.mem_Ico_c1a) | Tao's Optimization constant 1a / An autocorrelation constant related to Sidon sets — mem Ico c1a | open | Combinatorics, Number Theory, Real Functions |  | yes |
 | 15 | [`Constant1a.mem_Ioc_c1a`](https://lefttosolve.com/p/Constant1a.mem_Ioc_c1a) | Tao's Optimization constant 1a / An autocorrelation constant related to Sidon sets — mem Ioc c1a | open | Combinatorics, Number Theory, Real Functions |  |  |
 | 16 | [`Constant6a.c6a_eq_half`](https://lefttosolve.com/p/Constant6a.c6a_eq_half) | Tao's Optimization Constant 6a / The Union-Closed Sets Conjecture — c6a eq half | open | Combinatorics |  |  |
 | 17 | [`Constant6a.c6a_lower_bound`](https://lefttosolve.com/p/Constant6a.c6a_lower_bound) | Tao's Optimization Constant 6a / The Union-Closed Sets Conjecture — c6a lower bound | known | Combinatorics |  | yes |
 | 18 | [`Constant6a.c6a_lower_bound_first`](https://lefttosolve.com/p/Constant6a.c6a_lower_bound_first) | Tao's Optimization Constant 6a / The Union-Closed Sets Conjecture — c6a lower bound first | known | Combinatorics |  | yes |
-| 19 | [`Constant6a.c6a_lower_bound_improved`](https://lefttosolve.com/p/Constant6a.c6a_lower_bound_improved) | Tao's Optimization Constant 6a / The Union-Closed Sets Conjecture — c6a lower bound improved | open | Combinatorics |  |  |
+| 19 | [`Constant6a.c6a_lower_bound_improved`](https://lefttosolve.com/p/Constant6a.c6a_lower_bound_improved) | Tao's Optimization Constant 6a / The Union-Closed Sets Conjecture — c6a lower bound improved | open | Combinatorics |  | yes |
 | 20 | [`Constant6a.c6a_lower_bound_intermediate`](https://lefttosolve.com/p/Constant6a.c6a_lower_bound_intermediate) | Tao's Optimization Constant 6a / The Union-Closed Sets Conjecture — c6a lower bound intermediate | known | Combinatorics |  | yes |
 | 21 | [`Constant6a.c6a_upper_bound`](https://lefttosolve.com/p/Constant6a.c6a_upper_bound) | Tao's Optimization Constant 6a / The Union-Closed Sets Conjecture — c6a upper bound | known | Combinatorics |  | yes |
 | 22 | [`Constant6a.c6a_upper_bound_improved`](https://lefttosolve.com/p/Constant6a.c6a_upper_bound_improved) | Tao's Optimization Constant 6a / The Union-Closed Sets Conjecture — c6a upper bound improved | open | Combinatorics |  |  |
-| 23 | [`Constant7a.c7a_le_42`](https://lefttosolve.com/p/Constant7a.c7a_le_42) | Tao's Optimization Constant 7a / The Irrationality Measure of $\\pi$ — c7a le 42 | known | Number Theory |  |  |
+| 23 | [`Constant7a.c7a_le_42`](https://lefttosolve.com/p/Constant7a.c7a_le_42) | Tao's Optimization Constant 7a / The Irrationality Measure of $\\pi$ — c7a le 42 | known | Number Theory |  | yes |
 | 24 | [`Constant7a.c7a_lt_14_797075`](https://lefttosolve.com/p/Constant7a.c7a_lt_14_797075) | Tao's Optimization Constant 7a / The Irrationality Measure of $\\pi$ — c7a lt 14 797075 | known | Number Theory |  |  |
 | 25 | [`Constant7a.c7a_upper_bound`](https://lefttosolve.com/p/Constant7a.c7a_upper_bound) | Tao's Optimization Constant 7a / The Irrationality Measure of $\\pi$ — c7a upper bound | known | Number Theory |  |  |
 | 26 | [`Constant7a.irrationalityExponent_of_algebraic`](https://lefttosolve.com/p/Constant7a.irrationalityExponent_of_algebraic) | Tao's Optimization Constant 7a / The Irrationality Measure of $\\pi$ — irrationalityExponent of algebraic | known | Number Theory |  | yes |

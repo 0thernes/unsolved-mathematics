@@ -14,15 +14,15 @@
 
 [Program page](https://lefttosolve.com/programs/Hilbert%27s%20Problems) · What remains open of Hilbert's 1900 list.
 
-Targets 8 · open 2 · solved by kind (site claim): `0` · kinds open/known/warmup/unformalized/other = 2/5/1/0/0 · snapshot `f1bcc922a11d5418` (`2026-11-27T05:46:57Z`).
+Targets 8 · open 2 · solved by kind (site claim): `known: 2, warmup: 1` · kinds open/known/warmup/unformalized/other = 2/5/1/0/0 · snapshot `7cb07abf0cea37cb` (`2026-11-27T17:43:57Z`).
 
 Back to [all programs](../PROGRAMS.md).
 
 | # | Item id | Title | Kind | Fields | Prize | Site-solved flag |
 |---:|---|---|---|---|---|---|
-| 1 | [`Hilbert17.f_not_sum_of_squares`](https://lefttosolve.com/p/Hilbert17.f_not_sum_of_squares) | Hilbert's 17th problem — f not sum of squares | warmup | Field Theory |  |  |
-| 2 | [`Hilbert17.hilbert_17th_problem`](https://lefttosolve.com/p/Hilbert17.hilbert_17th_problem) | Hilbert's 17th problem — hilbert 17th problem | known | Field Theory |  |  |
-| 3 | [`Hilbert17.hilbert_17th_problem_poly`](https://lefttosolve.com/p/Hilbert17.hilbert_17th_problem_poly) | Hilbert's 17th problem — hilbert 17th problem poly | known | Field Theory |  |  |
+| 1 | [`Hilbert17.f_not_sum_of_squares`](https://lefttosolve.com/p/Hilbert17.f_not_sum_of_squares) | Hilbert's 17th problem — f not sum of squares | warmup | Field Theory |  | yes |
+| 2 | [`Hilbert17.hilbert_17th_problem`](https://lefttosolve.com/p/Hilbert17.hilbert_17th_problem) | Hilbert's 17th problem — hilbert 17th problem | known | Field Theory |  | yes |
+| 3 | [`Hilbert17.hilbert_17th_problem_poly`](https://lefttosolve.com/p/Hilbert17.hilbert_17th_problem_poly) | Hilbert's 17th problem — hilbert 17th problem poly | known | Field Theory |  | yes |
 | 4 | [`Hilbert5.hilbert_fifth_problem`](https://lefttosolve.com/p/Hilbert5.hilbert_fifth_problem) | Hilbert's fifth problem | known | Manifolds, Topological Groups |  |  |
 | 5 | [`Hilbert5.hilbert_smith_conjecture`](https://lefttosolve.com/p/Hilbert5.hilbert_smith_conjecture) | Hilbert–Smith conjecture | open | Global Analysis, Manifolds, Topological Groups |  |  |
 | 6 | [`Hilbert5.hilbert_smith_conjecture.variants.dimension_three`](https://lefttosolve.com/p/Hilbert5.hilbert_smith_conjecture.variants.dimension_three) | Pardon's theorem | known | Global Analysis, Manifolds, Topological Groups |  |  |

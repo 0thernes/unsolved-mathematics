@@ -14,12 +14,12 @@
 
 [Program page](https://lefttosolve.com/programs/Litt%27s%20Problems) · Open problems stated in research papers and books.
 
-Targets 3 · open 2 · solved by kind (site claim): `0` · kinds open/known/warmup/unformalized/other = 2/1/0/0/0 · snapshot `f1bcc922a11d5418` (`2026-11-27T05:46:57Z`).
+Targets 3 · open 2 · solved by kind (site claim): `known: 1` · kinds open/known/warmup/unformalized/other = 2/1/0/0/0 · snapshot `7cb07abf0cea37cb` (`2026-11-27T17:43:57Z`).
 
 Back to [all programs](../PROGRAMS.md).
 
 | # | Item id | Title | Kind | Fields | Prize | Site-solved flag |
 |---:|---|---|---|---|---|---|
-| 1 | [`LamLitt.lam_litt.variants.eisenstein`](https://lefttosolve.com/p/LamLitt.lam_litt.variants.eisenstein) | Lam--Litt conjecture — eisenstein | known | Commutative Algebra, Field Theory |  |  |
+| 1 | [`LamLitt.lam_litt.variants.eisenstein`](https://lefttosolve.com/p/LamLitt.lam_litt.variants.eisenstein) | Lam--Litt conjecture — eisenstein | known | Commutative Algebra, Field Theory |  | yes |
 | 2 | [`LamLitt.lam_litt.variants.integrality_implies_algebraicity`](https://lefttosolve.com/p/LamLitt.lam_litt.variants.integrality_implies_algebraicity) | Lam--Litt conjecture — integrality implies algebraicity | open | Algebraic Geometry, Number Theory |  |  |
 | 3 | [`LamLitt.lam_litt.variants.omega_integrality_implies_algebraicity`](https://lefttosolve.com/p/LamLitt.lam_litt.variants.omega_integrality_implies_algebraicity) | Lam--Litt conjecture — omega integrality implies algebraicity | open | Algebraic Geometry, Number Theory |  |  |
