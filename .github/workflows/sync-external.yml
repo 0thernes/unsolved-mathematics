@@ -1,4 +1,4 @@
-# Daily mirror of ALL 25 lefttosolve.com research programs (~59k+ targets) into data/external/ + docs/external/.
+# Daily mirror of ALL lefttosolve.com research programs (currently 26 programs / 62k+ targets) into data/external/ + docs/external/.
 # Commits straight to main only when the upstream data actually changed (Build Standard v1.2.0 R1:
 # no PRs, no branches). A failed completeness/consistency/A24 guard writes nothing and turns this run red.
 name: Daily External Program Sync (lefttosolve.com)
@@ -18,7 +18,7 @@ concurrency:
 
 jobs:
   sync:
-    name: Fetch, verify & commit all 25 external program lists (~59k+ items)
+    name: Fetch, verify & commit all external program lists (lefttosolve.com)
     runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:
@@ -34,7 +34,7 @@ jobs:
       - name: Install pinned dependencies
         run: python -m pip install -r requirements-lock.txt
 
-      - name: Live full-catalogue fetch (all 25 programs; fail-closed on inconsistency)
+      - name: Live full-catalogue fetch (all programs; fail-closed on inconsistency)
         run: python scripts/sync_external_programs.py
 
       - name: Offline integrity, shard size (<5 MB A24) & view re-check
@@ -57,7 +57,7 @@ jobs:
           fi
           echo "changed=$changed" >> "$GITHUB_OUTPUT"
           {
-            echo "### External program sync (all 25 programs)"
+            echo "### External program sync (all lefttosolve.com programs)"
             python - <<'PY'
           import json
           s = json.load(open("data/external/lefttosolve/snapshot.json", encoding="utf-8"))

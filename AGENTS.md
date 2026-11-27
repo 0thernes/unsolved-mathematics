@@ -8,13 +8,13 @@ point here. Edit this file, never the pointers.
 ## Project
 
 - **Name:** The Unsolved Mathematics Atlas (`0thernes/unsolved-mathematics`)
-- **Purpose:** Reproducible, ranked, research-grade atlas of 120 open mathematical problems across 38 fields (plus a daily sharded mirror of all 25 Left to Solve programs / 59,396 targets), paired with a standalone zero-Mathlib multi-kernel Lean 4.35.0 formal verification core (`lean/`), primary-source citation & Crossref/DataCite retraction auditing (`537` API-verified / `287` DOIs, `0` retracted), a deterministic BM25/dense RAG corpus, an interactive proof blueprint (`_site/blueprint.html`), unified offline search (`scripts/search_all_problems.py`), and a compiled AMS-LaTeX technical white paper (`paper/`).
+- **Purpose:** Reproducible, ranked, research-grade atlas of 120 open mathematical problems across 38 fields (plus a daily sharded mirror of all 26 Left to Solve programs / 62,790 targets), paired with a standalone zero-Mathlib multi-kernel Lean 4.35.0 formal verification core (`lean/`), primary-source citation & Crossref/DataCite retraction auditing (`537` API-verified / `287` DOIs, `0` retracted), a deterministic BM25/dense RAG corpus, an interactive proof blueprint (`_site/blueprint.html`), unified offline search (`scripts/search_all_problems.py`), and a compiled AMS-LaTeX technical white paper (`paper/`).
 - **Owner:** Alexander S. Donahue (`@0thernes`, ORCID `0009-0006-8168-9648`, independent researcher — do NOT use `0thernes LLC` until an entity is legally formed)
 - **Manifest:** `repo.yaml` (Build Standard for LLMs `v1.2.0`)
 - **Version:** `VERSION` (single source of truth; verified equal to `data/problems.yaml`, `CITATION.cff`, `pyproject.toml`, `lean/lakefile.toml`, `lean/formalization.yaml`, `ro-crate-metadata.json`, and `croissant.json`)
 - **Stack:** Python 3.11+ (`PyYAML`, `jsonschema`, `pytest`, `hypothesis`, `ruff`, `mypy`) + Lean 4.35.0 (`lean/`, zero Mathlib, 6-kernel `lake check --paranoid` + `lake comparator --paranoid`) + AMS-LaTeX (`tectonic`)
 - **Layout:**
-  - `data/` — canonical registry (`problems.yaml`), generated `problems.json`, `dossier-status.json`, `citation-verification-log.json`, `retraction-audit.json`, `external/lefttosolve/` (daily sharded mirror of all 25 programs / 59,396 targets, CC BY-SA carved out), `MANIFEST.sha256` (+ DigiCert RFC 3161 `.tsr` & Bitcoin OpenTimestamps `.ots` proofs)
+  - `data/` — canonical registry (`problems.yaml`), generated `problems.json`, `dossier-status.json`, `citation-verification-log.json`, `retraction-audit.json`, `external/lefttosolve/` (daily sharded mirror of all 26 programs / 62,790 targets, CC BY-SA carved out), `MANIFEST.sha256` (+ DigiCert RFC 3161 `.tsr` & Bitcoin OpenTimestamps `.ots` proofs)
   - `problems/<slug>/` — 120 self-contained problem dossiers (8 markdown files + `metadata.json` + `rag/`)
   - `lean/` — standalone Lean 4.35.0 formal core (`autoImplicit = false`, `FormalAtlas/`, `Challenge.lean`, `Solution.lean`, `NonVacuity.lean`, `Adversarial.lean`, `VerifyAxioms.lean`, `comparator.json`, `formalization.yaml`, `STATEMENT_FIDELITY.md`, `six_kernel_audit.txt`)
   - `paper/` — AMS-LaTeX white paper (`Donahue_2026_unsolved_mathematics_atlas.tex`, `references.bib`, compiled PDF, clean-room-verified `arxiv_submission.tar.gz`)
@@ -35,7 +35,7 @@ Use `justfile` (or `Makefile` / `build.ps1`). Every command works from a clean c
 - `just build` — regenerate `data/problems.json`, `RANKING.md`, `README.md` table, and all 120 dossier headers
 - `just corpus` — rebuild deterministic `rag/corpus.jsonl` with globally unique chunk IDs
 - `just check` — run `generate.py --check`, `validate.py`, `check_dossiers.py --strict`, `check_papers.py`, `proof_claim_sweep.py`, `check_retractions.py --check`, `check_readme_axioms.py`, `sync_external_programs.py --check`, `build_data_manifest.py --check`, `timestamp_manifest.py --check`
-- `just search "<query>"` — offline search across all 120 curated dossiers and all 59,396 mirrored Left to Solve items
+- `just search "<query>"` — offline search across all 120 curated dossiers and all 62,790 mirrored Left to Solve items
 - `just test` — run full pytest + Hypothesis + regression + differential + metamorphic suite
 - `just formal` — build Lean 4.35.0 core (`lean/`), run `VerifyAxioms.lean`, `lake check --paranoid`, `lake comparator --paranoid`, `scripts/test_lean_negative.py`
 - `just lint` — report-only `ruff` and `mypy` checks

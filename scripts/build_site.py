@@ -292,7 +292,7 @@ def _fmt_sbk(sbk: dict[str, int]) -> str:
 
 
 def _build_programs_html(version: str) -> str | None:
-    """External research-program mirror page (lefttosolve.com, all 25 programs), if a snapshot is committed."""
+    """External research-program mirror page (lefttosolve.com, all live programs), if a snapshot is committed."""
     snap_path = ROOT / "data" / "external" / "lefttosolve" / "snapshot.json"
     cw_path = ROOT / "data" / "external" / "lefttosolve" / "crosswalk.json"
     if not snap_path.exists() or not cw_path.exists():

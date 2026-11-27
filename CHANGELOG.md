@@ -5,6 +5,13 @@ Format follows [Keep a Changelog](https://keepachangelog.com/); versions follow
 [SemVer](https://semver.org/) on the *structure/schema* (content grows
 continuously between structural versions).
 
+## [0.8.3] — 2026-11-27
+
+### Added & Synchronized (Live 26-Program Left to Solve Mirror Integration · Epistemic Firewall Live Verification)
+- **Live 26-Program Left to Solve Integration (`510dc64` merged cleanly with immutable `v0.8.2` commit `15530ff`):** Integrated the daily automated Left to Solve mirror expansion from **25 → 26 programs** (`59,396 → 62,790` targets across **27 `<4 MiB` JSONL shards**, adding `arXiv Abstracts (not formalized)` with `3,368` items, expanding the Atlas crosswalk from **`112/120 → 114/120`**).
+- **Live Epistemic Firewall (`C-14`) Demonstration:** When `lefttosolve.com` flagged `326` `open` items as agent-solved (`solved_by_kind=(open: 326, known: 1,322, warmup: 161)`), raising **4 unverified third-party agent-claim review signals** in `docs/external/CROSSWALK.md` (`seymour-second-neighborhood-conjecture`, `kothe-conjecture`, `brennan-conjecture`, `beck-fiala-conjecture`), the Atlas firewall automatically quarantined all 4 as human-review signals while altering **0/120** Atlas statuses in `data/problems.yaml`.
+- **Dynamic Program-Count Hygiene & `v0.8.3` White Paper / Manifest Sync:** Replaced hardcoded `"25 programs"` comments in `scripts/build_site.py`, `scripts/sync_external_programs.py`, and `.github/workflows/sync-external.yml` with dynamic wording; synchronized all 9 version-parity files, `README.md`, `CLAIMS.md`, `LIMITATIONS.md`, `AGENTS.md`, `REPLICATION.md`, `ROADMAP.md`, `HARDENING_INDEX.md`, `paper/Donahue_2026_unsolved_mathematics_atlas.{tex,pdf}`, clean-room `paper/arxiv_submission.tar.gz`, 42-file `data/MANIFEST.sha256`, and fresh DigiCert RFC 3161 (`.tsr`) + Bitcoin OpenTimestamps (`.ots`) proofs.
+
 ## [0.8.2] — 2026-11-27
 
 ### Fixed & Hardened (Three-Cycle Ten-Subsystem `/goal` Forensic Audit · Build Standard `v1.2.0` & Playbook `v1.3`)

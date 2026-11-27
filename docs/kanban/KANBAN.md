@@ -1,7 +1,7 @@
-# 📋 Research Kanban — The Unsolved Mathematics Atlas (`v0.8.2`)
+# 📋 Research Kanban — The Unsolved Mathematics Atlas (`v0.8.3`)
 
 > Operational board tracking the atlas's verification, formalization, and curation workstreams.
-> Updated `2026-11-27` for release `v0.8.2`.
+> Updated `2026-11-27` for release `v0.8.3`.
 
 **Legend:** 🟥 blocked · 🟧 needs-verification · 🟨 in-progress · 🟩 done · 🟦 backlog
 
@@ -16,9 +16,9 @@
 ## 🟧 To Verify (Remaining Open Epistemic Gaps)
 
 > Primary-source API verification status as of `2026-11-27` (`data/citation-verification-log.json`, `data/retraction-audit.json`):
-> **537 live API-verified identifiers** (arXiv + Crossref, strict 1-to-1 bijection across all 120 `papers.md`, 0 duplicate/bare IDs), **287 verified DOIs audited for retractions (0 retracted, 3 errata)**, **109 invalid/hallucinated identifiers historically purged** (downgraded to `—` / `needs-verification`), **~2,140 pre-DOI historical rows** still awaiting manual bibliographic verification. See [`docs/indexes/verification.md`](../indexes/verification.md).
+> **537 live API-verified identifiers** (arXiv + Crossref, strict 1-to-1 bijection across all 120 `papers.md`, 0 duplicate/bare IDs), **287 verified DOIs audited for retractions (0 retracted, 3 errata)**, **109 invalid/hallucinated identifiers historically purged** (downgraded to `—` / `needs-verification`), **2,245 non-verified rows (`2,782` total)** still awaiting manual bibliographic verification. See [`docs/indexes/verification.md`](../indexes/verification.md).
 
-- [ ] Manually research & add verified DOIs/arXiv IDs for the 109 stripped rows and ~2,140 pre-DOI historical citations (EPIC-2).
+- [ ] Manually research & add verified DOIs/arXiv IDs for the 109 stripped rows and remaining 2,245 non-verified citations (EPIC-2).
 - [ ] Run remaining 3 of 4 independent AI model reviews (Gemini, GPT, Grok) across the initial 106 meta-analyses and all 4 panels on the 14 `v0.8.0` meta-analyses, logging verifiable review records.
 - [ ] Recruit independent human mathematician peer reviews across priority dossiers (currently `0/120` human-reviewed; see `SUBMISSIONS.md`).
 
@@ -26,9 +26,9 @@
 
 - [ ] Quarterly mathematical frontier tracking (monitoring late-2026 Lean-only GRH / Euler–NS claims until peer review settles; tracking Erdős Unit Distance `arXiv:2605.20695` peer review).
 
-## 🟩 Done (`v0.1.0` – `v0.8.2`)
+## 🟩 Done (`v0.1.0` – `v0.8.3`)
 
-- [x] **Full 59,396-Item Daily Mirror, `106 → 120` Curated Core Expansion & 3-Cycle `/goal` Forensic Hardening (`v0.8.0`–`v0.8.2`):** Expanded daily Left to Solve mirror to all 25 programs / 59,396 targets (`<=4 MiB` shards, CC BY-SA carve-out, `solved_by_kind` disaggregation confirming `open: 0`, unified offline search CLI `scripts/search_all_problems.py`); added 14 flagship 100%-open dossiers + meta-analyses (`120` curated problems total, `112/120` crosswalk); achieved strict 1-to-1 `verified` bijection (`537` verified / `646` audited, `287` DOIs retraction-checked with `0` retractions); upgraded `scripts/check_dossiers.py --strict` to enforce 7-col `papers.md`, 5-col `mathematicians.md`, zero duplicate/bare IDs, citation-log parity, and balanced `$` math; enabled `mypy --check-untyped-defs` (`0` errors across 20/20 modules); validated `repo.yaml` with `0` schema errors; switched `.github/workflows/sync-external.yml` off bot email; synchronized Cross-Atlas audit with Mega-Atlas `v2.10.0` (`0/2,000` retired); added `HARDENING_INDEX.md` (`v0.8.0`–`v0.8.2`).
+- [x] **Full 62,790-Item Daily Mirror (26 Programs), `106 → 120` Curated Core Expansion & 3-Cycle `/goal` Forensic Hardening (`v0.8.0`–`v0.8.3`):** Expanded daily Left to Solve mirror to all 26 live programs / 62,790 targets (`27` `<=4 MiB` shards, CC BY-SA carve-out, `solved_by_kind` disaggregation quarantining 4 unverified third-party agent-claim review signals with 0 Atlas statuses altered, unified offline search CLI `scripts/search_all_problems.py`); added 14 flagship 100%-open dossiers + meta-analyses (`120` curated problems total, `114/120` crosswalk); achieved strict 1-to-1 `verified` bijection (`537` verified / `646` audited, `287` DOIs retraction-checked with `0` retractions); upgraded `scripts/check_dossiers.py --strict` to enforce 7-col `papers.md`, 5-col `mathematicians.md`, zero duplicate/bare IDs, citation-log parity, and balanced `$` math; enabled `mypy --check-untyped-defs` (`0` errors across 20/20 modules); validated `repo.yaml` with `0` schema errors; switched `.github/workflows/sync-external.yml` off bot email; synchronized Cross-Atlas audit with Mega-Atlas `v2.10.0` (`0/2,000` retired); added `HARDENING_INDEX.md`, 95 passing tests, and 10/10 mutants (`v0.8.0`–`v0.8.3`).
 
 - [x] **3-Cycle `/goal` Forensic Hardening & Landmark Formal Core Expansion (`v0.7.0`):** Expanded `lean/` from `53 → 66` headline theorems (`81 → 102` audited declarations, 14 zero-axiom, 6/6 independent kernels PASS) adding the **Complete Euclid–Euler Biconditional Theorem**, **Euler's 1750 Mersenne Prime Divisor Congruence ($2p \mid q-1$)**, **Collatz Fine–Wilf Odd-Unit-Lock Spine Valuation Ceiling**, **2-adic cylinder & valuation isometries**, **exhaustive $d \le 7$ & unconditional 1-/2-odd-step positive-cycle exclusions (all $d \ge 1$)**, and **catalytic reversible cylinder evaluation**; fixed `B023` closure bug in Collatz experiments, all 13 `mypy` errors across 6 scripts (18/18 files clean), `Bochner–Riesel` → `Bochner–Riesz`, stale `2025` RH CSS worked example, and `build.ps1` `-LiteralPath`; added 10-class `.github/ISSUE_TEMPLATE/finding.yml`, `docs/LITERATURE_AND_EXPORT_CONTROL.md`, extended Playbook v1.3 forbidden-token/manifest/symlink checks, Node 24 `@v7/@v5/@v4` CI with SHA-256-pinned `gitleaks`/`osv-scanner`, 1-to-1 numbered Claims Ledger table + 7 new live-verified BibTeX refs in the 0-warning white paper, 84 passing tests, and the daily Left to Solve external-program mirror (`v0.7.0`).
 

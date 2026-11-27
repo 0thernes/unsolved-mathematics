@@ -5,7 +5,7 @@
 ### *An audited, ranked, research-grade dossier & Lean 4.35.0 formal core of humanity's open mathematical problems.*
 
 [![CI](https://github.com/0thernes/unsolved-mathematics/actions/workflows/ci.yml/badge.svg)](https://github.com/0thernes/unsolved-mathematics/actions/workflows/ci.yml)
-[![Version](https://img.shields.io/badge/version-0.8.2-blue.svg)](VERSION)
+[![Version](https://img.shields.io/badge/version-0.8.3-blue.svg)](VERSION)
 [![Lean](https://img.shields.io/badge/Lean-4.35.0%20(6--kernel%20·%2066%20thms%20·%208%20domains)-7c3aed.svg)](lean/STATEMENT_FIDELITY.md)
 [![Citations](https://img.shields.io/badge/API--verified%20citations-537%20(0%20retracted)-10b981.svg)](data/citation-verification-log.json)
 [![Paper](https://img.shields.io/badge/White%20Paper-AMS--LaTeX%20PDF-b45309.svg)](paper/Donahue_2026_unsolved_mathematics_atlas.pdf)
@@ -15,10 +15,10 @@
 
 **Each problem gets its own world — origin, the mind that posed it, every serious attack on it,
 key papers with primary-source verification & retraction flags, key mathematicians, a deterministic RAG corpus,
-FAIR RO-Crate 1.1 & Croissant 1.0 metadata, dual RFC 3161 + Bitcoin OpenTimestamps manifest proofs, a daily full mirror of all 25 Left to Solve programs (59,396 targets), a compiled AMS-LaTeX white paper, and a standalone
+FAIR RO-Crate 1.1 & Croissant 1.0 metadata, dual RFC 3161 + Bitcoin OpenTimestamps manifest proofs, a daily full mirror of all 26 Left to Solve programs (62,790 targets), a compiled AMS-LaTeX white paper, and a standalone
 eight-domain, six-kernel Lean 4.35.0 formal verification core (`autoImplicit = false`).**
 
-`v0.8.2` · branch `main` · **120 curated problems** (+ **59,396** daily-mirrored Left to Solve items across all 25 programs) · **66 Lean 4 theorems + 36 witnesses/refutations across 8 domains (102 decls; 0 `sorry` in proof modules, while `lean/Challenge.lean` holds the 66 `sorry`-stated comparator specifications by design; 6 kernels + live negative rejection)** · author **Alexander S. Donahue** ([ORCID 0009-0006-8168-9648](https://orcid.org/0009-0006-8168-9648)) · Status: `active`
+`v0.8.3` · branch `main` · **120 curated problems** (+ **62,790** daily-mirrored Left to Solve items across all 26 programs) · **66 Lean 4 theorems + 36 witnesses/refutations across 8 domains (102 decls; 0 `sorry` in proof modules, while `lean/Challenge.lean` holds the 66 `sorry`-stated comparator specifications by design; 6 kernels + live negative rejection)** · author **Alexander S. Donahue** ([ORCID 0009-0006-8168-9648](https://orcid.org/0009-0006-8168-9648)) · Status: `active`
 
 [Live Web Atlas & Blueprint](https://0thernes.github.io/unsolved-mathematics/) · [Master Ranking](RANKING.md) · [White Paper PDF](paper/Donahue_2026_unsolved_mathematics_atlas.pdf) · [Formal Core (`lean/`)](lean/STATEMENT_FIDELITY.md) · [Cross-Atlas Audit (2,000)](docs/CROSS_ATLAS_AUDIT_2026-11-25.md) · [Claims Ledger](CLAIMS.md) · [Limitations](LIMITATIONS.md) · [Errata](ERRATA.md) · [Hardening Index](HARDENING_INDEX.md) · [Replication](REPLICATION.md) · [Indexes](docs/indexes/)
 
@@ -32,8 +32,8 @@ The great open problems of mathematics are scattered across textbooks, survey
 papers, MathOverflow threads, Wikipedia, and private notes. **This atlas gathers
 120 of them into one rigorously organized, version-controlled, machine-readable
 corpus** — ranked from the hardest and oldest down to those closest to a
-resolution — paired with a daily full metadata mirror of **all 25 Left to Solve
-research programs (59,396 targets)**, a standalone Lean 4.35.0 formal core, and
+resolution — paired with a daily full metadata mirror of **all 26 Left to Solve
+research programs (62,790 targets)**, a standalone Lean 4.35.0 formal core, and
 automated epistemic integrity gates.
 
 For **every** problem you get a self-contained 7-section dossier:
@@ -46,7 +46,7 @@ For **every** problem you get a self-contained 7-section dossier:
 - 🧠 **`mathematicians.md`** — the top minds who shaped the problem
 - 🎯 **`status.md`** — the live mathematical frontier (updated through November 2026)
 - 🤖 **`rag/`** — deterministic chunked corpus (`3,985` unique chunks across `822,714` tokens) with zero-dependency BM25 retrieval
-- 🌐 **`data/external/` & `scripts/search_all_problems.py`** — daily full metadata mirror of **all 25 Left to Solve programs (59,396 targets, sharded `< 4 MB`, zero excerpts, carved out of CC BY 4.0)** with `solved_by_kind` disaggregation and unified offline search across both the 120 curated dossiers and all 59,396 mirrored items
+- 🌐 **`data/external/` & `scripts/search_all_problems.py`** — daily full metadata mirror of **all 26 Left to Solve programs (62,790 targets across 27 `< 4 MB` shards, zero excerpts, carved out of CC BY 4.0)** with `solved_by_kind` disaggregation (review signals only; 0 Atlas statuses auto-changed) and unified offline search across both the 120 curated dossiers and all 62,790 mirrored items
 - 🔬 **`lean/`** — standalone zero-Mathlib Lean 4.35.0 formal core (`autoImplicit = false`) proving **66 structural theorems** + **16 non-vacuity witnesses** + **20 adversarial false-variant refutations** (**102 audited declarations**, 14 zero-axiom) across **8 open-problem domains**: Collatz (28 thms, incl. Fine–Wilf Odd-Unit-Lock spine valuation ceiling, 2-adic isometry, exhaustive $d \le 7$ & unconditional 1-/2-odd-step positive-cycle exclusion, catalytic cylinder), Erdős–Straus (5), **constructive Lonely Runner through $n = 3$** (8, classical 4-runner case), Brocard $n \le 20$ (7), Primes/Twin Primes (4), Goldbach $4 \le n \le 100$ (3), **Complete Euclid–Euler biconditional even perfect number theorem (`divSum_eq_divSumLin` proved $\forall n$) & Euler's 1750 Mersenne prime divisor congruence $2p \mid (q-1)$** (7), and **exact Ramsey $R(3,3)=6$ and $R(3,4)=9$** (4) (0 `sorry`, 0 `admit`, 0 `native_decide` in the proof modules; `lean/Challenge.lean` is the `sorry`-stated comparator specification; standard axioms only, 6 independent kernels + live negative kernel rejection). These are classical, elementary, or bounded structural results; none settles an open conjecture.
 - 📄 **`paper/`** — publication-grade AMS-LaTeX white paper ([PDF](paper/Donahue_2026_unsolved_mathematics_atlas.pdf) + clean-room-verified `arxiv_submission.tar.gz`)
 - 🌐 **FAIR, Timestamps & Interactive Blueprint** — [RO-Crate 1.1](ro-crate-metadata.json), [MLCommons Croissant 1.0](croissant.json), dual DigiCert RFC 3161 (`.tsr`) + Bitcoin OpenTimestamps (`.ots`) proofs over `data/MANIFEST.sha256`, and live GitHub Pages [Atlas Explorer & 8-Domain Proof Blueprint](https://0thernes.github.io/unsolved-mathematics/blueprint.html)
@@ -78,7 +78,7 @@ See [`REPLICATION.md`](REPLICATION.md) for full clean-clone replication commands
 ## Usage & Examples
 
 ```bash
-# Query top problems, filter by field/status, search all 59,396+ mirrored Left to Solve items, or run BM25 retrieval
+# Query top problems, filter by field/status, search all 62,790 mirrored Left to Solve items, or run BM25 retrieval
 python examples/query_atlas.py --top 10
 python examples/query_atlas.py --field number-theory --status open
 python examples/query_atlas.py --search "positivity localization collatz"
@@ -245,7 +245,7 @@ by `scripts/build_indexes.py`):
 - 👤 [Originators index](docs/indexes/originators.md) — every mathematician → the problems they posed
 - ✅ [Verification dashboard](docs/indexes/verification.md) — provenance of all 2,782 citations (537 API-verified in exact 1-to-1 log bijection)
 - 📖 [Glossary](docs/glossary.md) — the recurring concepts that thread the dossiers
-- 🌐 [External research programs](docs/external/PROGRAMS.md) — daily full mirror of all 25 [Left to Solve](https://lefttosolve.com/programs) programs (59,396 targets across Erdős, OEIS, MathOverflow, Wikipedia, Millennium, Green's 100, Kourovka, …; metadata only, `< 4 MB` shards, carved out of CC BY 4.0) with an [Atlas crosswalk](docs/external/CROSSWALK.md) and unified offline search (`scripts/search_all_problems.py`); third-party data, review signals only, never auto-changes an Atlas status
+- 🌐 [External research programs](docs/external/PROGRAMS.md) — daily full mirror of all 26 [Left to Solve](https://lefttosolve.com/programs) programs (62,790 targets across Erdős, OEIS, MathOverflow, arXiv Abstracts, Wikipedia, Millennium, Green's 100, Kourovka, …; metadata only, 27 `< 4 MB` shards, carved out of CC BY 4.0) with a `114/120` [Atlas crosswalk](docs/external/CROSSWALK.md) and unified offline search (`scripts/search_all_problems.py`); third-party data, review signals only, never auto-changes an Atlas status
 
 ## Repository map
 
@@ -279,7 +279,7 @@ unsolved-mathematics/
 
 ## Formal Verification Core (`lean/`)
 
-`v0.8.2` ships the **zero-Mathlib, pure Lean 4.35.0** formal package (`autoImplicit = false`, commit `eb6cafb7`) verifying **66 headline theorems, 16 concrete non-vacuity witnesses, and 20 explicit adversarial false-variant refutations** (**102 audited declarations**, 14 requiring zero axioms) across **eight** canonical open-problem domains:
+`v0.8.3` ships the **zero-Mathlib, pure Lean 4.35.0** formal package (`autoImplicit = false`, commit `eb6cafb7`) verifying **66 headline theorems, 16 concrete non-vacuity witnesses, and 20 explicit adversarial false-variant refutations** (**102 audited declarations**, 14 requiring zero axioms) across **eight** canonical open-problem domains:
 
 - **Collatz Conjecture (28 theorems):** affine cylinder law, exact intercept law, Terras parity-word bijection, descent certificate soundness, no finite subcritical cover, spine ladder identity, unconditional **Positivity Localization** ($\rho_w \le -1$), the **$3n-1$ sibling comparison** (`thm_collatz_epsilon_invariance_barrier`: the $3n-1$ map shares the Terras bijection and has positive cycles at `5` and `17`; the inference that arguments blind to the sign of $\varepsilon$ cannot settle $3n+1$ is a heuristic, not a formalized meta-theorem), Böhm–Sontacchi exact cycle equation, parity-word cocycle law, negative cycles of true $3n+1$ (`-5`, `-17`), zero/intercept/length invariants, positive-cycle subcriticality ($3^o < 2^d$), **unconditional 1- & 2-odd-step positive-cycle exclusion for ALL $d \ge 1$**, **2-adic cylinder isometry**, **periodic spine congruence**, **Odd-Unit-Lock exact periodic-echo valuation isometry** ($v_2(\rho_w - \rho_v) = \operatorname{lcp}(w^\infty, v^\infty)$), **unconditional Fine–Wilf spine valuation ceiling** ($v_2(\rho_w - \rho_v) < |w| + |v| - \gcd(|w|,|v|)$), **exhaustive $1 \le d \le 7$ positive-cycle classification & odd-period exclusion**, and **zero-workspace catalytic reversible cylinder evaluation**.
 - **Erdős–Straus Conjecture (5 theorems):** Mordell mod-840 covering (`834/840 = 99.286%`), multiplicative closure (prime reduction), cyclic symmetry, base range $2 \le n \le 30$, and all 6 smallest exceptional squares $\{121, 169, 289, 361, 529, 841\}$.
@@ -417,7 +417,7 @@ See [`PHILOSOPHY.md`](PHILOSOPHY.md), [`docs/methodology/SOURCING.md`](docs/meth
 
 ## Maintenance Status
 
-**Status: active** (`v0.8.2`, updated `2026-11-27`). Planned milestones live in [`ROADMAP.md`](ROADMAP.md), operational tasks in [`docs/kanban/KANBAN.md`](docs/kanban/KANBAN.md), errata in [`ERRATA.md`](ERRATA.md), hardening index in [`HARDENING_INDEX.md`](HARDENING_INDEX.md), literature & export-control audit in [`docs/LITERATURE_AND_EXPORT_CONTROL.md`](docs/LITERATURE_AND_EXPORT_CONTROL.md), and verification history in [`docs/run-log.md`](docs/run-log.md) and [`CHANGELOG.md`](CHANGELOG.md).
+**Status: active** (`v0.8.3`, updated `2026-11-27`). Planned milestones live in [`ROADMAP.md`](ROADMAP.md), operational tasks in [`docs/kanban/KANBAN.md`](docs/kanban/KANBAN.md), errata in [`ERRATA.md`](ERRATA.md), hardening index in [`HARDENING_INDEX.md`](HARDENING_INDEX.md), literature & export-control audit in [`docs/LITERATURE_AND_EXPORT_CONTROL.md`](docs/LITERATURE_AND_EXPORT_CONTROL.md), and verification history in [`docs/run-log.md`](docs/run-log.md) and [`CHANGELOG.md`](CHANGELOG.md).
 
 ## Author & Accreditation
 

@@ -2,12 +2,12 @@
 # SPDX-License-Identifier: MIT
 """sync_external_programs.py — daily full mirror of all lefttosolve.com research programs.
 
-Left to Solve (https://lefttosolve.com/programs) aggregates 25 open-problem
-"programs" (~59k+ targets: Erdős problems, OEIS conjectures, Wikipedia's list,
-Millennium Prize problems, Green's 100, Kourovka Notebook, MathOverflow, etc.)
-whose formal Lean statements come from google-deepmind/formal-conjectures
-(Apache-2.0). This script mirrors ALL 25 programs and ALL items into the Atlas
-as a clearly separated, daily-synced third-party layer:
+Left to Solve (https://lefttosolve.com/programs) aggregates all published open-problem
+"programs" (currently 26 programs / 62k+ targets: Erdős problems, OEIS conjectures,
+Wikipedia's list, arXiv abstracts, Millennium Prize problems, Green's 100, Kourovka
+Notebook, MathOverflow, etc.) whose formal Lean statements come from
+google-deepmind/formal-conjectures (Apache-2.0). This script mirrors ALL programs and
+ALL items into the Atlas as a clearly separated, daily-synced third-party layer:
 
     data/external/lefttosolve/snapshot.json         program counts, kinds, solved_by_kind, provenance
     data/external/lefttosolve/items/<slug>.jsonl    item index (sharded at <=4 MB into .part-NNN.jsonl)
@@ -29,7 +29,7 @@ Honesty & licensing boundaries (enforced in code and repeated in every view):
   * A live sync that fails any completeness/consistency guard writes nothing.
 
 Usage:
-    python scripts/sync_external_programs.py            # live fetch (network), write all 25 programs + views
+    python scripts/sync_external_programs.py            # live fetch (network), write all programs + views
     python scripts/sync_external_programs.py --check    # offline: verify snapshot, shards, <5 MB cap & views
     python scripts/sync_external_programs.py --render   # offline: re-render views from committed snapshot
 """
