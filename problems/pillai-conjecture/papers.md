@@ -16,7 +16,7 @@ The list spans the foundational fixed-exponent work of Pillai, the Baker-method 
 | 8 | 1982 | Diophantine equations and their applications (Catalan survey) | R. J. Stroeker, R. Tijdeman | survey | — | needs-verification |
 | 9 | 1986 | Exponential Diophantine Equations | T. N. Shorey, R. Tijdeman | foundational | — | high-confidence |
 | 10 | 1990 | The Catalan equation (survey) | M. Mignotte | survey | — | needs-verification |
-| 11 | 2001 | Rational approximation to algebraic numbers of small height: the Diophantine equation $|ax^n - by^n| = 1$ | M. A. Bennett | modern | — | needs-verification |
+| 11 | 2001 | Rational approximation to algebraic numbers of small height: the Diophantine equation $\lvert ax^n - by^n \rvert = 1$ | M. A. Bennett | modern | — | needs-verification |
 | 12 | 2001 | On some exponential equations of S. S. Pillai | M. A. Bennett | modern | — | needs-verification |
 | 13 | 2002 | A new proof of the theorem on consecutive powers (preliminary) | P. Mihăilescu | breakthrough | — | needs-verification |
 | 14 | 2004 | Primary cyclotomic units and a proof of Catalan's conjecture | P. Mihăilescu | breakthrough | — | high-confidence |

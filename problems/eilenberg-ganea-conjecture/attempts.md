@@ -21,7 +21,7 @@ This is a genuine theorem, not a counterexample: it relocates the difficulty. Th
 
 - **One-relator groups.** Torsion-free one-relator groups have aspherical presentation $2$-complexes (Lyndon, building on the Identity Theorem), so $\operatorname{gd}=2$ whenever $\operatorname{cd}=2$; Eilenberg–Ganea holds for them.
 - **Surface and $\mathrm{PD}_2$ groups.** Two-dimensional Poincaré-duality groups are surface groups (Eckmann–Müller–Linnell and related work), realized by surfaces, hence $\operatorname{gd}=2$.
-- **$F.E.A.\ Johnson's $D(2)$ programme.** Johnson reformulated the problem via the $D(2)$-property and verified it for many groups, tying Eilenberg–Ganea to concrete module-theoretic computations over $\mathbb{Z}G$. No counterexample emerged, but no general theorem either.
+- **F. E. A. Johnson's $D(2)$ programme.** Johnson reformulated the problem via the $D(2)$-property and verified it for many groups, tying Eilenberg–Ganea to concrete module-theoretic computations over $\mathbb{Z}G$. No counterexample emerged, but no general theorem either.
 
 ## Disputed and folkloric claims
 

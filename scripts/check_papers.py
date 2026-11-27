@@ -87,6 +87,16 @@ def check_meta_analysis_text(rel: str, text: str, validator=None) -> list[str]:
         m = re.search(pat, body, re.IGNORECASE)
         if m:
             issues.append(f"{rel}: overclaim phrase detected: '{m.group(0)[:60]}'")
+    in_code = False
+    for lineno, line in enumerate(body.splitlines(), 1):
+        if line.strip().startswith("```"):
+            in_code = not in_code
+            continue
+        if in_code:
+            continue
+        cleaned = re.sub(r"`[^`]+`", "", line).replace(r"\$", "").replace("$$", "")
+        if cleaned.count("$") % 2 == 1:
+            issues.append(f"{rel}: body line {lineno}: odd unescaped '$' count (broken inline math or unescaped currency)")
     return issues
 
 

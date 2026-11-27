@@ -1,4 +1,4 @@
-# Statement Fidelity Audit — `FormalAtlas` (Lean 4.35.0, `v0.7.0`)
+# Statement Fidelity Audit — `FormalAtlas` (Lean 4.35.0, `v0.8.2`)
 
 > **Purpose:** Machine-checked Lean proofs fail in the real world not because the kernel is wrong, but because a formal definition silently diverges from the mathematical literature (**representational mismatch**). This table maps every definition, headline theorem, non-vacuity witness, and adversarial refutation in [`FormalAtlas/Defs.lean`](FormalAtlas/Defs.lean), [`Challenge.lean`](Challenge.lean), [`NonVacuity.lean`](NonVacuity.lean), and [`Adversarial.lean`](Adversarial.lean) line-by-line to its primary mathematical source and exact epistemic boundary. Package compilation enforces `autoImplicit = false` in [`lakefile.toml`](lakefile.toml) on Lean 4.35.0 commit `eb6cafb7290e8bd5f2937522d8d804f58f02bafc`.
 

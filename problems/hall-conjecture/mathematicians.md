@@ -4,9 +4,9 @@ _Ten figures who shaped the problem, past and present._
 
 | # | Name | Era | Role | Key contribution |
 |---|------|-----|------|------------------|
-| 1 | Marshall Hall Jr. | 1971 | originator | Stated the conjecture $|x^3-y^2| \gg \sqrt{x}$ from computational study of $y^2 = x^3 + k$. |
+| 1 | Marshall Hall Jr. | 1971 | originator | Stated the conjecture $\lvert x^3-y^2 \rvert \gg \sqrt{x}$ from computational study of $y^2 = x^3 + k$. |
 | 2 | Harold Davenport | 1965 | breakthrough | Proved the function-field analogue $\deg(f^3-g^2)\geq \tfrac12\deg f + 1$ with sharp constant; co-author of the small-gap constructions. |
-| 3 | Andrzej Schinzel | 1965 | breakthrough | Co-author (with Davenport, Lewis) of parametric families forcing $|x^3-y^2|\asymp\sqrt{x}$, establishing sharpness of the exponent. |
+| 3 | Andrzej Schinzel | 1965 | breakthrough | Co-author (with Davenport, Lewis) of parametric families forcing $\lvert x^3-y^2 \rvert \asymp \sqrt{x}$, establishing sharpness of the exponent. |
 | 4 | L. V. Danilov | 1982 | breakthrough | Explicit infinite family with small Hall ratio, constraining (and casting doubt on) the strong-form constant. |
 | 5 | Alan Baker | 1968 | frontier | Linear forms in logarithms giving effective bounds for $y^2 = x^3 + k$ per fixed $k$. |
 | 6 | Joseph Oesterlé | 1985 | frontier | Co-formulated the $abc$ conjecture, from which weak Hall follows. |

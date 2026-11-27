@@ -246,7 +246,7 @@ def test_contract_citation_verification_log_consistent():
     assert summary["network_error"] == 0
     records = log["records"]
     assert sum(summary.values()) == len(records)
-    assert summary["verified"] >= 440
+    assert summary["verified"] >= 537
 
 
 # --------------------------------------------------------------------------- #
@@ -564,10 +564,10 @@ def test_oracle_brocard_exhaustive_le_15_and_mod4():
 
 
 def test_contract_retraction_audit_zero_retractions():
-    """Verify data/retraction-audit.json covers >=220 verified DOIs with 0 retractions & 0 errors."""
+    """Verify data/retraction-audit.json covers >=287 verified DOIs with 0 retractions & 0 errors."""
     data = json.loads((ROOT / "data" / "retraction-audit.json").read_text(encoding="utf-8"))
     summary = data["summary"]
-    assert summary["dois_checked"] >= 220
+    assert summary["dois_checked"] >= 287
     assert summary["retracted"] == 0
     assert summary["network_errors"] == 0
 
@@ -690,7 +690,7 @@ def test_oracle_v050_brocard_exhaustive_le_20_and_mod3_mod10():
 
 
 def test_oracle_v050_lonely_runner_n3_nondiv4_and_symmetries():
-    """Differential check matching period_shift, neg_time, and n3_nondiv4 (7/8 mod-4 classes)."""
+    """Differential check matching period_shift, neg_time, and n3_nondiv4 (27/64 mod-4 speed-triple classes)."""
     def far_enough(m: int, p: int, q: int, v: int) -> bool:
         r = (p * v) % q
         return q <= m * r and q <= m * (q - r)
@@ -1212,3 +1212,170 @@ def test_regression_v070_glossary_ranking_export_control_and_66_theorem_blueprin
         "thm_mersenne_prime_divisor_congruence",
     ):
         assert token in bp_txt, f"Missing v0.7.0 theorem {token} in blueprint.html"
+
+
+# --------------------------------------------------------------------------- #
+#  Cycle 7–9 / 3-Cycle Ten-Subsystem Hardening (v0.8.2) Regression & Contracts
+# --------------------------------------------------------------------------- #
+def test_regression_v082_dossiers_strict_table_and_math_integrity():
+    """Guard against V82-C1-BUG-01..03 & HOLE-02: strict table columns, bare/duplicate IDs, and balanced '$'."""
+    import check_dossiers
+
+    proc = subprocess.run(
+        [sys.executable, str(ROOT / "scripts" / "check_dossiers.py"), "--strict"],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+    )
+    assert proc.returncode == 0, f"check_dossiers --strict failed:\n{proc.stdout}\n{proc.stderr}"
+
+    # Synthetic negative checks (exercised by M7 and M8 mutants)
+    bad_pipe_table = (
+        "| # | Year | Authors | Title | Venue | arXiv/DOI | Verify |\n"
+        "|---|---|---|---|---|---|---|\n"
+        "| 1 | 1990 | A. Author | Bound $|x| < 1$ | J. Math. | — | high-confidence |\n"
+    )
+    errs_pipe, _ = check_dossiers.check_table_structure("demo", "papers", bad_pipe_table, expected_cols=7)
+    assert any("expected 7 columns" in e for e in errs_pipe), f"Missed unescaped pipe: {errs_pipe}"
+
+    bad_mat_cols = (
+        "| # | Mathematician | Contribution |\n"
+        "|---|---|---|\n"
+        "| 1 | Euler | Everything |\n"
+    )
+    errs_mat, _ = check_dossiers.check_table_structure("demo", "mathematicians", bad_mat_cols, expected_cols=5)
+    assert any("expected 5 columns" in e for e in errs_mat), f"Missed 3-col mathematicians table: {errs_mat}"
+
+    bad_bare_and_dup = (
+        "| # | Year | Authors | Title | Venue | arXiv/DOI | Verify |\n"
+        "|---|---|---|---|---|---|---|\n"
+        "| 1 | 2020 | A | T1 | arXiv | 2001.00001 | high-confidence |\n"
+        "| 2 | 2020 | B | T2 | arXiv | arXiv:2001.00002 | verified |\n"
+        "| 3 | 2020 | C | T3 | arXiv | arXiv:2001.00002 | verified |\n"
+    )
+    errs_ids, _ = check_dossiers.check_table_structure("demo", "papers", bad_bare_and_dup, expected_cols=7)
+    assert any("bare arXiv ID" in e for e in errs_ids), f"Missed bare arXiv ID: {errs_ids}"
+    assert any("duplicate identifier" in e for e in errs_ids), f"Missed duplicate ID: {errs_ids}"
+
+    odd_dollar = check_dossiers.check_dollar_balance("demo", "history", "Offered a $1,000,000 prize for $x > 0$.\n")
+    assert odd_dollar, "Missed odd unescaped '$' line"
+    even_dollar = check_dossiers.check_dollar_balance("demo", "history", "Offered a \\$1,000,000 prize for $x > 0$.\n")
+    assert even_dollar == [], f"False positive on escaped currency: {even_dollar}"
+
+
+def test_contract_v082_citation_log_strict_bijection():
+    """Verify exact 1-to-1 bijection between papers.md 'verified' rows and citation-verification-log.json."""
+    import check_dossiers
+
+    md_verified: set[tuple[str, str]] = set()
+    for pfile in sorted((ROOT / "problems").glob("*/papers.md")):
+        slug = pfile.parent.name
+        errs, vpairs = check_dossiers.check_table_structure(slug, "papers", pfile.read_text(encoding="utf-8"), 7)
+        assert errs == [], f"Structural error in {slug}/papers.md: {errs}"
+        md_verified.update(vpairs)
+
+    logged = check_dossiers.load_logged_verified_set()
+    assert logged is not None
+    assert len(md_verified) >= 537
+    assert md_verified == logged, (
+        f"Bijection mismatch: md-log={sorted(md_verified - logged)[:5]}, "
+        f"log-md={sorted(logged - md_verified)[:5]}"
+    )
+
+
+def test_regression_v082_meta_analyses_balanced_math():
+    """Guard against V82-C2-BUG-01: check_papers catches odd unescaped '$' and accepts escaped '\\$'."""
+    import check_papers
+
+    base = (
+        "---\n"
+        "problem: demo\n"
+        "author: Alexander Donahue\n"
+        "type: ai-assisted-meta-analysis\n"
+        "peer_reviewed: false\n"
+        "---\n\n"
+        "> AI-generated synthesis, not peer-reviewed. Authored by Alexander Donahue.\n\n"
+        "{body}\n\n"
+        "## AI Review Panel\n"
+    )
+    bad_issues = check_papers.check_meta_analysis_text("meta-analyses/demo.md", base.format(body="Prize is $1,000,000."))
+    assert any("odd unescaped '$'" in i for i in bad_issues), f"check_papers missed odd '$': {bad_issues}"
+
+    good_issues = check_papers.check_meta_analysis_text(
+        "meta-analyses/demo.md",
+        base.format(body=r"Prize is \$1,000,000 for $x^a + y^b = z^c$."),
+    )
+    assert good_issues == [], f"check_papers rejected valid math: {good_issues}"
+
+
+def test_contract_v082_repo_yaml_valid_enum_and_counts():
+    """Guard against V82-C1-ERR-06: repo.yaml stack uses valid Build Standard v1.2.0 enum values & 120 count."""
+    import yaml
+
+    meta = yaml.safe_load((ROOT / "repo.yaml").read_text(encoding="utf-8"))
+    allowed_stacks = {
+        "python", "typescript", "javascript", "go", "rust", "java", "csharp",
+        "cpp", "c", "ruby", "php", "swift", "kotlin", "shell", "terraform",
+        "static", "docs-only", "other",
+    }
+    assert set(meta["stack"]).issubset(allowed_stacks), f"Invalid stack enum in repo.yaml: {meta['stack']}"
+    assert "120" in meta["description"]
+    assert (ROOT / "HARDENING_INDEX.md").exists()
+
+
+def test_regression_v082_workflows_zero_bot_committer():
+    """Guard against V82-C1-CONF-01: workflows must never commit as github-actions[bot] (triggers A23)."""
+    for wf in sorted((ROOT / ".github" / "workflows").glob("*.yml")):
+        txt = wf.read_text(encoding="utf-8")
+        assert "github-actions[bot]" not in txt, f"Bot committer found in {wf.name}"
+
+
+def test_regression_v082_build_site_zero_statement_audit_drift(tmp_path: Path):
+    """Guard against V82-C2-ERR-01/02: generated site contains zero statement-audit wording regressions."""
+    import build_site
+
+    build_site.build_site(tmp_path / "_site")
+    for fname in ("index.html", "blueprint.html", "programs.html"):
+        txt = (tmp_path / "_site" / fname).read_text(encoding="utf-8")
+        assert "No-go barrier" not in txt, f"Statement-audit regression 'No-go barrier' in {fname}"
+        assert "7/8 parity classes" not in txt, f"Statement-audit regression '7/8 parity classes' in {fname}"
+    bp = (tmp_path / "_site" / "blueprint.html").read_text(encoding="utf-8")
+    assert "27/64" in bp
+    idx = (tmp_path / "_site" / "index.html").read_text(encoding="utf-8")
+    assert "2,000 Mega-Atlas Problems" in idx
+    assert "0 sorry in proof modules" in idx
+
+
+def test_regression_v082_active_docs_120_problem_parity():
+    """Guard against V82-C1-ERR-04/07: active docs consistently state 120 curated problems."""
+    for rel in (
+        "README.md",
+        "AGENTS.md",
+        "llms.txt",
+        "llms-full.txt",
+        "REPLICATION.md",
+        "ROADMAP.md",
+        "CLAIMS.md",
+        "LIMITATIONS.md",
+        "docs/faq.md",
+        "docs/kanban/KANBAN.md",
+        "docs/configuration.md",
+    ):
+        txt = (ROOT / rel).read_text(encoding="utf-8")
+        assert "120" in txt, f"Active doc {rel} missing 120 problem count"
+        assert "106-problem" not in txt, f"Stale '106-problem' in {rel}"
+        assert "106 open" not in txt, f"Stale '106 open' in {rel}"
+
+
+def test_regression_v082_search_all_problems_limit_zero_and_formal_priority():
+    """Guard against V82-C2-BUG-03: limit <= 0 returns empty list & formal programs rank before Q&A streams."""
+    import search_all_problems
+
+    assert search_all_problems.search_atlas(query="riemann", limit=0) == []
+    assert search_all_problems.search_atlas(query="riemann", limit=-3) == []
+    assert search_all_problems.search_external(query="collatz", limit=0) == []
+    assert search_all_problems.search_external(query="collatz", limit=-1) == []
+
+    hits = search_all_problems.search_external(query="collatz", limit=5)
+    assert len(hits) >= 1
+    assert "(not formalized)" not in hits[0]["program"].lower()

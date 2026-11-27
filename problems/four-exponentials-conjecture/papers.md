@@ -25,7 +25,7 @@ _The most important works, old and new. Each carries a verification flag. Identi
 | 19 | 1999 | Algebraic independence of exponentials (Diophantine survey) | Michel Waldschmidt | survey | — | needs-verification |
 | 20 | 2000 | Diophantine Approximation on Linear Algebraic Groups | Michel Waldschmidt | foundational | — | high-confidence |
 | 21 | 2001 | An Introduction to Diophantine Approximation (transcendence chapters) | Michel Waldschmidt et al. | survey | — | needs-verification |
-| 22 | 2004 | Open Diophantine problems | Michel Waldschmidt | survey | math/0312440 | needs-verification |
+| 22 | 2004 | Open Diophantine problems | Michel Waldschmidt | survey | arXiv:math/0312440 | verified |
 | 23 | 2008 | Elliptic analogues of the six exponentials theorem | (elliptic transcendence authors) | modern | — | ai-suggested |
 | 24 | 2013 | Hopf algebras and transcendence / multiple exponentials | (various) | modern | — | ai-suggested |
 | 25 | 2021 | On the four exponentials conjecture and related Diophantine problems (recent survey) | (transcendence community) | survey | — | ai-suggested |

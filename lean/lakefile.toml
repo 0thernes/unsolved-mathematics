@@ -1,5 +1,5 @@
 name = "FormalAtlas"
-version = "0.8.1"
+version = "0.8.2"
 defaultTargets = ["FormalAtlas", "Solution", "NonVacuity", "Adversarial"]
 
 [leanOptions]

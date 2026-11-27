@@ -20,7 +20,9 @@ from __future__ import annotations
 import json
 import sys
 from collections import Counter, defaultdict
+from collections.abc import Callable
 from pathlib import Path
+from typing import Any
 
 try:
     sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[union-attr]
@@ -57,14 +59,14 @@ def link(p: dict) -> str:
     return f"[{p['title']}](../../problems/{p['slug']}/README.md)"
 
 
-def write(name: str, body: str):
+def write(name: str, body: str) -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / name).write_text(body, encoding="utf-8", newline="\n")
     print(f"  -> docs/indexes/{name}")
 
 
-def by_key(problems, keyfn, title, intro):
-    groups: dict[str, list[dict]] = defaultdict(list)
+def by_key(problems: list[dict[str, Any]], keyfn: Callable[[dict[str, Any]], str], title: str, intro: str) -> str:
+    groups: dict[str, list[dict[str, Any]]] = defaultdict(list)
     for p in problems:
         groups[keyfn(p)].append(p)
     lines = [f"# {title}\n", intro, ""]
@@ -77,8 +79,8 @@ def by_key(problems, keyfn, title, intro):
     return "\n".join(lines)
 
 
-def originators_index(problems):
-    idx: dict[str, list[dict]] = defaultdict(list)
+def originators_index(problems: list[dict[str, Any]]) -> str:
+    idx: dict[str, list[dict[str, Any]]] = defaultdict(list)
     for p in problems:
         for who in p.get("originators", []):
             idx[who].append(p)
@@ -95,9 +97,9 @@ def originators_index(problems):
     return "\n".join(lines) + "\n"
 
 
-def verification_dashboard(problems):
-    rows = []
-    totals: Counter = Counter()
+def verification_dashboard(problems: list[dict[str, Any]]) -> str:
+    rows: list[tuple[dict[str, Any], Counter[str] | None]] = []
+    totals: Counter[str] = Counter()
     authored = 0
     for p in sorted(problems, key=lambda x: x["rank"]):
         papers = PROBLEMS / p["slug"] / "papers.md"
@@ -108,7 +110,7 @@ def verification_dashboard(problems):
             rows.append((p, None))
             continue
         authored += 1
-        counts: Counter = Counter()
+        counts: Counter[str] = Counter()
         for line in text.splitlines():
             if not line.strip().startswith("|"):
                 continue
@@ -131,14 +133,14 @@ def verification_dashboard(problems):
         lines.append(f"| `{f}` | {totals.get(f, 0)} |")
     lines += ["", "## Per-problem", "", "| # | Problem | verified | high-conf | needs-verif | ai-suggested |",
               "|---|---------|---------:|----------:|------------:|-------------:|"]
-    for p, counts in rows:
-        if counts is None:
+    for p, row_counts in rows:
+        if row_counts is None:
             lines.append(f"| {p['rank']} | {link(p)} | _not yet authored_ | | | |")
         else:
             lines.append(
-                f"| {p['rank']} | {link(p)} | {counts.get('verified',0)} | "
-                f"{counts.get('high-confidence',0)} | {counts.get('needs-verification',0)} | "
-                f"{counts.get('ai-suggested',0)} |"
+                f"| {p['rank']} | {link(p)} | {row_counts.get('verified',0)} | "
+                f"{row_counts.get('high-confidence',0)} | {row_counts.get('needs-verification',0)} | "
+                f"{row_counts.get('ai-suggested',0)} |"
             )
     return "\n".join(lines) + "\n"
 

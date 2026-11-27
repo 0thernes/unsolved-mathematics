@@ -2,8 +2,8 @@
 # SPDX-License-Identifier: MIT
 """Targeted Mutation Testing Suite (Build Standard B13).
 
-Injects 6 concrete logic mutants in-memory (never modifying tracked files on disk),
-recreating real bug classes caught during the v0.3.0 forensic audit, and asserts
+Injects 10 concrete logic mutants in-memory (never modifying tracked files on disk),
+recreating real bug classes caught during the v0.3.0–v0.8.2 forensic audits, and asserts
 that our test suite kills 100% of mutants.
 
 Exit 0 iff all mutants are killed; exit 1 if any mutant survives.
@@ -11,6 +11,7 @@ Exit 0 iff all mutants are killed; exit 1 if any mutant survives.
 
 from __future__ import annotations
 
+import re
 import sys
 import tempfile
 from collections.abc import Callable
@@ -23,8 +24,10 @@ for _p in (ROOT, ROOT / "scripts", ROOT / "rag", ROOT / "tests"):
 
 import build_corpus  # noqa: E402
 import check_dossiers  # noqa: E402
+import check_papers  # noqa: E402
 import generate  # noqa: E402
 import proof_claim_sweep  # noqa: E402
+import search_all_problems  # noqa: E402
 import test_atlas  # noqa: E402
 import test_verification_ladder as tvl  # noqa: E402
 
@@ -49,7 +52,7 @@ def run_mutant(name: str, apply_mutation: Callable[[], Callable[[], None]], chec
 
 
 def main() -> int:
-    print("Running targeted mutation suite (6 mutants covering core invariants & historical bugs):")
+    print("Running targeted mutation suite (10 mutants covering core invariants & historical bugs):")
     results: list[bool] = []
 
     # Mutant 1: Drop centrality weight from composite_severity
@@ -130,6 +133,53 @@ def main() -> int:
         return lambda: setattr(check_dossiers, "count_table_rows", orig)
 
     results.append(run_mutant("M6: naive pipe-line - 2 count in check_dossiers.count_table_rows (BUG-04)", mut_table_count, tvl.test_regression_bug04_count_table_rows_excludes_all_headers))
+
+    # Mutant 7: Disable table column-count validation in check_dossiers.check_table_structure (V82-C1-BUG-01/02)
+    def mut_skip_col_check():
+        orig = check_dossiers.check_table_structure
+
+        def broken(slug: str, section: str, text: str, expected_cols: int):
+            errs, vpairs = orig(slug, section, text, expected_cols)
+            return [e for e in errs if "expected " not in e], vpairs
+
+        check_dossiers.check_table_structure = broken
+        return lambda: setattr(check_dossiers, "check_table_structure", orig)
+
+    results.append(run_mutant("M7: skip column-count check in check_dossiers.check_table_structure (V82-C1-BUG-01/02)", mut_skip_col_check, tvl.test_regression_v082_dossiers_strict_table_and_math_integrity))
+
+    # Mutant 8: Disable bare arXiv ID detection in check_dossiers.BARE_ARXIV_RE (V82-C1-ERR-01)
+    def mut_disable_bare_arxiv():
+        orig = check_dossiers.BARE_ARXIV_RE
+        check_dossiers.BARE_ARXIV_RE = re.compile(r"(?!)")
+        return lambda: setattr(check_dossiers, "BARE_ARXIV_RE", orig)
+
+    results.append(run_mutant("M8: disable bare arXiv regex in check_dossiers.BARE_ARXIV_RE (V82-C1-ERR-01)", mut_disable_bare_arxiv, tvl.test_regression_v082_dossiers_strict_table_and_math_integrity))
+
+    # Mutant 9: Strip odd-'$' balance check in check_papers.check_meta_analysis_text (V82-C2-BUG-01)
+    def mut_skip_meta_dollar_check():
+        orig = check_papers.check_meta_analysis_text
+
+        def broken(rel: str, text: str, validator=None):
+            return [i for i in orig(rel, text, validator) if "odd unescaped '$'" not in i]
+
+        check_papers.check_meta_analysis_text = broken
+        return lambda: setattr(check_papers, "check_meta_analysis_text", orig)
+
+    results.append(run_mutant("M9: skip odd-'$' math check in check_papers.check_meta_analysis_text (V82-C2-BUG-01)", mut_skip_meta_dollar_check, tvl.test_regression_v082_meta_analyses_balanced_math))
+
+    # Mutant 10: Drop limit <= 0 early-return guard in search_all_problems.search_atlas (V82-C2-BUG-03)
+    def mut_drop_limit_zero_guard():
+        orig = search_all_problems.search_atlas
+
+        def broken(query: str = "", field: str = "", limit: int = 25):
+            if limit <= 0:
+                return orig(query=query, field=field, limit=1)
+            return orig(query=query, field=field, limit=limit)
+
+        search_all_problems.search_atlas = broken
+        return lambda: setattr(search_all_problems, "search_atlas", orig)
+
+    results.append(run_mutant("M10: drop limit<=0 guard in search_all_problems.search_atlas (V82-C2-BUG-03)", mut_drop_limit_zero_guard, tvl.test_regression_v082_search_all_problems_limit_zero_and_formal_priority))
 
     killed = sum(results)
     total = len(results)

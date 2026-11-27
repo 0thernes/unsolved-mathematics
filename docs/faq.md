@@ -2,9 +2,9 @@
 
 ## 1. Does this repository claim to solve any open mathematical conjecture?
 
-**No.** Every open problem in the 106-problem catalog remains open unless the external mathematical community has produced a verifiable resolution (such as `unit-distance-problem`, updated to `recently-resolved` with explicit peer-review caveats following the May 2026 disproof `arXiv:2605.20695`). The Lean 4.35.0 formal core in `lean/` proves **structural lemmas, classical foundations, and finite cases** — never full solutions of open conjectures. Its Collatz "$\varepsilon$-invariance" theorem (`thm_collatz_epsilon_invariance_barrier`) records facts about the $3n-1$ map; the methodological reading drawn from it is a heuristic, not a formalized meta-theorem. See [`CLAIMS.md`](../CLAIMS.md) and [`LIMITATIONS.md`](../LIMITATIONS.md).
+**No.** Every open problem in the 120-problem catalog remains open unless the external mathematical community has produced a verifiable resolution (such as `unit-distance-problem`, updated to `recently-resolved` with explicit peer-review caveats following the May 2026 disproof `arXiv:2605.20695`). The Lean 4.35.0 formal core in `lean/` proves **structural lemmas, classical foundations, and finite cases** — never full solutions of open conjectures. Its Collatz "$\varepsilon$-invariance" theorem (`thm_collatz_epsilon_invariance_barrier`) records facts about the $3n-1$ map; the methodological reading drawn from it is a heuristic, not a formalized meta-theorem. See [`CLAIMS.md`](../CLAIMS.md) and [`LIMITATIONS.md`](../LIMITATIONS.md).
 
-## 2. Why is `problems/collatz-conjecture/` so much larger than the other 105 dossiers?
+## 2. Why is `problems/collatz-conjecture/` so much larger than the other 119 dossiers?
 
 In July 2026, `unsolved-mathematics` served as the live workspace for a multi-model research & QA case study on Collatz (`docs/WHITEPAPER-COLLATZ-MULTI-MODEL-CASE-STUDY-2026-07-01.md`), generating ~58.5 MB of experimental scripts, certificates, and quarantined refuted sketches. This asymmetry is intentionally documented as **Dilemma D1** in [`docs/reviews/2026-11-23-forensic-philosophical-audit.md`](reviews/2026-11-23-forensic-philosophical-audit.md) and tracked for clean modular separation in `ROADMAP.md`.
 
@@ -15,9 +15,9 @@ In July 2026, `unsolved-mathematics` served as the live workspace for a multi-mo
 - `needs-verification`: Either no identifier has been verified yet, or an automated audit detected and stripped an invalid/mismatched identifier rather than leaving a poisoned link.
 - `ai-suggested`: Suggested during LLM literature drafting; treat as a lead to verify before citing.
 
-## 4. How many AI models and human mathematicians have reviewed the 106 dossiers?
+## 4. How many AI models and human mathematicians have reviewed the 120 dossiers?
 
-As of `v0.7.0` (`2026-11-26`): **1 AI model pass** (Claude's in-house self-review on `2026-06-14`, recorded under the historical non-canonical session label `claude-opus-4-8` in `meta-analyses/*.md`) across the 106 meta-analyses and **0 independent human mathematician peer reviews**. Earlier README text mentioning a "four-model review panel" described a planned architecture, not completed reviews; `v0.3.0`+ corrects this disclosure explicitly across `README.md`, `CLAIMS.md`, and `LIMITATIONS.md`.
+As of `v0.8.2` (`2026-11-27`): **1 AI model pass** (Claude's in-house self-review on `2026-06-14`, recorded under the historical non-canonical session label `claude-opus-4-8` in `meta-analyses/*.md`) across the initial 106 meta-analyses, all four AI panels `pending` on the 14 dossiers added in `v0.8.0`, and **0 of 120 independent human mathematician peer reviews**. Earlier README text mentioning a "four-model review panel" described a planned architecture, not completed reviews; `v0.3.0`+ corrects this disclosure explicitly across `README.md`, `CLAIMS.md`, and `LIMITATIONS.md`.
 
 ## 5. How is the Composite Severity Score (CSS) computed? Is it objective?
 

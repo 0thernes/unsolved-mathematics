@@ -15,10 +15,11 @@ The atlas was assembled with AI assistance under continuous human direction.
 Drafting, structuring, verification tooling, and Lean 4 formalization assistance
 used frontier language models (Claude, Codex/GPT, Gemini). While the review
 architecture ([docs/review/AI-META-REVIEW.md](docs/review/AI-META-REVIEW.md))
-defines a planned multi-model panel (Grok, Gemini, GPT, Claude), as of `v0.7.0`
-(`2026-11-26`) **only 1 of 4 AI review passes (Claude self-review on 2026-06-14,
+defines a planned multi-model panel (Grok, Gemini, GPT, Claude), as of `v0.8.2`
+(`2026-11-27`) **only 1 of 4 AI review passes (Claude self-review on 2026-06-14,
 recorded under the historical non-canonical session label `claude-opus-4-8`) has been
-executed across the 106 meta-analyses, and 0 of 106 have independent human peer
+executed across the initial 106 meta-analyses, all four AI panels remain `pending` on
+the 14 dossiers added in `v0.8.0`, and 0 of 120 have independent human peer
 review**.
 
 Per the atlas integrity policy, AI assistance is disclosed transparently and

@@ -21,7 +21,7 @@ _The 25 most important papers. Each carries a verification flag._
 | 15 | 1994 | Computing integral points on elliptic curves | R. J. Stroeker, N. Tzanakis | computational | — | high-confidence |
 | 16 | 1997 | Computing integral points on Mordell's elliptic curves $y^2 = x^3 + k$ | J. Gebel, A. Pethő, H. G. Zimmer | computational | — | needs-verification |
 | 17 | 1998 | $abc$ implies Mordell / survey of $abc$ consequences | N. Elkies | breakthrough | — | needs-verification |
-| 18 | 2000 | Rational points near curves and small $|x^3 - y^2|$ via lattice reduction | N. D. Elkies | breakthrough | math/0005139 | high-confidence |
+| 18 | 2000 | Rational points near curves and small $\lvert x^3 - y^2 \rvert$ via lattice reduction | N. D. Elkies | breakthrough | arXiv:math/0005139 | verified |
 | 19 | 2000 | La conjecture $abc$ (survey) | A. Nitaj | survey | — | needs-verification |
 | 20 | 2000 | A new approach to find good examples for Hall's conjecture (Hall ratio records) | I. Jiménez Calvo, J. Herranz, G. Sáez | computational | — | needs-verification |
 | 21 | 2004 | Notes on the difference $x^3 - y^2$ and the Hall ratio | (computational notes) | computational | — | needs-verification |

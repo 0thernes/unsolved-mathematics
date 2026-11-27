@@ -41,7 +41,11 @@ _VER_FILE = ROOT / "VERSION"
 _VER = _VER_FILE.read_text(encoding="utf-8").strip() if _VER_FILE.exists() else "0.4.0"
 USER_AGENT = f"UnsolvedMathematicsAtlas/{_VER} (https://github.com/0thernes/unsolved-mathematics; mailto:0_0@0thernes.art)"
 
-ARXIV_RE = re.compile(r"(?:arXiv[:.]\s*|arxiv\.org/abs/)(\d{4}\.\d{4,5}(?:v\d+)?|[a-z\-]+(?:\.[A-Z]{2})?/\d{7})", re.I)
+ARXIV_RE = re.compile(
+    r"(?:(?:arXiv[:.]\s*|arxiv\.org/abs/)(\d{4}\.\d{4,5}(?:v\d+)?|[a-z\-]+(?:\.[A-Z]{2})?/\d{7})"
+    r"|^\s*(\d{4}\.\d{4,5}(?:v\d+)?|[a-z\-]+(?:\.[A-Z]{2})?/\d{7})\s*$)",
+    re.I,
+)
 DOI_RE = re.compile(r"(10\.\d{4,9}/[^\s,;\|`<>]+)")
 STOPWORDS = {
     "the", "of", "and", "for", "with", "from", "that", "this", "into", "over",
@@ -96,7 +100,7 @@ def extract_rows() -> list[dict]:
                     "claimed_title": title,
                     "claimed_authors": authors,
                     "identifier_raw": ident,
-                    "arxiv_id": arx.group(1) if arx else None,
+                    "arxiv_id": (arx.group(1) or arx.group(2)) if arx else None,
                     "doi": clean_doi(doi.group(1)) if doi else None,
                     "current_flag": flag,
                 }

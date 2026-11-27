@@ -198,6 +198,8 @@ def check_relative_links() -> list[str]:
         list(ROOT.glob("*.md"))
         + list((ROOT / "docs").rglob("*.md"))
         + list(PROBLEMS_DIR.glob("*/*.md"))
+        + list((ROOT / "meta-analyses").glob("*.md"))
+        + list((ROOT / "lean").glob("*.md"))
     )
     for f in sorted(targets):
         txt = FENCE_RE.sub("", f.read_text(encoding="utf-8", errors="replace"))
@@ -226,7 +228,7 @@ def check_pseudoproof_leak() -> None:
     if leaks:
         print(
             f"\n⚠ {len(leaks)} pseudo-proof/numerology file(s) live outside _quarantine/ "
-            f"(sweep them in; see docs/review/REPO-AUDIT-2026-07.md):"
+            f"(sweep them in; see docs/review/REPO-AUDIT-2026-07-02.md):"
         )
         for leak in sorted(leaks)[:25]:
             print(f"    - {leak}")

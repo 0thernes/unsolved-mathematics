@@ -8,7 +8,7 @@ _Where the problem stands and what a resolution would require._
 
 - **Exact values:** $\mathrm{ES}(3)=3$, $\mathrm{ES}(4)=5$, $\mathrm{ES}(5)=9$, $\mathrm{ES}(6)=17$ (Szekeres–Peters 2006). Even $\mathrm{ES}(7)$ (conjecturally $33$) is open.
 - **Asymptotic bounds:** $2^{n-2} + 1 \le \mathrm{ES}(n) \le 2^{n + O(\sqrt{n \log n})}$ (Erdős–Szekeres 1961; Suk 2017 `10.1090/jams/869`; Holmsen–Mojarrad–Pach–Tardos 2020 `10.4171/jems/1000`).
-- **Formal tracking:** Formalized in Lean 4 in `google-deepmind/formal-conjectures` as `Erdos107.erdos_107` (`kind: open`, prize `\$500`).
+- **Formal tracking:** Formalized in Lean 4 in `google-deepmind/formal-conjectures` as `Erdos107.erdos_107` (`kind: open`, prize `$500`).
 
 ## What a resolution requires
 

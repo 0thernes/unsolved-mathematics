@@ -1,8 +1,8 @@
 # Replication Protocol
 
 Step-by-step instructions to reproduce every build artifact, RAG corpus,
-static proof blueprint, AMS-LaTeX white paper, dual cryptographic timestamps, test result, and 6-kernel
-Lean 4.35.0 proof from a clean clone (`v0.7.0`).
+static proof blueprint, daily external-program mirror verification, AMS-LaTeX white paper, dual cryptographic timestamps, test result, and 6-kernel
+Lean 4.35.0 proof from a clean clone (`v0.8.2`).
 
 ## 1. Prerequisites
 
@@ -34,6 +34,7 @@ python scripts/check_papers.py
 python scripts/proof_claim_sweep.py
 python scripts/check_retractions.py --check
 python scripts/check_readme_axioms.py
+python scripts/sync_external_programs.py --check
 python scripts/build_data_manifest.py --check
 python scripts/timestamp_manifest.py --check
 python scripts/test_lean_negative.py
@@ -60,12 +61,14 @@ cd ../paper && tectonic -X compile Donahue_2026_unsolved_mathematics_atlas.tex
 
 ## 3. Expected Headline Outputs
 
-- `scripts/generate.py --check` → `OK: 106 problems validated; all generated views are current.`
+- `scripts/generate.py --check` → `OK: 120 problems validated; all generated views are current.`
 - `scripts/validate.py` → `✓ Atlas validation passed.`
-- `scripts/check_papers.py` → `OK: 106 meta-analyses passed the integrity gate.`
+- `scripts/check_dossiers.py --strict` → `Complete dossiers: 120/120  ->  data/dossier-status.json` (7-col `papers.md`, 5-col `mathematicians.md`, zero duplicate/bare IDs, 1-to-1 `verified` citation-log bijection, balanced `$` math)
+- `scripts/check_papers.py` → `OK: 120 meta-analyses passed the integrity gate.`
 - `scripts/proof_claim_sweep.py` → `PSEUDO-PROOF SWEEP: clean — no unhedged victory-declarations found.`
-- `scripts/check_retractions.py --check` → `OK: data/retraction-audit.json clean — 220 verified DOIs audited, 0 retracted, 3 with publisher update/corrigendum notices, 0 errors.`
+- `scripts/check_retractions.py --check` → `OK: data/retraction-audit.json clean — 287 verified DOIs audited, 0 retracted, 3 with publisher update/corrigendum notices, 0 errors.`
 - `scripts/check_readme_axioms.py` → `OK: 102 declarations (66 comparator theorems) verified in README.md + lean/STATEMENT_FIDELITY.md; 15 Lean files satisfy Palomar limits & zero forbidden tokens.`
+- `scripts/sync_external_programs.py --check` → `OK: full external program mirror verified offline — 25 programs, 59,396 targets, 59,396 mirrored items (26 shards, all <5 MB), solved_by_kind=(known: 746, warmup: 88), crosswalk 112/120`
 - `scripts/timestamp_manifest.py --check` → `OK: Dual cryptographic timestamps verified offline against data/MANIFEST.sha256`
 - `scripts/test_lean_negative.py` → `OK: All 3 live negative Lean 4.35.0 kernel & axiom-gate rejection checks PASSED.`
 - `lean/`: `autoImplicit = false`; 66/66 headline theorems across 8 domains in `Challenge.lean` matched by `Solution.lean` + 16 witnesses in `NonVacuity.lean` + 20 refutations in `Adversarial.lean`; `#print axioms` strictly within `[propext, Classical.choice, Quot.sound]` (14 use zero axioms); 0 `sorry`/`admit`/`native_decide`/custom `axiom` outside `Challenge.lean`.
@@ -79,4 +82,5 @@ cd ../paper && tectonic -X compile Donahue_2026_unsolved_mathematics_atlas.tex
 | 2026-11-25 | GitHub Actions (`ubuntu-latest` + `windows-latest`) | Ephemeral GitHub runners, Python 3.12, Lean 4.35.0 + `bwrap` | `v0.4.0` full CI (36-decl 6-kernel `bwrap` Lean + 55 tests + 6/6 mutation + Build Standard `v1.2.0` 100%) + SLSA release | PASS ([CI 45724228403](https://github.com/0thernes/unsolved-mathematics/actions/runs/45724228403), [Release 45724232811](https://github.com/0thernes/unsolved-mathematics/actions/runs/45724232811)) | All 4 CI jobs + SLSA release green (`f811c9b`) |
 | 2026-11-25 | GitHub Actions (`ubuntu-latest` + `windows-latest`) | Ephemeral GitHub runners, Python 3.12, Lean 4.35.0 + `bwrap` | `v0.5.0` full CI (69-decl 8-domain 6-kernel `bwrap` Lean + 65 tests + 6/6 mutation + Build Standard `v1.2.0` 100%) + SLSA release + Pages | PASS ([CI 45742865067](https://github.com/0thernes/unsolved-mathematics/actions/runs/45742865067), [Release 45742871338](https://github.com/0thernes/unsolved-mathematics/actions/runs/45742871338), [Pages 45742865456](https://github.com/0thernes/unsolved-mathematics/actions/runs/45742865456)) | All 4 CI/Release/Pages workflows green (`0604df5`) |
 | 2026-11-26 | GitHub Actions (`ubuntu-latest` + `windows-latest`) | Ephemeral GitHub runners, Python 3.12, Lean 4.35.0 + `bwrap` | `v0.6.0` full CI (81-decl 6-kernel `bwrap` Lean + 3/3 live neg rejection + dual `.tsr`/`.ots` + 70 tests + 6/6 mutation + Build Standard `v1.2.0` 100%) + SLSA release + Pages + SWH full snapshot | PASS ([CI 45829951418](https://github.com/0thernes/unsolved-mathematics/actions/runs/45829951418), [Release 45829958516](https://github.com/0thernes/unsolved-mathematics/actions/runs/45829958516), [Pages 45829951468](https://github.com/0thernes/unsolved-mathematics/actions/runs/45829951468)) | All 4 workflows green (`4ce816d`); Software Heritage `swh:1:snp:c11ec8263dd64b986c52bb400b8c3a85a3e6a254` |
-| 2026-11-26 | Alexander S. Donahue (operator) | Windows 11, Python 3.12.10, Lean 4.35.0 (`eb6cafb7`), Tectonic 0.17.0 | `v0.7.0` 3-cycle `/goal` hardening: 102-decl 8-domain 6-kernel Lean replay (Complete Euclid–Euler, Euler $2p \mid q-1$, Collatz Fine–Wilf / $d\le 7$ / 1-&2-odd exclusion / catalytic cylinder), 3/3 live neg rejection, 0-warning visually inspected PDF + clean-room arXiv tarball, dual `.tsr` + `.ots`, 84 tests, 6/6 mutation, 19/19 `mypy`, `ruff` + `B023`, Build Standard `v1.2.0` 100.0% (`68/68`) | PASS | Local 6-kernel audit recorded in `lean/six_kernel_audit.txt`; Node 24 Ubuntu `bwrap` CI, `gitleaks`/`osv-scanner`, SLSA release & Pages deploy verified upon push to `main` |
+| 2026-11-26 | Alexander S. Donahue (operator) | Windows 11, Python 3.12.10, Lean 4.35.0 (`eb6cafb7`), Tectonic 0.17.0 | `v0.7.0` 3-cycle `/goal` hardening: 102-decl 8-domain 6-kernel Lean replay, 3/3 live neg rejection, 0-warning visually inspected PDF + clean-room arXiv tarball, dual `.tsr` + `.ots`, 84 tests, 6/6 mutation, 19/19 `mypy`, `ruff` + `B023`, Build Standard `v1.2.0` 100.0% (`68/68`) | PASS ([CI 45940334677](https://github.com/0thernes/unsolved-mathematics/actions/runs/45940334677), [Release 45940340185](https://github.com/0thernes/unsolved-mathematics/actions/runs/45940340185)) | Local 6-kernel audit recorded in `lean/six_kernel_audit.txt`; Node 24 Ubuntu `bwrap` CI, `gitleaks`/`osv-scanner`, SLSA release & Pages deploy verified green |
+| 2026-11-27 | GitHub Actions (`ubuntu-latest` + `windows-latest`) | Ephemeral GitHub runners, Python 3.12, Lean 4.35.0 + `bwrap` | `v0.8.1` full CI (120 curated problems, 59,396 daily-mirrored Left to Solve items across 26 `<4 MiB` shards, 102-decl 6-kernel `bwrap` Lean + 3/3 live neg rejection, zero-drift `rag/corpus.jsonl`, 87 tests, 6/6 mutation, 20/20 `mypy`) + Validate + Pages + SLSA release | PASS ([CI 45949011546](https://github.com/0thernes/unsolved-mathematics/actions/runs/45949011546), [Release 45949011416](https://github.com/0thernes/unsolved-mathematics/actions/runs/45949011416), [Pages 45949011485](https://github.com/0thernes/unsolved-mathematics/actions/runs/45949011485)) | All 4 workflows green (`8aeba1a`); immutable snapshot registered in `0thernes-research-archive` (`42a6081`) |

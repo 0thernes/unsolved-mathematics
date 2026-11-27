@@ -1,10 +1,10 @@
 # Formalization Roadmap (`lean/ROADMAP.md`)
 
-> **Status (`v0.7.0`, 2026-11-26):** Phases 1, 2A, 2B, 3, and 4 are **complete and 6-kernel verified** in pure Lean 4.35.0 Core (`autoImplicit = false`, commit `eb6cafb7290e8bd5f2937522d8d804f58f02bafc`, zero Mathlib, zero `sorry`/`admit`/`native_decide`/custom `axiom`; axioms strictly within `{propext, Classical.choice, Quot.sound}`). **66 headline theorems + 16 non-vacuity witnesses + 20 adversarial false-variant refutations = 102 audited declarations across 8 open-problem domains** (14 zero-axiom), plus live negative kernel rejection (`scripts/test_lean_negative.py`). See [`STATEMENT_FIDELITY.md`](STATEMENT_FIDELITY.md), [`Challenge.lean`](Challenge.lean), [`Solution.lean`](Solution.lean), [`NonVacuity.lean`](NonVacuity.lean), [`Adversarial.lean`](Adversarial.lean), and [`VerifyAxioms.lean`](VerifyAxioms.lean).
+> **Status (`v0.8.2`, 2026-11-27):** Phases 1, 2A, 2B, 3, and 4 are **complete and 6-kernel verified** in pure Lean 4.35.0 Core (`autoImplicit = false`, commit `eb6cafb7290e8bd5f2937522d8d804f58f02bafc`, zero Mathlib, zero `sorry`/`admit`/`native_decide`/custom `axiom` in all proof modules — `Challenge.lean` intentionally holds the 66 `sorry`-stated comparator specifications; axioms strictly within `{propext, Classical.choice, Quot.sound}`). **66 headline theorems + 16 non-vacuity witnesses + 20 adversarial false-variant refutations = 102 audited declarations across 8 open-problem domains** (14 zero-axiom), plus live negative kernel rejection (`scripts/test_lean_negative.py`). See [`STATEMENT_FIDELITY.md`](STATEMENT_FIDELITY.md), [`Challenge.lean`](Challenge.lean), [`Solution.lean`](Solution.lean), [`NonVacuity.lean`](NonVacuity.lean), [`Adversarial.lean`](Adversarial.lean), and [`VerifyAxioms.lean`](VerifyAxioms.lean).
 >
 > **Scope:** Trust infrastructure for The Unsolved Mathematics Atlas. This roadmap claims **no solution** to any open conjecture.
 
-## Completed & 6-Kernel Verified (`v0.3.0` – `v0.7.0`)
+## Completed & 6-Kernel Verified (`v0.3.0` – `v0.8.2`)
 
 ### Domain I — Collatz Structural Core, Fine–Wilf 2-Adic Ceilings & Cycle Obstructions ([`FormalAtlas/Collatz.lean`](FormalAtlas/Collatz.lean)) — 28 Headline Theorems
 1. [x] **Shortcut map & 2-adic definitions** (`T`, `TMinus`, `iter`, `parityBit`, `parityWord`, `wordIntercept`, `periodicBit`, `periodicPrefix`, `spineDenom`, `catCollatzStep`) — [`FormalAtlas/Defs.lean`](FormalAtlas/Defs.lean).
@@ -12,7 +12,7 @@
 3. [x] **Terras parity-word bijection (1976)** — `thm_terras_parity_word_bijection`.
 4. [x] **Descent certificate soundness & no finite 2-adic subcritical cover** — `thm_collatz_descent_certificate_sound`, `thm_collatz_no_finite_subcritical_cover`.
 5. [x] **Spine ladder identity & unconditional Positivity Localization ($\rho_w \le -1$)** — `thm_collatz_spine_ladder_identity`, `thm_collatz_positivity_localization`.
-6. [x] **$\varepsilon$-Invariance / sign-blindness barrier ($3n - 1$ positive cycles at `5` and `17`)** — `thm_collatz_epsilon_invariance_barrier`.
+6. [x] **$3n - 1$ sibling-map comparison (same Terras bijection + positive cycles at `5` and `17`; heuristic reading, not a formal barrier theorem)** — `thm_collatz_epsilon_invariance_barrier`.
 7. [x] **Böhm–Sontacchi cycle equation, cocycle append, negative cycles `-5`/`-17`** (`v0.4.0`) + **zero fixed point, intercept non-negativity, word length** (`v0.5.0`).
 8. [x] **Positive-cycle obstruction foundations (`v0.6.0`):** `thm_collatz_positive_cycle_has_odd_step`, `thm_collatz_positive_cycle_intercept_pos`, `thm_collatz_positive_cycle_subcritical` ($3^o < 2^d \land 2^d - 3^o \le c(w)$), and `thm_collatz_no_positive_cycle_d1` ($\forall x > 0,\ T(x) \ne x$).
 9. [x] **Unconditional 1- & 2-Odd-Step Positive-Cycle Exclusion for ALL $d \ge 1$ (`v0.7.0`):** `thm_collatz_positive_cycle_one_odd` and `thm_collatz_positive_cycle_two_odd` (proving $x \in \{1, 2\}$ for every positive cycle with $o \in \{1, 2\}$ of ANY period $d \ge 1$).
@@ -31,7 +31,7 @@
 18. [x] **Ramsey Theory** ([`FormalAtlas/Ramsey.lean`](FormalAtlas/Ramsey.lean), 4 thms): Exact first-principles determinations of **$R(3,3) = 6$** and **$R(3,4) = 9$**.
 19. [x] **Non-Vacuity, Adversarial & Live Negative Rejection Suites** ([`NonVacuity.lean`](NonVacuity.lean), [`Adversarial.lean`](Adversarial.lean), `scripts/test_lean_negative.py`): 16 concrete witnesses + 20 false-variant refutations + 3 live negative kernel/axiom-gate rejections guarding every domain.
 
-## Planned Next Targets (`v0.8.0+`)
+## Planned Next Targets (`v0.9.0+`)
 
 1. [ ] **Continued-fraction & Baker-style lower bounds** for nontrivial positive $3n+1$ cycle lengths ($o \ge 3$, building on `thm_collatz_positive_cycle_subcritical` and `thm_collatz_positive_cycle_two_odd` toward Eliahou 1993 / Hercher 2023).
 2. [ ] **Lonely Runner $n = 4$** constructive proof and **Ramsey $R(3,5) = 14$ / $R(4,4) = 18$** (Paley graph $P_{17}$ lower bound) in pure Lean Core.

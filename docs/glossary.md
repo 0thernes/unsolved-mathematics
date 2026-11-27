@@ -102,7 +102,7 @@ reader; each points at the problems where the idea is load-bearing.
 
 ---
 
-## Epistemic, Formal Verification & Build Standard Terms (`v0.7.0`)
+## Epistemic, Formal Verification & Build Standard Terms (`v0.8.2`)
 
 - **Composite Severity Score (CSS):** Deterministic 0–100 editorial ranking heuristic (`docs/methodology/RANKING.md`, pinned `CURRENT_YEAR = 2026`, tie-break `(-css, slug)`).
 - **Ten-Class Finding Taxonomy:** Build Standard `v1.2.0` classification partitioning findings into `bug`, `error`, `issue`, `problem`, `concern`, `dilemma`, `conflict`, `gap`, `hole`, and `blindspot`.

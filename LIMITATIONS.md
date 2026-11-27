@@ -19,7 +19,7 @@
 
 ## 2. Citation & Literature Verification Backlog
 
-- **Not all ~2,775 citations across the 120 dossiers are human-verified.** Automated primary-source resolution (`scripts/verify_citations.py`) verified **531** arXiv IDs and Crossref DOIs (445 across the original 106 dossiers plus 86/86 across the 14 dossiers added in `v0.8.0`) and purged 109 confirmed AI-hallucinated identifiers from the original corpus (logged transparently in `data/citation-verification-log.json`, 640 total records, 0 network errors), while `scripts/check_retractions.py` audited all **282 verified DOIs** with **0 retractions** (`data/retraction-audit.json`).
+- **Not all ~2,775 citations across the 120 dossiers are human-verified.** Automated primary-source resolution (`scripts/verify_citations.py`) verified **537** arXiv IDs and Crossref DOIs in strict 1-to-1 bijection with all 120 `problems/*/papers.md` tables (zero duplicate or bare IDs; 109 confirmed AI-hallucinated identifiers historically purged from the original corpus; logged transparently in `data/citation-verification-log.json`, 646 total records, 0 network errors), while `scripts/check_retractions.py` audited all **287 verified DOIs** with **0 retractions** (`data/retraction-audit.json`).
 - Historical pre-DOI citations (17th–20th century monographs, journal volumes without DOIs in the table) remain flagged `high-confidence`, `needs-verification`, or `ai-suggested`. Per [`docs/methodology/SOURCING.md`](docs/methodology/SOURCING.md), **only rows tagged `verified` may be cited directly as primary-source confirmed**; all other rows are research leads requiring source verification before downstream citation.
 
 ## 3. Meta-Analysis Panel Reality vs Design

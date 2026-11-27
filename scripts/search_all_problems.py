@@ -36,7 +36,7 @@ def search_atlas(
     limit: int = 25,
 ) -> list[dict[str, Any]]:
     """Search curated Atlas core problems in data/problems.json."""
-    if not PROBLEMS_JSON.exists():
+    if limit <= 0 or not PROBLEMS_JSON.exists():
         return []
     reg = json.loads(PROBLEMS_JSON.read_text(encoding="utf-8"))
     q = query.strip().lower()
@@ -84,7 +84,7 @@ def search_external(
     limit: int = 25,
 ) -> list[dict[str, Any]]:
     """Search all daily-mirrored Left to Solve items across all 25 sharded JSONL programs."""
-    if not SNAPSHOT.exists():
+    if limit <= 0 or not SNAPSHOT.exists():
         return []
     snap = json.loads(SNAPSHOT.read_text(encoding="utf-8"))
     q = query.strip().lower()

@@ -16,7 +16,7 @@
 \Urlmuskip=0mu plus 1.0mu
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta,positioning}
-\usepackage[colorlinks=true,linkcolor=blue!60!black,citecolor=teal!60!black,urlcolor=blue!60!black,pdftitle={The Unsolved Mathematics Atlas (v0.8.1): Six-Kernel Formal Core and Audit},pdfauthor={Alexander S. Donahue}]{hyperref}
+\usepackage[colorlinks=true,linkcolor=blue!60!black,citecolor=teal!60!black,urlcolor=blue!60!black,pdftitle={The Unsolved Mathematics Atlas (v0.8.2): Six-Kernel Formal Core and Audit},pdfauthor={Alexander S. Donahue}]{hyperref}
 
 \emergencystretch=3em
 \tolerance=1500
@@ -38,8 +38,8 @@
 \newcommand{\code}[1]{{\upshape\nolinkurl{#1}}}
 \newcommand{\hashcode}[1]{{\upshape\def\UrlBreaks{\do\:\do 0\do 1\do 2\do 3\do 4\do 5\do 6\do 7\do 8\do 9\do a\do b\do c\do d\do e\do f\do h\do n\do p\do s\do w}\nolinkurl{#1}}}
 
-\title[The Unsolved Mathematics Atlas (Version 0.8.1): Six-Kernel Formal Core \& Audit]{%
-  The Unsolved Mathematics Atlas (Version 0.8.1):\\
+\title[The Unsolved Mathematics Atlas (Version 0.8.2): Six-Kernel Formal Core \& Audit]{%
+  The Unsolved Mathematics Atlas (Version 0.8.2):\\
   A Standalone Eight-Domain, Six-Kernel\\
   Lean 4.35.0 Formal Core, Citation \& Retraction Audit,\\
   and Cross-Atlas Epistemic Verification Framework}
@@ -49,7 +49,7 @@
 \email{0\_0@0thernes.art}
 \urladdr{https://github.com/0thernes/unsolved-mathematics}
 \thanks{ORCID: \href{https://orcid.org/0009-0006-8168-9648}{\texttt{0009-0006-8168-9648}}.
-Repository release \texttt{v0.8.1} (November 27, 2026; Archive ID \texttt{0TH-BUILD-004};
+Repository release \texttt{v0.8.2} (November 27, 2026; Archive ID \texttt{0TH-BUILD-004};
 Lean 4.35.0 commit \hashcode{eb6cafb7290e8bd5f2937522d8d804f58f02bafc}; Software Heritage prior
 snapshot \hashcode{swh:1:snp:c11ec8263dd64b986c52bb400b8c3a85a3e6a254}).
 All Lean 4.35.0 proofs and Python tools are MIT-licensed; original prose, tables, and datasets are
@@ -67,14 +67,16 @@ problem, Ramsey theory, citation verification, RFC 3161 timestamps, FAIR dataset
 Large language models can rapidly draft mathematical surveys, yet unverified AI-assisted
 corpora suffer systematically from fabricated bibliographic identifiers, unhedged proof claims,
 definitional drift, silent indexing collisions, and opaque provenance. We present
-\textbf{The Unsolved Mathematics Atlas} (\texttt{v0.8.1}), an open, reproducible, FAIR-indexed
+\textbf{The Unsolved Mathematics Atlas} (\texttt{v0.8.2}), an open, reproducible, FAIR-indexed
 catalog of 120 unsolved mathematical problems across 38 fields paired with an end-to-end
 epistemic verification stack. Our contributions are fourfold.
-First, live primary-source auditing across 640 identifier-bearing rows verified \textbf{531}
-identifiers via arXiv and Crossref APIs (445 in the initial 554-row sweep plus 86/86 in 14 new
-\texttt{v0.8.0} dossiers) while purging \textbf{109 invalid identifiers (19.7\% initial corruption,
-peaking at 36.4\% in Dynamical Systems)}; Crossref/DataCite auditing of all \textbf{282} verified
-DOIs confirmed \textbf{0 retractions} and logged \textbf{3 publisher errata}.
+First, live primary-source auditing across 646 identifier-bearing rows verified \textbf{537}
+identifiers via arXiv and Crossref APIs in exact 1-to-1 bijection with all 120 \code{papers.md}
+tables (445 in the initial 554-row sweep, 86/86 in 14 new \texttt{v0.8.0} dossiers, and 11/11
+live-verified replacements/bijection closures in \texttt{v0.8.2}, zero duplicate or bare IDs)
+while purging \textbf{109 invalid identifiers (19.7\% initial corruption, peaking at 36.4\% in
+Dynamical Systems)}; Crossref/DataCite auditing of all \textbf{287} verified DOIs confirmed
+\textbf{0 retractions} and logged \textbf{3 publisher errata}.
 Second, we build a standalone, zero-Mathlib \textbf{Lean 4.35.0} formal core (\code{lean/},
 \code{autoImplicit = false}) certifying \textbf{66 headline theorems}, 16 non-vacuity witnesses,
 and 20 adversarial false-variant refutations (\textbf{102 audited declarations}, 14 zero-axiom)
@@ -87,12 +89,14 @@ and Euler's $2p \mid q-1$), and Ramsey ($R(3,3)=6$, $R(3,4)=9$). Proof modules u
 \code{sorry}/\code{native_decide} (\code{Challenge.lean} holds the 66 \code{sorry} specs),
 depend only on \texttt{\{propext, Classical.choice, Quot.sound\}}, and pass six Lean kernels plus
 \code{lake comparator}. Third, a Cross-Atlas audit against \code{unsolved-problems-mega-atlas}
-(1,900 problems; 190-problem curated crosswalk) affirms \textbf{0/1,900} retirements, and a daily
-sharded mirror of all 25 Left to Solve programs (59,396 items) links 112 of 120 Atlas problems
-without altering an Atlas status. Fourth, multi-cycle hardening achieves 98.5\% (67/68) Build
-Standard \texttt{v1.2.0} compliance (sole flag: \code{A23} on the automated daily sync bot
-commit), 87 passing tests, 6/6 mutation kill, zero \code{mypy} errors across 20 modules, FAIR
-RO-Crate/Croissant metadata, and dual RFC~3161 + Bitcoin OTS proofs.
+(\texttt{v2.10.0}, 2,000 problems; 290-problem curated crosswalk) affirms \textbf{0/2,000}
+retirements across 56 archive entries, and a daily sharded mirror of all 25 Left to Solve
+programs (59,396 items) links 112 of 120 Atlas problems without altering an Atlas status. Fourth,
+three-cycle ten-subsystem hardening achieves 98.5\% (67/68) Build Standard \texttt{v1.2.0}
+compliance (sole flag: \code{A23} on historical bot commit \code{8bce1ba}; workflow fixed for
+all future syncs), 95 passing tests, 10/10 (100\%) mutation kill, zero
+\code{mypy --check-untyped-defs} errors across 20 modules, FAIR RO-Crate/Croissant metadata, and
+dual RFC~3161 + Bitcoin OTS proofs over a 42-file SHA-256 manifest.
 \textbf{No open conjecture in the catalog is claimed to be solved by this work.}
 \end{abstract}
 
@@ -105,7 +109,7 @@ asymmetry: generating a fluent survey or plausible proof sketch requires seconds
 exposing a hallucinated DOI, an unstated Lean axiom, a hidden implicit variable, a vacuous
 hypothesis, or a sign-blind Collatz heuristic requires disciplined mechanical infrastructure.
 \emph{The Unsolved Mathematics Atlas} (\url{https://github.com/0thernes/unsolved-mathematics},
-release \texttt{v0.8.1}) treats epistemic honesty and machine-checked falsifiability as its
+release \texttt{v0.8.2}) treats epistemic honesty and machine-checked falsifiability as its
 primary engineering invariants.
 
 To eliminate any ambiguity for human referees, institutional evaluators, or automated indexing
@@ -134,7 +138,7 @@ and withdrawal policy.
 
 \begin{table}[htbp]
 \centering
-\caption{Numbered Claims Ledger (1-to-1 Parity with \code{CLAIMS.md}, Release \texttt{v0.8.1}).}
+\caption{Numbered Claims Ledger (1-to-1 Parity with \code{CLAIMS.md}, Release \texttt{v0.8.2}).}
 \label{tab:claims}
 \scriptsize
 \setlength{\tabcolsep}{3.5pt}
@@ -148,12 +152,12 @@ ID & Epistemic Tag & Headline Claim & Falsification Trigger \\
 \code{C-04} & \code{kernel-checked} & Erd\H{o}s--Straus Mordell 834/840, closure, symmetry, $2\le n\le 30$, 6 squares & Counterexample outside 6 classes or cleared-denominator mismatch \\
 \code{C-05} & \code{kernel-checked} & Lonely Runner $n\le 3$ + sharpness; Brocard $\le 20$; Primes/Twins; Goldbach $\le 100$; Complete Euclid--Euler \& $2p\mid(q-1)$; Ramsey $R(3,3)=6, R(3,4)=9$ & Arithmetic counterexample over $\Z/\Q$ or kernel rejection \\
 \code{C-06} & \code{computational-certificate} & Collatz Odd-Unit-Lock scripts are bounded negative/structural diagnostics only & Failure in \code{test_collatz_instruments.py} or numerical discrepancy \\
-\code{C-07} & \code{primary-source-verified} & 531 identifiers API-verified (640 audited); 109 bad IDs purged; 0/282 DOIs retracted (3 errata) & Re-query returning 404, mismatch, or retraction on a \code{verified} row \\
-\code{C-08} & \code{primary-source-verified} & Statuses updated through 2026-11-27; 0/1,900 Mega-Atlas problems retired & Withdrawal of \code{2605.20695} or peer-reviewed settlement of an open entry \\
+\code{C-07} & \code{primary-source-verified} & 537 identifiers API-verified in 1-to-1 log bijection (646 audited); 109 bad IDs purged; 0/287 DOIs retracted (3 errata) & Re-query returning 404, mismatch, duplicate, or retraction on a \code{verified} row \\
+\code{C-08} & \code{primary-source-verified} & Statuses updated through 2026-11-27; 0/2,000 Mega-Atlas problems retired across 56 archive entries & Withdrawal of \code{2605.20695} or peer-reviewed settlement of an open entry \\
 \code{C-09} & \code{editorial-synthesis} & CSS rankings are deterministic editorial heuristics, not objective depth scores & Non-deterministic ordering or cross-file CSS/rank drift \\
 \code{C-10} & \code{machine-checked-ci} & 1/4 AI passes (Claude 2026-06-14, \code{claude-opus-4-8}) on initial 106; 14 \texttt{v0.8.0} pending; 0/120 human peer reviews & Any unlogged claim of independent multi-model or human peer sign-off \\
-\code{C-11} & \code{machine-checked-ci} & Derived views \& 3,979 RAG chunks deterministic, LF-only, zero local paths & Non-empty \code{git diff} after rebuild, duplicate chunk ID, or local path leak \\
-\code{C-12} & \code{machine-checked-ci} & 87 passing tests (unit, neg, Hypothesis, oracle, metamorphic, external) + 6/6 mutation kill & Any failing regression test or surviving mutant in \code{mutation_check.py} \\
+\code{C-11} & \code{machine-checked-ci} & Derived views \& 3,985 RAG chunks (822,714 tokens) deterministic, LF-only, zero local paths & Non-empty \code{git diff} after rebuild, duplicate chunk ID, or local path leak \\
+\code{C-12} & \code{machine-checked-ci} & 95 passing tests (unit, neg, Hypothesis, oracle, metamorphic, external) + 10/10 mutation kill & Any failing regression test or surviving mutant in \code{mutation_check.py} \\
 \code{C-13} & \code{machine-checked-ci} & SHA-256 manifest, DigiCert \code{.tsr} + Bitcoin \code{.ots}, SWHID, and SLSA release & Hash/imprint mismatch or invalid SLSA provenance attestation \\
 \code{C-14} & \code{machine-checked-ci} & Daily full 25-program / 59,396-item mirror ($<4$\,MB shards, \code{solved_by_kind}) never alters Atlas status & \code{--check} failure, shard $\ge 5$\,MB, excerpt leak, or mirror-driven status change \\
 \bottomrule
@@ -171,7 +175,7 @@ derived artifacts---\code{data/problems.json}, \code{RANKING.md}, the master tab
 \code{README.md}, all 120 per-problem dossier headers, five cross-cutting indexes under
 \code{docs/indexes/}, the interactive web explorer, Proof Blueprint, and programs mirror
 (\code{_site/{index,blueprint,programs}.html}), and the offline BM25 retrieval corpus
-(\code{rag/corpus.jsonl}, 3,979 unique chunks across 821,708 deterministic tokens)---are
+(\code{rag/corpus.jsonl}, 3,985 unique chunks across 822,714 deterministic tokens)---are
 generated reproducibly with zero-drift checks enforced on every CI push.
 
 \subsection{Composite Severity Score (Editorial Heuristic)}
@@ -191,7 +195,7 @@ verbatim from \code{data/problems.json}.
 
 \begin{table}[htbp]
 \centering
-\caption{Top 15 Ranked Problems in \code{data/problems.json} (\texttt{v0.8.1}, 120 Problems, Frozen Reference Year 2026).}
+\caption{Top 15 Ranked Problems in \code{data/problems.json} (\texttt{v0.8.2}, 120 Problems, Frozen Reference Year 2026).}
 \label{tab:top15}
 \footnotesize
 \setlength{\tabcolsep}{4pt}
@@ -224,7 +228,7 @@ Forensic auditing of pre-\texttt{v0.3.0} releases exposed a silent key-collision
 chunk IDs across roughly 80\% of multi-heading sections, silently overwriting vectors during
 dense indexing. Replacing that logic with a monotonic per-\code{(slug, section)} counter
 eliminated all duplicates (enforced by \code{scripts/validate.py} and regression-tested in
-\code{tests/}). Release \texttt{v0.8.1} ships machine-readable FAIR dataset descriptors
+\code{tests/}). Release \texttt{v0.8.2} ships machine-readable FAIR dataset descriptors
 conforming to \textbf{RO-Crate 1.1} (\code{ro-crate-metadata.json}) and \textbf{MLCommons
 Croissant 1.0} (\code{croissant.json})---now checked directly by \code{validate.py} for version
 parity against \code{VERSION}---plus dual third-party cryptographic timestamp proofs over
@@ -246,8 +250,9 @@ DataCite (\code{10.48550/*} arXiv DOIs).
 
 \begin{table}[htbp]
 \centering
-\caption{Aggregate live primary-source citation audit and Crossref/DataCite retraction audit (\texttt{v0.8.1}).}
+\caption{Aggregate live primary-source citation audit and Crossref/DataCite retraction audit (\texttt{v0.8.2}).}
 \label{tab:citations}
+\footnotesize
 \begin{tabular}{@{}lrr@{}}
 \toprule
 Audit Metric & Count & Share / Note \\
@@ -258,9 +263,10 @@ Initial 106-dossier audit rows queried live & 554 & 100.0\% (0 network errors) \
 \quad Identifier not found / HTTP 404 (purged) & 23 & 4.2\% (stripped to ``---'') \\
 \quad Invalid/hallucinated IDs eliminated (initial) & \textbf{109} & \textbf{19.7\% initial corruption} \\
 New \texttt{v0.8.0} 14-dossier rows verified live & \textbf{86} & \textbf{100.0\% verified (0 bad)} \\
-Cumulative verified / total audited records & \textbf{531 / 640} & 0 network errors \\
+\texttt{v0.8.2} bijection closure (Collatz/bare/dup) & \textbf{+6 net} & \textbf{11/11 live; 4 dupes fixed} \\
+Cumulative verified / total audited records & \textbf{537 / 646} & Exact 1-to-1 log bijection \\
 \midrule
-Verified DOIs audited for retraction notices & \textbf{282} & 100.0\% (0 network errors) \\
+Verified DOIs audited for retraction notices & \textbf{287} & 100.0\% (0 network errors) \\
 \quad Confirmed retractions / withdrawals & \textbf{0} & 0.0\% \\
 \quad Publisher errata / corrections logged & 3 & Transparently recorded \\
 \bottomrule
@@ -343,8 +349,8 @@ The three verified DOIs carrying official publisher errata or corrections (zero 
 \code{10.1007/s00222-017-0749-x} (correction \code{10.1007/s00222-021-01095-5}),
 \code{10.1007/s002220050350} (erratum \code{10.1007/s00222-017-0751-3}), and
 \code{10.1186/s40687-014-0012-7} (erratum \code{10.1186/s40687-015-0033-x}).
-Roughly 2,100 historical pre-DOI bibliography rows remain explicitly flagged
-\code{high-confidence}, \code{needs-verification}, or \code{ai-suggested}.
+The remaining 2,245 non-verified bibliography rows (out of 2,782 total across all 120 dossiers)
+remain explicitly flagged \code{high-confidence}, \code{needs-verification}, or \code{ai-suggested}.
 
 \section{Standalone Eight-Domain Lean 4.35.0 Formal Core}\label{sec:lean}
 
@@ -355,7 +361,7 @@ tracked \code{lean/lake-manifest.json}, zero \code{.lean} symlinks, and strict
 \code{autoImplicit = false} in \code{lean/lakefile.toml} (preventing silent unbound variable
 generalization). Every \code{.lean} file opens with \code{module} (Palomar isolation rule), and
 \code{lean/Challenge.lean} holds only the 66 isolated theorem signatures ($290$ lines,
-$14.6$\,KiB, well beneath Palomar's $1{,}000$-line / $100$\,KiB caps) judged by
+$13.7$\,KiB, well beneath Palomar's $1{,}000$-line / $100$\,KiB caps) judged by
 \code{lake comparator} against \code{lean/Solution.lean}.
 
 \begin{figure}[htbp]
@@ -399,7 +405,7 @@ $14.6$\,KiB, well beneath Palomar's $1{,}000$-line / $100$\,KiB caps) judged by
   \draw[arr] (adv.east) -- (kern.west);
 \end{tikzpicture}%
 }
-\caption{Eight-domain, six-kernel architecture of \code{FormalAtlas} (\code{lean/}, \texttt{v0.7.0}, 102 audited declarations).}
+\caption{Eight-domain, six-kernel architecture of \code{FormalAtlas} (\code{lean/}, \texttt{v0.8.2}, 102 audited declarations).}
 \label{fig:lean-arch}
 \end{figure}
 
@@ -560,7 +566,7 @@ Lean Declaration & Mathematical Object & Exact Fidelity Notes \\
 
 \begin{table}[htbp]
 \centering
-\caption{Independent Six-Kernel Replay \& Live Negative Rejection Verdict Across All 102 Declarations (\texttt{v0.7.0}).}
+\caption{Independent Six-Kernel Replay \& Live Negative Rejection Verdict Across All 102 Declarations (\texttt{v0.8.2}).}
 \label{tab:kernels}
 \footnotesize
 \begin{tabularx}{\textwidth}{@{}lll>{\raggedright\arraybackslash}X@{}}
@@ -585,23 +591,23 @@ verbatim \texttt{\#print axioms} parity between \code{VerifyAxioms.lean}, \code{
 and \code{README.md} plus extended Playbook \texttt{v1.3} forbidden-token, \code{lake-manifest.json},
 and zero-symlink guards on every CI run.
 
-\section{Cross-Atlas Resolution Audit (1,900 Macro Problems)}\label{sec:crossatlas}
+\section{Cross-Atlas Resolution Audit (2,000 Macro Problems)}\label{sec:crossatlas}
 
 To guarantee strict consistency across sibling repositories, \code{docs/CROSS_ATLAS_AUDIT_2026-11-25.md}
-reconciles \code{unsolved-mathematics} (\texttt{v0.8.1}, Archive ID \code{0TH-BUILD-004}, 120 problems)
-and all companion \code{0thernes-research-archive} entries against \code{unsolved-problems-mega-atlas}
-(1,900 deduplicated problems; historical \texttt{v2.7.0} baseline commit \texttt{541f093} with 103
-internal Lean invariants and 16 archive entries across 76 public repositories; upgraded in
-\texttt{v2.9.0} with a 190-problem curated Left to Solve crosswalk). Table~\ref{tab:crossatlas}
-summarizes representative companion entries synchronized verbatim with the Mega-Atlas \texttt{v2.7.0}
-baseline: every overarching Mega-Atlas parent problem remains explicitly \textbf{OPEN}
-(\textbf{0 / 1,900 retired}).
+reconciles \code{unsolved-mathematics} (\texttt{v0.8.2}, Archive ID \code{0TH-BUILD-004}, 120 problems)
+and all companion \code{0thernes-research-archive} entries (56 public entries: 27 Tier~I papers,
+17 Tier~II builds, 12 Tier~III discoveries) against \code{unsolved-problems-mega-atlas}
+(live \texttt{v2.10.0} commit \texttt{9c543fc}: \textbf{2,000} deduplicated problems with a
+\textbf{290}-problem curated Left to Solve crosswalk, expanding from the \texttt{v2.7.0} baseline
+of 1,900 problems). Table~\ref{tab:crossatlas} summarizes representative companion entries: every
+overarching Mega-Atlas parent problem remains explicitly \textbf{OPEN}
+(\textbf{0 / 2,000 retired}).
 
 \begin{table}[htbp]
 \centering
 \caption{Synchronized Cross-Atlas Non-Retirement Audit Against \code{unsolved-problems-mega-atlas}
-(\texttt{v2.7.0} snapshot, 1,900 Macro Problems, 16 Archive Entries Across 76 Public Repos). All
-companion preprints are self-published and pending external peer review.}
+(\texttt{v2.10.0} live catalog, 2,000 Macro Problems, 56 Archive Entries). All companion
+preprints are self-published and pending external peer review.}
 \label{tab:crossatlas}
 \scriptsize
 \begin{tabularx}{\textwidth}{@{}ll>{\raggedright\arraybackslash}Xl@{}}
@@ -617,7 +623,7 @@ Archive ID & Parent Mega-Atlas ID(s) & Narrowly Scoped Result (Lean 4.35.0, 6/6 
 \code{0TH-2026-013} & \code{CS-001}, \code{CS-005}, \code{CS-010/12} & 14 unconditional complexity-barrier theorems + 4 heuristic refutations & \textbf{OPEN} \\
 \code{0TH-2026-014..016} & \code{CM-018}, \code{ALG-035}, \code{CS-049}+ & 150 decls across non-Hermitian knots, fracton codes \& odd-cycle capacity & \textbf{OPEN} \\
 \code{0TH-2026-007/8} & \code{NEURO-001}, \code{NEURO-019} & 24 biophysical invariants; refuted $40$\,Hz ATP ($f_{\mathrm{crit}}=29.5625$\,Hz) & \textbf{OPEN} \\
-\code{0TH-BUILD-004} & \code{NT-005}, \code{NT-066}, \code{NT-078}+ & \textbf{This Atlas (\texttt{v0.8.1}):} 120 dossiers + 66 Lean thms (102 decls, 8 domains) & \textbf{OPEN} \\
+\code{0TH-BUILD-004} & \code{NT-005}, \code{NT-066}, \code{NT-078}+ & \textbf{This Atlas (\texttt{v0.8.2}):} 120 dossiers + 66 Lean thms (102 decls, 8 domains) & \textbf{OPEN} \\
 \code{0TH-BUILD-001..012} & \code{SUB-032}, \code{CS-053}, \code{BIO-001}+ & Companion formal builds ($p$-adic AdS/CFT, RS MDS, A-Life Omega, HW) & \textbf{OPEN} \\
 \bottomrule
 \end{tabularx}
@@ -659,48 +665,52 @@ are enforced in CI (claim \code{C-14}).
 
 \section{Multi-Cycle, Ten-Class Hardening Audit and Verification Ladder}\label{sec:hardening}
 
-Releases \texttt{v0.4.0}--\texttt{v0.8.1} underwent full multi-cycle forensic hardening across
-all 1,890+ tracked files, classifying every finding strictly into the ten classes of Build
-Standard \texttt{v1.2.0} (\code{bug}, \code{error}, \code{issue}, \code{problem}, \code{concern},
-\code{dilemma}, \code{conflict}, \code{gap}, \code{hole}, \code{blindspot}; full ledger in
+Releases \texttt{v0.4.0}--\texttt{v0.8.2} underwent full multi-cycle forensic hardening across
+all 1,997 tracked files indexed across 10 subsystems in \code{HARDENING_INDEX.md}, classifying
+every finding strictly into the ten classes of Build Standard \texttt{v1.2.0} (\code{bug},
+\code{error}, \code{issue}, \code{problem}, \code{concern}, \code{dilemma}, \code{conflict},
+\code{gap}, \code{hole}, \code{blindspot}; complete ledger in
 \code{docs/reviews/2026-11-25-three-cycle-hardening-audit.md}). Table~\ref{tab:hardening}
-records representative resolved defects across all ten classes, including the \texttt{v0.7.0}
-3-cycle audit catches (\code{B023} closure capture, 13 hidden \code{mypy} errors across 6 scripts,
-the ``Bochner--Riesel'' typo, stale 2025 RH worked example, extended Playbook forbidden-token
-checks, and Node 24 \code{@v7}/\code{@v5}/\code{@v4} + \code{gitleaks}/\code{osv-scanner} CI).
+records representative resolved defects across all ten classes, culminating in the \texttt{v0.8.2}
+three-cycle sweep (fixing unescaped Markdown table pipes, 14 3-column \code{mathematicians.md}
+tables, odd \code{\$} math delimiters, 4 duplicate / 3 bare / 6 unlogged citation rows,
+\code{search_all_problems.py --limit 0}, \code{repo.yaml} invalid \code{lean4} enum, 4 residual
+statement-audit strings in \code{build_site.py}, and the \code{sync-external.yml} bot committer).
 
 \begin{table}[htbp]
 \centering
-\caption{Representative Hardening Findings Across All Ten Build Standard \texttt{v1.2.0} Classes (\texttt{v0.4.0}--\texttt{v0.7.0}).}
+\caption{Representative Hardening Findings Across All Ten Build Standard \texttt{v1.2.0} Classes (\texttt{v0.4.0}--\texttt{v0.8.2}).}
 \label{tab:hardening}
 \scriptsize
 \begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
 \toprule
 Class & Defect Detected & Resolution \& Guard \\
 \midrule
-\code{bug} & \code{B023} loop-closure capture in \code{odd_unit_lock_target_tail_lab.py}; \code{NameError} in \code{bridge_refinement.py}; missing \code{-LiteralPath} in \code{build.ps1}; missing $1/2$ witness in \code{test_properties.py} & Fixed closure default arg, relocated block, added \code{-LiteralPath} \& \code{Fraction(1,2)}; \code{ruff E9/F82/B023} guard \\
-\code{error} & ``Bochner--Riesel'' typo in \code{glossary.md}; stale 2025 RH example (\code{89.87}) in \code{RANKING.md}; 13 \code{mypy} errors in 6 scripts; overstated \code{verified}/\code{Zenodo} prose & Corrected to ``Bochner--Riesz'', \code{89.933}, 0 \code{mypy} errors, honest API/Prepared wording \\
-\code{issue} & 89 tracked non-PS1 files carried CRLF endings; Node 20 GitHub Actions deprecation warnings & Enforced LF everywhere; upgraded all workflows to Node 24 \code{@v7}/\code{@v5}/\code{@v4} \\
+\code{bug} & Unescaped \code{|} splitting tables in 6 dossiers; 14 3-col \code{mathematicians.md}; odd \code{\$} in 3 dossiers + \code{beal-conjecture.md}; \code{search_all_problems --limit 0}; \code{B023}/\code{NameError} & Escaped \code{\lvert...\rvert}, standardized 5-col tables, fixed math \& \code{limit<=0}; guarded by \code{check_dossiers --strict}, \code{check_papers}, \code{ruff B023}, mutants M7--M10 \\
+\code{error} & 4 duplicate / 3 bare / 6 unlogged citations; \code{repo.yaml} invalid \code{lean4} enum; 4 residual statement-audit strings in \code{build_site.py}; untyped \code{build_indexes.py}; ``Bochner--Riesel'' typo & Live-verified 11/11 rows (537/537 bijection, 287/287 DOIs 0 retracted); \code{stack: [python, other]}; fixed \code{build_site.py}; \code{mypy --check-untyped-defs} 20/20 clean \\
+\code{issue} & 89 CRLF files; Node 20 Actions deprecation; literal backticked \code{\$} in 5 Erd\H{o}s dossiers & Enforced LF everywhere; upgraded workflows to Node 24 \code{@v7}/\code{@v5}/\code{@v4}; cleaned code spans \\
 \code{problem} & Windows lacks Linux \code{bwrap} for \code{lake check} & Local 6-kernel binary replay + Ubuntu \code{bwrap} CI \\
 \code{concern} & 9 July 2026 Collatz files leaked local machine paths & Sanitized to relative paths + pytest negative guard \\
-\code{dilemma} & Migrating \code{formal/} $\to$ \code{lean/} vs.\ breaking legacy URLs & \code{git mv} + redirect stub \code{formal/ROADMAP.md} \\
-\code{conflict} & CI \code{ruff}/\code{mypy} lacked \code{continue-on-error: true} (R1); \code{faq.md} vs.\ \code{LIMITATIONS.md} session label & Made CI linters/scanners report-only; reconciled \code{claude-opus-4-8} + regression test \\
-\code{gap} & Missing 10-class \code{finding.yml}, \code{gitleaks}/\code{osv-scanner}, literature/export log, RO-Crate/Croissant version check & Added \code{finding.yml}, SHA-256-pinned scanners, \code{LITERATURE_AND_EXPORT_CONTROL.md}, extended \code{validate.py} \\
-\code{hole} & \code{check_readme_axioms.py} missed \code{private axiom}/\code{implemented_by}/\code{@[extern]}/\code{@[csimp]}/symlinks; \code{isqrt} fuel cap & Upgraded regex to full Playbook \texttt{v1.3} \S1 + manifest/symlink checks; proved \code{isqrt_spec} $\forall n$ \\
-\code{blindspot} & Verified DOIs unaudited for retractions; no live negative Lean rejection test & Added \code{check_retractions.py} \& \code{test_lean_negative.py} (3/3 live rejections) \\
+\code{dilemma} & Migrating \code{formal/} $\to$ \code{lean/} vs.\ breaking legacy URLs; preserving git history for \code{A23} & \code{git mv} + redirect stub; switched future sync commits off bot while honestly disclosing \code{8bce1ba} \\
+\code{conflict} & \code{sync-external.yml} used \code{github-actions[bot]} vs.\ Build Standard \code{A23}; CI R1 report-only; \code{faq.md} session label & Switched committer to verified author + pytest guard; report-only CI linters; reconciled \code{claude-opus-4-8} \\
+\code{gap} & Missing \code{HARDENING_INDEX.md}, M7--M10 mutants, 10-class \code{finding.yml}, \code{gitleaks}/\code{osv-scanner}, export-control log & Added \code{HARDENING_INDEX.md}, 8 new tests (95 total), 4 new mutants (10/10), SHA-256-pinned scanners \\
+\code{hole} & \code{check_dossiers --strict} missed columns/bijection/math; \code{validate.py} skipped \code{meta-analyses/}/\code{lean/} links; \code{check_papers} missed \code{\$}; \code{MANIFEST} missed \code{lake-manifest.json} & Hardened all four gates (42-file SHA-256 manifest) + Playbook \texttt{v1.3} \S1 Lean token/symlink audit \\
+\code{blindspot} & Verified DOIs unaudited for retractions; no live negative Lean check; Riesel open-candidate count drift (\code{~40} vs.\ ``four dozen'') & Added \code{check_retractions.py} (287/287), \code{test_lean_negative.py} (3/3), verified exact 41 Riesel candidates \\
 \bottomrule
 \end{tabularx}
 \end{table}
 
 Automated verification achieves \textbf{98.5\% (67/68)} Build Standard \texttt{v1.2.0}
 structure and completion compliance (\textbf{27/28} core; the sole flag is \code{A23} triggered by
-the automated \code{github-actions[bot]} daily external-sync commit in git history, while all
-human commits carry verified author identity) on both Windows and Linux Ubuntu,
-\textbf{87} passing pytest, Hypothesis, oracle, metamorphic, and external-mirror tests,
-\textbf{100.0\% (6/6)} targeted mutation kill rate, zero \code{ruff} and zero \code{mypy} errors
-across all 20/20 core Python modules, SHA-256 manifests (\code{data/MANIFEST.sha256}) bound by
-DigiCert RFC~3161 (\code{.tsr}) and Bitcoin OpenTimestamps (\code{.ots}) cryptographic proofs,
-SHA-256-verified \code{gitleaks} and \code{osv-scanner} CI audits, and GitHub SLSA build provenance.
+the historical \code{github-actions[bot]} commit \code{8bce1ba} in git history, while
+\code{sync-external.yml} has been switched to verified author identity for all future runs) on
+both Windows and Linux Ubuntu, \textbf{95} passing pytest, Hypothesis, oracle, metamorphic, and
+external-mirror tests, \textbf{100.0\% (10/10)} targeted mutation kill rate, zero \code{ruff} and
+zero \code{mypy --check-untyped-defs} errors across all 20/20 core Python modules, zero
+\code{repo-standard.schema.json} errors, a 42-file SHA-256 manifest (\code{data/MANIFEST.sha256})
+bound by DigiCert RFC~3161 (\code{.tsr}) and Bitcoin OpenTimestamps (\code{.ots}) cryptographic
+proofs, SHA-256-verified \code{gitleaks} and \code{osv-scanner} CI audits, and GitHub SLSA build
+provenance.
 
 \section{Limitations, Governance, Data Availability, and Replication}\label{sec:governance}
 
@@ -711,9 +721,9 @@ SHA-256-verified \code{gitleaks} and \code{osv-scanner} CI audits, and GitHub SL
     Only 1 of 4 planned AI meta-review passes (Claude self-review on 2026-06-14, recorded under
     the historical non-canonical session label \code{claude-opus-4-8}) has run across the initial
     106 dossiers; all 4 AI panels remain \code{pending} on the 14 \texttt{v0.8.0} dossiers.
-  \item \textbf{Pre-DOI citation backlog:} Roughly 2,140 historical rows without DOIs in
-    \code{papers.md} remain unverified research leads; only the 531 \code{verified} rows are
-    API-confirmed.
+  \item \textbf{Pre-DOI citation backlog:} The remaining 2,245 non-verified bibliography rows
+    (out of 2,782 total across all 120 \code{papers.md} tables) remain unverified research leads;
+    only the 537 \code{verified} rows are API-confirmed in strict 1-to-1 log bijection.
   \item \textbf{Collatz repository footprint asymmetry:} \code{problems/collatz-conjecture/}
     retains $\sim 58$\,MB of July 2026 experimental logs compared to $\sim 30$\,KB median for
     the remaining 119 dossiers, tracked as an open architectural roadmap trade-off.
@@ -728,7 +738,7 @@ All code, Lean 4.35.0 proofs, JSON/YAML datasets, RAG corpora, FAIR descriptors
 (\code{data/external/}), and LaTeX/BibTeX sources are archived publicly at
 \url{https://github.com/0thernes/unsolved-mathematics}, preserved in Software Heritage
 (verified \texttt{v0.6.0} full snapshot
-\hashcode{swh:1:snp:c11ec8263dd64b986c52bb400b8c3a85a3e6a254}, with \texttt{v0.8.1} queued upon tag),
+\hashcode{swh:1:snp:c11ec8263dd64b986c52bb400b8c3a85a3e6a254}, with \texttt{v0.8.2} queued upon tag),
 and registered under Archive ID \code{0TH-BUILD-004} in
 \url{https://github.com/0thernes/0thernes-research-archive}.
 A structured primary-literature search audit log and a fundamental-research export-control
@@ -748,11 +758,12 @@ deterministic test suites. The author declares no competing financial interests 
 institutional or corporate LLC affiliation.
 
 \subsection{Clean-Clone Replication Protocol}
-From a clean clone of tag \texttt{v0.8.1}:
+From a clean clone of tag \texttt{v0.8.2}:
 {\small
 \begin{verbatim}
 python -m pip install -r requirements-lock.txt
 python scripts/generate.py --check && python scripts/validate.py
+python scripts/check_dossiers.py --strict
 python scripts/check_papers.py && python scripts/proof_claim_sweep.py
 python scripts/check_retractions.py --check
 python scripts/check_readme_axioms.py
@@ -760,7 +771,7 @@ python scripts/sync_external_programs.py --check
 python scripts/build_data_manifest.py --check
 python scripts/timestamp_manifest.py --check
 python -m pytest -v tests/ && python tests/mutation_check.py
-mypy --explicit-package-bases scripts rag examples
+mypy --explicit-package-bases --check-untyped-defs scripts rag examples
 python scripts/test_lean_negative.py
 cd lean && lake build Challenge Solution NonVacuity Adversarial
 lake env lean VerifyAxioms.lean

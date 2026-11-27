@@ -2,11 +2,11 @@
 # Keep each item on one line. status: done | todo | partial | n/a (n/a needs a note).
 standard: "1.2.0"
 name: "unsolved-mathematics"
-description: "An audited, ranked, research-grade atlas of 106 unsolved mathematical problems with a zero-Mathlib Lean 4.35.0 multi-kernel formal core, primary-source verified citations, and deterministic RAG corpus."
+description: "An audited, ranked, research-grade atlas of 120 unsolved mathematical problems (+ 59,396 daily-mirrored Left to Solve items) with a zero-Mathlib Lean 4.35.0 multi-kernel formal core, primary-source verified citations, and deterministic RAG corpus."
 owner: "Alexander S. Donahue"
 year: "2026"
 project_type: research
-stack: [python, lean4]
+stack: [python, other]  # other = Lean 4.35.0 (zero Mathlib)
 flags:
   public: true
   package: true

@@ -10,7 +10,7 @@ _Ten figures who shaped the problem, past and present._
 | 4 | Robert Tijdeman | 1976 | breakthrough | Proved Catalan's equation $x^p - y^q = 1$ has effectively bounded solutions, a landmark for the $k=1$ case. |
 | 5 | Tarlok N. Shorey | 1970s–80s | frontier | Co-author of *Exponential Diophantine Equations*; deep results on $S$-unit and power-gap problems. |
 | 6 | Preda Mihăilescu | 2002–04 | breakthrough | Proved Catalan's conjecture via cyclotomic field theory, settling $k=1$ completely. |
-| 7 | Michael A. Bennett | 2000s | frontier | Sharp bounds on the number of solutions of $|x^p - y^q| = k$ for fixed exponents; explicit Pillai-type results. |
+| 7 | Michael A. Bennett | 2000s | frontier | Sharp bounds on the number of solutions of $\lvert x^p - y^q \rvert = k$ for fixed exponents; explicit Pillai-type results. |
 | 8 | Maurice Mignotte | 1990s–2000s | frontier | Refined linear-forms-in-logarithms estimates enabling explicit resolution of Catalan- and Pillai-type equations. |
 | 9 | Yann Bugeaud | 2000s | frontier | Modular + classical methods for exponential Diophantine equations; surveys connecting Pillai to $abc$. |
 | 10 | Michel Waldschmidt | 2000s | expositor | Authoritative surveys ("Perfect powers: Pillai's works and their developments", "Open Diophantine problems") framing the conjecture and its $abc$ link. |

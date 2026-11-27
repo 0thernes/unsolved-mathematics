@@ -1,48 +1,47 @@
-# The Unsolved Mathematics Atlas (`v0.7.0`) — Full LLM Context (`llms-full.txt`)
+# The Unsolved Mathematics Atlas (`v0.8.2`) — Full LLM Context (`llms-full.txt`)
 
 > Canonical agent rules: `AGENTS.md`. Concise index: `llms.txt`.
 > Author: Alexander S. Donahue (ORCID `0009-0006-8168-9648`, independent researcher).
 > Repository: https://github.com/0thernes/unsolved-mathematics
-> Licenses: CC BY 4.0 (content, `LICENSE`) · MIT (code, `LICENSE-CODE`).
+> Licenses: CC BY 4.0 (original content, `LICENSE`; `data/external/lefttosolve/` carved out for upstream CC BY-SA 4.0 / Apache-2.0) · MIT (code, `LICENSE-CODE`).
 
 ## 1. Mission & Epistemic Contract
 
-`unsolved-mathematics` is a version-controlled, machine-readable research atlas of **106 open mathematical problems** paired with:
+`unsolved-mathematics` is a version-controlled, machine-readable research atlas of **120 open mathematical problems** paired with:
 1. A **single-source YAML registry** (`data/problems.yaml`, validated strictly against `schema/problem.schema.json`).
-2. **106 structured 7-section dossiers** (`problems/<slug>/{README,history,originator,approaches,attempts,papers,mathematicians,status}.md`) plus 106 AI-assisted working syntheses (`meta-analyses/<slug>.md`).
-3. A **deterministic BM25 retrieval corpus** (`rag/corpus.jsonl`, 3,763 unique chunks, zero optional tokenizer drift).
-4. A **primary-source citation & retraction audit** (`scripts/verify_citations.py`, `data/citation-verification-log.json`, `scripts/check_retractions.py`, `data/retraction-audit.json`): 554 identifier-bearing rows checked live against `export.arxiv.org` and `api.crossref.org` (`network_error: 0`), yielding **445 API-verified identifiers** and **109 invalid/hallucinated identifiers stripped** honestly to `—` / `needs-verification`; all **220 verified DOIs** checked against Crossref + DataCite retraction notices (**0 retracted**, **3 publisher errata/corrections** logged, `network_errors: 0`).
-5. A **standalone, zero-Mathlib Lean 4.35.0 formal core** (`lean/`, `autoImplicit = false`, commit `eb6cafb7`) proving **66 headline structural theorems** across **8 open-problem domains** (Collatz 28 incl. Fine–Wilf Odd-Unit-Lock spine valuation ceiling, 2-adic isometry, exhaustive $d \le 7$ & unconditional 1-/2-odd-step positive-cycle exclusion, catalytic cylinder; Erdős–Straus 5; **complete Lonely Runner $n \le 3$** 8; Brocard 7; Primes/Twins 4; Goldbach 3; Odd Perfect/Mersenne 7 incl. **Complete Euclid–Euler biconditional theorem** & **Euler's 1750 Mersenne divisor congruence $2p \mid (q-1)$**; and **exact Ramsey $R(3,3)=6$ & $R(3,4)=9$** 4), paired with **16 concrete non-vacuity witnesses** (`lean/NonVacuity.lean`), **20 explicit adversarial false-variant refutations** (`lean/Adversarial.lean`) = **102 audited declarations** (14 zero-axiom), and a live 3-case negative kernel rejection test (`scripts/test_lean_negative.py`), with **0 `sorry`, 0 `admit`, 0 `native_decide`, 0 custom `axiom`**, axioms strictly within `{propext, Classical.choice, Quot.sound}` (`lean/VerifyAxioms.lean`, mirrored verbatim in `README.md`), challenge/solution comparator (`lean/Challenge.lean`, `lean/comparator.json`), human-auditable statement fidelity (`lean/STATEMENT_FIDELITY.md`), and full 6-kernel replay (`lean/six_kernel_audit.txt`).
-6. A **publication-grade AMS-LaTeX white paper** (`paper/Donahue_2026_unsolved_mathematics_atlas.tex` → `paper/Donahue_2026_unsolved_mathematics_atlas.pdf` + clean-room-verified `paper/arxiv_submission.tar.gz`), **FAIR metadata** (`ro-crate-metadata.json`, `croissant.json`), **dual DigiCert RFC 3161 + Bitcoin OpenTimestamps manifest proofs** (`data/MANIFEST.sha256.tsr`, `data/MANIFEST.sha256.ots`), Software Heritage archival (`swh:1:snp:c11ec8263dd64b986c52bb400b8c3a85a3e6a254`), `docs/LITERATURE_AND_EXPORT_CONTROL.md`, and live GitHub Pages **Atlas Explorer & 8-Domain Proof Blueprint** (`https://0thernes.github.io/unsolved-mathematics/`).
+2. **120 structured 7-section dossiers** (`problems/<slug>/{README,history,originator,approaches,attempts,papers,mathematicians,status}.md`) plus 120 AI-assisted working syntheses (`meta-analyses/<slug>.md`).
+3. A **deterministic BM25 retrieval corpus** (`rag/corpus.jsonl`, globally unique chunk IDs, zero optional tokenizer drift).
+4. A **primary-source citation & retraction audit** (`scripts/verify_citations.py`, `data/citation-verification-log.json`, `scripts/check_retractions.py`, `data/retraction-audit.json`): **646** identifier-bearing rows checked live against `export.arxiv.org` and `api.crossref.org` (`network_error: 0`), yielding **537 API-verified identifiers** (strict 1-to-1 bijection with every `verified` row across all 120 `papers.md` tables, zero duplicates, zero bare arXiv IDs) and **109 invalid/hallucinated identifiers historically stripped** to `—` / `needs-verification`; all **287 verified DOIs** checked against Crossref + DataCite retraction notices (**0 retracted**, **3 publisher errata/corrections** logged, `network_errors: 0`).
+5. A **daily full external research-program mirror & unified offline search** (`scripts/sync_external_programs.py`, `scripts/search_all_problems.py`, `data/external/lefttosolve/`, `.github/workflows/sync-external.yml`): mirrors **all 25 Left to Solve research programs (59,396 targets)** across 26 `<4 MiB` JSONL shards (zero statement excerpts, CC BY-SA carved out), with `solved_by_kind` disaggregation (`open: 0`) and a deterministic 112/120 crosswalk (`docs/external/CROSSWALK.md`) that never alters `data/problems.yaml`.
+6. A **standalone, zero-Mathlib Lean 4.35.0 formal core** (`lean/`, `autoImplicit = false`, commit `eb6cafb7`) proving **66 headline structural theorems** across **8 open-problem domains** (Collatz 28 incl. Fine–Wilf Odd-Unit-Lock spine valuation ceiling, 2-adic isometry, exhaustive $d \le 7$ & unconditional 1-/2-odd-step positive-cycle exclusion, catalytic cylinder; Erdős–Straus 5; **complete Lonely Runner $n \le 3$** 8; Brocard 7; Primes/Twins 4; Goldbach 3; Odd Perfect/Mersenne 7 incl. **Complete Euclid–Euler biconditional theorem** & **Euler's 1750 Mersenne divisor congruence $2p \mid (q-1)$**; and **exact Ramsey $R(3,3)=6$ & $R(3,4)=9$** 4), paired with **16 concrete non-vacuity witnesses** (`lean/NonVacuity.lean`), **20 explicit adversarial false-variant refutations** (`lean/Adversarial.lean`) = **102 audited declarations** (14 zero-axiom), and a live 3-case negative kernel rejection test (`scripts/test_lean_negative.py`), with **0 `sorry`, 0 `admit`, 0 `native_decide`, 0 custom `axiom` in proof modules** (`lean/Challenge.lean` holds the 66 `sorry`-stated comparator specifications by design), axioms strictly within `{propext, Classical.choice, Quot.sound}` (`lean/VerifyAxioms.lean`, mirrored verbatim in `README.md`), challenge/solution comparator (`lean/comparator.json`), human-auditable statement fidelity (`lean/STATEMENT_FIDELITY.md`), and full 6-kernel replay (`lean/six_kernel_audit.txt`).
+7. A **publication-grade AMS-LaTeX white paper** (`paper/Donahue_2026_unsolved_mathematics_atlas.tex` → `paper/Donahue_2026_unsolved_mathematics_atlas.pdf` + clean-room-verified `paper/arxiv_submission.tar.gz`), **FAIR metadata** (`ro-crate-metadata.json`, `croissant.json`), **dual DigiCert RFC 3161 + Bitcoin OpenTimestamps manifest proofs** (`data/MANIFEST.sha256.tsr`, `data/MANIFEST.sha256.ots`), Software Heritage archival (`swh:1:snp:c11ec8263dd64b986c52bb400b8c3a85a3e6a254`), `docs/LITERATURE_AND_EXPORT_CONTROL.md`, and live GitHub Pages **Atlas Explorer, 8-Domain Proof Blueprint & External Programs Mirror** (`https://0thernes.github.io/unsolved-mathematics/`).
 
 **Hard Epistemic Invariants:**
 - Never claim any open conjecture is solved without primary-source mathematical consensus.
 - Never fabricate a DOI, arXiv ID, metric, test result, or review record.
 - Never cite `0thernes LLC` (no legal entity exists as of November 2026); use `Alexander S. Donahue` (independent researcher, ORCID `0009-0006-8168-9648`).
-- Disclose transparently that only 1/4 planned AI model passes (Claude self-review on 2026-06-14, recorded under the historical non-canonical session label `claude-opus-4-8`) and 0/106 independent human mathematician peer reviews have been completed.
+- Disclose transparently that only 1/4 planned AI model passes (Claude self-review on 2026-06-14, recorded under the historical non-canonical session label `claude-opus-4-8`) ran across the original 106 meta-analyses, all four AI panels remain `pending` on the 14 dossiers added in `v0.8.0`, and 0/120 independent human mathematician peer reviews have been completed.
 - Commit and push cleanly straight to `main` (Build Standard v1.2.0 R2; no PR templates per R4; classify every finding across all 10 classes per R7).
 
 ## 2. Canonical Directory Map
 
-- `VERSION` — single version source (`0.7.0`)
+- `VERSION` — single version source (`0.8.2`)
 - `ro-crate-metadata.json`, `croissant.json` — FAIR RO-Crate 1.1 & MLCommons Croissant 1.0 descriptors
-- `data/problems.yaml` — sole source of truth for the 106 problems
+- `data/problems.yaml` — sole source of truth for the 120 problems
 - `schema/problem.schema.json` — mandatory JSON Schema enforced by `scripts/validate.py`
 - `data/problems.json` — deterministically generated machine registry (`CURRENT_YEAR = 2026`, tie-break `(-css, slug)`)
-- `data/citation-verification-log.json` — full API verification log for all 554 checked identifiers
-- `data/retraction-audit.json` — Crossref + DataCite retraction audit across all 220 verified DOIs
+- `data/citation-verification-log.json` — full API verification log for all 646 checked identifiers (537 verified)
+- `data/retraction-audit.json` — Crossref + DataCite retraction audit across all 287 verified DOIs (0 retracted)
+- `data/external/lefttosolve/` — daily sharded metadata mirror of all 25 Left to Solve programs (59,396 items; carved out of CC BY 4.0)
 - `data/MANIFEST.sha256` (+ `.tsr`, `.ots`) — SHA-256 tamper-evidence manifest & dual DigiCert RFC 3161 + Bitcoin OpenTimestamps proofs
 - `lean/` — standalone 8-domain Lean 4.35.0 formal core (`autoImplicit = false`, `FormalAtlas/{Defs,Collatz,ErdosStraus,LonelyRunner,Brocard,Primes,Goldbach,PerfectNumbers,Ramsey}.lean`, `Challenge.lean`, `Solution.lean`, `NonVacuity.lean`, `Adversarial.lean`, `VerifyAxioms.lean`, `comparator.json`, `STATEMENT_FIDELITY.md`, `six_kernel_audit.txt`)
 - `paper/` — AMS-LaTeX white paper (`Donahue_2026_unsolved_mathematics_atlas.tex`, `references.bib`, compiled PDF, `arxiv_submission.tar.gz`)
-- `scripts/` — `generate.py`, `validate.py`, `check_dossiers.py`, `check_papers.py`, `proof_claim_sweep.py`, `verify_citations.py`, `check_retractions.py`, `check_readme_axioms.py`, `test_lean_negative.py`, `timestamp_manifest.py`, `build_site.py`, `build_indexes.py`, `build_review_register.py`, `build_data_manifest.py`, `Audit-Repo.ps1`, `audit-repo.sh`
-- `rag/` — `build_corpus.py`, `retriever.py`, `corpus.jsonl`
-- `tests/` — `test_atlas.py`, `test_collatz_instruments.py`, `test_verification_ladder.py`, `test_properties.py`, `mutation_check.py`
-- `CLAIMS.md` — falsifiable claims ledger ("What would prove us wrong")
-- `LIMITATIONS.md` — explicit scope, review, formalization, and selection-bias boundaries
-- `ERRATA.md` — append-only post-release correction & withdrawal ledger
-- `REPLICATION.md` — clean-clone reproduction commands and replication log
-- `docs/CROSS_ATLAS_AUDIT_2026-11-25.md` — honest cross-check of 1,900 Mega-Atlas `v2.7.0` problems, 106 Atlas problems, and 16 companion `0thernes-research-archive` entries across 76 public repos
-- `docs/reviews/2026-11-25-three-cycle-hardening-audit.md` — full 5-cycle, 10-class hardening audit
+- `scripts/` — `generate.py`, `validate.py`, `check_dossiers.py`, `check_papers.py`, `proof_claim_sweep.py`, `verify_citations.py`, `check_retractions.py`, `check_readme_axioms.py`, `sync_external_programs.py`, `search_all_problems.py`, `test_lean_negative.py`, `timestamp_manifest.py`, `build_site.py`, `build_indexes.py`, `build_review_register.py`, `build_data_manifest.py`, `Audit-Repo.ps1`, `audit-repo.sh`
+- `rag/` — `build_corpus.py`, `retriever.py`, `embed_index.py`, `corpus.jsonl`
+- `tests/` — `test_atlas.py`, `test_collatz_instruments.py`, `test_external_programs.py`, `test_verification_ladder.py`, `test_properties.py`, `mutation_check.py`
+- `CLAIMS.md`, `LIMITATIONS.md`, `ERRATA.md`, `REPLICATION.md`, `HARDENING_INDEX.md`
+- `docs/CROSS_ATLAS_AUDIT_2026-11-25.md` — Cross-Atlas non-retirement audit (`v2.7.0` frozen snapshot + `v2.10.0` 2,000-problem / 290-crosswalk reconciliation; 0 grand problems retired)
+- `docs/reviews/2026-11-25-three-cycle-hardening-audit.md` — full multi-cycle, 10-class hardening audit
 - `docs/adr/0001–0003` — Architecture Decision Records
 
 ## 3. Verification Commands
@@ -55,6 +54,7 @@ python scripts/check_papers.py
 python scripts/proof_claim_sweep.py
 python scripts/check_retractions.py --check
 python scripts/check_readme_axioms.py
+python scripts/sync_external_programs.py --check
 python scripts/build_data_manifest.py --check
 python scripts/timestamp_manifest.py --check
 python scripts/test_lean_negative.py

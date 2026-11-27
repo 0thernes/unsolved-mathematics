@@ -20,7 +20,7 @@
 
 meta:
   atlas_name: "The Unsolved Mathematics Atlas"
-  version: "0.8.1"
+  version: "0.8.2"
   maintainer: "0thernes"
   updated: "2026-11-27"
   default_branch: "main"

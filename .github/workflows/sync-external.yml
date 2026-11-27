@@ -47,8 +47,8 @@ jobs:
         run: |
           changed=false
           if [ -n "$(git status --porcelain -- data/external docs/external)" ]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git config user.name "Alexander S. Donahue"
+            git config user.email "0_0@0thernes.art"
             git add data/external docs/external
             git commit -m "chore(external): daily lefttosolve.com full program sync $(date -u +%F)"
             git pull --rebase origin main

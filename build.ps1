@@ -36,6 +36,7 @@ function Invoke-AllChecks {
     & $py "$root/scripts/proof_claim_sweep.py"
     & $py "$root/scripts/check_retractions.py" --check
     & $py "$root/scripts/check_readme_axioms.py"
+    & $py "$root/scripts/sync_external_programs.py" --check
     & $py "$root/scripts/build_data_manifest.py" --check
     & $py "$root/scripts/timestamp_manifest.py" --check
 }
@@ -69,6 +70,7 @@ switch ($Target) {
     'lint'     {
         Invoke-Step 'Report-only ruff & mypy' {
             ruff check "$root/scripts" "$root/rag" "$root/tests" "$root/examples"
+            ruff check --select E9,F63,F7,F82,B023 "$root/problems/collatz-conjecture/experiments"
             mypy --explicit-package-bases "$root/scripts" "$root/rag" "$root/examples"
         }
     }

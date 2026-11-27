@@ -33,7 +33,7 @@ THEOREM_CATALOG: list[tuple[str, str, str, str, str]] = [
     ("thm_collatz_no_finite_subcritical_cover", "Collatz", "FormalAtlas/Collatz.lean", "T^d(-1) = -1, o(-1,d) = d", "No finite 2-adic subcritical cover of Z"),
     ("thm_collatz_spine_ladder_identity", "Collatz", "FormalAtlas/Collatz.lean", "2^d((2^d-3^o)T^d(x)-c) = 3^o((2^d-3^o)x-c)", "Cleared-denominator spine recurrence"),
     ("thm_collatz_positivity_localization", "Collatz", "FormalAtlas/Collatz.lean", "3^o > 2^d => c(w) >= 3^o - 2^d", "Unconditional supercritical localization (rho_w <= -1)"),
-    ("thm_collatz_epsilon_invariance_barrier", "Collatz", "FormalAtlas/Collatz.lean", "TMinus Terras bijection + cycles 5, 17", "No-go barrier against sign-blind 2-adic proofs"),
+    ("thm_collatz_epsilon_invariance_barrier", "Collatz", "FormalAtlas/Collatz.lean", "TMinus Terras bijection + cycles 5, 17", "3n-1 sibling comparison (same Terras bijection + cycles 5, 17; heuristic reading, not a formal barrier theorem)"),
     ("thm_collatz_cycle_equation", "Collatz", "FormalAtlas/Collatz.lean", "T^d(x) = x => (2^d - 3^o) x = c(w)", "Bohm-Sontacchi (1978) exact cycle equation"),
     ("thm_collatz_parity_word_append", "Collatz", "FormalAtlas/Collatz.lean", "w_{d1+d2}(x) = w_{d1}(x) ++ w_{d2}(f^{d1}(x))", "Symbolic dynamics parity-word cocycle"),
     ("thm_collatz_negative_cycles", "Collatz", "FormalAtlas/Collatz.lean", "T^3(-5)=-5, T^11(-17)=-17", "Supercritical negative integer cycles of 3n+1"),
@@ -65,7 +65,7 @@ THEOREM_CATALOG: list[tuple[str, str, str, str, str]] = [
     ("thm_lonely_runner_speed_scaling", "Lonely Runner", "FormalAtlas/LonelyRunner.lean", "FarEnough m p q v => FarEnough m p (q*k) (v*k)", "Exact rational GCD speed-scaling invariance"),
     ("thm_lonely_runner_period_shift", "Lonely Runner", "FormalAtlas/LonelyRunner.lean", "FarEnough m p q v => FarEnough m (p+q) q v", "Unit circle time-periodicity mod 1"),
     ("thm_lonely_runner_neg_time", "Lonely Runner", "FormalAtlas/LonelyRunner.lean", "FarEnough m p q v => FarEnough m (-p) q v", "Time-reversal symmetry t -> -t"),
-    ("thm_lonely_runner_n3_nondiv4", "Lonely Runner", "FormalAtlas/LonelyRunner.lean", "n = 3, 4 nmid v_i => gap >= 1/4 at t=1/4", "4-runner constructive coverage (7/8 parity classes)"),
+    ("thm_lonely_runner_n3_nondiv4", "Lonely Runner", "FormalAtlas/LonelyRunner.lean", "n = 3, 4 nmid v_i => gap >= 1/4 at t=1/4", "4-runner constructive coverage (27/64 mod-4 speed-triple classes at t=1/4)"),
     ("thm_lonely_runner_n3", "Lonely Runner", "FormalAtlas/LonelyRunner.lean", "forall v1,v2,v3 > 0, exists t=p/q, gap >= 1/4", "Complete constructive 4-runner Lonely Runner theorem (ALL triples)"),
     ("thm_brocard_brown_solutions", "Brocard", "FormalAtlas/Brocard.lean", "(4,5), (5,11), (7,71)", "Exact verification of all 3 known Brown pairs"),
     ("thm_brocard_exhaustive_le_12", "Brocard", "FormalAtlas/Brocard.lean", "n <= 12 => n in {4,5,7}", "Exhaustive classification through 12! + 1"),
@@ -496,14 +496,14 @@ def build_site(out_dir: Path = OUT_DIR) -> Path:
       <a href="blueprint.html"><strong>→ Interactive Lean 4.35.0 Proof Blueprint ({n_theorems} Theorems / {n_decls} Decls)</strong></a>
       <a href="programs.html">External Programs (Left to Solve, daily)</a>
       <a href="https://github.com/0thernes/unsolved-mathematics/blob/main/paper/Donahue_2026_unsolved_mathematics_atlas.pdf">White Paper PDF</a>
-      <a href="https://github.com/0thernes/unsolved-mathematics/blob/main/docs/CROSS_ATLAS_AUDIT_2026-11-25.md">Cross-Atlas Audit (1,900 Problems)</a>
+      <a href="https://github.com/0thernes/unsolved-mathematics/blob/main/docs/CROSS_ATLAS_AUDIT_2026-11-25.md">Cross-Atlas Audit (2,000 Mega-Atlas Problems)</a>
       <a href="https://github.com/0thernes/unsolved-mathematics/blob/main/CLAIMS.md">Claims Ledger</a>
       <a href="https://github.com/0thernes/unsolved-mathematics/blob/main/ERRATA.md">Errata</a>
     </nav>
 
     <div class="cards">
       <div class="card"><div class="num">{len(problems)}</div><div class="lbl">Ranked Problem Dossiers</div></div>
-      <div class="card"><div class="num">{n_theorems} / {n_decls}</div><div class="lbl">Lean 4.35.0 Theorems / Audited Decls (8 Domains, 6 Kernels, 0 sorry)</div></div>
+      <div class="card"><div class="num">{n_theorems} / {n_decls}</div><div class="lbl">Lean 4.35.0 Theorems / Audited Decls (8 Domains, 6 Kernels, 0 sorry in proof modules)</div></div>
       <div class="card"><div class="num">{n_verified}</div><div class="lbl">API-Verified Citations ({n_stripped} bad IDs stripped · {n_retracted}/{n_ret_checked} retracted DOIs)</div></div>
       <div class="card"><div class="num">0 / {len(problems)}</div><div class="lbl">Human Peer Reviews (honestly disclosed)</div></div>
     </div>

@@ -10,8 +10,8 @@ _Ten figures who shaped the problem, past and present._
 | 4 | Derrick H. Lehmer | 1947– | originator | Posed the non-vanishing conjecture, reduced it to $\tau(p)\ne0$, and gave the first verifications. |
 | 5 | Jean-Pierre Serre | 1968–1985 | breakthrough | Modular interpretation of $\tau$ congruences; image-of-Galois theory; exceptional primes; Chebotarev applications. |
 | 6 | H. P. F. Swinnerton-Dyer | 1972–1977 | breakthrough | Determined $\ell$-adic representation images attached to $\Delta$ and the precise exceptional primes. |
-| 7 | Pierre Deligne | 1974 | breakthrough | Proved $|\tau(p)|\le 2p^{11/2}$ (Ramanujan–Petersson) via the Weil conjectures; attached Galois representations to cusp forms. |
-| 8 | M. Ram Murty / V. Kumar Murty | 1980s– | frontier | With Shorey, effective finiteness for $\tau(n)=v$ and growth of $|\tau(n)|$ through nonzero values. |
+| 7 | Pierre Deligne | 1974 | breakthrough | Proved $\lvert \tau(p) \rvert \le 2p^{11/2}$ (Ramanujan–Petersson) via the Weil conjectures; attached Galois representations to cusp forms. |
+| 8 | M. Ram Murty / V. Kumar Murty | 1980s– | frontier | With Shorey, effective finiteness for $\tau(n)=v$ and growth of $\lvert \tau(n) \rvert$ through nonzero values. |
 | 9 | Bas Edixhoven / J-M. Couveignes | 2000s–2011 | frontier | Polynomial-time computation of $\tau(p)$ via mod-$\ell$ Galois representations, enabling large-scale verification. |
 | 10 | Michael A. Bennett | 2020s | frontier | Diophantine resolution of value-equations $\tau(n)=\pm\ell^m$, sharpening the arithmetic of $\tau$ around Lehmer. |
 

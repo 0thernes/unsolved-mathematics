@@ -21,7 +21,7 @@ _The 25 most important papers. Each carries a verification flag._
 | 15 | 2015 | An averaged form of Chowla's conjecture | K. Matomäki, M. Radziwiłł, T. Tao | breakthrough | arXiv:1503.05121 | verified |
 | 16 | 2016 | The logarithmically averaged Chowla and Elliott conjectures for two-point correlations | T. Tao | breakthrough | arXiv:1509.05422 | verified |
 | 17 | 2017 | Equivalence of the logarithmically averaged Chowla and Sarnak conjectures | T. Tao | breakthrough | — | needs-verification |
-| 18 | 2018 | Higher order Fourier analysis and the logarithmic Chowla / Sarnak conjectures | T. Tao, J. Teräväinen | modern | arXiv:1708.02610 | verified |
+| 18 | 2017 | Odd order cases of the logarithmically averaged Chowla conjecture | T. Tao, J. Teräväinen | breakthrough | arXiv:1710.02112 | verified |
 | 19 | 2018 | The structure of logarithmically averaged correlations of multiplicative functions, with applications to the Chowla and Elliott conjectures | T. Tao, J. Teräväinen | breakthrough | arXiv:1708.02610 | verified |
 | 20 | 2018 | The logarithmic Sarnak conjecture for ergodic weights | N. Frantzikinakis, B. Host | breakthrough | arXiv:1708.00677 | verified |
 | 21 | 2017 | An update on the sign patterns of the Liouville and Möbius functions / Möbius disjointness survey | T. Tao | survey | — | needs-verification |

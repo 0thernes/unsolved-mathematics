@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "unsolved-mathematics-atlas"
-version = "0.8.1"
+version = "0.8.2"
 description = "Reproducible ranked dossier of 120 open mathematical problems paired with a multi-kernel Lean 4.35.0 formal core, daily 25-program Left to Solve mirror, and deterministic RAG corpus."
 readme = "README.md"
 license = { text = "MIT" }
@@ -52,6 +52,7 @@ ignore = ["E501"]
 
 [tool.mypy]
 python_version = "3.11"
+check_untyped_defs = true
 warn_unused_ignores = true
 warn_redundant_casts = true
 ignore_missing_imports = true

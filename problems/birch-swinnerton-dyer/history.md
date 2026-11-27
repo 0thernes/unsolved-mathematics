@@ -27,6 +27,6 @@ A foundational subtlety: BSD presupposes machinery proven only decades later. Th
 - **1983** — Gross and Zagier prove their formula relating $L'(E,1)$ to heights of Heegner points.
 - **1986** — Kolyvagin's method of Euler systems shows analytic rank $0$ or $1$ implies equal algebraic rank (modular curves), with $\Sha$ finite in those cases.
 - **1995–2001** — Modularity of all elliptic curves over $\mathbb{Q}$ established (Wiles; Taylor–Wiles; Breuil–Conrad–Diamond–Taylor), validating analytic continuation of $L(E,s)$.
-- **2000** — BSD named one of the seven Clay Millennium Prize Problems ($1,000,000).
+- **2000** — BSD named one of the seven Clay Millennium Prize Problems (\$1,000,000).
 - **2010s** — Bhargava–Shankar bound average ranks; Bhargava–Skinner–Zhang show BSD holds for a positive proportion of curves. Skinner–Urban and others advance Iwasawa Main Conjectures, controlling $\Sha$ via $p$-adic $L$-functions.
 - **Present** — Weak BSD remains open in rank $\ge 2$; the conjecture is a theorem only in analytic rank $0$ and $1$ (with finiteness of $\Sha$ proven only there, prime-by-prime in the refined form).

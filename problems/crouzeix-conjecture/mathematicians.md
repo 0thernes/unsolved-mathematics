@@ -5,7 +5,7 @@ _Ten figures who shaped the problem, past and present._
 | # | Name | Era | Role | Key contribution |
 |---|------|-----|------|------------------|
 | 1 | Michel Crouzeix | 2000s–present | originator | Posed the conjecture (2004); proved the first explicit universal constant $11.08$ (2007); co-author of the $1+\sqrt2$ breakthrough. |
-| 2 | César Palencia | 2010s–present | breakthrough | Co-author of Crouzeix–Palencia (2017), the $\|p(A)\|\le(1+\sqrt2)\|p\|_{W(A)}$ bound — the current world-record general constant. |
+| 2 | César Palencia | 2010s–present | breakthrough | Co-author of Crouzeix–Palencia (2017), the $\lVert p(A) \rVert \le (1+\sqrt{2})\lVert p \rVert_{W(A)}$ bound — the current world-record general constant. |
 | 3 | Otto Toeplitz | 1910s | originator | With Hausdorff, proved convexity of the numerical range, the structural foundation the conjecture rests on. |
 | 4 | Felix Hausdorff | 1910s | originator | Completed the Toeplitz–Hausdorff theorem establishing $W(A)$ is convex. |
 | 5 | John von Neumann | 1950s | originator | Created the spectral-set inequality, the conceptual template for $K$-spectral-set conjectures. |

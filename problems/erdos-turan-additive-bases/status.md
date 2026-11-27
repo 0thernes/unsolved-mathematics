@@ -9,7 +9,7 @@ _Where the problem stands and what a resolution would require._
 - **Best unconditional lower bound:** For every asymptotic basis $A \subseteq \mathbb{N}$ of order 2, $\limsup_{n \to \infty} r_A(n) \ge 8$ (ordered representations; Borwein–Choi–Chu 2006, refining Grekos–Haddad–Helou–Pihko 2003). No proof even reaches $\limsup r_A(n) \ge 100$, let alone $\infty$.
 - **Sharpness of slow growth:** Erdős (1956) proved bases exist with $r_A(n) = \Theta(\log n)$, so any proof cannot hope for polynomial growth in $\limsup r_A(n)$.
 - **Essential role of $\mathbb{N}$:** False over $\mathbb{Z}$ (Nathanson 2003) and true for multiplicative bases of $\mathbb{N}$ (Erdős 1964).
-- **Formal tracking:** Formalized in Lean 4 in `google-deepmind/formal-conjectures` as `Erdos28.erdos_28` (`kind: open`, prize `\$500`).
+- **Formal tracking:** Formalized in Lean 4 in `google-deepmind/formal-conjectures` as `Erdos28.erdos_28` (`kind: open`, prize `$500`).
 
 ## What a resolution requires
 

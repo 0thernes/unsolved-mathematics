@@ -1,12 +1,12 @@
 {
-  "audited_utc": "2026-11-27T05:33:05Z",
+  "audited_utc": "2026-11-27T17:47:13Z",
   "source_log": "data/citation-verification-log.json",
   "method": "Crossref REST API v1 (/works/{doi}) inspection of updated-by, update-to, relation, and title retraction/withdrawal/erratum fields",
   "summary": {
-    "dois_checked": 282,
+    "dois_checked": 287,
     "retracted": 0,
     "corrected_or_updated": 3,
-    "clean": 279,
+    "clean": 284,
     "network_errors": 0
   },
   "retracted_records": [],

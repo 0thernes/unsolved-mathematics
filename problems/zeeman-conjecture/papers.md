@@ -24,7 +24,7 @@ _The 25 most important papers. Each carries a verification flag._
 | 18 | 2003 | Algorithmic Topology and Classification of 3-Manifolds | S. V. Matveev | expository | — | high-confidence |
 | 19 | 2003 | Breadth-first search and the Andrews–Curtis conjecture | G. Havas, C. Ramsay | computational | — | needs-verification |
 | 20 | 2008 | Trivializing Andrews–Curtis: experiments on $AK(n)$ | R. S. Bowman, S. B. McCaul | computational | — | needs-verification |
-| 21 | 2011 | Metric geometry, convexity and collapsibility | K. Adiprasito, B. Benedetti | modern | arXiv:1107.5789 | verified |
+| 21 | 2011 | Metric geometry, convexity and collapsibility | K. Adiprasito, B. Benedetti | modern | — | high-confidence |
 | 22 | 2013 | Collapsibility of CAT(0) spaces | K. Adiprasito, B. Benedetti | breakthrough | arXiv:1107.5789 | verified |
 | 23 | 2017 | Discrete Morse theory and collapsibility (survey) | B. Benedetti | survey | — | needs-verification |
 | 24 | 2021 | What makes math problems hard for reinforcement learning: the Andrews–Curtis conjecture | A. Shehper, A. Medina-Mardones, et al. | computational | arXiv:2408.15332 | verified |

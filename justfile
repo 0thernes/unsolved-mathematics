@@ -7,7 +7,7 @@ default:
     @just --list
 
 setup:
-    {{py}} -m pip install -r requirements.txt
+    {{py}} -m pip install -r requirements-lock.txt
 
 build:
     {{py}} scripts/generate.py
@@ -32,8 +32,12 @@ check:
     {{py}} scripts/proof_claim_sweep.py
     {{py}} scripts/check_retractions.py --check
     {{py}} scripts/check_readme_axioms.py
+    {{py}} scripts/sync_external_programs.py --check
     {{py}} scripts/build_data_manifest.py --check
     {{py}} scripts/timestamp_manifest.py --check
+
+search query:
+    {{py}} scripts/search_all_problems.py --query "{{query}}"
 
 test:
     {{py}} -m pytest -q tests/

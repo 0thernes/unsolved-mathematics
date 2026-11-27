@@ -27,7 +27,7 @@ Riemann's explicit formula expresses $\pi(x)$ in terms of a sum over the non-tri
 - **1972** — Montgomery formulates the pair-correlation conjecture; Dyson notes the link to random-matrix (GUE) statistics.
 - **1974** — Levinson shows at least one third of zeros lie on the line; later improved by Conrey (1989) to over two fifths.
 - **1986** — van de Lune, te Riele, Winter verify the first $1.5\times10^9$ zeros on the line.
-- **2000** — RH named a Clay Millennium Prize Problem ($1,000,000).
+- **2000** — RH named a Clay Millennium Prize Problem (\$1,000,000).
 - **2004** — Conrey, Farmer, Keating, Rubinstein, Snaith give random-matrix predictions for moments of $\zeta$.
 - **2004** — Gourdon and Demichel verify the first $10^{13}$ zeros computationally.
 - **2018** — Bombieri and Sarnak frame the Hilbert–Pólya program in modern terms; Platt and Trudgian extend rigorous zero-free verifications.

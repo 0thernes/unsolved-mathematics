@@ -12,7 +12,7 @@ Identifiers are given only where confidently known; otherwise "—". Many founda
 | 4 | 1971 | Novikov's conjecture on rational Pontrjagin classes / higher signatures (ICM-era exposition) | A. S. Mishchenko | foundational | — | needs-verification |
 | 5 | 1972 | Novikov's higher signature and families of elliptic operators | G. Lusztig | breakthrough | — | high-confidence |
 | 6 | 1974 | Infinite-dimensional representations of discrete groups, and higher signatures | A. S. Mishchenko | breakthrough | — | needs-verification |
-| 7 | 1981 | Equivariant K-theory and the Novikov conjecture | G. G. Kasparov | breakthrough | 10.1007/BF01404917 | verified |
+| 7 | 1981 | Equivariant K-theory and the Novikov conjecture | G. G. Kasparov | breakthrough | — | high-confidence |
 | 8 | 1988 | Equivariant KK-theory and the Novikov conjecture | G. G. Kasparov | breakthrough | 10.1007/BF01404917 | verified |
 | 9 | 1990 | Group cohomology with Lipschitz control and higher signatures | A. Connes, M. Gromov, H. Moscovici | breakthrough | — | needs-verification |
 | 10 | 1990 | Cyclic cohomology, the Novikov conjecture and hyperbolic groups | A. Connes, H. Moscovici | breakthrough | 10.1016/0040-9383(90)90003-3 | verified |

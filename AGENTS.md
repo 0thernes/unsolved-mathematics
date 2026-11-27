@@ -8,20 +8,20 @@ point here. Edit this file, never the pointers.
 ## Project
 
 - **Name:** The Unsolved Mathematics Atlas (`0thernes/unsolved-mathematics`)
-- **Purpose:** Reproducible, ranked, research-grade atlas of 106 open mathematical problems across 38 fields, paired with a standalone zero-Mathlib multi-kernel Lean 4.35.0 formal verification core (`lean/`), primary-source citation & Crossref retraction auditing, a deterministic BM25/dense RAG corpus, an interactive proof blueprint (`_site/blueprint.html`), and a compiled AMS-LaTeX technical white paper (`paper/`).
+- **Purpose:** Reproducible, ranked, research-grade atlas of 120 open mathematical problems across 38 fields (plus a daily sharded mirror of all 25 Left to Solve programs / 59,396 targets), paired with a standalone zero-Mathlib multi-kernel Lean 4.35.0 formal verification core (`lean/`), primary-source citation & Crossref/DataCite retraction auditing (`537` API-verified / `287` DOIs, `0` retracted), a deterministic BM25/dense RAG corpus, an interactive proof blueprint (`_site/blueprint.html`), unified offline search (`scripts/search_all_problems.py`), and a compiled AMS-LaTeX technical white paper (`paper/`).
 - **Owner:** Alexander S. Donahue (`@0thernes`, ORCID `0009-0006-8168-9648`, independent researcher — do NOT use `0thernes LLC` until an entity is legally formed)
 - **Manifest:** `repo.yaml` (Build Standard for LLMs `v1.2.0`)
 - **Version:** `VERSION` (single source of truth; verified equal to `data/problems.yaml`, `CITATION.cff`, `pyproject.toml`, `lean/lakefile.toml`, `lean/formalization.yaml`, `ro-crate-metadata.json`, and `croissant.json`)
 - **Stack:** Python 3.11+ (`PyYAML`, `jsonschema`, `pytest`, `hypothesis`, `ruff`, `mypy`) + Lean 4.35.0 (`lean/`, zero Mathlib, 6-kernel `lake check --paranoid` + `lake comparator --paranoid`) + AMS-LaTeX (`tectonic`)
 - **Layout:**
-  - `data/` — canonical registry (`problems.yaml`), generated `problems.json`, `dossier-status.json`, `citation-verification-log.json`, `retraction-audit.json`, `MANIFEST.sha256` (+ DigiCert RFC 3161 `.tsr` & Bitcoin OpenTimestamps `.ots` proofs)
-  - `problems/<slug>/` — 106 self-contained problem dossiers (8 markdown files + `metadata.json` + `rag/`)
+  - `data/` — canonical registry (`problems.yaml`), generated `problems.json`, `dossier-status.json`, `citation-verification-log.json`, `retraction-audit.json`, `external/lefttosolve/` (daily sharded mirror of all 25 programs / 59,396 targets, CC BY-SA carved out), `MANIFEST.sha256` (+ DigiCert RFC 3161 `.tsr` & Bitcoin OpenTimestamps `.ots` proofs)
+  - `problems/<slug>/` — 120 self-contained problem dossiers (8 markdown files + `metadata.json` + `rag/`)
   - `lean/` — standalone Lean 4.35.0 formal core (`autoImplicit = false`, `FormalAtlas/`, `Challenge.lean`, `Solution.lean`, `NonVacuity.lean`, `Adversarial.lean`, `VerifyAxioms.lean`, `comparator.json`, `formalization.yaml`, `STATEMENT_FIDELITY.md`, `six_kernel_audit.txt`)
   - `paper/` — AMS-LaTeX white paper (`Donahue_2026_unsolved_mathematics_atlas.tex`, `references.bib`, compiled PDF, clean-room-verified `arxiv_submission.tar.gz`)
-  - `scripts/` — build engine (`generate.py`), integrity gate (`validate.py`), dossier/paper/pseudo-proof/citation/retraction/README-axiom checkers, live negative Lean kernel test (`test_lean_negative.py`), dual timestamp tool (`timestamp_manifest.py`), static site + proof blueprint builder (`build_site.py`), Build Standard v1.2.0 auditors (`Audit-Repo.ps1`, `audit-repo.sh`)
+  - `scripts/` — build engine (`generate.py`), integrity gate (`validate.py`), dossier/paper/pseudo-proof/citation/retraction/README-axiom checkers, daily external mirror & unified search (`sync_external_programs.py`, `search_all_problems.py`), live negative Lean kernel test (`test_lean_negative.py`), dual timestamp tool (`timestamp_manifest.py`), static site + proof blueprint builder (`build_site.py`), Build Standard v1.2.0 auditors (`Audit-Repo.ps1`, `audit-repo.sh`)
   - `rag/` — deterministic chunker (`build_corpus.py`), BM25 & optional dense retriever (`retriever.py`)
-  - `tests/` — unit, negative, regression, property-based (Hypothesis), golden/determinism, differential, metamorphic, and mutation tests
-  - `meta-analyses/` — 106 AI-assisted surveys (all explicitly labeled AI-generated, not peer-reviewed)
+  - `tests/` — unit, negative, regression, property-based (Hypothesis), golden/determinism, differential, metamorphic, external-mirror, and mutation tests
+  - `meta-analyses/` — 120 AI-assisted surveys (all explicitly labeled AI-generated, not peer-reviewed)
   - `docs/` — architecture, methodology, indexes, Cross-Atlas Audit (`docs/CROSS_ATLAS_AUDIT_2026-11-25.md`), ADRs (`docs/adr/`), forensic/red-team reviews (`docs/reviews/`), run log (`docs/run-log.md`)
   - `ERRATA.md` — append-only post-release correction & withdrawal ledger
   - `ro-crate-metadata.json`, `croissant.json` — machine-readable FAIR RO-Crate 1.1 & MLCommons Croissant 1.0 dataset metadata
@@ -31,10 +31,11 @@ point here. Edit this file, never the pointers.
 
 Use `justfile` (or `Makefile` / `build.ps1`). Every command works from a clean clone:
 
-- `just setup` — install pinned Python dependencies
-- `just build` — regenerate `data/problems.json`, `RANKING.md`, `README.md` table, and all 106 dossier headers
+- `just setup` — install pinned Python dependencies (`requirements-lock.txt`)
+- `just build` — regenerate `data/problems.json`, `RANKING.md`, `README.md` table, and all 120 dossier headers
 - `just corpus` — rebuild deterministic `rag/corpus.jsonl` with globally unique chunk IDs
-- `just check` — run `generate.py --check`, `validate.py`, `check_papers.py`, `proof_claim_sweep.py`, `check_retractions.py --check`, `check_readme_axioms.py`, `build_data_manifest.py --check`, `timestamp_manifest.py --check`
+- `just check` — run `generate.py --check`, `validate.py`, `check_dossiers.py --strict`, `check_papers.py`, `proof_claim_sweep.py`, `check_retractions.py --check`, `check_readme_axioms.py`, `sync_external_programs.py --check`, `build_data_manifest.py --check`, `timestamp_manifest.py --check`
+- `just search "<query>"` — offline search across all 120 curated dossiers and all 59,396 mirrored Left to Solve items
 - `just test` — run full pytest + Hypothesis + regression + differential + metamorphic suite
 - `just formal` — build Lean 4.35.0 core (`lean/`), run `VerifyAxioms.lean`, `lake check --paranoid`, `lake comparator --paranoid`, `scripts/test_lean_negative.py`
 - `just lint` — report-only `ruff` and `mypy` checks
@@ -65,6 +66,6 @@ Use `justfile` (or `Makefile` / `build.ps1`). Every command works from a clean c
 
 - **PowerShell literal brackets:** The local workspace path contains `[Vibe Coded (AI)]`; always pass `-LiteralPath` in PowerShell file cmdlets, and sync `[System.IO.Directory]::SetCurrentDirectory` if calling `.NET` file APIs after `Set-Location`.
 - **RAG chunk IDs:** `rag/build_corpus.py` MUST use a monotonic per-`(slug, section)` counter across headings (never reset per heading), otherwise `rag/retriever.py` `dense_search` silently clobbers chunks.
-- **Dossier README rank drift:** Always run `python scripts/generate.py` after editing `data/problems.yaml` so all 106 `problems/<slug>/README.md` rank headers stay synced with `metadata.json`.
+- **Dossier README rank drift:** Always run `python scripts/generate.py` after editing `data/problems.yaml` so all 120 `problems/<slug>/README.md` rank headers stay synced with `metadata.json`.
 - **Windows `lake check` sandbox:** `lake check` / `lake comparator` require POSIX `bwrap` for sandboxed mode; on Windows verify via direct kernel binaries (`leanchecker-paranoid`, `lean4lean --import`, `nanoda_bin`, `con-leche --verified`, `con-ron --verified`) and rely on Ubuntu CI for `bwrap`-sandboxed `lake check --paranoid` + `lake comparator --paranoid`.
 - **Collatz pseudo-proof contamination:** Never commit unhedged victory-declarations; run `python scripts/proof_claim_sweep.py` after any change in `problems/`.

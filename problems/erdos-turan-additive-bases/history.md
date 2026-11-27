@@ -14,4 +14,4 @@ Erdős later offered a **\$500** prize for its resolution (recorded as **Erdős 
 - **1985** — Paul Erdős and András Sárközy conjecture the stronger form: even if $A \subseteq \mathbb{N}$ merely satisfies $a_k \ll k^2$ (the density of a basis without requiring full coverage), $r_A(n)$ must still be unbounded.
 - **2003** — Grekos, Haddad, Helou, and Pihko prove that any asymptotic basis of order 2 satisfies $\limsup r_A(n) \ge 6$ (and $\ge 8$ for unordered representations under refined analysis; Borwein–Choi–Chu 2006).
 - **2003** — Melvyn Nathanson proves that the conjecture **fails over $\mathbb{Z}$**, constructing a subset $A \subseteq \mathbb{Z}$ where every integer has a unique representation $a + b$ with $a \le b$.
-- **2025–2026** — Formalized in Lean 4 in `google-deepmind/formal-conjectures` as `Erdos28.erdos_28` (`kind: open`, prize `\$500`); conjecture remains completely open.
+- **2025–2026** — Formalized in Lean 4 in `google-deepmind/formal-conjectures` as `Erdos28.erdos_28` (`kind: open`, prize `$500`); conjecture remains completely open.

@@ -151,7 +151,7 @@ jobs:
           ruff check scripts rag tests examples
           ruff check --select E9,F63,F7,F82,B023 problems/collatz-conjecture/experiments
 
-      - name: Strict type check (mypy across all 19 core Python modules, report-only)
+      - name: Strict type check (mypy across all 20 core Python modules, report-only)
         continue-on-error: true
         run: mypy --explicit-package-bases scripts rag examples
 

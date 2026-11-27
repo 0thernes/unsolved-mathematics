@@ -21,6 +21,7 @@ check:  ## Full integrity gate (registry, dossiers, papers, sweep, retractions, 
 	$(PY) scripts/proof_claim_sweep.py
 	$(PY) scripts/check_retractions.py --check
 	$(PY) scripts/check_readme_axioms.py
+	$(PY) scripts/sync_external_programs.py --check
 	$(PY) scripts/build_data_manifest.py --check
 	$(PY) scripts/timestamp_manifest.py --check
 
@@ -53,7 +54,7 @@ formal:  ## Build and multi-kernel verify the Lean 4.35.0 formal core + live neg
 
 lint:  ## Run report-only linter and strict type check across all core Python files
 	ruff check scripts rag tests examples || true
-	ruff check --select E9,F63,F7,F82 problems/collatz-conjecture/experiments || true
+	ruff check --select E9,F63,F7,F82,B023 problems/collatz-conjecture/experiments || true
 	mypy --explicit-package-bases scripts rag examples || true
 
 mutate:  ## Run targeted mutation test suite (100% kill required)

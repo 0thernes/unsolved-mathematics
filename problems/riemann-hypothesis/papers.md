@@ -27,7 +27,7 @@ _The 25 most important papers. Each carries a verification flag._
 | 21 | 2003 | The $10^{22}$-nd zero of the Riemann zeta function | A. M. Odlyzko | computational | — | needs-verification |
 | 22 | 2005 | Integral moments of $L$-functions | J. B. Conrey, D. W. Farmer, J. P. Keating, M. O. Rubinstein, N. C. Snaith | modern | 10.1112/S0024611504015175 | verified |
 | 23 | 2008 | The Riemann Hypothesis: A Resource for the Afficionado and Virtuoso Alike | P. Borwein, S. Choi, B. Rooney, A. Weirathmueller (eds.) | expository | 10.1007/978-0-387-72126-2 | verified |
-| 24 | 2019 | Effective approximation of heat flow evolution of the Riemann $\xi$ function, and a new upper bound for the de Bruijn–Newman constant (Polymath15) | D. H. J. Polymath | computational | 1904.12438 | needs-verification |
+| 24 | 2019 | Effective approximation of heat flow evolution of the Riemann $\xi$ function, and a new upper bound for the de Bruijn–Newman constant (Polymath15) | D. H. J. Polymath | computational | arXiv:1904.12438 | verified |
 | 25 | 2020 | The De Bruijn–Newman constant is non-negative | B. Rodgers, T. Tao | breakthrough | 10.1017/fmp.2020.6 | verified |
 | 26 | 2024 | New large value estimates for Dirichlet polynomials | Larry Guth, James Maynard | breakthrough | arXiv:2405.20552 | verified |
 
