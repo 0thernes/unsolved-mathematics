@@ -22,11 +22,11 @@
   "@type": "sc:Dataset",
   "conformsTo": "http://mlcommons.org/croissant/1.0",
   "name": "The Unsolved Mathematics Atlas",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "datePublished": "2026-11-27",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "url": "https://github.com/0thernes/unsolved-mathematics",
-  "citeAs": "Donahue, Alexander S. (2026). The Unsolved Mathematics Atlas (v0.8.0). https://github.com/0thernes/unsolved-mathematics",
+  "citeAs": "Donahue, Alexander S. (2026). The Unsolved Mathematics Atlas (v0.8.1). https://github.com/0thernes/unsolved-mathematics",
   "creator": [
     {
       "@type": "Person",

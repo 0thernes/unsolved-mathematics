@@ -5,6 +5,11 @@ Format follows [Keep a Changelog](https://keepachangelog.com/); versions follow
 [SemVer](https://semver.org/) on the *structure/schema* (content grows
 continuously between structural versions).
 
+## [0.8.1] — 2026-11-27
+
+### Fixed (CI Deterministic Rebuild Parity · RAG Corpus Token Sync)
+- **Zero-Drift RAG Corpus Rebuild (`rag/corpus.jsonl`):** CI Run `45948024181` caught a single-chunk, 13-token drift (`821,721 → 821,708` tokens across `3,979` chunks) in `rag/corpus.jsonl` introduced when row #4 of `problems/beck-fiala-conjecture/papers.md` (unparseable Wiley 1998 SICI DOI) was cleaned up after the initial `rag/build_corpus.py` run. Rebuilt `rag/corpus.jsonl` cleanly, synchronized the exact token total (`821,708`) in `README.md` and the `v0.8.1` AMS-LaTeX white paper (`paper/Donahue_2026_unsolved_mathematics_atlas.{tex,pdf}` + clean-room `paper/arxiv_submission.tar.gz`), and re-minted `data/MANIFEST.sha256` with fresh DigiCert RFC 3161 (`.tsr`) and Bitcoin OpenTimestamps (`.ots`) proofs so the multi-OS CI zero-drift check (`git diff --exit-code -- RANKING.md data/problems.json rag/corpus.jsonl`) passes unconditionally.
+
 ## [0.8.0] — 2026-11-27
 
 ### Added (Full 59,396-Item Daily Mirror · Curated Core Expansion `106 → 120` · Unified Offline Search · Mega-Atlas 190-Problem Crosswalk)

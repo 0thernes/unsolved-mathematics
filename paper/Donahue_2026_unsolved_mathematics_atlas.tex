@@ -16,7 +16,7 @@
 \Urlmuskip=0mu plus 1.0mu
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta,positioning}
-\usepackage[colorlinks=true,linkcolor=blue!60!black,citecolor=teal!60!black,urlcolor=blue!60!black,pdftitle={The Unsolved Mathematics Atlas (v0.8.0): Six-Kernel Formal Core and Audit},pdfauthor={Alexander S. Donahue}]{hyperref}
+\usepackage[colorlinks=true,linkcolor=blue!60!black,citecolor=teal!60!black,urlcolor=blue!60!black,pdftitle={The Unsolved Mathematics Atlas (v0.8.1): Six-Kernel Formal Core and Audit},pdfauthor={Alexander S. Donahue}]{hyperref}
 
 \emergencystretch=3em
 \tolerance=1500
@@ -38,8 +38,8 @@
 \newcommand{\code}[1]{{\upshape\nolinkurl{#1}}}
 \newcommand{\hashcode}[1]{{\upshape\def\UrlBreaks{\do\:\do 0\do 1\do 2\do 3\do 4\do 5\do 6\do 7\do 8\do 9\do a\do b\do c\do d\do e\do f\do h\do n\do p\do s\do w}\nolinkurl{#1}}}
 
-\title[The Unsolved Mathematics Atlas (Version 0.8.0): Six-Kernel Formal Core \& Audit]{%
-  The Unsolved Mathematics Atlas (Version 0.8.0):\\
+\title[The Unsolved Mathematics Atlas (Version 0.8.1): Six-Kernel Formal Core \& Audit]{%
+  The Unsolved Mathematics Atlas (Version 0.8.1):\\
   A Standalone Eight-Domain, Six-Kernel\\
   Lean 4.35.0 Formal Core, Citation \& Retraction Audit,\\
   and Cross-Atlas Epistemic Verification Framework}
@@ -49,7 +49,7 @@
 \email{0\_0@0thernes.art}
 \urladdr{https://github.com/0thernes/unsolved-mathematics}
 \thanks{ORCID: \href{https://orcid.org/0009-0006-8168-9648}{\texttt{0009-0006-8168-9648}}.
-Repository release \texttt{v0.8.0} (November 27, 2026; Archive ID \texttt{0TH-BUILD-004};
+Repository release \texttt{v0.8.1} (November 27, 2026; Archive ID \texttt{0TH-BUILD-004};
 Lean 4.35.0 commit \hashcode{eb6cafb7290e8bd5f2937522d8d804f58f02bafc}; Software Heritage prior
 snapshot \hashcode{swh:1:snp:c11ec8263dd64b986c52bb400b8c3a85a3e6a254}).
 All Lean 4.35.0 proofs and Python tools are MIT-licensed; original prose, tables, and datasets are
@@ -67,7 +67,7 @@ problem, Ramsey theory, citation verification, RFC 3161 timestamps, FAIR dataset
 Large language models can rapidly draft mathematical surveys, yet unverified AI-assisted
 corpora suffer systematically from fabricated bibliographic identifiers, unhedged proof claims,
 definitional drift, silent indexing collisions, and opaque provenance. We present
-\textbf{The Unsolved Mathematics Atlas} (\texttt{v0.8.0}), an open, reproducible, FAIR-indexed
+\textbf{The Unsolved Mathematics Atlas} (\texttt{v0.8.1}), an open, reproducible, FAIR-indexed
 catalog of 120 unsolved mathematical problems across 38 fields paired with an end-to-end
 epistemic verification stack. Our contributions are fourfold.
 First, live primary-source auditing across 640 identifier-bearing rows verified \textbf{531}
@@ -105,7 +105,7 @@ asymmetry: generating a fluent survey or plausible proof sketch requires seconds
 exposing a hallucinated DOI, an unstated Lean axiom, a hidden implicit variable, a vacuous
 hypothesis, or a sign-blind Collatz heuristic requires disciplined mechanical infrastructure.
 \emph{The Unsolved Mathematics Atlas} (\url{https://github.com/0thernes/unsolved-mathematics},
-release \texttt{v0.8.0}) treats epistemic honesty and machine-checked falsifiability as its
+release \texttt{v0.8.1}) treats epistemic honesty and machine-checked falsifiability as its
 primary engineering invariants.
 
 To eliminate any ambiguity for human referees, institutional evaluators, or automated indexing
@@ -134,7 +134,7 @@ and withdrawal policy.
 
 \begin{table}[htbp]
 \centering
-\caption{Numbered Claims Ledger (1-to-1 Parity with \code{CLAIMS.md}, Release \texttt{v0.8.0}).}
+\caption{Numbered Claims Ledger (1-to-1 Parity with \code{CLAIMS.md}, Release \texttt{v0.8.1}).}
 \label{tab:claims}
 \scriptsize
 \setlength{\tabcolsep}{3.5pt}
@@ -171,7 +171,7 @@ derived artifacts---\code{data/problems.json}, \code{RANKING.md}, the master tab
 \code{README.md}, all 120 per-problem dossier headers, five cross-cutting indexes under
 \code{docs/indexes/}, the interactive web explorer, Proof Blueprint, and programs mirror
 (\code{_site/{index,blueprint,programs}.html}), and the offline BM25 retrieval corpus
-(\code{rag/corpus.jsonl}, 3,979 unique chunks across 821,721 deterministic tokens)---are
+(\code{rag/corpus.jsonl}, 3,979 unique chunks across 821,708 deterministic tokens)---are
 generated reproducibly with zero-drift checks enforced on every CI push.
 
 \subsection{Composite Severity Score (Editorial Heuristic)}
@@ -191,7 +191,7 @@ verbatim from \code{data/problems.json}.
 
 \begin{table}[htbp]
 \centering
-\caption{Top 15 Ranked Problems in \code{data/problems.json} (\texttt{v0.8.0}, 120 Problems, Frozen Reference Year 2026).}
+\caption{Top 15 Ranked Problems in \code{data/problems.json} (\texttt{v0.8.1}, 120 Problems, Frozen Reference Year 2026).}
 \label{tab:top15}
 \footnotesize
 \setlength{\tabcolsep}{4pt}
@@ -224,7 +224,7 @@ Forensic auditing of pre-\texttt{v0.3.0} releases exposed a silent key-collision
 chunk IDs across roughly 80\% of multi-heading sections, silently overwriting vectors during
 dense indexing. Replacing that logic with a monotonic per-\code{(slug, section)} counter
 eliminated all duplicates (enforced by \code{scripts/validate.py} and regression-tested in
-\code{tests/}). Release \texttt{v0.8.0} ships machine-readable FAIR dataset descriptors
+\code{tests/}). Release \texttt{v0.8.1} ships machine-readable FAIR dataset descriptors
 conforming to \textbf{RO-Crate 1.1} (\code{ro-crate-metadata.json}) and \textbf{MLCommons
 Croissant 1.0} (\code{croissant.json})---now checked directly by \code{validate.py} for version
 parity against \code{VERSION}---plus dual third-party cryptographic timestamp proofs over
@@ -246,7 +246,7 @@ DataCite (\code{10.48550/*} arXiv DOIs).
 
 \begin{table}[htbp]
 \centering
-\caption{Aggregate live primary-source citation audit and Crossref/DataCite retraction audit (\texttt{v0.8.0}).}
+\caption{Aggregate live primary-source citation audit and Crossref/DataCite retraction audit (\texttt{v0.8.1}).}
 \label{tab:citations}
 \begin{tabular}{@{}lrr@{}}
 \toprule
@@ -588,7 +588,7 @@ and zero-symlink guards on every CI run.
 \section{Cross-Atlas Resolution Audit (1,900 Macro Problems)}\label{sec:crossatlas}
 
 To guarantee strict consistency across sibling repositories, \code{docs/CROSS_ATLAS_AUDIT_2026-11-25.md}
-reconciles \code{unsolved-mathematics} (\texttt{v0.8.0}, Archive ID \code{0TH-BUILD-004}, 120 problems)
+reconciles \code{unsolved-mathematics} (\texttt{v0.8.1}, Archive ID \code{0TH-BUILD-004}, 120 problems)
 and all companion \code{0thernes-research-archive} entries against \code{unsolved-problems-mega-atlas}
 (1,900 deduplicated problems; historical \texttt{v2.7.0} baseline commit \texttt{541f093} with 103
 internal Lean invariants and 16 archive entries across 76 public repositories; upgraded in
@@ -617,7 +617,7 @@ Archive ID & Parent Mega-Atlas ID(s) & Narrowly Scoped Result (Lean 4.35.0, 6/6 
 \code{0TH-2026-013} & \code{CS-001}, \code{CS-005}, \code{CS-010/12} & 14 unconditional complexity-barrier theorems + 4 heuristic refutations & \textbf{OPEN} \\
 \code{0TH-2026-014..016} & \code{CM-018}, \code{ALG-035}, \code{CS-049}+ & 150 decls across non-Hermitian knots, fracton codes \& odd-cycle capacity & \textbf{OPEN} \\
 \code{0TH-2026-007/8} & \code{NEURO-001}, \code{NEURO-019} & 24 biophysical invariants; refuted $40$\,Hz ATP ($f_{\mathrm{crit}}=29.5625$\,Hz) & \textbf{OPEN} \\
-\code{0TH-BUILD-004} & \code{NT-005}, \code{NT-066}, \code{NT-078}+ & \textbf{This Atlas (\texttt{v0.8.0}):} 120 dossiers + 66 Lean thms (102 decls, 8 domains) & \textbf{OPEN} \\
+\code{0TH-BUILD-004} & \code{NT-005}, \code{NT-066}, \code{NT-078}+ & \textbf{This Atlas (\texttt{v0.8.1}):} 120 dossiers + 66 Lean thms (102 decls, 8 domains) & \textbf{OPEN} \\
 \code{0TH-BUILD-001..012} & \code{SUB-032}, \code{CS-053}, \code{BIO-001}+ & Companion formal builds ($p$-adic AdS/CFT, RS MDS, A-Life Omega, HW) & \textbf{OPEN} \\
 \bottomrule
 \end{tabularx}
@@ -659,7 +659,7 @@ are enforced in CI (claim \code{C-14}).
 
 \section{Multi-Cycle, Ten-Class Hardening Audit and Verification Ladder}\label{sec:hardening}
 
-Releases \texttt{v0.4.0}--\texttt{v0.8.0} underwent full multi-cycle forensic hardening across
+Releases \texttt{v0.4.0}--\texttt{v0.8.1} underwent full multi-cycle forensic hardening across
 all 1,890+ tracked files, classifying every finding strictly into the ten classes of Build
 Standard \texttt{v1.2.0} (\code{bug}, \code{error}, \code{issue}, \code{problem}, \code{concern},
 \code{dilemma}, \code{conflict}, \code{gap}, \code{hole}, \code{blindspot}; full ledger in
@@ -728,7 +728,7 @@ All code, Lean 4.35.0 proofs, JSON/YAML datasets, RAG corpora, FAIR descriptors
 (\code{data/external/}), and LaTeX/BibTeX sources are archived publicly at
 \url{https://github.com/0thernes/unsolved-mathematics}, preserved in Software Heritage
 (verified \texttt{v0.6.0} full snapshot
-\hashcode{swh:1:snp:c11ec8263dd64b986c52bb400b8c3a85a3e6a254}, with \texttt{v0.8.0} queued upon tag),
+\hashcode{swh:1:snp:c11ec8263dd64b986c52bb400b8c3a85a3e6a254}, with \texttt{v0.8.1} queued upon tag),
 and registered under Archive ID \code{0TH-BUILD-004} in
 \url{https://github.com/0thernes/0thernes-research-archive}.
 A structured primary-literature search audit log and a fundamental-research export-control
@@ -748,7 +748,7 @@ deterministic test suites. The author declares no competing financial interests 
 institutional or corporate LLC affiliation.
 
 \subsection{Clean-Clone Replication Protocol}
-From a clean clone of tag \texttt{v0.8.0}:
+From a clean clone of tag \texttt{v0.8.1}:
 {\small
 \begin{verbatim}
 python -m pip install -r requirements-lock.txt
