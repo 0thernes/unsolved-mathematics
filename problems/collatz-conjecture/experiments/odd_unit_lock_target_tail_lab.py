@@ -17,7 +17,6 @@ import sys
 from collections import Counter
 from fractions import Fraction
 from pathlib import Path
-from statistics import mean
 from time import perf_counter
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -114,7 +113,8 @@ def tail_summary(
     top_heap: list[tuple[int, int, dict[str, object]]] = []
     pair_count = 0
     zero_separation_skips = 0
-    e_values: list[int] = []
+    e_sum = 0
+    max_e: int | None = None
     serial = 0
 
     for phase in phases:
@@ -128,7 +128,9 @@ def tail_summary(
                 continue
             e = v2_fraction(rho_t - eta)
             pair_count += 1
-            e_values.append(e)
+            e_sum += e
+            if max_e is None or e > max_e:
+                max_e = e
             histogram[e] += 1
             phase_word = str(phase["phase_word"])
             target_label = str(target["label"])
@@ -213,8 +215,8 @@ def tail_summary(
         "target_spines": len(targets),
         "source_phase_target_pairs": pair_count,
         "zero_separation_skips": zero_separation_skips,
-        "max_valuation_e": max(e_values, default=None),
-        "avg_valuation_e": round(mean(e_values), 9) if e_values else 0.0,
+        "max_valuation_e": max_e,
+        "avg_valuation_e": round(e_sum / pair_count, 9) if pair_count else 0.0,
         "valuation_histogram": dict(sorted((str(k), v) for k, v in histogram.items())),
         "tail_comparison": tail_rows,
         "top_witnesses": top_witnesses,

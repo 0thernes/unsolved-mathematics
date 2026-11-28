@@ -2,23 +2,23 @@
 # Keep each item on one line. status: done | todo | partial | n/a (n/a needs a note).
 standard: "1.2.0"
 name: "unsolved-mathematics"
-description: "An audited, ranked, research-grade atlas of 120 unsolved mathematical problems (+ 62,790 daily-mirrored Left to Solve items across 26 programs) with a zero-Mathlib Lean 4.35.0 multi-kernel formal core, primary-source verified citations, and deterministic RAG corpus."
+description: "An audited, ranked, research-grade atlas of 120 unsolved mathematical problems (+ 62,790 daily-mirrored Left to Solve items across 26 programs) with a zero-Mathlib Lean 4.35.0 multi-kernel formal core (69 theorems / 109 decls), catalytic C17/BMI2 + safe Rust Collatz accelerator, primary-source verified citations, and deterministic RAG corpus."
 owner: "Alexander S. Donahue"
 year: "2026"
 project_type: research
-stack: [python, other]  # other = Lean 4.35.0 (zero Mathlib)
+stack: [python, c, rust, other]  # other = Lean 4.35.0 (zero Mathlib)
 flags:
   public: true
   package: true
   visual: false
   ui: false
-  native: false
+  native: true
   ai: false
   personal_data: false
   service: false
   deployed: false
   api: true
-  perf: false
+  perf: true
   concurrent: false
   numeric: true
   experimental: true
@@ -61,7 +61,7 @@ items:
   A34: {status: n/a, note: "Not a long-running service"}
   A35: {status: done}
   A36: {status: n/a, note: "Not a deployed service (static GitHub Pages docs only)"}
-  A37: {status: n/a, note: "No speed or latency claims made"}
+  A37: {status: done, note: "Explicit wall-time, memory/stack (4,096 B DFS), and single-core budgets documented in docs/benchmarks.md"}
   A38: {status: n/a, note: "No interactive application UI"}
   A39: {status: done}
   A40: {status: n/a, note: "No runtime AI SDK calls; offline scripts use stdlib/PyYAML/jsonschema"}
@@ -84,19 +84,19 @@ items:
   B12: {status: done, note: "Independent rational/combinatorial reference oracles in tests/test_verification_ladder.py"}
   B13: {status: done}
   B14: {status: done, note: "CSS monotonicity & BM25 permutation invariance metamorphic tests in tests/test_verification_ladder.py"}
-  B15: {status: n/a, note: "No native C/C++/asm code"}
-  B16: {status: n/a, note: "No native C/C++/asm code"}
+  B15: {status: done, note: "libFuzzer + 250,000-case deterministic SplitMix64 differential fuzzer in problems/collatz-conjecture/native/fuzz_collatz_catalytic.c"}
+  B16: {status: done, note: "ASan + UBSan (-fsanitize=address,undefined -fno-sanitize-recover=all) on C17 engine & fuzzer in CI + Zig CC UBSan locally"}
   B17: {status: done}
   B18: {status: done}
   B19: {status: n/a, note: "Build and validation pipeline is single-threaded deterministic"}
   B20: {status: done, note: "Exact integer/Fraction arithmetic in formal proofs & oracles; bounded IEEE-754 CSS rounding tested in tests/test_properties.py"}
   B21: {status: n/a, note: "Not a networked runtime service"}
-  B22: {status: done, note: "Lean 4.35.0 formal core in lean/ with autoImplicit=false (66 theorems, 16 non-vacuity witnesses, 20 adversarial refutations = 102 audited decls across 8 domains, 6-kernel replay + live negative kernel rejection)"}
+  B22: {status: done, note: "Lean 4.35.0 formal core in lean/ with autoImplicit=false (69 theorems, 18 non-vacuity witnesses, 22 adversarial refutations = 109 audited decls across 8 domains, 6-kernel replay + live negative kernel rejection)"}
   B23: {status: n/a, note: "Pure mathematical theorem proving in Lean 4; no TLA+/Alloy concurrent state-machine protocol"}
   B24: {status: done, note: "Lean 4.35.0 dependently typed pure functional core (lean/) replayed across 6 independent kernels"}
-  B25: {status: n/a, note: "No C/Rust systems implementation requiring Kani/CBMC bounded model checking"}
-  B26: {status: n/a, note: "No speed/performance benchmark claims"}
-  B27: {status: n/a, note: "No performance tracking claims"}
+  B25: {status: n/a, note: "Native accelerator is cross-checked via ASan/UBSan, 250k fuzzer, and zero-unsafe Rust cross-oracle rather than Kani/CBMC"}
+  B26: {status: done, note: "3-run measured Python vs C17/BMI2 vs Safe Rust benchmarks with hardware/compiler specs and bit-exact parity in docs/benchmarks.md"}
+  B27: {status: done, note: "Report-only native parity & wall-time budget regression test in tests/test_collatz_instruments.py and CI"}
   B28: {status: n/a, note: "Pure mathematics atlas and deterministic Lean proofs; no stochastic randomized experiments"}
   B29: {status: n/a, note: "No statistical hypothesis testing or p-values claimed"}
   B30: {status: n/a, note: "No statistical effect-size or confidence-interval claims"}

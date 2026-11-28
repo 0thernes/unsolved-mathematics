@@ -5,15 +5,15 @@ public import FormalAtlas.Defs
 import FormalAtlas
 
 /-!
-# Solution — Zero-Sorry Proofs Matching `Challenge.lean` (`v0.7.0`)
+# Solution — Zero-Sorry Proofs Matching `Challenge.lean` (`v0.9.0`)
 
-Exports all 66 headline theorems across 8 open-problem domains in `FormalAtlas.Challenge`
+Exports all 69 headline theorems across 8 open-problem domains in `FormalAtlas.Challenge`
 with exact signature match for `lake comparator --config comparator.json --paranoid`.
 -/
 
 namespace FormalAtlas.Challenge
 
--- I. Collatz (28)
+-- I. Collatz (31)
 public theorem thm_collatz_cylinder_affine_law (d : Nat) (q r : Int) :
     iter T d ((2 : Int) ^ d * q + r) =
       (3 : Int) ^ (oddCount T d r) * q + iter T d r :=
@@ -161,6 +161,23 @@ public theorem thm_collatz_no_positive_cycle_odd_le_7 (d : Nat) (x : Int)
 public theorem thm_collatz_catalytic_reversible_cylinder (d : Nat) (q r acc cat : Int) :
     catCollatzStep d q r acc cat = (acc + iter T d ((2 : Int) ^ d * q + r), cat) :=
   collatz_catalytic_reversible_cylinder d q r acc cat
+
+public theorem thm_collatz_positive_cycle_three_odd (d : Nat) (x : Int)
+    (hd : 1 ≤ d) (hx : 0 < x) (hcyc : iter T d x = x) (ho : oddCount T d x = 3) :
+    d = 6 ∧ (x = 1 ∨ x = 2) :=
+  collatz_positive_cycle_three_odd d x hd hx hcyc ho
+
+public theorem thm_collatz_intercept_upper_bound (w : List Bool) :
+    wordIntercept w ≤ (2 : Int) ^ (w.length - wordOddCount w) *
+      ((3 : Int) ^ (wordOddCount w) - (2 : Int) ^ (wordOddCount w)) :=
+  collatz_intercept_upper_bound w
+
+public theorem thm_collatz_cycle_amplitude_ceiling (d : Nat) (x : Int)
+    (hd : 1 ≤ d) (hx : 0 < x) (hcyc : iter T d x = x) :
+    let o := oddCount T d x
+    ((2 : Int) ^ d - (3 : Int) ^ o) * x ≤
+      (2 : Int) ^ (d - o) * ((3 : Int) ^ o - (2 : Int) ^ o) :=
+  collatz_cycle_amplitude_ceiling d x hd hx hcyc
 
 -- II. Erdős–Straus (5)
 public theorem thm_erdos_straus_mordell_840 (n : Nat) (hn : 2 ≤ n)

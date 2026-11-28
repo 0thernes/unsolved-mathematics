@@ -4,9 +4,9 @@ module
 public import FormalAtlas.Defs
 
 /-!
-# Challenge — Isolated Statement Specification for `lake comparator` (`v0.7.0`)
+# Challenge — Isolated Statement Specification for `lake comparator` (`v0.9.0`)
 
-Contains ONLY the exact 66 headline theorem signatures across 8 open-problem domains
+Contains ONLY the exact 69 headline theorem signatures across 8 open-problem domains
 to be judged by `lake comparator --config comparator.json --paranoid` against `Solution.lean`.
 All proofs live exclusively in `FormalAtlas.*` and are exported via `Solution.lean`.
 -/
@@ -14,7 +14,7 @@ All proofs live exclusively in `FormalAtlas.*` and are exported via `Solution.le
 namespace FormalAtlas.Challenge
 
 -- ============================================================================
--- I. Collatz Conjecture & 3n-1 Sibling Control (28 theorems)
+-- I. Collatz Conjecture & 3n-1 Sibling Control (31 theorems)
 -- ============================================================================
 
 public theorem thm_collatz_cylinder_affine_law (d : Nat) (q r : Int) :
@@ -136,6 +136,20 @@ public theorem thm_collatz_no_positive_cycle_odd_le_7 (d : Nat) (x : Int)
 
 public theorem thm_collatz_catalytic_reversible_cylinder (d : Nat) (q r acc cat : Int) :
     catCollatzStep d q r acc cat = (acc + iter T d ((2 : Int) ^ d * q + r), cat) := sorry
+
+public theorem thm_collatz_positive_cycle_three_odd (d : Nat) (x : Int)
+    (hd : 1 ≤ d) (hx : 0 < x) (hcyc : iter T d x = x) (ho : oddCount T d x = 3) :
+    d = 6 ∧ (x = 1 ∨ x = 2) := sorry
+
+public theorem thm_collatz_intercept_upper_bound (w : List Bool) :
+    wordIntercept w ≤ (2 : Int) ^ (w.length - wordOddCount w) *
+      ((3 : Int) ^ (wordOddCount w) - (2 : Int) ^ (wordOddCount w)) := sorry
+
+public theorem thm_collatz_cycle_amplitude_ceiling (d : Nat) (x : Int)
+    (hd : 1 ≤ d) (hx : 0 < x) (hcyc : iter T d x = x) :
+    let o := oddCount T d x
+    ((2 : Int) ^ d - (3 : Int) ^ o) * x ≤
+      (2 : Int) ^ (d - o) * ((3 : Int) ^ o - (2 : Int) ^ o) := sorry
 
 -- ============================================================================
 -- II. Erdős–Straus Conjecture (5 theorems)

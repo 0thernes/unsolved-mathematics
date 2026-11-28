@@ -59,5 +59,12 @@ formal/.lake/
 formal/build/
 lean/.lake/
 lean/build/
+lean/.axioms_*.tmp
 paper/build/
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.out
+paper/*.log
+problems/collatz-conjecture/native/build/
 _site/

@@ -16,7 +16,7 @@
 \Urlmuskip=0mu plus 1.0mu
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta,positioning}
-\usepackage[colorlinks=true,linkcolor=blue!60!black,citecolor=teal!60!black,urlcolor=blue!60!black,pdftitle={The Unsolved Mathematics Atlas (v0.8.3): Six-Kernel Formal Core and Audit},pdfauthor={Alexander S. Donahue}]{hyperref}
+\usepackage[colorlinks=true,linkcolor=blue!60!black,citecolor=teal!60!black,urlcolor=blue!60!black,pdftitle={The Unsolved Mathematics Atlas (v0.9.0): Six-Kernel Formal Core, Catalytic Collatz Engine, and Audit},pdfauthor={Alexander S. Donahue}]{hyperref}
 
 \emergencystretch=3em
 \tolerance=1500
@@ -38,28 +38,30 @@
 \newcommand{\code}[1]{{\upshape\nolinkurl{#1}}}
 \newcommand{\hashcode}[1]{{\upshape\def\UrlBreaks{\do\:\do 0\do 1\do 2\do 3\do 4\do 5\do 6\do 7\do 8\do 9\do a\do b\do c\do d\do e\do f\do h\do n\do p\do s\do w}\nolinkurl{#1}}}
 
-\title[The Unsolved Mathematics Atlas (Version 0.8.3): Six-Kernel Formal Core \& Audit]{%
-  The Unsolved Mathematics Atlas (Version 0.8.3):\\
+\title[The Unsolved Mathematics Atlas (Version 0.9.0): Six-Kernel Formal Core \& Audit]{%
+  The Unsolved Mathematics Atlas (Version 0.9.0):\\
   A Standalone Eight-Domain, Six-Kernel\\
-  Lean 4.35.0 Formal Core, Citation \& Retraction Audit,\\
-  and Cross-Atlas Epistemic Verification Framework}
+  Lean 4.35.0 Formal Core, Catalytic Native Collatz Engine,\\
+  Citation Audit, and Epistemic Verification Framework}
 
 \author{Alexander S. Donahue}
 \address{Independent Researcher, Spokane, WA, USA}
 \email{0\_0@0thernes.art}
 \urladdr{https://github.com/0thernes/unsolved-mathematics}
 \thanks{ORCID: \href{https://orcid.org/0009-0006-8168-9648}{\texttt{0009-0006-8168-9648}}.
-Repository release \texttt{v0.8.3} (November 27, 2026; Archive ID \texttt{0TH-BUILD-004};
+Repository release \texttt{v0.9.0} (November 27, 2026; Archive ID \texttt{0TH-BUILD-004};
 Lean 4.35.0 commit \hashcode{eb6cafb7290e8bd5f2937522d8d804f58f02bafc}; Software Heritage prior
 snapshot \hashcode{swh:1:snp:c11ec8263dd64b986c52bb400b8c3a85a3e6a254}).
-All Lean 4.35.0 proofs and Python tools are MIT-licensed; original prose, tables, and datasets are
-CC BY 4.0 (with the third-party \code{data/external/lefttosolve/} mirror carved out per \code{LICENSE}).
-Transparent AI-assistance, export-control, and conflict-of-interest disclosures appear in Section~\ref{sec:governance}.}
+All Lean 4.35.0 proofs, C17/Rust kernels, and Python tools are MIT-licensed; original prose, tables,
+and datasets are CC BY 4.0 (with the third-party \code{data/external/lefttosolve/} mirror carved
+out per \code{LICENSE}). Transparent AI-assistance, export-control, and conflict-of-interest
+disclosures appear in Section~\ref{sec:governance}.}
 
 \subjclass[2020]{Primary 03B35, 11B83, 11A25, 11D68, 11D61; Secondary 05D10, 11A41, 11J71, 68V15, 68V20}
-\keywords{Lean 4, multi-kernel verification, Collatz conjecture, Fine--Wilf theorem, Euclid--Euler
-theorem, Mersenne prime divisors, Erd\H{o}s--Straus conjecture, Lonely Runner conjecture, Brocard's
-problem, Ramsey theory, citation verification, RFC 3161 timestamps, FAIR datasets, epistemic hygiene}
+\keywords{Lean 4, multi-kernel verification, Collatz conjecture, Fine--Wilf theorem, catalytic
+computing, Euclid--Euler theorem, Mersenne prime divisors, Erd\H{o}s--Straus conjecture, Lonely
+Runner conjecture, Brocard's problem, Ramsey theory, citation verification, RFC 3161 timestamps,
+FAIR datasets, epistemic hygiene}
 
 \begin{document}
 
@@ -67,7 +69,7 @@ problem, Ramsey theory, citation verification, RFC 3161 timestamps, FAIR dataset
 Large language models can rapidly draft mathematical surveys, yet unverified AI-assisted
 corpora suffer systematically from fabricated bibliographic identifiers, unhedged proof claims,
 definitional drift, silent indexing collisions, and opaque provenance. We present
-\textbf{The Unsolved Mathematics Atlas} (\texttt{v0.8.3}), an open, reproducible, FAIR-indexed
+\textbf{The Unsolved Mathematics Atlas} (\texttt{v0.9.0}), an open, reproducible, FAIR-indexed
 catalog of 120 unsolved mathematical problems across 38 fields paired with an end-to-end
 epistemic verification stack. Our contributions are fourfold.
 First, live primary-source auditing across 646 identifier-bearing rows verified \textbf{537}
@@ -78,26 +80,30 @@ while purging \textbf{109 invalid identifiers (19.7\% initial corruption, peakin
 Dynamical Systems)}; Crossref/DataCite auditing of all \textbf{287} verified DOIs confirmed
 \textbf{0 retractions} and logged \textbf{3 publisher errata}.
 Second, we build a standalone, zero-Mathlib \textbf{Lean 4.35.0} formal core (\code{lean/},
-\code{autoImplicit = false}) certifying \textbf{66 headline theorems}, 16 non-vacuity witnesses,
-and 20 adversarial false-variant refutations (\textbf{102 audited declarations}, 14 zero-axiom)
-across eight domains: Collatz (28 theorems, including positivity localization, subcriticality,
-unconditional 1-/2-odd-step and $d \le 7$ exclusion, and a Fine--Wilf 2-adic ceiling),
-Erd\H{o}s--Straus (Mordell's 834/840 classes), Lonely Runner (sharpness for all $n$ and the
-classical constructive proof for $n \le 3$), Brocard ($n \le 20$), Primes/Twins, Goldbach
-($n \le 100$), Perfect/Mersenne (complete Euclid--Euler with proved $\mathrm{divSum}=\sigma$
-and Euler's $2p \mid q-1$), and Ramsey ($R(3,3)=6$, $R(3,4)=9$). Proof modules use zero
-\code{sorry}/\code{native_decide} (\code{Challenge.lean} holds the 66 \code{sorry} specs),
-depend only on \texttt{\{propext, Classical.choice, Quot.sound\}}, and pass six Lean kernels plus
-\code{lake comparator}. Third, a Cross-Atlas audit against \code{unsolved-problems-mega-atlas}
-(\texttt{v2.10.0}, 2,000 problems; 290-problem curated crosswalk) affirms \textbf{0/2,000}
-retirements across 56 archive entries, and a daily sharded mirror of all 26 Left to Solve
-programs (62,790 items across 27 shards) links 114 of 120 Atlas problems while quarantining 4
-unverified third-party agent-claim review signals without altering any Atlas status. Fourth,
-three-cycle ten-subsystem hardening achieves 98.5\% (67/68) Build Standard \texttt{v1.2.0}
-compliance (sole flag: \code{A23} on historical daily-sync bot commits; workflow switched off bot
-committer for all future runs), 95 passing tests, 10/10 (100\%) mutation kill, zero
-\code{mypy --check-untyped-defs} errors across 20 modules, FAIR RO-Crate/Croissant metadata, and
-dual RFC~3161 + Bitcoin OTS proofs over a 42-file SHA-256 manifest.
+\code{autoImplicit = false}) certifying \textbf{69 headline theorems}, 18 non-vacuity witnesses,
+and 22 adversarial false-variant refutations (\textbf{109 audited declarations}, 16 zero-axiom)
+across eight domains: Collatz (31 theorems, including positivity localization, subcriticality,
+unconditional 1-, 2-, and 3-odd-step exclusion for all $d \ge 1$, sharp affine intercept and
+Eliahou--Steiner cycle amplitude ceilings, $d \le 7$ exclusion, a Fine--Wilf 2-adic ceiling, and
+catalytic cylinder evaluation), Erd\H{o}s--Straus (Mordell's 834/840 classes), Lonely Runner
+(sharpness for all $n$ and the classical constructive proof for $n \le 3$), Brocard ($n \le 20$),
+Primes/Twins, Goldbach ($n \le 100$), Perfect/Mersenne (complete Euclid--Euler with proved
+$\mathrm{divSum}=\sigma$ and Euler's $2p \mid q-1$), and Ramsey ($R(3,3)=6$, $R(3,4)=9$). Proof
+modules use zero \code{sorry}/\code{native_decide} (\code{Challenge.lean} holds the 69 \code{sorry}
+specs), depend only on \texttt{\{propext, Classical.choice, Quot.sound\}}, and pass six Lean
+kernels plus \code{lake comparator}. Third, guided by an honest primary-source audit of catalytic
+space and multi-language acceleration, we introduce a zero-workspace \textbf{C17/BMI2 + safe Rust}
+Collatz engine (verified bit-for-bit against exact Python \code{Fraction} and fuzzed across
+250,000 ASan/UBSan cases) achieving \textbf{1,683$\times$--7,137$\times$} wall-clock speedups,
+pushing exact Odd-Unit-Lock target-tail measurement to $t \le 26$ (\textbf{884,406,475} pairs in
+$0.133$\,s, isolating the unique Lyndon periodic wrap-around echo witness) and catalytic DFS
+residue mining to $d = 34$ (\textbf{174.4M} leaves in $1.65$\,s using \textbf{4,096\,B} of stack).
+Fourth, Cross-Atlas auditing against \code{unsolved-problems-mega-atlas} (\texttt{v2.10.0},
+2,000 problems) affirms \textbf{0/2,000} retirements across 56 archive entries, a daily sharded
+mirror of all 26 Left to Solve programs (62,790 items) quarantines 4 unverified third-party
+agent-claim review signals, and multi-cycle ten-class hardening achieves 100 passing tests,
+10/10 mutation kill, 20/20 zero-error \code{mypy}, FAIR RO-Crate/Croissant metadata, and dual
+RFC~3161 + Bitcoin OTS proofs over a 47-file SHA-256 manifest.
 \textbf{No open conjecture in the catalog is claimed to be solved by this work.}
 \end{abstract}
 
@@ -110,7 +116,7 @@ asymmetry: generating a fluent survey or plausible proof sketch requires seconds
 exposing a hallucinated DOI, an unstated Lean axiom, a hidden implicit variable, a vacuous
 hypothesis, or a sign-blind Collatz heuristic requires disciplined mechanical infrastructure.
 \emph{The Unsolved Mathematics Atlas} (\url{https://github.com/0thernes/unsolved-mathematics},
-release \texttt{v0.8.3}) treats epistemic honesty and machine-checked falsifiability as its
+release \texttt{v0.9.0}) treats epistemic honesty and machine-checked falsifiability as its
 primary engineering invariants.
 
 To eliminate any ambiguity for human referees, institutional evaluators, or automated indexing
@@ -120,7 +126,7 @@ pipelines, we place our hard non-claim boundary at the front of this report:
 mathematical conjectures. Every formally verified theorem in \code{lean/} proves an exact
 structural identity, classical foundation, modular reduction, sharpness bound, finite
 exhaustion, or $3n-1$ sibling comparison (not a formal barrier theorem). Collatz (general
-subcritical positive cycles with $o \ge 3, d \ge 8$ and divergent orbits), Erd\H{o}s--Straus
+subcritical positive cycles with $o \ge 4, d \ge 8$ and divergent orbits), Erd\H{o}s--Straus
 (general primes in Mordell's six square classes mod 840), Lonely Runner in general (proved for
 up to 13 runners in recent preprints \cite{rosenfeld2025lonely8,trakulthongchai2025lonely910,
 sungkawichai2026lonely1113}; the $n \le 3$ cases formalized here are classical
@@ -139,7 +145,7 @@ and withdrawal policy.
 
 \begin{table}[htbp]
 \centering
-\caption{Numbered Claims Ledger (1-to-1 Parity with \code{CLAIMS.md}, Release \texttt{v0.8.3}).}
+\caption{Numbered Claims Ledger (1-to-1 Parity with \code{CLAIMS.md}, Release \texttt{v0.9.0}).}
 \label{tab:claims}
 \scriptsize
 \setlength{\tabcolsep}{3.5pt}
@@ -148,18 +154,18 @@ and withdrawal policy.
 ID & Epistemic Tag & Headline Claim & Falsification Trigger \\
 \midrule
 \code{C-01} & \code{machine-checked-ci} & Zero open conjectures claimed solved across active prose (120 dossiers) & Unhedged victory claim or missed fixture in \code{proof_claim_sweep.py} \\
-\code{C-02} & \code{kernel-checked} & 66 theorems, 16 witnesses, 20 refutations (102 decls, 8 domains, \code{autoImplicit=false}) valid in 6 Lean 4.35.0 kernels + 3/3 neg rejection & Any kernel/comparator rejection, non-standard axiom, or failed negative probe \\
-\code{C-03} & \code{kernel-checked} & Collatz 28-thm core: positivity localization, subcriticality, 1-/2-odd \& $d\le 7$ exclusion, Fine--Wilf ceiling, $3n-1$ sibling facts, catalytic eval & Supercritical $c(w)<3^o-2^d$, $o\le 2$/$d\le 7$ cycle $\notin\{1,2\}$, or ceiling violation \\
+\code{C-02} & \code{kernel-checked} & 69 theorems, 18 witnesses, 22 refutations (109 decls, 8 domains, \code{autoImplicit=false}) valid in 6 Lean 4.35.0 kernels + 3/3 neg rejection & Any kernel/comparator rejection, non-standard axiom, or failed negative probe \\
+\code{C-03} & \code{kernel-checked} & Collatz 31-thm core: positivity localization, subcriticality, 1-/2-/3-odd \& $d\le 7$ exclusion, sharp intercept \& amplitude ceilings, Fine--Wilf ceiling, $3n-1$ sibling facts, catalytic eval & Supercritical $c(w)<3^o-2^d$, $o\le 3$/$d\le 7$ cycle $\notin\{1,2\}$, or ceiling violation \\
 \code{C-04} & \code{kernel-checked} & Erd\H{o}s--Straus Mordell 834/840, closure, symmetry, $2\le n\le 30$, 6 squares & Counterexample outside 6 classes or cleared-denominator mismatch \\
 \code{C-05} & \code{kernel-checked} & Lonely Runner $n\le 3$ + sharpness; Brocard $\le 20$; Primes/Twins; Goldbach $\le 100$; Complete Euclid--Euler \& $2p\mid(q-1)$; Ramsey $R(3,3)=6, R(3,4)=9$ & Arithmetic counterexample over $\Z/\Q$ or kernel rejection \\
-\code{C-06} & \code{computational-certificate} & Collatz Odd-Unit-Lock scripts are bounded negative/structural diagnostics only & Failure in \code{test_collatz_instruments.py} or numerical discrepancy \\
+\code{C-06} & \code{computational-certificate} & Collatz scripts \& catalytic C17/BMI2 + safe Rust engine ($t\le 26$, $d\le 34$, ASan/UBSan + 250k fuzzer) are bit-exact bounded diagnostics only & Parity mismatch, sanitizer/fuzzer trap, or failure in \code{test_collatz_instruments.py} \\
 \code{C-07} & \code{primary-source-verified} & 537 identifiers API-verified in 1-to-1 log bijection (646 audited); 109 bad IDs purged; 0/287 DOIs retracted (3 errata) & Re-query returning 404, mismatch, duplicate, or retraction on a \code{verified} row \\
 \code{C-08} & \code{primary-source-verified} & Statuses updated through 2026-11-27; 0/2,000 Mega-Atlas problems retired across 56 archive entries & Withdrawal of \code{2605.20695} or peer-reviewed settlement of an open entry \\
 \code{C-09} & \code{editorial-synthesis} & CSS rankings are deterministic editorial heuristics, not objective depth scores & Non-deterministic ordering or cross-file CSS/rank drift \\
 \code{C-10} & \code{machine-checked-ci} & 1/4 AI passes (Claude 2026-06-14, \code{claude-opus-4-8}) on initial 106; 14 \texttt{v0.8.0} pending; 0/120 human peer reviews & Any unlogged claim of independent multi-model or human peer sign-off \\
-\code{C-11} & \code{machine-checked-ci} & Derived views \& 3,985 RAG chunks (822,714 tokens) deterministic, LF-only, zero local paths & Non-empty \code{git diff} after rebuild, duplicate chunk ID, or local path leak \\
-\code{C-12} & \code{machine-checked-ci} & 95 passing tests (unit, neg, Hypothesis, oracle, metamorphic, external) + 10/10 mutation kill & Any failing regression test or surviving mutant in \code{mutation_check.py} \\
-\code{C-13} & \code{machine-checked-ci} & SHA-256 manifest, DigiCert \code{.tsr} + Bitcoin \code{.ots}, SWHID, and SLSA release & Hash/imprint mismatch or invalid SLSA provenance attestation \\
+\code{C-11} & \code{machine-checked-ci} & Derived views \& 3,985 RAG chunks (822,839 tokens) deterministic, LF-only, zero local paths & Non-empty \code{git diff} after rebuild, duplicate chunk ID, or local path leak \\
+\code{C-12} & \code{machine-checked-ci} & 100 passing tests (unit, neg, Hypothesis, oracle, metamorphic, external, native) + 10/10 mutation kill & Any failing regression test or surviving mutant in \code{mutation_check.py} \\
+\code{C-13} & \code{machine-checked-ci} & 47-file SHA-256 manifest, DigiCert \code{.tsr} + Bitcoin \code{.ots}, SWHID, and SLSA release & Hash/imprint mismatch or invalid SLSA provenance attestation \\
 \code{C-14} & \code{machine-checked-ci} & Daily full 26-program / 62,790-item mirror (27 $<4$\,MB shards, 4 agent-claim signals quarantined) never alters Atlas status & \code{--check} failure, shard $\ge 5$\,MB, excerpt leak, or mirror-driven status change \\
 \bottomrule
 \end{tabularx}
@@ -176,7 +182,7 @@ derived artifacts---\code{data/problems.json}, \code{RANKING.md}, the master tab
 \code{README.md}, all 120 per-problem dossier headers, five cross-cutting indexes under
 \code{docs/indexes/}, the interactive web explorer, Proof Blueprint, and programs mirror
 (\code{_site/{index,blueprint,programs}.html}), and the offline BM25 retrieval corpus
-(\code{rag/corpus.jsonl}, 3,985 unique chunks across 822,714 deterministic tokens)---are
+(\code{rag/corpus.jsonl}, 3,985 unique chunks across 822,839 deterministic tokens)---are
 generated reproducibly with zero-drift checks enforced on every CI push.
 
 \subsection{Composite Severity Score (Editorial Heuristic)}
@@ -196,7 +202,7 @@ verbatim from \code{data/problems.json}.
 
 \begin{table}[htbp]
 \centering
-\caption{Top 15 Ranked Problems in \code{data/problems.json} (\texttt{v0.8.3}, 120 Problems, Frozen Reference Year 2026).}
+\caption{Top 15 Ranked Problems in \code{data/problems.json} (\texttt{v0.9.0}, 120 Problems, Frozen Reference Year 2026).}
 \label{tab:top15}
 \footnotesize
 \setlength{\tabcolsep}{4pt}
@@ -229,7 +235,7 @@ Forensic auditing of pre-\texttt{v0.3.0} releases exposed a silent key-collision
 chunk IDs across roughly 80\% of multi-heading sections, silently overwriting vectors during
 dense indexing. Replacing that logic with a monotonic per-\code{(slug, section)} counter
 eliminated all duplicates (enforced by \code{scripts/validate.py} and regression-tested in
-\code{tests/}). Release \texttt{v0.8.3} ships machine-readable FAIR dataset descriptors
+\code{tests/}). Release \texttt{v0.9.0} ships machine-readable FAIR dataset descriptors
 conforming to \textbf{RO-Crate 1.1} (\code{ro-crate-metadata.json}) and \textbf{MLCommons
 Croissant 1.0} (\code{croissant.json})---now checked directly by \code{validate.py} for version
 parity against \code{VERSION}---plus dual third-party cryptographic timestamp proofs over
@@ -251,7 +257,7 @@ DataCite (\code{10.48550/*} arXiv DOIs).
 
 \begin{table}[htbp]
 \centering
-\caption{Aggregate live primary-source citation audit and Crossref/DataCite retraction audit (\texttt{v0.8.3}).}
+\caption{Aggregate live primary-source citation audit and Crossref/DataCite retraction audit (\texttt{v0.9.0}).}
 \label{tab:citations}
 \footnotesize
 \begin{tabular}{@{}lrr@{}}
@@ -361,8 +367,8 @@ To eliminate external dependency rot and enable sub-second clean builds plus six
 tracked \code{lean/lake-manifest.json}, zero \code{.lean} symlinks, and strict
 \code{autoImplicit = false} in \code{lean/lakefile.toml} (preventing silent unbound variable
 generalization). Every \code{.lean} file opens with \code{module} (Palomar isolation rule), and
-\code{lean/Challenge.lean} holds only the 66 isolated theorem signatures ($290$ lines,
-$13.7$\,KiB, well beneath Palomar's $1{,}000$-line / $100$\,KiB caps) judged by
+\code{lean/Challenge.lean} holds only the 69 isolated theorem signatures ($304$ lines,
+$14.3$\,KiB, well beneath Palomar's $1{,}000$-line / $100$\,KiB caps) judged by
 \code{lake comparator} against \code{lean/Solution.lean}.
 
 \begin{figure}[htbp]
@@ -375,7 +381,7 @@ $13.7$\,KiB, well beneath Palomar's $1{,}000$-line / $100$\,KiB caps) judged by
 ]
   \node[box, fill=blue!8] (defs) {\textbf{FormalAtlas.Defs}\\202 LOC $\cdot$ 0 Mathlib\\\code{autoImplicit = false}};
 
-  \node[dom, fill=blue!14, right=0.68cm of defs, yshift=2.45cm] (col) {\textbf{Collatz / Fine--Wilf} (28)};
+  \node[dom, fill=blue!14, right=0.68cm of defs, yshift=2.45cm] (col) {\textbf{Collatz / Fine--Wilf} (31)};
   \node[dom, fill=teal!12, right=0.68cm of defs, yshift=1.75cm] (es) {\textbf{Erd\H{o}s--Straus} (5)};
   \node[dom, fill=violet!12, right=0.68cm of defs, yshift=1.05cm] (lr) {\textbf{Lonely Runner $n\le 3$} (8)};
   \node[dom, fill=orange!14, right=0.68cm of defs, yshift=0.35cm] (bro) {\textbf{Brocard $\le 20$} (7)};
@@ -384,12 +390,12 @@ $13.7$\,KiB, well beneath Palomar's $1{,}000$-line / $100$\,KiB caps) judged by
   \node[dom, fill=pink!18, right=0.68cm of defs, yshift=-1.75cm] (pf) {\textbf{Euclid--Euler / Mersenne} (7)};
   \node[dom, fill=lime!16, right=0.68cm of defs, yshift=-2.45cm] (rm) {\textbf{Ramsey $R(3,4)=9$} (4)};
 
-  \node[box, fill=green!12, right=0.92cm of bro, yshift=1.05cm] (sol) {\textbf{Solution.lean}\\66 zero-sorry proofs};
-  \node[box, fill=gray!14, right=0.92cm of pr, yshift=0.0cm] (nv) {\textbf{NonVacuity.lean}\\16 concrete witnesses};
-  \node[box, fill=red!10, right=0.92cm of pf, yshift=-0.25cm] (adv) {\textbf{Adversarial.lean}\\20 false-variant refutations};
+  \node[box, fill=green!12, right=0.92cm of bro, yshift=1.05cm] (sol) {\textbf{Solution.lean}\\69 zero-sorry proofs};
+  \node[box, fill=gray!14, right=0.92cm of pr, yshift=0.0cm] (nv) {\textbf{NonVacuity.lean}\\18 concrete witnesses};
+  \node[box, fill=red!10, right=0.92cm of pf, yshift=-0.25cm] (adv) {\textbf{Adversarial.lean}\\22 false-variant refutations};
 
   \node[box, fill=green!20, right=0.68cm of nv, yshift=0.35cm, minimum width=3.45cm] (kern)
-    {\textbf{6-Kernel \texttt{bwrap} + Neg Gate}\\102/102 decls accepted (14 zero-ax)\\\texttt{lean}, \texttt{leanchecker}, \texttt{lean4lean}\\\texttt{nanoda}, \texttt{con-leche}, \texttt{con-ron}};
+    {\textbf{6-Kernel \texttt{bwrap} + Neg Gate}\\109/109 decls accepted (16 zero-ax)\\\texttt{lean}, \texttt{leanchecker}, \texttt{lean4lean}\\\texttt{nanoda}, \texttt{con-leche}, \texttt{con-ron}};
 
   \coordinate (busTop) at ([xshift=0.38cm]col.east);
   \coordinate (busBot) at ([xshift=0.38cm]rm.east);
@@ -406,11 +412,11 @@ $13.7$\,KiB, well beneath Palomar's $1{,}000$-line / $100$\,KiB caps) judged by
   \draw[arr] (adv.east) -- (kern.west);
 \end{tikzpicture}%
 }
-\caption{Eight-domain, six-kernel architecture of \code{FormalAtlas} (\code{lean/}, \texttt{v0.8.3}, 102 audited declarations).}
+\caption{Eight-domain, six-kernel architecture of \code{FormalAtlas} (\code{lean/}, \texttt{v0.9.0}, 109 audited declarations).}
 \label{fig:lean-arch}
 \end{figure}
 
-\subsection{Domain I: Collatz Conjecture, Fine--Wilf 2-Adic Valuation Ceilings \& Cycle Obstructions (28 Theorems)}
+\subsection{Domain I: Collatz Conjecture, Fine--Wilf 2-Adic Valuation Ceilings \& Cycle Obstructions (31 Theorems)}
 Define the shortcut Collatz map $T : \Z \to \Z$ by $T(x) = x/2$ if $2 \mid x$ and $(3x+1)/2$
 otherwise, and its $\varepsilon=-1$ sibling $T_-(x) = x/2$ if $2 \mid x$ and $(3x-1)/2$
 otherwise \cite{terras1976,lagarias1985}. Let $w_d(f, x) \in \{0,1\}^d$ be the length-$d$ parity
@@ -418,7 +424,7 @@ word, $o(f,d,x)$ its odd-step count, $c(w) \in \Z_{\ge 0}$ its exact affine inte
 \cite{bernsteinlagarias1996}, and $D(w) = 2^{|w|} - 3^{o(w)}$ its odd spine denominator.
 
 \begin{theorem}[Collatz Structural, Fine--Wilf \& Cycle-Exclusion Core]\label{thm:collatz}
-All twenty-eight statements below are machine-checked in \code{FormalAtlas/Collatz.lean} (Lean 4.35.0):
+All thirty-one statements below are machine-checked in \code{FormalAtlas/Collatz.lean} (Lean 4.35.0):
 \begin{enumerate}
   \item \emph{Affine, intercept \& Terras core (Thms.~1--14):}
     $T^d(2^d q + r) = 3^{o(T,d,r)} q + T^d(r)$;
@@ -447,6 +453,12 @@ All twenty-eight statements below are machine-checked in \code{FormalAtlas/Colla
       \item {\small\code{thm_collatz_fine_wilf_spine_ceiling}}: proving Fine--Wilf's periodicity theorem \cite{finewilf1965} from first principles yields that distinct rational periodic spines ($c(w)D(v) \ne c(v)D(w)$) satisfy $2^{|w|+|v|-\gcd(|w|,|v|)} \nmid (c(w)D(v) - c(v)D(w))$, i.e.\ $v_2(\rho_w - \rho_v) \le |w|+|v|-\gcd(|w|,|v|)-1$ (sharp at $w = [1,0], v = [1,0,1]$).
       \item {\small\code{thm_collatz_trivial_cycle_orbit}}, {\small\code{thm_collatz_no_nontrivial_positive_cycle_le_7}}, and {\small\code{thm_collatz_no_positive_cycle_odd_le_7}}: exact $1 \leftrightarrow 2$ orbit, exhaustive positive-cycle classification ($x \in \{1,2\}$) for all $1 \le d \le 7$, and complete exclusion of odd periods $d \in \{1,3,5,7\}$.
       \item {\small\code{thm_collatz_catalytic_reversible_cylinder}}: zero-workspace reversible register evaluation \cite{buhrman2014catalytic} computing $(a + T^d(2^d q + r),\, \mathrm{cat})$ while restoring any pre-filled catalyst register $\mathrm{cat}$ identically.
+    \end{itemize}
+  \item \emph{Unconditional 3-odd-step exclusion, sharp intercept ceiling \& global Eliahou--Steiner amplitude bound (Thms.~29--31, \texttt{v0.9.0}):}
+    \begin{itemize}
+      \item {\small\code{thm_collatz_positive_cycle_three_odd}}: unconditionally for \emph{all} periods $d \ge 1$, $x > 0 \land T^d(x) = x \land o(T,d,x) = 3 \implies d = 6 \land x \in \{1, 2\}$ (for $d \ge 8$, $(2^d - 27) \mid 9 + 3\cdot 2^m + 2^n < 2(2^d - 27)$ forces $2^d = 36 + 3\cdot 2^m + 2^n$, which fails modulo $4$, $8$, or $32$ for every $1 \le m < n$).
+      \item {\small\code{thm_collatz_intercept_upper_bound}}: sharp universal affine intercept ceiling $c(w) \le 2^{|w|-o(w)}(3^{o(w)} - 2^{o(w)})$ for every parity word $w \in \{0,1\}^*$ (attained with equality on $w = [0,0,1,1]$, $c = 20$).
+      \item {\small\code{thm_collatz_cycle_amplitude_ceiling}}: global Eliahou--Steiner Diophantine amplitude bound $(2^d - 3^o)x \le 2^{d-o}(3^o - 2^o)$ for every positive cycle $T^d(x) = x$, linking any computational convergence floor $x \ge M$ directly to the linear form $2^d - 3^o$.
     \end{itemize}
 \end{enumerate}
 \end{theorem}
@@ -528,16 +540,72 @@ and unconditionally exact divisor sum $\sigma(n) = \sum_{d \mid n} d$:
 \end{enumerate}
 \end{theorem}
 
+\subsection{Catalytic Native Collatz Accelerator, Toolstack Audit, and Uncharted \texorpdfstring{$t \le 26$ / $d \le 34$}{t <= 26 / d <= 34} Frontier}\label{sec:catalytic}
+Because pure-Python arbitrary-precision Collatz instruments consumed minutes of CPU and gigabytes
+of heap memory on consumer laptops, we audited catalytic space \cite{buhrman2014catalytic,vinciguerra2026catalytic}
+and nine candidate languages/toolstacks directly from primary sources
+(\code{docs/COLLATZ-TOOLSTACK-AND-CATALYTIC-AUDIT.md}). While catalytic space saves \emph{clean
+workspace memory} rather than worst-case asymptotic time---and neither classical quantum simulators
+nor non-deterministic RNGs offer deductive or runtime leverage on Collatz---combining zero-workspace
+catalytic data structures with our Lean-verified valuation isometry
+(\code{thm_collatz_odd_unit_lock_valuation_isometry}) eliminates the laptop bottleneck completely
+with zero loss of exactness (\code{problems/collatz-conjecture/native/}, \code{docs/benchmarks.md}):
+\begin{enumerate}
+  \item \emph{In-place bit-reversed prefix-slice valuation engine (\code{collatz_catalytic.c}, C17 + BMI2):}
+    sorting bit-reversed infinite periodic target extensions in place reduces $O(|S|\cdot|T|)$ rational
+    subtractions to $O(|S|\log|T|)$ exact binary-search slices (verified via \code{objdump -d} to emit
+    hardware \code{tzcnt}, \code{bswap}, \code{shlx}, \code{shrx}, and \code{mulx} without hand assembly).
+    Cross-checked bit-for-bit against an independent zero-\code{unsafe} Rust oracle
+    (\code{collatz_catalytic_oracle.rs}), exact Python \code{Fraction}, and a 250,000-case ASan/UBSan
+    differential fuzzer (\code{fuzz_collatz_catalytic.c}), this delivers \textbf{1,683$\times$--7,137$\times$}
+    wall-clock speedups (Table~\ref{tab:native_bench}).
+  \item \emph{Uncharted $t \le 26$ exact frontier ($884{,}406{,}475$ spine pairs in $0.133$\,s):}
+    extending Odd-Unit-Lock target-tail measurement through depth $t \le 26$ ($515{,}689$ unique
+    supercritical target spines) yields $\max e = 25$ (zero hits at $e \ge 26$), 100\% phase-0 exact
+    echoes for all $e \ge 18$ ($4{,}321/4{,}321$, peaking at $234$ hits at $e \ge 24$, $4.44\times$
+    geometric baseline), and isolates \emph{exactly one} Lyndon periodic wrap-around echo with
+    $e > |v|$ across all $884.4$\,M pairs: source $w = \texttt{010101011111}$ ($|w|=12$), phase $t=2$,
+    target $v = \texttt{0101011111}$ ($|v|=10$), attaining $e = 16 > 10$ strictly beneath our Lean
+    Fine--Wilf ceiling $12 + 10 - \gcd(12,10) = 20$.
+  \item \emph{Catalytic fixed-stack DFS residue mining ($4{,}096$\,B stack through $d = 34$):}
+    reusing a static 64-frame stack eliminates Python's $O(\text{frontier})$ BFS heap blowup,
+    measuring exact survivor counts through $d = 34$ ($22{,}475{,}498$ certified leaves,
+    $151{,}917{,}636$ frontier leaves, frontier density $0.0088427702$, $\max q = 1$) in $1.65$\,s
+    C17 / $1.68$\,s safe Rust with 100\% bit-for-bit parity.
+\end{enumerate}
+
+\begin{table}[htbp]
+\centering
+\caption{Three-Run Median Wall-Clock Benchmarks (Intel Core Ultra 9 275HX, GCC 16.1 \texttt{-O3 -mbmi2},
+\texttt{rustc 1.94.1 -O}, CPython 3.12.10; 100\% Bit-Exact Parity Across All Three Engines).}
+\label{tab:native_bench}
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+Workload & Exact Work Units & Python & C17+BMI2 & Safe Rust & Speedup (C17) \\
+\midrule
+Target-Tail $s\le 10, t\le 20$ & 6,214,555 pairs & 35.678\,s & 0.0212\,s & 0.0130\,s & 1,683$\times$ \\
+Target-Tail $s\le 12, t\le 20$ & 27,611,340 pairs & 123.134\,s & 0.0173\,s & 0.0127\,s & \textbf{7,137$\times$} \\
+Target-Tail $s\le 10, t\le 22$ & 20,385,387 pairs & 114.270\,s & 0.0252\,s & 0.0157\,s & 4,540$\times$ \\
+Target-Tail $s\le 12, t\le 26$ (new) & 884,406,475 pairs & est.\ $>65$\,min & 0.1331\,s & 0.0397\,s & --- \\
+Residue-Mine DFS $d = 24$ & 367,700 leaves & 1.3432\,s & 0.0161\,s & 0.0141\,s & 83.6$\times$ \\
+Residue-Mine DFS $d = 34$ (new) & 174,393,134 leaves & OOM BFS & 1.6468\,s & 1.6813\,s & 4,096\,B stack \\
+\bottomrule
+\end{tabular}
+\end{table}
+
 \section{Statement Fidelity, Adversarial Defense, and Six-Kernel Replay}\label{sec:kernels}
 
 Formal proofs can still mislead if definitions deviate from textbooks, if hypotheses are vacuous,
 or if the checker harness itself is miswired. Table~\ref{tab:defs} maps all core definitions in
 \code{FormalAtlas/Defs.lean} (202 LOC) to standard mathematical objects; Table~\ref{tab:kernels}
-summarizes six-kernel independent replay across all 102 audited declarations (66 headline
-theorems, 16 concrete witnesses in \code{NonVacuity.lean}, and 20 explicit false-variant
+summarizes six-kernel independent replay across all 109 audited declarations (69 headline
+theorems, 18 concrete witnesses in \code{NonVacuity.lean}, and 22 explicit false-variant
 refutations $\neg P$ in \code{Adversarial.lean}---including refuting zero Erd\H{o}s--Straus
 denominators, false Mersenne converse $2^{11}-1 = 23 \times 89$, non-Mersenne even $8\cdot 15 = 120$,
-$R(3,3)\le 5$, $R(3,4)\le 8$, positive Collatz 1-/2-odd-step cycles outside $\{1,2\}$, odd-period
+$R(3,3)\le 5$, $R(3,4)\le 8$, positive Collatz 1-/2-/3-odd-step cycles outside $\{1,2\}$, strict
+tightening of the sharp intercept ceiling, odd-period
 cycles $d \le 7$, and spines exceeding the Fine--Wilf ceiling) plus the live 3-case negative kernel
 rejection suite (\code{scripts/test_lean_negative.py}).
 
@@ -567,27 +635,27 @@ Lean Declaration & Mathematical Object & Exact Fidelity Notes \\
 
 \begin{table}[htbp]
 \centering
-\caption{Independent Six-Kernel Replay \& Live Negative Rejection Verdict Across All 102 Declarations (\texttt{v0.8.3}).}
+\caption{Independent Six-Kernel Replay \& Live Negative Rejection Verdict Across All 109 Declarations (\texttt{v0.9.0}).}
 \label{tab:kernels}
 \footnotesize
 \begin{tabularx}{\textwidth}{@{}lll>{\raggedright\arraybackslash}X@{}}
 \toprule
-\# & Independent Kernel / Gate & Implementation & Verdict (102 Decls, \code{autoImplicit = false}) \\
+\# & Independent Kernel / Gate & Implementation & Verdict (109 Decls, \code{autoImplicit = false}) \\
 \midrule
 1 & \code{lean} (\texttt{v4.35.0}, \code{eb6cafb7}) & Official C++ kernel & \textbf{ACCEPT} (0 \code{sorry} outside \code{Challenge}) \\
 2 & \code{leanchecker-paranoid --fresh} & Standalone C++ checker & \textbf{ACCEPT} (\code{Solution}, \code{NonVacuity}, \code{Adversarial}) \\
-3 & \code{lean4lean --import} & Lean-in-Lean kernel & \textbf{ACCEPT} (all 3 minimal proof cones) \\
+3 & \code{lean4lean --import} & Lean-in-Lean kernel & \textbf{ACCEPT} (3,923 / 2,031 / 2,905 cone decls) \\
 4 & \code{nanoda_bin} & Rust kernel & \textbf{ACCEPT} (strict 3-axiom whitelist; 0 \code{sorryAx}) \\
-5 & \code{con-leche --verified} & Verified Lean checker & \textbf{ACCEPT} (all 3 minimal proof cones) \\
-6 & \code{con-ron --verified} & Verified Rust checker & \textbf{ACCEPT} (all 3 minimal proof cones) \\
--- & \code{lake comparator --paranoid} & Linux \code{bwrap} isolator & \textbf{ACCEPT} (66/66 exact match in Ubuntu CI) \\
+5 & \code{con-leche --verified} & Verified Lean checker & \textbf{ACCEPT} (3,926 / 2,034 / 2,908 cone decls) \\
+6 & \code{con-ron --verified} & Verified Rust checker & \textbf{ACCEPT} (3,926 / 2,034 / 2,908 cone decls) \\
+-- & \code{lake comparator --paranoid} & Linux \code{bwrap} isolator & \textbf{ACCEPT} (69/69 exact match in Ubuntu CI) \\
 -- & \code{scripts/test_lean_negative.py} & Live negative rejection & \textbf{PASS (3/3)} (rejects $6!+1=27^2$, $1/9 \ge 1/3$, \code{sorryAx}) \\
 \bottomrule
 \end{tabularx}
 \end{table}
 
 Every declaration depends strictly on a subset of \texttt{\{propext, Classical.choice, Quot.sound\}}
-(14 declarations use \textbf{zero axioms}), and \code{scripts/check_readme_axioms.py} enforces
+(16 declarations use \textbf{zero axioms}), and \code{scripts/check_readme_axioms.py} enforces
 verbatim \texttt{\#print axioms} parity between \code{VerifyAxioms.lean}, \code{STATEMENT_FIDELITY.md},
 and \code{README.md} plus extended Playbook \texttt{v1.3} forbidden-token, \code{lake-manifest.json},
 and zero-symlink guards on every CI run.
@@ -595,7 +663,7 @@ and zero-symlink guards on every CI run.
 \section{Cross-Atlas Resolution Audit (2,000 Macro Problems)}\label{sec:crossatlas}
 
 To guarantee strict consistency across sibling repositories, \code{docs/CROSS_ATLAS_AUDIT_2026-11-25.md}
-reconciles \code{unsolved-mathematics} (\texttt{v0.8.3}, Archive ID \code{0TH-BUILD-004}, 120 problems)
+reconciles \code{unsolved-mathematics} (\texttt{v0.9.0}, Archive ID \code{0TH-BUILD-004}, 120 problems)
 and all companion \code{0thernes-research-archive} entries (56 public entries: 27 Tier~I papers,
 17 Tier~II builds, 12 Tier~III discoveries) against \code{unsolved-problems-mega-atlas}
 (live \texttt{v2.10.0} commit \texttt{9c543fc}: \textbf{2,000} deduplicated problems with a
@@ -624,7 +692,7 @@ Archive ID & Parent Mega-Atlas ID(s) & Narrowly Scoped Result (Lean 4.35.0, 6/6 
 \code{0TH-2026-013} & \code{CS-001}, \code{CS-005}, \code{CS-010/12} & 14 unconditional complexity-barrier theorems + 4 heuristic refutations & \textbf{OPEN} \\
 \code{0TH-2026-014..016} & \code{CM-018}, \code{ALG-035}, \code{CS-049}+ & 150 decls across non-Hermitian knots, fracton codes \& odd-cycle capacity & \textbf{OPEN} \\
 \code{0TH-2026-007/8} & \code{NEURO-001}, \code{NEURO-019} & 24 biophysical invariants; refuted $40$\,Hz ATP ($f_{\mathrm{crit}}=29.5625$\,Hz) & \textbf{OPEN} \\
-\code{0TH-BUILD-004} & \code{NT-005}, \code{NT-066}, \code{NT-078}+ & \textbf{This Atlas (\texttt{v0.8.3}):} 120 dossiers + 66 Lean thms (102 decls, 8 domains) & \textbf{OPEN} \\
+\code{0TH-BUILD-004} & \code{NT-005}, \code{NT-066}, \code{NT-078}+ & \textbf{This Atlas (\texttt{v0.9.0}):} 120 dossiers + 69 Lean thms (109 decls, 8 domains) & \textbf{OPEN} \\
 \code{0TH-BUILD-001..012} & \code{SUB-032}, \code{CS-053}, \code{BIO-001}+ & Companion formal builds ($p$-adic AdS/CFT, RS MDS, A-Life Omega, HW) & \textbf{OPEN} \\
 \bottomrule
 \end{tabularx}
@@ -669,49 +737,51 @@ are enforced in CI (claim \code{C-14}).
 
 \section{Multi-Cycle, Ten-Class Hardening Audit and Verification Ladder}\label{sec:hardening}
 
-Releases \texttt{v0.4.0}--\texttt{v0.8.3} underwent full multi-cycle forensic hardening across
-all 1,999 tracked files indexed across 10 subsystems in \code{HARDENING_INDEX.md}, classifying
+Releases \texttt{v0.4.0}--\texttt{v0.9.0} underwent full multi-cycle forensic hardening across
+all $2{,}000+$ tracked files indexed across 10 subsystems in \code{HARDENING_INDEX.md}, classifying
 every finding strictly into the ten classes of Build Standard \texttt{v1.2.0} (\code{bug},
 \code{error}, \code{issue}, \code{problem}, \code{concern}, \code{dilemma}, \code{conflict},
-\code{gap}, \code{hole}, \code{blindspot}; complete ledger in
-\code{docs/reviews/2026-11-25-three-cycle-hardening-audit.md}). Table~\ref{tab:hardening}
-records representative resolved defects across all ten classes, culminating in the \texttt{v0.8.2}
-three-cycle sweep (fixing unescaped Markdown table pipes, 14 3-column \code{mathematicians.md}
-tables, odd \code{\$} math delimiters, 4 duplicate / 3 bare / 6 unlogged citation rows,
-\code{search_all_problems.py --limit 0}, \code{repo.yaml} invalid \code{lean4} enum, 4 residual
-statement-audit strings in \code{build_site.py}, and the \code{sync-external.yml} bot committer).
+\code{gap}, \code{hole}, \code{blindspot}; complete ledgers in
+\code{docs/reviews/2026-11-25-three-cycle-hardening-audit.md} and
+\code{docs/reviews/2026-11-27-v090-three-cycle-collatz-hardening-audit.md}). Table~\ref{tab:hardening}
+records representative resolved defects across all ten classes through \texttt{v0.9.0} (including
+fixing the $O(\text{pairs})$ \code{e_values} RAM blowup in \code{odd_unit_lock_target_tail_lab.py},
+correcting the stale $\sim 58$\,MB Collatz footprint and \code{All 25} blueprint link, adding
+historical-retraction banners to July 2026 Collatz logs, and activating native ASan/UBSan,
+250,000-case fuzzing, safe Rust cross-oracle parity, and measured performance budgets).
 
 \begin{table}[htbp]
 \centering
-\caption{Representative Hardening Findings Across All Ten Build Standard \texttt{v1.2.0} Classes (\texttt{v0.4.0}--\texttt{v0.8.3}).}
+\caption{Representative Hardening Findings Across All Ten Build Standard \texttt{v1.2.0} Classes (\texttt{v0.4.0}--\texttt{v0.9.0}).}
 \label{tab:hardening}
 \scriptsize
 \begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
 \toprule
 Class & Defect Detected & Resolution \& Guard \\
 \midrule
-\code{bug} & Unescaped \code{|} splitting tables in 6 dossiers; 14 3-col \code{mathematicians.md}; odd \code{\$} in 3 dossiers + \code{beal-conjecture.md}; \code{search_all_problems --limit 0}; \code{B023}/\code{NameError} & Escaped \code{\lvert...\rvert}, standardized 5-col tables, fixed math \& \code{limit<=0}; guarded by \code{check_dossiers --strict}, \code{check_papers}, \code{ruff B023}, mutants M7--M10 \\
-\code{error} & 4 duplicate / 3 bare / 6 unlogged citations; \code{repo.yaml} invalid \code{lean4} enum; 4 residual statement-audit strings in \code{build_site.py}; untyped \code{build_indexes.py}; ``Bochner--Riesel'' typo & Live-verified 11/11 rows (537/537 bijection, 287/287 DOIs 0 retracted); \code{stack: [python, other]}; fixed \code{build_site.py}; \code{mypy --check-untyped-defs} 20/20 clean \\
+\code{bug} & $O(\text{pairs})$ \code{e_values} RAM blowup in \code{odd_unit_lock_target_tail_lab.py}; unescaped \code{|} in 6 dossiers; 14 3-col \code{mathematicians.md}; odd \code{\$}; \code{--limit 0}; \code{B023}/\code{NameError} & Replaced with $O(1)$ running \code{e_sum}/\code{max_e}; escaped pipes, standardized tables, fixed math \& \code{limit<=0}; guarded by \code{check_dossiers --strict}, \code{ruff B023}, M7--M10 \\
+\code{error} & Stale $\sim 58$\,MB Collatz footprint \& \code{All 25} link in \code{build_site.py}; 4 dup / 3 bare / 6 unlogged citations; invalid \code{lean4} enum; residual audit strings & Corrected to measured $16.8$\,MiB \& dynamic link; 537/537 bijection (287/287 DOIs 0 retracted); valid \code{stack: [python, c, rust, other]}; \code{mypy} 20/20 clean \\
 \code{issue} & 89 CRLF files; Node 20 Actions deprecation; literal backticked \code{\$} in 5 Erd\H{o}s dossiers & Enforced LF everywhere; upgraded workflows to Node 24 \code{@v7}/\code{@v5}/\code{@v4}; cleaned code spans \\
-\code{problem} & Windows lacks Linux \code{bwrap} for \code{lake check} & Local 6-kernel binary replay + Ubuntu \code{bwrap} CI \\
-\code{concern} & 9 July 2026 Collatz files leaked local machine paths & Sanitized to relative paths + pytest negative guard \\
-\code{dilemma} & Migrating \code{formal/} $\to$ \code{lean/} vs.\ breaking legacy URLs; preserving git history for \code{A23} & \code{git mv} + redirect stub; switched future sync commits off bot while honestly disclosing \code{8bce1ba} \\
-\code{conflict} & \code{sync-external.yml} used \code{github-actions[bot]} vs.\ Build Standard \code{A23}; CI R1 report-only; \code{faq.md} session label & Switched committer to verified author + pytest guard; report-only CI linters; reconciled \code{claude-opus-4-8} \\
-\code{gap} & Missing \code{HARDENING_INDEX.md}, M7--M10 mutants, 10-class \code{finding.yml}, \code{gitleaks}/\code{osv-scanner}, export-control log & Added \code{HARDENING_INDEX.md}, 8 new tests (95 total), 4 new mutants (10/10), SHA-256-pinned scanners \\
-\code{hole} & \code{check_dossiers --strict} missed columns/bijection/math; \code{validate.py} skipped \code{meta-analyses/}/\code{lean/} links; \code{check_papers} missed \code{\$}; \code{MANIFEST} missed \code{lake-manifest.json} & Hardened all four gates (42-file SHA-256 manifest) + Playbook \texttt{v1.3} \S1 Lean token/symlink audit \\
-\code{blindspot} & Verified DOIs unaudited for retractions; no live negative Lean check; Riesel open-candidate count drift (\code{~40} vs.\ ``four dozen'') & Added \code{check_retractions.py} (287/287), \code{test_lean_negative.py} (3/3), verified exact 41 Riesel candidates \\
+\code{problem} & Slow Python Collatz loops exhausting laptop CPU/RAM; Windows lacks Linux \code{bwrap} & Catalytic C17/BMI2 + safe Rust engine (up to 7,137$\times$ faster, 4\,KiB DFS stack); local 6-kernel binary replay + Ubuntu \code{bwrap} CI \\
+\code{concern} & July 2026 Collatz logs carried un-bannered exploratory victory blocks; 9 files leaked local paths & Added top-level historical retraction banners + fenced withdrawn blocks; sanitized paths + pytest guards \\
+\code{dilemma} & Migrating \code{formal/} $\to$ \code{lean/}; preserving git history for \code{A23}; C17/Rust vs.\ hand assembly & \code{git mv} + stub; switched future sync commits off bot; verified GCC \code{-mbmi2} emits \code{tzcnt}/\code{bswap}/\code{mulx} cleanly \\
+\code{conflict} & \code{sync-external.yml} bot committer vs.\ \code{A23}; CI R1 report-only; \code{faq.md} session label & Switched committer to verified author + pytest guard; report-only CI linters; reconciled \code{claude-opus-4-8} \\
+\code{gap} & Missing native accelerator, benchmarks (\code{A37/B26/B27}), fuzzer/sanitizers (\code{B15/B16}), toolstack audit, \code{HARDENING_INDEX.md}, M7--M10 mutants & Added \code{native/} C17+Rust+250k fuzzer, \code{docs/benchmarks.md}, \code{docs/COLLATZ-TOOLSTACK-AND-CATALYTIC-AUDIT.md}, 100 tests, 10/10 mutants \\
+\code{hole} & \code{check_dossiers --strict} missed columns/bijection/math; \code{validate.py} skipped \code{meta-analyses/}/\code{lean/} links; \code{MANIFEST} missed native/doc files & Hardened all four gates, expanded SHA-256 manifest to 47 files, added native CI job + Playbook \texttt{v1.3} \S1 Lean audit \\
+\code{blindspot} & Verified DOIs unaudited for retractions; no live negative Lean check; Riesel count drift; Collatz toolstack hype risk & Added \code{check_retractions.py} (287/287), \code{test_lean_negative.py} (3/3), verified 41 Riesel candidates, primary-source toolstack audit \\
 \bottomrule
 \end{tabularx}
 \end{table}
 
-Automated verification achieves \textbf{98.5\% (67/68)} Build Standard \texttt{v1.2.0}
-structure and completion compliance (\textbf{27/28} core; the sole flag is \code{A23} triggered by
-the historical \code{github-actions[bot]} commit \code{8bce1ba} in git history, while
-\code{sync-external.yml} has been switched to verified author identity for all future runs) on
-both Windows and Linux Ubuntu, \textbf{95} passing pytest, Hypothesis, oracle, metamorphic, and
-external-mirror tests, \textbf{100.0\% (10/10)} targeted mutation kill rate, zero \code{ruff} and
+Automated verification achieves \textbf{98.6\% (72/73)} Build Standard \texttt{v1.2.0}
+structure and completion compliance (activating \code{native: true} and \code{perf: true}, promoting
+\code{A37}, \code{B15}, \code{B16}, \code{B26}, and \code{B27} to \code{done}; the sole flag is
+\code{A23} triggered by historical \code{github-actions[bot]} commit \code{8bce1ba} in git history,
+while \code{sync-external.yml} uses verified author identity for all future runs) on both Windows
+and Linux Ubuntu, \textbf{100} passing pytest, Hypothesis, oracle, metamorphic, external-mirror,
+and native-parity tests, \textbf{100.0\% (10/10)} targeted mutation kill rate, zero \code{ruff} and
 zero \code{mypy --check-untyped-defs} errors across all 20/20 core Python modules, zero
-\code{repo-standard.schema.json} errors, a 42-file SHA-256 manifest (\code{data/MANIFEST.sha256})
+\code{repo-standard.schema.json} errors, a 47-file SHA-256 manifest (\code{data/MANIFEST.sha256})
 bound by DigiCert RFC~3161 (\code{.tsr}) and Bitcoin OpenTimestamps (\code{.ots}) cryptographic
 proofs, SHA-256-verified \code{gitleaks} and \code{osv-scanner} CI audits, and GitHub SLSA build
 provenance.
@@ -729,8 +799,9 @@ provenance.
     (out of 2,782 total across all 120 \code{papers.md} tables) remain unverified research leads;
     only the 537 \code{verified} rows are API-confirmed in strict 1-to-1 log bijection.
   \item \textbf{Collatz repository footprint asymmetry:} \code{problems/collatz-conjecture/}
-    retains $\sim 58$\,MB of July 2026 experimental logs compared to $\sim 30$\,KB median for
-    the remaining 119 dossiers, tracked as an open architectural roadmap trade-off.
+    retains $16.8$\,MiB ($17.6$\,MB) of July--November 2026 experimental logs and native engines
+    (after lossless gzip compression of the legacy 38.6\,MB JSON in \texttt{v0.3.0}) compared to
+    $\sim 30$\,KB median for the remaining 119 dossiers, tracked as an open roadmap trade-off.
   \item \textbf{Post-release errata and withdrawal policy:} Any post-tag defect is logged
     append-only in \code{ERRATA.md}; fatal flaws trigger an explicit public withdrawal notice.
 \end{enumerate}
@@ -742,7 +813,7 @@ All code, Lean 4.35.0 proofs, JSON/YAML datasets, RAG corpora, FAIR descriptors
 (\code{data/external/}), and LaTeX/BibTeX sources are archived publicly at
 \url{https://github.com/0thernes/unsolved-mathematics}, preserved in Software Heritage
 (verified \texttt{v0.6.0} full snapshot
-\hashcode{swh:1:snp:c11ec8263dd64b986c52bb400b8c3a85a3e6a254}, with \texttt{v0.8.3} queued upon tag),
+\hashcode{swh:1:snp:c11ec8263dd64b986c52bb400b8c3a85a3e6a254}, with \texttt{v0.9.0} queued upon tag),
 and registered under Archive ID \code{0TH-BUILD-004} in
 \url{https://github.com/0thernes/0thernes-research-archive}.
 A structured primary-literature search audit log and a fundamental-research export-control
@@ -762,7 +833,7 @@ deterministic test suites. The author declares no competing financial interests 
 institutional or corporate LLC affiliation.
 
 \subsection{Clean-Clone Replication Protocol}
-From a clean clone of tag \texttt{v0.8.3}:
+From a clean clone of tag \texttt{v0.9.0}:
 {\small
 \begin{verbatim}
 python -m pip install -r requirements-lock.txt

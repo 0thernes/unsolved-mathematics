@@ -1,8 +1,8 @@
 # Replication Protocol
 
 Step-by-step instructions to reproduce every build artifact, RAG corpus,
-static proof blueprint, daily external-program mirror verification, AMS-LaTeX white paper, dual cryptographic timestamps, test result, and 6-kernel
-Lean 4.35.0 proof from a clean clone (`v0.8.3`).
+static proof blueprint, daily external-program mirror verification, catalytic native Collatz accelerator, AMS-LaTeX white paper, dual cryptographic timestamps, test result, and 6-kernel
+Lean 4.35.0 proof from a clean clone (`v0.9.0`).
 
 ## 1. Prerequisites
 
@@ -10,6 +10,7 @@ Lean 4.35.0 proof from a clean clone (`v0.8.3`).
 - **Python** 3.11 or 3.12 (`pip install -r requirements-lock.txt`)
 - **Lean 4.35.0** via [elan](https://github.com/leanprover/elan) (pinned in `lean/lean-toolchain`; zero Mathlib downloads needed)
 - **Linux only (for sandboxed comparator):** `bubblewrap` (`sudo apt-get install -y bubblewrap`)
+- **Optional (catalytic native Collatz engine & cross-oracle):** GCC/Clang (`-std=c17 -mbmi2`) or Zig `zig cc`, plus `rustc` (1.80+)
 - **Optional (white paper PDF recompilation):** `tectonic` 0.15+ (or TeX Live `pdflatex` + `bibtex`)
 
 ## 2. Clean-Clone Reproduction Commands
@@ -55,8 +56,14 @@ lake env leanchecker-paranoid --fresh Adversarial
 lake check --paranoid
 lake comparator --config comparator.json --paranoid
 
-# 5. Recompile AMS-LaTeX white paper (optional, requires tectonic)
-cd ../paper && tectonic -X compile Donahue_2026_unsolved_mathematics_atlas.tex
+# 5. Build & verify catalytic native Collatz accelerator, ASan/UBSan 250k fuzzer & safe Rust oracle (optional)
+cd ..
+gcc -O3 -std=c17 -mbmi2 -Wall -Wextra -Werror problems/collatz-conjecture/native/collatz_catalytic.c -o /tmp/collatz_catalytic && /tmp/collatz_catalytic self-test
+gcc -O2 -g -std=c17 -DSTANDALONE_FUZZ_MAIN -fsanitize=address,undefined -fno-sanitize-recover=all -Wall -Wextra -Werror problems/collatz-conjecture/native/fuzz_collatz_catalytic.c -o /tmp/fuzz_collatz && /tmp/fuzz_collatz
+rustc -O problems/collatz-conjecture/native/collatz_catalytic_oracle.rs -o /tmp/collatz_oracle && /tmp/collatz_oracle residue-mine 24
+
+# 6. Recompile AMS-LaTeX white paper (optional, requires tectonic)
+cd paper && tectonic -X compile Donahue_2026_unsolved_mathematics_atlas.tex
 ```
 
 ## 3. Expected Headline Outputs
@@ -67,11 +74,11 @@ cd ../paper && tectonic -X compile Donahue_2026_unsolved_mathematics_atlas.tex
 - `scripts/check_papers.py` → `OK: 120 meta-analyses passed the integrity gate.`
 - `scripts/proof_claim_sweep.py` → `PSEUDO-PROOF SWEEP: clean — no unhedged victory-declarations found.`
 - `scripts/check_retractions.py --check` → `OK: data/retraction-audit.json clean — 287 verified DOIs audited, 0 retracted, 3 with publisher update/corrigendum notices, 0 errors.`
-- `scripts/check_readme_axioms.py` → `OK: 102 declarations (66 comparator theorems) verified in README.md + lean/STATEMENT_FIDELITY.md; 15 Lean files satisfy Palomar limits & zero forbidden tokens.`
+- `scripts/check_readme_axioms.py` → `OK: 109 declarations (69 comparator theorems) verified in README.md + lean/STATEMENT_FIDELITY.md; 15 Lean files satisfy Palomar limits & zero forbidden tokens.`
 - `scripts/sync_external_programs.py --check` → `OK: full external program mirror verified offline — 26 programs, 62,790 targets, 62,790 mirrored items (27 shards, all <5 MB), solved_by_kind=(open: 326, known: 1322, warmup: 161), crosswalk 114/120`
 - `scripts/timestamp_manifest.py --check` → `OK: Dual cryptographic timestamps verified offline against data/MANIFEST.sha256`
 - `scripts/test_lean_negative.py` → `OK: All 3 live negative Lean 4.35.0 kernel & axiom-gate rejection checks PASSED.`
-- `lean/`: `autoImplicit = false`; 66/66 headline theorems across 8 domains in `Challenge.lean` matched by `Solution.lean` + 16 witnesses in `NonVacuity.lean` + 20 refutations in `Adversarial.lean`; `#print axioms` strictly within `[propext, Classical.choice, Quot.sound]` (14 use zero axioms); 0 `sorry`/`admit`/`native_decide`/custom `axiom` outside `Challenge.lean`.
+- `lean/`: `autoImplicit = false`; 69/69 headline theorems across 8 domains in `Challenge.lean` matched by `Solution.lean` + 18 witnesses in `NonVacuity.lean` + 22 refutations in `Adversarial.lean`; `#print axioms` strictly within `[propext, Classical.choice, Quot.sound]` (16 use zero axioms); 0 `sorry`/`admit`/`native_decide`/custom `axiom` outside `Challenge.lean`.
 
 ## 4. Independent Replication Log
 
@@ -85,3 +92,4 @@ cd ../paper && tectonic -X compile Donahue_2026_unsolved_mathematics_atlas.tex
 | 2026-11-26 | Alexander S. Donahue (operator) | Windows 11, Python 3.12.10, Lean 4.35.0 (`eb6cafb7`), Tectonic 0.17.0 | `v0.7.0` 3-cycle `/goal` hardening: 102-decl 8-domain 6-kernel Lean replay, 3/3 live neg rejection, 0-warning visually inspected PDF + clean-room arXiv tarball, dual `.tsr` + `.ots`, 84 tests, 6/6 mutation, 19/19 `mypy`, `ruff` + `B023`, Build Standard `v1.2.0` 100.0% (`68/68`) | PASS ([CI 45940334677](https://github.com/0thernes/unsolved-mathematics/actions/runs/45940334677), [Release 45940340185](https://github.com/0thernes/unsolved-mathematics/actions/runs/45940340185)) | Local 6-kernel audit recorded in `lean/six_kernel_audit.txt`; Node 24 Ubuntu `bwrap` CI, `gitleaks`/`osv-scanner`, SLSA release & Pages deploy verified green |
 | 2026-11-27 | GitHub Actions (`ubuntu-latest` + `windows-latest`) | Ephemeral GitHub runners, Python 3.12, Lean 4.35.0 + `bwrap` | `v0.8.1` full CI (120 curated problems, 59,396 daily-mirrored Left to Solve items across 26 `<4 MiB` shards, 102-decl 6-kernel `bwrap` Lean + 3/3 live neg rejection, zero-drift `rag/corpus.jsonl`, 87 tests, 6/6 mutation, 20/20 `mypy`) + Validate + Pages + SLSA release | PASS ([CI 45949011546](https://github.com/0thernes/unsolved-mathematics/actions/runs/45949011546), [Release 45949011416](https://github.com/0thernes/unsolved-mathematics/actions/runs/45949011416), [Pages 45949011485](https://github.com/0thernes/unsolved-mathematics/actions/runs/45949011485)) | All 4 workflows green (`8aeba1a`); immutable snapshot registered in `0thernes-research-archive` (`42a6081`) |
 | 2026-11-27 | Alexander S. Donahue (operator) & GitHub Actions | Windows 11 & Ephemeral Linux runners, Python 3.12, Lean 4.35.0 (`eb6cafb7`), Tectonic 0.17.0 | `v0.8.2`–`v0.8.3` 3-cycle 10-subsystem hardening + live 26-program (`62,790` targets, `27` shards, `114/120` crosswalk, 4 unverified third-party agent-claim review signals) sync: 537/537 citation bijection, 287/287 DOIs 0 retracted, 95 tests, 10/10 mutants, `mypy --check-untyped-defs` 20/20, 0-warning PDF + clean-room arXiv tarball, 42-file SHA-256 + `.tsr`/`.ots` | PASS ([Release v0.8.2 46048510181](https://github.com/0thernes/unsolved-mathematics/actions/runs/46048510181), [Daily Sync 46043383151](https://github.com/0thernes/unsolved-mathematics/actions/runs/46043383151)) | `v0.8.2` (`15530ff`) merged cleanly with daily sync `510dc64` into `v0.8.3` on `main` |
+| 2026-11-27 | Alexander S. Donahue (operator) | Windows 11, Python 3.12.10, Lean 4.35.0 (`eb6cafb7`), GCC 16.1, Rust 1.94.1, Zig 0.17.0, Tectonic 0.17.0 | `v0.9.0` 3-cycle `/goal` Collatz frontier & full-tree hardening: 109-decl 8-domain 6-kernel Lean replay (69 thms incl. Collatz $o=3$, sharp intercept ceiling & Eliahou–Steiner cycle amplitude bound), 3/3 live neg rejection, catalytic C17/BMI2 + safe Rust native engine (`1,683×–7,137×` 3-run median speedups, 250k Zig UBSan fuzzer, `884.4M`-pair $t\le 26$ & `4,096 B` stack $d=34$ bit-exact parity), 0-warning/0-overfull PDF + clean-room arXiv tarball, 47-file SHA-256 + dual `.tsr`/`.ots`, 100/100 pytest, 10/10 mutants, 20/20 `mypy`, Build Standard `v1.2.0` `98.6%` (`72/73`, sole flag historical `A23`) | PASS | Local 6-kernel audit recorded in `lean/six_kernel_audit.txt`; full Ubuntu `bwrap` + native ASan/UBSan CI runs automatically on push to `main` |

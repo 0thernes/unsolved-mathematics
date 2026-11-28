@@ -1,0 +1,340 @@
+{
+  "engine": "collatz_catalytic_c17_bmi2",
+  "status": "finite exact measurement only; not a proof of Collatz",
+  "exactness_guarantee": "Lean 4.35.0 FormalAtlas.Collatz odd-unit-lock isometry + Fine-Wilf ceiling (<= 63 bits for depths <= 32)",
+  "parameters": {
+    "source_min_depth": 3,
+    "source_max_depth": 12,
+    "target_min_depth": 1,
+    "target_max_depth": 26,
+    "target_cutoffs": [22, 24, 26],
+    "thresholds": [16, 18, 20, 22, 24, 26, 28]
+  },
+  "cycle_counts": {
+    "primitive_source_cycles": 160,
+    "source_phases": 1715,
+    "unique_target_spines_total": 515689
+  },
+  "by_target_cutoff": {
+    "22": {
+      "target_spines": 52812,
+      "source_phase_target_pairs": 90572420,
+      "zero_separation_skips": 160,
+      "max_valuation_e": 21,
+      "avg_valuation_e": 0.479507007,
+      "valuation_histogram": {"0": 63954625, "1": 18974374, "2": 3835132, "3": 1607548, "4": 946733, "5": 494015, "6": 293316, "7": 178203, "8": 111285, "9": 71577, "10": 44636, "11": 32114, "12": 19169, "13": 6070, "14": 1630, "15": 759, "16": 521, "17": 252, "18": 242, "19": 108, "20": 85, "21": 26},
+      "tail_comparison": [
+        {
+          "threshold_e_ge": 16,
+          "count": 1234,
+          "fraction": 0.000013624456540,
+          "geometric_expected_count": 1382.025452,
+          "observed_over_geometric": 0.892892,
+          "phase_0_count": 1231,
+          "periodic_prefix_ge_75pct": 1020,
+          "periodic_prefix_ge_90pct": 306,
+          "exact_echo_e_eq_prefix": 1233
+        },
+        {
+          "threshold_e_ge": 18,
+          "count": 461,
+          "fraction": 0.000005089849647,
+          "geometric_expected_count": 345.506363,
+          "observed_over_geometric": 1.334274,
+          "phase_0_count": 461,
+          "periodic_prefix_ge_75pct": 461,
+          "periodic_prefix_ge_90pct": 253,
+          "exact_echo_e_eq_prefix": 461
+        },
+        {
+          "threshold_e_ge": 20,
+          "count": 111,
+          "fraction": 0.000001225538635,
+          "geometric_expected_count": 86.376591,
+          "observed_over_geometric": 1.285070,
+          "phase_0_count": 111,
+          "periodic_prefix_ge_75pct": 111,
+          "periodic_prefix_ge_90pct": 111,
+          "exact_echo_e_eq_prefix": 111
+        },
+        {
+          "threshold_e_ge": 22,
+          "count": 0,
+          "fraction": 0.000000000000000,
+          "geometric_expected_count": 21.594148,
+          "observed_over_geometric": 0.000000,
+          "phase_0_count": 0,
+          "periodic_prefix_ge_75pct": 0,
+          "periodic_prefix_ge_90pct": 0,
+          "exact_echo_e_eq_prefix": 0
+        },
+        {
+          "threshold_e_ge": 24,
+          "count": 0,
+          "fraction": 0.000000000000000,
+          "geometric_expected_count": 5.398537,
+          "observed_over_geometric": 0.000000,
+          "phase_0_count": 0,
+          "periodic_prefix_ge_75pct": 0,
+          "periodic_prefix_ge_90pct": 0,
+          "exact_echo_e_eq_prefix": 0
+        },
+        {
+          "threshold_e_ge": 26,
+          "count": 0,
+          "fraction": 0.000000000000000,
+          "geometric_expected_count": 1.349634,
+          "observed_over_geometric": 0.000000,
+          "phase_0_count": 0,
+          "periodic_prefix_ge_75pct": 0,
+          "periodic_prefix_ge_90pct": 0,
+          "exact_echo_e_eq_prefix": 0
+        },
+        {
+          "threshold_e_ge": 28,
+          "count": 0,
+          "fraction": 0.000000000000000,
+          "geometric_expected_count": 0.337409,
+          "observed_over_geometric": 0.000000,
+          "phase_0_count": 0,
+          "periodic_prefix_ge_75pct": 0,
+          "periodic_prefix_ge_90pct": 0,
+          "exact_echo_e_eq_prefix": 0
+        }
+      ],
+      "top_witnesses": [
+        {"valuation_e": 21, "source": "011", "source_depth": 3, "phase_t": 0, "phase_word": "011", "target": "0110110110110110110111", "target_depth": 22, "periodic_prefix_len": 21, "periodic_prefix_fraction": 0.954545},
+        {"valuation_e": 21, "source": "0110111", "source_depth": 7, "phase_t": 0, "phase_word": "0110111", "target": "0110111011011101101111", "target_depth": 22, "periodic_prefix_len": 21, "periodic_prefix_fraction": 0.954545},
+        {"valuation_e": 21, "source": "0101111", "source_depth": 7, "phase_t": 0, "phase_word": "0101111", "target": "0101111010111101011111", "target_depth": 22, "periodic_prefix_len": 21, "periodic_prefix_fraction": 0.954545},
+        {"valuation_e": 21, "source": "0011111", "source_depth": 7, "phase_t": 0, "phase_word": "0011111", "target": "0011111001111100111111", "target_depth": 22, "periodic_prefix_len": 21, "periodic_prefix_fraction": 0.954545},
+        {"valuation_e": 21, "source": "0111111", "source_depth": 7, "phase_t": 0, "phase_word": "0111111", "target": "0111111011111101111111", "target_depth": 22, "periodic_prefix_len": 21, "periodic_prefix_fraction": 0.954545},
+        {"valuation_e": 21, "source": "001011111", "source_depth": 9, "phase_t": 0, "phase_word": "001011111", "target": "0010111110010111110011", "target_depth": 22, "periodic_prefix_len": 21, "periodic_prefix_fraction": 0.954545},
+        {"valuation_e": 21, "source": "011011111", "source_depth": 9, "phase_t": 0, "phase_word": "011011111", "target": "0110111110110111110111", "target_depth": 22, "periodic_prefix_len": 21, "periodic_prefix_fraction": 0.954545},
+        {"valuation_e": 21, "source": "0011111101", "source_depth": 10, "phase_t": 0, "phase_word": "0011111101", "target": "0011111101001111110101", "target_depth": 22, "periodic_prefix_len": 21, "periodic_prefix_fraction": 0.954545},
+        {"valuation_e": 21, "source": "0011111011", "source_depth": 10, "phase_t": 0, "phase_word": "0011111011", "target": "0011111011001111101101", "target_depth": 22, "periodic_prefix_len": 21, "periodic_prefix_fraction": 0.954545},
+        {"valuation_e": 21, "source": "0011110111", "source_depth": 10, "phase_t": 0, "phase_word": "0011110111", "target": "0011110111001111011101", "target_depth": 22, "periodic_prefix_len": 21, "periodic_prefix_fraction": 0.954545},
+        {"valuation_e": 21, "source": "0011101111", "source_depth": 10, "phase_t": 0, "phase_word": "0011101111", "target": "0011101111001110111101", "target_depth": 22, "periodic_prefix_len": 21, "periodic_prefix_fraction": 0.954545},
+        {"valuation_e": 21, "source": "0011011111", "source_depth": 10, "phase_t": 0, "phase_word": "0011011111", "target": "0011011111001101111101", "target_depth": 22, "periodic_prefix_len": 21, "periodic_prefix_fraction": 0.954545},
+        {"valuation_e": 21, "source": "0010111111", "source_depth": 10, "phase_t": 0, "phase_word": "0010111111", "target": "0010111111001011111101", "target_depth": 22, "periodic_prefix_len": 21, "periodic_prefix_fraction": 0.954545},
+        {"valuation_e": 21, "source": "0001111111", "source_depth": 10, "phase_t": 0, "phase_word": "0001111111", "target": "0001111111000111111101", "target_depth": 22, "periodic_prefix_len": 21, "periodic_prefix_fraction": 0.954545},
+        {"valuation_e": 21, "source": "0011111111", "source_depth": 10, "phase_t": 0, "phase_word": "0011111111", "target": "0011111111001111111101", "target_depth": 22, "periodic_prefix_len": 21, "periodic_prefix_fraction": 0.954545},
+        {"valuation_e": 21, "source": "001111101011", "source_depth": 12, "phase_t": 0, "phase_word": "001111101011", "target": "0011111010110011111011", "target_depth": 22, "periodic_prefix_len": 21, "periodic_prefix_fraction": 0.954545}
+      ]
+    },
+    "24": {
+      "target_spines": 144065,
+      "source_phase_target_pairs": 247071315,
+      "zero_separation_skips": 160,
+      "max_valuation_e": 23,
+      "avg_valuation_e": 0.475548374,
+      "valuation_histogram": {"0": 174462008, "1": 52217081, "2": 10195581, "3": 4328152, "4": 2532845, "5": 1315955, "6": 776085, "7": 471602, "8": 295266, "9": 191068, "10": 119677, "11": 87259, "12": 52709, "13": 16477, "14": 4155, "15": 1978, "16": 1344, "17": 649, "18": 630, "19": 296, "20": 251, "21": 94, "22": 138, "23": 15},
+      "tail_comparison": [
+        {
+          "threshold_e_ge": 16,
+          "count": 3417,
+          "fraction": 0.000013830015030,
+          "geometric_expected_count": 3770.009079,
+          "observed_over_geometric": 0.906364,
+          "phase_0_count": 3409,
+          "periodic_prefix_ge_75pct": 1983,
+          "periodic_prefix_ge_90pct": 485,
+          "exact_echo_e_eq_prefix": 3416
+        },
+        {
+          "threshold_e_ge": 18,
+          "count": 1424,
+          "fraction": 0.000005763518116,
+          "geometric_expected_count": 942.502270,
+          "observed_over_geometric": 1.510872,
+          "phase_0_count": 1424,
+          "periodic_prefix_ge_75pct": 1424,
+          "periodic_prefix_ge_90pct": 432,
+          "exact_echo_e_eq_prefix": 1424
+        },
+        {
+          "threshold_e_ge": 20,
+          "count": 498,
+          "fraction": 0.000002015612375,
+          "geometric_expected_count": 235.625567,
+          "observed_over_geometric": 2.113523,
+          "phase_0_count": 498,
+          "periodic_prefix_ge_75pct": 498,
+          "periodic_prefix_ge_90pct": 290,
+          "exact_echo_e_eq_prefix": 498
+        },
+        {
+          "threshold_e_ge": 22,
+          "count": 153,
+          "fraction": 0.000000619254404,
+          "geometric_expected_count": 58.906392,
+          "observed_over_geometric": 2.597341,
+          "phase_0_count": 153,
+          "periodic_prefix_ge_75pct": 153,
+          "periodic_prefix_ge_90pct": 153,
+          "exact_echo_e_eq_prefix": 153
+        },
+        {
+          "threshold_e_ge": 24,
+          "count": 0,
+          "fraction": 0.000000000000000,
+          "geometric_expected_count": 14.726598,
+          "observed_over_geometric": 0.000000,
+          "phase_0_count": 0,
+          "periodic_prefix_ge_75pct": 0,
+          "periodic_prefix_ge_90pct": 0,
+          "exact_echo_e_eq_prefix": 0
+        },
+        {
+          "threshold_e_ge": 26,
+          "count": 0,
+          "fraction": 0.000000000000000,
+          "geometric_expected_count": 3.681649,
+          "observed_over_geometric": 0.000000,
+          "phase_0_count": 0,
+          "periodic_prefix_ge_75pct": 0,
+          "periodic_prefix_ge_90pct": 0,
+          "exact_echo_e_eq_prefix": 0
+        },
+        {
+          "threshold_e_ge": 28,
+          "count": 0,
+          "fraction": 0.000000000000000,
+          "geometric_expected_count": 0.920412,
+          "observed_over_geometric": 0.000000,
+          "phase_0_count": 0,
+          "periodic_prefix_ge_75pct": 0,
+          "periodic_prefix_ge_90pct": 0,
+          "exact_echo_e_eq_prefix": 0
+        }
+      ],
+      "top_witnesses": [
+        {"valuation_e": 23, "source": "0101111", "source_depth": 7, "phase_t": 0, "phase_word": "0101111", "target": "010111101011110101111011", "target_depth": 24, "periodic_prefix_len": 23, "periodic_prefix_fraction": 0.958333},
+        {"valuation_e": 23, "source": "010110111", "source_depth": 9, "phase_t": 0, "phase_word": "010110111", "target": "010110111010110111010111", "target_depth": 24, "periodic_prefix_len": 23, "periodic_prefix_fraction": 0.958333},
+        {"valuation_e": 23, "source": "001110111", "source_depth": 9, "phase_t": 0, "phase_word": "001110111", "target": "001110111001110111001111", "target_depth": 24, "periodic_prefix_len": 23, "periodic_prefix_fraction": 0.958333},
+        {"valuation_e": 23, "source": "0110110111", "source_depth": 10, "phase_t": 0, "phase_word": "0110110111", "target": "011011011101101101110111", "target_depth": 24, "periodic_prefix_len": 23, "periodic_prefix_fraction": 0.958333},
+        {"valuation_e": 23, "source": "0010111111", "source_depth": 10, "phase_t": 0, "phase_word": "0010111111", "target": "001011111100101111110011", "target_depth": 24, "periodic_prefix_len": 23, "periodic_prefix_fraction": 0.958333},
+        {"valuation_e": 23, "source": "0110111111", "source_depth": 10, "phase_t": 0, "phase_word": "0110111111", "target": "011011111101101111110111", "target_depth": 24, "periodic_prefix_len": 23, "periodic_prefix_fraction": 0.958333},
+        {"valuation_e": 23, "source": "00111111101", "source_depth": 11, "phase_t": 0, "phase_word": "00111111101", "target": "001111111010011111110101", "target_depth": 24, "periodic_prefix_len": 23, "periodic_prefix_fraction": 0.958333},
+        {"valuation_e": 23, "source": "00111111011", "source_depth": 11, "phase_t": 0, "phase_word": "00111111011", "target": "001111110110011111101101", "target_depth": 24, "periodic_prefix_len": 23, "periodic_prefix_fraction": 0.958333},
+        {"valuation_e": 23, "source": "00111110111", "source_depth": 11, "phase_t": 0, "phase_word": "00111110111", "target": "001111101110011111011101", "target_depth": 24, "periodic_prefix_len": 23, "periodic_prefix_fraction": 0.958333},
+        {"valuation_e": 23, "source": "00111101111", "source_depth": 11, "phase_t": 0, "phase_word": "00111101111", "target": "001111011110011110111101", "target_depth": 24, "periodic_prefix_len": 23, "periodic_prefix_fraction": 0.958333},
+        {"valuation_e": 23, "source": "00111011111", "source_depth": 11, "phase_t": 0, "phase_word": "00111011111", "target": "001110111110011101111101", "target_depth": 24, "periodic_prefix_len": 23, "periodic_prefix_fraction": 0.958333},
+        {"valuation_e": 23, "source": "00110111111", "source_depth": 11, "phase_t": 0, "phase_word": "00110111111", "target": "001101111110011011111101", "target_depth": 24, "periodic_prefix_len": 23, "periodic_prefix_fraction": 0.958333},
+        {"valuation_e": 23, "source": "00101111111", "source_depth": 11, "phase_t": 0, "phase_word": "00101111111", "target": "001011111110010111111101", "target_depth": 24, "periodic_prefix_len": 23, "periodic_prefix_fraction": 0.958333},
+        {"valuation_e": 23, "source": "00011111111", "source_depth": 11, "phase_t": 0, "phase_word": "00011111111", "target": "000111111110001111111101", "target_depth": 24, "periodic_prefix_len": 23, "periodic_prefix_fraction": 0.958333},
+        {"valuation_e": 23, "source": "00111111111", "source_depth": 11, "phase_t": 0, "phase_word": "00111111111", "target": "001111111110011111111101", "target_depth": 24, "periodic_prefix_len": 23, "periodic_prefix_fraction": 0.958333},
+        {"valuation_e": 22, "source": "0011111", "source_depth": 7, "phase_t": 0, "phase_word": "0011111", "target": "00111110011111001111101", "target_depth": 23, "periodic_prefix_len": 22, "periodic_prefix_fraction": 0.956522}
+      ]
+    },
+    "26": {
+      "target_spines": 515689,
+      "source_phase_target_pairs": 884406475,
+      "zero_separation_skips": 160,
+      "max_valuation_e": 25,
+      "avg_valuation_e": 0.461296081,
+      "valuation_histogram": {"0": 624498672, "1": 190276115, "2": 35880621, "3": 15129908, "4": 8213259, "5": 4155481, "6": 2427588, "7": 1464571, "8": 909421, "9": 581972, "10": 364469, "11": 264195, "12": 160237, "13": 51412, "14": 12538, "15": 6014, "16": 3818, "17": 1863, "18": 1733, "19": 851, "20": 694, "21": 273, "22": 430, "23": 106, "24": 182, "25": 52},
+      "tail_comparison": [
+        {
+          "threshold_e_ge": 16,
+          "count": 10002,
+          "fraction": 0.000011309279480,
+          "geometric_expected_count": 13494.971848,
+          "observed_over_geometric": 0.741165,
+          "phase_0_count": 9981,
+          "periodic_prefix_ge_75pct": 3440,
+          "periodic_prefix_ge_90pct": 759,
+          "exact_echo_e_eq_prefix": 10001
+        },
+        {
+          "threshold_e_ge": 18,
+          "count": 4321,
+          "fraction": 0.000004885762511,
+          "geometric_expected_count": 3373.742962,
+          "observed_over_geometric": 1.280773,
+          "phase_0_count": 4321,
+          "periodic_prefix_ge_75pct": 2881,
+          "periodic_prefix_ge_90pct": 706,
+          "exact_echo_e_eq_prefix": 4321
+        },
+        {
+          "threshold_e_ge": 20,
+          "count": 1737,
+          "fraction": 0.000001964029040,
+          "geometric_expected_count": 843.435740,
+          "observed_over_geometric": 2.059434,
+          "phase_0_count": 1737,
+          "periodic_prefix_ge_75pct": 1737,
+          "periodic_prefix_ge_90pct": 564,
+          "exact_echo_e_eq_prefix": 1737
+        },
+        {
+          "threshold_e_ge": 22,
+          "count": 770,
+          "fraction": 0.000000870640392,
+          "geometric_expected_count": 210.858935,
+          "observed_over_geometric": 3.651730,
+          "phase_0_count": 770,
+          "periodic_prefix_ge_75pct": 770,
+          "periodic_prefix_ge_90pct": 427,
+          "exact_echo_e_eq_prefix": 770
+        },
+        {
+          "threshold_e_ge": 24,
+          "count": 234,
+          "fraction": 0.000000264584223,
+          "geometric_expected_count": 52.714734,
+          "observed_over_geometric": 4.438987,
+          "phase_0_count": 234,
+          "periodic_prefix_ge_75pct": 234,
+          "periodic_prefix_ge_90pct": 234,
+          "exact_echo_e_eq_prefix": 234
+        },
+        {
+          "threshold_e_ge": 26,
+          "count": 0,
+          "fraction": 0.000000000000000,
+          "geometric_expected_count": 13.178683,
+          "observed_over_geometric": 0.000000,
+          "phase_0_count": 0,
+          "periodic_prefix_ge_75pct": 0,
+          "periodic_prefix_ge_90pct": 0,
+          "exact_echo_e_eq_prefix": 0
+        },
+        {
+          "threshold_e_ge": 28,
+          "count": 0,
+          "fraction": 0.000000000000000,
+          "geometric_expected_count": 3.294671,
+          "observed_over_geometric": 0.000000,
+          "phase_0_count": 0,
+          "periodic_prefix_ge_75pct": 0,
+          "periodic_prefix_ge_90pct": 0,
+          "exact_echo_e_eq_prefix": 0
+        }
+      ],
+      "top_witnesses": [
+        {"valuation_e": 25, "source": "01111", "source_depth": 5, "phase_t": 0, "phase_word": "01111", "target": "01111011110111101111011111", "target_depth": 26, "periodic_prefix_len": 25, "periodic_prefix_fraction": 0.961538},
+        {"valuation_e": 25, "source": "001111", "source_depth": 6, "phase_t": 0, "phase_word": "001111", "target": "00111100111100111100111101", "target_depth": 26, "periodic_prefix_len": 25, "periodic_prefix_fraction": 0.961538},
+        {"valuation_e": 25, "source": "00111111", "source_depth": 8, "phase_t": 0, "phase_word": "00111111", "target": "00111111001111110011111101", "target_depth": 26, "periodic_prefix_len": 25, "periodic_prefix_fraction": 0.961538},
+        {"valuation_e": 25, "source": "001111101", "source_depth": 9, "phase_t": 0, "phase_word": "001111101", "target": "00111110100111110100111111", "target_depth": 26, "periodic_prefix_len": 25, "periodic_prefix_fraction": 0.961538},
+        {"valuation_e": 25, "source": "0101101111", "source_depth": 10, "phase_t": 0, "phase_word": "0101101111", "target": "01011011110101101111010111", "target_depth": 26, "periodic_prefix_len": 25, "periodic_prefix_fraction": 0.961538},
+        {"valuation_e": 25, "source": "0011101111", "source_depth": 10, "phase_t": 0, "phase_word": "0011101111", "target": "00111011110011101111001111", "target_depth": 26, "periodic_prefix_len": 25, "periodic_prefix_fraction": 0.961538},
+        {"valuation_e": 25, "source": "01101110111", "source_depth": 11, "phase_t": 0, "phase_word": "01101110111", "target": "01101110111011011101110111", "target_depth": 26, "periodic_prefix_len": 25, "periodic_prefix_fraction": 0.961538},
+        {"valuation_e": 25, "source": "01101101111", "source_depth": 11, "phase_t": 0, "phase_word": "01101101111", "target": "01101101111011011011110111", "target_depth": 26, "periodic_prefix_len": 25, "periodic_prefix_fraction": 0.961538},
+        {"valuation_e": 25, "source": "00101111111", "source_depth": 11, "phase_t": 0, "phase_word": "00101111111", "target": "00101111111001011111110011", "target_depth": 26, "periodic_prefix_len": 25, "periodic_prefix_fraction": 0.961538},
+        {"valuation_e": 25, "source": "01101111111", "source_depth": 11, "phase_t": 0, "phase_word": "01101111111", "target": "01101111111011011111110111", "target_depth": 26, "periodic_prefix_len": 25, "periodic_prefix_fraction": 0.961538},
+        {"valuation_e": 25, "source": "001111110101", "source_depth": 12, "phase_t": 0, "phase_word": "001111110101", "target": "00111111010100111111010101", "target_depth": 26, "periodic_prefix_len": 25, "periodic_prefix_fraction": 0.961538},
+        {"valuation_e": 25, "source": "001111101101", "source_depth": 12, "phase_t": 0, "phase_word": "001111101101", "target": "00111110110100111110110101", "target_depth": 26, "periodic_prefix_len": 25, "periodic_prefix_fraction": 0.961538},
+        {"valuation_e": 25, "source": "001111011101", "source_depth": 12, "phase_t": 0, "phase_word": "001111011101", "target": "00111101110100111101110101", "target_depth": 26, "periodic_prefix_len": 25, "periodic_prefix_fraction": 0.961538},
+        {"valuation_e": 25, "source": "001110111101", "source_depth": 12, "phase_t": 0, "phase_word": "001110111101", "target": "00111011110100111011110101", "target_depth": 26, "periodic_prefix_len": 25, "periodic_prefix_fraction": 0.961538},
+        {"valuation_e": 25, "source": "001101111101", "source_depth": 12, "phase_t": 0, "phase_word": "001101111101", "target": "00110111110100110111110101", "target_depth": 26, "periodic_prefix_len": 25, "periodic_prefix_fraction": 0.961538},
+        {"valuation_e": 25, "source": "001011111101", "source_depth": 12, "phase_t": 0, "phase_word": "001011111101", "target": "00101111110100101111110101", "target_depth": 26, "periodic_prefix_len": 25, "periodic_prefix_fraction": 0.961538}
+      ]
+    }
+  },
+  "timings_seconds": {
+    "lyndon_generation": 0.015982,
+    "prefix_slice_analysis": 0.100390,
+    "total": 0.116372
+  }
+}

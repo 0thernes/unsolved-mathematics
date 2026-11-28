@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "unsolved-mathematics-atlas"
-version = "0.8.3"
-description = "Reproducible ranked dossier of 120 open mathematical problems paired with a multi-kernel Lean 4.35.0 formal core, daily full Left to Solve mirror (26 programs / 62,790 targets), and deterministic RAG corpus."
+version = "0.9.0"
+description = "Reproducible ranked dossier of 120 open mathematical problems paired with a multi-kernel Lean 4.35.0 formal core (69 theorems / 109 decls), catalytic C17/BMI2 + safe Rust Collatz accelerator, daily full Left to Solve mirror (26 programs / 62,790 targets), and deterministic RAG corpus."
 readme = "README.md"
 license = { text = "MIT" }
 requires-python = ">=3.11"

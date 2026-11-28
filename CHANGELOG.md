@@ -5,6 +5,26 @@ Format follows [Keep a Changelog](https://keepachangelog.com/); versions follow
 [SemVer](https://semver.org/) on the *structure/schema* (content grows
 continuously between structural versions).
 
+## [0.9.0] — 2026-11-27
+
+### Added (Collatz Frontier Expansion · Catalytic C17/BMI2 + Safe Rust Native Accelerator · 3-Cycle Ten-Class `/goal` Hardening)
+- **Expanded Collatz Lean 4.35.0 Formal Core (`lean/FormalAtlas/Collatz.lean`, `66 → 69` Headline Theorems, `102 → 109` Audited Declarations, 6/6 Independent Kernels):** Proved 3 new unconditional Collatz theorems from first principles with zero Mathlib and `autoImplicit = false`:
+  - `thm_collatz_positive_cycle_three_odd`: unconditional 3-odd-step positive-cycle exclusion across ALL periods $d \ge 1$ (`o = 3 → d = 6 ∧ x ∈ {1, 2}`).
+  - `thm_collatz_intercept_upper_bound`: sharp universal affine intercept ceiling $c(w) \le 2^{|w| - o(w)}(3^{o(w)} - 2^{o(w)})$ for ALL parity words $w$.
+  - `thm_collatz_cycle_amplitude_ceiling`: global Eliahou–Steiner Diophantine positive-cycle amplitude bound $(2^d - 3^o)x \le 2^{d-o}(3^o - 2^o)$.
+  - Paired with 2 new non-vacuity witnesses (`witness_collatz_three_odd_trivial_cycle`, `witness_collatz_intercept_bound_sharp`), 2 new adversarial false-variant refutations (`adv_collatz_no_nontrivial_three_odd_cycle`, `adv_collatz_intercept_bound_strict_false`), verbatim 109-line `#print axioms` parity (**16 zero-axiom**), full 6-kernel replay (`lean/six_kernel_audit.txt`), and 3/3 live negative kernel rejection (`scripts/test_lean_negative.py`).
+- **Catalytic Native Collatz Accelerator, Sanitizer/Fuzz Suite & Uncharted Frontier Measurements (`problems/collatz-conjecture/native/`):**
+  - Built zero-workspace C17/BMI2 engine (`collatz_catalytic.c`, verified via `objdump -d` to emit hardware `tzcnt`/`bswap`/`shlx`/`shrx`/`mulx`), independent zero-`unsafe` Rust cross-oracle (`collatz_catalytic_oracle.rs`), and 250,000-case deterministic + `libFuzzer` harness (`fuzz_collatz_catalytic.c`, 0 traps under Zig CC UBSan and Linux CI ASan+UBSan).
+  - Measured 3-run median wall-clock speedups of **1,683×–7,137×** on Odd-Unit-Lock target-tail (`123.134 s → 0.0173 s` on `s<=12, t<=20`) and **83.6×–95.3×** on catalytic fixed-stack DFS residue mining (`4,096 B` fixed stack, zero heap), verified 100% bit-for-bit identical across C17, Safe Rust, and Python `Fraction`.
+  - Generated uncharted exact frontier datasets: Odd-Unit-Lock target-tail through **$t \le 26$** (`884,406,475` exact pairs in `0.133 s`; `max_e = 25`; 100% phase-0 echoes for $e \ge 18$; isolated the **unique Lyndon periodic wrap-around echo witness** `source=010101011111`, `phase_t=2`, `target=0101011111`, `e=16 > 10` strictly under Lean Fine–Wilf ceiling `20`) and catalytic DFS residue mining through **$d = 34$** (`22,475,498` certified leaves, `151,917,636` frontier leaves, `max_q = 1`, `4,096 B` stack).
+- **Honest Performance Budgets, Benchmarks & Primary-Source Toolstack Audit:** Added [`docs/benchmarks.md`](docs/benchmarks.md), [`docs/COLLATZ-TOOLSTACK-AND-CATALYTIC-AUDIT.md`](docs/COLLATZ-TOOLSTACK-AND-CATALYTIC-AUDIT.md) (primary-source evaluation of `0thernes/catalytic-register-frontiers`, C17+BMI2, Rust, Zig, C++, Assembly, Eshkol, Moonlab, QGTL, and QRNG), [`docs/reviews/2026-11-27-v090-three-cycle-collatz-hardening-audit.md`](docs/reviews/2026-11-27-v090-three-cycle-collatz-hardening-audit.md), `native-catalytic-audit` CI job, and Build Standard `v1.2.0` `flags.native: true` + `flags.perf: true` promoting `A37`, `B15`, `B16`, `B26`, `B27` to `done` (`98.6%` `72/73`, sole flag historical `A23`).
+
+### Fixed (3-Cycle Full-Tree Hardening)
+- **`V90-BUG-01` (`problems/collatz-conjecture/experiments/odd_unit_lock_target_tail_lab.py`):** Eliminated $O(\text{pairs})$ `e_values: list[int]` RAM blowup, computing `max_valuation_e` and `avg_valuation_e` in $O(1)$ space with bit-exact parity.
+- **`V90-ERR-01..03`:** Corrected stale `~58 MB` Collatz footprint to actual measured `16.8 MiB` (`17.6 MB`) in `LIMITATIONS.md`, `ROADMAP.md`, and the white paper; fixed stale `"All 25 · Daily"` link in `scripts/build_site.py`; synchronized `v0.7.0`/`106` headers across `lean/` and `docs/CROSS_ATLAS_AUDIT_2026-11-25.md`.
+- **`V90-CONC-01`:** Added top-level **HISTORICAL LOG — WITHDRAWN / REFUTED** audit banners and fenced retracted July 2026 victory blocks across `FABLE5-ULTRACODE-COLLATZ-LOG.md`, `KICK-REPULSION-INSIGHT.md`, `RIGIDITY-LEMMA-CANDIDATE.md`, and `beyond_xai_reinforcement.md`.
+- **`V90-HOLE-01` & `v0.9.0` White Paper / Manifest Sync:** Added 5 new `v0.9.0` pytest tests (**100/100 PASS**, **10/10 mutation kill**, **20/20 mypy**), expanded `data/MANIFEST.sha256` from `42 → 47` tracked files, recompiled 0-warning / 0-overfull `paper/Donahue_2026_unsolved_mathematics_atlas.{tex,pdf}` + byte-identical clean-room `paper/arxiv_submission.tar.gz`, and minted fresh DigiCert RFC 3161 (`.tsr`) + Bitcoin OpenTimestamps (`.ots`) proofs.
+
 ## [0.8.3] — 2026-11-27
 
 ### Added & Synchronized (Live 26-Program Left to Solve Mirror Integration · Epistemic Firewall Live Verification)

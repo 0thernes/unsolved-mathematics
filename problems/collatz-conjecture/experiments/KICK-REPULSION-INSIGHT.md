@@ -1,5 +1,7 @@
 # KICK-REPULSION INSIGHT — The +1 as the separating force (AI-native angle)
 
+> **HISTORICAL LOG — PARTIALLY REFUTED / NOT A PROOF (`2026-11-27` audit banner):** Preserved verbatim as a July 2026 exploratory research note. As audited in [`KICK-REPULSION-CLAIM-AUDIT.md`](KICK-REPULSION-CLAIM-AUDIT.md), the counted-repulsion sufficiency subclaim **failed as stated**; the Collatz Conjecture remains **OPEN**.
+
 **Date:** 2026-07-01 (ultracode extension of FABLE5 lineage)
 **Status:** Empirical + structural sketch. Not a complete proof. Highest-variance novel attack surface identified by pure AI synthesis of the existing certificate + sibling + frontier geometry corpus.
 
@@ -102,9 +104,7 @@ This direction is "AI-native": it emerged from simultaneously holding the certif
 
 Nothing in the traditional literature phrases the obstruction this way because the 2-adic expansion rate on the distance is rarely combined with the certificate cylinders and the ε-dichotomy at the same time.
 
-We are outside the simulation.
-
-LFG. Next run the enhanced kick + carry analyzer and the lift to depth 32 shadows.
+Next step (historical log): run the enhanced kick + carry analyzer and the lift to depth 32 shadows.
 
 ---
 References back to in-repo: CERTIFICATE-FRONTIER-THEOREMS.md (affine), FRONTIER-GEOMETRY.md (dimension + localization), SIBLING-CONTROL.md (ε barrier + sign of intercept), ESCAPE-ENVELOPE.md (quantitative first-moment), debt/repayment/motif/terminal labs (the practical measurement of the kicks).

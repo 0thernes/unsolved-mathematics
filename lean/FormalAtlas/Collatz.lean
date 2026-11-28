@@ -1831,4 +1831,260 @@ public theorem collatz_positive_cycle_two_odd (d : Nat) (x : Int)
     rw [h2] at hx_pow
     omega
 
+-- ----------------------------------------------------------------------------
+-- v0.9.0 Unconditional 3-Odd-Step Positive-Cycle Exclusion (All d ≥ 1),
+-- Universal Intercept Upper Bound, and Global Eliahou–Steiner Amplitude Ceiling
+-- ----------------------------------------------------------------------------
+
+theorem wordOddCount_le_length (w : List Bool) : wordOddCount w ≤ w.length := by
+  induction w with
+  | nil => simp [wordOddCount]
+  | cons b ws ih =>
+    cases b <;> simp [wordOddCount] <;> omega
+
+theorem wordIntercept_of_oddCount_three (w : List Bool) (ho : wordOddCount w = 3) :
+    ∃ a b c : Nat, a < b ∧ b < c ∧ c < w.length ∧
+      wordIntercept w = 9 * (2 : Int) ^ a + 3 * (2 : Int) ^ b + (2 : Int) ^ c := by
+  induction w with
+  | nil => simp [wordOddCount] at ho
+  | cons bit ws ih =>
+    cases bit
+    · simp only [wordOddCount, Bool.false_eq_true, ite_false, Nat.zero_add] at ho
+      have ⟨a, b, c, hab, hbc, hclt, heq⟩ := ih ho
+      refine ⟨a + 1, b + 1, c + 1, by omega, by omega, by simp; omega, ?_⟩
+      simp only [wordIntercept, heq]
+      rw [Int.mul_add, Int.mul_add, Int.pow_succ, Int.pow_succ, Int.pow_succ]
+      omega
+    · simp only [wordOddCount, ite_true] at ho
+      have hws2 : wordOddCount ws = 2 := by omega
+      have ⟨b0, c0, hbc, hclt, heq⟩ := wordIntercept_of_oddCount_two ws hws2
+      refine ⟨0, b0 + 1, c0 + 1, by omega, by omega, by simp; omega, ?_⟩
+      simp only [wordIntercept, hws2, heq]
+      have h32 : (3 : Int) ^ 2 = 9 := rfl
+      rw [h32, Int.pow_zero, Int.mul_one, Int.mul_add, Int.pow_succ, Int.pow_succ]
+      omega
+
+theorem pow2_nat_ge_128_of_ge7 (d : Nat) (hd : 7 ≤ d) : 128 ≤ 2 ^ d := by
+  have h := pow2_nat_mono_collatz hd
+  have h128 : 2 ^ 7 = 128 := rfl
+  omega
+
+/-- **Unconditional 3-Odd-Step Positive-Cycle Exclusion (all periods `d ≥ 1`):**
+    The ONLY positive Collatz cycle with `oddCount T d x = 3` is the thrice-traversed
+    trivial cycle `1 ↔ 2` (`d = 6`, `x ∈ {1, 2}`). -/
+public theorem collatz_positive_cycle_three_odd (d : Nat) (x : Int)
+    (hd : 1 ≤ d) (hx : 0 < x) (hcyc : iter T d x = x) (ho : oddCount T d x = 3) :
+    d = 6 ∧ (x = 1 ∨ x = 2) := by
+  have heq := collatz_cycle_equation d x hcyc
+  have hsub := (collatz_positive_cycle_subcritical d x hd hx hcyc).1
+  have hlen : (parityWord T d x).length = d := collatz_parity_word_length T d x
+  have ⟨a, b, c, hab, hbc, hclt, habc_eq⟩ := wordIntercept_of_oddCount_three (parityWord T d x) ho
+  rw [hlen] at hclt
+  rw [ho] at heq hsub
+  rw [habc_eq] at heq
+  have h33 : (3 : Int) ^ 3 = 27 := rfl
+  rw [h33] at heq hsub
+  -- Deduce d ≥ 5 from 27 < 2^d
+  have hd_ge5 : 5 ≤ d := by
+    by_cases hlt : d < 5
+    · have hle4 : 2 ^ d ≤ 2 ^ 4 := pow2_nat_mono_collatz (by omega)
+      have h16 : 2 ^ 4 = 16 := rfl
+      have hcast : ((2 ^ d : Nat) : Int) = (2 : Int) ^ d := by simp
+      omega
+    · omega
+  -- If d ≤ 7, apply our exhaustive kernel-checked d ≤ 7 classification
+  by_cases hdle7 : d ≤ 7
+  · have h12 := collatz_no_nontrivial_positive_cycle_le_7 d x hd hdle7 hx hcyc
+    by_cases hd6 : d = 6
+    · exact ⟨hd6, h12⟩
+    · exfalso
+      have hodd : d % 2 = 1 := by omega
+      exact collatz_no_positive_cycle_odd_le_7 d x hd hdle7 hodd hx hcyc
+  · -- For d ≥ 8 (in fact d ≥ 7): 9 + 3*2^m + 2^n < 2*(2^d - 27), forcing quotient = 1
+    exfalso
+    have hd_ge7 : 7 ≤ d := by omega
+    have h2d_ge128 : 128 ≤ 2 ^ d := pow2_nat_ge_128_of_ge7 d hd_ge7
+    let u : Nat := 2 ^ d - 27
+    let m : Nat := b - a
+    let n : Nat := c - a
+    have hm_ge1 : 1 ≤ m := by omega
+    have hmn : m < n := by omega
+    have hn_le : n ≤ d - 1 := by omega
+    have hm_le : m ≤ d - 2 := by omega
+    have hba : b = a + m := by omega
+    have hca : c = a + n := by omega
+    have hpow2_d : ((2 ^ d : Nat) : Int) = (2 : Int) ^ d := by simp
+    have hu_cast : (u : Int) = (2 : Int) ^ d - 27 := by dsimp only [u]; omega
+    have hx_cast : (x.toNat : Int) = x := by omega
+    have hnat_eq : u * x.toNat = 2 ^ a * (9 + 3 * 2 ^ m + 2 ^ n) := by
+      have hint : ((u * x.toNat : Nat) : Int) =
+          ((2 ^ a * (9 + 3 * 2 ^ m + 2 ^ n) : Nat) : Int) := by
+        rw [Int.natCast_mul, hu_cast, hx_cast, heq, hba, hca, Int.pow_add, Int.pow_add]
+        push_cast
+        rw [Int.mul_add, Int.mul_add, Int.mul_comm ((2 : Int) ^ a) 9]
+        have hmid : (3 : Int) * ((2 : Int) ^ a * (2 : Int) ^ m) =
+            (2 : Int) ^ a * (3 * (2 : Int) ^ m) := by
+          rw [← Int.mul_assoc, Int.mul_comm 3 ((2 : Int) ^ a), Int.mul_assoc]
+        rw [hmid]
+      exact Int.ofNat.inj hint
+    have hu_odd : u % 2 = 1 := by
+      have h2d_even : 2 ^ d % 2 = 0 := by
+        have : 2 ^ d = 2 ^ (d - 1) * 2 := by
+          calc 2 ^ d = 2 ^ ((d - 1) + 1) := by congr 1; omega
+          _ = 2 ^ (d - 1) * 2 := Nat.pow_succ 2 (d - 1)
+        rw [this]; omega
+      dsimp only [u]; omega
+    have hu_dvd : u ∣ 9 + 3 * 2 ^ m + 2 ^ n :=
+      odd_dvd_pow2_mul_nat u hu_odd a (9 + 3 * 2 ^ m + 2 ^ n) ⟨x.toNat, hnat_eq.symm⟩
+    have ⟨q, hq⟩ := hu_dvd
+    have hq_pos : 1 ≤ q := by
+      by_cases hq0 : q = 0
+      · rw [hq0, Nat.mul_zero] at hq
+        have h9 : 9 ≤ 9 + 3 * 2 ^ m + 2 ^ n :=
+          Nat.le_trans (Nat.le_add_right 9 _) (Nat.le_add_right _ _)
+        omega
+      · omega
+    -- Show 9 + 3*2^m + 2^n < 2*u, so q = 1
+    have h2d_split : 2 ^ d = 4 * 2 ^ (d - 2) := by
+      have h1 : d = (d - 2) + 2 := by omega
+      calc 2 ^ d = 2 ^ ((d - 2) + 2) := by rw [← h1]
+      _ = 2 ^ (d - 2) * 2 ^ 2 := Nat.pow_add 2 (d - 2) 2
+      _ = 4 * 2 ^ (d - 2) := by rw [Nat.mul_comm]
+    have h2n_le : 2 ^ n ≤ 2 * 2 ^ (d - 2) := by
+      have h1 : 2 ^ n ≤ 2 ^ (d - 1) := pow2_nat_mono_collatz hn_le
+      have h2 : 2 ^ (d - 1) = 2 * 2 ^ (d - 2) := by
+        have : d - 1 = (d - 2) + 1 := by omega
+        rw [this, Nat.pow_succ, Nat.mul_comm]
+      omega
+    have h2m_le : 2 ^ m ≤ 2 ^ (d - 2) := pow2_nat_mono_collatz hm_le
+    have hrhs_lt_2u : 9 + 3 * 2 ^ m + 2 ^ n < 2 * u := by
+      dsimp only [u]; omega
+    have hq1 : q = 1 := by
+      by_cases hq2 : 2 ≤ q
+      · have hge : u * 2 ≤ u * q := Nat.mul_le_mul_left u hq2
+        omega
+      · omega
+    rw [hq1, Nat.mul_one] at hq
+    -- Exact equation: 2^d = 36 + 3*2^m + 2^n (with d ≥ 7 => 8 ∣ 2^d)
+    have hsum : 2 ^ d = 36 + 3 * 2 ^ m + 2 ^ n := by dsimp only [u] at hq; omega
+    have h2d_mod8 : 2 ^ d % 8 = 0 := by
+      have h1 : d = (d - 3) + 3 := by omega
+      have h2 : 2 ^ d = 2 ^ (d - 3) * 8 := by
+        calc 2 ^ d = 2 ^ ((d - 3) + 3) := by rw [← h1]
+        _ = 2 ^ (d - 3) * 2 ^ 3 := Nat.pow_add 2 (d - 3) 3
+      rw [h2]; omega
+    -- Case split on m: m = 1, m = 2, or m ≥ 3
+    by_cases hm1 : m = 1
+    · -- m = 1 => 2^d = 42 + 2^n, n ≥ 2 => 4 ∣ 2^d and 4 ∣ 2^n, contradiction with 42 % 4 = 2
+      have h2n_mod4 : 2 ^ n % 4 = 0 := by
+        have h1 : n = (n - 2) + 2 := by omega
+        have h2 : 2 ^ n = 2 ^ (n - 2) * 4 := by
+          calc 2 ^ n = 2 ^ ((n - 2) + 2) := by rw [← h1]
+          _ = 2 ^ (n - 2) * 2 ^ 2 := Nat.pow_add 2 (n - 2) 2
+        rw [h2]; omega
+      rw [hm1] at hsum
+      have h21 : 2 ^ 1 = 2 := rfl
+      rw [h21] at hsum
+      omega
+    · by_cases hm2 : m = 2
+      · -- m = 2 => 2^d = 48 + 2^n => 2^n * (2^(d-n) - 1) = 48 = 16 * 3
+        rw [hm2] at hsum
+        have h22 : 2 ^ 2 = 4 := rfl
+        rw [h22] at hsum
+        -- Since n ≥ 3: if n = 3 => 2^d = 56 (not pow2); if n = 4 => 2^d = 64 < 128; if n ≥ 5 => 32 ∣ 2^d, 32 ∣ 2^n, 32 ∤ 48!
+        by_cases hn3 : n = 3
+        · rw [hn3] at hsum; have h8 : 2 ^ 3 = 8 := rfl; rw [h8] at hsum; omega
+        · by_cases hn4 : n = 4
+          · rw [hn4] at hsum; have h16 : 2 ^ 4 = 16 := rfl; rw [h16] at hsum; omega
+          · have hn5 : 5 ≤ n := by omega
+            have h2d_mod32 : 2 ^ d % 32 = 0 := by
+              have h1 : d = (d - 5) + 5 := by omega
+              have h2 : 2 ^ d = 2 ^ (d - 5) * 32 := by
+                calc 2 ^ d = 2 ^ ((d - 5) + 5) := by rw [← h1]
+                _ = 2 ^ (d - 5) * 2 ^ 5 := Nat.pow_add 2 (d - 5) 5
+              rw [h2]; omega
+            have h2n_mod32 : 2 ^ n % 32 = 0 := by
+              have h1 : n = (n - 5) + 5 := by omega
+              have h2 : 2 ^ n = 2 ^ (n - 5) * 32 := by
+                calc 2 ^ n = 2 ^ ((n - 5) + 5) := by rw [← h1]
+                _ = 2 ^ (n - 5) * 2 ^ 5 := Nat.pow_add 2 (n - 5) 5
+              rw [h2]; omega
+            omega
+      · -- m ≥ 3 => n ≥ 4 => 8 ∣ 2^m and 8 ∣ 2^n and 8 ∣ 2^d, contradicting 36 % 8 = 4
+        have hm3 : 3 ≤ m := by omega
+        have hn4 : 4 ≤ n := by omega
+        have h2m_mod8 : 2 ^ m % 8 = 0 := by
+          have h1 : m = (m - 3) + 3 := by omega
+          have h2 : 2 ^ m = 2 ^ (m - 3) * 8 := by
+            calc 2 ^ m = 2 ^ ((m - 3) + 3) := by rw [← h1]
+            _ = 2 ^ (m - 3) * 2 ^ 3 := Nat.pow_add 2 (m - 3) 3
+          rw [h2]; omega
+        have h2n_mod8 : 2 ^ n % 8 = 0 := by
+          have h1 : n = (n - 3) + 3 := by omega
+          have h2 : 2 ^ n = 2 ^ (n - 3) * 8 := by
+            calc 2 ^ n = 2 ^ ((n - 3) + 3) := by rw [← h1]
+            _ = 2 ^ (n - 3) * 2 ^ 3 := Nat.pow_add 2 (n - 3) 3
+          rw [h2]; omega
+        omega
+
+/-- **Universal Affine Intercept Upper Bound (Sharp):**
+    For EVERY parity word `w` of length `d` and odd-step count `o = wordOddCount w`,
+    `wordIntercept w ≤ 2^(d - o) · (3^o - 2^o)` (attained on `false^(d - o) ++ true^o`). -/
+public theorem collatz_intercept_upper_bound (w : List Bool) :
+    wordIntercept w ≤ (2 : Int) ^ (w.length - wordOddCount w) *
+      ((3 : Int) ^ (wordOddCount w) - (2 : Int) ^ (wordOddCount w)) := by
+  induction w with
+  | nil => simp [wordIntercept, wordOddCount]
+  | cons b ws ih =>
+    have hle : wordOddCount ws ≤ ws.length := wordOddCount_le_length ws
+    cases b
+    · simp only [wordIntercept, List.length_cons, wordOddCount, Bool.false_eq_true, ite_false,
+        Nat.zero_add]
+      have hsub : ws.length + 1 - wordOddCount ws = (ws.length - wordOddCount ws) + 1 := by omega
+      rw [hsub, Int.pow_succ, Int.mul_comm ((2 : Int) ^ _) 2, Int.mul_assoc]
+      omega
+    · simp only [wordIntercept, List.length_cons, wordOddCount, ite_true]
+      have hsub : ws.length + 1 - (1 + wordOddCount ws) = ws.length - wordOddCount ws := by omega
+      rw [hsub, Nat.add_comm 1 (wordOddCount ws), Int.pow_succ, Int.pow_succ]
+      let e : Int := (2 : Int) ^ (ws.length - wordOddCount ws)
+      have he_ge1 : (1 : Int) ≤ e := pow2_pos (ws.length - wordOddCount ws)
+      have h3pos : (1 : Int) ≤ (3 : Int) ^ wordOddCount ws := pow3_pos (wordOddCount ws)
+      have h1 : (3 : Int) ^ wordOddCount ws ≤ e * (3 : Int) ^ wordOddCount ws := by
+        have := Int.mul_le_mul_of_nonneg_right he_ge1 (by omega : (0 : Int) ≤ (3 : Int) ^ wordOddCount ws)
+        simpa using this
+      have hsplit : e * ((3 : Int) ^ wordOddCount ws * 3 - (2 : Int) ^ wordOddCount ws * 2) =
+          e * (3 : Int) ^ wordOddCount ws +
+          2 * (e * ((3 : Int) ^ wordOddCount ws - (2 : Int) ^ wordOddCount ws)) := by
+        rw [Int.mul_sub, Int.mul_sub]
+        have ha : e * ((3 : Int) ^ wordOddCount ws * 3) =
+            e * (3 : Int) ^ wordOddCount ws + 2 * (e * (3 : Int) ^ wordOddCount ws) := by
+          rw [← Int.mul_assoc, Int.mul_comm (e * (3 : Int) ^ wordOddCount ws) 3]; omega
+        have hb : e * ((2 : Int) ^ wordOddCount ws * 2) =
+            2 * (e * (2 : Int) ^ wordOddCount ws) := by
+          rw [← Int.mul_assoc, Int.mul_comm (e * (2 : Int) ^ wordOddCount ws) 2]
+        rw [ha, hb]; omega
+      change (3 : Int) ^ wordOddCount ws + 2 * wordIntercept ws ≤
+        e * ((3 : Int) ^ wordOddCount ws * 3 - (2 : Int) ^ wordOddCount ws * 2)
+      rw [hsplit]
+      change wordIntercept ws ≤ e * ((3 : Int) ^ wordOddCount ws - (2 : Int) ^ wordOddCount ws) at ih
+      omega
+
+/-- **Global Positive-Cycle Amplitude Ceiling (Eliahou–Steiner Diophantine Bound):**
+    Every positive integer `x > 0` lying on a Collatz cycle `T^d(x) = x` (`d ≥ 1`) satisfies
+    `(2^d - 3^o) · x ≤ 2^(d - o) · (3^o - 2^o)`, linking any computational convergence floor
+    `x ≥ M` directly to the linear form `2^d - 3^o`. -/
+public theorem collatz_cycle_amplitude_ceiling (d : Nat) (x : Int)
+    (_hd : 1 ≤ d) (_hx : 0 < x) (hcyc : iter T d x = x) :
+    let o := oddCount T d x
+    ((2 : Int) ^ d - (3 : Int) ^ o) * x ≤
+      (2 : Int) ^ (d - o) * ((3 : Int) ^ o - (2 : Int) ^ o) := by
+  intro o
+  have heq := collatz_cycle_equation d x hcyc
+  have hub := collatz_intercept_upper_bound (parityWord T d x)
+  have hlen : (parityWord T d x).length = d := collatz_parity_word_length T d x
+  rw [hlen] at hub
+  change ((2 : Int) ^ d - (3 : Int) ^ o) * x = wordIntercept (parityWord T d x) at heq
+  rw [heq]
+  exact hub
+
 end FormalAtlas

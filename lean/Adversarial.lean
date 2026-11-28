@@ -4,9 +4,9 @@ module
 public import FormalAtlas
 
 /-!
-# Adversarial — Explicit Refutation of Weakened / False Variants (`v0.7.0`, Playbook #12)
+# Adversarial — Explicit Refutation of Weakened / False Variants (`v0.9.0`, Playbook #12)
 
-Tests all 8 formal domains adversarially by proving 20 deliberately false, overclaimed,
+Tests all 8 formal domains adversarially by proving 22 deliberately false, overclaimed,
 or degenerately weakened statements are PROVABLY FALSE under our definitions.
 -/
 
@@ -189,5 +189,27 @@ public theorem adv_collatz_distinct_spines_bounded_v2 :
           ((2 : Int) ^ (w.length + v.length - Nat.gcd w.length v.length)) = 0) := by
   intro ⟨w, v, hw, hv, hne, hdiv⟩
   exact collatz_fine_wilf_spine_ceiling w v hw hv hne hdiv
+
+/-- 21. No nontrivial positive integer `x ≥ 3` can lie on ANY 3-odd-step Collatz cycle (all `d ≥ 1`). -/
+public theorem adv_collatz_no_nontrivial_three_odd_cycle :
+    ¬ (∃ d : Nat, ∃ x : Int, 1 ≤ d ∧ 3 ≤ x ∧ iter T d x = x ∧ oddCount T d x = 3) := by
+  intro ⟨d, x, hd, hx, hcyc, ho⟩
+  have ⟨_, hx12⟩ := collatz_positive_cycle_three_odd d x hd (by omega) hcyc ho
+  omega
+
+/-- 22. The universal affine intercept ceiling `2^(d - o) * (3^o - 2^o)` CANNOT be tightened to `<`
+    even for nonempty words (`w = [F, F, T, T]` achieves exact equality `20 = 20`). -/
+public theorem adv_collatz_intercept_bound_strict_false :
+    ¬ (∀ w : List Bool, 1 ≤ w.length →
+        wordIntercept w < (2 : Int) ^ (w.length - wordOddCount w) *
+          ((3 : Int) ^ (wordOddCount w) - (2 : Int) ^ (wordOddCount w))) := by
+  intro hall
+  have h := hall [false, false, true, true] (by decide)
+  have hne : ¬ (wordIntercept [false, false, true, true] <
+      (2 : Int) ^ (([false, false, true, true] : List Bool).length -
+        wordOddCount [false, false, true, true]) *
+      ((3 : Int) ^ wordOddCount [false, false, true, true] -
+        (2 : Int) ^ wordOddCount [false, false, true, true])) := by decide
+  exact hne h
 
 end FormalAtlas.Adversarial

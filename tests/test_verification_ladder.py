@@ -1197,7 +1197,7 @@ def test_regression_v070_glossary_ranking_export_control_and_66_theorem_blueprin
     assert (ROOT / ".github" / "ISSUE_TEMPLATE" / "finding.yml").exists()
 
     comp = json.loads((ROOT / "lean" / "comparator.json").read_text(encoding="utf-8"))
-    assert len(comp["theorem_names"]) == 66
+    assert len(comp["theorem_names"]) >= 66
 
     build_site.build_site(tmp_path / "_site")
     bp_txt = (tmp_path / "_site" / "blueprint.html").read_text(encoding="utf-8")
@@ -1379,3 +1379,87 @@ def test_regression_v082_search_all_problems_limit_zero_and_formal_priority():
     hits = search_all_problems.search_external(query="collatz", limit=5)
     assert len(hits) >= 1
     assert "(not formalized)" not in hits[0]["program"].lower()
+
+
+# --------------------------------------------------------------------------- #
+#  Cycle 10–12 / v0.9.0 Collatz Frontier, Catalytic Native & Hardening Tests
+# --------------------------------------------------------------------------- #
+def test_oracle_v090_collatz_three_odd_intercept_ceiling_and_amplitude():
+    """Differential check matching thm_collatz_positive_cycle_three_odd, intercept_upper_bound & cycle_amplitude_ceiling."""
+    # 1. Unconditional 3-odd-step positive-cycle exclusion across d <= 20:
+    # (2^d - 27) * x = 9*2^a + 3*2^b + 2^c (0 <= a < b < c < d) => only d = 6, x in {1, 2}
+    for d in range(1, 21):
+        denom = (1 << d) - 27
+        if denom > 0:
+            for a in range(d):
+                for b in range(a + 1, d):
+                    for c in range(b + 1, d):
+                        num = 9 * (1 << a) + 3 * (1 << b) + (1 << c)
+                        if num % denom == 0:
+                            x = num // denom
+                            assert d == 6 and x in (1, 2), f"Unexpected o=3 cycle: d={d}, x={x}"
+
+    # 2. Sharp universal affine intercept upper bound across ALL words of length d <= 10
+    for d in range(0, 11):
+        for mask in range(1 << d):
+            w = [bool((mask >> i) & 1) for i in range(d)]
+            o = sum(w)
+            ub = (1 << (d - o)) * ((3**o) - (1 << o))
+            assert _word_intercept(w) <= ub
+
+    # Sharp attainment witness matching NonVacuity.witness_collatz_intercept_bound_sharp
+    w_sharp = [False, False, True, True]
+    assert _word_intercept(w_sharp) == 20 == (1 << 2) * ((3**2) - (1 << 2))
+
+    # 3. Global Eliahou-Steiner amplitude ceiling on trivial cycles d in {2, 4, 6}
+    for d, x in ((2, 1), (2, 2), (4, 1), (4, 2), (6, 1), (6, 2)):
+        w = _parity_word(_collatz_T, d, x)
+        o = sum(w)
+        assert ((1 << d) - (3**o)) * x <= (1 << (d - o)) * ((3**o) - (1 << o))
+
+
+def test_regression_v090_blueprint_69_theorems_and_no_stale_25_or_58mb(tmp_path: Path):
+    """Guard against V90-ERR-01/03: 69 Lean theorems, dynamic programs link (no 'All 25'), no stale '~58 MB'."""
+    import build_site
+
+    comp = json.loads((ROOT / "lean" / "comparator.json").read_text(encoding="utf-8"))
+    assert len(comp["theorem_names"]) == 69
+
+    build_site.build_site(tmp_path / "_site")
+    bp_txt = (tmp_path / "_site" / "blueprint.html").read_text(encoding="utf-8")
+    assert "All 25" not in bp_txt
+    for token in (
+        "thm_collatz_positive_cycle_three_odd",
+        "thm_collatz_intercept_upper_bound",
+        "thm_collatz_cycle_amplitude_ceiling",
+        "Collatz (31 theorems)",
+    ):
+        assert token in bp_txt, f"Missing v0.9.0 token {token} in blueprint.html"
+
+    for rel in ("LIMITATIONS.md", "ROADMAP.md", "paper/Donahue_2026_unsolved_mathematics_atlas.tex"):
+        txt = (ROOT / rel).read_text(encoding="utf-8")
+        assert "58 MB" not in txt and r"58\,MB" not in txt, f"Stale 58 MB footprint claim in {rel}"
+
+
+def test_regression_v090_python_target_tail_o1_memory_and_docs():
+    """Guard against V90-BUG-01 & V90-GAP-01: O(1) valuation summary space, benchmarks & toolstack audit present."""
+    src = (ROOT / "problems" / "collatz-conjecture" / "experiments" / "odd_unit_lock_target_tail_lab.py").read_text(
+        encoding="utf-8"
+    )
+    assert "e_values" not in src, "Regression: O(pairs) e_values list returned in odd_unit_lock_target_tail_lab.py"
+    assert (ROOT / "docs" / "benchmarks.md").exists()
+    assert (ROOT / "docs" / "COLLATZ-TOOLSTACK-AND-CATALYTIC-AUDIT.md").exists()
+    for fname in ("collatz_catalytic.c", "collatz_catalytic_oracle.rs", "fuzz_collatz_catalytic.c"):
+        assert (ROOT / "problems" / "collatz-conjecture" / "native" / fname).exists()
+
+
+def test_regression_v090_collatz_historical_logs_carry_retraction_banners():
+    """Guard against V90-CONC-01: July 2026 exploratory Collatz logs carry explicit top-level audit banners."""
+    for fname in (
+        "FABLE5-ULTRACODE-COLLATZ-LOG.md",
+        "KICK-REPULSION-INSIGHT.md",
+        "RIGIDITY-LEMMA-CANDIDATE.md",
+        "beyond_xai_reinforcement.md",
+    ):
+        head = (ROOT / "problems" / "collatz-conjecture" / "experiments" / fname).read_text(encoding="utf-8")[:700]
+        assert "HISTORICAL" in head and "OPEN" in head, f"Missing top-level audit banner in {fname}"

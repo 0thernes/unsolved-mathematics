@@ -4,6 +4,37 @@
 
 ---
 
+## Upgrading from `v0.8.x` to `v0.9.0`
+
+### 1. Structural & Additive Changes (Non-Breaking)
+
+- **Expanded Collatz Lean 4.35.0 Formal Core (`66 → 69` headline theorems, `102 → 109` audited declarations, `autoImplicit = false`):** All 66 `v0.8.x` comparator theorem names in `lean/Challenge.lean` are preserved verbatim; 3 new Collatz theorems (`thm_collatz_positive_cycle_three_odd`, `thm_collatz_intercept_upper_bound`, `thm_collatz_cycle_amplitude_ceiling`), 2 non-vacuity witnesses (`witness_collatz_three_odd_trivial_cycle`, `witness_collatz_intercept_bound_sharp`), and 2 adversarial refutations (`adv_collatz_no_nontrivial_three_odd_cycle`, `adv_collatz_intercept_bound_strict_false`) were added and replayed across all 6 independent kernels (`16` zero-axiom decls).
+- **Catalytic Native Collatz Accelerator (`problems/collatz-conjecture/native/`):** Adds optional C17/BMI2 engine (`collatz_catalytic.c`), independent zero-`unsafe` Rust cross-oracle (`collatz_catalytic_oracle.rs`), and 250k ASan/UBSan fuzzer (`fuzz_collatz_catalytic.c`), plus `docs/benchmarks.md` and `docs/COLLATZ-TOOLSTACK-AND-CATALYTIC-AUDIT.md`. Python scripts remain standalone and zero-dependency; `odd_unit_lock_target_tail_lab.py` fixes an $O(\text{pairs})$ memory leak (`V90-BUG-01`).
+- **Build Standard `v1.2.0` Native/Perf Activation (`repo.yaml`):** Enables `flags.native: true` and `flags.perf: true`, promoting `A37`, `B15`, `B16`, `B26`, `B27` from `n/a` to `done` with a dedicated `native-catalytic-audit` CI job; `data/MANIFEST.sha256` expands from `42 → 47` tracked files.
+
+### 2. Upgrade Steps
+
+```bash
+git pull origin main
+python -m pip install -r requirements-lock.txt
+python scripts/generate.py --check
+python scripts/validate.py
+python scripts/check_dossiers.py --strict
+python scripts/check_papers.py
+python scripts/proof_claim_sweep.py
+python scripts/check_retractions.py --check
+python scripts/check_readme_axioms.py
+python scripts/sync_external_programs.py --check
+python scripts/build_data_manifest.py --check
+python scripts/timestamp_manifest.py --check
+python scripts/test_lean_negative.py
+python -m pytest -v tests/
+python tests/mutation_check.py
+cd lean && lake build Challenge Solution NonVacuity Adversarial && lake env lean VerifyAxioms.lean
+```
+
+---
+
 ## Upgrading from `v0.6.0` to `v0.7.0`
 
 ### 1. Structural & Additive Changes (Non-Breaking)

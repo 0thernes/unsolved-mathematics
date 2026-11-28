@@ -12,7 +12,7 @@ point here. Edit this file, never the pointers.
 - **Owner:** Alexander S. Donahue (`@0thernes`, ORCID `0009-0006-8168-9648`, independent researcher — do NOT use `0thernes LLC` until an entity is legally formed)
 - **Manifest:** `repo.yaml` (Build Standard for LLMs `v1.2.0`)
 - **Version:** `VERSION` (single source of truth; verified equal to `data/problems.yaml`, `CITATION.cff`, `pyproject.toml`, `lean/lakefile.toml`, `lean/formalization.yaml`, `ro-crate-metadata.json`, and `croissant.json`)
-- **Stack:** Python 3.11+ (`PyYAML`, `jsonschema`, `pytest`, `hypothesis`, `ruff`, `mypy`) + Lean 4.35.0 (`lean/`, zero Mathlib, 6-kernel `lake check --paranoid` + `lake comparator --paranoid`) + AMS-LaTeX (`tectonic`)
+- **Stack:** Python 3.11+ (`PyYAML`, `jsonschema`, `pytest`, `hypothesis`, `ruff`, `mypy`) + Lean 4.35.0 (`lean/`, zero Mathlib, 6-kernel `lake check --paranoid` + `lake comparator --paranoid`) + C17/BMI2 & Safe Rust (`problems/collatz-conjecture/native/`, ASan/UBSan + 250k fuzzer) + AMS-LaTeX (`tectonic`)
 - **Layout:**
   - `data/` — canonical registry (`problems.yaml`), generated `problems.json`, `dossier-status.json`, `citation-verification-log.json`, `retraction-audit.json`, `external/lefttosolve/` (daily sharded mirror of all 26 programs / 62,790 targets, CC BY-SA carved out), `MANIFEST.sha256` (+ DigiCert RFC 3161 `.tsr` & Bitcoin OpenTimestamps `.ots` proofs)
   - `problems/<slug>/` — 120 self-contained problem dossiers (8 markdown files + `metadata.json` + `rag/`)

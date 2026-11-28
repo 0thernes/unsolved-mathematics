@@ -67,6 +67,65 @@ def test_audit_scripts_import():
     assert r.returncode == 0, r.stderr[-500:]
 
 
+def test_catalytic_native_parity_and_budget(tmp_path):
+    """Build C17/BMI2 + safe Rust oracle when compilers exist and verify bit-exact parity + <2s budget (B11/B12/B27)."""
+    import shutil
+    import time
+
+    gcc = shutil.which("gcc")
+    rustc = shutil.which("rustc")
+    native_dir = ROOT / "problems" / "collatz-conjecture" / "native"
+    c_src = native_dir / "collatz_catalytic.c"
+    rs_src = native_dir / "collatz_catalytic_oracle.rs"
+    assert c_src.exists() and rs_src.exists()
+
+    if not gcc:
+        return  # C compiler optional on bare Python environments; CI runs dedicated native-catalytic-audit job.
+
+    c_exe = tmp_path / "collatz_catalytic"
+    subprocess.run(
+        [gcc, "-O3", "-std=c17", "-Wall", "-Wextra", "-Werror", str(c_src), "-o", str(c_exe)],
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+    st = subprocess.run([str(c_exe), "self-test"], check=True, capture_output=True, text=True)
+    assert "PASS" in st.stdout
+
+    c_json = tmp_path / "c_s10_t20.json"
+    t0 = time.perf_counter()
+    subprocess.run(
+        [
+            str(c_exe),
+            "target-tail",
+            "--source-max-depth", "10",
+            "--target-max-depth", "20",
+            "--target-cutoffs", "12,14,16,18,20",
+            "--thresholds", "8,10,12,14,16,18,20,22,24",
+            "--output", str(c_json),
+        ],
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+    elapsed = time.perf_counter() - t0
+    assert elapsed < 2.0, f"C17 s10_t20 exceeded 2.0s performance budget: {elapsed:.3f}s"
+
+    py_ref = json.loads((EXP / "results" / "odd_unit_lock_target_tail_s10_t20_20260705.json").read_text(encoding="utf-8"))
+    c_res = json.loads(c_json.read_text(encoding="utf-8"))
+    assert c_res["by_target_cutoff"]["20"]["valuation_histogram"] == py_ref["by_target_cutoff"]["20"]["valuation_histogram"]
+    assert c_res["by_target_cutoff"]["20"]["max_valuation_e"] == py_ref["by_target_cutoff"]["20"]["max_valuation_e"]
+
+    if rustc:
+        rs_exe = tmp_path / "collatz_oracle"
+        subprocess.run([rustc, "-O", str(rs_src), "-o", str(rs_exe)], check=True, capture_output=True, text=True)
+        rs_out = json.loads(
+            subprocess.run([str(rs_exe), "target-tail", "3", "10", "1", "20"], check=True, capture_output=True, text=True).stdout
+        )
+        assert rs_out["valuation_histogram"] == py_ref["by_target_cutoff"]["20"]["valuation_histogram"]
+        assert rs_out["max_valuation_e"] == py_ref["by_target_cutoff"]["20"]["max_valuation_e"]
+
+
 if __name__ == "__main__":
     fails = 0
     for name, fn in sorted(globals().items()):

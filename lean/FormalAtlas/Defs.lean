@@ -6,7 +6,7 @@ module
 # FormalAtlas.Defs — Minimal Trusted Definitions
 
 Pure Lean 4 definitions (no Mathlib dependency) for the eight open-problem
-structural cores formalized in The Unsolved Mathematics Atlas (`v0.7.0`):
+structural cores formalized in The Unsolved Mathematics Atlas (`v0.9.0`):
   1. Collatz Conjecture & 3n-1 Sibling Control
   2. Erdős–Straus Conjecture (4/n = 1/x + 1/y + 1/z)
   3. Lonely Runner Conjecture (exact rational circular distance)

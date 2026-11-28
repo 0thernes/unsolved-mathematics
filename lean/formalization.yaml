@@ -1,7 +1,7 @@
 # Palomar Registry & Verification Disclosure Metadata
 # Schema reference: https://github.com/PalomarRegistry/PalomarPolicy/blob/main/CONTRIBUTING.md
 title: "FormalAtlas: Eight-Domain Multi-Kernel Lean 4.35.0 Structural Core for The Unsolved Mathematics Atlas"
-version: "0.8.3"
+version: "0.9.0"
 date: "2026-11-27"
 authors:
   - name: "Alexander S. Donahue"
@@ -20,17 +20,17 @@ non_vacuity_file: "NonVacuity.lean"
 adversarial_file: "Adversarial.lean"
 axiom_audit_file: "VerifyAxioms.lean"
 domain_count: 8
-theorem_count: 66
-witness_count: 16
-adversarial_refutation_count: 20
-audited_declaration_count: 102
+theorem_count: 69
+witness_count: 18
+adversarial_refutation_count: 22
+audited_declaration_count: 109
 permitted_axioms:
   - "propext"
   - "Classical.choice"
   - "Quot.sound"
 automation:
   models:
-    - "Gemini (Antigravity, Google DeepMind — 8-domain formalization expansion, Complete Euclid–Euler biconditional theorem, Euler Mersenne divisor congruence 2p | q-1, Collatz Fine–Wilf Odd-Unit-Lock Spine Valuation Ceiling, 2-adic isometry, exhaustive d<=7 & unconditional 1-/2-odd-step positive-cycle exclusion, catalytic cylinder, full Lonely Runner n=3, Ramsey R(3,4)=9, adversarial tests & verification tooling, Nov 2026)"
+    - "Gemini (Antigravity, Google DeepMind — 8-domain formalization expansion, Complete Euclid–Euler biconditional theorem, Euler Mersenne divisor congruence 2p | q-1, Collatz Fine–Wilf Odd-Unit-Lock Spine Valuation Ceiling, 2-adic isometry, exhaustive d<=7 & unconditional 1-/2-/3-odd-step positive-cycle exclusion, sharp affine intercept upper bound, Eliahou–Steiner cycle amplitude ceiling, catalytic cylinder, full Lonely Runner n=3, Ramsey R(3,4)=9, adversarial tests & verification tooling, Nov 2026)"
     - "Claude / GPT Codex (earlier Collatz empirical audit & roadmap, Jul 2026)"
   human_role: "Problem selection, mathematical scoping, definition & statement-fidelity audit, acceptance decisions"
   verification_kernels:
@@ -42,21 +42,22 @@ automation:
     - "con-ron (verified Rust)"
 review_status: "Not peer-reviewed; mechanically checked by Lean 4.35.0 multi-kernel stack, lake comparator, and live negative kernel rejection"
 scope_and_limitations: >
-  Formalizes 66 structural theorems, classical foundations, modular reductions,
+  Formalizes 69 structural theorems, classical foundations, modular reductions,
   sharpness bounds, finite exhaustions, and a 3n-1 sibling-map comparison (not a
-  formal barrier theorem) across eight open-problem domains (Collatz 28 incl.
+  formal barrier theorem) across eight open-problem domains (Collatz 31 incl.
   Fine–Wilf Odd-Unit-Lock Spine Valuation Ceiling, 2-adic isometry, periodic spine
-  congruence, exhaustive d <= 7 & unconditional 1-/2-odd-step positive-cycle
-  exclusion for all d >= 1, and catalytic reversible cylinder evaluation,
+  congruence, exhaustive d <= 7 & unconditional 1-/2-/3-odd-step positive-cycle
+  exclusion for all d >= 1, sharp universal affine intercept ceiling, Eliahou–Steiner
+  cycle amplitude ceiling, and catalytic reversible cylinder evaluation,
   Erdős–Straus 5, Lonely Runner 8 incl. constructive n=3 for all positive triples,
   Brocard 7 incl. n <= 20, Primes/Twin Primes 4, Goldbach 3 incl. 4 <= n <= 100,
   Odd Perfect/Mersenne Primes 7 incl. Complete Euclid–Euler Theorem with proved
   divSum_eq_divSumLin and Euler's 1750 Mersenne prime divisor congruence 2p | q - 1,
-  and Ramsey Theory 4 proving exact R(3,3)=6 and R(3,4)=9), paired with 16 concrete
-  non-vacuity witnesses and 20 explicit adversarial false-variant refutations (102
+  and Ramsey Theory 4 proving exact R(3,3)=6 and R(3,4)=9), paired with 18 concrete
+  non-vacuity witnesses and 22 explicit adversarial false-variant refutations (109
   audited declarations). All results are classical, elementary, or bounded structural
   identities; the 4-runner Lonely Runner case is classical (Betke–Wills 1972; Cusick
   1973), and the conjecture is proved for up to 13 runners in recent preprints
   (arXiv:2509.14111, arXiv:2511.22427, arXiv:2604.23906). Challenge.lean holds the
-  66 sorry-stated comparator specifications; the proof modules contain zero sorry.
+  69 sorry-stated comparator specifications; the proof modules contain zero sorry.
   Explicitly does NOT prove any open conjecture.

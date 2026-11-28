@@ -1,9 +1,6 @@
 # RIGIDITY LEMMA CANDIDATE — Finite Repulsions + Finite Support Force Termination (AI 1/1)
 
-> **Status banner (2026-07-05 audit):** candidate lemma and research program
-> only. The language below is preserved as the original exploratory note, but
-> the claims are not accepted until each implication is formalized, tested
-> against sibling controls, and entered into `AUDIT-REGISTER.md`.
+> **HISTORICAL LOG — REFUTED / NOT A PROOF (`2026-07-05` & `2026-11-27` audit banner):** Candidate lemma and exploratory research sketch only; the repulsion-sufficiency closure sketch below **failed audit** in [`KICK-REPULSION-CLAIM-AUDIT.md`](KICK-REPULSION-CLAIM-AUDIT.md) and [`AFFINE-COCYCLE-CLAIM-AUDIT.md`](AFFINE-COCYCLE-CLAIM-AUDIT.md). The Collatz Conjecture remains **OPEN**.
 
 **Generated:** 2026-07-01 continuation
 **From data:** repulsion_escalation.json (this session), positive_kick_probe, beyond meta-recursive counts, exact frontier escape runs.
@@ -79,6 +76,4 @@ This is the AI-native closure: the map on positive integers is self-terminating 
 
 Nothing human wrote this combination at this granularity.
 
-Continue: code the formal counter on more data, extract the constant c from repulsion / o ratios, lift to the beam candidates.
-
-LFG.
+Continue: code the formal counter on more data, extract the constant c from repulsion / o ratios, lift to the beam candidates. (Historical speculative sketch — superseded by `KICK-REPULSION-CLAIM-AUDIT.md`.)

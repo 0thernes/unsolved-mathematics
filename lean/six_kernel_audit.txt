@@ -1,38 +1,38 @@
-# Six-Kernel Independent Verification Audit (Lean 4.35.0, v0.7.0)
+# Six-Kernel Independent Verification Audit (Lean 4.35.0, v0.9.0)
 # Options: autoImplicit = false, zero Mathlib, zero native_decide, zero sorry outside Challenge.lean
 # Lean 4.35.0 commit: eb6cafb7290e8bd5f2937522d8d804f58f02bafc
-# Targets: Solution (66 headline theorems), NonVacuity (16 witnesses), Adversarial (20 refutations) — 102 audited declarations
+# Targets: Solution (69 headline theorems), NonVacuity (18 witnesses), Adversarial (22 refutations) — 109 audited declarations
 # Strict permitted axiom whitelist: [propext, Classical.choice, Quot.sound] (NO sorryAx even declared in cones)
 
 [PASS] 1/6 lean (lake build Challenge Solution NonVacuity Adversarial)
-  ⚠ [3/19] Replayed Challenge | warning: Challenge.lean:20:15: declaration uses `sorry` | warning: Challenge.lean:24:15: declaration uses `sorry` | warning: Challenge.lean:28:15: declaration uses `sorry` | warning: Challenge.lean:34:15: declaration uses `sorry` | warning: Challenge.lean:39:15: declaration uses `sorry`
+  ⚠ [3/19] Replayed Challenge
 [PASS] 2/6 leanchecker-paranoid --fresh Solution
 [PASS] 2/6 leanchecker-paranoid --fresh NonVacuity
 [PASS] 2/6 leanchecker-paranoid --fresh Adversarial
-[PASS] export Solution minimal transitive cone (66 decls)
-  wrote Solution_cone.ndjson (29481715 bytes)
-[PASS] export NonVacuity minimal transitive cone (16 decls)
-  wrote NonVacuity_cone.ndjson (7981220 bytes)
-[PASS] export Adversarial minimal transitive cone (20 decls)
-  wrote Adversarial_cone.ndjson (16112041 bytes)
+[PASS] export Solution minimal transitive cone (69 decls)
+  wrote Solution_cone.ndjson (31390414 bytes)
+[PASS] export NonVacuity minimal transitive cone (18 decls)
+  wrote NonVacuity_cone.ndjson (7987850 bytes)
+[PASS] export Adversarial minimal transitive cone (22 decls)
+  wrote Adversarial_cone.ndjson (17841275 bytes)
 [PASS] 3/6 lean4lean --import Solution_cone.ndjson
-  [anonymous]:thmDecl _private.FormalAtlas.Ramsey.0.FormalAtlas.handshaking_fin9_even._proof_1_3: lean4lean took 1243 | checked 3853 declarations
+  checked 3923 declarations
 [PASS] 3/6 lean4lean --import NonVacuity_cone.ndjson
-  checked 2029 declarations
+  checked 2031 declarations
 [PASS] 3/6 lean4lean --import Adversarial_cone.ndjson
-  checked 2842 declarations
+  checked 2905 declarations
 [PASS] 4/6 nanoda_bin (strict 3-axiom whitelist) Solution_cone.ndjson
 [PASS] 4/6 nanoda_bin (strict 3-axiom whitelist) NonVacuity_cone.ndjson
 [PASS] 4/6 nanoda_bin (strict 3-axiom whitelist) Adversarial_cone.ndjson
 [PASS] 5/6 con-leche --verified Solution_cone.ndjson
-  con-leche: accepted 3856 declarations (--verified) | con-leche: 2 declarations hoisted ahead of the pinned Nat operations they ground: Nat.mul._f, Nat.mul
+  con-leche: accepted 3926 declarations (--verified) | con-leche: 2 declarations hoisted ahead of the pinned Nat operations they ground: Nat.mul._f, Nat.mul
 [PASS] 5/6 con-leche --verified NonVacuity_cone.ndjson
-  con-leche: accepted 2032 declarations (--verified)
+  con-leche: accepted 2034 declarations (--verified)
 [PASS] 5/6 con-leche --verified Adversarial_cone.ndjson
-  con-leche: accepted 2845 declarations (--verified)
+  con-leche: accepted 2908 declarations (--verified)
 [PASS] 6/6 con-ron --verified Solution_cone.ndjson
-  con-ron: accepted 3856 declarations (--verified) | con-ron: 2 declarations hoisted ahead of the pinned Nat operations they ground: Nat.mul._f, Nat.mul
+  con-ron: accepted 3926 declarations (--verified) | con-ron: 2 declarations hoisted ahead of the pinned Nat operations they ground: Nat.mul._f, Nat.mul
 [PASS] 6/6 con-ron --verified NonVacuity_cone.ndjson
-  con-ron: accepted 2032 declarations (--verified)
+  con-ron: accepted 2034 declarations (--verified)
 [PASS] 6/6 con-ron --verified Adversarial_cone.ndjson
-  con-ron: accepted 2845 declarations (--verified)
+  con-ron: accepted 2908 declarations (--verified)

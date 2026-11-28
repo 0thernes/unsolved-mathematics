@@ -13,29 +13,31 @@ url: "https://0thernes.github.io/unsolved-mathematics/"
 identifiers:
   - type: swh
     value: "swh:1:snp:c11ec8263dd64b986c52bb400b8c3a85a3e6a254"
-    description: "Software Heritage permanent archival snapshot of release v0.6.0 (v0.8.3 snapshot requested upon release)"
+    description: "Software Heritage permanent archival snapshot of release v0.6.0 (v0.9.0 snapshot requested upon release)"
 abstract: >
   A reproducible, ranked, FAIR-indexed research dossier collection of 120 open
   mathematical problems across 38 fields (plus a daily full sidecar mirror of
   all 26 Left to Solve research programs / 62,790 targets), paired with a
   standalone eight-domain, six-kernel Lean 4.35.0 formal verification core with
   autoImplicit = false
-  (66 headline theorems, 16 non-vacuity witnesses, and 20 adversarial
-  refutations = 102 audited declarations across Collatz Fine-Wilf valuation
-  ceilings / d <= 7 & 1-/2-odd-step positive-cycle exclusion / catalytic
-  cylinders, Erdos-Straus, full Lonely Runner through n = 3, Brocard through
-  n <= 20, Primes/Twin Primes, Goldbach, Complete Euclid-Euler even perfect
-  number theorem & Euler 2p | (q-1) Mersenne prime divisor congruence, and
-  exact Ramsey R(3,3) = 6 and R(3,4) = 9), live negative kernel rejection,
-  automated primary-source citation and Crossref/DataCite retraction auditing,
-  dual DigiCert RFC 3161 + Bitcoin OpenTimestamps cryptographic manifest proofs,
-  a deterministic BM25/dense RAG corpus, RO-Crate 1.1 and Croissant 1.0
-  metadata, a compiled AMS-LaTeX white paper, and documented epistemic integrity
-  gates. Human contributions (CRediT): Conceptualization, Methodology, Supervision,
-  Formal analysis (statement-fidelity audit), Validation, Writing - review &
-  editing. AI tools were used as disclosed drafting and formalization
-  instruments; all formal theorems are independently checked by six Lean 4.35.0
-  kernels. Not peer-reviewed.
+  (69 headline theorems, 18 non-vacuity witnesses, and 22 adversarial
+  refutations = 109 audited declarations across Collatz Fine-Wilf valuation
+  ceilings / d <= 7 & unconditional 1-/2-/3-odd-step positive-cycle exclusion /
+  sharp intercept & Eliahou-Steiner amplitude bounds / catalytic cylinders,
+  Erdos-Straus, full Lonely Runner through n = 3, Brocard through n <= 20,
+  Primes/Twin Primes, Goldbach, Complete Euclid-Euler even perfect number
+  theorem & Euler 2p | (q-1) Mersenne prime divisor congruence, and exact
+  Ramsey R(3,3) = 6 and R(3,4) = 9), a catalytic C17/BMI2 + safe Rust native
+  Collatz accelerator (up to 7,137x speedup, 4 KiB stack DFS, 250k ASan/UBSan
+  fuzzer), live negative kernel rejection, automated primary-source citation
+  and Crossref/DataCite retraction auditing, dual DigiCert RFC 3161 + Bitcoin
+  OpenTimestamps cryptographic manifest proofs, a deterministic BM25/dense RAG
+  corpus, RO-Crate 1.1 and Croissant 1.0 metadata, a compiled AMS-LaTeX white
+  paper, and documented epistemic integrity gates. Human contributions (CRediT):
+  Conceptualization, Methodology, Supervision, Formal analysis (statement-fidelity
+  audit), Validation, Writing - review & editing. AI tools were used as disclosed
+  drafting and formalization instruments; all formal theorems are independently
+  checked by six Lean 4.35.0 kernels. Not peer-reviewed.
 keywords:
   - mathematics
   - open problems
@@ -46,5 +48,5 @@ keywords:
   - retrieval-augmented generation
   - knowledge base
 license: CC-BY-4.0
-version: 0.8.3
+version: 0.9.0
 date-released: 2026-11-27

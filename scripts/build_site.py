@@ -7,11 +7,11 @@ JSON/data files (data/problems.json, data/citation-verification-log.json,
 data/retraction-audit.json, lean/comparator.json, lean/VerifyAxioms.lean, VERSION)
 and emits:
   - _site/index.html      (searchable curated Atlas explorer)
-  - _site/blueprint.html  (interactive 8-domain, 66-theorem Lean 4.35.0 Proof Blueprint & DAG)
+  - _site/blueprint.html  (interactive 8-domain, 69-theorem Lean 4.35.0 Proof Blueprint & DAG)
   - _site/problems.json
   - _site/social-preview.svg
   - _site/programs.html + external-programs.json + external-crosswalk.json
-    (daily full Left to Solve mirror across all 25 programs from data/external/)
+    (daily full Left to Solve mirror across all live programs from data/external/)
 """
 
 from __future__ import annotations
@@ -54,6 +54,9 @@ THEOREM_CATALOG: list[tuple[str, str, str, str, str]] = [
     ("thm_collatz_no_nontrivial_positive_cycle_le_7", "Collatz", "FormalAtlas/Collatz.lean", "1<=d<=7 & x>0 & T^d(x)=x => x in {1, 2}", "Exhaustive low-period positive-cycle exclusion through d <= 7"),
     ("thm_collatz_no_positive_cycle_odd_le_7", "Collatz", "FormalAtlas/Collatz.lean", "odd d<=7 & x>0 => T^d(x) != x", "No positive odd-period Collatz cycles for d in {1, 3, 5, 7}"),
     ("thm_collatz_catalytic_reversible_cylinder", "Collatz", "FormalAtlas/Collatz.lean", "catCollatzStep d q r acc cat = (acc + T^d(2^d q + r), cat)", "Zero-workspace catalytic reversible evaluation of Collatz cylinders"),
+    ("thm_collatz_positive_cycle_three_odd", "Collatz", "FormalAtlas/Collatz.lean", "d>=1 & x>0 & T^d(x)=x & o=3 => d=6 & x in {1,2}", "Unconditional 3-odd-step positive-cycle exclusion for all d >= 1"),
+    ("thm_collatz_intercept_upper_bound", "Collatz", "FormalAtlas/Collatz.lean", "wordIntercept w <= 2^(|w|-o) * (3^o - 2^o)", "Sharp universal affine intercept upper bound for all parity words"),
+    ("thm_collatz_cycle_amplitude_ceiling", "Collatz", "FormalAtlas/Collatz.lean", "T^d(x)=x => (2^d - 3^o) * x <= 2^(d-o) * (3^o - 2^o)", "Global Eliahou-Steiner positive-cycle Diophantine amplitude ceiling"),
     ("thm_erdos_straus_mordell_840", "Erdos-Straus", "FormalAtlas/ErdosStraus.lean", "n mod 840 not in {1,121,169,289,361,529}", "Mordell (1967) 834/840 modular reduction (99.29%)"),
     ("thm_erdos_straus_multiplicative_closure", "Erdos-Straus", "FormalAtlas/ErdosStraus.lean", "HasErdosStraus m => HasErdosStraus (m*k)", "Multiplicative closure / reduction to primes"),
     ("thm_erdos_straus_mordell_exceptions_small", "Erdos-Straus", "FormalAtlas/ErdosStraus.lean", "n in {121,169,289,361,529,841}", "Resolution of all 6 smallest exceptional squares"),
@@ -155,13 +158,13 @@ def _build_blueprint_html(version: str, n_theorems: int, n_decls: int, n_problem
   <main>
     <nav>
       <a href="index.html">← Atlas Problem Explorer ({n_problems} Problems)</a>
-      <a href="programs.html">External Programs (All 25 · Daily)</a>
+      <a href="programs.html">External Programs (Left to Solve · Daily)</a>
       <a href="https://github.com/0thernes/unsolved-mathematics/tree/main/lean">lean/ Source</a>
       <a href="https://github.com/0thernes/unsolved-mathematics/blob/main/lean/STATEMENT_FIDELITY.md">Statement Fidelity Audit</a>
       <a href="https://github.com/0thernes/unsolved-mathematics/blob/main/paper/Donahue_2026_unsolved_mathematics_atlas.pdf">White Paper PDF</a>
     </nav>
     <h1>FormalAtlas Lean 4.35.0 Proof Blueprint <small style="color:var(--muted)">v{html.escape(version)}</small></h1>
-    <p class="sub">Standalone zero-Mathlib Lean 4.35.0 formal core (<code>autoImplicit = false</code>) across <strong>8 open-problem domains</strong>: <strong>{n_theorems} headline theorems</strong> + <strong>16 non-vacuity witnesses</strong> + <strong>20 adversarial false-variant refutations</strong> = <strong>{n_decls} audited declarations</strong> · axioms strictly within <code>&#123;propext, Classical.choice, Quot.sound&#125;</code> · verified across all <strong>6 independent kernels</strong> + live negative kernel rejection. <em>None of these theorems claims to solve an open conjecture.</em></p>
+    <p class="sub">Standalone zero-Mathlib Lean 4.35.0 formal core (<code>autoImplicit = false</code>) across <strong>8 open-problem domains</strong>: <strong>{n_theorems} headline theorems</strong> + <strong>18 non-vacuity witnesses</strong> + <strong>22 adversarial false-variant refutations</strong> = <strong>{n_decls} audited declarations</strong> · axioms strictly within <code>&#123;propext, Classical.choice, Quot.sound&#125;</code> · verified across all <strong>6 independent kernels</strong> + live negative kernel rejection. <em>None of these theorems claims to solve an open conjecture.</em></p>
 
     <h2>Eight-Domain Dependency &amp; Multi-Kernel Verification DAG</h2>
     <div class="dag-box">
@@ -176,7 +179,7 @@ def _build_blueprint_html(version: str, n_theorems: int, n_decls: int, n_problem
         <text x="101" y="184" fill="#94a3b8" text-anchor="middle" font-size="11">202 LOC · Zero Mathlib</text>
 
         <rect x="248" y="8" width="206" height="34" rx="7" fill="#1e3a8a" stroke="#93c5fd"/>
-        <text x="351" y="30" fill="#f1f5f9" text-anchor="middle" font-size="11.5" font-weight="700">Collatz (28 theorems)</text>
+        <text x="351" y="30" fill="#f1f5f9" text-anchor="middle" font-size="11.5" font-weight="700">Collatz (31 theorems)</text>
         <rect x="248" y="49" width="206" height="34" rx="7" fill="#065f46" stroke="#6ee7b7"/>
         <text x="351" y="71" fill="#f1f5f9" text-anchor="middle" font-size="11.5" font-weight="700">Erdős–Straus (5 theorems)</text>
         <rect x="248" y="90" width="206" height="34" rx="7" fill="#5b21b6" stroke="#c4b5fd"/>
@@ -202,11 +205,11 @@ def _build_blueprint_html(version: str, n_theorems: int, n_decls: int, n_problem
 
         <rect x="524" y="174" width="192" height="52" rx="8" fill="#1e293b" stroke="#60a5fa"/>
         <text x="620" y="197" fill="#f1f5f9" text-anchor="middle" font-size="12" font-weight="700">NonVacuity.lean</text>
-        <text x="620" y="214" fill="#93c5fd" text-anchor="middle" font-size="10.5">16 concrete witnesses</text>
+        <text x="620" y="214" fill="#93c5fd" text-anchor="middle" font-size="10.5">18 concrete witnesses</text>
 
         <rect x="524" y="246" width="192" height="52" rx="8" fill="#1e293b" stroke="#f87171"/>
         <text x="620" y="269" fill="#f1f5f9" text-anchor="middle" font-size="12" font-weight="700">Adversarial.lean</text>
-        <text x="620" y="286" fill="#fca5a5" text-anchor="middle" font-size="10.5">20 false-variant refutations</text>
+        <text x="620" y="286" fill="#fca5a5" text-anchor="middle" font-size="10.5">22 false-variant refutations</text>
 
         <rect x="788" y="64" width="290" height="84" rx="10" fill="#0f172a" stroke="#34d399" stroke-width="2"/>
         <text x="933" y="92" fill="#34d399" text-anchor="middle" font-size="13" font-weight="700">6-Kernel bwrap Replay</text>
@@ -247,7 +250,7 @@ def _build_blueprint_html(version: str, n_theorems: int, n_decls: int, n_problem
     <h2>Headline Theorems ({n_theorems} Across 8 Domains)</h2>
     <div class="filters">
       <button class="fbtn active" data-filter="all">All ({n_theorems})</button>
-      <button class="fbtn" data-filter="collatz">Collatz (28)</button>
+      <button class="fbtn" data-filter="collatz">Collatz (31)</button>
       <button class="fbtn" data-filter="erdos-straus">Erdős–Straus (5)</button>
       <button class="fbtn" data-filter="lonely-runner">Lonely Runner (8)</button>
       <button class="fbtn" data-filter="brocard">Brocard (7)</button>

@@ -1,6 +1,6 @@
 # 🏔️ The Master Ranking
 
-_Atlas v0.8.3 · 120 problems · reference year 2026 · ranked hardest+oldest → most tractable by Composite Severity Score (CSS), tie-broken alphabetically by slug._
+_Atlas v0.9.0 · 120 problems · reference year 2026 · ranked hardest+oldest → most tractable by Composite Severity Score (CSS), tie-broken alphabetically by slug._
 
 See [docs/methodology/RANKING.md](docs/methodology/RANKING.md) for the formula.
 

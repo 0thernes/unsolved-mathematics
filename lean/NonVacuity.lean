@@ -4,11 +4,11 @@ module
 public import FormalAtlas
 
 /-!
-# NonVacuity — Concrete Witnesses Defeating Vacuous-Hypothesis Objections (`v0.7.0`)
+# NonVacuity — Concrete Witnesses Defeating Vacuous-Hypothesis Objections (`v0.9.0`)
 
 Per the Defensible Independent AI Research Playbook v1.3, every conditional hypothesis
 bundle in `Challenge.lean` across all 8 domains is paired with an explicit concrete
-non-vacuity witness (16 witnesses total).
+non-vacuity witness (18 witnesses total).
 -/
 
 namespace FormalAtlas.NonVacuity
@@ -114,5 +114,18 @@ public theorem witness_odd_unit_lock_fine_wilf :
 public theorem witness_catalytic_cylinder :
     catCollatzStep 2 1 1 10 999 = (14, 999) := by
   decide
+
+/-- Witness 17: Trivial 3-odd-step Collatz cycle `1 → 2 → 1 → 2 → 1 → 2 → 1` (`d = 6`, `o = 3`). -/
+public theorem witness_collatz_three_odd_trivial_cycle :
+    iter T 6 1 = 1 ∧ oddCount T 6 1 = 3 ∧ iter T 6 2 = 2 ∧ oddCount T 6 2 = 3 := by
+  exact ⟨by decide, by decide, by decide, by decide⟩
+
+/-- Witness 18: Sharp attainment of `collatz_intercept_upper_bound` on `w = [F, F, T, T]` (`c = 20 = 2^2 * (3^2 - 2^2)`). -/
+public theorem witness_collatz_intercept_bound_sharp :
+    let w := [false, false, true, true]
+    wordIntercept w = 20 ∧
+    (2 : Int) ^ (w.length - wordOddCount w) *
+      ((3 : Int) ^ (wordOddCount w) - (2 : Int) ^ (wordOddCount w)) = 20 := by
+  exact ⟨by decide, by decide⟩
 
 end FormalAtlas.NonVacuity

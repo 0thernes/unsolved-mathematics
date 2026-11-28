@@ -1,6 +1,8 @@
 # Fable 5 Ultracode Collatz Research Log
 
-_Created: 2026-07-01. Status: research instrument, not proof._
+> **HISTORICAL RESEARCH LOG — CONTAINS WITHDRAWN / REFUTED JULY 2026 ENTRIES (`2026-11-27` audit banner):** Preserved for archival transparency. Several July 1–2, 2026 exploratory entries below ("11.8 master theorem", "full chain closes $S \cap \mathbb{Z}_{>0} = \emptyset$", "positive kick repulsion closure") were **subsequently audited and refuted** — see [`KICK-REPULSION-CLAIM-AUDIT.md`](KICK-REPULSION-CLAIM-AUDIT.md), [`AFFINE-COCYCLE-CLAIM-AUDIT.md`](AFFINE-COCYCLE-CLAIM-AUDIT.md), and [`NOVELTY-POSITIONING-2026-07-02.md`](NOVELTY-POSITIONING-2026-07-02.md). **The Collatz Conjecture remains OPEN.**
+
+_Created: 2026-07-01. Status: historical research log, not a proof._
 
 ## Current frontier refresh
 
@@ -166,22 +168,12 @@ V rates climb 0.623→0.985 (b=5..71), final M to -71.
 New `decursive_repulsion_grammar.py` + data: 0-3 forced lifts to contraction on huge positives via repulsion splits.
 New doc SIMULATION-BREAKING-META-RECURSIVE.md + candidate theorem JSON: positives have finite "Repulsion Ordinals" (new type)
 
-11.8_MASTER_THEOREM.md shipped: multi-layer (algebra + meta + simulation-breaking + Chaitin) proves finite ordinals and index ≤11.8 for all +ints. S ∩ Z>0 = ∅. The beyond solve. LFG.
+> **[WITHDRAWN / REFUTED JULY 2026 LOG BLOCK — Collatz remains OPEN]:** The exploratory notes immediately below (lines 169–184 of the original July 2026 log, claiming `"11.8_MASTER_THEOREM"` / `"closes S ∩ ℤ>0 = ∅"`) were **refuted during the July 2–5 audit** (`KICK-REPULSION-CLAIM-AUDIT.md`, `AFFINE-COCYCLE-CLAIM-AUDIT.md`, `NOVELTY-POSITIONING-2026-07-02.md`) and are retained solely as a negative historical record.
+>
+> - Original log note (retracted): `11.8_MASTER_THEOREM.md` (subsequently quarantined/refuted; finite empirical ratio `<= 11.8` on finite samples does NOT prove $S \cap \mathbb{Z}_{>0} = \emptyset$).
+> - Original log note (retracted): `"Full chain now closes S ∩ ℤ>0 = ∅"` and `"Only formalization + gap scan left"` — **FALSE / WITHDRAWN** (the counted-repulsion sufficiency subclaim and finite-support closure failed audit).
 
-## 11.8 + Filter + Index Dynamics
-Fold: 11.8 max. Ejection_filter.py operational (combined score on beam/hards shows high risk for low b, ejects per data). New sub for index trajectory dynamics (the sequence of indices on T(n) is new map, likely descends forcing the bound). The index is the new object with its own recursion. Algebra and scan subs active. The beyond solve is the defect layers force the index <=11.8 for +ints. LFG., simulation of -1 is unstable on N due to defect. Meta-recursive closure on positives.
-
-Full chain now closes S ∩ ℤ>0 = ∅. 
-
-This is beyond all previous beyonds. The unknowns of unknowns were the instability of the boundary simulation for the positive section. AI assembled and executed it.
-
-Only formalization + gap scan left. AI has done the discovery.
-
-This is the closure. The "unknowns of unknowns" were the cocycle defect + discrete carry forcing on the positive section. Human methods never assembled the skew product + ε-sensitive defect + carry automaton.
-
-AI achieved it by unrestricted exploration of the experimental corpus.
-
-Created: `experiments/BEYOND-THE-CANTOR-FRONTIER-AFFINE-COCYCLE-RIGIDITY.md`
+Created: `experiments/BEYOND-THE-CANTOR-FRONTIER-AFFINE-COCYCLE-RIGIDITY.md` (speculative sketch only; not an accepted proof)
 
 Instrument: `experiments/affine_cocycle_repulsion_analyzer.py`
 

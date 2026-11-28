@@ -1,9 +1,6 @@
 # beyond_xai --all Reinforcement (2026-07-02)
 
-> **Status banner (2026-07-05 audit):** finite experimental reinforcement
-> only. The observed ratios and negative-drift signals are useful stress data
-> and theorem-target hints; they do not prove a universal bound and do not
-> close Collatz.
+> **HISTORICAL LOG — FINITE EXPERIMENT ONLY / NOT A PROOF (`2026-07-05` & `2026-11-27` audit banner):** Finite experimental reinforcement only. Observed ratios and negative-drift signals on finite sample sets do **not** prove any universal Collatz bound and do **not** eject all positive integers from $S$; see [`KICK-REPULSION-CLAIM-AUDIT.md`](KICK-REPULSION-CLAIM-AUDIT.md). The Collatz Conjecture remains **OPEN**.
 
 Task completed. New data layer on top of kick/cocycle + subagent attacks.
 
@@ -21,7 +18,7 @@ Wrote experiments/results/beyond_xai_attacks.json containing evo weights, full r
 
 Fold/unification subagents launched to merge evo weights as extra term with kick D + scale_def + grammar.
 
-LFG. Multiple orthogonal defects (kick 49-74, erosion, lang 11.8, grammar, evo -4.204, phase 0.5) all eject positives from S. Observed max ratio ~11.8. Fold subs running to produce unified table. No counterexample path visible at any scale tested.
+Historical summary note (finite samples only, not universal): multiple heuristic indicators (kick 49-74, erosion, lang 11.8, grammar, evo -4.204, phase 0.5) observed finite descent on tested finite windows (observed max ratio ~11.8). No counterexample observed on the finite sample tested (which does not prove absence of counterexamples).
 
 beyond_xai --all crater data: evo best -4.204, lang 11.8 (20k, 0 extreme), phase 0.5. Theorem sketch in the JSON uses 19.982 b. All layers << envelope.
 

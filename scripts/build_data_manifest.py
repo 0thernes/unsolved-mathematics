@@ -62,6 +62,11 @@ TRACKED_FILES = [
     "paper/references.bib",
     "paper/Donahue_2026_unsolved_mathematics_atlas.pdf",
     "paper/arxiv_submission.tar.gz",
+    "docs/benchmarks.md",
+    "docs/COLLATZ-TOOLSTACK-AND-CATALYTIC-AUDIT.md",
+    "problems/collatz-conjecture/native/collatz_catalytic.c",
+    "problems/collatz-conjecture/native/collatz_catalytic_oracle.rs",
+    "problems/collatz-conjecture/native/fuzz_collatz_catalytic.c",
 ]
 
 
