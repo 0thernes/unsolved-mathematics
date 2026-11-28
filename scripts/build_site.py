@@ -388,6 +388,10 @@ def _build_collatz_hydra_html(version: str) -> str | None:
     )
 
     last_t = tiers[-1]
+    carry_plus = vc["mean_carry_bits"]["3n+1"]
+    carry_minus = vc["mean_carry_bits"]["3n-1"]
+    carry_diff = carry_plus - carry_minus
+    ham_drift = vc["mean_hamming_drift"]["3n+1"]
     gh = "https://github.com/0thernes/unsolved-mathematics/blob/main"
     return f"""<!doctype html>
 <html lang="en">
@@ -445,7 +449,7 @@ def _build_collatz_hydra_html(version: str) -> str | None:
     <div class="cards">
       <div class="card"><div class="num">{d['total_elapsed_seconds']:.2f} s</div><div class="lbl">Full 5-Vector Catalytic C17 Runtime (2.1M starts, zero heap explosion)</div></div>
       <div class="card"><div class="num">{last_t['sibling_3n_minus_1']['nontrivial_cycle_fraction']*100:.2f}% vs 0%</div><div class="lbl">3n&minus;1 Sibling Cycle Escape vs 3n+1 (B=22, 2,097,151 odd starts)</div></div>
-      <div class="card"><div class="num">+3.000 bits</div><div class="lbl">Exact Carry-Avalanche Excess (12.833 vs 9.833 carry bits/step)</div></div>
+      <div class="card"><div class="num">+{carry_diff:.3f} bits</div><div class="lbl">Exact Carry-Avalanche Excess ({carry_plus:.3f} vs {carry_minus:.3f} carry bits/step)</div></div>
       <div class="card"><div class="num">(a+b&minus;1)/(a+b)</div><div class="lbl">Exact Tropical Modular Mirror Law vs Box Break (1/2 &lt; &theta; &lt; 2/3)</div></div>
     </div>
 
@@ -492,7 +496,7 @@ def _build_collatz_hydra_html(version: str) -> str | None:
       <tbody>
         <tr><td><strong>A. Adelic Pincer</strong></td><td><span class="pill pass">YES (mod 3 &amp; 9)</span></td><td><code>thm_collatz_mod3_chiral_asymmetry</code>, <code>thm_collatz_cycle_no_div3</code></td><td>Bit-exact</td><td>500k/500k mod-3 lock; 0/491 div-3 intercepts; 42.4% chiral pile-up at 5 vs 4 mod 9; high-v2 pairs drop &minus;1.80 bits in log<sub>2</sub>|&Delta;|<sub>&infin;</sub>.</td></tr>
         <tr><td><strong>B. Minimax Game</strong></td><td><span class="pill pass">YES (V<sub>+</sub> vs &infin;)</span></td><td><code>thm_collatz_cycle_amplitude_ceiling</code>, <code>thm_collatz_positive_cycle_four_odd</code></td><td>Bit-exact</td><td>3n&minus;1 traps 67.23% of 2.1M odd starts into &#123;5, 17&#125; cycles; 3n+1 traps 0% with Demon n*=3,873,535 (+10.573 excess).</td></tr>
-        <tr><td><strong>C. Carry Shockwave</strong></td><td><span class="pill warn">PARTIAL</span></td><td><code>thm_collatz_sign_conjugacy</code></td><td>Bit-exact</td><td>+3.000 extra carry bits/step (12.833 vs 9.833) &amp; trailing-1 v<sub>2</sub> swap separate &plusmn;1; Hamming drift &Delta;H = &minus;1/3 is &epsilon;-blind.</td></tr>
+        <tr><td><strong>C. Carry Shockwave</strong></td><td><span class="pill warn">PARTIAL</span></td><td><code>thm_collatz_sign_conjugacy</code></td><td>Bit-exact</td><td>+{carry_diff:.3f} extra carry bits/step ({carry_plus:.3f} vs {carry_minus:.3f}) &amp; trailing-1 v<sub>2</sub> swap separate &plusmn;1; Hamming drift &Delta;H = {ham_drift:+.3f} is &epsilon;-blind.</td></tr>
         <tr><td><strong>D. Tropical Karp</strong></td><td><span class="pill nogo">NO mod M</span> / <span class="pill pass">YES box</span></td><td><code>thm_collatz_sign_conjugacy</code>, <code>thm_collatz_cycle_no_div3</code></td><td>Bit-exact</td><td>Proves exact modular mirror &mu;*(2<sup>a</sup>3<sup>b</sup>) = (a+b&minus;1)/(a+b) &rarr; 1; positive box [1, N] breaks mirror to 1/2 &lt; &theta; &lt; 2/3.</td></tr>
         <tr><td><strong>E. Symbolic LZ76</strong></td><td><span class="pill pass">YES</span></td><td>Empirical diagnostic</td><td>Bit-exact</td><td>3n+1 Demons stay pseudorandom (LZ76<sub>norm</sub> = 1.04&ndash;1.23, |r<sub>1</sub>| &lt; 0.02) vs collapsed 3n&minus;1 periodic attractors (0.09&ndash;0.16).</td></tr>
       </tbody>
