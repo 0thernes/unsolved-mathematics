@@ -1,38 +1,37 @@
-# Six-Kernel Independent Verification Audit (Lean 4.35.0, v0.9.0)
+# Six-Kernel Independent Verification Audit (Lean 4.35.0, v0.10.0)
 # Options: autoImplicit = false, zero Mathlib, zero native_decide, zero sorry outside Challenge.lean
 # Lean 4.35.0 commit: eb6cafb7290e8bd5f2937522d8d804f58f02bafc
-# Targets: Solution (69 headline theorems), NonVacuity (18 witnesses), Adversarial (22 refutations) — 109 audited declarations
+# Targets: Solution (74 headline theorems), NonVacuity (20 witnesses), Adversarial (24 refutations) — 118 audited declarations
 # Strict permitted axiom whitelist: [propext, Classical.choice, Quot.sound] (NO sorryAx even declared in cones)
 
 [PASS] 1/6 lean (lake build Challenge Solution NonVacuity Adversarial)
-  ⚠ [3/19] Replayed Challenge
 [PASS] 2/6 leanchecker-paranoid --fresh Solution
 [PASS] 2/6 leanchecker-paranoid --fresh NonVacuity
 [PASS] 2/6 leanchecker-paranoid --fresh Adversarial
-[PASS] export Solution minimal transitive cone (69 decls)
-  wrote Solution_cone.ndjson (31390414 bytes)
-[PASS] export NonVacuity minimal transitive cone (18 decls)
-  wrote NonVacuity_cone.ndjson (7987850 bytes)
-[PASS] export Adversarial minimal transitive cone (22 decls)
-  wrote Adversarial_cone.ndjson (17841275 bytes)
+[PASS] export Solution minimal transitive cone (74 decls)
+  wrote Solution_cone.ndjson (34315976 bytes)
+[PASS] export NonVacuity minimal transitive cone (20 decls)
+  wrote NonVacuity_cone.ndjson (7995083 bytes)
+[PASS] export Adversarial minimal transitive cone (24 decls)
+  wrote Adversarial_cone.ndjson (20549124 bytes)
 [PASS] 3/6 lean4lean --import Solution_cone.ndjson
-  checked 3923 declarations
+  checked 4043 declarations
 [PASS] 3/6 lean4lean --import NonVacuity_cone.ndjson
-  checked 2031 declarations
+  checked 2034 declarations
 [PASS] 3/6 lean4lean --import Adversarial_cone.ndjson
-  checked 2905 declarations
+  checked 3013 declarations
 [PASS] 4/6 nanoda_bin (strict 3-axiom whitelist) Solution_cone.ndjson
 [PASS] 4/6 nanoda_bin (strict 3-axiom whitelist) NonVacuity_cone.ndjson
 [PASS] 4/6 nanoda_bin (strict 3-axiom whitelist) Adversarial_cone.ndjson
 [PASS] 5/6 con-leche --verified Solution_cone.ndjson
-  con-leche: accepted 3926 declarations (--verified) | con-leche: 2 declarations hoisted ahead of the pinned Nat operations they ground: Nat.mul._f, Nat.mul
+  con-leche: 2 declarations hoisted ahead of the pinned Nat operations they ground: Nat.mul._f, Nat.mul | con-leche: accepted 4046 declarations (--verified)
 [PASS] 5/6 con-leche --verified NonVacuity_cone.ndjson
-  con-leche: accepted 2034 declarations (--verified)
+  con-leche: accepted 2037 declarations (--verified)
 [PASS] 5/6 con-leche --verified Adversarial_cone.ndjson
-  con-leche: accepted 2908 declarations (--verified)
+  con-leche: accepted 3016 declarations (--verified)
 [PASS] 6/6 con-ron --verified Solution_cone.ndjson
-  con-ron: accepted 3926 declarations (--verified) | con-ron: 2 declarations hoisted ahead of the pinned Nat operations they ground: Nat.mul._f, Nat.mul
+  con-ron: 2 declarations hoisted ahead of the pinned Nat operations they ground: Nat.mul._f, Nat.mul | con-ron: accepted 4046 declarations (--verified)
 [PASS] 6/6 con-ron --verified NonVacuity_cone.ndjson
-  con-ron: accepted 2034 declarations (--verified)
+  con-ron: accepted 2037 declarations (--verified)
 [PASS] 6/6 con-ron --verified Adversarial_cone.ndjson
-  con-ron: accepted 2908 declarations (--verified)
+  con-ron: accepted 3016 declarations (--verified)

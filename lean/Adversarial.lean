@@ -4,9 +4,9 @@ module
 public import FormalAtlas
 
 /-!
-# Adversarial — Explicit Refutation of Weakened / False Variants (`v0.9.0`, Playbook #12)
+# Adversarial — Explicit Refutation of Weakened / False Variants (`v0.10.0`, Playbook #12)
 
-Tests all 8 formal domains adversarially by proving 22 deliberately false, overclaimed,
+Tests all 8 formal domains adversarially by proving 24 deliberately false, overclaimed,
 or degenerately weakened statements are PROVABLY FALSE under our definitions.
 -/
 
@@ -211,5 +211,18 @@ public theorem adv_collatz_intercept_bound_strict_false :
       ((3 : Int) ^ wordOddCount [false, false, true, true] -
         (2 : Int) ^ wordOddCount [false, false, true, true])) := by decide
   exact hne h
+
+/-- 23. No nonzero multiple of 3 can EVER lie on ANY positive or negative Collatz cycle (`d ≥ 1`). -/
+public theorem adv_collatz_no_mult3_nonzero_cycle :
+    ¬ (∃ d : Nat, ∃ x : Int, 1 ≤ d ∧ x ≠ 0 ∧ x % 3 = 0 ∧ iter T d x = x) := by
+  intro ⟨d, x, hd, hx, hdiv3, hcyc⟩
+  exact collatz_cycle_no_div3 d x hd hx hcyc hdiv3
+
+/-- 24. No nontrivial positive integer `x ≥ 3` can lie on ANY 4-odd-step Collatz cycle (all `d ≥ 1`). -/
+public theorem adv_collatz_no_nontrivial_four_odd_cycle :
+    ¬ (∃ d : Nat, ∃ x : Int, 1 ≤ d ∧ 3 ≤ x ∧ iter T d x = x ∧ oddCount T d x = 4) := by
+  intro ⟨d, x, hd, hx, hcyc, ho⟩
+  have ⟨_, hx12⟩ := collatz_positive_cycle_four_odd d x hd (by omega) hcyc ho
+  omega
 
 end FormalAtlas.Adversarial

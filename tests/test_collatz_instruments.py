@@ -126,6 +126,63 @@ def test_catalytic_native_parity_and_budget(tmp_path):
         assert rs_out["max_valuation_e"] == py_ref["by_target_cutoff"]["20"]["max_valuation_e"]
 
 
+def test_asymmetric_hydra_native_parity_and_budget(tmp_path):
+    """Build 5-vector Asymmetric Hydra C17 + safe Rust oracle when compilers exist and verify bit-exact parity + <2s budget."""
+    import shutil
+    import time
+
+    gcc = shutil.which("gcc")
+    rustc = shutil.which("rustc")
+    native_dir = ROOT / "problems" / "collatz-conjecture" / "native"
+    c_src = native_dir / "collatz_asymmetric_hydra.c"
+    rs_src = native_dir / "collatz_hydra_oracle.rs"
+    assert c_src.exists() and rs_src.exists()
+
+    committed = json.loads((EXP / "results" / "collatz_asymmetric_hydra_20261127.json").read_text(encoding="utf-8"))
+    assert committed["vector_a_adelic_pincer"]["intercept_div3_violations"] == 0
+    assert committed["vector_c_carry_shockwave"]["sign_conjugacy_mismatches"] == 0
+    assert all(m["mirror_exact_equal"] for m in committed["vector_d_tropical_karp"]["mixed_base_quotients"])
+
+    if not gcc:
+        return
+
+    c_exe = tmp_path / "collatz_hydra"
+    subprocess.run(
+        [gcc, "-O3", "-std=c17", "-Wall", "-Wextra", "-Werror", str(c_src), "-lm", "-o", str(c_exe)],
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+    st = subprocess.run([str(c_exe), "self-test"], check=True, capture_output=True, text=True)
+    assert "PASS" in st.stdout
+
+    c_json = tmp_path / "hydra16.json"
+    t0 = time.perf_counter()
+    subprocess.run(
+        [str(c_exe), "run", "--max-bits", "16", "--output", str(c_json)],
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+    elapsed = time.perf_counter() - t0
+    assert elapsed < 2.0, f"C17 Hydra B=16 exceeded 2.0s budget: {elapsed:.3f}s"
+    c_res = json.loads(c_json.read_text(encoding="utf-8"))
+    c_t16 = [t for t in c_res["vector_b_minimax_game"]["tiers"] if t["bits"] == 16][0]
+    ref_t16 = [t for t in committed["vector_b_minimax_game"]["tiers"] if t["bits"] == 16][0]
+    assert c_t16 == ref_t16
+
+    if rustc:
+        rs_exe = tmp_path / "hydra_oracle"
+        subprocess.run([rustc, "-O", str(rs_src), "-o", str(rs_exe)], check=True, capture_output=True, text=True)
+        rs_out = json.loads(subprocess.run([str(rs_exe), "16"], check=True, capture_output=True, text=True).stdout)
+        assert rs_out["vector_b_demon_stop_n"] == c_t16["demon_stop"]["n"]
+        assert rs_out["vector_b_demon_total_n"] == c_t16["demon_total"]["n"]
+        assert rs_out["vector_b_sibling_basins"]["to_5"] == c_t16["sibling_3n_minus_1"]["to_5_cycle"]
+        assert rs_out["vector_d_karp_72"]["plus"] == rs_out["vector_d_karp_72"]["minus"] == "4/5"
+        assert rs_out["vector_d_box_50"]["plus"] == "1/2"
+        assert rs_out["vector_d_box_50"]["minus_no1"] == "2/3"
+
+
 if __name__ == "__main__":
     fails = 0
     for name, fn in sorted(globals().items()):

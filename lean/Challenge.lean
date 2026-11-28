@@ -4,9 +4,9 @@ module
 public import FormalAtlas.Defs
 
 /-!
-# Challenge — Isolated Statement Specification for `lake comparator` (`v0.9.0`)
+# Challenge — Isolated Statement Specification for `lake comparator` (`v0.10.0`)
 
-Contains ONLY the exact 69 headline theorem signatures across 8 open-problem domains
+Contains ONLY the exact 74 headline theorem signatures across 8 open-problem domains
 to be judged by `lake comparator --config comparator.json --paranoid` against `Solution.lean`.
 All proofs live exclusively in `FormalAtlas.*` and are exported via `Solution.lean`.
 -/
@@ -14,7 +14,7 @@ All proofs live exclusively in `FormalAtlas.*` and are exported via `Solution.le
 namespace FormalAtlas.Challenge
 
 -- ============================================================================
--- I. Collatz Conjecture & 3n-1 Sibling Control (31 theorems)
+-- I. Collatz Conjecture & 3n-1 Sibling Control (36 theorems)
 -- ============================================================================
 
 public theorem thm_collatz_cylinder_affine_law (d : Nat) (q r : Int) :
@@ -150,6 +150,23 @@ public theorem thm_collatz_cycle_amplitude_ceiling (d : Nat) (x : Int)
     let o := oddCount T d x
     ((2 : Int) ^ d - (3 : Int) ^ o) * x ≤
       (2 : Int) ^ (d - o) * ((3 : Int) ^ o - (2 : Int) ^ o) := sorry
+
+public theorem thm_collatz_sign_conjugacy (d : Nat) (x : Int) :
+    iter T d (-x) = - iter TMinus d x ∧ oddCount T d (-x) = oddCount TMinus d x := sorry
+
+public theorem thm_collatz_mod3_chiral_asymmetry (x : Int) (hodd : x % 2 ≠ 0) :
+    T x % 3 = 2 ∧ TMinus x % 3 = 1 := sorry
+
+public theorem thm_collatz_intercept_not_div3 (w : List Bool) (ho : 1 ≤ wordOddCount w) :
+    wordIntercept w % 3 ≠ 0 := sorry
+
+public theorem thm_collatz_cycle_no_div3 (d : Nat) (x : Int)
+    (hd : 1 ≤ d) (hx : x ≠ 0) (hcyc : iter T d x = x) :
+    x % 3 ≠ 0 := sorry
+
+public theorem thm_collatz_positive_cycle_four_odd (d : Nat) (x : Int)
+    (hd : 1 ≤ d) (hx : 0 < x) (hcyc : iter T d x = x) (ho : oddCount T d x = 4) :
+    d = 8 ∧ (x = 1 ∨ x = 2) := sorry
 
 -- ============================================================================
 -- II. Erdős–Straus Conjecture (5 theorems)

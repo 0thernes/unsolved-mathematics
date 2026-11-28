@@ -2087,4 +2087,371 @@ public theorem collatz_cycle_amplitude_ceiling (d : Nat) (x : Int)
   rw [heq]
   exact hub
 
+-- ============================================================================
+-- VIII. Asymmetric Chiral Involution, 3-Adic Cycle Exclusion & Unconditional o = 4 (`v0.10.0`)
+-- ============================================================================
+
+/-- Single-step exact chiral mirror involution between `3n + 1` (`T`) and `3n - 1` (`TMinus`):
+    `T (-x) = - TMinus x` for every integer `x : Int`. -/
+theorem T_neg_eq_neg_TMinus (x : Int) : T (-x) = - TMinus x := by
+  unfold T TMinus
+  have hpar : ((-x) % 2 == 0) = (x % 2 == 0) := by
+    by_cases h : x % 2 = 0
+    · have h1 : (-x) % 2 = 0 := by omega
+      simp [h, h1]
+    · have h1 : (-x) % 2 ≠ 0 := by omega
+      rw [beq_false_of_ne h, beq_false_of_ne h1]
+  rw [hpar]
+  by_cases h : x % 2 = 0
+  · simp only [h, beq_self_eq_true, ite_true]
+    omega
+  · simp only [h, beq_iff_eq, ite_false]
+    omega
+
+/-- **Exact Chiral Sign-Conjugacy Involution (`3n + 1` on `Z<0` ↔ `3n - 1` on `Z>0`):**
+    For every depth `d : Nat` and integer `x : Int`, `T^d(-x) = - T_-^d(x)` and
+    `oddCount T d (-x) = oddCount TMinus d x`. Thus the positive cycles of `3n - 1`
+    (`5`, `17`) are exact negation mirrors of the negative cycles of `3n + 1` (`-5`, `-17`). -/
+public theorem collatz_sign_conjugacy (d : Nat) (x : Int) :
+    iter T d (-x) = - iter TMinus d x ∧ oddCount T d (-x) = oddCount TMinus d x := by
+  induction d generalizing x with
+  | zero => simp [iter, oddCount, parityWord, wordOddCount]
+  | succ k ih =>
+    have hstep := T_neg_eq_neg_TMinus x
+    have hpar : parityBit (-x) = parityBit x := by
+      unfold parityBit
+      by_cases h : x % 2 = 0
+      · have h1 : (-x) % 2 = 0 := by omega
+        simp [h, h1]
+      · have h1 : (-x) % 2 ≠ 0 := by omega
+        simp only [bne, beq_false_of_ne h, beq_false_of_ne h1]
+    have ⟨hiter, hodd⟩ := ih (TMinus x)
+    constructor
+    · simp only [iter, hstep]
+      exact hiter
+    · simp only [oddCount] at hodd ⊢
+      simp only [parityWord, wordOddCount, hpar, hstep]
+      cases parityBit x <;> simp [hodd]
+
+/-- **Exact `ε`-Sensitive Mod-3 Chiral Phase-Lock Asymmetry:**
+    Whereas `T` and `TMinus` have identical 2-adic parity-word bijections, on EVERY odd
+    integer `x : Int`, `T(x) ≡ 2 (mod 3)` while `TMinus(x) ≡ 1 (mod 3)`. -/
+public theorem collatz_mod3_chiral_asymmetry (x : Int) (hodd : x % 2 ≠ 0) :
+    T x % 3 = 2 ∧ TMinus x % 3 = 1 := by
+  unfold T TMinus
+  simp only [hodd, beq_iff_eq, ite_false]
+  omega
+
+theorem wordIntercept_eq_zero_of_oddCount_zero (w : List Bool) (ho : wordOddCount w = 0) :
+    wordIntercept w = 0 := by
+  induction w with
+  | nil => rfl
+  | cons b ws ih =>
+    cases b
+    · simp only [wordOddCount, Bool.false_eq_true, ite_false, Nat.zero_add] at ho
+      simp only [wordIntercept, ih ho]
+      omega
+    · simp only [wordOddCount, ite_true] at ho
+      omega
+
+theorem pow3_mod3_zero_of_pos (k : Nat) (hk : 1 ≤ k) : ((3 : Int) ^ k) % 3 = 0 := by
+  have h1 : k = (k - 1) + 1 := by omega
+  rw [h1, Int.pow_succ]
+  omega
+
+/-- **Universal 3-Adic Unit Law for Affine Intercepts:**
+    Every parity word `w` containing at least one odd step (`wordOddCount w ≥ 1`) satisfies
+    `wordIntercept w % 3 ≠ 0`. Hence every rational Collatz spine `ρ_w` is a 3-adic unit. -/
+public theorem collatz_intercept_not_div3 (w : List Bool) (ho : 1 ≤ wordOddCount w) :
+    wordIntercept w % 3 ≠ 0 := by
+  induction w with
+  | nil => simp [wordOddCount] at ho
+  | cons b ws ih =>
+    cases b
+    · simp only [wordOddCount, Bool.false_eq_true, ite_false, Nat.zero_add] at ho
+      simp only [wordIntercept]
+      have hws := ih ho
+      omega
+    · simp only [wordOddCount, ite_true] at ho
+      simp only [wordIntercept]
+      by_cases h0 : wordOddCount ws = 0
+      · rw [h0, wordIntercept_eq_zero_of_oddCount_zero ws h0]
+        decide
+      · have hpos : 1 ≤ wordOddCount ws := by omega
+        have h3 := pow3_mod3_zero_of_pos (wordOddCount ws) hpos
+        have hws := ih hpos
+        omega
+
+/-- **Global 3-Adic Nonzero Cycle Exclusion (All Periods `d ≥ 1`, Positive AND Negative):**
+    No nonzero multiple of 3 can EVER lie on any Collatz cycle `T^d(x) = x` (`d ≥ 1`). -/
+public theorem collatz_cycle_no_div3 (d : Nat) (x : Int)
+    (hd : 1 ≤ d) (hx : x ≠ 0) (hcyc : iter T d x = x) :
+    x % 3 ≠ 0 := by
+  have heq := collatz_cycle_equation d x hcyc
+  have ho_pos : 1 ≤ oddCount T d x := by
+    by_cases h0 : oddCount T d x = 0
+    · rw [h0, wordIntercept_eq_zero_of_oddCount_zero (parityWord T d x) h0] at heq
+      have h30 : (3 : Int) ^ 0 = 1 := rfl
+      rw [h30] at heq
+      have h2d_ge2 : (2 : Int) ≤ (2 : Int) ^ d := by
+        have h1 : 2 ^ 1 ≤ 2 ^ d := pow2_nat_mono_collatz hd
+        have hcast : ((2 ^ d : Nat) : Int) = (2 : Int) ^ d := by simp
+        omega
+      have hne : ((2 : Int) ^ d - 1) ≠ 0 := by omega
+      have hx0 : x = 0 := by
+        rcases Int.mul_eq_zero.mp heq with h | h
+        · exact False.elim (hne h)
+        · exact h
+      exact False.elim (hx hx0)
+    · omega
+  have hnd3 := collatz_intercept_not_div3 (parityWord T d x) ho_pos
+  intro hdiv3
+  have hmul : (((2 : Int) ^ d - (3 : Int) ^ (oddCount T d x)) * x) % 3 = 0 := by
+    rw [Int.mul_emod, hdiv3, Int.mul_zero, Int.zero_emod]
+  rw [heq] at hmul
+  exact hnd3 hmul
+
+theorem wordIntercept_of_oddCount_four (w : List Bool) (ho : wordOddCount w = 4) :
+    ∃ a b c e : Nat, a < b ∧ b < c ∧ c < e ∧ e < w.length ∧
+      wordIntercept w = 27 * (2 : Int) ^ a + 9 * (2 : Int) ^ b + 3 * (2 : Int) ^ c + (2 : Int) ^ e := by
+  induction w with
+  | nil => simp [wordOddCount] at ho
+  | cons bit ws ih =>
+    cases bit
+    · simp only [wordOddCount, Bool.false_eq_true, ite_false, Nat.zero_add] at ho
+      have ⟨a, b, c, e, hab, hbc, hce, helt, heq⟩ := ih ho
+      refine ⟨a + 1, b + 1, c + 1, e + 1, by omega, by omega, by omega, by simp; omega, ?_⟩
+      simp only [wordIntercept, heq]
+      rw [Int.mul_add, Int.mul_add, Int.mul_add, Int.pow_succ, Int.pow_succ, Int.pow_succ, Int.pow_succ]
+      omega
+    · simp only [wordOddCount, ite_true] at ho
+      have hws3 : wordOddCount ws = 3 := by omega
+      have ⟨b0, c0, e0, hbc, hce, helt, heq⟩ := wordIntercept_of_oddCount_three ws hws3
+      refine ⟨0, b0 + 1, c0 + 1, e0 + 1, by omega, by omega, by omega, by simp; omega, ?_⟩
+      simp only [wordIntercept, hws3, heq]
+      have h33 : (3 : Int) ^ 3 = 27 := rfl
+      rw [h33, Int.pow_zero, Int.mul_one, Int.mul_add, Int.mul_add, Int.pow_succ, Int.pow_succ, Int.pow_succ]
+      omega
+
+theorem pow2_nat_mod3_ne_zero (k : Nat) : (2 ^ k) % 3 ≠ 0 := by
+  induction k with
+  | zero => decide
+  | succ j ih =>
+    rw [Nat.pow_succ]
+    omega
+
+theorem pow2_nat_div_of_ge (k t : Nat) (h : t ≤ k) : (2 ^ k) % (2 ^ t) = 0 := by
+  have h1 : k = (k - t) + t := by omega
+  have h2 : 2 ^ k = 2 ^ (k - t) * 2 ^ t := by
+    calc 2 ^ k = 2 ^ ((k - t) + t) := by rw [← h1]
+    _ = 2 ^ (k - t) * 2 ^ t := Nat.pow_add 2 (k - t) t
+  rw [h2]
+  exact Nat.mul_mod_left (2 ^ (k - t)) (2 ^ t)
+
+/-- Exact 2-adic valuation cascade solving `2^d = 108 + 9*2^m + 3*2^n + 2^p`
+    (`d ≥ 8`, `1 ≤ m < n < p`): the UNIQUE solution is `d = 8, m = 2, n = 4, p = 6`. -/
+theorem pow2_eq_four_odd_cascade (d m n p : Nat)
+    (hd : 8 ≤ d) (hm1 : 1 ≤ m) (hmn : m < n) (hnp : n < p)
+    (hsum : 2 ^ d = 108 + 9 * 2 ^ m + 3 * 2 ^ n + 2 ^ p) :
+    d = 8 ∧ m = 2 ∧ n = 4 ∧ p = 6 := by
+  have h2d_8 : 2 ^ d % 8 = 0 := by simpa using pow2_nat_div_of_ge d 3 (by omega)
+  have h2d_4 : 2 ^ d % 4 = 0 := by simpa using pow2_nat_div_of_ge d 2 (by omega)
+  by_cases hm_eq1 : m = 1
+  · rw [hm_eq1] at hsum
+    have h21 : 2 ^ 1 = 2 := rfl; rw [h21] at hsum
+    have h2n_4 : 2 ^ n % 4 = 0 := by simpa using pow2_nat_div_of_ge n 2 (by omega)
+    have h2p_4 : 2 ^ p % 4 = 0 := by simpa using pow2_nat_div_of_ge p 2 (by omega)
+    omega
+  · by_cases hm_eq2 : m = 2
+    · rw [hm_eq2] at hsum
+      have h22 : 2 ^ 2 = 4 := rfl; rw [h22] at hsum
+      -- 2^d = 144 + 3*2^n + 2^p with 3 ≤ n < p
+      have h2d_16 : 2 ^ d % 16 = 0 := by simpa using pow2_nat_div_of_ge d 4 (by omega)
+      have h2d_32 : 2 ^ d % 32 = 0 := by simpa using pow2_nat_div_of_ge d 5 (by omega)
+      by_cases hn_eq3 : n = 3
+      · rw [hn_eq3] at hsum
+        have h23 : 2 ^ 3 = 8 := rfl; rw [h23] at hsum
+        have h2p_16 : 2 ^ p % 16 = 0 := by simpa using pow2_nat_div_of_ge p 4 (by omega)
+        omega
+      · by_cases hn_eq4 : n = 4
+        · rw [hn_eq4] at hsum
+          have h24 : 2 ^ 4 = 16 := rfl; rw [h24] at hsum
+          -- 2^d = 192 + 2^p with 5 ≤ p
+          have h2d_128 : 2 ^ d % 128 = 0 := by simpa using pow2_nat_div_of_ge d 7 (by omega)
+          have h2d_256 : 2 ^ d ≥ 256 := by
+            have := pow2_nat_mono_collatz hd
+            have h28 : 2 ^ 8 = 256 := rfl
+            omega
+          by_cases hp_eq5 : p = 5
+          · rw [hp_eq5] at hsum; have h32 : 2 ^ 5 = 32 := rfl; rw [h32] at hsum; omega
+          · by_cases hp_eq6 : p = 6
+            · rw [hp_eq6] at hsum
+              have h64 : 2 ^ 6 = 64 := rfl; rw [h64] at hsum
+              have hd8 : d = 8 := by
+                by_cases hgt : 9 ≤ d
+                · have hge := pow2_nat_mono_collatz hgt
+                  have h512 : 2 ^ 9 = 512 := rfl
+                  omega
+                · omega
+              exact ⟨hd8, hm_eq2, hn_eq4, hp_eq6⟩
+            · have hp_ge7 : 7 ≤ p := by omega
+              have h2p_128 : 2 ^ p % 128 = 0 := by simpa using pow2_nat_div_of_ge p 7 hp_ge7
+              omega
+        · have hn_ge5 : 5 ≤ n := by omega
+          have h2n_32 : 2 ^ n % 32 = 0 := by simpa using pow2_nat_div_of_ge n 5 hn_ge5
+          have h2p_32 : 2 ^ p % 32 = 0 := by simpa using pow2_nat_div_of_ge p 5 (by omega)
+          omega
+    · have hm_ge3 : 3 ≤ m := by omega
+      have h2m_8 : 2 ^ m % 8 = 0 := by simpa using pow2_nat_div_of_ge m 3 hm_ge3
+      have h2n_8 : 2 ^ n % 8 = 0 := by simpa using pow2_nat_div_of_ge n 3 (by omega)
+      have h2p_8 : 2 ^ p % 8 = 0 := by simpa using pow2_nat_div_of_ge p 3 (by omega)
+      omega
+
+/-- **Unconditional 4-Odd-Step Positive-Cycle Exclusion (all periods `d ≥ 1`):**
+    The ONLY positive Collatz cycle with `oddCount T d x = 4` is the four-times-traversed
+    trivial cycle `1 ↔ 2` (`d = 8`, `x ∈ {1, 2}`). Proved by odd-quotient parity elimination,
+    3-adic obstruction at `d = 8, q = 3`, and exact 2-adic valuation cascade mod `128`. -/
+public theorem collatz_positive_cycle_four_odd (d : Nat) (x : Int)
+    (hd : 1 ≤ d) (hx : 0 < x) (hcyc : iter T d x = x) (ho : oddCount T d x = 4) :
+    d = 8 ∧ (x = 1 ∨ x = 2) := by
+  have heq := collatz_cycle_equation d x hcyc
+  have hsub := (collatz_positive_cycle_subcritical d x hd hx hcyc).1
+  have hlen : (parityWord T d x).length = d := collatz_parity_word_length T d x
+  have ⟨a, b, c, e, hab, hbc, hce, helt, habce_eq⟩ := wordIntercept_of_oddCount_four (parityWord T d x) ho
+  rw [hlen] at helt
+  rw [ho] at heq hsub
+  rw [habce_eq] at heq
+  have h34 : (3 : Int) ^ 4 = 81 := rfl
+  rw [h34] at heq hsub
+  -- Deduce d ≥ 7 from 81 < 2^d
+  have hd_ge7 : 7 ≤ d := by
+    by_cases hlt : d < 7
+    · have hle6 : 2 ^ d ≤ 2 ^ 6 := pow2_nat_mono_collatz (by omega)
+      have h64 : 2 ^ 6 = 64 := rfl
+      have hcast : ((2 ^ d : Nat) : Int) = (2 : Int) ^ d := by simp
+      omega
+    · omega
+  -- Exclude d = 7 via our kernel-checked odd-period exclusion through d ≤ 7
+  by_cases hd7 : d = 7
+  · exfalso
+    rw [hd7] at hcyc
+    exact collatz_no_positive_cycle_odd_le_7 7 x (by decide) (by decide) (by decide) hx hcyc
+  · have hd_ge8 : 8 ≤ d := by omega
+    have h2d_ge256 : 256 ≤ 2 ^ d := by
+      have := pow2_nat_mono_collatz hd_ge8
+      have h28 : 2 ^ 8 = 256 := rfl
+      omega
+    let u : Nat := 2 ^ d - 81
+    let m : Nat := b - a
+    let n : Nat := c - a
+    let p : Nat := e - a
+    have hm_ge1 : 1 ≤ m := by omega
+    have hmn : m < n := by omega
+    have hnp : n < p := by omega
+    have hp_le : p ≤ d - 1 := by omega
+    have hn_le : n ≤ d - 2 := by omega
+    have hm_le : m ≤ d - 3 := by omega
+    have hba : b = a + m := by omega
+    have hca : c = a + n := by omega
+    have hea : e = a + p := by omega
+    have hpow2_d : ((2 ^ d : Nat) : Int) = (2 : Int) ^ d := by simp
+    have hu_cast : (u : Int) = (2 : Int) ^ d - 81 := by dsimp only [u]; omega
+    have hx_cast : (x.toNat : Int) = x := by omega
+    have hnat_eq : u * x.toNat = 2 ^ a * (27 + 9 * 2 ^ m + 3 * 2 ^ n + 2 ^ p) := by
+      have hint : ((u * x.toNat : Nat) : Int) =
+          ((2 ^ a * (27 + 9 * 2 ^ m + 3 * 2 ^ n + 2 ^ p) : Nat) : Int) := by
+        rw [Int.natCast_mul, hu_cast, hx_cast, heq, hba, hca, hea,
+            Int.pow_add, Int.pow_add, Int.pow_add]
+        push_cast
+        rw [Int.mul_add, Int.mul_add, Int.mul_add, Int.mul_comm ((2 : Int) ^ a) 27]
+        have h9 : (9 : Int) * ((2 : Int) ^ a * (2 : Int) ^ m) =
+            (2 : Int) ^ a * (9 * (2 : Int) ^ m) := by
+          rw [← Int.mul_assoc, Int.mul_comm 9 ((2 : Int) ^ a), Int.mul_assoc]
+        have h3 : (3 : Int) * ((2 : Int) ^ a * (2 : Int) ^ n) =
+            (2 : Int) ^ a * (3 * (2 : Int) ^ n) := by
+          rw [← Int.mul_assoc, Int.mul_comm 3 ((2 : Int) ^ a), Int.mul_assoc]
+        rw [h9, h3]
+      exact Int.ofNat.inj hint
+    have hu_odd : u % 2 = 1 := by
+      have h2d_even : 2 ^ d % 2 = 0 := by simpa using pow2_nat_div_of_ge d 1 (by omega)
+      dsimp only [u]; omega
+    have hu_dvd : u ∣ 27 + 9 * 2 ^ m + 3 * 2 ^ n + 2 ^ p :=
+      odd_dvd_pow2_mul_nat u hu_odd a (27 + 9 * 2 ^ m + 3 * 2 ^ n + 2 ^ p) ⟨x.toNat, hnat_eq.symm⟩
+    have ⟨q, hq⟩ := hu_dvd
+    -- Since both u and R = 27 + 9*2^m + 3*2^n + 2^p are ODD, q must be ODD (in particular q ≠ 0 and q ≠ 2)!
+    have hR_odd : (27 + 9 * 2 ^ m + 3 * 2 ^ n + 2 ^ p) % 2 = 1 := by
+      have hm2 : 2 ^ m % 2 = 0 := by simpa using pow2_nat_div_of_ge m 1 hm_ge1
+      have hn2 : 2 ^ n % 2 = 0 := by simpa using pow2_nat_div_of_ge n 1 (by omega)
+      have hp2 : 2 ^ p % 2 = 0 := by simpa using pow2_nat_div_of_ge p 1 (by omega)
+      omega
+    have hq_odd : q % 2 = 1 := by
+      have : (u * q) % 2 = 1 := by rw [← hq]; exact hR_odd
+      rw [Nat.mul_mod, hu_odd] at this
+      omega
+    -- Upper-bound R ≤ 27 + 19 * 2^(d - 3), while 2^d = 8 * 2^(d - 3)
+    have h2d_split : 2 ^ d = 8 * 2 ^ (d - 3) := by
+      have h1 : d = (d - 3) + 3 := by omega
+      calc 2 ^ d = 2 ^ ((d - 3) + 3) := by rw [← h1]
+      _ = 2 ^ (d - 3) * 2 ^ 3 := Nat.pow_add 2 (d - 3) 3
+      _ = 8 * 2 ^ (d - 3) := by rw [Nat.mul_comm]
+    have h2m_le : 2 ^ m ≤ 2 ^ (d - 3) := pow2_nat_mono_collatz hm_le
+    have h2n_le : 2 ^ n ≤ 2 * 2 ^ (d - 3) := by
+      have h1 : 2 ^ n ≤ 2 ^ (d - 2) := pow2_nat_mono_collatz hn_le
+      have h2 : 2 ^ (d - 2) = 2 * 2 ^ (d - 3) := by
+        have : d - 2 = (d - 3) + 1 := by omega
+        rw [this, Nat.pow_succ, Nat.mul_comm]
+      omega
+    have h2p_le : 2 ^ p ≤ 4 * 2 ^ (d - 3) := by
+      have h1 : 2 ^ p ≤ 2 ^ (d - 1) := pow2_nat_mono_collatz hp_le
+      have h2 : 2 ^ (d - 1) = 4 * 2 ^ (d - 3) := by
+        have : d - 1 = (d - 3) + 2 := by omega
+        calc 2 ^ (d - 1) = 2 ^ ((d - 3) + 2) := by rw [this]
+        _ = 2 ^ (d - 3) * 2 ^ 2 := Nat.pow_add 2 (d - 3) 2
+        _ = 4 * 2 ^ (d - 3) := by rw [Nat.mul_comm]
+      omega
+    -- Show q = 1 for ALL d ≥ 8 (for d ≥ 9: R < 3*u => q = 1; for d = 8: R < 5*u and q = 3 fails mod 3!)
+    have hq1 : q = 1 := by
+      by_cases hd8 : d = 8
+      · have h2d_eq : 2 ^ d = 256 := by rw [hd8]
+        have hu_eq : u = 175 := by dsimp only [u]; omega
+        have hR_lt5u : 27 + 9 * 2 ^ m + 3 * 2 ^ n + 2 ^ p < 5 * u := by omega
+        have hq_le3 : q ≤ 3 := by
+          by_cases hq5 : 5 ≤ q
+          · have hge : u * 5 ≤ u * q := Nat.mul_le_mul_left u hq5
+            omega
+          · omega
+        by_cases hq3 : q = 3
+        · exfalso
+          rw [hq3, hu_eq] at hq
+          have hp_nd3 := pow2_nat_mod3_ne_zero p
+          omega
+        · omega
+      · have hd_ge9 : 9 ≤ d := by omega
+        have h2d_ge512 : 512 ≤ 2 ^ d := by
+          have := pow2_nat_mono_collatz hd_ge9
+          have h512 : 2 ^ 9 = 512 := rfl
+          omega
+        have hR_lt3u : 27 + 9 * 2 ^ m + 3 * 2 ^ n + 2 ^ p < 3 * u := by
+          dsimp only [u]; omega
+        by_cases hq3 : 3 ≤ q
+        · have hge : u * 3 ≤ u * q := Nat.mul_le_mul_left u hq3
+          omega
+        · omega
+    rw [hq1, Nat.mul_one] at hq
+    have hsum : 2 ^ d = 108 + 9 * 2 ^ m + 3 * 2 ^ n + 2 ^ p := by dsimp only [u] at hq; omega
+    have ⟨hd8, hm2, hn4, hp6⟩ := pow2_eq_four_odd_cascade d m n p hd_ge8 hm_ge1 hmn hnp hsum
+    -- Now d = 8, m = 2, n = 4, p = 6, so a + 6 = e < 8 => a ∈ {0, 1}, and u * x.toNat = 2^a * u => x = 2^a ∈ {1, 2}!
+    have hu_pos : 0 < u := by dsimp only [u]; omega
+    rw [hq] at hnat_eq
+    have hx_nat : x.toNat = 2 ^ a := by
+      have : u * x.toNat = u * 2 ^ a := by rw [hnat_eq, Nat.mul_comm]
+      exact Nat.eq_of_mul_eq_mul_left hu_pos this
+    have ha_le1 : a ≤ 1 := by omega
+    have hx12 : x = 1 ∨ x = 2 := by
+      by_cases ha0 : a = 0
+      · rw [ha0] at hx_nat; simp at hx_nat; left; omega
+      · have ha1 : a = 1 := by omega
+        rw [ha1] at hx_nat; simp at hx_nat; right; omega
+    exact ⟨hd8, hx12⟩
+
 end FormalAtlas

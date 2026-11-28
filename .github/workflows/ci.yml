@@ -65,7 +65,7 @@ jobs:
         run: python tests/mutation_check.py
 
   lean-formal:
-    name: Lean 4.35.0 Multi-Kernel Formal Core (6-kernel paranoid + comparator, 109 declarations)
+    name: Lean 4.35.0 Multi-Kernel Formal Core (6-kernel paranoid + comparator, 118 declarations)
     runs-on: ubuntu-latest
     # The comparator is intentionally exhaustive, but must not leave an
     # indefinitely hung runner without a terminal CI result.
@@ -88,7 +88,7 @@ jobs:
       - name: Audit forbidden tokens & Palomar limits (zero sorry/admit/native_decide/custom axiom)
         run: python3 scripts/check_readme_axioms.py
 
-      - name: Build Lean 4.35.0 package & verify axioms strictly within standard set (109 declarations)
+      - name: Build Lean 4.35.0 package & verify axioms strictly within standard set (118 declarations)
         working-directory: lean
         run: |
           lake build Challenge Solution NonVacuity Adversarial
@@ -102,7 +102,7 @@ jobs:
               txt,
               re.S,
           ))
-          assert len(matches) >= 109, f"Expected >=109 audited declarations, got {len(matches)}"
+          assert len(matches) >= 118, f"Expected >=118 audited declarations, got {len(matches)}"
           for m in matches:
               name = m.group(1)
               raw = m.group(2) or ""
@@ -134,14 +134,17 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
-      - name: Build C17+BMI2 engine & run 15,876-pair exact self-test
+      - name: Build C17+BMI2 catalytic & Asymmetric Hydra engines & run exact self-tests
         run: |
           mkdir -p /tmp/collatz_native
           gcc -O3 -std=c17 -mbmi2 -Wall -Wextra -Werror \
             problems/collatz-conjecture/native/collatz_catalytic.c -o /tmp/collatz_native/collatz_catalytic
           /tmp/collatz_native/collatz_catalytic self-test
+          gcc -O3 -std=c17 -Wall -Wextra -Werror \
+            problems/collatz-conjecture/native/collatz_asymmetric_hydra.c -lm -o /tmp/collatz_native/collatz_hydra
+          /tmp/collatz_native/collatz_hydra self-test
 
-      - name: Run ASan + UBSan sanitized C17 engine & 250,000-case libFuzzer/standalone corpus fuzzer
+      - name: Run ASan + UBSan sanitized C17 engines & 500,000-case fuzzers (250k catalytic + 250k Hydra)
         run: |
           gcc -O1 -g -std=c17 -fsanitize=address,undefined -fno-sanitize-recover=all -Wall -Wextra -Werror \
             problems/collatz-conjecture/native/collatz_catalytic.c -o /tmp/collatz_native/collatz_san
@@ -149,10 +152,17 @@ jobs:
           gcc -O2 -g -std=c17 -DSTANDALONE_FUZZ_MAIN -fsanitize=address,undefined -fno-sanitize-recover=all -Wall -Wextra -Werror \
             problems/collatz-conjecture/native/fuzz_collatz_catalytic.c -o /tmp/collatz_native/fuzz_collatz
           /tmp/collatz_native/fuzz_collatz
+          gcc -O1 -g -std=c17 -fsanitize=address,undefined -fno-sanitize-recover=all -Wall -Wextra -Werror \
+            problems/collatz-conjecture/native/collatz_asymmetric_hydra.c -lm -o /tmp/collatz_native/hydra_san
+          /tmp/collatz_native/hydra_san self-test
+          gcc -O2 -g -std=c17 -DSTANDALONE_FUZZ_MAIN -fsanitize=address,undefined -fno-sanitize-recover=all -Wall -Wextra -Werror \
+            problems/collatz-conjecture/native/fuzz_collatz_hydra.c -lm -o /tmp/collatz_native/fuzz_hydra
+          /tmp/collatz_native/fuzz_hydra
 
-      - name: Build safe Rust cross-oracle (zero unsafe) & verify bit-exact C17 == Rust == Python parity
+      - name: Build safe Rust cross-oracles (zero unsafe) & verify bit-exact C17 == Rust == Python parity
         run: |
           rustc -O problems/collatz-conjecture/native/collatz_catalytic_oracle.rs -o /tmp/collatz_native/collatz_oracle
+          rustc -O problems/collatz-conjecture/native/collatz_hydra_oracle.rs -o /tmp/collatz_native/hydra_oracle
           /tmp/collatz_native/collatz_catalytic target-tail \
             --source-max-depth 10 --target-max-depth 20 \
             --target-cutoffs 12,14,16,18,20 --thresholds 8,10,12,14,16,18,20,22,24 \
@@ -160,6 +170,8 @@ jobs:
           /tmp/collatz_native/collatz_oracle target-tail 3 10 1 20 > /tmp/collatz_native/rs_s10_t20.json
           /tmp/collatz_native/collatz_catalytic residue-mine --max-depth 24 > /tmp/collatz_native/c_r24.json
           /tmp/collatz_native/collatz_oracle residue-mine 24 > /tmp/collatz_native/rs_r24.json
+          /tmp/collatz_native/collatz_hydra run --max-bits 16 --output /tmp/collatz_native/c_hydra16.json
+          /tmp/collatz_native/hydra_oracle 16 > /tmp/collatz_native/rs_hydra16.json
           python3 - <<'PY'
           import json
           py = json.load(open("problems/collatz-conjecture/experiments/results/odd_unit_lock_target_tail_s10_t20_20260705.json"))
@@ -171,7 +183,16 @@ jobs:
           rr = json.load(open("/tmp/collatz_native/rs_r24.json"))
           for k in ("certified_leaves", "frontier_leaves", "certified_units_mod_2^max_depth", "frontier_units_mod_2^max_depth", "max_q_threshold"):
               assert cr[k] == rr[k], (k, cr[k], rr[k])
-          print("OK: Bit-exact C17 == Safe Rust == Python Fraction parity verified on s10_t20 & residue d=24.")
+          ch = json.load(open("/tmp/collatz_native/c_hydra16.json"))
+          rh = json.load(open("/tmp/collatz_native/rs_hydra16.json"))
+          t16 = [t for t in ch["vector_b_minimax_game"]["tiers"] if t["bits"] == 16][0]
+          assert t16["demon_stop"]["n"] == rh["vector_b_demon_stop_n"] == 35655
+          assert t16["demon_total"]["n"] == rh["vector_b_demon_total_n"] == 52527
+          assert t16["sibling_3n_minus_1"]["to_5_cycle"] == rh["vector_b_sibling_basins"]["to_5"]
+          assert t16["sibling_3n_minus_1"]["to_17_cycle"] == rh["vector_b_sibling_basins"]["to_17"]
+          assert rh["vector_d_karp_72"]["plus"] == rh["vector_d_karp_72"]["minus"] == "4/5"
+          assert rh["vector_d_box_50"]["plus"] == "1/2" and rh["vector_d_box_50"]["minus_no1"] == "2/3"
+          print("OK: Bit-exact C17 == Safe Rust == Python parity verified on catalytic + 5-vector Asymmetric Hydra.")
           PY
 
   static-security-audit:

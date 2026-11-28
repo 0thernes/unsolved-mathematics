@@ -1419,11 +1419,11 @@ def test_oracle_v090_collatz_three_odd_intercept_ceiling_and_amplitude():
 
 
 def test_regression_v090_blueprint_69_theorems_and_no_stale_25_or_58mb(tmp_path: Path):
-    """Guard against V90-ERR-01/03: 69 Lean theorems, dynamic programs link (no 'All 25'), no stale '~58 MB'."""
+    """Guard against V90-ERR-01/03: >=69 Lean theorems, dynamic programs link (no 'All 25'), no stale '~58 MB'."""
     import build_site
 
     comp = json.loads((ROOT / "lean" / "comparator.json").read_text(encoding="utf-8"))
-    assert len(comp["theorem_names"]) == 69
+    assert len(comp["theorem_names"]) >= 69
 
     build_site.build_site(tmp_path / "_site")
     bp_txt = (tmp_path / "_site" / "blueprint.html").read_text(encoding="utf-8")
@@ -1432,7 +1432,7 @@ def test_regression_v090_blueprint_69_theorems_and_no_stale_25_or_58mb(tmp_path:
         "thm_collatz_positive_cycle_three_odd",
         "thm_collatz_intercept_upper_bound",
         "thm_collatz_cycle_amplitude_ceiling",
-        "Collatz (31 theorems)",
+        "Collatz (",
     ):
         assert token in bp_txt, f"Missing v0.9.0 token {token} in blueprint.html"
 
@@ -1463,3 +1463,88 @@ def test_regression_v090_collatz_historical_logs_carry_retraction_banners():
     ):
         head = (ROOT / "problems" / "collatz-conjecture" / "experiments" / fname).read_text(encoding="utf-8")[:700]
         assert "HISTORICAL" in head and "OPEN" in head, f"Missing top-level audit banner in {fname}"
+
+
+# --------------------------------------------------------------------------- #
+#  Cycle 13–15 / v0.10.0 Asymmetric Hydra, Chiral Sign-Conjugacy & o = 4 Tests
+# --------------------------------------------------------------------------- #
+def test_oracle_v0100_collatz_sign_conjugacy_mod3_and_four_odd():
+    """Differential check matching all 5 v0.10.0 Lean theorems: sign_conjugacy, mod3, intercept_not_div3, cycle_no_div3, four_odd."""
+    # 1. Exact chiral sign conjugacy T^d(-x) == -T_-^d(x)
+    for x in range(-200, 201):
+        a, b = -x, x
+        for _ in range(10):
+            a = _collatz_T(a)
+            b = _collatz_T_minus(b)
+        assert a == -b
+
+    # 2. Exact mod-3 chiral asymmetry on odd integers
+    for x in range(-501, 502, 2):
+        assert _collatz_T(x) % 3 == 2
+        assert _collatz_T_minus(x) % 3 == 1
+
+    # 3. Universal 3-adic intercept unit law: 3 nmid c(w) whenever o(w) >= 1 (all words d <= 10)
+    for d in range(1, 11):
+        for mask in range(1, 1 << d):
+            w = [bool((mask >> i) & 1) for i in range(d)]
+            assert _word_intercept(w) % 3 != 0
+
+    # 4. Unconditional 4-odd-step positive-cycle exclusion across d <= 20:
+    # (2^d - 81) * x = 27*2^a + 9*2^b + 3*2^c + 2^e (0 <= a < b < c < e < d) => only d = 8, x in {1, 2}
+    for d in range(1, 21):
+        denom = (1 << d) - 81
+        if denom > 0:
+            for a in range(d):
+                for b in range(a + 1, d):
+                    for c in range(b + 1, d):
+                        for e in range(c + 1, d):
+                            num = 27 * (1 << a) + 9 * (1 << b) + 3 * (1 << c) + (1 << e)
+                            if num % denom == 0:
+                                x = num // denom
+                                assert d == 8 and x in (1, 2), f"Unexpected o=4 cycle: d={d}, x={x}"
+
+
+def test_regression_v0100_blueprint_74_theorems_and_hydra_site(tmp_path: Path):
+    """Verify v0.10.0 74-theorem Lean comparator, 118 decls, blueprint & interactive collatz-hydra.html."""
+    import build_site
+
+    comp = json.loads((ROOT / "lean" / "comparator.json").read_text(encoding="utf-8"))
+    assert len(comp["theorem_names"]) == 74
+    build_site.build_site(tmp_path / "_site")
+
+    bp_txt = (tmp_path / "_site" / "blueprint.html").read_text(encoding="utf-8")
+    for token in (
+        "thm_collatz_sign_conjugacy",
+        "thm_collatz_mod3_chiral_asymmetry",
+        "thm_collatz_intercept_not_div3",
+        "thm_collatz_cycle_no_div3",
+        "thm_collatz_positive_cycle_four_odd",
+        "Collatz (36 theorems)",
+        "collatz-hydra.html",
+    ):
+        assert token in bp_txt, f"Missing v0.10.0 token {token} in blueprint.html"
+
+    hydra = tmp_path / "_site" / "collatz-hydra.html"
+    assert hydra.exists()
+    h_txt = hydra.read_text(encoding="utf-8")
+    for token in (
+        "Operation Asymmetric Hydra",
+        "Vector B: Minimax Demon Excess",
+        "Vector D: Tropical Karp",
+        "Vector A: Mod-9 Chiral Intercept",
+        "3,873,535",
+        "67.23%",
+    ):
+        assert token in h_txt, f"Missing expected Hydra dashboard token: {token}"
+
+
+def test_regression_v0100_c17_posix_feature_macro_portability():
+    """Guard against V100-BUG-01: C17 native files using clock_gettime must declare _POSIX_C_SOURCE before <time.h>."""
+    native_dir = ROOT / "problems" / "collatz-conjecture" / "native"
+    c_files = sorted(native_dir.glob("*.c"))
+    assert len(c_files) >= 4
+    for cf in c_files:
+        txt = cf.read_text(encoding="utf-8")
+        if "clock_gettime" in txt:
+            assert "_POSIX_C_SOURCE" in txt, f"{cf.name} calls clock_gettime under -std=c17 without _POSIX_C_SOURCE"
+            assert txt.index("_POSIX_C_SOURCE") < txt.index("#include <time.h>"), f"{cf.name}: _POSIX_C_SOURCE must precede <time.h>"

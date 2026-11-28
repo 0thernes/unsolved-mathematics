@@ -4,6 +4,37 @@
 
 ---
 
+## Upgrading from `v0.9.0` to `v0.10.0`
+
+### 1. Structural & Additive Changes (Non-Breaking)
+
+- **Expanded Collatz Lean 4.35.0 Formal Core (`69 → 74` headline theorems, `109 → 118` audited declarations, `autoImplicit = false`):** All 69 `v0.9.0` comparator theorem names in `lean/Challenge.lean` are preserved verbatim; 5 new Collatz theorems (`thm_collatz_sign_conjugacy`, `thm_collatz_mod3_chiral_asymmetry`, `thm_collatz_intercept_not_div3`, `thm_collatz_cycle_no_div3`, `thm_collatz_positive_cycle_four_odd`), 2 non-vacuity witnesses (`witness_collatz_mod3_chiral_asymmetry`, `witness_collatz_four_odd_trivial_cycle`), and 2 adversarial refutations (`adv_collatz_no_mult3_nonzero_cycle`, `adv_collatz_no_nontrivial_four_odd_cycle`) were added and replayed across all 6 independent kernels (`16` zero-axiom decls).
+- **5-Vector Asymmetric Hydra Native Lab & Interactive Dashboard (`problems/collatz-conjecture/native/` & `_site/collatz-hydra.html`):** Adds portable C17 (`collatz_asymmetric_hydra.c`), zero-`unsafe` Rust cross-oracle (`collatz_hydra_oracle.rs`), 250k ASan/UBSan fuzzer (`fuzz_collatz_hydra.c`), interactive SVG dashboard (`_site/collatz-hydra.html`), and fixes `V100-BUG-01` (`_POSIX_C_SOURCE 200809L` for strict `-std=c17` Linux glibc compilation). `data/MANIFEST.sha256` expands from `47 → 52` tracked files.
+
+### 2. Upgrade Steps
+
+```bash
+git pull origin main
+python -m pip install -r requirements-lock.txt
+python scripts/generate.py --check
+python scripts/validate.py
+python scripts/check_dossiers.py --strict
+python scripts/check_papers.py
+python scripts/proof_claim_sweep.py
+python scripts/check_retractions.py --check
+python scripts/check_readme_axioms.py
+python scripts/sync_external_programs.py --check
+python scripts/build_site.py
+python scripts/build_data_manifest.py --check
+python scripts/timestamp_manifest.py --check
+python scripts/test_lean_negative.py
+python -m pytest -v tests/
+python tests/mutation_check.py
+cd lean && lake build Challenge Solution NonVacuity Adversarial && lake env lean VerifyAxioms.lean
+```
+
+---
+
 ## Upgrading from `v0.8.x` to `v0.9.0`
 
 ### 1. Structural & Additive Changes (Non-Breaking)

@@ -2,7 +2,7 @@
 # Keep each item on one line. status: done | todo | partial | n/a (n/a needs a note).
 standard: "1.2.0"
 name: "unsolved-mathematics"
-description: "An audited, ranked, research-grade atlas of 120 unsolved mathematical problems (+ 62,790 daily-mirrored Left to Solve items across 26 programs) with a zero-Mathlib Lean 4.35.0 multi-kernel formal core (69 theorems / 109 decls), catalytic C17/BMI2 + safe Rust Collatz accelerator, primary-source verified citations, and deterministic RAG corpus."
+description: "An audited, ranked, research-grade atlas of 120 unsolved mathematical problems (+ 62,790 daily-mirrored Left to Solve items across 26 programs) with a zero-Mathlib Lean 4.35.0 multi-kernel formal core (74 theorems / 118 decls), catalytic C17/BMI2 + safe Rust Collatz accelerator & 5-Vector Asymmetric Hydra suite, primary-source verified citations, and deterministic RAG corpus."
 owner: "Alexander S. Donahue"
 year: "2026"
 project_type: research
@@ -84,14 +84,14 @@ items:
   B12: {status: done, note: "Independent rational/combinatorial reference oracles in tests/test_verification_ladder.py"}
   B13: {status: done}
   B14: {status: done, note: "CSS monotonicity & BM25 permutation invariance metamorphic tests in tests/test_verification_ladder.py"}
-  B15: {status: done, note: "libFuzzer + 250,000-case deterministic SplitMix64 differential fuzzer in problems/collatz-conjecture/native/fuzz_collatz_catalytic.c"}
-  B16: {status: done, note: "ASan + UBSan (-fsanitize=address,undefined -fno-sanitize-recover=all) on C17 engine & fuzzer in CI + Zig CC UBSan locally"}
+  B15: {status: done, note: "libFuzzer + 500,000-case deterministic SplitMix64 differential fuzzers in fuzz_collatz_catalytic.c & fuzz_collatz_hydra.c"}
+  B16: {status: done, note: "ASan + UBSan (-fsanitize=address,undefined -fno-sanitize-recover=all) on C17 engines & 500k fuzzers in CI + Zig CC UBSan locally"}
   B17: {status: done}
   B18: {status: done}
   B19: {status: n/a, note: "Build and validation pipeline is single-threaded deterministic"}
   B20: {status: done, note: "Exact integer/Fraction arithmetic in formal proofs & oracles; bounded IEEE-754 CSS rounding tested in tests/test_properties.py"}
   B21: {status: n/a, note: "Not a networked runtime service"}
-  B22: {status: done, note: "Lean 4.35.0 formal core in lean/ with autoImplicit=false (69 theorems, 18 non-vacuity witnesses, 22 adversarial refutations = 109 audited decls across 8 domains, 6-kernel replay + live negative kernel rejection)"}
+  B22: {status: done, note: "Lean 4.35.0 formal core in lean/ with autoImplicit=false (74 theorems, 20 non-vacuity witnesses, 24 adversarial refutations = 118 audited decls across 8 domains, 6-kernel replay + live negative kernel rejection)"}
   B23: {status: n/a, note: "Pure mathematical theorem proving in Lean 4; no TLA+/Alloy concurrent state-machine protocol"}
   B24: {status: done, note: "Lean 4.35.0 dependently typed pure functional core (lean/) replayed across 6 independent kernels"}
   B25: {status: n/a, note: "Native accelerator is cross-checked via ASan/UBSan, 250k fuzzer, and zero-unsafe Rust cross-oracle rather than Kani/CBMC"}

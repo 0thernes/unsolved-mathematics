@@ -31,6 +31,7 @@ To prevent heavy experiments from freezing or starving a laptop, native Collatz 
 | Odd-Unit-Lock Target-Tail (`s<=12, t<=26`, 884.4M pairs) | Single-threaded C17 / Rust | `< 0.50 s` | `< 16 MiB` flat target buffer | 1 core |
 | Catalytic DFS Residue Miner (`d = 24`) | Single-threaded C17 / Rust | `< 0.10 s` | **`4,096 B`** fixed DFS stack (zero heap) | 1 core |
 | Catalytic DFS Residue Miner (`d = 34`, 174.4M leaves) | Single-threaded C17 / Rust | `< 5.00 s` | **`4,096 B`** fixed DFS stack (zero heap) | 1 core |
+| 5-Vector Asymmetric Hydra (`B <= 22`, 2.097M starts + Karp + Adelic) | Single-threaded C17 / Rust | `< 2.00 s` | `< 4 MiB` transient DP | 1 core (`1.12 s` measured) |
 | Python `odd_unit_lock_target_tail_lab.py` (fixed `V90-BUG-01`) | Single-threaded Python | Reference oracle | $O(1)$ valuation-summary space (removed `e_values` list) | 1 core |
 
 ---
@@ -88,5 +89,5 @@ gcc -O2 -g -std=c17 -DSTANDALONE_FUZZ_MAIN -fsanitize=address,undefined -fno-san
 rustc -O problems/collatz-conjecture/native/collatz_catalytic_oracle.rs -o collatz_catalytic_oracle
 ```
 
-- **Performance regression gate (`B27`):** `tests/test_collatz_instruments.py` verifies exact differential parity between C17, Safe Rust, and Python on deterministic workloads and checks that `s10_t20` completes well under its `2.0 s` CI wall-time ceiling when native toolchains are installed.
-- **Sanitizer & fuzz status (`v0.9.0`):** `0` compiler warnings (`-Wall -Wextra -Werror`), `0` UBSan traps across `15,876`-pair `self-test` and `250,000`-case deterministic fuzzer (`zig cc -fsanitize=undefined -fno-sanitize-recover=all`), and `100%` bit-for-bit parity across C17, Safe Rust, and Python `Fraction`.
+- **Performance regression gate (`B27`):** `tests/test_collatz_instruments.py` verifies exact differential parity between C17, Safe Rust, and Python on deterministic workloads and checks that BOTH `s10_t20` and 5-Vector Asymmetric Hydra (`B=16`) complete well under their `2.0 s` CI wall-time ceiling when native toolchains are installed.
+- **Sanitizer & fuzz status (`v0.10.0`):** `0` compiler warnings (`-Wall -Wextra -Werror` across Windows GCC 16.1 + Linux LP64 `zig cc -target x86_64-linux-gnu`), `0` UBSan traps across `15,876`-pair catalytic `self-test`, Hydra `self-test`, and **`500,000` combined deterministic fuzz cases** (`250,000` catalytic + `250,000` Asymmetric Hydra under `zig cc -fsanitize=undefined -fno-sanitize-recover=all`), and `100%` bit-for-bit parity across C17, Safe Rust, and Python `Fraction`. Fixed `V100-BUG-01` (`_POSIX_C_SOURCE 200809L` for strict `-std=c17` glibc `clock_gettime`).

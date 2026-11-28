@@ -5,15 +5,15 @@ public import FormalAtlas.Defs
 import FormalAtlas
 
 /-!
-# Solution — Zero-Sorry Proofs Matching `Challenge.lean` (`v0.9.0`)
+# Solution — Zero-Sorry Proofs Matching `Challenge.lean` (`v0.10.0`)
 
-Exports all 69 headline theorems across 8 open-problem domains in `FormalAtlas.Challenge`
+Exports all 74 headline theorems across 8 open-problem domains in `FormalAtlas.Challenge`
 with exact signature match for `lake comparator --config comparator.json --paranoid`.
 -/
 
 namespace FormalAtlas.Challenge
 
--- I. Collatz (31)
+-- I. Collatz (36)
 public theorem thm_collatz_cylinder_affine_law (d : Nat) (q r : Int) :
     iter T d ((2 : Int) ^ d * q + r) =
       (3 : Int) ^ (oddCount T d r) * q + iter T d r :=
@@ -178,6 +178,28 @@ public theorem thm_collatz_cycle_amplitude_ceiling (d : Nat) (x : Int)
     ((2 : Int) ^ d - (3 : Int) ^ o) * x ≤
       (2 : Int) ^ (d - o) * ((3 : Int) ^ o - (2 : Int) ^ o) :=
   collatz_cycle_amplitude_ceiling d x hd hx hcyc
+
+public theorem thm_collatz_sign_conjugacy (d : Nat) (x : Int) :
+    iter T d (-x) = - iter TMinus d x ∧ oddCount T d (-x) = oddCount TMinus d x :=
+  collatz_sign_conjugacy d x
+
+public theorem thm_collatz_mod3_chiral_asymmetry (x : Int) (hodd : x % 2 ≠ 0) :
+    T x % 3 = 2 ∧ TMinus x % 3 = 1 :=
+  collatz_mod3_chiral_asymmetry x hodd
+
+public theorem thm_collatz_intercept_not_div3 (w : List Bool) (ho : 1 ≤ wordOddCount w) :
+    wordIntercept w % 3 ≠ 0 :=
+  collatz_intercept_not_div3 w ho
+
+public theorem thm_collatz_cycle_no_div3 (d : Nat) (x : Int)
+    (hd : 1 ≤ d) (hx : x ≠ 0) (hcyc : iter T d x = x) :
+    x % 3 ≠ 0 :=
+  collatz_cycle_no_div3 d x hd hx hcyc
+
+public theorem thm_collatz_positive_cycle_four_odd (d : Nat) (x : Int)
+    (hd : 1 ≤ d) (hx : 0 < x) (hcyc : iter T d x = x) (ho : oddCount T d x = 4) :
+    d = 8 ∧ (x = 1 ∨ x = 2) :=
+  collatz_positive_cycle_four_odd d x hd hx hcyc ho
 
 -- II. Erdős–Straus (5)
 public theorem thm_erdos_straus_mordell_840 (n : Nat) (hn : 2 ≤ n)

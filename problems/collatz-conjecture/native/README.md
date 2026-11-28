@@ -17,26 +17,38 @@ By combining our **Lean-proved Terras 2-adic valuation isometry** ($v_2(\rho_w -
 | `collatz_catalytic.c` | C17 + BMI2 intrinsics | Primary exact Odd-Unit-Lock target-tail + catalytic DFS residue-certificate accelerator (`A37`, `B26`) |
 | `collatz_catalytic_oracle.rs` | Safe Rust (zero `unsafe`) | Independent second-language cross-verifier (`B11`, `B12`, `B16`) |
 | `fuzz_collatz_catalytic.c` | C17 (`libFuzzer` + standalone corpus) | 250,000-case deterministic & libFuzzer invariant fuzzer (`B15`, `B16`) |
+| `collatz_asymmetric_hydra.c` | C17 (`-lm`, LP64/LLP64 portable) | Five-Vector Convergent Asymmetric Hydra engine (Adelic Pincer, Minimax Carry-Adversary Game through $2^{22}$, Binary Carry-Avalanche Shockwave, Tropical Karp Mixed-Base Quotients + Positive Boxes, Symbolic LZ76) |
+| `collatz_hydra_oracle.rs` | Safe Rust (zero `unsafe`) | Independent second-language bit-exact cross-verifier across all 5 Hydra vectors (`B11`, `B12`, `B16`) |
+| `fuzz_collatz_hydra.c` | C17 (`libFuzzer` + standalone corpus) | 250,000-case deterministic & libFuzzer invariant fuzzer verifying sign conjugacy, mod-3 chiral asymmetry, 3-adic intercept units, carry avalanches & LZ76 (`B15`, `B16`) |
 
 ## Build, Sanitize, Fuzz & Verify
 
 ```bash
-# Release build (GCC / Clang, x86-64 BMI2)
+# Release builds (GCC / Clang, LP64 Linux & LLP64 Windows)
 gcc -O3 -std=c17 -mbmi2 -Wall -Wextra -Werror collatz_catalytic.c -o collatz_catalytic
 ./collatz_catalytic self-test
+gcc -O3 -std=c17 -Wall -Wextra -Werror collatz_asymmetric_hydra.c -lm -o collatz_hydra
+./collatz_hydra self-test
+./collatz_hydra run --max-bits 22 --output ../experiments/results/collatz_asymmetric_hydra_20261127.json
 
 # Sanitizer verification (Linux GCC/Clang ASan+UBSan, or Windows `zig cc -fsanitize=undefined`)
-gcc -O1 -g -std=c17 -fsanitize=address,undefined -Wall -Wextra -Werror collatz_catalytic.c -o collatz_catalytic_san
+gcc -O1 -g -std=c17 -fsanitize=address,undefined -fno-sanitize-recover=all -Wall -Wextra -Werror collatz_catalytic.c -o collatz_catalytic_san
 ./collatz_catalytic_san self-test
+gcc -O1 -g -std=c17 -fsanitize=address,undefined -fno-sanitize-recover=all -Wall -Wextra -Werror collatz_asymmetric_hydra.c -lm -o collatz_hydra_san
+./collatz_hydra_san self-test
 
-# Fuzz harness (standalone 250k corpus with UBSan, or Clang -fsanitize=fuzzer,address,undefined)
-gcc -O2 -std=c17 -DSTANDALONE_FUZZ_MAIN -fsanitize=address,undefined -Wall -Wextra -Werror fuzz_collatz_catalytic.c -o fuzz_collatz
+# Fuzz harnesses (500,000 combined deterministic cases under ASan + UBSan)
+gcc -O2 -std=c17 -DSTANDALONE_FUZZ_MAIN -fsanitize=address,undefined -fno-sanitize-recover=all -Wall -Wextra -Werror fuzz_collatz_catalytic.c -o fuzz_collatz
 ./fuzz_collatz
+gcc -O2 -std=c17 -DSTANDALONE_FUZZ_MAIN -fsanitize=address,undefined -fno-sanitize-recover=all -Wall -Wextra -Werror fuzz_collatz_hydra.c -lm -o fuzz_hydra
+./fuzz_hydra
 
-# Independent safe-Rust cross-oracle
+# Independent safe-Rust cross-oracles (zero unsafe)
 rustc -O collatz_catalytic_oracle.rs -o collatz_catalytic_oracle
 ./collatz_catalytic_oracle target-tail 3 10 1 18
 ./collatz_catalytic_oracle residue-mine 20
+rustc -O collatz_hydra_oracle.rs -o collatz_hydra_oracle
+./collatz_hydra_oracle 16
 ```
 
 See [`docs/benchmarks.md`](../../../docs/benchmarks.md) and [`docs/COLLATZ-TOOLSTACK-AND-CATALYTIC-AUDIT.md`](../../../docs/COLLATZ-TOOLSTACK-AND-CATALYTIC-AUDIT.md) for measured timings, RAM budgets, differential oracle parity checks, and honest multi-language toolstack evaluation.

@@ -22,11 +22,11 @@
   "@type": "sc:Dataset",
   "conformsTo": "http://mlcommons.org/croissant/1.0",
   "name": "The Unsolved Mathematics Atlas",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "datePublished": "2026-11-27",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "url": "https://github.com/0thernes/unsolved-mathematics",
-  "citeAs": "Donahue, Alexander S. (2026). The Unsolved Mathematics Atlas (v0.9.0). https://github.com/0thernes/unsolved-mathematics",
+  "citeAs": "Donahue, Alexander S. (2026). The Unsolved Mathematics Atlas (v0.10.0). https://github.com/0thernes/unsolved-mathematics",
   "creator": [
     {
       "@type": "Person",
@@ -34,7 +34,7 @@
       "sameAs": "https://orcid.org/0009-0006-8168-9648"
     }
   ],
-  "description": "Audited, ranked dataset of 120 unsolved mathematical problems across 38 fields paired with 3,985 deterministic RAG text chunks (822,839 tokens), live arXiv/Crossref/DataCite citation and retraction audit logs (537 verified / 287 DOIs audited, 0 retracted, exact 1-to-1 bijection), a daily full metadata mirror of all 26 Left to Solve research programs (62,790 targets), dual RFC 3161 + Bitcoin OpenTimestamps manifest proofs, a 6-kernel Lean 4.35.0 formal core (69 headline theorems / 109 audited declarations across 8 domains), a catalytic C17/BMI2 + safe Rust Collatz accelerator, and a compiled AMS-LaTeX white paper.",
+  "description": "Audited, ranked dataset of 120 unsolved mathematical problems across 38 fields paired with 3,985 deterministic RAG text chunks (822,897 tokens), live arXiv/Crossref/DataCite citation and retraction audit logs (537 verified / 287 DOIs audited, 0 retracted, exact 1-to-1 bijection), a daily full metadata mirror of all 26 Left to Solve research programs (62,790 targets), dual RFC 3161 + Bitcoin OpenTimestamps manifest proofs, a 6-kernel Lean 4.35.0 formal core (74 headline theorems / 118 audited declarations across 8 domains), a catalytic C17/BMI2 + safe Rust Collatz accelerator & 5-Vector Asymmetric Hydra suite, and a compiled AMS-LaTeX white paper.",
   "distribution": [
     {
       "@type": "cr:FileObject",
@@ -50,7 +50,7 @@
       "name": "rag/corpus.jsonl",
       "contentUrl": "rag/corpus.jsonl",
       "encodingFormat": "application/x-ndjson",
-      "description": "3,985 globally uniquely indexed text chunks (822,839 tokens) across all 120 seven-section mathematical dossiers."
+      "description": "3,985 globally uniquely indexed text chunks (822,897 tokens) across all 120 seven-section mathematical dossiers."
     },
     {
       "@type": "cr:FileObject",

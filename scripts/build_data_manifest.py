@@ -67,6 +67,11 @@ TRACKED_FILES = [
     "problems/collatz-conjecture/native/collatz_catalytic.c",
     "problems/collatz-conjecture/native/collatz_catalytic_oracle.rs",
     "problems/collatz-conjecture/native/fuzz_collatz_catalytic.c",
+    "problems/collatz-conjecture/native/collatz_asymmetric_hydra.c",
+    "problems/collatz-conjecture/native/collatz_hydra_oracle.rs",
+    "problems/collatz-conjecture/native/fuzz_collatz_hydra.c",
+    "problems/collatz-conjecture/experiments/COLLATZ-ASYMMETRIC-HYDRA-2026-11-27.md",
+    "problems/collatz-conjecture/experiments/results/collatz_asymmetric_hydra_20261127.json",
 ]
 
 

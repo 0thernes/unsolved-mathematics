@@ -4,11 +4,11 @@ module
 public import FormalAtlas
 
 /-!
-# NonVacuity — Concrete Witnesses Defeating Vacuous-Hypothesis Objections (`v0.9.0`)
+# NonVacuity — Concrete Witnesses Defeating Vacuous-Hypothesis Objections (`v0.10.0`)
 
 Per the Defensible Independent AI Research Playbook v1.3, every conditional hypothesis
 bundle in `Challenge.lean` across all 8 domains is paired with an explicit concrete
-non-vacuity witness (18 witnesses total).
+non-vacuity witness (20 witnesses total).
 -/
 
 namespace FormalAtlas.NonVacuity
@@ -127,5 +127,15 @@ public theorem witness_collatz_intercept_bound_sharp :
     (2 : Int) ^ (w.length - wordOddCount w) *
       ((3 : Int) ^ (wordOddCount w) - (2 : Int) ^ (wordOddCount w)) = 20 := by
   exact ⟨by decide, by decide⟩
+
+/-- Witness 19: Chiral mod-3 phase-lock asymmetry & exact sign conjugacy on `x = 5` (`T(5)=8≡2`, `TMinus(5)=7≡1`, `T³(-5) = -TMinus³(5) = -5`). -/
+public theorem witness_collatz_mod3_chiral_asymmetry :
+    T 5 % 3 = 2 ∧ TMinus 5 % 3 = 1 ∧ iter T 3 (-5) = - iter TMinus 3 5 := by
+  exact ⟨by decide, by decide, by decide⟩
+
+/-- Witness 20: Trivial 4-odd-step Collatz cycle `1 ↔ 2` repeated 4 times (`d = 8`, `o = 4`). -/
+public theorem witness_collatz_four_odd_trivial_cycle :
+    iter T 8 1 = 1 ∧ oddCount T 8 1 = 4 ∧ iter T 8 2 = 2 ∧ oddCount T 8 2 = 4 := by
+  exact ⟨by decide, by decide, by decide, by decide⟩
 
 end FormalAtlas.NonVacuity
